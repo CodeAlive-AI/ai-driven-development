@@ -88,7 +88,7 @@ Changing the parts over time can also change membership. Include that effect thr
 
 Substitute the available amounts and compute the requested consequence. If some terms are bounded, propagate the bounds through the signed sum. Preserve dependencies when independently combining endpoints would admit impossible combinations.
 
-For observed values, define the discrepancy as observed change minus the change predicted by the included terms. A nonzero discrepancy establishes disagreement between those accounts. Its cause can lie in an omitted store or transfer, incompatible timing or units, a faulty observation, or an inadequate law. Use the working situation to choose a discriminating next observation or model change.
+For observations, subtract the change predicted by the recorded transfers and internal terms from the observed change in storage. Propagate their uncertainties and shared constraints into a range for this discrepancy. If the range excludes zero, the records and balance cannot agree under those assumptions. If it contains zero, establish whether jointly admissible values actually give zero before claiming agreement is possible. Equal unrecorded inflow and outflow can cancel even when the discrepancy is exactly zero. To locate a fault, examine a term or an independent observation that could distinguish its possible causes.
 
 Resolve a remaining term only when it can change the answer enough to justify the work. A bound that settles the decision is a usable result. An unresolved cause can remain open when the decision tolerates the resulting uncertainty.
 
@@ -122,7 +122,9 @@ Now change the condition: the line begins empty, receives 15 L from A, delivers 
 
 The two tanks contain 43 L. Their boundary excludes the line, so 15 L leaves that boundary and 13 L re-enters. The combined tank change is 12 - 7 - 15 + 13 = 3 L. Including the line gives 45 L and recovers the five-litre increase from the external exchanges alone.
 
-If the line's increase is known only to lie between 0 and 2 L, the final tank total lies between 43 and 45 L. This bound settles a request for at least 42 L in the tanks. A request for at least 44 L needs a tighter bound or the line's content. No additional observation is required for the first request.
+If the line's increase is known only to lie between 0 and 2 L, the final tank total lies between 43 and 45 L. This bound settles a request for at least 42 L in the tanks. The admissible 2 L retained in the line leaves only 43 L in the tanks, which refutes a guarantee of 44 L for every filling allowed here. An empty line would leave 45 L. To decide whether one unknown filling delivered at least 44 L, determine whether the line retained at most 1 L. The 42 L guarantee already holds throughout.
+
+Reverse the question. Suppose the tank measurements show 43 L at the end and the net recorded external inflow was 5 L. Starting from 40 L leaves 2 L to account for outside the tanks. If the line began empty and could have retained 0 to 2 L, unrecorded net outflow from tanks and line together could be anywhere from 0 to 2 L, assuming exact amounts and no production or removal inside. These data rule out unrecorded net outflow above 2 L. They still permit all 2 L to be in the line. To diagnose leakage, distinguish storage and other unrecorded exchanges.
 
 #### C.29.BB:5.2 - Moving and reworking a job preserve one count but change its distribution
 

@@ -1,7 +1,6 @@
 ## SYSE.Application:3 - APP-SYSE-03 — Worked application: choose and bound an authentication-service migration
 
-This constructed case applies the Systems Engineering patterns to a project system-of-interest that
-is a software service. The project relies on the named software-security result. Specialist Methods and authorities govern
+This constructed case applies the Systems Engineering patterns to an authentication System. Its operating organization, software provider and integration provider have agreed their migration work and acceptance responsibilities; those agreements organize the extended enterprise in which the System is the SoI. The project relies on the named software-security result. Specialist Methods and authorities govern
 cryptographic design, threat modelling, privacy and legal questions. The release Agent decides whether to deploy.
 
 

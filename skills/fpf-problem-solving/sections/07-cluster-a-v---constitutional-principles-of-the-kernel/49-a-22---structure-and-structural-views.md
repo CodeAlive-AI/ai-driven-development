@@ -174,7 +174,7 @@ Continuity across model editions additionally requires the C.2.1 episteme-editio
 
 Until a compatible crossing predicate and current facts establish those occurrences, a Context Map can describe only a proposed crossing organization and no positive `CrossContextRelationStructure` member is asserted. The selecting system and its work remain separate. Sharing a participant does not merge structures, and overlap does not prove parthood.
 
-`CrossContextRelationStructure` is a provisional A.22-local designator for the conditional rule above. Until its crossing predicates and four identity discriminators are established, describe the proposed organization without claiming an admitted member. The label alone supplies no structure or crossing relation.
+`CrossContextRelationStructure` is a provisional A.22-local designator for this conditional membership rule.
 
 DDD `Context Mapping` names a repeatable way of constructing a Context Map; a `U.Method` claim uses A.3.1. When a mapping plan is needed, use A.15.2. An asserted dated mapping Work uses the complete admission grounds in §4.1; assignment-bound attribution additionally uses F.6.
 

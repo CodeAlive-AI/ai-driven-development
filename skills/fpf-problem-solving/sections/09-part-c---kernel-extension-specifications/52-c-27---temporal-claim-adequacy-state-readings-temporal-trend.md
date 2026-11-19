@@ -79,7 +79,7 @@ Use the least-committing result that changes the receiving action.
 
 1. Recover the temporal claim from the available account, keeping its subject, quantity or condition and relevant time explicit. Cite an exact episteme or ClaimAddress when that identity is consumed by the use.
 2. Resolve what the timing means: a dated observation, elapsed duration, order, recurring cadence, validity condition or another temporal property. Use `C.27.TA` if this is unclear; a separate temporal-aspect artifact is unnecessary when the claim already states it adequately.
-3. Classify the claim as Dyn0, Dyn1 or Dyn2.
+3. Classify the claim as Dyn0, Dyn1 or Dyn2. Compare the decision with what the observations cover. Two dated counts of the same stock under the same counting rule can establish its net change. If duplicate entries were removed between counts, establish how much of the recorded change came from the correction before crediting it to completed work. The same endpoints can follow a steady decline or a rise followed by a sharper fall. To judge the path between them, use records or a supported model of the intervening period. To attribute a change to an action, compare what the relevant quantity would do under that action and under its alternative.
 4. If it is Dyn0 or Dyn1 and no intervention-sensitive question remains, stop or use C.16 for the unresolved measurement question.
 5. For Dyn2, connect the proposed input to the claimed temporal effect. Recover the baseline, relevant window and resistance or cost; identify whether the basis is observation, a planning assumption, a model consequence or a causal result. Reuse adequate grounds. When the effect is the unresolved causal question, use C.28 and its construction or mechanism-replacement method as needed.
 6. Return the supported conclusion and only the neighboring result on which it depends. Unknown resistance or another missing premise can justify a narrower or unresolved result.
@@ -185,16 +185,16 @@ interventionWindow:
 resistanceOrCost:
   queue coordination and domain ramp-up
 reasonForReading:
-  planning assumption plus prior Work trace if available
+  an assumed doubling of the reduction rate under the proposed staffing change
 supportedUse:
-  local staffing discussion and plan choice
+  calculate the backlog if the assumed rate holds and judge whether that scenario would meet the target
 unsupportedUse:
   causal proof, long-term capacity model, or benchmark superiority
 reopenTrigger:
   work-mix shift, saturation, quality loss, or a measured rate after sprint N that does not match the planning estimate
 ~~~
 
-For a numerical version of this constructed case, let the backlog start at 120 comparable items, the baseline reduction rate be 20 per week, and each sprint last one week with no new incoming items. The doubling assumption gives 40 per week and leaves 40 items after the two sprints. That conditional calculation can inform local staffing discussion without establishing the assumed gain.
+Suppose the team needs at most 40 items left at the end of the second one-week sprint. It starts with 120 comparable items, has a baseline net reduction rate of 20 per week, and expects no new arrivals or reopened items. At 40 per week, exactly 40 would remain. This calculation settles whether the proposed rate would be enough. To select extra reviewers on the ground that they can achieve that rate, establish what they can complete and what the shared approval step can absorb. If every one of the 120 items still needs a new approval before it can leave, and the approver can pass only 20 per week, at most 40 can leave in the two weeks. Extra reviewers alone cannot bring the backlog down to 40. If 40 items have already been approved and await final review, that same approval limit permits 80 departures. Check which stages hold the starting backlog before deciding where to add capacity.
 
 If the measured first-sprint reduction is 20, there is progress, but the uniform 40-per-week estimate is not met in that sprint. Reassess ramp-up and the remaining estimate before relying on the second-sprint forecast; the first sprint alone does not determine the two-sprint outcome. No boundary-crossing profile is needed for this local use.
 
@@ -219,28 +219,28 @@ interventionWindow:
 resistanceOrCost:
   slower feature availability and continuing service demand
 reasonForReading:
-  planning assumption plus the exact C.26.3 envelope-regulation claim
+  proposed cadence and the bounds from the C.26.3 envelope account
 supportedUse:
-  local rollout decision
+  compare the two-week rollout scenario against the stated bounds
 unsupportedUse:
-  causal proof, promise fulfilment, or assurance closure
+  selection on the claim that slowing rollout will preserve viability
 reopenTrigger:
   changed envelope bounds, disturbance, service demand, or rollout result
 ~~~
 
-Slower rollout is not a failure to accelerate. It is adequate only for the bounded use stated here; C.26.3 carries the viability claim.
+Knowing the bounds identifies what to check. To select the slower cadence on the ground that it will preserve viability, establish how it affects the constrained quantities over the two weeks, including effects that could defeat the proposal. A C.26.3 account that already supports that intervention consequence can supply the basis. Where the effect remains uncertain, the team can compare scenarios or consider a bounded trial under its own risk and authority conditions.
 
 #### C.27:4.3 - Practice Rhythm
 
 Source claim: “Daily twenty-minute drills stabilize the learner's task rhythm.”
 
-For this case, LearnerSystem-1 is already independently identified under A.1. Its positive temporal-aspect claim is a daily task-practice cadence during the four-week training window; the example below keeps that claim separately referenceable.
+The plan for LearnerSystem-1 prescribes one twenty-minute drill daily for four weeks. The instructor wants to know whether the learner starts comparable work sessions at more regular intervals. The drill schedule and the observed starts of those work sessions concern different activities.
 
 ~~~text
 sourceTemporalClaimRef:
   exact ClaimAddress to the stabilization claim
 positiveTemporalAspectClaimRef:
-  exact C.27.TA claim about LearnerSystem-1's daily task-practice cadence
+  exact C.27.TA claim about the daily drill cadence prescribed for LearnerSystem-1
 move:
   stabilize
 claimedInterventionOrInput:
@@ -250,16 +250,16 @@ interventionWindow:
 resistanceOrCost:
   fatigue, attention drift, task novelty, or habit formation
 reasonForReading:
-  observed task-completion cadence and error trace, or an explicit planning assumption
+  the drill schedule for planning, actual drill times and durations for practice performed, and dated starts of comparable work sessions for observed work rhythm
 supportedUse:
-  local practice design
+  organize the proposed drills and compare regularity where session observations cover the comparison
 unsupportedUse:
-  proof that the Method improves all learning or every task family
+  attribution of a change in work rhythm to the drills from their schedule alone
 reopenTrigger:
   retention falls, task family changes, or the rhythm proxy stops matching performance
 ~~~
 
-Cross-bearer coupling is absent because the claim does not rely on synchronization between bearers. A practice intended for replication also states what timing and effort pattern must be transmitted and what error arises if only static poses or rate words are copied.
+To judge regularity, specify which sessions count, how start-to-start intervals will be compared, and what timing matters to the work. The same number of starts per week can come at evenly spaced times or in a cluster. Comparable records before and during the scheduled period can establish a change in the observed spacing even if every drill was cancelled. To assess the effect of doing the drills, establish which drills took place and for how long. Compare the observed rhythm with what the learner’s work schedule and other conditions support in the absence of those drills. A new duty roster could itself fix session starts. If all that is needed today is the drill plan, its prescribed cadence suffices. For replication, state what timing and effort the learner has to reproduce.
 
 #### C.27:4.4 - Compact Case Bank
 

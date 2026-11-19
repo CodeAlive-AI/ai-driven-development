@@ -138,7 +138,7 @@ In ordinary use, stop after naming the entity being evaluated, six constructive 
 
 Current accepted holon-kind examples are:
 
-- `U.System`, used here for an acting physical or operational holon;
+- `U.System`, used here for a physically embodied acting holon;
 - `U.Episteme`, used here only for a non-agentive claim-bearing holon, identified under C.2.1 by claim content, EntityOfConcern, and effective ReferenceScheme, with constitution, empirical grounding, and edition kept as distinct direct relations;
 - `U.Work`, admitted under `A.15.1` for a dated 4D occurrence holon;
 - `U.Discipline`, defined in `C.20` as a field-level practice-and-knowledge holon;
@@ -156,9 +156,9 @@ The assignment occurrence, assignment state, capability, responsibility, permiss
 
 #### A.1:4.4 - U.System
 
-`U.System` is an acting physical or operational holon kind. It can participate in system-role assignments, capability relations, method enactment, mechanism realization, work occurrences, transformations, functioning relations, and responsibility-bearing claims when their direct patterns make those claims current.
+`U.System` is a physically embodied acting holon kind. It can participate in system-role assignments, capability relations, method enactment, mechanism realization, work occurrences, transformations, functioning relations, and responsibility-bearing claims when their direct patterns make those claims current.
 
-Its kind-specific condition is acting eligibility: the recognized whole has an actual physical or operational organization through which it can causally participate in work or transformation while preserving its identity. Capability evidence or actual participation can support a classification assertion; a `U.SystemRoleAssignment`, work occurrence, or capability relation does not create the system by participation alone.
+Its kind-specific condition is acting eligibility: the recognized whole is physically embodied and has an organization of constituents and interactions through which it can causally participate in work or transformation while preserving its identity. Physical embodiment can be distributed across agents, devices and connections; a running software System has an execution substrate. The whole's reidentification rule determines which changes of its constituents preserve it. Capability evidence or actual participation can support a classification assertion; a `U.SystemRoleAssignment`, work occurrence, or capability relation does not create the system by participation alone.
 
 Keep those relations separate:
 
@@ -197,7 +197,7 @@ A collection becomes a recognized `U.System` only when it satisfies the construc
 
 Start with the claim needed by the task. Use the collection's own rule and A.14 for membership; the complete six-part A.1 test for a possible holon; and the additional acting-eligibility condition for a collective System. Use C.13 for a construction account of already established belonging, C.16 for a whole-level characteristic, and B.3.5 only for a named assurance use. B.2 addresses the separate whole-reidentification question.
 
-An acting collective must satisfy all six A.1 components and have an actual physical or operational organization through which it can causally participate in work or transformation while preserving its identity. Assignment, capability, method and performed-Work claims require their own bases under the direct patterns in section 4.4. If only collection membership is established, state that collection claim; if missing evidence prevents a requested System classification, the evaluation result is `unknown` under section 4.2.
+An acting collective must satisfy all six A.1 components, be physically embodied, and have an organization of constituents and interactions through which it can causally participate in work or transformation while preserving its identity. Assignment, capability, method and performed-Work claims require their own bases under the direct patterns in section 4.4. If only collection membership is established, state that collection claim; if missing evidence prevents a requested System classification, the evaluation result is `unknown` under section 4.2.
 
 #### A.1:4.8 - Constructional Grounding
 

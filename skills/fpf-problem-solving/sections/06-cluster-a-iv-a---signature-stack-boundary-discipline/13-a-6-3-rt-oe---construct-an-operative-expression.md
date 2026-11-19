@@ -8,13 +8,13 @@
 
 Use this pattern when the available content and notation do not yet give the practitioner an expression with which to perform the needed operation. A diagram contains the right objects but obscures their shared parts. An instruction groups alternatives differently from the work it should guide. A rhythmic phrase has known durations but its entry against a recurring cycle is hard to follow. Two reports may suggest a difficulty before the practitioner has obtained the distinction or question needed to investigate it.
 
-An **operative expression** is an expression prepared for a specified use: calculating, comparing, inferring, constructing or coordinating an action. Its signs can be written, drawn, spoken or gestural. The selected notation supplies their formation and interpretation rules; the subject Method supplies the operation to perform.
+An **operative expression** is an expression prepared for a specified use: calculating, comparing, inferring, constructing or coordinating an action. Its signs can be written, drawn, spoken or gestural. The selected representation language supplies their formation and interpretation rules; the subject Method supplies the operation to perform.
 
 **First useful move.** Select one attainable operation, even provisionally, then identify the parts of the content that must be examined together. When the final question is unknown, compare two available cases or separate their observed events; use what this attempt reveals to develop that question. To compare the sides of a constructed triangle, keep each segment recognizable both as a triangle side and as a radius of the circle used to construct it.
 
 The result is a usable expression and the interpretation needed for its next use. A representation change can also need A.6.3.RT's comparison with the source. Any new subject result obtained while using the expression has its own construction or argument.
 
-The examples require their stated geometric, grammatical or rhythmic conventions. Use an existing expression directly when the intended operation is already straightforward. Choose another scheme when the available one cannot express a needed distinction. Designing new notation rules or learning a subject operation remains separate work when either is missing.
+The examples require their stated geometric, grammatical or rhythmic conventions. Use an existing expression directly when the intended operation is already straightforward. Choose another representation language when the available one cannot express a needed distinction. Designing new notation rules or learning a subject operation remains separate work when either is missing.
 
 ### A.6.3.RT.OE:2 - Problem
 
@@ -37,7 +37,7 @@ The task is to prepare the expression so that the needed operation can be carrie
 
 ### A.6.3.RT.OE:4 - Solution
 
-Recover the next operation, prepare its participating parts under an available scheme, arrange them around the relation the operation needs, and try that operation. Use its success or failure to keep or repair the expression.
+Recover the next operation, prepare its participating parts under an available representation language, arrange them around the relation the operation needs, and try that operation. Use its success or failure to keep or repair the expression.
 
 **Recover the operation → identify participating parts → expose their relation → check interpretation → perform the operation → retain the usable expression.**
 
@@ -65,7 +65,7 @@ The construction can stop with a useful distinction or an explicit question. Bef
 
 #### A.6.3.RT.OE:4.2 - Give recurring parts a stable interpretation
 
-Identify which elements must remain recognizable across the expression. Use the selected scheme's names, positions, types, units, binding rules or temporal references to keep them connected.
+Identify which elements must remain recognizable across the expression. Use the selected language's names, positions, types, units, binding rules or temporal references to keep them connected.
 
 When one part belongs to different groupings, retain its identity through the change of grouping. A line can be examined as a circle's radius and then as a triangle's side. A quantity can appear in two equations whose combination depends on it denoting the same value under the same conditions.
 
@@ -90,7 +90,7 @@ Choose the arrangement from the operation:
 | Needed operation | Useful arrangement | What must remain interpretable |
 | --- | --- | --- |
 | Combine two relations through a shared part | Place the relations together and keep the common part identifiable in both groupings. | Which occurrence refers to that part, and under which conditions. |
-| Apply an operation to a compound expression | Make the grouping and scope available through the scheme's delimiters, layout or formation rules. | Which elements are arguments of which operation. |
+| Apply an operation to a compound expression | Make the grouping and scope available through the language's delimiters, layout or formation rules. | Which elements are arguments of which operation. |
 | Compare quantities or alternatives | Use a shared order, unit, origin or other applicable reference. | The comparison relation and any transformation used to obtain it. |
 | Coordinate a sequence with a recurring process | Place the signs against an explicit temporal or positional reference. | Start, duration, recurrence and what stays constant. |
 | Continue a partial construction | Retain the earlier objects and expose the attachment or joining condition for the next part. | Which relations are given, constructed or still conjectured. |
@@ -113,7 +113,7 @@ When the expression is used as a replacement for another, A.6.3.RT compares the 
 
 Use the subject Method to perform the intended operation on the prepared expression. Inspect the transition: which parts were selected, how they were combined and what result followed.
 
-If the operation cannot be followed, locate what is missing. The expression may hide a shared part, omit a scope delimiter or lack a stable reference. Repair that contribution. If the notation lacks a required distinction, return to scheme selection or design. If the subject inference or construction lacks a premise or operation, return to that Method.
+If the operation cannot be followed, locate what is missing. The expression may hide a shared part, omit a scope delimiter or lack a stable reference. Repair that contribution. If the notation lacks a required distinction, return to selection or design of the representation language. If the subject inference or construction lacks a premise or operation, return to that Method.
 
 Keep a new conclusion with the construction or argument that establishes it. A diagram can make the argument possible while the argument still supplies the conclusion's justification. Drawing scale, apparent symmetry or a coincident mark supports a subject claim only through the applicable rules.
 
@@ -252,7 +252,7 @@ The cases favor expressions whose participating parts can be inspected directly 
 | Failure in these situations | Consequence | Repair |
 | --- | --- | --- |
 | Preserve all labels but hide a shared part | The user cannot combine the relevant relations. | Keep the common part recognizable across the needed groupings. |
-| Remove grouping to make the expression shorter | A different operation or continuation becomes permitted. | Restore the scheme's scope or grouping rule. |
+| Remove grouping to make the expression shorter | A different operation or continuation becomes permitted. | Restore the language's scope or grouping rule. |
 | Align signs without a common reference | The arrangement suggests a comparison or timing relation that does not hold. | Supply the relevant origin, scale, units or temporal reference. |
 | Treat a conclusion suggested by a drawing as source-given | The claim loses the argument needed for its use. | Perform the subject inference and retain its premises. |
 | Change notation when the subject operation is missing | A new form leaves the same construction unavailable. | Obtain the missing Method contribution and then prepare its expression. |
@@ -299,14 +299,14 @@ These are conceptual and practice-specific sources for the chosen construction, 
 ### A.6.3.RT.OE:12 - Relations
 
 - **A.6.3.RT** compares content carried between source and target representations.
-- **E.5.2** governs recoverable interpretation and portable conceptual meaning.
+- **E.5.2** governs recoverable interpretation and portable conceptual meaning; **E.5.2.L** defines the representation language and distinguishes its conventions from the effective interpretation of a particular episteme.
 - **B.5.RC and B.5.RA** recover a missing construction or argument.
 - **B.5.RR** carries a changed premise through the dependent reasoning.
 - **B.5.QD and C.40.CD** develop the next question when a result changes the inquiry; **B.5.WN** carries a thought through notes and later occasions when that continuation is needed.
 - **C.3.1** supplies the distinction between a domain kind, its individuals and the upper-kind claims used in a typed expression.
 - **C.37** selects representations that jointly support a working use.
 - **C.2.8** characterizes structure recoverable by a specified recipient under stated conditions.
-- **A.6.0 and A.6.1** describe reusable scheme vocabulary, rules or operations when those declarations are needed.
+- **A.6.0 and A.6.1** describe reusable language vocabulary, rules or operations when those declarations are needed.
 - **The applicable subject Method** supplies the construction, inference, calculation or performance carried out with the expression.
 
 ### A.6.3.RT.OE:End

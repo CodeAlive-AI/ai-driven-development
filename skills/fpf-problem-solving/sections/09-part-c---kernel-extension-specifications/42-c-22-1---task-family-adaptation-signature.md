@@ -45,7 +45,7 @@ A comparison of specialization acquisition needs a common task family and work t
 ### C.22.1:7 - Solution — one adaptation signature over the `C.22` anchor
 
 - Use one shared adaptation-signature field set for this question. `G.5`, `G.9`, and later notes may cite or consume it, but they should not silently rename threshold, prior-exposure, transfer, downside, or corridor-entry terms.
-- Bind the adaptation signature to the declared `TaskFamilyRef` or `TaskSignature` and work target. Reuse an existing account when it supplies the needed fields and grounds.
+- Bind the adaptation signature to the declared `TaskFamilyRef` or `TaskSignature` and work target. Name whose capability is being judged and what tools, references or help are part of the intended work. Record who performed the operation on which the threshold depends and what help was supplied during practice and the check. A joint performance can establish what the participants can do together. For a claim about one participant, use a performance that shows what that participant can do under the intended support conditions. Reuse an existing account when it supplies those grounds.
 - The signature should expose at least:
   - `thresholdTarget`
   - `timeToThreshold`
@@ -69,8 +69,8 @@ A comparison of specialization acquisition needs a common task family and work t
 - If a stepping stone mattered, publish the stepping-stone evidence as part of the adaptation signature.
 - Corridor or stepping-stone notes do not replace the work-measure threshold account; they explain why the adaptation path matters, not whether the threshold was reached.
 - A fast threshold result is not yet enough to claim durable specialization.
-- If transfer to a neighboring task family is claimed, name the transfer target and the observed gain.
-- If retention is claimed, name the reuse or retention window rather than implying durability from one isolated run.
+- For transfer, identify the target task family, baseline and observed change there. To attribute that change to the earlier practice, give grounds that distinguish its effect from repeat testing, practice on the target or changed assistance when those explanations are plausible (C.28). State how far the evidence reaches across the target family.
+- For retention, report when and under what support conditions performance was demonstrated again. Use a comparable criterion over the stated delay. An unobserved interval can remain open.
 - If specialization harms neighboring task families, narrows reusable competence, or creates de-specialization cost, publish that in `downsideEffect?`.
 - If post-threshold performance matters to later exploitation, publish `postThresholdEfficiency?` to show performance after threshold crossing.
 
@@ -78,9 +78,9 @@ A comparison of specialization acquisition needs a common task family and work t
 
 Consider two research setups, A and B, adapting to the same catalyst-search family. This is an illustrative comparison. The declared threshold is at least 80 accepted predictions out of the same 100 held-out cases under a fixed validation rule. Both start with the same training corpus and no prior exposure to those held-out cases. Time starts when adaptation begins; the budget counts all adaptation and evaluation calls. The rule checks threshold attainment at the end of each round.
 
-A first meets the rule after 2 hours and 120 calls; B after 6 hours and 480 calls. Both finish at 85/100. The signatures therefore distinguish acquisition time and cost despite equal final scores. They report first observed attainment at the declared checkpoints, without claiming an unobserved earlier crossing.
+A first passes a scheduled check after 2 hours and 120 calls, B after 6 hours and 480 calls. Both finish at 85/100. The histories show what each setup spent by its first observed pass. To conclude that either acquired the capability during adaptation, establish how it performed beforehand under comparable conditions. A failed check followed by a pass brackets the observed change at the declared checkpoints.
 
-On a named adjacent family, the same before/after test gives A 60/100 then 70/100 and B 60/100 then 60/100. That supports A's observed 10-percentage-point transfer gain on this test and no observed gain for B on it; it does not settle all neighboring families. Retention beyond the measured run is untested, and no durable-specialization claim is made. If A also claims corridor entry, it names the prior repertoire and the repeatable solution class absent from that baseline; the faster threshold alone does not supply this evidence.
+On a named adjacent family, a before/after test gives A 60/100 then 70/100 and B 60/100 then 60/100. A improved by ten percentage points on this test. B's observed score stayed the same. These observations leave open how much change the original practice caused. A comparison that accounts for repeat testing, other training and assistance can support a transfer claim for the conditions it covers. Retention beyond the measured run is untested. A corridor-entry claim would need the prior repertoire and evidence of a repeatable solution class absent from it.
 
 The comparison can finish with these bounded claims. If A's prior exposure later proves different, reopen the equal-exposure comparison while retaining the observed histories. A later retention claim needs its own window and observations. A selector may use the signature under its applicable rule; the signature alone chooses neither setup.
 
@@ -100,7 +100,7 @@ The reader needs one place where the adaptation claim stays whole. `C.22` keeps 
 
 ### C.22.1:12 - SoTA-Echoing
 
-**Claim 1.** A comparison of specialization acquisition keeps the declared work-measure threshold and prior exposure explicit. It reports time and budget to threshold or states that the threshold was not reached.
+**Claim 1.** A comparison of specialization acquisition keeps the declared work-measure threshold and prior exposure explicit. It reports the observed time and cost to threshold. If the first crossing is unresolved, give the time or cost bounds the observations support. Distinguish a successful first check at the end of a month from evidence that acquisition took a month. Report non-attainment for the monitored interval only when the observation rule supports it.
 
 **Practice source, local alignment, and adoption decision.** [FactorMiner v1 (2026-02-16)](https://arxiv.org/html/2602.14670v1), §§4.1–4.4, separates factor quality and redundancy, the effect of experience memory on screening yield, and factor-evaluation computation time. [SkillOpt v2 (2026-05-25)](https://arxiv.org/html/2605.23904v2), §§3.1, 3.4–3.5 and 4.3–4.4, changes an external skill text while holding the task-execution model fixed, selects text revisions through held-out validation, and evaluates transfer and training tokens per test-score gain. This pattern **adopts** these distinctions among the changed object, attained result, evaluation or training cost, and tested reuse.
 
@@ -152,8 +152,8 @@ G.5 and G.9 consume this shared field set. Their users must retain its threshold
 ### C.22.1:15 - Conformance checklist
 
 - `CC-C22.1-1` An adaptation signature **SHALL** bind to one declared `TaskFamily` or `TaskSignature`, one work target, and one work-measure threshold target.
-- `CC-C22.1-2` An adaptation signature **SHALL** publish `timeToThreshold`, `budgetToThreshold`, and `priorExposureDeclaration`; if threshold was not reached, the signature **SHALL** say so instead of implying success.
-- `CC-C22.1-3` Any declared transfer, retention, post-threshold-efficiency, downside, corridor-entry, or stepping-stone claim **SHALL** be explicit by value with the target, baseline, evidence source, or evidence locus named.
+- `CC-C22.1-2` An adaptation signature **SHALL** report prior exposure and the observed time and budget to threshold, or the supported limits on each. Distinguish a known crossing, a threshold met by the check with the first crossing undetermined, and a threshold known to have remained unmet. If the observations establish none of these, report what remains unknown.
+- `CC-C22.1-3` Any declared transfer, retention, post-threshold-efficiency, downside, corridor-entry, or stepping-stone claim **SHALL** identify what is claimed and for which target. Give the grounds for that claim under §8, including the baseline or observation window when the claim depends on it.
 - `CC-C22.1-4` This pattern may refine specialization timing and reuse claims over the declared `C.22` anchor, but it **SHALL NOT** redefine acceptance-gate thresholds, task-family attachment, or selector/parity law governed by another FPF pattern.
 - `CC-C22.1-5` Downstream selector/parity pattern applications **SHALL** cite or consume the same published adaptation-signature field set rather than silently redefining threshold, prior-exposure, transfer, retention, downside, or corridor-entry terms.
 

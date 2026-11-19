@@ -8,7 +8,7 @@ functioning or a downstream condition still fails, and an earlier source can cha
 
 ### SYSE.Application:1.1 - 1. Recover the subject, use, and consequences
 
-Use `SYSE.1` to designate the actual station as the project system-of-interest and keep that designation distinct from
+Use `SYSE.1` to recover the operator's, alteration provider's and maintenance organization's agreements and authorized decisions for changing the station. Designate the actual station as the SoI of that extended enterprise, keeping the designation distinct from
 the System's identity. Use `SYSE.16` to recover the containing district-heating arrangement, operating neighbours,
 conditions, and part and interaction relations. Use `SYSE.17` to identify Systems that can bear engineering
 consequences, including the operator, connected heating network, maintainers, and affected users. Use `SYSE.2`

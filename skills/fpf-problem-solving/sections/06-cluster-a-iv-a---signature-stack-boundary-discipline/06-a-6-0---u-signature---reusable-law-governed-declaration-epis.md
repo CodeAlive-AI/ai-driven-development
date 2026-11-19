@@ -502,7 +502,7 @@ Laws state the reusable regularities. Applicability states where those regularit
 
 `RelationSignature` is a use of `U.Signature` because it has the same episteme identity and content duties. Introducing a second root kind would duplicate those duties while leaving obtaining and occurrence identity with direct relation patterns anyway.
 
-Progressive elaboration protects didactic primacy. A practitioner can begin with a readable relation sentence and add formal declaration only when reuse creates value. Exactness is increased for a named claim or operation.
+A practitioner can begin with a readable relation sentence and add a reusable declaration when reuse creates value.
 
 ### A.6.0:11 - SoTA-Echoing
 

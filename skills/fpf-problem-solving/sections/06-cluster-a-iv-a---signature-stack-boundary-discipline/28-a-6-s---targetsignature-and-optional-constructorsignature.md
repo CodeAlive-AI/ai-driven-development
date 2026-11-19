@@ -93,7 +93,7 @@ The two signatures remain separate C.2.1 epistemes. State only the relation that
 * when both signatures are merely relevant to the same local question, name them without inventing a pair relation; and
 * if a receiving use needs a relation between them, use its direct rule or A.6.RCD for a missing rule; add explicit occurrence identity only when needed. A new framework pattern follows E.24, and a proposed U-kind follows E.24.UK. A.6.S admits no generic pair relation.
 
-`TargetSignature` and `ConstructorSignature` are Tech designations of each signature's place in this use, not local system-role kinds. A publication may explain TargetSignature as “the signature being engineered”; it need not introduce the abbreviation *SoI*. Do not conflate the TargetSignature with its C.2.1 EntityOfConcern. Distinct signature editions remain distinct epistemes when their C.2.1 discriminator triples differ; any empirical-grounding, edition, continuity, dependency, source-use, or publication relation remains separately identified.
+`TargetSignature` and `ConstructorSignature` are Tech designations of each signature's place in this use, not local system-role kinds. A publication may explain TargetSignature as “the signature being engineered”. SoI designates a product System in an extended enterprise under A.1.STM, rather than this episteme. Do not conflate the TargetSignature with its C.2.1 EntityOfConcern. Distinct signature editions remain distinct epistemes when their C.2.1 discriminator triples differ; any empirical-grounding, edition, continuity, dependency, source-use, or publication relation remains separately identified.
 
 
 #### A.6.S:4.2 - Choose the constructor vocabulary that the receiving use needs
@@ -277,7 +277,7 @@ The result keeps viewing, declaration edits, episteme succession, reference reta
   * A.1, A.13, and A.15.1 — System admission, the complete actual-performer core including local-kind classification and an obtaining A.2.1 assignment, and independent dated-Work admission; F.6 follows only for precise attribution through that same assignment
   * C.2.1 — episteme identity through claim content, EntityOfConcern, and effective ReferenceScheme, with empirical grounding and edition continuity kept as separate direct relations
   * (optional) E.18 — TransformationFlowStructure, when signature-construction work is represented as a transformation-flow structure
-  * E.10 and LEX discipline — if the publication uses Plain twins (“SoI”) or shorthands, keep their exact Tech readings recoverable and keep Plain twins out of normative register
+  * E.10 and LEX discipline — if the publication uses Plain twins (“the signature being engineered”) or shorthands, keep their exact Tech readings recoverable and keep Plain twins out of normative register
   * A.6.3 — Episteme viewing — EntityOfConcern-preserving episteme construction
   * A.6.4 — EntityOfConcern-retargeting arrows, their separate C.2.1 bounded-use assertions, and separate current-case judgements
   * A.6.5 — relation-declaration slot discipline

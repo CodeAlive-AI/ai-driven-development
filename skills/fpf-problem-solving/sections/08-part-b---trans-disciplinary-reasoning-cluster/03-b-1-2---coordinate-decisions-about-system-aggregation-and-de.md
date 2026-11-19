@@ -30,18 +30,18 @@ Typical moments:
 - If the question is a functional claim, use its behavior or realization predicate; use `A.6.F` when the function wording is unresolved and `C.30.ASV` when architecture-view conformance is needed.
 - If bearer allocation or parthood is the question, use the allocation or part-relation pattern; use `A.6.M` only when module or interface wording needs repair.
 - If a mathematical aggregation lens is the question, use `C.29`.
-- If the question is project system-of-interest designation, system-role assignment, Work, transformation, service or access, evidence, description, or publication, use that subject pattern; B.1.2 neither identifies nor defines those relations.
+- For the system-of-interest role in an extended enterprise or the system-in-hand for local investigation or change, use `A.1.STM` and `A.1.SCR`. For a technical system-role assignment, Work, transformation, service or access, evidence, description, or publication, use its subject pattern.
 
 ### B.1.2:1 - Problem Frame
 
 B.1.2 specializes B.1 for system holons. It coordinates independently grounded facts for one aggregation or delimitation decision; each relation retains its defining pattern.
 
-Keep five frequently collapsed objects distinct:
+Keep the following meanings separate when identifying the whole:
 
 1. **The system whole.** It is independently recognized under A.1 and its identity rule.
 2. **Its environment.** In this pattern, `environment` means the external referents and crossing relations made relevant by a stated delimitation and use. It is not a generic surrounding object; a medium is named separately when that medium is the subject.
 3. **A containing system.** The larger system of which `S` is an admitted part exists for this claim only when a part-whole relation independently obtains. Interaction or spatial surrounding is not enough.
-4. **The project system-of-interest.** Project designation or selection is a separate claim from `U.System` identity, environment, parthood, system-role kind or assignment, and architecture. B.1.2 does not derive it from a box or aggregation decision.
+4. **System-of-interest and system-in-hand.** The system-of-interest is the product System that a named extended enterprise is organized to create, change, sustain in use or retire. The system-in-hand is the system locally being investigated or changed. Use A.1.STM:4.1 and A.1.SCR:4.7 to establish the grounds for the designation or local focus. Neither establishes System identity, environment, parthood or architecture; any technical system-role classification and assignment also needs its own grounds.
 5. **Use qualification and neighboring relations.** `Context` is not one world-side container supplied by B.1.2. When claim scope, effective reference scheme, or a bounded model-use structure qualifies a use, recover that qualifier under its subject pattern. Recover any system-role assignment or other neighboring relation separately. None delimits the system, identifies its environment, or establishes containment by itself.
 
 For a system-aggregation decision, use :4.1 to recover the system, parthood, delimitation, crossing, and whole-characteristic results or their blockers. Use :4.2 only when their joint organization changes that decision.
@@ -166,7 +166,7 @@ The lathe can change the workpiece through a bounded transformation and work occ
 | `CC-B1.2-6` | Changing, controlling, teaching, measuring, or repairing another holon does not make that holon a part of the acting system; any containing-whole claim has its part-whole relation. |
 | `CC-B1.2-7` | Description artifacts, models, dashboards, digital twins, and registers remain distinct from the system holon and from any selected structure they describe. |
 | `CC-B1.2-8` | Any coordinating `U.Structure` has all four A.22 discriminators and remains non-agentive; otherwise the results stay a plurality. |
-| `CC-B1.2-9` | Environment, containing system, project system-of-interest, and any claim or model-use qualifier remain separately identified; `Context` is not used as their common owner. |
+| `CC-B1.2-9` | Environment, containing system, the system-of-interest role in a named extended enterprise, the local system-in-hand, and any claim or model-use qualifier remain separately identified; `Context` is not used as their common owner. |
 
 ### B.1.2:7 - Common Anti-Patterns and How to Avoid Them
 

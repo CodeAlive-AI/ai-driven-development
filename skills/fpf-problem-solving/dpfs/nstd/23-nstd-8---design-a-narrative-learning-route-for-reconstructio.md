@@ -101,6 +101,8 @@ Connect the teaching material to the question at hand and to the use that follow
 
 Examine what is available by the time of the next task. Identify what this audience can already use, what the route has introduced, which questions remain open and which prerequisites the task needs now. An overview or a link can supply a missing relation if it makes that relation usable at this point. Inspect the material for a design judgement. Use a learner’s attempt when the question concerns what that learner actually did.
 
+Compare the work the author was commissioned to teach with the task the finished narrative actually gives the learner. Read the whole narrative with that difference in view. When must the learner choose something the storyteller has already chosen? Trace where the learner gets the grounds for making that choice and where the task lets them make it. If all the episodes fit together but the design of the procedure is still missing, use EXD.Reference:3 to develop that explanation from the subject practice. When the goal is to explain one incident or perform one specified operation, its own story may already suffice. Use EXD.6:4.1 to check the complete account against either goal.
+
 Choose the continuation that fits the transition.
 
 - **The connection is missing.** Show how the block or aid bears on the current question and the next use. Correct a misleading diagram edge or a link to the wrong passage.

@@ -432,15 +432,16 @@ The table gives the complete set of baseline claims about the controller and its
 
 The team then fills three different architecture views:
 
-| View and `EntityOfConcern` | Obtaining relations | Decision use |
+| View and `EntityOfConcern` | Relations used and their status | Decision use |
 | --- | --- | --- |
 | holonic and membership view of controller `C17`, rig `R4`, and family `F7` | `C17` has processor board, I/O assembly, and network module as constructive parts. `R4` has a host, I/O rack, compressor emulator, and network-fault injector as constructive parts. Six actual controllers are members of `F7` under the current effectivity basis. | A versioned compressor boundary can localize component replacement while adding processor load at controller level and configuration/evidence burden at family-member level. Rig parameterization can reduce rewiring Work while adding maintenance and qualification burden at rig-whole level. These are simultaneous cross-level conflicts, not stages. |
 | non-holonic system-of-interest–builder relation view of the `C17`–`R4` test arrangement | the controller compressor interface corresponds to a rig adapter; the rig provides a test service to release Work; the evidence pipeline depends on configuration identity | The controller does not contain the rig, team, or Method as parts. Changing either side can move the supplier-change and assurance burden. |
-| Work view of the next supplier-change trial | adapter parameterization precedes closed-loop test; evidence review overlaps later testing; rollback preparation and service planning overlap the release decision | Earlier and overlapping Work constrain the investment, but their order creates no holonic level. |
+| Work view of the next supplier-change trial | The trial plan requires adapter parameterization before closed-loop testing. It schedules evidence review alongside later tests, and rollback preparation and service planning alongside the release decision. | The investment comparison assumes that the people and equipment needed for the planned overlap will be available. If the reviewer is committed elsewhere, secure that time or compare a schedule with serial review. Actual work times can establish which activities overlapped after the trial. |
 
 The holonic and membership view exposes processor and evidence burdens at levels different from the interface
-change. The system-of-interest–builder relation view matters because the rig is not a part of the controller. The Work view matters because test readiness and review overlap determine calendar and assurance
-resources. None of the three can be inferred from another.
+change. The rig provides a test service from outside the controller. The Work view supplies the precedence
+and resource assumptions for estimating completion time. An order of work establishes precedence for that
+trial. Levels of system composition require a part–whole relation.
 
 Three alternatives survive admission beside the incumbent:
 

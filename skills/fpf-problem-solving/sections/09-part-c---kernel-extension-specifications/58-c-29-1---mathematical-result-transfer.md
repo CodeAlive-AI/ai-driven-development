@@ -146,13 +146,9 @@ A map that combines source cases can erase differences; equality of their images
 
 When the exact queried value is not determined, construct the values compatible with the retained information. For a represented value y, these arise from source cases satisfying F(x) = y and the stated premises. Prove a lower bound L(y), an upper bound U(y), or another relation that holds for all those cases. The resulting interval can answer a threshold question even when it cannot identify one value.
 
-For a decision q ≤ b:
+For the threshold q ≤ b, an upper bound U(y) ≤ b establishes the threshold for every compatible case. A lower bound L(y) > b excludes it for every compatible case. When L(y) ≤ b < U(y), the enclosure alone leaves the answer open for one unspecified case. Its bounds can include unattainable values. To establish that the retained information cannot decide the threshold for that case, exhibit a compatible case meeting the limit and another exceeding it, or prove both outcomes are possible. C.16.IR applies this test to quantities inferred from readings. A single permitted case above b already refutes a guarantee that every case meets it.
 
-- an upper bound U(y) ≤ b establishes the decision for every compatible case;
-- a lower bound L(y) > b rules it out for every compatible case;
-- a bound spanning b leaves the decision unresolved.
-
-These are consequences of the bound, so retain its domain, units and relevant time or parameter range. A bound for a sampled instant does not by itself answer what happened between samples.
+Preserve the domain, units and relevant time of the comparison. A bound for one sampled instant can settle the decision for that instant. To guarantee a condition throughout a period, also establish what can happen between samples.
 
 A relaxation offers another useful transfer. Let S be the allowed source solutions, let T be receiving solutions, and suppose every solution in S has an image in T with the same cost. If the receiving account permits additional solutions, minimizing there can give a lower bound on the source minimum. When the minima exist:
 
@@ -160,7 +156,7 @@ A relaxation offers another useful transfer. Let S be the allowed source solutio
 min over T of receiving cost ≤ min over S of source cost.
 ~~~
 
-The reason is that the receiving search includes a cost-preserving image of every source option. Maximization gives an upper bound under the analogous assumptions. An optimal receiving solution that has no source counterpart still supports the bound; it does not supply a feasible source plan. A returned plan requires an allowed source witness.
+The reason is that the receiving search includes a cost-preserving image of every source option. Maximization gives an upper bound under the analogous assumptions. An optimal receiving solution that has no source counterpart still supports the bound; it does not supply a feasible source plan. A returned plan requires an allowed source witness. A budget decision may need less than an optimum. For minimization, any feasible source plan at or below budget establishes feasibility. A proven lower bound strictly above budget excludes every plan. If a lower bound equals the budget, establish that the source permits a plan at that cost before promising delivery. Even an infimum can be approached by feasible costs without being attained.
 
 Where the comparison is approximate, derive the error relation for the needed operation and propagate it through later steps. For example, if a later scalar operation h satisfies |h(a) − h(b)| ≤ K|a − b|, with K ≥ 0, on the relevant interval, an input error at most ε contributes at most Kε at its output. Any additional error introduced by computing h is added to that contribution. Adding the errors of successive steps without accounting for amplification can understate the final error.
 
@@ -177,7 +173,7 @@ If the comparison fails, use the failure to choose the next construction.
 | Two representatives give different values | Change the representation or ask for a class property, such as a minimum or interval, and establish that new property's use. |
 | Agreement holds only on part of the domain | State and use that restriction if it includes the intended cases; otherwise seek another correspondence. |
 | A missing source premise prevents the comparison | Recover or establish that premise before repairing the receiving calculation. |
-| A sound bound is too broad for the decision | Find which retained uncertainty spans the threshold and obtain a discriminating premise or observation. |
+| A sound bound is too broad for the decision | Try a direct comparison or a tighter bound from the available premises. If compatible cases give different decisions, identify the observation or source condition that could separate them. |
 
 After a repair, repeat the affected comparison and the later steps that depend on it. Keep conclusions whose premises and correspondences remain applicable.
 
@@ -237,7 +233,7 @@ The arithmetic min(1,4)+2 = 3 still holds. Its use as the attainable minimum fai
 
 Repair the state at B by retaining whether the continuation permission remains. Let p arrive at (B,0) and q at (B,1). Only (B,1) has the r transition to C. Minimizing over the allowed complete routes in this expanded account yields 4 + 2 = 6. Returning q followed by r supplies an allowed source witness.
 
-There is also a useful result from the coarser account. If it deliberately ignores the permission restriction, its feasible route set contains all routes allowed by the source account. Costs of retained routes remain unchanged. Its minimum 3 is therefore a lower bound on the source minimum, here 6. The bound rules out a source route costing at most 2. It cannot establish that a source route costing at most 4 exists; that would need an allowed witness.
+There is also a useful result from the coarser account. With the permission restriction removed, every allowed source route remains available at the same cost. The relaxed minimum of 3 rules out a source route within a budget of 2. For a budget of 4, the lower bound alone is inconclusive. The permission rule and the stated complete list of routes show that the only permitted complete route costs 6. If the budget is 6, returning q followed by r gives the planner a route it can use.
 
 **Returned result.** Endpoint reachability, the cost of a selected route and the minimum over compatible routes are different questions. Retain history only insofar as it changes future compatibility or cost. When a coarser account is cheaper to use, its lower bound may still answer the receiving question without constructing the optimal source route.
 
@@ -293,7 +289,7 @@ For α = 1/4, the contrast halves each interval. Starting from (20,80) gives thi
 50 °C ≤ Mₖ ≤ 50 °C + 2⁻ᵏ × 30 K.
 ~~~
 
-Temperature differences are added to a temperature on the same scale. At k = 1 the upper bound is 65 °C, leaving the 60 °C question unresolved. At k = 2 it is 57.5 °C, so every compatible initial pair has warmer temperature at most 60 °C at that sampling instant. No choice of a representative pair is needed.
+Temperature differences are added to a temperature on the same scale. At k = 1, an initial pair of (20,80) gives a maximum of 65 °C and refutes a 60 °C guarantee covering all compatible pairs. An initial pair of (50,50) stays at 50 °C, so for one unknown pair the retained information leaves the answer open. At k = 2 the upper bound is 57.5 °C. Every compatible pair now meets the 60 °C limit at that sampling instant.
 
 If an exact maximum is wanted, retaining (m,|d|) is sufficient under this symmetric update. The sign of d is needed only for questions distinguishing which body is warmer. Retain the distinction needed by the question, rather than restoring both coordinates automatically.
 
@@ -324,7 +320,7 @@ The extension supports a useful approximation and an existence argument in the l
 
 **Bias toward familiar structure.** A recognized matrix, graph or algebra can make a proposed correspondence feel established. Recover the represented participants and operation conditions before applying its theorem. The route graph needs permission state when permission changes continuation.
 
-**Bias toward exact answers.** Insisting on reconstruction of every source detail can hide a cheaper sufficient answer. Derive a bound over all compatible cases and compare it with the decision threshold. Conversely, report unresolved cases when that bound spans the threshold.
+**Bias toward exact answers.** Insisting on reconstruction of every source detail can hide a cheaper sufficient answer. Derive a bound over the compatible cases and compare it with the decision threshold. If the bound crosses the threshold, a tighter argument may still settle it. Establish which threshold outcomes the compatible cases can actually attain before claiming that both are possible.
 
 **Bias from machine-generated fluency.** An AI can produce a plausible mapping and a correct algebraic simplification while omitting the premise that connects them. Ask a contributor for the domain, operation comparison and returned conclusion. Use subject expertise to assess an unfamiliar proof; a persuasive explanation does not settle its premises.
 

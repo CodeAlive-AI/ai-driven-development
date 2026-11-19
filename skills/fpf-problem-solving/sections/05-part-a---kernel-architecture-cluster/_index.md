@@ -8,7 +8,7 @@
 - [A.1.1 - Bounded Model-Use Structure: Applicability, Use and Expression Coherence (DDD Bounded Context)](04-a-1-1---bounded-model-use-structure-applicability-use-and-ex.md) (494 lines) — Type: Part A architectural ontology pattern
 - [A.1.SCR - Finding the Acting or Changed System](05-a-1-scr---finding-the-acting-or-changed-system.md) (269 lines) — Type: Part A practitioner application pattern
 - [A.1.CSD - Discovering Systems That May Bear Consequences](06-a-1-csd---discovering-systems-that-may-bear-consequences.md) (282 lines) — Type: Part A practitioner discovery pattern
-- [A.1.STM - Connect Project Reasoning (System-Thinking Long Mantra)](07-a-1-stm---connect-project-reasoning.md) (412 lines) — Type: Part A practitioner application pattern
+- [A.1.STM - Connect Project Reasoning (System-Thinking Long Mantra)](07-a-1-stm---connect-project-reasoning.md) (424 lines) — Type: Part A practitioner application pattern
 - [A.2 - System-Role Kinds and Assignments](08-a-2---system-role-kinds-and-assignments.md) (439 lines) — Type: Architectural (A)
 - [A.2.1 - U.SystemRoleAssignment - Contextual System-Role Assignment](09-a-2-1---u-systemroleassignment---contextual-system-role-assi.md) (364 lines) — Type: Definitional (D)
 - [A.2.2 - System Capability: Conditions, Measures and Fit](10-a-2-2---system-capability-conditions-measures-and-fit.md) (353 lines) — Capability is a System's ability to perform a work family or produce a result class under stated conditions and measured bounds.

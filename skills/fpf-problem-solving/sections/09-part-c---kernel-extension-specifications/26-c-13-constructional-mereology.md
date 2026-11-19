@@ -47,7 +47,7 @@ A bare list of `ComponentOf`, collection-specific belongs-to, or `AspectOf` clai
 
 #### C.13:4.1 - Solution sketch
 
-Use the coarsest of three construction narratives that fits the object being described. In each case, write the shorthand only after the required facts are recoverable.
+Choose the form by the relation you need to explain. Use `sum` for an assembly, `set` for membership in a collection, and the appropriate `slice` for an aspect or a bounded portion. An installed pump can belong to a fleet and be a component of a skid. Each claim needs its own facts.
 
 | Form | Practical reading | Facts required before the trace is truthful | What the form does not establish |
 | --- | --- | --- | --- |
@@ -68,6 +68,8 @@ Do not add a fourth constructor merely to carry time, execution order, paralleli
 Use the portion profile of `slice` when the receiving work needs to inspect a `PortionOf` claim. First identify the portion x and whole y under A.14:5.1. State what delimits x within y, why they are the same kind of stuff or content, the extensive measure μ and its unit or declared conversion, and the conditions under which both identities and the relation hold. An amount alone leaves the particular portion unidentified. These facts support the ordinary sentence “x is a portion of y under this measure and boundary rule.”
 
 `Γ_m.slice(y, portionBoundary)` is optional shorthand for that account. Its second argument identifies the delimiting rule; it is not the aspect profile's facet argument. The result describes x and its already established PortionOf relation. For `ProperPortionOf`, also check `0 < μ(x) < μ(y)` under A.14:5.1; additivity alone does not establish it. For a joined portion, apply A.14's disjointness and admitted-join conditions before adding measures. A boundary, unit or measure change reopens the affected account; the direct identity rule decides whether the portion or whole continues.
+
+To infer a value for the whole from observations of its parts, say how the characteristic of the whole depends on those parts under the observation conditions. To obtain total mass by adding the portion masses directly, the portions must cover the whole without overlap and their masses must be comparable. A local temperature reading with its uncertainty can establish that a limit was exceeded at one spot at the time of measurement. To establish that the whole stayed below the limit, cover the unobserved material and times with observations or a justified bound. C.16 gives the measurement method for the chosen characteristic.
 
 In this constructed example, Billet-20 is an identified 20 kg stock. EndPortion-5 is the same material between its left end face and a specified cross-section inside that billet; its mass is 5 kg under the same measurement conditions. The account names both objects, those boundaries and the identity conditions of the stock and portion, so it supports `ProperPortionOf(EndPortion-5, Billet-20)` and the ratio 5/20 = 25%. An AspectOf or integrated ComponentOf claim requires its own relation grounds. If the indicated cross-section is unknown, “5 kg of Billet-20” gives an amount but leaves this particular portion unresolved. After physical separation, inspect the new boundaries and stock identity before carrying the earlier relation into the new state.
 
@@ -122,6 +124,8 @@ Use this split especially when a readable relation label such as ComponentOf, a 
 PumpSkid #7 is assembled from identified Pump, Motor, Baseframe, Manifold, enclosure, pipe, cable, and connector entities. The direct mechanical, electrical, and fluid part-relation patterns identify the fastening, coupling, enclosure, terminal, flange, and seal occurrences. The skid assembly method or rule states how those facts form the candidate, and the skid reidentification rule says which replacements preserve PumpSkid #7.
 
 The shorthand `Γ_m.sum{Pump, Motor, Baseframe, Manifold, ...}` is truthful only with those facts beside it. It records an integrated-assembly construction; it does not make the relations obtain. The composition sustains skid-level boundary, interface, load-envelope, and operating characteristics not attributable to one constituent alone.
+
+A more detailed account can establish more about the same motor, such as the torque it can deliver. To compare two models of **skid performance**, use the same question about the skid in both. State how the model of the coupled parts predicts the whole's performance. Under B.5.MR:4.2 a strict refinement preserves the earlier assertions in every admissible configuration, admits at least one configuration, and rules out a previously possible performance answer.
 
 The same parts unconnected on a pallet do not form the skid. A bill of materials and drawing are epistemes about intended or possible assembly. They do not substitute for actual part relations, assembly, or identity. The same part set connected in a different assembly may constitute another whole.
 

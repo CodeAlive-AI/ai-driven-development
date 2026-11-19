@@ -150,7 +150,7 @@ A different realizer of the same declaration changes no suite member. A correcte
 - `A.19.CHR:4.2.1` (CHR SlotKind Lexicon)
 - `A.19.CHR:4.5` (suite protocols: ordering/optionality; suite closure)
 - `A.19.CN` (CN-frame routing: `normalization`, `comparability.mode`)
-- `G.0` (CG-frame admissibility gates where required downstream)
+- `G.0` (CG-Spec admissibility and evidence conditions where required downstream)
 - `C.16` (evidence carriers; calibration/validity for normalization legitimacy)
 - `A.17/A.18` (measurement meaning & scale lawfulness; not redefined here)
 
@@ -233,7 +233,7 @@ For example, with fixed method `n(x)=x/10`, domain [0,100] and the same CN-Spec,
 
 **LawSet (UNM laws; identifiers are stable)**
 - **UNM‑L0 (Values, not characteristics).** UNM produces `NCV` as a **value** under declared invariants; it does not redefine the underlying characteristic meaning (measurement meaning remains governed by A.17/A.18 and evidence by C.16).
-- **UNM‑L1 (Declared method class gate).** A normalization method instance is admissible only if its method is declared in the allowed method class set: `{ratio:scale, interval:affine, ordinal:monotone, nominal:categorical, tabular:LUT(+uncertainty)}`.
+- **UNM‑L1 (Declared method classes).** A normalization method instance is admissible only if its method is declared in the allowed method class set: `{ratio:scale, interval:affine, ordinal:monotone, nominal:categorical, tabular:LUT(+uncertainty)}`.
 - **UNM‑L1a (Method semantics are governed by the method).** `NormalizationMethod` defines invariants, closure (composition / inverses where defined), and validity rules. UNM consumes these declarations; it does not invent extra admissibility.
 - **UNM-L2 (Directed result before narrower claims).** Return the defined transformed value with its domain and preserved/lost distinctions. Functional equality of outputs forms equivalence classes on that domain. A receiving operation descends only after compatibility and, for a partial operation, representative-independent availability hold. A query descends only when constant on the classes; otherwise retain/refine the input or return the missing distinction.
 - **UNM-L2a (Declared-basis locality).** Every transformed value, function-kernel equivalence and stronger operation/query claim retains the selected method, domain, characteristic space, its separately referenced description episteme, CN-Spec edition, bearer and comparison basis. Keep the scope and data window and the method's declared validity window. Reusing an unchanged equivalence for a new query does not make that query recoverable; assess its own constancy/compatibility and the receiving-use conditions.
@@ -255,7 +255,7 @@ where `GuardDecision ∈ {pass | degrade | abstain}` and follows this predicate 
   - (**Target coordinate binding**) the input `CV`’s `slot_id` belongs to the method instance’s declared bound coordinate set and its value lies in the selected transformation's input domain;
   - (**Scale‑regime compatibility**) the method kind is compatible with the coordinate’s regime (`ratio:scale | interval:affine | ordinal:monotone | nominal:categorical | tabular:LUT(+uncertainty)`) and preserves the declared `NormalizationInvariant[*]` (from `CN_Spec.normalization.invariants` and/or the method description);
   - (**Validity window**) the method instance’s validity window covers the active slice/time policy (no implicit “latest”);
-  - (**Evidence sufficiency when routed into governance**) when `comparability.mode = normalization-based` (or downstream uses `NCV` in gated decisions), the method instance’s evidence pins satisfy `CN_Spec.comparability.minimal_evidence` (structure typically gated by `G.0`; evidence semantics governed by `C.16`).
+  - (**Evidence sufficiency when routed into governance**) when `comparability.mode = normalization-based` (or downstream uses `NCV` in gated decisions), the method instance’s evidence pins satisfy `CN_Spec.comparability.minimal_evidence` (minimal-evidence conditions defined in `G.0`; evidence semantics governed by `C.16`).
 - **degrade** iff all non‑evidence conditions above hold, but the evidence check does not pass and the declared failure behavior permits producing a policy‑gated degraded `NCV` rather than abstaining.
 - **abstain** otherwise (including missing binding, coordinate mismatch, undefined input, out-of-window validity, or evidence failure when the declared failure behavior is abstain).
 
@@ -446,7 +446,7 @@ At comparable effort, both choices use the same declared transform and query. On
 - `A.19.CHR` (CHR suite boundary; slot lexicon; suite protocols)
 - `A.19.CN` (CN_Spec normalization + comparability routing)
 - `C.16` (MM‑CHR evidence/calibration carriers)
-- `G.0` (CG-frame admissibility gates used downstream)
+- `G.0` (CG-Spec admissibility and evidence conditions used downstream)
 - `G.2` (SoTA synthesis packs as the method‑family ingress; wiring‑only integration)
 - `E.18` (when UNM is used in transformation-flow structures/graphs; P2W freshness/work routing)
 - `C.29` when the chosen function, equivalence or quotient leaves an unresolved representation or transfer question; use an adequate local calculation. `B.3` applies to a named assurance claim.

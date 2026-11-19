@@ -121,7 +121,7 @@ Splitter заменяет `sections/`, `dpfs/`, `library/` и `PATTERN-INDEX.md`
 
 Упаковка скилла и скрипты: MIT. Адаптировано из *FPF Library* Анатолия Левенчука — ядра *First
 Principles Framework (FPF)*, доменных фреймворков и документов библиотеки —
-[ailev/FPF](https://github.com/ailev/FPF), коммит источника `e230eef4f6955116bf697ca9ba5e79247af1843e`.
+[ailev/FPF](https://github.com/ailev/FPF), коммит источника `9fb0bff7ac2dfe82f068b03befe6b7303bcd7f5b`.
 Текст библиотеки распространяется под [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); см.
 [область действия лицензии источника](https://github.com/ailev/FPF/blob/main/LICENSING.md). Изменения:
 публикации разделены на файлы секций с генерируемыми навигационными индексами, их ссылки переписаны на

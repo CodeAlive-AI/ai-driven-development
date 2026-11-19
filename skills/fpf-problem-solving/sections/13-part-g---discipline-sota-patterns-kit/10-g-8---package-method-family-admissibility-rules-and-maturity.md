@@ -226,8 +226,10 @@ Use `EvidencePathRefs` to cite the relevant `PathId[]` or `PathSliceId[]` when t
 
 * closed rungs (UTS‑registered identifiers),
 * `Scale kind = ordinal` and a declared `ReferencePlane`,
-* (optional) explicit poset edges / precedence constraints,
+* the order needed for any comparison the admission use makes, stated here or recoverable from the cited scale edition,
 * rung transition justifications that cite evidence paths (typically `G.6` paths).
+
+For an “at least” floor, check whether the assessed rung equals or succeeds the required rung in that order. Known incomparability fails that test. An unavailable comparison leaves the verdict undetermined under the clause's unknown rule. A clause that calls for a particular kind of evidence also needs grounds establishing that fact.
 
 Dispatchers, auditors and refresh planners can cite the published ladder description. The card describes the ladder under C.23.
 

@@ -264,7 +264,7 @@ Typical bias risks and mitigations:
 * **Comparator choice encodes value judgments.** Weights, priority orders, thresholds, and “tie‑break” conventions can encode organizational bias. Declare these choices in the selected `ComparatorSpec` or policy, using existing prose or code when it makes their meaning and edition recoverable.
 * **Systematic missingness.** If evidence is systematically missing for certain contexts or groups, naive “unknown → worse” is a bias amplifier. CPM’s tri‑state guard avoids coercion; but teams must still define policy‑bound failure behavior and be explicit when abstention is acceptable.
 * **Cross-scheme comparisons can embed structural unfairness.** A comparison that relies on a semantic relation between two F.17 `SchemeSenseCell` values cites the obtaining F.9 `Bridge` and its separate bounded-use claim; together they expose the tested correspondence or difference and tolerated loss. A plane-only crossing cites the ReferencePlane relation and policy. Neither branch replaces comparison scope, predicate, comparator, or time.
-* **Overconfidence via scalarization.** Collapsing partial orders into scalars often overstates certainty and hides tradeoffs. CPM makes set‑valued outcomes first‑class, so the human or managerial decision can acknowledge tradeoffs.
+* **Overconfidence via scalarization.** Collapsing partial orders into scalars often overstates certainty and hides tradeoffs. CPM makes set-valued outcomes available to a decision maker who needs to take those tradeoffs into account.
 
 ### A.19.CPM:7 - Conformance Checklist
 
@@ -309,7 +309,7 @@ Apply the declaration checks to a CPM publication and the application checks to 
   *Avoid:* keep `CompareEligibility` as the mechanism-level tri-state predicate and assign gate decisions to their governing pattern.
 
 * **Anti‑pattern: “SlotKind drift.”**
-  *Symptom:* renaming or re‑purposing `LeftProfileSlot`, `RightProfileSlot`, `ComparatorSpecSlot`, or `ComparisonResultSlot` across specializations or across CHR layers.
+  *Symptom:* renaming or re‑purposing `LeftProfileSlot`, `RightProfileSlot`, `ComparatorSpecSlot`, or `ComparisonResultSlot` in CHR mechanism descriptions and their specializations.
   *Avoid:* use the suite SlotKind lexicon (`A.19.CHR:4.2.1`) and keep SlotIndex as a derived projection.
 
 * **Anti‑pattern: “Smuggling plan‑binding into CPM.”**
@@ -337,7 +337,7 @@ Apply the declaration checks to a CPM publication and the application checks to 
 * **Improved usability:** CPM gives a single, engineer‑readable place to learn “what admissible comparison means” and what it does *not* mean.
 * **Higher replayability:** comparison results remain traceable through the `Compare` application and its `ComparisonResultSlot` binding, any consumed obtaining F.9 `Bridge` with its separate bounded-use claim, and any ReferencePlane relation and policy. Recover dated comparison `U.Work` and the A.10 evidence-provenance path when the account asserts them or the receiving use consumes them.
 * **Reduced semantic drift:** teams cannot silently shift from Pareto to lexicographic to “weighted sum” without changing explicit comparator specs and pins.
-* **Explicit tradeoffs:** set‑valued outcomes force downstream reasoning to acknowledge incomparability and uncertainty rather than hiding them.
+* **Explicit tradeoffs:** set-valued outcomes retain incomparability and uncertainty for downstream reasoning.
 * **Cost:** downstream consumers (notably selection) must handle sets, abstentions, and partial orders explicitly. This moves complexity from hidden heuristics into explicit policy‑bound mechanisms.
 
 ### A.19.CPM:10 - Rationale

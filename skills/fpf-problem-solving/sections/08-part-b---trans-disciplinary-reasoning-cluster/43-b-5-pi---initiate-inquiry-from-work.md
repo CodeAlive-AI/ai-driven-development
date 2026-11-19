@@ -145,7 +145,7 @@ If the reader can only point to the phrase and must leave, keep that passage and
 
 #### B.5.PI:5.4 - A successful calculation leaves a physical connection unexamined
 
-A designer has a graph program that returns a valid two-colouring for three gears listed as a chain: contacts AB and BC. Its tests pass, and nobody has complained about the result. At an ordinary design discussion, the designer uses B.5.MPC's mantra to explain what the result says about the proposed arrangement. The question is whether all three gears can rotate while the stipulated meshes remain engaged. This inquiry needs no project SOI designation.
+A designer has a graph program that returns a valid two-colouring for three gears listed as a chain: contacts AB and BC. Its tests pass, and nobody has complained about the result. At an ordinary design discussion, the designer uses B.5.MPC's mantra to explain what the result says about the proposed arrangement. The question is whether all three gears can rotate while the stipulated meshes remain engaged.
 
 The physical-to-mathematical connection asks what each edge represents and whether the contact list preserves the relevant physical contacts. Showing the successful program run leaves that question open. Inspecting the available design establishes, for this constructed case, a third external mesh CA. The assumed idealized model has fixed parallel axes, positive pitch radii and external meshes, with rotation viewed from one side. Under those conditions every mesh requires opposite rotation directions. Around the three-contact cycle the alternating directions conflict, so nonzero coupled rotation is excluded. B.5.MPC:5.2 develops the argument and its interpretation.
 

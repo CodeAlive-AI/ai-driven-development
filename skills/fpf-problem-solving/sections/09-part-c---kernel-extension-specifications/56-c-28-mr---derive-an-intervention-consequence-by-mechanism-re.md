@@ -10,7 +10,7 @@ Use this pattern when a causal model is available and the working question asks 
 
 The subject is the intervention query in that model. The Method constructs the modified model and derives the requested value, distribution, contrast or bound under its assumptions. The practitioner needs the subject meaning of the variables and enough mathematical or computational help to solve the relevant equations.
 
-**First useful move.** Point to the equation that represents the proposed change. Replace that equation and re-evaluate the variables needed for the question. If a display merely reports voltage, changing its displayed number leaves the supply equation in place. Changing the supply command instead changes the voltage and the current through the retained load equation.
+**First useful move.** Point to the equation that represents the proposed change. Replace that equation and re-evaluate the variables needed for the question. If a display merely reports voltage, changing its displayed number leaves the supply equation in place. Changing the supply command replaces an input to regulation. Recalculate the delivered voltage and the current through the load. Two commands can yield the same output when the supply is at its current limit.
 
 Use an adequate existing derivation directly. Observational reporting can finish without this transformation. If only an observed joint distribution is available, recover a causal-model assumption or an identification result through C.28 before claiming a particular intervention consequence. Identifying an effect from data is a separate task from deriving it in a supplied model.
 
@@ -110,7 +110,9 @@ The observational probability of no alarm is `0.5*0.1 + 0.5*0.9 = 0.5`. High loa
 
 For `do(S=0)`, replace the second mechanism by `S=0`. The equation for H and the input law are retained. Therefore `P(H=1 | do(S=0))=0.5`. Forcing this indicator removes its information about H without changing H in the supplied model.
 
-The result answers a current-load question under the stated absence of an S-to-H influence. If alarm output controls subsequent cooling, a later-load query needs that later mechanism and the duration of the override. The current calculation remains usable for the current question; the new temporal question has an additional required input.
+For a particular past episode the answer uses what was observed *in that episode*. Suppose the alarm sounded and load was unobserved. The factual mechanisms give `P(H=1 | S=1)=0.45/(0.45+0.05)=0.9`. In the alternative where the alarm was silenced at that instant, its replacement leaves H unchanged for each compatible underlying input. The probability of high load in that alternative given the original alarm is therefore 0.9. Drawing a fresh episode from the population would give 0.5. Treating the imposed silence as an observation of a naturally silent alarm would give 0.1. Each number answers a different question.
+
+All three calculations concern current load under the stated absence of an S-to-H influence at that instant. If alarm output controls subsequent cooling, a later-load query needs that later mechanism and the duration of the override.
 
 #### C.28.MR:5.2 - Change a display or a supply command
 
@@ -124,7 +126,7 @@ Replacing the display equation by `D=6 V` leaves `V=12 V`; current and power rem
 
 Suppose the supply's current limit is now relevant. Use the revised positive-command model `V=min(C, I_max R)` with `I_max=1.5 A`. The 12 V command now gives 9 V at the load and 13.5 W. The 6 V command still gives 6 W. Relative to natural behavior, the calculated power reduction is now 7.5 W, instead of 18 W in the earlier operating-region model.
 
-This is a model comparison. Using this result for a physical supply requires an account of its regulation, load and limiting behavior. Altering a graphical interface value is a physical intervention only when the interface controls the modeled command.
+To use this comparison for a physical supply, establish its regulation, load and limiting behavior. Editing a displayed number can be a real change to the display. The calculated effect on load current applies to a change of supply command. Establish which mechanism the interface changes and whether a controller later acts on its reading.
 
 #### C.28.MR:5.3 - A definite intervention answer with an indefinite baseline
 

@@ -2,7 +2,7 @@
 
 > **Status:** Stable
 
-> **Scope.** Use a CN-frame to state which values may be compared for one bearer and intended use. Declare the characteristic space, chart and comparison basis in CN-Spec, adding normalization when needed. Maintain editions retained for later reuse or shared use, and apply the conditions for each proposed reuse.
+> **Scope.** Use a CN-frame to state which values may be compared for the intended use. The specification can apply to one bearer or to members of a named bearer kind; each reading retains the subject or participants it concerns. Declare the characteristic space, chart and comparison basis in CN-Spec, adding normalization when needed. Maintain editions retained for later reuse or shared use, and apply the conditions for each proposed reuse.
 >
 > **Use this when** readings need a recoverable comparison basis or a changed basis may affect their reuse. Keep the bearer, Characteristic and Scale meanings, observation or evaluation basis and intended comparison together. An already sufficient account can serve as CN-Spec; its notation is unrestricted. Apply the corresponding `A.19` mechanism pattern when normalization, indicatorization, scoring, aggregation, comparison or selection is needed. C.16 governs measurement backing and G.0 governs the applicable admission conditions.
 >
@@ -16,12 +16,12 @@
 
 A.19 established a substrate‑neutral picture:
 
-* a **CN‑frame** = a selected **CharacteristicSpace (CS)** + **chart** (coordinate patch and value basis, with Units where applicable) + a referenced **Normalization mechanism (UNM)** when the use needs normalization, for one named bearer, comparison basis, intended use, and any scope/window that qualifies it. A.19.UNM defines directed normalization, its preservation/loss basis and any separately justified `≡_UNM` class use;
+* a **CN‑frame** = a selected **CharacteristicSpace (CS)** + **chart** (coordinate patch and value basis, with Units where applicable) + a referenced **Normalization mechanism (UNM)** when the use needs normalization, for a declared bearer or bearer kind, comparison basis, intended use, and any scope/window that qualifies it. A.19.UNM defines directed normalization, its preservation/loss basis and any separately justified `≡_UNM` class use;
 * **operators** (subspace, product, pullback/pushforward) and **comparability** (coordinatewise vs **normalization‑based (normalize‑then‑compare)**);
 * **RSG touch-points**: state predicates use observable characteristics; an evaluation establishes whether their conditions hold for the named bearer and window;
 * **entity/relational mixtures** across CN‑frames, represented by the schemas in §8.4, with each required correspondence grounded under its own rule.
 
-**Frame, specification and explanation.** A *CN‑frame* is the selected basis for interpreting and comparing the readings. Its *CN‑Spec* fixes the bearer, characteristic and scale editions, chart, comparison basis, comparability rule, intended use and qualifying scope/window, with normalization and aggregation choices when used. A *CN‑Description* explains that basis through worked examples and anti-patterns. Mechanism-level terms such as `NormalizationMethod`, `NormalizationMethodInstance`, `NCV`, `≡_UNM`, and `IndicatorChoicePolicy` retain the definitions supplied by the corresponding `A.19.<MechId>` patterns.
+**Frame, specification and explanation.** A *CN‑frame* is the selected basis for interpreting and comparing the readings. Its *CN‑Spec* fixes the bearer or bearer kind, characteristic and scale editions, chart, comparison basis, comparability rule, intended use and qualifying scope/window, with normalization and aggregation choices when used. A *CN‑Description* explains the declared comparison basis and the grounds and limits of its use. Worked examples and anti-patterns can illustrate that account. Mechanism-level terms such as `NormalizationMethod`, `NormalizationMethodInstance`, `NCV`, `≡_UNM`, and `IndicatorChoicePolicy` retain the definitions supplied by the corresponding `A.19.<MechId>` patterns.
 
 **Normalization names.** Use A.19.UNM’s method and instance identifiers to identify the selected normalization. Ordinary mathematical “mapping” describes its function; it does not assert a specialized FPF `Map` kind or an F.9 Bridge. Resolve a legacy identifier through F.18 alias docking when needed.
 
@@ -88,7 +88,9 @@ CN‑Spec {
 }
 ```
 
-**Reading:** the CN-frame is the selected characteristic space and chart for one named bearer and use. The normalization block is needed for normalization-based comparison; coordinatewise comparison can omit it. Add maintenance arrangements when the specification is retained for later reuse or maintained as a shared edition. `CN‑Spec` fixes the editions, comparison basis, qualifying scope/window and admission evidence needed by that use, with normalization references and aggregation choices when used. A.19.UNM defines normalization semantics, A.19.UINDM defines indicatorization, C.16 supplies measurement and evidence backing, and G.0 supplies the applicable admission conditions. A `Γ_fold` cites its law and applicability basis. Its property codes express only the claims needed by this use; A.9 supplies an unresolved law choice or property check, while ULSAM retains the CHR fold and admissibility rules.
+**Reading:** the CN-frame is the selected characteristic space and chart for the declared bearer or bearer kind and intended use. When `bearer_ref` identifies a kind to delimit the candidate bearers, the specification applies to readings about members of that kind. Each reading retains the individual subject or participant tuple required by its Characteristic under A.19. Apply the admission and comparison conditions to the actual operand pair.
+
+The normalization block is needed for normalization-based comparison; coordinatewise comparison can omit it. Add maintenance arrangements when the specification is retained for later reuse or maintained as a shared edition. `CN‑Spec` fixes the editions, comparison basis, qualifying scope/window and admission evidence needed by that use, with normalization references and aggregation choices when used. A.19.UNM defines normalization semantics, A.19.UINDM defines indicatorization, C.16 supplies measurement and evidence backing, and G.0 supplies the applicable admission conditions. A `Γ_fold` cites its law and applicability basis. Its property codes express only the claims needed by this use; A.9 supplies an unresolved law choice or property check, while ULSAM retains the CHR fold and admissibility rules.
 
 The space reference selects the space itself. Add `characteristicSpaceDescriptionRef` when the selected use needs one definition or description edition; UNM and UINDM require this pin for their applications. Resolve the pair under A.19:5.1.1.1 and check that the description supplies the basis of that same space. An unchanged space may have a different description episteme, and a changed basis may require a different space even when the description retains its familiar title.
 
@@ -139,7 +141,7 @@ The Bridge is only the sense relation. The separate C.2.1 claim states whether i
 
 > These checks establish the declared comparison basis. Assurance and cross-team reuse still require the evidence and relation conditions of their receiving claims.
 
-**CC‑A19.D1‑1 (Local identity and scope).** Every CN-frame **MUST** identify its name and edition, bearer, characteristic space, reference or comparison basis, intended use, and any scope/window that qualifies the readings. The same label under another scheme or edition is not evidence of the same frame.
+**CC‑A19.D1‑1 (Local identity and scope).** Every CN-frame **MUST** identify its name and edition, bearer or bearer kind, characteristic space, reference or comparison basis, intended use, and any scope/window that qualifies the readings. The same label under another scheme or edition is not evidence of the same frame.
 
 **CC‑A19.D1‑2 (Scales, units and preference).** Each characteristic slot in `cs_basis` **MUST** declare its Scale and value meanings, and its Unit when that Scale has one. A comparison that ranks values by desirability **MUST** state its preference rule. Descriptive comparisons need no preference rule.
 
@@ -372,7 +374,7 @@ In an ordinary comparison with no independent-certification requirement or claim
 This example arranges the information needed to specify the comparison basis. A.19.UNM defines normalization terms; A.19.UINDM defines indicatorization; C.16 governs measurement and evidence backing; G.0 supplies the applicable admission conditions.
 
 ```
-CN‑frame: <Name>      Edition: <edition>      Bearer: <bearer ref>
+CN‑frame: <Name>      Edition: <edition>      Bearer: <bearer or bearer-kind ref>
 ComparisonBasis: <corpus, baseline, reference state, or declared comparison set>
 ScopeAndWindow: <scope ref and qualification interval, when used>
 IntendedUse: <claim, comparison, admission, or aggregation use>

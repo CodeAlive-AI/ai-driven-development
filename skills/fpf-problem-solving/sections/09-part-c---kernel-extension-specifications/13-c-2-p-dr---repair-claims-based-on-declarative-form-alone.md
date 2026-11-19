@@ -10,7 +10,7 @@ Use this pattern when the appearance of a representation is being used to establ
 
 **First useful move.** Identify the expression and the claim being inferred from it. Recover what the expression states or represents, then apply the rule for the disputed claim. Return wording that preserves the supported use and identifies what remains unestablished. A sentence can suffice. Use a `DeclarativeRepresentationRepair` note only when the receiving use needs a separately inspectable repair.
 
-**Quick example.** A heat-flow graph in a reactor-cooling review can show preserved and lost flow relations. It does not authorize a valve change by graph shape. The repair keeps the graph path as graph structure, returns release or gate reliance to the gate, source, and evidence patterns, and blocks the hidden work-permission claim.
+**Quick example.** A heat-flow graph can express which flow paths a design retains. To decide whether someone may change a valve, check whether the applicable rule permits that person to do so under the current conditions. The graph can still answer the flow question while permission remains unknown.
 
 Use this pattern especially when:
 
@@ -69,11 +69,11 @@ Repair declarative-representation overread by separating the visible expression,
 
 The repair order is:
 
-1. **Identify the expression.** Quote or point to the part that prompted the unsupported inference.
+1. **Read the expression under the conventions used to produce it.** Identify the filled row, solver constraint or other construction and recover the assertion it expresses. Use the column definitions, bindings, units or interpretation that determine its meaning. If the same marks admit two readings with different consequences, obtain the convention needed to choose between them or leave that claim open.
 2. **Recover the object or relation at issue.** For example, distinguish a graph path, an evidence relation and a reported state value. Use its subject pattern when that rule is already clear; the selection table below helps when it is not.
 3. **Distinguish the direct object from any representation or correspondence use.** When the visible expression represents a separately identified object or claim, name the exact relation and target. When the direct object or relation itself is current and no separate representation claim is needed, keep that direct use; do not relabel the direct object as a representation kind. Record `none` only when the receiving use needs an inspectable account of that distinction.
 4. **Recover a source or publication relation when it matters to this claim.** Use the pattern governing that relation and its actual participants.
-5. **State the disputed operational claim.** Name the action, result or authority being inferred from the expression.
+5. **State the disputed inference.** Identify what someone would classify, conclude, plan, carry out or authorize on the strength of the expression.
 6. **Apply the claim's subject pattern.** Establish its required grounds or identify what is missing. An actual permission or gate condition comes from that rule.
 7. **Preserve the supported use.** The graph may still support a comparison, for example, while leaving action permission unresolved.
 8. **Delimit the unsupported claim.** Do not assert the stronger result from appearance alone. Distinguish that missing basis from a use blocked by an applicable rule; a separately established result remains usable under its own conditions.
@@ -89,24 +89,26 @@ DeclarativeRepresentationRepair:
   CurrentDirectObjectOrRelation:
   RepresentationOrCorrespondenceUse: <exact relation and represented target> | none
   SourceOrPublicationRelation:
-  TemptingStrongerActionClaim:
+  DisputedInference:
   RecoveredGoverningPattern:
   RetainedUse:
-  BlockedStrongerActionClaim:
+  ConclusionAndGrounds:
   StopOrReopenCondition:
 ```
 
-The ordinary result is the repaired statement and any unresolved condition that changes its use. In the optional note, `BlockedStrongerActionClaim` identifies the assertion that appearance does not establish; it does not by itself declare the underlying action prohibited. Name a blocked use and its governing condition separately when applicable. Reuse a suitable subject-pattern record without copying it into another repair note.
+The ordinary result is the repaired statement and any unresolved condition that changes its use. In the optional note, give the disputed inference and say what the available grounds establish. If a classification remains open, identify the missing criterion or fact. If an applicable rule prohibits an action, identify the rule and the condition that triggers it. Reuse a suitable subject-pattern record without copying it into another repair note.
 
 Use four plain questions before the claim-and-pattern table: What visible thing am I looking at? What direct object or relation is current? What, if anything, does it represent? Which stronger claim still needs grounds?
 
-| Visible expression or artifact | Direct object or relation at issue | Representation or correspondence use | Stronger action claim blocked |
+| Visible expression or artifact | Direct object or relation at issue | Representation or correspondence use | Inference the expression alone cannot establish |
 | --- | --- | --- | --- |
 | highlighted graph path | exact E.18 graph path or `PathSlice`, with any flow valuation kept separate | the graphic rendering corresponds to that path when the relation is current; otherwise `none` when the `PathSlice` itself is under inspection | no prescribed route, valve work, or release by the highlight |
 | dashboard tile | exact status or state value with its bearer and value frame, plus any current source or publication relation | the tile represents that value only through an exact current relation; otherwise `none` when the publication face itself is the direct object | no gate passage or release permission from green appearance |
 | evidence-path expression | descriptive A.10 evidence-provenance path for the named claim or bounded use, citing independently established direct relations | a diagram may represent that descriptive path through an exact current correspondence; otherwise `none` when the path itself is under inspection | no approval, permission, assurance, or release from path shape |
-| solver file | exact publication form or carrier-side object, and whichever formal substrate, claim-bearing episteme, method, mechanism declaration, plan, run, or evidence relation is independently current | the solver expression corresponds to separately identified claims or a formal object when that relation is stated; otherwise `none` | no method, mechanism, performed work, result, or evidence by file form or executability |
-| publication table | exact publication face or form and source relation, with table values or claims kept under their subject patterns | the table corresponds to a separately identified object or claim only when the exact relation is current; otherwise `none` | no evidence, approval, gate passage, or action authority from table layout |
+| solver file | the particular constraint under its variable bindings and units, e.g. `queueLength ≤ 4` | the binding identifies the queue whose length the variable represents, when that correspondence is part of the claim | The constraint alone cannot establish that the solver ran or that an observed queue stayed within the limit. |
+| publication table | the filled row read with its headings, units and key | a row reporting a failure count refers to the equipment and interval identified in the table | The count alone cannot classify the equipment as unreliable. Apply the stated reliability criterion and obtain the observations it needs. |
+
+For a question about format, inspect the formation rules used for the constraint or row. For a question about access, identify the file or other carrier bearing that particular expression.
 
 #### C.2.P.DR:4.2 - Subject pattern selection
 
@@ -158,7 +160,7 @@ Recover the relation the route expression conveys. Direct inspection of a graph 
 
 #### C.2.P.DR:4.4 - Method, algorithm, mechanism, plan, and work settlement
 
-For method-like wording, recover the claimed way of doing and distinguish it from its expression and any actual performance.
+For method-like wording, recover the repeatable way of doing and distinguish it from the plan for a particular job and the Work that occurred. A rule for ordering jobs can be applied to many queues. Tomorrow’s selected order can form part of a plan, and the execution record can show a different order. When two expressions serve as models, compare them for the same inquiry under B.5.MR. A change of notation can preserve every admissible answer. A newly chosen method can change the way work is done without establishing refinement between any two models.
 
 **Method-description membership.** First identify the claim-bearing episteme under C.2.1. Use A.3.2 to determine whether that same individual is a `U.MethodDescription`. Positive membership requires one admitted `U.Method` as its exact `EntityOfConcern` and at least one substantive claim about that Method as a way of doing. Such a claim can state its transformation or enactment concern, applicability, precondition, intended effect or preserved condition, bound, generic participant meaning, or internal composition.
 
@@ -213,10 +215,10 @@ DeclarativeRepresentationRepair:
   CurrentDirectObjectOrRelation: exact E.18 `PathSlice` and E.18.1 carry-through relation among the named records when those objects are current
   RepresentationOrCorrespondenceUse: highlighted nodes and edges render the selected E.18 `PathSlice`; the highlight adds no work ordering
   SourceOrPublicationRelation: none
-  TemptingStrongerActionClaim: ordered work route for the team
+  DisputedInference: ordered work route for the team
   RecoveredGoverningPattern: E.18.1, with A.15.2 or A.15.1 only if planned or dated work is current
   RetainedUse: selected graph path and carry-through relation for inspection
-  BlockedStrongerActionClaim: no work route or prescribed workflow by path shape alone
+  ConclusionAndGrounds: no work route or prescribed workflow by path shape alone
   StopOrReopenCondition: stop at inspection of the selected path and carry-through relation; use A.15.2 for a prescribed work sequence. If a separate mathematical transfer is proposed, establish its C.29 correspondence and limits before relying on that transfer. Reopen when the selected graph, source or intended work relation changes
 ```
 
@@ -268,10 +270,10 @@ DeclarativeRepresentationRepair:
   CurrentDirectObjectOrRelation: exact E.18 heat-flow path or `PathSlice`; keep boundary conditions and any flow valuation under their subject patterns
   RepresentationOrCorrespondenceUse: the rendering identifies the selected E.18 path; a proposed inference from its edges to physical heat flow lacks its correspondence and boundary conditions
   SourceOrPublicationRelation: none
-  TemptingStrongerActionClaim: graph path authorizes physical valve-change work
+  DisputedInference: graph path authorizes physical valve-change work
   RecoveredGoverningPattern: E.18 for graph inspection; C.29 for the unresolved mathematical transfer; A.10 when its source-to-use account must remain replayable; A.21, A.15.2 or A.15.1 only for a current gate, work-plan or dated-Work question
   RetainedUse: graph inspection and identification of the missing heat-flow correspondence
-  BlockedStrongerActionClaim: no release, gate passage, physical intervention, or work occurrence by highlighted path alone
+  ConclusionAndGrounds: no release, gate passage, physical intervention, or work occurrence by highlighted path alone
   StopOrReopenCondition: keep the proposed physical inference unresolved until the correspondence, material losses and boundary conditions support it under C.29; operational reliance also needs the applicable validation and gate or authority result. Reuse adequate existing domain/model documentation. Reopen when that basis or intended intervention changes
 ```
 
@@ -287,10 +289,10 @@ DeclarativeRepresentationRepair:
   CurrentDirectObjectOrRelation: candidate-guide comparison and exact characteristic values under C.16 or A.19; recover any direct support relation under its subject pattern, with A.2.4 for an episteme's evidence use and A.10 for a needed replayable source-to-use account
   RepresentationOrCorrespondenceUse: rows identify the compared candidate guides and columns reproduce named score values with their scales and source references; the ranking adds no approval relation
   SourceOrPublicationRelation: none
-  TemptingStrongerActionClaim: ranked row approves biological intervention
+  DisputedInference: ranked row approves biological intervention
   RecoveredGoverningPattern: C.16 or A.19 for characteristics when current; A.2.4 for an episteme's evidence use; A.10 when the source-to-use account must remain replayable; A.15.2 for experimental work plan; A.21 or authority pattern only if approval or gate claim is current
   RetainedUse: source-finding, candidate comparison, and constraint review
-  BlockedStrongerActionClaim: no edit approval, work occurrence, safety claim, or gate passage from table rank alone
+  ConclusionAndGrounds: no edit approval, work occurrence, safety claim, or gate passage from table rank alone
   StopOrReopenCondition: stop at the supported comparison under the stated score meanings and source conditions. Use C.29 when a separate mathematical-representation choice, transfer or reliance question remains. Intervention approval needs its applicable authority or gate result; resolve unclear “role authorization” through E.10.ROLE, distinguishing a missing rule from missing facts under a known rule. Reopen when the scores, protocol or intended use changes
 ```
 

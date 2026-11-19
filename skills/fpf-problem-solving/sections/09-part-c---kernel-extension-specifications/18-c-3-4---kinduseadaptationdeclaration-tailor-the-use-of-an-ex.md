@@ -55,7 +55,7 @@ The third object is a C.2.1 declaration episteme. Its effective scheme makes sou
 | --- | --- |
 | Local specialization vs common core | A use needs tailoring without forking the base kind. |
 | Expressivity vs determinism | Constraints must remain reproducibly checkable. |
-| Applicability vs uncertainty | Candidate/slice mismatch stops before the judgment; missing facts preserve `unknown`. |
+| Applicability vs uncertainty | A candidate or slice outside the declaration receives no judgment. In an admissible case, `unknown` means that the available facts do not settle the combined criterion. |
 | Scope vs candidate constraints | Conditions on ClaimScope stay under A.2.6; conditions on the candidate enter classification. |
 | Reuse vs proliferation | Stable conceptual distinctions may warrant a separately identified kind, but declaration reuse alone does not. |
 | Locality vs identity | A changed locality prompts comparison of membership distinctions, not automatic bridging. |
@@ -86,7 +86,7 @@ When a use moves to another practice, source, or team, compare the base-kind mem
 - if independently identified kinds are distinct and the use claims a directional correspondence, establish the C.3.3 `KindBridge`; use the receiving signature and adaptation declaration and, when the receiving use is candidate-bearing, make a fresh receiving judgment; and
 - if two adaptation declarations differ in constraints or bindings, a separate `KindUseAdaptationCorrespondenceDeclaration` may name source declaration as EntityOfConcern and state target, direction, deterministic rule, definedness, loss, and effective scheme. It creates no bridge or target truth.
 
-A stable conceptual refinement may justify another kind and an obtaining C.3.1 subkind fact. A declaration, correspondence, judgment, catalog row, or representation creates neither.
+A recurring local test can distinguish members of a narrower kind. Identify that kind by its criterion, then use C.3.1 to establish its relation to the base kind. A declaration or catalogue row can record the result.
 
 ### C.3.4:6 - Norms and Invariants
 
@@ -94,7 +94,7 @@ A stable conceptual refinement may justify another kind and an obtaining C.3.1 s
 
 **KUA-01 (Definition).** A `KindUseAdaptationDeclaration` SHALL be a named, versioned C.2.1 declaration episteme with exact base kind as EntityOfConcern, effective scheme, pinned base signature, receiving use, adaptation type, candidate constraints, vocabulary bindings, applicability, dependencies, intended guard use, and separate scope expectations. Its formality characterizes the episteme.
 
-**KUA-02 (Not a new kind).** A declaration MUST NOT introduce a kind or subkind fact. Stable refinement requires an independently recovered kind and C.3.1 obtaining test.
+**KUA-02 (Not a new kind).** A declaration MUST NOT introduce a kind or subkind fact. Claiming a new subkind requires an independently identified kind and the C.3.1 test for inclusion.
 
 **KUA-03 (Admissibility before judgment).** Fixed candidate, kind, base-signature edition, adaptation-declaration edition, and slice first yield `admissible` or `not-applicable`. Only an admissible request yields `true`, `false`, or `unknown`; implicit `latest` and guard-result coercion are forbidden.
 
@@ -120,7 +120,7 @@ A stable conceptual refinement may justify another kind and an obtaining C.3.1 s
 
 ### C.3.4:7 - Invariants and Non-goals
 
-- **No Scope leakage.** An adaptation declaration cannot widen or narrow Claim scope G; context conditions are enforced by A.2.6 guards.
+- **No Scope leakage.** A constraint adaptation adds a test of candidate features. A vocabulary-only adaptation binds a local name and preserves the base judgement. Each declaration identifies the slices in which its constraint or vocabulary binding applies. A separate claim has its own scope G under A.2.6. To use the declarations as models and claim strict refinement, compare them for the same inquiry under B.5.MR. An additional condition already implied by the base criterion can leave every answer unchanged.
 - **Identity preservation.** The base kind remains `k`; the declaration does not change its `EntityOfConcern`.
 - **Aggregation unaffected.** Adaptation and correspondence declarations do not change the applicable F rule under C.2.3 or the justified support-composition model or non-aggregate synthesis under C.2.2; guards route candidate-feature predicates to the adaptation judgment and context predicates to Scope.
 

@@ -93,7 +93,7 @@ The application does not use that line for business behavior, and exact executio
 
 Now change the case: a dependency named “stable” resolves to different bytes on the second worker. Removing the timestamp cannot repair this difference. Identify which dependency changed and, for reconstructing the earlier package, which bytes that build used. Use their identity to obtain or pin the corresponding input where available. If the original bytes cannot lawfully be obtained, exact reconstruction remains unavailable even though a newer package could be built and tested as a different candidate.
 
-A third case reuses the first worker's final package from cache. Matching digests prove that the same cached bytes were returned, not that the procedure reconstructed them. A fresh execution is still needed for the reconstruction claim.
+In a third case the cache log identifies a return of the first worker's final package. Matching digests support identity of the specified package bytes. The log establishes how the third worker obtained them. The two fresh executions above already support reproducibility for the tested inputs and conditions. If the third worker's history is missing, the same bytes could have come from a fresh build or the cache. Check that history only when the decision depends on which occurred. An existing qualification can still cover use of the identified artifact.
 
 The team can now identify which input changed, which artifact was tested and what the comparison establishes. For a later test failure, establish whether the behavior, the test or its execution conditions explain the observation.
 

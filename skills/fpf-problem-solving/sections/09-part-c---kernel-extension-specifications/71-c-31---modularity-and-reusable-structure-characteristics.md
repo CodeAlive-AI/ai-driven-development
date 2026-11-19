@@ -82,7 +82,7 @@ C.31 defines and constrains modularity and reusable-structure characteristic ass
 
 #### C.31:4.1 - Ordinary output: `ModularityVectorLite`
 
-The ordinary output is a small account of the characteristics that explain the difficulty and what follows from them. `ModularityVectorLite` can retain it. Extend the account when the receiving question requires another characteristic.
+Start with the change someone has to make, such as replacing a module, qualifying an interface or servicing a variant. Identify the characteristics that could alter that action. For a substitution, specify what the replacement has to do with the receiving equipment under its operating conditions. Compare the proposed replacements against those conditions. A shared interface name can help find candidates. A check that covers the required fit and behavior can admit one directly. To claim that changing the interface would save work, compare the installation, migration and qualification work under the alternatives over the same planned uses. `ModularityVectorLite` can retain the account.
 
 ```text
 ModularityVectorLite:
@@ -126,26 +126,26 @@ ModularityVectorLite:
   structureKindRefs: ModuleInterfaceStructure, EvidencePackageStructure
   liveCharacteristics:
     - characteristicRef: InterfaceStandardizationShare
-      currentCue: controller ports are named by the same API family, but three field variants still require adapter-specific wiring.
-      repairDirection: narrow the interface grammar and name the allowed variation before counting the interface as standardized.
+      currentCue: three field variants need different wiring adapters behind ports with the same API name.
+      repairDirection: identify the electrical differences the adapters accommodate and which variants must remain in service before changing the shared interface.
       claimUseClass: local repair cue
       forbiddenOverread: the public API label is not substitutability or procurement suitability.
     - characteristicRef: SubstitutabilityWidth
-      currentCue: two alternate controller boards pass the bench test, but only one has the required thermal envelope and connector constraints.
-      repairDirection: state the substitution conditions and the exception before using the alternative count.
-      claimUseClass: report-only proxy until C.16 or selection use is being made
+      currentCue: both candidate boards fit the connector and passed a bench signal test. A is qualified for the required signal, rate and wiring throughout this enclosure's operating temperature range. B's rating excludes the required maximum.
+      repairDirection: admit A and exclude B from this pair for the specified enclosure. Establish the operating range for another enclosure before carrying the judgement there.
+      claimUseClass: eligibility of the two boards for this signal and wiring throughout the specified operating range
       forbiddenOverread: the alternate-board count is not a selection result.
     - characteristicRef: EvidenceReuseShare
-      currentCue: electrical-safety evidence is reused, while environmental evidence is recreated per enclosure variant.
-      repairDirection: split reusable evidence package from variant-specific evidence and add source-return condition.
+      currentCue: the electrical result covers A in this wiring and operating range. A different enclosure can expose the board to a higher temperature.
+      repairDirection: use the electrical result within its qualification. Compare the field enclosure against the qualified thermal conditions before commissioning any further test.
       claimUseClass: local repair cue with possible evidence-package use
       forbiddenOverread: reused evidence is not assurance sufficiency.
   observedProblem: the team says the platform is modular because interfaces are public and evidence is reusable, but field replacement and certification still create variant-specific work.
   relatedClaimPatternLocatorsIfClaimed: A.6.M for the module-interface relation; C.31.RSA if report-only share becomes reusable-structure accounting; A.10 or B.3 only if an evidence-use or assurance-use assertion is being made.
-  stopCondition: stop at local repair until measurement basis, comparability basis, and any selection or assurance use are declared under their subject patterns.
+  stopCondition: the service engineer can use A for the stated fit, signal and temperature requirements. Assess other procurement requirements or a proposed platform change when the decision calls for them.
 ```
 
-Near miss: a high interface-standardization count alone is not a C.31 improvement. If field-service work, source-return events, or variant-specific evidence increase, the vector records that proxy divergence and returns to repair rather than treating the count as architecture quality.
+The engineer can now name the eligible board among the two examined. To decide whether an interface change would reduce the cost of field service, compare the adapter and qualification work for the installed variants with the migration and service work after the change. An increased standardization share can coexist with higher service cost.
 
 #### C.31:4.2 - Characteristic classes
 
@@ -247,7 +247,7 @@ These heads are seeds, not an exhaustive taxonomy. Use only the heads that chang
 | `HiddenCouplingDiscoveryRate` | Hidden dependencies discovered after integration or change. | rate | defect and change records | dependencies appear late | expose side channel, revise interface spec, add sentinel, or reopen boundary | integration risk, repeated release, or assurance claim |
 | `CrossBoundaryChangeReach` | How many modules, views, or work items a local change touches. | distribution | change-impact records | local change travels farther than claimed | split relation, add interface grammar, revise allocation, or source return | release, decision, or comparison claim |
 | `WorkRepeatabilityShare` | Delivery, operation, or test work under repeatable method descriptions. | ratio | work records and method descriptions | work repeats as bespoke effort | describe the repeatable Method in a `MethodDescription` under A.3.2 or accept exception | work planning, evidence reuse, or scale use |
-| `EvidenceReuseShare` | Evidence package items reused across instances or contexts. | ratio | evidence graph and validity context | evidence is recreated or mis-scoped | move repeated evidence into reusable evidence or assurance package | certification, safety-case, or assurance claim |
+| `EvidenceReuseShare` | Previously obtained evidence used again for a specified claim on another instance or in another use of the same instance. | ratio | evidence records and qualification conditions | a result is credited outside its qualified use, or a covered result is needlessly obtained again | reuse the earlier result when it covers the claim. When an instance needs its own observation, reuse the procedure and obtain that observation. | certification, safety-case, or assurance claim |
 | `RegulatoryBespokeResidue` | One-off regulatory or acceptance content not covered by reusable structures. | ratio or ordinal | safety, approval, or regulatory records | each instance needs new regulatory argument | isolate residue, add reusable evidence package, or keep bounded exception | safety case, approval, or publication claim |
 | `LearningTransferCoefficient` | Improvement transfer from one instance or run to subsequent instances. | slope or elasticity | repeated work data and learning curve records | improvement claim hides time or causal assumptions | apply C.27 for temporal adequacy and C.28 for causal use | causal, benchmark, or scale-preference use |
 | `BespokeResidueShare` | Share of structure not covered by reusable templates or rules. | report-only share unless C.16 measurement basis is declared | RSA description and exception register | residue is hidden under reuse score | use C.31.RSA and source-return condition | accounting, comparison, or decision claim |

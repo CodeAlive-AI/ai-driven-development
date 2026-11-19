@@ -996,11 +996,11 @@ For example, *FPF Library Architectural Reference* and *Engineering Suite Archit
 
 #### F.17:12.6 - Model-comparison direction and level rows
 
-These rows make the three F.18:4.5 naming decisions available for citation from model explanations, project documents and teaching. B.5.MR governs the comparison; each row names one of its two relation kinds or its relative-position kind. The rows let a reader recover which of these values a reused expression names without requiring a new vocabulary for each application.
+Use these three rows to cite model refinement, its converse and the levels established by comparing models. B.5.MR gives the tests for the two model relations. The level row gives both directional readings of one order used in project documents and teaching.
 
-The common by-value ReferenceScheme reads a model for a stated inquiry and established interpretation. Its completions satisfy its assertions and settle answers for that inquiry, including relevant probability claims. C refines A when C has a completion and every completion of C satisfies A under that interpretation; A is then an abstraction of C. Strictness requires an A-answer excluded by C. Equivalent answers share a position; incomparable models are unordered. Use the B.5.MR and F.18 records in the same selected publication edition.
+In the shared ReferenceScheme a model's completions satisfy its assertions. The inquiry and its interpretation determine the answer read from each completion, including probability claims when relevant. C refines A when at least one completion of C exists and every completion of C satisfies A under that interpretation. A is then an abstraction of C. Strictness requires an answer that A admits and C excludes. Within a chain established by this test, models with the same answers share a level for that inquiry. Models on different branches can give the same answer while imposing incompatible constraints.
 
-For each row below, `UnificationThreadId` is `ModelComparisonDirections`, `GovernedValueKindRef` is `U.Kind`, `ReferenceScheme` is that common value and `RowEditionId` is `2026-11-16`. The listed claims constitute each row's complete ClaimContent. The cells use the same scheme and the exact expression and sense given below. This shared presentation creates three rows, not one combined governed value.
+For each row, `UnificationThreadId` is `ModelComparisonDirections`, `GovernedValueKindRef` is `U.Kind` and `ReferenceScheme` has the value given above. The stable row designators are retained. `RowEditionId` for this edition is `2026-11-18`. Each sense cell gives its expression and local sense under the shared scheme.
 
 ```text
 UTSRowId: UTS.ModelRefinement.2026-11-16
@@ -1008,13 +1008,13 @@ GovernedValueRef: B.5.MR:4.2 refinement relation kind
 SubjectPatternLocator: B.5.MR:4.1–4.2
 UnifiedTechName: model refinement
 NameCardRef: NC-MODEL-REFINEMENT
-SenseCellRefs: SenseCell.ModelRefinement.2026-11-16
+SenseCellRefs: SenseCell.ModelRefinement.2026-11-18
 RowRationale: retain the specification-theory designation while making feasibility, interpretation and the converse recoverable
 AdmissibleUse: cite C's feasible preservation of A for the named inquiry, including equality; use more concrete only with strictness
 BlockedUse: the name alone establishes neither higher empirical accuracy nor a strict difference
 CurrentnessCondition: reopen on changed predicate, interpretation, NameCard, cell or repeated confusion between refinement and accuracy
 
-SenseCell.ModelRefinement.2026-11-16:
+SenseCell.ModelRefinement.2026-11-18:
   LocalExpression: model refinement
   LocalSenseClaim: C refines A for inquiry Q under interpretation I exactly when at least one completion of C exists and every completion of C satisfies A under I; strictness additionally excludes an answer of A distinguishable for Q
 
@@ -1023,30 +1023,34 @@ GovernedValueRef: B.5.MR:4.2 abstraction relation kind
 SubjectPatternLocator: B.5.MR:4.2; B.5.MR:4.2.2
 UnifiedTechName: model abstraction
 NameCardRef: NC-MODEL-ABSTRACTION
-SenseCellRefs: SenseCell.ModelAbstraction.2026-11-16
+SenseCellRefs: SenseCell.ModelAbstraction.2026-11-18
 RowRationale: give the converse comparison a durable name while keeping model construction separate
 AdmissibleUse: cite A as an abstraction of C under the same inquiry and interpretation by establishing that C refines A
 BlockedUse: the name supplies no unique inverse construction and does not validate a wider empirical claim
 CurrentnessCondition: reopen on changed predicate, interpretation, NameCard, cell or confusion between the relation and omitted visible detail
 
-SenseCell.ModelAbstraction.2026-11-16:
+SenseCell.ModelAbstraction.2026-11-18:
   LocalExpression: model abstraction
-  LocalSenseClaim: A is an abstraction of C for inquiry Q under interpretation I exactly when C refines A for Q under I; a more abstract position requires strictness
+  LocalSenseClaim: A is an abstraction of C for inquiry Q under interpretation I exactly when C refines A for Q under I. Calling A more abstract than C requires strictness for Q.
 
 UTSRowId: UTS.ModelAbstractionLevel.2026-11-16
-GovernedValueRef: B.5.MR:4.3 relative comparison-position kind
+GovernedValueRef: B.5.MR:4.3 inquiry-relative level of model abstraction
 SubjectPatternLocator: B.5.MR:4.2–4.3
 UnifiedTechName: level of model abstraction
 NameCardRef: NC-MODEL-ABSTRACTION-LEVEL
-SenseCellRefs: SenseCell.ModelAbstractionLevel.2026-11-16
-RowRationale: name a relative position under the model comparison independently of a document's language, discipline or physical scale
-AdmissibleUse: locate comparable models under a stated inquiry and interpretation; use L application positions and intermediate positions where this comparison is established
-BlockedUse: a numbered label alone supplies no strict ordering or intrinsic rank of a language, discipline, publication or entity
+SenseCellRefs: SenseCell.ModelAbstractionLevel.2026-11-18, SenseCell.ModelRefinementLevel.2026-11-18
+RowRationale: name the ordered levels in both directions so the reader can identify which models are compared and what follows from the comparison
+AdmissibleUse: read L0 towards L4 as levels of model abstraction and L4 towards L0 as levels of model refinement in an established application chain. Use intermediate levels where the comparison warrants them.
+BlockedUse: a level name alone establishes neither preservation nor a strict difference for the inquiry
 CurrentnessCondition: reopen on changed comparison, NameCard, cell or repeated use as a global rank
 
-SenseCell.ModelAbstractionLevel.2026-11-16:
+SenseCell.ModelAbstractionLevel.2026-11-18:
   LocalExpression: level of model abstraction
-  LocalSenseClaim: a position under B.5.MR's stated model comparison, with equivalent answers sharing the position and strict comparative names applying only to ordered distinct positions
+  LocalSenseClaim: level in an established refinement chain read towards a model that allows an answer the other model excludes for Q under I. Successive models with the same answers share a level for Q.
+
+SenseCell.ModelRefinementLevel.2026-11-18:
+  LocalExpression: level of model refinement
+  LocalSenseClaim: the same order read towards a model that excludes a previously admissible answer for Q under I. Successive models with the same answers share a level for Q.
 ```
 
 The rows cite no F.9 Bridge: they make no correspondence claim between different local meanings. A concrete comparison still needs its models, inquiry, interpretation and B.5.MR test; citing a row supplies the selected name and its meaning.

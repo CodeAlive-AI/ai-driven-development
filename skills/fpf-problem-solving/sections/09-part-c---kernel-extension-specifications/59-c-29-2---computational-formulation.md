@@ -104,7 +104,7 @@ A well-defined mathematical object need not have the finite representation or un
 
 For a finite search domain with an effective test, explicit enumeration can provide a terminating baseline. It may be too expensive, but it separates an obtainable procedure from an open construction. For an unbounded search, failure to find an answer in the allotted time leaves a different result; it does not establish nonexistence.
 
-For numerical work, connect the stopping test to error in the requested output. Locate relevant errors in input representation, algorithmic approximation, arithmetic and output conversion. Allocate tolerance among them only under a justified rule for combining their effects. Physical-model and measurement uncertainty remain separate inputs from the relevant modeling and C.16 methods; numerical convergence does not settle them.
+For numerical work, connect the stopping test to the result the recipient will use. An error bound sufficient for reporting a value may still allow both answers to a threshold question. Compare the full error interval with that threshold. If it crosses the threshold, try a direct comparison, a tighter enclosure or a reformulation of the test. Locate the errors from input representation, approximation, arithmetic and output conversion and justify how they combine. To use the result for a physical decision, also account for consequential model and measurement uncertainty.
 
 If finite precision can reverse a decisive comparison, increase precision, use a justified enclosure, reformulate the test or return that comparison as unresolved. If an iteration no longer changes its stored state, a limit of the ideal iteration does not show that the implementation will reach the requested tolerance. Return to the representation or stopping rule. Narrow the claim only when the narrower answer remains useful and the change is explicit.
 
@@ -201,6 +201,8 @@ return (l + u)/2
 
 After nine halvings, return `1449/1024 = 1.4150390625`. Its error is at most `1/1024 = 0.0009765625`, which satisfies the requirement. The interval argument establishes the bound without requiring a previously calculated decimal expansion of the root.
 
+Now suppose the receiver asks whether the root is at most 1.415. The accepted midpoint is slightly above 1.415, and the ninth bracket contains values on both sides. In this case a single exact comparison settles the new question. On the positive half-line squaring preserves order, and `1.415² = 2.002225 > 2`, so the root is below 1.415. The midpoint remains a valid answer to the original approximation request.
+
 **Resource and accuracy consequences.** There are nine midpoint-square comparisons in this case. For finer tolerances, the dyadic numerators and denominators grow; a count of comparisons alone does not include the growing cost of exact squaring. A finite precision version must preserve the bracket decisions and avoid a midpoint that rounds to an endpoint while the tolerance remains unmet. Output rounding also consumes accuracy. These are returns to arithmetic and representation choices, not evidence that the exact rational construction failed.
 
 For a costly general continuous function, an established bracketed method using interpolation may save function evaluations. Bisection remains useful when a simple interval argument and predictable reduction are worth the extra evaluations. For a function not known to be continuous, a sign change alone does not justify this root argument. A demand for an exact finite decimal expansion of this irrational root changes the answer format to an impossible one; an exact symbolic expression or a rational approximation is a different, obtainable request.
@@ -279,6 +281,8 @@ P(|p_hat-p| ≥ epsilon) ≤ 1/(4*n*epsilon²).
 ~~~
 
 Taking n = 2,000 makes the bound 0.05 at epsilon = 0.05. The guarantee concerns repeated executions under the sampling model; it is not a posterior probability assigned to p after seeing one estimate. For instance, s=1,100 returns 0.55, while the guarantee still belongs to the stated procedure.
+
+Suppose the recipient will act on one fixed sample of 2,000 observations when its mean is at least 0.55. If the true probability is at most 0.50, that action requires an estimation error of at least 0.05. The derived bound therefore limits the chance of taking that action under any such p to 0.05. Repeatedly inspecting interim means and acting at the first crossing changes the rule and requires its own error argument.
 
 This construction consumes 2,000 observations and counter updates. Each counter needs 11 bits to represent values through 2,000; the output can be retained as the rational s/2,000. Include the cost of obtaining an observation when that cost matters. This conservative bound already supplies a finite construction; a sharper concentration argument can reduce the required observations when that saving is worth obtaining.
 

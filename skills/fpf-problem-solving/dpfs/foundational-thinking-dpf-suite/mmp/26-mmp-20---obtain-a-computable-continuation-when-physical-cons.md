@@ -172,9 +172,9 @@ v_plus = v_minus - alpha*q_minus.
 
 Here alpha=2 s\^-1 and v_plus=(0.8,0.6) m/s. The impulse is radial; the scalar angular momentum per unit mass x\*v_y-y\*v_x is 1 m\^2/s both before and after. Kinetic energy falls from 2.5 J to 0.5 J. In general, the loss for this inelastic capture is m\*(q_minus·v_minus)\^2/(2\*L\^2).
 
-Now compute the taut-mode coefficient using the new velocity: lambda_plus=8.848 s\^-2. It is positive, so a taut interval is locally admissible. Parameterize q=L\*(sin(theta),-cos(theta)); then theta_dot=omega and omega_dot=-(g/L)\*sin(theta). The restart gives theta=atan2(0.6,0.8), omega=1 s\^-1. Integrating those equations for another 0.1 s gives theta≈0.712977020833 and omega≈0.380685005685 s\^-1. Tension stays positive over that computed segment.
+Now compute the taut-mode coefficient using the new velocity: lambda_plus=8.848 s\^-2. It is positive, so a taut interval is locally admissible. Parameterize q=L\*(sin(theta),-cos(theta)); then theta_dot=omega and omega_dot=-(g/L)\*sin(theta). The restart gives theta=atan2(0.6,0.8), omega=1 s\^-1. Integrating those equations for another 0.1 s gives theta≈0.712977020833 and omega≈0.380685005685 s\^-1.
 
-Continue monitoring the tension. A later loss of tension changes the active equations again.
+The ideal equations also settle whether the rope can lose tension between integration steps. After capture the scaled mechanical energy $H=E/(mL^2)=\omega^2/2-(g/L)\cos\theta$ is conserved during unforced taut motion. Differentiating gives $\dot H=\omega[\dot\omega+(g/L)\sin\theta]=0$. At this restart $H=0.5-9.81(0.8)=-7.348\,\mathrm{s}^{-2}$. The force coefficient is $\lambda=\omega^2+(g/L)\cos\theta=1.5\omega^2-H\geq7.348\,\mathrm{s}^{-2}$. The release condition cannot occur while these premises hold. The numerical minimum in §5.4 checks the values at the step endpoints. For changed forcing or another restart, establish a bound for the new motion or locate a possible release between samples.
 
 #### MMP.20:5.3 - Change the impact law or event and return to the affected construction
 
@@ -274,7 +274,7 @@ def taut_segment(h):
     theta = atan2(q[0], -q[1])
     omega = (q[0] * vp[1] - q[1] * vp[0]) / length**2
     initial_energy = .5 * length**2 * omega**2 - g * length * cos(theta)
-    min_tension = float('inf')
+    min_sampled_lambda = float('inf')
     for _ in range(round(.1 / h)):
         k1 = omega, -g / length * sin(theta)
         k2 = omega + h * k1[1] / 2, -g / length * sin(theta + h * k1[0] / 2)
@@ -282,8 +282,8 @@ def taut_segment(h):
         k4 = omega + h * k3[1], -g / length * sin(theta + h * k3[0])
         theta += h * (k1[0] + 2 * k2[0] + 2 * k3[0] + k4[0]) / 6
         omega += h * (k1[1] + 2 * k2[1] + 2 * k3[1] + k4[1]) / 6
-        min_tension = min(min_tension, omega**2 + g / length * cos(theta))
-    assert min_tension > 0
+        min_sampled_lambda = min(min_sampled_lambda, omega**2 + g / length * cos(theta))
+    assert min_sampled_lambda > 0
     energy_error = abs(.5 * length**2 * omega**2 - g * length * cos(theta) - initial_energy)
     return theta, omega, energy_error
 

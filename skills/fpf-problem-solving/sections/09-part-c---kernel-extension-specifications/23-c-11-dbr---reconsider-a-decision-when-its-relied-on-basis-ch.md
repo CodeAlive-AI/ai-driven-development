@@ -59,7 +59,7 @@ The comparison has three useful outcomes:
 | Material difference | Identify the lost, changed or newly relevant premise and prepare the affected current choice. The observation does not itself select the response. |
 | Comparison unresolved | Name the missing premise, interpretation or alignment and the useful conclusion still available. Consider a smaller answer, an attainable inquiry or a stop through C.11.DUA. |
 
-These are findings, not universal decision statuses. A large numerical difference may be irrelevant to the named choice, while a small change crossing its constraint may be decisive. An unknown cause need not prevent acting on a supported consequence. A costly investigation is unwarranted when its attainable answers would not change this use.
+These are findings about the named use. A large numerical difference can leave a choice intact while a small one crosses its constraint. An unknown cause need not prevent acting on a supported consequence. End an optional investigation for this choice when its attainable answers cannot improve what the recipient can decide or rely on. A separately binding investigation remains due under its governing terms.
 
 #### C.11.DBR:4.3 - Bound what changes and preserve the rest
 
@@ -80,11 +80,11 @@ Choose the continuation by what is now missing:
 - Use A.15.7 for a next-action question in ongoing Work. Use the applicable problem-framing or construction Method when the question or means must change before options can be compared.
 - State which decision or authority is missing when only an analyst's recommendation is available. A recommendation can be the useful completed contribution while the authority holder's decision remains outstanding.
 
-The receiving Method makes its own decision and returns that result directly to its consumers. Only afterward, if the receiving work needs an overview, complete the reconsideration account by citing the returned result. Thus the input does not depend on a decision it already contains. No common vocabulary of continue, stop or revise replaces the subject's result.
+The person, controller or authorized body that holds the decision uses the receiving Method. Return its decision to those who depend on it. An analyst who has only made a recommendation can deliver that recommendation now and identify the decision still outstanding. If an overview is needed, cite the decision once made, using the terms of the receiving practice.
 
 #### C.11.DBR:4.5 - Carry the result to its next use and stop
 
-Explain what remains usable, what current result has been obtained and which next contribution is still missing. If the current choice calls for intended work or a revised plan, A.15.2 separately supplies that WorkPlan. Permission, an available performer and actual performance still require their own grounds. Updating a reconsideration account performs none of that work.
+Explain what remains usable, what current result has been obtained and which contribution is missing. If the decision calls for planned work, the responsible planner can use A.15.2 to prepare or revise the WorkPlan. Establish separately who may carry it out, who is available and what was actually performed.
 
 Stop when the included uses have a supported preservation answer, an obtained current decision, or a precise unresolved contribution. Stop earlier when a narrower answer completes the receiving question. Preserve a reason and a condition for another return only where later reliance needs them. A new observation, changed use or newly discovered dependency can reopen the comparison it could materially change; independently preserved results remain usable.
 
@@ -98,7 +98,7 @@ Recovering the basis separates the expected saving from the Friday obligation an
 
 **Change the evidence.** A corrected, qualified observation now establishes five hours for the same content and volume. The current decision rule requires at least two hours of total effort saving relative to B, including A's support burden; all other relevant conditions are stipulated unchanged. A now requires six hours in total and supplies no saving, so it fails that condition. This challenges continued reliance on the expected saving, but does not establish why the shortfall occurred.
 
-The reconsideration statement names that difference, preserves Friday delivery and the rollout history, and supplies the responsible manager with the available alternatives. Suppose a supported adjustment C is available at three preparation hours plus one support hour, and satisfies the unchanged delivery and quality constraints. Its total is four hours; A and B now each require six. Under the stipulated preference for lower total effort, C.11 can choose C without another study of A's cause.
+The responsible manager receives the comparison, with Friday delivery and rollout history preserved. A supported adjustment C takes three preparation hours plus one support hour and meets the unchanged delivery and quality constraints. C takes four hours in total against six each for A and B. On the stipulated preference for lower total effort, the analyst can recommend C. The manager can choose it on those grounds without another study of A's cause.
 
 The manager's actual choice, any necessary plan revision and the later performance of C are separate results. If the manager has not decided, the analyst returns the comparison and recommendation, not an implemented change.
 
@@ -108,9 +108,9 @@ If C was already an available improvement, comparing it would be a separate live
 
 #### C.11.DBR:5.2 - A model remains valid for one use
 
-A laboratory used a linear calibration over readings 0 to 10, with an established maximum conversion error of 0.2 in that interval. A new observation at 15 has error 0.6. The current task still concerns readings 0 to 10. This observation alone does not refute the bounded qualification or justify replacing the conversion there; it does show that extending the same claim to 15 is unsupported.
+A laboratory qualified a linear calibration for readings from 0 to 10, with a maximum conversion error of 0.2. A qualified observation at 15 under the same operating conditions has error 0.6. That observation refutes the proposed bound of 0.2 over the entire interval from 0 to 15. The qualification and earlier converted results in the interval from 0 to 10 still stand.
 
-Now the receiving task changes to readings up to 15. The old qualification and old converted results remain what they were, but they no longer supply the required range. The useful reconsideration statement carries the missing range qualification to the measurement and model-selection work. If no adequate replacement or further qualification is available, it ends with that gap rather than fabricated new coefficients. If a qualified candidate and the old method under its narrower use are available, their comparison belongs to the current chooser.
+Now the task needs readings up to 15 at the same error bound. The old calibration cannot cover that task by itself. Seek a qualified alternative for the full range or justify two calibrations whose combined coverage and behavior at the join meet the task. A proposal to narrow the task needs a decision by its holder. Changing a coefficient or extending the range alone establishes neither the error bound nor model refinement (B.5.MR). If coverage remains missing, state which readings can still be used.
 
 The model file need not have changed. A.10.1 would be appropriate for a different situation: a corrected calibration source whose actual consumers must be discovered.
 
@@ -120,7 +120,7 @@ The model file need not have changed. A.10.1 would be appropriate for a differen
 | --- | --- |
 | A market observation weakens a growth assumption but leaves a separately grounded commitment intact. | A strategic follow-up Method can localize the affected premise, preserve independently grounded commitments and connect the signal to a strategic continuation or reconsideration, using the choice or commitment and its required evidence and authority. An analyst's recommendation remains distinct from the Board's choice. Use this direct continuation when sufficient; a common overview can cite its results without repeating or replacing it. |
 | A retrofit is complete but the expected service outcome is absent. | Use the asset-management Method to compare the realized outcome with the asset-decision premises; the completed intervention remains history. For organization change, use the applicable Methods for the consequence account and any authorized revision. Use these direct Methods when they already supply the needed whole. |
-| Practice evidence changes an explanation of development or transfer. | Use the capability-development revision Method to obtain a bounded development hypothesis. A continuing-arrangement choice uses that input under its own Method; a hypothesis alone does not change the arrangement. |
+| A participant and an assistant completed an assignment. On a comparable later assignment the participant cannot perform the relevant operation with the support normally available. | Preserve the achieved joint result. Reconsider reliance on the participant's ability to perform under the later conditions. A development Method can investigate the difficulty and propose a change. The holder of the arrangement decides whether to adopt it. |
 | A follow-up analyst recommends adjustment. | A decision-follow-up Method can supply the complete affordable return. Keep the absent authority-held decision explicit; the sufficient Method needs no second account. |
 | A current robotic-maintenance cue already determines the next-action question under the enacted Method. | Use A.15.7 directly. Reconstruct an older recommendation only if a distinct reliance question remains. |
 | A changed source has partly unknown engineering or finance consumers. | Use A.10.1 with the applicable engineering or finance Method to discover the affected consumers and reconsider their reliance. A sufficient subject result needs no further C.11.DBR pass. |
@@ -140,7 +140,7 @@ The shared preparation stops before these domain consequences and decisions. It 
 - The later result is qualified and compared at a commensurate scope and horizon, or the decisive mismatch is explicit.
 - Materiality follows the use's constraint, comparison or applicability condition; a no-material finding can finish without a new choice.
 - Affected uses follow established reliance; preserved results retain their grounds, and uninspected branches remain outside the conclusion.
-- A material branch supplies a bounded current question. The subject Method returns its own result before any completed overview cites it.
+- A material change identifies a decision to reconsider. An overview may cite the holder's recorded decision or report the available recommendation and identify the choice still open.
 - Recommendations, causal claims, authority, planning and performed work keep their own grounds and limits.
 - The method stops at the useful result or precise gap and adds no duplicate pass to an adequate direct subject Method.
 

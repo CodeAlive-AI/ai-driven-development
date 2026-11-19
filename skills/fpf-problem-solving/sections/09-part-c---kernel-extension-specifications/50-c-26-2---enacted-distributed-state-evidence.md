@@ -159,6 +159,8 @@ The evidence-bound state reading is a `U.Episteme` reading over coordinated work
 
 The useful state claim retains the collective bearer and boundary, the observed pattern, the evidence supporting it and its time window. Include persistence, probe or export conditions, serious alternatives and further subject work only when the receiving claim depends on them.
 
+Read the timing condition from the decision. Some decisions combine separately completed checks. For an ordered handoff, follow the same item from completion by one part to receipt by the next. For joint readiness, identify the required instant or period. A single observation can establish the joint state at an instant. Observations made at different times can also suffice when other evidence establishes the necessary overlap. One verified interruption during a period of required continuous readiness defeats that claim. When every history compatible with the observations satisfies the specified timing condition, accept it. When every such history violates it, report failure. When some satisfy it and others do not, retain the local readings and leave joint readiness open. If the observations conflict so that no history fits them, resolve that conflict before using them together.
+
 This pattern is useful because many work states are enacted before they are articulable. For example:
 
 - A team may behave as if a release freeze exists before any single person states it cleanly.
@@ -267,7 +269,7 @@ Tell: In a constructed incident case, the independently identified incident-resp
 
 Show, System side: the bearer is that incident-response System during the stated half-hour. Preparing rollback and changing support routing are observed work; logs, messages and artifact records make those actions inspectable. The observations are not replaced by the later survey.
 
-Show, Episteme side: the System acted consistently with a release-freeze readiness posture during 14:00–14:30. Report those coordinated actions in incident communication instead of reporting a unanimous freeze decision.
+The incident coordinator can report the three actions as consistent with freeze preparation during this half-hour. To report a coordinated response, use work records that connect them. For example, one incident entry could link the release hold to the request to redirect support traffic and to the rollback prepared for the held deployment. That link would support coordination even if the actions occurred in sequence. A claim that all three teams were ready together has a different test: a trustworthy joint observation can establish readiness at its recorded instant. To report readiness throughout the half-hour, establish how long it held.
 
 An unwritten directive, playbook, shared alarm or dashboard effect remains a rival explanation; the case does not establish a separate causal mechanism. If a playbook fully explains the actions needed by the receiving use, retain that ordinary account.
 
@@ -283,8 +285,8 @@ It also biases authors to keep primary grounding in distributed cognition, team 
 
 | ID | Check |
 | --- | --- |
-| CC-C26.2.1 | The collective bearer is a declared `U.System` or collective system, not a bare group label. |
-| CC-C26.2.2 | Observed coordinated work, behavior, and trace pattern is named. |
+| CC-C26.2.1 | A collective-state claim identifies its `U.System` bearer. If only a population of records can be identified, report what those records establish about that population. |
+| CC-C26.2.2 | For a claim of coordination, identify the actions or traces and the relation that connects them. If the evidence leaves that relation open or rules it out, state that result and retain the supported local observations. |
 | CC-C26.2.3 | Evidence carriers and time window are named. |
 | CC-C26.2.4 | The QL cue / formal cue is named if QL wording is retained. |
 | CC-C26.2.5 | Persistence, decay/refresh conditions and reprobe cost are retained when the claim or receiving action depends on them. |

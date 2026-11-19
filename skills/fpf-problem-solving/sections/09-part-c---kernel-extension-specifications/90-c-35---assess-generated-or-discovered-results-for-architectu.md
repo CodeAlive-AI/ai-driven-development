@@ -148,7 +148,9 @@ Method, performed Work, attribution, bearer feasibility, and publication detail 
 
 ### C.35:4 - Solution
 
-Start with the result, the organization it concerns and its supported next use. State any unresolved condition or material limitation and how it can be resolved. A sentence or an existing account can suffice.
+Ask what decision the result can settle. One candidate checked against every applicable constraint can establish feasibility within the model. It may complete a commission to find any suitable design. A claim that no design qualifies requires grounds that cover every admissible alternative, such as an exhaustive search or a proof of incompatible constraints. A search that stops without a candidate can still tell the next designer which alternatives were examined. When one design uses less energy and another takes less time, both can be nondominated. To call a design nondominated, exclude alternatives that do at least as well on every stated criterion and better on one. State the set over which this was established. A claim that a design is best needs a ranking or trade-off rule for the commission and grounds that the design ranks at least as high as every admissible alternative. A verified bound may settle that comparison. If the leading alternatives remain incomparable under that rule, report the choice that still calls for a preference. A unique optimum also excludes ties for the best value. A unique feasible design excludes every other feasible design regardless of preference.
+
+Judge the result and its production separately. A verified design can serve the commission whoever suggested it. To credit an agent with designing the organization, identify the decisions left open by the input, the method or generator, and the evidence that the agent made them. A fixed input that already specifies the organization can support an assessment of how the agent checked it. Claims about the installed organization depend on evidence about the installation. State any material limit or next check in the existing account when possible.
 
 Use the smallest sufficient path:
 
@@ -189,25 +191,25 @@ When the encountered item is a narrative sequence, `A.6.3.NAR` governs only the 
 
 C.35 is the pattern for admitting or rejecting a generated or discovered result before another architecture claim relies on it. The result may come from search, clustering, query, learning, transformation, simulation, or discovery. C.35 does not search, select, decide, or realize architecture. It asks what the result is, which organization it concerns, whether the claim about that organization is established, refuted or unestablished, or instead presents a proposal, what use it supports, and which conditions or limitations affect further reliance.
 
-**Generated claim and diagram not yet architecture.** An LLM returns proposal claim `MedicalDeviceProposal-7` and diagram `MedicalDeviceDiagram-7`. The ordinary C.35 result is:
+**What a generated proposal establishes.** An LLM returns proposal `MedicalDeviceProposal-7` and diagram `MedicalDeviceDiagram-7`. An architect considering it for the candidate set records the following.
 
 ```text
 Result: MedicalDeviceProposal-7.
-Organization: a proposed device organization; its constituents and relations do not yet obtain.
-Next-use condition: C.32 may use it after the missing safety constraint and bearer question are explicit.
-Limit and return: do not read the proposal or diagram as A.22 structure or decision; return to the claim when either gap changes.
+Organization: proposed arrangement of device components. The proposal leaves open which parts of that arrangement are already installed.
+Next use: C.32 may examine the proposed arrangement as an alternative now. Its feasibility remains open.
+Limit and return: before relying on feasibility, establish the applicable constraints and that components capable of meeting them can be provided under the intended conditions. To establish what is installed, use the device's applicable as-built evidence.
 ```
 
 This is enough for the immediate candidate-use boundary. Add the generative-proposal branch only if the receiver relies on its constraints, omissions, or validation needs.
 
 Treat `MedicalDeviceDiagram-7` as a separate representation when graphical correspondence matters, using C.30.AD or C.30.ASV for its architecture description or view and C.29 when a mathematical-representation choice, transfer, or reliance question remains. A source or preservation account requires a declared baseline.
 
-**DSM and MDM clustering.** A DSM modularization returns a clustering result based on co-change and interface hints. This is the discovery branch: C.35 identifies the claim-bearing cluster result and its extraction basis and records which dependencies are observed, which modular interpretation is inferred, what remains unknown, which matrix region was covered or unexplored, the uncertainty, and the validation needed before use. The inferred modular organization remains an unestablished claim about the existing organization until the needed constituents, obtaining relations, applied constraints and use frame are supported. A proposed reorganization remains a distinct modal claim.
+**DSM and MDM clustering.** A team groups the rows of a dependency matrix using co-change observations and interface data. Check whether the reported groups satisfy the grouping rule on that matrix. If the rule allows several groupings, the saved output identifies the one returned by this run. Reproduction also suffices when the procedure and its inputs determine the same choice, including any tie-breaking or random choices that mattered. To infer that the corresponding components perform one function, the team must relate the observed dependencies to that function and check what the matrix omits. A different decision is to reorganize the components into those groups. That proposal needs a reason the new allocation would serve the design. Use the discovery or proposal branch for the claim actually made.
 
 Retain the matrix's mapping to the represented dependencies and the validity conditions of its operations; use C.29 when choosing, transferring, or relying on that representation remains unresolved. A comparison with an earlier modularization may add a declared baseline and preservation account, but clustering alone does not require one.
 
 
-**NAS result.** A multi-objective NAS run returns a modal architecture claim about a proposed neural organization together with a graph representation and Pareto result. This is the generative-proposal branch: C.35 keeps those identities separate and records the search constraints, proposed organization content, known deployment and evidence omissions, bearer boundary, and validation and eval needs.
+**NAS result.** A multi-objective neural architecture search returns a proposed neural organization and its graph. No evaluated alternative matched or improved on the proposal on every criterion and improved on it on at least one. Report that comparison over the evaluated set. To report the same conclusion over the full search space, establish coverage or a bound that excludes a dominating alternative. Keep the search constraints, hardware conditions and validation needed for deployment with the proposal.
 
 The graph represents the proposal; C.29 applies when a separate mathematical-representation choice, transfer, or reliance question remains. The graph does not prove that the proposed relation occurrences obtain. C.35 does not invent a preserved-dataflow claim unless the run explicitly transforms or compares against a declared baseline.
 
@@ -240,7 +242,7 @@ If the use additionally asserts an actual formal or world-side change, it cites 
 | `CC-C35-4` | A positive structure reference passes all four A.22 discriminators. An unestablished claim about existing organization remains unresolved; a refuted claim stays refuted; a proposal stays modal. C.32 may use a qualified provisional result without treating an unestablished or proposed organization as obtaining architecture. |
 | `CC-C35-5` | Bearer or realization detail appears only when the intended use relies on feasibility or realization; any such question uses the rule that defines or tests it. |
 | `CC-C35-6` | Use the pattern for each archive, front, pool, publication, eval, measurement, mathematical-lens, decision, evidence, assurance, gate, release, Method, or Work claim; an absent claim creates no C.35 field-filling duty. |
-| `CC-C35-7` | The first result states the supported next use and any condition, limit or return that changes reliance. A next-claim or rule reference is added only when the receiving action relies on reidentifying it independently. |
+| `CC-C35-7` | The first result states what it warrants for the receiving decision. Feasibility has a qualified witness or other sufficient grounds. Claims of impossibility, optimality or uniqueness identify the alternatives covered or excluded and the grounds for that conclusion. |
 
 ### C.35:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -281,7 +283,8 @@ The source families explain why the branches differ. MBSE query practice, DSM an
 
 | Source or practice line | Use of the contribution | Contribution to the assessment | Boundary of use |
 | --- | --- | --- | --- |
-| MBSE query and view generation | Adapt query results as discovery while separating the claim-bearing result, represented object, representation, and publication-side availability. | Identifies query or extraction basis, separate observed, inferred, and unknown content, covered and unexplored model region, uncertainty, validation, and `C.30.AD` / `C.30.ASV` exits. | Query or view output is not architecture, realized structure, or proof. Reopen when result identity, model edition, query rule, viewpoint, represented object, coverage, or relied-on availability changes. |
+| MBSE query and view generation | Identify the source, selection rule and coverage of the query. | A complete, validated query can settle a claim about the model. | Claims about the installed architecture depend on evidence connecting that model to the installation. Reopen when the model edition, represented object, query or coverage changes. |
+| [Google OR-Tools, CP-SAT solver statuses](https://developers.google.com/optimization/cp/cp_solver) | Read a feasible witness, a proof of infeasibility, an optimum or an inconclusive stop according to the stated result. | Helps decide whether a search has already fulfilled the commission or whether coverage or a bound is still needed. | Solver conclusions apply to the encoded constraints, objective and stopping conditions. |
 | Graph grammars and model transformations | Adapt rule-governed transformation as the transformation branch. | Identifies source and result objects, transformation trace, preserved structure, lost structure, and C.34 preservation exit. | Grammar or transformation output does not prove adequacy, feasibility, or realization. Reopen when transformation rules, source object, result object, trace, or constraints change. |
 | DSM, MDM, and modularization practice including Jiang and Luo, arXiv:2604.28018 | Adapt modularization and LLM-assisted DSM work as discovery. | Identifies extraction basis, observed dependencies, inferred clusters, unknown functional-bearer semantics, coverage, uncertainty, validation, and C.31 plus C.32 exits. | Cluster, partition, or MDM slice is not candidate architecture adequacy. Reopen when relation matrix, covered region, modularity objective, functional prior, validation, or solution pool changes. |
 | Multi-objective NAS and Sukthanker et al., arXiv:2402.18213 | Adapt multi-objective search as a generative-proposal source. | Identifies constraints, proposed neural organization, known omissions, validation needs, search criteria, bearer boundary, eval return, and C.32 admission condition. | A Pareto point or neural graph is not holonic architecture adequacy. Preservation is claimed only against a declared baseline. Reopen when search space, constraints, criteria, hardware target, proposal content, or eval trace changes. |

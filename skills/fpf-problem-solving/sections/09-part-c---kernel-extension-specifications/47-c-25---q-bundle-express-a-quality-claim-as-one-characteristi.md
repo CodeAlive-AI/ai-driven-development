@@ -99,7 +99,9 @@ A quality guard is conjunctive only over the truth conditions that the current c
 
 `declared scope covers TargetSlice AND declared measures satisfy their own laws AND each other declared prerequisite holds`
 
-An absent optional slot contributes no condition. Each measure keeps its own Scale and comparison law; a trade-off, alternative, weighted combination, or partial order must be stated under the pattern that defines it rather than hidden in `AND`. If this typed decomposition cannot express what makes the claim true, do not force the family into C.25.
+An optional field can be left out when the claim does not depend on it. When another party uses that claim to make a decision, recover the conditions of *that decision* and compare them with what the claim covers. A supplier may document response time while the receiving service also requires current information. Meeting the response-time target settles that part. The service can accept both conditions when it also has grounds for freshness. An established breach of either bound rules out acceptance under this joint requirement.
+
+Each measure keeps its own scale and comparison law. Use the declared decision rule for alternatives, trade-offs, weighted combinations or partial orders. If the typed decomposition cannot express what makes the claim true, use the pattern that governs the comparison.
 
 ### C.25:5 - Archetypal Grounding
 
@@ -399,7 +401,7 @@ Keep observed loss in evidence, use `A.10` for ordinary reliance, and open `B.3`
 Apply the report-only proxy rule in section 14.4 to the exact source episteme or addressed claims.
 
 #### C.25:19.2 - Gate binding rule
-When a gate uses a quality family, its decision claim cites the exact quality-claim episteme or addressed claims and names only the bundle slots on which the decision relies: for example declared scope, specific measures, a qualification window, or required mechanisms or statuses. The gate does not bind to a family label or raw record, and `C.25` does not define the gate decision.
+When a gate uses a quality family, take its acceptance conditions from the receiving decision. Cite the quality-claim episteme or its addressed claims and identify which conditions each supports, such as a measure in a specified window or a required mechanism. Reuse other evidence for any condition the supplied claim leaves open. The gate's own rule determines what to do with a known failure or an unresolved condition.
 
 #### C.25:19.3 - Roll-up caution
 A roll-up is another claim-bearing episteme. It cites the exact source epistemes or ClaimAddresses being combined, states the admissible aggregation or summary rule, and remains distinct from them. If the roll-up begins to drive local engineering action directly, reopen the source claims and the exact Q-Bundle slots on which that action relies instead of treating the summary score as the bearer or bundle.

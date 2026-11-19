@@ -243,7 +243,7 @@ When a receiving R model uses penalties `Phi(CL_scope)` and `Psi(CL_kind)`, each
 
 **E1 — Same-context braking claim.** A policy quantified over `Vehicle` pins `VehicleSignature@v4`; the receiver pins `PassengerCarSignature@v3`. Declaration admission establishes `SubkindOfObtains(PassengerCar, Vehicle; plantVehicleScheme)`.
 
-Applying the policy to VIN-17 evaluates `J(VIN-17, PassengerCar, v3, S-plant)`; on `true`, C.3.1 monotonicity supplies the Vehicle-side consequence needed by the universal claim. A missing axle dependency yields `unknown` and a separate refusal.
+Applying the policy to VIN-17 evaluates `J(VIN-17, PassengerCar, v3, S-plant)`; on `true`, C.3.1 monotonicity supplies the Vehicle-side consequence needed by the universal claim. If axle data are missing and the remaining facts do not settle this VIN’s classification, the judgement is `unknown` and the guard separately refuses the use.
 
 **E2 — Cross-plant reuse.** An obtaining KindBridge relates source `Vehicle` to target `TransportUnit`; its assertion records a collapsed EV/ICE distinction and `CL^k=2`. The target signature is independently authored.
 
@@ -306,12 +306,12 @@ A product-family or platform distinction belongs in Scope only when it is a cont
 **Guard_RegChange(change, impactedDeclarations, impactedScopes).**
 
 1. Decide whether the change alters criterion, reference scheme, applicability, or more than one.
-2. Author the required declaration episteme, check its signature qualification and any edition relation under C.3.2:5, and let C.3.1 settle kind continuity.
+2. If the declaration’s criterion, interpretation or applicability changes, identify the required edition under C.3.2:5 and use C.3.1 to settle kind continuity. A change confined to the policy’s jurisdiction or effective period can leave the entire classification declaration in force.
 3. Update Scope independently when jurisdiction/version/time coverage changes.
 4. Reassess whether the receiving use now requires a correspondence between distinct kinds, and, when it does, the obtaining KindBridge relation and its assertion's mapping, loss, evidence, admitted use, and any `CL^k` required by the consumed assurance or calibration account.
-5. Evaluate affected exact candidates for the new receiving use under the new declaration edition while preserving every prior judgment indexed to its prior edition and slice; do not edit a set representation or rewrite historical judgments as a substitute.
+5. For an affected candidate use, apply the declaration in force in the receiving slice. Preserve judgements already made under their own editions and slices. If the only changed decision concerns where the policy applies, reassess its coverage and reuse classification results whose inputs and grounds still hold.
 
-**Guard_RegXContextUse(P, candidate, sourceKind, targetKind, targetSignatureEdition, S_target).** Apply `Guard_XContext_Typed` with the exact candidate and use its receiving judgment. A missing target dependency yields `unknown`; it is not cured by a high bridge assessment.
+**Guard_RegXContextUse(P, candidate, sourceKind, targetKind, targetSignatureEdition, S_target).** Use `Guard_XContext_Typed` to check that the candidate and slice are admissible before evaluating the target criterion. If the admissibility test returns `not-applicable`, the guard refuses the use without a classification judgement. For an admissible request, a missing target dependency yields `unknown` if the available facts leave the criterion unsettled. The bridge assessment supplies neither the missing fact nor the judgement.
 
 
 
@@ -322,7 +322,7 @@ A product-family or platform distinction belongs in Scope only when it is a cont
 
 **GDPR and CCPA.** Two source kinds relate to independently identified product-context kinds through separate bridges/assertions. Each policy has its own jurisdiction/time Scope. A data item is governed by a fresh target judgment; an alias table is support, not classification.
 
-**Export control.** The shipping policy pins the target product signature edition, shipment candidate, destination/end-use slice, and date. Category correspondence and Scope translation have separate bridges. The exact product judgment and the shipping guard disposition remain separate; higher residual risk may require manual review.
+**Product classification and shipping.** Evaluate the product against its category in the target signature edition. The shipping policy uses that judgement together with the particular shipment, destination, intended use and date. Establish the kind correspondence or scope translation where each is needed. If the shipment exceeds the policy’s residual-risk threshold for automatic release, the policy may call for manual review even when the product classification is settled.
 
 **IFRS and US GAAP Lease.** Each authority kind and local corporate kind remains independently identified. The bridge assertion records the short-term-exception loss. Test planning targets boundary candidates under pinned target declarations rather than treating one shared label as truth.
 
@@ -356,7 +356,7 @@ A product-family or platform distinction belongs in Scope only when it is a cont
 ##### C.3.A:B.1 - What typed assurance adds [I]
 
 
-VA can prove a claim quantified over an exact declared kind; LA can exercise exact candidates and boundary cases under pinned editions and slices; TA can qualify the tools used to produce support. None of those lanes turns evidence existence into classification truth.
+Verification (VA) can establish a consequence for all members of the declared kind under the stated assumptions. Validation (LA) can test particular candidates and boundary cases. On reuse, check the types and meanings the argument connects (C.2.2:4.6). If the evidence depends on a tool, check separately whether the version used was qualified for that operation. A classification judgement still needs the candidate facts and the applicable criterion.
 
 
 
@@ -375,7 +375,7 @@ VA can prove a claim quantified over an exact declared kind; LA can exercise exa
 
 **EA-6 (Freshness).** Evidence windows and tool/declaration editions SHALL be explicit and tied to the governed slice. Expiry causes refusal or `unknown` at the predicate it disables; it does not widen Scope.
 
-**EA-7 (TA separation).** Tool qualification SHALL remain distinct from content proof, candidate facts, classification judgment, and receiving disposition.
+**EA-7 (Tool qualification).** Tool qualification SHALL remain distinct from checking the types and meanings used in an inference, proving a claim, establishing candidate facts, classifying a candidate and deciding whether to rely on the result.
 
 **EA-8 (No scope-by-wording).** More general wording, more matching candidates, or additional evidence-matrix rows SHALL NOT widen G. A `ΔG+` change requires the new support or sufficiently congruent bridge basis required by A.2.6; otherwise retain or narrow the declared Scope.
 
@@ -399,7 +399,7 @@ Rows plan declared distinctions; they do not classify every candidate. A proof-o
 - **VA-1.** A proof carrier SHALL cite the exact claim, quantified kind, `KindSignature` edition, and assumed scope slices.
 - **VA-2.** A proof of a universal claim need not invent a candidate; application to an actual candidate uses `Guard_CandidateUse` separately.
 - **VA-3.** Cross-context proof reliance SHALL recover the target declaration and any required bridge channels, with their loss and R consequences.
-- **VA-4.** Tool-kernel qualification belongs to TA and does not raise the declaration's F or candidate truth.
+- **VA-4.** If the proof check relies on a particular kernel, establish that the kernel used is qualified for this check. The declaration retains its expression properties, and classifying a candidate still requires the applicable criterion.
 
 Example: a proof over `PassengerCarSignature@v4` assumes a dry-road slice. Reuse at Plant-B requires kind-identity and scope settlement, with bridges only where required. Application to VIN-17 then uses the Plant-B target signature and target judgment.
 
@@ -413,24 +413,24 @@ Example: a proof over `PassengerCarSignature@v4` assumes a dry-road slice. Reuse
 - **LA-3.** A KindBridge assertion that records collapsed distinctions SHALL prompt assessment of their effect on the intended claim and use. Where those distinctions matter, repair coverage, restrict the supported use or refuse reliance. The bridge assertion does not alter target truth.
 - **LA-4.** Freshness and SpanUnion independence SHALL remain explicit.
 
-Example: rows `PassengerCar` and `LightTruck` use pinned signature editions; columns cover dry/wet slices. The tested VINs are exact candidates. A missing sensor dependency for one VIN yields `unknown`, not a negative vehicle classification.
+Example: rows `PassengerCar` and `LightTruck` use pinned signature editions; columns cover dry/wet slices. The tested VINs are exact candidates. If the missing sensor reading leaves one VIN’s classification unsettled, record `unknown` for that VIN.
 
 
 
-##### C.3.A:B.6 - TA lane [A/I]
+##### C.3.A:B.6 - Qualify a tool for its intended use [A/I]
 
 
 Qualify provers, checkers, measurement pipelines, and classifiers separately. A classifier output can support an assertion about `J`; the tool neither becomes the candidate nor makes the governed criterion hold. Version drift may make the support unavailable and hence produce `unknown` for a candidate-bearing use.
 
-- **TA-1.** Every tool whose qualification is relied on by VA or LA SHALL identify its exact version and qualification status, and the receiving guard SHALL recover that declaration when the receiving use relies on that qualification.
-- **TA-2.** Missing or weaker tool qualification MUST NOT be hidden by lowering the owning episteme's F or widening G. The receiving policy may require additional independent support, reduce or condition R, or refuse the use while preserving the exact unavailable-support reason.
+- **B.6-1.** When a relied-on proof, observation or correspondence between meanings depends on tool qualification, the receiving guard SHALL recover the tool version used, the operations and conditions its qualification covers, and its qualification status at the time that matters for this use.
+- **B.6-2.** Missing or weaker tool qualification MUST NOT be hidden by lowering the owning episteme's F or widening G. The receiving policy may require additional independent support, reduce or condition R, or refuse the use while preserving the exact unavailable-support reason.
 
 
 
 ##### C.3.A:B.7 - Evidence guards
 
 
-**Guard_EvidencePlan_Typed** SHALL check the plan's exact declaration editions and context slices, its bridge/assertion needs, and the candidate-selection, freshness, independence, and TA conditions required by the planned use. These inputs may be supplied directly or through accessible exact returns. A planned classification does not count as a candidate judgment.
+**Guard_EvidencePlan_Typed** SHALL check the plan's exact declaration editions and context slices, its bridge/assertion needs, and the candidate-selection, freshness, independence, and tool qualification required by the planned use. These inputs may be supplied directly or through accessible exact returns. A planned classification does not count as a candidate judgment.
 
 **Guard_EvidenceAttach_Typed** SHALL make every evidence unit's binding to its exact claim/use, declaration edition, slice, candidate and judgment for candidate-specific evidence or a candidate-bearing receiving use, support relation, freshness, and bridge consequences recoverable, directly or through accessible exact returns. It SHALL preserve `unknown` and the separate attach/refuse disposition.
 
@@ -444,7 +444,7 @@ Qualify provers, checkers, measurement pipelines, and classifiers separately. A 
 | one golden case stands for a kind | state the declaration-level claim and plan explicit subkind/boundary coverage |
 | a matrix row is treated as classification | name exact candidates and judgments in candidate-bearing cells |
 | “latest data” | pin freshness and time policy |
-| trusted tool substitutes for content support | keep TA separate and recover the governed candidate facts/support |
+| trusted tool substitutes for content support | recover the proof and premises or other support for the claim, including candidate facts when the claim concerns an individual candidate |
 | bridge presence substitutes for target evaluation | use the independent target declaration and, for a candidate-bearing use, a fresh target judgment |
 
 
@@ -452,7 +452,7 @@ Qualify provers, checkers, measurement pipelines, and classifiers separately. A 
 ##### C.3.A:B.9 - End-to-end example [I]
 
 
-A two-plant braking claim pins the `PassengerCar` declaration and Plant-A scope. VA proves the quantified claim over that declaration. LA tests exact VINs in dry/wet slices and records their judgments. TA identifies tool versions.
+A two-plant braking claim pins the `PassengerCar` declaration and Plant-A scope. VA proves the quantified claim over that declaration. LA tests exact VINs in dry/wet slices and records their judgments. The test record identifies the tool version used and which measurements its qualification covers. Comparing the meanings of the measured quantities at the two plants requires its own evidence.
 
 Plant-B reuse recovers the target declaration and any required bridges with their loss and R consequences; each Plant-B candidate is evaluated afresh before evidence is attached.
 
@@ -483,7 +483,7 @@ ESG MUST NOT widen G to hide incompatibility, treat a label as a candidate judgm
 
 Open this Method–Work guard when capability, method and WorkPlan are part of the prospective or actual Work use. A transformation identified under A.3/A.3.4 may already be a sufficient result: natural, spontaneous or formal change, for example, can be described without claiming Work.
 
-If a broader scale-free-agency or Work claim matters, apply A.13 and then independent A.15.1 admission. Reflexive cases require separately grounded acting and affected positions. Joint or non-separable cases keep their direct dynamics, interaction or causality governors without an arbitrary actor-target split.
+Apply A.13 when the claim concerns scale-free agency. If the receiving use also claims that particular Work occurred, establish that occurrence under A.15.1. Identify who acts and what changes. For A.12:4.2 Reflexive Split, establish two distinct participants and the part relation of each to their common containing holon. Where the work instead concerns joint dynamics without separable acting and affected participants, use the applicable dynamics, interaction or causality account.
 
 Method–Work use has two different boundaries.
 
@@ -522,7 +522,7 @@ A conforming Method–Work check SHALL:
 
 **ESG braking policy.** The claim pins `VehicleSignature@v4` and the dry/wet TargetSlice. The consumer is restricted to `PassengerCar`, and `SubkindOfObtains(PassengerCar, Vehicle; plantVehicleScheme)` holds under the paired exact declaration editions.
 
-For VIN-17, evaluate `J(VIN-17, PassengerCar, passengerCarEdition, TargetSlice)=true`; C.3.1 monotonicity then supplies the Vehicle-side classification needed by the universal claim. An unavailable brake-configuration dependency would yield `unknown`, and the transition would refuse separately.
+For VIN-17, evaluate `J(VIN-17, PassengerCar, passengerCarEdition, TargetSlice)=true`; C.3.1 monotonicity then supplies the Vehicle-side classification needed by the universal claim. If the unavailable brake-configuration data leave this classification unsettled, the judgement is `unknown` and the transition guard separately refuses the use.
 
 **Risk-score Work entry and occurrence.** `ComputeRiskScore` capability is considered for request `req-884` in JobSlice `api-v2.3/eu-west/t-204`. The entry guard evaluates the request under the pinned `AuthenticatedRequest` signature. If true, it may admit execution; no Work occurrence yet follows.
 

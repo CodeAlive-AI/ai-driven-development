@@ -27,13 +27,17 @@ Without an explicit retreat pattern, teams treat reopening as failure, hide regr
 ### A.16.2:4 - Solution
 This pattern defines the retreat, reframing, and retirement side of the `A.16` move family.
 
+Identify the claim or question being reconsidered, its subject, the intended next use, the alternatives and the current grounds for closure. State which of those commitments remain supported. Choose a move by what must change: closure, the publication form, the framing or route specification, or current use. Apply A.16:4.3 to any resulting episteme-identity change.
+
 #### A.16.2:4.1 - Move family
 | Move | When to use it | What remains stable | What may change |
 |---|---|---|---|
-| `reopen` | the current family is still right, but closure was over-committed | family and major orientation | closure, rival set, guards |
+| `reopen` | the inquiry or intended use remains appropriate, but closure was over-committed | the supported inquiry or intended use and relevant witnesses | closure, rival set, guards |
 | `sketchBackoff` | the current publication form overstates articulation or stability | witnesses, traces, some anchors | publication form, articulation-explicitness value, route certainty |
-| `respecify` | the family remains plausible, but the framing scaffold, route specification, or facet-profile reading is wrong | broad domain, witness base, and major family commitments | framing scaffold, route specification, facet-profile reading |
+| `respecify` | the inquiry or intended use remains appropriate, but the framing, route specification, or facet-profile reading is wrong | the supported inquiry or intended use and relevant witnesses | framing, route specification, facet-profile reading |
 | `retire` | a cue, route-bearing publication, episteme, or branch is no longer current or no longer worth preserving | recorded history and any cited witnesses that still matter | current-use or retirement status, successor information, and any separately established relation change |
+
+One revision can both restore alternatives and replace a framing or route specification. State both `reopen` and `respecify`, with the grounds for each change. These names describe what changed; they prescribe no fixed order. Reopening alternatives alone leaves the framing in place, while replacing a framing does not establish its conclusions.
 
 `respecify` is narrower than epistemic precision repair. Slot-explicit epistemic precision restoration, bearer repair, or endpoint-local lexical precision remains with governing patterns such as `A.6.P`, `C.16.Q`, and `A.6.A`.
 
@@ -43,7 +47,7 @@ Make the following content recoverable for each retreat or retirement move; add 
 - source publication form,
 - source articulation, closure, route plurality or selection, endpoint-use disposition, publication availability, and current-use status insofar as each is current,
 - trigger or counter-evidence,
-- target family or target publication form when there is one; a retired branch may have no successor,
+- target publication form, inquiry or intended use when one is selected; a retired branch may have no successor,
 - retained witnesses,
 - withdrawn assumptions, route claims, endpoint-use or current-use claims, and any authority, responsibility, permission, or commitment relation that separately changes,
 - required dependent updates under §20;
@@ -94,8 +98,8 @@ Language-state history is not one-way tightening. Without retreat and retirement
 
 ### A.16.2:13 - Worked Retreat Trajectories
 
-#### A.16.2:13.1 - Reopen within the same family
-A routed evaluative note may remain within the same family but move from high closure to lower closure when a rival frame becomes a live alternative again. This is `reopen`, not `sketchBackoff`.
+#### A.16.2:13.1 - Reopen an evaluative inquiry
+A routed evaluative note may retain its evaluative question but move from high closure to lower closure when a rival frame becomes a live alternative again. This is `reopen`; a move to a less articulated publication form would additionally need the grounds for `sketchBackoff`.
 
 #### A.16.2:13.2 - Sketch-backoff to cue pack
 An account recovered through `A.6.A` may assert more than its grounds support. For example, a supposed pulling opportunity may have only a detector cue and no established physical predicate. First select the account-identity case under A.16:4.3 and C.2.1, then express the publication-form change:
@@ -105,7 +109,7 @@ An account recovered through `A.6.A` may assert more than its grounds support. F
 Withdraw the unsupported claim and any route selection or endpoint-use claim that depended on it. This changes the account; a change to the physical opportunity or an actual authority relation requires that subject's own predicate.
 
 #### A.16.2:13.3 - Respecify without repair-pattern drift
-A route-bearing publication may keep the same broad family but replace one framing scaffold or route specification with another. That is `respecify`, not silent editing, and not slot-explicit epistemic precision repair.
+A route-bearing publication may retain its intended use but replace one framing or route specification with another. That is `respecify`; make the replacement and its grounds visible. Apply the governing pattern separately if a semantic slot also needs precision repair.
 
 #### A.16.2:13.4 - Retire an obsolete branch
 A route-bearing branch may later become obsolete because another branch now carries the governing pattern and witness support for the current use. The admissible continuation is explicit `retire`, not silent disappearance.
@@ -121,13 +125,13 @@ When retreat affects governing patterns such as `A.6.P`, `A.6.A`, `C.16.Q`, or `
 ### A.16.2:17 - What each retreat preserves and withdraws
 
 #### A.16.2:17.1 - Reopen
-`reopen` usually preserves the family and much of the surrounding structure while withdrawing closure. It reintroduces rival possibilities without claiming that the entire earlier publication was inadmissible.
+`reopen` retains the inquiry or intended use while withdrawing closure. It reintroduces rival possibilities and preserves the other supported claims; the entire earlier publication need not have been inadmissible.
 
 #### A.16.2:17.2 - Sketch-backoff
 `sketchBackoff` withdraws the closure, route selection or stronger-use disposition that the available grounds no longer support; it preserves the historical fact of any earlier test. It typically preserves witnesses, exemplars, or cue anchors while withdrawing the over-committing publication form. Establish any change in authority under its own predicate and facts, including an act when required; a changed publication form alone does not establish that change.
 
 #### A.16.2:17.3 - Respecify
-`respecify` keeps the broad family but changes framing scaffold, route specification, or facet-profile reading. It is neither pure retreat nor silent edit: it retains the supported content while identifying any changed episteme under C.2.1. Assert continuity only when its relation obtains; apply governing patterns for semantic slot repair.
+`respecify` retains the inquiry or intended use but changes its framing, route specification or facet-profile reading. Retain the supported content and identify any changed episteme under C.2.1. Assert continuity only when its relation obtains; apply governing patterns for semantic slot repair.
 
 #### A.16.2:17.4 - Retire
 `retire` ends current use of the cue, episteme, route-bearing publication, or branch while preserving its history. Report supported successor information or an unresolved successor question as §4.2 requires. Publication availability and any actual authority relation remain separate claims.
@@ -135,7 +139,7 @@ When retreat affects governing patterns such as `A.6.P`, `A.6.A`, `C.16.Q`, or `
 ### A.16.2:18 - Worked Recovery Cases
 
 #### A.16.2:18.1 - Reopening a routed evaluative note
-An evaluative note may have reached a high closure state under one route, but new contrasts give the reviewer grounds to reconsider a serious rival. `reopen` is admissible when the bearer, family, and witness base remain largely intact but the closure claim must be relaxed.
+An evaluative note may have reached a high closure state under one route, but new contrasts give the reviewer grounds to reconsider a serious rival. `reopen` is admissible when the evaluative question and its subject remain supported but the closure claim must be relaxed. Retain the witnesses that still support the inquiry.
 
 #### A.16.2:18.2 - Sketch-backoff from prompt to cue pack
 An abductive prompt may later prove over-committed because its open question was formulated before the cue anchors had stabilized. The admissible recovery is to sketch-backoff to `PreArticulationCuePack`, preserving the cue carriers while withdrawing the prompt-readiness and current-use claims.

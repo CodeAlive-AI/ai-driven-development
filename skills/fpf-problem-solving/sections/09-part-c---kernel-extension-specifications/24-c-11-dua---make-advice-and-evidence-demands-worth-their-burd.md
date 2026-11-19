@@ -12,7 +12,7 @@
 
 **Use this when** a report, expert answer, review comment, rule or checklist asks somebody to act, wait, investigate or supply evidence, but it is unclear how that demand helps their present question or whether they can carry it out.
 
-An engineer reports that a discharge criterion was below the incoming background level. A colleague wants help examining the criterion. A useful answer can attribute the report and distinguish total level from the operation's contribution. Requiring an archive search before making that distinction spends effort without improving that answer. If the colleague later wants to publish who imposed the criterion, the receiving question changes: a contemporary record may now be worth obtaining. The method below reaches a completed answer in both situations.
+An engineer reports that a discharge criterion was below the incoming background level. A colleague examining the criterion can use an attributed report and the distinction between total level and the operation's contribution. An archive search would add work without improving that answer. If the colleague intends to publish who imposed the criterion, a contemporary record may be worth seeking. An answer about which inquiry is worth making can be complete while the authorship of the criterion is still unknown.
 
 The broad activity is decision support through advice. This pattern addresses the branch in which advice turns uncertainty or a requirement into consequential work for its recipient. Its subject is the **advice statement or requirement being composed or examined**, including the action or inquiry it demands. An empirical claim, recommendation, method instruction and binding requirement retain their different meanings and force. The method recovers the demand, appraises it and returns a usable continuation.
 
@@ -47,7 +47,7 @@ Start from what the recipient is trying to settle. Recover the work hidden in th
 
 Identify the question the recipient needs answered and the horizon at which an improvement matters. Read an existing instruction as something somebody would have to perform: what would they believe, do, stop doing, postpone or spend if they followed it?
 
-Recover a missing performer, resource, access, time condition or authority when it can change feasibility or the recommendation. An unavailable data set or a study that finishes after the decision window is a different option from an available timely check. Do not turn a simple answer into a universal plan form.
+Recover the performer, resources, access, time or authority that affects feasibility. A study ending after the decision window serves a different use. For a request for help, establish whose result is wanted. For a shared deliverable, identify the work each participant can supply. If the recipient is to acquire an ability, identify what they must later do under the support conditions intended for that use and what performance would show it. Successful joint work alone warrants the claim about the deliverable (Library Reference §9.3.1).
 
 For a text review, examine the connected passage that creates the demand, including its steps, mandatory fields and completion clauses. “Consider further evidence” and “obtain it before proceeding” impose different work. A final template can impose work that the preceding prose made optional.
 
@@ -65,7 +65,7 @@ Resolve these questions when relevant to the receiving use; they are not three m
 
 If the relevant distinction or possible result is not yet expressible, use B.5:4.1.2 to develop grounds from an accessible episode, source or attempt. The immediate comparison can concern a bounded exploration likely to improve the description or reveal a dependency. It need not promise a particular discovery. Return with the basis obtained before demanding a specific action-changing answer. Appraising an already formulated inquiry and constructing its missing basis are different contributions.
 
-When an inquiry is proposed or a consequential uncertainty, anomaly or applicable requirement makes one live, identify a plausible result that would change the conclusion, choice or warranted use. Compare obtaining that result with the feasible alternatives. These may include using present knowledge, a smaller reversible step, a different source, a narrower claim, deferral or stopping.
+For an optional inquiry, identify a plausible result that would change the conclusion, choice or warranted use. Compare it with using present knowledge, taking a smaller reversible step, using a different source, narrowing the claim, deferring or stopping. For a binding inquiry, identify the work due, its recipient and the evidence or report owed under the governing rule. Compare permitted ways of meeting it. A duty to measure and report can hold whatever the reading is.
 
 Include the attainable inquiry's cost, delay, displaced work and downside. Compare what it adds to the present configuration and horizon; `C.11.CRC` supplies that missing comparison when needed. A large uncertainty is not sufficient reason for a large study. Ask how resolving it could improve this use. A cheap probe that can change an irreversible commitment deserves a different answer from an expensive check whose plausible results leave the useful answer unchanged.
 
@@ -175,20 +175,20 @@ A successful rehearsal makes the revised materials available and saves four hour
 
 **Completed advice.** “Run the half-hour setup rehearsal to settle compatibility with this room's tools. If the revised materials work, use them for the four sessions; otherwise retain the current exercise. Under our stated estimates, that information saves an expected ninety minutes of instructor time after its cost. Keep the learning-effect claim open.”
 
-The team next performs the rehearsal and uses its result to select materials for these sessions. The rehearsal tests compatibility with the stated room and tools. If domain review finds unacceptable participant risk or a binding evidence prerequisite, the proposed use must satisfy that condition before it enters the available set.
+The advice gives the team a decision it can now make about the rehearsal. Compatibility with the stated room and tools becomes known only after the rehearsal is performed. If domain review identifies an unacceptable participant risk or a binding evidence prerequisite, meet the governing condition before using the materials.
 
 **Opposed cost condition.** Suppose the same discriminating rehearsal now requires three hours of instructor time, still within the available preparation window. Its expected gross preparation saving remains two hours. The completed advice changes: “Retain the current exercise for these four sessions. The proposed rehearsal would cost an expected hour more than it saves. The current materials meet the course requirements; the comparative learning-effect claim remains unresolved.” A longer study remains a separate research proposal whose attainable contribution and burden must be justified for its own receiving use.
 
 
 #### C.11.DUA:5.4 - Earn a long research horizon
 
-A research group has two rival explanations of a recurrent anomaly. Neither currently supports an intervention. Suppose an available instrument and four-week allocation can discriminate a prediction on which the models differ; a much broader survey would exhaust the year's allocation without separating them.
+A research group has two rival explanations of a recurrent anomaly. Neither yet supports an intervention. For one instrument setting their predicted ranges overlap in the middle and differ at the ends, even after allowing for measurement error. The instrument is available for four weeks. A broader survey would exhaust the year's allocation without separating the predictions.
 
-The receiving use is model discrimination within the year's research program. Compare the attainable contrast and broader survey against retaining both models and spending the allocation elsewhere.
+The group must choose a design for its next instrument. A result compatible with only one model would change that design. The group judges the chance and value of resolving this design choice worth the four weeks, after comparing the best other use of that time. A result in the overlap would leave both models in contention.
 
-**Completed advice.** “Run the four-week discriminating measurement. Under the stated model predictions, its result will eliminate or revise one explanation and inform the next instrument design. The broader survey does not presently distinguish those predictions and consumes the remaining allocation. Reconsider the measurement if instrument sensitivity cannot separate them.”
+**Completed advice.** “Use the four weeks for the measurement. Compare the observed result, including its uncertainty, with both prediction ranges. If only one accommodates it, use that finding in the design choice. If both do, retain both explanations. If neither does, check the measurement and reconsider both models. The broader survey offers no comparable basis for the design choice.”
 
-The useful result sought is explanatory progress and a better basis for later research. No immediate operational intervention is needed to justify that contribution. If the sensitivity condition fails, the proposed measurement cannot distinguish the model predictions; revise the design or retain the unresolved models.
+The attainable gain is a better basis for instrument design. No immediate operational intervention is required. If instrument uncertainty makes every attainable result compatible with both predictions, or a more valuable use of the four weeks becomes available, reconsider the allocation.
 
 ### C.11.DUA:6 - Bias-Annotation
 
@@ -204,7 +204,7 @@ The following conditions concern the advice being composed or examined. They req
 | --- | --- |
 | CC-C11DUA.1 | The receiving question and the action, delay, expenditure or inquiry demanded by the advice are clear enough to judge their contribution. |
 | CC-C11DUA.2 | The answer preserves what present evidence supports and its use boundary. Infeasible acquisition does not strengthen the claim. |
-| CC-C11DUA.3 | A live inquiry is judged by its attainable contribution and relevant cost, delay, opportunity cost and downside. Useful qualitative comparison suffices. |
+| CC-C11DUA.3 | Appraise an optional inquiry by its attainable gain, cost, delay, displaced work and downside. For a binding inquiry, preserve what must be done and compare the permissible means when the choice matters. Qualitative comparison can suffice. |
 | CC-C11DUA.4 | When a requirement's merits are disputed, the appraisal addresses its governed quantity or activity, purpose, contribution and burden while keeping present force separate. |
 | CC-C11DUA.5 | The result reaches the first useful completion for this recipient. Its decision and useful basis remain; inactive inquiry adds no placeholder, waiver or omission account. |
 | CC-C11DUA.6 | Any reason or limitation needed by the decision or a later recipient remains in the same result. Changed use can make previously unnecessary inquiry worthwhile. |

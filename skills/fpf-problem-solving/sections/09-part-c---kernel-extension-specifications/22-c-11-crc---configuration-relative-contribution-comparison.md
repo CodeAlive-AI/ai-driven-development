@@ -14,7 +14,7 @@
 
 Use this pattern when a proposed finite change is being justified by “what it adds,” but its contribution has not been compared with the current configuration under the conditions that matter to the receiving decision. The change may add, replace or remove something; it may also acquire information before a later commitment.
 
-**First useful result.** Return one `C.2.1` episteme that compares a realizable finite changed configuration with the current configuration under a declared basis. State the result coordinates and resource coordinates, interactions, uncertainty, option effects, unsupported overreads, and the named receiving question that can consume the claim. It can supply local choice under `C.11`, construction of a continuation under `C.43`, or a subject Method that compares proposed changes. The comparison does not choose the option.
+**First useful result.** Tell the decision maker what would change with the proposal over the period they care about, compared with continuing without it. Include who gains or loses, the resources needed and any later choice it opens or closes. State which findings are estimates and what would change the comparison. This account is a `C.2.1` episteme. It supplies a premise for a choice (C.11), for planning later actions (C.43), or for the receiving design Method.
 
 **Cheap exit.** If an existing domain calculation or `A.19`/`C.11` account already states the same finite baseline and change with the material comparison conditions and reopen condition, use it directly.
 
@@ -54,9 +54,9 @@ Without an explicit configuration-relative comparison, practitioners make at lea
 Construct the smallest finite counterfactual comparison that can change the answer to one named choice or construction question.
 
 1. **Name the receiving question.** State who needs the comparison, the choice or construction it informs, when the result must be available, and which consequence could change that work. For a local `C.11` choice, identify its deciding System, `DecisionSubject` and current `OptionSet` or option-set question. For ongoing control, policy design or development, identify the continuation, rule, direction or means being compared and its receiving Method; a local option set need not already exist.
-2. **Freeze the current configuration.** Name the actual or currently relied-on configuration `S0`, system boundary, affected Systems, the holder or beneficiary and what it holds or benefits from, relevant environment, and what is held fixed only for this comparison. If the affected-System coordinate is missing and could change the comparison, use `A.1.CSD` first; bring back only consequence claims compatible with this `S0`/`Δ`/`S1`, horizon, evidence window, and receiving decision. A historical, empty, or ideal configuration is not the default baseline.
+2. **Establish the baseline.** Identify the actual or currently relied-on configuration `S0`. Describe how it would operate without the proposed change over the comparison period, including changes already expected. Set the system boundary, identify the affected Systems, who holds or benefits from what, and what is held fixed. When an omitted affected System could change the answer, use A.1.CSD and bring back consequences applicable to this configuration, change, period and evidence window. Give the grounds for using a historical, empty or ideal baseline if the question calls for one.
 3. **Name the finite change.** State the addition, replacement, removal, intervention, or probe `Δ`, the realizable candidate configuration `S1`, admissibility conditions, implementation capability, planned transition work, reversibility, and excluded variants.
-4. **Fix horizon and scenarios.** State the interval, relevant states or scenarios, timing assumptions, and any decision or evidence window. Do not combine results from incompatible horizons without an explicit mapping.
+4. **Fix the horizon and scenarios.** Compare both configurations over the same interval under the same external scenarios. Preserve differences in timing or later conditions caused by the proposed change. Where the evidence covers different intervals, explain how it supports that comparison or leave the affected consequence unresolved.
 5. **Declare result coordinates.** Name the result vector whose coordinates can change the decision and the protected coordinates that may not be silently scalarized. Include affected-System consequences and distributional differences when they matter to the comparison.
 6. **Declare resource coordinates.** For the action, transition, information acquisition, and computation, name the attention, capital, time, material, energy, and other resources consumed or expected to be consumed in this field case. State required authority separately as an admissibility condition. Keep costs of evaluating and realizing the change distinct.
 7. **Recover constraints and interactions.** State active and potentially activated constraints, complements, substitutes, thresholds, congestion, downstream effects, common causes, overlaps, and double-counting risks.
@@ -116,15 +116,15 @@ This is why calculus of variations matters without becoming the default interpre
 
 #### C.11.CRC:5.1 - Flood-pump modernization
 
-The current station configuration `FPS7-C19` supports bounded discharge use. A candidate bearing-temperature sensor is not compared with “no pump” or by its isolated diagnostic accuracy. The finite comparison uses `FPS7-C19` as `S0`; sensor, placement, cabling, controller, maintenance access, calibration, and operating procedure changes as `Δ`; and the installed candidate as `S1`.
+Station `FPS7-C19` currently supports bounded discharge use. Compare two ways of operating it over the coming service interval. In `S0` the station continues with its existing diagnostics and scheduled maintenance. In the proposed `S1` it uses an additional bearing-temperature sensor. The change `Δ` includes placement, cabling, controller changes, access for maintenance, calibration and operating procedure. Both forecasts use the same loading scenarios. Neither forecast establishes that the sensor has been installed.
 
 Result coordinates include discharge continuity, failure detection, maintenance access, recoverability, and evidence continuity. Resource coordinates include outage time and maintenance burden plus the resource costs of installation work, calibration, and observation.
 
-The current result is indeterminate because placement and maintenance evidence are missing; another observed-load window can change the decision. The chooser may return `probe again` under `C.11` if that window supplies a feasible, worthwhile probe that could change the choice.
+Two gaps affect this proposal. Establish whether the proposed location can be reached during an allowed maintenance window. To assess earlier warning, compare the proposed signal with the existing diagnostics under the loads where their indications might differ. A load observation alone cannot establish access. Price each attainable check against the choice it can change (C.11.DUA). If access is impossible at this location, compare a feasible placement or retain the current configuration.
 
 #### C.11.CRC:5.2 - Capability-development programme
 
-Adding one pattern to a programme is compared with the person's current mastered and externally supported set, not with an empty curriculum. The comparison names target later Work, prerequisite complementarity, time to competent use, support dependence, critical-error detection, transfer and retention evidence, and future option value. A newly produced artifact or recent exercise-score gain can be evidence for a bounded claim, but neither is automatically the candidate element's capability contribution.
+For the same later assignment, compare continuing with the present programme and normally available support against adding the proposed practice. Include prerequisites, practice time, the support provider's time and work displaced elsewhere, and the expected time to competent use. Determine what the participant did and what an assistant supplied. A jointly completed artifact can meet the immediate need. To judge a gain in the participant's capability, compare earlier performance with performance on a later comparable task under the support conditions promised for later work. Transfer, retention and detection of critical errors need observations suited to those claims.
 
 #### C.11.CRC:5.3 - Operations constraint intervention
 
@@ -132,14 +132,14 @@ A positive shadow price for one bottleneck supports a local statement about rela
 
 #### C.11.CRC:5.4 - Capital allocation
 
-A project is compared with the current portfolio and financing/operating configuration. The comparison includes cannibalization, shared resources, risk concentration, financing constraints, irreversibility, staging, information gained before later commitments, and displaced options. NPV, real-options, scenario, and portfolio Methods remain Corporate Finance practice; this pattern supplies the finite comparison returned to that practice or to `C.11` when a local choice is the receiving question.
+Compare the portfolio over the decision horizon with and without the proposed project. If it would displace another investment, include what that investment would have produced in the feasible alternative. Compare shared resources, cannibalization, risk concentration, financing constraints, staging, irreversibility and information available before later commitments. Corporate Finance supplies the NPV, real-options, scenario and portfolio Methods. Return the finite comparison to that practice or to C.11 when it informs a local choice.
 
 ### C.11.CRC:6 - Bias Annotation
 
 - **Scalar bias:** do not hide protected coordinates or distributional effects inside one score.
 - **Smoothness bias:** do not replace a realizable finite change with a derivative outside its validity region.
 - **Additivity bias:** inspect complements, substitutes, overlap, thresholds, congestion, and common causes.
-- **Empty-baseline bias:** start from the actual current configuration unless another baseline is explicitly the decision subject.
+- **Baseline bias:** compare what would happen with and without the change over the same horizon. A current snapshot can establish the starting configuration.
 - **Physics-prestige bias:** a variational or thermodynamic form does not establish a physical mechanism or decision authority.
 - **Information-as-result bias:** expected information and option value are inputs to choice, not already realized benefit for the intended recipient System.
 

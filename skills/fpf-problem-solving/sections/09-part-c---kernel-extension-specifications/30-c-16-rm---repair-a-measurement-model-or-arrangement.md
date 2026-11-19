@@ -71,7 +71,7 @@ For each available repair, change the corresponding part of the relation and det
 
 A difference measurement is useful when the target changes between two observations in a known way while the influences being cancelled remain sufficiently stable. A larger input resistance is useful when the loading relation shows how much it reduces the consequential error. Repeating an unchanged observation needs its own error or dynamics account to support a narrower conclusion.
 
-Prefer an already available comparison or a small reversible change when it can settle the repair choice. If several explanations predict the same result of a proposed test, that test cannot select among them. Use C.11.DUA to compare the gain from an attainable further observation with its effort and delay.
+Prefer an available comparison or a small reversible change when it can settle the repair choice. If two explanations predict the same indication under every condition of the proposed test, a deterministic reading cannot distinguish them. For probabilistic predictions compare likelihoods for the recorded value, or the probabilities assigned to its reported interval or category, as appropriate. A result possible under both explanations can still favor one. Use C.11.DUA to compare the gain from an attainable observation with its effort and delay.
 
 The needed conclusion sets the reach of diagnosis. Replacing a defective assembly and obtaining the required response may restore the measurement without identifying which internal component failed. Retain the unresolved cause if later reliability, maintenance or causal explanation depends on it. Use C.28 when the required result is a causal attribution.
 
@@ -143,17 +143,17 @@ A source has open-circuit voltage E and internal resistance Rs between 0.8 and 1
 
 With Rm = 1 MΩ and an ideal reading V = 5 V, the compatible bound is 9 ≤ E ≤ 11 V. It leaves the question E ≤ 10.5 V unresolved.
 
-One option is to determine Rs more closely and correct the loaded reading. Another is to reduce loading. The second option is available here: change to a meter with Rm = 100 MΩ. Assume the same passive-source model and resistance range apply to the new measurement. If its ideal reading is 9.9 V, then:
+One option is to bound Rs more closely and correct the first reading. Another is to reduce loading in a new measurement. Use a meter with Rm = 100 MΩ. Suppose the same passive-source law and resistance range hold at the new reading. If its ideal indication is 9.9 V, the open-circuit voltage **at that reading** satisfies:
 
 `9.9*(1 + 0.8/100) ≤ E ≤ 9.9*(1 + 1.2/100),`
 
-so 9.9792 ≤ E ≤ 10.0188 V. The bound settles E ≤ 10.5 V while Rs remains unresolved. The repair reduces the unknown resistance's influence on this conclusion.
+so 9.9792 ≤ E ≤ 10.0188 V. The new reading alone settles E ≤ 10.5 V at that time without determining Rs. To answer the question about the earlier time as well, establish that E stayed the same or bound its change tightly enough for the threshold. If both E and Rs stayed the same, the two ideal readings can also be solved jointly by C.16.IR:5.1.
 
 Restore a supplied reading-error bound of ±0.1 V for the new meter. The positive factors give:
 
 `9.8*1.008 ≤ E ≤ 10.0*1.012,`
 
-or 9.8784 ≤ E ≤ 10.12 V. The same decision remains settled. A more demanding threshold could make the error bound consequential again. Meter range, voltage stability and the loading model belong to the physical premises supporting this use.
+or 9.8784 ≤ E ≤ 10.12 V at the new reading. The threshold is still met. For a lower threshold the stated reading error could change the decision. The conclusion depends on the meter's operating range and the loading model.
 
 #### C.16.RM:5.3 - Recompute a rate from retained observations
 

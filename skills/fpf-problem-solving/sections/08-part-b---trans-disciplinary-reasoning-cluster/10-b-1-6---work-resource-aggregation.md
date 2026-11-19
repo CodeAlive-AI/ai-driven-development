@@ -151,7 +151,7 @@ When a dated aggregation occurrence is asserted or required, use A.13 to identif
 
 **Uncertainty and provenance.** Propagate measurement, model and conversion uncertainty under the operative rule where it affects the result or use. Keep the necessary sources and derivations recoverable. Use A.10 for needed replayable source-to-use reliance and G.6 for a needed stable address of that chain, preserving any Work, measurement, policy-application and transformation facts the use requires.
 
-**Plan/result separation.** Keep expected use from a method description or WorkPlan as planned and resource readiness under A.15.5. Use A.15.1 and the measurement or aggregation predicates for performed Work and measured results.
+**Estimates, plans and performed use.** An estimated or derived resource value retains its source values, model and conditions; a planned amount retains its planning basis. The same value may serve both uses. Keep resource readiness under A.15.5. Use A.15.1 and the measurement or aggregation predicates for performed Work and measured results.
 
 **Efficiency and yield.** A ratio or yield claim names its input resource results, output or domain result, attribution bases and applicable comparison rule. Any asserted dated aggregation Work retains its independent grounds. Explain a claimed gain through the measurement, accounting and domain-result grounds on which it depends; use B.2 when whole identity remains the question.
 

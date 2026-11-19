@@ -224,7 +224,7 @@ A UINDM publication or use is conformant if it satisfies:
 6. **Recheck eligibility for reuse.** Another bearer, scope and window, basis, plane, or intended use gets a fresh eligibility decision; any F.9 Bridge, kind relation, or plane relation is cited only when the conclusion relies on that obtaining relation, with loss assessed under the receiving-use rule and any numerical assurance penalty applied under A.6.7:4.2(2).
 
 7. **Gate/guard separation + lexeme discipline.** UINDM uses `…Eligibility` returning `GuardDecision ∈ {pass|degrade|abstain}` and does not embed GateDecision/GateLog in suite steps.
-   Reserved gate‑lexemes (e.g., `…Guard`) are not used for mechanism‑level predicates; the mechanism stays at the guard/admissibility layer.
+   Reserved gate‑lexemes (e.g., `…Guard`) are not used for indicatorization eligibility predicates.
 
 8. **Planning and actual use.** On a P2W path, an A.15.2 WorkPlan selects the intended editions; A.15.3 governs typed filling only for independently declared positions. Record the application and its effective bindings under §4.1, keeping the refs and pins needed for replay in Audit.
 
@@ -246,7 +246,7 @@ For example, an extended Indicatorize may add an optional justification result w
 
 * **Confusing planning with an application.** A description of intended editions or planned fillings does not establish argument bindings or launch values. Keep the P2W baseline separate and record effective application references in Audit.
 
-* **GateDecision leakage.** Emitting or implying GateDecision/GateLog as part of the `indicatorize` step (gate decisions are separated from suite steps; keep UINDM at guard+audit level).
+* **GateDecision leakage.** Emitting or implying GateDecision/GateLog as part of the `indicatorize` step.
 
 ### A.19.UINDM:9 - Consequences
 

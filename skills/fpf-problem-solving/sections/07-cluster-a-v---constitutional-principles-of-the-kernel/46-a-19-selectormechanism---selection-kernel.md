@@ -28,13 +28,13 @@
 FPF’s Characterization (CHR) suite treats selection as a **mechanism boundary** within the suite (authoritative membership: `A.19.CHR:4.2`).
 Suite membership is a **set**; order has no semantics. Any intended ordering is expressed only via `suite_protocols` (`A.19.CHR:4.5`), under suite obligations (`A.19.CHR:4.3`).
 
-Within the suite‑closed protocol, `SelectorMechanism` appears as the `select` stage (after admissible comparison; optional stages remain optional per `suite_protocols`). The kernel’s role is concept‑level and governed by CN‑Spec and CG‑Spec:
+Within the suite‑closed protocol, `SelectorMechanism` appears as the `select` stage (after admissible comparison; optional stages remain optional per `suite_protocols`). Under CN-Spec and CG-Spec, the declared `Select` operation:
 
-* consume **admissible** comparison outcomes without collapsing them into a hidden scalar,
-* apply **explicit** criteria and policy references, and
-* return a **selected-set** result under policy-bound defaults, with the `Select` application and its argument and result bindings recoverable; dated Work and evidence-provenance grounds enter when the account asserts them or the receiving use consumes them.
+* consumes **admissible** comparison outcomes without collapsing them into a hidden scalar,
+* applies **explicit** criteria and policy references, and
+* returns a **selected-set** result under policy-bound defaults, with the `Select` application and its argument and result bindings recoverable; dated Work and evidence-provenance grounds enter when the account asserts them or the receiving use consumes them.
 
-The kernel uses the CHR suite SlotKind lexicon (`A.19.CHR:4.2.1`) to prevent SlotKind drift across specializations and across SoTA wiring layers.
+The kernel uses the CHR suite SlotKind lexicon (`A.19.CHR:4.2.1`) to prevent SlotKind drift in specializations and SoTA wiring modules.
 
 ---
 
@@ -230,7 +230,7 @@ For example, use the admitted incomparable supplier pair from A.19.CPM §4.1 and
 
   These neighboring objects support replay. The finite basis is a binding of the selection application, and none of them is selector-declaration content or a generic result container.
 
-#### A.19.SelectorMechanism:4.2 - Boundary and layering rules
+#### A.19.SelectorMechanism:4.2 - Selection boundaries and dependencies
 
 0. **Selection conditions are explicit values, not a new object kind.** The application binds `CriteriaSlot` plus effective selector-policy refs, defaults, and `degrade` failure behavior. Acceptance and admission predicates remain separate. `SelectionSlot` contains only the resulting candidate set; eligibility, conditions, scope, evidence, and replay metadata stay outside it.
 
@@ -279,7 +279,7 @@ When comparisons are partial or set-valued, selection must not pretend there is 
 
 **Outcome.**
 
-* Under that bound `degrade` policy, `SelectEligibility` returns `degrade`, excludes OptionC without coercing unknown evidence, and `SelectionSlot` returns `{OptionA, OptionB}`.
+* Under that bound `degrade` policy, `SelectEligibility` returns `degrade`. `Select` then excludes OptionC under that policy and returns `{OptionA, OptionB}`, bound to `SelectionSlot`.
 * If either required comparison involving OptionC instead had `GuardDecision = abstain`, that basis member would have no output binding, `SelectEligibility` would return `abstain`, and no selected-set value would be created. Neither guard value is a member of `ComparisonResultSlot` or `SelectionSlot`.
 * The selection or eligibility application, finite CPM application basis, policies and returned value or explicit absence preserve the branch taken. An A.10 provenance account is added for the bounded reliance at issue; any dated Work claim requires the independent grounds in §4.1.
 

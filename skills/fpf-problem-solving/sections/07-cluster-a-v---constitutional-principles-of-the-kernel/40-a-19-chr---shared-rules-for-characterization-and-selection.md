@@ -25,7 +25,7 @@ This pattern applies when a workflow (especially in Part G) needs lawful charact
 
 * **No implicit crossings.** Identify the relations claimed or consumed: F.9 semantic correspondence, C.3.3 kind correspondence, or a separately governed plane relation. Use E.18/A.21 visibility and gate anchors when their crossing or gate is present. Context, entity, plane and edition changes alone create none of those relations.
 * **CN‑Spec and CG‑Spec must remain the governing spec refs.** Mechanisms cite them; mechanisms do not duplicate them.
-* **Separation of layers.** Universal CHR core vs discipline/method specializations vs generators vs packaging.
+* **Content allocation.** Keep suite-wide obligations separate from discipline/method specializations, generators and packaging.
 * **SlotKind invariance.** Specialisation chains must preserve SlotKind meaning and only refine ValueKind / strengthen guards/laws.
 * **No silent scalarization / totalization.** CPM comparison results preserve the declared partial-order distinctions, and selection remains set-returning; any numeric summary is report‑only unless declared as a lawful comparator/policy.
 * **P2W split.** Planned slot filling belongs to WorkPlanning; launch values belong to WorkEnactment.
@@ -217,7 +217,7 @@ The existing claim identifiers resolve to the rules below. The rules are stated 
 | L-A67CHR-01 | §4.2 membership set semantics |
 | L-A67CHR-02, L-A67CHR-03, A-A67CHR-02 | §§4.1.2 and 4.6 planned baseline and its separation from enactment |
 | A-A67CHR-01 | §4.5 operation/edition resolution |
-| D-A67CHR-01, D-A67CHR-02 | CC-A67CHR-1 kind and level |
+| D-A67CHR-01, D-A67CHR-02 | CC-A67CHR-1 description kind |
 | D-A67CHR-03 | §4.2 and CC-A67CHR-2 canonical membership |
 | D-A67CHR-04 | §4.4 and CC-A67CHR-3 specification references |
 | D-A67CHR-05 | §§4.3.1 and 4.4; CC-A67CHR-13 transport/crossing content |
@@ -393,7 +393,7 @@ For an Archive-mode use, retain the selected set under the selected selector pol
 
 #### A.19.CHR:5.1 - `U.System` vignette
 
-A system-level decision must select a declared set of options when measurable evidence comes from multiple slices (test rigs, simulations, field trials). Measurements are multi-scale and not always comparable without explicit normalization, and some evidence is missing or stale. The team needs lawful comparison and selection without forcing a single scalar “fitness”.
+A decision about a system must select a declared set of options when measurable evidence comes from multiple slices (test rigs, simulations, field trials). Measurements are multi-scale and not always comparable without explicit normalization, and some evidence is missing or stale. The team needs lawful comparison and selection without forcing a single scalar “fitness”.
 
 Use the filled reference selection in §4.8.1 as the baseline: contracts, scales, methods, time rule and policies yield a retained set of two offers. When the inputs instead come from tests or field trials, replace the stipulated case evidence with the evidence required by the CN-Spec/CG-Spec; incomplete evidence follows the declared failure rule. A claimed dated Work and any launch witness require their independent enactment basis. Any semantic/kind/plane relation or flow/gate crossing retains its own required anchors.
 
@@ -423,7 +423,7 @@ A CHR mechanism-suite publication set is conformant to **A.19.CHR** iff all appl
 
 #### A.19.CHR:7.1 - Suite object checks
 
-**CC‑A67CHR‑1 (Correct kind and level).**
+**CC‑A67CHR‑1 (Correct description kind).**
 A conforming `CHRMechanismSuiteDescription` SHALL be a `MechSuiteDescription` instance and SHALL NOT be encoded as a `MechFamilyDescription`.
 
 **CC‑A67CHR‑1a (Stable citation handle).**
@@ -507,7 +507,7 @@ If a face publishes an edition reference, retain that reference. For a comparabi
 
 | Anti-pattern | Why it fails | Avoid / repair |
 |---|---|---|
-| Using `MechFamilyDescription` as a suite container | Collapses “many implementations of one mechanism” into “many mechanisms”, mixing levels and breaking reuse constraints | Use `MechSuiteDescription` for multi-mechanism sets; use `MechFamilyDescription` only for multiple implementations of a single `U.Mechanism` |
+| Using `MechFamilyDescription` as a suite container | Collapses “many implementations of one mechanism” into “many mechanisms”, breaking reuse constraints | Use `MechSuiteDescription` for multi-mechanism sets; use `MechFamilyDescription` only for multiple implementations of a single `U.Mechanism` |
 | Embedding a second CG‑Spec or CL/Φ/Φ_plane tables inside the suite or plan item | Duplicates the governing spec refs and creates drift between planning, gates, and audit | Publish refs and pins only (`CGSpecRef`, `BridgeCardRef`, policy-id pins); keep tables in their canonical registries and cite them |
 | Implicit UNM/UINDM/ULSAM “inside” score/compare/select | Breaks auditability and violates the suite protocol explicitness obligation | Make dependencies explicit as protocol steps (`Uses`) and cite the chosen mechanism instances in the planned baseline and audit pins |
 | Hidden thresholds or weights in CHR core | Moves acceptance criteria into the wrong layer, defeating the declared defaults source and traceability | Keep thresholds in AcceptanceClauses, TaskSignature, or GateProfile; if a policy is needed, mint a policy-id and cite it |

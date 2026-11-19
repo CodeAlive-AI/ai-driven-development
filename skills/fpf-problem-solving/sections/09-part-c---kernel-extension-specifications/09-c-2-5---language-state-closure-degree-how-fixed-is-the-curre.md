@@ -72,7 +72,7 @@ C.2.4 assesses how explicit this content is. Writing out the alternatives and th
 A text may be highly explicit but low-closure, or low-explicitness but already high-closure by policy. Those states shall not be collapsed.
 
 #### C.2.5:4.4 - Change discipline
-Increasing `CD` requires narrowing candidate space, route space, or frame space explicitly. When closure decreases, make the prior fixation, reason for reopening and still-binding remainder recoverable. Use `A.16.2` when a published framing, route or use claim must be revised or the applicable fixation rule requires that move; add a note only when the existing material is insufficient.
+For a higher `CD` reading, identify what the relevant scale anchor adds (:4.2). Depending on the anchor, the grounds can be different predictions for still-live alternatives, evidence excluding an alternative, a selected route, or a rule changing when a choice can be reopened. A rule can strengthen the reopening condition while the same route remains selected. Report only the change the evidence supports. When closure decreases, make the prior fixation, reason for reopening and still-binding remainder recoverable. Use `A.16.2` when a published framing, route or use claim must be revised or the applicable fixation rule requires that move; add a note only when the existing material is insufficient.
 
 An ordinary PatternID in `governingPatternRef` locates the FPF rule relevant to the closure claim. Use a separate `relationFunctionClaimRef` for its exact defining or constraining `ClaimGraph` only when admissible interpretation, comparison, migration, publication, or reuse depends on that exact rule identity (`E.10`, `E.4.PFR`). Use `authoritySourceRef` when a non-pattern source carries the relevant authority.
 
@@ -134,7 +134,7 @@ To assign `CD`, ask:
 - what would count as an admissible reopen trigger?
 
 #### C.2.5:14.2 - Review prompt
-An assurance reader should identify the narrowing and its source under :16.2, including a policy or protocol when it fixes the route. Confident tone or an appeal to hierarchy alone does not establish that fixity.
+An assurance reader should use the applicable anchor in :4.2: identify the contrasts that organize still-live alternatives, the alternatives excluded, the choice made, or the rule that now governs reopening. State the grounds for that reading (:16.2). Confident tone or an appeal to hierarchy alone does not establish that fixity.
 
 #### C.2.5:14.3 - Governance note
 Whenever a claim about a gate, commitment, or endpoint use depends on `CD`, the supporting guard, `governingPatternRef`, or `authoritySourceRef` should be visible.

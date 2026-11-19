@@ -136,7 +136,7 @@ Compare with continuing as at present. Thinking, obtaining evidence, explaining 
 
 ### CONSEQUENCE-BEARERS — Find omitted Systems before closing a decision
 
-- **Situation:** A consequence account for a decision or investigation may omit physical or operational wholes beyond its candidate bearer.
+- **Situation:** A consequence account for a decision or investigation may omit physically embodied acting wholes beyond its candidate bearer.
 - **Question:** Which other Systems may undergo a relevant change, through what supported relation or still-modal path, and what next step follows for the decision or investigation?
 - **First useful result or blocker:** A bounded consequence account with its focus, bearers or intended referents, obtaining or modal paths, changed characteristics, support, uncertainty, and material limit. A useful constraint, alternative, or explicit unknown can complete the answer; further discovery needs a worthwhile obtainable contribution.
 - **Start with:** Use `A.1.CSD` for the focus and receiving decision or investigation. Trace obtaining relations separately from modal paths, challenge the boundary and recover the relevant wholes; use `A.1.SCR` only when a candidate's systemhood is load-bearing. Qualify each change and keep each bearer's changes and conditions distinct. Leave through the direct evidence, causality, comparison, domain or value pattern only when that stronger question is current. Select further inquiry by individual and combined contribution and burden.
@@ -238,14 +238,14 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 - **Start with:** `F.19`; use `E.10` for unresolved FPF wording, and `F.18`, `F.0.1`, `F.9`, or the subject's direct pattern only when needed.
 - **Stop or return:** Stop when the reader can understand the claim and carry out its intended use.
 
-#### SOTA-PORTFOLIO — Use a plural field of approaches to answer your question
+#### SOTA-PORTFOLIO — Compare approaches that could answer your question
 
-- **Situation:** A project needs the modern field of approaches rather than one popular answer and may later need maintained domain guidance.
-- **Question:** What plural view is adequate now, and does the remaining problem call for reuse, a contribution, another product, a DPF or LPF, or no maintained result?
-- **First useful result or blocker:** One source-linked SoTA view, live option set, reuse route, framework decision, or the missing scope or maintenance basis.
-- **Mantra:** Name the question, scope, freshness need and rival traditions. Build a source-linked plural view; preserve disagreement, source-use limits and constructions; compare useful approaches; compare reuse or contribution with framework authoring and maintenance; open a framework decision only for a recurring unmet problem; author and test the needed patterns; refresh when the field or use changes.
-- **Start with:** `G.2`; add `C.18`, `C.19`, or `G.5` for the set and the E.4/E.9 authoring route only if a framework is selected.
-- **Stop or return:** Stop at the first adequate maintained or one-off result. If allocation to familiar patterns loses a source’s construction, use `FPF.Reference:16.5` to identify the missing result, obtain it through the appropriate subject method and return to the original use.
+- **Situation:** Your team needs to know what competing approaches can establish and where each applies.
+- **Question:** What can the sources already answer, and what work remains?
+- **First useful result or blocker:** A comparison linking each claim to its source, edition, evidence and limits. State where the claims can be compared, what remains disputed and which part of your question is open.
+- **Mantra:** Fix the inquiry and freshness needed. Compare claims, methods and grounds. Keep consequential disagreements. Use the comparison if it suffices. For a remaining need, consider reuse, a contribution, another product or maintained guidance. If a DPF or LPF is warranted, develop and test its patterns and revisit them as evidence or use changes.
+- **Start with:** `G.2`. For options use `C.18`, `C.19` or `G.5`. For framework authoring use `E.4` and `E.9`.
+- **Stop or return:** Stop at the first usable result. If allocating familiar patterns loses a source's construction, use `FPF.Reference:16.5` to recover it and return to your question.
 
 #### SYSTEM-DELIMITATION — Separate parts, selected boundary, and crossings
 

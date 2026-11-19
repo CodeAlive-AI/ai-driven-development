@@ -17,7 +17,7 @@
 - [E.5 - Four Guard‑Rails of FPF](13-e-5---four-guard-rails-of-fpf.md) (94 lines) — Use this pattern when authoring or revising Core concepts or their Tooling and Pedagogy forms. Four recurring risks require different checks:
 - [E.5.1 - DevOps Lexical Firewall](14-e-5-1---devops-lexical-firewall.md) (82 lines) — Use this pattern when Core prose mentions an implementation detail, such as a file format, build command or runtime flag. Determine whether that detail is incidental to the concept or necessary to...
 - [E.5.2 - Notational Independence](15-e-5-2---notational-independence.md) (127 lines) — Use this pattern when expressing FPF content or using another expression to carry that content. Keep the conceptual meaning recoverable while choosing an expression that supports the intended work. A...
-- [E.5.2.L - Languages, Expressions and Interpretation](16-e-5-2-l---languages-expressions-and-interpretation.md) (86 lines) — Type: Definitional pattern
+- [E.5.2.L - Languages, Expressions and Interpretation](16-e-5-2-l---languages-expressions-and-interpretation.md) (104 lines) — Type: Definitional pattern
 - [E.5.3 - Unidirectional Dependency between FPF Families](17-e-5-3---unidirectional-dependency-between-fpf-families.md) (76 lines) — Use this pattern when an FPF artefact imports or otherwise depends on another artefact. FPF separates the Conceptual Core, Tooling Reference and Pedagogical Companion under E.4. The dependency...
 - [E.5.4 - Cross‑Disciplinary Bias Audit](18-e-5-4---cross-disciplinary-bias-audit.md) (75 lines) — Use this pattern when authoring or reviewing a normative pattern's assumptions, examples and claimed scope. Wording and metaphors drawn from one domain can hide assumptions that readers in another...
 - [E.6 - Didactic Architecture of the FPF Specification](19-e-6---didactic-architecture-of-the-fpf-specification.md) (81 lines) — Use this pattern when arranging the specification's explanation and practical entry. Readers differ in at least two respects:
@@ -27,7 +27,7 @@
 - [E.8.ECSPF - Author an FPF Pattern from an Accepted Evaluation CharacteristicSpace Specification](23-e-8-ecspf---author-an-fpf-pattern-from-an-accepted-evaluatio.md) (264 lines) — Type: Authoring method pattern
 - [E.9 - Design-Rationale Record (DRR) for FPF Content Decisions](24-e-9---design-rationale-record-for-fpf-content-decisions.md) (360 lines) — Type: Governance and authoring pattern
 - [E.9.DA - Evaluate a DRR for Its Declared Authoring Use (Decision-Adequacy CharacteristicSpace)](25-e-9-da---evaluate-a-drr-for-its-declared-authoring-use.md) (462 lines) — Use E.9.DA to judge whether a particular version of a DRR can support a declared FPF authoring use. The use can be pattern drafting, host amendment, distribution across selected loci, carrying an...
-- [E.10 - Unified Lexical Rules for FPF](26-e-10---unified-lexical-rules-for-fpf.md) (1760 lines) — Type: Part E lexical-governance pattern
+- [E.10 - Unified Lexical Rules for FPF](26-e-10---unified-lexical-rules-for-fpf.md) (1762 lines) — Type: Part E lexical-governance pattern
 - [E.10.LRN - Recover What “Learning” Means in This Claim](27-e-10-lrn---recover-what-learning-means-in-this-claim.md) (218 lines) — Type: lexical and ontological precision restoration (E)
 - [E.10.INT - Recovering What Interest or Curiosity Means Here](28-e-10-int---recovering-what-interest-or-curiosity-means-here.md) (171 lines) — Type: lexical and ontological precision restoration (E)
 - [E.10.DEV - Recovering What Development or Evolution Means in the Current Claim](29-e-10-dev---recovering-what-development-or-evolution-means-in.md) (230 lines) — Type: Part E precision-restoration pattern
@@ -71,4 +71,4 @@
 - [E.24 - U.Ontic and Ontic Introduction Discipline](67-e-24---u-ontic-and-ontic-introduction-discipline.md) (792 lines) — Type: Part E FPF authoring discipline pattern
 - [E.24.CD - Ontic Candidate Detection and First-Use Disposition](68-e-24-cd---ontic-candidate-detection-and-first-use-dispositio.md) (356 lines) — Type: Part E FPF authoring discipline pattern
 - [E.24.PUB - Episteme Publication: Availability, Form and Carrier](69-e-24-pub---episteme-publication-availability-form-and-carrie.md) (399 lines) — Type: Part E FPF authoring discipline pattern
-- [E.24.UK - U-kind Admission and Ontic Settlement](70-e-24-uk---u-kind-admission-and-ontic-settlement.md) (541 lines) — Type: Part E FPF authoring discipline pattern
+- [E.24.UK - U-kind Admission and Ontic Settlement](70-e-24-uk---u-kind-admission-and-ontic-settlement.md) (546 lines) — Type: Part E FPF authoring discipline pattern

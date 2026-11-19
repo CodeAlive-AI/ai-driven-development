@@ -8,8 +8,8 @@ inputs; their Methods remain with those practices.
 
 ### SYSE.Application:4.1 - 1. Fix the System, use, and result to obtain
 
-Using `SYSE.1`, the engineering team selects the intended greenhouse climate-control System, designated `GreenhouseClimateControl-GH2`,
-as the project system-of-interest and distinguishes it from greenhouse `GH-2` and company `GreenHeat-4`.
+Using `SYSE.1`, the engineering team recovers the greenhouse owner's, `GreenHeat-4`'s and equipment providers' agreements for supplying the climate-control System. In that extended enterprise it selects intended `GreenhouseClimateControl-GH2` as the SoI,
+distinguishing it from greenhouse `GH-2` and the provider company.
 The designation can precede the existence of the intended control System. `SYSE.16` identifies the greenhouse,
 electrical supply, heating, ventilation, misting, shading, sensors, operator station, weather, and manual fallback
 that form the relevant operating surroundings. `SYSE.17` identifies operators, crops, maintainers, the equipment

@@ -25,8 +25,8 @@ Typical moments:
 
 - If the current relation word is a mereology question, use `A.14`.
 - If the current part-whole claim needs constructional grounding, use `C.13`.
-- If the current object is architecture selected structure, use `A.22` and `C.30`.
-- If the current expression is mathematical-lens choice, use `C.29`.
+- For an architectural claim about a selected structure, use `A.22` and `C.30`.
+- To choose a mathematical representation, use `C.29`.
 - If the current question is performed work, use `A.15.1`.
 
 ### B.1.1:1 - Problem Frame

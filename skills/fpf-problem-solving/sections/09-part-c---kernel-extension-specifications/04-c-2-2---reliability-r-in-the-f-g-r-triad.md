@@ -112,7 +112,7 @@ A reused claim may traverse more than one independently governed relation. Befor
 - `G_out = translate(r, G_in)` only when `r` is an applicable A.2.6 scope translation; otherwise `G_out = G_in`.
 - `R_out ≤ R_in` on the named ordered warrant scale for a loss-only transformation, with any numerical penalty justified by that relation's receiving model.
 
-A scope translation may narrow or re-express `G`; it never widens the claim silently. A change in formality is a new episteme or explicit ΔF move, not a transport penalty. A semantic Bridge changes neither kind nor scope by itself. A kind or plane relation supplies no semantic correspondence unless that separate relation also obtains. Evidence reuse changes warrant only through its own evidence-use or reliance claim.
+A scope translation may narrow or re-express `G`; it never widens the claim silently. Assess changes in expression under C.2.3. C.2.1 determines whether a changed expression still expresses the same episteme. A correction to a previous F assessment can leave both the expression and the episteme unchanged. A semantic Bridge changes neither kind nor scope by itself. A kind or plane relation supplies no semantic correspondence unless that separate relation also obtains. Evidence reuse changes warrant only through its own evidence-use or reliance claim.
 
 There is no implicit crossing. If a reuse depends on a changed value and its required relation or operation is absent, unresolved, or outside its applicability, the reuse is non-conformant. Each path records the relations it traverses and routes their declared losses to `R`, while every other coordinate changes only under its own rule.
 
@@ -120,12 +120,12 @@ There is no implicit crossing. If a reuse depends on a changed value and its req
 
 A materials-lab claim says:
 
-> `c_lab:` "Adhesive X retains ≥85% tensile strength on Al6061 for 2 h at 120–150 °C."
+> `c_lab:` "Adhesive X on Al6061 retains at least 85% of its initial tensile strength throughout exposure at 120–150 °C for up to two hours."
 
-Its declared scope is `G_lab := {substrate=Al6061, temp∈[120,150]°C, dwell≤2h, evidenceWindow=1y, rig=Calib-v3}`. A plant engineer proposes a narrower claim for Plant B. Two different moves are required.
+The claim covers Al6061, actual adhesive temperatures from 120 to 150 °C and exposures of up to two hours. Call this scope `G_lab`. The supporting tests used rig `Calib-v3`. The lab accepts results from this rig for one year after testing. A plant engineer can restrict the operating conditions covered by the claim and then judge whether the lab tests support the restricted claim at Plant B.
 
-1. **State the plant claim and its scope.** Here `temp` in `G_lab` is actual adhesive temperature. For this illustration, assume the plant calibration rule supplies a worst-case error bound `|T_actual − T_reported| ≤ 2 °C` throughout the declared use (C.16). Under A.2.6 the engineer retains `G_lab` and adds the condition `T_reported∈[122,148]°C`: under that bound, actual temperature is within `[120,150]°C`. This changes `G`; it is not an F.9 semantic Bridge and is not inferred from the words "lab" and "plant".
-2. **Judge reuse of the lab evidence.** Establish the grounds for relying on the lab evidence for the plant claim, identifying the evidence, claim, calibration edition, validity window and intended use. A declared fit `CL=2` records the relation's fit, not a probability decrement. State the actual reuse limitation. Calculate a numerical `R_eff` only if a receiving model establishes the R quantity and this loss; otherwise keep the separate support and qualified plant conclusion. This judgement does not perform the scope edit.
+1. **State the plant claim and its scope.** At Plant B, assume calibration establishes `|T_actual − T_reported| ≤ 2 °C` throughout the intended operation (C.16). Restrict the claim to Plant B operating on Al6061 for up to two hours with readings in `[122,148]°C`. Every such exposure satisfies the original temperature condition under the stated bound. A reported 149 °C could correspond to an actual 151 °C, so this plant rule excludes that reading. A.2.6 governs this restriction.
+2. **Judge reuse of the lab evidence.** Identify the tests run on `Calib-v3`, establish whether their results are still current for the intended use, and check whether the material, loading and measurement conditions support the claim for the plant exposures. The temperature bound establishes which exposures the rule covers. It supplies no tensile-strength measurement. A declared fit `CL=2` records the relation's fit, not a probability decrement. State the actual reuse limitation. Calculate a numerical `R_eff` only if a receiving model establishes the R quantity and this loss; otherwise keep the separate support and qualified plant conclusion. This judgement does not perform the scope edit.
 
 If lab and plant use distinct local meanings for a material term, F.9 separately tests a Bridge between their exact F.17 cells. Its semantic loss is not the calibration correction or the evidence-reuse result. A further safety narrowing of that reported-temperature interval to `[125,145]°C` is another explicit A.2.6 ΔG− decision.
 
@@ -154,7 +154,7 @@ For a loss-only interpretation on an ordered scale, worsening fit cannot by itse
 
 Use B.3.3 to select the assurance contributions needed by the claim and receiving use. In this KD-CAL account, these labels distinguish contributions when reporting them is useful:
 
-* **TA** (Typing assurance): establish the types and semantic correspondences needed for this transport or composition. For load-bearing meaning or participant differences between descriptions, B.3.3’s Concept-Bridge Assurance supplies the correspondence question.
+* **TA** (Typing assurance): establish the types and semantic correspondences needed for this transport or composition. Use B.3.3’s Concept-Bridge Assurance when the conclusion depends on whether meanings, referents or conditions correspond across descriptions. When the argument also relies on a tool, establish separately whether that tool is qualified for the operation it performed.
 * **VA** (Verification assurance): logical/algorithmic checking, proof, model checking, static guarantees.
 * **LA** (Validation assurance): empirical adequacy under declared conditions, tests, benchmarks, telemetry.
 

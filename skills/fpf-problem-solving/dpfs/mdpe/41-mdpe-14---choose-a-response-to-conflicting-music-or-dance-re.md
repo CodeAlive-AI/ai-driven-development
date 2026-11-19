@@ -91,7 +91,7 @@ a reversible choice. To attribute that difference to a particular change, use
 A dancer, musician, teacher, judge, robot, AI system or collective can be the
 agent for a particular performance or choice. Identify bodies, instruments,
 floors, software, venues and platforms by the relation that matters. Use
-*System* for a physical or operational whole meeting those conditions. A recording
+*System* for a physically embodied acting whole meeting A.1's conditions. A recording
 carrier or playback platform can participate in the arrangement, while
 represented observations and claims are informational content. Use `C.2.1` when
 the particular claim-bearing identity affects what the account can support.

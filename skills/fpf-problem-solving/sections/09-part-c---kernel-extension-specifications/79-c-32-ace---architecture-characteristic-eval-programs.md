@@ -6,7 +6,7 @@
 
 ### C.32.ACE:1 - Problem frame
 
-Use this pattern when an architecture team already has project architecture-characteristic rows and must evaluate the current architecture, compare candidate architectures, monitor evolution, or prepare a selection input.
+Use this pattern when an architecture team has a criterion for an architecture characteristic, either in a project criteria set or in a declared C.25 Q-Bundle slot, and must evaluate the current architecture, compare candidate architectures, monitor evolution, or prepare a selection input.
 
 Primary working reader: an architect or evaluator preparing readings over declared architecture-characteristic criteria without turning those readings into the criteria or the decision.
 
@@ -18,11 +18,11 @@ Typical entry phrases:
 "Two methods, roles, system variants, or AI workflows need fair comparison against the same architecture characteristics."
 ```
 
-**First-minute use slice.** A product-family team has ACS criteria for substitutability, evidence reuse and latency, with safety as a protected constraint, and two candidate architectures. To prepare their comparison, recover the workload, latency quantity and operating conditions from the latency criterion and the available measurement Method. Frame observations of both candidates under the conditions that the comparison needs to hold equal. Inspect the test-package applicability against each candidate's changed interfaces for the evidence-reuse question. A latency reading and an evidence-scope finding answer different criteria and keep their own uncertainty and validity conditions. If only warm-start latency is established, retain that reading and identify the missing cold-start observation before using it for a cold-start claim. The resulting frame specifies the operations and qualified results needed by comparison or the next synthesis pass; the criterion, result and architecture decision remain separate.
+**First-minute use slice.** A product-family team must compare two architectures for substitutability, evidence reuse and latency, while preserving a safety constraint. Recover the workload, latency quantity and operating conditions of the criterion. A warm-start observation covers the warm start it measures. If the design also has an applicable bound of at most 10 ms extra for a cold start and at most 70 ms for a warm start throughout the required workload, the team can use the resulting 80 ms upper bound for a 100 ms limit. If starts may exceed that extra time, obtain evidence for the uncovered conditions. Check the test package against each changed interface for the separate evidence-reuse question. Each result keeps its subject, conditions and grounds.
 
 This pattern frames architecture evaluation over declared criteria rows, Q-Bundle slots, candidates, bearers or selected structures. Use a parity frame when the receiving inference depends on comparable conditions. The optional record below uses a C.32.ACE-local form and introduces no new U-kind. Its program label establishes neither Method or MethodDescription membership, a WorkPlan, dated Work, nor an evaluation result. When measurement validity, comparison policy, a selection result, G.5 result declaration, publication, or architecture decision is current, use the definition and test for that claim.
 
-Ordinary working move: choose the declared criteria rows, bind the claim scope, relevant context slices and reference scheme, adding a plane, evaluation window or input projection when the evaluation or receiving inference depends on it, and establish parity for the variants when comparison depends on it. When a particular evaluation Work occurrence is claimed, recover each evaluator through A.13 and let A.15.1 independently admit the `U.Work` occurrence. Add `evaluationWorkAttributionRefs` only when the program or receiving use represents precise assignment-bound attribution; missing or failed F.6 attribution alone leaves the Work intact while its independent A.13/A.15.1 grounds hold. Any A.6.1 operation application is an additional relation, not a substitute for the Method enacted by the Work. Return the typed results established through their result patterns as feedback for comparison or the next synthesis pass.
+Ordinary working move: select the declared criteria rows or Q-Bundle slots and bind the claim scope, relevant context slices and reference scheme, adding a plane, evaluation window or input projection when the evaluation or receiving inference depends on it, and establish parity for the variants when comparison depends on it. When a particular evaluation Work occurrence is claimed, recover each evaluator through A.13 and let A.15.1 independently admit the `U.Work` occurrence. Add `evaluationWorkAttributionRefs` only when the program or receiving use represents precise assignment-bound attribution; missing or failed F.6 attribution alone leaves the Work intact while its independent A.13/A.15.1 grounds hold. Any A.6.1 operation application is an additional relation, not a substitute for the Method enacted by the Work. Return the typed results established through their result patterns as feedback for comparison or the next synthesis pass.
 
 The first useful result explains how a bounded architecture evaluation will obtain the result needed by the receiving use. An ordinary account can suffice; use `ArchitectureCharacteristicEvalProgram@Project` when a record helps preserve that framing. When a reusable way of evaluating is current, identify that separate `U.Method` under A.3.1; when a claim-bearing episteme describes that exact Method, test the same episteme for `U.MethodDescription` under A.3.2. A planned evaluation belongs to A.15.2, an actual dated evaluation to A.15.1, and each result to its measurement, comparison, evaluation, or assertion pattern. Use the record to frame readings of characteristics through rows, slots, candidates, or structures; it is not any of those neighboring objects.
 
@@ -38,20 +38,20 @@ ArchitectureCharacteristicEvalProgram@Project:
   referencePlane?: when interpretation depends on it
   evaluationWindow?: when the evaluation or receiving use depends on time
   inputProjectionRefs?: when selected projections are used
-  evaluatedCriteriaSetRef:
-  evaluatedCriteriaRowRefs:
-  evaluatedQBundleSlotRefs?:
+  evaluatedCriteriaSetRef?: when evaluating a row from this set
+  evaluatedCriteriaRowRefs?: the evaluated rows from that set
+  evaluatedQBundleSlotRefs?: the evaluated slots from C.25
   evaluatedCandidateRefs?:
   evaluatedBearerOrSelectedStructureRefs:
   evalPurpose: characterizeCurrentArchitecture | compareCandidates | monitorEvolution | prepareSelection | triggerNextSynthesis
   evalQuestion:
   parityFrameRef?: when the receiving inference depends on comparable conditions
   evalScope: singleCriterion | coupledCriteria | qBundleSlice | variantPortfolio | holisticUseSlice
-  evalOperation: measurement | simulation | benchmark | scenarioWalkthrough | test | monitor | expertReview | evidenceAudit
+  evalOperation: measurement | simulation | benchmark | scenarioWalkthrough | test | monitor | expertReview | evidenceAudit | analyticalDerivation
   triggerMode: onePass | batchComparison | continual | onChange | manualOnDemand
   resultForm: reading | band | rank | dominanceRelation | tradeoffFront | qualitativeState | evidenceFinding
   runContext: designTime | laboratory | pipeline | production | workReview | decisionPrep
-  measurementOrObservationMethodRefs:
+  measurementOrObservationMethodRefs?: when the evaluation relies on measurement or observation
   methodDescriptionRefs?:
   evaluationWorkRefs?: FinSet(U.EntityRef constrained to U.Work)
   evaluationWorkAttributionRefs?: FinSet(U.RelationRef constrained to obtaining performedUnderAssignment relations)
@@ -73,11 +73,11 @@ What C.32.ACE buys in practice: eval work is framed as typed evaluation over dec
 
 The result identifies the candidates, bearers or structures, the conditions of evaluation, the intended result form and its receiving use. A comparative inference retains its parity conditions. An actual result is established separately under the rule for its result kind.
 
-Not this pattern when the characteristic rows do not exist yet. Also not this pattern when the current work is measurement validity, composite-quality modeling, explicit comparison, set-returning selection, local choice, selected-set result declaration, actual publication, evidence, assurance, or project architecture decision.
+If neither an applicable C.32.ACS criterion nor a declared C.25 slot supplies what is to be evaluated, establish that criterion first. For measurement validity, composite-quality modeling, explicit comparison, selection, publication, evidence, assurance or an architecture decision, use the pattern governing that result.
 
 Common exits by claim kind:
 
-- `C.32.HCS` and `C.32.ACS` before characteristic rows exist.
+- `C.32.HCS` and `C.32.ACS` when the evaluation still needs a criterion. A declared `C.25` Q-Bundle slot can already supply it.
 - `C.16` for measurement validity, readings, units, uncertainty, or comparability claims.
 - `C.25` for Q-Bundles and composite quality families.
 - `E.13` when an eval result or dashboard starts replacing the declared architecture concern.
@@ -107,16 +107,16 @@ Evolutionary-architecture sources often say "fitness function". Recover the oper
 
 ### C.32.ACE:4 - Solution
 
-Create an architecture-characteristic eval program only after the evaluated criteria rows exist in `C.32.ACS` or a declared C.25 Q-Bundle slot.
+Identify at least one declared criterion for the evaluation. Use a C.32.ACS row, a C.25 Q-Bundle slot, or both when the evaluation needs both.
 
 Work in this order:
 
-1. Reference the evaluated ACS criteria set, evaluated rows, and any Q-Bundle slots.
+1. Cite each evaluated criterion where it is defined. For an ACS row, include the set it belongs to. For a Q-Bundle slot, identify the bundle and slot. Recover the result it asks for, such as a bound for every request or the share of requests within a limit.
 2. State the eval purpose: current characterization, candidate comparison, portfolio-frontier work, post-change impact measurement, monitoring, or trigger for the next synthesis pass.
 3. Name the candidates, bearers, and selected structures being evaluated.
 4. Establish the exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership and effective reference scheme. Retain every declared selector and the plane, time stance or window, input projection, resource budget, applicable units, admissible inputs and missing-data treatment required by the chosen operation and receiving inference. Establish parity when that inference depends on comparable conditions; `parityFrameRef` can retain it but does not replace the underlying facts. An atemporal structural judgement needs no invented temporal window; actual measurement and dated Work retain their own conditions.
 5. Choose eval scope: one criterion, coupled criteria, one Q-Bundle slice, a candidate portfolio, or a holistic use slice.
-6. Choose eval operations. Use measurement, simulation, benchmark, scenario walkthrough, monitor, review, or evidence audit according to the claim. Use `test` only when the intended operation checks an expectation or hard constraint. When a particular evaluation Work occurrence is claimed, recover each evaluator's A.13 core and let A.15.1 independently admit the occurrence from its history, Method followed, extent and containing-System relation. Add `evaluationWorkAttributionRefs` only when the record or receiving use represents precise assignment-bound attribution. Add an operation-application relation only when that claim is needed and its predicate obtains. Establish the typed result separately; the program record does not run.
+6. Choose eval operations. An evaluation can derive a consequence from qualified premises, measure performance or examine an existing result for applicability. Choose measurement, simulation, benchmark, walkthrough, monitoring, review or evidence audit according to what remains open. Name the derivation and its premises when relying on a calculated bound. An existing result can settle the criterion directly. Use `test` only when the intended operation checks an expectation or hard constraint. When a particular evaluation Work occurrence is claimed, recover each evaluator's A.13 core and let A.15.1 independently admit the occurrence from its history, Method followed, extent and containing-System relation. Add `evaluationWorkAttributionRefs` only when the record or receiving use represents precise assignment-bound attribution. Add an operation-application relation only when that claim is needed and its predicate obtains. Establish the typed result separately; the program record does not run.
 7. Declare the result form. Examples include a reading, band, rank, dominance relation, trade-off front, qualitative state, or evidence finding; use the definition and test for the result kind.
 8. Examine material proxy risk before the eval result drives work, and protect the characteristics or constraints it could compromise. If no material risk is found, retain that basis. Optimize only the chosen indicators; keep binding constraints and other necessary safeguards visible.
 9. State the receiving use: `C.32` synthesis input, `C.32.MLAO` residual input, `E.23` improvement feedback, `A.19.CPM` comparison input, `A.19.SelectorMechanism` selection input, `C.11` choice input, input for a selected-set result declared under `G.5`, or architecture-decision input for `C.32.PAD`. For publication input, distinguish `E.17` source-backed face and source return from the `E.24.PUB` publication occurrence and audience availability.
@@ -128,11 +128,13 @@ Work in this order:
 
 ### C.32.ACE:5 - Worked slices
 
-**Latency candidate.** A service candidate promises latency under 100 ms and an eval reads 240 ms. If the 100 ms band is a hard constraint, the candidate is inadmissible for this cycle. If the project is exploring a trade-off front, the candidate misses the latency target while supplying useful evidence about resource placement, interface burden, or control separation. Treat it as an error only when the project used that expectation to plan work and unplanned rework follows.
+**Latency candidate.** For a promise that every applicable request finishes in under 100 ms, one verified 240 ms request in the required operating conditions violates the promise. A computed 240 ms case in the design model defeats that model’s guarantee if the case is admitted. A claim about the installation needs grounds connecting the case and the response to that installation. For a requirement that at least 95 percent of this period’s requests finish in under 100 ms, a complete period of 99 requests at 50 ms and one at 240 ms passes. The slow request by itself leaves the share open. Keep the operating requirement when exploring alternatives. A candidate that fails it can still help explain the resource or interface trade-off. A different requirement needs a decision by whoever can change the commitment.
 
 **BIM digital twin.** A built-asset team compares architecture candidates that combine placement, schedule, use-phase, maintenance, and cost structures. ACE does not treat the number of dimensions as the evaluation. The practitioner defines a parity frame and evals the ACS rows declared for the project, such as access, source-return cost, observability, and maintenance reach, then records results with the parity-frame and result-form fields needed by `A.19.CPM`.
 
 **Method-family architecture.** A review-Method family has ACS rows for evidence reuse and change reach. If source wording also says “role substitutability,” use `E.10.ROLE` and `C.32.ACS` to bind the exact recovered subject and predicate—such as substitutability among local system-role kinds under A.2.7, not among holders or assignments—before ACE evaluates it. A separate C.25 bundle covers teachability. ACE defines a batch evaluation over three Method variants. One variant loses on teachability but reveals a reusable evidence relation; C.32 may use it as a stepping stone.
+
+If the comparison asks whether a learner can design a review, determine which criteria, alternatives and checks the teaching material already supplied. A correct choice among those alternatives can demonstrate their use. A design the learner developed and justified, with its available help recorded, provides evidence for that part of the design claim. The three Method variants in the evaluation alone establish no learning effect.
 
 **AI-agent workflow.** A model-supported workflow has candidates with different function graphs and tool boundaries. ACE evaluates latency, evidence refresh, policy controllability, and rollback under the same task set and evidence window. A benchmark score is not the architecture decision; it supplies one eval reading inside the parity frame.
 

@@ -40,7 +40,7 @@ Construct the account around the question, then challenge the relations on which
 
 State what needs explaining or changing. Name the outcome and the cases it concerns, the relevant time, and any proposed action or comparison. “Why did this queue start?”, “Why does it remain?” and “What will shorten it now?” can require different mechanisms.
 
-Distinguish an observed comparison from an intervention query. Observing X=x supplies information about the mechanisms already operating; imposing X=x replaces a mechanism. When the question concerns the same past case under another action, preserve its factual observations and the underlying conditions they constrain. C.28.MR develops the corresponding model calculation; C.28 determines what supports that use.
+Distinguish an observed comparison from an intervention query. Observing X=x supplies information about the mechanisms already operating. Imposing X=x replaces a mechanism. For a question about a past case under another action, use factual observations to constrain the underlying conditions of that case. In the alternative, recompute the quantities that depend on the changed action. An outcome observed in the factual case is evidence about that case and may take a different value under the alternative. C.28.MR develops the calculation and C.28 determines what supports its use.
 
 Keep the question small enough for a useful contrast. If two retained accounts permit the same sufficient next action under its own grounds, C.11.DUA can settle whether distinguishing them is worth the effort.
 
@@ -99,7 +99,7 @@ Two graphs may entail the same observed independences. Two mechanisms may produc
 
 #### C.28.CM:4.6 - Challenge the consequence with available evidence
 
-Compare the consequence with an observation, contrasting case, subject argument or feasible intervention that bears on it. First check that the observation concerns the modeled variable, cases and time. A contradiction can arise from the mechanism, measurement, implementation of a proposed action, or a changed operating condition.
+Compare the consequence with a relevant observation, contrasting case, or argument about the modeled process. An intervention that could distinguish two explanations gives the team a test it can run. To use that test as empirical evidence, obtain its result or use a suitable result already available. First check that the observation concerns the modeled variable, cases and time. A contradiction can arise from the mechanism, measurement, implementation of a proposed action, or a changed operating condition.
 
 Distinguish a contradicted implication, an untested implication and compatibility with the inspected material. A graph with no relevant testable implication cannot acquire support merely from an absence of contradiction. Conversely, failure to reject an implied independence does not establish the graph. Deterministic constraints, measurement error, missing cases and sampling uncertainty can all change the interpretation.
 
@@ -131,7 +131,9 @@ Let S=1 mean a report entered the incident sample, either because R=1 or because
 
 The first return is specific: determine which joining inputs were actually missing or wrong, then distinguish the two modeled failure mechanisms. If all retained accounts support a cheap temporary manual check under the decision's own conditions, using it does not establish which account caused the incident.
 
-**Onset, persistence and amplification.** Suppose a queue began during a specialist's absence. After their return, ten new items and capacity for ten items arrive each day. Under the simplified balance B(t+1)=max(0, B(t)+A(t)+R(t)−C(t)), with backlog B(0)=12, A=10, R=0 and C=10, the backlog remains 12. Two daily rework items, R=2, increase it by two per day. The absence explains the initial loss of service; the present flow balance explains persistence; rework explains growth under these premises. Restoring attendance alone need not clear the backlog. A different arrival pattern, capacity or feedback from delay to rework reopens the corresponding part of the model.
+**Onset, persistence and amplification.** A queue first appeared while a specialist was absent. This dates its onset. To decide whether the absence produced the queue, compare the service those arrivals actually received by the time the queue formed with the service they would have received by then under the dispatch rule with the specialist present. If the rule holds requests for a batch, they may have waited even with the specialist on duty. Enough capacity over the whole day could still leave work waiting when several requests arrive together.
+
+After the specialist returns, suppose the backlog is 12 comparable items. Ten items arrive each day. While enough eligible work is waiting, the service uses its capacity of ten completions per day. Under `B(t+1)=max(0,B(t)+A(t)+R(t)−C(t))`, with arrivals A=10, rework R=0 and usable capacity C=10, the backlog stays at 12. Two extra items of rework each day make it grow by two per day under the same conditions. Preventing that rework would stop the growth in this model. To reduce the total backlog to zero, cumulative completions must also cover the initial 12 on top of arrivals and rework. These conclusions about the period after the return can guide action even if the cause of onset is still open.
 
 #### C.28.CM:5.2 - Construct the measurement and device mechanisms separately
 

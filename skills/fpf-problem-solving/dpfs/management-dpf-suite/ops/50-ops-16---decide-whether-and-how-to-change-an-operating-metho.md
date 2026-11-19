@@ -135,7 +135,7 @@ Increase assurance effort when its attainable contribution to a consequential ch
 
 #### OPS.16:4.8 - Compare alternatives under authority and protected conditions
 
-Compare feasible options for continuing, revising, branching or stopping. Identify any remaining uncertainty that affects the comparison. Use the same operating use, interval, result definition, and protected conditions. Carry uncertainty as an explicit interval, scenario, or missing claim. Preserve alternatives that remain non-dominated for materially different uses or conditions.
+Compare feasible options for continuing, revising, branching or stopping under the same operating use, interval, result definition and protected conditions. Carry uncertainty as an interval, scenario or missing claim. When different operating uses matter, compare the options within each use and identify which options remain non-dominated there. Keep an unresolved comparison visible if the missing information could change which variant is retained.
 
 Identify the Agent authorized to make the local operating decision and the predicate, scope, and basis of that authority. Clinical, safety, release, financial, employment, security, and other specialist decisions remain with their owners. Expertise, sponsorship, assignment, access, and a tool recommendation do not transfer authority.
 
@@ -242,7 +242,7 @@ The return preserves the admitted Method and its exact description while narrowi
 | “The dashboard improved after the change.” | Recover the observation population, covarying conditions, validity window, and decision that the value can support. |
 | “The new tool created a new Method.” | Test whether reusable inputs, operations, applicability, or result semantics changed; otherwise record the tool or description change directly. |
 | “The trial must continue because learning is valuable.” | Stop when protection, authority, evidence validity, or a worthwhile contribution to the decision or its grounds is unavailable. |
-| “One standard branch should replace every local variant.” | Retain non-dominated variants for materially different uses and conditions. |
+| “One standard branch should replace every local variant.” | For each material operating use, compare the variants that can serve it. Give the grounds for retaining each branch or identify the unresolved comparison. |
 | “No adverse event occurred, so reliability is established.” | State the exposure and observation window; keep broader reliability unresolved. |
 
 ### OPS.16:9 - Consequences

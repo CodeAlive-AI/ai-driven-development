@@ -53,7 +53,7 @@ After using C.34, another practitioner can recover the claimed correspondence, p
 
 What C.34 buys in practice: the practitioner can say "same enough for this use" without implying stronger equivalence. The pattern makes sameness conditional on preserved relation, declared loss, and receiving use.
 
-Ordinary working move: put the source and target structures side by side, circle the relation or constraint that must survive, name any relation that does not survive, and choose a warranted mapping that supports the next use without seeking a stronger result unless needed.
+Name the conclusion you want to carry from one model to the other. Identify what makes it true in the first. Look for that relation, or a rule from which it follows, in the second.
 
 For a current claim limited to mathematical-lens use, generic bridge translation, measurement, structural view adequacy, architecture-description correspondence, candidate synthesis, decision, evidence, assurance, gate, release, or work authorization, use the pattern that defines or tests it. Use C.34 only for the architecture-specific preservation claim.
 
@@ -77,7 +77,11 @@ C.34 makes the preservation claim explicit before the result is used.
 
 ### C.34:4 - Solution
 
-Establish what must survive for the next architecture action and what the correspondence preserves. State any material loss or uncertainty. Use the optional note when it helps retain or share that account.
+State the decision that will use the correspondence. Identify the entities being matched and the relation on which the decision depends. A conclusion about the source carries over in the direction for which the mapping preserves the facts needed to reach it. To infer absence in the target from absence in the source, also show why any relevant target occurrence would have a source counterpart. Extra target connections can change the answer.
+
+For a grouping, ask how membership is determined. If both models define membership by the same rule and the correspondence preserves everything that rule uses, derive the target grouping. If membership is assigned independently, inspect the assignments or an applicable allocation rule and the facts it uses. For an assignment whose preservation is in doubt, keep the matched entities and links fixed. Could two different assignments fit them? When this changes who may act, the correspondence alone leaves that decision open. Correspondence between two disciplinary models can matter even when both are at L2. A claim of model refinement has its own test in `B.5.MR:4.3`.
+
+When reviewing a comparison someone produced, distinguish the correspondence supplied in the assignment from the choices the person or AI agent made. Applying a supplied match can establish that the comparison gave the right result. To credit someone with constructing a disciplinary model of correspondence, recover how they selected the entities, interpreted the links and justified the matching rule for further comparisons. An earlier decision record can show those choices. A new task can leave them open. Use `C.39.QR:4.3` when the attribution changes what you entrust to the agent.
 
 Work in this order:
 
@@ -106,9 +110,9 @@ The C.34 result says only whether the target is same enough for the declared arc
 
 C.34 is the pattern for a declared architecture preservation claim. It is used when a practitioner says that one description, view, model, generated output, or realized observation is same enough as another for a specific architecture use. The account identifies a sufficient warranted mapping, preserved structure, direction, scope and supported use, together with any material loss or uncertainty and the rule needed by further reliance.
 
-View and description case. Two architecture diagrams are edge-isomorphic. In one diagram an edge means data dependency; in the other it means control authority. C.34 records mapping mode `nearSameness`, preserved node partition, lost relation-type semantics, and non-admissible use "control separation decision."
+**What a pair of diagrams preserves.** Two diagrams show all three stations A, B and C, with links A–B and B–C. In one, a link records data dependency. In the other, it records control authority. For the question “which stations are joined by some path when link direction and meaning are ignored?”, both give the same answer. Matching all the stations and links preserves connected components under that definition.
 
-Recover the relation semantics through `C.30.ASV`, `C.30.TFS-REL` or `C.30.LCA` before relying on the mapping for control separation. Its supported node-partition use remains available.
+A planner now needs the crew responsible for each station. One crew could have A and B and another C, or one crew could have all three, with exactly the links shown. Connectivity leaves both crew assignments possible. The current allocation record can identify the responsible crew, as can a rule assigning stations by connected component together with the current assignment of each component to a crew. To dispatch a crew, use the duty rule for this shift. If it sends the responsible crew, the assignment settles whom to send. If it provides cover for an unavailable crew, also check who is on duty. If the decision concerns who may authorize a control action, inspect the control relation with its direction and meaning intact. Use `C.30.ASV` or `C.30.LCA` when that relation needs recovery.
 
 Source model and generated graph case. A code-agent dependency graph matches module names in the model used as the source, but marks several edges inferred and several regions unexplored. C.34 records the observation class and directionality, the supported dependency correspondence, and the dynamic wiring whose preservation is still unestablished.
 
@@ -148,7 +152,7 @@ The narrative order is not exact equivalence and does not license implementation
 | --- | --- |
 | `CC-C34-1` | Source and target structures are named before the mapping claim. |
 | `CC-C34-2` | The selected mapping is warranted and sufficient for the declared use; no stronger result is required merely to complete the assessment. |
-| `CC-C34-3` | Preserved relations or constraints and any material loss or uncertainty are stated; absence of a preservation result is distinguished from an observed loss. |
+| `CC-C34-3` | The account identifies the facts that support the intended inference in the target and the direction in which they carry over. Where independently assigned relations could change the decision, the account establishes them or identifies the decision that remains open. |
 | `CC-C34-4` | Relation-type semantics, observation class, directionality, and scope are present when they affect use. |
 | `CC-C34-5` | Each current mathematical-lens, view, description, Bridge, conformance, candidate-synthesis, measurement, eval, decision, evidence, assurance, gate, release, or work-authorization claim uses the pattern that defines or tests it. |
 | `CC-C34-6` | The supported use and its grounds are clear, with any material limitation, recovery condition and rule required by the next reliance. |
@@ -157,7 +161,7 @@ The narrative order is not exact equivalence and does not license implementation
 
 | Anti-pattern | Why it fails | Repair move |
 | --- | --- | --- |
-| Edge-isomorphism overread | Isomorphic graphs can preserve shape while changing edge meaning, relation observation class, or use. | Record relation-type semantics, preserved relation, lost relation, and non-admissible use. |
+| Edge-isomorphism overread | The same pattern of links can coexist with different responsibilities or directions of control. | Derive properties defined by the preserved links. For a claim about an assigned relation, match the assignments or establish the rule and facts that determine them. |
 | Semantic-loss hiding | A projection or coarsening can look clean because it drops the structure that the next decision needs. | Name lost structure and preservation-loss return condition before comparison, decision repair, or candidate admission. |
 | Exact-equivalence overclaim | Exact equivalence is stronger than most architecture uses need and is often false. | Use a warranted correspondence, projection, abstraction, coarsening, simulation relation or near-sameness when sufficient. Exact equivalence may be retained when independently justified. |
 | Generated graph proof overclaim | A generated graph can match labels or topology while hiding dynamic wiring, confidence, or unexplored regions. | Use C.34 only for the preservation claim; handle generated-carrier admission under `C.35`, and apply the rules that define evidence, assurance, gate, or release claims when those claims are current. |
@@ -194,7 +198,7 @@ The source families explain the safeguards. Structural-equivalence research show
 | --- | --- | --- | --- |
 | Yang et al., `Structural Equivalence in Subgraph Matching`, arXiv:2301.03161 | Adapt structural-equivalence and symmetry discipline. | Supports a warranted mapping mode and the distinction between shape and the relations needed for use. | Subgraph structural equivalence does not define holon architecture equivalence outside declared structures and use. Reopen when the source graph, target graph, or use changes. |
 | Fong and Spivak, `Seven Sketches in Compositionality`, arXiv:1803.05316 | Adapt applied category-theory preservation language; use `C.29` for an unresolved mathematical-representation choice, transfer, or reliance question. | Keeps morphism, functor, sketch, and composition vocabulary tied to preserved structure, lost structure, mapping mode, and architecture use. | Older source is lineage and still useful as applied compositional practice, but it does not become the default FPF architecture ontology. |
-| Multi-view architecture and MBSE query and view practice | Adopt the ordinary need for view correspondence, projection, query, and coarsening. | Supports view and description correspondence under `C.30.AD` and `C.30.ASV`. | View output or query output is not architecture and not realized structure. Reopen when viewpoint, query rule, model edition, or described structure changes. |
+| Multi-view architecture, MBSE and [W3C PROV-DM, responsibility](https://www.w3.org/TR/prov-dm/#term-delegation) | Distinguish views of structure and the meanings of particular relations, including delegation. | Helps a reviewer identify the relation whose preservation would justify the target inference. | A correspondence over untyped links leaves responsibility open unless a rule or an assignment determines it. Reopen when the relevant mapping, relation or declared use changes. |
 | Sapunov, ToCS, and code-agent architecture-map practice | Adapt partial-observation preservation discipline. | Makes relation observation class, inferred edges, unexplored regions, confidence and active-passive gap conditions on the warranted preservation claim. Incomplete observation can leave preservation unknown without demonstrating structural loss. | A code-agent map, JSON probe, dependency F1, invariant F1, or active-passive gap does not prove architecture equivalence, safe change, assurance, gate passage, or release readiness. |
 | GonzoML neural-network architecture intake | Adapt neural architecture operation language. | Distinguishes dataflow, routing, memory and cache placement, resource boundaries, block substitution and affected characteristics in neural structure substitution. | Use clear source-local meanings directly. Recover an unresolved selected structure or preservation relation when it changes the architecture claim; benchmark gains alone do not establish that preservation. |
 

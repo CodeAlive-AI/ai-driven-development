@@ -190,6 +190,8 @@ For example, two otherwise parallel branches each require ten minutes from the s
 
 Retain a timing summary only when the receiving answer follows from what it keeps. Total free time can conceal incompatible windows; an average rate can conceal a late individual response. Derive the response time or useful bound from the retained dependencies, availability and occupation conditions. If two allowed arrangements share the proposed summary but give different answers, retain the distinguishing condition, derive a bound that covers both, or restrict the claim.
 
+Identify the end event the recipient relies on. Completion of an intervention and receipt of its confirmation may have different deadlines. If the receiving decision needs confirmation, include how the observer can establish completion and when the report reaches the person who must act. If only the physical completion has a deadline, later evidence can establish that the intervention met it.
+
 Failure to find such a pair does not establish sufficiency. The timing-summary test specializes the information question in :4.3 to the time and capacity needed by the control decision. An average duration does not establish a worst-case deadline.
 
 Choose an observation or decision rhythm from how rapidly a consequential difference can develop and how long a useful response takes. Periodic checking, event-triggered messages and prediction of an approaching limit are alternatives. An event trigger needs an obtainable detector and a response route; otherwise “notify on exception” supplies no timing result.
@@ -311,7 +313,7 @@ An exhibition panel must be installed by 16:00. Under a constructed operating ar
 | Decide and send the approved file | 10 minutes, including waiting; the editor is available and the change is within the editor's authority |
 | Print and install | 25 minutes; material, access and the allocated performer are available |
 
-These contributions are serial for this arrangement. A change occurring by 15:00 can therefore be handled by 16:00. The latest sending time is 15:20; delivery is by 15:25, approval reaches the performer by 15:35, and installation finishes by 16:00. A later change can still succeed in a favorable case, but the hour-long bound no longer establishes the promise.
+These contributions are serial. For a change at 15:00, the full bounds put detection and dispatch to the editor by 15:20, receipt by 15:25, approval and dispatch for installation by 15:35, and physical installation by 16:00. A later change can still succeed when some operations finish earlier. The hour-long bound alone leaves that case open.
 
 The useful state includes the current content, its approval status, the required materials and the availability of the people and means. “The file was sent” does not distinguish an approved file from an unapproved proposal, or a delivered message from one awaiting a decision.
 
@@ -323,7 +325,7 @@ Compare three changes to the arrangement.
 
 A forecast of a likely change can allow reversible preparation before approval. Establish which materials or capacity may be reserved, what another job loses, and how the reservation is released if the forecast changes. Printing an unapproved final panel is a different action with different consequences.
 
-The control mechanism is now explicit: a dated observation changes a decision made within authority, that decision supplies a usable input to an available performer, and the resulting installation or failure returns to the responsible participants. One person may perform several contributions, provided their demands still fit. No three-level management hierarchy follows from the four duration bounds.
+The installer checks the panel in place and reports completion or a problem to the coordinator. The table bounds physical installation. If the venue also needs confirmation by 16:00, include time for this check and report or establish that the approved release already covers them. A missing report leaves the installation status open. One person may perform several contributions when the demands still fit. Their number does not determine a management hierarchy.
 
 The timing implication is mathematical under its premises. The premises about people, authority, resources and duration need organizational support and observation; they are not supplied by the equation. In actual use, distinguish a committed service bound, an empirical estimate and a planning assumption.
 

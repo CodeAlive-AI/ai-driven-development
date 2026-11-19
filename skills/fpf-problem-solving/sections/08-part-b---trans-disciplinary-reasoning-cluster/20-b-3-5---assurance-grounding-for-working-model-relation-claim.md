@@ -48,12 +48,14 @@ Working-Model relations such as **ComponentOf** and an ordinary belongs-to sente
 
 ### B.3.5:4 - Solution
 
+The Working-Model and Assurance layers name E.14's presentation order: the claim first, its needed support accessible underneath. When two models are being compared for abstraction or refinement, use B.5.MR's comparison of their admitted answers.
+
 CT2R-LOG distinguishes an optional link between relation designations from the grounding link and validation flag required for each covered assertion:
 
 1. **Alias link (lexical).**
    **`tv:AliasOf`** may link a local relation designation to the accepted Tech designation of the same relation in that use. The definition in :5 fixes both endpoints and the conditions for using this alternative label. Cite the relation pattern to recover the relation’s meaning.
 
-2. **Grounding link (assurance level).**
+2. **Grounding link (assurance).**
    Each relation assertion covered by this elected profile carries `tv:groundedBy` according to its relation kind:
 
    * **ComponentOf, PortionOf, or AspectOf** requires one current C.2.1 construction-trace episteme in the applicable `sum` or `slice` form and `validationMode=axiomatic`. PortionOf uses the measured-portion profile in `C.13:4.1.1`; AspectOf uses the facet profile. This requirement follows the asserted relation, including measured text portions, and does not make those two profiles interchangeable.
@@ -173,7 +175,7 @@ A later proof that omits the lemma requires a content-part judgement; the earlie
 
 When you add or import a relation edge:
 
-1. **Pick a Working-Model relation sentence** such as “Impeller ComponentOf Pump” or “Vehicle 12 belongs to Fleet North under its registration rule”; avoid raw `ut:PartOf` unless you are drafting meta-level axioms. If no publication choice or requirement elects CT2R-LOG, publish that claim and stop.
+1. **Pick a Working-Model relation sentence** such as “Impeller ComponentOf Pump” or “Vehicle 12 belongs to Fleet North under its registration rule”; avoid raw `ut:PartOf` unless you are drafting general mereological axioms. If no publication choice or requirement elects CT2R-LOG, publish that claim and stop.
 
 2. **When CT2R-LOG is elected, attach `tv:groundedBy`**:
 
@@ -253,7 +255,7 @@ For every relation instance covered by an elected B.3.5 profile, the author **MU
 Execution order, parallelism or interval inclusion alone **SHALL NOT** establish a part-whole relation. State Method composition under B.1.5 and temporal facts under C.27; use B.1.4 when those recovered relations must be aggregated. Independently established A.15.1 Work-part relations and A.14 proper-phase relations for unchanged non-Work carriers remain admissible under their own rules.
 
 **S‑6 (Unidirectional dependence).**
-CT2R‑LOG may *consume* Compose‑CAL and KD‑CAL conceptually; it **SHALL NOT** redefine them. Meaning flows **downward only** (Kernel → Extension → Context → Instance).
+CT2R‑LOG may *consume* Compose‑CAL and KD‑CAL conceptually; it **SHALL NOT** redefine them. Present the readable Working-Model claim before its needed assurance account. Assurance notation and record structure **SHALL NOT** dictate the public relation vocabulary. If support defeats or narrows the claim, revise it under its defining pattern and make the change visible, as E.14-P.2 requires.
 
 **S‑7 (Register discipline).**
 When naming relations in an alias declaration, authors **SHOULD** use the accepted Tech designation and, where available and permitted by E.10, its Plain twin. Obey the minimal-generality and rewrite rules (LEX-BUNDLE). Keep the declared local meaning and use recoverable when comparing labels across contexts.
@@ -311,7 +313,7 @@ Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑
 | **CC‑CT2R‑5a (Set trace reports).** | The elected set trace names the collection, the entity said to belong, the already established occurrence, the collection's own belongs-to rule, and the identity conditions. The set trace supplies no structural-composition reliability. | Keeps optional assurance from becoming ontology. |
 | **CC‑CT2R‑6 (Mapping fit).** | Where a claim relies on a mapping or alignment, the author **SHALL** state its applicability, preserved/lost distinctions and consequence for this claim. Any quantitative reliability adjustment needs a justified receiving model, compatible Scale and calculation; a CL label alone supplies none. | Keep integration limits inspectable without invented reliability arithmetic. |
 | **CC‑CT2R‑7 (Notational independence).**        | Core meaning **MUST NOT** hinge on any specific diagram or syntax; illustrative renderings, if present, are labelled *informative*.                                                                                                           | Ensure longevity and cross‑discipline portability.                        |
-| **CC‑CT2R‑8 (Layer direction).**                | Grounding flows **downwards** from Working‑Model to Assurance layers (Mapping/Logical/Constructive). Authors **SHALL** avoid back‑defining the canonical relation by its Mapping, Logical, Constructive, or Empirical grounding.                                                  | Preserve unidirectional dependence of layers.                             |
+| **CC‑CT2R‑8 (Layer direction).**                | Present the readable Working-Model claim before its needed Mapping, Logical, Constructive or Empirical support. Authors **SHALL NOT** let assurance notation or record structure dictate the public vocabulary. If support defeats or narrows the claim, revise the claim under its defining pattern and expose the change.                                                  | Preserve unidirectional dependence of layers.                             |
 | **CC‑CT2R‑9 (Claim and scope).** | Authors **SHALL** state the assurance claim and its applicable scope. Design and run claims retain their distinct subjects, evidence and conditions. | Prevent unsupported transfer between design and performed Work while retaining relevant evidence contributions. |
 
 ### B.3.5:12 - Common Anti-Patterns and How to Avoid Them
@@ -341,7 +343,7 @@ Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑
 ### B.3.5:14 - Rationale (informative)
 
 **14.1 Why canonical‑first?**
-CT2R-LOG treats the **human-readable, task-appropriate relation** (e.g., `ut:ComponentOf`) as the **canonical publication form** because that is what engineers and managers use to reason, decide, and communicate. The formal layers **ground** that form; they do not replace it. Authors state the relation readers need, then point to the support required by the selected assurance use.
+CT2R-LOG puts a readable, task-appropriate relation claim first in the published account because engineers and managers use it to reason, decide and communicate. The relation's defining pattern supplies its meaning. The selected assurance account makes the grounds needed for that use inspectable.
 
 **14.2 Why distinguish the two `tv:` links?**
 `tv:AliasOf` connects designations so a reader can recover which relation an expression names. `tv:groundedBy` connects a covered assertion to the account supporting that assertion. An agreed glossary meaning can remain stable while a component is removed and the earlier construction account ceases to support the current claim. Conversely, a changed glossary can require a new interpretation while the physical assembly stays unchanged. Keeping these subjects distinct tells the author what to re-examine. Both links can be expressed in prose or another suitable notation.

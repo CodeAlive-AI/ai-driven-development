@@ -41,8 +41,8 @@ A local alias such as `EncodingBasis` shall identify the factors and readings it
 #### C.2.7:4.1 - Minimal factor readings
 | Factor | Question it answers | Typical values |
 |---|---|---|
-| `LocalityDistribution` | Is the representation concentrated in local units or distributed across many units? | local / mixed / distributed |
-| `Sparsity` | How concentrated are activation, representation use, or descriptive marks? | sparse / mixed / dense |
+| `LocalityDistribution` | Which units distinguish the represented value on the declared encoding basis? Does one unit suffice, or is a combination needed? | local / mixed / distributed |
+| `Sparsity` | What share of the declared units is active or used for the value being represented? | sparse / mixed / dense |
 | `Symbolicity` | How explicit are the symbolic structures and tokens? | symbolic / mixed / subsymbolic |
 
 Before comparing factors, identify the representation and the units being described. A model-side code and its written summary need not have the same factors.

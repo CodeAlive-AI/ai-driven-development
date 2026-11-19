@@ -88,7 +88,7 @@ Use a validated enclosure method when the conclusion depends on retaining every 
 
 For a point-value question, test whether all compatible cases agree on that value. For a threshold or other condition, test whether it holds throughout the compatible set or a sufficient outer bound. Establish that the premises admit a case before using such a bound as the interpretation of a measurement; substitution of an available feasible case may suffice.
 
-If the question remains unresolved, construct two compatible cases with different answers. Check both against all readings, shared parameters and domain conditions. These witnesses identify what an additional relation or observation would have to distinguish.
+To establish that the readings leave two answers possible, find two cases that satisfy all the readings, shared parameters and domain conditions and give different answers. If the calculation has only produced a bound spanning both answers, try to find such cases or sharpen the bound. Report which possibility is still untested when neither calculation succeeds.
 
 Separate a proved empty compatible set from a search that has not found a case. An empty set shows that the combined readings, model and conditions are inconsistent. Locate a consequential conflict; the cause may be a recording error, a changed subject, an unsuitable error bound or an inadequate measurement relation. A failed search instead limits the computational result.
 
@@ -98,7 +98,7 @@ A point result under ideal data can broaden when input uncertainty is restored. 
 
 Return the value, range or comparison with the conditions that support it. Stop when it is sufficient for the intended use. A lower bound can be more useful than an unnecessarily precise estimate.
 
-For an unresolved decision, use the differing cases to choose a potentially useful next contribution: an available second reading, a different operating range, a better bound, a changed instrument or a narrower conclusion. Examine what that contribution could distinguish before obtaining it. In :5.3, another counter using a different modulus distinguishes alternatives that repeating the same remainder preserves.
+When two compatible cases give different answers, choose a further observation or relation by what it could distinguish. In :5.3 another counter with a different modulus distinguishes possibilities that repeating the same remainder preserves. When the remaining obstacle is an unfinished calculation, first see whether solving the existing relations or tightening a bound will settle the decision.
 
 Use C.11.DUA when the value and effort of reducing the ambiguity need comparison. It can be reasonable to act with the remaining uncertainty or leave the question unresolved. B.5.MPC.R coordinates a needed revision across the physical, mathematical and computational contributions.
 

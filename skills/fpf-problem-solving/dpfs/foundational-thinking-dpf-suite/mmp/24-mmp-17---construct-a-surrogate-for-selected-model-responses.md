@@ -139,11 +139,11 @@ Reopen the construction when the input region, source assumptions or receiving o
 
 #### MMP.17:5.1 - Refine an interpolation only until it settles the comparison
 
-A repeated calculation needs the response $r(x)$ of a costly reference model for $0\leq x\leq1$. The present question is whether $r(0.4)\leq0.3$. Available analysis of the reference model gives $|r''(x)|\leq2$. Its accurate case values are $r(0)=0$ and $r(1)=1$.
+A repeated calculation needs the response $r(x)$ of a costly reference model for $0\leq x\leq1$. The present question is whether $r(0.4)\leq0.3$. Available analysis of the reference model gives $|r''(x)|\leq2$. Take the available reference values as exact. They are $r(0)=0$ and $r(1)=1$.
 
-The first surrogate is the line $\widehat r(x)=x$. For linear interpolation on an interval of width $h$, the curvature bound gives an error at most $2h^2/8$. With $h=1$, the response at $0.4$ is therefore enclosed by $0.4\pm0.25$. This interval crosses $0.3$; the replacement has not answered the question.
+The first surrogate is the line $\widehat r(x)=x$. For linear interpolation on an interval of width $h$, the curvature bound gives an error at most $2h^2/8$. With $h=1$, the response at $0.4$ is therefore enclosed by $0.4\pm0.25$. The enclosure crosses 0.3. Both answers really are possible with just the two endpoint values and this curvature bound. The responses $r(x)=x$ and $r(x)=x^2$ both satisfy those premises and give 0.4 and 0.16, respectively, at the requested input.
 
-Query the reference model at $x=0.5$, obtaining $r(0.5)=0.25$, and use the two half-intervals. In the first half, $\widehat r(x)=0.5x$, so $\widehat r(0.4)=0.2$. The bound is now $2(0.5)^2/8=0.0625$, giving
+For a surrogate that will also be used at other inputs, query the reference model at $x=0.5$, obtaining $r(0.5)=0.25$, and use the two half-intervals. In the first half, $\widehat r(x)=0.5x$, so $\widehat r(0.4)=0.2$. The bound is now $2(0.5)^2/8=0.0625$, giving
 
 $$
 r(0.4)\in[0.1375,\thinspace 0.2625].
@@ -151,7 +151,9 @@ $$
 
 The upper endpoint is below $0.3$. One added case and a specified interpolation rule settle the comparison under the curvature premise. The three values alone would not justify the bound.
 
-Now the receiving limit changes to $0.18$. The same enclosure crosses that limit. For this one query, the practitioner returns to the reference model at $0.4$, which gives $0.16$, and can answer the stricter comparison. If many similar queries are expected, further subdivision may instead be worthwhile.
+Now the limit is $0.18$. The interpolation enclosure crosses it, but the three exact values and the curvature bound give a stronger answer. Put $g(x)=r(x)-x^2$. Since $g''(x)\leq0$, $g$ is concave. Its endpoint values are zero, so $g\geq0$ between them. It is also zero at the midpoint. Any strictly positive value to the left would put the chord from that point to the right endpoint above zero at the midpoint. A strictly positive value to the right gives the same contradiction using the left endpoint. Thus $r(x)=x^2$ throughout, and $r(0.4)=0.16$ meets the tighter limit without a further reference run.
+
+If the supported curvature bound is instead $|r''|\leq5$, the same three exact readings permit both $r(x)=x^2$ and $r(x)=x^2+x(x-0.5)(x-1)$. The second has $r''(x)=6x-1$. At $0.4$ the two responses are $0.16$ and $0.184$. Now a sufficiently accurate reference evaluation at the requested input can distinguish the two threshold outcomes. If the supplied node values themselves have numerical error, carry their error bounds through the comparison before treating them as equalities.
 
 These calculations establish agreement with the reference model under its stated smoothness and case-accuracy conditions. Whether that model's response represents the subject phenomenon remains a separate modeling question.
 

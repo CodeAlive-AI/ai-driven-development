@@ -54,6 +54,10 @@ LOG.Deduce_f(TaskSignature S2) → {Admit | Degrade(mode) | Abstain}
 
 with the following **branch obligations**:
 
+**What the family claim covers.** State which tasks the claim covers and what it promises about the registered members. Evidence that one member works on one task can support that use. A claim that every task has a suitable member allows the member to vary with the task. Promising one fixed member throughout requires evidence for that member throughout. Permitting arbitrary substitution requires the promised performance from each permitted member on each task where it may be used.
+
+Identify the member, task conditions and performance criterion behind each result. Cover the combinations the claim needs through applicable trials, a warranted account of why the result carries over, or both. For a fixed set of tasks, report the observed proportion or the bound the outcomes establish. Eight confirmed successes among ten eligible tasks establish at least 80% for that set even while two outcomes are unknown. To estimate the rate for a future population, identify the population and explain why the available results carry over. For a sample estimate, give the selection method and its uncertainty. Even if every task in a sample succeeded, a guarantee for every future task needs grounds covering those future tasks. If successful members differ by task, an agent can be assigned to choose among them when the information and a supported way to choose will be available in time. It can still be known that a suitable member exists before it can be identified.
+
 **R0 — CG-Spec gate (precondition).** For the exact G.5 registry row and `MethodFamily`, verify the cited `CG-Spec.MinimalEvidence` and EvidenceProfile for every CHR characteristic used by the family's acceptance clauses and flows, under the declared claim scope and selected slices, qualification window, and intended selector use. Failure ⇒ `Abstain` with reasons. Publish the consulted CG-Spec, EvidenceProfile, registry, and policy editions.
 *Rationale:* selector legality requires an explicit CG‑Spec gate. Publish associated **ReferencePlane** notes alongside the consulted ids.
 
@@ -148,6 +152,8 @@ These descriptions qualify report entries; they do not extend the S2 value sets,
 
 When a maturity judgement is established for an admission use, publish or cite its editioned **`MaturityCardDescription`** for the exact evaluated `MethodFamily`, G.5 registry edition, evidence profile, claim scope and selected slices, qualification window, and intended admission use (UTS enum ids; scale kind = ordinal; reference plane declared).
 
+Here L0–L4 name maturity rungs for the evidence about a registered family. For example, *maturity L2 (Replicated)* identifies independent replication under the stated conditions. A *model abstraction level L2* identifies what a disciplinary model specifies (B.5.MR:4.3). A replication can test a claim at any model abstraction level.
+
 Cite an existing card when its judgement remains applicable. If no applicable judgement is available at an early stop, report that state under §4.2.1 without creating a card or assigning a rung.
 
 Do not embed acceptance thresholds here; an admission floor remains a G.4 AcceptanceClause cited by R1.
@@ -166,7 +172,7 @@ Do not embed acceptance thresholds here; an admission floor remains a G.4 Accept
 
 **M2.** Transitions **MUST** be justified by **EvidenceGraph** paths (once G.6 is available) and published at UTS; missing anchors ⇒ no advance.
 
-**M3.** Any maturity floor used for admission—for example, a run-critical selector use requiring at least L2—MUST be authored as a CAL.AcceptanceClause and cited by R1 with its policy edition, claim scope, qualification window, and verdict; SoS-LOG does not embed acceptance thresholds.
+**M3.** A maturity floor used for admission belongs in a G.4 AcceptanceClause. Cite its policy edition, scope, qualification window and verdict. For a floor of “at least L2”, apply the order declared for those rungs under G.8:4.5. A larger numeral alone cannot establish precedence. If the policy requires independent replication, check the evidence for replication or an applicable rule that entails it. Repeated wins by one group on severe benchmarks can support a benchmark claim while leaving independent replication unestablished.
 
 **M4.** Declare the MaturityCard reference plane. If an admission decision relies on a relation to another plane, cite that exact obtaining plane relation, its direction and loss, and the applicable policy edition; any loss assessment or assurance penalty follows R4.
 
@@ -192,7 +198,7 @@ Include obtaining relation and loss-policy ids only when used, and G.6 path ids 
 
 **W3. Strategy composition.** For a selection composition called a strategy, cite its governing G.5 rule. Cite an E/E-LOG policy when the composition uses that policy over a still-live pool.
 
-**W4.** Selector (G.5) **consumes** these rules; results appear in the **Dispatcher Report** with reasons in/out and cited anchors/bridges.
+**W4.** The dispatcher (G.5) consumes the rules and reports each decision with its conditions and grounds. To assign a job, identify an applicable member or an authorized way for the performer to choose one in time. Check the required result, means, authority and execution conditions under A.15. A `probe-only` decision supports the specified probe within its budget and guards.
 
 ### C.23:5 - Archetypal Grounding
 
@@ -226,7 +232,7 @@ The following are constructed branch examples. For each later branch, stipulate 
 - `Constraint‑Programming`: **MaturityCard**=`L2`; the ordinal `service_level≥B` Acceptance predicate is met. Baseline parity is an additional CAL condition, not a missing R0 minimum in this example. Its declared failure behavior permits `Degrade(scope-narrow)` while parity is unresolved, after R0 and eligibility pass for the narrowed use. If that parity basis were required by R0, the result would be `Abstain`.
 - `Heuristic meta‑search`: **MaturityCard**=`L1`. The applicable AcceptanceClause and family failure policy decide between a permitted `Degrade(sandbox)` branch and `Abstain`; L1 alone supplies neither outcome.
 
-*Didactic anchor.* G.5 declares a `Shortlist` of the non-dominated retained candidates, with its comparison basis and unresolved ties; no cross-ordinal weighting is introduced.
+*Using these results.* Hand the dispatcher the admission decision and permitted conditions for each family. A family admitted for a sandbox trial can enter that trial. Before selecting it for ordinary work, establish its eligibility for that use. A shortlist can retain alternatives eligible for the same intended use. To claim that a member is non-dominated, compare performance on cost and service under the stated order and common conditions (C.18:4.4). The admission results above provide no such comparison.
 
 > Dunning, Huchette and Lubin (2017) describe **JuMP** as a modeling language that separates model expression from optimization-solver choice. This supplies a concrete software example of preserving a problem description while considering different solvers. ([SIAM Review][18])
 

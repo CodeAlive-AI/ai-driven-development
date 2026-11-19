@@ -161,9 +161,11 @@ When a phrase makes the bounded unit sound like authoring work or interpretation
 | a pattern body or section | FPF pattern body, pattern section, or `PublicationUnit` of that pattern |
 | a file or rendered medium | carrier, front-end, rendering, or document with named source-basis, evidence-basis, architecture-basis, or review-basis relation or use |
 | a publication form | publication form |
-| a generic publication face | generic publication face, or `U.View` only when the relevant view pattern states that relation |
-| a declared MVPK face | declared MVPK face, and `U.EpistemeView` only under MVPK constraints |
-| a claim-bearing episteme or episteme species named by value | selected `U.Episteme`, episteme-lane `U.View` with explicit episteme tether, or episteme species named by value; when current availability matters, name the exact `EpistemePublicationRelation` occurrence separately |
+| a generic publication face | generic publication face |
+| a declared MVPK face | declared MVPK face |
+| a claim-bearing episteme or episteme species named by value | the identified `U.Episteme` or its independently established kind; when availability matters, identify the `EpistemePublicationRelation` occurrence separately |
+
+Apply E.17.0:4.3–4.5 when claiming that an episteme is a `U.View`: the same episteme must conform to an identified viewpoint edition. Publication-face membership alone supplies no such conformance.
 
 Do not make a permanent technical modifier by joining authoring, interpretation, and unit-boundary concerns.
 That mix hides whether the sentence is about a publication unit, authoring work, reader inspection, or a carried claim.
@@ -207,7 +209,7 @@ If the sentence says a publication "supports", "authorizes", "proves", "permits"
 
 | Word | First split |
 | --- | --- |
-| `view` | `U.View`, `U.EpistemeView`, reader viewpoint, UI view, declared-substrate interpretive view, or review view |
+| `view` | `U.View`, reader viewpoint, UI view, declared-substrate interpretive view, or review view |
 | `face` | generic publication face, declared MVPK face, UI face, or public-facing companion publication |
 | `surface` | Treat as trigger wording, not as an accepted Tech head. Recover one of: publication face, publication form, publication unit, carrier, rendering, UI or front-end face, physical or geometric surface, companion publication, companion or projection material, carrier relation, or another FPF object named by value. |
 
@@ -250,7 +252,7 @@ Failed tests, unavailable facts and known inapplicability retain their governing
 
 Classification, a generic `result relation`, a method-description field, planned filling, a designation that merely type-checks against an A.6.5 `SlotSpec`, or a polarity inference is not closure.
 
-Before opening that branch, test whether the phrase already names an independently identified `U.Episteme`; `U.View` or `U.EpistemeView`; publication form; publication face, including a declared MVPK face; `PublicationUnit`; carrier, front-end, or rendering relation; project-side FPF kind and reference named by value; evidence carrier or evidence relation; document under a named source-basis, evidence-basis, architecture-basis, or review-basis relation or use; review target; `C.11` `ChoiceResult`; measurement-result episteme; evaluation result; diagnostic finding; decision; or another project object whose record kind and defining rule are named by value.
+Before opening that branch, test whether the phrase already names an independently identified `U.Episteme`; `U.View`; publication form; publication face, including a declared MVPK face; `PublicationUnit`; carrier, front-end, or rendering relation; project-side FPF kind and reference named by value; evidence carrier or evidence relation; document under a named source-basis, evidence-basis, architecture-basis, or review-basis relation or use; review target; `C.11` `ChoiceResult`; measurement-result episteme; evaluation result; diagnostic finding; decision; or another project object whose record kind and defining rule are named by value.
 
 Retain ordinary `input`, `output`, `result`, `outcome`, or `deliverable` only while the exact defining relation rule remains recoverable. If no governor closes the selected WMR claim, return the bounded blocker. If the missing item is instead a non-WMR kind, retain an architecture-first candidate disposition under the pattern that defines that candidate. Do not invent either one inside pattern prose or replace it with a universal kind or relation.
 
@@ -302,7 +304,7 @@ A performance claim states what the agent does or can do. A claim that it uses a
 
 When the wording concerns representation, publication or reliance, classify the occurrence as applicable:
 - episteme or episteme publication;
-- `U.View`, `U.EpistemeView`;
+- `U.View`;
 - publication form;
 - generic publication face;
 - declared MVPK face;
@@ -399,7 +401,7 @@ When a source or review text says `sign`, `signifier`, `signified`, `concept`, `
 Possible recoveries include:
 - `U.Episteme` or episteme species named by value;
 - selected `EntityOfConcern`, grounding, reference-plane relation;
-- `U.View`, `U.EpistemeView`;
+- `U.View`;
 - publication form, generic publication face, declared MVPK face, or `PublicationUnit`;
 - carrier, front-end, or rendering;
 - cue, displayed wording, mark, status display, credential display, provenance mark, signature evidence;

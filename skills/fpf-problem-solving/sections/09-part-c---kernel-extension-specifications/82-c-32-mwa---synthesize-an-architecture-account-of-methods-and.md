@@ -16,7 +16,7 @@ Here **method** is the main name for a reusable way of doing. **Practice** can n
 
 The primary working reader is an architect, methodologist, practice designer, or domain-framework author who has already found useful source material but cannot safely copy its table, stack, lifecycle, or diagram as the architecture account.
 
-**First useful move.** State whether the architecture question concerns arrangements already used in representative Work or a proposed organization of Method use. These are the obtaining and possible-future entries. Keep that status for each relied-on claim: an existing provider or development activity does not make the proposed use actual. Then state the architecture question and select only the structures that can change its answer.
+**First useful move.** Decide what you need to establish about the arrangement. A service agreement in force can already reserve a reviewer, a tool or a time window for the first job. To describe how a job was actually done, recover that performance. For a proposed arrangement, establish what would make its contributions available together. Different parts of one account can have different status. Select the structures that can change the decision.
 
 **What goes wrong if missed.** A source layout is mistaken for the arrangement it describes. A list becomes levels, a procedure becomes a hierarchy, overlapping activities become a sequence, a model becomes the thing modeled, or a future design acquires fictitious performed Work. A local repair may also look successful only because its unresolved burden moved to another structure or scope.
 
@@ -51,7 +51,7 @@ A fourth failure appears only in some uses: a live product-boundary question is 
 | Force | Tension to hold |
 | --- | --- |
 | **One answer vs several structures** | The decision needs a coherent account, while the useful structures may remain non-isomorphic. |
-| **Actual use vs prospective design** | Obtaining Work offers dated evidence; proposed Method use needs a realization and later-test account instead. |
+| **Actual use and prospective design** | Performed Work has a history. An agreement can already be effective for future work. A proposal needs grounds for the realization or performance on which the receiving decision relies. |
 | **Precision vs readable entry** | Exact kinds and relations prevent false claims; notation-first prose can make the Method unusable to the practitioner who needs it. |
 | **Candidate breadth vs proportional effort** | The first source layout is rarely enough; an unlimited candidate search can delay the decision without changing it. |
 | **Local gain vs moved burden** | One structure can improve while another inherits cost, delay, evidence burden, loss of control, or unresolved residual. |
@@ -70,13 +70,13 @@ A discipline can describe one reusable method. If the decision calls for compari
 
 #### C.32.MWA:4.1 - Eight actions
 
-1. **Choose an entry.** For an obtaining organization of Method use, anchor one independently admitted representative performed Work occurrence and the useful result at stake, with A.13 bases before A.15.1 admission; establish the other relied-on relations separately. For a possible-future organization, anchor an intended-use case, `WorkPlan`, or another correctly typed prospective account; state what would put that proposal into use and how later representative Work would test it. Keep actual development or support Work separate from the proposed use. Actual and prospective claims can coexist in the same account.
+1. **Choose an entry.** For a claim about performed Work, start with an identified occurrence and recover its A.13 and A.15.1 grounds. For a claim about what can already be obtained, check the applicable agreement, qualification, access and availability. For a proposed organization of Method use, start with the intended use or WorkPlan and identify what must become effective. An approval can settle a design obligation before the first use. To establish performance or its effect, recover evidence for that claim.
 2. **Name the subject and participants.** State the subject under discussion (`EntityOfConcern`) and the kinds of the participants before classifying rows or positions. A source word such as *practice*, *layer*, *role*, *model*, or *provider* does not settle those kinds.
 3. **Build alternatives for the question.** State whether the alternatives are competing architecture accounts of the same arrangement, proposed changes to that arrangement, or both. Competing accounts can reveal a relation that a sequence-only description misses; proposed changes alter how the Methods would be used or supported. Keep those comparisons distinct. Develop or reuse alternatives that can change the decision or fail on different cases. When NQD is the current generation test, retain NQD-distinct candidates: their novelty is not a relabeling, their use-value preserves the declared constraints, and their diversity exposes different failure modes. A first layout needs examination against the question; retain it when it supplies an adequate answer. Do not turn NQD into one scalar score.
 4. **Recover each relation used.** In ordinary words first, state whether the source claim concerns Method composition or order, Work parthood or overlap, a subject relation, description or model use, a capability or provider dependency, cultural dynamics, or another admitted relation. Use the pattern that defines or constrains that relation when the claim matters to the answer. For structures of a Method and its uses, C.30.ASV:4.5a helps select the question before drawing its representation.
 5. **Separate the described objects from their descriptions.** Keep identified Methods, Work, Systems and their relations distinct from the descriptions, models, views and coarse-grained accounts about them. A description can itself be used in Work; name that use separately from what it describes. State the correspondence and the distinctions each description preserves or loses.
 6. **Resolve a whole-identity question when needed.** Use `B.2` when the current claim raises a consequential question about retaining the identified Method, Work, System or Discipline whole or identifying a new one. Keep the existing whole when a supported explanation is sufficient, and retain uncertainty when the needed basis is missing. Reidentify a selected structure under `A.22`'s four identity discriminators when the claim requires a different selected structure.
-7. **Compare conflict and moved burden.** Expose conflicts between candidate structures. For every apparent local repair, ask what residual, constraint, cost, evidence burden, delay, or loss moved to another structure or scope. Compare the alternatives against the named architecture question, not against visual tidiness.
+7. **Compare conflict and moved burden.** Follow the change to the people, agents or equipment that receive the work. Establish what their extra effort or waiting changes for the required result. A shorter drafting step can yield a later accepted release when the reviewer becomes available late (C.32:5.1). Attribute the elapsed time of a completed release from its actual start and acceptance. If the claim concerns who designed the change, recover the choices already supplied and the ones that the performer made.
 8. **Keep deliberate and distributed change distinct.** Separate a project's architecture choice or intervention from cultural generation, transmission, recognition, selection, rejection, retention, and loss. A project can influence those processes without controlling or proving them.
 
 #### C.32.MWA:4.2 - Short working result
@@ -86,7 +86,7 @@ Write the first result as a short account that another practitioner can use with
 ```text
 Current architecture question:
 Entry: obtaining / possible-future organization of Method use; status of each relied-on claim
-Representative occurrence or prospective anchor:
+Grounds for actual performance, effective provision or proposed use:
 Useful result at stake:
 Selected structures and the relations used:
 Correspondences between described objects and descriptions, with losses:
@@ -100,20 +100,20 @@ A compact table can support this account. Symbolic predicates are optional assur
 
 #### C.32.MWA:4.3 - Conditional product-boundary comparison
 
-Only when product identity is the current architecture question, compare these four different arrangements:
+When deciding where practitioners should find and maintain domain guidance, compare the arrangements that could actually meet their need. Four possibilities have arisen in the FPF ecosystem:
 
 1. one domain DPF;
 2. independently maintained sibling DPFs;
 3. direct use of FPF plus exact domain sources; and
 4. a proposed common applied DPF.
 
-For each arrangement, state the recurring practitioner problem, first useful result, independently useful boundary, sources and maintenance burden, and what another arrangement would leave hidden or duplicate. These four are comparison forms, not a selected product roster. When product identity is not the question, do not force this comparison into the Method.
+For each serious possibility, state the recurring problem, the first useful result, who could maintain it, and what would be hidden or duplicated. A binding access condition can rule out an arrangement before it is developed further. Other products can have different useful boundaries. Identify alternatives from the uses and maintenance work of those products.
 
 #### C.32.MWA:4.4 - Stop, lower, and reopen
 
 Stop when the short synthesis identifies the entry, selected structures and relations, consequential correspondences and losses, any conflict or moved burden, and the next useful action. Include different alternatives when the receiving question needs a comparison; an adequate account or retained arrangement can finish without inventing another option. Add a view only when it can change the answer.
 
-Lower only the dependent claim when its subject, representative occurrence or prospective anchor, relation, evidence boundary, or required alternative is not recoverable. Preserve independently useful content and obtain the named missing basis from its direct source or pattern.
+Limit the conclusion that lacks its grounds. For performed work, identify the occurrence. For a right, booking or other effective provision, check its terms and availability. For a proposed arrangement, recover the intended use and what is still needed for it to work. Keep the other supported conclusions and obtain the particular missing source when the decision depends on it.
 
 Reopen when representative Work contradicts the synthesis, a proposed organization of Method use is put into practice, a new structure changes the decision, a moved burden becomes material, a direct source changes a relied-on premise, or the product-boundary question enters or leaves scope.
 
@@ -148,14 +148,14 @@ Across the three cases, the same Method preserves the obtaining/prospective entr
 | Check | Passing observation |
 | --- | --- |
 | **CC-MWA-1 — Recognizable use** | The opening names a current decision that needs one answer across several structures, plus an ordinary non-use boundary. |
-| **CC-MWA-2 — Entry status** | The synthesis states whether it concerns an obtaining or possible-future organization of Method use. An obtaining claim has representative performed Work and the basis for each relied-on relation; a prospective claim has an intended-use or plan anchor, realization condition and later-test condition. Actual and proposed claims retain separate status in one account. |
+| **CC-MWA-2 — Entry status** | Each claim identifies its grounds. Performed Work has its occurrence. An existing right, reserved capacity or accepted design has the grounds that make it effective. A proposed arrangement has an intended use, the conditions it still needs and the evidence needed for any later claim of performance. |
 | **CC-MWA-3 — Subject before layout** | The Methods under consideration and the Work, Systems or other objects needed to explain their performance, support and development are identified before source rows are interpreted. Practice may name the same reusable way as Method; neither that synonym nor the connected account introduces an encompassing Practice object. |
 | **CC-MWA-4 — Candidate difference** | The synthesis distinguishes competing accounts of an arrangement from proposed changes to it. Alternatives differ by decision use or unlike-case failure, not merely labels or picture layout; a better account alone establishes no world-side change. When NQD is current, novelty, use-value and diversity remain distinct. |
 | **CC-MWA-5 — Relation recovery** | Every relation used in the answer is stated by value and supported through its defining or constraining pattern when material. Order is not overlap; overlap is not parthood; co-use is not Method composition. |
 | **CC-MWA-6 — Subject-description separation** | The identified Methods, Work, Systems and relations remain distinct from descriptions, models, views and coarse-graining. A description’s use in Work is separate from the objects it describes; important correspondences and losses are stated. |
 | **CC-MWA-7 — Whole reidentification** | A consequential question about retaining or reidentifying a Method, Work, System or Discipline whole uses B.2; a new whole is asserted only on its required grounds. A changed selected-structure identity uses A.22. |
 | **CC-MWA-8 — Conflict and moved burden** | The main conflict is named and every claimed local improvement states any material residual or burden moved elsewhere. |
-| **CC-MWA-9 — Conditional product branch** | The four product arrangements are compared when product identity is current and omitted when it is not; the comparison itself selects no product. |
+| **CC-MWA-9 — Conditional product branch** | A guidance-product boundary comparison develops the arrangements that could serve the receiving practice and explains any consequential exclusion. Other product boundaries have their own alternatives. |
 | **CC-MWA-10 — Deliberate/distributed distinction** | Project choice and intervention remain distinct from cultural generation, transmission, recognition, selection, retention, and loss. |
 | **CC-MWA-11 — Usable result** | A cold reader can recover the short synthesis, any alternative required by the decision, the next use, and the stop or reopen condition without reading symbolic assurance first. |
 
@@ -168,8 +168,8 @@ Across the three cases, the same Method preserves the obtaining/prospective entr
 | **One view set for every practice** | A convenient template becomes a universal ontology and imports irrelevant work. | Always keep the identity-and-relation check; add other structures only when they change the decision. |
 | **Synonyms as alternatives** | Several names hide one unchanged organization and create false diversity. | State what decision, relation, or unlike-case result differs; merge candidates that differ only by labels. |
 | **Local win, invisible burden** | The apparent improvement exports cost, delay, evidence, control, or residual to another structure. | Name the receiving scope and compare the moved burden with the claimed gain. |
-| **Product comparison everywhere** | The Method becomes framework-product design even when the architecture of Methods and their use is the only question. | Open the four-option branch only when product identity is current. |
-| **Product comparison nowhere** | A live field or maintenance boundary is hidden inside a favored architecture. | Compare the four arrangements and pass the result to the applicable product decision. |
+| **Product comparison everywhere** | A guidance-product decision is imposed on an unrelated architecture question. | Compare product boundaries when what practitioners can obtain or maintain depends on those boundaries. |
+| **Product comparison nowhere** | One favored publication arrangement conceals an independent field or maintenance need. | Compare the arrangements that could meet that need and give the reasons to the product decision maker. |
 | **Model equals its subject** | A view or matrix is treated as a world-side whole or relation. | State the described subject, model use, correspondence, and preserved and lost distinctions. |
 | **Project choice equals cultural success** | A deliberate intervention is taken as proof of later recognition, spread, selection, or retention. | Keep the project claim and each cultural-change claim separate; use `C.36` for the latter. |
 | **Notation as the first result** | The account becomes precise but unusable to the practitioner who must act on it. | Lead with the short prose synthesis; retain notation only where it catches an ambiguity or supports a later check. |

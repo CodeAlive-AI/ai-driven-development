@@ -6,7 +6,7 @@
 
 ### C.32.ADR:1 - Problem frame
 
-Use this pattern when an `ArchitectureDecisionRelation@Project` or equivalent project architecture decision must be published as an ADR-like record, decision memo, trade-study record, certification rationale, or similar decision-description record.
+Use this pattern to publish a project architecture proposal for discussion or an effective project architecture decision for people who will act on it. A team can use an ADR, a decision memo, a trade-study record or a certification rationale. For a decision in force, identify the `ArchitectureDecisionRelation@Project` or the equivalent decision under the project’s governing practice.
 
 Primary working reader: an architect or architecture-responsible practitioner preparing a decision record for developers, reviewers, maintainers, operators, certifiers, or future architects.
 
@@ -30,9 +30,9 @@ A project can publish a record-shaped text that hides the actual architecture de
 
 A decision record can be small, readable, updateable, and tied to candidate synthesis, selected structures, architecture characteristics, method-use instructions, work split, confirmation evals, and source-return.
 
-Ordinary working move: start from a PAD decision relation, select the record's publication scope, map each necessary section to the decision content it carries, then publish only what the reader needs to use, check, or reopen the decision.
+Start with the proposal readers are to discuss or the decision they can act on. Establish its status and choose the content readers need to examine, use or reopen it. For an effective decision, make the PAD decision relation recoverable.
 
-Adoption test: after using C.32.ADR, a future reader can recover the decision question, considered options, outcome, rationale, consequences, required method or work change, confirmation or eval path, source links, and supersession condition without mistaking the record for the architecture or the decision relation.
+After using the record, a reader can identify the decision to be made, the options and what can be done at the stated status. For an adopted design the reader can recover the outcome, grounds, consequences, changes to methods or work, how to check implementation and when to reopen the choice.
 
 Use `C.32.PAD` when the decision content needs development; drafting its record can support that work without a second artifact. Keep an unresolved proposal visibly proposed. Use the subject pattern when the current question is architecture-description adequacy, a general MVPK face, evidence, assurance, gate passage, local choice, performed work or pattern authoring. Use the pattern for the next question named in `Relations`.
 
@@ -43,8 +43,8 @@ ArchitectureDecisionRecordProjection@Project:
   projectWorkOccurrenceRef?: U.EntityRef constrained to U.Work
   architectureDecisionRecordProjectUseRelationRef?: U.RelationRef governed by the exact record-use, publication-use, or work-use pattern
   projectionId:
-  architectureDecisionRelationRef:
-  architectureDecisionDescriptionRef:
+  architectureDecisionRelationRef?: identify the effective decision here or by value when reporting that it was made
+  architectureDecisionDescriptionRef: the recoverable content and its status, including a proposal when that is what is published
   publicationCarrierRef:
   publicationScopeRef:
   intendedReaderRefs:
@@ -77,7 +77,7 @@ For a principle framework, use C.32.ADR only in the exceptional case where the a
 
 The section question is therefore not "which headings are allowed?" The section question is "which decision functions must a reader recover?" Headings can vary by organization or industry. Preserve the decision question, outcome, rationale, material consequences, status and update conditions; include options, Method/work instructions, confirmation and source return when they are needed for the declared use.
 
-ADR-like projection is not software-only. Engineering trade-study records, safety-certification rationale, design review memos, BIM decision logs, method-governance records, and organization-design records can play the same publication role after the project decision relation and record use are typed. The source form may differ; the FPF section functions stay recoverable.
+Engineering trade studies, safety-certification rationales, design review memos, BIM decision logs and method-governance records can each carry a proposal or an effective decision. Identify what the intended reader can review, authorize or act on and what gives the document that effect. Choose the sections that supply the grounds for that use.
 
 ### C.32.ADR:3 - Forces
 
@@ -92,16 +92,16 @@ ADR-like projection is not software-only. Engineering trade-study records, safet
 
 ### C.32.ADR:4 - Solution
 
-Publish the recoverable decision and its description for the declared readers. If the decision content is missing, develop it through `C.32.PAD`; the same written account can support that work and later describe its result. A draft or template does not establish that a decision was made.
+Publish the content and status the intended readers need. A consultation draft can give them the proposal to examine. Where the governing rule makes an authorized signature on that document effective, the signed document can also establish the decision, its scope and effective time. Identify the authority, act and applicable rule for that use. Two copies with the same proposed design can therefore warrant different actions. Whether an installation already implements the decision is a further claim about that installation.
 
 Work in this order:
 
 1. Name the publication carrier and intended readers. Use a file or other carrier for the Markdown ADR, decision memo, trade-study record, engineering change note, certification rationale, design-review record, or other decision-description form.
-2. Make the decision relation and its description recoverable by reference or by value. If either remains unresolved, develop the missing content and keep the draft's status truthful.
+2. For a proposal, identify what readers can discuss and what action could adopt it. For an effective decision, give the decision and its description by reference or by value, with its applicable status. Use C.32.PAD to develop missing decision content.
 3. Choose the smallest scope that lets intended readers use the decision. Include the explanatory slice they need, with access to the fuller architecture or Method description when needed; avoid duplicating material that adds no useful content.
 4. Choose headings or carrier positions that make the needed decision functions recoverable. A separate mapping table is useful only when the relationship would otherwise be unclear.
 5. Carry the candidate basis. Record candidate options from `C.32` or the reason no candidate-set question is live. Do not invent options in the ADR after the decision.
-6. Carry the decision outcome. State the selected architecture option, bounded exception, or supersession relation from PAD.
+6. Carry the outcome that has been reached. A consultation can invite a choice among open options. For an adopted decision, identify the selected architecture option, bounded exception or supersession from PAD.
 7. Carry rationale, accepted losses, and consequences. Include architecture-characteristic trade-offs and guardrails, not only benefits.
 8. Carry Method-use instructions and work split when the decision guides developer work. State the required action and expected structure effect plainly; cite the Method, pattern-use guidance or readiness rule when the reader needs it.
 9. Carry the confirmation, evaluation or violation-detection conditions needed by the decision's use. Use `C.32.ACE` for evaluation framing, `C.16` for measurement, `A.10` for a needed replayable source-to-use account, and `B.3`, `A.21` or the governance rule for the respective assurance, gate or authority claim. Preserve the support each claim requires.
@@ -118,7 +118,7 @@ Select the following functions by the declared reader use, retaining what is nee
 | Problem frame and decision question | The bounded architecture question, described holon, context, and current reader use. |
 | Forces and architecture characteristics | The architecture characteristics, constraints, concerns, and trade-offs that made the decision nontrivial. |
 | Candidate options | Candidate options, rejected options, bounded exception, or stated reason no candidate-set question is live. |
-| Decision outcome | The selected architecture option and affected selected structures. |
+| Decision outcome | The option still under consideration or the option adopted, its affected structures, and what the reader can act on at this status. |
 | Rationale | Why this outcome is acceptable now, including accepted losses and protected guardrails. |
 | Consequences | Expected effects on structures, methods, teams, costs, risks, evidence, operation, and later change. |
 | Method-use instruction | Required style, pattern use, method description, or work practice, when the decision changes developer work. |
@@ -157,7 +157,7 @@ When one decision changes another, use explicit supersession or amendment links.
 
 | Requirement | Required result |
 |---|---|
-| `CC-ADR-1` | The record cites an `ArchitectureDecisionRelation@Project` or states the equivalent accepted decision relation by value. |
+| `CC-ADR-1` | The projection identifies the proposal under discussion or the decision in force. A claim of adoption cites the decision relation or makes the act, authority, scope and effect recoverable by value. |
 | `CC-ADR-2` | The record's publication carrier, intended readers, scope, and status are explicit. |
 | `CC-ADR-3` | Needed decision functions are recoverable through headings or carrier positions; an explicit mapping is added only when useful. |
 | `CC-ADR-4` | The question, outcome, rationale, material consequences, status and update condition are recoverable, with candidate options, forces and confirmation/eval when needed for the declared use. |

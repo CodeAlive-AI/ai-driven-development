@@ -6,7 +6,7 @@
 
 ### C.31.RSA:1 - Problem frame
 
-Use this pattern when a practitioner needs to locate where reusable structure lives, where bespoke residue grows, which accounting basis is being used, what can be refactored, and what remains a bounded exception or source-return condition. A report-only share supports a separate use only when that use meets the conditions defined by its applicable pattern.
+Use this pattern when planning another delivery or reviewing a claim of reuse. Work out which part came from a shared design, procedure or physical article, which work was specific to the delivery, and what the next use requires. A team can use the same procedure twice and still need new measurements each time.
 
 Claim-use boundary: any use that relies on the RSA account to make a claim beyond reusable-structure accounting is outside RSA. Examples include comparison, publication, evidence validity, assurance or safety-case reliance, gate use, architecture scale preference, causal use, selected-set result declaration, candidate synthesis, and local decision.
 
@@ -29,7 +29,7 @@ ReusableStructureTriage:
   evidenceRefs:
   whereReusableStructureCurrentlyLives:
   whereBespokeResidueCurrentlyGrows:
-  residueRefactoredInto:
+  residueRefactoredInto?:
     template | interfaceSpecification | methodDescription |
     workStructure | evidencePackage | assuranceArgumentStructure | otherDeclared
   residueAcceptedAsBoundedException:
@@ -81,12 +81,16 @@ C.31.RSA governs reusable-structure accounting over declared structures and stru
 
 #### C.31.RSA:4.0 - Recover reuse and residue from instances
 
-Begin with the result for which reuse matters: for example, delivering another product variant, repeating a review, or applying an evidence package to another case. Select the instances that can answer that question, including a differing or failed instance when it can expose the limit of the apparent common rule. A known template-instance count can be reported directly; this construction is for an unresolved reuse claim.
+Start with the decision. To establish past use, trace what an identified delivery took from the shared design, procedure, evidence or physical article. Name what was carried over and which changes the delivery team made. Two independently made products can both fit the same specification. That can establish conformity even when the origin of one product is unknown. To identify the design choices a person or team made, compare the instructions, designs, parameter settings and help available with the choices made during the work. A worker can produce the correct adapter from a supplier's drawing or choose and justify its geometry independently. A cutting or assembly record can establish execution in either case. Credit design of the part when the record or the person's account establishes which choices that person or team made and why. Work completed before one particular template arrived rules out the use of that template but can still have followed another drawing. To commission a further design, compare the choices it requires and the help that will be available with those the person actually made under comparable conditions. One independently designed flange can support a further flange assignment while leaving design of an entire adapter open.
+
+For a proposed use, compare what the recipient needs with what the shared design or procedure supplies in the intended conditions. Check that the chosen settings work **together**, including their interfaces and any local adaptation. A supported design rule, qualification or test that already covers this combination can answer the question before the first delivery there. If a necessary condition fails, identify what has to change or which alternative fits. If its value is unknown and it could change the answer, identify what would settle it. Actual use at the new site will have its own production or work history.
+
+For a claim about a whole family, explain why the common rule covers all the admitted combinations. One admitted combination that needs an extra operation defeats a promise of use without that operation throughout the family. Preserve the supported uses elsewhere. A known count of template uses can finish a request for that count.
 
 1. **Follow the same required result through the instances.** Use the available products, configurations, instructions, test and approval material, or actual work records to recover what supplies that result, what it receives, and the conditions of each connection. C.30.ASV helps recover the selected structure; C.32.MWA.PP:4.1 and :4.4 help trace performance and provision when those relations matter. Compare the relation or way of doing.
-2. **Explain the differences that matter.** For each consequential difference, find the requirement, input, environmental condition or arrangement that it responds to. Inspect a contrasting instance and the relevant instruction or requirement; ask its provider what would fail if the difference were removed. If that answer is unknown, name the document, participant, observation or justified bounded replay that could distinguish the possibilities. Keep the dependent part unresolved while using the supported common parts.
+2. **Explain the differences that matter.** Identify the requirement, input, environment or local arrangement that accounts for each consequential difference. A contract can already settle whether the customer needs an on-site witness. When the reason is unclear, use a contrasting delivery, a work record, the provider's account or a bounded trial that can distinguish the plausible explanations. Preserve an established shared part while investigating a difference that could change its use.
 3. **State the reusable rule and its permitted variation.** Identify what can remain the same, which values or steps change, and under which conditions the resulting instance still supplies the required result. A necessary customer-specific approval or local adaptation may remain bespoke. A repeated workaround may instead expose a missing parameter, interface condition or Method step. Actual substitution, evidence validity and assurance claims retain their subject rules; resemblance between instances does not establish those claims.
-4. **Choose the next sufficient result.** The common rule, its reusable locus, necessary exceptions and any unresolved dependency may finish a qualitative account. If a repair is needed, use :4.5 to consider where to place the common structure, then follow the affected instance through to its receiving result to check the change and any new burden. A proposed refactoring is a C.32 candidate; the account can also support retaining the present arrangement.
+4. **Choose the next sufficient result.** The shared rule, its permitted changes and the remaining local work may finish the account. When considering a repair under :4.5, trace its consequences through an affected delivery, including who would take on the work moved elsewhere. C.32 can use the proposed change as a candidate. Record a relocation as accomplished when it has taken effect.
 5. **Count only when the question needs a share.** Select the population, unit and reuse test from that question, then apply :4.1–:4.4. A count of template uses, a claim of valid evidence reuse and a claim that whole deliveries can share a Method answer different questions. Preserve the conditions and uncertainty of the one counted.
 
 #### C.31.RSA:4.1 - Typed accounting description
@@ -172,9 +176,9 @@ RSA is useful because it points to relocation and repair actions:
 | Situation | Repair direction |
 | --- | --- |
 | Repeated delivery work contains structure that is not explicit in the work or method description being used. | Move repeated structure into `MethodDescription`, work structure, or reusable work relation. |
-| Repeated interface exceptions are handled one by one. | Add or revise interface grammar, variability slots, or substitution policy; use A.6.M when this is a module-interface claim. |
+| Repeated interface exceptions are handled one by one. | Identify the operating condition that requires the exception. Keep a local adapter when it accommodates that condition economically. Consider a shared interface change when it would serve the affected configurations and its migration and conformance costs are justified. A.6.M governs the module-interface relation. |
 | An undocumented dependency crosses module or view boundaries. | Expose the dependency, revise boundary, add correspondence, or add source-return condition. |
-| Evidence is recreated for each instance. | Move repeatable evidence into an evidence package, assurance argument record, or validity-context note. |
+| Evidence is recreated for each instance. | Identify which claim, configuration and conditions the earlier evidence covers. Reuse the result where it still answers the question. For an uncovered condition, the same procedure may generate new evidence. |
 | Regulatory or safety-case residue remains one-off. | Split reusable argument structure from context-specific exception; apply B.3 to the assurance claim, including a claim about safety-case support, and G.6 when a citable provenance path is needed. |
 | Compression hides needed distinctions. | Recover the omitted distinctions or reduce compression. Use C.29 when choosing or transferring the mathematical representation, or relying on its result, leaves an unresolved question. |
 | Bespoke residue protects necessary local variation. | Keep it as a bounded exception with its use conditions and any action-changing limit. |
@@ -249,7 +253,7 @@ Where the record does not explain a difference, recover that condition from the 
 
 The next account can therefore retain the common test and approval preparation, preserve the contractual witness, and propose an interface or adapter change for the recurring format exception. Replaying that proposed change through input, integration and test shows whether it preserves the required result and whether it merely relocates work.
 
-Evidence validity for a new deployment still depends on that deployment's conditions; a reused procedure or file alone does not settle it. If the existing bounded account answers the receiving question, no refactoring or numeric share is needed.
+For the next delivery, the contract requires an on-site witness. A prior test may cover the unchanged component, while the witness clause still calls for work at this site. If the new adapter changes a signal used in the component test, inspect the qualification boundary. Evidence covering that adapter and signal can be used directly. Otherwise qualify the affected path or choose an already covered configuration. The purchase or acceptance decision can use these findings under its own rule.
 
 `ReusableStructureTriage`:
 
@@ -278,10 +282,8 @@ whereBespokeResidueCurrentlyGrows:
   customer-specific approval work
   integration exceptions outside interface grammar
   local evidence witnesses not covered by reusable package
-residueRefactoredInto:
-  workStructure + evidencePackage + interfaceSpecification
 residueAcceptedAsBoundedException:
-  customer-specific regulatory clause with declared non-admissible reuse
+  on-site witness required by this customer’s contract
 sourceReturnCondition:
   return to deployment evidence and regulatory exception record before assurance or gate use
 relatedClaimPatternsIfClaimed:
@@ -290,26 +292,26 @@ stopCondition:
   report-only accounting; establish comparison, evidence-validity or assurance grounds when that further use is made
 ```
 
-Admissible move: publish the local report-only RSA note and refactor the repeated organization of delivery approval work into reusable work structure and reusable evidence structure. Non-admissible move: claim that the reusable evidence package proves every deployment or that a high reusable share makes the architecture better.
+Publish the account of shared and local work. The interface change is available for design and testing. Once it is implemented, use the affected deliveries to establish where the adapter work now occurs and what its cost is.
 
 #### C.31.RSA:5.2 - Anti-case: high share hides a bad architecture move
 
 Situation:
 
 ```text
-A team reports that 85 percent of its architecture is reusable because most screens use one shared template.
-The template makes many local exceptions necessary for product teams and side-channel integrations.
+A product line released 20 screens. Build records trace 17 to a shared template. Two were built from independent designs without the template and meet the same visual specification. The origin of the last screen is unknown.
+Teams report local work on input and integration exceptions.
 ```
 
-This is not a successful RSA result. The accounting basis counts template instances but hides interface relation cost, lost variation, hidden bespoke work, and evidence decay. The repair is to mark the share as report-only, add the missing bespoke-residue slots, and apply A.6.M, C.31, or a characteristic pattern governing the claim to the interface relation cost before any comparison or decision use.
+For an agreement requiring at least 85 percent of the released screens to use the template, the 17 traced uses suffice. Between 17 and 18 screens used it. An exact percentage, or a decision at a 90 percent threshold, depends on the origin of the remaining screen. Comparing screen appearance could establish conformity with a visual specification. It cannot recover that missing build history.
 
-Lowering replay: the team tries to use the 85 percent share to rank this template architecture above another product-line variant and approve the template program. The use is lowered to local report-only accounting because the comparator set, accounting-basis alignment, interface-cost measure, source-return condition, and decision record are absent.
+The same account leaves open whether to fund the template for the next release. Compare the cost of maintaining and adapting it with the cost of developing and maintaining the independent designs for the planned assortment. Include the local work on both alternatives. A common template can save production work while moving more work into integration.
 
-Recover the interface claim and actual costs, using A.6.M for unresolved module-interface meaning and C.16 for the cost measurement. A.19.CPM governs comparison of admitted profiles; A.19 applies to a CharacteristicSpace or reusable space predicate when one is used, and C.11 to local choice.
+Compare applicable offers, engineering estimates or work records for the planned assortment, including interface maintenance and local adaptations. Use observed costs when reporting work already done. An offer covering the full intended service can settle its quoted price while actual future expenditure is still open. Use A.6.M for a disputed interface interpretation, C.16 for a cost measure and C.11 for the local funding decision.
 
 These grounds can support comparison of the existing variants before any interface is changed. A chosen repair changes the candidate and reopens the affected accounting and comparison.
 
-Stop condition: do not use the 85 percent share for outside-RSA ranking, gate, assurance, or decision. Reopen the RSA note when the interface grammar, exception register, or comparator set changes.
+Keep the release count when the next release changes the planned assortment or the cost comparison. Reopen only the answer that depends on the changed facts.
 
 #### C.31.RSA:5.3 - Transfer case: neural-network block replacement
 
@@ -322,8 +324,8 @@ The benchmark improves, but cache placement, memory access, and ablation evidenc
 
 To transfer RSA from product-line architecture to neural-network architecture, use the already recovered reusable locus or first apply `C.30.STRAT` to treat `block`, `cache`, and related terms as source labels. Then RSA names the declared structures and accounting basis:
 
-- reusable structure may be located in recovered repeated-block topology, dataflow pattern, cache-placement rule, or evaluation harness;
-- bespoke residue may be located in model-specific tuning, data distribution dependence, memory-layout exception, or ablation gap;
+- trace which earlier topology, dataflow, cache rule or evaluation harness the team used. To credit a new design, establish which choice the team made beyond implementing the supplied architecture;
+- check the target's memory layout, input distribution and tuning needs before offering the same change for another model;
 - benchmark gain is not reusable-structure accounting by itself;
 - establish evidence and causal claims under their direct rules; use `A.10` for a needed replayable source-to-use account, `G.6` for a needed citable provenance path, and `C.28` for causal-use recovery. Use `C.29` for an unresolved mathematical representation choice, transfer or reliance question.
 

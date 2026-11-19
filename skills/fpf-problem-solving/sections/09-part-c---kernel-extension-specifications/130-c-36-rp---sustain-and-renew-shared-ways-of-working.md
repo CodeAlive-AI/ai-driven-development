@@ -97,7 +97,7 @@ Perform the receiving work when implementation is part of the assignment. Have t
 
 Compare the result with the question that led to this work. If the result is usable, continue the activity it enables. If it fails, locate the missing operation, interpretation, access or capability and repair that part. Reuse contributions whose conditions hold.
 
-A proposal can finish by explaining the selected arrangement and what remains to be carried out. Report an achieved transfer from the receiving use that occurred. For a claim that the method persisted across participants or over time, C.36 supplies the corresponding cultural-relation question and the observations that support it.
+State what the handoff was to deliver. Receipt of the agreed procedure and working access can complete a handoff of access before the recipient's first shift. To establish transmission through use, identify what the recipient obtained through the arrangement and where they used it. If a specialist supplied a calculation and the receiver interpreted it correctly, the result can establish that they completed that assignment together. To rely on the receiver to reconstruct the calculation after the specialist leaves, examine their work under that changed condition. Use C.36 for claims about spread or persistence across a population.
 
 #### C.36.RP:4.6 - Keep the means of renewal available
 
@@ -127,7 +127,7 @@ In this constructed case, an ensemble uses an eight-pulse cycle with onsets at 0
 
 Adding two modulo eight gives 2, 5 and 0, or the ordered onset set 0, 2, 5. The operation depends on knowing the cycle, what an onset position means and how positions wrap at its end. Retaining those meanings lets a contributor produce the changed phrase.
 
-One musician demonstrates the original and changed phrases while counting the cycle. Another participant may use written marks or a computational representation. The ensemble retains a way to obtain the rotation and perform it in the receiving arrangement. Its musical practice supplies the performance and judgement of fit.
+One musician demonstrates both phrases while counting the cycle. If the ensemble's commission is to perform the supplied arrangement, the musicians may use the marked parts and count together. A rehearsal can establish that result. If a musician is to arrange future rotations, give that musician a new offset and the original phrase. Leave them to determine the new onsets using the support the ensemble normally provides. Their calculation and its use in the changed phrase can show that they applied the rotation to the new offset. A performance of the already demonstrated phrase can leave that question open.
 
 The new phrase can become material for another variation. That continuation uses the operation and its means of performance. A claim about which phrase listeners find interesting adds the listener and musical-use question through E.10.INT.
 
@@ -147,7 +147,7 @@ A familiar human learning method can be a poor choice for an AI learner, and an 
 - [ ] The found gap names an operation, interpretation, access or capability that can change that work.
 - [ ] The selected arrangement makes the required contributions obtainable by their receivers.
 - [ ] Acquisition, explanation or provision is suited to the participant and the required use.
-- [ ] A claimed performed transfer is supported by the receiving use that occurred; proposals retain what remains to be done.
+- [ ] Judge the handoff against the commission. Receipt of the agreed procedure and working access establish delivery when those are the promised results. A claim that the recipient used the transmitted method identifies the use and its connection to the source. A proposal states what still has to be put in place.
 - [ ] Retained material and help support the intended later use or variation.
 - [ ] Continuation, renewal or stopping follows the work's value and remaining difficulty.
 

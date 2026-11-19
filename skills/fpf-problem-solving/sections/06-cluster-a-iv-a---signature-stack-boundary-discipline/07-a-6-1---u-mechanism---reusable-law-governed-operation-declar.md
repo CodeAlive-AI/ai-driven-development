@@ -425,8 +425,6 @@ Practical payoff: the declaration captures reusable publication-operation semant
 
 An engineer states, "this conversion is admitted only for values in the calibrated interval." No later claim reuses an operation family, compares declarations, identifies an actual application, or refers to a realization occurrence. The direct sentence and its governing characteristic and measurement patterns are enough. No mechanism episteme is opened.
 
-Practical payoff: precision grows only when a receiving use needs reusable mechanism identity or an application binding.
-
 #### A.6.1:5.7 - Recognition evaluation: Pump #37
 
 A project repeatedly evaluates the A.1 holon-recognition criterion. In ordinary language, one bounded evaluation act applies the selected criterion to Pump #37 and returns `true`, `false`, or `unknown`.

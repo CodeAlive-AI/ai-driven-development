@@ -64,7 +64,7 @@ Recover the proposed whole's semantics, test whole and participant identity sepa
 5. **Test the positive branch.** Record an obtaining composition only when the whole and parts are identified as Methods and the required `B.1.5` relations are shown to obtain within the bounded claim.
 6. **Return the prospective branch when needed.** State the candidate whole, participant statuses, proposed relation sets, guards, adapters, alternatives, recovery, variation points, burdens and unresolved conditions needed for the receiving use. A traceable proposal can answer that use while its stronger whole claim remains unresolved.
 7. **Return a supported partial result.** When missing whole semantics, identity, or a relation prevents a useful candidate account, return the supported fragment, relation claim, WorkPlan question, or stop. Keep the missing grounds explicit.
-8. **Choose a useful continuation when needed.** Use C.11.DUA to compare the result a realizable implementation or trial could add with its full burden, including access, allocation, authority and the available window. When that Work is selected, name its observations, acceptance and failure conditions, any required authority, and the reconsideration rule; prepare a WorkPlan where coordination needs one. Otherwise finish with the supported account or lower result and the limitation that matters to its recipient.
+8. **Choose a useful continuation when needed.** Use C.11.DUA to compare the result a realizable implementation or trial could add with its full burden, including access, allocation, authority and the available window. When that Work is selected, name its observations, acceptance and failure conditions, any required authority, and the reconsideration rule; prepare a WorkPlan where coordination needs one. Otherwise finish with the supported account or partial result and the limitation that matters to its recipient.
 
 #### B.1.5.CM:4.2 - Record the Result
 
@@ -73,7 +73,7 @@ Recover the proposed whole's semantics, test whole and participant identity sepa
 | use and whole semantics | Intended result or preserved condition and receiving use; the whole semantics needed for the returned claim, including operations or invariant, applicability, participants and any relevant variation, bounds or reidentification conditions. A prospective or partial result keeps missing identity or relation grounds explicit. |
 | participant account | Each subject, kind or status, identity basis or open condition, and proposed contribution. |
 | relation sets | Each load-bearing relation, its participants, truth status, grounds and any guard required for its receiving use. |
-| branch verdict | Obtaining composition result, prospective candidate account, or lower return with decisive reason. |
+| branch verdict | Obtaining composition result, prospective candidate account, or partial result with decisive reason. |
 | prospective content | The guards, adapters, alternatives, recovery, stops, burdens, variation points and unresolved conditions that change the intended contribution or receiving use. |
 | continuation, when selected | Later Work and observations, any required authority, acceptance/failure and reconsideration condition; a realization/test WorkPlan where its coordination needs one. |
 
@@ -156,8 +156,8 @@ A later opportunity with useful obtainable observations can warrant implementati
 - [ ] The positive branch requires identified whole and parts plus obtaining `B.1.5` relations.
 - [ ] The prospective branch preserves proposed truth and includes the guards, adapters, alternatives, recovery, stops, burdens and unresolved conditions needed by the receiving use.
 - [ ] WorkPlan, performed Work, observations, MethodDescription, and Method identity remain distinct.
-- [ ] The result can lower below a candidate whole when load-bearing semantics or relations are missing.
-- [ ] A supported account or lower result can complete its receiving use. Any selected continuation has a worthwhile feasible contribution and names the needed later Work, observations, any required authority, acceptance/failure and reconsideration.
+- [ ] When load-bearing semantics or relations are missing, a supported fragment or relation claim can be returned without a complete candidate account.
+- [ ] A supported account or partial result can complete its receiving use. Any selected continuation has a worthwhile feasible contribution and names the needed later Work, observations, any required authority, acceptance/failure and reconsideration.
 
 ### B.1.5.CM:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -167,7 +167,7 @@ A later opportunity with useful obtainable observations can warrant implementati
 | “The architecture was selected, so its relations obtain.” | Keep the decision and proposed relations separate from realization evidence. |
 | “All participants passed A.3.1.QM, so they form a whole.” | Test whole identity and `B.1.5` composition independently. |
 | “A failed trial falls back into the earlier history.” | Preserve performed Work and define a separate recovery branch. |
-| “Wait for perfect proof before saying anything.” | Return the supported prospective account or lower claim with the limits needed for its use; select further testing when its obtainable contribution warrants it. |
+| “Wait for perfect proof before saying anything.” | Return the supported prospective account or partial claim with the limits needed for its use; select further testing when its obtainable contribution warrants it. |
 
 ### B.1.5.CM:9 - Consequences
 

@@ -284,7 +284,7 @@ specific function, possible bearers, failure path and uncertainty; it does not s
 
 If confirmation cannot arrive in time, return to the timing claim or proposed allocation. If the required
 stock-control contribution or authority cannot be obtained, hold the commitment relying on it and revisit the
-affected concept claims or choice of the immediate engineering subject. Reopen the product SoI designation only when its product or use grounds change; a failed local arrangement or new contract alone does not make the planning creator the SoI.
+affected concept claims or choice of the immediate engineering subject. Reopen the product SoI designation when its product, use or extended-enterprise agreement grounds change; a failed local arrangement or new contract alone does not make the planning creator the SoI.
 
 The independent ERP supplier can select its software product as its own SoI on the usable supply, decision and acceptance grounds in `SYSE.1:5.2`. The manufacturer's planning project can close its agreed capability result through representative order changes and operating conditions. Software installation or an organization chart alone does not establish that capability or the existence of the composite `PlanningSystem-P1`. Its System identity, qualified capability and later product consequences require their respective evidence; local acceptance need not wait for every later product outcome.
 

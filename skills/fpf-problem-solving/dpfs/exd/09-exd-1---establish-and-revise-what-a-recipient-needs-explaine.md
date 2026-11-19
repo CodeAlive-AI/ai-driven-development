@@ -32,6 +32,8 @@ A course title, professional role or fluent acknowledgement may leave it unclear
 
 Start from the question as expressed in the available request, material or exchange. Identify what the answer should let the recipient infer, distinguish, predict, calculate or do. “What is the average across these people?” calls for a statistic. “I need a fair comparison of branches” identifies a purpose. Use any applicable weighting rule or identify what remains to be decided.
 
+Read the assignment in the recipient’s terms. What are they to produce, and for which situations? Someone asked to design a procedure must decide matters that someone following the procedure can take as settled. Establish which choices belong to the recipient, what they may rely on and which changes the procedure must accommodate. If the assignment concerns one event, an explanation of that event can answer it in full.
+
 If different interpretations would change the answer, use relevant existing instructions or evidence of the recipient’s purpose. If the distinction remains open, ask a brief question or give conditional answers. For an average, determine whether each individual or each group should count equally. For advice, distinguish a request for the recommendation’s existing grounds from a question about evidence of expected development.
 
 Use a clear reply or an adequately supported interpretation. If the weighting target remains open, state the consequences. Equal group weights and equal individual weights call for different calculations. Identify the outstanding policy choice only when the task requires choosing between them.

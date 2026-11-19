@@ -82,7 +82,7 @@ The repair must keep useful local labels while stopping them from carrying unear
 
 ### C.36.P:4 - Solution
 
-Use the intended claim, not the trigger word, to select the result. Write the short ordinary statement, then open only the branch whose distinction changes the next action. The branches below name common routes; their trigger lists are examples.
+Recover the assertion whose meaning changes the decision. Write it so that a colleague can tell what observation or rule would settle it. Saying that a method was “adopted” might report an authorized decision to begin using it, a first use by named practitioners or continued use across a set of teams. Name the one meant here. If the record supports a different, narrower assertion, state what it already permits someone to do. Qualifying the words identifies the claim to examine. Use C.36 or the governing discipline to establish whether it holds.
 
 Before these cultural routes, send unresolved generic development or evolution wording to `E.10.DEV`. Return here only when its repaired claim has a cultural-evolution subject and a cultural wording question remains; preserve its ordinary non-use, missing-information result, non-cultural population or lineage architecture gap, and one-pass stop otherwise.
 
@@ -97,7 +97,7 @@ Before these cultural routes, send unresolved generic development or evolution w
    - Use A.1.1 only when the decision depends on bounded model use or one of its direct model-applicability, actual-use, or fixed-content-coherence relations. Use A.10, C.20, or C.23 only when the claim is about evidence use, discipline composition, or method-family maturity.
 4. **Variant-set, archive, front, pool, selected-set, publication, and refresh wording.** Use C.18, C.19, G.5, E.17, E.24.PUB, G.11, or E.18.1 according to whether the next question concerns generation or retention, current-pool treatment, a selected-set result declaration, publication, refresh, or problem-to-work carry-through.
 5. **Platform, regime, and mediator wording.** Do not presume a System. The phrase may identify, for example, a mediating System or architecture, recognition or selection relation, measurement or visibility relation, publication or source-currentness relation, episteme, bounded model-use structure, direct model-use relation, claim scope, or ordinary project label. Admit a System only when that System is the object. Keep any local system-role kind, classification, and assignment separate and optional. If the current governing rule needed to state or test the intended claim for the named participants and use is absent, return A.6.RCD's `missing-governor`.
-6. **Meta-holon-transition (MHT), level, boundary, feedback, model-use or scope reframe, and frustration wording.** Recover whether the claim concerns a new holon or level, whole reidentification, a System boundary, a relation that crosses a holon boundary, supervisor-subholon feedback, bounded model use or claim scope, cross-scope architecture residual, mathematical-lens use, or interlevel ethical conflict. Use A.1, A.1.1, B.2.P, B.2, B.2.2, B.2.3, B.2.4, B.2.5, C.30.ILC, C.29, D.2, D.3, or D.4 according to that recovered claim. Keep C.36 only for the cultural-evolution case.
+6. **Meta-holon-transition (MHT), level, boundary, feedback, model-use or scope reframe, and frustration wording.** For a claim about more abstract or more concrete models, name the model and what is preserved or newly determined under `B.5.MR:4.3`. For a claim about more teams or a longer interval, name the population or period. Recover whether any further claim concerns a new holon or level, whole reidentification, a System boundary, a relation that crosses a holon boundary, supervisor-subholon feedback, bounded model use or claim scope, cross-scope architecture residual, mathematical-lens use, or interlevel ethical conflict. Use A.1, A.1.1, B.2.P, B.2, B.2.2, B.2.3, B.2.4, B.2.5, C.30.ILC, C.29, D.2, D.3, or D.4 according to that recovered claim. Keep C.36 only for the cultural-evolution case.
 7. **Attractor and dynamics wording.** Recover the model supporting a basin, stable-dynamics, state-transition-law, or other mathematical claim. Use an adequate domain result directly; use A.3.3 for a state space and transition law, C.27 for temporal adequacy, and C.29 when a separate mathematical representation, transfer, or reliance question remains. Keep a loose style or tradition meaning in ordinary wording.
 8. **Architecture wording.** Use C.30 for an architecture question or ArchitectureClaim, C.30.ASV for a structural-view question, and C.30.AD for an architecture-description question. A selected structure, ArchitectureRelation, claim, description, view, representation, and publication remain distinct. Treat `ArchitectureOf@Context` only as a legacy retrieval phrase resolved by the current C.30 edition, not as a current record or ontology.
 
@@ -115,7 +115,8 @@ The trigger phrases are examples. Recover the intended object, relation, or clai
 | style, tradition, genre, scene, school, or cultural lineage | term row or bridge; Method or Work family; canon or memory episteme; recognition relation; selected set; publication label | F.17, F.18, F.9, C.36, A.3.1, C.20, C.18, G.5, E.17, or E.24.PUB |
 | practice, technique, developmental machinery | Method or MethodDescription; relations among Methods or a selected Structure of them; WorkPlan or dated Work; direct participation; local system-role kind or classification; assignment species or occurrence; relation between system-role kinds; bounded model-use structure or one of its direct relations; discipline position; evidence-use claim; quote-only wording | A.3.1, A.3.2, A.13, A.15.1, A.15.2, F.6, E.10.ROLE, A.2, A.2.1, A.2.7, A.1.1, A.10, C.20, or C.23 |
 | platform, platform regime, measurement regime | mediating System or architecture; recognition, selection, measurement, visibility, publication, source-currentness, or direct model-use relation; bounded model-use structure; claim scope; ordinary project label | A.1, A.1.1, C.30, C.16, A.19, E.17, E.24.PUB, G.11, or C.36 |
-| MHT, level, boundary, feedback down, model-use or scope reframe, frustration, interlevel conflict | new holon or level; whole reidentification; System boundary; relation crossing a holon boundary; supervisor-subholon feedback; bounded model use or claim scope; cross-scope residual; mathematical-lens use; interlevel ethical conflict | A.1, A.1.1, B.2.P, B.2, B.2.2, B.2.3, B.2.4, B.2.5, C.30.ILC, C.29, D.2, D.3, or D.4 |
+| adopted, passed on, took hold | authorized decision, observed first use, use obtained from a particular source, or repeated practice in a stated population and interval | C.36, C.36.MC, the governing practice or the project decision record |
+| MHT, level, boundary, feedback down, model-use or scope reframe, frustration, interlevel conflict | relative level of model abstraction or refinement; population or period; new holon or level; whole reidentification; System boundary; relation crossing a holon boundary; supervisor-subholon feedback; bounded model use or claim scope; cross-scope residual; mathematical-lens use; interlevel ethical conflict | B.5.MR, C.36, A.1, A.1.1, B.2.P, B.2, B.2.2, B.2.3, B.2.4, B.2.5, C.30.ILC, C.29, D.2, D.3, or D.4 |
 | attractor, basin, stable style | loose style term or a dynamics, temporal, or mathematical-lens claim | F.17, F.18, F.9, A.3.3, C.27, C.29, or C.36 |
 | archive, front, Q-front, current pool, portfolio, retained set | archive or front relation; pool-policy result; selected-set result declaration; publication relation; refresh relation | C.18, C.19, G.5, E.17, E.24.PUB, G.11, or E.18.1 |
 
@@ -123,23 +124,23 @@ The trigger phrases are examples. Recover the intended object, relation, or clai
 
 #### C.36.P:5.1 - "The Platform Changed The Style"
 
-Short ordinary statement: `Here “platform” refers to the short-video recommendation System and to the visibility, recognition, and selection relations around it. The claim is that changes in those relations altered which dance variants were copied and retained.`
+The editor finds two records. The recommender changed the relative visibility of two dance variants, and the later published clips show a different mix. Those records can support the visibility and publication claims over the clips covered. “The platform changed the style” could also mean that dancers copied a different movement because of the recommendations, or that classes retained the change. Either is a further claim. To establish copying from this source, trace the relevant exposure and the dancers' use of the movement. For causal influence or continued class use, examine the corresponding comparison or later work.
 
-That short statement may be enough. If the result must be handed on or reused, retain it as:
+An editorial note for someone deciding how to present the evidence can read as follows.
 
 ```text
 CulturalEvolutionWordingRecoveryLine:
   triggerSpan: "platform changed the style"
   wordingUse: “platform” names the recommender and its visibility infrastructure
-  claimScope: this circulation and teaching-cycle comparison
-  recoveredObjects: short-video recommendation System; dance-variant set
-  recoveredRelations: recommendation mediation; visibility; recognition; selection
-  recoveredClaim: these relations changed which variants were copied and retained
-  applicablePatternRefs: A.1, C.36
-  retainedSourceLabelUse: keep "platform" as the source label for the recommender and visibility infrastructure
-  admissibleUse: discuss how visibility and recognition changed retained dance variants
-  blockedUse: treat platform as a root cultural kind or style as one global kind
-  nextUseOrStop: use C.36 for the case; use C.18 or G.11 only if archive or refresh is next
+  claimScope: relative visibility and the mix of variants in the covered periods and published clips
+  recoveredObjects: short-video recommendation System; dance variants; published clips
+  recoveredRelations: change in the recorded relative visibility of the two variants in the recommender; change in the share of each variant among the covered clips
+  recoveredClaim: visibility changed and a different mix appeared in the covered published clips
+  applicablePatternRefs: C.36 for transmission or retention; C.28 for a causal comparison
+  retainedSourceLabelUse: "platform" denotes the recommender in the visibility claim
+  admissibleUse: report the observed change in the clips and identify the question about dancers' choices
+  blockedUse: attributing a change in copying or in the classes’ repertoire to the recommender on these records alone
+  nextUseOrStop: publish the supported account now, or obtain evidence about the dancers if the intended claim depends on it
 ```
 
 #### C.36.P:5.2 - "This Tradition Is An Attractor"

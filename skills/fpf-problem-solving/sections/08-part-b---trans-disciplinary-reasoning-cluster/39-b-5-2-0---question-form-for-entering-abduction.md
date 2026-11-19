@@ -12,11 +12,11 @@
 
 **What this buys.** A common entry criterion for abduction: prompt species, open question, scope and motivating grounds remain recoverable while candidate explanations stay open.
 
-**Not this pattern when.** When the object is still a raw cue (`B.4.1`), a language-state threshold claim (`C.2.4`, `C.2.5`), a chosen hypothesis (`B.5.2`), or a selector decision about methods, substrates, or portfolios.
+**Not this pattern when.** When the object is a cue that still needs preservation or stabilization (`A.16.1`), a language-state threshold claim (`C.2.4`, `C.2.5`), a chosen hypothesis (`B.5.2`), or a selector decision about methods, substrates, or portfolios.
 
 ### B.5.2.0:0 - Question, account and publication form
 
-`U.AbductivePrompt` is a claim-bearing account of one open explanatory question. It records the question, its scope, prompt species and motivating grounds. It is a same-individual-dependent kind under `U.Episteme`: the account keeps C.2.1 identity, and §4.2.2 supplies its prompt-membership test. It may seed `B.5.2` when those grounds and the applicable language-state thresholds support rival comparison. The reusable form expresses the account; it can also express another account of another question.
+`U.AbductivePrompt` is a claim-bearing account of one open explanatory question. It records the question, its scope, prompt species and motivating grounds. It is a same-individual-dependent kind under `U.Episteme`: the account keeps C.2.1 identity, and §4.2.2 supplies its prompt-membership test. It may seed `B.5.2` when those grounds and the applicable language-state thresholds support rival comparison. Expressions of accounts about different questions can follow the same reusable publication form.
 
 ### B.5.2.0:1 - Problem frame
 `B.5.2` needs a question account that preserves its motivating grounds, including when they arise from an opportunity or probe rather than an anomaly.
@@ -82,7 +82,7 @@ An unfilled layout, an underspecified cue and an account that asserts its prefer
 
 Use §4.2 and §17 to judge whether that account supports entry into B.5.2 now. An account can remain identifiable after its grounds have failed or its question has been answered. Keep it available as the earlier entry and record the warranted continuation; its earlier admission does not authorize a new run without current grounds.
 
-The same question may have several accounts with different claims or effective schemes. Additional evidence changes account identity only when it changes one of C.2.1's identity constituents; adding an evidence relation alone need not do so. A reusable publication form can express different accounts. E.24.PUB governs the selected account's expression and publication; A.6.3.RT governs a prose-to-table transfer when that representation changes. A note containing several questions may express several prompt accounts in the same document.
+The same question may have several accounts with different claims or effective schemes. Additional evidence changes account identity only when it changes one of C.2.1's identity constituents; adding an evidence relation alone need not do so. Expressions of different accounts can follow the same reusable publication form. E.24.PUB governs the selected account's expression and publication; A.6.3.RT governs a prose-to-table transfer when that representation changes. A note containing several questions may express several prompt accounts in the same document.
 
 When returning to an earlier abductive inquiry, determine what changed and what the receiving work still needs before choosing a continuation:
 
@@ -162,7 +162,7 @@ New contention logs can support one rival more strongly while the latency questi
 
 If corrected measurements establish that latency stayed at 8 ms, the current attempt to explain an actual rise loses its initiating ground. Asking why the monitor reported 40 ms is a different question about the report; its answer need not explain a real slowdown.
 
-The same `AnomalyStatement` layout can express that reporting question and a question about a real slowdown in another service. Its shared columns do not identify one common question. Record each subject, contrast and scope so that the two accounts and their rivals remain distinguishable; they may occupy two rows of one note. One hypothesis that answers both questions would not make the questions identical.
+The reporting question and a question about an actual slowdown in another service can be expressed in accounts that use the same `AnomalyStatement` layout. Its shared columns do not identify one common question. Record each subject, contrast and scope so that the two accounts and their rivals remain distinguishable; they may occupy two rows of one note. One hypothesis that answers both questions would not make the questions identical.
 
 ### B.5.2.0:14 - Prompt package discipline
 

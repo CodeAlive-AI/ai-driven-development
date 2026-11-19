@@ -83,14 +83,7 @@ For this pattern, a published facet profile is reviewable when:
 A polished label, one strong facet, or one memorable route note does not by itself yield an admissible profile reading. The profile remains conformant only when the named facets stay explicit and decomposable.
 
 #### C.2.LS:4.3 - Composite readings
-A language-state judgement may be composite, but the composite shall be decomposable. For example, a cue may be:
-
-- low `AE`,
-- medium `CD`,
-- derived from an identified trace, with any evidential use separately qualified,
-- and representation-wise mixed rather than purely symbolic.
-
-A conforming profile makes this decomposition visible rather than hiding it under one stage label such as "early" or "raw".
+For a diagnostic note, ask what the wording lets a reader identify and which explanations the observations still permit. A note can name two sensors, their readings and the time window precisely while leaving both a calibration fault and a sampling delay open. Cite the trace from which the readings were derived. If the decision also depends on how the sensor encodes them, inspect that encoding. A table listing the two readings can supply the user with symbolic labels while leaving the internal code unknown.
 
 #### C.2.LS:4.4 - Corridor map note
 For a map of the related language-state patterns, see `C.2.2a:15`.
@@ -100,7 +93,7 @@ A team may say a draft is "still forming" for different reasons. The profile let
 
 **Operator alert.** An operator alert note can have stable alert terms and structure and low closure, while participating in an operator acknowledgement-and-check procedure.
 
-**Inquiry note.** An inquiry note can be low articulation while reporting identified exemplars and observations.
+**Inquiry note.** A station note records the service identifier, date and actual arrival time for each of three trains at the same station. The reader can identify all three events. To compare their delays, obtain each scheduled arrival from the applicable timetable and compare it with the matching actual arrival on the same time basis.
 
 ### C.2.LS:6 - Bias-Annotation
 Making selected facet readings explicit costs more than using one stage adjective. It makes their contribution to the receiving judgement inspectable, including any threshold that judgement uses; retain the ordinary wording or existing reading when that already serves the use.
@@ -174,17 +167,10 @@ The profile states:
 The alert has a complete question and still-open diagnostic alternatives. Its code factors and operator-loop connection answer different questions; no one facet replaces the others.
 
 #### C.2.LS:13.2 - Research cue before lexical repair
-An inquiry note reporting a mismatch noticed through bodily observation may state:
-
-- low `AE`,
-- very low `CD`,
-- the C.2.6 account of the observer, bodily observation and reported mismatch, including any exemplars or instrumental trace that contribute,
-- and any representation readings needed for the next use, assessed on the note's identified expression under C.2.7.
-
-Use the profile to identify what the next question still needs. `A.16.1` preserves the cue; `A.6.P` can recover an unclear relation, and `B.5.2` starts from an admissible `U.AbductivePrompt`. Apply the receiving pattern's conditions when choosing the move.
+An observer reports a vibration just after startup. The note identifies the machine, the observer and the occasion. It leaves open what changed and which part vibrated. The next investigator can locate the observation and seek a comparison or a trace. If a later summary proposes a cause, identify which evidence supports that claim. A.16.1 can preserve the initial cue. Use A.6.P for an unclear relation or B.5.2 when the material supplies the conditions for an abductive prompt.
 
 #### C.2.LS:13.3 - Architecture-description case
-A viewpoint-bound note about the adequacy of an architecture description may state its constraints through explicit typed predicates, be moderately high in `AE`, still mid-level in `CD` and symbolic in its representation-factor bundle. Its C.2.6 account identifies the document edition and assertions used for the adequacy judgement. The profile keeps description-side adequacy distinct from system-side engineering quality.
+A note evaluates whether a named edition of an architecture description assigns a responder to each failure mode. For one mode the description names two possible responders and gives no rule for choosing between them. The note can express this finding precisely. The assignment remains open in the description. To determine who responded in service, inspect the record of that incident.
 
 #### C.2.LS:13.4 - Same `F`, different profile
 Two notes may supply the same required expression properties and still differ sharply in articulation, closure, source and use conditions, and representation factors. One may be used in an operator's check procedure with diagnostic alternatives still open; another may assess a document's assertions with comparatively closed alternatives. The profile bundle keeps that difference visible instead of letting `F` behave like a master factor.

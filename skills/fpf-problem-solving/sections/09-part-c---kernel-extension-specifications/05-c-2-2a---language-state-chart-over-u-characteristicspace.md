@@ -131,7 +131,7 @@ A conforming account shall not infer:
 Where operationally meaningful thresholds exist, they must be published on the relevant slots rather than being disguised as informal `F` sublevels.
 
 #### C.2.2a:4.7 - Position versus publication form
-A position claim states facet readings about the identified episteme. Witnesses provide grounds for those readings; a particular expression expresses the claim for the bounded use and may follow a selected reusable publication form, including an MVPK face. An independently identified carrier bears that same expression under E.24.PUB. Changing the expression, form, or carrier does not by itself change a facet reading. Any later publication qualified under an endpoint subject pattern still needs that pattern's conditions.
+Identify the expression or component whose properties supplied each reading, and the expression in which the assessor reports it. Reformatting the assessment table can preserve every reading about the earlier alert. Rewriting the alert can change its articulation even if the assessor uses the same table. Check the affected facet on the changed expression. The table can follow a reusable publication form, including an MVPK face, and its carrier can be identified under E.24.PUB. A subsequent publication has to satisfy the conditions of its receiving pattern.
 
 #### C.2.2a:4.8 - Threshold publication discipline
 If a threshold is used to justify a move or endpoint entry, that threshold shall be stated on explicit basis slots in the chart. Statements such as `this is now ready`, `this has matured`, or `this is still too early` are non-conformant when they substitute for undeclared slot conditions.
@@ -151,7 +151,7 @@ Use the position facts for the named receiving question. If the next action uses
 
 **Show (System).** A service disturbance is a system-side phenomenon. The positioned `U.Episteme` publication is the alerting episteme published from that disturbance. In `Pump-alert-21` (:13.2), its position combines declared observation terms and unit-bearing values, `CD1`, and local/sparse/symbolic readings for the defined indicator code. The account separately states the operator acknowledgement and diagnostic-check condition.
 
-**Show (Episteme).** A model-vs-observation discrepancy is a witness-level tension, not the positioned episteme publication itself. Once preserved as a cue pack, the resulting `U.Episteme` may be low in articulation, low in closure, derived from an identified trace, and only partly symbolic even when rendered into prose.
+**Show (Episteme).** The research note in :13.1 names a discrepancy and two possible causes. Its reader can compare the causes but cannot yet attribute the discrepancy to either one. To assess the internal encoding of the readings, the reader would need evidence about the meters. The typography of the note supplies no such evidence.
 
 ### C.2.2a:6 - Bias-Annotation
 The pattern favors separate facet readings over one stage adjective when a decision depends on them. Ordinary descriptions remain sufficient under the non-use boundary in :0.
@@ -202,15 +202,7 @@ The external comparisons below concern publication distinctions and scoped profi
 ### C.2.2a:13 - Worked Examples
 
 #### C.2.2a:13.1 - Inquiry cue before endpoint capture
-A position claim for a research cue note may state:
-
-- `F`: the terms needed for the inquiry are defined, while the proposed inferences remain in prose,
-- low articulation explicitness,
-- low closure,
-- the relevant bodily observation or trace derivation, stated as a separate claim under C.2.6,
-- and mixed representation factors.
-
-Keep these readings explicit when testing entry into `A.6.P` or `C.25`; the note should remain upstream while the relevant receiving pattern's entry conditions remain unmet, even if its prose looks polished.
+An inquiry note says that two meters gave different readings under the same recorded operating conditions. It identifies the meters and their units. It names calibration drift and a sampling-time difference as possible causes, with no observation yet to distinguish them. A reader can recover a diagnostic question and two live explanations. The display uses names and numbers. If the comparison concerns the code inside either meter, its distribution across internal units is still unknown. Use the established readings for the diagnostic inquiry. Entry to a pattern that needs a specific relation or causal conclusion depends on that pattern’s own conditions.
 
 #### C.2.2a:13.2 - Routed operator alert note
 Use `Pump-alert-21` from C.2.LS:13.1 to compare the three stated diagnostic alternatives before selecting a check. The alert names Pump P7, its indicated pressure of 70 kPa, the alarm condition `p_indicated(P7,t21) < 90 kPa`, and the contrasting implications of sensor bias, low supply, and an open bypass. Its chart readings and separate use condition are:
@@ -226,7 +218,7 @@ If an accepted reference-gauge reading of 72 kPa for the same sample t21 exclude
 Keep the live responses explicit in the route-bearing seam publication. Before publishing an endpoint-subject-qualified work record or reliance record, test the applicable downstream pattern's conditions; these chart readings do not decide that result.
 
 #### C.2.2a:13.3 - Viewpoint-bound adequacy note
-An adequacy note using identified assertions from an architecture description may state explicit vocabulary and predicates, articulation sufficient for the described comparisons, mid-level closure and symbolic representation. Its account names the document edition and accessible assertions needed for that judgement under C.2.6. Its position can be compared in the same chart as a bodily-observation cue when the selected Characteristics and Scales have the same meanings; source and access claims remain separate.
+A review note asks whether the architecture description specifies who acknowledges a storage fault. The cited edition names two possible responders and leaves their assignment open. A reviewer can identify the unresolved choice and the evidence still needed. Before assigning a closure level, check whether either responder has been ruled out or chosen and what would allow that choice to be reopened. Compare the note with an observation report on the same chart only for facets assessed on the same basis. Keep the source of each assessment available.
 
 #### C.2.2a:13.4 - Polished prose is not closure
 A prose rewrite may look cleaner, more compact, or more manager-readable than the source cue and still remain low in closure or articulation explicitness. If the underlying slot values, uncertainty, and route plurality remain unchanged, then publication polish changes the rendering or carrier lane, not the chart position by itself.

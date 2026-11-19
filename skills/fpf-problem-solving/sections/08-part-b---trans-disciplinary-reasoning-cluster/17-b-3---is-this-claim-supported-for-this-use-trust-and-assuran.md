@@ -239,7 +239,7 @@ What changes in practice: the design decision is evaluated against `0.81`, not a
 
 Starting sentence: “The dashboard approves launch.”
 
-The dashboard is a publication face. Suppose it displays `GateDecision GD-17`, which records that a named gate passed for release candidate R. The repaired sentence is: “The dashboard shows GateDecision GD-17 for release candidate R; the decision, not the display, records that the gate passed.”
+Suppose the dashboard displays `GateDecision GD-17`, which records that a named gate passed for release candidate R. The repaired sentence is: “The dashboard shows GateDecision GD-17 for release candidate R; the decision, not the display, records that the gate passed.”
 
 Use A.21 and the release or permission pattern that consumes the gate decision. No assurance claim is present, so B.3 stops. If the dashboard does not resolve a gate decision, it is only a cue and launch approval remains unresolved.
 

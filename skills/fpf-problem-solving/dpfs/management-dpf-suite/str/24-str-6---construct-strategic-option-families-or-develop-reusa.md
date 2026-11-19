@@ -80,7 +80,7 @@ Keep a possibility when its difference can matter to a plausible later choice, r
 
 Distinguish three questions before using an archive or front claim. What is worth retaining for exploration? Which candidates are currently non-dominated under a stated comparison? What should the chooser select? FPF C.18 governs the archive and front records when those claims matter; C.17 supports a claimed difference; C.11 governs local choice. State the retention or selection grounds if either conclusion is needed.
 
-For a small set, describe the alternatives and their retention reasons directly. A claim of non-domination requires a stated comparison. A decision to fund joint use requires its own grounds and authority.
+For a small set, describe the alternatives and their retention reasons directly. To claim that a direction is non-dominated, compare it with the eligible rivals on the characteristics chosen for this strategic decision (STR.9:4.2). A direction may merit further investigation while its standing is open. Funding joint use requires its own grounds and authority.
 
 Stop carrying a possibility when its plausible continuation no longer warrants the full burden. STR.7 can compare retention with a worthwhile experiment, but retention alone does not demand a test.
 

@@ -36,9 +36,9 @@ The [Foundational Thinking Architectural Reference](suite-reference/_index.md) h
 | Framework | What you can work on | Patterns | Text, M characters |
 | --- | --- | ---: | ---: |
 | [Mathematical Thinking (MATH)](math/_index.md) · [Markdown](math/_index.md) | Construct mathematical objects, operations and alternatives; derive consequences and meet proof obligations. | 20 | 0.474 |
-| [Mathematical Modeling (MMP)](mmp/_index.md) · [Markdown](mmp/_index.md) | Relate a subject question to mathematics; infer, predict, compare interventions, design observations and revise or combine models. | 17 | 0.569 |
+| [Mathematical Modeling (MMP)](mmp/_index.md) · [Markdown](mmp/_index.md) | Relate a subject question to mathematics; infer, predict, compare interventions, design observations and revise or combine models. | 17 | 0.571 |
 | [Physical Thinking (PHY)](phy/_index.md) · [Markdown](phy/_index.md) | Construct and test physical accounts; select interactions and idealizations, derive consequences and distinguish them by observation. | 10 | 0.302 |
-| [Computational Thinking (CMP)](cmp/_index.md) · [Markdown](cmp/_index.md) | Construct algorithms that obtain the required answer within correctness, resource and interaction conditions. | 16 | 0.440 |
+| [Computational Thinking (CMP)](cmp/_index.md) · [Markdown](cmp/_index.md) | Construct algorithms that obtain the required answer within correctness, resource and interaction conditions. | 16 | 0.441 |
 | [Notational Engineering (NOT)](not/_index.md) · [Markdown](not/_index.md) | Design expressions, interpretations and transformations that make operations usable and changes recoverable. | 8 | 0.217 |
 
 **Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals. These are scope indicators.

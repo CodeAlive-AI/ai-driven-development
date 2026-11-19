@@ -175,7 +175,7 @@ A continuation depends on more than a position. Purpose selects what matters, th
 
 Preparing a cue and resuming later are temporally related contributions. During continuation, applying the subject method and regulating the return can contribute simultaneously to the encompassing work.
 
-Their occurrence does not by itself establish Method parthood; use B.1.5 when that relation matters. A longer interruption and a higher method level are also different distinctions.
+Their occurrence does not by itself establish Method parthood; use B.1.5 when that relation matters.
 
 Configuration recovery testing asks whether a dependency withstands a condition; this method supplies the ordinary preparation and reconstruction that can be performed or tested. A configuration test is not a mandatory predecessor of every return.
 

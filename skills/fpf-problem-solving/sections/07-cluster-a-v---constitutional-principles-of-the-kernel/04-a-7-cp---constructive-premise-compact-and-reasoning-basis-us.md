@@ -6,7 +6,7 @@
 
 ### A.7.CP:0 - Use this when
 
-Use this pattern when reasoning, ontology analysis, choice, or reconciliation relies on a broad constructive claim and another person must be able to recover which claim, receiving claim or result, posture, scope, work occurrence, and interval carried that reliance.
+Use this pattern when reasoning, ontology analysis, choice, or reconciliation relies on a broad constructive claim and another reader must be able to recover which claim, receiving claim or result, posture, scope, work occurrence, and interval carried that reliance.
 
 The first useful move is to name the dated reasoning work, each claim-bearing result or receiving decision it is forming, the `A7CP-*` claim IDs used for that result, and whether each use is an `adoptedPremise` or `conditionalAssumption`. Leave the other compact claims latent.
 

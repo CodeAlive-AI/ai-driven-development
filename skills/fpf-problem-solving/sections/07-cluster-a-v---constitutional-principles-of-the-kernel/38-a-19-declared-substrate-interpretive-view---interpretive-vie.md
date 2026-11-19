@@ -43,7 +43,7 @@ The reader then cannot tell whether a visible interpretation is one optional int
 
 #### A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW:0.2 - What this buys
 
-This pattern buys one disciplined middle layer:
+An interpretation helps the reader inspect the declared substrate while keeping the following distinctions explicit:
 
 - the substrate remains the semantic center;
 - thinner interpretive views remain admissible when a full atlas form is unnecessary;
@@ -91,7 +91,7 @@ Common confusion to kill early: one visible atlas or metric note does not make a
 
 ### A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW:1 - Problem frame
 
-Once one source-set and search/outcome-space substrate has been declared, many lines still need one second-order interpretive view for ordinary work.
+A declared source-set and search/outcome-space substrate may still need an interpretation that answers a reader's inspection question.
 
 Examples include:
 
@@ -120,7 +120,7 @@ How should one declare an interpretive view so that:
 | Force | Tension |
 | --- | --- |
 | Existing view law vs local usefulness | The interpretive view must be useful in local substrate work, but it cannot invent a second `view` ontology beside `A.6.3` and `E.17.0`. |
-| Substrate stability vs interpretive help | Readers need one interpretive layer, but that interpretive layer must not redefine the substrate. |
+| Substrate stability vs interpretive help | Readers may need help interpreting the declared substrate while retaining its source sets, spaces and relations. |
 | Thin interpretation vs atlas-form reading | Some cases need only one light interpretive view; others genuinely need one fuller atlas-form reading. The pattern must admit both without making the fuller form default. |
 | Recoverability vs convenience | Derived tradition or palette views help reading, but they must not hide the base palette, base source set, or active declared spaces. |
 | Qualifier richness vs semantic inflation | Declared map refs, metrics, transition qualifiers, and distortion notes are often useful, but they must stay optional interpretive qualifiers rather than new mandatory core. |
@@ -130,7 +130,7 @@ How should one declare an interpretive view so that:
 
 Declare interpretive views as substrate-side only readings over one already-declared substrate-bearing basis, keep them explicitly under existing view law, and reserve atlas form for the cases that truly need it.
 
-#### A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW:4.1 - Declared-substrate interpretive-view record and outside work
+#### A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW:4.1 - Interpretive-view content and related work
 
 Use this pattern to declare:
 
@@ -194,7 +194,7 @@ The view may foreground the substrate's `OutcomeMapRef`, `SpaceMetricRef`, `Tran
 **IV-5 - Thin interpretation and atlas interpretation are different profiles.**
 Ordinary `DeclaredSubstrateInterpretiveView` is a complete admissible profile, not a placeholder. `DeclaredSubstrateAtlasView` is used only when the fuller composite inspection question is real.
 
-**IV-6 - Atlas form requires a complete composite record.**
+**IV-6 - Atlas form keeps its constituent views and connections recoverable.**
 If atlas form is active, the view must keep the base substrate, the active source or set result, the relevant `TypedSetViews`, any cited spaces, any cited declared map refs, and any qualifiers explicit enough for the reader to recover how those parts answer the inspection question.
 
 **IV-7 - Local specialization stays local.**
@@ -236,7 +236,7 @@ Many cases need one interpretive view but not one atlas-form interpretation pack
 
 Use thin interpretation when a direct explanation answers the inspection question, including when it cites a needed metric, map, transition or loss qualification.
 
-#### A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW:4.7 - Atlas form is fuller interpretation and needs a complete record
+#### A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW:4.7 - Atlas form combines views and their connections
 
 Use `DeclaredSubstrateAtlasView` when the inspection question requires showing how several declared views, spaces, maps or qualifications relate within the same substrate.
 The minimal admissible atlas-form interpretation declaration therefore contains:
@@ -304,7 +304,7 @@ Once the interpretation is sufficient, stop. Select a neighboring pattern only f
 
 - Use `G.2` when the interpretive view becomes palette-first, tradition-facing atlas work. That is one local specialization of atlas interpretation, not the common family head.
 - Use `F.18` when the question under repair is label choice around interpretive-view, atlas, palette, or declared-map-ref language. Naming notes may explain the labels, but they do not change the base substrate or the inspection question.
-- Use `A.6.P` when one passage collapses view, surface, space, map, or palette into one umbrella word. Repair the layer split first, then continue.
+- Use `A.6.P` when one passage collapses view, surface, space, map, or palette into one umbrella word. Recover the intended predicate and its participants, then continue.
 - Use `A.0` when cold-reader glossing is what the current line lacks. Glosses help recognition; they do not replace the base interpretive view declaration.
 - Use the corresponding pattern in §4.10 when the remaining question concerns selector outcomes, shipping, publication, live-pool policy or action planning.
 
@@ -388,7 +388,7 @@ Apply these checks to the interpretation and claims actually made.
 
 **Benefits**
 
-- Readers get one explicit interpretive layer without losing the declared substrate.
+- Readers can inspect the source sets, spaces and relations while keeping their declarations recoverable.
 - FPF keeps one common interpretive-view family without forcing `G.2` or another local specialization to carry the whole interpretive requirement.
 - Atlas-form interpretation remains available where it helps, but thinner interpretive views stay lawful.
 
@@ -407,7 +407,7 @@ An inspection question determines which aspects and connections of a declared su
 | Practice line | Primary accepted basis | Practice demand disciplined here | Practical safeguard bought | Adoption stance |
 | --- | --- | --- | --- | --- |
 | Interpretive readings should remain entityOfConcern-preserving views rather than becoming fresh semantic centers. | `A.6.3` preserves EntityOfConcern between source and receiving epistemes; `E.17.0` adds independent viewpoint conformance for `U.View`. | `IV-0`, `IV-1`, `IV-8`, `CC-A19IV-2`, `CC-A19IV-3`. | Keeps interpretive prose from quietly turning into retargeting or new view-law invention. | **Adopt.** Reuse the existing view law directly rather than minting one local alternative. |
-| Palette-first SoTA synthesis already treats atlas interpretation as optional neighboring interpretation rather than the default meaning of `Tradition` or `SoTAPaletteDescription`. | `G.2:4.7` already keeps `TraditionAtlasView` as optional neighboring interpretation and preserves palette-first recoverability. | `IV-5`, `IV-6`, `IV-7`, `CC-A19IV-5`, `CC-A19IV-8`, worked slice `5.2`. | Keeps atlas form available without letting the most salient visible interpretive layer replace the base palette or family head. | **Adopt/Adapt.** Adopt palette-first recoverability and adapt it into one reusable common interpretive family. |
+| Palette-first SoTA synthesis already treats atlas interpretation as optional neighboring interpretation rather than the default meaning of `Tradition` or `SoTAPaletteDescription`. | `G.2:4.7` already keeps `TraditionAtlasView` as optional neighboring interpretation and preserves palette-first recoverability. | `IV-5`, `IV-6`, `IV-7`, `CC-A19IV-5`, `CC-A19IV-8`, worked slice `5.2`. | Keeps atlas form available without letting the most salient visible interpretation replace the base palette or family head. | **Adopt/Adapt.** Adopt palette-first recoverability and adapt it into one reusable common interpretive family. |
 | FPF keeps richer map, metric and transition qualifications conditional on the inspection question. | The bounded QD comparisons in `A.19.SOURCE-SET-SPACE-SUBSTRATE:11` motivate this design choice; they do not establish it as a universal rule of contemporary practice. | `IV-4`, `IV-5`, `IV-6`, `CC-A19IV-5`, `CC-A19IV-6`, `CC-A19IV-7`. | Keeps thinner interpretation admissible, keeps atlas interpretation reusable but non-default, and prevents rich formal qualifier from being smuggled in by default. | **Adapt.** Keep richer formal qualifier available without pretending it is the baseline for every interpretive reading. |
 
 ### A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW:12 - Relations

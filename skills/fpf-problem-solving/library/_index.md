@@ -69,16 +69,16 @@ Repeat the comparison on varied tasks before drawing a broader conclusion. The e
 
 ## What is available
 
-**FPF Core** contains 406 patterns in 18.471 million characters. It supplies transdisciplinary concepts and methods, including methodological work, architecture construction and comparison, and open-ended development. **36 Domain Principle Frameworks (DPFs)** supply subject-specific methods: 26 belong to four Suites, and ten have their own files directly in the DPF catalogue.
+**FPF Core** contains 406 patterns in 18.594 million characters. It supplies transdisciplinary concepts and methods, including methodological work, architecture construction and comparison, and open-ended development. **36 Domain Principle Frameworks (DPFs)** supply subject-specific methods: 26 belong to four Suites, and ten have their own files directly in the DPF catalogue.
 
 A DPF describes one field through a connected pattern language. A **Suite** describes a composite discipline through its constituent fields and their relations. An **Architectural Reference** explains how the relevant language is arranged and why: within a framework, across a Suite, or across the Library.
 
 | DPF Suite | Working subject | DPFs | Patterns | Text, M characters |
 | --- | --- | ---: | ---: | ---: |
-| [Engineering](../dpfs/engineering-dpf-suite/_index.md) | Designing, realizing, changing and maintaining systems; knowledge access, semantic integration and control architecture design. | 5 | 99 | 2.847 |
-| [Management](../dpfs/management-dpf-suite/_index.md) | Direction, goals, commitments, operations, resources, markets, communities and organizational change. | 14 | 201 | 5.601 |
-| [Foundational Thinking](../dpfs/foundational-thinking-dpf-suite/_index.md) | Mathematical and physical accounts, models, algorithms and usable notation. | 5 | 71 | 2.002 |
-| [Human Capability Engineering](../dpfs/human-capability-engineering-dpf-suite/_index.md) | Human learning and somatic change, connected to capability in later work. | 2 | 34 | 1.250 |
+| [Engineering](../dpfs/engineering-dpf-suite/_index.md) | Designing, realizing, changing and maintaining systems; knowledge access, semantic integration and control architecture design. | 5 | 99 | 2.852 |
+| [Management](../dpfs/management-dpf-suite/_index.md) | Direction, goals, commitments, operations, resources, markets, communities and organizational change. | 14 | 201 | 5.607 |
+| [Foundational Thinking](../dpfs/foundational-thinking-dpf-suite/_index.md) | Mathematical and physical accounts, models, algorithms and usable notation. | 5 | 71 | 2.005 |
+| [Human Capability Engineering](../dpfs/human-capability-engineering-dpf-suite/_index.md) | Human learning and somatic change, connected to capability in later work. | 2 | 34 | 1.251 |
 
 The [DPF catalogue](../dpfs/_index.md) lists the ten further frameworks and opens each Suite's files. Suite totals sum their constituent framework texts; separate Suite References and README pages are excluded. Character counts include spaces and original line breaks.
 

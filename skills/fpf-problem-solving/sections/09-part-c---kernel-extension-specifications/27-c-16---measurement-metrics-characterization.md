@@ -27,7 +27,7 @@
 
 C.16 covers construction and use of measurement models. For a performed measurement, it keeps the following parts of the result account recoverable:
 
-- one measurand or otherwise identified measurement subject;
+- the entity or ordered tuple being measured and the quantity or other Characteristic attributed to it under the stated conditions;
 - one Characteristic and one Scale, with Level or Coordinate and Unit when applicable;
 - the reusable measurement specification, `U.Method`, measurement model, calibration requirements, and uncertainty treatment;
 - dated measurement work with performer, actual bindings, resources, and time stance;
@@ -62,7 +62,7 @@ If a fact needed for that interpretation is unavailable, state which conclusion 
 
 #### C.16:5.1 - Name the measurand and measurement subject
 
-**M‑SUB‑1.** Name the measurand: the quantity or characteristic intended to be measured. When FPF uses a non-quantity Characteristic, name the subject and the Characteristic whose Scale position is being attributed.
+**M‑SUB‑1.** Identify the measurement subject and what you intend to determine about it. For a quantity, the measurand specifies which quantity of that subject under which conditions. A pressure at one port and the maximum pressure anywhere in a vessel are different measurands. For a non-quantity Characteristic, identify the subject, the Characteristic and the Scale on which a value is attributed.
 
 **M‑SUB‑2.** Preserve arity. An entity Characteristic has one subject; a relation Characteristic has the exact ordered tuple required by A.17. A relation reading is not silently rewritten as a unary property of one participant.
 
@@ -103,6 +103,8 @@ Start writing before every choice is settled: identify the wanted distinction, p
 5. **Choose the useful return.** Supply the interpreted value, interval or conditional result when it answers the question. Otherwise identify which change could resolve the remaining ambiguity: refine the relation, change the measurement arrangement, obtain an applicable calibration or narrow the conclusion. Choose further observation by the distinction it can resolve and the work it demands, using C.11.DUA when that choice needs deliberation. C.16.RM compares changes to models, arrangements and calculation, then carries the selected repair through the interpretation while retaining the wanted quantity.
 
 When an observed discrepancy matters, compare its plausible sources in the subject account, measurement relation and actual arrangement. Change the contribution that can alter the answer; sometimes removing an unwanted influence from the arrangement is more useful than modeling it in greater detail. A model-development result states the relation and what it would establish. A claim about a performed measurement also identifies the work and obtained result under §§5.3-5.5.
+
+Instrument resolution describes how small a change in the measured quantity can produce a perceptible change in indication. Extra display digits alone establish neither that capability nor a smaller uncertainty in the result. When comparing two measurement models, hold the question, subject and conditions fixed or establish how the observations bear on the same quantity. Apply B.5.MR:4.2 if the claim is that the second model strictly refines the first. A change of instrument may supply new evidence for that comparison.
 
 #### C.16:5.4 - Recover input quantities, output quantity, and uncertainty
 
@@ -243,11 +245,13 @@ Now allow hints during the assessment. The earlier a and b may no longer describ
 
 ### C.16:12 - Carry a reading into a calculation and revise its basis
 
-A retained account attributes temperature `20 °C ± 1 °C` to Pump P over window W under a named specification and model; the interval is a bound for this example. Its content is a `ReadingContent` member. Relying on it as a measurement result still needs the performed-measurement and uncertainty grounds above. The Coordinate 20 on the Celsius Scale, the interval, the reading content and an episteme stating that content answer different questions.
+A retained account attributes temperature `20 °C ± 1 °C` to Pump P over window W under a named specification and model; this example admits every additive error from −1 to +1 °C and has no further constraint on temperature. Its content is a `ReadingContent` member. Relying on it as a measurement result still needs the performed-measurement and uncertainty grounds above. The Coordinate 20 on the Celsius Scale, the interval, the reading content and an episteme stating that content answer different questions.
 
 A declared scoring rule reads that Celsius position and assigns `g(c)=c/40` on `[0,40]`, with higher temperature preferred in this illustrative use. With the required admission grounds, it returns score content for P at W: `0.5`, bounded by `[0.475,0.525]` under this interval-propagation rule. That content can pass to a comparator accepting this score Scale and bound. The scoring calculation supplies no second temperature measurement. If an upstream UNM instead supplies `293.15 K`, the number cannot fill the Celsius argument. Apply the declared inverse conversion, or select a kelvin-input scoring rule whose correspondence is established.
 
-Now comparison of the written model and calibration record reveals that the measurement needs a `+2 °C` correction not included before. The corrected account attributes `[21,23] °C`, and this same scoring rule gives `[0.525,0.575]`. Recover whether the specification already permitted this calibrated correction or must itself change. Preserve the earlier assertion and its basis, then reconsider the scores and comparisons that relied on it. A new window W2 instead needs a new attribution for W2; it can leave the Characteristic, Scale, specification and scoring rule unchanged. These returns follow from the general identity and replacement rules, not from the displayed numbers alone.
+Now comparison of the written model and calibration record reveals that the measurement needs an exact `+2 °C` correction not included before. With the same admitted reading errors, the corrected account attributes `[21,23] °C`, and this same scoring rule gives `[0.525,0.575]`. Recover whether the specification already permitted this calibrated correction or must itself change. Preserve the earlier assertion and its basis, then reconsider the scores and comparisons that relied on it. A new window W2 instead needs a new attribution for W2; it can leave the Characteristic, Scale, specification and scoring rule unchanged. These returns follow from the general identity and replacement rules, not from the displayed numbers alone.
+
+For the question “which temperatures are compatible with this account at W?”, 19 °C was admitted only by the earlier bound and 23 °C only by the corrected one. The correction revises the model-based attribution. A further observation at W, justified under the corrected model, could instead exclude some of its previously compatible temperatures while preserving its other assertions.
 
 ### C.16:9 - Bias-Annotation
 
@@ -263,7 +267,7 @@ Now comparison of the written model and calibration record reveals that the meas
 
 For a proposed model, apply the subject, scale, model and applicable calibration checks. Apply work and result checks when asserting a performed measurement, and later-use checks when making that later claim.
 
-1. **Subject:** one measurand or measurement subject is named, with correct entity or relation arity.
+1. **Subject:** identify the entity or ordered tuple, then the quantity or other Characteristic sought under the stated conditions.
 2. **CSLC:** Characteristic, Scale, Level or Coordinate, applicable Unit and time stance are interpretable. Add a preference rule only for a use that judges which values are preferable.
 3. **Method/model:** the method, model version, inputs, output quantity, assumptions and validity domain are recoverable. When the relation had to be constructed, §5.3.1 explains how the procedure produces the indication and what sought values it can distinguish. Keep a proposed model separate from a claim of performed measurement.
 4. **Calibration:** applicable calibration work/result, reference basis, coefficients or corrections, validity interval, and uncertainty contribution are cited when required.
@@ -308,7 +312,7 @@ These sources contribute different parts of measurement interpretation. Their qu
 | [QUDT Schema 3.4.0, June 2026 catalogue](https://www.qudt.org/catalog/qudt-catalog.html) | Citable identifiers distinguish quantity kinds, units, dimensions and datatypes. Source-local citation needs no additional semantic mapping; a different intended local sense does. | A shared URI does not establish the same measurand, Scale, model, calibration regime or direct comparability. |
 | [W3C/OGC SOSA/SSN Recommendation, 19 October 2017](https://www.w3.org/TR/vocab-ssn/), and [2023 Edition First Public Working Draft, 16 September 2025](https://www.w3.org/TR/vocab-ssn-2023/) | Observation and procedure accounts can supply relevant subject, property and measurement information. Interpret each claim under its cited edition; a draft proposal carries its stated draft status. | An observation graph does not by itself establish FPF Work identity, actual bindings, a measurement result, its episteme or a later use. A correspondence claim needs its own basis. |
 
-**Value and result distinctions.** [VIM3 entry 1.1](https://jcgm.bipm.org/vim/en/1.1.html), [entry 1.9](https://jcgm.bipm.org/vim/en/1.9.html) and [entry 1.27](https://jcgm.bipm.org/vim/en/1.27.html) distinguish a quantity, its adopted unit reference and a quantity-value scale; [entry 2.9](https://jcgm.bipm.org/vim/en/2.9.html) includes attributed values and the information needed to interpret a measurement result. These distinctions support the separation used here. FPF also uses nominal Scales and non-measurement evaluations; VIM terminology does not classify all such readings or admit an FPF kind. `ReadingContent` is the bounded FPF interface construction in :5.5.1.
+**Value and result distinctions.** [VIM3 entry 1.1](https://jcgm.bipm.org/vim/en/1.1.html), [entry 1.9](https://jcgm.bipm.org/vim/en/1.9.html) and [entry 1.27](https://jcgm.bipm.org/vim/en/1.27.html) distinguish a quantity, its adopted unit reference and a quantity-value scale; [entry 2.9](https://jcgm.bipm.org/vim/en/2.9.html) includes attributed values and the information needed to interpret a measurement result. The [measurand (entry 2.3)](https://jcgm.bipm.org/vim/en/2.3.html), [indication (entry 4.1)](https://jcgm.bipm.org/vim/en/4.1.html) and [resolution (entry 4.14)](https://jcgm.bipm.org/vim/en/4.14.html) locate three different questions in the measurement. FPF also uses nominal Scales and non-measurement evaluations; VIM terminology does not classify all such readings or admit an FPF kind. `ReadingContent` is the bounded FPF interface construction in :5.5.1.
 
 **Constructing and revising the model.** GUM-6:2020, §§7, 9-10 and 12, supplies the distinction between the measurement principle, effects of implementation and adequacy for use. Section :5.3.1 turns that distinction into a construction and an ambiguity test. The circuit and assessment cases work this instruction using their stated subject models.
 
@@ -351,7 +355,7 @@ Use C.16 first when the object is a sensor reading, survey response, dashboard v
 
 Recover the ordinary measurement chain first:
 
-1. name the measurand or subject, Characteristic, Scale, value or Level, applicable Unit and time stance; identify preference only when the use evaluates the result;
+1. identify the subject and the quantity or other Characteristic measured, then the Scale, value or Level, applicable Unit and time stance. State a preference when the use evaluates the result;
 2. separate reusable method and model from dated work and actual bindings;
 3. name input quantities, output quantity, calibration basis, uncertainty propagation, and one measurement-result episteme;
 4. distinguish emitted output, indication, actual subject state, measurement result, result episteme, diagnosis, criterion verdict, and decision; and

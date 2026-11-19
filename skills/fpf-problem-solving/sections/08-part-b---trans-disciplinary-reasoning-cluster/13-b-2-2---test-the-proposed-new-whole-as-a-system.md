@@ -6,9 +6,9 @@
 
 ### B.2.2:0 - Use This When
 
-Use this pattern when B.2 has identified one candidate new whole and that individual must be recognized under the already admitted `U.System` kind: a swarm, production cell, cloud platform, regulated control system, organizational unit, or another physical or operational whole that can act in work or transformation while remaining itself.
+Use this pattern when B.2 has identified one candidate new whole and that individual must be recognized under the already admitted `U.System` kind: a swarm, production cell, cloud platform, regulated control system, organizational unit, or another physically embodied whole that can act in work or transformation while remaining itself.
 
-**First useful move.** Test the candidate against A.1's six common components. Then test whether its physical or operational organization makes it eligible to act in work or transformation while preserving its identity—the `U.System` criterion.
+**First useful move.** Test the candidate against A.1's six common components. Then test whether it is physically embodied and has an organization that makes it eligible to act in work or transformation while preserving its identity—the `U.System` criterion.
 
 After those two tests, recover only the additional facts used by the case, such as delimitation, an objective or commitment, coordination, capability, system-role kind or assignment, method, work, transformation, functioning, architecture, evidence, assurance, or time. State each fact or claim through the pattern that defines its object or relation. Do not make an objective or commitment a condition for `U.System` recognition; require it only for the separate objective or commitment claim being made.
 
@@ -30,7 +30,7 @@ Use `B.2` to recover the whole-reidentification question and identify the candid
 
 `B.2` is holon-general. `B.2.2` is its `U.System` specialization.
 
-B.2.2 tests whether B.2's proposed new whole satisfies A.1 and has a physical or operational organization through which it is eligible to act causally in work or transformation while preserving its identity—the `U.System` criterion.
+B.2.2 tests whether B.2's proposed new whole satisfies A.1, is physically embodied, and has an organization through which it is eligible to act causally in work or transformation while preserving its identity—the `U.System` criterion.
 
 If it does, recover the separately governed system-level claims needed by the case, such as delimitation, objective, coordination, capability, functioning, architecture, transformation, work, assurance, or time. The old constituent systems may remain parts, participants, resources, or interacting neighbors, but their claims do not automatically become claims about that recognized result system.
 
@@ -44,7 +44,7 @@ When system recognition and the claims about the new whole are conflated:
 2. **System claims become rhetoric.** A collective name is used in place of System-recognition grounds or of the additional facts that the claim needs, such as an objective, coordination relation, or capability envelope.
 3. **Supervision is overread.** A coordination mechanism is treated as a containing whole, safety warrant, or system recognition without the corresponding facts.
 4. **Transformation is confused with containment.** One system changing another holon is treated as part-whole construction instead of transformation and work.
-5. **Architecture description replaces architecture.** Dashboards, diagrams, simulations, bills, and digital twins are treated as the operating system rather than descriptions of it.
+5. **Representation is mistaken for the represented system.** Dashboards, diagrams, simulations, bills, and digital twins are identified with the system they represent.
 
 ### B.2.2:3 - Forces
 
@@ -70,7 +70,7 @@ Before calling the candidate a system result:
 
 1. execute the A.1 criterion over the candidate's constituents, obtaining constructive relations, governed assembly, reidentification rule, and composition-grounded whole characteristic;
 2. show that its boundary, interfaces, relevant characteristics, and identity-preservation conditions satisfy at least one applicable governed larger-assembly construction method or rule under which it can remain a constituent;
-3. apply the `U.System` criterion to that individual: its physical or operational organization must make it eligible to act causally in work or transformation while preserving its identity;
+3. apply the `U.System` criterion to that individual: establish that it is physically embodied and that its organization makes it eligible to act causally in work or transformation while preserving its identity;
 4. recover only the additional system facts used by the case—including any delimitation, objective, commitments, coordination, capability, system-role kind or assignment, method, work, transformation, functioning, architecture, evidence, assurance, or temporal claim—and state each through the pattern that defines its object or relation; and
 5. keep the classification judgment, evidence or assurance, currentness, and receiving reliance separate from those world-side facts.
 
@@ -138,7 +138,7 @@ A claim about the recognized result system may reuse component evidence where it
 
 #### B.2.2:5.1 - Search-And-Rescue Swarm
 
-Before MHT, the project has individual drones with local navigation and maintenance records. After MHT, the object may be one search-and-rescue swarm if the result whole has its mission objective, coordination relation, external command relation, capability envelope, and swarm-level risks.
+In this constructed case, B.2 has compared an established drone-system whole with the proposed coordinated search arrangement. Its supported result is that the prior whole cannot meet the search use while retaining its identity, and it names the proposed search-and-rescue swarm as the candidate new whole. The project retains individual-drone navigation and maintenance records. Test the candidate below; its mission objective, coordination relation, external command relation, capability envelope and swarm-level risks retain their own grounds.
 
 - **Candidate new whole:** the search-and-rescue swarm named by B.2.
 - **A.1 basis:** drone constituents, obtaining formation and coverage-coordination relations, the governed swarm assembly, the swarm reidentification rule, and the whole-level area-search characteristic; its boundary, command and mission interfaces, operating characteristics, and identity-preservation conditions also fit the applicable larger rescue-system construction rule.
@@ -168,7 +168,7 @@ A fixture being manufactured as a workpiece is not part of the machine merely be
 | Named aggregate as system | A fleet, platform, or cell name is treated as system recognition. | Apply B.2 to one candidate; require the A.1 criterion and the `U.System` criterion. |
 | Component evidence transfer | Component certificates are read as assurance for the proposed new whole after its recognition under `U.System`. | Assess applicability to the result-system claim through the evidence or assurance relations; reuse a matching assessment, rather than transferring support by label. |
 | Coordination as whole | A controller, protocol, or coordination relation is treated as automatic system MHT. | Recover the obtaining relation, then require B.2 whole reidentification plus A.1 and `U.System` recognition; keep any support separate. |
-| Description as system | Dashboard, simulation, model, twin, or bill is treated as the operating system. | Use episteme, publication, source-use, and architecture-description patterns for description objects. |
+| Representation as represented system | A dashboard, simulation, model, twin, or bill is identified with the system it represents. | Recover the represented system, the representing entity and the grounds for that use. C.2.1:4.0.3 distinguishes model use from episteme identity; apply the description or publication patterns to those separate claims. Any claim that the representing entity is itself a System needs its own A.1 test. |
 | Transformation as containment | An external system changes a holon and is treated as its part or containing whole without a separately obtaining part-whole relation. | Use A.12 for the acting side, A.3.4 for the transformation, and A.15.1 for any claimed Work. Use B.2.5 when supervisor-subholon feedback is the question and a part-whole pattern when parthood is claimed. |
 
 ### B.2.2:6 - Conformance Checklist
@@ -182,7 +182,7 @@ A fixture being manufactured as a workpiece is not part of the machine merely be
 | `CC-B2.2-5` | An obtaining supervision or coordination relation is not treated as automatic system recognition, and evidence for it is not treated as safety warrant. |
 | `CC-B2.2-6` | Acting-system participation, transformation, and work are separated from parthood. |
 | `CC-B2.2-7` | Component assurance is not silently transferred to the result system. |
-| `CC-B2.2-8` | Recover the episteme, representation, or publication claim for a description, dashboard, simulation, or digital twin separately from recognition of the operating system it describes, even when that system is the EoC. |
+| `CC-B2.2-8` | Recover the model-use, episteme, representation or publication claim separately from recognition of the System it concerns. If the representing entity is itself claimed to be a System, test that entity separately under A.1. |
 
 ### B.2.2:7 - Common Anti-Patterns and How to Avoid Them
 
@@ -191,7 +191,7 @@ A fixture being manufactured as a workpiece is not part of the machine merely be
 | Named aggregate as system | "The platform" or "the fleet" is treated as a system because it has a name. | Identify one candidate and apply the A.1 and `U.System` criteria; if either fails or cannot be determined, withhold system-result recognition and return that failure or `unknown` to B.2 without inferring that the old whole is sufficient. |
 | Component certificate transfer | Individual part certificates are used as result-system assurance. | Re-base assurance through B.2.2:4.5 and evidence-use patterns. |
 | Controller as containing whole | A controller or external system is treated as the new whole because it changes the parts. | Use A.12 and A.3.4 for the acting-side and transformation claims. Use B.2.5 for a supervisor-subholon feedback question and a part-whole pattern for the claimed parthood. |
-| Dashboard as system | A monitoring model is treated as the operating system. | Use episteme, publication, source-use, C.30.AD, or digital-twin description patterns. |
+| Dashboard as represented system | A monitoring model is identified with the system it monitors. | Use episteme, publication, source-use, C.30.AD, or digital-twin description patterns for the monitoring account; recover the monitored system independently. |
 | Capability jump as system MHT | A metric improves and the result is called a new system. | Perform B.2's ordinary existing-whole comparison; return to capability, characteristic, Method, Work, or architecture patterns if the existing whole remains sufficient. |
 
 ### B.2.2:8 - Consequences
@@ -224,7 +224,7 @@ FPF adapts this distinction in B.2.2:4.3 by recovering the controller or distrib
 
 Acting on an object and being part of it are different relations. A.12, A.3.4, A.15.1, A.14, and C.13 remain separate subject patterns.
 
-Descriptions can track a system without being the system. Use episteme, description, representation, and publication patterns for the descriptive item; recover the operating system independently as EoC.
+Descriptions can track a system without being that system. Use episteme, description, representation, and publication patterns for the descriptive item; recover the operating system independently as EoC.
 
 ### B.2.2:11 - Relations
 

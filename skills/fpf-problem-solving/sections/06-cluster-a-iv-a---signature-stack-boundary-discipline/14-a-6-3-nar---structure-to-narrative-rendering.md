@@ -42,7 +42,7 @@ Carrier export, generated-output admission, publication, evidence, assurance, et
 
 ### A.6.3.NAR:2 - Problem
 
-Projects often need narrative because selected source structures are too tangled for a reader to use directly. A mechanism, architecture, model, evidence set, or event graph may need a beginning, order, tension, action, update point, or learning path before humans can follow it.
+Projects often need narrative because selected source structures are too tangled for a reader to use directly. A mechanism, architecture, model, evidence set, or event graph may need a beginning, order, tension, action, update point, or learning path before its intended reader can follow it.
 
 Without `A.6.3.NAR`:
 
@@ -58,7 +58,7 @@ Without `A.6.3.NAR`:
 
 | Force | Tension |
 | --- | --- |
-| Selected source structure vs human sequence | A reader often needs an ordered path, while the selected source structure may be a graph, mechanism, option set, architecture, or evidence field rather than a line. |
+| Selected source structure vs reader sequence | A reader often needs an ordered path, while the selected source structure may be a graph, mechanism, option set, architecture, or evidence field rather than a line. |
 | Engagement vs truth boundary | Tension, viewpoint, protagonist, and pacing can help attention, but they do not widen truth, evidence, authority, ethical permission, or admissible downstream use. |
 | Compression vs recoverability | A narrative foregrounds some structure and leaves other structure behind. The useful loss must be visible. |
 | Event comprehension vs non-event structure | Some selected source structures involve events and actions; others involve dependencies, constraints, alternatives, or architectures. The pattern must support both without forcing a fiction model. |
@@ -337,7 +337,7 @@ Counterexample replay:
 | --- | --- |
 | Ordinary entry | A team can turn an architecture trade-off structure into a useful explanatory sequence and loss note without first inventing `X`, `Y`, `n`, Work, or assurance records. |
 | Preserve vs retarget | Exact NAR requires the same EntityOfConcern; a different narrated concern requires A.6.4 even when derived from `X`. |
-| Same vs different scheme | Narrative order may be primary in either case. A material scheme change additionally opens RT, but scheme difference alone establishes neither `n` nor correspondence. |
+| Same vs different scheme | Narrative order may be primary in either case. Use RT as well when a change of representation language or reasoning medium supports an operation beyond narrative ordering. Scheme difference alone establishes neither `n` nor correspondence. |
 | Candidate vs `U.View` | A valid narrative episteme and NAR construction can fail conformance to viewpoint P. That failed test grants no `U.View` membership through P; conformance to another viewpoint remains independent. |
 | Source publication/form/carrier | A publication can make `X` available and a form or carrier can express it; none becomes `X`, and a narrative page or audio file is not `Y`. |
 | Narrative order | Chronology, tension, or didactic order is a declared construction rule, not automatically world-side event order, proof order, performed-Work order, or an obtaining relation. |

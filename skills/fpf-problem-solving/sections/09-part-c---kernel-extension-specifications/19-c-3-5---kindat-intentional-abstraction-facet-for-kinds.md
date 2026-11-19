@@ -20,7 +20,9 @@
 
 Teams need a quick answer to a planning question: is this local kind intended as a curated instance-like cohort, a behavioral pattern, a formal invariant-bearing kind, or a kind considered up to structural equivalence? The answer can guide where declaration rigor and assurance effort are likely to pay off. An ordinary description of those planning needs is sufficient when a shared tag adds no useful distinction.
 
-KindAT gives that planning vocabulary while keeping the governing objects separate:
+KindAT records how one local kind is treated for catalogue and planning work. Comparing the levels of abstraction of two models requires a shared inquiry and interpretation (B.5.MR). Suppose one-day and three-day schedules both satisfy a service policy. A revised model keeps the earlier commitments and limits the interval to at most two days. If the one-day schedule is still feasible, the three-day schedule shows which previously possible answer the model excludes. The kind of service order can keep the same K tag throughout.
+
+Use the governing objects for their respective decisions:
 
 - the local kind and its order remain under C.3/C.3.1;
 - the `KindSignature` remains a declaration episteme whose expression properties may change under C.2.3;
@@ -137,8 +139,8 @@ These are planning cues, not default F values, R values, classification results,
 
 ### C.3.5:9 - Worked mini-examples (informative)
 
-- **K0.** `Account_US_GAAP_2025_Q1_Cohort`: use candidate judgments in the pinned quarter slice; do not infer a broad kind from one query result.
-- **K1.** `CacheableRequest`: make retry/idempotence behavior evaluable in a named signature edition and test diverse failure modes.
+- **K0.** `Account_US_GAAP_2025_Q1_Cohort`: suppose the approved quarter roster defines this cohort. Check the account identifier against that edition of the roster. Counting the confirmed entries answers a separate question.
+- **K1.** `RetrySafeRequest`: the declared criterion permits repeating a request after a lost reply without duplicating its intended effect. Check that property for the admitted failures, including a reply lost after the first execution completed.
 - **K2.** `Account`: use explicit posting and balance invariants, test relevant subkinds, and evaluate each candidate with the signature edition and slice.
 - **K3.** `UndirectedGraph` up to node relabeling: state the equivalence notion and require equivalence witnesses that preserve it. Any KindBridge use additionally needs the distinct-kind correspondence and preservation basis required by C.3.3.
 

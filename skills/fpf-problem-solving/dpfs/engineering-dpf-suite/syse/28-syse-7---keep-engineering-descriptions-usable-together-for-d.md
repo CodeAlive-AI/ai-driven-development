@@ -238,12 +238,13 @@ is specified only for a half-hertz update and plus or minus 0.3 kelvin under the
 filtering arrangement. Matching the token `SupplyTemperatureSensor` across three tools had hidden the
 difference.
 
-The engineers recover the sensor variant and interface configuration instead of merely synchronizing names.
-They update the model-use assumptions, evaluate another component and estimator option, and perform a
-controller-in-the-loop trial. The resulting evidence revises the architecture comparison: direct modulation
-remains acceptable for one building profile, while the storage branch remains unselected until it has either the
-faster sensing configuration or a different estimator and the corresponding assurance result. This evidence
-informs the current decision; it does not approve a later storage increment.
+The engineers identify the procured sensor and its installed signal path, update the model assumptions
+and run a controller-in-the-loop trial. Direct modulation remains acceptable for the tested building
+profile. The storage calculation still needs both a two-hertz update and an error within ±0.1 K.
+A faster update with the old ±0.3 K bound leaves that calculation unsupported. Evaluate the complete
+sensing or estimation path, including cable and filtering effects, against both assumptions. Alternatively,
+repeat the analysis with justified bounds for the available path. Use the resulting assurance evidence for
+the storage decision. Admission of a later storage increment still needs its own configuration and decision.
 
 The account records the usable description editions, the unresolved estimator claim, the tested
 configuration, and a reconsideration condition tied to component substitution or a changed grid-response

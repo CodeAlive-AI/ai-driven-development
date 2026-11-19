@@ -59,11 +59,11 @@ Phrase hygiene:
 
 | Risky phrase | Better FPF phrase |
 | --- | --- |
-| Dashboard changed the state. | Dashboard publication or use changed work behavior or evidence conditions. |
+| Dashboard changed the state. | Name the reported measure and its time. If publication changed how people worked, identify the change and how it was established. |
 | Metric acted as observer. | Measurement/publication regime functioned as a probe interaction. |
 | Organization knows. | Coordinated work traces support a low-recoverability state reading over a declared collective bearer. |
 | Market is entangled with product team. | Market participants and the product team respond to each other; identify the observed responses and the model used to relate them. |
-| Boundary collapsed after workshop. | Workshop work selected or created a local boundary reading for this decision window. |
+| Boundary collapsed after workshop. | State which boundary participants agreed to use, or which practice changed and how the change was established. |
 | State cannot be copied. | No faithful-enough export supports the named receiving use under its effective reference scheme and declared loss. |
 | Same metric in two contexts. | Same-named results under independently recovered measurement and comparison frames; compare only through an admitted joint-comparison route. |
 | Quantum-like service health. | Viability-envelope reading affected by probe, export, or coarsening cue. |
@@ -73,8 +73,8 @@ Example style:
 | Style | Example |
 | --- | --- |
 | Bad | The team's quantum-like distributed state collapsed after the readiness dashboard observation. |
-| Better | The readiness dashboard was not a passive read: its publication changed team behavior, so the dashboard result cannot be used alone as pre-publication readiness evidence. |
-| Best | Apply `C.16` and `A.15` to the metric and changed work; `C.26.1` can clarify the probe effect. Publication changed readiness behavior in window W, so add independent work traces before using the dashboard for release assurance under `B.3`. These facts alone supply no contextual-model obstruction and require no QL wording. |
+| Better | A snapshot captured before publication shows which checks had passed at that time. After publication the team gave priority to the displayed checks. |
+| Best | Use the dated snapshot for the checks it records. If release also depends on later work or on a condition the display omits, recover evidence for that condition under `A.15`, `C.16` or `B.3`. Use `C.26.1` if sampling or publication leaves the reading in doubt. |
 
 Read these terms by the distinctions the model needs.
 
@@ -207,9 +207,9 @@ Examples of the decision difference to recover, whether the ordinary account is 
 
 | False reading | Repair | Decision diff |
 | --- | --- | --- |
-| Dashboard passively shows release readiness. | Dashboard publication changes readiness behavior. | Do not use dashboard alone as release evidence; add independent work traces or redesign metric publication. |
-| Workshop discovered the boundary. | Workshop also created the boundary meaning. | Do not export workshop result as timeless domain fact; record window, participants, carriers, and unresolved rivals. |
-| Service is healthy because latency is green. | Viability envelope is degraded by support load and promise failure. | Add envelope variables and actuators; do not greenlight based on latency alone. |
+| Dashboard passively shows release readiness. | The dashboard reports the recorded checks. Examine whether publication also changed how people performed or recorded the work. | Use checks that bear on the release decision. If reporting practices changed, establish which readings remain comparable. |
+| Workshop discovered the boundary. | The record identifies the boundary participants agreed to use. Its earlier use and the workshop’s effect on practice are separate claims. | Use the agreement for decisions it covers. Consult earlier work to determine whether people already used that boundary. |
+| Service is healthy because latency is green. | The latency reading meets its bound. The service commitment also covers the currency of information shown to customers. | Check that condition before confirming the joint commitment. A verified breach already settles a decision requiring both. |
 | Summary preserves architecture state. | The summary omits distinctions from the source. | Use it where the retained distinctions support the receiving decision; consult or reconstruct omitted detail when that decision depends on it. |
 
 Minimum ordinary-pattern return from the QL activation test:
@@ -217,14 +217,13 @@ Minimum ordinary-pattern return from the QL activation test:
 ```text
 Ordinary patterns: C.16 + A.15.
 Disposition: no QL wording. The stated facts establish a performative metric effect; no contextual-model obstruction surviving those ordinary patterns is established.
-Claim: DeliverySystem-12's release readiness during W, assessed under the operational criteria with dashboard readings compared before and after publication.
-Mistake prevented: dashboard result would be read as passive release-readiness evidence.
-Probe effect: publication changed team behavior during W.
-Decision diff: do not use dashboard alone for release; add independent work traces.
-Stop: this note locates how dashboard publication changed the work being assessed. Resolve the resulting readiness question with the applicable work and measurement Methods.
+Claim: Did DeliverySystem-12 meet all required release checks at the end of W?
+Probe effect: In this constructed case the team recorded its decision to reprioritize work in response to the published dashboard. Its work log shows that change taking effect during W.
+Decision: Match the timestamped results to the required checks and their times. One established failure answers the question for this joint rule. Report a pass when every required check is supported at the required time. If the existing evidence still permits either verdict, recover evidence for the condition that could change it.
+Stop: The recorded decision and its enactment explain the change in work priorities.
 ```
 
-This completes the ordinary-pattern return: the dashboard must not be treated as a passive readiness read, and the stated facts do not yet activate QL. Reopen C.26 only if one named contextual-model obstruction survives the ordinary account and changes an admissible inference or action. Reuse adequate existing support under :12b; publication of this note alone requires no new assurance account.
+The changed priorities can be assessed under the work and measurement patterns. Reopen C.26 when a named contextual-model obstruction survives that account and changes a conclusion or action. Existing evidence can settle the decision.
 
 Finish with the useful result the receiving question needs. A mathematical consequence or corrected reading may be sufficient. Use `C.11` only when a choice remains.
 
@@ -261,10 +260,10 @@ Apply both sides of the activation test:
 
 Keep incompatible-probe outputs in their own algebras. A common label or diagram does not supply a joint probability space, comparison relation, grounding relation, or cross-structure occurrence.
 
-Ordinary wording repairs that may finish before QL activation:
-- "the metric reported readiness" becomes "the metric publication or measurement regime functioned as a probe interaction that changed readiness behavior";
+Read the observation and its intended use before choosing a more precise formulation. Ordinary FPF methods can settle the following questions:
+- For “the metric reported readiness,” identify which check passed. To claim that publication changed behavior, trace the change in the work through which the metric was produced or used.
 - "two risk scores disagree" becomes "the two scores may come from non-shared comparison frames with no declared admissible joint comparison route";
-- "the workshop discovered the split" becomes "the workshop was a probe whose order and framing changed alignment and local meaning";
+- For “the workshop discovered the split,” identify what participants recorded or agreed. Attribute a change to the order of questions only when the procedure and evidence support that effect.
 - "the team knows" becomes a bounded claim about the coordinated work evidenced, with its relevant interpretation limits;
 - "this smaller model is enough" becomes a claim that its retained distinctions suffice for the named use, with any actual loss and limit stated.
 
@@ -391,7 +390,7 @@ Evidence-use class scales by use:
 
 Use this card when a fuller state representation is too detailed, unstable, unavailable, or expensive for the current bounded decision and a reduced-detail state representation is useful only under a declared QL cue.
 
-`A.6.3.CSC` carries controlled coarsened rendering; `A.6.3.RT` carries same-selected-entity representation transition; `A.19`, `U.Dynamics`, modeling patterns, and ordinary abstraction patterns carry ordinary state abstraction. C.26 carries only the residual QL cue plus the loss/use boundary for this shortcut.
+For a shorter rendering of the same claims, use `A.6.3.CSC`. For another way to represent the same selected entity, use `A.6.3.RT`. When comparing a more abstract model with a more concrete one, use `B.5.MR:4.2–4.3` to establish what the concrete model preserves and which alternatives it excludes. `A.19` and `U.Dynamics` govern state and change. Use C.26 when the decision also encounters the contextual-model obstruction tested in section 4.
 
 Question-to-pattern map:
 
@@ -405,6 +404,8 @@ Question-to-pattern map:
 | Assurance claim, release support, audit, readiness, or compliance use | `B.3` |
 | Search-space pruning, option generation, or missing alternatives | `C.18`, `C.19`, `A.19` |
 | Named contextual-model obstruction remaining after the applicable ordinary account | `C.26` |
+
+To decide from a coarser reading, identify what detailed states or histories could produce it under the model. If none can, check the reading and the model before using them together. If every compatible history permits the proposed action, the missing detail cannot rule out that action. A shared reading may still leave open which action is best. If one compatible history permits an action and another rules it out, recover what distinguishes them before relying on the reading for that choice. For a decision based on probability or expected value, use the applicable probability model and its evidence.
 
 For a bounded coarsening use, start with these questions. An adequate ordinary explanation can answer them without a separate card.
 
@@ -550,7 +551,7 @@ Use these as quick applicability tests. The ordinary result, including a result 
 
 | Scenario | Expected route | Avoid | Expected output |
 | --- | --- | --- | --- |
-| Dashboard readiness improves because teams optimize the displayed metric. | `C.16` / `A.15` first; `C.26.1` only if the output is reused as a passive readiness read after state-shaping publication. | Treating the dashboard value as release evidence by itself. | Redesign metric publication or add independent work traces before release use. |
+| Teams prioritize the checks displayed on the readiness dashboard. | Use `C.16` and `A.15` to establish what was measured when. Use `C.26.1` if the interaction affects the intended reading. | Taking a change in the displayed score as proof that the release condition improved. | Use existing evidence for the conditions it covers. Recover another observation when the release depends on an unresolved condition. |
 | Workshop "discovers" a boundary but also creates alignment and local meaning. | `A.6` / `A.15` first; `C.26.1` for false pre-probe discovery reading. | Exporting the workshop result as a timeless domain fact. | Record window, participants, carriers, unresolved rivals, and bridge/export limits. |
 | API read warms cache and changes later timing. | Recover interface semantics and the sampling/write sequence; use `C.26.1` while the output's interpretation is unresolved. | Treating all timings as observations of the same cache regime. | Retain the supported pre-read or post-read quantity, or name the missing timing premise. |
 | Two service health reports use different measurement frames. | `C.16` / `F.9` first; `C.26` only if no admissible shared comparison frame remains. | Averaging the scores as one posterior-looking value. | Name the frame difference and either build an admissible comparison route or stop comparison. |

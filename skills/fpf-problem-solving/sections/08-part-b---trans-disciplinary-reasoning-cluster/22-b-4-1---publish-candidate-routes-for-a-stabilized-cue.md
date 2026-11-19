@@ -20,14 +20,14 @@ A cue publication can lose its useful continuations when it is forced prematurel
 | **Early capture vs endpoint discipline** | Preserve low-articulation cues without collapsing route discipline. |
 | **Plural route set vs recorded selection** | Permit multiple candidate routes while requiring a selection record when selection occurs. |
 | **Useful publication vs extra kinds** | Make routes inspectable without introducing a new publication kind for every case. |
-| **Form vs face precision** | Keep route-bearing publication form distinct from the MVPK face on which it is rendered. |
+| **Route content vs reader presentation** | Preserve the route-form requirements when selecting an MVPK face for the reader. |
 
 ### B.4.1:4 - Solution
 After cue stabilization, state the candidate continuations and any selected route. Keep downstream claims under their subject patterns. The optional route follows this sequence:
 
 `Observe -> Notice -> Stabilize -> Route`
 
-Publish the route package as a `RoutedCueSet`, normally downstream of `PreArticulationCuePack`.
+Publish the route account in the `RoutedCueSet` form, normally downstream of `PreArticulationCuePack`. `RoutedCueSet` names the reusable publication rules defined below. The filled account states candidate routes and selection claims; C.2.1 governs its episteme identity. Its expression follows the route-form rules and, when selected, the presentation rules of an MVPK face under E.17.
 
 The route publication should identify:
 
@@ -44,7 +44,7 @@ This keeps later handoff reviewable while leaving downstream claims and results 
 For specialization-sensitive routes, state the declared task family or utility target, any budget condition that qualifies the proposed continuation, any unresolved fact needed for its use or selection, and the downstream subject pattern with its entry conditions.
 
 #### B.4.1:4.1 - `RoutedCueSet` shape
-A conforming routed cue set may publish:
+A conforming route account may include these fields:
 
 - `sourceCuePackRef`
 - `candidateRouteSet`
@@ -67,7 +67,7 @@ The status reports which candidate routes remain live and any selection made; en
 
 Use `sourceCuePackRef` when the originating early form is a cue pack; otherwise identify the equivalent early form and the stabilized cue it preserves.
 
-`publicationFaceRefs` names MVPK faces only when face typing matters for publication or review. Faces are renderings of the routed cue set or of later typed projection publications; they are not the route-bearing form.
+Use `publicationFaceRefs` when publication or review needs to identify the selected MVPK face forms. An expression of the route account or a later typed account follows its content form's rules and the presentation rules of any selected MVPK face. Selecting a face alone does not establish that the content rules are satisfied.
 
 One `RoutedCueSet` can describe several candidate routes. A lineage fork requires distinct successor epistemes or project records under their identity and lineage rules. Use `C.2.1` for episteme identity; publication availability remains separate under `E.24.PUB`.
 
@@ -100,7 +100,7 @@ Use `SubstrateDiversificationRoute` when the cue raises a question about whether
 Contexts may refine the route family locally, but they shall keep the distinction between early route publication and endpoint governance.
 
 #### B.4.1:4.3 - Projection discipline
-Here `projection` names route-bounded partialization. The resulting content must be published in a **typed publication form**, rendered, when needed, on an existing MVPK face. The subject pattern governs the downstream claim.
+Here `projection` names route-bounded partialization. The resulting content must be published in a **typed publication form**; its expression may also follow an existing MVPK face's presentation rules. The subject pattern governs the downstream claim.
 
 A routed cue set may support these continuations:
 
@@ -124,7 +124,7 @@ The pattern favors preserving low-articulation cues and publishing route plurali
 - `CC-B.4.1-1` Observe output **SHALL NOT** be forced into `AnomalyStatement` when articulation threshold is not met.
 - `CC-B.4.1-2` A routed cue set **SHALL** name its `candidateRouteSet`.
 - `CC-B.4.1-3` When route selection occurs, `routeDecision`, `selectedRoute`, and `routeRationale` **SHALL** be explicit.
-- `CC-B.4.1-4` `publicationFaceRefs` **MAY** be named, but route-bearing form and publication face **SHALL NOT** be collapsed.
+- `CC-B.4.1-4` `publicationFaceRefs` **MAY** be named. The expression **SHALL** satisfy the route-form requirements as well as the presentation rules of any selected MVPK face.
 - `CC-B.4.1-5` `RoutedCueSet` **SHALL NOT** be treated as establishing a late endpoint result.
 - `CC-B.4.1-6` When a specialization-sensitive route is kept live, the route package **SHALL** name the declared task family or utility target, any budget condition that qualifies the proposed continuation, any unresolved fact needed for its use or selection, and the downstream subject pattern with its entry conditions.
 
@@ -173,7 +173,7 @@ A conceptual mismatch may route simultaneously toward:
 This is admissible only if the route rationale states the plurality.
 
 #### B.4.1:13.3 - Invalid jump
-It is invalid to treat a routed cue set as if it were a hypothesis, a gate, or a work plan. The route-bearing publication form records candidate continuations; the subject pattern governs the downstream result.
+It is invalid to treat a routed cue set as if it were a hypothesis, a gate, or a work plan. The route account records candidate continuations; the subject pattern governs the downstream result.
 
 #### B.4.1:13.4 - Specialization-route and nonhuman-utility split
 A routed cue set for a new task family may keep `ProblemAbductionRoute`, `TaskFamilySpecializationRoute`, and `NonHumanUtilityRoute` live together. The point is to preserve the declared task family, utility target, any qualifying budget conditions, any unresolved facts needed for use or selection, and any relevant corridor-entry conditions without presenting those candidates as a justified prompt, selector, or policy choice.

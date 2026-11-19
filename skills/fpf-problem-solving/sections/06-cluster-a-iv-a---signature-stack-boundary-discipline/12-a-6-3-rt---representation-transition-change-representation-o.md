@@ -235,7 +235,7 @@ Reopen the affected account when source content, endpoint identity, recovery ass
 | What became primary | Required move |
 | --- | --- |
 | Restating or translating the same claims for the reader | Use A.6.3.CR. Use RT as well when the new representation supports a distinct operation the reader needs. |
-| Reader-useful ordering into a narrative path | Use A.6.3.NAR; keep RT only for a remaining material scheme shift. |
+| Reader-useful ordering into a narrative path | Use A.6.3.NAR. Use RT as well when a change of representation language or reasoning medium enables an operation beyond the ordering of the account. |
 | Explanation adequacy of an existing face | Use E.17.EFP. |
 | Receiving episteme has an independently identified different EntityOfConcern | Use A.6.4 to classify the retargeting arrow. For a claimed receiving use, establish its separate C.2.1 bounded-use assertion. When evaluating that assertion in a current case, judge it as `satisfies`, `fails`, or `cannot decide`. |
 | Changed kind, ontology frame, predicate set, mathematical domain, or notation without an established EntityOfConcern change | Repeat the C.2.1 identity test and use the ontology pattern for any changed claim. Stay in RT when the same EntityOfConcern remains current and representation is the primary change. |

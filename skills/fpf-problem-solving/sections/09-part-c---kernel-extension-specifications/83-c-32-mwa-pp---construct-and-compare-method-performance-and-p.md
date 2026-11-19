@@ -196,6 +196,8 @@ A common carrier can be responsible for making help obtainable while independent
 
 When an architecture comparison is warranted, compare at least two serious syntheses whose proposed direct relations differ.
 
+For a decision on an assignment, distinguish the options the brief provided from the construction needed to make them workable. A practitioner who chooses a supplied service on the stated criteria may have completed the selection. To credit the design of a different arrangement, identify a changed handover, allocation or dependency that the practitioner established and explain how it meets the receiving need. Use the same distinction when the purchaser commissions a design from an agent or a supplier.
+
 Treat central, local, specialized, federated and external descriptions as properties of the resulting candidates. They are not a catalogue from which the Method starts. One candidate can centralize common tools, distribute performance and retain an external specialist at the same time.
 
 Keep the adequate incumbent and its smallest useful repair in the comparison. Generate further alternatives only while a new mechanism or failure mode can change the choice. Do not manufacture token rivals to a sufficient answer.
@@ -486,11 +488,11 @@ A team needs a comparison of changes in twenty supplier notices before its weekl
 | Correct, integrate and use the comparison | 1 hour | 1 hour |
 | Total recurring specialist time | 5 hours | 2.5 hours |
 
-The AI-assisted way also requires 1.5 hours of initial setup. The team has three specialist hours available each week after continuing obligations. Under these stipulated estimates, the first assisted cycle needs four hours and cannot fit; later cycles need 2.5. C.32.MWA.PP exposes that timing constraint instead of hiding setup in an average saving. The owner obtains 1.5 hours for setup in the preceding week, without displacing its existing commitments. The selected arrangement now fits its stated resource premise. Two such comparisons with no shared work would need five recurring hours and reopen that premise.
+The assisted way takes another 1.5 specialist hours to set up. Only three are free each week after standing commitments. Setup and the first comparison together need four, so the owner reserves the setup time the week before. The supplier releases the twenty notices by 09:00 Thursday. The specialist can prepare the comparison from 09:00 to 09:30, check the draft from 10:00 to 11:00 once the agent has returned it, and correct and use it from 11:00 to noon. Those bookings and timely access to the draft make the noon decision feasible under the estimates. Three free hours on Friday would give the same weekly total and miss that decision. Two comparisons with no shared work would exceed even the weekly capacity.
 
 The agent receives the twenty applicable notices and the comparison question. It may read the supplied material and prepare an internal draft; it has no authority in this case to amend supplier terms or publish externally. A source-checking return preserves a notice's condition: a changed lead time applies to new orders after a specified date. The receiver uses that condition to separate new orders from the existing backlog. A draft that applied the new time to every order would fail the receiving use even if generation completed without an error.
 
-The worked arrangement ends with the used comparison and its unresolved items. If a source becomes inaccessible, the affected claim remains unverified; other supported claims can be used within their limits. If correcting the drafts begins to exceed the estimate, reopen that candidate's effort and qualification. Faster generation alone does not establish the original capacity claim.
+The worked arrangement ends with the used comparison and its unresolved items. If the supplier portal goes offline, a retained notice or prior check can still establish the edition and the order dates it covers. Check whether it meets the receiving terms. Reopen the affected conclusion if a consequential condition or the notice’s currentness remains unknown, or if the agreement requires a fresh check with the supplier. If correcting the drafts begins to exceed the estimate, reopen that candidate's effort and qualification. Faster generation alone does not establish the original capacity claim.
 
 ##### C.32.MWA.PP:5.7.2 - Change the purpose to the person's own capability
 

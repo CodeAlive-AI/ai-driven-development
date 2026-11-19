@@ -89,7 +89,8 @@ Retain the source phrase beside the recovered claim and replacement only when th
 | Mathematical emergence, scale, coarse-graining, graph, morphism, benchmark, or MSPD expression | Apply the mathematical rule and subject pattern to the recovered claim; an adequate calculation can finish. Use `C.29` for a remaining representation-choice, correspondence, transfer or reliance question. | ontology by mathematical spelling |
 | Metric or benchmark mirage | Identify the characteristic or benchmark and its measurement or evaluation rule, retaining the source and correspondence grounds the inference uses. Apply `A.10` for a needed source-to-use account and `C.29` for a remaining mathematical representation or transfer question. | MHT or system admission |
 | Collection or collective wording mixed with emergence, MHT, or synergy | First recover membership, collection-as-whole, acting collective, whole-level characteristic, or MHT | collection admission by B.2.P |
-| Publication, model, dashboard, theory-text, or report claim | `C.2.1` for episteme identity and content; `E.17` for a needed publication face; `E.24.PUB` for publication, availability, expression or carrier distinctions; `C.30.AD` for an architecture-description question; a source-use pattern for the corresponding source claim | in-life whole by description alone |
+| Model-use or model-comparison claim | C.2.1:4.0.3 distinguishes a claim-bearing episteme from a physical specimen or observed performance used as a model. Recover the modeled entity, operation or observation, and grounds for the inference under the subject Method. Use B.5.MR for refinement or abstraction between models. | reidentification of the modeled holon merely because the model changed |
+| Publication, dashboard, theory-text, or report claim | `C.2.1` for episteme identity and content; `E.17` for a needed publication face; `E.24.PUB` for publication, availability, expression or carrier distinctions; `C.30.AD` for an architecture-description question; a source-use pattern for the corresponding source claim | in-life whole by description alone |
 
 #### B.2.P:4.3 - Whole-Reidentification Recovery
 
@@ -149,12 +150,13 @@ If whole identity remains in question, use B.2 and, for its new-system candidate
 
 Recover:
 
-- Which claims concern the model as a description episteme, and which concern its mathematical expression or lens use?
+- What is used as the model, which entity does the inquiry concern, and which operation or observation on the model supports the inference?
+- If the model is a claim-bearing episteme, what are its claims and interpretation? If a mathematical expression or lens is used, what calculation and correspondence does the inference need?
 - Is robustness a characteristic-space claim?
 - Is the result a benchmark artifact?
 - Does the claim concern reidentifying the actual holon?
 
-Apply the model or evaluation rule to the recovered result and C.16 to its characteristic claim. Recover the assumptions, correspondence and evidence used by that inference; apply A.10 when a source-to-use account is needed, and C.29 for a remaining representation, transfer or reliance question. An adequate calculation can finish. Use B.2 when the actual whole's identity remains the question.
+When a physical specimen or observed performance is used as a model, distinguish it from an episteme reporting its observations or results, as C.2.1:4.0.3 explains. Apply the model or evaluation rule to the recovered result and C.16 to its characteristic claim. Recover the assumptions, correspondence and evidence used by that inference; apply A.10 when a source-to-use account is needed, and C.29 for a remaining representation, transfer or reliance question. An adequate calculation can finish. Use B.2 when the actual whole's identity remains the question.
 
 #### B.2.P:5.3 - "A Meta-Functional Transition Happened"
 
@@ -202,7 +204,7 @@ If the use requires a composite transformation and no governor supplies constitu
 | `CC-B2P-2` | No generic `U.Emergence` is created. |
 | `CC-B2P-3` | Whole reidentification requires B.2; B.2.P does not declare MHT. |
 | `CC-B2P-4` | Collection admission remains with subject patterns. Collection wording entangled with emergence or MHT selects B.2.P for clarification, not for admission. |
-| `CC-B2P-5` | Capability, functioning, characteristic, architecture, evidence, math-lens, publication, and source-use claims keep their subject patterns. |
+| `CC-B2P-5` | Capability, functioning, characteristic, architecture, evidence, model-use, model-comparison, math-lens, publication, and source-use claims keep their subject patterns. |
 | `CC-B2P-6` | Source mnemonics and result-field spellings do not identify subject patterns or become U-kinds. |
 | `CC-B2P-7` | Replacement wording is reread in its complete natural span through F.19 with E.10 cues inside; only a remaining FPF question opens the applicable lexical or subject rule before live use. |
 | `CC-B2P-8` | Whole-reidentification recovery identifies the existing whole, changed facts and identity rule, then retains a supported sufficient explanation, establishes insufficiency, or states the deciding gap. In a selected new-whole branch, apply the A.1 criterion, including governed larger-assembly compatibility, and the kind-specific criterion; preserve a failed or unresolved recognition result. First constitution or recognition without a prior whole returns to A.1 and the subject pattern. |
@@ -218,7 +220,7 @@ If the use requires a composite transformation and no governor supplies constitu
 | Collection receives agency by wording | A community, pool, fleet, or base acts because the noun is collective. | Recover membership, collection-as-whole, acting collective system, whole-level characteristic, or MHT separately. |
 | Metric jump as new whole | Benchmark improvement is declared as emergence. | Establish what characteristic or benchmark changed under its measurement or evaluation rule, preserving the grounds needed for that inference. Use B.2 when whole identity remains the question. |
 | Title mnemonic as authority | MET or MFT is used as if the acronym named the thing or claim under discussion. | Recover an episteme-whole reidentification claim, capability or functioning facts, their episteme or function pattern, or source-only wording. |
-| Description as in-life whole | A model, dashboard, report, or twin is treated as the system because it depicts the system. | Use episteme, publication, architecture-description, source-use, or digital-twin description patterns for the description; independently recover any in-life holon under its pattern. |
+| Representation as represented whole | A model, dashboard, report, or twin is identified with the holon it represents merely because it represents it. | For a model, recover the modeled entity, the entity used as its model and the grounds for that use through C.2.1:4.0.3 and the subject Method. For a description, recover its claims, expression and publication under their patterns. Recognize each claimed holon under its own pattern. |
 | Evidence decides ontology | Missing or stale evidence is taken to end a whole, while a current record is taken to create one. | Keep construction and reidentification world-side; evaluate support, currentness, and reliance separately. |
 | Selected structure as new whole | A bounded model-use structure or Context Map is called a meta-system. | Keep dependent `U.Structure` under A.1.1 and A.22, and identify any candidate new system independently. |
 

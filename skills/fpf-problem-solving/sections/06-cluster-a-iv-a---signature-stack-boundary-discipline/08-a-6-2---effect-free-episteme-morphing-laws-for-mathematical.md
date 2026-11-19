@@ -77,7 +77,7 @@ The result: engineers and tool builders can no longer tell whether a mathematica
 * **Locality vs reference planes and Bridges.**
   Interpret each ClaimGraph through its episteme's effective ReferenceScheme (C.2.1). When a use relates two source-local senses, test the direct F.9 predicate and cite a Bridge only when it obtains; state the bounded-use claim and any reliance separately. When a use crosses a ReferencePlane, cite its applicable plane relation. EFEM cannot hide either relation inside a “pure” content rewrite, and a local-sense or plane difference alone creates neither one.
 
-* **EntityOfConcern and Description-episteme boundary and specification-use refinement.**
+* **EntityOfConcern, Description episteme and specification use.**
   The EntityOfConcern is distinct from a Description episteme about it; the EntityOfConcern itself may be `U.Episteme` when an episteme is under concern. `...Description` names a Description episteme, and `...Spec` names one admitted for specification use only when its claims are checkable and the named harness or validation relation can test them. EFEM compares what the two epistemes say, what they concern, and their effective schemes; it states what remains the same and what differs. When grounding or a describing-use viewpoint matters, name the relation occurrence or use qualification on each side and compare its facts. Any change to that occurrence follows its direct relation pattern; viewpoint selection and conformance require their own claims (A.7, E.10.D2).
 
 ### A.6.2:4 - Solution — define one local arrow discipline
@@ -107,6 +107,8 @@ The ordinary FPF objects remain separate:
 * an operation application and any Work that computes, authors, or changes an episteme are identified only when they occur.
 
 The A.6.3 viewing branch has endpoint epistemes about the same EntityOfConcern. The A.6.4 retargeting branch has endpoints about independently different entities. A receiving-use claim adds the separate bounded-use assertion `q`; a judgement about a current case tests its facts against `q`.
+
+When the endpoint epistemes serve as models, use B.5.MR for a refinement or abstraction claim. Recover the assertions and admitted answers at each endpoint, and establish the interpretation used to compare them. More formal or checkable wording alone does not establish that one model is more concrete.
 
 #### A.6.2:4.2 - Direct signature components (A.6.0 alignment)
 
@@ -160,7 +162,7 @@ For any arrow `f : X→Y` presented as an effect-free episteme morphism:
    * `entityOfConcernRef(E) : U.EntityRef` — designates E's EntityOfConcern;
    * `selectedViewpointRef?(use) : U.ViewpointRef` — only when the named describing use selects one viewpoint; this is not a component of E's identity;
    * `referenceScheme(E)` — the effective designation and interpretation rules recovered for E under C.2.1:4.1.1;
-   * `representationLanguageRef?(use, endpoint, expression) : U.RepresentationLanguageRef` — when the comparison needs the language selected for an expression, identify the endpoint, the expression used there and the conventions selected in this use. A single episteme can be expressed in several languages. Resolve the reference with the applicable binding. C.29 governs any mathematical-lens use.
+   * `representationLanguageRef?(use, endpoint, expression) : U.EntityRef` — its referent must satisfy RepresentationLanguage under E.5.2.L:4.3. When the comparison needs the language selected for an expression, identify the endpoint, the expression used there and the conventions selected in this use. A single episteme can be expressed in several languages. Resolve the reference with the applicable binding. C.29 governs any mathematical-lens use.
    * a separately current neighboring fact — name the `EpistemeEditionRelation`, A.10 evidence or provenance relation, or other governed predicate and its participants when the arrow family reads or compares it; do not collect these facts in a generic projection. If E asserts such a fact, that assertion is already part of `content(E)`.
 
    Content, EntityOfConcern and effective interpretation rules are recovered from the episteme at the endpoint. A describing use can select a viewpoint. If the law uses the language of an expression, resolve it for the expression and endpoint selected in that use. Establish each further relation on its own grounds. The arrow family's declared endpoint kinds and predicates determine admissibility. If its law additionally classifies content or scheme candidates for substitution, recover that classification's own domain and criterion; endpoint membership supplies no general constituent ValueKind. C.2.1:4.2.1 governs that stronger typed use.
@@ -271,9 +273,9 @@ When the use also relates two F.17 local senses and the F.9 predicate obtains, c
 
 ### A.6.2:5 - Archetypal Grounding (Tell–Show–Show)
 
-The examples below show how EFEM is intended to be used across the EntityOfConcern and Description-episteme boundary, specification-use refinements, and Viewpoint/MVPK publication lanes.
+The examples below show how EFEM is intended to be used across the EntityOfConcern and Description-episteme boundary, specification use, and Viewpoint/MVPK publication lanes.
 
-#### A.6.2:5.1 - Typed specification-use refinement `Specify_DescEp_SpecDesc` (species of EFEM)
+#### A.6.2:5.1 - Conservative arrow to an episteme used as a specification: `Specify_DescEp_SpecDesc`
 
 *Context.* You have a `U.MethodDescription` for a safety check and want a more formal description of the same Method for a named specification use, with checkable constraints or test-harness obligations. Before calling the relation conservative, identify the claims that already support those constraints.
 
@@ -295,7 +297,7 @@ If an author chooses a new threshold, acceptance condition, harness obligation, 
 
 Keeping episteme identity, describing use, and production separate matches A.7 and E.10.D2. Under C.2.1, each Description episteme is identified by its complete claim content, its own EntityOfConcern reference, and its effective ReferenceScheme; any describing use or production relation is separately identified.
 
-`Specify_DescEp_SpecDesc` is an optional EFEM species once a specification-use or refinement gate admits that use. E.10.D2 governs specification-use admission, A.7 governs the Description/Specification distinction, and the declared `Specify_DescEp_SpecDesc` arrow carries the episteme-to-episteme relation.
+`Specify_DescEp_SpecDesc` is an optional EFEM species under the conditions above. E.10.D2 governs the receiving specification use; the declared arrow relates the two independently identified epistemes. If the endpoints serve as models, B.5.MR separately tests a refinement or abstraction claim.
 
 #### A.6.2:5.2 - Internal normalisation of a View (species of EFEM, `entityOfConcernChangeMode = preserve`)
 
@@ -365,7 +367,7 @@ Concrete `A.6.3/A.6.4/E.17.*` patterns for engineering description and specifica
 
 * **Arrow domain and use-local semantics.** EFEM names the formal domain of each arrow family. When a receiving-use claim is made, a separate `q` carries the receiving-use invariant, visible loss, conditions, and polarity; a current-case judgement separately tests the facts. Scope, operating conditions, and selected viewpoint enter only when they change that proposition or judgement. An obtaining semantic Bridge between two local senses, a ReferencePlane relation, and any transport application remain separately identified; no implicit cross-local or cross-plane EFEM is permitted.
 
-* **EntityOfConcern and Description-episteme boundary and specification-use/refinement respect.** EFEM never collapses an EntityOfConcern with a Description episteme or with a specification-use refinement. C.2.1 identifies each Description episteme directly; any authoring, measurement, observation, model, source-use, representation, or refinement relation is stated only when it is current. A specification refinement can be represented by an EFEM arrow only after a specification-use or refinement gate admits it; any application that produces the refined episteme remains separate.
+* **EntityOfConcern, Description episteme and specification use.** Keep the EntityOfConcern distinct from the Description episteme, and identify any specification use separately. C.2.1 identifies each Description episteme directly; any authoring, measurement, observation, model, source-use, representation, or refinement relation is stated only when it is current. A.6.2:5.1 gives an optional conservative arrow to an episteme admitted for specification use. The arrow must satisfy its own laws; any application that produces the receiving episteme remains separate. A comparison of endpoint models by refinement or abstraction uses B.5.MR.
 
 ### A.6.2:7 - Conformance Checklist (normative)
 
@@ -385,7 +387,7 @@ Concrete `A.6.3/A.6.4/E.17.*` patterns for engineering description and specifica
 | Anti-pattern | Why it fails | Correct action |
 |---|---|---|
 | EFEM as performed work | An episteme rewrite is treated as measurement, actuation, or work occurrence. | Use EFEM only for episteme-to-episteme morphisms; use A.15 when work in the world is current. |
-| EFEM as publication rendering | A face, carrier, or rendering change is treated as the episteme morphism itself. | Use E.17 for publication forms and use EFEM only for the episteme relation being represented. |
+| EFEM as publication rendering | A face, carrier, or rendering change is treated as the episteme morphism itself. | Use E.17 for publication faces and E.24.PUB for publication occurrences, forms and carriers; use EFEM only for the episteme relation being represented. |
 | Retargeting as view | Endpoint EntitiesOfConcern differ, but the relation is classified as preserving their identity. | Identify the retargeting arrow under A.6.4. For a named receiving-use claim, state `q` with its invariant, visible loss, use, conditions, and polarity; when judging a current case, test its facts against `q`. Add F.9 only for a separate local-sense relation. |
 | Representation lens as ontology | A category arrow, graph, or mapping notation is treated as a new root U-kind. | Keep the mathematical object in its selected formal substrate; use C.29 when that object is used as a mathematical lens. Keep U-kind settlement in E.24/C.3. |
 
@@ -442,7 +444,7 @@ FPF distinguishes actual participants and their references from the declaration-
 * **Specialises / is specialised by.**
 
   * Builds on A.6.0 `U.Signature` for direct subject, range, optional result, slice, and extent components together with Vocabulary, Laws, and Applicability; coordinates with A.6.1 `U.Mechanism` without making mechanism application part of EFEM.
-  * Refined by the A.6.3 EntityOfConcern-preserving viewing branch and the A.6.4 EntityOfConcern-retargeting branch.
+  * Specialized by the A.6.3 EntityOfConcern-preserving viewing branch and the A.6.4 EntityOfConcern-retargeting branch.
 
 * **Constrained by.**
   A.6.5 declaration-local SlotSpec discipline; C.2.1 episteme constitution and any separately current empirical-grounding or edition relation; E.10.D2 for the EntityOfConcern, Description-episteme, describing-use, and specification-use boundary; Part F for local-sense or ReferencePlane relations; and E.10 for naming discipline.

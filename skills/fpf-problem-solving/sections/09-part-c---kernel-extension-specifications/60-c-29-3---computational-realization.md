@@ -67,7 +67,7 @@ Use the available premises for a conditional design. An assertion about a perfor
 
 #### C.29.3:4.2 - Construct input preparation
 
-Explain how a required input is set in the system. Identify the physical or operational state that represents it: a stored value, an applied signal, an arranged material stock or another prepared condition.
+Explain how a required input is set in the system. Identify the state of the executing arrangement that represents it: a stored value, an applied signal, an arranged material stock or another prepared condition.
 
 Determine the admitted range and the relevant distinctions. A signed field has a finite range. A voltage input has units and a reference. A stock of three exclusive cards differs from two independent stocks of three. Recover initial state when the input is interpreted relative to it.
 
@@ -109,7 +109,7 @@ For example, a required binary sampler gives output 1 with probability 0.5. Supp
 
 When the requested result contains several random components, compare their joint behavior. Suppose the target is a pair of independent fair bits. Preparing one fair bit B and returning (B,B) gives the right distribution at each output separately. But the target assigns probability 1/2 to unequal outputs; this system assigns probability 0. Using two independent draws gives each of the four pairs probability 1/4 and restores the requested result. The realization must provide that joint sampling behavior. When its observations are dependent, use the joint law or change how the second component is obtained.
 
-Choose changed cases from consequential features of the arrangement: an endpoint of the command range, a different initial state, an overlapping action or a possible indication error. These cases help locate failures. A sampled success supports the tested case; the broader argument supplies the broader conclusion.
+Choose changed cases from consequential features of the arrangement, such as an endpoint of the command range, a different initial state, overlapping actions or indication error. A permitted input with a confirmed output outside tolerance refutes a claim that every execution meets it. Establish the input, output reading and operating conditions needed for that comparison. A pair of different draws can be entirely consistent with a probabilistic guarantee. Use the sampled outcomes and their probability law for the distributional question.
 
 Separate three possible outcomes:
 
@@ -225,7 +225,9 @@ Issuing a card changes Free to Reserved. Entry changes Reserved to Inside. Exit 
 
 Every operation moves one existing card between states. Entry requires its exclusive reservation. Return requires that its visitor is outside. These conditions preserve both the stock and the association between visitors inside and Inside cards. They establish the capacity bound throughout permitted histories, including overlapping admissions.
 
-After two cards have been issued, one visitor may be inside and the other waiting outside. Then F = 1, R = 1, I = 1 and E = 0. The count of unavailable cards is 2, while occupancy is 1. Reading occupancy as 3 − F would be wrong. That count is an upper bound until R = E = 0.
+After two cards have been issued, one visitor may be inside and the other waiting outside. Then F = 1, R = 1, I = 1 and E = 0. The count of unavailable cards is 2, while occupancy is 1. Reading occupancy as 3 − F would be wrong. That count is an upper bound and equals occupancy when R = E = 0.
+
+At the shared issuing point, a free card can be exclusively reserved for the next admission under this procedure. If all three cards are issued and none is free, another reservation must wait. The room itself could be empty with all three cardholders still outside, or full with all three inside. The free-stock count settles whether another card can be issued now. With all three cards free, the room is known to be empty. When several occupancies fit the available count and the exact number matters, count the visitors inside or reconcile entries and exits to the same instant.
 
 A second entrance can share the same stock or receive a partition of it, such as two cards at one entrance and one at the other. Both preserve the total of three. Giving the second entrance three copied cards instead permits six simultaneous admissions, despite each attendant following their local procedure.
 
@@ -280,7 +282,7 @@ Constructing those connections can cost more than the displayed calculation. Reu
 
 #### C.29.3:10.1 - Why realization needs its own method
 
-Mathematical result transfer compares accounts and their operations. Computational formulation constructs a procedure for the requested result. Realization begins with that procedure and asks how an executing arrangement supplies it. Its new work is preparation, physical or operational execution, readout and comparison under the conditions of use.
+Mathematical result transfer compares accounts and their operations. Computational formulation constructs a procedure for the requested result. Realization begins with that procedure and asks how an executing arrangement supplies it. Its new work is input preparation, execution by the embodied arrangement, readout and comparison under the conditions of use.
 
 A.6.1 provides the declaration and realization relation. It leaves the design and interpretation of an executing arrangement to the method that uses the relation. C.29.3 supplies that constructive work within the mathematical-use family. The method can be entered with an available computation.
 

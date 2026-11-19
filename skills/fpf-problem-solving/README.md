@@ -118,7 +118,7 @@ change: unresolved IDs, unmapped frameworks, counts, the upstream commit. See
 
 Skill packaging and scripts: MIT. Adapted from the *FPF Library* by Anatoly Levenchuk — *First
 Principles Framework (FPF)* Core, its domain frameworks and Library documents —
-[ailev/FPF](https://github.com/ailev/FPF), upstream commit `e230eef4f6955116bf697ca9ba5e79247af1843e`.
+[ailev/FPF](https://github.com/ailev/FPF), upstream commit `9fb0bff7ac2dfe82f068b03befe6b7303bcd7f5b`.
 The Library text is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see the
 [upstream licensing scope](https://github.com/ailev/FPF/blob/main/LICENSING.md). Changes: the
 publications were split into section files with generated navigation indexes, their links were rewritten

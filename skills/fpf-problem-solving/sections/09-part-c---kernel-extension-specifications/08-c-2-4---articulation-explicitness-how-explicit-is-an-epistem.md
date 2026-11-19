@@ -132,7 +132,7 @@ For a planning check whose required content is exactly those items, inspect them
 A row `Maintenance Team 2 | Pump P-17 | isolate | 14:00` looks slot-shaped. If it records intended action, however, it is a compact plan row rather than proof of a durable relation. Its layout does not raise `AE` until the planning meaning and conditions are recoverable, and it does not select `A.6.P`.
 
 #### C.2.4:13.4 - Threshold edge case
-A cue with a stable trigger and candidate anchors may still sit between `AE2` and `AE3` because its direct branch is unresolved. Keep the cue recoverable in `B.4.1` or `A.16.1` and state what is missing. An applicable first recognition or clarification step can help select the branch; use its required inputs and apply the receiving branch's threshold before claiming that result. There is no universal relation threshold.
+A cue that names a stable trigger and two candidate interpretations, but leaves which one is intended open, can support `AE2` for that question. If the assessor has only an excerpt and the missing passage could settle the branch, the assessor cannot yet establish whether the complete expression reaches the `AE3` threshold. The excerpt alone supplies no upper bound on the complete expression’s articulation. Recover the missing passage when the difference changes the receiving decision. If an assistant supplied the interpretation, identify what the original expression allowed the reader to recover and what the assistant added. Use the receiving branch’s own conditions for entry.
 
 #### C.2.4:13.5 - Recovering what a clearer summary lost
 

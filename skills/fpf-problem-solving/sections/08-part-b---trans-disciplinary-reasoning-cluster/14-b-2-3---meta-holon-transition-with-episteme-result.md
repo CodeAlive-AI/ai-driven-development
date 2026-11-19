@@ -20,7 +20,7 @@ Keep grounding, viewpoint, view, publication, source use, representation, eviden
 
 **Not this pattern when.**
 
-- If the result whole is a physical or operational holon eligible to act, use `B.2.2`.
+- If the result whole is a physically embodied holon eligible to act, use `B.2.2`.
 - When no whole-reidentification question remains, use the episteme, publication or source-use pattern for the remaining question; :4.2 and `CC-B2.3-4` distinguish these uses.
 - If the question is effect-free episteme morphing, viewing, retargeting, or controlled semantic coarsening, use `A.6.2`, `A.6.3`, `A.6.4`, or `A.6.3.CSC`.
 - If the question is synthesis work, use `A.15.1` for performed work and `A.12` or `A.3.4` for acting-side and transformation claims.
@@ -176,7 +176,7 @@ A set of clauses, examples, and annexes can become a standard episteme only when
 
 The standard is not the committee, the PDF, or the Work of enforcement. The committee may be an acting System. If committee or enforcement Work is claimed, recover each performer through A.13 and admit the Work independently under A.15.1. Add F.6 only if the account consumes precise assignment-bound attribution; missing or failed attribution alone leaves independently admitted Work intact. If the same finding invalidates an admission premise, apply `CC-B2.3-5`.
 
-The PDF file is a presentation carrier; its layout may supply a publication form.
+The PDF file carries an expression of the standard. A selected publication form supplies the reusable rules that this expression follows.
 
 ### B.2.3:5.4 - Bias-Annotation
 

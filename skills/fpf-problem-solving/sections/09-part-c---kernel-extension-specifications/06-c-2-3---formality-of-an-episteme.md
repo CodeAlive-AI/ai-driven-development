@@ -67,7 +67,7 @@ A local ordinal summary is possible when its levels have nested criteria. For ex
 - those conditions plus explicit acceptance predicates and their interpretation;
 - those conditions plus expressed derivations for a specified set of obligations.
 
-The last level includes the earlier criteria by declaration. Its proof-checking evidence is still assessed separately. State the exact scale, mapping from the profile, domain and conditions before using its levels or a threshold. Another team's levels are not comparable merely because they use the same numbers.
+The last level includes the earlier criteria by declaration. Its proof-checking evidence is still assessed separately. State the exact scale, mapping from the profile, domain and conditions before using its levels or a threshold. Another team’s levels are comparable only to the extent that their criteria support the same comparison. When the expressions are used as models, B.5.MR asks a different question. For a fixed inquiry and interpretation, which answers does each model admit? Rewriting a ceiling of thirty minutes as an equivalent predicate can make it executable while admitting exactly the same durations. Lowering the ceiling to twenty minutes can exclude a previously admissible duration in the same notation.
 
 Arithmetic, averages and numerical differences are not licensed by an ordinal scale. Where a change is described as an increase in formality, identify the strengthened property or the established order that makes that claim meaningful. A new logic, extra subsystem or larger toolchain is not such a property by itself.
 
@@ -105,7 +105,7 @@ The pattern favors recoverable expression properties over a universal prestige r
 - `CC-F-2` A local ordinal summary **SHALL** declare its scale and mapping. Arithmetic over its levels is invalid unless a separately justified quantitative scale is established.
 - `CC-F-3` A claim of greater formality **SHALL** name the strengthened property or declared order. It **SHALL NOT** imply greater truth, trust or scope by itself.
 - `CC-F-4` Status, maturity or tool labels **MUST NOT** substitute for the assessment of expression properties.
-- `CC-F-5` A local refinement or sublevel **SHALL** preserve its declared parent criteria; a cross-scale comparison requires an explicit meaning-preserving basis.
+- `CC-F-5` A subdivision of a local formality scale **SHALL** retain the criteria for the level it subdivides. Comparing levels on different scales requires a basis that preserves the meaning of the properties being compared.
 - `CC-F-6` A composite assessment **SHALL** cover the essential content and inferences of the named whole. It **SHALL NOT** inherit a property from constituents without the composition preserving that property.
 - `CC-F-7` Implementations **MUST NOT** average unrelated formality properties or local ranks into an undeclared score.
 - `CC-F-8` Changes in G, R or CL **SHALL NOT** change an expression assessment unless its own grounds change.

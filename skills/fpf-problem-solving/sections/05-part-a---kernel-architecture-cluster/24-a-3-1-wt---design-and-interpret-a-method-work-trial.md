@@ -177,7 +177,7 @@ For a release trial, apply §4.1(6–9) to the release's own occurrence, support
 
 Trial Work produces inspectable evidence. Failures and missing premises survive as useful results, and later assurance decisions can compare the same occurrences without changing their identity or truth status.
 
-The cost is more explicit occurrence recovery and narrower conclusions. Projects must record the performer, enacted Method and situation, together with the capability, support, direct relations, burdens and source limits that affect the receiving question, and they may finish a costly trial with a precise gap instead of a favourable verdict.
+The cost is more explicit occurrence recovery and narrower conclusions. Projects must record the performer, enacted Method and situation, together with the capability, support, direct relations, burdens and source limits that affect the receiving question, and they may finish a costly trial with a gap instead of a favourable verdict.
 
 ### A.3.1.WT:10 - Rationale
 

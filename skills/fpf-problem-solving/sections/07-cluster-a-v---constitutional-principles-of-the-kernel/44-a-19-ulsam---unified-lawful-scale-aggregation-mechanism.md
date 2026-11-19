@@ -158,7 +158,7 @@ For example, two separate lawful sums of admitted 2 kg and 3 kg measurements und
 
 #### A.19.ULSAM:4.2 - Interpretation notes (didactic, informative)
 
-- **Identify the fold and its governing conditions.** The fold is the aggregation rule; ΓFoldRef identifies the selected rule. Its use is a policy-level commitment: `GammaFoldSlot` MUST be resolvable to `CGSpecSlot.Γ_fold` routing or a pinned override. A calculation can still have occurred without that citation, but its conformance and reuse basis remain unresolved until the rule is recovered.
+- **Identify the fold and its governing conditions.** The fold is the aggregation rule; ΓFoldRef identifies the selected rule. `GammaFoldSlot` MUST be resolvable to `CGSpecSlot.Γ_fold` routing or a pinned override. A calculation can still have occurred without that citation, but its conformance and reuse basis remain unresolved until the rule is recovered.
 - **ULSAM is not normalization.** ULSAM does not establish comparability by itself: it does not normalize, rescale, or “align units” as a hidden convenience. If a compare‑on‑invariants surface is required, invoke UNM upstream and cite the effective pins in Audit.
 - **Keep separate measures when sufficient.** If separate measures answer the receiving question, keep them separate. Use `CPM` for a needed comparison and `SelectorMechanism` for a needed selection, under their declared partial-order and set-return rules. A fold can discard distinctions; state which distinctions the declared fold preserves and loses.
 - **Recover the actual contributors.** Existing input and calculation content may already establish the contributor subset; use the optional ContributorSet output when it supplies needed recoverability. Equal numbers from different contributors remain distinct measures: two boxes each measured as 2 kg contribute twice to their total, rather than collapsing to the bare set {2}. Conversely, copying the assertion about one box does not make two boxes or authorize counting its mass twice. Any ordering, multiplicity or weight consumed by the fold must be declared in its grouping basis or rule. Excluding a contributor may change a total into a partial total; retain that distinction in the result instead of treating missing input as zero.
@@ -180,7 +180,7 @@ For example, two separate lawful sums of admitted 2 kg and 3 kg measurements und
    `MeasureSetSlot = {m₁, m₂, …, m_k}`.
 2. The team wants a single “readiness” measure `m_ready` to be used as an input to later comparison/selection.
    Define the question this aggregate would answer and its acceptance or comparison use; a readiness label supplies no aggregation law.
-3. ULSAM forces three questions before folding:
+3. Before folding, answer:
    - **Admissibility:** Is the fold admissible under `CGSpecSlot.SCP` (units/scale) and `CGSpecSlot.Γ_fold` (declared fold kinds)?
    - **Evidence:** Is the evidence posture sufficient under `MinimalEvidence`? If not, do we `degrade` or `abstain`?
    - **Policy identity:** What is the identity of the fold (which ΓFoldRef, which edition)?
@@ -252,7 +252,7 @@ Keeping ULSAM as its own mechanism preserves:
 - CHR suite optional stage `fold_Γ?` (never hidden).
 - Folding a trust/assurance quantity only under its justified model and applicable policy; a declared default alone supplies no numerical warrant.
 - Any project that requires an auditable “roll-up” measure prior to lawful comparison/selection.
-- In E.18 transformation-flow structures: ULSAM appears as a mechanism instance node whose `ΓFoldRef` / `MinimalEvidenceRef` are bound in planned baseline (P2W), while Audit records the pins used at run time.
+- In E.18 transformation-flow structures, the planned baseline selects the fold and evidence-policy editions for a ULSAM mechanism-instance node. Argument bindings obtain under §4.1; Audit records the effective references.
 
 ### A.19.ULSAM:12 - Builds on / Relates to
 
@@ -260,7 +260,7 @@ Keeping ULSAM as its own mechanism preserves:
 - `A.6.1` (operation declarations and application/binding rules).
 - `A.6.1 §4.2` (operation-local argument/result declarations as the source of SlotIndex).
 - `A.19.CHR` (CHR suite boundary; stage `fold_Γ?`; CHR SlotKind Lexicon).
-- `G.0` (`CG-Spec.Γ_fold`, `CG-Spec.SCP`, `CG-Spec.MinimalEvidence`; admissibility gate).
+- `G.0` (`CG-Spec.Γ_fold`, `CG-Spec.SCP`, `CG-Spec.MinimalEvidence`; fold, admissibility and evidence conditions).
 - `A.18` (CSLC).
 - `B.3` (support dependence and the justified model for any `R_eff` calculation).
 

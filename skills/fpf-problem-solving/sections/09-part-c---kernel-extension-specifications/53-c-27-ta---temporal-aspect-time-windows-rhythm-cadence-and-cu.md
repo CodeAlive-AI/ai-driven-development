@@ -23,7 +23,7 @@ When the claim depends on another direct relation, cite that relation's declarat
 
 **First useful move.** Identify the bearer or claim, state its temporal property, and supply the reference and extent needed to interpret it. An observed cadence needs the period observed; a general ordering rule can instead name the event types and their relative order.
 
-**First result.** `CheckoutSystem-1 had a weekly release cadence during release train R14.` This is enough when the receiving action needs no further distinction. Stop there.
+**First result.** A practitioner can state the timing claim: “CheckoutSystem-1 released at least once in each reporting week of R14.” This gives a colleague a criterion to apply. To report that it was met, check the release events against those weeks as in section 5.1.
 
 Open the fuller statement only when the receiving use also depends on measurement, a scheme or scope, a selected Structure, a source or use boundary, currentness, reopen conditions, coupling, another direct relation, or an explicit rule citation or blocked overread.
 
@@ -143,6 +143,8 @@ Add the remaining fields only when their values change the claim or receiving ac
 
 A rhythm or cadence claim needs its bearer, recurrence or ordering property and timing reference. An empirical assertion such as a weekly cadence observed during R14 also needs that observation window. A planned rule such as "run a review every Friday while this plan applies" can state its recurrence and applicability directly. Add phase, synchronization, entrainment or other cross-bearer relations when the claim depends on them.
 
+Choose the timing rule by what the recipient needs. An average number of occurrences per week, at least one occurrence in each calendar week, and a maximum seven-day gap answer different questions. For weekly coverage, place dated events in their reporting weeks. For a gap limit, compare elapsed times between successive events over the period the agreement covers. When a missing record is meant to establish a missed occurrence, check which events the recording procedure covers. A plan supplies the intended timing and can be used to schedule work.
+
 Optional reference-bearing form:
 
 ```text
@@ -178,9 +180,9 @@ Add the disturbance or starting condition, measured reading, effort, resistance,
 
 #### C.27.TA:5.1 - Release Cadence
 
-`CheckoutSystem-1 had a weekly release cadence during release train R14.`
+Suppose R14 comprises four full reporting weeks, Monday through Sunday. Operations needs at least one release in each week. Four dated release events, one in each week, establish that requirement for R14. A total of four alone establishes an average of one per week and leaves their distribution open. A week with no releases defeats the weekly requirement. A blank in a log establishes that absence when the log covers every release in the week.
 
-This result identifies the bearer, cadence, release-train timing reference and R14 observation window. It is sufficient when the receiving use needs that cadence; a claim about its quality or effect needs separate grounds.
+A support agreement might instead limit the elapsed time between releases to seven days. Consecutive releases on Monday of one week and Sunday of the next meet the one-per-week requirement for those two weeks while leaving thirteen days between releases at the same hour. Two log entries thirteen days apart leave room for intervening releases. To report a breach, establish an interval longer than seven days with no release. A series of confirmed releases spaced at most seven days apart can show coverage even if additional releases went unrecorded. Include releases on either side of R14 when the agreement covers gaps crossing those boundaries.
 
 #### C.27.TA:5.2 - Source Freshness
 

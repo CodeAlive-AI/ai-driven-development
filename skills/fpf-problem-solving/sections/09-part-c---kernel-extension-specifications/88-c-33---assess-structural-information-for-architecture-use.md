@@ -66,7 +66,7 @@ After using C.33, another practitioner can recover the captured structure and th
 
 What C.33 buys in practice: the practitioner can use a partial carrier within its limits. The pattern turns "this diagram, ADR, graph, report, or observation is useful" into a reviewable statement about captured structure, missing structure, missing-structure return, and the next claim or test that needs that structure.
 
-Ordinary working move: identify the sentence, diagram, graph edges or observation being relied on; explain the structure it captures and any omission that matters; then state the use it supports.
+Read the statement, diagram or observation for the decision at hand. Identify the relation it shows and how the source established it. If the decision turns on an omission, find out which relations the source would have shown.
 
 For a reader-relative comparison of structural amount in an expressed account, use `C.2.8` with the reader's preparation, access and budget. State a qualitative comparison directly in the note, or cite an existing measurement or evaluation through `measurementOrEvalRefs?` when that separate result is needed. Then judge whether the captured structure is sufficient for the declared architecture use. The note retains its capture-and-return purpose when it uses a characteristic result.
 
@@ -99,7 +99,9 @@ Common failures:
 
 ### C.33:4 - Solution
 
-Assess the captured structure for the declared architecture use. Explain what the carrier supports and obtain any missing structure needed for further reliance. Use the optional note when it makes that explanation easier to retain or share.
+Start with the decision the reader must make. Which relation would settle it, and what does this view record about that relation? A confirmed entry can establish that one connection exists within the stated scope. To infer from an empty result that there is no such connection, establish that the source covered the relevant entities, relation and period and that its selection and display would have exposed a match. A filtered view can be complete for that particular inquiry.
+
+If two arrangements both fit the record, work out what each would allow the reader to do. Proceed if the same action is justified in both and in every other arrangement still possible. If the answer changes, look for the assignment, rule or observation that would settle it. It may already be in the record. Use the optional note when someone needs to retain or share the grounds for the decision.
 
 Work in this order:
 
@@ -124,9 +126,9 @@ A `DemonstrativeUnfoldingSlice@Context` may be the `U.Episteme` slice or present
 
 C.33 assesses what selected structure a partial carrier captures, what it leaves out, and which practical use it supports. The carrier may be a diagram, decision record, query result, eval report, code-agent map, neural-network architecture review, method handoff, or observation of the realized holon. Apply the rule or test needed by a further claim. Add C.2.1 identity only if that claim must travel independently.
 
-System case. An ADR-like record says "use event-carried integration with bounded exception." C.33 records that the carrier captures the selected integration style, exception boundary, and method expectation. It does not capture lower-level placement constraints, schema evolution burden, runtime data custody, or deployment topology. The admissible use is decision memory and method handoff; the non-admissible use is proof that the realized modules have the intended architecture.
+**An integration decision.** An approved decision record says “use event-carried integration with bounded exceptions.” A team can cite the adopted integration style. To decide whether a particular interface qualifies for an exception, the team needs the condition defining the exceptions. If the record gives that condition, the team can apply it to the interface. If the record only says “bounded,” check whether an applicable contract or policy already decides the case. If admitting and refusing the interface are both consistent with the available rules, ask the decision owner to resolve the exception before relying on it.
 
-Obtain the missing structure through the affected account: C.30.AD for the description, C.32.ADR for its decision record, C.32.PAD when the decision itself needs reconsideration, or C.32 synthesis when a structural change is needed.
+To answer which interfaces actually use event-carried integration, inspect evidence about the installed interfaces. A verified as-built inventory attached to the same record can already supply it. Use C.30.AD for the architecture description or C.32.ADR for the decision record. Reopen the decision under C.32.PAD if the rule itself needs to change.
 
 Episteme case. A code-agent relation graph finds imports, call edges, inferred module roles, and candidate invariants. C.33 records relation observation class `observed | inferred | unknownRegionPresent`, typed relation semantics, confidence class, active-passive gap when present, unexplored regions, and lost runtime or deployment structure.
 
@@ -138,7 +140,7 @@ C.33 separately names affected characteristics such as latency, compute, memory,
 
 Architecture narrative case. A team narrative says "we moved from candidate A to candidate B because data custody forced placement P and made latency trade-off T acceptable." C.33 records the structural content and decision context the narrative captures: the move from candidate A to candidate B, data-custody constraint, placement constraint, and trade-off.
 
-C.33 separately states the missing-structure return condition. It also records lost or hidden structure such as rejected candidate details, quantitative evals, module interfaces, and realization evidence. The narrative can help decision memory or team orientation; it is not by itself an architecture description, decision authority, or evidence of realized structure.
+The statement gives the team's reason for changing candidates. To use B under a tighter latency limit, establish that its latency meets the new limit under the intended load. An existing validated bound can settle that question. If both A and B remain eligible and the commission calls for choosing between them, compare them under the criteria that decide this choice. To establish which placement was installed, check applicable as-built evidence. Use the evidence already in the account when it settles the question.
 
 The account is sufficient when it establishes what the carrier supports for the intended use. A further claim may need an architecture description, view, evaluation, evidence, decision or authorization under its own rule; C.33 identifies the missing structural contribution and returns that question to the applicable pattern.
 
@@ -158,7 +160,7 @@ The account is sufficient when it establishes what the carrier supports for the 
 | --- | --- |
 | `CC-C33-1` | The account identifies the described holon, architecture concern and intended use, selected structures, carrier or observation, grounds of the adequacy or insufficiency conclusion, and any material ClaimScope or qualification window. |
 | `CC-C33-2` | Captured selected structure is stated as relations, constraints, invariants, allocations, compositions, variation classes, operations, dynamics refs, or preserved organization. |
-| `CC-C33-3` | Expected but uncaptured structure and lost or hidden structure are stated when the next use depends on them. |
+| `CC-C33-3` | The account identifies what an omission leaves open for the intended use. A conclusion drawn from the absence of an entry identifies why a matching entry would have been recorded and visible. |
 | `CC-C33-4` | Observer, access or budget conditions are stated when they limit recovery or the use of an agent-produced, learned, probed or source-derived carrier; a formal epiplexity-style estimate retains its model conditions. |
 | `CC-C33-5` | Each current mathematical-lens, measurement, eval, decision, evidence, assurance, gate, release, method, work, or publication claim uses the pattern that defines or tests it. |
 | `CC-C33-6` | The supported use and any material limits are clear. A required source return names the missing structure and the question, rule or test needed to obtain it. |
@@ -201,6 +203,7 @@ The source choices explain the fields. Epiplexity supplies a computational model
 
 | Source or practice line | Use of the contribution | Contribution to the assessment | Boundary of use |
 | --- | --- | --- | --- |
+| [OMG SysML 2.0, Language, Views and Viewpoints](https://www.omg.org/spec/SysML/2.0/Language/PDF) | Use the view’s selection of exposed elements and the conditions that filter them. | Tells a reader where to check whether the required model element would appear. | A complete view of selected model elements supports a claim about an installation when the interpretation and as-built evidence also support that claim. |
 | Finzi et al., `From Entropy to Epiplexity`, arXiv:2601.03220 | Adapt bounded-observer structural information through the characteristic in `C.2.8`. | Connects observer and budget conditions and captured/lost-structure comparison to the reader's preparation and access. A formal estimate retains its specified source/model correspondence and model conditions; use `C.29` for a separate unresolved choice, transfer, or reliance question. | The amount characterizes extraction from the expressed source under observer conditions. The described architecture and its adequacy for the next use retain their own questions and evidence. Reopen the note when observer conditions, source publication edition, or downstream use changes. |
 | Cao et al., `Multi-Relational Structural Entropy`, arXiv:2405.07096 | Adapt relation heterogeneity and graph structural-information pressure. | Distinguishes relation kinds when interpreting a graph and its measurements or evaluation. | For a graph entropy value, use `C.16` when measurement is claimed and `C.32.ACE` when architecture evaluation is current; it does not establish architecture adequacy. |
 | Sapunov, `Theory of Code Space`, and ToCS code-agent architecture-map practice | Adopt the partial-observability and belief-probing lessons; adapt them beyond software code agents. | Distinguishes observation class, confidence, active-passive gap and unexplored regions; an invariant claim returns to the relevant architecture source map or defining rule. | A probe, JSON output, dependency F1, invariant F1, active-passive gap, or benchmark score is not architecture adequacy, evidence sufficiency, safe-change authority, assurance, gate passage, or release authority. Reopen when the probed codebase, architecture source map, or observation budget changes. |

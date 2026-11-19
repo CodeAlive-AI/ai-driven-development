@@ -141,8 +141,8 @@ A service account states:
 A second expression adds this diagram while retaining those four sentences:
 
 ```text
-API --write--> Store --update--> Replica --read by--> Reports
-API <--durable-write confirmation-- Store
+API returns "stored" <--only after-- Store confirms durable write
+Store --source of updates to--> Replica --read by--> Reports
 ```
 
 The reader is an engineer familiar with durable writes and replicas. Select these four relations:

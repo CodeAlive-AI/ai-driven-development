@@ -85,7 +85,7 @@ Another assertion, mapping expression, card, signature, scheme edition, or publi
 
 #### C.3.3:6.3 - Order & Monotonicity
 
-**KB-05 (Monotone order).** If a bridge assertion states that source order fact `SubkindOfObtains(k1, k2; sourceRS)` is preserved, it SHALL designate target kinds `k1'` and `k2'`, the respective obtaining `KindBridge` relations from `k1` to `k1'` and from `k2` to `k2'`, and the basis on which `SubkindOfObtains(k1', k2'; targetRS)` holds. Identify a target `R_sub : U.SubkindOf` occurrence only when a receiving use needs occurrence identity.
+**KB-05 (Monotone order).** To claim that source fact `SubkindOfObtains(k1, k2; sourceRS)` survives transfer, identify its two target endpoints. For each endpoint that changes kind, establish the directional `KindBridge` from source to target. For an endpoint that remains the same kind, establish identity under the two declarations. Establish `SubkindOfObtains(k1', k2'; targetRS)` using the target criteria or its closed-domain test (C.3.1). If another claim relies on that order, check separately that the premises it needs survive the transfer. Identify a target `R_sub : U.SubkindOf` occurrence only when its identity matters to the receiving use.
 **KB-06 (No inversions).** A bridge assertion MUST NOT state preservation when the mapped target order is inverted. If `SubkindOfObtains(k2', k1'; targetRS)` holds for distinct mapped kinds and the required forward fact `SubkindOfObtains(k1', k2'; targetRS)` is established not to hold, state non-preservation and the loss. If the required target order cannot be settled, state `unknown`; do not turn non-settlement into either preservation or inversion.
 **KB-07 (Collapse semantics).** A bridge assertion may classify selected source subkind distinctions as collapsed when several source kinds correspond to one target kind. The assertion SHALL designate the affected obtaining `U.SubkindOf` relations and state the lost properties; the direct bridge relation does not alter either local order.
 
@@ -191,7 +191,7 @@ The obtaining bridge relates source kind `AdultPatient` to independently identif
 | **KB-02** | A KindBridge maps neither Scope nor sense; add A.2.6 when the receiving use needs a scope relation, and F.9 when it needs a sense relation. |
 | **KB-03** | Participants, distinctness, direction, predicate, applicability, definedness, and participant-determined identity are recoverable. Scheme/signature/assertion/card/publication editions qualify interpretation or reliance but do not reidentify the occurrence. |
 | **KB-04** | Receiving classification checks admissibility before a fresh three-valued judgment. Source truth is never copied; bridge refusal does not rewrite the receiving result. |
-| **KB-05** | An order-preservation assertion names source and target subkind facts and the two bridge relations used. |
+| **KB-05** | An order-preservation assertion names the source and target subkind facts and establishes identity or a directional bridge at each endpoint. |
 | **KB-06** | Inversion is non-preservation with loss; unsettled order remains unknown. |
 | **KB-07** | Collapse designates affected source order facts and lost distinctions without rewriting either kind order. |
 | **KB-08** | `CL^k` is an assessment in the bridge assertion and does not alter kind identity, formality, scope, or abstraction facet. |

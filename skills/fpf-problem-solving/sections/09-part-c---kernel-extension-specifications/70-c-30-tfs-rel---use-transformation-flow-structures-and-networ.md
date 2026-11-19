@@ -203,7 +203,7 @@ nonAdmissibleUse?:
 
 A later `Rack7CoolingTransformation-42` is actual only when A.3.4 fixes Rack 7 as the changed referent, its thermal boundary and operating/ambient conditions, 38 °C before facts, heat-removal during facts, 27 °C after facts, and continuity or reidentification of Rack 7.
 
-Even then, a separate satisfaction or realization predicate is needed before claiming that the actual transformation satisfies the earlier requirement.
+Apply the requirement to the rack and period it names. A reliable reading of 27 °C establishes “below 30 °C at the specified instant” when it belongs to that rack and instant. For “below 30 °C throughout the shift,” one reliable 38 °C reading within the shift already establishes a violation. A reading before the shift leaves that guarantee open. Temperature and net heat removal can agree under two different cooling routes. Observed transfer through the named route can establish its participation. To decide whether that route was necessary for bringing the rack below 30 °C, compare what would have happened with the other heat exchanges but without that transfer.
 
 Use this note when the practitioner needs to see whether the function-to-transformation-flow relation changes inspection, split, relation-making, downgrade, selection of the governing pattern for the claim named by value, candidate generation, or stop.
 
@@ -295,7 +295,7 @@ nonAdmissibleUse?: flow diagram as functional architecture itself
 
 This required-effect account asserts no actual transformation.
 
-Filled use record:
+For the filled record below, suppose the current checkout configuration and its verified connections independently establish the cited CheckoutService architecture relation. With only the proposed diagram, retain the bounded architecture claim and omit the occurrence. The question about one named request still turns on which path it took.
 
 ```text
 ArchitectureTransformationFlowStructureRelation:
@@ -319,7 +319,7 @@ admissibleUse: inspect whether the functional structure view depends on the E.18
 stopOrReturnCondition: stop at the bounded architecture-to-flow correspondence and reopen when its source, path, observation class, or required-effect declaration changes
 ```
 
-Cooling countercase: a selected cooling-flow TFS and `RequiredCoolingEffect-1` may fill the required-effect and correspondence fields while `actualTransformations` stays empty. Only a later A.3.4 occurrence with Rack 7 as changed referent, fixed thermal boundary and conditions, 38 °C before / heat-removal during / 27 °C after facts, and Rack 7 continuity can fill that field. A separate realization predicate is still needed to relate the actual cooling to the requirement.
+For the Rack 7 case in §4.2, the flow design supplies a candidate route for the required cooling. A dated temperature reading can settle the specified end condition. Before, during and after facts about Rack 7 can establish the cooling occurrence. Identified heat transfer through the selected route establishes participation. A second route might already have been sufficient to reach the target. Use the heat balance and a warranted comparison for a claim about the first route’s effect on the outcome. These uses can be decided separately.
 
 Near miss: if the selected transformation-flow structure has no C.30-side architecture reference named by value, the case stays in `E.18`. If the same sentence is a mathematical description, use `E.18.2`; if it is a math-lens-use claim, use `C.29`. If it is a Work log, evidence claim, gate decision, or benchmark result, apply the governing pattern to that non-flow claim and keep this record only for the architecture-to-transformation-flow use.
 
@@ -333,7 +333,7 @@ The account names the plant architecture locus, selected E.18 path or crossing, 
 
 **Neural-network dataflow change.** Source labels such as attention block, SSM block, convolution block, memory mechanism, cache mechanism, and MoE expert-selection go through `C.30.STRAT` unless the changed value is already recovered. C.30.TFS-REL applies only when the changed structure kind and transformation-flow relation are named. A benchmark, ablation, or pruning result may bear on a non-architecture claim named by value, but it does not make the flow relation an architecture decision, actual transformation, or evidence sufficiency by itself.
 
-**Code-agent relation graph.** A code-agent relation graph with `IMPORTS`, `CALLS_API`, `REGISTRY_WIRES`, or `DATA_FLOWS_TO` edges can be used for an architecture-to-transformation-flow relation only with the source publication or codebase edition, extraction or probe locus, relation observation class selected from {observed, inferred, unknown}, typed relation semantics, unexplored regions, and hidden relation-structure return condition when subsequent action relies on hidden distinctions. The graph, representation, file, and publication occurrence remain distinct from both the selected TFS and every direct relation occurrence.
+**Extracted relation graph.** In a generated graph distinguish an import present in a source edition, a call permitted in a configuration and a call actually observed. An allowed path with jointly compatible conditions establishes a possible route in the model. A response marked `authorized` could have come from a cached decision or an invoked payment service. Matching send and receive records can establish contact with the handler. To identify the source of the issued response, establish which decision the responding branch used. A background refresh can contact the service while the caller receives the cached decision. A verified bypass refutes a claim that every request took the service route. To conclude that no bypass exists, account for the permitted alternatives, including any paths outside the extraction. Retain the edition, extraction locus and relation semantics needed to repeat that judgement.
 
 #### C.30.TFS-REL:4.6 - Lowering and currentness conditions
 

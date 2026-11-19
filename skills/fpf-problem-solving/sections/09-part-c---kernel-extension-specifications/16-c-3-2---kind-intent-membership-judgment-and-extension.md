@@ -14,13 +14,13 @@ Use this pattern when repeated typed reasoning needs one explicit kind criterion
 
 **Primary EntityOfConcern.** One classification use: candidate, kind, `KindSignature` edition, context slice, pre-judgment admissibility, and—only when admissible—the judgment value.
 
-**First useful move.** Write the readable result first: `Pump #14 counts as a cooling pump in this plant slice because it satisfies the declared cooling-pump condition.` Before evaluating, confirm that a pump candidate and this slice are within the declaration's candidate domain and applicability. Cite support only when the receiving use relies on it; create a reusable signature or extension only for repeated or set-consuming use.
+**First useful move.** Write the readable result first: For this plant’s operating report, a cooling pump is a pump circulating coolant through the heat exchanger during the reporting interval. The circuit connections and the interval’s flow reading establish that Pump #14 did so. Before evaluating, confirm that a pump candidate and this slice are within the declaration's candidate domain and applicability. Cite support only when the receiving use relies on it; create a reusable signature or extension only for repeated or set-consuming use.
 
 **Not this pattern when.** Use the direct subject pattern to establish the candidate and the quality, relation, episteme, status, publication occurrence, or other condition named by the criterion; A.14 for membership in a collection; C.3.3 for a claimed correspondence between distinct kinds; C.29 for a separate mathematical representation or transfer question; and `E.24.UK` for admission of another durable public kind.
 
 ### C.3.2:1 - Problem Frame
 
-A kind can support useful typed reasoning without acquiring its own public `U.*` label. Its intent may need a reusable declaration, one candidate may need a current judgment, and a query may need a set representation. These are different objects. Before a judgment exists, the candidate must satisfy the declared candidate `ValueKind` and the slice must lie within declared applicability. Once admissible, the governed condition named by the criterion settles `true` or `false` when known; missing support or an unavailable dependency yields `unknown`.
+A kind can support useful typed reasoning without acquiring its own public `U.*` label. Its intent may need a reusable declaration, one candidate may need a current judgment, and a query may need a set representation. These are different objects. Before a judgment exists, the candidate must satisfy the declared candidate `ValueKind` and the slice must lie within declared applicability. For an admissible candidate, return `true` when the available facts establish the criterion and `false` when they establish its failure. Return `unknown` when they leave the criterion undecided.
 
 The rule about evidence is conditional, not lexical. An observation used merely to support a claim does not create an independently governed quality or relation. But a criterion may directly concern an episteme, an obtaining registration or certification relation, a publication occurrence, legal status, or another governed fact. In that case, determine whether that very condition obtains under its direct pattern; calling the same object evidence in another use does not erase its criterion role. This concept-level rule requires no particular ontology language, schema technology, rule engine, or programming type system.
 
@@ -33,7 +33,7 @@ The shorthand `MemberOf(e,k,slice)` is unsafe because readers can take it as an 
 | Force | Tension |
 | --- | --- |
 | Readable use vs reusable declaration | One case should stay ordinary, while repeated classification needs a stable criterion and assumptions. |
-| Admissibility vs uncertainty | Candidate or slice mismatch means no judgment; missing knowledge for an admissible request means `unknown`. |
+| Admissibility vs uncertainty | A candidate or slice outside the declaration receives no judgment. An admissible candidate receives `unknown` when the available facts leave its membership undecided. |
 | Criterion condition vs evidentiary use | The direct condition named by the criterion can be physical, relational, epistemic, institutional, or publication-dependent; use as evidence alone creates none of them. |
 | False vs unknown | Known criterion failure differs from unavailable support or dependency. |
 | Intent vs extension | A declaration can stay fixed while candidate state or selected slice changes the true-candidate set. |
@@ -86,7 +86,7 @@ These are local result notations, not newly admitted kinds, A.14 membership occu
 2. **Pin the inputs.** Name candidate, kind, exact signature edition, and exact slice; avoid implicit `latest` or `current`.
 3. **Check admissibility.** If the candidate does not satisfy the declared candidate `ValueKind` or interpretation, or the slice is outside declared applicability, return `not-applicable` and stop. Do not form `J`.
 4. **Evaluate the governed condition.** For an admissible candidate, a satisfied criterion gives `true`; a known failed criterion gives `false`.
-5. **Keep non-settlement visible.** Missing support or an unavailable declared dependency gives `unknown`, not `false`.
+5. **Keep non-settlement visible.** Use the evaluation rule for the criterion. If it requires two conditions and one is known to fail, the conjunction is `false` even when the other is unmeasured. Return `unknown` when the available facts leave the criterion unsettled.
 6. **Distinguish condition from evidentiary use.** A measurement result, source episteme, certification, registration, publication occurrence, legal-status relation, or record may itself be a criterion condition only when the signature says so and that condition obtains under its direct pattern. Its mere use as evidence for some other condition creates neither that condition nor membership.
 7. **Separate guard disposition.** A guard checks admissibility, scope coverage, and any judgment as separate predicates. It may decline use on `not-applicable` or `unknown` without converting either to `false`.
 
@@ -100,7 +100,7 @@ Materialize `KindExtension(k, slice)` only when a named query, quantification, c
 
 - Pin the signature edition even though the compact name shows only `k` and `slice`.
 - State the candidate domain without inventing `U.EntitySet`.
-- Include exactly admissible candidates whose judgment is `true`. Keep `unknown` and `not-applicable` distinct when the receiver needs those exclusions explained.
+- Include each admissible candidate whose judgement is `true`. Their count answers “how many are confirmed?” To bound how many in the population could qualify, establish the complete inventory and account for every possible member. The lower bound is the confirmed count. For the upper bound add each remaining candidate whose membership has not been ruled out, including any still unevaluated. An `unknown` judgement records an inconclusive evaluation. An unevaluated candidate has no judgement yet. An incomplete inventory by itself supplies no finite upper bound for the whole population. An inadmissible request returns `not-applicable` without a judgement.
 - Treat braces, rows, indexes, or database results as representations. They create neither a collection holon, A.14 membership occurrence, direct classification relation, nor criterion condition.
 - Use C.29 when interpretation, preservation or transfer of the represented set leaves a separate mathematical question. Otherwise finish the local calculation under the kind and query rules.
 
@@ -125,7 +125,7 @@ Keep these changes distinct:
 | criterion, candidate domain, applicability, `EntityOfConcern`, or scheme changes | another declaration episteme; `KindSignature` qualification and any edition relation are checked separately as in section 5; C.3.1 decides kind continuity | another kind merely by edition |
 | candidate fails ValueKind or slice applicability | `not-applicable`; no judgment | `unknown` or `false` |
 | candidate state changes | reevaluate in the relevant slice when admissible | a new signature or kind |
-| support or dependency becomes unavailable | `unknown` for an admissible request | `not-applicable` or known `false` |
+| support or a dependency becomes unavailable | retain an independently settled judgement or return `unknown` if the criterion is unsettled | `not-applicable` or automatic non-membership |
 | publication form changes | another form or carrier may express the same episteme | another signature, kind, or classification |
 
 ### C.3.2:9 - Required Worked Cases
@@ -148,7 +148,7 @@ A row carries label `Customer`, but the claim asks whether account holder #441 i
 
 #### C.3.2:9.5 - Unavailable measurement
 
-Pump #14 remains an admissible physical candidate in later slice `S-15`, but a required flow-measurement dependency is unavailable. The judgment is `unknown`. A safety guard may decline reliance; it does not return `false` or remove the pump from a historical `S-14` extension.
+For `S-15`, the maintenance team verifies that the edition of `CoolingPumpSignature-2` in use also applies to that slice and that Pump #14 is an admissible candidate. The required flow reading is missing and the remaining evidence leaves the criterion unsettled. The judgement is `unknown`. The safety guard may decline reliance. The result recorded for `S-14` retains its own basis.
 
 #### C.3.2:9.6 - Not-applicable request
 
@@ -163,7 +163,7 @@ A `KindSignature` for `RegisteredSupplierKind` declares supplier candidates and 
 | Case | Repaired use |
 | --- | --- |
 | Vehicle and PassengerCar | Check candidate admissibility and use C.3.1's obtaining branch; a registry result is an extension representation, not `U.EntitySet`. |
-| AuthenticatedRequest | Name the standard and key-validity dependency. An admissible request with unavailable key support yields `unknown`; a non-request value is `not-applicable`. |
+| AuthenticatedRequest | Name the standard and key-validity dependency. If the remaining facts do not settle authentication, an admissible request with unavailable key support yields `unknown`; a non-request value is `not-applicable`. |
 | AdultPatient | Pin jurisdictional threshold, measurement time, and candidate identity. A patient with missing birth support is `unknown`; a non-person value rejected by ValueKind is `not-applicable`. |
 
 ### C.3.2:11 - Work Boundary
@@ -195,7 +195,7 @@ A kind may classify an already identified W. A kind symbol, work label, plan, or
 | `CC-C32-2` | The signature's EntityOfConcern is the kind, and its content names candidate ValueKind/domain, criterion, applicability, scheme, assumptions, dependencies, formality, and any extent rule. |
 | `CC-C32-3` | Candidate mismatch or slice outside applicability yields `not-applicable` and no judgment; only admissible requests return `true`, `false`, or `unknown`. |
 | `CC-C32-4` | The directly governed condition named by the criterion decides satisfaction. Evidentiary use alone does not constitute an independently governed condition; an episteme, relation, status, or publication occurrence may be the condition when its direct pattern says so. |
-| `CC-C32-5` | Missing support or unavailable dependency for an admissible request yields `unknown`, distinct from known `false`. |
+| `CC-C32-5` | An admissible evaluation yields `unknown` when missing support or an unavailable dependency leaves the criterion unsettled. Preserve a conclusion established by the remaining facts. |
 | `CC-C32-6` | No world-side collection-belonging claim, `U.EntitySet`, collection holon, or direct classification occurrence is inferred from judgment or extension. |
 | `CC-C32-7` | A separate classification assertion is a C.2.1 episteme and creates neither candidate nor kind. |
 | `CC-C32-8` | Subkind checks compare admissible judgments and use C.3.1's criterion-entailment or exhaustive closed-domain branch; samples only support an assertion. |
@@ -230,7 +230,7 @@ The kind, its declaration, pre-judgment applicability, one admissible candidate 
 
 ### C.3.2:17 - SoTA-Echoing
 
-A refusal can suffice when the receiver needs only the guard decision. If the receiver needs classification or a further action, `C.3.2:6` preserves the relevant differences: an unsuitable request yields `not-applicable` and no judgment; missing grounds for an admissible request yield `unknown`; an admissible candidate's known criterion failure yields `false`. Collapsing them into `false` would assert non-membership for a mismatch or missing grounds. Correct the request or seek missing grounds only when a further answer is needed; an adequate negative or unresolved answer can finish the work.
+A refusal can suffice when the receiver needs only the guard decision. If the receiver needs classification or a further action, `C.3.2:6` preserves the relevant differences: an unsuitable request yields `not-applicable` and no judgment; an admissible request yields `unknown` when the available facts leave the criterion undecided; an admissible candidate's known criterion failure yields `false`. Collapsing them into `false` would assert non-membership for a mismatch or missing grounds. Correct the request or seek missing grounds only when a further answer is needed; an adequate negative or unresolved answer can finish the work.
 
 ### C.3.2:18 - Relations
 

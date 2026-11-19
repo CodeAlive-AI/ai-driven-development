@@ -390,8 +390,8 @@ Under **USM**, `U.ClaimScope` is a **set‑valued** **USM scope object** over `U
 **2) G composes via `∩` / `SpanUnion`, not via `min` / `avg`.**
 USM already fixes composition: along a **dependent path** use **intersection**; across **independent support lines** publish **SpanUnion**. None of these operations relies on (or preserves) any linear order. An ordinal “G ladder” invites people to take **minimums/averages**, which is **incorrect** for sets and breaks the established algebra.
 
-**3) Abstraction level is orthogonal to G.**
-A ladder from instances through patterns and formal types to equivalence up to isomorphism describes an abstraction or typing distinction. That distinction does not determine where a claim holds. **Abstraction** can be described by the optional **`AbstractionTier (AT)`** facet; **applicability** is **`U.ClaimScope (G)`**.
+**3) Identify what an abstraction level compares.**
+C.3.5's optional `KindAT` facet describes how a particular kind is intended to be used. Its anchors run from instance-oriented use, such as cataloguing a particular cohort, to treating structures up to isomorphism. To compare the levels of abstraction or refinement of two models, use B.5.MR. To establish where an assertion holds, identify the context slices in its `U.ClaimScope (G)`. These judgements can change independently.
 
 **4) A G ladder breaks locality and Bridge semantics.**
 When exact local senses require translation, an obtaining F.9 Bridge establishes their direct semantic relation while a separate C.2.1 claim states the proposed mapping rule and tolerated loss. There is no canonical way to translate an ordinal G level: the mapped area may be narrower or differently factored. USM translates exact sets only through that bounded claim and keeps A.10 or B.3 reliance separate rather than rewriting G.
@@ -638,7 +638,7 @@ With only the method labels, leave P-UNION unresolved. If `CalibrationRecord-Q` 
 
 ### A.2.6:12 - Bias-Annotation
 
-USM counters three recurring biases. First, scope wording can hide a claim that the object is usable everywhere; require an addressable `U.ContextSlice` instead of a vague domain phrase. Second, abstract wording can be mistaken for wider scope; keep abstraction tier and detail separate from `U.Scope`. Third, publication convenience can be mistaken for content permission; `U.PublicationScope` bounds the publication surface and does not widen `U.ClaimScope` or `U.WorkScope`.
+USM counters three recurring biases. First, a vague domain phrase can imply universal applicability. Identify the applicable `U.ContextSlice`. Second, readers may mistake an abstraction level or amount of detail for a wider scope. Establish scope by its context slices. Third, publication convenience can suggest permission to widen a claim. `U.PublicationScope` bounds the publication surface, while `U.ClaimScope` and `U.WorkScope` govern their respective uses.
 
 ### A.2.6:13 - Conformance Checklist (USM)
 
@@ -790,8 +790,8 @@ First decide what “latest” is doing. If it means that evidence or data must 
 **Q7. How do we use a scope with differently named slice selectors?**
 First resolve whether the designations refer to the same values under the effective reference scheme. If exact local senses differ and membership must be expressed across them, name the obtaining F.9 Bridge. Then state the separate affirmative C.2.1 claim for the proposed translation's direction, mapping rule, and tolerated loss, establish the exact A.10 or B.3 reliance branch, and evaluate the scope returned by `deriveTranslatedScope`.
 
-**Q8. What about abstraction level or detail?**
-Keep **AT (AbstractionTier)** and **D (Detail and Resolution)** as orthogonal, optional annotations. They never substitute for **Claim scope** or **Work scope**.
+**Q8. How do we record abstraction or detail alongside scope?**
+Use `KindAT` (C.3.5) for the intended treatment of one local kind, and `Detail (D)` for the chosen detail or resolution. Use B.5.MR when comparing the assertions of two models at different levels of abstraction. Use the set of applicable context slices for Claim scope or Work scope.
 
 **Q9. Can a capability’s Work scope be broader than a predecessor claim’s Claim scope on a dependency path?**
 Claim scope bounds where a claim holds; Work scope bounds the work conditions of a qualified ability claim. If the receiving use depends on both, its effective scope is their intersection. Neither replaces the other because it is broader.
@@ -912,7 +912,7 @@ These comparisons suggest two useful questions: which conditions matter to the r
 | Parallel coverage               | **SpanUnion**                                   | **Union of supported areas**         | —                    | unqualified “union” without independence                              |
 | Serial dependency               | **Intersection**                                | **Intersection of scopes**           | —                    | ordinal “more/less general” language                                  |
 | Scope edits                     | **ΔG+ (widen), ΔG− (narrow), Refit, Translate** | **Widen, narrow, refit, translate**  | —                    | implicit widening                                     |
-| Optional didactics              | **`Detail (D)`, `AbstractionTier (AT)`**        | **Detail and abstraction tier**      | **D / AT**           | avoid as G substitutes                                                |
+| Optional didactics | **`Detail (D)`, `KindAT` for the intended treatment of a kind** | **Detail and kind abstraction tier** | **D / AT** | establish scope separately from either annotation |
 
 **Naming rationale:**
 
