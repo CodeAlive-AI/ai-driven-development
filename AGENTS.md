@@ -110,6 +110,6 @@ ai-driven-development/
 
 `skills/pragmatic-architecture/SKILL.md` has a condensed copy of its core in the
 `pragmatic-orchestration` repository: the "Design criteria" section of
-`skills/vetted-spec/assets/architect-brief.md` (architects of that workflow run
-where skills are not reliably loaded). When the core rule, the two tests, the
-property card or the Never list change here, update that copy.
+`skills/architecture-consilium/assets/architect-brief.md` (architects of that
+workflow run where skills are not reliably loaded). When the core rule, the two
+tests, the property card or the Never list change here, update that copy.
