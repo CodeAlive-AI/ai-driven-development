@@ -1,24 +1,15 @@
 # mac-heavy
 
-A cooperative single slot for resource-intensive work **already authorized** to run on the Mac. Builds, Docker, e2e and broad suites still belong on the dev VM unless the owner grants a specific exception. No PATH shim is installed; light commands such as `dotnet --version` run unchanged.
+`mac-heavy` coordinates CPU- and memory-heavy work on this Mac so busy jobs do not exhaust memory together. An idle holder can share the machine with another job.
 
-```sh
-mac-heavy pnpm check:quick app
-mac-heavy --label unit-tests -- pnpm exec vitest run path/to/test
-mac-heavy --wait 0 -- pnpm exec vitest run path/to/test
-mac-heavy status
-```
+Wrap local builds, lint, type checks, tests, package installs and land gates. Do not wrap version control, reading or searching, SSH, work running on the VM, uploads or downloads, or waiting for remote jobs or delegates. If something light is wrapped by mistake, it stops blocking once it is idle and its initial grace period has passed.
 
-`--wait` defaults to 1800 seconds and accepts 0–21600; 0 tries once. Queue ordering is not guaranteed. Wait output identifies the holder and its state; stopped holders retain the slot. Timeout exits 75 and does not run the command. Ctrl-C while waiting cancels the wait. The guard is the pressure source: fresh CALM permits entry; ALERT/EMERGENCY wait. A missing, invalid, wrong-boot or 10-second-old status produces a warning and slot-only admission. An inherited matching `MAC_HEAVY_LEASE` makes nested calls inline. A stale or foreign lease is reported and ignored. This marker coordinates cooperating processes; it is not a security boundary and is not a quota for jobs started in parallel under one lease.
+Run `mac-heavy command arguments...`. A busy holder or an ALERT memory guard makes new work wait; use a background shell job if you need to continue working. The default wait is 1800 seconds; `--wait 0` tries once. A timeout exits 75 and runs nothing. Use `--label text` to identify a job.
 
-**Agents:** shell tools often time out before the 30-minute queue. Start `mac-heavy` with the tool's background/long-running mode (Claude Code `run_in_background`, Codex background/long-running command), then inspect progress; or use `--wait 0` and retry later. Do not hold the slot while waiting for a detached or remote delegate that cannot inherit the lease.
+Run `mac-heavy --help` for usage and `mac-heavy status` to see holders, waiters, memory guard and recent ledger records. Use `--now` only on the owner's word for that invocation; it bypasses both queue and guard.
 
-`mac-heavy --now -- command ...` explicitly bypasses both slot and pressure and logs `bypass=true`. Agents use it only on the owner's explicit instruction for that invocation. It does not authorize otherwise prohibited local work.
+A holder is busy for its first 45 seconds, or when its process tree uses at least 50% CPU or 1024 MB RSS. Admission allows fewer than one busy holder. Processes that detach from the tree, such as build daemons, are not measured; the memory guard still covers them. The owner can override these thresholds using `MAC_HEAVY_GRACE`, `MAC_HEAVY_BUSY_CPU`, `MAC_HEAVY_BUSY_RSS_MB` and `MAC_HEAVY_MAX_BUSY`.
 
-`status` displays the holder, best-effort waiters, guard snapshot and last five ledger entries. Logs under `~/.local/state/mac-heavy/ledger.jsonl` contain command basenames, project and labels, never arguments, environment or lease. Labels must not contain secrets. Logging errors are visible but do not stop the job. Files rotate at 10 MiB or one day and old rotations are deleted after 30 days.
+The ledger in `~/.local/state/mac-heavy/ledger.jsonl` records starts, ends, timeouts, basenames, project and label, but never command arguments or environment. It rotates at 10 MB or after one day and removes rotated files older than 30 days.
 
-If the holder is suspended, inspect `mac-heavy status` and the memory guard log. Do not remove a live holder's lock or resume a guard-stopped job. A dead holder, changed process start identity or different boot is reclaimed; a missing PID gets five seconds. Old versions of arai's `heavy.sh` have their own unsafe stale-cleanup and do not understand nested leases. Drain old jobs and update every active workspace before migrating; never nest an old wrapper inside this one. A different `TMPDIR` is reported and ignored for this wrapper; a legacy wrapper using that different path is a separate lock. Shell background jobs that outlive the command are not supervised and must not be used to escape the slot.
-
-The child stays in the wrapper's process group and shares its terminal. Bash 3.2 ignores interrupts for background commands without job control, so a standard Perl `exec` trampoline restores the child's normal INT/QUIT dispositions before starting it. Terminal Ctrl-C reaches both; TERM and HUP sent to the wrapper are forwarded once to the child. A stopped supervisor or child can block waiters until their deadline; the wrapper never changes the guard's safety policy.
-
-Reclaimer identity is stored in a short-lived mutex; a dead, reused or sufficiently old identity can be reclaimed. A kernel advisory lock serializes recovery and is released on process death. Ledger appends and rotation use a separate kernel advisory lock. If it remains busy for two seconds, the best-effort ledger warns and skips that event rather than allowing overlapping writers.
+During transition, a live v1 `arai-heavy.lock` counts as a holder using its process tree and directory age. The v1 compatibility block can be removed after all v1 wrappers have exited.

@@ -1,262 +1,458 @@
-#!/bin/bash
-# Cooperative admission for explicitly authorized local heavy jobs; bash 3.2.
-set -u
-umask 077
-usage() { echo 'usage: mac-heavy [--wait SECONDS] [--label LABEL] [--now] [--] command [args...] | status' >&2; }
-now() { date +%s; }
-boot_id() { sysctl -n kern.boottime 2>/dev/null | sed -n 's/.*sec = \([0-9]*\), usec = \([0-9]*\).*/\1 \2/p' | awk '{printf "%s.%06d", $1, $2}'; }
-start_id() { ps -p "$1" -o lstart= 2>/dev/null | sed 's/^ *//;s/ *$//'; }
-reclaim_stale() {
-  # The kernel lock serializes reclaimer inspection and renames, and disappears
-  # on process death. The visible mutex retains PID/start evidence for recovery.
-  perl -MFcntl=:flock -MFile::Path=remove_tree -e '
-    use strict; use warnings;
-    my ($root, $lock, $boot) = @ARGV;
-    sub line { my ($path) = @_; open my $f, "<", $path or return ""; my $s = <$f> // ""; chomp $s; return $s; }
-    sub identity { my ($pid) = @_; open my $p, "-|", "ps", "-p", $pid, "-o", "lstart=" or return ""; my $s = <$p> // ""; close $p; $s =~ s/^\s+|\s+$//g; return $s; }
-    sub move_old { my ($path) = @_; my $tomb = "$path.stale.$$." . int(rand(1000000000)); rename $path, $tomb or return 0; remove_tree($tomb); return 1; }
-    open my $gate, ">>", "$root/arai-heavy.reclaim.guard" or exit 1;
-    flock($gate, LOCK_EX | LOCK_NB) or exit 1;
-    my $mutex = "$root/arai-heavy.reclaim";
-    if (!mkdir($mutex, 0700)) {
-      my $pid = line("$mutex/owner"); my $start = "";
-      if (open my $f, "<", "$mutex/owner") { <$f>; $start = <$f> // ""; chomp $start; }
-      my @s = stat($mutex); @s or exit 1; my $age = time - $s[9];
-      my $stale = $age >= 30;
-      if ($pid =~ /^\d+$/ && $pid > 0) {
-        $stale = 1 unless kill 0, $pid;
-        my $actual = identity($pid);
-        $stale = 1 if length($start) && length($actual) && $start ne $actual;
-      } else { $stale = 1 if $age >= 5; }
-      $stale && move_old($mutex) && mkdir($mutex, 0700) or exit 1;
-    }
-    open my $owner, ">", "$mutex/owner" or exit 1;
-    print {$owner} "$$\n", identity($$), "\n", time, "\n" or exit 1;
-    close $owner or exit 1;
-    my $pid = line("$lock/pid"); my $stale = 0;
-    if ($pid =~ /^\d+$/ && $pid > 0) {
-      $stale = 1 unless kill 0, $pid;
-      if (open my $f, "<", "$lock/owner") {
-        while (<$f>) {
-          chomp;
-          $stale = 1 if /^boot=(.+)$/ && $1 ne $boot;
-          if (/^start=(.+)$/) { my $wanted = $1; my $actual = identity($pid); $stale = 1 if length($actual) && $wanted ne $actual; }
+#!/usr/bin/perl
+use strict;
+use warnings;
+use Fcntl qw(:flock);
+use File::Path qw(make_path);
+use File::Basename qw(basename);
+use JSON::PP;
+use Time::HiRes qw(time sleep);
+
+# Thresholds for identifying busy holders and limiting admission.
+my $GRACE = $ENV{MAC_HEAVY_GRACE} // 45; # Seconds before an idle holder can lend.
+my $BUSY_CPU = $ENV{MAC_HEAVY_BUSY_CPU} // 50; # Tree CPU percentage considered busy.
+my $BUSY_RSS_MB = $ENV{MAC_HEAVY_BUSY_RSS_MB} // 1024; # Tree RSS considered busy.
+my $MAX_BUSY = $ENV{MAC_HEAVY_MAX_BUSY} // 1; # Busy holders that prevent admission.
+
+# Paths for the queue, compatibility lock, guard, and ledger.
+umask 077;
+my $root = `getconf DARWIN_USER_TEMP_DIR`;
+chomp $root;
+if (!$root || !-d $root) {
+    $root = $ENV{TMPDIR} // '';
+}
+if (!$root || !-d $root) {
+    $root = '/tmp/';
+}
+$root =~ s{/*$}{/};
+my $dir = $ENV{MAC_HEAVY_DIR} // "${root}mac-heavy";
+my $state = "$ENV{HOME}/.local/state/mac-heavy";
+my $guard = $ENV{MAC_HEAVY_STATUS_PATH}
+    // "$ENV{HOME}/.local/state/mac-health/memory-guard.status";
+eval {
+    make_path("$dir/holders", "$dir/waiters", $state, {mode => 0700});
+    1;
+} or die "mac-heavy: cannot create queue directory: $@; nothing ran\n";
+my $boot = `sysctl -n kern.boottime`;
+$boot =~ /sec = (\d+), usec = (\d+)/
+    or die "mac-heavy: cannot read boot identity; nothing ran\n";
+$boot = sprintf '%s.%06d', $1, $2;
+
+# Helpers for identity, state files, guard status, and process trees.
+sub identity {
+    my ($pid) = @_;
+    my $start = `ps -p $pid -o lstart= 2>/dev/null`;
+    $start =~ s/^\s+|\s+$//g;
+    return $start;
+}
+sub read_file {
+    my ($path) = @_;
+    open my $file, '<', $path or return '';
+    local $/;
+    return <$file> // '';
+}
+sub decode_file {
+    my ($path) = @_;
+    return eval { JSON::PP->new->decode(read_file($path)) } || {};
+}
+sub write_file {
+    my ($path, $value) = @_;
+    open my $file, '>', $path or die "mac-heavy: cannot write $path: $!; nothing ran\n";
+    print $file JSON::PP->new->encode($value);
+    close $file or die "mac-heavy: cannot write $path: $!; nothing ran\n";
+}
+sub guard_status {
+    my @v = split /\s+/, read_file($guard);
+    my $age = @v ? int(time) - $v[0] : -1;
+    return ('unavailable', 'missing') unless @v;
+    return ('unavailable', 'invalid') unless @v == 8 && $v[0] =~ /^\d+$/
+        && $v[2] =~ /^(?:CALM|ALERT|EMERGENCY)$/
+        && !grep { $_ !~ /^\d+$/ } @v[3, 4, 5, 7];
+    return ('unavailable', 'invalid') unless $v[6] =~ /^(?:-1|[0-4])$/;
+    return ('unavailable', 'different boot') if $v[1] ne $boot;
+    return ('unavailable', 'stale') if $age < 0 || $age >= 10;
+    my $line = "$v[2] segments=$v[3]% swap=$v[4] growth60=$v[5] "
+        . "pressure=$v[6] frozen=$v[7] age=${age}s";
+    return ($v[2], $line);
+}
+sub live {
+    my ($pid, $holder) = @_;
+    return $pid =~ /^\d+$/ && $pid > 0 && kill(0, $pid)
+        && ($holder->{boot} // '') eq $boot && ($holder->{start} // '') ne ''
+        && identity($pid) eq $holder->{start};
+}
+sub snapshot {
+    my %processes;
+    open my $ps, '-|', 'ps', '-axo', 'pid,ppid,pcpu,rss' or return \%processes;
+    while (<$ps>) {
+        if (/^\s*(\d+)\s+(\d+)\s+([\d.]+)\s+(\d+)/) {
+            $processes{$1} = [$2, $3, $4];
         }
-      }
-    } else { my @s = stat($lock); $stale = 1 if @s && time - $s[9] >= 5; }
-    my $removed = $stale && move_old($lock);
-    unlink "$mutex/owner"; rmdir $mutex;
-    exit($removed ? 0 : 1);
-  ' "${lock_root%/}" "$lock" "$boot" 2>/dev/null
-}
-json() { local v="$1"; v=${v//\\/\\\\}; v=${v//\"/\\\"}; v=${v//$'\n'/\\n}; v=${v//$'\r'/\\r}; v=${v//$'\t'/\\t}; printf '%s' "$v"; }
-field() { sed -n "s/^$1=//p" "$lock/owner" 2>/dev/null | head -n 1; }
-lock_root=$(getconf DARWIN_USER_TEMP_DIR) || exit 1
-lock="${lock_root%/}/arai-heavy.lock"
-state="$HOME/.local/state/mac-heavy"
-status_path=${MAC_HEAVY_STATUS_PATH:-"$HOME/.local/state/mac-health/memory-guard.status"}
-boot=$(boot_id)
-[ -n "$boot" ] || { echo 'mac-heavy: cannot read boot identity; nothing ran' >&2; exit 1; }
-self_start=$(start_id $$)
-[ -n "$self_start" ] || { echo 'mac-heavy: cannot read process identity; nothing ran' >&2; exit 1; }
-[ -z "${TMPDIR:-}" ] || [ "${TMPDIR%/}" = "${lock_root%/}" ] || echo "mac-heavy: TMPDIR differs; using $lock" >&2
-wait_dir="$state/waiting"
-ledger="$state/ledger.jsonl"
-warned=0
-mkdir -p "$wait_dir" 2>/dev/null || :
-chmod 700 "$state" "$wait_dir" 2>/dev/null || :
-log_event() {
-  local event="$1" result="$2" elapsed="$3" waited="$4" file
-  file=$(printf '{"event":"%s","time":%s,"wait_seconds":%s,"run_seconds":%s,"exit_status":%s,"executable":"%s","project":"%s","label":"%s","admission":"%s","bypass":%s,"suspended":%s}\n' "$event" "$(now)" "$waited" "$elapsed" "$result" "$(json "$executable")" "$(json "$project")" "$(json "$label")" "$basis" "$bypass" "$suspended")
-  # Kernel advisory locks are released on death; a stopped holder times out
-  # rather than allowing a concurrent rotation to lose an append.
-  if ! printf '%s\n' "$file" | perl -MFcntl=:flock -MTime::HiRes=time,sleep -e '
-    use strict; use warnings;
-    my ($file, $dir) = @ARGV; my $line = <STDIN>; defined $line or exit 1;
-    open my $lock, ">>", "$dir/ledger.lock" or exit 1;
-    my $deadline = time + 2;
-    until (flock($lock, LOCK_EX | LOCK_NB)) { time < $deadline or exit 1; sleep .05; }
-    my $stamp = int(time); my $marker = "$dir/ledger.started"; my $born = $stamp;
-    if (open my $in, "<", $marker) { my $v = <$in>; close $in; $born = $v if defined($v) && $v =~ /^\d+\s*$/; }
-    if (-f $file && ((-s $file) >= 10485760 || $stamp - $born >= 86400)) {
-      rename $file, "$dir/ledger.$stamp.$$.jsonl" or exit 1; $born = $stamp;
     }
-    open my $mark, ">", $marker or exit 1; print {$mark} "$born\n" or exit 1; close $mark or exit 1;
-    open my $out, ">>", $file or exit 1; print {$out} $line or exit 1; close $out or exit 1;
-    for my $old (glob "$dir/ledger.*.jsonl") { my @s = stat($old); unlink $old if @s && $stamp - $s[9] > 30 * 86400; }
-  ' "$ledger" "$state" 2>/dev/null; then
-    if [ "$warned" -eq 0 ]; then echo 'mac-heavy: warning: cannot write ledger; continuing' >&2; warned=1; fi
-  fi
+    close $ps;
+    return \%processes;
 }
-guard_status() {
-  guard_reason=missing; guard_level=; guard_age=-1; guard_line=
-  [ -r "$status_path" ] || return 1
-  IFS=' ' read -r stamp guard_boot guard_level segments swap growth pressure frozen extra < "$status_path" || return 1
-  [ -z "$extra" ] || { guard_reason=invalid; return 1; }
-  case "$stamp" in ''|*[!0-9]*) guard_reason=invalid; return 1;; esac
-  for number in "$segments" "$swap" "$growth" "$frozen"; do
-    case "$number" in ''|*[!0-9]*) guard_reason=invalid; return 1;; esac
-  done
-  case "$pressure" in -1|0|1|2|3|4) ;; *) guard_reason=invalid; return 1;; esac
-  case "$guard_level" in CALM|ALERT|EMERGENCY) ;; *) guard_reason=invalid; return 1;; esac
-  [ "$guard_boot" = "$boot" ] || { guard_reason='different boot'; return 1; }
-  guard_age=$(( $(now) - stamp ))
-  [ "$guard_age" -ge 0 ] && [ "$guard_age" -lt 10 ] || { guard_reason=stale; return 1; }
-  guard_line="$guard_level segments=${segments}% swap=$swap growth60=$growth pressure=$pressure frozen=$frozen age=${guard_age}s"
-  return 0
+sub measure {
+    my ($pid, $epoch, $processes) = @_;
+    my %tree = ($pid => 1);
+    my $changed = 1;
+    while ($changed) {
+        $changed = 0;
+        for my $p (keys %$processes) {
+            if (!$tree{$p} && $tree{$processes->{$p}[0]}) {
+                $tree{$p} = 1;
+                $changed = 1;
+            }
+        }
+    }
+    my ($cpu, $rss) = (0, 0);
+    for my $p (keys %tree) {
+        next unless $processes->{$p};
+        $cpu += $processes->{$p}[1];
+        $rss += $processes->{$p}[2];
+    }
+    $rss = int($rss / 1024);
+    $cpu = int($cpu + .5);
+    my $busy = time - $epoch < $GRACE || $cpu >= $BUSY_CPU || $rss >= $BUSY_RSS_MB;
+    return ($cpu, $rss, $busy);
 }
-holder_info() {
-  holder=$(cat "$lock/pid" 2>/dev/null || :)
-  holder_label=$(field label); [ -n "$holder_label" ] || holder_label=$(field executable)
-  holder_project=$(field project)
-  started=$(field epoch)
-  if [ -z "$holder_label" ] && [ -r "$lock/what" ]; then
-    # The first field is the legacy UTC time, consumed to reach project/command.
-    # shellcheck disable=SC2034
-    IFS=' ' read -r legacy_time legacy_path legacy_command < "$lock/what" || :
-    holder_label=${legacy_command%% *}; holder_label=${holder_label##*/}
-    holder_project=${legacy_path##*/}
-    started=$(stat -f %m "$lock" 2>/dev/null || :)
-  fi
-  holder_state=running
-  case "$holder" in ''|*[!0-9]*) holder_state=initializing;; *)
-    stat=$(ps -p "$holder" -o stat= 2>/dev/null || :)
-    case "$stat" in *T*) holder_state=SUSPENDED;; esac
-    child_pid=$(field child_pid)
-    if [ -n "$child_pid" ]; then
-      child_stat=$(ps -p "$child_pid" -o stat= 2>/dev/null || :)
-      case "$child_stat" in *T*) holder_state=SUSPENDED;; esac
-    fi
-    ;;
-  esac
-  [ "$holder_state" != SUSPENDED ] || : > "$lock/suspended" 2>/dev/null || :
-  case "$started" in ''|*[!0-9]*) age='unknown';; *) age="$(( $(now) - started ))s";; esac
-  [ -n "$holder_label" ] || holder_label=legacy
-  [ -n "$holder_project" ] || holder_project=unknown
-  holder_summary="pid=${holder:-unknown} $holder_label project=$holder_project age=$age state=$holder_state"
+sub command_line {
+    my ($pid, $limit) = @_;
+    my $line = `ps -p $pid -o command= 2>/dev/null`;
+    $line =~ s/^\s+|\s+$//g;
+    $line =~ s/[\r\n]+/ /g;
+    return substr($line, 0, $limit);
 }
-if [ "${1:-}" = status ] && [ "$#" -eq 1 ]; then
-  if [ -d "$lock" ]; then holder_info; echo "holder: $holder_summary"; else echo 'holder: none'; fi
-  echo 'waiters:'
-  for waiter in "$wait_dir"/*; do
-    [ -f "$waiter" ] || continue
-    waiter_pid=${waiter##*/}
-    case "$waiter_pid" in *[!0-9]*|'') continue;; esac
-    waiter_start=$(sed -n 's/^start=//p' "$waiter" 2>/dev/null || :)
-    if kill -0 "$waiter_pid" 2>/dev/null && [ -n "$waiter_start" ] &&
-       [ "$(start_id "$waiter_pid")" = "$waiter_start" ]; then cat "$waiter"; else rm -f "$waiter"; fi
-  done
-  if guard_status; then echo "guard: $guard_line"; else echo "guard: unavailable ($guard_reason; age ${guard_age}s)"; fi
-  echo 'ledger (last 5):'; tail -n 5 "$ledger" 2>/dev/null || :
-  exit 0
-fi
-wait_limit=1800; bypass=false; label=
-while [ "$#" -gt 0 ]; do
- case "$1" in
-   --wait) [ "$#" -ge 2 ] || { usage; exit 2; }; wait_limit=$2; shift 2;;
-   --label) [ "$#" -ge 2 ] || { usage; exit 2; }; label=$2; shift 2;;
-   --now) bypass=true; shift;;
-   --) shift; break;;
-   -*) usage; exit 2;;
-   *) break;;
- esac
-done
-case "$wait_limit" in ''|*[!0-9]*) usage; exit 2;; esac
-[ "$wait_limit" -le 21600 ] && [ "$#" -gt 0 ] || { usage; exit 2; }
-case "$label" in *$'\n'*|*$'\r'*|*$'\t'*) echo 'mac-heavy: label must be a single line' >&2; exit 2;; esac
-executable=${1##*/}; project=${PWD##*/}; start=$(now); suspended=false; basis=calm; lease=
-if [ "$bypass" = false ] && [ -n "${MAC_HEAVY_LEASE:-}" ]; then
-  existing=$(field lease)
-  nested_pid=$(cat "$lock/pid" 2>/dev/null || :)
-  if [ -n "$existing" ] && [ "$existing" = "$MAC_HEAVY_LEASE" ] &&
-     [ -n "$nested_pid" ] && kill -0 "$nested_pid" 2>/dev/null; then exec "$@"; fi
-  echo 'mac-heavy: inherited lease does not match the current holder; queuing normally' >&2
-fi
-wait_file="$wait_dir/$$"
-owned=false
-# Called by the EXIT trap.
-# shellcheck disable=SC2329
-cleanup() {
-  rm -f "$wait_file" "$wait_file.tmp" 2>/dev/null || :
-  if [ "$owned" = true ] && [ "$(field lease)" = "$lease" ]; then rm -rf "$lock"; fi
+sub suspended {
+    my ($pid) = @_;
+    my (%parent, %stopped, %tree);
+    $tree{$pid} = 1;
+    open my $ps, '-|', 'ps', '-axo', 'pid,ppid,stat' or return 0;
+    while (<$ps>) {
+        if (/^\s*(\d+)\s+(\d+)\s+(\S+)/) {
+            my ($p, $ppid, $stat) = ($1, $2, $3);
+            $parent{$p} = $ppid;
+            $stopped{$p} = ($stat =~ /T/);
+        }
+    }
+    close $ps;
+    my $changed = 1;
+    while ($changed) {
+        $changed = 0;
+        for my $p (keys %parent) {
+            if (!$tree{$p} && $tree{$parent{$p}}) {
+                $tree{$p} = 1;
+                $changed = 1;
+            }
+        }
+    }
+    return scalar grep { $stopped{$_} } keys %tree;
 }
-trap cleanup EXIT
-trap 'exit 130' INT
-trap 'exit 143' TERM
-trap 'exit 129' HUP
-wait_message=; last_message=0
-if [ "$bypass" = false ]; then
-  if printf 'pid=%s executable=%s project=%s since=%s\nstart=%s\n' "$$" "$executable" "$project" "$start" "$self_start" > "$wait_file.tmp" 2>/dev/null; then
-    mv "$wait_file.tmp" "$wait_file" 2>/dev/null || :
-  fi
-  while :; do
-    if mkdir "$lock" 2>/dev/null; then
-      owned=true
-      if ! printf '%s\n' "$$" > "$lock/pid"; then
-        rmdir "$lock" 2>/dev/null || :; owned=false
-        echo 'mac-heavy: cannot write lock identity; nothing ran' >&2; exit 1
-      fi
-      lease="$$-$(now)-$RANDOM-$RANDOM"
-      if ! printf 'version=1\nboot=%s\npid=%s\nstart=%s\nlease=%s\nlabel=%s\nproject=%s\nexecutable=%s\nepoch=%s\n' "$boot" "$$" "$(start_id $$)" "$lease" "$label" "$project" "$executable" "$(now)" > "$lock/owner" ||
-         ! printf '%s %s %s\n' "$(date -u +%H:%M:%S)" "$PWD" "$executable" > "$lock/what"; then
-        rm -rf "$lock"; owned=false
-        echo 'mac-heavy: cannot write lock metadata; nothing ran' >&2; exit 1
-      fi
-      if guard_status; then
-        if [ "$guard_level" = CALM ]; then basis=calm; break; fi
-        reason="guard $guard_line"
-      else
-        echo "mac-heavy: memory guard status unavailable ($guard_reason); admitting on the slot only" >&2
-        basis=guard-unavailable; break
-      fi
-      rm -rf "$lock"; owned=false
-    else
-      holder_info; reason="holder $holder_summary"
-      if reclaim_stale; then continue; fi
-    fi
-    current=$(now); elapsed=$((current-start))
-    reason_key=${reason//age=[0-9]*s/age}
-    if [ "$reason_key" != "$wait_message" ] || [ $((current-last_message)) -ge 60 ]; then
-      echo "mac-heavy: waiting: $reason; agents: run in background or use --wait 0 and retry" >&2
-      wait_message=$reason_key; last_message=$current
-    fi
-    if [ "$elapsed" -ge "$wait_limit" ]; then echo "mac-heavy: timed out ($reason); nothing ran. Next: mac-heavy status (or retry with --wait 1800)" >&2; exit 75; fi
-    sleep "2.$((RANDOM % 10))" & sleeper=$!; wait "$sleeper" || :
-  done
-  export MAC_HEAVY_LEASE="$lease"
-  rm -f "$wait_file" 2>/dev/null || :
-else
-  echo 'mac-heavy: BYPASS: runs concurrently; memory guard remains active' >&2
-  basis=bypass
-  unset MAC_HEAVY_LEASE
-fi
-run_start=$(now); waited=$((run_start-start))
-log_event start null 0 "$waited"
-child=
-term_sent=false; hup_sent=false; term_forwarded=false; hup_forwarded=false
-# Called by the signal traps; a signal received during launch is forwarded
-# once the child PID has been assigned.
-# shellcheck disable=SC2329
-forward_term() { if [ -n "$child" ] && [ "$term_forwarded" = false ]; then term_forwarded=true; kill -TERM "$child" 2>/dev/null || :; fi; }
-# shellcheck disable=SC2329
-forward_hup() { if [ -n "$child" ] && [ "$hup_forwarded" = false ]; then hup_forwarded=true; kill -HUP "$child" 2>/dev/null || :; fi; }
-trap ':' INT
-trap 'term_sent=true; forward_term' TERM
-trap 'hup_sent=true; forward_hup' HUP
-# Bash 3.2 ignores INT and QUIT in asynchronous commands without job control.
-# Restore normal child dispositions before exec, preserving PID, argv and group.
-perl -e '$SIG{INT} = "DEFAULT"; $SIG{QUIT} = "DEFAULT"; exec {$ARGV[0]} @ARGV; warn "mac-heavy: cannot execute $ARGV[0]: $!\n"; exit($!{ENOENT} ? 127 : 126)' "$@" <&0 & child=$!
-[ "$term_sent" = false ] || forward_term
-[ "$hup_sent" = false ] || forward_hup
-if [ "$owned" = true ]; then
-  child_pgid=$(ps -p "$$" -o pgid= 2>/dev/null | tr -d ' ')
-  printf 'child_pid=%s\nchild_pgid=%s\n' "$child" "$child_pgid" >> "$lock/owner"
-fi
-while :; do
-  wait "$child"; result=$?
-  kill -0 "$child" 2>/dev/null || break
-done
-run_end=$(now)
-[ "$owned" != true ] || [ ! -e "$lock/suspended" ] || suspended=true
-log_event end "$result" "$((run_end-run_start))" "$waited"
-exit "$result"
+
+# Holders are busy during grace or when their tree reaches a CPU or RSS threshold.
+sub holders {
+    my $processes = snapshot();
+    my @out;
+    for my $file (glob "$dir/holders/*") {
+        my $pid = basename($file);
+        my $holder = decode_file($file);
+        unless (live($pid, $holder) && ($holder->{epoch} // '') =~ /^\d+$/) {
+            unlink $file;
+            next;
+        }
+        my ($cpu, $rss, $busy) = measure($pid, $holder->{epoch}, $processes);
+        push @out, { %$holder, pid => $pid, cpu => $cpu, rss => $rss, busy => $busy };
+    }
+    # Remove this transitional v1 lock block after all v1 wrappers have exited.
+    my $old = "${root}arai-heavy.lock";
+    my $pid = read_file("$old/pid");
+    $pid =~ s/\s+//g;
+    if ($pid =~ /^\d+$/ && $pid > 0 && kill(0, $pid)) {
+        my @stat = stat($old);
+        my $epoch = @stat ? $stat[9] : time;
+        my ($cpu, $rss, $busy) = measure($pid, $epoch, $processes);
+        push @out, {
+            pid => $pid, epoch => $epoch, cpu => $cpu, rss => $rss,
+            busy => $busy, project => 'v1', v1 => 1,
+        };
+    }
+    return @out;
+}
+
+# Append ledger records and rotate old files under a separate lock.
+sub ledger {
+    my ($event, $fields) = @_;
+    my $lock;
+    unless (open($lock, '>>', "$state/ledger.lock") && flock($lock, LOCK_EX)) {
+        warn "mac-heavy: warning: cannot write ledger; continuing\n";
+        return;
+    }
+    my $file = "$state/ledger.jsonl";
+    my $stamp = int(time);
+    my $born = read_file("$state/ledger.started");
+    $born = $stamp unless $born =~ /^\d+\s*$/;
+    if (-f $file && ((-s $file) >= 10485760 || $stamp - $born >= 86400)) {
+        rename $file, "$state/ledger.$stamp.$$.jsonl";
+        $born = $stamp;
+    }
+    if (open my $marker, '>', "$state/ledger.started") {
+        print $marker "$born\n";
+        close $marker;
+    }
+    if (open my $out, '>>', $file) {
+        my $record = {event => $event, time => $stamp, %$fields};
+        print $out JSON::PP->new->canonical->encode($record), "\n";
+        close $out;
+    } else {
+        warn "mac-heavy: warning: cannot write ledger; continuing\n";
+    }
+    for my $old (glob "$state/ledger.*.jsonl") {
+        my @stat = stat($old);
+        unlink $old if @stat && $stamp - $stat[9] > 30 * 86400;
+    }
+}
+my $self = identity($$);
+$self ne '' or die "mac-heavy: cannot read process identity; nothing ran\n";
+
+# Status reports holders, waiters, the guard, and the last five ledger records.
+if (@ARGV == 1 && $ARGV[0] eq 'status') {
+    open my $gate, '>>', "$dir/lock"
+        or die "mac-heavy: cannot open lock: $!; nothing ran\n";
+    flock($gate, LOCK_EX) or die "mac-heavy: cannot lock queue: $!; nothing ran\n";
+    for my $holder (holders()) {
+        my $stopped = suspended($holder->{pid}) ? ' SUSPENDED' : '';
+        printf "%s pid=%s age=%ds %s cpu %s%% rss %s MB project=%s %s%s\n",
+            ($holder->{v1} ? 'v1 holder' : 'holder'), $holder->{pid},
+            time - $holder->{epoch}, ($holder->{busy} ? 'BUSY' : 'IDLE'),
+            $holder->{cpu}, $holder->{rss}, ($holder->{project} // 'unknown'),
+            command_line($holder->{pid}, 100), $stopped;
+    }
+    print "waiters:\n";
+    for my $file (glob "$dir/waiters/*") {
+        my $pid = basename($file);
+        my $waiter = decode_file($file);
+        if (live($pid, $waiter)) {
+            print "pid=$pid project=", ($waiter->{project} // ''),
+                " executable=", ($waiter->{executable} // ''), "\n";
+        } else {
+            unlink $file;
+        }
+    }
+    close $gate;
+    my ($level, $line) = guard_status();
+    print "guard: ", ($level eq 'unavailable' ? "unavailable ($line)" : $line),
+        "\nledger (last 5):\n";
+    if (open my $file, '<', "$state/ledger.jsonl") {
+        my @lines = <$file>;
+        if (@lines) {
+            my $first = @lines > 5 ? @lines - 5 : 0;
+            print @lines[$first .. $#lines];
+        }
+    }
+    exit 0;
+}
+
+# Options select the wait limit, label, bypass, and command.
+my $usage = 'usage: mac-heavy [--wait SECONDS] [--label LABEL] [--now] '
+    . '[--] command [args...] | status';
+sub refuse {
+    my ($problem) = @_;
+    warn "mac-heavy: $problem; nothing ran\n$usage\n";
+    exit 2;
+}
+my ($wait, $label, $bypass) = (1800, '', 0);
+while (@ARGV && $ARGV[0] =~ /^-/) {
+    my $arg = shift @ARGV;
+    last if $arg eq '--';
+    if ($arg eq '--help' || $arg eq '-h') {
+        print "$usage\n";
+        print "Coordinates CPU- and memory-heavy jobs.\n";
+        print "Use mac-heavy status to see the queue.\n";
+        print "Exit 75 means the wait timed out and nothing ran.\n";
+        exit 0;
+    } elsif ($arg eq '--now') {
+        $bypass = 1;
+    } elsif ($arg eq '--wait' || $arg eq '--label') {
+        @ARGV or refuse("missing value for $arg");
+        my $value = shift @ARGV;
+        if ($arg eq '--wait') {
+            $wait = $value;
+        } else {
+            $label = $value;
+        }
+    } else {
+        refuse("unknown option $arg");
+    }
+}
+$wait =~ /^\d+$/ && $wait <= 21600 or refuse('bad --wait value');
+@ARGV or refuse('missing command');
+$label !~ /[\r\n\t]/ or refuse('label must be a single line');
+my $executable = basename($ARGV[0]);
+my $project = basename($ENV{PWD} // '.');
+my $start = time;
+my $lease = "$$-" . int(time) . '-' . int(rand(1000000000));
+my $own = "$dir/holders/$$";
+my $waiter = "$dir/waiters/$$";
+my %base = (
+    executable => $executable, project => $project, label => $label,
+    bypass => $bypass ? JSON::PP::true : JSON::PP::false,
+);
+
+# A matching inherited lease runs a nested command inline.
+if (!$bypass && defined $ENV{MAC_HEAVY_LEASE} && length $ENV{MAC_HEAVY_LEASE}) {
+    open my $gate, '>>', "$dir/lock"
+        or die "mac-heavy: cannot open lock: $!; nothing ran\n";
+    flock($gate, LOCK_EX) or die "mac-heavy: cannot lock queue: $!; nothing ran\n";
+    my @holders = holders();
+    close $gate;
+    if (grep { ($_->{lease} // '') eq $ENV{MAC_HEAVY_LEASE} } @holders) {
+        exec { $ARGV[0] } @ARGV;
+        die "mac-heavy: exec: $!; nothing ran\n";
+    }
+    warn "mac-heavy: inherited lease does not match a current holder; queuing normally\n";
+}
+
+# Waiting and admission inspect and update holders under the queue lock.
+my ($basis, $beside) = ('calm', 0);
+$SIG{INT} = sub {
+    unlink $waiter;
+    exit 130;
+};
+$SIG{TERM} = sub {
+    unlink $waiter;
+    exit 143;
+};
+$SIG{HUP} = sub {
+    unlink $waiter;
+    exit 129;
+};
+if (!$bypass) {
+    write_file($waiter, {
+        start => $self, boot => $boot, project => $project, executable => $executable,
+    });
+    my ($last, $last_at, $notice) = ('', 0, 0);
+    while (1) {
+        open my $gate, '>>', "$dir/lock"
+            or die "mac-heavy: cannot open lock: $!; nothing ran\n";
+        flock($gate, LOCK_EX) or die "mac-heavy: cannot lock queue: $!; nothing ran\n";
+        my @holders = holders();
+        my @busy = grep { $_->{busy} } @holders;
+        my ($level, $line) = guard_status();
+        if ($level eq 'unavailable' && !$notice++) {
+            warn "mac-heavy: memory guard status unavailable ($line); "
+                . "admitting on the queue alone\n";
+        }
+        if (($level eq 'CALM' || $level eq 'unavailable') && @busy < $MAX_BUSY) {
+            $beside = @holders;
+            $basis = $level eq 'unavailable' ? 'guard-unavailable' : 'calm';
+            write_file($own, {
+                start => $self, epoch => int(time), boot => $boot, lease => $lease,
+                label => $label, project => $project, executable => $executable,
+            });
+            close $gate;
+            for my $holder (@holders) {
+                next if $holder->{busy};
+                warn sprintf "mac-heavy: started beside idle pid=%s %s "
+                    . "(cpu %s%% rss %s MB)\n", $holder->{pid},
+                    command_line($holder->{pid}, 60), $holder->{cpu}, $holder->{rss};
+            }
+            last;
+        }
+        my ($key, $reason, $message);
+        if ($level ne 'CALM' && $level ne 'unavailable') {
+            $key = "guard $level";
+            $reason = "memory guard $line";
+            $message = "mac-heavy: waiting: $reason";
+        } else {
+            my $holder = $busy[0];
+            $key = "pid=$holder->{pid}";
+            $reason = sprintf 'pid=%s %s (%ds, busy: cpu %s%% rss %s MB)',
+                $holder->{pid}, command_line($holder->{pid}, 100),
+                time - $holder->{epoch}, $holder->{cpu}, $holder->{rss};
+            $message = "mac-heavy: waiting for $reason; "
+                . 'run in the background or use --wait 0 and retry';
+        }
+        close $gate;
+        my $elapsed = int(time - $start);
+        if ($key ne $last || time - $last_at >= 60) {
+            warn "$message\n";
+            $last = $key;
+            $last_at = time;
+        }
+        if ($elapsed >= $wait) {
+            unlink $waiter;
+            ledger('timeout', {%base, wait_seconds => $elapsed});
+            warn "mac-heavy: timed out after ${elapsed}s ($reason); "
+                . "nothing ran. Next: mac-heavy status\n";
+            exit 75;
+        }
+        sleep(2 + rand());
+    }
+    unlink $waiter;
+    $ENV{MAC_HEAVY_LEASE} = $lease;
+} else {
+    warn "mac-heavy: BYPASS: skipping queue and memory guard\n";
+    $basis = 'bypass';
+    delete $ENV{MAC_HEAVY_LEASE};
+}
+
+# Run the command in the same process group and forward signals once.
+my $run = time;
+my $waited = int($run - $start);
+ledger('start', {
+    %base, wait_seconds => $waited, run_seconds => 0, exit_status => undef,
+    admission => $basis, beside => $beside,
+});
+my ($child, $term, $hup, $term_sent, $hup_sent);
+$SIG{INT} = 'IGNORE';
+$SIG{QUIT} = 'IGNORE';
+$SIG{TERM} = sub {
+    $term = 1;
+    if ($child && !$term_sent) {
+        $term_sent = 1;
+        kill 'TERM', $child;
+    }
+};
+$SIG{HUP} = sub {
+    $hup = 1;
+    if ($child && !$hup_sent) {
+        $hup_sent = 1;
+        kill 'HUP', $child;
+    }
+};
+$child = fork();
+defined $child or die "mac-heavy: fork: $!; nothing ran\n";
+if (!$child) {
+    $SIG{INT} = 'DEFAULT';
+    $SIG{QUIT} = 'DEFAULT';
+    $SIG{TERM} = 'DEFAULT';
+    $SIG{HUP} = 'DEFAULT';
+    exec { $ARGV[0] } @ARGV;
+    warn "mac-heavy: cannot execute $ARGV[0]: $!; nothing ran\n";
+    exit($!{ENOENT} ? 127 : 126);
+}
+if ($term && !$term_sent) {
+    $term_sent = 1;
+    kill 'TERM', $child;
+}
+if ($hup && !$hup_sent) {
+    $hup_sent = 1;
+    kill 'HUP', $child;
+}
+my $result;
+while (1) {
+    my $pid = waitpid($child, 0);
+    if ($pid == $child) {
+        $result = $?;
+        last;
+    }
+    next if $!{EINTR};
+    $result = 1 << 8;
+    last;
+}
+unlink $own unless $bypass;
+my $code = ($result & 127) ? 128 + ($result & 127) : $result >> 8;
+ledger('end', {
+    %base, wait_seconds => $waited, run_seconds => int(time - $run),
+    exit_status => $code, admission => $basis,
+});
+exit $code;
