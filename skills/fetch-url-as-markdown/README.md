@@ -10,14 +10,9 @@ npx skills add CodeAlive-AI/ai-driven-development@fetch-url-as-markdown -g -y
 
 ## Prerequisites
 
-- Python 3.10+
-- [`trafilatura`](https://pypi.org/project/trafilatura/) ≥ 2.0:
+- [`uv`](https://docs.astral.sh/uv/) — the script carries a PEP 723 header, so `uv run --script` builds an isolated cached environment with Python 3.14 and [`trafilatura`](https://pypi.org/project/trafilatura/) ≥ 2.0 (pinned in `scripts/fetch_url.py.lock`). No manual install, nothing goes into a base Python.
 
-  ```bash
-  python3 -m pip install --break-system-packages trafilatura
-  ```
-
-  (The script exits with code `3` and prints this hint if the import fails.)
+  (Run with a bare interpreter, the script exits with code `3` and prints the `uv run --script` hint.)
 
 - *Optional* — an Exa MCP server in your agent host (e.g. `mcp__exa__web_search_advanced_exa`). Used only as a fallback when local extraction can't recover the page.
 
@@ -34,8 +29,8 @@ After installing, ask your agent things like:
 The agent will run the bundled script directly:
 
 ```bash
-python3 ~/.claude/skills/fetch-url-as-markdown/scripts/fetch_url.py "https://example.com"
-python3 ~/.claude/skills/fetch-url-as-markdown/scripts/fetch_url.py "https://example.com" --no-metadata --min-body 0
+uv run --script ~/.claude/skills/fetch-url-as-markdown/scripts/fetch_url.py "https://example.com"
+uv run --script ~/.claude/skills/fetch-url-as-markdown/scripts/fetch_url.py "https://example.com" --no-metadata --min-body 0
 ```
 
 ## What it does
@@ -57,7 +52,7 @@ One entry point — a single CLI script with one job: *URL → clean Markdown to
 | `0` | Markdown printed to stdout | done |
 | `1` | `DownloadError` — network/HTTP/timeout/anti-bot block at fetch | fall back to Exa MCP |
 | `2` | `ExtractionError` — empty extract, JS/Cloudflare wall, or stub body | fall back to Exa MCP |
-| `3` | trafilatura not installed | install (see Prerequisites), then retry |
+| `3` | trafilatura not importable (bare interpreter) | rerun with `uv run --script` |
 | `4` | `UnsupportedContentTypeError` — URL is binary | **don't** fall back to Exa; route to a content-specific skill (e.g. `pdf` for PDFs) |
 
 `SKILL.md` instructs the agent on this fallback flow, so for the common case the user just says "fetch this URL" and gets Markdown — local first, Exa second, no manual orchestration.

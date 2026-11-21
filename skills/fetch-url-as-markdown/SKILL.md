@@ -14,7 +14,7 @@ when the page can't be extracted locally.
 1. **Try trafilatura first**:
 
    ```bash
-   python3 ~/.claude/skills/fetch-url-as-markdown/scripts/fetch_url.py "<URL>"
+   uv run --script ~/.claude/skills/fetch-url-as-markdown/scripts/fetch_url.py "<URL>"
    ```
 
 2. **If exit code is 1 or 2 → fall back to Exa MCP** with the same URL:
@@ -33,11 +33,10 @@ when the page can't be extracted locally.
    call above is the always-available variant — pin the host with `includeDomains` and
    use the URL itself as the query.)
 
-3. Exit code `3` means trafilatura is not installed — install once:
-
-   ```bash
-   python3 -m pip install --break-system-packages trafilatura
-   ```
+3. Exit code `3` means trafilatura could not be imported — the script was run with a bare
+   interpreter instead of `uv run --script`. Rerun it as in step 1: uv reads the script's
+   PEP 723 header and builds an isolated cached environment. Never install trafilatura into
+   a base Python.
 
 ## Exit codes (what they mean for the fallback decision)
 
@@ -46,7 +45,7 @@ when the page can't be extracted locally.
 | 0 | Markdown printed to stdout | done |
 | 1 | DownloadError — network/HTTP/timeout/anti-bot block at fetch | fall back to Exa |
 | 2 | ExtractionError — empty extract, JS/Cloudflare wall, or stub body (<200 chars) | fall back to Exa |
-| 3 | trafilatura missing | install (see above), then retry |
+| 3 | trafilatura not importable (bare interpreter) | rerun with `uv run --script` |
 | 4 | UnsupportedContentTypeError — URL is binary (PDF, image, archive) | **don't** fall back to Exa; use the right specialized skill (e.g. `pdf` for PDFs) |
 
 ## Defaults baked into the script

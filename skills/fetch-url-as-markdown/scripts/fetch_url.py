@@ -1,4 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.14,<3.15"
+# dependencies = ["trafilatura>=2.0,<3", "PySocks>=1.7,<2"]
+# ///
 """Convert a URL to Markdown using trafilatura (https://github.com/adbar/trafilatura).
 
 Default extractor for fetch-url-as-markdown skill. Runs entirely locally,
@@ -12,7 +16,7 @@ Exit codes:
   2  extraction failed — page downloaded but yielded no usable main
      content (SPA shell, JS-only render, captcha/Cloudflare wall, login wall)
   4  unsupported content type (binary: PDF, image, archive, video, octet-stream)
-  3  trafilatura is not installed
+  3  trafilatura could not be imported (run the script via `uv run --script`)
 The skill's fallback (Exa MCP crawl) should be tried on exit 1 or 2 — not on 4.
 """
 
@@ -26,8 +30,9 @@ try:
     from trafilatura.settings import use_config
 except ImportError:
     sys.stderr.write(
-        "trafilatura not installed. Install with:\n"
-        "  python3 -m pip install --break-system-packages trafilatura\n"
+        "trafilatura is not importable. Run this script through uv so its\n"
+        "PEP 723 dependencies are resolved in an isolated environment:\n"
+        "  uv run --script " + __file__ + " <URL>\n"
     )
     sys.exit(3)
 
