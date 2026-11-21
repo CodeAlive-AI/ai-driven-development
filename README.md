@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Agent_Skills-Collection-blueviolet?style=for-the-badge" alt="Agent Skills Collection">
-  <img src="https://img.shields.io/badge/Skills-24-blue?style=for-the-badge" alt="24 Skills">
+  <img src="https://img.shields.io/badge/Skills-25-blue?style=for-the-badge" alt="25 Skills">
   <img src="https://img.shields.io/badge/Hooks-1-yellow?style=for-the-badge" alt="1 Hook">
   <img src="https://img.shields.io/badge/Agents-12+-orange?style=for-the-badge" alt="12+ Agents">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  An umbrella collection of 24 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
+  An umbrella collection of 25 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
 </p>
 
 ---
@@ -30,7 +30,7 @@
 **Via Skills CLI** (recommended — works in 12+ agents):
 
 ```bash
-# Install all 24 skills
+# Install all 25 skills
 npx skills add CodeAlive-AI/ai-driven-development
 
 # Or pick a single skill
@@ -65,7 +65,7 @@ Meta-skills that let AI coding agents configure themselves. No more editing conf
 | [agentic-readiness](skills/agentic-readiness/) | Audit and improve repositories for Codex/Codex App, Claude Code, and OpenCode, including `AGENTS.md`/`CLAUDE.md` discovery and routing |
 | [installing-cli-tools](skills/installing-cli-tools/) | Install, upgrade, authenticate, verify, and roll back developer CLIs while keeping tokens and API keys out of chat, logs, shell history, startup files, and repositories |
 
-### Engineering practices (10)
+### Engineering practices (11)
 
 Disciplined approaches that improve how agents and humans collaborate on code.
 
@@ -73,6 +73,7 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 |-------|--------------|
 | [ux-best-practices](skills/ux-best-practices/) | Design and review user experiences, including AI features, accessibility, interaction states, and evidence-grounded usability findings |
 | [code-that-fits-in-your-head](skills/code-that-fits-in-your-head/) | Keep agent-authored systems understandable and maintainable by resisting accidental complexity, Big Balls of Mud, and technical-debt accumulation. Supports large changes when architecture, acceptance criteria, verification, and recovery are explicit; uses structural heuristics without universal formatting or task-size limits |
+| [pragmatic-architecture](skills/pragmatic-architecture/) | Design method for simple solutions that are not fragile, built on Kent Beck's "make the change easy, then make the easy change". Sizes the design by what the change touches, finds the few facts that decide the choice, puts each guarantee where its violation is controlled (a property card with a counterexample), compares against the simplest admissible alternative and plans the path of change. References cover context and criteria, models and boundaries, failure and recovery, the change path and 22 less obvious moves |
 | [prompt-engineering](skills/prompt-engineering/) | Universal prompt-engineering toolkit. 14 reference docs covering Claude / GPT / Gemini family-specific guidance, prompting techniques, evaluation & red-teaming, common failure modes (hallucinations, security, structure, debt) |
 | [fpf-problem-solving](skills/fpf-problem-solving/) | First Principles Framework — a transdisciplinary "operating system for thought", with all 36 domain frameworks (strategy, goals/OKR, research, decision design, systems engineering and more) stored locally. Decompose cross-domain problems, audit conclusions, apply a named pattern such as F.19 or GOALS.7, and reason rigorously about complex systems. Based on Anatoly Levenchuk's [FPF Library](https://github.com/ailev/FPF) |
 | [bug-fix-protocol](skills/bug-fix-protocol/) | 8-step bug-fix protocol. Treats every production bug as **two** failures (the code defect + the testing system that allowed it through) and enforces a step-8 audit that closes the gap |
@@ -155,6 +156,7 @@ ai-driven-development/
 │   ├── mcp-management/
 │   ├── plan-mode/
 │   ├── plugins-management/
+│   ├── pragmatic-architecture/
 │   ├── pragmatic-verification/
 │   ├── prompt-engineering/
 │   ├── refactoring-csharp/

@@ -105,3 +105,11 @@ ai-driven-development/
 3. Update the Hooks section in the root `README.md`.
 4. Bump `version` in both `.claude-plugin/*.json` files.
 5. Commit, tag, release.
+
+## Copies kept in another repository
+
+`skills/pragmatic-architecture/SKILL.md` has a condensed copy of its core in the
+`pragmatic-orchestration` repository: the "Design criteria" section of
+`skills/vetted-spec/assets/architect-brief.md` (architects of that workflow run
+where skills are not reliably loaded). When the core rule, the two tests, the
+property card or the Never list change here, update that copy.
