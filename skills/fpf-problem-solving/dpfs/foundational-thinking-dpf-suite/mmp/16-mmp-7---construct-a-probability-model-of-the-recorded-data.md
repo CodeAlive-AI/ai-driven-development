@@ -38,7 +38,7 @@ Construct the possible recorded outcomes from the observation procedure. Combine
 
 #### MMP.7:4.1 - Choose the target and the recorded outcome separately
 
-State what the answer concerns: a rate in a population, a property before measurement, a future response, or another quantity selected by the work. Specify the population, conditions and time range when they change its meaning. Use C.16 for the characteristic being measured and C.16.MR for the relation from the property to an indication.
+State what the answer concerns: a rate in a population, a property before measurement, a future response, or another quantity selected by the work. Specify the population, conditions and time range when they change its meaning. Use C.16 for the characteristic being measured and C.16.MR for the relation from the property to an indication. For a count, rate or proportion, establish what contributes one unit to the target and which observations that unit can produce. If the target is per recipient and one recipient may generate several reports, model that relation before using a report count as the denominator. A complete report total can be the answer when reports themselves are the requested unit.
 
 Describe one complete outcome of the observing procedure. It may contain a value and an inclusion flag, a duration and a timeout flag, or several related readings. The mathematical outcome space must distinguish every report the procedure can produce that affects the inference.
 
@@ -94,7 +94,7 @@ For a future record, specify whether its recording procedure is the same. For th
 
 #### MMP.7:4.5 - Test a consequence and revise the construction
 
-Check normalization and a small case that follows the procedure. Enumerate a finite outcome space or generate subject cases and pass them through the recorder. Compare that construction with the probabilities or summaries derived from the observation law. C.29.2 supplies a computational construction when enumeration or integration needs further work.
+Establish normalization from the recording law on its stated domain. If its treatment of an actual recording step is in doubt, trace a distinguishing case, enumerate the finite outcome space or pass generated outcomes through the recorder, then compare the result with the probabilities or summaries the law predicts. C.29.2 supplies a computational construction when enumeration or integration needs further work.
 
 When the inclusion rule, timeout, shared calibration or receiving question changes, revise the affected relation and carry its consequence through the calculation. Compare a plausible alternative condition when the comparison can change the intended use or returned claim. Under unchanged conditions, a sufficient construction can be used directly.
 
@@ -104,7 +104,7 @@ A simulation can check whether the formula reproduces the behavior of the record
 
 #### MMP.7:5.1 - Infer a success rate from a selectively submitted log
 
-A team asks what fraction of attempts succeed. In a proposed model, each attempt succeeds with probability p. Every success is logged; each failure is logged independently with probability 1/4. Initially the team has a fixed-size sample of independently drawn log entries, with no information about how many attempts produced the source log.
+A team wants to estimate the probability that an attempt succeeds under current conditions. In a proposed model, each attempt succeeds with probability p. Every success is logged; each failure is logged independently with probability 1/4. Initially the team has a fixed-size sample of independent draws from the distribution of logged attempts, with no information about how many attempts produced the source log.
 
 The event variable Y is success or failure. The recording flag R says whether the attempt enters the log. Their joint probabilities are:
 
@@ -116,11 +116,11 @@ The event variable Y is success or failure. The recording flag R says whether th
 
 The included-case success probability is `q = p / [p + (1-p)/4] = 4p/(1+3p)`. If the observed fraction of successes is 1/2, the likelihood estimate of q is 1/2, and transforming it gives `p_hat = q_hat/(4-3q_hat) = 1/5`. Sampling uncertainty remains; this calculation corrects which rate is being estimated.
 
-The first useful result is the distinction between a 50% rate among reports and the estimated 20% rate among attempts under the supplied reporting assumptions. If the failure-reporting probability is unknown, several combinations of that probability and p can produce the same q. The log alone then leaves the population rate unresolved.
+Exactly half of the sampled entries report success. Under this sampling and reporting model, that fraction estimates the success probability among logged attempts. The corresponding estimate among all attempts is one fifth. If the failure-reporting probability is unknown, several combinations of that probability and p can produce the same q. The log alone then leaves the population rate unresolved.
 
-Now the procedure changes: a register names a fixed cohort of N attempts and links each submitted report to its attempt. Model those attempts as independent, each with the same success probability p, retaining the stated reporting rule. Since every success is reported, an unreported attempt is a failure. If there are k success reports, the likelihood for p is proportional to `p^k (1-p)^(N-k)`; the failure-reporting factors do not depend on p. The estimate becomes k/N. Conditioning only on reported entries would throw away information the revised procedure provides.
+Now the procedure changes: a register names a fixed cohort of N attempts and links each submitted report to its attempt. Model those attempts as independent, each with the same success probability p, retaining the stated reporting rule. Since every success is reported, an unreported attempt is a failure. If there are k success reports, the likelihood for p is proportional to `p^k (1-p)^(N-k)`; the failure-reporting factors do not depend on p. For a nonempty registered cohort, k/N is the exact fraction of successful attempts. It is also the likelihood estimate of the common success probability p. Conditioning only on reported entries would throw away information the revised procedure provides.
 
-This is a change in the team's observing method. A.3.2.DE explains the changed recording rule; C.32.MWA.PP connects that contribution to the performers and support available to carry it out. Whether to introduce it depends on what resolving the population rate would change in the team's work.
+This is a change in the team's observing method. A.3.2.DE explains the changed recording rule; C.32.MWA.PP connects that contribution to the performers and support available to carry it out. To decide whether to introduce the register, consider what knowing the cohort fraction and improving the estimate of p would change in the team's work.
 
 #### MMP.7:5.2 - Preserve a common influence across readings
 
@@ -148,7 +148,7 @@ The visible dataset invites treating its rows as the whole observation procedure
 
 ### MMP.7:7 - Conformance Checklist
 
-- Can a reader identify the target and all possible reports that affect the inference?
+- Can a reader identify the unit and scope of the target, how the observing procedure turns those units into records, and every distinction between reports that can affect this inference?
 - Do the subject and recording factors describe the stated procedure, including what it fixes and what it reveals?
 - Are unobserved alternatives removed by a justified sum, integral or conditioning operation?
 - Does the joint law preserve common influences and any information about excluded cases?

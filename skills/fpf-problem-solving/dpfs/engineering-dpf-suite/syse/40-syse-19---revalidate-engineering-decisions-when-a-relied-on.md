@@ -336,9 +336,7 @@ receiver in this question; the entire controller documentation is not reopened.
 
 #### SYSE.19:5.2 - Construct and choose the revalidation
 
-Units `S006`–`S010` have the affected hardware and firmware configuration. `S001`–`S004` use a different
-sensor and an independently qualified basis, confirmed in their unit records. The receiving project needs
-three cold-capable units at tomorrow's decision, with an eight-hour preparation window available today.
+Today's eight-hour preparation window serves tomorrow's decision on three cold-capable controllers running the changed package. That package requires IO-B. `S006`–`S010` have the affected configuration. `S005` has IO-B but lacks current calibration evidence and is unavailable for this preparation window. `S001`–`S004` use IO-A and a different sensor with an independently qualified basis. They remain candidates for an order accepting their existing function. If the actual order permits any three cold-capable units, first check whether those existing qualifications already answer it.
 
 The missing result is a current bound for the installed TS-2 units across the required temperature interval.
 The engineer compares these continuations:
@@ -392,8 +390,7 @@ it in the impact report alone does not make it effective.
 Before release, a separate correction raises the other controller-path error bound from `0.4` to `0.7 °C`
 for the same configuration. The sensor observations and C3 qualifications remain valid. Recompute the whole
 bound: for `S006` and `S008` it is `1.5 °C`. For `S007` it is `1.6 °C`, which no longer establishes compliance with the `1.5 °C`
-requirement. The needed three-unit batch is therefore not established, even though two unit conclusions
-survive. Recalibrating all sensors would target the wrong changed premise.
+requirement. This outer bound leaves `S007`'s compliance open. Two units qualify for the changed package; the available evidence for these three does not qualify a third. A finding that three cannot be supplied by tomorrow would also have to exclude timely substitution or qualification under the actual order. Recalibrating all sensors would target the wrong changed premise.
 
 The engineer reports that the available bound does not qualify a third unit. Possible responses include qualifying the unit with
 adequate existing or new evidence, obtaining a qualified alternative unit, repairing and qualifying the controller contribution,

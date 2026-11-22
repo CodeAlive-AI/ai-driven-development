@@ -39,11 +39,11 @@ State accepted inputs, effects or supported actions, outputs, error returns and 
 
 #### SYSE.48:4.3 - Test meaning and effect beyond the harvested trace
 
-Exercise a new applicable input and a case that defeats an assumption. Use the domain's result predicates and independently obtained expected values or observations. Check the returned result and obtain or use evidence for each effect the criteria require. If that evidence is unavailable, identify the unverified effect. A run can return normally with an incorrect value or no effect.
+Establish the property the receiver needs across its claimed range. A derivation over permitted inputs, a complete finite check or a domain observation can provide the grounds. New applicable inputs and cases that defeat an assumption help when they expose an unresolved dependency. Use the domain’s result criteria and independently justified expected values or observations. Check the returned result and obtain or use evidence for each effect the criteria require. If that evidence is unavailable, identify the unverified effect. A run can return normally with an incorrect value or no effect.
 
 Challenge hard-coded incident values, unrealistic arguments, omitted permissions, stale source editions and suppressed exceptions where they can defeat the operation. A wrapper that catches every error can look successful while failing every task. A generated test that copies the implementation's mistaken formula supplies no independent arithmetic evidence.
 
-Use SYSE.46 for reliance on the complete configured agent, including discovery, invocation and receiving use. For conclusions beyond the cases used to construct or select the aid, use final comparison cases from outside that adaptation. If the environment cannot supply informative feedback, SYSE.49 constructs that contribution; the operator cannot certify its own success by printing a positive message.
+Use SYSE.46 for reliance on the complete configured agent, including discovery, invocation and receiving use. When estimating performance on new cases from a sample, evaluate on cases kept outside construction and selection, with coverage suited to the intended use. An established input rule can settle a property for every input it covers. Use SYSE.49 where informative feedback is missing. Establish success from the required effect or evidence with known correspondence to it. A message emitted by the aid can merely announce completion.
 
 #### SYSE.48:4.4 - Expose an edition that the next task can use
 
@@ -71,7 +71,7 @@ Repeated interrupted arithmetic loses the relation between carry digits and thei
 
 Construct enough result space for four digits and keep the carry row visibly aligned with its receiving column. On 347 × 6, a person puts units result 2 and carry 4 into tens, then tens result 8 and carry 2 into hundreds, then 20 across thousands/hundreds: the report reads 2082. The paper preserves those place-value relations. The person performs the arithmetic.
 
-Try a new input, 268 × 4. Units 8 × 4 = 32 gives 2 with carry 3; tens 6 × 4 + 3 = 27 gives 7 with carry 2; hundreds 2 × 4 + 2 = 10 gives the complete 1072. Check against independently obtained arithmetic, not a copied completed worksheet. A malformed template with carry positions shifted one column loses the needed relation and is rejected. An input outside the supplied integer/width conditions returns for a suitable layout or Method rather than truncating digits.
+The place-value rule explains why the layout works for every permitted input when followed. After each column, the low digits already written and the carry in the next column together equal the product of the multiplier and the input digits processed so far. At the next column, add the incoming carry to the digit product, write the units digit and carry the tens into the next column. This preserves the equality. The largest permitted product, 999 × 9 = 8991, fits four places. On 268 × 4 the column results are 32, 27 and 10, giving 1072. A shifted carry row breaks the correspondence between a carry and the column that consumes it. Check the layout used, and observe use when the question concerns a person's performance. An input outside the integer or width conditions needs a suitable layout or Method.
 
 Compare preparation, use and maintenance with ordinary paper or direct calculation. Retain an already adequate sheet when a new template adds no value. A reusable worksheet can enter an existing procedure, and SYSE.47 can build a procedure from an already adequate worksheet. The resulting aid and its tested use are different from a person's acquired unaided ability.
 
@@ -99,14 +99,14 @@ A wrapper queried for A19 must use A19, not a harvested A17 constant. Exercise a
 
 ### SYSE.48:6 - Bias-Annotation
 
-Successful traces favor familiar cases and hide failures that never produced a reusable artifact. Generated tests can inherit the same mistaken convention. Include a new applicable case, a defeating case and an independent result basis before extending the operator's reach.
+Successful traces favor familiar cases and hide failures that never produced a reusable artifact. Generated tests can inherit the same mistaken convention. For the proposed extension, establish which property must carry over and what could break it. One counterexample can refute a general claim. A domain argument covering every admitted input can establish the property directly.
 
 ### SYSE.48:7 - Conformance Checklist
 
 - The receiving use and reusable contribution are distinguished from incident data.
 - Variable inputs and preserved preconditions have domain-grounded meaning.
 - Implementation, dependencies, permissions and recovery are inspectable.
-- For the proposed reach, use applicable and defeating cases and independent evidence for the results and effects that matter.
+- Grounds for each result cover its proposed use. The author can identify a condition that would defeat the result or the argument showing why the allowed variations preserve it.
 - The supported edition can be found by its intended user. A claim about its actual use identifies the receiving task and the evidence for that use.
 - Semantic change, implementation revision and retirement remain distinguishable.
 - Consolidation preserves useful variants, evidence and required fallback.

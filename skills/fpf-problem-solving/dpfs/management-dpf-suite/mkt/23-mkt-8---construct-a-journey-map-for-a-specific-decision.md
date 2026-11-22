@@ -45,7 +45,7 @@ Recover the customer's own actions as well as encounters with the provider. Esta
 
 Distinguish who performs the activity, chooses, pays, approves and receives the result. A purchaser's approval can occur while a user's access is still absent. For example, having the prerequisite skills, having access to instruction and wanting to buy can occur in different combinations. Do not assign a single stage to the whole customer when that would conceal the needed condition.
 
-Compare more than one history when the planned intervention depends on a common route. Group histories only when their differences leave the proposed intervention suitable. Keep a separate branch or a narrower population when a customer’s different circumstances change the work required. Identify a route assembled from several cases as a synthesis. Any claim that one customer followed it needs evidence about that customer.
+For a common route, establish what connects the contacts and what would keep the proposed intervention suitable across the customers it covers. A service rule may establish that everyone using the route must obtain authorisation before a handover. Where the actual routes are in doubt, compare histories that could reveal a consequential difference. Identify a route assembled from several histories as a synthesis. A claim that a particular customer followed it needs grounds about that customer.
 
 #### MKT.8:4.3 - Choose a representation that exposes the live connection
 
@@ -71,7 +71,7 @@ Challenge the connection that would justify the intended intervention. If the ma
 
 Distinguish a missing observation from evidence that an event did not occur. A provider's record can omit contact with another firm or the customer's own work. Where that unknown can change the intervention, obtain the needed answer or qualify the decision. Filling the gap with a standard funnel stage would conceal it.
 
-When the representation is about possible futures, test whether each proposed continuation has the needed contributions. Include an ordinary case and an action-changing variation, such as absent access, a changed goal or unavailable support. Retain a feasible current arrangement among alternatives. A route that requires a new service returns a construction question to MKT.9 and its engineering suppliers.
+For a map of possible futures, trace the continuations relevant to the decision and the contributions they require. A variation that could change the intervention, such as a missing permission, reveals which branch the map must preserve. A rule covering the permitted variations can establish the answer directly. Retain a feasible current arrangement among the alternatives. A route that needs a new service returns a construction question to MKT.9 and its engineering suppliers.
 
 #### MKT.8:4.5 - Select an intervention, inquiry or justified non-change
 

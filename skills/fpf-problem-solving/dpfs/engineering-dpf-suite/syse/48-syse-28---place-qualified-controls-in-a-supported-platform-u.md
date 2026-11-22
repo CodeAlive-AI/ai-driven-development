@@ -47,7 +47,7 @@ If the property can continue to change during use, determine what continuing obs
 
 Trace where the property can change and where it must hold. Mark where the relevant subject is produced, where a transformation or substitution can invalidate the observation, and where the dependent action first relies on it. Include alternative entry and recovery paths when they can reach that action. This exposes a bypass that a successful ordinary pipeline run would miss.
 
-Distinguish a past observation from a condition that must hold at use. Earlier measurements can support a claim about the dimensions of a retained specimen while the preservation conditions keep those dimensions unchanged. An earlier observation can lose its force when authorization expires or a runtime condition changes. In those cases, either obtain a sufficiently current observation at the receiving action or supply a mechanism that preserves the condition through the reliance interval. If neither is available, the placement design cannot yet support that use.
+Distinguish a past observation from a condition required at use. An unaltered property can support direct reuse. A changed property can also meet the criterion: use a qualified relation that bounds the change for this specimen, configuration and interval, and compare the entire resulting range with the receiving limit. An expiring permission needs its own basis. Obtain a new observation or return the specific unresolved premise where neither continuity nor a sufficient relation is established.
 
 #### SYSE.28:4.3 - Compare placements by the question they answer
 
@@ -55,7 +55,7 @@ Compare evidence reach, response time, user/provider burden, failure behavior an
 
 For an immutable artifact crossing a trust boundary, a producer's check can qualify its construction while a consumer-side identity/trust check concerns the bytes actually received. For a coated component, an earlier dimensional result may guide manufacturing but cannot by itself support reliance on the final dimension.
 
-Reuse a result only while the subject, relevant configuration, criterion and qualification conditions still match. A preserved result may be sufficient through controlled steps that cannot change the checked property of the subject. Identify any change that would require rechecking before the result is reused.
+Reuse the earlier result when the relevant property is preserved, or derive a result for the later subject or state through a qualified relation. Establish the receiving criterion that follows at that reach. If a particular later observation has been commissioned, account separately for carrying it out.
 
 Construct a sufficient combination from the candidate placements. An early advisory check may cheaply find a repairable error; a protected result transfer may let a later receiver reuse its evidence; a decisive control may prevent reliance after an unprotected change. Select each because it covers a distinct unresolved loss or avoids worthwhile rework. Remove duplicate work only after checking that the remaining combination covers the same subject and reliance.
 
@@ -101,7 +101,7 @@ Now the responsible holder withdraws trust from the builder after a cached verif
 
 In a physical case, the engineering requirement concerns a finished coated bore of 20.000 ± 0.020 mm. Assume a qualified measurement procedure is available for the finished part. Measuring the uncoated bore can guide machining, but coating can alter the final dimension.
 
-The decisive final-dimensional check is therefore placed after coating and before the part is accepted for the dependent assembly. A pre-coating pass cannot be reused merely because the part number is unchanged. If the qualified finished-part measurement is unavailable, the result remains unestablished; faster transfer of the old report does not cure it. If no qualified measurement procedure is available for the finished part, identify that separate gap.
+If only the uncoated part number and an earlier passing measurement are known, the assembly engineer needs a qualified finished-part measurement or other evidence of final diameter. Now suppose the qualified pre-coating bore is in [20.008, 20.012] mm and the applicable coating process reduces diameter by [0.004, 0.008] mm, including all relevant variation and measurement uncertainty. The finished bore lies in [20.000, 20.008] mm, inside [19.980, 20.020] mm. That bound settles dimensional conformance without an exact final diameter or proof that both endpoints can occur. An order for a measurement on this finished specimen still calls for that measurement or an authorized change. If the process or specimen falls outside the qualified relation, return the resulting gap.
 
 The receiver can identify which subject and interval the result concerns and what is stopped when that result is absent.
 
@@ -114,7 +114,7 @@ Teams often place controls where tools make them easy rather than where the prop
 - The constraint, subject, applicability and deciding authority are supplied.
 - The observation or enforcement Method is adequate for its particular property, or its gap is explicit.
 - Placement accounts for the operations and substitutions that can invalidate the result.
-- Reuse is conditional on matching subject, criterion and qualification conditions.
+- Each reuse establishes the receiving criterion through continuity or a qualified relation across the change. A separately required observation is accounted for.
 - Failed, missing and unavailable outcomes reach the dependent action with a usable explanation.
 - An authorized exception leaves failed or missing factual results unchanged.
 - A technical block stops only the dependent action and leaves unrelated work available.

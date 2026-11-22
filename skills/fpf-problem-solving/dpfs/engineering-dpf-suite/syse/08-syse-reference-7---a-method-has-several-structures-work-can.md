@@ -7,11 +7,7 @@ which must precede others. A provider or build-the-builder account asks which en
 must exist. A cultural account asks how Method variants are generated, transmitted, enacted, recognized,
 selected, retained, changed, and lost across a practitioner population.
 
-To read a vertical list, identify the relation between its entries. A *first–then* relation normally describes an unfolding or Work
-order. Simultaneous participation at different holonic or scale positions is different: physical computation,
-model use, architecture judgement, configuration coordination, and assurance can all contribute during the same
-bounded engineering Work while remaining different Methods or Work wholes. Use `SYSE.20` to recover those
-overlaps, conflicts, dependencies, and required orders.
+To read a vertical list, ask what connects the entries that matter to the decision. A verification Method may require a calculation as one of its operations or may accept a qualified result supplied by another team. For a claim about a particular trial, establish which operations the trial included and performed and which results it received. Compare actual intervals to establish overlap. To place work at two scales of composition, show which smaller occurrence fulfilled a constituent operation of that larger Work. A control or assurance role can span several Methods. For the trial decision, retain the acquisition or calculation differences that could change what the result warrants. Use `SYSE.20` when an overlap, conflict, dependency or required order changes what the project can do.
 
 `SYSE.15` guides development of a decision-usable engineering Method repertoire. A standard, branded framework,
 model-based recipe, toolchain, or AI workflow is a candidate contribution, not *the Method* by title. The

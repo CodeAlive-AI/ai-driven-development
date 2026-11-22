@@ -2,24 +2,24 @@
 
 ## Contents
 
-- [A.0 - Generative Search Onboarding Glossary (NQD & E/E‑LOG)](01-a-0---generative-search-onboarding-glossary.md) (257 lines) — Use this when choosing or describing a generative search or selection. This glossary identifies the values, policies and set-result kinds needed by that operation, and connects them to their...
+- [A.0 - Generative Search Onboarding Glossary (NQD & E/E‑LOG)](01-a-0---generative-search-onboarding-glossary.md) (257 lines) — Use this when deciding what a generative search should return, or interpreting a search someone has already run. Start from the decision the recipient has to make. Section 4.3 shows when one usable...
 - [A.1 - Recognize a Whole with Parts (U.Holon and Admitted Holon Kinds)](02-a-1---recognize-a-whole-with-parts.md) (383 lines) — Type: Part A architectural ontology pattern
 - [A.1.RI - Reidentifying an Object across Observations](03-a-1-ri---reidentifying-an-object-across-observations.md) (202 lines) — Normativity: Normative
 - [A.1.1 - Bounded Model-Use Structure: Applicability, Use and Expression Coherence (DDD Bounded Context)](04-a-1-1---bounded-model-use-structure-applicability-use-and-ex.md) (494 lines) — Type: Part A architectural ontology pattern
 - [A.1.SCR - Finding the Acting or Changed System](05-a-1-scr---finding-the-acting-or-changed-system.md) (269 lines) — Type: Part A practitioner application pattern
-- [A.1.CSD - Discovering Systems That May Bear Consequences](06-a-1-csd---discovering-systems-that-may-bear-consequences.md) (282 lines) — Type: Part A practitioner discovery pattern
+- [A.1.CSD - Discovering Systems That May Bear Consequences](06-a-1-csd---discovering-systems-that-may-bear-consequences.md) (296 lines) — Type: Part A practitioner discovery pattern
 - [A.1.STM - Connect Project Reasoning (System-Thinking Long Mantra)](07-a-1-stm---connect-project-reasoning.md) (424 lines) — Type: Part A practitioner application pattern
 - [A.2 - System-Role Kinds and Assignments](08-a-2---system-role-kinds-and-assignments.md) (439 lines) — Type: Architectural (A)
 - [A.2.1 - U.SystemRoleAssignment - Contextual System-Role Assignment](09-a-2-1---u-systemroleassignment---contextual-system-role-assi.md) (364 lines) — Type: Definitional (D)
-- [A.2.2 - System Capability: Conditions, Measures and Fit](10-a-2-2---system-capability-conditions-measures-and-fit.md) (353 lines) — Capability is a System's ability to perform a work family or produce a result class under stated conditions and measured bounds.
+- [A.2.2 - System Capability: Conditions, Measures and Fit](10-a-2-2---system-capability-conditions-measures-and-fit.md) (363 lines) — Capability is a System's ability to perform a work family or produce a result class under stated conditions, to a stated criterion of performance. Give attained bounds when the criterion calls for a...
 - [A.2.3 - U.PromiseContent — Promised Outcomes and Acceptance Criteria](11-a-2-3---u-promisecontent-promised-outcomes-and-acceptance-cr.md) (552 lines) — Type: Definitional promise-content episteme pattern
 - [A.2.4 - Episteme Evidence-Use and Status-Use Relations](12-a-2-4---episteme-evidence-use-and-status-use-relations.md) (308 lines) — Type: Boundary and relation-use pattern
-- [A.2.5 - SystemRoleAssignmentStateRelation - Assignment-State Recognition for Work Admission](13-a-2-5---systemroleassignmentstaterelation---assignment-state.md) (359 lines) — Type: Definitional (D)
-- [A.2.6 - Unified Scope Mechanism (USM): Test Scope Membership and Combine Scopes](14-a-2-6---unified-scope-mechanism-test-scope-membership-and-co.md) (976 lines) — One-line summary. A.2.6 lets a practitioner test one U.ContextSlice against one set-valued scope. For a claim, member(slice, claimScope) is true or false: true admits the claim-scope condition and...
+- [A.2.5 - SystemRoleAssignmentStateRelation - Assignment-State Recognition for Work Admission](13-a-2-5---systemroleassignmentstaterelation---assignment-state.md) (358 lines) — Type: Definitional (D)
+- [A.2.6 - Unified Scope Mechanism (USM): Test Scope Membership and Combine Scopes](14-a-2-6---unified-scope-mechanism-test-scope-membership-and-co.md) (973 lines) — One-line summary. A.2.6 lets a practitioner test one U.ContextSlice against one set-valued scope. For a claim, member(slice, claimScope) is true or false: true admits the claim-scope condition and...
 - [A.2.7 - SystemRoleKindRelationStructure - Relations among System-Role Kinds](15-a-2-7---systemrolekindrelationstructure---relations-among-sy.md) (510 lines) — Type: Architectural (A)
 - [A.2.8 - U.Commitment — Individual Duties to Act or Refrain](16-a-2-8---u-commitment-individual-duties-to-act-or-refrain.md) (338 lines) — Type: Definitional ontic pattern
 - [A.2.8.PER - Granted Permission, Exercise, and Non-Prohibition](17-a-2-8-per---granted-permission-exercise-and-non-prohibition.md) (328 lines) — Type: Definitional ontic support pattern
-- [A.2.9 — U.SpeechAct — Communicative Work and Its Intended Use](18-a-2-9-u-speechact-communicative-work-and-its-intended-use.md) (412 lines) — Type: Definitional work-ontic pattern
+- [A.2.9 — U.SpeechAct — Communicative Work and Its Intended Use](18-a-2-9-u-speechact-communicative-work-and-its-intended-use.md) (414 lines) — Type: Definitional work-ontic pattern
 - [A.3 - Transformer Quartet: Distinguish Work, Performer, Method and Method Description](19-a-3---transformer-quartet-distinguish-work-performer-method.md) (216 lines) — Use this pattern to distinguish a performed Work occurrence from its performer, enacted Method and any relied-on MethodDescription. Recover each performer's A.13 basis, then admit the dated Work...
 - [A.3.1 - U.Method: Reusable Way of Doing with Explicit Applicability](20-a-3-1---u-method-reusable-way-of-doing-with-explicit-applica.md) (467 lines) — Type: Definitional pattern
 - [A.3.1.MR - Candidate-Method Recovery from Work Evidence](21-a-3-1-mr---candidate-method-recovery-from-work-evidence.md) (219 lines) — Type: Architectural (A)

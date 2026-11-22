@@ -4,13 +4,13 @@
 > **Status:** Stable
 > **Normativity:** Normative method guidance within SIE; examples are constructed and non-normative.
 >
-> **Primary working result:** a `SemanticIntegrationUseContract@Use` that names one receiver and use, required answer claims, source cut, tolerated loss and uncertainty, currentness, latency, quality, authority, representative tests, stop conditions, and reopen conditions.
+> **Primary working result:** a `SemanticIntegrationUseContract@Use` that names the receiving use and its recipients, required answer claims, source cut, tolerated loss and uncertainty, currentness, latency, quality, authority, grounds for acceptance and any required tests, stop conditions, and reopen conditions.
 
 ### SIE.1:1 - Problem Frame
 
-**Use this when** a request says “integrate the data”, “align the models”, “build the knowledge graph”, or “make one source of truth”, but the intended receiver and decision-changing answer are not yet explicit. The recognizable failure is an integration whose values cannot be interpreted, trusted, or used safely by the Work that requested it.
+**Use this when** a request says “integrate the data”, “align the models”, “build the knowledge graph”, or “make one source of truth”, but the intended receiver and decision-changing answer are not yet explicit. Recover which results or means the requester has already prescribed and which design choices remain open. The recognizable failure is an integration whose values cannot be interpreted, trusted, or used safely by the Work that requested it.
 
-The subject is one semantic-integration use: a named receiver performing a named query, decision, operation, or engineering workflow under stated conditions. The first move is to state that use and the answer claims it needs. The first result is a bounded contract that lets later workers decide which semantic loss, source age, unresolved row, and test outcome are acceptable.
+The subject is one semantic-integration use: a specified query, decision, operation or engineering workflow and the recipients who use its answer under stated conditions. The first move is to state that use and the answer claims it needs. The first result is a bounded contract that lets later workers decide which semantic loss, source age, unresolved row, and test outcome are acceptable.
 
 The practical gain is a testable stopping rule before source, ontology, mapping, or platform choices accumulate. Do not use this pattern to authorize the receiving decision, decide product configuration, choose master identity, operate a data pipeline, or define generic evidence law. Obtain those results from their owners. Do not reopen a current contract merely because another source exists; reopen it when the receiver, use, answer, conditions, authority, or acceptance boundary changes.
 
@@ -29,36 +29,36 @@ Technology then supplies the hidden contract. A graph platform encourages graph-
 | Loss | A useful common view often coarsens detail, while silent loss can reverse a decision or erase incompatibility. |
 | Freshness and latency | Query-time access can be current but slow or fragile; copied data can be fast but stale and harder to govern. |
 | Authority | Source owners, integrators, and receivers contribute different decisions; having access to or custody of a source gives no additional decision rights by itself. |
-| Assurance | A finite representative test is needed now, while no test establishes universal semantic correctness. |
+| Assurance | The receiver needs grounds that cover the promised use. Observing a few successful queries can leave an allowed branch unexamined. |
 | Reuse | A broad contract appears reusable, while a small contract is easier to validate and reopen. |
 
 ### SIE.1:4 - Solution
 
-Construct the smallest semantic contract that can change the named receiving action. Begin from the receiver and work backward to required answer claims, source contexts, meanings, losses, currentness, quality, authority, representative cases, and conditions for stopping. Treat the contract as an input to later SIE patterns, not as proof that any source, correspondence, identity, mapping, interface, or implementation exists.
+Construct a semantic contract that covers the commissioned receiving work, including the limits of an acceptable partial answer. Begin from the receiver and work backward to required answer claims, source contexts, meanings, losses, currentness, quality, authority, grounds for acceptance, and conditions for stopping. Treat the contract as an input to later SIE patterns, not as proof that any source, correspondence, identity, mapping, interface, or implementation exists.
 
 #### SIE.1:4.1 - Pattern-Use Unfolding
 
-1. **Name the receiver and receiving Work.** Identify the System or role that will use the result, the query, decision, operation, or workflow, the horizon, and the first useful answer.
+1. **Name the receiver and receiving Work.** Identify the System or role that will use the result, the query, decision, operation, or workflow, the horizon, and the answer due and any separately useful intermediate result. For separate receiving decisions, establish what each recipient may see and accept by its deadline. For one joint result, identify whose contributions count under which rule and whether participants must exchange them or agree. One result can serve both uses if it meets both sets of conditions.
 2. **State the answer claims.** Write the fields or propositions the receiver needs, including scope, grain, interval or effectivity, and the action each claim can change. Keep a value, its provenance, its authority, and the receiver's decision distinct.
 3. **Select the source cut.** Name only the governed contexts and candidate source assets that can change the answer. Mark sources whose inclusion is uncertain rather than adding them silently.
-4. **State preserved distinctions and tolerated loss.** Name identities, versions, units, codes, relations, claim scopes, and incompatibilities that must survive. For each permitted coarsening or omission, state why the receiver can tolerate it.
-5. **State currentness, latency, availability, and quality conditions.** Choose thresholds or explicit unresolved returns only where they change use.
+4. **Choose which distinctions to preserve.** Hold the local value fixed and vary the object or work in which it occurs. Then hold the whole result fixed and vary its parts, timing or allocation. Which change would alter a recipient's permitted action or the grounds requested for it? Use those differences to select the entity kinds, part relations, model constraints and source claims needed at each scale. Accept a coarsening under the agreed criterion when the required conclusion or choice is still warranted throughout its scope.
+5. **State currentness, latency, availability, and quality conditions.** Specify thresholds or unresolved returns where they change use. A deadline for one query, a time bound for every admitted request and a percentile over a specified workload call for different evidence.
 6. **Recover authority, permission, and protection boundaries.** Name who defines source meanings, who may grant access, who decides identities or authoritative values, who accepts semantic loss, and who owns the receiving action. Identify any missing authority or permission that blocks the use.
-7. **Design representative tests before implementation.** Include at least one expected positive case, one negative or unmatched case, and one unlike or changed-source case that could defeat the proposed integration. Name the expected branch rather than requiring every test to return a value.
-8. **State pass, narrow, unresolved, and stop outcomes.** A contract permits a bounded usable subset or explicit incompatibility when that is useful. Stop when a load-bearing meaning, source edition, identity authority, permission, or acceptance rule is unavailable.
+7. **Choose evidence for the claimed use.** Identify what would discriminate an acceptable answer from a consequential error. A definition, complete plan, proven bound or previous observation can settle a requirement when it covers the subject and conditions. Design tests for behaviour that still needs observation and for any trials specifically ordered. For each selected challenge state the expected branch.
+8. **State pass, narrow, unresolved, and stop outcomes.** Where the receiver accepts a bounded subset or a finding of incompatibility, state what can be delivered on those terms. Identify which required answer an unavailable meaning, edition, authority, permission or acceptance rule prevents. Return a common conclusion if it is warranted under all remaining possibilities. Keep an unresolved required answer visible when delivering a permitted subset.
 9. **State reopen conditions and next result.** Identify observations that change the contract and the smallest next result, often `SourceSemanticInventory@Use` from `SIE.2`.
 
 #### SIE.1:4.2 - Record the Result
 
 | Contract position | Required content |
 | --- | --- |
-| receiver and use | named receiver, Work, query/decision/operation/workflow, horizon, and first useful answer |
+| receiver and use | named recipients, query or operation, horizon, work each must complete, and any partial result they can use |
 | answer claims | propositions or fields, grain, scope, interval/effectivity, and action changed |
 | source cut | governed contexts, candidate assets, inclusion reason, and known access limits |
 | semantic boundary | distinctions to preserve, permitted loss, uncertainty treatment, unmatched/incompatible behavior |
 | service conditions | currentness, latency, availability, recovery, and quality thresholds that change use |
 | authority and protection | meaning owner, identifier or value authority, access/permission, receiver authority, and protected conditions |
-| validation | representative positive, negative, unlike/change cases and expected branches |
+| validation | evidence or tests that distinguish the required outcomes, including any required new performance |
 | disposition | pass, narrow, unresolved, or stop rules; next result and observable reopen conditions |
 
 #### SIE.1:4.3 - What Changes in Practice
@@ -67,7 +67,7 @@ The team stops treating integration scope as the set of reachable sources. Every
 
 ### SIE.1:5 - Archetypal Grounding - AP242/QIF Configuration Query
 
-A quality engineer asks which QIF inspection plan and result concern feature `F` in released AP242 product-definition revision/configuration `R` at effectivity `E`. The initial request is “connect PLM and quality data in a knowledge graph.” SIE.1 replaces the carrier proposal with this contract:
+A quality engineer asks which QIF inspection plan and result concern feature `F` in released AP242 product-definition revision/configuration `R` at effectivity `E`. The initial request is “connect PLM and quality data in a knowledge graph.” In this case the engineer confirms that the graph is a suggested means and asks for the review answer. If a graph is itself an agreed deliverable, the contract retains it alongside any required evidence return. The resulting review contract is given below.
 
 | Position | Constructed value |
 | --- | --- |
@@ -75,10 +75,10 @@ A quality engineer asks which QIF inspection plan and result concern feature `F`
 | answer claims | AP242 feature identifier and configuration/effectivity claim; QIF plan, characteristic, and result identifiers; relation disposition; source edition; timestamp; provenance; unmatched/incompatible status |
 | preserved distinctions | product feature versus inspection characteristic; definition versus performed result; revision versus configuration; applicability/effectivity; source identifier and issuer; plan versus result |
 | tolerated loss | display may coarsen source-local labels after exact identifiers and relations remain available; no unmatched feature or incompatible characteristic may become a positive relation. For this constructed evidence-return review, the receiver permits the qualified row set with unresolved local-extension and unknown-unit branches shown separately |
-| currentness and latency | for this constructed review at time T, the receiver requires the released AP242 configuration applicable to the review, QIF observations from T minus 24 hours through T, and a query response within two seconds. |
+| currentness and latency | for this constructed review at time T, the receiver requires the released AP242 configuration applicable to the review, QIF observations from T minus 24 hours through T, and a response to this review query within two seconds. |
 | authority | Systems Engineering owns release, configuration, and effectivity; the quality authority owns acceptance; source owners define their models; SIE may qualify mappings but authorizes neither decision |
 | tests | known match; unmatched feature; changed revision; incompatible characteristic; stale QIF result; missing provenance; source timeout |
-| stop/reopen | stop on unresolved configuration/effectivity, source edition, feature identity, permission, or acceptance rule; reopen when a relied-on AP242/QIF edition, review use, or protected condition changes |
+| stop/reopen | withhold each dependent result when the remaining configuration, effectivity, edition, identity, permission or acceptance uncertainty changes its use. Reopen when a relied-on AP242/QIF edition, review use or protected condition changes. |
 
 This result does not claim that the two source models correspond or that an interface works. It makes those later claims testable. AP242 edition 4 is recorded by `SIE.2` with its current source status; SIE.1 only requires the edition and reopen rule to be explicit.
 
@@ -94,13 +94,13 @@ This result does not claim that the two source models correspond or that an inte
 
 ### SIE.1:7 - Conformance Checklist
 
-- [ ] One named receiver and receiving Work are explicit.
-- [ ] The first useful answer is expressed as claims or fields with grain, scope, and interval/effectivity.
+- [ ] The receiving Work and the recipient or recipients whose decisions it serves are explicit.
+- [ ] The required answer and any useful intermediate result are expressed at the subject, grain, scope and interval the receiver needs.
 - [ ] The source cut is justified by the use rather than by reachability.
 - [ ] Preserved distinctions, permitted loss, uncertainty, and unmatched/incompatible behavior are explicit.
 - [ ] Currentness, latency, availability, recovery, and quality are included only where action-changing.
 - [ ] Meaning, identity/value, access, semantic-loss, and receiving-action authorities remain distinct.
-- [ ] Positive, negative, and unlike or changed-source tests have expected branches.
+- [ ] The proposed evidence covers the claimed distinction. Selected tests have expected outcomes, and any separately commissioned trial is specified.
 - [ ] Pass, narrow, unresolved, stop, next-result, and reopen rules are stated.
 - [ ] The contract claims no correspondence, implementation, validation, authorization, or outcome that has not been obtained.
 
@@ -108,7 +108,7 @@ This result does not claim that the two source models correspond or that an inte
 
 | Anti-pattern | Repair |
 | --- | --- |
-| “Integrate all enterprise data.” | Name one receiver and the smallest source cut that can change one use. |
+| “Integrate all enterprise data.” | Name the receiving decision, those who use its result, and the smallest source cut that can change it. |
 | “The knowledge graph is the deliverable.” | State the receiving answer and treat graph materialization as one later realization option. |
 | “No information loss.” | Name the distinctions and tests; unlimited preservation is not an operational contract. |
 | “Real time.” | State a measurable currentness and latency condition for the use. |
@@ -123,7 +123,7 @@ The cost is early negotiation about the receiver, evidence, loss, and stop condi
 
 ### SIE.1:10 - Rationale
 
-Semantic adequacy is relative to a use. A receiver, answer claim, source context, permitted loss, authority, and representative test together constrain what counts as a successful integration. Beginning there prevents a carrier choice from becoming an implicit ontology, authority model, and acceptance rule.
+Semantic adequacy is relative to a use. The receiving action, answer claim, source context, permitted loss and authority determine what evidence will establish a successful integration. Beginning there prevents a carrier choice from becoming an implicit ontology, authority model, and acceptance rule.
 
 ### SIE.1:11 - SoTA-Echoing
 

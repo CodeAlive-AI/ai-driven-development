@@ -59,11 +59,11 @@ Use the method and criteria that make the proposed result interpretable. If a mi
 
 #### RMP.6:4.2 - Reuse the examination that already answers
 
-Use an existing examination whose material, method, criterion, assumptions and scope answer the present question. If a premise or receiving use changes, assess the affected part. Repeat or extend a test when the question remains consequential and the additional examination can justify its cost.
+Use an existing examination whose material, method, criterion, assumptions and scope answer the present question. If a premise or receiving use changes, assess the affected part. For an open choice about further testing, repeat or extend a test when the question remains consequential and the additional examination can justify its cost.
 
 Check the dates and scope that matter to the particular examination. A record may establish when calibration, permission or a criterion expires. An earlier result whose relevant conditions still hold can remain usable.
 
-When the existing basis answers the question, return that answer with the qualification needed to use it.
+When the existing basis answers the question, return that answer with the qualification needed to use it. If the recipient commissioned a fresh examination or an independent judgement, determine whose evidence, choice and performance that commission requires. An earlier test may supply the material for a new judgement. A commission for a new measurement still requires the measurement or an agreed change.
 
 #### RMP.6:4.3 - Match the credibility move to the threat
 
@@ -102,7 +102,7 @@ Give the result warranted by the question and the available facts.
 
 | Present condition | Result |
 | --- | --- |
-| An adequate existing examination answers the selected credibility question | Return that answer, its basis and the qualification needed for use. |
+| An adequate existing examination answers the selected credibility question | Return that answer, its basis and the qualification needed for use. Identify any separately required examination. |
 | An additional examination has a relevant contribution and a worthwhile feasible arrangement | For a proposal, identify the comparison, required inputs, criterion, possible results and remaining limits. Select or commission the examination within the applicable authority when that is the task. |
 | The question can finish without additional testing | Return the supported claim, qualified or adverse finding, or precise uncertainty. Include the limit that matters to the recipient. |
 | A missing input prevents this selection | Identify the input, the affected choice and what would permit reconsideration. Give its source if known. |
@@ -204,7 +204,7 @@ Assess the credibility question, the decision if one was requested, and any actu
 
 - [ ] The account identifies the bounded claim, its current basis and the use or credibility question at issue. For a proposed new test, it identifies the uncertainty that test would examine.
 - [ ] The selected question identifies a possible result that would matter to the support, interpretation or use of the claim.
-- [ ] An adequate existing examination is used within its scope.
+- [ ] An adequate existing examination is used within its scope. The answer accounts for any requirement to make a fresh measurement, perform a specified test or reach an independent judgement.
 - [ ] Reproduction, replication, robustness, validation, corroboration and transfer retain their different comparisons and limits.
 - [ ] The Method, relevant correspondence and criterion make the selected examination interpretable.
 - [ ] For a requested choice, the comparison covers the realistic options and the criteria material to that choice.

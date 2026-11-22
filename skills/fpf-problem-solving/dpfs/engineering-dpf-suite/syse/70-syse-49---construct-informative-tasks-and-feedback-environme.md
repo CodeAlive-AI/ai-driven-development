@@ -35,7 +35,7 @@ Start with a feasible task that exposes the boundary. Vary inputs or conditions 
 
 Include progress and restraint cases where they can distinguish responses that matter to the receiving question. An already satisfied target may require no mutation; an impossible transition may require stopping that action; delayed evidence may require waiting or an unresolved return. Give credit for a call when it contributes to the task under these conditions.
 
-Broaden variation where the candidate could exploit an incidental constant, wording or ordering. Select difficulty from the receiving question rather than maximizing difficulty for its own sake. For a conclusion beyond the adapted tasks, keep final evaluation tasks, their expected results and near-duplicates outside adaptation.
+Broaden variation where an incidental constant, wording or order could account for a successful response. Choose difficulty from the receiving question. For an empirical estimate of transfer, keep the final evaluation cases and their expected results, including consequential near-duplicates, outside adaptation. A structural argument or exhaustive check can separately establish a property across its qualified range.
 
 #### SYSE.49:4.3 - Implement observable state, actions and reset
 
@@ -71,7 +71,7 @@ The receiving engineering question is whether a proposed worksheet and sequence 
 
 Use 123 × 3 = 369 as a no-carry contrast and 127 × 3 = 381 as a carry case. The latter requires recording the 2 from 7 × 3 = 21 into the tens column and using it in 2 × 3 + 2 = 8. Capture the written relation and performed operation: an absent carry record, a recorded 2 ignored during calculation, and correct working copied into a wrong report are different observations.
 
-If the person records 2 but writes tens 6, feedback preserves the correct units/hundreds, points to the unused carry and asks for correction of that operation. The corrected result is 381. This can be supported correction on the same case. A subsequent changed-value task is needed if the next question is whether the person recognizes and uses the carry without the answer-bearing cue. A partially worked demonstration must not be counted as that independent recognition.
+If the person records 2 but writes tens 6, feedback preserves the correct units/hundreds, points to the unused carry and asks for correction of that operation. The corrected result is 381. This can be supported correction on the same case. For a judgement about independent recognition, use suitable work in which the person had to recognize and use the carry before receiving a cue. An earlier independent attempt can supply that evidence. Obtain a new one when the earlier work does not cover the required use. A partially worked demonstration must not be counted as that independent recognition.
 
 Challenge the feedback itself: an answer key that approves 361 despite the visible unused carry fails the supplied arithmetic criterion. A sheet whose carry row is misplaced returns to SYSE.48/SYSE.52; a missed use despite a correct supplied layout returns to the procedure or the human learning diagnosis. The qualified material and observations can inform that repair. For a claim of learning, transfer or retention, use the corresponding observations of the learner’s performance through HCD.11–HCD.13.
 
@@ -99,11 +99,11 @@ A generator can favor tasks it can solve or verify. A judge can favor familiar l
 
 - The task variations distinguish outcomes that matter to the question the experience is meant to answer.
 - Result and protected-effect meanings have qualified suppliers.
-- Tasks are feasible under the implemented state and operations.
+- The task admits the response to be assessed under the stated information, resources and permissions. Recognizing an infeasible request can itself be the required result.
 - State, observations, reset and feedback remain distinguishable.
 - Independent challenges can expose shared generator/verifier mistakes.
 - Synthetic execution and real-world evidence retain their different provenance.
-- Downstream claims respect the transfer limits established by observations, interface conditions or the source model. A conclusion beyond cases used for adaptation draws on separate final cases.
+- The relation to the receiving work supports the claimed transfer. Estimates of performance on new tasks use evidence independent of adaptation and appropriate to that task population.
 
 ### SYSE.49:8 - Common Anti-Patterns and How to Avoid Them
 

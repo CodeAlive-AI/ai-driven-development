@@ -94,7 +94,7 @@ Explain the decision to the people concerned. State the conduct or uncertainty o
 
 Use direct conversation when it can help and the people concerned can take part freely. Do not make a person confront the subject of their complaint as the price of receiving a response. A written exchange, an intermediary or separate conversations may be more workable. Choose the form that preserves the needed account and usable participation.
 
-Make the selected response effective. Confirm the actual change to access, event arrangements or material, including the owner needed to perform it. For an in-person event, that may be the venue's responsible host; on a platform, it may be an administrator whose scope differs from the community moderator's. An announcement alone does not alter the operating condition.
+Make the selected response effective. Confirm the actual change to access, event arrangements or material, including the owner needed to perform it. For an in-person event, that may be the venue's responsible host; on a platform, it may be an administrator whose scope differs from the community moderator's. An authorized notice can itself change participation rights under the rule. If the decision also calls for blocking an account, establish the change to the account before reporting that result.
 
 #### CB.8:4.5 - Make appeal and correction possible
 
@@ -106,7 +106,7 @@ Compare the decision with the relevant rule, facts and protected interests. The 
 
 Correct what the mistake changed. Restore appropriate access, remove an unsupported public implication, revise an incorrect record and inform the people who relied on it. Restoring a post does not require redisclosing private material; provide a corrected permitted version when necessary.
 
-Where return after a justified restriction is offered, agree the next expected conduct and support from the participation problem that led to it. Obtain the authorised access or activity change and inspect the next participation against that expectation. Retain the original reason where it still holds; a useful return need not reverse the earlier judgement. If access ends, state the scope and settle remaining practical matters through the applicable arrangements.
+Where return after a justified restriction is offered, agree the next expected conduct and support from the participation problem that led to it. Apply the agreed condition for return. A time-limited restriction may expire of its own accord. For a technical access change or a return conditional on specified conduct, establish the change or conduct on which the person’s next action depends. Retain the original reason where it still holds; a useful return need not reverse the earlier judgement. If access ends, state the scope and settle remaining practical matters through the applicable arrangements.
 
 #### CB.8:4.6 - Learn from cases without making the case public
 
@@ -191,7 +191,7 @@ Recognising a possible participation difficulty can be quick. The evidence, hear
 | Require the reporter to negotiate directly with the person complained about. | Offer a feasible receiving and handling route with the needed protection. |
 | Place the appeal inside the space from which the person is excluded. | Supply an accessible route outside that restriction. |
 | Let a conflicted moderator decide the challenge to their own action. | Obtain the authorised alternate and retain the original moderator's account for consideration. |
-| Call an announced restriction or correction complete. | Confirm the actual change and return it to the people who rely on it. |
+| Report a restriction or return at the wrong point. | Apply the rule to the authorized notice, expiry or conduct it requires. Confirm any separate technical change or later use that the question includes. |
 
 ### CB.8:9 - Consequences
 

@@ -49,7 +49,7 @@ Use sufficient current observations. Obtain an additional comparison, explanatio
 
 #### CGOV.13:4.3 - Require the account needed for the response
 
-Ask the responsible participants to explain the discrepancy or exception: what occurred, what they knew at the relevant time, what they chose or controlled, what remains uncertain, and what they can now do.
+Use the information already available about the discrepancy. A confirmed threshold crossing and a standing instruction may be enough to take the required action now. When an explanation or a personal account is commissioned, establish what occurred, the information the responsible people could use, their choices and the effects they could influence. Ask them for their account where that contribution is due or the evidence leaves their part open.
 
 Keep the findings distinct. A missed result can arise because necessary work was never assigned or was left undone, means were insufficient, execution was poor, an assumption was wrong, or an accepted uncertainty materialized. More than one can apply. An adverse outcome by itself does not establish misconduct, while a favourable outcome does not erase a violated condition.
 
@@ -73,7 +73,7 @@ Communicate the required action, responsible participant, relevant deadline or r
 
 At the next useful observation, establish whether the correction happened and whether it achieved the required result. A promise to repair, a revised procedure and an operating correction are different findings. Escalate an unresolved condition through the applicable authority; revise the action when its premise changes.
 
-Close the exception when its resolution is established. Continue the ordinary oversight required by the decision or duty. State what result would resolve any exception that remains open.
+Identify which obligation the correction discharges. A late delivery may settle what the recipient is still owed while the original deadline and any consequences of missing it remain in the account. Continue the oversight required by the decision or duty. State what result would resolve any exception that remains open.
 
 ### CGOV.13:5 - Archetypal Grounding
 
@@ -85,9 +85,9 @@ At quarter end, thirty-six sites have the service. Four were deferred because th
 
 The governing comparison retains the original undertaking: 36/40, or 90%, with four deliveries still outstanding. The chief executive's account identifies the conflicting assignments and a feasible rescheduling costing three within the existing budget and delegation. The board requires the four deliveries and an account at the next weekly review; the executive performs the allocation. No change to the corporation's powers is needed.
 
-At that review, installation and customer-acceptance records show that all four services are available. The board closes the delivery exception. The corrected report retains forty as its population.
+At the weekly review, installation and customer-acceptance records establish service at all forty sites. The board closes the four outstanding deliveries. The quarter-end report records 36 of 40 served on time. The weekly report can record 40 of 40 now served and address any further obligation arising from the delay.
 
-Now vary one condition: before that completion, forecast free cash falls to thirty-eight. The standing rule bars new commitments. The executive applies it, reports the changed forecast and prepares permitted alternatives. Successful rescheduling does not waive the cash condition. A proposal to change that condition must reach whoever has the power to decide it.
+Now vary one condition: before that completion, forecast free cash falls to thirty-eight. The standing rule bars new customer commitments. The four deliveries already owed still require a response. The executive can use existing powers for an affordable rescheduling, report the changed forecast and prepare permitted alternatives. Successful rescheduling does not waive the cash condition. A proposal to change that condition must reach whoever has the power to decide it.
 
 #### CGOV.13:5.2 - An accepted uncertainty materializes
 

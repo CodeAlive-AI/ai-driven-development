@@ -62,7 +62,7 @@ If the expression depends on a demonstration, recording or learned phrase, make 
 
 Assess the representation by the intended operation. Use an existing reading or performance when it supplies the evidence. Otherwise carry out the operation, or use a bounded expert reconstruction when that can answer the question. For example, locate an entrance, compare two variants or identify the choices the notation leaves open.
 
-Use a contrast that could expose loss of the required distinction. For example, move the articulation to another subdivision, change the spoken grouping within the same hand cycle, or keep the attack positions while varying sound classes. Establish whether the representation can distinguish the cases the user needs to distinguish.
+When adequacy remains in doubt, choose a contrast that could expose loss of the required distinction. A known reading rule can already show that every permitted expression gives its user the needed answer. For example, move the articulation to another subdivision, change the spoken grouping within the same hand cycle, or keep the attack positions while varying sound classes. Establish whether the representation can distinguish the cases the user needs to distinguish.
 
 A correct reading by a prepared reader can establish that the reader recovered the indicated positions. To establish instrumental technique, balanced rotation or sustained partner coordination, use evidence of the corresponding performance.
 
@@ -123,7 +123,7 @@ A familiar convention can make its own distinctions feel inevitable. Judge it by
 - The assessment identifies the rhythmic operation and its user, and establishes what the representation lets that user recover or what limits the conclusion.
 - The assessment identifies the sign’s meaning under the convention used, or establishes which needed meaning the available material leaves open.
 - The assessment establishes which distinctions the reference, grouping and omission conventions preserve for the operation. These can include unarticulated beats, sustain and silence.
-- A contrasting use exposes the relevant losses or confirms adequacy for that use.
+- The evidence establishes what the user can recover. A contrasting use can expose a loss, and a reading rule that covers the assigned cases can establish adequacy directly.
 - Interpreting the representation and physically performing it remain separately warranted.
 - Complementary forms have a usable correspondence when both are retained.
 
@@ -135,7 +135,7 @@ A familiar convention can make its own distinctions feel inevitable. Judge it by
 | Infer an accent from every cycle-marking gesture. | Separate reference marking from the performance's accent instruction. |
 | Treat an onset-only syllable string as a complete duration and rest instruction. | Retain the needed beat reference, continuation and silence information in that form or an available companion. |
 | Use an unmarked cyclic shape to prescribe entry phase. | Supply the origin and direction required by the entry. |
-| Present a mnemonic without the performance knowledge it presupposes. | Supply the demonstration or instruction, or narrow the intended reader. |
+| Present a mnemonic without the performance knowledge it presupposes. | Supply the preparation the intended reader needs or identify what is missing for them. A narrower audience can be proposed to the person who sets the brief. |
 
 ### RHY.5:9 - Consequences
 

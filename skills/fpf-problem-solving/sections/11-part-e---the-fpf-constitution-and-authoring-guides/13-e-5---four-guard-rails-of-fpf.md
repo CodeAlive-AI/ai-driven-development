@@ -22,7 +22,7 @@ Core definitions can become tied to transient tools or one notation, acquire dep
 |-------|---------|
 | **Abstraction vs Concrete Use** | Keep concept definitions stable while illustrating them with useful examples from real situations. |
 | **Universality vs Convention** | A familiar notation can be convenient, but tying a cross-domain rule to that notation limits its use elsewhere. |
-| **Modularity vs Integration** | Keep layers independent despite the temptation to cross-link them for speed. |
+| **Modularity vs Integration** | Authors want readers to find related work in either direction while keeping Core meanings independent of tools and teaching material. |
 | **Cross-Domain Use vs Perspective** | Claims intended for several domains can reflect contributors’ disciplinary and cultural assumptions. |
 
 ### E.5:4 - Solution — the Four Guard‑Rails
@@ -38,7 +38,7 @@ Linting and automation remain outside Core and are optional unless a separate op
 |---|------------|------------------|
 | **GR‑1** | **DevOps Lexical Firewall** | Pull of implementation, governance, automation, and DevOps concerns |
 | **GR‑2** | **Notational Independence** | Notation lock‑in |
-| **GR‑3** | **Unidirectional Dependency** | Convenience cycles |
+| **GR‑3** | **Unidirectional Dependency** | A claim relies on a family that may not supply it, or imports form a cycle. |
 | **GR‑4** | **Cross‑Disciplinary Bias Audit** | Disciplinary monoculture |
 
 For the detailed rule behind each guard-rail, see **E.5.1 – E.5.4**.
@@ -49,8 +49,8 @@ For the detailed rule behind each guard-rail, see **E.5.1 – E.5.4**.
 |------------|-------------------|----------------------|
 | GR‑1 | Definition of `U.System` never cites file formats or build scripts. | Definition of `U.Episteme` avoids naming specific proof engines. |
 | GR‑2 | A meaning-preserving mapping between text and diagram retains the pump boundary invariant. | A meaning-preserving mapping between algebraic and graph expressions retains F‑G‑R semantics. |
-| GR‑3 | A sizing helper imports Core invariants. Core never imports helper tutorials. | A learning guide cites the R‑score. Core does not derive its semantics from the guide. |
-| GR‑4 | Bias audit removes thermo‑mechanical jargon from a “universal” pattern. | Audit replaces physics‑centric metaphors in a trust pattern. |
+| GR‑3 | A sizing helper imports Core invariants. Core supplies their meaning independently of the helper. | A learning guide uses the Core definition of R‑score. A Core reader may follow a return link for an illustration and can interpret the definition without it. |
+| GR‑4 | The author limits “the earlier check settles acceptance” to the diameter criterion and the shaft state the measurement covers. A bound on one side can be combined with a check on the other. | The author establishes what the register’s date field records and limits the conclusion to that date until there are grounds for using it as the date of the event. |
 
 ### E.5:6 - Conformance Checklist
 

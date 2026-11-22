@@ -6,6 +6,10 @@ observation of a familiar pair, a recording judged by listeners and a teacher’
 a lesson answer different questions. To rely on them for coordination in a social dance,
 establish how they bear on the participants and the conditions in which they will dance.
 
+For the bandleader’s entrance in §2, consider a short ending and one the singer can hold. Playing on the written beat might cover the held word. If the entry may move, one arrangement lets the leader hear the release, prepare the players and give them a shared downbeat. Trace the cue through the last player who needs it. A reliable upper bound on the time for each player to receive the preparation and be ready can establish that all will be ready before the downbeat. They must also be able to identify the same downbeat and enter together within the musical tolerance. Immediate individual responses to hearing the word end could leave the band staggered. From the listeners’ position, establish that the band’s attack leaves the word intelligible. The score, monitor check and audience sound check must concern compatible stage positions, cue routes and versions of the ending.
+
+If the entry is fixed, a held word may still be sounding on that beat. Reconsider the orchestration or dynamics if they can protect the word as well as the entry. Changing the agreed time needs the people authorized to change it. Stop when the remaining differences leave the required action and its musical result intact. An applicable rehearsal record or justified bounds on the timings can settle an arrangement within the conditions they cover. To say which cue the band used last night, use evidence from that performance that distinguishes following the leader from following a count.
+
 Check the shared resources over the period that matters. Account for preparation, coordination,
 performer effort, trials and observation where needed, and the support a later occurrence
 would require. Individually affordable activities can compete for the same teacher, instrument,

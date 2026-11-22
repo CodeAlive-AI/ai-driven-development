@@ -33,15 +33,15 @@ A mathematical interpretation can assign a meaning without providing an algorith
 
 ### CMP.12:4 - Solution
 
-**Recover expression structure and observations → construct evaluation rules → make control and binding effective → construct the translation → establish the needed correspondence → execute and revise the changed rule.**
+**Recover the expression structure and observations → derive effective rules for evaluation or translation → establish the behavior the recipient needs → deliver the procedure or carry out the commissioned execution.**
 
 #### CMP.12:4.1 - Recover the expression structure and the intended observations
 
-Identify the constructors of admitted expressions and how their parts bind and compose. Work with a parsed structure when precedence, grouping or scope matters. A name occurrence must reach the declaration or external input intended by the language. If the supplied text admits different parses that change the answer, resolve that difference before constructing one evaluator.
+Identify the constructors of admitted expressions and how their parts bind and compose. Work with a parsed structure when precedence, grouping or scope matters. Trace a name occurrence to its declaration or external input under the applicable rules. If several parses remain admissible, derive what they imply for the requested observations. Agreement can settle that use. Where they differ, a language rule or supplied context may select a reading. An evaluator asked to report all permitted results must cover the alternatives. Report unresolved ambiguity when a single intended reading is needed and its selection is still open.
 
 Specify what evaluation receives and what its user can observe. Inputs can include the expression, name bindings, stored state and external responses. Outputs can include a value, changed state, a sequence of interactions or a failure. Distinguish a language-defined error from the absence of a defined operation; a translator can be required to preserve the former without being required to assign a meaning to the latter.
 
-Choose the required relation between source and target observations. Equal returned values may suffice for a terminating pure expression. An interactive program may require the same ordered events. A source with several permitted behaviors may allow the target to choose among them; retaining every source possibility is a stronger requirement. Timing, memory use or a probability law belongs in this relation only when the receiving question uses it.
+For a direct interpreter, specify which observations its evaluation must produce under the source language rules. For a translation, choose the required relation between source and target observations. Equal returned values may suffice for a terminating pure expression. An interactive program may require the same ordered events. A source with several permitted behaviors may allow the target to choose among them; retaining every source possibility is a stronger requirement. Timing, memory use or a probability law belongs in this relation only when the receiving question uses it.
 
 #### CMP.12:4.2 - Derive effective evaluation rules for each constructor
 
@@ -63,7 +63,7 @@ Count consequential dispatch, environment lookup, retained continuations, arithm
 
 #### CMP.12:4.4 - Construct translation from the evaluation structure
 
-Choose a target instruction or expression language with defined execution rules. For each source constructor, generate the target operations that perform its required evaluation. Construct the translation of subexpressions and then their combination, retaining temporary results until their consumers use them.
+A direct evaluator can fulfill a commission for an executable procedure when its rules, available operations and resource needs support the promised behavior. For a commissioned execution, use the procedure to obtain and return the required observation. When the work calls for a translation, choose a target instruction or expression language with defined execution rules. For each source constructor, generate the target operations that perform its required evaluation. Construct the translation of subexpressions and then their combination, retaining temporary results until their consumers use them.
 
 Preserve binding and control at this construction step. Allocate fresh temporary names or use addresses whose scopes cannot capture unrelated bindings. Place conditional branches behind the appropriate control transfer. Pass arguments and return results through agreed locations. An operator with effects requires the relevant order and number of executions; algebraic reassociation alone does not supply that permission.
 
@@ -73,7 +73,7 @@ When several translation passes are used, connect their input and output relatio
 
 #### CMP.12:4.5 - Establish the correspondence at the scope needed
 
-For a structurally recursive translation of a terminating expression language, use induction on expression construction. Include the context that surrounding code can supply: an arbitrary admitted environment, earlier stored values and the continuation after the translated fragment. A claim that works only with an empty stack may fail as soon as two fragments are composed. Section :5.1 derives the stronger usable claim.
+For a direct evaluator, derive the required observation from its rules for the constructors, bindings and execution contexts the language admits. For a structurally recursive translation of a terminating expression language, use induction on expression construction. Include the context that surrounding code can supply, such as an arbitrary admitted environment, earlier stored values and the continuation after the translated fragment. A claim that works only with an empty stack may fail when two fragments are composed. Section :5.1 derives a claim that supports this composition.
 
 For stateful or interacting languages, relate source and target states and the observations their transitions produce. Explain how matching transitions reestablish the relation. If several internal steps implement one visible step, account for their completion; an infinite internal loop must not masquerade as successful preservation of a terminating computation. Choose the simulation direction or behavior relation that supports the requested conclusion. Showing that one source run has a target counterpart alone leaves other target behavior unresolved.
 
@@ -83,7 +83,7 @@ Separate a general preservation claim from a check on selected translations. A s
 
 #### CMP.12:4.6 - Run the construction and revise the failed correspondence
 
-Evaluate or translate a meaningful input and use the resulting value or behavior. Return the construction together with the input, binding, execution and recovery conditions needed by its recipient. When comparison fails, locate the changed constructor, binding, primitive, control rule or value correspondence.
+Return the commissioned result. When the evaluator or translator is itself a deliverable, supply it with the input, binding, execution and recovery conditions its recipient needs. For a requested execution, obtain and return the required observation. A trial on a meaningful input can also help resolve an outstanding design question. If a comparison fails, locate the changed constructor, binding, primitive, control rule or value correspondence.
 
 A changed language feature or execution context reopens its dependent translations. Preserve unaffected rules. Adding assignment requires revisiting captured bindings; changing integer arithmetic requires revisiting arithmetic correspondence; allowing externally supplied code requires examining the contexts with which translated components interact.
 
@@ -160,12 +160,12 @@ A familiar implementation language can silently supply truth tests, numeric limi
 
 ### CMP.12:7 - Conformance Checklist
 
-- Expression formation, binding and needed observations are recoverable.
+- Expression formation and binding support the requested observations across the readings the language and its context admit. A choice of one reading has the grounds the use requires.
 - Every required evaluation step has an available operation and an explicit control rule.
-- Translation terminates on its admitted descriptions; execution progress has its own stated scope.
-- Source and target values, bindings, states and observations have the correspondence required by the use.
+- Execution progress has the scope promised for the admitted programs and inputs. A promised translation terminates on the descriptions it must translate.
+- A direct evaluator implements the required source observations. A translation establishes the required correspondence between source and target values, bindings, states and observations.
 - The preservation argument includes the surrounding state or context needed for composition.
-- Cost includes translation and execution under the actual arithmetic and storage assumptions.
+- Cost includes the operations the proposed evaluator or translator actually performs, under the applicable arithmetic and storage assumptions.
 - A changed rule or failed comparison leads to a specific reconstruction.
 
 ### CMP.12:8 - Common Anti-Patterns and How to Avoid Them

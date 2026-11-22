@@ -30,7 +30,7 @@ These quantities constrain one another. Enlarging S can enlarge E, which can mak
 
 Thus “more accurate”, “faster” and “more robust” are incomplete comparisons until their quantities and costs are named. A more accurate nominal prediction does not imply a smaller implemented error if it arrives late. A smaller tracking error does not imply a better task result if the permitted command range becomes too small. A feasible computation does not imply safe execution if its output is applied at the wrong instant.
 
-The calculation shows where engineers have a choice. They can accept a smaller envelope, change an interface, spend more computation, use another sensor or actuator, or revise an impossible requirement. SYSE.6 remains the place for that larger system decision.
+The engineer can change an interface, spend more computation or select another sensor or actuator within the design mandate. A smaller command envelope serves the original mission when every required operation can still be achieved under it. If it changes the promised behavior, give the proposed restriction and its consequences to whoever may revise the mission through SYSE.6. The original requirement remains the basis for comparing the original candidates.
 
 ### CAD.Reference:4.4 - Reuse the external foundations without losing the subject transition
 
@@ -72,7 +72,7 @@ The running example begins with two different concerns: a planner needs two fast
 
 CAD.2 derives how their meanings change the error. A held target creates a boundary jump; a joined segment supplies bounded increments at every fast tick. CAD.3 turns that difference into actuator reserve. At the doubled demand, the first input for the four-tick held target violates the limit; the joined-segment command has a sufficient input bound of 0.05 under the toy model. Its limited reference interval also has a continuation by holding the reference.
 
-CAD.4 returns the result to the practical choice. The segment design fits the declared computation arrangement but requires a clocked generator, continuity at handover and an admitted initial error. The input bound relies on those implementation conditions. If physical actuation is later found to be delayed, the error derivation changes and the bound must be reopened. The reason for separating planning from feedback can remain useful even while that specific realization fails.
+CAD.4 returns the result to the practical choice. The segment design fits the declared computation arrangement but requires a clocked generator, continuity at handover and an admitted initial error. For the sampled input bound, establish the full increment seen by the fast law at each tick, including handover, and the assumed initial error. Continuity is also a requirement of this particular segment interface. If physical actuation is later found to be delayed, the error derivation changes and the bound must be reopened. The reason for separating planning from feedback can remain useful even while that specific realization fails.
 
 As the engineer calculates an error margin, that work contributes to constructing the command domain and, through that construction, to choosing an architecture that can produce the required system behavior. A changed whole requirement alters what counts as a useful local margin. This connection explains why a numerically correct sub-result can still fail to resolve the engineering problem.
 

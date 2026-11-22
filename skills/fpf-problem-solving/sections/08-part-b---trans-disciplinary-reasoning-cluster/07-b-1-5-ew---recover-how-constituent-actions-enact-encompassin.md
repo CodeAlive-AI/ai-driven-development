@@ -7,7 +7,7 @@
 
 Use this pattern when you need to understand, perform, teach, divide or change a way of working and cannot yet explain how its constituent actions perform the encompassing work. A person knows each movement but loses the partnered dance. A team improves a calculation but no longer obtains a usable engineering answer. A description lists stages, yet the reader cannot tell what larger work is being done through the present action.
 
-Start with one action and ask: **“What am I doing through this action now, and what makes it part of that work?”** Then recover the constituents needed to perform it and the conditions of the encompassing work that affect it.
+Start from the work the recipient needs to explain, carry out or change. If the question starts from an action, ask what encompassing work is being done through it and how. If it starts from a delivery, an ongoing service or a shared performance, work back to the actions that constitute it and to the contributions it receives from elsewhere.
 
 The first useful result is an explanation you can use: the selected action, its relevant constituents and encompassing work, the connections that make the whole possible, and any difference that requires changing the action or its organization. A short demonstration can supply this result. A retained diagram or record is useful only when someone needs it later.
 
@@ -32,11 +32,11 @@ The reverse mistake is to call every concurrent or indispensable activity a cons
 
 ### B.1.5.EW:4 - Solution
 
-Recover the connection in both directions: **what larger work is being performed through this action, and what constituent actions make it performable?** Keep before-and-after dependencies alongside these connections.
+Trace the constituent–whole connection in the direction needed for this question. From an action, recover what larger work is performed through it. From an encompassing performance, recover how the actions together constitute it. Preserve before-and-after dependencies wherever they affect that inference.
 
 #### B.1.5.EW:4.1 - Choose an action and the work being explained
 
-Name an action in a recognizable situation and the moment or interval under consideration. State whether you are explaining observed Work or proposing how future work could be done. Identify what is being attempted and what a useful result would be.
+Identify the action or encompassing work the recipient asks about and the interval relevant to its use. For an actual occurrence, ground the account in the performance. For a proposal, say what would occur under its conditions. When the assignment is to teach someone to perform the analysis, leave that person the choice of a relevant action or whole from the working situation, unless the commission supplies it.
 
 Use ordinary verbs first: adjusting a step, comparing a measurement, adding a value, questioning an assumption. If the description supplies only a noun such as “coordination”, recover what the participant does.
 
@@ -58,17 +58,17 @@ A useful test is to explain the positive connection, not just what would fail if
 
 #### B.1.5.EW:4.3 - Follow constituent and encompassing work
 
-Continue through the constituent–whole connections in the selected Method or Work structure only while the next encompassing whole's conditions change the action, its learning or its use. Explain each intervening connection. If an action serves two wholes, keep both uses and their different conditions visible.
+Follow the constituent–whole connections needed for the action, decision or explanation entrusted to the reader. Different work arrangements can produce the same output. Recover which one occurred when it matters who performed the work or how the participants coordinated. A known organizing rule can justify a connection across several scales. Inspect an intermediate whole where its arrangement could change that connection. If the action serves several wholes, include those whose conditions or outcomes bear on the question.
 
-Then ask what you must be able to do, or obtain from another participant, to perform the selected action. If a described construction remains unclear, use B.5.RC to recover its inputs, operations, conditions and a small execution. If you lack the domain know-how, obtain an explanation or demonstration. If you understand the operation but cannot perform it in the combination, practise with the encompassing conditions, obtain support or use another qualified contributor. Stop a branch at an understood operation or an available contribution sufficient for this use.
+For a decision about who will perform the action or what the performer needs to learn, determine what they must be able to do and which contributions others may supply. A question about whether an action formed part of a completed Work can already be settled by the organizing rule and evidence about that occurrence. If a described construction remains unclear, use B.5.RC to recover its inputs, operations, conditions and a small execution. If you lack the domain know-how, obtain an explanation or demonstration. If you understand the operation but cannot perform it in the combination, practise with the encompassing conditions, obtain support or use another qualified contributor. Stop a branch at an understood operation or an available contribution sufficient for this use.
 
 These moves need not end in one tree. Nor does following several connections establish an unrestricted transitive parthood rule. Carry the conditions through the intervening wholes. A move from an action to its enabling tool, or from a Method to a more general Method, changes the relation; describe it accordingly.
 
 #### B.1.5.EW:4.4 - Examine the combination at a revealing moment
 
-At the chosen moment, identify what must be coordinated and what can vary. Keep prior-result requirements: an operation can be a constituent of an ongoing whole and still have to wait for another constituent's output.
+When the question concerns coordination at a particular moment, identify what must be coordinated and what can vary. Keep prior-result requirements: an operation can be a constituent of an ongoing whole and still have to wait for another constituent's output.
 
-Change one relevant condition of the encompassing work in thought or in a suitable trial. Determine whether and how the constituent action or its coordination must change. Then consider a relevant limitation of that action and determine whether and how it restricts the encompassing performance. Use available knowledge when it answers these questions; a new experiment is not automatically required.
+Follow the direction of dependence the question asks you to explain. To determine what a change in the encompassing work requires of a constituent, vary the relevant whole condition and trace it to the action or its coordination. To determine what a constituent permits the encompassing work to achieve, carry its constraint into the proposed organization. Apply an established rule directly when it answers the question. A comparison or trial is useful when a consequential dependency remains open.
 
 Where control is involved, first check whether the feedback concerns the response and interval being judged. Delayed or misleading feedback can make adequate execution look wrong. Then distinguish failure to follow the reference from accurate execution of a reference that is no longer feasible or useful. A reference may remain in force between updates; generating or revising it is separate work. C.30.LCA helps recover the control relations when those are unclear. Claims about dynamics, feasible response or timing need their subject-specific basis; a conflict requiring architecture change can continue through C.30.ILC.
 
@@ -85,7 +85,7 @@ Where correction is needed, choose the correction that the recovered connection 
 | The description assigns a connection that the work does not support. | Repair the account; do not change the work merely to fit the diagram. |
 | A constituent could be replaced. | Use B.1.5.RS to preserve the requirements of its receiving wholes. |
 
-A diagnosis may remain conditional when two explanations fit. Obtain further information only if it can change the next useful action and warrants its burden under C.11.DUA. More encompassing work does not automatically confer authority to override a participant's constraints.
+A diagnosis may remain conditional when two explanations fit. For a discretionary inquiry, obtain further information where it can change the action or explanation the recipient needs and warrants its burden under C.11.DUA. Complete any separately commissioned observation under its own conditions. More encompassing work does not automatically confer authority to override a participant's constraints.
 
 Return the explanation, any selected correction and the conditions that matter for using them. Recognition of a plausible connection is not assurance of successful performance. Establish a stronger composition, causal or performance claim only when the receiving use requires it.
 
@@ -105,7 +105,7 @@ The selected Work structure here connects the performed movement, coordinated fi
 
 An analyst is totaling accepted observations as part of preparing a report. The algorithm maintains a running sum. On reading the next value, adding it to the accumulator is a constituent of computing the total; computing that total is part of the report preparation currently under way. The addition, computation and report preparation do not incur three copies of that minute of work.
 
-The addition is correct over the supplied numbers. The report, however, requires excluding duplicate observations. If duplicate detection is missing, more precise addition cannot repair the report. Recover the accepted-observation rule and apply it before the affected update. The order remains: the next update consumes the current accumulator, and the report cannot use the final total before the calculation finishes.
+The addition is correct over the supplied numbers. The report, however, requires excluding duplicate observations. If duplicate detection is missing, more precise addition cannot repair the report. If every intermediate sum must count only accepted observations, apply the eligibility rule before each affected update. If the report promises a final total, documented reconciliation of duplicates before delivery can also give the required result. In the running-sum algorithm each new addition consumes the previous accumulator.
 
 A scheduler running on the same machine overlaps the calculation. That overlap alone makes it neither an arithmetic constituent nor report-preparation Work.
 
@@ -123,8 +123,8 @@ An observer can recognize their specialist operation while missing the connectio
 
 - Can the reader identify the action and actual or proposed work being explained?
 - Is each claimed encompassing connection explained through performed or proposed organization, rather than timing or importance alone?
-- Are the needed constituents recoverable without indefinite decomposition?
-- Does the account explain whether and how relevant changes in whole conditions affect the selected action or its coordination?
+- Do the selected actions, enclosing work and any external contributions explain the result at the scope requested? A common organizing rule may cover several connections.
+- Where the question involves a change, does the account explain the dependency in the required direction between constituent action, coordination and encompassing Work?
 - Are result dependencies and relevant external support retained?
 - Does the result identify a useful continuation without claiming that recognition establishes success or assurance?
 

@@ -46,7 +46,7 @@ When forms are used simultaneously, make their contributions usable together. Wo
 
 #### EXD.3:4.3 - Preserve a usable reading path
 
-Make the question, relation, answer and decisive conditions reachable in the chosen form. A short answer may suffice. Where the recipient will need a fuller derivation, indicate when it applies and how to reach it.
+Make the question, relation, answer and decisive conditions reachable in the chosen form. A short answer may suffice. Where the recipient will need a fuller derivation, indicate when it applies and how to reach it. When a passage changes subject, shifts from a whole to a part, or uses a more concrete model, give the reader enough to recognize what that move will explain by the time they need it. At the return, use what the passage established to answer the question at its original scope. A caption, question or adjoining sentence can supply the connection.
 
 Use labels and correspondences available through the recipient’s channel. When an important distinction is conveyed by color, provide another cue for a reader who cannot use that color. If a static diagram obscures timing, use a sequence or an accompanying explanation that preserves the temporal relation. When a reader cannot use one channel, make any needed contribution available in a channel they can use.
 
@@ -60,7 +60,7 @@ Identify changes in content, expression and help. A warranted design comparison 
 
 The account explains the mean across all eight individuals in two groups. Its prose form states:
 
-“Group A has two values with mean three, so their sum is six. Group B has six values with mean eight, so their sum is forty-eight. Across the two groups the sum is fifty-four and the count is eight. Dividing the combined sum, fifty-four, by the combined count, eight, gives 6.75. Averaging the two group means gives each group equal influence and yields 5.5.”
+“Multiply each group’s count by its mean to obtain its sum. Group A has two values with mean three, so their sum is six. Group B has six values with mean eight, so their sum is forty-eight. Across the two groups the sum is fifty-four and the count is eight. Dividing the combined sum, fifty-four, by the combined count, eight, gives 6.75. Averaging the two group means gives each group equal influence and yields 5.5.”
 
 A table candidate arranges those same claims:
 
@@ -86,7 +86,7 @@ Check the recipient’s access and the operations the task requires. A visual or
 
 Use the method when the ability to recover a relation from its expression or the coordination of representations matters to the question.
 
-For an assessment, identify what each representation contributes, how the labels and correspondences support the needed inference, and whether decisive conditions are present. State any change in content, expression or help. Credit an observed gain only to the difference the comparison supports. For a claim about what a recipient actually recovered, give the supporting observation and the conditions of that response.
+For an assessment, identify what each representation contributes, how the labels and correspondences support the needed inference, and whether decisive conditions are present. State any change in content, expression or help. Credit an observed gain only to the difference the comparison supports. For a claim about what a recipient actually recovered, give the supporting observation and the conditions of that response. When an exercise, diagram or excerpt is actually issued separately, read it with the references that travel with it and check the first transition its recipient must make.
 
 ### EXD.3:8 - Common Anti-Patterns and How to Avoid Them
 

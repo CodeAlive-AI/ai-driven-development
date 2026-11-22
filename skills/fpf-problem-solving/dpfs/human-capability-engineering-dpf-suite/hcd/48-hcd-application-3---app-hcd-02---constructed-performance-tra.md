@@ -2,7 +2,7 @@
 
 Learner-L17 is a different fictional person from Engineer-P14 and Engineer-E27. The following observations are supplied as conditions of the worked example.
 
-The exercise requires HW3/FW8. B has the highest stipulated NPV, with A/B/C at about 48.9/51.6/44.6 thousand, but its FW7 report cannot qualify B for FW8. A still needs a shared-power check. C has a compatible HW3/FW8/SCHED2 report. The exercise requires two hours of checks per change and one preparation hour per homogeneous batch of at most four. Ten changes need 23 hours and twelve need 27. With 24 hours and twelve arrivals, proposing ten leaves two changes in the queue. With 22 hours, nine need 21 hours and ten will not fit. The release manager decides what may be released for use. These are supplied engineering assumptions for the exercise.
+The exercise requires HW3/FW8. B has the highest stipulated NPV, with A/B/C at about 48.9/51.6/44.6 thousand, but its FW7 report cannot qualify B for FW8. A still needs a shared-power check. C has a compatible HW3/FW8/SCHED2 report. The exercise requires two hours of checks per change and one preparation hour per homogeneous batch of at most four. The twelve arrivals can share preparation in groups of four. Ten require 23 hours and twelve require 27. Completing ten within 24 hours increases this queue by two when there are no other entries or exits. With 22 hours, nine need 21 hours and ten will not fit. The release manager decides what may be released for use. These are supplied engineering assumptions for the exercise.
 
 | Independent Method question | Constructed observation or proposed change | Bounded result |
 | --- | --- | --- |

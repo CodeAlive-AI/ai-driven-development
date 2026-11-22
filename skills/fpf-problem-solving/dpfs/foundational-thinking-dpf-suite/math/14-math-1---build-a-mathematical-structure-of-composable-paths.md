@@ -35,9 +35,9 @@ The mathematical task is to construct the combinations, define when composition 
 
 #### MATH.1:4.1 - Choose objects and generating arrows
 
-Write the objects at which the elementary steps start and end. For each generator `a`, give a source `s(a)` and a target `t(a)`. Several generators may have the same source and target.
+Choose elementary steps from the continuations the recipient needs to form or inspect. A transfer can be a single generator when its internal changes cannot affect those continuations. Open it into constituent steps when a condition in the middle can enable, block or change the requested result. Write the objects at which the elementary steps start and end. For each generator `a`, give a source `s(a)` and a target `t(a)`. Several generators may have the same source and target.
 
-Include conditions that determine the availability of the selected continuations. A location may be enough for one problem; another may require a pair such as `(location, permission)`. Use a failed attempted continuation to find the needed distinction.
+Include conditions that determine the availability of the selected continuations. A location may be enough for one problem; another may require a pair such as `(location, permission)`. Compare two histories reaching the same proposed endpoint. If an allowed continuation differs in availability or consequence, retain the state responsible. A rule covering all such histories can establish sufficiency directly.
 
 The generating arrows and endpoints form a directed graph in the mathematical sense. A drawing can display it, but the vertices, arrows and endpoint functions define the structure. A physical network or an organization's work may be interpreted through this graph; that application supplies its own claims about what the arrows can represent.
 
@@ -55,7 +55,7 @@ Construct only the paths needed for the immediate question, or describe a family
 
 For paths `p:x→y` and `q:y→z`, write `p;q` for the path obtained by putting the list of `q` after the list of `p`. Here the semicolon is read in execution order: first `p`, then `q`.
 
-Composition is defined when the full intermediate object agrees. Its source is `x` and its target is `z`. If the endpoints disagree, repair the proposed sequence, supply a connecting arrow that the rules permit, or return the failed connection.
+Composition is defined when the full intermediate object agrees. Its source is `x` and its target is `z`. If the endpoints disagree, the two paths cannot be joined as given. When the receiver needs to reach a target, examine another permitted path or find a connecting arrow that the rules permit.
 
 Concatenation gives two laws:
 
@@ -66,6 +66,8 @@ These arguments establish identity and associativity for this construction. They
 
 #### MATH.1:4.4 - Use the path at the needed level
 
+**Does the recipient need one permitted path, or the rule for constructing paths?**
+
 Return the path that answers the immediate composition question, or the formation and composition rules when the receiving work needs a reusable family.
 
 If each generator has a supplied additive cost, obtain a path's cost by adding the costs of its generators; the empty path has cost zero. Keep the path as well when the receiver needs to execute it or inspect why it is available. Two paths with the same cost can contain different generators.
@@ -74,7 +76,7 @@ If a representation hides an intermediate object, test the attempted composition
 
 An interpretation can associate generators with transformations in another setting. The mathematical path then specifies their composition. Whether those transformations are available and adequate in that setting is the application's question, using such common methods as FPF C.29 and B.5.MPC.
 
-Stop when the receiving question has a permitted path, a reusable construction, or a specific failed connection. Constructing every possible path or proving an unchanged concatenation law again adds no result to that use.
+One permitted path settles reachability. A failed join settles whether those particular paths compose. To conclude that the target is unreachable, give a reason covering every permitted route. If the available rules leave an essential connection undecided, identify it and say which conclusion is still open. When the recipient needs a rule for constructing paths, give the formation and composition rules with their conditions. Reuse an established concatenation law while its definitions hold.
 
 ### MATH.1:5 - Archetypal Grounding
 
@@ -126,7 +128,7 @@ The construction also favors retaining history. This is useful while the role of
 
 ### MATH.1:7 - Conformance Checklist
 
-- Can the reader identify each generator's source and target?
+- Do the chosen generators and their endpoints retain the connections on which the required path or rule depends? When the graph is supplied, the calculation can use that choice directly.
 - Does each constructed path satisfy the adjacent-endpoint condition, including any action-changing refinement such as permission?
 - Are empty paths attached to their objects and composition defined in one stated order?
 - Are the claimed identity and associativity laws supported by the construction used?

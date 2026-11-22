@@ -7,7 +7,7 @@
 
 **Use this when** a control problem seems to call for different planning and reaction times, but “add a strategic, tactical and operational layer” does not tell you which decisions belong where. You may also have an inherited hierarchy whose purpose is no longer clear.
 
-Start by writing one consequential behavior that the entire closed loop must produce, together with the available observations, actuators and execution limits. Then identify the decision that prevents a direct solution. The first useful result is a candidate split and an account of what its parts must jointly preserve.
+Start from the behavior the recipient needs the whole loop to deliver, the operating conditions and the duration of the duty. For a design with several requirements, identify which must hold together and across which changes of mode. Determine which decisions could be separated and which interactions each proposed separation would have to preserve.
 
 If one qualified controller meets the task and implementation constraints, retain it. Layering needs an identified benefit; it is not a requirement for accuracy or sophistication.
 
@@ -34,17 +34,17 @@ State the controlled quantities, objective or preference, hard constraints, oper
 
 Use a centralized mathematical formulation when it helps reveal coupling, even if that formulation is too expensive to run. It can be a finite-horizon objective with dynamics and constraints, a reach-and-avoid problem, or a reference-following requirement. It is the common comparison basis, not a promise that one optimizer must solve everything.
 
-Retain a feasible simple controller as a baseline where available. State what it cannot achieve at acceptable effort: for example obstacle look-ahead, preview-dependent economy or long-horizon allocation. If the baseline's limitation is unknown, test that uncertainty before adding layers.
+When a qualified simple controller is available, establish what it achieves under the stated requirements. If it already suffices, it can answer a request for a workable architecture. For a comparison, identify the benefit another arrangement would have to provide and its cost. Use a bound, analysis, operating record or trial that can settle the remaining difference.
 
 When a qualified existing loop has adequate tracking and disturbance rejection but requested commands violate constraints, compare adding a reference or command governor before redesigning that loop. Use the joint plant-controller model, admissible initial conditions and qualified command-update rule described in [CAD.Reference:4.5.1](04-cad-reference-4---the-layered-planning-and-feedback-branch.md#cadreference451---keep-a-qualified-loop-and-govern-its-commands). Check whether the resulting command delay or distortion meets the task. If it does, retain that candidate; if it does not, identify the unmet requirement that a different interface, planner or controller must address.
 
 #### CAD.1:4.2 - Separate decisions because their information and effects differ
 
-For each consequential decision, ask what it changes, which information it needs, how long its effect persists, how quickly a wrong choice becomes harmful, and what resources its computation consumes. Cluster decisions only when those answers support one useful calculation or law.
+For each consequential decision, ask what it changes, which information it needs, how long its effect persists, how quickly a wrong choice becomes harmful, and what resources its computation consumes. Group decisions when their information, effects and timing support one useful calculation or law. For each proposed group, distinguish the control function, the operations that implement it and the equipment that executes them. Several functions may share a processor, and one function can depend on operations performed by several devices. Check the control or execution relation that matters to the original problem before drawing a part–whole conclusion from the layer diagram.
 
 A slow planning decision might choose a route, reference segment or allocation. A faster decision might reject local disturbance or track that reference. This does not imply that the faster model is less detailed: a tracking model may retain actuator dynamics omitted by a planning model.
 
-Generate materially different candidates. Compare a single loop, a planning-and-feedback split, or another separation motivated by the problem. Do not add a third layer merely because the source diagram contains three. A communication boundary can matter more than a time-scale boundary, and a faster processor can make a proposed split unnecessary.
+If the engineer is to choose how to organize control, consider keeping a single loop and derive any proposed separations from the problem. A communication boundary can matter more than a time-scale boundary, and a faster processor can remove the reason for a split. If the assignment is to assess an inherited hierarchy, trace which decisions it separates and which interactions its guarantees must cover. A demonstrated incompatibility can complete that assessment. Proposing a replacement is a further design decision.
 
 #### CAD.1:4.3 - Expose what the split removes
 
@@ -95,7 +95,7 @@ Organizational hierarchies and biological analogies make layered pictures persua
 ### CAD.1:7 - Conformance Checklist
 
 - The unsplit behavior, constraints, information and resource conditions are recoverable.
-- Each separation has a decision-specific reason and a serious alternative.
+- Each proposed separation serves a control need. An assessment of an existing separation identifies what it preserves, what it loses, and how that affects the requested behavior.
 - Removed interactions have explicit receiving treatments or remain visible gaps.
 - Slow choices include material fast consequences.
 - The compared candidates serve the same demand.

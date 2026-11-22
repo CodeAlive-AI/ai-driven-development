@@ -23,7 +23,7 @@ More detail supports future analysis but burdens those recording work under time
 
 ### MNT.12:4 - Solution
 
-Start from the receiving maintenance decision and its required distinctions. A spare-applicability question needs different history from a recurrence study or a hand-back. Identify the actual unit, component individuals and configuration changes that can affect that use.
+Start from the receiving maintenance decision and its required distinctions. A spare-applicability question needs different history from a recurrence study or a hand-back. Select the unit, constituent histories or population and the times that could change that answer. Where several installation histories remain possible, use what all of them establish. Recover exact identities or dates when a difference changes the result or the order expressly requires them.
 
 Recover the configuration basis under SYSE.13. Distinguish actual, intended and unknown installed state; part or variant descriptions; document editions; and the conditions under which a description applies. A date or shared label cannot establish those correspondences by itself.
 
@@ -59,7 +59,7 @@ Revise the part of your answer whose grounds differ. Try each changed premise be
 
 Return the result at the scope the receiving question needs. A total-exposure question may use 6; a component-specific duration or restored-function question may require the actual boundary or separate evidence about the new component. Seek that relevant observation or accountable source answer when worthwhile; otherwise retain the uncertainty. Preserve unaffected history.
 
-Apply the same distinctions to one of your own event records and state which premise could change your answer. These explanations can help you correct an answer. To establish independent performance, use new material without that help. Obtain competent feedback on an unresolved step before relying on its attribution.
+When practising transfer to another history, use one of your own event records and state which premise could change the answer. Use the explanations to correct your reading. The exercise supplies the time window, configuration history and attribution question. A correct solution shows how you used those premises. To assess your own choice of boundaries or evidence, use work in which you made that choice before receiving the answer. An earlier comparable record can suffice when it shows what you decided and what help you had. If that evidence is missing, try a suitable record independently. A claim that practice changed your ability also needs a comparable earlier performance and grounds for attributing the change. Obtain competent feedback on an unresolved step before relying on its attribution.
 
 ### MNT.12:5 - Archetypal Grounding
 

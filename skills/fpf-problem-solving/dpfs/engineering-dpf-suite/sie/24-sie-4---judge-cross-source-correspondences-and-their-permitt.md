@@ -40,8 +40,8 @@ Separate candidate discovery, direct relation judgment, and bounded-use qualific
 1. **Take the question from the contract.** State the receiving answer and why this endpoint relation can change it.
 2. **Bind exact endpoints.** Reference the `SIE.2` source rows, schemes, definitions, editions, profiles, effectivity, units, codes, and local extensions. Do not map labels without their senses.
 3. **Generate candidates without promotion.** Lexical, structural, instance, expert, historical, or matcher evidence may nominate a row. Record the candidate source and score where useful, but do not treat nomination as acceptance.
-4. **State the direct relation or difference.** Use the narrowest warranted relation vocabulary. State direction and whether the inverse, symmetry, or transitivity is supported. If no positive relation is established, choose rejected, unresolved, or incompatible with reason.
-5. **Test examples and counterexamples.** Include instances or cases that should satisfy the relation and cases that distinguish endpoints, including version, unit, code, granularity, lifecycle, and authority differences.
+4. **State the direct relation or difference.** Use the narrowest warranted relation vocabulary. State direction and whether the inverse, symmetry, or transitivity is supported. A pair may be excluded from a join while the relation remains unknown. To assert that an assignment is absent, use evidence that excludes it for this configuration, such as a complete governing plan.
+5. **Check what warrants the relation.** Apply the definitions, governing assignment or other evidence to the endpoints and the range claimed. When a relation over a class is proposed, vary a relevant version, unit, grain or scope. One verified counterexample can defeat a general substitution. A complete governing plan can settle the relation for one pair directly.
 6. **Qualify the receiving use.** State which substitution, comparison, join, navigation, or transformation the row permits, what semantic loss it introduces, and which uses remain forbidden.
 7. **Preserve evidence and authority.** Record justification, evidence source, reviewer or domain authority where required, uncertainty or confidence, and the owner of any unresolved domain judgment.
 8. **Assign a row disposition.** Use accepted-for-use, accepted-with-loss, rejected, unresolved, or incompatible. A row can state a true broader/narrower relation yet be rejected for this use.
@@ -57,7 +57,7 @@ Separate candidate discovery, direct relation judgment, and bounded-use qualific
 | direct relation | relation or explicit difference/incompatibility, orientation, inverse/symmetry/transitivity qualification |
 | use qualification | permitted operation, accepted loss, forbidden reuse, conditions |
 | warrant | candidate origin, justification, evidence, authority, uncertainty/confidence where meaningful |
-| challenge | positive examples, counterexamples, negative/unlike cases |
+| challenge | grounds for the relation at the stated scope and discriminating cases where needed |
 | disposition and continuation | accepted-for-use, accepted-with-loss, rejected, unresolved, incompatible; downstream reference and reopen condition |
 
 #### SIE.4:4.3 - What Changes in Practice
@@ -72,7 +72,7 @@ In the AP242/QIF application, the lexical candidate `feature ↔ characteristic`
 | --- | --- | --- |
 | AP242 feature `F-17` ↔ QIF characteristic `C-17` | not identity and not class equivalence; the QIF plan asserts that `C-17` concerns the identified product feature under configuration/effectivity `R/E` | accepted-for-use as a directed `inspection-characteristic-concerns-feature` relation only after `SIE.5` qualifies the feature endpoint; no reverse substitution |
 | AP242 feature type `hole` ↔ QIF characteristic type `diameter` | a diameter characteristic can characterize some holes, but the types are neither equal nor simply broader/narrower | accepted-for-use for navigation from a selected plan row with a qualified feature endpoint to its linked hole feature and diameter characteristic. Return their separate source identifiers and types with the plan relation; forbidden as a global type crosswalk |
-| AP242 feature `F-22` ↔ QIF characteristic `C-99` | the candidate arose from a shared local label; effectivity and plan evidence do not support the relation | rejected; the interface returns unmatched rather than joining |
+| AP242 feature `F-22` ↔ QIF characteristic `C-99` | Only the shared local label supports this candidate. The accessible plan excerpt supplies no assignment at `R/E`. | Exclude the pair from the join and return the link as unresolved. If the complete governing plan for `R/E` contains no such assignment, return an established non-match for that configuration. |
 | legacy feature class ↔ current QIF characteristic class | one local extension lacks an authoritative definition | unresolved and stopped for dependent mapping; return to the extension owner |
 
 The set records endpoint editions and counterexamples such as a non-dimensional inspection characteristic and a feature absent at effectivity `E`. It establishes semantic premises; it does not decide that identifiers denote the same entity or specify executable joins.
@@ -94,7 +94,7 @@ The set records endpoint editions and counterexamples such as a non-dimensional 
 - [ ] Candidate generation is distinguishable from relation judgment.
 - [ ] The direct relation, difference, or incompatibility uses the narrowest warranted kind and states orientation.
 - [ ] Inverse, symmetry, and transitivity are not inferred without support.
-- [ ] Positive examples and discriminating counterexamples are present where load-bearing.
+- [ ] The grounds support the relation over its claimed scope. Where examples distinguish plausible relations, their consequences for the proposed use are explicit.
 - [ ] Permitted operation, semantic loss, conditions, and forbidden reuse are explicit.
 - [ ] Evidence, uncertainty/confidence, and decision authority are inspectable.
 - [ ] Rejected, unresolved, and incompatible rows remain available to downstream interfaces and tests.

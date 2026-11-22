@@ -34,7 +34,7 @@ Start from the question as expressed in the available request, material or excha
 
 Read the assignment in the recipient’s terms. What are they to produce, and for which situations? Someone asked to design a procedure must decide matters that someone following the procedure can take as settled. Establish which choices belong to the recipient, what they may rely on and which changes the procedure must accommodate. If the assignment concerns one event, an explanation of that event can answer it in full.
 
-If different interpretations would change the answer, use relevant existing instructions or evidence of the recipient’s purpose. If the distinction remains open, ask a brief question or give conditional answers. For an average, determine whether each individual or each group should count equally. For advice, distinguish a request for the recommendation’s existing grounds from a question about evidence of expected development.
+If different interpretations would change the answer, use relevant existing instructions or evidence of the recipient’s purpose. If the distinction remains open, ask a brief question or give conditional answers. For an average, determine whether each individual or each group should count equally. For advice, distinguish a request for the recommendation’s existing grounds from a question about evidence of expected development. A branch report can count visits, distinct visitors or returns to the same service. Ask which of those could change the recipient’s action. If two branches share visitors, the choice can also change which records the explainer needs. A threshold may already be settled by the extremes allowed by the records.
 
 Use a clear reply or an adequately supported interpretation. If the weighting target remains open, state the consequences. Equal group weights and equal individual weights call for different calculations. Identify the outstanding policy choice only when the task requires choosing between them.
 
@@ -56,7 +56,7 @@ If the subject basis is incomplete, identify what the requested explanation depe
 
 Compare a new contribution with the current question. Does it change the intended use or a relevant condition, challenge a premise, reveal an error under the same question or confirm that the existing account suffices? State the consequence for the explanation or for the account of the exchange.
 
-For a changed target, state the revised question and retain the earlier answer within its conditions. For an error under the same target, explain the affected inference. For a disputed premise, establish what the evidence supports or state the limit. In dialogue, use [EXD.4](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) to interpret the recipient’s contribution and decide whether a further response is needed.
+Distinguish a question the recipient is free to ask from a result already owed to someone else. Answer a useful new question and say what is still needed for the original one. When the purpose is open to the recipient or its holder changes it, use the revised question and retain the earlier answer within its conditions. For an error under the same target, explain the affected inference. For a disputed premise, establish what the evidence supports or state the limit. In dialogue, use [EXD.4](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) to interpret the recipient’s contribution and decide whether a further response is needed.
 
 Finish when the question and its conditions are clear enough for the requested use, or identify the precise ambiguity or missing contribution that the available evidence cannot settle and where that contribution could come from. Record it in a separate form only if the work needs one.
 
@@ -66,9 +66,9 @@ Suppose a learner asks why averaging two group means gave the wrong result. Grou
 
 The question is why group sizes matter when every individual receives equal weight. Multiplying each count by its mean recovers its group sum: `2 × 3 = 6` and `6 × 8 = 48`. Both sums belong in the numerator, and both counts in the denominator. The pooled mean is `(6 + 48)/(2 + 6) = 6.75`. Explain this connection when it is what the recipient lacks.
 
-The recipient then says, “For my report, I want each branch to count equally, regardless of how many people it has.” This explicitly selects a different aggregation rule, so the explainer can answer the revised question directly.
+The recipient then says, “For my report, I want each branch to count equally, regardless of how many people it has.” The request selects another rule for the question now being asked. The explainer can calculate its result immediately.
 
-Under the revised rule, `(3 + 8)/2 = 5.5` is the mean of the two equally weighted branch means. The answer 6.75 still applies to the individuals. These labels and conditions can finish the explanation. If the report requires a choice of policy, use the applicable rule or refer the remaining choice to its holder.
+Under the revised rule, `(3 + 8)/2 = 5.5` is the mean of the two equally weighted branch means. The answer 6.75 still applies to the individuals. These labels and conditions finish an explanation of the two figures. For a report commissioned to give the individual mean, use 6.75 unless the authorized holder changes that requirement. If the report’s purpose was entrusted to the analyst, the new choice can settle it.
 
 The case stipulates the exchange. The calculation gives the answer criteria for the two questions. A claim about what a learner actually learned requires evidence of that learning.
 
@@ -89,7 +89,7 @@ To assess the question and the grounds for interpreting it, check the applicable
 - the question and the purpose can be distinguished;
 - The relation to explain and conditions that could change the answer are clear enough to select the subject account.
 - A statement about preparation identifies its task-relevant evidence or is identified as an assumption.
-- When a new contribution is available, interpret it in context. Revise the question, premise, help or interpretation where warranted and retain what the contribution leaves adequate.
+- Interpret each new contribution in context. When the question stays the same, revise the premise, help or inferred meaning where the new contribution warrants it. A reply may confirm that the existing explanation suffices. When the question changes, identify any wider obligation and who can change it.
 - The resulting question can be used, or the account identifies the remaining ambiguity, assumption or missing subject result and, where known, how to resolve it.
 
 These checks concern the question and its use. Retention and transfer need their corresponding evidence.

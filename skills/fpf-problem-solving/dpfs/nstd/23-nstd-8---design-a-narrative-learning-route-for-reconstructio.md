@@ -37,7 +37,7 @@ A topic heading can tell learners which method to use. Success inside that block
 
 ### NSTD.8:4 - Solution
 
-Design the transition the learner needs and connect it to its next use. If learners must interpret unfamiliar material, teach them how to develop and compare interpretations through NSTD.9. To assess their independent choice, give them a question that leaves the choice to them. For creating a story, use NSTD.10 and let learners work through a changed premise. A narrative lesson on a proof or technical method takes its operations and criteria from that subject.
+Design the transition the learner needs and connect it to its next use. If learners must interpret unfamiliar material, teach them how to develop and compare interpretations through NSTD.9. When independent selection is the aim, leave that choice to them and give them an opportunity to use feedback on their reasoning. For story construction, use NSTD.10. A workable scene under fixed premises may fulfil the assignment. Let learners revise the scene under a changed premise when that is part of what they must learn. A narrative lesson on a proof or technical method takes its operations and criteria from that subject.
 
 A course team may want a note connecting several lessons, comparing versions or keeping their source relations traceable. Use the fields its work needs.
 
@@ -67,7 +67,7 @@ LearningNarrativeRoute@Context:
 
 A maintained course may have separate lessons, slides, exercises and recordings. Link them to the source ideas and learner tasks they serve. The size and publication form depend on the teaching work.
 
-When teaching a constraint-governed unfolding structure, make the wider possibilities recoverable alongside the demonstrated path. Teach an omitted alternative or stop condition at the point where it changes the learner's action. A route note can link the wider structure and the taught slice when that helps maintenance.
+When teaching an unfolding sequence with several permissible paths, decide what the learner will have to do with it. To follow one prescribed path, learners may need only that path and its conditions. To choose a path, they need to recognize the circumstances that change the choice and the alternatives or stopping points then available. To design such a sequence, they also need to practise deciding which circumstances and alternatives to represent. A route note can link the wider structure and the demonstrated path when that helps maintenance.
 
 These questions can guide planning or the examination of an existing route. Return to the affected question when an attempt supplies new information.
 
@@ -94,14 +94,14 @@ When people need later access to what they learned, use HCD.10:4.4 to choose a s
 
 
 
-#### NSTD.8:4.1 - Check attachment and support at the next use
+#### NSTD.8:4.1 - Check what the learner must do next and what help is available
 
 
 Connect the teaching material to the question at hand and to the use that follows. What can a learner do with this example, diagram or exercise, and where will that matter? A question, caption, worked example, short transition or later return may supply the connection. Check the endpoints of a repeated term or a diagram arrow when its meaning is unclear.
 
 Examine what is available by the time of the next task. Identify what this audience can already use, what the route has introduced, which questions remain open and which prerequisites the task needs now. An overview or a link can supply a missing relation if it makes that relation usable at this point. Inspect the material for a design judgement. Use a learner’s attempt when the question concerns what that learner actually did.
 
-Compare the work the author was commissioned to teach with the task the finished narrative actually gives the learner. Read the whole narrative with that difference in view. When must the learner choose something the storyteller has already chosen? Trace where the learner gets the grounds for making that choice and where the task lets them make it. If all the episodes fit together but the design of the procedure is still missing, use EXD.Reference:3 to develop that explanation from the subject practice. When the goal is to explain one incident or perform one specified operation, its own story may already suffice. Use EXD.6:4.1 to check the complete account against either goal.
+Compare the work the author was commissioned to teach with the task the finished narrative actually gives the learner. Read the whole narrative with that difference in view. When must the learner choose something the storyteller has already chosen? Trace where the learner gets the grounds for making that choice and where the task lets them make it. If all the episodes fit together but the design of the procedure is still missing, use EXD.Reference:3 to develop that explanation from the subject practice. When the goal is to explain one incident or perform one specified operation, its own story may already suffice. Use EXD.6:4.1 to check the complete account against either goal. Read the caption, the exercise issued on its own and any help the learner normally receives. A heading that names a suspected cause supplies the hypothesis. The learner might still design the test. A supplied test can leave its interpretation open. Credit each decision the learner made. If both forming explanations and selecting evidence are commissioned, give the available observations and let the learner make both choices before showing the worked answer.
 
 Choose the continuation that fits the transition.
 
@@ -109,7 +109,7 @@ Choose the continuation that fits the transition.
 - **The task needs support that is absent.** Check the expected prerequisite and permitted help. Supply the relevant contrast, map, worked operation, recap or accessible representation, or introduce it earlier. Preserve the subject relation the learner must use.
 - **The initial attempt prepares subsequent instruction.** A bounded problem can bring out alternatives before the explanation. Keep those attempts available and use the subsequent teaching to compare and resolve them. A later response can establish what the learner then did. To determine how the preparation contributed, use evidence that distinguishes its contribution, such as an applicable comparison.
 
-A supported initial case can help a learner form the distinction. When later work requires independent selection, include a case whose cue leaves that choice open. Select grouping, interleaving, spacing and retrieval for the particular action and time of later use.
+A supported initial case can help a learner form the distinction. To teach the learner to select what a whole narrative must explain, give them the material and the next reader’s question. Before suggesting the units or a plot, let them decide which changes belong to one episode, which differences the telling must preserve and why. A suggested grouping can still leave the order of disclosure or its justification for them to choose. Use their attempt to show what each choice lets the reader infer and let them repair a consequential loss. Earlier work can show what a learner already does with the permitted help. Choose grouping, interleaving, spacing and retrieval for the particular action and time of later use.
 
 To assess first recognition, preserve the response before supplying the deciding cue. State which help was permitted, what the learner used, what the source supplied and what prior expertise matters to the claim. A teacher-supported correction can satisfy a task that allows that help. An expert’s successful reconstruction and a novice’s difficulty may both be accurately reported. If the novice’s difficulty matters to a repair, use evidence that addresses it.
 
@@ -174,7 +174,7 @@ LearningNarrativeRoute@FPFOnboarding:
     - final transfer task with no block label
   reconstructionTasks:
     - name the source pattern section behind each story beat
-    - choose the governing pattern for a new case
+    - choose the governing pattern for a new case and use it to produce the result the case calls for
     - state one source-return condition
   useOfEngagement: the failed-use story introduces the problem. A claim about an actual failure needs its own basis.
   evaluationRouteRef: `NSTD.6` learning-route rows
@@ -227,9 +227,9 @@ LearningNarrativeRoute@NarrativeMethodsForEngineering:
     - source-selection repair
     - different project failure requiring ordering repair
     - return to first failure and add viewpoint risk
-    - choose the relevant method in a mixed exercise
+    - choose a narrative method in a mixed exercise and use it to repair or explain the engineering account
     - delayed retrieval of source-return boundaries
-    - final transfer to an unseen case
+    - produce an explanation of an unfamiliar engineering case using the method the learner selects
   interleavingPlanRefs:
     - once an earlier method is familiar, mix it with a current method when learners need to distinguish them
     - adjacent failure modes are compared side by side
@@ -315,7 +315,7 @@ An FPF seminar or tutorial can connect the object of concern, precise relations,
 
 In the homotopy mini-course, ask learners to identify the permitted space and explain the two outcomes in §5.3. A drawing can introduce the problem, and the mathematical comparison can expose a missing condition. Use the learner’s own explanation to judge what they reconstructed under the support given.
 
-An onboarding sequence could also use an FPF seminar, franchise storycraft and live commentary. Ask learners which source relations NSTD.1 helps recover in each case, which further method each problem needs, and why NSTD.6 evaluates a particular rendering and use. When the goal is transfer, add a sufficiently changed case and compare performance under the relevant conditions.
+An onboarding sequence could also use an FPF seminar, franchise storycraft and live commentary. Ask learners which source relations NSTD.1 helps recover in each case, which further method each problem needs, and why NSTD.6 evaluates a particular rendering and use. For use in a different setting, give learners the new task and the help allowed there. Prior work can already show a learner performing that task. To attribute the performance to transfer from earlier learning, establish the relevant earlier basis and what the new conditions required.
 
 NSTD.7 helps examine generated teaching material against the source and the intended task. Use NSTD.6 for an assessment that admission or another use needs. C.35 addresses use of the generated material in architectural work.
 
@@ -376,7 +376,7 @@ Modular source publications support reference. Reusing the modules as lessons ca
 | --- | --- |
 | `CC-NSTD8-1` | The design names the intended learner action and the source relations it requires. |
 | `CC-NSTD8-2` | The order serves the learner’s task, and the learner can reach the sources needed for it. |
-| `CC-NSTD8-3` | The reconstruction task lets a learner demonstrate the needed source relation. |
+| `CC-NSTD8-3` | The task lets the learner perform the action promised. For reconstruction, the required source relations can be recovered. For application, the learner can use them for the assigned decision. For design, the learner can select the relevant relations or test with the permitted help before seeing the author’s choice, and can justify the design if the commission requires its grounds. Judge an individual response from that learner’s work. |
 | `CC-NSTD8-4` | Lessons, exercises and other learning materials make their needed source relations and tasks available at the point of use. |
 | `CC-NSTD8-5` | The comparison supports a claimed improvement on the affected outcome, at acceptable cost and with protected qualities preserved. Use NSTD.6 for the assessment and E.22 or E.23 for the improvement work the case requires. |
 | `CC-NSTD8-6` | Distinguish source organization, episode order and reasoning within episodes. The intended learner action determines what to compare, what should remain accessible together and what help is appropriate. For a spaced return, choose separately when it occurs and what learners must retrieve. |
@@ -429,6 +429,6 @@ Retain a source-aligned segment that already serves its purpose. A missing conne
 For a human learning route, HCD.10:4.5 helps select grouping or mixing when the comparison and order matter. Keep the material learners need for that comparison accessible at the point of use. HCD.10:4.4 helps select a spaced return, the retrieval to practise and the help permitted there.
 
 
-For the narrative and its source use A.6.3.NAR, E.6, NSTD.1 and NSTD.2. E.11, E.17 and E.17.AUD support entry and publication. NSTD.5 helps choose a device for interest or motivation. NSTD.6 assesses a particular narrative version for its intended use. Use E.21 when the object to evaluate is an edition of an FPF pattern. E.22 frames an open quality question, and E.23 compares proposed improvements. Use G.11 when a change in sources, learner preparation, task, practice, scheduling, edition or observations alters the basis for use. Use B.4 for evolution through repeated operation. [NSTD.Reference:9](09-nstd-reference-9---architecture-and-narrative-work-bridge.md) addresses source architecture, views and evidence about the realized structure. [NSTD.Reference:10](10-nstd-reference-10---semiotic-and-language-precision-bridge.md) addresses wording, cues, explanation and loss of precision. [NSTD.Sources:1](26-nstd-sources-1---source-use-and-refresh-map.md) helps trace changed teaching, memory or practice evidence to the parts of the course that depended on it. Use [NSTD.Reference:14](14-nstd-reference-14---refresh-the-affected-narrative-use.md) when changed observations of learner work could affect the route’s supported use.
+For the narrative and its source use A.6.3.NAR, E.6, NSTD.1 and NSTD.2. E.11, E.17 and E.17.AUD support entry and publication. NSTD.5 helps choose a device for interest or motivation. NSTD.6 assesses a particular narrative version for its intended use. Use E.21 when the object to evaluate is an edition of an FPF pattern. E.22 frames an open quality question, and E.23 compares proposed improvements. Use G.11 when a change in sources, learner preparation, task, practice, scheduling, edition or observations alters the basis for use. Use B.4 for evolution through repeated operation. [NSTD.Reference:9](09-nstd-reference-9---architecture-and-narrative-work-bridge.md) addresses source architecture, views and evidence about the realized structure. [NSTD.Reference:10](10-nstd-reference-10---semiotic-and-language-precision-bridge.md) addresses wording, cues, explanation and loss of precision. [NSTD.Sources:1](26-nstd-sources-1---source-use-and-refresh-map.md) helps trace changed teaching, memory or practice evidence to the parts of the course that depended on it. Use [NSTD.Reference:14](14-nstd-reference-14---refresh-the-affected-narrative-use.md) when changed observations of learner work could affect the route’s supported use. When a lesson lacks its subject account, obtain it with EXD.Reference:3. EXD.6:4.1 and HCD.19 help distinguish what the publication supplies, what the learner brings and what the issued task leaves them to do.
 
 ### NSTD.8:End

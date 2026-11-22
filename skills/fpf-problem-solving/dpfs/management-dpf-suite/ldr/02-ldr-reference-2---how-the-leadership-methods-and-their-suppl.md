@@ -5,7 +5,7 @@ The methods address different breaks in the relationship between participants, p
 | What the situation leaves unresolved | Useful leadership result | Where the way is explained |
 | --- | --- | --- |
 | People have concerns or ambitions but cannot yet say what they can undertake together or who will carry the initiative. | A direction shaped with the relevant participants, the bounds of their participation and a justified first action or refusal. | LDR.5, with strategic or domain construction where needed. |
-| A needed explanation, role conversation, challenge or continuing initiative lacks a capable performer or usable conditions. | The contribution is performed and its next occasion has the stated help. | LDR.1. |
+| A needed explanation, role conversation, challenge or continuing initiative lacks a capable performer or usable conditions. | An agreed arrangement with the means to supply the contribution. For a question about performance, establish who did the work and what reached the receiver. | LDR.1. |
 | Parties' proposed contributions or terms cannot coexist. | A feasible whole accepted by those whose agreement is required, or a precise impasse. | LDR.2. |
 | An examinable proposal has not reached an effective decision, supported start and useful performance. | The authorized first contribution reaches its receiver, with the remaining conditions visible. | LDR.4. |
 | A person cannot connect their chosen purpose, actual action and further development. | An attainable personal continuation or a reason to change the undertaking. | Reference:1.6 connects the choice to STR.5/.6, the complete HCD.2/.15 methods and the actual work conditions. |

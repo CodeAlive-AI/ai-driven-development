@@ -50,9 +50,9 @@ In a progress conversation or report, examine what is absent as well as what is 
 
 #### C.41.SR:4.2 - Test how the contributions support the whole
 
-Ask what each local answer establishes and what the shared conclusion additionally needs. Does it concern the same subject configuration and occasion? Is the necessary intermediate result available? Are the contributions compatible in their use of time, people and resources?
+Start with the decision about the whole and its acceptance conditions. Which conditions must all hold, which alternatives are allowed, and what has to work at the connection between contributions? Establish which conditions the local answers cover for the same configuration and occasion, including the availability of intermediate results and the joint demands on time, people and resources. If those grounds settle the shared question, give the answer and its grounds to whoever makes the decision. An established failure of a required condition can settle the question in the negative. If one admissible alternative fails, judge the others on their own grounds. If the question remains open, identify what would settle it. Participants may need to interpret an observation, obtain a missing one, agree on a handover or allocate a resource. Tell the decision maker what the available answers already establish.
 
-Name the relevant relation instead of inferring it from a checklist's nesting. A supplier can enable work; a schedule allowance can affect its feasibility; a model can describe the subject; one observation can support several conclusions. None becomes a physical part of another subject merely by appearing below it in a list. Recover what a changed local condition changes for each consuming claim.
+Name the relevant relation instead of inferring it from a checklist's nesting. A supplier can enable work; a schedule allowance can affect its feasibility; a model can describe the subject; one observation can support several conclusions. Identify the facts it supplies to each. Two records derived from the same observation count as one source when independent confirmation matters. For a physical part–whole claim, identify the part and the whole in the work itself. Recover what a changed local condition changes for each consuming claim.
 
 A local Method can contribute to an encompassing Method during the same performance. [FPF B.1.5](../08-part-b---trans-disciplinary-reasoning-cluster/06-b-1-5---gamma-method---order-sensitive-method-composition-an.md) explains the composition distinction; its consequence here is to examine the whole's conditions when interpreting constituent work. Service availability enables the work; establish separately how the performed contribution enters the encompassing Method.
 
@@ -62,7 +62,7 @@ Where the case can reveal something the fixed questions miss, prompt a short exc
 
 #### C.41.SR:4.3 - Recover after change or interruption
 
-When a room, description, tool, subject or intended use changes, identify which earlier claim consumed that premise. Follow the reliance to the shared conclusion. [FPF A.15.10](../07-cluster-a-v---constitutional-principles-of-the-kernel/25-a-15-10---resume-work.md) supplies changed-premise recovery; [C.41.UA](124-c-41-ua---use-a-checklist-to-answer-questions-and-act-on-the.md) supplies the affected answers.
+When a room, description, tool, subject or intended use changes, identify which earlier claim consumed that premise. Follow the reliance to the shared conclusion. [FPF A.15.10](../07-cluster-a-v---constitutional-principles-of-the-kernel/25-a-15-10---resume-work.md) supplies changed-premise recovery; [C.41.UA](126-c-41-ua---use-a-checklist-to-answer-questions-and-act-on-the.md) supplies the affected answers.
 
 Retain the historical account. Reuse unaffected observations where their basis remains sufficient. A continuation after interruption consumes this account of current questions and grounds, not only a remembered set of colours.
 
@@ -106,7 +106,7 @@ For an importer, parser checks and storage checks can both pass locally while th
 
 A rented-room workshop combines projection, card exercises and participant coordination. The technician uses a venue tool, the facilitator a materials workspace, and the organizer a session calendar. The team is uncertain whether “readable on screen” can be judged reliably at the technician's desk.
 
-When local answers exist but their support for the session is unclear, [C.41.SR](125-c-41-sr---reconcile-checklist-results-across-shared-work.md) first connects them to the shared result and exposes missing or conflicting contributions. Follow the return that answers the difficulty. In this case, uncertain projection checking calls for qualification before reliance on its verdict.
+When local answers exist but their support for the session is unclear, [C.41.SR](127-c-41-sr---reconcile-checklist-results-across-shared-work.md) first connects them to the shared result and exposes missing or conflicting contributions. Follow the return that answers the difficulty. In this case, uncertain projection checking calls for qualification before reliance on its verdict.
 
 > **Mantra — from local answers to a shared result:** Name the shared result. For each contribution, recover the subject, question, conditions and grounds behind its answer. Reuse what is adequate; qualify uncertain checks and obtain what is missing. Ask what the whole still needs and whether the contributions can combine. Return a missing performer or resource to coordination, an unanswered subject question to the needed observation or interpretation, and incompatible claims to those who can resolve them. After change, retain unaffected grounds and reconsider dependent questions; after interruption, recover these distinct next moves. Use a conversation or an existing view when enough; record more only for a concrete later reliance.
 
@@ -116,7 +116,7 @@ The worked case below connects these moves to the room, materials and workshop. 
 
 **Local representation and occasion.** C.41.TF preserves the session, room and materials references in the relevant local views. C.41.OF arranges the observation while the room and content are available. A missing capable interpreter returns to capability support; an unavailable room returns to scheduling.
 
-**Local answers and simultaneous contribution.** Through C.41.UA, the technician establishes equipment conditions and the facilitator compares projected and physical examples. The projection check contributes to equipment preparation and preparation of the workshop at the same time. Its relation to the whole changes what is checked: a test image alone cannot establish the example's use.
+**Local answers and simultaneous contribution.** Through C.41.UA the technician establishes equipment conditions and the facilitator compares the projected example with the physical card. One well-grounded comparison can settle whether those two versions agree. Both participants can use it, even if they record it in separate lists. If projection is essential to the commissioned exercise, a confirmed projector failure rules out running it as planned. If the exercise also permits printed copies, that failure rules out the screen option. The organizer can use the printed option when the copies, participants' access and other conditions of that exercise are established.
 
 **Reconciliation.** C.41.SR connects the local answers to workshop W. A whole-session account includes the materials and arrangement, not a count of green local lists. If the facilitator and technician need the room at incompatible times, a shared operating account makes the conflicting claims visible to the people who can select a feasible arrangement before those contributions combine.
 
@@ -135,7 +135,7 @@ A central record can also shift maintenance work to whoever has the least author
 For the shared conclusion being used, inspect:
 
 - Which local claims support it, and do their subject, meaning and occasion match its use?
-- What condition of the whole is not established by the constituent answers?
+- Which conditions and connections does the shared decision require, which do the available answers establish, and what, if anything, remains open?
 - Are missing arrangement, missing observation and substantive conflict distinguished?
 - Does each changed premise reopen the reliance it affects?
 - Can participants recover the next contribution in their working tools without unnecessary duplication?

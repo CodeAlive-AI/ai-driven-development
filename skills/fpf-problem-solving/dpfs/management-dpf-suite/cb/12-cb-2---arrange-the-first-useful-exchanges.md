@@ -11,7 +11,7 @@ The organiser's task is to arrange a bounded exchange in which one participant o
 
 This is the mutual-participation branch of Community Management. It begins with a credible purpose and participation conditions, such as those supplied by CB.1. It creates a first workable relationship around an activity; it does not require a formal organisation or equal contributions from every participant.
 
-**First useful result:** a completed exchange with a known use or honest remaining gap, a feasible opportunity to continue, and an account of the help the organiser had to provide.
+**First useful result:** the one-off introduction, answer or other exchange the participants agreed to, with the limitation of the answer where it matters. When they want an arrangement that can continue, establish the help it took and the conditions for its next use.
 
 **Ordinary non-use.** When people can obtain the needed result independently from a resource or learning provision, use that route. When a timely accountable answer is required, obtain the appropriate service. Use CB.1 if the proposed mutual activity has no credible benefit or cannot obtain its essential contribution.
 
@@ -81,7 +81,7 @@ At the start, restate the purpose, result and limits. Let the recipient establis
 
 Use prompting to repair a specific obstacle. Invite a qualified person to address an unanswered question, ask a contributor to explain the observation behind a conclusion, or help the recipient distinguish two incompatible suggestions. Give enough time for a response and make declining permissible. Repeated unsolicited reminders are not a substitute for an agreed contribution.
 
-When participants disagree, identify the condition or evidence that changes the proposed answer. They may be considering different configurations, using different criteria or lacking a decisive observation. Preserve a warranted unresolved result and the next source or observation needed. Do not force agreement to make the session look successful.
+When accounts differ, first ask whether they change the commissioned action or its required grounds. The recipient can take a step supported by both accounts. If they lead to different choices, identify the condition or evidence that changes the answer. They may be considering different configurations, using different criteria or lacking a decisive observation. Preserve a warranted unresolved result and the next source or observation needed. Do not force agreement to make the session look successful.
 
 Protect the distinction between interaction and professional action. A repairer receiving advice still needs to judge its applicability and satisfy the conditions governing the actual repair. An author owns changes to a draft. A neighbourhood volunteer can propose an action without acquiring authority over other residents.
 
@@ -89,9 +89,9 @@ Make the organiser's contribution visible in the account of the activity: findin
 
 #### CB.2:4.5 - Close the return to the recipient and contributors
 
-Ask the recipient what the exchange enables them to do next. Where practical application is possible, obtain a later response about what was attempted, what happened and what remains uncertain. If application has not occurred, record that limit rather than treating silence as failure or treating a promising answer as a completed result.
+Ask the recipient what the exchange enables them to do next. When the order concerns application, use evidence from the work itself, including use during the exchange. Seek a later response when it can answer an outstanding question. If application has not occurred, record that limit rather than treating silence as failure or treating a promising answer as a completed result.
 
-Return a useful response to the contributor. It may be a short account of how the advice changed the next step, a clarification of what remained difficult, or an explanation that the proposed action could not be tried because a condition was absent. This closes an information gap and can improve the next contribution. It is not a debt requiring the recipient to praise the helper or perform an equal favour.
+Return a response to the contributor when agreed or useful to their next contribution. It may be a short account of how the advice changed the next step, a clarification of what remained difficult, or an explanation that the proposed action could not be tried because a condition was absent. This closes an information gap and can improve the next contribution. It is not a debt requiring the recipient to praise the helper or perform an equal favour.
 
 For a social or shared-interest activity, ask about the experience and whether participants want a next contact. Keep that judgement with them. The organiser cannot infer a valued relationship solely from attendance.
 
@@ -116,7 +116,7 @@ Do not use group size as the sole continuation test. A small group can deliver t
 | Useful result, acceptable burden, and willing continuation | Keep the working arrangement and change only a demonstrated obstacle. |
 | A relevant question, but no willing capable contributor | Revise the request or terms, obtain another supplier, or return the offer to CB.1. |
 | A helpful discussion, but no evidence of application yet | Preserve the useful discussion result and the unanswered application question. |
-| Conflicting advice with no available deciding basis | Return the technical or evidential question to a qualified domain contributor; keep the disagreement intelligible. |
+| Conflicting advice with no available deciding basis | Give the recipient any step and grounds common to the remaining accounts. If a required choice depends on the difference, return the open question to a qualified contributor. |
 | Results depend on organising work that exceeds available support | Reduce scope, redistribute accepted contributions, fund the required work or stop the unsupported promise. |
 | A resource or individual service would answer the recurring need more directly | Use that route and retain only the mutual activity that still adds value. |
 
@@ -187,7 +187,7 @@ A proposed exchange may satisfy the planning conditions while its practical outc
 | Select helpers by visible status alone | Establish their suitability, availability and permission for the specific question. |
 | Treat every answer as equally valid to maintain harmony | Compare the assumptions and domain basis; retain uncertainty or seek a qualified contribution where needed. |
 | The organiser answers, prompts and follows up everything, then declares the community independent | Identify the organising contributions, retain necessary support and test a specific redistribution. |
-| Count a useful discussion as successful application or learning | Obtain the relevant later observation before making the stronger claim. |
+| Count a useful discussion as successful application or learning | Establish who performed the relevant action and under what conditions. Evidence from the exchange itself may suffice. |
 
 ### CB.2:9 - Consequences
 

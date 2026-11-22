@@ -335,7 +335,7 @@ For this correction, the identifier must track the participant for the relevant 
 
 A qualified manual source may support today's contact decision, or the dependent decision may have to wait. The total attendance count can remain usable if it is all the recipient needs and its conditions hold.
 
-Suppose the owner later establishes that names are unique within this cohort. The report can then support this cohort's participant distinction under that premise. The collision counterexample exposes the limitation of a general claim about other cohorts; it does not oblige a redesign of every bounded use. Comparing those claims prevents both an unwarranted release and unnecessary work.
+Suppose the owner establishes that no displayed name is shared by different participants. This settles the question of collisions between people. To group one participant’s work across the period, also establish a stable name or a reliable correspondence between that person’s names. For the contact decision, compare who was expected at each session with evidence of attendance at that session, accounting for possible recording gaps. Adding an enrolled participant who never attended can change the contact list while leaving every attendance record unchanged. When only a count of attendances is required, a complete record with one entry per attendance can suffice. Comparing those claims prevents both an unwarranted release and unnecessary work.
 
 The reusable move was to recover an operation from accessible material, connect its output with a demonstrated use, derive a contrast from the mismatched identities and construct a changed continuation. Neither the receiving criterion nor the alternatives had to be fully specified beforehand.
 

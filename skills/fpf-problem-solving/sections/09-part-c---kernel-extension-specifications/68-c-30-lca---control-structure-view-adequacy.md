@@ -95,7 +95,7 @@ ControlStructureViewNote:
   stopCondition:
 ```
 
-Use `rateBandRef?`, `controlLayerRelationRef?`, and `externalityBoundaryRef?` only when that object or relation changes the control-structure use. Otherwise one control relation and its feedback-closure state can answer the question; name a further pattern only if its contribution is needed. Generic stratification labels stay with `C.30.STRAT` until a control-specific relation is recovered.
+Use `rateBandRef?`, `controlLayerRelationRef?`, and `externalityBoundaryRef?` only when that object or relation changes the control-structure use. Read the feedback-closure state for the selected return path, operating configuration and interval. One control relation and its feedback-closure state can answer a bounded question; name a further pattern only if its contribution is needed. Generic stratification labels stay with `C.30.STRAT` until a control-specific relation is recovered.
 
 When a recovered control-layer relation is used to justify decomposition, substitution, or design reliance, recover the inter-layer assumption-guarantee relation or mark the control-layer relation as orientation only. `interLayerControlRelationRefs?` is used only when the relation is already control-specific and is used for decomposition, substitution, design reliance, safety, or stability claims.
 
@@ -219,6 +219,8 @@ SafetyLossControlStructureNote:
 
 The note gives a safety-triggered architecture move: find the loss-control structure, controlled process or plant, constraint, foreseeable misuse, operational design scope, and action-relevant boundary. It does not replace the generic control-structure view and does not replace evidence, assurance, gate, causal, dynamics, or temporal claims.
 
+#### C.30.LCA:4.1 - Interpret control relations and the claims they support
+
 **Control-participant interpretation.**
 
 | Source label | FPF recovery |
@@ -239,9 +241,9 @@ If a dated Work occurrence involving an episteme is claimed, recover the perform
 
 **Use of a mathematical model.** A proof can settle the response of the modeled loop for all disturbances and operating conditions covered by its assumptions. To apply that proof to the installed loop, identify the operating mode and check the feedback path, plant response and timing on which the conclusion depends. A successful trial can establish the response in that trial. C.29 handles the transfer, A.3.3 the dynamics, C.27.TA and C.27 the temporal claims, and C.28 a claim about the effect of changing the controller.
 
-**Nesting and scale rule.** When nested control affects latency, stability, observability, accountability or assurance, recover the affected relation and the bounds needed for that use. Retain a scale-audit reference only when the receiving rule calls for it; nesting alone requires no additional record.
+**Nesting and scale.** Identify the property at issue and which control relations could produce it. A regulator can use feedback while a supervisor supplies a fixed reference. For a claim of supervisory control, show how the reference, limit or operating mode set by the supervisor governs the regulator’s action. For supervisory feedback, also trace the observation returned to the supervisor and how it can affect that setting. Several regulators can produce a joint response through their interactions and shared limits. Trace these when they account for the behavior of the whole. Recover the bounds needed to judge latency, stability, observability, accountability or assurance, and keep a scale-audit reference when the receiving rule calls for it.
 
-**Worked slice A — a diagram used as proof.** A safety note claims that a plant is safe because the supervisor monitors the lower controller. Recover what the diagram specifies about the observation path. A display may show measurements even when commands run on a timer. To establish feedback in one episode, trace a measurement used in choosing a command, the applied command, and the observation of its effect. That trace can confirm feedback for the episode. To assess safety, name the hazard and operating conditions and establish how the response addresses them.
+**Worked slice A — a diagram used as proof.** A safety note claims that a plant is safe because the supervisor monitors the lower controller. A display can show measurements even while commands run on a timer. For feedback between the supervisor and the lower controller in one episode, establish what the supervisor observed about the lower controller, how the rule or judgement in use depended on that observation, and which resulting influence reached the lower controller. A timestamp can fit both a fixed schedule and an observation-dependent rule. Records of the input and decision can distinguish them even when both would issue the same command. A claim about the physical effect of that command needs evidence of the plant response. To extend the feedback claim to another operating mode, check the signals available in time, the rule enabled in that mode and the return to the controller. To assess safety, identify the hazard and establish how the response addresses it under the conditions at issue.
 
 Use the applicable safety pattern for the safety claim, `B.3` only for a named assurance claim, `A.10` for bounded source-to-use reliance, `G.6` for citable provenance paths, `C.27.TA` for temporal aspects and rate bands, `C.27` for authored temporal-claim adequacy, and `A.3.3` or the applicable dynamics pattern for dynamics or stability.
 

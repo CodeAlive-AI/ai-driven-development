@@ -134,24 +134,17 @@ unaffected claims. This work can remain within the existing data-management arra
    a description of a selected organization of relations concerns a `U.Structure`. Distinguish an individual
    from its kind, one selected structure from another, and an actual configuration from a possible-future
    candidate.
-3. **Select the description uses.** Choose the description epistemes needed for those claims,
-   and state each description's use.
+3. **Select descriptions at the resolution the question needs.** For a claim about a component, the installation or their interaction, ask which admissible states the description treats alike. Could they require different action or different grounds for the same decision? Expose the relevant difference in that description or obtain it through a qualified relation to another source. If the same supported answer holds across those states, the coarser account suffices. A drawing of a smaller part is not thereby a refinement of a model of the whole.
 4. **Identify each episteme and expression.** Record claim content, `EntityOfConcern`, effective reference
    scheme, edition, source, provenance, modeled interval or effectivity, assumptions, omissions, and relying
    Work. Separately identify any material expression or publication object when its identity changes use.
-5. **State interpretation and model-use conditions.** As needed by the decision, name conditions such as units,
-   coordinate frames, scales, tolerances, abstractions, parameter sources, boundary conditions, solvers or
-   inference procedures, and validation limits. State the project's interpretation separately from language rules
-   and tool capabilities.
+5. **State how one model can support the decision made with another.** Establish the units, frames, assumptions, boundary conditions, inference procedures and limits used in the comparison. For the same question, identify which admissible cases one model combines or excludes. A limit on every case in a wider model also bounds the narrower set when the correspondence preserves the measured property. A design possible only in the wider set still needs an admissible realization. When the models concern different subjects, establish the interface, composition or other relation that carries the particular conclusion between them.
 6. **Recover cross-description relations.** For every material link, state its participants and relation:
    same subject under different schemes; part or interface correspondence; claim dependency; source derivation;
    configuration applicability; transformation from one expression to another; test-to-claim assessment; or
    another direct relation. If the project lacks a governed relation kind or evidence for that claim, record an unsupported
    correspondence rather than inventing a generic trace edge.
-7. **Check collisions at the claim level.** Compare claims only after subject, configuration, interval, scheme,
-   scale, and tolerance are aligned or their differences are explicit. Classify the result as agreement for the
-   bounded use, an explainable difference, an unresolved contradiction, a missing interpretation, or a missing
-   world-side check.
+7. **Check the claims together for the original question.** Align the subject, configuration, interval, scheme and tolerance. For a fixed design, find one configuration admitted by the relevant descriptions that meets the requirements throughout the commissioned operating envelope. A common configuration for one specified condition can settle a request confined to that condition. A calculation admitting A or B, firmware admitting B or C, and a measurement chain admitting A or C have no common profile. For an installed unit, establish that it has an admissible configuration, or that every configuration still possible for that unit permits the required use. If an operator may adapt, show how the available information and authority permit a workable choice in time for each case. If each independently permitted choice must work, cover their allowed combinations. Report the resulting decision, conflict or missing distinction.
 8. **Check correspondence to realization and observation.** Identify which claims describe candidates or
    intentions and which concern actual configurations or occurrences. Connect design claims to relevant
    observations—for example, from realization, integration, trials, commissioning, operation, or affected
@@ -189,7 +182,7 @@ existing results that supply the content below. Add what is missing or must chan
 | expression and publication entries | Material expressions, publication occurrences, forms, and carriers whose identities change use; identify each separately from the source episteme. |
 | model-use conditions | Purpose, scale, units, coordinates, tolerances, boundary conditions, parameter sources, interpretation, calculation or inference Method, and validity limits needed by this use. |
 | relations | Direct same-subject, part, interface, configuration, source, transformation, evidence, or other governed relations; unsupported correspondence hypotheses are marked as such. |
-| collision results | Claim-level agreements, explainable differences, unresolved contradictions, missing interpretations, and missing world-side checks. |
+| comparison results | Jointly applicable claims for the required configuration or decision, explainable differences, contradictions, missing interpretations and missing observations. |
 | realization correspondence | Actual configuration or occurrence, observation/evidence basis, and the decision claim it can confirm, weaken, or reopen. |
 | maintenance assignments, when needed | For continued uses needing maintenance, the assigned Agents, their system-role assignments, authority, capability, Work, and acceptance conditions for producing, checking, changing, or retiring description uses. |
 | return and refresh | Receiving Work and the Agents assigned to it, accepted reliance limits, current gaps, triggering observations, and the affected accounts or decisions to reconsider. |
@@ -296,7 +289,7 @@ This pattern resists four recurrent source and practice biases.
       identities change reliance.
 - [ ] Every material “trace” is resolved to a relation or marked as an unsupported correspondence.
 - [ ] Cross-description comparison aligns or explicitly distinguishes subject, configuration, interval,
-      reference scheme, scale, and tolerance.
+      reference scheme, scale, and tolerance. For a decision relying on several descriptions, their combined applicability at the required scope is established or its limit identified.
 - [ ] Claims about physical realization, benefit, safety, compliance, and acceptance use their own evidence;
       description consistency supplies only its stated comparison result.
 - [ ] AI-generated, transformed, or summarized descriptions retain source provenance, subjects, check
@@ -304,8 +297,7 @@ This pattern resists four recurrent source and practice biases.
 - [ ] For continued uses needing maintenance, the Agent, assignment, capability, authority, triggering
       observations, and refresh Work are stated for the affected entries.
 
-- [ ] The returned account names the accepted reliance limits, any contradictions, gaps or unsupported relations, and the
-      affected decisions or accounts to reconsider.
+- [ ] The returned account explains what the descriptions jointly establish for the requested design, installed configuration or operating choice, and identifies any contradiction, unsupported relation or remaining decision-changing uncertainty.
 
 ### SYSE.7:8 - Common Failures and Repairs
 

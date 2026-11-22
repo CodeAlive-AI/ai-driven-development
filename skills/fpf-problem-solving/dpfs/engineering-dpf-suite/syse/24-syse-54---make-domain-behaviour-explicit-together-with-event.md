@@ -66,11 +66,7 @@ operations can repeat as the account changes; the selected depth determines whic
 
 #### SYSE.54:4.1 - Choose the purpose and prepare participation
 
-Distinguish three useful depths. **Big Picture** explores a broad domain or business line to find conflicting
-accounts and important areas for inquiry. **Process Modelling** develops a selected behaviour, including its
-alternative outcomes and people's decisions. **Software Design** asks how supporting software can preserve
-that behaviour through state, consistency and interface boundaries. They can be used independently. A broad
-workshop need not finish with services; a small design session need not repeat a broad exploration.
+Choose among three EventStorming purposes. **Big Picture** locates important disagreements across a domain or business line. **Process Modelling** explains a selected behaviour, its alternatives and the decisions responsible for them. **Software Design** asks how state, consistency and interface boundaries can support that behaviour. These choices concern different questions. Within any of them, choose which events, parts of the work and timing or state distinctions the answer needs. A single transition can matter to a domain-wide decision. A common rule can settle a local software question.
 
 State the practical question and initial scope, the current or proposed situation, and the decision or learning
 that would make the session useful. Invite the people who know the consequential perspectives, including
@@ -93,11 +89,7 @@ ambiguous note, ask which occurrence it means and who would notice a consequenti
 booking” names an activity; “booking recorded” names an occurrence; “booking is active” names a state that
 can persist. Preserve separate interpretations until examples show whether they are the same.
 
-Arrange events in a plausible temporal account. Use separate lanes for cases or simultaneous threads when
-needed. Fix gross differences of granularity: a whole service completion and a keystroke do not explain the
-same level of behaviour. Keep the level that exposes the working difficulty, allowing a detailed local
-branch where it matters. Mark a **hot spot** for a disputed rule, missing link, risk or unanswered question.
-Attach it to the affected behaviour so that it can be investigated, rather than collecting detached worries.
+Arrange events in a plausible temporal account. Use separate lanes for cases or simultaneous threads when needed. Before grouping events as one completion, ask whether two histories bearing that label call for different action or explain the outcome differently. Open the group only as far as the distinction requires, and connect the constituent occurrence back to the completion it could affect. Events in different services may supply one another without belonging to the same work. Mark a **hot spot** at the affected behaviour for a disputed rule, risk or missing link.
 
 Walk through the account aloud with a narrator and participants who can correct it. Ask where a thread
 starts, what interrupts it, what counts as a useful or failed ending, and what happens beyond the initial

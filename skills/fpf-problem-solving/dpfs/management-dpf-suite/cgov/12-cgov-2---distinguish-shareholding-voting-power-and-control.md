@@ -7,7 +7,7 @@
 
 Use this pattern when a proposed vote, financing, appointment or change of ownership depends on who can receive returns, cast votes, give consent or influence the outcome. It helps a governance practitioner explain those relations for a particular corporation and matter.
 
-Begin with the relevant holders and the rights attached to their interests. A current, sufficient ownership account can be used directly. The first useful result is an answer such as “the founder receives 40% of this distribution but has 400 of the 460 votes on this resolution; this borrowing also requires a separate class consent.”
+Begin with the relevant holders and the rights attached to their interests. A current, sufficient ownership account can be used directly. The first useful result is an answer such as “the founder is entitled to 40% of this distribution and holds 400 of the 460 votes on this resolution. This borrowing also requires a separate class consent.”
 
 ### CGOV.2:2 - Problem
 
@@ -37,7 +37,7 @@ Keep the source and uncertainty with a contested right. Reuse sufficient establi
 
 #### CGOV.2:4.3 - Calculate the relevant entitlement and possible outcome
 
-For the chosen matter, apply its voting or allocation rule to eligible rights. Use the rule's denominator: all eligible votes, votes cast, a class, persons, or another defined basis. Include thresholds, quorum and exclusions when they affect the question. Do not infer an actual passing vote from a count of possible votes; attendance, casting and any additional conditions may remain to be established.
+For the chosen matter, apply its voting or allocation rule to eligible rights. Use the rule's denominator: all eligible votes, votes cast, a class, persons, or another defined basis. Include thresholds, quorum and exclusions when they affect the question. Do not infer an actual passing vote from a count of possible votes; attendance, casting and any additional conditions may remain to be established. To report an adopted outcome, use the competent organ’s act or evidence sufficient under its rules. A certified result for the relevant class can settle passage without a roll call. A vote cast under instruction may establish how the represented interest was voted. A claim about the representative’s own preference requires grounds for that different question.
 
 Follow indirect relations one link at a time. Identify what each link transmits. Proportional economic participation, voting instruction, nomination and a veto are not interchangeable operations. When a coalition matters, distinguish an enforceable or otherwise established agreement from an assumed willingness to cooperate.
 
@@ -60,9 +60,9 @@ Consider a constructed corporation whose supplied, legally applicable terms are:
 | Founder | 40 class A | 10 per share | One equal unit per share in an ordinary distribution |
 | Investor | 60 class B | 1 per share | One equal unit per share in the same distribution |
 
-The founder has 40% of the units in that distribution but 400/(400 + 60), approximately 86.96%, of the eligible votes on this resolution. The investor has 60% of those economic units and approximately 13.04% of those votes.
+The founder has 40% of the units in that distribution but 400/(400 + 60), approximately 86.96%, of the eligible votes on this resolution. The investor has 60% of those economic units and approximately 13.04% of those votes. These fractions determine the entitlements for the stipulated distribution. To say how much a holder received, establish what distribution was made and what reached the holder.
 
-Now include the supplied term that new borrowing above 50 requires class B consent. A proposed borrowing of 80 falls within it. Even if the general resolution receives enough votes, its passage alone leaves that consent unresolved. Use CGOV.3 also to establish which corporate organ may authorize the borrowing. The founder's voting weight answers neither question by itself.
+Now include the supplied term that new borrowing above 50 requires class B consent. A proposed borrowing of 80 falls within it. Even if the general resolution receives enough votes, its passage alone leaves that consent unresolved. Use CGOV.3 also to establish which corporate organ may authorize the borrowing. The founder's voting weight answers neither question by itself. If the sole class B holder votes in favour and that vote also counts as class consent, it supplies the class consent and contributes 60 votes to the general tally. Whether the general resolution passed depends on the whole tally and its rule. One certified record may establish both outcomes.
 
 These are assumed terms. For a live matter, establish the rights that apply to the holdings and corporate act under the governing rules.
 
@@ -70,7 +70,7 @@ These are assumed terms. For a live matter, establish the rights that apply to t
 
 A person holds 60% of Parent, which holds 60% of Subsidiary. Assume the chosen distributions pass proportionally through both companies without deductions, preference rights or other changes. The person's indirect participation in that distribution is 0.6 × 0.6 = 36%.
 
-The calculation establishes economic participation under those assumptions. To answer whether the person can cause Subsidiary to make a particular decision, recover the voting, appointment, delegation and duty relations along the path. Even a demonstrated ability to determine shareholder votes at both companies leaves the powers and duties of their boards to be examined for the proposed act.
+The calculation establishes economic participation under those assumptions. To decide whether the person can cause Subsidiary to act, follow the power the governing rules assign for this act. The answer can turn on a direct appointment right, a vote or a power reserved to the board. When the decision goes through several bodies, carry the required authority, votes and any separate consent through those bodies. A percentage of distributions alone does not establish that path.
 
 ### CGOV.2:6 - Bias-Annotation
 

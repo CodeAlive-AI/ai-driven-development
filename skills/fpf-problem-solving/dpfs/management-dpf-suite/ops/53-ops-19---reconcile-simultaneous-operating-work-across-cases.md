@@ -7,7 +7,7 @@
 
 Use this Method when several kinds of operating Work are present together and a locally sensible choice can harm another case or service, worsen an operating result, or move a result into a horizon where its consequence changes. Typical moments include keeping a busy resource utilized while incident coverage is thinning, completing one case sooner by moving delay to a shared acceptance queue, or starting improvement Work while current commitments and human recovery still need protection.
 
-The first useful result is a short cross-scale operating account and decision. It names the local choice, the simultaneous Work and relations on which it depends, the conflicting results and measures on their own subjects, feasible alternatives, authority and protection conditions, the selected reconfiguration or bounded continuation, and the condition that reopens the decision. It may instead return one exact unresolved conflict when a necessary result or authority is missing.
+The first useful result is a short cross-scale operating account and decision. It names the local choice, the simultaneous Work and relations on which it depends, the conflicting results and measures on their own subjects, feasible alternatives, authority and protection conditions, the selected reconfiguration or bounded continuation, and the condition that reopens the decision. For a feasibility inquiry the answer can also be that the requested combination is impossible under the given terms. Show what excludes every permitted arrangement. A missing fact or authority can instead leave the choice open.
 
 Start here only when the decision genuinely crosses subjects, operating scopes, or time horizons. Use `OPS.8` for one queue-policy question, `OPS.9` for one current-constraint question, `OPS.10` for one capacity-and-service comparison, and `OPS.11` for one interacting-structure coordination question that those patterns can settle directly. Use current `C.32.MWA.PP` when the primary question is comparison of Method or candidate-account co-use rather than reconfiguration of continuing operating Work. Use `OPS.16` when the current object is one operating Method change, and `OPS.20` when the current claim concerns continuation or change of enacted practice in a practitioner population.
 
@@ -17,7 +17,7 @@ Continuing operation brings several Work wholes and decision structures together
 
 A local measure sees only its own subject and scale. Rig utilization can rise while case completion, cash timing, incident resilience, or participant recovery worsens. Faster case admission can overload inspection or release. A change programme can meet its milestone while the continuing service loses a protected condition.
 
-Here *scale* means the subject, operating scope, or time horizon on which a result is claimed. It does not imply a universal hierarchy of team, department, organization, or enterprise levels. Select the scales and relations needed to make or justify the current operating choice.
+Start with the operating result in question. For each kind that matters, identify the whole, its constituents and how they jointly affect the result. Distinct jobs can use the same equipment subsystem even when the jobs belong to separate orders. Relate the composition of the equipment to the capacity the jobs can use. The work in an order and the parts of the equipment have their own composition scales. A time horizon fixes the period considered. The population or service boundary fixes which orders or recipients count. A case, a shift and a month can refer to the same work under different questions. Before using a figure for the whole, establish which constituent results and shared conditions determine the decision and which distinctions the model must retain.
 
 ### OPS.19:2 - Problem
 
@@ -39,7 +39,7 @@ An exhaustive enterprise model can describe many structures while leaving the pr
 
 ### OPS.19:4 - Solution
 
-Start with the local choice and the simultaneous Work it affects. Reuse an account that identifies the relevant relations, protection conditions and consequences across cases or horizons. If it leaves a consequential gap, establish the missing relation or identify the limit it creates. Use existing arrangements where adequate, construct a missing alternative when needed and compare materially different arrangements. Return a reconfiguration, a bounded continuation or the unresolved conflict within the available authority.
+Start with the local choice and the simultaneous Work it affects. Reuse an account that identifies the relevant relations, protection conditions and consequences across cases or horizons. If it leaves a consequential gap, establish the missing relation or identify the limit it creates. Use existing arrangements where adequate, construct a missing alternative when needed and compare materially different arrangements. Return the arrangement that can be justified or the grounds for finding the requested combination infeasible. If the answer depends on an unresolved condition, identify it. An authorized party makes the operating decision when one is due.
 
 #### OPS.19:4.1 - Fix the operating question and exposed local choice
 
@@ -74,7 +74,7 @@ A compact working account can use these positions:
 | structures used in the decision | the cases, queues, constraints, resources, commitments, accounts, authority and descriptions whose relations matter to the choice or its conditions |
 | conflicting results | each result or measure with its subject, scale, horizon, evidence, and protected condition |
 | alternatives | materially different feasible arrangements, including bounded continuation and a truthful stop |
-| return | authorized decision or exact unresolved conflict, together with its conditions and reopen trigger |
+| return | supported assessment or authorized decision, the conditions it covers and what would justify reopening it |
 
 #### OPS.19:4.4 - Keep results and measures on their own subjects
 
@@ -90,7 +90,7 @@ Compare the materially different arrangements already available, including the p
 
 For every alternative, expose where it moves delay, burden, evidence risk, cash need, service exposure, quality risk, or recovery cost. Ask which participant or operating scope receives that moved consequence and whether the required condition or authority is current there.
 
-Preserve protected conditions before seeking a local gain. An alternative that requires unavailable access, unsupported overtime, missing clinical authority, consumed incident margin, or evidence from the wrong configuration is not yet feasible. Return the exact missing result instead of treating the alternative as available.
+Preserve protected conditions before seeking a local gain. An alternative that requires unavailable access, unsupported overtime, missing clinical authority, consumed incident margin, or evidence from the wrong configuration is not yet feasible. Identify whether a condition is known to fail or still lacks evidence. A known incompatibility may rule out the alternative or, when it applies across the full range, the requested combination.
 
 #### OPS.19:4.6 - Apply authority, commitment, evidence, and currentness conditions
 
@@ -102,11 +102,12 @@ When a required result is unavailable, decide only what can proceed without it a
 
 #### OPS.19:4.7 - Return the cross-scale operating decision
 
-Return one of three useful results:
+Determine which conclusion the evidence and authority support for the requested work.
 
 1. **Cross-scale reconfiguration.** Change which Work starts or is held, or change allocation, sequence, support, or another operating relation so the material results can coexist under current authority and conditions.
 2. **Bounded continuation.** Keep the current arrangement for a named scope and interval when its consequences and protections justify doing so. A proposed change may consume a protected reserve or offer no justified improvement.
-3. **Exact unresolved conflict.** Name the incompatible results, missing evidence or authority, what can still proceed, and the result that must return before the decision can close.
+3. **Infeasibility or a justified refusal.** When the agreed protections and available means exclude every permitted arrangement, return that conclusion with the reason. An effective refusal can close a new request. For an existing obligation, determine any notice, remedy or authorized revision still due.
+4. **Unresolved conflict.** If a needed fact, choice or authority is open, name it, its consequences and any work that can already proceed.
 
 Record the supported outcome, its conditions, preserved results and what would reopen it. Identify any deferred demand and who is responsible for a remaining decision. Do not infer implementation, later effectiveness, a changed Method, or cultural continuation from the decision.
 
@@ -118,7 +119,7 @@ The practitioner should be able to state the conflict, alternatives, decision, a
 
 Recognition is the ability to spot when a local operating choice is exporting harm or consuming another scope's protected condition. Assurance requires supported Work and relation claims, qualified consequences, current authority, and explicit evidence limits.
 
-The operator can identify the consequences across cases or horizons, compare feasible arrangements under their protections and return the authorized action or unresolved conflict.
+The operator can assess the combined consequences across cases or horizons, establish whether a permitted arrangement can meet the requirements, and identify any uncertainty that affects the answer. An assessment can be delivered before the authorized party decides what to do.
 
 ### OPS.19:5 - Archetypal Grounding
 
@@ -179,9 +180,9 @@ The practitioner compares the locally faster generation arrangement with alterna
 5. Are results and measures stated on their own subjects, scales, horizons, schemes, and evidence bases?
 6. Do the alternatives differ materially and expose moved delay, burden, evidence risk, cash, service exposure, quality risk, or recovery cost?
 7. Are protected conditions, commitments, authority, and currentness checked before an alternative is called feasible?
-8. Does the return clearly state reconfiguration, bounded continuation, or exact unresolved conflict?
+8. Does the return state the reconfiguration, bounded continuation, justified negative decision or remaining unresolved question that the evidence supports?
 9. Are downstream Method-trial and cultural questions left to `OPS.16` and `OPS.20` under their own entry conditions?
-10. Can the receiving practitioner state the supported action or unresolved conflict, its scope and what would reopen it?
+10. Can the receiving practitioner use the conclusion for the commissioned assessment or action and identify the conditions under which it applies?
 
 To recognize the situation, identify the material conflict and the operating scopes it connects. Assurance requires the obtaining relations, evidence reach, protection conditions, and authority used by the selected decision.
 

@@ -23,7 +23,7 @@ Identify the asset, installed configuration, required functioning and decision h
 
 Keep observed, inferred and forecast claims separate. State what changed in the observations, what the applicable diagnostic evidence supports and what future-duty assumptions a forecast requires. If the decision depends on the mechanism, obtain a specialist’s diagnosis. An alarm can trigger the inquiry.
 
-Recover the relevant service-performance evidence. The useful content from [OPS.18](../ops/52-ops-18---control-operating-quality-and-reliability.md) might be an affected population, observed loss, quality result or reliability evidence, with its requirement and window. Check the condition evidence separately before drawing a conclusion about the asset’s condition.
+Recover the relevant service-performance evidence. The useful content from [OPS.18](../ops/52-ops-18---control-operating-quality-and-reliability.md) might be an affected population, observed loss, quality result or reliability evidence, with its requirement and window. Check the condition evidence separately before drawing a conclusion about the asset’s condition. Locate each reading in the service system. The district meter may establish the service delivered to the district when the contribution of a particular unit is unknown. If the decision concerns that unit, determine what links its operation to the reading: a branch measurement, a known isolation of the standby unit or a qualified account of the flows can supply the missing relation.
 
 Relate condition and performance to the proposed options. Identify what contribution is at risk, the consequence of delay and the supported intervention effect. Distinguish a condition ranking from risk: risk additionally depends on the exposure, uncertainty and consequence needed for this decision.
 
@@ -45,7 +45,7 @@ Easily measured signals can dominate attention while poorly observed failure mec
 
 ### EAM.5:7 - Conformance Checklist
 
-Do the records concern the same asset and duty? Are observation, diagnosis, forecast and service result distinguishable? Does the inferred consequence follow from applicable evidence, and is the option's qualification still valid?
+What do the records establish about the unit, its configured duty or the service supplied by the enclosing system? Where the decision uses their connection, what establishes it for this configuration and period? Does the supported consequence change the proposed option or its qualification?
 
 ### EAM.5:8 - Common Anti-Patterns and How to Avoid Them
 

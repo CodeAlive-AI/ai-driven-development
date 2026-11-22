@@ -51,7 +51,7 @@ Choose the conditions that determine the next permitted action, recovery or stop
 | A proposal has malformed or unsupported arguments | Return the binding defect through SYSE.42 before execution. |
 | An invocation may have effects but its response is missing | Preserve the identity needed by the contract. Recover an available outcome through SYSE.26 and SYSE.42, or use a permitted repeat qualified for all remaining states. Hold a repeat whose safety depends on an unresolved effect. |
 | The actual completion predicate is satisfied | Return the observed result in a form the receiver can use. |
-| Budget is exhausted or no permitted useful continuation remains | Return the unfinished condition and recoverable state; do not label the task complete. |
+| The task still lacks a required result and its budget is exhausted or no permitted useful continuation remains | Return the supported work and identify what is unfinished. If the last permitted operation supplied the complete result, deliver it. |
 
 When further reasoning or tool work needs adaptive allocation, consume SYSE.51's rule before another calculation, source inspection, sample, branch or model call. Pass it the actual intermediate result and remaining resources; enforce its completion reserve and sufficient-result stop. A cap alone does not choose a useful move before exhaustion.
 

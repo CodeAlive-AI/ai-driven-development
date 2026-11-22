@@ -92,7 +92,7 @@ The employer's preference for continuity can dominate the person's aims, and app
 - Is the proposed transition grounded in the actual relation, circumstances, aims and obligations?
 - Are clinical or safety assessments obtained from qualified suppliers? Does serious functional difficulty prompt an appropriate response even when output remains satisfactory?
 - Are required constraints distinguished from discretionary preferences and respected in actual work and terms?
-- Does the arrangement have obtainable tasks, support, coverage, access and effective provision?
+- Does each affected party receive what the transition requires? On return, establish suitable work, support and access. During agreed leave, establish relief from the duties and provision for work that must continue. On departure, establish the required transfers or closure of duties and access.
 - Are private information and personal/corporate agent mandates bounded by the actual purpose and permissions?
 - Can change reopen the affected conditions, and can a supported exit remain a legitimate result?
 

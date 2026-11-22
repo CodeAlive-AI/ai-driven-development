@@ -41,7 +41,7 @@ State whether the result is a random object, a subset, an expectation, an event 
 
 Describe access: an indexed collection, a one-pass stream, evaluable weights, a generative operation, or neighbors of a current state. An evaluable probability density does not necessarily provide a cheap sampler. An unnormalized density does not supply its normalization constant.
 
-If the inputs describe observations, MMP.7 supplies the relevant recording and inclusion law. Sampling uniformly from recorded rows remains different from sampling uniformly from the people, events or other objects those rows describe.
+For observations, choose the sampling unit from the intended use and show that the procedure gives it the promised probability. If each recorded event is to be equally likely, a uniform draw of rows works when every event has the same positive number of rows and the selected row identifies the event to return. With unequal multiplicities, a uniform row gives an event with three rows three times the probability of an event with one row. Grouping by a reliable event identity and drawing uniformly from the groups is one repair. All events in a period form a different population if some can leave no record. MMP.7 supplies the recording and inclusion law when that connection matters. For several draws, construct their joint law too. Sending both recipients the outcome of the same uniform draw gives each a uniform result. With more than one possible outcome, it does not give them independent draws.
 
 #### CMP.9:4.2 - Construct the random operation and its output law
 
@@ -91,9 +91,9 @@ A changed inclusion rule, target statistic, proposal, random source or stopping 
 
 #### CMP.9:5.1 - Keep one uniform record from a stream of unknown length
 
-Store the first record. At record t, replace the stored record with probability `1/t`; otherwise retain it. Use a uniform integer in 1 through t to make this decision.
+Store the first record. At record t, use a fresh uniform integer in 1 through t to replace the stored record with probability `1/t`. The guarantee below concerns each fixed input prefix. It also applies conditional on a completed stream when the input and its endpoint are independent of the sampler's random choices.
 
-After t records, the new record has probability `1/t`. Every earlier record had probability `1/(t-1)` before this step and survives with probability `(t-1)/t`, giving `1/t` as well. This establishes the invariant inductively. The procedure needs one record, a counter, and one update decision per arrival; counter and record representation costs remain visible.
+After t records, the new record has probability `1/t`. Every earlier record had probability `1/(t-1)` before this step and survives with probability `(t-1)/t`, giving `1/t` as well. This establishes the invariant inductively for each fixed prefix. If a sender ends a stream of distinct records A, B immediately after the second record whenever A is retained, and otherwise sends C, every observed stream of length two ends with A retained. Uniformity at a fixed prefix alone cannot establish uniformity conditional on this stopping event. A different stopping policy can preserve uniformity if its effect is accounted for. The procedure needs one record, a counter and one update decision per arrival. Counter and record representation costs remain visible.
 
 For the stream A, A, B, the resulting value is A with probability 2/3 and B with probability 1/3. This is correct uniform sampling of record positions. If the new request is uniform sampling of distinct values, the old invariant answers a different question. One construction keeps a set of already seen values and applies the same update only on a first occurrence. That requires storage for the distinct-value set or another algorithm with its own access and error assumptions.
 

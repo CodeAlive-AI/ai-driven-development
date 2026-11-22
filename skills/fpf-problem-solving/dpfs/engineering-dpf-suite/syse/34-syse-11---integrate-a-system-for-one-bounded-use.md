@@ -10,12 +10,8 @@ this pattern develops the bounded move from available contributions to a configu
 one receiving use. It includes choosing the integration progression, correcting discovered incompatibilities
 and assessing the resulting whole.
 
-Begin with the actual System, its current configuration and the needed use. Use any applicable integration strategy
-or assessment already available. A strategy can supply the grouping, assembly and check order directly. A
-current qualified result covering the same configuration and use can finish the assessment directly; neither
-a new trial nor another record is required merely to use this pattern. If new integration Work is needed, choose
-a sufficient joint change, expose its consequential interactions early and perform the Work. Assess the
-resulting System using suitable existing observations and any additional observations the use requires.
+Begin with the use and what already exists. For a change, identify the existing System and its current configuration. For a first assembly, identify the existing constituents, the intended whole and the relations that must first obtain for that whole to exist. Use any applicable integration strategy or assessment already available. A strategy can supply the grouping, assembly and check order directly. A
+current qualified result covering the same configuration and use can finish an assessment directly. If the order requires a new assembly, connection or witnessed run, establish which occurrence must be performed and what the authorized recipient can accept. A ready configuration can settle its own fitness in advance. For integration work still needed, choose a sufficient joint change, expose consequential interactions and assess the resulting System with evidence applicable to it.
 
 The first useful result is a **bounded usability assessment**: an episteme stating what the actual System can
 support, on what grounds, for which configuration, conditions and interval, and with what limits and fallback.
@@ -60,7 +56,7 @@ of the System to assess the bounded use. Make further observations when the asse
 
 Before relying on a claimed increment for a decision, the responsible engineers need answers to these questions.
 
-1. Which actual System and starting configuration are changing?
+1. Which existing System and configuration will change, or from which actual constituents will the first configuration of the intended whole be formed?
 2. Which receiving use, operating conditions, affected Systems, and interval bound the result?
 3. Which changes belong inside the increment—for example, physical, software, description, procedure, or
    interface changes—and which remain alternatives?
@@ -97,16 +93,15 @@ Assess the resulting configuration for the intended use, using a sufficient exis
 
 #### SYSE.11:4.1 - Perform the Move
 
-1. **Name the System and use.** State the actual System, starting configuration, receiving use, affected Systems,
-   operating envelope, interval, required behavior and deciding Agent. Distinguish a demonstrated episode from
-   a claim about later use or continuing availability.
+For an assessment, use sufficient evidence of the configuration and its intended use. It can settle the question before any new integration. Apply the steps concerning assembly, change or a witnessed test when the commission includes that work or the decision still needs it.
+
+
+1. **Name the System and use.** For a continuing System, identify its starting configuration. For a first assembly, identify the actual constituents, intended System and the conditions under which they first constitute it. On completion, establish that the required relations obtained in that assembly. Bound the receiving use, affected Systems, operating conditions, interval, behaviour and deciding Agent. A demonstrated episode supports a claim about later use only with grounds for that extension.
 2. **Recover a sufficient strategy or construct the missing connection.** When a specialist plan is available, check
    that it covers the same starting state, intended configuration, interactions and use. Follow it where it is adequate.
    Where the grouping or progression remains unsupported, use :4.1.1 to connect the needed behavior to the joint
    change, intermediate configurations, integration Work and checks.
-3. **Establish the inputs before relying on them.** Use realization, platform, coordination, configuration and
-   specialist results only for matching subjects, uses and evidence windows. Close an unsupported branch,
-   replace it with a qualified source or retain it as a blocker. A result obtained later was not available to support the earlier
+3. **Establish the inputs before relying on them.** Use realization, platform, coordination, configuration and specialist results within their supported scope. If an input concerns a different configuration, show what connects the pertinent interface, load or other property to this use. Retain a missing consequential connection as a blocker or use another qualified source. A result obtained later was unavailable to the earlier
    decision. Resolve conflicting demands on shared equipment, access or people before scheduling both uses.
 4. **Prepare the next integration and its test of progress.** Name the actual items, relations and starting
    conditions, available means, expected behavior, unacceptable result, stop and practical fallback. Select the
@@ -223,7 +218,7 @@ content. The following are questions to keep answerable, not a mandatory second 
 
 | Content | What the receiving engineer needs |
 | --- | --- |
-| System and use | Actual System, starting and resulting configurations, receiving use, affected Systems, conditions, interval and deciding Agent. |
+| System and use | Existing System and its starting configuration, or constituents and first-assembly criteria; the actual resulting System and configuration, receiving use, affected Systems, conditions, interval and deciding Agent. |
 | Boundary and progression | Why the included changes belong together, the selected intermediate configurations and checks, conditions for proceeding, actual fallback and stop. |
 | Supplied inputs | Results relied on, their applicability and evidence windows, and any unresolved blocker or qualified substitute. |
 | Work and actual change | Dated Work, Agents, Methods, subjects, results, transformations and obtaining relations; discrepancies, corrections and their resulting configurations. |
@@ -366,10 +361,10 @@ receiving Agent selects the use and any authority relation remains separately su
 
 ### SYSE.11:7 - Conformance Checklist
 
-- [ ] One actual System, starting configuration, bounded use, required behavior, conditions, interval and deciding Agent are named.
-- [ ] The joint change and progression have a reason grounded in the needed behavior and interactions, or a sufficient existing strategy supplies that reason.
-- [ ] Inputs match the subjects, uses and evidence windows and were available before the Work or decisions that relied on them.
-- [ ] The actual integration and any correction establish the conditions for the next dependent step; a partial result is not overread as whole-use fitness.
+- [ ] The existing System and its starting configuration, or the actual constituents and criteria for first forming the whole, are identified. The usability assessment concerns the actual resulting System for the named use, conditions, interval and deciding Agent.
+- [ ] Where integration is required, the needed behavior and interactions justify the proposed joint change and progression. An existing strategy can supply those grounds.
+- [ ] Inputs apply to the receiving subjects, uses and evidence windows directly or on a justified correspondence, and were available before the Work or decisions that relied on them.
+- [ ] A commissioned assembly, change or witnessed operation is accounted for under its acceptance terms. Where integration or correction was needed, evidence of the actual change establishes what the next step can rely on. An existing result can complete a separate assessment within its scope.
 - [ ] Work, transformation, actual configuration and the claims in its description remain distinguishable.
 - [ ] The assessment explains what supports the whole-use claim and any extension beyond observed conditions, using a sufficient direct result or SYSE.10.
 - [ ] Fallback is feasible for its own supported use; unresolved discrepancies and unsupported claims have a concrete stop or return.

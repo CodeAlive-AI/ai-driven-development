@@ -41,7 +41,7 @@ Choose the combined answer. Recover the meaning and conditions of each consequen
 
 #### MMP.18:4.1 - Identify what the models share and what they exchange
 
-Start from the required result and trace which component supplies each quantity it uses. Recover the quantity's referent, unit and reference point, as well as any time interval, spatial region or probability conditioning that changes its meaning.
+Start from the required result and trace which component supplies each quantity it uses. Recover the quantity's referent, unit and reference point, as well as any time interval, spatial region or probability conditioning that changes its meaning. Choose the component boundary from that use. Try varying the organization of the parts while keeping their local outputs fixed. Could a route, shared input or timing relation change the whole result? If so, include that relation. A model that supplies an input to another can describe the same physical system from a different viewpoint. The exchange of model results alone establishes no physical part–whole relation.
 
 Distinguish a shared quantity from a transferred result. If both models describe the same unknown offset, retain one common offset or a justified relation between their coordinates. If one supplies an estimated offset to the other, specify whether the receiving calculation uses its uncertainty or only an approximation by a point value.
 
@@ -81,6 +81,8 @@ Use a coupled approximation only within the conditions supporting it. If feedbac
 
 Combine the component relations and interface conditions for the same modeled situation. Shared boundary values and initial conditions must satisfy that joint formulation. Redundant equations can express a useful invariant; contradictory equations expose incompatible assumptions or a failed identification of the shared quantities.
 
+Compare the jointly attainable outcomes with the outcomes allowed by the proposed simplification. Computing each range separately can admit combinations that no common state permits. In the two-buffer account in MMP.Reference:4.1, each amount after two cycles can lie between zero and 6.4, yet their sum is exactly 6.4. Treating the two ranges as independent would admit a total of 12.8 and lose the guarantee that a receiver of capacity 7 suffices. Such an enlarged range can still give a sufficient upper bound. To claim an overload is possible, exhibit an attainable joint case or give an argument establishing one.
+
 Feedback can require a joint solve. Suppose the selected same-instant relations are x=1+y and y=x/2. Substitution gives x=2 and y=1. Starting from y=0 and calling the first model once, then the second, returns x=1 and y=0.5; those values fail x=1+y. That call order is only one unfinished computation of the joint relation.
 
 Choose between a common solve and separate interacting computations from the available capabilities and error needed by the answer. For time-dependent components, specify which inputs are held, interpolated or extrapolated between communication times, how events are synchronized, and whether a proposed step can be repeated. These choices describe the computation. To attribute a delay or sampling pattern to the subject, give its basis there or state it as a subject assumption.
@@ -89,7 +91,7 @@ Compare the obtained exchange against the joint conditions and the required resu
 
 #### MMP.18:4.5 - Combine uncertainty without duplicating information
 
-When components are probabilistic, construct a joint law for the common quantities and the component-specific quantities. Marginal distributions alone generally leave dependence unspecified. Obtain the needed dependence from the modeled mechanism, a conditional law or an explicit additional assumption.
+When components are probabilistic, identify the joint event or quantity the recipient needs. Construct enough of the dependence between shared and component-specific quantities to obtain or bound it. Marginals determine the sum of expectations for integrable contributions regardless of their dependence. A probability that both exceed their limits can depend on their joint law. Use a supported mechanism, conditional law or bound for the dependence that matters.
 
 For components sharing z, one possible factorization is:
 
@@ -97,7 +99,7 @@ For components sharing z, one possible factorization is:
 p(z,u1,u2) = p(z) * p(u1 | z) * p(u2 | z).
 ~~~
 
-It assumes conditional independence of u1 and u2 given z. If that assumption is unavailable, construct their joint conditional law or retain the unresolved dependence. A common random quantity is sampled or integrated once as that same quantity; two independent draws would describe a different model.
+It assumes conditional independence of u1 and u2 given z. If independence is unavailable, use a joint conditional law where the calculation needs it. For a given pair of observed outcomes, the relative likelihoods may suffice. Bounds on them can already settle a decision. A common random quantity is sampled or integrated once as that same quantity; two independent draws would describe a different model.
 
 For two analyses using the same positive prior pi(z) and conditionally independent data D1,D2, their posteriors satisfy q1(z) proportional to pi(z)\*L1(z) and q2(z) proportional to pi(z)\*L2(z). The combined posterior is proportional to q1(z)\*q2(z)/pi(z) on the common prior support. Multiplication without the division counts the prior twice.
 
@@ -109,7 +111,7 @@ A point estimate can suffice for the receiving use. To replace a distribution by
 
 Return the combined formulation with the exchanged quantities and assumptions needed to reproduce the required result. The subject recipient must be able to interpret that result, including any approximation or unresolved interface contribution that changes its use.
 
-Check the consequence at the scope of the claim. An interval balance establishes the amount transferred over that interval, not the time of a threshold crossing within it. A joint posterior accounts for the supplied data under its dependence assumptions; it does not establish that those assumptions describe the subject.
+Check the consequence at the scope of the claim. An interval balance gives the net transfer. For a question about the first time a level was reached, apply the time laws already available to the receiver. Determine the first attainment on each admissible history, allowing that the level may never be reached. An exact time is warranted if every history first reaches the level at that time. A guarantee of reaching it by a deadline needs only that every history reaches it by then. A joint posterior likewise accounts for the supplied data under its dependence assumptions. Using it for a particular physical process requires grounds for those assumptions in that process.
 
 If a result fails, locate whether the problem lies in the quantity identification, map, closure, component law, dependence or computation. Repair that contribution and its affected consumers. For a physical question, B.5.MPC.R coordinates a change crossing the physical, mathematical and computational accounts.
 
@@ -136,7 +138,7 @@ The error is in the exchange. Both components must use the same transferred amou
 
 Now change the requested result: when does B first reach 0.125 units? Under the supplied continuous rate, B(t)=k\*t\^2/2, so it reaches the threshold at t=0.5 minutes. A receiver that inserts the entire amount only at T=1 minute reports a different crossing time despite preserving the final balance.
 
-For that question, send or reconstruct the cumulative transfer Q(t)=k\*t\^2/2 over the interval, or use a computation with adequate intermediate and event resolution. Exchanging only the interval amount is sufficient for the final stores but insufficient for the crossing. The changed question reopens the temporal representation while the conservation argument still holds.
+The receiver can reconstruct the crossing from the same transmitted amount Q when it knows that the rate is proportional to elapsed time on this interval. With zero initial receiving stock and duration T, the cumulative stock is Q(t/T)². Knowing Q fixes the coefficient even if the sender did not transmit k. If all the receiver knows is that the stock grows continuously from 0 to 0.5 in one minute with zero initial rate, both 0.5t² and 0.5t³ fit, with t in minutes. They first reach 0.125 at 0.5 minutes and about 0.630 minutes respectively. Continuity guarantees that the level was reached by the end. An exact crossing time needs a justified time law or a record that distinguishes the remaining times. For an actual transfer, establish that the law or record applies to that run.
 
 A nonlinear receiver can likewise need more than an averaged input. Suppose two equally weighted fine cells supply x values (0,2), and the receiver requires the average of x^2. The mean input is 1, but the required response is (0+4)/2=2. Sending only the mean and squaring it gives 1. Supplying variance 1 restores 1^2+1=2; a justified closure could supply the same missing contribution in a larger model.
 
@@ -167,7 +169,7 @@ P(z=1 | two positives)
 
 The same result is recoverable from the separate posteriors by dividing their product by the common prior before normalizing. That operation preserves their intended contributions under the supplied conditional independence.
 
-Now discover that the two reports contain the same observation, copied into two analyses. There is only one likelihood factor. The correct result under the original observation model is again 3/7; the 9/13 calculation is no longer supported. If there are two dependent observations instead, their joint conditional law is needed.
+Now discover that the two reports contain the same observation, copied into two analyses. There is only one likelihood factor. The correct result under the original observation model is again 3/7; the 9/13 calculation is no longer supported. For two distinct reports with unknown dependence, let a and b be the probabilities that both are positive given z=1 and z=0, respectively. For the observed pair the posterior is `a/(a+4b)`. With each positive marginal equal to 3/4 when z=1, at least 1/2 and at most 3/4 of the probability can lie in their intersection. For the two 1/4 marginals when z=0 the intersection can range from 0 to 1/4. Thus the posterior can range from 1/3 to 1. To attain the whole interval, take disjoint negative events when z=1, giving a=1/2, and vary the overlap of the positive events when z=0 from 1/4 down to zero. Even without a point estimate, a decision requiring at least 1/3 is supported under these assumptions.
 
 The exchange therefore includes the identity and dependence of the contributing information, not just two numbers labeled “probability.” In a method assessment, the same problem appears when two models of performance use overlapping case records.
 
@@ -181,7 +183,7 @@ The examples use small equations with known solutions. A large coupled formulati
 
 The coupled construction supports its stated use when:
 
-- the requested combined result and the component contributions needed for it are recoverable;
+- the receiving question determines which component contributions, connections and joint conditions are needed. The answer returns to the subject under the correspondence or bound that supports its use;
 - shared quantities retain their subject meanings and relevant units, reference points and conditions;
 - each consequential exchange has a relation that connects what is supplied to what is used;
 - aggregation or scale change retains, obtains or bounds the information the receiving operation needs;

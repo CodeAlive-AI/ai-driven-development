@@ -81,9 +81,9 @@ In this constructed exchange, group A contains 2 and 4, so its mean is 3. Group 
 | Explainer: “For the average across all eight people, reconstruct the totals: 2 × 3 = 6 and 6 × 8 = 48. Then 54 / 8 = 6.75. Averaging the two means gives each group half the influence.” | Supplies the mathematical connection and the condition under which the stated answer applies. |
 | Recipient: “But for my branch report I want each branch to count equally, regardless of its number of people.” | Introduces a purpose and weighting rule that differ from the initial task. |
 | Explainer: “Then the mean of the branch means is (3 + 8) / 2 = 5.5. Label it as giving each branch equal weight. The 6.75 figure is the mean across individuals.” | Answers the revised question and retains the earlier result with its own condition. |
-| Recipient: “I will label 5.5 as the equally weighted branch-mean summary.” | The recipient identifies the statistic and the use intended for the report. Choosing the best policy for a management decision would also require its criteria and authority. |
+| Recipient: “I will label 5.5 as the equally weighted branch-mean summary.” | The recipient identifies the statistic. Using it in place of a commissioned individual mean requires authority to change the report. The analyst may also present it as a separate answer. |
 
-The recipient changed the weighting target. The result is 5.5 for equal influence per branch and 6.75 for equal weight per individual. Further detail on the pooled mean would answer the earlier question.
+The recipient asked a new weighting question. The result is 5.5 for equal influence per branch and 6.75 for equal weight per individual. Further detail on the pooled mean would answer the earlier question.
 
 A different recipient says, “I still need the average across individuals, but I do not see why multiplying the count by the mean gives the total.” Use the definition of the mean to show why six values with mean eight sum to 48. If the learning question calls for a further attempt, ask for the total of four values with mean five. A response of 20 gives the correct total under the conditions of that exchange. The learner's working and the help used show which part of the calculation they supplied. For a claim about subsequent independent use, use evidence from that later condition.
 
@@ -93,7 +93,7 @@ In advisory work, a recipient might say, “I understand why the assignment fits
 
 An engineer explains that a proposed service reduces response time from eight minutes to five. A colleague replies: “You keep treating my objection as resistance to speed. I need somebody available throughout the night.” The comparison of response times does not answer that staffing concern.
 
-Use the correction the colleague supplied. “You need continuous coverage. The five-minute figure applies only while an operator is present.” If the question is whether overnight coverage exists, use available staffing evidence or identify what is still unknown. If the question is why the response takes five minutes, give the derivation under its conditions.
+Take up the correction the colleague supplied. “You need continuous overnight coverage. The two response times leave open whether somebody is available throughout the night.” For a coverage decision, explain what service the colleague needs and use evidence about the people and arrangements that could provide the overnight presence requested. If the question concerns how the five minutes were measured, use the actual conditions of that measurement.
 
 ### EXD.4:6 - Bias-Annotation
 

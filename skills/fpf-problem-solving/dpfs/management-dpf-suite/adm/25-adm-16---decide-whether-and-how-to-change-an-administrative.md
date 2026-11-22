@@ -50,7 +50,7 @@ For a change proposal, identify the object and intended difference: rule, contro
 
 Identify the materially different open and foreseeable case groups, active grants, obligations, unresolved effects, disputes and required historical uses. Use evidence about dependencies as well as current traffic. For example, a quiet week may precede an outstanding annual payment.
 
-For each group whose treatment or protected conditions may differ, recover the old conditions, intended new result, relevant authority and the fact that will determine its treatment. Preserve an unknown cohort classification when that determining fact is unavailable.
+For each group whose treatment or protected conditions may differ, recover the old conditions, intended new result, relevant authority and the fact that will determine its treatment. Preserve an unknown cohort classification when that determining fact is unavailable. If the permitted classifications all justify the same present action, that action can be taken on the common grounds. Retain any separately required classification or record.
 
 Use ADM.2–ADM.3 to establish the relation or its effective conditions when needed and ADM.13 for required record use. An inventory label is not evidence that a grant expired, an obligation ended or a disputed claim was resolved.
 
@@ -58,7 +58,7 @@ Use ADM.2–ADM.3 to establish the relation or its effective conditions when nee
 
 Use an applicable transition decision already in force. Where one is needed, obtain it from the participant authorized to adopt the change and decide which conditions apply to each group, or identify what remains undecided. Obtain the qualified legal, tax, contractual, security or other contribution only where that substantive question matters and is not already adequately answered.
 
-State when the decision takes effect, which cases it covers and any permitted election, exception, coexistence or termination. Apply those conditions to the known case facts and identify any fact still missing.
+State when the decision takes effect, which cases it covers and any permitted election, exception, coexistence or termination. Apply those conditions to the known case facts and identify any missing fact that affects the action or a separately required determination.
 
 Keep a proposal, authorized decision and implementation distinct. Until a valid decision changes an existing condition, the handler continues to apply the condition that governs that case. An internal forecast or deployment date does not revise a participant's right or obligation.
 
@@ -82,7 +82,7 @@ When the remaining question concerns staff handling the administrative cases ind
 
 Reuse adequate existing observations within their scope. Select a new observation only when its attainable result could change the decision or warranted claim enough to justify the work and burden. Publication, attendance and coached performance retain their actual evidence value; they do not automatically establish independent later handling or a causal improvement.
 
-The instructions for administrative staff adapt the population, interval, independent-use and inquiry conditions of [FPF C.36.MC](../../../sections/09-part-c---kernel-extension-specifications/131-c-36-mc---qualify-and-develop-a-method-culture.md) §§4.1 and 4.4. C.36.MC itself governs Method Engineering practice. Use it directly when the question concerns how method engineers transmit or retain their practice of constructing, checking or revising methods; apply the administrative instruction above to staff handling the cases.
+The instructions for administrative staff adapt the population, interval, independent-use and inquiry conditions of [FPF C.36.MC](../../../sections/09-part-c---kernel-extension-specifications/133-c-36-mc---qualify-and-develop-a-method-culture.md) §§4.1 and 4.4. C.36.MC itself governs Method Engineering practice. Use it directly when the question concerns how method engineers transmit or retain their practice of constructing, checking or revising methods; apply the administrative instruction above to staff handling the cases.
 
 #### ADM.16:4.6 - Complete the selected scope and state what remains
 
@@ -107,10 +107,10 @@ The expense-policy owner’s decision establishes the applicable terms. The serv
 
 | Case | Applicable continuation under the supplied decision |
 | --- | --- |
-| Journey authorized on 28 October, performed on 3 November, claim submitted on 6 November | Use the earlier terms unless the permitted election is established. The submission date does not select the new regime. |
+| Journey authorized on 28 October, performed on 3 November, claim submitted on 6 November | Use the earlier terms when there was no effective election. Apply the allowance for a valid election. If the election records are unavailable, keep the regimes still possible for this case. The submission date does not select the new regime. |
 | Journey authorized on 2 November | Use the allowance instruction with its applicable eligibility and payment conditions. |
 | Earlier journey with a valid recorded election and required confirmation before disbursement | Apply that authorized variant; it is not an erroneous workaround merely because the ordinary earlier terms differ. |
-| Authorization date or election basis cannot be established | Use available evidence of the missing decision or fact. If it remains unknown, return that question to the competent source where available and leave the regime unresolved. |
+| Authorization date or election basis cannot be established | Check the authorized action, amount, timing and required records under the regimes still possible. If all support the same payment and the terms permit proceeding, provide it. Seek further evidence when the disposition differs or when identifying the governing regime is itself due. |
 | Payment instruction already issued, effect unknown | Recover evidence of that attempt’s effect. Hold a further payment or conversion that could duplicate it while the effect remains unknown. |
 
 The provider's initial proposal disables the receipt route on 1 November. The case comparison shows that the route still serves an authorized population. The responsible parties arrange bounded old-regime support or a qualified replacement that preserves its required inputs, decisions and recovery. Keep the earlier terms usable for that population, through the existing route or its qualified replacement.
@@ -123,7 +123,7 @@ Suppose adequate current observations show that two handlers apply the adopted a
 
 Now a different receiving use requires a new relief handler to work independently. Existing attendance at a presentation does not answer that question. A bounded practice exercise is feasible before the assignment, and its result can change the supported work the handler receives. The maintainer selects an equivalent case that preserves the old/new-regime distinction and the applicable return, and observes the handler's unaided disposition.
 
-A correct result supports that observed application with the available instruction and prior preparation. It does not isolate the cause of success or establish long-term retention. An error selecting by submission date calls for a focused correction to the instruction, support or learning contribution that actually failed. A legitimate election under the transition rule must remain distinguishable from that error.
+A correct result supports that observed application with the available instruction and prior preparation. It does not isolate the cause of success or establish long-term retention. Correct the decision if the handler used the submission date in error. Before changing the instruction, support or training, establish which contribution failed. A one-off error can occur even with an adequate rule and a capable handler. A legitimate election under the transition rule must remain distinguishable from that error.
 
 
 
@@ -163,7 +163,7 @@ The laboratories and ADM source pack distinguish changes to rules, service instr
 
 This administrative transition draws on the instructions for use, coexistence, receiving results and retirement in [SYSE.29][SYSE], with ADM's explicit grants, obligations, case cohorts and competent transition decision. [FPF A.3.1.MV](../../../sections/05-part-a---kernel-architecture-cluster/27-a-3-1-mv---construct-and-maintain-a-method-variant.md) preserves the distinction between a method variant and changes to description, support or other governed objects.
 
-[FPF C.36.MC](../../../sections/09-part-c---kernel-extension-specifications/131-c-36-mc---qualify-and-develop-a-method-culture.md) supplies source distinctions about a bounded population and interval, independent-use evidence, sufficient continuation and worthwhile inquiry. Section 4.5 adapts them to administrative case handling under the governing rule; C.36.MC's full method remains a direct return for a Method Engineering practice question. The adaptation preserves the limits on claims of later retention or causal improvement.
+[FPF C.36.MC](../../../sections/09-part-c---kernel-extension-specifications/133-c-36-mc---qualify-and-develop-a-method-culture.md) supplies source distinctions about a bounded population and interval, independent-use evidence, sufficient continuation and worthwhile inquiry. Section 4.5 adapts them to administrative case handling under the governing rule; C.36.MC's full method remains a direct return for a Method Engineering practice question. The adaptation preserves the limits on claims of later retention or causal improvement.
 
 Retaining the arrangement can suffice on adequate current evidence. A technical cutover on one date can support several regimes. Apply the authorized terms separately where authorization dates, valid elections, unresolved effects or record duties distinguish cases, as in §§4.2–4.6.
 
@@ -173,6 +173,6 @@ The historical TameFlow contributions are reused through qualified operations in
 
 ADM.14–ADM.15 supply control and consequence questions; ADM.2–ADM.3 establish relevant participants and effectivity. ADM.5 carries the changed reusable instruction, ADM.11 connects providers, and ADM.13 preserves required record uses. Use ADM.6–ADM.10 to continue individual cases under the terms that govern them.
 
-[SYSE.29][SYSE] governs technical transition and retirement; [SYSE.24][SYSE] answers a still-open complete obtaining choice. [FPF A.3.1.MV](../../../sections/05-part-a---kernel-architecture-cluster/27-a-3-1-mv---construct-and-maintain-a-method-variant.md) helps maintain a method variant when the change concerns the method itself. Section 4.5 adapts selected [FPF C.36.MC](../../../sections/09-part-c---kernel-extension-specifications/131-c-36-mc---qualify-and-develop-a-method-culture.md) distinctions to administrative independent handling; direct C.36.MC use concerns Method Engineering practice. These contributions leave the institutional transition decision with its competent owner.
+[SYSE.29][SYSE] governs technical transition and retirement; [SYSE.24][SYSE] answers a still-open complete obtaining choice. [FPF A.3.1.MV](../../../sections/05-part-a---kernel-architecture-cluster/27-a-3-1-mv---construct-and-maintain-a-method-variant.md) helps maintain a method variant when the change concerns the method itself. Section 4.5 adapts selected [FPF C.36.MC](../../../sections/09-part-c---kernel-extension-specifications/133-c-36-mc---qualify-and-develop-a-method-culture.md) distinctions to administrative independent handling; direct C.36.MC use concerns Method Engineering practice. These contributions leave the institutional transition decision with its competent owner.
 
 ### ADM.16:End

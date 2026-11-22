@@ -81,9 +81,9 @@ A walkthrough reveals that confirmation uses the new contact number entered from
 
 #### CGOV.9:5.2 - Detection after the useful response window
 
-A small organization reviews payment discrepancies monthly. A new service makes payments irreversible within hours. The existing review can still explain a past discrepancy, but its timing cannot provide the intended early containment.
+A small organization reviews payment discrepancies monthly. Its new service accepts payments on any working day, including immediately after that review. A payment becomes irreversible within hours, and the monthly review is the only current means of detecting a discrepancy. It can explain an earlier discrepancy. It cannot guarantee containment before every permitted payment becomes irreversible.
 
-The practitioner separates those uses. Retain the review where it remains useful, and compare a permitted pre-release control or timely alert and response for the irreversible exposure. If no feasible permitted response meets the needed protection, report that limitation before treating the new service as adequately controlled.
+Retain the review for the retrospective use. For early containment, compare when authorized payments may be released, when a discrepancy can be detected and when someone can stop it. A review tied to the release of every batch might suffice. Where permitted payments can escape that window, consider a pre-release control or a timely alert with an available responder. Report the exposure if no permitted arrangement provides the protection required.
 
 ### CGOV.9:6 - Bias-Annotation
 

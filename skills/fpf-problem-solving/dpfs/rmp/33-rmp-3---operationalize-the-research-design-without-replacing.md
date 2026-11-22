@@ -41,7 +41,7 @@ Keep the research question and the error the design must expose in view. Establi
 
 #### RMP.3:4.1 - Recover the question and the selected design
 
-Use the qualified question and its current basis from a **ResearchQuestionBrief** or equivalent information already available. Identify the use, population, setting, period or corpus that determines scope. State what the evidence would have to establish and when work can stop even if uncertainty remains. The inquiry may seek to revise an explanation, a model or another claim.
+Use the qualified question and its current basis from a **ResearchQuestionBrief** or equivalent information already available. Identify the use, population, setting, period or corpus that determines scope. State what the evidence would have to establish and when work can stop even if uncertainty remains. The inquiry may seek to revise an explanation, a model or another claim. Identify the units the claim concerns and the observations or records that support it. Several documents can derive from one inspection. Two visits by the same customer count twice for a question about visits and once for a question about distinct customers. To combine lists, establish how they cover the population named in the question and how overlap affects the answer. A decision about entries may use the recorded counts directly.
 
 Use the **ResearchDesignDecision** or an equivalent selected design. Identify the evidence strategy, core contrast, relevant rivals, threats and appropriate criticism. Criticism here means an examination capable of exposing an important error or limiting the answer. Use an experiment or significance test only where it bears on that question.
 
@@ -60,7 +60,7 @@ Specify the choices on which the inference depends. The table offers questions f
 | Choice to settle | What makes the specification usable |
 | --- | --- |
 | Phenomenon, construct or meaning | State what the inquiry is trying to distinguish and why the proposed observation, source or encounter bears on it. A familiar variable name or cited scale does not establish that relation in the present use. |
-| Units, cases and selection | Identify what is selected, what is changed or exposed, what is measured and what units the inference concerns. Give the source and grounds for choosing the attainable sample or corpus. Repeated readings can supply information about one specimen’s measurement variation. Its independent specimen count remains one. |
+| Units, cases and selection | Identify what is selected, what is changed or exposed, what is measured and what units the inference concerns. For a claim about parts acting together, choose observations that preserve the link the analysis will use. Stage totals from two offices can be compatible with several pairings of requests. A per-request account may need a link between stages or a direct elapsed-time record. For the total over the same requests, the separate sums may already suffice when they cover the whole interval once. Give the source and grounds for choosing the attainable sample or corpus. Repeated readings can supply information about one specimen’s measurement variation. Its independent specimen count remains one. |
 | Comparison or interpretive relation | Explain what will be compared, challenged or interpreted, which rival it can expose, and what differences must be controlled, described or acknowledged. |
 | Timing and context | Specify the periods, sequence, exposure or engagement conditions that make the material comparable or interpretable. Retain the conditions that could make a later observation a different case. |
 | Measurement, source or engagement Method | Identify the qualified procedure, source-critical technique, field or interview approach, computation or other operation and the conditions on which its use depends. Name the edition or configuration if it affects what can be done or inferred. |
@@ -71,7 +71,7 @@ For a quantitative inference, establish the applicable basis for sampling or pre
 
 For a historical inquiry, identify relevant source series, dates, authenticity, provenance, transcription and the interpretation of silence where they matter. For qualitative inquiry, consider the theoretical orientation, researcher and participant positions, encounter conditions and how interpretation may develop. Specify the grounds appropriate to each source or encounter.
 
-Use an adequate domain procedure directly. Explain its connection to the question and identify changes in application conditions that matter to the result.
+Choose the resolution for the answer you need. Suppose two consecutive stages exhaust a process. Each takes one or two days. If the governing rule permits only (1, 2) and (2, 1), the process takes three days in either case. Keeping only each stage’s range gives an upper bound of four days. That bound can settle a four-day limit but leaves the three-day limit open. To settle the latter, preserve the pairing, use the rule directly, or obtain a sufficient end-to-end result. If waiting between stages becomes possible, establish its contribution before carrying either bound over. Use an adequate domain procedure directly. Explain its connection to the question and identify changes in application conditions that matter to the result.
 
 #### RMP.3:4.3 - State the intended use of the material and the records it needs
 
@@ -184,7 +184,7 @@ Use the questions that apply to the operational specification. Use qualified dom
 - If the selection premise fails, identify its consequence for RMP.2. Qualify a changed question under RMP.1 when needed. For a decision about permission or resources, use the applicable authority or state the limit.
 - State what the protocol supports. Identify any action or inference that remains unsupported and what, if anything, could make it available.
 
-For a disputed or consequential use, follow a material observation from its specified unit and procedure through the proposed comparison to the error it could expose. Where unresolved inputs interact, check their adverse admissible combinations. A fully populated form can still leave either connection unsupported.
+For a disputed or consequential use, trace the evidence needed for the conclusion from its unit and procedure through the proposed comparison. Where several observations must refer to the same request, configuration or period, show how the protocol preserves that relation. Where unresolved inputs interact, check their adverse admissible combinations. A fully populated form can still leave either connection unsupported.
 
 ### RMP.3:8 - Common Anti-Patterns and How to Avoid Them
 

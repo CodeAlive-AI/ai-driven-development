@@ -102,10 +102,10 @@ The planned and actual totals are still 600 and 1,200, but the intermediate acco
 | Planned 50 A and 50 B | 200 | 3 | **600** | — |
 | Actual volume 120 at original 50:50 mix: 60 A and 60 B | 240 | 3 | **720** | **120 volume** |
 | Actual mix: 30 A and 90 B, at reference requirements | 300 | 3 | **900** | **180 mix** |
-| Actual material consumption | 300 | 3 | **900** | **0 within-product usage** |
+| Actual material consumption | 300 | 3 | **900** | **0 net usage variance across A and B** |
 | Actual price | 300 | 4 | **1,200** | **300 price** |
 
-Thus 120 + 180 + 0 + 300 = **600**. The earlier 180 aggregate usage component is now replaced by 180 mix plus zero within-product usage. Adding a further 180 mix to the old decomposition would double count it. The aggregate average rose from two to 2.5 because the output composition changed; this account supplies no evidence of increased waste.
+Thus 120 + 180 + 0 + 300 = **600**. At reference requirements the change in output mix accounts for the entire 180 aggregate usage component in the earlier calculation. The measured total of 300 equals the reference total for the actual mix. An overrun on A could still offset a saving on B. To judge usage by product, obtain a product-level observation or other grounds for the attribution.
 
 Now change actual consumption to **324** materials on that same actual mix. At the reference price, consumption costs 972, so usage contributes 972 − 900 = **72**. Actual price gives 1,296 and a price component of **324**. The total difference is 1,296 − 600 = **696**, reconciled as 120 volume + 180 mix + 72 usage + 324 price. Investigate the additional twenty-four materials through the operating records and competing explanations; their arithmetic cost does not establish a defect or assign responsibility.
 
@@ -149,7 +149,7 @@ The selected line combines resource-based accounting with explicit numerical dec
 
 ACCA's [flexible-budget treatment](https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/budgeting1.html) develops the reference account at actual activity while retaining fixed and stepped behavior. Its [materials mix and yield treatment](https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/mat-yield.html) develops intermediate accounts and the relation of a variance to its subdivisions. That treatment concerns the mix of input materials; §5.2 applies the accounting construction to the mix of output products. The objects and reference requirements must remain explicit.
 
-§§4.1–4.3 separate comparable values, the construction of arithmetic components and supported explanations. The five intermediate accounts expose when an apparent usage problem is fully explained by output mix. Their construction warrants the numerical division, while a cause or responsibility judgement requires further evidence. Reopen the explanation when changed mix, definitions or operating evidence defeats its comparison or cause.
+§§4.1–4.3 separate comparable values, the construction of arithmetic components and supported explanations. The intermediate accounts identify the mix contribution to the aggregate difference. A zero net residual leaves possible offsetting changes within the individual products. Their construction warrants the numerical division, while a cause or responsibility judgement requires further evidence. Reopen the explanation when changed mix, definitions or operating evidence defeats its comparison or cause.
 
 ### MA.7:12 - Relations
 

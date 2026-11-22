@@ -1,6 +1,6 @@
 ## SOM.Reference:2 - How the methods work together
 
-Start with the question about the movement. Use SOM.1 to relate what the performer experiences, what they can deliberately change and what happens in the action. This comparison can answer the question or identify a contribution needed from another Method. Bring that result back to the movement and check what it establishes about the original question.
+Start with the question about the movement. Use SOM.1 when the question calls for connecting what the performer experiences, what they can deliberately change and what happens in the action. This comparison can answer the question or identify a contribution needed from another Method. Bring that result back to the movement and check what it establishes about the original question.
 
 Use SOM.2 to develop a contrast when the performer cannot distinguish a needed bodily change. Use SOM.3 if a distinguishable change is difficult to increase, reduce or release. SOM.4 addresses coordinating available changes and recalling their development in motion. Use SOM.5 to examine or adapt that coordination when support, contact or load changes.
 

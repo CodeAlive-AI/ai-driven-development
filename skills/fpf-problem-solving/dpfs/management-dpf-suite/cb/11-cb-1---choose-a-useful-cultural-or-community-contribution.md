@@ -33,7 +33,7 @@ How can an organiser construct and compare useful contributions without treating
 
 ### CB.1:4 - Solution
 
-Start with one receiving situation, develop a small set of different ways to improve it, and make the chosen contribution concrete enough for affected people to question or try. Keep the cultural result, the mutual-participation result and the sponsor's result distinguishable.
+Start with the use the offer must support. A single request may end with a usable answer. A recurring service or a shared practice can require a reference, sustained interaction or contributions from several groups. Work out which results the users need separately or together and what makes the shared provision possible. Develop alternatives at that scale and make the proposed contribution concrete enough for affected people to question or try. Keep the cultural result, the mutual-participation result and the sponsor's result distinguishable.
 
 **Working reminder:** find whose situation should change; compare ways to help; establish the needed contributions; make one honest offer; revise it from the response.
 
@@ -77,7 +77,7 @@ Generate alternatives that change the way the result is obtained. STR.5 supplies
 
 An existing adequate arrangement remains a serious alternative. Combine arrangements when each supplies a necessary contribution: a reference resource can answer routine questions while a small peer group handles unusual cases. Explain where the person changes route, so that “community support” does not become an unlimited promise.
 
-Compare at the scale of the first use. Include preparation, response, correction, coordination and the participant's effort, not only platform cost. Do not make a well-developed favourite defeat an alternative described only by its name. Before relying on a participant’s willingness or capacity, establish it for the proposed contribution.
+Compare at the scale of the offer. For a first exchange, trace one use. For a recurring or joint commitment, include the preparation used across occasions, the distinct contributions each receiver can claim and the conditions under which those claims can coincide. A common operating rule can establish what works across the promised range. Include preparation, response, correction, coordination and the participant's effort, not only platform cost. Do not make a well-developed favourite defeat an alternative described only by its name. Before relying on a participant’s willingness or capacity, establish it for the proposed contribution.
 
 #### CB.1:4.4 - Build the contribution for the selected branch
 
@@ -117,7 +117,7 @@ Reopen the affected choices and their dependencies when later responses change t
 
 This constructed case concerns twenty independent repairers who sometimes encounter unfamiliar equipment faults. A supplier offers a branded forum. Some repairers service competing products, and the supplier would prefer discussions that favour its own equipment.
 
-The organiser first examines three stipulated accounts. One repairer spends time locating an already documented procedure. Another needs a second interpretation of an unusual observation. A third understands the procedure but lacks permitted access to the needed data. These accounts are enough to reject one undifferentiated promise of “faster repairs”; they do not estimate how frequent each difficulty is.
+The organiser first examines three stipulated accounts. One repairer spends time locating an already documented procedure. Another needs a second interpretation of an unusual observation. A third understands the procedure but lacks permitted access to the needed data. Faster repair may serve all three. The accounts distinguish what has to change to achieve that result, which lets the organiser compare a combined offer with separate routes. The frequency of each difficulty remains unknown.
 
 The organiser develops four alternatives. A maintained index to approved procedures could help the first person. A paid specialist could provide an accountable response to the second. A voluntary case exchange could also help that person when timing is flexible and suitable peers choose to participate. Neither discussion nor training supplies the third person's missing access.
 
@@ -154,7 +154,7 @@ Before relying on the proposal, check that:
 - the offer exposes the effort, interests and participation conditions that could change a person's decision;
 - the next action and evidence can distinguish usefulness from registration, activity or agreement with an idea.
 
-A small proposal can satisfy these questions in ordinary prose. A stronger commitment requires stronger evidence of demand, provision and applicable domain conditions.
+A small proposal can satisfy these questions in ordinary prose. For a recurring offer, establish which future uses it must cover, what they draw on together and why the provision works across those uses.
 
 ### CB.1:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -194,7 +194,7 @@ Source returns: [David Spinks, The Business of Belonging (2021)](https://www.wil
 ### CB.1:12 - Relations
 
 - **Supplies CB.2:** a bounded proposal for mutual help, with the first result, participant conditions and organising capacity. A failure to obtain the central contribution returns from CB.2 to the affected choice here.
-- **Uses [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md):** the cultural relations and result being sought. [FPF C.36.RP](../../../sections/09-part-c---kernel-extension-specifications/130-c-36-rp---sustain-and-renew-shared-ways-of-working.md) supplies the wider Method for making a shared way obtainable, usable and renewable; CB.1:4.4 retains the narrower known-practice learning alternative.
+- **Uses [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md):** the cultural relations and result being sought. [FPF C.36.RP](../../../sections/09-part-c---kernel-extension-specifications/132-c-36-rp---sustain-and-renew-shared-ways-of-working.md) supplies the wider Method for making a shared way obtainable, usable and renewable; CB.1:4.4 retains the narrower known-practice learning alternative.
 - **Uses [STR.5 (STR.5:4)](../str/23-str-5---generate-strategic-directions.md#str54---solution):** contrasting useful contributions and their provision conditions when that choice needs further development.
 - **Uses [OCE.2 (OCE.2:4)](../oce/24-oce-2---recover-current-organization-work-and-arrangement.md#oce24---solution):** evidence about actual organisational work and relations when the proposal relies on them.
 - **Uses [HCD.5:4 and HCD.6](../../human-capability-engineering-dpf-suite/hcd/21-hcd-5---select-human-capability-development-methods.md#hcd54---solution):** selected learning activities and representative tasks for people learning a practice for independent use. HCD.2 serves a person's programme choice; HCD.7 and HCD.8 serve missing support and access.

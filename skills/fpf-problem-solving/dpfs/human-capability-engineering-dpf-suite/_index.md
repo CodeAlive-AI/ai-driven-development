@@ -21,14 +21,16 @@ Framework and method links open readable text on fpf.tools; **Markdown** links o
 | How do explanation, varied experience and participation combine in learning? | [Connected learning cases (HCD.Application:10)](hcd/55-hcd-application-10---combine-explanation-experience-and-part.md), covering language, partnered movement, a clerk's work and an engineering team. |
 | Why does a familiar movement fail when bodily experience and voluntary regulation do not connect to the action? | [Model the bodily contribution to a movement (SOM.1)](som/09-som-1---model-the-bodily-contribution-to-a-movement.md). Suitable technique and physical conditions remain necessary. |
 
+Choose an entry by the work it will let you do. For example, a performance can settle whether to accept today’s result. To assign a person the next job, identify the actions they must take with the support they will have. To design practice, identify the action learners must perform, the choices entrusted to them and the conditions the work requires. A task with a fixed partner can be practised as given. If later work includes a change of partner or setting, establish what the learner must be able to adjust. When the result depends on several contributions, trace [how the participants’ actions work together (HCE.Reference:3)](suite-reference/04-hce-reference-3---how-do-the-contributions-meet-in-a-whole-a.md).
+
 Read the full conditions and cases, including the competence needed to provide the teaching. A course, completed exercise or another performer's output alone does not show the person's capability in later work.
 
 ## Frameworks in this Suite
 
 | Framework | What you can work on | Patterns | Text, M characters |
 | --- | --- | ---: | ---: |
-| [Human Capability Development (HCD)](hcd/_index.md) · [Markdown](hcd/_index.md) | Connect later work to capability demand, personal programmes, learning products, individual and shared practice, feedback, assessment, transfer and retention. | 29 | 1.180 |
-| [Somatic Movement Modeling (SOM)](som/_index.md) · [Markdown](som/_index.md) | Connect bodily experience, regulated effort and coordinated movement; adapt within a familiar movement practice as support or load changes. | 5 | 0.070 |
+| [Human Capability Development (HCD)](hcd/_index.md) · [Markdown](hcd/_index.md) | Connect later work to capability demand, personal programmes, learning products, individual and shared practice, feedback, assessment, transfer and retention. | 29 | 1.212 |
+| [Somatic Movement Modeling (SOM)](som/_index.md) · [Markdown](som/_index.md) | Connect bodily experience, regulated effort and coordinated movement; adapt within a familiar movement practice as support or load changes. | 5 | 0.079 |
 
 **Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals. These are scope indicators.
 
@@ -36,13 +38,13 @@ Read the full conditions and cases, including the competence needed to provide t
 
 A learner may understand a movement and succeed in a local exercise yet still fail the intended whole action. HCD connects the capability target, practice, feedback and transfer; SOM supplies methods for bodily distinctions and regulation when those are the missing contribution. SOM specializes part of that human subject, rather than forming a second obligatory stage for every learner.
 
-The [Human Capability Engineering Architectural Reference](suite-reference/_index.md) explains the assembly, alternatives and limits. Its [movement example (HCE.Reference:3)](suite-reference/04-hce-reference-3---how-do-the-contributions-meet-in-a-whole-a.md) follows the contributions into a whole action; its [outside contributions (HCE.Reference:6)](suite-reference/07-hce-reference-6---which-needed-contributions-remain-outside.md) show what this edition does not supply.
+The [Human Capability Engineering Architectural Reference](suite-reference/_index.md) explains the assembly, alternatives and limits. Its [method for choosing what to examine together (HCE.Reference:3)](suite-reference/04-hce-reference-3---how-do-the-contributions-meet-in-a-whole-a.md) follows the contributions into a whole action; its [outside contributions (HCE.Reference:6)](suite-reference/07-hce-reference-6---which-needed-contributions-remain-outside.md) show what this edition does not supply.
 
 ## Capability and continuing development
 
 Successful work with external help may meet the immediate need without the person learning the helper's method. Learning a known method can also be a complete bounded result. Continuing development asks a further question: what new attainable problems and ways of further development does the acquired capability make available?
 
-Use [Core's connected development method (C.40.OD)](../../sections/09-part-c---kernel-extension-specifications/118-c-40-od---construct-and-continue-open-ended-development.md) for that wider undertaking and this Suite for its human mechanisms. The Reference distinguishes [the different results (HCE.Reference:1)](suite-reference/02-hce-reference-1---what-is-being-changed-and-for-which-result.md).
+Use [Core's connected development method (C.40.OD)](../../sections/09-part-c---kernel-extension-specifications/120-c-40-od---construct-and-continue-open-ended-development.md) for that wider undertaking and this Suite for its human mechanisms. The Reference distinguishes [the different results (HCE.Reference:1)](suite-reference/02-hce-reference-1---what-is-being-changed-and-for-which-result.md).
 
 This is the human specialization of [Engineering](../engineering-dpf-suite/_index.md). Use [Management](../management-dpf-suite/_index.md) when the required change concerns an organization's capability, commitments, authority or resources. Arranging shared learning remains within HCD when the intended result is each person's learning: [compare individual and group arrangements (HCD.20)](hcd/37-hcd-20---compose-and-compare-arrangements-for-individual-and.md) and [form learning work groups (HCD.21)](hcd/38-hcd-21---form-and-change-learning-work-groups.md).
 

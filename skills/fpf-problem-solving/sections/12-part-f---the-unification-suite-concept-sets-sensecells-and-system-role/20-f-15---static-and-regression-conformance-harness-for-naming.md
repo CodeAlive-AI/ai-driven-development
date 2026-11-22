@@ -213,6 +213,8 @@ A cited F.9 Bridge has two exact endpoint cells, one exact relation-semantic pro
 
 A separate C.2.1 claim affirms or rejects the proposed use of that Bridge in the stated direction, under the stated correspondence rule and loss tolerance. Use A.10 for ordinary reliance on the claim. Use B.3 when the receiving use needs a named assurance claim.
 
+For a use through several Bridges, follow F.9:14.7. State the direction of use at each link, the rule for using them together and the cumulative effect on the receiver’s decision. Two signed shifts of +0.4 satisfy a local tolerance of 0.5 each and exceed a final tolerance of 0.5 together. Established cancellation may meet the final tolerance. The chain can thus support a particular use. A claim that a direct A-to-C Bridge obtains has its own predicate test.
+
 **SCR-F15-S13 (Cross-local locality).**
 Use F.9 only for different `<ReferenceScheme, LocalSenseClaim>` projections and one named current correspondence use. Same-projection expression reuse stays with designation; different projections do not themselves establish a relation; when no current correspondence use exists, add no Bridge or bounded-use claim.
 
@@ -348,7 +350,7 @@ The slice resolves `activity` under `PROVORunScheme-2026` and `task` under `IEC6
 F.15 result:
 
 * SCR-F15-S3 checks each exact triple; shared run-language does not merge them.
-* SCR-F15-S12 requires an obtaining F.9 occurrence before the comparison uses a semantic relation. Its Card is optional and its bounded-use claim is separate.
+* SCR-F15-S12 requires an obtaining F.9 occurrence before the comparison uses a semantic relation. Its Card is optional and its bounded-use claim is separate. When the claim concerns use of the whole chain, check the combined rule and tolerance. A commission confined to the local checks can finish there.
 * Any F.17 row must pass its own gate. It may contain the exact cells needed by the row use; table shape does not create the row.
 * An `ExecutionSystemRoleKindDescription` remains an F.4 episteme about one exact local `ExecutionSystemRole` under one scheme; it does not describe both cells, assign a system, or prove work.
 * If a later `task` sense becomes cyclic while the `activity` sense remains non-periodic, RSCR-F15-E4 and E9 compare exact later cells and Bridge candidates; evidence may change the use claim or reliance without silently rewriting the prior Bridge.

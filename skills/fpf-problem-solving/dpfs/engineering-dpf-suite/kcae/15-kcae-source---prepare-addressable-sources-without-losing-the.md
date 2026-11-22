@@ -41,6 +41,8 @@ Give each unit a document/edition identity, a local locator, an exact source spa
 
 Choose unit size using the retrieval question and the operation that consumes the hit. A broad research theme may benefit from section summaries; a protocol exception may need paragraph or cell retrieval. Keep an independent raw/full-body path so that summary selection is not the only way to reach the source. Test a question whose deciding text lies beyond the initial unit; the opening operation should recover it without requiring the user to guess its exact location.
 
+A passage and the subject it describes can have different parts. A table cell may identify a component, while its heading names the assembly and its footnote limits the configuration. If those relations determine the answer, preserve a way to recover all three from a hit on the cell. A question that asks only for the component's printed identifier may already be settled by the cell and its heading.
+
 #### KCAE.SOURCE:4.4 - Implement and test the source return
 
 A practical exact reader accepts a source edition and a locator, then returns the requested material, its structural envelope, continuation information and the edition actually served. A pagination cursor should bind the edition and requested unit. Expose an end marker or show how much remains so the reader can recognize a truncated result. Do not rely on a line number without its edition.

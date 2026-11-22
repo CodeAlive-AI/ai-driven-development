@@ -68,7 +68,7 @@ For each selected comparison, make the following recoverable in ordinary languag
 - missing observations, uncertainty and the basis on which the readings can be compared;
 - the interpretation the recipient needs and any claim the evidence leaves open.
 
-For a late evidence-return proportion, for example, identify the eligible requested crossings, the agreed receiving deadline, the observed return time and the rule for cases still open at the end of the window. “Late” must mean the same thing on both sides of the proposed contrast. If the rule changes, recover a common basis from the underlying observations where possible or state that the values are not comparable.
+For a late evidence-return proportion, for example, identify the eligible requested crossings, the agreed receiving deadline, the observed return time and the rule for cases still open at the end of the window. “Late” must mean the same thing on both sides of the proposed contrast. If the rule changes, use the underlying observations or a known relation between the rules to establish the contrast the decision needs. A bound may settle a threshold or the direction of change even when the exact difference remains unknown.
 
 Use C.16 for the exact measurement question, including the applicable model, calibration, scale and uncertainty. Reuse a qualified measurement procedure instead of inventing a new one to suit the desired conclusion. A survey response about burden, an observed missed deadline and an inferred workload mechanism remain unlike results.
 
@@ -157,7 +157,7 @@ An authorized clinical decision-maker may separately require a protective pause.
 
 #### OCE.13:5.3 - A changed counting rule
 
-A service team reports fewer late replies, but changed the rule from elapsed hours to working hours between windows. If retained timestamps and the applicable collection procedure permit recalculation, compute both sets under one justified rule. If not, report the two observations with their different meanings and return the comparability gap.
+A service team compares two late-reply proportions after changing the rule from elapsed hours to working hours between periods. If retained timestamps and the applicable collection procedure permit recalculation, compute both sets under one justified rule. If the exact counts cannot be reconstructed, ask which comparisons the definitions still permit. With the same start, endpoint and hour threshold, working time is at most elapsed time. Apply both rules to the same eligible replies within each period. The former elapsed-time count then bounds the former working-time count from above. A new working-time proportion above the old elapsed-time proportion establishes an increase on the working-time criterion. A lower reported proportion can still leave the direction open. State the warranted result and the uncertainty that matters to the decision.
 
 Resolving the difference between the counting rules can finish the comparison without an organization-revision decision.
 

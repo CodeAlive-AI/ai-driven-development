@@ -7,7 +7,7 @@
 
 Use this pattern when a corporation needs an act by a board, shareholders or another authorized holder, and preparation must become a decision made under the applicable rules. It also applies when a discussion or written approval leaves unclear what was decided, by whom and with which conditions.
 
-Start from the proposed act and use a sufficient current authority answer. Prepare the matter and eligible participation, make the decision through the permitted procedure, and preserve its conditions in the required record and communication. The decision may approve, refuse, limit or defer the proposal. If a necessary condition is unresolved, identify the affected act and the useful work that can continue.
+For a question about an earlier decision, start with the act that could have made it effective and the rules then in force. A signed resolution or certified outcome may establish the authorized choice and its limits. Where a consent or condition still matters, reconstruct the missing part of the decision from its records. For a new act, start from the proposal and use a sufficient current authority answer. Prepare the matter and eligible participation, make the decision through the permitted procedure, and preserve its conditions in the required record and communication. The decision may approve, refuse, limit or defer the proposal. If a necessary condition is unresolved, identify the affected act and the useful work that can continue.
 
 This method concerns the corporate institutional act. Financial appraisal, technical judgement and implementation retain their own methods. An ordinary act within effective delegation need not be returned to the board merely because this pattern is available.
 
@@ -25,15 +25,15 @@ Time, uncertainty and the cost of further inquiry constrain deliberation. A bind
 
 ### CGOV.11:4 - Solution
 
-Connect the proposed act, the applicable decision procedure and the judgement actually made.
+First establish whether the recipient needs to recover an existing act or bring about a new one. The applicable procedure determines how to establish or make the decision.
 
 #### CGOV.11:4.1 - Establish the act and its decision route
 
-Name what the corporation is being asked to do, including the amount, subject, timing and limits that affect authority. Distinguish approval of a proposal, entry into a contract, signing, filing and subsequent performance when they are different acts.
+For an earlier decision, identify what the authorized holder actually did under the procedure then in force, the date, the scope and any conditions on the outcome. A current vote can settle a new proposal or make an authorized correction. Its result alone cannot establish the earlier decision. An authenticated decision can settle what was authorized on that date. Recover how it was reached or communicated when the question or the conditions of validity require those facts. For a proposed act, name what the corporation is being asked to do, including the amount, subject, timing and limits that affect authority. Distinguish approval of a proposal, entry into a contract, signing, filing and subsequent performance when they are different acts.
 
 Use CGOV.3 when the power or its holder is unclear. Otherwise use the adequate existing answer. Establish the applicable procedure and cumulative conditions: for example, a board decision plus a class consent, rather than treating either as sufficient. A delegation may settle the route for a routine act.
 
-Where several procedures are permitted, compare their participation, information and agreement conditions before selecting one. For example, a written route may avoid convening a meeting but require unanimity; a meeting route may permit a majority but require notice and real participation. Choose a route that can meet this matter's conditions without unnecessary coordination.
+When a new decision is required and several procedures are permitted, compare their participation, information and agreement conditions before selecting one. For example, a written route may avoid convening a meeting but require unanimity; a meeting route may permit a majority but require notice and real participation. Choose a route that can meet this matter's conditions without unnecessary coordination.
 
 Identify how this procedure produces an effective decision. In one setting, votes at a meeting make the decision and minutes record it. In another, completion of a written resolution constitutes the decision.
 
@@ -95,11 +95,11 @@ A well-supported proposal can make procedural defects less noticeable. Conversel
 
 ### CGOV.11:7 - Conformance Checklist
 
-- The proposed act, holder, authority and cumulative conditions are recoverable.
-- Participants and required consents are determined for this matter.
-- Material premises, alternatives and limits remain usable in deliberation.
-- The actual procedure produces the stated outcome, with its conditions.
-- The record and communication preserve that outcome and the distinction from later execution.
+- For a new act, the proposed decision, holder, authority and applicable conditions are recoverable.
+- For a new decision, the participants and required consents are determined for this matter.
+- The participants in a new deliberation can use the material premises, alternatives and limits.
+- For an existing decision, the evidence establishes the outcome and conditions of the act at the relevant date, or identifies what remains unresolved. For a new decision, the authorized procedure produces and preserves its outcome.
+- Where the assignment includes recording or communicating the outcome, the record or communication preserves the decision and distinguishes it from later execution.
 - An unresolved condition limits the dependent act without forcing unrelated preparation to stop.
 
 ### CGOV.11:8 - Common Anti-Patterns and How to Avoid Them
@@ -129,7 +129,7 @@ The practice question is how prepared judgement becomes an effective corporate d
 
 A meeting decision, a permitted written decision and an act under effective delegation are alternatives. The [UK private-company model articles, 5 and 7–16](https://www.gov.uk/government/publications/model-articles-for-private-companies-limited-by-shares/model-articles-for-private-companies-limited-by-shares) provide a bounded comparison: delegation has stated limits; collective procedures have eligibility, conflict, quorum, participation and record conditions; the unanimous route can use writing. The constructed cases here supply different rules.
 
-Hold the matter, available information and participants fixed. A written route may avoid convening a meeting but require agreement that a permitted majority procedure does not. A meeting can support needed exchange but adds coordination when an effective delegated route already suffices. Choose the least burdensome permitted route that retains the participation and judgement the matter needs.
+Compare permitted routes for the same corporate matter under the same initial circumstances. Establish who must be available, how participants may exchange information and what consent or quorum each route requires. Written consent can avoid a meeting yet require a holder unavailable before the deadline. A meeting may permit a decision by a quorum and provide time for deliberation. Use the least burdensome permitted route that can provide the judgement and participation the matter needs.
 
 The method adapts these distinctions by comparing the permitted procedures for the same matter and carrying the decision's conditions into its record and communication. Reopen when authority, eligibility, required participation, information or the proposed act changes.
 

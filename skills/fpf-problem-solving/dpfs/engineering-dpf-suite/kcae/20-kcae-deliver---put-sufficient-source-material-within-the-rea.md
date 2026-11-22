@@ -31,7 +31,7 @@ Start with the selected passage and follow dependencies needed to interpret or a
 
 Keep original passages distinguishable from the engineer's explanation. A generated contextual prefix is discovery support, not a quote from the author. A translated passage is a translation with a stated role, not automatically the governing edition. If a missing source dependency prevents adequate delivery, return that specific limitation.
 
-For difficult or consequential use, test a question that depends on the vulnerable distinction. Can the recipient explain why protocol v1 selects manual reconciliation while v2 may permit a resend? Recognition of a document title would not test that contribution. KCAE.EVAL supplies a bounded reader-use comparison when the design depends on this capability.
+For difficult or consequential use, test a question that depends on the vulnerable distinction. Can the recipient explain why protocol v1 selects manual reconciliation while v2 may permit a resend? If a service engineer is learning to design the access route, give the engineer the users’ requests, permissions and source conditions before showing the worked design. Ask which distinctions must survive and where the engineer would recover them. A comparable earlier design can show present independent ability. Attributing a gain to this teaching also needs evidence of the earlier ability and what changed with the teaching. KCAE.EVAL supplies a bounded reader-use comparison when the design depends on this capability.
 
 #### KCAE.DELIVER:4.3 - Read complete bounded units through a pinned sequence
 

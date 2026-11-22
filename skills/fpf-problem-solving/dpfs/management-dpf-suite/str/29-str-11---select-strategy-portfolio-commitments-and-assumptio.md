@@ -37,7 +37,7 @@ Identify the receiving question and, when a choice or commitment is at issue, wh
 
 Identify the selection that the question concerns. For a past decision, use evidence of the choice made. For a prospective choice, establish what is to be decided. It may be a strategic direction, a bounded preparation, one commitment, a jointly used configuration, continuation, deferral or rejection of the present set. If the task is to recommend, return the recommendation and its limits. Report a decision only when there is evidence that the responsible holder made it.
 
-Use FPF C.11 for the local choice over an adequate option set and comparison basis. If the set is still incomplete, return to STR.5 or STR.6. If an attainable inquiry could improve the choice or its grounds, use STR.7 to compare its contribution with its burden.
+Use FPF C.11 for the local choice over an adequate option set and comparison basis. Establish the reach of the requested choice. One qualifying direction can settle a request for a feasible next move. For a claim about the best direction or all directions that qualify, cover the permitted alternatives, directly or by an argument that settles the unexamined ones. Return to STR.5 or STR.6 if missing alternatives could alter the answer. If an attainable inquiry could improve the choice or its grounds, use STR.7 to compare its contribution with its burden.
 
 #### STR.11:4.2 - Carry the actual evidence and uncertainty into choice
 
@@ -111,7 +111,7 @@ The reconsideration conditions also remain explicit. A sufficient costing result
 
 #### STR.11:5.2 - A filter admits a proposal, not its expenditure
 
-This constructed filter selects changes to take this quarter. Each must reduce customer rework, be checkable within two weeks and avoid irreversible migration for now. Evaluate those conditions separately from any resource commitment.
+This filter selects changes to start this quarter. Each must reduce total customer rework on orders handled by the affected process in the first two weeks after the change starts, relative to continuing that process. The reduction must be checkable by the end of those weeks. Each change must avoid irreversible migration for now. Eligibility leaves resource commitment to its decision holder.
 
 A reversible correction to error-handling information is proposed for this quarter, has support for reducing rework and can be checked within two weeks. It fits the filter. A branding proposal with no evidence about rework remains unresolved on that condition. A change requiring irreversible migration fails the current filter.
 
@@ -136,7 +136,7 @@ A single executive view can also hide separate holders of access, service, parti
 - The result identifies a recommendation or a decision and its holder where relevant. A reported choice has evidence that the authorized party made it.
 - The evidence and comparison basis concern the same options, configuration and horizon.
 - A retained alternative set, intended joint use and authorized commitments remain distinct.
-- Joint commitments have a supported common configuration, with compatible conditions for their joint use.
+- A conclusion about which commitments exist is supported by the effective decisions of their holders. A promise that several commitments can be met together has a compatible joint arrangement. Where actual commitments conflict, identify the conflict and the holder who can address it.
 - The selected scope states its resources, exclusions, displaced work and unmet conditions.
 - Material assumptions retain their support and use limits.
 - Reconsideration conditions identify the affected premise, conclusion or decision and the responsible holder where a new judgement is required.

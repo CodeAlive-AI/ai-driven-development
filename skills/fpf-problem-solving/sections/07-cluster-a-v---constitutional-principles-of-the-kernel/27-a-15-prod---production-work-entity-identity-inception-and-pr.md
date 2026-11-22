@@ -6,7 +6,7 @@
 
 **Name.** Separate production work, when this entity first exists, and when production was completed.
 
-**At a glance.** Production wording often compresses three questions: is this dated Work the whole production Work or only a declared part; when did changes attributed to that Work first make the applicable identity rule true so this entity began to exist; and, for completion, which subject state satisfied the criterion and which separate governor made that satisfaction close the production Work? This pattern answers each question with separate local claims. It introduces no universal production relation or production-work kind.
+**At a glance.** Production wording often compresses three questions: is this dated Work the whole production Work or only a declared part; when did this entity first satisfy the applicable identity rule, and which Work brought that about if attribution is required; and, for completion, which subject state satisfied the criterion and which separate governor made that satisfaction close the production Work? This pattern answers each question with separate local claims. It introduces no universal production relation or production-work kind.
 
 Call one specification or criterion an edition of another only when their C.2.1 `EpistemeEditionRelation` obtains.
 
@@ -27,7 +27,7 @@ Keep each in its own C.2.1 episteme when persisted; never manufacture a union co
 **First useful move.** The practitioner **SHOULD** first ask which answer the receiving action or decision needs now:
 
 1. Is this dated Work the whole production Work for this use, or a declared proper part of it?
-2. Which identity rule applies to the candidate, and at what boundary did changes attributed to this Work first make that rule true so this entity began to exist?
+2. Under the applicable identity rule, when did this entity first exist? If the recipient also asks which Work brought it into existence, establish how that Work changed the conditions in the rule.
 3. Which subject state satisfies the applicable completion criterion, and which declared predicate or local claim makes that satisfaction close the production Work at this boundary?
 
 The practitioner **MUST NOT** substitute one branch's conclusion for another branch's answer. Shared facts may support more than one branch only through each branch's own predicate and applicability.
@@ -41,7 +41,7 @@ The practitioner **MUST NOT** substitute one branch's conclusion for another bra
 | Recognition situation | First current question | Blocked overread |
 | --- | --- | --- |
 | A fastening step is said to have "produced Car 42". | Is the step whole production work or a proper part, did Car 42 already exist, and which completion criterion is current? | The last visible step establishes neither first existence nor completion by narrative order. |
-| A culture run or spontaneous biological process is said to have "produced Batch B17". | Does the case satisfy the common performer/Work route in section 4.2; only then, which identity or completion branch is current? | Growth or reaction may ground a transformation, while production through Work requires independently admitted Work and its own attribution basis. |
+| A culture run or spontaneous biological process is said to have "produced Batch B17". | Does the user need the first time the batch existed, the time it met a state criterion, or attribution to particular Work? For attribution, apply the performer and Work route in section 4.2. | Growth or reaction may ground a transformation, while production through Work requires independently admitted Work and its own attribution basis. |
 | A build pipeline is said to have "produced ReleaseBinary 12". | Which dated build work and governed effects first established the artifact identity, or satisfied the build-completion criterion? | Build success, publication, release, deployment, and availability remain different claims. |
 
 **First worked replay — Car 42.** Apply the common performer/Work route in section 4.2 to `FasteningCell-7`, `NutFasteningWork-42`, and their enacted fastening Method. The named Work-to-change predicate, finishing-state criterion, and separate closure rule establish that the Work completed the required fastening; Car 42 already existed. A missing Work-to-change or Work-closure governor returns the blocker shown in case 5.1 while preserving the independently established Work, transformation, or state-satisfaction claim.
@@ -79,7 +79,7 @@ These boundaries often differ. A ship can first exist while outfitting continues
 
 ### A.15.PROD:4 - Solution
 
-The practitioner **MUST** choose one of the three production questions, name the Work and the affected referent, candidate basis, or produced entity involved, and gather only the facts that decide that question. The practitioner **MUST** state each answer as a separate local compound relation-bearing claim and **MUST** stop or return a blocker when a required predicate, criterion, applicability rule, boundary fact, work granularity, or transformation-composition rule is missing.
+The practitioner **MUST** choose one of the three production questions, identify the subject of the requested claim and gather the facts that decide it. Identify the Work when attributing a change or closing production. The practitioner **MUST** state each answer as a separate local compound relation-bearing claim and **MUST** stop or return a blocker when a required predicate, criterion, applicability rule, boundary fact, work granularity, or transformation-composition rule is missing.
 
 When the receiving use needs the separately referable claim, identify its C.2.1 episteme. When the receiving use also depends on availability to an audience through a form or carrier, establish the separate E.24.PUB publication occurrence.
 
@@ -92,7 +92,7 @@ One branch neither inherits facts from another nor turns the common method into 
 | Question | Claim content | Ordinary stopping result | What it does not establish |
 | --- | --- | --- | --- |
 | Production-work participation | `currentWork` is `productionWork`, or `currentWork` is a declared proper work part of `productionWork` | one local positive or negative compound claim, or a work-grounding blocker | entity inception, completion, delivery, acceptance, or a universal production-work kind |
-| Entity-identity inception | governed effects of `identityClosingWork` made `producedEntity` satisfy the rule in applicable `productIdentitySpecification` for the first time at `inceptionBoundary` | one local inception claim after the entity exists, plurality of incomparable minimal claims, or a blocker | production completion, later persistence, acceptance, or a reusable binary relation kind |
+| Entity-identity inception | `producedEntity` first satisfied the applicable `productIdentitySpecification` at `inceptionBoundary`. Attribution also identifies the governed effects of `identityClosingWork` | the first time or a supported bound on it. When attributing inception, the supported Work claim or claims, or the missing ground | production completion, later persistence, acceptance, or a reusable binary relation kind |
 | Production completion | `completionSubject` satisfies applicable `productionCompletionCriterion` at `completionBoundary`, and a separate declared closure predicate or local claim connects that satisfaction to `productionWork` | one state-satisfaction claim plus, when asserted, one historically indexed Work-completion claim; otherwise the closure blocker | entity inception, delivery, acceptance, release, publication, or availability |
 
 The three claims may cite overlapping facts. They remain different claims because they answer different receiving questions and can have different boundaries, criteria, and truthful C.2.1 `EntityOfConcern` values.
@@ -160,7 +160,7 @@ If the selected production claim uses only independently identified transformati
 
 Plain: **when this entity first exists**. `inceptionBoundary` is a case-local boundary designator, not a second technical term, claim kind, or relation kind.
 
-For this branch, the practitioner **MUST** complete all five steps:
+For a question about time, recover the applicable identity rule, its candidate basis and the period that could contain first existence. Establish that the rule held at the proposed boundary and that every earlier admissible boundary is excluded. A complete history of the relevant state can establish this time even when the worker is unknown. If only a later satisfying state is known, report existence by that time. When the recipient asks for the Work that brought the entity into existence, complete the following five steps:
 
 1. recover `productIdentitySpecification` as one C.2.1 predicate-definition episteme in the subject pattern that states the identity rule.
 
@@ -232,7 +232,7 @@ Open author-side semantic replay only when A.6.RCD:4.2 requires a substrate pin�
 | Branch | Least constructor over governed base claims | Hidden-participant, polarity, and time policy |
 | --- | --- | --- |
 | production-work participation | one typed conjunction over A.15.1 work identity, actual method enactment, method applicability and intended production effect, affected referent, direct work-to-change facts, the receiver's current criterion, and either work identity or one A.15.1 proper-part relation | every participant and conjunct remains named; no projection hides work, transformation, or criterion witnesses; a negative result requires the selected substrate's explicit negation law rather than absence of a base assertion |
-| entity-identity inception | one time-indexed conjunction over identity-specification applicability, work and governed effects, direct work-to-change and change-to-identity links, and satisfaction of the applicable identity predicate, followed by the substrate's earliest-satisfying-boundary selection over its declared ordered candidate-boundary domain | the candidate basis remains distinct from the after-side entity; work parts and actual transformations remain named or follow the substrate's explicit witness policy; incomparable minimal work composites remain plural, and A.15.PROD supplies no arbitrary minimization rule |
+| entity-identity inception | select the first boundary satisfying the applicable identity rule over the declared ordered domain. For attribution, include the Work, its governed effects and the Work-to-change and change-to-identity links that establish which Work brought this first satisfaction about | the candidate basis remains distinct from the after-side entity; work parts and actual transformations remain named or follow the substrate's explicit witness policy; incomparable minimal work composites remain plural, and A.15.PROD supplies no arbitrary minimization rule |
 | production completion | one boundary-indexed conjunction first states criterion satisfaction for `completionSubject`; a second conjunction states `productionWork`, that satisfaction claim, and the declared closure predicate or local closure rule | the claims keep their different entities of concern; no earliest-boundary operator is implied unless separately required, and missing closure semantics preserves satisfaction while blocking only Work completion |
 
 For DPF or FPF authoring and every other pin-triggering use, the responsible author or modeler **MUST** name the selected substrate and edition and replay its constructor inputs, output claim, applicability, hidden witnesses, polarity law, and temporal policy.
@@ -385,7 +385,7 @@ Delivery, class acceptance, and operational release remain separate. The sentenc
 
 #### A.15.PROD:5.3 - Nested and concurrent attribution
 
-**Work structure.** Factory work may contain project work, subassembly work, `identityClosingWork`, and completion-closing work. Every selected work-part relation remains explicit. Jointly necessary concurrent work parts use composite work under A.15.1.
+**Recover the joint contribution.** Begin with the identity rule for the particular product. Suppose the rule for a release requires the accepted bytes and a valid signed manifest for those same bytes in the store. Establish which Work supplied each and when the two conditions first held together. Identical service names and execution times could accompany a manifest for another build. That manifest would leave the rule unsatisfied. If both contributions were needed and both were performed within this production Work, identify the relevant composite under A.15.1. If an accepted manifest was already available and was reused, its availability contributes to the result. Attribute a new manifest-producing Work to this execution only on evidence that it occurred as part of it.
 
 **Plural minimal composites.** Two incomparable minimal work composites yield two local inception claims, each indexed by its identity-specification episteme and applicability basis. Nested or concurrent attribution creates no additional inception occurrence, and none of those work compositions establishes transformation composition.
 
@@ -407,7 +407,7 @@ A negative claim additionally needs the applicable non-obtaining criterion or co
 
 **Actual Work and change.** Mounting, wiring, fluid-connection, and whole-configuration changes may each be independently identified under A.3.4, and work parts may be grounded under A.15.1.
 
-**Inception basis.** A PumpSkid inception claim may proceed only when a named applicability predicate or filled local claim applies the PumpSkid identity-specification episteme to the candidate configuration and boundary. Named Work-to-change and change-to-identity predicates must also obtain for the participants and case facts. A missing applicability or link returns its blocker.
+**Inception basis.** Apply the PumpSkid identity rule to the candidate configuration at the relevant boundaries. To date first existence, establish the first satisfaction within the stated history or report the bound that history supplies. To attribute inception to the named assembly Work, also establish its relation to the changes and their role in first satisfying the identity rule. If those links remain open, retain the supported timing conclusion.
 
 **Transformation-composition boundary.** A claim that additionally requires positive composite-transformation identity or transformation parthood stops at `missing-governor[transformation-composition]`. Work or method decomposition supplies no proof of transformation decomposition.
 
@@ -431,7 +431,7 @@ If only the closure rule is missing, the state-satisfaction claim remains and on
 
 Assignment-bound attribution and F.6 are additional only when the receiving use consumes them; their absence is not itself a Work-membership failure.
 
-Entity inception and completion then need their own identity, state-satisfaction, and Work-closure governors. Do not turn observed growth into the missing performer-side basis.
+The identity rule and history can date first existence or bound it. Apply the state criterion to dated facts about the batch to establish when it met the condition, or the bound on that time that the facts support. Closing production Work requires an applicable closure rule and the Work to which it applies. Attribute the growth to a particular performer only when the relevant performance and its effect have been established.
 
 #### A.15.PROD:5.8 - Scrum Increment before review or release
 
@@ -447,7 +447,7 @@ Otherwise keep the product-state claim and return the Work-completion blocker.
 
 #### A.15.PROD:5.9 - ReleaseBinary 12: complete build-to-inception replay
 
-BuildOps asks one question: **when did `ReleaseBinary_12` first exist?** Verification, transfer, release, deployment, publication, and availability are not part of this answer. The constructed case uses one affected referent and one transformation; it does not hide an unnamed effect chain.
+BuildOps asks **when `ReleaseBinary_12` first existed**. A production reviewer additionally asks **which build Work brought it into existence**. The identity rule and the history of its satisfaction answer the first question. The second also requires a connection between the effects of this build and the first satisfying state.
 
 **Ordinary answer.** The runner performed the named Work under the applicable build Method. The named Work-to-change predicate connects that Work to the store-population transformation, and the named change-to-identity predicate says that the transformation made the applicable binary-identity rule become true first at 09:11. Therefore **`ReleaseBinary_12` first exists at 09:11 through this build Work; decide completion and later uses separately.** The table below supplies the assurance basis for that answer.
 
@@ -458,20 +458,20 @@ BuildOps asks one question: **when did `ReleaseBinary_12` first exist?** Verific
 | Actual transformation | A.3.4 independently identifies the one transformation consumed here: `ArtifactStorePopulationTransformation_12 : U.Transformation`, the change of `ArtifactStorePartition_12` from no complete candidate tuple at 09:00 to the written bytes, manifest, and digest at 09:11, after which that tuple remains fixed through build completion at 09:12. |
 | Work to change | A.15.1:6.7.1's BuildOps relation specification declares `BuildWorkPopulatedStore@BuildOps-v12(work, transformation)` with participant order `<work, transformation>`. Its stated test and the stipulated Work, application, target-binding, and transformation facts make `BuildWorkPopulatedStore@BuildOps-v12(ReleaseBinary12_BuildWork_2026-07-21T0900_0912, ArtifactStorePopulationTransformation_12)` obtain. Shared timing or the result binding alone would not establish this predicate. |
 | Identity criterion and applicability | Predicate-definition episteme `ReleaseBinaryIdentitySpec_v12` says that this BuildOps binary exists when one immutable byte sequence, manifest, and digest are fixed together and addressable by that digest in `ArtifactStorePartition_12`. Applicability claim `ReleaseBinaryIdentitySpecApplies-12` applies that episteme to `BuildOutputBasis_12`, the BuildOps-v12 context, and the ordered candidate boundaries from 09:00 through 09:12. This is the criterion episteme for the selected inception question; `BuildCompletionCriterion_v12` belongs to the separate completion question at 09:12. |
-| Change to identity | BuildOps predicate-definition episteme `ReleaseBinaryIdentityPredicates-v12` declares case-local predicate `StorePopulationClosedBinaryIdentity@BuildOps-v12(transformation, identitySpecification, candidateBasis, boundary, producedEntity)` with that participant order. Its test requires the governed store change to make the applicable identity rule false at every earlier candidate boundary and true at the named boundary. The stipulated case facts make it obtain for `<ArtifactStorePopulationTransformation_12, ReleaseBinaryIdentitySpec_v12, BuildOutputBasis_12, 09:11, ReleaseBinary_12>`. |
+| Change to identity | BuildOps predicate-definition episteme `ReleaseBinaryIdentityPredicates-v12` declares case-local predicate `StorePopulationClosedBinaryIdentity@BuildOps-v12(transformation, identitySpecification, candidateBasis, boundary, producedEntity)` with that participant order. Its test requires that the applicable identity rule did not hold at any earlier admissible candidate boundary and that the governed store change brought about its first satisfaction at the named boundary. The stipulated case facts make it obtain for `<ArtifactStorePopulationTransformation_12, ReleaseBinaryIdentitySpec_v12, BuildOutputBasis_12, 09:11, ReleaseBinary_12>`. |
 | Local result | C.2.1 episteme `ReleaseBinary12InceptionClaim` has `EntityOfConcern = ReleaseBinary_12` and states only that this entity first exists at 09:11 through the governed effects of `ReleaseBinary12_BuildWork_2026-07-21T0900_0912` under `ReleaseBinaryIdentitySpec_v12` and `ReleaseBinaryIdentitySpecApplies-12`. It asserts neither build completion nor verification, transfer, acceptance, release, deployment, publication, or availability. |
 
 **Nearest failing variant.**
 
 Keep every fact above, including the result binding, store transformation, work-to-change predicate, identity specification, applicability, ordered boundaries, and the state that satisfies the identity rule at 09:11. Remove only the declaration and obtaining fact for `StorePopulationClosedBinaryIdentity@BuildOps-v12`.
 
-The result is `missing-governor[RELEASE-BINARY-CHANGE-TO-IDENTITY]` for `<ArtifactStorePopulationTransformation_12, ReleaseBinaryIdentitySpec_v12, BuildOutputBasis_12, 09:11, ReleaseBinary_12>`. A timestamp, completed write, or `builtBinary` binding cannot replace that missing change-to-identity predicate.
+The remaining state evidence establishes that `ReleaseBinary_12` existed by 09:11 under the applicable rule. If independent records also exclude every earlier candidate boundary, BuildOps can still give 09:11 as the first time. If the earlier exclusions depended on the removed evidence, the exact first time remains open. For the separate attribution through this change the return is `missing-governor[RELEASE-BINARY-CHANGE-TO-IDENTITY]` for `<ArtifactStorePopulationTransformation_12, ReleaseBinaryIdentitySpec_v12, BuildOutputBasis_12, 09:11, ReleaseBinary_12>`.
 
 **Author-side replay of the same result.** Case substrate `ReleaseBinaryInceptionClaims-v1` defines a time-indexed conjunction over the named Work, performer basis, method applicability, the performed `storeWrite` application fact (not the later result binding), affected referent, transformation, work-to-change predicate, identity specification, applicability claim, and change-to-identity predicate.
 
 Its declared ordered boundary domain is 09:00-09:12, and its earliest-satisfying rule returns 09:11. The positive replay therefore yields `ReleaseBinary12InceptionClaim`.
 
-In the failing variant, the same constructor lacks the change-to-identity conjunct and returns `missing-governor[RELEASE-BINARY-CHANGE-TO-IDENTITY]`, as the ordinary replay does. These case-local predicates and this substrate introduce no universal production, work-to-change, or change-to-identity relation kind.
+In the failing variant this constructor lacks the change-to-identity conjunct and returns `missing-governor[RELEASE-BINARY-CHANGE-TO-IDENTITY]` for the claim attributing inception to the build Work. The independent time conclusion retains the extent supported by the state history. These case-local predicates and this substrate introduce no universal production, work-to-change, or change-to-identity relation kind.
 
 ### A.15.PROD:6 - Bias-Annotation
 
@@ -498,7 +498,7 @@ In the failing variant, the same constructor lacks the change-to-identity conjun
 | `CC-A15.PROD-5` | Every actual transformation is independently identified under A.3.4; work, method, samples, temporal subdivision, and flow representations do not imply transformation composition. |
 | `CC-A15.PROD-6` | Every Work-to-change and change-to-identity link names a declared predicate with participant order and obtaining facts or a filled local A.6.RCD claim. Completion separately names the criterion-satisfaction predicate for `completionSubject` and the closure predicate or local claim for `productionWork`; neither substitutes for the other. |
 | `CC-A15.PROD-7` | `productIdentitySpecification` is identified as a C.2.1 episteme before inception without a surrogate future `producedEntity`; a named applicability predicate or filled local claim applies it to the candidate basis, subject context, and `inceptionBoundary`, and the entity is designated only after that applicable rule first holds. Publication availability, when required, is a separate E.24.PUB occurrence. Any claim that this is an edition of another specification names an obtaining C.2.1 `EpistemeEditionRelation`. |
-| `CC-A15.PROD-8` | A positive inception claim satisfies `A15PROD-D1` and names `identityClosingWork`, `productIdentitySpecification`, its named applicability predicate or filled local claim, `inceptionBoundary`, `producedEntity`, and first satisfaction of that applicable specification's rule. |
+| `CC-A15.PROD-8` | A claim of first existence satisfies `A15PROD-D1`. Identify `producedEntity`, `productIdentitySpecification`, its applicability basis, `inceptionBoundary` and the grounds for first satisfaction there. If the claim also attributes inception to `identityClosingWork`, identify that Work and the effects that satisfy §4.5. |
 | `CC-A15.PROD-9` | Concurrent or nested identity-closing work is composed only through A.15.1 work-part relations; incomparable minimal composites remain plural, and each local inception claim retains its identity-specification episteme and applicability basis. |
 | `CC-A15.PROD-10` | A completion use first names `completionSubject`, criterion episteme, applicability, boundary-state facts, and state-satisfaction predicate. A separate Work-completion claim names `productionWork` and the closure predicate or local claim that makes that satisfaction sufficient to close it. Missing closure semantics blocks only Work completion. |
 | `CC-A15.PROD-11` | Historical state-satisfaction and Work-completion claims retain their criterion episteme, applicability basis, boundary, and boundary-state facts. Rework, a later criterion, damage, loss, delivery, acceptance, release, publication, or availability receives a separate claim. |

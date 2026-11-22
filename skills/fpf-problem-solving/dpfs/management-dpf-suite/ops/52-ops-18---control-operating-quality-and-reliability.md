@@ -45,7 +45,7 @@ If a known violation already calls for a protective action, take that action und
 | --- | --- | --- |
 | Has a recurring process changed from its established behavior? | A suitable statistical monitor with a qualified baseline, sampling rule and response policy. | Continue observation or investigate and contain the affected process/result. |
 | Is event-based service meeting its objective? | Definitions of good and eligible events, observation coverage, reporting window and permitted loss. | Report the result against the objective. When a response is needed, apply the authorized policy or identify the missing decision. |
-| Should a particular lot or result be accepted? | Its qualified acceptance plan, defect definitions, sampling basis and relevant risks. | Accept, reject, segregate, rework or obtain the missing acceptance result. |
+| Should a particular lot or result be accepted? | The applicable acceptance terms and evidence for that lot or result. For sampling, include the qualified plan, defect definitions and risks. | Accept, reject, segregate, rework or obtain the missing acceptance result. |
 | Can an impaired service be restored or restarted? | Evidence of the failure, containment or repair, and the required restart conditions. | Restore service when its conditions hold under the appropriate authority. Continue an investigation if the remaining question requires it. |
 | What prevention does an incident or near miss need? | Reconstructed events, material explanations and sufficient support for feasible protective measures. | Select and verify prevention under :4.4, retaining the limits on the causal conclusion. |
 
@@ -55,7 +55,7 @@ For recurring variation, check that the observations are comparable, the baselin
 
 For an event-based service, define the good and eligible events at the service boundary that matters to the recipient. Check omitted events, important subgroups and observation delay. A fast failure can require a timely alert before an end-of-window aggregate is available.
 
-For acceptance, recover the lot or item, what counts as a defect, the sampling/inspection method, and the consequences of accepting unacceptable output or rejecting acceptable output. Obtain the qualified plan where it is missing. An operating practitioner can use a supplied plan without deriving its statistical design anew.
+For acceptance, identify the item or result, the governing criterion and the evidence or act it calls for. A qualified statement tied to one item can suffice under its terms. For a lot accepted by sampling, recover the lot boundary, defect definitions, sampling rule and consequences of erroneous acceptance or rejection. Use the qualified plan already available or obtain the relevant expert contribution.
 
 #### OPS.18:4.3 - Interpret the observation within its evidence limits
 

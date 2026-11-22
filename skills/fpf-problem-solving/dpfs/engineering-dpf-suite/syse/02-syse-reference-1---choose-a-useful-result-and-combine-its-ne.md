@@ -14,8 +14,7 @@ missing provider commitment for `SYSE.18`; an integration result obtained throug
 not make, the release decision in `SYSE.14`.
 
 A provisional project focus can support individual concept work. Before joint work relies on a common focus,
-`SYSE.1` makes participants' referents, interests and contribution connections visible through a
-concrete use. The result may be sufficient common understanding for the current decision, an unresolved
+use `SYSE.1` to establish the common referent and how contributions connect, from the participants’ applicable decisions or work. A concrete use can expose a consequential difference that remains unresolved. The result may be sufficient common understanding for the current decision, an unresolved
 coordination condition, or distinct projects with a defined receiving contribution.
 
 The product SoI belongs to an extended enterprise organized through agreements to create, change, sustain in use or retire that System. Agents acting for its participating organizations establish or accept the objectives and commitments. That product and the immediate engineering subject can differ. A factory, planning organization or shared laboratory can be designed in full as a creator while its products and their uses ground the work. Use `SYSE.1` when this relation is unclear; carry the local subject, required capability and bounded acceptance into the relevant engineering Methods. Several products can share the creator without becoming one product or one project. Local acceptance can finish before their later use, with the remaining assumptions and commitments identified.

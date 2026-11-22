@@ -37,7 +37,7 @@ Name the support intended to remain available. An assisted service can be repeat
 
 #### CUST.6:4.2 - Reconstruct the successful work, including invisible contributions
 
-Follow one useful delivery from preparation to continued use. For each consequential result, recover its inputs, operation, decisions, acceptance and exceptions. Ask the original performer what they noticed, inferred or corrected that the visible procedure omits.
+For a reconstruction of the first delivery, trace its performance from preparation to the use in question. Recover inputs, decisions, corrections, acceptance and exceptions from the people and records that can establish them. For a commission to construct the next delivery method, start with the result and the choices of means left open. The first delivery can reveal hidden work. Another qualified method can also meet the order when the earlier performance is unknown.
 
 Trace the difficult joins. A technically installed tool may still need interpreted inputs, a trained operator, an agreed acceptance example or a recovery route. Include receiving work: the customer may need to produce a monthly file, retain a local administrator or change a workflow.
 
@@ -73,11 +73,11 @@ When material comes from a customer case, receive the permitted common contribut
 
 #### CUST.6:4.5 - Perform the receiving connection
 
-Give another appropriately prepared performer a case within the declared conditions, the intended materials and the support that will be available for ordinary delivery. Let them perform the work. Identify any intervention by the original author so later users can tell what the receiving performer did and what assistance was needed.
+Establish who can supply the next service, which decisions the performer makes and what assistance will be available. A qualified duty roster can supply the service before a particular individual is named. Where adaptation depends on the performer’s judgement, establish that the person or agent on duty can recognize the condition and make the required choice in time with that support. Earlier comparable work may already show this performer's choices, the result and the help used. Use it when the conditions fit. If the uncertainty concerns tacit work another person or agent must now take over, give that receiving performer an appropriate case, the intended materials and the ordinary support. Observe the contribution at issue, including any intervention by the original author.
 
-Distinguish three outcomes. The performer may obtain the result through the intended method; obtain it only through additional help; or fail to obtain it. In the second case, identify the extra contribution. It can become explicit supported assistance, a construction improvement or a reason to narrow the method.
+Record how the result was obtained, which method the performer used and what help they received. They may use the intended method, use a different permitted method, obtain additional help or leave the work unfinished. Success with a different method can settle an order for the service while leaving competence in the intended method open. An order to perform that particular method still requires its use. Determine whether the observed help was necessary before making it a permanent requirement.
 
-Use a consequential changed condition to test adaptation. A performer who succeeds only on a copied example has not yet shown how they will handle the claimed variation. Test the operation that changes; do not repeat unrelated qualification merely to increase the number of trials.
+To promise adaptation, identify a variation that could change the receiving action and what enables the performer to handle it. Use a sufficient prior comparison, a justified property of the method or a trial of the operation whose transfer remains open. A separately ordered fresh trial belongs to the delivery. If several teams will depend on the same specialist, check that assistance can reach each under their service terms.
 
 [IS.5 — Sustain, Transfer, Extend or End Implementation Support](../../is/16-is-5---sustain-transfer-extend-or-end-implementation-support.md) supplies the full transfer and continuation method. Its result includes what the receiving practice can obtain and what support must remain. Use that result to decide whether the delivery method is ready for the proposed ordinary use, still assisted, restricted or unavailable. Do not claim universal transfer from a single constructed or rehearsed case.
 
@@ -97,7 +97,7 @@ A template archive preserves none of those actions. The delivery lead reconstruc
 
 A second qualified team receives the method, tooling, permitted examples and a scheduled specialist. It completes the ordinary path but encounters an undocumented export error. The team stops at the stated return rather than silently changing the meaning of records. The specialist's contribution is measured and retained as assisted provision. A wider promise of unattended deployment is not made.
 
-Change the condition: the second team lacks the skill needed to distinguish a semantic error from a formatting error. Adding another script is insufficient. The provider must develop preparation, obtain the semantic contribution during delivery or narrow who can perform the work.
+Now suppose the second team cannot distinguish a semantic error from a formatting error. When an authoritative and accessible code list determines the meaning, a qualified script can make that distinction during delivery. Where the same code still has two possible meanings, obtain the missing context or arrange timely expert help. If the customer commissioned the operator’s own judgement, establish what the operator can decide with the support offered.
 
 In a public literacy programme, repeatable delivery may require prepared facilitators, accessible devices, examples that participants can use and ongoing help. A shared slide deck alone is not the service.
 
@@ -110,16 +110,16 @@ The original expert can also overstate uniqueness. Try explaining and practising
 ### CUST.6:7 - Conformance Checklist
 
 - Is the next useful result and intended performer preparation explicit?
-- Has invisible work been recovered from the first delivery?
+- Which operations must be supplied for the next assignment? Where the commission depends on the first delivery, what establishes how it was performed?
 - Is each necessary contribution explained, taught, automated, supplied or excluded?
 - Are inputs, examples, access and support available and permitted?
-- Has another prepared performer used the method with visible assistance?
-- Does a changed condition expose a usable adaptation or return?
+- For the named next assignment, what establishes that the receiving performer can obtain the result with the assistance available there?
+- For promised variation, what establishes the adaptation or the point of return, and which unresolved difference calls for a new trial?
 - Are continued maintenance and support included in the burden and promise?
 
 ### CUST.6:8 - Common Anti-Patterns and How to Avoid Them
 
-**Pack completeness proves repeatability.** Judge performed receiving work, not file count.
+**Pack completeness proves repeatability.** For a promise of future delivery, establish that the method can be used with the people and support available on the promised terms. For a claim of completed transfer or use, establish the corresponding action.
 
 **The author is available if needed.** Make that contribution explicit, bounded and funded, or remove the dependency.
 

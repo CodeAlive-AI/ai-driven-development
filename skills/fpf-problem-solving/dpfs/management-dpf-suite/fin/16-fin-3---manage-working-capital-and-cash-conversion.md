@@ -26,7 +26,7 @@ Balance liquidity, contribution, reliability and commercial relationships. Disti
 2. Recover the relevant volumes, prices, variable resource consumption, holding and shortage consequences, expected credit losses and timed payments. Use an adequate [MA][MA] account and [OPS][OPS] feasibility result directly.
 3. Build the no-change and changed dated cash accounts. Include discounts, financing, collection effort, supplier-price changes, lost contribution, taxes where applicable and the transitional stock or receivable change. Separate recurring operating effects from cash released by reducing a balance.
 4. Use cash-conversion measures to explain the mechanism where the business and denominators fit. For a period of N days, inventory days approximate average relevant inventory divided by that period's cost of goods sold, times N; receivable days use average trade receivables divided by credit sales, times N; payable days use average trade payables divided by credit purchases, times N. Cost of goods sold is a purchases proxy only when its adequacy is established. On consistent period and scope grounds, cash-conversion days equal inventory days plus receivable days minus payable days. Investigate cohort, seasonal or overdue-account differences that an average conceals.
-5. Compare feasible alternatives on the same horizon. Preserve service and capacity requirements. A discount offered to a customer is available only when the necessary agreement exists; a supplier extension is not obtained by changing a forecast date.
+5. Compare feasible alternatives on the same horizon, preserving service and capacity requirements. The organization may be authorized to offer a discount before the customer decides. An estimate of take-up can inform that choice. Relying on a particular early payment requires the agreement and grounds for collection in time. A supplier extension also needs the terms that make it available.
 6. Select a policy or return conditional advice with the operational consequence, cash effect and revisit condition. Use FIN.2 to verify reserves across dates and FIN.15 to perform an authorized action.
 
 For a discount offered in exchange for earlier cash, compare its cash cost with the available funding alternative over the same interval. Annualizing a short-period discount can help comparison, but retain its day count, compounding assumption and the amount needed; a large annualized percentage alone does not settle the order decision.
@@ -40,7 +40,7 @@ Working capital arises because buying, producing, delivering, invoicing and coll
 
 Establish why cash is tied up. Slow collections may result from a generous credit term, disputed quality, late invoicing or a customer unable to pay. High inventory may be a seasonal build, a supply-protection choice, a production bottleneck or unsalable stock. Those causes call for different actions. Renegotiating payment terms cannot repair an invalid invoice, and writing off obsolete stock does not release the cash spent to acquire it. Inspect sufficiently detailed product, customer and supplier groups before applying an average policy to unlike cases.
 
-The relevant operating alternative must provide the intended service. Obtain a feasible replenishment or capacity response from operations and its resource/cost consequences from MA. When no alternative operating plan is supplied, report the missing delivery or service condition instead of labeling the lowest stock balance optimal.
+Establish the service each alternative could sustain. Available operating arrangements, a sufficiently reliable supplier commitment or a bound on timely capacity may settle that question. When a needed replenishment plan has yet to be designed, return the affected service condition to operations. A bound that excludes the required service for every permitted stock policy can justify refusing those terms. A proposed new arrangement needs its own grounds before it can be relied on.
 
 
 
@@ -92,14 +92,14 @@ Compare policies on both value and funding. A valuable policy can have an unaffo
 
 ### FIN.3:5 - Archetypal Grounding
 
-Continue FIN.2's order, with a day-7 gap of 40 and no required positive reserve. The customer has agreed to pay 96 on day 6 against 100 of the gross invoice, leaving 1,100 on day 28. All other terms are unchanged.
+Continue FIN.2's order, with a day-7 gap of 40 and no required positive reserve. The customer has agreed to pay 96 on day 6 against 100 of the gross invoice, leaving 1,100 on day 28. For the comparison assume the payments and draw occur on the quoted dates, with all other terms unchanged.
 
 | Feasible response | Day-7 cash | Day-28 cash | Incremental gain over the 500 baseline |
 | --- | ---: | ---: | ---: |
 | Draw 43, fee 3, interest 2 | 0 | 1,155 | 655 |
 | Receive the agreed advance with discount 4 | 56 | 1,156 | 656 |
 
-On these grounds the advance adds one more unit of gain and leaves a buffer. If the customer has merely been asked, the proposed advance remains conditional and is not available for the day-7 payment.
+On these grounds the advance adds one more unit of gain and leaves a buffer. If the customer has merely been asked, the proposed advance remains conditional and is not available for the day-7 payment. If the day-7 promise also covers late collection, finance can act before the outcome is known or arrange a response after notice if it can still settle in time. Include the cost of the chosen protection.
 
 The supplied operating case requires 26–29 rig-hours for 100 units. Twenty hours are usable and a ten-hour block costs 240. Materials cost 200 and supplier service costs 100. Materials and the block require 440 on day 0; the supplier's 100 is due on day 7. These give the incremental payments of 540. Cutting the ten-hour block to improve a cash ratio removes needed capacity, so it is not the same feasible order alternative.
 

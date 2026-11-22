@@ -8,7 +8,7 @@ Use [MDPE.30](25-mdpe-30---construct-a-rhythmic-part-from-a-seed-phase-and-ac.md
 
 ### MDPE.Application:4.2 - Turn the onsets into actual hand and sound parts
 
-[MDPE.30:5.2](25-mdpe-30---construct-a-rhythmic-part-from-a-seed-phase-and-ac.md#mdpe3052---turn-the-onsets-into-actual-hand-and-sound-parts) prescribes alternating hands on audible attacks across the boundary. Three attacks per eight pulses switch the starting hand at the next cycle. The two-cycle timbral exchange can be compared with a single-sound part on the same onsets.
+[MDPE.30:5.2](25-mdpe-30---construct-a-rhythmic-part-from-a-seed-phase-and-ac.md#mdpe3052---turn-the-onsets-into-actual-hand-and-sound-parts) prescribes alternating hands on audible attacks across the boundary. Three attacks per eight pulses switch the starting hand at the next cycle. Each pair of attacks advances the hand twice and brings the allocation back to its starting side. One remaining attack changes sides. The argument covers every repeating cycle with a positive odd number of audible attacks under this rule. The two-cycle timbral exchange in the scored example can be compared with a single-sound part on the same onsets.
 
 ### MDPE.Application:4.3 - Change the receiving condition without confusing the two action rules
 

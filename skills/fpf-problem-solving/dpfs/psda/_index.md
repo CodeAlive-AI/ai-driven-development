@@ -4,7 +4,7 @@
 
 Use this framework to formulate problems, construct decision alternatives and models, and determine how their results can be used in a bounded inquiry or professional engagement.
 
-Anatoly Levenchuk, with AI-assisted development. [Working edition, 24 October 2026](61-psda-sources-2---citation-and-limits.md). Original and adapted framework text: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party sources retain their own terms.
+Anatoly Levenchuk, with AI-assisted development. [Working edition, 22 November 2026](61-psda-sources-2---citation-and-limits.md). Original and adapted framework text: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party sources retain their own terms.
 
 Start with the result the inquiry needs, such as a formulation, model, alternative, comparison, participation arrangement or qualified answer. Reuse an adequate existing result within its conditions. The Readme gives direct entries, the Architectural Reference explains their connections, and the patterns provide instructions, cases and source comparisons.
 
@@ -87,7 +87,7 @@ When the value of a familiar intervention is disputed, PSDA.6 distinguishes attr
 
 If a discussion leaves the inference from reports and opinions unresolved, B.5.SD can help construct it with the contributing expertise the question needs. PSDA.13 can help arrange participation and challenge. A facilitator can also integrate the subject results when competent to do that work. Use a sufficient direct explanation where available.
 
-To apply a method or explain it in ordinary language, identify the objects and differences that matter, the grounds for the findings and what the answer enables. Use available evidence or seek a missing contribution from someone or a service able to supply it.
+Start with who needs to do what with the answer and which choices belong to them. A calculation for a component can settle a question about a service when the service requirement follows from it. If the same calculation fits two arrangements that need different action or different explanations, trace the difference to the parts, work or conditions that could account for it. Use an adequate fact or bound directly. If a needed premise is missing, identify who can supply it and whether obtaining it in time would help. Where designing the inquiry is the practitioner's task, the selections made in the worked cases are examples of choices the practitioner still has to make.
 
 ## A comparison can be correct and still answer too little
 
@@ -103,7 +103,7 @@ Suppose evidence now establishes that mobile deployment is unavailable in the re
 
 The following entries illustrate advice and inquiry with different stopping points. Use the index or search for another question. The [Architectural Reference](01-decision-design-principles-framework-architectural-reference.md) and its [Architectural Rationale](06-psda-reference-5---why-retain-this-connected-language.md) explain how the contributions fit together. If you ask an agent for help with a passage, ask for an explanation of what it lets you do in ordinary language.
 
-If the useful future contribution is unsettled, the [C.40.OCN opportunity construction (FPF C.40.OCN:1)](../../sections/09-part-c---kernel-extension-specifications/109-c-40-ocn---construct-a-bounded-opportunity.md#c40ocn1---problem-frame) can help construct a possibility and identify its next question. The performer can finish that inquiry for its own use. Where a distinct performer is to recommend a direction to a recipient, use the [advising profile](37-development-direction-advising.md) or the second example below.
+If the useful future contribution is unsettled, the [C.40.OCN opportunity construction (FPF C.40.OCN:1)](../../sections/09-part-c---kernel-extension-specifications/111-c-40-ocn---construct-a-bounded-opportunity.md#c40ocn1---problem-frame) can help construct a possibility and identify its next question. The performer can finish that inquiry for its own use. Where a distinct performer is to recommend a direction to a recipient, use the [advising profile](37-development-direction-advising.md) or the second example below.
 
 ### PSDA-CARD-01 — Turn a contested situation into a usable recommendation
 
@@ -140,7 +140,7 @@ Suppose the committee authorizes a study and a qualified source then establishes
 
 In this constructed case the committee has a mandate, and the advisory service meets the competence, confidentiality and conflict conditions. Reliability takes priority over throughput. Security, critical-service continuity and the probe budget are protected. The operating account describes the needed recovery contribution, the interface account describes the arrangement, and the priority statement gives the value at issue. These support construction of the `PSDA.5` alternatives. A comparison of the three whole arrangements is still missing.
 
-The first `PSDA.14` return retains internal development, an external provider and the mixed arrangement. For the recovery result and horizon at issue it identifies the missing whole-arrangement comparison. Use an applicable specialist result if available. Request a further bounded comparison through `A.15.9` when its attainable contribution justifies its full cost. The supplier chooses how to produce the result. The adviser determines what recommendation it supports.
+The first `PSDA.14` return retains internal development, an external provider and the mixed arrangement. For the recovery result and horizon at issue it identifies the missing whole-arrangement comparison. Use an applicable specialist result if available. Request a further bounded comparison through `A.15.9` when its attainable contribution justifies its full cost. The supplier makes the method choices the agreed commission leaves open. If it specifies a procedure or a new performance, establish that contribution as well. The adviser determines what recommendation the result supports.
 
 Now suppose qualified arrangement and security results cover all three directions. The specified provider cannot preserve the security boundary, while internal development remains feasible. A qualified proposal identifies the remaining question, observations that could distinguish the answers, available resources, exposure and stopping conditions. On comparison with immediate commitment, the expected information warrants the bounded cost. Using the relevant value, uncertainty, consequence and robustness results from `PSDA.6`–`PSDA.9`, the adviser can use `PSDA.14` to recommend considering the probe first while retaining internal development. A throughput effect and permission to perform the probe remain open.
 
@@ -189,7 +189,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 - [PSDA.1 - Generate Plural Problem Formulations](18-psda-1---generate-plural-problem-formulations.md) (191 lines)
 - [PSDA.2 - Set and Reopen the Problem Boundary](19-psda-2---set-and-reopen-the-problem-boundary.md) (216 lines)
-- [PSDA.3 - Construct Complementary Situation and Option Models](20-psda-3---construct-complementary-situation-and-option-models.md) (192 lines)
+- [PSDA.3 - Construct Complementary Situation and Option Models](20-psda-3---construct-complementary-situation-and-option-models.md) (196 lines)
 - [PSDA.4 - Select Problem-Structuring Methods and Combine Them When Needed](21-psda-4---select-problem-structuring-methods-and-combine-them.md) (200 lines)
 - [PSDA.5 - Generate Decision Alternatives](22-psda-5---generate-decision-alternatives.md) (177 lines)
 - [PSDA.6 - Represent Values and Trade-Offs](23-psda-6---represent-values-and-trade-offs.md) (331 lines)
@@ -199,7 +199,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [PSDA.11 - Bound the Decision-Support Engagement and Authority Boundary](27-psda-11---bound-the-decision-support-engagement-and-authorit.md) (231 lines)
 - [PSDA.12 - Recover Participants, Concerns, and Affected Systems for a Decision-Support Inquiry](28-psda-12---recover-participants-concerns-and-affected-systems.md) (198 lines)
 - [PSDA.13 - Facilitate Decision-Support Inquiry and Preserve Material Dissent](29-psda-13---facilitate-decision-support-inquiry-and-preserve-m.md) (188 lines)
-- [PSDA.14 - Prepare and Return a Decision-Support Recommendation](30-psda-14---prepare-and-return-a-decision-support-recommendati.md) (226 lines)
+- [PSDA.14 - Prepare and Return a Decision-Support Recommendation](30-psda-14---prepare-and-return-a-decision-support-recommendati.md) (228 lines)
 - [PSDA.15 - Arrange Decision Follow-up or Reassess Advice After a Change](31-psda-15---arrange-decision-follow-up-or-reassess-advice-afte.md) (255 lines)
 - [PSDA.16 - Decide Whether and How to Change Problem-Structuring and Decision-Support Methods](32-psda-16---decide-whether-and-how-to-change-problem-structuri.md) (289 lines)
 - [PSDA.17 - Reconcile Simultaneous Problem-Structuring and Decision-Support Work](33-psda-17---reconcile-simultaneous-problem-structuring-and-dec.md) (242 lines)
@@ -217,7 +217,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [PSDA.Advising:5 - Use the direct result-acquisition Method](42-psda-advising-5---use-the-direct-result-acquisition-method.md) (13 lines)
 - [PSDA.Advising:6 - Keep a qualified live candidate set](43-psda-advising-6---keep-a-qualified-live-candidate-set.md) (15 lines)
 - [PSDA.Advising:7 - Compare for this receiving use](44-psda-advising-7---compare-for-this-receiving-use.md) (15 lines)
-- [PSDA.Advising:8 - Compose the bounded recommendation](45-psda-advising-8---compose-the-bounded-recommendation.md) (32 lines)
+- [PSDA.Advising:8 - Compose the bounded recommendation](45-psda-advising-8---compose-the-bounded-recommendation.md) (34 lines)
 - [PSDA.Advising:9 - Return it for the agreed use](46-psda-advising-9---return-it-for-the-agreed-use.md) (13 lines)
 - [PSDA.Advising:10 - Reconsider only affected advice](47-psda-advising-10---reconsider-only-affected-advice.md) (22 lines)
 - [PSDA.Advising:11 - Worked uses and stopping points](48-psda-advising-11---worked-uses-and-stopping-points.md) (65 lines)
@@ -233,7 +233,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [PSDA.Application:4 - APP-PSD-04 — Mira's development direction, programme comparison, and Guide](55-psda-application-4---app-psd-04-mira-s-development-direction.md) (88 lines)
 - [PSDA.Application:5 - APP-PSD-05 — An engineering company's next development opportunities](56-psda-application-5---app-psd-05-an-engineering-company-s-nex.md) (34 lines)
 - [PSDA.Application:6 - APP-PSD-06 — Unlike subjects, exact recipients, and an anti-case](57-psda-application-6---app-psd-06-unlike-subjects-exact-recipi.md) (47 lines)
-- [PSDA.Application:7 - Choose development support without assuming an office](58-psda-application-7---choose-development-support-without-assu.md) (28 lines)
+- [PSDA.Application:7 - Choose development support without assuming an office](58-psda-application-7---choose-development-support-without-assu.md) (30 lines)
 - [PSDA.Application:End](59-psda-application-end.md) (2 lines)
 
 ### Decision Design Principles Framework Sources and Edition Notes

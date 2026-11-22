@@ -37,7 +37,7 @@ The problem is to construct a feasible observation whose possible records suppor
 
 ### MMP.16:4 - Solution
 
-State the disagreement that matters. Derive the records each alternative can produce under feasible observation choices. Construct a comparison of those records that improves the receiving answer, and compare the attainable benefit with the work involved. Obtain the selected observation only when that comparison supports it; otherwise use the present result or change the question or access.
+Derive which records a feasible observation design could produce and whether they distinguish the possibilities that matter to the recipient. For a design commission, return the design and its warranted resolving power or limitation. For a decision about discretionary acquisition, compare its attainable benefit with the work involved. Carry out an observation when the order includes that performance and its conditions are met. A result already known can answer an inquiry within its scope.
 
 #### MMP.16:4.1 - Locate the consequential disagreement
 
@@ -45,7 +45,7 @@ Write the answer that would differ. It may be a threshold response, a predicted 
 
 Recover what the present observations and assumptions leave possible. MMP.11 constructs the family of models; MMP.12 exposes a recovery ambiguity; MMP.13 supplies probabilistic conclusions when used. Group equivalent parameterizations by the behavior relevant to this question.
 
-Ask which remaining disagreements change the intended answer or a worthwhile later inquiry. If all retained alternatives already support the same sufficient answer, return it.
+Ask which remaining disagreements change the intended answer or a worthwhile later inquiry. If all retained alternatives support the answer the recipient needs, give it with the grounds for their coverage. If the commission also calls for an observation design, use the agreed purpose to specify what to observe and how to interpret it. A separately commissioned observation still needs to be carried out by the observing practice.
 
 #### MMP.16:4.2 - Construct the law of the obtainable records
 
@@ -102,7 +102,7 @@ Use the contrast to generate alternatives: observe where responses differ, resol
 
 For a small set of designs, calculate the selected criterion directly. For a large set, use the applicable search or numerical method from Computational Thinking. Count the cost of evaluating a design as part of the work. If approximate criteria cannot reliably order close candidates, return that uncertainty, retain several designs, or refine the calculation where a changed ranking matters.
 
-Compare against using current information. C.11.DUA governs the attainable contribution, delay, displaced work and any disputed evidence demand. When an information-only design has a bound on its possible benefit below its cost, that bound can end the comparison without computing its criterion more accurately.
+If the decision includes whether to obtain a new observation, compare it with acting on current information. Use C.11.DUA to consider the attainable contribution, delay, displaced work and any disputed evidence demand. For a design valued solely for information, an upper bound on its benefit below its cost can settle that comparison. For a commissioned procedure or observation, compare the feasible ways to provide it when a choice between them matters.
 
 For a sequence of observations, decide whether the immediate comparison represents the intended horizon. An apparently uninformative first step may enable a later separating observation. Construct that continuation with MMP.8.SD when it changes the choice; do not require a full sequential optimization for a sufficient one-step design.
 
@@ -187,13 +187,13 @@ A small named model set also favors choosing a winner. Keep the possibility that
 
 A constructed design supports its intended use when:
 
-- the remaining disagreement and the answer it could change are identifiable;
+- The design states the agreed purpose of the observation and how the resulting records will serve it. For a question about distinguishing alternatives, it identifies the answer that could differ or establishes why the alternatives give the same answer.
 - its predicted records follow from the alternatives and the actual selection and recording procedure;
 - shared unknowns and adaptive choices retain their dependencies;
 - the claimed separation, error property or expected improvement follows from a reconstructible comparison;
 - any criterion based on information names the unknown being learned and its receiving use;
-- feasibility and burden are compared at the scope needed for the decision, using present information as an available alternative;
-- the result explains how the selected records change the answer and when an incompatible record returns to the model or observation assumptions.
+- the proposed design is feasible within the required resources. For a decision about whether to observe, its burden and attainable benefit are compared with using present information;
+- the result explains what could be learned from the design, including answers that would leave a choice unchanged, and when a record would challenge the assumptions. A claim about an observation actually obtained uses the corresponding performance or record.
 
 These conditions concern the mathematical design and its stated assumptions. They do not establish that the observation was performed, that its subject assumptions hold, or that access is authorized. Stronger assurance belongs to the intended use.
 

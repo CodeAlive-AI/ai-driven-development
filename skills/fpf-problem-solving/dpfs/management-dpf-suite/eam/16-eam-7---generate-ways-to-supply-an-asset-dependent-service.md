@@ -45,7 +45,7 @@ A procurement channel can narrow the set before the asset question is answered. 
 
 ### EAM.7:7 - Conformance Checklist
 
-Are the alternatives materially different ways to provide the same needed contribution? Are their realization conditions and continuing consequences visible? Can the recipient distinguish a supported candidate from a concept awaiting a decisive result?
+Do the alternatives give genuinely different ways to meet the service obligation? If a change in demand allows the service to be supplied with a different asset contribution, establish how the change can be made and whether the original obligation still holds. A contractual capacity requirement continues to apply until it is effectively changed. Can the reader identify what could make each proposed option feasible or ineligible? Are the continuing consequences visible, and which candidates are still awaiting a decisive result?
 
 ### EAM.7:8 - Common Anti-Patterns and How to Avoid Them
 

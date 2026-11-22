@@ -246,7 +246,7 @@ For a durable ecosystem-architecture answer, use the following operations as the
 2. Name the family member being created, used, or changed.
 3. Name only the fields from `FPFEcosystemArchitectureRecord@Context` that this architecture claim uses. For PF work, the pattern-language publication carrier exposes a reader-facing expression of the selected problem-and-solution architecture.
 4. If the family member is FPF itself as a framework edition, open `E.4.FPF` for form, presentation carriers, access routes, and whole-FPF adequacy routing.
-5. Apply `E.5.3`: dependencies point toward more stable framework editions. FPF Core does not depend on domain or local frameworks.
+5. Identify the content another edition supplies and the work that needs it. For Conceptual Core, Tooling and Pedagogy, check the permitted import directions in `E.5.3`. For framework editions, apply `E.4.PFR:3.4`. An LPF may rely on a DPF, and either may rely directly on Core. Core must supply its transdisciplinary rule and grounds independently of those domain and local frameworks.
 6. State publication and first-entry claims using `E.11` and `E.17`; state framework-carrier structure-account assertions using `E.4.FPF` for FPF itself or `E.4.DPF`/`E.4.DPF.DA` for domain and local frameworks.
 7. State pattern-use recommendation claims using `E.11.PUR`.
 8. When a framework-architecture question is open, record the selected answer in one `E.9` DRR and use `E.4.PFAD` to profile its framework-specific content. Use `C.32.PAD` only for a project architecture decision and `C.32.ADR` only to project such a decision into an ADR-like publication.
@@ -322,7 +322,7 @@ Mini-example:
 
 The recurrent drift is publication-first architecture: the visible file, all-in-one carrier, card deck, table of contents, or graph is treated as the architecture because it is what a reader sees first. The repair is to name the selected structures and dependency direction first, then use publication patterns to expose them.
 
-Another recurrent drift is Core absorption: useful domain or local material is pulled into the Core because it is well written or broadly reusable. The repair is to ask which domain or local situation the claim addresses and which framework edition should depend on which more stable edition.
+A useful local rule may suggest a Core amendment. Identify what makes the rule hold across the domains where readers would apply it. If its conclusions still depend on one practice's convention or authority, publish those conclusions with that practice. Credit the local source for the discovery when a transdisciplinary argument can stand on its own.
 
 | Lens | Declared bias and counter-check |
 | --- | --- |
@@ -338,7 +338,7 @@ Another recurrent drift is Core absorption: useful domain or local material is p
 | --- | --- |
 | CC-E4.1 First route and family case | The work names the ecosystem question, classifies the likely case, points to the pattern that addresses the case or states what is missing, and opens a complete ecosystem-architecture record only when durable architecture or later reliance needs it. When a record is needed, it names whether the family member is Core, Tooling Reference, Pedagogical Companion, a foundational principle pattern set, a First Principles Framework edition, FPF Core, a domain principle framework, or a local practice framework. |
 | CC-E4.2 Selected structures named | The ecosystem-architecture record names its intended use and every field from `FPFEcosystemArchitectureRecord@Context` that the claim uses. Cite a source, pattern host, publication relation, or bounded model-use structure only when the record uses that independently established value. |
-| CC-E4.3 E.5.3 respected | Dependency direction points toward more stable framework editions, and Core does not depend on domain or local frameworks. |
+| CC-E4.3 E.5.3 respected | For each claimed dependency, identify the required content and its use. The direction must be permitted for those families and the imports must remain acyclic. Core must remain usable independently of domain and local frameworks. |
 | CC-E4.4 Publication and access separated | Each publication form or unit, presentation carrier, access route, access occurrence, and view keeps its subject and predicate. Apply the pattern that defines each claim. |
 | CC-E4.5 Exact predicate and assertion named | Each architecture-adjacent claim names its exact subject and predicate; a pattern identifier is only the locator for the next question's defining or constraining ClaimGraph. |
 | CC-E4.6 Source-return present | Any carrier used as architecture evidence states captured structure, lost structure, admissible use, and the source to return to. |

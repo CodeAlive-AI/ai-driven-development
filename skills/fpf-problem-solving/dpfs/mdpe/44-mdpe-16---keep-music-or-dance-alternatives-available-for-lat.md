@@ -22,7 +22,7 @@ You may encounter the following situations.
 
 The practical question is:
 
-> Which materially different alternatives could be used for this purpose at the time in question? If any should be kept or restored, what would that require?
+> What could be used for this purpose at the time in question, and which alternatives does the recipient need to identify separately? If any should be kept or restored, what would that require?
 
 A musician, dancer, teacher or organizer can identify what could be reconstructed, rehearsed, performed, taught or tested under the stated conditions. A project can use that finding to retain alternatives or identify what would make a currently unavailable option usable.
 
@@ -44,7 +44,7 @@ If the evidence leaves the use, branch or availability uncertain, report what is
 
 | Name | Meaning here |
 | --- | --- |
-| development alternative | An identified existing branch or proposed arrangement offering a materially different answer to the same question, for example through a different method, structure, use, performance characteristic or failure mode. |
+| development alternative | An existing branch or proposed arrangement distinguished for the receiving use by its identity, method, structure, availability, performance characteristic or failure mode. |
 | variant | An identified version related to a source or another version by variation, derivation, transformation, lineage or another stated family relation. Establish the relation for the claim being made. |
 | live alternative | A branch whose availability for a specified use is supported under the stated conditions. A title, file, earlier performance or maintenance plan can have value even when one of those conditions remains unknown. |
 | branch availability | A performer or performing arrangement can use the branch as claimed with the necessary skills, dependencies, rights, resources, access and configuration at the time in question. |
@@ -89,7 +89,7 @@ Keeping alternatives takes resources. A catalogue can survive the loss of player
 
 ### MDPE.16:3 - Solution
 
-Identify the alternatives that answer the same question differently and the date, occasion or future use at issue. Establish which were or are usable, unavailable or uncertain from the actual performers, resources, rights and configuration. That finding can answer a historical, current or prospective availability question. To keep alternatives usable, compare the benefits and cost of maintenance, repair or reconstruction. Use a required trial for the claim it qualifies. For an optional trial, weigh its attainable contribution against its full cost and delay. Use actual deadlines for rights, resources or qualifications. For a suspected selection pressure, distinguish the observed trace, an applicable constraint, a hypothesis and a supported causal conclusion.
+Identify the alternatives the recipient needs to distinguish and the date, occasion or future use at issue. Two permitted editions can sound alike while both belong in a catalogue. For a performance choice, that same distinction may have no bearing on what to play. Establish which were or are usable, unavailable or uncertain from the actual performers, resources, rights and configuration. That finding can answer a historical, current or prospective availability question. To keep alternatives usable, compare the benefits and cost of maintenance, repair or reconstruction. Use a required trial for the claim it qualifies. For an optional trial, weigh its attainable contribution against its full cost and delay. Use actual deadlines for rights, resources or qualifications. For a suspected selection pressure, distinguish the observed trace, an applicable constraint, a hypothesis and a supported causal conclusion.
 
 The same work may rehearse a branch, maintain its availability and test it. Identify which work was actually done when effort or results are being attributed.
 
@@ -98,7 +98,7 @@ The same work may rehearse a branch, maintain its availability and test it. Iden
 Identify the following where they affect the question.
 
 - The music or dance subject and relevant configuration.
-- The question that the candidate branches answer differently.
+- The recipient’s question and what makes alternatives distinct for that use, including edition identity where it matters.
 - The use in performance, teaching, reconstruction, comparison, return to a source or combination that gives each branch its value, if any.
 - The relevant date or horizon and any choice still to be made.
 - Who maintains or maintained the branches, if that matters.
@@ -113,7 +113,7 @@ Identify who holds the relevant rights, controls resources or can perform the wo
 
 #### MDPE.16:3.2 - Identify or develop alternatives for the same question
 
-For each candidate, identify the material, method, performer or arrangement involved and the materially different answer it offers to the same question.
+Identify what counts as a distinct alternative for the receiving job. Two authorized editions can specify the same audible part. One may suffice for a player who needs a playable part. A catalogue of every usable edition must identify both and account for the scope of its search. If the editions give different players the right to play, keep that difference when deciding who can use them.
 
 A score or recording may supply material, a dancer or robot may perform, and a method or event format may organize the work. Compare proposed or existing branches as different ways to answer one question, including those whose feasibility remains open. Separate genuinely different questions, and examine components together when their joint contribution matters.
 
@@ -294,7 +294,7 @@ dancer needs evidence relevant to their aims, abilities and intended use. Keep p
 
 In the [shared-practice case](42-mdpe-25---renew-a-shared-music-or-dance-practice.md#mdpe2551---a-complete-constructed-case-the-evening-that-became-a-qualification-course), two participants can already use a compact pause-and-response phrase together on the social floor. Ren's prepared-performance contest excluded it under the large-visible-change rule. The participants also know a larger display phrase. Keeping both preserves a usable response and an achievement valued for display under different conditions.
 
-When the local challenge changes to responsive partnering, the performers try to insert the compact pause and recovery into the larger phrase. Sol devotes twenty minutes of the staffed advanced lesson to the transition, displacing another figure. At first the visible sequence obscures the partner's pause. The pair shorten the approach, resume in time and report comfortable continuation. This establishes the combined phrase for this pair and task. Combining the component skills with a different partner remains a separate question.
+When the local challenge changes to responsive partnering, the performers try to insert the compact pause and recovery into the larger phrase. Jules, who teaches the advanced class, agrees to devote twenty minutes of that lesson to the transition, displacing another figure. At first the visible sequence obscures the partner's pause. The pair shorten the approach, resume in time and report comfortable continuation. This establishes the combined phrase for this pair and task. Combining the component skills with a different partner remains a separate question.
 
 The group retains the compact social response, prepared display and tested combination. Ren removes the large-change entry rule and observes from a position where the smaller response is visible. The earlier contest result remains evidence about display. The compact phrase contributed responsiveness, and the larger phrase a challenge its performers still valued.
 
@@ -314,7 +314,7 @@ Recognize a complete first result when a practitioner can answer:
 
 For assurance, check the distinctions on which the finding relies.
 
-- The branches each answer the same question differently. Components of one arrangement have their own uses.
+- The comparison retains the alternatives the recipient needs to distinguish, including separate editions with the same musical result when their identity matters. Components used together are assessed as one arrangement when that is the proposed alternative.
 - A file, snapshot, plan or former capability is used only for the availability conditions it helps establish.
 - A claim of availability identifies the branch, time, use, capable performer and needed conditions, with suitable evidence. If upkeep was necessary, identify its authority and achieved result.
 - Keep availability, archive and front membership, pool policy, selection and the current `OptionSet` distinct when a claim relies on them.

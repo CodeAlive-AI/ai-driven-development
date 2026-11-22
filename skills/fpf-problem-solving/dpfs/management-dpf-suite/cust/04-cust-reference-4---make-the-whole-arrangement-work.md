@@ -1,6 +1,6 @@
 ## CUST.Reference:4 - Make the Whole Arrangement Work
 
-Customer usefulness, common reuse, current service, resources and permission constrain one arrangement. Individually plausible contributions can be impossible together. A customer may accept an outcome target, engineering may produce a working component and accounting may show an attractive unit cost, while the only qualified specialist is already committed elsewhere. The joined promise remains unavailable until that conflict is resolved.
+Customer usefulness, common reuse, current service, resources and permission constrain one arrangement. Individually plausible contributions can be impossible together. A customer may accept an outcome target, engineering may produce a working component and accounting may show an attractive unit cost, while the only qualified specialist is already committed elsewhere. The joined promise remains unavailable until that conflict is resolved. Identify what choices remain with each customer and what the provider must commit before customers choose. A member can fit a particular order while two permitted orders together exceed available support. Conversely, the same preparation or service can satisfy several orders when each customer can use it on the promised terms.
 
 CUST.1:4.3 explains how to make the relevant decisions governable. Recover the needed contributions, actual decision authority and timing, then join the answers before a consequential promise. A shared role holder may supply several answers; a consequential conflict can require separate judgement.
 

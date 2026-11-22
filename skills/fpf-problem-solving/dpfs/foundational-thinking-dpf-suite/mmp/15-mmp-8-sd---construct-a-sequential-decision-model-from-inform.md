@@ -237,7 +237,7 @@ A model with one decision maker can also conceal information held separately by 
 - The proposed state has an obtainable initialization and update. Its sufficiency or approximation is tied to the selected actions, criterion and horizon.
 - The accumulated consequence includes the relevant terminal contribution, resource constraint or remembered progress.
 - The continuation relation preserves the order of observation, choice and aggregation over uncertainty.
-- A worked comparison returns a useful policy consequence, bound or unresolved distinction; any real changed premise is propagated to its affected use.
+- The derivation, applicable result or comparison establishes the requested policy consequence, bound or unresolved distinction. A changed premise is followed to the decision it affects.
 - Additional data or computation is selected for its possible effect on the decision. A sufficient result can be used directly.
 - The mathematical model, computed policy and subject performance have distinct claims and required contributions.
 

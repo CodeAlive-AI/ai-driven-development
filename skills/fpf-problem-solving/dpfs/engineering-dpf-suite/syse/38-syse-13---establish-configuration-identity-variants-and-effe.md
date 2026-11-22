@@ -123,9 +123,7 @@ Use [the record-and-time explanation](38-syse-13---establish-configuration-ident
 2. **Identify actual and intended subjects.** Name every subject needed by the decision—for example, an actual
    unit, part, site, or possible-future referent. State needed part–whole and structure relations; a product code
    or bill-of-material row is not the bearer.
-3. **Choose item boundaries for this use.** Designate only the entities that must be distinguished independently,
-   such as Systems, parts, software-package epistemes, or descriptions. Different kinds of receiving Work may
-   choose different boundaries; relate them instead of forcing one granularity.
+3. **Choose item boundaries for this use.** Start with what the engineer must locate, replace, authorize or explain. Could the same inventory describe a permitted installation and an incompatible one because the items are connected differently, assigned to different positions or fitted at different times? Keep the distinguishing relation. If the requirement holds for every interchangeable member of an identified lot, the lot and evidence of membership can suffice. Identify an individual when the action or the promised traceability requires it. Relate the item boundaries used in design, installation and service to the configuration or correspondence the decision requires. For a proposed configuration, identify the intended parts and interfaces. Establish the installed relations when the decision concerns an actual installation.
 4. **Resolve identifiers and check the direction of each mapping.** Identify the bearer of each entry under its issuing or maintaining Agent, effective interval and applicable assignment or rule. When the decision uses a correspondence between entries, state its direction and evidence. A serial number can lead to a part definition used by many units. To identify one unit from that definition, recover the additional binding that selects it. Record any information the correspondence loses.
 5. **Separate variants, units, packages, installations and editions when they matter.** Identify relevant variant descriptions and any units claimed to realize them. For
    software, identify the package and relevant description edition. When a claim concerns an installation, distinguish the installed realization from
@@ -254,12 +252,9 @@ epistemic status when broad field evidence is unavailable.
 
 ### SYSE.13:7 - Conformance Checklist
 
-- [ ] One receiving decision and the configuration differences that can change it are stated.
-- [ ] Each actual System and part has its own identity; descriptions, identifiers, records, and status claims have
-      their own bearers.
-- [ ] Every configuration-item boundary has a decision-specific reason.
-- [ ] Product-family variants, actual units, software packages, installed realizations, and description editions
-      remain distinct.
+- [ ] The configuration basis covers the receiving decisions and the differences that could change them.
+- [ ] Item boundaries and identifiers resolve the subjects the work must distinguish. A family or lot claim has grounds for the members and conditions it covers.
+- [ ] A conclusion using a description, package, installation or observation has the correspondence it needs to the configuration in question.
 - [ ] Each load-bearing effectivity claim names the units or lots, sites, intervals, and conditions required by
       the use.
 - [ ] Cross-scheme mappings state direction, preserved meaning, loss, evidence, and use limits.
@@ -349,11 +344,8 @@ changes the relying step only where its subjects, conditions and result fit.
   the evidence to the subject, conditions and interval of the configuration claim. An installed-state claim needs evidence for the identified unit.
 - `F.10`, `A.21`, `A.2.8.PER`, `C.11`, `A.15.1`, and `A.3.4` distinguish status, gate, permission, choice, Work,
   and transformation from configuration claims.
-- A compatible `SYSE.6` result can supply architecture constraints for the same System, decision, configuration,
-  and horizon. It neither selects item boundaries nor proves an actual configuration.
-- A decision-specific configuration basis can inform `SYSE.14` only for the same change and release question and can inform `SYSE.11` only for the
-  named integration or modernization increment. Use separate authority for the release decision and unit-specific evidence for any claim that a change
-  was carried out.
+- `SYSE.6` can supply applicable architecture constraints. To use them for another configuration, establish the part, interface or operating-range relation on which the constraint depends. Identify actual configuration through evidence for the relevant item.
+- Identify which configuration facts carry over to the change, release or integration increment considered in `SYSE.14` or `SYSE.11`. Use separate authority for release and unit-specific evidence for a claim that a change was carried out.
 - `SYSE.7` coordinates several decision-usable descriptions. `SYSE.19` revalidates decisions after a relied-on
   source changes. Co-use creates no additional dependency or temporal order.
 - Application profiles—such as software, electrical, mechanical, manufacturing, medical-device, ship, or

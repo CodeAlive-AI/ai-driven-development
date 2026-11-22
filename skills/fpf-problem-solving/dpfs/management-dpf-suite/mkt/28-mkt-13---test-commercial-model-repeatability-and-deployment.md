@@ -63,17 +63,17 @@ Name the receiving work before the trial finishes. The operating team needs more
 
 #### MKT.13:4.4 - Observe a complete attempt under relevant conditions
 
-Follow a real attempt far enough to answer the selected question. For an ordinary provision claim, follow suitable customer selection, contact, choice, agreed terms, inputs, performance, use and support. Preserve where the work stops and why. An inquiry about purchase alone need not wait for years of later use, but its conclusion must remain about purchase.
+For a claim about an actual attempt, trace it far enough to establish the result commissioned, from selection and terms through use or support where these matter. For a proposed repeatable service, identify what makes each required contribution available under the ordinary terms and variations. A binding restriction can already exclude the proposal, and an existing qualification can establish fitness under the conditions it covers. An expressly ordered new trial calls for that performance.
 
 Record material assistance and deviations. Identify whether the founder supplied a personal introduction, unusual discount, manual repair, omitted invoice or unplanned night work. These can be legitimate ways to learn; their cost and availability must enter the proposed repeatable arrangement if it still depends on them. Remove the dependency before claiming ordinary provision without it.
 
-Compare attempts across the differences relevant to deployment. Repetition by the same expert for similar friendly customers may leave another team or channel untested. Select cases that can expose a consequential variation rather than merely accumulating successes. Preserve refusals and ineligible cases; distinguish whether an opportunity was eligible from whether an attempt succeeded.
+Examine differences that could change provision. For uncertain routes, compare attempts under the affected teams, customers or channels. Preserve their refusals, assistance and eligibility. A rule common to those routes can establish the relevant conclusion across them. Show how its premises hold wherever the offer is intended to apply.
 
 Return the observed result and its limit. Distinguish “this attempt succeeded”, “the ordinary team repeated this bounded service under these conditions”, and “the proposed larger deployment is supported”. A few successful attempts can justify a limited next commitment under uncertainty. A population rate or a larger deployment needs evidence appropriate to that claim.
 
 #### MKT.13:4.5 - Test whether the proposed repetition can be sustained
 
-Join the customer result to acquisition, complete provision, continued use where relevant, and the means of funding the next period. Use [Account for Customer and Product Economics Over Time (MA.8)](../ma/_index.md) for the population, dated flows, future obligations and prospective alternatives. Retain expenses that the pilot concealed, including founder time valued on an appropriate basis and the cost of replacing exceptional assistance.
+Join the customer result to acquisition, complete provision, continued use where relevant, and the means of funding the next period. Use [Account for Customer and Product Economics Over Time (MA.8)](../ma/_index.md) for the population, dated flows, future obligations and prospective alternatives. Account for the help that each arrangement would actually use. In describing the pilot, include the founder’s time on the stated basis. For a replacement arrangement, price the replacement and any genuine overlap during transition.
 
 If continuation depends on a growing base, use STR.8's period account: define who is active, reconcile entries and exits, explain the source and delay of the next contributions, and locate the receipts that could fund them. Repeated visits are not new customers; referrals are not acquisitions until the relevant condition is met. A lifetime contribution forecast and a count of invitations do not finance next month's work.
 

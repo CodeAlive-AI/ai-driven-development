@@ -7,7 +7,7 @@
 
 **Use this when** several control architectures appear feasible, or a change of model, hardware, rate or operating demand can invalidate an existing arrangement. Tuning each controller independently does not decide which complete arrangement should be built.
 
-Start with the same required behavior and resource boundary for every candidate. The first useful result is a feasible whole configuration, its comparison with serious alternatives, and the conditions under which its implementation and later use remain justified.
+Recover what the recipient will decide. For a choice among architectures, compare feasible whole arrangements under the same demand and resource limits. To qualify one proposed arrangement, establish how its information, commands, dynamics and implementation fit together for the required duty. To assess whether a family of designs could work, identify the design choices allowed to vary and the operating conditions each must cover. A common incompatibility, or grounds excluding every allowed choice, can settle that question. An unsuccessful search leaves the configurations it did not rule out open.
 
 For a fixed, qualified architecture requiring only a local parameter adjustment, use the relevant controller-design method directly and reopen the whole only if that adjustment changes a relied-on interface, resource or constraint.
 
@@ -32,9 +32,11 @@ The problem is to choose and realize a configuration whose control, model and re
 
 Use C.39 to connect the required result to its supplying operations and C.32/SYSE.6 to retain whole alternatives. A candidate specifies the decomposition, model and its operating domain, exchanged command, timing and reset semantics, controller law, feasible command domain, planning continuation and implementation resources.
 
+For an assessment, follow each required behavior to the decisions and physical effects on which it depends. Determine which conditions must hold together, including how loads or delays can coincide and what the controller knows before acting. Choose the detail of each model by whether the distinctions it removes could change that conclusion. A plant-wide bound can answer a question about one output. A component certificate can answer a question about the whole loop when the interface and the other parts preserve its premises and entail the required behavior.
+
 For this comparison, distinguish the choices that define the architecture from the parameters tuned within it. The number of layers, model order, kind of command, sampling periods, planning horizon and processor arrangement can change the problem being solved. Gains, weights and numeric tolerances tune a selected construction. Changing either group can reopen the other.
 
-CAD.1–CAD.3 construct the decomposition, connected dynamics and admissible commands. Existing qualified results can replace repeated design work. If the interface law changes, the old error bound is not a reusable result for that new law.
+CAD.1–CAD.3 construct the decomposition, connected dynamics and admissible commands. Existing qualified results can replace repeated design work. When the law changes, check which laws, command histories, disturbances and initial states its error certificate already covers. For $e^+=ae-d$, a proof of $|e|\le0.1$ for $|a|\le0.5$, $|d|\le0.05$ and $|e_0|\le0.1$ covers a gain change from $a=0.5$ to $0.25$: the next error is at most $0.5(0.1)+0.05=0.1$. Re-establish any premise outside the certificate and carry the supported bound into the rest of the comparison.
 
 #### CAD.4:4.2 - Evaluate feasibility before ranking attractive scores
 
@@ -50,14 +52,14 @@ When the performance claim requires optimality, robust stability or task complet
 
 Use MMP.22 to turn the mathematical operation into a workable computation. Identify the data needed when the operation starts, the work that can be prepared ahead, the result required at its deadline, and what must happen if it is unavailable.
 
-A necessary timing comparison is
+For isolated periodic tasks that each must finish before their next release, compare certified upper bounds on their response times with their periods:
 
 $$
 C_{\mathrm{fast}}\leq T_{\mathrm{fast}},\qquad
 C_{\mathrm{plan}}\leq T_{\mathrm{plan}},
 $$
 
-where C bounds execution under the selected implementation. These isolated inequalities are not sufficient on a shared processor: blocking, interference, communication and scheduling must fit the deadlines together. An operation count or mean runtime is not a worst-case execution bound.
+where each C includes the elapsed time from release of a task to the required delivery. Passing these tests certifies timing for that arrangement. A 6 ms upper estimate for a 5 ms deadline leaves timing open if the estimate is loose. An admissible late job defeats the deadline guarantee. On a shared processor, derive response bounds with blocking, interference and communication included. If delivery may extend past the next release, compare each result with its own deadline and the sustained workload with available capacity. For example, two independent 4 ms pipeline stages can deliver one result every 5 ms with a latency of 8 ms. This arrangement needs a consumer that permits that latency and supports the intervening commands.
 
 If planning finishes one period after its observation, model that delay and the command that controls the intervening period. Preparing a future segment can make the delay harmless for a predetermined reference but not automatically for a newly observed obstacle. Increasing the processor speed changes the feasible architecture set.
 
@@ -67,7 +69,7 @@ If an online solver returns only a partial iterate, separate the time spent solv
 
 #### CAD.4:4.4 - Search jointly, with bounded conclusions
 
-A practical first search can enumerate a small number of architecture choices and, within each, solve or tune the continuous parameters. Recompute the error and command domain for every material change. Reject a setting whose necessary constraints fail; retain unresolved settings separately from feasible ones.
+A practical first search can enumerate a small number of architecture choices and, within each, solve or tune the continuous parameters. For each changed setting, reuse a certificate that covers it or rederive the affected bound. Reject a setting when its required behavior is shown to fail. If a sufficient test leaves feasibility open, retain that distinction in the comparison.
 
 Compare feasible candidates through task-relevant trade-offs and costs. Do not collapse incompatible obligations into an invented scalar score. A Pareto comparison can expose choices where one candidate is faster but more resource intensive. If the search covered only a grid, selected controller class or local optimizer, state that reach; it does not prove global architectural optimality.
 
@@ -117,10 +119,10 @@ A convenient cost model can favor the hardware at hand. A small parameter search
 
 ### CAD.4:7 - Conformance Checklist
 
-- Complete candidates are compared under the same task and constraints.
+- An assessment answers the stated question about the proposed configuration or design family. A comparison uses the same required behavior and constraints for each alternative.
 - Connected feasibility and continuation are established before performance ranking.
 - A convergence or optimality claim has its own applicable grounds.
-- Execution, communication and scheduling assumptions fit the implemented arrangement.
+- A design conclusion states its execution, communication and timing premises. A conclusion about an installation establishes the premises that matter there.
 - Search limits and unresolved candidates are visible.
 - When conditions change or a fallback is used, the designer identifies any premises that have changed and rechecks the conclusions that depend on those premises.
 

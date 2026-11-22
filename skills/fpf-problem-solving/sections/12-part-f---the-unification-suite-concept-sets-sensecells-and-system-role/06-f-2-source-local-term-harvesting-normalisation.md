@@ -71,7 +71,7 @@ Choose the LNF with minimal editing and explain the LocalSenseClaim. When the re
 
 Ask: **“What has this source use not established?”**
 
-Do not infer sameness, substitution, hierarchy or transfer across sources. Matching spelling alone cannot justify merging materially different uses across editions or languages. Keep the expression distinct from the value that the substantive claim concerns. Take a needed cross-source relation question to F.9.
+A local reading establishes what the expression denotes in its source. Take a proposed relation between source meanings to F.9. When the question is whether particular work followed a process, recover the method and the performed actions through F.11. Matching words across two records cannot establish performance.
 
 ### F.2:7 - Normative guard-rails
 
@@ -93,7 +93,7 @@ Do not infer sameness, substitution, hierarchy or transfer across sources. Match
 * **ITIL 4 (2020), selected service-management use** — expression and LNF `service-level objective`; Tech **SLO**; Plain **service target**; claim: “A target value or range for a service characteristic.”
 * **NIST RBAC (2004), RBAC scheme** — expression and LNF `role`; Tech **access role**; Plain **permission grouping**; claim: “A named grouping of permissions used in access-control assignment.”
 * **SOSA/SSN (2017), SOSA scheme** — expression and LNF `observation`; Tech **observation**; Plain **act of observing**; claim: “An act applying a procedure to a feature of interest to obtain a result.”
-* **IEC 61131-3, cited edition and runtime passage** — expression and LNF `task`; Tech **task**; Plain **scheduled program execution**; claim: “A cyclic or event-driven runtime unit that invokes programs.”
+* **IEC 61131-3, cited edition and runtime passage** — expression and LNF `task`; Tech **task**; Plain **unit that calls programs on a cycle or in response to an event**; claim: “A cyclic or event-driven runtime unit that invokes programs.”
 
 ### F.2:9 - Didactic heuristics (informative)
 
@@ -132,9 +132,9 @@ Use the completed PROV-O note as one source-backed input. The BPMN, SOSA/SSN and
 
 #### F.2:11.2 - Control and services
 
-* **State-space control source, cited passage and scheme** — `actuation`; Plain **control output**; claim: “A signal applied to influence plant state or output.”
-* **IEC 61131-3, cited runtime passage and scheme** — `task`; Plain **scheduled program execution**; claim as above.
-* **ITIL 4 (2020), incident-management use** — `incident`; Plain **reported service disruption**; claim: “An unplanned interruption or reduction in service quality.”
+* **State-space control source, cited passage and scheme** — `actuation`; Plain **signal applied to the plant**; claim: “A signal applied to influence plant state or output.”
+* **IEC 61131-3, cited runtime passage and scheme** — `task`; Plain **unit that calls programs on a cycle or in response to an event**; claim as above.
+* **ITIL 4 (2020), incident-management use** — `incident`; Plain **unplanned service interruption or loss of service quality**; claim: “An unplanned interruption or reduction in service quality.” A qualifying interruption may be unreported. If a contract starts its response clock at notification, establish that event separately.
 
 Use the source's service-disruption criteria to decide whether a reported plant fault also qualifies as an ITIL incident.
 

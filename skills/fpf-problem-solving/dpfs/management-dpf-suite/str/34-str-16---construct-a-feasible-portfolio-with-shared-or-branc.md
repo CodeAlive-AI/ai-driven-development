@@ -80,14 +80,14 @@ At a proposed connection between branches, make the receiving action explicit:
 | Relation being proposed | Question that establishes its practical meaning | Consequence for the portfolio |
 | --- | --- | --- |
 | A result is needed before another action | Which result, at what qualification and time, does the receiving operation consume? Could it proceed with a current or alternative result? | Retain a dependency only for the affected action. Provide its result, substitute, narrow the promise or defer that action. |
-| One contribution supports several branches | What same operation or result remains usable for each receiver, and what separate adaptation remains? | Count one supplying effort and each receiving branch’s required application effort. Test its capacity and change obligations jointly. |
+| One supplying performance or existing result may serve several branches | Which receivers can use that result under their terms? Which require distinct performances, independent judgements or adaptation? | Count the work of supplying the common result once, each distinct performance and any receiving effort where they occur. Test joint capacity when the promises depend on it. |
 | Branches compete for one resource | Which identified person, device, provider window or funding condition is shared? | Combine their demands in the windows when the resource is available. Establish any separate result dependency from a receiving use. |
 | A result might open a later use | What possible use becomes more plausible or attainable, and what is still unknown? | Retain a qualified opportunity or research hypothesis. Do not put its uncertain result on the current delivery path. |
 | Results are pursued together for independent purposes | Why does each belong in the chosen strategic direction even without the other? | Compare their joint resource demand and the trade-off a choice would require without inventing a causal or input connection. |
 
 To test a claimed dependency, remove the supplying result in thought while keeping the other conditions fixed. Identify the specific receiving operation that becomes impossible or inadequate. If existing knowledge still supports the product, the new research is not a prerequisite for that product. Its scientific worth can remain a separate reason to fund it. If an unknown operation is indispensable to the product promise, either construct it, commission an appropriately bounded inquiry, use another way, or narrow the promise. A research schedule cannot guarantee discovery.
 
-For each dependency, establish why the supplied result meets the receiver’s conditions. A general method may need a domain model, permitted data, interpretation or preparation before it can be used. Trace the result through a representative piece of work, using a suitable existing demonstration where available. If a necessary operation is missing, state which receiving work is blocked and which branches have independent grounds to proceed.
+For each dependency, establish why the supplied result meets the receiver’s conditions. A general method may need a domain model, permitted data, interpretation or preparation before it can be used. An applicable rule, an earlier result or a bound can establish whether the contribution will be usable. Trace the result through actual work when the claim concerns its use. Try a proposed arrangement when the trial itself is due or could resolve a material uncertainty. If a necessary operation is missing, state which receiving work is blocked and which branches have independent grounds to proceed.
 
 Distinguish developing content, using it and improving it. An AI-produced explanation might support immediate performance of a familiar operation. For a reusable method, establish the construction and grounds. For a new ability, use evidence about the subject whose capability changed. Include the context, tools, interpretation, checks and repairs the chosen AI use requires.
 
@@ -95,7 +95,7 @@ Distinguish developing content, using it and improving it. An AI-produced explan
 
 Identify a contribution that could serve several receivers. Examples include a shared method, source maintenance, a reusable AI operation, a permitted case collection or preparation for the same provider task. Define what each receiver needs before choosing an office or other organizational form.
 
-**Shared support.** Specify the contribution, its supplier, the receiving applications and the conditions of use for each. Identify responsibility for maintenance, authority to change it, who needs notice, and where a failed use can be addressed. Check capacity for combined demand and a feasible response to a common failure. Add the interpretation, adaptation, integration, feedback, acceptance and continuing support each branch would still need.
+**Shared support.** Specify the contribution, its supplier, the receiving applications and the conditions of use for each. Identify responsibility for maintenance, authority to change it, who needs notice, and where a failed use can be addressed. Check capacity for combined demand. If a common failure could change the choice, examine its consequences and any agreed right to stop or duty to restore the contribution. Add the interpretation, adaptation, integration, feedback, acceptance and continuing support each branch would still need.
 
 **Support within each branch.** Each branch obtains and maintains what its own receiver needs. Branches can refer to the same external source or exchange reusable results without sharing an internal supplier. Include repeated construction, separate maintenance and any necessary reconciliation when comparing this arrangement.
 
@@ -103,7 +103,7 @@ Compare shared and separate provision where both are credible. Common support ca
 
 To test a proposed shared contribution, use the following operations.
 
-1. Identify the smallest content or operation that would remain usable for every receiver included in the proposed sharing. Keep application-specific inputs and promises with the corresponding uses.
+1. Identify what each receiver is due and when. Find the content or performance that would serve them in common. Preserve separate executions, independent judgements and application work wherever their terms require them.
 2. Follow that contribution into each receiving use. Identify required input conversion, professional judgement and fallback or correction. Count those as application work unless there are grounds to share them too.
 3. Compare a common production and maintenance effort plus the required applications with adequate separate provision for the same receivers. Include coordination, migration and any work repeated along either route.
 4. Examine a relevant change in use, such as changed requirements, withdrawal or higher demand from one receiver. Determine what the others still need, which effort would disappear and which shared obligations would remain.
@@ -119,9 +119,11 @@ When the support result and its acceptance criteria are stable, use an adequate 
 
 Compare candidate arrangements from the same current configuration over the same horizon. Include present commitments, protected reserve, development and continuing obligations. Use an adequate existing account. When a contribution is missing, MA.1–MA.2 can establish resource demand and capacity, OCE.11 can examine coexistence with current operations, and STR.14 can reconcile simultaneous strategic work.
 
-Count each actual or proposed supplying effort once. Add the application effort at each receiver. If one person works as researcher, methodologist and mentor, compare the combined demand with that person’s availability. Pool resources only if their capabilities and time windows make them interchangeable for the receiving use. Preserve separate demands on compute, AI engineers, researchers and mentors even when they all have prices.
+Count the work of producing a reusable result once when it can serve the covered receivers. Two executions of the same method can consume separate time even if their outputs agree. Add application effort wherever an actual or proposed receiver must perform it. If one person works as researcher, methodologist and mentor, compare the combined demand with that person’s availability. Pool resources only if their capabilities and time windows make them interchangeable for the receiving use. Preserve separate demands on compute, AI engineers, researchers and mentors even when they all have prices.
 
 Begin at the coarsest time window that can expose a decisive conflict. Refine to a week, shift or booked session when timing could defeat the combination. Include preparation, learning, supervision, integration, feedback, failures, recovery and the work of constructing and maintaining the coordination itself where they are needed. A feasible total can conceal an impossible first week.
+
+Establish who may choose which work arrives, which provider performs it and when a commitment becomes irreversible. For a fixed set of orders a workable allocation in time can be sufficient. For a guaranteed portfolio result, the participants need a feasible way to achieve the agreed result throughout the permitted combinations. A criterion applying to each recipient, a proportion required in each period and an agreed probability of timely service need different grounds. For a probability target, compare the supported risk with the accepted limit. At each choice, group the outcomes the responsible participant cannot yet tell apart. Choose an action with a workable continuation throughout that group. Several schedules each chosen with hindsight can use knowledge the dispatcher will lack. A sufficient standing allocation or common bound with a means of supply can settle the issue without scheduling each case separately. [OPS.13:4.3](../ops/46-ops-13---align-commitments-resources-and-service-outcomes.md#ops1343---test-the-proposed-promise-at-the-required-level)
 
 Keep three accounts distinct where the decision uses them:
 
@@ -135,7 +137,7 @@ To resolve a conflict, change the configuration enough to show how the revised c
 
 Reassess the uses that depend on a changed shared contribution. If research supplies no required input to a delayed product, the research may continue. If both need the same scarce scientist, reallocation may nevertheless change both schedules. Trace the receiving dependency and competition for capacity separately.
 
-If no candidate is feasible, identify the binding resource, timing or authority condition. State what would be needed to change that conclusion where a feasible change is known. Count overtime, volunteer work, financing or future research results only on grounds appropriate to each.
+When refusing the proposed portfolio as infeasible, show why every permissible way of supplying the undertaking can fail its promised criterion. The same attainable shortfall may defeat them all, or different choices may fail under different allowed conditions. A conflict in one tested allocation leaves the others open. If a commitment already binds, identify a remedy or refer a proposed revision to its holder. Count overtime, volunteer work, financing and future research results on grounds appropriate to each.
 
 #### STR.16:4.5 - Compare the portfolios without erasing their purposes
 
@@ -165,7 +167,7 @@ Preserve a research allocation for its stated epistemic purpose when the owners 
 
 If a decision or start is requested, establish which resource and commitment rights apply. Use an existing authorization that covers the work. For a new decision, make it within your authority or take the proposal and its trade-offs to the holder. If starting the selected work requires a further commitment, seek the smallest one that will let it begin. Use STR.11 when the distinction between retained alternatives, intended joint use and accepted commitments needs examination. A request for a comparison can finish with the supported trade-off.
 
-For an authorized start, identify the contribution, who accepted it, the time or money allocated, its receiving conditions and who may change the commitment. Identify any work still excluded. Funding alone cannot grant restricted research access, assign a client’s staff or protect an employee’s time. Establish each of those conditions where the work depends on it.
+For an authorized start, identify the contribution, the decision or agreement that put it in force, the time or money allocated, its receiver and conditions of use and who may change the commitment. Identify any work still excluded. Funding alone cannot grant restricted research access, assign a client’s staff or protect an employee’s time. Establish each of those conditions where the work depends on it.
 
 When choosing a first undertaking, identify the usable result it should provide and who can assess it. Examples include a research result, a product construction with its obtaining method, a participant’s complete case with specified help, or an organizational capability increment. A meeting, installation or measurement can contribute if it supplies the result the receiver needs. Use the relevant subject method. OCE.9 can guide representative realization and exception handling for an organizational capability increment.
 
@@ -311,16 +313,16 @@ Commercial visibility can make near-term sales appear to be the only result wort
 
 Keep each undertaking’s grounds of worth visible, compare the feasible arrangements, identify displaced work and establish who may accept the resulting trade-off. A fixed funding percentage would need a governing decision or a basis in the aims of this portfolio.
 
-The cases concern organizations making finite commitments. Participants without a common allocator can use the comparison to negotiate a proposal. For each commitment, establish who accepted it and under what authority. Community membership by itself leaves that commitment open.
+The cases concern organizations making finite commitments. Participants without a common allocator can use the comparison to negotiate a proposal. For each commitment, recover the authorized act that established it and whose assent that act required. Community membership alone leaves a voluntary contribution open.
 
 ### STR.16:7 - Conformance Checklist
 
 Use the questions below where they bear on the portfolio result the recipient requested.
 
 - Can a participant explain the next useful result of each selected undertaking and distinguish its scientific, product, capability or cultural grounds where those differ?
-- For each dependency, can a participant identify the receiving operation, result, qualification and time, and any viable substitute or response to failure?
-- Where support arrangements are being compared, do they account for common and separate production, each receiving application, maintenance, coordination and response to failure?
-- Does the resource account count each supplying effort once and each application effort where it occurs or is expected, and each scarce bearer in the relevant windows?
+- For each dependency, can a participant identify the receiving operation, result, qualification and time, and any substitution or recovery required by the promised conditions?
+- Where support arrangements are compared, does the account include the work of producing a shared or separate result, its use by each receiver and the costs of maintenance, coordination or recovery that matter under the proposed terms?
+- Does the resource account count each supplying effort once and each application effort where it occurs or is expected, and each scarce bearer in the relevant windows? Can the people or agents who control the choices respond in time to every demand covered by the promise?
 - Are payments, capacity, assigned costs, permissions and accepted commitments kept distinct?
 - Does the comparison preserve protected conditions, meaningful scales, uncertainty and displaced work? For a decision already made, does it identify the trade-off its holder accepted?
 - Can a recipient identify what may start under current authority, what is proposed and which condition still blocks work?

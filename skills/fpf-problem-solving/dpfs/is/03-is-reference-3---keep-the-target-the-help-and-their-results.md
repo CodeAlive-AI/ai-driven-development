@@ -6,7 +6,7 @@ Identify the recipient and provider by the contributions needed. A teacher, coll
 
 These distinctions change action. A different explanation of a target method may repair its description without changing the method. Replacing a classroom session with rehearsal changes the support strategy. Repairing an unavailable reference changes the arrangement. Changing the target's decision criterion can change the method itself. To attribute a successful result to one of these changes, establish its causal contribution.
 
-Establish which of the following results the recipient needs. An undertaking can require more than one.
+Establish which results the recipient needs and which decisions they entrust to the facilitator. For a design, identify what is already fixed and what the designer must choose about the work and its support. A proposal can be assessed before the service starts. To claim that the service ran or that a participant learned to design it, establish the corresponding performance or change. An undertaking can require several of the results below.
 
 | Wanted result | What must actually be obtained |
 | --- | --- |

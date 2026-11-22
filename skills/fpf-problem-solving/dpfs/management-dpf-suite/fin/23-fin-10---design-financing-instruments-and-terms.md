@@ -72,7 +72,7 @@ Bring the new terms back to the business. A restrictive delivery commitment can 
 
 ##### FIN.10:4.1.3 - Obtain an actionable proposal and a possible closing
 
-Take the connected proposal to the relevant participants through the authorized negotiating process. Obtain the objections and conditions that can change it: amount, service, information, ranking, security, ownership, control or timing. Recalculate a changed package rather than retaining each party's preferred terms from incompatible versions. A rejected proposal can reveal a different source of value or a binding constraint; it need not mean that the underlying activity has no value.
+For advice within a negotiating mandate, return terms supported by the participants’ requirements, the grounds for the comparison and the choices they still hold. When negotiation is commissioned, take the proposal through the authorized process. Use the actual replies to revise amounts, payment dates, security, ownership or other conditions. Check the changed package for all parties together. A rejection can identify a binding constraint or a different source of value.
 
 Trace the conditions for the first money and commitment. If a lender pays after a customer advance, while the customer pays only after lender funding, there is no first move unless an actual simultaneous-closing mechanism can satisfy both. [ECO.4][ECO] explains this dependency problem. The financial continuation specifies who commits, whose money is available, what releases it, the settlement order, and what happens if one contribution fails. Escrow, a committed bridge or simultaneous conditional releases are candidates only when the parties and service providers can implement them. Include their costs and any refund, priority or cancellation consequences.
 
@@ -128,7 +128,7 @@ A useful recommendation names the instrument and provider or provider class, net
 
 ### FIN.10:5 - Archetypal Grounding
 
-Two constructed one-year offers finance a net need of 100. A charges 8% interest on face value and withholds an issue fee of 2% of face value. B charges 9% and no fee. Assume no other cost, tax difference or contingent term and that A permits the necessary larger face amount. Under A the borrower must issue debt with face value 100/0.98 = 102.04 and repay 102.04×1.08 = 110.20. Its effective cost is 1.08/0.98−1 = 10.20%. Under B the borrower receives 100 and repays 109, so B is cheaper for this need despite its higher headline rate. If A is capped at face value 100, its net proceeds of 98 do not meet the need at all.
+Two constructed one-year offers finance a net need of 100. A charges 8% interest on face value and withholds an issue fee of 2% of face value. B charges 9% and no fee. Assume no other cost, tax difference or contingent term and that A permits the necessary larger face amount. Under A the borrower must issue debt with face value 100/0.98, approximately 102.04, and repay (100/0.98)×1.08, approximately 110.20. The calculation assumes a continuously selectable face amount. For an actual issue in fixed increments, apply the fee and its rounding terms to the permitted amount and check that its net proceeds cover 100. Its effective cost is 1.08/0.98−1 = 10.20%. Under B the borrower receives 100 and repays 109, so B is cheaper for this need despite its higher headline rate. If A is capped at face value 100, its net proceeds of 98 do not meet the need at all.
 
 
 

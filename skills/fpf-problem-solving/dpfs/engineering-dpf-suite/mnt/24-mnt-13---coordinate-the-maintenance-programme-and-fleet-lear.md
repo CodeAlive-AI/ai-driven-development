@@ -23,6 +23,8 @@ Common policies and resources can improve continuity, but equipment, duty and co
 
 Bound the population, service question and horizon. Identify the programme decision at stake: retain a policy, change a task, improve spare readiness, resolve a backlog or compare performance. An equipment-family name alone does not establish that units have comparable duty or failure behaviour.
 
+Work out what the programme would have to achieve for the recipient. Counting failures, counting different machines affected, meeting a rate for the fleet and keeping service available in every district can lead to different decisions from the same history. Several failures on one machine contribute several events but only one affected machine. A delivery record covering the required service and interval can establish continuity directly. Where the conclusion depends on redundancy, identify which machines served the receiver, what could cover their losses and whether their outages overlapped. To establish overlap itself, use evidence of the machines’ states or an established relation that lets you infer them from delivery.
+
 Recover the event and exposure basis under [MNT.3](14-mnt-3---establish-degradation-and-failure-evidence-for-maint.md) and MNT.12. Distinguish failures, inspections, preventive removals and incomplete observation. Compare units at compatible configuration, operating conditions and consequence where those differences can change the answer. Retain a stratified account when aggregation would conceal the difference.
 
 Relate the observations to possible programme causes and actions. Repeated waiting for an applicable spare can justify a support decision without proving that the preventive policy is ineffective. A changed reporting rule can increase counted failures without worsening the machine. Use the failure and operating evidence to distinguish these interpretations.
@@ -39,6 +41,8 @@ Return the decision with the population and evidence limits that affect its use.
 
 APP-MNT-02 is a constructed comparison of 48 pumps. Twenty units have four relevant failures over 20,000 operating hours; 28 units have six over 56,000 hours. The rates are 0.20 and approximately 0.107 events per 1,000 hours. Raw counts favour the first group, while exposure-adjusted rates favour the second.
 
+If the decision instead concerns the number of machines affected, ask which events belong to the same unit. Suppose the records cover the operating exposure of all twenty units and count one failure of one unit as one event. Then the four events involved at most four machines. At least sixteen therefore had none during their observed exposure. That bound settles a minimum of sixteen failure-free units while leaving the exact number open. To judge continuity of the service supplied by those pumps, use the demand, delivery or redundancy evidence appropriate to that service.
+
 Neither result establishes a causal policy effect. The engineer recovers duty, component histories, event definitions and the reasons units entered each group. The answer to “Do these counts justify replacing the fleet policy?” is no on this basis. In the retention branch of this constructed case, the policy's existing failure-and-response basis remains adequate for the stated duties; the counts do not establish that adequacy. Retaining the policy on that existing basis can be the completed decision while the support deficiency below is corrected. If that basis no longer holds, return the unsupported policy choice without waiting for these data to prove a rival policy.
 
 The same current records identify an applicable spare unavailable for a known upcoming task. Correcting that support deficiency can be selected on its own evidence; the engineer does not wait for a new causal fleet study to address it.
@@ -51,13 +55,13 @@ Fleet averages can hide the units with the greatest exposure or service conseque
 
 ### MNT.13:7 - Conformance Checklist
 
-Are the population and the programme decision clear? Do event meanings, exposure and observation conditions support the comparison? Are causal and descriptive claims distinguished? Does the selected change improve the intended maintenance contribution without concealing moved burden? If implementation or improvement is claimed, is that claim supported separately from the proposal?
+Are the population and the programme decision clear? Do event meanings, exposure and observation conditions support the comparison? Are causal and descriptive claims distinguished? For a proposal, do the grounds support the expected contribution and account for work or exposure moved to another team? For a claim covering all districts or a guaranteed service level, do the evidence and combination rule cover the districts, demands and periods the commitment names? If implementation or improvement is claimed, is that claim supported separately from the proposal?
 
 An adequate retained programme or qualified fleet account is a completed answer. Further inquiry needs its own attainable contribution and burden justification.
 
 ### MNT.13:8 - Common Anti-Patterns and How to Avoid Them
 
-Fewer failures are read as a better policy without exposure. Recover a compatible comparison. A dashboard target is improved by recoding failures rather than changing functioning. Preserve event meaning and compare the actual programme contribution.
+Fewer reported failures can answer a question about the number reported. To compare event rates, establish comparable events and exposure. To choose a policy, connect the difference to what that policy can change. A dashboard target is improved by recoding failures rather than changing functioning. Preserve event meaning and compare the actual programme contribution.
 
 Every incomplete causal explanation becomes a research programme. Return the supported maintenance decision first and select only the inquiry that can improve the next use.
 

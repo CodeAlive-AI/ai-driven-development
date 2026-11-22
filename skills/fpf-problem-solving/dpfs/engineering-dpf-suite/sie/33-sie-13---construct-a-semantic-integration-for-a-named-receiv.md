@@ -12,7 +12,7 @@
 
 The working object is one semantic integration for a named receiving use. Its whole result is the connected package described in [SIE.Reference:4](05-sie-reference-4---the-first-whole-result.md): a use contract, source premises, warranted semantic relations and claim composition, mapping behavior, realization and interface, with validation of the claimed use. Identity premises and model development enter where the answer depends on them. The package can reference existing results; it need not be one document, database or graph.
 
-Start with the action the receiver must be able to perform and the information that could change that action. Compare the available contributions with what that answer requires. This comparison helps you choose the next contribution and recognize when the connected result is sufficient.
+Start with the action the receiver must be able to perform and the information that could change that action. Compare the available contributions with what that answer requires. This comparison helps you choose the next contribution and recognize when the connected result is sufficient. For a design serving a class of transactions, establish which source definitions, arrangements of parts or work, and receiving rules may vary. A rule established for the whole class can justify the proposed design. To identify what happened in one transaction, trace that transaction to evidence of the applicable operation and result.
 
 **Ordinary non-use.** Use the individual Method when its result finishes the question: SIE.4 can settle one correspondence, SIE.8 can reject a prohibited realization, and SIE.10 can identify a decisive defect in a supplied interface. An already adequate package can be used without reconstructing it. SIE.13 is needed when those local results still have to be made usable together. It does not select product configuration, establish master-data authority, operate a pipeline, authorize a purchase or accept a physical inspection result.
 
@@ -51,7 +51,7 @@ Compare the available result with that continuation. If it already suffices, ret
 
 #### SIE.13:4.2 - Derive the required contributions from the answer
 
-Take each answer claim that can change the receiving action and ask how it would be obtained. Follow it to the source meanings, represented claims, relations and transformations it relies on. For a query row, for example, recover why the selected records belong together, what each value means, which rule produces the output, and how an unavailable or incompatible input is represented. For a semantic exchange between organizations, recover the corresponding interpretation and use of each supplied statement.
+Take each answer claim that can change the receiving action and ask how it would be obtained. Follow it to the source meanings, represented claims, relations and transformations it relies on. For a query row, for example, recover why the selected records belong together, what each value means, which rule produces the output, and how an unavailable or incompatible input is represented. For a semantic exchange between organizations, recover the interpretation and use of each supplied statement. Choose how far to trace a dependency by varying the constituent, its enclosing assembly or the applicable time interval. For an account of work, vary which operations were actually performed. For a method, vary which sources or transformations may provide the required outputs. For an engineering decision, vary the parts and arrangement of the subject. Which changes would require a different answer, action or explanation while the facts already established stay true? Follow the dependency that distinguishes those cases. Once a consistent binding exists, a coarser account suffices wherever its remaining possibilities support the required answer, action and grounds. Different receiving questions may need different resolutions of the same subject. If the available claims admit no consistent binding, return the conflict.
 
 Use the following returns where that dependency occurs:
 
@@ -73,7 +73,7 @@ Keep the account in the working material the participants can use. A short annot
 
 #### SIE.13:4.3 - Make the connections valid for this use
 
-Before consuming a result, compare its subject and conditions with the operation that will use it. Match the relevant meaning, entity grain, configuration or time, source and rule versions, authority, permitted loss and failure behavior. A qualified result for one use is a candidate for reuse, not a universal permission.
+Before consuming a result, compare its subject and conditions with the operation that will use it. Match the relevant meaning, entity grain, configuration or time, source and rule versions, authority, permitted loss and failure behavior. A report of an earlier inspection can support today’s decision when it covers the required subject, conditions and property and its use is permitted. Count the original inspection as work performed for this order only when it formed part of the job. An order commissioning a new inspection still requires that performance.
 
 Keep these three questions distinct:
 
@@ -93,13 +93,13 @@ For example, an existing prohibition on replication is enough to reject a copied
 
 Perform or request the work that obtains the missing result. State its receiving purpose, required distinction or behavior, available inputs and acceptance condition. Use the relevant SIE Method for semantic work and the practice that supplies the other work. A platform owner can establish the request allowance; an implementer can supply and test a query; a domain owner can settle a source definition. The integration practitioner connects those results but does not acquire the suppliers' authority by requesting them.
 
-On return, inspect the supplied result and its conditions against the dependent operation. A selected realization is not its implementation, and a specification is not evidence of that implementation's behavior. If the contribution is still absent, retain the precise blocker. If it supplies the needed result, reconnect it and determine what remains for the whole answer. When the recipient already has enough to continue, stop expanding the work.
+On return, inspect the supplied result and its conditions against the dependent operation. A selected realization is not its implementation, and a specification is not evidence of that implementation's behavior. If the contribution is still absent, retain the precise blocker. If it supplies the needed result, reconnect it and determine what remains for the whole answer. Return the result as final when it settles the commissioned question. A result that enables the next step can be delivered immediately while the remaining promised output is still due.
 
 Necessary coordination is part of obtaining the result: establish who can perform the required work, with which access and means, and how the result will reach its consumer. Existing skills in parsing and databases may still leave nobody able to resolve a temporal-identity question. Supply that contribution or leave the dependent answer unresolved.
 
 #### SIE.13:4.5 - Compare the complete arrangement and its permitted branches
 
-Use [SIE.8:4](28-sie-8---choose-virtual-materialized-or-hybrid-semantic-reali.md#sie84---solution) to compare the viable ways of realizing the accepted mapping behavior and supplying the result. Bring the semantic dependencies and the shared conditions into that comparison. Include required trace, failure and recovery behavior in the workload. Query permission, replication permission and disclosure permission remain separate inputs.
+Use [SIE.8:4](28-sie-8---choose-virtual-materialized-or-hybrid-semantic-reali.md#sie84---solution) to establish that a proposed realization can supply the accepted mapping behaviour. When a choice or comparative preference remains part of the commission, develop the alternatives needed to support it. Bring the semantic dependencies and the shared conditions into that comparison. Include required trace, failure and recovery behavior in the workload. Query permission, replication permission and disclosure permission remain separate inputs.
 
 Test the combined demand against each applicable limit. Count the distinct requests in one allowance window, including the retry behavior on which the service promise depends. For time, follow the operations that must finish before the receiver can act; parallel operations and serial dependencies have different effects. For storage or access, apply the conditions that govern what the arrangement retains or makes accessible. A common resource limit concerns the combination even when every component fits alone.
 
@@ -107,15 +107,15 @@ Keep a common source or derivation visible when several contributions rely on it
 
 If the proposed whole fails, compare the continuations the contract permits. A narrower answer must retain the semantic premises, trace, access and interpretation required for that answer. An authorized contract change or a different realization can reopen the choice. Dropping a required provenance contribution or quietly redefining completeness cannot repair the same promise.
 
-A decisive failure can finish the comparison for one alternative. Stop the whole requested use only when that failure defeats every continuation still allowed by the contract, or when the needed continuation remains unavailable. Distinguish a known impossibility under the stated conditions from an unresolved option that would need another contribution.
+A decisive failure can exclude one way to deliver the requested result. To conclude that the result is impossible under the contract, account for every permitted way. One necessary condition can rule them all out, or different conditions can rule out different ways. A path with a missing assessment remains open unless the available grounds already decide it. Return any independently usable result at the scope its grounds support.
 
 #### SIE.13:4.6 - Supply the interface and establish the bounded use result
 
-Use [SIE.9:4](29-sie-9---connect-a-receiving-use-through-a-semantic-interface.md#sie94---solution) to specify and supply the interface that carries the qualified meanings and branches into the receiver's work. Obtain the implementation needed by that interface and the selected realization. Develop their specifications together where their dependencies require it; a changed semantic or service condition returns to the contribution that supplies it. Check that the actual input and output behavior preserves the rules and that the receiver can interpret the result as intended. Depending on the use, the interface can be a query, service, exchange file or a documented human-facing view.
+For an interface-design order, use [SIE.9:4](29-sie-9---connect-a-receiving-use-through-a-semantic-interface.md#sie94---solution) to specify how the qualified meanings and branches will reach the receiver. Demonstrate how the specification supports the intended uses under its assumptions. For delivery of an operating interface, also obtain the implementation required by that design and its realization. Develop their specifications together where their dependencies require it; a changed semantic or service condition returns to the contribution that supplies it. To qualify its operation, establish that its actual input and output behaviour preserves the rules and that the intended receiver can interpret the result. Depending on the use, the interface can be a query, service, exchange file or a documented human-facing view.
 
 Use [SIE.10:4](30-sie-10---validate-a-semantic-integration-result-for-its-rece.md#sie104---solution) to validate the claim now being made. For a positive whole-use or contract-permitted subset conclusion, every load-bearing premise and required joint condition needs matching evidence. Reuse evidence whose subjects, versions, use and conditions still fit. One decisive conversion error can establish a bounded failure without testing unrelated layers; correcting it alone does not establish the full positive claim.
 
-Return the answer, its disposition and its consequences for the receiver together. A qualified partial answer states what is covered and what remains unavailable. An unresolved answer states the missing result and the use it prevents. A stop states the defeated obligation and the change that could make reconsideration useful. A semantic integration result supplies a premise to the receiving decision; its authorization and outcome remain with the receiving owner.
+Return the answer, its disposition and its consequences for the receiver together. A qualified partial answer states what is covered and what remains unavailable. An unresolved answer states the missing result and the use it prevents. A stop identifies the obligation that failed and the change that could warrant reconsideration. A missing required record can settle a release refusal while the property that record would have documented remains open. A semantic integration result supplies a premise to the receiving decision; its authorization and outcome remain with the receiving owner.
 
 #### SIE.13:4.7 - Reopen changed reliance and reconnect the result
 
@@ -131,6 +131,8 @@ The result must let the receiver recover the answer and its allowed use, the rel
 
 For a small use, links from the returned query rows to a contract, mapping and qualified source material can carry this account. For a larger use, maintained specifications and implementation evidence may be necessary.
 
+For a design commission, identify which parts and relations the engineer chose and the constraints supplied by the contract or source owners. Show why the chosen construction satisfies the intended uses. One feasible construction can meet an order for a design. A claim that it is preferable requires grounds about the alternatives that could affect that choice. A correct answer obtained through an existing mapping can complete an order for one query. To report an actual delivery, establish that the specified material reached the recipient. Connect it to a particular request when the claim concerns the response to that request.
+
 ### SIE.13:5 - Archetypal Grounding
 
 #### SIE.13:5.1 - Connect configured product meaning to inspection evidence
@@ -143,7 +145,7 @@ SIE.4 establishes that `C17` concerns a feature; it is not itself that feature. 
 
 The claim composition can now retain the product-definition and plan-applicability claims with their owners, and attach the qualified observation to the configured feature. SIE.7 specifies the selection by `R/E`, the warranted characteristic relation, unit conversion, trace and error branches. The mapping may expose an observation in a requested unit; it does not thereby decide that the product conforms.
 
-Assume SIE.8 has selected a permitted realization and the implementer supplies it. The supplied test evidence must show the requested query, the observation-age and response conditions, and the required negative branches. SIE.9's receiving view keeps an unknown unit visibly unresolved instead of returning a converted value. SIE.10 checks those behaviors and the semantic premises against the contract. Under matching positive evidence, the result is the qualified row set and the stated unresolved branches, not an engineering release decision.
+Suppose the implementer supplies the realization selected in SIE.8. Establish for that implementation how it answers the required query, meets the observation-age and response conditions and handles the required negative branches. An existing, applicable conformance argument or suitable test results may supply those grounds. Obtain a new test where an open question needs it or the contract requires its performance. SIE.9’s receiving view keeps an unknown unit visibly unresolved. SIE.10 checks those behaviours and their semantic premises against the contract. The resulting rows and unresolved branches can serve the engineer’s decision. The release authority makes that decision.
 
 The complete construction changed two connected operations: it replaced an invalid equality with a warranted relation and required a distinct feature-identity contribution before the join. The realization and receiving tests then exercised that corrected meaning.
 
@@ -190,7 +192,7 @@ Recognize this problem when the receiver still cannot obtain an answer from othe
 - The complete arrangement is compared under relevant shared limits, permissions, trace and failure conditions; local or pairwise feasibility is not substituted for that comparison.
 - The supplied interface preserves the qualified meanings, material absence and conflict branches, and the receiver's required interpretation.
 - A positive use claim has evidence for every load-bearing premise and joint condition within its scope. A negative conclusion states the obligation it defeats and the reach left unexamined.
-- A partial answer is permitted by the contract and retains its own required premises. A changed premise reopens its dependent contributions and uses while adequate unaffected results remain reusable.
+- A useful intermediate return identifies the promised work still due. A final partial answer has the agreed scope and retains the premises needed at that scope. A changed premise reopens its dependent contributions and uses while adequate unaffected results remain reusable.
 - The result returns to the receiving owner without claiming that semantic integration grants downstream decision authority.
 
 ### SIE.13:8 - Common Anti-Patterns and How to Avoid Them

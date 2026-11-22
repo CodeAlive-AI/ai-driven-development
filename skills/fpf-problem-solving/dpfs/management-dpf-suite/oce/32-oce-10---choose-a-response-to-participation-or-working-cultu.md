@@ -7,7 +7,7 @@
 
 ### OCE.10:0 - Use This When
 
-People nominally support an organization change, but the needed contribution is avoided, distorted, late or unnecessarily burdensome. Start with a concrete episode. What contribution was expected and what happened? If a participant attempted it or chose another action, what conditions shaped that choice?
+People nominally support an organization change, but the needed contribution is avoided, distorted, late or unnecessarily burdensome. Start with the contribution the decision concerns. For an individual action or experience, ask what was expected and what happened on that occasion. For the reach or persistence of a practice, identify the population and period. A bound in §4.5 may already settle the question. If a participant attempted it or chose another action, what conditions shaped that choice?
 
 Use OCE.10 to investigate the organization-side conditions and choose a supported response. When the task includes performing an intervention, retain its protection and authority limits and observe the receiving work. A sufficiently supported recommendation or current continuation may finish before an intervention or new inquiry is selected. The target-working-culture branch concerns how local ways of contributing, challenging and helping are learned, recognized and repeated.
 
@@ -41,7 +41,7 @@ An initial helpful conversation also differs from cultural continuation. A pract
 
 #### OCE.10:4.1 - Recover one consequential participation gap
 
-Identify a contribution that was missed, distorted or supplied at a burden that matters to the receiving work or its participants. Recover the request, participant, situation, timing and what happened. Use an observed episode or a documented account. Where a participant’s experience matters, ask about that particular occasion if a suitable account is missing.
+Identify a contribution that was missed, distorted or supplied at a burden that matters to the receiving work or its participants. For a question about an episode, recover the request, participant, situation, timing and what happened from an observation or documented account. For a question about a group or period, use records that cover it and establish the difference or threshold the decision needs. Where a participant’s experience matters, ask about that particular occasion if a suitable account is missing.
 
 Use the affected participant’s account to understand what they believed, attempted, expected, hoped to accomplish or protect, or stood to lose. Seek it when that perspective is consequential and still missing. Compare it with permitted evidence of the work, including a successful occasion where one is known. Weigh a manager’s explanation on the same grounds as another relevant account.
 
@@ -86,9 +86,11 @@ If the intervention produces harm, overload or a new protection problem, stop or
 
 #### OCE.10:4.5 - Follow cultural continuation only where it is claimed
 
-For a claim about how a practice spreads or continues, follow the relevant variant through demonstration, teaching, copying, recognition, challenge, working memory and later use. Who learned it from whom? What happened when a peer used it? Did the consequences in the receiving work encourage the stated action or its opposite? What remains available for the next participant?
+Decide which change in working practice the organization needs to establish. If the question concerns another unit learning from a named source, follow the operation through the demonstration, instruction or other contribution it received. Find where the new unit used it and whether it used the operation as received or adapted it. A shared form or similar result can also come from a common earlier instruction. For a decision about current use, identify the eligible units, their opportunities to perform the work and the uses observed. The source of their practice can remain open.
 
-For a claim of continued use, examine a later work episode. Where independence from the sponsor is claimed, use evidence from an episode without that sponsor performing the support. Record the population, relation, situation and window; a local finding does not describe every team in the organization.
+For continued use by the same unit, establish how the unit is identified after changes in its members or responsibilities. A later episode can establish a recurrence. If the claim covers each shift, each reporting period or every eligible job, find grounds that cover the promised occasions. A record at the start and another at the end can fit an interruption followed by a return. Sometimes a bound is sufficient. If three of the same four offices did the work in each of three months, at most one office missed each month. At least one office therefore did the work in all three, even if its name is unknown. The claim that it used the method on every job would require grounds at that frequency. Where independence from the sponsor is claimed, establish who made the relevant choices and who supplied the other necessary work and resources. The unit may have made all the decisions while the sponsor alone obtained essential information. For a future assignment, check whether the agreed support or a suitable replacement will be available when needed. To explain persistence or loss, trace what happened after use, what the next worker could retrieve and whether the consequences encouraged or discouraged continued use.
+
+When considering whether to continue the provision, follow the result to each use that could change the decision. Identify who received it, when they could still act and whose work paid the cost. A later shift may have a different deadline or need the same result for another purpose. Use the available work records and accounts. Ask a participant about their experience when it matters and those sources leave it open. OCE.13 compares the consequences on a common basis where possible. A responsible manager can act within their authority on a sufficient local finding while the effect across the organization remains open.
 
 Use C.36 for the cultural relations. The decision to promote a practice and the evidence that a population has learned or repeated it are different claims. A debrief, favourable survey or new document can support inquiry but cannot alone establish changed working culture.
 

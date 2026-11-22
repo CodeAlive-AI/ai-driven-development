@@ -95,7 +95,7 @@ A constructed corporation needs 100 for the same assets. Mix A provides debt 80 
 #### FIN.11:5.1 - More interest tax savings need not mean a better policy
 
 
-In a separate constructed comparison, an unlevered operating value of 200 is supplied on grounds that exclude the financing effects below. The alternatives are no debt, principal 40 for two years with annual interest 6%, or principal 80 for two years with annual interest 10%. The stated terms are obtainable. Both debts repay principal at the end of year 2; their service capacity is tested separately. The only tax effect is a fully usable 25% deduction for interest paid at each year end. A qualified 5% rate applies to these stipulated tax-saving cash flows; it is not inferred from either loan's coupon.
+In a separate constructed comparison, an unlevered operating value of 200 is supplied on grounds that exclude the financing effects below. The alternatives are no debt, principal 40 for two years with annual interest 6%, or principal 80 for two years with annual interest 10%. The stated terms are obtainable. Both debts repay principal at the end of year 2; their service capacity is tested separately. The only tax effect is a reduction in tax paid at each year end equal to 25% of that year's interest. This assumes full deductibility and enough taxable income at the stipulated 25% rate. A qualified 5% rate applies to these stipulated tax-saving cash flows; it is not inferred from either loan's coupon.
 
 The 40 loan pays interest 2.4 each year and saves tax 0.6 each year, so the saving's present value is 0.6/1.05 + 0.6/1.05² = 1.12. The 80 loan pays interest 8 and saves tax 2 each year, worth 3.72 on the same stated basis. Nonoverlapping estimates put financing-induced operating and distress losses at present values 0.2 and 5 respectively; issue costs paid now are 0.2 and 0.5.
 
@@ -130,7 +130,7 @@ A shareholder perspective can understate harm shifted to creditors or the operat
 
 ### FIN.11:7 - Conformance Checklist
 
-Do the mixes fund the same need and preserve the assumed operating plan? Are debt service, tax use, adverse cash and refinancing conditions included? Are changing required returns and control effects examined where material? What is the status of the conclusion: a target, a proposal, support for continuing the current mix or an authorized change?
+Which need does each mix fund? If a financing condition changes the operating plan, have the resulting cash flows and value been included? Are debt service, tax use, adverse cash and refinancing conditions included? Are changing required returns and control effects examined where material? What is the status of the conclusion: a target, a proposal, support for continuing the current mix or an authorized change?
 
 ### FIN.11:8 - Common Anti-Patterns and How to Avoid Them
 

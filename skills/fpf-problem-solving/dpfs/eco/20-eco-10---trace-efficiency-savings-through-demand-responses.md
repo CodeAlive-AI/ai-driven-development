@@ -5,7 +5,7 @@
 
 ### ECO.10:1 - Problem frame
 
-Use this Method when a process or technology needs less resource per useful result and you want to understand total use. Identify the useful result, resource, boundary, period and comparison without the improvement. Trace any change in activity induced by the improvement.
+Use this Method when a lower resource requirement per useful result raises a question about total use. Identify the useful result, resource, boundary, period and decision. A suitable observation or bound can settle compliance with a cap. For a claim about the effect of the improvement, construct the comparable alternative without it and trace the response it induced.
 
 Return a conditional or supported comparison of total use, or the output threshold relevant to it. For a fixed-output question, an engineering comparison can suffice under the stated output assumption. To apply that result to actual use, establish whether output and other material conditions were fixed.
 
@@ -23,9 +23,11 @@ Physical efficiency, price, demand and total use can refer to different activiti
 
 #### ECO.10:4.1 - State the comparison
 
-Identify the useful result and choose a unit that preserves its performance. Specify the resource, activities included, period and comparison without the proposed improvement. Calculate cost, energy and emissions as distinct quantities, using a supported conversion if the question requires it.
+Identify the useful result and the resource, activities and period the decision concerns. Choose the unit by asking what two services counted as equal must both deliver. If the same number can conceal a different mix of jobs, quality or human completion work that changes the conclusion, keep the relevant types separate. To calculate total resource use from unit rates, apply each rate to the volume of its own type under that arrangement. Count a shared setup or run once when it serves several orders. A unit selected for billing can differ from the one needed to compare resource use.
 
-Calculate three totals on the same resource account. Find use without the improvement, use with the improvement at the counterfactual output before any induced response, and use with the response. Subtract the second from the first for fixed-output saving. Subtract the second from the third for the response-induced change. Include relevant equipment, infrastructure and transition costs in the appropriate totals. A burden that arises at fixed output belongs in the second total as well as in the third if it continues. Use applicable PHY, MMP, OPS, MA or FIN results.
+For a cap, compare use over the regulated boundary and period with the allowed amount. An adequate reading or bound can finish the job. For the effect of an improvement, also establish how much service would be provided, with what quality and mix, in the comparable period without it. Account for cost, energy and emissions in their respective units. When the decision uses another unit, establish the conversion for this supply, boundary and period. A range for the emissions per unit of energy can already establish whether a planned change stays below an emissions cap.
+
+To separate the technical saving from the demand response, calculate three totals on the same resource account. Find use without the improvement, use with the improvement at the counterfactual output before any induced response, and use with the response. Subtract the second from the first for fixed-output saving. Subtract the second from the third for the response-induced change. Include relevant equipment, infrastructure and transition costs in the appropriate totals. A burden that arises at fixed output belongs in the second total as well as in the third if it continues. Use applicable PHY, MMP, OPS, MA or FIN results.
 
 #### ECO.10:4.2 - Follow the responses that can change the answer
 
@@ -33,13 +35,17 @@ Establish how the improvement affects feasible action. Users may buy more, produ
 
 Distinguish resource use in the focal activity from consequential use elsewhere. Add effects within the declared boundary, count each once and state which remain uncertain. Consider new modeling, causal inquiry or measurement when it could materially improve the finding, choice or intended use at an acceptable cost.
 
+When both alternatives depend on a common driver, compare them under the same conditions. Suppose outside temperature can be mild or cold and the improvement cannot change it. Allow users of each arrangement to change the volume and mix of services they take. In mild weather, use without and with the improvement is 200 and 170. In cold weather it is 300 and 270. The saving is 30 in either weather condition. Comparing 200 in mild weather with 270 in cold weather would give the wrong sign for the effect at the same temperature. A bound that covers the paired differences can likewise settle whether the change saves enough. Support the pairing and the response from the situation when making a causal claim. With only the stipulated scenarios, report the conditional finding. [Grounds for a causal comparison](../../sections/09-part-c---kernel-extension-specifications/54-c-28---causaluse-cal-causal-use-questions-identification-and.md#c2843---common-causal-validity-screen)
+
 For one unchanged service with resource use e per unit and output q, total use is e × q. Compare the improved total with total use in the counterfactual. Let q0 be counterfactual output and e0 and e1 the old and new unit resource requirements. If e1 > 0 and no other terms enter the account, equal total use occurs at q = q0 × e0/e1. This gives a break-even output under the assumptions. Demand at that output is a separate question. When other terms matter, compare the full totals.
 
 #### ECO.10:4.3 - Return the consequence to the actual purpose
 
-State whether use with the response is below, equal to or above use without the improvement. When the fixed-output saving is positive and well defined, divide the response-induced change by that saving if the requested result needs the fraction offset. A fraction above one indicates backfire under this account. When there is no positive, well-defined fixed-output saving, report the totals and induced change directly. Identify the accounting boundary, since including new equipment or transition can change both the saving and the percentage.
+For a comparison of total use, state whether use with the response is below, equal to or above use without the improvement. When the fixed-output saving is positive and well defined, divide the response-induced change by that saving if the requested result needs the fraction offset. A fraction above one indicates backfire under this account. When there is no positive, well-defined fixed-output saving, report the totals and induced change directly. Identify the accounting boundary, since including new equipment or transition can change both the saving and the percentage.
 
-For a resource cap, assess whether aggregate use remains within the limit and whether released capacity needs allocation. If the goal is useful growth, compare the additional output’s value and cost. For a proposed policy, assess feasibility and effects on the parties concerned. A rebound estimate can inform those choices.
+For a resource cap, use the boundary in the rule. A single cap on the combined plant can be checked from the plant's total over the regulated period. Separate limits at each site or in each shift require grounds covering each one. A valid upper bound can settle several of them if it applies to all of them. If the decision also concerns reallocating capacity, trace who is entitled to use it. If the goal is useful growth, compare the additional output's value and cost. For a proposed policy, assess feasibility and effects on the parties concerned. A rebound estimate can inform those choices.
+
+To offer the saving to another activity, trace what becomes usable by its recipient. A fixed electricity payment may stay due when metered energy falls. A reduction in machine time may release a shift only after other orders, necessary equipment and the holder's allocation rights are taken into account. For an actual cash saving, compare payments under the relevant terms on the two alternatives. For a feasible new assignment, check the receiving job's needs and deadline.
 
 Return the supported total-use finding, its assumptions and any material unknown. If the task asks for a choice or operating limit, compare the feasible responses and state which conditions matter to that result.
 
@@ -67,7 +73,7 @@ A dramatic paradox can replace a causal account. Engineering optimism can assume
 
 ### ECO.10:7 - Conformance Checklist
 
-Identify the useful result, resource, boundary, period and counterfactual. State the mechanism assumed for each induced response and what the evidence supports. Check the totals, any saving-offset percentage and the result for the stated purpose. Distinguish the consequences of stipulated scenarios from an observed causal effect.
+Which result is needed: compliance with a cap, the change attributable to an improvement, the share of technical saving offset, or a resource someone can now use? For a cap compare measured or bounded use with the limit. For attribution use a supported comparison without the change. For the share offset, check the fixed-output saving and the response on the same resource account. For reassignment, establish what the recipient can command in time. Keep any conclusion that holds throughout the remaining uncertainty.
 
 ### ECO.10:8 - Common Anti-Patterns and How to Avoid Them
 

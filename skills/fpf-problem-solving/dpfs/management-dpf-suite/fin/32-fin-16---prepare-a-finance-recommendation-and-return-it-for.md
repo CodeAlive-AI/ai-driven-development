@@ -125,7 +125,7 @@ For continuing reliance, give the few return conditions that can invalidate the 
 
 ### FIN.16:5 - Archetypal Grounding
 
-For the order in FIN.2 and FIN.3, a concise recommendation is: “Use the customer's agreed advance of 96 on day 6 against 100 of the invoice. It leaves 56 on day 7 and produces incremental gain 656, compared with zero cash and gain 655 under the available draw of 43. This preference uses the supplied operating plan and agreement. If the advance is not agreed, use the drawable-facility comparison; if collection moves beyond day 28, obtain a funded repayment path before relying on that facility.” The analyst has completed the comparison and prepared usable advice. The existing arrangement determines who may choose or carry out the action.
+For the order in FIN.2 and FIN.3, the analyst can recommend the agreed customer advance of 96 against 100 of the invoice. If it settles on day 6 and the operating plan holds, the business has 56 left on day 7 and gains 656. Drawing 43 and using the invoice proceeds to repay 45 yields a zero day-7 balance and a gain of 655. To guarantee payment even if the advance is late, secure funding in advance or confirm that an authorized fallback after notice can still deliver the money by the day-7 cutoff. Include the cost of that protection when choosing between the arrangements. If the invoice proceeds come after repayment falls due, establish an available source for that earlier payment. This recommendation supplies the decision maker with a preference and its conditions. The existing arrangement determines who may choose or act.
 
 
 

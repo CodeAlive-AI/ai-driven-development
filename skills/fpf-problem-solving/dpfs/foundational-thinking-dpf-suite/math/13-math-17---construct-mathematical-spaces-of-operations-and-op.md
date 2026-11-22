@@ -83,7 +83,7 @@ To derive the composition law, take arbitrary s and i:
 
 `[L_I(g∘f)(s)](i)=g(f(s(i)))=[(L_I(g)∘L_I(f))(s)](i)`.
 
-Equality at every index proves the composition law. The identity law follows by applying the identity at every index. If admissibility requires each entry to remain in P, the earlier membership argument applies entry by entry. A condition relating different entries needs a further preservation argument.
+Equality at every index proves the composition law. The identity law follows by applying the identity at every index. If admissibility requires each entry to remain in P, the earlier membership argument applies entry by entry. For a permitted family of joint inputs, show that applying f at each entry carries the entire family into the permitted joint outputs. For instance, two nonnegative entries constrained to sum to one may each remain in [0,1] after squaring, yet the images of (1/2,1/2) sum to 1/2. Preserving each local range would be enough for a question confined to those ranges.
 
 A different higher-order operation can have a different useful law. Differentiation of polynomials preserves sums and scalar multiples and obeys the product and chain rules. Use those laws when deriving a derivative; a composition-preservation requirement would ask it to do a different job. The needed mathematical operation determines which laws to establish.
 
@@ -156,7 +156,7 @@ The set-and-function route makes these questions accessible. A question involvin
 For the construction being used:
 
 - The operations have recoverable inputs, outputs, equality and admissibility conditions.
-- The needed compositions land in the claimed collection, or a concrete failure has changed the proposed use.
+- The required compositions preserve their stated domain, including any restriction on joint inputs. A failed closure claim identifies the obstruction and the uses it leaves open.
 - The higher-order operation has a construction and returns an admissible output.
 - Each law used to derive the result has the required scope and an argument. A counterexample can refute a universal law. To infer the law from finite tests, cover its stated domain or justify the extension.
 - The resulting comparison or changed rule answers the starting question.

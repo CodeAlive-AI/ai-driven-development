@@ -111,7 +111,7 @@ For the exit comparison, assume that orderly exit and device continuation both s
 
 The Board supplied this trade-off. Under restricted reuse, only a permitted service arrangement could keep preparation worthwhile. Licensing is not currently selectable without its required reuse right. Under the supplied whole-consequence comparison, continuation is preferable to exit. Reopen that comparison if an exit benefit, transition burden, continuing contribution or protected-service condition changes enough to reverse it; continuation need not become infeasible for exit to become preferable.
 
-Costing can also settle the service question. If no relevant permitted configuration can cover delivery cost at attainable customer terms, the recommendation is device continuation without a trial. If a cost component is missing, the comparison remains unresolved.
+Costing can also settle the service question. If no relevant permitted configuration can cover delivery cost at attainable customer terms, the recommendation is device continuation without a trial. A bound covering all relevant configurations can rule them out despite an unknown cost. Seek that cost when its possible values leave the choice undecided.
 
 Later capacity arithmetic answers another question. A proposed 78-person-day configuration fits the 80-day ceiling including protected service and reserve. Strategic merit and delivery capability require supporting evidence of their own. Within its six platform days, two preserve device-compatible interfaces and instructions, postponing a two-day service-diagnostic enhancement. That is the cost of the fallback through the first staged decision. It differs from the four-day device improvement forgone in the present preparation choice.
 

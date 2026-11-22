@@ -10,7 +10,7 @@
 
 Use this method when you need to assess or explain a connection in a narrative. A reader may be able to retell the events yet leave open what changed, how a mechanism worked, why a design choice mattered or how a proof step followed.
 
-Choose a passage, state the connection its wording suggests and compare that connection with the source or fictional premises. If you are revising it, supply the missing step, correct an unsupported claim or make the unresolved question clear.
+State what the reader must be able to connect. Find the words, scenes or source records that carry each end of that connection and read them together. One sentence may suffice for a local question. If revising, supply a missing step from its grounds, correct an unsupported claim or make the unresolved question clear.
 
 To explain a past reading, examine what the reader said or did with the passage and what other information or help they used. An analysis of the text can establish what it made possible to infer under stated assumptions.
 
@@ -48,6 +48,8 @@ NarrativeEventMechanismSupport@Context:
 ```
 
 Compare the intended connection with what the passage expresses or permits a reader to infer. Supply an omitted step if the source establishes it. When the source leaves the relation open, state what cannot be determined and identify any alternatives the material supports. An action may be clear while two motives remain possible or its motive is wholly unknown. Use NSTD.9 to examine a disputed reading. If a fictional scene or an explicitly hypothetical real-world scenario needs a new event or constraint, use NSTD.10 to construct it under the chosen premises.
+
+When a passage joins several well-supported statements, ask what the reader is meant to infer from them together. A report may establish that an operator rolled back a setting, and a log that service returned. To say that this operator restored this service by that action, connect the records to the same incident and establish the effect of the rollback. Even records from the same incident can leave the cause open. For a question about whether service was available at a stated time, a sufficient observation of service at that time can settle the matter directly.
 
 The following questions support an assessment or revision. Keep the answers that another part of the work needs.
 
@@ -219,7 +221,7 @@ A vivid episode can make a suggested cause or motive feel established. Compare t
 | --- | --- |
 | `CC-NSTD3-1` | The passage represents the relevant source relations without silently turning a dependency, constraint or proof step into a physical event. |
 | `CC-NSTD3-2` | The assessment identifies what the passage makes recoverable under the assumed knowledge, or what remains uncertain. To report what a particular reader understood, use a response or action that reveals their interpretation of the connection at issue. |
-| `CC-NSTD3-3` | Cause, dependency, necessity and motive are attributed on grounds suited to each claim. Use further subject work when an answer still needed depends on it. |
+| `CC-NSTD3-3` | The evidence supports the connection the reader needs, including any link between the events or contributions combined in the account. Cause, dependency, necessity and motive each have grounds appropriate to the claim. |
 | `CC-NSTD3-4` | An unknown, disputed or deferred relation remains visible when it affects the reader's conclusion or action. |
 | `CC-NSTD3-5` | Learning or consequential use has a suitable way to check or recover the needed connection. A separate test or source note is selected for its value to that use. |
 

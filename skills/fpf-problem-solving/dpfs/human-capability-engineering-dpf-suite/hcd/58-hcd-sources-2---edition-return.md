@@ -8,7 +8,7 @@ The [Human Capability Engineering DPF Suite (HCE)](../suite-reference/_index.md)
 
 **Author:** Anatoly Levenchuk with AI-assisted development and review.
 
-**Edition:** Twenty-nine-pattern edition dated 12 October 2026
+**Edition:** Twenty-nine-pattern edition dated 22 November 2026
 
 **Status:** Eternal alpha: used in working development projects and open to continuing correction.
 

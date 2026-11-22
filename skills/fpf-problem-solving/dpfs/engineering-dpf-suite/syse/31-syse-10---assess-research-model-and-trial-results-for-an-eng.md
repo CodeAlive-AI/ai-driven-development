@@ -197,14 +197,7 @@ not supply those bounds. Do not add uncertain quantities or multiply confidence 
 measurement or probability relation. Two accounts copied from one trace do not add an independent observation.
 Preserve shared premises so that a correction can reach every dependent use.
 
-**Challenge the reason and return the surviving claim.** Could every listed result be true while the
-required claim is false? An untested operating region, unrepresented interaction or different interpretation of
-the same word may expose that possibility. Resolve an action-changing challenge using the available domain
-results or keep the whole claim unresolved while retaining supported parts. A failed bridge removes its support;
-it establishes a contrary physical claim only with further grounds. When several necessary premises are
-established and their joining rule suffices, return the bounded assessment and its decision effect. Stop there
-unless a separately selected inquiry could change that use. Section :5.2 works this join, and :5.3 changes one
-premise without discarding the independent result.
+**Challenge the claim at its stated reach.** Compare the criterion with the configurations and operating histories the installed arrangement can actually admit. A conservative enclosure wholly inside the criterion can prove a guarantee. If the enclosure crosses the limit, determine whether any jointly admissible history crosses it. One such history refutes a guarantee for all histories. Failure under every permitted alternative is a stronger claim. A direct measurement of a named occurrence can settle its outcome without settling that larger question. When the evidence settles neither success nor failure, identify the missing premise and retain results established for other criteria or narrower conditions. Apply the receiver's acceptance rule separately: a missing required certificate at the deadline can justify returning the offer although its physical performance is open. Section :5.2 works a positive case and :5.3 changes a premise.
 
 #### SYSE.10:4.2 - Record the Result
 
@@ -331,6 +324,8 @@ model result or repeating a controller-in-the-loop trial is a separate engineeri
 or the specialist Method. Its returned result can then reopen the affected assessment; a missing evidence
 entry alone is not a reason to commission an experiment.
 
+For a distinct adverse case, consider a qualified installed trace for the changed sensor at an admitted low-ambient load: the calibrated lower limit of a supply-water reading is 45.3 °C. This attainable excursion refutes the claim that temperature always stays within 40–45 °C in that envelope. It says nothing adverse about L4's restart spacing. If the release deadline instead passes with only the 2.4 s timing bound and an obligatory temperature certificate missing, the board can return the full offer under its evidence rule. For a separately authorized monitored interval, a valid certificate covering that interval and all its service criteria can support a narrower release. Neither the return nor the restricted permission supplies a field measurement.
+
 An AI Agent also proposes fault scenarios and a trace summary. One proposed scenario invents an interface
 state absent from the configuration. Reject that proposal for this use. The summary can help locate traces,
 but the assessment relies on their actual results and justified connections. A generated confidence score
@@ -363,9 +358,7 @@ the observations that would reopen it.
       uncertainty, and transfer limits are recoverable to the degree the reliance needs.
 - [ ] Each evidence use explains why the result bears on the target claim and retains polarity, scope, provenance,
       relevance window and unsupported use; causal reliance uses `C.28`.
-- [ ] An extended or combined claim has its consequential premises, joining rule and applicability grounds;
-      supported parts remain usable when the whole is unresolved. A sufficient direct result or specialist
-      argument can finish the assessment without duplicate reconstruction.
+- [ ] A combined claim has its consequential premises, joining rule and applicability grounds. A claimed violation of a guarantee has a reachable contrary case or an equivalent proof. When the result is an outer bound, a narrower finding, or a disposition under an evidence rule, the assessment states what that result establishes.
 - [ ] Rival explanations, common assumptions, contradictions, negative results, configuration mismatch, and
       affected-System evidence have been sought in proportion to the decision consequence.
 - [ ] The assessment states what is supported, contradicted, narrowed, or unresolved and what that means for the decision;
@@ -485,8 +478,7 @@ publication matters when it changes one of these contributions or limits, not me
   joint premises, alternative arguments and shared evidence. This assessment can use those instructions
   without making an assurance claim. `B.3`, `A.21`, `G.4`, and the applicable acceptance and permission
   patterns govern the separate assurance, gate and consequence-bearing results.
-- Assessment Work can produce evidence for `SYSE.6`, `SYSE.4`, or `SYSE.19` only when the claim, configuration,
-  horizon, and receiving decision match. Evidence neither authorizes nor entails those decisions.
+- Assessment Work can supply evidence to `SYSE.6`, `SYSE.4` or `SYSE.19` when its claim applies directly or the transfer to the receiving subject, configuration and horizon is justified. The receiving Agent exercises its own authority.
 - Results from engineering Work—for example realization, integration, operation, configuration change, specialist
   Work, or affected-System inquiry—become evidence only through their source and evidence-use relations. Adjacency
   between pattern names creates no such relation or temporal order.

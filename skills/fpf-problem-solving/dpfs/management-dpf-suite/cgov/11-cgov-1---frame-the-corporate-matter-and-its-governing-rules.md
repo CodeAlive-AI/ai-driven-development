@@ -7,7 +7,7 @@
 
 Use this pattern when a request such as “get the owners' approval”, “the group will guarantee it”, or “improve governance” leaves unclear whose act is needed and which rules make it effective. It helps a director, company secretary, owner, executive or adviser turn that request into a corporate matter that the relevant participants can decide or investigate.
 
-Begin with the proposed action and the corporation whose rights, obligations or arrangements it would change. An existing, adequate account can be used directly. The first result is a question such as “Who may authorize this subsidiary's guarantee, under its constitution and the applicable law, before the proposed signing?” A familiar routine purchase within an established delegation can go straight to its ordinary operating method.
+When the action is already specified, start with it and the corporation whose rights, obligations or arrangements it affects. For a request such as “improve governance”, first establish what decision or use the participants need to enable or repair. Who needs to do what, and what could prevent it? A missing corporate decision, a missing operational arrangement and a decision already taken can call for different work. Use the information that distinguishes those situations to select the matter. A purchase covered by an effective delegation may need only ordinary execution.
 
 ### CGOV.1:2 - Problem
 
@@ -23,15 +23,15 @@ The practitioner needs a usable question quickly, while differences between enti
 
 #### CGOV.1:4.1 - Recover the act and the corporation
 
-Restate what is proposed in a verb phrase, for example: appoint a director, enter a guarantee, issue shares, approve a distribution, disclose information, challenge a decision, or amend the constitution. If the request combines several acts, separate only those with different participants, authority, conditions or effects.
+Starting with the needed outcome, ask whose act could give it effect. If a board ruling, a shareholder’s consent and an operational correction could give different answers, trace who holds the relevant power and what must happen for this matter. This selects the corporation, organ or operation to examine. Name the resulting act, for instance appointing a director or authorising a guarantee. Separate acts where their participants, authority, conditions or effects differ.
 
 Identify the corporation for each act. Use its legal identity and form rather than a trading name alone. In a group, ask which entity owns the asset, incurs the obligation or has the organ being asked to decide. Include other entities only where a relation between them matters to the proposed act.
 
-State the time at which the answer is needed. A proposed appointment, amendment or transfer may change the answer after taking effect.
+Establish when the act occurs or occurred and which terms, appointments or transfers were effective then. The due date for the answer can be later. If all dates still possible give the same authority for that act, the question can be answered without choosing between them.
 
 #### CGOV.1:4.2 - Find the rules that can change the answer
 
-Start from the rules and qualified interpretations already available for this corporation and matter. Establish which jurisdiction's corporate law governs the question. A cross-border matter can also engage rules for a market, regulated activity, insolvency, employees or a transaction; name an additional regime when it changes the act, rights or conditions being examined.
+Start from the rules and qualified interpretations available for this corporation and matter. Identify the governing jurisdiction and terms to the extent needed for the requested answer. Cross-border activity, a market, insolvency, employment or a particular transaction may bring additional provisions into play. Trace them when they bear on this act, right or duty. If every reading still possible under the applicable instruments gives the same answer to a bounded question, give that answer and preserve distinctions that matter to a later act. Agreement among the drafts at hand cannot settle authority while another operative provision could change it.
 
 Locate the provisions that address the question in the applicable law, constitution and relevant agreements or delegations. Determine how those provisions interact. A shareholders' agreement can create a contractual obligation between its parties without itself changing an organ's legal power. A recommended governance code can guide a choice without imposing the same obligation as law. Where the distinction is decisive and unresolved, obtain a bounded interpretation of that interaction.
 
@@ -65,7 +65,7 @@ The most powerful participant's framing can make a group benefit appear to settl
 
 ### CGOV.1:7 - Conformance Checklist
 
-Can the receiver tell what act is proposed, which corporation it concerns, when the answer applies and what makes the act effective? Are the decisive law, constitutional provisions or contractual terms identified at a usable level? Does any unresolved question change a stated next action? Can sufficient existing work be reused without a new document-collection exercise?
+Can the recipient identify the act, corporation and time in question and use the rule or bound that settles it? For an assignment to frame a disputed matter, state whose power or which condition still needs to be established. For a decision about the act, determine whether any remaining uncertainty could change its effect. Reuse sufficient existing work.
 
 ### CGOV.1:8 - Common Anti-Patterns and How to Avoid Them
 

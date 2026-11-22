@@ -75,7 +75,7 @@ Recognition, choice of an engineering subject and SoI designation remain differe
 
 #### SYSE.1:4.3 - Generate and criticize materially different referents
 
-Generate materially different product referents from the working situation using the existence and recognition conditions in §4.2. A product, component, tool or operating System can be a candidate when its intended use supplies the product grounds for the cooperation. Apply §4.1 to distinguish a supplier's own product from work on the same creator under another project name.
+When product focus remains a choice, compare materially different referents under §4.2. Hold the local work fixed and change who uses its result: the same machine can be the supplier's product and a means in the customer's factory. Then hold the product use fixed and vary what contributors supply. Trace which boundary, common obligation or acceptance decision changes. A familiar product name can suffice once its use and the needed connections are established.
 
 For each candidate, compare the claims that matter now:
 
@@ -113,13 +113,13 @@ Stop when the project can ask the next concrete engineering question about the i
 
 ##### SYSE.1:4.4.1 - Establish enough common focus for the current coordination
 
-When a decision depends on several contributors, compare their understanding through one concrete use or change. Include the participants whose contribution, receiving use or limits can change that decision. Existing compatible exchanges may supply the answer.
+When a decision depends on several contributors, establish the common focus needed for their work. A concrete use or change can expose a material difference. Include the participants whose contribution, receiving use or limits can change that decision. Existing compatible exchanges may supply the answer.
 
 Establish which organizations participate in the extended enterprise and who can commit each relevant contribution. Establish from each contributor which products the joint work serves, what their work concerns, what they supply, to whom and under what conditions and limits. For each consequential connection, establish from the receiver what they expect and how they will use the contribution. A conversation, annotated case, asynchronous exchange or existing work that shows what the participants supply and expect can provide these answers.
 
 For example, “install the planning software” and “produce a feasible production plan” can share a project name. Follow one order moved to an earlier date. Determine whether installation, current stock information, capacity decisions and the planner's use connect to feasible commitments for the manufacturer's products. A missing contribution can leave the planning capability unavailable even when installation is complete.
 
-Use the available contributions to resolve a material mismatch with the party authorized to decide. Explain the selected product grounds and local engineering subject, then ask the affected contributors to use them on the same case. Enough common focus exists for this decision when those relying on it can identify these subjects, connect the contributions needed by their next action and identify any unresolved condition that limits it. They may retain different interests and preferred alternatives. Obtain permission and commitments separately where the next action needs them.
+Use the available contributions to resolve a material mismatch with the party authorized to decide. Use exchanges or work that already show how the contributors connect the selected product grounds and local engineering subject. If an interpretation that could change the work is still open, ask those affected to apply it to the same case. Enough common focus exists for this decision when those relying on it can identify these subjects, connect the contributions needed by their next action and identify any unresolved condition that limits it. They may retain different interests and preferred alternatives. Obtain permission and commitments separately where the next action needs them.
 
 If participants still mean different subjects or cannot connect a needed contribution, retain the individual account as provisional and hold only the joint claim that relies on the unresolved connection. Name the missing answer; independently supported work can continue. Separate projects retain their own boundaries and acceptance. They can share a product SoI. When an independently supplied product has its own SoI, coordinate the receiving contribution between them; use `SYSE.8` for provision or `SYSE.9` for a specialist return where needed.
 
@@ -211,12 +211,12 @@ plausible referent into permanent project scope; retain material alternatives an
 | `CC-SYSE1-1` | A conforming use SHALL name the current project and the decision that needs a project-system choice. |
 | `CC-SYSE1-2` | It SHALL retain a direct non-System subject when System designation is not needed, and SHALL use `A.1.SCR` when actual System recognition remains load-bearing. |
 | `CC-SYSE1-3` | It SHALL distinguish an actual System from an intended referent in plan, decision, or description content. |
-| `CC-SYSE1-4` | The first useful account SHALL name the product SoI or intended referent, its actual or proposed extended enterprise, agreements, agents' objectives and intended use or withdrawal from use, any main unresolved assumption and reopen condition; when the local engineering subject differs, it SHALL preserve that subject and the bounded result needed from it. |
+| `CC-SYSE1-4` | When a product SoI designation is needed, the first useful account SHALL name the product SoI or intended referent, its actual or proposed extended enterprise, agreements, agents' objectives and intended use or withdrawal from use, any main unresolved assumption and reopen condition; when the local engineering subject differs, it SHALL preserve that subject and the bounded result needed from it. |
 | `CC-SYSE1-5` | When materially different actual Systems or intended System referents remain plausible, the account SHALL compare their decision-relevant claims and SHALL keep every non-System subject under its direct pattern rather than admit it as a candidate referent for the project system-of-interest. |
 | `CC-SYSE1-6` | Additional account content SHALL be added only when it changes the current choice or a downstream use. |
-| `CC-SYSE1-7` | A stop SHALL make the next use-and-system concept question askable; a reopen SHALL name evidence or a changed project condition that can alter the choice. |
+| `CC-SYSE1-7` | A stop SHALL answer the identification or coordination question or state which needed connection remains unresolved; a reopen SHALL name evidence or a changed project condition that can alter the choice. |
 | `CC-SYSE1-8` | Related projects SHALL retain their own work boundaries and acceptance while preserving a common product SoI where they serve the same product. A different contract or performer SHALL NOT alone justify another SoI for organizational work; an independent supplier product needs its own use, decision and acceptance grounds. |
-| `CC-SYSE1-9` | Before coordinated Work relies on a shared focus, the relevant contributors SHALL establish a common referent and the contribution connections needed for that decision, or identify the unresolved mismatch and limit the dependent coordination. A written account alone SHALL NOT establish this result. |
+| `CC-SYSE1-9` | Before coordinated Work relies on a shared focus, the relevant contributors SHALL establish a common referent and the contribution connections needed for that decision, or identify the unresolved mismatch and limit the dependent coordination. A record of the contributors' decisions or responses MAY establish agreement for the stated use. A proposal awaiting those decisions leaves their agreement open. |
 
 ### SYSE.1:8 - Common Anti-Patterns and How to Avoid Them
 

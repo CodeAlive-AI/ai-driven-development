@@ -25,13 +25,13 @@ Dedicated resources may improve performance while narrowing outside options. Saf
 
 Identify who bears the investment or other contribution and what its alternative uses would be. Consider tooling, location, integration and relationship-specific learning where relevant. Compare the outside options before and after commitment. Use EAM or FIN when an exit or redeployment cost still needs to be established.
 
-Identify disturbances the terms need to handle, such as a volume change, new specification, input cost, delay or new use. Establish which the current arrangement covers and which would leave an adaptation unresolved. State why the dependence matters under the conditions examined.
+Identify the disturbances relevant to the promise, such as a volume change, new specification, delay or loss of a source. For a decision about one cancellation, the operative terms and outstanding amounts can settle the question. For an arrangement intended to handle a range of disturbances, start with a choice a participant would have to make. Hold the apparent loss or order volume fixed and change what has failed or which other use of the asset remains open. If the participant must do something different, retain that distinction and establish who can learn it before action is due. Determine which responses the present terms and resources allow.
 
 #### ECO.6:4.2 - Compare feasible constructions
 
 Where a change is being considered, examine whether a standard interface, redeployable equipment, buffer or other source would reduce dependence. Use available fit and cost evidence. A reduction in dependence may justify a performance cost if the full comparison supports it.
 
-Where applicable, compare reciprocal commitments, price-adjustment rules, staged investment, asset or knowledge rights, joint adaptation decisions and routes for dispute or exit. Establish who can propose a change, who can decide and who bears its cost. A continuing relationship can support cooperation when future opportunities matter to the parties.
+Where different responses are needed, work back from the adjustment to the person who can authorize and supply it. Set terms for what that person can observe in time. For a guarantee that comes due while the cause is still unknown, find a response that works across the remaining cases or an agreed way to defer the choice while protecting the service. For a stated risk limit, assess the outcomes against that limit. An asset right, staged investment, price adjustment, joint decision or exit provision can make such a response possible. Compare who bears its cost and whether it remains workable when several customers rely on the same asset. A continuing relationship can support cooperation when future opportunities matter to the parties.
 
 Consider common ownership or organizational change when decision rights, incentives or adaptation costs make it a credible alternative. Include the costs of directing the work after the change. If this alternative is chosen, use OCE and CGOV for the required organizational construction and corporate actions.
 
@@ -51,7 +51,7 @@ The parties could accept a minimum-payment commitment or stage the investment. T
 
 Now suppose only the dedicated process achieves the required surface quality. Both parties can support the investment. They choose supplier-owned tooling and specify how much each customer payment recovers. Under the agreement the purchasing manager can cancel future volume by settling the unrecovered tooling cost less resale proceeds. The supplier is responsible for resale. A change of specification requires a separate agreement.
 
-After the first month, customer payments have recovered €4,000. Demand falls. A buyer offers €2,000 for the tooling. The purchasing manager cancels the remaining volume and pays €20,000 − €4,000 − €2,000 = €14,000. The supplier sells the tooling and recovers the full €20,000. The released capacity can now be reassigned through OPS. The selected arrangement retained the process required for surface quality and permitted this change of volume. A different resale value, an unaffordable settlement or a different disturbance would reopen the affected conclusion. Enforceability in another setting requires grounds from that setting.
+After the first month, customer payments have recovered €4,000. Demand falls. A buyer offers €2,000 for the tooling. The purchasing manager cancels the remaining volume and pays €20,000 − €4,000 − €2,000 = €14,000. The supplier sells the tooling and recovers the full €20,000. This settles the cancellation on the agreed terms. For a new order, establish which production time is now free, whether the supplier may offer it and what equipment the order requires. An order using the supplier's remaining tools can fit a free shift. An order requiring the tool just sold still needs access to one. The selected arrangement retained the required surface quality and permitted the change of volume. A different resale value, an unaffordable settlement or a different disturbance would reopen the affected conclusion. Enforceability in another setting requires grounds from that setting.
 
 If a new interface instead makes the tooling readily reusable, the dependence may shrink enough for ordinary purchasing.
 
@@ -65,7 +65,7 @@ The buyer can overlook the supplier’s exposure, and the supplier may request g
 
 ### ECO.6:7 - Conformance Checklist
 
-Which dependence and disturbance does the arrangement address? Establish who bears exposure, who can authorize an adjustment and what the exit terms permit. If choosing among arrangements, compare credible technical, contractual and organizational alternatives at compatible scopes.
+Which dependence and disturbance does the arrangement address? Establish who bears the exposure, who can authorize an adjustment and what the exit terms permit. A ruling on one cancellation can follow from its terms and the event. For an arrangement covering future disturbances, can the parties recognize and carry out a suitable response in time throughout the range promised? If choosing among arrangements, compare the credible technical, contractual or organizational alternatives for the same service and conditions.
 
 ### ECO.6:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -89,6 +89,6 @@ An ideal complete contract can clarify what a feasible agreement leaves open. Co
 
 ### ECO.6:12 - Relations
 
-Use ECO.1 for a disputed calculation, ECO.4 for commitments and ECO.5 for incentive terms. Use EAM.6 and EAM.7 for asset use or replacement and FIN.6 and FIN.8 for financial consequences. OPS covers current flow and resources. Use OCE for organizational arrangements and CGOV for required corporate authority or acts when these are part of the selected alternative.
+Use ECO.1 for a disputed calculation, ECO.4 for commitments and ECO.5 for incentive terms. Use EAM.6 to test whether an asset can deliver the required service and EAM.7 to find ways of providing it. To choose between continued use and replacement, use EAM.8 and EAM.9 to compare eligible policies over the relevant horizon, retaining differences in service, cost and reliance on the other party. FIN.6 and FIN.8 address the financial consequences. OPS covers current flow and resources. Use OCE for organizational arrangements and CGOV for required corporate authority or acts when these are part of the selected alternative.
 
 ### ECO.6:End

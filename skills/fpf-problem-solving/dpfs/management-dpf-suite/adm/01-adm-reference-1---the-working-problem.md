@@ -1,6 +1,6 @@
 ## ADM.Reference:1 - The working problem
 
-Organization Administration concerns the institutional conditions and services that enable participants to do organizational work. A researcher needs legitimate access to an archive. A traveller needs an approved journey and usable accommodation. A supplier needs the agreed payment to arrive. The administrator's useful result is the particular condition supplied to the relevant participant under the applicable rules.
+Organization Administration concerns the institutional conditions and services that enable participants to do organizational work. A researcher needs legitimate access to an archive. A traveller needs an approved journey and usable accommodation. A supplier needs the agreed payment to arrive. Establish which contribution the participant requested. They may need a ruling about eligibility, an account of a past transfer, usable provision by a deadline or a specified act such as issuing a certificate. If several are due, determine what completes each and how the recipient uses them together.
 
 The work enabled can have a different outcome. A correctly administered journey can end in unsuccessful negotiations. Conversely, someone may complete the business task despite a failed administrative service by spending personal time or obtaining an improvised workaround. Judging only the business result conceals the service failure; judging only closed requests conceals the burden on the person trying to work.
 

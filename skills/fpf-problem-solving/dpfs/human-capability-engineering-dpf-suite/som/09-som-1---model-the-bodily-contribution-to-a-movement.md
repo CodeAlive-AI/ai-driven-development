@@ -7,7 +7,7 @@
 
 Use this Method when you know the result a movement should produce but need to understand the bodily action that contributes to it. A once-useful correction that now fails can raise the same question.
 
-Choose a particular movement. Relate what the performer experiences and can deliberately change to what happens in the action. Report a connection the evidence supports, or propose one and identify an observation that would count against it. Where a correction is the aim, use that connection to choose a suitable change.
+Choose the movement or set of movements that the question concerns. A single stroke can support a finding about that stroke. To construct a model for several kinds of stroke, establish which relations they share and which changes of tool, support or movement could alter the proposed connection. Relate the relevant experience and deliberate action to the result. Report a connection the evidence supports, or propose one and identify an observation that would count against it. Where a correction is the aim, use that connection to choose a suitable change.
 
 For a bodily attempt, use familiar technique and comfortable conditions whose limits you understand, or obtain suitable instruction from a qualified teacher. If technique, loading conditions or a question about pain makes the attempt uncertain, obtain the relevant movement or clinical guidance before attempting it.
 
@@ -25,13 +25,13 @@ Use the bodily detail the question requires. A change meant to guide the perform
 
 #### SOM.1:4.1 - Choose the action interval
 
-Identify the required result and the interval in which the question arises. Establish the support, contact, timing and any other condition that could affect it. Identify what was happening at the same time that mattered to the movement, including what must continue during any proposed correction.
+Identify the required result and the interval in which the question arises. Identify the conditions whose variation could change the answer or its grounds, such as support, contact or timing. Identify what was happening at the same time that mattered to the movement, including what must continue during any proposed correction.
 
-For a dancer, the interval may include transferring support during a turn while steps and partner interaction continue. For a writer, it may be the part of a stroke where forearm support changes. Use the technique and criteria of that practice.
+For a dancer, the interval may include transferring support during a turn while steps and partner interaction continue. For a writer, it may be the part of a stroke where forearm support changes. Use the technique and criteria of that practice. If the learner is to choose what to model, give them the movement and the purpose of the account before naming a bodily region or prescribing a test. Have the learner work back from the correction or explanation the recipient needs. If two ways of making the same visible stroke would call for different corrections, let the learner choose what could distinguish them and explain why the available evidence suffices or what it leaves open. A teacher who supplies the region and the contrast can still leave the learner to interpret what occurred.
 
 #### SOM.1:4.2 - Relate three accounts
 
-For the same interval, establish what the evidence supplies about each of the following. Leave an unavailable account open.
+Use the accounts the question needs. When a finding depends on linking them in one movement, establish that they concern the same occurrence. A movement result may settle the question with the felt change still unknown.
 
 - **Experience:** where a change is felt, its direction and how it develops.
 - **Regulation:** what the performer can deliberately increase, decrease, release or coordinate in those conditions.
@@ -49,7 +49,9 @@ For a proposed change, state the bodily change the performer would try, its expe
 
 Use a suitable existing comparison when it answers the question. If a new attempt is needed, try a small, familiar change within the limits of the practice and compare the bodily report with the movement result. Separate observations or attempts can help when attending to everything at once would disrupt the action. Account for differences between attempts before attributing a result to the change.
 
-For comparison or feedback, describe the conditions, what was felt, what was deliberately changed, what could be repeated, any help received and what happened in the movement. A short spoken account or note can suffice. Distinguish felt intensity from the position or extent of the region if that affects the correction. Assess noticing, regulating and reproducing the change from their respective evidence.
+Observations distributed over attempts can identify a recurring relation when the relevant conditions are comparable and the link holds across them. To say that the lighter hold and uninterrupted contact occurred in this stroke, tie the evidence for both to this stroke. Contact on one attempt and a lighter hold on another still allow both attempts to have missed the combination.
+
+For comparison or feedback, describe the conditions and the experience, adjustment, repetition, help or movement result on which the recipient's judgement depends. A short spoken account or note can suffice. Distinguish felt intensity from the position or extent of the region if that affects the correction. Assess noticing, regulating and reproducing the change from their respective evidence.
 
 If bodily regulation appears available but the intended result still fails, check external conditions. If a different condition is permitted, compare it using suitable existing observations or an attempt. A restored result may justify using the alternative while the cause of the earlier failure remains open.
 
@@ -85,7 +87,7 @@ A teacher’s preferred body map may suggest useful questions. It may also influ
 
 ### SOM.1:7 - Conformance Checklist
 
-Identify the interval and the required movement result. Relate the available observations of the performer’s experience, deliberate action and movement result, including the actions that had to continue, the support and the conditions examined. State what the evidence supports and where an account is unavailable. If proposing a change, identify a result that could count against it and use the observations to select any further work the task requires.
+Identify the interval and the required movement result. Use the observations of experience, deliberate action or movement result needed for the question. When the conclusion depends on their relation, connect them under the relevant support and movement conditions. State what the evidence supports and where an account is unavailable. If proposing a change, identify a result that could count against it and use the observations to select any further work the task requires.
 
 ### SOM.1:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -99,7 +101,7 @@ A performer and teacher can use the model to discuss and test a correction. The 
 
 ### SOM.1:10 - Architectural Rationale
 
-The movement gives the three accounts a common episode. The performer can describe how the change felt, an observer can describe contact or timing, and either may have evidence about what the performer deliberately changed. Those observations help relate the bodily contribution to the other work the action requires.
+To relate a report of experience, an attempted adjustment and an observed movement, establish which interval each concerns. The performer can describe how the change felt. A mark on paper or another person's observation can establish what happened to the stroke. When the records come from different attempts, explain which feature is stable enough for the inference the practitioner needs.
 
 ### SOM.1:11 - SoTA-Echoing
 

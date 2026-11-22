@@ -31,7 +31,7 @@ For explanatory or Method material, EXD.1 can identify the receiving question an
 
 #### SYSE.52:4.2 - Choose what remains exact, summarized, reachable or absent
 
-Choose how to represent what can affect the next action or the grounds for its result.
+Choose the representation by trying it against the next actual assignment. Could the same summary describe two source situations that require different actions, different grounds or a choice the receiver is supposed to make? Retain the distinguishing information or a source they can retrieve in time. If the summary already supplies a design that the receiver was asked to construct, restore the original problem and the assistance allowed for that work.
 
 | Representation | Useful condition | Required loss check |
 | --- | --- | --- |
@@ -78,7 +78,7 @@ Prepare a view that includes the original expression, the labeled columns and th
 
 Keep “multiply by 6” visible and provide readable scale, a pencil or usable digital entry, and room for the next carry and result. The person now performs 4 × 6 + 4 = 28, writes 8 under tens and carries 2 to hundreds; then 3 × 6 + 2 = 20 completes 2082. A calculator can be supplied when the chosen way calls for it. SYSE.42 governs its actual entered expression and returned result.
 
-Compare the cropped and restored views on a fresh equivalent interruption. The restored view shows that the carry 4 belongs to the tens column. If the stored original itself contains only “2, 4” without positions, SYSE.43 must restore the record from a source or bounded recomputation. If the correct visible carry is still skipped, inspect the performed arithmetic or procedure instead. These are different repair locations.
+Compare the cropped and restored views on a fresh equivalent interruption. The restored view shows that the carry 4 belongs to the tens column. If the stored original contains only “2, 4” without positions, recomputing the visible units product 7 × 6 restores the carry needed to continue the arithmetic. To answer which carry had actually been written before interruption, obtain evidence of the earlier entry under SYSE.43. If the correct visible carry is still skipped, inspect the performed arithmetic or procedure instead. These are different repair locations.
 
 An enlarged view that hides the multiplier fails a contrary case. Keep both the column positions and the multiplier visible. A pointer to a full worksheet also fails when it cannot be opened at the desk; keep the indispensable fields visible. Retain the full arithmetic explanation and Method for readers who need it. The short working view supports this continuation; it does not replace instruction or prove later unaided learning.
 
@@ -88,9 +88,9 @@ A service update must have at most one effect. The history contains a returned a
 
 Construct the next input with the at-most-one-effect requirement, target and requested version, exact attempt identity a17, acceptance evidence and unresolved effect status. Keep the raw acceptance pointer and the outcome-lookup contract. Summarize unrelated diagnostic conversation and omit an obsolete tool listing only after retaining its applicable replacement.
 
-The supported next proposal is an outcome lookup for a17. Restoring the acceptance record enables that proposal; it does not establish whether the effect happened. Use the lookup result under SYSE.42 to determine whether another action is warranted. If it does not resolve the effect, retain the hold on a fresh update. If the source pointer cannot be opened during the attempt, retain the decisive acceptance fields in the input rather than relying on the pointer alone.
+The supported next proposal is an outcome lookup for a17. Restoring the acceptance record enables that proposal; it does not establish whether the effect happened. Use the lookup result under SYSE.42 to determine whether another action is warranted. If its outcome remains open, withhold any new operation that could duplicate the effect. A qualified, authorized reconciliation that satisfies the at-most-one condition in every still-possible state can complete the state-change order. The historical outcome of a17 can remain open. If the source pointer cannot be opened during the attempt, retain the decisive acceptance fields in the input rather than relying on the pointer alone.
 
-Now filter tools to the apparent task “update service.” A similarity-based filter keeps update and removes outcome lookup. Even the corrected input then lacks its recovery operation. Restore the lookup because its precondition—an identified attempt whose effect needs resolution—holds. Keep a fresh update unavailable while effect remains unresolved.
+Now filter tools to the apparent task “update service.” A similarity-based filter keeps update and removes outcome lookup. Even the corrected input then lacks its recovery operation. Restore the lookup because its precondition—an identified attempt whose effect needs resolution—holds. Keep an operation that could duplicate the effect unavailable until the required state or safe reconciliation is established.
 
 Compare this with an exact small state record: target, desired version, attempt, acceptance, effect status and source. When that record and the short applicable procedure suffice, a recursive narrative summary adds no necessary value. If a later task needs the earlier diagnosis, its pointer can be followed or the input rebuilt for that new use.
 

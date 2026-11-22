@@ -8,11 +8,11 @@
 
 **Use this when** you are choosing or designing a notation and cannot yet say what its users must be able to express, recognize or do with an expression. A candidate may name all the right objects while hiding their order, dependence or duration. Another may express the distinction but make a frequent change require rebuilding the whole description.
 
-Start with a piece of work: composing operations, comparing two models, tracing a dependency or performing a sequence are examples. Identify an operation that the intended user needs to carry out using the notation. Then find two cases that this operation must treat differently. Trying to express and use those cases gives the first design requirement that can be acted on.
+Begin with a piece of work the user must perform with the notation, such as composing operations, tracing a dependency or performing a sequence. If the user needs a value, ask whether cases that look alike can require different values. If the user needs a workable action, look for one they can take across all cases that look alike. The proposed expressions and the knowledge available to their reader may already suffice.
 
 The reader needs enough knowledge of the practice to explain why the cases differ and what a useful result would be. The designer can supply that knowledge or obtain the needed distinctions and inferences from a collaborator or an established source.
 
-The result is a choice of distinctions and operations to support, together with a small expression or interaction that shows how a proposed notation could support them. It may instead be a reason to keep an existing notation, preserve an unresolved choice, or obtain a missing account of the work before adding symbols.
+The result is a choice of distinctions and operations to support, with grounds showing how the proposed notation makes them available. Those grounds may come from a decoding rule that covers the required expressions, a constructed expression or an observation of use. The work may also justify keeping an existing notation, preserving an unresolved choice or obtaining a missing subject account before adding symbols.
 
 If a suitable notation already exists and only one expression needs repair, construct that expression under its rules using A.6.3.RT.OE. Return here when the rules themselves lack a needed distinction or make the required operation impractical.
 
@@ -34,7 +34,7 @@ A list of concepts leaves the work underdetermined. The same concepts can enter 
 
 ### NOT.1:4 - Solution
 
-**Choose a working operation → find a consequential difference → locate what carries that difference → try a notation choice → compare the work it enables and displaces → retain or revise the requirement.**
+**Choose the operation and its conditions → identify the distinctions it needs → find what carries them → establish how the proposed convention supports the work → retain or revise the requirement.**
 
 #### NOT.1:4.1 - Choose an operation and the conditions for performing it
 
@@ -42,13 +42,13 @@ Describe what the user starts with, what they do and what they need to obtain. P
 
 Specify the preparation and access on which the operation relies. A mathematician may use established algebraic conventions; a performer may recognize a learned gesture; a program may receive only serialized text. An AI agent's access to a rendered page, a text extraction and an editor's internal structure are different conditions. Include the context the intended user can access.
 
-For a small task, one operation is enough to begin. If the notation will be used for a family of operations, choose cases that exercise materially different demands. For example, interpreting a completed expression and changing a shared component can need different support.
+One operation can settle a commission limited to that use. For a family of uses, trace each promised use to the distinctions and reading rule it needs. A composition or decoding rule can cover an entire family of expressions. Use contrasting cases when they help uncover a requirement or test a disputed distinction. For a shared expression, vary a local part while keeping the proposed summary fixed. Can another reader still recover the needed effect on their part or on the whole? When several readers can edit the expression, determine which choices they can make separately and which must identify the same item, revision or agreed change. One argument about the shared convention can cover several uses.
 
 #### NOT.1:4.2 - Find cases whose difference changes the work
 
-Construct or recover a pair of cases that require different answers, permitted changes or actions. Explain the difference in the practice before deciding how to write it. Two arrangements of the same components can have different outputs; two performances with the same starting times can have different sustained intervals.
+Start with what the reader must obtain. For an exact answer, see whether two possible situations can give different answers. If the answer is fixed by what the reader already knows, the same expression may serve the entire group. Two arrangements of the same components can have different outputs. Two performances with the same starting times can have different sustained intervals. For a choice of any acceptable action, consider the alternatives that the reader would still group together and the actions each permits.
 
-Attempt to express both cases with the candidate notation and its allowed context. If they become indistinguishable while the required answers differ, something needed by that operation has been omitted. Recover the difference through an expression rule, an accessible annotation or a query to another representation. Alternatively, narrow the declared use to questions that do not need that difference.
+Try the proposed notation with the context available at the moment of use. For an exact answer, indistinguishable situations with different answers reveal a loss. For one guaranteed action, look for an action that works across the whole group. Three possible editions might allow {A,B}, {B,C} and {A,C}. Every pair allows an action, while no action serves all three. If the work needs this choice, add a distinguishing reference, an accessible query or a reading rule backed by subject knowledge. A context that already identifies an applicable action can be sufficient. [NOT.5:4.4](14-not-5---translate-between-notations-while-tracking-lost-dist.md#not544---expose-distinctions-the-target-collapses) gives the corresponding test when translating an expression.
 
 Conversely, two visibly different cases may be interchangeable for the present operation. Keep their shared representation if that simplification preserves the needed result. The question determines which differences matter.
 
@@ -68,9 +68,9 @@ Test the whole expression and its usable context. A symbol may be ambiguous in i
 
 #### NOT.1:4.4 - Try a design choice through use
 
-Propose a small change capable of supporting the selected operation. Examples include marking operand groups, adding a reference to a shared component, exposing event duration, or making an unresolved alternative visible. Construct the contrasting cases with that change and carry out the operation using the proposed reading rule.
+Propose a change capable of supporting the selected operation. It could mark operand groups, refer to a shared component, expose event duration or distinguish an unresolved alternative. Establish how a reader can recover the needed distinction under the proposed convention and the context available to them. A decoding rule can settle that question throughout its domain. When a difference could still be lost, construct the contrasting expressions and follow the operation through each.
 
-Where modification matters, change an input, component or relation and follow the resulting edits. A notation that displays one finished example well may make the required family of changes error-prone or laborious. Include a contrasting case that challenges the same rule, to see whether the change works beyond the first example.
+Where modification matters, change an input, component or relation and follow the resulting edits. A contrasting case can expose a failing rule. For a reusable design, explain which construction or subject condition preserves the required operation throughout the intended expressions and changes. The demonstration of one successful edit gives a reader a place to start.
 
 Separate the notation's contribution from supplied subject knowledge. In a diagram for composing functions, arrows can expose the order of application; the functions and the ability to apply them supply the numerical result. If the result cannot be obtained because an algorithm or physical law is missing, return that question to the corresponding practice.
 
@@ -132,9 +132,9 @@ A successful notation for one audience can require unavailable preparation in an
 Use these questions to examine the design decision when its adequacy matters.
 
 - Can the intended user identify the working operation, its starting information and the result they need?
-- Does a consequential difference between cases explain why the selected distinction is required? If a difference is omitted, is the resulting loss acceptable for that use?
+- Which lost difference would change the exact answer or leave the reader's choices without a common acceptable action? If the cases can safely share an expression, what establishes that for the intended use?
 - Is the necessary information available in the expression, its declared conventions or an accessible interaction?
-- Has the proposed rule been used on the contrasting cases, including a change when modification is part of the work?
+- For this task, can the intended reader use the expression and, if needed, change it? For a promise of reuse, how does the reading or editing rule cover the admitted family?
 - Are the subject knowledge and reader preparation needed for that use recoverable?
 - Does the next construction follow from the decision, with remaining uncertainty and displaced work visible where they matter?
 
@@ -152,15 +152,15 @@ Use these questions to examine the design decision when its adequacy matters.
 
 The next notation decision becomes a choice about work that can be attempted. A designer can explain why a distinction, convention or editing operation is needed and can recognize when a simpler notation suffices.
 
-The method costs representative construction and use. It can reveal a gap in the subject account that notation design alone cannot settle. Its result is local to the selected operations and conditions; extending use can expose another requirement. Keeping the contrast behind a decision makes that extension easier to reason about.
+Establishing a notation requirement can take analysis of an existing rule, construction of contrasting expressions or observation of use. It can also reveal a gap in the subject account that notation design alone cannot settle. Keep the operations and conditions the grounds cover. A new use may depend on a distinction that was dispensable for the earlier one.
 
 ### NOT.1:10 - Architectural Rationale
 
 A notation provides ways to form and use expressions. What to support depends on what the user needs to obtain or change. Starting with that operation connects the subject matter, reader preparation and representation.
 
-Contrasting cases make an omitted distinction consequential. If two cases with the same available representation require different answers, a reader using only that representation cannot be guaranteed the right answer in both. The design must recover the difference, obtain additional information or accept the resulting limitation. This argument identifies a requirement; trying the supported operation is still needed to learn whether the candidate is usable at the available effort.
+Contrasting cases can make an omitted distinction consequential. If the same available representation is compatible with different required answers, a reader relying on it cannot be guaranteed the right answer in both cases. Recover the difference, obtain additional information or qualify the use. A decoding or cost argument can establish what the representation permits under its assumptions. For a claim about what intended readers actually did and what it cost them, use evidence of their work under the relevant conditions.
 
-The pattern chooses requirements through small constructive trials. NOT.2-.4 develop formation, interpretation and transformation rules. A.6.3.RT.OE addresses a different starting condition: the scheme is available and an operative expression must be built under it. C.2.8 characterizes what a prepared observer can extract; the present method uses that question to construct or choose a scheme.
+The method derives a notation requirement from the work the expression must support. A general argument, a decisive contrast or observations of use supply different grounds for choosing a scheme. NOT.2-.4 develop formation, interpretation and transformation rules. A.6.3.RT.OE addresses a different starting condition: the scheme is available and an operative expression must be built under it. C.2.8 characterizes what a prepared observer can extract; the present method uses that question to construct or choose a scheme.
 
 ### NOT.1:11 - SoTA-Echoing
 
@@ -171,7 +171,7 @@ The pattern chooses requirements through small constructive trials. NOT.2-.4 dev
 | Ross and colleagues, [Affordances of Sketched Notations for Multimodal UI Design and Development Tools](https://arxiv.org/abs/2508.09342), 2025 preprint, abstract-level contribution | Retain the distinction between isolated-symbol recognition and interpretation of a whole contextual sketch in AI-assisted work. The abstract motivates checking the receiving context. It does not establish a general advantage of a particular design or interpreter. |
 | Kruchten, McNutt and McGuffin, [Metrics-Based Evaluation and Comparison of Visualization Notations](https://ieeevis.b-cdn.net/vis_2023/pdfs/v-full-1328.pdf), IEEE VIS 2023, §§3–4 | Reuse matched examples and their metrics to locate differences for closer reading when comparing working notations. The method assumes expressions implementing the shared tasks. Its metrics do not capture the whole user experience or supply a universally best notation. |
 
-**Choosing the design move.** When the needed distinction is still unknown, construct a contrasting pair first. A gallery-based comparison already needs expressions that implement chosen tasks; preparing that gallery cannot replace discovering the missing task or distinction. Once several viable notations support a stable family of work, a shared set of examples becomes useful: compare the same readings and edits, use metrics to find costly cases, then inspect those cases. This costs more than the first pair but can expose repeated-change burdens hidden by one successful example. Reopen the small comparison when that broader burden could change the choice; NOT.7 develops the corresponding redesign. Cognitive Dimensions and PUX can also help discover or reformulate the operations to compare.
+**Choosing the design move.** When the needed distinction is still unknown, look for indistinguishable cases whose required answer or collectively available actions reveal the loss. A gallery-based comparison already needs expressions that implement chosen tasks; preparing that gallery cannot replace discovering the missing task or distinction. Once several viable notations support a stable family of work, a shared set of examples becomes useful: compare the same readings and edits, use metrics to find costly cases, then inspect those cases. Preparing that comparison takes additional work but can expose repeated-change burdens hidden by one successful example. Reopen the small comparison when that broader burden could change the choice; NOT.7 develops the corresponding redesign. Cognitive Dimensions and PUX can also help discover or reformulate the operations to compare.
 
 This method adapts those sources to construct requirements from contrasting cases, as illustrated by the function pipeline and signal durations. The method connects notation design to available FPF representation, extraction and problem-development methods.
 

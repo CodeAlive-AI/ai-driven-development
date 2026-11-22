@@ -54,7 +54,7 @@ SensorCo could deliver a customer-local service internally or use a provider. Th
 
 ### STR.Application:1.4 - Decide whether more inquiry is worth doing
 
-STR.7 first uses incident records and seeks to establish delivery cost, including travel and support. If complete costing rules out an affordable service configuration at the customers’ price ceiling, the team can return a device-only recommendation and close the trial inquiry. A missing material cost leaves the comparison open.
+STR.7 first uses incident records and seeks to establish delivery cost, including travel and support. If the known costs or a justified lower bound rule out every permitted service configuration at the customers’ price ceiling, the team can return a device-only recommendation and close the trial inquiry. If the unknown cost could change that conclusion, return the unresolved comparison.
 
 If a feasible trial remains and its attainable contribution to the commitment decision warrants its burden, design it. With participant agreement and the necessary permissions, the trial could establish whether the two customers use and pay for the specified service and whether the bounded arrangement delivers it. The results would concern those customers and conditions.
 
@@ -94,7 +94,7 @@ STR.12 connects two illustrative signals to different returns.
 
 A qualified forecast above 80 engineer-days next month, including the protected 8-day reserve, must arrive before allocation. During preparation the team returns the infeasible allocation proposal. If a trial has since been authorized and the agreed suspension rule applies, the service owner suspends it under that authority and the Board reconsiders its scope.
 
-If complete costing during preparation rules out a worthwhile service configuration, the team can end the inquiry and recommend device-only continuation. The same finding after an authorized trial blocks expansion and returns the preference to the Board. If a material cost is missing, report that gap.
+If the costs or justified bounds during preparation rule out every worthwhile service configuration, the team can end the inquiry and recommend device-only continuation. The same finding after an authorized trial blocks expansion and returns the preference to the Board. If the possible values of a missing cost could change the recommendation, identify which choice remains open.
 
 Changes in permissions, finance or conditions for affected parties can also require reconsideration in this case. Keep independent device commitments and service protection while their grounds hold.
 

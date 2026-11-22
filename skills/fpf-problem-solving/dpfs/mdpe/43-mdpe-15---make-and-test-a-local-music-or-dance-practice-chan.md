@@ -175,7 +175,7 @@ When the claim calls for performance evidence, use evidence suited to it, includ
 Use the performed work to determine which account fits. `A.15.1` and `B.1.5.EW` explain occurrence and part–whole relations.
 
 - One occurrence can serve both change and observation. Count that occurrence once. Account for each participant’s time and other resources used.
-- A separately identifiable trial may be part of a larger change attempt if its work contributes to that attempt.
+- A trial forms part of a change attempt when carrying it out is among the actions that constitute that attempt. An earlier independent rehearsal may supply evidence the team uses in making the change.
 - Other work may overlap or follow the attempt, or supply evidence about it. Editing an arrangement today and rehearsing it tomorrow are separate occurrences.
 
 Sera and Dima spend forty seconds adjusting the size of Sera's torso cue in a constructed partner exercise. They keep the agreed phrase, music, comfortable contact and stop signal. Sera reduces the cue, Dima responds within the phrase and both report comfortable continuation. The pair adjust the cue and use the response to judge its readability in the same forty elapsed seconds. Together the two dancers contribute eighty person-seconds. The changed cue and the observations are distinct results. A claim about durable skill or the independent effect of the adjustment would require other evidence.

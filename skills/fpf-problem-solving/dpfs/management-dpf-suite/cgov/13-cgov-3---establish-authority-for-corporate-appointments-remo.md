@@ -7,7 +7,7 @@
 
 Use this pattern when a practitioner must determine who may appoint or remove a holder, authorize a corporate matter, delegate a power, or act under an existing delegation. It helps directors, company secretaries, executives and advisers resolve authority that a title or organization chart leaves ambiguous.
 
-Begin with the corporation, proposed act and time from CGOV.1. The first result identifies the responsible organ or holder, the applicable power and its conditions. If an existing sufficient delegation covers the act, use it; this pattern adds no requirement to seek approval again.
+Begin with the corporation, proposed act and date. Identify the power relevant to the recipient’s question. Existing authority can settle who may act. A limit or an effective-date bound can also settle whether a named person may act today, even if the name of a replacement remains unknown. A request to find someone who can act requires that additional result.
 
 ### CGOV.3:2 - Problem
 
@@ -27,19 +27,19 @@ Name the act and corporation. Identify the provision or qualified interpretation
 
 For an appointment or removal, determine who can initiate, nominate, decide and make it effective. Recover eligibility, consent, term and any other condition that changes the proposed act. A nomination identifies a candidate when the rule still requires another act of appointment. Removal from an office and the consequences for an employment or other contract may require separate answers.
 
-For an existing holder, establish whether the relied-on appointment has taken effect and remains in force. Use the existing authoritative result where sufficient. A disputed date or missing condition requires investigation of that issue.
+For an existing holder, use the appointment and its effective conditions to determine whether it covers the act at the time in question. If every supported effective date is later, the appointment cannot authorize action today. Investigate a disputed date or missing term when it could change the answer needed.
 
 #### CGOV.3:4.2 - Trace a delegation and its limits
 
 Where the act relies on delegation, identify the delegating power, recipient, permitted acts, conditions and effective period. Check whether the source permits the delegation and, where relied on, further delegation. A person's title can help find that basis but does not supply its terms.
 
-Apply the limits to the whole proposed act: for example, amount, kind of transaction, territory or requirement for joint action. A reserved matter is a matter retained for a specified decision or consent. Establish how the reservation limits or qualifies the delegation.
+Read the unit and period of the limit in the delegation. A limit can cover each purchase, connected transactions together, or total expenditure in a period. With two purchases of 60 and a limit of 100, independent per-purchase authority can cover both. A single limit on their combined cost precludes committing to both and may still permit either one. Establish which purchases count together for the act in question. Check any reserved decision or additional consent that applies.
 
 Separate the authority to decide from the authority to communicate, sign or implement the result where different rules govern them. Also retain any other party's required consent. An organ's decision power does not establish that the consent has been given.
 
 #### CGOV.3:4.3 - Determine what can happen now
 
-Apply the recovered conditions to the proposed act and its participants. State who can act under the established authority and retain every condition still to be met. A matter can require both a board decision and another party's consent. Identify the responsible participant for each required act, and distinguish an unperformed act from an unresolved rule about who may perform it.
+Apply the governing conditions to the act and its participants. If the recipient needs a route to authorization, identify who can perform each required act and which consents remain outstanding. For a question confined to one power, a decisive condition can establish its presence or absence. Distinguish a known act still to be performed from uncertainty over the applicable rule.
 
 Return the authority answer to the practitioner who will perform or arrange the corporate act. For a proposed appointment or delegation, the answer identifies who can make it and what governs its effect. It does not make the appointment or delegation; the authorized participants must perform that act under the applicable procedure.
 
@@ -71,7 +71,7 @@ Prestige, shareholding or a senior title can be mistaken for power to act. The r
 
 ### CGOV.3:7 - Conformance Checklist
 
-Can the receiver identify the corporation, act, responsible organ or holder, source of power, limits and effective period? Are nomination, appointment and removal distinguished where their effects differ? Does a relied-on delegation permit this act and any relied-on further delegation? Are decision, signing and other consents separated where necessary? Does the result distinguish established authority from its later exercise?
+Can the recipient tell what authority the named participant has for the corporation, act and date in question? When an affirmative route is requested, does it cover the decision, any further delegation, signing and other consents actually required? Are nomination, appointment and removal distinguished where their effects change? A limit that excludes the proposed act can settle an authority question. Establish exercise separately when the conclusion concerns an act that occurred.
 
 ### CGOV.3:8 - Common Anti-Patterns and How to Avoid Them
 

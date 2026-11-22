@@ -6,7 +6,7 @@
 
 ### C.37.CF:1 - Problem frame
 
-**Use this when.** A Method description appears more useful after revision, but its content and its form both changed. You need to decide which revision to retain without crediting new instructions to a new layout, or treating a readable description as evidence that the described Method works.
+**Use this when.** You must choose between two versions of a Method description or establish why one works better for its reader. The change may concern instructions, the form in which they are expressed, or both. When a revision changes both, a better answer can follow from the new instruction even if its presentation adds nothing. A reading result can support a choice of description. A claim about the Method's effectiveness needs evidence from its use.
 
 The working reader is a Method engineer comparing descriptions, pattern languages or other inspectable representations for a named reader and action. Start by asking: **what answer or action should improve, and what changed in the material available to that reader?**
 
@@ -71,9 +71,11 @@ Ask the reader to obtain the first useful result, not to rate which document loo
 
 When the question is how much selected structure the reader can extract, use [`C.2.8 ExtractableStructuralInformation`](12-c-2-8---extractablestructuralinformation-structure-this-read.md). Identify the expressed account, the expression being tested and the reader, with selected relations, correctness criterion, prior knowledge, operations, help, access and budget qualified for this comparison. A qualitative account of recovered and missing relations often suffices. A number needs a declared structural scale and fixed units or denominator, not counts of words or arrows.
 
-Keep a design estimate separate from an actual recovery observation or a mapped formal estimate. A response establishes recovery in that trial, not a maximum or population reliability.
+Keep a design estimate separate from an actual recovery observation or a mapped formal estimate. A response establishes what was returned in that trial. Attribute recovery or application to the reader when their observed work and the help available support that inference. A correct answer of unknown origin can still serve its intended use while authorship stays open. One response cannot establish maximum performance or reliability across a population.
 
-State what changed in content, what changed in expression, and what preparation, help or a source return supplied. Familiar relations can count; a reader's independent correction of false or absent instruction is not credited to the expression.
+Before interpreting a correct answer, reconstruct what each reader received. The text, prompt, examples, available tools or another participant may already have chosen the unit of comparison, the rule for matching two entries, or the action to take. Credit the reader with the choice they made. Following a supplied rule can be exactly the intended use.
+
+A stronger claim may be that the reader can turn a general method into a rule for work in a discipline. Give the reader the general method and material from that discipline. Leave the consequential modeling choices open. Ask them to construct and justify a rule that another practitioner could apply. Use it on a change for which plausible rules would give different answers. An illustration of the principle or a fresh set of numbers for an already specified calculation provides different evidence. B.5.MR:4.3 explains how to test a claim that someone used a transdisciplinary principle (L3) to construct a repeatable rule for a discipline (L2).
 
 Missing basis is not zero. A successful changed-condition return supports its own condition rather than increasing the original amount.
 
@@ -121,7 +123,7 @@ The receiving action is deciding whether an earlier review may support a current
 
 Initially, the facts say that the change is display-only, the claims and question are unchanged, and the qualification window is current. All variants can support reuse. The later condition says that a new recheck needs an argument outside the available excerpts and that the retained dossier contains only its locator.
 
-B and C state the local stop and preservation instructions; A does not contain that distinction. This establishes a content-coverage difference in the constructed texts. It does not show that an actual reader preferred or used C more effectively than B. A reader comparison would still be needed for that form claim.
+B and C state the local stop and preservation instructions; A does not contain that distinction. This establishes a content-coverage difference in the constructed texts. It does not show that an actual reader preferred or used C more effectively than B. A reader comparison would still be needed for that form claim. The first task lets the reader use a stated review rule. To find out whether they can devise a review rule for their own discipline, give them records from that practice and leave the criteria for reusing work for them to choose and justify.
 
 For the revision, retain the missing stop information and withhold the table-superiority claim.
 
@@ -142,23 +144,20 @@ about the language arrangement: its entries serve independent questions, with di
 source returns. The existing arrangement is candidate A. The author proposes a shorter paragraph, B, and a
 table, C, for the same receiving question.
 
-**B — Selected explanation in prose.** Use F.0.2.MA to identify which source contributions were carried into the
-language. Use A.3.1.CC when a maintained claim contradicts its basis. Use F.0.2.RC when a promised source contribution
+**B — Selected explanation in prose.** Use F.0.2.MA to decide where a recovered source contribution belongs in the language. Use A.3.1.CC when a maintained claim contradicts its basis. Use F.0.2.RC when a promised source contribution
 cannot be recovered.
 
-Choose the entry for the missing result and return to the affected question and its basis. Grouping these
-entries does not establish parts of one Method; a MethodDescription still concerns its own admitted Method.
+Each entry can finish the question it answers. If you also need to choose where to start, identify the result still missing. To establish what a publication actually contains, compare its text with the allocation. Grouping the entries in an explanation leaves open which Methods are constituents of a particular whole.
 
 **C — The same selected claims in a table.**
 
 | Current question | Contribution to obtain |
 | --- | --- |
-| Which source contributions were carried into the language? | F.0.2.MA's source-allocation answer. |
+| Where does this recovered source contribution belong? | F.0.2.MA's source-allocation answer. |
 | A maintained claim contradicts its basis. What needs correction? | A.3.1.CC's coherence answer. |
 | A promised source contribution cannot be recovered. What is missing? | F.0.2.RC's reconstruction answer. |
 
-Choose the entry for the missing result and return to the affected question and its basis. Grouping these
-entries does not establish parts of one Method; a MethodDescription still concerns its own admitted Method.
+Each entry can finish the question it answers. If you also need to choose where to start, identify the result still missing. To establish what a publication actually contains, compare its text with the allocation. Grouping the entries in an explanation leaves open which Methods are constituents of a particular whole.
 
 **Make the comparison.** [C.37.CF](94-c-37-cf---compare-content-and-form-changes.md) separates
 the available contrasts. B selects and rewrites content from A; A against B does not isolate a layout effect.
@@ -166,8 +165,7 @@ C rearranges B's selected claims while retaining its common conditions. B agains
 presentation difference. The full E.8.ML account remains available for conditions or questions beyond this
 selected explanation.
 
-For the stated task, the answer must preserve the reason for separate entries and select the first missing
-result. With an adequate allocation and one contradictory maintained claim, A.3.1.CC use is enough.
+For the stated question, explain why the entries can be used separately. A practitioner may need to allocate a recovered contribution while its claims are coherent, correct a contradiction while its allocation is known, or reconstruct missing content. Each result can therefore serve a different decision. For a further request to choose an entry, identify the missing result. With an adequate allocation and one contradictory maintained claim, A.3.1.CC can suffice.
 In a changed case, an argument needed for a new recheck becomes unavailable. Return the affected current-use
 claim and source relation, preserving the earlier answer and independently supported contributions. If the
 question becomes publication authorization, obtain that result separately.
@@ -194,7 +192,7 @@ The constructed examples expose content and inference boundaries. They contain n
 - The receiving reader, subject, action, result and stop are fixed sufficiently for the comparison.
 - Content changes and representation changes are stated, including added or lost relations.
 - Every claimed contrast is supported by the available variants and conditions.
-- Reader learning, tool differences and other material confounds remain visible.
+- The account identifies the consequential choices the reader made and those already supplied by the text, task, tools or help. Credit for constructing a rule requires evidence from work in which that choice was open.
 - When a changed-condition return is tested, an initial answer precedes disclosure of that condition.
 - Observed burden is distinguished from estimated or unmeasured burden.
 - The result returns to the content, selection, trial or worth decision it informs.

@@ -51,6 +51,8 @@ Identify the intended relation, such as coincidence, a deliberate offset, altern
 
 Identify which information each performer uses at this point in the passage. While the recording remains fixed, only the live performer can adjust their side of the relationship. Responsive partners can share adjustments or change who leads at a phrase boundary or a signalled change of pace.
 
+Decide which relationship the next use requires. A record of both players arriving together may answer the ensemble's booking. If one player is to follow a change initiated by the other, trace the sender's available choices, the signal that reached the follower in time, and the follower's response. A fixed backing part can help a player practise keeping time with it. To assess a contribution that involves answering a responsive partner, keep the partner in the task. For an account of mutual adjustment, establish the needed dependence in each direction.
+
 For a new arrangement, make the preparation and the cue for change clear to the performers. A demonstration or a short joint passage may help. Seek an agreement when one is needed. A cue announcing a new pace has a different implication for the next events than a local expressive accent.
 
 When corrections alternate or grow, examine the combined response and the phrasing that remains. Possible changes include smaller corrections, a clearer reference or asking one performer to maintain a steady pace for a time. Compare the options that fit the task.
@@ -81,9 +83,9 @@ Reconsider a reference, following relation or recovery when a change of partner,
 
 A constructed reference has event times 0.00, 0.50, 1.00 and 1.50 seconds. In the first response the events occur at 0.08, 0.58, 1.08 and 1.58 seconds. Each occurs 0.08 seconds after the corresponding reference event, and the intervals match. In the second the times are 0.00, 0.52, 1.04 and 1.56 seconds. The events are 0.52 seconds apart and their displacement from the reference grows by 0.02 seconds per interval.
 
-Suppose the controller should coincide with the reference, the events have been identified correctly and the controller can re-enter at the future 2.00-second landmark. In the first response, keep the 0.50-second interval and correct entry placement. In the second, shorten the interval to 0.50 seconds and re-establish entry at 2.00 seconds.
+Suppose the controller should coincide with the reference, the events have been identified correctly and the controller can re-enter at the future 2.00-second landmark. For this correction, the controller sets the output interval directly and the reference continues at its stated pace. In the first response, keep the 0.50-second interval and correct entry placement. In the second, shorten the interval to 0.50 seconds and re-establish entry at 2.00 seconds.
 
-The times describe placement and spacing. Explaining a human performance requires evidence about that performer and passage. If the intended phrasing included an offset of 0.08 seconds, the first response would already meet the intended relation.
+The times identify the change needed at the output. If the measurements come from a receiver, a growing delivery delay can yield the same series while the controller already runs at the required pace. Use §5.4 to locate the correction when that difference matters. Explaining a human performance requires evidence about that performer and passage. If the intended phrasing included an offset of 0.08 seconds, the first response would already meet the intended relation.
 
 #### RHY.10:5.2 - Two complete corrections can undo each other
 
@@ -92,6 +94,8 @@ Consider two ideal controllers that produce matched events with the same period.
 If both correct the full difference, `a = b = 1` and the new difference is −0.10 seconds. The order reverses and the gap is as large as before. With `a = b = 0.5` the model gives zero difference at the next event.
 
 The gains in this calculation belong to the stipulated controller. In a performance, delivery delay, noise, preparation and intended expression can change the useful adjustment. Examine what both participants’ corrections do together.
+
+Suppose the only observations retained are the initial 0.10-second difference and a zero difference at the next event. Within this model they establish `a + b = 1`. They fit A making the whole correction, B making it, or both correcting by half. The shared landing can meet the ensemble's criterion in all three histories. To assign the following role to B on that evidence, distinguish B's own response to A. Individual event times from the same duet, with known uncorrected times and the stated model, can separate these corrections. In a human duet use evidence of the cue and the choice B actually made. An adequate observation from ordinary rehearsal can suffice.
 
 #### RHY.10:5.3 - Continue through a silent or sustained span
 
@@ -121,7 +125,7 @@ The calculations use periodic matched events to make the alternatives visible. F
 - Establish the intended placement before treating a measured deviation as an error.
 - Establish whether the proposed or observed adjustment fits the available cues and preparation, or identify which condition remains open.
 - Where entry depends on a reference or on duration across a gap, identify the source for each property the entry needs and any material limit on what it establishes.
-- Use evidence from the part of the passage in question. If recovery is required, identify an achievable return or the constraint that prevents it.
+- For a common entrance or ending, use evidence of that relation at the specified point. For a claim that one performer adjusted to another, identify the cue and response that support that direction of adjustment. If recovery is required, identify an achievable return or the constraint that prevents it.
 - Limit a local success to the conditions it supports and revisit a conclusion when a relevant condition changes.
 
 ### RHY.10:8 - Common Anti-Patterns and How to Avoid Them

@@ -139,7 +139,7 @@ SoS-LOGBundle@Context :=
 
   // Scope + spec pins (from GCorePinSetId.PartG.AuthoringMinimal)
   CG-FrameContext,
-  entityOfConcern := ⟨GroundingHolon, ReferencePlane⟩,
+  entityOfConcern, GroundingHolon?, ReferencePlane, // subject of the LOG claim, empirical ground when used, and plane
   CNSpecRef.edition,
   CGSpecRef.edition,
 

@@ -51,7 +51,9 @@ When considering a next-day repair service, the dispatcher may report a customer
 
 Distinguish that subject from the means and participants whose development it may need. A more changeable product may still wait months for organizational approval; a trained specialist may still lack access or support. Ask which contribution or working condition limits the proposed direction. A small change in support for existing work may be sufficient.
 
-Inspect one level beyond the proposed boundary when a dependency could reverse the answer. Ask who supplies the capability, who receives the contribution and who bears the consequences. Include the relevant relationship and keep the strategic subject at the scope the question requires.
+Start from the strategic subject and the decision the recipient has to make. Follow a dependency across the proposed boundary when its conditions could change that decision or its grounds. A supplier can itself depend on another provider, or several branches can rely on one contribution. Follow those relations as far as the question requires. An effective grant or a common constraint may already settle the question. Keep the subject whose direction is at issue distinct from the systems, work and methods on which it depends.
+
+At a given composition scale, decide which differences the model must retain to distinguish the available directions and their grounds. Enlarge the inquiry to a whole, its constituents or their interaction when a conclusion depends on how contributions combine. A provider can be outside the enterprise and still determine what the enterprise can deliver. Tracing that dependency does not make the provider a constituent. The same subject can need a different model for another question.
 
 Where System identity or its boundary is unresolved, FPF A.1.SCR supplies the System-question recovery. An organizational chart, a product name or a strategy document is not enough to settle that identity. When the subject is already unambiguous, continue with that identification.
 
@@ -60,6 +62,8 @@ Where System identity or its boundary is unresolved, FPF A.1.SCR supplies the Sy
 Use the brief, an existing decision or other available evidence to establish what result is needed now. For your own inquiry, state the question you need to answer. If the intended use remains unclear, refine your own inquiry or clarify the need with its recipient. State the unresolved use if it cannot yet be established. A clarified frame, an account of changed assumptions, feasible directions, a comparison or a recommendation can be sufficient. Seek a commitment from its decision holder when the task calls for one.
 
 Name who prepares the result and, when a choice is involved, who can make it. A strategy team may compare service, licensing and exit while the Board retains the direction decision. The Board may control internal preparation but lack the customer agreement, data permission or financing needed for execution. Keep each limitation at the action it governs; missing trial permission need not prevent a comparison from being completed.
+
+If a participant is commissioned to develop a direction, recover which choices and grounds belong to that participant and what an adviser or an earlier analysis can supply. An authorized signature establishes the decision under the applicable terms. To judge who constructed it, trace the proposed goal, the alternatives or the grounds to the person or team whose work is in question. A commission for advice can finish with a usable recommendation.
 
 Reuse a sufficient decision-support engagement frame supplied through PSDA.11. STR.1 adds the strategic subject, contribution, direction and commitment horizon when the engagement also includes those strategic questions. A distinct adviser relationship may also need PSDA.19 guidance on competence, confidentiality and retained choice.
 
@@ -110,7 +114,7 @@ The bounded question is whether to retain the current practice, replace a named 
 
 The person commissioning the work can make their preferred answer appear to be the question: “How do we launch the service?” may conceal a still-open choice about whether to launch. Ask what would make continuation or another direction reasonable before accepting that wording.
 
-Availability bias favours the subject that has a visible document or budget. Check one consequential relationship outside that convenient boundary. Include that relationship if it affects the question or its proposed use.
+Availability bias favours the subject with a visible document or budget. Ask whether the proposed conclusion would still hold if a receiving use, an external contribution or the way several participants depend on each other changed. Follow the relation that could change the answer. Stop when the grounds support the commissioned decision, or identify the dependency that still leaves it open.
 
 ### STR.1:7 - Conformance Checklist
 

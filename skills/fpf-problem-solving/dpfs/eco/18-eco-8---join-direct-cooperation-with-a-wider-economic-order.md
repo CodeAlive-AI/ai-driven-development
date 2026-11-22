@@ -5,7 +5,7 @@
 
 ### ECO.8:1 - Problem frame
 
-Use this Method when a rule from one relationship is being applied to another. An expectation of voluntary help can fail in an external service agreement, while pricing every small contribution can disrupt direct cooperation. Identify the interaction and the conditions that make it work. Establish which parts need direct coordination, agreed terms, prices or a wider rule.
+Use this Method to decide how participants in one undertaking can coordinate their contributions, or when a rule from one relationship is being applied to another. An expectation of voluntary help can fail in an external service agreement. Pricing every small contribution can disrupt direct cooperation. Identify the interaction and the conditions that make it work. Establish which parts need direct coordination, agreed terms, prices or a wider rule.
 
 The result can be a supported finding about the relationship, an adjustment that addresses a mismatch or the condition still unresolved.
 
@@ -23,7 +23,7 @@ Direct coordination can use rich local knowledge but is costly to extend. Genera
 
 #### ECO.8:4.1 - Recover the interaction and its coordination conditions
 
-Identify the result and the participants or services that supply its contributions. Establish what sustains each relevant relation, such as shared purpose, personal knowledge, an assignment, a continuing agreement, a price and specification, a general rule or a shared-resource arrangement.
+Start with the result the coordination must support. Identify which participants make decisions that can change it and the rule that connects those decisions. Their use of separate contributions can be linked by a common limit. Where one party supplies another, vary the timing, specification or amount and ask who can decide what the other receives and on what terms. Trace the relationship up to a wider agreement or shared resource when it constrains that decision. Follow it inside an organization when people within it have different powers, information or commitments. A rule for the whole service can suffice when it already determines the answer. For the relations that matter, establish what sustains the required contribution, such as shared purpose, personal knowledge, an assignment, a continuing agreement, a price and specification, or a general access rule.
 
 Personal knowledge can support cooperation. Authority to direct another participant’s work requires its own basis. A contract can connect two separately performed contributions, while a constituent operation forms part of the encompassing work. Distinguish the relations relevant to the supply chain, institution and composition of Methods.
 
@@ -31,7 +31,7 @@ Personal knowledge can support cooperation. Authority to direct another particip
 
 Assess how the proposed rule would work in the receiving relationship. Which information, agreement, trust, authority or capacity to bear cost does it require? Check whether those conditions are present and whether using the rule would remove a needed contribution.
 
-If a mismatch is established and a repair is needed, address its cause. Define the result an external supplier can deliver, retain local discretion that enables adaptation, give unknown participants access under a general rule, or use ECO.7 for a shared constraint. Different relations can call for different arrangements.
+To arrange coordination, work backward from the required result to the decisions that must fit together. Identify what participants may decide for themselves, which decisions someone can direct and which changes require another party's agreement. Build on the discretion, terms or common rule that can secure that result. For shared constraints use ECO.7. Where an existing rule has been proposed for a new site or relation, preserve or adapt it according to which of these conditions still hold there.
 
 Compare whose purposes and alternatives the repair serves and what it costs others. A current price helps strangers exchange without common goals, but cannot by itself settle every affected right or shared-resource effect.
 
@@ -39,7 +39,7 @@ Compare whose purposes and alternatives the repair serves and what it costs othe
 
 Identify how each relevant participant can act under the applicable rule or relationship. The same person might offer voluntary help in one situation and supply a paid service in another. Make the terms clear enough to distinguish a request from an invocation of an existing commitment.
 
-When the result depends on a vertical of methods, show the constituent operations and the encompassing method they help enact. For example, checking a supplier's terms may be part of arranging a service that is part of developing a venture. The supplier's separately performed service is connected by the agreement; it does not become a constituent operation of the buyer's method merely because it is needed.
+When the result depends on how methods are composed, show what each constituent method does for the encompassing one. Checking a supplier's terms can be part of arranging a service that is part of developing a venture. For an actual delivery, examine what the undertaking commissions. A supplier can perform an agreed part of that delivery. A buyer can also use an earlier report the supplier produced independently. In the first case the combined delivery depends on the promised performance. In the second, a usable report may suffice without commissioning that work again. A fee or exchange of information alone leaves the composition of the methods and the work open.
 
 Return the supported account of the coordination, any proposed adjustment or the problem still open. Use OCE or CGOV when a selected change affects organizational arrangements or corporate authority.
 
@@ -51,7 +51,7 @@ Suppose volunteers at a community kitchen rearrange tasks in conversation and he
 
 Volunteers’ expectations of mutual help do not secure a response from the contractor. Pricing every small favour among volunteers would change the kitchen’s internal cooperation. The kitchen keeps that cooperation and specifies the coverage and contact terms it needs from a paid service. Use ECO.4 to establish whether that service can be obtained and ECO.6 where later dependence on the contractor affects adaptation.
 
-If a volunteer is also the contractor, the two relations still differ. The person needs to know when the kitchen requests voluntary help and when it invokes the paid commitment.
+If a volunteer is also the contractor, the two relations still differ. The person needs to know when the kitchen requests voluntary help and when it invokes the paid commitment. A request to explain who covers a breakdown can be answered from the effective service terms. To design an arrangement for the next breakdown, start with the response the kitchen must secure. Establish who can recognize the incident, call on coverage and get someone to the equipment in time. Paid stand-by, help inside a shift or a combination can serve if the undertaking's authority, timing and resources support it.
 
 #### ECO.8:5.2 - Local water agreements share a wider constraint
 
@@ -63,7 +63,7 @@ Identify which cooperation or exchange the relation can support and who could be
 
 ### ECO.8:7 - Conformance Checklist
 
-Which relation is being examined and what supports it? If a rule has been transferred, establish whether it works under the receiving conditions. For a proposed adjustment, identify any direct cooperation it depends on. If it requires an external contribution, check the terms on which that contribution can be obtained. Distinguish constituent work, contractual dependence, authority and wider coordination where the difference matters.
+Which use does the coordination have to support, and which decisions may participants make under each relevant relationship? For a rule used in another setting, establish whether its conditions hold there. For a proposed arrangement, establish how the contributions together meet the requirement under the applicable rule. Include any necessary handovers, terms for external services and decisions or shared limits that can change the result. When the order concerns a single relationship, return the conclusion that its terms support.
 
 ### ECO.8:8 - Common Anti-Patterns and How to Avoid Them
 

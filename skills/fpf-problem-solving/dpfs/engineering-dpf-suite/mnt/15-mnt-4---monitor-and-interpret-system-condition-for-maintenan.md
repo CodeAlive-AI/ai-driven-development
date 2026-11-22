@@ -29,6 +29,8 @@ Find the relevant reference: an applicable baseline, a specialist interpretation
 
 Reconcile conflicting channels by their subject and conditions before averaging them. A local temperature rise and a vibration change can concern different mechanisms. A sensor replacement can explain a discontinuity. Missing data can mean a lost measurement, a stopped machine or an unobserved interval; choose only the interpretation that the available evidence supports.
 
+For a claim about the equipment or service, identify what connects the measured point to the required function. Consider configurations in which the instrument would give the same indication with different delivery to the receiver. Follow the branch, valve state or operating mode that distinguishes those configurations if it affects the decision. A measurement at the point of delivery, or a supported bound valid in every relevant configuration, can already decide a threshold question. A mean over an interval can answer a mean limit while leaving a short excursion unresolved.
+
 Return three claims separately where needed: what was observed, what condition is inferred and what is forecast. For a forecast, state horizon, future-duty assumptions and uncertainty relevant to the decision. If those assumptions do not cover the planned duty, limit the forecast's use instead of presenting its central estimate as a deadline.
 
 Consider whether more monitoring is worthwhile. Ask which obtainable observation could change the maintenance response, when it would arrive, whether interpretation and response capability exist and what work it would displace. A technically improved predictor needs a maintenance-use gain to justify deployment. Conversely, a simple repeat measurement can be valuable when it cheaply distinguishes a changed instrument from a real deterioration.
@@ -59,7 +61,7 @@ Visible channels draw attention away from unmeasured mechanisms and missing inte
 
 ### MNT.4:7 - Conformance Checklist
 
-Is the condition question clear? Are measurand, operating context and comparison basis adequate for the inference? Are observations, inferred condition and forecasts distinguishable? Are missing data, uncertainty and future-duty assumptions retained where they change use? Can the intended recipient act on the account or identify its limit?
+Is the condition question clear? Are measurand, operating context and comparison basis adequate for the inference? Are observations, inferred condition and forecasts distinguishable? Are missing data, uncertainty and future-duty assumptions retained where they change use? Does the observation or a supported relation cover the location, time and use the recipient is judging? If a new reading was commissioned, can its performance be established? When the order is only for an answer, a sufficient existing observation can finish it.
 
 Further monitoring is warranted only when what it could add to the decision justifies its full burden.
 
@@ -67,7 +69,7 @@ Further monitoring is warranted only when what it could add to the decision just
 
 A dashboard colour is treated as a diagnosis. Recover the observed quantity, reference and supported inference. A remaining-life estimate becomes a guaranteed repair deadline. Recover its future-use assumptions and uncertainty before using it for scheduling.
 
-An alarm programme is judged only by prediction accuracy. Compare its actual maintenance consequences, including response delay and unnecessary interventions, before selecting an expansion.
+An alarm programme is judged only by prediction accuracy. For a proposed expansion, compare the supported consequences under each arrangement, including response delay and unnecessary interventions. To report the effect an expansion actually had, use evidence from its introduction and a suitable comparison.
 
 ### MNT.4:9 - Consequences
 

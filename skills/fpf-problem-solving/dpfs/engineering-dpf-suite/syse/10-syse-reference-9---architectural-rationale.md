@@ -47,9 +47,8 @@ performing the complete path would add no necessary result.
 Choosing a platform's architecture requires comparing the available arrangements. Retaining repaired local provision, sharing
 a bounded contribution, obtaining external provision and adding an interface can each be appropriate.
 [APP-SYSE-05](79-syse-application-5---app-syse-05---worked-application-constr.md)
-keeps the repaired local and thin shared arrangements tied after their matched initial trial; developing
-the shared candidate further
-does not select it.
+shows that the repaired local and thin shared arrangements both handle the ordinary change in their matched trial.
+Preference remains open until the comparison covers provider changes, recovery and support effort. Developing the shared candidate makes that comparison possible.
 
 The common and software Methods are available together so that a reader can follow these result
 dependencies without duplicating the common Methods in every profile. A focused profile can reuse that

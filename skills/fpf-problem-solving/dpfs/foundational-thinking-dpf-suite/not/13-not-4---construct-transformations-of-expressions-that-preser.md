@@ -8,7 +8,7 @@
 
 **Use this when** an expression is difficult to read, derive from or change, and you need a rule for turning it into a more useful expression without losing the consequence on which the work relies. Examples include naming a repeated construction, exposing a hidden intermediate step, regrouping a diagram, or replacing a long sequence by an expandable abbreviation.
 
-Start with the reader operation that is difficult. Construct a proposed manipulation from the expression's formation and interpretation rules. State where the manipulation applies, explain what it preserves, then obtain and use a transformed expression. The result can instead be a located condition that prevents the proposed transformation.
+Start with the reader operation the transformation must support. Construct the manipulation from the expression’s formation and interpretation rules. State where it applies and establish what it preserves. Deliver the rule when this settles the commission. Where the reader needs a particular transformed expression, produce it under those conditions. The inquiry can also establish why the proposed transformation fails.
 
 The reader needs the notation's interpretation and the subject laws used in the manipulation. NOT.2 supplies grouping and reference rules; NOT.3 supplies interpretation and reading operations. Elementary arithmetic and ordered sequences suffice for the worked cases. More specialized laws can be supplied by a collaborator.
 
@@ -32,7 +32,7 @@ A visually simpler expression can hide a necessary distinction. Reusing a name c
 
 ### NOT.4:4 - Solution
 
-**Choose the use to preserve → construct the manipulation → establish its conditions → transform and read → challenge the changed condition → retain the useful rule or alternatives.**
+**Choose the use to preserve → construct the manipulation → establish its conditions and consequences → supply the justified rule or the transformed expression the reader needs.**
 
 #### NOT.4:4.1 - Choose the operation and the observations to preserve
 
@@ -64,15 +64,15 @@ For a single bounded use, a direct derivation can suffice. For every expression 
 
 #### NOT.4:4.4 - Construct and use the transformed expression
 
-Match the rule to the selected expression, instantiate its varying parts and satisfy its side conditions. Replace only the matched part, reconnect it to its surroundings and read the resulting expression using the notation's rules. Obtain the answer or perform the edit that motivated the transformation.
+For a commission to construct a transformation rule, establish what may be replaced and why the replacement preserves the required consequence in every admitted context. To deliver a transformed expression, match the rule to the selected expression, instantiate its varying parts, satisfy its side conditions and reconnect the replacement to its surroundings. Carry out the reading or edit as well when it is part of the commission.
 
-Compare the actual work before and after. A named definition can remove repeated edits while adding reference-following. An expanded derivation can be longer while making a missing inference accessible. Preserve both forms when they serve different needed operations; NOT.6 develops their maintained correspondence.
+For a claim about the work saved, compare the relevant operations before and after. A named definition can remove repeated edits while adding reference-following. An expanded derivation can be longer while making a missing inference accessible. Preserve both forms when they serve different needed operations; NOT.6 develops their maintained correspondence.
 
 If the new form loses information needed to continue, restore that information or narrow the claim to the uses it still supports. Retaining a link to a derivation or an expandable definition can be enough.
 
 #### NOT.4:4.5 - Challenge the condition most likely to fail in reuse
 
-Change a relevant binding, assumption, input class or intended observation. Repeat the affected transformation and reading, or explain why the rule no longer applies. Test a case at the boundary of the rule. Sections :5.1 and :5.3 show changed bindings and local assumptions.
+If reuse is intended, identify a binding, assumption, input class or observation whose change could affect it. Derive what the rule still preserves and where its grounds cease to apply. A boundary case can expose a lost condition, as with the changed bindings and local assumptions in :5.1 and :5.3. A derivation that already covers the promised range can settle the question directly.
 
 If a transformation is to run automatically, give CMP.12 the admitted expression structures, matching and replacement rules, and observations to preserve. An algorithm for repeatedly applying rules also needs a search strategy and a stopping condition. The availability of several valid rewrites does not imply that applying them in arbitrary order terminates or finds the most useful form.
 
@@ -80,7 +80,7 @@ If a transformation is to run automatically, give CMP.12 the admitted expression
 
 Keep the rule, the conditions that matter to its use and a recoverable reason for the preserved consequence. A short explanation beside a simple rule is enough when no larger account is needed. Reopen the affected rule when its interpretation, allowed context or required observation changes.
 
-For one known operation, stop after a suitable transformed expression is obtained. When committing to one form repeatedly blocks other useful transformations, retain alternatives and defer the choice. Equality saturation is one computational way to represent many equivalent forms and select from them. It requires a suitable expression theory, valid rules, a selection criterion and resource limits.
+For a commission to apply the rule to one expression, an adequate transformed expression can complete the work. When committing to one form repeatedly blocks other useful transformations, retain alternatives and defer the choice. Equality saturation is one computational way to represent many equivalent forms and select from them. It requires a suitable expression theory, valid rules, a selection criterion and resource limits.
 
 Compare retained forms by the work they support, using NOT.1's comparison and NOT.7's redesign where needed.
 
@@ -145,8 +145,8 @@ When the proposed transformation needs checking, examine the questions that bear
 - Can the matched structure, replacement and their connection to the surrounding expression be recovered?
 - Do references, local assumptions and side conditions remain valid at each place where the rule is used?
 - Does the preservation argument cover the stated family, or is the conclusion limited to the instances examined?
-- Has a transformed expression supported the intended reading or change?
-- Does the nearby failing case reveal the condition that blocks an invalid reuse?
+- For a commissioned expression or edit, does the result support its intended use? For a reusable rule, do its construction and grounds cover the expressions and contexts in which it may be applied?
+- If a condition essential to reuse is changed, what restricts the rule or still justifies the result? A boundary case or a derivation under the stated conditions can establish the answer.
 - Can the work stop with this result, or does a stated further use justify retaining or searching additional forms?
 
 ### NOT.4:8 - Common Anti-Patterns and How to Avoid Them

@@ -10,7 +10,7 @@
 
 Use this method when observations, recollections, documents, images or a narrative are available and their significant connections remain in question. You may need to identify what constitutes an episode, how the participants’ perspectives bear on it, what an interpretation assumes, or why several readings remain possible.
 
-Choose a consequential detail, say what you take it to show and identify the grounds for that reading. If a plausible alternative changes what a reader could conclude, compare the two. Revise the grouping, the proposed connection or the confidence it deserves where the evidence calls for it.
+Start with the question the account must answer. Find a detail that could change the answer and identify what it supports. Follow its connection to the other material the conclusion depends on. If a plausible alternative grouping or reading changes the result, compare its grounds with those of the first account. Revise the grouping, connection or degree of confidence where the evidence calls for it.
 
 Return the supported account, any warranted alternatives or the precise question the material leaves open. A short paragraph can suffice. Use a source whose meaning is already clear directly. NSTD.1 selects material for a reader, NSTD.3 addresses a known connection and NSTD.10 constructs fictional or explicitly hypothetical events. Use an available observation, proof or causal finding when it answers the question. Seek the corresponding subject inquiry when a needed result remains missing.
 
@@ -43,7 +43,7 @@ Try a compact account of what changes, persists or becomes significant. For a pr
 
 Trace a consequential connection to its grounds. What someone knew has different grounds from what happened. A date can establish order while leaving motive open. Name a contestable assumption that connects a detail to the interpretation. An annotated paragraph, sketch or comparison can carry the result.
 
-Try a different grouping if the first loses a consequential detail. A reported “closure” might concern public access even though activities continue for members. Separating access, activity and control lets the reader examine each claim. Keep the notice or other material available so that the grouping and its assumptions can be challenged.
+Try a different grouping if the first loses a consequential detail. A reported “closure” might concern public access even though activities continue for members. Ask which activities belong to the service the question is about and whether the reader needs an outcome for each activity, a handover between two activities or the continued operation of the service as a whole. One binding rule can settle a question about eligibility throughout its scope. To establish what actually happened, follow the records far enough to support the requested conclusion. Several mentions of the same move can support one episode, and a single letter can supply evidence about several events. Keep access to the finer material where the choice could be challenged.
 
 #### NSTD.9:4.3 - Compare interpretations at the consequential difference
 
@@ -55,7 +55,7 @@ For a factual disagreement, compare the claims with relevant observations or sub
 
 #### NSTD.9:4.4 - Decide what to resolve and what to preserve
 
-Select a single reading when its support is sufficient for the question. Retain several when the material supports each and their difference matters. Distinguish a missing fact, several supported readings and a set of proposals with too little evidence to use. The first may call for an observation, the second for a range of interpretations and the third for reporting a limit or reconsidering the proposals.
+Select a single reading when its support is sufficient for the question. Retain several when the material supports each and their difference matters. Distinguish a missing fact, several supported readings and a set of proposals with too little evidence to use. The first may call for an observation, the second for a range of interpretations and the third for reporting a limit or reconsidering the proposals. If several factual histories remain possible, ask whether they give different answers to the reader’s question. Their common consequence can settle that question now. Preserve the difference for a further question that depends on which history occurred.
 
 A literary passage may leave motive open while making the action clear. Identify the cues for any supported reading and the consequences of that reading. When composing an open scene, check that its intended alternatives are genuinely available. When interpreting someone else’s text, attribute that openness to authorial intention only when there is evidence for the attribution.
 
@@ -95,7 +95,7 @@ Familiar stories of progress, failure, rescue or betrayal can shape which episod
 - The account explains why the significant units belong together and what supports their connections.
 - Reported claims, interpretation and invented possibilities remain distinguishable where the use depends on them.
 - A consequential alternative or contrary detail, when present, receives a substantive comparison.
-- The result states what is supported and what remains open. Identify a change that would affect the interpretation when its later use requires that condition.
+- The interpretation returns what the question asks for, including a common conclusion where the remaining alternatives support it. State any difference or limit that affects its use. Identify a change that would affect the interpretation when its later use requires that condition.
 
 ### NSTD.9:8 - Common Anti-Patterns and How to Avoid Them
 

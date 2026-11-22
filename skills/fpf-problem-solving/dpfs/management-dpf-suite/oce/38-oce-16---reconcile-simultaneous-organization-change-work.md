@@ -3,13 +3,13 @@
 > **Type:** Method pattern
 > **Status:** Stable
 >
-> **Primary working result:** an account of whether a condition altered by one organizational change matters to another. For an established dependency, identify the affected work and interval, the governing result or missing condition and what each change can rely on. A supported absence of dependency can close the question.
+> **Primary working result:** an account of a dependency between changes or of whether the changes can take effect together. State what each affected change can rely on, when, and on which grounds. A single finding can settle the question when it establishes the required condition or rules out a necessary one.
 
 ### OCE.16:0 - Use This When
 
 Use this pattern when two or more separately managed organization changes may alter the same contribution, holder assignment, authority, access path, provider relation, information return, acceptance route, capability-development condition, support interval, or continuing-Work condition, and the relevance of that overlap to the work or a required conclusion needs to be established.
 
-Start when one change alters or proposes to alter an organizational condition that another change may rely on for work, a decision or a conclusion. Identify the relevant interval, including the period a historical claim covers. An initial result may be a specific question about the dependency, a supported finding that settles it, or a request for a contribution still missing.
+Start when one change alters or proposes to alter an organizational condition that another change may rely on for work, a decision or a conclusion. Identify the relevant interval, including the period a historical claim covers. For a joint transition, identify what must hold across the participating changes in that interval. An initial result may be a question about a dependency, a finding that settles the joint decision, or a request for a contribution still missing.
 
 Do not use OCE.16 merely because initiatives run at the same time, share a dashboard, use different descriptions, or draw from one aggregate resource pool. If the exact question and its consequences for each change are already recoverable, use the direct Method and stop. Use the appropriate professional method and responsible authority for any architecture, schedule, compatibility or allocation decision the dependency requires.
 
@@ -54,14 +54,14 @@ Where existing coordination leaves this connection unexamined, practitioners can
 
 ### OCE.16:4 - Solution
 
-For one proposed organizational alteration, identify one plausible consumer in another change and qualify their exact dependency before invoking any substantive comparison. Use an already qualified result where it answers the question. If a contribution is missing, use the Method appropriate to that result and return its conclusion or limit to each affected change.
+Establish what the recipient must decide about the changes. For one proposed interface, identify the work that will use the changed condition and establish the dependency. For a joint transition, identify the changes that must work together, their allowed configurations and the conditions their owners must jointly meet. Pairwise compatibility can leave no configuration common to them all. Use a shared invariant, a feasible choice under the governing terms or coverage of the allowed choices, as the decision requires. Use an already qualified result where it answers the question. If a contribution is missing, use the Method appropriate to that result and return its conclusion or limit to each affected change.
 
 A named alteration and a plausible consumer action can justify an inquiry. For reliance on its answer, establish the changes, the altered condition, receiving action or conclusion, interval and relevant evidence. Use participant accounts where they can establish otherwise missing work or consequences. Identify a governing Method, an owner or an outstanding condition when the answer depends on one.
 
 #### OCE.16:4.1 - Five-Move Pattern-Use Unfolding
 
 1. **Bind the separately managed changes.** Name each actual or proposed change, its subject, intended result, current status, scope, owner, interval and any next decision. Establish which actual or proposed work each description concerns.
-2. **Find one consequential dependency.** For a condition one change alters or proposes to alter, identify where another change uses it, for which work, decision or conclusion, and during which interval. If no plausible use can be identified, report that limit. If evidence excludes the dependency, return that finding.
+2. **Follow the dependencies needed for the commissioned decision.** For each material condition, identify where another change uses it, for which work and during which interval. For a joint outcome, establish how the necessary settings, capacities or transitions can hold together. Use an existing result that already covers the whole. If the evidence excludes one dependency, return that finding and carry forward any others the decision still depends on.
 3. **Qualify the claim with participants and available results.** Use any relevant participant account and distinguish observed fact, current relation, expected consequence, proposal, interpretation, and decision. Use what is already known to examine the named condition, consumer action, timing, effectivity and alternatives. Seek a further observation or outside result only when its attainable contribution can change the next action, change which conclusion is supported or make the proposed use admissible, and that gain warrants its full burden; use `C.11.DUA` and `A.15.9` for that question. Return a supported or absent dependency, a compatible difference, an unresolved claim, or a missing fact or owner result with its effect on the proposed continuation.
 4. **Use the Method for the required result.** Choose the applicable Method and result owner using the question in the table in section 4.2. Give it the smallest sufficient question and evidence. Use the resulting comparison or technical judgement. A choice, acceptance or authorization requires the corresponding decision or rule.
 5. **Return governed results to every affected change.** For each change, state the direct result it can use, the condition it must preserve, revise, obtain, or stop assuming, the owner and validity window, and any change in conditions or observations that would reopen the question. Leave unaffected Work on its current basis. If the direct result is missing, return that exact absence and its consequence rather than filling it by coordination language.
@@ -90,7 +90,7 @@ A direct route can need several suppliers. Identify each missing contribution, i
 | Result position | Required content |
 | --- | --- |
 | changes and subjects | Independently identified changes, affected subjects, statuses, scopes, owners, intended results, any next decisions, and windows. |
-| alteration and consumer | The condition one change has altered or proposes to alter, and the other change’s work, decision or conclusion that depends or may depend on it. |
+| alteration and consumer | The condition one change has altered or proposes to alter, and the work, decisions or conclusions of the affected changes. For a joint transition, retain the conditions they share. |
 | claim qualification | Relevant participant accounts and observed facts; current relation/effectivity evidence; expected consequences; proposals; interpretations; decisions; uncertainty and missing facts. |
 | direct route | Applicable Method, bounded question, required inputs, result owner and authority, and any unavailable result. |
 | direct result | The governed comparison, relation, authority, operating, specialist, stop, or missing-result return. Do not relabel it as an OCE.16 decision. |
@@ -167,7 +167,7 @@ Return the governed credential condition to the election change and the governed
 - [ ] C.32.MWA.PP owns Method/candidate-account co-use, including unchanged-Method relation-only arrangements.
 - [ ] Any architecture, compatibility, approval, acceptance, priority or capacity result identifies the rule, evidence or responsible decision that establishes it.
 - [ ] Every affected change receives the governed result or exact missing result; unaffected Work keeps its current basis.
-- [ ] A direct exit is used when the dependency is absent or already answered.
+- [ ] The answer covers the commissioned dependency or joint transition. One interface can settle the joint decision if its result entails the answer. An incompatibility at one required interface can rule out a proposed transition while other interfaces remain open. A request to identify all dependencies requires coverage of that set.
 - [ ] Any added qualification is compared with the adequate current continuation at full common and incremental burden; its accepted gain is still attainable before the receiving window closes.
 
 
@@ -175,7 +175,7 @@ Return the governed credential condition to the election change and the governed
 
 | Anti-pattern | Repair |
 | --- | --- |
-| “Put every initiative in the reconciliation matrix.” | Begin from one alteration and one plausible consequential consumer; stop when the evidence answers the dependency question or when a further inquiry cannot justify its burden. |
+| “Put every initiative in the reconciliation matrix.” | For a question about one dependency, follow the altered condition to the change that uses it. For a joint transition, keep the combined requirement in view. Stop when the grounds settle the requested decision, or state what further evidence would be needed if inquiry stops earlier. |
 | “These two plans use different language, so they conflict.” | Recover the actual subjects, relations, action, condition, and window before asserting dependency. |
 | “OCE.16 selects the combined arrangement.” | Route Method/candidate-account synthesis to C.32.MWA.PP and organization relations to their direct OCE or domain owners. |
 | “The programme owner can waive the missing access.” | Use an effective permission or obtain the missing determination from its authorized source. Identify any provider or security condition still needed. |

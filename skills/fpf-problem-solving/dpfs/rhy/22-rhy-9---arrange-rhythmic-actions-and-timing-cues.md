@@ -28,9 +28,9 @@ Producing an event and giving another performer time to prepare can take differe
 
 #### RHY.9:4.1 - Recover the contributions and their receivers
 
-Take a short passage that includes the entry and its continuation. Identify what must continue, what is articulated, who produces each contribution and who needs its timing information. Use RHY.2 and RHY.3 for any of these relations that remain unclear.
+Choose the portion that contains the cue and the result the receiver needs. An ending can be enough for a release. Include preparation, later events or a longer sequence when the requested result depends on them. Identify what must continue, what is articulated, who produces each contribution and who needs its timing information. Use RHY.2 and RHY.3 for any of these relations that remain unclear.
 
-For each cue that matters, identify what its receiver needs to know. It could mark an entry, a cycle position, a change of pace, a release or an agreed place to resume. Use a shared convention when it fits. A record, explanation or demonstration can establish an existing meaning. Specify the intended meaning of a proposed new cue. When performers are to use it, communicate that meaning to them. The same head movement can mark an accent, a tempo change or preparation for an entrance.
+For each cue that matters, identify what its receiver needs to know. It could mark an entry, a cycle position, a change of pace, a release or an agreed place to resume. Use a shared convention when it fits. A record, explanation or demonstration can establish an existing meaning. Specify the intended meaning of a proposed new cue. When performers are to use it, communicate that meaning to them. The same head movement can mark an accent, a tempo change or preparation for an entrance. Work out what the player can still do before the cue is more precise. If every phrase still possible permits the same entry, that entry can suffice. If they require different choices, the distinguishing information must arrive before the player has to commit to the movement. RHY.6:4.3 develops the choice for several possible readings.
 
 A solo performer may use an internal reference. A partner needs an accessible consequence of that reference to use it. An existing movement may already provide the cue. Add a signal when the receiving task needs one.
 
@@ -46,13 +46,13 @@ Use bodily or instrumental actions the performer can carry out with the support 
 
 Follow the cue from its production to the receiver’s access, interpretation, preparation and action. An advance cue may identify the target time before the final attack occurs. The sound of that attack arrives later. RHY.4 can help distinguish the physical event from the feature or time the receiver uses.
 
-For a controller or a measured arrangement, compare the available advance time with cue delivery and preparation time. Include variation that affects the comparison. If the cue identifies a future target time and the receiver can prepare and wait, an advance cue can make the target achievable.
+For a controller or a measured arrangement, follow the time from sending a usable cue through its delivery, interpretation and preparation to the response the player owes. Use a common time reference or an established relation between clocks. Add upper bounds for successive stages when they cover the same path and apply together. If the total fits the available advance time, readiness by the target is assured under those conditions. If it exceeds the available time, check which combinations can actually occur. An attainable late case defeats an every-entry guarantee. To assess an allowed frequency of late entries, use evidence of that frequency or a justified bound for the relevant passages. Keep any additional actuation or sound delay needed by the receiving task.
 
 In rehearsal, a short joint trial with a clear preparatory gesture may answer the question. Existing observations can also supply the answer. Estimate a delay when the result it could establish for the explanation or choice justifies the work. A command timestamp can establish when the command was issued. Establish the action and the cue available to the receiver from evidence of those events.
 
 #### RHY.9:4.4 - Try the receiving relation while the passage continues
 
-For a question about a performance, use a record or observation of the relevant passage to establish which cue was available, whether the receiver used its intended information and what they did while the other required actions continued. If a new trial is warranted and feasible, try the arrangement at that point in the passage. A comparison with the troublesome arrangement can help locate a remaining difficulty.
+For a question about a performance, use an adequate record or observation of the passage. To accept a joint entry, establish whether the required actions occurred together within the agreed timing. Include continuing parts when they belong to the acceptance condition. To explain that one player followed another's cue, establish what information reached the player, when it arrived and how it informed the response. A rehearsed entrance can coincide with a visible cue even when the player follows the music. A participant's account of the particular response or a recorded change whose only usable indication was the partner's gesture may supply the missing ground. Try a new contrast only when that distinction still matters and the trial can resolve it.
 
 A gesture may be visible to both performers even when they disagree about the beat it marks. Use RHY.10 to examine their reference and adjustments. If producing or using the cue interferes with another simultaneous contribution, use RHY.11 to examine how the parts fit together.
 
@@ -68,13 +68,14 @@ If a change of passage, performer, channel, placement, tempo or preparation affe
 
 ### RHY.9:5 - Archetypal Grounding
 
-#### RHY.9:5.1 - A timely command whose cue arrives too late
 
-In a constructed stage controller, a receiver must produce an event at 2.00 seconds. The cue specifies this future target time. Delivery takes at most 0.05 seconds and preparation at most 0.40 seconds. Once ready, the receiver can wait for the target.
+#### RHY.9:5.1 - Will the receiver be ready by the target time?
 
-Sending at 1.65 seconds gives a latest readiness time of 2.10 seconds, so readiness by 2.00 is not assured. Sending at 1.50 seconds gives 1.95 seconds, leaving at least 0.05 seconds before the target. Under the stated bounds, the earlier send gives enough time for the proposed trial. The intended event time is 2.00 seconds in both cases.
+In a constructed stage controller, the receiver must trigger an event at 2.00 seconds. The cue specifies that target on the receiver's time reference. From sending to receipt takes at most 0.05 seconds, and from receipt to readiness at most 0.40 seconds, including interpretation and preparation. Once ready, the receiver can wait and trigger the event at the target.
 
-These bounds give the latest readiness time for each proposed send. To establish when the receiver was ready, use evidence of that run. A claim about timing perceived by the audience or about a different mechanism needs its own evidence. If uncertainty about delivery could use up the margin, report it. For a design task, a way of supplying enough known advance time may resolve it.
+Sending at 1.65 seconds gives a readiness bound of 1.65 + 0.05 + 0.40 = 2.10 seconds. The stated limits alone leave the 2.00-second deadline open for that send. For example, delays of 0.02 and 0.30 give readiness at 1.97; delays of 0.03 and 0.40 give 2.08. Both histories respect the stated limits. To reject a guarantee for this particular installation, establish that a late history is attainable there or give another proof of the violation. For example, a synchronized record of this installation receiving the cue at 1.68 and becoming ready at 2.08 on an admitted run would establish that late case. Sending at 1.50 instead gives readiness by 1.95, leaving at least 0.05 seconds. This conclusion holds even if the two maximum delays never occur together.
+
+The earlier send is sufficient for the proposed trial under the stated conditions. A record of this run can establish when the receiver was actually ready or triggered the event. If the order concerns sound reaching an audience, include the path from triggering to that acoustic event. If a change in delivery or preparation could use up the margin, reassess that bound; a design task can finish with an arrangement that supplies enough advance time.
 
 #### RHY.9:5.2 - Preserve the sound while changing cue access
 
@@ -86,7 +87,7 @@ A constructed ensemble passage requires a player to sustain an already learned b
 | Keep the playing actions, leave the cue obscured | Yes | No | Yes |
 | Keep the playing actions and expose an existing preparatory cue by changing the partner's position | Yes | Yes | Yes |
 
-Retain the third arrangement under the observed conditions. Changing the partner’s position makes the existing cue accessible while both playing actions and the following action continue. If the performance position keeps this cue hidden and cannot change, the passage needs another way to make the cue accessible.
+Retain the third arrangement under the observed conditions. Changing the partner’s position makes the existing cue accessible while both playing actions and the following action continue. If the performance position keeps this cue hidden and cannot change, the passage needs another way to make the cue accessible. Their timely joint entry can settle the choice of arrangement for this passage. If the next assignment is to respond to an unannounced change, use evidence that the partner could recognize and act on the changing cue in time.
 
 #### RHY.9:5.3 - A beat gesture preserves reference but not sound duration
 
@@ -102,7 +103,7 @@ The examples use visible and audible cues. Contact, proprioception and an equipp
 
 - Identify the receiving action and the timing information it needs.
 - Establish which production, cueing and simultaneous demands fit together, which conflict or which relation remains open.
-- Where preparation requires advance information, establish whether it arrives in time or report the limit of the evidence.
+- For an advance cue, compare the available time with the delay and preparation that can occur together. Give the bounded guarantee, attainable failure or remaining uncertainty that follows. For a claim about an actual entry or its cause, identify the evidence for that claim.
 - Examine the receiving relation at the relevant point in the passage, including continuation or recovery when it matters.
 - Distinguish a proposal, what its timing calculation establishes and any performance supported by observations.
 - Reconsider an earlier conclusion if a condition on which it depends has changed.

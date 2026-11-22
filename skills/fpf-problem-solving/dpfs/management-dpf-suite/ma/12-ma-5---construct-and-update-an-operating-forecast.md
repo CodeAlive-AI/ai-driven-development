@@ -52,11 +52,11 @@ Keep observed facts, commitments, estimates and proposed actions distinguishable
 
 #### MA.5:4.3 - Carry the outlook through work and monetary accounts
 
-Use the relevant output and mix to obtain attempts, setups, processing and resource demand through MA.1. Compare demand with the usable capacity and actual supply options in MA.2. A fixed payment remains fixed under its terms; a further block is introduced only in the branch where it is obtained. Different products can require different resource quantities even when their total unit count is unchanged.
+For a question about resource demand or a payment that depends on it, use the relevant output and mix to obtain attempts, setups, processing and resource demand through MA.1. Compare demand with the usable capacity and actual supply options in MA.2. A fixed payment remains fixed under its terms; a further block is introduced only in the branch where it is obtained. Different products can require different resource quantities even when their total unit count is unchanged.
 
-Use MA.4's opening balances and event movements to obtain the monetary outlook. Forecast production or purchases, delivery and recognition, and settlement at their relevant dates; then derive inventory, receivables and payables at period end. Collection of an opening receivable creates a receipt without another sale. Production held for later delivery can require payment before the corresponding revenue. Carry each closing balance into the next period as its opening balance. Preserve any necessary MA.3 assignment for the receiving report without turning that assignment into a new payment.
+For a monetary outlook that depends on balances and settlement, use MA.4's opening balances and event movements. A forecast confined to workload or its capacity threshold can be returned from the quantities already established. Forecast production or purchases, delivery and recognition, and settlement at their relevant dates; then derive inventory, receivables and payables at period end. Collection of an opening receivable creates a receipt without another sale. Production held for later delivery can require payment before the corresponding revenue. Carry each closing balance into the next period as its opening balance. Preserve any necessary MA.3 assignment for the receiving report without turning that assignment into a new payment.
 
-A resource shortage can require a changed schedule, scope or supply arrangement. Obtain that operating decision and update the affected delivery and payment consequences; do not retain impossible deliveries merely because their revenue was forecast first. Keep unrelated assumptions unchanged.
+When a shortage changes the forecast, distinguish the pressure on capacity, an action management could take and the action it can be expected to take. An approved response can settle the latter. With a decision still open, report the forecast at issue, or the outcomes conditional on the available responses. Implementing a supply change requires the corresponding authority.
 
 #### MA.5:4.4 - Retain the uncertainty that changes action
 
@@ -70,7 +70,7 @@ Represent uncertainty in forecast revenue and receipts at the detail needed for 
 
 Supply the quantities, timing and assumptions in a form the recipient can use. Identify the condition that would require a decision, such as workload beyond usable capacity or a payment before available funding.
 
-The forecast does not authorize that response. Use the responsible operating or financial decision method. When payment feasibility is the question, connect the selected flows to the whole timed cash account, including other relevant receipts and obligations.
+The forecast does not authorize that response. Use the responsible operating or financial decision method. When payment feasibility is the question, connect the selected flows to the payer’s resources at the relevant dates, including other obligations and only transfers that can reach it in time.
 
 #### MA.5:4.6 - Update from changed conditions and learn from outcomes
 
@@ -106,7 +106,7 @@ A service forecasts next period's workload using three planning scenarios: 80, 1
 
 Materials require 3 per unit, and the service price is 10 per accepted unit. In the 100-unit scenario, materials are 300 and sales are 1,000. The supplied collection assumption places the 1,000 receipt on day 30, while the 300 material and 120 resource payments occur on day 1. A funding use needs the whole cash account. If the 1,000 is instead collected next month, current-period revenue can remain 1,000 under the same recognition rule while the closing receivable rises by 1,000 and this period has no corresponding receipt. MA.4 carries that receivable into the next period; it is not a second sale then.
 
-The original workload fits the 38 hours through **112 units**, since (38 − 10) / 0.25 = 112. If twenty of the 100 units instead require 0.50 hour while eighty still require 0.25, demand becomes 10 + 20 × 0.50 + 80 × 0.25 = **40 hours**. Unchanged total volume therefore crosses the same supply threshold. The operating account must establish a feasible response. An expected workload of 100 alone would not establish an expected block payment: the block depends on how often the threshold is crossed, for which these unweighted scenarios supply no probability.
+The original workload fits the 38 hours through **112 units**, since (38 − 10) / 0.25 = 112. If twenty of the 100 units instead require 0.50 hour while eighty still require 0.25, demand becomes 10 + 20 × 0.50 + 80 × 0.25 = **40 hours**. Unchanged total volume therefore crosses the same supply threshold. This establishes the capacity threshold. To forecast the block payment, also establish who decides and when. If a block must be reserved in advance to guarantee service, it costs 80 even when demand is low. When the still-available block is bought after the signal, expected payment is 80 times the probability of purchase. If the rule requires buying one block whenever the qualifying demand crosses the threshold and in no other case, use the probability of that threshold event. These unweighted scenarios leave that probability open.
 
 If new evidence changes the central scenario to 96 units, its resource demand becomes **34 hours**, materials **288** and sales **960**. The existing supply payment remains 120. Updating every amount by four percent would wrongly reduce that unchanged payment.
 
@@ -120,7 +120,7 @@ A modeler can also mistake abundant historical data for stable future behavior. 
 
 ### MA.5:7 - Conformance Checklist
 
-Examine whether the forecast has a receiving action and useful horizon; constructs or obtains compatible, nonoverlapping demand inputs; connects them to resource and balance movements; distinguishes facts, estimates and proposed actions; retains uncertainty that can change the result; and has a warranted update rule.
+Which quantity, horizon and receiving decision does the forecast serve? Check that the demand inputs refer to the right population without duplication, that the relevant resource or cash consequences follow under the assumed decisions, and that any uncertainty which could change the conclusion is visible. Identify what new evidence would warrant an update.
 
 A constructed scenario demonstrates a conditional consequence. Forecast calibration, actual performance and the success of a response require their corresponding evidence.
 

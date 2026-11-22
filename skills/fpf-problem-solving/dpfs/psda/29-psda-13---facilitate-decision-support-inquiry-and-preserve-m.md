@@ -95,7 +95,7 @@ The recipient should be able to distinguish:
 - proposed action from commitment or authorization; and
 - what the inquiry enables now from the direct result still needed.
 
-Use `A.2.9` when the live question is whether the communication enabled a named recipient to understand or do something and what smallest repair is needed. An acknowledgement or later action is not sufficient proof of understanding, consent, or causal effect. Add exact communicative-Work detail only when that stronger reliance is needed.
+Use `A.2.9` when the live question is whether the communication enabled a named recipient to understand or do something and what smallest repair is needed. An acknowledgement can settle the agreed receipt question. If the rules give that very act a further effect, establish who acted and when those rules applied. For a claim about understanding or the cause of a later action, use evidence of that understanding or causal connection. Add exact communicative-Work detail only when that stronger reliance is needed.
 
 Return the supported common claims, material disagreements and evidence gaps, with their consequences for the question. Identify a discriminating question or reopening condition when needed. The account may inform alternative generation, a recommendation or reconciliation between inquiries. A resulting decision has its own authority and evidence.
 

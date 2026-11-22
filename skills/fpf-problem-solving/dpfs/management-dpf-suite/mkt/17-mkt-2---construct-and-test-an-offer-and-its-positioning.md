@@ -33,7 +33,7 @@ Construct the contribution, its context of comparison and its supply conditions 
 
 Recover the customer's activity, important difficulty, existing alternative and the roles that can change the proposal. Ask what useful difference is sought, who receives it and how it could be recognised. If the purchaser wants a lower fee while users need less repeated work, retain both questions. Do not let one convenient indicator become the goal of every participant.
 
-When the useful result is contested or not yet known, use [FPF C.40.PC](../../../sections/09-part-c---kernel-extension-specifications/113-c-40-pc---construct-a-worthwhile-problem-and-proposed-contri.md) to separate the problem, proposed contribution and acceptance expectation. The participants may agree on a limited result while keeping their broader goals distinct. They may also decline the wider proposal.
+When the useful result is contested or not yet known, use [FPF C.40.PC](../../../sections/09-part-c---kernel-extension-specifications/115-c-40-pc---construct-a-worthwhile-problem-and-proposed-contri.md) to separate the problem, proposed contribution and acceptance expectation. The participants may agree on a limited result while keeping their broader goals distinct. They may also decline the wider proposal.
 
 Connect a candidate capability to that result through a concrete use: who would use what, under which conditions, to change which part of the work? A new or changed product-service arrangement may need the linked use and system concept in [SYSE.2](../../engineering-dpf-suite/syse/23-syse-2---develop-linked-use-and-system-concepts.md), followed by the relevant engineering and supply work. Ask its owner for the needed result and constraint; do not replace a missing function with stronger promotional wording.
 
@@ -43,9 +43,9 @@ Recover what the intended customer could do instead. Compare the contribution wi
 
 For example, “automated reporting platform” may invite an expectation of continuous integration and unattended reports. “Assisted file-mapping trial for periodic reports” gives a different context. Choose between them from the actual proposal and its receivers, not from which phrase sounds larger. A category can help recognition while a qualifier makes the material boundary clear.
 
-If the customer already has an adequate alternative, determine whether the proposal offers a worthwhile difference in result, effort, access, risk or terms. It need not be unique in the world. If no worthwhile difference is supported for this situation, change the contribution, select a different appropriate situation or stop. Competitor claims and the provider's own claims both need grounds where comparison relies on them.
+If the customer already has an adequate alternative, determine whether the proposal offers a worthwhile difference in result, effort, access, risk or terms. It need not be unique in the world. When the customer asks for a second interchangeable supply option, meeting the existing terms can itself complete the offer. To recommend switching or to claim a preference, establish which difference matters to this customer. Equal options can remain live. Competitor claims and the provider's own claims both need grounds where comparison relies on them.
 
-For each relevant participant, use the available grounds to answer two questions: what supported difference favours this option among feasible alternatives, and what missing condition would exclude it? Clarify any remaining question with the participant or the source of the condition. Use the first answer to explain preference and the second to retain the conditions for choice or supply. Determine what the capability contributes in this situation. Dependable support can be a prerequisite in one acquisition and a reason to switch or renew in another.
+For a suitability question, determine which conditions each participant’s work requires and whether the option meets them. For a preference or a recommendation among feasible choices, also establish which differences matter to those making the choice. Clarify a question with the participant or the source of the condition when its answer could change the result owed. Dependable support can be a prerequisite in one acquisition and a reason to switch in another.
 
 Keep the comparison open when evidence changes. A new feasible alternative can defeat the proposed advantage without altering the product. A misunderstood category can require another explanation while the underlying contribution remains suitable.
 
@@ -120,7 +120,7 @@ Teams often prefer the capability they built most recently or the category with 
 ### MKT.2:7 - Conformance Checklist
 
 - The intended recipients, useful contribution and consequential conditions can be recovered from the offer.
-- The comparison concerns feasible alternatives and a supported difference for the stated situation.
+- The offer meets the customer’s stated requirements. Where a preference or change of supplier is claimed, the comparison explains the consequential difference or the remaining tie.
 - Deliverable, later benefit, proposed promise, supplier ability and actual fulfilment remain distinct.
 - Supply, preparation, support, consideration and customer effort are included at the scope of the promise.
 - The selected test answers the live uncertainty and its result retains the proper strength.

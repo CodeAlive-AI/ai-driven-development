@@ -53,9 +53,9 @@ Choose the inquiry that can answer the recipient's question.
 | --- | --- | --- |
 | Which results of an understood activity are poorly served? | Observe the work or inspect its records and establish the intended results. Where participants can explain a difficulty, ask about their experience. Compare the importance of each intended result and how well it is achieved where comparable measurement is possible. | Candidate improvements and differences between customers; use §4.3. |
 | What does a product or brand mean to a customer in relation to a group? | Ask the person to describe the group and an occasion when the product mattered in that relationship. | An account of the meaning the person attributes to the product. |
-| Why did the customer switch, decline or keep the existing alternative? | Reconstruct an actual choice episode, including circumstances, considered alternatives and the difficulty of transition. | An explanatory hypothesis about that choice and a question for contrast; use §4.4. |
+| Why did the customer switch, decline or keep the existing alternative? | Reconstruct the decision, the alternatives available and the terms or preferences governing it. | A supported explanation or a specific uncertainty. An applicable procurement rule and the authorised record can establish why the organisation chose an option while leaving personal preference open. Use §4.4. |
 | What happens at a contact, during continued use or around a new possibility? | Select observation, conversation and measures over the appropriate interval, with a named recipient. | A bounded account of experience or a new possibility; use §4.5. |
-| How widespread is an established difference? | Define the population and a suitable sampling and measurement design. | A population claim with its uncertainty, if the design warrants it. |
+| How widespread is an established difference? | Define the population, unit, period and criterion. Use a complete register, a sufficient bound or a sampling design suited to the claim. | The number, threshold answer or estimate the grounds support, including uncertainty where relevant. |
 | Did our intervention produce the change? | Distinguish the intervention, outcome, comparison and competing explanations; obtain the causal design needed for that claim. | A bounded causal conclusion, or a descriptive result when attribution remains unsupported. |
 
 Use an account of brand meaning to identify what to investigate in a purchase. For a claim about why a particular purchase occurred, reconstruct who made the choice, which alternatives were available and what mattered under the conditions of that order (§4.4). To decide whether organizing a user group would strengthen attachment, compare what happens with a credible estimate of what would happen without that intervention (MKT.10). A one-time survey can find stronger attachment among active members even when people who already feel attached are more likely to participate. [Yu and Lin](https://journals.sagepub.com/doi/10.1177/21582440261425574)
@@ -70,7 +70,7 @@ Identify who performs the activity and describe it independently of a preferred 
 
 Use the attempt to sketch what must be accomplished for the activity to succeed. Start with its central work, then recover the preparation and completion it depends on. Ask what each part achieves and whether it is merely a feature of the present solution. "Open spreadsheet A" may serve "establish which source values are valid"; another way of performing the activity can obtain that result. A small map or list helps retain these relations. Keep the boundary tied to the decision instead of expanding into the performer’s other activities.
 
-Challenge the sketch with a materially different attempt, including an interrupted or unsuccessful one when it could expose a missing part. Examine handovers and combinations of tools that the initial account treated as incidental. Ask what was omitted, repeated or repaired and what outcome mattered there. Test a proposed addition against an actual attempt or relevant participant; a suggested possibility alone does not establish an unmet need. If the addition describes another activity, either revise the inquiry's boundary explicitly or leave it outside this answer.
+Challenge the account where a material difference could change the answer. An interrupted attempt, a rule governing handover or an obligation absent from the first episode may expose an omitted part of the work. Establish what was omitted, repeated or repaired and why it matters to the outcome. If a proposed addition belongs to another activity, show its connection to the original decision or agree to change the inquiry.
 
 Turn a vague desire into a result that can be interpreted consistently. “Make reporting easy” might conceal time spent locating missing entries, risk of sending an incomplete report, or effort correcting discrepancies. State the direction of improvement, the thing affected and the relevant circumstances. Ask participants to explain the wording in their own situation; split an item when people are rating different things. A product-independent statement helps compare solutions, but it may still omit an important concern.
 
@@ -100,7 +100,7 @@ Schedule inquiry around the decision and the participant's burden. Combine reque
 
 #### MKT.12:4.6 - Obtain and interpret enough evidence
 
-Choose cases that can distinguish the live explanations, including access failures or non-users when their absence would bias the answer. An initial purposive set can discover differences. A population estimate needs a defensible population and sampling design; a convenient set of willing customers does not acquire representativeness by growing larger.
+Choose evidence for the difference the decision depends on. A purposive set including relevant non-users can reveal a difficulty. To estimate a rate from a sample, define the population, selection process and measurement and explain the resulting uncertainty. A complete register can give the rate directly. With incomplete outcomes, a supported range can suffice for a threshold decision.
 
 Arrange permitted access, understandable participation and competent inquiry. Pilot consequential questions on a small attainable case to find ambiguity before wider collection. Keep the question wording, relevant context and source of observations recoverable in the ordinary working material. Retain only information needed for the stated use under the applicable conditions. Obtain specialist advice where access, rights or a statistical claim depends on it.
 
@@ -128,7 +128,7 @@ The returned answer is bounded: retain reduced entry and valid source selection 
 
 Suppose management will continue the service and needs to know whether it can tell the customer that the trial reduced total reporting time. The earlier accounts do not identify that causal effect: workload or another process change may have altered the result. Define the comparison and competing explanations before choosing an evaluation design. The earlier observations help frame that comparison. Until the cause is established, the team can report what was observed within the cases studied.
 
-In a learning-service case, the paying employer's reason for enrolling staff can be studied through the same question discipline. Whether each learner can subsequently perform the work needs an HCD task and observation under stated assistance conditions. A favourable buying story cannot supply that capability judgement.
+In a learning service the employer may decide to enrol people and individual employees may use what they learn in a later job. To judge an employee’s readiness, establish which choices the job leaves to that person and what assistance will be available. Comparable earlier work can already answer that question. Credit learning or an effect of the course only when evidence connects the relevant change in capability to the period or intervention in question.
 
 #### MKT.12:5.3 - Find the missing question before comparing offers
 
@@ -156,7 +156,7 @@ An AI-generated synthesis can help find passages or propose contrasts. Keep its 
 | Misuse | Repair |
 | --- | --- |
 | Ask what features people want, then call the list their underlying work. | Recover the actual attempt and expected result before deciding which feature could contribute. |
-| Explain a choice from the first answer to “why?”. | Reconstruct the episode and compare a contrasting episode that could support or challenge the explanation. |
+| Accept the first answer to “why?” as a complete account. | Reconstruct the choice and its circumstances. Use an applicable decision rule, the decision record or a contrasting episode according to what still needs explanation. |
 | Add more post-transaction ratings to explain long-term non-use. | Choose an observation window that includes use and the relevant outside conditions. |
 | Turn a few interviews into a market percentage or intervention effect. | Keep the explanatory hypothesis; obtain the distinct design required for the stronger conclusion. |
 

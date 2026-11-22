@@ -72,7 +72,7 @@ Use the questions below for the relation you need to establish.
 | Retention or loss | Evidence over the stated interval and relevant opportunities that a contribution continued, changed or ceased to be usable or enacted. | If no opportunity arose, non-use leaves loss unresolved. Silence or a missing publication also leaves the state of practice open. |
 | Mediation | The actual tool, platform, community or publication arrangement and the visibility, interpretation, recognition or selection relation it changes. | A prominent display, recommender output or high access count does not establish value, control or cultural success. |
 
-Give the population and period each observation covers. A workshop account may support one adaptation. A review of publications may locate relevant cases. A forecast or claim about a wider population needs evidence and uncertainty appropriate to that scope.
+Give the population and period each observation covers. A workshop account may support one adaptation. For a claim about a team, establish which parts of its inquiry people performed and how those parts yielded the required return. One may have obtained an affected person's correction and another may have changed the recommendation in light of it. Evidence of their joint work can establish that use. For a promise that each practitioner can independently carry a correction through, examine what the evidence covers for each. Repeated uses, distinct practitioners and uses in the same team can give different counts. A review of publications may locate relevant cases. A forecast or claim about a wider population needs evidence and uncertainty appropriate to that scope.
 
 Use a qualified `PSDA.16` variant, lineage or finding when it supports the cultural question. An offering can be available to a team without reaching it. `PSDA.17` may establish how a local arrangement changed. To establish that another team learned the change, use evidence of its receiving work. If the available input is missing, stale or incompatible, identify the unsupported link or obtain a suitable input when warranted.
 
@@ -269,7 +269,7 @@ Automation and observer bias can make access counts or watched performances look
 | Continuation choice | For a choice, identify who decided, under what authority and on what grounds. Include material alternatives, cost and limits. For selected further inquiry, identify its attainable value, full burden and stop condition. |
 | Receiving meaning | Identify which participation, dissent, uncertainty, comparison or recommendation-use distinctions were preserved, lost or left unknown in the stated receiving use. |
 | Performance and consequence | Proposal, plan, performed Work, actual change, observation and causal effect are not substituted for one another. |
-| Evidence limits | Source coverage, estimates, observed occurrences and unproved population or retention claims remain distinct. |
+| Evidence limits | Source coverage, estimates, observed occurrences and claims about a team, each practitioner or later retention are qualified for the subject, unit and period they cover. |
 | Finding or next use | The answer identifies the supported observation, any material open link, and the continuation, change or stopping condition when one is needed. |
 
 An open link can limit a claim about a population or cause while leaving a local observation or continuation decision supported.

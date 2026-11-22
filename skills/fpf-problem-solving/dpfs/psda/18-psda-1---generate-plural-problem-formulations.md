@@ -52,7 +52,7 @@ Construct materially different formulations for one receiving inquiry. Show what
 
 #### PSDA.1:4.1 - Fix the receiving inquiry, not the problem answer
 
-State the subject, receiving question or Work and horizon. Identify any recipient and, where a later choice is involved, its authorized holder. A professional engagement can supply these premises through PSDA.11. Import a qualified PSDA.12 account only where participants, affected Systems, concerns, duties, interests or dissent can change this inquiry. Other direct sources may supply adequate premises. If the subject or receiving use differs, separate that inquiry rather than merging formulations across identities.
+State the subject, receiving question or Work and horizon. Identify any recipient and, where a later choice is involved, its authorized holder. A professional engagement can supply these premises through PSDA.11. Import a qualified PSDA.12 account only where participants, affected Systems, concerns, duties, interests or dissent can change this inquiry. Other direct sources may supply adequate premises. Keep the original question in view as you vary the account of what needs attention. A formulation can concern a component, the work of the service as a whole or what happens to its users. Show how a finding about that subject would bear on the same receiving decision. If a new question calls for a different decision, give it its own scope.
 
 Establish the current formulation, its source, factual support, assumptions and material exclusions. A short statement can make the initial frame available for comparison.
 
@@ -143,7 +143,7 @@ A repair team has a verified broken seal, one affected assembly, one authorized 
 
 ### PSDA.1:7 - Conformance Checklist
 
-- [ ] Every formulation concerns the same bounded subject and receiving use, and identifies a different inquiry separately. Use `PSDA.11` for a changed professional engagement when its terms need clarification.
+- [ ] Each formulation identifies its subject and the connection to the same receiving inquiry. Where two formulations concern different parts, participants or activities, the practitioner can explain how their conclusions would affect that inquiry. Use `PSDA.11` for a change to the professional engagement when its terms need clarification.
 - [ ] Material participants and concerns supplied by `PSDA.12` or other qualified direct sources inform the formulations. Factual or causal claims attributed to participants are qualified for their intended use.
 - [ ] Each retained formulation changes at least one boundary, evidence need, model, alternative family, value treatment, or receiving-use consequence.
 - [ ] Sources, assumptions, exclusions, uncertainty, and intervention logic are visible.

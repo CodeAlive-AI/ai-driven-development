@@ -5,7 +5,7 @@
 
 ### GOALS.1:1 - Problem frame
 
-**Use this when** a wish, target or assignment must become an intelligible basis for action, or participants are using the same goal words with different expectations. The object is the meaning and intended use of the goal. The result is an aim that can guide its next construction or execution, including any unresolved choice.
+**Use this when** you have been asked to choose what to improve or preserve, an assignment needs interpreting, or participants use the same goal words with different expectations. Recover the decision entrusted to you. A recommendation gives its recipient an aim and grounds for adopting it. A decision made under an effective mandate can set the aim. If the aim is already settled, work from its actual terms.
 
 The reader needs access to the affected work, its recipient and the person or arrangement able to decide its purpose. An adequate existing goal can be used directly. If the remaining issue is an operating target and comparison, OPS.21 supplies that method; use its result here only when a wider goal relationship still needs construction.
 
@@ -21,11 +21,11 @@ A goal needs enough stability to orient action and enough revisability to respon
 
 #### GOALS.1:4.1 - Recover the desired condition and its grounds
 
-Ask who needs what result, in which situation and by what useful horizon. Examine a representative case. Separate the condition valued by the recipient from a proposed means: a customer needs a usable repaired device; a new scheduling tool is one possible way to improve the repair service. State conditions that must remain protected, such as safe operation, eligibility, workload limits or an existing promise.
+Start with a decision or operation the recipient needs to carry out. What lets it succeed now? Where does it break down, and which condition is worth changing or protecting by when? Follow the work across a handover when a locally successful result can still leave the recipient unable to act. Compare ways the same local result could be used, or ways different contributions could give the recipient the same usable result. Those differences help you choose the scope of the goal and what its achievement criterion needs to distinguish. Use an obligation or an adopted purpose directly when it settles that choice.
 
-Explain why this aim matters now. A known unmet need, a selected strategy, an established obligation, a useful opportunity or an explicit personal purpose can supply that ground. When participants disagree, expose the differing result or value and obtain the decision through the governing practice. A clearer sentence can make the disagreement discussable; it cannot decide whose preference governs.
+For example, a repair workshop asks what would help schools use their instruments again. Follow a repaired instrument to the next lesson. Finishing the bench work earlier helps if repair time is what prevents its use. If the repair is already on time but the pickup desk closes before the school can collect, choose a goal about the instrument being available for the lesson. Changing pickup hours or arranging delivery are possible means. If the school only wants to avoid a wasted trip, an accurate notice before departure can meet that purpose even when the instrument is still at the workshop. One school's timetable grounds a goal for that school. For a promise to every booked school, find out what each is entitled to and which bookings can coincide. If schools draw on the same pickup or delivery service, its promised capacity must cover those combinations.
 
-Choose the goal's scope from the receiving result. An individual contribution can be framed separately when it has a usable recipient and completion basis. When success depends on several jointly necessary contributions, identify the whole result and the relevant relations. Decompose far enough to obtain or assign those contributions without assuming that every organizational level needs a miniature copy of the same number.
+Choose whom the goal serves, what should change or stay adequate, and the horizon from that use. Keep a useful contribution separately assignable when its recipient and completion basis are clear. Where several contributions jointly produce the result, retain the relations that make them work together. Protect other obligations, deadlines and conditions that the proposed aim could displace. Explain why the improvement is worth pursuing now. If priorities conflict, present the consequential alternatives to the person who can choose, or decide within your own mandate. A commission to propose a goal can finish when its holder receives the recommendation and the reasons needed to decide. If the commission calls for an adopted goal, establish which authorized decision or event actually put it into effect under the applicable terms.
 
 #### GOALS.1:4.2 - Distinguish the uses of the statement
 
@@ -36,13 +36,13 @@ Explain which of the following meanings the current statement carries. Several m
 | Desired outcome or maintained condition | What should become true or remain adequate for the recipient. | Construct its achievement or continuation test in GOALS.2. |
 | Ambition | A worthwhile outcome beyond or different from the present expectation. | Expose the gap and search for a feasible way, provision or narrower inquiry. |
 | Forecast | What is expected under stated present assumptions. | Keep the basis and uncertainty available; update them when evidence changes. |
-| Commitment | What another participant may rely on under an effective agreement or obligation. | Obtain the relevant authority, acceptance and means; change it through its actual terms. |
+| Commitment | What another participant may rely on under an effective agreement or obligation. | For an existing duty, identify the operative terms and the event or decision that made them apply. Before making a new promise, establish the authority and provision it needs. |
 | Inquiry goal | The answer or discriminating knowledge needed for a decision. | Specify a question, adequate method and useful possible conclusions. |
 | Learning goal | What the intended performer should become able to do in later work. | Identify the performance, allowed support and evidence; obtain the learning arrangement. |
 
 An aspiration may be deliberately uncertain. A committed investigation can reliably promise a qualified answer or a truthful inconclusive result under its agreed scope, while the desired discovery remains uncertain. A learner can undertake practice without promising that a fixed number of hours will establish mastery. These arrangements become usable when their receiving parties understand the distinction.
 
-In an operating example, ambition 12, forecast 8 and a supported promise of 10 need not be forced into one number. The ambition locates a possible improvement, the forecast informs response and the promise governs reliance. If the means currently support only 8, the supposed promise of 10 needs further provision or renegotiation; writing it on a goal sheet does not supply the difference. Use OPS.13 and OPS.21 to construct the operating target and commitment.
+A service can aim to finish 12 cases, forecast eight this week and already owe ten under an agreement. The ambition locates a possible improvement. A forecast of eight calls for recovery and timely notice to the recipient. Ten remain due unless the applicable terms or an authorized change establish another result. When ten is only a proposed new promise, secure the missing provision before offering it on that basis. OPS.13 and OPS.21 develop the operating target and commitment.
 
 #### GOALS.1:4.3 - Connect the goal to a possible next action
 
@@ -52,13 +52,13 @@ The immediate result may be a task, a request for a missing contribution, a boun
 
 #### GOALS.1:4.4 - Make the interpretation usable and revisable
 
-Agree the result, its kind, owner of the relevant decision, protected conditions and the next action with the participants who need them. Use the existing proposal, assignment or conversation if it carries these meanings. Pass achievement questions to GOALS.2 and joint feasibility to GOALS.3. State a material reason to return: changed recipient need, invalid means hypothesis, lost provision or altered participation.
+Identify who can establish this goal and what the decision covers. Give those who must act the intended result, its terms and their next action. A valid majority decision can set the common service goal under an existing mandate. If a branch still controls a resource the service requires, obtain its contribution on the applicable terms. Seek individual agreement where the decision depends on it. Use the existing proposal, assignment or conversation if it carries these meanings. Pass achievement questions to GOALS.2 and joint feasibility to GOALS.3. State a material reason to return: changed recipient need, invalid means hypothesis, lost provision or altered participation.
 
-Recognition consists in noticing that the same sentence is being used to mean different things. Assurance requires the actual ground, authority, conditions and evidence for any reliance the sentence creates. A statement may remain a proposal until those conditions are obtained.
+Recognition consists in noticing that the same sentence is being used to mean different things. For a proposal, explain its purpose, scope and consequences for the recipient. For a statement that others can already rely on it, identify its source and the conditions that have taken effect. Evidence that it has been fulfilled comes from the result due under those terms.
 
 ### GOALS.1:5 - Archetypal Grounding
 
-A research team is told to “raise yield to 95% this month.” Current knowledge does not establish a method that can achieve it. The useful decision is whether to fund a new process. The team separates the desired production yield from this month's inquiry: compare two feasible process variants under qualified measurements and return the conditions under which either merits further development. A well-supported finding that neither variant qualifies can complete the inquiry while leaving the production ambition unmet.
+A research sponsor wants a production yield of 95% and must decide this month whether to fund a new process. The sponsor commissions a comparison of two feasible variants under qualified measurements. The research team can complete that commission with a well-supported finding that neither variant merits further development. The desired production yield remains an ambition. Had the team instead undertaken to deliver at 95% this month, a comparison could inform recovery. Substituting the investigation for that delivery would require the change permitted by the undertaking.
 
 Now change the case: the process is established, materials and capacity are available, and the customer has an accepted delivery agreement. Renaming the production promise “learning” after a miss would change its meaning retrospectively. The team uses the promise's actual terms, diagnoses the failure and obtains any needed change. The distinction depends on the original work and reliance, not on whether the reported number is favorable.
 
@@ -70,7 +70,7 @@ The account favors explicit professional purposes that can be discussed with aff
 
 - Can the recipient and desired or maintained condition be identified?
 - Are the meanings of ambition, forecast, commitment, inquiry and learning clear where they change action?
-- Does the next action have an adequate method and conditions, or is the precise missing contribution exposed?
+- For a proposed aim, do its scope, horizon and grounds support the recipient's decision? Where action has also been entrusted, can it proceed under its actual conditions or has the missing contribution been identified?
 - Can the relevant participant change the purpose or reliance through the actual decision arrangement?
 
 ### GOALS.1:8 - Common Anti-Patterns and How to Avoid Them

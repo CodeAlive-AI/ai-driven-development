@@ -7,7 +7,7 @@
 
 Use this method when learners need to recognize which part of a project’s reasoning or procedure can be used in another situation and where it would fail. A presentation may describe a local success while leaving the reason for its action hidden.
 
-In a **learning comparison across project cases**, identify what warrants the action in each case and what result it supports. Test the correspondence by changing a condition that matters. A designer can supply a usable comparison or identify a missing condition. To assess a learner’s application, adaptation or warranted rejection, examine their work on the intended project or a permitted substitute, with its assumptions and the help they received.
+In a **learning comparison across project cases**, identify what warrants the action in each case and what result it supports. Establish why the proposed correspondence holds or fails in the receiving situation. A change to a consequential condition can expose its limit. A designer can supply a usable comparison or identify a missing condition. To assess a learner’s application, adaptation or warranted rejection, examine their work on the intended project or a permitted substitute, with its assumptions and the help they received.
 
 Start with the target distinction or Method and qualified accounts of the cases. Supply the professional context needed to inspect the decisive relation. If the learners first encounter the target here, identify what the comparison is teaching. Assess their learning when the receiving question calls for that conclusion. For transfer of an earlier capability, establish its earlier basis and use the relevant HCD.12 comparison. If no permitted case preserves the relation, find a suitable source where feasible or identify the blocked use.
 
@@ -44,7 +44,7 @@ How can unlike projects supply a useful, bounded learning comparison that reache
 
 State what the learner needs to recognize or adapt, such as when a calculation remains usable and when a changed condition needs new evidence. Identify the subject grounds and relevant preparation. Use HCD.6.1 when learners need a distinction made discernible. Use HCD.12 when the issue is transfer of an earlier contribution or application of a new source.
 
-Choose cases that expose an important correspondence and a condition limiting it. Two may suffice. Add a case when it reveals another important condition, corrects a misleading cue or supplies evidence the learning question still needs. Allocation of presentation time is a separate participation decision.
+If the designer supplies a correspondence, choose cases that expose it and the conditions under which it holds. If finding that correspondence is the learner's task, start from the receiving project's question. Let the learner decide which results, parts and relations in each project could supply the needed grounds, and where a difference matters. Two may suffice. Add a case when it reveals another important condition, corrects a misleading cue or supplies evidence the learning question still needs. Allocation of presentation time is a separate participation decision.
 
 Establish what participants must understand. A short explanation of quantities, participants or constraints may suffice. When the group lacks a necessary professional qualification, use or obtain a qualified account of the relevant step and retain the conditions under which it applies. Identify any comparison that remains unsupported.
 
@@ -60,7 +60,7 @@ Make both relevant parts accessible in a form learners can compare. Check what s
 
 In a learning exercise, ask learners to explain which input or condition warrants the action in each case and which result that action can support. Then identify the proposed correspondence. For completed work, use the learner’s available explanation or application to establish the connection they made, and report a missing ground where relevant. Keep the source case and receiving use identifiable. Terms such as feedback and validation may name different operations in the two projects.
 
-Examine what happens to the inference when a decisive condition changes. For example, retain the visible form but change the authorized effect of sending it, or change the format while retaining the operative rule. Ask whether the earlier action is warranted and on what grounds. HCD.6.1 can help construct a needed contrast.
+Check the proposed transfer against the conditions in both projects. A general argument whose premises hold in both can settle that question. Where the reach of the correspondence remains open, examine what happens when a decisive condition changes. For example, retain the visible form but change the authorized effect of sending it, or change the format while retaining the operative rule. Ask whether the earlier action is warranted and on what grounds. HCD.6.1 can help construct a needed contrast.
 
 Return the supported correspondence, its conditions or a warranted rejection. A model can remain usable while a particular installation needs new observations. Recalculating for different inputs does not establish those inputs. Rejecting an unsupported transfer can be the useful conclusion.
 
@@ -76,7 +76,7 @@ For an independent transfer claim, use a case unfamiliar in the conditions that 
 
 #### HCD.25:4.5 - Retain what another learner can use
 
-When the comparison is to be reused, retain a concise case where the relation holds, the condition that breaks it, the source or qualification that warrants the account, and the limits on sharing. Include enough context to reconstruct the grounds.
+When the comparison is to be reused, retain the relation, the conditions under which it holds, its grounds and the limits on sharing. Where a changed condition defeats the transfer, explain its effect. A general argument can cover every allowed condition. Include enough context to reconstruct the grounds.
 
 Return a material correction to the affected source or learning material. Retain cases whose grounds still hold. Recognize this need when project stories fail to show what carries into another situation. For stronger claims, use qualified accessible cases and evidence of the learner’s responses and conditions of use. Close with the result or limit for the selected question.
 
@@ -88,7 +88,7 @@ Three adults in a distributed programme compare permitted fragments from their p
 
 | Case | Available basis | Receiving question and warranted move |
 | --- | --- | --- |
-| A: release capacity | A checked rule of two active hours per change plus one hour per batch of at most four, ten changes, 24 available hours and unchanged inputs | For another review of the same plan, reuse the checked 23-hour calculation on its stated conditions. Recalculating from those same inputs supplies no independent observation of capacity. |
+| A: release capacity | A checked rule of two active hours per change plus one hour per batch of at most four, ten changes that can share preparation in groups of four, four and two, 24 available hours and unchanged inputs | For another review of the same plan, reuse the checked 23-hour calculation on its stated conditions. Recalculating from those same inputs supplies no independent observation of capacity. |
 | B: instrument installation | A qualified measurement from the previous installation and an available measurement procedure. A relevant installation condition has changed. | To judge the new installation, use applicable current evidence. If a new observation is needed, reuse the qualified measurement procedure where it applies. The old measurement still supports a question about the earlier installation. |
 
 The learners notice that both projects have an earlier successful report. In A the rule and inputs for the capacity calculation still apply. B needs evidence of the present installation; the old measurement covers the former one. For another project, establish whether the conditions for using the earlier result still hold and what further evidence the receiving question requires.
@@ -131,7 +131,7 @@ Familiar vocabulary can conceal a different operation. Unfamiliar detail can con
 - A named learning operation determines case selection.
 - Each permitted case retains its decisive local grounds.
 - The compared actions or relations and their local grounds are identifiable.
-- A change to a decisive condition tests the grounds for carrying an operation or conclusion into another case.
+- The grounds for using or rejecting the proposed correspondence cover the receiving project. A changed condition can expose a limit or an unchanged decision justified on different grounds. Credit the learner with the correspondence they established or the use they made of one supplied.
 - In a design, identify the intended opportunity for personal application. For a performance claim, establish what the learner did in their own case or in a permitted substitute, and retain the conditions and limits of that evidence.
 - New learning, helped application and transfer of an earlier contribution are distinguished.
 - Preserve the source, permission and material limits needed to reuse the comparison.
@@ -158,7 +158,7 @@ Explain which relation warrants the operation and what changes when its decisive
 
 HCD.6.1 explains how varying a decisive condition or an incidental cue can make a distinction discernible. HCD.12 distinguishes prior transfer from learning with a new source. Use the contribution the learning question needs. Here the practitioner selects permitted cases from different projects, makes the local relations intelligible and arranges personal application where required.
 
-Juxtapeer's [comparative-review construction](https://d.ucsd.edu/srk/papers/2018/Juxtapeer-CHI2018.pdf) is a related bounded example of making comparable parts available together; its findings do not establish professional transfer. Compared with unstructured project presentations, §§4.2–4.4 add a recoverable relation and a breaking condition at a real preparation cost. Retain ordinary presentation when sharing information is the actual purpose. Reconsider the learning comparison when a simpler example suffices, the cases cease to be comparable, or the receiving work needs another subject Method.
+Juxtapeer's [comparative-review construction](https://d.ucsd.edu/srk/papers/2018/Juxtapeer-CHI2018.pdf) is a related bounded example of making comparable parts available together; its findings do not establish professional transfer. Compared with unstructured project presentations, §§4.2–4.4 ask participants to establish how the relation carries between projects and the conditions under which the inference holds. Preparing a contrast takes time and is worthwhile when it can reveal a consequential limit. Retain ordinary presentation when sharing information is the actual purpose. Reconsider the learning comparison when a simpler example suffices, the cases cease to be comparable, or the receiving work needs another subject Method.
 
 ### HCD.25:12 - Relations
 

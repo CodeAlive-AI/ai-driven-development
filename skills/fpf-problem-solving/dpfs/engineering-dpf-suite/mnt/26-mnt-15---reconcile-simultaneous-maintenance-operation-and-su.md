@@ -5,9 +5,9 @@
 
 ### MNT.15:1 - Problem frame
 
-Use this pattern when individually plausible maintenance, operating and support plans cannot be performed together. Two jobs fit their own windows but need the same qualified specialist; an operating fallback depends on equipment that another job intends to isolate.
+Use this pattern to establish whether maintenance, operating and support work can be performed together or to resolve a known conflict. Two jobs fit their own windows but need the same qualified specialist; an operating fallback depends on equipment that another job intends to isolate.
 
-Recover the actual shared demands and choose a feasible coordination change, or state the unmet combined commitment. A simple resource or dependency bound can be enough. Use [FPF C.32.MWA](../../../sections/09-part-c---kernel-extension-specifications/82-c-32-mwa---synthesize-an-architecture-account-of-methods-and.md) or [FPF C.32.MWA.PP](../../../sections/09-part-c---kernel-extension-specifications/83-c-32-mwa-pp---construct-and-compare-method-performance-and-p.md) only when the question requires a broader practice-architecture comparison across different structures.
+Recover the shared demands and determine whether the proposed arrangement can meet them together. A supported assessment can settle that question. For a commissioned change, give a feasible arrangement, grounds excluding the permitted arrangements, or the missing condition that still determines feasibility. A simple resource or dependency bound can be enough. Use [FPF C.32.MWA](../../../sections/09-part-c---kernel-extension-specifications/82-c-32-mwa---synthesize-an-architecture-account-of-methods-and.md) or [FPF C.32.MWA.PP](../../../sections/09-part-c---kernel-extension-specifications/83-c-32-mwa-pp---construct-and-compare-method-performance-and-p.md) only when the question requires a broader practice-architecture comparison across different structures.
 
 ### MNT.15:2 - Problem
 
@@ -21,25 +21,27 @@ Shared resources improve utilization while making simultaneous commitments fragi
 
 ### MNT.15:4 - Solution
 
-Name the combined commitment and the conflict that changes it. Use the actual or proposed work and operating horizon. A prospective schedule is not evidence that the work occurred.
+Name the combined commitment and identify the dependencies that could determine whether it can be met. Use the actual or proposed work and operating horizon. A prospective schedule is not evidence that the work occurred.
 
 Choose only the structures needed to explain the conflict. For a shared specialist, work duration and provider availability may suffice. For simultaneous isolation and fallback, the maintained Systems, operating dependencies and protection authority also matter. A description's nesting does not establish work order or resource independence.
 
-Recover shared demands using compatible quantities and conditions. Distinguish elapsed time from person-hours, nominal capacity from available qualified capacity and sequential dependence from possible overlap. Include common-mode dependencies that could invalidate a fallback or protection assumption.
+For each promised job, identify its required result, recipient, deadline and specialist work. Establish whether one inspection, visit or test can supply more than one result under the applicable acceptance conditions. Count the specialist's occupied time once for a shared performance and separately for distinct performances. Include travel, handovers and waiting where they constrain the schedule. Distinguish elapsed time from person-hours, nominal capacity from available qualified capacity and sequential dependence from possible overlap. Include common-mode dependencies that could invalidate a fallback or protection assumption.
 
-Compare the whole combination. A condition applying to all selected work cannot be established by approving each job separately. Locate the overload, interference or unsupported transition and determine which alternatives change it: defer a supported job, select another window, obtain another qualified provider, change permitted operating rate or revise the intervention arrangement.
+Compare the whole combination. If a requirement applies independently to every job, checking every covered job against it establishes that requirement. For a common specialist, standby unit or isolation boundary, establish that the permitted uses can occur together. One workable schedule establishes feasibility under its stated conditions. A service promise covering a range of arrivals needs a workable response throughout that range with the information and authority available when the response is chosen. Locate the overload, interference or unsupported transition and determine which alternatives change it: defer a supported job, select another window, obtain another qualified provider, change permitted operating rate or revise the intervention arrangement.
+
+Check which choices belong to which people. If the coordinator may assign either crew to a job after the request arrives, a conditional allocation may work. If two sites can reserve the same crew independently and their choices must be honoured, the programme has to cover their permitted combination. Check what each site can know before it commits. When one bound excludes the proposed combination, return that answer to a request about this plan. A finding that no plan can meet the order needs grounds covering the other arrangements the order permits.
 
 Evaluate what each apparent repair moves elsewhere. A second provider may need access, familiarization and its own support. Deferral changes the failure consequence. A longer shift changes fatigue and protection conditions. A shared outage can remove the recovery option that made each individual plan acceptable.
 
 If the conflict requires a different organization of the practice, use [FPF C.32.MWA](../../../sections/09-part-c---kernel-extension-specifications/82-c-32-mwa---synthesize-an-architecture-account-of-methods-and.md) or [FPF C.32.MWA.PP](../../../sections/09-part-c---kernel-extension-specifications/83-c-32-mwa-pp---construct-and-compare-method-performance-and-p.md) to compare the relevant Method, Work, System, provider and description structures. Preserve their actual relations rather than making one universal layer stack. If the simple bound already answers the question, stop there.
 
-Return the selected arrangement or the combined commitment that cannot be met. Identify who has authority over the changed work and operation. Reopen when a shared resource, interruption, protection condition or service requirement changes.
+Return a supported arrangement, a commitment excluded on the available grounds, or the condition on which the answer still depends. If the order asks only whether a given plan fits, that judgement can finish it. Identify who has authority over the changed work and operation. Reopen when a shared resource, interruption, protection condition or service requirement changes.
 
 ### MNT.15:5 - Archetypal Grounding
 
-APP-MNT-03 uses a constructed packaging-plant arrangement. Two jobs each require four hours of the same qualified specialist inside one six-hour access window. Their eight-hour combined specialist demand exceeds the six available hours. Each job fits separately; the combination does not.
+APP-MNT-03 uses a constructed packaging-plant arrangement. Two jobs each require four hours of one qualified specialist inside a six-hour access window. All four hours on each job are separate work on that job. Their eight-hour combined specialist demand exceeds the six available hours. Each job fits separately; the combination does not.
 
-Preparatory work can overlap continuing production where its access and resources permit. That does not create a second specialist. Reordering two four-hour demands also cannot make their total fit the same six-hour single-person window.
+Preparation can overlap continuing production where access and resources permit. Reordering the eight distinct hours still leaves two outside the window. Consider a different order in which each job requires the same two-hour inspection and two hours of separate work. Both recipients accept the one inspection before their separate work and both need their results by the end of the window. The specialist can inspect for two hours and then spend two hours on each job. This six-hour schedule serves both under those conditions.
 
 The team compares deferring the lower-consequence job, obtaining another suitable window, using a qualified additional provider or changing the supported operating arrangement. [MNT.6](17-mnt-6---diagnose-condition-and-choose-a-maintenance-response.md) supplies the consequence of deferral; [MNT.5](16-mnt-5---prepare-maintenance-service-capability-spares-tools.md) establishes any added provider's readiness. The selected alternative changes a real constraint rather than the appearance of the schedule.
 
@@ -55,7 +57,7 @@ Local planners see their own job's benefits and can assume a shared resource is 
 
 ### MNT.15:7 - Conformance Checklist
 
-Does the comparison include every shared demand that can defeat the combined commitment? Are quantities, resource availability and dependencies compatible? Does the selected change alter a real constraint? Are moved burden, failure consequences and protection conditions retained? Do the relevant decision holders control the changed arrangement?
+For a positive commitment, can all required contributions hold together under the allowed choices? For a negative answer, does the conflict exclude the one plan, a guarantee over its promised use, or every arrangement the order allows? Are quantities, resource availability and dependencies compatible? Does the selected change alter a real constraint? Are moved burden, failure consequences and protection conditions retained? Do the relevant decision holders control the changed arrangement?
 
 A supported simple bound can complete the question. A comprehensive architecture model is needed only when its additional relations change the answer.
 
@@ -71,7 +73,7 @@ The combined arrangement can be judged on actual capacity, service and protectio
 
 ### MNT.15:10 - Architectural Rationale
 
-[MNT.7](18-mnt-7---coordinate-maintenance-intervention-and-continuing-o.md) coordinates an intervention with continuing operation; this Method addresses simultaneous commitments whose common conditions cannot be established pairwise. It reuses general cross-structure synthesis when explaining the conflict requires more than the shared timing or resource bound.
+[MNT.7](18-mnt-7---coordinate-maintenance-intervention-and-continuing-o.md) coordinates an intervention with continuing operation; this Method tests the shared conditions that govern whether several commitments can be met together. It reuses general cross-structure synthesis when explaining the conflict requires more than the shared timing or resource bound.
 
 The two jobs need eight specialist hours and the window provides six. A more elaborate optimizer is justified by an unresolved decision, not by the existence of several jobs.
 

@@ -8,15 +8,15 @@
 
 ### MMP.21:1 - Problem frame
 
-**Use this when** materially different ways of ordering, combining or allocating method contributions are plausible, and their interaction can change the receiving result. Two checks may compete for the same performer. A parallel summary may discard a distinction needed later. A reordered operation may preserve the final object while changing the answer on which someone acts.
+**Use this when** the interaction of operations can decide whether a proposed arrangement meets a requirement, or which of several arrangements to use. The order in which results become available, the resources several tasks need together, or information lost in a summary can affect the recipient’s answer.
 
-Begin with one consequence that could change the choice, then construct the smallest mathematical account that can distinguish the arrangements. The first useful result is a derived property, feasible construction, bound or counterexample, interpreted back into the method comparison.
+Identify which consequence could decide the question. Model the operations and conditions needed to derive that consequence for a given arrangement, or to distinguish alternatives if the choice is open. The result may be a feasible construction, a property, a bound or an obstruction. Show what it establishes for the work.
 
 This method refines C.32.MWA.PP's comparison of arrangements. Here an arrangement concerns how contributions are connected for the selected work; it need not form one Method whole. The mathematical model represents the relevant operations, observations and shared resources. C.29 supplies the correspondence to the working situation. B.1.5.CM supplies the separate judgment about whether participant Methods and their whole relations obtain.
 
 Preparation requires the ability to describe the proposed work and its criteria, elementary algebra, and reasoning about functions, inequalities or finite sequences. A larger concurrent model may require a specialist using CMP.14. The specialist's result must expose the property, assumptions and decisive construction or counterexample needed by the method decision.
 
-Use ordinary C.32.MWA.PP comparison when the consequences are already clear and another model would add nothing. A different diagram of the same arrangement is not a rival. If only the status of a proposed Method whole is at issue, use B.1.5.CM. This method compares arrangements; constructing and introducing a changed way of working requires its own design and realization.
+Use the existing C.32.MWA.PP assessment or comparison directly when its grounds already settle the question. Two diagrams of one arrangement may support the same conclusion. If the question concerns the status of a proposed Method whole, use B.1.5.CM. Designing or introducing a changed way of working requires its own construction or realization.
 
 ### MMP.21:2 - Problem
 
@@ -39,15 +39,15 @@ A mathematical model can resolve these questions only if it retains the distinct
 
 MMP.10 supplies the mathematical formulation and its answer correspondence. MMP.18 supplies compatible exchanges when component models must first be coupled. This Method uses those contributions for a different choice: which proposed connection, order or allocation of working operations preserves the receiving consequence under shared conditions? Its construction below retains the observations and capacities needed to distinguish the arrangements and derives the conditional comparison. You can use an existing formulation that represents the conditions needed to answer the question.
 
-Select the consequence, model the competing arrangements and their interactions, derive the difference, and return what it changes in the Method decision.
+Select the consequence the recipient needs, model the relations that can affect it and derive what follows. For an assessment of a prescribed arrangement, compare that result with its requirement. When the choice is between arrangements, derive the differences that can affect the choice.
 
 #### MMP.21:4.1 - Fix the receiving question and the actual alternatives
 
-Take the receiving result and its criteria from C.39.RQ, or reuse an adequate account already available. Take the serious alternatives from C.32.MWA.PP. State how their proposed ordering, result use, allocation or shared resources differ. Keep a feasible incumbent in the comparison when it remains an option.
+Recover the result and criteria from the receiving work or a sufficient existing account (C.39.RQ). Identify what has already been fixed and which choices of order, allocation and result use remain open. For a comparison, use the serious alternatives already developed (C.32.MWA.PP) or construct the ones the commission leaves to you. For a feasibility question about a prescribed arrangement, compare its consequences with the requirement. A feasible incumbent belongs in an open comparison when it remains an option.
 
 Choose the property that matters now. Examples include preserving an answer after regrouping work, completing before a deadline with the available capacity, preventing an obsolete result from being used, or ensuring that a required response eventually occurs. Name the inputs, variations and operating conditions over which it is required.
 
-Distinguish an existence question from a guarantee. Finding one schedule establishes that the model admits that schedule; it does not show that every allowed scheduling policy will meet the deadline. Finding one successful sequence does not establish that all allowed interleavings preserve the result.
+Distinguish an admissible schedule, a workable policy and a guarantee under independent choices. For a prescribed schedule, check the required conditions on that schedule. For a request for one policy that guarantees a deadline, construct an implementable policy whose decisions use information available in time, and establish its result for every circumstance covered by the promise. Another permitted policy may fail. If dispatchers have independent rights to choose actions, include their information and cover every combination their rights permit. A timetable available to a central planner may require knowledge or authority the dispatchers lack.
 
 Retain each alternative's status. A proposed allocation, available tool, performed operation and obtaining Method relation are different facts. Carry a proposed arrangement's unconfirmed conditions into the result.
 
@@ -91,7 +91,7 @@ Carry out the mathematical operation that can settle the question. Compose the f
 
 For a preservation claim, state the condition initially and show why each allowed step retains it. For modular reasoning, establish what each contribution guarantees under its assumptions, then check that the connected contributions and environment supply those assumptions. Two contributions that each wait for the other's result can both satisfy a conditional promise while neither starts. Progress requires an enabling basis and any needed scheduling or delivery assumptions.
 
-For a failure claim, give the input or sequence that produces the prohibited consequence. One admitted counterexample defeats a universal assertion. Check whether it represents a possible working case; an over-broad abstraction can introduce a sequence the work cannot realize. Conversely, a model that omitted a real interaction can miss a failure. CMP.14 and the applicable mathematical interpretation supply the needed refinement.
+To reject a guarantee, establish an admitted input or sequence with the prohibited consequence, or give an argument establishing that such a case must exist. To rule out every admissible arrangement, give grounds covering them all. A necessary condition that none can meet can settle that question directly. For a model counterexample, establish its relevance to the work. An enlarged model can admit an unrealizable sequence, and a model that omits an interaction can miss a real failure. CMP.14 and the applicable mathematical interpretation help restore the distinctions the claim needs.
 
 For a finite construction, exhaustive exploration can establish the property over the explored state space. A few simulation runs establish their observed outcomes. A bound may settle the question without enumeration; if even an optimistic capacity bound misses the deadline, searching more schedules under the same conditions cannot repair that alternative.
 
@@ -99,9 +99,9 @@ Keep the scope of equivalence explicit. Equality of final outputs can be suffici
 
 #### MMP.21:4.5 - Compare the consequences without hiding moved burden
 
-Return the result in the quantities and conditions chosen in :4.1. Explain which alternative preserves the required answer, which fails, which remains unresolved, and why. Where alternatives trade off time, effort, retained information or another criterion, keep the distinct consequences available to C.32.MWA.PP and the applicable C.11 choice.
+Return the result in the quantities and conditions chosen in :4.1. For an assessment of one arrangement, explain which requirement it meets or fails and which question remains open. For a choice between arrangements, show where they differ on the receiving criteria. If they trade off time, effort, retained information or another criterion, keep those consequences available to C.32.MWA.PP and the applicable C.11 choice.
 
-Include burden moved by the arrangement: a faster central step may require more preparation elsewhere; releasing a checked snapshot may require storage while a newer revision awaits review; independent instruments may still require the same operator. A local improvement is useful only to the extent that the receiving comparison can accept those effects.
+Include work shifted elsewhere when it bears on the receiving decision. A faster central step may require more preparation elsewhere. Releasing a checked snapshot may require storage while a newer revision awaits review. Independent instruments may still require the same operator. A saving at one step can settle a question about that step. To claim a saving for the whole operation, account for the shifts that could change that conclusion.
 
 Compare the chosen model with a cheaper sufficient argument. A two-step trace can expose an ordering failure without a model checker. A workload lower bound can rule out a schedule without detailed simulation. Use a larger construction when it can change an unresolved consequence or support a broader claim that the decision needs.
 
@@ -222,7 +222,7 @@ When the comparison is used for a decision, the following content must be recove
 
 | Check | Required content |
 | --- | --- |
-| Working question | The receiving consequence, criteria and materially different arrangements. |
+| Working question | The receiving consequence, criteria, prescribed conditions and any open choices. A comparison among arrangements identifies the materially different alternatives it covers. |
 | Correspondence | What the model represents, with decision-changing omissions and assumptions. |
 | Connection | Applicable inputs and outputs, relevant order or overlap, and shared resources represented once with their stated capacity limits. |
 | Mathematical result | A derivation, construction, bound or reproducible counterexample at the stated scope. |

@@ -9,10 +9,7 @@ build, integrate, test, release or observe the engineered System. Common problem
 facilities, provider Work and support arrangements as incidental infrastructure, or developing them as a product with no named
 practitioner Work.
 
-Begin with one practitioner Work family and the engineering result it must produce. Identify the actual Systems that
-enable or obstruct that Work, the capability practitioners need, the capability claimed for each platform
-or provider System, and the conditions under which those Systems participate or provide a result. Compare
-the burden and any failures that matter to the decision, then choose whether to retain or change the arrangement.
+Begin with the receiving decision and the practitioner work it must support. For one job, establish the result, available help and relevant conditions for that job. For a shared platform, identify which work can occur together, which tasks may compete, and which services or results are reusable. Choose the systems, provider work and distinctions in the demand model that can alter what practitioners can do by the required time. A readiness or actual-use question can finish without a redesign.
 
 For a decision before the relying Work, use or prepare a **platform readiness assessment**
 based on the evidence available at that time. For a later decision about use, the responsible
@@ -67,7 +64,7 @@ may overlap. Their dependency alone establishes neither a lifecycle stage nor a 
 
 ### SYSE.12:2 - Problem
 
-A decision about an engineering platform requires answers to seven questions:
+Use the following questions to establish what the platform must support and what the commissioning practitioner needs to decide.
 
 1. Which practitioner Agents, Work family, Method, result, configuration, and interval are being served?
 2. Which actual Systems, provider Agents, interfaces, resources, and configurations form the current enabling
@@ -78,8 +75,7 @@ A decision about an engineering platform requires answers to seven questions:
    availability, resource use, promise, support, exception, or fallback?
 5. Which consequences for practitioners or the System matter to the choice, and which should be preserved or changed? Consider effort, delay, error,
    rework, recovery, evidence continuity or a result involving the project system-of-interest.
-6. Which credible complete arrangements form the current decision alternatives—for example, retaining, changing,
-   composing, obtaining, building, branching, bypassing, or retiring—and who has authority to choose among them?
+6. When a choice of platform arrangement is due, which credible alternatives serve the required work and who may choose among them? Consider retaining, changing, composing, obtaining, building, branching, bypassing or retiring an arrangement as appropriate.
 7. What can be supported before practitioner Work, what is observed only later, and what change reopens each
    assessment?
 
@@ -102,14 +98,11 @@ moving integration burden to practitioners, concentrating failure, and degrading
 
 ### SYSE.12:4 - Solution
 
-Choose an enabling arrangement for one named practitioner Work result. Retain a suitable arrangement or develop
-the selected changes. State the capability, conditions, participation or provision relations and evidence separately.
-Use the readiness or later-use assessment that the receiving decision needs.
+Start from the practitioner result or combination of results the platform must support. An assessment of the current arrangement establishes whether it provides the required capability under the stated conditions. A design or recommendation establishes which arrangement could do so and why. When the commission includes changing the platform, carry the decision through to the resulting configuration and the evidence its recipient needs.
 
 #### SYSE.12:4.1 - Perform the Move
 
-1. **Name practitioner Work and result.** State the practitioner Agents or inclusion rule, Work family, Method,
-   subject, expected result, current configuration, interval, and receiving decision.
+1. **Name the practitioner work, result and required coverage.** Identify the practitioners or inclusion rule, Methods, configurations, interval and receiving decision. If the question covers several work families, establish whether each needs its own result or whether they must be supported together. Retain demands and distinctions that could defeat that support even when each task fits separately. Use the known scope directly for a single task.
 2. **Recover the current enabling arrangement.** Identify actual Systems—such as tools, model or data stores,
    compute resources, AI assistants, laboratories, manufacturing cells, integration environments, evidence
    stores, or support Systems—only where their relations change the Work. Name provider Agents, interfaces,
@@ -125,14 +118,13 @@ Use the readiness or later-use assessment that the receiving decision needs.
 5. **Use Method repertoire and architecture when they change the choice.** A compatible `SYSE.15` result can
    supply available Methods and applicability limits; a compatible `SYSE.20` result can supply Method, Work,
    enablement, and conflict structures. Otherwise use a qualified source or name the missing result.
-6. **Choose among feasible enabling arrangements.** Use a `C.11` option set of complete arrangements and develop any
-   missing feasible alternative needed for this choice. Options can include retaining the current arrangement, changing a capability
+6. **Compare enabling arrangements when a platform choice is due.** A supported readiness or use assessment can settle a question about the present arrangement at steps 8–9. For a live choice, use `C.11` and develop the alternatives still missing. Options can include retaining the current arrangement, changing a capability
    or relation, composing existing Systems, obtaining or building a part, branching for a profile, preserving a bypass,
    or retiring a harmful arrangement. Name the deciding Agent, authority, accepted losses and questions outside that authority. Compare
    the alternatives for the same practitioner result and period of reliance, including continuing provider, maintenance
    and recovery Work alongside practitioner effort. Use `SYSE.24` when the obtaining comparison is unresolved and `SYSE.25`
    when the improvement mechanism needs investigation.
-7. **Perform selected platform-development Work.** When step 6 selects a change, record the performing Agents,
+7. **Perform the platform change when commissioned and authorized.** If the work includes implementing the selected change, record the performing Agents,
    assignments when relevant, Methods, temporal extents, results, actual transformations, resulting configuration,
    and evidence. A decision record does not change the platform. When the current arrangement is retained,
    continue to the readiness or use assessment that the receiving decision needs without creating development Work.
@@ -159,7 +151,7 @@ support subsequent reliance.
 | platform and providers | Actual platform System and selected parts, provider Agents and Systems, interfaces, resources, configurations, and future candidates kept as plan or description content. |
 | capabilities | Practitioner capability demands and each platform or provider capability holder, Work family, envelope, measures, qualification window, currentness, and evidence. |
 | conditions and relations | Conditions used by the case, such as access, performance, evidence continuity, support, exception, fallback, cost, or resource conditions; each relied-on participation, provision, availability, resource-use, promise, or other governed relation. |
-| alternatives and change | Current `C.11` OptionSet of complete arrangements; deciding Agent, authority, accepted losses, selected option; platform-development Work, transformation, and resulting configuration when a change is performed; and the evidence supporting the retained or changed arrangement. |
+| alternatives and change | For a choice of arrangement, the complete available options, deciding Agent, authority, accepted losses, disposition and grounds. For an actual change, the work and transformation that produced the resulting configuration. |
 | pre-use readiness | For a pre-use decision, the assessment of capability and conditions supported before practitioner Work, with evidence cutoff, currentness window, limits, fallback and stop. |
 | observed use | For a decision about actual use, the practitioner Work, participation or provision, observations about burden and results, the use assessment and the decision it can inform. |
 | return and reopen | Claims supplied to each receiving decision, their limits, and the change that reopens each one. |
@@ -257,8 +249,7 @@ best available cases establish, what kind of evidence they provide and where its
       or participation.
 - [ ] Capability holders and envelopes are supported, and each direct relation states its participants and
       conditions.
-- [ ] Alternatives include retaining the current arrangement, a bounded change, a branch or bypass, and stopping
-      or retiring where credible; authority and accepted losses are explicit.
+- [ ] For a design or retention decision, the comparison includes the credible alternatives that could change it and records authority and accepted losses. For an assessment of one or several work families, the evidence covers the separate or combined practitioner results requested.
 - [ ] Platform-development Work, actual transformation, resulting configuration, and evidence remain distinct.
 - [ ] A readiness assessment uses only evidence available before practitioner Work.
 - [ ] A later use assessment identifies actual participation or provision and cannot justify the earlier reliance

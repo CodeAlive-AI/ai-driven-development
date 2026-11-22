@@ -21,7 +21,7 @@ Learning about another participant’s plan takes work and can expose private in
 
 #### ECO.3:4.1 - Recover the relevant parts of the separate plans
 
-Identify each party’s purpose, missing contribution and attainable offer. Use existing information about delivery windows, specification, spare capacity, access, skills or exposure. Clarify an unresolved condition when it matters to the proposed exchange.
+Start at the result one party wants to obtain. What would make another party's spare capacity or proposed service usable for that result? A new exchange might supply a missing service or improve on the timing, cost or exposure of an existing one. Identify which conditions the recipient must keep and which features of the route or terms could change. Look for an existing whole offer or for contributions that could meet the receiving conditions together. Establish what each party undertakes and how the contributions together meet the receiving conditions. Where one contribution passes to another party, check the handover, any change of responsibility and whether the recipient can use it in time. Use a missing contribution to direct the search for a participant. A complete existing offer can finish a search for one feasible exchange.
 
 Establish separately what the party understood, whether it agreed and which resources it can supply. Someone who understands the offer may prefer the current plan. Silence or expressed interest alone leaves commitment open.
 
@@ -37,7 +37,7 @@ Trace the additional contributions required to realize the proposal. Use ECO.4 i
 
 Use current records, calculations and agreements for the claims they support. If a question remains, establish whether an attainable analysis or interaction could resolve it. A capacity calculation, discussion of terms, matching offer, sample, conditional order or limited use can each answer a different question. Use STR.7 to assess the value and cost of a proposed test. If a condition cannot be resolved, return the proposal or finding within the limits the evidence supports.
 
-If a party understands the proposal and declines, the search can stop or consider different terms or counterparties. If a required contribution is unavailable, state the condition and what it prevents. Use an adequate agreement directly. Fulfil it through the appropriate operating and contractual work when performance is required.
+A refusal can answer whether this party accepted these terms. If the assignment is to find an exchange, consider what can still change in the terms, the division of the work or the parties. To conclude that none of the permitted arrangements works, establish what excludes each of them. The obstacles can differ. Where the search ends with an option unexamined, give the supported proposal or the limit of the search. Use an adequate agreement directly. Fulfil it through the appropriate operating and contractual work when performance is required.
 
 Return the finding or proposal the task requires. Preserve evidence from a rejected proposal when it can inform a later search. Use the relevant FPF or Strategy Methods for a wider search or a different framing of the problem.
 
@@ -49,7 +49,7 @@ Suppose a courier has spare capacity on a return trip leaving at 18:00. A bakery
 
 The nearby chilled store has staff and a cooled van. It offers to collect the goods at 16:00, reach the store by 16:15 and store them until courier collection at 18:00, for €15. Under the proposed terms, the store would maintain the agreed temperature until handover and the courier would then maintain it and deliver to the café by 19:00. Both this route and the €70 service meet the specified delivery and temperature requirements under the assumptions of the example. The store and courier accept their respective terms and have the necessary capacity. If the bakery uses the combined service, its outlay will be €15 + €35 = €50, a €20 saving before any extra arranging costs.
 
-The bakery can now decide whether to commit to the combined service. Its acceptance would let the parties schedule the work. Establish actual pickup, temperature control, handover and delivery from the work performed. If temperature control or responsibility at handover is unresolved, the proposal remains conditional. If storage damages the goods, the route fails the quality requirement despite its lower price.
+Collection and long-distance delivery can be bought separately here because the store can take custody of the goods and preserve them until the courier takes over. The bakery can decide whether to commit to that combination. Its acceptance would let the parties schedule the work. Establish actual pickup, temperature control, handover and delivery from the work performed. If responsibility at handover remains open, so does the proposal. If storage damages the goods, the route fails the quality requirement despite its lower price.
 
 #### ECO.3:5.2 - A useful disclosure produces no trade
 
@@ -61,7 +61,7 @@ Enthusiasm for mutual gain can hide unequal burdens, unavailable contributions a
 
 ### ECO.3:7 - Conformance Checklist
 
-For each party, identify the contribution, expected result and relevant alternative. Account for necessary complements, intermediary work and unresolved commitments. State whether the evidence supports a possibility, a conditional proposal, an agreed exchange or a completed delivery.
+Which parts of the parties' plans does the exchange connect, and why can each party supply its promised contribution on terms it can accept? For a proposed combination, establish the conditions on which the contributions fit together, including any handovers or intermediary work it requires. What has been proposed, agreed or delivered? If the question was confined to one offer, return the supported answer about that offer.
 
 ### ECO.3:8 - Common Anti-Patterns and How to Avoid Them
 

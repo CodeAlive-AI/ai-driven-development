@@ -9,7 +9,7 @@
 
 **Use this when** a request for help, a service offer or a proposed change leaves it unclear what the help must make possible or what it can provide. Also use it when a previously sensible agreement no longer fits the target, recipient, provider or available means.
 
-Identify one receiving use. What result is required, on what occasion, and does the offered help supply it? A request for a course may reflect a learning need, unavailable time, inaccessible material or a target that does not fit the work.
+Establish the use or uses the parties are asking the undertaking to support. For one occasion, what result does the receiver need? For a service, what has to be available to each recipient, under which conditions, and what must the providers and recipients obtain together? A request for a course may reflect a learning need, unavailable time, inaccessible material or a target that does not fit the work.
 
 A support undertaking comprises the bounded work and commitments through which help is provided. A conversation, work note or service specification can establish what the parties agreed when it records an effective commitment.
 
@@ -40,13 +40,13 @@ Start with the receiving result. Identify the help, contributions and decisions 
 
 #### IS.1:4.1 - Recover the request through the receiving work
 
-Use a recent case or the next intended use to establish the input, action, receiver and consequence. Ask the requester to show or describe the case when their knowledge is needed. For example, a reviewer may need to find which source edition supports a claim before recommending release.
+Read the request with the work to which its terms apply. Recover the result and the choices left open for each party. A recent case can establish what one person lacked, a service agreement can establish what every shift is owed, and the work schedule can show which demands compete. Use the source or combination that bears on the actual question. Ask the requester to show or describe a case when that can settle a missing premise. For example, a reviewer may need to find which source edition supports a claim before recommending release.
 
 Establish what the performer currently does, where the proposed contribution would enter and what makes its result usable by the receiver. Use the available work and accounts. When the performer or receiver holds missing information, obtain it from them where possible. A single practitioner may both perform the work and use its result.
 
 Compare the request with the evidence. Keep the proposed training when the recipient needs to learn the operation and the training can support that learning. If a capable performer lacks access to the source, repairing access can meet the immediate need. If the benefit is disputed, use an applicable target decision, seek a new decision from its holder if needed, or use IS.2 to investigate the disputed claim.
 
-Keep the detail that affects the agreement, the proposed work or the grounds for the promised result.
+Agree who will make the consequential choices. A recipient may ask for a ready answer, the design of a support service, or an opportunity to learn how to diagnose a difficulty. A designer can use a diagnosis already supplied by a specialist. If the undertaking also includes independent diagnosis, identify which explanations and checks the recipient will choose and what ordinary assistance they may use.
 
 #### IS.1:4.2 - Distinguish the promised result from the help
 
@@ -57,7 +57,7 @@ Specify the provider’s contribution. The following requests illustrate differe
 | Requested help | Contribution to make explicit |
 | --- | --- |
 | “Coach us.” | Which action or judgement the coach helps the performer construct, when help is available and what remains the performer's work. |
-| “Train the team.” | Which later work each intended learner must become able to perform, with what practice, feedback and assessment. |
+| “Train the team.” | Which work a person, a team, or both must become able to do. Identify who must make which choices and what the members need to accomplish together. Arrange practice, feedback and assessment for that work. |
 | “Implement the tool.” | Which configuration, integration, access and receiving-use conditions the provider establishes, and who holds any required technical decisions. |
 | “Help us introduce the practice.” | Which local conditions, explanation, participation, trial, observation or revision work the helper supplies. |
 | “Make us independent.” | Which contributions the recipient must perform or arrange without this particular helper, and which continuing services remain legitimate dependencies. |
@@ -76,13 +76,13 @@ Agree what information the helper receives, how it will be used and who will rec
 
 For voluntary participation, establish consent from the participant’s applicable agreement. Membership and the sponsor’s enthusiasm do not establish it. For an employee or contracted provider, distinguish an existing obligation from optional participation. Use the governing rule to settle a question of rights, or obtain the missing decision from its holder.
 
-#### IS.1:4.4 - Construct the smallest useful undertaking
+#### IS.1:4.4 - Agree a support undertaking that fits the receiving work
 
-Choose an initial result the receiver can use. For a failed source lookup, this might mean establishing where it failed, agreeing on a permitted repair and making the repaired route available to the reviewer on the next case. A meeting is useful where it supplies the needed contribution.
+Choose a result that meets the undertaking the parties can agree to. If they agree to start with part of the work, establish what it supplies and who remains responsible for the rest. For a failed source lookup, this might mean establishing where it failed, agreeing on a permitted repair and making the repaired route available to the reviewer on the next case. A meeting is useful where it supplies the needed contribution.
 
-Name the minimum inputs and contributions needed for that result. Check that they can be supplied together at the relevant time. If they cannot, compare changing the first result, rescheduling, obtaining another supplier, using a qualified incumbent or stopping.
+Establish which inputs and contributions a feasible undertaking needs. Look for a smaller arrangement when it would help the recipient make a choice or meet a constraint. Check that they can be supplied together at the relevant time. If they cannot, compare changing the first result, rescheduling, obtaining another supplier, using a qualified incumbent or stopping.
 
-Agree the scope of the first attempt and the conditions that could change it. A short engagement can end with a repaired condition. An inquiry can return a qualified question or an established finding, with a decision available when needed. A larger implementation promise needs a workable support strategy and provision. Use IS.3 where either remains open.
+Agree the reach of the undertaking. When a first attempt is useful, agree what it can settle and what commitments extend beyond it. A short engagement can end with a repaired condition. An inquiry can return a qualified question or an established finding, with a decision available when needed. A larger implementation promise needs a workable support strategy and provision. Use IS.3 where either remains open.
 
 Put the agreement where the parties can use it, such as their ordinary work note or service request. Identify the receiving result, the provider’s contribution, any contribution required of the recipient, applicable decisions and protections, and the conditions for revising the promise.
 
@@ -130,22 +130,22 @@ The examples emphasize professional services. In a personal use, the same questi
 
 ### IS.1:7 - Conformance Checklist
 
-- The first receiving use and useful result are recognizable without knowing the provider's service catalogue.
+- The parties can identify the receiving work, its extent and the result owed, including any connections between uses on which delivery depends.
 - The provider’s contribution and any work required of the recipient are clear enough to act.
 - Any claimed decision or information use has an established basis. If an authority remains unknown or a permission is missing, the limit on the undertaking is clear.
 - The required contributions can be obtained together, or the promise retains the exact missing condition.
-- A changed aim, provider, burden or protection condition can revise or end the undertaking.
+- When an aim, provider, burden or protection condition changes, the parties can identify what remains feasible and owed. Revision or termination follows the terms in force or an authorized decision.
 - If delivery is claimed, evidence shows that the result reached the recipient or was made available as promised. Any claim of mastery rests on the recipient’s own performance under the applicable conditions.
 
 ### IS.1:8 - Common Anti-Patterns and How to Avoid Them
 
 | Misuse | Repair |
 | --- | --- |
-| Sell the standard workshop before recovering the receiving work. | Inspect one intended use and compare what the workshop would supply. |
+| Sell the standard workshop before recovering the receiving work. | Compare what a workshop supplies with what the recipients must obtain across the uses in the request. A particular instance can settle the question when its conditions cover what matters. |
 | Promise that the client will become independent without naming independent work. | State which contribution will transfer and which support remains. |
 | Treat a sponsor's request as every participant's consent. | Recover the actual right or agreement for the contribution. |
 | Gather candid failures while leaving their assessment use undisclosed. | Agree information use and resolve incompatible support/evaluation roles before collection. |
-| Keep the broad promise after a necessary provider becomes unavailable. | Narrow the undertaking, obtain a substitute or stop the dependent result. |
+| Rely on a provider who can no longer supply a required contribution. | Seek an eligible substitute or an authorized change of terms. Identify any work that remains due and what prevents its delivery. Apply a governing stop condition where it holds. |
 
 ### IS.1:9 - Consequences
 
@@ -171,6 +171,6 @@ A stable standard service with agreed rights and inputs can answer the request. 
 
 Use IS.2 where a receiving difficulty remains unexplained and IS.3 when support still needs to be designed or adapted. A.3.1.MI helps establish what happened during introduction or later use and which conclusions follow. Use IS.5 for continued provision, transfer or closure.
 
-Use MKT.11 to establish whether a commercial service promise can be met, [OCE.6 (OCE.6:4)](../management-dpf-suite/oce/28-oce-6---establish-holder-assignments-and-enabling-relations.md#oce64---solution) for organizational assignments and enabling relations, and [LDR.4 (LDR.4:4)](../management-dpf-suite/ldr/10-ldr-4---prepare-a-proposal-for-decision-and-first-use.md#ldr44---solution) when a decision or first use requires preparation. Use HCD when personal acquisition is promised. Use C.39 when construction or qualification of a target or support Method remains open.
+Use MKT.11 to establish whether a commercial service promise can be met, [OCE.6 (OCE.6:4)](../management-dpf-suite/oce/28-oce-6---establish-holder-assignments-and-enabling-relations.md#oce64---solution) for organizational assignments and enabling relations, and [LDR.4 (LDR.4:4)](../management-dpf-suite/ldr/10-ldr-4---prepare-a-proposal-for-decision-and-first-use.md#ldr44---solution) when a decision or first use requires preparation. Use HCD when personal acquisition is promised. Use A.3.1.FT with evidence from the practice when the question is whether a known target or support Method fits the receiving setting. Use C.39 when an operation or a connection needed in that setting must still be developed.
 
 ### IS.1:End

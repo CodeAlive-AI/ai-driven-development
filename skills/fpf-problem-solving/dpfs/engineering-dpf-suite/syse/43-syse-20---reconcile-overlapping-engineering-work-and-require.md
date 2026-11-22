@@ -126,7 +126,7 @@ order; the order of this explanation does not establish or prescribe its timing.
    included structure's subject, use, important correspondences and losses.
 5. **Conflict and moved burden.** Identify any conflict or burden on which the requested answer depends. For an assessment or choice, establish whether the relevant results and
    constraints are compatible and what that means for the engineering result. State which Agent, System, decision or time interval receives any material burden moved
-   by a local gain.
+   by a local gain. If two recipients need a result, trace its delivery and deadline for each. One performance may serve both. Distinct operations using the same person or facility need compatible windows. A joint demonstration also needs all required participants together.
 6. **Alternatives for a choice.** When a choice is requested, use a finite set. Identify the relation distinguishing each proposed change. Develop a missing alternative
    by changing a named relation. Include the present arrangement when retaining it is feasible.
 7. **Authorized choice.** For that decision, the authorized Agent uses `C.11` or a domain decision Method to compare the fixed option set on one
@@ -255,10 +255,7 @@ the deadline if a rig or decision still finishes later. Conversely, two individu
 make the whole impossible when they require the same engineer simultaneously. Include necessary provider
 work and other commitments even when they belong to different Work wholes.
 
-For uncertain durations or availability, use supported intervals or explicit scenarios and state
-the conclusion they permit. If the deadline must hold through a qualified worst case, an average or
-an unqualified estimate cannot establish the guarantee. A useful result may be a narrower conditional
-plan or a precise statement of the availability commitment still required.
+For uncertain durations, demands or availability, identify what the commitment has to withstand. An admissible combination that misses the deadline defeats a guarantee for that arrangement. To offer different actions in different circumstances, show who can distinguish them before assigning work and whether the resources will still be available then. A feasible schedule can suffice when the project can make the required reservations now. To rule out every permitted arrangement, establish what defeats each, or a constraint they all violate. A bound on the finish time may settle the deadline even when the exact schedule remains open.
 
 When comparing alternatives, use the declared basis: for example, meet the evidence and safety conditions
 by the deadline, then minimize additional continuing support. Include immediate implementation and rework

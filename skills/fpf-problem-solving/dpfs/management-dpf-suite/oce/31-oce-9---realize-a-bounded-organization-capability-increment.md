@@ -9,7 +9,7 @@
 
 A design has been selected or a bounded attempt authorized. Determine whether the organization can supply its intended contribution under the receiving conditions. Use a sufficient existing implementation result. When a gap remains, establish the needed relations, exercise the relevant work and use the results to qualify the capability or locate a repair.
 
-Start with one useful request-to-result path and its exception return. Identify which contributions and decisions the path requires, who or what already supplies them, and any participant or support still missing. An initial result may be the missing access, authority, learning, support or service condition.
+Start with what the receiving work requires and what will trigger or sustain it. This may be a request, a scheduled action or a continuing duty. Identify the contributions, decisions and support it needs, including provision for exceptions when the promise covers them or they could defeat it. An initial result may be the missing access, authority, learning, support or service condition.
 
 A selected design or an authorized bounded attempt can still contain unrealized relations. Use established relations where they apply. Before dependent action, secure any missing authorization or enabling contribution from the party able to supply it. An arrangement recommendation alone supplies neither a choice nor trial permission.
 
@@ -25,7 +25,7 @@ The organization needs the ability to obtain a stated contribution under stated 
 
 Separate completion reports hide broken crossings. Staffing can be complete while access is ineffective. Training can be complete while the receiving task offers no opportunity to use it. A successful demonstration can depend on a facilitator who will not be present in ordinary work.
 
-The organization needs evidence from the complete contribution and its failure return. It must retain which conditions were supplied, which actions occurred, and what the observed result can support.
+The organization needs grounds for the contribution under the agreed conditions, including how an interruption will be handled when continued service requires it. It must retain which conditions were supplied, which actions occurred, and what the observed result can support.
 
 ### OCE.9:3 - Forces
 
@@ -53,7 +53,7 @@ Otherwise name the organizational claim still unsupported and the first addition
 
 #### OCE.9:4.2 - Trace the contribution and exception paths with participants
 
-Trace the contribution from the accepted result back to the request and follow a representative exception through its return. Use the available evidence to identify each input, contribution, recipient and acceptance or return condition. When an action or difficulty is unclear, consult the participant who performed or experienced it, or use a relevant observation or record of its execution.
+Trace the contribution from its required use back to the triggering request, scheduled event or standing duty. Where the work requires recovery or a reply to an exception, follow that connection through to its recipient. Use the available evidence to identify each input, contribution, recipient and acceptance or return condition. When an action or difficulty is unclear, consult the participant who performed or experienced it, or use a relevant observation or record of its execution.
 
 Inspect the crossings that can defeat the slice: source/version interpretation, effective assignment, decision authority, access, equipment, provider response, information custody, available time and support. A chart or specification may establish the prescribed relation. Check the effective relation and any claimed performance on evidence about those facts.
 
@@ -171,7 +171,7 @@ A sponsor can choose an easy demonstration or hide exceptional assistance. Inclu
 
 ### OCE.9:7 - Conformance Checklist
 
-- The slice reaches a named contribution and receiving use, including an exception return. An adequate current whole result is reused; additional realization answers a named remaining claim and warrants its full burden.
+- The arrangement reaches the required contribution and receiving use over the promised conditions, including any required response to exceptions. An adequate current whole result is reused; additional realization answers a named remaining claim and warrants its full burden.
 - The participants can distinguish selected design, effective conditions, performed attempt and capability conclusion.
 - Missing assignment, access, authority, learning, service or protection results stop their dependent action.
 - When adequate separate actions fail to form the intended contribution, the needed constituent/encompassing connection and the supported repair are explained.
@@ -184,7 +184,7 @@ A sponsor can choose an easy demonstration or hide exceptional assistance. Inclu
 
 | Anti-pattern | Better action |
 | --- | --- |
-| Count installations, appointments or attendance as realized capability. | Trace the contribution into its receiving use and establish its exception path from applicable evidence or a representative exercise. |
+| Count installations, appointments or attendance as realized capability. | Establish the contribution and its receiving use under the commissioned operating conditions. When service must also continue through an exception, establish its recovery path with suitable evidence or an exercise. |
 | Repair the person when the source, access or task cue is defective. | Compare rival causes and repair the supported condition through its owner. |
 | Treat a facilitator-assisted demonstration as normal operation. | Record the assistance and observe the claimed continuation arrangement. |
 | Repeat the successful trial until it looks convincing. | Select the variations and failure conditions that can defeat the receiving claim. |

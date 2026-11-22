@@ -9,7 +9,7 @@ Use this Method when the performer can make the necessary bodily changes separat
 
 An ensemble is the combination of bodily changes the task requires. Its contributing regions may be separate, including regions that are not anatomically adjacent. Judge the combined change by its result in the receiving movement under the conditions examined.
 
-To learn recall, first identify a workable portion the performer has experienced. If the required combination has never been available, construct a suitable portion or obtain the instruction needed to do so.
+To learn recall, work from a coordinated movement the performer has experienced. A cue can make the entire action available. If only part is manageable, start there. If the combination remains out of reach, obtain the instruction needed to construct it.
 
 ### SOM.4:2 - Problem
 
@@ -25,13 +25,17 @@ Detailed observation helps the performer build a coordination but takes attentio
 
 Identify the actions that must occur together in the chosen interval. Use SOM.1 if the relevant relation is unclear. A writer might need to guide the pen while maintaining contact. A dancer might need to balance, step and keep the relation to a partner.
 
+Start with the action or judgement the recipient needs to make, whether it concerns a finished mark or the next movement. Which actions could each succeed on its own yet interfere when performed together? Follow that connection. A partner who must wait for the turn to finish may need its timing while the writer who receives a finished drawing may need only an unbroken line. Choose the detail that lets that particular recipient act or that lets the performer explain the requested coordination.
+
 A cue about the movement’s effect may already give the required action. Use it when it works, or try a suitable cue if its contribution is open. If it leaves the coordination unresolved, examine the uncertain parts in the conditions in which they must work together. Use SOM.2 for a missing distinction and SOM.3 for missing regulation. Success with each part under different conditions leaves their combination to be established.
 
 #### SOM.4:4.2 - Assemble from a workable portion
 
-Start with a combination the performer can carry out. Add a needed change and observe its effect on the actions already in the combination. Reduce irrelevant demands while preserving what needs to be learned. In writing, shorten the drawing if that helps, but keep the support transition when the failure occurs there.
+If the whole combination is already available, practise recalling it in the required movement. To extend a partial combination, add a needed change and observe its effect on the actions already working together. Reduce irrelevant demands while preserving what needs to be learned. In writing, shorten the drawing if that helps, but keep the support transition when the failure occurs there.
 
 If checking every part during one movement interrupts it, distribute observations over comparable attempts. Attend to a bodily relation in one attempt and observe a concurrent contribution or movement result in another. Retain differences between attempts and identify any help received from an observer.
+
+Use these accounts to guide preparation. To accept a combined action in one attempt, an unbroken trace of the whole effect may suffice. To establish that a particular felt adjustment occurred during that same effect, also connect the performer's report to that attempt. Two otherwise comparable attempts could each contain only one of the required actions.
 
 When an added change disrupts the combination, locate the failure before adding another. Prepare the missing relation, adjust support within the practice’s limits or obtain a demonstration that makes the change available to investigate. Recall practice starts once the performer can produce a workable combination.
 
@@ -39,7 +43,7 @@ When an added change disrupts the combination, locate the failure before adding 
 
 Attend to how a workable combined change starts, develops and releases. Practise recalling how the coordinated action feels as it unfolds in another instance of the receiving movement. Judge it by the observable result and the other actions that must continue.
 
-When joining portions, overlap them and check the overlap in motion. A pause can serve preparation. To support a claim about continuous coordination, use observations during continuous movement. Use SOM.5 if changing support or load affects the connection.
+When coordination has to continue across a join, practise portions that overlap through the change if that helps the performer. A pause can serve preparation, and an intended pause can be part of the performance. To establish uninterrupted coordination, use evidence that covers the join. Use SOM.5 if changing support or load affects the connection.
 
 When a bodily contribution is added or changed, check whether the other required actions still work with it. Use an already workable revised combination, and practise it when it is missing.
 
@@ -63,7 +67,7 @@ A clear description can coexist with unreliable coordination. A familiar feeling
 
 ### SOM.4:7 - Conformance Checklist
 
-Identify the concurrent requirements and any available portion or missing construction. For learning, distinguish detailed preparation from recall of the developing movement. Check how an added or changed contribution affects the others. For a claim about the whole action, use evidence under its conditions. Paused preparation, aided performance and success at endpoints support findings limited to those conditions.
+Identify the concurrent requirements and any available portion or missing construction. For learning, distinguish detailed preparation from recall of the developing movement. If the performer is to construct a coordination, establish which parts and relations they chose and which the teacher or demonstration supplied. Check how an added or changed contribution affects the others. For a claim about the whole action, use evidence under its conditions. An intended pause or permitted aid can be part of the required performance. Successful endpoints alone leave the intervening coordination open.
 
 ### SOM.4:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -77,7 +81,7 @@ Recall may make a combined bodily action available while leaving more attention 
 
 ### SOM.4:10 - Architectural Rationale
 
-Construction makes a workable combination available. Recall lets the performer reproduce how it develops during movement. Judge each by the action it serves. The task determines which bodily changes belong together. Anatomical subdivisions and the levels of work in the encompassing activity answer different questions.
+Construction makes a workable combination available. Recall lets the performer reproduce how it develops during movement. Judge each by the action it serves. The task determines which bodily changes belong together. A body part belongs to the performer's body. A step can belong to this dancer's turn, and the turn can belong to a figure performed by a pair. The model can describe either a specific performance or a relation that holds in other performances where its conditions obtain.
 
 ### SOM.4:11 - SoTA-Echoing
 

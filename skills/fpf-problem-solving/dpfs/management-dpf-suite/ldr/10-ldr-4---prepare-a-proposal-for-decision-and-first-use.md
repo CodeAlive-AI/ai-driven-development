@@ -32,7 +32,7 @@ A first assisted success can justify bounded continuation while still depending 
 
 #### LDR.4:4.1 - Make the receiving work and proposed change examinable
 
-Recover the result someone will receive and use. Describe how the proposal produces it: the work products, operations, producer and receiver, tools, access, help and conditions needed. Compare a representative task under the present arrangement and the proposed one.
+Recover the result someone will receive and use. Describe how the proposal produces it: the work products, operations, producer and receiver, tools, access, help and conditions needed. Select the extent of the comparison from the decision it must support. A decision about authority may turn on one mandate. To assess a change in joint work, follow the contributions that produce the receiver’s outcome, including any dependence on other deliveries.
 
 A new form, meeting or role is useful only through a contribution. Ask what becomes possible or improves for the receiver. If an existing arrangement supplies the same result at acceptable effort, retain it. If the proposal concerns continuing development, obtain its actual problem, worthwhile challenge and transition from the development methods; a proposal to adopt a familiar practice does not constitute that whole development process.
 
@@ -48,7 +48,7 @@ A permitted first use can precede the decision to adopt the larger arrangement. 
 
 Participants often seek advice from people they trust before deciding about an unfamiliar change. Ask whose judgement they need, about which question and under what information conditions. This can reveal a former colleague, peer or specialist outside the formal project. Other advisers may become involved later. Prepare for that wider discussion as well as for the consultations already identified.
 
-Make an explanation that another person can examine and pass on without depending on the organizer's presence. Use the receiving work from :4.1: what would change, how the proposed arrangement would produce the result, why that is expected to work, and what it changes for the people doing or receiving the work. Include a representative before-and-after task, the grounds for the claimed benefit, significant burdens and uncertainties, and the decision still to be made. Use :4.3 to work out consequences that are not yet understood. A short account can point to the fuller reasoning and example where these are needed. Prepare a shareable example when the real task contains information that the intended audience cannot receive.
+Make an explanation that another person can examine and pass on without depending on the organizer's presence. Use the receiving work from :4.1: what would change, how the proposed arrangement would produce the result, why that is expected to work, and what it changes for the people doing or receiving the work. Include the grounds for the claimed benefit, significant burdens and uncertainties, and the decision still to be made. A before-and-after task can show what a change means in practice. Explain which features carry across the intended work and where a difference changes the decision. Use :4.3 to work out consequences that are not yet understood. A short account can point to the fuller reasoning and example where these are needed. When a worked illustration is needed and the real task contains restricted information, find a shareable case that retains the consequential choice. An available rule may already answer the recipient’s question.
 
 Put the explanation where participants can obtain it and give it to their advisers. Identify the current proposal and provide a practical way to return a question to someone able to examine it. This might be a shared note with a contact, an annotated demonstration with a discussion channel, or a briefing whose supporting material remains available afterwards. Choose the means by how the relevant people exchange information. A confidential consultation may need a permitted private route; a generally shareable account can travel beyond the original recipients.
 
@@ -63,7 +63,7 @@ Advice can improve a proposal while the decision maker retains the decision and 
 
 #### LDR.4:4.3 - Trace consequences in representative work
 
-Use a concrete task and its receiving action. Show the products and means before and after the proposal. Ask the participants where an extra operation appears, an input is missing, work is displaced, an obligation changes or an undesirable consequence becomes possible.
+Follow the products and means that the proposed decision would change. A specific task can reveal an affected handover. When the question concerns a whole service, follow that dependency across its other affected uses, or give the common ground that covers them. Ask the participants where an extra operation appears, an input is missing, work is displaced, an obligation changes or an undesirable consequence becomes possible.
 
 Different findings need different responses. A participant may have misunderstood the proposed scope; explain it. The proposal may duplicate an existing report; find the report's receiver and determine whether the duplication is needed. A claimed benefit may lack technical grounds; obtain the subject construction through B.5.SD. An actual loss may need compensation, a different option or refusal. Do not rename all these findings “resistance.”
 
@@ -101,7 +101,7 @@ Make the decision and its limits recoverable in the ordinary form that gives it 
 
 Bring the effective decision and accepted proposal to those who rely on one another's work. Confirm what each will actually contribute, when and with which help; who receives the result; what happens if a necessary input or ground is missing; and who can change the arrangement.
 
-The practical need is that a participant can reasonably rely on the other necessary contributions. It is not merely that everyone has received the same announcement. Include absent shifts, external providers or other dependent participants through a usable exchange and their actual responses. A brief meeting may be efficient; a readable update with confirmations may be enough.
+The practical need is that a participant can reasonably rely on the other necessary contributions. It is not merely that everyone has received the same announcement. Establish the basis for relying on absent shifts, external providers and other dependent participants. An effective standing arrangement and available means can supply it. Obtain a response from a participant when the proposal needs a new commitment or their own judgement. A brief meeting may be efficient; a readable update with confirmations may be enough.
 
 Keep a changed proposal distinguishable from the earlier one. If a late objection exposes a consequential gap, reopen the affected inquiry, agreement or decision. Communicate the revision before others rely on the old terms. Independent authorized preparation can continue while a dependent start waits.
 
@@ -113,7 +113,7 @@ Where an effective rule permits starting despite a retained objection, state tha
 
 Put the actual product, access, means and capable help in place. Perform the work through its domain method and follow the result to the receiver's action. Opening a form, completing a briefing or marking a checklist is insufficient if the receiver still cannot use the contribution.
 
-A checklist can help attention when its questions are tied to the occasion and change what the performer does. C.41.OF supplies that fit. The performer still needs the method and competence to answer the questions. If “configuration checked” exposes an unsupported old test, obtain the needed applicability judgement or corrected contribution; a tick does not repair the ground.
+A checklist can direct the performer's attention to a condition that changes the handover. C.41.OF helps fit the questions to that occasion. If an old test concerns another configuration, a qualified reviewer can determine whether it supports the present calculation. An explanation of why the test cannot support release completes an assignment to judge that evidence. An assignment to supply a calculation fit for release still calls for the missing calculation or other adequate grounds.
 
 Retain assistance that the first use needs. If a colleague supplies the decisive interpretation, report an assisted result and arrange the next use accordingly. The first result can be useful without establishing independent capability.
 
@@ -161,11 +161,11 @@ In a shared brief, participants confirm the same configuration, scope, contribut
 
 On the first attempt, the checklist draws attention to a test from C6 cited in the C7 calculation package. The engineer can state the mismatch but needs help judging it. A qualified colleague identifies a changed parameter whose effect the old test did not cover. Under the stipulated review rule, applicability to C7 is unsupported.
 
-The engineer returns the gap to the specialist; the reviewer receives the unresolved claim and withholds the dependent conclusion. The twenty-minute handover did not promise a new calculation within that interval. The first attempt has exposed the next necessary work but has not completed the intended reviewed contribution.
+The reviewer receives the unresolved claim and withholds release on the existing evidence. The engineer has handed over the calculation and its open question within the agreed interval. The reviewer has answered whether the old test supports C7. Its failure to cover the changed parameter leaves C7's actual performance open.
 
-The specialist estimates the correction and its checking. The lead obtains a feasible allocation with the people whose work would move, and the reviewer accepts a later receiving window. If those conditions cannot be arranged, the dependent release waits. In the successful continuation stipulated here, the specialist supplies the C7 calculation and grounds. The engineer completes the assisted handover; the reviewer examines the result and makes the review decision.
+If the lead also needs a calculation on which release can proceed, the specialist estimates the correction and its checking. The lead arranges time with the people whose work would move. Without a feasible allocation the release waits. In this case the reviewer accepts a later window, the specialist supplies the C7 calculation and its grounds, and the engineer hands them over with assistance. The reviewer can now judge release on the new evidence.
 
-This is the first completed contribution for this use. The case establishes no measured effect of the checklist or independent mastery by the engineer. It illustrates why preparation, authority, performance and evidence are separate results that must connect.
+The first handover let the reviewer withhold an unsupported release. The second supplied evidence for a new release decision. To judge the effect of the checklist or the engineer’s ability to make the applicability judgement independently, the lead would need evidence about those outcomes.
 
 #### LDR.4:5.3 - Changed conditions select different repairs
 
@@ -191,7 +191,7 @@ They instead use IS.3 to prepare a saved query over the existing issue tracker a
 
 Participants can now discuss the contribution they tried. If collecting the case is cheaper and the receiver can act on it, that supplies a concrete answer to part of the earlier concern. A recurring maintenance burden or another team's loss can still change the larger proposal. They take these findings to the people whose advice or commitment is needed and decide which further preparation matters.
 
-Change the task: the receiver needs to know what an R&D unit produces for use or sale, but participants list installed software systems without identifying what the unit delivers or who uses it. Faster entry leaves the receiving question unanswered. A qualified contributor works through one actual product and its use with them. Likewise, when a planning view depends on a hierarchy they cannot construct, jointly build the needed part of the model or obtain that contribution from a capable provider. Select learning practice separately when their independent capability is wanted. These different repairs follow the missing operation in the first use, rather than treating every delay as a need for more persuasion.
+Change the task: the receiver needs to know what an R&D unit produces for use or sale, but participants list installed software systems without identifying what the unit delivers or who uses it. Faster entry leaves the receiving question unanswered. A qualified contributor works through one actual product and its use with them. Likewise, when a planning view depends on a hierarchy they cannot construct, jointly build the needed part of the model or obtain that contribution from a capable provider. Select learning practice separately when their independent capability is wanted. These different repairs follow the missing operation in the first use, rather than treating every delay as a need for more persuasion. For a request about the unit’s whole portfolio, use the traced product to identify what counts as a delivery and establish coverage from the portfolio or another adequate source. When the receiver has to learn to identify those products, leave that choice to the learner before offering the model.
 
 #### LDR.4:5.6 - An explanation reaches an adviser the organizer did not know
 
@@ -217,7 +217,7 @@ A conforming use makes the following recoverable where they affect the proposal:
 
 - the receiving work, first useful result and adequate existing alternative;
 - how participants can obtain and share an examinable explanation as permitted, how consequential questions return for examination, and any trusted judgement the decision requires;
-- representative consequences, real burdens and the response to substantive objections;
+- the consequences at the scale of the requested decision, the grounds for carrying a finding across uses, real burdens and responses to substantive objections;
 - the revised whole proposal, actual decisions, accepted contributions and outstanding conditions;
 - the mutually visible start on the same effective terms;
 - the performed first contribution and the receiver's use, including retained assistance;
@@ -268,6 +268,6 @@ B.5.SD supplies the substantive answer to an objection; LDR.2 obtains compatible
 
 [Corporate Governance (CGOV)](../cgov/_index.md), through CGOV.3 and CGOV.11, guides participants in identifying who holds the relevant decision power and what act makes a corporate decision effective. OCE.6 supplies organizational enabling relations; OCE.7 coordinates product and organization choices; OCE.9–OCE.11 supply organizational capability, participation, and reconciliation of change with continuing service. [OCE.18](../oce/34-oce-18---arrange-capability-development-and-receiving-work-i.md) supplies the complete career-to-work connection.
 
-[FPF C.41.OF](../../../sections/09-part-c---kernel-extension-specifications/123-c-41-of---fit-a-checklist-to-its-occasion-of-use.md) fits an execution aid to the actual occasion. The domain method still produces and judges the work. C.11.DUA appraises further preparation and inquiry. C.36 qualifies cultural-continuation claims; C.36.RP explains how to keep the practice's methods obtainable by later participants. The development practice owns the next worthwhile challenge after success.
+[FPF C.41.OF](../../../sections/09-part-c---kernel-extension-specifications/125-c-41-of---fit-a-checklist-to-its-occasion-of-use.md) fits an execution aid to the actual occasion. The domain method still produces and judges the work. C.11.DUA appraises further preparation and inquiry. C.36 qualifies cultural-continuation claims; C.36.RP explains how to keep the practice's methods obtainable by later participants. The development practice owns the next worthwhile challenge after success.
 
 ### LDR.4:End

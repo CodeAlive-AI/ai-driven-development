@@ -74,7 +74,7 @@ Show enough intermediate amounts to expose an omitted term and reconcile to the 
 
 Preserve each account for its warranted use and return the explanation connecting them. If a source is wrong, return the correction to whoever maintains it. A statutory account must be corrected through the applicable reporting process.
 
-Supply the required monetary basis to the receiving operating or financial method. If funding is at issue, use the whole timed cash position, including other relevant receipts and obligations.
+Supply the required monetary basis to the receiving operating or financial method. If funding is at issue, identify the payer and determine what that payer can use at each required date after other obligations. A group total answers a consolidated reporting question. For a payment by one member, establish the availability, authority and timing of any transfer it relies on.
 
 ### MA.4:5 - Archetypal Grounding
 

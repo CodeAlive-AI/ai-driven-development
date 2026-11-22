@@ -65,7 +65,7 @@ Check any available specification against the material, audience, required tasks
 
 #### HCD.18:4.2 - Derive the tasks and contrast cases outside the present table of contents
 
-Start from the work the audience should be able to perform or practise. Recover its required distinctions, prerequisite operations, acceptable variants, and consequential errors from the problem and a qualified subject basis. Use those requirements to judge the material’s coverage.
+Start from the work the audience should be able to perform or practise. Recover its required distinctions, prerequisite operations, acceptable variants, and consequential errors from the problem and a qualified subject basis. If the promise is to construct a model or a method, identify which choices belong to the learner. They may have to decide whose work to include, where to stop following its parts or prerequisites, and which differences the model must retain for the recipient. A correct answer in a table which already selects those parts and differences can demonstrate use of that table. Use the work promised to the learner to judge coverage.
 
 For each promised task, ask what a successful contribution would contain and which plausible wrong contribution an apparently adequate explanation might also produce. Choose a case on which the alternatives differ. In the time example, an uninterrupted interval cannot distinguish active effort from elapsed turnaround; an interruption can.
 
@@ -155,7 +155,7 @@ The subject criteria are stipulated before an attempt: active effort sums the na
 
 The interruption separates report effort from turnaround. The concurrent case separates person-time from elapsed duration. Both distinctions are required by the handout’s stated promise.
 
-Time-use S1 selects six characteristics on the profile’s ordinal repair/use scale, with higher values better for this use. Its local rule requires evidence of at least 4 on every selected property for a supported-use conclusion. A high value elsewhere cannot offset a failed requirement. Missing evidence leaves supported use unestablished. Identify the supported results and the missing evidence. An existing observation or an attainable, worthwhile controlled probe may supply it.
+Time-use S1 selects six characteristics on the profile’s ordinal repair/use scale, with higher values better for this use. Its local rule requires evidence of at least 4 on every selected property for a supported-use conclusion. A high value elsewhere cannot offset a failed requirement. Missing evidence leaves supported use unestablished. Identify the supported results and the missing evidence. An existing observation or an attainable, worthwhile controlled probe may supply it. An established failure of one necessary property already rules out this use if none of the permitted sources or help supplies the missing contribution. A commission to evaluate all six properties still requires a disposition for each.
 
 | Selected characteristic | Evidence required for 4 in S1 | What distinguishes the neighbouring repair or resilience judgement |
 | --- | --- | --- |
@@ -176,7 +176,7 @@ A deficient handout, M0, says that time spent doing a task runs from first touch
 
 A revised explanation, M1, distinguishes active intervals from start-to-handoff turnaround, separates the columns, gives the interrupted report result, and states how to sum person-time across people. This repairs the named subject relation. To become an adequate contrast for **all** of S1, the material-and-support arrangement must also supply the concurrent example, a criterion that accepts valid equivalents, and the specified reader/feedback evidence. “Better explanation” alone is not a complete six-coordinate result.
 
-An adequate **constructed** contrast combines M1 with the concurrent worked comparison, the S1 criteria, and an available teacher question and retry. It shows what adequate content and support would contain. Until there is evidence of an appropriate reader using that arrangement, explanatory and feedback adequacy remain evidence requirements, not observed successes.
+One adequate **constructed** arrangement combines M1 with a worked concurrent comparison, the S1 criteria, and an available teacher question and retry. For example discrimination the unsolved concurrent task also suffices when learners receive it and the correct and rival rules yield different answers. It shows what adequate content and support would contain. Until there is evidence of an appropriate reader using that arrangement, explanatory and feedback adequacy remain evidence requirements, not observed successes.
 
 The claim “this reader will retain the distinction independently next month” concerns a person. S1 returns an outside-use finding. Assess retention under HCD.13 if it is the question.
 

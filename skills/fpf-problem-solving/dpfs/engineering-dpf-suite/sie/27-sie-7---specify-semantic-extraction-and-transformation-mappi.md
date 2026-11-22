@@ -45,7 +45,7 @@ Specify semantic mapping rules separately from their implementation. Bind every 
 6. **Specify cardinality and identity preservation.** State one-to-one, one-to-many, many-to-one, or conditional behavior; keep source identifiers and disposition references when rows combine or split.
 7. **Specify defaults and errors.** Distinguish absent, unknown, not applicable, inaccessible, stale, incompatible, unresolved, source failure, and actual zero or empty value. Permit a default only when the contract and semantic warrant state its meaning and loss.
 8. **State information loss and forbidden reuse.** Name omitted distinctions, coarsening, precision, interval, provenance, or conflict and the use for which the loss is accepted.
-9. **Provide trace and examples.** Give stable rule identifiers, input-to-output trace positions, positive examples, boundary and counterexamples, and expected negative branches.
+9. **Specify trace and expected behaviour.** Identify each rule and how to trace its input to its output. State the expected response where different inputs or source conditions could change a promised use. Use a discriminating example, boundary or error case when it makes the required behaviour testable.
 10. **Define implementation conformance and reopen.** State observable behavior an implementation must match and source, premise, contract, or target changes that invalidate the rule.
 
 #### SIE.7:4.2 - Record the Result
@@ -60,7 +60,7 @@ Specify semantic mapping rules separately from their implementation. Bind every 
 | cardinality and identifiers | source-target multiplicity, split/merge behavior, source-ID and premise preservation |
 | defaults and errors | distinguished states, permitted default and meaning, failure branches, quarantine or stop |
 | loss and trace | accepted/forbidden loss, provenance, rule and premise references, input-output trace |
-| examples and conformance | positive, boundary, negative/unlike examples, expected outputs, implementation predicate, reopen |
+| examples and conformance | observable input-to-output behaviour over the promised branches, discriminating cases where needed, reopen conditions |
 
 #### SIE.7:4.3 - What Changes in Practice
 
@@ -76,7 +76,7 @@ The AP242/QIF package needs a row set for the configuration-bound inspection que
 | `MAP-SIE-APQ-02` | For each accepted `SIE.4` plan-characteristic-concerns-feature row, join exact source identifiers only under the referenced `SIE.5` feature disposition. Preserve AP242 and QIF IDs and issuers. |
 | `MAP-SIE-APQ-03` | Compose AP242 definition/effectivity and QIF plan/result claims through the referenced `SIE.6` result. Emit compatible qualified claims, explicit contradiction, non-comparability, or unresolved branches; never overwrite. |
 | `MAP-SIE-APQ-04` | Convert units only through the contract-approved code/unit table and retain original value, unit, conversion rule, precision, and loss. An unknown unit stops that result row. |
-| `MAP-SIE-APQ-05` | Return unmatched AP242 feature, unmatched QIF characteristic, stale result, missing provenance, and source-error states distinctly. No state defaults to an accepted match. |
+| `MAP-SIE-APQ-05` | Return unmatched AP242 feature, unmatched QIF characteristic, stale result, missing provenance, and source-error states distinctly. When both objects are identified, distinguish a plan excerpt that leaves their assignment unknown from a complete governing plan that establishes they have no such assignment at this revision and effectivity. No state defaults to an accepted match. |
 
 Positive examples cover one known configuration/feature/characteristic/result chain. Boundary cases cover one-to-many characteristics and repeated results. Negative cases cover an obsolete revision, incompatible feature, unresolved identity, unknown unit, contradictory result status, and absent QIF plan. A SQL view, R2RML mapping, QVT transformation, or application code may implement the rules; none changes the specification without reopening the affected rule.
 
@@ -101,7 +101,7 @@ Positive examples cover one known configuration/feature/characteristic/result ch
 - [ ] Absent, unknown, not applicable, inaccessible, stale, incompatible, unresolved, source failure, zero, and empty values remain distinguishable where relevant.
 - [ ] Defaults have a semantic warrant, accepted loss, and test.
 - [ ] Information loss, forbidden reuse, provenance, and input-output trace are inspectable.
-- [ ] Positive, boundary, negative, and unlike cases define observable implementation conformance.
+- [ ] The specification defines observable conformance for the promised branches, including boundary, error or changed conditions where they affect a receiving use.
 - [ ] The specification claims no running pipeline, service level, or receiving-use validation.
 
 ### SIE.7:8 - Common Anti-Patterns and How to Avoid Them

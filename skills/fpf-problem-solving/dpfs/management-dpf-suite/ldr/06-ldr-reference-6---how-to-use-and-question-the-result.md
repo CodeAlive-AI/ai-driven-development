@@ -1,6 +1,6 @@
 ## LDR.Reference:6 - How to use and question the result
 
-Read the Solution and worked case of the pattern that answers the actual difficulty. Use its direct suppliers for a missing professional result. Carry out the chosen contribution and follow it to its receiver. A declined proposal, a protected current arrangement or a precise unresolved condition can be the warranted outcome.
+Start with the Solution of the pattern that answers the actual difficulty. A worked case can clarify a consequential choice. Carry its reasoning across to your own work where the conditions on which it depends hold. Use its direct suppliers for a missing professional result. Carry out the chosen contribution and follow it to its receiver. A declined proposal, a protected current arrangement or a precise unresolved condition can be the warranted outcome.
 
 The examples are constructed situations. Their stipulated capacities, rules, acceptances and technical results show how the methods work and which changes alter the conclusion.
 

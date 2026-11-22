@@ -55,7 +55,7 @@ When several providers contribute, identify their different coverage and any jus
 
 #### CGOV.10:4.4 - Read what was concluded
 
-Recover the conclusion's subject, criteria, period and strength in ordinary terms. Distinguish an adverse finding, a qualified conclusion, inability to conclude and a matter outside the engagement. A favourable opinion on one subject leaves open any question outside its scope.
+Recover the opinion’s subject, criteria, period and strength. Distinguish an adverse finding, a qualified conclusion, inability to conclude and a matter outside the engagement. When the board asks a different question, identify what the opinion contributes to it. If an issued opinion satisfies a renewal condition, the signed opinion can establish issuance. If the condition requires receipt by a named participant by a given date, establish that receipt. A copy bearing a sufficient receipt record may establish both events. A judgement about a different activity requires a premise that connects the opinion to that activity.
 
 Carry assumptions and limitations into the board paper or other receiving communication. Ask the provider to explain a material ambiguity. Neither a short summary nor a confidence label should enlarge the report's scope.
 
@@ -83,7 +83,7 @@ The supplied case has no duty to obtain a second audit for this investment. If a
 
 A new payment control was designed last week. An independent reviewer examined its design against stated criteria and identified no design deficiency within that scope. The board asks whether the control operated effectively for the previous quarter.
 
-The requested operating period predates the control. The design result cannot answer that question. Recover the prior arrangement and its available evidence if that historical question matters; use the new design result for its own purpose.
+This control first came into existence last week, after the quarter ended. Its date answers the board’s literal question: this control could not have operated in that quarter. Whether the payments then had equivalent protection is a different inquiry. Trace the arrangement actually in force and the evidence of its operation if the board asks about that protection. Use the new review for the design it examined.
 
 For future operation, the responsible participants must put the control into effect and generate whatever observations the selected assurance question requires. A fixed waiting period alone supplies no result. If the immediate decision concerns a bounded introduction under known conditions, evaluate that decision.
 

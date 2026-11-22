@@ -21,17 +21,17 @@ Real episodes have greater practical relevance and less convenient labels. Whole
 
 #### KCAE.EVAL:4.1 - State the decision and serious alternatives
 
-Recover the receiving use, population, corpus editions, permitted data flows and adoption consequence from KCAE.USE. Choose a credible comparison arrangement that a capable practitioner would use; include the incumbent with its current limits when one exists. It may be manual reading, exact/lexical search, a current hybrid retriever, an established long-context workflow or a competent existing agent. A weak toy baseline makes an addition easy to justify and hard to trust.
+Recover the receiving use, population, corpus editions, permitted data flows and adoption consequence from KCAE.USE. For a comparison, choose a credible arrangement a capable practitioner would use, including the incumbent where relevant. A threshold question can be settled by direct evidence or a bound on the arrangement in question. Depending on the work, a credible alternative may be manual reading, exact or lexical search, a hybrid retriever, an established long-context workflow or a competent existing agent. A weak toy baseline makes an addition easy to justify and hard to trust.
 
-State the proposed difference and the expected useful change. Compare complete feasible arrangements, including required extraction, source reading, assessment and delivery. Keep common components, instructions and sources equal when the question is one component's contribution; disclose changes when equality is impossible. A provider comparison confounded by different prompts or missing tools does not isolate the provider's effect.
+For a gain attributed to a change, state the proposed difference and compare complete feasible arrangements, including the required extraction, source reading, assessment and delivery. Keep common components, instructions and sources equal when the question is one component's contribution; disclose changes when equality is impossible. A provider comparison confounded by different prompts or missing tools does not isolate the provider's effect.
 
 Choose whether the decision requires better useful results at a fixed resource boundary, lower cost at a required quality, or a transparent tradeoff. Keep non-negotiable permission and safety constraints separate from preferences; cheap unauthorized processing is not a feasible alternative.
 
 #### KCAE.EVAL:4.2 - Build episodes that can defeat the design
 
-Use actual receiving episodes where access is permitted, or independently construct realistic cases from work conditions. Retain the original request, relevant source basis, available case facts and expected kind of useful result. Separate cases used to design queries, tune thresholds or write features from cases used to assess them. Prevent near-duplicate leakage across that boundary.
+Use episodes when the remaining question concerns what readers or services can actually obtain, when they can distinguish the competing arrangements, or when an episode is itself required. An established access restriction or a reliable upper bound on service time may already settle its corresponding question. For an empirical evaluation, use actual episodes where access permits, or independently construct cases representing the intended conditions. Retain the original request, relevant sources, case facts and required result. To estimate performance on new work, keep evaluation cases independent of those used to design queries or tune thresholds, accounting for near duplicates.
 
-Include cases with unknown source names, cross-language wording, useful non-pattern prose, distant prerequisites, misleading vocabulary, an important exception, missing facts and no useful corpus contribution. Include naturally answerless cases from the receiving work, not only deliberately irrelevant collections. Add source changes, stale indexes, revoked access and partial availability when the intended installation must handle them. Select proportions from the expected workload or report separate strata; a hand-balanced set is not automatically representative.
+When work episodes or test cases are needed, select challenges from the uses the evaluation must cover. They can include unknown source names, cross-language wording, useful non-pattern prose, distant prerequisites, misleading vocabulary, an important exception, missing facts and no useful corpus contribution. Where the service promises to recognize that it cannot help, include naturally answerless cases from the receiving work. Add source changes, stale indexes, revoked access and partial availability when the intended installation must handle them. Select proportions from the expected workload or report separate strata; a hand-balanced set is not automatically representative.
 
 Gold material may be incomplete. Pool candidates from several credible routes and obtain source-based judgements from appropriate readers; sample beyond the pool where practical. Record uncertainty about unjudged material. Do not label every unpooled passage irrelevant. When several answers can serve the work, judge sufficiency and conditions rather than exact string agreement with one preferred answer.
 
@@ -41,9 +41,9 @@ For a broad synthesis, vary the underlying evidence independently of its present
 
 #### KCAE.EVAL:4.3 - Observe the complete useful result and full cost
 
-Have the intended recipient or a qualified judge assess what the arrangement enabled: a correct explanation, an applicable conditional proposal, a necessary missing-fact question, a justified no-use result or a completed application. Also inspect unsupported advice, omitted exceptions, false absence claims and unusable deliveries. Source relevance, recommendation worth and actual work benefit remain distinct outcomes.
+For performance in use, examine what the arrangement enabled the recipient to obtain. A correct explanation, a usable conditional proposal, the missing fact that determines the next action or a completed application can each be the required result. Use an existing adequate record or obtain the judgement of the recipient or a qualified assessor. For a commission requiring independent acceptance, establish the agreed decision by an assessor who meets the applicable authority and independence conditions. An earlier acceptance can suffice when its scope and terms cover this use. Examine omissions or unsupported advice that could change that use. If the order concerns learning, identify which source or route the practitioner chose and what the aid supplied. An improvement attributed to the aid requires a suitable comparison under the relevant assistance conditions. A delivered answer can complete an order for advice.
 
-Measure cost over the selected horizon: preparation, extraction repair, indexing, storage, refresh, all model/tool calls, latency distribution, main-context consumption, human reading, interruptions, follow-up questions, application and recovery. Report total model input separately from residual main-window capacity. Report medians together with tails or failures where those change adoption. Support empirical claims with observations. State the assumptions behind any estimated costs or results.
+Where costs enter the decision, measure or bound the relevant costs over its horizon, including preparation, extraction repair, indexing, storage, refresh, all model/tool calls, latency distribution, main-context consumption, human reading, interruptions, follow-up questions, application and recovery. Report total model input separately from residual main-window capacity. Report medians together with tails or failures where those change adoption. Support empirical claims with observations. State the assumptions behind any estimated costs or results.
 
 For paired episodes, compare alternatives on the same case where this does not contaminate the reader. Randomize order or use separate recipients when the first exposure teaches the answer. Keep the judge's criteria independent of the preferred implementation. If a model judges outputs, test its agreement and failure cases against source-grounded human or otherwise competent judgement; do not assume self-evaluation is neutral.
 
@@ -51,7 +51,7 @@ Return distributions or uncertainty appropriate to the data and decision. A hand
 
 #### KCAE.EVAL:4.4 - Isolate the failed contribution before repairing
 
-Use controlled substitutions after the whole comparison identifies a consequential question:
+When a failure still needs locating, use a controlled substitution that can distinguish its possible sources. For example, compare the following changes under the conditions that matter to the receiving work.
 
 - Supply adequate source candidates manually to the same assessor and delivery path. If the result recovers, finding was a limiting factor; if not, downstream work remains.
 - Hold the candidate pool and source context fixed while comparing assessors. This separates candidate availability from ranking and condition judgement.
@@ -60,15 +60,15 @@ Use controlled substitutions after the whole comparison identifies a consequenti
 - Replay a controlled source change through build, persistence, reload and use. Compare the affected result with unchanged controls.
 - Hold inquiry content fixed while changing the encounter occasion. Observe interruption and uptake, not merely whether a notification was sent.
 
-These substitutions diagnose an operation under controlled inputs. They do not prove that the repaired whole will produce those inputs naturally. Re-run the relevant complete use after repair. Components can interact: a larger pool can improve recall and overwhelm an assessor, while a more selective delivery can save context and remove a decisive exception. Do not add separate component gains as if they were independent benefits.
+These substitutions diagnose an operation under controlled inputs. They do not prove that the repaired whole will produce those inputs naturally. Follow the changed result back to the receiving use. Reuse a still applicable guarantee or observation. Re-run that use when its outcome remains open or a new run was commissioned. Components can interact: a larger pool can improve recall and overwhelm an assessor, while a more selective delivery can save context and remove a decisive exception. Do not add separate component gains as if they were independent benefits.
 
-For encounter recovery, interrupt the implementation after claiming work, during execution and after committing the result. Present a concurrent duplicate and a later completed duplicate. Observe whether unfinished work has an actual continuation, whether a stale owner can publish, and whether an external effect can be repeated or remains unknown. A constructed state trace can expose a missing branch; it does not establish a real database's atomicity, scheduler behavior or recipient idempotency. Keep those implementation questions separate from a classifier's inquiry quality.
+For an encounter implemented with retried events and stored claims, interrupt the implementation after claiming work, during execution and after committing the result. Present a concurrent duplicate and a later completed duplicate. Observe whether unfinished work has an actual continuation, whether a stale owner can publish, and whether an external effect can be repeated or remains unknown. A constructed state trace can expose a missing branch; it does not establish a real database's atomicity, scheduler behavior or recipient idempotency. Keep those implementation questions separate from a classifier's inquiry quality.
 
 #### KCAE.EVAL:4.5 - Qualify scores for the decision they control
 
 For retrieval, recall over known relevant units, rank-sensitive measures and coverage can help diagnose finding. Their meaning depends on the judgement set. For screening, inspect false positives, false negatives, abstentions and unknown inputs at the proposed threshold. For claimed probabilities, test calibration on the relevant population and scoring event. For typed group choice, retain its within-group meaning; test logical relations among questions separately when the application depends on them.
 
-Choose thresholds on development data using the costs of missed and incorrect actions. Freeze them for the held-out comparison, or account explicitly for adaptive tuning. Include near-boundary cases and no-use outcomes. A threshold that filters deliberately wrong repositories may fail on naturally difficult questions in the right repository. A calibrated score cannot create missing source evidence or domain permission.
+For a threshold chosen from performance data, use the costs of missed and incorrect actions on the development set. A threshold prescribed by the receiving agreement is an input to the evaluation. Freeze them for the held-out comparison, or account explicitly for adaptive tuning. Include near-boundary cases and no-use outcomes. A threshold that filters deliberately wrong repositories may fail on naturally difficult questions in the right repository. A calibrated score cannot create missing source evidence or domain permission.
 
 Test the identity preserved across ranking, screening and return. Include a case where the ranking winner fails the adequacy threshold while another shortlisted candidate passes. The output must qualify its own candidate, choose a separately qualified alternative, or abstain; the maximum over the pool is not the returned candidate's adequacy. Also test a high-scoring candidate with a contradicted necessary source condition. These cases distinguish a working score interface from a correctly connected decision.
 
@@ -92,7 +92,7 @@ Authors tend to select examples their design can answer and count improvement wh
 
 ### KCAE.EVAL:7 - Conformance Checklist
 
-Does the comparison answer a real adoption or repair decision? Would a capable practitioner use the comparison arrangement in this setting? Are sources, episodes, recipients and costs comparable? Could the cases expose an unknown or absent answer? Are development and evaluation separated? Can the result distinguish finding, assessment, delivery and application? Have component repairs returned to whole use? Are evidence reach and refresh conditions explicit?
+What decision about adoption, assurance or repair does the evidence settle? For a comparative claim, are the alternatives credible and their results and costs comparable? If new-use performance is at issue, could the evaluation expose a missing or unsupported answer, and was it independent of the development cases? If independent acceptance was commissioned, is the required decision established for this use? If a particular operation failed, does the evidence identify where intervention can help? After a repair, establish its effect on the receiving use. State which conditions the conclusion covers and what change would reopen it.
 
 ### KCAE.EVAL:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -104,7 +104,7 @@ Engineering choices become revisable on evidence relevant to the receiving work.
 
 ### KCAE.EVAL:10 - Architectural Rationale
 
-Whole-use comparison determines whether the arrangement is worth having. Controlled component substitutions determine where to intervene. Separating those questions avoids both an unexplained aggregate score and components that each perform well but fail together.
+A requirement can be decided directly from evidence about the whole arrangement. A claim of advantage depends on what another feasible arrangement would provide. Where a consequential failure still has several possible causes, controlled substitutions can identify which operation to change. Return that repair to the result its recipient needs.
 
 ### KCAE.EVAL:11 - SoTA-Echoing
 

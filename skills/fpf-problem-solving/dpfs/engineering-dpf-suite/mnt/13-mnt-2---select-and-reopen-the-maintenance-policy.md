@@ -23,7 +23,7 @@ Prevention can avoid an expensive failure but consume useful component life and 
 
 Start from the required function and a failure account sufficient to distinguish policy alternatives. Identify the loss of function, credible mechanisms and consequences. When one policy covers several mechanisms, check each mechanism that could justify a different task. Retain uncertainty where it matters rather than inventing a lifetime distribution from sparse events.
 
-Construct the plausible task alternatives. Use the table to compare when each task family can work and what can defeat it.
+If the choice is open, construct plausible alternatives. For an assignment to assess one prescribed policy, test its requirements directly. Compare other policies when the decision calls for a recommendation, a better choice or a conclusion about which alternatives can work. Use the table to compare when each task family can work and what can defeat it.
 
 | Task family | What can make it useful | What can defeat it |
 | --- | --- | --- |
@@ -41,6 +41,8 @@ Compare alternatives using the receiving use's relevant values: loss of service,
 
 State the chosen policy in actionable terms. Name the applicable population or configuration, task, trigger or interval basis, relevant support assumptions, response to an out-of-scope condition and the evidence or changed use that would reopen it. Where an operative requirement fixes a task, preserve its current force. A separate merits appraisal may support a request to the authorized rule holder; it does not authorize unilateral relaxation.
 
+For a guarantee across installations, ask whether the chosen rule can be followed with the observations, authority and support available by each decision time. Two different alarms can call for separate work by the same specialist in one window. A successful response to either alarm alone settles the individual case. Whether both can be served depends on which alarms may coincide, what work can serve both and what time is available. A common operating limit can settle the policy question across a family before any member has failed.
+
 #### MNT.2:4.1 - Turn a task family into a usable policy
 
 Use an adequate existing task and trigger directly. When they are unsettled, construct candidate rules at the resolution needed for the decision. Specify what observation, age, usage or opportunity starts the response, when that information becomes available, what action follows and what functioning is expected afterwards. A condition-based candidate includes its observation schedule and response; a scheduled replacement includes what happens if failure occurs first.
@@ -49,7 +51,7 @@ Apply each candidate to the same supported failure and operating account. Follow
 
 Derive the consequences of those histories over a common horizon. Count functioning obtained, losses before detection or restoration, repeated task demand and support constraints. Weight possible histories only where the probability basis supports it; otherwise compare the supported bounds or scenarios. Keep binding requirements and unacceptable consequences visible when comparing burden. Use [FPF C.11](../../../sections/09-part-c---kernel-extension-specifications/21-c-11---decision-theory.md) with the resulting alternatives and comparison basis to select a policy, retain several alternatives or return the unsettled choice.
 
-For a condition-based candidate, place detection and response on one time basis. Let `W` be a supported lower bound on the warning from the proposed detectable condition to unacceptable functioning under the intended duty. Let `I` bound the wait to the next observation and `L` bound the elapsed time for subsequent interpretation, support, access and intervention, including the selected uncertainty allowance. Where that bounded timing model applies, test `I + L <= W`. Derive elapsed `L` from the sequence of tasks and the work that can overlap through [MNT.5](16-mnt-5---prepare-maintenance-service-capability-spares-tools.md) and MNT.7. Shorter sampling, an earlier detectable trigger or prepared support are different candidate changes; each needs its own measurement or feasibility basis. A timing fit still needs adequate detection and an effective response.
+For a condition-based candidate, place detection and response on one time basis. Let `W` be a supported lower bound on the warning from the proposed detectable condition to unacceptable functioning under the intended duty. Let `I` bound the wait to the next observation and `L` bound the elapsed time for subsequent interpretation, support, access and intervention, including the selected uncertainty allowance. If `I + L <= W`, the response finishes within the warning on every equipment history covered by those bounds. If the sum exceeds `W`, compare the wait and subsequent response with the warning on the same admissible history. One history that finishes late defeats the timing guarantee for this policy. To rule out a timely response even once, exclude it on every admissible history. To rule out the order, show why each policy it permits fails the required timing or another binding condition. Derive elapsed `L` from the sequence of tasks and the work that can overlap through [MNT.5](16-mnt-5---prepare-maintenance-service-capability-spares-tools.md) and MNT.7. Shorter sampling, an earlier detectable trigger or prepared support are different candidate changes; each needs its own measurement or feasibility basis. A timing fit still needs adequate detection and an effective response.
 
 For a hidden protective function, relate the test interval to the period during which the failed function could remain undiscovered and the consequences of a demand during that period. The test's coverage, any exposure it creates and the relevant failure-and-demand account determine whether the interval is acceptable. Continuing normal production supplies no observation of that protective function.
 
@@ -67,7 +69,7 @@ When the forecasting or response rule itself needs development, use FPF C.40:4.7
 
 If model fitting is useful, one implementation tunes the prognostic model using a loss derived from the interventions selected by a chosen policy. Keep that policy's windows and consequences with the fitted model. Such tuning can improve maintenance decisions while worsening a prediction score; any required probability calibration claim still needs its own support. Use [MNT.3](14-mnt-3---establish-degradation-and-failure-evidence-for-maint.md) for a supported failure and task-effect account, including lifetimes censored by replacement. Keep consequences estimated through that account distinct from outcomes observed in maintenance.
 
-Select a feasible change when the current observations, applicable model or reasoned expert estimate make its expected benefit worth its complete burden under the relevant uncertainty. Use ranges, scenarios or a qualitative comparison when they are sufficient. Return the policy and the next executable preparation or intervention decision, with the assumptions whose change could reverse the choice. New data or a trial are needed only when their attainable contribution warrants the burden; a reasonable estimate can justify acting before an improvement has been observed.
+Select a feasible change when the current observations, applicable model or reasoned expert estimate make its expected benefit worth its complete burden under the relevant uncertainty. Use ranges, scenarios or a qualitative comparison when they are sufficient. Return the assessment or proposed rule at the scope commissioned, with the assumptions whose change could reverse the choice. For an implementation decision, establish the authority, preparation and intervention the selected arrangement requires. A reasonable estimate can justify acting before the improvement is observed. Seek additional evidence for this decision when its attainable contribution warrants the burden. An agreed trial can also be a deliverable in its own right.
 
 #### MNT.2:4.2 - Compare recurring age-replacement costs when that model fits
 
@@ -84,7 +86,7 @@ Compare feasible ages, including continued operation to failure where admissible
 
 ### MNT.2:5 - Archetypal Grounding
 
-For PS17, the constructed condition history supports a bearing-related deterioration concern. The team retains a condition-informed policy for this failure family because the interpreted signal can support a planned response in the stated use. The present recommendation still depends on whether the needed support and access are available; an alarm alone does not establish that replacement can fit the next outage.
+For PS17, the constructed condition history supports a bearing-related deterioration concern. For this configuration and duty, suppose the existing failure and response evidence also covers the task’s detection, warning and response requirements. The team can retain the condition-informed policy in that range. The reading on PS17 can trigger that policy here. Extending it to other installations requires grounds for the conditions on which it relies there. The present recommendation still depends on whether the needed support and access are available; an alarm alone does not establish that replacement can fit the next outage.
 
 Consider instead a cheap, accessible indicator lamp whose failure is obvious and has no protection role. If its loss and replacement demand are acceptable, deliberate run-to-failure can be a sound policy. Scheduling repeated intrusive replacement needs an additional gain to justify its burden.
 
@@ -102,9 +104,9 @@ Now change only corrective cost to 3. The rates become `0.5`, `2.5/7`, approxima
 
 #### MNT.2:5.2 - Construct a condition-response timing candidate
 
-In another constructed case, the supported warning bound `W` is 8 hours and the subsequent response demand `L`, including its uncertainty allowance, is 5 hours. Observation every 4 hours gives a bound of `4 + 5 = 9` hours and cannot meet that warning. Every 2 hours gives `2 + 5 = 7`, so it passes this timing comparison. The remaining choice includes the burden of more frequent observation and the alternative of reducing response demand.
+In a constructed case the warning is at least 8 hours and the subsequent response takes at most 5 hours, including its allowance. With observations every 4 hours, suppose an admissible history has a 4-hour wait, a 5-hour response and an 8-hour warning. Completion takes 9 hours on that history, so this policy cannot guarantee a timely response. With observations every 2 hours the corresponding upper bound is `2 + 5 = 7` hours, sufficient throughout the stated range. Compare the burden of more frequent observation with the cost of shortening the response.
 
-If support delay raises `L` to 6.5 hours, the two-hour candidate no longer fits: `2 + 6.5 = 8.5`. Reconsider sampling, support or another admissible policy. The failure threshold has not moved, and the old timing result supplies no permission to extend use. These quantities illustrate construction from a supplied equipment model; they are not operating limits.
+Keeping the four-hour schedule can also be justified under different operating conditions. Suppose the only possible pairs of wait and response are (4, 4) and (3, 5) hours. Both finish in 8 hours, although the separate maxima still sum to 9. Conversely, if the two-hour policy can incur a 6.5-hour response after a full 2-hour wait with only 8 hours of warning, that history defeats its earlier guarantee. A revised upper estimate of 6.5 hours alone leaves that question open. Reconsider sampling, support or another permitted policy using the histories the equipment and service arrangement admit. The applicable operating permission still governs use.
 
 #### MNT.2:5.3 - Obtain a useful response from a conditional estimate
 
@@ -132,6 +134,8 @@ Breakdowns are conspicuous; unnecessary preventive work and failures introduced 
 Does the policy address a stated functioning loss and credible failure behaviour? Can the selected task detect, prevent, mitigate or restore the relevant failure in time? Are consequence, support and task-induced effects considered where they distinguish the alternatives? Is the chosen applicability and trigger usable by the intended practitioner?
 
 A retain decision can close the question. New trials, a complete failure model and numerical optimization are warranted only when their obtainable contribution changes this choice.
+
+If the engineer was asked to design a rule, can the recipient see which triggers, actions and limits the engineer selected and why they cover the commissioned use? A correct response to a trigger supplied by someone else can finish an order to apply the rule.
 
 ### MNT.2:8 - Common Anti-Patterns and How to Avoid Them
 

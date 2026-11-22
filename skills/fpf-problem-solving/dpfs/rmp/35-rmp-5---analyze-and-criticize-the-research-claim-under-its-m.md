@@ -6,7 +6,7 @@
 
 ### RMP.5:1 - Problem Frame
 
-Use this pattern to establish what claim a body of research material, an analysis or an emerging interpretation supports. Start from the proposed claim or the question the analysis is developing. Trace a consequential connection from the material through the analysis to the claim and examine which criticisms affect its support.
+Use this pattern to establish what claim a body of research material, an analysis or an emerging interpretation supports. Start from the proposed claim or the question the analysis is developing. Trace the material through the analysis to the claim. Where the claim relies on results together, establish how their connection supports it. Examine the criticisms that could affect the answer.
 
 A simulation may reproduce a reported curve while its relation to field failures remains untested. Several valid downstream readings may establish a pattern while leaving its cause unresolved. In each case, identify the result obtained and the evidence needed for the stronger interpretation.
 
@@ -44,7 +44,7 @@ Identify the claim, the material and the method it relies on. Use an adequate ex
 
 Specify the phenomenon, cases, population, setting, period or corpus that the claim concerns, the proposed relation and the conditions for its use. Distinguish description, interpretation, comparison, causal explanation and prediction when they require different evidence. If the claim emerged during analysis, identify when and how.
 
-Trace the connection needed to judge the claim.
+Start with a consequential connection. Before drawing the conclusion, follow the other premises it requires and show how they hold together. A record of one event can settle that event, and one counterexample can defeat a universal claim. To establish the elapsed time of an entire service from its stages, account for gaps, overlaps and repeated work under the actual arrangement, or use a qualified observation of the whole interval.
 
 | Connection | What to recover |
 | --- | --- |
@@ -63,13 +63,15 @@ Choose an analysis justified for the subject, material and inference. Use the cr
 | Research use | Practical analytical move | Criticism that can change the answer |
 | --- | --- | --- |
 | Quantitative or experimental estimate | Identify the target quantity, units of sampling or assignment and comparison. Report the estimated magnitude and its justified uncertainty, including relevant exclusions, multiple comparisons and choices made before or after seeing results. | Dependence, missing data, measurement and analytical choices can change the estimate or its interpretation. A significance label alone gives neither an estimate of effect size nor grounds for attributing a cause. |
-| Observational or field account | Relate observations to the sites, periods, selection and measurement conditions. State the pattern established. | Examine confounding, seasonality, selection and any missing comparison when attributing a cause. Repeated measurements of one site can describe variation at that site. Inference across independent sites needs evidence from those units. |
+| Observational or field account | Relate the findings to the units, sites, periods and selection. For a claim across sites, establish how those sites cover or represent the target and which observations share a source. | For an effect attributed to a cause, examine the comparison, selection, seasonality and confounding. Repeated measurements can establish a pattern for one site. An argument about other sites needs grounds for combining or carrying that result. |
 | Qualitative or reflexive interpretation | Develop the interpretation under the selected approach and theoretical commitments. Connect it to the research material, the researcher’s contribution and relevant discordant cases. | A theme may omit a different account or extend beyond what its extracts support. In reflexive thematic analysis, judge the interpretation by its coherence with the approach and its grounding in the material. |
 | Historical or source-critical account | Examine the dating, authenticity, provenance and purpose of the sources, their dependence and the sequence of events in question. | Copies may share one source. An archive’s survival and access conditions can explain a silence. A document may establish when a change occurred while leaving its cause open. Check material that could support a contrary chronology. |
 | Computational or model claim | Identify the target, derivation or implementation, data, environment, fitted quantities and relevant assumptions. Interpret the output for the stated target. | Reproducing an output can support a claim about the implemented calculation. Calibration, verification, sensitivity and validation for a field use each examine a different connection. |
 | Mixed inquiry | Analyze each component using its appropriate method and specify the relation claimed between the results. | Check dependence, meanings, targets and disagreements before combining results. Preserve a disagreement that changes what the components jointly support. |
 
 Apply the kind of criticism the claim needs. A descriptive estimate can answer a descriptive question. In a qualitative inquiry, establish the sampling, saturation or reliability criterion from the approach and question where it is relevant. Historical claims can be examined through surviving evidence. If a disciplinary criterion is still needed, identify the claim it limits and a competent source where one is available.
+
+For a finite population, classifications can bound an answer even when the records examined were selected because of a suspected problem. Suppose a complete period contains 40 distinct records. Four of 20 examined satisfy the criterion and the other 16 do not. Among the 20 unexamined records, any count from zero to 20 is possible on the evidence given. The total for the period is therefore 4 to 24. This establishes at least 10%, rules out at least 65% and leaves at least 50% open. Estimating a rate for a later period requires grounds relating the periods, their populations and selection. The past bounds stand without that prediction.
 
 #### RMP.5:4.3 - Criticize the consequential inference
 
@@ -181,7 +183,7 @@ Suppose the estimated contrast is 2 scale units, with an uncertainty interval fr
 
 Use the questions below to assess the claim under the applicable research method.
 
-- [ ] The proposed or emerging claim and a consequential connection to actual material can be identified.
+- [ ] The reader can recover how the actual material supports the proposed claim, including any relation among results needed for the whole conclusion. An adequate direct observation, bound or counterexample can supply the entire ground for the question it settles.
 - [ ] The target, relation, scope and use distinguish the descriptive, interpretive, causal or predictive claim actually made.
 - [ ] Supplied analysis is reused when its material, Method, assumptions and use remain adequate.
 - [ ] The account identifies consequential analytical choices, when they were made and any departure from the plan that affects the claim.

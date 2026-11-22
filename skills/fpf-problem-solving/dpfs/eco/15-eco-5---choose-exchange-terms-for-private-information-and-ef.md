@@ -23,7 +23,7 @@ Information has acquisition and verification costs. Incentives and risk sharing 
 
 Identify the information or action that matters and who can know or control it. Existing quality, intended use or financial condition may be privately known before agreement. Later maintenance, care or effort may be privately chosen. The same exchange can involve both. Evaluate separately whether changed payment terms affect an action and whether a choice reveals an existing fact.
 
-Identify the choices each party can make under the actual terms. They may disclose or withhold information, select an offer, decline, change effort, manipulate a measure, withdraw or seek new terms. Include the alternatives available to the participant, including ones the designer would prefer them not to take.
+Follow the desired work to whoever chooses the action and the proposed payment to whoever gains or loses from it. They may be different people. If a firm receives a quality bonus and a subcontractor chooses the care, establish how the firm's terms or supervision affect that choice. A comparison at firm level can suffice for a question about whether the firm accepts the offer. To predict the care taken, keep the subcontractor's available actions and consequences where they can change the answer. Include alternatives the designer might overlook, such as changing another job to improve a shared measure, declining, withdrawing or seeking new terms.
 
 #### ECO.5:4.2 - Construct terms from the choices they must change
 
@@ -94,7 +94,7 @@ A precise-looking calculation may conceal disputed probabilities, power or a bad
 
 ### ECO.5:7 - Conformance Checklist
 
-Which private fact or later action matters, and what do the terms imply for the participant’s available choices, including nonparticipation? Establish what the specified observation or enforcement arrangement can support. Identify any tie, infeasible term or unresolved condition and the assumptions on which a numerical comparison depends.
+Which private fact or later action matters, who can choose, and what do the terms imply for that participant's alternatives, including nonparticipation? Establish what the agreed observation and enforcement arrangements can support. For a proposed exchange, check the participation and action it requires of the other parties. A calculation about one choice can be returned on its own when that is what was requested. Identify any tie, infeasible term or open assumption that limits the conclusion.
 
 ### ECO.5:8 - Common Anti-Patterns and How to Avoid Them
 

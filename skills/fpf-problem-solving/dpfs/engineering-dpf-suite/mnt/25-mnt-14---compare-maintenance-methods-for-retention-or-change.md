@@ -7,7 +7,7 @@
 
 Use this pattern when an established way of doing maintenance may no longer be the best answer for the current failure, equipment or operating setting. A new predictive tool is proposed, or a once-useful inspection produces little actionable information.
 
-Compare the pertinent Methods and return a justified retain, revise, replace, branch or stop decision. Here a Method is the reusable way of obtaining a maintenance result; a software product or manual can support or describe it. A new trial is selected only when it can provide worthwhile attainable information.
+Compare the pertinent Methods and return a justified retain, revise, replace, branch or stop decision. Here a Method is the reusable way of obtaining a maintenance result; a software product or manual can support or describe it. For a discretionary trial, establish what it could settle and whether that is worth its cost. A separately commissioned trial carries its own obligation.
 
 ### MNT.14:2 - Problem
 
@@ -25,17 +25,19 @@ State the maintenance result and conditions for the comparison. Recover the fail
 
 Describe what would change in practice. Is the candidate a different task, a changed trigger, another diagnostic interpretation, a revised response rule or only a different description or software implementation? Keep those objects distinct when continuity, training or evaluation depends on them. A useful Method change should alter what the practitioner notices, decides, does, needs or obtains.
 
+To design a variant, work from the maintenance decision and choose which observation, interpretation, response or handoff must change and what the remainder of the method must still provide. Validate the proposed substitution against the whole task under its actual support conditions. A specialist can supply a diagnosis for this design. To credit the engineer with devising the diagnostic method itself, establish which diagnostic choices the engineer made. When only a comparison of two supplied methods was commissioned, their assessment can be the finished work.
+
 When a useful predictive alternative still has to be constructed, use [MNT.2:4.1.1](13-mnt-2---select-and-reopen-the-maintenance-policy.md#mnt2411---build-and-improve-a-predictive-maintenance-option) to connect the estimate, intervention rule and obtainable support. Bring back an executable option and its consequence comparison. This can include changing preparation or access, or improving the forecasting rule through the interventions it selects. Use existing alternatives directly when they suffice.
 
 Compare practical worth over a relevant horizon. Include preparation, acquisition, configuration, competence, interpretation, false responses, missed conditions, maintenance of the tool, supplier dependence and exit where they matter. Use [FPF C.11.MV](../../../sections/09-part-c---kernel-extension-specifications/25-c-11-mv---compare-the-worth-of-a-method-option.md) for the practical-worth comparison and [FPF A.3.1.MV](../../../sections/05-part-a---kernel-architecture-cluster/27-a-3-1-mv---construct-and-maintain-a-method-variant.md) when variant identity or maintenance of the repertoire needs that more general Method.
 
-Test the candidate against a consequential unlike case. A Method useful for a visible degradation trend may not expose a hidden protection failure. An online predictor may improve timing while remaining unusable where the support lead time is longer than its warning. These differences can justify branching the repertoire instead of replacing one Method everywhere.
+Establish which installations and failure modes the decision covers. For one installation a supported comparison there can settle the choice. For a policy that must work in every covered installation and failure mode, establish why the Method works throughout that range. An unlike case can expose a condition that calls for a different Method. A successful trial supports the wider policy when an argument connects its conditions and result to the other installations and failure modes. For a policy judged by an average or a service level, justify the population, observations and inference for that measure. A Method useful for a visible degradation trend may not expose a hidden protection failure. An online predictor may improve timing while remaining unusable where the support lead time is longer than its warning. These differences can justify branching the repertoire instead of replacing one Method everywhere.
 
-Choose a feasible change when current observations, an applicable model or a reasoned expert estimate make its expected improvement worth the transition and continuing burden. Name the first executable move and obtain the support it needs. A sufficient comparison can justify beginning the change before its eventual benefit has been observed; retain the distinction between that expected benefit and the outcome subsequently obtained.
+Choose a feasible change when current observations, an applicable model or a reasoned expert estimate make its expected improvement worth the transition and continuing burden. For a recommendation, return the proposed move and the support on which it depends. When authorized to put the change into operation, obtain that support and carry out the agreed work. A sufficient comparison can justify beginning the change before its eventual benefit has been observed; retain the distinction between that expected benefit and the outcome subsequently obtained.
 
 Use existing evidence first. If it establishes that the candidate cannot support the needed response, reject it for that use without a trial. If it supports retaining the current Method, return that decision. When an uncertainty could change the choice, assess what a feasible trial or analysis could distinguish and the whole burden of obtaining that result.
 
-Select the supported continuation. State the changed or retained Method and its applicability, the description or tool that will carry it, any support the transition needs and the condition for reopening the choice. A selected change remains a proposal until performed. Claims about improved maintenance outcomes require evidence at the relevant use, not just successful installation of a tool.
+Select the supported continuation. State the changed or retained Method and its applicability, the description or tool that will carry it, any support the transition needs and the condition for reopening the choice. Establish when an authorized decision makes a changed rule effective. Adoption can settle which rule governs the next job before anyone has performed that job. For actual use, establish what the performer did. Claims about improved maintenance outcomes require evidence at the relevant use, not just successful installation of a tool.
 
 Refresh selectively when a failure, operating condition, support arrangement or answer-changing source result changes. An annual reminder can prompt attention, but currentness is established by the comparison that matters, not a date stamp.
 
@@ -57,13 +59,15 @@ Technology labels and benchmark accuracy favour visible novelty. Familiarity fav
 
 Are the compared Methods and their practical differences identifiable? Do they answer the same maintenance question under comparable conditions? Are their differing implementation, transition and continuing burdens compared where material? Does the decision preserve unlike uses through an appropriate retain, branch or replacement result?
 
-Any trial has an attainable decision-changing purpose. A supported comparison can close without new experimentation or adoption.
+A discretionary trial has an attainable purpose worth its burden. A supported comparison can close while a separately required trial or adoption decision remains due.
+
+A research finding about a laboratory result can establish which assumption to withdraw. For example, if the mechanism is established on the bench but its transfer to service is open, that result alone cannot justify lengthening the service interval. The engineer can still decide the interval from sufficient field evidence and the applicable maintenance criterion. Return to [RMP.Application:1.6](../../rmp/42-rmp-application-1---app-rmp-01-pump-p4-accelerated-seal-evid.md#rmpapplication16---from-a-corpus-answer-to-the-exact-model-return) when the commissioning question concerns the reach of the research finding.
 
 ### MNT.14:8 - Common Anti-Patterns and How to Avoid Them
 
 A higher model score is treated as a better maintenance Method. Follow the prediction through interpretation, support and actual response. A software upgrade is called a Method change without an action-changing difference. State what the practitioner does differently.
 
-A comparison ends only after a trial because the template requires one. Use current evidence when it settles the choice; select a trial only for the remaining worthwhile uncertainty.
+A template asks for a trial after the available evidence has settled the choice. Return the comparison and explain what a discretionary trial could still contribute. If the commission separately requires a trial, carry it out on its agreed terms.
 
 ### MNT.14:9 - Consequences
 

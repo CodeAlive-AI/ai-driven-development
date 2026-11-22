@@ -47,7 +47,7 @@ Use the undertaking and the available evidence of work to establish which result
 
 Choosing to keep a practice leaves its provision to be established. Ending a grant may leave obligations to receivers. Use sufficient evidence from A.3.1.MI or another source, including evidence of non-use or adverse results. Reopen the introduction only if its evidence leaves the present question unresolved.
 
-Use an ordinary case and, where it could expose a consequential dependency, a relevant variation. For example, a specialist may be absent, an input ambiguous, a source changed or two demands simultaneous. Use an existing account when it already establishes the condition that matters.
+Start with what the recipient relies on continuing. A record of ordinary work may show an existing dependency. Terms of a service or a proposed design can establish what must be available for future work. Examine a variation when it could reveal a condition the current grounds leave open. For example, a specialist may be absent, an input ambiguous, a source changed or two demands simultaneous. Use an existing account when it already establishes the condition that matters.
 
 Trace the actual contributions on which the work relies. They might include settling a difficult judgement, restoring access, selecting a method variant, correcting an obsolete instruction, answering a late question or authorizing an exception. Establish who supplied each relevant contribution and who could supply it under the proposed conditions.
 
@@ -69,15 +69,15 @@ Continued specialist provision can be preferable to local acquisition. A qualifi
 
 Compare alternatives against the promised result. A service can supply a specialist answer. For a promise of independent later performance, establish what the recipient can already do under the required conditions. Arrange learning or demonstration where suitable existing evidence leaves a relevant gap. Use IS.3 for the strategy and full work comparison when continuation calls for a new arrangement.
 
-#### IS.5:4.3 - Make transfer a performed receiving connection
+#### IS.5:4.3 - Establish what must pass to the successor and the receiver
 
-For a planned transfer, identify the contribution to move, what the successor needs to do and what the receiver needs from it. Include material exceptions, unfinished cases and the grounds of the current qualification. Delivery of a folder establishes a material handover. A claim of transferred practice requires evidence about the successor’s contribution.
+For a planned transfer, identify the contribution to move, what the successor needs to do and what the receiver needs from it. Include material exceptions, unfinished cases and the grounds of the current qualification. Establish what is being transferred. An authorized appointment can transfer responsibility before the first request. Delivery of the agreed files may complete a handover of materials. An undertaking to keep a service working also needs a usable connection between those who now provide and receive each necessary contribution.
 
-Establish whether the successor can provide a representative contribution under the intended conditions. Use a sufficient observed case if one exists. Where demonstration is still needed, arrange one with the required access and authority. For a completed transfer, establish that the successor supplied the promised result and that it reached the receiver in usable form. If subsequent use matters to the claim, establish what the receiver did with it. In source review, the successor needs to obtain the relevant source, compare it and return an interpretable judgement in time.
+For a promise of continuing service, establish what the successor can provide across the requests and combinations the undertaking covers. Existing arrangements or previous work may establish that. If a demonstration would resolve a remaining question, arrange one with the necessary access and authority. If the undertaking includes the successor’s first delivery, establish that the promised result reached the receiver as agreed. If the question concerns subsequent use, establish what the receiver did with it. For example, a source-review service may owe a comparison and an interpretable judgement by the release deadline.
 
 Identify any continuing dependence on the old provider. A planned overlap may be appropriate. If the outgoing provider still performs the decisive work, qualify the claim that the successor has taken it over. Use HCD if a person needs to learn an operation. Obtain missing permission, staffing, protected time or access from an appropriate source. The ability to perform does not itself supply authority or an absent historical record.
 
-Establish who is responsible for late questions from earlier work. Use the old provider’s surviving obligation only where it can still be met. Where the obligation must continue, obtain a successor who has accepted it and can receive the open cases. Otherwise establish their authorized disposition or report the unresolved obligation. Use an adequate OCE.11 coexistence or exit arrangement when the change is organizational.
+For late questions from earlier work, establish which obligations the governing terms leave with the outgoing provider and which an authorized change transfers. For obligations that continue, arrange a provider able and authorized to take the questions and complete the work. Otherwise establish their authorized disposition or report the unresolved obligation. Use an adequate OCE.11 coexistence or exit arrangement when the change is organizational.
 
 #### IS.5:4.4 - Qualify ordinary use and maintain the contributions that can change
 
@@ -89,7 +89,7 @@ Provide a correction route proportionate to the consequential change. The perfor
 
 Different contributions need different maintenance. A target-specific explanation can become obsolete when the target Method changes. A local access instruction can fail after a software change. A support strategy can become unsuitable when recipient preparation or workload changes. A source of research evidence can change the claim about why the practice works. Establish which claim or provision the change affects. Make an authorized change within your remit or take the open question to the relevant holder.
 
-Where the organization needs a continuing capability to arrange such help, distinguish that capability from the supported subject capability. Its performers must be able to recognize implementation difficulties, obtain qualified contributions and arrange actual support in later cases. Use HCD for any human acquisition required. Establish the organization’s continuing contribution from representative work and the conditions that enable it.
+Where the organization needs a continuing capability to arrange such help, distinguish that capability from the supported subject capability. Its performers must be able to recognize implementation difficulties, obtain qualified contributions and arrange actual support in later cases. Use HCD for any human acquisition required. For a prospective assignment, establish how qualified people, effective authority, available means and their arrangement can supply the service across the work promised. Use relevant existing work when it supplies part of those grounds. For a claim about what the organization delivered, examine the work actually done.
 
 #### IS.5:4.5 - Extend through changed conditions, not through a success label
 
@@ -129,7 +129,7 @@ Harbor Design has introduced source-revision comparison. Four analysts already p
 
 The first proposal is to close support after a final webinar. Following actual use changes the decision: analysts do not know how to resolve an inaccessible superseded source, and the specialist has answered three such questions privately. The ordinary practice therefore depends on source recovery as well as comparison capability.
 
-The source owner can maintain access. A specialist is available for unusual source interpretation on named days. The technical lead agrees to hold affected release recommendations until a qualified response arrives. Urgent work needs a separately qualified route. The plan assigns particular contributions now supplied by the outgoing specialist.
+The source owner can maintain access. A specialist is available for unusual source interpretation on named days. The technical lead agrees to hold affected release recommendations until a qualified response arrives. Urgent work needs a separately qualified route. The plan assigns particular contributions now supplied by the outgoing specialist. The permitted hold lets the lead make a timely decision on an ordinary case before the specialist replies. For an urgent promise, inspect when the specialist and the lead would need to act, including any allowed coincidence of urgent requests. Separate reviews compete for time. A reusable interpretation can cover several cases if each case meets its conditions and the teams can use it by their deadlines.
 
 A representative transfer case includes an unavailable edition. The analyst returns the missing input, the source owner supplies the recoverable edition, the subject specialist interprets the consequential ambiguity, and the technical lead uses that result. This establishes receipt and use for that case. A failure rate or qualification across other technical subjects needs additional evidence.
 
@@ -163,7 +163,7 @@ Recipients may reasonably prefer dependable provision to mastery of a rare opera
 - Hidden rescue and important exception handling are considered where they affect continued use.
 - Retain, reduce, transfer, develop, replace, extend and end are possible responses. The choice or assessment fits the continuing need.
 - The assessment identifies whether continuing provision is feasible under ordinary conditions. Where a continuation is selected, its dependencies and unresolved conditions are clear.
-- A transfer includes a usable receiving connection and the disposition of unfinished work.
+- The handover meets its terms. Responsibility, usable materials, continuing provision and actual delivery each have grounds where the undertaking includes them. Open work has an authorized disposition or an identified holder and remaining need.
 - Evidence supports the actual claim about joint performance, recipient capability or provider substitution.
 - Extension reuses sufficient contributions and reopens conditions whose change matters.
 - An assessment identifies the disposition of remaining obligations, including unresolved ones. For a completed exit, the disposition is authorized and any required stopping procedure has a professional basis.
@@ -175,7 +175,7 @@ Recipients may reasonably prefer dependable provision to mastery of a rare opera
 | --- | --- |
 | Declare sustainability because supported performance was good. | Establish what support ordinary use requires and whether that support remains available. Use a new observation where existing evidence is insufficient and the result warrants its cost. |
 | Require every recipient to become self-sufficient. | Compare wanted capability with dependable external supply. |
-| Transfer a folder and assume the role has transferred. | Establish that the successor can perform and the receiver can use the contribution. |
+| Transfer a folder and assume the role has transferred. | Identify the action that assigns responsibility. For a continuing service, also establish how the successor can provide what receivers need. |
 | Scale a successful local strategy unchanged. | Recover the new receiving work and consequential differences. |
 | Close on a calendar date while late cases still depend on the old provider. | Transfer, complete or legitimately withdraw the actual obligation. |
 | Treat community formation as a repair of a missing technical operation. | Identify and obtain the qualified subject contribution; use community work when it helps supply that result. |

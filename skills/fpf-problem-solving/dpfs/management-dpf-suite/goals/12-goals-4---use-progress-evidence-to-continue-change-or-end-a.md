@@ -36,9 +36,9 @@ Compare the actual result with the achievement basis and the relied-on explanati
 | Performed action does not obtain the expected result. | Examine the method and causal assumption; select another way or a warranted inquiry. |
 | The goal is difficult but still valued, and useful means remain available. | Keep the aim and revise the next action, help or provision. |
 | The recipient's need or governing priority changed. | Reconsider the goal with the authorized owner and affected participants. |
-| The result meets the achievement criteria. | Close this goal and make any needed maintenance or subsequent use explicit. |
+| The result meets the achievement criteria for the specified population and period. | Close the finite goal or accept this period of service. Continue outstanding or recurring duties under their terms until their agreed ending or an authorized change. |
 
-The same observation can affect several relations. A supplier delay can change the forecast immediately. A change to the promised date requires a separate agreement.
+A supplier delay can change the forecast immediately. Read the agreement to establish its effect on the due date. If the terms extend the date when a qualifying delay occurs, establish that event and apply the extension. If the date is fixed, it remains due unless the holder of the right to change it acts as the terms require. A notice of delay can meet a separate duty to notify.
 
 #### GOALS.4:4.3 - Compare continuations from the present situation
 
@@ -50,15 +50,15 @@ A difficult goal need not be unattainable for another continuation to be prefera
 
 #### GOALS.4:4.4 - Make the change effective and keep history truthful
 
-Obtain the decision or agreement needed for the chosen change. Communicate it to those whose work or reliance changes, including dependent teams absent from the review. Update the current goal, plan, allocation or commitment with the participant who can change it. Keep the earlier basis and the reason for change where later interpretation needs them. A prospective revision can be justified while the earlier promise was missed.
+If asked for advice, return the recommended change, its grounds and the reliance it would affect. When entrusted to put it into effect, apply the decision or agreement required by the existing terms. Tell the participants whose work changes, including dependent teams absent from the review. Keep the earlier basis where later interpretation needs it. A well-grounded prospective revision can follow a missed promise in the previous period.
 
-Close a goal only when its completion test is met or an authorized end has been decided. These are different outcomes. At an end, return the useful result or learning, remaining obligations, released means and any required recovery. Choose a new goal only when the next useful undertaking calls for it. An obsolete aspiration need not be carried into another cycle merely because it is unfinished.
+Apply the terms for completion, expiry or cancellation. Report an achievement only when the result met its criterion. An effective end or expiry can close pursuit while leaving a missed result and recovery work to account for. Identify any obligations that survive, the means that can be released and the useful findings from the work. The next useful undertaking determines whether a new goal is needed.
 
 Use OPS.22 for interpretation of operating performance and GOALS.8 for any personnel decision. Recognition notices which premise the observation can defeat. Assurance supports the claimed result, interpretation and authority of the resulting change; a colored status supplies only its defined signal.
 
 ### GOALS.4:5 - Archetypal Grounding
 
-A product team aims to reduce failed customer imports. Its early KR tracks successful test imports; its final evidence includes representative production cases. Test success reaches the target, but customers still fail because their actual file variants were excluded. GOALS.2 repairs the coverage, and the team changes the parser and test basis. Lowering the production target would not address this failed means assumption.
+A product team aims to reduce failed customer imports. Its early KR tracks successful test imports. Those tests all pass, yet some eligible customers still fail because their file variants were excluded. This establishes a gap in the test coverage. If the goal promised every eligible import would succeed, one confirmed failure defeats it. If the goal specified a reduction in the failure rate, apply the baseline and criterion to the full eligible population or use a bound sufficient for that comparison. The team can repair the parser and the tests while it determines what the earlier period achieved.
 
 Now suppose the customer retires that integration and moves to a different service. Continuing to optimize the old importer would no longer supply the valued result. The owner can end the improvement, preserve any remaining support obligation and redirect the available work. The same technical progress has a different meaning under the changed recipient need.
 
@@ -74,7 +74,7 @@ Visible targets can focus attention away from people who bear the cost or from o
 - Does the diagnosis distinguish the premise whose failure changes the response?
 - Were the continuations compared from present conditions, including other goals and remaining obligations?
 - Is a pause, completion, cancellation or revised promise reported with its actual meaning?
-- Have the affected participants received the effective change?
+- Does the advice identify who is affected, what the existing terms already determine and who may make any decision still needed? If the change is reported as effective, did it take effect under those terms, including any required notice?
 
 ### GOALS.4:8 - Common Anti-Patterns and How to Avoid Them
 

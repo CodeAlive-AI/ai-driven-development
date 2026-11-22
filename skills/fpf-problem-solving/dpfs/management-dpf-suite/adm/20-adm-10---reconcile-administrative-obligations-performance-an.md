@@ -96,14 +96,15 @@ Organization P owes supplier Q 1,000 units for invoice I. The supplied terms say
 
 Evidence confirms a 600-unit credit to that account. A second instruction for 400 units was issued, but its effect is unknown. The case record says “paid 1,000” because both instructions were sent.
 
-The handler establishes that the confirmed 600 discharges that portion under the supplied terms. The second instruction establishes an attempted payment, not its credit. The remaining 400 has an unresolved effect; the available evidence does not establish whether the actual outstanding amount is now 400 or zero. The record's closed status cannot settle the question.
+The confirmed 600 discharges that portion under the supplied terms. Issuing the second instruction establishes the attempt. Let the amount actually credited from it be x, from 0 to 400 units. The outstanding amount is 400 − x. A ceiling of 400 is already established. An exact balance or a decision to issue the remainder calls for grounds about x. Closing the case record supplies no such grounds.
 
-The handler uses the original second-attempt reference to ask the payment provider whether and when Q's account was credited. The possible returns have different consequences:
+For the exact balance, establish how much of the second instruction reached the designated account. A qualified statement of credit tied to this attempt can suffice. If that contribution is missing, the handler uses the original reference to ask the provider. The possible returns have different consequences.
 
 | Provider result | Reconciliation and next action |
 | --- | --- |
 | The 400 was credited to Q's designated account | The supplied terms establish full fulfillment. The authorized handler corrects the account or evidence linkage as needed; there is no remaining payment to issue. |
 | The attempt failed without a credit | The available evidence establishes 400 still outstanding under the stated assumptions. The competent participants arrange the properly authorized remaining provision. |
+| Only 150 of the second instruction was credited | A further 250 remains under these terms. Establish any permissible next payment without duplicating the credit already made. |
 | The effect still cannot be established | Retain the confirmed 600 and the 400-unit uncertainty. Keep any potentially duplicate payment on hold. Pursue the effect inquiry while an authorized, attainable route remains. |
 
 Suppose the confirmed second credit occurred on 10 September but the provider's report arrived on 12 September. The event time remains 10 September. A report made on 11 September with only the earlier evidence should have stated uncertainty. The later evidence supports a better historical account, not a new credit on 12 September.

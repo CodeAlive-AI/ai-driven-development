@@ -133,7 +133,7 @@ If the customer declines, record only the useful reason and permitted future con
 
 Check a newly changed prerequisite before acting on a previously valid choice. A different price, unavailable support, revised access rule or altered customer goal can require renewed comparison or agreement. Preserve valid decisions and fulfilled obligations; a new promotional programme does not cancel an existing supply commitment.
 
-When learning about one transition exposes a recurring market difference, return it to [MKT.1](16-mkt-1---qualify-a-market-problem-and-differences-between-cus.md). When misunderstanding recurs across cases, repair the offer through MKT.2. A local payment-system failure goes to its operating owner. The result determines the return, not a compulsory sales-stage order.
+Trace a difficulty back to the work that produced it. A promise may be clear in the offer and misleading in the invitation used by one channel. Repair the invitation there. If the offer itself invites an interpretation that the provider cannot supply, revisit it through MKT.2. A difference between customer situations may change the grouping in [MKT.1](16-mkt-1---qualify-a-market-problem-and-differences-between-cus.md). A local payment-system failure goes to its operating owner. Recurrence helps locate the defect when its source is still open.
 
 ### MKT.4:5 - Archetypal Grounding
 
@@ -143,11 +143,11 @@ In a stipulated Vector case, a reporting operator understands the bounded file-m
 
 The marketer explains the fixed trial scope and its end to purchasing, asks the access owner for the permitted-sample decision, and obtains the service owner's available window. The sample decision and purchasing preparation can proceed independently, but actual use requires both the agreed acquisition conditions and permitted data. The operator keeps the existing reporting procedure until the trial supplies an inspected alternative.
 
-The first useful result is a conditional, scheduled choice with known recipients and return conditions. When the necessary answers arrive favourably, the ordinary acquisition completes and the service owner receives the agreed scope. If they do not, the marketer can offer a feasible later window or accept no trial now. A higher response rate to reminders would not settle the missing conditions.
+The first useful result is a conditional, scheduled choice with known recipients and return conditions. Once the conditions are met, the parties can place and accept the order. If the existing agreement makes the final favourable answer itself the event that activates the order, establish that event. Pass the agreed scope to the service owner when the order takes effect. If they do not, the marketer can offer a feasible later window or accept no trial now. A higher response rate to reminders would not settle the missing conditions.
 
 #### MKT.4:5.2 - Change access after apparent agreement
 
-Suppose the access owner allows only a different, insufficient data sample. Return to the trial's question: can it still be answered? A demonstration on generic data may explain the service but cannot establish compatibility with Vector's actual work. Offer that smaller result honestly or wait for another permitted basis. Retain the operator's understanding without calling the original trial possible.
+Suppose the access owner permits a substitute sample. Establish which source properties the trial must cover. A qualified test over the complete admitted format can settle a compatibility question if Vector’s input satisfies that format. Where a feature that matters to Vector could be missing, the demonstration establishes only what it exercised. A separately commissioned test of Vector’s own file requires access to that file. Explain the available result and return the outstanding access decision to its owner.
 
 In a routine consumer repair, the same person may choose, pay and bring the item. A clear quotation, attainable appointment and understood limits may be enough. Requiring separate stakeholder records, a new research study or a trial would make an already meaningful choice harder.
 
@@ -183,7 +183,7 @@ A conversion target can encourage treating informed refusal as failure or hiding
 - Negotiable packages distinguish aspiration, discretion and acceptability, and their contributions remain jointly available.
 - Consequential terms, effort, timing and limits are understandable before the action that relies on them.
 - A trial has a question, bounded arrangement, end and honest continuation or refusal.
-- The selected action is attainable, and its actual result and agreed content reach the delivery recipient.
+- The next action is attainable. For a decision to decline or defer, the person making it can act on the answer. For an order that has taken effect, its terms reach the people responsible for provision.
 - Changed conditions reopen the dependent choice without erasing unaffected work or existing obligations.
 
 ### MKT.4:8 - Common Anti-Patterns and How to Avoid Them

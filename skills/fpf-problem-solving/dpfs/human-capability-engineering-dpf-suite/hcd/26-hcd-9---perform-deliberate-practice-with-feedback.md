@@ -5,13 +5,13 @@
 
 ### HCD.9:0 - Use This When
 
-Use this pattern when a person needs to practise a specific contribution on a representative task with feasible support. Let the learner attempt it and use feedback to correct or retain the action. After a correction, retry the affected requirement. If the supported action was already adequate, obtain another attempt only when the practice question needs one. Keep the episode within its safety conditions.
+Use this pattern when a person needs to practise a specific contribution on a representative task with feasible support. Let the learner attempt it and use feedback to correct or retain the action. Use the observed response to judge how the person used the feedback. Arrange a further attempt for a requirement that still needs one, including any retest in the selected practice method. Keep the episode within its safety conditions.
 
 For coached practice of scientific reasoning during process improvement, §4.10 explains what the learner and coach do and how to give feedback on that reasoning. E.23:4.4.1 describes the process-improvement method being practised. Use evidence about the process, the learner or the coach for the corresponding claim.
 
 A **focused-practice episode result** identifies the task, target action, first response, help received, observed action and result, timing and content of feedback, and the learner’s response. Preserve a first response before answer-bearing help where that distinction matters. Explain why the action changed or was retained, what a needed retry showed, or which difficulty remained. Return the next focus or grounds for stopping. Claims about independent performance, transfer, retention or a causal effect on learning need evidence appropriate to those claims.
 
-The practitioner can identify what the learner contributed and which part of the response came from a teacher, coach, peer, tool or AI. Preserve successful parts of the first attempt. Use any relevant error or uncertainty to select feedback, or confirm why the action already fits. After correction, test the affected requirement. Change the case when discrimination from a memorized answer matters.
+The practitioner can identify what the learner contributed and which part of the response came from a teacher, coach, peer, tool or AI. Preserve successful parts of the first attempt. Use any relevant error or uncertainty to select feedback, or confirm why the action already fits. Decide what the observed repair establishes before asking for another attempt. Change the case when discrimination from a memorized answer matters.
 
 If the task omits the target contribution, revise the task using HCD.6. If required feedback or safe access is unavailable, use HCD.7 to arrange an existing contribution, use HCD.8 to obtain or build a missing one, or return the resulting limit. Use HCD.11–HCD.13 for stronger performance, transfer or retention questions. Distinguish the learner’s first response from a demonstration, generated answer or corrected final product.
 
@@ -19,7 +19,7 @@ If the task omits the target contribution, revise the task using HCD.6. If requi
 
 | Name in this pattern | What it denotes |
 | --- | --- |
-| focused-practice episode | One bounded attempt and use of feedback directed at a named action, criterion, error, or discrimination in a representative task. It includes correction followed by a retry when the action needs repair, or reasoned retention when the action is supported. |
+| focused-practice episode | One bounded attempt and use of feedback directed at a named action, criterion, error, or discrimination in a representative task. The learner may make a correction or give grounds for retaining the action. A further attempt can address a remaining requirement. |
 | practice focus | The action or relation the learner is trying to change or stabilize under the specified conditions. |
 | first attempt | The learner’s initial response under identifiable task, time, source, tool, AI and provider conditions. State the help received and whether the conditions support a claim of independent action. |
 | changeable action | An observable selection, explanation, calculation, check, request, refusal, adaptation, enactment, or correction on which feedback can bear. |
@@ -36,7 +36,7 @@ A record of pages, hours, cases or attendance can establish exposure. To underst
 
 A teacher may demonstrate the correct result, a peer may rewrite the response, or AI may generate a correction. The product can improve even when the learner’s own work remains unknown. Preserve the first response and attribute subsequent help and revisions so that later assessment can distinguish independent work, supported work and a supplied answer.
 
-Keep the initial conditions and response. Give the learner information they can use and retry the affected requirement after correction. Feedback can also confirm why an action should be retained. Scope a conclusion about that episode to the performance and help observed.
+Keep the initial conditions and response. Give the learner information they can use and observe the response, including any retry required by the practice method. Feedback can also confirm why an action should be retained. Scope a conclusion about that episode to the performance and help observed.
 
 ### HCD.9:2 - Problem
 
@@ -59,7 +59,7 @@ A third shortcut retests everything after one defect. It wastes already supporte
 
 ### HCD.9:4 - Solution
 
-Connect a representative task to one practice focus. Preserve the first attempt and its support conditions, compare the action with the criterion and provide feedback when the learner can use it safely. Let the learner correct the affected action or retain one already supported. Ask for a verbal explanation when the target or a remaining question requires it. After correction, retry the affected requirement. After retention, stop unless another observation is needed.
+Connect a representative task to one practice focus. Preserve the first attempt and its support conditions, compare the action with the criterion and provide feedback when the learner can use it safely. Let the learner correct the affected action or retain one already supported. Ask for a verbal explanation when the target or a remaining question requires it. A learner who corrects an entry has shown that action with the help received. If the teacher supplied the corrected entry, the learner’s own repair remains open. Seek another attempt when it can answer the remaining question or when the selected method requires it.
 
 #### HCD.9:4.1 - Bind the Episode before the Attempt
 
@@ -104,22 +104,22 @@ A score can locate a threshold and praise can acknowledge effort. For correction
 
 **Choose how the learner will use the criterion.** A model answer or group explanation can leave a learner unsure how it applies to their own attempt. Use available evidence of their comparison. If the ability remains open, preserve the attempt, give the qualified comparison and ask the learner to identify what it supports or changes. Observe what they then do. Merely repeating the model answer does not establish their use of the criterion.
 
-If the learner can apply the comparison, let them compare an attempt with the prepared material, correct it as needed and retry the affected requirement after correction. If they cannot yet locate the decisive difference, arrange a targeted explanation or contrast from a qualified source or provider where the task requires it. HCD.6:4.3 and HCD.6.1 help make the distinction accessible. HCD.7 can help secure a required contribution in time. Return to the whole task when the learner can use the distinction, or identify the support still missing.
+If the learner can apply the comparison, let them compare an attempt with the prepared material, correct it as needed and follow the criterion for any required retry. If they cannot yet locate the decisive difference, arrange a targeted explanation or contrast from a qualified source or provider where the task requires it. HCD.6:4.3 and HCD.6.1 help make the distinction accessible. HCD.7 can help secure a required contribution in time. Return to the whole task when the learner can use the distinction, or identify the support still missing.
 
 Successful use of a supplied explanation establishes what the learner did with that help. To assess detection before help or performance with altered support, use evidence under the corresponding conditions. HCD.10 can help select a needed change. If the learner’s original action was sound and the evidence answers the bounded question, retain it and stop as described in §4.5.
 
-A common explanation can serve several learners while leaving different next steps for each. To establish individual use of the criterion, examine each relevant response and offer targeted help where the shared explanation did not suffice. Include time for that check and help. If the arrangement cannot provide them, narrow the supported claim or identify the missing contribution.
+A common explanation can serve several learners while leaving different next steps for each. To establish individual use of the criterion, use evidence attributable to each person in the claim. Offer targeted help where the shared explanation did not suffice. If the question is whether the group received a usable explanation, establish the promised access, timing and content. A separate observation of every learner's application is needed only for a claim that depends on it. Include time for that check and help. If the arrangement cannot provide them, narrow the supported claim or identify the missing contribution.
 
 
 #### HCD.9:4.5 - Use Feedback to Correct or Retain the Action
 
-When feedback identifies an error or unsupported step, let the learner repair it by revising reasoning, action or product, performing a missing check, or giving grounds for stopping. Preserve what the learner did separately from the provider’s input. Retry the affected requirement.
+When feedback identifies an error or unsupported step, let the learner repair it by revising reasoning, action or product, performing a missing check, or giving grounds for stopping. Preserve what the learner did separately from the provider’s input. A correction the learner performed can complete a report on that supported episode. For a mastery decision, apply the agreed threshold and retest rule. For independent use or stability, use suitable evidence under the conditions that matter.
 
 If the action meets its criterion, retain it on the available grounds. For a remaining question the learner might choose a continuation, demonstrate the relation under a changed cue or explain it. A qualified observation can support a correct movement or perceptual choice even before the learner can explain how it was produced. If explanation is the target, it can improve while the practical action stays the same. A score or praise without evidence of the action cannot establish that performance.
 
-Use an adequate existing observation, or choose a further feasible attempt when its attainable contribution warrants the work needed to address a remaining question about stability, adaptation or another requirement. Stop when an already correct attempt and its grounds answer the practice question. Use HCD.11–HCD.13 when the remaining claim concerns performance, transfer or retention. HCD.15:4.2.1 can help derive a learning question from successful work if one is needed.
+Use an adequate existing observation, or choose a further feasible attempt when its attainable contribution warrants the work needed to address a remaining question about stability, adaptation or another requirement. Stop when the observed response and its grounds answer the practice question. Use HCD.11–HCD.13 when the remaining claim concerns performance, transfer or retention. HCD.15:4.2.1 can help derive a learning question from successful work if one is needed.
 
-Use a changed, comparable case if another observation must establish applicability, method selection, adaptation or response to an altered condition. Repeating the same case can check stable execution or a focused correction under the same requirements. Retain previously demonstrated work unless a new response contradicts it or changed conditions affect its use.
+Use a changed, comparable case when adaptation is the target or when it is necessary to distinguish method selection from recall of the supplied answer. Repeating the same case can check stable execution or a focused correction under the same requirements. Retain previously demonstrated work unless a new response contradicts it or changed conditions affect its use.
 
 If several gaps cannot be corrected and checked in the available time, retain what was established. Identify each unresolved requirement and the additional time, task, provider contribution or decision it would need. Keep the remaining work outside the present allocation unless a change is authorized.
 
@@ -127,7 +127,7 @@ If several gaps cannot be corrected and checked in the available time, retain wh
 
 Use the outcome supported by the episode.
 
-- **changed action under recorded conditions:** the retry shows the intended correction or discrimination with its actual support;
+- **changed action under recorded conditions:** the observed repair or subsequent attempt shows the intended correction or discrimination with its actual support;
 - **supported action retained:** the criterion and relevant response support keeping the action within the stated conditions; another attempt or verbal explanation addresses a remaining question when needed;
 - **unchanged or recurring difficulty:** the same relevant error remains after usable feedback and a valid retry;
 - **new or differently located difficulty:** the retry changes the diagnosis or exposes another dependency;
@@ -160,7 +160,7 @@ Retain enough detail for the next use. One whole task can exercise several metho
 
 #### HCD.9:4.9 - What Changes in Practice
 
-Identify what the learner tried, what help was received, the criterion addressed by the feedback and why the response should change or remain. Use a comparable retry for the affected requirement after correction, or for a remaining question after retention. Stop when the practice question is answered.
+Identify what the learner tried, what help was received, the criterion addressed by the feedback and why the response should change or remain. If a remaining question or a required retest calls for another attempt, select a comparable one that exposes the affected action. Stop when the practice question is answered.
 
 #### HCD.9:4.10 - Coach scientific reasoning during process improvement
 
@@ -194,7 +194,7 @@ In the release case the learner selects external module B because its stipulated
 
 The teacher asks, “Which configuration does the report support?” The learner finds FW7 in the report and FW8 in the release requirement. They retain the conditional financial comparison, request compatible evidence from the supplier and withhold reliance on module B for this release until suitable evidence for the required configuration supports its use. Evidence covering another candidate would have to fit that candidate’s own configuration. The learner has corrected the grounds of the original answer.
 
-On the retry a compatible HW3/FW8/SCHED2 report is available. Three homogeneous batches of ten changes in total require 23 test hours. A 24-hour allowance covers them, while demand of twelve leaves a queue. With only 22 hours, a promise of ten changes fails the time condition. Observe whether the learner changes the answer with the evidence and available time, including what help they use. This retry concerns the tested conditions.
+On the retry a compatible HW3/FW8/SCHED2 report is available. Three homogeneous batches of ten changes in total require 23 test hours. A 24-hour allowance covers them. The proposal covers ten of the twelve requests. If those ten are accepted and there are no other exits, two carry over. With only 22 hours, a promise of ten changes fails the time condition. Observe whether the learner changes the answer with the evidence and available time, including what help they use. This retry concerns the tested conditions.
 
 #### HCD.9:5.2 - Turn a Pump Claim into a Discriminating Observation
 
@@ -240,7 +240,7 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Examine one focuse
 | score-only bias | A mark identifies a threshold while the learner still needs to know what to do. | Identify the criterion, what the learner did well, any error and the next action or grounds for retaining the current one. |
 | feedback-immediacy bias | One timing rule is applied regardless of risk and purpose. | Choose timing from safety, consequence, first-attempt value, and error rehearsal. |
 | exact-repeat bias | Memorizing the corrected answer is mistaken for rule use. | Change a decision-bearing condition when discrimination or adaptation matters. |
-| total-retest bias | One defect causes every supported requirement to be tested again. | Retry the affected requirement. Reopen another when new evidence calls its result into question or a change makes it relevant again. |
+| total-retest bias | One defect causes every supported requirement to be tested again. | When a retest is needed, select the affected requirement. Reopen another when new evidence calls its result into question or a change makes it relevant again. |
 | practice-effect bias | A changed attempt is used as proof of capability, transfer, retention or programme effect. | Report what the episode supports. Use the applicable assessment or evaluation method if the task needs a stronger inference. |
 
 ### HCD.9:7 - Conformance Checklist
@@ -253,7 +253,7 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Examine one focuse
 - [ ] Feedback identifies the relevant attempt, criterion, useful part, any error or uncertainty, and the next learner action or grounds for retention.
 - [ ] Choose feedback timing from the purpose, risk, consequence of delay and value of observing the first response.
 - [ ] Identify what the learner did and what the provider supplied. If the learner retained a sound action, check the evidence the target calls for. Ask for a verbal justification when explaining the grounds is part of the target or is needed to settle the remaining question.
-- [ ] After a correction, use a comparable retry to check the affected requirement. Change a relevant condition when the target includes discrimination or adaptation. A sound action already established for the stated question can end the episode.
+- [ ] Establish what the learner did in making the correction. Use a comparable retry if mastery criteria or a remaining practice question require it. Change a relevant condition when the target includes discrimination or adaptation. A sound action already established for the stated question can end the episode.
 - [ ] Previously supported requirements are preserved unless the new response contradicts them or makes them material again.
 - [ ] Identify any independent requirement that remains open, what can continue safely and what would allow further practice if it is needed.
 - [ ] Report the performance and support observed under the episode conditions. For a causal, capability, transfer or retention claim, establish the additional grounds that claim needs.
@@ -267,7 +267,7 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Examine one focuse
 | “Here is the correct answer” | Provider output can replace the learner action. | Have the learner use the information in the relevant action; record the help and obtain a learner-authored correction when one is needed. |
 | “The corrected file proves mastery” | The first attempt and support have disappeared. | Recover the attempt, the help received, the learner’s response and any retry from the available evidence. |
 | “Repeat the same question” | Answer memory can mimic the intended discrimination. | Change the condition that should change the warranted move. |
-| “Retake the whole module” | Already supported requirements and the exact gap are lost. | Retry the affected requirement and preserve compatible success. |
+| “Retake the whole module” | Already supported requirements and the exact gap are lost. | Keep compatible success and select any retry for the specific unresolved requirement. |
 | “Improvement after feedback proves causality or durable capability” | Temporal order does not establish either conclusion. | Report changed performance under the recorded conditions. Seek stronger evidence only when the receiving use needs the stronger claim. |
 | “Everyone passed overall” | A critical or individual unresolved gap is hidden by aggregation. | Keep holder-level requirements, safe stops, and continuations visible. |
 

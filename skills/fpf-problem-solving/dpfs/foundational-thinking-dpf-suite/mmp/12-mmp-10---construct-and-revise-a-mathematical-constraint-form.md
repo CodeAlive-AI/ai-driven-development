@@ -38,15 +38,15 @@ The difficulty is to construct the mathematical expression of the intended possi
 
 #### MMP.10:4.1 - Recover what varies and what the question asks
 
-Describe a candidate before choosing scalar variables. Is it an amount, a collection, a sequence, an assignment, a function or another mathematical object? Which distinctions can change the answer? A set retains membership; a multiset also retains multiplicity; a sequence retains positions. Choose among them from the question.
+Describe a candidate before choosing scalar variables. Is it an amount, a collection, a sequence, an assignment, a function or another mathematical object? Which distinctions can change the answer? A set retains membership; a multiset also retains multiplicity; a sequence retains positions. Choose among them from the question. If the question concerns several recipients or periods, decide from their use whether an object is one local allocation, a jointly available arrangement, or a rule for choosing later. An assignment to each recipient can be attainable on its own while several assignments share a limiting condition.
 
 Separate supplied quantities from unknowns. Among unknowns, distinguish what is to be inferred, what can be chosen and what can vary independently of that choice. If a choice uses an observation, specify when the observation becomes available; MMP.8 constructs the resulting information-dependent requirement. An unknown value does not become a freely selectable design variable merely by appearing in the same equation.
 
-State the requested result. Existence asks whether at least one admissible object can be constructed. Inference asks what a quantity can be across admissible objects. Selection adds a preference among them. Counting and sampling depend on how individual objects are distinguished. Keep those requests separate while choosing the representation.
+State the requested result. A mathematical existence question asks whether an admissible object exists. A theorem can settle it. Supplying a witness, computing it in time and identifying which object actually occurred require the corresponding construction or evidence. Inference asks what a quantity can be across admissible objects. Selection can require one permissible choice or a preference among them. Counting and sampling depend on how individual objects are distinguished.
 
 #### MMP.10:4.2 - Construct variables that represent the object
 
-Choose an expression from which a candidate can be recovered. Give each variable a domain and any unit or reference point needed by its operations. A machine label ranges over names; arithmetic on the label requires a separate meaning. A count ranges over nonnegative integers; an amount may be divisible. State a finite bound when the task supplies one. Adding a bound solely to finish a search restricts the question to that bound.
+Choose an expression suited to the result. When a candidate must be delivered, show how to recover one with the required properties. To decide a threshold, a summary or enclosure can suffice if its relation to the subject carries the decision. Give each variable a domain and any unit or reference point needed by its operations. A machine label ranges over names; arithmetic on the label requires a separate meaning. A count ranges over nonnegative integers; an amount may be divisible. State a finite bound when the task supplies one. Adding a bound solely to finish a search restricts the question to that bound.
 
 For a structured object, compare representations by the operations you need. A function on a finite set can use one output variable for each input. Alternatively, a table of Boolean indicators can say which input-output pairs belong to its graph. The first expression makes function evaluation easy to state. The second makes some relations among pairs visible, but needs conditions to make the table a function. For a partial function, represent undefinedness as well as defined values.
 
@@ -68,7 +68,7 @@ Additional constraints can expose consequences and help the obtaining method. De
 
 #### MMP.10:4.4 - Make the answer correspond to the question
 
-Define how to recover the requested object or quantity from a satisfying assignment. Then work in both directions: represent an intended admissible case, and interpret an allowed assignment. Use the construction and its conditions to establish the reach of this correspondence. A small case can expose a mistake; a claim about every case needs the corresponding argument.
+Choose the direction of the correspondence from the conclusion the recipient needs. A feasible witness needs an interpretation as an admissible subject candidate. A uniform bound or proof of impossibility in an enclosing model can cover the subject when every relevant subject case maps into it and the property has the required interpretation there. To characterize exactly what is possible, justify both inclusion and attainability for the requested quantity. A small case can disprove a direction. A single general argument can establish it throughout its domain. For example, to guarantee that demand stays at or below a capacity, an upper bound at or below capacity suffices. A larger upper bound leaves the guarantee open. To refute it with an overload, establish that at least one admissible subject case actually requires more than capacity, or prove that such a case exists.
 
 Match that reach to the requested result:
 
@@ -142,7 +142,7 @@ Compactness can hide duplicate records or omitted possibilities. Judge the repre
 - Do domains, units, shared quantities and definedness express the intended possibilities?
 - Which conditions make the representation denote an object, and which express requirements on it?
 - Do conditions that must hold together refer to the same assignment? Are alternatives and conditional restrictions preserved?
-- Can intended cases be represented and satisfying assignments be interpreted at the reach required by the question?
+- Does the correspondence support the direction of inference used here, including recovery of a subject witness, coverage for a bound or impossibility claim, or both directions for an exact feasible set?
 - Does the requested value, preference, count or probability survive the representation, including auxiliary values and duplicate records?
 - What conclusion does the obtaining method establish, and which changed requirement reopens which construction?
 

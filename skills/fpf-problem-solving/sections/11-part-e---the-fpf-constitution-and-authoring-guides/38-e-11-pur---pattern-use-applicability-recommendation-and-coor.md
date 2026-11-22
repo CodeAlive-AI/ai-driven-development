@@ -321,7 +321,7 @@ If new information makes that check capable of preventing a consequential loss, 
 
 A clinical team needs both a terminology repair and an evidence-basis review before revising a protocol. Neither result is a prerequisite for the other in the current context.
 
-State an unordered coordination: the team may use either pattern first or use them in parallel. No coordination episteme or ordering relation is required for that local judgement.
+State an unordered coordination with respect to the two results. Neither is a prerequisite for the other. Available working hours may still determine which pattern can be used first. With a flexible calendar one practitioner can choose either sequence. To schedule the uses concurrently, check that the people, permissions and resources for both are available in the same interval. The local judgement needs no coordination episteme or ordering relation.
 
 If the later protocol revision becomes a named reliance that needs the coordination replayable, materialize one `PatternUseCoordination@Context` with `orderingMode=unordered` and no ordering relations. Coordinating these two uses establishes neither a lifecycle nor a WorkPlan.
 

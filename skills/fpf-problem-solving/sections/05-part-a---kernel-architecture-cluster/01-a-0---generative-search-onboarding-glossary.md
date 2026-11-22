@@ -1,7 +1,7 @@
 ## A.0 - Generative Search Onboarding Glossary (NQD & E/E‑LOG)
 
 > **Status:** Stable
-**Use this when** choosing or describing a generative search or selection. This glossary identifies the values, policies and set-result kinds needed by that operation, and connects them to their definitions in C.17–C.19. Section 4.3 shows how to use those terms with G.5 selection and the publication requirements of the receiving task.
+**Use this when** deciding what a generative search should return, or interpreting a search someone has already run. Start from the decision the recipient has to make. Section 4.3 shows when one usable candidate is enough, when to preserve alternatives or construct a combination, and how to distinguish an exploration report from an exhaustive comparison.
 
 **Builds on.** E.2 (**P‑10 Open‑Ended Evolution; P‑2 Didactic Primacy**), A.5, C.17–C.19 - **Coordinates with.** E.7, E.8, E.10; F.17 (UTS); G.5, G.9–G.12 - **Constrains.** Any pattern/UTS row that **describes a generator, selector, typed portfolio publication, or set-return publication surface**.
 
@@ -15,7 +15,7 @@ Engineer-managers choosing a search or selection need to distinguish candidate q
 
 The following mistakes obscure how a search result was obtained and what it can be used for:
 
-* **Single‑winner bias.** Teams look for “the best” option and publish a leaderboard, suppressing **coverage & diversity** signals essential to search.
+* **Single‑winner bias.** Publishing a winner can take away a choice the recipient intended to make, conceal an efficient alternative or hide the coverage of a search. One eligible candidate with established fitness can finish an order for one workable option.
 * **Metric confusion.** “Novelty” and “quality” are used informally; units and scales are omitted; ordinal values are averaged, breaking comparability.
 * **Hidden policies.** Explore/exploit budgets and governor rules are implicit; results are irreproducible and **refresh‑unsafe** (no edition/policy pins).
 * **Tool lock‑in.** Implementation terms (pipelines, file formats) leak into the Core, violating Guard‑Rails.
@@ -60,24 +60,24 @@ This glossary names the generative terms in **Plain** register and ties them to 
 
 1. **UTS surface (Part F).** When a **UTS row describes a generator, selector, typed portfolio publication, or set-return publication surface**, it **MUST** surface each glossary value or policy used by the declared operation or independently required by the receiving use. Type each reported value's applicable **units, scale, polarity and ReferencePlane** under **MM‑CHR** and **CG‑Spec**, and cite its defining basis, including `DescriptorMapRef` and `DistanceDefRef` when used or required. *(Row schema: F.17; shipping via G.10.)*
 2. **Parity & edition pins (Part G).** When QD/OEE is in scope, **pin the editions and policies used by the operation or required by its receiving use**, including `DescriptorMapRef.edition`, `DistanceDefRef.edition`, the `CharacteristicSpaceRef` with its separate `characteristicSpaceDescriptionRef: U.EpistemeRef` under A.19:5.1.1.1 and `TransferRulesRef.edition` where applicable; record `PathSliceId` when required by that use. **G.9** supplies the pin requirements for a parity use. Treat **illumination/coverage as report‑only telemetry**; publish an **Illumination Map** where G‑kit mandates parity records. For an empirical claim about how performance changes with scale, declare **S** and use comparison evidence at distinct settings. Reuse an applicable **scale‑probe**. A theoretical prediction states the assumptions and range that support it. **Dominance policy defaults to `ParetoOnly`;** including illumination in dominance **MUST** cite a CAL policy‑id.
-3. **Tell‑Show‑Show (E.7/E.8).** Any architectural pattern that claims generative behaviour **MUST** embed **both** a **U.System** and a **U.Episteme** illustration using this glossary (manager‑first didactics).
+3. **Ground generative claims (E.7/E.8).** An architectural pattern claiming generative behaviour **MUST** show which action or conclusion requires the generative claim, who generated or selected the alternatives where this matters, and which conditions and glossary distinctions warrant the conclusion. Use a system or episteme illustration when it reveals a condition of that claim.
 
 
 
 #### A.0:4.3 - Putting the glossary to use
 
-1) Declare **CG‑Frame** (what “quality” means; admissible units and scales) and **ReferencePlane**.
-2) Choose the **Q components** and **DescriptorMap** coordinates needed by the intended operation; retain their meanings and applicable **editions**.
-3) Choose an **E/E‑LOG policy** and record its **policy‑id** when the operation or receiving use requires explore↔exploit control.
-4) Apply **G.5** selection/dispatch with its applicable basis pins; add parity pins for a parity use. Keep any consumed `Front` or `Archive` identified as the source set. For a set outcome, return `Shortlist` or `RankedShortlist` for retained alternatives, or `JointUseSet` when all named members are included for one named use. Return a handoff, abstain, or escalation when that is the G.5 outcome.
-5) Keep the **G.5 outcome**'s required content and basis pins. **Publish that result only when the receiving use calls for publication**, with its applicable **PathIds/PathSliceId**. Add a **UTS row** for a named governed value only when **F.17**'s independent naming and reuse conditions hold; otherwise reuse its existing designation. Follow the outcome's continuation or stop. An **Illumination Map** remains **report‑only telemetry** by default.
+1) **Recover the decision before choosing the table.** Who will use the result, by when and with what authority? If they need one workable option, an existing candidate with established fitness may finish the job (C.38). A request for the best option also needs a comparison over the allowed alternatives. If the order calls for new candidates, generate them. For a decision left to the recipient, preserve the alternatives they can identify and use in time. Distinguish who set the goal, proposed the candidates and chose the criteria. When designing the search, make and justify the choices left open. When applying a supplied rule, credit those choices to whoever made them.
+2) **Work out which choices have to fit together.** Several recipients may choose independently, need the same option, or need every member of a combination. Compare whole combinations when a shared resource or condition affects their suitability. For one feasible combination, exhibit it or establish its existence as the request requires. To promise support for every allowed joint choice, establish a way for the participants to meet every such request. At each commitment the plan assigns an authorised action to each participant on the information that participant has. It must work in every situation still compatible with that information. The plan can branch on a distinction that reaches the participant in time. A declaration of agreed members needs the agreement. A report of actual use needs evidence of the work.
+3) **Choose what to compare or count.** Start with the candidates the commission allows, including ones beyond the current table. When designing a comparison, hold your proposed readings fixed and vary a permitted use or shared condition. If the recipient would have to act differently or give a different justification, retain that distinction or establish how the recipient can learn it in time. Group cases when the same answer and grounds hold (C.39.SA:4). State the eligible population, the question of quality, the admissible units and scales (**CG‑Frame**) and the **ReferencePlane**. Choose the **Q components** or **DescriptorMap** coordinates used by this operation and retain their meanings and applicable editions. Occupied cells describe a retained archive. A claim about which regions were tested needs evidence of the tests, including rejected candidates when they count. To report all nondominated answers, establish completeness for the requested population and distinguish objective values, one realization of each value, and all qualifying candidate identities (C.18:4.4).
+4) **Use the method for the requested result.** C.11 governs a local choice. C.18 supplies an archive or front. Use C.19 and record the **E/E‑LOG policy‑id** when the search needs explore/exploit control. Use **G.5** for method-family dispatch or to declare a selected set on an established basis. Keep any consumed `Front` or `Archive` identifiable as the source. Return `Shortlist` or `RankedShortlist` for retained alternatives and `JointUseSet` when all named members are included for one use. A G.5 handoff, abstention or escalation carries its own grounds.
+5) **Deliver what the recipient can use.** Keep references to the criteria, evidence and editions used for the result (basis pins). To compare runs on common terms, also record the editions and policies that G.9 requires for that comparison (parity pins). Publish when the receiving use calls for publication, with the applicable **PathIds/PathSliceId**. Add a UTS row for a named governed value when F.17's independent naming and reuse conditions hold. An **Illumination Map** remains **report‑only telemetry** by default.
 
 ### A.0:5 - Archetypal Grounding
 *Informative; manager‑first (E.7/E.8 Tell‑Show‑Show).*
 
 **Show‑A - SRE capacity plan (selector returns a set).**
-*Frame.* We must raise service commitment headroom for Q4 without breaking latency SLOs.
-*Declared retained set.* `{cache‑expansion, read‑replicas, query‑shaping, circuit‑breaker tuning, schema‑denorm}`.
+*Frame.* The service team will choose how to raise Q4 headroom while meeting its latency commitment. This search is commissioned to keep alternatives available for that later choice.
+*Alternatives retained for the team.* `{cache‑expansion, read‑replicas, query‑shaping, circuit‑breaker tuning, schema‑denorm}`. A recommendation to deploy a combination would also have to account for its joint cost and behavior.
 *Glossary in action.* `U = latency@p95 & error‑rate`, `C = budget ≤ $X, risk ≤ R`, `N = dissimilarity to current playbook`, `Diversity_P = coverage of the declared retained set under the niche policy`, `DeltaDiversity_P = additional coverage from adding a candidate (e.g., “shifts load to edge” fills an empty niche)`. E/E‑LOG starts **Explore‑heavy**, flips **Exploit‑heavy** once ≥ K distinct niches are lit. *(Publish a UTS row only when **F.17**'s naming and reuse conditions hold; retain parity pins for a parity use; illumination stays report‑only telemetry.)*
 
 **Show‑B - Policy search with QD archive (MAP‑Elites‑class).**
@@ -148,14 +148,14 @@ Use C.17–C.19 for the corresponding metrics and search policies. This glossary
 - Use `Palette` for a plurality-preserving set with no dominance semantics yet.
 - Use `TraditionPalette` only when the members are traditions gathered before later comparison or choice semantics are declared.
 - For methods, hypotheses, environment-method pairs, candidate explanations, or other member kinds, use `Palette` plus explicit `SubjectKind` instead of borrowing the `TraditionPalette` head.
-- Use `Front` only for a non-dominated set under one declared `DominanceSet`.
+- Use `Front` for nondominated candidates over an identified population under the declared `DominanceSet`. A report of the objective values they realize or one representative per value can merge distinct candidates (C.18:4.4).
 - Use `Q-Front` when the declared `DominanceSet` is the declared `Q` components.
 - Use `Archive` for a retained set whose purpose is coverage, stepping-stone retention, or frontier expansion rather than current non-domination.
 - Use `ExplorationArchive` for the broad retained exploration surface; it is the exploration-specific specialization of `Archive`.
 - Use `SteppingStoneSet` only for one narrower retained subset whose stated purpose is future frontier reach rather than the whole archive. It is not part of the ordinary first-pass public-head family for retained exploration.
 - Use `Shortlist` for the set chosen from one declared source set by one named lens.
 - Use `RankedShortlist` only when that shortlist is explicitly rank-ordered.
-- Use `JointUseSet` when every member is included for one named use; keep that use, keyed member entries, inclusion conditions, and basis pins under `G.5`.
+- Use `JointUseSet` when every named member is designated for one use. Give that use, keyed members, inclusion conditions and basis pins under G.5. Ground a claim of joint feasibility or actual use in the conditions or Work that establish it.
 - Use `ShortlistId` for the stable public token of one emitted shortlist; it is not the shortlist itself.
 - Use `ChoiceSet` only when the mathematical set object underlying one shortlist must be named explicitly; do not let it replace the public shortlist head.
 - Use `Q-set` for the declared current objective tuple that may ground the current `DominanceSet`.

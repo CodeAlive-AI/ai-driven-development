@@ -7,15 +7,15 @@
 
 **Use this when** a connected controller must respect state, output or actuator limits while following commands from another computation. The upper plan may be feasible in its own model while leaving too little authority for correction below.
 
-Start with the actual connected dynamics from CAD.2 and one limiting constraint. Derive the deviation that consumes its margin. The first useful result is a command domain with an invariant error bound and an admissible continuation, or a specific failure that returns the design for revision.
+Start with the connected dynamics and the limit or limits the proposed command domain must respect. For each consequential limit, derive how deviation consumes its margin. Establish that the admitted commands and corrections meet the required limits together. One inequality can certify all the required limits when its satisfaction entails them. A command fails the required guarantee if it violates a necessary condition or an admissible realization violates a limit. A loose sufficient bound can leave a feasible command undecided. For continuing operation, construct a command domain with an invariant error bound and an admissible continuation. For a finite duty, bound the errors through the last required instant and establish the terminal or handover conditions in :4.4. A demonstrated incompatibility returns the design for revision.
 
-A simulation that stayed within bounds is useful evidence about that run. It is not the invariant command domain constructed here.
+A simulation establishes the behaviour of its modeled run. To extend that conclusion, show why the simulated cases or a bound cover the commands and disturbances admitted throughout the duty.
 
 ### CAD.3:2 - Problem
 
 The layers can make mutually inconsistent promises. The tracker guarantees a small error only for modest commands, while the planner assumes that error before restricting its commands. Tightening an upper constraint by an arbitrary tolerance conceals that circular dependence. A feasible first command can also lead to a state from which no later command is feasible.
 
-The construction must close both the simultaneous compatibility question and the continuation question.
+Establish simultaneous compatibility and the continuation required up to the task's stated endpoint.
 
 ### CAD.3:3 - Forces
 
@@ -93,7 +93,7 @@ Enforce these conditions at every instant covered by the claim. If z evolves bet
 
 #### CAD.3:4.3 - Close the dependence between commands and error
 
-The proposed command domain determines d, while the resulting E restricts the command domain. Solve for a compatible pair. Start with a desired command envelope, construct a valid E, then test the state and input inclusions. If they fail, choose a smaller envelope or change the interface, gains, model or timing, and repeat the affected derivation.
+The proposed command domain determines d, while the resulting E restricts the command domain. Solve for a compatible pair. Start with a desired command envelope, construct a valid E, then test the state and input inclusions. If these sufficient tests fail, try a tighter joint bound or revise the envelope, interface, gains, model or timing. Check which of the originally required operations remain achievable. Obtain a decision from the mission holder if the proposed revision changes what the system must deliver.
 
 A more direct formulation searches for S and E satisfying the error inclusion and the physical constraints together. For finite-dimensional parameterizations this can be an optimization or feasibility problem. No generic solver or convergence guarantee follows from writing that problem.
 
@@ -103,7 +103,7 @@ When a bound is conservative, try retaining command correlation, phase-dependent
 
 #### CAD.3:4.4 - Construct a continuation, not only one permitted command
 
-A permissible pair $(z,v)$ must also lead somewhere from which work can continue. For the nominal update $z^+=A_pz+B_pv$, seek a set Z such that every admitted z has at least one permitted v with $z^+\in Z$.
+For a finite duty, show that a permitted policy reaches the agreed terminal condition by its deadline and satisfies the constraints required along the way. Start with the admitted initial errors and bound the errors reachable at each successive instant under that policy. Check the applicable command and physical limits using the corresponding bound at each instant. The final bound may be sufficient even when it cannot be preserved for another step. Include a safe handover or shutdown if the duty requires one. Work may finish at a terminal state with no successor in the previous operating mode. For continuing operation, each decision must leave an admissible continuation. For the nominal update $z^+=A_pz+B_pv$, seek a set Z such that every admitted z has at least one permitted v with $z^+\in Z$.
 
 One construction repeatedly removes states without such a successor:
 

@@ -1,6 +1,6 @@
 ## How to Use This Repository
 
-Start with one of the ordinary examples or one of the cross-pattern cards when it recognizes the current project question. A direct example is enough when one pattern can return the needed result. A card helps when the answer must retain several pattern contributions, checks, and returns. If no example fits, use the Table of Contents or ask an assisting agent to compare a small plausible set of direct patterns.
+Begin with what you need from the Library. If you know the method and want its section, use the Table of Contents. If a displayed example resembles your situation, compare the decision its method helps someone make with yours. Whose choice is it? Does the answer concern one contribution, or how several form a result? A direct method or the argument in the example can settle your question. When it supplies a part, carry that result into the remaining work. A cross-pattern card helps when you need to keep several contributions connected. If you are exploring, an example can also suggest a question worth pursuing.
 
 Use the Architectural Reference for the cross-cutting ideas. **Big FPF Storylines** follows a report-review question through measurement, assurance, a shared-capacity condition and further inquiry. The Architectural Rationale there explains the choice of direct patterns, combinations and profiles and the contributions and limits of their shared sources.
 

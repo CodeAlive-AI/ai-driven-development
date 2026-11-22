@@ -1,6 +1,6 @@
 ## EAM.Reference:5 - Predictable mistakes, consequences and bias
 
-Starting from “replace this asset” can remove a viable maintenance or service alternative before comparison. Ranking condition scores can spend money on a less useful programme. Comparing purchase prices over unequal horizons can hide operating burden and remaining service value. Adding a generic risk allowance to costs that already include the same response can count them twice.
+When the question leaves the choice open, starting from “replace this asset” can hide a viable service or maintenance alternative. A decision to assess an already selected replacement calls for the assessment of that design under the actual terms. Ranking condition scores can spend money on a less useful programme. Unequal horizons can hide costs and remaining service value, and a risk allowance can count a response already included in the costs.
 
 Use the correction that addresses the difficulty: restate the required contribution, compare qualified whole options, retain separate conditions or reconcile the complete programme. The CityWater cases show that an individually sound replacement recommendation can coexist with a different programme recommendation.
 

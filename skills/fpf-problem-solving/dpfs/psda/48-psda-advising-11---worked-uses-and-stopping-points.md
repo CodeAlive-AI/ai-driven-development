@@ -36,7 +36,7 @@ Establish what the representative later Work would involve. A qualified demand a
 
 If only attendance and a course catalogue are available, return the missing intervention or transfer premise; do not prescribe the course or assert reachability. If qualified premises support both directions but not their order, retain them and name the distinguishing question, such as which representative Work the person can validly try within available support and time. The human branch uses current career information critically, as in [NCDG 2024, CD2 and CD3](https://www.ncda.org/aws/NCDA/pt/sp/ncdg_home_page); it does not infer learning transfer from career-information quality.
 
-Before any separate advice request, the same person may independently use the [opportunity Method's human example (FPF C.40.OCN:5.2)](../../sections/09-part-c---kernel-extension-specifications/109-c-40-ocn---construct-a-bounded-opportunity.md#c40ocn52---a-person-exploring-future-engineering-work). That entry does not require the distinct adviser assumed here.
+Before any separate advice request, the same person may independently use the [opportunity Method's human example (FPF C.40.OCN:5.2)](../../sections/09-part-c---kernel-extension-specifications/111-c-40-ocn---construct-a-bounded-opportunity.md#c40ocn52---a-person-exploring-future-engineering-work). That entry does not require the distinct adviser assumed here.
 
 
 

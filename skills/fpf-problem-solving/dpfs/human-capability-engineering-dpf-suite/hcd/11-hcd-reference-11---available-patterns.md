@@ -11,7 +11,7 @@
 | HCD.6.1 | Make a needed distinction discernible in practice. | Accessible contrast, action using the distinction and a learner response that guides correction, variation or whole-task use. |
 | HCD.7 | Arrange providers, access, tools and AI support. | Enabled contribution arrangement with competence, access, capacity, checking and fallback, or the exact gap. |
 | HCD.8 | Obtain or build missing capability-development support with bounded recursion. | Obtain/build decision, bounded provider or environment preparation, representative operating test, or first unsupported dependency. |
-| HCD.9 | Perform deliberate practice with feedback. | Focused-practice episode preserving first attempt, help, feedback and response; targeted retry after correction, or supported retention with a reason to continue or stop. |
+| HCD.9 | Perform deliberate practice with feedback. | Focused-practice episode preserving first attempt, help, feedback and response; observed correction or justified retention, with a targeted retry where required. |
 | HCD.10 | Choose whether and how to vary, space, interleave or progress practice. | Condition-sensitive next episodes with timing, retrieval, sources, support, challenge, observation and response rule kept distinct. |
 | HCD.11 | Assess performance in representative Work. | Observed contribution and bounded capability inference, or a distinct evidence or assessment gap. |
 | HCD.12 | Test transfer to unfamiliar Work or learning from a new source. | Transferred contribution, adaptation need and tested limits, with new-source learning separate. |

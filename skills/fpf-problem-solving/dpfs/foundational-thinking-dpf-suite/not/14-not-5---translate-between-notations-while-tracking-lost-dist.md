@@ -8,7 +8,7 @@
 
 **Use this when** work must continue in another notation and you need to construct or repair the translation. A diagram may need a textual form, an ordered performance may need a compact score, or an expression may need a representation accepted by another reader or tool.
 
-Start with the operation the receiving notation must support. Construct its expression from the source's interpreted parts and connections, then use it to obtain the needed answer. Look for a pair of source expressions that the translation would make indistinguishable. If the work needs their difference, retain it, enrich the target or restrict the translation's use.
+Start with the operation the receiving notation must support. Construct its expression from the source's interpreted parts and connections, then use it to answer the source question. Look at the originals that could yield the same target expression. For a value, can it differ between two of them? For a choice, can the recipient find an action acceptable across the whole group? Retain the necessary distinction in the target, supply accessible context or specify the questions this translation supports.
 
 The first result is a usable translation with an answer-recovery procedure, or a demonstrated loss and a concrete way to repair it. Recovering a needed answer, reproducing the source expression and carrying a target edit back are different demands; choose the ones the work requires.
 
@@ -62,15 +62,15 @@ Translate a small source expression, perform the intended operation in the targe
 
 Compare this result with what follows from the source under its declared interpretation. A mismatch locates a failed translation rule, a missing premise or a target operation that answers a different question. Repair the affected correspondence before relying on that answer.
 
-A target-side answer can be spurious for the source if the target admits additional possibilities. Retain the source restriction or construct the needed reflection argument. For example, allowing arbitrary real values does not preserve a source question that admits only whole counts.
+A target column can store real numbers and still carry whole counts exactly. Check which values the translated model admits and which result the recipient needs. Suppose the source permits counts from zero through three. A calculation over all real numbers from zero through three can establish that every admissible count is below four, because the bound holds throughout the larger range. Finding a value of one and a half in that range supplies no feasible count. To return a feasible choice, show that the proposed value belongs to the source and satisfies its other conditions.
 
 One successful expression establishes that case. A reusable translation needs an argument for its admitted family, such as a rule-by-rule construction over expressions. A separating example can refute a proposed general claim. Additional checking is warranted when its result can change the use or repair of the translation.
 
 #### NOT.5:4.4 - Expose distinctions the target collapses
 
-Look for different admitted source expressions with the same target expression. Ask whether the required operation gives different answers on them. If it does, the target alone cannot determine that answer: the translation has removed something the work needs. Section :5.2 makes this failure visible through cue order.
+Look for different admitted source expressions with the same target expression. When the recipient needs an exact value or verdict, two such originals with different correct answers show that the target alone cannot determine that answer. Section :5.2 makes this failure visible through cue order.
 
-If every collapsed pair gives the same needed answer, the loss need not obstruct that question. For a claim about the whole admitted family, justify that independence throughout it. MATH.2 supplies the mathematical construction through equivalence classes when that form is useful.
+If no admitted original fits the target under the supplied conventions, investigate the mismatch. For a value or verdict, show that the answer is the same within each group of source expressions that the recipient cannot tell apart. MATH.2 supplies the construction through equivalence classes when that form is useful. For a request to construct any admissible solution, return one that works for every source possibility in the group. Two originals may allow different sets of solutions with an option in common. Across three or more possible originals, each pair can have a solution in common while no solution works for the entire group. A request for all solutions would require recovering the full set. Establish the necessary property for each group covered by the translation.
 
 Include differences in assumptions, unfinished choices, references and reading context when they can change the answer. Equal visible strings can have different interpretations under different contexts. Conversely, two differently laid out diagrams can express the same directed structure when position has no role in their interpretation.
 
@@ -147,7 +147,7 @@ When the translation needs checking, use the questions relevant to its declared 
 
 - Can the recipient construct the target from the source parts, connections and required context?
 - Can a target result be returned as an answer to the source question at the stated strength?
-- Do two collapsed source cases require different answers for any promised operation?
+- For an exact value or verdict, could two source cases give the same target and require different answers? For a request to supply any one acceptable solution, does the offered solution work in every source case that the recipient cannot distinguish here?
 - Does a necessary supplement have a usable recovery rule and remain associated with the right source?
 - Is the round-trip claim about expressions, interpreted structures or selected consequences?
 - For an edited target, is the backward policy explicit, including incompatible edits?

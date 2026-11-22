@@ -1,6 +1,6 @@
 ## MKT.Reference:7 - Conformance and common failures - Follow the intended use
 
-Before relying on a connected result, follow one real or representative use from the opening question to the receiving action. Can the recipient understand the input, perform the needed operation and act on the returned result? Identify where a changed condition requires another decision. Use the following questions where they can change that reliance:
+Before relying on the account, trace the proposed or observed work from the customer’s situation to the decision. For a current order, a valid agreement or a record of the relevant act may already settle the question. For an offer to a class, identify the conditions under which the same conclusion holds throughout that class. A representative journey can reveal a missing condition. Give the reason it applies to the other cases that the conclusion covers. Use the following questions where they bear on that decision:
 
 - Is the useful result distinguished from the requested product, communication response and provider revenue?
 - Do the customer roles and differences change a real choice, rather than merely rename market segments?

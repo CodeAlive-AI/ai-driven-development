@@ -311,7 +311,7 @@ F.17 therefore creates no umbrella `Learning` or `LearningProgress` row. If one 
 
 #### F.17:12.3 - Relation and slot names become reusable
 
-An architecture pattern needs public names for `interfaceSlot`, `providedPort`, and `requiredPort`. The UTS row cites `A.6.5` for slot discipline, `A.6.RSIR` when the relation-signature-interface boundary is current, and `F.18` for durable names. The row does not treat a slot name as a component, system-role kind, assignment, or capability. If a project context uses `port` differently, keep the two local senses explicit. Cite an F.9 Bridge only when its direct predicate between the exact F.17 cells obtains; keep the proposed naming use and any reliance separate.
+An architecture pattern needs names for `interfaceSlot`, `providedPort` and `requiredPort`. Recover each governed meaning: the slot in the relation signature and what makes a port provided or required in this interface. Use an existing designation when it serves the receiving work. A name used once can stay local. When F.14 establishes a separate need for repeat public use, give the governed value its own row with the F.18 technical designation and a plain designation when useful. Keep other aliases with their source in the NameCard or lexicon. Cite A.6.5 for slot discipline, A.6.RSIR for the relation-signature-interface boundary and F.18:5.6 for the naming decision. A project may use `port` differently. Test any proposed cross-source Bridge under F.9 and justify its intended use separately.
 
 #### F.17:12.4 - Misleading evidence-role row
 
@@ -1052,6 +1052,8 @@ SenseCell.ModelRefinementLevel.2026-11-18:
   LocalExpression: level of model refinement
   LocalSenseClaim: the same order read towards a model that excludes a previously admissible answer for Q under I. Successive models with the same answers share a level for Q.
 ```
+
+For a source that says “level”, “scale” or “layer”, use these model rows when it compares models for one inquiry. Library.Reference:6.2.2 gives the companion F.17 rows for the composition of each kind of holon, functional layers, measurement scales and the scope kinds of USM. A Method stack can be read for both its functional organization and its constituent Methods where both relations are established. To recover the range of a speaker's “all” before choosing a row, use C.39.QR:4.1.1.
 
 The rows cite no F.9 Bridge: they make no correspondence claim between different local meanings. A concrete comparison still needs its models, inquiry, interpretation and B.5.MR test; citing a row supplies the selected name and its meaning.
 

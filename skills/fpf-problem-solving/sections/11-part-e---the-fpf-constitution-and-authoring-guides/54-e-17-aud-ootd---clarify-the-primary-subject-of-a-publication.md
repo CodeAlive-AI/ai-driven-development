@@ -16,7 +16,7 @@
 
 **Exact C.2.1 projection.** Only when the unit carries one identified claim-bearing episteme `E`, and its primary subject is the entity that the claims of `E` concern, may the author state `publicationUnitPrimarySubject = EntityOfConcern(E)`. Otherwise do not infer an `EntityOfConcernRef` from a topic label or interpretation alone, or use a primary-subject transition as evidence that the `C.2.1` participant changed.
 
-**Publication unit.** Here this means one bounded note, memo, sheet, review aid, screen, table, or short section that people are expected to read as one unit.
+**Publication unit.** A bounded note, memo, sheet, review aid, screen, table or short section intended for a person or an agent to interpret as one unit. A machine-only operating note qualifies when its recipient needs to interpret the whole note.
 
 **Use this when.** A note, memo, sheet, screen, table, comparison aid, or other publication unit can sound continuous even as it shifts what it is mainly about, which question it foregrounds, what it claims or asks the reader to do, or which wider process it appears to license. Use this pattern when local word repair is no longer enough and the unit needs stable answers about its subject, the move it makes, its permitted use, and the work that remains outside.
 
@@ -31,7 +31,7 @@
 - the question under repair is view, face, carrier, or publication architecture rather than publication-unit interpretation instability;
 - the unit is already being used to approve, assign, adjudicate, or direct work and should use the downstream decision, work, or reliance publication appropriate to that use.
 
-**Quick recovery.** If this situation fits, write the ordinary natural-language declaration in `E.17.AUD.OOTD:4.3` and compare it with the nearest worked slice in `E.17.AUD.OOTD:5.1` through `E.17.AUD.OOTD:5.6`. Use the six diagnostic prompts only if it is hard to state the declaration accurately. If one clear sentence or two short sentences settle the case, stop there. A card or further assurance is unnecessary for that ordinary result.
+**Quick recovery.** If this situation fits, write the ordinary natural-language declaration in `E.17.AUD.OOTD:4.3` and compare it with the nearest worked slice in `E.17.AUD.OOTD:5.1` through `E.17.AUD.OOTD:5.6`. Use the six diagnostic prompts only if it is hard to state the declaration accurately. For a request to clarify scope, one or two sentences can finish the work. If the unit owes its reader an assessment, include the criterion, relevant facts and resulting judgment.
 
 **What this pattern does.** `PublicationUnit Stability Discipline` names the broader family. `PublicationUnit Primary-Subject Discipline` is the local writing-and-review pattern for making one unit's primary subject, carried move, downstream-use boundary, and outside-work boundary clear together.
 
@@ -67,12 +67,12 @@ Without a named publication-unit discipline:
 | Force | Tension |
 | --- | --- |
 | **Local repair vs publication-unit stability** | The pattern must not replace local precision repair, but it must become available when local repair no longer stabilizes the unit. |
-| **Primary-subject clarity vs surrounding-work convenience** | The unit must keep one primary subject without forcing the whole surrounding work process into the same text. |
+| **Primary-subject clarity vs surrounding-work convenience** | One subject and one move can suffice for a short unit. When a joint decision needs connected subjects or moves, make their roles visible together and mark the boundary with surrounding work. |
 | **Interpretation clarity vs overgrowth** | The section must distinguish primary subject, `EntityOfConcern` when applicable, concern, carried move, downstream use, publication form, carrier, and process without requiring a long explanation of the ontology. |
 | **Plain entry vs later assurance** | The opening must stay light enough for ordinary use while preserving the distinctions needed if a concrete neighboring claim or assurance question later arises. |
 | **Publication-unit stability vs architecture replacement** | The pattern must not replace view, face, carrier, publication, or moving-lineage architecture. |
 
-### E.17.AUD.OOTD:4 - Solution - stabilize one publication unit, one primary subject, one move, and one outside-work boundary
+### E.17.AUD.OOTD:4 - Solution - make the subject, move and scope of a publication unit clear
 
 #### E.17.AUD.OOTD:4.1 - Manager-first entry
 
@@ -91,7 +91,7 @@ If the problem is still confined to one vague local lexical head, start with `E.
 
 #### E.17.AUD.OOTD:4.1.a - Plain working terms
 
-- **Publication unit** = a bounded piece of writing or display that people are meant to read as a whole, such as a note, memo, sheet, table, or guided screen.
+- **Publication unit** = a bounded piece of writing or display that the intended person or agent is meant to interpret as a whole, such as a note, memo, sheet, table or guided screen. A validator asked only to check syntax can finish with that result.
 - **Primary subject** = what that bounded unit is mainly about for the current reading. It is an ordinary local publication term, not a new ontological kind.
 - **Concern** = the question, aspect, or issue foregrounded about that subject. The concern can change while the subject remains the same.
 - **`EntityOfConcern`** = the one `U.Entity` occupying the entity-participant position in the `C.2.1` constitution of one identified claim-bearing episteme. Neither a topic label nor a writing question identifies that participant by itself.
@@ -102,7 +102,7 @@ If the problem is still confined to one vague local lexical head, start with `E.
 
 #### E.17.AUD.OOTD:4.1.b - What can change
 
-Treat the publication unit under review as one bounded readable unit with one primary subject for the current reading. That local subject declaration does not make the unit itself the source episteme, `C.2.1` `EntityOfConcern`, publication form, carrier, or E.24.PUB publication occurrence.
+Treat the publication unit as the bounded material the reader is meant to interpret together. One primary subject and move suffice for a simple reading. Where a decision depends on linked sections, identify each section’s subject and move and show how their connection supports the judgment. Identifying the unit this way leaves the source episteme, its `C.2.1` `EntityOfConcern`, the publication form, carrier and E.24.PUB occurrence under their own identity rules.
 
 Keep five change types distinct:
 1. a **subject change** changes what the unit is mainly about;
@@ -131,7 +131,7 @@ Once the carried episteme `E` is identified, the author may add the conditional 
 - downstream gate, approval, execution, or decision pressure;
 - invention of a publication-wide `EntityOfConcern` when no identified claim-bearing episteme supplies one.
 
-**Ordinary stop rule.** If one natural-language declaration plus the nearest worked slice settle the case, stop there. A transition is required only when one occurred, and a neighboring-pattern reference only when a concrete unresolved question remains. A unit that has established one primary subject, one carried move, and one outside-work boundary needs no further assurance solely to establish them again. Ordinary use requires no diagnostic card, `ClaimGraph`, evidence dossier, assurance result, work record, or `C.2.1` projection unless a separate receiving use independently needs one.
+**Ordinary stop rule.** If the commission is to clarify what a unit covers, a clear declaration can finish it. When the reader needs a judgment about the subject, state the judgment and the grounds it needs. A transition is required only when one occurred, and a neighboring-pattern reference only when a concrete unresolved question remains. A unit that has established one primary subject, one carried move, and one outside-work boundary needs no further assurance solely to establish them again. Ordinary use requires no diagnostic card, `ClaimGraph`, evidence dossier, assurance result, work record, or `C.2.1` projection unless a separate receiving use independently needs one.
 
 #### E.17.AUD.OOTD:4.2.a - Choose the least-cost suitable unit architecture
 
@@ -146,17 +146,17 @@ Compare four repairs before deciding to split:
 | **Retain one multi-subject unit with marked sections** | the sections have clear local headings and moves, their dependency or shared decision question makes joint reading useful, and one scope/non-scope declaration prevents overread | section boundaries still leave audience, claim, or permitted-use changes hidden |
 | **Split into separate units** | subjects serve different readers or actions, need independent reuse or approval, or one part falls outside the declared scope of the other | the split creates navigation, duplication, synchronization, or decision-assembly cost without reducing ambiguity |
 
-Choose the least-cost option that preserves comprehension, the exact meaning of each claim, intended use, and protection against overread. Do not optimize the count of subjects, sections, or documents. If a multi-subject container has no truthful umbrella subject and no joint reader use, treat it as a collection of units or split it; do not invent a broad subject to satisfy this pattern.
+Choose the least-cost option that preserves the meaning of the claims and the reader’s intended use. When the decision turns on a relation between two subjects, keep the comparison and its grounds available together in one passage or in connected, marked sections. Where there is no truthful umbrella subject or joint use, treat the material as separate units or split it. Give connected subjects their own headings when that helps the reader follow the relation. Expected savings in reading effort can guide a design choice. To report what particular readers actually understood, use evidence from their reading.
 
 #### E.17.AUD.OOTD:4.3 - Ordinary declaration and optional diagnostic
 
-The complete ordinary result is one natural-language declaration from which a reader can recover:
+A declaration of scope is complete when it gives the reader the following information.
 - the bounded publication unit;
-- its primary subject;
+- its primary subject or the subjects whose connection matters to this use;
 - the claim or communicative move it carries; and
 - the wider work or use that remains outside.
 
-One sentence or two short sentences are enough. For example:
+One or two sentences can state that scope.
 
 > This review note compares the interface-boundary options under the current incident evidence. Rollout responsibility and approval remain outside this note.
 
@@ -166,8 +166,8 @@ When the sentence is hard to write or a reviewer suspects a hidden shift, use th
 
 | Prompt | Diagnostic question |
 | --- | --- |
-| 1 | What material am I asking people to read as one bounded publication unit? |
-| 2 | What is its primary subject? In other words, what is it mainly about? |
+| 1 | What material is the intended reader to interpret as one bounded unit? |
+| 2 | What is it mainly about? If the decision connects subjects, which subjects and relation must readers see together? |
 | 3 | Which concern is foregrounded, and what claim or communicative move does the unit carry? |
 | 4 | What downstream use is permitted or blocked, and what wider work is outside this unit? |
 | 5 | Has subject, concern, carried move, downstream use, or the `C.2.1` entity participant changed, and does the unit say precisely what changed? |
@@ -223,22 +223,18 @@ A short architecture memo begins with:
 Three paragraphs later it says:
 `We should therefore assign rollout responsibility to platform and stage migration in two sprints.`
 
-The memo needs more than a lexical repair.
-The memo's primary subject began as the service boundary, but its carried move changed from describing or assessing that boundary to proposing responsibility assignment and a two-sprint rollout; its apparent downstream use changed from understanding to planning and decision. None of those changes by itself proves that the `C.2.1` `EntityOfConcern` of an identified carried episteme changed.
-Repair the memo in one of two ways:
-- keep the note about the boundary and push rollout outside;
-- or make the changed move and downstream use explicit and use a downstream decision or rollout publication.
+The memo moved from the interface to a proposal to assign and schedule rollout. Mark the transition if the reader needs both, or put independent rollout work in its own unit. Moving from describing to assessing the same interface need not change the `C.2.1` `EntityOfConcern` of the episteme.
 
-**Repaired two-sentence memo.** `This memo assesses the proposed service boundary between catalog and checkout. Rollout sequencing, responsibility assignment, and approval remain outside this memo.`
+For an introduction, “This note introduces the service boundary between catalog and checkout. Rollout is outside its scope” can finish the job. For an assessment, keep the two sides together and give the finding. Suppose checkout must handle every agreed catalog response. The catalog can return “item unavailable” and checkout accepts only a priced item. The current interface therefore fails that requirement. One such response settles this failure. To establish compatibility for that requirement, show that checkout handles every agreed response under the stated conditions.
 
-**Result.** The author publishes those two sentences and stops. A rollout record opens only if rollout later becomes current work.
+Either finding can guide an interface decision. Where a broader assessment also depends on an unknown deployment condition, identify what remains open. A rollout assignment requires the responsible authority’s action.
 
 #### E.17.AUD.OOTD:5.2 - Operations note shifting into approval
 
 An incident note begins as a comparative review of timing variance and operator context.
 It ends as if it already recommends a production action.
 
-The incident episode may remain the primary subject while the foregrounded concern changes and the carried move shifts from comparison to recommendation. Keep the review unit about the episode and the contrast it is surfacing; put action approval in an explicit outside-work or downstream decision text.
+The incident may stay the primary subject while the move changes from comparison to recommendation. Mark the change if the reader needs both. To communicate an existing approval, cite its authoritative outcome and scope. When approval is needed and still pending, give the decision-maker the proposal and its grounds.
 
 Use `C.11` if the new text chooses among already available actions. If an actual approving communication and an instituted permission matter, keep the `A.2.9` communicative Work and the `A.2.8.PER` grant relation separate. Use `A.21` only when a current `OperationalGate(profile)` publishes a gate decision.
 
@@ -292,7 +288,7 @@ To counter that bias, name the primary subject, concern, carried move, downstrea
 
 ### E.17.AUD.OOTD:7 - Conformance Checklist
 
-**Checklist scope.** Use this checklist when checking a claimed application of this pattern, not as nine required authoring steps. The one- or two-sentence ordinary declaration remains a complete result. Inspect only the rows implicated by the unit, transition, `EntityOfConcern` projection, neighboring claim, or unit-architecture choice, and do not publish a nine-row record by default.
+**Checklist scope.** Use this checklist when checking a claimed application of this pattern, not as nine required authoring steps. A short declaration can settle scope. When the unit is commissioned to assess its subject, check that the reader also gets the judgment and its grounds. Inspect only the rows implicated by the unit, transition, `EntityOfConcern` projection, neighboring claim, or unit-architecture choice, and do not publish a nine-row record by default.
 
 1. **CC-OOTD-1 - One publication unit is explicit.**
    The text identifies the publication unit under review as one note, memo, sheet, screen, table, or section meant to be read as one unit.
@@ -319,7 +315,7 @@ To counter that bias, name the primary subject, concern, carried move, downstrea
 - **`EntityOfConcern` inflation.** Calling every topic, kind, interpretation, question, or writing transition an `EntityOfConcern` or `EntityOfConcern` change.
 - **Work-process smuggling.** Letting a note begin as architecture, incident review, or comparison work and end as rollout, approval, or execution guidance without naming the transition.
 - **Admissibility-pattern replacement.** Treating this pattern as if it replaced view, face, or carrier architecture, entityOfConcernRef-preserving transform rules, explanation-face rules, bridge rules, or downstream decision texts.
-- **Overgrowth by declaration.** Stacking heavier fields onto a unit that still cannot keep one stable primary subject, one move, and one outside-work boundary in place.
+- **Overgrowth by declaration.** Stacking fields onto a unit while readers still cannot tell which subjects and moves it connects or what remains outside.
 
 ### E.17.AUD.OOTD:9 - Consequences
 

@@ -38,9 +38,9 @@ The local result is the repaired head, its kind and reading, the primary entity 
 
 Use the five questions in `E.17.AUD.LHR:3.2` to recover the local repair.
 
-**Local-repair threshold.** One local repair should restore the meaning of the overloaded head, its kind and local reading, the primary entity or relation when one is active, and the action or question the sentence carries. If the next sentence borrows a different kind, reading, or outside-work boundary from the same head, the problem extends beyond that repair.
+**Local-repair threshold.** One local repair should restore the meaning of the overloaded head, its kind and local reading, the primary entity or relation when one is active, and the action or question the sentence carries. If the evidence leaves two readings open, retain the content both support. Resolve the difference only if it affects the question at hand. If the next sentence borrows a different kind, reading, or outside-work boundary from the same head, the problem extends beyond that repair.
 
-**When to use a neighboring pattern.** If one local repair stabilizes the unit and the remaining question is a bounded comparison over pinned source epistemes or publications, use `E.17.ID.CR` (`ComparativeReviewUnit`). If the repaired unit still cannot keep one primary subject, one carried move, and one outside-work boundary visible, use `E.17.AUD.OOTD` (`PublicationUnit Primary-Subject Discipline`). Adding more qualifiers to the same head will not settle that question.
+**When to use a neighboring pattern.** If one local repair stabilizes the unit and the remaining question is a bounded comparison over pinned source epistemes or publications, use `E.17.ID.CR` (`ComparativeReviewUnit`). If its subjects, carried moves or outside-work boundary remain unclear after the word is repaired, use `E.17.AUD.OOTD` (`PublicationUnit Primary-Subject Discipline`). Adding more qualifiers to the same head will not settle that question.
 
 ### E.17.AUD.LHR:1 - Problem frame
 
@@ -101,7 +101,7 @@ Use these five questions to recover an ordinary local repair:
 | --- | --- |
 | 1 | Which trigger word is carrying unresolved semantic load? |
 | 2 | What lexical-head kind is it naming here? |
-| 3 | Which local reading is primary here? |
+| 3 | Which reading does the wording and its source support here? If several fit, what common content suffices, and what fact would distinguish them if it matters? |
 | 4 | What active primary entity or relation, carried action or question under repair, and outside work are in play here? |
 | 5 | After one local repair, is local restoration enough, or does another governing FPF pattern or project-side FPF kind and reference named by value now govern the case? |
 
@@ -125,7 +125,7 @@ The nearest worked slices for those three repair dispositions are:
 If the local case is close to a neighbouring-pattern boundary and the ordinary card already stabilizes the unit, add these checks:
 - overloaded local lexical head;
 - restored lexical-head kind;
-- restored active local reading;
+- the supported local reading, or what is established across the remaining readings;
 - restored active primary entity or relation;
 - restored carried action or question under repair;
 - restored outside-work boundary;
@@ -145,7 +145,7 @@ Do not use it to rescue a unit whose publication-unit reading still shifts, and 
 Use this order when one local lexical head is carrying too much:
 1. name the overloaded word;
 2. restore the lexical-head kind;
-3. restore the active local reading;
+3. recover the supported reading. If several remain, state what still holds and check a distinguishing fact only when the difference matters to the reader’s work;
 4. restore the active primary entity or relation when one is active;
 5. restore the carried action or question under repair, if any;
 6. restore any family, governing pattern, primary entity, active relation, and nearest outside-work boundary the sentence is relying on;
@@ -155,7 +155,7 @@ A narrowing qualifier alone does not count as restoration.
 Treat this order as one local repair aid, not as a canonical flow.
 Steps 1-6 restore the overloaded local lexical head; step 7 classifies what the repaired unit supports as the next move.
 
-- If step 6 keeps reopening because the same unit still cannot hold one stable primary subject, one carried move, and one outside-work boundary, stop local repair and apply `E.17.AUD.OOTD`.
+- If step 6 keeps reopening because the reader still cannot follow which subjects and moves the unit connects or what remains outside, apply `E.17.AUD.OOTD`.
 - If the local lexical head now has a clear reading and the only remaining question is one bounded contrast over already available source epistemes or publications, apply `E.17.ID.CR`. The comparison alone does not require a fuller local repair record.
 - If the head is clear and no neighboring reading has become primary, stop without adding the extension.
 
@@ -265,14 +265,11 @@ After one sentence, the same unit starts talking as if it were:
 - the decision object;
 - and the rollout work that follows if approval is recorded.
 
-Local repair can still restore the overloaded local lexical head:
-- overloaded local lexical head = `document`;
-- restored lexical-head kind = review publication unit;
-- active local reading = publication unit, not decision object or rollout work;
-- carried move = record the current release reasoning visible in this unit;
-- outside work = approval, rollout execution, release, gate, policy, assurance, or adjudication question.
+First identify what the entry actually contains. The word `document` can be replaced by `release note` on the quoted sentence alone. Its heading leaves open whether the entry gives a reviewer’s recommendation, an authorized outcome, or both. If all the reader needs is the note about the release question, the local repair can finish there.
 
-The repaired head alone does not stabilize the unit. Later sentences still shift between the object of the decision, the comparison of evidence, and the work after the decision. The local repair exposes the remaining defect: the unit cannot keep one object, one move, and one outside-work boundary visible.
+If the entry attributes “defer until the seal test passes” to the authorized release owner and the provenance confirms that decision for this candidate, the editor can report the deferral. If the reviewer only recommended deferral, report the recommendation. An entry that contains both can identify the reasoning and the decision. If the distinction matters and the source leaves it open, state which outcome remains unknown and what would settle it.
+
+In this example the following paragraphs still move from weighing evidence to reporting a decision and then to carrying out rollout. Mark the change of move and the boundary of the work that follows. A heading alone cannot grant rollout authority.
 
 **Recovery reading.** Keep the restored head as the local result and stop expanding the local repair. Apply `E.17.AUD.OOTD` because the unit’s reading still shifts after that repair.
 
@@ -310,11 +307,11 @@ Use a different governing pattern when:
 | The repaired local lexical head is no longer the main problem and the publication unit still has unstable primary-subject or carried-move reading. | `E.17.AUD.LHR:3.2 Row 5`: one local repair no longer stabilizes one object, one move, and one outside-work boundary. | `E.17.AUD.LHR:5.5` |
 | The same unit is already stable enough and the remaining question is one bounded comparative review move over already pinned source epistemes or publications. | `E.17.AUD.LHR:3.2 Row 5`: the local lexical head now has a clear reading and the remaining question is the bounded comparison, not one more local repair. | `E.17.AUD.LHR:5.4` |
 | Outside observation or environmental change has changed what the same local unit can claim. | The local-repair threshold plus the stop-and-reopen safeguard: do not keep appending new pressure to the same unit. | `E.17.AUD.LHR:5.6` |
-| The unit is being used to communicate approval or a gate or adjudication decision, or to direct execution work. | `E.17.AUD.LHR:3.2 Row 4` plus the outside-work field: the sentence is no longer naming one overloaded local lexical head inside one review publication unit. | `E.17.AUD.LHR:5.5` and `E.17.AUD.LHR:5.6` |
+| A claim about approval, a gate, adjudication or execution still needs to be established. | `E.17.AUD.LHR:3.2 Row 4`. To communicate an existing decision, cite the authoritative outcome. If the authorized choice or action is still owed, identify it for the responsible party. | `E.17.AUD.LHR:5.5` and `E.17.AUD.LHR:5.6` |
 
 The comparison-side neighbor is `E.17.ID.CR ComparativeReviewUnit`: use that governing pattern when the local lexical head now has a clear reading, the unit already stays about the same primary subject, and the remaining question is one bounded comparison over already available source epistemes or publications.
 
-The main publication-unit neighbor is `E.17.AUD.OOTD PublicationUnit Primary-Subject Discipline`: use that governing pattern when local lexical-head repair is no longer enough and the whole publication unit still cannot keep one stable primary subject, one carried move, and one outside-work boundary visible.
+The main publication-unit neighbor is `E.17.AUD.OOTD PublicationUnit Primary-Subject Discipline`: use that governing pattern when local lexical-head repair is no longer enough and the reader still cannot follow the unit’s subjects, moves or outside-work boundary.
 
 Treat those as neighboring recoveries, not as a required sequence. Some cases will stop after one local repair, some will apply bounded comparison under `E.17.ID.CR`, and some will apply publication-unit stabilization under `E.17.AUD.OOTD` once the question the unit supports changes.
 

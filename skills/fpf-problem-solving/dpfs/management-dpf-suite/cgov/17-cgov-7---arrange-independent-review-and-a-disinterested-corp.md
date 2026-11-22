@@ -7,7 +7,7 @@
 
 Use this pattern when a corporate matter needs review or decision participation protected from an identified interest, when a required independent contribution is missing, or when an expert opinion is being treated as corporate approval.
 
-Start with the matter, applicable authority and conflict conditions. Determine what must be reviewed, by whom, and which participants can make the later decision. Return the review findings and their limits, together with the arrangement and remaining conditions for a disinterested decision. The decision itself is performed under CGOV.11 or an adequate existing corporate procedure.
+Start with the matter, the applicable authority and the conflict conditions. Identify the question that needs independent judgement, who may answer it and who may decide for the corporation. If commissioned to design the review, specify a workable arrangement. If an opinion is due, obtain its findings and limits. For a corporate decision, apply CGOV.11 or the existing corporate procedure.
 
 ### CGOV.7:2 - Problem
 
@@ -21,7 +21,7 @@ The decision needs useful judgement within its time and resource constraints. In
 
 ### CGOV.7:4 - Solution
 
-Arrange the review and the decision separately, then connect the findings to participants who can use them under the governing rules.
+Establish what judgement the matter requires and who is authorized to decide. One disinterested committee may have power to evaluate the evidence and decide in one reasoned act. Where these responsibilities belong to different participants, arrange for the evidence to reach those who can act on it.
 
 #### CGOV.7:4.1 - Establish the required contribution
 
@@ -41,7 +41,7 @@ Establish who may commission the work, receive findings and decide. Recover comp
 
 #### CGOV.7:4.3 - Provide access and obtain a usable review
 
-Give the reviewer the question, relevant materials, assumptions, alternatives and known limitations. Make their access sufficient for the required contribution. Where an interested participant controls the information, provide a way to request clarification or report a material limitation to the eligible recipient.
+Give the reviewer the question, relevant material, binding assumptions, proposed alternatives and known limitations. If the board commissions the reviewer to choose which parts of a transaction belong in the valuation or which alternatives to compare, give access to the underlying transactions and leave that judgement to the reviewer. A valuation under a stipulated loading or price can instead use those fixed terms directly. Where an interested participant controls the information, provide a way to seek clarification or report a limitation to the eligible recipient.
 
 Specify what the review will return: its answer, reasons, scope, material assumptions and unresolved issues. The substantive analysis follows the relevant domain method. A financial valuation and a technical assessment may be needed for the same matter without either answering the other's question.
 
@@ -53,7 +53,7 @@ Give eligible decision participants the findings with their conditions and mater
 
 Preserve what each result establishes. A price opinion can inform deliberation without approving the transaction. A valid participation arrangement enables a decision without predicting its merits. A conditional opinion remains conditional when included in the board papers.
 
-The result can therefore be complete for this method while the board has not yet decided. State what can proceed and which conditions remain. If eligibility, appointment or information access is still proposed, keep that status visible to the practitioner arranging the decision.
+A design for the review can be delivered before the review takes place. An independent opinion can finish the reviewer’s assignment before the board votes. If the assignment includes a decision, establish the act of the authorized participants. Where the board must exercise its own judgement, establish the decision it reached. A required opinion may have been obtained even when the board rejects the transaction on another sufficient ground. Trace its use where the procedure requires it or the question asks what informed the decision.
 
 ### CGOV.7:5 - Archetypal Grounding
 
@@ -67,7 +67,7 @@ The required review is available under its stated condition. The two eligible di
 
 #### CGOV.7:5.2 - Independence or a further report that adds nothing
 
-Change the proposed valuer's terms: its entire fee is payable only if the purchase is approved. That dependence is relevant to the required independent opinion. The arrangement must be assessed and corrected under the applicable criteria, for example by changing the engagement or selecting another qualified reviewer.
+Change the proposed valuer's terms: its entire fee is payable only if the purchase is approved. That dependence is relevant to the required independent opinion. Assess whether that interest is permitted under the applicable independence criteria and whether any permitted safeguard suffices. If it is disqualifying, change the engagement or select a qualified independent reviewer.
 
 Alternatively, retain the adequate first opinion and suppose a participant asks for a second one “for assurance.” No rule requires it, and the existing result already answers the valuation question under sufficient conditions. The eligible directors can use the first valuation and proceed to the decision.
 
@@ -77,12 +77,12 @@ More reviewers can appear safer even when they examine the same assumption and d
 
 ### CGOV.7:7 - Conformance Checklist
 
-Are the review question and later corporate decision distinct? Are independence, competence, authority and effective participation established for their own uses? Can reviewers obtain and question the needed information? Do findings preserve their assumptions and limits? Can the receiver identify both what is available now and what remains to be done?
+Can the recipient identify the independent judgement and the corporate decision, including who may make each? Are the competence, information, independence and participation conditions established to the extent needed for the commissioned design, opinion or act?
 
 ### CGOV.7:8 - Common Anti-Patterns and How to Avoid Them
 
 - **External means independent.** Examine the relationships and incentives relevant to this matter.
-- **The expert approves the corporate act.** Return the opinion to the authorized decision participants.
+- **An opinion is recorded as approval.** Establish what power the reviewer held and what the reviewer actually did. Where the reviewer only advises, the competent organ still has to decide.
 - **Eligibility is treated as competence.** Obtain the missing specialist contribution or change the arrangement.
 - **Every unresolved question generates another report.** Identify the conclusion that additional work could change and its attainable value.
 - **Conditional advice becomes an unconditional board-paper conclusion.** Preserve the condition through its receiving use.

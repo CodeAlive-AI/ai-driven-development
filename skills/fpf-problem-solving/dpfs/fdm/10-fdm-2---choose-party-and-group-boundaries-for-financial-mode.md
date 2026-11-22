@@ -27,7 +27,7 @@ Separate-entity accounts can miss correlated exposure or an actual support arran
 
 ### FDM.2:3 - Forces
 
-An aggregate simplifies comparison when it retains the distinctions that affect the conclusion. Check membership and support at the time the question concerns.
+An aggregate simplifies comparison when it retains the distinctions that affect the conclusion. Check the membership or support used in the conclusion at the time the question concerns.
 
 A relation can establish a duty or power, or support an expectation of voluntary action. State which applies. An expected transfer can inform a scenario. A claim of committed funding also needs evidence of the commitment.
 
@@ -35,13 +35,13 @@ A relation can establish a duty or power, or support an expectation of voluntary
 
 #### FDM.2:4.1 - Start with the financial consequence being examined
 
-Identify whose payment, position, exposure, control or report is at issue and the relevant time. Use the underlying entities and accounts to interpret the group label.
+Start with the consequence the recipient needs: the exposure of a group, the position of any one member, or what several holders can do under the same arrangement. A total can describe the first and leave the other two open. Hold one member's position fixed and consider a change in the other members' rights or draws. Then hold the total fixed and vary who can use it by the required time. Follow a difference down to the accounts, claims or rules that explain it. Stop at the group when its established account already answers the question.
 
 For a payment, identify the obligor and the funds it can use by the due date. For a portfolio question, identify the investments or exposures and what their aggregation means for risk. For a report, identify the framework adopted or required for the entity and period. Use its purpose and applicable authority to select the rules. Use [SIE.5][SIE] if entity identity or continuity is disputed.
 
 #### FDM.2:4.2 - State why these members belong together
 
-Choose the grouping criterion for the question. It may be a common founder, control, contractual support or inclusion under the applicable consolidation rule. Establish which parties meet the criterion at the relevant time. Retain the underlying positions needed to interpret a group result.
+Choose the relation that defines the group for this question, such as a common founder, control, contractual support or inclusion under a reporting rule. Establish membership at the relevant time to the extent the answer depends on it. A complete list calls for grounds for both inclusion and coverage. A supported total or restriction covering every admissible member can settle a threshold without naming them individually. A request for the list itself still calls for the list.
 
 Different criteria can produce overlapping groups. Keep them connected when the receiving use needs them. A single hierarchy need not carry every financial relation.
 
@@ -57,6 +57,8 @@ When a transfer is expected, state the reason for the expectation and its role i
 
 Combine only amounts whose meaning, time, currency and inclusion rule are adequate for the receiving use. Preserve restrictions and conditional relations that can change the result.
 
+For example, a creditor asks whether two debts of 60 each are fully covered if both default and both demands qualify. The guarantees cover qualifying principal up to their stated limits. Each debt, considered alone, fits under a limit of 80. Do the contracts grant two independent limits or must both claims draw on one limit of 80 for the period? With one limit of 80 that cannot replenish between the two demands, at least 40 of the 120 lies outside that cover, even when the demands arrive on different days. Under two independent guarantees each covering its own debt up to 80, all 120 is within cover under those conditions. An answer about one named debt may also depend on priority, allocation or which demand has already consumed the available cover. To establish what the creditor has received, use evidence of payment. For the original question about full cover the terms and the joint limit suffice.
+
 For a reporting result, use the provisions governing consolidation, recognition, measurement or elimination, including material exceptions, or a responsible accountant’s supported treatment. If control determines a disputed boundary, establish the relevant ownership and decision rights. Apply an available qualified determination or seek one for the entity and period if the result requires it. Until then, identify which aggregate remains unresolved.
 
 Use an established reporting boundary and treatment to identify included entities, align their accounting bases and make required adjustments. If amounts remain incompatible, explain why they have to stay separate. Use [MA.4][MA4] for account construction and reconciliation. A valuation, conversion or netting operation needs its own applicable rule.
@@ -64,6 +66,8 @@ Use an established reporting boundary and treatment to identify included entitie
 For a disputed treatment, identify the rule or judgement that determines the operation, the parties and period it covers, and conditions that could change it. Apply a sufficient existing treatment. Establish a missing jurisdiction or reporting basis from the available authority, or obtain a determination if one is still needed.
 
 For a payment question, derive the debtor’s usable funds at the due time after other relevant receipts and obligations. Count support from another entity according to its terms and established availability under §4.3. For a risk question, retain shared exposures and dependencies relevant to the scenarios. An exposure aggregate and a payment balance require their own meanings.
+
+Establish that the report and the applicable restrictions admit an allocation, then test the payment over the allocations they allow. If the total and the account limits conflict, identify the incompatible premises. A separately established limit on the debtor can still decide the payment on its own grounds. If all leave the debtor enough, the balance need only be bounded. To show that the report leaves payment open, find two permitted allocations with the same report, one sufficient and one short, or show why both exist. For a shared line, include the draws that can consume the same capacity before it is restored, the authority to allocate it and the time at which the allocator learns which account needs funding. For a promise to serve any eligible payee, a reservation made before the payee is known must cover whoever can still request service. For a service target expressed as a probability, use its population and criterion. A sufficient lower bound on timely service can settle that question. To establish that a particular payment occurred use the effective settlement or other evidence for it.
 
 #### FDM.2:4.5 - Return the boundary and its financial meaning
 
@@ -102,7 +106,7 @@ Evidence of past voluntary support can inform an expectation. It does not by its
 
 Check the following for the stated use of the boundary.
 
-1. The financial question, relevant time and underlying parties are clear.
+1. The financial question, relevant time and scope of the parties or positions are clear. A conclusion about joint use preserves any common limit and conditions of allocation on which it depends.
 2. Group membership follows an identified criterion adequate for that question.
 3. Liability, control, support, permission and expected behavior remain distinct where their differences matter.
 4. An aggregate retains the necessary time, currency, restrictions and applicable composition rule.
@@ -132,7 +136,7 @@ A single reporting tree is adequate when its rule and the receiving use match. S
 
 C.32.MWA explains how several useful structures can coexist. In a financial model, membership by founder, control or support can differ. Use SIE.5–6 when identifying the entities or composing their claims requires further work.
 
-In §§4.1–4.4, select the boundary for the financial question, preserve the members’ positions and examine support separately. Identifying the debtor and any support relation can expose a shortfall hidden by the founder-group total. Extend the model when another material relation is needed.
+In §§4.1–4.4, select the boundary for the financial question, preserve the member positions and support conditions on which the requested conclusion depends. Identifying the debtor and any support relation can expose a shortfall hidden by the founder-group total. Extend the model when another material relation is needed.
 
 [AASB 10 §19 and B86–B88][AASB10] illustrate the reporting operation. Consolidated statements on that basis require consistent accounting policies and adjustments eliminating intragroup balances. Apply the provisions that govern the report once its boundary is established. A different reporting basis calls for its own treatment.
 

@@ -5,7 +5,7 @@
 > A pattern language for constructing mathematical objects, operations and arguments, using their results, and developing the next useful question.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Version:** 24 October 2026
+- **Version:** 22 November 2026
 - **Status:** Eternal alpha: a growing repertoire of methods for mathematical work.
 - **License:** © 2026 Anatoly Levenchuk. Original framework text: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Cited sources retain their own terms.
 - **Publication:** [FPF Library repository](https://github.com/ailev/FPF)
@@ -86,7 +86,7 @@ To cite this edition: Anatoly Levenchuk, *Mathematical Thinking DPF*, [FPF Libra
 
 A mathematical result often becomes an input to further work: a construction supplies the objects for a proof, a failed implication changes the question, and a changed rule requires an argument that its useful properties survive. The patterns in this language help make and connect those contributions.
 
-The two worked connections below start at different places. The first turns a working difficulty into a mathematical question and returns the answer to its subject. The second changes a rule so that independently obtained results can be combined, proves the new rule and revisits it when the requested answer changes. Start with the results you already have.
+Start with what the recipient will do with the answer. A question about one journey, a rule to apply to every journey and an explanation of how to choose that rule can require different mathematical work. Use a known answer when its conditions hold. If choosing the construction is your task, identify what a proposed representation would let you calculate and what its result would allow the recipient to conclude. The two worked connections below follow such choices.
 
 Use the Table of Contents to find other questions and the pattern titles. Each body states its prerequisites, method, examples and limits. A construction can serve mathematics itself or describe another subject; FPF C.29 helps establish what its result says about that subject.
 
@@ -96,22 +96,24 @@ You can ask an assisting agent: “Explain this and comment on my proposal witho
 
 - **Situation:** Something in the work is unexplained or fails, and you do not yet know whether another observation, a new model, a mathematical construction or a different computation is needed.
 - **Question:** What must become distinguishable or possible for the next answer to be useful?
-- **First useful result or blocker:** A mathematical task with a stated use. For example, a cart's travel log gives total distance, but that total cannot tell whether the cart returned to its start. Identify the position question first. With straight-line motion and known displacements, a sequence of signed displacements supplies an account that can answer it. MATH.1 constructs the sequences and their composition; MATH.5 derives the accumulated displacement from the elementary displacements. A sensor report must first be interpreted as the movement it measures.
-- **Start with:** FPF B.5.FM. State the working question, identify the participants and relations that may change its answer, and build a small account that yields a consequence. If an unfamiliar theory supplies the account, B.5.TU helps construct its application. B.5.MPC connects the physical, mathematical and computational contributions when the difficulty lies between them. Their bodies are in the FPF publication linked above. If the problem is deciding what an object must let you form or recover, use MATH.16. If it is deciding which distinctions can be forgotten, use MATH.2. If an implication is doubtful, use MATH.6. The question determines the construction; an available formula may settle only part of it. C.29 supplies the interpretation through which a mathematical result answers the original question. C.29.2/.3 develop a needed procedure and its execution.
-- **Stop or return:** After the question changes, test whether the summary still determines the answer. If two runs have the same final position but differ in a requested visit, recover the information that separates them. MATH.2 helps locate the failed identification; B.5.QD develops the next useful question. For a working method changed by the result, B.1.5.CM helps describe the proposed operations and their relations; A.3.1.CC checks the claims in that account and its description. The Architectural Reference's worked use follows these choices in detail.
+- **First useful result or blocker:** A conclusion about the requested subject or an account of what is still needed to reach it. In the cart example, distinguish a question about one journey from a request for a rule for reading future logs. A reliable record that the cart arrived back at the start can settle a return-to-start question. Two unit moves along a line cover the same total distance whether the second continues forward or returns to the start. For motion along a line, add the signed displacements if they are known. Seek evidence for a missing displacement when its value could change the answer. When the problem is how to represent and combine the movements, MATH.1 constructs sequences of movements and MATH.5 derives their accumulated displacement. An instrument reading needs an interpretation that relates it to the cart's movement.
+- **Start with:** FPF B.5.FM. State the working question, identify what would count as an answer and choose the objects and relations on which it depends. A direct ground can settle the question. Where a formulation is missing, derive a consequence and ask what it establishes for that use. If an unfamiliar theory supplies the account, B.5.TU helps construct its application. B.5.MPC connects the physical, mathematical and computational contributions when the difficulty lies between them. Their bodies are in the FPF publication linked above. If the problem is deciding what an object must let you form or recover, use MATH.16. If it is deciding which distinctions can be forgotten, use MATH.2. If an implication is doubtful, use MATH.6. The question determines the construction; an available formula may settle only part of it. C.29 supplies the interpretation through which a mathematical result answers the original question. C.29.2/.3 develop a needed procedure and its execution.
+- **Stop or return:** Stop when the record, argument or construction you have settles the original question at its required scope. If the question changes, test whether the summary still determines the answer. If two runs have the same final position but differ in a requested visit, recover the information that separates them. MATH.2 helps locate the failed identification; B.5.QD develops the next useful question. For a working method changed by the result, B.1.5.CM helps describe the proposed operations and their relations; A.3.1.CC checks the claims in that account and its description. The Architectural Reference's worked use follows these choices in detail.
 
 ### MP-COMBINE-RESULTS - Change a rule so that separately obtained results can be combined
 
 - **Situation:** A rule works for one input, but splitting the work or combining its results changes the answer.
 - **Question:** What must each contribution retain, how should contributions combine, and why will the result still answer the original question?
-- **First useful result or blocker:** A composable summary with a stated use. For the arithmetic mean of a nonempty finite list of real values, return each group's sum and count; add these pairs and divide the total sum by the total count.
+- **First useful result or blocker:** A rule specifying what each input represents, which inputs may be combined and what can be recovered for the recipient. To choose the rule, hold the local reports fixed and vary how their underlying contributions belong to the whole. If that can change the required answer, recover the missing relation or find grounds sufficient across the allowed cases.
 - **Start with:** [MATH.23](31-math-23---develop-a-conjecture-by-changing-a-construction.md) to develop the question; [MATH.2](15-math-2---treat-objects-as-the-same-while-preserving-operatio.md) to choose compatible identification; [MATH.17](13-math-17---construct-mathematical-spaces-of-operations-and-op.md) to work on the combining operation; [MATH.19](19-math-19---construct-a-proof-through-intermediate-claims.md) for the argument.
 - **Stop or return:** Use the proved rule within its assumptions. A new statistic, allowed transformation or arithmetic implementation can invalidate a retained-information or proof step; return to that step.
+
+If you are to design a way of combining results, try it on your own material before reading the worked connection. What does each contribution represent? Decide which results may be joined and which relations must survive when they are joined. For successive operations this can include the order and whether the output of one is an admissible input for the next. Where counting enters the question, establish what counts once. Show why the proposed combination yields the recipient’s answer over the allowed inputs. An earlier construction of your own can supply that reasoning. A calculation under a supplied rule demonstrates its application.
 
 #### Worked connection for MP-COMBINE-RESULTS
 
 
-**1. Recover the failure and intended result.** Averaging the means of [0] and [2,4] gives 1.5, while the mean of the combined list is 2. MATH.23 turns this difference into a question: which summary recovers the mean of every nonempty combined finite list, for every partition into nonempty groups? The result is a claim and its range of cases for the identification step.
+**1. Recover the failure and intended result.** Suppose the recipient wants the mean per reading and the groups partition one list of readings. Averaging the means of [0] and [2,4] gives 1.5, while the mean of the combined list is 2. MATH.23 turns this difference into a question: which summary recovers the mean of every nonempty combined finite list, for every partition into nonempty groups? The result is a claim and its range of cases for the identification step.
 
 **2. Decide what may be forgotten.** MATH.2 tests identification against the operations still needed. Equal means are insufficient: [0] and [0,0] both have mean 0, but adjoining [2] gives means 1 and 2/3. Instead identify lists with equal sum and count. Concatenation respects that identification because both components add. Empty lists can have summary (0,0); division is defined only after the combined count is positive.
 
@@ -119,7 +121,7 @@ You can ask an assisting agent: “Explain this and comment on my proposal witho
 
 **4. Connect the local calculation to all allowed combinations.** MATH.19 separates two claims: summarizing a concatenation equals combining its summaries, and extracting s/n at positive n returns the list's arithmetic mean. The first follows from addition of sums and lengths. Repeated combination follows by induction over the finite grouping, using [MATH.4](20-math-4---construct-a-witness-by-induction.md) if that induction needs construction. The argument thus covers every stated partition.
 
-**5. Use the result with its conditions.** Contributors can now return pairs to combine. FPF C.29 connects the mathematics to actual records: which values belong to the population and whether any are duplicated remain subject questions. Real addition supplies the laws above; floating-point regrouping needs its numerical account when rounding can change the use.
+**5. Use the result with its conditions.** Contributors can now return pairs to combine. FPF C.29 connects the mathematics to actual records: establish what counts once in the requested whole. If two teams report some of the same readings and the recipient wants each reading counted once, the sum and count of their overlap can correct the two totals. For a mean giving each nonempty team equal weight, the team means themselves are the quantities to average. Grouping entries by team supplies neither weighting rule on its own. Real addition supplies the laws above; floating-point regrouping needs its numerical account when rounding can change the use.
 
 **6. Develop the next question.** If the answer becomes a median, sum and count no longer suffice: [0,0,6] and [0,3,3] share both but have medians 0 and 3. Return to step 2 and use MATH.23 to construct the new question. A quantile method or a different summary can supply the next contribution.
 
@@ -133,8 +135,8 @@ Generated by the skill's splitter: one file per section, in reading order.
 ### Mathematical Thinking DPF Architectural Reference
 
 - [MATH.Reference:1 - Problem frame - Construct mathematics for the question](01-math-reference-1---problem-frame---construct-mathematics-for.md) (12 lines)
-- [MATH.Reference:2 - Problem and forces - Make a usable construction](02-math-reference-2---problem-and-forces---make-a-usable-constr.md) (17 lines)
-- [MATH.Reference:3 - Solution - Connect constructions through what they supply](03-math-reference-3---solution---connect-constructions-through.md) (66 lines)
+- [MATH.Reference:2 - Problem and forces - Make a usable construction](02-math-reference-2---problem-and-forces---make-a-usable-constr.md) (19 lines)
+- [MATH.Reference:3 - Solution - Connect constructions through what they supply](03-math-reference-3---solution---connect-constructions-through.md) (68 lines)
 - [MATH.Reference:4 - Worked use - Choose a representation after the question changes](04-math-reference-4---worked-use---choose-a-representation-afte.md) (18 lines)
 - [MATH.Reference:5 - Worked use - Construct a choice after finding an obstruction](05-math-reference-5---worked-use---construct-a-choice-after-fin.md) (14 lines)
 - [MATH.Reference:6 - Checks and common failures - Preserve what the next construction needs](06-math-reference-6---checks-and-common-failures---preserve-wha.md) (17 lines)
@@ -146,10 +148,10 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 ### Part A - Choose and relate constructions
 
-- [MATH.16 - Choose a Mathematical Construction from Its Required Maps (Universal Property)](12-math-16---choose-a-mathematical-construction-from-its-requir.md) (252 lines)
+- [MATH.16 - Choose a Mathematical Construction from Its Required Maps (Universal Property)](12-math-16---choose-a-mathematical-construction-from-its-requir.md) (254 lines)
 - [MATH.17 - Construct Mathematical Spaces of Operations and Operations on Them](13-math-17---construct-mathematical-spaces-of-operations-and-op.md) (203 lines)
-- [MATH.1 - Build a Mathematical Structure of Composable Paths](14-math-1---build-a-mathematical-structure-of-composable-paths.md) (183 lines)
-- [MATH.2 - Treat Objects as the Same While Preserving Operations (Quotient)](15-math-2---treat-objects-as-the-same-while-preserving-operatio.md) (203 lines)
+- [MATH.1 - Build a Mathematical Structure of Composable Paths](14-math-1---build-a-mathematical-structure-of-composable-paths.md) (185 lines)
+- [MATH.2 - Treat Objects as the Same While Preserving Operations (Quotient)](15-math-2---treat-objects-as-the-same-while-preserving-operatio.md) (205 lines)
 - [MATH.5 - Extend a Generator Assignment While Preserving Operations (Homomorphism)](16-math-5---extend-a-generator-assignment-while-preserving-oper.md) (232 lines)
 - [MATH.7 - Transport a Mathematical Structure Through a Bijection](17-math-7---transport-a-mathematical-structure-through-a-biject.md) (210 lines)
 - [MATH.18 - Compare Mathematical Accounts through Interpretations](18-math-18---compare-mathematical-accounts-through-interpretati.md) (211 lines)
@@ -167,7 +169,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [MATH.11 - Construct an Invariant from Transformation Rules](24-math-11---construct-an-invariant-from-transformation-rules.md) (239 lines)
 - [MATH.13 - Derive a Consequence from a Symmetry](25-math-13---derive-a-consequence-from-a-symmetry.md) (211 lines)
 - [MATH.8 - Generate a Solution Family by Symmetry](26-math-8---generate-a-solution-family-by-symmetry.md) (205 lines)
-- [MATH.9 - Determine Whether and How a Choice Rule Can Respect Symmetry](27-math-9---determine-whether-and-how-a-choice-rule-can-respect.md) (254 lines)
+- [MATH.9 - Determine Whether and How a Choice Rule Can Respect Symmetry](27-math-9---determine-whether-and-how-a-choice-rule-can-respect.md) (250 lines)
 - [MATH.10 - Improve a Mathematical Candidate or Derive a Necessary Condition by Admissible Variation](28-math-10---improve-a-mathematical-candidate-or-derive-a-neces.md) (224 lines)
 - [MATH.21 - Construct an Object through Convergent Approximations](29-math-21---construct-an-object-through-convergent-approximati.md) (205 lines)
 - [MATH.22 - Change Axioms and Trace Their Consequences](30-math-22---change-axioms-and-trace-their-consequences.md) (208 lines)

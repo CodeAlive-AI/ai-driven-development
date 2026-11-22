@@ -41,7 +41,7 @@ Establish the contribution the receiver needs and whether existing provision mee
 
 #### IS.3:4.1 - Recover the contribution and preserve a sufficient incumbent
 
-Use the IS.1 undertaking and IS.2 response or equivalent inputs when available. Establish the target practice, receiving result, intended performer, starting conditions, protection and material uncertainty. A qualified result about an existing strategy or service can settle the present question.
+Use the IS.1 undertaking and IS.2 response or equivalent inputs when available. Establish the target practice, receiving result, intended performer, starting conditions, protection and material uncertainty. If a suitable arrangement is already known, use it for a request it meets. When the recipient must design one, identify which operations they may change, which specialist results they can obtain and what each user must be able to do with the combined provision.
 
 Establish whether the next use requires a change. If a reference has moved, restoring the route may suffice. When a person needs to acquire an operation, arrange appropriate demonstration, practice and feedback on that person’s work. When the task needs the result, use qualified provision that meets the conditions, or compare available ways if selection remains open. An explanation may help someone use the delivered result. Reconsider an unsuitable target with the practice responsible for it.
 
@@ -56,7 +56,7 @@ Establish the baseline from what the current arrangement can provide, what it le
 - develop a person’s ability through an appropriate HCD arrangement when the undertaking calls for human acquisition;
 - make a tacit operation recoverable through an explanation, demonstration or usable tool;
 - solve an open problem together when the required knowledge or decisions are distributed;
-- choose a different target or reduce the promised use when the needed contribution is unavailable.
+- propose a different target or a smaller undertaking to the parties entitled to agree it. For an existing commitment, establish which terms still apply.
 
 For an option whose operation is unclear, follow a relevant input to the output the receiver needs. For example, a coach may ask a reviewer to compare two source editions, identify a changed claim and explain its effect before giving feedback. An adequate instruction or qualified service account can already identify the operation.
 
@@ -76,7 +76,7 @@ Distinguish the support strategy from the target. Changing the time of a briefin
 
 #### IS.3:4.4 - Construct the local way with its recipients and providers
 
-Trace the contribution from the input the provider needs to the result the receiver can use. An existing instruction, service result or observation may establish that connection. If you are designing an unfamiliar arrangement and the handoff or operation remains unclear, work through a representative case with those who hold the needed knowledge. Establish where the input, explanation, tool or help enters and what must reach the receiver.
+Trace the contribution from the input the provider needs to the result the receiver can use. An existing instruction, service result or observation may establish that connection. If you are designing an unfamiliar arrangement and the handoff or operation remains unclear, work through a representative case with those who hold the needed knowledge. Establish where the input, explanation, tool or help enters and what must reach the receiver. For a service used in different settings, try varying the local practice while keeping the proposed help the same. A change in the result owed, its timing or who must act can require a different arrangement. A common rule can cover the settings when its conditions hold throughout.
 
 Revise the arrangement where the evidence exposes a problem. For an inaccessible input, obtain it, use a compatible operation or identify the unresolved target condition. If the result would arrive too late, examine another time or way of obtaining it. If a participant identifies a harmful consequence, preserve the objection and consider an arrangement that addresses it.
 
@@ -98,9 +98,9 @@ For the option or options under consideration, identify who would perform each d
 
 Use C.32.MWA.PP to compare materially different arrangements for performance and provision. Examples include shared specialist service and provision within each branch, or expert execution and supported local performance. Consider where the work falls, simultaneous demands and dependencies. Use an applicable existing comparison or selected configuration. A proposal that depends on new relations still needs those relations to become effective. Use C.32.MWA, A.15.8.MS or OCE where the question concerns interacting structures, method-use support or organizational change. Continue with the helping operations and a receiving instruction where either is missing.
 
-Check demand at the times people or resources are needed. Count shared preparation once per arrangement and include recurring case-specific interpretation and help. Two independent demands cannot both use the same expert hour. A single joint review may supply service and coaching. Count its time once for each person involved, include any additional preparation and instruction, and assess the service and learning results separately. A replacement provider, including a qualified AI system, is an option when it can meet the receiving conditions.
+Check demand at the times people or resources are needed. Count shared preparation once per arrangement and include recurring case-specific interpretation and help. Include separate demands together when the agreement lets them fall in the same interval. They can both be met if their full work fits the interval under a feasible assignment. A single joint review may supply service and coaching. Count its time once for each person involved, include any additional preparation and instruction, and assess the service and learning results separately. A replacement provider, including a qualified AI system, is an option when it can meet the receiving conditions. Where recipients can use the same prepared answer separately, test delivery and time for local use at each site. Where attendance at the same activity is required, establish an interval common to everyone whose presence matters. Different tasks may place demands on the same person even when the sites can otherwise act independently.
 
-Use the commitments and permissions already in force. Obtain any additional access, staff time, voluntary participation or provider response window the selected work needs. Where continuing service competes with the change, use a sufficient coexistence arrangement or develop one with OCE.11.
+Use the commitments and permissions already in force. Obtain any additional access, staff time, voluntary participation or provider response window the selected work needs. Where continuing service competes with the change, use a sufficient coexistence arrangement or develop one with OCE.11. For a recurring promise, identify who allocates the shared contribution and which requests that person can know about by the time they must commit it. Check whether the same allocation rule can serve the allowed requests, including any later work that an early commitment could displace.
 
 If a required condition remains unavailable, compare a smaller slice, another provider, staggered work, another strategy or a revised promise. An option that violates a binding protection or authorization condition is ineligible while that condition applies.
 
@@ -178,7 +178,7 @@ The arithmetic case favors a small initial slice because that is the stated rece
 - An adequate existing service or strategy can supply the requested result.
 - Target changes and changes to its introduction or support are distinguishable.
 - Local instructions preserve the decisive operation and its input and receiving conditions.
-- The necessary performers, means, access, time and permissions can be supplied together, or the shortfall is explicit.
+- A feasible arrangement connects the necessary performers, means, access and authority at the times their contributions are needed, or identifies the shortfall. For a recurring commitment it also accounts for the choices each party may make and the information available when they must act.
 - A comparison includes the additional work of each alternative and distinguishes the results each promises.
 - If a start is promised, it has a defined scope, effective protection and suitable observations. Report a start as completed when the work has begun.
 - Where an unavailable Method or provider leaves a required contribution missing, its effect on the result is explicit.

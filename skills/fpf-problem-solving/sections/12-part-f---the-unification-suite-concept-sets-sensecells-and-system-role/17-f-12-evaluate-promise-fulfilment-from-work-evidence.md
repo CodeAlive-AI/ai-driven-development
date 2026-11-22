@@ -54,7 +54,9 @@ For an ordinary evaluation, the delivery facts, adequate observations, acceptanc
 8. the acceptance rule and the result scale it declares; examples include Boolean, trichotomous, graded, `N/A`, and `Inconclusive`-including scales; and
 9. the PromiseContentUse, delivery, fulfilment, measurement, evidence-use, any separately defined indicator or proxy, reliance, and status relations that connect these claims.
 
-The operation's result value comes first. A RequirementStatus assertion of `Satisfied` or `Violated` is available only through the exact acceptance result and its F.10 rule. Insufficient evidence can support `EvidenceStatus=Inconclusive` and leave `RequirementStatus=Pending`, or it can yield a locally declared result such as `Inconclusive` when the acceptance scale says so; it never silently creates a mixed universal scale.
+The operation returns a value on its declared scale. A separate F.10 rule may warrant a RequirementStatus or EvidenceStatus for that result and use. If the evidence leaves the threshold open, say so. `Inconclusive` can itself be a local acceptance result when the scale provides for it.
+
+When the receiving decision concerns acceptance of a commissioned result, ask what effect the arrangement gives this evaluation. A passing value settles acceptance if the agreement makes it decisive and the other required conditions hold. A customer empowered to accept a disclosed deviation can accept an item whose measured value still misses the target. The terms determine what the acceptance covers and whether correction is still due. For several linked undertakings, use A.6.C:4.1.
 
 A plain summary may say **met**, **not met**, or **cannot judge** while distinguishing the result on its declared scale, the standing of the evidence and the status of the requirement.
 
@@ -115,7 +117,7 @@ One generic Bridge cannot establish clause–Work fit, measurement, indicator va
 A monthly verdict, a batch verdict, and an incident verdict are different claims. A new promise, monitor, or window does not rewrite an earlier verdict.
 
 **R8 — Preserve result, status, and assertion boundaries.**
-Keep the operation result on its declared acceptance scale. Map it to `RequirementStatus=Satisfied` or `RequirementStatus=Violated` only through the exact F.10 rule. If evidence coverage, indicator adequacy, scale conversion, or relation support is insufficient, use `EvidenceStatus=Inconclusive`, leave `RequirementStatus=Pending`, or return the exact local result declared by the acceptance scale. Create a C.2.1 verdict episteme only when another use needs that durable assertion.
+Keep the result on its declared acceptance scale. When the evidence leaves more than one fulfilment outcome open, state the unresolved decision and its grounds. Assert a RequirementStatus such as `Satisfied`, `Violated` or `Pending`, or an EvidenceStatus such as `Inconclusive`, only under its applicable F.10 rule. Create a verdict episteme when another use needs that durable assertion.
 
 ### F.12:7 - Evaluation shapes
 
@@ -129,7 +131,7 @@ If the observation model already concerns the promised characteristic, there is 
 
 #### F.12:7.2 - Latency percentile
 
-Promise: p95 response latency is at most 120 ms for a stated request population and window. Evidence: response-time observations for that population. Evaluation Work applies the declared sampling, exclusion, and percentile rule and binds its result on the declared acceptance scale. Sampling bias or missing paths can support `EvidenceStatus=Inconclusive` and leave `RequirementStatus=Pending`, or yield a locally declared result when the scale specifies that result.
+Promise: p95 response latency is at most 120 ms for a stated request population and window. Evidence: response-time observations for that population. Evaluation Work applies the declared sampling, exclusion, and percentile rule and binds its result on the declared acceptance scale. Sampling bias or missing paths can leave the percentile threshold open. Apply any F.10 status rule or declared local result scale separately.
 
 #### F.12:7.3 - Safety or quality band
 
@@ -148,7 +150,7 @@ Promise: restoration occurs within 60 minutes for each in-scope incident. Delive
 5. **Window and population.** Both are explicit and match the promise.
 6. **Evaluation basis.** The selected inputs, applied acceptance rule and result remain recoverable. A claimed or rule-required dated evaluation Work and exact A.6.1 application satisfy their separate admission and binding conditions.
 7. **Declared result scale.** Characteristic, scale, unit, aggregation, threshold, exclusions, and admissible result values are stated as applicable. Boolean, trichotomous, graded, `N/A`, and `Inconclusive`-including scales are examples, not defaults.
-8. **Status separation.** `Satisfied` and `Violated` are RequirementStatus values reached only through a direct acceptance result. `Inconclusive` is an EvidenceStatus value unless the declared local result scale independently admits that label; insufficient evidence otherwise leaves RequirementStatus pending.
+8. **Status separation.** Distinguish the acceptance result, any EvidenceStatus and any RequirementStatus. Each status requires its applicable F.10 rule. When the evidence leaves the fulfilment decision open, report that limit even if the status rules supply no value.
 9. **Optional verdict episteme.** A durable C.2.1 assertion is created only for a named later use and never replaces the application result, status-use occurrence, evidence relation, or fulfilment relation.
 10. **Bounded reliance.** A.10 supplies the descriptive evidence-provenance path and local bounded-reliance disposition; B.3 is used only for an actual named assurance claim; E.13 is used only for an optimized or decision-driving proxy.
 11. **Non-retroactivity.** Later promise, monitor, MethodDescription edition, or interpretation changes do not silently alter past evaluations or assertions.
@@ -161,14 +163,14 @@ Promise: restoration occurs within 60 minutes for each in-scope incident. Delive
 * **Promise content:** availability ≥ 99.9% for the named service scope in June.
 * **Delivery Work population:** the in-scope service-delivery occurrences during June, connected to the promise through the applicable A.2.3 relations.
 * **Evidence:** synthetic-probe observations, with regions and outage-detection coverage stated. If their measurement model directly concerns the promised availability characteristic, no proxy is added; otherwise the distinct probe-to-user indicator relation needs a defining or testing pattern.
-* **Evaluation:** a System performs evaluation Work; the exact application binds observed good time and total in-scope time and returns a value on the declared result scale.
-* **Status or summary:** map the result to `RequirementStatus=Satisfied` or `RequirementStatus=Violated` only when that F.10 rule applies. If the evidence basis is inadequate, use `EvidenceStatus=Inconclusive` and `RequirementStatus=Pending`, or the exact locally declared result. Plainly: met, not met, or cannot judge.
+* **Evaluation:** the evaluating System applies the rule to the June window. Verified good time gives a lower bound. Include any unclassified time that could still be good when finding the upper bound. Check whether either bound already settles the threshold, using the indicator relation and regional coverage above.
+* **Status or summary:** report whether the threshold was met, missed or remains open. Where a formal status is needed, apply the rule for that status and retain its basis.
 
 #### F.12:9.2 - Furnace temperature band
 
 The promise content states `[720,740] °C` during the soak phase. The delivery Work is the actual batch soak occurrence. Calibrated thermocouple observations either measure the product characteristic directly or use a separately defined sensor-location indicator relation.
 
-For this batch, evaluation Work applies the band rule and binds its result. An out-of-band result can support `RequirementStatus=Violated`; insufficient spatial evidence supports `EvidenceStatus=Inconclusive` and leaves the requirement pending unless the declared acceptance scale specifies another local result.
+For this batch, evaluation Work applies the band rule and binds its result. An out-of-band result can support `RequirementStatus=Violated` under its F.10 rule. If the spatial evidence permits both outcomes, report the limit. Use an evidence status or a local acceptance result when its own rule applies.
 
 #### F.12:9.3 - Incident restoration duration
 
@@ -198,23 +200,23 @@ The promise content states restoration within 60 minutes per in-scope incident. 
 
 Promise content: p95 end-user latency ≤ 200 ms per region per month. Delivery Work population: delivery occurrences per region in that month. Evidence: response-time observations tagged by region and path. If probes measure the promised characteristic directly, use C.16 and A.10 without a proxy. If they indicate a distinct user-experience characteristic, name the exact probe-to-user relation, its defining or testing pattern, and last-mile loss.
 
-Evaluation Work returns one result per region on the declared scale. A global all-regions statement is a separate logical aggregation of those results or statuses, not a property of a table row.
+Evaluation Work applies the regional rule to its observations. A numerical p95 needs a nonempty population with the required measurement basis. If the population was empty, use the contract’s specified empty-region treatment. Missing observations alone do not establish an empty region. A global all-regions statement is a separate logical aggregation of those results or statuses, not a property of a table row.
 
 #### F.12:11.2 - Stroke care door-to-needle
 
-Promise content: at least 90% of in-scope ischemic-stroke episodes achieve door-to-needle ≤ 30 minutes in the quarter. Delivery Work population: patient-episode care occurrences. Evidence: observations of defined door and needle events. Evaluation Work binds those events, counts qualifying episodes, divides by the eligible population, and returns the declared result.
+Promise content: at least 90% of in-scope ischemic-stroke episodes achieve door-to-needle ≤ 30 minutes in the quarter. Delivery Work population: patient-episode care occurrences. Evidence: observations of defined door and needle events. Evaluation Work binds those events and divides the qualifying count by the eligible count when the denominator is positive. For an established empty eligible population, use the stipulated empty-population treatment or report that the percentage is undefined.
 
-Missing triage tags or event ambiguity may support `EvidenceStatus=Inconclusive` and leave `RequirementStatus=Pending`, or produce the exact local result declared by the acceptance scale.
+If missing triage tags or ambiguous events leave both threshold outcomes possible, identify what remains unresolved. A formal evidence status, requirement status or local acceptance result needs its own applicable rule.
 
 #### F.12:11.3 - Cold-chain warehouse
 
 Promise content: product temperature remains in `[2,8] °C` for at least 99.5% of each day. Delivery Work: the daily storage occurrence or defined population. Evidence: calibrated thermistor observations. First ask whether the measurement model directly concerns product exposure. If the measurement concerns another characteristic, such as air temperature at the sensor, establish its indicator relation to product temperature and account for stratification loss. Return `missing-governor` if no rule defines or tests that relation. Otherwise apply the rule with the available coverage.
 
-For each day, apply the coverage rule and divide the covered in-band time by the in-scope time. Compare that fraction with the 99.5% requirement and report the result on the declared acceptance scale. If an indicator was used, retain its limit separately in any result assertion, RequirementStatus, evidence use and material reliance statement.
+Apply the promise to the entire in-scope day. For equally weighted minutes, the known in-band count is a lower bound. Adding all unclassified minutes gives an upper bound. Of 1,440 minutes, 1,433 in band suffice for 99.5%. Eight confirmed out of band already establish failure. With 1,430 confirmed in band and ten unclassified, two further in-band minutes would give 1,432 and four would give 1,434. If both completions are compatible with the evidence and the applicable rule, both outcomes remain possible. An independent bound establishing that at least three of the ten minutes were in band already settles this threshold. Use the contract's own treatment of missing readings and assess a separately promised trace on its own terms. Retain relevant indicator limits in the result, status and reliance claim.
 
 #### F.12:11.4 - SaaS incident restoration duration
 
-Promise content: restoration within 60 minutes for each in-scope incident. Delivery Work: each incident-handling occurrence. Evidence: observed start-fix and restoration events. Evaluation Work applies the declared duration operation and binds one result per incident. Quarterly reporting explicitly aggregates those results or their separately warranted statuses.
+Promise content: restoration within 60 minutes for each in-scope incident. Delivery Work: each incident-handling occurrence. Use the start event named by the contract and the observed restoration event. If notification at 10:00 starts the clock and service returns at 11:15, the interval is 75 minutes. Starting repair at 10:40 gives a different, 35-minute interval. Apply the declared duration rule per incident. Quarterly reporting aggregates those results or their separately warranted statuses.
 
 ### F.12:12 - Reasoning about promise fulfilment
 
@@ -226,7 +228,7 @@ Promise content: restoration within 60 minutes for each in-scope incident. Deliv
 6. **Perform the evaluation.** Apply the declared rule to its selected inputs and recover the result on its scale. Identify the performing System, dated Work and exact A.6.1 application when that performance account is claimed or required; keep the actual admission and binding grounds. Cite a MethodDescription edition when it changes the result or replay.
 7. **Use evidence directly.** Recover the direct evidence-use claims, the descriptive A.10 path and its bounded-reliance disposition. Enter B.3 only for an actual named assurance claim, and E.13 only when a proxy is optimized or drives a decision, gate, incentive, release argument, reputation signal, or repair.
 8. **Keep the result on its declared scale.** Boolean, trichotomous, graded, `N/A`, and `Inconclusive`-including scales are examples, not defaults.
-9. **Map status separately.** Use `RequirementStatus=Satisfied` or `RequirementStatus=Violated` only through the direct acceptance result. Evidence insufficiency can support `EvidenceStatus=Inconclusive` and leave the requirement pending, or produce an exact locally declared result.
+9. **Map status separately.** Report the result that the acceptance rule and the evidence establish. Apply the corresponding F.10 rule before assigning a requirement or evidence status.
 10. **Create a verdict episteme only on demand.** Use C.2.1 only when another use needs a durable assertion about the result or status.
 11. **Aggregate explicitly.** Population-level results and statuses follow the promise's stated quantifier; they are not inferred from a few green cases.
 12. **Preserve history.** New promises, monitors, evaluation methods, or scales create new evaluations rather than changing old ones silently.

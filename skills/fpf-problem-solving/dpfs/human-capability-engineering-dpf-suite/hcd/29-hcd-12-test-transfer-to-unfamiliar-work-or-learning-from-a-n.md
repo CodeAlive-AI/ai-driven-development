@@ -71,7 +71,7 @@ Retain the first attempt and identify what any later feedback supplied. If the a
 
 #### HCD.12:4.4 - Return the transferred contribution and its boundary
 
-For transfer, compare the new observations with the earlier claim under the named change. Preserve supported contributions even when another contribution fails. For new-source learning, return the source, access conditions, observations and limits specified in §4.5 instead of inventing a prior-performance claim.
+For transfer, compare the new observations with the earlier claim under the named change. Preserve supported contributions even when another contribution fails. For new-source learning, return the source, access conditions, observations and limits specified in §4.5 instead of inventing a prior-performance claim. A performance with a new partner can exercise the same skill when the relevant cue and opportunity to respond carry over. Establish that connection for the intended range. An order for the same pair can use suitable earlier work of that pair.
 
 State the change tested, the independent or helped contributions observed, any failed criteria and the uncertainty or variation the evidence leaves open. If a broader claim matters, establish whether suitable evidence already supports it and what further observation, if any, that claim needs. For a single unfamiliar case, name the contribution demonstrated in that case.
 
@@ -97,13 +97,13 @@ Fictional learner L17 illustrates how to compare familiar and unfamiliar work.
 
 In two earlier fresh cases, L17 checked configuration evidence and proposed a supported continuation without anyone cueing the mismatch. L17 rejected an FW7 report when HW3/FW8 was required, performed the calculation and explained C's 23-hour limit. Those observations supply the baseline for this case. They leave adaptation to changed capacity open.
 
-The new case has a report that supports HW3/FW8/SCHED2 and confirms the required checks. Preparation takes one hour per homogeneous batch of up to four; required checks take two hours per change. Twelve changes arrive per week. At 24 available hours, ten changes require 23 hours, while twelve require 27. The release manager may authorize a bounded ten-change use and retains responsibility for the growing queue and release decision.
+The new case has a report that supports HW3/FW8/SCHED2 and confirms the required checks. Preparation takes one hour per homogeneous batch of up to four; required checks take two hours per change. The twelve weekly arrivals share the required batch conditions and can be grouped in fours. In this case acceptance after the checks is the only way out of the queue. At 24 available hours, ten changes require 23 hours, while twelve require 27. The release manager may authorize a bounded ten-change use and retains responsibility for the growing queue and release decision.
 
 L17 has not rehearsed the evidence-use question with a complete report and no preceding mismatch problem. The new case warrants a positive proposal. Copying the earlier FW7 refusal would leave the available ten-change option unused. Reports, calculator and ordinary source and tool access are available. The traces place L17's first recognition and proposal before any teacher or AI cue identified the decisive condition.
 
 | Observation | What it supports | What it does not support |
 | --- | --- | --- |
-| Before any PatternID or configuration cue, L17 checks the complete report and proposes ten changes in three homogeneous batches, requiring 23 hours, with two new changes left in the weekly queue. | Transfer of configuration-evidence use and a bounded positive proposal in this unfamiliar case. | Release authority, elimination of the queue or general transfer across all engineering work. |
+| Before any PatternID or configuration cue, L17 checks the complete report and proposes ten changes in three homogeneous batches, requiring 23 hours, and explains that accepting ten would leave two of the twelve new requests open. | Transfer of configuration-evidence use and a bounded positive proposal in this unfamiliar case. | Release authority, elimination of the queue or general transfer across all engineering work. |
 | The assessor changes only available time from 24 to 22 hours. L17 initially keeps the ten-change promise. | A demonstrated adaptation failure under the changed resource condition. | A conclusion that the earlier configuration or calculation contribution has disappeared. |
 | After feedback asking L17 to check the changed time constraint, L17 calculates that nine changes require 18 + 3 = 21 hours, while ten still require 23, and revises the proposal. | Correct adaptation with feedback. | Independent resource adaptation on the first changed-condition attempt. |
 

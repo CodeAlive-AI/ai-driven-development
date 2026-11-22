@@ -135,7 +135,7 @@ Increase assurance effort when its attainable contribution to a consequential ch
 
 #### OPS.16:4.8 - Compare alternatives under authority and protected conditions
 
-Compare feasible options for continuing, revising, branching or stopping under the same operating use, interval, result definition and protected conditions. Carry uncertainty as an interval, scenario or missing claim. When different operating uses matter, compare the options within each use and identify which options remain non-dominated there. Keep an unresolved comparison visible if the missing information could change which variant is retained.
+Compare feasible options for continuing, revising, branching or stopping under the same operating use, interval, result definition and protected conditions. Carry uncertainty as an interval, scenario or missing claim. Where several operating uses matter, check the conditions for each and any constraints they share. A supported option can settle a request for one workable choice. To recommend a particular option as non-dominated, justify that claim among the permitted alternatives. For a complete list, also account for every option that qualifies. Identify an open comparison when it could change the requested choice or list.
 
 Identify the Agent authorized to make the local operating decision and the predicate, scope, and basis of that authority. Clinical, safety, release, financial, employment, security, and other specialist decisions remain with their owners. Expertise, sponsorship, assignment, access, and a tool recommendation do not transfer authority.
 

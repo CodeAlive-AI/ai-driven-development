@@ -6,6 +6,6 @@ NSTD identifiers locate methods and sections in this publication. For three sect
 
 Use the NSTD identifier for a method in this framework. A.6.3.NAR identifies the narrative-construction pattern in FPF Core.
 
-The original edition carries the date 25 October 2026. To cite the version you used, copy a permanent link to this file in its specific Git commit. Add the PatternID or section identifier when citing a passage. The [public file](_index.md) leads to the current text.
+The original edition carries the date 25 October 2026. The 21 November 2026 revision qualifies source attribution, narrative viewpoint and the learner’s decision under the assigned task. The 22 November 2026 revision develops how authors choose what an account must cover, connect the evidence for its parts and preserve the decisions entrusted to its reader. To cite the version you used, copy a permanent link to this file in its specific Git commit. Add the PatternID or section identifier when citing a passage. The [public file](_index.md) leads to the current text.
 
 The [Architectural Reference](_index.md#narrativization-and-narrative-studies-principles-framework-architectural-reference) explains how the methods connect and where their source distinctions change what the reader can do.

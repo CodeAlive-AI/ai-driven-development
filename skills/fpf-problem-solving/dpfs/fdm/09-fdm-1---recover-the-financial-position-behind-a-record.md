@@ -33,7 +33,7 @@ A right to future payment can be established while the payment itself remains un
 
 #### FDM.1:4.1 - State the financial question and relevant party
 
-Identify what the record is meant to establish. It might concern who owes or may receive an amount, who bears a loss or what resources are available. Name the party whose position matters and any counterparty needed to interpret it. Use the stated question directly or obtain clarification where its meaning is unresolved.
+Start from what the recipient must be able to say or do. Whose claim would a payment discharge, whose duty would remain, or who could draw on the money? Follow the operative relation to its holder and to any other party whose position the answer depends on. If the named account could belong to an agent acting for someone else, ask whether substituting that holder would change the financial conclusion. An established holder can be used directly. Clarify a choice of perspective only when it matters and the request leaves it open.
 
 If the answer depends on a disputed identity or group boundary, use FDM.2 or [SIE.5][SIE]. A trading name, group identifier or database key can locate records. Check the entity it identifies before relying on it to resolve the dispute.
 
@@ -57,7 +57,7 @@ Use [FPF A.2.8][DUTY] to establish whether a particular duty exists. Use [FPF A.
 
 Identify what each source describes, the time it concerns and any limitation affecting reliance. A contract description, a servicing record and a customer's statement can refer to the same loan while differing in date, purpose or evidential support.
 
-Establish separately which resources the relevant party can use. A borrower may still owe repayment after spending all the proceeds. A lender may have a right to payment even though the borrower cannot pay now. A displayed balance can be evidence when its account meaning, date and availability conditions support the claim.
+When the question concerns resources, establish which of them the party can use at the required time. A borrower may still owe repayment after spending all the proceeds. A lender may have a right to payment even though the borrower cannot pay now. A displayed balance can be evidence when its account meaning, date and availability conditions support the claim.
 
 Describe a prospective position under its conditions. A score or offer can inform a decision. A valid agreement can create duties at formation before disbursement. To establish a particular position, use the conditions that actually apply to it.
 
@@ -87,8 +87,8 @@ For an ownership interest or a conditional instrument, establish the relation an
 
 Check whether the proposed interpretation meets these criteria.
 
-1. The actual party and financial question are identifiable.
-2. The right, obligation or other interest has an adequate basis, content, conditions and time.
+1. The question and the scope of the party or parties whose position matters are clear. A claim identifying a particular holder is supported at that level.
+2. The account gives adequate grounds for the position asserted, its absence or the limits of a finding, with the conditions and time on which that conclusion depends.
 3. Assertions and records about the position remain distinguishable from the position itself.
 4. Claims about available resources or expected future performance have the grounds they require in addition to the established position.
 5. The result supplies an adequate answer or names the particular identity, term, rule or evidence still missing.

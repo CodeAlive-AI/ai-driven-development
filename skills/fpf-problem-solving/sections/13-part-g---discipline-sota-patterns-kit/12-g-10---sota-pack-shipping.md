@@ -95,7 +95,7 @@ SoTA‑Pack(Core) :=
   publicationScopeId,
   contextSliceId?,
   CG-FrameContext,
-  entityOfConcern := ⟨GroundingHolon, ReferencePlane⟩,
+  entityOfConcern, GroundingHolon?, ReferencePlane, // subject of the pack-level claim, empirical ground when used, and plane
 
   // Governing spec refs (refs + edition pins; semantics governed by their patterns)
   CNSpecRef := ⟨A.19 ref, CNSpecRef.edition⟩,
@@ -104,7 +104,7 @@ SoTA‑Pack(Core) :=
   // Selector-facing selection/parity roster token (conceptual; no formats mandated)
   PortfolioRosterId?,        // produced by `G.10‑1` as part of composition; may cite ε and the applicable pinned regime/mode refs
 
-  // Cited payload packs/kits (ids only; semantics governed by the cited governing patterns)
+  // Cited payload packs/kits: resolve each claim’s subject through its own reference. One pack may carry a report on a pump and a comparison of inspection methods tested there.
   SoTAHarvestPackId?          // e.g., G.2 output id
   CHRPackId?                  // G.3 output id
   CALPackId?                  // G.4 output id

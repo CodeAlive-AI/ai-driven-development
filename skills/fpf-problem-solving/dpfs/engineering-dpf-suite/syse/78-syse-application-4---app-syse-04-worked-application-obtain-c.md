@@ -57,8 +57,7 @@ the accepted `GH-2` configuration and representative operating conditions.
 
 The custom provider's sixteen-week estimate exceeds the need-date limit. Timely completion of the internal-only
 arrangement remains unsupported. The ready-controller and hybrid
-arrangements form a tie-set because the hybrid arrangement is better for later greenhouse-specific change only
-if the vendor interface preserves timing, configuration export, and supported fallback.
+arrangements still need evidence for the protected conditions. The hybrid’s expected advantage for later greenhouse-specific changes depends on the supported interface, its timing, configuration export and fallback.
 
 The ready-controller arrangement costs EUR 84,000 and eighteen internal engineering days; the hybrid costs EUR
 96,000 and thirty-two internal engineering days. Both current estimates fit the need date; the remaining
@@ -95,8 +94,7 @@ vendor-update support would reopen the obtaining choice.
 
 The realization Agent applies `SYSE.3` to the retained arrangement and identifies its first unsupported realization branch: whether the
 internal integration Agent can configure the supervisory layer and produce the commissioning evidence before the
-need date. The vendor controller is a supplied System and the AI Agent is a possible performer in selected Work;
-neither becomes the whole realization arrangement.
+   need date. A vendor or AI contribution can supply a specific result to integration. If the company must also be able to produce the result independently, establish what its team can do with the support it will actually retain. To attribute a gain to training, compare earlier and later independent work under comparable conditions and establish the contribution of the training.
 
 `SYSE.13` identifies controller, software, interface, sensor, and greenhouse configuration and effectivity.
 `SYSE.10` keeps the hardware-in-the-loop replay results tied to the claims assessed by that replay. `SYSE.4` states which acceptance

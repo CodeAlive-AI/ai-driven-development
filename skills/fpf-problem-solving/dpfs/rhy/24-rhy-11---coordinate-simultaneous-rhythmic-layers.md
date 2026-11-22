@@ -50,6 +50,8 @@ Identify which body parts, performers or mechanisms produce the actions. Check o
 
 A rhythmic layer is a course of events or movement with a role in the passage. A constituent method is part of how an encompassing action is performed. Keeping balance and contact can contribute to articulating a phrase and performing the larger figure at the same time. These contributions need not be separate rhythmic lines. Two instrument parts can also be parallel layers even when neither method is a constituent of the other.
 
+Follow the arrangement back to what each participant has to supply. If a backing track may give the pulse, the player can complete the assigned accent by following it. If the same player must maintain the pulse through a silent span and add the accent, the performing method requires both operations of that player. In a recording of the passage the pulse and accent could sound identical under either arrangement. Use the agreed parts to establish the duty; to establish who actually supplied the pulse, use the take, a reliable account or conditions under which only that player could have supplied it.
+
 If a performer can recall the figure and produce its parts but loses their intended relationship when combining them, locate the particular joint demand before prescribing more repetitions. Use RHY.12 when developing that capability is the task.
 
 #### RHY.11:4.4 - Establish the joint relation and restore complexity selectively
@@ -58,7 +60,7 @@ For a new or difficult combination, use a feasible means of making its essential
 
 When their joint execution still needs to be learned or tested, try the parts together. Restore an omitted contribution when the intended performance requires it and preserve the landmarks and grouping of each part. If one part begins to copy the other’s accents or tempo, identify the relation that was lost. An existing record of the combined passage may suffice for an assessment.
 
-Choose changes compatible with the technique and the target passage. A slower tempo can change balance, gesture, phrasing or control. Limit any conclusion about performance to the conditions observed, and use evidence at full tempo for a claim about that tempo.
+Choose changes compatible with the technique and the target passage. A slower tempo can change balance, gesture, phrasing or control. For a claim at full tempo, use evidence applicable there. A qualified timing or recovery bound can cover a range of tempi; the performer's realization at the claimed conditions needs its own grounds.
 
 ##### RHY.11:4.4.1 - Keep a common time while allowing different actions
 
@@ -74,13 +76,15 @@ When accents can be chosen independently of the pulse, distinguish the recurring
 
 **Develop the range of choices the passage needs.** For variable placement, move the next accent while retaining the support. If the intended tempo or reference changes, relocate the accents against it. A technique that works at one habitual phase may suffice for a fixed figure. For other phases, check whether the accent competes with the support, space or recovery time of the next pulse. If the demands conflict, a different realization or allocation may preserve both. If they are compatible and the performer needs to learn the other placements, practise those placements against the pulse. Keep any accent and placement the task requires.
 
+Distinguish executing assigned accent positions from selecting them for the phrase. A player given beat 1.75 may still choose the preparation and stroke. If the player must also decide where to place the accent, give the musical aim and constraints, leave the position open, and see which placement the player chooses and can realize while the support continues. For a recorded choice, recover what the player knew before it and what someone else had already decided.
+
 Both actions share the timing needed by the passage. Their preparation, articulation and correction can still be controlled so that an unintended change in one does not displace the other. A performer may organize a familiar combination as one movement or control its contributions more separately. The description leaves the internal timing mechanism open. Use RHY.12 if the joint coordination needs development.
 
 Consider this construction for another instrument or activity when it has a continuing temporal contribution, a separately variable articulation, means to produce both and feedback that distinguishes their errors. Singing a phrase against a beat gesture is one example. An engineered machine may meet similar timing requirements with its own controller and actuators. Reusing a construction requires compatible conditions. Transferring an acquired human skill or qualifying an engineered implementation needs evidence for that claim.
 
 #### RHY.11:4.5 - Keep the combination that serves the passage
 
-Examine the parts together, their required relationship and the continuation. When the combination fails, distinguish evidence of a wrong relation, a conflicting allocation or a missing execution capability. If the evidence does not distinguish these explanations, state the limit. A repair depends on which problem is established.
+Examine the parts together, their required relationship and any continuation the passage calls for. When the combination fails, consider what the evidence establishes about the relation, allocation and execution capabilities involved. They can contribute together. Where the ensemble can allocate the parts, giving the accent to another available player can restore the combination under several explanations. When a named player must produce both parts, the same change can supply practice support. For that commission, judge the combined actions of the named player. If the choice of repair depends on which explanation holds, seek evidence that distinguishes it or state the remaining limit.
 
 Report what the evidence establishes about the combination. It may support observed joint execution, a proposal within the checked constraints, a specific conflict or a remaining uncertainty. Separate performances give evidence about the parts. To report what happened jointly, use evidence of the combined passage.
 
@@ -130,11 +134,11 @@ Consider four supporting events at beat positions 0, 1, 2 and 3, followed by the
 
 A demonstration or audible example gives the joint target. The accent comes three quarters of the way from beat 1 to beat 2. The next supporting event remains at 2, and preparation for the accent begins before 1.75. In the first stipulated attempt the accent lands at 1.75, but its large preparation delays the support to 2.15. In the second, the support arrives at 2, and the accent follows its familiar movement phase and also lands at 2. The two attempts miss different targets.
 
-For the next candidate the performer uses a smaller learned articulation, starts preparing early enough for 1.75 and continues the support through preparation and release. In the stipulated trial the recognizable accent arrives at 1.75 and the next supporting events occur at 2 and 3. Both targets are met. Disappearance of the accent would leave one target unmet. These times specify this passage.
+For the next candidate the performer uses a smaller learned articulation, starts preparing early enough for 1.75 and continues the support through preparation and release. In the stipulated trial the supporting events occur at 0, 1, 2 and 3, the recognizable accent arrives at 1.75, and the next phrase begins at 4. This meets both targets for the passage. Disappearance of the accent would leave one target unmet. These times specify this passage.
 
 Suppose the following phrase requires accents at 0.5 and 2.75. Prepare those accents at their new positions within the continuing pulse. The first combined figure leaves those placements untested. If the pulse stays regular and an accent slips to a beat, the corresponding attempt misses the requested placement. When the tempo changes, locate both the supporting events and the accents against the new reference. Keeping the old absolute accent times may lose their required relationship.
 
-The first successful figure establishes local coordination. A claim about a range of choices requires evidence from other required positions. For concrete brush and partnered-movement realizations, see [MDPE.11:4.5](../mdpe/29-mdpe-11---interpret-or-shape-music-or-dance-material-while-p.md#mdpe1145---balboa-brushes-and-event-timing) and the related practice in MDPE.10:4.6. The available means, partner response and recovery time affect whether the construction fits each use.
+The first successful figure establishes local coordination. The later positions are prescribed too: carrying them out can show adjustment to changed targets and leave the performer's choice of preparation visible. To judge independent placement, give the performer a phrase whose entrance and support must survive an accent and leave its location for them to decide, or use an adequate record of such a decision. For a claim about a range, establish why the evidence covers the required phases, support and recovery conditions. For concrete brush and partnered-movement realizations, see [MDPE.11:4.5](../mdpe/29-mdpe-11---interpret-or-shape-music-or-dance-material-while-p.md#mdpe1145---balboa-brushes-and-event-timing) and the related practice in MDPE.10:4.6.
 
 ### RHY.11:6 - Bias-Annotation
 
@@ -147,7 +151,7 @@ A common grid works particularly well for simple ratios and can draw attention a
 - Simultaneous demands and continuation are considered under the actual allocation.
 - Distinguish evidence about the combined passage from separate performances and calculated compatibility.
 - A pulse-and-accent use checks pulse regularity and requested accent placement separately, including continuation.
-- For a claim about a range of accent choices, use evidence covering the required placements or supporting the range claimed. For a changed reference, establish whether the required synchronization is retained.
+- For a range of accent placements, establish coverage of the required positions and any changed reference. Credit the placement, preparation or allocation the performer actually chose, with any prescribed target or supplied pulse identified.
 - Give the supported explanation for a failure or identify which relation, allocation or capability remains uncertain.
 - Support and changed conditions qualify the retained result.
 
@@ -159,7 +163,7 @@ A common grid works particularly well for simple ratios and can draw attention a
 | Treat a combined time line as proof of joint execution | Examine the simultaneous demands and constraints. Use evidence from the combined passage, or try it when needed, to establish how performers actually execute it. |
 | Repeat a whole figure when one middle coordination is missing | Locate the constituent or joint capability that the figure depends on. |
 | Add complexity until the continuing contribution disappears | Restore one consequential contribution while retaining the joint relation. |
-| Infer the constituent methods of a performance from the order of exercises | Identify the methods performed as part of the encompassing work while it is under way. |
+| Infer the composition of a method from exercise order or the tracks heard together | Recover which operations the performing arrangement requires of each player and which results it allows them to receive. Establish whose actions actually constituted the take when that matters. |
 
 ### RHY.11:9 - Consequences
 

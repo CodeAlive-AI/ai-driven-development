@@ -6,11 +6,11 @@
 
 ### E.17.AUD:1 - Problem frame
 
-Use this pattern when people read a note, memo, sheet, table, screen, or short section as one stable unit but it leaves a change in its main subject, its publication move, or its boundary with a decision, gate, work, or reliance claim unmarked.
+Use this pattern when a person or an agent is meant to interpret a note, memo, sheet, table, screen or short section as one unit, and a change of subject, publication move or boundary with a decision, gate, work or reliance claim goes unmarked. A validator asked only whether the material meets a syntax rule can finish with that finding. To report what the intended reader understood, use evidence showing how that reader interpreted the content.
 
 A typical case starts with one bounded architecture or status question and ends by sounding like rollout, approval, assignment, or assurance. One reviewer wants to repair a vague word, another wants to rewrite the whole unit, and a third sees a comparison or explanation problem. Before they patch different defects, identify the bounded publication unit and its current interpretation.
 
-Name the unit's primary subject. When it carries or exposes a claim-bearing `U.Episteme` or episteme-side `U.View`, use that item's `EntityOfConcern` value only when it is also the unit's primary subject. Otherwise name the ordinary topic or subject and do not invent an `EntityOfConcernRef`. Keep the publication unit distinct from the episteme, publication occurrence, form, face, carrier, and any downstream project claim.
+Name the unit’s primary subject or the subjects whose connection the reader needs. When it carries or exposes a claim-bearing `U.Episteme` or episteme-side `U.View`, use that item's `EntityOfConcern` value only when it is also the unit's primary subject. Otherwise name the ordinary topic or subject and do not invent an `EntityOfConcernRef`. Keep the publication unit distinct from the episteme, publication occurrence, form, face, carrier, and any downstream project claim.
 
 The primary reader is an author or reviewer who needs one usable repair choice. Architects, managers, and program leads are secondary readers when the same unit is being over-read as architecture, approval, or work guidance.
 
@@ -20,7 +20,7 @@ The check helps the team choose one response early: keep the unit as it is, repa
 
 Use `E.17.AUD.LHR` when an overloaded local head is the only defect. A stable unit presenting a bounded comparison calls for `E.17.ID.CR`; an explanation-use problem calls for `E.17.EFP`. If the text is already being used to approve, direct, assign, adjudicate, or support reliance, use the applicable decision, gate, work, evidence, or reliance pattern. In those cases the narrower or neighboring pattern governs the work.
 
-The first useful result is one of those five repair choices. If the unit, its primary subject, its publication move, and its outside boundary are already clear enough for the current reader, return `stable for current use` and stop. Use the checks and examples as needed. Their order is optional.
+The first useful result is one of those five repair choices. If the reader can already identify the unit, its subject and move or its connected subjects and moves, and the boundary with outside work, return `stable for current use` and stop. Use the checks and examples as needed. Their order is optional.
 
 ### E.17.AUD:2 - Problem
 
@@ -45,6 +45,8 @@ Without a named publication-unit stability discipline:
 
 > Name what the unit is mainly about, the publication move it carries, the claim that remains outside, and one repair choice. Apply another pattern only when that choice requires it.
 
+A joint decision may require two subjects and the relation between them. Keep that connection readable. A note assessing agreement between the catalog and checkout must let the reader compare the responses the catalog can return with those checkout can handle. The connected claims can share one short passage or occupy marked sections that the reader can use together. For a scope notice, simply identifying the subjects and the question can suffice.
+
 #### E.17.AUD:4.0 - Plain working terms
 
 - `publication unit under review` = one note, memo, sheet, table, screen, or short section that readers inspect as one unit;
@@ -63,8 +65,8 @@ Use the terms above only when their distinctions change the repair choice.
 
 A locally admissible interpretation keeps four entries available for inspection by value:
 - one publication unit under review;
-- one primary subject;
-- one carried publication move over that primary subject;
+- the primary subject, or the subjects whose relation matters to the reading;
+- the move about that subject, or the moves whose connection the reader needs for one question;
 - one outside boundary to work, work planning, decision, gate, or reliance claim, with one light boundary type when that distinction matters: neighboring pattern application, downstream claim or effect, or ongoing engineering-process continuation.
 
 If the publication unit changes any of those four without saying so, its interpretation has shifted, however polished the sentences look.
@@ -77,7 +79,7 @@ If the publication unit changes any of those four without saying so, its interpr
 - `bounded comparison`: if the unit is stable, apply `E.17.ID.CR`;
 - `leave publication-unit stability`: the live question concerns work, work planning, decision, gate, evidence, explanation, reliance, carrier or front-end work, or another claim that this pattern does not test; apply the relevant pattern and name the exact project object or record.
 
-Leave the narrower whole-unit check to `PublicationUnit Primary-Subject Discipline`. Its question is whether this unit can still keep one stable primary subject, one carried publication move, and one outside boundary to work, work planning, decision, gate, or reliance claim.
+Leave the narrower whole-unit check to `PublicationUnit Primary-Subject Discipline`. Its question is whether this unit can still keep a stable primary subject or connected subjects needed for one decision, a recognizable publication move, and an outside boundary to work, work planning, decision, gate, or reliance claim.
 
 #### E.17.AUD:4.3 - Inherited dynamic frame
 
@@ -98,7 +100,7 @@ Treat one publication unit as a readable unit. Do **not** identify it automatica
 
 Those objects may matter, but mentioning them in the same note, sheet, or screen does not make them the current publication-unit problem.
 
-**Publication-unit boundary choice.** A `PublicationUnit` boundary is valid when a careful reader would naturally inspect that bounded item as carrying one primary publication move over one primary subject, with one visible outside boundary to work, work planning, decision, gate, reliance claim, or neighboring pattern application.
+**Publication-unit boundary choice.** One subject, one move and a visible boundary with outside work suffice for an ordinary short note. A joint decision can require several subjects and moves in one readable unit. Keep their relation visible in the passage or in marked sections. For example, one section can specify which responses a catalog returns and another can test which of them checkout accepts. Readers need both to judge the interface. Mark the boundary with work, work planning, decisions, gates, reliance claims and neighboring pattern applications. If the unit undertakes one of them, use its governing rule.
 
 Choose the bounded item that carries the claim being made or effect being repaired. Do not choose a smaller boundary merely to hide a downstream overclaim, or a larger one merely to absorb several primary subjects into one unit.
 
@@ -115,8 +117,8 @@ When a wider repair needs these distinctions, use the seven questions to recover
 | Row | Ordinary prompt |
 | --- | --- |
 | 1 | Which publication unit is under review? |
-| 2 | What is that unit mainly about in this interpretation? |
-| 3 | What publication move does the unit make about that subject in this interpretation? |
+| 2 | What is the unit mainly about? Which subjects must the reader consider together if their relation matters? |
+| 3 | What does the unit assert or ask the reader to do? If it carries linked moves, how do they contribute to the reader’s question? |
 | 4 | What downstream `U.Work`, work planning, decision, gate, or reliance claim remains outside this unit, and is that boundary mainly a neighboring pattern application, downstream claim or effect, or ongoing engineering-process continuation? |
 | 5 | Does the present problem call for repair of an overloaded local head, stabilization of the whole unit’s primary subject, bounded comparison, or another neighboring pattern? |
 | 6 | Is the current form label (`note`, `sheet`, `table`, `screen`, and similar ordinary labels) naming only the presentation form, or are readers taking it to change the publication unit under review or the kind of downstream claim or effect they infer? |
@@ -125,11 +127,12 @@ When a wider repair needs these distinctions, use the seven questions to recover
 #### E.17.AUD:4.6 - Choose the next pattern
 
 - If row 5 points to one overloaded local lexical head, apply `Local Head Restoration`.
-- If row 5 shows that the whole publication unit still cannot keep one stable primary subject, one carried publication move, and one outside boundary to work, work planning, decision, gate, or reliance claim visible, apply `PublicationUnit Primary-Subject Discipline`.
+- If row 5 shows that readers cannot follow the subjects and moves the unit connects or the boundary with work, planning, decision, gate or reliance, apply `PublicationUnit Primary-Subject Discipline`.
 - If the publication unit is stable enough and its move is bounded comparison over available source publications, apply `E.17.ID.CR ComparativeReviewUnit`.
 - If the main problem is explanation classification over an existing face, apply the neighboring explanation pattern.
 - If claim content, representation, coarsening, or the primary EntityOfConcern changes, apply the relevant `A.6.3` or `A.6.4` pattern before checking a later publication form here.
-- If the active problem situation is publication form, bridge or hypothesis work, or a downstream claim or effect, leave the publication-unit stability family, apply the relevant pattern, and name the exact project object or record when one is needed.
+- If wording alone suggests approval, repair the unit to say what its source warrants. If an authorized decision exists, identify its issuer, scope and outcome. If the reader needs a decision that is still owed, put the choice and grounds before the responsible authority. Check which act the governing rule makes decisive. An authorized publication can constitute the decision itself or bring an earlier decision into effect. Establish the issuer, act and form required for the particular claim.
+- If the active problem concerns publication form, bridge or hypothesis work, or another downstream action, apply its direct pattern and identify the project object or record the work needs.
 
 #### E.17.AUD:4.7 - Local naming rule
 
@@ -173,7 +176,7 @@ An onboarding explainer starts from one stable source-pinned note, but then the 
 
 #### E.17.AUD:5.5 - Downstream decision and reliance case
 
-A status card starts as one bounded summary of progress, then leads readers to infer approval, assignment, or go or no-go claim or effect. The problem is no longer only publication-unit stability. Treating the card as a neutral note would miss those consequences. Use the downstream decision, gate, work, or reliance publication.
+A progress card headed “Ready to roll out” reports that the tests passed. If its job is to communicate progress, a heading that states which tests passed can finish the repair. To report a release decision already made, cite the authorized outcome, including rejection or deferral, and the scope it covers. If release approval is owed and still open, send the test results and the outstanding choice to the responsible authority. Suppose the owner approved release on Monday and the rule makes that approval effective when the signed notice is issued. Monday’s decision establishes adoption. Issuing the notice on Tuesday establishes when that decision took effect. Under a different rule the owner decides by issuing the signed notice. There, the authorized issuance itself constitutes adoption. Check the rule and the act it names for the conclusion the reader needs.
 
 #### E.17.AUD:5.6 - Quick contrasting cases
 
@@ -184,7 +187,7 @@ Use this quick contrast set when the initial interpretation is unclear:
 | `LHR-only` | one overloaded local lexical head is doing most of the semantic work while the publication unit under review otherwise stays stable | apply `Local Head Restoration` |
 | `whole-unit interpretation shift` | the publication unit under review changes its primary subject or carried publication move without marking the change | apply `PublicationUnit Primary-Subject Discipline` |
 | `stable comparison -> CR` | the unit is already stable and the live problem situation is bounded comparison over pinned source publications | apply `E.17.ID.CR ComparativeReviewUnit` |
-| `downstream claim or effect overread` | readers are inferring approval, assignment, or go or no-go claim or effect from the publication unit | leave the publication-unit stability family for the applicable downstream decision, gate, work, or reliance publication |
+| `downstream claim or effect overread` | readers take the progress card as approval, assignment or a go/no-go decision | clarify a communication-only card, cite the applicable decision already made, or put the outstanding choice before its authority. Check the issuer, act and governing rule if this publication itself constitutes adoption or brings an earlier decision into effect |
 | `modeling-lens hidden` | the unit only makes sense because of one unpublished model, formal substrate, or rationale | publish that substrate or rationale briefly or use a heavier publication form or neighboring pattern |
 
 ### E.17.AUD:6 - Common Anti-Patterns and How to Avoid Them
@@ -194,7 +197,7 @@ Use this quick contrast set when the initial interpretation is unclear:
 | Fixing one sentence while the whole unit has changed interpretation without marking the change | local repair is asked to carry whole-unit stabilization | check primary subject, carried publication move, and outside boundary to work, work planning, decision, gate, or reliance claim before repairing the sentence |
 | Treating form labels as if they changed the publication unit under review | `table`, `sheet`, or `screen` is used as if it already named a different ontology or downstream claim or effect | treat those as presentation forms first; only leave this pattern when the problem situation changes |
 | Laundering comparison through stability language | teams keep saying the unit is unstable when the active problem situation is already bounded comparison | apply `E.17.ID.CR ComparativeReviewUnit` and name the exact source publications |
-| Laundering downstream decision or reliance through clearer prose | a better-written note is mistaken for an approval, gate, work, or reliance text | keep the outside boundary to work, work planning, decision, gate, or reliance claim explicit and leave this pattern when downstream claim or effect appears |
+| Treating clearer prose as evidence of approval or reliance | a well-written progress note is taken as a decision, gate or work order | clarify what the note communicates. For an actual decision or effect, identify the authority and effective act. An existing authoritative disposition can settle the question |
 | Letting three repair choices act at once | lexical-head repair, whole-unit stabilization, and a neighboring-pattern application are patched in parallel with no shared primary-subject interpretation | use the working card first and name one repair choice before patching the unit |
 
 ### E.17.AUD:7 - Consequences

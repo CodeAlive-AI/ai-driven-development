@@ -7,9 +7,9 @@
 
 ### IS.2:1 - Problem frame
 
-**Use this when** a practice cannot begin, a later use fails or the help appears inadequate, and you need to establish what happened, why it matters or what response is warranted. The target can be established or still under examination. Start from a concrete intended or observed use.
+**Use this when** a practice cannot begin, a later use fails or the help appears inadequate, and you need to establish what happened, why it matters or what response is warranted. The target can be established or still under examination. Recover the intended or observed uses and the conclusion the recipient needs. A difficulty can arise in one performance, in the way several performances fit together or in how a method serves the range of work to which it is assigned.
 
-Examine one episode. What result was needed? What was available, what was attempted and where did the difficulty arise? Use a suitable record or observation, or ask the performer to show the difficult point when their knowledge is needed. An inaccessible input, unavailable time, a missing operation and an unsuitable target can call for different responses.
+For a question about one episode, ask what result was needed, what was available and what the parties did. For a question about provision across a service, establish the applicable commitments and the conditions under which the work must fit together. One failed episode can refute a promise that covers it. To explain the failure or design a remedy, follow the relevant connections. Use a suitable record or observation, or ask the performer to show the difficult point when their knowledge is needed. An inaccessible input, unavailable time, a missing operation and an unsuitable target can call for different responses.
 
 Investigate the implementation difficulty and any response the task requires. Use a qualified current finding directly when it settles the question. An interview, observation or small comparison can resolve a remaining uncertainty. The result may explain the episode, supply useful help, specify an obtainable contribution or identify a limit.
 
@@ -36,23 +36,23 @@ Distinguish the explanations that matter to the requested finding, the grounds f
 
 ### IS.2:4 - Solution
 
-Reconstruct the receiving episode. Compare plausible explanations by what should differ in the evidence or in the response. Report what they support and where uncertainty limits the conclusion. If the task requires further help, obtain the smallest contribution that makes the needed use possible.
+Establish which difficulty the recipient is trying to understand or resolve. Reconstruct the relevant performance, arrangement or range of work. Compare plausible explanations by what would differ in the evidence, in the grounds for an answer or in a warranted response. Report what they support and where uncertainty limits the conclusion. If the task requires further help, obtain the smallest contribution that makes the needed use possible.
 
-#### IS.2:4.1 - Follow the episode through the intended result
+#### IS.2:4.1 - Trace the difficulty through the work that needs the result
 
-Establish the occasion, relevant input, interpretation, action, output and receiver as far as the evidence allows. If the question depends on what a participant understood or expected, use an appropriate account from them. Compare it with permitted evidence from the work, such as an input, tool response, product or receiving decision.
+For a particular attempt, establish the occasion, relevant input, interpretation, action, output and receiver as far as the evidence allows. When the problem arises across attempts, determine which performances make up the work being judged and what relates them. Two offices can each deliver their review while no one is assigned to reconcile conflicting conclusions before release. Checking the two reports can establish local delivery. To explain the missing decision, inspect the required reconciliation, whose work it is and what the decision maker received. If the question depends on what a participant understood or expected, use an appropriate account from them. Compare it with permitted evidence from the work, such as an input, tool response, product or receiving decision.
 
 Trace the actual or proposed work to the result the receiver needs. Locate a blocked step or a completed step whose output fails to meet that need. Use suitable records, observations or the performer’s explanation. Trace the relevant dependency back to its inputs and forward to its consequences. Use B.1.5.EW when the action’s contribution to the encompassing work remains unclear.
 
-Finding a source edition can support a judgement about a claim which, in turn, informs a release recommendation. Check whether the retrieved passage supports the claim. If the source is unavailable, identify which part of the recommendation depended on it. Use any independent evidence that supports the claim, and qualify the remainder.
+Finding a source edition can support a judgement about a claim which, in turn, informs a release recommendation. Check whether the retrieved passage supports the claim. If the source is unavailable, identify which part of the recommendation depended on it. Use any independent evidence that supports the claim, and qualify the remainder. If two reports agree, establish what the release rule requires. Two authorized reviewers can independently judge the same recorded comparison. Two repetitions with a common faulty reference may share the error the measurement check was meant to detect. Trace the judgements or measurements to their origins and test the relevant common dependence. A single comparison may settle the source question. Obtain an additional contribution when the particular independence required for release is still missing.
 
 Include a successful contrast when it can distinguish the failure. The same performer using a different source route may reveal an access problem; success with an expert present may instead reveal the expert's missing contribution. Report the assistance supplied in each episode when interpreting the result.
 
-If the intended event has not occurred, use an explicit prospective case and keep its status clear. A walkthrough can identify a contradiction or unavailable input without proving that later work will succeed.
+Before an intended use, the governing rule or a known resource bound may settle whether the arrangement can serve the promised work. If a dependency remains unclear, a walkthrough of a permitted situation can expose a contradiction or a missing input. Report what this establishes for future use. A conclusion about an actual event requires evidence of that event.
 
 #### IS.2:4.2 - Distinguish explanations that matter to the finding or response
 
-State explanations as working claims about the episode. “The lookup route cannot retrieve this edition” is more useful than “technology barrier”. State what evidence would distinguish the claim and which response, if any, would depend on it.
+State the explanations at the extent of the question. They may concern how one episode went, which recurring condition prevents use or why a proposed service cannot meet its obligations. “The lookup route cannot retrieve this edition” is more useful than “technology barrier”. State what evidence would distinguish the claim and which response, if any, would depend on it.
 
 | Possible explanation | Observation that could distinguish the explanation | Different response |
 | --- | --- | --- |
@@ -79,7 +79,7 @@ Where causal reliance exceeds what the local contrast supports, use A.3.1.MI:4.5
 
 #### IS.2:4.4 - Obtain the response through its actual supplier
 
-If the response requires another contribution, specify the case, the question to answer or condition to change, the receiving result, timing and necessary qualification. First establish whether a suitable result is already available.
+If the response requires another contribution, tell the provider which work it must cover, what question to answer or condition to change, who needs the result and when, and what qualification the work requires. First establish whether a suitable result is already available.
 
 For a missing judgement, apply a qualified result that covers the case or obtain it from a competent performer. A demonstration can help when the task requires understanding how the comparison works. For a learning need, give the provider the later-work action and evidence of the difficulty. For an allocation conflict, establish the overlapping commitments and identify any decision needed from their holders.
 
@@ -105,7 +105,7 @@ Observe a subsequent use when the task or proposed claim calls for it. Distingui
 
 A support investigation can reveal that the target is no longer appropriate, that a new possible result is more valuable, or that a needed Method does not exist. State the discovery and the grounds for reconsidering the target.
 
-Where a target decision is needed, use the evidence, existing results and receiving consequence to decide within your authority or return the question to its holder. C.39 and the subject practice can construct or qualify a way. C.40.OD can help compare development directions; B.5.PI/C.40.CD can help form a question when the initial interpretation fails. Implementation support can continue independent useful work while the dependent branch remains open or stopped.
+Where a target decision is needed, use the evidence, existing results and receiving consequence to decide within your authority or return the question to its holder. Use the relevant professional evidence and A.3.1.FT to qualify a known way for this use. If an operation is missing, develop it using C.39 and the subject practice. C.40.OD can help compare development directions; B.5.PI/C.40.CD can help form a question when the initial interpretation fails. Implementation support can continue independent useful work while the dependent branch remains open or stopped.
 
 Return the supported finding or response. State its conditions, any unresolved question and the next action when the receiving work requires one. If no permissible contribution can meet the current promise, identify that limit.
 
@@ -125,7 +125,7 @@ The source owner repairs the portal. The responsible manager and technical lead 
 
 Suppose the next supported episode succeeds with one analyst, while a second still cannot compare the two revisions. That different finding opens a bounded HCD question about the second analyst's operation. It does not retrospectively turn the portal failure into a learning defect.
 
-If the manager refuses the needed change, the helper reports that the promised early-challenge practice remains unsupported. The source repair can still be useful.
+If the manager refuses the change, establish whether another authorized route can get an early challenge considered. Report the shortfall if none can meet the promise. The source repair can still be useful.
 
 #### IS.2:5.2 - An independent carrier needs a different input, not a community
 
@@ -133,7 +133,7 @@ A freelance repairer obtains a diagnostic procedure from a publisher. The new in
 
 The support practitioner asks for an allowed sample and follows it through the lookup. A subject expert can map the new identifier unambiguously. The existing instruction assumed the older format. The immediate response is a qualified input adapter and an explanation of its boundary.
 
-If two new identifiers map to the same older code, the mapping is no longer sufficient. That changed condition returns to the target Method and subject expert. Keep the ambiguous mapping open until there is a qualified way to distinguish the identifiers.
+Suppose two new identifiers map to one older code. To select a diagnostic instruction, ask whether that instruction is suitable for both instruments under the customer’s conditions. If it is, the adapter can return it directly. Otherwise, check whether another permitted instruction fits both. When no common action meets the order, use the original identifiers before reducing them to the old code or obtain another distinction in time for the repair. For a request to recover the exact original identifier, a retained original can suffice.
 
 #### IS.2:5.3 - Preserve uncertainty when the response does not depend on it
 
@@ -143,13 +143,13 @@ The local response can proceed on this basis. If a later decision concerns reduc
 
 ### IS.2:6 - Bias-Annotation
 
-The helper may favor explanations that match their own service: trainers see learning gaps, tool providers see configuration gaps and managers see motivation. Use the episode, recipient account and actual contribution to challenge that preference.
+The helper may favor explanations that match their own service: trainers see learning gaps, tool providers see configuration gaps and managers see motivation. For one attempt, use the participants’ accounts and the work they did. For a difficulty in the service, examine how its terms and the contributions across attempts could produce it, including among people who could never use the service.
 
 A successful contrast can also mislead when it changes several conditions. Keep expert assistance, case difficulty and effective access visible; their combined result does not isolate one cause.
 
 ### IS.2:7 - Conformance Checklist
 
-- A concrete intended or actual receiving use grounds the difficulty.
+- The difficulty is located in the performance, arrangement or range of receiving work the question concerns.
 - Live explanations differ in the action or warranted conclusion they imply.
 - An adequate current response can end diagnosis without another observation.
 - A selected inquiry can answer a consequential question about the finding, its grounds or a decision, and warrants its burden.
@@ -161,21 +161,21 @@ A successful contrast can also mislead when it changes several conditions. Keep 
 
 | Misuse | Repair |
 | --- | --- |
-| Score a barrier inventory and call the highest score the cause. | Recover the case and compare explanations through their different expected observations and actions. |
+| Score a barrier inventory and call the highest score the cause. | Recover the difficulty at the reach of the question. Compare what each explanation implies for the work and what would distinguish them. |
 | Diagnose a missing skill whenever a person does not perform. | Inspect access, task conditions, consequences and the actual operation. |
 | Ask for more evidence without saying what it changes. | State what the answer could change about the finding, its grounds or the subsequent work. |
-| Forward a problem to “an expert” without a usable request. | Supply the case, needed result, timing and receiving condition. |
+| Forward a problem to “an expert” without a usable request. | Explain what the recipient needs to decide or do, what the provider must establish and when and how the result can be used. |
 | Repeat an adequate OCE or HCD diagnosis under a new label. | Use the existing result if it fits. Act on a remaining question when there is one. |
 
 ### IS.2:9 - Consequences
 
 The next intervention can address the contribution that actually limits use. Some requests become smaller repairs; others correctly return to a target decision or a professional supplier.
 
-The conclusion depends on the relevant task evidence and, where needed, participants’ knowledge of the episode. State what remains open if these are unavailable. A narrow response can be justified with the cause still uncertain.
+The conclusion depends on the relevant task evidence and, where needed, participants’ knowledge of the work. State what remains open if these are unavailable. A narrow response can be justified with the cause still uncertain.
 
 ### IS.2:10 - Architectural Rationale
 
-Examine a receiving episode to see how the occasion, action and means affected the result. For a prospective difficulty, specify the corresponding intended use. A label about an individual or organization can hide those connections.
+For a difficulty in one performance, reconstruct how the occasion, action and means affected it. For a difficulty in the way work is organized, identify the relation that can produce the difficulty and the conditions under which it does. A service may exclude a whole group before anyone in it makes an attempt. A label about an individual or organization can hide those connections.
 
 The Method separates explanation from response selection. More than one explanation can support the same response, while one generic symptom can require very different actions. That distinction makes the work useful under uncertainty and limits unnecessary inquiry.
 

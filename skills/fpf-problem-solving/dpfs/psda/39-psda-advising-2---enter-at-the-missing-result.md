@@ -4,7 +4,7 @@ Select the entry that answers the current question. Reuse adequate results. When
 
 | Working question | Start here | First useful return |
 | --- | --- | --- |
-| What useful future contribution could be possible? | [Opportunity-construction Method (FPF C.40.OCN:1)](../../sections/09-part-c---kernel-extension-specifications/109-c-40-ocn---construct-a-bounded-opportunity.md#c40ocn1---problem-frame) | A candidate opportunity, dependencies, bounded reachability rationale and next question; no adviser is required. |
+| What useful future contribution could be possible? | [Opportunity-construction Method (FPF C.40.OCN:1)](../../sections/09-part-c---kernel-extension-specifications/111-c-40-ocn---construct-a-bounded-opportunity.md#c40ocn1---problem-frame) | A candidate opportunity, dependencies, bounded reachability rationale and next question; no adviser is required. |
 | Who is asking for what advice, and on what terms? | [Bound the advising engagement](40-psda-advising-3---bound-the-advising-engagement.md), using PSDA.11 | A recipient/holder/horizon question and service boundary, or the missing condition. |
 | Which facts about the developing subject affect the answer or its grounds? | [Recover only the relevant holder premises](41-psda-advising-4---recover-only-the-relevant-holder-premises.md) | The holder's current configuration and facts or gaps that affect the requested conclusion. |
 | Which specialist result is missing? | [Use the direct result-acquisition Method](42-psda-advising-5---use-the-direct-result-acquisition-method.md) | A useful qualified answer and its limit, a worthwhile bounded request, or a blocker. |

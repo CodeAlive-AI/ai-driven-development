@@ -88,7 +88,7 @@ Compare feasible auxiliary candidates with leaving the interval unused. Retain t
 
 An already-paid salary does not make those consequences vanish. Use OPS.14 when the choice or its economic justification depends on the financial comparison. Use OPS.12 when repeated transitions can impair continuing human service. Observe a trial through OPS.16 or A.3.1.WT when an unresolved operating effect justifies one; do not demand a new experiment when the available comparison already settles the choice.
 
-If development is the intended gain, C.40.OI and C.40.DC construct the opportunity and transition. For a human capability goal, use HCD.2 to arrange the required practice, feedback and support. Establish any gained capability from the learner’s performance. An interruptible activity can fit the reserve and still teach little. C.39.MF and A.3.1.WT support a method-improvement question and its trial. Use the development results to assess the intended gain. Check its compatibility with the operation by calculating the full return to protected service.
+If development is the intended gain, C.40.OI and C.40.DC construct the opportunity and transition. For a human capability goal, use HCD.2 to arrange the required practice, feedback and support. For current ability, examine the learner’s own work under the support allowed later. A claim of acquisition also needs grounds about what the learner could do before. Use HCD.14:4.2.1 when the question is how much the exercise contributed. An interruptible activity can fit the reserve and still teach little. C.39.MF and A.3.1.WT support a method-improvement question and its trial. Use the development results to assess the intended gain. Check its compatibility with the operation by calculating the full return to protected service.
 
 Choose the simplest adequate arrangement. The choice may favor a short useful unit, preparation outside the protected resource, another resource, a later window or continued availability.
 
@@ -122,7 +122,7 @@ This exercise fits the stated response requirement. The calculation does not est
 
 A live lesson with a 25-minute segment that cannot be left can exceed the entire five-minute allowance before transfer or restoration begins. Its fit within the 45-minute interval does not make it suitable for this anytime-call protection.
 
-Now change the workstation's restoration to five minutes. The former exercise gives 1 + 1 + 1 + 5 = 8 minutes and no longer preserves the response. Preparing a usable handover in advance might reduce restoration, but that is a changed arrangement whose time and burden must be included. Otherwise choose another activity or preserve readiness.
+Now suppose an allowed call requires the full minute to detect the call, one minute to stop and leave the resumption note, one minute to move and five minutes to restore the workstation, in the stated serial order. This response takes eight minutes and misses the five-minute requirement. If eight is only the sum of separate upper bounds, establish which delays can occur together before rejecting the exercise. Preparing a faster handover changes the arrangement. Include its time and cost when comparing that option with another activity or keeping the reserve free.
 
 #### OPS.8.2:5.2 - A free machine but an unavailable setter
 
@@ -142,7 +142,7 @@ A “suspend on arrival” rule therefore fails to provide the needed resource e
 
 For a constructed alternative, allow one minute to receive the call, checkpoint and terminate; one minute to release and clean up the allocation; and one minute to load the protected computation. With those serial bounds and resources available, the three-minute return fits a three-minute start requirement. The protected computation's subsequent capacity needs are also assumed to fit.
 
-An extra cleanup wait breaks that bound. Keeping the allocation free may then be the usable choice. Separately retain the cost of restarting the auxiliary computation and any external actions that its earlier execution already caused.
+Additional cleanup waiting can take the return past the deadline. A permitted run requiring the full three minutes of work plus that wait rules out the three-minute guarantee. When the separate maxima need not coincide, use a supported joint bound or examine the timing that remains possible. Include the cost of restarting the auxiliary computation and the consequences of any external actions already taken.
 
 ### OPS.8.2:6 - Bias-Annotation
 

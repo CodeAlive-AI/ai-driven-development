@@ -7,7 +7,7 @@
 
 Use this pattern to design or assess how individual and shared participation could support a learning target. Identify the target, what the learners bring or are expected to bring, and whether interaction supplies a contribution the task needs. Determine whether the needed actions, help and resources fit.
 
-Return the supported comparison or feasibility finding. Specify the actions required of each learner, contributions from others, task-group size, assistance, access and full burden. Identify which conclusions the proposed or available observations can support. An individual arrangement can suffice, several options can remain viable, or a particular condition can rule one out. If a choice is requested, identify its grounds.
+Return the supported comparison or feasibility finding. Recover the learner actions, contributions from others, group size, assistance, access and burden that can change that answer. If a required condition already fails for the proposed arrangement, identify its effect. A commission to design the rest of the service still requires that work. Identify which conclusions the proposed or available observations can support. An individual arrangement can suffice, several options can remain viable, or a particular condition can rule one out. If a choice is requested, identify its grounds.
 
 Distinguish the enrolled cohort, the groups that perform a particular task, any continuing peer circles and the providers available to help. Twenty-four people can enroll together and work in six groups of four, with a separate allocation of mentors.
 
@@ -67,7 +67,7 @@ For sequential contributions, use an explicit time construction. If each of k pa
 
 For a shared instrument, identify which actions require exclusive control and which can occur while someone else operates. For a proposed schedule, allocate the necessary personal turns and observer actions that support the target. For a past-use question, establish which participants performed them. For parallel annotation or drafting, inspect the later reading, comparison and integration burden: simultaneous writing does not make integration instantaneous.
 
-Start with the smallest configuration that supplies the required contributions under the relevant constraints. Compare another configuration when an additional participant could improve the result or a different arrangement could reduce the burden. Use the task and feasible conditions to decide which options to retain.
+Identify the contributions and constraints on the group whose work is in question. For a proposed group, establish whether its members can carry out the necessary actions together. If one feasible arrangement will serve, return one with its grounds. Compare alternatives when the commission calls for choosing a group or when changing the arrangement can resolve a shortfall. A claim that the smallest group has been found needs grounds that also cover smaller configurations.
 
 Specify the contribution expected from an observer, such as predicting a reading, measuring, checking a condition, asking for a discriminating test or explaining a change. Merely watching or recording attendance does not establish that action. If personal instrument manipulation is part of the target, observation does not eliminate the necessary later hands-on attempt.
 
@@ -77,7 +77,7 @@ Select membership differences for a task-related contribution, using obtainable 
 
 Estimate the help required to bridge the intended differences. A novice paired with an expert may receive modelling, but can also become a spectator. Where the target includes the novice’s own judgement, give them an opportunity to make it and plan feedback they can use. A group of novices may require a qualified external check before its shared misconception becomes the lesson.
 
-When an arrangement is to be put into use, establish the agreed time, channel, contributions and response expected at first contact. Use an existing adequate agreement. If a needed participant does not take part, restore the contribution, regroup on compatible terms or use a viable individual route. A roster records assignment; for a claim that contact occurred, establish what happened.
+When an arrangement is to be put into use, establish the agreed time, channel, contributions and response expected at first contact. Use an existing adequate agreement. If a needed participant does not take part, restore the contribution, regroup on compatible terms or use a viable individual route. A membership list can establish who belongs to a group. A duty roster that names the task and its holder can also establish the assignment. To report contact, use evidence of the exchange.
 
 Retain a peer circle when familiarity supplies trust, context or useful continuing feedback. Change partners or admit a newcomer when a new contribution is needed and the transition can be supported. Introduce the current problem, relevant work, permissions and any decision still open. Give the group an opportunity to assess and use, adapt or decline the contribution on its grounds. To claim that it changed the work, establish what was used.
 
@@ -89,7 +89,7 @@ Use HCD.21 when membership, first contact or use of a newcomer’s contribution 
 
 For each candidate, show which actions remain personal, which benefit from exchange, which produce a common result, and which require qualified provider judgement. Use [HCD.22](39-hcd-22---design-shared-learning-tasks-with-necessary-individ.md) where the shared task needs design. Other participants may identify an ambiguity or challenge an inference; they do not acquire the authority or competence of a subject assessor by receiving the role title.
 
-Decide when the learner sees others’ solutions and whether their earlier personal work remains available. A private first attempt can preserve an initial judgement when that matters. Demonstration or other accessible instruction can supply a method the novice needs. Assign independent search only when it serves the learning purpose under the available support.
+Decide when the learner sees others’ solutions and whether their earlier personal work remains available. A private first attempt can preserve an initial judgement when that matters. Demonstration or other accessible instruction can supply a method the novice needs. Assign independent search only when it serves the learning purpose under the available support. When the job calls for a response to a partner, preserve the partner and the timing of the exchange. A change in the partner’s input while the learner can still choose, together with evidence of how the learner used it, can show a personal contribution within the joint attempt.
 
 Identify the support each option requires, such as subject help, facilitation, material preparation, technical assistance and assessment. Use [HCD.7](24-hcd-7---arrange-providers-access-tools-and-ai-support-for-hu.md) for the assistance arrangement where needed and [HCD.8](25-hcd-8---obtain-or-build-missing-human-capability-development.md) for a missing contribution. A qualified available provider can undertake several kinds of work, provided their timing and combined effort permit it.
 
@@ -108,7 +108,7 @@ Count a shared expense once and recurring expenses where they occur. Keep learne
 
 Inspect the most demanding plausible window on a shared timeline for participants and providers. Place dependent actions after their inputs become available and identify when the learner can use a response. Combine simultaneous actions only where the people and equipment can support them. For planned visits, show which available provider could make each one, including preparation, movement and time for the learner to act. For an operational claim, establish the visits that occurred. Queuing a question works only while the dependent action can still take place. Count reserve capacity only when it supplies the needed competence, permission and availability.
 
-When scaling the cohort, recompute the number of task groups and the relevant recurrent work. A mentor-to-learner ratio summarizes a particular arrangement. Check peak and sequence constraints for the scaled cohort. Unexpected absence or retries may change the result before another enrolment does.
+When scaling the cohort, recompute the number of task groups and the relevant recurrent work. A mentor-to-learner ratio summarizes a particular arrangement. Check peak and sequence constraints for the scaled cohort. Unexpected absence or retries may change the result before another enrolment does. A schedule that fits one cohort establishes that possibility. For a guarantee, check the admitted combinations of help requests and absences, including ones still indistinguishable when the organizer must book. A shared visit can meet several needs if each learner can receive and use its answer in time.
 
 #### HCD.20:4.6 - Preserve interpretable observations and revise the right object
 
@@ -124,7 +124,7 @@ Return the comparison or the proposed arrangement’s qualified feasibility, the
 
 #### HCD.20:5.1 - Twenty-four future diagnosticians
 
-Use the constructed product in [HCD.28](45-hcd-28---construct-and-revise-a-whole-learning-product-for-a.md). Participants can calculate an indicator but need to choose between rival explanations. The proposed shared contribution is comparison of reasons that one explanation supports and another cannot yet explain. The common diagnosis is useful during practice; each participant's later model selection remains a separate target.
+Use the constructed product in [HCD.28](45-hcd-28---construct-and-revise-a-whole-learning-product-for-a.md). Participants can calculate an indicator but need to choose between rival explanations. The proposed shared contribution is comparison of reasons that one explanation supports and another cannot yet explain. The common diagnosis is useful during practice; each participant's later model selection remains a separate target. Use the short personal inquiry in HCD.28:5.1 to see who can construct alternatives and select an observation. The later group comparison and the personal interpretation of a supplied measurement exercise other parts of the job.
 
 The initial proposal gives each participant two three-minute contributions and reserves six minutes for reconciliation. Thus 6k + 6 ≤ 30 permits at most four participants before any separate subject help. Four is a necessary capacity bound, not a completed feasible arrangement or an optimum. If six minutes of qualified help must follow the initial explanations and precede the later reasoning, four people need 36 active minutes. The construction below preserves both rounds and reconciliation instead of hiding that assistance inside an already occupied interval.
 
@@ -138,7 +138,7 @@ The constructed comparison considers three options.
 
 For 24 participants, six groups of four each need a six-minute subject-help visit. One mentor cannot supply 36 direct minutes in a 30-minute booking. Two mentors have enough total time, but simultaneous starts would give all six groups the same visit window. The proposed starts are G1/G2 at 10:50, G3/G4 at 11:00 and G5/G6 at 11:10. Before relying on this schedule for delivery, establish that the participants can make their starts. Each person’s entry work and first judgement finish before their group starts. Nobody needs to wait through the whole cohort window.
 
-Each first round gives all four people three minutes to expose their evidence and what it supports or leaves open. The shared notes and qualified case reference then supply the mentor's inputs. The six-minute visit includes inspecting the group's bounded question and responding to it; it does not replace the learner's model choice. In the second round, each person challenges or answers a consequential question about another contribution. The final six minutes reconcile the supported common conclusion.
+Each first round gives all four people three minutes to expose their evidence and what it supports or leaves open. The shared notes and qualified case reference then supply the mentor's inputs. The six-minute visit includes inspecting the group's bounded question and responding to it; the learner retains the choices still open after that help. In the second round, each person challenges or answers a consequential question about another contribution. The final six minutes reconcile the supported common conclusion.
 
 | Groups | First contributions, 4 × 3 min | Subject help | Second contributions, 4 × 3 min | Reconciliation | Mentors |
 | --- | --- | --- | --- | --- | --- |
@@ -148,7 +148,7 @@ Each first round gives all four people three minutes to expose their evidence an
 
 Both mentors are booked from 11:00 to 11:30. Each gives three visits, with four minutes between visits and two minutes before the first and after the last. The rooms and case materials are prepared in advance; the gaps cover movement or connection and a brief reset. A site needing longer travel or help requires different bookings before the offer. The last group finishes at 11:46 and completes its ten-minute personal changed case by 11:56. A missing visit or unanswered question remains a supply gap; nominal spare time does not show that it was answered.
 
-Retain first-response checking in all variants. Eight minutes per participant remains 192 minutes even when the group result is excellent. In HCD.28’s worked example, inspecting each correction adds four minutes per person, or 96 further minutes; that work also remains personal. Use actual first attempts, correction needs and help requests to refine these planning assumptions. A faster mentor or an apparently quiet group is not evidence of unchanged learning quality.
+Retain the individual assessment in every variant. In this comparison, eight minutes per learner for the two short personal responses and feedback comes to 192 minutes. In HCD.28’s worked example, inspecting each correction adds four minutes per person, or 96 further minutes; that work also remains personal. Use actual first attempts, correction needs and help requests to refine these planning assumptions. A faster mentor or an apparently quiet group is not evidence of unchanged learning quality.
 
 Complete the pair option on the same task and twenty-four-person cohort. Each partner initially explains two of the four evidence contributions in three minutes. Six further minutes let both question the grounds. The mentor can now use the visible evidence and question. After the six-minute visit, each partner has another three minutes to explain the connection between the other's evidence and the rival accounts. Six minutes of reconciliation complete the thirty-minute pair activity. Thus the pair retains two personal contributions each, questioning, qualified help and a common result; dividing four calculations is insufficient.
 
@@ -180,7 +180,7 @@ The extra fixed hour estimates pair-specific evidence distribution and mentor pr
 
 The pairs’ 90-minute core takes 36 learner-hours for 24 people. Six preparation branches add 2 hours. Twelve possible recoveries at 15 learner-minutes add up to 3 hours, for 41 active learner-hours at full reserve use. For groups of four, 24 × 96 minutes is 38.4 learner-hours. Add 2 preparation hours and nine possible 15-minute recoveries (2.25 hours) to obtain 42.65. Both plans preserve HCD.28’s two-day feedback sequence and noon submission of personal responses.
 
-On these allowances the three-mentor pair option costs 2.3 more provider-hours but 99 fewer active learner-minutes than four-person groups. The differing reasons, personal contributions and simultaneous staffing still matter; no option has established equal educational outcomes merely by fitting its clock. For a choice, use the learning contributions, capacity and separate burdens. A later observation may justify revisiting the recovery allowance or reveal a judgement that learners had no opportunity to practise. Recompare if the evidence affects the question.
+The three-mentor pair option reserves 2.3 more provider-hours. For the same zero to nine learner recoveries and the same six preparation branches, it uses 144 fewer active learner-minutes. At full use of each reserve, the pair option serves twelve recoveries and the four-person option nine. Those three additional recoveries use 45 learner-minutes, reducing the difference to 99. Actual learner time depends on the recoveries used. The differing reasons, personal contributions and simultaneous staffing still matter; no option has established equal educational outcomes merely by fitting its clock. For a choice, use the learning contributions, capacity and separate burdens. A later observation may justify revisiting the recovery allowance or reveal a judgement that learners had no opportunity to practise. Recompare if the evidence affects the question.
 
 #### HCD.20:5.2 - Shared equipment and an internal team
 
@@ -205,7 +205,7 @@ The Noerholk et al. study provides a concrete example of active observer possibi
 
 ### HCD.20:7 - Conformance Checklist
 
-A recognizable comparison preserves:
+For a comparison or a feasibility decision, establish the conditions that can change it. A demonstrated conflict can exclude the proposed arrangement before the other costs are known. Include the following when the answer depends on them.
 
 - the intended personal contribution and any distinct shared or team result;
 - meaningful entrant preparation and interaction conditions;

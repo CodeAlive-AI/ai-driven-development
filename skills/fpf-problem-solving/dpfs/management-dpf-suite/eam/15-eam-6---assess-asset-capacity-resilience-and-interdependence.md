@@ -33,9 +33,9 @@ Identify the asset contributions and the dependencies that can change the answer
 
 Test a fallback against that same loss. A second pump on the failed feeder supplies no replacement flow until its needed power is restored. An alternative is independent of that feeder loss only when its power, control, connection and other necessary support remain usable under the stated scenario. This is a dependency claim for the named disturbance; a separate statistical independence claim needs its own evidence.
 
-Choose adverse conditions because their consequences can change the asset decision: a named outage, common-provider loss or credible demand burst. Use an existing qualified scenario where it matches. Preserve simultaneous calls on shared reserve; one standby contribution cannot be allocated twice to incompatible users.
+Choose adverse conditions for the decision being made. A stated feeder outage may settle a question about that outage. For a service promised across a range of disturbances, establish which calls on the same reserve can coincide and which conditions require different allocations. Follow changes of demand and recovery through the period for which each recipient is owed service.
 
-Compare material alternatives on the same disturbance and service criterion. An alternative may change the dependency itself, so recalculate the remaining contributions rather than carrying over the old consequence account.
+Compare the alternatives under the disturbance and service criterion they must meet. An alternative may remove a dependency or introduce a new one. If the dispatcher must commit reserve before knowing which call will arrive, try the allocation against the calls still possible at that time. To guarantee the service, there must be an allocation that works across those calls, or timely information and authority to act differently when needed. Finding a successful allocation after each outcome is known leaves that question open.
 
 #### EAM.6:4.3 - Follow service through recovery
 
@@ -45,7 +45,7 @@ For each interval, compare required service with supported available contributio
 
 Credit replenishment only when its route, rate, timing and operating conditions are supported. If flows or demand vary materially within an interval, refine the intervals or obtain an appropriate time-dependent result. A total-volume comparison alone cannot establish pressure, quality or other delivery conditions.
 
-The service requirement may include an allowed interruption, minimum contribution or restoration deadline. Apply that criterion to each interval. Report where and for how long it fails. Keep evidence for restoration timing separate from a proposed recovery plan: an unqualified time leaves the dependent conclusion conditional.
+Apply the service rule to the results for the periods and recipients it covers. A minimum required continuously must hold throughout the relevant intervals. For a permitted interruption, determine whether the limit concerns one continuous loss or the accumulated loss over a stated period, and whose interruptions count together. Adjacent calculation intervals can belong to one uninterrupted outage. Separate interruptions can both count towards one recipient's allowance. Carry those relations through restoration and identify the crossing of any binding limit. A proposed recovery time needs support before it can establish service.
 
 #### EAM.6:4.4 - Compare remedies and return the conditions
 
@@ -91,7 +91,7 @@ Average service can hide a severe local loss. Inspect the protected population o
 
 ### EAM.6:7 - Conformance Checklist
 
-Are demand and usable capability compared under the same conditions? Can the reader trace the selected dependency loss to the contributions that cease? Does the reserve remain available under that loss and concurrent use? Are its amount and rate sufficient in every relevant interval? What supports restoration timing, and what stronger claim would require another model?
+Are demand and usable capability compared under the same conditions? Have the lost contributions and the reserve’s rate, amount and competing uses been accounted for while the disturbance lasts? Does the service conclusion combine these intervals for the recipients and period named in the undertaking? Is the assumed time to usable service supported well enough for that decision? If the undertaking covers different calls, can those who allocate reserve act in time in every covered situation?
 
 ### EAM.6:8 - Common Anti-Patterns and How to Avoid Them
 

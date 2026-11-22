@@ -9,7 +9,7 @@ Use this pattern when participants have a worthwhile reason to interact, but the
 
 The subject is the arrangement of an interaction: its participants, purpose, material, place or channel, participation, facilitation, timing and continuation. A useful arrangement can support mutual help, a shared experience, comparison of practice or a wider view of an issue. It may be a single encounter or a continuing space.
 
-**First useful result:** participants can perform the intended shared activity under feasible conditions, and its useful result or unresolved question reaches the recipient or activity that needs it next.
+**First useful result:** a feasible arrangement for the intended shared activity. When the participants are also to conduct it, carry their contributions through to the result or open question that the next recipient needs.
 
 The organiser needs a credible purpose and relevant contributions, such as CB.1 and CB.2 supply, and an account of participants' access and preparation. CB.3 helps establish entry conditions. The activity's domain supplies the content and criteria for professional conclusions.
 
@@ -33,7 +33,7 @@ How can an organiser construct and adapt a shared activity so that the right con
 
 ### CB.4:4 - Solution
 
-Begin with the result and the actions that could produce it. Choose a form, participants, material, space and time that make those actions feasible. Connect the participants and their material, provide any support the activity needs and return its outcome to the recipient or work that needs it.
+Begin with the result and the actions that could produce it. Choose a form, participants, material, space and time that make those actions feasible. For an order to design the activity, show how the contributions, material and available support can produce the result for its intended receiver. When conducting the activity is also commissioned, bring those people and inputs together and carry the result through to its next use.
 
 
 
@@ -92,7 +92,7 @@ For a specific case clinic, design clinic, story, project review or prepared gue
 
 Choose a physical or digital setting by the interaction it must support. Check whether people can enter, see or hear the material, take turns, ask for clarification and recover the result. For a continuing question-and-answer space, also check whether later users can find an applicable answer and its conditions. For rapid discussion, the ability to exchange and clarify may matter more than a complex information structure.
 
-Test the participant’s path with a representative task. Open the intended material under the participant's access conditions, try the proposed contribution and obtain the expected return. If a platform's features or cost matter to the decision, inspect its current terms and behaviour for this use; a remembered product category does not settle that comparison.
+Establish which parts of the path already work under the participant’s conditions. When a consequential uncertainty remains or a trial was commissioned, use a representative task to follow the material, contribution and return under those conditions. If a platform's features or cost matter to the decision, inspect its current terms and behaviour for this use; a remembered product category does not settle that comparison.
 
 Keep the number of spaces proportionate to distinct needs and available support. Split a channel when the difference in audience, material, timing or purpose justifies it and the new route can be found. Avoid requiring people to repeat the same question in several places. Where independent groups already use another space, arrange a permitted connection rather than assuming that all useful relations must move to the organiser's platform.
 
@@ -132,7 +132,7 @@ The first design gives everyone two minutes for an introduction. That consumes t
 
 The forty-five minutes are allocated as five to establish the question and sharing limits, twelve for the first conversation, three to change groups, twelve for a second conversation, ten to compare findings, and three to close the return. The hosts retain context while the other participants encounter a different group.
 
-One group reports an equipment constraint; another reports permission to use the data; a third finds that an available observation has been misunderstood. The whole-group comparison preserves those different conditions. The relevant access owner receives the permission question, and two participants accept a bounded clarification of the instruction. A majority preference would not make these difficulties the same.
+One group reports that its equipment cannot produce the observation. A second can produce it but lacks permission to release it for comparison. In the third group the observation reached its users, who misread it. The host records the first two reported limits, identifying for whom the observation is unavailable and for what use. The third account explains a different difficulty after delivery and leads two participants to clarify the instruction. The access owner receives the permission question.
 
 If preparation is unavailable or participants cannot use the changing-group arrangement, the organiser reduces the questions, keeps stable groups with an explicit exchange of findings, or chooses an asynchronous comparison. The result governs the adaptation.
 
@@ -165,7 +165,7 @@ Before relying on the arrangement, establish that:
 - the form, size and timing fit the work;
 - material and access conditions allow the intended participation;
 - facilitation addresses the obstacles participants encounter and permits a workable change;
-- the outcome reaches its next use with the needed context and limits.
+- the designed exchange can deliver the agreed result with its grounds and limits. When the order includes conducting the exchange or delivering its outcome, the result reaches the agreed receiver.
 
 Recognition can begin with a simple invitation and prepared activity. Claims about actual learning, durable relationships, representative opinion or a fulfilled professional service require their own evidence.
 

@@ -116,7 +116,7 @@ A needed relation between different semantic projections is a separate F.9 quest
 
 *Constructed case:* Under the fixed `ServiceVocabulary-1` reference scheme, the local-sense claim is “a service indicator threshold together with its assessment window”. The old expression is **“SLO”**, the proposed expression is **“service-level objective”**, and both serve the same use of reading a service objective. No change to the objective or assessment rule is proposed.
 **Relation:** `renames("SLO" → "service-level objective")`.
-**Why:** The scheme, sense and use are unchanged; expansion improves recognition.
+**Why.** The scheme, sense and use are unchanged. Spelling out the name lets readers see what the abbreviation stands for. A claim about improved recognition by this audience needs evidence of their reading.
 **Effect:** Retain the two exact cells `<ServiceVocabulary-1, "SLO", claim>` and `<ServiceVocabulary-1, "service-level objective", claim>` in the naming lineage. Old text retains its earlier expression and meaning; new writing uses the expansion. No Bridge is needed for these identical semantic projections.
 
 #### F.13:9.2 - Alias for a common legacy synonym (Sys‑CAL)
@@ -273,11 +273,11 @@ All Part C patterns when editions shift; all examples and tutorials when teachin
 
 1. **Recover the same meaning and use first.** Distinguish the expression from its exact cell and governed value. Use `renames` only for unchanged meaning and use; recover any subject change before settling the later name.
 2. **Keep aliases local.** Different semantic projections open F.9 only for a needed correspondence; the difference itself establishes no Bridge.
-3. **Prefer clarity over fashion.** Rename only when the new label offers a concrete recognition gain under F.5, such as removing an ambiguity.
+3. **Choose for the audience.** When proposing a new name under F.5, explain which actual reading difficulty it would resolve. An observed improvement in recognition requires a comparison with the previous form under relevant reading conditions.
 4. **Keep useful read-paths.** Preserve the legacy expressions readers need to interpret historical or continuing uses; keep unused synonyms out of the main presentation.
 5. **Keep historical reading clear.** For a rename, point from the legacy label to its preferred successor. For retirement without a single successor, point to the relevant meanings or rows.
 6. **Rows before names.** If a rename request coincides with a shift in what the row covers, **refactor rows** (F.7) first, then choose labels.
-7. **Edition changes.** Compare the affected definitions. If meaning changes, recover the subject-governed revision, replacement, split, merge or retirement and preserve the earlier claim. If meaning and use stay unchanged, rename only for a concrete recognition gain.
+7. **Edition changes.** Compare the affected definitions. When meaning changes, recover the revision, replacement, split, merge or retirement and preserve the earlier claim. If the source adopted a new designation for the same meaning and use, record that change and retain the historical alias. The new edition establishes its designation even when the audience preferred the old one.
 8. **Teach the delta.** In primers, show a **mini table** with legacy → preferred pairs only where readers will encounter both.
 
 ### F.13:15 - Acceptance tests (SCR/RSCR — concept‑level)

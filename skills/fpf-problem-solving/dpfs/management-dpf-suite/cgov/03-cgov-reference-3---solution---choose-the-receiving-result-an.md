@@ -1,6 +1,6 @@
 ## CGOV.Reference:3 - Solution - Choose the receiving result and connect the necessary methods
 
-The Parts group the methods by the work they support. Enter at the part that supplies the contribution you need. The applicable corporate rules determine who has authority.
+Start from the corporate result the recipient needs. Find the body and power involved, who qualifies for this particular act, which contributions have to reach whom, and what the governing rule requires of them separately or together. A group of people may supply separate advice, cast votes in one decision or act for several corporations under different mandates. Preserve the distinctions that change this act. A threshold can be settled before every vote is known if all permitted completions give the same outcome. When the commission also asks how each person voted, the individual acts remain part of the answer. The Parts below identify the methods that can supply these different results.
 
 | Part | Working contribution | How its result is used |
 | --- | --- | --- |

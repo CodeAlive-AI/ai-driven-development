@@ -1,7 +1,9 @@
 ## IS.Edition:1 - Edition and citation
 
-**Implementation Facilitation — edition of 12 October 2026.** Framework reference code: `IS`.
+**Implementation Facilitation — edition of 22 November 2026.** Framework reference code: `IS`. This revision builds on the edition of 21 November 2026.
 
 This edition includes seven Methods, a Readme, an Architectural Reference, the Harbor Design application and an account of the sources and related frameworks. Use it when helping a recipient establish, restore, adapt or continue a practice under its working conditions. A practitioner introducing a Method independently can use A.3.1.MI. When the undertaking calls for a result supplied by a service, use a qualified service that can deliver it. When it calls for the recipient to learn an operation, establish what the recipient can do under the promised conditions.
 
 Use the framework code IS and a pattern number to cite a Method, for example IS.2. Cite Implementation Facilitation, the edition and, when the wording matters, the particular revision.
+
+Five sections keep their identifiers under revised titles. Use [IS.1:4.4](13-is-1---agree-a-useful-implementation-support-undertaking.md#is144---agree-a-support-undertaking-that-fits-the-receiving-work), [IS.2:4.1](14-is-2---find-the-implementation-difficulty-and-obtain-the-nex.md#is241---trace-the-difficulty-through-the-work-that-needs-the-result), [IS.5:4.3](16-is-5---sustain-transfer-extend-or-end-implementation-support.md#is543---establish-what-must-pass-to-the-successor-and-the-receiver), [IS.6:4.1](17-is-6---broker-a-practice-change-across-unequal-influence.md#is641---locate-the-connection-that-participation-requires), [IS.7:4.1](18-is-7---facilitate-a-practice-change-with-its-participants-an.md#is741---recover-the-practice-and-the-work-in-which-it-must-be-useful) for the current wording. The [21 November edition](https://github.com/ailev/FPF/blob/be3c008f1b4e86b522eaa02ed2718a45e40341b3/DPFs/IMPLEMENTATION-FACILITATION-PRINCIPLES-FRAMEWORK.md) retains the earlier headings and their bookmarks.

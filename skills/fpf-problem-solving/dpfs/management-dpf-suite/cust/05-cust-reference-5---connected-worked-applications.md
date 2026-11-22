@@ -10,7 +10,7 @@ CUST.1 first places the existing provision beside the customer's required result
 
 CUST.3 constructs a candidate family: a common monthly reporting purpose, qualified input meanings, an ordinary hosted member and a private member with stated access and preparation conditions. A disconnected immediate-response service is excluded because its operation and support do not fit the common basis.
 
-CUST.4 helps the customer choose between the hosted and private members and makes the necessary customer work visible. CUST.5 investigates the unsettled access condition through a permitted bounded attempt. The field result supports local use with assistance, but reveals manual input correction that was absent from the shared-delivery claim.
+CUST.4 sets aside the hosted member because this order requires private hosting, then tests whether the private member fits. It makes the necessary customer work visible. CUST.5 investigates the unsettled access condition through a permitted bounded attempt. The field result supports local use with assistance, but reveals manual input correction that was absent from the shared-delivery claim.
 
 CUST.6 reconstructs that correction, makes input interpretation and exception handling explicit, and supplies preparation and scheduled help. Another prepared performer then performs the work. If extra author assistance remains necessary, the provider can retain it as explicit assisted provision, improve the method or narrow the supported class.
 

@@ -45,7 +45,7 @@ Turn the live differences into questions, such as “Does this arrangement retai
 
 #### PSDA.3:4.2 - Choose complementary contributions at the needed grain
 
-Identify the contribution a model could make to the question before choosing its notation or tool.
+Start from what the recipient must decide or explain before choosing a notation or tool. When deciding which distinctions to keep at a given scale, look for permitted arrangements the proposed model treats alike. Could both give this total yet place the loss on different people, require different actions before a deadline or support different explanations of what happened? Keep or recover whatever distinguishes the required answers. A common action or a bound can suffice while the underlying arrangement is still unknown. When advice must cover later choices, establish what the chooser can learn before each choice.
 
 | Needed contribution | A possible model | Limit to preserve |
 | --- | --- | --- |
@@ -55,7 +55,7 @@ Identify the contribution a model could make to the question before choosing its
 | Expose objectives and distinguish consequences. | An objectives hierarchy, criteria model or consequence table. | To use weights or trade one concern against another, establish the meaning and comparability of the measures and the applicable value and authority premises. |
 | Test a technical feasibility premise. | A domain calculation or qualified engineering model. | Feasibility holds only within its configuration, operating envelope, evidence, and uncertainty limits. |
 
-Keep the smallest set that covers the material questions and assurance needs. A qualitative model may expose a question worth quantifying. A numerical model may expose a missing qualitative distinction. Retain a further model when it supplies a distinct contribution, including independently grounded evidence for or against another model’s claim.
+Keep the models needed for the material questions and assurance requirements. A single model can suffice. A qualitative model may expose a question worth quantifying. A numerical model may expose a missing qualitative distinction. Retain a further model when it supplies a distinct contribution, including independently grounded evidence for or against another model’s claim.
 
 A concern map can complete the task of making the participants’ concerns discussable. For a separate question about a cause or the effect of an intervention, use an adequate causal model if one exists. Where the relations still need construction or comparison, use `C.28.CM` to build models from subject knowledge and proposed mechanisms. Return the assumptions, conditional consequences and unresolved alternatives. Qualify causal claims for their intended use under :4.5.
 
@@ -73,9 +73,13 @@ Use local definitions, units, scope and evidence where they suffice. Use `A.1.1`
 
 For a material overlap, compare the subjects, configurations, populations, horizons, units, definitions, assumptions and evidence on which the claims depend. Two models may describe one object or related objects. A travel-expense model and a repair-performance model can concern different work on one business trip. Establish the completion conditions for each. A shared contract could specify the same completion event, while different terms could require distinct evidence. Establish each correspondence from the subjects and meanings. When one model treats service failure as lost pumping capacity and another as inability to reach a refuge, examine the relation that the receiving question needs and retain any unresolved difference.
 
+To claim that one model strictly refines another for the same question, keep the interpretation fixed and compare what each permits. At least one case must remain possible, every case the proposed refinement permits must satisfy the earlier constraints, and at least one earlier possibility must be excluded. A change of notation by itself preserves the possibilities. Detail about another question requires establishing its bearing on this one.
+
 Locate the source of a material mismatch in the questions, assumptions, meanings or evidence. Correct a unit or input error where it occurs. Retain plausible alternatives where their truth remains open. If investigation could matter to the conclusion or the grounds for relying on it, compare its attainable contribution and cost with returning the qualified alternatives or a narrower answer through `C.11.DUA`. Use `A.15.9` for a selected outside-practice contribution and its acquisition burden.
 
 Keep unlike outputs in their own measures. Scenario counts need a probability basis before they can support a probability estimate. When two models draw on one dataset, identify that shared dependence. The account can explain how the models inform one another while retaining their different subjects or assumptions.
+
+Establish how the model results bear on the same decision. When the conclusion depends on several conditions holding at once, establish that they can hold together in the proposed arrangement. A conclusion across mutually exclusive cases can instead follow from showing it for each case and establishing that the cases cover the promised range. For a succession of operations, establish how one output becomes a later input. To compare alternatives, use the circumstances the comparison calls for and preserve the features that differ between the alternatives. A service may cover either of two calls separately while needing the same crew for both. Apply a model of their joint use if both calls are permitted together. Taking the worst value for each component can give a safe bound without giving an attainable joint outcome. Carry what the bound establishes back to the decision.
 
 #### PSDA.3:4.5 - Match assurance to the claim being used
 
@@ -148,7 +152,7 @@ Model-prestige bias favors the most technical representation. Agreement bias cou
 - [ ] Each model supplies a distinct useful contribution; one sufficient model remains a valid cheaper exit.
 - [ ] The subject, model content, expression, evidence, and possible intervention remain distinguishable.
 - [ ] Assumptions, important losses, and limits accompany every relied-on output.
-- [ ] Material overlaps are compared by meaning, scope, units, and evidence dependency; unresolved differences are not averaged away.
+- [ ] The meaning and scope of overlapping claims fit their use. Each use of several results has the grounds its conclusion needs, such as compatibility within a proposed configuration, a warranted handoff, comparable alternatives or a sufficient bound. Shared evidence and unresolved differences remain visible.
 - [ ] Where a claim depends on mathematical mapping, model applicability, performed use or expression coherence, the relevant relation has been established.
 - [ ] The grounds fit the claim about recognition, validation, confidence, cause or decision authority.
 - [ ] The return identifies supported claims and any unresolved differences or material conditions for reopening them.

@@ -252,7 +252,7 @@ Each continuation names one applicable pattern reference and one question or use
 | Receiving use | Decide which mathematical-lens result is needed before formal-substrate declaration and method comparison. |
 | Next practical question | Which structure is preserved, which is lost, and where does the heat-flow lens stop? |
 | Applicable pattern | `C.29` Mathematical Lens Use. |
-| Result written and use it answers | The C.29 local lens-use result: target phenomenon, candidate mathematical object, preserved structure, lost structure, payoff, declared use, and stop condition. |
+| Result written and use it answers | The C.29 result in §4.2 gives the net heat rate at the fixture boundary and identifies a spatial difference that the total omits. A method comparison concerned with whole-fixture heat balance can use it under those conditions. |
 | Local non-overread | This positive C.29 continuation selects no Method, MethodDescription, WorkPlan, dated Work, evidence verdict or gate result. Method comparison remains a separate continuation and waits until its comparator, measurement basis and candidate-set relation are current. |
 | Return condition | When a measurement, reference plane, or source-currentness relation changes, reapply the pattern for that value and reopen only the dependent P2W continuation. |
 
@@ -324,8 +324,8 @@ Use the first three rows for an ordinary case. Open the fourth only when the sou
 | What the reader has | Do now | Result or stop |
 |---|---|---|
 | Accepted `ProblemCard@Context PC-FAB-042`: the cooling-fixture deformation is not one more tuning defect because method comparison must preserve a heat-flow invariant. | Carry that distinction into the question: "Which structure does the proposed mathematical lens preserve, which does it lose, and where does its use stop?" | One recognizable receiving question; no method, declaration, plan, or work claim yet. |
-| That question names one mathematical-lens relation. | In the Relations map, select `C.29` once and apply its Solution to the cooling-fixture subject and comparison use. | `CoolingFixtureHeatFlowLensUse-042`: preserved structure, lost deformation factors, payoff for method comparison, declared use, and stop. |
-| The `C.29` result still carries the accepted heat-flow distinction. | Continue with that value; stop before method comparison until its comparator, candidate set, and measurement basis are current. | A useful positive P2W continuation. No compact note is needed unless another user must replay it. |
+| The candidate fixture model admits two heating zones. For this calculation it takes 120 W in, rejects 80 W and 40 W through the two zone paths, and counts no other energy exchange. | Apply `C.29` to the fixture boundary. Add the outward heat rates and subtract them from the input: 120 − (80 + 40) = 0 W. | `CoolingFixtureHeatFlowLensUse-042` establishes zero net energy accumulation for those modeled rates. It preserves the whole-fixture balance needed by the comparison. |
+| The downstream decision also concerns deformation. | Try another distribution, 60 W and 60 W out for the same 120 W in. The whole-fixture balance still closes. With equal zone-to-sink conductances to the same sink, the unequal split can require unequal zone temperatures. | Use the sum for the balance. For deformation, recover the spatial temperature field or adequate bounds, the supports and material response, or an applicable test. To compare Methods, also establish the candidates, comparator and measurement basis. |
 | The same source also shows a `FormalSubstrate` signature. | Split the signature claim from the lens-use claim. Apply `A.6.0` only if its defined subject, ranged value, and selected profile can be named. | A separate declaration result, or a stopped declaration cue. The signature neither replaces the `C.29` result nor selects a method. |
 
 In this example the ordinary route uses one carried distinction, one concrete question, one map lookup, one result from the pattern that answers the question, and one visible stop.
@@ -521,7 +521,7 @@ These examples show how to fill and replay the compact note in `4.1`.
 | Receiving use | Determine the mathematical-lens result needed before any formal-substrate declaration or method comparison. |
 | Next practical question | Which structure is preserved, which is lost, and where does the heat-flow lens stop? |
 | Applicable pattern | `C.29` Mathematical Lens Use. |
-| Result written and use it answers | A C.29 local lens-use result naming target phenomenon, candidate mathematical object, preserved structure, lost structure, payoff, declared use, and stop condition. |
+| Result written and use it answers | For a candidate loop regime with 100 W supplied, 100 W removed and no other energy exchange, the energy accumulation rate is 0 W. If removal falls to 90 W with the other premises unchanged, the rate becomes +10 W and that regime cannot be steady. Either balance leaves the spatial temperature profile open. Use the result to compare net heat rates, and return to the spatial model or suitable observations for deformation. |
 | Local non-overread | Method comparison waits until comparator, measurement, and candidate-set relations are named. A later `A.6.0` signature declaration is a separate continuation. |
 
 **Port-throughput continuation split.**

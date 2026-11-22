@@ -21,6 +21,7 @@
   - [Connect structures through the result they must obtain](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference61---connect-structures-through-the-result-they-must-obtain)
   - [Interpret levels, layers and scales through their relations](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference62---interpret-levels-layers-and-scales-through-their-relations)
     - [Reason about the types used to model a domain](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference621---reason-about-the-types-used-to-model-a-domain)
+    - [Unified term sheet for scales, layers and model abstraction](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference622---unified-term-sheet-for-scales-layers-and-model-abstraction)
   - [A faster command can defeat an unchanged controller](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference63---a-faster-command-can-defeat-an-unchanged-controller)
   - [The same organization can require different performance and provision](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference64---the-same-organization-can-require-different-performance-and-provision)
   - [Compact cycles in working control arrangements](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference65---compact-cycles-in-working-control-arrangements)

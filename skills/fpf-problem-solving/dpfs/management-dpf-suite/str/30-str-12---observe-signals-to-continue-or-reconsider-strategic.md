@@ -70,12 +70,12 @@ Establish whether a premise, its applicability, the basis of comparison, an adop
 
 Use an adequate existing interpretation. Seek further evidence only when its attainable contribution to the requested finding or decision warrants its full burden and delay, under C.11.DUA. A sufficiently adverse whole-cost result can justify stopping further inquiry; uncertainty does not create an obligation to run an experiment.
 
-If the question is to compare what proportion of customers or participants took a defined step, and the existing account is insufficient, construct an interpretable reading from the permitted evidence:
+If the question is to compare the proportion of customers or participants who took a defined step, derive the population and period from the decision the reading will support. Use the permitted evidence as follows.
 
 1. Name the event and counted unit. A visit, account, person and paying organization can give different answers. State what counts as the event, such as a first paid order, rather than treating every recorded interaction as success.
-2. Group units by a relevant common entry rule, such as registration during a given month. The units grouped this way form a cohort. Choose a common period after each unit's entry, such as its first twenty-eight days. Preserve material differences in offer, eligibility, channel and exposure. The same reporting date does not give newer and older entrants equal observation time.
-3. Recover the numerator and denominator under that definition. For a proportion of customers placing an order, count each qualifying customer once in the numerator and retain all customers required by the denominator, including known non-purchasers. Unfinished follow-up or missing records cannot be silently counted as no order or removed to improve the fraction. Reconcile the counts with their source events and transformations where the present reliance needs that check.
-4. Report both counts and the fraction, the observation period and material gaps. Compare readings with compatible definitions. State any limit caused by unequal follow-up or other material differences. A larger total can coexist with a smaller fraction. Totals still matter when the receiving question concerns workload, cash or an authorized limit.
+2. Establish who is eligible and when each unit can contribute to the measure. A contract may cover all active accounts in a calendar month. For conversion within twenty-eight days of registration, group entrants by a relevant common entry rule and allow each its defined follow-up. People grouped by that entry rule form a cohort. Preserve differences in offer, eligibility, channel and exposure that matter to the conclusion.
+3. Determine what the evidence establishes about the numerator and denominator together. If the unit is a customer, count each eligible customer once in the denominator, including customers who did not take the defined step. Count those who did take it once in the numerator. Preserve what is genuinely unknown about outcomes or eligibility. Reconcile the counts with source events where the decision requires it.
+4. Give the counts, fraction and observation period when an exact rate is due. For a threshold decision, bounds on the possible rates may already establish the answer. If the denominator can vary, account for which event counts can occur with each denominator. Compare readings under compatible definitions and state the effect of any material gaps. Totals still matter for work, cash and authorized limits.
 
 The groups provide a descriptive comparison. Selection, conditions and other differences between groups can affect the observations. Use C.16 for measurement interpretation and comparability. To attribute an effect to the changed product, use a qualified causal result under C.28, or consider a bounded comparison through STR.7 if the stronger answer warrants it. To claim practically equivalent outcomes, establish that uncertainty is small enough relative to the difference that matters for this use.
 
@@ -117,11 +117,11 @@ If the same capacity issue is discovered during the original four-day preparatio
 
 #### STR.12:5.2 - A changed filter is not a changed observation
 
-For changes to be taken this quarter, the working direction requires reduced customer rework, a result that can be checked within two weeks and no irreversible migration. A proposal meets the first three conditions, including its timing, but requires irreversible migration.
+The current filter covers changes to start this quarter. It requires less total customer rework on orders handled by the affected process in the first two weeks after each change starts, compared with continuing that process. The result must be checkable by the end of those two weeks. Irreversible migration is excluded. A proposal meets the first three conditions, including its starting date, but requires irreversible migration.
 
 Later, a participant suggests allowing irreversible migration where specified transition protection can be provided. Apply the existing rule while the proposed filter is under consideration. The responsible body compares the reason for the change and its consequences before adopting or rejecting it.
 
-If the revision takes effect, evaluate the proposal under the revised migration and transition-protection condition. Determine whether the change is for this quarter, would reduce customer rework and can be checked within two weeks. Technical feasibility, the resources needed and authority to proceed remain separate questions. If the revision is rejected, the original filter continues. Retain the earlier observations under their original scope.
+If the revision takes effect, evaluate the proposal under the revised migration and transition-protection condition. Retain the original start and two-week rework conditions when judging eligibility. Technical feasibility, the resources needed and authority to proceed remain separate questions. If the revision is rejected, the original filter continues. Retain the earlier observations under their original scope.
 
 #### STR.12:5.3 - A signal supports continuation
 
@@ -153,7 +153,7 @@ Sunk effort can favour continuation, while fear of being late can favour prematu
 
 - Distinguish any recommendation, authorized commitment and observed performance relevant to the question.
 - The signal has a qualified subject, interval, meaning and uncertainty.
-- A behavioural proportion has a recoverable counted unit, numerator, denominator and follow-up period; its comparison retains material group differences.
+- A behavioural proportion has a defined event, unit, eligible population and observation period. The counts or bounds support the claimed rate, comparison or threshold decision, including any material group differences.
 - The result identifies the premise, conclusion or decision the signal informs.
 - Warning, reconsideration and authorized response remain distinct.
 - For a time-sensitive response, the observation, interpretation and permitted action fit the window, or the result identifies the missed or infeasible response.

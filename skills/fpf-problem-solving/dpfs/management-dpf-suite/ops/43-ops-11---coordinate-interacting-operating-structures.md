@@ -100,7 +100,7 @@ The question is whether a changed readiness and rig-access plan can support the 
 | Selected structure or relation set | Concrete coupling needed for the decision | Receiving action |
 | --- | --- | --- |
 | rig-use arrangement | provider access, qualified operator and configuration jointly permit the specified test during the booked window | choose only feasible slots and return changed access to OPS.10 |
-| test-evidence relations | T9's result must concern the configuration used for R42's release decision | preserve configuration/result correspondence; a result for another version does not close the evidence gap |
+| test-evidence relations | T9's result must concern the configuration used for R42's release decision | establish applicability to R42, including any qualified rule that carries an earlier result to the unchanged property. Perform a fresh test if the acceptance terms require it |
 | release-supervision relations | ReleaseSupervisorTeam-S2 uses the required evidence and safety result to issue its authorized release, hold or other decision | obtain that decision separately from completing the test |
 | existing service commitments | the evidenced-release horizon has parties, conditions and authority for revision | return changed feasibility to OPS.7 and the commitment holder |
 

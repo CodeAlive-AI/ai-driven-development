@@ -154,7 +154,7 @@ Describe an unsuccessful attempt if the evidence establishes it. When a possible
 
 #### MDPE.17:3.6 - Identify the receiving method and its possible use
 
-When a receiving performance is at issue, describe the relations it preserved, changed, added or omitted and any that remain unknown. For a design, identify the relations the intended receiving work should preserve or may change. When change is at issue, identify what changed or what the proposal would change in the method, its description, the material, the configuration or a performer’s capability. A new phrase can be taught by the same method, and a new model can be used by the same performer in the same way. Identify a candidate variant when the repeatable way of coordinating or deciding changes. If the same rule admits both performances, describe how the performances differed. Identify a change in the setting or material only when one occurred and matters here.
+When a receiving performance is at issue, describe the relations it preserved, changed, added or omitted and any that remain unknown. For a design, identify the relations the intended receiving work should preserve or may change. When change is at issue, identify what changed or what the proposal would change in the method, its description, the material, the configuration or a performer’s capability. A new phrase can be taught by the same method, and a new model can be used by the same performer in the same way. Identify a candidate variant when the repeatable way of coordinating or deciding changes. Choose the detail needed for the receiving question. Two pairs can meet the same instruction to enter on the next beat. If timing is the question, that instruction and the observed entries can suffice. To teach a partner-led entry, establish who chooses when to enter and how their partner can use the cue in time. To explain yesterday’s entry, establish whether the partners used that cue or anticipated the beat independently. The timing rule admits both ways. Identify a change in the setting or material only when one occurred and matters here.
 
 If a further choice is required, keep an arrangement already adequate for the use. Compare the likely contribution of a change with its cost and delay. A different carrier, demonstration, exercise, cue, partner, feedback method, tool setting or source comparison may address the particular limitation. Narrow or stop the proposed use when its requirements cannot be met.
 
@@ -184,8 +184,8 @@ the observation leaves the grounds of the decision intact, the existing decision
 
 #### MDPE.17:4.1 - A partner-Dance transmission trial
 
-In this constructed example, a Tarraxo teacher must decide whether dancers `P` and `Q` can use a taught
-partner-coordination Method in the next supervised social practice without continuous teacher cues. The receiving
+In this constructed example, a Tarraxo teacher must decide whether to admit dancers `P` and `Q` together as a pair to the next supervised social practice. They must be able to use the taught
+partner-coordination Method together without continuous teacher cues. The receiving
 use requires weight transfer, timing, partner-readable invitation and response, musical adaptation, and recovery
 after an interrupted connection. Variation in the visible phrase is acceptable if those relations hold.
 
@@ -208,19 +208,11 @@ partner trials until the interruption in the `Q`–`S` dance. After that pause, 
 instead of first re-establishing partner information; `S` stops the attempt. Seven days later, the original `P`–`Q`
 pair again performs Work that enacts the Method without reteaching under the changed-music condition.
 
-These observations support the taught timing, weight transfer and partner dialogue with changed music or
-experienced partners until the pause in the `Q`–`S` dance. The receiving variant permits a different visible
-phrase. Seven-day retention is supported for `P` and `Q` together under the changed-music condition. `Q` did not
-recover the interrupted connection with `S` on that trial. The trials leave use with novice partners, a
-wider tempo range and unsupervised parties open. The class used the named sources and instruction. These
-observations do not distinguish their causal effect from the dancers’ previous ability or other practice.
+The record supports timing, weight transfer and partner dialogue in the observed dances up to the pause in the `Q`–`S` dance. The receiving variant permits a different visible phrase. Seven days later `P` and `Q` retained the coordination they demonstrated together with changed music. Only `Q` with `S` encountered the interrupted connection, and their recovery failed on that attempt. Recovery by `P`, and by `P` and `Q` together, remains open. Since recovery is required for admission to the proposed practice, the teacher withholds that admission. The earlier results can support a narrower, separately authorized practice limited to the coordination already demonstrated.
 
-The teacher chooses an exercise in stopping, sensing the partner again and rebuilding the invitation
-before restarting. The teacher plans another trial of the interrupted connection for `Q` with two
-changed partners to find out whether the new exercise helps recovery. Reconsider reliance
-on the earlier result if the trial shows another failure or success relevant to that use, the
-setting demands a wider partner or music range, or later evidence changes a transfer or retention
-limit. The positive observations from the earlier dances still apply within their conditions.
+The trials also leave use with novice partners, a wider tempo range and unsupervised parties open. The class used the named sources and instruction. A claim about their contribution to learning would require grounds that distinguish it from the dancers’ previous ability and other practice.
+
+The teacher chooses an exercise in stopping, sensing the partner again and rebuilding the invitation before restarting. A trial with two changed partners can show whether `Q` recovers under those conditions. For admission of the original pair, use evidence bearing on their recovery together. A later improvement can support a new admission decision even when the exercise’s contribution is still uncertain. Retain the observations from the earlier dances for the conditions they covered.
 
 #### MDPE.17:4.2 - Music: distinguish receiving performer Work from event-organizer Work
 

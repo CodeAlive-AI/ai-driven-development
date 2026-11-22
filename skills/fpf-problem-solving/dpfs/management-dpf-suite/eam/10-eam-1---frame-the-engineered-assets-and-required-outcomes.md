@@ -7,7 +7,7 @@
 
 Use this pattern when an asset decision lacks a clear service or value question. A pump has become expensive to maintain, an asset register has been completed, or a replacement budget is available, but the practitioner still needs to establish what the choice should achieve.
 
-Identify the answer the recipient needs. Agree with the decision maker on the asset, the options for continuing or changing its use, the service those options must provide, and the comparison period. An existing adequate framing can be retained.
+Identify the decision and the question entrusted to the recipient. Establish the asset or service concerned, the relevant period, and who may choose or change the arrangement. Where the commission asks for alternatives, determine which policies for obtaining the service are open. A commission to assess an authorized replacement can be complete when its service and conditions are established. Reuse an adequate existing framing.
 
 A single asset can need this work. When the question is only how to maintain an already selected function, use the applicable maintenance guidance directly.
 
@@ -41,7 +41,7 @@ Consider CityWater's pump D. The maintenance practitioner can recommend an initi
 
 A useful framing is: compare D's supported five-year continued-use policy with replacement for its contribution to East's water delivery, using the stated cost perspective, technical qualification and actual funding and outage conditions. This is enough to compare continued use and replacement of D in [EAM.8](17-eam-8---generate-maintenance-renewal-and-retirement-alternat.md) and EAM.9. Assess other assets where their service, funding or outage conditions affect that choice.
 
-If D competes with A, B and C for the same funding, extend the comparison to that combination under EAM.10. The other eight stations matter through their continuing service contribution; their inclusion in the utility's register does not require eight additional investment analyses. The common CityWater applications provide the complete constructed premises.
+If the other commitments leave enough funding for either local option under every permitted allocation, the funding test can be settled for D alone. If the options for A, B and C can change which choice for D is eligible or preferred, extend the comparison to the relevant combination under EAM.10. The other eight stations matter through their continuing service contribution; their inclusion in the utility's register does not require eight additional investment analyses. The common CityWater applications provide the complete constructed premises.
 
 ### EAM.1:6 - Bias-Annotation
 
@@ -49,11 +49,11 @@ The party requesting the investment can dominate the framing. Ask which service 
 
 ### EAM.1:7 - Conformance Checklist
 
-Can the reader identify the asset and use, recipient, requested result and horizon? Are service commitments, aspirations and funding conditions distinguishable? Does every included dependency change the question, and does any omitted dependency plausibly reverse it?
+Can the reader identify the asset and its use, the recipient, the requested result and the horizon? Which service is owed, which improvement is sought and what funding is available? Can the analyst explain how each material dependency affects eligibility, the choice or its justification, including a service both options must provide? Could any omitted dependency change one of those conclusions?
 
 ### EAM.1:8 - Common Anti-Patterns and How to Avoid Them
 
-A replacement request presented as the problem forecloses alternatives. Restate the required contribution before comparing interventions.
+If comparison is entrusted to the practitioner, an assumed replacement can exclude better ways of supplying the service. Recover the contribution and the alternatives the decision maker may choose. If replacement is a given decision and the question concerns its feasibility, use that decision as a premise and report any conflict that affects its implementation.
 
 Using asset count to separate maintenance from asset management misroutes both a fleet maintenance question and a single-asset value question. Select by the decision being made.
 

@@ -34,7 +34,7 @@ Which quantities can be chosen, on what information, and what result must the ch
 
 ### MMP.8:4 - Solution
 
-Separate choices from circumstances, express the relations that must hold, and state which information each choice may use. Formulate the requested result over those objects, then test the formulation against a small contrasting pair of circumstances. Preserve any useful conditional answer when a stronger requirement is unavailable.
+Separate choices from circumstances, express the relations that must hold and state what information each chooser may use. Construct the policy or establish the requested consequence for the range in the commission. A pair of circumstances that requires conflicting responses can reveal a failure. A common permitted action or a general argument can settle the question directly.
 
 #### MMP.8:4.1 - Name choices, circumstances and consequences
 
@@ -49,6 +49,8 @@ State what the question requires of the result. If it asks whether every permitt
 Describe what is observed before each decision and what arrives afterward. Express the available observation as h(w) when it is a deterministic description of the circumstance. It may reveal only part of w. For a random or noisy observation, specify its probability law for each admitted w. An unknown fixed w can index a family P_w of observation laws without having a probability distribution itself. A joint law is needed when the question also treats w as random and averages over it. MMP.7 constructs the recording law.
 
 A policy pi selects an action from the information available: `a=pi(h(w))`. Two circumstances with the same h(w) must therefore receive the same action. This uses MATH.2's condition that an answer remains constant on cases identified by a description. Here the observation determines those groups. The information restriction is often called nonanticipativity: the policy does not use distinctions the decision-maker has yet to observe.
+
+If different participants control parts of the action, choose a policy for each participant using the observations that participant can receive in time. With local reports h1(w) and h2(w), the joint action has the form (p1(h1(w)), p2(h2(w))) unless timely coordination gives them more information. An action selected from both reports may be possible for a coordinator and impossible for the two local choosers. If another participant is free to choose independently and the result is promised for any permitted choice, cover those choices in the guarantee.
 
 For repeated interaction, use the observation history available at each decision. A policy may remember earlier observations or actions. Omitting that memory is a substantive model choice. Global termination is unnecessary when the question concerns a continuing response; specify the response or progress condition that matters under the admitted inputs.
 
@@ -75,7 +77,7 @@ Preserve dependence within the circumstance set. Independently combining several
 
 For each circumstance w, let A(w) be the actions satisfying the requirement under the modeled relations. For a fixed robust choice, seek an action in the intersection of A(w) over the admitted circumstances. An empty intersection refutes that fixed-choice requirement.
 
-For an observation-dependent choice, group circumstances by the observation they produce. For each obtainable observation o, intersect A(w) over the circumstances with h(w)=o. An action in this intersection works throughout that observationally indistinguishable group. In a finite problem, choosing one such action for each observation constructs a policy. One empty intersection proves that this observation cannot support the required policy.
+For an observation-dependent choice, group circumstances by the observation they produce. For each obtainable observation o, intersect A(w) over the circumstances with h(w)=o. An action in this intersection works throughout that observationally indistinguishable group. In a finite problem, choosing one such action for each observation constructs a policy. One empty intersection proves that this observation cannot support the required policy. This construction assumes that the chooser sees the observation defining the group and can carry out the selected action. For several local choosers, choices for different joint reports must also agree in each action component wherever its owner receives the same local report.
 
 For a noisy observation and an all-cases guarantee, construct the allowed pairs (w,o) from the observation mechanism's admitted realizations. This relation, rather than a positive probability for each individual report, determines compatibility. For example, if O=w+E with E uniform on [-1,1] and all errors in that closed interval are admitted, the boundary error E=1 remains in an all-cases guarantee despite having probability zero. An almost-sure or specified-probability requirement is a different claim; state that choice.
 
@@ -87,7 +89,7 @@ When several outcomes remain possible for one action and circumstance, apply the
 
 #### MMP.8:4.5 - Interpret the result and change the working method
 
-Follow the resulting action or policy through one modeled case and a consequential change. Return the consequence to the original requirement. If a planned response depends on a distinction absent from the available observation, revise the observation, defer the decision, choose a more tolerant action or change the stated goal with the responsible party.
+Return the action, policy or obstruction to the original requirement. Trace a case or changed condition when its interpretation remains in doubt. A proof covering the permitted information and actions can settle the original order directly. If a planned response depends on a distinction absent from the available observation, revise the observation, defer the decision, choose a more tolerant action or change the stated goal with the responsible party.
 
 Compare these options by what they change and cost. A more informative observation can enlarge the feasible policy set, but it may arrive too late or cost more than a sufficient fixed choice. C.11.DUA supplies that comparison. An infeasible guarantee can still leave a useful bounded, conditional or risk-qualified proposal.
 
@@ -156,7 +158,7 @@ Optimization tools encourage viewing every variable they can assign as an availa
 ### MMP.8:7 - Conformance Checklist
 
 - Are choices, circumstances and consequences distinguished by what the acting system can change?
-- Does each choice depend only on information available at its decision time?
+- Is each decision assigned to a participant who can take it using the information available there in time? Where choices are distributed, do the local rules work together under the allowed combinations?
 - Do the quantifiers express the intended possibility, guarantee, policy or probabilistic question?
 - Are dependent circumstances and remaining possible outcomes preserved in the formulation?
 - Does a witness, empty intersection, policy or bound have the claimed meaning?

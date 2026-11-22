@@ -67,7 +67,7 @@ The added criteria entail the preceding criteria for the same individual: Refere
 
 **A system and its designation.** A maintenance planner finds equipment code P-17 on a drawing. The drawing and maintenance register use the same form. The designated pump depends on the issuing plant and the date of assignment. A later reassignment can change which pump a job concerns within the same code language. To route the job, resolve the assignment in force when the work is to be done. To establish what happened to the pump, consult the work evidence.
 
-**An episteme and its reading.** Two teams accept exactly the same measurement table. On ordinary numeric entries they calculate the same totals. One report explicitly instructs its reader to treat an empty cell as zero. The other uses it for a missing observation. The teams can share the table language and still obtain different counts of observed values under the reports' effective rules. If a new edition of the table language mandates one reading for every report, the change now concerns that edition. Neither report by itself establishes the counterfactual readings of every conforming report.
+**An episteme and its reading.** Two reports use the same table language. Each lists two scheduled gauge readings, 8 in the morning and a blank at noon. One report instructs the reader to use zero for a blank when calculating the daily mean. The other omits blanks and gives the number of readings used. With these entries the first report gives a mean of 4. The second gives 8 from one reading. To report that the gauge actually read zero, establish that the noon measurement took place and yielded zero. A reliable witness can establish this. So can a record of that reading, including a blank when there are grounds that the recorder used it to record a measured zero on this occasion. An arithmetic default supplies no such observation. If a new edition of the table language prescribes a calculation for every report, the scope of the convention changes. A rule in one report governs that report.
 
 ### E.5.2.L:6 - Bias-Annotation
 
@@ -82,7 +82,7 @@ A published grammar makes formal conventions easy to inspect. In a workplace, pe
 
 ### E.5.2.L:8 - Common Anti-Patterns and How to Avoid Them
 
-Routing a job because the printed code matches can send it to the wrong equipment. Resolve the designation under the applicable assignment. Treating a more formal wording as a stricter rule can also change a decision without warrant. Identify a previously permitted case that the revised rule excludes before claiming it is stricter.
+Routing a job because the printed code matches can send it to the wrong equipment. Resolve the designation under the applicable assignment. Treating a more formal wording as a stricter rule can also change a decision without warrant. Apply B.5.MR:4.2 to the rules as models of the same inquiry. Establish that the revision has a feasible answer, preserves the earlier conditions for every answer it permits and excludes a formerly possible answer.
 
 ### E.5.2.L:9 - Consequences
 

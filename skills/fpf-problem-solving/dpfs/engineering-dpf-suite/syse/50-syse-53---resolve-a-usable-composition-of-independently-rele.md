@@ -95,7 +95,7 @@ For a finite hand calculation, select an allowed variant for one root, propagate
 
 Consider two required roots A and B with a shared D. A1 permits D1 or D2. B1 permits D2; B2 permits D3. All three D editions are available. Trying the preferred newer B2 with A1 empties D's allowed set. That rejects this branch. Trying B1 instead leaves D2, so A1+B1+D2 is a witness. Rejecting the first branch did not establish overall infeasibility.
 
-Retain enough of the assignment and qualification to inspect it: exact selected identities, features, instance bindings, satisfied demands and relevant unresolved premises. Recheck the complete assignment against all mandatory and activated conditional demands. A heuristic's preferred answer can be satisfactory without being globally newest, smallest or cheapest.
+Retain the selected identities, features and instance bindings. Check every mandatory and activated conditional requirement against the complete assignment. A witness answers a request for one composition. If different groups retain the right to choose versions independently, determine which choices can coincide and whether every permitted combination still works at the shared interface. A central selection supplies that guarantee only when it can govern the choices concerned. An optimization or complete-list request requires grounds for its additional claim.
 
 Distinguish the possible returns:
 
@@ -179,7 +179,7 @@ Software package tools encourage treating every dependency as mechanically decid
 - Consequential requirements have a source, relation, applicability condition and demanding chain.
 - Mandatory conditions, conditional demands, preferences and unknown premises retain different meanings.
 - Sharing and isolation are justified where components exchange values or use meanings together.
-- A witness satisfies the whole declared problem; a conflict or incomplete-search return states its scope.
+- A witness satisfies the whole declared selection problem. A promise covering independent choices has grounds for every permitted combination. A conflict or incomplete-search result states its scope.
 - A proposed repair changes an identified condition under the relevant authority and qualifies the revised use.
 - Realization receives exact selected inputs and bindings, with qualification limits.
 - A supplier release, consumer adoption and reconstruction of an existing composition remain distinct decisions.

@@ -19,7 +19,7 @@ Start with the useful activity and the contribution currently missing. A general
 
 An organiser's visible work can conceal the relationships and conditions that make participation possible. Copying the role title leaves those conditions behind. Selecting only frequent speakers can omit competent helpers, people trusted by a less visible group and people who perform essential preparation.
 
-Delegation also fails when the initiator continues to settle every exception, or gives away work while retaining every useful decision. The apparent replacement cannot act, participants return to the founder, and a volunteer absorbs an indefinite burden.
+Delegation can fail when the successor inherits a burden but lacks the decisions or assistance the assigned work needs. Establish which decisions pass to the successor and which exceptions may return to the initiator. A central exception route can serve several organisers if it supplies an authorized response in time under the agreed conditions.
 
 A capable host can also miss simultaneous difficulties: some participants have no usable way to contribute, a discussion consumes the time needed for another question, and a recurring practical problem goes unnoticed. Training the host may help a capability gap. A shortage of attention can instead call for participants to share a bounded observation and support task.
 
@@ -65,7 +65,7 @@ Use the inquiry to choose an action:
 | --- | --- |
 | A group already obtains reliable help from a willing local practitioner. | Ask whether that person wants a bounded organising contribution and what support it needs. |
 | Two groups have useful knowledge but no workable exchange. | With their agreement, obtain an introduction or a joint case through CB.2 or CB.5, according to the contribution needed. |
-| The central organiser hears only one group's account. | Obtain the missing group's own account before adapting the offer. |
+| The central organiser hears only one group's account. | Determine which perspectives could change the offer. Obtain the missing group’s own account when its experience or preference is at issue. |
 | Several people rely on one overburdened intermediary. | Reduce the promise, prepare another contributor or provide an additional route that participants can use. |
 | People understand the proposal but find the practice unsuitable. | Return the substantive problem to its owner; changing the messenger will not repair the practice. |
 
@@ -91,7 +91,7 @@ Recognise the contribution through CB.6 in a form the person values. Distinguish
 
 #### CB.7:4.4 - Prepare the first episode and make support obtainable
 
-Use LDR.1's brief, practice and debrief around the next contribution. Explain the purpose and demonstrate the difficult part where that helps. Let the new organiser explain their own next actions and practise a representative difficulty. Return concrete feedback; if a person needs to develop or demonstrate a capability, obtain the corresponding HCD contribution.
+Establish what already prepares the person for the assignment. Where further learning is needed, use LDR.1’s brief, practice and debrief around the next contribution. Explain the purpose and demonstrate the difficult part where that helps. Let the new organiser explain their own next actions and practise a representative difficulty. Return concrete feedback; if a person needs to develop or demonstrate a capability, obtain the corresponding HCD contribution.
 
 Make the working guidance useful at the point of action. A local host may need a room contact, an accessible invitation example, the session's purpose and shape, and a response to an interruption. Put a frequent action near its cue and a consequential exception near the decision it changes.
 
@@ -118,11 +118,11 @@ Review the next contribution while there is still time to change it. Check willi
 
 Prepare a successor through real work. Introduce the relevant people, transfer the permitted working material and ensure the successor has the access the work needs. Explain unresolved commitments and consequential exceptions. Agree when responsibility changes and tell the recipients whom to approach.
 
-Where independence from the initiator matters, let a prepared successor perform an episode without the initiator doing it for them. Preserve the domain assistance, accessibility support and decision routes that the work legitimately requires. Inspect what the new organiser obtained, where they still needed help and what prevented completion.
+Use comparable earlier work to judge readiness where it shows the successor’s own contribution with the help available. To establish that the activity continued independently after this handover, trace an episode under the new allocation of responsibility. Preserve the domain assistance, accessibility support and decision routes that the work legitimately requires. Inspect what the new organiser obtained, where they still needed help and what prevented completion.
 
 A willing, capable organiser may continue under the applicable appointment arrangement; another role may need rotation to share learning or burden. Continuing to exercise powers beyond their expiry requires renewal under the applicable rule. CB.13 supplies that decision, while this pattern prepares someone to perform the resulting contribution.
 
-If no feasible successor or support can be obtained, inform participants of the reduced or ending offer. Settle outstanding commitments, provide a usable route for remaining questions and preserve material under its applicable permissions. A declared handover is complete only when the recipient can take up the agreed work; otherwise return the missing condition or end that promise explicitly.
+If no feasible successor or support can be obtained, inform participants of the reduced or ending offer. Settle outstanding commitments, provide a usable route for remaining questions and preserve material under its applicable permissions. Use the terms to establish who now holds the mandate. If access or help for the work is still missing, identify who can provide it and which service commitment is affected. An authorization already in force can establish responsibility before a successor can perform the work.
 
 #### CB.7:4.7 - Let temporary participant groups support the activity
 
@@ -146,7 +146,7 @@ Close the temporary assignment at its agreed limit. Settle unfinished suggestion
 
 In a constructed repairer association, the main meeting host invites members to return tested corrections to a common reference. The invitation reaches regular speakers, but a smaller weekend group rarely responds. The organiser initially suspects that the message needs more emphasis.
 
-They ask people in both groups whom they consult after a difficult repair. Members of the weekend group name a practitioner who rarely attends the main meeting. With that person's agreement, the organiser obtains a conversation about recent cases. The group already understands the request; its members cannot prepare the confidential customer details expected by the current submission form.
+They ask people in both groups whom they consult after a difficult repair. Members of the weekend group name a practitioner who rarely attends the main meeting. With that person's agreement, the organiser obtains a conversation about recent cases. Those consulted understand the request and identify a requirement on the current form for confidential customer details they cannot supply. That explains a barrier for their cases. Other members’ reasons for silence remain open.
 
 The practitioner helps test a permitted account that retains the configuration and observed result while removing unnecessary customer information. A maintainer confirms that this is sufficient for the selected class of correction. One weekend repairer submits such an account and receives a useful return.
 
@@ -196,7 +196,7 @@ For an ordinary next contribution, ask:
 - Why is the proposed organiser suitable and willing, and what preparation, if any, is needed?
 - Are their authority, access, time and help sufficient for the next occasion?
 - Which choices are local, and where does an unresolved exception go?
-- What did a performed episode reveal about value, burden and needed support?
+- What establishes that the assigned people can carry the agreed responsibilities with the available support? For a claim about a performed episode, what organising work did they actually do?
 - If a temporary participant group is used, can it confer, act within its scope and return a useful response before its assignment ends?
 - If continuation matters, can the successor perform the work, or has the promise been reduced honestly?
 

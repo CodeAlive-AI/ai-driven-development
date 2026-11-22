@@ -66,7 +66,7 @@ If a change is selected, recover how it could produce the intended result: the s
 
 Distinguish the selected work from checking and recording it. A decision to replace a card does not establish that the card was replaced. After the change, check the affected question on adequate grounds. An operating-case continuation Method separates continuation, performance, records and resulting state when an operating case needs another action; an applicable operating-control Method addresses the quality and reliability question in continuing operation.
 
-Keep historical answers and unaffected grounds. Reopen other questions only where the change can defeat their basis. Stop when the selected questions are sufficiently answered for the intended use, or report which observation, interpretation, capability or decision is missing. Use C.41.SR when several participants' reliance is affected.
+Keep historical answers and unaffected grounds. Reopen other questions only where the change can defeat their basis. Stop when the selected questions are sufficiently answered for the intended use, or report which observation, interpretation, capability or decision is missing. Use C.41.SR when a decision depends on how several answers fit together or a changed premise can affect a conclusion drawn from them. One person can need that reconciliation. Several recipients can also use a single sufficient answer directly.
 
 ### C.41.UA:5 - Archetypal Grounding
 
@@ -86,7 +86,7 @@ The v2 answer remains a historical answer to its question. Recording the v3 answ
 
 A spill can make already checked cards unreadable while their wording and the completed printing work remain unchanged. Observed damage supports a current negative answer to readability; it does not erase the earlier work. In another branch, the workshop is cancelled while every physical-set answer remains true. The decision about further preparation then uses the changed occasion and value of the work, rather than trying to turn the physical answers negative.
 
-For an importer, the agent's message “error handling implemented” concerns its account of work. To answer whether malformed input leaves the previous catalogue intact, inspect the relevant before/after state using a suitable check. A failed observation tool leaves that question unresolved even if the implementation might be correct. Conversely, a demonstrated state difference can establish No; another run is not needed just to avoid recording a negative answer.
+For an importer, the agent's message “error handling implemented” reports work. To decide what happened in a particular failed import, use an adequate comparison of the catalogue before and after that run. If the only observation tool failed and the later state is unknown, the question stays open. A confirmed change to the state that should have been preserved settles it in the negative. One such failure within the promised range refutes the claim that the importer preserves the catalogue on every failed import. If preservation is required, this run violated that requirement. The same requirement applies to the next import. An unchanged catalogue settles the question for that run. Extending that success to other inputs calls for grounds that cover them. Another run adds nothing to a negative answer already established for the decision at hand.
 
 ### C.41.UA:6 - Bias-Annotation
 

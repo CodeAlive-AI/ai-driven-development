@@ -33,7 +33,7 @@ Trace the promise to the work and conditions that make it attainable. Obtain the
 
 Take the offer, relevant communication and customer's understood result. Identify what is promised, to whom, when and under which conditions. Include access, support, customer work and later obligations where they change the result. [MKT.2](17-mkt-2---construct-and-test-an-offer-and-its-positioning.md) supplies the offer; [MKT.5](20-mkt-5---develop-and-align-a-customer-experience-concept.md) can reveal conflicting experience conditions; [MKT.6](21-mkt-6---jointly-shape-a-useful-result-and-help-achieve-it.md) supplies the agreed useful contribution.
 
-Read the promise from a concrete use. What would have to happen for the customer to receive the supported result? Recover the required work and contributions, including those performed by the customer or another provider. Include what must happen before a later action can begin and what must remain available while it occurs.
+Trace the promise from the customer’s intended use to the contributions that would make the result available. An actual order can show how this worked on one occasion. To design an offer, use the allowed situations, the work each participant is entitled to request or obliged to supply, and what must be ready before their own decisions. The provider can complete that design before receiving the first order.
 
 Keep a proposed new offer distinguishable from an existing commitment. A proposal can be narrowed before agreement; an existing obligation requires its applicable change or remedy decision. If the whole service arrangement is missing, obtain its construction through MKT.9 and SYSE.8 before treating a list of willing contributors as sufficient.
 
@@ -65,7 +65,7 @@ Compare the complete alternatives with the customer's usable result and the full
 
 Check the connections from the receiving result through the work that produces it. For every consequential handover, establish what the receiving party obtains, what makes it usable, who notices an absent or unsuitable result and what continuation follows. Include responsibility for helping the customer when the failure spans teams.
 
-Compare the combined demand at the times and resources that can constrain the promise. Count preparation, customer-specific work, coordination, help, exception handling and recovery as well as the visible delivery. Keep unlike resources separate. Two teams' total hours do not establish availability of the one specialist needed at a particular moment.
+Compare the combined demand at the times and resources that can constrain the promise. Count preparation, customer-specific work, coordination, help, exception handling and recovery as well as the visible delivery. Keep unlike resources separate. Two teams' total hours do not establish availability of the one specialist needed at a particular moment. When several customers retain choices, determine who can allocate shared work, when the choices become known, and which combinations the provider has promised to serve. One shared session may discharge several commitments if its result is usable by each recipient. Orders for separate sessions require the separate work. A forecast of likely calls also needs grounds for their joint demand.
 
 When contributions conflict, compare feasible alternatives: change scope or time, choose another provider, obtain a missing capability or access condition, change the arrangement, or decline the unsupported promise. Use [FPF C.32.MWA.PP](../../../sections/09-part-c---kernel-extension-specifications/83-c-32-mwa-pp---construct-and-compare-method-performance-and-p.md) when the choice concerns incompatible combinations of methods, work or allocation. Use the returned comparison where it is sufficient instead of repeating it as another marketing exercise.
 
@@ -103,9 +103,9 @@ Review the arrangement when a provider, customer requirement, support capability
 
 In a constructed registration service, a page promises that every submitted application will receive a same-day decision. Ordinary cases can be completed automatically, but exceptions require a qualified operator. The operator works during the day, while many customers apply in the evening. An automated receipt message is being interpreted as confirmation of acceptance.
 
-The team recovers the whole result: customers need to know whether registration is complete or what remains unresolved. Engineering supplies which cases can be decided automatically. Operations supplies the supported exception hours and response conditions. The responsible manager identifies who may decide exceptions and obtains the necessary assignment and access; staff availability by itself does not confer that authority.
+Recover what each participant needs to decide. The promise requires a decision on every submitted application on the same day. A receipt can tell customers what is pending while that promised decision is still due. Engineering identifies which cases can be decided automatically. Operations establishes the staffed hours for exceptions, and the responsible manager obtains the necessary decision authority, assignment and access.
 
-The team compares narrower next-working-day decisions for exceptions, additional supported evening coverage, and reducing the conditions that require manual decisions through product changes. The first is presently feasible. The page and receipt then distinguish a received application from a completed registration, explain the remaining condition and give the attainable response time. The changed explanation follows the actual service arrangement.
+The team compares adding evening decision capacity, reducing the need for manual decisions through a product change and proposing decisions on the next working day for exceptions. It can offer the last arrangement to future applicants on those terms. For applications already submitted under the original promise, arrange the same-day decision, obtain an effective change or address any missed commitment under its terms. The page and receipt can then show what the applicant can rely on and which work remains.
 
 Customer accounts later show that the exception timing still prevents some useful participation. That evidence goes to those with authority to change the product, allocation or offer. They select a bounded trial of an additional supported decision window. OCE.11 accounts for training, supervision and current daytime commitments, rather than counting only the new customer-facing hours. The trial separately records the supplied window, actual decisions and customers' accounts of whether the timing helped.
 
@@ -141,11 +141,11 @@ People can interpret willingness as capacity and the presence of an owner as evi
 
 ### MKT.11:7 - Conformance Checklist
 
-- The promise and its material implications are recoverable from an actual customer use.
+- Do the terms, recipients and material implications of the promise follow from the intended use? For a claim about an actual use, what establishes the work and its outcome?
 - Each consequential contribution is either supported by a provider and effective conditions or retained as an explicit limit on the promise.
 - Capability, assignment, access, authority, timing and actual performance are distinguished where they affect the work.
 - Handover and simultaneous-demand conflicts are resolved or returned as explicit limits.
-- Customer insight reaches a responsible decision; any selected change is enabled and its result observed.
+- Has the person charged with designing, authorising or operating the arrangement supplied the result of that commission? For a claim about what changed in use, trace the change to the affected customer activity.
 - Where intermediaries participate, their exchanges and contributions support the final acquisition and use; observations retain the events and parties they concern.
 - Failure handling and remaining obligations are usable by the customer and contributors.
 - Dependent expressions and future starts change when the supported promise changes.

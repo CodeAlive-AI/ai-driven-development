@@ -209,7 +209,7 @@ Normal pattern and AI access remains permitted for the programme’s main task. 
 
 #### HCD.10:5.3 - Vary the Release Case instead of Rewarding Refusal
 
-One episode supplies a report about FW7 when the release requires FW8. Refuse reliance on that report for this release. A later case supplies compatible HW3/FW8/SCHED2 evidence and 24 test hours. Ten changes in three homogeneous batches need 23 hours. The available testing time supports proposing ten changes in this release. Demand for twelve leaves a growing queue. Releasing the ten changes requires the release manager’s authorization. With only 22 hours the promise of ten changes becomes unsupported again.
+One episode supplies a report about FW7 when the release requires FW8. Refuse reliance on that report for this release. A later case supplies compatible HW3/FW8/SCHED2 evidence and 24 test hours. Ten changes in three homogeneous batches need 23 hours. The available testing time supports proposing ten changes in this release. If twelve enter the queue per week and ten leave, its size increases by two that week. Releasing the ten changes requires the release manager’s authorization. With only 22 hours the promise of ten changes becomes unsupported again.
 
 The learner needs to recognize the configuration covered by the evidence and apply the capacity bound separately. Under the current conditions, either refusal, continuation or revision of the constraint can be warranted.
 

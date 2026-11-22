@@ -96,7 +96,7 @@ If learners can retell the analogy but cannot identify a definition, dependency,
 
 ### NSTD.Reference:7.4 - Case D - Live Event Commentary
 
-A commentator helps listeners follow an unfolding football match. A later reviewer can use the account under the conditions its sources support.
+A commentator helps listeners follow an unfolding football match. Listeners joining mid-match may need the current score first. A later reviewer can use the account under the conditions its sources support.
 
 The case draws on NSTD.1–NSTD.6 for source selection, order, event connections, viewpoint, engagement and evaluation.
 
@@ -104,12 +104,12 @@ Keep score, event order, changes of possession, relevant tactical relations, par
 
 The live account draws directly on observations and reports as events unfold. Use an architecture description where the account relies on one to explain the structure of a team, venue or broadcast system.
 
-Present events in live order and distinguish a prediction from an observation or provisional interpretation. A recap may reorder events around a cause or tension while preserving what could be known at the time.
+A live commentator can give the current score before describing the play that changed it. Mark the replay so the listener can place the play in match time, and distinguish a prediction from an observation or provisional interpretation. A later recap may order its material around a cause or tension while preserving what could be known at the time.
 
 The commentator can apply the methods to the following parts of the work.
 
 1. With NSTD.1, identify what listeners need, which sources are available and what the commentator could observe from their position. Mark interpretations that remain provisional.
-2. With NSTD.2, present the unfolding events in order and make clear which claims are observations, tactical interpretations or predictions.
+2. With NSTD.2, choose the order that lets the listener follow the match from this point. Make changes of time, observations, tactical interpretations and predictions recognizable where they affect the listener’s reading.
 3. With NSTD.3, connect changes of score, possession or player action with the events that support them. Leave a disputed state clear as disputed.
 4. With NSTD.4, state whose viewpoint the account presents and what the evidence supports about action, intent, ability or responsibility.
 5. Use NSTD.5 to convey excitement or uncertainty. A forecast, a disputed ruling and an emotional interpretation should remain recognizable as such.

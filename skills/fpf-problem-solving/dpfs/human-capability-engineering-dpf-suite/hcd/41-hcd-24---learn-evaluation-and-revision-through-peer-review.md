@@ -51,7 +51,7 @@ Establish the shared or individual windows and qualified help needed for reading
 
 #### HCD.24:4.2 - Make the criterion usable
 
-Explain how the criterion applies to the work. If its name leaves the decisive feature unclear, show a small contrast or use HCD.6.1 to construct one. To assess independent application, ask the learner to locate the feature and judge it before receiving a rationale that supplies the judgement. An eligible existing response can provide that evidence.
+When the reviewer is learning to apply a given criterion, explain how it applies to the work. If the commission is to devise the criterion, start with the recipient's use and a permitted work product. Let the reviewer decide what quality matters to that use and what evidence can distinguish work fit for it. An existing check might accept an unusable result, reject a sound alternative, or demand evidence whose collection would defeat the purpose of the review. Which change would yield a defensible decision for this recipient? For a commission to prevent false acceptance, leave it to the reviewer to identify an unsuitable result the existing check would pass. A sound criterion already devised in another suitable piece of work can show that contribution. If its name leaves the decisive feature unclear, show a small contrast or use HCD.6.1 to construct one. To assess independent application, ask the learner to locate the feature and judge it before receiving a rationale that supplies the judgement. An eligible existing response can provide that evidence.
 
 When calibration is needed, compare the learner’s grounds with the qualified account. Differences may reveal a misconception, ambiguous task information, a defective criterion or a legitimate alternative. Establish the supported explanation or indicate which ones remain open. A reviewer already applying the criterion adequately can proceed.
 
@@ -126,7 +126,7 @@ Politeness can suppress a warranted objection, and competitive ranking can turn 
 - Identify which learning contribution is required of the reviewer, the author or both.
 - The criterion is understandable and supported for the actual work.
 - When works are compared, retain the context that makes their parts comparable.
-- For a claim about the reviewer, establish the judgement they made, its grounds and the assistance they received or used. For independent judgement, establish that the decisive rationale had not already been supplied.
+- For a claim about the reviewer, establish the judgement they made, its grounds and the assistance they received or used. If the claim includes designing the criterion, establish which requirement and distinguishing observation the reviewer selected. For independent judgement, establish that the decisive rationale had not already been supplied.
 - For a claim about the author, establish their reasoned response and any revision the accepted issue required.
 - For consequential disagreement, identify the qualified answer, a feasible way to obtain it or the issue that remains open.
 - Feedback quality, product quality and personal learning claims remain distinguishable.

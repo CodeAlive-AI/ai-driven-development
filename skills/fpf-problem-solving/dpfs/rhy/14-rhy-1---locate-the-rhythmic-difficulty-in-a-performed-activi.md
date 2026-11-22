@@ -5,7 +5,7 @@
 
 ### RHY.1:1 - Problem frame
 
-**Use this when** “keep the rhythm,” “find the pulse” or “make it clearer” leaves the difficulty unidentified. Locate it in a short passage, movement or interaction. For example, a player may lose the pace, or a partner may miss the cue to enter despite a steady pace.
+**Use this when** “keep the rhythm,” “find the pulse” or “make it clearer” leaves the difficulty unidentified. Choose a passage, movement or interaction that retains the difficulty. One missed entrance may be enough. A short series of beats may reveal accumulating drift. A slower change may take several phrases to distinguish from ordinary variation. For example, a player may lose the pace, or a partner may miss the cue to enter despite a steady pace.
 
 Start with enough knowledge of the activity to recognize the occurrence, from your own work, an observation or another qualified source. Identify the difficulty precisely enough to answer the question or choose a correction when needed. For example, can the partner recognize the weight change when the dancer’s foot reaches its marked position on the count?
 

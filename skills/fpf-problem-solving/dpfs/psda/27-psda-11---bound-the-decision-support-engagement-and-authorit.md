@@ -3,7 +3,7 @@
 > **Type:** DPF pattern body
 > **Status:** Stable
 >
-> **Primary working result:** a bounded engagement question. State what decision support is needed, who can use it, the subject, horizon and present scope. Identify any outstanding condition that limits the work and what would reopen the boundary. For a later decision, identify its holder and authority.
+> **Primary working result:** a bounded engagement question. State what decision support is needed, who can use it, the subject, horizon and present scope. Identify any outstanding condition that limits the work. Where later work depends on the boundary, identify what would warrant revising it. For a later decision, identify its holder and authority.
 
 ### PSDA.11:0 - Use This When
 
@@ -25,13 +25,13 @@ When the authorized chooser has an adequate option set and comparison, use `C.11
 | holder or subject | The entity whose alternatives or consequences are being considered, such as a person, an organization, a place or a policy. Establish which entity the question concerns. |
 | choice owner | The Agent authorized to make, reject, defer, probe, or reroute the later decision. It may coincide with the recipient or performer only when that coincidence and authority are independently supported. |
 | receiving decision or Work | The decision or work that uses the result. The result can inform its conclusion or grounds, even if the action stays the same. |
-| bounded engagement question | The smallest decision-support question that makes the intended return, use, participants, scope, authority boundary, and reopen condition usable now. |
+| bounded engagement question | A question with an agreed return, intended use, participants and scope, including who holds any required decision. Identify a condition for reconsideration where later reliance depends on it. |
 
 ### PSDA.11:1 - Problem frame
 
 Decision-support practice often begins before there is a stable “problem”. One engagement opens with several participant groups arguing about causes and values. Another opens with a calm request for advice whose recipient, subject, horizon, or later authority is still vague. Both can be prematurely forced into a workshop brief, model boundary, criteria table, or option set.
 
-Bound one engagement for one receiving use. Identify the question, what result can be prepared now, what lies outside it and what missing fact or authority would affect the answer. Construct a formulation, alternatives, comparison or recommendation only where the receiving work calls for it.
+Identify what the engagement must deliver for the use or uses the parties have agreed. Where it includes several, establish what is due for each and which results must work together. Identify the question, what result can be prepared now, what lies outside it and what missing fact or authority would affect the answer. Construct a formulation, alternatives, comparison or recommendation only where the receiving work calls for it.
 
 One unclear condition that affects the return is enough to start. For consequential use, establish the identity, capability, assignment, permission, authority, evidence and domain protections on which the result relies.
 
@@ -65,7 +65,7 @@ In ordinary language, identify the result, its user, subject, intended use and h
 
 > Make **[kind of decision-support return]** available to **[recipient]** about **[holder or subject]** for **[receiving decision or Work]** within **[horizon]**; **[choice owner]** retains the later choice.
 
-Determine what finding, evidence or decision the return could affect and what would make an error, delay or omission matter. An exploratory, research, learning or communication task may be a sufficient direct use. If no decision-support result is needed, use the corresponding practice.
+Establish what the recipient needs to be able to do with this return. Have they asked for the assessment of a supplied proposal, for a workable design, or for help making their own choice? Decide who will choose the means and what remains theirs to decide. If several recipients rely on the result, establish what each is entitled to receive, when they can use it and which parts must work together. A narrower finding can finish the engagement if it settles the agreed use. Changing an outstanding commitment requires the agreement or authority governing it. An exploratory, research, learning or communication task can have a sufficient direct result.
 
 The requested return can initially be a bounded question, participant-and-concern account, plural formulation set, model or Method-selection result, alternative gap, comparison, recommendation, blocker, or abstention. Return the result that meets the present use.
 
@@ -86,17 +86,17 @@ Recover assignment, capability, permission, responsibility, conflict, commitment
 
 State the holder or subject at the grain where the requested conclusions about alternatives or consequences apply. Add the relevant configuration, place, population, operating condition, and interval only when they change the answer. State the receiving decision or Work and the horizon over which the return is expected to remain useful.
 
-Name at least one consequence of getting the boundary wrong. This is a recognition cue, not a complete consequence analysis. When affected Systems, missing participants, duties, interests, or representation can change the engagement, continue with `PSDA.12`. When several formulations would change the findings, their grounds or the indicated actions, continue with `PSDA.1`. When included and excluded concerns need a deliberate scope decision, continue with `PSDA.2`.
+If competing boundaries could change the advice or the service delivered, identify what would be missed or wrongly included. An agreed order can already settle which party and work belong in a one-time engagement. When affected Systems, missing participants, duties, interests, or representation can change the engagement, continue with `PSDA.12`. When several formulations would change the findings, their grounds or the indicated actions, continue with `PSDA.1`. When included and excluded concerns need a deliberate scope decision, continue with `PSDA.2`.
 
 #### PSDA.11:4.4 - Choose a provisional boundary and the next truthful branch
 
-Record what is inside the engagement now, what remains outside, and what observation would move that boundary. Use a further method when a needed result is missing.
+Establish which work the engagement includes. Where its boundary is open or later decisions depend on it, identify what change would justify revisiting it. Use a further method when a needed result is missing.
 
 | Current situation | Further work when needed |
 | --- | --- |
 | participants, concerns, consequences, or representation are incomplete | recover the participation and concern account through `PSDA.12` |
 | materially different formulations or intervention logics remain hidden | develop and compare the relevant formulations through `PSDA.1` |
-| the engagement has no usable included/excluded scope and reopen basis | set and reopen the problem boundary through `PSDA.2` |
+| the boundary is too uncertain for the receiving work, or an agreed condition requires its revision | determine the relevant scope through `PSDA.2` |
 | the engagement is bounded but needs a model, a choice or combination of problem-structuring Methods, or facilitation | use `PSDA.3` for modeling, `PSDA.4` to qualify a Method or compare or combine Methods, and `PSDA.13` for facilitated inquiry as applicable |
 | the engagement is bounded and the live gap is alternatives, uncertainty, comparison, or recommendation | use the relevant method for the missing contribution among `PSDA.5`, `PSDA.6`, `PSDA.7`, `PSDA.8`, `PSDA.9`, `PSDA.14` |
 | a premise established by another practice affects the return | inspect or request the smallest bounded result through `A.15.9` |
@@ -110,13 +110,13 @@ Give enough information for the result to be used within its declared scope.
 
 | Result position | Required content |
 | --- | --- |
-| intended return | The smallest decision-support result sought now, including blocker or abstention as valid branches. |
+| intended return | The decision-support result needed for the agreed use, including any joint or separately commissioned contributions. Identify the part a constraint or missing premise prevents. |
 | Recipient and use | Who uses the result, the question, decision or work it informs, and the relevant horizon. |
 | holder or subject | Name what the question concerns. When the answer depends on a configuration, place, population or interval, give that condition as well. A place or period can itself be the subject when the question concerns it. |
 | Participant positions | Who prepares the result. For a decision, who holds it. Include the assignments and authority on which this use depends. |
 | current boundary | Included concerns and consequences, important exclusions, and why that cut is usable now. |
 | missing value or next branch | Any missing participant, scope, source, evidence, authority or other result, and what remains open because of it. |
-| reopen condition | The smallest observable change that can alter the question, scope, authority boundary, or next branch. |
+| reopen condition, where needed | For an ongoing engagement or a decision that depends on an unsettled boundary, identify a change that would justify reconsidering the question, scope or authority. |
 
 For a decision with an outstanding prerequisite, a short account may suffice.
 
@@ -126,7 +126,7 @@ For a decision with an outstanding prerequisite, a short account may suffice.
 
 #### PSDA.11:4.6 - Reopen locally and preserve the later choice
 
-Name the event that can invalidate the current boundary: a changed recipient, holder, horizon, receiving Work, authority relation, participant or concern, formulation, source, alternative family, evidence condition, consequence, or later decision. Reopen only the affected position and its dependent results.
+If later work relies on the current boundary, identify a change that could invalidate it. A change in the recipient, work, authority, evidence or intended decision may alter which question needs answering. An agreed order can settle a question about what was due under it. Reopen only the affected position and its dependent results.
 
 A returned recommendation may inform the later decision, and follow-up may observe that later decision, but neither retroactively turns the decision-support performer into the choice owner. If the later choice changes the problem structure and follow-up is needed, use `PSDA.15` to determine which follow-up or reframing question is current.
 
@@ -166,20 +166,20 @@ A procurement board is the authorized chooser, has three qualified pump options,
 
 | Recurring bias | Likely drift | Repair |
 | --- | --- | --- |
-| sponsor-language bias | The sponsor's first wording becomes the problem and scope. | Name the receiving use, affected consequence, exclusions, and reopen condition before accepting the formulation. |
+| sponsor-language bias | The sponsor's first wording becomes the problem and scope. | Recover the intended use and compare the proposed boundary with the affected work. Determine what would change the boundary where a later decision relies on it. |
 | authority-by-visibility bias | The meeting chair, report author, model owner, or recipient is treated as the choice owner. | Recover the later decision and its authority basis separately. |
 | Method-first bias | A familiar PSM, workshop, model, or scoring scheme determines the engagement boundary. | Return the bounded question first; select Methods only for the result still needed. |
 | stakeholder-list bias | A visible list is treated as complete participation and concern recovery. | Continue with `PSDA.12` when affected Systems, representation, duties, interests, or dissent can change the return. |
 | recommendation-as-choice bias | A confident recommendation, rank, or tool output is presented as authorization. | Identify the recipient and use of the recommendation. Establish the decision holder, its mandate and any resulting choice separately. |
-| exhaustive-framing bias | Every possibly related concern is admitted before any useful result can be returned. | Choose the smallest current boundary and one observable reopen condition. |
+| exhaustive-framing bias | Every possibly related concern is admitted before any useful result can be returned. | Choose a boundary sufficient for the commissioned result. Identify a condition for reconsideration when it matters to further work. |
 
 ### PSDA.11:7 - Conformance Checklist
 
-- [ ] The opening names a recognizable receiving decision or Work and the smallest useful decision-support return.
+- [ ] The opening identifies the receiving decision or Work, its required result, and the choices left to the practitioner and recipient.
 - [ ] Identify who prepares the result, who receives it and the subject it concerns. Identify the decision holder when a decision is involved.
 - [ ] Any coincidence among those positions is explicit and does not transfer authority by wording alone.
-- [ ] The holder or subject, horizon, relevant configuration, and at least one consequence of a wrong boundary are visible at the grain needed by the current use.
-- [ ] The current included and excluded scope and one observable reopen condition are stated.
+- [ ] The holder or subject, horizon and relevant configuration are clear enough for the current use. Where alternative boundaries could change the result, the account explains how.
+- [ ] The scope is clear. If later work depends on a condition that can change it, participants can recognize when to reconsider it.
 - [ ] Contestation opens `PSDA.12`, `PSDA.1`, `PSDA.2` only when participants, formulations, or scope can change the return; it is not a membership requirement for PSDA.11.
 - [ ] A bounded direct-advice case can use any needed `PSDA.5`, `PSDA.6`, `PSDA.7`, `PSDA.8`, `PSDA.9`, `PSDA.14` or external-result branch without a compulsory problem-structuring sequence.
 - [ ] For a missing authority, subject, horizon, source or intended use, the account states which result the gap limits.

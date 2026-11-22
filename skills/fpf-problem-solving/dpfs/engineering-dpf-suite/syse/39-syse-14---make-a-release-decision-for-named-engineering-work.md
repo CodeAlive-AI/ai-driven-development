@@ -8,10 +8,7 @@ Use this pattern when a workflow calls an engineering change *approved*, *releas
 the receiving Agent cannot tell which work or use may follow for the release subject and any affected units, who has
 authority, what the evidence supports or which conditions apply.
 
-Begin with one question: may an identified description, software package, or actual System
-in a stated configuration enter named Work or use—for example, realization, integration,
-trial, deployment, delivery or service? The release decision specifies that use, its subject and its
-conditions.
+Begin with what the release would let its recipients do. Identify the descriptions, packages or actual Systems, configurations and next uses covered by the decision. A unit may qualify for a trial, several units for separate service, or an assembly for joint operation. Establish which of these the release must authorize.
 
 The first useful result is a **bounded engineering release decision**. It states the disposition for the named Work or use, the release subject
 and its applicable conditions, any units or intended configurations covered, the supporting evidence and authority, any scope withheld, and
@@ -106,10 +103,7 @@ may justify a checked addition without a new standing workflow.
 
 #### SYSE.14:4.1 - Perform the Move
 
-1. **Bound the release question.** State the identified description, software package, or actual System under
-   consideration; its relevant configuration; the named next Work or use; the deciding Agent; the interval and
-   conditions; and the current options. The option set may include release, narrower release, trial, withholding,
-   rejection, or obtaining another result first.
+1. **Bound the release question.** Recover the subject, use, effective interval and deciding authority from the proposed release. Follow the use to the units and dependencies that could change that decision. If separately acceptable units are to operate together, check the interfaces, shared support and permissions needed in that arrangement. If only a subset qualifies, establish whether the authority can release it separately and what obligation remains for the rest. The options may include release, trial, withholding, rejection or obtaining a missing result.
 2. **Establish the configuration and effectivity.** Use a compatible `SYSE.13` result or qualified direct sources for the descriptions,
    configurations, units, sites, intervals and conditions relevant to this release. When a necessary correspondence
    is missing, identify it and the release decision it prevents.
@@ -135,7 +129,7 @@ may justify a checked addition without a new standing workflow.
    or recipient needs. Choosing to proceed on the available evidence requires no new observation proposal or inquiry record.
 8. **State and return the release decision.** Name the selected disposition, subject, effectivity, conditions, evidence, authority and
    any required permissions. State the permitted next Work, any unresolved risks or withheld scope, and what would reopen the decision.
-   If a necessary input is missing, identify it, the decision it prevents and any narrower release the available grounds support.
+   Apply the acceptance rule to its own subject. An attainable breach refutes an all-conditions guarantee. A required document absent at the deadline can warrant return while physical performance remains open. Check supported units or conditions against their other technical and permission requirements before disposing of a narrower offer.
 9. **Connect later realization.** When implementation or integration has occurred, identify the performing Agent, dated
    Work, Method, actual transformation, resulting configuration and observations. Update affected descriptions and notify the recipients.
    Ground the realization claim in evidence of what took place; an update to a status field alone does not establish it.
@@ -216,6 +210,8 @@ compatibility. The next Work is monitored service, not another installation infe
 replacement, firmware change, calibration-source change, cold-start failure, or operating-envelope change
 reopens only the affected unit and claim.
 
+Suppose the order requires an applicable calibration certificate by noon for each unit. S005 still has none at noon: the board can return S005 under that rule while leaving its actual accuracy open. A qualified reading outside the protected response under an admitted condition would instead refute an all-conditions guarantee for S005. Either finding leaves the bounded, authorized decision on S006–S008 in force while its own premises hold.
+
 The engineer adds the service decision to the existing change account and links the unit evidence and separate
 permission. For this single subset release, the team chooses that checked addition over configuring a workflow
 to maintain the same connections automatically. It accepts manual revalidation after an affected record changes.
@@ -242,7 +238,7 @@ field evidence is unavailable, give any expert judgement and its epistemic statu
 
 ### SYSE.14:7 - Conformance Checklist
 
-- [ ] One release subject, release kind, receiving Work or use, deciding Agent, and current option set are stated.
+- [ ] The scope and authority of the decision cover the uses in the proposed release, including any required joint operation. A narrower disposition states which work it permits and what remains outstanding.
 - [ ] The configuration basis covers the release subject, its applicable conditions and the same next-use decision, including the actual units when the release concerns them.
 - [ ] The decision uses each approval or completion status only for what it establishes. Any required permission,
       claimed installation or resulting configuration has its own support.
@@ -254,8 +250,7 @@ field evidence is unavailable, give any expert judgement and its epistemic statu
       the judgement or limitation needed by the decision or its recipient; inactive inquiry adds no entry.
 - [ ] Any claimed implementation identifies the performing Agent, dated Work, Method, actual transformation,
       resulting configuration, and evidence.
-- [ ] The result states the permitted next Work, any withheld scope or blockers, and the conditions for withdrawal or
-      reconsideration.
+- [ ] The disposition identifies its grounds, whether a technical limit was exceeded, a required acceptance condition was unmet, or a narrower use qualifies. It states the permitted next Work and conditions for withdrawal or reconsideration.
 
 ### SYSE.14:8 - Common Failures and Repairs
 
@@ -335,12 +330,10 @@ changes the relying step only where it supplies the same required result under a
   connects the relevant results for one engineering release.
 - `C.2.1`, `E.17`, and `E.24.PUB` keep change descriptions, decision epistemes, publications, forms, and carriers
   distinct from the changed System and performed Work.
-- A compatible `SYSE.13` result supplies configuration and effectivity only for the same change and release use.
-  It establishes neither permission nor release.
+- `SYSE.13` can identify configuration and effectivity for this release directly or through a supported correspondence. Permission and release require the applicable governing decisions.
 - A compatible `SYSE.19` result supplies revision consequences only for decisions that relied on the changed source. Use it before a release
   when the change bears on that choice, or return to an existing release when a later or newly discovered change bears on its grounds.
-- Restored-function evidence from maintenance or operation can support only the same actual System,
-  configuration, conditions, and claim. It neither selects the change nor authorizes release.
+- An operating or maintenance result can establish restored function for a particular unit. Use it for another configuration or condition when the relied-on property carries across on a stated basis; use `SYSE.14` and the governing authority for release.
 - `SYSE.14` can supply bounded evidence to `SYSE.4` for the same release question and evidence window. Use a matching assurance judgement where it already exists; when one is needed,
   obtain it through the applicable assurance work.
 - Application moves—such as software deployment, electrical energization, medical-device release, ship

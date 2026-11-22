@@ -99,7 +99,7 @@ Write enough of the completed argument for another prepared reader to recover th
 
 #### MATH.19:4.6 - Return the result to its use
 
-A completed proof supplies its conclusion under the stated assumptions. Use that result in the next mathematical construction, model argument or algorithmic design. When a changed premise invalidates a lemma, reopen its dependent steps and retain arguments that still apply.
+A completed proof supplies its conclusion under the stated assumptions. Use that result in the next mathematical construction, model argument or algorithmic design. When a changed premise invalidates a lemma, reopen its dependent steps and retain arguments that still apply. When the commission is to construct the argument, distinguish the lemmas or intermediate claims you selected from those given in the problem. A supplied proof can settle whether a theorem holds. Explaining why its particular premises suffice, or finding a proof under changed assumptions, calls for the corresponding inferences.
 
 An incomplete proof plan can still locate useful work: name the remaining lemma, its available premises, and the step it would close. These details can be passed to whoever continues the proof. If a counterexample defeats the claim, return it and the failed premise or implication.
 

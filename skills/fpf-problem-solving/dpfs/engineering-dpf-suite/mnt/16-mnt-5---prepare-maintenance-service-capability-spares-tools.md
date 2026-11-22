@@ -31,7 +31,9 @@ For providers, establish relevant competence, availability, access and action-sp
 
 Compare the time needed to obtain support with the time the maintenance task allows. Distinguish what can be prepared during continuing operation from what requires shutdown or protected access. Include supplier uncertainty, transit, acceptance and replenishment where they change response feasibility. For a repairable pool, consider units already removed for repair and common demands on the same stock; nominal pool size is not available reserve.
 
-Choose the smallest adequate support action. It may be to use an existing spare, reserve a qualified specialist, resolve one applicability question, obtain another window or change the intervention alternative. If the support arrangement itself is inadequate across recurring tasks, return that enabling-arrangement development question to [SYSE.12](../syse/35-syse-12---develop-or-retain-an-engineering-platform-for-prac.md) and the programme decision to MNT.13.
+For a continuing service, work from the calls it undertakes to answer. Which calls can fall together, what can be reserved for each, and when does the person allocating the stock or specialist learn which call it is? If the second job must wait for the item to return to stores, a return after its deadline excludes that reuse even when the work periods never overlap. Where a direct transfer is authorized, use the time at which the next crew could actually receive and use the item. Conversely, one inspection result can serve two requests when both accept it for their distinct uses. Separate performances promised to two receivers must both be feasible. A bound on the total demand may suffice for a shortage decision before individual jobs are assigned.
+
+Choose the smallest adequate support action. It may be to use an existing spare, reserve a qualified specialist, resolve one applicability question or propose another window or response to the holder of that decision. A lost resource can defeat a plan while the original service remains due under its terms. If the support arrangement itself is inadequate across recurring tasks, return that enabling-arrangement development question to [SYSE.12](../syse/35-syse-12---develop-or-retain-an-engineering-platform-for-prac.md) and the programme decision to MNT.13.
 
 Return the task-specific readiness result with the condition that can invalidate it. A part reserved for this job can be reassigned; a provider can become unavailable; an installed configuration can change. Reopen only the affected readiness claim. A support deficiency limits the proposed work but need not prevent a useful diagnosis or recommendation.
 
@@ -51,7 +53,7 @@ Inventory systems make material shortages visible while hiding interpretation wo
 
 ### MNT.5:7 - Conformance Checklist
 
-Can the selected task be performed and judged with the part, provider, tool, information and access available for it? Are material compatibility and permission conditions supported? Do obtaining and relief arrangements fit the needed time? Are shared demands and support uncertainties retained where they change feasibility?
+Can the selected task be performed and judged with the part, provider, tool, information and access available for it? Are material compatibility and permission conditions supported? Do obtaining and relief arrangements fit the needed time? For one job, is support available when each step needs it? For a service promise, can the allocation cover the permitted combinations, timing and information available to the allocator? A design for provisioning and an actual reservation each require grounds for their respective claims.
 
 Existing support can establish readiness for the selected task or reveal its deficiency, without building a new service platform or compiling the entire stock catalogue. An advice request can close while a deficiency still prevents the intervention.
 

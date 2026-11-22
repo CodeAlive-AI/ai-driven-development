@@ -7,11 +7,11 @@
 
 ### B.1.5.CM:0 - Use This When
 
-Use this pattern when a proposal names an intended Method whole, such as a methodology or playbook, and the next decision depends on what is already established about that whole.
+Use this pattern when someone needs a reusable way to achieve a result or maintain a condition through several contributions, or when a decision depends on a proposed Method's constitution. The designer may have a working problem and no list of constituent Methods yet.
 
-Begin with the proposal's intended result, participants and relation claims. Recover the available whole semantics and the guards, burdens, unresolved conditions and selection reason that matter for the receiving use. Test the identity and relation grounds required for the conclusion sought.
+Begin with what the recipient must be able to do or rely on, the circumstances covered and the choices entrusted to the designer. If an arrangement is already proposed, recover its semantics and the relations that carry its contributions. If construction is commissioned, use §4.1 to choose those contributions and organize them into a candidate.
 
-The first useful result is two-branched. If the whole and participant Methods are identified and the required relations are shown to obtain, record the bounded composition result. Otherwise return the prospective account or partial claim supported by the evidence. That account can finish a present design comparison while whole identity or relation truth remains unresolved. Select later realization or testing only when its obtainable contribution warrants the full burden and is feasible.
+The first useful result is two-branched. If the whole and participant Methods are identified and the required relations are shown to obtain, record the bounded composition result. Otherwise return the prospective account or partial claim supported by the evidence. That account can finish a present design comparison while whole identity or relation truth remains unresolved. For a discretionary trial, compare its attainable contribution with its burden and feasibility. A separately commissioned realization or trial remains due on the agreed terms.
 
 Do not require prior performance of C.32.MWA.PP when equivalent proposal content is already available. Do not treat a coherent description, selected architecture, WorkPlan, tool implementation, or successful first trial as Method construction or identification by itself.
 
@@ -53,18 +53,20 @@ The first error overclaims, the second prevents learning, and the third confuses
 
 B.1.5 supplies the composition test. This construction supplies the candidate whole, constituent contributions, interfaces and grounds to which that test applies; it can also return a useful relation account below the whole-Method threshold. Use an already complete B.1.5 result directly rather than reconstructing it.
 
-Recover the proposed whole's semantics, test whole and participant identity separately from relation truth, and return the branch supported by that evidence.
+From the required result, construct the missing arrangement or recover the arrangement to be assessed. Test whole and participant identity separately from whether their proposed relations obtain. Return the design or the judgement the recipient needs under the conditions established.
 
 #### B.1.5.CM:4.1 - Pattern-Use Unfolding
 
 1. **Name the receiving use.** State the result or preserved condition, situation family, intended users or performers, and consuming decision. Identify the configuration or edition and time window when they change the claim or its use.
-2. **Recover whole semantics.** Recover the proposed whole's reusable operations or invariant, applicability, participant contributions, and the entry/exit, variation, bounds, stops and reidentification conditions needed for the claim. Keep proposed content, supported facts and unresolved grounds distinct. Missing content blocks only conclusions that require it; a supported prospective account or partial result may still complete the receiving use.
+2. **Develop the whole action.** For each admissible use, ask what must be achieved, preserved or available by the next decision. Work back to what must be done within the Method and what the caller or another provider may supply. A needed input can be obtained externally. When obtaining or checking it is itself part of the promised way of working, provide an operation for it. Combine or separate candidate Methods where their variation changes the whole action, an interface or a condition the caller relies on. Identify the entry and exit conditions, permitted variations, bounds, stops and reidentification rule the claim needs. Use an existing construction or invariant where it supplies these grounds. State which conditions are proposed and which are independently established.
 3. **Preserve participant statuses.** Identify each Method under `A.3.1` where supported. Keep candidate accounts and other subjects at their existing statuses.
 4. **Name the relation sets.** State every load-bearing proposed or obtaining relation, including Method composition, Work order or overlap, result use, allocation, support/provider access, authority, and description correspondence as applicable. Do not infer one relation from another.
+
+   Carry a permitted situation through the proposed arrangement. Can its participants deliver the required result together under the available information, resources and authority? Hold the result of one part fixed and vary its timing, its use or another part's choice if that can change the whole result. Follow such a difference into the constituent or enclosing Method that governs it. Keep model distinctions needed for the caller's action and for explaining why it is supported. An argument covering the permitted variations can establish this fit for the design before any enactment.
 5. **Test the positive branch.** Record an obtaining composition only when the whole and parts are identified as Methods and the required `B.1.5` relations are shown to obtain within the bounded claim.
-6. **Return the prospective branch when needed.** State the candidate whole, participant statuses, proposed relation sets, guards, adapters, alternatives, recovery, variation points, burdens and unresolved conditions needed for the receiving use. A traceable proposal can answer that use while its stronger whole claim remains unresolved.
-7. **Return a supported partial result.** When missing whole semantics, identity, or a relation prevents a useful candidate account, return the supported fragment, relation claim, WorkPlan question, or stop. Keep the missing grounds explicit.
-8. **Choose a useful continuation when needed.** Use C.11.DUA to compare the result a realizable implementation or trial could add with its full burden, including access, allocation, authority and the available window. When that Work is selected, name its observations, acceptance and failure conditions, any required authority, and the reconsideration rule; prepare a WorkPlan where coordination needs one. Otherwise finish with the supported account or partial result and the limitation that matters to its recipient.
+6. **Return the prospective branch when needed.** State the candidate whole, participant statuses, proposed relation sets, guards, adapters, alternatives, recovery, variation points, burdens and unresolved conditions needed for the receiving use. For a design commission, supply how the chosen contributions work together and under what variation the proposed Method will still serve the caller. For an evaluation, an identified incompatibility may itself decide the question.
+7. **Settle the commission at the supported scope.** A grounded fragment or an incompatibility can complete a question about that relation or about the feasibility of a proposed arrangement. If a required contribution or connection is still yours to design, construct it. Where a necessary condition cannot be provided, state what the supported part delivers and what prevents completion.
+8. **Choose a useful continuation when needed.** For a discretionary implementation or trial, use C.11.DUA to compare its attainable contribution with access, allocation, authority, time and other burdens. If the commission requires that performance, carry it out under its conditions or identify what prevents it and who can resolve the obstacle. When that Work is selected, name its observations, acceptance and failure conditions, any required authority, and the reconsideration rule; prepare a WorkPlan where coordination needs one. Otherwise finish with the supported account or partial result and the limitation that matters to its recipient.
 
 #### B.1.5.CM:4.2 - Record the Result
 
@@ -136,6 +138,8 @@ After two distinct failed trials, `ReleaseDecider-17`, within `AUTH-ReleaseDecis
 
 Suppose an earlier design use asks whether this release-coordination proposal preserves signed-before-closure, confidentiality and the A/B2/R distinctions well enough to compare with another proposal. The sources support that account, but whole identity and composition relations remain unresolved, and the team has no rig access, allocated effort or trial window. Return the traceable prospective account with those identity and relation limits. The receiving designer can compare the proposals and finish that question on the available content.
 
+If the assignment is instead to devise a release procedure, start from what the release decider must establish at closure. Early integration from provisional information leaves a possible difference from the signed edition. Work back to the need to detect that difference, determine which checks it affects and supply their results before authorization. Waiting for signed evidence can remove the provisional-to-signed comparison while changing the time available for integration. Choose an arrangement that satisfies the applicable time, access and authority conditions. State which evidence can be supplied from outside the Method and which verification the proposed rule requires within it.
+
 A later opportunity with useful obtainable observations can warrant implementation or a trial and its coordination plan. The already selected three-release case above retains its WorkPlan, observations and stops.
 
 ### B.1.5.CM:6 - Bias-Annotation
@@ -150,14 +154,14 @@ A later opportunity with useful obtainable observations can warrant implementati
 
 ### B.1.5.CM:7 - Conformance Checklist
 
-- [ ] The returned claim states the whole semantics it needs: intended result or preserved condition, situation, reusable operations/invariant, applicability, participants and relevant variation, bounds and reidentification conditions. Missing grounds remain explicit in a prospective or partial result.
+- [ ] The returned claim states the whole semantics it needs: intended result or preserved condition, situation, reusable operations/invariant, applicability, participants and relevant variation, bounds and reidentification conditions. When construction was commissioned, the proposed arrangement shows how the designer selected and connected the required contributions for the admitted uses. A supplied list of participants supports only the choices actually made from it. Missing grounds remain explicit in a prospective or partial result.
 - [ ] Whole and participant identification are judged separately; candidate and unresolved statuses remain explicit.
 - [ ] Method composition, Work order/overlap, result use, allocation, support, authority, and description relations are not inferred from one another.
 - [ ] The positive branch requires identified whole and parts plus obtaining `B.1.5` relations.
 - [ ] The prospective branch preserves proposed truth and includes the guards, adapters, alternatives, recovery, stops, burdens and unresolved conditions needed by the receiving use.
 - [ ] WorkPlan, performed Work, observations, MethodDescription, and Method identity remain distinct.
-- [ ] When load-bearing semantics or relations are missing, a supported fragment or relation claim can be returned without a complete candidate account.
-- [ ] A supported account or partial result can complete its receiving use. Any selected continuation has a worthwhile feasible contribution and names the needed later Work, observations, any required authority, acceptance/failure and reconsideration.
+- [ ] A partial account states which receiving question it settles. Any part still required for the commissioned design is supplied or identified with the condition preventing it.
+- [ ] A supported account or partial result can complete its receiving use. A discretionary continuation has a worthwhile feasible contribution. Separately commissioned realization or observation is accounted for under its own performance, authority and acceptance conditions.
 
 ### B.1.5.CM:8 - Common Anti-Patterns and How to Avoid Them
 

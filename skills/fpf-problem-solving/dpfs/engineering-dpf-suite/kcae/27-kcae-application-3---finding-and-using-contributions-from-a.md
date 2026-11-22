@@ -14,6 +14,8 @@ Read B.5.PI's operative inquiry, not merely its example. The first contribution 
 
 The episode does not prove a general need for more training. A direct correction, an available mapping, a maintained aid and a suitable learning method are different continuations. Compare the benefit and burden of each option for the receiving work. If the recipient already understands both notations and the retyping is cosmetic, the claimed identity problem disappears.
 
+If the customer ordered deadline reminders, recover their agreed purpose, timing and recipients. The naming problem may justify a separate proposal. It changes the ordered result only if the customer accepts the change or the existing commission already includes that decision.
+
 ### KCAE.Application:3.3 - Preserve fit, recommendation and actual result
 
 Finding NOT.5 yields a candidate. E.11.PUR asks whether its problem frame, forces, conditions, boundary and result fit this use. Missing source context yields insufficient basis; a contradicted condition yields non-fit. An applicable method need not be worth introducing now if a current result already resolves the concern. E.11.PUA then supports an actual bounded use and asks what result exists, not only which pattern was selected.

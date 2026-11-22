@@ -3,7 +3,7 @@
 > **Status:** Stable
 
 > **Pattern type:** Music-and-Dance production-and-presentation integration pattern
-> **Public result:** Depending on the task, develop a feasible arrangement for one bounded music or dance performance, establish what happened and what was available, or deliver the performance with the production it requires. Identify any relevant containing event, artifacts and limits.
+> **Public result:** Depending on the commission, assess a proposed arrangement, develop a feasible one, establish what happened on a past occasion, or deliver the performance or programme. A supported finding that a proposed programme cannot be run as arranged can finish a feasibility assessment. Identify the performances and contributions whose coordination affects the recipient’s result, including any conditions they must meet together.
 
 ### MDPE.5:0 - Use This When
 
@@ -19,7 +19,7 @@ system can operate as specified while dancers lose the cue for a weight change.
 A venue can admit spectators while giving them no space to join in. In each case
 the production question concerns what the combined arrangement lets someone do.
 
-Start with one intended or past performance, its performers and recipients. Name the relation that matters, such as
+Start with the performances and recipients the order covers. It may concern one take, several sets that must run together or an arrangement for the acts admitted by a programme. Name the relation that matters, such as
 hearing a response in time, and what existing results establish about it. Depending on the commission, deliver the performance, propose a feasible arrangement, or report a supported finding
 or a specific limit when it answers the request. Name the remaining integration question when there is one.
 
@@ -40,7 +40,7 @@ MDPE.13 for a recurring recognition and selection arrangement, or MDPE.19 for cu
 
 ### MDPE.5:1 - The Recurring Difficulty
 
-The subject is one bounded music or dance performance. An actual performance is U.Work by the performers who enact the relevant music or dance method. A soloist, pair, ensemble or an autonomous robot can perform. In planning, specify the intended performance and the conditions on which it depends.
+Let the commission determine the extent of the performance work. It can concern one take, several sets that share performers or equipment, or the programme they form. Follow their connections where these affect what the performers and recipients need. An actual performance is U.Work by the performers who enact the relevant music or dance method. A soloist, pair, ensemble or an autonomous robot can perform. In planning, specify the intended performance and the conditions on which it depends.
 
 A score or choreography specifies material. Rehearsal can show what someone did under rehearsal conditions. A configured instrument or a
 capable performer can support a future performance. To report that the performance took place, use evidence of the occasion. A recording,
@@ -69,7 +69,7 @@ its participants need. A stage-front view suited to theatre can miss their excha
 
 ### MDPE.5:2 - Solution
 
-Connect the production arrangement with one identifiable music or dance performance and the use in question. Work from its requirements when planning. In performance, coordinate the contributions on which the music or dance depends. Use evidence of the occasion when reporting what happened.
+Connect the production arrangement to the performance or performances it must serve. Identify the part of the programme whose conditions can change the answer and the resources and cues those performances rely on together. Work from its requirements when planning. In performance, coordinate the contributions on which the music or dance depends. Use evidence of the occasion when reporting what happened.
 
 #### MDPE.5:2.1 - Identify the performance and the use in question
 
@@ -85,8 +85,7 @@ process or use a recording. For a past use, ask what the arrangement made possib
 
 Choose an extent that fits the question. A festival organizer may coordinate a
 programme of several performances. A pair can investigate one dance at a party.
-A recording team may trace one take into a later release. Identify the relevant
-performance even when the production decision covers the containing event.
+A recording team may trace one take into a later release. For a programme, establish what the promise covers and which performances share a constraint. Two simultaneous sets may each require the same sound operator at a different stage throughout the interval. Their requirements and the operator’s availability can settle that scheduling question before either set plays.
 
 #### MDPE.5:2.2 - Find the specialist results relevant to the use
 
@@ -155,12 +154,12 @@ the report. If someone is considering another performance, identify the conditio
 
 > **Production and presentation result**
 >
-> - **Performance and use.** Identify the bounded intended or past performance, its period or occasion and what recipients needed from it.
+> - **Performance and use.** Identify the intended or past performance or programme, its period and what recipients need from it. For a programme, include the shared arrangements and connections that affect the result across performances.
 > - **Performers and method.** State who is to perform or who performed and the relevant music or dance method.
 > - **Relations to preserve or investigate.** Name the musical, movement, interaction, authorship or participation relation that matters for the use.
 > - **Production basis.** Identify the specialist results that apply under these conditions and what they establish about the combined arrangement.
 > - **Any unresolved connection.** Identify any remaining uncertainty. If a trial was used, describe what it showed under its conditions. Record any consequent choice and who made it when relevant.
-> - **Result requested.** For a design, give the proposed arrangement and its grounds. For a past occasion, report what took place, including a cancellation if established. For performed work, identify the performance, material and actual conditions.
+> - **Result requested.** For assessment, explain what establishes feasibility, rules out the proposal, or leaves the decision open. For a design, give the proposed arrangement and its grounds. For a past occasion, report what took place, including a cancellation if established. For performed work, identify the performance, material and actual conditions.
 > - **Access and use.** State what the arrangement made or can make available. Distinguish delivery from participation, listening or other actual use. Report each to the extent established.
 > - **Event, artifacts and publication.** Relate any containing event, recording or later release to the performance where relevant.
 > - **Limits.** Name any blocked use or unsupported conclusion. If a future attempt or decision is requested, give the conditions it needs.

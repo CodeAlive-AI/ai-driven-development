@@ -1,6 +1,6 @@
 ## ECO.Reference:9 - External contributions and entry
 
-This DPF relies on the general meanings and selected methods in [FPF Core](../../sections/03-first-principles-framework-readme/_index.md), including B.1.5 for constituent and encompassing methods, C.11 for proportionate inquiry and C.36 for cultural continuation. The dependence is from ECO to Core.
+Use [FPF B.1](../../sections/08-part-b---trans-disciplinary-reasoning-cluster/01-b-1---holon-aggregation-and-part-whole-construction.md) when an economic conclusion about a whole depends on how results for its parts combine. B.1.5 explains the relation between constituent and encompassing methods. For a financial comparison where the parties' holdings or the boundary of a group matter, [FDM.2](../fdm/10-fdm-2---choose-party-and-group-boundaries-for-financial-mode.md) helps construct the account. Use FDM.3 for a disputed contractual event or conditional flow. C.11 supports proportionate inquiry and C.36 explains the continuation of practices.
 
 Use the Management Suite for the cited financial, accounting, operating, asset, organizational or corporate work. Explanation Design (EXD) addresses explanation. Human Capability Development (HCD), in the Human Capability Engineering Suite, addresses human learning. Use existing qualified contributions directly. Obtain or develop a missing result when the economic question depends on it.
 

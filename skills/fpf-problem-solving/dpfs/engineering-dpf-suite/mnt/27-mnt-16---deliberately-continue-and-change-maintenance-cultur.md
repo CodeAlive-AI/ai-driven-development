@@ -21,17 +21,19 @@ Shared practice supports continuity but can retain a stale or harmful habit. Loc
 
 ### MNT.16:4 - Solution
 
-State the maintenance population, period and receiving question. Identify the method in use and the work or result whose continuation matters. Name a variant when the comparison supports a difference in the reusable way. Use ordinary terms before introducing a cultural label such as school, tradition or maturity.
+State the maintenance population, period and receiving question. Identify the practice or proposed change and the work or result whose continuation matters. If the order concerns access to the new instruction, an applicable delivery or access record can answer it. To judge use, establish which method was enacted. Name a variant when the comparison supports a difference in the reusable way. Use ordinary terms before introducing a cultural label such as school, tradition or maturity.
 
 Recover the cultural relations that the available basis supports. A manual can transmit a description; a mentor can demonstrate a technique; practitioners can enact it in actual work; peers or supervisors can recognize and reward it; the population can retain or abandon it. These are different claims. Use [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md) when their distinction changes the account.
 
 Connect an enactment claim to actual practitioners, work and maintained Systems at the scope needed for that claim. A selected class of technicians or a training plan does not supply an observed occurrence. If a precise performed-Work claim is needed, [FPF A.13](../../../sections/07-cluster-a-v---constitutional-principles-of-the-kernel/12-a-13---the-agential-role-agency-spectrum.md) and [FPF A.15.1](../../../sections/07-cluster-a-v---constitutional-principles-of-the-kernel/15-a-15-1---u-work-dated-performed-work-occurrence.md) govern the performer and occurrence; assignment-bound attribution is added only when the claim depends on that assignment.
 
+To explain how a shift works together, identify what its members had to accomplish together and trace how their contributions affected that work. For example, in a handover, follow the technician’s account of the returned state through to the authorized operator’s decision. A correct entry might have been supplied by a specialist or filled from a template. Credit each person with the judgement their contribution shows. A shift can carry out a handover through several people with different duties. If the question is whether one person can design that arrangement, look for the allocation and decision conditions that person chose with the help available.
+
 Compare plausible explanations for the current pattern of use. A variant may persist because it works under local conditions, because suitable tools are available, because reporting rewards it or because another variant cannot be enacted with the available time. State how much support each hypothesis has. A population-wide causal explanation may remain unresolved while a bounded current account is complete.
 
 Select a deliberate change only when its attainable contribution warrants the whole burden. The action might change access to applicable descriptions, mentoring, recognition, provider support or the conditions that discourage reporting. Compare keeping, revising, branching and stopping the arrangement. Include effects on practitioners and operation, not just attendance or publication counts.
 
-Keep proposal, performed intervention, changed practice and measured maintenance effect separate. If an intervention is performed, judge it by the relevant actual-use and maintenance consequences. Training completion can establish a training result; it does not by itself establish adoption, reliability improvement or safer work.
+Keep proposal, performed intervention, changed practice and measured maintenance effect separate. A completed, authorized change to terminal access can satisfy an order for access. To establish a change in practice or functioning, compare the relevant earlier and later work or performance on a suitable basis. To attribute that change to the intervention, also establish how the intervention contributed. Training completion can establish a training result; it does not by itself establish adoption, reliability improvement or safer work.
 
 Return the supported continuation and its population, period and uncertainty. A new survey or experiment is selected only for a worthwhile attainable answer. When the existing evidence supports retaining a practice or fixing a known access problem, return that answer without requiring a full cultural study.
 
@@ -39,7 +41,7 @@ Return the supported continuation and its population, period and uncertainty. A 
 
 In a constructed two-shift maintenance team, a revised hand-back description separates performed work, functioning evidence and permission. Six practitioners receive it. That establishes availability to those recipients, not use.
 
-Three observed hand-backs are then described in the teaching case. Two include the relevant configuration and functioning limits; one still treats a closed work order as the complete release. The supported account is limited to those observations. It does not establish the practice of the whole team or a reduction in equipment failures.
+Three observed hand-backs are then described in the teaching case. Two include the relevant configuration and functioning limits; one still treats a closed work order as the complete release. One observed use of task closure as the entire release refutes a claim that every hand-back distinguished completion from permission. If the three records cover every hand-back in the period and identify which included the functioning limits, they also give the exact count with those limits for that period. For a claim about each practitioner, future shifts or an effect on equipment failure, establish the relevant participation, continuing conditions or comparative evidence.
 
 The lead finds that the second shift's terminal opens the older hand-back instructions. Correcting that known access problem is a supported intervention option. A new survey is unnecessary to establish the mismatch. Later actual-use observations could support a broader conclusion, but commissioning them is a separate value-and-burden choice.
 
@@ -51,7 +53,7 @@ Visible experts and day-shift work can dominate the account while contractors an
 
 ### MNT.16:7 - Conformance Checklist
 
-Are the population, period, method actually used and receiving use clear? Are transmission, enactment, recognition, selection and retention distinguished where the conclusion depends on them? Are proposed changes, performed actions and observed effects separately supported? Does a selected intervention address an actual relation or condition rather than only a label?
+Is the question about availability, enactment by particular practitioners, a joint handover, or change across the stated population and period? Can the available evidence settle it, including a threshold or a claim disproved by one observed omission? Are transmission, enactment, recognition, selection and retention distinguished where the conclusion depends on them? Are proposed changes, performed actions and observed effects separately supported? Does a selected intervention address an actual relation or condition rather than only a label?
 
 A qualified current account or supported continuation can close the request. New inquiry and stronger causal claims need their own attainable contribution and evidence.
 

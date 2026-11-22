@@ -62,7 +62,7 @@ Compare the full burden of pursuing the direction, including consultation, learn
 
 #### LDR.5:4.4 - Relate the direction to people's purposes and initiative
 
-Ask each necessary contributor what participation would mean for them: the result they value, the work they can undertake, the loss or uncertainty they face, and the conditions under which they would continue. Their reasons can differ. Develop a feasible relation between the joint result and their contribution rather than asking everyone to adopt the initiator's personal motivation.
+Where a direction depends on a person choosing to participate, establish what matters to them, what work they can undertake and on what terms. Use their existing account or seek their view when it is needed. For assigned work, establish the effective assignment, the means to act and the choices left to the performer. Their reasons can differ. Develop a feasible relation between the joint result and their contribution rather than asking everyone to adopt the initiator's personal motivation.
 
 Show why a person's contribution matters to the others and what discretion it includes. Let them propose how to carry it out within the shared conditions. Where the intended role conflicts with their aims or capabilities, use LDR.1's role conversation and the relevant provider. Where terms conflict, use LDR.2. A necessary participant's refusal may require a different way, smaller scope or stop. Another person's willingness cannot commit the refuser's resources.
 
@@ -72,7 +72,7 @@ For formal assignments, retain the actual power and its limits. A manager can de
 
 #### LDR.5:4.5 - Establish a shared basis for the first action
 
-Have the necessary participants explain the direction through their own intended action: what they will contribute, what they expect from others, what they can decide and what should return for reconsideration. Use a plausible difficulty to expose differences. If a user request conflicts with a proposed stability aim, can contributors explain which request should be deferred and who can make that choice? If not, repair the missing distinction or agreement before relying on it.
+Identify whose direction is at issue. For a decision already binding on an organization, establish the deciding body’s mandate and its act. For advice on a proposed direction, give the professional and practical grounds for recommending it. For a claim about the course the organization has taken, follow the choices, resources and work that have given effect to it. To establish a person’s understanding or voluntary commitment, ask how that person relates the direction to their own intended action. For a claim of joint development, trace which participants chose the alternatives and grounds used in their common decision. If contributors are to decide such trade-offs themselves, ask how they would handle a user request that conflicts with a stability aim. Where the decision belongs to a designated body, establish that the contributors can act on its decision or refer the conflict in time. A justified decision to pursue separate work can close the inquiry without a joint first action.
 
 Choose the first action at the scope the grounds support. It may obtain a missing observation, supply an initial service or test whether the proposed collaboration is workable. Obtain its time, access, capability and authority. Incompatible offers return to LDR.2; a proposed new arrangement still needing effective decisions and supported first use enters LDR.4. Reuse what has already been obtained instead of repeating it under each pattern's name.
 
@@ -96,7 +96,7 @@ Suppose an open-source project's maintainer proposes a major rewrite after sever
 
 A contributor offers to convene a short inquiry. A documentation author, an integration specialist and two users accept the exchange. One user cannot disclose an installation's data but can describe the required compatibility. The group needs that boundary condition, not the protected data. Their accounts reveal different concerns: the maintainer wants less support work, a contributor wants to try a new design, and users need a stable version. The specialist shows a repeated gap between accepting contributions and having someone available to integrate them.
 
-The proposed explanation changes. The domain comparison finds that an isolated adapter can remove the immediate integration difficulty without a rewrite; the new design remains a possible later undertaking. For this stipulated case, the participants consider maintaining the current release with that adapter, undertaking the rewrite and retiring active support. They choose a bounded maintenance direction because it meets the current users' need at a contribution the volunteers can actually supply. The design enthusiast declines maintenance and continues independent exploration without committing the project's name or release promise.
+The proposed explanation changes. The domain comparison finds that an isolated adapter can remove the immediate integration difficulty without a rewrite; the new design remains a possible later undertaking. For this stipulated case, the participants consider maintaining the current release with that adapter, undertaking the rewrite and retiring active support. They choose a bounded maintenance direction because the domain comparison establishes that the adapter meets the compatibility requirement of the installations included in this offer at a contribution the volunteers can actually supply. The design enthusiast declines maintenance and continues independent exploration without committing the project's name or release promise.
 
 The integration specialist offers to lead one adapter attempt. The maintainer accepts that technical initiative while retaining release acceptance. The author offers an installation explanation; the users offer permitted compatibility observations. Each can explain why an incompatible new feature will wait. LDR.2 resolves their date and support terms, and LDR.4 supplies any remaining first-use preparation. A capable ordinary exchange can already provide those results.
 
@@ -125,9 +125,9 @@ The method favours participants having a real part in forming what they will do.
 - Establish the connection among the participants from the situation and its consequences before relying on a roster or common purpose.
 - Observations, interpretations, desired results and remedies can be distinguished and corrected.
 - The direction has a substantive basis and a meaningful alternative; agreement does not supply its professional warrant.
-- Participants can relate the direction to their own purposes, contributions and limits, with formal duties distinguished from voluntary commitments.
-- The first action has the contributions and authority it needs, and participants can explain a consequential choice under its terms.
-- Later responses revise the affected purpose, arrangement or method while preserving valid results and commitments.
+- The grounds establish the direction at the scale claimed, including the organization’s authorized decision, a person’s voluntary commitment or the participants’ own construction of the direction where that is the question.
+- For a first action the participants have decided to rely on, the necessary contributions and authority are available. A feasibility inquiry can instead identify the condition still to be met or establish grounds for declining the proposed action. When the order concerns a participant’s own understanding, their account or work shows how they make a consequential choice.
+- When a later response changes the grounds for the direction, the participants reconsider the affected purpose, arrangement or method and retain commitments that still hold.
 
 ### LDR.5:8 - Common Anti-Patterns and How to Avoid Them
 

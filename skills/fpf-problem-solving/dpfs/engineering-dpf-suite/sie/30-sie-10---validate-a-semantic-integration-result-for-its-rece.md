@@ -37,18 +37,18 @@ State the conclusion at the scope its evidence supports. A known decisive failur
 
 #### SIE.10:4.1 - Pattern-Use Unfolding
 
-Steps 3–10 locate evidence for a positive use conclusion. A sufficient bounded failure or unresolved result can finish at step 2. Reuse matching earlier results for the applicable layers; a changed receiving interpretation can reopen a claim even when its carrier is unchanged.
+Steps 3–10 locate the grounds for the claim at issue. A supported finding can finish at step 2 when it settles that claim. For each remaining obligation, use an applicable rule, prior result or new observation according to what it establishes. A specification can settle what behaviour is prescribed. A claim that this implementation produced a response, or that a recipient acted on it, needs evidence of that occurrence. Perform a new test when commissioned or when the available grounds leave an important behaviour open.
 
 1. **Identify the validation subject.** Name the mapping, interface, or package result and receiving use being judged. Record the revisions and conditions on which the conclusion depends.
-2. **Choose the conclusion and inspect known evidence.** Take the relevant answer claim and stop condition from `SIE.1`. If a demonstrated defect already defeats it, return that bounded failure with sufficient evidence. If a necessary premise is unresolved and that settles the requested question, return the scoped gap. Further obligations remain unexamined. For a positive claim, derive all load-bearing distinctions, loss, currentness/service/quality, authority, protection, branch, and representative-use obligations.
+2. **Choose the conclusion and inspect known evidence.** Take the relevant answer claim and stop condition from `SIE.1`. If a demonstrated defect already defeats it, return that bounded failure with sufficient evidence. If a necessary technical premise is unresolved, identify the affected claim. Apply the receiving authority’s separate acceptance rule. When a required record is absent at the contractual deadline, the authority can refuse that release while the technical property remains unknown. Keep the grounds for that decision distinct from evidence of a technical failure. For a positive claim, derive all load-bearing distinctions, loss, currentness/service/quality, authority, protection, branch, and representative-use obligations.
 3. **Validate carrier and schema.** Test parseability, declared schemas/shapes, required fields, datatypes, cardinalities, identifiers, and branch encodings. Treat a pass as structural only.
-4. **Validate semantic-model and endpoint adequacy.** Test whether source and target concepts, types, relations, constraints, units/codes, and any supplied model express the required distinctions and examples/counterexamples.
-5. **Validate correspondences and mappings.** Challenge accepted `SIE.4` rows and execute `SIE.7` positive, boundary, negative, and unlike examples. Check selection, cardinality, conversion, defaults, errors, loss, and trace independently.
+4. **Validate semantic-model and endpoint adequacy.** Test whether source and target concepts, types, relations, constraints, units/codes, and any supplied model express the required distinctions throughout the scope claimed. Use discriminating cases where these distinctions remain in doubt.
+5. **Validate correspondences and mappings.** Challenge the accepted `SIE.4` relations under the conditions of use. Establish whether the `SIE.7` rule preserves selection, cardinality, conversion, defaults, errors, loss and trace where the claim relies on them. For implementation behaviour, use suitable execution evidence or a conformance argument that covers the actual implementation.
 6. **Validate identity and authority.** Test every load-bearing `SIE.5` disposition at its grain and interval, including issuer, version, part-whole, reuse, split/merge, and unresolved branches. Verify required authority and permission inputs rather than inferring them from data access.
 7. **Validate claim composition.** Test `SIE.6` comparability, conflict, non-comparability, supersession, incomplete-source, and uncertainty branches. Confirm that source claims and derivation remain recoverable.
-8. **Validate realization and interface behavior.** Test currentness, latency, availability, snapshot/caching, invalidation, source failure, partial results, access/protection, provenance, error semantics, and challenge paths required by `SIE.8` and `SIE.9`.
+8. **Validate realization and interface behavior.** Test currentness, latency, availability, snapshot/caching, invalidation, source failure, partial results, access/protection, provenance, error semantics, and challenge paths required by `SIE.8` and `SIE.9`. A timed response establishes this execution’s elapsed time. For a guarantee across loads, establish a bound under the admitted joint request and resource conditions. A percentile requires evidence for the specified request population and measure.
 9. **Validate provenance, currentness, and quality.** Check that every relied-on output can recover its source and rule premises, that source/version/time status satisfies the use, and that selected quality measurements meet their action-changing thresholds. Do not treat provenance or process conformance as truth.
-10. **Replay representative receiving Work.** Run the named query, decision preparation, operation, or engineering workflow with expected positive, negative, and unlike cases. Observe whether the receiver obtains and interprets the required result and stops on forbidden branches.
+10. **Establish the receiving result.** Follow the qualified output to the action or judgement the recipient needs. Use matching earlier evidence when it covers the interpretation, terms and setting. Where the interpretation or behaviour remains uncertain, replay the use under conditions that discriminate the outcomes. For an order to run the query or observe the workflow, obtain the evidence of that particular performance.
 11. **Assign dispositions at the supported scope.** Use pass, narrow, unresolved, or stop for tested claims, and preserve any material unexamined reach. A positive narrow result states the contract-permitted subset and covers all of that subset's load-bearing premises; excluded branches remain explicit. A hard stop cannot be offset by scores elsewhere.
 12. **Record repairs, returns, and reopen.** Send source, semantic, mapping, implementation, authority, or receiver defects to their direct owners; state which layer and consumers require retest after change.
 
@@ -78,15 +78,15 @@ The constructed AP242/QIF package is frozen with named AP242/QIF source occurren
 | --- | --- |
 | carrier/schema | Request and response validate against their declared forms; unmatched, incompatible, unresolved, stale, and source-error states are representable. Passes structurally. |
 | semantic-model/endpoints | AP242 feature/configuration/effectivity and QIF plan/characteristic/result senses are recoverable. One local extension remains undefined; rows that consume it are unresolved. |
-| correspondence | Known plan/feature relation passes; shared-label false match is rejected; non-dimensional characteristic defeats a global type equivalence. Passes for the accepted row set. |
+| correspondence | The assigned pair joins. A shared label with no assignment in the accessible excerpt leaves the link unresolved. A complete governing plan with no assignment establishes a non-match at that revision and effectivity. Both objects can be identified in either case. A non-dimensional characteristic defeats a global type equivalence. Return partial coverage when the receiving contract permits it. A contract for the complete set still needs the unresolved assignment settled. |
 | identity/authority | Known feature identifier relation passes at revision/configuration/effectivity grain; obsolete revision and unresolved local ID stop their dependent branches. Engineering and quality authority remain external. |
 | claim composition | Compatible AP242 definition/effectivity and QIF plan/result claims retain sources; contradictory result status returns conflict; incompatible intervals remain non-comparable. Passes for qualified branches. |
 | transformation | Known mapping, one-to-many characteristic, unit conversion, unmatched feature, unknown unit, stale result, missing provenance, and source-timeout cases return the specified branches. One unknown-unit row stops. |
-| realization/interface | Stable semantic metadata is available; volatile source data is queried under captured occurrence times. The constructed one-second response meets the two-second limit. Timeout returns incomplete only under the contract; challenge paths resolve to premises. Conditional pass. |
+| realization/interface | Stable semantic metadata is available; volatile source data is queried under captured occurrence times. The one-second response meets the two-second deadline for this review query. Timeout returns an incomplete answer only where the contract permits it. Challenge paths resolve to the relevant premises. |
 | provenance/currentness/quality | Every accepted output row recovers sources, rules, and times. The configuration matches the released review basis; QIF observations six hours before T meet the 24-hour window, while a 25-hour control returns stale. Undefined-extension rows remain visibly unresolved outside the qualified set. |
 | receiving workflow | The quality engineer retrieves a known result, recognizes unmatched/incompatible/conflict states, and stops on unresolved configuration or identity. Passes for the bounded subset. |
 
-The whole-use disposition is **narrow** under the stated contract: the qualified row set is usable for the evidence-return workflow, while the undefined local-extension and unknown-unit branches remain separately visible and unresolved. The receiver's permission covers this partial evidence answer. The account does not accept the inspection result or release the configuration. A definition or unit-table repair reopens only the affected rows and receiving tests.
+The quality engineer can use the qualified rows under the **narrow** permission in SIE.1:5. Return the unresolved local extensions and unknown units separately as agreed. If an assignment needed for the requested feature is also unresolved, the contract gives no permission to omit it. Obtain the governing plan, report that the requested relation is still open, or agree with the recipient on a further partial return. A complete governing plan can establish the absence of an assignment for that revision even while other rows remain open. If the release authority requires a signed inspection record by its deadline and that record is missing, it can refuse release on those grounds. The unrecorded technical property can remain unresolved. A definition or unit-table repair reopens only the affected rows and receiving tests.
 
 #### SIE.10:5.2 - A Decisive Defect and a Changed Receiving Meaning
 
@@ -109,18 +109,18 @@ After repair, a positive conclusion for that receiving use needs the corrected i
 
 ### SIE.10:7 - Conformance Checklist
 
-Apply the layer requirements below to the conclusion being claimed. A bounded failure or unresolved result needs sufficient evidence for that result; a positive use claim needs all of its load-bearing obligations covered.
+Apply the checks to the conclusion claimed. For a positive result, cover each load-bearing obligation with the appropriate grounds. Use the cases below where they distinguish live outcomes. Existing evidence can do that work. A bounded failure or unresolved result needs grounds for that conclusion and its effect on the original question.
 
 - [ ] The subject, receiving use, and conditions required by the conclusion are identified.
 - [ ] Known decisive evidence can finish a bounded failure or scoped gap; material unexamined premises remain distinct from passing ones.
 - [ ] Carrier/schema pass is not reported as semantic or receiving-use pass.
-- [ ] Endpoint/model adequacy includes examples and counterexamples for required distinctions.
-- [ ] Correspondence judgment and mapping execution are tested separately.
-- [ ] Every load-bearing identity disposition, issuer/authority condition, and unresolved branch is tested.
-- [ ] Claim composition tests include conflict, non-comparability, incomplete source, and source-claim recoverability.
+- [ ] The endpoint or model can express the distinctions the question requires. Any example or counterexample used supports the stated scope.
+- [ ] The grounds for the correspondence and those for the mapping's actual behaviour support their respective conclusions.
+- [ ] Each identity disposition, authority condition and unresolved branch on which the answer relies is qualified for its use.
+- [ ] Claim composition preserves required distinctions such as conflict, non-comparability, incomplete source and recoverable source claims.
 - [ ] Realization/interface tests cover currentness, failure, partial results, access/protection, provenance, and challenge paths as applicable.
-- [ ] Quality dimensions and thresholds are selected by the use and do not replace representative Work.
-- [ ] Positive, boundary, negative, unlike, and changed-source cases cover the material failure modes.
+- [ ] The evidence covers the features of receiving Work that determine the claim. A claim about an actual performance has evidence of its occurrence, and any newly commissioned trial was performed.
+- [ ] The positive, boundary, negative, unlike or changed-source cases selected address failure modes left open by the other evidence.
 - [ ] Whole-use disposition is pass, narrow, unresolved, or stop with no score-based compensation of hard stops.
 - [ ] Repairs, direct-owner returns, focused retests, affected consumers, and reopen conditions are explicit.
 - [ ] No external release, acceptance, authorization, effect, or universal correctness claim is implied.
@@ -131,7 +131,7 @@ Apply the layer requirements below to the conclusion being claimed. A bounded fa
 | --- | --- |
 | Valid schema, therefore valid integration | Test meanings, relations, identity, composition, mappings, provenance, quality, and receiving Work separately. |
 | One quality/confidence score | Record layer-specific evidence and categorical dispositions; preserve hard stops. |
-| Happy-path demonstration | Add negative, boundary, unlike, changed-source, stale, conflict, and failure cases. |
+| Happy-path demonstration | Identify the permitted condition that might defeat the claim. Obtain the distinguishing evidence or a sufficient argument that already covers it. |
 | Provenance completeness means truth | Test the source claim and receiving adequacy; provenance only makes derivation inspectable. |
 | High alignment benchmark score | Validate local endpoint relations and use loss against representative cases. |
 | All-or-nothing readiness | A known defect can finish a bounded failure. A positive subset result requires the contract's permission and all premises on which that subset relies. |

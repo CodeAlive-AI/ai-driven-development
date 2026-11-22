@@ -7,7 +7,7 @@
 
 Use this pattern to choose or change a learning group, assess whether a proposed or existing group can do the task, or establish which contact and exchange occurred. People with complementary experience may lack a shared working window, permission to share the case or preparation to understand each other’s grounds.
 
-For a learning group, establish whose contributions the task requires and what permits contact and continued work. HCD.20 compares learning arrangements and HCD.22 designs the shared task. A roster can establish an assignment and a matching score can suggest a composition. Evidence of contact or exchange supports the particular event shown.
+For a learning group, establish whose contributions the task requires and what permits contact and continued work. HCD.20 compares learning arrangements and HCD.22 designs the shared task. A roster that allocates duties can establish an assignment. A list of members establishes membership, and a matching score can suggest a composition. Evidence of contact or exchange supports the particular event shown.
 
 Assess the proposed composition and how its members could make contact, or report the connections and work already established. If no compatible group is available, identify what prevents it. Return any feasible learning alternative or state the remaining limit when none is available. Retain an adequate individual arrangement when it meets the purpose at lower overall burden.
 
@@ -67,7 +67,7 @@ To establish a new working contact, make the purpose, permitted material, channe
 
 Distinguish the invitation, agreement on an occasion, the task-related exchange and the intended learning action. A reply confirming the occasion can establish agreement. Attendance establishes presence. A task-related exchange can occur without a participant performing the intended learning action. Use the least intrusive evidence sufficient for the question. If a relevant confirmation is missing, seek it or report the remaining limit.
 
-When the task depends on contact that has yet to occur, allow time to recover a missing contribution. If someone does not respond, check whether a compatible replacement, a later exchange or another way to obtain the contribution is available. Offer a feasible option or report what remains blocked. Repeated assignments to silent partners consume learner time. Identify the absent learner’s unfinished action even if the group can proceed.
+When the task depends on contact that has yet to occur, allow time to recover a missing contribution. If someone does not respond, check whether a compatible replacement, a later exchange or another way to obtain the contribution is available. Offer a feasible option or report what remains blocked. Repeated assignments to silent partners consume learner time. Report which contribution could not be confirmed. Use evidence of attendance, exchange or personal work to say what actually happened.
 
 #### HCD.21:4.4 - Change membership with a reason and a usable return
 
@@ -89,11 +89,11 @@ Assignment without usable contact can reveal the problem immediately. For a clai
 
 #### HCD.21:5.1 - Different reasons, no common window
 
-In this constructed case, six adults in a paid programme must compare the grounds of two diagnostic accounts. They all understand the supplied quantities. A, B and C can work Tuesday evening; D, E and F can work Thursday morning. A proposed knowledge-based match pairs A with D, B with E and C with F. None has an agreed common window. Under those windows the proposed pairs cannot make the live comparison.
+In this constructed case, six adults in a paid programme must compare the grounds of two diagnostic accounts. They all understand the supplied quantities. For this live comparison, Tuesday evening is the only available window for A, B and C, and Thursday morning the only one for D, E and F. A proposed knowledge-based match pairs A with D, B with E and C with F. None has an agreed common window. Under those windows the proposed pairs cannot make the live comparison.
 
 Within each window, participants’ short initial responses show usable differences: A favours resistance, B questions measurement and C has not separated observation from cause. D, E and F show corresponding contrasts. The designer forms one triad per window with a permitted case and allocates two explanation turns per person, reconciliation and a personal return within the thirty-minute sequence. The size follows from what fits this task.
 
-The organiser sends the task and asks each triad to confirm its channel and time by Monday noon. E does not reply. The organiser checks for a willing replacement with Thursday access. If none is available, D and F can compare a prepared alternative account with qualified help. This changes the source of the contrast and the grounds for claiming peer explanation. E’s conversation and personal action remain unfinished. Arrange a later opportunity for E if its conditions can be supplied, or report the gap.
+The organiser sends the task and asks each triad to confirm its channel and time by Monday noon. E does not reply. The organiser checks for a willing replacement with Thursday access. If none is available, D and F can compare a prepared alternative account with qualified help. This changes the source of the contrast and the grounds for claiming peer explanation. At noon on Monday, E’s Thursday participation is unconfirmed. E may still attend, and may already have done the individual preparation. Use the subsequent exchange and personal work to establish which actions occurred. If E misses a required opportunity, arrange another feasible one or report what is still owed.
 
 #### HCD.21:5.2 - A newcomer changes one assumption
 

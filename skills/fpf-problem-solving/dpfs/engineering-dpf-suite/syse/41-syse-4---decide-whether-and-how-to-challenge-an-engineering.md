@@ -275,13 +275,9 @@ complete the current question. Missing information establishes neither the targe
 Some decisions depend on several evidence lines—for example, model predictions, physical tests, integration
 results, operating observations, and specialist arguments. Start from what must hold together for the intended
 claim. Map each necessary premise or operating case to the result that supports it and explain why those premises
-are sufficient. A test of one component does not cover its interactions, and a list of tested cases needs a reason
-that the untested cases do not change the answer.
+are sufficient. A component test can support a claim about an interaction when the test conditions and the relation to the other parts establish that claim. To extend a conclusion beyond the cases tested, explain why the remaining cases cannot change the answer.
 
-Distinguish results that support different necessary premises from alternative arguments for the same claim.
-Two reports derived from the same model or data do not supply independent confirmation. If their conclusions
-conflict, inspect the differing conditions, assumptions and direct results before choosing what remains usable;
-counting favourable reports cannot settle the conflict.
+Distinguish results that establish different necessary premises from alternative arguments for the same claim. Identify the error against which independent confirmation is needed. Two reviewers can make independent judgements from the same record. If its measurement is biased, agreement between those judgements leaves the bias in both conclusions. Examine differing conditions, assumptions and direct results when resolving a conflict.
 
 Keep each direct result and evidence use visible. Use the applicable domain composition rule for their
 combination. When the current question is an assurance claim, `B.3` also requires the relevant dependency, scope
@@ -351,7 +347,7 @@ its direct bounded use creates no separate B.3 assurance question.
 
 The direct result of later station-operating and observation Work is `DownstreamLevelMeasurementResult-9`.
 `C.16` identifies the measurement result and uncertainty for the stated locations and window; the result shows
-that the declared guardrail was crossed while the station operated under `StationConfiguration-S7`. An `A.10` descriptive evidence/provenance path represents the independently established use of that result as
+that the declared guardrail was crossed while the station operated under `StationConfiguration-S7`. In this case the synchronized load record also places the event within `FloodLoadProfile-3`, and the measurement uncertainty leaves the level above the guardrail. That occurrence refutes protection throughout the claimed range even if the cause is still open. A planned load alone would leave the profile of the observed event unresolved. An `A.10` descriptive evidence/provenance path represents the independently established use of that result as
 evidence for `StationFloodUseClaim-4` in `StationDischargeArchitectureQuestion-5`. The engineer records the
 narrowed reliance for this configuration in the engineering-assurance account and reassesses the `SYSE.2` claim
 and discharge architecture on that basis. The observation does not by itself prove a complete causal account or make the specialist

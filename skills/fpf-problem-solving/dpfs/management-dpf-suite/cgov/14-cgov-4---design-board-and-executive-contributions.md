@@ -7,7 +7,7 @@
 
 Use this pattern when a corporation's board and executive management cannot explain what they need from one another, when directors take over delegated work, or when the board receives a completed proposal too late to influence it.
 
-Begin with one consequential matter: what must be prepared, questioned, decided, carried out and reviewed, and who has the relevant power or duty? The first useful result is a proposed allocation of those contributions, including the information and exception paths that let them work together. An adequate existing arrangement needs no redesign.
+Begin with the matters the arrangement must handle, the people entitled to bring them, and the power or duty of each participant. A commission for one investment decision may finish with an allocation of its contributions. A standing arrangement must support the range of matters and combinations of requests those participants may bring. Determine which preparation, scrutiny, decision, action and review each requires and how their results reach the responsible parties. Reuse a sufficient existing arrangement.
 
 ### CGOV.4:2 - Problem
 
@@ -25,7 +25,7 @@ Design the contributions around corporate matters and the decisions they require
 
 #### CGOV.4:4.1 - Recover the corporate contribution that is failing
 
-Choose a matter that exposes the difficulty: a strategy revision, major investment, executive appointment or another issue under the corporation's governing rules. Identify the required decision and whose interests, duties and rights bear on it. CGOV.1–CGOV.3 can supply the matter, rights and authority when these are unresolved.
+Establish what the arrangement is commissioned to cover. For one matter, identify the required decision, interests, duties and rights. For a recurring class, derive the relevant variations from the governing rules and the work the board and executives must perform. A case can help reveal a consequential difference. Check which other permitted matters or combinations it leaves open. Use CGOV.1–CGOV.3 where authority or rights remain unresolved.
 
 Ask what the responsible organ must accomplish. It may need to set a direction, decide a reserved matter, challenge assumptions, oversee performance or correct a failed arrangement. Select the contribution relevant to this corporation and determine who can provide it under its governing rules.
 
@@ -45,7 +45,7 @@ Compare ways to obtain the missing contribution under the governing rules. A rev
 
 Consider the effect on judgement, response time, information access, capability and burden. Check the whole arrangement: assigning the same scarce practitioner to prepare, review and decide can make an attractive diagram unworkable or defeat the intended challenge.
 
-Ask the affected participants to explain how they would use the proposed arrangement in a representative matter. Resolve disagreements that change a contribution, power or receiving use. Mere agreement with a chart is insufficient when nobody can explain who produces the needed result.
+Show how the participants will obtain the necessary contributions by the time they must act. One finding can serve several recipients if its terms, access and timing meet each need. Separate confidential deliberations can compete for one specialist even though either would be feasible alone. For a continuing arrangement, account for the combinations the participants may require and the permitted means of handling them. Use known commitments and resources directly where they settle feasibility. Ask participants about their work, agreement or interpretation when the answer depends on it.
 
 #### CGOV.4:4.4 - Return the design and the changes needed to use it
 
@@ -57,9 +57,9 @@ Distinguish that design from its adoption and later use. Appointment, access, re
 
 #### CGOV.4:5.1 - A board receives an investment after the choice has been made
 
-In a constructed manufacturer, investment above 500 is reserved to the board. Management can investigate alternatives but cannot commit that expenditure. A proposal for 700 arrives with a supplier selected and a promised delivery date, while the board has seen neither a smaller option nor the consequences of postponement.
+In a constructed manufacturer, investment above 500 is reserved to the board. Management may investigate alternatives. It prefers a supplier for a proposed investment of 700. The supplier has offered a delivery date and the corporation has made no binding purchase commitment. The board has yet to see a smaller option or the consequences of postponement.
 
-The missing contribution is preparation for a real choice. The repaired design has management bring the alternatives, financial consequences and unresolved technical assumptions before making a commitment. A relevant specialist answers the technical question. The board considers the reserved investment; management selects the implementation details within the resulting decision and its existing authority.
+The missing contribution is preparation for a real choice. The repaired design has management bring the alternatives, financial consequences and unresolved technical assumptions while the board can still choose. A relevant specialist answers the technical question. The board considers the reserved investment; management selects the implementation details within the resulting decision and its existing authority. If management has already bound the corporation, first establish the effect of that commitment and what the board may now decide. Changing the procedure for future investments cannot by itself reverse the earlier act.
 
 The proposed arrangement leaves the decision on the investment of 700 with the board. If the board approves it, management handles implementation within the decision and its existing authority.
 
@@ -75,7 +75,7 @@ A familiar national or listed-company model can be mistaken for the corporation'
 
 ### CGOV.4:7 - Conformance Checklist
 
-Can practitioners explain who prepares, receives and uses each result needed for the selected matter? Does the design respect retained powers and preserve ordinary delegated action? Can recipients obtain the information and capability needed to perform their contribution? Are the design, the acts that establish it and its later operation distinguished?
+Does the design allocate the contributions needed for the commissioned matter or range of matters, under the governing powers? Can the responsible people obtain their information and support in time, including when independently permitted calls occur together? What establishes the design, its introduction and its subsequent use respectively? Existing authority and sufficient support can sustain ordinary delegated action.
 
 ### CGOV.4:8 - Common Anti-Patterns and How to Avoid Them
 

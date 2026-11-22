@@ -23,7 +23,7 @@ Waiting may allow deterioration or loss of service; acting early may waste usefu
 
 Begin with the requested decision and time horizon. Recover the relevant required function, current condition and failure account. Use adequate evidence already available before asking for more. Separate the diagnosis supported now from the stronger causal account that may remain unresolved.
 
-Form the alternatives that can answer this case. Include retaining the present arrangement, deferring with stated conditions, restricting operation, targeted inspection and stopping when they are plausible responses. Repair and replacement can have different support, downtime and recurrence consequences. A candidate without the means or authority to carry it out can remain a recommendation, but it is not a feasible immediate act.
+Recover which decision the recipient has left open. To assess a specified response, judge it against the required use. If the practitioner must recommend or select among responses, form the alternatives that can answer this case. Include retaining the present arrangement, deferring with stated conditions, restricting operation, targeted inspection and stopping when they are plausible responses. Repair and replacement can have different support, downtime and recurrence consequences. A candidate without the means or authority to carry it out can remain a recommendation, but it is not a feasible immediate act.
 
 Compare the alternatives at the same required use. Explain what failure or condition each addresses, the consequence of delay, the expected intervention effect and its material uncertainty. Include disturbance, introduced defects, access, support, service loss and later restoration. Do not conceal an unacceptable condition by averaging it into a favourable cost score.
 
@@ -31,7 +31,7 @@ Test whether the remaining diagnosis uncertainty changes the choice. If all plau
 
 Use [MNT.5](16-mnt-5---prepare-maintenance-service-capability-spares-tools.md) and [MNT.7](18-mnt-7---coordinate-maintenance-intervention-and-continuing-o.md) where support and operation can change feasibility. A part awaiting applicability evidence can block installation while leaving replacement at a suitable future outage as the best recommendation. If no feasible alternative preserves the required use, return the unmet condition to the appropriate operating or engineering decision.
 
-In terms the recipient uses, say what to do or recommend for the unit and configuration, under which conditions, why it is preferable and what would reopen the choice. Retain only uncertainty and conditions that change the recipient's use. If the request is for advice and the answer is adequate, stop.
+In terms the recipient uses, say what to do or recommend for the unit and configuration, under which conditions, what warrants the response under the requested criterion and what would reopen the choice. If no single action works in every remaining situation, consider whether an authorized person can distinguish those situations in time to act on a conditional recommendation. Retain only uncertainty and conditions that change the recipient's use. If the request is for advice and the answer is adequate, stop.
 
 For performance of a selected intervention, carry the selected scope to [MNT.8](19-mnt-8---isolate-make-safe-and-authorize-the-maintenance-inte.md) and MNT.9. When an operative requirement is disputed, appraise its merits separately: the protected party, relevant harm, baseline and marginal protection, whole burden and displaced harm matter. Preserve present force while the authorized holder considers an amendment. A maintenance recommendation does not amend that requirement.
 
@@ -62,7 +62,7 @@ The available spare, a recent training course or a vendor's diagnostic label can
 
 ### MNT.6:7 - Conformance Checklist
 
-Does the diagnosis support the decision at hand? Have the plausible alternatives been compared at the same use and horizon? Are response feasibility, service effects and material uncertainty visible? Can the recipient tell whether this result is advice, a selected act or an unresolved decision?
+Does the diagnosis support the decision at hand? Does the judgement address the proposed option, the choice among alternatives or the whole set the recipient asked about? When alternatives must be compared, do they answer the same use over the same horizon? Are response feasibility, service effects and material uncertainty visible? Can the recipient tell whether this result is advice, a selected act or an unresolved decision?
 
 An adequate recommendation closes the advice request. Any selected further inquiry has an attainable action-changing contribution; the conditions for carrying out the intervention still apply.
 

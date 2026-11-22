@@ -107,7 +107,7 @@ A recording may show features by which a style can be recognized while hiding th
 
 #### MDPE.Application:5.3.2 - Compare a style through declared changes and distinctions
 
-Identify the material, intended use and stylistic distinctions that matter. Specify the changes under which each distinction should remain. Use a suitable existing comparison when it answers the question. To establish the range of a distinction or separate plausible accounts, choose an example, a relevant variation and, where needed, a case that breaks it.
+Identify the material, intended use and stylistic distinctions that matter. Specify the changes under which each distinction should remain. Use a suitable existing comparison when it answers the question. For a claim covering a range, establish what preserves the distinction through the allowed changes. A property of the organization of a phrase may supply those grounds throughout the range. Examine a variation where plausible accounts give different answers. One admissible failure can rule out a claim that the distinction always survives.
 
 A different camera position may hide a cue while the performed movement stays the same. Another partner may make the same method harder to apply. Slower music may make a cue available for longer and change the expressive result. Mirroring can change the partnering convention. Choose which variation to examine, and distinguish its effect when a claim depends on it.
 
@@ -123,11 +123,15 @@ When the question concerns a reusable way of performing, establish what the perf
 
 One method can permit several stylistic results. Different methods can produce performances that look alike under a coarse comparison. A style may also be a convention for recognizing and selecting performances. Use the identity conditions in A.3.1 to decide whether a change preserves the method, refines it for a narrower use or requires another method.
 
-To reconstruct a method, trace the required result back to its conditions and actions, then follow them through a complete case. If the existing record does not expose a choice, use another suitable source or a revealing attempt when that difference matters. Where neither is available, give the reconstruction within its limits. State which relations the record shows, which are inferred and which came from a further source.
+To reconstruct a method, trace the required result back to its conditions, choices and actions. Complete instructions can establish what the method prescribes. Follow them through an actual performance if the question is how the performers used them. A trial can resolve a remaining question about feasibility under its conditions. If the existing record does not expose a choice, use another suitable source or a revealing attempt when that difference matters. Where neither is available, give the reconstruction within its limits. State which relations the record shows, which are inferred and which came from a further source.
 
 #### MDPE.Application:5.3.4 - Make granularity a declared comparison choice
 
 Choose the detail that can distinguish the alternatives that matter for the task.
+
+Give a musician a fresh brief before supplying a score or timing diagram. For example, dancers at a live event want to be free to extend a pause and still hear the ensemble rejoin them on their return. Give the musician the agreed purpose, people, equipment and rehearsal time available. Let the musician decide whose actions belong in the arrangement, what they must be able to perceive before acting, and which differences the timing account must retain. Ask for a playable arrangement and the grounds that it serves the dancers and the musicians together. A reasoned finding that the current conditions rule it out can also answer the brief.
+
+After the musician’s first solution, change a relevant condition, such as what the players can see from their positions. Establish what still works and what must change. If the original commission asks only for tonight’s arrangement, a sufficient solution for tonight can finish it. The change of conditions becomes relevant when the commission includes adapting the arrangement.
 
 In a constructed case, two performances have response delays of 0.25 and 0.75 beats after a partner’s cue. Both satisfy “within one beat”. If the task requires a response within 0.5 beats, the first meets the requirement and the second misses it. The threshold belongs to this task.
 
@@ -150,7 +154,7 @@ For the teaching question, identify the relations and operations the learner nee
 | Coordinate the response in time | The learner shows or explains the required timing relation. | The learner supplies the response within the local time criterion, with the permitted help. | If the problem concerns execution, develop coordination or change the support. Check understanding separately if it is in doubt. |
 | Adapt after an unfamiliar response | The learner explains why the original continuation no longer fits. | With a different partner or in changed conditions, the learner produces a usable recovery. | Practise the adaptation if needed and return to the whole interaction. |
 
-Use the rows that distinguish what the learner explained, what they performed and what remains open for the use at issue. A single unsuccessful attempt may leave several explanations possible.
+Use the rows that distinguish what the learner explained, what they performed and what remains open for the use at issue. When the learner has to design the interaction, first give them the brief in §5.3.4. A table that specifies the cue, branch and timing in advance can support practice in using those choices. For design, examine which choices the learner made, with the aids available in the intended work. A single unsuccessful attempt may leave several explanations possible.
 
 #### MDPE.Application:5.3.6 - A worked acquisition contrast
 
@@ -158,11 +162,11 @@ In a constructed case, Ira and Toni are learning an eight-pulse operation. The d
 
 Ira reads “add two modulo eight,” obtains the correct set and explains why 6 becomes 0. The explanation and answer give evidence of understanding the operation. When the ensemble plays, Ira cannot clap the shifted phrase in that attempt. A claim about what Ira can do in other conditions needs corresponding evidence.
 
-Toni accurately copies the original recording but cannot construct the shifted phrase in this attempt. Repeating the original more slowly can rehearse that phrase while leaving the shift unexplained. The teacher marks the eight positions, performs the original and changed phrases, then asks Toni to shift a different onset set. That response can show how Toni used the operation. The ensemble also tries the changed phrase so that actual coordination can be assessed.
+Toni accurately copies the original recording but cannot construct the shifted phrase in this attempt. Repeating the original more slowly can rehearse that phrase while leaving the shift unexplained. The teacher marks the eight positions, performs the original and changed phrases, then asks Toni to shift a different onset set. That response can show how Toni applied the specified shift to new material. The teacher supplied the cycle and the rule. To examine whether Toni can choose a phase, give Toni the accompaniment and the musical effect wanted, leave the shift open, and use the resulting phrase in the ensemble. Several phases may meet the same brief. The ensemble’s performance can establish how the parts actually fit.
 
 Suppose both later play the shifted phrase while following the teacher’s audible count. This establishes their performance with that support in the observed task. If the concert retains the count, it may be an adequate arrangement. If the brief calls for entry after another player’s cue without the count, use a suitable existing performance under that condition, or try it when the answer justifies the additional work. Keep the support permitted for the performance being assessed.
 
-Successful performance in a varied case may extend the claim about what Ira or Toni can do. To establish acquisition, relate it to earlier performance and relevant practice. A failed attempt might concern cue access, execution, fatigue, an unfamiliar relation with the ensemble or the explanation. Use conditions that distinguish those possibilities if the cause matters to the next step.
+Successful performance in a varied case may extend the claim about what Ira or Toni can do. To establish acquisition, compare evidence of what the same person could do earlier and later on the relevant operation, with comparable help. An earlier demonstration that supplied the answer may leave the learner’s starting capability open. Crediting a particular exercise with the change also requires grounds to distinguish its effect from other practice. A failed attempt might concern cue access, execution, fatigue, an unfamiliar relation with the ensemble or the explanation. Use conditions that distinguish those possibilities if the cause matters to the next step.
 
 People or other agents may acquire different parts of the same method or reach the same capability in different ways. To compare counts of relations correctly recovered or operations acquired, specify what is being counted, the level of detail, the selected set, the criteria and the conditions. The unit for one of these counts may differ from the other.
 

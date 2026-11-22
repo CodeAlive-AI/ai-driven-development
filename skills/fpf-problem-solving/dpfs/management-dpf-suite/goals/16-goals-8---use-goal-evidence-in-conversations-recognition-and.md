@@ -43,7 +43,7 @@ Choose recognition appropriate to the participant and setting, including prefere
 
 Goal evidence can inform a personnel decision when its interpretation fits that decision. HRM.2 supplies the actual work analysis, assessment inference, comparison and limits. HRM.3 supplies remuneration and progression through their applicable bases and terms; HRM.1 checks the coherent people/work arrangement. Include opportunity, assistance, scope, attribution and relevant changes when comparing contributions.
 
-Avoid a direct universal score-to-pay or score-to-promotion conversion. This preserves legitimate use of achievement evidence: a defined, agreed contribution can be relevant under a qualified reward rule. The rule's authority, validity, fairness and actual terms still govern. Obtain the applicable professional and institutional judgement where it is required; this method does not issue an employment or legal determination.
+Use goal evidence under the actual remuneration or progression rule. Identify the contribution the rule rewards and the evidence and authority it requires. A valid fixed rule can determine an entitlement once its conditions are met. A discretionary award requires the decision entrusted to its holder. HRM.3 supplies the relevant professional process and any further grounds a particular decision requires.
 
 Return the conversation result or qualified input to whoever will use it. Recognition flags an unjustified change of use. For assurance, establish what the evidence supports about the individual, how it may be used and who has authority to act on it for the proposed consequence.
 
@@ -53,7 +53,7 @@ Two employees have scores of 1.0 and 0.6. The first had a committed goal with es
 
 In a CFR conversation, the second employee's evidence supports discussion of the search quality, the useful finding and the help provided. The team can recognize those contributions and decide what to pursue next. A promotion panel separately asks whether the employee can perform the proposed wider role. HRM.2 receives appropriate evidence, including relevant goal work, but needs the role-specific inference and comparison.
 
-Change the condition: a valid reward arrangement grants a specified payment for an evidenced contribution, and its terms are met. The separation of CFR and raw scores does not remove that obligation. Those responsible use HRM.3 to make the payment decision and carry it out under the agreed terms.
+Suppose a valid reward arrangement grants a specified payment when a defined contribution has been evidenced. Its conditions are met. The employee's entitlement and amount can now be established under that rule. A rule reserving the award to an authorized panel would instead require its decision. To report that the employee has been paid, use evidence of the transfer or receipt that the applicable terms require. Those responsible use HRM.3 to carry out the remaining work.
 
 ### GOALS.8:6 - Bias-Annotation
 
@@ -64,7 +64,7 @@ Visible output can conceal helping, care, coordination and unequal opportunity. 
 - Is the purpose and material use of the conversation or evidence clear to participants?
 - Does feedback concern an observable, changeable contribution with usable help?
 - Is recognition supported and appropriately attributed?
-- Does a personnel conclusion use the full decision-specific evidence and authority?
+- For a personnel conclusion, do the rule, evidence and authority establish what was asked, such as an entitlement, a discretionary decision or a payment already made?
 - Have changed data uses and applicable terms been handled through their actual grounds?
 
 ### GOALS.8:8 - Common Anti-Patterns and How to Avoid Them

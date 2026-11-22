@@ -5,7 +5,7 @@
 
 ### HRM.2:1 - Problem frame
 
-**Use this when** recruitment, promotion, allocation or another personnel choice relies on a claim about a person's suitability for actual work. Begin with the decision and the contribution it needs, not an available test or candidate score. The first useful result is a warranted comparison and recommendation, or the uncertainty that prevents that comparison or recommendation. The object is the assessment and selection inference; an appointment remains a separate act.
+**Use this when** hiring, promotion or allocation calls for a recommendation about one person or a group of people who must cover specified work. Identify the personnel decision, whose work is needed and what would make the recommendation sufficient. Return the supported recommendation or the part still open. The appointment takes effect through the authorized act.
 
 Use a sufficient established procedure directly when its work, population, support conditions and decision remain applicable. A formative learning conversation need not become a selection exercise.
 
@@ -28,6 +28,8 @@ Evidence gathered for one purpose can acquire an unjustified second meaning. Cou
 
 Name what is being decided, who may decide, the candidate population, applicable eligibility conditions and the proposed terms. Separate an entry requirement from something learnable after appointment with available support. Recover the actual work through documents, observation and knowledgeable participants. Include consequential uncommon situations, coordination and recovery where they matter; frequency alone does not establish importance. Identify which variations in work, location, tools and support the role must cover.
 
+For several posts, establish what the people must deliver between them. Which actions require a particular person's judgement, when can one result serve several users, and who may substitute? Include existing assignments and the support people would draw on together. This defines the work to which their assessment evidence must apply.
+
 Translate this analysis into claims needed for the decision: for example, the ability to turn a client's ambiguous concern into a bounded advisory question using the provided agent, explain the resulting recommendation, and recognize when a required professional conclusion is unavailable. Distinguish this from the obsolete ability to type a report unaided. If adequate work analysis is missing, obtain it before selecting the instrument. OPM's job-analysis practice and qualified industrial/organizational assessment are useful suppliers; specify the personnel decision these findings will inform.
 
 For an internal talent or promotion opportunity, establish who can be considered, how nomination or application works, and which exclusions have an applicable basis. Exclusive, inclusive and blended arrangements make different participation promises. Consider whether a supported direct application or another access route is needed; do not treat a manager's nomination as evidence of capability. More places do not by themselves establish that people experience inclusion or that the selection is fair.
@@ -45,7 +47,9 @@ For each consequential claim, choose evidence that could support it and explain 
 | Eligibility or a required qualification | The applicable verified fact | The rule requires it and the fact concerns this person and use |
 | Performance after an obtainable learning period | Appropriate evidence and a credible learning/provision arrangement | The recommendation distinguishes present capability from the conditional future contribution |
 
-Ask a qualified assessment supplier for the validity argument for this decision, population and conditions; the consistency of measurement; relevant fairness and bias findings; limitations; permissible administration and change conditions. A vendor's reference customer or general accuracy figure is insufficient when the inference changes. The supplier can perform technical validation; HR must obtain enough of its result to understand which use is warranted. If the result is unavailable, use an adequate alternative or leave the dependent comparison unresolved.
+Choose the basis that answers the appointment decision under the applicable selection rules. For a comparable assignment, verified earlier work can show the candidate's own choices and the support those choices relied on. Check that the support is available or adequately replaced. A relevant verified qualification can be sufficient for a first assignment. Where the applicable rules permit a supervised placement, bound the beginner’s work by what they can undertake with that support. Establish that a qualified supervisor and any required development will be available when needed. Another person's successful performance can establish a use of the method. Extending the conclusion to this candidate requires grounds for that inference.
+
+For a test score or a further predictive claim, obtain the validity argument for this decision, population and conditions from a qualified source. Examine consistency, relevant fairness and bias findings, access, limitations and permissible changes. A valid existing assessment can satisfy the request when the requester and the applicable selection rules accept it for this use. Conduct a fresh personal trial when the remaining inference or the applicable procedure calls for it. If adequate grounds are unavailable, use another warranted basis or leave the dependent comparison open.
 
 A work sample's resemblance to the job alone does not establish every predictive claim. Likewise, correlation with old supervisor ratings is not automatically evidence of the new contribution if those ratings reflect obsolete tasks or unequal opportunities. Keep the intended outcome and the evidence for it explicit. Use existing HCD or OPS.22 results only within the claim each supports; a good operating result may depend on team or agent contributions not controlled by the individual.
 
@@ -63,7 +67,9 @@ Apply the supported procedure to the eligible population. Separate missing evide
 
 Distinguish minimum conditions from compensable preferences. A required professional permission cannot be compensated by a high interview score. Among candidates who meet binding conditions, use the explained comparison relevant to the work. Do not construct weights retrospectively to select a favored person. When candidates are not distinguishable on the evidence, use the applicable tie or further-evidence procedure and state what the evidence leaves unresolved.
 
-Construct the recommendation with the proposed work and terms, evidence and uncertainty, applicable conditions, and any learning or support on which it depends. The authorized decision maker may accept it, request a defined missing contribution or make another supported choice within the actual rules. Communicate the decision and available correction or challenge route through HRM.4. Use ADM and the relevant organizational process to make an appointment or assignment effective; selection itself does not provide access, remuneration or authority.
+Construct the recommendation for the work actually commissioned. For one post, a supported choice of one person can finish the assessment. For a group, check that its members can supply the required coverage under the proposed terms. For example, several first appointments can depend on the same supervisor. Determine whether that supervisor can provide the help each needs at the permitted times. Report a supported partial recommendation when another post remains open. State the evidence, uncertainties and conditions that would change the choice.
+
+Use HRM.4 to communicate the decision and the applicable correction or challenge route. An authorized manager may assess and appoint in the same meeting. Establish what constituted the appointment under ADM and what OCE still needs to provide for the work to take place.
 
 #### HRM.2:4.5 - Revisit the inference when its grounds change
 
@@ -73,7 +79,7 @@ Follow the receiving work and appropriate assessment evidence. A failure can con
 
 A reporting service needs two advisers. Its old test ranks unaided spreadsheet speed. Work analysis now shows that agents prepare the tables; advisers must frame client questions, identify unsupported conclusions and negotiate an actionable response. The owner constructs two representative cases with the provided agent and criteria covering those operations. A qualified assessor examines the work coverage, scoring and limits. One case contains missing client evidence; a warranted refusal to recommend is a successful response, not an incomplete answer.
 
-Candidate A produces a polished recommendation but misses that absence. Candidate B identifies it, obtains the permitted clarification and supplies a usable bounded answer. Under the established critical condition, fluency does not compensate for the unsupported recommendation. The comparison favors B for this role, subject to the remaining eligibility and employment conditions. The assessment concerns assisted advisory work. B’s unaided spreadsheet performance would need other evidence.
+Candidate A produces a polished recommendation but misses that absence. Candidate B identifies it, obtains the permitted clarification and supplies a usable bounded answer. Under the established critical condition, fluency does not compensate for the unsupported recommendation. This result supports B on the missing-information requirement and rules out A under the stated critical condition. Suppose the assessor also has a comparable previous assignment showing B can frame the advisory question and negotiate a usable resolution with the permitted help. Taken together, the evidence covers the required operations and supports recommending B for one post, subject to the remaining eligibility and employment conditions. The second post still needs a supported candidate. To recommend the pair for the service, the assessor must also establish how their work and any shared assistance cover the clients they are to serve. The assessment concerns assisted advisory work. B’s unaided spreadsheet performance would need other evidence.
 
 Now the proposed service must continue during agent outages. The owner may obtain fallback provision or require an additional human operation. Only after that choice should the assessment change. A blanket ban on tools would have tested a different job; a blanket promise that tools remove all human requirements would have missed the changed dependency.
 
@@ -88,6 +94,7 @@ The incumbent population, historical ratings and recruitment channels can encode
 - Are administration, access and scoring sufficient for the intended comparison?
 - Are missing evidence, unmet requirements and preference differences distinguished?
 - Are recommendation, authorized act, actual provision and further challenge kept separate?
+- If the decision concerns a group, does the recommendation establish the coverage the work requires from its members together?
 - Can a change reopen the affected inference without rewriting unrelated findings?
 
 Recognizing a plausible work sample does not assure its validity. That conclusion requires the evidence appropriate to the actual claim.

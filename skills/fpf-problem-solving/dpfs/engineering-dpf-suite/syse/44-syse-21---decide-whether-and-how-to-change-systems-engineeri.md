@@ -8,12 +8,9 @@ Use this pattern when an engineering organization needs to explain whether and h
 change, branch or stop a Method variant. Identify the Methods practitioners enact and the conditions under which they do so. Standards, training, conference
 discussion and tool promotion can describe a different practice from the one seen in project Work.
 
-Begin with a bounded practitioner population, period, engineering profile, and representative Work. Identify the
-method enacted in that work. When claiming a variant, identify the reusable rule that differs and the method used for comparison. Then state which cultural-continuation relations are observed—for example
-transmission, receiving enactment, recognition, local selection, memory, retention, or loss—and which remain
-unknown.
+Start with the cultural relation at issue, the practitioner population and the period. For a claim about use, recover the method enacted in the relevant work, or establish that no qualifying occurrence took place. An access question can be settled by evidence of a description and its availability. For a claim about a variant, identify the difference in the reusable rule and the comparison that establishes it. Follow transmission, enactment, recognition, retention or loss as the receiving question requires.
 
-The first useful result is a **project-local cultural-continuation account**: the method enacted and any supported variant, supported cultural claims and engineering consequences, available basis, limits and any retained alternatives. It can finish as a qualified current account or supported continuation without a new intervention or later study. When an authorized project choice is made, distinguish its **practice-change decision record** from the cultural claims; retain the choice and its authority in the existing receiving account when that is sufficient.
+The first useful result is a **project-local cultural-continuation account**: the cultural relation, the people or practice it concerns, the grounds for the finding and its engineering implications. Where enactment or a difference between variants is claimed, explain what the relevant work establishes. It can finish as a qualified current account or supported continuation without a new intervention or later study. When an authorized project choice is made, distinguish its **practice-change decision record** from the cultural claims; retain the choice and its authority in the existing receiving account when that is sufficient.
 
 An authorized Agent makes any project decision. If the project selects an intervention, identify who can perform it and any later engineering Work, with the authority and working conditions each contribution requires. A completed account of current practice can stand without commissioning that work.
 A project choice supplies one possible input to cultural change; later Work and cultural relations establish what
@@ -96,7 +93,7 @@ The recurring tensions are:
 
 ### SYSE.21:4 - Solution
 
-Recover the method enacted, any supported variant and the cultural relations supported in the named population. Return the qualified current account or compare the feasible ways of continuing, changing or stopping the practice for the receiving decision. Existing local observations and qualified judgement may suffice for continuation. Select new inquiry or intervention only when its attainable contribution warrants design, engineering, participant and displaced-Work burden under actual authority and protection. A claimed performed test or later cultural result needs its own Work and observations; it is not established by choosing it.
+Start with the cultural relation the receiving decision concerns. Recover the enacted method for a claim about performance, the difference in a reusable rule for a claim about a variant, and the accessible source for a claim about access. Return the qualified current account or compare the feasible ways of continuing, changing or stopping the practice for the receiving decision. Existing local observations and qualified judgement may suffice for continuation. Select new inquiry or intervention only when its attainable contribution warrants design, engineering, participant and displaced-Work burden under actual authority and protection. A claimed performed test or later cultural result needs its own Work and observations; it is not established by choosing it.
 
 
 #### SYSE.21:4.1 - Construct a supported continuation or change
@@ -105,7 +102,7 @@ Work from the engineering result practitioners need toward the practice and cond
 
 ##### SYSE.21:4.1.1 - Recover the practice through an engineering use
 
-Choose the engineering action whose result makes the question consequential: accepting a configured design, integrating constituents, releasing a change, maintaining service, or another named use. State the profile, population, period, affected Systems and receiving question or decision. Recover the result used in this action, the Work that produced it, and the Method enacted there. A compatible `SYSE.20` account can supply the local Work arrangement. A school name or prescribed process does not identify what happened.
+Choose the engineering action whose result makes the question consequential: accepting a configured design, integrating constituents, releasing a change, maintaining service, or another named use. State the profile, population, period, affected Systems and receiving question or decision. For a claim about a performance, recover the result used in this action, the Work that produced it and the Method enacted there. For access to a description, determine which people could obtain the relevant edition and when. For a proposed change, identify the opportunity it would create and the conditions of its use. A compatible `SYSE.20` account can supply the local Work arrangement. A school name or prescribed process does not identify what happened.
 
 For example, a release team says that impact analysis is poor. Follow one consequential change from its configuration and intended effect through impact candidates, their review, and the evidence used for release. Identify where an affected constituent was missed, where a correct candidate was discarded, or where the receiving review could not use the supplied result. These are different difficulties. Start with available cases and qualified practitioner accounts; examine another ordinary or stressed case only where it can change the diagnosis or proposed scope. An unavailable history limits the claim rather than turning recollection into an observed fact.
 
@@ -172,8 +169,8 @@ Use the positions below for the claims and receiving decisions at issue. A quali
 | Result position | Required content |
 | --- | --- |
 | use boundary | Engineering profile, project or organization, place, period, project system-of-interest when designated or another decision-relevant world-side subject, affected Systems, practitioner population, receiving question or decision, and Discipline result or bounded discipline-facing label. |
-| method enacted and any supported variant | Identified Methods, differences in the reusable way when a variant is claimed, MethodDescriptions, representative Work, performing Agents, subject configuration, results, evidence window, and stop condition. |
-| cultural claims | Every asserted cultural relation with its variant, participants, population, period, evidence, uncertainty and any missing links that limit the claim. |
+| enactment or a difference between variants, when claimed | For a claim about enactment, identify the performance, method, performers, conditions and evidence. For a comparison of variants, identify the rules or conditions of applicability that differ and what establishes that difference. |
+| cultural claims | The relation claimed, the people or practice it concerns, the grounds, their period of applicability and the limits of the finding. Identify a variant where the claim depends on one. |
 | decision reference, when a project choice is made | Deciding Agent, authority, current options, comparison basis, choice rule, supported disposition, its limits, and any fallback or accepted losses; include an intervention or probe only when selected. Keep the decision result distinct from cultural evidence, in the existing account or a referenced record according to receiving use. |
 | intervention and later observations, when claimed | Actual intervention and engineering Work, observed cultural relations, practitioner burden, engineering consequences and consequences for named affected Systems, with temporal and causal limits. A proposed test supplies none of these performed results. |
 | downstream use, when needed | Compatible repertoire feedback for `SYSE.15` or an identified need to develop a human capability for `HCD.1`. A missing result blocks only the receiving use that needs it; it does not automatically commission inquiry. |
@@ -292,11 +289,10 @@ Watch for these recurring interpretation biases:
 
 - [ ] The pattern use names the engineering profile, population, place, period, project system-of-interest when
       designated or another relevant world-side subject, and the receiving question or decision.
-- [ ] Representative Work identifies the method enacted. When a method variant is claimed, the account shows what differs in the reusable way.
+- [ ] Evidence establishes the cultural relation claimed. Work records or other adequate evidence establish enactment when it is claimed. When a variant is claimed, the account identifies what differs in the reusable way.
 - [ ] Performing Agents, participating Systems, MethodDescriptions, carriers, and result epistemes retain their
       own relations.
-- [ ] Every asserted cultural claim names its variant, participants, population, period, evidence, and
-      uncertainty.
+- [ ] Each cultural claim identifies the relation, participants, population, period, evidence and uncertainty that matter to it. A claim about a variant identifies the variant.
 - [ ] For a project choice, the deciding Agent, decision Work, assignment when needed and direct authority are recoverable.
 - [ ] Options used in the current comparison differ through an engineering Method or another decision-bearing relation; sufficient continuation requires no fabricated rival.
 - [ ] The comparison includes engineering consequences, consequences for named affected Systems, and every

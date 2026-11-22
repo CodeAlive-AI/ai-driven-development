@@ -228,12 +228,10 @@ partners. The project compares another workshop, a new guided practice, and a su
 inside an existing social event. It chooses the block in the existing event because the hosts can arrange the music, floor, on-site hosting, admission
 and experienced partners without creating another venue.
 
-The host and DJ carry out the authorized event change. The advertised block runs with suitable music and a usable floor. The host and varied
-partners are present. Seven learners complete short dances with experienced partners, but no pair of learners sustains the intended response without
-cues. The teacher repeatedly restores timing on the floor, and experienced dancers do more supporting work than planned. Attendance increases.
+The host and DJ carry out the authorized event change. The advertised block runs with suitable music, a usable floor and the named host. Seven learners complete short dances with experienced partners. During the rotation, learner–learner pairs also try an uncued restart. Each observed pair has time to respond before the teacher intervenes. In those attempts the pair loses the response and the teacher restores timing. Experienced partners do more supporting work than planned. Attendance increases.
 
-The organizers can report that the event provided the intended opportunity and that the learner pairs did not meet the
-performance criterion. The teacher and experienced partners supplied extra help. The project did not test the causal
+The organizers can report that the event provided the intended opportunity and that the learner pairs observed in the uncued restart did not meet the
+performance criterion. If the learners had danced only with experienced partners, their work together as learner pairs would still be untested. The teacher and experienced partners supplied extra help. The project did not test the causal
 contribution of the event. Here the project can reserve the teacher and partners for one more protected trial. It chooses that trial because successful uncued partner response with the revised teaching and rotation would support keeping that combination. It adds uncued partner recovery to the
 teaching method and introduces a guided partner rotation. If learner pairs still cannot perform representative work, the
 project will stop treating event availability as a sufficient remedy. It may investigate the capability or teaching method if the remaining question warrants that work.

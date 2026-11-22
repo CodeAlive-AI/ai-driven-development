@@ -7,7 +7,7 @@
 
 Use this pattern when a director, shareholder or other entitled recipient lacks corporate information needed for a decision; when a disclosure duty has arisen; or when confidentiality, selective access or an unreliable report prevents proper provision.
 
-Start with the information, its recipient and the action or right it serves. Recover the applicable duty and restrictions, obtain a usable answer and provide it through a permitted channel at the required time. Return the information with its material limits, or a specific unresolved provision question. An adequate current disclosure can be used directly.
+Start with the information, its recipient and the action or right it serves. For advice about entitlement, identify the right, restrictions, content and terms of provision. When provision is commissioned, supply the permitted material through the required channel by the applicable time, or identify what prevents doing so. An adequate disclosure already made can fulfil that duty.
 
 Use the relevant practice for the underlying financial, technical or other specialist analysis. The applicable corporate rules determine which underlying documents a recipient is entitled to inspect.
 
@@ -33,7 +33,7 @@ Identify what the recipient needs to know and why: consider a proposed act, exer
 
 Use CGOV.1–CGOV.3 for unresolved corporate identity, rights or authority questions. Use an adequate existing answer. If the parties or their administrative relations are unclear, use ADM.2 to establish them. If permission to read or disclose the material remains in question, use ADM.8 to check the action against the applicable grants, conditions and restrictions.
 
-Recover the applicable source of the duty or right, its subject, timing, recipient and any conditions. Check a claimed restriction against the same use. An unresolved question about how two rules interact goes to whoever has the competence and authority to settle it. A confidentiality label alone supplies no answer.
+Recover the applicable source of the duty or right, its subject, timing, recipient and any conditions. Check a claimed restriction against the same use. If every applicable reading prohibits release of these data to this recipient, the answer to that request is already settled. Refer a disputed interpretation when its resolution can change what the recipient is entitled to or what the provider must do. A confidentiality label alone supplies no answer.
 
 #### CGOV.8:4.2 - Select sufficient content
 
@@ -49,19 +49,19 @@ Apply the permitted treatment to the particular information and audience. A prot
 
 Do not remove the substance of a right through a nominal access offer. An inspection available only after the vote may fail the relevant timing condition. Equally, a right to a summary may leave raw customer records outside the permitted disclosure.
 
-Where disclosure must reach several recipients equally or simultaneously, coordinate the releases. If an error or selective disclosure has occurred, recover the applicable corrective duty and make the authorized correction.
+Where disclosure must reach several recipients equally or simultaneously, coordinate the releases. If an error or selective disclosure has occurred, recover the applicable corrective duty and make the authorized correction. Work out who qualifies on the relevant date and what counts as provision for each. A representative’s receipt may serve several holders when the rule gives it that effect.
 
 #### CGOV.8:4.4 - Provide the information and establish the relevant completion
 
 Assign preparation and release to participants with the necessary capability and authority. Use an existing provision channel when it works. Repair delivery or access under the established right without restarting the entitlement inquiry.
 
-Check completion at the level the duty and use require. Publication, availability, receipt and understanding may be different claims. A public filing duty can require a successful filing; a director trying to interpret a conditional forecast may need an explanation as well. Choose an observation that shows whether the requirement was met or what remains missing.
+Check completion at the level the duty and use require. Publication, availability, receipt and understanding may be different claims. A public filing duty can require a successful filing; a director trying to interpret a conditional forecast may need an explanation as well. Choose an observation that shows whether the requirement was met or what remains missing. For a claim about all entitled recipients, a certified count can suffice if it counts distinct eligible recipients for whom the required provision occurred by the deadline, and the count covers the entire eligible set. Counting messages can count one recipient twice. If the duty also requires simultaneous disclosure, preserve the timing relation between the deliveries. Two receipts before noon can be an hour apart. A certified single release that counts as disclosure to all entitled recipients under the applicable rule can establish the joint condition without reconstructing every receipt. Name-by-name evidence is needed when the claim or terms require it.
 
 Return what was supplied, the material limits and any remaining gap through the normal corporate communication. Keep a record when the applicable duty or later reliance needs one.
 
 #### CGOV.8:4.5 - Maintain the answer through the decision
 
-If a consequential fact changes before the receiving act, determine whether the answer needs correction or supplementation. Give the changed information to the entitled recipients in time for its use. A later correction cannot change what earlier recipients knew at the time.
+If a consequential fact changes before the receiving act, determine whether the answer needs correction or supplementation. Follow the applicable deadline for the change. If a material change starts a fresh notice period, move the vote when needed. When a timely supplement suffices, the scheduled vote can go ahead if the remaining conditions are met. A later correction cannot change what earlier recipients knew at the time.
 
 A missing financial assumption may limit a forecast while the ownership information remains usable. Identify that reach. Obtain further analysis when it can change the decision and warrants its burden, while fulfilling duties that already apply.
 
@@ -73,7 +73,7 @@ In a constructed company, a proposed one-year supplier maintenance contract cost
 
 The draft says only that the price is attractive. The underlying analysis assumes renewal of two major customer contracts, and a director owns part of the supplier. The handler puts the one-year maintenance scope, price of 60, director's interest and renewal assumption in the summary. The author of the analysis supplies an explanation of how failed renewal would affect the financial assessment. The handler includes that consequence, removes customer identifiers and delivers the permitted summary to every shareholder at least five days before the vote.
 
-The delivered summary provides the required terms within the supplied timing and privacy conditions. Shareholders can use that information when deciding how to vote. If the renewal assumption changes before the vote, the handler returns to the applicable update duty instead of leaving the attractive-price statement unqualified.
+The delivered summary provides the required terms within the supplied timing and privacy conditions. Shareholders can use that information when deciding how to vote. If the renewal assumption changes before the vote, the handler returns to the applicable update duty instead of leaving the attractive-price statement unqualified. For a change one day before the vote, a fresh five-day entitlement would postpone it. A rule permitting a supplement that day could preserve the date.
 
 #### CGOV.8:5.2 - A valid right and failed access
 
@@ -87,7 +87,7 @@ Volume can be mistaken for transparency, while confidentiality can become a habi
 
 ### CGOV.8:7 - Conformance Checklist
 
-Can the practitioner identify who is entitled or obliged to receive what, for which use and by when? Does the content preserve material conditions? Is each restriction supported for that audience? Has the required provision occurred? Can a recipient distinguish a missing answer from a delivery failure?
+Can the practitioner establish who is entitled to which information, under what conditions and by when? An answer about entitlement can finish an advisory assignment. If provision was due, did the required act occur for the entitled recipients in time? Can they tell whether the material they received answers the required question? Where the duty concerns the releases together, does the evidence preserve the required relation between them, including simultaneity where specified?
 
 ### CGOV.8:8 - Common Anti-Patterns and How to Avoid Them
 

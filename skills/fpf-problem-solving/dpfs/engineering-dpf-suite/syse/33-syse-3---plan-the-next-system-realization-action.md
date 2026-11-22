@@ -4,13 +4,7 @@
 
 ### SYSE.3:0 - Use This When
 
-Use this pattern when a grounded engineering architecture candidate or decision exists, but one realization
-branch is unsupported: the capable System, Method or enabling condition needed to produce or change the
-engineered System remains unresolved.
-
-Name that branch, its proposed transformer System or the need to find one, the missing support and one next
-planned action. Expand only when interacting branches or building the builder changes that action; name the
-earlier answer to revisit if the branch proves infeasible.
+Use this pattern when a grounded engineering architecture candidate or decision exists and the project must decide its next realization action. Start from the proposed result and check which enabling relations must hold for that action. The missing condition may lie inside one branch or between several individually supported branches. Name the action that resolves or avoids it and the earlier answer it could reopen. A current plan that already supports the next action can be used directly.
 
 The result is a provisional realization-network description and a distinct WorkPlan. Performed Work, actual
 change, feasibility and an obtaining network require their own evidence. If the architecture or function
@@ -33,9 +27,7 @@ diagram can then look like a realization argument. Engineers may plan Work for a
 assign it to a label with no capable holder, or discover late that a selected interface, material or access
 condition cannot be realized.
 
-To bound the feasibility question, identify the first unsupported dependency, plan an attainable
-action and use its result to confirm the branch or revise the earlier answer it affects. The pump case in :5.1 shows how an inquiry
-into a supplier and fixture can precede fabrication without expanding into a complete production-network plan.
+Trace the conditions the next action requires, including any that must hold across branches. When an existing plan establishes that they hold together, return the action and its grounds. Where a dependency is unresolved, choose an attainable way to settle it and use the result to confirm or revise the proposal. The pump case in :5.1 shows when a supplier and fixture inquiry is useful before fabrication.
 
 Use this pattern after the architecture has at least one candidate bearer for every required functioning at
 issue. Otherwise keep the architecture question open with `A.6.F`, `C.30` and `C.32`. Use `A.3.4` for an actual
@@ -76,12 +68,12 @@ intended change, transformer capability, WorkPlan, performed Work and evidence d
 
 ### SYSE.3:4 - Solution
 
-#### SYSE.3:4.1 - Start from one named architecture result
+#### SYSE.3:4.1 - Start from the architecture commitments required for the next action
 
-Start with one current architecture result for one described holon:
+Start with the architecture result or linked results whose realization the next action concerns. When several belong together, identify which parts or configurations must coexist and which contributions can be obtained independently. Recover:
 
 1. the current `C.30` architecture question and claim;
-2. one `C.32` candidate configuration or one `C.32.PAD` project architecture decision;
+2. the relevant `C.32` candidate configuration or `C.32.PAD` project architecture decision, including any interacting constraints on that same undertaking;
 3. the selected structures, constraints, assumptions, and expected architecture gain that matter to
    realization; and
 4. the next use for which feasibility must be known.
@@ -97,9 +89,7 @@ provider arrangement, provider Systems, performed Work, responsibility, and auth
 uses them.
 
 Check the architecture boundary before proceeding. If the candidate lacks a bearer for required functioning,
-reopen the bearer question under `A.6.F` and `C.32`. Continue here when the candidate has a proposed functional and
-structural answer but the Systems and Work needed to constitute, change, integrate, or qualify it remain
-uncertain.
+reopen the bearer question under `A.6.F` and `C.32`. For a proposed functional and structural answer, determine whether the Systems and Work needed to constitute, change, integrate or qualify it will be available together when required. The existing arrangement can already establish that they will.
 
 #### SYSE.3:4.2 - Describe one realization branch
 
@@ -145,7 +135,7 @@ Use these six working questions to classify the first gap:
 | Which prior change makes the transformer or means available? | Open one recursive realization branch for that System, capability, Method, tool, or platform contribution. |
 | Does the proposed architecture still have an admissible realization? | If no branch remains, name the `C.32` candidate, architecture decision, or linked use-and-system concept that the failure requires the practitioner to reopen. |
 
-Record the first gap even when later gaps are suspected. Use it to choose the next action.
+When a branch is unsupported, identify the decision it prevents. When each branch appears supported, try them together: can the same people, means, permissions and inputs be used when each dependent operation needs them? A discrepancy between branches can determine the next action even when neither has an internal gap. Use a sufficient existing arrangement when it resolves that question.
 
 #### SYSE.3:4.4 - Recurse only when the next action depends on it
 
@@ -170,7 +160,7 @@ When a formal flow description uses `DesignRunTag`, keep each tag local to one l
 
 #### SYSE.3:4.5 - Plan the next Work separately
 
-Create or amend one `A.15.2` WorkPlan after the first unsupported answer is visible. For one bounded next action,
+Use an existing `A.15.2` WorkPlan when it already supports the next action under the required joint conditions. Create or amend the plan when the action, inquiry or coordination it needs is missing. For one bounded next action,
 a WorkPlan can start with one substantive PlanItem that states:
 
 - the present EntityOfConcern and planning horizon;
@@ -209,13 +199,10 @@ maintained receiving pattern. If the need remains unresolved, identify it and th
 
 #### SYSE.3:4.7 - Stop at one actionable gap and name the affected earlier answer
 
-The project-local result is a `RecursiveRealizationArrangementResult@Project`, a `U.Episteme` containing a
-provisional realization-network description plus a distinct `U.WorkPlan`. It identifies the unsupported branch,
-proposed transformer and enabling Systems, gaps, result dependencies and the earlier answers each gap can reopen.
-The first result can be stated in five lines:
+When support is missing, the project-local `RecursiveRealizationArrangementResult@Project` is a `U.Episteme` containing a provisional realization-network description and a distinct `U.WorkPlan`. Show which branch or relation between branches needs attention, the next action and which earlier answer could change. If a compatible plan already establishes the next action, return it with its applicable grounds. Where work remains to be arranged, the account can be stated in five lines:
 
 1. **Architecture input:** the named candidate or decision and the selected structures at issue.
-2. **Unsupported branch:** the intended result or change whose realization is not yet supported.
+2. **Unsupported realization:** the intended result, branch or connection between branches whose realization is still open.
 3. **Missing support:** the proposed transformer System or unresolved need for one and the capability,
    Method, resource, platform contribution, interface, integration, or configuration result needed.
 4. **Next Work:** one WorkPlan item that can resolve that gap.
@@ -350,9 +337,9 @@ branch changes the next action.
 
 | ID | Requirement |
 | --- | --- |
-| `CC-SYSE3-1` | A conforming use SHALL start from one named `C.30`/`C.32` architecture candidate or decision and SHALL state the selected structures and use for which realization feasibility matters. |
+| `CC-SYSE3-1` | The account SHALL identify the `C.30`/`C.32` architecture result or linked results, selected structures and intended use that determine the next realization action. |
 | `CC-SYSE3-2` | If required functioning has no candidate bearer, the practitioner SHALL reopen the bearer question under `A.6.F` and `C.32` rather than treating the missing architecture answer as realization Work. |
-| `CC-SYSE3-3` | The first result SHALL name one unsupported realization branch, the proposed transformer System or unresolved need for one, the missing enabling condition, one next WorkPlan item, and the earlier answer to reopen if it fails. |
+| `CC-SYSE3-3` | An applicable existing plan MAY settle the next action. If support is missing, the result SHALL identify the branch or shared condition, the needed means or transformer, the next feasible WorkPlan item or obstacle to it, and the earlier answer that could reopen. |
 | `CC-SYSE3-4` | Intended change SHALL remain modal; an actual transformation claim SHALL satisfy `A.3.4`, and a not-yet-existing System SHALL use production and identity-inception claims rather than a fictional prior transformation. |
 | `CC-SYSE3-5` | A proposed transformer-role assignment and capability SHALL remain plan or candidate content until `A.2.1` and `A.2.2` supply their direct results. |
 | `CC-SYSE3-6` | The realization description and `A.15.2` WorkPlan SHALL remain different epistemes; neither SHALL be treated as performed Work, actual change, production, or an actual selected network. |

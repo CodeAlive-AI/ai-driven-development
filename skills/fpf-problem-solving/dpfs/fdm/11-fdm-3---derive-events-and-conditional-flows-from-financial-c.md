@@ -37,7 +37,7 @@ Simplification is useful when it preserves the receiving answer. It becomes misl
 
 #### FDM.3:4.1 - Recover the arrangement and intended question
 
-Identify the relevant parties, instrument or arrangement, version of the terms and time from which the model starts. Use FDM.1 or FDM.2 for missing positions or boundaries.
+Start from the use of the resulting flow. Work backwards from the payment, receipt or finding in question to the parties and operative provisions that could change it. A provision of a separate agreement may use the unpaid principal from this loan as its input. Use the version, dates and opening state that its rule needs. A later state certified on the required basis may supply the starting point. Use FDM.1 or FDM.2 for a missing position or boundary.
 
 Specify the requested result, such as the contractual schedule, an adverse funding scenario or the consequence of an option. To find the borrower’s next required payment, establish its obligation and the applicable event conditions. To find what it has already discharged, use evidence of performance. For its ability to pay, establish usable funds by the due date. Reuse adequate terms and schedules under their stated assumptions.
 
@@ -55,7 +55,7 @@ Assess a suitable available model against the operative rules. Check whether the
 
 Check whether the model’s definitions and event rules express the required allocation, calendar and exercise conditions. Use a fit directly, extend a separable missing behavior when the rest remains valid, or report what the model cannot support. A software default can support a conditional scenario if stated. Use the agreement to establish its actual terms. [SIE.3][SIE] helps decide whether the model suffices and SIE.4 helps connect different representations.
 
-For an [ACTUS][ACTUS] implementation, inspect the selected contract type’s schedule, state initialization, payoff and transition rules, together with the dictionary and implementation edition. Supply the operative terms, supported starting state and any external inputs the model needs. Compare its events with the agreement-based derivation in this case. A successful sample run establishes what that sample executed. Applying the model to another contract needs a correspondence for that contract.
+For an [ACTUS][ACTUS] implementation, inspect the selected contract type’s schedule, state initialization, payoff and transition rules, together with the dictionary and implementation edition. Supply the operative terms, supported starting state and any external inputs the model needs. Compare its events with the agreement-based derivation in this case. A successful sample run establishes what that sample executed. Applying the model to another contract needs a correspondence for that contract. For a family of contracts, identify the allowed starting states, terms and event combinations at the scope of the claimed result. For agreement on a full payment schedule, establish every required dated flow throughout the family. Relate the internal states to the extent needed for that argument. Establish their transitions as well when the receiving use requires them. For a payment decision, a preserved bound at the relevant date can determine the answer throughout even when exact amounts or intermediate states differ. The correspondence can follow from the event rules and their composition, a preserved relation sufficient for the receiving question, or a complete comparison over a finite family. One permitted mismatch refutes the proposed correspondence at the affected output.
 
 ##### FDM.3:4.2.2 - Construct enough state and preserve the different dates
 
@@ -67,6 +67,8 @@ Generate recurring dates from the specified anchor, interval and end condition. 
 
 When a rate or principal changes, split the accrual interval at the effective boundary and apply each value during its interval. If events coincide, use the order supported by the terms or a qualified interpretation. Calculate each event from the state its rule requires. A spreadsheet row order needs a financial basis before it can determine the result.
 
+If the order remains unknown, carry the permitted orders to the result in question. Two unconditional credits in the same currency leave the same closing balance in either order. Now start with 20, a credit of 50 and an instruction to pay a debt of 60. In this agreement a funded instruction executes at once, the creditor receives the full amount and that receipt settles the debt. An unfunded instruction is declined without retry. There are no other changes. Credit first leaves 10 and a completed payment. Instruction first leaves 70 and the payee still owed 60. The closing balance and discharge depend on the order. A question about a threshold met in both histories can already have an answer.
+
 #### FDM.3:4.3 - Derive and inspect contractual behavior
 
 Work through the relevant events in their applicable order. Keep the operative terms, supplied input values and derived amounts distinguishable enough to inspect.
@@ -77,9 +79,9 @@ At an event, bring any required accrual to the applicable boundary. Determine th
 
 At the due date, derive what is payable. A forecast may assume that the borrower pays it. To report an actual discharge, use FDM.4 with evidence of the event the terms recognize. Keep outstanding principal and interest until discharge or another effective change is established. A forecasting engine that clears its balance at scheduled maturity establishes only the state of that forecast.
 
-Give the receiving user the starting position, operative rule, event condition, dates, amount and next state needed to reconstruct the result. A short table can suffice. An executable model can help with repeated or interacting calculations. Where users must inspect its result, show how a representative event answers their financial question.
+Give the receiving user the grounds needed to reconstruct the requested conclusion. A dated position and the clause that fixes its payment may suffice. For repeated or interacting calculations, a table or executable model can expose the starting state, event rules and updates. A worked event can answer for that event. For a conclusion about all the events or contracts in scope, show what carries the conclusion across them.
 
-Check derived flows and state changes against the terms under conditions representative of the claimed use. Examine a relevant boundary when the date, event order, exercise or allocation can change the result. Correct arithmetic still depends on the party, meaning of the amount and starting state. Use a simple two-row account for a fixed-payment loan when it suffices. Add branches or an executable model for behavior the question needs.
+Check the derived payments, dates and state changes against the agreement at the coverage claimed. A worked event can show how the model calculates it. For a rule claimed throughout a family, derive the result for all allowed terms and event sequences that affect it, or cover the finite alternatives exhaustively. A shared rule for how events change the state may establish the correspondence throughout. Check a boundary when crossing it could alter the answer. Correct arithmetic still depends on the party, meaning of the amount and starting state. Use a simple two-row account for a fixed-payment loan when it suffices. Add branches or an executable model for behavior the question needs.
 
 #### FDM.3:4.4 - Add scenarios and performance without replacing the contract
 
@@ -91,7 +93,9 @@ For a financing choice, valuation or funding question, supply the qualified flow
 
 #### FDM.3:4.5 - Return and adapt the model for its receiving use
 
-Return the contractual or conditional flows with the parties, timing rules and assumptions the question needs. An unknown future market value can leave a usable formula. Competing readings of a term may give different formulas or dates. When no single value is established, give the supported range, conditional branches or precise unresolved amount.
+Return the contractual or conditional flows with the parties, timing rules and assumptions the question needs. An unknown future market value can leave a usable formula. Competing readings of a term may give different formulas or dates. If the permitted values differ, return any conclusion they already establish for the intended use. Give the range, branches or remaining uncertainty when the requested result depends on them.
+
+For a cash threshold, test it against the amounts due in every reading still supported. In §5.2, if the earlier receipt is established and the two stated interest end dates exhaust the uncertainty, the amounts due are 2,675.95 and 2,677.41. A provision of 2,678 is enough either way and 2,675 falls short either way. A provision of 2,676 leaves readiness dependent on the end date. If the receipt is also uncertain, bring its permitted outcomes into the calculation.
 
 Distinguish an observation, exercise of an existing right, an amendment and correction of a record. A new market fixing gives an input to an existing rule. An effective amendment may change the rule. A late bank confirmation can establish a receipt that occurred earlier. Update the state, rule or evidence that actually changed.
 
@@ -159,13 +163,15 @@ For a funding question, use [FIN.2][FIN2] with the qualified amount, due date an
 
 Suppose G separately guarantees L up to 2,000 of B’s unpaid principal on the loan in §5.2. Payment requires the principal due date to have passed, two following business days to have elapsed without cure, and G to have received a valid demand. It falls due two following business days after that demand. Use the same weekday-only calendar. Can this guarantee give B funds for the payment on 4 May?
 
+B cannot use this guarantee to fund the 4 May payment. Its beneficiary is L and its payment conditions require events after that due date. This answers B's question for every permitted default amount and demand date under these terms. If L instead needs to know what it could demand from G and when payment would fall due, construct the following event model.
+
 Construct the condition as a conjunction. A principal shortfall alone supplies only one part. Keep the outstanding covered principal from the loan, the end of the cure interval and the demand's validity and receipt as distinct inputs. When all activation conditions hold, the amount is the lesser of covered unpaid principal and 2,000; the recipient is L. A scenario assumption about default cannot substitute for an actual valid demand.
 
 Suppose B makes no maturity payment and no intervening event reduces principal. The two following business days are 5 and 6 May. A valid demand received on 7 May makes payment due on 11 May, with 8 and 11 May the two following business days. Covered principal is 2,665, so 2,000 of the guarantee is due to L on this branch.
 
-The guarantee provides B with no funds for 4 May. It may protect L against part of a later loss or affect a separate offer of financing. For an actual guarantee payment, use FDM.4 to establish its effect on L’s claim and any claim G acquires against B. A payment of 2,000 to L can change the holder of a claim without reducing B’s total obligations by the same amount.
+The guarantee may protect L against part of a later loss or affect a separate offer of financing. For an actual guarantee payment, use FDM.4 to establish its effect on L’s claim and any claim G acquires against B. A payment of 2,000 to L can change the holder of a claim without reducing B’s total obligations by the same amount.
 
-Derive the trigger, qualifying action, beneficiary and due date together. Entering the guarantee limit as a loan payment omits the conditions that produce the event. If demand validity is unresolved, give the conditional event. Use a qualified determination of validity if the question needs a definite outcome. Other established loan amounts remain available.
+For L’s payment schedule, derive the trigger, qualifying action, beneficiary and due date together. Entering the guarantee limit as a loan payment omits the conditions that produce the event. If demand validity is unresolved, give the conditional event. Use a qualified determination of validity if the question needs a definite outcome. Other established loan amounts remain available.
 
 ### FDM.3:6 - Bias-Annotation
 
@@ -175,9 +181,9 @@ A familiar simple loan can also bias the interpretation of another instrument. U
 
 ### FDM.3:7 - Conformance Checklist
 
-Check the following for the intended use of the flows.
+Check the following at the scope of the result requested. A conclusion that follows from the beneficiary and the trigger, as in §5.3, can be inspected directly in the operative terms.
 
-1. The arrangement, parties, relevant terms and initial state are identified.
+1. The relevant arrangements, parties and terms are identified, with an adequate starting state where the answer depends on it.
 2. Event conditions, amounts, currencies, timing and state updates follow the applicable terms or explicit assumptions.
 3. The representation retains the branches and ordering that can change the answer.
 4. Contractual, scenario, expected and actual flows remain distinguishable.

@@ -17,10 +17,7 @@ The result is a **linked use-and-system concept proposal**: bounded claim conten
 use situation with a candidate System concept and states any main uncertainty. One or more descriptions may
 carry the claims; no document form is required.
 
-Link one concrete use claim to one candidate system-concept claim and state any main
-uncertainty. This is enough to expose a grounded architecture question. Add further content—for example,
-another use situation, structure, participant, failure, effect, or representation—only when it can change the
-candidate or its boundary.
+Start by linking a consequential use claim to the candidate concept. For a decision about that use, the connection may be a complete answer. When the concept promises several effects, determine whether the same arrangement must provide them separately, under a choice of modes or together. Retain any distinction in operating history, configuration or available action that could change that conclusion.
 
 If this link is missing, internal elegance can substitute for usefulness. A pump passes a component test but
 worsens downstream flooding; planning software is installed but cannot support production decisions with the
@@ -99,9 +96,7 @@ decision; participation in or ownership of the designated System is not required
 
 #### SYSE.2:4.2 - Name the subjects and direct relations hidden by environment language
 
-Start from compatible current `SYSE.16` and `SYSE.17` results for the same subject, configuration, use, horizon,
-and decision. If either result is unavailable, recover only the subjects and direct relations needed for the first
-linked claim. Use `SYSE.16` when the decision needs several operational structures or a co-change boundary, and
+Use current `SYSE.16` and `SYSE.17` results that support this use decision. For a result from another subject, configuration or interval, identify what carries over: for example, the same interface limit covers the new installation if its loads and connections remain within the qualified range. Recover the subjects and direct relations needed for any claim still open. Use `SYSE.16` when the decision needs several operational structures or a co-change boundary, and
 `SYSE.17` when it needs active discovery of consequence-bearing Systems. A neighbouring System may matter, for
 example, through constructive parthood, placement, interface, interaction, causal participation, use,
 transformation, collection membership, assignment, ownership, permission, authority, or affectedness. Distinguish
@@ -127,7 +122,7 @@ Linked use-and-system concept proposal:
   concrete use claim:
   candidate system-concept claim:
   main uncertainty, if any:
-  architecture question exposed:
+  decision the linked concept supports, including an architecture question if one remains:
   reopen condition:
 ```
 
@@ -186,7 +181,7 @@ is the next use.
 
 #### SYSE.2:4.5 - Expand only when another claim can change the candidate
 
-The first result is one linked use claim, one candidate concept claim, and any main uncertainty.
+Start with the linked use and concept claims needed for the receiving decision and the uncertainties that matter to it. A single pair may suffice.
 Reuse an adequate scenario or use-case slice as the proposal: retain its compatible use and concept claims and
 add only the missing relation, consequence or uncertainty needed for this decision. The progressive-slice
 comparison in §11 helps choose when to continue toward implemented, tested behaviour.
@@ -206,11 +201,9 @@ current, distinguish two questions. Use this pattern for a System's participatio
 supports it. Use Operations Management when the difficulty is managing continuing Work, queues, policies, or
 flows.
 
-#### SYSE.2:4.6 - Stop at a grounded architecture question and reopen from failed support
+#### SYSE.2:4.6 - Return the linked concept to its receiving decision and reopen from failed support
 
-Stop when the current use claim and candidate concept expose a grounded architecture question and any
-uncertainty carried into it. The linked proposal supplies required functioning, operating conditions, outside effects,
-decision-relevant environment structures, assumptions, and evidence limits to `C.30` and `C.32`.
+Stop when the linked proposal answers the receiving concept question or identifies the missing premise that blocks it. If architecture work must follow, supply `C.30` or `C.32` with the required functioning, operating conditions, outside effects, relevant structures and evidence limits. A sound decision to retain a concept, or to set it aside because no permitted arrangement can supply the required use, can complete the commission here.
 
 Use `C.30.ASV` only when a structural description and its adequacy for a selected architecture use are current.
 
@@ -332,14 +325,14 @@ preferred concept always succeeds; keep the use claim open to revision and retur
 
 | ID | Requirement |
 | --- | --- |
-| `CC-SYSE2-1` | A conforming use SHALL name one concrete use situation, one candidate system-concept claim, and any main uncertainty before requesting fuller documentation. |
+| `CC-SYSE2-1` | A conforming use SHALL name the use or range of uses the decision covers, the linked candidate concept and any consequential uncertainty before requesting fuller documentation. |
 | `CC-SYSE2-2` | It SHALL name the participating and affected subjects and SHALL state each decision-changing relation through the applicable FPF pattern. |
 | `CC-SYSE2-3` | It SHALL distinguish parthood, placement, interaction, use, ownership, authority, and affectedness when more than one is current. |
 | `CC-SYSE2-4` | Function-like wording SHALL identify the required functioning and proposed bearer through `A.6.F` before architecture use relies on it. |
 | `CC-SYSE2-5` | Required or intended transformations SHALL remain modal claims; an actual transformation claim SHALL satisfy `A.3.4`. |
 | `CC-SYSE2-6` | A ConOps, use case, scenario, requirement, model, diagram, or other representation SHALL remain distinct from the linked claims it presents. |
 | `CC-SYSE2-7` | Conditional expansion SHALL add only information that can change the current concept, architecture question, evidence use, or return. |
-| `CC-SYSE2-8` | The stop SHALL expose a grounded `C.30` or `C.32` question and any uncertainty carried into it. |
+| `CC-SYSE2-8` | The stop SHALL return what the use–concept connection supports for the receiving question, including any material unresolved premise. When architecture work is needed, it SHALL expose the grounded `C.30` or `C.32` question. |
 | `CC-SYSE2-9` | When architecture, realization, observation, or specialist evidence challenges a claim, that evidence SHALL return to the use, concept, or project-focus claims it can change. |
 
 ### SYSE.2:8 - Common Anti-Patterns and How to Avoid Them
@@ -348,7 +341,7 @@ preferred concept always succeeds; keep the use claim open to revision and retur
 | --- | --- | --- |
 | Environment-as-container | One box called environment, owner, or suprasystem is assumed to contain every relevant System. | Name the participating and affected Systems and the direct relation by which each changes the decision. |
 | Representation lock-in | A ConOps, use-case, SysML, FAS, requirements, or story format is required before the working question is known. | Start from one linked claim and choose representations only for the use they improve. |
-| Concept-as-finished-architecture | An internal concept diagram is treated as the selected architecture and other structures disappear. | Stop this pattern at the grounded architecture question; use `C.30` and `C.32` for architecture relations, selected structures, and candidates. |
+| Concept-as-finished-architecture | An internal concept diagram is treated as the selected architecture and other structures disappear. | Return the supported use–concept link. If a structural choice remains open, use `C.30` and `C.32` for that choice. |
 | Fixed outside world | External Systems and Work arrangements are treated as fixed while only the designated System or its intended design may change. | Compare actual or proposed changes to the designated System, an external System, their relations, or several subjects; obtain specialist results where needed. |
 | Test-as-benefit | One component or integration test is used as proof of outside use, benefit, acceptance, or complete assurance. | State which claim the evidence can support, its conditions, and which use or concept claim remains open. |
 
@@ -418,8 +411,7 @@ These current lines support continuing, use-led, model-linked revision in the se
 - A compatible `SYSE.16` result supplies selected operational structures, conditions, and unsupported
   assumptions; a compatible `SYSE.17` result supplies qualified consequence claims and unresolved representation
   or protection needs; a compatible `SYSE.8` account supplies only its supported provider-arrangement claims and
-  design constraints. Use each result only for a compatible subject, configuration, use, horizon, evidence
-  window, and decision. These relations do not prescribe an order of engineering Work.
+  design constraints. Establish which property of each result bears on this use, including any difference of subject, configuration, horizon or evidence window. The engineering Work can occur in different orders.
 - Use `A.3.4` for the identity and boundary test of an actual bounded transformation. Intended, required, and
   simulated transformations remain claims or representations until that test applies.
 - Use `A.6.F` to recover the object or claim meant by function-like wording and select the direct subject

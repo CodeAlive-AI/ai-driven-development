@@ -67,7 +67,7 @@ If successive improvisations change the object of the trial, re-establish the qu
 
 For the local receiver, explain whether the intended result is obtainable, what help and conditions it needs, what remains unresolved and what can happen next.
 
-For the shared-development receiver, recover the consequential deltas, the proposed transferable function or method, the supporting conditions, the local residue and the nearest contrary case. Include hidden work, permission limits and a suggested next construction or inquiry. CUST.3 receives a family candidate; CUST.6 receives a delivery-method candidate.
+For the shared-development receiver, recover the consequential deltas, the proposed transferable function or method, the supporting conditions, the local residue and what establishes the proposed range. A contrary case can expose a false boundary. When the argument already covers the permitted combinations, give its conditions. Include hidden work, permission limits and a suggested next construction or inquiry. CUST.3 receives a family candidate; CUST.6 receives a delivery-method candidate.
 
 | Local answer | Shared answer | Valid continuation |
 | --- | --- | --- |
@@ -81,7 +81,7 @@ Stopping can protect resources and expose a boundary that prevents a broader fal
 
 #### CUST.5:4.6 - Return the result into actual product and practice work
 
-Have the receiving practitioner use the answer in the next decision: revise the family boundary, build a member, change the delivery method, retain a local service or reject a proposed common form. Obtain any missing authority or access needed for that use. “Feedback sent” is not evidence that the receiving work can continue.
+Return the field finding in a form its recipient can use to revise a family boundary, build a member, change delivery, keep a local service or reject a proposed common form. A supported recommendation delivered by the agreed time can finish an advisory assignment before the owner decides. For adoption, establish the effective decision of the authorised owner. For actual use, trace the finding to the action that used it, including action under authority already in force.
 
 A permanent field function repeats this method across changing questions. It needs ongoing connections with product and operating work. Review recurring results for general knowledge implications: does the pattern of cases challenge a claim about transfer, support or scale? Keep that knowledge revision distinct from a change to one customer's configuration.
 
@@ -89,11 +89,11 @@ A permanent field function repeats this method across changing questions. It nee
 
 A private-hosting attempt initially appears to fail because installation is difficult. The field team recovers two explanations: the deployment tool is inadequate, or the customer's access policy prevents the ordinary setup path.
 
-A permitted simulation and one supervised setup show that the tool works when a named access contribution is supplied. During the local attempt, the author's manual correction also reveals an undocumented input precondition. The local service can continue with that precondition and scheduled assistance. The shared answer is narrower: a private profile is plausible, but its preparation and support are not yet independently repeatable.
+A permitted simulation and one supervised setup show that the tool worked with the access supplied. The author corrected the input manually during the setup. Retain the access, correction and assistance in the account of that run. The private service can continue locally with those provisions. To decide whether another team could prepare and run it independently, examine how it could obtain valid inputs and resolve the errors itself. This run leaves the need for the same help elsewhere open.
 
-CUST.3 receives the access and input constraints; CUST.6 receives the missing preparation operation. For another private environment, the maintainer still needs grounds that its access, preparation and support conditions fit.
+CUST.3 receives the access and input constraints; CUST.6 receives the observed input correction and the question of how ordinary delivery would handle it. For another private environment, the maintainer still needs grounds that its access, preparation and support conditions fit.
 
-Change the result: the customer cannot provide the required access. The attempt stops before live deployment. The negative finding still excludes that environment from the proposed family. The local receiver obtains a feasible hosted alternative or an explicit inability to provide the requested service.
+Now suppose the customer cannot grant the access specified by this private profile. That excludes this profile in this environment and the team stops before live deployment. For an answer about the customer’s order, consider any other permitted way to meet its requirements. A hosted alternative is available only where the customer’s terms allow it. If a necessary condition fails for every permitted route, the provider can give a definitive negative answer.
 
 For a public service, field inquiry might compare whether a difficulty comes from translated instructions, device access or missing facilitator help. Arrange participation with the required permission and give the local recipients a useful answer. Evidence from one session may leave open which of the three difficulties caused the outcome.
 
@@ -111,7 +111,7 @@ The method can favor what product teams can incorporate. Preserve local benefits
 - Are deviations, assistance and evidence limits recoverable?
 - Are collection, use and transfer permitted for the receiving purpose?
 - Can the inquiry end with a local-only, negative, uncertain or stopped result?
-- What receiving work has the answer changed or enabled?
+- Is the answer usable for the receiving decision by the time it is due? If a change or actual use is claimed, what decision or action establishes it?
 
 ### CUST.5:8 - Common Anti-Patterns and How to Avoid Them
 

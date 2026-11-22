@@ -29,9 +29,9 @@ A local solution contains necessary constraints mixed with accidental arrangemen
 
 #### CUST.3:4.1 - Establish the result the family is meant to serve
 
-State the receiving result in terms that survive a change of implementation. For an analytical service, this might be a defensible eligibility decision from supplied records, not “the same dashboard everywhere.” State who uses it, the operating interval, required quality and the limits beyond which another offering is needed.
+State what the recipient must obtain and which choices of implementation the order leaves open. A family for decisions from customer records may permit different interfaces if they preserve the applicable policy, inputs and service. A family for inspecting a specified software version must retain the version being inspected. State who uses the result, over what interval, at what quality and where a different offer is needed.
 
-Choose cases that expose consequential variation: different inputs, operating environments, levels of recipient capability, support arrangements or acceptance conditions. Include a boundary case that might not belong. Similar sector or customer size can help locate candidates but does not prove commonality.
+Choose cases that expose consequential variation: different inputs, operating environments, levels of recipient capability, support arrangements or acceptance conditions. When the admission rule leaves the boundary in doubt, examine a case on which the proposed rules disagree. A construction valid for the entire permitted range can already settle admission. Similar sector or customer size can help locate candidates but does not prove commonality.
 
 Do not require an arbitrary number of sales. A qualified design basis can support a prospective family; multiple unexamined deployments can fail to do so. Mark which claims rest on observation, analysis or an untested proposal.
 
@@ -41,7 +41,7 @@ Compare how each case obtains its result. Identify the common useful function, t
 
 For example, two deployments both “validate access,” but one checks a monthly file before analysis and another makes a live authorization decision. A shared phrase does not make their timing, failure handling or evidence interchangeable. They may share a narrower operation while needing different offerings.
 
-Build an initial account of the invariants: what must remain true for all proposed members. Include meaningful input conditions, required operations, acceptance, support and continuing responsibilities where they determine the result. Explain why each invariant matters. “All members use component X” is weak if a replacement could preserve the function; “all accepted records have an interpretable eligibility status under the agreed policy” states the needed condition.
+Build an initial account of the invariants: what must remain true for all proposed members. Include meaningful input conditions, required operations, acceptance, support and continuing responsibilities where they determine the result. Explain why each invariant matters. “All members use component X” needs grounds from the order. If substitution is permitted and preserves the required result, the component can vary. “All accepted records have an interpretable eligibility status under the agreed policy” states the needed condition. Membership answers whether a configuration satisfies the family rule. To plan delivery of that configuration, establish what preparation, components, work and support constitute its provision. Admission to the family alone leaves open how this order will be fulfilled.
 
 #### CUST.3:4.3 - Construct variations and choose their home
 
@@ -62,9 +62,9 @@ When later engineering change, platform development or interface evolution is th
 
 #### CUST.3:4.4 - Build a member and a boundary, not only a schema
 
-Take a proposed member and assemble it from the common basis plus the selected variations. Follow input preparation, operation, delivery, acceptance and support. Explain any conversion between supplier results and the receiving work. If “use the common module” leaves someone to invent a local procedure, either develop that procedure as a variation or retain the case outside the family.
+Take a proposed member and assemble it from the common basis plus the selected variations. Follow input preparation, operation, delivery, acceptance and support. Explain any conversion between supplier results and the receiving work. If “use the common module” leaves someone to invent a local procedure, either develop that procedure as a variation or retain the case outside the family. For a commission about the family, identify its permitted configurations and the service each must provide. Check compatibility across whole configurations. Pairwise checks can admit three modules that require three places in a two-place unit. A capacity rule that counts all required places can settle that condition for the whole family.
 
-Now change a consequential condition. Determine whether the member adapts by an allowed choice, needs requalification or leaves the family. This gives the variation rule operational meaning. A configuration table without this construction can admit combinations nobody can deliver.
+Vary a condition where it can affect admission. A configuration may remain supported, require requalification or fall outside the family. For a recommendation about one member, establish its fit. For a claim about every admitted member, explain why the family rules and arrangements cover all permitted combinations. A rule can cover the entire stated domain without excluding a member from it.
 
 For each excluded case, explain which condition fails and what alternative remains. “Disconnected sites require a separately qualified synchronization and support method” is useful. “Unsupported configuration” alone is not an adequate return for the customer or field team.
 
@@ -80,7 +80,7 @@ If permission or an adequate replacement is absent, preserve the local result an
 
 For each member class, identify who can choose it, perform delivery, obtain help, accept the result and maintain the common and local parts. A technically reusable primitive can be one input; a supported offering also needs the work required to obtain its result.
 
-Use CUST.6 to develop and transfer that work. Use CUST.7 to compare common preparation, local adaptation, variation qualification, support and changes over the relevant horizon. A broader family can save setup while increasing interaction testing and support. Compare those costs and savings before widening the family.
+Use CUST.6 to provide the work needed for repeatable delivery, including transfer where the offer requires it. Use CUST.7 to compare common preparation, local adaptation, variation qualification, support and changes over the relevant horizon. A broader family can save setup while increasing interaction testing and support. Compare those costs and savings before widening the family.
 
 For a changed delivery or outcome model, receive the integrated concept from [SYSE.8 — Develop an Integrated Offering and Provider Concept for Using an Engineered Result](../../engineering-dpf-suite/syse/29-syse-8---develop-an-integrated-offering-and-provider-concept.md) where its engineered-result conditions fit. Carry responsibility, evidence and risk boundaries into the proposed members. A family of technical configurations does not automatically support a family of outcome guarantees.
 
@@ -115,7 +115,7 @@ Family construction can favor the provider's convenience over meaningful custome
 - Is the shared result defined independently of one convenient artifact?
 - Are invariants justified by the useful results and the conditions for obtaining them?
 - Are permitted variations and their interactions explained?
-- Can a member be constructed and a nearby excluded case recognized?
+- For a selected member, can the provider construct and support it? For a family-wide admission claim, do the construction and support rules cover the admitted combinations, including joint constraints? Can a recipient apply the boundary if a requested configuration falls outside it?
 - Are technical and permission conditions both satisfied for the proposed reuse?
 - Are delivery, assistance, support and change responsibilities obtainable?
 - Can a narrower family or local residue be selected without treating it as failed productization?
@@ -128,7 +128,7 @@ Family construction can favor the provider's convenience over meaningful custome
 
 **The primitive is the offering.** Add the delivery, acceptance and continuing responsibilities needed to provide it.
 
-**Admission fields instead of construction.** Build a member, a changed-condition case and a support arrangement before judging admission.
+**Admission fields instead of construction.** Establish how members satisfying the rule can be built and supported. Examine a boundary case when it settles an open question about admission.
 
 ### CUST.3:9 - Consequences
 
@@ -148,7 +148,7 @@ Simpson, Siddique and Jiao's platform-development account supplies the useful to
 
 The service-productization line adds that common provision can consist of a defined service and operating method rather than a manufactured component. CUST adopts that breadth and adds explicit permission, continuing obligation and local-residue decisions. The primary abstract of Bakås and colleagues' solution-space framework supports iterative frontend/backend learning.
 
-Compared with a feature catalogue or a gate checklist, this combination changes the work: construct invariants, variations, a member and an exclusion before admission. Reopen the family method when its assumptions fail in an unlike service or when a qualified domain method supplies a better construction.
+The family description connects its common basis and permitted variations to a construction and support rule the provider can use. A worked member can teach the construction. Coverage of the whole family depends on what the rule allows in combination. Reopen the method when a new use falls beyond those grounds.
 
 ### CUST.3:12 - Relations
 

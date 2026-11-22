@@ -8,7 +8,7 @@
 
 Use this pattern when a physical question leaves you uncertain which motions, interactions or material details its description must retain. Resolving every microscopic change may be impractical. Omitting a fast motion or a small interaction may change the answer that matters.
 
-Begin with one consequence: a response over a stated interval, a propagation speed, an accumulated exchange, or a distribution of outcomes. Choose one proposed omission and follow how it could affect that consequence. A simpler account with a justified range of use, or a reason to restore the omitted contribution, is a useful first result.
+Begin with the consequence the work needs, such as a response over a stated interval, an accumulated exchange or a distribution of outcomes. Choose a proposed omission and follow its effect on that consequence. When several results will be used together, establish whether they still describe a compatible physical situation after the omission.
 
 An *effective physical description* here describes the physical behavior needed at chosen scales without resolving every underlying process. Unresolved processes can still contribute through response coefficients, constraints, dependence on earlier states or fluctuations. The method helps choose and examine that description across physical branches.
 
@@ -40,7 +40,9 @@ The task is to retain the physical influence required by the intended result, wh
 
 #### PHY.5:4.1 - Choose the physical consequence and its resolution
 
-State what the answer will be used to interpret, choose or do. Identify the relevant quantity and how it is used: an instantaneous value, a time integral, a spatial average, a peak, a correlation or a probability can require different descriptions of the same situation.
+State what the answer will be used to interpret, choose or do. Identify the relevant quantity. An instantaneous value, a time integral, a spatial average, a peak, a correlation or a probability can require different descriptions of the same situation.
+
+Work back from that use to the region, material or interacting bodies whose behavior matters. Vary their arrangement at a fixed proposed aggregate. Vary their surroundings with a chosen part in the same local state. Follow any change that reaches the requested consequence. This helps decide both where to place the physical boundary and what can be averaged within it. A law or bound covering the admissible arrangements can justify that choice without resolving every part. For several outputs used together, recover the relation their interpretation requires. Two readings of one history must be attributable to that history. A comparison of deliberately different preparations requires the specified difference and comparable conditions for the quantities being compared. A destructive reading may require another specimen and grounds for what the two observations jointly establish.
 
 Include the preparation, forcing, spatial range and observation interval when they affect that answer. For example, the first moment after switching can include a motion that has already decayed when a later reading is taken. A question about a wave's arrival concerns a propagating disturbance and the wavelengths present in it.
 
@@ -185,7 +187,7 @@ Time-scale separation is especially convenient and can dominate the choice too e
 
 ### PHY.5:7 - Conformance Checklist
 
-- The intended consequence specifies the physical quantity, relevant preparation, range and interval.
+- The intended use determines which physical participants, quantities, preparation, ranges and intervals the account covers. Consequences combined for one decision are compatible under the stated physical conditions.
 - The comparison uses the coupled physical arrangement and explains the characteristic scales.
 - Each omitted process retains any mean response, constraint, delayed influence or fluctuation needed by that consequence.
 - The approximation follows from stated physical relations or remains an identified hypothesis.

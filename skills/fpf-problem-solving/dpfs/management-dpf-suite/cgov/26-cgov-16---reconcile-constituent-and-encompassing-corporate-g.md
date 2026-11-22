@@ -59,13 +59,13 @@ In presenting an alternative, the needed contributions can include understanding
 
 Stop a branch at an understood operation or an available contribution sufficient for this use. If the operation is unknown, recover it or obtain an explanation. If it is understood but cannot be performed in the combination, practise under those encompassing conditions, obtain support or use another competent contributor. When assigning the work, preserve any participation the corporate procedure requires from its designated holder.
 
-#### CGOV.16:4.4 - Change one condition in each direction
+#### CGOV.16:4.4 - Change one condition in each direction?
 
-Change an encompassing condition and determine what the constituent action must now do. A threshold based on votes cast and one based on all eligible participants can require different denominators even when the ballot marks are unchanged. A proposal changed during discussion can require renewed explanation or notice before it may be decided.
+The operative rule and the actual votes can settle a question about what happened at a meeting. When the question is how an encompassing condition affects a constituent action, hold the action fixed and change the condition. A threshold based on votes cast and one based on all eligible participants can require different denominators for the same ballot marks. A proposal changed during discussion can require renewed explanation or notice.
 
-Then consider a limitation below and determine what performance above becomes impossible or unreliable. An inability to hear the amendment can prevent participation under the applicable rule; an inability to interpret an assumption can prevent informed judgement despite access to the report.
+Where the ability of a constituent to contribute is in doubt, trace the effect of that limitation on the encompassing act. An inability to hear the amendment can prevent participation under the applicable rule. Difficulty interpreting an assumption can prevent informed judgement although the report was accessible.
 
-Use available knowledge for these comparisons. A new trial is useful when it can resolve the relevant uncertainty.
+Follow both directions when the question depends on both. Use existing knowledge of the governing rule and the work for these comparisons. A new trial is useful when it can resolve the relevant uncertainty.
 
 Distinguish failure to meet an achievable requirement from inability to meet it with the available means. If required participation cannot be achieved through the available channel, determine whether another permitted procedure or a different time is available. An unauthorized reduction of the requirement does not repair the performance.
 
@@ -103,7 +103,7 @@ The supplied procedure requires each participating director to be able to commun
 
 Being logged in no longer establishes the required participation. Recover the action: hearing and questioning the current proposal contributes to deliberation under the supplied rule. Restore communication and explain the amendment before counting that director as participating in its decision, or use another permitted procedure. Whether the remaining directors may decide depends on their own eligibility, quorum and information conditions.
 
-If the director can hear every word but cannot interpret a material assumption, the communication repair is insufficient. A competent explanation or other suitable contribution is needed. Preparation for this role must include using such explanations in the actual deliberation, not only remembering the agenda or operating the conferencing software.
+If the director hears the amendment but cannot interpret a material assumption, establish the consequence for this vote. The director may need an explanation, more time or an opportunity to abstain. Whether the director counts towards quorum depends on the participation rule. Being unable to explain the assumption alone establishes no automatic change in quorum.
 
 ### CGOV.16:6 - Bias-Annotation
 
@@ -113,11 +113,11 @@ The worked examples emphasize decisions because their participation and counting
 
 ### CGOV.16:7 - Conformance Checklist
 
-- A recognizable action and attempted or observed encompassing performance are named.
+- The action and the encompassing performance it contributes to are identified. For a report about execution, there is evidence of what happened. A proposed arrangement can be assessed on the conditions it would need.
 - Each traversed connection explains how the action participates in the whole.
 - Prior, enabling and later contributions remain distinct from constituent enactment.
 - The needed capabilities or obtainable contributions are recovered far enough for this use.
-- A changed encompassing condition and a constituent limitation reveal their effects.
+- The grounds for the decision connect each material condition of the encompassing act to what participants can actually do. Where the question asks how a change propagates, its direction and reach can be explained.
 - The correction addresses the diagnosed difficulty and preserves applicable rights and authority.
 - The result states what is explained or corrected and what performance remains unestablished.
 

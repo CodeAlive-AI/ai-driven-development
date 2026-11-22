@@ -40,10 +40,7 @@ Use `SYSE.13` to identify `PS17-C42`, its parts, software realization, variant r
 release question, the configuration covered, cited evidence and any unresolved conditions. Citing evidence does not
 transfer release authority to the assurance practitioner.
 
-Use `SYSE.4` to check compatible results before planning new challenge Work. Component evidence applies only to
-its component claim and conditions. Station and downstream observations apply to their own claims. State in the
-engineering-assurance account which release claims the evidence supports and which remain limited or unsupported;
-an independent safety permission remains a separate specialist result.
+Use `SYSE.4` to connect evidence to the station decision. A passing pump test establishes its measured property. If a required station mode depends on that pump and a reachable failure prevents the required flow with no alternative path, that failure can disprove an all-modes station claim. A qualified whole-station result can establish a bounded release premise directly. Identify other conditions still needed for service and obtain any independently required safety permission.
 
 
 ### SYSE.Application:1.4 - 4. Bound the Method and cultural return
@@ -55,8 +52,4 @@ release to transmission and retention across a named practitioner population. Us
 
 ### SYSE.Application:1.5 - Result and stop
 
-The bounded result is a recommendation to release `PS17-C42` only after the named restored-function check, with
-configuration, effectivity, evidence limits, unresolved safety permission, and the AI-assisted Method
-disposition explicit. Stop there when the release authority can decide. If the decision still depends on permission, a long-horizon
-bearing-temperature observation, a source claim, a configuration fact or a specialist result, use an existing result that covers the decision or ask its supplier for what is missing. Reopen
-the decisions or qualifications affected by a change to the System, use, configuration, evidence horizon or Method basis.
+Give the release authority the configuration, period or conditions of applicability, evidence of restored functioning, limits and the disposition of the AI-assisted Method. A qualified station result may already settle functioning. If a particular check is separately due, identify the qualifying execution or arrange the outstanding check. Where technical conditions are met and a required safety permission is outstanding, recommend release conditional on that permission and identify who must grant it. An unconditional recommendation requires the applicable release conditions to be met. Obtain further observation, configuration evidence or specialist results where the decision still needs them. Reopen the decisions whose grounds change.

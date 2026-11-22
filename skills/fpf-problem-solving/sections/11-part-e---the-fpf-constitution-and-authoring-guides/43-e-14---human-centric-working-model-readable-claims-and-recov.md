@@ -93,6 +93,8 @@ The **recognition text** is the working text that a cold practitioner, manager, 
 The **assurance text** is the heavier text that carries declaration, object discipline, modeling lens, law, return conditions, and other assurance work.
 
 The assurance text may justify, tighten, or audit the working text, but it must not silently replace or strengthen the recognition-text claim.
+
+Keep the target assertion, its subject and its scope visible through both blocks. Supporting premises may concern other subjects. For Pump-37, calibration of the instrument and the measurement Work can support the vibration reading at 09:00. That reading completes an order for the measurement. A service decision also needs the applicable criterion and operating conditions. A conclusion about a fleet needs grounds covering the relevant pumps.
 Where episteme-publication-heavy or transform-heavy patterns need a compact ontological account, the assurance text should expose three things explicitly:
 - the ontic target or EntityOfConcern;
 - the modeling substrate or mathematical lens when one is load-bearing;
@@ -251,6 +253,8 @@ The selected support stays below the readable claim. It makes the needed basis i
 #### E.14:6.1 - `U.System` — Working‑Model first, Constructive grounding available
 
 * **Publication (Working‑Model).** Authors state structure using familiar relations (e.g., *Impeller* **ut\:ComponentOf** *Pump*; *Pump* **ut\:ComponentOf** *Skid*).
+
+  For the installed skid, establish the impeller's place in this pump and this pump's place in this skid. A drawing may prescribe these connections for every conforming assembly. To use that drawing for a claim about the delivered skid, connect it to this configuration and its actual assembly. The drawing itself can settle what the design prescribes.
 * **Assurance (downward grounding).** When the publication elects `B.3.5`, first recover the exact skid, parts, direct fastening, coupling, enclosure, terminal, flange, and seal occurrences, the applicable skid assembly rule, and the skid reidentification rule.
 
   Then link the readable claim to one current C.2.1 `sum` trace that reports those facts and declare `validationMode=axiomatic`.
@@ -399,7 +403,7 @@ The **Working-Model layer remains the canonical publication face** for authors a
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Human-first clarity.** Readers see the readable **Working-Model claims** first. Direct claims carry no assurance fields by default; selected assurance remains purpose-driven and below the claims. | **Extra author discipline only when assurance is current.** Declaring the required posture and writing a short grounding account takes effort; the authoring template and style guide keep that addition bounded. |
 | **Progressive assurance.** Teams can start with the direct claim and add Mapping, Logical, Constructive, or Empirical support as needed without changing the visible relation. | **Risk of “forever-light.”** Some models may remain weakly assured; formal maturity checks and assurance prompts show where risk warrants more support. |
-| **Layer hygiene.** Order and temporal claims remain distinct from parthood, while independently grounded Work parts and proper phases remain admissible. | **Split attention.** Authors must learn to keep relation families distinct; mitigated by the Tell-Show-Show pedagogy across architectural patterns. |
+| **Layer hygiene.** Order and temporal claims remain distinct from parthood, while independently grounded Work parts and proper phases remain admissible. | **Split attention.** Authors must learn to keep relation families distinct; the grounding chosen under E.7 shows how to tell those relations apart here. |
 | **Spec cohesion.** The same section order and safety subsections (Bias‑Annotation, Conformance Checklist) keep patterns comparable and auditable.             | **Tighter prose.** Patterns grow by a few concise checks; mitigated by the canonical template.                                                                               |
 
 ### E.14:11 - Rationale
@@ -410,7 +414,7 @@ The **Working-Model layer remains the canonical publication face** for authors a
 
 Authors select the contribution that addresses the current assurance question: meaning correspondence for **Concept-Bridge Assurance (CBA)**, a reasoned consequence or constructive argument for **Verification Assurance (VA)**, or empirical support for **Validation Assurance (LA)** under B.3.3. Each contributes only what its actual argument establishes for the receiving use.
 
-**Why patterns teach before they tighten.** Tell-Show-Show places an architectural rule beside System and Episteme cases where it applies to both; E.7 permits a justified single-substrate boundary. The cases make application conditions and the recognition-to-assurance return inspectable. They do not by themselves establish reduced cognitive load, practical effectiveness, or universal applicability.
+**Why patterns teach before they tighten.** This pattern places its rule beside System and Episteme cases because the contrast helps readers recognize different conditions of use. E.7 selects the subject, scale and model for each grounding from the rule the reader must apply. The cases make application conditions and the recognition-to-assurance return inspectable. They do not by themselves establish reduced cognitive load, practical effectiveness, or universal applicability.
 
 **Why interpretation and operative use remain explicit.** E.5.2 keeps conceptual meaning portable while allowing an expression to carry reasoning or construction. An illustrative rendering stays informative; an operative expression retains its explained meaning, operation and prerequisites. A proposed substitution must preserve the claims and conditions needed by the use, and must disclose any relevant loss. Readable presentation does not remove the operation or establish equal effort across notations.
 

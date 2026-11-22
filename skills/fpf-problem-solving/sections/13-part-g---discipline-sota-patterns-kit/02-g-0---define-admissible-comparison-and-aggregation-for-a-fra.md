@@ -105,7 +105,8 @@ CG‑Spec :=
 
   Scope := ⟨ClaimScope: U.ClaimScope, Boundary: {TaskKinds, ObjectKinds}⟩,
 
-  entityOfConcern := ⟨GroundingHolon, ReferencePlane ∈ {world|concept|episteme}⟩,
+  entityOfConcern,                     // entity judged, or the identified targets required by the comparison
+  GroundingHolon?, ReferencePlane ∈ {world|concept|episteme}, // empirical ground when used, and the reference plane
   WorldRegime? ∈ {prep|live},          // refines ReferencePlane=world only
 
   ReferenceMap := minimal map{term/id → UTS|CHR|SoTA-pack refs},
@@ -125,7 +126,7 @@ CG‑Spec :=
            ⟩,
 
   // Penalty routing and plane policies are by explicit policy ids.
-  // For semantics (tri-state, receiving-use loss, model-bound assurance penalties, crossing visibility, set-return), cite G.Core and its governing definitions. The policy fields below are conditional; supply every reference required by the selected use or model.
+  // For semantics (tri-state, receiving-use loss, model-bound assurance penalties, crossing visibility, comparison and selection results), cite G.Core and its governing definitions. The policy fields below are conditional; supply every reference required by the selected use or model.
   CL‑Routing? := ⟨policy_id, map Bridge.CL → penalty_spec⟩, // when the selected use or model maps Bridge.CL to a penalty
   Φ? := ⟨phi_policy_id?, phi_table_ref?, psi_policy_id?, phi_plane_policy_id?⟩, // when any of these policies is used
 
@@ -179,6 +180,14 @@ Begin with the receiving question and the available material: the task or decisi
 ##### G.0:4.5.1 - Obtain the comparison basis
 
 1. **Recover the decision and its conditions.** Use C.39.RQ:4.1 to work backward from what the receiving result must enable and forward from the available ways of obtaining it. Inspect the request, relevant commitments or rules, and the descriptions of actual use. For each consequential success or failure, ask which property of the subject makes that difference. Recover a binding limit from its applicable requirement or authorized allocation; an observed value establishes performance under its conditions, not the limit the receiver must accept. Where two uses need different conditions, retain distinct scope slices.
+
+   **Choose the whole and the model needed for this decision.** Start with a decision the receiver could make differently. Keep the properties of the chosen parts fixed and vary their dependencies on other parts or on a larger whole. If the decision changes, include the missing participant or account for its effect at the boundary. Trace the corresponding dependency separately for the system, its method, the performed work or another kind on which the decision relies. Within a fixed whole, ask whether two admissible arrangements look the same in the current model yet call for different actions. Determine what the model must then distinguish.
+
+   Stop when the grounds suffice for the decision and range actually promised. A property of each member, a dependency between members and a property of their joint operation have different grounds. Preserve any shared resource, condition or handover that can change the answer. Distinguish the facts and modelling assumptions from the criterion the receiver wants to test. For a bound on actual behaviour, at least one configuration must fit the evidence and assumptions. A bound that settles the decision throughout that range can suffice. See C.37.MM:4.1.1 for choosing and connecting the ranges.
+
+   **Set the feasibility criterion for the Method at the scale being judged.** One permitted way of carrying it out that achieves the required result establishes feasibility. To rule out the Method under the stated conditions, show that every way it admits fails, possibly because all need the same missing contribution. B.1.5:4.1 identifies what the whole Method requires and where it allows substitutes. If every successful execution would need a contribution that none of those ways can supply, success of the whole would contradict its own construction. A jointly workable substitute that delivers the required result settles feasibility positively. Separate successes of the constituents still need compatible handovers, resources and operating conditions to establish a way of carrying out the whole. This reasoning applies at each scale where its premises hold. A plan for two jobs describes proposed work. Their number and duration alone do not identify two constituent Methods. To establish that the required result was obtained, identify the dated execution of the specified Method under the relevant conditions and the evidence for its result. An existing report can already establish both.
+
+   **Changing the model changes which conclusions carry over.** If every success under the concrete conditions would also count as success in the abstract model, ruling out every abstract success rules out every concrete success. To establish concrete feasibility, justify that at least one admissible execution meets the concrete criterion. The abstract model can admit a combination its concrete counterpart rules out. B.5.MR:4.2 tests a claim of model refinement. For actual operating conditions, one genuinely admissible execution that meets the criterion establishes possibility. Impossibility or a guarantee requires grounds covering every relevant way of carrying out the Method. Mutually exclusive established requirements can exclude success in every way. If two defensible readings of a record give different answers, resolve the discrepancy or give the conditional answers. If at least one reading is consistent with the evidence and every admissible reading settles the criterion in the same direction, it can be answered with that input still unknown. A supported negative answer can complete an order to determine feasibility. An order to deliver the result or develop an alternative calls for further work.
 2. **Turn the differences into characteristics.** A.19.ECS:4.2 supplies the construction: start with cases that would satisfy, fail or fall outside the use; identify the properties that distinguish them; split a compound property when its components can vary independently; and establish each characteristic’s subject, meaning, scale, units and observation procedure through G.3/C.16. Existing domain definitions and validated procedures can supply these results directly. If the needed characteristic or procedure is unavailable, return that particular construction to its competent supplier, with the decision it prevents.
 3. **Choose the comparisons the question needs.** For each proposed comparison, state what relation between results would change the receiving decision. Match that relation to the characteristics’ lawful operations: equality of categories, an order where justified, or a numerical operation whose scale, units and assumptions permit it. Retain separate coordinates when trade-offs have not been resolved. A weighted total requires a justified aggregation and the receiving preference basis. G.0 then enumerates this finite set of comparators and its legality conditions.
 4. **Obtain the evidence minima from the claim.** Follow each required characteristic and comparator back to what would establish its inputs and applicability: for example, a traceable observation under the relevant operating conditions, an exact proof for a formal claim, or a justified transfer from a different population. Reuse the applicable domain qualification, measurement or acceptance method. Specify the carriers, conditions and checks it requires, and the consequence when they are missing or fail. G.2 can recover missing source support; G.4 carries the acceptance policy. A currentness window is needed when the claim’s use depends on it; a numerical support fold needs its actual model under B.3/C.2.2.
@@ -188,9 +197,11 @@ Begin with the receiving question and the available material: the task or decisi
 
 A report that tested recovery on the same batch supplies that observation; a report giving a 12-minute mean on a different host needs a justified transfer or a measurement on the receiving host. That mean does not establish a guarantee of fitting the allocated window. If the receiving requirement is a guaranteed upper bound, the chosen qualification method must supply that bound; otherwise fit remains unestablished. If the allocation is absent, the team can compare observed times and memory but must obtain the applicable allocation before claiming acceptance. If the receiving question changes to archival space efficiency with no execution-window requirement, the performance observations remain usable while the 15-minute gate no longer governs that comparison.
 
+If the same backup requires two nine-minute jobs to finish in fifteen minutes, they must overlap for at least three minutes. Each job peaks at 1.2 GiB. Their peak sum of 2.4 GiB alone leaves fit under the 2 GiB limit open. If each needs 1.2 GiB throughout its run, the necessary overlap cannot fit. If both can use 0.6 GiB during the same three-minute overlap and each fits alone for its remaining six minutes, that schedule fits. This establishes a feasible schedule. A guarantee under other permitted schedules needs grounds covering them.
+
 ##### G.0:4.5.2 - Bind and publish the established basis
 
-1. **Charter the frame.** Declare `Context`, `Scope`, `entityOfConcern`, boundary examples/non-examples, and `ReferenceMap` from the receiving question and established conditions.
+1. **Charter the frame.** Declare `Context`, `Scope`, `entityOfConcern`, boundary examples/non-examples and `ReferenceMap` from the receiving question and established conditions. For an earlier kit use G.Core:4.2.3 to recover the subject. A test stand can supply data about a component on it or the method used to inspect that component.
 2. **Bind ComparatorSet, SCP and characteristics.** Enumerate the permitted comparator forms obtained above. Bind each to the CHR characteristics it uses and their scale, unit, polarity and other legality conditions. Identify each guard bound to a comparator by its reference or pin. Cite existing characteristic ids or publish new ones under UTS discipline.
 3. **Declare MinimalEvidence.** For each characteristic, bind the required lanes/carriers, any applicable freshness window or crossing allowance, and explicit failure behavior (tri-state semantics delegated to `G.Core`). Keep unresolved prerequisites visible with the operations they prevent.
 4. **Pin the support-composition basis.** Cite `DefaultId.GammaFoldForR_eff` for the model-qualified rule. When using a numerical fold or loss, pin its receiving model, compatible inputs, dependency assumptions and references that justify it; monotonicity and boundedness alone are insufficient. When no common aggregate is justified, the referenced rule retains separate support and a bounded synthesis. Publish any actually used Φ/CL policy ids; keep acceptance thresholds in G.4.
@@ -292,7 +303,7 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 `CG‑Spec` can encode (and therefore amplify) biases if authored carelessly:
 
 * **Tradition favoritism.** Comparator choices may privilege a tradition’s evidence style; mitigation: declare evidence minima and any justified crossing loss, and require grounds for cross-tradition aggregation.
-* **Metric gaming and Goodhart effects.** Overemphasis on a single scalar can lead to gaming; mitigation: preserve set-return semantics and require explicit, auditable scalarisations when they are lawful and intended.
+* **Metric gaming and Goodhart effects.** A single score can conceal trade-offs. Preserve the comparator’s declared relations and the selector’s actual outcome. State the authority and basis for a scalar ranking used in a decision.
 * **Hidden thresholds and opaque safety policy.** Embedding acceptance thresholds in prose or code hides value judgments; mitigation: keep thresholds in CAL acceptance clauses and pin policy ids.
 * **Scope creep.** A comparison may be reused for a different entityOfConcern or reference plane. Retain `entityOfConcern` and `ReferencePlane` pins, and apply the governing rule for any plane relation the comparison uses. Include E.18/A.21 crossing or gate pins when that use applies.
 
@@ -322,7 +333,7 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 ### G.0:8 - Common Anti-Patterns and How to Avoid Them
 
 * **Anti-pattern: shadow legality gates in downstream code.** Avoid by requiring downstream to cite `CG‑Spec` segments by id+edition.
-* **Anti-pattern: “one number to rule them all”.** Avoid by preserving set-return outputs when only partial orders are lawful; any scalarisation must be explicit, typed, and justified.
+* **Anti-pattern: “one number to rule them all”.** Report the pairwise relation when the order asks about two candidates. Identify a frontier under the dominance rule for its candidate domain. For a selection apply the declared selection rule. Combining several criteria into a scalar requires an explicit, lawful operation. Comparing a single measured size can use its own scale directly.
 * **Anti-pattern: thresholds inside CG‑Spec or CHR.** Avoid by keeping thresholds and acceptance logic in CAL and citing from `CG‑Spec` only via stubs/templates.
 * **Anti-pattern: unqualified cross-context reuse.** Expose the correspondence, calibration, loss-policy and reference-plane pins required by the receiving use (`G.Core:4.2.3`).
 
@@ -347,7 +358,7 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 The pattern connects the following evaluation and governance practices:
 
 * treating abstention or deferral as an evaluation outcome, for example when the available evidence does not warrant the requested judgement (as in selective prediction),
-* preserving multiobjective / partial-order outputs as sets (set-valued reporting, Pareto and archive methods) rather than silently collapsing to a scalar,
+* preserving the declared result of a multiobjective comparison, including established incomparability, and a frontier or archive when the receiving operation calls for one,
 * versioning and pinning the evaluation surfaces and publishing the policy identifiers so the evaluation can be reproduced,
 * making evidence minima explicit and auditable (a conceptual analogue of modern reproducibility/robustness checklists and evaluation protocols),
 * keeping method-family specifics modular (e.g., QD/archives, open-ended exploration budgets) via explicit wiring to governing patterns rather than embedding method semantics into the universal legality gate.

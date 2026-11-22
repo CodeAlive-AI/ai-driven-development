@@ -7,7 +7,7 @@
 
 **Use this when** a planner and a lower controller have been chosen, but their combined behavior is not determined by their separate models. A reference jump, stale state estimate, model reset or held input may be the event that makes the connection fail.
 
-Start with one command received by the lower computation: what quantity it represents, when it applies and how it becomes an actuator action. The first useful result is the connected evolution of plant, planning state and interface error, including the events between updates.
+Recover the commands and exchanges the interface must support. Trace what each command means when issued, when it takes effect and how it becomes an actuator action. A general command rule can cover a whole class. An individual exchange can reveal a mismatch. If the guarantee covers successive commands or a switch of mode, establish the behavior across those transitions. The first useful result is the connected evolution of plant, planning state and interface error, including the events between updates.
 
 If a qualified interface supplies this evolution under the current timing and command conditions, reuse it. A diagram or a matching data type is not that result.
 
@@ -96,7 +96,7 @@ Give CAD.3 the combined evolution, initial-error condition, admissible command c
 
 A failed error bound has several possible repairs: change the reconstruction, retain an omitted mode, alter feedforward, reduce command jumps, supply an interpolated segment, shorten latency or choose another split. The error equation identifies which change addresses the failure. Do not reflexively raise every update rate.
 
-Test the exchange implementation with boundary events: simultaneous update, maximum permitted delay, reset, command reversal and missing command. These tests can falsify the model of the interface; they do not prove its physical assumptions.
+For a design, determine the effect of boundary events admitted by the interface contract, such as a simultaneous update, delay, reset or missing command. For a claim about an implementation, establish how it handles the events relevant to the duty. Exercise an event when its effect is unresolved and the test can distinguish the alternatives, or when the test itself is required. Such a test can expose a discrepancy with the interface model.
 
 ### CAD.2:5 - Archetypal Grounding
 
@@ -131,7 +131,7 @@ e_{k+1}=ae_k-d_k,\qquad
 E=\frac{v_{\max}}{1-a}.
 $$
 
-The planner can still update every four ticks. What changed is the command trajectory between updates. At $v_{\max}=0.05$, $E=0.1$. Segment endpoints must join continuously; an additional jump would add to d and invalidate the bound.
+The planner can still update every four ticks. What changed is the command trajectory between updates. At $v_{\max}=0.05$, $E=0.1$. Include any handover jump in the actual increment $d_k$. A planned increment of 0.02 and an additional jump of 0.01 give 0.03 at that tick. The same sampled bound holds while every actual increment stays within 0.05 and the initial error is within $E$. A command contract requiring continuous joins also requires checking continuity at handover.
 
 If a new segment is unavailable, holding the current reference gives $d=0$, which remains within this command class. This is an error-bound argument for that fallback, not evidence that holding position satisfies every mission requirement.
 
@@ -143,7 +143,7 @@ A common output makes unlike models appear interchangeable. Check the mapping an
 
 - The command's meaning, applicability time and between-update behavior are explicit.
 - Projection, reconstruction and controlled-output comparison are distinguished.
-- Combined error dynamics include mismatch and every update or reset mode.
+- The error dynamics include the mismatches, updates, resets and transitions admitted during the duty covered by the claim.
 - The stated initial set and timing class match the implementation being considered.
 - Estimation or delay is represented wherever the law uses it.
 

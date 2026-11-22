@@ -23,7 +23,7 @@ Use enough detail to distinguish the alternatives open to the participants. A pr
 
 #### ECO.1:4.1 - Identify the economic question and the quantities that matter
 
-Identify what the calculation is meant to establish, whose use or choice it concerns and the period in which the resources matter. Distinguish alternatives that give different results or carry different obligations. Reuse a suitable resource or cash-flow account from MA or FIN.
+Identify what the calculation must establish, whose use or choice it concerns and when the resources matter. If you are choosing the account, start from an action the recipient could take and ask which differences between admissible alternatives could change it. A consolidated cash balance can answer a question about group cash. Hold that balance fixed and move the funds between members. If the question is whether a particular member can pay a bill today, retain who controls the funds, and which transfers can be authorized and completed by the deadline. For a group obligation, follow the rule that makes one member's funds available for another's use. Reuse an MA, FIN or FDM account when it preserves the distinctions that the question requires.
 
 Trace the quantities whose interpretation matters to the answer. For each, establish whether it denotes an offer, a completed transaction, a budget allocation, an anticipated exchange, a forgone use or a model weight. Identify relevant quantity, quality, location, timing and access. To apply “steel at 500,” determine the unit, terms and supply to which 500 refers.
 
@@ -31,13 +31,15 @@ Trace the quantities whose interpretation matters to the answer. For each, estab
 
 For an offer, establish who can obtain which supply and under what terms. A nonmatching specification or missed delivery window can exclude the offer for this plan. Use an accepted commitment to establish what the parties have agreed and delivery evidence to establish what reached the recipient.
 
-For a controlled resource, identify what alternative use would be displaced. Historical acquisition cost and the current forgone result can differ. For a new arrangement, use a comparable offer when its differences can be accounted for. Otherwise give a conditional value or compare physical outcomes against the participants’ purposes.
+For a controlled resource, identify what alternative use would be displaced. Historical acquisition cost and the current forgone result can differ. For a new arrangement, use a comparable offer when its differences can be accounted for. Otherwise give a conditional value or compare physical outcomes against the participants’ purposes. Identify whose payment changes, whose existing authority can be exercised and whether a new opportunity is available during the released interval. An internal charge recorded against one department can change its reported cost while leaving the budget it may commit unchanged.
 
 Keep model weights with the objective and constraints that define them. A shadow price can show the marginal contribution of relaxing a specified constraint. To claim someone can buy the resource at that price, establish the available offer and their right to use it.
 
 #### ECO.1:4.3 - Return the comparison that the grounds support
 
 Use the supported quantities and time conditions in the accounting or financial calculation where one is needed. State important consequences outside the monetary account, such as access for an affected community. With several criteria the evidence may leave alternatives incomparable.
+
+When a change helps one participant and harms another, give the effects in their own accounts. Use an agreed group criterion or a comparison the participants' accepted preferences already settle. Suppose a group consists of X and Y, one alternative adds 12 to X’s cash and takes 5 from Y’s compared with the other, and these are the only changes at the same date in the same currency. Group cash rises by 7. A condition that each must at least break even rules out that distribution. To design a distribution, derive the transfer from both participants' conditions. Suppose a fee-free payment from X to Y is allowed, can reach Y on that date, and has no other consequences. After a payment of t, the changes are 12 − t for X and t − 5 for Y. Both break even or gain for any t from 5 through 12. Group cash still rises by 7. If a transfer is restricted or costly, apply those terms before recommending it. If the group has left that trade to its members, give them the distribution and the choice that remains. For an order to report the distribution, show the affected holders, amounts, dates or other consequences at the detail the recipient needs. [Comparing consequences for the decision](../psda/23-psda-6---represent-values-and-trade-offs.md#psda641---recover-whose-concern-changes-the-comparison)
 
 If a missing price matters, identify what can already be established from a range, physical limits or the intended use. A matching offer or a new exchange under ECO.3 may resolve a remaining question. Seek it when the likely gain warrants the work. Stop when the evidence supports the requested finding, comparison or choice, including a conditional answer where appropriate.
 
@@ -67,7 +69,7 @@ A convenient number can be mistaken for the exchange or constraint it represents
 
 ### ECO.1:7 - Conformance Checklist
 
-What do the consequential quantities mean and when do they apply? If the question concerns availability, identify who can obtain the resource, the conditions under which it is attainable or the grounds for finding it unavailable. Does the comparison preserve alternative uses, obligations and important unpriced consequences? Return the finding or choice the evidence supports, identifying any unresolved exchange or physical constraint.
+What does the recipient need to establish, and do the quantities, holders and dates in the calculation distinguish the alternatives that could change that answer? Where an aggregate supplies the answer, give the grounds for using it. For a resource claim, establish who can obtain what under the terms considered. Keep relevant forgone uses, obligations and unpriced consequences with the resulting comparison. Identify any unresolved exchange or physical constraint that limits it.
 
 ### ECO.1:8 - Common Anti-Patterns and How to Avoid Them
 

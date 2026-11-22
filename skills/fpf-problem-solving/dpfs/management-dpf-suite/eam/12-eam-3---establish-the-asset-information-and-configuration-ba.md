@@ -29,7 +29,7 @@ Match the condition and performance observations to the actual unit, duty and me
 
 Resolve conflicting records at their sources. A later timestamp alone does not make a record more applicable. An inspection, installation record or responsible specialist's reconciliation may settle the conflict. Preserve a known mismatch rather than averaging incompatible values.
 
-Consider the consequence of each gap. If every plausible value leaves the requested answer unchanged, qualify the answer and continue. If the value changes technical eligibility, cost or service, obtain the smallest worthwhile applicable result or keep the affected option conditional.
+Consider the admissible configurations of the asset. Uncertainties that make little difference separately can change price or eligibility in combination, for instance when replacing two components together requires a different interface. Do the grounds for each remaining configuration give the same answer to the commissioned question? Distinct prices can all meet the specified budget. Return that supported decision. Only a question whose answer still depends on the configuration requires another distinction or a conditional answer.
 
 Return the information needed for the choice in a form its recipient can inspect. A small table can suffice. Identify the configuration, duty or source change that would reopen it. An enterprise data-model redesign belongs in [EAM.14](23-eam-14---decide-whether-and-how-to-change-the-asset-manageme.md) only when that arrangement is the recurring problem being addressed.
 
@@ -69,7 +69,7 @@ Well-maintained records tend to make their assets easier to compare, which can d
 
 ### EAM.3:7 - Conformance Checklist
 
-Can each material observation, price and intervention be matched to the right asset, configuration and use? Are actual and proposed states distinct? Does every unresolved match have a stated consequence for the receiving decision?
+Can observations, price and intervention be matched to the relevant configurations, including combinations still permitted by the records? What follows for the actual or proposed use, and what remains uncertain?
 
 ### EAM.3:8 - Common Anti-Patterns and How to Avoid Them
 

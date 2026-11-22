@@ -21,15 +21,15 @@ Observing withdrawals, upkeep and exclusion can cost time and money. Participant
 
 #### ECO.7:4.1 - Recover the resource and the actions that affect it
 
-Identify the resource, the units or services obtained from it, the condition that matters and the relevant period. Distinguish withdrawal from provision or renewal. Determine whose actions affect availability, quality or renewal, including parties outside the initial group.
+Start with the use or condition that someone must protect, its location and its deadline. Trace the resource to the users, places and periods where a withdrawal, replenishment, loss or change of quality could affect it. Hold total stock fixed and change where or when it is accessible. If the same total permits different deliveries, keep the local stocks, connections or access times needed to distinguish them. Identify who can change those conditions, including parties outside the original group. For a question about one protected outlet, an adequate reading there can already establish what it received.
 
-Use an adequate physical or operating account directly. Use PHY, MMP or OPS when a missing fact or model matters. An allocation must fit the available flow. Establish rights to that flow from the applicable rules or agreements.
+Use a physical or operating account that fits the resource. Water delivered to a site can be subject to a flow limit and a required reserve. For a shared manual the copies may be freely reusable while qualified support time is scarce. Locate the scarce contribution before choosing what to count. Use PHY, MMP or OPS when a missing fact or model matters. Establish rights to use the resource from the applicable rules or agreements.
 
 Identify the current rights of access, exclusion and withdrawal. Compare them with what participants can do and what they have done. A proposed allocation takes effect through the applicable decision or agreement.
 
 #### ECO.7:4.2 - Construct a workable combination of rules
 
-Start with the rules that govern the question. They can concern entry, quantities, timing, upkeep, observation, dispute resolution or authority to change the arrangement. Use suitable existing rules. If a different combination is needed, compare how the proposed arrangements address the actual difficulty.
+Start with the rules that govern the question. They can concern entry, quantities, timing, upkeep, observation, dispute resolution or authority to change the arrangement. Use suitable existing rules. To design one, identify an allowed action or omission that could defeat the protected use, and find who could change that outcome in time. A withdrawal limit may protect a downstream flow. It leaves an unfunded maintenance duty open. Work back from each required result to the decisions or contributions that would secure it. Check whether the proposed combination is attainable and retains the rights the parties must preserve.
 
 Assess whether participants have the means and incentives to comply. Include the costs of observation and response, especially for smaller users. Before treating an event as a violation, check what the observation establishes. A missed reading may be a measurement problem. For an established violation, match the response to its effect and the applicable rule.
 
@@ -37,19 +37,23 @@ Trace effects beyond a local arrangement. Several communities may use one catchm
 
 #### ECO.7:4.3 - Test ordinary use and changed conditions
 
-Compare the proposed allocation with the available resource and the amount needed for renewal or other protected uses. A shortfall can settle a feasibility question. To establish how a proposed rule would work, follow an allocation and renewal case under the relevant conditions. For a claim about low supply, a missing payment, new entry or a disputed reading, identify who can detect the change and what the rule permits. Use a suitable existing case or test when it covers the question.
+Choose the receiving site and period. A complete reading at the outlet may give the delivered amount directly. To calculate it from an upstream reading, follow the resource from that point to the outlet. Deduct withdrawals and losses along that route. Add intervening inflows, including returns or replenishment that reach it in time. For storage on the route, use either the net change in stock or the gross flows into and out of storage. With an inflow of 100, 10 stored and 5 released in time, 95 reach the outlet if nothing else changes. Subtracting the net increase of 5 already accounts for that release.
 
-Return the supported finding, feasible arrangement, proposed trial or constraint still unresolved. Use the observations that distinguish the relevant cases. Reconsider a conclusion when a change in the resource, access or rule affects its grounds.
+Identify which withdrawals can all occur within the period, including sequential draws on the same stock. For delivery, establish the quantity or quality guaranteed at the receiving point, or a sufficient bound. For renewal, start with the resource’s condition and stock, allow for regeneration by the relevant date, and check the reserve or condition required then. A fishery can deliver its whole authorized catch this season and still leave too little breeding stock for the next.
+
+Test the promise the rule actually makes. A right to ask for 50 can coexist with a rule that guarantees less to that holder while protecting a common reserve. A permitted combination that breaches the promised minimum or coverage refutes that guarantee for the proposed rule. To exclude every rule, show why each authorized rule, acting on the information available at each choice, would breach that same promise in some permitted conditions. Before the requester is known, two branches of a canal could require mutually exclusive early releases even though either request could have been met with advance notice. If rights are independently exercisable, capping their joint take may require changing the agreement.
+
+To report what was used, read a suitable meter or derive the amount or a bound from the physical balance. A positive lower bound can show that a particular holder used the resource even when the exact quantity is unknown. An access right supports a claim about permitted use. A complete record of requests can establish what people asked for. Deriving physical use from it also requires a connection to what was delivered or taken. If entry, a missed upkeep payment or conflicting readings can change the service, establish who can detect the change and who can respond under the applicable rules. An earlier case or test may already show how the rule works under the conditions in question. Return the supported allocation, guarantee, observation or limit needed for this decision. Reconsider it when the inflow, delivery losses, access rights or available response change.
 
 ### ECO.7:5 - Archetypal Grounding
 
 #### ECO.7:5.1 - Sharing water while retaining a downstream flow
 
-Suppose 100 units enter a canal each day. Upstream users consume what they withdraw, and downstream users must receive at least 40 units. Two upstream groups request 50 and 40. Granting both would leave 100 − 50 − 40 = 10 downstream. The maximum combined upstream withdrawal is 60 under these conditions.
+Suppose 100 units enter a canal today. There are no other inflows, losses, changes in storage or returns. Upstream users consume what they withdraw, and downstream users must receive at least 40 units. If two groups can independently take 50 and 40, they can take both amounts and leave just 10 downstream. The guarantee then fails. If a gate under an enforceable sharing rule limits their combined take to 60, at least 40 reach the downstream users. That combined limit can settle the downstream guarantee. To decide either upstream group’s entitlement when the requests exceed 60, establish who may allocate the shortfall and on what terms.
 
-The parties know the day’s controlled inflow before withdrawal and have authority to adopt an arrangement. With 100 units, upstream allowances of 35 and 25 leave 40 downstream. A caretaker can read inlet and outlet meters, check gates and perform specified routine upkeep for €40 per week. Each upstream group can pay €20. Larger repairs need a separate decision.
+The parties know the day's controlled inflow before withdrawal and can adopt a new arrangement. With inflow of 100, allowances of up to 35 and 25 guarantee at least 40 downstream. Exactly 40 arrive if both groups draw their full allowances. If 5 units are instead lost before delivery, full draws leave only 35. To report today's delivery, the caretaker can read the outlet meter or derive it from the inflow, actual withdrawals and losses. The caretaker can check gates and perform specified routine upkeep for €40 per week. Each group can pay €20. Larger repairs need a separate decision.
 
-The adopted agreement allows the caretaker to set allowances of 20 and 20 on an 80-unit day. Each group can meet its essential needs at 20. The caretaker announces the allowance before withdrawal and checks what happens. When two credible readings differ between 80 and 100, the parties temporarily use the lower allowance and jointly check the meter. Disagreement alone leaves the cause open.
+Return to the canal with no losses. The adopted agreement allows the caretaker to set allowances of 20 and 20 on an 80-unit day. Each group can meet its essential needs at 20. The caretaker announces the allowance before withdrawal and checks what happens. When two credible readings differ between 80 and 100, the parties temporarily use the lower allowance and jointly check the meter. Disagreement alone leaves the cause open.
 
 With 80 units, withdrawals of 20 and 20 leave the required 40 downstream. Below 80 the stated essential uses cannot all be supplied. The caretaker must report that limit. If one group misses its €20 weekly payment and the other pays, the funded €40 reserve covers two weeks of the shortfall. If both groups miss their payments, it covers one week of upkeep. Once the reserve runs out, continuing service requires a replacement contribution or a feasible reduced plan. The case stipulates these means and commitments.
 
@@ -63,7 +67,7 @@ Identify dispersed or downstream users who bear consequences even if better-orga
 
 ### ECO.7:7 - Conformance Checklist
 
-Does the finding relate use to the resource’s condition or renewal? Which participants are affected, which rights apply, and which proposed rules are still open? For a claim that an arrangement can operate or adapt, establish the means to observe, supply and decide in the conditions claimed.
+For a report on actual use or delivery, establish what the reading, balance or bound supports for the named user and period. For a promised allocation, establish which rights can be exercised together and what can reach the protected user within the promise. For a continuing arrangement or a proposed change, establish how the required provision or adaptation can be sustained. When a change or trial is requested, identify who can put it into effect and what observable result would warrant adapting it.
 
 ### ECO.7:8 - Common Anti-Patterns and How to Avoid Them
 

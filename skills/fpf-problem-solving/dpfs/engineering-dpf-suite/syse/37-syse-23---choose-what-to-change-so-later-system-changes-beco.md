@@ -24,9 +24,7 @@ The first useful result has three parts:
    genuine holonic levels, non-holonic dependencies, and Work relations that matter to the decision; and
 3. one replayable `ChoiceResult` for a bounded investment or reconfiguration.
 
-**First move.** Name one class of future change the project expects to make: for example, add a sensor variant, replace
-a supplier component, adapt to a new operating environment, reuse evidence across configurations, or change the
-release Method. For each claim, identify the observations, qualified models or estimates
+**First move.** Recover the changes that the investment has to support. It may serve one supplier replacement, several permitted adaptations or a continuing stream that shares equipment and support. Keep the differences that affect the choice, including changes that can occur together. For each claim, identify the observations, qualified models or estimates
 on which it rests, including their respective roles when they are used together. Distinguish what is observed,
 estimated and unresolved. Classify each claim: does it concern an architecture characteristic, a holder capability,
 a result or resource of change Work, a constraint in the joint arrangement of the project system-of-interest
@@ -50,16 +48,14 @@ when cultural continuation is the current question.
 
 #### SYSE.23:0.1 - Short Practitioner Use
 
-For a first pass, use one expected change family and one decision horizon:
+Begin with the investment decision and horizon. One expected change may settle it. Where the undertaking includes several change families, follow the distinctions and connections that affect the same investment, including a shared builder that can support each change separately but cannot serve the permitted combination.
 
 1. State the change to be made, the project system-of-interest when it already exists or the intended-system
    claim when it does not, the configurations affected, the horizon, protected consequences, resources,
    `DecisionSubject`, chooser granularity, and authority.
 2. Classify each current claim before assigning a quality bearer. Separate architecture characteristics, holder
    capabilities, change-Work results and resources, joint-arrangement claims, and causal or contribution claims.
-3. Recover three structures when they matter: genuine part–whole or membership levels with their scale and
-   cross-level conflicts; non-holonic dependencies or service relations between the project system-of-interest and builder arrangement; and first–then or
-   overlapping Work.
+3. Identify the parts or members of each relevant System, the relations between the product and its builders, and the operations or external results the proposed change requires. When the decision relies on a past change, establish which performances constituted that work. Establish order or overlap when it matters. Using a provider’s result and performing the operation in-house can lead to different investments.
 4. Keep obtaining architecture relations and current observations separate from specifications and expected
    characteristics of possible-future structures.
 5. Develop alternatives that change different selected structures of the project system-of-interest or builder arrangement. Show how each alternative
@@ -89,13 +85,7 @@ time, rework, defects, and consumed effort may be results or resources of bounde
 that one architecture change caused or contributed to a Work result needs its own support. These claims may be
 compared, but they do not become the same kind.
 
-The structures also differ. The project system-of-interest and a builder System can each have genuine
-constructive part–whole levels. Actual family members can participate in a membership structure. A component-
-level change can create a simultaneous whole-System or family-level conflict. Those are genuine level claims
-only when the part–whole or membership relation, scale, and horizon are stated. A dependency between the project
-system-of-interest and builder arrangement, a provider relation, or a platform service is non-holonic unless
-another relation establishes otherwise. Build-the-builder Work
-that precedes testing of the project system-of-interest is temporal Work order, not a level.
+The product and a builder can each have constructive parts. Family membership identifies which products share a family rule. It does not show that they constitute one larger System. A local change can affect the functioning of a containing System, apply across variants through their common design, or shift work to an external provider. Establish the particular connection used in the investment argument. A builder may supply the product without being part of it. Build-the-builder Work may precede a test without being a constituent of that test.
 
 ### SYSE.23:2 - Problem
 
@@ -178,14 +168,11 @@ basis. Record the bounded choice. If Agents later carry out an authorized change
    conditions. For a joint arrangement, state participants and relations. Keep causal contribution separate
    from co-occurrence, sequence, and correspondence. Do not compare claims that use different subjects, change
    families, scales, or horizons without a declared comparison relation.
-4. **Recover three different structures.** For each view, state its `EntityOfConcern`, relation type, scale,
-   horizon, and decision use.
-   - In the **holonic or membership view**, identify constructive parts and wholes or actual family members.
-     Record simultaneous cross-level conflicts when a local change improves one level while burdening another.
+4. **Identify the structures that could change the investment.** For each needed view, state its `EntityOfConcern`, relation, scale, horizon and decision use.
+   - For a **part–whole question**, identify the product or builder, its relevant parts and the interactions that change the investment. For a **family question**, establish membership and the variation the family admits. Several members may reuse one design without being parts of one System. At each needed extent, ask whether the same reported local effort or capability could accompany different work or a different supported result for the whole. Retain that distinction in the model, or show why the same decision still follows.
    - In the **system-of-interest–builder relation view**, identify the direct dependencies, correspondences,
      provider, service, interface, or enabling relations used by this decision. Do not infer part–whole from dependence.
-   - In the **Work view**, identify first–then, overlap, concurrency, and recurrence among Work occurrences. Do
-     not infer a level from earlier Work.
+   - In the **Method and Work views**, identify operations that must belong to the change Method, results it can receive from outside and the performances that actually made up a particular change. Record order, overlap, recurrence and resource conflicts where they matter. Suppose release needs a qualified calibration result. An accepted supplier certificate can make a local bench dispensable. An order to calibrate the particular unit in the project's acceptance test requires that performance and suitable means. Both plans can have calibration before release.
    Leave a view unused when it cannot affect this decision.
 5. **Separate current facts from possible-future specifications.** For every proposed change—for example, a
    module boundary, interface, product-family rule, fixture, test service, automation, Method change, or provider
@@ -396,9 +383,9 @@ content only for views used in this decision.
 | --- | --- |
 | decision boundary | Project system-of-interest when it already exists, or the intended-system claim when it does not; any System family with its membership and effectivity basis; configurations, expected change family, use, environment, affected Systems, horizon, scale, protected characteristics, resources, `DecisionSubject`, chooser granularity, authority, and receiving decision. |
 | current claim inventory | Claim kind; identified subject; architecture bearer and selected structure, capability holder and target Work, change-Work occurrence and its result/resource coordinates, joint-arrangement participants and relations, or the link between a changed structure or capability and an attributed outcome, with its mechanism and the comparison or intervention that supports the attribution; scale, window, evidence, uncertainty, and material limits on use. |
-| holonic or membership view | `EntityOfConcern`; obtaining part–whole or actual-member relations; decision-bearing levels; scale and horizon; simultaneous cross-level characteristic conflicts. |
+| composition and family membership | The constituent parts and interactions relevant to each System or Work whole. Separately, the membership and variation rules covering the family. State which local or shared consequence changes the investment and how it follows across the specified range. |
 | system-of-interest–builder relation view | `EntityOfConcern`; selected structures of the project system-of-interest and builder arrangement; the direct dependency, correspondence, provider, service, interface, or enabling relations used by this decision; consequence, moved burden, evidence, uncertainty, and any causal claim that lacks support. |
-| Work view | `EntityOfConcern`; Work occurrences, performing Agents, enacted Methods, first–then, overlap, recurrence, required order, and separately obtaining assignment and authority. |
+| Method and Work views | Required constituent operations or results supplied externally; actual performances belonging to this change, performing Agents and enacted Methods; any required order, overlap, recurrence, assignment and authority. |
 | possible-future specifications | Proposed selected structures and mechanisms, expected characteristic changes, required realization and evaluation Work, assumptions, and failure conditions. |
 | alternatives and comparison | Incumbent and materially different changes to the project system-of-interest, builder arrangement, or both; current and candidate configurations; result and resource vectors; guardrails; interactions; uncertainty; reversibility; future-option effects; and displaced burdens. |
 | investment `ChoiceResult` | `DecisionSubject` and granularity; stable `OptionSet`; shared comparison basis; `ChoiceRule`; probe budget, cost, and value when relevant; choose, tie-set, reject, probe, or reroute result; why the `ChoiceRule` permits this result now; protected losses; budget; implementation request if any; and overturn conditions. |
@@ -600,11 +587,11 @@ Apply all ten conditions, within the scope each one states.
 
 | ID | A conforming use... |
 | --- | --- |
-| `CC-SYSE23-1` | names one expected change family, project system-of-interest when it already exists or intended-system claim when it does not, configurations, use, environment, affected Systems, horizon, scale, protected characteristics, resources, `DecisionSubject`, chooser granularity, and receiving decision. |
+| `CC-SYSE23-1` | names the expected change or range of change families covered by the investment decision, project system-of-interest when it already exists or intended-system claim when it does not, configurations, use, environment, affected Systems, horizon, scale, protected characteristics, resources, `DecisionSubject`, chooser granularity, and receiving decision. |
 | `CC-SYSE23-2` | classifies each relied-on claim as an architecture characteristic, holder capability, change-Work result/resource, joint-arrangement claim, or causal/contribution claim before naming its subject. |
 | `CC-SYSE23-3` | gives each claim its required subject, scale, window, constraints, evidence, uncertainty, and material limits on use; one description or common word does not merge them. |
 | `CC-SYSE23-4` | distinguishes current obtaining architecture relations and selected structures from possible-future architecture specifications. |
-| `CC-SYSE23-5` | recovers part–whole or membership levels and simultaneous cross-level conflicts when they matter; keeps them distinct from dependencies between the project system-of-interest and builder arrangement and from Work order or overlap. |
+| `CC-SYSE23-5` | establishes the consequential parts, membership, cross-scale and builder relations and the operations or external results a change requires. A claim about completed work identifies which performances belonged to it. Sequence establishes order. |
 | `CC-SYSE23-6` | states a supported dependency, correspondence, provider, service, interface, or enabling relation between the project system-of-interest and builder arrangement that changes option reachability, cost, assurance, rollback, or another decision coordinate; causal contribution has separate support. |
 | `CC-SYSE23-7` | compares the incumbent and materially different changes to the project system-of-interest, builder arrangement, or both relative to one current arrangement, preserving result and resource vectors and guardrails. |
 | `CC-SYSE23-8` | gives AI, robot, person, team, supplier, or organization Agents only the Work and authority supported for the named scope and window. |
@@ -647,8 +634,7 @@ evidence, and consequences for named affected Systems. Use those relations to de
 or change a selected structure for that family of future changes.
 
 The pattern keeps builder Work separate from Work on the project system-of-interest and retains genuine levels.
-It can use a constructive part–whole view of the project system-of-interest or a builder System, a family-
-membership view, a non-holonic system-of-interest–builder relation view, and a Work-order or overlap view because these answer different concerns. Each view
+It can use a constructive part–whole view of either System, a family-membership view, a builder-dependency view, the composition of a Method, and the composition and timing of the Work because these answer different concerns. Each view
 states its `EntityOfConcern` and relations. Correspondences and contribution claims among views need their own
 basis.
 

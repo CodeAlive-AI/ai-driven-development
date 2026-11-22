@@ -108,9 +108,13 @@ A Method step requiring autonomy **MUST** name the required local kind and `requ
 * the actual authorizer/override-authority System and assignment, the applicable prospective incompatibility result, and the independent authority covering this action;
 * applicable ClaimScope, qualification/accounting windows, remaining budget and every required guard.
 
+For an action drawing on a shared limit, establish what is still available to commit in that accounting window. Include consumption already recorded and outstanding permissions or other commitments that could draw on the same allowance together. Apply the policy's units and overlap rule. Enforceably exclusive alternatives may share a reservation. One performance that genuinely fulfils two obligations incurs its actual charge once.
+
 A known prohibited allocation blocks the action before performance. Keep every required check present with its source outcome, including missing information, `unknown` or `notRun`, then apply the mapping in the applicable A.21 profile. A required missing or unrun result may map only to `degrade` or `block` under an explicit rule; an unknown result retains its uncertainty and the policy-qualified consequence. Any accepted uncertainty must name its subject, tolerance, permitted bounded action, consequence and recheck/expiry condition.
 
 Reserve `abstain` for a gate that makes no decision and states the remaining decision route. Aggregate only after these mappings are known; a pass permits only the bounded action under the checked conditions.
+
+When one token remains and two distinct proposed actions would each consume it, the gate may grant one unconditional permission and reserve that token. It can also serialize commitments or make each permission explicitly conditional on an enforceable final check that secures the token before use. A later check can settle which conditional action may start. Two unconditional promises already made still have to be honoured or renegotiated. Where the policy permits a quantified risk, compare its supported probability or bound with the stated tolerance. A hard cap still governs every permitted joint use.
 
 Resubmitting the same action changes no action identity. Rescheduling reopens window-sensitive permission even when the action-continuation rule preserves a continuing action. Work is admitted separately from actual performance history under A.15.1.
 
@@ -133,6 +137,8 @@ AutonomyLedgerEntry {
 ```
 
 Existing budget and performance records may supply this declaration and ledger when they retain the required meanings, identities and references. A second accounting store is unnecessary in that case. The ledger is evidence about actual Work. When prior permission is relied on, cite its exact result and the policy-supported match from this performance to the previously bounded action; a shared request label is insufficient. The Work, its performer System, its A.2.1 assignment, and the `performedUnderAssignment` attribution remain separately recoverable.
+
+When prior permission reserved an amount, match actual consumption to that reservation and account for any unused balance under the policy. A reservation can affect the next permission before any Work has taken place.
 
 For reporting, use **Γ_work** (B.1.6) for the recorded resource values under the applicable accounting and overlap policy, and **Γ_time** (B.1.4) for the recovered temporal relations among the Work occurrences.
 
@@ -158,6 +164,8 @@ When a budget depletes — no tokens remain, an envelope is exceeded, or a cap i
 * resume ordinary continuation only after an admitted System performs **ResumeAutonomy** under its exact override-authority assignment, the A.2.7 predicate check over both actual assignments passes, the independent authority relation is current, and the ordinary guards pass.
 
 If the applicable policy permits an exception, recover the condition for that exception, the bounded action it permits, the current authority and every remaining guard. Apply S2 to that action and retain the policy’s accounting and recheck conditions.
+
+A fully reserved allowance can block a new unconditional permission while the ledger still shows unconsumed tokens. Use the policy's release or expiry rule for the reservation and check the resulting availability. Apply the depletion procedure when its defined trigger occurs.
 
 For example, a service policy may permit a qualified security fix while its exhausted error budget still blocks ordinary feature releases. Missing exception authority or a failed remaining safety condition leaves that action blocked. Permission for the exception does not resume ordinary continuation.
 
@@ -214,8 +222,8 @@ The declaration's `decision_tokens=3/day` and `error-budget burn <= 2%/day` rema
 | ID            | Requirement |
 | ------------- | ----------- |
 | **E.16-CC-1** | Each autonomy claim cites a named/versioned budget with claim, consumer kind, situation, policy, scope/window, limits, override rule and exact A.2.7 species. Prospective budgets may omit actions/assignments; action-bound permission resolves the proposed action and real allocation/authority; enactment-bound adds independently admitted Work. |
-| **E.16-CC-2** | Green-Gate decides the A.21 prospective work-entry claim and bounded action, resolving its identity/continuation, real holder/assignment/state, authority, scope/window, remaining budget, incompatibility and guards. Changed permission-relevant windows require recheck; request respelling does not create another action. |
-| **E.16-CC-3** | Work admitted under autonomy **MUST** have an `AutonomyLedgerEntry` that identifies the Work, performer System, assignment, budget edition, deltas, and references to the guard check-application results. |
+| **E.16-CC-2** | Green-Gate resolves the prospective action and its continuation, actual holders, assignments, required state, authority, scope, window, incompatibility and guards. For a shared limit, check the proposed commitment together with outstanding commitments that can draw on it under the policy. Recheck permission-relevant window changes. A new request identifier can still name the same action. |
+| **E.16-CC-3** | Work admitted under autonomy **MUST** have an `AutonomyLedgerEntry` identifying the Work, performer System, assignment, budget edition, actual deltas and guard check-application results. Reconcile any reservation with the charge for that Work so the same consumption is counted once. |
 | **E.16-CC-4** | A proposed override passes its applicable A.2.7 species and independent authority check before performance. An existing target Work is distinct from that proposal. Only a performed, A.15.1-admitted override is recorded as overrideWork with the applicable delta and policy-supported match to prior permission. |
 | **E.16-CC-5** | Depletion **MUST** block ordinary autonomy-gated continuation until `ResumeAutonomy` passes the actual-assignment separation-of-duties check, independent authority check, and ordinary guards. A policy-permitted exception requires its exact bounded-action condition, current authority and remaining guards under S2; it does not resume other actions. |
 | **E.16-CC-6** | A UTS autonomy row carries the budget edition/state, guard policy, override protocol, scope/window, action/allocation refs when action-bound and actual Work refs when enactment-bound. |
@@ -265,7 +273,7 @@ At comparable operational effort, the selected line wins only when an action-sen
 
 1. **Declare the boundary:** name the autonomy claim, consumer local kind, working situation, policy, ClaimScope, window, budget, override-authority kind, and A.2.7 incompatibility relation.
 2. **Identify the proposed action:** keep an unscheduled budget prospective; use action-bound for a scheduled action, its work-entry claim, real assignments/holders and independent authority. Apply the declared action identity and continuation rule.
-3. **Gate permission to start:** apply the appropriate prospective allocation test, budget and guards to the bounded action. Recheck permission-relevant changes. A pass is not performed Work.
+3. **Gate permission to start.** Check the bounded action against the prospective allocation, guards and budget still available after overlapping commitments. Recheck permission-relevant changes and state any condition that must still hold before use.
 4. **Record actual Work:** after independent A.15.1 admission, emit the Work-anchored ledger entry, attribution and actual delta; relate it to prior permission through the policy-supported action match.
 5. **Check override separately:** distinguish the existing target Work from the proposed override; apply the selected actual-Work or prospective-action species to the real assignments and applicable window, and independently test authority before performance.
 6. **Publish what users need:** expose the budget edition, binding state, policy, override protocol, scope, and window in the UTS row.

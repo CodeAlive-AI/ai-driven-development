@@ -6,7 +6,7 @@
 
 ### SYSE.35:1 - Problem frame
 
-Use this pattern when a software change can reach a bounded population before wider use, and observations from that population can change the next exposure decision. Start with the deployed candidate and its deployment-test result from SYSE.41 or a current equivalent, not merely a package in storage.
+Use this pattern to design or evaluate bounded exposure of a software change. Start with the user task, the effects the exposure must limit and the evidence needed for the next decision. For a proposed design, identify the candidate and the deployment conditions it will require. Before exposing users, establish the actual deployed configuration and applicable test result through SYSE.41 or an equivalent source.
 
 The first result is an exposure-and-evaluation arrangement: the affected task, comparison, bounded population, observations, decision conditions and qualified recovery action. Once observations exist, it yields a bounded proceed, stop or inconclusive result. The release holder decides whether to authorize exposure and whether the evidence is sufficient for the proposed next step.
 
@@ -31,7 +31,7 @@ A comparison is misleading when candidate and control differ in workload, config
 
 #### SYSE.35:4.1 - Recover the candidate, task and permission
 
-Identify the observed artifact/configuration and the interval for which its deployment result holds. Confirm the dependencies and data state required for the intended exposure. For a claim about a user task, use deployment-test or other evidence that covers the task itself.
+For the exposure design, specify how to establish the deployed artifact, effective configuration, data state and dependencies needed for the intended use. Before actual exposure, establish those conditions and the interval the evidence covers. For a claim about a user task, use a deployment test or other evidence that covers the task itself.
 
 Name the service and users whose experience is at issue. Apply SYSE.36 to that subject and task population. A platform deployment-path objective and an application-use objective are separate even if the same dashboard displays both.
 
@@ -39,7 +39,7 @@ Obtain the relevant behavior meaning, reliability objective where applicable and
 
 #### SYSE.35:4.2 - Choose the comparison and exposure unit
 
-Choose a population or unit that can receive the candidate without invalidating the comparison: for example, a supported user cohort or a bounded set of work items. Identify the comparison basis and explain why its observations answer the same outcome question. For concurrent exposure, identify the control population.
+Choose an exposure unit that preserves the task and the effects at issue, such as a whole session or a batch. For an absolute stop condition, establish whether the condition holds in the exposed population. For a claim about the candidate’s effect, establish a suitable comparison, including the control population when using a concurrent control. State which decision each observation can support.
 
 Account for task mix, resource conditions, data, time variation and other changes. Where requests from one task can cross candidate and control, preserve enough attribution to understand the result. A shared database or dependency can transmit the candidate's effects to the control; check whether the separation needed for this comparison holds.
 
@@ -123,7 +123,7 @@ Release pressure can turn every neutral signal into permission to proceed. A con
 
 ### SYSE.35:7 - Conformance Checklist
 
-- The deployed candidate and its bounded deployment result are available.
+- A proposed exposure identifies its deployment prerequisites. An actual exposure has a qualified deployed subject and applicable permission.
 - Subject, users, task and acceptance meaning are distinct from platform-delivery success.
 - The comparison uses relevant, attributable observations sufficient for the conclusion claimed, or reports which observations or attribution are missing and returns an inconclusive result.
 - Proceed, stop and inconclusive conditions have different consequences.

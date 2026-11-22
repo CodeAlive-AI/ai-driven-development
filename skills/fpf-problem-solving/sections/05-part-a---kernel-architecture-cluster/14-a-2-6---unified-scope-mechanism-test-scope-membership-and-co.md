@@ -7,7 +7,7 @@
 
 **Use this pattern when** a receiving action needs to decide whether a claim, capability, or publication use covers one combination of standards, environment, local sense, platform, cohort, or time selectors.
 
-**First useful move.** Name the claim, its `U.ClaimScope`, and the target `U.ContextSlice`; evaluate membership. Stop on `false`. On `unknown`, obtain the missing evaluation input, narrow the attempted use, or abstain. Add a result episteme or table only when the receiving use needs one. If exact local senses must be translated, follow §7.5: name the obtaining F.9 Bridge and separate affirmative C.2.1 claim for this translation, then establish the A.10 evidence basis and applicable reliance condition before using the translated scope.
+**First useful move.** Identify what must cover the target `U.ContextSlice`. Use `U.ClaimScope` for a claim, `U.WorkScope` for the work conditions covered by a qualified ability claim, and `U.PublicationScope` for use of a publication. Test the slice against the selected scope. A `false` result rules out relying on that coverage. On `unknown`, obtain the missing input, use the grounds available for a narrower conclusion, or leave the membership question open. Add a result episteme or table only when the receiving use needs one. If exact local senses must be translated, follow §7.5: name the obtaining F.9 Bridge and separate affirmative C.2.1 claim for this translation, then establish the A.10 evidence basis and applicable reliance condition before using the translated scope.
 
 For example, a workshop report supports a claim about checks made with a specified gauge, drawing revision and inspection period. Take the proposed job's values for these selectors as one slice and ask whether that slice is in the report's claim scope. The stool identified on the job card is the object being inspected. It can belong to the furniture kind used by the drawing, irrespective of whether this report covers the inspection. Two accepted checking methods might both work under the proposed conditions, or neither might work. A method can also work on jobs represented by several slices. Establish applicability from each method's rule, choose using the job's requirements when a choice is needed, then establish separately which method the technician used. Even a scope containing just one slice represents coverage. Its membership test does not perform any of these selections.
 
@@ -25,6 +25,8 @@ For example, a workshop report supports a claim about checks made with a specifi
 * For publication views or forms, the only **scope type** is **`U.PublicationScope`**.
 * The abstract architectural notion is **`U.Scope`** — a durable scope value identified extensionally through one exact `ContextSliceSet` value under the effective reference scheme. Intersection, SpanUnion, translation, widening, and narrowing operate on those extensions; refit changes an expression without changing the extension. `U.Scope` is **not** a `U.Characteristic` and MUST NOT appear in any `CharacteristicSpace`.
 
+In “every team signed”, the teams are the domain of the quantifier. Which teams signed is part of the content of the claim. In USM, a `U.ClaimScope` specifies the context slices where that claim applies. A single slice may include a claim about many teams. Checking that a slice belongs to the scope leaves the signatures to be established. To interpret “every” in an utterance, use C.39.QR:4.1.1.
+
 Use source terms such as *applicability*, *envelope*, *generality*, and *capability envelope* with their domain meanings. When they designate an FPF scope value, identify its kind through the names above.
 
 **Cross‑references.**
@@ -37,7 +39,7 @@ Use source terms such as *applicability*, *envelope*, *generality*, and *capabil
 
 This pattern gives practitioners one question: *does this slice belong to the scope needed by this use?* It applies first to claim scope and reuses the same value algebra for work and publication scopes.
 
-The claim-bearing episteme, capability, or publication object designates or uses an exact `U.ClaimScope`, `U.WorkScope`, or `U.PublicationScope`. The membership predicate, evaluation work, result episteme, gate, and evidence claim also remain separate.
+A claim-bearing episteme designates a `U.ClaimScope`. A qualified claim about a holder’s ability designates a `U.WorkScope`. A publication view or form can designate a `U.PublicationScope`. The membership predicate, evaluation work, result episteme, gate, and evidence claim also remain separate.
 
 With USM, a practitioner can:
 
@@ -297,18 +299,11 @@ The same scope may participate in differently selected relation occurrences or b
 
 **Subject and declared basis.** A qualified A.2.2 ability claim about an independently identified holder System designates its `U.WorkScope`. This is the set-valued work-condition basis of that claim, not a scope carried by a separate capability individual.
 
-**Meaning.** `U.WorkScope` is the set of `U.ContextSlice` values under which a capability's deliverability claim may be evaluated. Work-measure targets and qualification windows are checked separately at use time; they are not members or identity fields of the scope.
+**Meaning.** `U.WorkScope` is the set of `U.ContextSlice` values in which the holder's deliverability claim may be evaluated. Membership establishes that the claim covers these work conditions. Whether the holder meets the requested criterion there and whether its grounds are usable for this decision are separate questions.
 
-**Expression.** The capability declaration designates an exact `U.WorkScope` expressed only as conditions over `U.ContextSlice`: environment, versioned standards or platforms, resource regimes, exact local senses when current, and `gammaTime` only when time changes membership. Quantitative deliverables and qualification windows are not part of the scope value:
+**Expression.** Express Work scope as conditions over `U.ContextSlice`: environment, versioned standards or platforms, resource regimes, exact local senses when current, and `gammaTime` when time changes membership. A target for the delivered result belongs to WG‑2. A limit on the age of supporting evidence belongs to WG‑3.
 
-* Declare targets as **work-measure target sets** (e.g., latency <= L, throughput >= T, tolerance <= epsilon) bound in guards (WG‑2).
-* Declare inspection/recertification policies as **qualification-window policies** bound in guards (WG‑3).
-
-The use‑time admission requires **all** of: `WorkScope covers JobSlice` **AND** `WorkMeasures satisfied` **AND** `qualificationWindowHolds(holderAbilityClaim, qualificationWindowPolicy, evaluationTime)`.
-
-Here `holderAbilityClaim` supplies the identified holder, claimed work conditions and bounds, and the declared support basis to which the qualification policy applies. The policy evaluates reliance at the stated time; its failure does not itself prove a loss of actual ability.
-
-**Method–Work gating.** A Work step’s guard MUST check that the target slice is **covered** by the capability’s Work scope **and** that required measures and qualification windows are satisfied.
+**Method–Work gating.** For the proposed `JobSlice`, establish scope coverage, compare the holder's supported performance with the receiving criterion and establish the grounds for relying on the claim at the time of decision. A verified ability to produce the named result can meet a qualitative requirement. Apply numerical bounds or a qualification interval when the receiving rule calls for them. If the decision covers several performances, coverage of each slice licenses those individual comparisons. A.2.2:3 establishes whether the holders and their means can supply the promised results together.
 
 **Composition and Delta-moves.** Work scope uses the same algebra as Claim scope (intersection / `spanUnion` / `translate` / `widen` / `narrow` / `refit`). Section 7.5 selects `translate` only for exact local-sense translation through an obtaining F.9 Bridge plus the separate affirmative C.2.1 claim and its current reliance branch.
 
@@ -316,10 +311,10 @@ Here `holderAbilityClaim` supplies the identified holder, claimed work condition
 
 **Required guard facets (capabilities).**
 
-* **Work-measure target set (mandatory).** A set of measurable targets with units and tolerated ranges, evaluated on the JobSlice.
-* **Qualification-window policy (mandatory for operational use).** A time policy stating when the capability is considered qualified; evaluated at the exact evaluation time selected by the receiving guard, not copied into `U.WorkScope`.
+* **Performance criterion (WG‑2).** Identify the required result, grade or measure and what would satisfy it on this slice. For a quantitative target give its units, direction and tolerated bounds.
+* **Current qualification for operational reliance (WG‑3).** Establish why the support for this holder, configuration and use still applies. Apply an inspection, calibration or recertification window at the specified time when the governing policy sets one.
 
-These facets are **separate** from `U.WorkScope` and belong to the evidence and reliance conditions. They MUST be referenced in Method–Work guards (see §10.3 WG‑2/WG‑3); B.3 applies when an actual named assurance claim is current.
+These guard conditions accompany the scope membership test. B.3 applies when an actual named assurance claim is current.
 
 #### A.2.6:6.5 - `U.PublicationScope` — scope of a publication view or publication form
 **Carrier.** A publication view or form is rendered on a carrier; the carrier is a separate object.
@@ -521,18 +516,20 @@ WorkScope(holderAbilityClaim) covers JobSlice
 ```
 
 **WG‑2 - work-measure target set satisfied** (mandatory for deliverables).
-Guards MUST compare the claimed attained bounds with the quantitative targets required for the JobSlice:
+Compare the holder's supported performance with the result required on the JobSlice. For a specified number, rate or tolerance, compare compatible measures including the uncertainty that could change the decision. For a named result or grade, apply its success predicate.
 
 ```
-SLO and target measures satisfied (latency ≤ L, throughput ≥ T, tolerance ≤ ε, … )
+holder performance on JobSlice satisfies the receiving criterion
 ```
 
-**WG‑3 - qualification-window policy holds** (mandatory for operational use).
-Operational guards MUST assert that the exact qualification-window predicate (qualification, inspection, or recertification) holds at the receiving guard's exact evaluation time:
+**WG‑3 - qualification for current reliance** (mandatory for operational use).
+Establish whether the grounds for the claim apply at the receiving decision time and to this holder, configuration and work. A governing time window has its own predicate:
 
 ```
 qualificationWindowHolds(holderAbilityClaim, qualificationWindowPolicy, evaluationTime) = true
 ```
+
+Where the rule relies on an unchanged configuration or a still-applicable verification, establish that condition. A date limit is needed when the rule makes age or expiry relevant.
 
 **WG-4 - Translation branch for capability use.**
 
@@ -541,7 +538,7 @@ Translate `U.WorkScope` only when its condition predicates use exact local sense
 Observed mapping loss is evidence about the use claim, and permitted loss is its tolerance. If the claim's rule and tolerance permit translation only for part of the source Work scope, identify that part and return its target image.
 
 **WG‑5 - Δ(WorkScope).**
-When widening Work scope (new operating ranges/platforms), the guard MUST require evidence at the new slices (measures + qualification windows). A membership-preserving refit does not itself require new deliverability evidence for the unchanged slices.
+A wider Work scope admits new conditions for assessing the holder. To rely on deliverability there, establish that the available grounds cover the added conditions. An invariant or an applicable earlier qualification can cover a range at once. Obtain new evidence where the grounds run out. A membership-preserving refit retains the covered slices.
 
 #### A.2.6:10.4 - Translation guard
 
@@ -960,7 +957,7 @@ Use these conditional paraphrases with the source distinctions in §20.1.2.
 #### A.2.6:21.3 - With Work & Run (A.15)
 
 * **Work scope** delimits the exact job slices on which a capability's deliverability claim is evaluated.
-* Method–Work gates use **Work scope coverage** plus **measures** and **qualification windows**.
+* Method–Work gates establish Work scope coverage, satisfaction of the required result or measure, and qualification for this use. Apply a qualification window when the governing rule specifies one.
 
 #### A.2.6:21.4 - With exact F.9 Bridge occurrences
 
@@ -969,7 +966,7 @@ Use these conditional paraphrases with the source distinctions in §20.1.2.
 
 #### A.2.6:21.5 - With Capability governance (A.2.2)
 
-* For operational capability use, the capability declaration MUST identify **Work scope**, **measure bounds** and the applicable **qualification-window policy**; gates MUST check coverage, target satisfaction and qualification under §10.3.
+* For operational capability use, identify the holder's **Work scope**, the **required performance criterion** and the **basis for current reliance**. Apply §10.3 to coverage, target satisfaction and qualification. Use the applicable units, bounds and validity periods where specified. A.2.2:3 governs the further inference from individual fits to the work that can be supplied together.
 * Capability refits that preserve the set (unit changes) are **Refit**, not Δ(WorkScope).
 
 ### A.2.6:End

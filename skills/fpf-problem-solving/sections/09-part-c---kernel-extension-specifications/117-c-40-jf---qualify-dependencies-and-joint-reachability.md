@@ -59,7 +59,7 @@ An existing result for another holder or configuration is not automatically a re
 
 #### C.40.JF:4.3 - Test the combination, not just its ingredients
 
-Put jointly necessary conditions on one compatible basis. Recover the time intervals, resource quantities, operating and transition demands, availability restrictions, and protection limits. Do not add estimates from incompatible scenarios or treat the same resource as available twice.
+Put jointly necessary conditions on one compatible basis. Recover the time intervals, resource quantities, operating and transition demands, availability restrictions, and protection limits. Before adding the demands on one provider, establish which operations must be performed separately and which one performance can supply to several recipients. Count shared work once and each separate demand in the time window in which it must be met. If sharing is undecided and would change feasibility, keep the two outcomes open.
 
 Ask which conditions compete, complement, substitute for, or interfere with one another. Inspect common causes and shared suppliers, thresholds, congestion, delays, continuing obligations, and evidence dependencies where they can change the result. Two claims derived from the same unqualified assumption do not independently support the combination.
 
@@ -90,9 +90,9 @@ Write the result at the smallest affected scope.
 
 “Conditional” is useful only when the condition changes the result. State what a positive and a negative answer would do. Do not retain a known-infeasible direction as merely awaiting more evidence, or call an unanswered question a negative result.
 
-An ordinary return can be two sentences:
+A short answer may suffice.
 
-> Each support direction can operate alone during the eight-week inquiry, but both require the same engineer for two hours each week and only two hours are available. The joint direction is ruled out under the no-overtime protection; retain the separate candidates, and qualify a shared-support configuration only if its combined demand could change that result.
+> The two departments each need two hours of the same engineer's time every week. For this inquiry the engineer must review each department's confidential material separately. Two hours a week are available. Either review fits. Together they need four hours, so they cannot both be delivered in the eight weeks while urgent operating cover is protected.
 
 This return need not become a large dependency register. Expand it when several recipients, delayed reuse, disagreement, or consequence makes the basis hard to recover.
 
@@ -110,7 +110,7 @@ Reopen only the affected claim when its subject, starting configuration, use, ho
 
 Consider a constructed engineering-organization case. Two departments want better acceptance preparation during an eight-week period. The current arrangement is manual review. Candidate A supports one department with a qualified reviewer; candidate B supports the other with the same specialist. The following are stipulated case premises, not reported field evidence.
 
-The relevant practice has qualified each direction separately for its own use. Each needs two specialist hours every week for all eight weeks. The organization has confirmed only two hours per week for this inquiry, after existing obligations. The protected condition is no overtime or loss of urgent operating cover. Setup and the remaining dependencies are covered in each separate qualification.
+The relevant practice has qualified each direction separately for its own use. Each requires the same specialist to review its own confidential work for two hours every week for all eight weeks. Each review occupies the specialist for the full two hours, and the departments' access conditions require separate reviews. The organization has confirmed only two hours per week for this inquiry, after existing obligations. The protected condition is no overtime or loss of urgent operating cover. Setup and the remaining dependencies are covered in each separate qualification.
 
 | Claim | Joint test and result |
 | --- | --- |
@@ -118,7 +118,7 @@ The relevant practice has qualified each direction separately for its own use. E
 | B alone | Its two weekly hours fit the same availability when A is absent; retain its bounded individual reachability. |
 | A and B together | Four hours are required in each overlapping week, against two available; the combination is ruled out for this horizon and protection. |
 | A followed by B | Both need eight weeks, so moving B after A does not fit the original eight-week horizon. A longer horizon would be a revised claim requiring its own availability and continuing-demand basis. |
-| Shared support for A and B | “The specialist can cover both at once” is an unqualified new configuration, not a consequence of the individual results. |
+| Shared support for A and B | A joint briefing could serve both if both needed the same guidance and joint access were permitted. Here each needs its own review. A redesigned service would have to meet both review needs within the available time and permissions. |
 
 The useful answer is not “development is impossible.” Both separate directions remain candidates. The organization can request the combined-work estimate for a shared-support configuration, examine another provider, or later consider a different horizon. Those possibilities require their own qualification. Choosing between A and B remains a separate decision.
 
@@ -142,7 +142,7 @@ If the qualified data result excludes that operational use, reject the access-de
 
 #### C.40.JF:5.4 - All pairs fit but the whole combination does not
 
-All pairs can fit while the whole set does not. In a separate arithmetic illustration, three non-shareable seven-hour activities each draw on one eighteen-hour budget. Every pair needs fourteen hours; all three need twenty-one. The deficit rules out that combination under those premises. It does not choose an optimal subset. The same issue arises when two six-hour demands compete for eight hours of shared capacity in an organization inquiry.
+All pairs can fit while the whole set does not. In a separate arithmetic illustration, three non-shareable seven-hour activities each draw on one eighteen-hour budget. Every pair needs fourteen hours; all three need twenty-one. The deficit rules out that combination under those premises. It does not choose an optimal subset. Two separate six-hour reviews likewise exceed eight available hours if each occupies the same reviewer throughout.
 
 ### C.40.JF:6 - Bias-Annotation
 

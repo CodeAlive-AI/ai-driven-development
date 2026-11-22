@@ -35,7 +35,7 @@ The difficulty is to extract a relation that can be investigated generally. Chan
 
 ### MATH.23:4 - Solution
 
-**Local mantra:** recover the construction and its use; vary a consequential ingredient; express the suggested law; seek its reason and a separating case; revise the assertion or construction; choose and begin the next useful problem.
+Start with the construction and its use. Vary an ingredient that could change the answer, formulate the suggested law and seek its mathematical grounds. A proof, a counterexample or an open question with a worthwhile next operation can each advance the inquiry.
 
 #### MATH.23:4.1 - Recover what makes the starting construction work
 
@@ -60,7 +60,7 @@ Choose an ingredient whose change could affect the wanted relation. Useful mathe
 
 Choose a variation that the starting construction gives you reason to investigate. MATH.8, MATH.11 and MATH.13 supply symmetry or invariant reasoning; MATH.18 supplies interpretations; MATH.22 develops changed assumptions. Use their fuller methods when that mathematical contribution is needed.
 
-Keep the original use visible. Requiring equal-sized groups repairs a mean-of-means formula, but leaves a request about arbitrary groups unanswered. The latter needs another construction, as in :5.2.
+Keep the original use visible. If every reading is to count equally for arbitrary group sizes, requiring equal-sized groups leaves part of that request unanswered. The construction in :5.2 repairs it. If the agreed unit is a group with equal weight, averaging the group means already answers that different request.
 
 #### MATH.23:4.3 - State the proposed law and its answer form
 
@@ -140,7 +140,7 @@ The progression has produced a general iteration formula, a closed combining ope
 
 A computation stores the arithmetic mean of each nonempty group of real numbers. The proposed combining operation takes the mean of those means. For groups [0] and [2,4], it returns (0+3)/2=1.5, while the combined group has mean 2.
 
-Inspect the missing mathematical relation. Each group mean gives a total only when its group size is known. Equal group sizes make the proposed operation work, but arbitrary groups require another construction.
+Inspect the missing mathematical relation. For a group of size n with exact arithmetic mean a, the sum is n·a. A zero mean fixes the sum at zero for every admissible size. With a nonzero mean, two possible sizes give different sums. For two nonempty groups with means a, b and sizes n, m, the pooled mean is (n·a + m·b)/(n + m). The simple mean of a and b gives the same answer when the sizes are equal or the means are equal. Relative sizes suffice for the weighted mean. To combine arbitrary lists repeatedly, retain a summary that carries their weights.
 
 Retain a sum s and count n. Combine (s,n) and (t,m) as (s+t,n+m), then return (s+t)/(n+m) when n+m>0. Associativity and commutativity follow from those of addition in both coordinates; (0,0) is an identity. Thus grouping and order of the combination do not change the final mean in real arithmetic. A finite-precision implementation needs its own error account.
 

@@ -15,7 +15,7 @@ Typical moments:
 - a project needs to know whether a relation is part-whole, dependence, representation, influence, source use, publication use, or evidence relation;
 - a selected dependency structure will be expressed with a graph, table, matrix, or another mathematical or representation lens.
 
-**First useful move.** Name the dependency relation and its participants before choosing graph notation. Use B.1.1:4.3 to distinguish common relation kinds, then follow the pattern that defines or tests the relation in question.
+**First useful move.** Start with the decision and what would make its answer differ. Identify the participants and the relation that could transmit that difference before choosing graph notation. Use B.1.1:4.3 to distinguish common relation kinds, then follow the pattern that defines or tests the relation in question.
 
 **What goes wrong if missed.** A generic "depends on" edge can conceal different relations. External influence, order, or temporal dependence may be mistaken for parthood, and mathematical checks may appear precise while the relation being checked remains unclear.
 
@@ -56,7 +56,7 @@ When these distinctions are missed:
 
 ### B.1.1:4 - Solution
 
-Use dependency structure first; use graph representation second.
+Work back from the proposed conclusion to the dependencies it uses. If one input changes, ask which result can change, by what interaction and under which conditions. Keep an external supplier in the account when its delivery matters. Follow a part into its own constituents when different internal arrangements can change the answer. For a proposed design, use the stipulated relations to reach a conditional conclusion. For a claim about the actual whole, establish which of those relations obtain. A diagram is useful when representing their organization helps the recipient decide.
 
 #### B.1.1:4.1 - Dependency Structure Frame
 
@@ -83,7 +83,7 @@ DependencyStructure@Context:
   definingOrTestingPatternRefs:
 ```
 
-This frame records independently grounded relation claims and their participants. It is not a `U.Structure`. When the receiving use needs one selected dependency structure, recover all four A.22 identity discriminators: constituents, obtaining relation occurrences, applied constraints and named selection/use frame. The record refers to that structure and to the patterns defining its relations.
+This frame records the relations established about a subject or stipulated for a proposed arrangement. In a design comparison, the stipulated dependencies can warrant a conditional result before the design is realized. The frame can also refer to a selected `U.Structure`. When the receiving use needs one selected dependency structure, recover all four A.22 identity discriminators: constituents, obtaining relation occurrences, applied constraints and named selection/use frame. The record refers to that structure and to the patterns defining its relations.
 
 #### B.1.1:4.2 - Graph Representation
 
@@ -158,7 +158,7 @@ If the graph describes a method or process view, use the patterns that define th
 
 | Check | Requirement |
 | --- | --- |
-| `CC-B1.1-1` | A dependency claim names the relation kind before graph notation is relied on. |
+| `CC-B1.1-1` | The selected participants, relations and any transfer from a representation support the stated conclusion. For a proposed arrangement the result identifies its assumptions. For an actual-dependency claim the relevant relations are established. |
 | `CC-B1.1-2` | Graph, matrix, table and diagram wording distinguishes a representation from the organization it represents. When the receiving claim selects the representation's organization as a U.Structure, identify that separate organization by the four A.22 discriminators. |
 | `CC-B1.1-3` | Part-whole edges use A.14 and C.13 discipline. |
 | `CC-B1.1-4` | Boundary-crossing, transformation, evidence, source-use, publication-use, and representation relations are not recast as parthood. |

@@ -63,13 +63,13 @@ Limit cleanup to the resources and data that belong to this environment and that
 
 #### SYSE.33:4.5 - Exercise clean creation, change and partial failure
 
-Use applicable observations from a clean creation and representative task when available. Where evidence is missing, establish the required resources, effective configuration and reachable dependencies. Create the environment from the retained description if clean creation still needs to be demonstrated, and run the representative task if its result is missing. A successful provisioning job without the task result establishes less.
+To establish readiness, use a qualified result for the intended environment, dependencies and task. A successful provisioning job establishes a task property only if the provisioning checks and their coverage entail that property. When a clean creation or a particular task performance is due, identify the qualifying execution and its result. Perform the missing work if an execution is still owed or needed to settle readiness.
 
-When the arrangement promises configuration change, change one relevant configuration and verify both the intended new condition and the continuing task. If a manual intervention was needed, either make its necessary effect part of the supported procedure or identify the still-manual dependency. Do not let a reconciler and an unrecorded repair repeatedly undo each other.
+If the provision must support changes of configuration, establish which changes it permits and which task properties must survive them. A qualified common mechanism may cover a class. Exercise a consequential transition where its effect remains open or a demonstration is due. If a manual intervention was needed, provide its effect in the supported procedure or identify the manual dependency. Coordinate subsequent reconciliation with that intervention.
 
 Use a qualified response to consequential partial creation, or exercise that failure to establish the response. A permitted retry can converge on the intended resources if its contract covers every remaining state, including concurrent changes and duplicate chargeable resources. Otherwise determine which resources were created before acting on them, or hold the affected step. Retain, reconcile or remove resources only under the applicable ownership, access and data conditions. State any remaining uncertainty about the interrupted attempt.
 
-Give the recipient the description and procedure, lifetime and support arrangements. For a usable environment, identify the instance exercised, its task and the conditions it supports. For a blocked task, identify the missing prerequisite and what has been established so far. Existing configuration and operating records can carry these facts.
+Give the recipient the description and procedure, lifetime and support arrangements. For a readiness decision, identify the environments, tasks and conditions the grounds cover. For a performed trial, identify the instance exercised and its result. For a blocked task, identify the missing prerequisite and what has been established so far. Existing configuration and operating records can carry these facts.
 
 #### SYSE.33:4.6 - Choose a fidelity boundary and make reconstruction converge
 
@@ -120,7 +120,7 @@ A familiar workstation can become an accidental standard, while a production-lik
 - Hidden setup is removed from the supported creation path or exposed as a remaining dependency.
 - Isolation and shared-state conditions preserve the meaning of independent attempts.
 - Clean creation and consequential partial failure have usable responses; relevant configuration changes are qualified when that capability is promised.
-- A real task result, not only provisioning completion, supports readiness for the stated use.
+- The evidence supports the required task under the actual or proposed environment conditions. A commissioned demonstration identifies the task performed and its result.
 - Cleanup respects resource ownership, retained information and actual permission.
 
 ### SYSE.33:8 - Common Anti-Patterns and How to Avoid Them

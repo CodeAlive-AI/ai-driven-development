@@ -69,7 +69,7 @@ Try the rule on fresh, matched cases with complete and missing inputs, an alread
 
 A service-update agent must choose between two maintenance windows, perform at most one update and observe its final state. A supplied queue model can compare their consequences. The engineer uses an illustrative allowance of 100 cost units and reserves 30 for the update, effect observation and report. The comparison uses these stipulated costs.
 
-The first proposal leaves the windows unresolved. One supported queue calculation costs at most 20 units and could separate them. Two speculative model branches would cost up to 40 units each. With 70 units available for optional work, the pair is infeasible; choosing it because it is parallel would ignore aggregate cost. The rule selects the discriminating calculation.
+The first proposal leaves the windows unresolved. One supported queue calculation costs at most 20 units and could separate them. Two speculative model branches would cost up to 40 units each. If each branch must reserve its full allowance, their reservations do not fit the 70 optional units. Without that rule, separate maxima leave the joint demand open. If the only permitted cost pairs are (40,25) and (25,40), both branches fit in 65 units. If (40,40) is possible, completing both within 70 cannot be guaranteed. The rule selects the discriminating calculation.
 
 Suppose that calculation establishes one window within the required queue limit and the other outside it, under currently supported inputs. The result is sufficient for this choice. The controller stops exploration, binds the selected window and retains the reserve for SYSE.42's actual operation and observation.
 

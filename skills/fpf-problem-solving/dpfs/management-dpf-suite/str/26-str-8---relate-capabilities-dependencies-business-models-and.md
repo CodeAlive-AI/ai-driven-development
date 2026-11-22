@@ -37,7 +37,7 @@ Start from one direction or option and its recipient, horizon and acceptance con
 
 For a commercial direction, connect the customer contribution to willingness and ability to pay, delivery cost, support and the means of sustaining the arrangement. For a public or personal direction, identify the subject’s purpose, funding and time conditions and the result the recipient needs. A business-model description is a set of claims about this logic, not proof that demand, money or capability is available.
 
-Reuse an adequate existing model or professional result. If the ways need comparison and seek different results or omit material burdens, STR.6 and FPF C.38 can restore their comparability before this dependence question proceeds.
+Reuse an adequate existing model or professional result. When ways of supplying the same strategic contribution hide costs, work or dependence that could change the choice, use STR.6 and FPF C.38 to complete the comparison. When the intended ends differ, keep them visible as separate strategic options under STR.6:4.1. Compare the ends and their consequences under that strategic question. Within each family, examine ways to its end where their feasibility or cost can change the strategic decision.
 
 When the strategic choice depends on growth in a continuing customer or participant base, use a suitable account of one period or construct it as follows.
 
@@ -49,7 +49,7 @@ Use the smallest calculation or explanation that can settle the dependence quest
 
 #### STR.8:4.2 - Trace the complete contribution and its exception
 
-Work backward from the usable result to the input, work and means needed to obtain it. Trace the consequences of a relevant exception, such as an unavailable source, failed device, late provider or a result the receiver cannot accept.
+Work backward from the usable result to the input, work and means needed to obtain it. For an arrangement promised to work through an exception, trace how the usable result is obtained, recovered or properly declined under that condition. For a single delivery under specified conditions, follow the contributions required for that delivery.
 
 Ask who supplies, interprets, checks, accepts or returns the contribution where the distinction matters to the feasibility conclusion or its grounds. Name an effective permission, access condition or support window when it can defeat the path. A diagram is useful if it makes these relations easier to understand; creating one is not the result sought.
 
@@ -102,14 +102,14 @@ Distinguish the contribution's intended performer, the means used and the result
 | Observed or supported gap | Result to obtain | What would still remain separate |
 | --- | --- | --- |
 | No adequate way of doing the work is available | A qualified method or a bounded inquiry into a possible method | Whether the intended performer can use it and under which conditions it can be provided |
-| A qualified performance account identifies a human capability gap | The appropriate learning and performance result | Organization access, assignment, time and support |
+| The strategy requires the participant to develop a capability, and the qualified performance account identifies a gap | The learning or performance change needed for this participant | Organization access, assignment, time and support |
 | The person can do the work but lacks effective access | The needed access under its owner's conditions | A decision about any separate learning need |
-| Several capable participants cannot complete the contribution together | A workable organization arrangement with its exception return | A tool installation or individual assessment alone |
+| Several capable participants cannot complete the contribution together | A workable arrangement under the promised conditions, including recovery where required | A tool installation or individual assessment alone |
 | A product or platform cannot supply a required technical result | The relevant engineering result | Customer demand, permission and organizational acceptance |
 
 Use the distinctions needed to establish the limiting condition or the appropriate response. Missing observation may leave the cause unresolved; it is not evidence that the participant lacks capability.
 
-If the strategy depends on a person's transfer from familiar to meaningfully unfamiliar work, HCD.12 supplies the bounded transfer account. Recover the earlier performance and permitted support first. If an organization’s ability to supply a complete contribution is at issue, use an appropriate existing result or use OCE.9 to examine a selected design or authorized bounded attempt, including its exception path.
+If the strategy depends on a person's transfer from familiar to meaningfully unfamiliar work, HCD.12 supplies the bounded transfer account. Recover the earlier performance and permitted support first. If an organization’s ability to supply a complete contribution is at issue, use an appropriate existing result or use OCE.9 to examine a selected design or authorized bounded attempt, including the response to any exception the arrangement must handle.
 
 #### STR.8:4.4 - Compare a smaller complete increment
 
@@ -244,7 +244,7 @@ Enterprise examples can also make formal reorganization seem inevitable. Compare
 
 ### STR.8:8 - Common Anti-Patterns and How to Avoid Them
 
-**The installed-platform conclusion.** A working tool becomes evidence of service delivery. Follow the result to acceptance and through an exception.
+**The installed-platform conclusion.** A working tool becomes evidence of service delivery. Follow the contribution to the recipient. Check its acceptance when acceptance is claimed, and its recovery when the promise includes that condition.
 
 **Training for an access problem.** A competent person is sent to another course. Establish which condition actually prevents performance.
 

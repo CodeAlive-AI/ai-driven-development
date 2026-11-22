@@ -33,7 +33,7 @@ There is a second loss to check: even a mathematically sound quotient may discar
 
 #### MATH.2:4.1 - Specify the carrier, operations and receiving question
 
-Name the set `A` of objects and the operations to retain. An n-ary total operation `f` maps every tuple in `A^n` to an element of `A`. A partial operation has a stated domain `D_f⊆A^n`.
+Recover which source objects the work treats as units and which subsequent joins or queries they must support. Joining disjoint lists, uniting overlapping sets and composing consecutive actions can require different identifications even when the local totals match. Name the set `A` of objects and the operations to retain. An n-ary total operation `f` maps every tuple in `A^n` to an element of `A`. A partial operation has a stated domain `D_f⊆A^n`.
 
 When an operation takes inputs from different sets or returns a result in another set, choose an equivalence relation on each participating set. Compare corresponding inputs under their sets' relations and the resulting outputs under the output set's relation. A transition on states and concatenation of paths are different operations; choose the one used by the proposed identification.
 
@@ -80,6 +80,8 @@ Preserve a representative or a way to construct one when later work needs an ind
 #### MATH.2:4.5 - Check which answers can be recovered and use the result
 
 A value `q(a)` can be recovered from `[a]` when it is constant on that class: `a~b ⇒ q(a)=q(b)`. Then define `q_bar([a])=q(a)`. If this fails, return to the original objects, retain more information, or return the range of possibilities when that answers the question.
+
+The recipient may ask for one permissible action. Find an action allowed for every object in the class when a fixed choice is required. Different exact values can permit the same action. If a choice may depend on further information, group the cases by what the decision maker can distinguish before acting.
 
 Use the quotient for the declared operations and answers. A new operation or query can require a finer relation. The old quotient retains its earlier use; revise the part that the new question distinguishes.
 
@@ -142,12 +144,12 @@ Compression can also look like improvement simply because there are fewer classe
 
 ### MATH.2:7 - Conformance Checklist
 
-- Are the carrier, retained operations and receiving query identifiable?
+- Are the carrier, the receiving query and the operations that must remain available on its classes grounded in the intended use? For an answer on a single supplied class, can the requested conclusion already be obtained there?
 - Does the relation used to form classes satisfy equivalence, rather than only resemblance or proximity?
 - Do equivalent input tuples give equivalent outputs for every operation claimed on the quotient?
 - For each retained partial operation, is availability also independent of the representative?
 - Does the quotient definition return one class without requiring an unstated representative choice?
-- Is the requested answer constant on the relevant classes, or is the lost information explicitly retained or returned as possibilities?
+- Is the requested value constant on each relevant class, or can an action permitted across that class already settle the question? Where required distinctions were lost, is there enough information to restore them or to return the requested range?
 - Has a changed operation or query been checked at the condition it changes?
 
 A counterexample closes a failed proposed identification. It does not require a completed replacement quotient before it can be useful.

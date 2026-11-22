@@ -8,7 +8,7 @@
 
 **Use this when** computations that work separately must run together, but shared state, communication or scheduling can change their results. You need to construct their interaction, repair a failing interleaving, or replace a component while retaining the behavior on which the rest relies.
 
-The reader can describe each component's operations and the results expected from their combination. This method adds the shared state, communication and ordering rules needed to reason about the whole. It applies to concurrent algorithms and protocols, including computations performed by cooperating software agents. The implementation language, machine and operating environment determine which operations are available and which failures the composition must allow for.
+Start from what the recipients must observe and what may occur between their observations. If the components are given, recover their operations and interaction. When their boundaries are yours to design, try dividing the work, then let each part meet its local promise. What state, event or responsibility must they share to make the combined observation possible? Move a boundary, keep a common revision, or add an interaction where the separate results lose that relation. This applies to concurrent algorithms and protocols, including computations performed by cooperating software agents. The implementation language, machine and operating environment determine which operations are available and which failures the composition must allow for.
 
 The first useful result is a composed procedure with a trace or invariant explaining how it obtains the required observation, or a counterexample that identifies the interaction to change. A small shared-state example needs only a few explicit steps. A general guarantee over an implementation needs the corresponding memory, scheduling and failure assumptions.
 
@@ -36,7 +36,7 @@ Two correct increments can lose an update. Retrying a request can repeat its eff
 
 #### CMP.14:4.1 - Specify what the combined computation must make observable
 
-State the allowed inputs and required results. Include the observations a receiving component can make while work is in progress: returned values, shared-state reads, messages, failures or completed operations. Distinguish a request from each attempt to transmit or execute it when retries are possible.
+State the allowed inputs and required results. Include the observations a receiving component can make while work is in progress, such as returned values, shared-state reads, messages, failures or completed operations. Distinguish a request from each attempt to transmit or execute it when retries are possible. For example, two reports taken on opposite sides of a member's transfer between teams can each give the correct local roster and count that member twice across the reports. If the request is for a combined roster as recorded at one instant, choose a shared revision or another procedure that reconstructs both rosters for that instant. Reports requested as of each team's own observation can use their respective revisions. The promised use decides which histories are acceptable.
 
 Choose the required ordering. For a concurrent object, **linearizability** compares a history of calls and responses with legal sequential behavior. A finite history can contain pending calls. Append responses to any selected pending calls, then omit those still pending. Keep every originally completed operation, including its arguments and returned value. Seek a legal sequential order of the retained operations that respects every case where one operation returned before another was called. Each retained operation appears to take effect between its call and response in this extended history.
 
@@ -74,7 +74,7 @@ Construct a repair from the failed premise. Common choices have different costs:
 | Intermediate state is observed inconsistently | Serialize the affected operation, protect its critical region or publish an immutable result. | Waiting, ownership or retained copies replace the former interference. |
 | A repeated message repeats an effect | Identify the logical request and combine effect application with remembering its result. | Identifier lifetime and failure recovery must preserve the relation. |
 | Components wait in a resource cycle | Impose a shared acquisition order or another cycle-breaking protocol. | All participating acquisitions must follow the rule; starvation remains a separate question. |
-| Coordination costs more than the required consistency is worth | Change the result specification to a weaker observation the receiver can use. | Revalidate the receiving algorithm under that weaker result. |
+| The cost of the proposed coordination threatens the intended use | Determine whether a cheaper implementation can still supply the promised observation. If the observation itself must change, take the proposed change to the person entitled to revise the commission. | Establish what the receiving algorithm can conclude under the agreed result specification. |
 
 Execute the original failing trace against the repair, then inspect the transition family that caused it. This both explains the changed behavior and identifies what a more general argument must cover.
 
@@ -174,7 +174,7 @@ Sequential intuition can hide an interleaving between a read and its use. An ato
 
 ### CMP.14:7 - Conformance Checklist
 
-- The combined result includes the intermediate observations and eventual responses its user needs.
+- The combined result includes the intermediate observations and eventual responses its recipients need. Observations that must refer to one revision, request or execution retain that connection in the joint history.
 - The model states atomicity, visibility, communication and admitted environment changes where they affect the argument.
 - Initial conditions and each relevant component or environment step support the shared invariant or protocol relation.
 - A proposed repair changes the offending interaction and its general transition family.

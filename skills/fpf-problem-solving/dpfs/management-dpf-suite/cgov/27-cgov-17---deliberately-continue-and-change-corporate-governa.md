@@ -9,7 +9,7 @@ Use this pattern when corporate participants need to preserve, transmit or chang
 
 Start with the corporate contribution that must remain obtainable and the participants who need it. Recover how participants perform it, locate a consequential gap, and choose how to sustain or renew the practice.
 
-The first result can be a qualified account of the practice, a supported decision to continue it, or a proposed change. When implementation is assigned, continue through the receiving participants' use. Claims that a practice persists or improves governance need observations of those further consequences.
+The first result can be a qualified account of the practice, a supported decision to continue it, or a proposed change. When implementation is assigned, establish which change must take effect. Restoring access can be complete when the recipient can use it in time. Restoring actual participation requires evidence of the participant’s contribution. Claims that a practice persists or improves governance need observations of those further consequences.
 
 Here, governance culture concerns shared ways of working and the processes through which participants transmit, recognize, select, retain or lose them. Use an adequate available practice directly. A single person's difficulty within a stable arrangement can use the relevant development method without a wider cultural-change project.
 
@@ -41,7 +41,7 @@ Recover the applicable responsibilities, powers and information conditions. Use 
 
 #### CGOV.17:4.2 - Recover the practice that participants actually use
 
-Use available cases, explanations and observations to recover the operations and their results. Identify how participants encountered the method, which aspects they learned or obtained from others, and what they used in the receiving matter.
+Start with what the commission asks about the practice. An acknowledgement identifying the case, receiving committee and time can establish timely receipt. It can also establish the team’s escalation if it identifies the team as the sender or other grounds connect the transfer to that team. To find where escalation broke down, trace the preparation and transfer of the notice for that same case. A record of preparation in one case and receipt in another can leave both histories incomplete. For a claim about an individual’s capability, establish the work that person carried out under the help conditions in question, including their own choices where the assignment requires them.
 
 Keep the cultural claims distinct. Distribution shows that material was sent. A demonstrated receiving use can show a transferred operation. Continued use within an observed period supports a claim about that period. Selection or rejection of a method needs its own basis. C.36 supplies these distinctions.
 
@@ -71,9 +71,9 @@ C.11.DUA governs additional inquiry. Include the effort of access, confidentiali
 
 #### CGOV.17:4.5 - Carry the contribution into receiving work
 
-When implementation is assigned, make the selected support or learning available and use the method in the receiving matter. Give participants the information and participation conditions needed for that work.
+For an assignment to provide support, establish that the participants can obtain the appropriate help when they need it. For an assignment to put the practice into use, trace its use in the receiving matter. Give participants the information and participation conditions needed for that work.
 
-Observe the contribution relevant to the original difficulty. Can newcomers recover the assumption and use it in deliberation? Does an exception reach a participant able to respond? Does an eligible participant take part in the collective act?
+Observe the contribution relevant to the original difficulty. Can newcomers recover the assumption and use it in deliberation? Does an exception reach a participant able to respond? Does an eligible participant take part in the collective act? For a claim about the whole course of a matter, link the contributions to that matter. If an authenticated outcome already settles the commission, stop at that outcome.
 
 Distinguish performance with assistance from unaided performance when that difference matters. Assistance can remain part of the intended arrangement. A useful distributed practice does not require every participant to perform every specialist operation.
 
@@ -99,7 +99,7 @@ The gap concerns use of the reasoning operation. The chair arranges a demonstrat
 
 In the next board matter, the directors identify that the forecast relies on renewal of an unconfirmed customer contract. They ask for the consequence of non-renewal and use the analyst's answer in deliberation. The board makes its decision under the existing procedure.
 
-Within this constructed case, the receiving use shows the operation being performed with specialist assistance. The board retains the explanation, an authorized route to the analyst and a way to revisit the operation during later induction. Longer persistence and commercial benefit remain separate questions.
+Within this constructed case, the receiving use shows the operation being performed with specialist assistance. The board retains the explanation, an authorized route to the analyst and a way to revisit the operation during later induction. Longer persistence and commercial benefit remain separate questions. The directors could have divided the work of spotting the assumption, choosing what to ask and using the answer. To attribute the complete operation to a particular director, recover that director’s contribution.
 
 If the directors instead understood the operation but received the contract information too late, the suitable repair would concern information provision. Repeating the demonstration would leave that failure unresolved.
 
@@ -109,9 +109,9 @@ In this constructed case, a professional association distributes a revised proce
 
 In the first company, an exception reaches the audit committee through an existing authorized channel and changes the requested follow-up. In the second, the supplied rules require this type of exception to reach the audit committee. Staff complete the form but send it only to the executive whose activity is questioned. An independent reporting channel is already authorized but staff cannot access it.
 
-The immediate repair in the second company is access to the authorized channel, followed by its use. Adopting another code or repeating the form-filling lesson does not supply that access.
+In the second company the deadline for the committee to receive this exception has passed. Restore access, send the overdue exception and handle the missed deadline under the company’s rules. Restoring the channel lets staff use it for future reports. Sending this one now cannot establish timely receipt in the past.
 
-The association can describe distribution to eight companies and the observed uses in two. It cannot infer the other six companies' practice or an improvement in their performance. A company seeking local adoption still applies its own governing conditions.
+The downloads establish distribution to eight companies. The first case establishes use of an existing reporting route. Tracing the choice to the revised procedure would establish that a company had taken up an operation from it. The second company completed the form and failed to forward the exception as required. That missed deadline refutes the claim that every required exception in all eight companies reached its committee on time. Each company might still have forwarded at least one other exception successfully. The two observations leave the other six companies’ conduct open. A company seeking local adoption applies its own governing conditions.
 
 ### CGOV.17:6 - Bias-Annotation
 
@@ -122,7 +122,7 @@ Continuity can protect valuable practice or exclusionary habits. Compare whose c
 ### CGOV.17:7 - Conformance Checklist
 
 - The practice, participants, receiving work and relevant period are identified.
-- The account distinguishes available material, capability, receiving use and any stronger cultural claim.
+- Does the account establish the team result, the connection between its component operations, or a participant’s own choice, according to the commission?
 - The repair answers a consequential gap in operation or its conditions.
 - Responsibility, decision power, information access and confidentiality remain respected under their applicable basis.
 - The selected learning, support or change reaches the result the assignment requires.

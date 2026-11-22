@@ -33,7 +33,7 @@ How can the organiser make useful participation obtainable while allowing people
 
 ### CB.3:4 - Solution
 
-Establish what the person wants to do and what conditions affect it. Offer a manageable way to start. If you promise a response, provide it or tell the person what you can supply. Support a change of involvement or a return after absence. Observe the attempted use and change the obstacle or promise that the episode exposes.
+Establish what the person wants to do and what conditions affect it. Offer a manageable way to start. If you promise a response, provide it or tell the person what you can supply. Support a change of involvement or a return after absence. For an order to provide access, establish that the person can use the offered route. For a question about actual participation, follow their attempt and change any obstacle it exposes.
 
 
 
@@ -69,7 +69,7 @@ Trace an entry demand to the action it protects. A technical intervention may re
 
 Remove or reduce unnecessary effort. Put the first action near the invitation, explain unfamiliar terms with an example, avoid asking for the same information repeatedly, and let people obtain the relevant material in a usable form. Preserve requirements whose removal would make the contribution unfit or impermissible. If the organiser does not control a needed access condition, obtain a decision from its owner or return the limitation.
 
-Test the resulting path from the participant's conditions. Can they find the material, understand the first request and reach the promised help? Include the language, device, schedule, physical access or confidentiality condition that caused the difficulty. An administrator's successful demonstration is insufficient when the participant faces a different condition.
+Establish whether the path works under the participant’s conditions. Can they find the material, understand the first request and reach the promised help? Include the language, device, schedule, physical access or confidentiality condition that caused the difficulty. An existing demonstration may cover the participant’s situation if the relevant access and action are available on the same grounds. Try the participant’s own path when a remaining difference can change the answer, or a trial was commissioned.
 
 Keep a meaningful refusal available. Explain any consequence of declining a specific responsibility. In an employment or service arrangement, distinguish an existing obligation from optional community participation and obtain the relevant agreement; calling a required act voluntary does not change its terms.
 
@@ -99,7 +99,7 @@ When stepping back would leave a relied-on activity unsupported, arrange the han
 
 #### CB.3:4.6 - Close on usable participation and revise locally
 
-Observe whether the person could carry out the selected action under the offered conditions. Distinguish receiving the invitation, entering a space, obtaining help and producing a useful contribution. Ask what remains confusing or costly when that answer can improve the arrangement.
+For an available route, establish the required access, material and support. When actual participation or a trial is wanted, follow what the person did under those conditions. Distinguish receiving the invitation, entering a space, obtaining help and producing a useful contribution. Ask what remains confusing or costly when that answer can improve the arrangement.
 
 Continue a working option without requiring increased visibility. Change the conditions that defeat the selected action: clarify the request, repair access, change timing, obtain a suitable helper or revise the responsibility. Combine changes when the conditions depend on one another. Return to CB.1 when the available offer fails to serve the person's purpose. Use CB.2 for an initial exchange, CB.4 for its interaction design and CB.5 for a specific useful contribution.
 
@@ -117,7 +117,7 @@ A second repairer wants help but cannot publish the customer's material. A willi
 
 A third newcomer is experienced in diagnosis and offers to lead a discussion. The organiser establishes that the person has not facilitated a case clinic before. They prepare a small session with an experienced host, practise the clarification/advice boundary and agree which work the host will retain. Subject expertise makes a valuable contribution without proving readiness for every organising responsibility.
 
-The repaired entry is a set of relevant choices. The organiser observes whether each promised route works. Counting three public profiles would conceal the different results.
+The repaired entry is a set of relevant choices. The organiser establishes which routes are available. If they promise several people support at once, their separately usable routes must still work together with the help available. Counting three public profiles would conceal the different results.
 
 #### CB.3:5.2 - A first error can lead to another attempt
 
@@ -144,7 +144,7 @@ A workable entry or change of participation makes it possible to answer:
 - Which entry demands protect that action, and which can be removed?
 - Who will provide the promised response or help?
 - What responsibility, permission or support changes when participation changes?
-- What did the attempted use establish, and what remains unavailable?
+- What makes the chosen participation available? If the question concerns an actual attempt, what did it establish and what still prevents use?
 
 ### CB.3:8 - Common Anti-Patterns and How to Avoid Them
 

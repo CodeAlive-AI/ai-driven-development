@@ -35,7 +35,7 @@ Records can disagree about time, party, meaning or whether an action succeeded. 
 
 #### FDM.4:4.1 - Name the claimed change and prior position
 
-Identify the claimed change, party, arrangement and relevant time. Establish the previous position as far as needed to explain the effect. Use FDM.1 for a missing position and FDM.2 for a party boundary that still matters.
+Identify the claimed change, party, arrangement and relevant time. A current position can be established directly at the relevant time. To explain a change, establish its basis and the earlier position to the extent the explanation depends on it. To confirm one particular transaction or how it was carried out, establish the occurrence or actions the request identifies. Use FDM.1 for a missing position and FDM.2 for a party boundary that still matters.
 
 Distinguish a change in permission, duty, usable resources, recorded information or business outcome. For a message marked “approved,” establish what decision the message reports and who issued that approval before relying on it for another claimed result.
 
@@ -47,27 +47,33 @@ Use [FPF A.2.8][DUTY] for duties, [FPF A.2.8.PER][PER] for permissions and [FPF 
 
 #### FDM.4:4.3 - Establish what actually occurred
 
-Inspect the evidence relevant to that rule and effect. Match the parties, arrangement, amount and occurrence. Distinguish an instruction from its execution and a provider's local result from the recipient's result where those differences matter.
+Inspect the evidence relevant to that rule and effect. For a claim about a particular occurrence, match the evidence to the relevant parties, arrangement, amount and time. If the question concerns only the resulting position, use an adequate statement of that position or the effect common to all admissible histories under §4.4. Distinguish an instruction from its execution and a provider's local result from the recipient's result where those differences matter.
 
-Use the dates that matter to the question. The occurrence, effective date, posting and actual availability can differ. Evidence that the provider received an instruction can answer that question while leaving the recipient’s access to funds unresolved.
+Use the dates that matter to the question. The occurrence, effective date, posting and actual availability can differ. Evidence that the provider received an instruction can answer that question while leaving the recipient’s access to funds unresolved. A confirmation received later can establish that the position changed on an earlier day. To explain an action taken on that day, determine what its decision maker could know and what grounds they used then.
+
+For a payment run, recover what was commissioned. Acknowledgement of submission in the agreed form can finish an order to submit a batch. For a promise to settle each invoice, use the terms that determine what discharges it. A payment instruction in the payer's records and the matching credit in the recipient's records can describe stages of one transfer. Two references to an amount do not establish two settlements. Conversely, one transfer to an authorized collection agent can discharge two invoices if its amount, allocation and the agent’s receipt meet the terms of both. A reliable confirmation covering both named invoices, their amounts and discharge by the cutoff can answer the balance question directly. To explain how the payment run accomplished this, connect the relevant instructions and receipts to the rule for each discharge.
 
 If sources disagree, compare their subjects, dates and meanings. Investigate a remaining factual discrepancy when the requested conclusion needs it and the inquiry can resolve it at justifiable cost. Otherwise report the supported result and limit. Use a source for the claim it can establish.
+
+When relying on a missing entry, identify the routes to the effect in question and what each would have left in the examined records by the cutoff. Silence can settle the question when every route would have left a detectable entry. It can also settle an effect for which registration itself is indispensable, when that registration is established as absent. A bank’s instruction log may exclude an instruction there and still leave a waiver or set-off open. Other grounds can settle absence directly. If an agreement first takes effect on Monday and has no retroactive effect, it could give no discharge on the preceding Friday.
 
 #### FDM.4:4.4 - Derive the effect and remaining position
 
 Apply the rule to the established occurrence and identify any change and its effective time. For a partial payment, use the applicable allocation rule to calculate which amounts were discharged and what remains. Include other interest, fees or conditions only where the arrangement makes them relevant.
 
-A forecast can clear its modeled balance at maturity. To establish actual discharge, use evidence of the receipt or other event recognized by the terms. FDM.3:5.2 shows how a confirmed receipt updates principal and interest, and why an instruction of unknown effect leaves several states possible.
+A forecast can clear its modeled balance at maturity. To establish actual discharge, use evidence of the receipt or other event recognized by the terms, or grounds that establish the same discharge under every remaining history. The evidence and terms must admit at least one history. If they conflict, resolve the conflict or qualify the calculation. FDM.3:5.2 shows how a confirmed receipt updates principal and interest.
 
 Relate the calculation to its financial meaning. When the arithmetic is possible but the position it would establish is unclear, use [FPF B.1.5.EW][EW] to locate the missing operation. A contractual interpretation may be supplied by a qualified colleague or another adequate source. An incorrect computation calls for a computational correction.
 
-If evidence establishes that the recognized event did not occur, report that the claimed change did not arise through that event. A different waiver, payment or recognized act can still matter. If either the rule or occurrence remains unresolved, identify the missing premise and the effect that remains open.
+If evidence establishes that the recognized event did not occur, report that the claimed change did not arise through that event. A different waiver, payment or recognized act can still matter. If the route remains uncertain, return any position or bound common to the permitted histories. Identify the missing premise for a conclusion that still depends on the route.
+
+Suppose the opening debt was 105 and reliable evidence establishes that, by Friday, either a payment was received in settlement of 60 or an authorized set-off for 60 took effect. These are the only possibilities and there were no other changes. The debt is 45 either way. Whether money reached the creditor is still open. If the second possibility were a refundable deposit that did not discharge debt, the possible balances would be 45 and 105. At least 45 would still be outstanding. For an attainable minimum or maximum, justify the bound throughout and show that a permitted history reaches it. A tight bound need not be attained. For example, if all permissible rates are below 5% and some are arbitrarily close to 5%, 5% is their least upper bound even though no contract pays that rate. A threshold decision may need only a valid outer bound.
 
 Relate the records to the supported position. If an account must be corrected, use its responsible process and preserve the relevant history. For a comparison of participants’ accounts, use [ADM.4][ADM].
 
 #### FDM.4:4.5 - Return the result needed by the next user
 
-Return the supported effect, time, remaining position and material limits the user needs. If a missing rule, occurrence or necessary account correction blocks further use, identify the question and who can resolve it when that is known.
+Return the supported effect, time, remaining position and material limits the user needs. If a missing rule, occurrence or necessary account correction blocks further use, identify the question and who can resolve it when that is known. If different histories give the same answer to that user, return it and identify any distinct question about the event or the cash that remains open.
 
 FDM.3 uses the resulting state for later events. FDM.5 uses the effect when examining a participant's service result. A demonstrated financial change can be useful even when its longer-term benefit is not yet known.
 
@@ -79,7 +85,7 @@ Suppose 105 is due on day 30 and the borrower pays 60 to the lender. Evidence es
 
 A servicing report showing all 105 unpaid disagrees with the established position. Report the remaining 45 and the discrepancy. Retain the original contractual payment of 105 and the actual payment of 60 in their respective accounts.
 
-Suppose the evidence instead shows only that the borrower sent an instruction for 60. That establishes submission. It leaves the payment event and reduction to 45 unresolved. To establish the residual position, determine whether the event recognized by the terms occurred.
+Suppose the evidence instead shows only that the borrower sent an instruction for 60. That establishes submission. It leaves the payment event and reduction to 45 unresolved. If receipt is the only way the debt could have changed here, evidence of receipt or its absence can settle the residual. An adequate statement of the residual may already answer a balance inquiry while leaving the route open.
 
 In a separate case, suppose the competent parties validly modify a lender’s conditional advance obligation before funding. The supplied terms give that modification its effect. Report the changed undertaking from the effective event even though no money has yet moved.
 
@@ -103,9 +109,9 @@ When the available sources cannot establish whether the event occurred, retain t
 
 Check these criteria for the particular effect claimed.
 
-1. The affected party, prior position, claimed change and relevant time are clear.
+1. The affected party, the requested occurrence, effect or residual position and its relevant time are clear. The account establishes the prior position where the conclusion needs it.
 2. The applicable rule and its action, authority or occurrence conditions are established where required.
-3. Evidence supports the actual event at the scope claimed.
+3. Evidence and operative terms support the reported position, the event claimed or an effect established across the admissible histories. An inference from a missing entry accounts for the recognized routes and cutoff.
 4. The derived effect and any residual obligation follow the applicable terms.
 5. Records, effective relations and resource availability remain distinct where their differences matter.
 6. The result distinguishes supported change, supported non-change and unresolved effect.
@@ -134,7 +140,7 @@ A transaction log is sufficient when it already supplies adequate evidence for a
 
 For an actual financial change, apply FPF’s distinctions among duties, permissions and communicative acts. Use ADM.3 and ADM.9–10 when the case turns on effectivity, usable provision or fulfillment. These distinctions help determine what a decision, message or record can establish.
 
-In §§4.2–4.4, identify the rule, establish the recognized occurrence and derive the position. This distinguishes “60 instructed” from “60 paid” even when a local display says “complete.” Investigate further if a remaining premise matters to the requested finding or downstream use and the inquiry is worthwhile.
+In §§4.2–4.4, use the rule and evidence to establish the requested occurrence or the financial effect. When alternative histories all produce the same residual, give that residual and preserve any uncertainty about the actual route. This distinguishes “60 instructed” from “60 paid” even when a local display says “complete.” Investigate further if a remaining premise matters to the requested finding or downstream use and the inquiry is worthwhile.
 
 Actual local rules and event evidence govern an actual result. Reopen the account when either changes or when a later use requires a broader effect claim.
 

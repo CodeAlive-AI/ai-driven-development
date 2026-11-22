@@ -97,7 +97,7 @@ Recurring tensions include:
 
 ### SYSE.15:4 - Solution
 
-Choose and refresh engineering Methods from the results the project needs and evidence from representative Work.
+Choose and refresh engineering Methods from the results the project needs and from evidence that can settle the choice. This can include representative Work or a qualified argument about the required operations and resources.
 Identify Methods before comparing them, preserve every relation that matters, and return capability, provider,
 platform, or cultural questions to their own decisions.
 
@@ -114,10 +114,7 @@ the evidence and the condition that reopens the choice.
 #### SYSE.15:4.1 - Perform the Move
 
 1. **Name the engineering result and receiving decision.** State the actual or intended System selected for engineering, relevant use, configuration, conditions, horizon, account users and the recurring result whose Method is being chosen or reconsidered. For a creator, keep its product-use grounds and local acceptance identifiable.
-2. **Recover candidate Methods from Work.** Inspect representative Work, including successful, failed, and
-   difficult occurrences. For each candidate, recover the reusable action, generic participant meanings,
-   conditions, intended result, applicability limits and evidence. For each occurrence, identify the performing Agents and their
-   assignments, capabilities and authority.
+2. **Recover candidate Methods from available practice.** An engineer's account or an observed performance can reveal the operations, participants, intended result and conditions. A failure can expose a dependency missing from an otherwise successful account. Use the cases needed for the reliance claimed. For a proposed way with no previous performance, recover its construction, required capabilities and application conditions from the design. For a claim about an actual occurrence, establish who performed the work and what their assignment or authority covered where these affect reliance.
 3. **Recover candidates from sources without importing the source whole.** Inspect relevant sources—for example,
    standards, handbooks, lifecycles, model-based frameworks, AI workflows, or local traditions. Apply `A.3.1`
    before identifying a Method and `A.3.2` before relying on a MethodDescription. Keep an unresolved cue when the
@@ -135,14 +132,10 @@ the evidence and the condition that reopens the choice.
    Methods, alternatives, refinements or replacements, result-use dependencies, and compatibility only when
    the corresponding conditions hold. Do not infer any of them from a list, vertical diagram, shared source, or Work
    order.
-7. **Examine an interacting engineering slice when the choice depends on it.** Use sufficient evidence from bounded representative
-   Work in which the relevant Methods interact—for example, modeling, implementation, integration, configuration,
-   assurance and release around one change. Select new Work when a remaining interaction question warrants it. Examine the
-   decisions and System effects together with any material integration loss, rework, elapsed time, capability and
-   platform constraints, and protected characteristics.
+7. **Examine the interaction that matters.** Use observed Work, a qualified calculation or another sufficient argument for its effect on the result, integration loss, time, costs, protected characteristics and available means. Two mandatory tests that each consume the only specimen cannot both be completed on it; their stated destructive effects and the available stock suffice to exclude that plan. If the commission calls for an actual trial, identify its required performance separately. Select discretionary trials for the consequential uncertainty they can resolve.
 8. **Make the repertoire decision.** The authorized Agent records which Methods are retained now, retained as
    alternatives, replaced, excluded for this use, proposed for development, or unresolved. Explain the selected
-   disposition from the criterion and grounds, including the accepted burden or loss. For a partial repertoire, name the configurations it covers and those still awaiting a suitable Method. To claim coverage for a whole set, establish a suitable Method for each configuration. If Method choice depends on the configuration, show how the team can recognize it in time to choose. If the team can use any retained Method interchangeably, show the evidence or engineering rationale for each allowed substitution. If a retained Method
+   disposition from the criterion and grounds, including the accepted burden or loss. For a partial repertoire, name the configurations it covers and those still awaiting a suitable Method. To claim coverage for a whole set, establish a suitable Method for each configuration. If Method choice depends on the configuration, show which observable distinction the authorized team needs in time to choose. A common Method that works in every configuration still possible can suffice without identifying the exact configuration. If the team can use any retained Method interchangeably, show the evidence or engineering rationale for each allowed substitution. If a retained Method
    lacks a capable Agent, provider, platform, or assignment, record that separate gap and send it to the appropriate
    capability, provider, platform, or obtaining-arrangement decision.
 9. **State evidence, currentness, and return conditions.** Give each relied-on claim its epistemic status—
@@ -262,7 +255,7 @@ their domain changes the Work.
 
 ### SYSE.15:7 - Conformance Checklist
 
-- [ ] The System to be created or changed, recurring engineering result, receiving decision, conditions, and
+- [ ] The System to be created, changed, maintained or withdrawn from use, recurring engineering result, receiving decision, conditions, and
       protected losses are stated.
 - [ ] Every Method remains distinct from descriptions, tools, Work, performing Agents, assignments, capabilities,
       evidence, provider arrangements, and cultural relations.
@@ -271,9 +264,7 @@ their domain changes the Work.
       at comparable effort.
 - [ ] The account distinguishes the supported classifications, whole–part relations, alternatives, replacements, result uses, compatibility claims and
       Work timing relevant to this choice.
-- [ ] Evidence from representative engineering Work addresses the relevant Method interactions and their System,
-      integration, assurance, cost, time, capability and platform consequences. Further Work is selected only for
-      a remaining question that warrants it.
+- [ ] Consequential interactions among Methods have adequate evidence from engineering Work or a qualified argument applying to the required conditions. Any commissioned performance is accounted for; discretionary further Work addresses a consequential open question.
 - [ ] Missing capability, assignment, provider, platform, permission, evidence, or authority is returned to its
       own decision rather than hidden as a Method defect.
 - [ ] Project evidence and expert estimates remain distinct from visibility, declared conformance, and cultural

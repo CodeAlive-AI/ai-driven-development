@@ -10,4 +10,4 @@ The mathematical account and the subject supply different parts of the reasoning
 
 The needed preparation depends on the operation. Finite arrangements can use sets, functions and elementary counting. Probabilistic recording needs conditional probability and sums or integrals. Evolution and reduction can require differential equations. Each body states its prerequisites and works small cases. When another participant supplies the mathematics, ask for the meaning of its inputs, its conditions and the result the next part of your work can use. You can ask for that explanation in the language of your work.
 
-Begin with the [Readme](_index.md#mathematical-modeling---readme) when the useful entry is unclear. Enter a body directly when its Problem frame matches the difficulty.
+Begin with the [Readme](_index.md#mathematical-modeling---readme) when the useful entry is unclear. Enter a body directly when its operation supplies what your own inquiry still needs. Carry its conclusion back to that inquiry with the conditions on which it depends.

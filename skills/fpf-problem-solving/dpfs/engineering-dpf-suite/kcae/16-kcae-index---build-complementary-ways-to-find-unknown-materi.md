@@ -69,7 +69,7 @@ A large corpus makes complete inspection expensive. Schedule by source order, st
 
 Publish each view with its source generation, covered subset and build configuration. Define readiness per operation: an exact reader can be ready before dense indexing; a graph can support containment while semantic edges remain unqualified. KCAE.CHANGE supplies coherent switching, partial readiness and deletion handling. Decide how new or changed units enter current queries while expensive views catch up.
 
-Test complementary retrieval on cases independently authored from the working needs. Include a rare identifier, vocabulary mismatch, late exception, graph-relevant question, broad synthesis and source not represented by any summary. Measure sufficient contributions recovered within the recipient's budget, not just union size. Remove a redundant route if its maintenance and query cost earn no useful difference. Add or replace a route when a repeated consequential gap exposes a different required distinction.
+Test complementary retrieval on cases independently authored from the working needs. Choose situations that could defeat a promised use, such as a rare identifier, a late exception or a required source absent from every summary. A source inventory and inspection of an exact lookup may already settle a bounded coverage question. Measure sufficient contributions recovered within the recipient's budget, not just union size. Remove a redundant route if its maintenance and query cost earn no useful difference. Add or replace a route when a repeated consequential gap exposes a different required distinction.
 
 ### KCAE.INDEX:5 - Archetypal Grounding
 

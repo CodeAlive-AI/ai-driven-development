@@ -35,9 +35,9 @@ A single score compounds the problem when correct calculation offsets an unsuppo
 
 Identify the person, representative work, relevant configuration, permitted means, evidence window and receiving use. Describe an observable contribution. For example, the person can find an unsupported configuration claim and propose a justified continuation.
 
-Distinguish contributions whose evidence can differ, such as calculation, source selection, independent challenge, coordination or explanation. Identify any contribution the person must make before an answer-bearing cue and which sources, equipment or assistance belong to the work.
+Distinguish contributions whose evidence can differ, such as calculation, source selection, independent challenge, coordination or explanation. Identify any contribution the person must make before an answer-bearing cue and which sources, equipment or assistance belong to the work. Keep the partner if responding to that partner is the skill. For example, inspect what the partner communicated while a decision was open and how the person’s next action depended on it. One joint action can establish this contribution when the evidence distinguishes it from the partner doing all the adapting.
 
-For a prospective demand, the assessment can establish performance on the proposed task. A claim that the demand already exists needs evidence from the work where the contribution would be used.
+An assessment on a proposed task can establish performance on it. A current assignment can establish the duty to do that task. To judge how often the need arises in practice, use evidence from the relevant work and period.
 
 #### HCD.11:4.2 - Connect the claim to a task and an inference
 
@@ -99,9 +99,9 @@ Reopen only the affected claim when a new observation, changed configuration, so
 
 The following attempts by fictional Learner-L17 illustrate how to assess performance.
 
-In this constructed engineering change service, a recommendation must meet the HW3/FW8 requirement. The supplied financial assumptions give approximate NPVs of 48.9, 51.6 and 44.6 thousand for alternatives A, B and C. B has the highest NPV, but its report covers FW7. A needs a further shared-power check. C retains HW3/FW8 and uses SCHED2, with two hours of required checks per change and one hour of preparation per homogeneous batch of at most four.
+In this constructed engineering change service, a recommendation must meet the HW3/FW8 requirement. The supplied financial assumptions give approximate NPVs of 48.9, 51.6 and 44.6 thousand for alternatives A, B and C. B has the highest NPV, but its report covers FW7. A needs a further shared-power check. C retains HW3/FW8 and uses SCHED2, with two hours of required checks per change and one hour of preparation per homogeneous batch of at most four. The twelve incoming changes in this case share the required batch conditions. They may be grouped in fours.
 
-With 24 test hours available, ten changes need 20 + 3 = 23 hours and twelve need 24 + 3 = 27. Under these assumptions C supports a proposal for ten, leaving two new changes per week in the queue. The release manager must agree to the limit and retains the release decision.
+With 24 test hours available, ten changes need 20 + 3 = 23 hours and twelve need 24 + 3 = 27. C supports a proposal for ten. If twelve arrive that week and ten are completed with no other exits, the queue grows by two. The release manager must agree to the limit and retains the release decision. The batch limit alone gives a minimum of three batches for ten changes. Ten changes in five incompatible pairs would require five batches and 25 hours. Before making a positive proposal, check which changes may share preparation.
 
 The assessed contribution is to inspect configuration evidence, preserve required checks, and explain a supported continuation and its queue consequence. L17 has the reports, task tables, calculator and ordinary AI assistance; no teacher hint is permitted during an independent attempt. The assessor observes source and assistant traces and asks for an explanation only where needed to attribute the conclusion. In the two fresh cases below, the trace places L17's recognition before any teacher or AI cue names the mismatch; ordinary tool access remains available.
 
@@ -110,7 +110,7 @@ The assessed contribution is to inspect configuration evidence, preserve require
 | First attempt, no teacher cue | L17 calculates the financial ordering correctly and recommends B without noticing that the report is for FW7. | Calculation is supported. The compatibility criterion fails; the first recommendation is unsupported. |
 | Same task after “Which configuration was tested?” | L17 finds FW7, withdraws B and explains A's remaining check and C's bounded ten-change proposal. | This attempt shows that L17 corrected the recommendation with a configuration cue. |
 | Fresh representative case, ordinary means, no cue | L17 finds a mismatching report and explains why the higher financial value cannot settle compatibility; L17 proposes the supported C limit and queue return. | Independent configuration checking and bounded continuation are supported in this case. |
-| Second fresh representative case, ordinary means, no cue | L17 again detects the mismatch, traces the relevant evidence and explains the 23-hour limit and remaining queue. | The specified contribution is supported across the two fresh cases, with a small-sample boundary. |
+| Second fresh representative case, ordinary means, no cue | L17 again detects the mismatch, traces the relevant evidence and explains the 23-hour limit and how the queue would change if ten were completed with no other exits. | The specified contribution is supported across the two fresh cases, with a small-sample boundary. |
 
 For local practice planning, retain the first miss, the helped correction and the later independent observations. The two fresh cases support the calculation and configuration contribution under their tested conditions. If a material resource change matters to a later use, use suitable existing evidence or select a further observation when its attainable result is worth the cost. A release decision remains with the release manager.
 

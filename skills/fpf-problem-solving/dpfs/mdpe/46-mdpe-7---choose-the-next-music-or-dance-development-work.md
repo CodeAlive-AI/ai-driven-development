@@ -80,7 +80,7 @@ These mistakes can waste preparation time, prompt premature expansion or leave o
 
 ### MDPE.7:4 - Solution
 
-For a present choice, identify the finite options addressing one music or dance development question and the criteria for comparing them. The rule and options together determine which `C.11 ChoiceResult` the comparison supports. The authorized holder may make the choice. An analyst may report a supported earlier decision or give a recommendation, even when someone else has authority to choose. For a historical question, use the decision and other evidence of what was considered, under which conditions and with what outcome. An adequate record can finish that task. For intended work establish its own permission, capability and resources. Use `A.22.CGUS` when the branching or return structure itself needs to be selected, recorded or compared.
+Establish what the chooser needs from the present decision. A request for one way to run tonight’s rehearsal can be answered by an available arrangement that meets its conditions. For a choice among alternatives, identify the finite options that address the same question and the criteria for comparing them. To recommend the best across a wider permitted set, include the remaining possibilities or give grounds that none could improve the result. The rule and options together determine which `C.11 ChoiceResult` the comparison supports. The authorized holder may make the choice. An analyst may report a supported earlier decision or give a recommendation, even when someone else has authority to choose. For a historical question, use the decision and other evidence of what was considered, under which conditions and with what outcome. An adequate record can finish that task. For intended work establish its own permission, capability and resources. Use `A.22.CGUS` when the branching or return structure itself needs to be selected, recorded or compared.
 
 #### MDPE.7:4.1 - Name the chooser, subject, and decision extent
 
@@ -158,7 +158,7 @@ Use `A.19.CPM` for a needed formal comparison. Preserve binding constraints, tie
 Use or recover the `ChoiceRule` for the particular comparison. Under `C.11` it can support four results.
 
 - **Choose now.** Select one feasible option or the permitted set of tied options when further inquiry would not justify its cost.
-- **Reject the current set.** No option meets the requirements. Identify a different question if further work is wanted.
+- **Reject the current set.** Each available option fails at least one binding requirement for the occasion. A required permission or confirmation that cannot be obtained in time can settle this decision while playability remains open. Identify a different question if further work is wanted.
 - **Probe again.** A feasible observation could identify a different preferred option, establish which options meet the requirements or affect whether to reject the set. Its attainable contribution justifies the full burden.
 - **Another question is current.** Identify what must be resolved, such as generating candidates, planning, performing the work or establishing cultural continuation, and the method suited to that question.
 
@@ -227,7 +227,7 @@ A practitioner can explain which options mattered, how they were compared, what 
 
 Suppose a score was revised to restore an antiphonal response. Suppose also that a rehearsal of the revision, assessed as in `MDPE.15`, supports improved clarity while one articulation judgement remains uncertain. The production team has authority for this choice. Ensemble performers may supply observations or recommendations.
 
-The team can present under the tested conditions, rehearse with the intended room and singer, revise articulation first, or retain the acoustic branch while suspending the electronic one. It can reject the set for this concert if every option fails a necessary condition. Choose another rehearsal when it is feasible, its result could change the assessment of safety or musical plausibility and the expected benefit justifies performer time, cost, delay and displaced work. Otherwise use the supported option or report the outstanding limit.
+The team can present under the tested conditions, rehearse with the intended room and singer, revise articulation first, or retain the acoustic branch while suspending the electronic one. It can reject the set for this concert if every option fails a necessary condition, for example when the venue requires confirmation by a deadline that none can meet. Technical suitability can still be open. Choose another rehearsal when it is feasible, its result could change the assessment of safety or musical plausibility and the expected benefit justifies performer time, cost, delay and displaced work. Otherwise use the supported option or report the outstanding limit.
 
 The rehearsal needs its own available time, venue permission and any required plan. Use existing arrangements where they cover the work.
 
@@ -295,7 +295,7 @@ Use an existing decision or a suitable direct artistic, rehearsal, teaching, eve
 | --- | --- |
 | **CC-MDPE7-01 — Choice** | The particular development question, time and scope of the recommendation, decision or historical inquiry. |
 | **CC-MDPE7-02 — Chooser identity** | `DecisionSubject`, granularity, practice-developing Agent, later Work performer, and affected Systems are separated where needed. |
-| **CC-MDPE7-03 — Bounded OptionSet** | The options considered for the same question, including which were feasible, could be investigated, failed a requirement or remained uncertain. |
+| **CC-MDPE7-03 — Bounded OptionSet** | The options required by the question, their feasibility and any consequential uncertainty. An order for one workable course can finish with one. A comparison of named options or a claim about all permitted options must cover the corresponding set. |
 | **CC-MDPE7-04 — Relevant evidence** | The grounds used, the subjects and conditions they cover and how they bear on the comparison. |
 | **CC-MDPE7-05 — Domain ChoiceRule** | The rule exposes Music-or-Dance characteristics, must-constraints, affected Systems, uncertainty, probe value, and alternative loss that matter. |
 | **CC-MDPE7-06 — ChoiceResult** | Where a choice is reported, what the evidence establishes about its outcome and grounds, including selecting an option, rejecting the set, selecting a further probe or identifying a different question. |

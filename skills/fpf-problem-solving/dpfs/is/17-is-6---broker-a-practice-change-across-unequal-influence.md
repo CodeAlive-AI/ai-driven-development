@@ -5,9 +5,9 @@
 
 ### IS.6:1 - Problem frame
 
-Use this Method when a practice change depends on knowledge, decisions or resources that cannot reach the people or organizations that need them, and unequal influence contributes to the difficulty. A referral service can count a referral that its intended user cannot complete. Staff may withhold relevant knowledge because reporting has had adverse consequences. Establish what happened to the contribution. Where a change is required, make the connection workable or identify the authority or condition that is missing.
+Use this Method when a practice change depends on knowledge, decisions or resources that cannot reach the people or organizations that need them, and unequal influence contributes to the difficulty. A referral service can count a referral that its intended user cannot complete. Staff may withhold relevant knowledge because reporting has had adverse consequences. Establish what happens to the contribution under the current arrangement and whose use or decision this affects. Where a change is required, make the connection workable or identify the authority or condition that is missing.
 
-Use suitable evidence about the receiving episode. If new participation is needed, establish a legitimate way to involve the affected parties. Use an adequate existing exchange directly. [CB.15](../management-dpf-suite/cb/25-cb-15---connect-practices-through-a-useful-joint-contributio.md) can support a joint contribution between practices. Use this Method when influence affects whether a contribution reaches implementation.
+For a claim about one person’s experience, use evidence about that experience. For a question about whose knowledge can influence a decision across a service, examine the routes to that decision, who controls them and whose work they can reach. If new participation is needed, establish a legitimate way to involve the affected parties. Use an adequate existing exchange directly. [CB.15](../management-dpf-suite/cb/25-cb-15---connect-practices-through-a-useful-joint-contributio.md) can support a joint contribution between practices. Use this Method when influence affects whether a contribution reaches implementation.
 
 ### IS.6:2 - Problem
 
@@ -24,9 +24,9 @@ A meeting can leave influence unchanged. The account of exclusion matters when i
 
 ### IS.6:4 - Solution
 
-#### IS.6:4.1 - Find the broken connection in a real use
+#### IS.6:4.1 - Locate the connection that participation requires
 
-Trace an observed or proposed episode from the practice to the result its recipient needs. Establish where the contribution was lost, delayed or made unusable, or where that could happen. Identify who has evidence, who can act if a change is required and who bears the consequences.
+Start with the decision or practice that could use the contribution. Identify who holds the relevant knowledge or authority, how their contribution could reach the decision and which rule or interaction permits or prevents its use. A witnessed episode can establish an actual loss. The terms of participation may establish that a group has no route into a decision even before anyone tries. To say how particular people experienced that exclusion, obtain grounds about their experience.
 
 Use [PSDA.12](../psda/28-psda-12---recover-participants-concerns-and-affected-systems.md) when the inquiry lacks an account of affected parties, concerns or representation. Establish what their contributions could change. If separate practices need to exchange and use a contribution, use a sufficient connection or develop one with [CB.15](../management-dpf-suite/cb/25-cb-15---connect-practices-through-a-useful-joint-contributio.md). Establish the receiving operation and any permission it needs.
 
@@ -62,9 +62,9 @@ Return the result to the affected parties or other receivers within the agreed p
 
 In a constructed community-service example, staff report that 30 referrals were issued. Recipients report that the only appointment window overlaps with their work, and the receiving agency rejects incomplete requests. The service sponsor proposes a reminder campaign. Separate conversations under PSDA.13 show that staff had stopped reporting rejections after being blamed for low completion. Before asking staff to report further cases, the responsible manager uses OCE.10 to stop treating rejection reports as individual performance failures and provide a separate review of contested treatment. Staff decide which details from their accounts may be shared; identifiable cases retain their disclosure limits.
 
-The broker and the two agencies use CB.15 to follow a de-identified referral together. The receiving agency distinguishes a necessary input from information that can be obtained at the first contact. The responsible owners compare a revised request, a later appointment window and the reminder-only incumbent. The latter cannot address either observed failure. One agency accepts a bounded change to its intake. The other supplies the revised request and an escalation contact under its own authority.
+The broker and the two agencies use CB.15 to follow a de-identified referral together. The receiving agency distinguishes a necessary input from information that can be obtained at the first contact. The responsible owners compare a revised request, a later appointment window and the reminder-only incumbent. A reminder that identifies missing information could help staff complete a request. Even a complete request leaves the problem for people who cannot attend the only appointment window. One agency accepts a bounded change to its intake. The other supplies the revised request and an escalation contact under its own authority.
 
-The arrangement establishes that the revised requests can be received under the agreed conditions. Use evidence of subsequent service to determine whether recipients actually obtained it. The 30 earlier referrals establish issuance. If a later appointment window cannot be staffed, return that provision question to IS.3.
+Issuing 30 referrals establishes the number issued. The agreed intake change supports receipt of qualifying requests under the new conditions. Whether people obtained an appointment in time depends on staffing, hours and subsequent use. An account from one authorized representative can settle the group's decision within that mandate. To attribute a preference or an outcome to individual recipients, obtain evidence about those recipients. The tested referral can establish what happened to its recipient. Reopen the staffing decision if the later window that people need cannot be provided.
 
 #### IS.6:5.2 - A community without managerial authority
 

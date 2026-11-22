@@ -101,10 +101,7 @@ in :11 to generate candidates before qualifying them for the engineering decisio
    when they fit that subject, configuration, use, horizon, decision, and evidence window. Otherwise use a
    qualified direct source or record the missing result, then pause only the decision that needs it. These result
    dependencies do not prescribe the order of Work.
-2. **Recover the promise.** State the consumer-facing promise content and its edition, eligibility or
-   applicability, access terms when access is promised, acceptance conditions, and the evaluation Method and
-   evidence needed to evaluate fulfilment. Keep each actual commitment, permission, delivery relation,
-   acceptance relation, payment, and Work occurrence separate.
+2. **Recover what each recipient can claim.** Identify the applicable promise, edition, eligibility, access terms, required result, acceptance and evidence. Determine which results are due separately, which work must be performed for particular recipients and which result is due from their combined use. A shared result can meet several obligations if each recipient can use it on the agreed terms. A promise to perform separate work for each requires those performances. Identify actual commitments, permissions, delivery, acceptance, payment and Work where the decision relies on them.
 3. **Name the subject.** Identify what is transferred, accessed, changed, used, restored, or kept within a
    stated range or condition: for example, a machine, material lot, software edition, data, access point, temperature range,
    stock state, or performed Work. Keep non-System subjects in their recovered kinds.
@@ -136,7 +133,7 @@ in :11 to generate candidates before qualifying them for the engineering decisio
 9. **Compare the candidates.** Compare decision-relevant consequences—for example, client-side use, technical
    feasibility, architecture, capability, value, cost, financing, risk allocation, operational burden,
    changeability, evidence, or affected-System consequences. Keep non-equivalent measures separate unless an
-   explicit aggregation Method preserves the distinctions used by the decision.
+   explicit aggregation Method preserves the distinctions used by the decision. For every proposed arrangement, follow the choices each recipient may make through the provider's resources, interfaces and remaining work. If the same plan must serve several uses, test the permitted coincidences and accumulated demand over the promised period. If the provider may vary the response, establish what it will know in time to act and what each recipient can then obtain.
 10. **Record the bounded concept.** Give each candidate one current disposition: select it, retain it for later
     comparison, branch it by a stated condition, or reject it. Record needed specialist and realization results, responsibilities and conditions for reconsideration, together with
     any unsupported claims or remaining evidence needs. A conditional
@@ -294,7 +291,7 @@ The manual method has higher continuing work cost, while its different readiness
 
 **Change the readiness date.** Suppose the manual readiness result cannot be obtained until day 14, so the proposed advance cannot settle before then. On day 10, cash would be 2 − 6 = −4. Maintaining the reserve now requires 5 of earlier net funding. Waiting for the unchanged day-14 advance leaves the promised day-10 start unsupported. Obtain a finance arrangement covering that interval, agree a later start with its operating consequences, select another provider arrangement, or decline the start. Preserve the manual method's otherwise adequate technical result; the changed evidence date has invalidated the funding and start conditions.
 
-**Change financing while retaining the automatic design.** Instead, suppose a lender offers 6 net before the day-10 inventory payment, independently of service acceptance, for repayment of 7 on day 30. With all other supplied conditions retained, automatic-candidate cash is 1 after preparation, 1 after funding and inventory purchase, 6 after receiving 12 and repaying 7, and 4 after operation. It now meets the reserve without changing the technical concept. FIN.10 compares that financing proposal and its conditions; the engineering decision can retain the automatic arrangement if the whole comparison supports it. The earlier funding failure no longer supplies a reason to prefer manual provision.
+**Change financing while retaining the automatic design.** Suppose a lender offers 6 net before the day-10 inventory payment, independently of service acceptance, for repayment of 7 on day 30. Assume that the buyer’s payment of 12 is usable before the loan repayment falls due. Available cash is 1 after preparation, 1 after funding and inventory purchase, 6 after collection and repayment, and 4 after operation. On that sequence the original technical design meets the reserve. If the lender must receive 7 before the buyer pays, the supplier needs 7 of other usable funding at that earlier cutoff to preserve the reserve of 1. FIN.10 compares terms the supplier can actually obtain. The engineering decision can retain the automatic design when that funding and the service arrangements together support it.
 
 If consumption or the permitted response interval changes, obtain the affected operating qualification and return its cost, capability and evidence consequences to the same comparison. A cash forecast for the earlier manual arrangement remains evidence about that earlier arrangement. The decision needs the version that can fulfil the changed stock promise.
 
@@ -318,7 +315,7 @@ them.
 | --- | --- |
 | `CC-SYSE8-1` | names the client-side use, intended change, receiving Systems, actual System or intended System referent selected for engineering, configuration, horizon and decision; provider engineering retains product-use grounds and its own bounded acceptance. |
 | `CC-SYSE8-2` | separates promise content, commitments, permissions, supplied or accessed subjects, Systems, Methods, Work, fulfilment, acceptance, payment, and evidence. |
-| `CC-SYSE8-3` | compares materially different offering and provider arrangements, reuses adequate existing results, and develops further candidates or connections only where the decision needs them. |
+| `CC-SYSE8-3` | compares the arrangements that can change the decision at the scope of the promise. Where obligations interact, it establishes how their permitted uses and provider choices can be met together or identifies the condition that prevents the commitment. |
 | `CC-SYSE8-4` | identifies provider and partner Systems, relations, assignments when current, capabilities, interfaces, Work, resources, shared enabling Systems, and recovery. |
 | `CC-SYSE8-5` | separates expected Work, result restoration, custody or ownership, and risk exposure from any independently supported responsibility, duty, permission, or authority claim. |
 | `CC-SYSE8-6` | connects the selected concept to realization, provider-capability change, configuration, continuing operation, and reopen evidence. |

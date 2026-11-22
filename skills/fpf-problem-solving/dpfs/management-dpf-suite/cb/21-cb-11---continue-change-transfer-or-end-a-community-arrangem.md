@@ -9,7 +9,7 @@ Use this pattern when the purpose, participants or support of a cultural or comm
 
 The subject is the arrangement available to its users. It includes activities, relationships, organising work, resources and commitments. Choose a feasible continuation or ending, carry the useful contributions into the chosen arrangement, and settle what will no longer be provided. The wider cultural practice can continue among independent carriers even when an organised activity ends.
 
-The first useful result is an agreed continuation or ending, with the provision and remaining actions needed to carry it out. Where implementation is part of the work, the result includes receiving use under the new arrangement and settlement of the old commitments. An announcement or copied archive alone establishes neither.
+The first useful result is an agreed continuation or ending, with the provision and remaining actions needed to carry it out. Establish the agreed event that transfers each right, resource or obligation. A custodian may receive an archive and its mandate before anyone asks to use it. Where implementation includes serving a user, trace that delivery under the new arrangement.
 
 Use this method if you organise the activity, are taking over a contribution or can obtain the relevant decisions from participants and resource owners. You need access to the commitments and means of work that the change affects.
 
@@ -36,7 +36,7 @@ How can participants choose and carry out a continuation or ending that preserve
 
 ### CB.11:4 - Solution
 
-Determine what users still need and what has changed. Compare feasible arrangements, obtain the necessary decisions and support, and carry out the chosen change. If you report a completed transfer, show how the recipients used what they received. Settle the commitments that end or change under the chosen arrangement.
+Determine what users still need and what has changed. Compare feasible arrangements and obtain the decisions and support for the chosen change. Specify whose responsibility, access or work passes, on what terms and when. Return the result the order calls for, including evidence of use where continued service is the claim. Settle commitments that end or change under those terms.
 
 
 
@@ -56,7 +56,7 @@ Use CB.10's current account or a bounded inquiry to identify what is worth conti
 
 Follow one consequential use through the contributions it depends on. A monthly case discussion can depend on a qualified facilitator, permitted case material, access to the venue and a way to return the result. A public guide can depend on a maintainer and a correction route while requiring no continuing meeting.
 
-Use [C.36.RP (FPF C.36.RP:4)](../../../sections/09-part-c---kernel-extension-specifications/130-c-36-rp---sustain-and-renew-shared-ways-of-working.md#c36rp4---solution) when the missing contribution concerns obtaining and using a shared way of working. It locates the gap and compares access, capable help, learning, tools and method development. Retaining a finished answer can leave its interpretation or adaptation unavailable. Obtain the contribution that the later use needs.
+Use [C.36.RP (FPF C.36.RP:4)](../../../sections/09-part-c---kernel-extension-specifications/132-c-36-rp---sustain-and-renew-shared-ways-of-working.md#c36rp4---solution) when the missing contribution concerns obtaining and using a shared way of working. It locates the gap and compares access, capable help, learning, tools and method development. Retaining a finished answer can leave its interpretation or adaptation unavailable. Obtain the contribution that the later use needs.
 
 Include relationships whose continuation requires willing participation. Ask who wants to remain in contact and through what arrangement. Preserve an available way to reconnect where people agree; do not treat a copied membership list as a renewed relationship.
 
@@ -99,13 +99,13 @@ If a common resource remains after separation, agree its access, upkeep, decisio
 
 Provide the chosen receiver with the contributions their work requires. This can include explanations, tools, access, contact with a qualified practitioner and a way to obtain corrections. Preserve the conditions under which a method or resource can be used; the recipient needs to recognise when it is unsuitable.
 
-Have the receiver perform the next consequential work under the new conditions. For an organiser, that could be preparing and running a meeting, responding to an access problem and returning its result. For an independent user, it could be finding the guide, applying the relevant instruction and reaching its maintained correction route.
+For a transfer that takes effect on an agreed act, establish that act and its scope. When the order includes a demonstration of capability or continuing service, follow the receiver’s work under the new conditions. An organiser may run a meeting and respond to an access problem. An independent user may find the guide, apply the instruction and obtain a needed correction.
 
 Check what the attempt establishes. If a permission is missing, obtain an access decision. If the receiver cannot interpret the method, provide the explanation or learning they need. If the method is defective, develop it through Core's Method-development family or the domain practice. After a repair, try the affected use again. Keep other usable contributions available.
 
-For a platform move, obtain the applicable export, hosting and access conditions, then inspect the transferred content and a real receiving task. Navigation, links, search, contribution permissions and private material can behave differently. The practical test concerns the functions people rely on, not just the number of files copied.
+For a platform move, obtain the applicable export, hosting and access conditions, and inspect what the agreement requires at handover. If it requires a functioning service for users, test the functions they need. A transfer of custody can take effect on confirmed delivery under the agreed terms, before the first external request. Navigation, links, search, contribution permissions and private material can behave differently. The practical test concerns the functions people rely on, not just the number of files copied.
 
-Finish the departing contributor's responsibility at the agreed boundary. State which work has transferred, what remains unsupported and who has accepted any remaining handover. If the new arrangement cannot carry an essential promise, tell its users and reduce or stop that promise before declaring transfer complete.
+Finish the departing contributor’s responsibility at the agreed boundary. State which work has transferred and who holds each outstanding obligation. If the new arrangement cannot carry an essential promise, tell those relying on it. Exercise an agreed right to reduce it or obtain a change from the parties whose commitments it alters.
 
 #### CB.11:4.6 - Settle the arrangement that is ending
 
@@ -180,11 +180,11 @@ For the intended transition or ending, establish that:
 - The chosen continuation, pause, transfer, separation or ending has feasible provision and stated accepted losses.
 - Successors and other contributors have accepted their work and its limits.
 - Material, access and shared resources move only through applicable permissions and arrangements.
-- Receiving use has occurred where an achieved transfer is claimed, and unresolved gaps change the promise.
+- The agreed condition of transfer has taken effect for the claimed rights or work. Where the question concerns continuing use, it is supported by the receiver’s performance.
 - Current obligations and the old arrangement's remaining resources have an effective disposition.
 - People can discover what remains available, and later observation is bounded to a live question.
 
-A successful first use establishes that transfer at its observed scope. Continued cultural availability or changed population practice requires further evidence.
+A first use can establish a particular performance. For a transfer of responsibility, establish the allocation in force when it occurred. For a change in a population’s practice, identify the people and uses covered and the grounds for that conclusion.
 
 ### CB.11:8 - Common Anti-Patterns and How to Avoid Them
 

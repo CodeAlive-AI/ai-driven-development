@@ -23,7 +23,7 @@ Recovering tacit know-how takes time, and delay can prolong harm. A trial may yi
 
 #### ECO.9:4.1 - Recover the practice and the pressure for change
 
-Establish what participants do, expect and can rely on. Compare the written rule with evidence of actual practice. For a proposed change, identify the difficulty, who experiences it and the intended improvement in access, supply, accountability or adaptation.
+Start with the use of the rule that matters to the recipient. To establish who is entitled to apply, the effective rule and its scope may suffice. To explain what happened to an applicant, follow that person's case to the decision and its grounds. To design a change, identify which part of the present arrangements creates the difficulty, who experiences it and what access, supply, accountability or adaptation must be secured. A rule on the books, the practice people carry out and their means of supplying the service can each change separately.
 
 Recover the useful contributions and burdens of the existing rule. Use a representative observation or a sufficiently grounded reconstruction. Obtain participants’ accounts when the question depends on their experience or information they hold. An existing record can suffice for what took place under the rule.
 
@@ -42,6 +42,8 @@ Use C.36 to distinguish creating a variant, transmitting it, selection among var
 Compare attainable gains, transition burdens and costs of waiting. An established urgent failure can warrant an available protective action within the holder’s authority. If a change requires another party’s agreement, that condition still applies. A reversible trial can test an open question. Greater or irreversible exposure may require stronger grounds before commitment. Use C.11.DUA to assess whether further inquiry is worth its cost.
 
 For a proposed change or trial, identify what evidence would support continuation, adjustment or withdrawal. Use ordinary records when they supply it. After implementation, examine the practice people can perform and whether a previous contribution was lost. Return a supported finding or, if repair is needed, address the affected rule, provision or capability.
+
+For an access claim, distinguish the right to apply, a usable opportunity and actual uptake. If the existing service remains available at its previous capacity and an authorized, staffed channel lets a formerly excluded person obtain the service in time, that person's opportunity has widened even before a first application. To describe uptake, identify the population, period and unit the question concerns. Complete records of distinct participants can give their number. Several services received by one person can change a service count while leaving the participant count unchanged. To compare actual uptake across periods, allow for changes in eligibility and membership where they affect the comparison. For a causal claim, compare the same outcome with what would have happened under the earlier arrangement in comparable conditions. A bound on that counterfactual can establish the direction or minimum size of the effect. Include effects on people displaced or newly able to participate where the question covers them. Ten willing participants completing a trial establish ten completions. The same observation allows better or worse access for other users. A documented denial can settle one access complaint. A sufficient bound on demand and provision can justify the next trial.
 
 ### ECO.9:5 - Archetypal Grounding
 
@@ -65,7 +67,7 @@ A long-lived rule may no longer serve its users, and a new one may create fresh 
 
 ### ECO.9:7 - Conformance Checklist
 
-What does the current rule do, for whom and under what conditions? For a proposed change, can participants supply the learning, resources, authority and transition work it needs? If the proposal is a trial, do the stakes, remaining uncertainty and available capacity justify it? State the supported finding or how the parties can respond if a premise fails.
+Which question about the rule has been answered? Establish an entitlement from the applicable terms and the facts on which it depends. A report on use needs evidence about the people and period covered. A claim that the rule changed an outcome needs a comparison with what would otherwise have happened. For a proposed change, can participants supply the learning, resources, authority and transition work it needs? If the proposal is a trial, do the stakes, remaining uncertainty and available capacity justify it? State the supported finding or how the parties can respond if a premise fails.
 
 ### ECO.9:8 - Common Anti-Patterns and How to Avoid Them
 

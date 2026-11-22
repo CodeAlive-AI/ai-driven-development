@@ -36,9 +36,9 @@ Use evidence from an adequate observation task or construct one if needed.
 
 - For **event placement**, identify corresponding events and the reference they should meet.
 - For **continuation**, examine the sound, movement or contact through the relevant span, including its preparation and release where they matter.
-- For **interaction**, examine evidence of what the receiving participant understood or did at the relevant point in the passage.
+- For **interaction**, identify the joint result that matters. For an attributed response, establish whose cue was available, who could change the next action and what the receiver did with that information in this passage.
 - For **experienced response**, use the participant’s account of that response under the stated listening or performing conditions. Ask for the account when it is needed and can be obtained.
-- For **enacted movement**, observe the movement itself and its relation to the rhythmic reference.
+- For **enacted movement**, identify evidence of the action in question. To judge its timing or coordination, relate it to the required reference.
 
 Use RHY.4 if the target event or received landmark is unclear. Locate an attack, peak, weight transfer or judged perceptual position by a rule appropriate to that event. For a question about transfer or retention, RHY.13 identifies the conditions of the probe. Use the relevant observation here within those conditions.
 
@@ -52,7 +52,7 @@ For each established match, compare the observed time with the intended time, in
 
 Before using a detector result to judge a performer, check event identifications that could change the judgement. A quiet attack, echo or changing sound envelope can affect detection. Use the recording or another suitable observation where it can distinguish a detector error from an event the performer produced. If it cannot, keep the identification open. Preserve confirmed performed events in the comparison.
 
-For observations from different devices, apply RHY.4 to their time reference and recording delays. If an uncertain delay could explain an apparent timing error, state that limit on attributing the error to the performer.
+For observations from different devices, apply RHY.4 to their time reference and recording delays. If an uncertain delay could explain an apparent timing error, state that limit on attributing the error to the performer. For a claim about a particular joint performance, also establish that the recordings cover that take. Two tracks from different rehearsals may both align perfectly to the same click.
 
 #### RHY.14:4.3 - Preserve the relevant course between landmarks
 
@@ -70,7 +70,7 @@ For an experienced response, use an existing account or ask the participant abou
 
 Keep response tasks distinct when combining them changes what is measured. Tapping adds a performed action. Continuous rating takes attention during the passage. A body map reports where a sensation was felt. Asking afterwards reduces some competing demands and relies on recall. Interpret each response under the conditions in which it was obtained.
 
-For a question about movement, use evidence of what occurred, such as whether movement began, aligned with particular beats, continued through a gap or stopped. For partner readability, examine whether the partner distinguished the cue or gave the agreed response at the relevant point. The producer’s confidence and the listener’s wish to move answer their own questions.
+For movement, examine what occurred: an entry, alignment with the beats, continuation through a gap or a stop. A partner's timely entry can establish that a duet met its target. If the question is whether the partner read a particular gesture, consider other ways they could have entered, such as a known count or another player's sound. A reliable participant account or a change communicated in time only through that gesture, followed by an identifiable response to the change, can support the reading. Keep the live partner when assessing mutual adjustment. The producer's confidence and a listener's desire to move answer questions about their own experience.
 
 Include differences in familiarity, reference interpretation, preparation, arrangement and opportunity to move when they affect the comparison. Someone instructed to remain still has a different opportunity to act from a freely moving participant. Use only the personal information needed for the comparison.
 
@@ -78,7 +78,7 @@ Include differences in familiarity, reference interpretation, preparation, arran
 
 Compare observations under conditions appropriate to the claim. Identify the condition under comparison, whether deliberately changed or found in earlier performances, and other differences that affect the claim. A within-person or within-pair comparison may settle a local question. A population or causal claim needs a design adequate to it.
 
-Inspect the sequence and important individual contrasts before using a summary. Include missed actions, interrupted continuation and receiving responses when they affect interpretation. A smaller timing error for the matched attacks may coexist with an unusable sequence. Different listeners or purposes may favor different passages.
+Choose the unit from the use of the result. A count of performers who made their entry can settle a participation threshold. A count that includes entries anywhere in the phrase can be the same for simultaneous and staggered entries. To accept a joint entry, use evidence that the required performers entered within the agreed timing in the same take. A report already made under that condition may suffice. Inspect particular events or responses when their order, distribution or relation can change the answer. Include missed actions, interrupted continuation and receiving responses when they affect interpretation. A smaller timing error for the matched attacks may coexist with an unusable sequence. Different listeners or purposes may favor different passages.
 
 Use suitable grounds for timing, perception, interaction and burden. C.16 and A.19.CPM guide measurement and comparison. Use MDPE.12 when the result must be combined with wider performance, recognition or cultural evidence. If a choice is needed, use the method and authority that apply to it.
 
@@ -116,15 +116,17 @@ A meets the visible-continuation requirement. If the partner reports a loss of c
 
 A seated listener compares two passages using the same five-position scales for desire to move and for pleasure. Suppose the listener rates A at 5 for desire to move and 3 for pleasure, and B at 2 and 5 respectively. Movement was not observed.
 
-This listener reports a stronger desire to move for A and greater pleasure for B. Those responses support trying A in a voluntary movement session or B in a listening session that prioritizes pleasure. Claims about coordinated movement or another population require evidence for those outcomes.
+This listener reports a stronger desire to move for A and greater pleasure for B. If that listener wants to try the passage that gave them the stronger desire to move, their ratings favour A. If they want to repeat the one they enjoyed more, their ratings favour B. Choosing what matters today, or how to weigh the two experiences, is still up to the listener. Claims about coordinated movement or another population require evidence for those outcomes.
 
-A movement session can use A on the basis of this listener’s stronger reported desire to move. To establish coordinated participation, use evidence of actual movement under the conditions in question. A new observation during the session can supply it if needed.
+For a session with other participants, the organiser can offer A for an exploratory trial when that is the decision entrusted to them. A claim about those participants' preferences requires evidence relevant to them. To establish that they moved together, examine the actions and their timing in the same session. Individual reports can still answer a question about the reported experience of those who responded.
 
 #### RHY.14:5.4 - Equal endings leave internal coordination open
 
 Two ensemble versions begin and end together. In A, a marked middle entry is also coordinated; in B, one player's entry comes after the others have passed the receiving cue. The recording preserves that middle passage.
 
 The endpoints tie. The middle entry distinguishes the versions and A meets the coordination requirement at that cue. If B is to be repaired, use RHY.9 or RHY.10 to examine the cue or adjustment. Other internal relations can be assessed when they matter.
+
+For a booking requiring only that final release, an adequate record of the endpoints can settle the timing criterion for both versions. If the next job requires the bassist to follow an unannounced change by the drummer, use evidence that distinguishes the bassist responding to the drummer, the drummer adjusting to the bassist and both following the same count. When a signal changes, trace the information and the following action in the same take. An adequate earlier take can qualify that contribution without a separate solo exercise.
 
 ### RHY.14:6 - Bias-Annotation
 
@@ -135,7 +137,7 @@ A timestamp, questionnaire score and participant’s observation each support cl
 - The observation addresses the stated rhythmic question. Where it leaves important alternatives unresolved, the account identifies them.
 - An event comparison reports unmatched expectations, unmatched observations and ambiguous correspondences that could change its interpretation.
 - Continuous-course claims have observations or explicit assumptions adequate to their interval.
-- Each claim about a report, perceived timing or performed response identifies the relevant task and contributor.
+- Claims about an arrival, a participant's experience and who adjusted to whom have grounds for the particular result attributed. A joint timing criterion can be settled with individual adjustments still unresolved.
 - The account describes comparison conditions and any recording or delivery effect that limits the result.
 - The result answers the question within the conditions examined or states the material limit. A change in conditions calls for reassessment where it affects reliance on the result.
 

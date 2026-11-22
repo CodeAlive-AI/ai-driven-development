@@ -69,7 +69,7 @@ A surprising result can change different things. Use the observation and its con
 
 For a model revision, say what the earlier model predicted, which observation it cannot accommodate adequately, what a proposed replacement distinguishes, and what evidence could challenge it. Reconsider dependent learning opportunities without reopening unrelated contributions. A plausible revised model may support a bounded next trial while its broader developmental claims remain untested.
 
-Retain the tasks attempted, help received, first responses and subsequent corrections under their original conditions. Add the new interpretation and any resulting plan. A claim that the person gained or lost capability requires evidence of their work.
+Retain the tasks attempted, help received, first responses and subsequent corrections under their original conditions. Add the new interpretation and any resulting plan. A claim that the person gained or lost capability requires evidence of their work. To judge acquisition, compare the person’s earlier and later choices under conditions that expose them. An earlier answer supplied by a helper can leave the person’s initial ability unknown. Suitable earlier work may already settle that point. Crediting an intervention with a gain also requires grounds that distinguish its effect from other changes.
 
 #### HCD.14:4.3 - Specify the positive revised arrangement
 
@@ -109,7 +109,7 @@ Preserve unchanged claims and surviving rivals. Reopen only the assumptions affe
 
 The fictional case begins with L17's transfer assessment. It develops a proposal before a delayed test is needed.
 
-The earlier evidence supports calculation and configuration checking. In a new case, L17 correctly uses a complete HW3/FW8/SCHED2 report and proposes ten changes within 24 available hours. Required checks take two hours per change; preparation takes one hour per homogeneous batch of at most four. Ten changes need 23 hours, twelve need 27, so a ten-change proposal leaves two of twelve new weekly changes in the queue. The release manager retains release/use authority.
+The earlier evidence supports calculation and configuration checking. In a new case, L17 correctly uses a complete HW3/FW8/SCHED2 report and proposes ten changes within 24 available hours. Required checks take two hours per change; preparation takes one hour per homogeneous batch of at most four. All twelve incoming changes may share preparation in groups of up to four. Ten changes take 23 hours and twelve take 27. If ten are completed and there are no other exits, the queue grows by two. The release manager retains release/use authority.
 
 When available time changes to 22 hours, L17 initially keeps the ten-change promise and corrects it only after feedback. Nine changes need 21 hours. The earlier calculation and configuration findings remain supported in their tested conditions.
 
@@ -127,7 +127,7 @@ The proposal changes the cue-led resource exercise.
 | Ten-minute fresh test | Give unrehearsed 20-hour and 28-hour variants with complete compatible reports and twelve new weekly changes. Do not name the resource Method or point to the changed number. |
 | Expected contribution | At 20 hours, eight changes require 18 hours and nine require 21: do not promise nine. At 28 hours, twelve require 27: a proposal to meet those twelve is supported. Preserve required checks, source fit and any existing-queue limitation. |
 | Protected conditions | Same source and calculator access, ordinary permitted AI assistance, accessibility arrangements, domain criteria and separate release authority. Observe L17's first recognition and explanation in the source and assistant traces; a teacher or AI cue that supplies recognition of the changed condition counts as help. |
-| Cost and status | Forty learner minutes including a final five-minute result discussion, plus fifteen practitioner preparation minutes, within the example's proposed replacement allocation. The return is a proposal until its responsible owner authorizes that use of time. |
+| Cost and status | Allow forty learner minutes, including the final five-minute discussion. Allow fifteen practitioner minutes for preparation and book the practitioner for the required explanation, feedback and shared discussion at the learner’s times. Credit any existing bookings that cover that work. The return is a proposal until its responsible owner authorizes that use of time. |
 
 The fresh task tests whether L17 can limit the promise at 20 hours and make a justified positive proposal at 28 hours. Refusing both misses the supported twelve-change proposal. The release manager retains the decision in both cases.
 

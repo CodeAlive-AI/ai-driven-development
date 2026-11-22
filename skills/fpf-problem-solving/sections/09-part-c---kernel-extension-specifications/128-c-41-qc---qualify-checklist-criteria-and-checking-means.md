@@ -34,7 +34,7 @@ A.10 governs evidence reliance; A.19.ULSAM governs a numerical aggregation. This
 
 #### C.41.QC:4.1 - Recover the claim, basis and intended reliance
 
-Name the criterion, the question it interprets and the subject of that question. Recover the description and the assumption connecting it to useful work. When the criterion needs construction, use [C.41](121-c-41---select-checklist-questions-for-a-work-result.md) §§4.1–4.2 to obtain a consequential work question and its basis. Use [C.39.RQ](104-c-39-rq---construct-situated-method-requirements.md) when the missing criterion concerns a Method contribution.
+Name the criterion, the question it interprets and the subject of that question. Recover the description and the assumption connecting it to useful work. When the criterion needs construction, use [C.41](123-c-41---select-checklist-questions-for-a-work-result.md) §§4.1–4.2 to obtain a consequential work question and its basis. Use [C.39.RQ](106-c-39-rq---construct-situated-method-requirements.md) when the missing criterion concerns a Method contribution.
 
 Then name the checking means: a person applying a judgement, a comparison script, an observation tool or a model-based evaluator. What does it observe or consume? What answer does it produce? What will another person or system infer from that answer? Administrative claim-checking Methods supply the distinctions needed for that domain.
 
@@ -48,13 +48,13 @@ Name this intended inference and next move. Challenge both false reassurance and
 
 #### C.41.QC:4.2 - Construct a discriminating challenge
 
-Choose cases with known or competently established differences relevant to the criterion. Include a satisfactory case and a plausible failure. Vary the property of interest while holding irrelevant differences small enough to interpret the result. For a subjective criterion, recover the judgement basis and a meaningful disagreement rather than inventing a false objective threshold.
+Choose a challenge whose answer could change the proposed reliance. Use cases with known or competently established differences relevant to the criterion. When qualification depends on detecting both a satisfactory result and a plausible failure, include both and vary the property of interest while keeping other differences small enough to interpret the verdict. One established false pass can already rule out a checker as a guarantee that every accepted item meets the criterion. For a subjective criterion, recover the judgement basis and a meaningful disagreement.
 
 Predict which answers those differences support before inspecting the checker output. Then compare the outputs with adequate grounds for those expected distinctions. A false pass and a false failure can have different costs; inspect both where they affect the work.
 
 Where a rubric may drive the verdict independently of the subject, also hold the subject facts fixed and change the question. Establish what answer the new predicate supports before asking the checker. A reversed condition can call for the opposite answer; if only wording changes and the question stays the same, the expected answer stays the same. This distinction tests responsiveness to meaning without requiring every wording change to reverse a result.
 
-When uncertainty concerns the judging arrangement, compare it on those grounded cases with a cheaper or less interfering alternative.
+When a decision about the judging arrangement depends on whether an alternative would give adequate answers with less effort or interference, compare the alternatives on the grounded cases. A question about whether the existing arrangement can be relied on may already be settled by its observations or by a known failure.
 
 Grouping criteria can save calls; separating them can reveal interference. Repetition and a rule for combining verdicts may reduce sampling instability, but repeated agreement cannot correct a consistent error or supply independent truth.
 
@@ -78,9 +78,9 @@ A stronger second model can help investigate disagreement, but its score needs g
 
 #### C.41.QC:4.3 - State the bounded result and a return condition
 
-State what the qualification supports: which criterion, checking means, cases, conditions and receiving use it covers. State detected defects and residual uncertainty in terms that change action. A narrow successful probe does not establish all-domain accuracy.
+State which decisions the qualification supports. A grounded check on one item can settle the disposition of that item. When relying on a checker across a class of items, establish why its observations and decision rule detect the differences that matter throughout that class, or bound the claim by the evidence available. Testing one checker on one kind of item and another checker on a different kind establishes what happened in those pairings. To use them interchangeably, examine the untried combinations that matter or establish why the change cannot affect the answer the recipient needs. If the intended decision permits a rate of error, evidence about that rate must cover the population and operating conditions to which it will be applied. Report detected defects and remaining uncertainty where they change what the recipient can accept or needs to inspect.
 
-If the criterion misses a work question, return to C.41. If the form corrupts its meaning, return to C.41.TF. If access or capability is missing, return to C.41.OF or its supplier. If the checker fails, repair, replace or restrict its use and repeat the affected challenge. Compare the gain with the qualification and operating cost through [C.11.MV](25-c-11-mv---compare-the-worth-of-a-method-option.md).
+If the criterion misses a work question, return to C.41. If the form corrupts its meaning, return to C.41.TF. If access or capability is missing, return to C.41.OF or its supplier. A false pass, a false rejection or a failure to return a needed answer can justify withdrawing the checker from that use or limiting it to conditions for which adequate evidence already exists. Before relying on a repaired or replacement checker, establish that it gives the answer the criterion calls for under the affected conditions. Repeat the affected challenge if that evidence is still missing. Compare the gain with the qualification and operating cost through [C.11.MV](25-c-11-mv---compare-the-worth-of-a-method-option.md).
 
 Keep the qualification separate from subject answers. C.41.UA establishes what is true of the subject on its occasion.
 
@@ -190,6 +190,6 @@ Reopen qualification for a material criterion, tool or use change, an unexplaine
 
 C.41 supplies proposed work questions and receives coverage corrections. C.41.TF preserves qualified meanings, C.41.OF makes observations accessible, C.41.UA performs checks, and C.41.SR interprets their combined use. [FPF A.19.ULSAM](../07-cluster-a-v---constitutional-principles-of-the-kernel/44-a-19-ulsam---unified-lawful-scale-aggregation-mechanism.md) is a conditional return when the receiving use needs numerical aggregation; ordinary separate answers require no such calculation.
 
-[C.41](121-c-41---select-checklist-questions-for-a-work-result.md) supplies construction of work questions and their criteria in §§4.1–4.2; [C.39.RQ](104-c-39-rq---construct-situated-method-requirements.md) supplies criteria for a required Method contribution. [A.3.1.WT](../05-part-a---kernel-architecture-cluster/24-a-3-1-wt---design-and-interpret-a-method-work-trial.md) supplies representative trial, and [C.11.MV](25-c-11-mv---compare-the-worth-of-a-method-option.md) worth appraisal. The subject examination supplies the observation or judgement whose adequacy is being tested; administrative claim checking is one domain example. Qualification uses the required results for the uncertainty in checklist criteria or means; it does not replace those Methods.
+[C.41](123-c-41---select-checklist-questions-for-a-work-result.md) supplies construction of work questions and their criteria in §§4.1–4.2; [C.39.RQ](106-c-39-rq---construct-situated-method-requirements.md) supplies criteria for a required Method contribution. [A.3.1.WT](../05-part-a---kernel-architecture-cluster/24-a-3-1-wt---design-and-interpret-a-method-work-trial.md) supplies representative trial, and [C.11.MV](25-c-11-mv---compare-the-worth-of-a-method-option.md) worth appraisal. The subject examination supplies the observation or judgement whose adequacy is being tested; administrative claim checking is one domain example. Qualification uses the required results for the uncertainty in checklist criteria or means; it does not replace those Methods.
 
 ### C.41.QC:End

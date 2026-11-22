@@ -51,7 +51,7 @@ Organize objectives only as far as the structure helps. For a small decision, a 
 
 Trace apparent duplicates to the consequence represented. Count that consequence once. Service loss and its distribution can be distinct values even when their measures covary. Statistical independence of measures supplies no preference rule for adding their values.
 
-Retain a material value, protected condition or distinction that matters to the requested comparison. Before simplifying, identify what would be lost and examine its effect on the ranking, explanation or ability to detect a protected loss. Difficulty of measurement can leave a value unresolved.
+Retain a material value, protected condition or distinction that matters to the requested comparison. Before simplifying, identify what would be lost and examine its effect on the ranking, explanation or ability to detect a protected loss. Difficulty of measurement can leave a value unresolved. To select the people and periods a measure must distinguish, hold the total fixed and vary who bears a loss or when it occurs. Ask whether the actual objective values the total, the distribution, or satisfaction of a condition for each eligible person and period. Use an aggregate directly where the adopted rule makes it sufficient. A separate objective about an affected group needs its own evidence or a bound that decides it.
 
 #### PSDA.6:4.3 - Give each measure a usable meaning
 

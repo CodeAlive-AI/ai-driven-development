@@ -16,11 +16,11 @@ Do not use this Method to reopen an adequate option set merely because more idea
 
 A complete first return can be modest: “This contribution could address the named receiving-use problem, but only if access to these records and the required review support can be obtained. The next question is whether the data owner can provide that bounded access.” Missing feasibility does not have to erase the useful problem; it prevents a stronger reachability claim.
 
-The first useful result is a candidate opportunity with a worthwhile problem or proposed promise, dependencies, bounded reachability rationale, uncertainty and a next discriminating question.
+A useful result can be a candidate opportunity with a worthwhile problem or a proposed promise to a recipient, the conditions under which it is attainable and what is still uncertain. The inquiry can also establish that the proposal has no worthwhile use under the stated conditions. Give the recipient a further question when its answer could change a decision they face.
 
 ### C.40.OCN:2 - Problem
 
-A promising means can be mistaken for a worthwhile result, and a plausible direction for an attainable one. Separate search, problem, support and qualification results then leave the practitioner to invent their connection. The required result is one inspectable opportunity whose useful contribution, conditions, uncertainty and next question remain connected.
+A promising means can be mistaken for a worthwhile result, and a plausible direction for an attainable one. Separate search, problem, support and qualification results then leave the practitioner to invent their connection. The practitioner needs to show the recipient what the proposed contribution could make possible and under what conditions it is attainable. The inquiry may show that the current arrangement is adequate. It can also identify a missing condition whose resolution would change the decision.
 
 ### C.40.OCN:3 - Forces
 
@@ -34,7 +34,7 @@ A promising means can be mistaken for a worthwhile result, and a plausible direc
 
 ### C.40.OCN:4 - Solution
 
-Construct a bounded opportunity by relating possible later Work to neighboring uses and technologies, distinguishing a useful problem from an offered promise, constructing materially different directions and supports, qualifying their dependencies, and returning the strongest supported reachability claim and next question.
+To construct a bounded opportunity, examine neighboring uses and technologies, distinguish the problem from what someone proposes to supply, develop alternatives where they matter and check which combinations can actually be obtained. Return what the recipient can rely on and what could defeat it. If an open question matters to the recipient's next decision, say how its answer would change that decision.
 
 Its generic participants are the performer or performers conducting the inquiry, the developing holder or subject, possible receivers or users of the later contribution, and sources or suppliers of material premises. They are Method-side meanings, not actual assignments or Work participants. The inquiry performer may also be the subject of the proposed change; no distinct recommendation recipient is an applicability condition.
 
@@ -181,7 +181,7 @@ Reconsider an opportunity when a relied-on problem, promise, source, holder conf
 
 For example, suppose the data owner in the constructed model case later qualifies only a narrower source set. Retain the receiving need and the manual-index direction. Narrow the model-assisted candidate to the permitted set; remove the unsupported representative-use reachability claim and request missing evidence only if its obtainable contribution to that broader use warrants the whole acquisition burden. No earlier actual Work is erased by this change of knowledge.
 
-If the new source set also excludes the region that a candidate stepping stone was meant to open, revise or remove that retention rationale. Another retained candidate does not become invalid by association. If the proposed next question is no longer discriminating, choose a new one under the receiving policy.
+If the new source set also excludes the region that a candidate stepping stone was meant to open, revise or remove that retention rationale. Another retained candidate does not become invalid by association. If the proposed question can no longer change the recipient's decision, drop it. Choose a replacement only if another open question matters to work the recipient intends to pursue. An answer that settles the commissioned inquiry can close it.
 
 A factual change in one application does not automatically change this reusable Method. Reopen the Method's claims when evidence or a stronger practice line shows that its search, problem/promise construction, dependency reasoning, reachability rule or stop omits a material action. G.11 supplies source refresh; C.40.RQ requalifies an affected opportunity. A recurring failure of this Method returns to its maintainer.
 

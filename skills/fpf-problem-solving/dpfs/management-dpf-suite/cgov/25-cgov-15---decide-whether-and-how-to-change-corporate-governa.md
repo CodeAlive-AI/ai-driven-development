@@ -5,7 +5,7 @@
 
 ### CGOV.15:1 - Problem frame
 
-Use this pattern when a recurring difficulty calls for a different way of preparing, deciding, overseeing or accounting for a corporate matter. A board may receive every required paper yet repeatedly discover decisive assumptions only after commitment. A procedure borrowed from a widely held company may overlook a controlling shareholder's interest in the transaction. Changed law or ownership may defeat a previously useful way of working.
+Use this pattern when the conditions of a class of matters call for a different way of preparing, deciding, overseeing or accounting for a corporate matter. A board may receive every required paper yet repeatedly discover decisive assumptions only after commitment. A procedure borrowed from a widely held company may overlook a controlling shareholder's interest in the transaction. Changed law or ownership may defeat a previously useful way of working.
 
 Begin with the contribution that fails and the conditions under which it must be obtained. Recover the existing operations, compare a useful alternative, and decide what to retain or change.
 
@@ -33,11 +33,11 @@ Recover the needed contribution, distinguish the proposed change, compare ways o
 
 #### CGOV.15:4.1 - Recover the governing task and the existing way of doing it
 
-Name the recurring matter and the practical difficulty: for example, material assumptions arrive too late for deliberation, an interested participant controls the review, or oversight reports conceal an unfulfilled undertaking.
+Name the class of matters and the difficulty the method must address. For example, material assumptions arrive too late for deliberation, an interested participant controls the review, or oversight reports conceal an unfulfilled undertaking. A newly effective rule or an unavoidable conflict in the next matter can expose the difficulty before a repeated failure is observed.
 
 A wider board performance review can be useful when the difficulty cannot yet be located among ways of working, composition, powers or support. Choose a scope that can resolve that uncertainty. Use its finding here when a method change is the question; a known information-access fault can instead return directly to the service that must be repaired.
 
-Recover enough of the existing method to identify its inputs, participants, operations, result and continuation conditions. Use an ordinary completed or pending matter to make these concrete. A school name or a procedure's title leaves that reconstruction unfinished.
+Recover enough of the existing method to identify its inputs, participants, operations, result and continuation conditions. Trace the operations on a completed or pending matter when this helps recover them. A governing rule that already settles the next decision can supply the relevant ground directly. A school name or a procedure's title leaves that reconstruction unfinished.
 
 Use the applicable rights, powers and participation conditions already known through CGOV.1–CGOV.3, CGOV.6 and CGOV.12. Determine which of them constrain the proposed change. Also retain the information, capability and support needed to perform it. When a right, power or participation condition remains unclear, use its corporate method to establish what applies.
 
@@ -112,7 +112,7 @@ The supplied governing rules require an unconnected valuation, disclosure to aff
 
 The practitioner uses CGOV.6–CGOV.8 and CGOV.12 to obtain the applicable conflict, review, information and protection contributions and connects them to the corporate decision method. The adapted way of preparing this class of transaction adds operations and continuation conditions; it is more than a renamed performance review.
 
-The resulting method remains available for that class of matter. The simpler performance-review method can remain useful elsewhere.
+The adapted method applies to the class described here. Follow the particular conflict, information or consent condition before carrying it to a further class of related-party transactions. The simpler performance-review method can remain useful for its original work.
 
 ### CGOV.15:6 - Bias-Annotation
 
@@ -122,7 +122,7 @@ Internal reports may also favour the sponsor of the change. Compare what the cha
 
 ### CGOV.15:7 - Conformance Checklist
 
-- The recurring difficulty and needed contribution are recognizable.
+- The method addresses a stated difficulty for the class of matters, including one that can be established before its first occurrence.
 - The comparison concerns operations and conditions, with description and support changes distinguished where they matter.
 - Applicable corporate rights, powers and participation conditions remain satisfied or have an identified change route.
 - The selected alternative has stated grounds, limits and a usable continuation.

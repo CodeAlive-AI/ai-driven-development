@@ -18,9 +18,7 @@ candidate's use, functional organization, bearers, interfaces, realization, inte
 consequences, and evidence. The decision names
 the selected option, explicit constraints, and results needed by later engineering Work.
 
-**First move.** Name the architecture question, the decision subject, and a project-shaping
-structure choice that two current candidates answer differently. When the choice requires authority, cite the
-separate authority relation; an assignment or architecture record does not supply it.
+**First move.** Identify who needs the architecture decision and which structural commitment depends on it. For a new choice, name a difference between candidates that can change the commitment. For a review, check which changed premise could invalidate the existing choice. If the existing arrangement still meets the governing constraints and preference, explain why it can stand. When authority is required, establish the separate authority relation.
 
 This pattern begins after candidate development and ends with a decision plus conditions for reconsideration.
 For software proposals named by architectural style, §4.4 explains the mechanisms and trade-offs to recover
@@ -124,9 +122,7 @@ Work—can confirm or reopen the choice.
 3. **Prepare candidates for the decision.** Start with a compatible `SYSE.5` account or a qualified direct
    source for functional organizations, candidate bearers, allocations, interfaces, and conflicts. Add
    provider-arrangement constraints from `SYSE.8`, description evidence from `SYSE.7`, specialist results from
-   `SYSE.9`, and engineering claim assessments from `SYSE.10` only when they fit the same subject, configuration,
-   use, horizon, decision, and evidence window. For each input, state what it describes and which claim it can
-   support. Evidence informs the decision but neither authorizes nor entails it; a specialist result answers only
+   `SYSE.9`, and engineering claim assessments from `SYSE.10` where their results bear on the present claim. For a different subject, configuration or interval, establish the correspondence or limit on which the conclusion depends. A qualified interface rating, for example, covers every proposed unit and load within its stated conditions. Evidence informs the decision but neither authorizes nor entails it; a specialist result answers only
    its receiving question under its stated conditions. If an input is unavailable or incompatible, use a
    qualified direct source or identify the missing result. If a candidate has unsupported dependencies, retain it only when
    they are explicit, bounded and acceptable to the decision subject. Examples include dependencies on bearers, interfaces,
@@ -136,7 +132,7 @@ Work—can confirm or reopen the choice.
    comparison use, and guardrail or reopen reading when one is justified. Keep non-equivalent characteristics—
    for example, safety, performance, cost, resilience, changeability, or evidence burden—in separate rows unless
    the decision supplies and justifies an aggregation Method that preserves the distinctions it uses.
-5. **Compare coherent candidates.** Compare whole proposals rather than isolated module choices. Include
+5. **Compare coherent candidates when a choice is due.** In a review of a previous decision, first establish whether its grounds cover the changed conditions. An existing comparison that still settles the choice can be retained. If the change reopens the choice, compare the whole proposals. Include
    decision-relevant consequences—for example, expected functioning, physical principle, interfaces, placement,
    failure containment, realization and integration dependencies, supply and provider conditions, configuration
    continuity, operating and maintenance effects, affected Systems, evidence burden, or change consequences. Use `A.19.CPM`, `C.11`, or another direct
@@ -153,7 +149,7 @@ Work—can confirm or reopen the choice.
    input. The identified deciding Agent remains responsible for the choice. A claim of physical adequacy needs
    evidence about the physical System; selecting an option with stated residual uncertainty does not assert
    that stronger claim.
-7. **Make the decision relation explicit.** Fill the current `ArchitectureDecisionRelation@Project` with the
+7. **Make the decision relation explicit.** Reuse an applicable `ArchitectureDecisionRelation@Project`. For a new or revised choice, identify the
    candidate basis, selected option, affected structures, criteria and trade-offs, accepted losses, rationale,
    consequences, effectivity and currentness claims, horizon, and rejected or retained alternatives. A bounded exception is a decision only
    when its scope, cost, protected loss, and reopen condition are explicit.
@@ -175,10 +171,7 @@ Work—can confirm or reopen the choice.
     that calls for reconsideration—for example, a source change, actual-structure comparison, characteristic
     reading, failed interface, changed use, or affected-System consequence. Name the decision subject and the question to reconsider. A
     threshold crossing supplies an observation, not an automatic replacement decision.
-11. **Check what actually obtains.** After realization or integration Work, compare the observed configuration
-    and selected structures with the decision content. Record divergence and evidence separately from the
-    decision and its description. Supersede the decision when a material changed claim alters the
-    selected option, accepted loss, fixed/open boundary, or receiving Work.
+11. **Check what actually obtains when that is the question.** An architecture decision can be complete before realization. For a subsequent implementation or conformity decision, compare the actual configuration and structures with the selected option, using applicable evidence. Record a divergence separately from the decision. Reconsider a choice when a material changed claim alters the selected option, accepted loss, fixed or open constraints, or receiving Work.
 12. **Stop at coordination sufficiency.** Return when affected practitioners can tell what current structures
     and constraints guide their work, which choices remain open, any losses accepted, any result they need to
     return and what can reopen the choice. This can be settled before detailed design is complete.
@@ -452,12 +445,12 @@ the subject-specific Methods and safeguards needed for the engineering question.
 | `CC-SYSE6-2` | identifies project-shaping selected structures and relation claims rather than using *important* or *hard to change* as an architecture definition. |
 | `CC-SYSE6-3` | admits candidates only with explicit functional, bearer, interface, realization, integration, affected-System, and evidence consequences or bounded residuals. |
 | `CC-SYSE6-4` | defines decision-specific architecture-characteristic criteria before relying on eval results or scores. |
-| `CC-SYSE6-5` | compares coherent alternatives and exposes gains, accepted losses, unknowns, and burdens moved elsewhere. |
+| `CC-SYSE6-5` | justifies retaining a decision whose comparison still applies or compares the coherent alternatives where the choice is open, including gains, accepted losses, uncertainties and burdens transferred elsewhere. |
 | `CC-SYSE6-6` | returns one `C.32.PAD` decision relation and grounds the architecture claim, description, actual architecture, Work, and evidence through their own kinds and relations. |
 | `CC-SYSE6-7` | distinguishes fixed project-shaping constraints from open refinement and preserves specialist authority. |
 | `CC-SYSE6-8` | names each result needed by receiving Work—for example, a realization, configuration, specialist, description, assurance, supporting-System, operating, or maintenance result. |
 | `CC-SYSE6-9` | states observable reopen conditions, the decision subject for reconsideration, and the question reopened. |
-| `CC-SYSE6-10` | later checks the actual configuration and structures separately from the decision content and its publication. |
+| `CC-SYSE6-10` | when claiming implementation or conformity, establishes what configuration and structures actually obtain. An architecture choice for future work can be complete before that confirmation. |
 
 ### SYSE.6:8 - Common Failures and Repairs
 

@@ -84,7 +84,7 @@ Use a disciplinary method appropriate to the question. Explain any grouping, tra
 | Qualitative or interpretive findings | Compare, translate or develop interpretations under the selected tradition, retaining context, source concepts, disconfirming material and the synthesist's contribution. | A descriptive synthesis or explicitly developed explanatory construct with its grounding and applicable confidence account. |
 | Historical sources and accounts | Examine provenance, dates, purposes, perspectives, dependence, gaps and rival interpretations that bear on the chronology or explanation. | The sequence or explanation the sources warrant, with any consequential alternatives still open. |
 | Mixed evidence about one question | If a transformation makes the contributions comparable for this question, justify it. Keep the original values, meanings and context needed to examine what the transformation loses. | An integrated answer within the scope of the justified transformation. |
-| Mixed evidence about different aspects | Synthesize the aspects on their own terms. Where the question requires their relation, compare the syntheses or use one finding to guide examination of the other. | An account of how the findings agree, complement one another or diverge, including any unresolved difference. |
+| Mixed evidence about different aspects | Synthesize the aspects on their own terms. Where the question requires their relation, ask what could vary between the two sets of cases while leaving both findings true. To establish that the same participants experienced two conditions, use evidence of overlap, a bound sufficient for the question, or a qualified observation covering both. | State the supported relation or how much the separate findings establish while it remains open. Evidence from different populations may suffice for a claim about each. |
 
 Variation among studies can be compatible with a pooled estimate under a justified model. A random-effects model still needs a defensible relationship among the target quantities. A synthesis of effect directions alone does not estimate their magnitude.
 
@@ -153,7 +153,7 @@ When examining a synthesis, check the following.
 - Does each affected finding account for contrary evidence, uncertainty and limits on transfer?
 - Does the answer give what the available material establishes, including a specific limit when it cannot support the requested finding? Is any proposed further work distinguished from evidence already obtained?
 
-Use the evidence for the findings and source relationships to judge whether the synthesis answers its question.
+Use the evidence for the findings and source relationships to judge whether the synthesis answers its question. For a claim about what occurs together, establish the needed connection or sufficient bound. Separate findings can finish a commission for separate answers.
 
 ### RMP.7:8 - Common Anti-Patterns and How to Avoid Them
 

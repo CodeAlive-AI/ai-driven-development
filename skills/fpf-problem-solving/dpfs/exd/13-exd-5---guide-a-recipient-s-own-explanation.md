@@ -32,7 +32,7 @@ Specify what the learner’s response should show. Keep the initial response whe
 
 Identify the question, learning purpose where relevant, and warranted subject relation. Choose or inspect a product that could show it, such as an explanation of one step, a labeled diagram, a worked correspondence or a demonstration that shows what its actions represent.
 
-State a criterion for the relation. For the pooled mean, the learner needs to show what the denominator counts and how to reconstruct each group’s sum. Accept any expression that establishes those two connections.
+Set the criterion from the learning purpose. If the groups already partition the people, the learner can show what the denominator counts and reconstruct each group’s sum. If the learner must choose the unit and decide what to do about shared membership, give the reporting purpose and the available records first. Credit the unit, treatment of overlaps and sufficiency of the information that the learner actually justifies. A filled-in denominator can still serve a lesson on carrying out the calculation.
 
 Use [EXD.2](10-exd-2---build-and-bound-an-explanatory-example.md) when the instance and contrast need construction. Keep legitimate tools available when the intended performance allows them.
 
@@ -40,7 +40,7 @@ Use [EXD.2](10-exd-2---build-and-bound-an-explanatory-example.md) when the insta
 
 For a teaching task, select help in light of the learner’s preparation and the relation they need to use. For an earlier attempt, establish what help was available and used from the evidence of that attempt. A worked example, partial diagram, cue or open prompt can each serve a purpose. If an unassisted response is needed to distinguish starting points, use an existing qualified response or seek one before giving the decisive step.
 
-In a new attempt, ask for the relation the learner needs to show. When examining an earlier response, identify which relation its prompt asked the learner to show. “What does your denominator count, and what should it count for this question?” locates a possible error more precisely than “Explain the answer.” In a new attempt, let the learner choose a suitable way to express the relation.
+If the learner is to explain an already identified step, name it. “What does your denominator count, and what should it count for this question?” focuses attention on the intended relation. If the learner is to discover which relation needs checking, give the original question and records first, or use a suitable earlier attempt. A prompt that names the denominator performs part of that discovery. Let the learner choose how to express the result and identify which choice was theirs.
 
 If the learner needs a component that the task does not supply, provide it where feasible and identify the help given. An initial worked step may be appropriate. When a person is learning, use Human Capability Development for broader questions about the task, assistance or progression.
 
@@ -54,19 +54,19 @@ Retain the original response if available and identify what the correction suppl
 
 #### EXD.5:4.4 - Ask for the affected use again
 
-When the learning purpose calls for a further attempt, choose one that can show whether the learner can use the corrected relation. Vary values or a consequential condition and state the help available. A completed earlier attempt can already supply the needed evidence. For a historical question, report what the available evidence of the response establishes and any limit on attribution.
+When the learning purpose calls for a further attempt, choose one that can show whether the learner can use the corrected relation. For applying a known rule, a change of values may suffice. For choosing which rule fits, leave the decision open in the task and vary a condition that matters to it. State the help available. A completed earlier attempt can already supply the needed evidence. For a historical question, report what the available evidence of the response establishes and any limit on attribution.
 
 If a difficulty persists and the learning task continues, reconsider its cause and the help needed. Stop immediate correction when the learner’s response meets the criterion. Use HCD and suitable evidence for a separate question about later retrieval, reduced help or transfer.
 
 ### EXD.5:5 - Archetypal Grounding
 
-The fixed task asks for the mean across all individuals. Group A has two values with mean 3; group B has six values with mean 8. The learner's first product is “(3 + 8) / 2 = 5.5, because there are two averages.”
+The fixed task asks for the mean across eight different people. Two people in group A have mean 3. The other six people, in group B, have mean 8. The learner's first product is “(3 + 8) / 2 = 5.5, because there are two averages.”
 
 Keep the first response. Ask, “Which things receive equal weight in this calculation?” In this example the learner answers, “The two groups.” Ask which things the question weights equally. If the learner identifies the individuals, show how the denominator of two reflects the grouping while the task concerns eight people.
 
 One adequate explanation is “Each group mean summarizes a different number of people. Multiply each mean by its count to obtain the group sums, 2 × 3 = 6 and 6 × 8 = 48. Divide their combined sum of 54 by the number of people, 2 + 6 = 8. The mean is 6.75.” If the learner needs help recovering the group sums, supply the relation between a mean, count and sum and record that help.
 
-For a further attempt, use three values with mean 4 and nine with mean 8. Ask for the pooled mean and the meaning of its denominator. Here (3 × 4 + 9 × 8) / 12 = 7. A response that uses the total count and reconstructs both sums meets the criterion under the assistance available. Establish independent use after a delay from a performance under those conditions.
+For a further attempt, divide twelve different people into two groups, three with mean 4 and nine with mean 8. Ask for the pooled mean and the meaning of its denominator. Here (3 × 4 + 9 × 8) / 12 = 7. A response that uses the total count and reconstructs both sums meets the criterion under the assistance available. Establish independent use after a delay from a performance under those conditions.
 
 For equal influence of the two group means, the answer is (4 + 8) / 2 = 6. Ask the learner to explain the change of target when distinguishing the weighting rules is part of the task.
 
@@ -86,7 +86,7 @@ Check the relation, answer criterion and conditions of the response being assess
 
 | Failure | Repair |
 | --- | --- |
-| A generic request produces a fluent paraphrase | Ask for the decisive correspondence, ground, contrast or error. |
+| A generic request produces a fluent paraphrase | Ask for the decisive correspondence when explaining it is the task. When finding that correspondence is the task, give the underlying material and ask the learner to select and justify it. |
 | An answer is marked wrong after the question changes | Apply the criterion for the question actually asked. Clarify it before giving corrective feedback if it is uncertain. |
 | A repeated solution supplied by the teacher is credited as independent use | Report the demonstrated response and the help given. For an independent-use claim, seek relevant evidence under the required conditions. |
 | A learning exercise is assigned to someone who needs only a qualified answer | Supply that answer when it serves the request. Use the learner’s own explanation when the outcome depends on their contribution. |

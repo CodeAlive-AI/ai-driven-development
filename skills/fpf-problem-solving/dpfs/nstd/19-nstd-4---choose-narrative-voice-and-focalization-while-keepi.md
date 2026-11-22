@@ -41,7 +41,7 @@ To construct a voice, choose the speaking relationship and write a passage that 
 
 #### NSTD.4:4.1 - Establish the speaker, relationship and comparison basis
 
-Identify the speaker, reader and relationship that matter. An experienced colleague inviting another colleague to inspect a finding, a remote chronicler withholding judgement and a frightened witness addressing a sceptic establish different positions. Choose the distance, shared knowledge and invitation or direction appropriate to the account. A claim about real expertise or authority requires grounds beyond that choice.
+Identify the speaker, reader and relationship that matter. An experienced colleague inviting another colleague to inspect a finding, a remote chronicler withholding judgement and a frightened witness addressing a sceptic establish different positions. Choose the distance, shared knowledge and invitation or direction appropriate to the account. A claim about real expertise or authority requires grounds beyond that choice. A later narrator may know the answer to a dispute. To write from a participant’s viewpoint at the time, establish what that person could then see, hear or retrieve. A historian may establish this from later testimony or a delivery record unavailable to the participant. Evidence that a message reached the team’s office may settle a question about delivery. Attribution of a particular member’s judgement needs grounds connecting that member to the message and decision.
 
 Distinguish the basis of the requested voice:
 
@@ -99,7 +99,9 @@ Read the repaired passage with the joins it affects. Use F.19 for meaning and re
 
 #### NSTD.4:4.6 - Keep viewpoint, agency and attribution grounded
 
-Compare what the viewpoint reveals with the relations the reader needs. Two participants may see the same departure as escape and abandonment. Use NSTD.9 to examine the support for either interpretation. If a fictional viewpoint requires a discovery not yet provided for the character, use NSTD.10 to build that event or select a viewpoint with different access. Add a second view or a short clarification when it supplies missing information the task requires. Use a note like the one below if collaborators or a later comparison will need the grounds.
+Compare what the viewpoint reveals with what the reader needs to know. Two participants may see the same departure as escape and abandonment. Use NSTD.9 to examine the support for either reading. A historian may piece together what happened from two witnesses who each saw a different part. Tell that conclusion in the historian’s voice. To put it into an earlier participant’s thoughts, establish what that person could have learned by then. When a spokesperson announces an organization’s decision under its mandate, the announcement may settle the organization’s position while leaving individual members’ opinions open. A single viewpoint is sufficient when it gives the reader the account commissioned.
+
+If a fictional viewpoint requires a discovery still missing from the story, use NSTD.10 to build that event or select a viewpoint with different access. Add a second view or a short clarification when it supplies information the reader needs. Use a note like the one below if collaborators or a later comparison will need the grounds.
 
 ```text
 NarrativeViewpointAgencyDiscipline@Context:
@@ -120,7 +122,7 @@ Use the distinctions that affect the claim.
 1. A **narrative function**, such as narrator, protagonist or actant, explains a contribution to the account. “Role” often has this ordinary meaning in a discussion of stories.
 2. For a **real participant**, identify the person, organization or technical system that played the relevant part. If a precise classification matters, `A.2` defines the local system-role kind for `U.System` individuals. Use `A.2.1` for the obtaining `U.SystemRoleAssignment`.
 3. For a **precise agency claim**, use `A.13` to identify the System, applicable local kind and actual assignment. For a claimed dated Work occurrence, apply the independent `A.15.1` conditions. Use ordinary contributor language when the passage makes no such claim.
-4. A **capability or responsibility claim** needs its own grounds. Use `A.2.2` for capability, the applicable organizational assignment for responsibility, and `D.1` through `D.5` when value, harm or affected-party conflicts matter.
+4. A **capability or responsibility claim** needs its own grounds. Use `A.2.2` for capability. For responsibility, identify who bears the responsibility for the action and on what basis. A viewpoint can reveal a consequence for a group without qualifying its speaker to state the group’s decision. Use `D.1` through `D.5` for the value, harm or affected-party question.
 5. An **agency measurement or profile** uses the selected characteristic and scale through `A.19.ECS`, `C.16` and `A.13` when that additional claim is needed.
 
 Consider the following questions where the viewpoint could change the reader's understanding or action.
@@ -130,7 +132,9 @@ Consider the following questions where the viewpoint could change the reader's u
 | What becomes visible? | Which events or relations does the viewpoint show or allow a reader to infer from specified starting knowledge? | Add the needed fact, a way to recover it or another viewpoint. |
 | What attribution follows? | Does prominence in the account imply an unsupported action, capability or responsibility? | Retain the narrative function and establish or correct the separate attribution. |
 | Would a literal reading mislead here? | Is there a plausible reading that changes reliance or action? | Clarify that relation or participant. Keep an unambiguous metaphor. |
-| Whose consequence is missing? | Does the viewpoint conceal a relevant effect, disagreement or uncertainty? | Add the affected perspective or qualify the use. Consult `D.1`–`D.5` when a value or harm conflict needs resolution. |
+| Whose consequence is missing? | Can a reader tell whose experience the source supports, whom else the action may affect and who can speak or decide for the group? | Attribute the account to its speaker. Explain a supported effect on others and keep their own views open where evidence is missing. Use `D.1`–`D.5` when a value conflict changes the decision. |
+
+One account can suffice for a story about its speaker. To report a decision by the organization, find the act that settled it and the matters it covered. To say how often the experience recurred, use records that cover the population and period claimed. These sources can support different sentences in the same narrative.
 
 The following terms answer different narrative questions. Stronger factual claims require additional grounds.
 
@@ -346,7 +350,7 @@ A memorable habit can be overgeneralized into an author's whole voice; a fluent 
 | --- | --- | --- |
 | Protagonist as responsible agent | Narrative centrality is used to attribute moral or operational responsibility. | Identify the protagonist’s function in the telling. Use `A.13`, `A.2.1` and the relevant ethics guidance when the corresponding real agency, assignment or responsibility is at issue. |
 | Hidden participant | “The specification decided” obscures who made a consequential decision. | Identify who chose and the applicable authority. Keep ordinary metonymy when the choice and its holder are already clear. |
-| Viewpoint hides an affected party | A compelling account omits a consequence that matters to someone affected. | Recover the relevant perspective or source and correct the account if needed. Use `D.1`–`D.5` when a value or harm conflict requires resolution. |
+| Viewpoint hides an affected party | The account treats one participant’s experience as the group’s judgement or omits a consequence for another participant. | Retain the sourced individual account. Establish the group’s decision if the narrative attributes one, and explain a possible effect on others with its grounds. Use `D.1`–`D.5` when the value conflict needs resolution. |
 | Voice by label | “Warm,” “expert” or a person's name leaves the actual manner undefined. | Use relevant expression or a selected trial to show how the speaker develops a thought with this reader. |
 | Mannerism as preservation | A joke or catchphrase survives while the difficult idea or speaking relationship disappears. | Restore the needed thought and choose the expression for its contribution here. |
 | Invented personal authority | First person turns a constructed scene or editorial inference into apparent experience. | Recover the actual basis or state the construction; preserve legitimate first-person expression. |

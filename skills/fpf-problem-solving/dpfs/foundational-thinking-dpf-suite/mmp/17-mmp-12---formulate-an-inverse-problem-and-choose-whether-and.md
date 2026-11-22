@@ -36,7 +36,7 @@ The problem is to formulate recovery so that the required target, observation re
 
 ### MMP.12:4 - Solution
 
-Construct the forward relation for the requested target, locate the consequential loss of distinction or amplification, and choose the smallest justified restriction that changes that difficulty. Formulate its strength together with the error account. Return the target with the dependence and loss introduced by that choice.
+Construct the forward relation for the requested target and determine what the existing information can settle. Where the target remains unstable or ambiguous and a reconstruction is wanted, choose and justify the additional restriction or preference and its strength. Return the consequence and explain how it depends on that choice.
 
 #### MMP.12:4.1 - Construct the forward relation from the modeled situation
 

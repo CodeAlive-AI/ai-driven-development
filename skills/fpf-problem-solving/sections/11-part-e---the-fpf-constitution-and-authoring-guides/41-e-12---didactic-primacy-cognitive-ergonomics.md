@@ -34,7 +34,7 @@ FPF makes **Didactic Primacy (Pillar P-2)** an architectural principle. The Rati
 
 The primary purpose of the FPF is to enhance the cognitive capabilities (qualified holder ability under A.2.2) of a reasoning system, team, organization, or other acting holon in service of its objectives.
 
-The creation of assurance-bearing epistemes or publications with high assurance levels and epistemic scores is a *means to that end*. Any architectural decision that increases formal rigor at the cost of clarity or usability must be explicitly justified by a demonstrable gain in that holder's ability to reason effectively.
+Any architectural decision that increases formal rigour at the cost of clarity or usability must explicitly justify the gain in reasoning that warrants this cost. A checked bound can let an experienced engineer rule out an infeasible operating mode today. That decision with the proof available can be the entire benefit of the work. To claim that the engineer has acquired a lasting ability, compare relevant performances over time with the aids available on the intended job.
 
 #### E.12:4.2 - Mechanism 1: The Rationale Mandate
 
@@ -43,6 +43,8 @@ Every key assurance episteme or publication, such as an assurance case or proof 
 *   **Nature:** The `rationale` is a narrative explanation of the cognitive benefit.
 *   **Content:** It **MUST** answer: *"How does this level of formal assurance help the agent understand the problem better or make a more reliable decision?"*
 *   **Purpose:** The author explains what the formal assurance helps the user understand or decide. An empty or perfunctory rationale indicates that the assurance work may be an exercise in formalism for its own sake.
+
+Name the decision the assurance makes possible. To claim that the work now takes less effort, compare the work required at comparable correctness, including preparation or help that the job calls for.
 
 > **The "So What?" Test for Managers**
 >

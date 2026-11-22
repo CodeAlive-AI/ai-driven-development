@@ -12,7 +12,7 @@ Use this pattern when an ontic or another entity is encountered through a card, 
 
 **First useful move.** Put the intended receiving use in the bounded-use declaration. Then say which episteme is available, to which declared audience, for which bounded use, through which expression and carrier.
 
-Name a reusable form when its constraints matter. Cite a separate plan, decision question or `U.WorkPlan` only when it independently exists and changes the publication claim. Distinguish availability from a claim of actual access or use.
+Name a reusable form when its constraints matter. Cite a separate plan, decision question or `U.WorkPlan` only when it independently exists and changes the publication claim. Distinguish availability from a claim of actual access or use. When a team needs access, decide who needs to do what, by when. Apply §4.2.1 when different routes or conditions could change that answer.
 
 Open fuller relation detail when needed to resolve disputed availability, its boundary or publication-occurrence identity.
 
@@ -201,11 +201,15 @@ For form-mediated availability through C, the same X must witness expression, be
 
 ##### E.24.PUB:4.2.1 - Keep the granularity of the availability claim
 
-A consumer can claim continuous availability of E to A for U over an interval when, at every time in that interval, at least one appropriate X and C provides that availability. If the consumer fixes F, C or a set of permitted carriers, retain those constraints in that claim.
+If the undertaking is to provide access by a deadline, establish that each intended reader can use an allowed expression and carrier in time. To conclude that assigned reading was completed, establish that the assigned readers actually read the required material by the deadline. For continuous access, each reader must have such a route at every relevant time. Routes may differ between readers and may change during the interval. On each form-mediated route, the same X must express E, be borne by C and satisfy the required form. Keep any fixed edition, expression, form or carrier specified for the job. Delivery to a delegate can satisfy an undertaking to the group when its receiving rule grants that role. An entitlement for each member requires coverage of each member.
 
-A change of exact publication does not prove an interruption of this broader availability. A gap is established when the required availability fails across the permitted alternatives. Failure of one copy or route alone does not establish that broader gap.
+If everyone must use one carrier, identify a carrier accessible to all as required. Its accessible expressions can differ when the job permits. If the carrier must stay the same throughout, identify that same carrier across the interval. A single exclusive login can serve two readers in turn. It fails a requirement for simultaneous independent sessions. Joint reading of a display can suffice when the group needs one shared session.
 
-This broader statement needs no new public publication kind or generic occurrence unless a receiving use independently needs its identity.
+For a joint log, identify the agreed record and its accepted starting version. Check who may enter or merge changes and whether the intended readers can see the agreed entries when needed, including how competing edits are resolved. A shared read-only file and disconnected personal annotations allow reading but leave the joint entries unavailable. Authorized replicas that reconcile by 18:00 can serve an end-of-shift log. A team that needs the changes at noon must establish visibility by noon. Require one physical log only if that is part of the job.
+
+One established route suffices wherever it covers the requirement, even with an unknown backup. A failover guarantee with established starting conditions, capacity and transitions can cover the interval, including the switch. If a reader loses one route and a permitted alternative is unverified, coverage for that reader and time remains open. Established failure of every allowed route for that reader at that time refutes continuous access for everyone. Retain the readers, uses and times for which access is established.
+
+Availability establishes an opportunity to act. If actual delivery, receipt, reading or amendment is commissioned, establish the specified event. For an agreed final log, verify the specified content in the accepted version. If a particular edit or author matters, check the amendment and any required attribution. These cases use the ordinary publication relations without a new kind.
 
 #### E.24.PUB:4.3 - Use progressive explicitness
 
@@ -216,6 +220,8 @@ Use the smallest statement that supports the current work:
 3. **Contested availability:** state the `EpistemePublicationRelation` participants, obtaining evidence, and occurrence identity.
 4. **Contested expression:** open `PublicationExpressionRelation` and the applicable representation, preservation or loss pattern; inspect form conformance when the claim relies on it.
 5. **Contested carrier availability:** open `PublicationExpressionBearingRelation` plus the direct carrier-currentness or access pattern; preserve the fixed or quantified alternatives of the actual availability claim.
+
+If a crew needs an operating limit from a cited instruction, an accessible route to the relevant passage or sufficient source-attributed content on its offline card can each support the decision. A locator can finish a locating task. Check that the needed condition can be recovered in time when the task is to decide how to operate.
 
 Do not materialize all five levels as a standing publication card. Stop as soon as the receiving use can distinguish the operative object and relation.
 
@@ -251,7 +257,7 @@ A designator designates and a governed reference resolves to a referent. Neither
 
 In a pattern about an ontic, structure, architecture, characteristic space, method, or another subject, explain the subject's identity, relations, practical problem, and solution before publication details. Add E.24.PUB only when the receiving use depends on distinguishing the description, selected edition, form, carrier, audience, or bounded use.
 
-When the EntityOfConcern is a description episteme, the same rule applies one level up. The description stays the subject; publication of that description is a neighboring relation.
+An engineer checking the clearance of Pump #37 is asking about the pump. If the question becomes what its inspection card specifies, the card episteme becomes the subject. A verified reading of the card answers the second question. Using its value for the installed pump requires grounds that the measurement applies to that pump at the relevant time. A change of holonic scale requires a whole–part relation, such as the pump and its impeller. To compare levels of model abstraction, use B.5.MR on models of the same subject under the same inquiry and interpretation. If a summary drops a constraint, check which answers that change permits and whether the user relied on their exclusion. Publication of the card remains a separate relation.
 
 ### E.24.PUB:5 - Archetypal Grounding
 
@@ -317,7 +323,7 @@ When the later claim says that the published instruction was actually used, stat
 | `CC-E24PUB-1` | The bounded-use declaration names the intended receiving use. A separate plan, decision question, or `U.WorkPlan` is cited only when it independently exists and changes the publication claim. The publication statement names the selected edition, audience, bounded use, expression and carrier; it establishes no actual access, reliance, use, Work, or result. Any independently current stronger claim is routed to its direct pattern without reproducing that pattern's test here. |
 | `CC-E24PUB-2` | The selected episteme edition, audience declaration, bounded-use declaration, particular expression and carrier are independently identified; an optional reusable form has its own rules and conformance predicate. |
 | `CC-E24PUB-3` | `EpistemePublicationRelation` has the five exact participant meanings, the availability predicate, and the maximal-continuous-occurrence identity rule stated in section 4.1. |
-| `CC-E24PUB-4` | Exact expression and bearing predicates are recoverable when the receiving use depends on them. A selected form has its conformance predicate. Form-mediated availability uses the same X as witness for expression, bearing and conformance; broader availability retains its permitted alternatives. |
+| `CC-E24PUB-4` | Exact expression and bearing predicates are recoverable when the receiving use depends on them. A selected form has its conformance predicate. Form-mediated availability uses the same X as witness for expression, bearing and conformance; for a broader claim, the permitted routes cover the promised readers, times and work under §4.2.1. |
 | `CC-E24PUB-5` | Plain `published episteme` states publication participation. A receiving classification use has its C.3.2 basis; public-kind admission follows E.24.UK. The availability-only use retains the rejection `E24UK-NAR-EPUB-01`. |
 | `CC-E24PUB-6` | A `U.View` remains a same-individual dependent specialization of `U.Episteme` under an obtaining E.17.0 conformance relation; graphical appearance and A.6.3 construction alone supply no membership. |
 | `CC-E24PUB-7` | Representation correspondence is stated for the applicable operation; C.29 is used for its mathematical branch. Expression elements, reusable-form rules and subject-side objects retain their own identities. |
@@ -363,12 +369,15 @@ The practical question is what an audience can obtain for a stated use, and whic
 | --- | --- | --- |
 | Exact publication with fixed E, A, U, X and C | Which expression of this episteme was available to this audience, for this use, through this carrier? | Select it when the provided content or copy matters. Comparing X first makes an expression change visible without inferring a change of E. |
 | Form-mediated availability with a permitted expression X | Is some expression of E conforming to F available through C for A and U? | This is sufficient when the receiving use needs availability in that form. It leaves the particular X open; identify X as well when the question becomes what exactly was provided. |
+| Individual routes, possibly changing over time | Can each intended reader reach E when needed? | Establish one permitted route per reader and required time. A supported failover arrangement can establish continuous coverage. |
+| Shared carrier or session | Can the intended group use the required carrier together? | Check the same-carrier and simultaneous-use conditions that the job specifies, including permissions and capacity. |
+| Shared editing | Can the group maintain the agreed version by the deadline? | Check authority to edit, reconciliation and timely visibility of the entries. Synchronized replicas can serve one logical log. |
 | Exact publication with mandatory F as an additional participant | Which exact expression and reusable form were provided? | Record a selected F through form conformance. Making F a fixed participant of every publication requires a separate form selection even when the receiving use needs only the ordinary expression. |
 | Identify a publication change with a change of E | Did the account itself change? | This collapses two comparisons. Carrier or expression changes can preserve E; recover E through C.2.1 and compare its publication separately. |
 
 For form-mediated availability, one and the same X must satisfy expression, bearing and form conformance. An adequate expression elsewhere and a different conforming expression on C do not establish that C makes E available. This shared witness is the binding that the two separate existential support claims leave open.
 
-When publication obtains with a different X or C, it is another exact occurrence. Broader availability can nevertheless continue while at least one permitted expression and carrier remains available at every time in the stated interval. Keep any form or carrier restriction that the receiving use requires. A failure of one copy establishes a broader gap only if all permitted alternatives fail.
+A change of X or C gives a different exact occurrence. The broader claim survives when the permitted routes still cover the promised work for every required reader and time. Loss of one reader’s only permitted route breaks a guarantee to everyone even while others can still read. For a claim about an actual delivery or edit, identify evidence of that event.
 
 The cost of the exact comparison is selecting the expression domain and equality, carrier identity, and relevant time interval before comparing publications. A continuing managed file and an immutable snapshot answer different identity questions. For ordinary use, the readable publication sentence suffices; recover this detail when its alternatives can change the answer.
 

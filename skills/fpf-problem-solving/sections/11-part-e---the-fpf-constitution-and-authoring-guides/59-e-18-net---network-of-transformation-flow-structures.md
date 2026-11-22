@@ -133,7 +133,7 @@ When functional layers are useful in a flow network, organize them by the contri
 
 Nesting one selected network inside another records member grouping for the current question. The depth of that nesting does not determine the functional layers or a modular hierarchy. Use C.30.STRAT:4.2 to keep functional layers distinct from levels in a module and interface structure.
 
-Cycles among selected cross-flow relation occurrences remain possible when their applicable predicates and constraints permit them. Feedback from operation or evaluation to development is therefore compatible with acyclic membership: the cycle is among those relation occurrences, not in network containment.
+Cycles among selected cross-flow relation occurrences are compatible with acyclic member nesting when their predicates and constraints permit those connections. To claim operating feedback, recover how the returned observation was used to choose or maintain a subsequent action (C.43).
 
 `E.18` defines the complete `FlowPositionRef` identity. Import that tuple unchanged; E.18.NET defines only the `ExposedFlowPositionRef` extension needed for a boundary position reached through one finite member path:
 
@@ -281,7 +281,7 @@ Replacing an actual run, applied selection constraint or selected occurrence fir
 
 **Internal coffee subflow.** A coffee-brewing TFS exposes a preparation portion containing grinding, dosing, and wetting positions plus their selected parent-internal relation occurrences with all participants retained. Its entry and exit remain positions of the brewing TFS. The practitioner uses E.18's `SubflowRef`; no second TFS or network is created.
 
-**Independent network.** A roastery-production TFS and a café-brewing TFS concern different objects and have separate Work occurrences, valuation boundaries, and architecture change cadence. The applicable supply pattern defines its predicate and applicability, and the current delivery-and-acceptance facts satisfy that predicate for a dispatch position in the first and an accepted-stock position in the second. The following selection suffices for ordinary first use.
+**Independent network.** A roastery-production TFS and a café-brewing TFS concern different objects and have separate Work occurrences, valuation boundaries and architecture change cadence. The supply predicate and the dispatch and acceptance facts establish that lot 24 reached the café's accepted-stock position. For today's brewing decision the café also needs enough of this lot available and eligible at the time of use.
 
 ```text
 selectedNetworkRef: RoasteryCafeSupplyNetwork@CoffeeService
@@ -296,12 +296,12 @@ selectedNetworkConstraintRefs[]:
   - AcyclicDirectMemberConstraint@RoasteryCafe
 networkUseFrame:
   questionOrAction: decide which accepted stock can enter the coffee-service brewing flow
-  admissibleUse: use the selected supply relation to choose accepted coffee stock for the brewing flow
-  stopOrReturnCondition: return to the supply claim when its delivery-and-acceptance basis no longer supports this stock choice
+  admissibleUse: trace the accepted lot through the supply relation and check its present available quantity and release conditions for the intended batch
+  stopOrReturnCondition: stop when the required quantity is eligible and available at brewing time, or when an established condition rules out this lot. Revisit any missing fact that can change the choice.
 returnCondition: either member, the supply occurrence, an endpoint or exposure, acyclicity, or the coffee-service question changes
 ```
 
-This filled basis is enough for the immediate selection; it is not a `TransformationFlowStructureNetworkRecord@Context`. Create that separate descriptive record only when the result must survive the current work.
+The dispatch and acceptance records suffice to trace what the café received. Suppose its current records show 4 kg of lot 24 still on hand and uncommitted, cleared for brewing at 10:00. The café can choose it for a 3 kg batch then. If 3 kg has since been reserved for another order, only 1 kg remains available for this batch. A recall can close the choice even with all 4 kg present. With only the acceptance receipt, report the completed delivery and recover the needed current condition. Create a `TransformationFlowStructureNetworkRecord@Context` only when the network description must survive the current work.
 
 If the supply claim has no admitted relation kind or applicable predicate, carry the governing pattern's `missing-governor` result. If required facts are unavailable, carry `missing-information`; if a sufficient case basis fails the positive test, carry `factually unsupported`. Neither missing information nor a failed positive test asserts a negative. Only an applicable negative rule and satisfying case basis can supply a negative result.
 
@@ -373,7 +373,7 @@ Once the network is admitted, a separate A.22.CGUS demonstrative slice may trave
 
 A manufacturing release relation has three participants defined by one admitted domain relation pattern: one product-definition position in a TFS selected to answer the development question, one equipment-readiness position in a TFS selected to follow the changes that establish equipment readiness, and one release-condition position in a TFS selected for assurance. Keep the three participants in predicate order in one network row. Three unlabeled arrows would lose the ternary relation.
 
-Later, a use-observation relation connects a position in a TFS selected for operation or use back to a position in a TFS selected to answer the development question. If independently established cross-member occurrences lead from that development position to the operating position, the observation closes the path into a feedback cycle. In either case, the selected direct-member nesting remains acyclic. The feedback does not make the operation-or-use TFS a member of itself and does not turn observation into development Work.
+Later, an observation from use reaches a development position. If admitted cross-member relations also lead from that position to the operating position, these connections form a directed cycle. To establish operating feedback, trace the observation into a subsequent development decision that governs operation. For example, the engineer used the reported failure rate to retain the current setting under the applicable rule. A rate merely stored in a log establishes receipt or storage. The network can retain its directed cycle while the decision follows an independent schedule. Direct-member nesting remains acyclic.
 
 #### E.18.NET:5.4 - Architecture and two demonstrative boundaries
 

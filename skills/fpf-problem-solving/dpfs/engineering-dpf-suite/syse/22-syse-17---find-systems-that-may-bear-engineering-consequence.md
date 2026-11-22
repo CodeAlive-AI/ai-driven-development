@@ -11,10 +11,7 @@ realization, operation, maintenance, misuse, failure, recovery, retirement, or l
 bearers even when their identities are only partly known. Qualify not-yet-present bearers as intended System
 referents in modal claims.
 
-Begin with one proposed engineering alternative or change and the decision that can alter it. If an existing
-account covers the material consequences at the needed scope and evidence strength, use that answer.
-Otherwise trace possible consequences beyond the current contractual, organizational, and technical-interface
-boundaries. Keep obtaining relations, modal path claims, observed changes, value judgements, and specialist
+Begin with the engineering decision. Does the team need one reason to keep another design available, the identity of every System meeting an agreed criterion, or assurance about a property of the configuration in use? Establish which uses, intervals and changes matter to that decision. Reuse a sufficient account. Where its bounds are in question, trace the proposed change beyond contractual, organisational and interface boundaries. Keep obtaining relations, modal path claims, observed changes, value judgements, and specialist
 decisions separate. When the missing result is a person's preference, an agreement, or an account of how a proposed
 operation would work, use a corresponding elicitation or scenario result, or return that missing input to the
 decision. Tracing consequences alone cannot supply it.
@@ -104,17 +101,17 @@ situations, use an available elicitation or scenario result, or assess its acqui
 needed but unavailable result as an explicit gap.
 
 Retain consequence claims that support, change or hold open the named engineering decision, and state what supports each.
-A bounded account can support a choice when it states any material uncertainty.
+Use the decision's acceptance rule to establish whether the remaining uncertainty permits the proposed choice. A design may enter a trial with an unresolved consequence when the trial is authorised on those terms. A claim that the consequence cannot occur needs grounds for exclusion.
 Use separate grounds for preferences, representation or operating scenarios when the choice depends on them.
 
 #### SYSE.17:4.1 - Perform the Move
 
 1. **Name the focus and receiving decision.** State the proposed alternative or change, the actual System or
    intended System referent and configuration to which it applies, the use situation, relevant scope and horizon,
-   and the engineering decision that can use the result.
+   and the engineering decision that can use the result. Establish what qualifies a System for inclusion, which scope choices belong to the engineer, and the configuration for comparison if the decision depends on a difference. Use the same horizon and comparable external conditions while allowing the proposed change to alter its own demands.
 2. **Generate consequence-producing situations.** Consider Work and events that may expose the alternative's
    consequences—for example, realization, intended use, maintenance, plausible misuse, failure, recovery,
-   retirement, or later modification. Retain situations whose consequences bear on the receiving decision.
+   retirement, or later modification. Retain situations whose consequences bear on the receiving decision. To choose the bounds, vary the surrounding use with the component configuration held fixed, then vary the distribution among users or times while keeping the reported total fixed. Retain the difference that changes the engineering choice, or establish a bound that covers it. A System outside the project can bear a consequence.
 
 3. **Trace outward without promoting hypotheses to facts.** Follow supported obtaining relation occurrences
    separately from modal consequence-path claims. For each modal path, name candidate participants and proposed
@@ -127,11 +124,15 @@ Use separate grounds for preferences, representation or operating scenarios when
    retain that uncertainty. Test System identity and boundary when the consequence claim depends on that
    classification, especially for a collection treated as one whole. A role label or an appointment to represent a group
    does not establish the group’s identity or boundary. Return any unresolved recognition question that matters to the decision.
+
+   For a complete list, verify every entry and account for every qualifying System within the agreed scope. A named register requires recoverable identities. When an authorised group channel may deliver notice, establish its coverage and the delivery required by the order. A configuration rule that leaves the protected property unchanged for every eligible System can support an empty list.
 5. **Qualify the consequence.** State the characteristic or condition that may change, bearer, configuration,
    conditions, direction or magnitude cue when known, interval, and uncertainty. Distinguish an observed occurrence
    from a modal claim. State the evidence basis—for example, observation, measurement, simulation, model-based
    prediction, or a bounded expert estimate—and its limits. Use `C.28` when reliance depends on a causal,
    intervention, or counterfactual claim.
+
+   To report that a material effect is absent, name the property being protected, the criterion defining the change and the evidence excluding it over the relevant configurations in use. For a numerical threshold, place the equality case on the correct side. A bound on the mean and protection for every individual use can lead to different design decisions. A negative log can exclude a past occurrence when every such occurrence would have left a recognisable signal and the record rules those signals out. Where detection is imperfect, use any justified bound or risk estimate at its stated scope.
 6. **Add value and specialist claims only when needed.** Name the bearer and value frame for a value-qualified
    consequence—for example, a claimed benefit, harm, burden, opportunity, or accepted loss. Preserve conflicts and
    distributions. Select any specialist acquisition through A.15.9 and C.11.DUA before sending the question with
@@ -139,6 +140,8 @@ Use separate grounds for preferences, representation or operating scenarios when
 7. **Connect consequences to the engineering choice.** Add or revise a decision contribution—for example, a constraint, alternative,
    probe, safeguard, monitoring condition, reversible step, refusal, or escalation. When that contribution relies
    on permission, authority, responsibility, or representation, establish the required relation separately.
+
+   For a shared operating constraint, identify what the uses require together, when they can coincide or accumulate, and how the common service or resource meets that demand. A joint limit can decide the question without a name for every user. To promise a choice of actions, include when the operator learns which action is needed and whether they can take it in time. One attainable combination in which the specified response fails defeats the guarantee for that response. If the operator may choose, check whether an authorised strategy succeeds for every situation using the information available at each choice. To rule out the guarantee for all allowed strategies, cover all of them.
 8. **Finish with the useful answer and its material uncertainty.** A qualified consequence account, constraint,
    alternative, or explicit unknown can complete this use. Select a further discovery action through C.11.DUA
    only when its obtainable contribution warrants the full preparation, access, performer, interpretation,
@@ -158,7 +161,7 @@ conditions. Select any further inquiry separately from identifying that possible
 | Field | Required content |
 | --- | --- |
 | focus and receiver | Proposed alternative or change; actual System or intended System referent and configuration to which it applies; use, scope, horizon, and receiving engineering decision. |
-| examined situations | Work or events whose consequences bear on the decision. |
+| examined situations | The situations relevant to the decision and the grounds for any claim to cover all qualifying cases. For a combined result, give the common condition or receiving property, timing and applicable rule. |
 | bearer references | Actual bearers with the evidence and limits of identification; intended System referents for not-yet-present bearers; explicit unknowns where identity, boundary, or existence remains unresolved. Include a System-recognition basis when the consequence claim relies on that classification. |
 | relations and modal paths | Supported obtaining relation occurrences; separately stated modal consequence-path claims; conditions, evidence, uncertainty, any selected probes, and missing-relation blockers. |
 | consequence claims | Changed characteristic or condition, bearer, configuration, time, direction or magnitude cue, observed-or-modal status, evidence basis, uncertainty, and causal status. |
@@ -235,6 +238,8 @@ defined. Those results may expose further bearers and revise the layout alternat
 missing physical-clearance evidence. If an existing qualified geometry and access account settles the
 narrow choice, use it directly.
 
+For a service example, consider a proposed single reception desk with one clerk. Two departments may each submit a different eight-minute request at opening, both due fifteen minutes later. Each request fits on its own. If both can be due together, their sixteen minutes of work exceed the fifteen available. That permitted case rules out the service guarantee for this design without identifying which request would finish late. With at most one request during the whole interval and at least eight minutes of service available after its arrival, the desk can meet the deadline. A record of a particular day's work would answer which requests actually arrived and when they finished.
+
 **When the full pattern is unnecessary.** If the available account answers the decision at its required
 scope and strength, return that answer. If one identified causal claim about one identified System is
 the whole question, use `C.28` and the direct subject pattern.
@@ -265,8 +270,7 @@ consequence can change the decision; specialist authority remains with the appli
       uncertainty, and causal status.
 - [ ] Every value-qualified consequence names its bearer and value frame, and any conflict remains explicit.
 - [ ] Each retained consequence supports, changes or holds open an engineering choice through a named decision contribution.
-- [ ] The account retains the residual uncertainty and reopen condition needed by its recipient. Further inquiry
-      is selected for attainable value against its whole burden, including the combined programme.
+- [ ] Any complete, negative or combined finding supplies coverage for the criterion, Systems and configurations actually claimed. The result states which action, if any, the decision rule permits under the remaining uncertainty and what would reopen it. A further inquiry earns its place by its attainable contribution and whole burden.
 
 ### SYSE.17:8 - Common Failures and Repairs
 

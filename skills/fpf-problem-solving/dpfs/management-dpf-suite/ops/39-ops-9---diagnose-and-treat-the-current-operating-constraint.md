@@ -39,7 +39,7 @@ The opposite error demands a complete causal model before making any useful deci
 
 Name the operating result, its accepted unit, demand or commitment being compared, relevant subjects, horizon and acceptance criteria. Reuse current OPS.1–OPS.4 inputs where they fit. Distinguish accepted demand, service attempts and accepted results; a failed test or reopened case can consume capacity without adding a result.
 
-State the shortfall in terms that matter to the question, such as fewer accepted results, unacceptable time to result, missed qualified service conditions, or another explicit operating consequence. Preserve the result definition and case mix in later comparisons. A changed definition reopens the account rather than silently improving the metric.
+State the shortfall in terms that matter to the question, such as fewer accepted results, unacceptable time to result, missed qualified service conditions, or another explicit operating consequence. For like-for-like processing, hold the relevant mix and quality conditions comparable. For the effect on a whole service, include the demand admitted, deferred or returned under each way of working, using the same external conditions and result definition. A changed definition reopens the account rather than silently improving the metric.
 
 #### OPS.9:4.2 - Reconstruct where completion is lost
 
@@ -63,7 +63,7 @@ If the available observations fit more than one explanation, state what they est
 
 Select the basis appropriate to the claim and decision:
 
-- A resource/precedence bound can establish infeasibility under explicit demand, capability, calendar and acceptance assumptions. Show a feasible schedule as well when claiming that a proposed treatment makes the result achievable.
+- A resource or precedence bound can exclude a proposed result under explicit demand, capability, calendar and acceptance assumptions. For feasibility, supply a workable order or an argument establishing that one exists. Produce the actual schedule when the recipient needs to use it.
 - Event-history replay can reveal starvation, blocking, rework and timing relations. Its observational explanation remains limited by event quality and unobserved conditions.
 - A bounded field probe changes one consequential mechanism under the applicable professional Method and permission. State the comparison cases or windows, preserved conditions, interference, expected observations and stopping rule.
 - A specialist causal or scheduling analysis is warranted when uncertainty, confounding or coupled behavior could alter a consequential treatment or the grounds for the diagnosis, and simpler evidence is insufficient.
@@ -117,7 +117,7 @@ A different constructed service must finish five ready jobs within twelve hours.
 
 The verifier is available for eight hours. Verification completions occur at hours 2, 4, 6 and 8, so no more than four jobs can be accepted. Extra upstream processing capacity cannot change that bound: the five inputs are already ready.
 
-The resource owner can supply two additional verifier-hours within the same twelve-hour horizon. With that change, the fifth verification completes at hour 10 and certification at hour 10 plus ten minutes. The comparison therefore returns a feasible five-job treatment candidate under the stated conditions. Its selection still uses the supplied resource cost, permission and protected consequences.
+The resource owner can supply the two additional verifier-hours from hour 8 to hour 10, with a certification slot from hour 10 to hour 10 plus ten minutes. With that change, the fifth verification completes at hour 10 and certification at hour 10 plus ten minutes. The comparison therefore returns a feasible five-job treatment candidate under the stated conditions. Its selection still uses the supplied resource cost, permission and protected consequences.
 
 If certification availability later falls to two reserved slots, the old verifier treatment no longer supports five accepted jobs. The same result definition now exposes another limiting relation. Adding further verifier time cannot repair that missing certification capacity.
 
@@ -139,7 +139,7 @@ Two qualified arrangements are available before the window. An upstream fixture 
 | Upstream fixture 2/5/2 | 9 | 29 | two qualified staff-hours, with a reversible fixture change |
 | Reassigned assistance 3/4/4 | 11 | 27 | three staff-hours of preparation and a changed C assignment |
 
-For one accepted result due by 9, select the fixture if its preparation can actually be supplied without displacing protected work. It changes the deadline result although B still limits the sustained pace. If the receiving requirement changes to five results by 28, that fixture is insufficient and the reassigned arrangement supplies a feasible alternative. A financial ranking needs the comparative costs. A probability of timely service needs evidence beyond these fixed durations.
+For one accepted result due by 9, select the fixture if its preparation can actually be supplied without displacing protected work. It changes the deadline result although B still limits the sustained pace. If the receiving requirement changes to five results by 28, that fixture is insufficient and the reassigned arrangement supplies a feasible alternative. A financial ranking needs the comparative costs. When the durations, resources and arrivals are fixed by the stated conditions, the model can guarantee or exclude timely service. For a probability of service in a variable operation, identify what the feasible cases and any supported probability bounds establish.
 
 Accumulated waits can make another noncapacity treatment useful. Add four evidenced 15-minute handoff waits before acceptance of the first current job: it now finishes at 11. A coordinated handoff arrangement that removes those four waits returns completion to 10 without changing B's five-hour rate. If the required first-result deadline is 10 and the supplied coordination/cover burden is half a staff-hour outside the service window, this can be preferable to the two-hour fixture preparation. If a wait is instead required for a qualified acceptance observation, it is not removable by dispatch policy; retain it and redo the comparison. The useful intervention follows the actual path and permissible waits, not the label “nonconstraint.”
 
@@ -180,7 +180,7 @@ These questions help readers interpret the diagnosis and any decision based on i
 | --- | --- | --- |
 | Every operation has one permanently named bottleneck. | Distributed delay and changing regimes are excluded before observation. | State the result-relative limiting relation and allow unresolved or multiple mechanisms. |
 | A fast local step proves whole-operation improvement. | Acceptance, joins and rework may dominate the result. | Preserve the accepted unit and inspect the whole relevant path. |
-| A capacity ratio is a feasible schedule. | Precedence, access and simultaneous-resource conditions can defeat it. | Supply the timed witness or retain an infeasibility bound only. |
+| A capacity ratio is a feasible schedule. | Precedence, access and simultaneous-resource conditions can defeat it. | Establish a workable order under those conditions or give a sufficient argument for its existence. Return a timed schedule when one is commissioned. |
 | A generic causal checklist replaces the field probe. | No actual admissible change or observation is specified. | Name the professional Method, changed action, comparison and stop. |
 | A successful treatment remains the answer forever. | The arrangement and limiting relation have changed. | Reopen the account after the material change. |
 

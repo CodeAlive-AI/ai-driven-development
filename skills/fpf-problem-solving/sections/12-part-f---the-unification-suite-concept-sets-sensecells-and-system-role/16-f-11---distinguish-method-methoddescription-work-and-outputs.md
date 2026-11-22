@@ -128,7 +128,7 @@ Use F.17 only when these local meanings need stable addresses. Use F.9 only if a
 For each dated Work named here and in §11, take independent A.13/A.15.1 admission as a case premise. Its actual performers and obtaining assignments are recovered through that basis. Add F.6 only when a case also needs precise assignment-bound attribution.
 
 1. **Data pipeline deployment.** Method: delta-load transformation. MethodDescription: `etl_delta.py@v3` plus its documented rules. Work: the nightly run on 2025-07-14. No control output is material. Approval of the description and measured rows processed are separate claims.
-2. **Valve control.** Method: PID tuning and control method. MethodDescription: tuning sheet and cited IEC program description. Work: PLC task cycles from 18:00 to 18:30. Outputs: the exact setpoints and PWM duty values produced during those cycles. Temperature observations, not the commands alone, support a settling-time verdict.
+2. **Valve control.** The PLC runs the PID control method using gains recorded on its tuning sheet. The cycles from 18:00 to 18:30 produce PWM duty commands from a setpoint and measured temperature. A higher loop may produce the setpoint supplied to this loop. To establish tuning, identify the work in which someone selected or adjusted the gains. Judging settling time requires observations of the controlled temperature.
 3. **Clinical assay.** Method: ELISA. MethodDescription: kit IFU v7. Work: the assay run on batch B217. Robot commands are outputs during the Work; absorbance observations support the batch evaluation. IFU approval does not settle the batch verdict.
 
 ### F.11:10 - Anti-patterns & remedies
@@ -166,7 +166,7 @@ The plan does not establish SLO satisfaction. F.12 evaluates the promise from Wo
 * **Method:** PID with feed-forward.
 * **MethodDescription:** controller tuning sheet and program description.
 * **Work:** the actual PLC task cycles in the stated interval.
-* **Outputs:** setpoints and valve-duty values produced during those cycles.
+* **Outputs:** valve-duty commands from this loop. Its input setpoint can be an output of an identified higher loop. Attribute a tuning result to the work that selected the gains.
 * **Evidence:** temperature observations and their scale and unit basis.
 
 If the IEC task expression and a PROV Activity expression are related for reporting, state that exact F.9 relation and loss. It does not create the Work-to-output or evidence relations.

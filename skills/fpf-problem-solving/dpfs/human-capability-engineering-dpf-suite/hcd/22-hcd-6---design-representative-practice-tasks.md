@@ -39,7 +39,7 @@ A practice task can look realistic while testing the wrong contribution. A pump 
 
 Support changes the task. A worked example may help a novice see the reasoning, but leaving the same intermediate prompts in the next attempt can turn recognition into copying. Removing every source or tool can make the task unlike later Work and test memory that was never required. AI assistance can generate a plausible answer while hiding whether the person noticed a configuration mismatch.
 
-The practitioner therefore has to preserve the relations that make the target action necessary and choose help for the current practice purpose. When recognition or adaptation is the target, vary a condition that changes the warranted action or warranted conclusion.
+The practitioner therefore has to preserve the relations that make the target action necessary and choose help for the current practice purpose. When selecting a variation, ask what it could reveal. New conditions may warrant the same action for a different reason. To observe recognition in one situation, it can suffice to establish the learner's first choice and the information available then.
 
 ### HCD.6:2 - Problem
 
@@ -63,7 +63,7 @@ Some tasks reward refusal whenever evidence is incomplete. Rewarding every refus
 
 ### HCD.6:4 - Solution
 
-Design backward from the target human action and the later-Work result it supports. Use or build one sufficiently whole task, expose relevant reasoning when useful, and choose the help, repetitions and variations that serve the present practice purpose. To observe independent recognition, selection or adaptation, withhold help that supplies the contribution being judged and change the case enough to distinguish that contribution from remembering the earlier answer.
+Design backward from the target human action and the later-Work result it supports. Use or build one sufficiently whole task, expose relevant reasoning when useful, and choose the help, repetitions and variations that serve the present practice purpose. To observe independent recognition, selection or adaptation, withhold help that supplies the contribution being judged and establish what the person did while the choice was open. Use a changed case when the question concerns adaptation or an earlier answer could otherwise account for the response.
 
 #### HCD.6:4.1 - Bind the Practice Use and Domain Truth
 
@@ -81,13 +81,15 @@ If a subject judgement needed for the task, a necessary Method description, safe
 #### HCD.6:4.2 - Build a Sufficiently Whole Task
 
 1. **Give the task a purpose.** Describe the situation, who needs the result, what the learner must do or establish, and what makes the returned work usable. Include any next operation that depends on it.
-2. **Include the relations that elicit the target action.** Supply the facts, comparisons, interfaces, alternative explanations, configuration identifiers, constraints, or specialist-return conditions that make the selected Method relevant.
+2. **Include the relations that elicit the target action.** Provide the facts, constraints, interfaces and means the person would have before choosing. If learners must construct an explanation, let them determine which parts to examine, which accounts fit the observations and whether choosing between them changes the action, how it can be carried out or the explanation owed to the recipient. Two accounts can support the same immediate action while giving different answers about how the outcome arose. If they must design the model, give them the recipient's working situation before a diagram or table chooses the parts, their relations or the distinctions to retain. Ask how another possible arrangement could affect that recipient's action or its grounds. A diagram may supply the structure and still leave a real choice about what to inspect or conclude. For interpreting a supplied model, give them the model.
 3. **Make the human contribution visible.** State what the person must notice, choose, calculate, explain, adapt, coordinate, check, or return. State what the learner may obtain from references, AI, tools, peers or specialists.
 4. **Declare success and critical error before the attempt.** Use target-domain criteria. Include the uncertainty and stopping conditions that affect the result. Treat a critical mismatch as a failure under its domain criterion.
 5. **Remove irrelevant burden.** Omit production detail that changes neither the target action nor its interpretation. When realism introduces another independently limiting contribution, prepare it, support it, or split the practice purpose.
 6. **Keep the result feasible.** Fit the case, feedback, correction, and retry inside the declared learner and provider resources. If the case exceeds the available window, revise it or identify the allocation still needed.
 
 Show what encompassing work is being performed through the target action during the attempt. A practice task can isolate a weak intermediate contribution, but it must also prepare the combination in which that contribution is needed. For a dancer whose strength and figure recall are already adequate, suitable reduced-demand practice can develop balance during rotation. Returning to the figure then tests coordination with its timing and other movements. Choose variations that put the coordination itself to the test. State which assistance is available during practice and which will be available during later performance. FPF B.1.5.EW helps recover these connections between constituent performances and encompassing work; the dance Method, not the framework example, determines the exercise and acceptable result.
+
+To choose how much of the situation to model, start from the action the recipient needs to take. A fixed action can still leave the learner to design how to carry it out. If competing accounts of the same visible result change the design, the action or its explanation, identify the difference the learner must resolve. Follow those possibilities to the part, interaction or outside contribution that makes the difference. Work out what each account predicts and which observation the learner can obtain in time to distinguish the answers. A common warranted action may already settle the case. If the learner must make these choices, retain the ordinary sources and choices available in the job.
 
 When the task presupposes a distinction the learner cannot yet notice, HCD.6.1 helps construct an accessible encounter, vary a misleading cue and connect the noticed difference to action. Include that attempt in the practice task, then return to the whole contribution. Keep the preparatory encounter in later performance only if that work requires it.
 
@@ -138,7 +140,7 @@ If a demonstration or worked explanation is needed, decide what it must show fro
 
 For a first practice attempt, retain or supply worked support when it helps the person learn the target action. The learner may complete a partially worked task or repeat an operation before a new condition is useful. State what the learner performs and what the support supplies.
 
-When the purpose is to observe independent recognition, selection or adaptation, change a condition that can expose that contribution. Remove the Method name, recommended option, decisive calculation or next move when the person must supply that value. Retain references, calculators, AI and specialist results that are compatible with the intended contribution.
+When the purpose is to observe independent recognition, selection or adaptation, use an observation that shows the person made that choice, including adequate earlier work. Vary a condition when the changed response or the distinction from a remembered answer matters. Remove the Method name, recommended option, decisive calculation or next move when the person must supply that value. Retain references, calculators, AI and specialist results that are compatible with the intended contribution.
 
 State which help is permitted before the attempt. Distinguish the help planned for that attempt, what was available, what the learner received and what they used. If a teacher or AI supplies an answer-bearing cue, keep the attempt as supported practice and do not reuse it as evidence of independent recognition.
 
@@ -194,7 +196,7 @@ The result is complete when another competent practitioner can present the inten
 
 #### HCD.6:4.8 - What Changes in Practice
 
-Identify the relation the person must notice and act on, which help is legitimate, and what result permits focused feedback. For a variation, specify what condition changes the warranted answer. A new case may support a refusal, a bounded continuation or a different Method.
+Identify the relation the person must notice and act on, which help is legitimate, and what result permits focused feedback. For a variation, say which condition changes and what the learner must reconsider. The same action may remain warranted on different grounds. A new case may support a refusal, a bounded continuation or a different Method.
 
 ### HCD.6:5 - Archetypal Grounding
 
@@ -208,7 +210,7 @@ The controller log and four specialist-hours are available. The supplied complet
 
 The first attempt receives independent measurements of 22.3 kW and 99.5 m³/h, with uncertainties of 0.2 kW and 1 m³/h respectively. Ask the person to compare like quantities and use both uncertainty bounds. Even the lowest new ratio, 22.1/100.5, exceeds the stipulated baseline 20/100; this weakens the measurement-error explanation under the supplied conditions. After the power and flow contributions, one and a half specialist-hours remain for pressure. The learner can select that observation and explain how different pressure values would affect the comparison between resistance and efficiency. Until a sufficient observation is available the cause remains open.
 
-The learner must use the calculation to explain which causes remain plausible and what response the available evidence supports. In a later variant without a worthwhile obtainable observation, the learner can finish the qualified explanation with its live rivals and return that account while leaving a resistance-specific remedy unselected. A unique cause remains unproved. A renamed machine with the same numbers would add no useful variation; neither does a generic request to collect more data.
+The learner must use the calculation to explain which causes remain plausible and what response the available evidence supports. In a later variant without a worthwhile obtainable observation, the learner can finish the qualified explanation with its live rivals and return that account while leaving a resistance-specific remedy unselected. A unique cause remains unproved. A renamed machine with the same numbers would add no useful variation; neither does a generic request to collect more data. This worked contrast supplies the candidates and their pressure predictions. Credit the learner’s interpretation and the part of the choice they made. HCD.28:5.1 gives each learner an opportunity to construct an inquiry before its alternatives are supplied.
 
 #### HCD.6:5.2 - Ticket Load after Duplicate Removal
 
@@ -226,7 +228,7 @@ These cases distinguish a changed unit, a sufficient bound and a receiving use t
 
 The first engineering case supplies a vendor report for FW7 while the intended release configuration requires HW3/FW8/SCHED2. The correct action is to identify the mismatch and withhold that use. A correct financial calculation does not make the FW7 report applicable to FW8.
 
-The varied case supplies a report for HW3/FW8/SCHED2, confirms mandatory checks, and leaves 24 test hours. Ten changes in three homogeneous batches require 23 hours. The person should propose the bounded ten-change use and preserve the continuing queue when demand is twelve. Repeating the earlier refusal is now wrong because compatible evidence is present. When available time falls to 22 hours, promising ten changes becomes unsupported again.
+The varied case supplies a report for HW3/FW8/SCHED2, confirms mandatory checks, and leaves 24 test hours. Ten changes in three homogeneous batches require 23 hours. The person can propose ten of the twelve requested changes. If ten are accepted and the other two stay open, identify the work that carries over. Repeating the earlier refusal is now wrong because compatible evidence is present. When available time falls to 22 hours, promising ten changes becomes unsupported again.
 
 This task family tests whether the person checks the report configuration and then uses the available test time to decide what can proceed. The FW7 report, the compatible FW8 report and the shorter window warrant different responses.
 
@@ -342,7 +344,7 @@ This section addresses task design for a named person or a future audience under
 - [ ] For each material contribution, the task identifies what the learner, other people and tools supply, and which environmental conditions, permissions or authority the task requires.
 - [ ] Permitted help is stated before each attempt, and answer-bearing cues are removed only where the target requires it.
 - [ ] When a demonstration or worked explanation is used, it exposes the action or reasoning needed. The task gives the learner an opportunity to use that help and the practitioner a way to observe the learner’s response.
-- [ ] Help and repetition fit the current practice purpose. When recognition, selection or adaptation is the target, the set includes a condition change that can expose that contribution.
+- [ ] Help and repetition fit the practice purpose. To judge recognition or selection, establish what the learner chose while the choice was open. Use a changed condition when adaptation is at issue or a remembered answer could explain the response. Suitable earlier work can supply the observation.
 - [ ] The set includes warranted refusal and supported continuation when that distinction belongs to the target.
 - [ ] Feedback names the affected criterion and next action. Same-case correction is distinguished from a later changed-case observation of recognition or adaptation.
 - [ ] The required task, feedback, correction and retries fit the learner’s and provider’s resources, or the result identifies the gap or needed redesign.
@@ -354,12 +356,12 @@ This section addresses task design for a named person or a future audience under
 
 | Anti-pattern | Why it fails | Repair |
 | --- | --- | --- |
-| “Change the pump to a ticket queue” | New nouns can preserve the same cue and answer. | Change a relation or condition that alters the warranted Method or result. |
+| “Change the pump to a ticket queue” | New nouns can preserve the same cue and answer. | Vary a relation that matters to the target action. The learner may need to justify retaining the same choice under the new conditions. |
 | “Use a real project” | Production realism can add uncontrolled risk, access limits, and other human or specialist contributions. | Bound the task around the target action and use qualified domain and safety inputs, identifying any still missing. |
 | “Repeating the shown answer demonstrates adaptation” | The repeated answer may depend on memory of that case. | Keep its legitimate practice use; test adaptation through a changed condition without supplying the answer being judged. |
 | “No help means independent” | Removing legitimate references or tools can test a different contribution from later Work. | Specify the human contribution and retain compatible support conditions. |
 | “Always refuse if evidence is uncertain” | Generic caution fails when sufficient compatible evidence supports bounded action. | Pair missing-evidence and sufficient-evidence variants with explicit criteria. |
-| “The corrected response proves independent recognition or adaptation” | Feedback may have supplied the contribution that the later claim attributes to the learner. | Keep the correction as supported practice and record the help. For a claim of independent recognition or adaptation, use a changed task that leaves that contribution to the learner. |
+| “The corrected response proves independent recognition or adaptation” | Feedback may have supplied the contribution that the later claim attributes to the learner. | Credit the correction. Look for an occasion when the learner supplied the choice, including adequate earlier work. For adaptation, establish how the learner handled the relevant change. |
 | “Harder is more representative” | Difficulty without target relevance raises burden and obscures the result. | Scale complexity to current knowledge and the action being elicited. |
 | “The answer key defines professional truth” | An invented key can encode unsafe or wrong domain guidance. | Obtain a qualified domain source or label stipulated teaching facts and their limits. |
 

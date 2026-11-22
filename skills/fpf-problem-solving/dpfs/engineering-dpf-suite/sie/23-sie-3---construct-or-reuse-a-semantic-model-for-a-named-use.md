@@ -34,13 +34,13 @@ The opposite failure is to construct a larger ontology whenever a model question
 
 ### SIE.3:4 - Solution
 
-Select or develop only the semantic content needed for the named use. Qualify it through discriminating cases and make its maintained edition accessible to the consumers who will rely on it.
+Select or develop only the semantic content needed for the named use. Qualify it against the required questions and any conditions that distinguish the answers and make its maintained edition accessible to the consumers who will rely on it.
 
 #### SIE.3:4.1 - Pattern-Use Unfolding
 
-1. **State the questions and answer distinctions.** Use competency questions or an equivalent plain description. Name the subject, grain, configuration or interval where relevant, expected answer, and a counterexample. Work with domain participants at a level where they can explain the distinction. Separate a useful model question from a request to choose a storage or diagramming tool.
+1. **State the questions and answer distinctions.** Ask the domain participants what they need to decide, about which subject and at what grain or interval. Consider the information the final model and its available context give them at the time of use. Which possible states would they still be unable to distinguish? For an exact answer, those states must agree on the answer. For a permitted choice, there must be an action the recipient can take that meets the obligation throughout that group. Keep the grounds for any explanation they owe. Two fields can each replace the other while removing both loses the distinction. Restore a needed relation or constraint, then choose an encoding for the resulting model.
 2. **Recover the available meanings.** Use the relevant SIE.2 results or directly supplied source meanings. Inspect candidate models' definitions, relations, constraints, examples, edition, access, and maintenance conditions where those can affect the use. Source labels alone cannot settle suitability.
-3. **Try sufficient reuse.** Replay the required questions and counterexamples against an available model. When its content and applicable conditions suffice, return that model and the qualification. This completes the Method. Leave an uncovered question explicit if a permitted narrower use can continue.
+3. **Try sufficient reuse.** Apply the model's definitions, relations and constraints to the questions. Use a discriminating case where its adequacy remains open. When its content and applicable conditions suffice, return that model and the qualification. This completes the Method. Leave an uncovered question explicit if a permitted narrower use can continue.
 4. **Locate the gap.** Identify the missing distinction, relation, constraint, or incompatible commitment. Extend a module when the addition can preserve the existing commitments that consumers still use. Construct a different model when reuse or such an extension cannot supply the required content. Keep the reason tied to the gap.
 5. **Develop the meaning before encoding it.** Define the needed concepts and relations, their domains of application, and the grain or temporal interpretation required by the question. Show examples and counterexamples to domain participants. Preserve a source disagreement that affects use; SIE.4 can establish a qualified correspondence between different meanings.
 6. **Choose sufficient formalization.** A maintained vocabulary and relation description can be enough for some uses. Select a formal language or profile when exchange, constraints, or inference require its semantics. Check the properties claimed under that choice as well as the domain cases. Repair or qualify a model that passes an encoding check but answers the domain question incorrectly.
@@ -110,7 +110,7 @@ The domain participants confirm those distinctions and identify any unresolved s
 - [ ] Available model content is compared with those questions before development is selected.
 - [ ] Sufficient reuse can complete the result.
 - [ ] Developed content answers an identified gap and preserves relied-on commitments or qualifies the affected use.
-- [ ] Domain examples and counterexamples support the claimed scope.
+- [ ] The grounds cover the promised questions. A case that would distinguish permitted from unsuitable use is examined where the answer depends on it.
 - [ ] Formal checks match the selected encoding and claimed inference or exchange use.
 - [ ] The receiver can identify and access the maintained model and its limits.
 

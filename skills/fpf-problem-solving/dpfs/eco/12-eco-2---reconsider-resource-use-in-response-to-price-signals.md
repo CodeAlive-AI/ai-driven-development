@@ -23,7 +23,7 @@ A price can convey information beyond one participant’s knowledge while omitti
 
 Compare unit, specification, quantity, time, location, payment and access. Identify what changed and whether existing obligations fix the terms for this work. A change in delivery or service can matter even when the quoted amount stays the same.
 
-Establish the terms for the next unit the plan could use. A bulk offer might exceed the storage available. The price paid for earlier units may differ from the price now attainable. Use ECO.1 when the meaning of an input remains in question.
+Choose the quantity over which the decision changes expenditure. For a purchase of one additional unit, establish the terms for that unit. For a change of supplier or order size, follow the terms across the units they cover. A volume discount may reprice the whole order, and a setup charge may be incurred once for several orders. Price each feasible purchase at its actual terms and include any storage or delivery it requires. The price paid for earlier units may differ from the price now attainable. Use ECO.1 when the meaning of an input remains in question.
 
 #### ECO.2:4.2 - Construct feasible responses
 
@@ -59,7 +59,7 @@ A newly published price may not apply to the participant’s work. A preferred s
 
 ### ECO.2:7 - Conformance Checklist
 
-Which terms changed, and do they apply to the exchange in question? For a proposed response, are its complements and obligations feasible? State what the evidence establishes about the price, the response or its cause, according to the question. Identify the conditions that matter to any proposed commitment.
+Which terms changed, and do they apply to the exchange in question? For a proposed response, does the comparison cover the quantity priced together, any shared changeover and the obligations the producer must still meet? Establish that the necessary complements are feasible. State what the evidence establishes about the price, the response or its cause, according to the question.
 
 ### ECO.2:8 - Common Anti-Patterns and How to Avoid Them
 

@@ -74,7 +74,7 @@ Explain the transition at the customer's point of use: what changes, what they m
 
 #### CUST.8:4.5 - Qualify the changed result and expand only within its conditions
 
-Before widening reliance, perform an attainable trial or a labelled rehearsal of the selected receiving use. Check the result obtained and what happens if the change causes the receiving use to fail. Reuse an adequate technical or operational result under its conditions.
+Before extending a change to further customers, establish that the relevant uses and commitments remain supported. An existing qualified result or a general compatibility argument can settle this when it covers their conditions. Use a trial or rehearsal to resolve a material uncertainty, or carry out a trial explicitly ordered as part of the work. To report a completed migration, establish what moved and what service was available through the change.
 
 Different questions need different evidence. A compatibility test can establish an exercised old/new behavior. A recipient's completed task can establish that task under the trial conditions. Actual transition requires evidence that the selected uses moved. None of these alone authorizes ending an obligation.
 
@@ -90,7 +90,7 @@ Return what changed to the receiving work. CUST.3 receives the supported family 
 
 ### CUST.8:5 - Archetypal Grounding
 
-The analytical-service family has a monthly “active customer” calculation. A new shared operation uses a more precise status rule and passes interface tests, but an existing customer uses the old meaning in a continuing report. Automatically replacing the operation would change their result while leaving the output columns unchanged.
+The analytical-service family reports a monthly count of active customers. A proposed status rule changes which records qualify. One customer entering and one leaving can yield the same monthly count under both rules. The meaning of the classification has still changed. For the earlier count, establish that the aggregate is preserved in the months promised. For a list of which customers qualify, preserve the differences for each customer. A finer classification whose categories recover the old class can support both. The customer decides whether to adopt a policy that changes the requested meaning.
 
 The provider separates two decisions. The engineering comparison qualifies old and new calculation behavior. The customer decision identifies whether the report may change and what historical comparability it needs. The family can support a named old profile beside the new one while the customer evaluates its receiving use.
 
@@ -114,7 +114,7 @@ The method assumes access to enough obligation and use evidence to make a bounde
 - Has each serious alternative been constructed as an obtainable continuation?
 - Can ordinary service, transition and coexistence share the actual resources?
 - Are recovery or irreversible effects treated at their qualified scope?
-- Does trial evidence support the claimed expansion, and is actual movement distinguished from readiness?
+- Do the grounds for expansion cover the affected customers, configurations and transitions? Has any commissioned trial been carried out, and is actual movement distinguished from readiness?
 - Does each retired reliance have an authorized, supportable disposition?
 
 ### CUST.8:8 - Common Anti-Patterns and How to Avoid Them

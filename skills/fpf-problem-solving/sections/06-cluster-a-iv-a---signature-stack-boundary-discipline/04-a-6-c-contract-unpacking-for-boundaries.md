@@ -7,11 +7,11 @@
 > **Builds on:** A.6 (stack + classification intent), **A.6.B** (L/A/D/E), **A.6.P:4.11a** (service/access subject-pattern recovery), **A.7** (EntityOfConcern, Description episteme, and carrier separation), **A.2.3** (`U.PromiseContent`), **A.2.8** (`U.Commitment`), **A.2.8.PER** (strong/weak permission, exercise, and conflict), **A.2.9** (`U.SpeechAct`), **A.15.1** (`U.Work`), **A.10** and **B.3** (evidence and assurance use), E.10 (`L-SERV` and `LEX-BUNDLE`), E.17 (MVPK “no new semantics” faces), F.12 (service acceptance and evidence discipline)
 > **Naming boundary:** **F.18** may provide durable names for recovered terms when naming is current; it does not define or constrain the promise-content, speech-act, commitment, permission, work, evidence, or boundary ontology.
 > **Vocabulary boundary:** “Contract”, “SLA” and “guarantee” are Plain-level source cues. The four questions unpack their meaning without defining a new `Contract` kind.
-> **Purpose (one line):** Resolve consequential ambiguity in boundary contract language through the applicable four questions and atomic claims; use the A.6.B Claim Register only when the receiving use needs a record under §4.5.
+> **Purpose (one line):** Resolve the meaning of boundary contract language and decide what the governing terms and acts of the participants settle. Use the A.6.B Claim Register when the receiving use needs a record under §4.5.
 
-**Use this when.** Use `A.6.C` when words such as *contract*, *promise*, *guarantee*, *SLA*, or *interface agreement* leave a consequential ambiguity about what was promised, instituted, governed, performed, produced, delivered, accepted, or evidenced.
+**Use this when.** Use `A.6.C` when words such as *contract*, *promise*, *guarantee*, *SLA*, or *interface agreement* leave a consequential ambiguity about what was promised, instituted, governed, performed, produced, delivered, accepted, or evidenced. Also use it when several clear statements and acts have to be connected to decide whether an order is complete or who still owes work.
 
-**First useful move.** Rewrite the live passage so each assertion identifies its subject, predicate, operands, and governing source; apply only the questions that the passage makes live.
+**First useful move.** For a wording problem, rewrite the relevant assertion to identify its subject, predicate, operands and governing source. Keep the participants, values and conditions on which the assertion depends. For a decision about an order, begin with the undertaking in force and the facts that could change the recipient's decision. Use the corresponding questions in §4.1.
 
 **What changes in practice.** Familiar contract language can remain in Plain prose while technical and normative claims become classifiable under `A.6.B` and adjudicable through their direct sources.
 
@@ -60,11 +60,11 @@ How can an author write (or repair) contract-language so that:
 
 ### A.6.C:4 — Solution
 
-Use the four questions to recover the claims made, then classify them through A.6.B. The answers connect the promised content, any actual institution, the applicable conditions and the observed result only where the passage asserts those relations.
+Use the four questions to recover the claims made, then classify them through A.6.B. In interpreting a passage, preserve the relations it actually asserts. In deciding what an order has settled, establish the additional connections needed for the decision from the governing terms and the evidence.
 
 #### A.6.C:4.1 — Four questions for contract-like boundary wording
 
-When “contract”, “guarantee”, “promise”, “SLA”, or “interface agreement” leaves a consequential ambiguity, ask only the live questions below. A question may yield zero, one, or several atomic claims. Add corresponding rows only when stable reuse, decision, audit, dispute, or cross-face projection needs the Claim Register; the question itself is not a bundle part or direct-object kind.
+When unpacking contract-like wording or deciding what the terms and acts together establish, ask the questions that bear on that use. A question may yield zero, one, or several atomic claims. Add corresponding rows only when stable reuse, decision, audit, dispute, or cross-face projection needs the Claim Register; the question itself is not a bundle part or direct-object kind.
 
 1. **What was promised?**
 
@@ -118,6 +118,18 @@ When “contract”, “guarantee”, “promise”, “SLA”, or “interface 
      Missing or failed F.6 alone leaves independently admitted Work intact. If the same finding questions a premise consumed by A.13 or A.15.1 admission, recheck that premise and its dependent claims.
    * **Result or consequence:** only when the sentence asks for one, select the matching `A.15.1:4.6` row—an A.6.1 application/result binding or independently obtaining `WorkResultRelation`, A.15.PROD production branch, A.3.4 change, evaluation result, subject-specific delivery/transfer relation, or acceptance relation. An absent row stays absent.
    * **Evidence:** for a current evidence-use claim, name the supporting episteme, target claim and conditions required by its direct rule; use A.2.4 for first-use classification. Make the grounds required by any receiving reliance recoverable. Use A.10 when source recovery, provenance, currentness or bounded reliance must remain replayable; identify carriers and observation conditions when they affect the claim or its use.
+
+**Decide what the commission has settled.** Start with the decision someone needs to make. A buyer may be deciding whether to close an order. A supplier may need to know whether a correction is still due. Work from the request, the terms that took effect and the available records. If a counteroffer changed the deliverable, establish whether and when the parties adopted it. An unanswered request can be all that happened.
+
+For each condition on the next action, find what establishes it. For an owed action or result, identify who undertook to do or supply what for whom. Ask whether the same acceptable result could be produced another way and whether anyone is owed that particular performance in its own right. A supplier may commission an expert opinion to prepare its response. The customer may require the opinion as a condition of acceptance, or may have ordered the consultation itself. Look for the term or accepted change establishing each connection. A completed check may enable a later decision by the customer. It settles acceptance itself only if the agreement gives it that effect. Trace any promises between supplier and expert on their own terms. The supplier's need for the opinion can coexist with either customer arrangement. When the composition of the performed Work matters, B.1.5.EW:4.2 distinguishes a constituent action from work that supplies a result used by another. Follow each undertaking only as far as the receiving decision requires.
+
+Establish what counts as delivery and what counts as acceptance. Producing an item, declaring it ready, delivering it, a user learning of it, and a party accepting it can happen at different times. One notice can declare completion in one undertaking and supply the entire deliverable in another. An earlier decision can settle today's inquiry when it covers the result, recipient and conditions now at issue. If the order calls for a fresh decision, establish that it took place. If the order makes receipt at an agreed repository sufficient for acceptance, a receipt identifying the required item and deposit can settle both delivery and acceptance. An order can make acceptance effective on deposit while allowing later objections. Acceptance then holds from deposit and the right to object continues for the stated period. If acceptance instead takes effect at the end of the period unless someone objects, establish that the period elapsed and that no qualifying objection was made. An earlier decision can settle acceptance if the terms also authorise that route.
+
+Determine how the applicable rule combines the contributions. An authorised representative can accept for several recipients. A board's rule may require a quorum and a specified number of votes in favour. A clerk can record the decision the board reached. An order can instead require distinct assents, compatible parts, or a separate delivery to each recipient. Establish the scope of the mandate, the relevant acts and the connection between them that the rule requires. The records may cover different parts or editions when the rule recognises the correspondence. For a conclusion about a class of orders, show why the rule and the combination apply throughout that class, and which facts each order must supply.
+
+Apply the terms to the facts that can be established. If every history consistent with the terms and evidence gives the same answer, and at least one such history is possible, give that answer. If records conflict, check which record governs or whether independent grounds settle the decision. When the conflict remains unresolved and the other grounds do not suffice, leave that conclusion open. If different histories would give different answers, or the conflict prevents a conclusion, identify the fact needed, where to obtain it and when the recipient needs it. A recorded refusal or a missed binding deadline can rule out one route to acceptance. A negative conclusion for the whole order requires grounds covering every route the agreement allows for the date in question. A missing receipt can leave delivery open. An adverse assessment can itself complete an order for an assessment. Determine separately whether correction, payment or further service is due under the corresponding undertaking.
+
+**For example**, an archive orders a finding aid for two reading rooms. Its acceptance rule requires each room to approve the entries retained for it and both sets to use the same index. The east room accepts its entries in draft 6. The west room accepts its entries in draft 7. Either approval can establish a local decision. Both can establish acceptance of the combined aid if the retained entries are the approved ones and the two sets use the same index, as the order requires. An edit to the index that breaks this condition defeats that combination. If the order instead delegates acceptance of the entire aid to the head archivist, that officer's qualifying decision suffices. The same two room approvals then answer a different question.
 
 #### A.6.C:4.2 — Classification recipe into A.6.B (L/A/D/E)
 
@@ -194,6 +206,8 @@ When boundary contract-language leaves a consequential ambiguity, recover the cl
 2. **What was said, published, or instituted?** Identify only the asserted speech act, description/publication objects and institutional effects, under the conditions in §4.1.
 3. **What governance or permission-looking claim exists?** State either a generic D prescription with its normative source and applicability, an individual D claim about an obtaining commitment with its actual bearer and institution basis, or the selected `A6-AW-*` claim in its own quadrant. State responsibility separately under its admitted domain predicate or return its missing governor.
 4. **What happened, what followed, and what supports reliance?** State dated Work, each current result/change/delivery/acceptance claim, and each current evidence-use or reliance claim separately; omit absent claims.
+
+When acceptance or the work still due depends on how undertakings, conditions or acts fit together, use §4.1 to establish the required connection. This includes one order with several required acts. Identify what was accepted and what remains open or due.
 
 When those answers need stable reuse, decision, audit, dispute, or cross-face projection, write them in the one A.6.B Claim Register: one atomic statement, direct object, subject assertion, non-semantic pattern locator, and quadrant per row. Otherwise stop with the repaired atomic prose. Faces cite reused claim IDs or canonical locations; they do not create another bundle record.
 
@@ -323,7 +337,7 @@ The progress guarantee needs its semantic or operational meaning. For the illust
 A boundary description conforms to A.6.C iff it satisfies all items below:
 
 1. **CC‑A.6.C‑1 (Four questions, atomic answers).**
-   When contract-like wording leaves a consequential ambiguity, the text **SHALL** answer only the applicable four-question branches with atomic claims. Each asserted object and its subject predicate **SHALL** remain separately recoverable. Classify each claim through A.6.B and identify the defining pattern when its rules govern that claim.
+   When contract-like wording leaves a consequential ambiguity, the text **SHALL** answer only the applicable four-question branches with atomic claims. Each asserted object and its subject predicate **SHALL** remain separately recoverable. Classify each claim through A.6.B and identify the defining pattern when its rules govern that claim. Where a conclusion about an order depends on several undertakings or acts, the account states which connection the governing terms require and the grounds for applying it, or identifies the connection that remains open.
 
 2. **CC‑A.6.C‑2 (No agency to epistemes).**
    When a dated act or individual commitment is claimed, the text **MUST** identify its capable actual participant and **MUST NOT** substitute an API/interface label, description, publication carrier, kind, or assignment for that participant's basis. Ordinary metonymy may remain when its participant and relation are locally recoverable.
@@ -370,7 +384,7 @@ A boundary description conforms to A.6.C iff it satisfies all items below:
 | **Work-result-evidence bundle** | “The delivered work and its log prove acceptance” makes one phrase carry occurrence, result, transfer, evidence, and verdict | Name the A.15.1 Work first; use the applicable `A.15.1:4.6` route for each current result, delivery/transfer, or acceptance claim. Use A.2.4 for first evidence-use classification or the direct rule for a further support claim. Use A.10 when provenance, currentness or bounded reliance must remain replayable, retaining the grounds required by that use. Omit absent claims. |
 | **Face-level paraphrase drift** | A face silently changes a claim's object or quadrant | Use meaning-preserving face prose and cite the canonical claim ID or location, direct object, and selected `A6-AW-*` row when applicable. Add a new boundary claim to its canonical source before publishing it on a face. Use verbatim text when exactness is critical or disputed. |
 | **Cross-scale contract collapse** | Commitments, grants, and conflict findings at different scales are treated as one D claim | Keep commitments and current grants as separate D claims; classify the permission conflict finding as E through `A6-AW-CONFLICT`; use mediation only under its subject pattern |
-| **Mandatory four-question record** | Every clear use of contract wording creates rows for all four questions | Apply A.6.C only to a consequential ambiguity, answer only the live questions, and let a one-off repair end in the repaired atomic prose |
+| **Mandatory four-question record** | Every clear use of contract wording creates rows for all four questions | Use the questions needed to resolve the ambiguity or decide what linked undertakings settle. A wording repair can end in the repaired prose. A decision can rest on one sufficient source. |
 
 ### A.6.C:9 — Consequences
 
@@ -382,7 +396,7 @@ A boundary description conforms to A.6.C iff it satisfies all items below:
 
 **Trade-offs and mitigations**
 
-* Additional authoring effort; mitigated by applying the unpacking only when contract-like wording leaves a consequential ambiguity, and by persisting a Claim Register entry only when stable reuse, decision, audit, dispute, or cross-face projection needs it.
+* Unpacking and connecting claims takes time. Stop when the wording is clear for its use or the available facts settle the receiving decision. Keep a Claim Register entry when stable reuse, decision, audit, dispute or cross-face projection calls for it.
 * Some stakeholders prefer “one sentence contract”; mitigated by MVPK faces that present curated projections while keeping the underlying claim set coherent.
 
 ### A.6.C:10 — Rationale
@@ -394,6 +408,8 @@ F.18 may supply durable names for recovered terms, but it does not provide the o
 ### A.6.C:11 — Source contributions
 
 The following sources contribute distinct disciplines to boundary interpretation.
+
+* Dietz and Mulder distinguish production from the acts that request, promise, declare and accept a product. They connect several transactions for one order through the results each requires. In FPF, the terms governing a particular order determine what counts as its acceptance. [Enterprise Ontology, second edition, ch. 8, §§8.2.5–8.2.7](https://doi.org/10.1007/978-3-031-53361-7_8)
 
 * **BCP 14 (RFC 2119 and RFC 8174)** supplies the interpretation of capitalized requirement keywords. A.6.B separately classifies the claim; the visible keyword alone does not establish its object or whether an individual relation obtains.
 * **Behavioural and session types** describe typed interactions, including safety and progress properties. These support the distinction between model properties, admission conditions, implementer obligations and actual trace results.

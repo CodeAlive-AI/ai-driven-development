@@ -6,11 +6,11 @@ A task can finish with a sufficient analysis, design, recommendation or justifie
 
 This Suite contributes engineering methods to a **shared culture of thinking and acting among people and AI agents**. Its repertoire helps them connect design, realization and sustained functioning, then use the result to develop further capabilities and ways of working. The [Library account of this culture](../../library/reference/02-library-reference-1---one-connected-language-several-kinds-o.md#libraryreference13---a-canon-for-shared-humanai-culture) explains how a shared canon supports that continuation.
 
-Links to fpf.tools open readable text; **Markdown** links and the CAD entries below open the repository source. GitHub previews can truncate large files. Check the [displayed source edition](https://fpf.tools/status) when the version matters.
+Links to fpf.tools open the readable edition. **Markdown** links open the repository source. GitHub previews can truncate large files. Check the [displayed source edition](https://fpf.tools/status) when the version matters.
 
 ## How this Suite is organized and why
 
-**[Read the Engineering Architectural Reference](suite-reference/_index.md).** It explains how systems engineering, maintenance, knowledge access, semantic integration and control architecture design fit together, why organizational and human specializations have their own Suites, and how these contributions meet in a working system. Read it for the overall design and its alternatives; use a familiar sufficient method directly when that is all your task needs.
+**[Read the Engineering Architectural Reference](https://fpf.tools/library/DPFs/Engineering%20DPF%20Suite/ENGINEERING-DPF-SUITE-REFERENCE)** · [Markdown](suite-reference/_index.md). It explains how systems engineering, maintenance, knowledge access, semantic integration and control architecture design fit together, why organizational and human specializations have their own Suites, and how these contributions meet in a working system. Read it for the overall design and its alternatives; use a familiar sufficient method directly when that is all your task needs.
 
 ## Keep the project reasoning together
 
@@ -28,12 +28,12 @@ A faster operation can still produce an unneeded result, repeat an error or leav
 | Your question | Open |
 | --- | --- |
 | How do we design a new system and choose its architecture? | [Develop linked use and system concepts (SYSE.2)](syse/23-syse-2---develop-linked-use-and-system-concepts.md), [construct functional and implementation alternatives (SYSE.5)](syse/26-syse-5---develop-an-engineered-system-s-functional-organizat.md), and [decide the architecture and when to reopen it (SYSE.6)](syse/27-syse-6---decide-and-reopen-the-engineering-architecture.md). |
-| Which observations, memory, commands and execution conditions can make a control design feasible? | [Choose observations and internal state (CAD.5)](cad/10-cad-5---choose-observations-and-internal-state-for-control.md); use the [planning-and-feedback branch (CAD.1–CAD.4)](cad/04-cad-reference-4---the-layered-planning-and-feedback-branch.md) when that separation is useful. |
+| Which observations, memory, commands and execution conditions can make a control design feasible? | [Choose observations and internal state (CAD.5)](cad/10-cad-5---choose-observations-and-internal-state-for-control.md). Use the [planning-and-feedback branch (CAD.1–CAD.4)](cad/04-cad-reference-4---the-layered-planning-and-feedback-branch.md) when that separation is useful. |
 | Should we build, buy, commission, reuse or combine ways to obtain a result? | [Compare ways to obtain the result (SYSE.24)](syse/32-syse-24---choose-how-the-project-will-obtain-a-needed-engine.md), including integration, capability, support and eventual replacement. |
 | How do we keep a system fit for use or restore it after a failure? | [Maintenance Engineering and Management](mnt/_index.md). |
 | How do we make a changing body of knowledge usable in work? | [Knowledge-Corpus Access Engineering](kcae/_index.md). |
 | How can systems exchange usable meaning when their sources disagree or change? | [Semantic Integration Engineering](sie/_index.md). |
-| Which contributions are missing between a local action and the intended whole? | [Method-vertical examples (Engineering.Reference:25.1)](suite-reference/27-engineering-reference-25---combine-results-and-handle-a-miss.md#engineeringreference251---what-must-be-available-through-the-method-vertical): a worked explanation with links to the full methods. |
+| Which methods does a service require, and which actions constituted a particular performance? | [Method composition and the work performed (Engineering.Reference:25.1)](suite-reference/27-engineering-reference-25---combine-results-and-handle-a-miss.md#engineeringreference251---what-must-be-available-through-the-method-vertical): a worked explanation with links to the full methods. |
 | How do we change an AI agent's execution procedure and test it in work? | [Construct and revise the procedure (SYSE.47)](syse/68-syse-47---construct-and-revise-an-agent-s-execution-procedur.md), then use [representative work to test the agent and its support (SYSE.46)](syse/67-syse-46---test-an-agent-and-its-support-in-representative-wo.md) when that evidence is needed. |
 
 The [Engineering Architectural Reference](suite-reference/_index.md) helps when the question spans several contributions. It explains their connections and leads to full methods; a known sufficient pattern can be used directly.
@@ -42,11 +42,11 @@ The [Engineering Architectural Reference](suite-reference/_index.md) helps when 
 
 | Framework | What you can work on | Patterns | Text, M characters |
 | --- | --- | ---: | ---: |
-| [Systems Engineering (SYSE)](syse/_index.md) · [Markdown](syse/_index.md) | Define the system and intended use; compare designs and ways to obtain them; realize, integrate, qualify and change the result. | 54 | 1.897 |
-| [Maintenance Engineering and Management (MNT)](mnt/_index.md) · [Markdown](mnt/_index.md) | Select maintenance policy from condition and failure knowledge; prepare interventions, restore functioning and qualify return to use. | 16 | 0.251 |
-| [Knowledge-Corpus Access Engineering (KCAE)](kcae/_index.md) · [Markdown](kcae/_index.md) | Engineer arrangements for finding, reading and using documentary knowledge, including links back to source passages, delivery and coherent updates. | 11 | 0.242 |
-| [Semantic Integration Engineering (SIE)](sie/_index.md) · [Markdown](sie/_index.md) | Make separately governed meanings usable together through models, mappings, interfaces, validation and response to change. | 13 | 0.316 |
-| [Control Architecture Design (CAD) — Markdown](cad/_index.md) | Choose observations and memory; construct a planning-and-feedback arrangement when useful; connect information error, command limits and execution conditions. | 5 | 0.147 |
+| [Systems Engineering (SYSE)](syse/_index.md) · [Markdown](syse/_index.md) | Define the system and intended use; compare designs and ways to obtain them; realize, integrate, qualify and change the result. | 54 | 1.938 |
+| [Maintenance Engineering and Management (MNT)](mnt/_index.md) · [Markdown](mnt/_index.md) | Select maintenance policy from condition and failure knowledge; prepare interventions, restore functioning and qualify return to use. | 16 | 0.277 |
+| [Knowledge-Corpus Access Engineering (KCAE)](kcae/_index.md) · [Markdown](kcae/_index.md) | Engineer arrangements for finding, reading and using documentary knowledge, including links back to source passages, delivery and coherent updates. | 11 | 0.255 |
+| [Semantic Integration Engineering (SIE)](sie/_index.md) · [Markdown](sie/_index.md) | Make separately governed meanings usable together through models, mappings, interfaces, validation and response to change. | 13 | 0.332 |
+| [Control Architecture Design (CAD)](cad/_index.md) · [Markdown](cad/_index.md) | Choose observations and memory; construct a planning-and-feedback arrangement when useful; connect information error, command limits and execution conditions. | 5 | 0.156 |
 
 **Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals.
 

@@ -9,7 +9,7 @@
 
 **Use this when** an organization-change practice seems to be spreading, fading or changing among practitioners, and that difference matters to their next work. A case group still teaches “organization mapping”, yet its members now submit charts without recovering who supplies an input, who uses it and who can decide. Elsewhere the old name disappears, but practitioners still make those distinctions in real cases. The useful question is what continues in the work, not which label survives.
 
-Start with one consequential OCE move in one organization-change episode. Compare the practice claimed with the action and usable result actually recoverable there. Where the question concerns continuation beyond this episode, examine how another practitioner could encounter, attempt, criticize and continue the practice.
+Start with the claim about the work and the period it covers. For a claim about use, compare the proposed OCE move with the action and result recoverable from the work. For a claim that practitioners had no opportunity to use it, establish the eligible work and access in the period. A complete account of assignments may settle that question directly. Where the question concerns continuation beyond this episode, examine how another practitioner could encounter, attempt, criticize and continue the practice.
 
 Continuing organization development is the wider concern. This Method covers the cultural continuation of **Organization Change Engineering practice across practitioners and work settings**. Its subject is the practice and the relations through which it is transmitted, recognized, selected, enacted, retained or lost. Establish any claim that a practitioner population forms an organization, System or capability holder on the relevant relations. A Method is a reusable way of obtaining a result. Its description, a carrier such as a file or course handout, and an occasion of using the Method are different things; teaching can use the description and carrier as support.
 
@@ -43,7 +43,7 @@ An apparent difference between the claimed practice and one observed OCE episode
 
 #### OCE.17:4.1 - Recover the operative variant from real work
 
-Choose an episode in which an OCE move should matter. Examples include bounding the changed organization, recovering an actual contribution crossing, comparing organization concepts, distinguishing appointment from authority, protecting continuing service or revising a relation after adverse consequences. Name the receiving result: what use did the contribution need to support, and for which recipient?
+To examine a performance, choose an episode in which an OCE move should matter. To establish whether there was any opportunity, identify what work qualified and what evidence covers it. Examples include bounding the changed organization, recovering an actual contribution crossing, comparing organization concepts, distinguishing appointment from authority, protecting continuing service or revising a relation after adverse consequences. Name the receiving result: what use did the contribution need to support, and for which recipient?
 
 Inspect the permitted work products and, where needed, a work observation or the practitioner's explanation. Establish the difficulty, the distinction used, what was done and what result the recipient could use. Consult the practitioner where their account would supply a missing ground. For an OCE.2 case, “we drew the process” is not yet the answer. Recover a particular input, its supplier and user, the occasion of its use, and the evidence or decision relation that mattered.
 
@@ -178,7 +178,7 @@ Judge continuation by the work the practice enables. Preserve dissent that revea
 
 ### OCE.17:7 - Conformance Checklist
 
-- [ ] A named operative OCE move is recovered from a real or explicitly constructed work episode and compared with its Method or declared variant.
+- [ ] For an account of practice in use, the claimed move is traced to actual work. A constructed episode can illustrate a proposed move. A finding of no opportunity is grounded in the eligible work, access and period it covers.
 - [ ] The practitioner and case scope is explicit; a population is not silently made one capability holder.
 - [ ] Transmission, recognition, opportunity, enactment and retention are distinguished where they can change the explanation.
 - [ ] Competing source, interpretation, access, support, recognition, capability and Method-fit explanations receive the evidence their use needs.
@@ -225,7 +225,7 @@ The OCE-specific construction connects the actual domain move and its receiving 
 
 ### OCE.17:12 - Relations
 
-[FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md) supplies cultural-case, transmission, recognition, selection and memory distinctions, including the difference between an intervention and observed cultural change. [FPF C.36.RP:4.2–C.36.RP:4.5](../../../sections/09-part-c---kernel-extension-specifications/130-c-36-rp---sustain-and-renew-shared-ways-of-working.md) supplies locating the missing contribution, choosing provision or acquisition and making it obtainable; OCE.17 retains the domain case and cultural-continuation question. A.10 supports evidence provenance; C.28 governs stronger causal reliance.
+[FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md) supplies cultural-case, transmission, recognition, selection and memory distinctions, including the difference between an intervention and observed cultural change. [FPF C.36.RP:4.2–C.36.RP:4.5](../../../sections/09-part-c---kernel-extension-specifications/132-c-36-rp---sustain-and-renew-shared-ways-of-working.md) supplies locating the missing contribution, choosing provision or acquisition and making it obtainable; OCE.17 retains the domain case and cultural-continuation question. A.10 supports evidence provenance; C.28 governs stronger causal reliance.
 
 OCE.2, OCE.3, OCE.5 and other OCE Methods supply the actual domain moves recognized in cases. [OCE.15](37-oce-15---choose-develop-or-refresh-organization-change-metho.md) receives a reusable-Method or repertoire problem and uses current Method Engineering for qualification, fit, trial and variants.
 

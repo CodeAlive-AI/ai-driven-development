@@ -120,14 +120,14 @@ A **worked result** below names the exact source, edition, passage, and meaning 
 - **Worked result — OMG BPMN 2.0.2 (January 2014), §10.1, Processes.** *Process* denotes the designed sequence or flow of Activities in an organization.
 - **Worked result — W3C PROV-O Recommendation (30 April 2013), §3.1, Starting Point Terms.** *Activity* denotes something that occurs over a period of time and acts upon or with entities, including using or generating them.
 
-The first question may need only one of these readings. If a later use relates the designed structure to performed occurrences, recover two F.17 cells and state the exact F.9 relation, including concurrency or trace information that does not carry across. Do not call the two meanings identical.
+A request about the two expressions may end with their local meanings. If the reader needs a reusable cross-source correspondence, recover the two F.17 cells and test the proposed F.9 relation, including what it preserves about concurrency or traces. To decide whether Tuesday’s work followed the process, use F.11 and A.15.1. Find the applicable process specification and evidence of the actions and ordering in that execution. The source terms can retain their meanings whether the work followed the plan or departed from it.
 
 ##### F.0.1:5.2.2 - *actuation* and *control output*
 
 - **Recognition cue — control theory.** If *actuation* may mean a signal applied to plant actuators, select one exact control-theory publication, edition, and passage before using that reading.
 - **Recognition cue — IEC 61131-3.** If *control output* may mean a program-produced value sent to field I/O, identify the exact edition and clause before using that reading.
 
-These cues establish no relation. After both readings become worked results, F.9 may test whether the PLC output can be read as the controller's actuation signal for one stated operating regime while keeping hardware and scan-cycle limits visible.
+For a comparison of the two expressions, recover both readings before testing a semantic correspondence under F.9. To establish that a particular program output commanded an actuator, trace the output through the I/O configuration and operating regime. To establish the actuator’s response, examine the corresponding observation. Hardware and scan-cycle limits can affect those conclusions.
 
 ##### F.0.1:5.2.3 - *observation* and *service metric*
 

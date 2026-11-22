@@ -27,7 +27,7 @@ Use Financial Domain Modeling to establish whose financial position a model desc
 | FDM.Sources:2 | [Source locators](16-fdm-sources-2---source-locators.md) |  |
 | FDM.Sources | [Financial Domain Modeling Principles Framework Sources and Edition Notes](14-financial-domain-modeling-principles-framework-sources-and-e.md) |  |
 
-**Patterns**
+**[Financial modeling methods](_index.md#financial-modeling-methods)**
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | --- | --- | --- | --- | --- |
@@ -41,9 +41,9 @@ Use Financial Domain Modeling to establish whose financial position a model desc
 
 ## Practical entries
 
-Start with the financial question and the results already established. To explain what a service contributed, you may need an account of a position or event. A newly established payment may require revising an earlier claim about what funds were available. Use the Table of Contents to go directly to a method. The cases below show how to combine them.
+Start with the question someone has to act on. When you are to construct the model, work from the actual request and its terms. Before using a prepared example as your model, decide what you must establish, for whom and by when. Set out your first account using the distinctions you judge necessary. For practice, you can use an open question from your work or revisit an earlier account you constructed. If an existing position or bound settles the question, give the answer and its grounds. If the request also calls for a particular payment, calculation or document, identify that deliverable. Use the Table of Contents to go directly to the method you need. The cases below illustrate choices made for two particular requests.
 
-**FDM** is the reference code for this framework. FDM.3:4.2 identifies section 4.2 of pattern 3. You can apply the methods yourself or ask an agent to model the case or explain it in the language of your work. The examples stipulate their terms and facts. For an actual arrangement, use the applicable financial and institutional interpretation.
+**FDM** is the reference code for this framework. FDM.3:4.2 identifies section 4.2 of pattern 3. An agent can explain a case or supply a model. When the choice of model belongs to you, use assistance for the work you delegate and justify the choices you make. In the two cases below the author supplies the question and much of the model. The examples stipulate their terms and facts. For an actual arrangement, use the applicable financial and institutional interpretation.
 
 ### FDM-E1 — A score is presented as a financial benefit
 
@@ -66,10 +66,10 @@ For unclear terms, use FDM.1 or FDM.3. For a disputed occurrence, use FDM.4. For
 ### FDM-E2 — A group's cash is used to justify one entity's payment
 
 - **Situation:** A group's cash balance is used to claim that one member can pay a debt.
-- **Question:** Which funds can this entity actually use by the due date?
-- **First useful result or blocker:** The resources available to the entity by the due date and any shortfall, or the particular support term or receipt that remains uncertain.
-- **Start with:** FDM.2 for the payment boundary, then FDM.1 and FDM.3 for support terms and FDM.4 for what occurred.
-- **Stop or return:** Report what the entity could use by the due date. Revisit a conclusion about availability or support if a relevant event or term changes.
+- Question: Can this entity meet its payment by the due date? If the recipient also needs to know which funds it can use, what gives this entity timely access to them?
+- First useful result or blocker: A supported payment decision, the usable sources or amount requested, or the unresolved condition that could change the answer.
+- **Start with:** FDM.2 for the payment boundary, then FDM.1 and FDM.3 for support terms and FDM.4 for what occurred. A usable lower bound can establish the debtor's ability to pay by the deadline even when the exact balance is unknown. If the holder of a common facility must choose the beneficiary in advance, consider what that holder will know then.
+- Stop or return: Give the payment decision if the available funds or a sufficient bound settle it. If the recipient needs the sources or the exact amount, give those with their basis or identify what remains unresolved. Revisit a conclusion about availability or support if a relevant term or event changes.
 
 X owes 100 on day 7 and has 20 of unrestricted cash available then, after all its other receipts and obligations. Y has 150. X and Y share a founder. Use [FDM.2](10-fdm-2---choose-party-and-group-boundaries-for-financial-mode.md) to distinguish exposure to the founder group from X’s ability to pay. On the supplied facts X is short of 80. Adding the two balances establishes no right or means for X to use Y’s cash.
 
@@ -77,7 +77,7 @@ Suppose Y undertakes to transfer 80 to X before day 7. Use FDM.1 to establish th
 
 Use FDM.4 to examine the event that would make the funds usable. A support commitment, transfer permission or sent payment instruction can precede receipt. Suppose Y transfers 60 under its support obligation and X can use it before day 7, with nothing else in the cash account changed. X now has 80 and is short of 20. Y has performed 60 of its commitment of 80. Update X’s payment account with the confirmed receipt. If the deadline is still ahead, receiving the remaining 20 in time remains a conditional scenario until its outcome is established. Revise any conclusion inconsistent with the established events.
 
-The question can end with the amount available or with a precise limit if receipt is unknown. When a financing or payment choice is needed, the responsible party can use that result to compare its options. For portfolio risk, common dependence on the founder may matter even when X cannot use Y’s funds. Keep the group exposure distinct from the cash available to X.
+Return the eligibility of the sources, amount available or payment decision that the recipient requested. If receipt remains unknown, give what the available bounds establish. When a financing or payment choice is needed, the responsible party can use that result to compare its options. For portfolio risk, common dependence on the founder may matter even when X cannot use Y’s funds. Keep the group exposure distinct from the cash available to X.
 
 ---
 
@@ -88,19 +88,22 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 ### Financial Domain Modeling Principles Framework Architectural Reference
 
-- [FDM.Reference:1 - The working problem](01-fdm-reference-1---the-working-problem.md) (8 lines)
+- [FDM.Reference:1 - The working problem](01-fdm-reference-1---the-working-problem.md) (10 lines)
 - [FDM.Reference:2 - How the methods connect](02-fdm-reference-2---how-the-methods-connect.md) (12 lines)
-- [FDM.Reference:3 - Connect models by the financial question](03-fdm-reference-3---connect-models-by-the-financial-question.md) (21 lines)
-- [FDM.Reference:4 - Parties, resources and several useful structures](04-fdm-reference-4---parties-resources-and-several-useful-struc.md) (8 lines)
+- [FDM.Reference:3 - Connect models by the financial question](03-fdm-reference-3---connect-models-by-the-financial-question.md) (27 lines)
+- [FDM.Reference:4 - Parties, resources and several useful structures](04-fdm-reference-4---parties-resources-and-several-useful-struc.md) (12 lines)
 - [FDM.Reference:5 - Practical gain, cost and evidence](05-fdm-reference-5---practical-gain-cost-and-evidence.md) (8 lines)
 - [FDM.Reference:6 - Source choices and alternatives](06-fdm-reference-6---source-choices-and-alternatives.md) (8 lines)
-- [FDM.Reference:7 - Using the connected account correctly](07-fdm-reference-7---using-the-connected-account-correctly.md) (8 lines)
+- [FDM.Reference:7 - Using the connected account correctly](07-fdm-reference-7---using-the-connected-account-correctly.md) (10 lines)
 - [FDM.Reference:End](08-fdm-reference-end.md) (2 lines)
+
+### Financial modeling methods
+
 - [FDM.1 - Recover the Financial Position Behind a Record](09-fdm-1---recover-the-financial-position-behind-a-record.md) (133 lines)
-- [FDM.2 - Choose Party and Group Boundaries for Financial Modeling](10-fdm-2---choose-party-and-group-boundaries-for-financial-mode.md) (148 lines)
-- [FDM.3 - Derive Events and Conditional Flows from Financial Contract Terms](11-fdm-3---derive-events-and-conditional-flows-from-financial-c.md) (224 lines)
-- [FDM.4 - Establish What a Financial Action Changed](12-fdm-4---establish-what-a-financial-action-changed.md) (148 lines)
-- [FDM.5 - Trace a Financial Service to a Participant's Result](13-fdm-5---trace-a-financial-service-to-a-participant-s-result.md) (136 lines)
+- [FDM.2 - Choose Party and Group Boundaries for Financial Modeling](10-fdm-2---choose-party-and-group-boundaries-for-financial-mode.md) (152 lines)
+- [FDM.3 - Derive Events and Conditional Flows from Financial Contract Terms](11-fdm-3---derive-events-and-conditional-flows-from-financial-c.md) (230 lines)
+- [FDM.4 - Establish What a Financial Action Changed](12-fdm-4---establish-what-a-financial-action-changed.md) (154 lines)
+- [FDM.5 - Trace a Financial Service to a Participant's Result](13-fdm-5---trace-a-financial-service-to-a-participant-s-result.md) (138 lines)
 
 ### Financial Domain Modeling Principles Framework Sources and Edition Notes
 

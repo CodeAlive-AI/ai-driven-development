@@ -6,7 +6,7 @@
 
 Use MKT.14's case of Sever, Vector and Luch. There are three organisations and four opportunities: two can use a limited batch-file trial; two need continuous integration that is presently unavailable. The intended result for the two-week period is two supported trials plus two reasoned decisions about the missing integration. Comparing four meetings with that result would change the question.
 
-MKT.12 asks what must be known to select the next action in each opportunity. MKT.1 recovers users, decision holders, payer, data conditions and relevant workflow. A permitted representative sample and a conversation about use can qualify a batch trial; a request for continuous integration returns a construction question to engineering. Interest from one Sever department establishes no readiness in the other.
+MKT.12 asks what the programme owner must establish to decide about each opportunity. MKT.1 recovers users, decision holders, permissions and workflow. In the two integration cases, the same missing present capability has different consequences. Sever needs it during this period and receives a reasoned refusal. Luch can use a later qualified configuration and receives that recommendation and the authorisation still needed. The nine hours for qualification in MKT.14 include preparing these decisions from the engineering grounds. A question sent to engineering would leave those decisions outstanding.
 
 MKT.6 helps the trial participants state the useful result and what they must contribute to obtain it. MKT.2 then constructs an offer and positioning against the customer’s alternatives. The common demonstration can explain a shared contribution. State explicitly that continuous integration is unavailable when explaining that demonstration.
 
@@ -18,7 +18,7 @@ MKT.14 compares separately prepared programmes with justified common preparation
 
 The programme owner uses that result with MKT.11 to secure the contributions and the work that will receive them. Sales receives the next action for each opportunity. Trial providers receive the accepted input, support and timing conditions. The programme owner receives the comparison, resource commitments and facts that reopen it.
 
-MKT.3 can now invite an appropriate response. For a qualified batch trial, that may be confirmation of an agreed sample and time. For an integration-dependent opportunity, it may be information needed to decide whether constructing that integration is worthwhile. Sending the same purchase invitation to both would conceal the reason their actions differ.
+MKT.3 can now invite an appropriate response. For a qualified batch trial, that may be confirmation of an agreed sample and time. For Luch, it may be the local decision about the later connector. Contact with Sever can close the current opportunity on the stated time constraint. Sending the same purchase invitation to both would conceal the reason their actions differ.
 
 
 

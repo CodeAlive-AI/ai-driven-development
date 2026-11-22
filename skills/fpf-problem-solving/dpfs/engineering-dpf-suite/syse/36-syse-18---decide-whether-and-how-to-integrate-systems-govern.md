@@ -8,11 +8,7 @@ Use this pattern when one use depends on several actual Systems, but decisions t
 example, a constituent's operating condition, configuration, commitment, interface, or later modification—belong
 to different Agents. The integrating Agent cannot command every change that can defeat the use.
 
-Begin with the shared use and the constituent Systems that can defeat it. For each, identify its effect on the use,
-who controls the relevant change, that Agent’s authority, and the configuration, interface, commitment, evidence or
-withdrawal condition the decision relies on. An existing coordination decision can suffice for the same use and conditions. If a choice remains, compare arrangements. Distinguish changes within
-the deciding Agent’s authority from proposals requiring another Agent’s decision. A decision can authorize preparation
-or retain the arrangement while a dependency remains unresolved.
+Begin with the shared use and the conditions on which it depends. A contributor matters when its action changes the result alone or in combination with other permitted actions. Recover who controls the relevant decisions, what substitutes or joint contributions are available, and the interfaces, commitments and evidence the use requires. An existing coordination decision can suffice if its scope still applies. For an open choice, compare the arrangements and distinguish changes within the deciding Agent's authority from proposals requiring another decision.
 
 The first useful result is a **bounded constituent-integration decision**. It states the selected coordination alternative,
 the deciding Agent’s authority, accepted losses, any required decisions from other Agents, remaining unsupported dependencies
@@ -92,10 +88,7 @@ and choose one bounded coordination alternative within the deciding Agent's auth
 1. **Bound the shared use.** State the result, operating conditions, interval and decision to be made. Identify
    the losses that this decision may accept and the conditions it must preserve. Begin with an adequate current
    account when one exists; use this Method only for the missing or changed connection.
-2. **Recover constituents by consequence.** Follow the result back to the Systems whose participation, failure, change
-   or withdrawal could defeat it. State what each contributes or constrains and why that matters here. Keep an observed
-   participant whose identity is unknown. Distinguish that uncertainty from uncertainty about whether a System
-   exists and from a System that is merely planned.
+2. **Recover the contributions on which the use depends.** Work back to the necessary results and the systems that can supply, constrain or substitute for one another. A single withdrawal may be harmless when a backup can serve. Check which withdrawals or changes may occur together and whether the remaining contributors can still deliver. Establish how a system participates or supplies an external result before calling it a part. Preserve relevant distinctions among an unidentified observed participant, uncertain existence and a merely planned system.
 3. **Trace the relied-on connection.** Follow one representative use through the constituent results and
    interfaces. Match what the receiving operation needs with what the supplying System can provide, under the
    same configuration and conditions. Section :4.1.1 explains how to turn a mismatch into a design question.
@@ -334,8 +327,7 @@ centralized arrangements can each help or harm; the label decides nothing.
 ### SYSE.18:7 - Conformance Checklist
 
 - [ ] One shared use, conditions, interval, affected Systems, current decision, and deciding Agent are stated.
-- [ ] Every constituent is an actual System included because its participation, output, failure, change, or
-      withdrawal can alter the use.
+- [ ] The account identifies the actual participating systems and the separate or joint changes that could alter the use. A substitute and the conditions under which it can take over are included where the decision relies on them. Proposed participants remain identified as such.
 - [ ] Each relied-on relation has its own predicate and participants; no umbrella contribution relation replaces it.
 - [ ] Independence is stated for named decisions and relations, not as an absolute property.
 - [ ] Every deciding Agent, assignment when relevant, authority, permission, conflict, and escalation is stated.

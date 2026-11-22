@@ -12,8 +12,7 @@ intervention, and deployment burden.
 Use `SYSE.1`, `SYSE.16`, and `SYSE.17` to identify the actual or intended System selected as the project system-of-interest, its operating environment, and Systems that may
 bear consequences. Use `SYSE.22` to keep problem formulations and System-family options distinct but connected.
 Each problem has its own affected Systems, comparison and acceptance conditions, evidence horizon, and
-currentness. Keep each problem open to revision. Each System option has a recoverable family and configuration
-relation and remains connected to the problem it addresses.
+currentness. When the assumed damage range changes, establish which admission or design choice changes, or why an option's qualified range already covers the new conditions. Keep an open comparison visible where the evidence permits different answers. Preserve each option's family and configuration.
 
 
 ### SYSE.Application:2.2 - 2. Compare options and choose the next evidence
@@ -33,9 +32,7 @@ Use `SYSE.15` for the Method repertoire, `SYSE.19` when a relied-on source chang
 question about continuation across a practitioner population.
 
 Use `SYSE.23` to compare retaining the present arrangement with changes to a surviving System-family option, its builder arrangement or both. A part
-or family-membership structure of an actual or intended System, a service or dependency relation with a builder
-System, and Work order are different relations. Practitioner
-capability and cultural continuation remain results of their own patterns. A build-before-trial dependency is a
+or family-membership relation, a builder's service, a required operation within a Method, membership of an actual Work occurrence and the order of two operations each answer a different investment question. For example, accepting an accredited supplier's analysis can leave the local analysis operation outside the inspection Method. An order for independent in-house analysis requires the corresponding staff and means. Practitioner capability and cultural continuation require grounds for their respective claims. A build-before-trial dependency is a
 bounded unfolding; it does not make problem development, System-family development, and builder development
 three universal stages or levels.
 

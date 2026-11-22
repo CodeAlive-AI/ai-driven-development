@@ -40,7 +40,7 @@ Recover the reasoning at both the level of its main contributions and the transi
 
 Name what the result would let you do: calculate a quantity, choose between alternatives, criticize a conclusion, adapt an argument or explain it to someone else. This determines how far recovery needs to go.
 
-Read the conclusion with its objects, domain and conditions. In a mathematical statement, recover the quantifiers: which objects are arbitrary, which may be chosen, and on what a chosen object may depend. In an empirical argument, recover what observations and inference support which population, conditions or phenomenon.
+Read the conclusion with its objects, domain and conditions. If an ordinary-language argument relies on “everyone”, “always” or another universal expression, use C.39.QR:4.1.1 to recover the domain and the force of the remark before testing the inference. In a mathematical statement, recover the quantifiers: which objects are arbitrary, which may be chosen, and on what a chosen object may depend. In an empirical argument, recover what observations and inference support which population, conditions or phenomenon.
 
 Locate the source's definitions when a word or symbol admits different readings that would change this use. If a formal statement accompanies an informal one, compare the part of their meanings on which the intended application depends. For example, whether zero is allowed among “natural numbers” can change the statement.
 
@@ -283,9 +283,9 @@ Ask, “Did Noah receive or see this parcel, or infer its arrival from the troll
 
 Noah's claim about the trolley can remain credible while his conclusion about the parcel is unsupported. The observation and inferred arrival were compressed into one attributed statement. The repair separates them and locates the missing connection.
 
-Ask what other work moves the trolley and whether this delivery was due to use it. Suppose the workshop uses the same trolley for outgoing parcels, and today's dispatch account explains its position. That removes the offered clue's claimed discrimination for this arrival. The recipient can check the receiving record or inspect the parcel location. Either would be a new ground; repeating Noah's title supplies none.
+Ask what other work moves the trolley and whether this delivery was due to use it. Suppose the workshop uses the same trolley for outgoing parcels, and today's dispatch account explains its position. That removes the offered clue's claimed discrimination for this arrival. A receiving record or inspection can provide fresh evidence of arrival. Its bearing on collection depends on what happens to the parts after receipt.
 
-This differs from a disagreement over the trustworthiness of a witness who saw the parcel. In that case the disputed ground would be the report. Here the observation is accepted and the disputed transition is from trolley position to this parcel's arrival. The first scheme has been abandoned for a substantive reason, the map has changed, and the next inquiry follows the remaining gap.
+This differs from a disagreement over the trustworthiness of a witness who saw the parcel. In that case the disputed ground would be the report. Here the observation is accepted and the disputed transition is from trolley position to this parcel's arrival. The dispatch record explains the trolley’s return and leaves the parcel’s arrival open. The assembler still needs to know whether these parts are ready to collect. A current collection record can settle that question. Receipt can suffice if the receiving arrangement makes these parts immediately available and they remain so at collection time. If parts may have been issued, held or moved, check their present availability. For a request confined to what Noah saw, his report already supplies the answer.
 
 ### B.5.RA:6 - Bias-Annotation
 

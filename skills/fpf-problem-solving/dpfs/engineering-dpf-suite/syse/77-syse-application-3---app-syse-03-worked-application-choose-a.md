@@ -18,13 +18,11 @@ governance and user-interface changes.
 The project's software-security Agent performed `AuthenticationThreatModelingWork-TM4` by applying
 `ProjectSoftwareSecurityThreatModelingMethod`. That Work produced `AuthenticationThreatModelResult-TM4`, which
 supplies two constraints used here: regional cache replication must be mutually authenticated and encrypted,
-and acceptance of a revoked credential must end within 120 seconds. The architecture Agent uses those constraints
-to admit alternative `A` and exclude a ten-minute bearer token under the current threat model. The architecture
+and acceptance of a revoked credential must end within 120 seconds. The architecture Agent uses those constraints to assess each alternative. For this constructed comparison, a specialist assessment of A’s proposed configuration establishes that its regional replication meets the required protection under the proposed canary conditions. For the revocation requirement, the relevant quantity is how long a revoked credential remains accepted in that configuration. Its nominal lifetime alone does not determine the result. The architecture
 Agent remains responsible for the architecture choice, and the release Agent retains release authority.
 Using `SYSE.5`, the architecture Agent develops three materially different bearer and interface alternatives.
 Using `SYSE.6`, the same Agent compares them against four declared limits: failed logins below 1%, acceptance of a revoked credential for no more than 120 seconds,
-95th-percentile login latency no greater than 3 seconds, and rollback within 30 minutes. A controlled partition
-replay for configuration candidate `AS-7.5-rc2` returns these values:
+95th-percentile login latency no greater than 3 seconds, and rollback within 30 minutes. In this constructed comparison, a controlled replay under the same partition conditions supplies the reported values for each alternative in its own configuration. The row for `A` concerns `AS-7.5-rc2`.
 
 | Alternative | Failed logins | Revoked-credential exposure | p95 login latency | Rollback | Result |
 | --- | ---: | ---: | ---: | ---: | --- |
@@ -41,8 +39,7 @@ transfer the specialist's authority.
 
 Using `SYSE.13`, the configuration Agent identifies candidate configuration `AS-7.5-rc2` and its proposed
 effectivity: tenant cohort `TenantCohort-Canary`, 5% of eligible traffic, regions `EU-West` and `EU-Central`, for
-seven days. Using `SYSE.4`, the assurance Agent qualifies the partition replay only for the four claims and
-conditions shown above. It does not support wide release, other regions, a different token lifetime, or a
+seven days. Using `SYSE.4`, the assurance Agent checks that the results for `A` apply to `AS-7.5-rc2` for the four claims under the conditions shown above. It does not support wide release, other regions, a different token lifetime, or a
 different threat model.
 
 The release-preparation Agent uses `SYSE.14` with the architecture decision, configuration account, replay
@@ -72,7 +69,7 @@ Agent can decide that canary with the named security permission and rollback ava
 
 | Changed input | Reopen |
 | --- | --- |
-| project system-of-interest designation, partition use, affected Systems, or decision horizon | `SYSE.1` project-focus result |
+| choice of product referent or a changed use, affected System or horizon that can change that choice | `SYSE.1` project-focus result; if the product focus still holds, reopen only the affected use, architecture or release decision |
 | an architecture option, bearer/interface relation, or any of the four limits | `SYSE.6` architecture choice |
 | candidate configuration, cohort, region, traffic share, or seven-day effectivity | `SYSE.13` configuration result |
 | replay conditions, observation values, evidence window, or claim correspondence | `SYSE.4` evidence-use result |

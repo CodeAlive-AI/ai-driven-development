@@ -10,7 +10,7 @@
 
 Use this method when you need to choose which source relations a narrative must preserve for its intended use, or to assess those choices in an existing account. A lesson, an argument, a live commentary, a fictional scene and a future scenario can require different selections.
 
-Identify the reader’s question, locate the available material and select the relations or events it requires. Compare an existing draft with that material, or try a short account if the selection is unclear. Revise the purpose or selection where the comparison exposes a gap. A few sentences can suffice.
+Recover the reader’s question and the result the commission calls for before treating a draft as the plan. Select the relations or events that the source supports for that use. A short draft can expose an omission, suggest a better sequence or reveal another question. Revise your selection and the role of a passage within the choices the brief leaves to you. Preserve requirements assigned to a particular part, including any exercise the learner receives on its own. If you were entrusted with choosing the overall purpose, you may revise it too. Otherwise identify what the new question settles and what the original commission still requires. A changed commission needs the decision of whoever holds it.
 
 If the desired effect determines what the source is said to contain, a reader may remember the story but lose an important relation, mistake uncertainty for fact or lack the material needed to check a claim.
 
@@ -33,7 +33,7 @@ Use `NSTD.4` for a question about viewpoint or voice and `NSTD.7` for planning o
 
 ### NSTD.1:4 - Solution
 
-Start with the reader’s question and the available material. Select what the account must preserve and examine how an existing or proposed sequence presents it. Use a short draft when it helps expose an omission or an unsupported connection. The answer can be a suitable selection, a finished account for the intended use, or a precise limit on what the material establishes.
+Start with the reader’s question and the available material. Select what the account must preserve and examine how an existing or proposed sequence presents it. Use a short draft when it helps expose an omission or an unsupported connection. The answer can be a suitable selection, a finished account for the intended use, or a precise limit on what the material establishes. For a subject explanation, ask which claim the reader has to justify and which choices must be theirs. Take those requirements to the subject sources through EXD.Reference:3. A chronology may fully answer a request to recount an incident. If the commission was to explain its cause, the time order supplies part of the account and suitable causal grounds are still needed.
 
 Suppose an automatic valve is designed to open when pressure exceeds a threshold. An operator asks why it opened on one occasion. The rule explains one possible mechanism. A time-matched pressure reading and evidence that the automatic mechanism triggered the opening can establish that explanation for this event. If the only observation is an open valve, report its state and leave the cause open. Manual opening can produce the same observation.
 
@@ -69,10 +69,10 @@ Use `unfoldingStructureRefs?` when `A.22.CGUS`, `E.18.3` or a local FPF block de
 
 Use the following prompts where a choice remains open.
 
-1. Identify the material and selected relations or events, explaining their relevance to the reader's purpose. State whether they concern past, live, proposed or fictional events when that changes the account.
+1. Start with a difference the reader needs to recognize, an experience the work should invite or a choice the reader will face. Select material and relations that bear on it. For a factual or hypothetical account, make past events, live observations and proposals distinguishable wherever that matters. For fiction, keep the premises the brief fixes and make the creative choices it leaves open.
 2. If the narrative uses an architecture description, decision or observation, let the reader find the source whose structure or claim matters to that use. A direct explanation can refer straight to the subject material.
 3. Identify who is writing or supplying the account and who will use it. Use `NSTD.4` for a consequential choice of voice or viewpoint and `NSTD.7` for planning or inspecting generated text. Use `A.2` or `A.2.1` for a precise system-role or assignment claim. Use A.13 and A.15.1 when the claim needs precise attribution of a dated Work occurrence.
-4. Relate the purpose to the selected structure and the reader’s use. If one changes, check whether the other still fits.
+4. Test the selection against the reader’s purpose. Hold a reported part fixed and change how it fits the whole. Then try holding the summary fixed while changing a detail it leaves out. If either change alters the requested answer or the grounds the reader needs, include the relevant relationship, establish it from a usable source or mark the limit. Stop when the selected material suffices. Revisit these choices if the purpose or material changes.
 5. Examine which inferences the draft invites given the reader’s likely preparation. Locate a consequential difficulty in the wording, presentation, source or evidence from a reading. A response can show which interpretation a particular reader gave. To attribute it to this passage or report independent understanding, establish what else the reader knew or used. Apply `F.19:4.4` when choosing a correction. The optional `likelyMisreading?` field can preserve the inference and its grounds for a collaborator.
 6. Identify where to find an omitted relation or what still needs investigation if the reader requires a stronger conclusion.
 
@@ -185,6 +185,8 @@ NarrativePurposeIntake@FictionalContinuationProbe:
 
 
 Use `A.6.3.NAR:4.0.1` when citation, dispute or another consequential use needs identifiable source and narrative claims. Identify source episteme X, narrative episteme Y and the construction that relates them. Preserve their common EntityOfConcern and check the correspondence on which the claimed use depends. When the two expressions use different representation languages, show how each is read and which source claims the narrative preserves under those readings. Establish publication permission, evidence or assurance when the intended claim or action requires it.
+
+When the narrative concerns the same incident as its source, identify which source supports each factual connection. A report of one team can also appear in a narrative about an entire service. To attribute an outcome to the service, establish which contributions actually came together in that delivery, or use a sufficient record of the service outcome. When the conclusion concerns another service, use A.6.4 to identify the change of EntityOfConcern and establish the correspondence and evidence that support the new claim. A change in the language used to tell the same incident can preserve its EntityOfConcern. A faithful rendering can finish the assignment to tell what happened to the first team.
 
 ### NSTD.1:5 - Archetypal Grounding
 
@@ -299,7 +301,7 @@ Check whether the proposed account omits a material counterexample or a serious 
 | Check | Passing condition |
 | --- | --- |
 | `CC-NSTD1-1` | The selection serves the reader’s purpose. Where reliance on the account requires fidelity, an adequate comparison identifies what it preserves from the source. |
-| `CC-NSTD1-2` | The reason for including a relation is recoverable from the reader’s intended use and the source. |
+| `CC-NSTD1-2` | The selection serves the reader’s question. Where the question depends on how parts fit together, the source and account support that connection at the scale needed for the answer. Details that the account combines can share the answer and any grounds the reader needs. |
 | `CC-NSTD1-3` | Past, live, proposed or fictional status and any intervening description are clear wherever they change interpretation. |
 | `CC-NSTD1-4` | Writing contribution, narrative viewpoint and intended reader are distinguishable when needed. Precise system-role, assignment or dated Work claims receive their own grounds only when asserted. |
 | `CC-NSTD1-5` | The intended use supplies enough direction to choose or improve the account, including an expressive aim when that is the task. |

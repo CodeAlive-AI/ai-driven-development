@@ -41,7 +41,7 @@ For each promising combination, propose a recipient and result, then explain how
 
 An adequate existing work account may answer those questions. Use C.40.NU when contrasting leads still need to be found, and C.40.PC when the worthwhile problem and proposed contribution need to be separated and qualified. C.40.NU returns leads with their source limits and next question; C.40.PC can return a supported problem, an attributed or contested concern, an unconfirmed hypothesis or rejection. Use the conclusion and limits the inquiry supports. If the receiving problem remains uncertain, return the smallest question that could distinguish it from a materially different explanation; do not pass the lead to option comparison as an established need.
 
-State whose problem or opportunity the direction addresses and what result would matter to that recipient. Distinguish that result from the organization's means. A certified sensor platform is an asset; reliable inspection outcomes are a possible customer contribution. Explain how a proposed platform change would affect that contribution.
+State whose problem or opportunity the direction addresses and what result would matter to that recipient. Distinguish that result from the organization's means. A certified sensor platform is an asset; reliable inspection outcomes are a possible customer contribution. Explain how a proposed platform change would affect that contribution. If the practitioner must propose a criterion, identify a difference between possible outcomes that would change what the recipient can do. Keep the recipients and dates already agreed. Where the distribution of a benefit matters, an unchanged aggregate can conceal a loss for one participant. Set the distinction according to the promised contribution and explain why it matters for this choice.
 
 Include the time in which the direction is meant to guide choices. A quarter’s focus and a twelve-month direction can both apply to one choice. State the contribution and constraints at each relevant horizon.
 
@@ -67,9 +67,9 @@ Keep the direction conditional when its support is unresolved. “Offer an accou
 
 #### STR.5:4.4 - Express the direction as a usable filter
 
-Ask whether the direction can distinguish two real proposals. State the contribution and conditions a fitting proposal must support, the exclusions that matter, and how to treat missing evidence. The filter can be expressed in ordinary language.
+State what makes a proposal fit this direction, which conditions exclude it, and how to decide when evidence is missing. Apply the filter to the proposal or set the recipient is considering. Several proposals may qualify on the same grounds. When the commission also requires choosing which one to fund, establish what distinguishes them for that choice and who can make it.
 
-Apply all conditions that currently govern the proposal. A proposal may fit the contribution but fail the resource or reversibility condition. Missing evidence leaves fit unresolved; it is not a negative observation. Use the rule in force for the actual choice. Compare a proposed condition provisionally when the question asks what would change under it.
+Apply all conditions that currently govern the proposal. A proposal may fit the contribution but fail the resource or reversibility condition. Failure of one mandatory condition rules the proposal out. If all other conditions can hold and the outstanding evidence could decide eligibility either way, record that decision as open. Use the rule in force for the actual choice. Compare a proposed condition provisionally when the question asks what would change under it.
 
 Explain why each exclusion matters. The filter's protection and opportunity cost can themselves become questions for the responsible chooser. An analyst may propose changing a poor condition; that appraisal does not change its current force or retrospectively alter earlier observations.
 
@@ -104,9 +104,9 @@ The team returns all four accounts with their different conditions. The later co
 
 #### STR.5:5.2 - A four-condition filter used on three proposals
 
-Apply this illustrative filter: this quarter, reduce customer rework, allow the result to be checked within two weeks, and avoid irreversible migration for now. The following applications illustrate that rule separately from SensorCo's time plan.
+Suppose the direction owner screens changes to start this quarter. Each must reduce total customer rework on orders handled by the affected process in the first two weeks after the change starts, compared with continuing that process. The result must be checkable by the end of those two weeks. Irreversible migration is excluded for now. The following proposals illustrate the filter separately from SensorCo's time plan.
 
-A reversible correction to error-handling information may fit when it can reduce rework this quarter and its result can be checked within two weeks. If the rework effect is merely asserted, its fit remains conditional on the missing answer. A branding proposal with no supported rework contribution does not yet satisfy the filter. An irreversible migration fails the current filter even if it promises a large rework reduction.
+A reversible correction to error-handling information may fit when it can start this quarter and reduce rework under the two-week test. If the rework effect is merely asserted, its fit remains conditional on the missing answer. A branding proposal with no supported rework contribution does not yet satisfy the filter. An irreversible migration fails the current filter even if it promises a large rework reduction.
 
 A fitting proposal becomes eligible for the next choice; it is not thereby funded. If the responsible body later permits irreversible migration subject to transition protection, compare proposals under the revised basis and preserve the reason for that revision. The earlier migration decision remains intelligible under the earlier rule. Keep the observations and identify the condition under which each decision was made.
 
@@ -122,7 +122,7 @@ The problem/contribution inquiry then asks whether the reported delay comes from
 
 If the receiving inquiry supports the first explanation, the person can develop a conditional direction: help this client group prepare a bounded planning decision, using a qualified comparison contribution, while protecting current obligations and the eight-hour limit. Study and client development are possible ways to prepare that service. The proposed six-hour study plus six-hour client-development package fails that time condition.
 
-A two-hour conversation, including preparation and closure, might answer a remaining question about the receiving use, but its fit stays unresolved until its ability to distinguish the live answers is supported. Continuing the existing contribution or deferring exploration remains a serious choice. The person, or an adviser if one is involved, returns the directions and their conditional filters; the person chooses whether to pursue or revise them. Eligibility for exploration neither funds a new practice nor supplies its future livelihood.
+A two-hour conversation, including preparation and closure, might answer a remaining question about the receiving use, but its fit stays unresolved until its ability to distinguish the live answers is supported. Continuing the existing contribution or deferring exploration remains a serious choice. If the person wants advice, the adviser can supply candidate directions and filters. If the person wants to learn to frame a direction, leave the relevant choice and its justification to that person, using agreed help. In either case the person may choose whether to pursue the direction. Eligibility for exploration neither funds a new practice nor supplies its future livelihood.
 
 ### STR.5:6 - Bias-Annotation
 
@@ -137,9 +137,9 @@ Growth and novelty are not universal strategic purposes. A professional may pref
 - Each retained contrast concerns the contribution or how it is provided.
 - Capability, resource logic, dependencies and exclusions are clear enough to challenge.
 - Proposed or unresolved support remains conditional.
-- A direction's filter can distinguish proposals under the conditions that currently govern them.
+- The direction’s filter supports a decision on the proposals within its stated use. A shared result is justified when the same grounds apply to each. A choice among qualifying proposals uses the criteria for that further decision.
 - Continuing the current contribution appears when it is a serious alternative.
-- The return distinguishes proposed directions, advice and authorized commitments.
+- The return identifies who framed the direction, what advice was used and who could commit to it, insofar as these distinctions matter to the commission.
 
 ### STR.5:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -159,7 +159,7 @@ The result can expose a direction that depends on support the organization canno
 
 ### STR.5:10 - Rationale
 
-A direction connects purpose to the logic of future contribution. It is broader than an initiative but concrete enough to exclude a proposal. That distinction allows practitioners to coordinate decisions while implementation details are still open.
+A direction connects purpose to the way future work could make a worthwhile contribution. It gives practitioners grounds to decide whether proposals fit, while leaving implementation choices open. All the proposals currently under consideration can satisfy those conditions.
 
 Conditional filters preserve both focus and revisability. They guide action under stated assumptions while allowing the assumptions and exclusions to be challenged by the responsible chooser. Proposal, comparison and commitment remain different results because they require different evidence and authority.
 

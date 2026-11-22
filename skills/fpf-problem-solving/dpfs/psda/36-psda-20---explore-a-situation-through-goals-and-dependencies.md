@@ -41,7 +41,7 @@ The car-park case follows the inquiry through a staffing conflict and a revised 
 
 #### PSDA.20:4.1 - Let the question determine what to model
 
-Identify what the inquiry needs to explain or support. Use existing records, relevant accounts and observations that establish the operating conditions. For a participant’s intention or experienced burden, use an attributable account or ask when needed and feasible. State any material gap. Participation in building the model may help correct it. To report agreement with a proposal, use evidence of the relevant response.
+Identify what the inquiry needs to explain or support. Follow the result from the person or service that needs it to the work or outside provision on which it depends. Open a contribution when two ways of supplying it could change the answer, its grounds or the permissible action. Stop at a supplier's qualified result when it settles the commissioned question. If a specific performance was promised, establish whether it was carried out. Use existing records, relevant accounts and observations that establish the operating conditions. For a participant’s intention or experienced burden, use an attributable account or ask when needed and feasible. State any material gap. Participation in building the model may help correct it. To report agreement with a proposal, use evidence of the relevant response.
 
 Consider a car park whose unreliable sensors sometimes send drivers towards occupied floors. Attendants walk the floors and correct the displayed counts. Management proposes replacing the entire system, since the sensors cannot simply be exchanged in the current design. The inquiry asks, **Does replacement address the service difficulty better than continuing manual correction?** This is an adaptation of the parking exercise in the [iStar tutorial, slide 57](https://zenodo.org/records/10637477/files/iStar-tutorial-online.pdf?download=1). The following participants, conditions and judgements are constructed for this walkthrough.
 
@@ -71,7 +71,7 @@ Give each relationship its intended meaning, such as necessity, sufficiency unde
 
 A view showing only participants and external provision helps locate a missing supplier. Opening the manager's and attendant's internal reasons exposes why the count is needed and what work supports it. Opening the supplier's proposed arrangement becomes useful when installation or later maintenance can change the answer.
 
-In iStar the strategic dependency view, strategic rationale view and their selective combinations expose different parts of one model. Use the view that answers the question. Preserve the identified dependency across views. Check underlying conditions when the display omits a detail that matters.
+In iStar the strategic dependency view, strategic rationale view and their selective combinations expose different parts of one model. Use the view that answers the question. Preserve the identified dependency across views. Check underlying conditions when the display omits a detail that matters. Asking whether the same count suffices for two floor allocations tests a different issue. A total can settle how many spaces remain while leaving the driver’s choice of floor open. Use a model that retains the locations, or a timely observation that distinguishes the available floors, when answering that question.
 
 For this car park, an overview can show “attendant supplies count”. To examine availability during a shift, open the checking task and its staffing conditions. For a whole-cost comparison, use an applicable cost account, calculate it from qualified inputs or state the cost still unknown. The [iStar 2.0 Guide, §§2–8](https://arxiv.org/html/1605.07767v3) supplies the notation, distinctions and integrity rules when an actual iStar model is wanted. This prose walkthrough uses those distinctions without claiming to be a solver-ready model.
 
@@ -170,7 +170,7 @@ Proposal bias treats the suggested technology as the problem's boundary. Agreeme
 
 - Identify the needed answer, its receiving use and what the evidence must establish.
 - Identify the recipient, purpose and needed provision. Establish the provider, means, acceptance and availability to the extent the conclusion uses them. Name any consequential gaps.
-- A view preserves the modeled relationships relevant to the question; omitted display detail is not treated as an absent condition.
+- The selected view preserves the relationships needed for this use. If the model groups cases that need different actions or explanations, recover the distinction or give the limit on the answer.
 - Initial analysis assumptions remain distinguishable from observations, model relationships and unknown or conflicting grounds.
 - The analysis result is interpreted in the original working terms, with its limited use and any newly discovered problem stated.
 - For a candidate derived from a joint requirement, examine the whole combination under those requirements. For each combination at issue, state what the grounds establish about its feasibility or which condition remains unresolved.

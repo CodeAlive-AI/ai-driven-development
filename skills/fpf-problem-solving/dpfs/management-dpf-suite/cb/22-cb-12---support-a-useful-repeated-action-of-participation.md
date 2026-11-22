@@ -53,7 +53,7 @@ For a shared activity, obtain the other participants' contributions too. One per
 
 #### CB.12:4.2 - Reconstruct what happens at an actual opportunity
 
-Use a recent episode, or a short observation of the next relevant one. Recover the situation in which the action would have helped, what the person noticed, what they began, what they could complete and what they received.
+Use a recent episode or observe the next relevant one when a missing distinction affects the choice of support. Recover the situation in which the action would have helped, what the person noticed, what they began, what they could complete and what they received.
 
 Keep four questions distinct:
 
@@ -66,11 +66,11 @@ Keep four questions distinct:
 
 Ask for the participant's account rather than inferring a motive from silence. A person who reads an applicable answer without posting may have completed the wanted action. A daily visitor may be unable to obtain help.
 
-Where an explanation remains uncertain, choose a small change or observation that can distinguish the live alternatives. For example, making the return link available at case closure can test a findability problem; sending more reminders while the response team is absent tests no useful repair. Preserve the other relevant conditions so that the observation remains interpretable, and keep its conclusion local.
+If the same support is wanted and justified under the remaining explanations, the person can select it now. When the cause is the question, or the explanations call for different action, choose a change or observation that distinguishes them. For example, making the return link available at case closure can test a findability problem; sending more reminders while the response team is absent tests no useful repair. Preserve the other relevant conditions so that the observation remains interpretable, and keep its conclusion local.
 
 If the expected benefit is unclear, ask what the person hoped the episode would settle and what remained afterwards. Compare plausible results rather than selecting a reward in advance. A maintained explanation may settle one question; another needs a peer to inspect unfamiliar conditions; a desired social encounter can have a different useful result. Agree a small trial of the relevant alternative using the applicable guidance in CB.1 and CB.5, then use the person's account and the receiving result to decide whether the original action is still worth repeating.
 
-Compare episodes that led to useful action with ones that did not. Look for the event that made the need apparent and the conditions in which the person could respond. Distinguish a potentially useful cue from a merely coincident feature: a notification may have arrived every day, while the actual occasion was completion of a case. Choose the next observation to separate the plausible explanations; treat an unresolved pattern as uncertainty rather than a personal defect.
+Compare successful and unsuccessful episodes when the contrast can explain what makes a return possible. Look for the event that made the need apparent and the conditions in which the person could respond. Distinguish a potentially useful cue from a merely coincident feature: a notification may have arrived every day, while the actual occasion was completion of a case. Choose the next observation to separate the plausible explanations; treat an unresolved pattern as uncertainty rather than a personal defect.
 
 HCD.3 supplies a fuller comparison when a possible human capability limitation is the receiving question. It compares that explanation with method, access, support, organisation and measurement problems. Use its result rather than diagnosing a lack of motivation whenever participation falls.
 
@@ -188,7 +188,7 @@ A useful repeated-action arrangement establishes:
 
 - an action the person wants or has accepted, with an intelligible result;
 - real opportunities for that action;
-- the current difficulty in noticing, beginning, completing or obtaining value;
+- the conditions on which the selected support depends and any unresolved explanation that could change the person’s choice;
 - feasible conditions, wanted support and a useful fallback;
 - observations that can change the arrangement without equating frequency with habit;
 - an understandable way to retain, revise, reduce or stop the support and any affected commitment.

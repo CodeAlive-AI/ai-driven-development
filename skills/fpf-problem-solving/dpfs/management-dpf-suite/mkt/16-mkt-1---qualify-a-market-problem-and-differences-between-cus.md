@@ -33,7 +33,7 @@ Qualify the difficulty and group cases only around differences that change a use
 
 Name the activity, the inadequate or unavailable result, the circumstances in which it matters and what presently happens instead. Use an actual account or an explicitly proposed case. “Need our platform” is a proposed answer. “A reporting operator must re-enter the same permitted data before the deadline” is a difficulty whose remedy remains open.
 
-Ask what would make addressing it worthwhile and for whom. Consider the result, transition effort, continuing burden and effects on people who do not make the purchasing decision. Use [FPF C.40.PC](../../../sections/09-part-c---kernel-extension-specifications/113-c-40-pc---construct-a-worthwhile-problem-and-proposed-contri.md) when the worthwhile problem or proposed contribution remains unresolved. It can return a supported problem, an attributed value claim, a hypothesis or rejection. Marketing must preserve that strength instead of treating every lead as established demand.
+Ask what would make addressing it worthwhile and for whom. Consider the result, transition effort, continuing burden and effects on people who do not make the purchasing decision. Use [FPF C.40.PC](../../../sections/09-part-c---kernel-extension-specifications/115-c-40-pc---construct-a-worthwhile-problem-and-proposed-contri.md) when the worthwhile problem or proposed contribution remains unresolved. It can return a supported problem, an attributed value claim, a hypothesis or rejection. Marketing must preserve that strength instead of treating every lead as established demand.
 
 The scope must be large enough to retain the result and small enough to investigate. Separate performing the underlying work from finding and acquiring a means to perform it. A purchasing obstacle can coexist with a well-served operational activity; an urgent operational need can coexist with no attainable purchase.
 
@@ -49,11 +49,11 @@ Use [MKT.12](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md)
 
 #### MKT.1:4.3 - Construct and challenge useful groupings
 
-Place concrete cases side by side. Ask whether the same contribution would address their difficulty under compatible conditions. Compare the activity, desired result, available alternative, access, preparation, buying arrangement and supply constraints. Keep a distinction only when it changes the offer, evidence needed, way to reach the people, acquisition route or capacity to supply.
+Derive the group boundary from what the customer and provider must be able to do. Compare actual cases where that can reveal a relevant difference. Ask whether the same contribution would address their difficulty under compatible conditions. Compare the activity, desired result, available alternative, access, preparation, buying arrangement and supply constraints. Keep a distinction only when it changes the offer, evidence needed, way to reach the people, acquisition route or capacity to supply.
 
 Propose a group in terms that make inclusion and exclusion intelligible. For example, “teams using compatible files for a periodic report, with permission for a bounded export and an operator available to inspect it” gives a testable use boundary. “Mid-sized innovative organisations” may help locate candidates but does not supply those conditions.
 
-Look for a nearby case that would break the shared offer. If a similar organisation needs continuous integration rather than a periodic file exchange, decide whether it needs a different variant, a separate target group or no current offer. Do not widen the original group's meaning to retain every attractive lead. Conversely, a different industry need not require another group when the conditions that affect the offer match.
+Try a credible exception to the proposed group. Evidence about the admitted formats, rights and access may already establish that the offer fits every member of a bounded group. Such a group can have no exceptions within it. If a similar organisation needs continuous integration rather than a periodic file exchange, decide whether it needs a different variant, a separate target group or no current offer. Do not widen the original group's meaning to retain every attractive lead. Conversely, a different industry need not require another group when the conditions that affect the offer match.
 
 Keep the observed cases, the hypothesis about a wider group and the estimate of its extent separate. A handful of cases can justify the next limited test while leaving the latter two uncertain. Larger population, pricing or investment decisions may require a different inquiry. A statistical cluster also needs an interpretable difference that a real offer or action can address.
 
@@ -79,7 +79,7 @@ Give [MKT.2](17-mkt-2---construct-and-test-an-offer-and-its-positioning.md) the 
 
 For example, the working result can say: “For teams with compatible periodic exports and an available reviewer, a bounded file-mapping trial could reduce duplicate entry. Access approval and the customer's purchasing window remain separate conditions. Continuous integration cases need another supply arrangement. The next move is to verify those conditions with two candidate teams before quoting the trial.”
 
-While identifying a missing access condition, the marketer is already doing part of the larger offer-construction work: the condition limits what may be proposed. If the encompassing programme reduces its support capacity, revisit the groups that require that support. If a customer changes its purchasing procedure, revise that acquisition route without automatically discarding the evidence about its underlying activity.
+Finding a missing access condition can change the offer. Ask what the offer team undertook. If its method includes establishing who can use the service, the inquiry can form part of constructing the offer. If the team receives an earlier independent access ruling, it uses that ruling in its design. The offer may be identical in both cases. Only the first arrangement assigns that inquiry to the offer team. If the encompassing programme reduces its support capacity, revisit the groups that require that support. If a customer changes its purchasing procedure, revise the affected acquisition route.
 
 Reopen the affected hypothesis when the activity, relevant roles, feasible alternative, supply arrangement or evidence of an important difference changes. Preserve unrelated qualified cases. A group is a maintained decision aid whose utility depends on its conditions, not an identity imposed on its members.
 
@@ -101,7 +101,7 @@ In a consumer repair service, one person may choose, pay and use the result. The
 
 ### MKT.1:6 - Bias-Annotation
 
-A successful reference customer can become an unjustified model for everyone. Inspect both the conditions that enabled the success and a nearby case that lacks them. A sales database also contains the people the organisation happened to reach; it need not represent those who stayed with another solution or could not get access.
+A successful reference customer can become an unjustified model for everyone. Establish which conditions enabled that customer’s result and whether they hold for the group now in question. Where a condition is uncertain, examine a case that could expose the difference. A sales database also contains the people the organisation happened to reach; it need not represent those who stayed with another solution or could not get access.
 
 Descriptive categories can become stereotypes when inferred characteristics stand in for evidence about the individual case. Use a category to locate a question, and confirm the condition before relying on it for a consequential individual offer.
 
@@ -109,7 +109,7 @@ Descriptive categories can become stereotypes when inferred characteristics stan
 
 - The difficulty and desired result are distinct from the proposed product or technology.
 - Action-changing roles, available alternatives and authority conditions remain separate.
-- Grouping has an intelligible use condition and an exclusion or revision case.
+- The basis for membership preserves the distinctions the offer requires. Any claimed exception or claim of suitability throughout the group has grounds at that reach.
 - Observed cases, a wider group hypothesis and a population estimate retain different evidence strength.
 - Target choice includes reachability, supply and full relevant burden under a declared horizon.
 - The result gives a practical basis for the next offer, inquiry, supplier request, deferral or decision to stop.

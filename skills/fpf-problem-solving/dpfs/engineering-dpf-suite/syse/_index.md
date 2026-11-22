@@ -5,12 +5,14 @@
 > A domain pattern language for bringing about and changing engineered Systems, from their intended use and architecture to realization, assurance, and continuing development.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Version:** 23 October 2026
+- **Version:** 22 November 2026
 - **Status:** Eternal alpha: a published working framework, used in analyses and worked applications, while continuing to evolve.
 - **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for original framework content; third-party material retains its own terms.
 - **Publication:** [FPF Library repository](https://github.com/ailev/FPF)
 
-Begin with the engineering question that blocks your project: the project System and its use, an architecture choice, a realization branch, an integration result, or the evidence needed for a decision.
+Begin with the engineering question your project needs to settle. It may concern the project System and its use, an architecture choice, a realization branch, an integration result or the evidence needed for a decision.
+
+Before choosing a pattern, establish who needs what result, what is already fixed and which choices the engineer must make. If a decision depends on the whole, ask what could change that decision while the reported part stays the same. Conversely, hold the reported whole fixed and vary the parts, their connections or the way the work is done. Use the differences that matter to choose how far to follow each subject and what its model must distinguish. A known result can settle the question as soon as its grounds cover that use.
 
 Use the Table of Contents below to search by a familiar term or working question and find the relevant PatternID. Open the pattern and apply its Problem frame, Solution, worked cases, and checklist to the System, configuration, or engineering decision. Follow dependencies when a needed result is missing; engineering Work may otherwise overlap or begin from an already available result.
 
@@ -58,10 +60,10 @@ Search the Keywords & Search Queries column for the engineering difficulty, subj
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | [SYSE.1 - Choose and Reopen the Project System-of-Interest](20-syse-1---choose-and-reopen-the-project-system-of-interest.md) |  Stable  | *Keywords:* project system-of-interest, intended System, project focus, product, solution, project boundary, outside effect. *Queries:* "Which System is this project changing or bringing about?" "Why is this the useful focus now, and what could reopen it?" Establish a shared project-system choice that lets later use, architecture, realization, and assurance decisions refer to the same subject. | FPF A.1.SCR, C.11 |
+| 1 | [SYSE.1 - Choose and Reopen the Project System-of-Interest](20-syse-1---choose-and-reopen-the-project-system-of-interest.md) |  Stable  | *Keywords:* project system-of-interest, intended System, project focus, product, solution, project boundary, outside effect. *Queries:* "Which product's intended use or withdrawal gives these contributors a reason to work together? Which System does the local project create, change, maintain or retire?" "Why is this the useful focus now, and what could reopen it?" Establish the product focus and the result each local contributor must deliver. Use the appropriate subject for each later decision. | FPF A.1.SCR, C.11 |
 | 2 | [SYSE.16 - Recover the Systems and Conditions Needed for a Use Decision](21-syse-16---recover-the-systems-and-conditions-needed-for-a-us.md) |  Stable  | *Keywords:* operational environment, suprasystem, using System, neighbours, interactions, operating conditions, context diagram. *Queries:* "Which surrounding Systems and conditions matter to this use decision?" "What containing, using, interacting, or boundary-crossing relations must the engineering account distinguish?" Recover the decision-relevant use context across its functional, constructive, interaction, and operating claims so the next concept or architecture choice has a grounded basis. | SYSE.1; FPF A.22 |
-| 3 | [SYSE.17 - Find Systems That May Bear Engineering Consequences](22-syse-17---find-systems-that-may-bear-engineering-consequence.md) |  Stable  | *Keywords:* affected Systems, consequences, bystander, future operator, maintainer, ecological System, direct relation, possible path. *Queries:* "Who or what may undergo a consequence of this engineering change?" "Which supported relation or possible path makes that bearer relevant?" Discover and qualify consequence-bearing Systems while the project can still change its concept, constraint, alternative, probe, or stop decision. | SYSE.1, SYSE.16; FPF A.1.CSD, C.28, A.10 |
-| 4 | [SYSE.2 - Develop Linked Use and System Concepts](23-syse-2---develop-linked-use-and-system-concepts.md) |  Stable  | *Keywords:* use concept, System concept, Concept of Operations, use case, scenario, user story, requirements, outside effect. *Queries:* "How will this System be used in a concrete situation?" "Which candidate System concept could support that use?" Link use claims to System-concept claims with their relevant neighbours, conditions, consequences, and any uncertainty; expose the next architecture question or the missing use premise. | SYSE.1, SYSE.16, SYSE.17; FPF C.17 |
+| 3 | [SYSE.17 - Find Systems That May Bear Engineering Consequences](22-syse-17---find-systems-that-may-bear-engineering-consequence.md) |  Stable  | *Keywords:* affected Systems, consequences, bystander, future operator, maintainer, ecological System, direct relation, possible path. *Queries:* "Who or what may undergo a consequence of this engineering change?" "Which supported relation or possible path makes that bearer relevant?" Establish the Systems and conditions covered by a possible effect, a complete list or a consequence of several uses together while the project can still change the engineering choice. | SYSE.1, SYSE.16; FPF A.1.CSD, C.28, A.10 |
+| 4 | [SYSE.2 - Develop Linked Use and System Concepts](23-syse-2---develop-linked-use-and-system-concepts.md) |  Stable  | *Keywords:* use concept, System concept, Concept of Operations, use case, scenario, user story, requirements, outside effect. *Queries:* "How will this System be used in a concrete situation?" "Which candidate System concept could support that use?" Link use claims to System-concept claims with their relevant neighbours, conditions, consequences, and any uncertainty; return the supported concept, the decision it enables, or the use or design premise that is still missing. | SYSE.1, SYSE.16, SYSE.17; FPF C.17 |
 | 5 | [SYSE.54 - Make Domain Behaviour Explicit Together with EventStorming](24-syse-54---make-domain-behaviour-explicit-together-with-event.md) | Stable | *Keywords:* EventStorming, domain events, collaborative modelling, commands, policies, state, process modelling, domain behaviour. *Queries:* "Why do participants disagree about what happens and what should happen next?" "How can we expose missing decisions and test the behaviour before choosing software boundaries?" Use an existing account if it explains the behaviour the engineering work depends on. A rule or operating record may answer a remaining question. When people need to reconcile what happens, model events and test examples together. Identify any uncertainty that affects the intended use. | SYSE.2; FPF B.5.SD; A.3.3.TR when a state-change rule is needed |
 | 6 | [SYSE.22 - Coevolve Engineering Problems and System-Family Options](25-syse-22---coevolve-engineering-problems-and-system-family-op.md) | Stable | *Keywords:* problem formulation, System family, option generation, exploration, experiment, lineage, current alternatives. *Queries:* "How should the problem change when a prototype or operating observation reveals a new possibility?" "Which System-family options should remain under comparison now?" Develop problem formulations and possible System solutions together, preserving their lineage and returning new observations only to the choices they can change. | SYSE.1, SYSE.2, SYSE.6, SYSE.13; FPF C.11, C.17-C.19, G.11 |
 
@@ -73,7 +75,7 @@ Search the Keywords & Search Queries column for the engineering difficulty, subj
 | 8 | [SYSE.6 - Decide and Reopen the Engineering Architecture](27-syse-6---decide-and-reopen-the-engineering-architecture.md) | Stable | *Keywords:* architecture decision, functional allocation, module boundary, interface, control, redundancy, product family, trade-off, software architecture styles, layers, pipeline, plugins, microservices. *Queries:* "Which engineering architecture should the project choose for this use?" "Which evidence or changed condition would reopen that choice?" Understand software-style mechanisms where relevant; select the decision-relevant structures, compare materially different alternatives and accepted losses, and state the constraints that later realization and specialist decisions must respect. | SYSE.2, SYSE.5; FPF C.30, C.32 |
 | 9 | [SYSE.7 - Keep Engineering Descriptions Usable Together for Decisions](28-syse-7---keep-engineering-descriptions-usable-together-for-d.md) |  Stable  | *Keywords:* engineering descriptions, model, requirement, CAD, simulation, digital twin, configuration, correspondence, contradiction. *Queries:* "Which claims across our models and records support this decision?" "Do they concern compatible subjects, configurations, intervals, and interpretations?" Maintain a usable ensemble of descriptions with explicit links to sources and returned evidence, justified correspondences, and identified contradictions that can change the engineering answer. | SYSE.6; FPF C.29, A.10 |
 | 10 | [SYSE.8 - Develop an Integrated Offering and Provider Concept for Using an Engineered Result](29-syse-8---develop-an-integrated-offering-and-provider-concept.md) |  Stable  | *Keywords:* integrated offering, provider concept, service, access, consumables, maintenance, support, financing, conditional payment, risk allocation. *Queries:* "What provider arrangement could fulfil this offering in its intended use?" "How do provider, access, and support choices change the technical concept and allocation of risk?" "How can we provide the result when payment depends on its technical acceptance?" Develop the offering and provider concept alongside the System concept, connecting the needed Systems, Work, promises, supported contributions and conditional finance. | SYSE.2; FPF A.2.3 |
-| 11 | [SYSE.9 - Use or Request Specialist Engineering Results](30-syse-9---use-or-request-specialist-engineering-results.md) |  Stable  | *Keywords:* specialist result, engineering contribution, receiving decision, safety, calculation, authority, evidence limits. *Queries:* "Which specialist answer could change this whole-System decision?" "What subject, configuration, conditions, and evidence must that answer address?" Use an adequate qualified specialist result or return its material limit. Select a new request only when its attainable contribution warrants the whole acquisition burden for the engineering choice; preserve the supplier Method and authority. | SYSE.2, SYSE.6; FPF A.15.9, C.11.DUA, A.6.REL, E.10.ROLE |
+| 11 | [SYSE.9 - Use or Request Specialist Engineering Results](30-syse-9---use-or-request-specialist-engineering-results.md) |  Stable  | *Keywords:* specialist result, engineering contribution, receiving decision, safety, calculation, authority, evidence limits. *Queries:* "Which specialist answer could change this whole-System decision?" "What subject, configuration, conditions, and evidence must that answer address?" Use an adequate qualified specialist result or return its material limit. For discretionary work, compare what a new request could establish with its full acquisition burden. Carry out a commissioned test or obtain authority to change it even when an earlier result already answers the technical question. | SYSE.2, SYSE.6; FPF A.15.9, C.11.DUA, A.6.REL, E.10.ROLE |
 | 12 | [SYSE.10 - Assess Research, Model, and Trial Results for an Engineering Decision](31-syse-10---assess-research-model-and-trial-results-for-an-eng.md) |  Stable  | *Keywords:* research result, engineering model, simulation, experiment, prototype, field trial, formal proof, validity. *Queries:* "What can this research, model, or trial result support in our engineering decision?" "Which implementation correspondence or untested condition limits that use?" Assess what the result supports, its remaining uncertainty, and any need for further observation, so the decision uses partial knowledge within its justified limits. | SYSE.6, SYSE.7; FPF A.10, C.16 |
 
 **Part III - Obtaining Engineering Results, Recursive Realization, Platforms, Independent Constituents, and Evolvability**
@@ -190,7 +192,7 @@ In [APP-SYSE-01](75-syse-application-1---app-syse-01-navigation-walkthrough-rele
 
 SYSE.5 uses that account to develop different functional allocations and physical or software bearers. SYSE.6 compares these alternatives and selects the structures on which realization will depend. If no complete way of obtaining an included result is available, SYSE.24 compares arrangements such as adapting existing equipment or obtaining a supplied contribution, including integration and continued support. SYSE.3 then develops the required realization work and its means. An unsupported branch can return the project to the architecture choice.
 
-SYSE.11 integrates the realized contributions and observes the increment in its named use. SYSE.13 identifies the resulting configuration and where it applies. These results give SYSE.4 a subject for interpreting the component, station and downstream observations. Component evidence supports only the claim and conditions for which it was qualified; it does not settle the station-use question. SYSE.14 consumes the configuration and qualified evidence to prepare the release decision, retaining the deciding authority and any separate permission.
+SYSE.11 integrates the realized contributions and observes the increment in its named use. SYSE.13 identifies the resulting configuration and where it applies. These results give SYSE.4 a subject for interpreting the component, station and downstream observations. For this release, the component evidence leaves station operation and downstream effects open. For another decision a component limit can settle the use question when its applicability in the installed arrangement is established. SYSE.14 consumes the configuration and qualified evidence to prepare the release decision, retaining the deciding authority and any separate permission.
 
 The example's recommendation remains conditional on a restored-function check and unresolved safety permission. A new component version reopens the claims affected by that version; it need not invalidate unrelated evidence. If the trial also used a new AI-assisted analysis method, SYSE.15 addresses its further use for the supported claim classes. SYSE.21 becomes relevant only when the question concerns transmission and retention across practitioners. A local trial and a claim about later cultural continuation need different results.
 
@@ -282,16 +284,16 @@ Generated by the skill's splitter: one file per section, in reading order.
 ### Systems Engineering Principles Framework Architectural Reference
 
 - [Systems Engineering Principles Framework Architectural Reference](01-systems-engineering-principles-framework-architectural-refer.md) (19 lines)
-- [SYSE.Reference:1 - Choose a useful result and combine its needed contributions](02-syse-reference-1---choose-a-useful-result-and-combine-its-ne.md) (45 lines)
+- [SYSE.Reference:1 - Choose a useful result and combine its needed contributions](02-syse-reference-1---choose-a-useful-result-and-combine-its-ne.md) (44 lines)
 - [SYSE.Reference:2 - One System can appear in several engineering structures](03-syse-reference-2---one-system-can-appear-in-several-engineer.md) (14 lines)
 - [SYSE.Reference:3 - Use and System concepts stay linked](04-syse-reference-3---use-and-system-concepts-stay-linked.md) (25 lines)
 - [SYSE.Reference:4 - Realization is recursive and continuous](05-syse-reference-4---realization-is-recursive-and-continuous.md) (19 lines)
 - [SYSE.Reference:5 - Common platform work and software-specific Methods](06-syse-reference-5---common-platform-work-and-software-specifi.md) (100 lines)
 - [SYSE.Reference:6 - Configuration and evidence travel with continuing change](07-syse-reference-6---configuration-and-evidence-travel-with-co.md) (20 lines)
-- [SYSE.Reference:7 - A Method has several structures; Work can be simultaneous](08-syse-reference-7---a-method-has-several-structures-work-can.md) (27 lines)
+- [SYSE.Reference:7 - A Method has several structures; Work can be simultaneous](08-syse-reference-7---a-method-has-several-structures-work-can.md) (23 lines)
 - [SYSE.Reference:8 - How project Work contributes to engineering culture](09-syse-reference-8---how-project-work-contributes-to-engineeri.md) (13 lines)
-- [SYSE.Reference:9 - Architectural Rationale](10-syse-reference-9---architectural-rationale.md) (61 lines)
-- [SYSE.Reference:10 - Check the combined engineering answer](11-syse-reference-10---check-the-combined-engineering-answer.md) (51 lines)
+- [SYSE.Reference:9 - Architectural Rationale](10-syse-reference-9---architectural-rationale.md) (60 lines)
+- [SYSE.Reference:10 - Check the combined engineering answer](11-syse-reference-10---check-the-combined-engineering-answer.md) (53 lines)
 - [SYSE.Reference:11 - Scope and specialist boundaries](12-syse-reference-11---scope-and-specialist-boundaries.md) (19 lines)
 - [SYSE.Reference:12 - Intended use and non-use boundary](13-syse-reference-12---intended-use-and-non-use-boundary.md) (42 lines)
 - [SYSE.Reference:13 - PatternID discipline](14-syse-reference-13---patternid-discipline.md) (6 lines)
@@ -304,42 +306,42 @@ Generated by the skill's splitter: one file per section, in reading order.
 ### Part I - Project Focus, Environment, Consequences, and Problem/System-Family Development
 
 - [SYSE.1 - Choose and Reopen the Project System-of-Interest](20-syse-1---choose-and-reopen-the-project-system-of-interest.md) (307 lines)
-- [SYSE.16 - Recover the Systems and Conditions Needed for a Use Decision](21-syse-16---recover-the-systems-and-conditions-needed-for-a-us.md) (283 lines)
-- [SYSE.17 - Find Systems That May Bear Engineering Consequences](22-syse-17---find-systems-that-may-bear-engineering-consequence.md) (367 lines)
-- [SYSE.2 - Develop Linked Use and System Concepts](23-syse-2---develop-linked-use-and-system-concepts.md) (440 lines)
-- [SYSE.54 - Make Domain Behaviour Explicit Together with EventStorming](24-syse-54---make-domain-behaviour-explicit-together-with-event.md) (352 lines)
-- [SYSE.22 - Coevolve Engineering Problems and System-Family Options](25-syse-22---coevolve-engineering-problems-and-system-family-op.md) (544 lines)
+- [SYSE.16 - Recover the Systems and Conditions Needed for a Use Decision](21-syse-16---recover-the-systems-and-conditions-needed-for-a-us.md) (276 lines)
+- [SYSE.17 - Find Systems That May Bear Engineering Consequences](22-syse-17---find-systems-that-may-bear-engineering-consequence.md) (371 lines)
+- [SYSE.2 - Develop Linked Use and System Concepts](23-syse-2---develop-linked-use-and-system-concepts.md) (432 lines)
+- [SYSE.54 - Make Domain Behaviour Explicit Together with EventStorming](24-syse-54---make-domain-behaviour-explicit-together-with-event.md) (344 lines)
+- [SYSE.22 - Coevolve Engineering Problems and System-Family Options](25-syse-22---coevolve-engineering-problems-and-system-family-op.md) (536 lines)
 
 ### Part II - Architecture, Descriptions, Offerings, and Professional Contributions
 
-- [SYSE.5 - Develop an Engineered System's Functional Organization and Bearer Alternatives](26-syse-5---develop-an-engineered-system-s-functional-organizat.md) (510 lines)
-- [SYSE.6 - Decide and Reopen the Engineering Architecture](27-syse-6---decide-and-reopen-the-engineering-architecture.md) (626 lines)
-- [SYSE.7 - Keep Engineering Descriptions Usable Together for Decisions](28-syse-7---keep-engineering-descriptions-usable-together-for-d.md) (451 lines)
-- [SYSE.8 - Develop an Integrated Offering and Provider Concept for Using an Engineered Result](29-syse-8---develop-an-integrated-offering-and-provider-concept.md) (423 lines)
-- [SYSE.9 - Use or Request Specialist Engineering Results](30-syse-9---use-or-request-specialist-engineering-results.md) (427 lines)
-- [SYSE.10 - Assess Research, Model, and Trial Results for an Engineering Decision](31-syse-10---assess-research-model-and-trial-results-for-an-eng.md) (498 lines)
+- [SYSE.5 - Develop an Engineered System's Functional Organization and Bearer Alternatives](26-syse-5---develop-an-engineered-system-s-functional-organizat.md) (493 lines)
+- [SYSE.6 - Decide and Reopen the Engineering Architecture](27-syse-6---decide-and-reopen-the-engineering-architecture.md) (619 lines)
+- [SYSE.7 - Keep Engineering Descriptions Usable Together for Decisions](28-syse-7---keep-engineering-descriptions-usable-together-for-d.md) (443 lines)
+- [SYSE.8 - Develop an Integrated Offering and Provider Concept for Using an Engineered Result](29-syse-8---develop-an-integrated-offering-and-provider-concept.md) (420 lines)
+- [SYSE.9 - Use or Request Specialist Engineering Results](30-syse-9---use-or-request-specialist-engineering-results.md) (412 lines)
+- [SYSE.10 - Assess Research, Model, and Trial Results for an Engineering Decision](31-syse-10---assess-research-model-and-trial-results-for-an-eng.md) (490 lines)
 
 ### Part III - Obtaining Engineering Results, Recursive Realization, Platforms, Independent Constituents, and Evolvability
 
-- [SYSE.24 - Choose How the Project Will Obtain a Needed Engineering Result](32-syse-24---choose-how-the-project-will-obtain-a-needed-engine.md) (862 lines)
-- [SYSE.3 - Plan the Next System-Realization Action (Recursive Realization Network)](33-syse-3---plan-the-next-system-realization-action.md) (483 lines)
-- [SYSE.11 - Integrate a System for One Bounded Use](34-syse-11---integrate-a-system-for-one-bounded-use.md) (486 lines)
-- [SYSE.12 - Develop or Retain an Engineering Platform for Practitioner Work](35-syse-12---develop-or-retain-an-engineering-platform-for-prac.md) (362 lines)
-- [SYSE.18 - Decide Whether and How to Integrate Systems Governed by Different Agents](36-syse-18---decide-whether-and-how-to-integrate-systems-govern.md) (436 lines)
-- [SYSE.23 - Choose What to Change So Later System Changes Become Easier](37-syse-23---choose-what-to-change-so-later-system-changes-beco.md) (729 lines)
+- [SYSE.24 - Choose How the Project Will Obtain a Needed Engineering Result](32-syse-24---choose-how-the-project-will-obtain-a-needed-engine.md) (853 lines)
+- [SYSE.3 - Plan the Next System-Realization Action (Recursive Realization Network)](33-syse-3---plan-the-next-system-realization-action.md) (470 lines)
+- [SYSE.11 - Integrate a System for One Bounded Use](34-syse-11---integrate-a-system-for-one-bounded-use.md) (481 lines)
+- [SYSE.12 - Develop or Retain an Engineering Platform for Practitioner Work](35-syse-12---develop-or-retain-an-engineering-platform-for-prac.md) (353 lines)
+- [SYSE.18 - Decide Whether and How to Integrate Systems Governed by Different Agents](36-syse-18---decide-whether-and-how-to-integrate-systems-govern.md) (428 lines)
+- [SYSE.23 - Choose What to Change So Later System Changes Become Easier](37-syse-23---choose-what-to-change-so-later-system-changes-beco.md) (715 lines)
 
 ### Part IV - Configuration, Continuing Change, and Source Continuity
 
-- [SYSE.13 - Establish Configuration Identity, Variants, and Effectivity](38-syse-13---establish-configuration-identity-variants-and-effe.md) (364 lines)
-- [SYSE.14 - Make a Release Decision for Named Engineering Work or Use](39-syse-14---make-a-release-decision-for-named-engineering-work.md) (351 lines)
-- [SYSE.19 - Revalidate Engineering Decisions When a Relied-on Source Changes](40-syse-19---revalidate-engineering-decisions-when-a-relied-on.md) (561 lines)
+- [SYSE.13 - Establish Configuration Identity, Variants, and Effectivity](38-syse-13---establish-configuration-identity-variants-and-effe.md) (356 lines)
+- [SYSE.14 - Make a Release Decision for Named Engineering Work or Use](39-syse-14---make-a-release-decision-for-named-engineering-work.md) (344 lines)
+- [SYSE.19 - Revalidate Engineering Decisions When a Relied-on Source Changes](40-syse-19---revalidate-engineering-decisions-when-a-relied-on.md) (558 lines)
 
 ### Part V - Assurance, Method and Work Architecture, Repertoire, and Cultural Continuation
 
-- [SYSE.4 - Decide Whether and How to Challenge an Engineering Claim](41-syse-4---decide-whether-and-how-to-challenge-an-engineering.md) (576 lines)
-- [SYSE.15 - Choose and Refresh the Engineering Methods Needed by a Project](42-syse-15---choose-and-refresh-the-engineering-methods-needed.md) (387 lines)
-- [SYSE.20 - Reconcile Overlapping Engineering Work and Required Order](43-syse-20---reconcile-overlapping-engineering-work-and-require.md) (589 lines)
-- [SYSE.21 - Decide Whether and How to Change Systems Engineering Culture](44-syse-21---decide-whether-and-how-to-change-systems-engineeri.md) (389 lines)
+- [SYSE.4 - Decide Whether and How to Challenge an Engineering Claim](41-syse-4---decide-whether-and-how-to-challenge-an-engineering.md) (572 lines)
+- [SYSE.15 - Choose and Refresh the Engineering Methods Needed by a Project](42-syse-15---choose-and-refresh-the-engineering-methods-needed.md) (378 lines)
+- [SYSE.20 - Reconcile Overlapping Engineering Work and Required Order](43-syse-20---reconcile-overlapping-engineering-work-and-require.md) (586 lines)
+- [SYSE.21 - Decide Whether and How to Change Systems Engineering Culture](44-syse-21---decide-whether-and-how-to-change-systems-engineeri.md) (385 lines)
 
 ### Part VI - Platform Engineering: Supported Use and Continuing Change
 
@@ -358,10 +360,10 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [SYSE.33 - Provide Reconstructible Software Development and Test Environments](54-syse-33---provide-reconstructible-software-development-and-t.md) (156 lines)
 - [SYSE.34 - Change Software and Persistent Data with a Recovery Boundary](55-syse-34---change-software-and-persistent-data-with-a-recover.md) (198 lines)
 - [SYSE.35 - Control Software Release Exposure with User-Relevant Signals](56-syse-35---control-software-release-exposure-with-user-releva.md) (164 lines)
-- [SYSE.36 - Measure User Tasks and Set Software-Service Reliability Objectives](57-syse-36---measure-user-tasks-and-set-software-service-reliab.md) (174 lines)
+- [SYSE.36 - Measure User Tasks and Set Software-Service Reliability Objectives](57-syse-36---measure-user-tasks-and-set-software-service-reliab.md) (176 lines)
 - [SYSE.37 - Alert on Actionable Software-Service Reliability Risk](58-syse-37---alert-on-actionable-software-service-reliability-r.md) (161 lines)
 - [SYSE.38 - Diagnose and Restore a Failed Software-Platform Task](59-syse-38---diagnose-and-restore-a-failed-software-platform-ta.md) (167 lines)
-- [SYSE.39 - Decide Whether and How to Reduce the Total Burden of Repetitive Platform Work](60-syse-39---decide-whether-and-how-to-reduce-the-total-burden.md) (172 lines)
+- [SYSE.39 - Decide Whether and How to Reduce the Total Burden of Repetitive Platform Work](60-syse-39---decide-whether-and-how-to-reduce-the-total-burden.md) (174 lines)
 - [SYSE.40 - Protect Software Platform Capacity and Isolate Failure](61-syse-40---protect-software-platform-capacity-and-isolate-fai.md) (169 lines)
 - [SYSE.41 - Deploy a Verified Software Artifact with the Target Configuration and Handle Partial Failure](62-syse-41---deploy-a-verified-software-artifact-with-the-targe.md) (167 lines)
 
@@ -381,17 +383,17 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 ### Cross-Pattern Applications
 
-- [Cross-Pattern Applications](74-cross-pattern-applications.md) (14 lines)
-- [SYSE.Application:1 - APP-SYSE-01 — Navigation walkthrough: release a vibration-control change for a district-heating pump station](75-syse-application-1---app-syse-01-navigation-walkthrough-rele.md) (64 lines)
-- [SYSE.Application:2 - APP-SYSE-02 — Navigation walkthrough: develop a district-heating inspection System family while the damage-detection problem changes](76-syse-application-2---app-syse-02-navigation-walkthrough-deve.md) (52 lines)
-- [SYSE.Application:3 - APP-SYSE-03 — Worked application: choose and bound an authentication-service migration](77-syse-application-3---app-syse-03-worked-application-choose-a.md) (82 lines)
-- [SYSE.Application:4 - APP-SYSE-04 — Worked application: obtain climate control for a new greenhouse configuration](78-syse-application-4---app-syse-04-worked-application-obtain-c.md) (120 lines)
+- [Cross-Pattern Applications](74-cross-pattern-applications.md) (12 lines)
+- [SYSE.Application:1 - APP-SYSE-01 — Navigation walkthrough: release a vibration-control change for a district-heating pump station](75-syse-application-1---app-syse-01-navigation-walkthrough-rele.md) (57 lines)
+- [SYSE.Application:2 - APP-SYSE-02 — Navigation walkthrough: develop a district-heating inspection System family while the damage-detection problem changes](76-syse-application-2---app-syse-02-navigation-walkthrough-deve.md) (49 lines)
+- [SYSE.Application:3 - APP-SYSE-03 — Worked application: choose and bound an authentication-service migration](77-syse-application-3---app-syse-03-worked-application-choose-a.md) (79 lines)
+- [SYSE.Application:4 - APP-SYSE-04 — Worked application: obtain climate control for a new greenhouse configuration](78-syse-application-4---app-syse-04-worked-application-obtain-c.md) (118 lines)
 - [SYSE.Application:5 - APP-SYSE-05 - Worked application: construct a supported software build-and-delivery path](79-syse-application-5---app-syse-05---worked-application-constr.md) (157 lines)
-- [SYSE.Application:6 - APP-SYSE-06 - Worked application: qualify a machining path with an external operation](80-syse-application-6---app-syse-06---worked-application-qualif.md) (145 lines)
+- [SYSE.Application:6 - APP-SYSE-06 - Worked application: qualify a machining path with an external operation](80-syse-application-6---app-syse-06---worked-application-qualif.md) (143 lines)
 - [SYSE.Application:End](81-syse-application-end.md) (3 lines)
 
 ### Systems Engineering Principles Framework Sources and Edition Notes
 
 - [SYSE.Sources:1 - Project-focus research sources](82-syse-sources-1---project-focus-research-sources.md) (18 lines)
-- [SYSE.Sources:2 - Professional sources and their use](83-syse-sources-2---professional-sources-and-their-use.md) (37 lines)
+- [SYSE.Sources:2 - Professional sources and their use](83-syse-sources-2---professional-sources-and-their-use.md) (38 lines)
 - [SYSE.Sources:End](84-syse-sources-end.md) (1 lines)

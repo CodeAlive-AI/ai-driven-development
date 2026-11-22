@@ -43,7 +43,7 @@ Describe the intended character of the encounter in ordinary terms and explain i
 
 For an unresolved choice, develop any materially different options needed for comparison. For each, describe a plausible encounter from the customer's position: what they would notice, understand, do, wait for, rely on and encounter if something went wrong. This short account exposes the conditions the concept requires. It also distinguishes a desired experience from a list of brand attributes or a provider's internal process.
 
-Compare the alternatives against the customer's relevant expectations, useful result, effort and tolerable uncertainty, together with the provider's ability and constraints. Decide which differences warrant distinct arrangements. A single concept can allow both self-service and requested help; it cannot honestly promise independence if every case must finish through a telephone call. If alternatives remain uncertain, choose a bounded comparison that can change the decision rather than declaring one idea universally preferable.
+Compare the alternatives against the customer's relevant expectations, useful result, effort and tolerable uncertainty, together with the provider's ability and constraints. Decide which differences warrant distinct arrangements. A single concept can allow both self-service and requested help; it cannot honestly promise independence if every case needs an operator to complete submission. If alternatives remain uncertain, choose a bounded comparison that can change the decision rather than declaring one idea universally preferable.
 
 #### MKT.5:4.3 - Connect the concept to conditions throughout the encounter
 
@@ -64,7 +64,7 @@ When a contribution is missing, give the responsible practice a concrete request
 
 #### MKT.5:4.4 - Find contradictions and select a feasible repair
 
-Walk through the proposed encounter under an ordinary condition and an action-changing variation. Compare what each part leads the customer to expect with what the next part actually permits. Look for incompatible demands: a message invites speed while an irreversible choice needs consideration, the interface offers help outside support hours, or an operator is rewarded for ending a call before resolving the issue.
+Follow the proposed encounter through the conditions the offer permits. Try a variation when a plausible change could make the customer expect something the service cannot supply. A common rule can also establish that the parts agree throughout the required range. Compare what each part leads the customer to expect with what the next part actually permits. Look for incompatible demands: a message invites speed while an irreversible choice needs consideration, the interface offers help outside support hours, or an operator is rewarded for ending a call before resolving the issue.
 
 Trace a contradiction to the condition that produces it. Compare feasible repairs, including changing the promise, changing the product or operation, narrowing the circumstances served, or offering a different form of help. Include effects on other customers, staff work and already made commitments. Moving waiting time from a queue into repeated customer calls is not automatically an improvement.
 
@@ -74,15 +74,15 @@ Identify who can supply each required change. Use an agreement already in force 
 
 Select a proportionate use of the arrangement that can expose its live uncertainty. A walkthrough can reveal a missing action or contradiction; a prototype can test understanding and interaction; actual service performance can reveal waiting, support and coordination failures. State which conditions are represented and which remain simulated. A script or prototype does not establish that an operating team can sustain the service.
 
-Observe whether the planned conditions occurred and what the customer experienced. Ask questions appropriate to the concept without supplying the desired answer. For calm independent completion, relevant observations might include successful completion without imposed assistance, points where help was sought, and the person's account of confidence or anxiety at specified moments. Completion alone cannot establish calmness; reported calmness cannot establish a correct result.
+When the commission includes assessment of a particular experience, establish whether the planned conditions occurred and what the customer experienced. For calm independent completion, relevant observations might include completion under the intended help conditions, points where help was sought, and the person’s account at the moments the question concerns. Completion alone leaves calmness open. A report of calmness leaves correct completion open.
 
 Keep usefulness, effort, experience and later evaluation distinct where they matter. A demanding training session may be useful without being pleasant throughout. A pleasant contact may fail to solve the problem. If a causal claim about the intervention is needed, MKT.10 addresses that question; a satisfied participant after a trial is not sufficient evidence of causation or broad suitability.
 
 #### MKT.5:4.6 - Revise the concept or its conditions from the result
 
-Compare the intended encounter with the observed arrangement and response. If the conditions were not supplied, obtain or revise them before blaming the concept. If the arrangement worked but the intended response did not occur, investigate the context or assumption linking the conditions to that response. If the desired response occurred while the useful result failed, revise the contribution rather than treating the experience measure as success.
+Compare the intended encounter with the observed arrangement and response. If the conditions were not supplied, obtain or revise them before blaming the concept. If the arrangement worked but the intended response did not occur, investigate the context or assumption linking the conditions to that response. If the desired response occurred but the useful result failed, establish which condition failed and what the provider had promised. Correct the contribution when changing it can address that failure. An external cancellation may leave effective registration worth keeping.
 
-Return the selected concept, the connected feasible conditions, material limits, the observations and whether to retain or change the arrangement. Reopen the construction when a new audience, channel, provider, access condition or operating constraint alters the encounter. Retain sufficient existing work when the change is local. A journey map through MKT.8 can help locate the relevant connection, but the repair remains a change in the conditions of use or in what can be promised.
+For a commission to design the experience, return the concept, the provider’s feasible arrangements and a way to investigate the intended experience. For an assessment of an encounter that took place, return the observations and their bearing on that concept. Preserve the interval the customer is being asked about. A response during one contact may be compatible with very different experiences of the visit as a whole. Reopen the affected construction when the audience, channel, access or provision changes. MKT.8 can help locate that connection.
 
 ### MKT.5:5 - Archetypal Grounding
 
@@ -96,7 +96,7 @@ The selected arrangement lets an ordinary eligible person submit and receive a c
 
 The team checks the connected encounter with an ordinary case and one requiring a decision. It separately observes the availability of confirmation, how the exception was handled, and the participants’ accounts of their uncertainty. A participant might still feel anxious because the programme affects an important career choice; correct registration does not place that response under the provider's control. MKT.12 can investigate a remaining consequential uncertainty without promising that the provider will eliminate all anxiety.
 
-If support capacity later falls, a displayed same-day answer becomes unsupported. The team must restore the contribution, narrow the cases accepted or promise a later response time it can meet. Editing the page to sound more reassuring would leave the contradiction intact. If only one displayed opening time was wrong and the arrangement remains adequate, correcting that time is sufficient.
+If support capacity falls, compare what the team can still deliver with the same-day calls customers are entitled to make. A fall from six replies to five can leave a promise covering at most four replies intact. If six separate replies can come due together, restore capacity, arrange an authorized alternative or change the offer for future customers. Deal with commitments already made on their agreed terms. If only a displayed opening time was wrong, correcting it can suffice.
 
 #### MKT.5:5.2 - Useful effort need not feel effortless
 
@@ -111,7 +111,7 @@ Providers readily notice the contacts they own and the survey answers they can c
 - The concept names an intelligible kind of experience for a concrete situation and practical purpose.
 - Its conditions connect the relevant product, environment, messages, interfaces, people and organisation.
 - Existing capabilities, proposed changes and conditions outside the provider's influence are distinguished.
-- An ordinary case and a consequential variation expose incompatible expectations or actions.
+- The touchpoints make compatible promises over the stated range. Where a conflict is claimed, the account identifies an allowed situation in which the promised action fails.
 - Responsible contributors can supply the selected changes, or the remaining limits are explicit.
 - The evidence for each claim covers the conditions, occasion and use it describes. Evidence about a felt response or personal evaluation concerns the person whose experience is claimed.
 

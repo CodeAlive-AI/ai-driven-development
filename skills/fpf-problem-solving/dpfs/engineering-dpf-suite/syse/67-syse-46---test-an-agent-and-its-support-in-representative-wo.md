@@ -31,13 +31,13 @@ Choose observations that can establish the claimed result or expose a failure th
 
 #### SYSE.46:4.2 - Construct representative contrasts
 
-For the intended reliance, select representative tasks and include cases that require a bounded stop when stopping is part of the claim. Vary the location or value of a needed contribution where that distinction can reveal a failure: an adequate current premise, a missing fact, stale memory, a changed interface, unavailable support or an ambiguous effect.
+Choose tasks from the reliance being assessed. For an assigned application, provide the model or procedure that users will have. For an assigned design decision, leave its relevant boundaries, alternatives or test for the performer to construct from the receiving need. Account for choices already made in the task wording, examples, interface or ordinary assistance. Use variation that can expose a consequential failure, such as a stale premise or unavailable support. Include a case requiring the performer to stop if recognizing that limit is part of the claim.
 
-Use SYSE.49 if the required task/feedback conditions must be built. Qualify fixture fidelity and reset through the appropriate domain and SYSE.33. For conclusions that depend on performance beyond cases used in adaptive construction or candidate selection, keep final cases and their expected outcomes outside that adaptation. For a direct property test, use a correctness criterion justified independently of the candidate. Limit the conclusion to the tested property. Synthetic consistency alone does not qualify a real-world consequence.
+Use SYSE.49 if the required task/feedback conditions must be built. Qualify fixture fidelity and reset through the appropriate domain and SYSE.33. To estimate performance on new tasks from observed cases, keep the final cases and their expected outcomes outside adaptive construction and candidate selection. A qualified argument can establish a property throughout its stated range. For a direct property test, use a correctness criterion justified independently of the candidate. Limit the conclusion to the tested property. Synthetic consistency alone does not qualify a real-world consequence.
 
-When the question is whether the agent chooses support well, construct matched cases with a sufficient supplied premise, a decisive fact available only through the selected support, and offered material that is irrelevant or misleading. Add verification-required and presently unanswerable cases where the receiving use needs them. Keep result, correctness basis, relevant limits and performing arrangement comparable.
+For an inquiry across these conditions into how the agent chooses support, construct matched cases with a sufficient supplied premise, a decisive fact available only through the selected support, and offered material that is irrelevant or misleading. Add verification-required and presently unanswerable cases where the receiving use needs them. Keep result, correctness basis, relevant limits and performing arrangement comparable.
 
-To test how the performer selects an optional contribution, compare three regimes.
+A claim about one earlier selection can be settled by a record of what the performer could choose, what they selected and what followed under the required criterion. To compare the effect of the support and of choosing it across these conditions, use three regimes.
 
 - **No optional support:** the selected contribution is unavailable; other means and protected conditions stay as declared.
 - **Supplied support:** the protocol fixes which supported means or operation to use and makes it available. The agent still binds inputs, performs it, interprets and uses the actual return. Check whether the return supplies the needed result. In the agent-selected regime, the performer may do better by choosing another operation.
@@ -87,7 +87,7 @@ In a constructed service-update diagnostic, the optional contribution is documen
 
 The stipulated R trace locates missed assistance selection, because the usable call was skipped. If the call had been chosen with a wrong target, repair invocation instead; if the returned fact disappeared from the next input, repair input preparation; if it remained visible but control sent the task back to retrieval, repair the procedure. E and T reveal unnecessary work despite correct answers. Count required effect verification and a sufficient-result stop as well as calls and completion.
 
-After the selected rule repair, unused matched cases must show E using its supplied premise, R obtaining and using the needed source, and T declining irrelevant acquisition, while keeping the actual-state and at-most-one-effect checks. A guessed answer still fails R even when the agent makes fewer calls. The [Reference (Engineering.Reference:19.7)](../suite-reference/21-engineering-reference-19---make-an-available-contribution-wo.md#engineeringreference197---develop-the-arrangement-across-attempts) works the whole repair comparison. The table specifies the diagnostic cases and their stipulated outcomes.
+To test transfer of the repaired rule beyond the cases used to select it, use withheld matched cases that can show E using its supplied premise, R obtaining and using the needed source, and T declining irrelevant acquisition, while keeping the actual-state and at-most-one-effect checks. A guessed answer still fails R even when the agent makes fewer calls. The [Reference (Engineering.Reference:19.7)](../suite-reference/21-engineering-reference-19---make-an-available-contribution-wo.md#engineeringreference197---develop-the-arrangement-across-attempts) works the whole repair comparison. The table specifies the diagnostic cases and their stipulated outcomes.
 
 
 #### SYSE.46:5.2 - A person's arithmetic and order information
@@ -122,10 +122,10 @@ Easy generated tasks, forgiving judges and benchmark-specific instructions can f
 
 - The reliance, task family and performing configuration are explicit; comparative claims identify their baseline and changed conditions.
 - Result predicates concern actual receiving use and protected effects.
-- Cases discriminate the dependencies that could defeat that reliance; support-choice claims separate no optional support, supplied support and agent selection with the intervention declared.
+- Cases discriminate the dependencies that could defeat that reliance; a claim comparing the effect of support and its selection identifies the relevant comparisons and the assistance actually supplied.
 - Repetition, unsuccessful attempts and observation gaps remain visible.
 - Delayed and shifted claims retain component/support identity and evaluator basis.
-- Conclusions stay within observed coverage and return failed contributions to their owners.
+- Conclusions give the grounds for their reach. State what was observed, what a qualified argument establishes beyond those observations, and which claimed performance remains open.
 
 ### SYSE.46:8 - Common Anti-Patterns and How to Avoid Them
 

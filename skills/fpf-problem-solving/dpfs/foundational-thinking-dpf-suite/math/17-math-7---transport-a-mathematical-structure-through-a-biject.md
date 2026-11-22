@@ -73,7 +73,7 @@ An unchanged scalar result uses the identity map on that scalar set. Thus transp
 
 For a partial source operation, transport its domain too. The receiving tuple is allowed precisely when its decoded tuple is in the source domain; define its output there by the same formula. A larger independently supplied receiving domain needs its own comparison before its extra inputs are used.
 
-Calculate one small case in both descriptions. Use it to check the direction of the maps, the constants and the operation being performed. The general preservation result comes from the defining formula and inverse equations.
+The defining formula and inverse equations establish preservation over the stated domain. A small calculation in both descriptions can expose a reversed map, misplaced constant or different operation when one is in doubt.
 
 #### MATH.7:4.4 - Derive the laws that the chosen structure retains
 

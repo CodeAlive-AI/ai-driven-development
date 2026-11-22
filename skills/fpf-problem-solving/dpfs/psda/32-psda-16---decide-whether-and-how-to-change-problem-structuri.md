@@ -75,7 +75,7 @@ For assessment or combination in one engagement, use `PSDA.4`. Preserve the mean
 
 #### PSDA.16:4.3 - Assess the current Method and compare alternatives where needed
 
-Identify the current or proposed offering, its recurring result and the conditions the work requires. A qualified existing assessment can establish its fit or its limit. When an alternative or adaptation is worth considering, compare it against the same result and conditions, at comparable effort where possible.
+Identify the current or proposed offering, its recurring result and the conditions the work requires. A qualified existing assessment can establish its fit or its limit. When an alternative or adaptation is worth considering, compare the contributions the alternatives could make under the same receiving requirements and external conditions. Include the work each alternative would actually require, any work it would displace and any effects on others. Equal spending belongs in the comparison when the brief fixes it.
 
 Determine what each offering lets practitioners and participants do, which conditions it needs and where the evidence leaves fit open. In addition to analytical adequacy, consider meaningful challenge, unequal power, facilitation burden, interpretation skill, source qualification, time to a usable return and cost of maintaining the offering. State a deliberately accepted trade-off when the richer result costs more.
 

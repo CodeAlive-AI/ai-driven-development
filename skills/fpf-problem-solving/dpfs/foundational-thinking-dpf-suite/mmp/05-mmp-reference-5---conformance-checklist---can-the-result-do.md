@@ -3,7 +3,7 @@
 For the combination being used, ask:
 
 - What question does the result answer, and how will that answer be interpreted or used?
-- What do the chosen mathematical objects represent? Which cases, operations and distinctions are retained or excluded?
+- Which units does the subject question count or relate? Which descriptions and operations did the problem supply, and which were chosen for this use? Could two cases merged in a part or in the combined model require different conclusions?
 - Which relations come from the subject, which follow mathematically, and which remain hypotheses or adjustable contributions?
 - What operation obtains the answer, and what information or capability does its performer need?
 - Do the connected contributions agree on the situation, timing, admissible variation and required consequence?

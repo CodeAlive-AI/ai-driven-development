@@ -43,7 +43,7 @@ Select a new observation or intervention when its attainable contribution warran
 
 Identify the HCD Discipline from a qualified result, or name the smaller practice the evidence covers. Identify the participants in the cultural relation being examined. State the place and period, relevant later-work family, the evidence or qualification window that bears on the claim, and the requested finding or decision.
 
-Bound the population and identify its participants’ roles in the practice. A local provider group and its learners may be sufficient. A wider claim about an organization or field needs evidence covering that population.
+Bound the population and identify its participants’ roles in the practice. A local provider group and its learners may be sufficient. Recover the population and the event from the intended use. A total of twelve uses can describe twelve sessions even when one trainer conducted them all. To decide how many trainers used the practice, count distinct trainers or use a sufficient bound. For continued use by the same trainers, establish the overlap across periods. A qualified aggregate can settle a threshold without identifying everyone. For a claim about a coordinated practice, establish how the trainers’ actions formed the result. They may divide the work under a common rule. Where one trainer had to use another’s contribution, establish that connection.
 
 If the practice, population, period, intended finding or requested decision cannot be bounded, identify the missing fact and what it would establish. Retain the conclusion supported at the narrower scope.
 
@@ -75,7 +75,7 @@ Give separate results for generation, publication, transmission, receiving use, 
 
 Identify the carriers, performances, participants and relations the claim uses. These can include materials of a known status, assessment or feedback records, publications, tools and AI configurations, teaching or learner work, decision rules, assignments, permissions, access, provider services and memory records.
 
-For a claim that work took place, identify its performer and use evidence that the relevant work was done. Apply the direct Work criteria when its formal status is part of the claim. For Method enactment, also establish the relation to the admitted Method. A programme, platform or school name can identify where to look.
+For a claim that work took place, establish the performance at the scope claimed. A verified record of receiving use can show that someone in the group used the practice while leaving open who it was. Identify the performer when identity changes the answer. Apply the direct Work criteria when its formal status is part of the claim. For Method enactment, also establish the relation to the admitted Method. A programme, platform or school name can identify where to look.
 
 Examine an organization or architecture when its relationships affect the finding or decision. Identify the evidence for the particular claim about transmission, use, selection, retention or capability.
 
@@ -111,7 +111,7 @@ For a retained or shared account, include the positions its claims and receiving
 | --- | --- |
 | Boundary | HCD Discipline or smaller practice, population, participants, place, period, relevant later work, qualification window and requested finding or decision. |
 | Subject branch | Admitted Method and grounded actual enactment, or candidate/observed practice with materials of the stated status and independently supported Work facts. |
-| Cultural claim | Value, predicate, applicability, a positive case and a discriminating countercase, the observations available for the stated interval and any evidence gaps. |
+| Cultural claim | The practice value, relation, applicability and evidence for the stated population and period. For a newly specified relation, give conditions for an instance and a discriminating countercase. An established predicate can be used directly. Identify any material evidence gap. |
 | Participating subjects | Actual carriers, descriptions or candidate materials, publications, Systems, Work, assignments, permissions, authority, access and support relations relied on. |
 | Selected intervention or inquiry | Material alternatives, attainable contribution, full burden, feasible work, required authority and protections. For an intervention, give the safeguards for stopping or safely reversing it. For a selected comparison, identify the observation that would discriminate and what its outcomes would warrant. |
 | Separate consequence | The capability or later-work claim the return uses, with its evidence and uncertainty, or an expected benefit of a proposal. Attribution of an effect needs its own grounds. |
@@ -178,7 +178,7 @@ Success in one provider slice creates a scale bias: local receiving use is retol
 
 - The practice, bounded population, participants, place, period and requested finding or decision are identifiable. The account gives later-work and qualification conditions where they matter.
 - The subject branch preserves the supported status: admitted Method plus grounded actual enactment, or candidate/observed practice without Method, MethodDescription, variant, or enactment inflation.
-- The account specifies the value and predicate, their applicability, a positive case and a case that distinguishes failure, non-applicability or an unresolved answer. It gives the observations available, their interval and any gaps.
+- The account explains what would establish the relation in its stated population and period and what the evidence actually establishes. For a new predicate, specify a positive case and what distinguishes failure, non-applicability or an unresolved answer. Use an adequate established distinction directly.
 - Generation, transmission, receiving use, recognition, selection, memory, retention, and loss are separate claims rather than one adoption score.
 - Actual carriers, materials with status, publications, Systems, Work, assignments, permissions, authority, access, provider and support relations are named only when relied on.
 - The intended action's needed authority, scope, positive basis, protection, and burden are explicit. A selected intervention also retains reversibility, stop, and restoration conditions; a current account creates no change to authorize.

@@ -5,7 +5,7 @@
 
 ### ADM.1:0 - Use this when
 
-Use this pattern when an administrative request is hard to interpret, several providers call their part “done”, or one word such as “trip” hides different results. Begin with the participant’s intended work and the condition the administration is expected to supply.
+Use this pattern when an administrative request is hard to interpret, several providers call their part “done”, or one word such as “trip” hides different results. Begin with the participant’s intended work and what the service has been asked to decide, perform or provide.
 
 The pattern governs the relation between the work intended and its needed administrative condition. Its first result is a bounded enabling question: what condition is needed, for whom, from whom and by when. This lets the handler select the relevant service instruction or return a business question to whoever is responsible for that work.
 
@@ -13,7 +13,7 @@ If those facts are already clear and an adequate instruction covers the request,
 
 ### ADM.1:1 - Problem frame
 
-A participant asks for travel, access, reimbursement, an appointment or another administrative result because it makes some work possible. The request may name a form or portal operation instead of the needed condition: “close the ticket”, “create an account”, or “approve the trip”. A local provider can perform that operation while the participant still cannot do the intended work.
+A participant asks for travel, access, reimbursement, an appointment or another administrative result because it makes some work possible. “Create an account” can name a way of obtaining access, an account the service was specifically asked to create, or part of an order for both. Creating the account can fulfil one obligation while access for the intended work still needs provision.
 
 The relevant participants may belong to different units or organizations. A research group requests access, an archive owner decides eligibility, and a technical provider provisions a credential. The administrative question connects their contributions to the needed condition across those unit or organizational boundaries.
 
@@ -33,11 +33,11 @@ These pressures favour a small explicit question. Expand it only where a missing
 
 #### ADM.1:4.1 - Recover the needed condition from the request
 
-Identify the participant’s intended work and the condition needed for it from the request or existing account. Resolve unclear points from the available evidence or ask the participant when their contribution is needed. “I need to examine the archive before the experiment” is more useful than beginning with the account-creation form.
+Identify the participant’s intended work and the condition needed for it from the request or existing account. Resolve unclear points from the available evidence or ask the participant when their contribution is needed. Find out who may choose the means. If the researcher needs to read the archive and the terms leave the route open, an authorized reading room can suffice. A grant may require the researcher to use a named account. Establish who must supply it. If the service accepted an order to create it, that provision is due even when the reading room is available.
 
-Then name the condition that would make the administrative part usable. For archive work this may be permitted read access for the named researcher during the necessary interval. For a journey it may be authorized travel with usable transport and accommodation. Include conditions that determine whether or how the recipient can use the service.
+Identify what would complete each commissioned contribution. For archive work this may be permitted read access for the named researcher during the necessary interval. For a journey it may be authorized travel with usable transport and accommodation. Include conditions that determine whether or how the recipient can use the service.
 
-Distinguish the condition from its usual evidence. A booking confirmation supports a claim about accommodation; establish that the accommodation is usable for the traveller when the claim concerns provision. Once the authorized decision maker approves the stated journey and expenditure under the travel rule, that authorization is established. The providers still have to supply usable transport and accommodation.
+Distinguish the condition from its usual evidence. A booking confirmation supports a claim about accommodation; establish that the accommodation is usable for the traveller when the claim concerns provision. Approval by the authorized decision maker establishes that the decision was made. The traveller may rely on it when it takes effect under the travel rule. If provision was also commissioned, the providers still owe usable transport and accommodation.
 
 #### ADM.1:4.2 - Separate the subjects hidden by the label
 
@@ -97,7 +97,7 @@ A participant may be unable to disclose the full business purpose. Request only 
 
 For the actual enabling question, examine whether:
 
-1. The participant's intended work and the administrative condition are identifiable in ordinary language.
+1. The participant's intended work, the result due and any separately required action or form are identifiable in ordinary language.
 2. Each completion or failure claim refers to the relevant subject.
 3. The recipient, provider, needed time and conditions on which the requested use depends are supplied or named as unresolved.
 4. Evidence such as an approval or provider message is interpreted against the promised condition.

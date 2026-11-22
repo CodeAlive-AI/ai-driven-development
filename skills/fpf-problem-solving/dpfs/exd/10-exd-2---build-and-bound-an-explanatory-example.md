@@ -32,7 +32,9 @@ Show how the instance relates to the claim and, where a plausible alternative wo
 
 Use [EXD.1](09-exd-1---establish-and-revise-what-a-recipient-needs-explaine.md) if the current question needs clarification. For a definition, derivation, causal account or recommendation premise, see the [supplied-account entry](03-exd-reference-3---obtain-and-carry-the-subject-explanation.md). Use the available subject basis directly when sufficient.
 
-Identify the correspondence to show. In a pooled mean, multiplying each group mean by its count gives the group sum. Add group sums and group counts separately. For two groups, choose unequal counts and unequal means if the example must distinguish equal weighting per individual from equal weighting per group.
+Identify both the rule and the conditions that license it. For example, an analyst asks you to show how changing from equal weight per group to equal weight per person can change the figure reported. Choose figures on which the two rules give different answers. Choose two nonempty groups that partition the people, with different counts and different means. To give each person equal weight, multiply each group's exact arithmetic mean by its count, add the two sums and divide by the total number of people. To give each group equal weight, take the arithmetic mean of the two group means. For the chosen groups the answers differ. Your choice lets the analyst see the consequence of changing the unit of weighting.
+
+For a nonempty population partitioned into finitely many nonempty groups, divide the sum of their reconstructed sums by the sum of their counts. Use exact group means to reconstruct exact sums. Averaging the group means gives each group equal weight. With more than two groups, check that the chosen figures actually distinguish the two rules. If people appear in several groups, establish which single value to use for each person. Sum those values and divide by the number of distinct people, or use other sufficient figures. When a person has the same value in every appearance, subtract all extra appearances from the count and their corresponding values from the sum. That premise determines whether the example answers the analyst’s question.
 
 Use an observed or documented case when its evidence and complexity suit the explanation. A constructed case can make the assumptions and answer criterion explicit. State which kind of example supplies the result.
 
@@ -40,7 +42,7 @@ Choose the example for its role in the whole explanation. Derive the relevant va
 
 #### EXD.2:4.2 - Work the correspondence, not only the answer
 
-Show the quantities, operations, relations and conditions needed for the result. Identify which feature of the instance corresponds to which part of the claim and why each consequential inference follows. When explaining how to design an example, show the explainer’s choice and the reason for it. Choosing unequal counts and unequal means distinguishes the two weighting rules. Multiplying count by mean is the mathematical operation used within that example.
+Show the quantities, operations, relations and conditions needed for the result. Identify which feature of the instance corresponds to which part of the claim and why each consequential inference follows. When explaining how to design an example, show the explainer’s choice and the reason for it. In the example with two nonempty groups, unequal counts and unequal means distinguish the two weighting rules. Multiplying count by mean is the mathematical operation used within that example.
 
 For a calculation, name the units and what each numerator or denominator counts. For a causal example, separate the observations and the inferred mechanism. For an analogy, identify the relation that carries over and a consequential condition or difference that limits it. Two things can look alike while the relation needed for this inference differs.
 
@@ -54,7 +56,7 @@ Compare the rule as well as the number. With equal group counts, the mean of the
 
 Use [EXD.5](13-exd-5---guide-a-recipient-s-own-explanation.md) when the learner’s own account, guidance or correction is the teaching task. Use [EXD.4](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) to establish what a reply shows and whether the question, a premise or the next explanatory contribution needs to change.
 
-When the promised explanation covers several kinds of ground or use, choose examples that reveal those differences and what remains common. A mathematical derivation, a conditional causal account and advice under competing preferences each require their own grounds. Include ordinary cases as well as informative contrasts. For human learning across a family of regularities, HCD.6.1:4.2.2 guides the selection of qualified encounters, contextual variation and focused returns. The learner can recognize members of the family without articulating one verbal rule for them all.
+When the promised explanation covers several kinds of ground or use, identify the common argument and the differences in grounds that the reader must be able to use. A mathematical derivation, a conditional causal account and advice under competing preferences each require their own grounds. Use an ordinary case or a revealing contrast where it helps the reader recover a required distinction. A sufficient direct argument can finish the explanation. For human learning across a family of regularities, HCD.6.1:4.2.2 guides the selection of qualified encounters, contextual variation and focused returns. The learner can recognize members of the family without articulating one verbal rule for them all.
 
 A worked instance can reveal a missing condition or suggest a wider explanation. Establish the basis for generalization. It may follow from a definition or argument, have observational support or remain a proposal. Bring that result and its conditions into the explanation. Keep the particular instance’s evidential scope clear.
 
@@ -62,7 +64,7 @@ A worked instance can reveal a missing condition or suggest a wider explanation.
 
 State the relation the example preserves and where a claimed correspondence ends. In one aggregation a branch is the equally weighted unit. In another, the individuals within each branch receive equal weight. The same data can therefore answer two different questions.
 
-Use enough examples to make the required relation and its material variation understandable. One case or a pair may suffice for a local distinction. A broad account should include the different conditions on which its conclusion depends. Remove details that add no needed relation.
+Check the range of the argument and the job of each example. A derivation can establish the result for every admissible grouping while one worked case helps the reader recognize when it applies. If the explanation promises to teach the selection of units or treatment of shared cases, give the reader the grounds and an opportunity to make that choice. When a choice is already settled for the specified use, explain how to apply it.
 
 Continue a worked case when its earlier result or conditions help explain the next relation. Identify what the case contributes at each use. Change or end the case if it hides a consequential alternative, condition or kind of application. An explanation can remain connected through its question and reasoning while its examples change. Changing a number in the same story can test a calculation without testing the wider range of a claimed Method.
 
@@ -70,7 +72,7 @@ Assess the example against the recipient’s task. Does it supply the relation, 
 
 ### EXD.2:5 - Archetypal Grounding
 
-A recipient can average a list but combines group means without considering counts. The question is the mean across all individuals.
+A recipient can average a list but combines group means without considering counts. The question is the mean across eight distinct people. Each person appears in exactly one of the two groups.
 
 | Group | Count | Mean | Reconstructed sum |
 | --- | ---: | ---: | ---: |
@@ -84,13 +86,15 @@ Now reduce B to two values of 8. Each branch contains two observations. The comb
 
 Now keep the unequal counts and give both groups mean 3. Both summaries equal 3 because the weighted terms share the same mean. Equal results for this data do not establish that the weighting rules are identical or that unequal counts always give different answers.
 
-Together, the cases show which rule answers the stated question and why the shortcut sometimes agrees numerically. They are constructed mathematical instances. Evidence about how people learned would be needed for a claim that the examples improved learning.
+To teach a different choice, between giving an exact figure and giving a sufficient bound, select lists with a possible overlap. Ask what the recipient can report from two lists, one containing 0 and 12 and the other containing 12 and 12. Each list has one entry per person. A person has the same value on both lists. The mean of the four entries is 9. For a mean per distinct person, only a person with value 12 could be on both lists. If the lists are disjoint, the answer is 9. If one person occurs on both, the sum after removing the duplicate is 24 for three people, giving 8. These exhaust the possible overlaps. The mean per person is at least 8 under either reading of membership. Deciding whether it exceeds 8.5 requires another fact. Confirmation of overlap would suffice without identifying anyone by name. Use this contrast if the analyst needs to decide whether to seek further records before answering a threshold question.
 
-In a constructed example, a manual prices a batch of twelve parts at 30 currency units. A guide promises a cost-per-part calculation that its reader can recover without the manual. It repeats the price and omits the batch size. The price agrees with the source, but the guide alone lacks the denominator. Including it gives `30/12 = 2.50` per part. A second guide shows `36/12 = 3` and attributes that price to the same manual. This calculation is recoverable, but its price contradicts the source. If both defects occur, assess both promised recovery and agreement with the source.
+The weighting example shows how to choose conditions that discriminate two rules. The overlap example shows how to choose conditions that establish one requested conclusion while leaving another open. In either, distinguish the grounds the explainer selected from any choice the learner made. A judgement about a learner’s choice uses their work with the help they actually received.
+
+If you need to show how fidelity to a source and the ability to use a guide on its own can come apart, start with one correct entry. A manual gives a batch price of 30 for twelve parts, and the guide shows `30/12 = 2.50` per part. In one version remove the count and give only the documented batch price. The reader who has no manual can no longer calculate the unit price. In another, keep the count but replace the documented price with 36. The reader can follow `36/12 = 3`, using a false premise. The first guide needs the missing count, the second the documented price. These variations let the explainer show which correction serves which purpose.
 
 #### EXD.2:5.1 - Keep the explanatory Method visible across different subject grounds
 
-In the averaging example, the explainer chooses conditions that distinguish two rules, works the correspondence and varies an important condition. The mathematical definition supplies the answer criterion. To explain that design operation beyond arithmetic, vary the subject and the kind of evidence that warrants its answer.
+In the averaging example, the explainer chooses conditions that distinguish two rules, works the correspondence and varies an important condition. The mathematical definition supplies the answer criterion. Use another subject when the audience needs to recognize the same choice under different kinds of evidence. The next cases show how the choice of contrast depends on the ground for the answer.
 
 Suppose two pumps share a power supply. A recipient asks why the second pump cannot provide pumping when that supply fails. A sketch can show both connections and the consequence of the stipulated loss. As a contrast, suppose the second pump has a supply that remains available under the same failure. The explainer’s choice is to make the power dependency visible and follow the change through it. Whether an actual installation has an independent usable supply is an engineering question.
 
@@ -108,13 +112,13 @@ Expert familiarity can hide an intermediate relation a recipient needs. Check th
 
 Recognition asks whether a particular instance or comparison can make the needed connection usable.
 
-To assess an example, inspect its subject basis, correspondence, worked result and consequential conditions. If the explanation promises a range of uses, check that its examples cover that range and show the common relation. In an illustration of an explanatory Method, distinguish the explainer’s choice from the subject operation shown. When interpreting a response, distinguish which help was available from what the recipient used and supplied. A correct number reached by the wrong rule can identify a gap in the explanation or in the recipient’s inference.
+To assess the explanation, identify the inference that covers its promised range and the conditions that inference uses. In each worked example inspect the subject basis, correspondence and result. Which part of the argument did the author supply? What could the reader recognize or construct using it? One derivation inside one example can cover a whole class. Several examples can leave the same premise unstated. When interpreting a response, account for the help the recipient used and the part they supplied. A correct number reached by the wrong rule can identify a gap in the explanation or the recipient’s inference.
 
 ### EXD.2:8 - Common Anti-Patterns and How to Avoid Them
 
 | Failure | Repair |
 | --- | --- |
-| Using only equal-sized groups to teach why counts matter | Add an unequal-count, unequal-mean case that distinguishes the competing rules. |
+| Using only equal-sized groups to teach why counts matter | Give the argument relating counts to weights. If the learner also needs to see the answers diverge, choose two groups with unequal counts and unequal means. |
 | Treating one correct number as evidence of the correct relation | Look for the mapping in the answer or its working. If the available work leaves the rule uncertain, report that limit. Use a changed case when the distinction matters and a further comparison can supply it. |
 | Asking for an independent explanation when the task omits a required input | Identify the missing input and what the existing answer can establish. For a task that requires the missing component, supply it or a worked correspondence when feasible. If the recipient then uses it, interpret the response with that help. |
 | Extending an analogy through surface resemblance | State the supported relation and the consequential non-correspondence. |
@@ -133,7 +137,7 @@ The [2023 relational-mapping study](https://www.frontiersin.org/journals/psychol
 
 When a person needs to learn the reasoning, use representative tasks from Human Capability Development and vary the conditions that affect the inference. [Fiorella, 2023](https://link.springer.com/article/10.1007/s10648-023-09769-7) distinguishes the contributions and guidance needs of generated explanations, visualizations and enactments.
 
-With comparable calculation effort, unequal counts and unequal means distinguish the two weighting rules. With equal counts the two rules give the same number. Use the examples that make the needed distinction visible, or use its derivation where that suffices. Revise the construction if a needed application exposes a different plausible rule, a missing component or an unsupported analogy.
+For two nonempty groups partitioning the people, different counts and different means make the two weighting rules give different figures. With equal counts the two rules give the same number. Use the examples that make the needed distinction visible, or use its derivation where that suffices. Revise the construction if a needed application exposes a different plausible rule, a missing component or an unsupported analogy.
 
 ### EXD.2:12 - Relations
 

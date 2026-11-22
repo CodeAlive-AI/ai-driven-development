@@ -61,7 +61,7 @@ Periodically inspect whether retained material is still permitted and useful. Re
 
 ### KCAE.MEMORY:5 - Archetypal Grounding
 
-An old CedarBench episode was left open because its destination protocol was unknown. A later method for obtaining signed configuration reports can provide that missing fact. Reverse lookup proposes the old episode because of the missing result, not because both texts use “export.” The owner authorizes a new inquiry; the current report shows v2. The system reassesses against the now-governing manual before suggesting anything.
+An old CedarBench episode remains open because the destination protocol at the time was unknown. A method for obtaining signed configuration reports brings that question back into view. The owner authorizes a new inquiry. The report identifies v2 today, allowing the engineer to assess current advice against the governing manual. To explain the earlier incident, use evidence tied to that occurrence. An effective configuration report or an execution receipt identifying the protocol used can establish the earlier version. To infer it from today’s report, establish continuity or account for the changes between the two dates. If the earlier version still matters and remains unknown, keep that question open.
 
 If the customer's project has ended, the source-method relation can remain useful engineering knowledge while the encounter ends quietly. If the stored episode's retention permission expired, it cannot be recovered for this purpose merely because the new method seems helpful.
 

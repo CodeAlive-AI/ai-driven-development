@@ -58,7 +58,7 @@ Identify the part of the study, sources, encounters, specimens or computation in
 
 #### RMP.4:4.2 - Preserve the smallest material whose loss would matter
 
-Ask what the critic would be unable to distinguish if one record disappeared. Start with those distinctions. Examples include which specimen was measured, which document was inspected, why a source was excluded, or whether an outcome was already visible when a choice was made.
+Ask which different accounts the critic would have to distinguish and what surviving material could do so. If records substitute for each other, retain an adequate available source. If records work only together, preserve their connection, including the identifiers, timing or definitions the comparison needs. Examples include which specimen was measured, which document was inspected, why a source was excluded, or whether an outcome was already visible when a choice was made.
 
 For ongoing work, capture the event or choice while it can be observed. If a suitable laboratory or data practice already preserves it, cite the record with its relevant qualifications.
 
@@ -141,7 +141,7 @@ Give the reader enough information to locate the material and understand its con
 
 One record can support several parts of the account. Link to suitable records and specify their identities or versions where later changes could make a reference ambiguous.
 
-Trace a connection that matters to the examination. For a reported value or interpretive excerpt, locate the source and the choices that shaped the result. For a planned comparison, identify what material it would need and what is already available. If a needed record or access is missing, explain which part of the examination remains possible.
+Trace the connections the particular examination needs. One record can establish a result directly. If the critic must join observations of two stages, ensure the surviving material still connects the right stages of the same work. For a reported value or interpretive excerpt, locate the source and the choices that shaped the result. For a planned comparison, identify what material it would need and what is already available. If a needed record or access is missing, explain which part of the examination remains possible.
 
 A limited package can answer a question about the surviving record. For example, “The downstream measurements and handling decisions can be inspected. The reference reach was inaccessible, and we have found no comparable reference measurement for the same thaw.”
 

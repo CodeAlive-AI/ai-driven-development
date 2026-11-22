@@ -14,7 +14,7 @@ Recover the values and operations carried by the argument. A proof that a number
 
 The reader needs functions, pairs, case distinctions and elementary mathematical reasoning. The arithmetic cases use integers and fractions. The function case explains its own notation. Use an already available operation directly when it returns the required object. An existence conclusion can be sufficient when the receiving question does not require obtaining a witness.
 
-This method works through constructive proof steps and their computation rules. A claim about every input needs a construction that can be applied to every input in that scope. Some proofs establish their conclusion without supplying such a construction; :4.4 determines what can still be used from them.
+This method uses constructive proof steps and their computation rules. To supply a witness for every admissible input, give a construction that produces a valid witness from each such input. When the requested result is a proof of existence, a nonconstructive argument may already settle it. Section :4.4 explains which further conclusions the proof supports.
 
 ### MATH.12:2 - Problem
 
@@ -41,7 +41,7 @@ The needed result is an operation with stated inputs and an argument that its ou
 
 #### MATH.12:4.1 - State what must be obtained
 
-Name the input x, any parameters and the relation R(x,y) required of the output y. A statement “for every x there is a y satisfying R(x,y)” leaves the next task open until the needed y can be supplied.
+Name the input x, any parameters and the relation R(x,y) required of the output y. A proof that every x has such a y can complete an existence question. When a recipient needs the value for an input or a procedure for obtaining it, identify where the proof or another construction supplies that data.
 
 State what the input contains. A value with an associated proof, a procedure returning such a value, and a proposition asserting that some value exists support different operations. For example, a pair (k,p), where p justifies n=4k, supplies k by projection. A statement that n is divisible by four may require recovering or constructing that k.
 
@@ -97,7 +97,7 @@ The chosen logic and evaluation rules determine the proof-to-computation corresp
 
 #### MATH.12:4.5 - Obtain the result and use its justification
 
-Apply the extracted operation to the input of interest. Follow its reductions far enough to obtain the requested value, and use the proof's retained relation to justify that value.
+For a commissioned value, apply the extracted operation to the input of interest and justify the result. For a procedure, supply the obtaining steps and the argument that they produce a suitable output for every promised input. Perform a particular run when the requested deliverable includes it.
 
 A worked input checks that the expression can be followed. The general output claim comes from the construction and its proof under the stated assumptions. Where the representation can overflow, round or reorder dependent updates, establish that its operations preserve the mathematical result needed here.
 
@@ -188,7 +188,7 @@ A second bias is to treat logical existence, a computable selection and an effic
 4. Pairs, projections, functions and case tags retain what the next step consumes.
 5. Every claimed executable branch has its decision, and a terminating construction has the needed computation argument.
 6. The selected representation exposes the required data. An executable construction has an available procedure for every choice used to produce its data.
-7. The extracted expression produces the worked result under the original relation.
+7. For an individual witness, the obtained output meets the original relation. A reusable procedure for finding witnesses has an argument for its full input range and the operations its implementation needs.
 8. A changed premise returns to its affected construction and receiving uses.
 
 Recognition can recover one witness-producing step. Assurance of the general obtaining operation examines the dependencies and computation rules needed for that claim.

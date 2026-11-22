@@ -37,10 +37,10 @@ Design the interface from receiving actions and semantic branches, not from the 
 
 #### SIE.9:4.1 - Pattern-Use Unfolding
 
-1. **Name the receiver interaction.** State who or what asks, the query/message/report action, timing, input parameters, and the next Work or decision that consumes the answer.
+1. **Name the receiver interaction.** State who or what asks, the query/message/report action, timing, input parameters, and the next Work or decision that consumes the answer. For several recipients, specify what each may receive and act on, and when. Check a shared delivery against all its required users. A joint decision may also need them to exchange results or authorize a common action.
 2. **Select the interface form.** Choose query, view, API, message, schema, report, file, or mixed human/machine form based on the receiving Work. Do not inherit the internal realization shape automatically.
 3. **Define semantic inputs.** State the identifiers a request accepts, how the interface validates their form and how it resolves them. Supply any required issuer, assignment context, configuration or effectivity, time window, units, locale or code context, and permissions.
-4. **Define result claims and interpretation.** For each output, state meaning, grain, scope, interval/effectivity, units/codes, source identifier behavior, accepted loss, and permitted use.
+4. **Define result claims and interpretation.** For each output, state meaning, grain, scope, interval/effectivity, units/codes, source identifier behavior, accepted loss, and permitted use. For a service that must let recipients choose under different conditions, vary the admissible source state while holding the proposed response fixed. If the recipient could then need a different action or justification, preserve the distinguishing information and make it available before that choice. A single response can serve different questions when it supplies what each needs.
 5. **Expose qualified branches.** Represent matched/qualified, unmatched, incompatible, unresolved identity, source-qualified conflict, non-comparability, stale, inaccessible, timeout/source error, and partial result where applicable.
 6. **Expose provenance and currentness.** Provide source/edition or a stable reference, observation/retrieval time, mapping/composition rule version, derivation/trace reference, and freshness status needed by the receiver.
 7. **State access, protection, and authority assumptions.** Explain what the interface verifies, what the caller supplies, what may be disclosed, and which actions remain unauthorized by the semantic result.
@@ -78,10 +78,10 @@ The quality engineer uses a view or API with request parameters `productDefiniti
 | `identityDisposition` | referenced `SIE.5` result and its grain/interval, not a copied boolean |
 | `claimStatus` | qualified, conflict, non-comparable, or unresolved with the `SIE.6` composition reference |
 | `freshness` | released AP242 configuration/effectivity used, QIF observation window, retrieval time, and stale status |
-| `rowDisposition` | matched, unmatched-feature, unmatched-characteristic, incompatible, unresolved-identity, stale, source-error, or prohibited |
+| `rowDisposition` | matched, unmatched-feature, unmatched-characteristic, unresolved-assignment, no-assignment, incompatible, unresolved-identity, stale, source-error, or prohibited |
 | `returnPath` | source record and mapping/correspondence/identity/composition rule references plus the direct engineering or quality owner for the decision |
 
-A known match returns a qualified row. A feature absent at effectivity `E` returns unmatched rather than the nearest label. An unresolved identity returns that branch without claiming no inspection exists. A source timeout returns partial/incomplete only if the contract permits it. The responsible participants decide whether to accept the result or release the configuration.
+A known match returns a qualified row. A feature absent at effectivity `E` returns unmatched rather than the nearest label. An unresolved identity returns that branch without claiming no inspection exists. Two identified objects can still have an unresolved assignment when only an excerpt of the plan is available. Return no-assignment when the complete applicable plan settles the question. A source timeout returns partial/incomplete only if the contract permits it. The responsible participants decide whether to accept the result or release the configuration.
 
 ### SIE.9:6 - Bias-Annotation
 
@@ -95,7 +95,7 @@ A known match returns a qualified row. A feature absent at effectivity `E` retur
 
 ### SIE.9:7 - Conformance Checklist
 
-- [ ] The interface is tied to one named receiver, Work, request, and next action.
+- [ ] The request and receiving Work identify who uses the answer, their permitted content, and the next action of each required recipient.
 - [ ] The form is chosen for receiving use rather than copied from internal realization.
 - [ ] The request identifies the accepted entries, how to resolve them, required configuration or effectivity, windows, units or codes, and permissions.
 - [ ] Response claims state meaning, grain, scope, interval, source identifiers, loss, and permitted use.

@@ -40,12 +40,7 @@ secures permission for the live coder. The musician and sound operator configure
 music and the sound at event volume. The team can now establish that these conditions
 were available. To find out how the pairs danced, it uses observations of their work.
 
-With `MDPE.5`, the team examines how the dancers’ actions, live-coded music, sound and event arrangements combined in one representative
-pair’s two-minute performance. With `MDPE.12`, it compares observations of all eight pairs. Three keep responding to
-their partners through the musical changes. Five revert to a memorized phrase after a dense change in accent. Four pairs
-on the far side say the pulse became hard to locate. These observations identify the recorded timing responses and the
-reported difficulty on that side. They leave open how much the musical change, the sound there or another condition
-contributed. Applause indicates an audience response. The short video in this case leaves the use of partner cues open. A recording that shows a cue and a particular partner’s response can support a finding about that pair.
+With `MDPE.5`, the team examines how the dancers, live-coded music, sound and event arrangements contributed to one pair’s two-minute performance. With `MDPE.12`, it then compares observations of all eight pairs. In this constructed trial one dancer in each pair can choose when to resume after a pause while the music keeps the same count. In three pairs the other dancer adjusts the entrance to that choice and identifies the partner’s release as the cue used. In five pairs the dancers return to a memorized phrase after a dense accent change. Four pairs on the far side report difficulty locating the pulse. These records support the findings about the observed entrances and the difficulty people reported there. The contributions of the musical change, sound and other conditions remain open. The short video can show when two dancers entered. For the claim about following the partner, the team also uses the different release times and the dancers’ accounts of their choices. Applause answers a question about the audience’s response.
 
 
 
@@ -60,18 +55,14 @@ retains the showcase and chooses a trial of a separate social-practice arrangeme
 
 To carry out the selected trial (`MDPE.15`), the live coder moves large changes
 of accent outside partner-cue intervals. The sound operator re-aims the monitor
-toward the social floor. In the second round, six of eight pairs preserve
-partner-responsive timing and two still depend on teacher cues. The team can use
-that outcome in its next decision. Both the music and monitor changed, and the
-pairs had encountered the material in round one. The comparison leaves open the
-contribution of each change and whether this result would recur with other pairs.
+toward the social floor. In the second round the same observations of release, entrance and the cue each dancer used establish partner-responsive timing for six of the eight pairs. In the other two, dancers enter on the teacher’s cue and report using it. What those two pairs could do on their own remains open. Both the music and monitor changed, and the pairs had encountered the material in round one. The comparison leaves open the contribution of each change and whether the result would recur with other pairs.
 
 
 
 ### MDPE.Application:1.5 - Choose the next Work and stop before a cultural claim
 
 With `MDPE.7`, the team compares buying the festival slot, trying unfamiliar partners with
-the round order reversed, arranging capability development for the two cue-dependent pairs,
+the round order reversed, offering practice to the two pairs who used a teacher cue,
 and stopping the social trial while retaining the showcase. It considers partner readability
 and safety, performer effort, the time available and what another observation could
 change for the intended social use. It chooses one unfamiliar-partner transfer trial,

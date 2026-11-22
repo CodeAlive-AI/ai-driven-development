@@ -9,7 +9,7 @@
 
 The organization must change while continuing to serve users, but learning, setup, dual operation or recovery compete with existing commitments. Use OCE.11 to establish whether the work can coexist and under which service and recovery conditions. If an operating change is commissioned, obtain the needed decisions, run the bounded change and hand it back under the agreed conditions.
 
-Begin with one impending collision in time, support or coverage. Check whether the apparently free interval is needed for service, interruption cover or recovery. The first useful result can be a smaller change interval, retained support, deferred work or a stop at an unavailable service result.
+Establish what must continue during the change and when. For a given plan, check its time, support and coverage, including provision for interruption and recovery. For a promise that leaves others free to choose, establish which demands can coincide and which response will be available at the time of choice (OPS.13:4.3). A common bound may settle either question. The first useful result can be a smaller change interval, retained support, deferred work or a stop at an unavailable service result.
 
 This pattern concerns coexistence around an organization change. Its operating resource account can include assignments made under an unchanged authority structure: new work does not by itself establish organizational redesign. Conversely, a changed practice can need learning, support and new contribution relations even when job titles stay unchanged. Routine dispatch and case priority belong to Operations; a whole Work-arrangement comparison belongs to OCE.8; comparison of Method or candidate-account co-use belongs to C.32.MWA.PP. OCE.16 supplies the cross-change entry and per-change return when another separately managed change alters a needed condition.
 
@@ -51,7 +51,7 @@ Where a consequential gap remains, name the exact relation or interval whose ans
 
 Keep unlike constraints visible. A holder can have hours but lack the needed capability, authority or access. Another participant's free time may not substitute. A provider's availability can constrain the whole attempt.
 
-Use the smallest representation that reveals the collision. A weekly allocation can suffice for one expert; a time-sensitive service may need shift-level or event-level conditions. Do not add unlike resources into one unexplained capacity number.
+Use a representation that can establish compatibility or reveal a relevant collision. When a promise covers requests that others can choose independently, test the arrangements against the allowed combinations and the information available before the choices (OPS.13:4.3). A weekly allocation can suffice for one expert; a time-sensitive service may need shift-level or event-level conditions. Do not add unlike resources into one unexplained capacity number.
 
 Use OPS.11.1 when the overlap requires reconstructing a network of transformations, resources and enabling conditions. Keep changes to the product route distinct from changes to who can request, promise or accept the result. Count the change work and its support beside continuing work wherever they occupy the same resource. Reuse an adequate operating model.
 
@@ -158,7 +158,7 @@ Provider access, service recovery and trial authority each need their own ground
 
 A standards association coordinates amendment preparation with current ballot and publication obligations. Members accept bounded volunteer windows under independent employers. The chair's term ends before a proposed binding decision.
 
-The members and service participants negotiate the editorial overlap and protect publication support within their accepted volunteer commitments. Their agreement by itself changes neither an employer's allocation nor the chair's term. Return the authority question to Governance and stop the binding decision. Separately permitted editorial work can continue. Establish the successor’s authority under the applicable rules before resuming that decision; the project date does not renew the expiring term.
+The members and service participants negotiate the editorial overlap and protect publication support within their accepted volunteer commitments. Their agreement by itself changes neither an employer's allocation nor the chair's term. Return the authority question to Governance. Separately permitted editorial work can continue. Establish who may decide under the rules on the proposed date. A deputy or governing body with effective authority can act. If the rule reserves the decision to a serving chair, wait for an authorized renewal or successor.
 
 In a hospital, the equivalent service conditions include licensed competence, staffing/fatigue, medical safety and privacy. Use the applicable professional requirements and evidence for the proposed patient-facing trial. Obtain any missing required determination before the trial begins.
 
@@ -171,7 +171,7 @@ A change sponsor may count only visible project tasks, while a service owner may
 - Continuing users, commitments, configuration and protection/recovery conditions are explicit.
 - An adequate current coexistence result is used directly. Any addition answers a consequential relation, interval or obligation, and its comparison counts account upkeep, specialist returns and whole learning, support, execution and recovery work through the receiving horizon.
 - Any co-use, arrangement, admission or commitment decision required for action is effective. An unresolved decision is identified for its authorized holder.
-- The arrangement identifies when to stop, reduce exposure or use fallback. Claims about the response in operation have evidence of the action taken.
+- A plan accounts for its scheduled work. A guarantee covers the allowed variations in demand and the responses that can actually be chosen in time. The arrangement identifies when to stop, reduce exposure or use fallback. Claims about the response in operation have evidence of the action taken.
 - Interrupted or deferred work and missing observations remain visible.
 - The proposed hand-back identifies the responsible service owner and the conditions for ending support. A claim of completed hand-back establishes what that owner accepted.
 

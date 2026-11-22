@@ -66,7 +66,7 @@ The title of an office, the presence of two records or the handler's preferred o
 
 State which action by which performer is permitted, under which conditions and limits, or why the required basis is absent or unresolved. Include the relevant source or decision reference where the recipient needs it to rely on the result.
 
-Apply the ordinary service response to an established negative condition. If a distinct alternative basis is actually claimed, investigate that question. A missing grant, conflicting evidence and a settled prohibition need not receive the same response.
+Apply the ordinary service response to an established negative condition. When the recipient asks about one named basis, its terms may settle the inquiry. When deciding whether the intended action is permitted, consider other applicable grants or rules, including ones the requester did not name. Refusal on every basis requires grounds that cover them all. A missing grant, conflicting evidence and a settled prohibition need not receive the same response.
 
 Keep a request for permission separate from the received grant. Use ADM.6 to obtain a missing competent answer or resolve an unavailable authority arrangement. Report the unresolved authority when nobody can supply the needed decision.
 

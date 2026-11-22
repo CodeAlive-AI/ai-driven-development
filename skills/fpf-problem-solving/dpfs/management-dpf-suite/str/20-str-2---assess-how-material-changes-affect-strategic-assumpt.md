@@ -7,7 +7,7 @@
 
 Use this pattern when a price, customer behaviour, capability, constraint, strategic objective or relied-on source has changed and someone asks, “Does this change our strategy?” The strategy practitioner traces the change to the strategic premise, conclusion or choice that depends on it.
 
-Begin with the previous premise and the change in fact, claim or comparison rule. Identify which conclusion, direction, option or commitment relied on the premise. Return the impact within that scope: retain the supported result, revise or qualify it, reopen a dependent choice, or identify the missing evidence.
+Begin with the previous premise and the change in fact, claim or comparison rule. Trace which conclusion, direction, option or commitment could depend on that premise. A term already fixed for the relevant period can establish that the change leaves the decision intact. Reopen a choice where its grounds changed. If its dependence remains uncertain, state what evidence could resolve it.
 
 The gain is proportionate reconsideration. A material change receives attention where it matters, while unrelated decisions remain usable. If only the presentation, date label or source address changed, compare the content needed for the use. An equivalent premise can settle the question.
 
@@ -105,9 +105,9 @@ The accessible proposal is enough to establish the effect on the channel compari
 
 #### STR.2:5.3 - The observations stay the same, but the filter changes
 
-Consider a constructed strategic filter with four conditions: take changes this quarter that reduce customer rework, can be checked within two weeks and avoid irreversible migration for now. In this example, a reversible correction to error-handling information may satisfy the rule; a proposal requiring irreversible migration is excluded under that last condition. Neither disposition alone awards resources.
+Suppose a direction owner sets four conditions for a change. Start it this quarter. Reduce total customer rework on the orders handled by the affected process in the first two weeks after the change starts, compared with continuing that process. Make the reduction checkable by the end of those two weeks. Avoid irreversible migration for now. A reversible correction to error-handling information may qualify under that rule. A proposal that requires irreversible migration fails its last condition. Neither finding awards resources.
 
-The responsible body later adopts a revised policy permitting irreversible migration subject to specified transition protections. The analyst can reconsider the migration proposal on those terms. To qualify this quarter, the proposal must reduce customer rework, allow that reduction to be checked within two weeks and meet the transition protections. Whether the transition can be carried out with the available means is a separate feasibility question.
+The responsible body later adopts a revised policy permitting irreversible migration subject to specified transition protections. The analyst can reconsider the migration proposal on those terms. The starting quarter, the measured rework and its two-week check still govern. The new protection condition replaces the previous bar on irreversible migration. Whether the transition can be carried out with the available means is a separate feasibility question.
 
 The useful return identifies the changed policy premise and the comparison it reopens. The earlier exclusion remains correct under the earlier rule. Current service commitments remain in force. Commissioning the proposal requires a separate decision. If the policy change were only suggested, the return would remain conditional on its adoption.
 
@@ -122,7 +122,7 @@ Salience also favours spectacular news over quiet loss of a prerequisite. Test t
 For reliance on an impact judgment, check:
 
 - The old premise and changed fact, claim or comparison rule are explicit for the relevant subject, period and conditions.
-- The receiving strategic use actually depends on that premise.
+- The practitioner has grounds for judging how far the changed premise affects the specified decision, including a supported finding that the decision stands. If the dependence is unresolved, the open question is clear.
 - The result states whether the change affects a conclusion, its grounds or scope, the decision, its scale or timing, or a required protection or check.
 - A no-impact conclusion is bounded by the inspected uses and evidence.
 - Missing evidence is not counted as unchanged meaning.

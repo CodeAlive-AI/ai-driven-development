@@ -98,7 +98,7 @@ Evidence supports the assertion under A.10; its adequacy and the obtaining of th
 
 Co-present telemetry and commands are insufficient. For each pair, apply the coupling rule to the observation and return. An unrelated broadcast fails that condition; one-way reporting fails the two-sided predicate.
 
-If the rule is missing, return the missing governor. If the rule exists but a needed observation or dependency fact is unavailable, return missing information. Neither absence of proof nor an empty supervised set supports the affirmative assertion. A negative claim needs the rule's non-obtaining test and facts that satisfy it.
+A confirmed failure of a condition required by the claim, such as a return to a named supervised holon, rules out that claim for the stated interval. When the remaining decision depends on an unspecified coupling rule, identify the missing rule. If the rule is applicable and a required fact is undecided, identify the information that would settle it. Check the rule’s requirement for a nonempty supervised set before an affirmative assertion.
 
 Keep the base occurrences and their extent and continuity rules. A communication break can make an interval-qualified feedback assertion fail without ending a supervisor assignment. Reconnection requires current observation, return and coupling facts.
 
@@ -150,7 +150,7 @@ A fleet controller C supervises drone d1. In this illustrative protocol R1, each
 | At tick 13, the link breaks and the complete trace shows no same-tick report or return. | The claim covering every tick 10–13 fails under R1. A supervisor assignment may still continue under its rule. |
 | At tick 14, the link reconnects and a new report, R1-based command and delivery are established. | The tick-14 claim is supported from those new facts; the earlier interval does not become uninterrupted. |
 
-If the tick-13 trace is unavailable, the corresponding conclusion is unresolved instead of negative.
+If the tick-13 trace is unavailable and the remaining evidence permits both a complete exchange under R1 and a failure at that tick, feedback at tick 13 remains unresolved. The complete trace at tick 12 still refutes uninterrupted feedback throughout ticks 10–13. The wider and narrower questions can therefore have different answers from the same records.
 
 If R1 changes to R2, use R2's coupling test for the new interval. Adding d2 requires d2's report, return and coupling facts before asserting feedback for {d1,d2}.
 

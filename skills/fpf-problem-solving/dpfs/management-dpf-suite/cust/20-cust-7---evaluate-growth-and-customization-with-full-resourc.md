@@ -31,7 +31,7 @@ The decision needs a continuation for which the required resources can be obtain
 
 #### CUST.7:4.1 - Fix the comparison boundary and growth claim
 
-Name the customer result, customer population or case mix, period and service conditions that the alternatives must support. Include current obligations affected by the choice. Comparing a one-time prototype with a maintained service without their different horizons gives a misleading answer.
+Name the customer result, customer population or case mix, period and service conditions that the alternatives must support. Include current obligations affected by the choice. Comparing a one-time prototype with a maintained service without their different horizons gives a misleading answer. When the method changes how many customers come, which requests they make or how often they need support, use comparable starting conditions and estimate the work that follows under each method. Report the change in service or reach alongside its resource cost.
 
 State the growing quantity. “Scale” might mean more customers with the same mix, more variants, greater throughput, more operating locations, longer support or more delivery partners. If several grow, keep them distinct and explain their interactions.
 
@@ -51,9 +51,9 @@ Avoid double counting common development across customers and show how the commo
 
 Compare what changes in the intended growth condition.
 
-| Growth | Candidate mechanism | Observation that can defeat the claim |
+| Proposed change | Expected advantage and mechanism | What would put that advantage in doubt? |
 | --- | --- | --- |
-| More comparable customers | Reuse preparation and ordinary delivery. | Each case still needs the original author for the decisive operation. |
+| More comparable customers | Prepared teams can deliver without the original author. | Each team still depends on the author for the decisive operation. For a claim about total effort, compare the work saved and the remaining author effort. |
 | More variants | Shared invariants and qualified variation rules. | Interaction testing and support grow faster than the saved preparation. |
 | More execution volume | Added capacity, automation or delayed differentiation. | A shared queue or unavailable specialist determines delivery time. |
 | Longer support and more releases | Common updates and controlled compatibility. | Old branches require continuing separate work or expensive migration. |
@@ -89,7 +89,7 @@ Use actual repetition to test the mechanism. If shared preparation saves setup b
 
 Six comparable deployments each require six hours of one named qualified resource, for 36 hours. A proposed shared method requires twelve hours of preparation and three hours per deployment, for 30 hours at six cases. At two cases, the comparison is twelve hours versus eighteen: the common preparation has not yet reduced the total.
 
-Now include ten hours of transition work for existing customers in the same period. The proposed arrangement requires forty hours, not thirty. It may still be worthwhile over a different supported horizon, but the original six-case claim no longer justifies this release. These are supplied scenario values, not empirical estimates.
+Now include ten hours of transition work for existing customers in the same period. The proposed arrangement requires forty hours, not thirty. It may still be worthwhile over a different supported horizon, but the original six-case claim no longer justifies this release. These are supplied scenario values, not empirical estimates. If the new offer itself changes the volume under comparable external conditions, compare the resulting workloads. Eight deliveries under the new method would take 12 + 8 × 3 = 36 hours before transition, the same as the former six. Determine who receives the additional deliveries and what they obtain. They may extend coverage, supply further useful work for the same recipients or repeat earlier work.
 
 The provider then proposes partner delivery. Ordinary work moves to the partner, but every exception still needs the same central specialist. CUST.7 separates the useful increase in ordinary delivery capacity from the unresolved specialist constraint and includes coordination. A partner invoice does not show that total work fell.
 
@@ -103,7 +103,7 @@ Forecast precision can conceal uncertain demand. Keep the decision-sensitive ass
 
 ### CUST.7:7 - Conformance Checklist
 
-- Are alternatives compared for the same useful result, population, period and conditions?
+- Do the alternatives answer the same decision over comparable conditions and time? For a fixed order set, compare delivery of those orders. For a change that affects demand, include the resulting volume, mix and obligations under each alternative.
 - Is the growing quantity and proposed burden-reduction mechanism explicit?
 - Are common preparation, local work, assistance, support, migration and ending included?
 - Are transferred work and scarce resources visible?

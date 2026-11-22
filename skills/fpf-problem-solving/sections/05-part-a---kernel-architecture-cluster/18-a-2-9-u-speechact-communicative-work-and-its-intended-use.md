@@ -233,6 +233,8 @@ A **`SpeechActRef`** resolves to one actual Work individual admitted as `SA : U.
 
 * **Multi-party:** `addressedTo` is a set. Its optional members may be parties, exact local system-role kinds, or exact obtaining occurrences of directly declared `U.SystemRoleAssignment` species. State which branch each addressee uses. Identify the actual performer and establish any claimed authority, commitment, permission, responsibility or institutional effect under their applicable rules.
 
+A message addressed to two offices can inform both and record a decision made by one. To attribute acceptance to either office or to a body represented by both, establish who could act for whom, what the act covered and which combination of decisions the rule required. A single authorised decision can settle the whole order. Use A.6.C:4.1 when the decision also depends on what the parties separately undertook. Receipt, understanding and use by a particular addressee each need evidence about that addressee.
+
 ### A.2.9:5 — Worked Communication Uses
 
 #### A.2.9:5.1 — Receiving-Use Judgement and Observation Record

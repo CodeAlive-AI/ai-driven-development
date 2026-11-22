@@ -23,7 +23,7 @@ Use an existing subject pattern or an adequate subject account when it answers t
 | --- | --- |
 | operating subject | The entity or relation the operating question concerns. It may be, for example, a case subject, material, a service or an account whose identity or state matters to the decision. |
 | case | One bounded continuing Work situation organized around a named subject, commitments, current facts, evidence, authority, permissible next Work, and closure conditions. The case is neither its file nor every Work item within it. |
-| Work occurrence | Actual dated Work admitted through its governing pattern. A ticket, plan, or event record does not establish that Work occurred. |
+| Work occurrence | The performance of identified work under the applicable conditions. A signed execution record can establish that the work occurred when its origin, subject and contents support that conclusion. A plan records what was intended. |
 | Work item | A bounded item admitted to a selected workflow or coordination account with stated start, finish, subject/result relation, and receiving use. |
 | queue membership | An obtaining relation placing one eligible item in one named waiting or service order under a policy and time window. A column or list is a representation. |
 | buffer membership | An obtaining relation to a bounded protective or coordination reserve with purpose, policy, extent, and receiving use. It is not inferred from spare inventory or a board column. |
@@ -65,7 +65,7 @@ Use or develop a small operating-subject account that preserves the identities, 
 
 1. **Name the receiving decision and suspected compression.** Identify the subjects or relations that may have been treated as the same, the measure, queue, case continuation, commitment, control question, or account use that depends on that identity assumption, and what fails if the assumption is false.
 2. **Select the primary subject.** Identify the entity or relation the action or conclusion depends on, and how to recognize it across time. Use its subject pattern when the answer depends on its kind.
-3. **Separate case, Work, and Work item.** Name the case subject and closure conditions; admit actual Work independently; define each coordination Work item by start, finish, subject/result relation, and receiving use.
+3. **Separate case, Work, and Work item.** Name the case subject and closure conditions; establish which Work occurred from evidence that identifies the performance; define each coordination Work item by start, finish, subject/result relation, and receiving use.
 4. **Recover queue and buffer relations.** Name eligible item, queue or buffer, membership interval, order or protective purpose, policy, resource/service relation, and evidence. If the decision uses a position shown in a view, establish which of those relations it represents.
 5. **Recover resources through exact relations.** Distinguish the System, capability, material, information, access condition, or time from availability, access, allocation, support, consumption, or other obtaining relation. Preserve authority and human-condition questions.
 6. **Separate events, records, and state claims.** Identify the occurrence or changed subject and the records supporting it. For a consequential time, distinguish occurrence, observation, receipt and later correction; recover the clock and field meaning actually used. A later upload does not move the occurrence or reset its waiting time. State the supported claim and its uncertainty. Event order alone does not establish performed Work.
@@ -105,7 +105,7 @@ The weekly release decision initially sees four cards and a rig calendar. To dec
 | `ProviderChange-P8` epic | A time-bounded change subject with provider relations, access conditions, project WorkPlan content, affected release cases, and decisions. | The epic does not make the provider part of PumpWorks or prove performed migration Work. |
 | test-rig booking row | Queue membership of an exact eligible request for resource relation to `TestRig-2`, with interval, order/policy, access condition, and status evidence. | The booking row records planned access. Establish request eligibility, allocation authority, performed test Work, and test completion separately. |
 
-Distinguish the records for this decision: ticket, trace, source commit, build result, test result, service log, field-engineer report, telemetry record, and release decision each support bounded claims. A multi-object event record may relate one event to several subjects, but it does not identify those subjects with one case or prove the represented Work.
+For this decision, identify the claim each ticket, trace, build or test result, service log, engineer’s report and release decision supports. One execution record can connect several subjects to the same event. Establish what the evidence says was done to each identified subject. An association based only on a shared folder leaves that question open.
 
 Consider a later, constructed PumpWorks reconciliation. An imported test event L17 has been associated with both R41 and R42 because their records share a release folder. The board consequently removes R42's test request from the ready queue and reports “tested at 10:20.” That conclusion assumes that L17 tested R42, and that 10:20 is test completion rather than receipt of the message.
 
@@ -125,7 +125,7 @@ When participants need a shared or maintained account, use these subjects, recor
 | case-file bias | The file becomes the continuing case. | Name the subject, commitments, current facts, permissible Work, and closure conditions. |
 | queue-container bias | A column or list is treated as an obtaining queue. | Recover membership, order/service relation, policy, interval, and evidence. |
 | resource-scalar bias | A person, machine, or capability is reduced to available hours. | Preserve the subject and access, support, allocation or use relation on which the decision relies. |
-| event-log realism | A log is treated as complete performed Work. | Preserve source limits and admit Work independently. |
+| event-log realism | A log is treated as complete performed Work. | Use each entry for the occurrence it establishes and check what the log covers before reconstructing a complete performance. |
 | object-centric collapse | Multi-object linkage is read as one universal case or process. | Keep subjects, event relations, records, views, and receiving uses distinct. |
 | control-role reification | Observer, controller, plant, or supervisor labels become permanent kinds. | Recover participant meanings in exact obtaining relations. |
 
@@ -148,7 +148,7 @@ When participants need a shared or maintained account, use these subjects, recor
 | “One issue equals one unit of value.” | Name the represented subject, Work item, result relation, identity rule, and receiving decision. |
 | “The customer is in the queue.” | State whether the queued participant is a request, case, Work item, physical subject, or another identified entity. |
 | “The resource is 80% utilized.” | Identify the resource subject, availability/allocation/use relation, time window, Work, and decision. |
-| “The event log shows the process.” | State the logged events, object relations, source coverage, reconstruction rule, and missing Work evidence. |
+| “The event log shows the process.” | State the logged events, object relations, source coverage, reconstruction rule, and any evidence still needed for the requested account of the work. |
 | “Status Done means fulfilled.” | Recover the commitment, supplied result, acceptance or fulfilment evidence, and authority separately. |
 | “The dashboard closes the feedback loop.” | Recover both in-life relation sides and keep the display, claims, rates, and proof separate. |
 

@@ -106,7 +106,7 @@ If evidence establishes a 300 gross transfer and a 10 fee, those quantities can 
 
 A traveller says “the trip was unsuccessful”; the travel desk says “the trip is complete”. The traveller means the negotiations produced no agreement. The desk means the travel conditions were supplied and the expense handling completed. ADM.1 separates those subjects and their connection. Treating them as two conflicting measurements of one result would send the next action to the wrong person.
 
-In another case, two records both show “reference 17”, but the numbers belong to different issuing systems. The handler cannot combine them until identity is established. The shared numeral is insufficient correspondence.
+In another case, two records both show “reference 17”, but the numbers belong to different issuing systems. Treat the identity as open when the shared numeral is the only link. For an exact total, distinguish a duplicate from a second transfer. For a threshold, check both possibilities. Suppose the obligation starts at 300, only these credits can reduce it, and each credited unit reduces it by one. If both records attest 100 credited to the same account, the outstanding amount is at least 100 under either reading.
 
 ### ADM.4:6 - Bias-Annotation
 

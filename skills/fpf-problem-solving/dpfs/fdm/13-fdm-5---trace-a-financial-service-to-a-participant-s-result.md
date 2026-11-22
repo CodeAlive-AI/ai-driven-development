@@ -35,15 +35,15 @@ A longer-term outcome may depend on conditions outside the service provider’s 
 
 #### FDM.5:4.1 - Name the participant and intended result
 
-Identify the participant and the result at issue. Examples include usable funds, a justified lending decision, timely payment or better understood exposure. Establish the time horizon. For an improvement claim, identify the comparison it requires.
+Start from what the recipient wants to do with the result and by when. For a proposal, identify whose action the proposed service must enable and which choices those people retain. For a past contribution, identify whose work or position is claimed to have changed. Several people can use the same output for different decisions. Ask what each was promised and whether their uses must work together, draw on the same funds or require separate performances. For an improvement claim, select the comparison for the participant and period in question.
 
-Where several participants matter, preserve their different objectives and consequences. The lender and borrower can seek different results. If a disputed objective or choice criterion affects the answer, use the governing financial or management basis or obtain a decision from its holder where needed. Report distinct supported views if the question asks for those.
+Where several participants matter, preserve their different objectives and consequences. The lender and borrower can seek different results. If a disputed objective or choice criterion affects the answer, use the governing financial or management basis or obtain a decision from its holder where needed. Report distinct supported views if the question asks for those. A difference in group cash on a comparable basis answers a question about that change over the specified period. To establish earlier liquidity or a minimum held by each participant, apply the corresponding dates and restrictions. Where one participant gains and another loses, a recommendation for both also depends on which trade-offs they accept or who may decide. A statement of the separate effects can complete a request for their distribution.
 
 #### FDM.5:4.2 - Locate the output and its actual receiver
 
 Identify the service output and its intended or actual use. Distinguish the scoring method, implemented calculator, calculation performed in the case and resulting score where the conclusion depends on the difference.
 
-Trace how the output enters the receiving work. Use suitable records, observations or the receiver’s account. If the service applies its own result under an existing mandate, establish that action directly. For delivery, establish what reached the recipient. For a claim that the output influenced an action, establish the use and the link to that action.
+For a proposed service, trace how the receiver could act on the output and identify any authority, information and time the design assumes. A promise of timely use also needs grounds that those conditions can be secured. For a factual account, trace the delivery or use that the question asks about through records, observation or the receiver's account. If the service acts on its own output under a mandate, establish that action where claimed. A receipt can establish delivery. A claim of influence on a decision also needs grounds that the recipient used the output in making it.
 
 A supplier asked to provide information can complete its assignment by delivering a usable result to the intended recipient. To credit it with a further financial outcome, establish the connection through the relevant use and effect.
 
@@ -51,7 +51,7 @@ A supplier asked to provide information can complete its assignment by deliverin
 
 Identify the decision or action the output supports and the financial position or resource that could change through its use. To explain a factual contribution, establish which part occurred. Use FDM.1–4 where a missing position, term or effect is material.
 
-For a proposed contribution, explain the mechanism and assumptions. For an actual contribution, establish the parts claimed, such as delivery, use or the resulting financial effect. A service already delivered can also have a prospective benefit whose conditions remain open.
+For a proposed contribution, explain the mechanism and assumptions. For an actual contribution, establish the parts claimed, such as delivery, use or the resulting financial effect. A service already delivered can also have a prospective benefit whose conditions remain open. For a group result, determine which participants and positions the requested measure includes and how their contributions combine. An established consolidated figure can already answer for the group at its stated cutoff. If the effect of an internal transfer has to be constructed, link the entries for that transfer across the parties and reconcile the debit, receipt, fees, conversion and funds in transit as relevant at the chosen cutoff. For a holder's payment decision, establish that holder's timely usable cash. For example, X sends 60 on Friday, an intermediary retains 2 and Y can use 58 on Monday. A question about a weekend position may turn on who controlled the funds then. For Y's Monday receipt, the confirmed amount can suffice. For the residual debt, establish which party bears the fee and how the terms treat partial payments. The full 60 can be settled if the creditor bears the fee. If the debtor bears it and the 58 received count towards the debt, 2 remain. Terms that accept only the full payment could instead treat the 58 as a refundable advance and leave the debt at 60.
 
 Follow the connection as far as the participant’s question requires. Funding can make proceeds usable. The equipment bought with them may never arrive, or changed demand may defeat the hoped-for business return. Report the established funding contribution in its own scope and qualify any later outcome separately.
 
@@ -60,6 +60,8 @@ Follow the connection as far as the participant’s question requires. Funding c
 For a claim about what the service improved, compare the relevant alternative. Would the same decision follow without this output? Did another source already provide the information? Identify funding, authority, timing, delivery or use conditions that could prevent the proposed gain.
 
 Examine the alternatives that affect the conclusion. To attribute an improved financial outcome to the service, use a suitable comparison and evidence of the causal connection, with uncertainty qualified to the claim. Accuracy of the output establishes a narrower result. Use the evaluation or inquiry method needed for a stronger claim.
+
+Suppose X sends 60 to Y, both inside a group, and X pays an external transfer fee of 2. X's cash falls by 62, Y's rises by 60, and the group's falls by 2. Now compare two services that both meet the same underlying obligation. If this route costs the group 2 and the other pays only a late fee of 9 to an outside party, with all other external flows equal, the first leaves 7 more cash. If the existing service already pays on time at the same cost, the new service adds no such cash saving. Evidence of receipt can settle an order to confirm delivery. It takes the comparison to attribute a financial advantage to the change. [Whose cash flow changes](../management-dpf-suite/fin/14-fin-1---frame-the-corporate-finance-decision-corporation-jur.md#fin142---identify-whose-consequences-and-which-interest-are-at-issue)
 
 Preserve a supported narrower result. A service can improve the information available for a decision even if the effect on the outcome is unmeasured. It can also supply usable funds while a later necessary condition remains outside the provider’s control. State which contribution is established and where the remaining question begins.
 
@@ -91,7 +93,7 @@ Tool metrics may show a genuine improvement in the output. A sponsor interested 
 
 Check the following for the service contribution claimed.
 
-1. The relevant participant, intended result and horizon are identifiable.
+1. The result identifies the recipient, the relevant parties, the promised or claimed contribution and its horizon. Where the claim concerns joint use, the grounds cover the relations between uses on which that claim depends.
 2. The service output and receiving use have adequate meanings and boundaries.
 3. When a financial effect is claimed, the account connects it through the applicable decision, action and terms, with its actual or proposed status clear.
 4. Output quality, actual use, financial effect and later participant outcome retain their different evidence and uncertainty.

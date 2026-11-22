@@ -50,7 +50,7 @@ Distinguish the claims before selecting observations. Useful questions can conce
 
 For a cultural result, use the distinctions in CB.1 and [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md): those who carry a practice, their opportunities to enact it and the continuation of the practice are related but different subjects. A registration or download count alone does not establish a carrier’s capability or later use.
 
-Choose further inquiry only when an attainable answer could improve the decision enough to justify the burden of obtaining and using it. An account of the last failed entry may suffice to repair a confusing invitation. A claim about programme-wide value needs a broader and appropriately selected evidence base. State the scope before a vivid case becomes a statement about everyone.
+Choose further inquiry only when an attainable answer could improve the decision enough to justify the burden of obtaining and using it. An account of the last failed entry may suffice to repair a confusing invitation. For a programme-wide decision, identify whose results count, what a recorded occurrence means and how cases entered the record. One complete register or a sufficient bound can settle a threshold. A claim about each participant’s own experience needs grounds covering the people in question. State the scope before a vivid case becomes a statement about everyone.
 
 #### CB.10:4.2 - Choose observations and people who can answer
 
@@ -113,9 +113,9 @@ Include burdens and distribution in the judgement. More answers can coexist with
 
 Turn the account into a proposed action with a responsible receiver. A person who cannot find the first task may need a clearer entry through CB.3. A useful discussion that never reaches its intended work may need a recipient or application opportunity through CB.5. Missing time or access returns to CB.9; an inadequate practice returns to CB.14 or the practice that supplies the method.
 
-Compare a change with a credible alternative, including retaining the current arrangement. Ask what useful result should appear, what burden it adds and what would make the change unsuitable. Provide the permissions, people and resources before treating the proposal as a commitment.
+Compare a change with a credible alternative, including retaining the current arrangement. Ask what useful result should appear, what burden it adds and what would make the change unsuitable. Return a recommendation with its grounds when that is the order. Before committing to implementation, establish the necessary permissions, people and resources.
 
-Try the change at the scale appropriate to the decision. Observe the particular use that prompted it and a consequential contrasting use when that distinction is still unresolved. Record what was changed and what happened; a simultaneous change elsewhere may prevent attributing a later difference to this one.
+Where trying the change is part of the decision, choose the extent of the trial from what remains uncertain. Observe the particular use that prompted it and a consequential contrasting use when that distinction is still unresolved. Record what was changed and what happened; a simultaneous change elsewhere may prevent attributing a later difference to this one.
 
 If the inquiry exposes a different purpose, return to CB.1 with the affected participants. If the arrangement no longer merits or can obtain support, CB.11 develops continuation, transfer, separation or ending. A decline in activity by itself does not choose among those responses.
 
@@ -173,10 +173,10 @@ For the intended decision, check that:
 
 - The receiving decision, the period, the claimed value and those who may benefit or bear the burden are clear.
 - Observations have meanings and populations suitable for that claim.
-- Particular accounts recover the consequential connections from experience or resource to use and result, retaining missing links.
+- The available accounts, observations or records establish the connections that matter for the receiver’s decision, at the extent claimed.
 - Useful contrary observations, burdens and unsuccessful uses are included where they can change the judgement.
 - Reports, observed occurrences, contribution explanations and causal claims retain their different evidence requirements.
-- Any proposed change has a receiver and the provision needed to try it.
+- A recommendation reaches the person who can use it. When the change is to be tried or introduced, its permissions, people and resources are available.
 - Participants receive a usable return, and continued collection has a reason.
 
 A coherent local account can support a bounded improvement. A broader claim needs evidence with the corresponding reach.

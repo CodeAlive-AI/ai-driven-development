@@ -7,7 +7,7 @@
 
 Use this pattern when one named person has a recoverable later-Work demand and a practitioner, manager, or that person needs to construct or compare ways of developing the required contributions, including finding out whether a candidate is feasible. Begin with the person's current mastered and supported configuration, the complete later-Work tasks, and the conditions of participation.
 
-The first useful result is a **programme-comparison account**. It describes the candidates considered, the tasks each could complete, the division of contributions and access, their burden, uncertainty, evidence needs and applicability. Identify the smallest change that would warrant reconsideration. If only one candidate remains feasible, describe it and the limits on comparison. If none satisfies a binding condition, identify that condition. An authorized decision holder can use the comparison when a choice is requested.
+The first useful result is a **programme-comparison account**. For a feasibility question, one supported route can be the whole answer. For a comparison, the account describes the candidates considered, the tasks each could complete, the division of contributions and access, their burden, uncertainty, evidence needs and applicability. Identify the smallest change that would warrant reconsideration. If exactly one of the permitted candidates is feasible, identify it and state the grounds. If none is feasible, show which binding requirement excludes each, or give a common bound that excludes all. Where an option has yet to be assessed, distinguish it from an excluded one. An authorized decision holder can use the comparison when a choice is requested.
 
 The comparison shows what each programme would change relative to what the person can already do with available support. The practitioner can see whether a proposed component completes a usable contribution, preserves a prerequisite, adds a future option, or merely displaces practice that another required result still needs. When another start competes with unfinished learning, §4.2a compares continuing, pausing and starting together.
 
@@ -34,7 +34,7 @@ A person may need to recognize when a professional Method applies, retrieve a pr
 
 Different people can have different starting capabilities and support. Compare candidates for one person against that person’s baseline. One person may already perform the routine operation but miss a hazardous mismatch. Another may need a prerequisite before a whole task is useful. A third may be capable with a reference and specialist return but not under unsupported conditions. Time, participation, project access, teacher capacity, and the cost of later checking can change which programme is feasible.
 
-The practitioner therefore needs to compose bounded alternatives around complete work tasks and compare what the person and outside contributors would supply under that person’s support and resource conditions. Judge a longer, newer, better-documented or differently named programme by the contribution it would make to the required work.
+For a proposed programme, examine whether the person and outside contributors can supply what the complete work tasks require. Construct an arrangement if the person needs one. When a choice between programmes is at issue, compare their contributions and demands under that person’s conditions. Judge a longer, newer, better-documented or differently named programme by the contribution it would make to the required work.
 
 ### HCD.2:2 - Problem
 
@@ -58,7 +58,7 @@ A third shortcut assigns an audience profile to every future learner. It convert
 
 ### HCD.2:4 - Solution
 
-Use or construct comparable descriptions of each candidate as a finite change from the person’s current mastered and supported configuration. Keep complete later-Work tasks, human and external contributions, practice and correction, resources, evidence limits, and future options visible on one comparison basis. Return what the comparison establishes to its intended recipient. A choice uses the relevant decision rule and authority.
+Start with what the recipient needs from the programme and what this person can already do with the available support. Assess the route proposed, construct a route that meets the requirements, or compare the alternatives the decision concerns. Establish how the human and external contributions fit together in the complete later work and what practice, correction, time and support the change requires. One feasible route with those grounds answers a request for one. For a comparison, use the same conditions, account for material uncertainties and explain what each option would change. Choosing among them requires the relevant decision rule and authority.
 
 #### HCD.2:4.1 - Bind the Personal Comparison
 
@@ -86,7 +86,7 @@ If personal evidence, participation, later Work, or support conditions are missi
 
 Recover the required constituent performances and their coordination within each complete task, using FPF B.1.5.EW when those connections are unclear. Identify which contributions must be present together during the encompassing work and how the person and other participants provide them. Adequate performance of isolated constituents can leave their coordination unavailable. Keep already attained contributions and include development only for the missing or insufficiently transferable ones. Include the variety of constituent Methods that the intended task variants require; a single rehearsed path may leave the person unable to choose a different continuation. Check shared time, attention, equipment and assistance as a combined demand rather than counting the same available resource separately for every part.
 
-For example, in a stipulated dance case, strength and recall of the figure are adequate but balance during rotation is not. A programme adds suitable rotational-coordination practice and return to the figure under varied relevant conditions; it need not repeat the already mastered strength and recall work. HCD.3 distinguishes that gap from other causes, HCD.6 designs the practice and HCD.10 distributes its variation. Use a suitable domain exercise and performance criterion, obtaining qualified help if they still need to be established.
+For example, in a stipulated dance case, the learner has adequate strength and recalls the figure. If evidence in the figure establishes that the learner has difficulty maintaining balance during a timely turn, the programme can add practice for that coordination and return to the figure. Preserve the mastered contributions. If another participant’s late cue explains the miss, work on the exchange within the authority of the participants. HCD.3 helps distinguish those cases, HCD.6 designs the practice and HCD.10 selects its variation. Use a suitable domain exercise and performance criterion, obtaining qualified help if they still need to be established.
 
 When the comparison depends on how a contribution develops, use an applicable HCD.4 local model or describe the relevant progression on the available evidence. Name which entry evidence makes each route usable, which qualitative change it proposes and what evidence supports the relations it relies on. HCD.6:4.2.1 supplies task and help alternatives; compare their whole learner/provider burden and the observation that could redirect them. Do not count crossed model nodes as equal units of gain or require every candidate to follow one presumed ladder. In the N24 case (HCD.6:5.6), contrast-first and supported-performance-first routes have the same target but different entry reliance, preparation and learning opportunities. The selected plan remains revisable; it is not the person's recorded trajectory.
 
@@ -96,9 +96,9 @@ When another component would start alongside unfinished learning, recover what i
 
 Start from the person's current programmes and recent attempts, including paused work that still needs maintenance or would incur a restart cost. For each relevant line, recover the intended later use and its threshold under allowed support, what the person has already demonstrated, and what remains unsupported. Describe any practice, feedback, learner correction or further check still needed for that use. Include the provider and access windows that make them possible. Include a delayed or unassisted check only when the intended use requires it.
 
-Compare the proposed new start with continuations that finish an existing contribution, preserve necessary practice, or deliberately pause or retire a line. Compare the benefits and costs still at stake. A future option can justify a new start, but name what the bounded exploration will make possible or settle and when it returns for a decision. Calling every new topic an option leaves no stopping condition.
+For a question about whether to start now or do something else, compare the proposed start with continuations that finish an existing contribution, preserve necessary practice, or deliberately pause or retire a line. Compare the benefits and costs still at stake. A future option can justify a new start, but name what the bounded exploration will make possible or settle and when it returns for a decision. Calling every new topic an option leaves no stopping condition.
 
-Construct a feasible **boundary on concurrent learning** for each candidate. Place the remaining attempts, feedback and correction in the available learner and provider windows. Check attention blocks, shared tools and any assistance needed at the same time. Count a shared activity once when it serves several lines, while retaining different observations needed for different claims. Include maintenance, transition and restart costs of a pause. A sum of course hours can fit even when feedback arrives too late for correction or two lines need the same scarce practice window.
+Establish a **boundary on concurrent learning** for the proposed arrangement and any alternatives the recipient needs compared. Place the remaining attempts, feedback and correction in the available learner and provider windows. Check attention blocks, shared tools and any assistance needed at the same time. Count a shared activity once when it serves several lines, while retaining different observations needed for different claims. Include maintenance, transition and restart costs of a pause. A sum of course hours can fit even when feedback arrives too late for correction or two lines need the same scarce practice window.
 
 State which lines can remain active together and under what condition another can start: for example, an existing contribution is closed to its declared criterion, one line is paused with its consequences accepted, or additional usable capacity becomes available. The result can be a conditional set of compatible lines rather than a fixed count. Splitting one line into more modules does not change its remaining demand. Carry this boundary and its protected work into the programme comparison; the authorized decision owner still chooses whether to start, continue or pause.
 
@@ -106,7 +106,7 @@ Use observations of attempts and the help received, from HCD.9 or another suitab
 
 #### HCD.2:4.3 - Make the Descriptions Comparable
 
-Describe every candidate on the same conditions and consequences that matter to the question.
+Use the following positions to describe a route to the extent its feasibility or another requested conclusion depends on them. When comparing alternatives, describe the ones covered by that comparison under the same conditions and by the same consequences.
 
 | Comparison position | Required content |
 | --- | --- |
@@ -125,7 +125,7 @@ Unequal detail is a comparison gap when it hides a difference that matters to th
 
 #### HCD.2:4.4 - Compare the Finite Programme Changes
 
-Use `C.11.CRC` to compare each realizable candidate configuration with the person's current configuration. Name the baseline, finite change, including an addition, substitution, removal or retention, candidate configuration, horizon, scenarios, result and resource coordinates, interactions, uncertainty, transition, reversibility, and option effects.
+When the person needs one feasible programme, establish that a proposed configuration supplies the required work with the support and time available. For a comparison, use `C.11.CRC` on the configurations the decision covers. Identify the starting configuration, the proposed change, its horizon and the effects that matter to the person, including resource demands, interactions, reversibility and options for later work. Cover every permitted alternative when the conclusion requires it, as it does for a claim of impossibility or uniqueness.
 
 For HCD.2, the decision-bearing coordinates normally include:
 
@@ -140,16 +140,16 @@ Use `dominated`, `non-dominated`, `beneficial`, `harmful`, or `indeterminate` on
 
 #### HCD.2:4.5 - Return the Programme-Comparison Account
 
-Return one account containing:
+Return an account of the scope and findings needed for the requested use. Include the following content where it bears on that conclusion.
 
 | Result position | Required content |
 | --- | --- |
 | comparison boundary | Holder, later Work, supplied development stake, recipient, any decision holder, candidates, horizon, conditions, participation, evidence window, and direct outside owners. |
-| candidate descriptions | The comparable positions in §4.3 for every actual candidate, including any one candidate that remains feasible. |
+| candidate descriptions | The work and support that make a proposed route feasible. For a comparison, give the comparable positions in §4.3 for the routes covered. For a claim that the only feasible route has been found, account for the remaining permitted routes. |
 | comparison claims | Supported relative contribution, burden, dependence, uncertainty, displacement, and option claims; any dominance relation is explicitly bounded. |
 | access allocations | Intended human, reference, AI, specialist, provider, environment, permission, and timing contributions, with actual availability distinguished from assumption. |
 | evidence and gaps | Sources and observations supporting each claim, missing values, unsupported stronger claims, and the conclusion each gap blocks. |
-| disposition | `comparable candidates`, `one feasible candidate with comparison gap`, `current candidate set infeasible`, `personal comparison blocked with the exact missing input and its receiving owner`, or `learning-product design return for an unknown audience`. A programme choice is a separate result. |
+| disposition | Return `feasible candidate for the requested use`, `comparable candidates`, `sole feasible candidate in the permitted set`, `one feasible candidate with comparison gap`, `current candidate set infeasible`, `personal comparison blocked with the exact missing input and its receiving owner`, or `learning-product design return for an unknown audience`, as the evidence warrants. One feasible programme answers a request for a feasible option. Establish that the set is exhaustive before reporting the only one. A programme choice is a separate result. |
 | continuation | The smallest comparable fragment, provider result, personal observation, budget change, target decision, or other condition that permits the next comparison or choice. |
 
 If a final choice is requested, the authorized decision holder can use the comparison under the applicable decision Method. Preserve the options, preferences, belief state, outcome model, protected conditions and any authority still needed. For an inquiry that could improve the choice, include its expected contribution and full cost. Authorization, commitment, launch and actual learning effects each require grounds of their own.
@@ -189,7 +189,7 @@ If the learner budget falls from 340 to 204 hours while both outputs remain fixe
 
 #### HCD.2:5.3 - One Feasible Candidate Is Not a Winner
 
-A named person has a qualified near-term engineering task and strong entry evidence. Only one candidate currently fits the deadline and available project access; a second candidate depends on an unavailable specialist. HCD.2 may return the feasible candidate, its finite comparison with the current configuration, and the exact specialist result that blocks the other candidate. Its feasibility under these conditions does not establish effectiveness or dominance over the unavailable alternative. A later provider result, deadline change, or changed task reopens the bounded comparison.
+A named person has a qualified near-term engineering task and strong entry evidence. Only one candidate currently fits the deadline and available project access; a second candidate depends on an unavailable specialist. HCD.2 may return the feasible candidate, its finite comparison with the current configuration, and the exact specialist result that blocks the other candidate. If these are the only permitted alternatives, the first is the sole feasible programme for this deadline. Expected learning and authority to select it are separate questions. A later provider result, deadline change, or changed task reopens the bounded comparison.
 
 #### HCD.2:5.4 - Two Unfinished Lines and an Attractive New Start
 
@@ -234,11 +234,11 @@ Suppose instead that A's next attempt reveals another correction requiring one l
 - [ ] The person whose programme is in question is identified for a personal comparison; an unknown audience receives a learning-product design return rather than an invented profile.
 - [ ] The later-Work family, supplied development stake, protected outputs and errors, configuration, horizon, participation, evidence window, recipient and any required decision holders or outside contributors are explicit.
 - [ ] The baseline contains only supported current human and external contributions under stated conditions.
-- [ ] Each candidate explains how the person’s and others’ contributions would combine to complete a recognizable later-Work task, or how that combination could be tested.
+- [ ] For the route under assessment and any comparison the recipient requested, the account explains how the person’s and others’ contributions would combine to complete a recognizable later-Work task, or how that combination could be tested.
 - [ ] Human recognition and performance, reference retrieval, controlled AI help and checking, specialist returns, and other provider contributions are allocated explicitly.
 - [ ] True prerequisites are distinguished from supports and complements used during the same later Work.
 - [ ] Preparation, representative attempts, feedback, correction, retries, changed-condition or delayed checks, and provider/access work appear where needed for the intended results.
-- [ ] Candidates use the same decision-bearing output, error, burden, support, horizon, uncertainty, and future-option positions; unequal detail that affects the comparison is identified as a gap.
+- [ ] For a comparison, candidates use the same decision-bearing output, error, burden, support, horizon, uncertainty, and future-option positions; unequal detail that affects the comparison is identified as a gap.
 - [ ] Learner, teacher, assessor, specialist, transition, tool, material, and displaced-work burdens are visible where they change the comparison.
 - [ ] When another start competes with unfinished learning, the comparison recovers remaining work, compares closure with opening an option, and states which lines can remain active together, when another may start and what would change that boundary.
 - [ ] Supported, independent, changed-condition, transfer, and retention claims remain distinct, and unobserved gains remain hypotheses.
@@ -255,7 +255,7 @@ Suppose instead that A's next attempt reveals another correction requiring one l
 | “Teacher hours make it feasible” | A time calculation does not establish competence, access, scheduling, or operation at peak load. | Use a suitable HCD.7 or direct result. If support is missing, HCD.8 can compare obtaining or building it and identify the preparation and operating evidence the selected route needs. |
 | “AI support means the person knows it” | Assisted performance can differ from later unassisted performance. | Allocate the human checking contribution and preserve actual help in every observation. |
 | “Every component is a prerequisite” | A printed sequence turns legitimate same-task references and specialists into unnecessary memorization or gates. | Separate before-practice prerequisites from simultaneous complements and supports. |
-| “One feasible candidate dominates” | Missing rivals or evidence do not create a supported dominance relation. | Return the feasible description and the exact comparison gap. |
+| “One feasible candidate dominates” | Feasibility alone settles neither a comparison with an unevaluated rival nor the authority to choose. | Report what the feasible candidate establishes. When the permitted set is exhaustive and the other candidates are infeasible, identify the sole feasible candidate. Recover further grounds for a comparison only if the recipient still needs one. |
 | “HCD.2 chooses and launches” | Comparison is collapsed with preference, authority, commitment, and execution. | If a choice is requested, give the authorized decision holder the comparison needed to make it. |
 | “The course author is the learner” | Recipient and holder are silently merged. | Keep the author and learner distinct. Return a product-design question for a future audience. For a named learner, use compatible individual evidence or identify the input still needed. |
 

@@ -23,7 +23,7 @@ A narrow boundary keeps the question answerable, but omitting a shared dependenc
 
 Begin with the requested result: condition interpretation, policy choice, intervention recommendation, actual repair, functioning evidence or return to use. Ask what decision will consume it and by when. This often resolves apparent disagreement: the engineer can finish advice today although the repair remains unready.
 
-Locate the actual unit and maintenance-relevant configuration. Reconcile its tag with installed constituents and applicable descriptions only where a difference could change the answer. For a bearing decision, the actual bearing arrangement and shaft assembly matter; an unrelated cabinet-label discrepancy may not. Keep an unknown configuration detail open. If a decision needs it, resolve it or identify the decision it still prevents.
+For an individual job, locate the actual unit and maintenance-relevant configuration. For a proposed policy, identify which installations, duties and times its terms would cover. A request about one recorded inspection can start with the item and time in that record. Reconcile its tag with installed constituents and applicable descriptions only where a difference could change the answer. For a bearing decision, the actual bearing arrangement and shaft assembly matter; an unrelated cabinet-label discrepancy may not. Keep an unknown configuration detail open. If a decision needs it, resolve it or identify the decision it still prevents.
 
 State required functioning as an observable contribution under an operating envelope. For example, “circulate heating water for the east district at the agreed seasonal flow and pressure” is more useful than “pump healthy.” Include the horizon, permissible loss of service and any qualified fallback. Obtain those operating values from the party responsible for operation.
 
@@ -32,6 +32,8 @@ Then trace the few interactions that can change the decision. A shared electrica
 Recover control at the point where it matters. Establish who can request and receive advice, permit access, stop operation, authorize the proposed intervention and resume use. The same participant may hold several of these roles, but possession of one authority does not establish the others. For an advice-only request, resolve only authority questions that constrain the recommendation or its interpretation.
 
 Return the bounded question in the existing work discussion or record. For example: “For this unit and configuration, under this required use and horizon, decide this maintenance question; this operating limit and this unresolved fact can change the answer.” A separate inventory or new form is unnecessary when the current record already supplies those values.
+
+If the requester has specified a test, decide whether they require its performance, its result for an operating decision, or both. A valid earlier finding may settle the decision. When the job is to devise a test, choose which conditions and observations distinguish answers that would change the receiver’s action. A supplied test can leave interpretation to the engineer. Identify who actually chose the test before using this work as evidence of that ability.
 
 For a consequential reliance claim, inspect the identity evidence, operating-source applicability and actual permission basis. Recognition of the right equipment is a lighter claim than assurance that a proposed act is permitted. A disagreement about the merits of a requirement belongs in a separate appraisal under [FPF C.11.DUA](../../../sections/09-part-c---kernel-extension-specifications/24-c-11-dua---make-advice-and-evidence-demands-worth-their-burd.md); it does not silently alter present authority.
 
@@ -51,7 +53,7 @@ Equipment registers favour named, owned assets. Shared utilities, contractor acc
 
 ### MNT.1:7 - Conformance Checklist
 
-For the requested use, can the recipient identify the unit being maintained and the configuration distinctions that affect the answer? Is required functioning tied to the relevant operating envelope and horizon? Are material service dependencies and loss allowances supported? Are access, intervention and resumed-use authorities distinguished where they change the next act?
+For the requested use, can the recipient identify the item or range the claim concerns and the configuration distinctions that affect the answer? If a finding about a constituent decides a question about service, what supports the connection under the required operating conditions? Is required functioning tied to the relevant operating envelope and horizon? Are material service dependencies and loss allowances supported? Are access, intervention and resumed-use authorities distinguished where they change the next act?
 
 An adequate existing answer closes this identification task. These questions do not require a complete inventory, a new permission record for advice or examination of unaffected constituents.
 

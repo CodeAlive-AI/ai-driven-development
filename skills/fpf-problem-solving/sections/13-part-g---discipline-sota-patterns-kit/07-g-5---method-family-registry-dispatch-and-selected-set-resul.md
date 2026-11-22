@@ -41,9 +41,9 @@ Registry and dispatch remain the primary concern. A set declaration can communic
 #### G.5:0.3 - First-minute questions
 
 - Which exact members and grouping or inclusion basis are already established?
-- Are they alternatives for later choice or members all included for one named use?
+- Which decisions will each recipient make? Are the listed members alternatives for a later choice, or are all designated for one named use?
 - Does the declared comparison justify ordering them?
-- Which eligibility, evidence or other receiving-use conditions apply?
+- Which eligibility and evidence conditions apply? If promising a feasible combination or menu, what joint choices are allowed and what shared limits affect them?
 - What result can be handed over, and what prevents a complete result?
 - Does the current question additionally claim actual selection, composition, a relation between meanings, public identity or publication? Open only the applicable branch in §4.2.
 
@@ -365,6 +365,8 @@ The admissible selector outcome families here are:
 
 `G.5-3 Select` uses grounded candidates and the applicable eligibility/comparison basis. An admitted Select may return an empty candidate set under its declared criteria; a corresponding empty `Shortlist` retains that actual return, criteria and scope. An abstention instead records the failed or unknown condition and has no Select result binding. `G.5-6 DeclareSetResult` emits `SetResultOutcome` from exact already identified members and a current inclusion basis; it does not perform that upstream choice.
 
+When the recipient asks which members were agreed for joint use, the agreement can settle their membership. To recommend a feasible combination, establish that the members meet their uses together under the shared constraints. If several recipients may choose independently from menus, check the joint choices their rights permit. A promise to honor them all needs one jointly feasible way for the participants to act. Each participant must act alike in situations they cannot yet distinguish when they commit, within their own authority (C.11:4.2 and C.43:4.1.1). For a claim that the recipients actually used the members, establish the relevant Work.
+
 A `JointUseSet` uses this bounded representation:
 
 - `namedUse` states the one joint use;
@@ -468,7 +470,7 @@ When the source is `TraditionFront` or `TraditionArchive`, keep its base `SoTAPa
 | --- | --- |
 | The two pump Methods in §0.5 survive, with no admitted ordering. | Emit its unordered `Shortlist`; the receiver still has a choice to make. |
 | A declared comparator orders family_B before family_A for the specialist handoff. | Emit a `RankedShortlist` with `[family_B, family_A]`, the comparator and supporting basis pins, and the handoff use. A request for an order alone supplies no comparator. |
-| The cohort decision includes `FPF@C`, `Domain@D` and `Local@L` together. | Emit the §4.4b `JointUseSet`; the receiver uses all three exact editions under the inclusion conditions. |
+| The cohort decision includes `FPF@C`, `Domain@D` and `Local@L` together. | Emit the §4.4b `JointUseSet` with all three editions and the conditions under which the cohort is to use them. |
 | Required selection grounds are missing, or the established gates exclude every candidate. | Emit `AbstainOutcome` with the respective unknown or failed condition and its basis. Use `EscalationOutcome` only for a justified further inquiry or action. If an admitted Select application instead returns an empty set under its declared criteria, preserve that actual result and explain its scope. |
 
 The following extensions apply only when their corresponding mode is active. Their declared `Uses` and pins cite the governing semantics.
@@ -635,8 +637,8 @@ For a second task that requires battery-health evidence, the same CL^k=2 row los
 
 These biases can affect dispatch:
 
-* **Monoculture bias (single Tradition dominance by default).** Mitigation: rows retain an explicit eligibility basis and conditional assurance expectations; public registration adds its stronger records; selection is set‑returning under partial orders; identify method-specific policies by their pins instead of hard-coding them as defaults.
-* **Hidden scalarisation bias.** Mitigation: set-return semantics is pinned through `G.Core`; dominance regimes are explicit and each default cites one declared governing definition.
+* **Monoculture bias (single Tradition dominance by default).** Mitigation: rows retain an explicit eligibility basis and conditional assurance expectations; public registration adds its stronger records; selection follows its declared outcome contract under partial orders; identify method-specific policies by their pins instead of hard-coding them as defaults.
+* **Hidden scalarisation bias.** G.Core preserves the comparator result and the commissioned selector outcome. Identify the governing dominance regime and any applicable ranking policy.
 * **“Tool equals method” bias.** Mitigation: notation independence and prohibition of tool keywords in core registry and eligibility fields; tool choices are outside the core.
 * **Cross-sense leakage bias.** Mitigation: when expressions have distinct source-local meanings, require exact F.17 endpoint senses, an obtaining F.9 Bridge, a separate C.2.1 bounded-use proposition, and the matching A.10 or B.3 reliance branch; keep loss and CL visible where material. Crossing pins and bundles remain audit or publication references and cannot make an implicit crossing admissible.
 
@@ -745,7 +747,7 @@ These biases can affect dispatch:
 
 * **Why registries?** Stable row editions preserve the grouping and eligibility basis for later dispatch. Assurance records enter when required by the declared use or public-registration contract.
 * **Why separation via Extensions?** QD, OEE and preference-learning have different method semantics. Extensions let a selector use those semantics only for the task that needs them.
-* **Why set-return?** Partial orders are common and often the only admissible representation under heterogeneous scales; set-return preserves semantics and makes tie criteria explicit.
+* **Why name the result?** A comparator can establish that two candidates are incomparable under the stated criteria. Returning both as a shortlist needs the candidate domain and the selector’s rule. A handoff, abstention or escalation has its own grounds.
 * **Why explicit defaults with one declared source?** Indexing each default by its governing definition lets consumers use and revise the same rule.
 * **Why selected-set result declaration here?** Once the current question is to state retained alternatives or an all-member result for downstream use, the selector should declare that result directly instead of leaving it implicit in local choice, pool-policy, or enactment notes written for other purposes.
 * **Why `JointUseSet`?** A shortlist preserves alternatives for later choice; an all-member result says that removing one member changes the result for the named use. `JointUseSet` is a local `SetResultFamily` value using the existing member identities. `G.5-3 Select` may emit it only over exact Method candidates admitted through that kernel. `G.5-6 DeclareSetResult` covers already identified members with a current inclusion basis, including framework editions, without retyping them as Methods or asserting a relation among them.

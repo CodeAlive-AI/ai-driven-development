@@ -8,7 +8,7 @@
 
 Use this pattern when a practitioner knows the engineering result needed next but must repeatedly discover how to request it, which inputs are acceptable, what a delay or failure means, or how to recover. A developer asks for a test environment, a test engineer asks for a bench run, or a manufacturing engineer asks for an inspection result. The available tools may work while the interaction between their users and providers remains unreliable.
 
-Start with one representative attempt and say what the user supplies, what usable result should return, and which conditions make the attempt supported. If no adequate path is available, connect the necessary operations and providers and design the interaction for success, variation, waiting and failure. The first useful result is an explanation of how the operations fit together for the supported use. Include applicable trial evidence, identify a worthwhile trial, or name missing provision when the decision needs it. A description supplies a design; actual support needs capable providers, effective access and evidence from the intended use.
+Start with the use the path must support. Establish what each participant supplies, who needs the result, what they must do with it and which choices the agreed service leaves to them. An account of a representative attempt can expose a missing connection. Derive the design from the promised range of uses and the ways results meet. A proposed path can answer a design commission. Before promising operational support, establish capable providers, access and the conditions needed for the intended work.
 
 The intended reader understands the professional task and can obtain its specialist results. The new work here is to organize their use through the platform: connect inputs and returned results, preserve the conditions needed by the whole attempt, and give users and providers a workable continuation. A catalogue of available services is insufficient when these connections remain to be designed.
 
@@ -33,7 +33,7 @@ The missing engineering work is to connect the user's undertaking to the actual 
 
 #### SYSE.26:4.1 - Begin with the user's completed undertaking
 
-Use an adequate walkthrough of an actual or explicitly constructed attempt with a representative user. Arrange one when the available account leaves a consequential question about the task. From the account or, where needed, from the user, establish what the result will let them do: compare a model, test a change, release a configuration, or accept a manufactured item. Work backwards from that use to the input and returned result sufficient for that use.
+Work backwards from the action each user must be able to complete. A request, an applicable professional rule or a practitioner’s account can establish the needed result, such as a comparison of models or acceptance of a manufactured item. Follow the inputs, operations and results of an actual or proposed attempt where that connection is unclear. Keep a booking as the endpoint when booking the resource is the whole task.
 
 Keep the user's result separate from intermediate provider activity. An accepted request, a booked slot, a running job and an inspected item are different results. A booking may be sufficient when the user is scheduling; it is insufficient when they are deciding whether a component passed a test.
 
@@ -57,7 +57,7 @@ For each material variation, choose a supported route, a provider-assisted route
 
 Use an interface already natural for these users when it suffices: a callable operation, a command, a workbench interaction or a short agreed request can provide the supported interaction. A new portal is justified only by an additional user result. Pass required credentials through the applicable protected authentication mechanism; keep its secret material out of task request and response payloads, displays and diagnostics. Determine which task information is necessary and permitted in the input, returned result and display, who may receive it, and how it is protected. Preserve necessary personal data within those permissions and protections; omit sensitive details that the receiving action does not need. Keep diagnostic detail to what its authorized recipient needs to understand the result or take the next action. If a necessary permission is unavailable, return that condition to the authority that can grant it before the affected operation.
 
-Generate more than one feasible form when the interaction arrangement is unresolved. An assisted path can have a practitioner submit the engineering question and a qualified operator supply the result. A self-service path can expose an understood, repeatable operation with appropriate observation and recovery. A hybrid can automate preparation and ordinary execution while returning a consequential exception to a specialist. Begin from existing tools, qualified operations and actual assignments; a new interface is only one possible change.
+Build a feasible interaction around the choices users and providers are meant to make. A qualified operator can supply an agreed result. If the user's work is to design a test, the platform can supply equipment and observations while leaving the consequential test choices to that user. A path can automate routine execution and bring a specialist in for exceptions. Compare feasible alternatives where their differences matter to the commission.
 
 Compare these forms for the same supported task. Ask which decisions users must understand, how often assistance is needed, what happens under a legitimate variant, and what support must remain available. A documented procedure can be the thinnest sufficient path when its users can follow it and its providers can support it. An automated wrapper may be thinner in the user interface while moving considerable integration and recovery work into the provider. Include that work in the comparison.
 
@@ -88,7 +88,7 @@ Determine who can investigate or repair the provision and which promise is in fo
 
 Arrange support for the scope promised. Establish when diagnosis is available, which provider can observe or change each consequential effect, and how a case crosses provider boundaries without making the user rediscover them. A platform team need not operate every backing service, but a supported path needs an attainable continuation when one fails. If the named operator is available only during a shift, either arrange further support or bound the promise accordingly.
 
-Explain the path's technical decisions to practitioners and contributors. Demonstrate an ordinary attempt and the failure where the next move differs: for example, retrieving an uncertain creation rather than creating a second resource. Let a user perform the attempt and explain the returned result. Repair the description or preparation when the missing knowledge belongs to supported use; retain necessary specialist assistance in the arrangement. This technical leadership develops shared understanding of the selected design. Assigning Work, granting rights and authorizing exceptions remain with the holders of those rights.
+Explain the path's technical decisions to practitioners and contributors. When the commission includes user preparation, or a demonstration can resolve an open question, give practitioners an attempt whose result they can interpret. Include a failure if it changes the next move. For example, a practitioner may need to retrieve an uncertain creation before deciding whether to create a second resource. Repair the description or preparation when the missing knowledge belongs to supported use; retain necessary specialist assistance in the arrangement. This technical leadership develops shared understanding of the selected design. Assigning Work, granting rights and authorizing exceptions remain with the holders of those rights.
 
 #### SYSE.26:4.5 - Exercise the interaction before relying on it
 
@@ -118,7 +118,7 @@ Three alternatives are considered: extend the lease, prepare the synthetic data 
 
 In the first walkthrough, the provider accepts attempt q17 and creates environment e42, but the response is lost. A second click with a new request identity would create an unnecessary second environment. The revised interaction retains q17 at the caller, permits retrieval of that attempt and returns e42 only after checking its current state. If that lookup is unavailable, the response says that creation is uncertain and returns q17 to support; it does not invite an unqualified create-again action.
 
-A later constructed trial finds the environment running but the acceptance-test connection denied. “Created” is therefore not the promised usable result. The trial returns the observed access failure and its repair route. After the permitted access configuration is repaired and the connection checked, the developer receives e42 with the matching recipe and data identity. Releasing the application requires a separate decision.
+A later constructed trial finds the environment running but the acceptance-test connection denied. “Created” is therefore not the promised usable result. The trial returns the observed access failure and its repair route. After the permitted repair, check the connection, recipe, data identity and remaining lease together. If access works at minute 8 of the twenty-minute lease, twelve minutes remain and the ten-minute test can proceed. At minute 18, the developer needs a permitted extension or another qualified interval. Returning the running environment then would leave the test unfinished. Releasing the application requires a separate decision.
 
 A request for an unsupported build language receives a specific extension/support answer. It is not silently run through another language's recipe. Expiry is also visible: the user can retain the permitted test result before the disposable environment is removed, rather than treating access to a disappearing environment as permanent evidence.
 
@@ -136,11 +136,11 @@ Evidence from frequent expert users can hide the difficulties of infrequent user
 
 ### SYSE.26:7 - Conformance Checklist
 
-- A representative user's next engineering result, supplied input and supported conditions are concrete.
+- The design identifies who supplies the inputs, who makes the consequential choices and which results must be usable separately or together under the supported conditions.
 - Acceptance, progress, intermediate completion and the usable returned result remain distinguishable.
 - Valid unsupported use has an explicit return rather than a false success or coerced variant.
 - Retry and cancellation preserve known effects and expose unknown ones.
-- The support return reaches an actual capable provider without inventing an assignment or permission.
+- A proposed path identifies the support capability and access it requires. An operational support promise has an available, capable provider for the promised scope.
 - Description, desk walkthrough, actual trial and later use support only their own evidence claims.
 
 ### SYSE.26:8 - Common Anti-Patterns and How to Avoid Them

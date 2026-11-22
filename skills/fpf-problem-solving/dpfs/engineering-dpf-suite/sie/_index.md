@@ -5,7 +5,7 @@
 > A domain pattern language for making separately governed meanings and representations usable together for a named receiving use.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Version:** 20 October 2026
+- **Version:** 22 November 2026
 - **Status:** Eternal alpha, open to correction as methods, sources, and applications change. The thirteen Methods support construction of a receiving-use integration, model reuse or development, semantic interfaces, affected-use revalidation, and modular semantic commons.
 - **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for original framework content; third-party material retains its own terms.
 - **Publication:** [FPF Library repository](https://github.com/ailev/FPF)
@@ -78,6 +78,8 @@ To construct a semantic integration from several contributions, use [SIE.13](33-
 
 Start from the query, decision, or operation that needs a cross-source answer. The constructed connections below show how meanings, identity, executable rules, and receiving use constrain one another. Reuse supplied results when their use and conditions still match; open the [Table of Contents](_index.md#table-of-contents) for another question or the [pattern-selection guide](15-sie-reference-14---pattern-selection-and-first-returned-resu.md) for a missing result.
 
+Identify the output each recipient asked for. A reference to a field can finish a lookup. Deciding whether to act on that field requires its meaning for the subject and occasion in question. Designing an interface for repeated use also requires choosing which differences in future cases the interface must preserve. An account of what a recipient actually saw or did needs evidence from that occasion.
+
 The [Architectural Reference](01-semantic-integration-engineering-principles-framework-archit.md) explains the repertoire and its [architectural rationale](08-sie-reference-7---architectural-rationale.md). You can ask an assisting agent: “Explain this and give me your comments in the language of my work, without framework jargon.”
 
 ### SIE-INSPECTION - Connect inspection evidence to the configured product
@@ -86,11 +88,11 @@ The [Architectural Reference](01-semantic-integration-engineering-principles-fra
 - **Question:** How can the receiving query return applicable evidence and expose the branches it cannot establish?
 - **First useful result or blocker:** The required answer for a named feature, configuration, and effectivity, with the permitted incomplete branches; or the missing configuration or acceptance decision that prevents bounding that answer.
 - **Start with:** [SIE.1](21-sie-1---bound-the-receiving-use-and-semantic-contract.md) when the receiving question is unsettled; [SIE.10](30-sie-10---validate-a-semantic-integration-result-for-its-rece.md) when an existing result fails that question.
-- **Stop or return:** Stop a dependent branch on unresolved feature identity or configuration. Return a source-definition gap to its owner, a transformation defect to SIE.7, and the release or inspection-acceptance decision to the engineering or quality authority.
+- **Stop or return:** Consider the interpretations consistent with the governing records. A complete applicable plan can show that no assignment was made. Hold a feature-specific join open if the interpretations differ on the answer. Where at least one interpretation fits and all give the same answer, return it when the contract accepts it. If no interpretation fits the required records together, resolve the conflict or establish the answer from independent grounds. Return a source-definition gap to its owner, a transformation defect to SIE.7 and the release or inspection-acceptance decision to the engineering or quality authority.
 
 In [APP-SIE-01](35-sie-application-1---app-sie-01---ap242-and-qif-product-lifec.md), the engineer asks for the QIF plan and result concerning feature `F` in released revision/configuration `R` at effectivity `E`. SIE.1 makes those inputs and the acceptable answer branches explicit. [SIE.2](22-sie-2---recover-and-qualify-source-semantics-and-authority.md) then supplies the source editions, local definitions, the rules or assignments that identify the feature, and the authority for each. If the available model cannot distinguish a planned inspection from an observation of that configured feature, [SIE.3](23-sie-3---construct-or-reuse-a-semantic-model-for-a-named-use.md) develops that missing distinction and tests it against those cases. An adequate existing model can be reused.
 
-Those meanings allow [SIE.4](24-sie-4---judge-cross-source-correspondences-and-their-permitt.md) to state a directed relation: inspection characteristic `C-17` concerns product feature `F-17` under the plan and configuration. [SIE.5](25-sie-5---resolve-cross-source-identity-without-erasing-identi.md) qualifies the feature endpoint at the required grain and effectivity. The relation permits navigation between the records; it does not make a characteristic identical to a product feature. A shared label without the supporting plan and effectivity remains an unmatched candidate. [SIE.6](26-sie-6---fuse-source-qualified-claims-without-erasing-conflic.md) uses these premises to combine definition, plan, and observation claims while retaining their sources and any conflict.
+Those meanings allow [SIE.4](24-sie-4---judge-cross-source-correspondences-and-their-permitt.md) to state a directed relation: inspection characteristic `C-17` concerns product feature `F-17` under the plan and configuration. [SIE.5](25-sie-5---resolve-cross-source-identity-without-erasing-identi.md) qualifies the feature endpoint at the required grain and effectivity. The relation permits navigation between the records; it does not make a characteristic identical to a product feature. A shared label can suggest a link. If the available plan excerpt leaves the assignment open, retain it as unresolved. If the complete governing plan for that effectivity makes no assignment, report the non-match. [SIE.6](26-sie-6---fuse-source-qualified-claims-without-erasing-conflic.md) uses these premises to combine definition, plan, and observation claims while retaining their sources and any conflict.
 
 [SIE.7](27-sie-7---specify-semantic-extraction-and-transformation-mappi.md) turns the accepted relations into selection and transformation rules. The rules select the supplied released configuration, preserve both source identifiers, and expose an unknown unit or unmatched feature. [SIE.8](28-sie-8---choose-virtual-materialized-or-hybrid-semantic-reali.md) uses those required behaviours when comparing ways to supply the result; [SIE.9](29-sie-9---connect-a-receiving-use-through-a-semantic-interface.md) makes their meanings, timestamps, provenance, and failure branches available in the engineer's query.
 
@@ -102,9 +104,9 @@ The constructed application permits a qualified row set with unresolved local-ex
 - **Question:** Which qualified answer can the interface supply within the receiving and access conditions?
 - **First useful result or blocker:** Separately attributed quantities with the conditions needed for comparison, or a semantic or access limit that defeats the proposed answer.
 - **Start with:** [SIE.2](22-sie-2---recover-and-qualify-source-semantics-and-authority.md) and [SIE.6](26-sie-6---fuse-source-qualified-claims-without-erasing-conflic.md) for unsettled meanings and comparison; [SIE.8](28-sie-8---choose-virtual-materialized-or-hybrid-semantic-reali.md) when those premises are supplied and realization is the remaining question.
-- **Stop or return:** Exclude prohibited copying. Return an infeasible complete answer for a permitted narrower result or an access-owner decision. Reopen the affected meaning and interface when a provider changes the quantity it reports.
+- **Stop or return:** Exclude prohibited copying. If a shared limit defeats the proposed complete retrieval, say which comparison remains due. Supply a permitted partial report, establish another way to answer the question, or return the exact obstacle to its owner. Reopen the affected meaning and interface when a provider changes the quantity it reports.
 
-In the constructed provider case of [APP-SIE-04](38-sie-application-4---app-sie-04---high-change-provider-availa.md) and SIE.6, Provider A reports 12 on hand and Provider B reports 9 available to promise. SIE.2 recovers the reservation and horizon rules behind the quantities. [SIE.3](23-sie-3---construct-or-reuse-a-semantic-model-for-a-named-use.md) can reuse a model that keeps both measures, providers, units, times, and horizons distinct. [SIE.4](24-sie-4---judge-cross-source-correspondences-and-their-permitt.md) supplies the qualified product-family relation. SIE.6 retains separate provider claims: the numbers do not support a common “21 available” total. For the question “Who can supply 8 now?”, A's reservation check and B's promise horizon must also support the receiving use.
+In the constructed provider case of [APP-SIE-04](38-sie-application-4---app-sie-04---high-change-provider-availa.md) and SIE.6, Provider A reports 12 on hand and Provider B reports 9 available to promise. SIE.2 recovers the reservation and horizon rules behind the quantities. [SIE.3](23-sie-3---construct-or-reuse-a-semantic-model-for-a-named-use.md) can reuse a model that keeps both measures, providers, units, times, and horizons distinct. [SIE.4](24-sie-4---judge-cross-source-correspondences-and-their-permitt.md) supplies the qualified product-family relation. SIE.6 retains separate provider claims: the numbers do not support a common “21 available” total. To name one provider able to supply eight units now, establish the applicable product, unit, amount and delivery conditions for that provider. Nine available to promise suffices for B if the promise covers that quantity now. To name every qualifying provider, settle A's position as well, including reservations. To split an order between them, establish which quantities can be committed together under the buyer's terms.
 
 Both providers prohibit replication. That prohibition is sufficient for SIE.8 to reject a copied availability store. If the question asks which remaining arrangement to use, compare query-time retrieval and any permitted hybrid with their latency, provenance, failure behaviour, and common resource demands. Develop only serious remaining alternatives. Obtain further evidence when its possible contribution to the choice justifies the burden and displaced work.
 
@@ -133,7 +135,7 @@ If you use this edition, cite:
 ```text
 Anatoly Levenchuk, with AI-assisted development and review.
 Semantic Integration Engineering Principles Framework.
-20 October 2026.
+22 November 2026.
 GitHub repository: https://github.com/ailev/FPF
 ```
 
@@ -178,12 +180,12 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [SIE.5 - Resolve Cross-Source Identity without Erasing Identifier Authority](25-sie-5---resolve-cross-source-identity-without-erasing-identi.md) (149 lines)
 - [SIE.6 - Fuse Source-Qualified Claims without Erasing Conflict](26-sie-6---fuse-source-qualified-claims-without-erasing-conflic.md) (150 lines)
 - [SIE.7 - Specify Semantic Extraction and Transformation Mappings](27-sie-7---specify-semantic-extraction-and-transformation-mappi.md) (152 lines)
-- [SIE.8 - Choose Virtual, Materialized, or Hybrid Semantic Realization](28-sie-8---choose-virtual-materialized-or-hybrid-semantic-reali.md) (175 lines)
+- [SIE.8 - Choose Virtual, Materialized, or Hybrid Semantic Realization](28-sie-8---choose-virtual-materialized-or-hybrid-semantic-reali.md) (177 lines)
 - [SIE.9 - Connect a Receiving Use through a Semantic Interface](29-sie-9---connect-a-receiving-use-through-a-semantic-interface.md) (153 lines)
 - [SIE.10 - Validate a Semantic Integration Result for Its Receiving Use](30-sie-10---validate-a-semantic-integration-result-for-its-rece.md) (174 lines)
 - [SIE.11 - Trace Semantic Change and Revalidate Affected Uses](31-sie-11---trace-semantic-change-and-revalidate-affected-uses.md) (170 lines)
 - [SIE.12 - Govern Modular Semantic Commons without Universal Authority](32-sie-12---govern-modular-semantic-commons-without-universal-a.md) (191 lines)
-- [SIE.13 - Construct a Semantic Integration for a Named Receiving Use](33-sie-13---construct-a-semantic-integration-for-a-named-receiv.md) (248 lines)
+- [SIE.13 - Construct a Semantic Integration for a Named Receiving Use](33-sie-13---construct-a-semantic-integration-for-a-named-receiv.md) (250 lines)
 
 ### Cross-Pattern Application
 
@@ -191,7 +193,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [SIE.Application:1 - APP-SIE-01 - AP242 and QIF product-lifecycle query](35-sie-application-1---app-sie-01---ap242-and-qif-product-lifec.md) (23 lines)
 - [SIE.Application:2 - APP-SIE-02 - Semiconductor identity and traceability](36-sie-application-2---app-sie-02---semiconductor-identity-and.md) (8 lines)
 - [SIE.Application:3 - APP-SIE-03 - End-to-end quality and provenance](37-sie-application-3---app-sie-03---end-to-end-quality-and-prov.md) (10 lines)
-- [SIE.Application:4 - APP-SIE-04 - High-change provider availability without a materialized graph](38-sie-application-4---app-sie-04---high-change-provider-availa.md) (8 lines)
+- [SIE.Application:4 - APP-SIE-04 - High-change provider availability without a materialized graph](38-sie-application-4---app-sie-04---high-change-provider-availa.md) (10 lines)
 - [SIE.Application:5 - APP-SIE-05 - A Modular Equipment-Classification Commons](39-sie-application-5---app-sie-05---a-modular-equipment-classif.md) (8 lines)
 - [SIE.Application:End](40-sie-application-end.md) (3 lines)
 

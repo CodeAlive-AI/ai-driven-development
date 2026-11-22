@@ -8,7 +8,7 @@
 
 **Use this when** a notation can express the required content, yet reading or changing that content is unnecessarily difficult. A reader repeatedly loses a dependency, has to reconstruct a grouping, or must change the same assumption in several places. Another symbol or a shorter inscription may leave the difficult operation unchanged.
 
-Begin with one such operation on an actual expression. Find what the reader has to locate, infer, remember or alter. Change the notation or its editing arrangement at that point, then compare the operation and another operation that the change could burden.
+Begin with the operation whose cost or reliability matters. Find what the reader has to locate, infer, remember or alter. Change the convention or editing arrangement at that point and determine what follows for the requested use. Follow a transferred burden into another operation when that operation is needed. Use actual expressions or observations when they can decide a remaining question.
 
 The result is a repaired notation with a reason to prefer it for the intended work, or a decision to retain the existing form. A useful diagnosis may instead identify missing subject knowledge, an unavailable operation or inaccessible content that a notation change cannot supply.
 
@@ -40,9 +40,9 @@ The repair also has to separate expression from assistance. An author can explai
 
 #### NOT.7:4.1 - Locate the operation and its failure
 
-Select a concrete question and the expression on which the reader must work. Ask the reader to answer the question or make the change. Recover the route taken: where the reader searches, which reference is followed, what has to be held in memory and where the result goes wrong or the work becomes costly.
+Identify the operation at issue and the conditions under which a reader must perform it. For a claim about the work imposed by the notation, follow its reading and editing rules. For a claim about a reader’s difficulty, recover what the reader actually did, including what they looked for, the references they followed and where their answer or edit went wrong.
 
-Use an available response or observed difficulty when one exists. Otherwise, walk through the operation and treat the diagnosis as a design estimate. An actual trial is useful when plausible reader responses would change the repair decision.
+The available editing operations can settle a design question directly. If values can only be changed one field at a time, changing one shared parameter requires one edit and changing the same value in n independent fields requires n edits. Time taken and mistakes made by readers require evidence of their use. When plausible responses could lead to different repairs, observe the operation under the intended conditions or state the remaining uncertainty.
 
 State the relevant preparation, permitted help, display or access conditions and effort limit. A reader who knows the local grouping convention faces a different question from one learning it. A page that hides half a diagram can create a different difficulty from the diagram's structure.
 
@@ -50,7 +50,7 @@ Keep the intended result in view. If the reader has correctly recovered the nota
 
 #### NOT.7:4.2 - Explain which work the current form imposes
 
-Describe the burden through operations: repeated searching, uncertain grouping, reconstruction of an unstated dependency, simultaneous retention of distant values, or many edits for one intended change. Choose the description that explains the observed case.
+Describe the burden through operations: repeated searching, uncertain grouping, reconstruction of an unstated dependency, simultaneous retention of distant values, or many edits for one intended change. Establish which operations the form requires and which the reader chose in the observed case, when that case is the subject.
 
 Locate the source of the burden. The expression, the construction rule, the editing environment and the reader's preparation can make different contributions. An editor that cannot show two needed passages together may be changed without introducing a new notation. A missing dependency needs expression even when the display is large enough.
 
@@ -76,7 +76,7 @@ Keep the alternative small enough to inspect. If construction reveals that the o
 
 #### NOT.7:4.4 - Preserve what the work needs from the expression
 
-Identify the meaning and operations that must survive the change. Work through one consequential contrast: reversed dependency, local exception, changed grouping or unresolved input, as appropriate to this notation. The new form must make the required difference recoverable.
+Identify the meaning and operations that must survive the change. A construction or decoding rule may already show that the required differences are recoverable across all admitted expressions. To investigate a possible loss, work through a consequential contrast such as reversing a dependency, inserting a local exception or changing a group. Establish which results the new form supports.
 
 If the repair adds a claim that was absent before, treat it as a content addition. If it supplies a new procedure or teaches a missing convention, include that contribution in the comparison. A useful combined repair is allowed; attribute its effect to the combination used.
 
@@ -84,9 +84,9 @@ Preserve the path from a compressed form to the detail needed for its use. A sha
 
 #### NOT.7:4.5 - Compare the same operation and the burden it moves
 
-Perform the selected operation with the old and new forms under comparable conditions. Compare correct and missing results first, then the effort relevant to the use: searches, unresolved references, edits, elapsed time or another suitably defined measure. C.2.8 distinguishes structure recovered from the effort of recovering it.
+Compare what the old and new forms let the recipient recover or do under the required conditions. Their rules may directly establish a difference in recoverability or the number of required edits. For a claim about readers’ actual effort or success, compare evidence of their work under comparable conditions. Measure what matters to that use, such as searches, missed references, edits or elapsed time. C.2.8 distinguishes structure recovered from the effort of recovering it.
 
-Also perform an operation plausibly made harder by the repair. A shared parameter may make a global change easy and a local exception harder. An outgoing-dependency index may improve downstream search while an incoming-dependency list remains better for finding prerequisites. Keep that trade-off visible in the choice.
+Follow any burden the change could move into another required operation. A shared parameter may make a global change easy and a local exception harder. An outgoing-dependency index may improve downstream search while an incoming-dependency list remains better for finding prerequisites. Try the affected operation if the comparison is unresolved and matters to adoption. An established property of the representation can settle it directly. For work confined to one operation, compare that use and its necessary preparation and upkeep.
 
 In a reader trial, retain the first response before explanation or correction. If the same reader sees both forms, practice can contribute to the second result. For a local decision, that limitation may be acceptable. A general superiority or learning claim requires a comparison that supports that stronger conclusion; EXD.6 and, for instruction intended to develop human capability, HCD.19 supply the corresponding evaluation methods.
 
@@ -170,7 +170,7 @@ When the repair needs checking, ask the questions that can change its adoption.
 
 A repair can make a needed relation or operation available with less reconstruction, or make an intended change less error-prone. It also makes the reason for keeping a familiar convention explicit when a proposed alternative would burden important work.
 
-New conventions require learning and migration. Complementary views add maintenance. A local improvement remains local until broader use supports a wider claim. Some failures return to subject knowledge or explanation rather than notation.
+New conventions require learning and migration. Complementary views add maintenance. For a broader claim, establish which operations, expressions and readers its grounds cover. A rule can cover a family of edits. A claim about their cost in practice also depends on the working conditions and evidence of use. Some failures return to subject knowledge or explanation rather than notation.
 
 ### NOT.7:10 - Architectural Rationale
 

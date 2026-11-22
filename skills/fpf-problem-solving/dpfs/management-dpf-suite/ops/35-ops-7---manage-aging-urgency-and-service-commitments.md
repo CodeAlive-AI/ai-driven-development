@@ -5,15 +5,15 @@
 
 ### OPS.7:0 - Use This When
 
-**Use this when** further delay could affect an operating result, a coordination priority or an existing service promise. A deadline may be approaching, a dependency may have changed or new evidence may show deterioration. Identify the subject, what delay would affect, who can decide and how much time remains to respond.
+**Use this when** further delay could affect an operating result, or a recipient needs to establish the priority or service terms already in force. For the current terms, identify the decision or rule that made them effective for this case. To decide how to respond to a possible delay, identify what further waiting would change, how much time is available and who may take the required action.
 
 State the result for the particular subject and coordination decision.
 
-> Identify the subject of the decision, its current state and the evidence about what delay would change. Give the priority decision and its authority if established. If either remains unresolved, identify what prevents the decision or its use. For an affected promise, give its parties, conditions, horizon, authority and current disposition. Give the immediate action or blocker, the affected parties, how long the result applies, the limits of the evidence and the next review.
+> Identify the subject and the decision needed. When the choice depends on the consequences of delay, establish those consequences. For a priority choice, give the order that is justified and who may set it. For a question about the terms already in force, return those terms with the action or rule that made them effective. Include any further coordination, notification or review required for the commissioned use.
 
 One System may hold both authorities. If a required authority is missing, identify which decision must wait.
 
-Recognition asks what further delay could change for the case or for a decision about it. Assurance needs the temporal evidence, consequence and the distinct authority for priority, promise revision and any specialist action.
+An approaching deadline or a disputed priority can make this method relevant. To rely on a claim about a deadline already in force, establish the applicable terms and when they took effect. To change a priority or revise a promise, establish the consequences of the proposed change and who may authorize it. Obtain any specialist decision the action requires.
 
 Use `OPS.8`–`OPS.13` for wider queue, constraint, capacity and service-commitment questions, and `OPS.18` for operating quality and reliability. Clinical triage and release require their own authoritative decisions. Use `C.27` for an intervention-sensitive claim about a change in rate, rhythm, recovery or regime.
 
@@ -81,7 +81,7 @@ Age alone does not prove urgency. Express urgency as “delay can change `X` for
 
 #### OPS.7:4.4 - Separate priority authority from commitment authority
 
-Name the System authorized to maintain or change priority for the selected coordination use. For an affected commitment, identify the System that holds the relevant authority under its terms. A coordinator may have one authority but not the other. Rank, expertise, responsibility, impact, and visibility grant neither by themselves.
+When the work includes setting priority, establish who may set it. For a proposed change in commitment, identify who can make that change effective. For an inquiry about the date already in force, the agreement and its application to that order can give the answer. A coordinator may have one authority but not the other. Rank, expertise, responsibility, impact, and visibility grant neither by themselves.
 
 #### OPS.7:4.5 - Decide the bounded dispositions
 
@@ -95,7 +95,7 @@ Use `C.11` only where several real admissible dispositions need comparison. Use 
 
 #### OPS.7:4.6 - State immediate action, parties, horizon, and review
 
-Record the current priority disposition, the status of any affected commitment and any change effective under its terms, immediate coordination action or truthful blocker, affected parties, effective horizon, supporting evidence and uncertainty, and next review or reopen trigger. Notify or coordinate with affected parties through the established relation; this pattern does not invent notification authority or prove receipt.
+Return the decision the recipient needs, the period it covers and the grounds on which it can be used. Where coordination work follows, identify the relevant action, parties and conditions for review. Provide required notifications under the applicable arrangement. To report that a notice was received, establish the receipt the terms call for.
 
 Choose the review time early enough that a discovered adverse condition can still receive a useful response. When supported durations are additive, subtract their total from the latest useful action time, then allow for uncertainty; when they overlap or vary, use the applicable response model instead. If no useful interval remains, act or return the blocker now rather than schedule a review after the consequence.
 
@@ -150,9 +150,9 @@ The authorized System may revise the issue's coordination priority or trigger an
 - [ ] `C.27` is used only for an intervention-sensitive rate, rhythm, recovery, inertia, or regime claim.
 - [ ] Urgency names the consequence, commitment, risk, recovery, or supported use that delay can change.
 - [ ] Priority, queue rank, clinical triage, economic value, permission, and commitment remain distinct.
-- [ ] The account identifies who can set priority and, for an affected commitment, who can revise its terms. If the required authority is still unknown, the account identifies the decision that must wait.
-- [ ] The current comparison basis and any useful probe are explicit.
-- [ ] The result gives the priority decision or blocker, the status of any affected commitment, the immediate coordination action if one is available, affected parties, horizon, evidence and next review.
+- [ ] For a decision to set priority or revise a commitment, identify the authority required for that act. Check the applicable terms for an inquiry into an existing commitment.
+- [ ] When the decision requires comparing options, the comparison and any further inquiry it warrants are explicit.
+- [ ] The result answers the question about priority, delay or commitment that the recipient brought, with enough evidence for its use. Return any other action still required under the terms.
 - [ ] Any wider policy, service or specialist question has a usable return to the participant who can answer it.
 
 ### OPS.7:8 - Common Anti-Patterns and How to Avoid Them

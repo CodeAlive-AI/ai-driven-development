@@ -28,7 +28,7 @@ The team uses `SYSE.24` to construct three whole arrangements. The comparison ho
 
 A matched trial of ordinary successful changes gives the same limited result for A and B: each carries the intended artifact unchanged, provides an isolated environment and completes the same bounded deployment test for the same ordinary changes. Both improve on the faulty baseline.
 
-The choice result is a retained A/B tie and one discriminating probe. Apply the same provider/toolchain update and a recoverable failure to both arrangements. Include all affected consumer qualification and observe developer effort, maintainer effort, support fulfillment and correlated impact over the same interval. Counting only the shared-module edit or only local consumer maintenance would break the comparison.
+A and B both pass the ordinary case. Their complete ordering remains open because a provider update or recoverable failure could change the preferred arrangement. The authorized choice here is to run one probe that distinguishes these possibilities. Apply the same provider/toolchain update and a recoverable failure to both arrangements. Include all affected consumer qualification and observe developer effort, maintainer effort, support fulfillment and correlated impact over the same interval. Counting only the shared-module edit or only local consumer maintenance would break the comparison.
 
 C remains deferred until its extra user-result hypothesis can be tested fairly. The rest of this application develops B for the probe. A requested language-specific variant outside the probe remains unqualified; its existing local path is retained with its known limits.
 
@@ -128,7 +128,7 @@ Before repeating a data change, recover its earlier effect or establish that rep
 
 The common comparison concerns correct address use under each form's supported contract, not identical layout. The instrumentation must observe that meaning or expose the remaining gap. Each error budget and `SYSE.37` alert, if used, belongs to its own service and task population.
 
-With permission for the bounded exposure and a qualified stopping action, `SYSE.35` evaluates application h2/c2, not the platform path edition. During one interval in the example, nine general candidate requests occur but none uses the changed form. The relevant evidence is insufficient: the application-exposure result is inconclusive.
+With permission for the bounded exposure and a qualified stopping action, `SYSE.35` evaluates application h2/c2. During one interval, nine general candidate requests occur and none uses the changed form. The observed number of uses of that form is zero. Its performance on an eligible use remains open. A claim about a change in performance would also need a suitable comparison.
 
 Meanwhile, all ten observed platform deployment attempts may have completed correctly within their own agreed and observed response bound. Those successes do not alter the application's inconclusive result.
 
@@ -146,7 +146,7 @@ Using `SYSE.29`, the team migrates the affected users only after the new variant
 
 ### SYSE.Application:5.9 - Result, stop and direct-entry variations
 
-The example returns a constructed supported-path candidate for B, the retained A/B obtaining tie awaiting its matched maintenance/failure probe, an explicitly unqualified variant, an inconclusive application-exposure result and a concrete next improvement. `SYSE.14` keeps the actual release decision with its authorized holder.
+The example returns a constructed supported-path candidate for B, the decision to compare A and B in a matched maintenance and failure probe with their overall preference still open, an explicitly unqualified variant, an inconclusive application-exposure result and a concrete next improvement. `SYSE.14` keeps the actual release decision with its authorized holder.
 
 A practitioner with an adequate SLO but no alert rule starts directly at `SYSE.37`; another with a failed job starts at `SYSE.38`.
 

@@ -5,9 +5,9 @@
 
 ### MNT.9:1 - Problem frame
 
-Use this pattern when a selected maintenance intervention is being performed and later decisions depend on what actually happened. The planned bearing has been replaced, but an interruption, substituted part or changed setting can leave the work record inconsistent with the machine.
+Use this method to establish what happened during a maintenance intervention or to perform and record the intervention itself. A later decision can depend on which action took place, on the resulting installed state, or on both. An interruption, substituted part or changed setting can make those questions come apart.
 
-Perform the task within its applicable procedure and operative conditions, preserving the material actions and actual resulting configuration. The first result is evidence of the performed intervention, including its incomplete or changed portions. [MNT.10](21-mnt-10---verify-restored-functioning-after-maintenance.md) establishes restored functioning and [MNT.11](22-mnt-11---hand-back-and-authorize-resumed-use-after-maintenan.md) establishes the hand-back result. A recommendation can answer a request for advice before work begins.
+For a historical question, recover which act, item and time matter, and use the evidence sufficient for that claim. For a commissioned intervention, perform it under the applicable procedure and conditions and record the material actions, any change or interruption, and the resulting configuration. [MNT.10](21-mnt-10---verify-restored-functioning-after-maintenance.md) establishes restored functioning and [MNT.11](22-mnt-11---hand-back-and-authorize-resumed-use-after-maintenan.md) establishes the hand-back result. A recommendation can answer a request for advice before work begins.
 
 ### MNT.9:2 - Problem
 
@@ -23,6 +23,8 @@ The practitioner needs enough freedom to respond to the machine as found while p
 
 Recover the selected task and the operative work conditions before performing it. The applicable equipment procedure supplies the technique, tool use, tolerances and controls. Use this Method to organize the intervention and the account that later users need.
 
+When the order is to establish whether a past replacement occurred, inspect the records or other evidence that can decide it for the item and date in question. A replacement carried out today can meet a new work order. Its completion alone cannot establish when an earlier intervention occurred.
+
 Maintain correspondence between work and actual state. Identify the unit, relevant configuration, selected parts and settings. Where the procedure requires a check before an irreversible or consequential step, perform that check at the point where it establishes the needed condition. A later signature cannot recreate an unobserved state that is no longer recoverable.
 
 When the actual condition differs from the expected one, determine what changes. A harmless access detail may remain within the permitted task. Unexpected damage, a different part interface, a lost protection condition or a larger repair can change competence, permission, time and verification. Use the applicable hold or restoration procedure and return the changed maintenance decision rather than silently extending the scope.
@@ -31,9 +33,11 @@ If work stops, prepare for its continuation. Preserve a condition that the next 
 
 Preserve the facts that later users need. These commonly include material actions, installed or removed part identities, relevant settings and measurements, deviations from the selected work and unresolved conditions. Use the existing maintenance record when it serves that purpose. Applicable regulatory or organizational retention requirements remain in force.
 
+When several performers contribute, reconstruct which actions belonged to this intervention. Match the installed item, the times, the authorized scope and any handoff the next action depended on. An earlier report can supply evidence of the installation a specialist observed. Identify the earlier act and the use of its record today. If the order includes a new independent examination, identify the examination performed and its result. A single entry can answer a question about one act when its meaning and coverage establish that act.
+
 Keep statements at their supported level. “Bearing installed using the applicable procedure” concerns the intervention. “The required flow is restored” needs functioning evidence. “This recurring failure has been eliminated” needs a different horizon and causal basis. Link those later results when they exist without assigning them to a task-completion entry.
 
-Give the tester, operator or maintenance-history user the evidence they need about the work performed and the resulting configuration. If the work is incomplete, state the condition in which it stopped and the condition needed for continuation. A partial account should show which planned work remains unperformed.
+Give the tester, operator or maintenance-history user the evidence they need about the work performed and the resulting configuration. If the work is incomplete, state the condition in which it stopped and the condition needed for continuation. Distinguish known unfinished work from work whose performance the surviving records leave unknown. An observation or a complete record of required acts may decide the issue. A blank field in a partial log can leave either history possible.
 
 ### MNT.9:5 - Archetypal Grounding
 
@@ -51,7 +55,7 @@ Completion targets reward closed tasks and can discourage reporting deviations o
 
 ### MNT.9:7 - Conformance Checklist
 
-Was the selected work performed within its applicable procedure and operative conditions? Were material deviations, interruptions and changed scope handled by the relevant decision? Can the next user recover the actual installed state and supported work claims? Are incomplete portions and unresolved consequences stated?
+What act, item, time or installed state does the recipient need to establish, and what evidence covers it? For work to be performed, check its procedure and operative conditions and how material deviations, interruptions and changes of scope were handled. For a claim about the completed job, identify what establishes each consequential handoff. An omitted act, an undocumented act and a remaining obligation can call for different next actions.
 
 The result concerns performed intervention. Functioning and resumed-use claims require their own support only when those are the selected subsequent results.
 

@@ -84,7 +84,7 @@ Recover the current claim from its participants, subject, operation, result, and
 | Wording | What it foregrounds | What remains unresolved |
 | --- | --- | --- |
 | “The teacher taught Mira to swim.” | Teaching Work, participants, and an intended capability result. | Whether Mira acquired, retained, or transferred the swimming capability; the exact causal contribution of the teaching. |
-| “Mira learned to swim.” | Ordinarily, a changed capability of Mira. | Whether the route included a teacher, self-directed inquiry, practice, tool, peer, environment, or several contributors; the evidence and transfer boundary. |
+| “Mira learned to swim.” | A change in Mira's ability to do the specified swimming Work. | What she could do before and now, under what conditions, and what warrants attributing the change to practice, coaching or another source. |
 | “Mira learned from the manual.” | A source-use or inquiry route may be claimed. | The exact episteme change, capability result, evidence, and whether the manual was merely available or actually used. |
 | “The GAN learned the distribution.” | Source-local shorthand for adversarial training and a resulting model. | What distributional relation was established, which model edition, evaluation/generalization basis, and deployed capability. |
 | “Learning progress increased.” | Some change over a window. | Whether the coordinate is performance, capability evidence, prediction error, information gain, model fit, compression, representation, or something else. |
@@ -120,7 +120,9 @@ No persistent record is required unless another use needs to inspect or reuse th
 
 “A coach taught Lee to swim” opens a teaching-Work claim. Recover coach and Lee as Systems, the dated coaching and practice Work, enacted Method, conditions, and intended result.
 
-“Lee learned to swim” opens a holder-capability claim. Recover target swimming Work, support conditions, observed performance, transfer conditions, and evidence. The capability claim leaves the causal route open. The teaching claim does not prove the capability claim. A later causal question uses `C.28`.
+A supervisor needs to know whether Lee can swim one length of this pool unaided today. A recent observed crossing can settle that question if the stroke, distance, support and conditions match. To say that Lee **learned** to do it during the course, establish what Lee could do at the start. A prior swimming record can supply that comparison. A successful crossing after coaching is compatible with Lee having been able to swim the length beforehand.
+
+To credit a particular teaching Method with the change, examine the alternatives that could explain it under `C.28`. If a new aid and coaching were always used together, evidence can support their combined use while leaving their separate effects open. An assignment in open water needs grounds for transferring the pool result to those conditions.
 
 #### E.10.LRN:5.2 - GAN training
 

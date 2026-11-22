@@ -5,10 +5,10 @@
 > A pattern language for recognizing, representing, shaping, performing, learning and observing rhythmic relations.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Edition date:** 24 October 2026 · [Edition and reuse](28-edition-and-reuse.md)
+- **Edition date:** 22 November 2026 · [Edition and reuse](28-edition-and-reuse.md)
 - **License:** © 2026 Anatoly Levenchuk. Original framework text: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party material retains its own terms.
 
-Start with the passage and the result you need. The Table of Contents locates the Methods, the Readme shows how they can work together, and the Architectural Reference explains their conditions, sources and why they are organized this way. Cite RHY and the relevant Method or Reference section. The Parts group related Methods for reading.
+Start with your question and the rhythmic work it concerns. It may concern a past take, a planned passage or a way of arranging a class of performances. The Table of Contents locates the Methods, the Readme shows how they can work together, and the Architectural Reference explains their conditions, sources and why they are organized this way. Cite RHY and the relevant Method or Reference section. The Parts group related Methods for reading.
 
 Find this framework in the [FPF Library DPF catalogue](../_index.md).
 
@@ -51,7 +51,7 @@ Find this framework in the [FPF Library DPF catalogue](../_index.md).
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | [RHY.5 - Choose a Rhythmic Representation for the Intended Work](18-rhy-5---choose-a-rhythmic-representation-for-the-intended-wo.md) | Stable | syllables; gesture; score; drum stroke. Which representation supports the intended operation? | An intended use and interpreting convention. Use Notational Engineering for general representation work. |
-| 2 | [RHY.6 - Translate a Rhythm without Erasing Needed Distinctions](19-rhy-6---translate-a-rhythm-without-erasing-needed-distinctio.md) | Stable | translation; duration; rest; cycle phase. Which needed distinctions will the translation preserve or leave unresolved? | RHY.5 or an existing representation. Recover a missing distinction from an available source, or state the limit. |
+| 2 | [RHY.6 - Translate a Rhythm without Erasing Needed Distinctions](19-rhy-6---translate-a-rhythm-without-erasing-needed-distinctio.md) | Stable | translation; duration; rest; cycle phase. Which distinctions survive translation? Can the player make a suitable choice with the information available before entry? | RHY.5 or an existing representation. Recover a missing distinction from an available source, or state the limit. |
 | 3 | [RHY.7 - Characterize and Compare Rhythmic Structures for a Stated Question](20-rhy-7---characterize-and-compare-rhythmic-structures-for-a-s.md) | Stable | intervals; complexity; similarity; comparison. Which difference matters to the comparison or decision? | RHY.2/.5 for the compared structures; observation where the claim concerns response. |
 | 4 | [RHY.8 - Specify and Transform Performable Rhythmic Variants](21-rhy-8---specify-and-transform-performable-rhythmic-variants.md) | Stable | variation; transformation; feasibility. How can a variant preserve what the performance needs? | RHY.2/.7 when structure or comparison is unresolved; RHY.9 for its performing arrangement. |
 
@@ -68,7 +68,7 @@ Find this framework in the [FPF Library DPF catalogue](../_index.md).
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | [RHY.12 - Develop Rhythmic Capability through Representative Practice](25-rhy-12---develop-rhythmic-capability-through-representative.md) | Stable | representative practice; whole phrase; balance; assistance. What practice addresses this failure? | Human performing technique; HCD.6/.9/.10 when task, feedback or practice schedule needs design. |
-| 2 | [RHY.13 - Test Transfer, Retention, and Support Dependence of Rhythmic Capability](26-rhy-13---test-transfer-retention-and-support-dependence-of-r.md) | Stable | transfer; retention; support dependence. What can the performer now do under the needed condition? | An adequately specified task and available comparison; HCD.12/.13 for human probe design. |
+| 2 | [RHY.13 - Test Transfer, Retention, and Support Dependence of Rhythmic Capability](26-rhy-13---test-transfer-retention-and-support-dependence-of-r.md) | Stable | transfer; retention; support dependence. What did this person or pair contribute? Which earlier and later performances support transfer, retention or a change in capability? | An adequately specified task and available comparison; HCD.12/.13 for human probe design. |
 | 3 | [RHY.14 - Observe and Compare Rhythmic Performance and Response](27-rhy-14---observe-and-compare-rhythmic-performance-and-respon.md) | Stable | observation; matching; omission; movement; response. What does the available observation establish? | The observation or decision needed. Use FPF C.16 and A.19.CPM for measurement and comparison conditions. |
 
 # Embodied Rhythmics Principles Framework Readme
@@ -77,7 +77,7 @@ Find this framework in the [FPF Library DPF catalogue](../_index.md).
 
 Bring a question from your own rhythmic work. The following cases offer starting points. Use the Table of Contents for a different action, difficulty or result.
 
-Describe the passage, what is planned or has happened, and what you need to find out or do. You can work directly or ask an agent to analyze the passage, give its assessment in the ordinary language of your practice or help design a correction. A short demonstration can communicate a rhythmic relation that a label leaves unclear.
+Describe the passage, the person who will use the result and the decision they face. A bandleader choosing tonight's take may need only the timing of the ending. A player asked to cue the same ending must also know who can see the cue in time to act. For a lesson, identify which choice the learner must make and what the score, teacher or partner may supply. You can work directly or ask an agent to analyse the passage, give its assessment in the language of your practice or help design a correction. A short demonstration can communicate a rhythmic relation that a label leaves unclear.
 
 ### RHY-DIRECT-01 — Recover a duration lost in a change of notation
 
@@ -96,7 +96,7 @@ These cases connect several Methods. Start where the work needs a contribution, 
 - **Situation:** An ornament is easy alone but makes the next shared movement fail.
 - **Question:** What must change while retaining the passage the pair wants?
 - **First useful result or blocker:** A finding about the relation that failed, a suitable correction to try, or a performing contribution that is still missing.
-- **Working reminder:** Locate the difficulty, keep the action that must continue and make the cue usable to the partner. Assess the combination in the whole figure, using an existing observation or a trial when needed.
+- **Working reminder:** Follow the missed transition back to the movement and cue on which the partner depends. Preserve the other actions needed in the figure. An existing observation of the pair can settle whether their change worked. If you need to know who responded to whom, look for the information available to that person and the action they took in the same passage.
 - **Start with:** RHY.1–.4 for the contrast and relation; RHY.8–.11 for a changed variant, allocation, reference or simultaneous combination.
 - **Stop or return:** Keep a usable variant under the conditions in which it worked. Use RHY.12 for a human capability the performer needs to develop and RHY.14 to assess what an observation establishes. If the tempo, passage or partner changes, check whether the change affects a result on which you rely.
 
@@ -105,9 +105,9 @@ These cases connect several Methods. Start where the work needs a contribution, 
 - **Situation:** A learner succeeds with counting, a gesture or a simplified movement but fails in the intended performance.
 - **Question:** Which relation or constituent capability is missing, and which support still matters?
 - **First useful result or blocker:** A finding about performance with the relevant support or without it, a representative exercise and attempt addressing the missing relation, or a prerequisite for other instruction.
-- **Working reminder:** Supply the information needed for the task. For learning, practise the missing relation and return to the whole action. For assessment, identify what the observed conditions and assistance support.
+- **Working reminder:** Identify what the learner is to read, execute or choose. Supply the phrase and support the task requires. If the learner must choose an accent, a cue or a way to observe the difficulty, let them make that choice before showing your solution. Practise the relation in the whole action and identify who supplied each contribution in the observed performance.
 - **Start with:** RHY.2/.5/.6 for the task information, RHY.12 for practice and RHY.13 for the particular transfer, retention or support question.
-- **Stop or return:** Return the finding needed for the teaching or performance question. If the work requires the performer to develop a missing balance or instrumental skill, use appropriate technique instruction. If the later task adds a new demand, distinguish its effect from a loss of previously available ability.
+- **Stop or return:** A suitable earlier performance can already support the intended assignment, including one with the same responsive partner. Use technique instruction for a missing balance or instrumental skill. For a claim about transfer, recover what the learner did under the earlier conditions and what carried into the changed task. To establish a gain, compare what that person could do earlier and later with the relevant support. A claim that particular lessons produced the gain needs grounds for their contribution.
 
 #### RHY-CARD-03 — Make a rhythmic practice available to its next users
 
@@ -139,8 +139,8 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [RHY.Reference:1 - Problem frame - Work with performed rhythm](01-rhy-reference-1---problem-frame---work-with-performed-rhythm.md) (8 lines)
 - [RHY.Reference:2 - Problem - The useful relation disappears between descriptions and actions](02-rhy-reference-2---problem---the-useful-relation-disappears-b.md) (8 lines)
 - [RHY.Reference:3 - Forces - Preserve the relation at an affordable cost](03-rhy-reference-3---forces---preserve-the-relation-at-an-affor.md) (13 lines)
-- [RHY.Reference:4 - Solution - Connect the contributions through their results](04-rhy-reference-4---solution---connect-the-contributions-throu.md) (23 lines)
-- [RHY.Reference:5 - Archetypal Grounding - Connected uses and consequential returns](05-rhy-reference-5---archetypal-grounding---connected-uses-and.md) (32 lines)
+- [RHY.Reference:4 - Solution - Connect the contributions through their results](04-rhy-reference-4---solution---connect-the-contributions-throu.md) (27 lines)
+- [RHY.Reference:5 - Archetypal Grounding - Connected uses and consequential returns](05-rhy-reference-5---archetypal-grounding---connected-uses-and.md) (34 lines)
 - [RHY.Reference:6 - Bias-Annotation - What the examples and sources do not travel with](06-rhy-reference-6---bias-annotation---what-the-examples-and-so.md) (8 lines)
 - [RHY.Reference:7 - Conformance Checklist - Check the combination that is being used](07-rhy-reference-7---conformance-checklist---check-the-combinat.md) (12 lines)
 - [RHY.Reference:8 - Common Anti-Patterns and How to Avoid Them](08-rhy-reference-8---common-anti-patterns-and-how-to-avoid-them.md) (10 lines)
@@ -153,30 +153,30 @@ Generated by the skill's splitter: one file per section, in reading order.
 ### Part I - Find and shape the rhythmic relation
 
 - [RHY.1 - Locate the Rhythmic Difficulty in a Performed Activity](14-rhy-1---locate-the-rhythmic-difficulty-in-a-performed-activi.md) (132 lines)
-- [RHY.2 - Select the Changes and Relations Needed to Understand a Rhythm](15-rhy-2---select-the-changes-and-relations-needed-to-understan.md) (135 lines)
+- [RHY.2 - Select the Changes and Relations Needed to Understand a Rhythm](15-rhy-2---select-the-changes-and-relations-needed-to-understan.md) (139 lines)
 - [RHY.3 - Shape Rhythmic Articulation while Preserving Needed Continuity](16-rhy-3---shape-rhythmic-articulation-while-preserving-needed.md) (146 lines)
 - [RHY.4 - Distinguish and Align Timing Events in Rhythmic Performance](17-rhy-4---distinguish-and-align-timing-events-in-rhythmic-perf.md) (141 lines)
 
 ### Part II - Represent, compare and vary
 
 - [RHY.5 - Choose a Rhythmic Representation for the Intended Work](18-rhy-5---choose-a-rhythmic-representation-for-the-intended-wo.md) (174 lines)
-- [RHY.6 - Translate a Rhythm without Erasing Needed Distinctions](19-rhy-6---translate-a-rhythm-without-erasing-needed-distinctio.md) (176 lines)
+- [RHY.6 - Translate a Rhythm without Erasing Needed Distinctions](19-rhy-6---translate-a-rhythm-without-erasing-needed-distinctio.md) (178 lines)
 - [RHY.7 - Characterize and Compare Rhythmic Structures for a Stated Question](20-rhy-7---characterize-and-compare-rhythmic-structures-for-a-s.md) (162 lines)
 - [RHY.8 - Specify and Transform Performable Rhythmic Variants](21-rhy-8---specify-and-transform-performable-rhythmic-variants.md) (165 lines)
 
 ### Part III - Arrange and coordinate performance
 
-- [RHY.9 - Arrange Rhythmic Actions and Timing Cues](22-rhy-9---arrange-rhythmic-actions-and-timing-cues.md) (142 lines)
-- [RHY.10 - Establish a Shared Rhythmic Reference and Coordinate Phase, Tempo, and Correction](23-rhy-10---establish-a-shared-rhythmic-reference-and-coordinat.md) (160 lines)
-- [RHY.11 - Coordinate Simultaneous Rhythmic Layers](24-rhy-11---coordinate-simultaneous-rhythmic-layers.md) (195 lines)
+- [RHY.9 - Arrange Rhythmic Actions and Timing Cues](22-rhy-9---arrange-rhythmic-actions-and-timing-cues.md) (143 lines)
+- [RHY.10 - Establish a Shared Rhythmic Reference and Coordinate Phase, Tempo, and Correction](23-rhy-10---establish-a-shared-rhythmic-reference-and-coordinat.md) (164 lines)
+- [RHY.11 - Coordinate Simultaneous Rhythmic Layers](24-rhy-11---coordinate-simultaneous-rhythmic-layers.md) (199 lines)
 
 ### Part IV - Practise, test and observe
 
-- [RHY.12 - Develop Rhythmic Capability through Representative Practice](25-rhy-12---develop-rhythmic-capability-through-representative.md) (184 lines)
+- [RHY.12 - Develop Rhythmic Capability through Representative Practice](25-rhy-12---develop-rhythmic-capability-through-representative.md) (186 lines)
 - [RHY.13 - Test Transfer, Retention, and Support Dependence of Rhythmic Capability](26-rhy-13---test-transfer-retention-and-support-dependence-of-r.md) (176 lines)
-- [RHY.14 - Observe and Compare Rhythmic Performance and Response](27-rhy-14---observe-and-compare-rhythmic-performance-and-respon.md) (182 lines)
+- [RHY.14 - Observe and Compare Rhythmic Performance and Response](27-rhy-14---observe-and-compare-rhythmic-performance-and-respon.md) (184 lines)
 
 ### Edition and reuse
 
-- [Edition and reuse](28-edition-and-reuse.md) (8 lines)
+- [Edition and reuse](28-edition-and-reuse.md) (10 lines)
 - [RHY.Edition:End](29-rhy-edition-end.md) (1 lines)

@@ -6,7 +6,7 @@
 
 ### CMP.11:1 - Problem frame
 
-**Use this when** repeated attempts to accelerate a computation leave a question about what any algorithm could achieve under the available access. You can construct different admitted inputs that require different answers but remain indistinguishable before enough queries, comparisons, communication or stored information.
+**Use this when** attempts to accelerate a computation leave a question about what any algorithm could achieve with the available observations. State what an input may be and what output the recipient will accept. A useful limit follows when a procedure can still see the same query replies on inputs for which no one answer works.
 
 The gain is a lower bound tied to an explicit computational model, or a concrete change of access or requested answer that escapes that bound. This can stop fruitless optimization, reveal a needed index or observation, and separate an intrinsic restriction of the chosen model from a poor implementation.
 
@@ -45,17 +45,19 @@ State whether the bound concerns worst-case or expected cost, deterministic or r
 
 #### CMP.11:4.2 - Construct alternatives that the available observations have not separated
 
-Describe a transcript: the sequence of queries and replies, or messages and observations, available to the procedure. Consider all inputs still consistent with it. If two of those inputs require incompatible answers, a deterministic procedure seeing that transcript cannot correctly finish on both.
+A transcript is the sequence of replies, messages and observations available to the procedure at its next choice. Consider the admitted inputs consistent with that transcript. For an exact value, two such inputs with different values prevent a deterministic procedure from returning a correct value on both. For a choice among several acceptable outputs, a single output returned at this point must be acceptable on every input still possible.
 
 Construct those alternatives rather than simply counting unknown data. For a bit query, place a decisive difference at an unread position. For a comparison algorithm, retain different orders compatible with the observed comparisons. For a communication or streaming algorithm, find different earlier inputs that lead to the same message or stored state but require different outputs after one common continuation.
 
-Adapt the construction to the permitted answer. Distinct inputs do not need separate transcripts when the same answer is acceptable for both. A common approximation interval or permitted error can therefore weaken the lower bound.
+For a guaranteed choice, take the intersection of the acceptable output sets for the entire group of possible inputs. Suppose three devices accept formats {A,B}, {B,C} and {A,C} respectively, and the available replies leave all three devices possible. Every pair accepts a common file format. No format works for all three. A timely reply that separates the third device from the first two suffices for this choice. Send B in the first group and A for the third. A device identification is unnecessary. If risk is allowed, use its specified error criterion and probability assumptions.
+
+An unused reply pattern entails no obligation to return an answer for the stated input family. If it actually arrives, check how the reply was read and whether the input promise holds. For a current reachable transcript, an available common output can finish the task. To deliver an algorithm for the entire family, give one procedure that reaches a decision on every admitted input within the promised budget. Before it stops it may request another permitted observation. Whenever it stops, the output must work for every input compatible with the transcript at that stopping point. Its existence as a permissible value on each input alone gives no running-time or computability result.
 
 #### CMP.11:4.3 - Turn indistinguishability into a resource bound
 
 Use the form that fits the access:
 
-- **Adversary:** answer queries while retaining incompatible possible inputs. Show how many queries are needed before no such pair remains.
+- **Adversary:** for every allowed deterministic query strategy limited to the proposed budget, exhibit a reachable stopping point, or follow its queries until it uses up the budget, with no common acceptable output for the remaining inputs. Two inputs requiring different exact values are sufficient. Failure of a particular querying strategy establishes a limit for that strategy.
 - **Counting:** if each observation has at most b possible replies, q observations have at most `b^q` transcripts. If N input classes require mutually different outputs, then `b^q≥N`, giving `q≥log_b N` for a worst-case depth bound.
 - **State or message collision:** with fewer than N distinguishable retained states or messages, two of N necessary input classes collide. A shared continuation then forces an error.
 
@@ -111,7 +113,7 @@ A practical consequence is to compare representations and access before spending
 
 One agent has an n-bit string x and sends one fixed-length binary message to another agent holding y. The receiver must decide whether x=y with no error. If two different strings x and x' produce the same message, take the common receiver input y=x. The receiver sees identical information in both cases but must answer differently. All `2^n` strings therefore need distinct messages, requiring at least n bits. Sending x achieves it.
 
-If public independent random masks and an error probability are admitted, the task changes. For each mask r, send the parity of the positions where both x and r are one; the receiver compares with its parity from y. Equal strings always match. For unequal strings, choose one differing position: toggling its independent mask bit pairs masks with opposite comparison outcomes, so the parities match with probability 1/2. After k independent masks, falsely accepting equality has probability `2^-k` and the message has k bits. The shared random masks and local parity-computation cost are explicit resources, not information transmitted by the message.
+If a one-sided error is allowed, fix the two inputs independently of the public random choices. In each of k rounds the agents share a fresh uniform n-bit mask with independent fair bits. The sender transmits the parity of x on the selected positions. The receiver compares it with the parity of y on those positions. A mismatch certifies inequality. For a fixed unequal pair, condition on all mask bits except one where the strings differ. The remaining fair bit makes the parities agree with probability 1/2. Equal strings always pass. An unequal pair passes all k independent rounds with probability `2^-k`. This protocol uses k message bits, kn shared random bits and local parity computations. If inputs may be chosen after seeing the masks, the per-pair bound no longer follows. If sending x itself fits the budget, the agents can obtain an exact answer without random choices.
 
 ### CMP.11:6 - Bias-Annotation
 
@@ -121,7 +123,7 @@ The word “impossible” can obscure the condition that makes a lower bound tru
 
 - Inputs, promises, observations, preprocessing and required outputs are specified.
 - The cost and error claim has explicit worst-case, expected or probabilistic quantifiers.
-- Indistinguishable alternatives are admitted inputs requiring incompatible answers.
+- For an information lower bound, identify a reachable set of replies where the procedure must answer and the compatible inputs have no common acceptable output. A cost bound for computing or writing a known answer needs its own argument. A lower bound for every allowed procedure covers the choices it can make before it must answer. An ambiguous intermediate reply alone leaves it free to ask another permitted question.
 - The adversary, counting or collision argument covers adaptive behavior allowed by the model.
 - Randomized claims use an argument valid for randomization and the stated cost convention.
 - The conclusion names both its restriction and a useful continuation or unresolved gap.
@@ -131,7 +133,7 @@ The word “impossible” can obscure the condition that makes a lower bound tru
 | Tempting move | Failure | Useful repair |
 | --- | --- | --- |
 | Generalize from a slow implementation | Another algorithm may avoid its work. | Prove a requirement for every admitted transcript or procedure. |
-| Count distinct inputs without considering acceptable answers | Several inputs may share one output. | Count output-distinct classes. |
+| Count distinct inputs or check only pairs with a common choice | Several inputs may share an output, and different pairs may rely on different outputs. | Test whether the whole group can accept one answer. Use counting when the required outputs really are distinct. |
 | Supply an inconsistent adversary | No admitted input could produce its replies. | Retain a nonempty compatible input family. |
 | Fix randomness, then choose a different hard input for each seed | This can miss a successful randomized algorithm. | Use one prior input distribution or a valid coupled argument. |
 | Ignore input-dependent preprocessing or stronger access | The algorithm already acquired the supposedly missing information. | Charge or expose that resource and restate the model. |

@@ -21,7 +21,7 @@ A participant may have grounds to act even when a novel venture has no complete 
 
 #### ECO.4:4.1 - Recover the missing contribution and the reason it is missing
 
-Identify the venture step being assessed and what it requires, such as an order, access, finance, capability, supply or permission. Use an applicable OPS or MA account of production and resources. Establish separately what is available, what has been offered or reserved and what a party has bound itself to supply.
+Start at the delivery or commitment the recipient is asking about. Work backward to what must already be available when each party acts. A lender may need a signed order by the date funds are released. The customer may need a demonstration before signing. This identifies two different acts, the producing work, and the conditions under which each result can serve the next party. Identify who can supply an order, access, funds, capability or permission where it is needed. Use an applicable OPS or MA account for production and resources. Keep what is available, what has been offered or reserved and what a party has bound itself to supply distinct.
 
 If a contribution is unavailable, establish what prevents it. A record may already identify the reason. Ask the party when its understanding, decision or account is needed. For an unclear proposal, use EXD to supply a relevant explanation. For disagreement, consider whether different terms or participants could help. For missing means or capability, establish what can be obtained or developed. A supported finding of the obstacle can answer a diagnostic question.
 
@@ -29,13 +29,15 @@ If a contribution is unavailable, establish what prevents it. A record may alrea
 
 For each material commitment, identify what is promised, by whom, to whom, when it can take effect and on what terms it can be released or withdrawn. Use the effective agreements where they supply these facts. Check the party’s ability to supply the contribution and its authority to commit it.
 
-Trace which commitments depend on others. If the supplier needs payment to start and the investor pays only after delivery, there is no first action unless someone can fund the start or an available mechanism can satisfy the conditions together. For simultaneous commitments, establish the parties’ resources, authority and means of execution. If those conditions fail and another design is needed, consider a deposit, limited funded trial, staged supply, reservation, another provider or a smaller result. Compare who bears the exposure and what would be lost if the venture stops.
+Trace which commitments depend on others. If the supplier needs payment to start and the investor pays only after delivery, there is no first action unless someone can fund the start or an available mechanism can satisfy the conditions together. For simultaneous commitments, establish the parties’ resources, authority and means of execution. If those conditions fail and another design is needed, consider a deposit, limited funded trial, staged supply, reservation, another provider or a smaller result. Establish whether a smaller step supplies a prerequisite for the existing order or would change what the customer receives. A change of the promised result needs the customer's agreement. Compare who bears the exposure and what would be lost if the venture stops.
 
 Use a demonstration when it can answer a needed question, such as whether a process handles a customer’s sample or a service fits the customer’s work. Establish any funding, order or authority from the relevant terms and commitments.
 
 #### ECO.4:4.3 - Commit only what the combination can support
 
 Check combined obligations against available resources and timing. A provider can be overcommitted even when each obligation fits separately. Use OPS.13 when the feasibility account is missing, and FIN.10 when financial terms are needed.
+
+Find out who controls the choice of service, quantity and date. When a coordinator may schedule two orders, one jointly feasible schedule can support that plan. When each buyer may call independently, include their permitted coincidences. For a guarantee covering every permitted request, if the provider must choose before the requester is revealed, its action must still work whichever eligible request arrives. A schedule chosen afterwards for each buyer can hide a conflict. For a stated service probability use the demand and service assumptions on which that promise depends.
 
 Report the attainable combinations, the conditions that remain open or the reason the venture cannot proceed. If a decision is needed, the party authorized to make it can choose a combination, keep a conditional plan or stop. When asked for advice, give the recommendation and its grounds to the intended recipient. For a proposed next step, identify what releases it and who bears the remaining exposure. Reassess an affected conclusion when contributions, understanding, alternatives or dependencies change. Seek further evidence when its likely value to the requested result justifies the inquiry.
 
@@ -61,7 +63,7 @@ A founder may interpret interest as agreement, and a technical specialist may tr
 
 ### ECO.4:7 - Conformance Checklist
 
-Which contributions are available, and under what conditions? Can an attainable first action or a feasible simultaneous execution satisfy the dependencies? If neither works, identify the obstruction. Distinguish authority, capacity, resources and willingness when they affect the finding or the proposed next step.
+What did the recipient ask the parties to undertake? For a first action, identify what enables it. To establish that several commitments can take effect, show how their conditions can be met together. To promise the resulting deliveries, also establish that resources, powers and timing cover what each party may still choose. If that result is still open, identify what the first action establishes and what remains to be secured. If the evidence rules it out, give the obstruction and the range of arrangements it excludes.
 
 ### ECO.4:8 - Common Anti-Patterns and How to Avoid Them
 

@@ -5,7 +5,7 @@
 > Methods for constructing mathematical representations of a question, connecting unknown relations, observations and available actions, and revising the resulting models.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Version:** 24 October 2026
+- **Version:** 22 November 2026
 - **Status:** Eternal alpha: a growing language of general modeling methods.
 - **License:** © 2026 Anatoly Levenchuk. Original framework text: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Cited sources retain their own terms.
 - **Publication:** [FPF Library repository](https://github.com/ailev/FPF)
@@ -91,7 +91,7 @@ The methods in this language work together through the results they produce. A f
 
 Enter where the difficulty occurs and reuse results you already have. If the question is not yet mathematical, FPF B.5.FM helps choose participants and propose relations; B.5.TU helps interpret an unfamiliar theory. C.29 connects the construction with what it represents. For example, a cart's total distance does not determine its final position. Signed displacements and a starting position answer that question on a straight path; a question about visits along the way needs further information. Once the needed objects are recognizable, MMP.10 expresses their constraints; MMP.11 constructs a family when a relation remains unknown.
 
-The worked connections below show how an intermediate result changes the next operation. Use the Table of Contents for other questions and the pattern bodies for the methods, prerequisites and further examples. FPF supplies shared reasoning methods; Mathematical Thinking supplies reusable mathematical constructions.
+For an entry that resembles your situation, ask what result its method can deliver and what you were asked to supply. A worked connection can give that whole answer or a needed contribution to it. If constructing the model is your task, first try choosing a unit, an admissible variation and a way to distinguish two consequential cases from the terms of your own problem. Then compare that reasoning with the example. The Table of Contents leads to other operations. FPF supplies shared reasoning methods and Mathematical Thinking supplies mathematical constructions.
 
 You can ask an assisting agent: “Explain the result and give feedback in the language of my work, without framework jargon.”
 
@@ -124,7 +124,7 @@ B.1.5.CM:4.1 helps examine the proposed composition: what each method contribute
 
 - **Situation:** A fitted model produces an answer, but ambiguity in the unknowns or in the observing procedure may change what that answer supports.
 - **Question:** Which conclusion do the records warrant, and what must be revised when a consequential assumption fails?
-- **First useful result or blocker:** An identifiable target and an inferential result with a stated meaning, or the unresolved difference that still changes its use.
+- **First useful result or blocker:** A conclusion warranted by the records for the intended use. This can be an estimate of a determined target, a bound sufficient for the decision despite ambiguity, or a difference the available records leave unresolved.
 - **Start with:** [MMP.7](16-mmp-7---construct-a-probability-model-of-the-recorded-data.md) for the record law, [MMP.12](17-mmp-12---formulate-an-inverse-problem-and-choose-whether-and.md) for recovery and ambiguity, [MMP.13](18-mmp-13---infer-unknowns-statistically-under-a-stated-observa.md) for inference, and [MMP.14](19-mmp-14---find-and-repair-a-mathematical-model-s-failed-predi.md) when a prediction needs repair.
 - **Stop or return:** Use a sufficient result under its stated assumptions. Additional diagnostics or observations are needed only when they can change the warranted use. A changed target, recording rule or dependence returns to the contribution it affects.
 
@@ -132,7 +132,7 @@ B.1.5.CM:4.1 helps examine the proposed composition: what each method contribute
 
 **1. Construct what can be observed.** Suppose two nonnegative contributions, u and v, produce only a total T=u+v in a measuring procedure. The task is to determine whether T is below 10.5 in the stated units. Initially the measuring practice supplies the model y_i=T+e_i for nine complete readings, with independent normally distributed errors of mean zero and known standard deviation 3. Their observed mean is 8.
 
-MMP.7 turns that account into the joint law of the records. If a procedure instead discards readings outside a reporting range, its probability law must condition on that selection before the same inference can be attempted. MMP.11 is needed earlier if the relation between the unknowns and the observations has yet to be constructed.
+MMP.7 turns that account into the joint law of what the measuring procedure records. If it samples until it has enough in-range readings and supplies only those values, use the included-reading law under those sampling conditions. If it makes nine known attempts and retains four values plus five out-of-range indications, those indications also bear on T. Include the counts or flags and the reporting rule. An unexplained blank may have another cause. MMP.11 is needed earlier if the relation between the unknowns and the observations has yet to be constructed.
 
 **2. Ask what the law can distinguish.** MMP.12 examines changes that leave the records unchanged. Replacing (u,v) by (u+h,v-h), while both remain nonnegative, leaves T and the record law unchanged. No increase in the number of these total readings identifies the two contributions separately. The present target T remains identifiable, so its estimation need not wait for that unresolved decomposition. A question about u alone would require a restriction, another observation relation or a sufficient bound.
 
@@ -154,7 +154,7 @@ The same joins support other observing procedures. Their general contribution is
 
 - **Situation:** A model omits internal distinctions, and reconstructing them may cost more than the requested answer needs.
 - **Question:** Which consequences are shared by the remaining possibilities, and do they already decide the question?
-- **First useful result or blocker:** A bound that settles the stated threshold, or the distinction whose unresolved value still changes the answer.
+- **First useful result or blocker:** The conclusion supported despite the omitted detail, or the remaining possibilities that lead to different answers. In the example below, the question asks whether a total falls below a threshold.
 - **Start with:** [MMP.9](23-mmp-9---derive-a-reduced-mathematical-model-of-state-evoluti.md) for lost evolution information; [MATH.20](../math/23-math-20---bound-a-mathematical-unknown-by-comparable-constru.md) for bounds; FPF C.29 for subject interpretation and C.11.DUA when further inquiry is a live choice.
 - **Stop or return:** Use a settled answer under the supplied premises. A changed threshold, observation, law or time horizon returns to the affected comparison.
 
@@ -277,13 +277,13 @@ The example's expected losses are conditional on its supplied class, probabiliti
 
 #### Worked connection for MMP-REPLACE-AND-COUPLE
 
-Two components contribute distinct amounts u and v to a total, in the same units and over the same interval. MMP.18 establishes that the required combination is u+v and that neither contribution already contains the other. MMP.17 selects surrogates for these two amounts on the input region being used.
+Two components contribute distinct amounts u and v to a total, in the same units and over the same interval. The stipulated balance counts each amount once. Under that premise the required combination is u+v. In your own application establish which transfers enter which component accounts and whether one already includes a contribution to the other (MMP.18). MMP.17 selects surrogates for these two amounts on the input region being used.
 
 For the present input, suppose their estimates are 0.42 and 0.48, with supported absolute error bounds 0.03 and 0.04. The resulting total is in [0.83,0.97]. It is below a threshold of 1 throughout that interval. No independence assumption is needed for this worst-case sum bound. Errors measured only on a few training cases would not, by themselves, supply the stipulated bounds.
 
 Now lower the threshold to 0.94. The interval no longer settles whether the total is below it. If obtaining the second component from its source model is worthwhile, and that calculation returns 0.46 with absolute error at most 0.001, retaining the first surrogate gives [0.849,0.911]. That narrower combination settles the new question without replacing both surrogates.
 
-A different question can instead change what the interface must carry. A time of threshold crossing needs information about evolution within the interval; two final amounts do not supply it. MMP.18 then returns the missing temporal contribution, and MMP.17 changes the response that a replacement must preserve. More accurate final amounts alone would answer the wrong question.
+A change of question can change what the two models must exchange. Suppose the recipient now asks when the total first crosses a threshold. With only the two final amounts, an early transfer and a late transfer can fit the same report. If an established law fixes the change within the interval, use it with the reported amounts. If different crossing times remain possible, MMP.18 locates the missing temporal information and MMP.17 changes the response a replacement must preserve.
 
 ### MMP-REPRESENT - Why does counting the records overcount the assignments?
 
@@ -304,7 +304,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 - [MMP.Reference:1 - Problem frame - Make a mathematical question useful](01-mmp-reference-1---problem-frame---make-a-mathematical-questi.md) (14 lines)
 - [MMP.Reference:2 - Problem and forces - Choose what the model must retain](02-mmp-reference-2---problem-and-forces---choose-what-the-model.md) (20 lines)
-- [MMP.Reference:3 - Solution - Connect the contributions the question needs](03-mmp-reference-3---solution---connect-the-contributions-the-q.md) (80 lines)
+- [MMP.Reference:3 - Solution - Connect the contributions the question needs](03-mmp-reference-3---solution---connect-the-contributions-the-q.md) (86 lines)
 - [MMP.Reference:4 - Archetypal Grounding - A report, an instruction and a changed question](04-mmp-reference-4---archetypal-grounding---a-report-an-instruc.md) (20 lines)
 - [MMP.Reference:5 - Conformance Checklist - Can the result do its intended work?](05-mmp-reference-5---conformance-checklist---can-the-result-do.md) (13 lines)
 - [MMP.Reference:6 - Common Anti-Patterns and How to Avoid Them](06-mmp-reference-6---common-anti-patterns-and-how-to-avoid-them.md) (10 lines)
@@ -318,7 +318,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 - [MMP.10 - Construct and Revise a Mathematical Constraint Formulation](12-mmp-10---construct-and-revise-a-mathematical-constraint-form.md) (199 lines)
 - [MMP.11 - Construct a Mathematical Model Family from Known Relations](13-mmp-11---construct-a-mathematical-model-family-from-known-re.md) (210 lines)
-- [MMP.8 - Formulate Information-Dependent Choices Mathematically](14-mmp-8---formulate-information-dependent-choices-mathematical.md) (204 lines)
+- [MMP.8 - Formulate Information-Dependent Choices Mathematically](14-mmp-8---formulate-information-dependent-choices-mathematical.md) (206 lines)
 - [MMP.8.SD - Construct a Sequential Decision Model from Information and Consequences](15-mmp-8-sd---construct-a-sequential-decision-model-from-inform.md) (296 lines)
 
 ### B. Infer, distinguish and revise
@@ -333,9 +333,9 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 ### C. Change the model while retaining its use
 
-- [MMP.9 - Derive a Reduced Mathematical Model of State Evolution](23-mmp-9---derive-a-reduced-mathematical-model-of-state-evoluti.md) (231 lines)
+- [MMP.9 - Derive a Reduced Mathematical Model of State Evolution](23-mmp-9---derive-a-reduced-mathematical-model-of-state-evoluti.md) (233 lines)
 - [MMP.17 - Construct a Surrogate for Selected Model Responses](24-mmp-17---construct-a-surrogate-for-selected-model-responses.md) (272 lines)
-- [MMP.18 - Couple Models with Compatible Exchanges and Scales](25-mmp-18---couple-models-with-compatible-exchanges-and-scales.md) (251 lines)
+- [MMP.18 - Couple Models with Compatible Exchanges and Scales](25-mmp-18---couple-models-with-compatible-exchanges-and-scales.md) (253 lines)
 - [MMP.20 - Obtain a Computable Continuation When Physical Constraints Change](26-mmp-20---obtain-a-computable-continuation-when-physical-cons.md) (375 lines)
 
 ### D. Compare and construct ways of working mathematically

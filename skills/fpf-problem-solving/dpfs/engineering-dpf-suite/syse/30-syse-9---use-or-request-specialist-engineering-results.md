@@ -4,16 +4,11 @@
 
 ### SYSE.9:0 - Use This When
 
-Use this pattern when an engineering decision needs a result from another professional practice, but the
-project is asking for a document, meeting, review, or job title instead of saying what the decision needs.
-Typical requests such as *get architecture approval*, *send it to safety*, or *ask the electrical team* leave
-the specialist question, scope, evidence, and later use unclear.
+Use this pattern when an engineering decision needs a result from another professional practice. A request such as *ask the electrical team* can leave the necessary claim, scope and use unclear. Recover the requested result and any separately promised document, meeting or performance. An existing specialist judgement can answer the technical question while a required signed report or session remains due.
 
 Start with the receiving engineering decision and inspect any relevant specialist results already available. Return
 any useful answer the evidence supports, with the limit that matters; a qualified judgement or narrower engineering
-conclusion can complete this use. A missing result for a stronger claim becomes a request only when its
-obtainable contribution warrants the whole acquisition burden through A.15.9 and C.11.DUA. Bound a selected
-request by the question, configuration, evidence, acceptance, authority, and intended use.
+conclusion can complete this use. Compare the contribution and full acquisition burden of a discretionary inquiry through A.15.9 and C.11.DUA. If the order specifies a new test, identify its subject, conditions and required return. A previous result may answer the engineering question while that test remains due until performed or the order is changed by the authorized party.
 
 For a low-consequence exchange, the useful answer or selected request may fit in two ordinary sentences. When
 later reliance needs several contributions recovered together, keep a **professional-contribution account**
@@ -105,8 +100,7 @@ input, or an applicable Method, together with the decision that cannot yet proce
 
 ### SYSE.9:4 - Solution
 
-Use any specialist result already available within the scope it supports for the engineering decision. Select a new
-contribution only when its obtainable value warrants acquisition. For that branch, bound the request, retain
+Use an available specialist result within the scope it supports. For a discretionary acquisition, compare its attainable contribution with the burden. For a commissioned performance, use the terms of the order. For either acquisition, bound the request, retain
 the supplier's Method, enable a capable Agent, and assess the return before relying on it.
 
 #### SYSE.9:4.1 - Perform the Move
@@ -118,11 +112,8 @@ the supplier's Method, enable a capable Agent, and assess the return before rely
    and C.11.DUA to compare its attainable contribution with preparation, qualification, supplier Work,
    delivery, interpretation, delay, displaced work, and alternatives. For a selected request, name the
    bounded calculation, constraint, objection, observation, or other result that supplies that contribution.
-   A competent specialist review may already supply this answer. Use that return; reconstruct only a missing
-   connection that can change its use.
-3. **Bound the result.** Name its subject and the applicability dimensions that could change the answer. For a
-   System claim these may include the actual or intended System, configuration, part, environment, affected
-   System, use, interval, scale, and assumptions.
+   A competent specialist review may already answer the technical question. Use it and reconstruct only a consequential missing connection. If the client also commissioned a fresh inspection of this unit, deliver its result or obtain an authorized change to that obligation.
+3. **Bound the contribution without supplying the answer entrusted to the specialist.** Identify the subject, receiving action, constraints and evidence that decide whether the return is usable. A request to apply a specified calculation can state the model and inputs. When the specialist must develop the calculation, give the system, operating uses and available evidence from which they can select parts, interactions and model distinctions. For a request about the installed configuration, name the configuration or establish the choices still possible. Do not silently replace it with the easiest unit to inspect.
 4. **Retain the supplier's Method and evidence.** For a selected acquisition, the specialist practice
    identifies the method and source used, any shared source dependency that affects reliance, inputs, observations, uncertainty, and non-use boundary. A missing
    Method limits the promised result; investigating it is another acquisition choice under step 2.
@@ -140,7 +131,7 @@ the supplier's Method, enable a capable Agent, and assess the return before rely
    Systems, or assurance—to reconsider the affected requests, assignments, Method uses, results or engineering
    decisions.
 
-Step 2 can finish with the supported answer; steps concerning a new request or Work open only for that branch.
+Step 2 can finish a request for a technical answer on sufficient existing evidence. Carry through any separately commissioned performance.
 Several Agents may perform specialist Work concurrently and return partial results iteratively. A title cannot
 replace a requested result, an assignment cannot replace Work, and a produced result cannot replace its
 assessment and use.
@@ -159,9 +150,7 @@ Use an ordinary sentence for a small reversible exchange. Where further reliance
 | receiving disposition | Accepted reliance, rejection, requested repair, alternative contribution, or blocker and the decision or Work it changes. |
 | reopen condition | Later source, configuration, use, capability, authority, conflict, or evidence change and the affected claims or decisions to reconsider. |
 
-Several requests may serve one decision, but each result retains its own subject, Method, performer, authority
-boundary, evidence, and use. The account is an episteme for reasoning and coordination; it is not the Work or the
-world-side relations it describes.
+Several requests may serve one decision. If the returns are premises for a common conclusion, show how their assumptions, configurations, interfaces and permitted variations fit together. An independent professional judgement can share an underlying observation with another judgement. Where independent measurements are required, establish their independence from the relevant error. Preserve each result's subject, Method, performer and authority, and use a sufficient direct answer when it settles the order.
 
 #### SYSE.9:4.3 - What Changes in Practice
 
@@ -284,15 +273,12 @@ field evidence is not affordably available, state the expert estimate and its un
 Check the conditions on which the claimed result depends. If the decision uses an existing specialist result, establish its applicability. Check the conditions for a new request or newly performed Work when that is the claim.
 
 - [ ] The receiving decision, deciding Agent, relying Work, and consequence are named.
-- [ ] A useful available answer and its material limit can finish the use, including a return from an adequate
-      existing specialist review. Any new request has an obtainable contribution worth its whole acquisition
-      burden and states a bounded result rather than a title or document.
+- [ ] An adequate existing result can finish the question it answers. A discretionary acquisition has an obtainable contribution worth its whole burden. A specific commissioned performance is identified and completed, or the authorized party changes the commission.
 - [ ] Subject, configuration, environment, interval, assumptions, and non-use boundary prevent application to the
       wrong case.
 - [ ] A selected acquisition retains the supplier's Method, inputs, expected evidence, and acceptance conditions,
       or names the missing basis without automatically assigning an inquiry.
-- [ ] The performing Agent has a supported capability envelope and the needed access and resources; assignment,
-      permission, authority, commitment, and responsibility remain separate claims.
+- [ ] Planned reliance on a performer has a supported capability envelope, access and resources. Evidence of a completed performance identifies the occurrence at the reach of the claim. Attribution to a named performer requires grounds for who did it. Assignment, permission, authority and commitment each have their own grounds.
 - [ ] Dated Work, enacted Method, performer, production relation, and returned result are recoverable when the
       decision consequence requires them.
 - [ ] The receiver accepts within a reliance limit, rejects, requests repair, selects another contribution, or
@@ -336,8 +322,7 @@ not merge the contributing practices into one discipline.
 
 Professional culture and project Work remain different structures. A discipline may vary, select, and retain
 new Methods over years. A project may select one of those Methods for intended use before it is enacted. Claim
-actual project use only after capable Agents perform dated Work under the needed enabling arrangements and enact
-the Method; accepted results and later evidence separately support continued use.
+   actual project use when evidence identifies the Method enacted in dated project Work. Establish the performer's capability, enabling arrangements and any authorization separately when the receiving decision relies on them. Accepted results and subsequent evidence can support continued use.
 
 ### SYSE.9:11 - SoTA and Source Use
 

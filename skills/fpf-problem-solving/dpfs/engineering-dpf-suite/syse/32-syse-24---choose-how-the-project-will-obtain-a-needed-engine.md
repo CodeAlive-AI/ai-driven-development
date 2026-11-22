@@ -11,7 +11,7 @@ yet the other ways of obtaining the same result have not been described on a com
 Start by naming the result and its kind. It may be, for example, an engineered System, one usable System
 configuration, a reusable Method or `MethodDescription`, access to a capability, performed provider Work, or an
 engineering episteme. State who will use or rely on the result, what acceptance means for that use, and when the
-result must exist or the Work must occur.
+result must exist or the Work must occur. If the receiver can use a result already held or obtain it on existing terms within the required period, use that provision and complete any remaining acceptance or receiving work. Compare sourcing arrangements when a choice is still due.
 
 The first useful comparative result is a written comparison of at least two complete arrangements that would produce,
 perform, transfer, or make the same result available. One `C.11` `ChoiceResult` then says: choose one arrangement
@@ -37,9 +37,7 @@ its supported basis; do not invent a rival to satisfy a table. Its feasibility m
 obtaining choice remains but no second comparable arrangement can yet be constructed, return the precise
 comparison gap rather than claim that the sole described arrangement is best.
 
-Use `SYSE.5` when the unresolved question is only how functions could be borne. Use `SYSE.3` to develop a
-retained arrangement's first unsupported realization branch, or earlier when that branch must be understood
-to compare its feasibility. Use
+Use `SYSE.5` when the unresolved question is only how functions could be borne. Use `SYSE.3` to establish how the retained arrangement can be realized. A missing condition can concern one branch or the way several branches must work together. Resolve it during comparison if it could change the choice. Use
 `SYSE.8` when the project is designing an offering and the provider arrangement that will sustain another
 System's use. Specialist decisions—for example, commercial, financial, legal, governance, organization, operations, asset,
 and capability-development decisions—remain with their specialist practices.
@@ -120,10 +118,7 @@ These tensions recur when projects compare ways to obtain the same result.
 
 State the result being sought and its kind; the receiving use and affected
 Systems; the configuration, operating conditions, horizon, and acceptance claims; the deciding Agent and the
-commitment it may authorize; and the latest useful decision date. If the proposed result alternates among owning a
-product, accessing it, performing Work, developing capability, and possessing an account, select the result
-that changes this commitment. The other objects may be needed inside an arrangement, but they are not
-interchangeable success conditions.
+commitment it may authorize; and the latest useful decision date. Determine whether the project needs ownership, access, performed work, a reusable account, or continuing capability. If the commission includes delivery of a working configuration now and the maintenance team’s ability to adapt it after a change, compare ways that provide both. The commissioning test can establish that the configuration works. For the second commitment, establish which adaptation decisions and operations the maintenance team can perform with the support it will have. A qualified prior performance or an applicable rule may cover the changed configurations. If it does not, identify the still-open difference and obtain the evidence the decision needs. Carry out a newly commissioned demonstration if the order requires one. Identify any remaining supplier work.
 
 Make acceptance operational enough to work backwards from it. Identify what the receiver must be able to do
 with the result, which important conditions it must cover, and what would show that the received subject is the
@@ -285,9 +280,7 @@ do not count the same burden twice.
 
 Use `OPS.10:4` or a suitable domain operating Method when capacity or service feasibility is load-bearing.
 Use a suitable result already available. If obtaining one is warranted, request the result the comparison needs, such as a finite schedule for the supplied readiness times and joint
-resources, an infeasibility bound, or a qualified service forecast. A total-load bound is necessary but does not
-establish that precedence and simultaneous-resource conditions can be met. A mean forecast is not a hard
-deadline guarantee. Use the returned result under its conditions and retain the operating authority separately.
+   resources, an infeasibility bound, or a qualified service forecast. A required workload above the available capacity can exclude a plan. A total within capacity can still hide incompatible prerequisites, time windows or simultaneous needs. If claimants choose independently, establish which combinations the provider must accommodate and which information is available before it commits a resource. Use the returned result under its conditions and retain the operating authority separately.
 
 The same reasoning applies to access and continued support. Equipment available on Monday is not usable for a
 Friday task if calibration expires on Thursday; an export permission that ends at termination may not allow
@@ -371,7 +364,7 @@ when it returns.
 | --- | --- |
 | Can required operating Work fit with continuing commitments? | Operations supplies a capacity, schedule, service, or allocation result under stated conditions. `OPS.10` distinguishes a bound, feasible schedule, scenario, and forecast; the comparison does not create access or authorize interruption. |
 | Does the arrangement require a different organization? | Organization Change Engineering supplies a contribution design, responsibility, position, or enabling-assignment result, for example under `OCE.4–OCE.6`. Allocating another case within existing authority is an operating question, not automatically organization redesign. |
-| Must a person become able to perform different Work? | Human Capability Development supplies a qualified development comparison such as `HCD.2`, including representative later tasks, current evidence, support, practice, time, and resource burden. A course, job title, or proposed programme is not attained capability. |
+| Must a person become able to perform different Work? | For an assignment now, establish which choices and actions the intended performer can carry out with the support available on the job. A specialist’s interpretation can supply a premise for the performer’s own decision. Credit the performer with producing the interpretation only when evidence shows that they did so. To claim that training developed the holder's own capability, compare earlier and later performance on comparable tasks, identify what help or choices each supplied, and justify attribution to the training through `HCD.12`. `HCD.2` supports a comparison of development arrangements and their full burden. |
 | Can the arrangement be funded and what are its financial consequences? | Finance supplies the relevant funding, cash, valuation, or financial-risk result. Engineering supplies the complete technical and Work consequences needed for that account; it does not invent the financial policy. |
 | What is actually offered, permitted, owed, or recoverable? | Commercial, legal, Governance, and Administration practices supply their offer, rights, duties, permission, tender, remedy, or public-procedure results. A technical specification cannot create those relations. |
 | What broader option or acceptance is at stake? | Strategy and Enterprise Asset Management supply their strategic or portfolio conclusions; application practices supply safety, security, environmental, clinical, and other qualified criteria or assessments. Preserve their subject, scope, and deciding authority. |
@@ -517,9 +510,9 @@ estimates; buying a controller does not remove commissioning or acceptance Work.
 
 The parity basis includes the same three operating conditions, commissioning date, interface set, configuration
 evidence, assurance burden, data access, support horizon, internal capability consequence, expected change
-latency, and exit condition for all four arrangements. The internal-only and commissioned-custom arrangements do
-not survive the commissioning-date condition. The ready-controller and hybrid arrangements remain a provisional tie-set for the obtaining decision;
-their unresolved protected claims prevent commitment to commissioning either one.
+latency, and exit condition for all four arrangements. The custom provider cannot meet the date for the full configuration. For internal development the team lacks grounds to commit to the date.
+The ready-controller and hybrid estimates fit the date, but commitment to either still depends on the protected conditions below.
+The team already has a rule for choosing between them if both pass.
 
 The two survivors have different burdens. The ready-controller arrangement is estimated at EUR 84,000, nine
 weeks, and eighteen days of `GreenHeat-4` engineering Work; later greenhouse-specific changes require a vendor
@@ -621,7 +614,7 @@ The two survivors are compared on the same basis:
 | Evidence custody | The utility receives raw observations in an open format and an interpreted account, but only a summary of the provider's analysis Method. | The utility receives the raw observations, keeps the identified MethodDescription and analysis configuration, and produces the account itself. |
 | Repeatability and support | Reanalysis depends on the provider's analysts; the price includes eighteen months of analysis support. | The utility can repeat the analysis; the provider supports instrument calibration and collection for twelve months. |
 | Resources | EUR 230,000 and eight utility analyst-days. | EUR 185,000 and twenty-four utility analyst-days. |
-| Capability and exit | The utility gains inspection data but remains dependent on an analysis provider. After provider exit, another analyst must be qualified before the account can be reproduced. | The utility gains interpretation capability and retains the account, observations, MethodDescription, and configuration. Provider exit affects later collection but not reanalysis of observations already held. |
+| Capability and exit | The utility obtains inspection data and relies on a qualified provider for interpretation. After exit it needs a qualified analyst with access to the required means. | The utility can assign its two already qualified analysts and retains the account, observations, MethodDescription and configuration. Provider exit affects later collection; the retained access and means support reanalysis of observations already held. The six blind results support this assignment; a claim that the purchase taught the analysts would require evidence of change. |
 
 The board's `ChoiceRule` first rejects any arrangement that misses acceptance, raw-data custody, or the three-
 month limit. Among survivors, it prefers the arrangement that the utility can reproduce after provider exit when
@@ -726,7 +719,7 @@ burden; certainty about every later event is not required.
 | `CC-SYSE24-4` | The same result, acceptance conditions, operating environment, evidence horizon, and burden categories are applied to every arrangement. |
 | `CC-SYSE24-5` | Each arrangement identifies Agents and Work separately from Methods, tools, supplied Systems, materials, data, changed subjects, assignments, and authority. |
 | `CC-SYSE24-6` | The forward account supports consequential interface, configuration, meaning, state, time, joint-resource, assurance, capability, support, custody, change, and exit conditions, or preserves the precise gap. A repair is compared with its whole burden. |
-| `CC-SYSE24-7` | Commercial, legal, financial, governance, organization, operations, asset, HCD, safety, security, and other specialist claims are obtained from their practices and used within those practices' conditions and authority boundaries. |
+| `CC-SYSE24-7` | Commercial, legal, financial, governance, organization, operations, asset, HCD, safety, security, and other specialist claims are obtained from their practices and used within those practices' conditions and authority boundaries. Claims about obtaining help, independent current performance and development of the holder's capability each have grounds for that outcome. |
 | `CC-SYSE24-8` | The comparison ends in one lawful `C.11` result: choose now, reject the current set, probe again, or reroute to another named question. |
 | `CC-SYSE24-9` | A retained arrangement states the commitment supported now and any next realization Work needed. A decisive unsupported branch is resolved, probed, or used to restrict that commitment; `ChoiceResult` remains separate from authority, performed Work, and accepted result. |
 | `CC-SYSE24-10` | Reopening follows changed premises through affected operations, joins, and shared conditions, reconstructs the whole alternatives on the changed basis, and preserves valid branches without automatically reopening the project focus. |
@@ -840,9 +833,7 @@ field effectiveness.
 - `C.11` supplies the bounded choice from the constructed options, preference, belief, outcome, probe-worth,
   and authority inputs. `C.11.CRC` supplies a missing configuration-relative contribution comparison only;
   neither replaces the arrangement construction.
-- `SYSE.3:4.1–4.7` helps develop the first unsupported realization branch and identify justified next Work when needed after
-  retention, or during comparison when an unresolved feasibility premise could change the choice or what it authorizes. An unresolved branch cannot
-  be hidden behind choose-now when it defeats the actual commitment.
+- `SYSE.3:4.1–4.7` relates the commitments of a proposed arrangement to the enabling work. A missing condition within a branch or across branches can affect the choice, the next action or what the decision authorizes.
 - `OPS.10:4` supplies qualified capacity and timing results. `OCE.4–OCE.6` supply organization contributions,
   positions, and enabling assignments where change is needed. `HCD.2:4` and `E.23.CDI` supply capability-
   development comparison where later human Work depends on learning. Their outputs retain their assumptions,

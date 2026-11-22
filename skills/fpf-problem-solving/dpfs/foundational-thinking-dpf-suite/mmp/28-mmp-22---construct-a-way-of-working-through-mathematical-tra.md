@@ -49,7 +49,7 @@ Relate the existing way of working to its mathematical account. Transform that a
 
 Take the difficulty and requirements from the receiving work. State the gain sought and the properties that the change must retain. For example, the recipient may need the same acceptance decision with less effort, a result before a deadline, or a new result the incumbent cannot produce. These are different transformation questions.
 
-Retain requirements about intermediate contributions when they matter. An early indication, an independent assessment or an explanation of every failure can be part of the needed result. Equality of a final number does not include them automatically.
+Retain requirements about intermediate contributions when they matter. An early indication, an independent assessment or an explanation of every failure can be part of the needed result. Equality of a final number does not include them automatically. Identify which performances must constitute the commissioned work and which outside results it can use. For a required independent judgement, ask what must be independent: two assessors may each judge the same supplied record. If independent measurements are promised, copying that record does not obtain them.
 
 Recover the allowed variation. The method may permit a different order or performer while requiring an independent second observation. A proposed change of that requirement is a separate decision under C.39.RQ; omitting it from the model does not amend it.
 
@@ -143,7 +143,7 @@ equivalently c_i*(1-p_j) <= c_j*(1-p_i).
 
 For this two-check comparison, independence of their outcomes is unnecessary: the second check is incurred exactly when the first passes. Extending one fixed ordering rule to many checks needs the conditional probabilities among cases reaching each position; marginal ratios alone can fail when those probabilities change.
 
-Now require the procedure to report every failed condition so that the applicant can correct the case in one return. Stopping after the first failure no longer supplies the required result. Both checks must then be completed, taking 8 minutes of summed effort under the same assumptions. A changed order may still affect the time of an early indication, but it no longer produces the claimed effort saving.
+Now require a report of every failed condition. Without a dependency that determines the other outcome, run both checks, taking 8 minutes. Suppose instead that a known rule guarantees that passing B implies passing A. Run B first. If B passes, neither condition failed. If B fails, run A to finish the list. With the given costs and proportions the complete report costs 2+0.5\*6=5 minutes on average. If the applicant also ordered both actual tests, their performance still takes 8 minutes. Keep the requested report and any separately required performances in the comparison.
 
 If the requirement instead remains the first-failure decision but A supplies information needed to perform B, the proposed order is unavailable. Add the preparation that would make B independently executable and recompute its cost, or retain A first. A lower algebraic value is not a usable method while its required input is unavailable.
 
@@ -163,7 +163,7 @@ The proposed transformation supports its stated use when:
 - the mathematical operations have recoverable meanings in the work;
 - the transformation's assumptions and retained or changed result are stated;
 - the claimed gain follows under a supplied comparison basis;
-- the candidate specifies a changed reusable operation or rule that performers could carry out;
+- the candidate identifies the reusable rule and what each performer can do under it. Where designing the change was commissioned, the proposal explains the choices made in constructing the rule. An application of a supplied rule establishes the contribution it actually produces;
 - required information, capabilities and other realization conditions are available or remain visibly unresolved;
 - a derived model consequence is distinguished from an observed working consequence;
 - a changed requirement or dependency has a usable return to the affected argument.

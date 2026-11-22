@@ -25,31 +25,35 @@ Locate the relevant interval and identify the required movement result. Use SOM.
 
 Use existing observations where they cover the transition. If checking each part during one movement interrupts it, distribute observations across comparable attempts and identify any observer assistance. The evidence may suggest a relation worth testing before it establishes the cause of failure. If it supplies neither a supported finding nor a useful hypothesis, identify what is missing. Obtain a discriminating observation when the next task warrants it and it is feasible.
 
+If several trials are used, ask whether the proposed relation applies across those trials or whether the order calls for a finding about one particular transition. Identify the attempt as well as the time within it. If one recording shows a release on one stroke and another shows contact on a different stroke, matching clock marks leave their coexistence in either stroke open. A common reference can align observations of the same attempt. A relation established for every relevant stroke can also supply a condition needed for this one. When only the continuous mark is required, the mark itself may give a sufficient answer.
+
 #### SOM.5:4.2 - Preserve the transition in preparation
 
-When preparing the transition, choose a short movement that starts before the relevant change and ends after it. Reduce other demands while preserving the contact, support and concurrent actions that define the difficulty.
+Start with the movement whose transition the performer needs. Keep the whole movement when it is manageable. If preparation would benefit from shorter practice, choose an interval that starts before the support change and ends after it. Reduce demands that can be removed while preserving the contact, support and concurrent actions that matter.
 
 Use familiar slower execution, pauses or static positions when they help locate a relation. If they change the demand, use the result for preparation. A claim about successful continuous movement at the required speed needs evidence from those conditions.
 
 #### SOM.5:4.3 - Extend an available coordination
 
-To develop coordination, start from a portion in which the necessary actions work together and extend it towards the interval under investigation. Establish how far the combination works. If it fails, locate the first loss and compare suitable small, familiar adjustments while retaining the other actions.
+Establish how far the necessary actions already work together. When a familiar cue gives the whole transition under the required conditions, that movement is available for use or practice. If the transition fails, locate where the relation is lost as far as the evidence permits. Several changes can interfere together. Compare suitable familiar adjustments under the conditions the resulting movement must preserve.
 
-When learning is needed, begin with a workable portion and extend it through more of the support change. Compare the developing feel and movement result with the preceding attempt. Use SOM.2 if a needed difference remains indistinguishable there, SOM.3 if the required regulation is missing, and SOM.4 if available actions still need to be combined.
+When the performer can manage only part of the transition, extend that portion through more of the support change. Compare how the movement feels and what it achieves as the interval grows. Use SOM.2 if a needed difference remains indistinguishable there, SOM.3 if the required regulation is missing, and SOM.4 if available actions still need to be combined.
 
-When joining successful portions, overlap them and examine the overlap in motion. If the task requires an adjustment the performer cannot yet find or make, identify the relation that needs instruction and seek suitable help. If the task was to establish the limit of this attempt, report that finding.
+When a join has to remain continuous, rehearse overlapping portions if useful and establish what happens through that join in motion. If the task requires an adjustment the performer cannot yet find or make, identify the relation that needs instruction and seek suitable help. If the task was to establish the limit of this attempt, report that finding.
 
 #### SOM.5:4.4 - Connect adjustment and cue
 
-For a new adjustment that needs a cue, identify a change the performer can notice before the loss and use while acting. It might be a shift in support or an external relation in the task. Connect the cue with the response that worked in the successful portion.
+For an adjustment that needs a cue, work back from the action still available to the performer. To prevent a loss, allow time to recognize the cue and act before the loss. To recover afterwards, a later cue can suffice if the performer can still make the required return. It might be a shift in support or an external relation in the task. Connect the cue with a response the performer can use in time. It may already be available throughout the movement or may first become available during a shorter portion.
 
 Use a suitable observation of the adjustment with its cue, or try them together when a new attempt is needed. Identify a teacher’s prompt or temporary marker as part of the support. To claim performance without it, use observations under that condition. If the cue or response is missing, identify which contribution the task still needs.
+
+A partner's changing cue can belong to the task. Keep it available when assessing the performer's ability to respond to it. Look for the cue the performer actually had and an action that distinguishes using it from following a memorized sequence. If the commission only calls for completing that sequence together, evidence of its completion can settle the decision.
 
 #### SOM.5:4.5 - Return to the required action
 
 To test the whole transition, restore the required interval, speed and concurrent demands. Use the bodily or task cue that supports the action. Judge what happened in the movement and what the performer could do while acting, with the relevant support.
 
-If the transition fails, retain what the preparation established, including the limit of a portion that did not work. Determine whether the unresolved relation concerns a bodily action, cue, technique or missing observation. Revise the model when its proposed connection fails. Stop an attempt if pain, dizziness or unfamiliar loss of control occurs.
+If the transition fails, retain what the preparation established, including the limit of a portion that did not work. Use the movement result to identify what is still missing. It may concern bodily action, a cue, the support provided by someone else or a connection among these. Give a usable correction when the evidence supports it across the remaining explanations. Revise the model when its proposed connection fails. Stop an attempt if pain, dizziness or unfamiliar loss of control occurs.
 
 ### SOM.5:5 - Archetypal Grounding
 
@@ -67,11 +71,11 @@ A change of support at the point of failure gives a relation to investigate. To 
 
 ### SOM.5:7 - Conformance Checklist
 
-For an account of a transition, identify the changing relation, the movement result and the conditions observed. If a correction needs practice, preserve the transition in the reduced task. When joining workable portions, check the overlap in motion. If the adjustment requires a cue, connect an available cue to an available response. Base a claim about the whole transition on observations in the required conditions. Identify assistance, any change of speed and any explanation the evidence leaves open.
+For an account of a transition, identify the changing relation, the movement result and the conditions observed. If a shorter task is used for practice, preserve the relevant support change. For a conclusion about continuous coordination, use evidence of movement through that change. When separately practised portions meet, this includes what happens where they join. If the adjustment requires a cue, connect an available cue to an available response. Base a claim about the whole transition on observations in the required conditions. Identify assistance, any change of speed and any explanation the evidence leaves open.
 
 ### SOM.5:8 - Common Anti-Patterns and How to Avoid Them
 
-**Two successful postures are taken as evidence of a successful transition.** Examine the action between them. When the performer needs to learn it, construct a suitable portion and check how the portions join in motion.
+**Two successful postures are taken as evidence of a successful transition.** Examine the action between them. For learning, use a cue or preparation that makes the required change available. If preparation uses portions, check how they join in motion.
 
 **The exercise omits the change under investigation.** Success under fixed support leaves open what happens during the support transfer where the failure occurred. Keep the transfer in a suitably reduced movement.
 
@@ -91,7 +95,7 @@ To carry coordination through changed conditions, we **adapt** HCD.6’s preserv
 
 The proposed teaching procedure identifies what changes with support and load, prepares any missing regulation and joins it to the continuing action. A comparative learning advantage remains unestablished. When suitable movement instruction already gives the performer a working transition, use it directly.
 
-Reconsider the approach if a new condition defeats the learned relation, preparation changes the demand enough to defeat the return, or simpler instruction gives the required result. Depending on the question, a usable answer may be another technique, a different support arrangement or a narrower learning aim.
+Reconsider the approach if a new condition defeats the learned relation, preparation changes the demand enough to defeat the return, or simpler instruction gives the required result. Depending on the question, a usable answer may be another technique, a different permitted support arrangement or a proposal to change the learning aim. If the original aim still applies, identify what the narrower practice contributes and what the performer still needs.
 
 ### SOM.5:12 - Relations
 

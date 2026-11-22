@@ -45,11 +45,11 @@ Use CGOV.8 when missing information prevents an informed choice. Provide what th
 
 #### CGOV.12:4.3 - Compare the available protection, contest and exit routes
 
-Identify the available routes and who can take each action: correct the process, obtain a required consent, exercise a purchase or participation right, negotiate a permitted resolution, use a dispute procedure, or exercise a sale or exit right.
+When asked to identify alternatives or recommend a route, identify the available routes and who can take each action: correct the process, obtain a required consent, exercise a purchase or participation right, negotiate a permitted resolution, use a dispute procedure, or exercise a sale or exit right.
 
-Compare them by the holder's purpose, attainability, time, total burden and consequences for the company and affected parties. Include preserving the current holding or accepting a legitimate outcome when those are live choices. Distinguish a substantive rights defect, uncertainty about its legal treatment and disagreement about commercial merits.
+Where the holder asks to exercise a selected right, establish the act its terms require and whether it can be performed in time. For a comparison of routes, judge them by the holder's purpose, attainability, time, total burden and consequences for the company and affected parties. Include preserving the current holding or accepting a legitimate outcome when those are live choices. Distinguish a substantive rights defect, uncertainty about its legal treatment and disagreement about commercial merits.
 
-A right can require resources to exercise. Determine whether the holder can make the required payment, give notice, obtain advice or provide another contribution needed for the chosen action. If not, compare available alternatives rather than reporting an unusable entitlement as a complete solution.
+A right can require resources to exercise. Determine whether the holder can make the required payment, give notice, obtain advice or provide another contribution needed for the chosen action. If the conditions for exercise cannot be supplied, report the limitation. Compare alternatives where the holder also asks what to do instead.
 
 #### CGOV.12:4.4 - Perform the selected action through the competent participant
 
@@ -81,9 +81,9 @@ Suppose Nira submits a valid election but has not yet paid. The result is the el
 
 #### CGOV.12:5.2 - An exit right names a different obligated buyer
 
-A supplied shareholder agreement gives Ivo a right, after a specified change of control, to require the controller to buy his shares. It requires notice within thirty days, uses a stated pricing formula and makes payment precede registration of the transfer. The trigger has occurred; no company repurchase right is supplied.
+A supplied shareholder agreement gives Ivo a right, after a specified change of control, to require the controller to buy his shares. It requires the controller to receive notice within thirty days, uses a stated pricing formula and makes payment precede registration of the transfer. The trigger has occurred; no company repurchase right is supplied.
 
-Ivo identifies the controller as the obligated buyer and sends the required notice in time. That preserves and exercises the contractual demand under the supplied terms. It does not establish receipt of the price or completed transfer, and sending an invoice to the company would address the wrong participant.
+Ivo identifies the controller as the obligated buyer. A receipt establishes that the controller obtained the required notice on day 29, so Ivo has exercised the demand under this agreement. Payment and registration still lie ahead. A notice delivered only to the company would address a different participant.
 
 If the controller disputes the trigger or price, use the agreement's dispute route and the needed specialist contribution. Preserve the exercised right and identify what still has to be resolved before payment and transfer.
 
@@ -97,8 +97,8 @@ Public-company protections, private shareholder agreements and family-company ar
 
 - The affected holder, act, right, obligated participant and applicable basis are identified.
 - The relevant deadline and the effect of the protective action are recoverable.
-- Available routes are compared with their resources, costs and attainable results.
-- The selected action was performed or the obstacle to performing it is identified.
+- When a choice or recommendation was commissioned, has the holder received the necessary comparison of routes, resources and attainable results?
+- When advice was requested, the holder can tell whether the right can still be exercised, what terms apply or what prevents its exercise. When exercise of the right was commissioned, the result establishes the event the rule requires or what prevents it.
 - Exercise, dispute, remedy and completed transfer are not conflated.
 - The resulting conditions reach the corporate decision or implementation they affect.
 

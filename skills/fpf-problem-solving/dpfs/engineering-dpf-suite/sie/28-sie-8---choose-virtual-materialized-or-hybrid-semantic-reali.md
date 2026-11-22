@@ -35,16 +35,16 @@ When the choice is made from technology labels, these consequences remain hidden
 
 ### SIE.8:4 - Solution
 
-First use decisive conditions to exclude arrangements that cannot serve the contract. Describe and compare the serious remaining alternatives as complete arrangements, including source access, rule execution, state/copy behavior, provenance, currentness, failure branches, security, operation, recovery, exit, and joint resource demand. Return a supported choice, sufficient rejection, worthwhile probe, or missing-input result for the named use.
+Use a decisive restriction when it settles whether a proposed arrangement can serve the contract. For an order asking for one workable design, establish that the chosen arrangement satisfies the relevant conditions for source access, rule execution, copied state, provenance, currentness, failure, protection, operation, recovery, exit and joint resource demand. When a preference is claimed, compare the serious alternatives on conditions that distinguish them for this use. Return a supported choice, sufficient rejection, worthwhile probe, or missing-input result for the named use.
 
 #### SIE.8:4.1 - Pattern-Use Unfolding
 
 1. **Fix the receiving result.** Reference the `SIE.1` answer, `SIE.7` rules, required source/identity/claim branches, and validation conditions that a successful candidate must preserve.
 2. **Apply decisive exclusions.** A known source prohibition or other sufficient condition can defeat an arrangement. Record the condition and evidence needed for that conclusion and stop developing the excluded alternative. If no serious candidate remains, return the bounded rejection or identify the missing result.
-3. **Describe a serious virtual alternative.** When query-time access remains a candidate, state source access, rule evaluation, pushdown or mediation, credentials, latency/availability behavior, provenance capture, and failure return.
+3. **Develop the relevant realization.** For an order for one workable design, follow the virtual, materialized or hybrid branch below that supplies it, then check the complete design. For a comparative order, develop the alternatives needed to establish the claimed preference. For a virtual option, state source access, rule evaluation, pushdown or mediation, credentials, latency/availability behavior, provenance capture, and failure return.
 4. **Describe a serious materialized alternative.** When copying remains a candidate, state copied or derived state, snapshot identity, refresh/invalidation, storage and custody, source deletion/correction behavior, provenance, recovery, and exit.
 5. **Describe a hybrid where warranted.** Identify which permitted subset is materialized and which source-sensitive part remains virtual. State coherence, invalidation, and fallback behavior. Confirm permission for each subset selected for copying.
-6. **Compare complete remaining arrangements.** Use the conditions that can change the receiving result: freshness, latency, availability, access, protection, source authority, reproducibility, provenance, operability, recovery, cost, and semantic loss. Include concurrent source calls, shared credentials, trace, retries, support, and other demands within each applicable resource envelope. Every pair of contributions may fit a shared limit even when the demands of all the contributions together exceed it.
+6. **Check the chosen arrangement and explain any preference.** Use the conditions that can change the receiving result: freshness, latency, availability, access, protection, source authority, reproducibility, provenance, operability, recovery, cost, and semantic loss. Include concurrent source calls, shared credentials, trace, retries, support, and other demands within each applicable resource envelope. Every pair of contributions may fit a shared limit even when the demands of all the contributions together exceed it.
 7. **Examine relevant failure and change cases.** Use the source outages, corrections, access changes, mapping changes, stale or partial refresh, provenance loss, and recovery cases needed for the proposed conclusion. Earlier sufficient evidence can support a bounded rejection; a positive selection needs its load-bearing conditions.
 8. **Choose or identify worthwhile further work.** Select a supported arrangement, reject it, or return the missing result. Commission a discriminating probe only when its obtainable result can change the decision enough to justify its full burden and displaced work. Keep an unresolved comparison explicit when further inquiry is unavailable or not worthwhile. State the reasons for the disposition that its receiver needs.
 9. **Name implementation returns for a selected choice.** Identify the Data Engineering, platform, provider, security, legal, finance, or operating results required to realize that choice.
@@ -58,7 +58,7 @@ A sufficient rejection of one proposed arrangement is complete with the receivin
 | --- | --- | --- |
 | Receiving use and disposition | Every result | The question and proposed arrangement or comparison scope, supported choice/rejection/probe/missing-input result, grounds, and material limits. |
 | Decisive exclusion | A proposed arrangement is rejected on sufficient grounds | The condition that defeats it, the evidence and applicability needed for that condition, and the scope of the rejection. |
-| Candidate arrangements and comparison | A comparison remains live or a positive choice is made | Serious remaining alternatives as complete arrangements: required semantic branches, access, state, execution, currentness, latency, provenance, protection, failure, operation, recovery, exit, and joint resource demand. |
+| Candidate arrangements and comparison | The engineer must justify a workable realization or a preference | The relevant conditions for the chosen realization, including required semantic branches, access, state, provenance, timing, protection, operation, failure, recovery, exit and joint demand. A claim of preference also needs a deciding difference from the alternatives. |
 | Failure/change evidence | The supplied conclusion depends on it | Evidence for its load-bearing conditions. One qualified prohibition can suffice for rejection; positive selection needs the relevant failure and change cases for the claimed arrangement. |
 | Further inquiry | A probe is proposed | Obtainability, possible decision contribution, full burden, displaced work, and how its result can change the decision. |
 | Implementation returns | A realization has been selected | Required results from the responsible providers, what is supplied or still missing, and the acceptance evidence needed to realize that choice. |
@@ -82,17 +82,19 @@ When the receiving question also asks which remaining arrangement to use, contin
 | Candidate | Constructed comparison |
 | --- | --- |
 | materialized common graph | excluded by the providers' prohibition on copying availability state; that condition is sufficient without developing its implementation, recovery, and exit |
-| query-time virtual mapping | retained alternative: preserves source custody and timestamps and can return provider-specific qualified rows; depends on runtime credentials, latency, provider availability, query limits, and explicit timeout/incomplete branches |
-| hybrid metadata plus virtual values | selected conditionally: materialize stable product-family correspondences, mapping rules, and source metadata where their copying and maintenance are permitted; retrieve volatile availability values at query time; invalidate metadata when source definitions or product relations change |
+| query-time virtual mapping | obtains metadata and values at query time and preserves source custody and timestamps. This route depends on timely access to both, the credentials and query limits, and the agreed timeout or incomplete-result branches |
+| hybrid metadata plus virtual values | retain an authorized current copy of stable product-family correspondences, mapping rules and source metadata. Retrieve availability values live and invalidate the copy when an applicable definition or product relation changes |
 
-The decision selects the hybrid arrangement because stable semantic premises can be inspected and volatile restricted values remain at their sources. It requires Data Engineering and security results for credential handling, concurrent calls, timeout behavior, observability, and recovery. SIE.9 receives separately attributed quantities and timestamps, provider errors, and the permitted incomplete-result and fallback behavior. No running interface or provider reliability is claimed.
+Suppose the only live source for the required correspondences is unavailable throughout this buyer’s decision window. The rights holder permits a local copy and the maintainer confirms that it covers the requested products through that window. Live values and their trace can arrive in time, and maintaining the copy fits the allowance. The hybrid can serve this order. The fully live route lacks the correspondences at the deadline. If both routes meet the contract under other conditions, an engineer commissioned to provide one workable design may choose either.
+
+For the hybrid, obtain credential handling, concurrent calls, timeout behaviour, observability and recovery from the implementation providers. Supply SIE.9 with the separately attributed quantities, timestamps, provider errors and permitted incomplete responses. An operating-service claim needs evidence from the implementation.
 
 ### SIE.8:6 - Bias-Annotation
 
 | Lens | Likely drift | Repair |
 | --- | --- | --- |
 | Governance | Materialization silently transfers custody, authority, or permission. | Record source rights, retention, correction, and use authority for every copied state. |
-| Architecture | The incumbent platform determines the answer, or every conceivable alternative requires full design. | Use sufficient exclusions, then compare serious alternatives as complete arrangements on the receiving basis. |
+| Architecture | The incumbent platform determines the answer, or every conceivable alternative requires full design. | Use a decisive exclusion when it settles the question. For a feasible design, qualify its complete arrangement. For a preference, also compare the serious alternatives on the receiving basis. |
 | Ontology/Epistemology | A graph or warehouse is treated as the semantic arrangement itself. | Keep mapping premises, claims, provenance, and validation independent of carrier. |
 | Pragmatics | Every unresolved comparison commissions a probe. | Compare obtainable decision benefit with the probe's full burden and displaced work. |
 | Didactics | “Virtual is fresh; materialized is fast” becomes a universal rule. | Show source latency, snapshot reproducibility, invalidation, and failure conditions that reverse the slogan. |
@@ -115,7 +117,7 @@ That rejection completes the Method when it answers the requested question. The 
 **For a live comparison or positive selection**
 
 - [ ] A successful candidate preserves the receiving result, mapping rules, and required semantic branches.
-- [ ] Serious remaining candidates expose access, state, execution, provenance, failure, operation, recovery, exit, and joint resource demand.
+- [ ] The chosen arrangement covers its required access, state, execution, provenance, failure, operation, recovery, exit and joint resource demand. A claimed preference has grounds that distinguish the alternatives.
 - [ ] Freshness and latency are defined for the receiving use.
 - [ ] Source authority, custody, permissions, correction/deletion, and retention consequences are explicit.
 - [ ] Security/privacy and runtime credential differences are compared where they can change the result.

@@ -119,9 +119,7 @@ research, realization, integration, operation, and decision Work can overlap.
 4. **System-family options.** Actual Systems and configurations, candidate architectures, family membership and
    effectivity rules, and possible-future specifications are identified separately. For each option, state what is
    realizable now and any builder or platform change it requires.
-5. **Problem–option correspondences.** Every relied-on pair states the changed admission, comparison coordinate,
-   protected characteristic, affected-System consequence, evidence need, or next action. A pair with no supported
-   decision-bearing difference remains an unresolved mismatch.
+5. **Problem–option correspondences.** For each relied-on pair, work out what its evidence does to admission, comparison, a protected characteristic, an affected System or the next action. A changed load can preserve admission: if both controllers' rated ranges cover every new load, retain both on that ground. If a possible load crosses one rating, establish whether it can occur before claiming that it excludes the controller. Identify the particular conclusion still open.
 6. **Compare eligible options.** Apply the guards for the same use and operating conditions. Compare the eligible options on the declared result and resource characteristics, including protected losses and consequences for affected Systems. An eligible rival that is at least as good on every chosen characteristic and better on one excludes the option from a Pareto Front. To place an option on that Front, rule out domination by each eligible rival. A known advantage or a bound can settle a comparison even with another measurement missing. First check that at least one combination of the performance values fits the evidence for the stated System or family and use. Conflicting inputs require a return to their basis before they can support this comparison. If every admissible combination gives a proposal a dominating eligible rival, exclude the proposal. The identity of that rival may still be open. Establish which option to pursue when the receiving decision requires it. Identify any comparison that could change front membership. If the decision uses the order of a particular pair, report any uncertainty in that order even when membership is settled. An archive, a Front and the decision `OptionSet` each retain their own membership rule.
 7. **Choice or probe.** The current `OptionSet` is fixed. The deciding Agent performs comparison-and-choice
    Work, applies `C.11.CRC` when a finite configuration-relative contribution comparison is needed, and applies
@@ -242,17 +240,11 @@ back to the problem before generating another variant.
 | The target variant is plausible but its construction, evidence or support cannot be obtained | Keep its promise conditional and frame the limiting builder relation for `SYSE.23` or the obtaining question for `SYSE.24` | A compatible supported means of obtaining the result |
 | A candidate disproves one interpretation of the problem but leaves another useful | Revise or retire the defeated claim and preserve the supported branch | What the evidence supports about the remaining branch and any question still open |
 
-A better means may change which problem is worth current attention. Conversely, a revised problem may change
-which retained design is useful. Preserve the decision-bearing reason for that movement. This is how an old
-stepping stone can become useful again without treating its earlier rejection as an error or its archive
-membership as current endorsement.
+A better means may change which problem is worth current attention. Conversely, a revised problem may change which retained design is useful. Preserve the reason for that movement. If different variants are proposed for different operating conditions, establish who can identify the condition and select or configure the variant before it is needed. If a choice for all conditions must be made earlier, compare arrangements available at that earlier decision. A previously rejected design can become useful when its grounds change.
 
 ##### SYSE.22:4.1.5 - Compare complete alternatives and stop at a useful decision
 
-Use one comparison situation per consequential operating profile, including the failure condition that reopened
-the question. Compare complete candidates under the same profile and assumptions. Keep admission constraints
-separate from preferences among survivors. If an option obtains its benefit only with an unprovided builder
-change, include that change and burden in the comparison or keep the benefit conditional.
+Compare complete candidates under the same conditions in each operating profile that could change the family decision. A shared interface rule or bound can cover several profiles. Show why it holds even for their consequential differences. Inspect individual cases when the common basis leaves an outcome open. Include any failure that reopened the decision. Keep admission constraints separate from preferences. If a benefit depends on a builder change, include that change and its burden or keep the benefit conditional.
 
 When profiles favor different members, the useful result can be a family rule assigning different variants to
 different conditions, rather than one universal winner. Examine the shared consequence: supporting two members
@@ -294,7 +286,7 @@ The joint problem–System-family account records these eight items:
 | problem archive and portfolio | Retained and selected problem records, their different membership rules, lineage, resources, applicable premises, stops and reopen conditions; actual expiry where a qualification, right, resource or promised-use window ends. |
 | System-family options | Actual Systems and configurations, family identity, architecture, variant and effectivity rules, possible-future specifications, realizability, and builder dependencies. |
 | plural-search results | Exploration archive and each Front with its candidate set, retention or admission rule, comparator, characteristics, date, and currentness. |
-| correspondences | Every decision-bearing problem–option claim, its source and uncertainty, plus unresolved mismatches. |
+| correspondences | Each relied-on relation between problem and option, the conclusion it changes or preserves, its evidence and any consequential uncertainty. |
 | choice or probe | Fixed `OptionSet`, shared comparison basis, choice rule, probe budget and value when relevant, result permitted by the choice rule, reason, and overturn conditions. |
 | continuation | Retained alternatives, planned and performed later Work when it occurs, receiving results, and selective reopen relations. |
 
@@ -453,7 +445,7 @@ Watch for these six recurring biases:
 - [ ] Actual Systems and configurations remain separate from possible-future specifications.
 - [ ] Every option identifies its family architecture, membership or variant rule, and effectivity basis.
 - [ ] Exploration archive, Fronts, and current `OptionSet` retain their own candidate and admission rules.
-- [ ] Every relied-on correspondence changes a decision-bearing claim or remains visibly unresolved.
+- [ ] Each relied-on correspondence establishes which conclusion changes or holds for the revised conditions, or identifies what still prevents that decision.
 - [ ] The comparison identifies eligible options, the evidence for each claimed Front membership and any open comparison that could change it. It preserves protected losses and consequences for affected Systems.
 - [ ] The choice or probe result states its basis, rule, full burden and value when relevant, actual obtaining
       conditions, authority, and reopen condition. Retaining a supported result is not conditional on a new probe.
@@ -466,7 +458,7 @@ Watch for these six recurring biases:
 | --- | --- |
 | Backlog equals problem portfolio | Repair the selected `ProblemCard` values and state why each receives current attention. |
 | Candidate specification equals future System | Keep the specification possible-future; state realization and later-test Work. |
-| *Addresses problem* fills every correspondence cell | State the changed admission, coordinate, consequence, evidence need, or next action. |
+| *Addresses problem* fills every correspondence cell | Show which admission, comparison or action changes, why it holds in the new conditions, or what consequential question the evidence leaves open. |
 | Archive equals Front | Preserve archive membership under its retention rule and Front membership under its comparator. |
 | A changed Front is presented as improvement on the old Front | Identify both bases and make any cross-basis claim separately. |
 | A probe choice is presented as family adoption | Identify later planning, authorization, Work, evidence, and adoption decision. |

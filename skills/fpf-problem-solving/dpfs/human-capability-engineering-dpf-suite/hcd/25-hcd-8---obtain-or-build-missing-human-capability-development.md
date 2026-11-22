@@ -132,7 +132,7 @@ Use evidence of the intended provider or environment supplying the contribution 
 
 Repeating a memorized case may establish execution of that procedure. If the task requires discrimination, adaptation or dispute handling, establish it from performance under relevant variation. Use an additional case if the available evidence does not settle the claim. Match assistance to the intended service and require unsupported performance when that is part of the provider’s task.
 
-The evidence can establish the contribution delivered to identified recipients under the observed conditions. To extend the claim to other learners, service loads, a whole programme, transfer, retention or learning effects, obtain evidence relevant to that additional claim.
+The evidence can establish the contribution delivered to identified recipients under the observed conditions. To extend the claim to other learners, service loads, a whole programme, transfer, retention or learning effects, obtain evidence relevant to that additional claim. A tested provider response can be reused for a new learner if its content, access and timing meet that learner’s task. To promise the response to several learners together, establish that the provider can serve their combined requests by the applicable deadlines. The same booked visit can satisfy multiple recipients when each can use the response.
 
 #### HCD.8:4.7 - Return the Obtained or Built Contribution or Exact Stop
 
@@ -170,8 +170,8 @@ For preparation, the assessors compare three answers.
 
 | Case answer | Required assessor judgement |
 | --- | --- |
-| The report matches HW3/FW8/SCHED2, mandatory checks are confirmed, and 24 test hours are available. The learner proposes ten changes in three homogeneous batches, requiring 23 hours, and states that two of the twelve requested changes remain in the queue. | Supported bounded proposal; evidence applicability, resource limit, and queue consequence are preserved. |
-| The same data are supplied, but the learner promises twelve changes because batching is faster. | Unsupported: twelve changes require 27 hours, exceeding the 24-hour limit. |
+| The report matches HW3/FW8/SCHED2, mandatory checks are confirmed, and 24 test hours are available. The learner proposes ten changes in three homogeneous batches, requiring 23 hours, and states that the proposal leaves two of the twelve requests uncovered. If ten are accepted and none are withdrawn or otherwise closed, two carry over. | The proposal fits the applicable evidence and time. The queue consequence is conditional on the stated exits. |
+| The same data are supplied, but the learner promises twelve changes because batching is faster. | Unsupported: twelve changes require at least 27 hours, exceeding the 24-hour limit. |
 | The changed report does not identify the tested firmware, and the learner asks which version was tested before relying on it for FW8. | Justified missing-information return. The same refusal would be incomplete when the first row's full compatible report is present. |
 
 Assessors first judge independently. They locate any disagreement in the requirement, answer fragment and supplied evidence. A qualified specialist result or calibrated key can settle the domain question. In a further case only 22 hours are available for the ten changes that need 23. The assessors must reject the promise while preserving criteria that still hold and use the dispute route if a disagreement arises. The judgement and its handoff must fit the service window.

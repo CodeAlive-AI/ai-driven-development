@@ -9,13 +9,9 @@ has been reduced to one box called *environment*, *stakeholders*, *users*, *the 
 The decision needs to know which larger Systems contain it, which other Systems interact with it, which
 transformation flows and interfaces matter, and which outside conditions can change the result.
 
-Begin with one use situation and one receiving engineering decision. Recover only the Systems, direct relations,
-selected structures, conditions, evidence, and assumptions that can change that decision.
+Begin with the receiving engineering decision and the uses it covers. One use situation is enough for a question confined to it. For several uses, establish whether each must succeed separately, whether they depend on one another, or whether the same configuration must support them together. Recover the Systems, relations, conditions and evidence needed for that decision.
 
-The first useful result is a **bounded engineering-use account**. It describes how an actual System participates,
-or how an intended System is expected to participate, in one named use situation. The account is an episteme used
-by those making the decision. The situation, actual Systems, containing wholes, and other obtaining relations remain its
-world-side subjects.
+The first useful result is a **bounded engineering-use account**. It describes how an actual System participates, or how an intended System would participate, in the use or uses on which this decision depends. The account is an episteme. Actual Systems, their containing wholes and the relations obtaining in use are its world-side subjects.
 
 Stop with the relations that answer the use decision. Use the governing FPF
 pattern directly when one known relation—such as parthood, interface, interaction, flow, or an architecture
@@ -84,11 +80,8 @@ obtain any missing specialist result from its domain before relying on it.
 
 #### SYSE.16:4.1 - Perform the Move
 
-1. **Bound the use and decision.** State the actual System or intended System referent selected for engineering, its use situation, configuration or variant, decision, relevant place, horizon and description sources. When it is a creator, retain the products or classes of use that ground the required contribution and local acceptance. Keep the descriptions separate from the Systems and situation.
-2. **Find containing and receiving Systems.** Identify every larger System that matters because the selected
-   System is, or would be, its proper part, and every System that receives or would receive a result of its
-   functioning. State each direct relation and whether it is actual or proposed; retain several wholes when
-   the decision depends on them.
+1. **Bound the use and decision.** State the actual System or intended System referent selected for engineering, its use situation, configuration or variant, decision, relevant place, horizon and description sources. When it is a creator, retain the products or classes of use that ground the required contribution and local acceptance. Keep the descriptions separate from the Systems and situation. To choose the bounds, keep the proposed System fixed and vary a surrounding connection or another permitted use. Then keep the reported overall condition fixed and vary the distribution or timing of contributions. Follow the difference that changes the decision through the relevant parts or operations. Otherwise use the common bound or explanation.
+2. **Find the containing and receiving Systems that bear on the decision.** Identify the larger Systems whose part–whole relations matter and those whose receipt or use of a result could change the answer. Account for every recipient when complete coverage is commissioned. For each relevant connection, establish whether it is actual or proposed.
 3. **Recover functional organization.** Identify the transformation flows, interactions, and contributions in
    which the System participates, including the changed or receiving Systems and conditions. Use `A.6.F` for
    function-like claims and `E.18.NET` when a transformation-flow network is needed.
@@ -195,7 +188,7 @@ environmental, or financial practice. Agents with the relevant authority make th
 
 ### SYSE.16:7 - Conformance Checklist
 
-- [ ] The actual System or intended System referent selected for engineering, use situation, receiving decision, configuration and horizon are stated; a creator retains its product-use grounds and bounded acceptance.
+- [ ] The account covers the System or intended referent, configuration, receiving decision, horizon and the separate or connected uses on which that decision depends. A creator retains its product-use grounds and bounded acceptance.
 - [ ] Actual Systems and intended referents remain distinct from accounts, models, scenarios, and diagrams.
 - [ ] *Suprasystem* is used only with a stated actual or possible-future proper-part relation.
 - [ ] Functional transformation remains separate from constructive parts, bearers, and interfaces.

@@ -16,7 +16,7 @@ Typical moments:
 - a collection needs whole-level characteristics without becoming an acting collective system;
 - an aggregation claim is being used for architecture, assurance, evidence, or MHT reasoning.
 
-**First useful move.** Identify whether the claim concerns part-whole construction, collection belonging under its own rule, or collection-as-whole grounding. For other meanings of composition, use the distinctions and supplying patterns in B.1:4.2. If claim-bearing source wording still says only “role,” use `E.10.ROLE` before choosing a branch.
+**First useful move.** Start with the decision the recipient must make and the evidence already available about its subject. An accepted measurement of the identified whole can settle a question about its value. When the inference depends on constituents or their arrangement, identify whether the claim concerns part-whole construction, collection belonging under its own rule, or collection-as-whole grounding. For other meanings of composition, use the distinctions and supplying patterns in B.1:4.2. If claim-bearing source wording still says only “role,” use `E.10.ROLE` before choosing a branch.
 
 **What goes wrong if missed.** Composition vocabulary and notation can conceal different relations. A role or Method may then be mistaken for a part, a Method structure for evidence of performed Work, a graph for the represented structure, or a collection for an acting whole.
 
@@ -33,14 +33,14 @@ Typical moments:
 
 ### B.1:1 - Problem Frame
 
-Whole-level claims require identified objects and a grounded account of their part or collection relations. Mathematical and computational representations can express or check that account; their notation alone establishes neither holon identity nor parthood.
+A claim about how a whole is constituted or what follows from that constitution needs the relevant part or collection relations. An observation or law applying to the identified whole can answer a question about its characteristic directly. Mathematical and computational representations can express or check a constitution once their correspondence with it is established.
 
 ### B.1:2 - Problem
 
 When these distinctions are missed:
 
 1. **Mereology and notation collapse.** A graph or algebra is treated as the part-whole structure itself.
-2. **Roles and methods become parts.** Role factors, method parameters, guards, steps, and compositions are read as holonic parts because the same word "decomposition" appears.
+2. **Decomposition by label.** A parameter, guard or entry in a procedure is counted as a constituent Method. A Method can itself have constituent Methods when their contributions realize its purpose or maintain its required condition under their rule of combination.
 3. **Work occurrence is inferred from plan.** A method decomposition or schedule is treated as evidence that performed work had those parts.
 4. **Collections become acting systems.** A set, list, batch, fleet, or community is treated as an admitted acting System or responsibility bearer from plural naming, a system-role kind or assignment, a Method, or Work. Admission of the acting collective remains an A.1 question; responsibility also needs the predicate, participants, and pattern or rule that defines it.
 5. **Emergence becomes rhetoric.** A whole-level gain is explained by "synergy" or "more than the sum" without checking existing-whole explanations or B.2 whole reidentification.
@@ -82,6 +82,8 @@ HolonAggregationClaim@Context:
 
 This claim frame identifies the objects, relations, and qualifications needed to rely on the aggregation claim. Include optional fields when they change that claim or its use.
 
+When the arrangement is yours to find, start with what could change the answer. Hold a constituent fixed and change where or how the whole uses it. Hold the reported whole result fixed and change how the constituents produced it. Follow a part or enclosing whole as far as one of those changes affects the requested decision or its grounds. Choose that extent separately for the system, Method, Work or episteme involved. Connect them through the actual relation the answer uses, such as a Work enacting a Method or a record about that Work. At each relevant scale, consider any admissible arrangements the proposed model treats alike. Recover a missing difference if they require different answers. An established rule that covers the remaining possibilities gives a stopping point.
+
 Use:
 
 - `A.14` for `ComponentOf`, `ConstituentOf`, `PortionOf`, `PhaseOf`, collection belonging under the collection's own rule, aspect, and related vocabulary;
@@ -97,7 +99,7 @@ Use:
 | "This object is made of these parts." | Identify the candidate whole and constituents and establish the part relations and construction rule. When holonhood is claimed, apply all six A.1 components and the kind-specific conditions. | `A.1` for holon recognition, `A.14`, `C.13`; `B.3.5` when a publication choice or named current requirement elects its assurance profile. |
 | "These items belong to this collection." | The collection's own belongs-to rule or collection-as-whole grounding; no `ComponentOf` inference. | `A.14`, `C.13`, `C.16` for a collection-level or whole-level characteristic. |
 | “This role is combined from role factors.” | Unresolved source wording. It may mean a relation among local system-role kinds, a classification or assignment, a participation relation, a naming question, or ordinary prose; none is holonic parthood by default. | `E.10.ROLE` first; then `A.2.7` only for the relation among local system-role kinds, or the pattern for the recovered classification, assignment, participation, or naming claim; use `C.29` when a separate mathematical representation-choice, transfer or reliance question remains unresolved. |
-| "This method has steps, parameters, guards, or variants." | Method relation structure, method family, method description, or work plan; not performed work by default. | `A.15`, Method patterns, `C.29` when a separate mathematical representation-choice, transfer or reliance question remains unresolved. |
+| "This method has steps, parameters, guards, or variants." | Method relation structure, method family, method description, or work plan; not performed work by default. | `A.3.1` for Method identity and `B.1.5` for composition. Use `B.1.5.CM` to construct a composite Method and `C.29` when a mathematical representation-choice, transfer or reliance question remains. |
 | "This run contained episodes or concurrent sub-runs." | Work occurrence holarchy with timing, evidence, occurrence identity, and work-part relation. | `A.15.1`, temporal pattern, evidence-use pattern. |
 | "This graph or algebraic notation represents the structure." | Mathematical or representation description of a selected structure. | `A.22` and the applicable architecture or description pattern; `C.29` when a separate mathematical representation-choice, transfer or reliance question remains unresolved. |
 | "The whole shows emergence." | Check applicable explanations within the existing whole first. Use B.2 when changed facts leave a consequential question about whether that whole remains sufficient or a new whole is required. | `B.2`, `B.2.P`, or the characteristic, measurement, architecture, capability, or Work pattern. |
@@ -127,9 +129,9 @@ Blocked uses:
 - source notation as a new U-kind;
 - one fold rule as a universal replacement for the subject pattern.
 
-**Model the same holon at two scales.** Name the whole, the characteristic under investigation and the constituent conditions on which the answer depends. For an existing whole, use its established constitution. For a proposed assembly, identify the parts, their intended arrangement and the conditions stipulated in the design. Report the consequence as conditional until evidence of realization warrants an actual-system claim. For a system this can be an interaction between components. For an episteme, B.1.3 traces a joint conclusion to the claims, meanings and sources being combined. For a method, B.1.5 recovers which constituent supplies what the next one needs. For an occurrence of work, A.15.1 and B.1.5.EW distinguish its actual constituent work from work elsewhere that supplies a result. C.20 identifies what joins reusable practice and knowledge in one discipline.
+**Infer across the composition scales the question needs.** Name the whole, the characteristic under investigation and the constituent conditions on which the answer depends. For an existing whole, use its established constitution. For a proposed assembly, identify the parts, their intended arrangement and the conditions stipulated in the design. Report the consequence as conditional until evidence of realization warrants an actual-system claim. For a system this can be an interaction between components. For an episteme, B.1.3 traces a joint conclusion to the claims, meanings and sources being combined. For a method, B.1.5 identifies which Methods are constituents, what they contribute and under which conditions their organization can achieve the intended result or maintain a required condition. One constituent may supply a result to the next. Several may jointly satisfy a requirement without a prescribed order. For an occurrence of work, A.15.1 and B.1.5.EW distinguish its actual constituent work from work elsewhere that supplies a result. C.20 identifies what joins reusable practice and knowledge in one discipline.
 
-State the relation that carries the inference across the two scales. For a straightforward forward calculation, apply the established rule to the known values. For a sensitivity question, vary a consequential condition and check whether the whole can behave as before and whether it retains its identity. For an inverse question, the observed whole constrains which constituent configurations could account for it. For a design allocation question, the prescribed whole constrains the permitted designs. A mass budget leaves several allocations open until the designer chooses one. Across several scales, establish each direct composition and each step of the inference under the rule for its kind. Swapping the masses of two parts can preserve their total mass while changing their load distribution. A capability that arises from organized interaction needs grounds in that interaction. When you assert an actual encompassing whole, identify its obtaining part relation. A.1:4.2 gives the separate constructive test for possible participation in a larger assembly. Use B.5.MR when two models are also being compared for refinement.
+State the relation that carries the inference across the two scales. For a straightforward forward calculation, apply the established rule to the known values. For a sensitivity question, vary a consequential condition and check whether the whole can behave as before and whether it retains its identity. For an inverse question, the observed whole constrains which constituent configurations could account for it. For a design allocation question, the prescribed whole constrains the permitted designs. A mass budget leaves several allocations open until the designer chooses one. Across several scales, ground the composition on which the conclusion depends. A law covering the full range can carry the inference in one step. When the conclusion depends on an intermediate arrangement, establish what that arrangement contributes. Swapping the masses of two parts can preserve their total mass while changing their load distribution. A capability that arises from organized interaction needs grounds in that interaction. When you assert an actual encompassing whole, identify its obtaining part relation. A.1:4.2 gives the separate constructive test for possible participation in a larger assembly. A model of the complete assembly can be more or less abstract for the same question. Compare the feasible answers that each model admits under the same interpretation. Under B.5.MR a strict refinement preserves the earlier requirements, admits at least one answer and excludes at least one previously admitted answer. If models answer different questions, explain how their results fit together for the receiving use, such as the mass distribution of this skid and the loads its particular supports can carry.
 
 #### B.1:4.5 - Consider explanations within the existing whole
 
@@ -153,6 +155,8 @@ A pump skid can be a `U.System` holon whose parts include pumps, valves, control
 
 B.1 recovers the holon aggregation claim. A.14 names component or portion relations. C.13 gives constructional grounding. C.16 carries whole-level characteristics such as maximum flow or pressure envelope. A drawn graph represents the selected dependencies or other structure of the skid.
 
+For dispatch under a specified mass limit for the assembled skid, its certified gross mass can settle that condition. A certified load or applicable bound for each lifting point can settle a question about those loads. To derive them from the assembly, account for the mass distribution, supports and loading conditions. Moving a pump can preserve gross mass while changing those loads. If the assignment is to design a lifting assessment for a range of layouts, start from the permitted support arrangements and required decisions, then choose the measurements or bounds that distinguish the consequential layouts.
+
 #### B.1:5.2 - Evidence Corpus
 
 A corpus can be a collection under its own inclusion rule and a C.13 set account. This alone does not make it a holon. Treat an integrated claim-bearing corpus as a whole only after all six A.1 matters pass, including constructive part relations, assembly, a composition-grounded whole characteristic, and possible participation in a larger assembly. Coverage, source freshness, bias exposure, or evidential diversity may be collection-level characteristics without settling that stronger question.
@@ -167,7 +171,7 @@ A short B.1 sentence may omit an unused assignment identifier only when every re
 
 A machining method has ordered steps and parameters. Those steps are method relation or method-description material. They do not prove that a performed machining run occurred, nor that the run had the same parts.
 
-If the current claim is the method structure, use Method patterns. Use C.29 when a separate mathematical representation-choice, transfer or reliance question remains unresolved. If the current claim is the run, use A.15.1.
+Use B.1.5 to establish Method composition. If the recipient needs to develop the composition from an intended use, B.1.5.CM explains how to choose the contributions and organize them. Use C.29 when a separate mathematical representation-choice, transfer or reliance question remains unresolved. If the current claim is the run, use A.15.1.
 
 ### B.1:6 - Bias-Annotation
 
@@ -182,7 +186,7 @@ If the current claim is the method structure, use Method patterns. Use C.29 when
 
 | Check | Requirement |
 | --- | --- |
-| `CC-B1-1` | The current claim identifies whether it is part-whole, collection belonging under the collection's own rule, collection-as-whole, a relation among local system-role kinds, classification, assignment, participation, method relation, work occurrence holarchy, selected structure, or mathematical description; unresolved claim-bearing “role” wording is sent through `E.10.ROLE`. |
+| `CC-B1-1` | The result answers the receiving question at its required scope. When choosing the composition or its model is part of the commission, the account explains which distinctions can change that answer and how the selected relations support it. The current claim identifies whether it is part-whole, collection belonging under the collection's own rule, collection-as-whole, a relation among local system-role kinds, classification, assignment, participation, method relation, work occurrence holarchy, selected structure, or mathematical description; unresolved claim-bearing “role” wording is sent through `E.10.ROLE`. |
 | `CC-B1-2` | Part-whole claims name the whole and part participants, identity or recognition rule, part relation, constructional predicate and its defining pattern, plus any aggregation policy, selected structure, ClaimScope, or qualification window that changes the claim. |
 | `CC-B1-3` | A.14 defines the relation vocabulary used here; C.13 defines the construction accounts. |
 | `CC-B1-4` | Relations among local system-role kinds, classifications, assignments, participation relations, and Method relation structures are not treated as holonic parts merely because a label, graph, algebra, or naming convention composes them. `A.2.7` is used only for the first of those branches. |
@@ -217,7 +221,7 @@ Costs:
 
 ### B.1:10 - Rationale
 
-Whole-level reasoning relies on accepted part-whole relations, constructional grounding, and the applicable subject patterns. This supports reasoning across different kinds of objects while retaining their own admission and relation rules.
+An inference from constituents to a whole relies on accepted part-whole relations, constructional grounding, and the applicable subject patterns. This supports reasoning across different kinds of objects while retaining their own admission and relation rules.
 
 Mathematical apparatus remains available. Once the object is known, a graph can represent dependencies, an algebra can express selected composition rules, a tuple can express a slot relation, and a matrix or embedding can support analysis. Use C.29 when a separate mathematical representation-choice, transfer or reliance question remains unresolved.
 

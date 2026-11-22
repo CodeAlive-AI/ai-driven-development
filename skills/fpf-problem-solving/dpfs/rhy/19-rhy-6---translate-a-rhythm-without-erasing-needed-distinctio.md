@@ -50,6 +50,8 @@ Check whether different admitted source cases have the same target reading. For 
 
 If the pair needs different answers, add the missing distinction to the target, retain a companion representation, or give the receiver a way to locate the relevant event or phrase in an accessible source. If the required answers agree, the omission is harmless for those cases and this operation. To return an answer from the target to the source question, establish whether the task needs the original expression, the same timing or a compatible performance. Looking up omitted content and interpreting the target answer perform different work.
 
+Where the player must select one admissible action, several choices may work for each reading. Find when the player must commit to a choice and whether it has to differ across versions. A shared preparation may let the player wait for a later signal. Work back from the decisions needed to finish the passage. While versions sound alike, the player needs a move they can make in all of them, followed by a way to finish using only the signals available before each later move. A different playable continuation in each score helps only if the player can tell which one to use in time. A preparation that makes a later signal perceptible can change which moves are feasible now. For example, three arrangements reserve count 1, 2 or 3 respectively for a solo accent; the ensemble must place its accent on one of the other two counts. If only the first two arrangements are possible, count 3 works in either. With all three possible, every pair has a free count, yet none is free in all three. A distinguishing pickup can permit different choices if it reaches the player in time. Without that information the ensemble needs a change to the arrangement or the promise. A separate instruction to release together on count 4 can still be fully specified.
+
 A richer target vocabulary cannot establish information already discarded from the source. For a trajectory represented by samples, state the basis for an interpolation or reconstruction if the receiver needs a position between them.
 
 #### RHY.6:4.4 - Perform the receiving operation and return its result
@@ -130,7 +132,7 @@ A shared spelling may carry different meanings in two practices. Identify the sy
 - Source and target conventions, references and receiving operation are identified.
 - The account establishes which distinctions the target preserves for the operation, and what further source or correspondence is needed where it does not. These distinctions can include duration and silence when attacks alone are insufficient.
 - Lost, added and unresolved distinctions receive a treatment the receiver can use.
-- When the target supplies an answer, the account gives its interpretation for the source question. If it cannot supply the required answer, the limit is identified.
+- The target gives a justified answer to the source question or identifies the consequential limit. If the player may choose one action, it works across the readings still possible when they must choose, or a timely cue supports the choice between them.
 - For an edited target, the account gives a compatible source interpretation, identifies a conflict or states which required assignment is missing.
 - Claims about an entire translation family have a basis beyond one successful example.
 

@@ -4,7 +4,7 @@ The worked cases use small inputs and explicit operations so that a reader can r
 
 For a combination of methods, check these questions:
 
-- Does the original question require a value, a witness, complete enumeration, an approximation or a continuing behavior?
+- Does each recipient need a value, a witness, complete enumeration, an approximation or a continuing response? If observations must describe the same run, or requests must be served together, which relations must the computation preserve among them?
 - Can each contribution obtain what the next one consumes, under the same input, meaning and resource conditions?
 - What is retained or discarded by sharing, compression, relaxation, sampling, learning or translation, and can that change the requested answer?
 - Which argument covers correctness and which covers termination or continuing progress? Are their operations and assumptions available in this setting?

@@ -1,7 +1,7 @@
 ## STR.Reference:8 - Conformance Checklist - Correct use of the connected language
 
 
-- The strategic subject, receiving question and horizon are clear, as is the decision holder when a choice is requested.
+- The strategic subject, recipient, question and horizon are clear. Where a choice is due, the account identifies who may make it and which decisions or grounds the commissioned participant must develop.
 - An unsettled problem, a direction, an explained obtaining way and an examined exploratory intermediate remain different results; a sufficient result permits direct entry.
 - A comparison includes the serious feasible alternatives, including continuation or stopping where applicable.
 - Evidence and comparisons concern the same options, configuration and conditions.

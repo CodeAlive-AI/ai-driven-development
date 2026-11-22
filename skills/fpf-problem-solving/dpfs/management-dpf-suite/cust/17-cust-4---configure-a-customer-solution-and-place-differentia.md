@@ -43,11 +43,11 @@ A direct configurator suits choices whose consequences the recipient can underst
 
 Use defaults and recommendations as explained assistance, not hidden commitments. When a choice transfers work to the recipient, show that work. For example, customer-hosted delivery may require local monitoring, updates and access arrangements that provider-hosted delivery supplies differently.
 
-The result is a selected or short-listed combination with fit grounds and remaining conditions. If no combination fits, say what fails and return the substantive difference. An option the form will accept still needs qualified fit and provision.
+The result is a selected or short-listed combination with fit grounds and remaining conditions. If no combination fits, say what fails and return the substantive difference. An option the form will accept still needs qualified fit and provision. A recommendation can name one fitting member. If customers retain the right to choose later, identify what supply choices must remain possible until their decision arrives.
 
 #### CUST.4:4.3 - Place common work and customer-dependent work
 
-For each consequential activity, ask what information or commitment must be known before it can be performed correctly. This identifies the point where customer-specific work begins, often called the customer order decoupling point in production settings.
+For each consequential activity, establish which customer information or commitment its performer must have before committing to it. In a sequential production route this can locate a customer order decoupling point. Independent branches can have different decision times. Determine where they must rejoin and what the customer is still free to choose at each point.
 
 Compare at least the feasible early and late arrangements. Common preparation might include a base assembly, a tested module, a training method or a reserved service slot. Customer-dependent work might include final assembly, calibration, semantic mapping, local training or permission-dependent configuration.
 
@@ -62,9 +62,9 @@ Late calibration can become the bottleneck. Early software preparation can avoid
 
 #### CUST.4:4.4 - Construct the complete chosen route
 
-Follow the selected member from preparation to acceptance. Name the customer-dependent input, its supplier and required arrival time. Join it to the operation that consumes it. Resolve what happens if it is late, ambiguous or unusable.
+Follow the selected member from preparation to acceptance. Name the customer-dependent input, its supplier and required arrival time. Join it to the operation that consumes it. Resolve what happens if it is late, ambiguous or unusable. If the customer may still choose between members, follow each live choice back to the provider’s first irreversible commitment. At that moment the provider needs an action that works for all choices still indistinguishable to it, or timely information and authority to distinguish them. The same comparison applies to combinations of rights held by different customers.
 
-Obtain an operating-capacity result through [OPS.10 — Qualify Operating Capacity Under Variability](../ops/40-ops-10---qualify-operating-capacity-under-variability.md) when variability or a shared resource can defeat the timing. Check the relevant demand mix, waiting, variability, resource availability and supported operating conditions. An average utilization figure alone cannot settle the timing. Revise the differentiation point or promise if they do not fit.
+Obtain an operating-capacity result through [OPS.10 — Qualify Operating Capacity Under Variability](../ops/40-ops-10---qualify-operating-capacity-under-variability.md) when variability or a shared resource can defeat the timing. Check the relevant demand mix, waiting, variability, resource availability and supported operating conditions. An average utilization figure alone cannot settle the timing. Revise the differentiation point or promise if they do not fit. Under OPS.13, distinguish an appointment already agreed, a forecast of demand and an undertaking to meet every permitted call. Two branches that call equally often may alternate or call together. Their separate frequencies leave the coincidence of calls open.
 
 Use CUST.6 where the route itself needs a repeatable delivery method. Use CUST.7 for the complete resource comparison. A configuration with a shorter quoted installation can be worse when qualification, customer preparation or support is included.
 
@@ -80,7 +80,7 @@ Observation alone is not influence over an outcome. A provider need not control 
 
 Give the recipient and delivery participants the chosen result, variations, required contributions, timing, support and acceptance conditions. Where choices are reversible, preserve a cheap return; where changing them later creates rework or obligation, make that consequence visible before commitment.
 
-Return recurring no-fit requests to CUST.3 as evidence about the solution-space boundary. Return an isolated unsupported difference to CUST.2 for local disposition. Preserve the selected configuration identity for later support and CUST.8 transitions.
+Return a mismatch to CUST.3 when it challenges the promise for a member the family admits. One order within that promise can reveal the need to revise the rule or the provision. Repeated requests outside the stated family can remain local under CUST.2, or inform a proposal to extend it. Preserve the configuration actually selected for support and CUST.8 transitions.
 
 ### CUST.4:5 - Archetypal Grounding
 
@@ -88,7 +88,7 @@ A test-bench supplier can stock complete benches, stock a common base and instal
 
 The supplier first excludes module combinations whose joint accuracy is unqualified. It then compares two supported choices: a stocked complete bench available sooner, and a base with later calibration providing the requested range. The latter saves speculative variant preparation only if a calibration slot and the required module are available. A queue at calibration can make the apparently leaner arrangement miss the promise.
 
-The selected route reserves the module and calibration resource, obtains the customer's range confirmation before final work and states the acceptance evidence. If the customer changes the range afterward, the route returns to fit and resource qualification rather than silently substituting a module.
+The selected route reserves the module and calibration resource, obtains the customer's range confirmation before final work and states the acceptance evidence. If the customer changes the range afterward, the route returns to fit and resource qualification rather than silently substituting a module. If the provider must reserve a range-specific module before the customer has to confirm the range, two individually feasible routes can leave the offer unfulfillable. An available common module, a reversible reservation or an agreed earlier choice can make the offered selection feasible.
 
 In an analytical service, private hosting is not “inventory” in the same physical sense. The common deployment tooling may be prepared early, but identity, access and data interpretation must be resolved with the customer. The relevant postponement question concerns dependency and timing, not stock cost copied from manufacturing.
 
@@ -104,7 +104,7 @@ The production vocabulary can overfit material flows. Use subject-specific model
 - Are infeasible combinations excluded for stated reasons?
 - Does a recommendation expose transferred work and responsibility?
 - Is the customer-dependent work placed where its inputs and capacity are obtainable?
-- Has the complete timing and resource effect been considered?
+- Can the participants make the choices they retain with the information, authority and resources available when each commitment is due? Where orders compete for those resources, can the provider honour the permitted combinations?
 - Does a changed form of provision have its own supported responsibility and evidence basis?
 
 ### CUST.4:8 - Common Anti-Patterns and How to Avoid Them

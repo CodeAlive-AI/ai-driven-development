@@ -64,7 +64,7 @@ A useful worked example is a compact case with nine visible parts:
 
 1. **Title, working situation, and gain.** Name the situation in ordinary language and say what practical error or decision the example resolves.
 
-2. **Worked claim.** State one bounded claim. Example: “June availability is evaluated from observations of the defined service-delivery Work, not from the approved runbook.”
+2. **Worked claim.** State the decision the reader can make in this case. If the page teaches a method for other cases, give the operation and the grounds for its stated range. You can do this within the story. When you have only a particular solution, use C.39.RO to distinguish the case values from the conditions the solution depends on, construct the operation for other admissible inputs, and establish where it works.
 
 3. **Actual subjects.** Name the values and entities the claim concerns, distinguishing its subject, relation participants and result.
 
@@ -72,7 +72,7 @@ A useful worked example is a compact case with nine visible parts:
 
 5. **Exact source basis.** Cite the source and edition and, where local wording matters, the expression, claim, and effective scheme. Add an F.17 cell only if the exact local meaning needs a stable address for this use.
 
-6. **Obtaining relations.** For each relation, name its exact participants, direction, basis, and loss. Use F.9 when the example tests a proposed relation between local meanings with different interpretation bases. Assert a Bridge only if its predicate holds.
+6. **Obtaining relations.** Name the participants and state how they are related, including the orientation of a directed relation. Identify the inference the reader can draw in the intended direction of use. Show what supports that inference and which information, if lost in a transfer, could change the receiving action. Use F.9 when the example tests a proposed relation between local meanings with different interpretation bases. Assert a Bridge only if its predicate holds.
 
    Use the defining or testing pattern for MethodDescription membership, enactment, performed Work, measurement, evidence, fulfilment, kind, assignment, publication, transformation, and any load-bearing indicator relation. Use C.16.P to recover the proposed indicator relation. If no rule defines or tests it, return A.6.RCD `missing-governor`. When a rule exists, state what the case evidence supports under it.
 
@@ -84,13 +84,13 @@ A useful worked example is a compact case with nine visible parts:
 
 8. **Optional comparison surface.** If two or more local meanings or source claims are hard to compare in prose, add one compact F.7 table. State the receiving-use conclusion separately. Omit the table when it adds ceremony but no clarity.
 
-9. **Micro-narrative and checks.** Walk briefly from the working situation through the actual relations to the result. End with the direct subject checks that let the reader replay the claim, and add a non-use boundary only when F.19's grounded-contribution test requires it. Add F.15 only when a finite naming slice needs its static or regression checks.
+9. **Micro-narrative and checks.** Walk from the working situation through the relations to the result. For a transferable method, show which of its decisions the example illustrates. If independent choice is being assessed, establish what the reader chose and what the task, a diagram or a helper already supplied (E.8:4.2.1.3). A prior independent performance may suffice. End with the subject checks that let the reader replay the claim. Add a non-use boundary when F.19 justifies it, and F.15 when a finite naming slice needs its checks.
 
-**Memory rule.** If the case cannot fit on one page or slide, reduce it to one claim or split it into linked examples. When shortening the case, keep the evidence or relation that makes its claim intelligible.
+**When a case needs several pages.** Keep the decision the reader came to make. A request about one case can finish with its supported answer. If one method is meant to work across a range, identify the conditions and the operation that remain valid as case values change. A derivation for arbitrary admissible inputs may fit on one page. If several pages establish results about different parts, kinds of holons or model abstraction levels, show where those results enter the same decision and why they hold together. Check shared inputs, handovers or other dependencies that can change it. A claim about each member, a claim about a relation between members and a claim about the whole can require different grounds (C.39.QR and C.37.MM). If the working example has displaced the argument for the range, use C.39.GA to recover and repair that argument.
 
 ### F.16:6 - Invariants
 
-1. **Claim first.** The example states one recognizable claim and practical gain before its architecture.
+1. **Claim first.** The reader can identify the worked claim and its practical use. For a method to be reused, the reader can recover what to do when case values change, which premises must still hold and why they suffice.
 2. **Actual subjects.** World, claim, evidence, status, and use assertions attach to actual values, not lexical cells or rows.
 3. **Direct relations.** Every substantive relation cites the pattern that defines or tests it; F.9 is conditional on a real local-meaning relation, and the word *proxy* never supplies an indicator relation.
 4. **Optional aids.** F.17 cells and F.7 tables appear only when they reduce reader effort; their presence or layout does not supply evidence.
@@ -98,7 +98,7 @@ A useful worked example is a compact case with nine visible parts:
 6. **Time and object distinctions.** MethodDescription, Work, observation, and output remain distinct; windows are stated when they change the result.
 7. **Agency precision.** Every asserted dated Work uses the performer's recovered A.13 core and independent A.15.1 admission. The core includes its obtaining assignment; add F.6 only when the worked claim needs precise assignment-bound attribution. Recover a separately needed local-kind or description claim under its own rule.
 8. **Evidence, evaluation, and boundary.** The page shows why the claim is supported. An evaluation retains its inputs, rule, result and applicable scale; any claimed or required evaluation Work, exact application, status and durable verdict assertion remain distinct. State the consequential limits of the result.
-9. **Didactic parsimony.** Every item changes the worked answer; optional machinery is omitted when it does not.
+9. **Didactic parsimony.** Keep what the reader needs for the worked answer or the promised method. A condition may leave the answer in this case unchanged and determine whether the method works elsewhere.
 
 ### F.16:7 - Optional comparison panel
 
@@ -131,7 +131,7 @@ If a separately recovered F.10 rule maps `Met` to `RequirementStatus=Satisfied` 
 
 **Replay and boundary.** The available and unavailable minutes sum to 43,200. The 40 unavailable minutes are below the permitted 43.2, and the computed ratio exceeds 0.999. With 50 unavailable minutes the same rule would return `NotMet`.
 
-If complete coverage were missing, this worked evidence basis would not support either conclusion; return the rule's missing-evidence question instead of inventing coverage or a pass.
+With missing observations, bound the unavailable time over the full window. Forty confirmed unavailable minutes and two unclassified minutes, with every other minute confirmed available, give at most 42 unavailable minutes. The threshold is met. Forty-four confirmed unavailable minutes already establish `NotMet`. If a qualifying and a failing history both fit the evidence, leave this threshold decision open. Apply any separately stipulated complete-trace or missing-data rule to the obligation it governs.
 
 #### F.16:8.1 - Applying the canvas to a multi-source availability case
 
@@ -155,7 +155,7 @@ If the case uses an indicator, apply E.13 only when that indicator is optimized 
 
 **Result.** A System performs evaluation Work, enacts the evaluation Method, and applies the declared availability rule to June's in-scope observations. The A.6.1 application binds those inputs and returns a result on the declared acceptance scale.
 
-Map the result to `RequirementStatus=Satisfied` or `RequirementStatus=Violated` only through the exact F.10 rule. If the evidence is inadequate, use `EvidenceStatus=Inconclusive` and leave `RequirementStatus=Pending`, or return the exact local result declared by the scale.
+Map the result to `RequirementStatus=Satisfied` or `RequirementStatus=Violated` only through the exact F.10 rule. When the available evidence permits both threshold outcomes, state what remains open. Report `EvidenceStatus=Inconclusive` or `RequirementStatus=Pending` only when the corresponding F.10 rule supports that status. Preserve any result the local acceptance scale prescribes.
 
 Create a verdict episteme only if another use needs it. State whether the promise was met, was not met, or cannot yet be judged from the evidence. The approved runbook establishes none of these results or statuses.
 
@@ -244,8 +244,8 @@ Cite the MethodDescription edition only if it changes the result or replay, and 
 * **SCR-F16-S05 (source and evidence).** Exact sources and editions and the A.10 evidence-use basis are visible where they affect the claim; B.3 appears only for an actual named assurance claim.
 * **SCR-F16-S06 (optional aids).** Cells and tables are omitted when they do not reduce reader effort; their presence or layout is not treated as evidence.
 * **SCR-F16-S07 (time and agency).** Windows, Work, System, assignment, and attribution are explicit when material.
-* **SCR-F16-S08 (one-page parsimony).** Every included item changes the answer; a larger case is split without losing its basis.
-* **SCR-F16-S09 (evaluation architecture).** When evaluation is present, its inputs, rule, supported result and applicable result scale are recoverable. Any claimed or rule-required performing System, evaluation Work, enacted Method and exact application/result binding satisfy their direct patterns; any selected EvidenceStatus, RequirementStatus or durable verdict assertion remains separate.
+* **SCR-F16-S08 (one-page parsimony).** Each item helps the reader establish the worked claim or use the promised operation. A split case preserves access to its joint premises and conclusion.
+* **SCR-F16-S09 (evaluation architecture).** When evaluation is present, its inputs, rule, supported result and applicable result scale are recoverable. Any claimed or rule-required performing System, evaluation Work, enacted Method and exact application/result binding satisfy their direct patterns; any selected EvidenceStatus, RequirementStatus or durable verdict assertion remains separate. For a claim about a class or a whole, the reader can recover the grounds for each aspect claimed. When the claim concerns interactions across a range, explain why the connection holds across that range. For an individual case, the evidence may settle that case directly.
 
 #### F.16:14.2 - Regression
 
@@ -257,7 +257,7 @@ Cite the MethodDescription edition only if it changes the result or replay, and 
 
 ### F.16:15 - Migration notes
 
-1. **Refactor source tours.** Recover the practical question and one claim; keep only sources that change that answer.
+1. **Refactor source tours.** Recover the receiving use and its worked claim. Keep the sources needed for that answer or the method the reader is meant to reuse.
 2. **Replace mandatory rows.** Retain a table only if it improves comparison; move substantive relations and conclusions back to their direct statements.
 3. **Replace cell subjects.** Name actual kinds, Systems, Work, claims, observations, values, and evidence; leave cells as optional wording addresses.
 4. **Split generic Bridges.** Restore MethodDescription membership, description use, enactment, performed-Work, measurement, evidence, reliance, fulfilment, kind, assignment, publication, or transformation claims as applicable. Add an indicator relation only when a defining or testing pattern supplies it; otherwise retain the blocker.
@@ -276,6 +276,7 @@ Cite the MethodDescription edition only if it changes the result or replay, and 
 
 * Recognizable situation, failure, and gain?
 * One bounded worked claim and receiving use?
+* If the method is meant to transfer, which inputs and choices can change, and why does the operation still work? If several parts or pages supply the answer, what holds their results together across the stated range?
 * Actual values named?
 * Defining or testing pattern named for every substantive relation, with direct measurement checked before any proxy?
 * Exact sources and editions and evidence where material?

@@ -4,7 +4,7 @@ Before relying on a combination, ask what can change the answer:
 
 - Does each needed contribution exist and meet the next operation's conditions?
 - Do the observation, information timing, physical preparation and mathematical interpretation describe the same intended situation?
-- Does a simplification preserve the consequence now required?
+- Does the simpler model preserve the consequence required here? Check whether it merges histories that give different answers, admits combinations the subject cannot realize, or excludes a case the promised answer must cover. Trace the subject, method and performed work only as far as that conclusion needs.
 - Can the result be obtained with the available means, or is a bound, reformulated question or different construction sufficient?
 - When a premise changes, which contribution must be revised and which can remain?
 

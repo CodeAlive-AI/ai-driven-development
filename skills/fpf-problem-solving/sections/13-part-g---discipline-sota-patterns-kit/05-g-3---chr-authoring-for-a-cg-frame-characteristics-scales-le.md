@@ -223,11 +223,11 @@ Authors may give a guard macro a convenient name. Its definition MUST cite the g
 * `CSLC_PROOF_REQUIRED(x)` (MM‑CHR legality governing definitions: `A.18/C.16`)
 * `UNKNOWN_TRI_STATE(x)` (tri‑state semantics governed by `G.Core`)
 * `UNIT_CHECK(x)` (MM‑CHR legality governing definitions)
-* `RETURN_SET_FOR_PARTIAL_ORDERS()` (set‑return semantics governed by `G.Core`)
+* `RETURN_SET_FOR_PARTIAL_ORDERS()` follows CC‑GCORE‑SET‑1. For A.19.CPM, retain the returned set of relation or poset tokens. A frontier under C.18:4.4 requires applying dominance to the stated candidate domain. A G.5 selection has its own outcome.
 * `METRIC_EDITION_REF(...)` (edition‑pin discipline governed by `G.Core`; metric semantics governed by `C.18`/`C.21` as applicable)
 
 **S7 — Publish `AggregationSpecs` (typed, admissible, reproducible).**
-CHR may publish typed aggregation/comparison specs whose admissibility follows from their declared scales, constraints and proof basis, for use by `G.4` and `G.5`. For any published spec:
+CHR may publish typed aggregation/comparison specs whose admissibility follows from their declared scales, constraints and proof basis, for use by `G.4` and `G.5`. When deriving a characteristic of the whole from measurements of its parts, show that they concern compatible conditions and identify the joint dependency or bound supporting the aggregate (G.0:4.5.1). A direct measurement of the whole can supply the characteristic on its own measurement basis. For any published spec:
 
 * The legality regime is explicit (scale/unit/polarity constraints + required proof hooks).
 * If a contributor folding policy (Γ‑fold) is used and not explicitly overridden, cite `DefaultId.GammaFoldForR_eff` through `G.Core.DefaultGoverningDefinitionIndex`; do not restate the default here.

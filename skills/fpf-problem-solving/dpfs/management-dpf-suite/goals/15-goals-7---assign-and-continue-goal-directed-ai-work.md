@@ -55,9 +55,9 @@ Recognition notices an assignment whose text, authority or continuation cannot s
 
 ### GOALS.7:5 - Archetypal Grounding
 
-A maintenance agent is assigned to find why a report misstates totals, repair the authorized source and produce a verified result for review. The existing instruction permits local edits and tests, while publication belongs to another role. The agent recovers the source and consumers, repairs the calculation, performs the relevant checks and gives the reviewer the usable candidate and evidence.
+A maintenance agent is assigned to explain why a report misstates totals, repair the authorized source and return the verified repair for review. The reporting rule counts each eligible posted transaction once in its posting period. The agent follows an overstated transaction through the calculation. Joining the ledger to review notes creates one copy for each matching note. A transaction with two notes was counted twice. The agent changes the calculation to count eligible transactions by ledger identity before the notes are attached and keeps that total independent of how many notes a transaction has. Local edits and tests are authorized. Publication belongs to another role.
 
-For that review, the accounting owner supplies the transaction population and a separately calculated control total. The agent can edit the report code and its unit tests; changing their expected values could make those tests pass while leaving the accounting error intact. The reviewer therefore compares the repaired report with the retained transaction basis and control total. If an authorized correction changes which transactions belong to the period, the accounting owner resolves that criterion and the comparison is rerun. The evidence now concerns the intended accounting result under the agreed criterion.
+The accounting owner supplies the eligible ledger population and an independently calculated control total. Agreement with that total can settle a request for this period's aggregate. For the commissioned repair, the reviewer can also trace which source rows entered the calculation, why the old join changed their contribution, and why the corrected rule includes each eligible transaction once regardless of the number of notes. The reviewer checks that a transaction with no notes is still included and one with several contributes once. An omission and a duplicate could cancel in a single total. If the owner changes the rule for which transactions belong to the period, compare under the authorized rule.
 
 Now change the task: the agent is authorized to carry an accepted change through the actual release path. Returning only a tested patch leaves the assigned result incomplete. The continuation must include the authorized integration, publication checks and recipient access, subject to the actual environment. This difference follows the mandate, not a universal human approval after every tool call.
 
@@ -72,13 +72,13 @@ Capabilities vary by model, configuration, tools and task. Evaluate the required
 - Does the assignment preserve the intended receiving result and its scope?
 - Are consequential actions within effective authority and available means?
 - Can the runtime recover the state required for continuation?
-- Does completion evidence concern the result rather than only the last operation?
+- Does the evidence settle the requested result at its scope, including the cause or behavior under other inputs when a diagnosis or a recurring repair was assigned?
 - What does the evaluation score warrant, and who can alter the criterion, data or evaluator on which that conclusion relies?
 - Are required independent and human contributions preserved without unsupported duplication?
 
 ### GOALS.7:8 - Common Anti-Patterns and How to Avoid Them
 
-**Stopping at the user's example:** recover the broader assigned result and compare it with what remains.
+**Stopping at the user's example:** identify whether the commission concerns this instance, the cause of its failure or a repair that works on future inputs. Use the particular result directly when it answers the commission, and establish the additional grounds for a wider claim when one was made.
 
 **Persistence by assertion:** use an effective continuation mechanism and its actual limits.
 

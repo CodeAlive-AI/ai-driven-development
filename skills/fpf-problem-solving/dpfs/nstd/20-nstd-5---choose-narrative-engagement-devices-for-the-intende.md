@@ -56,7 +56,7 @@ For a design or an assessment, use the parts of this comparison that answer the 
 2. Identify the relations, qualifications or choices the reader still needs to recover.
 3. Identify the device at work or try one suited to the task. An analogy can introduce an abstract relation, an open question can invite attention, and repetition can keep a distinction available.
 4. For a comparison of devices, identify what each treatment adds, changes or removes in order, salience, wording or repetition. Use an available relevant alternative where it helps. For an actual response, establish what the reader reported or did. Examine prior knowledge and other conditions when they bear on a claim about change, independent understanding or the device’s contribution.
-5. Examine what a reader can infer under the intended conditions. Does the passage express an uncertainty as settled, let an analogy stand in for a definition or omit a consequential alternative?
+5. Read the scenes together. After hearing one former library user describe the loss of a meeting place, an exhibition visitor can understand that person’s stakes. Placing the same testimony under “What every resident lost” extends the claim to other people. Examine what the sources establish about them. If the question concerns one person’s experience, the testimony may already suffice. Also examine consequential uncertainty, the limit of an analogy and any alternative the presentation conceals.
 6. Report the finding. If an editorial choice is needed, keep, change or remove the device according to its contribution and cost. A sufficient simpler passage can be retained. Use `NSTD.6` for a qualified quality evaluation and `NSTD.8` for a learning question.
 
 Where voice matters, use NSTD.4’s speaking relationship and its selected examples or new treatment. A joke, intimate address or repeated question can change who seems to speak and how that speaker treats the reader. Compare the passage with its surroundings and the required voice. A device developed for an essay may need changing for an instruction or a decision notice.
@@ -169,12 +169,12 @@ The following examples show how a device can help or obstruct a particular use.
 
 | Device | Good use | Failure mode | Repair |
 | --- | --- | --- | --- |
-| Hook | Raises a question the account helps the reader answer or explore. | Promises a particular answer the material never supplies. | Change the promise or supply the missing contribution. |
+| Hook | Raises a question the account helps the reader answer or explore. | Promises a particular answer the material never supplies. | Change a hook the author chose. When the commission requires the promised answer, supply its grounds or identify what remains open. |
 | Tension | Keeps an unresolved relation worth following. | Presents a disputed explanation as a settled outcome. | Retain the live alternative and its grounds. |
 | Identification | Helps readers experience a viewpoint. | Sympathy hides another affected participant or relevant alternative. | Restore the missing viewpoint or alternative where the intended decision needs it. |
 | Analogy | Makes abstract structure graspable. | Replaces definition or proof boundary. | State where analogy stops and source returns. |
 | Repetition | Keeps an easily lost relation available. | Repeats a slogan that obscures the relation. | Repeat the meaningful distinction; add a reconstruction attempt when learning calls for it. |
-| Compression | Can make a passage usable in the available time. | Removes a distinction the reader needs later. | Restore that distinction or restrict the stated use. Use `A.6.3.CSC` when the allowed coarsening itself needs analysis. |
+| Compression | Can make a passage usable in the available time. | Removes a distinction the reader needs at a later choice. | Retain the distinction or give the reader access to it before that choice. If the material supports only a narrower account, state its reach and return any outstanding part of the commission. Use `A.6.3.CSC` for a question about the allowed coarsening. |
 | Literary style | Supports pacing, atmosphere or a felt experience. | Its appeal is used to vouch for a factual claim or for quality under another criterion. | Identify the intended expressive result and the basis for any stronger claim. Use language-state or quality guidance where that question remains open. |
 
 Compare the actual passages and the use. A dry treatment may lose attention before a needed relation, and a vivid one may conceal its limiting condition. If either difficulty matters, change the feature that contributes to it.
@@ -233,7 +233,7 @@ Interest, confidence and sympathy can matter to a narrative’s purpose. To supp
 | `CC-NSTD5-1` | The editor identifies which reader experience or expression the device is intended to support. An observed effect is grounded in the corresponding reception. |
 | `CC-NSTD5-2` | Relations and conditions needed for that use remain recoverable. |
 | `CC-NSTD5-3` | Persuasion, policy, work, evidence, ethics, and assurance use boundaries are explicit when live. |
-| `CC-NSTD5-4` | Affected readers, listeners, or groups are named when harm or manipulation risk is live. |
+| `CC-NSTD5-4` | When the account raises a question about harm or manipulation, identify whose interests or choices it concerns at the scope the judgement requires. A claim about everyone affected needs grounds covering that group. |
 | `CC-NSTD5-5` | Judge engagement by its role in the stated use. Where the task requires recovery of a source relation, assess whether that relation is available and use an appropriate response for a claim about actual understanding. |
 | `CC-NSTD5-6` | For an editorial choice, compare the device’s contribution and cost with the passage without it or an available relevant alternative. For a causal claim, use a comparison that distinguishes its effect. A report of what a reader noticed or experienced can use evidence of that response. Examine an ambiguity further when it matters to the conclusion. |
 

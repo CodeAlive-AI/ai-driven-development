@@ -8,7 +8,7 @@
 
 **Use this when** you can state behavior that a computation must obtain, but the available units and operations do not yet give a workable way to obtain it. The difficulty can appear before implementation or after a change: separately sensible steps do not compose, a small unit discards information the join needs, or every client must repair the same invalid intermediate arrangement.
 
-The useful move is to design the units and their permitted operations together. Try constructing the required whole, recover what a failed join needs, and change the unit, the operation or the conditions of assembly. Then connect that computational abstraction to an obtainable implementation. The result is a usable level of operations with grounds for its whole behavior.
+Design the computational units and their permitted operations together. Assemble the required whole and establish what its clients can do with it. If a join fails, determine what it needs and revise the unit, the operation or the conditions of assembly. Connect the chosen abstraction to an obtainable implementation. The result is a usable set of operations with grounds for the behavior of the whole.
 
 For example, deciding whether each text fragment is locally balanced loses information needed to decide whether their concatenation is balanced. A richer fragment meaning can make the join both simple and general. In a continuing service, exposing separate count reads and writes can invite invalid combinations; a state-changing operation with an explicit admission rule can make a capacity condition maintainable. Neither remedy is selected by choosing a storage format alone.
 
@@ -35,7 +35,7 @@ Starting only from small familiar operations can make the whole unnecessarily di
 
 ### CMP.16:4 - Solution
 
-Construct a provisional whole with proposed units and operations, use its first consequential failure to revise them together, and justify the resulting level against both its clients and its implementation. The moves below can return to one another. Use an existing interface when it meets the requirements.
+Construct a whole with proposed units and operations and establish what its clients can obtain under its implementation conditions. If the first construction suffices, its justification can complete the design. When a join or a permitted use reveals a missing contribution, revise the units and operations together. An existing interface can supply the result when it meets the requirements.
 
 #### CMP.16:4.1 - Recover the behavior and the freedom to change its construction
 
@@ -43,7 +43,7 @@ State what a recipient must observe or do with the result. Include consequential
 
 Recover the admitted cases and the available operations through C.29.2. Separate required behavior from an inherited implementation choice. A requirement to preserve order does not require an array; a capacity limit does not necessarily require exposing a mutable counter. Conversely, a physical coupling, a particular external format or an existing client's observation can be binding. Do not change those requirements merely to make the preferred construction easier.
 
-Choose one whole use that exposes the difficulty and a consequential variation. These are design probes, not the scope of the method. If the proposed change would answer a different question, make that difference explicit and return it to the receiver instead of presenting the changed answer as preservation.
+Begin with a whole use that exposes the difficulty. If several uses are promised, determine which must succeed together, which may be served independently and what results or resources they share. Hold a proposed unit fixed and change an allowed input, continuation or interaction that could change one of those uses. Keep distinctions whose loss would change the required observation or prevent its timely production. A direct argument covering the uses can already settle the choice. If a proposed change would answer a different question, return that difference to the receiver.
 
 #### CMP.16:4.2 - Try the whole before fixing the units
 
@@ -57,7 +57,7 @@ Suppose each proposed part has supplied exactly its promised result. Attempt the
 - Pass context or postpone a choice when a part cannot correctly decide without information available at the join.
 - Change the decomposition when obtaining the missing contribution would repeat the original difficulty or exceed the resource limit.
 
-Try a simple alternative alongside the favored design. Keeping the original units and checking the final result can be cheaper when invalid assemblies are rare and harmless. A stronger constructor is useful when it makes repeated use or reasoning materially easier.
+When the choice is still open or a comparison is commissioned, try a simple alternative alongside the favored design. Keeping the original units and checking the final result can be cheaper when invalid assemblies are rare and harmless. A stronger constructor is useful when it makes repeated use or reasoning materially easier.
 
 #### CMP.16:4.3 - Give the proposed unit a meaning through its uses
 
@@ -189,11 +189,11 @@ Recognition asks whether the units and operations themselves need construction f
 
 For assurance of the selected construction, establish the consequential claims:
 
-- the required observations, admitted continuations and coverage conditions;
+- the required observations and continuations, including the conditions under which results must be obtained together and the argument covering those conditions,
 - obtainable constructors and operations, including any required external primitive;
 - the reason their permitted assembly preserves meaning and any claimed invariant;
 - progress and resource conditions distinct from value correspondence;
-- the first changed action or representation under a consequential variation.
+- the action or representation that must change under a consequential variation, or the ground showing the existing construction still serves the changed use.
 
 Use evidence suited to the conclusion. A trace can refute a claim; a general preservation claim needs its applicable argument; an actual realization needs its implementation basis.
 

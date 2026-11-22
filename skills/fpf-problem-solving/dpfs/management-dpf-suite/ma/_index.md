@@ -74,7 +74,7 @@ The calculations below are constructed cases under supplied operating, contractu
 
 1. **Identify the events and accounting policies behind each view.** MA.4's case starts with zero inventory, receivables and payables and includes only the transactions described below. Producing 100 units costs 200 in materials and 300 in resource supply, all paid; sixty units sell for 600, of which 400 is received and 200 remains receivable. Under the supplied full-production-cost policy, cost of sales is 300, closing inventory 200 and the reported result 300. Cash movement is −100.
 2. **Carry the reconciliation to its user.** The internal account values inventory at materials only and expenses the 300 resource-supply payment, giving a result of 180 and inventory of eighty. Thus 300 − 200 inventory − 200 receivables and 180 − 80 inventory − 200 receivables both give −100. The 120 difference between results is retained production-resource cost, not another receipt. Preserve each view for its warranted use. If an event or policy is unresolved, obtain that answer from OPS.15 or the responsible reporting practice.
-3. **Use the explanation to examine a consequential choice.** Suppose management considers producing 120 units with the same 300 resource payment and unchanged sales of sixty. MA.9 compares the account and the resulting resource use: unit cost falls from five to 4.5, but materials consume forty more in cash and unsold quantity rises from forty to sixty. This establishes the divergence the measure conceals. Whether an actual production increase followed that incentive, anticipated demand or another reason remains a separate question.
+3. **Use the explanation to examine a consequential choice.** Suppose management considers producing 120 units with the same 300 resource payment and unchanged sales of sixty. Assume the provider buys and pays for the additional material this period. MA.9 compares the account and the resulting resource use: unit cost falls from five to 4.5, but materials consume forty more in cash and unsold quantity rises from forty to sixty. This establishes the divergence the measure conceals. Whether an actual production increase followed that incentive, anticipated demand or another reason remains a separate question.
 4. **Repair only the supported problem and return changed conditions.** If the account's use is the established problem, the responsible manager can stop treating lower unit cost alone as improved performance and consider demand, inventory and resource consequences together. Preserve the legitimate reporting account. Evidence of a warranted future requirement could instead support the extra production. A changed measurement or allocation basis returns to MA.4 or MA.3 before a performance comparison; [MA.7 - Explain a Cost or Margin Difference](14-ma-7---explain-a-cost-or-margin-difference.md) uses comparable meanings to separate the consequential difference from its still-unresolved cause.
 5. **Carry the account into the next period when needed.** MA.4:5.2 starts from the remaining forty units and receivable, then derives the next closing balances. Results of 320 and 340 both connect to cash movement of 400. The changed result difference follows the release of earlier inventory cost; the explanation requires opening as well as closing values.
 
@@ -111,7 +111,7 @@ The calculations below are constructed cases under supplied operating, contractu
 
    Each cohort would fit the basic capacity alone, but their month-2 total requires the extra block. Both setups remain because the supplied work requires them. A proposed shared setup needs an operating basis before either is removed. The payment of 240 is for the common supply arrangement and appears once in the whole account.
 
-3. **Distinguish the future difference from assigned and historical amounts.** The proposed cohort costs 600 to acquire before month 2. It pays 3 per active customer for service at month start and receives 15 per active customer at month end. Receipts total 15 × (40 + 20 + 10) = **1,050** and direct service payments total 3 × 70 = **210**. The added capacity payment is 180, so the future difference is **1,050 − 210 − 180 − 600 = 60**, with other flows unchanged.
+3. **Distinguish the future difference from assigned and historical amounts.** The provider pays 600 to acquire the proposed cohort before month 2. For each active customer, the provider pays 3 for service at month start and receives 15 from the customer at month end. Receipts total 15 × (40 + 20 + 10) = **1,050** and direct service payments total 3 × 70 = **210**. The added capacity payment is 180, so the future difference is **1,050 − 210 − 180 − 600 = 60**, with other flows unchanged.
 
    The existing cohort's acquisition payment of 2,000 is historical. A report assigns eight of team cost per active customer to the new cohort, totaling 560 over these months. MA.3 can explain that assignment; it is not another payment on top of the actual supply arrangements. The +60 concerns only this three-month alternative under the supplied conditions. Later flows and the responsible decision criteria remain outside that calculation.
 
@@ -151,7 +151,7 @@ MA.10:5 contrasts a product and support redesign with a funded service whose acc
 - **Question:** What account and comparison must reach which participants in time for them to choose and carry out the needed action?
 - **First useful result or blocker:** An information arrangement connecting the decision, participants, actions and timing, or an unresolved condition preventing its use.
 - **Start with:** [MA.9 - Design and Examine the Use of Management Accounting Information](16-ma-9---design-and-examine-the-use-of-management-accounting-i.md). Its shared-service case exposes a capacity conflict before a promise is made.
-- **Stop or return:** Retain an adequate arrangement. Use observations of whether the participants receive, understand and act on the information to identify a specific repair; return a missing capacity or authority decision to its responsible participants.
+- **Stop or return:** Retain an adequate arrangement. To assess a new promise, distinguish expected requests from work the service must provide and identify which requests can become due together. Use observations of whether the participants receive, understand and act on the information to identify a specific repair; return a missing capacity or authority decision to its responsible participants.
 
 ---
 
@@ -169,6 +169,9 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [MA.Reference:5 - Why this organization of methods](05-ma-reference-5---why-this-organization-of-methods.md) (12 lines)
 - [MA.Reference:6 - Sources, qualifications and changed conditions](06-ma-reference-6---sources-qualifications-and-changed-conditio.md) (14 lines)
 - [MA.Reference:End](07-ma-reference-end.md) (2 lines)
+
+### Patterns
+
 - [MA.1 - Build the Resource-Consumption and Cost Model](08-ma-1---build-the-resource-consumption-and-cost-model.md) (205 lines)
 - [MA.2 - Explain the Cost and Use of Capacity](09-ma-2---explain-the-cost-and-use-of-capacity.md) (116 lines)
 - [MA.3 - Assign Shared Costs for the Stated Use](10-ma-3---assign-shared-costs-for-the-stated-use.md) (114 lines)

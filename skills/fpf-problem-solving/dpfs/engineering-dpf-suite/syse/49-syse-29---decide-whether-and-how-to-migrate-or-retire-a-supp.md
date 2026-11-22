@@ -107,7 +107,7 @@ Change the condition: the external provider now withdraws the old endpoint befor
 
 
 
-For a physical inspection or machining path, exit also requires transferable tooling, programs, relevant rights and a provider capable of producing the required result. Sending a drawing does not qualify the receiving setup. Reverting the old program cannot restore material already removed from a component; recovery may require segregation, inspection, rework or replacement under the applicable engineering decision.
+For a physical inspection or machining path, identify what the receiving party must supply. A contract to transfer named tooling, programs and rights requires delivery of those items in usable condition. An order for conforming finished parts can be met by a successor using its own qualified equipment and rights. If the authorized holder ends the use, resolve outstanding lots, evidence and duties for that disposition. Sending a drawing alone establishes none of these outcomes. Material already removed may require segregation, inspection, rework or replacement under the applicable engineering decision.
 
 Migration can end when the uses in scope have moved to a supported path or reached another authorized outcome, and the remaining obligations have been transferred, retained or ended under the applicable authority.
 
@@ -117,7 +117,7 @@ Daily traffic makes ordinary users visible and hides infrequent recovery, archiv
 
 ### SYSE.29:7 - Conformance Checklist
 
-- Affected users, dependencies, retained state and support conditions are recovered from more than recent traffic alone.
+- The evidence covers the users, dependencies, retained state and support obligations included in the decision. A complete record of requests can settle a question about traffic in its period. For retirement, account also for any right to make a future request.
 - The old/new result and compatibility conditions are concrete.
 - When a change is selected, its next increment can be performed and checked under actual permission.
 - Partial effects, return and forward-repair limits are explicit.

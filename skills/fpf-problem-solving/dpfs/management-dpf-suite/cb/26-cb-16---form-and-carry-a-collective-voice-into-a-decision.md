@@ -9,11 +9,11 @@ Use this pattern when a community needs to contribute to a decision that affects
 
 The governed object is a collective contribution to a specified receiving decision: the position, whom it represents, the authority to carry it, and the returned response. This is one branch of collective action. CB.13 constructs the decision mandate when needed; this pattern develops and carries the substantive position within it.
 
-**First useful result:** participants can identify the receiving decision, the useful contribution they seek, the positions and uncertainties that matter, and who may present which position on whose behalf.
+**First useful result:** participants can identify the receiving decision, the useful contribution they seek, the positions and uncertainties that matter, and what approval the position needs. If it will be submitted, they establish who may present it on whose behalf.
 
 **What changes in practice:** a spokesperson can offer a grounded, authorised contribution and bring back an actionable answer. Members can distinguish what they asked for, what was agreed and what remains unresolved.
 
-An individual's sufficiently useful expert answer can remain an individual contribution through CB.5. A community's internal allocation belongs to its existing decision arrangement. Use this pattern when representation of a shared position and its return from another decision are material to the result.
+An individual's sufficiently useful expert answer can remain an individual contribution through CB.5. A community's internal allocation belongs to its existing decision arrangement. Use the part of this method needed to form, present or report a shared position for a decision beyond the group. An order to prepare it can end with the group’s approval.
 
 ### CB.16:2 - Problem
 
@@ -21,7 +21,7 @@ An organiser may speak confidently for a community without knowing whether its m
 
 Even a properly authorised message can fail because it asks only for recognition, gives the recipient no feasible action or reaches someone who cannot decide. A meeting may then be reported as influence although the receiving decision and working conditions remain unchanged.
 
-Build a contribution that the represented participants and the decision-maker can use, and carry it under a valid mandate. Tell those represented what response you obtained, what effect you can establish and any work still needed. If you could not reach the decision-maker in time, report that limit.
+Build the contribution the commissioning group needs. Return its authorized position when that is the order. Where the work includes representation, carry the agreed position under the applicable mandate and report the submission, response or remaining obstacle that affects the group’s next decision.
 
 ### CB.16:3 - Forces
 
@@ -36,7 +36,7 @@ Build a contribution that the represented participants and the decision-maker ca
 
 ### CB.16:4 - Solution
 
-Identify the decision that can change the practice. Develop a useful contribution with those affected, obtain the mandate to carry it and take it to the recipient who can act on it. Return the response and its consequences to those represented, or explain what prevented the contribution from reaching the decision in time.
+Identify the decision the participants want to influence. Develop their position with those affected and use their rule for adopting it. For an order to prepare an agreed position, return it to the commissioning group. When external submission is commissioned, establish the mandate to carry it, present it through the authorized route and establish whether it reached that recipient in time. The participants can act on that status while an answer is pending. Return the external decision and its consequences when that further result is part of the work.
 
 #### CB.16:4.1 - Locate the receiving decision and the practical gain
 
@@ -56,7 +56,7 @@ Define whose position is needed for this contribution. Use actual membership and
 
 Provide enough of the proposal and its consequences for people to respond. Ask for the change they want, the case or reason behind it, what they can accept and what would make the proposal unworkable. Choose accessible routes and timing proportionate to the decision; one open meeting may not reach dispersed or less confident contributors.
 
-Separate agreement, disagreement and absence of a response. An unanswered invitation supplies no assent. A well-attended discussion supplies useful positions, but its participants do not automatically represent every practitioner in the field.
+Separate agreement, disagreement and absence of a response. Silence leaves that person’s own position open. A collective decision can nevertheless bind its constituency if its effective rule and procedures give the decision that force. A well-attended discussion supplies useful positions, but its participants do not automatically represent every practitioner in the field.
 
 Investigate differences that could change the request. Some may concern the same aim under different conditions; others involve competing priorities or a cost one group is asked to bear. Preserve the consequential difference in the proposal or in a clearly attributed dissent.
 
@@ -90,7 +90,7 @@ When a collective mandate cannot be obtained within the decision window, choose 
 
 Confirm that the recipient can receive the contribution in time and through a usable route. Present the request with its practical reason, represented constituency and mandate. Provide the evidence needed for the decision at a level the recipient can inspect.
 
-If the first contact cannot decide, ask for the appropriate receiving route. Where no accessible route or timely decision remains, return that limit to the participants so they can choose a later opportunity or end this episode.
+Identify the authorized route for submission and the person or body empowered to decide. Receipt at the proper office can complete the representative’s order to file, while a substantive response is pending. If the rule gives an unanswered filing an effect at a deadline, apply its conditions. If no timely route remains, return the limitation to the participants.
 
 Use the exchange to test understanding. Ask the recipient to identify the question they can decide and any missing condition. Recover objections from the work: an unavailable resource, another affected interest, an unsupported claim or a different decision boundary may each require a different response.
 
@@ -102,7 +102,7 @@ If the recipient offers a trial or accepts a change, identify what was decided, 
 
 #### CB.16:4.6 - Return the answer and make the next action usable
 
-Report the contribution and response to the represented participants. Explain what the recipient accepted, rejected, changed or left open; the reason and evidence supplied; any commitment made within the mandate; and any new question requiring the group's decision.
+Report the status the represented participants need, including a timely filing awaiting an answer. Where a response was received, return it. Explain what the recipient accepted, rejected, changed or left open; the reason and evidence supplied; any commitment made within the mandate; and any new question requiring the group's decision.
 
 Give dissenting or previously absent participants a usable opportunity to correct a misrepresentation. Correct a materially inaccurate account with the recipient as well as within the community. CB.13 supplies reconsideration or replacement when the representative exceeded the mandate.
 
@@ -110,7 +110,7 @@ Take implementation work to those responsible for it. Use OCE.14 for a bounded r
 
 To find out whether the expected practical change occurred, agree which observation would show it. Use an existing observation if it suffices. For example, check whether writers were included before the specified decision and whether their contribution was usable. CB.10 can connect those observations with the community's value question. A causal claim about the whole intervention still requires suitable evidence.
 
-Close the representation episode when the answer, effective commitments and remaining work are understood by their recipients. A refusal or a bounded agreement may complete this episode even though the community's wider aim remains open.
+Close the representation episode when the receiving parties can establish the commissioned result and know the commitments or further work still open. A refusal or a bounded agreement may complete this episode even though the community's wider aim remains open.
 
 #### CB.16:4.7 - Reconsider the position and its continuing mandate
 
@@ -169,9 +169,9 @@ For reliance on a collective contribution, establish:
 - The receiving decision, authorised recipient and opportunity to affect it are known or their uncertainty is explicit.
 - The practical gain and proposed action are supported at the claimed scope, with a serious alternative where it changes the choice.
 - Affected positions, meaningful dissent and missing responses remain distinguishable.
-- The position is approved and the spokesperson has a valid mandate with usable discretion and return conditions.
+- The position has the approval the commissioning group requires. For an external submission or negotiation, the representative holds the appropriate mandate, with its discretion and return conditions.
 - Those who can commit the promised work or resources have agreed to provide them.
-- The response is returned accurately, with the effective result and unfinished work.
+- The participants know what was submitted or decided, which event establishes it under the applicable terms and what remains open.
 - Misrepresentation, new conditions and expired authority can reopen the affected contribution.
 
 A recurring exclusion or an external invitation is enough to recognise the opportunity. It does not supply the authority or evidence required for reliance.

@@ -36,7 +36,7 @@ When there is no supported predecessor, state the proposed basis clearly enough 
 
 #### CUST.2:4.2 - Recover changes backward and forward
 
-Work backward from acceptance: what must be true for the customer to use the result? Identify the work needed to establish each condition. Then walk forward through a representative episode, using records, observation or the participants' account. Ask where someone changed an input, made an interpretation, sought help, waited, overrode a default or accepted a continuing duty.
+Work backward from the agreed use and acceptance. Identify the operations and conditions whose differences would change the choice of provision. For an existing operation, trace relevant executions and their records to recover interpretation, help, waits, overrides and continuing obligations. For a first order, the agreed requirements and a design for the proposed work may establish what it needs before it has ever been performed. Retain a distinct annual or exceptional operation if omitting it would give the wrong answer for the promised period.
 
 For each consequential difference, state the basis, the changed condition or action and the consequence. Distinguish observation from explanation. “An expert recoded thirty records” is an observation; “the product lacks a general mapping function” is one possible explanation. A legitimate difference in meaning might make general recoding inappropriate.
 
@@ -53,11 +53,11 @@ Use ordinary material already needed for the work. The table illustrates the fac
 | Recoverable fact | Example |
 | --- | --- |
 | Supported basis | The service counts active accounts from the monthly batch under the provider's definition. |
-| Customer difference | The customer excludes suspended accounts but includes pending renewals. |
-| Evidence and uncertainty | The operating policy states the first exclusion; treatment of renewals still needs the customer's decision. |
-| Consequence for the work | Input mapping and acceptance examples must change before results are comparable. |
+| Customer difference | The customer excludes suspended accounts. The proposed local interpretation also includes pending renewals. |
+| Evidence and uncertainty | The operating policy establishes the exclusion. The person authorized to decide the treatment of pending renewals has yet to confirm it. |
+| Consequence for the work | Compare the answers under both treatments of renewals. They can give the same count for a particular month, even when choosing a rule for future months still matters. |
 | Linked obligation | The customer must supply the status information each month. |
-| Next useful result | An agreed meaning and qualified mapping, then a delivery choice. |
+| Next useful result | Return the current count when it is determined. To deliver a reusable mapping for months in which treatments differ, obtain the authorized decision and qualify that mapping. |
 
 Remove incidental details that cannot change the decision. Keep an apparently small distinction when it changes acceptance, permission, work or liability.
 

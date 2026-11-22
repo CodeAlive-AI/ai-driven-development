@@ -7,7 +7,7 @@
 
 Use this pattern when a selected maintenance intervention will expose people, equipment or the environment to a hazard that requires controlled access, isolation or other protection. A work order is ready, but the actual protection and permission for the proposed act have not been established.
 
-Use the applicable equipment procedure and competent authorized people to establish, verify and maintain those conditions. Return a supported permission to begin the bounded work or the unmet condition. This framework gives maintenance reasoning, not a substitute isolation procedure. A diagnosis or recommendation can be complete before anyone seeks permission to intervene.
+When assessing the proposed protection, identify what the work would expose, which protections must hold together and how the responsible people could establish them. Before beginning an intervention, competent authorized people must establish, verify and maintain the required protection under the applicable equipment procedure. Give the permission that the governing authority has actually granted, or identify what is still required. This framework gives maintenance reasoning, not a substitute isolation procedure. A diagnosis or recommendation can be complete before anyone seeks permission to intervene.
 
 ### MNT.8:2 - Problem
 
@@ -35,6 +35,8 @@ If a requirement's merits are disputed, use a separate appraisal. Identify the p
 
 Return permission only for the supported work and conditions, or state the missing protection, applicability or authority. Keep evidence proportionate to the actual reliance and applicable requirements.
 
+A request to assess a proposed protection arrangement can be completed before the intervention. Follow any shared exposure or change of state that would matter to the permitted work and identify the conditions the proposal would require. To report that permission was granted for a particular act, use the governing decision and its scope. To start the work, establish the required protection in the actual configuration under the applicable procedure.
+
 ### MNT.8:5 - Archetypal Grounding
 
 In the constructed PS17 case, the specialist part return has arrived and the planned outage is feasible. The authorized personnel establish the applicable isolation and access conditions for the actual configuration before the bearing intervention.
@@ -53,7 +55,7 @@ A familiar machine can make practitioners underestimate changed stored energy, c
 
 Is the procedure applicable to the actual intervention and configuration? Have competent authorized people established and verified the required protection? Do shared work and planned state transitions preserve it? Is the permission bounded to the supported scope, with a usable response to material change?
 
-These questions apply to the selected intervention. They neither require a permission package for advice nor authorize omission of operative protection because a recommendation is already complete.
+For a review of a proposed arrangement, identify which conditions its design covers and what must still be established at execution. The preceding questions about actual protection apply to starting or reporting the selected intervention. They neither require a permission package for advice nor authorize omission of operative protection because a recommendation is already complete.
 
 ### MNT.8:8 - Common Anti-Patterns and How to Avoid Them
 

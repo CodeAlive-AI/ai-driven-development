@@ -25,17 +25,17 @@ A list of barriers identifies neither the response nor its owner. Training staff
 
 ### IS.7:4 - Solution
 
-#### IS.7:4.1 - Recover the intended practice through a receiving episode
+#### IS.7:4.1 - Recover the practice and the work in which it must be useful
 
-Use the undertaking from IS.1 and a sufficient IS.2 diagnosis when available. Establish the target operation, intended benefit, affected participants and the receiving episode. Recover the technical grounds, required function, permitted variation and conditions needing renewed judgement from appropriate sources. Seek a practitioner’s judgement or recipient’s account when the needed knowledge or experience lies with them.
+Use the undertaking from IS.1 and a sufficient IS.2 diagnosis when available. Identify the intended benefit and the target operations that could produce it across the receiving work. Which part of the practice, which participants and which decisions about provision can make a difference to that benefit? Follow each as far as the question requires. Recover the technical grounds, required function, permitted variation and conditions needing renewed judgement from appropriate sources. Seek a practitioner’s judgement or recipient’s account when the needed knowledge or experience lies with them.
 
 Research supports claims under the conditions studied. Professional observations can identify an operation or failure absent from those studies. Affected people can identify experienced benefit, burden or exclusion omitted from a service indicator. Connect each source to the claim it supports. Where a consequential difference remains unresolved, use subject expertise or an attainable inquiry when warranted. Technical validity and reported experience require evidence appropriate to each.
 
 #### IS.7:4.2 - Explain the interaction that affects the result
 
-Trace the practice, participants and setting through the episode. Find what the target operation depends on and whether that contribution was or could be obtained. Examine local, organizational and external conditions that affect the result or its grounds. A roster, an organizational incentive and an external eligibility rule can impose different conditions under different authorities.
+Identify the interaction on which the finding depends. For one performance, trace how the operation obtained its inputs and how its result was used. For a service across settings, consider two arrangements that yield the same result in one setting. A different authority for exceptions, a dependency between performances or different access for other participants can change the answer for the service. Retain distinctions that affect that answer or its explanation. Connect an external rule to the operations it actually governs and the participants whose work it changes.
 
-Use [FPF C.40.JD](../../sections/09-part-c---kernel-extension-specifications/119-c-40-jd---develop-a-way-its-holder-and-its-provision-togethe.md) when the way of working, its holder and its provision may need to change together. Relate the intervention’s warranted function, the recipient experience and the service conditions. An absence of use might reflect an unavailable occasion, burdensome work, a justified rejection or missing help. Distinguish plausible competing explanations where the finding or response depends on them. A.3.1.MI:4.5 can help compare delivery, mechanism and context and identify evidence that would distinguish the explanations.
+Use [FPF C.40.JD](../../sections/09-part-c---kernel-extension-specifications/121-c-40-jd---develop-a-way-its-holder-and-its-provision-togethe.md) when the way of working, its holder and its provision may need to change together. Relate the intervention’s warranted function, the recipient experience and the service conditions. An absence of use might reflect an unavailable occasion, burdensome work, a justified rejection or missing help. Distinguish plausible competing explanations where the finding or response depends on them. A.3.1.MI:4.5 can help compare delivery, mechanism and context and identify evidence that would distinguish the explanations.
 
 #### IS.7:4.3 - Select what to change and who can change it
 
@@ -49,7 +49,7 @@ Use the established account of the dependency. If a response is wanted, assess e
 | A local variant changes a relied-on function or condition. | Obtain subject judgement and [FPF A.3.1.MV](../../sections/05-part-a---kernel-architecture-cluster/27-a-3-1-mv---construct-and-maintain-a-method-variant.md)/[FPF A.3.1.FT](../../sections/05-part-a---kernel-architecture-cluster/26-a-3-1-ft---qualify-method-fit-and-transfer.md); keep the variant's status and fit limits. |
 | A required condition belongs to another organization or external authority. | Use an applicable result already supplied under that authority. If a required contribution remains missing, identify the dependent limit and take a usable request to the holder where needed. |
 
-The table identifies possible responses to a dependency established from the episode. A staff objection may correctly expose an unsuitable practice. A shortage may be real or a consequence of the chosen workflow. Trace the episode before treating either as a training need.
+The table helps choose a response once the relevant dependency has been established. A staff objection may expose an unsuitable practice. A shortage may result from the way work is assigned. Examine the grounds for the particular interaction before deciding whether training could address it.
 
 #### IS.7:4.4 - Fit the facilitation to the work and the people
 
@@ -69,7 +69,7 @@ Use A.3.1.MI for a bounded introduction or for evidence about an earlier one. Ke
 
 Interpret relevant observations with A.3.1.MI:4.5. A missing facilitator action may expose a provision problem. An unsuitable result after delivery can raise a question about the proposed mechanism or local fit. A recipient’s account can change the grounds for the target. Use existing observations where they answer the question. Preserve a supported response and the limit on causal attribution if the cause remains unresolved.
 
-Where continuing provision is at issue, use IS.5 to assess whether to retain, transfer, extend or end the arrangement. Use IS.8 when participants are to conduct a subsequent change themselves. If successful use reveals that the next useful result requires a different aim or a not-yet-developed Method, return to [FPF C.40.OD](../../sections/09-part-c---kernel-extension-specifications/118-c-40-od---construct-and-continue-open-ended-development.md), [FPF C.40.NP](../../sections/09-part-c---kernel-extension-specifications/120-c-40-np---continue-from-a-result-to-new-attainable-problems.md) and the relevant profession. The end of one implementation is compatible with continuing inquiry and development.
+Where continuing provision is at issue, use IS.5 to assess whether to retain, transfer, extend or end the arrangement. Use IS.8 when participants are to conduct a subsequent change themselves. If the agreed result still requires an operation that nobody can yet supply, use [FPF C.39](../../sections/09-part-c---kernel-extension-specifications/97-c-39---find-and-develop-a-way-to-obtain-a-result.md) with the relevant profession to construct and check that operation. When a different result becomes worth pursuing, the person or group responsible for that work decides whether to take it up. [FPF C.40.OD](../../sections/09-part-c---kernel-extension-specifications/120-c-40-od---construct-and-continue-open-ended-development.md) and [FPF C.40.NP](../../sections/09-part-c---kernel-extension-specifications/122-c-40-np---continue-from-a-result-to-new-attainable-problems.md) support that development from the work already achieved.
 
 ### IS.7:5 - Archetypal Grounding
 
@@ -83,15 +83,17 @@ After the enabling conditions are supplied, use A.3.1.MI to establish whether th
 
 #### IS.7:5.2 - Choosing a shared or a local facilitator
 
-In a constructed comparison, two sites each need three hours of local episode work per week. One external specialist is available for four hours in total. Six hours of specialist work cannot fit in the four-hour window, even under one contract. Suppose each site's existing local facilitator can perform its three hours with one hour of specialist consultation. The joint arrangement then demands two specialist hours and six local hours, plus any actual shared preparation. It is feasible only if those local performers, permissions and protected hours exist. If one site's decisive judgement remains beyond its local performer, the paired arrangement does not meet the same promise.
+Two sites each need three hours of local case work in the week. One external specialist has four hours available. If the specialist must perform both sets of case work separately, the required six hours exceed four. Suppose each local facilitator can perform the work in three hours including a one-hour consultation. In this comparison the local leads have the competence, authority and protected time for those judgements, and the shared preparation is already complete. There are six local hours and two specialist-hours to arrange. If fresh common preparation is required, add its time once and establish that its result can reach both sites before use. The consultations fit only if the relevant people can meet before their site’s result is due. If both consultations must occur separately in the same sole hour, the weekly totals conceal a conflict.
+
+The form of service can change that answer. One common consultation in that hour can fit if both leads can attend and it resolves both issues within the hour. If the order accepts one reusable finding, the specialist can instead prepare it early enough for each lead to use within their local hours. A site requiring its own review still needs time for that review. For a promise that the leads can design future help, examine their choice of a support arrangement and its grounds under the assistance they are meant to retain.
 
 ### IS.7:6 - Bias-Annotation
 
-A familiar framework can make every difficulty look like one of its dimensions. A successful past intervention can make the target seem immune to revision. An enthusiastic local champion can hide a supply constraint. Relate each proposed response to the episode, the relevant authority and its required conditions.
+A familiar framework can make every difficulty look like one of its dimensions. A successful past intervention can make the target seem immune to revision. An enthusiastic local champion can hide a supply constraint. Relate each proposed response to the interaction it would change, the relevant authority and the conditions it requires.
 
 ### IS.7:7 - Conformance Checklist
 
-- The target, its professional basis, the affected participants and the observed or proposed receiving episode are clear.
+- The account identifies the target practice, its professional basis, the affected participants and the receiving work at the reach of the question.
 - The account identifies which interaction matters to the finding and any action or outside contribution still required.
 - Target adaptation, facilitation, preparation and contextual change retain their separate claims and owners.
 - Evidence of the required competence, position, discretion, time and receiving connection supports the claimed feasibility or identifies its limit.

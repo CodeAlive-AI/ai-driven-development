@@ -62,7 +62,7 @@ Report which combinations the evidence supports under the stated conditions, the
 
 For performance or practice, say what must continue, what may vary and what would indicate failure. For example, “Keep the underlying sound through the accent and leave the next sweep available.”
 
-Qualify a successful trial to the conditions in which the passage was performed. When the goal is to develop missing coordination, practise the constituent contribution and restore it in the whole activity. To establish that the contributions work together, examine their joint performance.
+Qualify a successful trial to the conditions in which the passage was performed. When one technique is missing, practise it and restore it in the whole activity. If both actions are already available separately and interfere only in combination, practise their overlap directly. For a proposed arrangement, establish whether its means meet the joint demand. For a claim about an actual passage, use evidence of how its required contributions worked together.
 
 When the performance additionally requires a regular pulse with a changing choice of accents, use RHY.11:4.4.1 to construct that coordination. Retaining contact alone leaves the pulse period and accent placement unsettled. RHY.12:4.2.1 derives practice from the required joint action; it is useful when the performer cannot yet realize that action with the available technique.
 
@@ -116,7 +116,7 @@ A motion can look smooth while the sound breaks or a partner loses the cue. Judg
 | Improve accent timestamps while losing the sustained contribution. | Judge continuity and articulation together over the passage. |
 | Demand constant speed as the definition of continuity. | State the actual property needed through reversals, accents and recovery. |
 | Keep increasing accent force when continuation deteriorates. | Change its means, magnitude or allocation, or choose a different performable variant. |
-| Test only the isolated peak. | Include preparation and the next required action. |
+| Test only the isolated peak. | Include the preparation and any following action on which the requested judgement depends. |
 
 ### RHY.3:9 - Consequences
 

@@ -138,9 +138,9 @@ A diagram or report, for example, may describe a transformation, state a claim a
 
 #### A.3.4.P:5.1 - Refrigerator functional diagram
 
-Source wording says: "The refrigeration circuit moves heat through the cycle."
+A design reader wants to trace the connections on a single-stage vapour-compression schematic. Its arrows show the refrigerant path. Its caption says, “The refrigeration circuit moves heat through the cycle.” An operator may read the same words while asking whether heat actually left the compartment during a particular interval.
 
-Repair: recover whether the current claim is a refrigerator subsystem transformation, a `TransformationFlowStructure` over compressor, condenser, expansion, and evaporator transformations, a thermodynamic mechanism, a functional architecture view, or a schematic publication. The circuit label may stay as ordinary domain wording, but FPF use names the recovered object and the relation being asserted.
+For the design reader, identify the compressor, condenser, expansion and evaporator loci and their connections in the selected `TransformationFlowStructure`. The same schematic can describe a unit that stood idle throughout the operator’s interval. For the operating question, establish the relevant heat transfer over that interval from the operating conditions and evidence that can distinguish the answer. Where the use of the caption is unknown, retain those readings until the surrounding account or the recipient identifies the intended claim.
 
 #### A.3.4.P:5.2 - Neural-network block
 
@@ -165,17 +165,17 @@ Repair: identify the action meant by *proceed* and the condition the evidence is
 ```text
 TransformationWordingRepair:
   EncounteredWording: "the refrigeration circuit moves heat through the cycle"
-  WorkingConcern: recover whether the sentence is about one bounded heat-transfer change, a selected compound transformation-flow structure, a thermodynamic mechanism, a functional architecture view, or a schematic publication.
+  WorkingConcern: the design reader needs to locate the four stages in the supplied schematic and follow their connections.
   RecoveredEntityOfConcern: `RefrigeratorHeatTransferFlowStructure-1`, the selected `TransformationFlowStructure` over the compressor, condenser, expansion, and evaporator transformation loci.
   ActualTransformationDisposition: no actual occurrence claim is made; the current object is the selected `RefrigeratorHeatTransferFlowStructure-1`.
-  NeighboringClaimAndExactRelation: the four named loci are positions in `RefrigeratorHeatTransferFlowStructure-1`; bindings to actual transformation occurrences have not been established.
+  NeighboringClaimAndExactRelation: the arrows in the supplied schematic connect the four named loci in refrigerant-flow order. The operator’s question also requires evidence about the interval of operation.
   GoverningPattern: `E.18` governs `RefrigeratorHeatTransferFlowStructure-1`; use `A.3.4` when a claim about an actual component occurrence needs its basis established.
   RetainedUse: "circuit" may remain ordinary domain wording for `RefrigeratorHeatTransferFlowStructure-1`; the source's heat-transfer claim remains unresolved.
   StopOrReturnCondition: use the selected structure for the recovered structural question; if the receiving use needs the heat-transfer claim, recover its participants and relation under the relevant subject rules. A later actual-occurrence claim still needs the A.3.4 occurrence basis.
   RemainingReaderUse: use `E.18` for `RefrigeratorHeatTransferFlowStructure-1`; open the applicable subject pattern when an additional claim is needed.
 ```
 
-One rewrite for the recovered structural use is: “RefrigeratorHeatTransferFlowStructure-1 has four positions: compressor, condenser, expansion and evaporator. The relation asserted by ‘moves heat through the cycle’ remains to be recovered.”
+For the designer, the repaired caption reads “Follow the refrigerant from the compressor to the condenser, through the expansion device to the evaporator, and back to the compressor.” If the supplied drawing shows only the four positions, identify them and obtain the connections before claiming a path. To determine whether heat left the compartment during the operator’s interval, use evidence of operation during that interval.
 
 ### A.3.4.P:6 - Bias-Annotation
 

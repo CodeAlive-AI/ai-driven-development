@@ -2,7 +2,7 @@
 
 For a use spanning several patterns, check the following relations at the joins:
 
-1. The next operation receives objects in its domain, with every enabling condition it uses.
+1. The original use determines the objects, allowed combinations and answer at each join. Each next operation receives an input in its domain. A fixed exercise can supply those choices. A request to construct a method calls for the choices that the problem leaves open and the reasons for them.
 2. An identification retains the operation or answer that will be applied to the classes.
 3. A change of representation carries the relevant operations and quantities, including the rule for returning the answer.
 4. A consequence has the scope supplied by its argument: for example, impossibility, a necessary condition, a constructed witness or a minimum.

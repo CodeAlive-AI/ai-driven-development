@@ -5,7 +5,7 @@
 > A pattern language for designing expressions that their users can interpret, manipulate, translate and use together.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Version:** 24 October 2026
+- **Version:** 22 November 2026
 - **Status:** Eternal alpha: a repertoire open to correction and extension.
 - **License:** © 2026 Anatoly Levenchuk. Original framework text: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Cited sources retain their own terms.
 - **Publication:** [FPF Library repository](https://github.com/ailev/FPF)
@@ -64,9 +64,9 @@ To cite this edition: Anatoly Levenchuk, *Notational Engineering DPF*, [FPF Libr
 
 A notation should let its users do something with an expression: derive a consequence, follow a dependency, change an assumption or instruct another performer. The methods in this language connect that work to the expression's structure and interpretation, then help carry the result between forms and through changes. They apply to symbolic, graphical, verbal, gestural and executable expressions. The subject practice supplies what the expressed distinctions mean and which consequences matter.
 
-Bring an expression, the operation it should support and enough subject knowledge to recognize a useful result, or a collaborator who can supply that knowledge. Keep conventions that already work. Constructing an expression under adequate existing rules can start with FPF A.6.3.RT.OE; use this language when those rules, their interpretation or the supported operations need development.
+Bring the work the reader must do and what they will have in hand. An existing expression can locate a reading or editing difficulty. When you are designing a notation from scratch, start from the items the reader will work on and the result they must obtain. Vary how the items are assembled or used, and see which differences a sign or a combination of signs must let the reader recover. Obtain needed subject knowledge from a collaborator where appropriate. Keep conventions that already work. A.6.3.RT.OE supports constructing an expression under adequate existing rules.
 
-You can ask an assisting agent: “Explain this and give me your comments in the language of my work, without framework jargon.” Ask it to demonstrate the reading or change and identify any rule, input or capability it had to supply.
+You can ask an assisting agent, “Explain this and give me your comments in the language of my work, without framework jargon.” For an existing expression, ask it to demonstrate the needed reading or change and identify the convention or input it used. To practise choosing the conventions yourself, bring the recipient's task and try a representation before requesting a design. Ask the agent to find what a reader could miss with that representation under the actual conditions of use.
 
 ## Practical entries
 
@@ -86,7 +86,7 @@ These selected connections show how results pass between methods. Enter where th
 
 2. **Use the interpretation to justify a useful change of expression.** [NOT.4 - Construct Transformations of Expressions That Preserve Their Use](13-not-4---construct-transformations-of-expressions-that-preser.md) can replace the formula by `2*q + b`. Real arithmetic establishes the same output for every admitted q and b. The graph exposes the dependence; the compact formula makes the shared parameter easy to locate.
 
-3. **Give a translation only the work it can support.** [NOT.5 - Translate between Notations while Tracking Lost Distinctions](14-not-5---translate-between-notations-while-tracking-lost-dist.md) produces the table `(0,1), (1,3), (2,5)` at b=1. This supports lookup at the listed inputs. The table alone does not determine the output at q=3: `2*q + 1` and `2*q + 1 + q*(q-1)*(q-2)` agree on all three rows but give 7 and 13 there. Keep the generating rule with the table when the receiver needs other inputs or a rule change. If only the three listed answers are required, stop with the table.
+3. **Give a translation only the work it can support.** [NOT.5 - Translate between Notations while Tracking Lost Distinctions](14-not-5---translate-between-notations-while-tracking-lost-dist.md) produces the table `(0,1), (1,3), (2,5)` at b=1. This supports lookup at the listed inputs. The table alone does not determine the output at q=3: `2*q + 1` and `2*q + 1 + q*(q-1)*(q-2)` agree on all three rows but give 7 and 13 there. At b=1, an independently established constant slope in q supplies the missing premise for other q values (NOT.Reference:4.2). For another b, a known direction of change may settle a limit. The edit in step 4 uses the dependence on b in the supplied rule. If only the three listed answers are required, stop with the table.
 
 4. **Interpret the request before propagating it.** The group asks for r(1,b)=4 while retaining the coefficient 2. NOT.6 uses the correspondence between that table row and the formula to obtain `2*1 + b = 4`, hence b=2. Set the graph parameter to 2 and recalculate the table as `(0,2), (1,4), (2,6)`. The unedited old cells were derived values, not instructions to hold them fixed. If the request also keeps r(0,b)=1, it requires b=1 and conflicts with b=2. Return the two requirements to the group for a decision. If a separate record says that an output of 3 was observed at q=1, keep that observation beside the new prediction of 4. A parameter change does not revise the past event.
 
@@ -136,7 +136,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [NOT.Reference:1 - Problem frame and the work of designing a notation](01-not-reference-1---problem-frame-and-the-work-of-designing-a.md) (10 lines)
 - [NOT.Reference:2 - Forces that shape the choice](02-not-reference-2---forces-that-shape-the-choice.md) (13 lines)
 - [NOT.Reference:3 - The methods and their connections](03-not-reference-3---the-methods-and-their-connections.md) (22 lines)
-- [NOT.Reference:4 - Worked connection - A formula, graph and table must change together](04-not-reference-4---worked-connection---a-formula-graph-and-ta.md) (36 lines)
+- [NOT.Reference:4 - Worked connection - A formula, graph and table must change together](04-not-reference-4---worked-connection---a-formula-graph-and-ta.md) (40 lines)
 - [NOT.Reference:5 - Conditions of use, checks and recurring failures](05-not-reference-5---conditions-of-use-checks-and-recurring-fai.md) (12 lines)
 - [NOT.Reference:6 - Consequences and Architectural Rationale](06-not-reference-6---consequences-and-architectural-rationale.md) (12 lines)
 - [NOT.Reference:7 - Shared sources, alternatives and refresh](07-not-reference-7---shared-sources-alternatives-and-refresh.md) (15 lines)

@@ -6,7 +6,7 @@
 
 ### SYSE.25:1 - Problem frame
 
-Use this pattern to decide whether to retain or change platform provision for an engineering task. Repeated waits, rework or requests for help can prompt that question, as can a rare failure that defeats an essential result. Choose one user population and one engineering undertaking. Use evidence of how practitioners try to obtain its result, including attempts that fail, are abandoned or fall outside the supported route.
+Use this pattern to decide whether to retain or change platform provision for engineering work. Recover the task or tasks the platform is expected to support, who needs their results and under which conditions. A single failed attempt can warrant a repair. For a shared service, follow the uses that can affect one another through its capacity, operating hours or support duties. Include failed, abandoned and outside-route attempts where they bear on the decision.
 
 The first useful result is a choice to retain or change provision for that task, a probe that could distinguish alternatives, or a statement of what is missing for a choice. The governed question is whether and how to improve the enabling System and its provision for that work.
 
@@ -29,17 +29,17 @@ The selection problem is to connect a proposed enabling change to a consequentia
 
 ### SYSE.25:4 - Solution
 
-#### SYSE.25:4.1 - Bound one population and undertaking
+#### SYSE.25:4.1 - Bound the users and work affected by the choice
 
-Name the users, task, required result, supported variants and interval being examined. Follow the work far enough to see whether its result is usable by the next consumer. Keep distinct, for example, submitting a build, obtaining an identified package and releasing an application.
+Start from what the proposed change should improve or preserve. Identify the users, tasks, required results, supported variants and period it affects. Follow a result to the next user when its suitability depends on what that user does. Include other tasks that draw on the same provision when changing the first task could change their result. Submitting a build, obtaining an identified package and releasing an application can require different evidence.
 
-Include unsuccessful and unsupported attempts. A sample drawn only from completed backend jobs misses people who could not enter the route. Record exclusions when they could change the choice. Use a short observation or an existing operational account when it suffices.
+For a question about access to the route, account for unsuccessful and unsupported attempts as well as completions. Backend records can omit users who could not enter. For a question confined to completed jobs, adequate records of those jobs can suffice. Record exclusions that could change the choice.
 
 Recover the relevant current configuration and conditions. A difficulty in one environment, shift or service class does not automatically characterize every user.
 
 Build the observation around the task rather than around a platform feature. Use an adequate existing account of an attempt. If an account is needed, ask a practitioner to reconstruct their last attempt from its inputs, returned results and any help received. Observe another attempt when it can resolve a consequential gap at a justified cost. Compare that account with provider records for the same attempt when they can clarify the difficulty. An interview can reveal why a user bypassed the path; backend timing can establish where a job waited. Neither replaces the other.
 
-Select contrasting cases that can expose the suspected difficulty. For example, compare a routine success with a failure, experienced with occasional users, or an ordinary variant with a consequential exception. This is purposeful diagnosis, not a representative prevalence estimate. State which population is covered before reporting a rate. If an urgent rare failure already defeats an essential result, do not postpone it merely to collect more frequent minor complaints.
+Select a contrast when it can distinguish competing explanations of the difficulty. A difference between routine and occasional users may reveal a missing permission. To estimate prevalence, establish which attempts the records cover and how they were selected. An established failure of an essential requirement can warrant action on that ground alone.
 
 #### SYSE.25:4.2 - Locate the burden without inventing its cause
 
@@ -59,11 +59,11 @@ For each serious candidate, state the difficulty it should change, the proposed 
 
 Compare the same task, acceptance meaning, supported variation and evidence horizon. Include user and provider effort to use, maintain and support the changed provision, migrate to it, and restore operation after failure. Preserve constraints such as unavailable expertise, confidential data and an existing service commitment without treating a constraint label as proof of feasibility.
 
-If the unresolved choice concerns the whole way of obtaining the result, SYSE.24 compares local provision, a shared service, an external provider or a combination. The present choice may identify a result worth improving while leaving that obtaining comparison tied.
+If the unresolved choice concerns the whole way of obtaining the result, SYSE.24 compares local provision, a shared service, an external provider or a combination. The present choice may identify a result worth improving while leaving open how best to obtain it.
 
 Construct alternatives by changing the mechanism, not just the supplier's brand. For an access wait, plausible alternatives may activate an already granted right earlier, supply a supported standard request, reserve provider assistance, or alter resource provision. Retaining a qualified assisted route is an alternative when demand is small or judgement is irreducible. Automation is a candidate when repeated, sufficiently understood operations can be performed and recovered under known conditions. A proposed standard path should state which variations it absorbs and which it deliberately leaves to assistance.
 
-Follow each candidate through the whole bounded task. Include the work needed to prepare its inputs, learn its use, interpret failure and sustain its providers. Check shared constraints: saving ten minutes for each user may consume the only specialist hour needed for another supported task. Reject an option that cannot meet a necessary condition; compare the remaining options by their consequential differences. When neither dominates, expose the accepted trade-off or retain a tie. A weighted score is useful only if its scales and weights express the deciding participants' actual preferences.
+Follow each candidate through the whole bounded task. Include the work needed to prepare its inputs, learn its use, interpret failure and sustain its providers. Check shared constraints: saving ten minutes for each user may consume the only specialist hour needed for another supported task. Reject an option that cannot meet a necessary condition; compare the remaining options by their consequential differences. When neither dominates, apply the accepted preference rule to the trade-off. Retain a tie if the rule makes the alternatives equally acceptable. If the rule leaves them incomparable or the evidence cannot yet distinguish them, state which conclusion remains open. A weighted score is useful only if its scales and weights express the deciding participants' actual preferences.
 
 Keep the implementation increment coherent. An artifact-identity repair may require a producer to return the identity and a consumer to preserve and display it. Funding only the first half would not deliver the improvement. The identity repair need not wait for unrelated portal, deployment and training work. SYSE.26 develops the supported path through the affected operations; SYSE.20 supplies the reconciliation when shared Work or resources create a real conflict.
 
@@ -99,7 +99,7 @@ Two reconstructed attempts show that the visible source label already agrees whi
 
 The chosen next result is a limited comparison of the current interaction with an identity-preserving repair for one supported service class. Both use the same source change, test question and result consumer. The probe observes whether the developer can identify the tested bytes without a separate reconciliation contact, including the case in which transfer fails. It also observes provider work; a new manual identity-reconciliation step hidden behind the interface would not be the intended gain.
 
-This selects an improvement question and probe, not a shared-platform winner. The identity and environment repair can be implemented locally or through a thin shared provision. Without matched maintenance and failure evidence, those complete obtaining arrangements remain tied under SYSE.24. The unsupported language-specific variant remains outside the probe.
+This selects an improvement question and probe, not a shared-platform winner. The identity and environment repair can be implemented locally or through a thin shared provision. Both arrangements remain candidates. If their unmeasured maintenance or failure burdens could change the choice, their order remains open. Retain a tie only when the governing choice rule treats them as equally preferred on the established grounds. The unsupported language-specific variant remains outside the probe.
 
 If the comparison removes identity confusion but slow or unreliable feedback remains, the next question goes to SYSE.31. A healthy artifact path does not repair the old rollback failure; that requires the data-recovery work described in SYSE.34.
 
@@ -126,7 +126,7 @@ Frequent users, articulate experts and platform maintainers can dominate observa
 
 ### SYSE.25:7 - Conformance Checklist
 
-- The user population, task, result and relevant conditions are bounded.
+- The users, tasks, results and conditions covered by the decision are clear, including any other work that could lose access to shared provision.
 - Failed, abandoned and unsupported attempts are visible where they can change the choice.
 - Waiting, work, error and transferred support burden are not collapsed into one favorable number.
 - Each serious improvement has a mechanism and a disconfirming observation.

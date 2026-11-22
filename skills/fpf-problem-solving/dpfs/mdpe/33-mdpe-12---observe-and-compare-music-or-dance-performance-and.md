@@ -251,7 +251,7 @@ conditions. Reconsider
 the choice if the contrast fails with other partners or the audio–weight relation changes at
 another tempo. Long-term learning and recognition of a style require evidence for those claims.
 
-For variable-accent coordination in MDPE.11:4.5.2, identify the selected support events and requested accents, then locate the actual supports and accents against the same reference. Include the support following each accent. A recorded pulse can supply that reference. To establish regularity of the learner’s support, examine the events they produced. Sound can locate a free-foot accent, while visible loading and a receiving partner’s response can inform an assessment of weight arrival and continuation. Compare a changed accent sequence when the claim concerns variation beyond the practised figure. An existing receiving performance may provide the needed evidence for MDPE.10:4.6.
+For variable-accent coordination in MDPE.11:4.5.2, identify the selected support events and requested accents, then locate the actual supports and accents against the same reference. Include the support following each accent. A recorded pulse can supply that reference. To establish regularity of the learner’s support, examine the events they produced. Sound can locate a free-foot accent, while visible loading and a receiving partner’s response can inform an assessment of weight arrival and continuation. Compare a changed accent sequence when the claim concerns variation beyond the practised figure. If the question is who chose the accent places, establish what was already scored and which positions the performer chose. An existing receiving performance may provide the needed evidence for MDPE.10:4.6.
 
 #### MDPE.12:4.2 - Direct Dance-observation Methods
 

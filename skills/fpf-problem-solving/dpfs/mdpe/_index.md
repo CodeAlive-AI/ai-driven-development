@@ -5,14 +5,14 @@
 > A domain pattern language for creating, performing, transmitting, and deliberately developing music and dance practices and the environments that sustain them.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Version designation:** 7 October 2026. To cite the text used, see [MDPE.Sources:1](54-mdpe-sources-1---edition-return.md).
+- **Version designation:** 22 November 2026. To cite the text used, see [MDPE.Sources:1](54-mdpe-sources-1---edition-return.md).
 - **Status:** Eternal alpha: a published working framework, already used in analyses and worked applications, while continuing to evolve.
 - **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for original framework content; third-party material retains its own terms.
 - **Publication:** [FPF Library repository](https://github.com/ailev/FPF)
 
 Begin with the question you have about a performance, rehearsal, teaching encounter, style-development project or the environment that sustains a practice.
 
-Search the Table of Contents by a familiar term or working question. Open the relevant pattern and compare its situation with yours. Use its method and worked cases to address your question about the performers, material, practice or supporting arrangement. Use another pattern when you need the result it supplies.
+Search the Table of Contents by a familiar term or working question. Open the relevant pattern and compare its situation with yours. Use the method for the work someone needs to do. Playing a scored entrance, devising the ensemble’s cue and explaining yesterday’s entrance can concern the same music. Establish which choice the score settles, which choice the player or bandleader must make, and what would change their answer. Use another pattern when you need the result it supplies.
 
 The Readme follows several performance, teaching and practice-development cases. The Architectural Reference explains their shared distinctions. For other questions, use the Table of Contents to find a method, its limits and its worked cases. Creation, rehearsal, performance, observation and development can overlap.
 
@@ -112,7 +112,7 @@ Search the Keywords & Search Queries column for the performance, teaching, pract
 
 ## Practical entries
 
-Bring your question about performance, teaching or practice development. These selected examples show how one pattern's result changes what another method can do, where a useful branch can stop, and what changes when the conditions do. If no example fits, use the [Table of Contents](_index.md#table-of-contents) to open a pattern by its working question. Use a direct specialist method when it already supplies the needed result.
+Bring your question about performance, teaching or practice development. These selected examples show how one pattern's result changes what another method can do, where a useful branch can stop, and what changes when the conditions do. A case can feature the same music and serve another job. Compare the result its method gives you with the decision, explanation or design you owe. For work still open, use the [Table of Contents](_index.md#table-of-contents) to find the method by its question. Use a direct specialist method when it already supplies the needed result.
 
 The [Architectural Reference](01-music-and-dance-practice-engineering-principles-framework-ar.md) explains the shared language and its Music and Dance profiles. You can ask an assisting agent: “Explain this and give me your comments in the language of my work, without framework jargon.”
 
@@ -126,9 +126,9 @@ The [Architectural Reference](01-music-and-dance-practice-engineering-principles
 
 In the [constructed social-dance and live-music case](48-mdpe-application-1---a-constructed-social-dance-and-live-mus.md), a rehearsed pair and a live coder have performed a successful showcase. The organizers want unfamiliar pairs to sustain partner-responsive timing in a monthly social event. MDPE.8 separates that recurring practice from the showcase and from a possible later style line. MDPE.1 bounds the present project to one twenty-minute block. MDPE.21 compares the showcase arrangement with a social-practice arrangement: the latter needs varied partners, readable timing, a host, usable sound and floor conditions, and another opportunity to practise. The organizers choose to try the second arrangement because it supports the intended social use.
 
-Using [MDPE.22](40-mdpe-22---test-a-support-environment-change-for-a-music-or-d.md), the organizers set aside the event block for practice. They secure participants, a host, floor space and permission for the trial. [MDPE.5](32-mdpe-5---integrate-production-and-presentation-for-performed.md) brings the music, dance, sound, and event contributions together for a pair's performance. [MDPE.12](33-mdpe-12---observe-and-compare-music-or-dance-performance-and.md) guides observation of eight pairs. Three sustain the intended timing. Five return to a memorized phrase after a dense accent change, and four on the far side report difficulty locating the pulse.
+Using [MDPE.22](40-mdpe-22---test-a-support-environment-change-for-a-music-or-d.md), the organizers set aside the event block for practice. They secure participants, a host, floor space and permission for the trial. [MDPE.5](32-mdpe-5---integrate-production-and-presentation-for-performed.md) brings the music, dance, sound, and event contributions together for a pair's performance. [MDPE.12](33-mdpe-12---observe-and-compare-music-or-dance-performance-and.md) guides observation of eight pairs. In three pairs the entrance follows a release whose timing the partner chose, and the dancers identify that release as their cue. Five return to a memorized phrase after a dense accent change, and four on the far side report difficulty locating the pulse.
 
-The organizers use [MDPE.14](41-mdpe-14---choose-a-response-to-conflicting-music-or-dance-re.md) to examine whether the musical changes and partner cue allow dancers to maintain their timing in the same performance. A longer verbal explanation would leave the sound and timing difficulty unresolved. The team compares constraining the musical changes, keeping the showcase arrangement, and maintaining separate showcase and social configurations. It selects the split. The team implements its choice with [MDPE.15](43-mdpe-15---make-and-test-a-local-music-or-dance-practice-chan.md). The musician moves large accent changes away from the partner-cue interval, and the sound operator re-aims the monitor. In the later round, six pairs sustain the timing and two still need teacher cues. Both the sound and musical configuration changed, and the pairs had already practised, so these observations do not isolate either change's effect.
+The organizers use [MDPE.14](41-mdpe-14---choose-a-response-to-conflicting-music-or-dance-re.md) to examine whether the musical changes and partner cue allow dancers to maintain their timing in the same performance. A longer verbal explanation would leave the sound and timing difficulty unresolved. The team compares constraining the musical changes, keeping the showcase arrangement, and maintaining separate showcase and social configurations. It selects the split. The team implements its choice with [MDPE.15](43-mdpe-15---make-and-test-a-local-music-or-dance-practice-chan.md). The musician moves large accent changes away from the partner-cue interval, and the sound operator re-aims the monitor. In the later round, the same observations establish partner-responsive timing for six pairs. The other two use the teacher’s cue. What they could do unaided is still open. Both the sound and musical configuration changed, and the pairs had already practised, so these observations do not isolate either change's effect.
 
 With [MDPE.7](46-mdpe-7---choose-the-next-music-or-dance-development-work.md), the organizers use the changed configuration and the observations to compare the larger festival slot, another transfer trial, capability development, and stopping the social branch. In this case the team chooses an unfamiliar-partner trial and keeps the current event block for a month. The showcase branch remains useful for its own audience. [MDPE.16](44-mdpe-16---keep-music-or-dance-alternatives-available-for-lat.md) can maintain that branch when its performers, material, equipment, and permissions remain available. Another receiving group or a season-long continuation promise would require evidence for that group or interval.
 
@@ -192,10 +192,10 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 - [Music and Dance Practice Engineering Principles Framework Architectural Reference](01-music-and-dance-practice-engineering-principles-framework-ar.md) (17 lines)
 - [MDPE.Reference:1 - A first result and a sufficient combination](02-mdpe-reference-1---a-first-result-and-a-sufficient-combinati.md) (28 lines)
-- [MDPE.Reference:2 - Several structures operate at once](03-mdpe-reference-2---several-structures-operate-at-once.md) (26 lines)
+- [MDPE.Reference:2 - Several structures operate at once](03-mdpe-reference-2---several-structures-operate-at-once.md) (30 lines)
 - [MDPE.Reference:3 - Performance, recognition, selection, and continuation are different results](04-mdpe-reference-3---performance-recognition-selection-and-con.md) (14 lines)
 - [MDPE.Reference:4 - Project Work and cultural change](05-mdpe-reference-4---project-work-and-cultural-change.md) (15 lines)
-- [MDPE.Reference:5 - Conditions on a whole combination](06-mdpe-reference-5---conditions-on-a-whole-combination.md) (28 lines)
+- [MDPE.Reference:5 - Conditions on a whole combination](06-mdpe-reference-5---conditions-on-a-whole-combination.md) (32 lines)
 - [MDPE.Reference:6 - Shared patterns and specialized Music and Dance Methods](07-mdpe-reference-6---shared-patterns-and-specialized-music-and.md) (15 lines)
 - [MDPE.Reference:7 - Music, Dance, and overlapping use profiles](08-mdpe-reference-7---music-dance-and-overlapping-use-profiles.md) (126 lines)
 - [MDPE.Reference:8 - What this publication foregrounds and leaves outside](09-mdpe-reference-8---what-this-publication-foregrounds-and-lea.md) (17 lines)
@@ -213,7 +213,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 - [MDPE.8 - Characterize the Music-or-Dance Work, Methods, and Change Question](19-mdpe-8---characterize-the-music-or-dance-work-methods-and-ch.md) (257 lines)
 - [MDPE.1 - Frame a Music-or-Dance Work, Practice, Style, or Medium Project](20-mdpe-1---frame-a-music-or-dance-work-practice-style-or-mediu.md) (265 lines)
-- [MDPE.21 - Design How a Music-or-Dance Style Is Produced and Reproduced](21-mdpe-21---design-how-a-music-or-dance-style-is-produced-and.md) (283 lines)
+- [MDPE.21 - Design How a Music-or-Dance Style Is Produced and Reproduced](21-mdpe-21---design-how-a-music-or-dance-style-is-produced-and.md) (281 lines)
 - [MDPE.24 - Decide Whether a Music-or-Dance Practice Has Formed a New Whole](22-mdpe-24---decide-whether-a-music-or-dance-practice-has-forme.md) (310 lines)
 
 ### Part II - Performance Possibilities and the Performing Whole
@@ -230,7 +230,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [MDPE.11 - Interpret or Shape Music-or-Dance Material While Performing](29-mdpe-11---interpret-or-shape-music-or-dance-material-while-p.md) (285 lines)
 - [MDPE.27 - End Voluntary Partnered Performance](30-mdpe-27---end-voluntary-partnered-performance.md) (125 lines)
 - [MDPE.28 - Receive a Declined Invitation and Find an Available Next Action](31-mdpe-28---receive-a-declined-invitation-and-find-an-availabl.md) (145 lines)
-- [MDPE.5 - Integrate Production and Presentation for Performed Music-or-Dance Work](32-mdpe-5---integrate-production-and-presentation-for-performed.md) (318 lines)
+- [MDPE.5 - Integrate Production and Presentation for Performed Music-or-Dance Work](32-mdpe-5---integrate-production-and-presentation-for-performed.md) (317 lines)
 - [MDPE.12 - Observe and Compare Music-or-Dance Performance and Cultural Results](33-mdpe-12---observe-and-compare-music-or-dance-performance-and.md) (393 lines)
 - [MDPE.23 - Develop and Test Music-or-Dance Recognition Capability](34-mdpe-23---develop-and-test-music-or-dance-recognition-capabi.md) (375 lines)
 - [MDPE.13 - Design How Music-or-Dance Variants Are Recognized and Selected](35-mdpe-13---design-how-music-or-dance-variants-are-recognized.md) (260 lines)
@@ -238,14 +238,14 @@ Generated by the skill's splitter: one file per section, in reading order.
 ### Part IV - Changed Conditions, Transmission, Memory, and Continuation
 
 - [MDPE.6 - Choose Whether and How to Use a Music-or-Dance Result under New Conditions](36-mdpe-6---choose-whether-and-how-to-use-a-music-or-dance-resu.md) (277 lines)
-- [MDPE.17 - Design and Test Transmission of a Music-or-Dance Method](37-mdpe-17---design-and-test-transmission-of-a-music-or-dance-m.md) (347 lines)
+- [MDPE.17 - Design and Test Transmission of a Music-or-Dance Method](37-mdpe-17---design-and-test-transmission-of-a-music-or-dance-m.md) (339 lines)
 - [MDPE.18 - Build Usable Music-or-Dance Cultural Memory and Lineage Evidence](38-mdpe-18---build-usable-music-or-dance-cultural-memory-and-li.md) (280 lines)
 - [MDPE.19 - Decide Whether a Music-or-Dance Variant Can Continue and What to Change](39-mdpe-19---decide-whether-a-music-or-dance-variant-can-contin.md) (335 lines)
 
 ### Part V - Supporting Environment, Practice Conflicts, Local Change, Alternatives, Trajectories, and Next Work
 
-- [MDPE.22 - Test a Support-Environment Change for a Music-or-Dance Practice](40-mdpe-22---test-a-support-environment-change-for-a-music-or-d.md) (393 lines)
-- [MDPE.14 - Choose a Response to Conflicting Music-or-Dance Results](41-mdpe-14---choose-a-response-to-conflicting-music-or-dance-re.md) (536 lines)
+- [MDPE.22 - Test a Support-Environment Change for a Music-or-Dance Practice](40-mdpe-22---test-a-support-environment-change-for-a-music-or-d.md) (391 lines)
+- [MDPE.14 - Choose a Response to Conflicting Music-or-Dance Results](41-mdpe-14---choose-a-response-to-conflicting-music-or-dance-re.md) (533 lines)
 - [MDPE.25 - Renew a Shared Music or Dance Practice](42-mdpe-25---renew-a-shared-music-or-dance-practice.md) (257 lines)
 - [MDPE.15 - Make and Test a Local Music-or-Dance Practice Change](43-mdpe-15---make-and-test-a-local-music-or-dance-practice-chan.md) (370 lines)
 - [MDPE.16 - Keep Music-or-Dance Alternatives Available for Later Use](44-mdpe-16---keep-music-or-dance-alternatives-available-for-lat.md) (391 lines)
@@ -255,11 +255,11 @@ Generated by the skill's splitter: one file per section, in reading order.
 ### Cross-Pattern Application
 
 - [Cross-Pattern Application](47-cross-pattern-application.md) (6 lines)
-- [MDPE.Application:1 - A constructed social-dance and live-music development decision](48-mdpe-application-1---a-constructed-social-dance-and-live-mus.md) (90 lines)
+- [MDPE.Application:1 - A constructed social-dance and live-music development decision](48-mdpe-application-1---a-constructed-social-dance-and-live-mus.md) (81 lines)
 - [MDPE.Application:2 - Investigate movement through physics, bodily experience and composition](49-mdpe-application-2---investigate-movement-through-physics-bo.md) (102 lines)
 - [MDPE.Application:3 - Compose movement from a physical relation or a scientific image](50-mdpe-application-3---compose-movement-from-a-physical-relati.md) (20 lines)
 - [MDPE.Application:4 - Construct a rhythmic part from a seed, phase and action rule](51-mdpe-application-4---construct-a-rhythmic-part-from-a-seed-p.md) (24 lines)
-- [MDPE.Application:5 - Participation, learning, recognition and renewal in music and movement practices](52-mdpe-application-5---participation-learning-recognition-and.md) (214 lines)
+- [MDPE.Application:5 - Participation, learning, recognition and renewal in music and movement practices](52-mdpe-application-5---participation-learning-recognition-and.md) (218 lines)
 - [MDPE.Application:End](53-mdpe-application-end.md) (2 lines)
 
 ### Music and Dance Practice Engineering Principles Framework Sources and Edition Notes

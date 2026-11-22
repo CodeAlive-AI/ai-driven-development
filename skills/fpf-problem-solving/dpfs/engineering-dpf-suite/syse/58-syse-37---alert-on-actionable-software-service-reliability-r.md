@@ -8,7 +8,7 @@
 
 Use this pattern when alerts for a software-service loss arrive too often, too late or without an action someone can take. Start with the loss that matters, the time available to respond and who or what can act within that time.
 
-The first result is an exercised alert rule with its intended response and known blind spots, or the missing observation or response capability. An alert rule alone is not an operating on-call arrangement.
+Return the alert rule, its intended response and what the available evidence establishes about detection and response. Identify any missing observation or response capability. For an order to exercise the rule, give the actual result. An operational on-call arrangement also needs people and means able to respond in time.
 
 For budget-risk alerting, use the same service, task population, configuration and objective defined through SYSE.36. Do not borrow another service's SLO. A directly observed critical failure may need its own alert without waiting for an aggregate budget calculation. A dashboard trend that can wait for ordinary planning does not automatically warrant an interrupting notification.
 
@@ -53,13 +53,13 @@ Examine ordinary quiet periods and rare task classes. One failure among a few at
 
 Choose a response fitted to that use: a direct failure alert, a longer justified observation, qualified synthetic probes or an agreed objective change may be appropriate. Do not dilute real user failures with successful artificial requests or unrelated services to reduce the reported failure rate.
 
-Treat missing data separately from no bad events. A zero denominator, stale series or absent result is not automatically a zero burn rate. Exercise the chosen loss-of-observation rule and its response; it may merit urgent action even when the actual service state is unknown.
+Treat missing data separately from no bad events. A zero denominator, stale series or absent result is not automatically a zero burn rate. Determine what the loss-of-observation rule requires and whether the response can be delivered. Exercise it when the outcome is needed or the exercise is due. Loss of observation can justify urgent action while the actual service state is still unknown.
 
 #### SYSE.37:4.4 - Exercise evaluation, delivery and action
 
-Verify the rule's inputs, subject labels, triggering and clearing conditions, and evaluation cadence in the deployed monitoring mechanism. For a ratio, check its numerator and denominator. For a windowed rule, check the windows; a vendor's lookback or duration can mean something different from the intended decision window. Check that the configured rule implements the chosen logic.
+To assess a proposed rule, check its logic against the conditions in which it must trigger or clear. To establish the behavior of a deployed rule, determine how its implementation evaluates actual inputs, subject labels, thresholds and timing. For a ratio, check its numerator and denominator. For a windowed rule, establish how the configured lookback and evaluation times correspond to the intended decision window.
 
-Use applicable results from representative recorded or controlled synthetic histories. Exercise any uncovered failure, recovery, isolated variation or loss of telemetry that can change the selected rule’s response. Inspect when the rule fires and resets, which notifications arrive, and whether related rules duplicate or suppress a needed action.
+Use representative records or controlled exercises to distinguish failure, recovery, brief variation and missing observations where they change the required response. For a complete response, follow the relevant observations through evaluation, delivery, interpretation and authorized action on a common time basis. When several alerts can call on the same responder, check the work that must finish together or before different deadlines.
 
 Where a person or mechanism must respond, include the subject, affected use, evidence and first qualified response. For a notification, verify delivery through the route in service and any required acknowledgement without falsely declaring a production incident. A successful test message proves delivery, not the service-risk predicate.
 
@@ -67,7 +67,7 @@ Where a person or mechanism must respond, include the subject, affected use, evi
 
 After use, compare alerts with significant events and resulting actions. Find missed harm, noise, late detection, stale firing and unavailable response. Where a problem is observed, identify which measurement, rule or response arrangement needs repair and act on the supported finding.
 
-Return the exercised rule and limits through the existing service configuration and operating account. SYSE.38 supplies diagnosis/restoration when an event is active. For an actual user-task failure, establish recovery from the task result. Acknowledgement or suppression alone does not establish it.
+Return the rule, its intended response, the grounds for reliance and any limits through the existing service configuration and operating account. For a commissioned exercise, include its actual outcome. SYSE.38 supplies diagnosis/restoration when an event is active. For an actual user-task failure, establish recovery from the task result. Acknowledgement or suppression alone does not establish it.
 
 #### SYSE.37:4.6 - Choose rules with useful detection and reset behavior
 
@@ -101,7 +101,7 @@ For the illustrative constant eligible-event-rate basis, T = 720 hours, p = 0.02
 | --- | --- |
 | Both windows have a 2% bad-event fraction. | Burn rate is 20 in each window; this urgent condition fires. |
 | The one-hour fraction remains 2%, but the recent five-minute fraction is zero with complete observation. | This active fast-burn condition no longer fires; accumulated budget use still exists. |
-| The short-window series is missing. | The confirmation is unobserved, not favorable; the telemetry-loss response applies. |
+| The short-window series is missing. | Apply the telemetry-loss response. For the alert decision, use other qualifying evidence if available. If the threshold was not exceeded over the hour, the two-window test already fails. If every eligible event in the hour failed, that also settles the short-window rate whenever it contains an eligible event. Otherwise the short-window condition may remain open. |
 | The metric accidentally includes another service's successful requests. | The rule no longer measures the agreed subject and must be repaired. |
 
 The recipient's first qualified action is to inspect the affected task and current service state, then apply the available mitigation under the service's response policy. The exercise verifies the predicate, notification route and recipient response separately. The rule covers fast budget consumption. Slower loss and direct integrity failures need their own response when they matter.
@@ -124,7 +124,7 @@ Teams can tune thresholds to reduce page count while losing important failures, 
 - Budget-risk logic uses the matching measured objective and eligible population.
 - Any thresholds or windows used follow the selected loss and response basis.
 - Missing observations have an explicit disposition; count- or rate-based rules also address low traffic and impossible thresholds.
-- The rule’s evaluation is exercised. Where the selected response requires notification, acknowledgement or action, each required link is exercised separately. If a needed link is unavailable, the result identifies it.
+- Evidence establishes the rule's evaluation for the conditions claimed. For an operational response, the required links work together within the available time. An order to exercise the response also requires that performance.
 - Recovery and suppression do not hide remaining user harm or exhausted budget.
 - Platform and application alerts do not exchange subjects or denominators.
 

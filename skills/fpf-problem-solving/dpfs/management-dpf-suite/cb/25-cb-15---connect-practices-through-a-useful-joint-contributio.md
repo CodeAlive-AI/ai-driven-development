@@ -36,7 +36,7 @@ The task is to discover a concrete contribution worth obtaining together, make i
 
 ### CB.15:4 - Solution
 
-Find a concrete problem whose answer needs both practices. Arrange a small joint task with participants who can do it. Establish the differences that matter to the task and obtain any permission it needs. Carry out the task and return the result to both sides before deciding whether to expand the relationship.
+Start with the result the receiving practice needs and identify the contributions it requires from the different practices. Agree how the contributions will fit together, what each side will receive and what permissions and support are needed. A feasible arrangement can complete an order to design the collaboration. If shared work is commissioned, carry it out and deliver the agreed results before reporting what it accomplished.
 
 #### CB.15:4.1 - Locate the difficulty where the practices meet
 
@@ -58,7 +58,7 @@ Look for an action that is feasible with limited preparation and useful even if 
 | A concrete understanding of how another practice works. | A prepared visit, demonstration or learning expedition. | An account of the observed work and conditions, with what the visitor could try or still needs. |
 | A working connection between recurring contributions. | A trial of one handover or jointly produced item. | The received result and an identified correction or condition for repeat use. |
 | A larger new contribution. | A bounded joint project. | The agreed product and its use conditions; CB.14 governs a shared repertoire contribution. |
-| A position to carry into an external decision. | Joint preparation with an explicit mandate through CB.16. | The authorised position and the decision-maker's response. |
+| A position to carry into an external decision. | Joint preparation with an explicit mandate through CB.16. | The authorized position for an order to prepare it, evidence of proper submission for an order to file it, or the deciding body’s response when that is required. |
 
 Choose from the result rather than the attraction of a format. A visit is useful when situated observation can change understanding; a question that can be answered from an existing account may need no visit. A project is useful when the contribution needs sustained work; an informal encounter cannot silently promise its delivery.
 
@@ -94,6 +94,8 @@ Brief the participants on the intended result and conditions, then do the select
 
 Give each side a chance to correct the other's account. A participant may have understood the visible sequence while missing an input supplied elsewhere. Recover that dependency before proposing to use the approach in a new setting.
 
+When someone wants to carry a method home, ask what they intend to establish there. Identify the part of the host's work that answered that question and what supplies it in the visitor's practice. An existing register, agreement or observation can already settle a condition. If it leaves two materially different answers open, seek evidence that distinguishes them. A useful result obtained by another route can finish the local task. To recommend the host's route, establish its own conditions. A.3.1.FT develops method fit and transfer.
+
 Check what the recipient can do with the result. Can the recipient act on the referral? Did the consultation answer the question? Can the visitor explain the observed practice and identify what their own situation lacks? If uncertainty matters to the intended use, ask what would resolve it.
 
 Do not turn one observation into an unearned competence or effectiveness conclusion. A visitor may understand a practice without being able to perform it. HCD can supply preparation when a person needs to learn the practice, while A.3.1.FT can qualify a method's fit or transfer. Keep that further result separate from the successful visit.
@@ -102,7 +104,7 @@ When the action fails, return the failure to the relevant part of the arrangemen
 
 #### CB.15:4.6 - Return the contribution to both practices
 
-Give the result to its intended recipients on both sides. Explain what was obtained, the conditions on which it depends and the next use or unresolved question. Check that the participants may share the intended account; protect material whose permission was limited to the encounter.
+Deliver what each intended recipient is entitled to receive. In an order for one client’s conclusion, the practitioners who contributed may only be entitled to confirmation of delivery. Explain what was obtained, the conditions on which it depends and the next use or unresolved question. Check that the participants may share the intended account; protect material whose permission was limited to the encounter.
 
 For a new shared instruction or practice contribution, use CB.14 to obtain qualification and maintenance. For a local adaptation, give the receiving owner the relevant observation and conditions. A helpful encounter may finish with one person changing a request and no new joint resource.
 
@@ -140,7 +142,7 @@ A group of volunteer archivists wants to understand how another group recovers t
 
 The hosts arrange a permitted case and a practitioner who can show the relevant sources. During an online visit, the practitioner reconstructs the investigation, identifies where an attribution remained uncertain and answers questions. The visitors distinguish the reconstructed account from live investigative work.
 
-One visitor then explains how they would approach a different photograph and discovers that their own collection lacks the proposed catalogue link. The useful return is a clearer investigation question and that missing-source condition. A later local trial is needed before recommending the same approach there.
+One visitor wants to find the date that their own accession register records for another photograph. Their collection lacks the hosts' catalogue link. If an existing concordance reliably connects that photograph's former number to its current entry, the visitor can consult the entry and report its date. Suppose a reused number could refer to either of two entries. If these exhaust the possibilities and give the same date in the relevant field, the visitor can report that date. To cite one specific entry, or to decide between two different dates, the visitor needs a way to identify the entry for this photograph. An inscription could independently help date the photograph while leaving the catalogue lookup unresolved. To recommend that lookup for the collection, establish which records its concordance covers. To promise a time saving, compare the lookup with the home team’s current way of obtaining an answer of the same quality on comparable cases. Timing one investigation establishes its duration.
 
 The visitors return a short account for the host to correct. The hosts identify a step that their demonstration left implicit and add it to the explanation they use for later visits.
 
@@ -168,8 +170,8 @@ For reliance on a joint contribution, establish:
 - The first action is feasible and useful under the actual time, access and capability conditions.
 - Participants can supply the contribution or obtain the missing owner decision.
 - Consequential meanings and substantive conflicts are understood at the receiving use.
-- The action yields an inspected result, including any unresolved input or failed condition.
-- Both practices receive the useful return within the agreed permission and representation limits.
+- The result matches the order. For a proposed arrangement, identify the contributions it makes feasible. For a completed joint action, trace how the parties’ contributions came together in that work and what reached the receiver.
+- The parties can obtain the returns the arrangement promises within the agreed permission and representation limits. For a claim about delivery, establish what the relevant recipient actually received.
 - Further commitments are chosen and provided explicitly; useful local independence remains available.
 
 An unexplained referral failure or a promising contrast is enough to recognise the need. The conditions above support reliance on the constructed connection.
@@ -184,7 +186,7 @@ An unexplained referral failure or a promising contrast is enough to recognise t
 | Fill a visit with presentations that could happen anywhere. | Arrange practitioner-guided access to the work and questions that need situated observation. |
 | Treat visiting or understanding as being qualified to perform. | Obtain the separate learning, fit or professional result needed for later use. |
 | Expand a successful pilot on the same unexamined volunteer effort. | Obtain provision for the new demand before promising the expanded service. |
-| Let only the visitors receive the result. | Return useful observations, corrections and next decisions to the hosts too. |
+| Omit a return the parties rely on. | Establish what each side agreed to receive. Return observations or results to the hosts when their own decision or the terms of the exchange require them. |
 
 ### CB.15:9 - Consequences
 

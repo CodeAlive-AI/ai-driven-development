@@ -7,7 +7,7 @@
 
 Use this pattern when a board cannot obtain a needed oversight contribution, when a committee lacks the remit or support to provide it, or when new committees are being proposed without a clear receiving use.
 
-Begin with the question the board or another responsible organ needs answered. Determine whether an existing arrangement can answer it and whether a committee is required by the applicable rules. The useful result is an oversight design: its remit, participants, powers, information access, resources and return to the responsible organ, together with any conditions for putting it into effect.
+Begin with the question the board or another responsible organ needs answered. Determine whether an existing arrangement can answer it and whether a committee is required by the applicable rules. If the commission calls for a design, supply its remit, participants, powers, information access, resources and return to the responsible organ, together with any conditions for putting it into effect. A feasibility question can also end with a reasoned finding that no permitted arrangement can operate by the required date.
 
 ### CGOV.5:2 - Problem
 
@@ -45,11 +45,11 @@ Choose members against the contribution: relevant competence, available time and
 
 Provide access to needed information, specialists and protected ways to raise a concern. Where independent advice is warranted, arrange a usable way to commission and receive it. A member who is formally eligible but cannot obtain the necessary facts may be unable to perform the task.
 
-Check capacity across the arrangement. The same two directors on every committee may have neither the time nor the range of knowledge the combined work needs. When judging their capacity, check the time and expertise available across all their assignments.
+Check capacity across the arrangement. The same two directors on every committee may have neither the time nor the range of knowledge the combined work needs. When judging their capacity, check the time and expertise available across all their assignments. Several committees may each have access to an expert and still hold rights to separate confidential hearings in the same hour. Check what the combined arrangements permit the committees to demand and when someone can resolve conflicting calls. If a single agreed hearing serves them all, count the expert’s time once.
 
 #### CGOV.5:4.4 - Return the arrangement and its use conditions
 
-Return a design that the authorized participants can adopt. Identify any needed appointment, delegation, access provision or resource commitment. The responsible participants carry out those acts under the applicable procedures. Confirm the resulting conditions before relying on the arrangement.
+Return a design that the authorized participants can adopt. Identify any needed appointment, delegation, access provision or resource commitment. The responsible participants carry out those acts under the applicable procedures. Confirm the resulting conditions before relying on the arrangement. If four independent members are required and at most three can qualify by the deadline under every permitted arrangement, the deadline is infeasible. Where qualification is still open, report the missing condition and the choices it affects.
 
 Keep the expected contribution distinct from a performed review. Examine whether the recipient can use the actual returns, whether important matters escape the remit and whether the burden remains justified. Repair the remit or support when needed; retire a temporary arrangement when its work is finished and the applicable rules permit.
 
@@ -79,7 +79,7 @@ An impressive committee catalogue can hide duplicated work and overloaded member
 
 ### CGOV.5:7 - Conformance Checklist
 
-Does the arrangement answer a recognizable oversight need? Are required arrangements distinguished from optional designs? Can members perform the work with their competence, time and access? Are the remit, powers and receiving action clear? Does the result distinguish a design, an effective arrangement and performed oversight?
+Which oversight result was commissioned? Does the design meet the applicable conditions for remit, powers, information and capacity, including demands the members must meet together? If no arrangement can meet the deadline, does the ground cover the permitted alternatives? For a claim that the arrangement took effect or performed its work, which appointments or oversight acts establish that particular result?
 
 ### CGOV.5:8 - Common Anti-Patterns and How to Avoid Them
 

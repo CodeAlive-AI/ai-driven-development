@@ -5,9 +5,9 @@
 
 ### EAM.14:1 - Problem frame
 
-Use this pattern when the arrangement performing asset management repeatedly prevents useful decisions: information is joined incorrectly, responsibility is unclear, a needed capability is absent or a question does not reach the party authorized to decide it.
+Use this pattern when the way asset management is organized prevents, or will foreseeably prevent, a result that the recipients need. A configuration record may be joined to the wrong asset, a needed capability may be unavailable or the only authorized role may have been withdrawn before the first decision falls due.
 
-Begin with the recurring failure, the participants and tools involved, and how they interact. Return a supported decision to retain or change that arrangement. A small correction may suffice. A new enterprise system is one possible alternative.
+Start with the decision at risk and trace the responsibilities, information, tools and authorities needed for it. Evidence of repeated failures can reveal the difficulty. A governing rule or a known resource limit may already establish that a proposed arrangement cannot work. Return a supported decision to retain or change it.
 
 ### EAM.14:2 - Problem
 
@@ -19,7 +19,7 @@ A shared arrangement can reduce duplication while creating a bottleneck or commo
 
 ### EAM.14:4 - Solution
 
-Name the asset-management result that is failing and a representative occurrence or source account. Identify the receiving practitioner and decision, the observed difficulty and its consequence. Keep an untested diagnosis of the cause separate from the observation.
+Name the required asset-management result, its recipient and the conditions that matter to that decision. For a failure that occurred, establish what was observed and distinguish its suspected cause. For a proposed or newly changed arrangement, use its actual powers, resources and interfaces to determine what it could deliver.
 
 Recover the arrangement needed for that result: the participants and other systems involved, responsibilities, information, tools, capabilities and decision interfaces. Choose only the relations that explain the failure. The asset System being managed and the organization performing asset management are different subjects.
 
@@ -47,7 +47,7 @@ The practitioner can recommend the bounded repair, then inspect whether matching
 
 In a larger constructed variant, a new arrangement changes the roles' ongoing responsibilities: the cost analyst is to request a joint appraisal, the condition engineer is to resolve the unit correspondence with the source, and the committee secretary is to return an incomplete contribution to the responsible participant. All three use the maintained unit correspondence when preparing and receiving the appraisal. These contribution and return responsibilities must become workable. Once the authorized arrangement or trial decision is supplied, [OCE.9](../oce/31-oce-9---realize-a-bounded-organization-capability-increment.md) can exercise an appraisal from its request through comparison to a usable committee packet, including an unknown-unit case. If the condition engineer lacks effective access, the useful first result is that missing access and the responsible provider's required action. After it is supplied, representative later appraisals can establish what the new arrangement actually supports. The result states the observed conditions and remaining limits; purchasing the shared tool does not establish that capability.
 
-A different office may already have adequate responsibilities but have twelve assigned half-hour condition checks competing for four available engineer-hours. Under those durations, the available time accommodates eight checks. The practitioner uses [OPS.11](../ops/43-ops-11---coordinate-interacting-operating-structures.md) to compare which checks to release now and when to do the remaining four, carrying the effects on the asset decisions. OPS.11.1 relates the checking step to the analyst's and secretary's work before anyone promises completed appraisals. When these choices lie within existing responsibilities and authority, this is operating coordination; a changed allocation does not itself require redesigning the contribution relationships.
+A different office may already have adequate responsibilities but have twelve assigned half-hour condition checks competing for four available engineer-hours. The four-hour total can support at most eight checks. Suppose one qualified engineer can use those four hours in time, the material is ready and eight checks fit the available windows. The practitioner uses [OPS.11](../ops/43-ops-11---coordinate-interacting-operating-structures.md) to compare which checks to release now and when to do the four still to be done, carrying the effects on the asset decisions. OPS.11.1 relates the checking step to the analyst's and secretary's work before anyone promises completed appraisals. When these choices lie within existing responsibilities and authority, this is operating coordination; a changed allocation does not itself require redesigning the contribution relationships.
 
 ### EAM.14:6 - Bias-Annotation
 
@@ -55,7 +55,7 @@ Software providers and organizational sponsors can make their solution define th
 
 ### EAM.14:7 - Conformance Checklist
 
-Is the failed asset-management result recognizable? Does the selected change act on the actual arrangement and have a plausible mechanism of improvement? Are implementation authority, whole burden and the intended outcome comparison explicit?
+Can the recipient identify the decision at risk or the result that failed, and what supports that conclusion? Does the change address the responsible arrangement? Are implementation authority, whole burden and the intended outcome explicit?
 
 ### EAM.14:8 - Common Anti-Patterns and How to Avoid Them
 

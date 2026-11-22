@@ -1,7 +1,7 @@
 ## MDPE.Sources:1 - Edition return
 
-The version designation printed with the author’s name is 7
-October 2026. This publication brings together the Readme, Table
+The version designation printed with the author’s name is 22 November 2026.
+This publication brings together the Readme, Table
 of Contents, Architectural Reference, twenty-eight methods, their
 shared methods and constructed applications, and these edition
 notes. For a claim, cite the method or section that states it. A collected copy should reproduce that text.

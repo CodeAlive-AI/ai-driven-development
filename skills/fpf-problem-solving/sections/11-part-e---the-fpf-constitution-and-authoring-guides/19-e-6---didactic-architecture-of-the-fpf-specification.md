@@ -58,7 +58,7 @@ This publication order does not require readers to traverse every Part. Practica
 | ID | Requirement |
 |----|-------------|
 | **CC‑DA.1** | Each Part **SHALL** open with a one-paragraph situational introduction before formal text. |
-| **CC‑DA.2** | Every architectural pattern **MUST** supply the grounding required by E.7: applicable System and Episteme illustrations, or the explicit single-substrate scope and justification under CC‑AG.3. |
+| **CC‑DA.2** | Every architectural pattern **MUST** ground its rule under E.7 in the practitioner's question, the kinds of things it concerns and the relation that warrants the answer. |
 | **CC‑DA.3** | Governance patterns (**Part E**) **SHALL NOT** appear before the Kernel in the main document flow. |
 | **CC‑DA.4** | Navigation aids **SHALL** distinguish document order from first-practical entry guidance. First-entry pattern-comparison guidance and expanded entry-disambiguation cases are informative and MAY cross Parts without implying a universal process history. |
 

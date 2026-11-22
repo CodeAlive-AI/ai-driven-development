@@ -7,9 +7,9 @@
 
 Use this pattern when a corporation is considering a change to its governing instruments, powers or arrangements. A delegation may no longer fit the scale of commitments; a committee's remit may omit a needed contribution; or a change in law, ownership or corporate purpose may require a different rule.
 
-Start by identifying the rule or arrangement in question and what currently gives it effect. Compare retaining it, repairing its operation and changing it. For a selected arrangement change, determine who can change it, whose rights must be preserved, and what makes the new arrangement effective. Then perform the required acts and provide the means for using the result.
+Start by identifying the rule or arrangement in question and what currently gives it effect. Compare retaining it, repairing its operation and changing it. For a selected arrangement change, determine who can change it, whose rights must be preserved, and what makes the new arrangement effective. For advice or a draft, explain the change and the acts it would require. When an effective change is commissioned, obtain those acts under the arrangements currently in force. Include operating support when use of the changed arrangement is part of the assignment.
 
-For a selected change, the full result is a changed governing instrument or arrangement effective to the stated extent, with its application and remaining implementation conditions understood. An authorized proposal awaiting consent, registration, appointment or another necessary act is an earlier result. State what remains possible under the current arrangement while that act is outstanding.
+A proposal that explains who may decide, whose rights are affected and when the new terms would apply can complete a commission to design the change. To report the change as effective, establish the consent, registration, appointment or other event that gives it force. Identify what may still be done under the current terms until then.
 
 If a sufficient rule already exists and only its execution has failed, repair that execution. A workload allocation within unchanged powers belongs to ordinary operations. Use this method for the corporate conditions of an arrangement change; obtain a competent legal answer where the applicable basis is unresolved.
 
@@ -55,11 +55,11 @@ If retaining the current arrangement or repairing its operation answers the diff
 
 For the selected change, explain the new powers or contributions, protected conditions, required means and affected pending matters. Determine how current delegations, unfinished decisions and relevant records will be treated. Preserve obligations whose discharge or alteration needs a separate act.
 
-Make the transition feasible: those who will perform the new contribution need to understand it, have the necessary capability and be able to obtain the information and services it requires. A legal power and the ability to exercise it are separate prerequisites. If the intended arrangement cannot yet operate, choose a permitted interim arrangement, delay the change where allowed, or limit its initial use.
+Make the transition feasible: those who will perform the new contribution need to understand it, have the necessary capability and be able to obtain the information and services it requires. A legal power and the ability to exercise it are separate prerequisites. If the intended arrangement cannot yet operate, choose a permitted interim arrangement, delay the change where allowed, or limit its initial use. If several organs may independently call on the same adviser, determine whether their permitted calls can coincide and which require separate work. One joint opinion can serve several decisions when their rules allow it. Distinct hearings can require the adviser’s time separately.
 
 #### CGOV.14:4.4 - Obtain the corporate acts and establish effectivity
 
-Perform the required decision and consent procedures under the conditions now in force. CGOV.11 describes the corporate decision; the applicable instruments determine the additional amendment conditions.
+For a commission to put the change into force, perform the required decision and consent procedures under the conditions now in force. CGOV.11 describes the corporate decision; the applicable instruments determine the additional amendment conditions.
 
 Carry out the further acts that the selected route requires. Establish what changed, for whom, and from when. Preserve the difference between an approved text, a filed text, an effective rule and an appointment that has taken effect.
 
@@ -69,7 +69,7 @@ If a condition remains unsatisfied, return the achieved result and the next need
 
 Provide the operative wording and its practical consequences to those who rely on it. Update the affected instructions, assignments, permissions, services and records. Explain how a pending matter should proceed and who answers a remaining authority question.
 
-Try a representative action under the changed arrangement where that is useful and permitted. Follow the connection between constituent capabilities and the corporate act: reading a changed limit, identifying the eligible participant, using the required information and performing the authorized action can each affect whether the whole is accomplished.
+To assess the arrangement before use, establish which capabilities the organ needs and whether the participants can draw on them together on the terms promised. An authoritative record can establish that the corporate act took effect. When the conclusion depends on its constituent operations or they are themselves under review, trace those required by the procedure, such as casting and counting votes in the matter. An earlier explanation of a limit may inform the vote. A secretary’s ability to give that explanation can remain available on a day when the vote is cancelled. A representative trial can resolve a remaining question about the arrangement.
 
 Correct an operating defect through the appropriate method. Do not treat an unchanged software limit as the law, or a changed software limit as a grant of authority.
 
@@ -97,7 +97,7 @@ In another constructed case, the current rules let the board establish an adviso
 
 The board adopts the expanded remit through its required procedure and communicates the new wording. The amendment is effective. The committee's members lack the relevant control-design competence, so the board also arranges qualified specialist support under its existing powers.
 
-Once that support and necessary information are available, the committee performs the added advisory contribution. The changed charter alone did not supply the competence. The new contribution can inform a later board decision but does not make the committee the holder of that decision power.
+Once support and information are available, the specialist assesses the control design. Under this advisory remit, the committee must consider that assessment and form the advice it gives the board. If its remit only required forwarding the specialist’s opinion, verified delivery could finish that narrower assignment. The board retains its decision power.
 
 ### CGOV.14:6 - Bias-Annotation
 
@@ -112,7 +112,7 @@ A dominant participant can describe a rights-reducing change as an efficiency im
 - The proposed text is not used as authority for its own adoption.
 - Approval, effectivity and functioning are distinguished where they occur separately.
 - Continuing obligations and affected pending matters have usable treatment.
-- The needed capability, information and services support the changed arrangement.
+- Where operating capability is required, the necessary people, information and services are available for the work the bodies are entitled to call for, including any separate contributions required together.
 - Any claimed improvement is supported by consequences beyond the amendment itself.
 
 ### CGOV.14:8 - Common Anti-Patterns and How to Avoid Them

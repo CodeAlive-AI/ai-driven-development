@@ -7,9 +7,9 @@
 
 **Use this when** a person or technical agent has selected an external aid and the task depends on using its result for the intended input. A calculator can execute a mistyped expression correctly; software can act on the wrong target; a useful return can be ignored.
 
-Start with the supported action, intended expression or target, and the result the receiving work needs. Use an applicable result for that input if one is available. Otherwise bind the intended input and use the selected aid according to how it operates. Check the contribution obtained and apply it to the task, or identify the condition preventing its use.
+Start with the result or performance the receiving work requires, the intended input or target, and who is to use the aid. A qualified earlier return can supply a requested value. If the order calls for a fresh observation, an execution on this target or the performer’s use of the aid, establish that contribution under the stated conditions. Apply the resulting evidence to the task or identify what prevents its use.
 
-Choose among complete available ways through C.38/C.11 when that choice is unsettled. A.15.7 steers the current action; C.24 plans a selected technical action's calls when needed. An already sufficient result needs no fresh call. Use this method to apply an available aid. For the design of a service interaction, use SYSE.26. If a reusable aid must be developed, use SYSE.48.
+Choose among available ways through C.38/C.11 when that choice is unsettled. A.15.7 steers the current action and C.24 can help plan a selected technical action's calls. Use SYSE.26 to design a service interaction and SYSE.48 to develop a reusable aid.
 
 ### SYSE.42:2 - Problem
 
@@ -29,13 +29,13 @@ A selected aid does not by itself complete the work. The performer must bind the
 
 Recover what the task needs, which expression or target is meant, what may be done and what result will be used. Inspect the available means and the behavior that matters: entered expression, units, identifiers, valid range, current state and any effect/recovery conditions. For paper-supported arithmetic, check that the layout is legible and that the person doing the calculation can perform the required digit operations.
 
-For every consequential argument, identify its source. Use the identifier from the current task or an authoritative lookup. When a value requires conversion, check the units and use an applicable conversion. If the proposal omits a value or gives two plausible targets, obtain the fact needed to complete or disambiguate the binding. A default is usable only when the contract makes it the intended value in these conditions.
+For each consequential argument, establish its source, units and any conversion. Before an operation, resolve a missing value or target distinction that could change what is permitted, what the operation affects or what the recipient can conclude. If all admissible readings already give the requested value and only that value is due, give it with its grounds. Use a default when the contract assigns it that meaning.
 
 Check the proposed use against the available means. For a calculator, inspect the entered expression before taking its display as the requested product. For software, check which tools the executor has and its current permissions. A generated name or explanation can refer to an unavailable tool or an operation outside the executor’s permissions. Place reliably enforced controls in the executor under SYSE.28. An explanation can help locate a mismatch. Verify it against the available tools and permissions.
 
 #### SYSE.42:4.2 - Execute within the interface's effect boundary
 
-Check the expression or layout against the required operation. For a structured call, validate the syntax, then check what the request means in the current state: a well-formed request can concern the wrong configuration or a superseded target. Use the current-state precondition when intervening changes matter. Perform the supported operation when its result is still needed.
+For an invocation, check the expression or layout against the required operation. For a structured call, validate the syntax and check the request's meaning in the current state. Establish any current-state precondition that could change its effect. Perform the supported operation when its execution is due or it supplies a result still needed.
 
 For a state-changing call, preserve any identity the interface needs for recovery. Distinguish rejection before effect, accepted work in progress, a confirmed result and an unresolved effect. Under SYSE.26, use the original attempt’s result if the contract can recover it. A permitted repeat can serve the task when its contract covers every still-possible outcome, including partial or external effects and intervening changes. If those states require different actions, resolve the difference or return the limit. Attribute a historical effect to an attempt only on evidence for that attempt.
 
@@ -77,7 +77,7 @@ The model proposes `seconds=10000`, having reused a millisecond value. The bindi
 
 The request with attempt A17 is accepted, but its reply is lost. The executor queries A17 under the supplied contract. That return identifies meter-2, revision 82 and interval 10 seconds. Use the confirmed values in the report to close the change task.
 
-If the attempt query instead reports an unknown outcome, the task remains unresolved. If a fresh read shows an independently changed revision before invocation, the expected-revision condition fails and the engineer reconsiders the change against that state.
+If the attempt query returns unknown, establish what the receiver needs. Evidence of the current ten-second setting can settle an order for the configured state. To report what A17 did, obtain evidence tied to A17. A fresh change still requires its own authorization and preconditions. If a fresh read shows an independently changed revision before invocation, the expected-revision condition fails and the engineer reconsiders the change against that state.
 
 For a request merely to explain a current configuration, an already applicable observation may suffice. Reissuing a state-changing call would add no needed result.
 
@@ -87,7 +87,7 @@ Tool-friendly tasks can hide missing authorization, physical action or specialis
 
 ### SYSE.42:7 - Conformance Checklist
 
-- The proposed invocation is bound to a supported action, actual target, current interface and sourced consequential arguments.
+- An applicable existing result can supply the requested answer. For a requested invocation, the supported action, intended target, interface and consequential arguments are identifiable.
 - Validation distinguishes shape from permission, applicability and state.
 - For a partial or unknown effect, the continuation follows the interface contract and current authority. A repeat is qualified for every remaining state, or any state that would make it unsafe is resolved first.
 - The return's subject, units and evidence status support its receiving use.

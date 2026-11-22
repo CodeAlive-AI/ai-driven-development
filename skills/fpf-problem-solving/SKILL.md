@@ -183,7 +183,7 @@ entries); `library/USING-FPF.md` the upstream rules for references, editions and
 ## Attribution and license
 
 Adapted from the *FPF Library* by Anatoly Levenchuk ([ailev/FPF](https://github.com/ailev/FPF), upstream
-commit `9fb0bff7ac2dfe82f068b03befe6b7303bcd7f5b`), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/):
+commit `115781b4e0da17d50cff7edd1423f1cac7a502b8`), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/):
 split into section files with generated indexes and local links; routing and Map C (a paraphrase of
 Anatoly Levenchuk's cheatsheet of frequently used patterns) added. Not endorsed by the FPF author. Full
 notice and the list of changes: [README.md](README.md#license). Skill packaging and scripts: MIT.

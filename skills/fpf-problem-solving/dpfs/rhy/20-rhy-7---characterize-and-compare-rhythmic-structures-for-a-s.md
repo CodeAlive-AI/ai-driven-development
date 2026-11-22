@@ -55,7 +55,7 @@ Select an operation appropriate to the question.
 | Does a continuous course meet a required rise, peak or release? | Align the relevant portions with the receiving reference. Compare time, extent or rate as the task requires, retaining assumptions about the course between observations. | The specification alone leaves the performer’s or listener’s response open. Use suitable observations of the realization for that question. |
 | Does a performer have time to recover between assigned actions? | Map occurrences to the performing body part or mechanism; compare successive demands with its applicable recovery or coordination limits at the intended tempo. | A schedule compatible with supplied limits still needs the realization capabilities and conditions it assumes. |
 
-Give the calculation behind a reported value. Cyclic gaps include the gap from the last onset to the first onset of the next cycle. Dropping it changes the gap list. For a sum or histogram, keep the source sequence if later work needs a distinction that the summary omits.
+Give the basis the recipient needs for a reported value. Show the calculation when your comparison produces it or the commission requires it. A documented result under the applicable procedure may already supply the value for this comparison. Cyclic gaps include the gap from the last onset to the first onset of the next cycle. Dropping it changes the gap list. For a sum or histogram, keep the source sequence if later work needs a distinction that the summary omits.
 
 Use C.16 to interpret a measurement and A.19.CPM to compare under a declared rule. Select the rhythmic feature itself from the receiving question and the operation that can establish it.
 

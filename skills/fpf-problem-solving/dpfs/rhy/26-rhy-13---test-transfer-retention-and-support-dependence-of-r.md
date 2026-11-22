@@ -9,7 +9,7 @@
 
 Identify the claim and the comparison that could settle it. Use an adequate existing performance or other relevant evidence. When the evidence leaves a question open, identify the missing condition or explain why the proposed probe cannot answer it.
 
-Use a familiar performance under its established conditions. For a question about human development, HCD.12 and HCD.13 supply general transfer and retention methods. Here, select the rhythmic relations to examine and identify whether the capability belongs to the performer, to an equipped performer or to a group. For a controller, assess the configuration or policy against its engineering criteria. An observed later performance can establish retention on that task. A psychological explanation of the result needs evidence for the proposed process.
+Use a familiar performance under its established conditions. For human development, HCD.12 and HCD.13 supply methods for transfer and retention. Identify whether the relevant contribution belongs to a person in a particular role, an equipped performer or a group. For retention, establish the earlier capability and its availability again after the relevant interval, with the support needed to interpret both occasions. For a controller, assess the configuration or policy against its engineering criteria. A psychological explanation needs evidence for the proposed process.
 
 ### RHY.13:2 - Problem
 
@@ -37,7 +37,7 @@ Identify the contribution, who or what supplies it, the conditions under compari
 - **Support dependence:** what remains available when a particular source of reference, information or assistance changes?
 - **Combined use:** can the whole perform with the later passage, support and arrangement? Evidence about the whole arrangement may settle that question even if it leaves the cause of the outcome open.
 
-Ask for the narrowest result that answers the question. A local finding about the supported entry may finish a report or allow rehearsal to proceed. To claim a learning effect, establish the contribution of the learning conditions.
+Use the result sufficient for the assignment. A supported entry may finish a report or let rehearsal proceed. To assign work to the same pair, a relevant joint performance can suffice. If the next engagement permits another partner, identify the cue, responsive action and timing on which success depended and whether those conditions cover the partners allowed. The named pair can keep its supported assignment while that wider use remains open.
 
 Identify who supplies each contribution. A teacher may give the beat and entry, the learner the articulation, a score the duration and a device the sound. To assess later use with all these contributions, use evidence about that arrangement. To assess entry without the teacher, identify the reference still available and establish whether the learner supplied the required entry.
 
@@ -59,7 +59,7 @@ If success depends on a new prerequisite, use adequate existing evidence if avai
 
 #### RHY.13:4.3 - Separate retained performance, support and new instruction
 
-For human performance, use HCD.12 or HCD.13 to preserve the conditions of the claim. An existing observation may show what the learner supplied and when guidance was given. In a new probe of independent performance, observe the attempt before giving a demonstration that supplies the answer. If the learner receives help, describe what they do with it. A claim of subsequent learning needs evidence of the relevant change.
+For human performance use HCD.12 or HCD.13. An existing take can establish a person's present contribution with the partner and tools the work requires. For a new probe of independent selection, observe the choice before supplying the answer. After a demonstration, identify what the learner reproduced and which choices, such as preparation or allocation, they still made. To establish a gain, compare their earlier and later performance of that contribution under comparable support. To attribute the gain to a particular exercise, seek grounds that distinguish its contribution from other practice or changes in the task. A partner-dependent choice can be observed in the duet.
 
 For a retention claim, use comparable earlier and later tasks and support, or account for a consequential change. To examine the contribution of a particular support, compare performance under the relevant support conditions. A failed later attempt with assistance withdrawn can establish a failure under those combined demands. Separating loss over time from dependence on assistance requires a comparison that distinguishes them.
 
@@ -81,7 +81,7 @@ Keep what the earlier performance established under its familiar conditions. A f
 
 #### RHY.13:4.5 - Return a bounded conclusion and next use
 
-State what the evidence shows about transfer, later performance or performance under the specified support. Name the changed conditions and the limits of the comparison. A rehearsal may need only a concise finding such as “The phrase survives the rate change with the hand reference. Entry without the teacher’s beat was not established in that attempt. If that entry is required next, practise it under the intended conditions.”
+State what the evidence shows about transfer, later performance or performance under the specified support. Name the changed conditions and the limits of the comparison. A rehearsal may need only a concise finding such as “The phrase survives the rate change with the hand reference. Entry without the teacher’s beat was not established in that attempt. If that entry is required next, an earlier unaided performance may already settle the assignment. Arrange practice if the learner needs to develop it.”
 
 Return the local conclusion when it answers the question. A claim about the cause of learning or the prevalence of a result across learners needs evidence for that claim. When a stronger conclusion matters, identify the additional contrast or observation that could change it and weigh its value against the burden through C.11.DUA.
 
@@ -95,7 +95,7 @@ The following examples stipulate the probe conditions and outcomes to show how t
 
 #### RHY.13:5.1 - A later success still uses the teacher's reference
 
-A learner performs a three-beat gesture cycle against a two-syllables-per-beat phrase with a teacher giving the beat. The intended later use permits the learner's own gesture but has no teacher.
+At the earlier lesson, the learner was observed maintaining a three-beat gesture cycle against a two-syllables-per-beat phrase with the teacher giving the beat. The intended later use permits the learner's own gesture and calls for entry without the teacher.
 
 At the next lesson, the first familiar attempt with the teacher's beat succeeds. In the following attempt without that external beat, the learner resets the gesture at the phrase boundary. The score and duration information remain available, so this contrast does not withhold a missing part of the phrase description.
 
@@ -103,11 +103,11 @@ The first attempt at the later lesson establishes performance with the teacher�
 
 #### RHY.13:5.2 - Relative timing transfers to a changed beat period
 
-A familiar four-unit phrase has attacks at units 0, 1 and 3. At a 0.5-second unit its attacks occur at 0, 0.5 and 1.5 seconds, returning to the cycle beginning at 2.
+An earlier recording shows this learner performing a four-unit phrase with attacks at units 0, 1 and 3 and continuing into the next cycle. The unit was 0.5 seconds: the attacks occurred at 0, 0.5 and 1.5 seconds, with the cycle returning at 2. The learner supplied the attacks using the agreed beat reference.
 
 The next use has a 0.4-second unit and the same grouping and articulation. The target attacks are therefore 0, 0.4 and 1.2 seconds, with the cycle returning at 1.6. The learner understands the unchanged convention and can make the required familiar actions at that speed.
 
-Suppose the first changed-tempo attempt preserves the relative positions and continuation within the accepted tolerance. This establishes transfer to this tempo for the stated phrase. Entry at another cycle position, a new technique and responsive adjustment to a partner would each require evidence for that change. A question about this tempo is answered.
+Suppose this tempo is new for the learner in this phrase. In the first attempt at 0.4 seconds per unit, with the same permitted reference and no demonstration of the changed passage, the learner preserves the relative positions and continuation within the accepted tolerance. The two performances support transfer of the earlier timing contribution to this tempo. If the earlier evidence consisted only of the score, the later take would still establish present performance at 0.4 seconds per unit. The same person's earlier contribution would remain open. A different entry position, new technique or responsive adjustment to a partner needs grounds for that further use.
 
 #### RHY.13:5.3 - Removing information is not a clean independence test
 
@@ -115,7 +115,7 @@ A learner has performed a sound lasting two beats followed by two silent beats f
 
 For a memory question, specify the earlier duration the learner must retrieve and examine performance without the duration-bearing prompt. For an interpretation question, check what the new string determines. An immediate release and a two-beat sustain fit the same attacks.
 
-The teacher selects interpretation and supplies a timed demonstration or an agreed duration convention. In the next attempt the learner produces the required sustain and silence. That observation establishes performance with the duration information available. The original prompt and the success with the corrected one leave recall and forgetting untested. Cha’s critique helps distinguish onset from duration information in designing this comparison.
+For the interpretation task, the teacher supplies a familiar duration convention and lets the learner read the phrase before demonstrating it. Suppose two previously unshown phrases have the same attacks and indicate different releases. The learner identifies which sign sets the release in each and plays both accordingly. This supports reading and performing those durations with the convention available. A suitable earlier reading could supply the same evidence. Alternatively, a timed demonstration can give the moment of release directly. Playing the demonstrated phrase establishes reproduction with that information available. The onset-only prompt and either later success leave recall and forgetting open. Cha's critique supplies the distinction between the onset and the missing duration.
 
 #### RHY.13:5.4 - The new physical demand exceeds the equipped performer
 
@@ -131,11 +131,11 @@ A teacher’s count may be supplying the learner’s reference. Hardware or supp
 
 ### RHY.13:7 - Conformance Checklist
 
-- The available evidence addresses the stated transfer, retention, support or combined-use question, or identifies what prevents an answer.
+- A current assignment rests on what the relevant person or arrangement can supply. A transfer or retention claim connects that contribution to the same holder's earlier performance, the changed task or intervening interval, and the support on both occasions.
 - The account identifies the rhythmic relation and the changed condition or interval at issue.
 - The result states which needed information, convention, physical capability and support were present, absent or unknown.
 - Instruction and earlier attempts are reflected in the result's scope.
-- The account identifies whose contribution is being assessed and distinguishes a structural conclusion from an observed performance.
+- For an observed passage, the result identifies whose action or selection the evidence establishes, including a response made within a pair. A proposal ruled out by an established physical limit can be assessed before anyone attempts it. A claim of acquired capability establishes a change under comparable conditions; attributing it to particular instruction has grounds for that attribution.
 - A failed or unresolved result states what is established and what remains open. Further testing, practice or a change of arrangement serves a remaining task.
 
 ### RHY.13:8 - Common Anti-Patterns and How to Avoid Them

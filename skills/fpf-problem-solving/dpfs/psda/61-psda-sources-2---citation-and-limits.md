@@ -5,7 +5,7 @@ Cite the edition used. The following citation identifies this working edition.
 ```text
 Anatoly Levenchuk, with AI-assisted development and review.
 Decision Design Principles Framework.
-Working edition, 24 October 2026.
+Working edition, 22 November 2026. The original edition appeared on 24 October 2026.
 GitHub repository: https://github.com/ailev/FPF
 ```
 

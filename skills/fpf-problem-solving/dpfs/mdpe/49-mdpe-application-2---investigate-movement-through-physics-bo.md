@@ -50,7 +50,7 @@ For a teaching attempt, ask which phase has N greater than body weight. For a qu
 
 In the last phase, keep the same center-of-mass trace and add an upward handrail force R. Then N + R − mg = ma_y. With R = 30 N the upward plate force is 582 N, below body weight, and acceleration is still upward. This separates the plate force from the net force on the person. Here the stipulated center-of-mass trace already gives the acceleration. In an observed movement with an unknown rail force, the plate alone leaves acceleration undetermined. A suitable record of the motion, or measured plate and rail forces, can provide a numerical estimate. Removing the rail would change the support arrangement under study.
 
-The force calculation predicts the values in the model. To assess the lesson, examine how learners responded. To develop balance or movement technique, use a suitable task supplied by a competent teacher, somatic contrasts and feedback on the person’s practice. Check physical understanding, bodily regulation and performed action against the result in question.
+The force calculation predicts the values in the stipulated model. To assess a learner’s choice of model, give them a different support arrangement and the physical question before supplying the diagram or equation. Use their choice of system and contacts, and their reason for keeping them, as evidence about that work. The table above can support a task that asks learners to apply an already specified model. To develop balance or movement technique, use a suitable task supplied by a competent teacher, somatic contrasts and feedback on the person’s practice. Check physical understanding, bodily regulation and performed action against the result in question.
 
 
 

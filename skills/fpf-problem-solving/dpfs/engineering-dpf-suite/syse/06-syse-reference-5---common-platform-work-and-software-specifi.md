@@ -13,7 +13,7 @@ described, what is currently provided, and what observations establish about the
 Use `SYSE.12` to assess the enabling arrangement, distinguishing evidence available before reliance from
 observations of later use. `SYSE.8` develops a providing-System concept when
 missing; `SYSE.18` handles independent provider decisions; `SYSE.24` compares whole obtaining arrangements.
-Compare sharing, self-service and a portal as alternatives. Test a promising option against the practitioner’s task.
+When provision remains undecided, consider repairing a local path, sharing an existing contribution or offering self-service, with or without a portal. These choices can coexist. Compare complete arrangements for the same practitioner task. Use applicable task evidence and obtain a further test when it is required or can resolve an important difference.
 
 At this common Platform scope, standardizing an interaction competes with legitimate user variation;
 improving one user's task can increase provider or maintainer work. A control can reduce one risk while
@@ -70,7 +70,7 @@ Keep the changed subject precise. SYSE.43 retains and reorganizes external recor
 
 The [development explanation (Engineering.Reference:19.7)](../suite-reference/21-engineering-reference-19---make-an-available-contribution-wo.md#engineeringreference197---develop-the-arrangement-across-attempts) compares complete manual, explicit-rule and learning arrangements by stability, recurrence, preparation, qualification failure, runtime support and maintenance. It selects a rule trial under constructed conditions, while a shorter horizon selects manual work. Needed current facts, execution, verification and control remain available at runtime. The examples identify who or what supplies the prediction, reusable calculation or bodily performance and how each result is obtained.
 
-Recognition and construction precede assurance. SYSE.46 compares matched support regimes, result, selection, invocation, use, restraint and total burden. Claims about retained performance or transfer require tests at the claimed delay or under the changed conditions, with configuration and support identified. A current success establishes none of those wider claims by itself. Develop a new arrangement when the needed result calls for it, stop when the result in use is adequate, and reopen the affected contribution when its source or conditions change.
+Recognition and construction precede assurance. SYSE.46 compares matched support regimes, result, selection, invocation, use, restraint and total burden. For retained performance or transfer, establish whether the evidence covers the claimed delay or the changed conditions, including the support available. A prior performance under those conditions or an argument showing why the difference cannot affect the claimed capability can suffice. A claim that someone actually performed later needs evidence of that occurrence. Obtain another performance when the open question or the commission requires it. A current success establishes none of those wider claims by itself. Develop a new arrangement when the needed result calls for it, stop when the result in use is adequate, and reopen the affected contribution when its source or conditions change.
 
 ### SYSE.Reference:5.2 - Construct and change a software delivery and recovery path
 

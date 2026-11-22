@@ -28,7 +28,9 @@ An attack list can preserve order while omitting a continuous movement. An inter
 
 Identify the distinction the question requires. A player might need to enter after the third or after the fourth attack. An accent might come from pressure or a break in contact. A partner might need to recognize whether a weight transfer is partial or complete.
 
-Choose the shortest passage that preserves the relation the question needs. Include its boundaries where they matter. A cyclic interval can cross the return to the next cycle, an entrance may depend on the preceding cue, and understanding a continuous change may require observing more than its peak.
+Start from the choice still entrusted to the user. For a question about a missed cue, follow the player's entry to the phrase it was to continue, then back to the movement, sound or reference the player could actually use. Ask whether changing a part or its connection to the other player could change the answer while the recorded count stays the same. For a question confined to the time of a sounding attack, a single timed trace with the right event and reference can suffice.
+
+Choose a manageable passage that preserves the relation the question needs. A longer recording already at hand can supply that evidence. Include its boundaries where they matter. A cyclic interval can cross the return to the next cycle, an entrance may depend on the preceding cue, and understanding a continuous change may require observing more than its peak.
 
 #### RHY.2:4.2 - Identify what actually changes
 
@@ -50,6 +52,8 @@ Identify whether a relation is observed or proposed. An instruction to align sou
 
 Use the selected information to answer the question or reconstruct the relevant part of the activity. Test whether changing an omitted feature could change that answer. A contrasting example, an existing observation or a trial can make the difference visible.
 
+Keep the question and its interpretation fixed while comparing models. One score permits a note attacked at beat 2 to end at beat 3 or 4. A proposed refinement keeps all its requirements and prescribes release at 3. A playable version remains and the formerly permitted release at 4 is excluded. Writing the same release in seconds on a known beat reference can leave precisely the same performances possible. Changing the question from permitted release to how a partner responded calls for another decision about what to observe.
+
 If the answer could change, include the feature and its basis or state what remains unresolved. If the answer would hold, the omission simplifies the account for this operation under these conditions.
 
 For a numerical analysis, keep the rule that produced the numbers. An onset detector's threshold, the treatment of a cycle boundary, or the choice of a perceived rather than physical event can alter the result.
@@ -70,7 +74,7 @@ Consider two constructed versions of a repeated eight-unit cycle with identical 
 
 The cyclic intervals are (1, 1, 2, 4) for A and (1, 2, 1, 4) for B. Each cycle has two intervals of length 1, one of length 2 and one of length 4. Their histograms agree. An entrance on the third attack falls at 2 in A and at 3 in B.
 
-For this entrance, preserve attack order and the times relative to the cycle start. For interval frequencies, the histogram suffices. To draw a conclusion about perceived meter or listener preference, use evidence of that response.
+For the exact time of the third attack, preserve attack order and times relative to cycle start. The interval histogram suffices for frequencies. If these two versions are the only possibilities, the answer to “Does the third attack occur before position 4?” is yes in both. The performer can act on that answer with the exact version still open. To draw a conclusion about perceived meter or listener preference, use evidence of that response.
 
 #### RHY.2:5.2 - A contact trace leaves out the load change
 

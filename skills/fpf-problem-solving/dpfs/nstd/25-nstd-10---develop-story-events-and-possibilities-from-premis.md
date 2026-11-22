@@ -10,7 +10,7 @@
 
 Use this method to develop events or relationships for a story or a hypothetical scenario. Start from a situation, image, premise, character, desired experience or possible ending. In an existing draft, use it when what happens needs to change. If the same events will serve, work on presentation order or expression.
 
-Propose one change that matters in the imagined situation. Identify what could bring it about and what it would make possible or difficult. Retain the premises the work must respect. Where a premise is open to revision, identify what the revision changes.
+Propose a change that matters in the imagined situation. Identify what could bring it about and what it would make possible or difficult. Retain the premises the work must respect. Where a premise is open to revision, identify what the revision changes. For one possible story, follow the proposed events far enough to support it. If a planning brief promises a response in several possible situations, follow what has to work across those situations, including what a participant can know before choosing.
 
 A scene, arrangement of events or open continuation can be a finished result. Use NSTD.2 for ordering established events, NSTD.3 for a particular missing connection and NSTD.9 for interpreting existing material. For factual reporting, use evidence of the events. For a scenario about a real situation, distinguish observations, assumptions and proposed events. Check the feasibility or authority that actual reliance requires, using existing subject results where sufficient.
 
@@ -55,7 +55,7 @@ Follow the proposed events in world order, even if readers will encounter a diff
 
 Examine the meaning of the proposed sequence. A rescue might create an obligation, deepen resentment or make trust possible. Develop the chosen relation from these participants and their situation. Find the action or detail through which the scene makes it intelligible. If the intended experience is still missing, reconsider the event or its presentation.
 
-For an interactive story, distinguish the available branches from the particular path a player takes. Follow the consequential branches under their own conditions. A resource spent on one branch is unavailable later on that branch unless it is restored. At a convergence, check that the common continuation is possible from each incoming branch. A.22.CGUS helps describe open, blocked and unresolved continuations when an explicit model is needed. A conditional account may suffice for a two-choice scene.
+For an interactive story, distinguish available branches, the path a player actually takes and any choice a participant must make inside the story. Track a resource spent on one branch through its later events. At a convergence, check that what the common continuation requires is available from each incoming branch. When the next action depends on which branch occurred, ask who must choose it and what they can know before acting. A reader or player may see information that the character lacks. Leave the choice open, provide the needed cue in time or choose an action supported in all the still possible situations, as the brief permits. A.22.CGUS helps describe open, blocked and unresolved continuations when an explicit model is needed. A conditional account may suffice for a two-choice scene.
 
 #### NSTD.10:4.4 - Develop presentation and revise the construction together
 
@@ -93,9 +93,9 @@ The second cup could express habit, hospitality, absence or an expectation the d
 
 In a constructed planning case, a museum team considers reopening a ground-floor study room while a lift is being replaced. Collection storage remains upstairs. The proposal says that visitors can request any stored object, which staff will bring to the study table.
 
-Trace one hypothetical visit. A visitor requests an object kept upstairs. Staff locate it, and it must reach the table while the lift is unavailable. The proposal supplies no means of moving every requested object. An existing inventory and an approved plan might already establish that particular objects can be moved downstairs before reopening. Use those grounds for the limited scenario. If a wider promise requires a new arrangement, consult the relevant collection and building expertise. Use C.32.P2S when the question calls for coordinated architectural change.
+Trace one hypothetical visit to see what the promise would require. A visitor requests an object upstairs. Staff locate it, and it must reach the table while the lift is unavailable. The proposal gives no means of moving every requested object. An inventory and an approved plan might already establish which objects can be placed downstairs before reopening. That plan can support a visit for one of those objects. To promise any one object visitors are entitled to request, a common arrangement might cover all requests. If the means depends on the object, the needed information must reach whoever chooses in time to complete the delivery. If several visitors can require service together, follow their permissible requests together through staff time, equipment and access. One rule covering the requested range may settle the question. An unresolved arrangement can be addressed by collection and building specialists or, for coordinated architectural change, through C.32.P2S.
 
-A revised scenario can follow a visitor choosing from the objects available downstairs under that plan and explain the limit on other requests. To report that the move or visit actually took place, use evidence of that event. An earlier lift opening would change the premise and might expand the available requests. Revisit the visitor sequence that depends on it.
+A revised scenario limited to the downstairs objects can serve a commission to propose a narrower service. If the museum's commitment still covers the upstairs collection, report what that scenario provides and what the museum still has to resolve. To report an actual move or visit, use evidence of that event. An earlier lift opening would change the premise and might expand the available requests. Revisit the visitor sequence that depends on it.
 
 ### NSTD.10:6 - Bias-Annotation
 
@@ -109,7 +109,7 @@ Planning from a goal suits stories whose important changes can be expressed as a
 - The author's desired outcome remains distinguishable from participant knowledge, motives and choices.
 - The scene supports the intended interpretation or gives readers grounds to see which issue remains open.
 - A changed premise reopens the dependent construction while sufficient unrelated content is retained.
-- For a real-world scenario, identify what is observed, what is assumed and which feasibility claims are established or remain open.
+- For a real-world scenario, distinguish what is observed, what is assumed and which feasibility conclusions the grounds support. A promise of service across choices or to several people at once covers the combinations those people are entitled to require.
 
 ### NSTD.10:8 - Common Anti-Patterns and How to Avoid Them
 

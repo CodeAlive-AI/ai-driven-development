@@ -53,7 +53,7 @@ When the known menu supplies no way to obtain a material desired consequence, us
 
 Describe the baseline for “no new action”. It may include authorized maintenance, contractual duties, continuing costs, deterioration or exposure.
 
-For a staged direction, describe the first action, the later choice, evidence that could inform it and any delay or irreversible consequences. Establish the feasibility, consent, safety and recovery conditions needed for a claim about reversibility. A small initial commitment can have lasting effects.
+For a staged direction, establish who may make each choice, which facts they can know by then and what the earlier commitment makes possible or forecloses. If different recipients may exercise rights separately, include the combinations their terms permit. A plan that works when their choices are coordinated may fail when they choose independently. For a promise to serve them all, give an arrangement or timely decision rule that covers those combinations and fits the shared resources. Establish the feasibility, consent, safety and recovery conditions on which reversibility depends.
 
 #### PSDA.5:4.3 - Turn labels into sufficiently complete candidates
 
@@ -77,7 +77,7 @@ Check whether a favoured formulation, a familiar technology or a powerful partic
 
 Stop when the candidates or stated gaps cover the material differences for the requested comparison, each candidate is intelligible and protected-condition exclusions are clear. Continue searching where an attainable additional alternative would warrant the effort.
 
-If only one lawful direction remains, report its conditions and the grounds for its unique eligibility. Give the reasons for excluding other directions if any were considered. If none remains, distinguish a missing qualification, an infeasible requirement and a reason to reopen the formulation.
+If the recipient needs one eligible option, a supported option can finish the search. Report it as the only one, or the requirement as infeasible, only on grounds covering the permitted alternatives. A common constraint can rule out a whole family at once. If the search found none and some possibilities remain open, report that result with its scope.
 
 #### PSDA.5:4.6 - Return the set without making the choice
 

@@ -81,7 +81,7 @@ Present the relevant alternatives, material conditions and practical consequence
 
 Arrange the selected work with those responsible for carrying it out, attainable timing and fallback. Tell the customer what will happen, what they need to do, what remains uncertain and how to obtain a relevant update. The amount of communication follows the actual work; a simple confirmed cancellation does not need a series of retention conversations.
 
-After performance, establish what changed. Recover direct evidence of the completed contribution, restored result, effective pause or ending and any obligation still open. Ask about the customer's resulting situation when it matters and is appropriate. Do not infer restored trust from a completed ticket or treat acceptance of a refund as a request to resume the service.
+After performance, establish what changed. Use the terms and the event they specify to establish an effective pause or ending. An actual handover, a restored result and a change in the customer’s circumstances each need evidence of what occurred. A request for advice about the next step can finish before that step is taken. Ask about the customer's resulting situation when it matters and is appropriate. Do not infer restored trust from a completed ticket or treat acceptance of a refund as a request to resume the service.
 
 #### MKT.7:4.6 - Return the result and improve the affected arrangement
 
@@ -95,11 +95,11 @@ When evidence reveals a repeated mismatch, send its substance to the owning meth
 
 Consider a constructed assisted reporting trial at Vector. The agreed mapping and supported report preparation are complete. The customer will next need this report in a later work cycle and declines an immediate continuation. A monthly sales view marks the absence of a new purchase as loss; the actual relationship gives no monthly renewal expectation.
 
-The provider asks the limited question that can change the next action: whether a later contact about the next reporting cycle would be useful. The customer agrees to one contact near that cycle. The parties clarify that no current session or paid reservation continues. Work already owed under the trial, including the agreed handover, still has to finish. The completed trial, temporary absence of need and permissible later invitation are separate facts.
+The provider asks the limited question that can change the next action: whether a later contact about the next reporting cycle would be useful. The customer agrees to one contact near that cycle. The parties clarify that no current session or paid reservation continues. Work already owed under the trial, including the agreed handover, still has to finish. The provider then completes the agreed handover, which settles the remaining trial work. The temporary absence of a new need and permission for one later invitation have their own grounds.
 
 For an illustrative comparison over the next service period, suppose continuation would bring 300 monetary units of receipts and require payments of 190 for delivery and 40 for new support. Ending would require a payment of 20 for closure work. A payment of 15 for an old support commitment remains under both alternatives. With these amounts falling within the period and no other flows assumed, the forecast net cash flows are 55 for continuation and −35 for ending, a difference of 90. Earlier acquisition expenditure of 600 belongs in the historical account and is not added again to either future alternative. These assumptions help the provider assess a possible offer; they do not create current need or authorize charging the customer during the pause.
 
-When the customer later chooses a new period, a provider error makes the agreed mapping unavailable. A new sales offer does not repair that failure. The provider identifies the failed contribution, obtains an attainable restoration from Operations and communicates its timing. If restoration cannot support the customer's actual reporting deadline, the responsible people must consider a feasible alternative or remedy under the agreement. The original task remains unresolved until that work or its agreed disposition occurs.
+When the customer later chooses a new period, a provider error makes the agreed mapping unavailable. A new sales offer does not repair that failure. The provider identifies the failed contribution, obtains an attainable restoration from Operations and communicates its timing. If restoration cannot support the customer's actual reporting deadline, the responsible people must consider a feasible alternative or remedy under the agreement. Once an irrevocable deadline is missed, timely delivery under the original promise has failed. The outstanding obligation may now be late delivery, correction or another remedy under the agreement.
 
 Suppose the customer chooses to end after the incident. The provider completes the required handover and outstanding support, makes the ending effective and records what actually occurred. The customer can decline a new offer while still receiving the owed contribution. A closed sales record or an apology alone would not establish this result.
 
@@ -118,14 +118,14 @@ Past effort can make a team overvalue continuation; a visible complaint can make
 - The selected action has a feasible performer, conditions, timing and appropriate authority.
 - Future consequences preserve dated costs and receipts, uncertainty and obligations under each alternative.
 - Customer choice and separate paid or voluntary relations are respected in the actual arrangement.
-- Evidence establishes the performed continuation, recovery, pause or ending and names any unfinished obligation.
+- The conditions and evidence establish the commissioned recommendation, effective change of relationship or actual work on the customer’s behalf. Any outstanding obligation is identified.
 
 ### MKT.7:8 - Common Anti-Patterns and How to Avoid Them
 
 | Misuse | Repair |
 | --- | --- |
 | Label any gap in purchasing as churn. | Recover the actual need, eligibility and expected timing. |
-| Offer another sale before resolving a failed commitment. | Perform the owed restoration or obtain an appropriate remedy decision. |
+| Seek another sale as a condition for work already owed. | Carry out the owed restoration or agree an authorized remedy. A separate new order can proceed if the parties choose it and both obligations can be met. |
 | Count past acquisition expense as a cost that renewal can now avoid. | Compare the prospective alternatives while retaining the historical account separately. |
 | Remove all obligations when a sales record is closed. | Identify and complete the duties that survive the ending. |
 | Use community belonging or friendship to pressure a paid continuation. | Keep the relations, permissions and contributions distinct. |

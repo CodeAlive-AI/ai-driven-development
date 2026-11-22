@@ -82,7 +82,7 @@ Say what could be supplied, for which receiving use, under what conditions, with
 
 Use [A.2.3](../03-first-principles-framework-readme/_index.md) when a promise's content must be identified or relied on. Read an existing provider promise from its source; mark a newly constructed promise as proposed. Neither description establishes a provider commitment, capability, access, provision, fulfilment, or achieved benefit.
 
-A research contribution can be a criticism, discriminating experiment, reproducible comparison, or clarification of an unresolved claim. It need not be sold, but its intended epistemic result and evidence standard must be inspectable. Do not impose a commercial service model on that use.
+A research contribution can be a criticism, a discriminating experiment, a reproducible comparison or a clarification. Specify the claim the inquiry should settle and what would count as evidence for it. A single admissible occurrence can establish possibility or disprove a claim with no exceptions. To establish how often something occurs, or that it holds throughout a class, use evidence that bears on that claim. The research result can be useful in its own right.
 
 #### C.40.PC:4.5 - Link the contribution to the problem without assuming success
 
@@ -98,7 +98,7 @@ Ordinary prose is enough when the receiver can recover the situation, worthwhile
 
 > The case's acceptance engineer reports that unsupported claims cannot be recovered reliably from the incoming package, and the stipulated review records support that concern. We propose a source-traceable claim-to-evidence account, not approval; the next question is whether the available records and review criteria cover a representative package without breaching confidentiality.
 
-Use `C.40.DC` when the contribution premise is adequate and materially different directions need construction. Return to `C.40.NU` when the lead must change. Stop when the result is a problem hypothesis or rejection. If an adequate direction already exists, proceed to the missing reachability, comparison, or advising result; no mandatory cycle through earlier PatternIDs follows.
+Use `C.40.DC` when the contribution premise is adequate and materially different directions need construction. Return to `C.40.NU` when the lead must change. When the assignment is to formulate a problem or decide whether this lead merits attention, a problem hypothesis or a reason to close the lead can complete it. If an adequate direction already exists, proceed to the missing reachability, comparison, or advising result; no mandatory cycle through earlier PatternIDs follows.
 
 Reopen the affected problem or contribution under `C.40.RQ` when the receiving use, value evidence, acceptance expectation, source, horizon, or protected condition changes. A narrower permitted source set can narrow one proposed contribution while leaving the receiver's problem and another direction intact.
 
@@ -124,7 +124,7 @@ The inquiry rejects this lead for the current use. It does not claim that the te
 
 A research group suspects that an evaluation loses important failure cases when several task types are pooled. The proposed contribution is a reproducible comparison between the pooled and separated analyses, with explicit limits on what any difference would establish.
 
-The problem is provisional: no result yet shows that the suspected loss changes the relevant scientific conclusion. The next question is whether the comparison exposes a conclusion-changing discrepancy on an admissible dataset. A negative answer closes or narrows the hypothesis; a positive answer motivates further research. Publication, funding, and improved model performance are not part of the proposed epistemic result.
+First establish what the group wants to know. If it needs a conclusion for this dataset, return the two analyses and explain whether pooling changed that conclusion. If the separated analysis reproducibly reveals an important failure that pooling concealed on an admissible dataset, that dataset establishes that such a loss is possible. A change in the numerical summaries alone can leave every important failure visible. Agreement on that dataset leaves the possibility open elsewhere. A claim about how often the loss occurs needs evidence about the population of datasets. If the requested comparison answers the group's question, the work can end there. The group can choose a further inquiry when its answer would matter.
 
 ### C.40.PC:6 - Bias-Annotation
 

@@ -64,7 +64,7 @@ Apply C.11.DUA to the work of negotiation itself. Include preparation, represent
 
 Identify the question whose answer could change a proposal's feasibility or acceptance. Ask the qualified subject practitioner for the smallest sufficient inquiry, with its result, conditions, cost and possible consequences for the choice. Compare it with using current knowledge, a narrower commitment, another source, deferral or no agreement.
 
-Obtain permission and resources for the inquiry itself. A test authorization permits the stated test, not introduction into production. A favourable finding supports only the configuration and conditions actually examined.
+Obtain permission and resources for the inquiry itself. A test authorization permits the stated test, not introduction into production. For a different configuration, identify the relation on which the finding depends and establish that it holds there. An explicitly commissioned test of that configuration still belongs in the work.
 
 Return the result to the whole proposal. A technical test may remove one uncertainty while a provider's offer adds cost, local effort or a time limit. Recalculate joint demand and reopen terms affected by that change. Do not attach new facts to the old proposal while leaving its commitments untouched.
 
@@ -74,9 +74,9 @@ If the inquiry defeats the option, discard or revise that option. Retain indepen
 
 Before seeking acceptance, place the relied-on contributions in their relevant time windows. Check the quantities and conditions that limit performance: qualified specialist hours, a laboratory window, a delegated spending limit, particular access, a service reserve or a participant's actual availability.
 
-Sum demands that compete for the same resource. Do not add unlike capacities as if a spare administrator hour supplied a missing engineering hour. Retain timing: a sufficient monthly total cannot supply a specialist who is unavailable before the decision. Include support and supervision retained by the arrangement; they are often the hidden constraint.
+Sum demands that compete for the same resource. Do not add unlike capacities as if a spare administrator hour supplied a missing engineering hour. Retain timing: a sufficient monthly total cannot supply a specialist who is unavailable before the decision. Include support and supervision retained by the arrangement; they are often the hidden constraint. When participants retain a choice of dates or contributions, establish which combinations the agreement permits. A fixed schedule can establish that one package works. To promise people their separate choices, show how the responsible participants can allocate the shared capacity with the information and authority available when they must act. An agreed allocation rule or a sufficient capacity bound may settle the whole range.
 
-When the proposed whole does not fit, construct actual alternatives. Move a contribution only with its receiver's accepted change; narrow scope without losing the required result; share preparation where it really serves several contributions; obtain a qualified substitute or provider; change the method or sequencing; or defer the unsupported work. Compare the consequences at the level where they matter. A local saving can create a larger downstream burden.
+When the proposed whole does not fit, construct actual alternatives. Move a contribution under the existing allocation rule or with the affected receiver’s agreement; narrow scope without losing the required result; share preparation where it really serves several contributions; obtain a qualified substitute or provider; change the method or sequencing; or defer the unsupported work. Compare the consequences at the level where they matter. A local saving can create a larger downstream burden.
 
 Authority has its own compatibility test. A manager may allocate one team's time while another unit controls the required specialist. A provider may promise support only after a contract becomes effective. Obtain those contributions or keep the proposal conditional. Do not infer corporate, employment or contractual powers from the fact that participants reached an informal consensus.
 
@@ -84,7 +84,7 @@ Authority has its own compatibility test. A manager may allocate one team's time
 
 Put the complete proposal, its grounds and outstanding conditions before the parties whose acceptance it needs. Make each party's contribution and relied-on return recognizable. Let them accept, conditionally accept, refuse or leave the matter unanswered. Those responses differ.
 
-A conditional offer of help after funding is available is not a commitment to seek funding, nor is it present funded help. A representative who needs consultation returns to the represented party within the actual mandate. An absent participant's silence supplies no agreement.
+A conditional offer of help after funding is available is not a commitment to seek funding, nor is it present funded help. A representative who needs consultation returns to the represented party within the actual mandate. Use the effective rule to determine whether a notified change takes effect at an objection deadline. A person’s own voluntary commitment needs grounds that speak to that person.
 
 If one party changes its contribution, identify the others whose terms or reliance change and return the amended whole to them. A sequence of separately accepted fragments is sufficient only when those fragments really compose under the same conditions; otherwise obtain responses to the combined proposal.
 
@@ -94,7 +94,7 @@ Retain the accepted terms in the ordinary form the participants use. Include eno
 
 Give the receiving practitioners the accepted conditions and unresolved matters. Product and organization decisions may need coordination through OCE.7; engineering architecture and whole-result alternatives use SYSE.6 and SYSE.24; an existing promise may need an authorized response through OPS.13. For work in another domain, use the relevant professional methods. If a decision is needed, obtain it from the party authorized to make it.
 
-Obtain the separate acts that make the arrangement effective, then perform the contributions. LDR.4 helps when a prepared proposal still needs an effective decision, mutually visible start and first useful handover. Acceptance alone does not establish completion.
+For an order to reach agreement, return the feasible terms accepted by those whose assent they require, with any condition still to be met. If the order includes an effective start or delivery, obtain the acts that put it into effect and carry the contributions through to their receivers. LDR.4 helps arrange the first handover.
 
 Agree a practical response to foreseeable changes: who reports the loss, who can supply a substitute, which participants reconsider dependent terms and how an existing promise is handled. When support disappears, identify the contributions depending on it. Compare feasible substitutes, changed dates or scope with the affected parties; obtain renewed acceptance where reliance changes.
 
@@ -151,7 +151,7 @@ A conforming use explains:
 - the receiving result, necessary parties and actual representation or authority;
 - the conditions protected by their demands and serious alternatives to agreement;
 - whole proposals with material benefits, burdens and dependencies;
-- the domain basis and joint resource feasibility of the proposed commitments;
+- the domain grounds and joint feasibility of the commitments, including any choices each party retains and the means to honour them;
 - the work and limit of any inquiry used to resolve uncertainty;
 - responses to the same complete proposal, including refusal and outstanding conditions;
 - the receiving decisions and the response to a consequential change.

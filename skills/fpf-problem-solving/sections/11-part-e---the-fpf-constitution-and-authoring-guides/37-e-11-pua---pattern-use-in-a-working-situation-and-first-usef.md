@@ -450,6 +450,8 @@ In reliance-bearing use, when the expected subject result still does not exist, 
 
 Use this test when the declared teaching, rehearsal, or evaluation use is to establish that a participant can select a pattern, preserve the kind and direct basis of its result, and leave another participant a replayable continuation. This exercise is `relianceBearing` because the evaluator relies on the selected basis, expectation, grounding state, and continuation.
 
+Inspect what the exercise supplied. When a tutor names the pattern or the form gives its decisive question, the participant can still demonstrate application and preparation of a continuation. Credit independent selection when the choice was open and the participant made it. Earlier attributable work can supply that evidence. To entrust the complete job to the participant, establish that they can take their own choice through application to a handover the recipient can use. For instance, a decision log can show which pattern they selected and why, while the matching work and handover show what they did with that choice. A prior selection in one job and execution after a tutor supplied the question in another leave that connection open.
+
 Its row count is a test condition, not a general rule for pattern use. The test does not require or assert a wider CGUS.
 
 ```text
@@ -492,7 +494,7 @@ FinalPracticePatternUseTestResult@Context <: U.Episteme:
 
 Each practice continuation description states an action or proposed use, the expected result and its kind, the full PatternID and pattern name, and the condition under which that continuation is current. Its `entityOfConcernRef` resolves to the same selected `CandidatePatternUse@Context` as the test result.
 
-The test passes only when at least one of the three to five descriptions has `continuationDisposition=branch` or `return`, the final continuable work position is explicit, and one consequential unknown names the minimum clarification pattern and expected clarification-result kind.
+For full credit on this exercise, the participant must select the pattern, preserve the kind and direct basis of its result, and carry that selection through application to the required handover. The handover must include three to five continuations, at least one with `continuationDisposition=branch` or `return`, the final continuable work position, and one consequential unknown with its minimum clarification pattern and expected clarification-result kind. A prompted application can earn credit for the work actually done. A prior complete performance can qualify the participant for a subsequent assignment. To report that a successor actually resumed the work, establish what that successor did. A client who commissioned only a usable result can accept it under the terms of the order.
 
 The selected basis claim concerns that same candidate; the candidate names the same question and expectation as the test result, and the expectation and test result name the same descriptive flow position.
 

@@ -68,13 +68,13 @@ For a chain of correspondences, follow the connection through the intermediate r
 
 #### NOT.6:4.4 - Perform the joined operation
 
-Take one input or object and follow it across the representations. Obtain each contribution, combine them using the stated relation and return the answer to the working question. Show where a reader switches representations and what is carried across that switch.
+Start from the result of the joined operation and follow each contribution to what it describes. For a lookup this can mean tracing one item through two forms. For an installation plan, a connector drawing may identify a numbered terminal on one unit while a cable schedule identifies a conductor and its two ends. To specify a connection, follow the declared end-to-terminal relation for the compatible unit and cable revisions. A terminal number used on different units can leave the intended end open unless another available reference identifies it. A request for the documented connection can stop at that relation. To report which connection was installed, relate suitable evidence of installation to those same ends. Carry the needed identities and relations across each switch of representation.
 
 If the connection exists only in the author's memory, add the missing reference or operation. If the correspondence is clear but the subject inference is missing, obtain that contribution from the subject method or a collaborator.
 
-Use one consequential contrast to challenge the connection. A row with the same label but a different unit, a node in another version or a modeled value beside an observation may require different treatment.
+A contrast can expose an incorrect match. Two rows may share a label while belonging to different batches, units or versions. For a reusable join, establish which identifiers refer to the same thing over the promised range. If a part number is unique only within its batch, use the batch and part number together when those fields have the same meaning on both sides and identify the required part there. If the user needs every part, also establish that the records cover them.
 
-For an immediate use, a worked joined reading may settle the question. A broader claim about how readily users can combine the representations requires evidence appropriate to their preparation and work; C.2.8 characterizes that recovery. Do not infer learning or transfer from the existence of the correspondence.
+For an immediate use, one established match can settle the question when it supplies the only link the recipient still needs. When three or more representations contribute to one result, trace their references to the same item, revision and conditions wherever the inference requires it. Separate successful matches for each pair can concern different items. A shared key with the required scope, or another justified correspondence, can establish all the matches at once. Whether readers can use the arrangement with their usual preparation is a further question for C.2.8.
 
 #### NOT.6:4.5 - Propagate the intended change and expose conflicts
 
@@ -135,7 +135,7 @@ When the combination needs checking, ask the questions that can change its use.
 - Does each retained representation support a named operation or needed distinction?
 - Can the reader recover the referents and the relation between their occurrences?
 - Are derived values distinguished from independent contributions and different claim kinds?
-- Can one joined answer be obtained by following the stated correspondences?
+- Can the reader obtain the requested result by following the correspondences? For a recurring use, what makes each required match identify the appropriate items, versions and relations throughout its promised range?
 - Does a change preserve the requirements of the intended edit rather than every value copied from an earlier display?
 - Are incompatible edits or interpretations exposed at the affected contribution?
 - Can the work stop with the usable combination, without unnecessary synchronized copies?

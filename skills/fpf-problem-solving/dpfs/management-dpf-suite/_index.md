@@ -1,6 +1,6 @@
 # Management DPF Suite
 
-**Connect direction, commitments, resources and collective work.** Use this Suite when a promising direction, an accepted promise and the available means do not yet fit together, or a changed condition calls for a different commitment.
+**Connect direction, commitments, resources and collective work.** Use this Suite when a promising direction, an accepted promise and the available means do not yet fit together, or a changed condition calls for a different commitment. To decide what the enterprise can promise when recipients retain choices over shared capacity, start with [Management.Reference:4.2](suite-reference/05-management-reference-4---development-shared-support-and-effe.md#managementreference42---a-proposal-reaches-work-through-judgement-decisions-and-contributions).
 
 The undertaking can be a company, public service, temporary collaboration or voluntary community. A shared employer is unnecessary, but contributions, resources and authority need a basis. A smaller promise, sufficient existing arrangement or justified refusal can be the useful result.
 
@@ -17,13 +17,15 @@ Framework and method links open readable text on fpf.tools or Markdown sources i
 
 | Your question | Open |
 | --- | --- |
-| Which direction and investment are worth pursuing? | [Strategy](str/_index.md). |
+| Which strategic direction and commitments are worth pursuing? | [Strategy](str/_index.md). |
+| What work drives a cost, which payments would change, and can the payer fund them in time? | [Management Accounting](ma/_index.md) for resource use and changed payments. [Corporate Finance](fin/_index.md) for dated funding, valuation and the parties’ financial choices. |
 | How do we construct, pursue and revise goals or use a complete OKR/CFR practice? | [Goals and OKR (GOALS)](goals/_index.md); [GOALS.6](goals/14-goals-6---make-a-professional-goal-workable-for-the-person-p.md) for a human professional goal and [GOALS.7](goals/15-goals-7---assign-and-continue-goal-directed-ai-work.md) for AI work. |
 | How can production or service be arranged, and current work meet its promises? | [Operations Management](ops/_index.md); use [Organization Administration](adm/_index.md) for permissions, provision and obligations. |
-| How do we answer different clients without losing repeatability or scale? | [Manage client variation and develop repeatable offerings (CUST.1)](cust/14-cust-1---manage-client-variation-and-develop-repeatable-offe.md). Its constituent methods also work for a bounded offering, delivery or transition question. |
+| Which differences can we serve on this order, and which require changing the offering family or how we deliver it? | [Manage client variation and develop repeatable offerings (CUST.1)](cust/14-cust-1---manage-client-variation-and-develop-repeatable-offe.md). Use the methods for family membership, delivery or transition separately when one of those decisions completes the order. |
 | How do we connect hiring, pay, employee voice, protection and work transitions? | [Human Resource Management (HRM)](hrm/_index.md). |
-| How do we direct personal action, establish joint direction and sustain participation? | [Leadership](ldr/_index.md) and [Community Management](cb/_index.md), according to the missing result. |
-| Do roles, authority or capability allocations need to change? | [Organization Change Engineering](oce/_index.md). |
+| Who chooses a person’s contribution or a group’s direction? Which work must participants carry out together, and what will let it continue? | [Leadership](ldr/_index.md) and [Community Management](cb/_index.md), for personal initiative, voluntary joint work, a binding decision where one is called for, or a practice the participants must develop together. |
+| Must the allocation of roles or capabilities change, or does the change require a corporate governing act? | [Organization Change Engineering](oce/_index.md) for the work arrangement. [CGOV.14](cgov/24-cgov-14---decide-whether-and-how-to-change-corporate-governi.md) for a change in the corporation’s governing powers or instruments. |
+| Should we retain, replace or retire an asset, and who may authorize that decision? | [Engineering Asset Management](eam/_index.md) for the service, options and shared constraints. [Corporate Governance](cgov/_index.md) for the power and acts needed to commit the corporation. |
 
 For a connected case, the [Management Architectural Reference](suite-reference/_index.md) follows both a [voluntary practice network (Management.Reference:5.1)](suite-reference/06-management-reference-5---connected-uses.md#managementreference51---a-voluntary-practice-development-network) and [a new order in an operating business (Management.Reference:5.2)](suite-reference/06-management-reference-5---connected-uses.md#managementreference52---a-new-order-in-an-operating-business).
 
@@ -33,26 +35,26 @@ The **[strategizing mantra (STR.18)](str/18-str-18---connect-strategic-reasoning
 
 ## Keep operating decisions connected
 
-The **[operational mantra (OPS.23)](ops/28-ops-23---connect-operational-reasoning-the-operational-mantr.md)** connects local work to the result the operation must deliver: **accepted result → route and readiness → limiting conditions → release and feasible order → service, money and human conditions → observed result and changed conditions**. Its developed account explains the grounds, branches and returns. Increasing a team's activity can leave delivery unchanged; a changed resource window can require revising both starts and promises. Read this account when those decisions need to be made together, rather than treating the phrase order as a work schedule.
+The **[operational mantra (OPS.23)](ops/28-ops-23---connect-operational-reasoning-the-operational-mantr.md)** connects local work to the result the operation must deliver: **result needed and what counts as obtaining it → route and readiness → limiting conditions → release and feasible order → service, money and human conditions → observed result and changed conditions**. Use the acceptance conditions to plan a service. Establish the event or effect when reporting that a result was accepted. Increasing a team's activity can leave delivery unchanged; a changed resource window can require revising both starts and promises. Read this account when those decisions need to be made together, rather than treating the phrase order as a work schedule.
 
 ## Frameworks in this Suite
 
 | Framework | What you can work on | Patterns | Text, M characters |
 | --- | --- | ---: | ---: |
-| [Strategy (STR)](str/_index.md) · [Markdown](str/_index.md) | Find a worthwhile direction; compare options, capabilities, investments and business models; revise commitments when conditions change. | 18 | 0.550 |
-| [Goal Construction and Regulation (GOALS)](goals/_index.md) | Construct worthwhile goals and achievement evidence, coordinate their pursuit and revise the practice; complete OKR/CFR and human and AI applications. | 9 | 0.149 |
-| [Operations Management (OPS)](ops/_index.md) · [Markdown](ops/_index.md) | Understand, construct and revise operating arrangements; manage work, provision, service and improvement under the undertaking's conditions. | 29 | 0.991 |
-| [Organization Administration (ADM)](adm/_index.md) · [Markdown](adm/_index.md) | Make requests, permissions, obligations, provision, records and provider coordination effective without unnecessary burden. | 15 | 0.308 |
-| [Corporate Governance (CGOV)](cgov/_index.md) · [Markdown](cgov/_index.md) | Constitute and exercise corporate powers, decisions, controls and accountability under applicable governing rules. | 17 | 0.268 |
-| [Management Accounting (MA)](ma/_index.md) · [Markdown](ma/_index.md) | Explain costs, capacity and economic consequences; forecast outcomes; develop activity designs from economic requirements and arrange how accounting information is used. | 10 | 0.211 |
-| [Corporate Finance (FIN)](fin/_index.md) · [Markdown](fin/_index.md) | Understand financial relations, construct financing terms and group arrangements, and compare value, liquidity, capital uses and exposure. | 23 | 0.645 |
-| [Marketing (MKT)](mkt/_index.md) · [Markdown](mkt/_index.md) | Connect customer inquiry, offers, advertising, acquisition, distribution and use; construct workable provision and revise it from experience. | 14 | 0.422 |
-| [Customization and Productization Management (CUST)](cust/_index.md) · [Markdown](cust/_index.md) | Handle client differences while developing repeatable offerings, delivery and compatible transitions for existing clients. | 8 | 0.178 |
-| [Engineering Asset Management (EAM)](eam/_index.md) · [Markdown](eam/_index.md) | Compare use, renewal, replacement and other asset changes over time, including shared risk, cost and capacity. | 16 | 0.260 |
-| [Leadership (LDR)](ldr/_index.md) · [Markdown](ldr/_index.md) | Direct personal action; develop joint direction, participation and responsibility; obtain feasible contributions and first useful work. | 4 | 0.192 |
-| [Community Management (CB)](cb/_index.md) · [Markdown](cb/_index.md) | Develop useful participation, relationships, shared practices and contributions in organizations or voluntary communities. | 16 | 0.529 |
-| [Organization Change Engineering (OCE)](oce/_index.md) · [Markdown](oce/_index.md) | Construct and qualify organizational changes to contributions, roles, authority, interfaces, capabilities and culture. | 17 | 0.767 |
-| [Human Resource Management (HRM)](hrm/_index.md) | Construct and revise workforce conditions, assessment and selection, reward, voice, protection and continuing participation. | 5 | 0.138 |
+| [Strategy (STR)](str/_index.md) · [Markdown](str/_index.md) | Find a worthwhile direction; compare options, capabilities, investments and business models; revise commitments when conditions change. | 18 | 0.558 |
+| [Goal Construction and Regulation (GOALS)](goals/_index.md) | Construct worthwhile goals and achievement evidence, coordinate their pursuit and revise the practice; complete OKR/CFR and human and AI applications. | 9 | 0.161 |
+| [Operations Management (OPS)](ops/_index.md) · [Markdown](ops/_index.md) | Understand, construct and revise operating arrangements; manage work, provision, service and improvement under the undertaking's conditions. | 29 | 1.010 |
+| [Organization Administration (ADM)](adm/_index.md) · [Markdown](adm/_index.md) | Make requests, permissions, obligations, provision, records and provider coordination effective without unnecessary burden. | 15 | 0.315 |
+| [Corporate Governance (CGOV)](cgov/_index.md) · [Markdown](cgov/_index.md) | Constitute and exercise corporate powers, decisions, controls and accountability under applicable governing rules. | 17 | 0.282 |
+| [Management Accounting (MA)](ma/_index.md) · [Markdown](ma/_index.md) | Explain costs, capacity and economic consequences; forecast outcomes; develop activity designs from economic requirements and arrange how accounting information is used. | 10 | 0.215 |
+| [Corporate Finance (FIN)](fin/_index.md) · [Markdown](fin/_index.md) | Understand financial relations, construct financing terms and group arrangements, and compare value, liquidity, capital uses and exposure. | 23 | 0.655 |
+| [Marketing (MKT)](mkt/_index.md) · [Markdown](mkt/_index.md) | Connect customer inquiry, offers, advertising, acquisition, distribution and use; construct workable provision and revise it from experience. | 14 | 0.430 |
+| [Customization and Productization Management (CUST)](cust/_index.md) · [Markdown](cust/_index.md) | Handle client differences while developing repeatable offerings, delivery and compatible transitions for existing clients. | 8 | 0.186 |
+| [Engineering Asset Management (EAM)](eam/_index.md) · [Markdown](eam/_index.md) | Compare use, renewal, replacement and other asset changes over time, including shared risk, cost and capacity. | 16 | 0.268 |
+| [Leadership (LDR)](ldr/_index.md) · [Markdown](ldr/_index.md) | Direct personal action; develop joint direction, participation and responsibility; obtain feasible contributions and first useful work. | 4 | 0.198 |
+| [Community Management (CB)](cb/_index.md) · [Markdown](cb/_index.md) | Develop useful participation, relationships, shared practices and contributions in organizations or voluntary communities. | 16 | 0.541 |
+| [Organization Change Engineering (OCE)](oce/_index.md) · [Markdown](oce/_index.md) | Construct and qualify organizational changes to contributions, roles, authority, interfaces, capabilities and culture. | 17 | 0.774 |
+| [Human Resource Management (HRM)](hrm/_index.md) | Construct and revise workforce conditions, assessment and selection, reward, voice, protection and continuing participation. | 5 | 0.142 |
 
 **Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals. These are scope indicators.
 
@@ -76,7 +78,7 @@ A manager may perform a method when capable or obtain its result from another co
 
 A development undertaking may need strategy, participation, time, funding and authority as well as learning or research. This Suite helps arrange those conditions. It does not equate everyday operations, implementing a known practice or one organizational change with open-ended development.
 
-Use [Core's connected development method (C.40.OD)](../../sections/09-part-c---kernel-extension-specifications/118-c-40-od---construct-and-continue-open-ended-development.md) when acquired capability should open further attainable problems and the means to continue. An office, distributed responsibility at workplaces, an external provider and AI-assisted arrangements are alternatives to examine from the required methods and conditions.
+Use [Core's connected development method (C.40.OD)](../../sections/09-part-c---kernel-extension-specifications/120-c-40-od---construct-and-continue-open-ended-development.md) when acquired capability should open further attainable problems and the means to continue. An office, distributed responsibility at workplaces, an external provider and AI-assisted arrangements are alternatives to examine from the required methods and conditions.
 
 ## Reading, use and reuse
 

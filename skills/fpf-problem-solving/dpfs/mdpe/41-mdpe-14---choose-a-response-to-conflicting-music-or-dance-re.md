@@ -164,7 +164,7 @@ A usable entry is:
 
 #### MDPE.14:3.2 - Select and support the conflict branch
 
-For every branch used, state the two subjects and the relation between them.
+Establish what each account concerns. A question about one phrase can sometimes be answered within it. Trace the phrase into the larger performance when its place there changes the answer. For example, partners who perform the same sequence can rely on different cues. Two descriptions can concern that same phrase. A list of steps can establish their order, while a record connecting a cue to the other player’s choice can distinguish following from anticipation. Choose the distinctions that could change the answer to the question about the phrase.
 
 | Question | What establishes the relation |
 | --- | --- |
@@ -255,9 +255,9 @@ An account can identify the conflict or establish a past response. For a recomme
 | **deliberately preserved tension** | Keep the arrangement when the tension is useful or the feasible changes impose a greater burden. State the operating limits and what would warrant reconsidering this choice. |
 | **split use** | Choose different variants or arrangements for uses that have different requirements. |
 | **next discriminating observation** | Choose an obtainable observation that could improve the grounds for the choice enough to warrant its burden, or that satisfies an applicable requirement. Name its subject, conditions, expected differences, full burden and stopping condition. |
-| **reject current set** | Stop the proposed use when no current response, including retaining the arrangement or splitting uses, meets its required conditions and no worthwhile obtainable observation could establish that any response qualifies. Name the failed condition and preserve independently supported uses. |
+| **reject current set** | Decline the proposed use if every available response fails a binding condition. Include keeping the arrangement and splitting its uses among the options. If the decision requires permission or confirmation by a deadline and none of the responses can obtain it in time, withhold the use for that occasion. Identify the missing ground and preserve independently supported uses. |
 
-For example, every available floor arrangement may breach a binding consent, permission or equipment limit. If no separate setting is available and no worthwhile obtainable observation could establish that an option meets the required conditions, reject this set for the proposed use. Name the missing provision if developing an alternative is part of the brief. When the evidence leaves an option’s status open, report that uncertainty separately from a finding that every option fails.
+For example, the venue may require permission from a named holder before tonight’s performance. If it has not been granted and the holder cannot grant it before the deadline, the organizer can decline every version that needs it. The dancers’ physical ability to perform those versions may remain unknown. A version already covered by another permission can still be considered if it meets the other requirements. Where no such deadline or mandatory confirmation decides the matter, distinguish an option with uncertain status from one known to fail.
 
 Identify the authority and permission for the chosen action. If implementation is commissioned, a capable provider carries it out through
 the required music, dance, engineering, teaching, event, safety, judging, platform or production
@@ -313,10 +313,7 @@ The pair compares three alternatives:
 - redistribute rotation and add earlier partner-readable weight-transfer cues; and
 - keep the larger phrase for staged or low-density use and a compact variant for the social floor.
 
-In the constructed trial the second variant preserved rhythmic order and the partner anticipated the turn more successfully, but the
-variation still took too much space near the floor edge. The pair therefore chooses the compact variant for dense floors and the
-larger one for the stage or a low-density setting. The participants accept lower visibility from a distant camera. Safety and a
-partner’s right to decline remain binding. Reconsider the choice if floor density, partners, music or use changes its grounds.
+In the constructed trial, the second variant preserved rhythmic order and the partner anticipated the turn more successfully. Its path still extended beyond the space available near the floor edge. This rules out that variant there. At the working density the same pair had already danced the compact phrase within the available space, kept the transfer readable and continued on time. For the larger phrase, their stage rehearsal established its complete path and timing with the partner in the space reserved for it. They choose the compact phrase on this social floor and the larger one on that stage. A low-density occasion can use the larger version when the actual clearance and partner conditions also suffice. The participants accept lower visibility from a distant camera. Safety and a partner’s right to decline remain binding. Reconsider the choice if floor density, partners, music or use changes its grounds.
 
 For a later event with compatible floor, partner, music and use conditions, suppose existing representative
 observations already support the compact variant and the split. The pair selects that variant from the current
@@ -405,10 +402,10 @@ The schedule is a shared resource relation, while the contest's entry rule and c
 | Arrangement | Receiving result and accepted cost |
 | --- | --- |
 | Keep 90 minutes of class, 90 of contest and 60 of open floor | Preserves the familiar class and challenge. The main floor falls 90 minutes short of the agreed 150 open minutes. |
-| Keep the 90-minute class and cancel the contest, leaving 150 minutes open | Meets the time promise with existing staff, at the cost of the challenge and its recognition. It remains feasible if the second teacher or side room is unavailable. |
+| Keep the 90-minute class and cancel the contest, leaving 150 minutes open | Delivers the floor time with the available staff. To meet the whole promise, establish that the class or another staffed activity supplies the required challenge. Otherwise, dropping the challenge needs an authorized change to what participants were offered. |
 | Use 30 minutes for an optional clinic, 60 for an improvisational challenge and 150 for open participation. Teach a 90-minute advanced class in the side studio. | Meets the main-floor promise and preserves two kinds of challenge. The schedule requires two paid teachers together. Total paid teaching contact rises from 90 to 120 minutes, counting the 30-minute clinic and the 90-minute advanced class. Contest entrants cannot attend the full simultaneous advanced class. Ren must explain and administer the changed challenge, and both programmes need preparation. |
 
-The team chooses the third arrangement because the room, providers and paid preparation are available, and participants value preserving the challenge enough to accept the overlap. For this evening the improvisational challenge replaces the prepared-sequence contest. Past contest results retain their original scope. The new challenge uses both timely recovery after a partner’s pause and that partner’s report of comfortable continuation. A disagreement between those indications remains unresolved. Success supports that particular judgement. Overall mastery or permission to teach requires separate grounds.
+The team chooses the third arrangement because the room, providers and paid preparation are available, and participants value preserving the challenge enough to accept the overlap. For this evening the improvisational challenge replaces the prepared-sequence contest. Past contest results retain their original scope. The new challenge uses both timely recovery after a partner’s pause and that partner’s report of comfortable continuation. A timely return with an uncomfortable continuation fails the two-part criterion, as does a late return that felt comfortable. A timely return with no partner report leaves the comfort condition open and the award unconfirmed. For an entry eligible under the rules in force, passing both supports that award. Overall mastery or permission to teach requires separate grounds.
 
 In the constructed continuation most experienced participants stay with familiar partners after class. Staying with familiar partners can support demanding practice and may leave some newcomers without the contact the event hoped to provide. Mara preserves choice of partners and the advanced class, and arranges two optional five-minute welcoming opportunities with willing hosts. The ten minutes of the hosts’ time and the interruptions have real costs. Experienced dancers have no general teaching duty. If a class performance fails with a changed partner, examine that receiving task before deciding whether different instruction is needed.
 
@@ -452,7 +449,7 @@ Assure the result by checking that:
 | “The camera shows the whole conflict.” | State the represented subject, preserved and hidden distinctions, and receiving use. |
 | “The judging categories are explicit, so agreement and cultural fit will improve.” | Compare available evidence about judge agreement by criterion. For cultural fit, consider the relevant practitioners, format, improvisation and continuation. A proposed test is appropriate when a feasible comparison could resolve a material question at a justified cost or an applicable obligation requires it. |
 | “The platform spread the clip, so it transmitted the Dance.” | Separate discovery, attribution, lesson structure, receiving enactment, transfer, and later continuation. |
-| “We generated options, so the problem is solved.” | For a choice, compare the available options. Select a supported response, reject the set for the proposed use when every available option, including retention or split use, fails its requirements and no worthwhile obtainable observation could rescue one, or choose a worthwhile observation that the available evidence cannot supply. |
+| “We generated options, so the problem is solved.” | Compare the options, including retention and split use. Select a supported response. Decline the current use when each option fails a binding condition, including when required confirmation cannot be obtained in time. If the evidence leaves a consequential question open, consider an obtainable observation that could affect the decision. |
 | “The best weighted score wins.” | Preserve vetoes, incomparability, uncertainty, and non-compensable harms. |
 | “The trial worked, so the culture improved.” | Keep local observation separate from later recognition, selection, transmission, and retention. |
 

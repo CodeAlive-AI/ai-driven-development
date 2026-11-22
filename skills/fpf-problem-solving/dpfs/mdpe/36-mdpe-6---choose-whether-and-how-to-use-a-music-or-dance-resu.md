@@ -113,7 +113,7 @@ Where a choice is needed, examine the following alternatives as they apply.
 | **Use as obtained** | The identified source result meets the binding receiving requirements and no relevant incompatibility requires a change. |
 | **Revise before use** | A described feasible change can address the incompatibility while preserving any alternative that needs to remain available. |
 | **Branch** | Both versions have a use, or keeping them separate preserves a distinction that matters in the changed conditions. State their derivation and limits. |
-| **Stop or defer this use** | No available treatment meets the binding conditions, or the use lacks a required permission, decision authority, capability or safe operating condition. |
+| **Stop or defer this use** | The holder can decline a feasible use when its contribution would not justify the work it displaces, or defer commitment while a necessary condition is unsettled. To rule out the use, establish why every permitted treatment fails at least one necessary condition. Permission can rule out one treatment and a performance constraint can rule out another. One condition can also rule them all out. |
 
 Use options feasible under the stated conditions. If a new arrangement or action still needs designing, identify the missing contribution and use the relevant creation method, MDPE.9 or C.18. Reframe an unresolved next action through the applicable FPF method when needed. Following an authorized decision, the responsible practitioner can implement a chosen change through the relevant domain work. For an inquiry about an earlier occasion, use the evidence to distinguish the change selected from the change carried out.
 

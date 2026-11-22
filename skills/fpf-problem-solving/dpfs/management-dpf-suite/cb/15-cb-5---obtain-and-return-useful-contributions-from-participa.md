@@ -87,13 +87,13 @@ Choose a construction that fits the question, available experience and time. The
 
 For a complex case, the work may require substantial clarification and more time than a short round permits. Divide the question or obtain separate preparation when needed. With a large group, CB.4 can provide a speaking circle or smaller groups with a return. A facilitator protects the question and turn-taking; domain contributors supply technical judgement. If advice conflicts, recover the differing conditions or the missing evidence rather than choosing the most popular answer.
 
-**Design clinic: widen the possible next moves.** Use this when time is short or participants' contexts are too different for a deep case judgement. Give the owner a short opportunity to state the challenge. Follow with concise clarification, relevant experiences, suggestions and the owner's account of what changed their thinking. Keep a record of possibilities useful to the owner. The result is a broader set of options, with further examination still needed; do not present the speed of the exchange as evidence that a solution has been selected or tested.
+**Design clinic: widen the possible next moves.** Use this when time is short or participants' contexts are too different for a deep case judgement. Give the owner a short opportunity to state the challenge. Follow with concise clarification, relevant experiences, suggestions and the owner's account of what changed their thinking. Keep a record of possibilities useful to the owner. The result is a broader set of options, which completes an order for options. Choosing or testing one calls for further work. Do not present the speed of the exchange as evidence that a solution has been selected or tested.
 
-**Story of practice: make experience available.** Ask the teller to recover what happened, the conditions, actions, difficulty and outcome. Let listeners ask for details that change their interpretation and explain what may be relevant to their own situation. An interviewer can help expose a choice or failure that the teller treats as obvious. Keep a story's context available when drawing a lesson. If someone needs a validated method or general causal explanation, obtain that further work; one compelling account does not provide it.
+**Story of practice: make experience available.** Ask the teller to recover what happened, the conditions, actions, difficulty and outcome. Let listeners ask for details that change their interpretation and explain what may be relevant to their own situation. An interviewer can help expose a choice or failure that the teller treats as obvious. Keep a story's context available when drawing a lesson. For a general rule, identify the relation in the account and establish why it holds across the intended conditions. That reasoning may already be available within the story. Seek further evidence where its grounds run out.
 
 **Project review: obtain an informed view of a larger body of work.** Agree the question the project owner wants answered and give reviewers access and time to inspect the relevant work. Alternate examination with reflection so that claims can be challenged against the project, rather than against a short presentation alone. A rehearsal can help the owner prepare for an actual review. The project owner's applicable acceptance and release decisions remain separate.
 
-**Demonstration or joint work: expose an action and its reasons.** Choose a representative situation, let a competent practitioner perform or explain the difficult action, and give participants a chance to ask about a consequential choice. When the aim is for a person to learn the action, use HCD to arrange the practice and feedback they need. Their experience can also expose a question for method description or development. Keep the observed action and the result it establishes recoverable.
+**Demonstration and joint work.** For a demonstration, let a competent practitioner make the action and its reasons visible. For joint work, identify the result the participants must produce together. Establish what each supplies and how their contributions form the common result. One person can use another’s observation in a shared judgement. Independently submitted assessments can also form a panel decision under its agreed rule. Trace the means used in the work under consideration. A demonstration can supply a needed input. When the aim includes learning, use Human Capability Development (HCD) to give the learner that decision or action to perform, then return feedback on their own work.
 
 These forms can be combined. A story can clarify a case, a demonstration can test an interpretation, and a project review can expose a smaller question. Explain the change of receiving result when the activity changes, so that participants know which contribution is now wanted.
 
@@ -145,7 +145,7 @@ If nobody can supply the needed technical judgement, the group can still clarify
 
 A voluntary community wants to make its shared reference easier to use, but participants work in different settings and cannot inspect the whole resource together. They agree to a twenty-minute design clinic: two minutes for the owner's challenge, four for clarification, five for relevant experiences, six for possible changes and three for the owner's selected takeaways.
 
-Participants expose two different difficulties: finding a known answer and recognising whether it applies. The owner retains a clearer index and an applicability example as possibilities for a later trial. A subsequent use test and the resource owner's decision are still needed.
+Participants expose two different difficulties: finding a known answer and recognising whether it applies. The owner retains a clearer index and an applicability example as possibilities for a later trial. The owner now has alternatives to take forward. A use test and the resource owner’s decision belong to the later choice of what to change.
 
 A full case judgement would require more material and examination than this interval permits. The shorter form is useful because it promises a different result.
 
@@ -184,7 +184,7 @@ A usable contribution arrangement establishes:
 - required material, preparation, access and permission;
 - a construction that fits the kind of work;
 - a recipient able to inspect and return a disposition;
-- the result obtained, any remaining gap and any agreed continuation.
+- the result obtained, any remaining gap and any agreed continuation. For joint work, identify the contributions and the rule or working relationship by which they formed that result.
 
 A plausible match is enough to begin a bounded invitation. Reliance on correctness, performed intervention, restored functioning or acquired capability requires the relevant domain evidence.
 

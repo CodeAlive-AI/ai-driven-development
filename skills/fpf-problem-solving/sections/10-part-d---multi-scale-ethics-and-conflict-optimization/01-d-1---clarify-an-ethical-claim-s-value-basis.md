@@ -5,7 +5,7 @@
 
 **Use this when.** The value basis of an ethical claim or proposed action is unclear.
 
-If that ethical claim is current but a possibly consequence-bearing System has not yet been identified, or the affected-System set is not adequate, use `A.1.CSD` first. Return to D.1 with the bounded discovery account or the reason identification remains unresolved. Use that account to clarify the value concern.
+Use `A.1.CSD` when the judgement depends on who could bear a consequence and the affected systems are still unclear. A conditional value premise can be examined for a class of participants. To apply it to a proposed action, establish whom the action reaches and which conditions of the premise hold. Retain a missing participant or consequence as an open question when it could change the judgement.
 
 
 **Not this pattern when.** If the question is already a conflict across declared levels or scopes, use `D.3`. If the question is how to mediate that conflict or use it in a decision, use `D.4`. If the question is bias, fairness, human or group impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
@@ -75,6 +75,8 @@ This frame makes the value premises inspectable; the ethical judgement needs rea
 A value label identifies a concern; a reason explains why that concern supports the proposed judgement. State the value premise, the relevant facts and the step joining them. For example, a prediction of greater aggregate benefit can support a recommendation only under a premise giving that benefit the relevant priority. A right can constrain the recommendation under a different premise even when the prediction is correct. Use `B.5.RA` when the argument must be recovered from a source, including a rhetorical question or an analogy.
 
 Keep the grounds of acceptance distinct. Evidence can support a claim about consequences or the conditions in which a person agreed. A normative premise states what ought to count, what may be required or which treatment is permissible. Explaining a tradition's history can help interpret its premise; neither that history nor a model of a system establishes the premise's moral authority. When the premise is contested, preserve the conditional conclusion and identify what accepting another premise would change.
+
+Attribute the premise at the level at which it has grounds. A member can report their own objection. To say that an organization adopted a rule, identify the decision that gave the rule force and the matters it covers. That decision may bind members who disagree. A claim that all members endorse it needs evidence about their views. An analyst can identify an unreported risk to a member and give the reasons for considering it, while leaving that member’s assessment open.
 
 The following argument develops one such conditional basis for decisions about people's participation. It supplies reasons that can be examined and applied; FPF does not select this basis as its final ethical doctrine.
 

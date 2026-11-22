@@ -85,11 +85,11 @@ Ask whether different target values can actually produce the same record under t
 
 Use the uncertainty or error model appropriate to the inference. Strongly nonlinear conversion can change both an estimate and its uncertainty; do not assume that converting an average is equivalent to averaging the converted quantity. Apply the necessary mathematical propagation or inference method, rather than treating a sensitivity coefficient as a complete answer.
 
-When several parameters or performance goals matter, compare achievable combinations under the available resources. Different measurements can favor different parameters. Use C.16 to characterize those combinations and C.11 when choosing between available arrangements.
+When the order asks for several results from one preparation, determine which observations can be made on that preparation and in what order. Trace any disturbance or shared uncertainty into the later readings. A relation or an earlier record can already establish one of the results. If separate preparations are allowed, establish why each answers its assigned use and, where the answer depends on a relation between them, what connects them. Compare feasible combinations under the available resources through C.16 and C.11.
 
 #### PHY.9:4.6 - Obtain a first result and revise the physical arrangement
 
-Work one admissible preparation through to a predicted readout and an interpreted result. This can reveal an unresolved physical relation before an instrument is built. It also gives collaborators a concrete construction to implement or compare.
+Work an admissible preparation through to its predicted readout and interpretation. This can establish possible operation and reveal a missing contribution before an instrument is built. For a reading already received, consider the states compatible with that reading and the other information the recipient has. A decision can be justified when it is acceptable in all those states. For an instrument promised to support decisions over a range, establish a usable rule for every readout possible in that range. Different readouts may call for different decisions. One ambiguous readout can defeat a guarantee while leaving another readout decisive. For an error-probability requirement, use the appropriate record laws and error criterion. Return the supported resolution and its range.
 
 Change a condition that could defeat the intended use. Check the shared premise of a subtraction, the range of an inverse, the time available for a response or the disturbance caused by the probe. Return to the smallest implicated part of the arrangement.
 
@@ -175,7 +175,7 @@ Quantum sensing is one implementation of a wider physical move. Classical compar
 - A cancellation or transferred calibration retains its shared physical premises.
 - Disturbance and finite response are included when they change the wanted result.
 - Local sensitivity is not substituted for resolution over the required range.
-- The first result states what the readout resolves, any remaining ambiguity and when to revise the arrangement.
+- The result states what the available observations and physical premises resolve, what remains ambiguous and when to revise the arrangement. If several observations must be made on the same preparation, their timing and disturbance allow the required combination.
 
 ### PHY.9:8 - Common Anti-Patterns and How to Avoid Them
 

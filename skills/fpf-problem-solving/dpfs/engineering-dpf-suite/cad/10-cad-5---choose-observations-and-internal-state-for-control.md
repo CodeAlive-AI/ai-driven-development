@@ -11,7 +11,7 @@ For example, an inspection result can arrive after two control updates while a s
 
 This is a specialized method for **sampled linear control with bounded uncertainty**. It constructs a sufficient information arrangement for a specified control task and a given state-feedback law or a finite set of such laws. It also supplies a stronger negative result when indistinguishable situations require incompatible actions. It does not synthesize arbitrary nonlinear controllers, identify an unknown plant, or infer biological mechanisms from a control analogy.
 
-The intended practitioner can use state-space models, bounded sets and feedback laws. Start with the required controlled quantities, admissible state and input sets, operating horizon, a usable plant model, and realizable sensor and execution alternatives. The first useful result is a comparison that connects **available information → one executable action → the required continuation**, with the internal state and update needed to maintain that connection.
+The intended practitioner can use state-space models, bounded sets and feedback laws. Start with the required controlled quantities, admissible state and input sets, operating horizon, a usable plant model, and realizable sensor and execution alternatives. For one workable arrangement, connect the information available at each decision to an admissible action and the required continuation. Establish that the internal state can be updated in time with the resources available. For an architecture choice, compare the arrangements against the same control task.
 
 Retain a simpler qualified arrangement when it works. A current complete observation can remove the need to reconstruct a delayed state. An unobserved but sufficiently bounded component can remove the need for a sensor. If the only question is whether a diagram represents a constructed control structure adequately, use C.30.LCA.
 
@@ -50,9 +50,9 @@ Here $u^a_k$ is the input applied during the update, which can differ from the r
 
 For the direct construction below, $A,B,W,X_0$ are known, $W$ and $X_0$ are bounded, and the executed input is available to the estimator. Known actuator queues can first be included in the plant state. Unknown actuation error must be bounded and included in the model; an unbounded discrepancy between requested and applied input defeats the stated guarantee.
 
-State what is available **before** selecting $u_k$. A packet that arrives after that selection cannot support that action. Include sampling phase, transmission, computation and actuation timing in this account. Specify a maximum age of usable observations and a maximum gap between required samples: a delivery-delay bound alone does not guarantee that a sensor samples often enough.
+State what is available **before** selecting $u_k$. A packet that arrives after that selection cannot support that action. Include sampling phase, transmission, computation and actuation timing in this account. Where the control argument relies on fresh updates, establish the maximum usable observation age and the gap between required samples. Delivery delay alone leaves the sampling interval open.
 
-Ask which possible situations the controller must distinguish. If two situations consistent with all available information require disjoint admissible action sets, no deterministic causal controller using only that information can meet the requirement for both. Conversely, do not demand that every state coordinate be accurately observed if their remaining differences do not prevent an acceptable action and continuation.
+Ask which situations remain possible given the observations and executed commands in this history. The controller must issue the same command in situations it still treats alike. The task determines which distinctions to preserve: suppressing a difference is safe for this decision when a command remains admissible throughout the set and supports any required continuation. An incompatible pair suffices to rule out a common action at that history. Section :4.6 tests the whole set and the reach of an impossibility claim.
 
 Begin with the least elaborate plausible arrangement. Include a qualified current sensor, a fixed observer meeting the task, or no observation of a harmless stable component. Any of these can be the selected arrangement if it meets the task.
 
@@ -88,7 +88,7 @@ $$
 
 together with the applied-input history, sample identities and the schedule or arrival mode needed for subsequent updates. At startup retain only states at nonnegative times and use $X_0$; do not invent a prehistory. The set $\Xi_k$ represents states compatible with the initial condition, model, applied inputs and all observations already incorporated.
 
-Predict the joint set by the map
+Propagate each retained history with the executed input and the disturbances that history admits. If a bias or other shared state constrains later disturbances or measurement errors, retain the information needed to enforce that dependence. The state update is
 
 $$
 T(\xi_k,u^a_k,w_k)
@@ -107,9 +107,9 @@ At each action time, use the following causal order:
 
 1. Propagate the previous representation using the executed input and the allowed disturbance.
 2. Incorporate each newly available packet at its sample time, then obtain the current-state projection.
-3. Choose the estimate or set-based action from that projection, apply it by the qualified deadline, and retain the input information needed by the next update.
+3. Use the projection for a current-state estimate. Choose an action from the full information available by the decision time, including any dependence between past observations and future disturbances. The projection alone suffices when it preserves the admissible actions and continuations needed for the duty. Apply the action by its deadline and retain the executed input for the next update.
 
-A state older than $D$ can be projected out once no allowed future packet refers to it. This is different from throwing away the dependence between retained states. Duplicate packets do not supply additional independent information. In a bounded-set construction, independent noise need not be assumed: common error sources must be represented jointly or enclosed conservatively. With an uncertain timestamp, use the union of the admissible timestamp hypotheses, not their intersection.
+Once no future packet can refer to a state older than $D$, project it out if the retained representation still preserves every constraint it places on future disturbances, observations and actions. This is different from throwing away the dependence between retained states. Duplicate packets do not supply additional independent information. In a bounded-set construction, independent noise need not be assumed: common error sources must be represented jointly or enclosed conservatively. With an uncertain timestamp, use the union of the admissible timestamp hypotheses, not their intersection.
 
 If the compatible set becomes empty, the current model, bounds, packet, timestamp or executed-input record is inconsistent. A reset to an arbitrary point would discard the inconsistency. Use a separately qualified fallback, obtain a new trusted initialization, or declare the demanded continuation unsupported. Packet loss or delay outside the allowed family likewise invalidates the relevant bound until a qualified recovery applies.
 
@@ -167,20 +167,20 @@ Full-state observability is sufficient for this construction, not necessary for 
 
 #### CAD.5:4.6 - Establish control under that information
 
-First test whether the information permits a common action. In the following calculation, the selected $u$ is executed as represented by the plant model; any bounded execution discrepancy must already be included in its disturbance or augmented state. For a required next-state set $R_{\mathrm{next}}$, the robust admissible inputs are
+First establish that the observations and earlier executed inputs admit at least one history. Inconsistent observations call for checking the information model. Choose one action using the information available now and test it over all compatible possibilities. Include any bounded execution discrepancy in the disturbance or augmented state. When any $x\in X_k$ can occur with any $w\in W$, the robust inputs for the next-state requirement $R_{\mathrm{next}}$ are
 
 $$
 \mathcal U(X_k)=
 \lbrace u\in U:A X_k\oplus\lbrace Bu\rbrace\oplus W\subseteq R_{\mathrm{next}}\rbrace.
 $$
 
-The quantifiers are “choose one $u$, then allow every $x\in X_k$ and $w\in W$,” not “for every possible state, choose a different action.” For a halfspace $h^\top x\le b$ of $R_{\mathrm{next}}$, the test is
+This inclusion also supplies a sufficient test when the product $X_k\times W$ encloses the possible pairs. For a halfspace $h^\top x\le b$ of $R_{\mathrm{next}}$, the product-set test is
 
 $$
 \sup_{x\in X_k}h^\top Ax+h^\top Bu+\sup_{w\in W}h^\top w\le b.
 $$
 
-For polytopes and sets represented by support functions, evaluate the suprema in this inequality to test the input. When the test fails on an outer approximation, refine the approximation or change the design before claiming impossibility. A negative result for one chosen controller is weaker still.
+Evaluate the suprema for the constraint directions using the sets' support functions where available. Require the proposed input to be available for every compatible history. When state and disturbance are coupled, let $J_k(u)$ be the set of pairs admitted by those histories under that input. A superset can certify an upper limit but can also contain a violating pair that is impossible in operation. The exact halfspace test is $\sup_{(x,w)\in J_k(u)} h^\top(Ax+Bu+w)\le b$. For example, suppose $x\in\{-1,1\}$, $w=-x$ and $x^+=x+u+w$. Then $u=0$ gives $x^+=0$ for both states. Combining the separate ranges allows the impossible pair $(1,1)$ and loses that conclusion. A failed outer bound is a reason to recover the dependence when it matters to the design.
 
 One feasible step does not establish a continuing guarantee. A sufficient construction for a specified feedback $u=K\hat x+g$, with constant $g$ in the selected operating mode, uses $F=A+BK$:
 
@@ -206,7 +206,9 @@ Use a finite outer approximation with a bounded tail, and enlarge it for the spe
 
 These are sufficient conditions, not a universal synthesis algorithm. A stable hidden mode may be handled without measurement; an unstable or tightly constrained uncertain direction may exhaust the input or state margin. Failure can mean excessive approximation, a poor given feedback, an infeasible information arrangement, or an infeasible demand. Distinguish them.
 
-A decisive impossibility witness consists of two admissible histories producing the same available packets and internal information but requiring disjoint actions, or an unavoidable uncertainty width larger than the permitted state interval. Such a witness rules out all causal controllers under those observation conditions, not merely the proposed feedback. Section :5 supplies both a positive construction and such a negative result.
+For a feasible observation history, intersect the admissible action sets for all histories still indistinguishable at the time of choice. An empty intersection rules out a guaranteed next action at that point. Pairwise checks can miss this failure. Suppose an unobserved planar integrator $x^+=x+u$ can start at any vertex of an equilateral triangle of side 2, and its next state must lie in the unit disk. A translation can place any two vertices at opposite ends of a diameter. The smallest circle containing all three has radius $2/\sqrt{3}>1$, so no translation meets the requirement for the full set.
+
+To exclude an information arrangement from initialization, show that every permitted causal policy can be forced to fail. Earlier actions can change which observations will be available. In the scalar integrator $x^+=x+u$, let $x_0$ be 1 or 3, observe its sign at each tick, allow $|u|\le3$, and require $x_2=0$. If the first command is 0, both states remain positive and need different final commands. Choosing $-2$ first gives states $-1$ and 1 with distinguishable signs. The next command can bring either to zero. In :5.2–:5.3 the adverse disturbance histories remain indistinguishable for any earlier common commands. That is what allows the negative result there to cover the channel arrangement.
 
 #### CAD.5:4.7 - Connect the information result to a layered control construction
 
@@ -240,13 +242,13 @@ The added result is the construction of observation availability, internal infor
 
 For each serious channel-and-schedule alternative, obtain the information update, its cost and delay, the error bound and the control conclusion. Keep the demanded behavior, initialization and resource accounting the same. Compare the alternatives that meet the demand; distinguish a proof of impossibility from failure of a sufficient bound.
 
-Choose a sufficient arrangement with an explained cost and margin. A comparison can establish the best member of a stated finite family only when the objective is comparable and every potentially better member is evaluated decisively. Otherwise return the best qualified member found and the unresolved alternatives. A stochastic design can instead minimize an explicitly selected expected cost, but its covariance or a finite successful simulation is not a deterministic bound for this method's hard constraints.
+For an order asking for one workable arrangement, give a feasible design, its cost and its margin under the stated conditions. To claim it is the best of a finite family, compare the same objective and rule out improvement by any alternative, through a direct comparison or a bound covering several alternatives. Otherwise return the best qualified member found and the unresolved alternatives. A stochastic design can instead minimize an explicitly selected expected cost, but its covariance or a finite successful simulation is not a deterministic bound for this method's hard constraints.
 
 Return according to what failed:
 
 | Observed failure | Useful design return |
 | --- | --- |
-| Two compatible histories need different actions before any distinguishing packet arrives | Change what is observed, the sampling or delivery time, the actuator or the required behavior. Extra computation on the same information cannot distinguish them. |
+| The whole set of histories compatible at this decision has no common admissible action | Check whether an earlier permitted action can avoid that information state. If the conflict is unavoidable, change the observations, their timing or the actuation, or seek an authorized change in the required behavior. |
 | A feasible set is too large only after coarse approximation | Retain a useful correlation or use a tighter representation; include its execution cost. |
 | Estimation uncertainty fits, but the given feedback violates an input limit | Change or requalify the feedback and its continuation, or change the physical limit or demand. Do not label this a sensor impossibility. |
 | A longer observation gap or shared-resource delay breaks the bound | Restore a qualified timing arrangement or recalculate the information and control sets for the changed timing. |
@@ -255,7 +257,7 @@ Return according to what failed:
 
 #### CAD.5:4.9 - Make the result executable and reusable
 
-Return the selected and rejected complete arrangements with the controlled task, plant and uncertainty conditions, channel meanings and timing, initialization, internal state and update, control law, and the admissibility calculation. Make the unresolved distinction explicit if no candidate has a sufficient guarantee.
+For a feasible arrangement, return the channel meanings and timing, initialization, internal state and update, control law, and the argument for admissible behavior under the plant and resource conditions. For an impossibility result, give the conflicting histories or other grounds for exclusion. State whether they rule out an action at one decision history, the specified law, or every permitted policy from initialization. A failed sufficient calculation can leave feasibility open. For a comparison, explain which alternatives qualify, which are excluded and which remain undecided.
 
 Connect sample timestamps and identities, executed inputs and the estimator's update to the components that supply and use them in the implementation. Qualify computation and transport deadlines under the proposed shared load. Select an already qualified behavior for missing data, inconsistent data and late completion; “hold the last command” is not automatically safe.
 
@@ -422,7 +424,7 @@ A compelling biological or organizational analogy can suggest a useful design qu
 - Each observation constrains the state at its sample time; admissible sample gaps, delivery modes and resource coupling are included.
 - The internal representation can be updated without discarding a control-relevant dependence; approximations enclose all compatible states.
 - The control conclusion uses one action for the available information, and a continuing guarantee includes a valid error bound and continuation argument.
-- Serious simpler alternatives are compared under the same demand; a changed demand is not disguised as a cheaper equivalent solution.
+- One arrangement meets the commission when its information, admissible actions, required continuation and implementation fit the stated plant and resource constraints. A comparison considers alternatives under that same demand.
 - A changed delay, observation or internal-state reduction returns to the affected calculation.
 - An ablation, a failed sufficient bound and an information-based impossibility have different stated scopes.
 
@@ -435,7 +437,7 @@ A compelling biological or organizational analogy can suggest a useful design qu
 | Assuming a complete delayed observation removes uncertainty | Retain the disturbances accumulated since the sample; test whether any action can tolerate them. |
 | Keeping only an estimate and losing the means to update it | Construct sufficient history or an equivalent recursive state; verify the next update after the proposed reduction. |
 | Turning a smaller covariance or successful simulation into a hard bound | Use the stated stochastic conclusion or derive a separate bounded-set guarantee. |
-| Calling a conservative test failure a physical impossibility | Refine the enclosure or provide indistinguishable histories with incompatible consequences. |
+| Calling a conservative test failure a physical impossibility | Recover the admissible joint histories. Establish the incompatible actions and which earlier policies can reach or avoid the conflict. |
 | Removing an internal path, keeping all gains, and concluding the path is universally necessary | Retune the competing architecture under the same requirement, or use an information-based impossibility proof. |
 | Adding a second sensor without including shared transport and compute load | Recalculate timing and the resulting error under the joint realization. |
 

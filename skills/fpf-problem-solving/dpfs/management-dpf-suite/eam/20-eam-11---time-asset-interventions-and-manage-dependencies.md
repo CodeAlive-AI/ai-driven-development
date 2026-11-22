@@ -27,7 +27,7 @@ Represent the dependencies that determine timing. Some activities must precede o
 
 Place the complete demands in actual windows. A necessary resource bound is total exclusive demand no greater than available time. Passing it is not sufficient when release dates, simultaneous resources or service dependencies prevent a schedule. Use a finite schedule for a small known set.
 
-If the arrangement fails, compare a real change: another window, another supported option, a qualified provider, a service-preserving fallback or justified deferral. Include its cost and moved burden.
+If the arrangement fails, return that finding to the decision maker. If the commission includes choosing another arrangement, compare a different window, supported option, qualified provider, service-preserving fallback or justified deferral, including the burden moved to other work.
 
 State what happens if an important condition changes during the window. Identify the time, personnel, access or fallback needed to return this asset to a supported operating state, and keep those resources available. Agree with those authorized to control maintenance and operation on the latest time to decide on a supported hold or return. Obtain the required allocation or operating decision before relying on reassigned resources, an extended window or changed service.
 
@@ -47,7 +47,7 @@ Optimistic duration estimates can favor a preferred option. Treat estimate uncer
 
 ### EAM.11:7 - Conformance Checklist
 
-Does the schedule include the complete outage and return? Are exclusive resources and actual dependencies respected? Do service conditions hold in each interval, and is there a supported response if the work exceeds its plan?
+Does the schedule include the outage through return to usable service? Can the whole schedule meet the prerequisites and exclusive claims on resources? Apply the service condition to each entitled recipient over the period the undertaking covers, including accumulated interruptions where relevant. Is there a supported response to an overrun when the commitment requires one?
 
 ### EAM.11:8 - Common Anti-Patterns and How to Avoid Them
 

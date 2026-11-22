@@ -58,7 +58,7 @@ Translate the remedy into work. Assign correction of pay to ADM, reassessment to
 
 #### HRM.4:4.5 - Examine recurrence without suppressing voice
 
-Check whether the participation opportunity, determination and remedy actually occurred. Obtain relevant participant response and examine recurrence or adverse treatment under the applicable protections. Where a concern reveals a shared defective premise, return it to HRM.1 or the owning Method. Do not treat fewer complaints as proof of improvement: access may have deteriorated. Likewise, one substantiated error does not justify discarding every adequate decision from the same practice.
+Match the check to the requested result. For an opportunity to raise a concern by a deadline, establish the effective procedure, an available channel, a competent recipient and the remaining time. For a decision or remedy already due, establish which acts occurred and what the employee received. Obtain relevant participant response and examine recurrence or adverse treatment under the applicable protections. Where a concern reveals a shared defective premise, return it to HRM.1 or the owning Method. Do not treat fewer complaints as proof of improvement: access may have deteriorated. Likewise, one substantiated error does not justify discarding every adequate decision from the same practice.
 
 ### HRM.4:5 - Archetypal Grounding
 
@@ -76,12 +76,12 @@ Power, dependency, language, access and fear of consequences can influence what 
 
 - Is the desired result distinguished from the channel: information, influence, negotiation, determination, appeal or remedy?
 - Is the selected process applicable and reachable, with required representation, authority and independence?
-- Can participant input still change the relevant decision?
-- Does inquiry distinguish facts, interpretations and uncertainty and provide the required opportunity to respond?
-- Are the decision, challenge route and remedy usable and appropriately communicated?
-- Does follow-through examine actual provision and recurring conditions rather than only complaint counts?
+- For consultation, can participants supply their views while these can still influence the decision?
+- For an inquiry, are facts, interpretations and uncertainty distinguished, and is the required opportunity to respond provided?
+- For a decision, can the employee obtain the outcome and use any applicable challenge route? If a remedy is due, can the employee obtain it?
+- When follow-through is requested, what establishes whether the action due took effect? If recurrence is at issue, which conditions recur?
 
-The presence of a grievance policy is recognition evidence only. Assurance requires its applicability and actual performance for the matter at hand.
+To advise an employee how to raise a concern, establish that the route applies and is usable for that employee in time. To report how a case was handled, establish the actual involvement, determination or remedy that the report covers.
 
 ### HRM.4:8 - Common Anti-Patterns and How to Avoid Them
 

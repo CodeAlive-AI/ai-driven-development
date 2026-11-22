@@ -49,7 +49,7 @@ If a needed condition is unknown, choose the least elaborate adequate continuati
 
 Recover the existing variants as complete contributions: what each supplies, the useful result it can support, required customer work, access and ability, timing, support, terms and available supply. [MKT.2](17-mkt-2---construct-and-test-an-offer-and-its-positioning.md) supplies this offer content. Keep proposed variants separate from ones the provider can presently deliver.
 
-First exclude a variant that fails a necessary condition. Then compare the remaining alternatives by the customer's relevant reasons for preference and the full burden of obtaining the result. Distinguish a favourable feature from a prerequisite: extra guidance can be optional convenience for an experienced user and necessary support for someone unable to proceed alone.
+Exclude variants that fail a necessary condition. For an order requesting one suitable option, a single qualified option can suffice. If the customer asks for a preference or for the available choices, compare the alternatives needed for that answer, including the burden of use. Extra guidance can be optional for an experienced user and necessary for someone who cannot proceed alone.
 
 Compare combinations as well as individual options when the proposal joins several contributions. Check that the output of one is suitable for the next, that the same person or resource is not promised to incompatible work, and that the combined arrangement preserves support and failure handling. A set of individually available services is not necessarily available as one simultaneous package.
 
@@ -62,9 +62,9 @@ Give [SYSE.8](../../engineering-dpf-suite/syse/29-syse-8---develop-an-integrated
 For a reusable service, these suppliers must develop the following connected construction:
 
 1. Identify contributions that can be reused by their supplied results, required inputs and conditions. Do not divide the service solely by existing department names.
-2. Construct materially different combinations that can obtain the receiving result. Keep the current adequate arrangement where one exists. Explain necessary order, compatible outputs, shared resources and failure or return conditions.
+2. Construct a combination that can give the receiving result. Compare alternatives where the selection depends on their differences. Keep an adequate existing arrangement in view. Explain the order, connections between outputs, shared resources and recovery that make the combination work.
 3. Obtain the needed subject methods, capable performers, assignments, access and support. Distinguish work that can be scheduled in advance from new requests, and work that can be interrupted from work that must finish before another action starts.
-4. Return available variants with their conditions of promise and execution, or the precise contribution still missing. Test consequential compatibility in an ordinary use and a revealing variation before relying on an untried combination.
+4. Return the supported options the customer needs, their conditions of use or the contribution still missing. Establish compatibility through the applicable interface rules, provision commitments or a trial that resolves a remaining uncertainty.
 
 For recurring service construction, retain useful alternatives with the conditions that made them feasible, conditional or rejected. Retrieve relevant earlier configurations when developing another proposal, then recheck their fit and the reasons for the earlier decision. Use them to generate and refine options; a changed result or condition may require a configuration outside the stored set.
 
@@ -116,9 +116,9 @@ Visible attributes are easy to collect and can be mistaken for useful selection 
 
 - The decision and action-changing customer differences are explicit.
 - Information retains its subject, source, currentness, use conditions and material uncertainty.
-- Selected variants satisfy necessary conditions and have a supported reason for preference.
+- Does the selection meet the customer’s conditions? Where preference or a complete menu was requested, does the comparison support that further result?
 - Combined work preserves compatibility, performers able to do the work, access, support and timing.
-- An absent service receives a concrete construction request and remains conditional until supplied.
+- For a missing service, has the recipient received the disposition their commission requires, such as a reasoned refusal or a request to construct a qualified alternative?
 - The customer can correct the grounds, choose or decline, and obtain the selected next action.
 - Feedback distinguishes mistaken matching, failed supply and changed usefulness.
 
@@ -146,7 +146,7 @@ For reusable individualized services, **adapt** the historical modular-service c
 
 For feasible combinations, **adopt** SYSE.8's construction of an offering and the provider arrangement needed to deliver it, and C.32.MWA.PP's comparison of methods, work and simultaneous burdens. They develop the conditions that a catalogue leaves unspecified. Use a ready suitable variant when available; reopen construction when a new result, incompatibility, scarce capability or changed interruption condition defeats the old arrangement.
 
-For subsequent configuration work, **adapt** [Hunke, Satzger and Tuunanen (2024)](https://publikationen.bibliothek.kit.edu/1000174859/154981710): preserve and retrieve design reasoning while testing its relevance to new alternatives. Their qualitative evaluation concerns analytics-based services and also found uncritical copying by novices. Reuse here informs construction without restricting it to stored choices.
+For subsequent configuration work, **adapt** [Hunke, Satzger and Tuunanen (2024)](https://publikationen.bibliothek.kit.edu/1000174859/154981710): preserve and retrieve design reasoning while testing its relevance to new alternatives. Their qualitative evaluation concerns analytics-based services. Participants described how the card categories could restrict the ideas they considered. Reuse here informs construction without restricting it to stored choices.
 
 ### MKT.9:12 - Relations
 

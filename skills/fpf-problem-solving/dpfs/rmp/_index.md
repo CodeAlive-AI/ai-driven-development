@@ -5,12 +5,12 @@
 > Use these research methods to frame a question, choose and conduct an inquiry, assess what its results support and communicate the answer. You can also use them to assess or improve a research method.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Original edition:** 24 October 2026. For the version used, see [RMP.Sources:3](51-rmp-sources-3---citation.md).
+- **Original edition:** 24 October 2026. Revised 22 November 2026. For the version used, see [RMP.Sources:3](51-rmp-sources-3---citation.md).
 - **Status:** Eternal alpha. This working framework is open to correction as methods, sources and uses change. RMP.1–RMP.11 include ways to use an existing answer, stop an inquiry and improve a research method.
 - **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for original framework content. Third-party material retains its own terms.
 - **Publication:** [FPF Library repository](https://github.com/ailev/FPF)
 
-Begin with your question and the results you have. You may need help interpreting a request, using a source that already answers it, choosing a design or specifying how to carry it out. Other entries help you reconstruct what researchers did, assess a claim or a threat to its credibility, synthesize disputed evidence, revise a knowledge account and return it to its users, or assess and improve a Method. Find the question or PatternID in the Table of Contents. The Readme gives worked introductions, the Architectural Reference explains connections among the eleven contributions, and the applications show how to use them together. To refer to this edition, use the [Citation](51-rmp-sources-3---citation.md).
+Begin with what you or another recipient needs to understand, decide or do, and the material already available. A worked case can supply a useful operation. Ask what its result would establish for your question before adopting its units, comparison or stopping point. You may need help interpreting a request, using a source that already answers it, choosing a design or specifying how to carry it out. Other entries help you reconstruct what researchers did, assess a claim or a threat to its credibility, synthesize disputed evidence, revise a knowledge account and return it to its users, or assess and improve a Method. Find the question or PatternID in the Table of Contents. The Readme gives worked introductions, the Architectural Reference explains connections among the eleven contributions, and the applications show how to use them together. To refer to this edition, use the [Citation](51-rmp-sources-3---citation.md).
 
 
 # Table of Contents
@@ -106,13 +106,15 @@ The PatternIDs RMP.1–RMP.11 give the methods stable addresses. The six Parts p
 
 Start with the question that matters to the inquiry and the evidence you have. A design specifies what the observations must distinguish. The way you collect or recover material determines which comparisons you can make. Analysis, criticism and synthesis can support an answer, identify a limit or expose a premise of an earlier step that needs revision.
 
+If your task is to frame an inquiry yourself, begin here before reading a worked case. Take an unexplained observation or a decision someone faces in your own work. What would a different finding change for that person or for the explanation? Choose what to investigate, how far the evidence must reach and what it must distinguish. Work out how you could obtain or recover that evidence. Keep an earlier attempt if it shows those choices. Could the material you plan to collect be the same in two situations that require different answers? If you already have a proposed answer, consider what evidence could defeat it. Use the methods below to repair a missing connection or explain why the original design suffices. A supplied question, unit or comparison remains available when the work is to apply or criticize it.
+
 If the available results leave part of the research question open, use FPF B.5, **Choose the Next Reasoning Contribution**, to identify what another contribution would add. [RMP.Reference:6](07-rmp-reference-6---pattern-relations-do-not-prescribe-a-resea.md) explains how to connect the research methods and when a change warrants revisiting earlier work.
 
-Start with the contribution whose inputs you have. The [Table of Contents](_index.md#table-of-contents) covers other questions. The [Architectural Reference](01-research-method-practice-principles-framework-architectural.md) explains why the methods belong here and what their combined use requires. When you seek help, ask for an explanation or a comment on your case in the language of your work.
+Choose the contribution whose result would answer your question or supply something it needs. Use inputs you already have when they support that use. The [Table of Contents](_index.md#table-of-contents) covers other questions. The [Architectural Reference](01-research-method-practice-principles-framework-architectural.md) explains why the methods belong here and what their combined use requires. When you seek help, ask for an explanation or a comment on your case in the language of your work.
 
 Use [RMP.1 — Decide Whether a Question Needs Research and When to Stop](31-rmp-1-decide-whether-a-question-needs-research-and-when-to-s.md) to check whether an applicable source already answers the question. If it does, give the answer, its source and its relevant limits. If a knowledge question remains, explain what the inquiry seeks to establish, how another researcher can examine the connection from question to result, and the scope of the contribution. A suitable existing protocol can support an inquiry into a disputed claim. An established rule can also settle an ordinary case in its own practice.
 
-For a manager considering a second approver, see [Should a second approver reduce customer waiting?](46-rmp-application-5---app-rmp-05-should-a-second-approver-redu.md). Event records can support a delay forecast under stated conditions. To estimate the effect of adding an approver, establish how the queues operate. The application shows the comparison across branches with independent queues, how a shared queue changes its interpretation, and what a qualified analyst can supply.
+For a manager considering a second approver, see [Should a second approver reduce customer waiting?](46-rmp-application-5---app-rmp-05-should-a-second-approver-redu.md). Event records can support a delay forecast under stated conditions. To estimate the effect of adding an approver, establish how the queues operate. The application shows how the queues affect that comparison and what a qualified analyst can supply. The study measures office working time to dispatch. For a decision about customer waiting, establish when the first usable quotation reaches the customer, which calendar governs the interval and whose waits count in the decision.
 
 The examples use constructed cases with stated professional premises. Research can change the evidence available for maintenance, environmental protection or another decision. The authority to make the decision belongs to its designated holder.
 
@@ -122,7 +124,7 @@ The examples use constructed cases with stated professional premises. Research c
 - **Question:** What evidence can answer the engineer’s question? What happens to the conclusion if the comparison fails to distinguish the mechanisms or the laboratory result cannot be transferred to service?
 - **First useful result or blocker:** An applicable source answer or a finding under the existing qualification procedure. If a knowledge question remains, state it and assess whether a feasible inquiry can answer it.
 - **Start with:** RMP.1 for an unsettled question. Use [RMP.2 — Choose a Criticism-Bearing Research Design or Stop](32-rmp-2-choose-a-criticism-bearing-research-design-or-stop.md) directly when a compatible question, source account and useful stopping condition are already supplied.
-- **Stop or return:** Give the answer the evidence supports. Use RMP.1 if the question has changed and RMP.2 if a design premise has failed. A decision about maintenance belongs to the authority responsible for it.
+- **Stop or return:** Give the answer for the stated maintenance question. A mechanism finding can exclude one proposed basis for an interval change. Issuing the interval recommendation also requires the remaining engineering grounds if that work was entrusted to you. Use RMP.1 if the question has changed and RMP.2 if a design premise has failed. A decision about maintenance belongs to the authority responsible for it.
 
 1. **Establish what is known about the mechanism.** In the [Pump-P4 application](42-rmp-application-1---app-rmp-01-pump-p4-accelerated-seal-evid.md), a qualified acceleration relation, test method and acceptance criteria may suffice for the engineering or assurance task. Evidence that the proposed acceleration changes the degradation mechanism may also answer the question directly. If plausible alternatives remain, use RMP.1 to specify what would support, narrow or defeat the proposed relation for the stated material and operating conditions.
 2. **Construct a comparison that can distinguish the mechanisms.** In the [mechanism construction](32-rmp-2-choose-a-criticism-bearing-research-design-or-stop.md#rmp2511---derive-and-repair-the-mechanism-comparison), two reference specimens have the same overall wear index and different degradation mechanisms. The index cannot tell the mechanisms apart. A qualified procedure for measuring a distinguishing signature lets the researcher compare accelerated and field-representative specimens under the required material and damage conditions. With RMP.2, the researcher can use sufficient evidence, select a feasible design, identify a missing result that blocks a needed selection, or give a reason to finish without a new study. Unknown marker discrimination blocks selection if the choice depends on it. Two necessary tasks of four to six non-overlapping investigator-days each could take eight to twelve days. A ten-day allocation covers some combinations, but does not ensure completion.
@@ -203,7 +205,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 ### Part I - Qualify the Question and Choose a Design or Stop
 
-- [RMP.1 — Decide Whether a Question Needs Research and When to Stop](31-rmp-1-decide-whether-a-question-needs-research-and-when-to-s.md) (384 lines)
+- [RMP.1 — Decide Whether a Question Needs Research and When to Stop](31-rmp-1-decide-whether-a-question-needs-research-and-when-to-s.md) (388 lines)
 - [RMP.2 — Choose a Criticism-Bearing Research Design or Stop](32-rmp-2-choose-a-criticism-bearing-research-design-or-stop.md) (383 lines)
 
 ### Part II - Operationalization and Research Trace
@@ -213,7 +215,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 ### Part III - Analyze Claims and Choose Credibility Work
 
-- [RMP.5 - Analyze and Criticize the Research Claim under Its Method](35-rmp-5---analyze-and-criticize-the-research-claim-under-its-m.md) (249 lines)
+- [RMP.5 - Analyze and Criticize the Research Claim under Its Method](35-rmp-5---analyze-and-criticize-the-research-claim-under-its-m.md) (251 lines)
 - [RMP.6 - Choose a Credibility Test That Bears on the Research Claim, or Answer without New Testing](36-rmp-6---choose-a-credibility-test-that-bears-on-the-research.md) (271 lines)
 
 ### Part IV - Synthesize Evidence and Revise the Exact Contribution
@@ -236,7 +238,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [RMP.Application:2 - APP-RMP-02 — ResidentStream-S17 salinity anomaly](43-rmp-application-2---app-rmp-02-residentstream-s17-salinity-a.md) (48 lines)
 - [RMP.Application:3 - APP-RMP-03 — Factory-closure historical transfer probe](44-rmp-application-3---app-rmp-03-factory-closure-historical-tr.md) (15 lines)
 - [RMP.Application:4 - APP-RMP-04 — Retain the Method and correct its research consequence](45-rmp-application-4---app-rmp-04-retain-the-method-and-correct.md) (13 lines)
-- [RMP.Application:5 - APP-RMP-05 — Should a second approver reduce customer waiting?](46-rmp-application-5---app-rmp-05-should-a-second-approver-redu.md) (143 lines)
+- [RMP.Application:5 - APP-RMP-05 — Should a second approver reduce customer waiting?](46-rmp-application-5---app-rmp-05-should-a-second-approver-redu.md) (147 lines)
 - [RMP.Application:6 - Restore a service while investigating an unresolved mechanism](47-rmp-application-6---restore-a-service-while-investigating-an.md) (16 lines)
 - [RMP.Application:End](48-rmp-application-end.md) (2 lines)
 

@@ -23,15 +23,15 @@ Separate contexts can protect attention and allow parallel inquiry, but every bo
 
 #### SYSE.44:4.1 - Select contributions and the receiving result
 
-Name the whole result, its protected conditions and who or what will integrate the contributions if the work is divided. Recover which missing results could be obtained separately and which inputs they share. Distinguish a calculation, source interpretation, alternative proposal and independent check; their return conditions differ.
+Start from the decision the whole return must support. Identify which results can be obtained separately, what depends on a combination and what the recipient or another contributor must choose. Decide where to divide the work by following an actual dependence. A component calculation can establish a bound for the assembly if the assembly model carries it across the joint. Two reports on components can leave that joint entirely open. A result may also serve two recipients if its meaning, conditions and delivery meet both needs.
 
-Establish whether one performer can supply the whole result under the required conditions and authority. Where it can, compare that arrangement with dividing the work. Consider expected task quality and total effort. Include preparation, source access, repeated work, waiting and integration. Use a representative comparison through SYSE.46 when its attainable result can improve the choice enough to justify its full cost. When one performer can supply the whole, divide the work if its expected gain justifies the full added cost. When separate contributions are required, choose a feasible way to obtain and combine them or identify the missing contribution.
+If the commission calls for distinct contributions, identify who can supply each under its required conditions and authority. Otherwise consider whether one performer can provide the whole result. Compare feasible ways to divide or retain the work where the choice is yours. Include source access, preparation, waiting, duplication, integration and the quality expected at the recipient. Use a representative comparison through SYSE.46 when its result could justify the full burden. If the required contributions cannot be obtained together, identify which obligation is affected.
 
 For the selected arrangement, state each contribution's receiving use, required inputs, permissible actions, available sources, result form and stop. A.15.9 and SYSE.9 supply bounded requesting and reliance. A concise passage or a structured return is sufficient when the recipient can act from it.
 
 #### SYSE.44:4.2 - Construct usable contexts and effect boundaries
 
-Give each participant the common premise and source/configuration needed for the contribution, plus the relevant constraints of the whole. Preserve those meanings in the brief or request each participant will use. Separate governing instructions from quoted source material. Preserve a route to the original when a summary could hide a decisive qualification.
+Give each participant the receiving use, relevant common premises and binding constraints. Read the proposed brief as an instruction. Could someone complete it by checking a case, using a supplied model or following a chosen procedure while the commission asks them to design the model or decide which cases matter? Return that choice to the responsible contributor, or identify who will make it when combining the returns. Preserve access to original terms when a summary might lose them.
 
 When a message or work product leaves consequential uncertainty about how that material is understood or what the participant intends to do next, use the [Reference's collaborator application (Engineering.Reference:19.6)](../suite-reference/21-engineering-reference-19---make-an-available-contribution-wo.md#engineeringreference196---understand-a-collaborator-before-choosing-the-next-contribution). Construct the alternatives that would change the explanation or division, then choose a distinguishing return only when its value warrants the burden. Use the qualified result to clarify the needed meaning, revise the requested contribution or proceed with the supported arrangement. An unclear return leaves alternatives open; a supported action common to them can end the inquiry. Supplying a common brief alone establishes neither common understanding nor an accepted commitment. Keep ordinary settled collaboration lightweight.
 
@@ -45,13 +45,13 @@ Use each contribution with its premises, applicable source and configuration, an
 
 Reconcile disagreements by identifying the claim and its source or assumption. Compare original evidence, run a discriminating calculation or obtain a qualified specialist result when needed. Do not resolve common-source error by majority vote. Independence requires the evidence and checking relation that the claim needs; a second persona or fresh context alone does not supply it.
 
-Combine only mutually usable returns. Test the joins: compatible units, definitions, input versions, scope and whole-result conditions. Preserve a supported partial result when another required result is missing, and state why the whole is still incomplete. The integrator retains the whole result's required conditions.
+Use the relation the conclusion requires. Establish simultaneous compatibility for contributions that must work together, correspondence for a handover, comparability for alternatives, or complete coverage for a result derived by cases. Check any time, capacity or authority shared across the work. A proved conflict can complete an assessment of feasibility. An order for a laboratory’s signed report still requires that report. Return what each result establishes and the consequential work still outstanding.
 
 #### SYSE.44:4.4 - Localize change and stop
 
 When an input or source changes, identify the contributions that used it and reconsider the conclusions or conditions whose grounds may have changed. Keep results whose grounds still apply. Cancel or redirect obsolete work when doing so is permitted and useful; do not let its later arrival replace a result based on the new premise.
 
-Use the integrated result in the receiving decision or action and observe whether it supplies the needed contribution. A handover delivered on time can still fail there. If the handover omitted needed context, repair it and supply the missing material to the affected participant. Ask the supplier to address a defective component. Revise a faulty join in the integration step, and take an unsupported condition of the whole result to the governing domain decision.
+Deliver the integrated result under the agreed completion condition. For a recommendation, give the recipient the grounds needed for their decision. Where the commission includes use or observation of its effects, establish what the recipient actually did and what followed. A handover delivered on time can still fail in use. If the handover omitted needed context, repair it and supply the missing material to the affected participant. Ask the supplier to address a defective component. Revise a faulty join in the integration step, and take an unsupported condition of the whole result to the governing domain decision.
 
 Stop when the whole result suffices or the remaining work cannot supply a worthwhile permitted continuation. If a contributor times out, establish which results are actually available. A missing contribution gives no support to another contributor’s favored answer.
 
@@ -87,12 +87,12 @@ Benchmarks with easily separable questions can exaggerate the benefit of paralle
 
 ### SYSE.44:7 - Conformance Checklist
 
-- Establish whether one performer can meet the whole requirement, including any required authority. Compare feasible arrangements for the same result, including preparation, dependencies and the cost of combining the returns.
+- Identify who can supply the required contributions under the applicable conditions and authority. When the division is open, compare feasible arrangements for the same result, including preparation, dependencies and integration.
 - Each participant receives the needed common premises, sources, boundaries and receiving use; consequential uncertainty about interpretation or intended continuation is resolved enough for the selected action, or remains explicit.
 - Serial dependencies and conflicting effects remain explicit.
 - Returns identify their evidence and any condition that is still unsupported.
-- Integration tests compatibility and common-source failure rather than counting agreement.
-- Reconsider conclusions that rely on a changed premise. Retain those whose grounds still apply. Use the integrated result in the receiving work or identify the remaining gap or limit.
+- Integration establishes the relation on which the result relies, including any shared conditions or common source of error.
+- Reconsider conclusions that rely on a changed premise. Retain those whose grounds still apply. Establish whether the integrated result meets the receiving commission. For a claim about actual use, identify the work in which it was used and its contribution there.
 
 ### SYSE.44:8 - Common Anti-Patterns and How to Avoid Them
 

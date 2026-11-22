@@ -14,11 +14,15 @@ NOT.4 permits the transformation `q + q + b` to `2*q + b` under that interpretat
 
 NOT.5 translates the rule at b=1 into the table `(0,1), (1,3), (2,5)`. Lookup at those three inputs survives. The table alone does not determine the value at q=3: both `2*q + 1` and `2*q + 1 + q*(q-1)*(q-2)` agree on its rows, but give 7 and 13 respectively at q=3.
 
-If the receiving work needs the general rule, retain that rule or a sufficient construction of it alongside the table. If it only needs the three listed values, the table can suffice.
+Suppose the team has independently established that at b=1 the output has a constant slope over all the q values under consideration. With exact values, the rise from 1 to 3 between inputs 0 and 1 fixes the slope at 2. The intercept is 1, the third pair fits, and the output at q=3 is 7 for b=1. The table together with that constant-slope premise determines the rule in q at this setting. Joining the points by straight segments supplies no premise about the slope beyond the plotted inputs.
+
+To change b, consider what is known about the new setting. Both `2*q + b` and `2*q + 2*b - 1` give the same values for every q at b=1. Suppose the output at q=3 is known to be nondecreasing in b between 1 and 2. At b=2, the reader can then certify an output of at least 7. For an exact prediction, check whether the rules still possible agree at the new input. The two rules above give 8 and 9 at q=3, b=2. For a requested setting, check whether the proposed b reaches the requested output under every rule still possible.
+
+For lookup at the three listed inputs, the table alone suffices. When the order calls for the generating rule itself, supply it in the agreed form.
 
 ### NOT.Reference:4.3 - Interpret an edit before propagating it
 
-Now a participant asks that the output at q=1 become 4 while the coefficient 2 remains fixed. NOT.6 treats this as a constraint on the rule, not as an isolated replacement of a displayed cell. It gives `2*1 + b = 4`, hence b=2. The graph receives the new parameter; the table becomes `(0,2), (1,4), (2,6)`. Its former values were derived outputs, so they are recalculated.
+Now a participant asks that the output at q=1 become 4 while the coefficient 2 remains fixed. NOT.6 treats this as a constraint on the rule, not as an isolated replacement of a displayed cell. Here the supplied rule in :4.1 gives `2*1 + b = 4`, hence b=2. The alternative rule in :4.2 would require b=1.5. Its agreement at b=1 cannot justify the same edit. The graph receives the new parameter; the table becomes `(0,2), (1,4), (2,6)`. Its former values were derived outputs, so they are recalculated.
 
 If another participant also requires the old output at q=0 to remain 1, that requirement gives b=1. It conflicts with b=2 under the retained rule. The useful result is the conflicting pair of requirements and the assumption on which it depends. Silently choosing one edit would conceal the decision that the group must make.
 

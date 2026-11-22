@@ -5,7 +5,7 @@
 
 | Package part | Supplying body or return | Minimum inspectable content |
 | --- | --- | --- |
-| use contract | `SIE.1` | receiver, use, answer claims, tolerated loss/uncertainty, freshness/latency/quality, authority, representative tests, stop and reopen |
+| use contract | `SIE.1` | receiver, use, answer claims, tolerated loss/uncertainty, freshness/latency/quality, authority, evidence needed and required tests, stop and reopen |
 | source manifest | `SIE.2`; SIE.3 qualification when needed | assets, schemes, editions/effectivity, meanings and identifiers used, owners/authority, provenance/access, gaps, and references to required model qualifications |
 | correspondence set | `SIE.4` | endpoints, relation or incompatibility, orientation, bounded use, permitted loss, justification/evidence, source versions, counterexamples and unresolved rows |
 | cross-source identity disposition | `SIE.5` | load-bearing endpoints, grain and interval, disposition kind, resolution rules and contexts or assignments and their issuers, evidence, authority boundary, downstream references for the relied-on identity; an explanation of unused identity only when it affects interpretation or later reliance |

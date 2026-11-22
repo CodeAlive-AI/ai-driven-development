@@ -5,7 +5,7 @@
 
 ### GOALS.9:1 - Problem frame
 
-**Use this when** people or an organization need to become able to use the goal methods, repeated goal-work failures persist, or the present practice should be retained, changed or discontinued. The object is the capability and working arrangement that performs the practice. The result is a feasible acquisition or repair, a supported continuing contribution, or a warranted replacement.
+**Use this when** people or an organization need to acquire or sustain a goal practice, repeated failures persist, or the present practice should change or end. The result depends on the decision at hand. For a proposed launch, establish how the participants could provide the practice. For an appointment, establish the contribution available under the intended conditions. For a report that the practice has continued, use evidence of its use in the period claimed.
 
 If competent participants supply the needed result under current conditions, use that contribution. Add an intervention only for a contribution that is missing.
 
@@ -21,7 +21,7 @@ Acquisition uses capacity that also serves current work. Whole-task practice sup
 
 #### GOALS.9:4.1 - Define the contribution the practice must supply
 
-Choose a representative receiving task and a consequential variation. Examples include constructing a defensible objective/KR set, reconciling a shared specialist conflict, using adverse progress to decide help, or revising a goal without erasing a promise. State what a capable performer must notice, construct and decide, and what assistance can remain. The target is performance in this work rather than recollection of terminology.
+Start with the receiving task. What would the performer have to notice, construct or decide, and what help will be available? A particular forthcoming assignment can be supported by comparable earlier work. For a claim spanning different tasks or conditions, identify a variation that could change the needed contribution and what justifies carrying the capability across it. The task might be to design a KR set, reconcile demands on a shared specialist, use progress evidence to decide on help, or revise a goal while preserving a promise.
 
 Inspect available results first. A skilled team with an adequate current practice may already supply the required contribution. Reuse it and address any remaining gap. When a result is missing, distinguish a subject-method omission, a human capability gap, unavailable provision, an ineffective assignment or a participation/consequence conflict. OCE.10 supplies the organizational investigation when rival explanations change the remedy.
 
@@ -33,7 +33,7 @@ For human development, HCD.2 supplies the programme comparison. Choose complete 
 
 #### GOALS.9:4.3 - Learn and exercise the needed operations
 
-Demonstrate the difficult operation with its reasons, let the participant attempt it, examine the evidence, give usable feedback and let them correct the attempt. HCD.9 supplies the practice episode. A useful goal-construction exercise asks the learner to find a plausible all-green failure and repair the KRs while preserving the objective. A coordination exercise changes a dependency after local plans were agreed and asks which commitments and means must change.
+Give the participant access to the receiving work and let them exercise the choice being developed. If the aim is to choose a goal, give the participant the actual use and its conditions before suggesting an objective. If the objective is fixed and designing evidence is entrusted, let them decide what evidence would distinguish success and why. A supplied objective and test can still leave the participant a judgement about whether this case passed. Demonstrate a difficult operation with its reasons, give feedback on the participant's own attempt and allow a correction. HCD.9 supplies the practice episode. A comparable earlier attempt can also show a choice the participant made.
 
 Choose variation from the intended work. Varying only numbers will not show whether a person distinguishes research completion from delivery success or human mastery from agent output. HCD.10 supplies selection of variation, spacing and progression; HCD.11–12 qualify performance and transfer when those claims matter. Retain suitable guidance and tools if later work permits them. Observe independence only for the operation that later work requires the person to perform independently.
 
@@ -43,13 +43,13 @@ Place the practice in useful work when the conditions support both results. Prot
 
 Use OCE.9 to trace the selected contribution from request through interpretation, decision, execution and a representative exception. Obtain effective access, provider response, authority and service coverage at the crossings that can defeat it. Reuse matching observations already available. Perform another bounded attempt only for the remaining unsupported claim.
 
-Arrange where participants can find the method, examples, current definitions and help. Assign continuing support by actual contribution; a coach or “OKR shepherd” is one possible arrangement. Keep it only when useful, capable and provided. If continuation after the initiator leaves matters, examine a later episode without that initiator supplying the decisive operation. Deliberately retained support remains a valid condition of an assisted capability.
+Arrange access to the method, current definitions and help. Provide continuing support where it contributes, through a coach or another capable provider. To decide before the initiator leaves whether the team can take the next assignment, establish who can supply each necessary contribution and why the new arrangement can deliver them together. Earlier comparable work, qualifications recognized for a first assignment or authorized supervision can supply grounds where their conditions hold. Check that the remaining people have the authority, time and assistance to handle the permitted workload and exceptions by their deadlines, alongside current duties. To report that use actually continued after departure, follow the specified work in that later period. Deliberately retained support can be part of the required capability.
 
 #### GOALS.9:4.5 - Revise the practice by its contribution and full burden
 
 Observe whether the practice addresses the original difficulty and which condition causes a failure. Repair the method, learning, tools, assignment or consequence arrangement at its actual owner. A repeated failure after the same correction calls for reconsidering the explanation of its cause. More sessions or a larger goal template are useful only if they supply the missing contribution.
 
-Compare the new arrangement with the competent baseline. Credit cancellation of earlier meetings, reports or duplicated work only when those activities actually cease and their needed functions remain supplied. Include the transition and continuing work added. Cheap automated analysis can reduce manual effort while retaining checking or increasing interruptions; calculate the actual changed allocation.
+Compare the new arrangement with the competent baseline. For a forecast, include the work expected to cease, its replacement where its functions are still needed, and the grounds for those assumptions. To report savings already realized, establish what actually ceased and what effort the replacement, transition and continuing support required. Cheap automated analysis can reduce manual effort while retaining checking or increasing interruptions.
 
 Retain, simplify, extend, replace or end the practice according to its useful contribution. If leaving OKR, preserve current commitments, adequate observations, needed coordination and help in the replacement arrangement. A name can disappear while its useful functions continue. Return the supported scope, retained help, limits and conditions for reconsideration. Recognition detects a missing practical contribution; assurance requires evidence for the particular human or organizational capability claimed.
 
@@ -57,7 +57,7 @@ Retain, simplify, extend, replace or end the practice according to its useful co
 
 A group introduces OKRs through a presentation and a tool. Participants can fill the fields but repeatedly count initiatives as achievement and miss a shared dependency. The difficulty is not lack of field access. A capable provider works with one real objective, shows the false-success test, observes the team's repair and introduces a changed capacity condition. The team must reconstruct the goal set and obtain the affected agreement. Existing service is covered while the participants practise.
 
-The first repaired cycle is useful with the provider's assistance. If routine supported use is the intended arrangement, that can be an adequate result under its conditions. If the organization needs another team to continue after the provider leaves, the additional capability remains to be established in that receiving work.
+The first repaired cycle meets its terms with the provider's assistance. That evidence can close a commission for this cycle. For a promise of continuing supported use, establish that participants and the provider can cover the coming work, including timely help with exceptions. If another team is to continue after the provider leaves, establish how its members and any available support can supply the required work together. Use comparable earlier performance where it establishes that conclusion. To establish that it did continue, use evidence from its work after the departure.
 
 For a constructed cost comparison, 20 participants spend 30 minutes every two weeks on a review: 10 participant-hours per event. Adding 15 minutes adds 5 participant-hours each time. If an existing event actually supplies the same decisions, combine or replace it rather than count both. If the extra time settles an otherwise costly dependency, its burden may be justified. The arithmetic alone says nothing about the decision's value.
 
@@ -67,11 +67,11 @@ A successful enthusiastic team can conceal requirements absent elsewhere. State 
 
 ### GOALS.9:7 - Conformance Checklist
 
-- Is the target a useful performance with defined conditions and a meaningful variation?
+- What use, scope and assistance define the target performance? If the claim extends to different work, what grounds the transfer?
 - Were adequate existing capability and alternative provision considered?
 - Does the selected development include needed practice, feedback, correction and real receiving work?
-- Can the organizational contribution and its exception path function with the stated support?
-- Does the burden comparison include transition, retained support and work actually displaced?
+- For a forthcoming assignment, are routine and exception contributions available under the permitted workload and support? For a report of continuing use, what establishes the required work in the period claimed?
+- Does the comparison include transition, retained support and the work the change could displace? For a claim about realized savings, what work or spending actually ceased, and what replaced it?
 - Does replacing the practice preserve the functions and commitments still needed?
 
 ### GOALS.9:8 - Common Anti-Patterns and How to Avoid Them

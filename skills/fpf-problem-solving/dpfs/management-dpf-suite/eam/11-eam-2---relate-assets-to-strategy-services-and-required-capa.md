@@ -27,7 +27,7 @@ Relate the contribution to possible assets or arrangements. One contribution can
 
 Compare the needed capability with an applicable account of the present arrangement. Identify the consequential gap and its evidence. A supplied qualified result can be used directly; otherwise obtain the specific service or engineering result required. Separate a known shortfall from an uncertain forecast.
 
-Challenge the necessity of the first asset proposal. Consider a different bearer, shared service, operating change or demand change when it could satisfy the same need. Keep a materially different alternative only with the conditions that would make its contribution real.
+If the choice of means is open, test whether the proposed asset is needed. A different provider, a shared service, an operating change or a permitted change in demand may supply the contribution. If the commission asks whether a specified arrangement can work, evaluate it on its own terms. A decision to change those terms belongs to the party with that authority.
 
 Return the supported relations and the next asset question. Stop when they are sufficient to generate or compare options. Reopen when the service, outcome priority or a relied-on capability changes.
 
@@ -45,7 +45,7 @@ Internal objectives can omit losses experienced by customers or another service 
 
 ### EAM.2:7 - Conformance Checklist
 
-Is the service requirement recoverable from its source? Does each relied-on asset contribution have the right quantity and conditions? Can the reader distinguish a demonstrated gap, a forecast and an alternative proposal?
+Is the service requirement recoverable from its source? What establishes the promised service, including the contributions required together? Identify individual contributions where the decision depends on them. A verified joint service test can suffice for an order about the service as a whole. Can the reader distinguish a demonstrated gap, a forecast and a proposed change?
 
 ### EAM.2:8 - Common Anti-Patterns and How to Avoid Them
 

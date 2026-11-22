@@ -10,7 +10,7 @@
 
 Use an adequate existing arrangement and its model, or construct the missing arrangement or description. Connect the local and wider accounts needed for the question. Here a model is a description used to obtain an answer about the operation. A drawing, a set of conditions, a calculation or a simulation can serve that use. Keep the description distinct from the actual work and its arrangement.
 
-**First useful move.** Choose one recipient's result and the current difficulty in obtaining it. Recover an available way of doing the necessary work, or identify the missing professional contribution. Follow a present or proposed case through its resources and completion conditions, or recover what maintains the required service over its interval. Where two descriptions refer to the same worker, order or event, bring those references together before calculating.
+**First useful move.** Identify the result the recipient or recipients require and the present difficulty in providing it. When several results are due together, follow one through the work while retaining the agreements and shared conditions that can affect the others. Recover an available way of doing the necessary work, or identify the missing professional contribution. Follow a present or proposed case through its resources and completion conditions, or recover what maintains the required service over its interval. Where two descriptions refer to the same worker, order or event, bring those references together before calculating.
 
 **Practical gain.** The practitioner can compare feasible arrangements without mistaking local capacity for available shared capacity or local completion for delivery. The result may also identify the particular coupling that makes a proposed change fail.
 
@@ -47,7 +47,7 @@ State what the recipient must obtain and which event or continuing condition mak
 
 When comparing a change, name the alternative under consideration: another release time, a different allocation, a larger transfer batch, changed routing or another operating method. Identify the quantities that would make the alternative preferable and any conditions it must preserve. When no adequate arrangement has yet been proposed, construct alternatives through :4.2a from the result, available methods and missing contributions. OPS.1 supplies the operating focus and OPS.19 the wider reconciliation when several results govern the choice.
 
-Retain the difference between a fixed input and a decision variable. If a contractor's two-day turnaround is a commitment that cannot change, the present model can use it as an input. If the proposal changes how that contractor is used, recover the response to that change rather than assuming the same turnaround.
+Retain the difference between a fixed input and a decision variable. An applicable two-day supplier commitment settles the answer about the contractual deadline. Use fulfilment as an explicit assumption for a conditional schedule. A promise of timely operation also needs grounds that the supply can be made under the conditions the decision covers. If the proposal changes how that contractor is used, recover the response to that change rather than assuming the same turnaround.
 
 #### OPS.11.1:4.2 - Recover what obtains the result
 
@@ -69,7 +69,7 @@ A.22.CGUS helps express available continuations and their conditions before fixi
 
 Work back from the recipient's required result to the contributions it needs. For each contribution, recover a qualified way of obtaining it, the input it requires, the result it supplies and the conditions under which the receiver can use it. Use the actual professional explanation or a competent provider's result. Where no adequate way is available, return that method or research question through FPF C.39 and the relevant discipline. A box labeled with the desired outcome cannot yet support a resource estimate or a promise.
 
-Start from the required contribution. If no suitable route exists, construct one from available professional methods, resources and receiving conditions. If a route exists, keep it as an alternative. Establish why a change is worth comparing: it may miss a requirement or meet it at a cost another arrangement could reduce. The following questions suggest ways to develop the comparison.
+If the recipient can use the result already held, apply it to the order. If the established operating route can supply it as ordered and no redesign is due, use that route. If the route misses a service commitment or its cost or capacity is in question, record what continuing it would deliver and compare feasible changes against it. If no suitable route exists, construct one from available professional methods, resources and receiving conditions. Use the questions below for the comparison that remains.
 
 - **What can be prepared before a particular request is known?** Separate reusable preparation from work that depends on that request. Identify how long the prepared result remains usable, which later work consumes it and what can make it obsolete. Compare stock and preparation burden with the delay avoided after arrival.
 - **Where can a smaller contribution become useful?** Choose work and transfer boundaries from readiness and receiving conditions. Compare smaller transfers with the setup, checking and coordination they add. Keep a required join even when its constituents travel separately.
@@ -109,7 +109,7 @@ Start from the smallest available account that addresses the question. Open a lo
 
 A service block described by a fixed delay can be adequate for a question that leaves its load and resources unchanged. If the proposed release creates congestion inside that block, replace the fixed delay with the load-sensitive account needed for the comparison. Keep unaffected neighboring blocks at their sufficient level of detail.
 
-Changing scope and changing detail are different moves. Adding a subcontractor widens the modeled operation. Showing the subcontractor's internal batching adds detail. The first can be necessary while the second is irrelevant because the contract already supplies the required response.
+Changing scope and changing detail are different moves. Adding a subcontractor widens the modeled operation. Showing the subcontractor's internal batching adds detail. The first can be necessary while the second is irrelevant if its contractual response is the subject of the inquiry, or adequate evidence about its delivery already supplies the timing needed for the operating decision.
 
 Identify uncertainty separately from a deliberate simplification. “The loading time is unknown” calls for an estimate, range or observation if the answer depends on it. “We combine identical loading steps” is a modeling choice whose effect can be compared. C.11.DUA governs whether resolving an uncertainty is worth more than a restricted answer or a different action.
 

@@ -104,13 +104,14 @@ For comparison, assume one adverse scenario: one of the planned packages needs a
 
 | Option | Usable rig-hours | Planned packages | Explicit reserve | Accepted test packages without repeat | Accepted packages in the one-repeat scenario |
 | --- | ---: | ---: | ---: | ---: | ---: |
+| current access, plan two | 6 | 2 | 2 | 2 | 2 |
 | current access, plan three | 6 | 3 | 0 | 3 | 2, with unfinished load returned |
 | extra access, plan three | 8 | 3 | 2 | 3 | 3 |
 | extra access, plan four | 8 | 4 | 0 | 4 | 3, with unfinished load returned |
 
-Both eight-hour options deliver at least three accepted packages in either stated scenario. Planning three and reserving two hours completes every admitted package in both. Planning four can deliver four without a repeat and leaves one unfinished if a repeat is needed. The six-hour option can fall to two. Compare the cost of extra access, the displaced commitment and the consequences of admitting work that may return unfinished.
+Both eight-hour options deliver at least three accepted packages in either stated scenario. Planning three and reserving two hours completes every admitted package in both. Planning four can deliver four without a repeat and leaves one unfinished if a repeat is needed. With six hours, planning two leaves the two-hour repeat available even for the last package. Planning three uses all six hours before any repeat and can leave one of those three unfinished. Compare the cost of extra access, the displaced commitment and the consequences of admitting work that may return unfinished.
 
-If the decision requires every admitted package to finish in either scenario and the resource owner grants the extra access, admit three, reserve two hours for the repeat and return the fourth package to OPS.5. Send any affected existing commitment to OPS.7. If extra access is unavailable, use the six-hour result.
+If the decision requires every admitted package to finish in either scenario and the resource owner grants the extra access, admit three, reserve two hours for the repeat and return the fourth package to OPS.5. Send any affected existing commitment to OPS.7. With only the original six hours, admit two and reserve two hours. Any three admitted packages could need eight hours under the stated repeat condition. Return the remaining demand and any existing commitments for authorized disposition.
 
 More than one repeat, a longer repeat, changed configuration or another loss reopens the comparison. A passed test package still does not settle the release decision for R42.
 

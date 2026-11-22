@@ -116,7 +116,7 @@ At 09:50 the field contact becomes unavailable. The next live I73 verification i
 
 An emergency-care operating function decides whether work on a patient’s case may start. It considers current observations, bed availability, service horizons, clinical and operating evidence, and the permissions the work requires. The qualified clinical service determines clinical priority and may use the patient’s waiting time as evidence.
 
-If a required condition is missing, such as consent, clinical evidence, competence, a medical safety judgement, privacy protection or statutory permission, the result names that blocker and its owner. Operations neither supplies treatment authority nor overrides clinical judgement. The first useful result is an authorized operating admission or an exact returned condition, not a dashboard state or automatic triage result.
+If a required condition is missing, such as consent, clinical evidence, competence, a medical safety judgement, privacy protection or statutory permission, the result names that blocker and its owner. Operations neither supplies treatment authority nor overrides clinical judgement. Return the disposition the case warrants under the rule. An authorized admission, a deferral for lack of an available slot or a justified refusal can each settle the admission question. Request a missing specialist result when that result could change the disposition or is separately required.
 
 #### OPS.5:5.3 - AI-assisted software operation
 

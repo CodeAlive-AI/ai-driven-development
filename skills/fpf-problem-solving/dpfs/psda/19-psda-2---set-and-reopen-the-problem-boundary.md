@@ -49,7 +49,7 @@ Once models and data collection begin, their available variables make the bounda
 
 ### PSDA.2:4 - Solution
 
-Set the problem boundary relative to one receiving use and one or more current formulations. Name what is included, material exclusions or unknowns, and the observable changes that can reopen the cut. Keep the reason for its adequacy where the recipient needs it to judge or use the scope. Use `A.2.6` only when a receiving claim depends on exact `U.ContextSlice` membership in a declared `U.Scope`.
+Set the problem boundary from the work the recipient has commissioned and the formulations relevant to it. Where several uses or subjects belong in that work, establish which decisions depend on each and where they connect. Identify material inclusions, exclusions and unknowns, and any change that could affect continuing reliance on the boundary. Keep the reason for its adequacy where the recipient needs it to judge or use the scope. Use `A.2.6` only when a receiving claim depends on exact `U.ContextSlice` membership in a declared `U.Scope`.
 
 #### PSDA.2:4.1 - Fix the receiving use and current formulations
 
@@ -59,7 +59,7 @@ Use a qualified `PSDA.12` account or other suitable evidence where affected part
 
 #### PSDA.2:4.2 - State the boundary through decision-bearing dimensions
 
-Identify the dimensions that can affect the answer or its grounds.
+Begin with the work the recipient must do. Follow the decision outwards when a part belongs to a larger service whose arrangements could change the answer. Follow it inwards when the same result for the whole could hide a difference between parts that the recipient must act on or explain. For a promise about several uses, establish whether it concerns each separately, concurrent use, or a sequence that draws on the same resource. Keep differences of subject, place or period only as far as the question or the agreed deliverable requires.
 
 - subject, configuration, place, population, and operating condition;
 - included formulations and affected bearers;
@@ -113,7 +113,7 @@ Return the scope in the smallest form that answers the current question. Use the
 | formulation basis | Current formulations and the material differences the boundary preserves. |
 | included scope | Bearers, concerns, relations, conditions, horizons, evidence, and intervention families included now. |
 | exclusions and unknowns | Material omissions or uncertainties, reasons, consequences of error, and direct assurance still needed. |
-| adequacy reason, where needed | Why this is the smallest usable scope, when the recipient needs that basis to judge the cut or avoid mistaking an exclusion for a settled fact. |
+| adequacy reason, where needed | Why the selected scope covers the question, including any condition under which an exclusion could change the answer or its grounds. |
 | dependent uses | Models, facilitation, alternatives, value treatment, comparison, recommendation, or inquiry results that consume the scope. |
 | reopen basis | Conditions that would justify widening, narrowing, replacing or reformulating a dimension, and any observation that could establish them. |
 
@@ -139,9 +139,9 @@ Long-term watershed redesign and permanent residential relocation are outside th
 
 The result supports model and alternative work for the stated investment question. Claims that the consequences occur need evidence from the relevant setting. Funding, legal, ecological and safety determinations need the corresponding authority or specialist grounds.
 
-#### PSDA.2:5.2 - Narrowing after a failed generalization
+#### PSDA.2:5.2 - What one product line establishes for an inquiry across lines
 
-An incident-response inquiry initially covers all product lines. The available evidence supports the proposed escalation pattern for one regulated line and one staffing configuration. The practitioner narrows the problem boundary and dependent recommendation instead of claiming organization-wide use. Other lines remain explicit unknowns with their own reopen conditions.
+An incident-response inquiry initially covers all product lines. The available evidence supports the proposed escalation pattern for one regulated line and one staffing configuration. Give the recommendation for that line and staffing configuration. For a question about all lines, identify which features of the escalation rule must also hold elsewhere and whether any evidence covers them there. If all the inquiry needs is one suitable line, this result may finish it. If the organization asked for coverage across lines, retain that question and the unexamined configurations. Use §4.7 when the decision holder wants to change the commission.
 
 #### PSDA.2:5.3 - Cheap non-use
 
@@ -168,10 +168,10 @@ A later board asks whether the same result establishes readiness for the flood s
 
 ### PSDA.2:7 - Conformance Checklist
 
-- [ ] The boundary is tied to one receiving use, subject and horizon, with the authority boundary stated where that use has one.
+- [ ] The boundary covers the subjects, uses and horizons the question requires. Where a decision depends on several of them, their relevant connection is clear. Identify the authority that matters for the requested choice.
 - [ ] Current formulations and material participation or affected-System inputs are recoverable.
 - [ ] Included bearers, concerns, relations, conditions, evidence, horizons, and intervention families are stated only at the needed grain.
-- [ ] Material exclusions and unknowns retain reasons, consequences of error, and reopen observations.
+- [ ] The grounds for material exclusions and the effects of outstanding uncertainty are clear. Where later reliance matters, identify what could warrant revising the boundary.
 - [ ] The relevant challenges to bearers, formulations, actions, evidence, authority or reversal were applied in proportion to their consequences.
 - [ ] The result carries the reason for the cut where the receiving use needs it, including any materially contested exclusion.
 - [ ] A claim about exact `U.ContextSlice` membership in `U.Scope` uses its own evaluation when that claim is required.

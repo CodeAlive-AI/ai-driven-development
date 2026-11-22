@@ -181,7 +181,7 @@ If a current sufficient middle-row decision arrives before the extra session sta
 
 A standards association has evidence that an editorial-return assignment delays member review. The proposed reassignment is reasonable, volunteers are willing and the repository can support it. The current chair's term has nevertheless ended, and the bylaws do not give that former holder the required decision authority.
 
-OCE.14 returns a bounded proposal and the exact current authorization question to the association's governance owner. It can preserve ordinary interim work only to the extent already permitted by the applicable rules. The association needs a chair who holds a current mandate, whether by renewal or by a new appointment. Any required employer commitments come from the employers empowered to give them.
+OCE.14 returns a bounded proposal and the exact current authorization question to the association's governance owner. It can preserve ordinary interim work only to the extent already permitted by the applicable rules. Determine who may authorize the reassignment during the vacancy. An already empowered deputy or governing body may decide. If the bylaws reserve that act to a serving chair, it requires a renewed mandate or an authorized new appointment. Any required employer commitments come from the employers empowered to give them.
 
 After an authorized decision-maker supplies a current decision, use OCE.6 to establish the specific assignment and access relations where needed. Carry out the later editorial work under those effective conditions. Adopting the standard still requires its own decision.
 

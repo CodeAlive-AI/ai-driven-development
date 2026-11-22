@@ -1,6 +1,6 @@
 ## EAM.Reference:2 - Forces and working distinctions
 
-A decision needs enough scope to include an answer-changing dependency and enough restraint to remain usable. A longer horizon can expose renewal and residual value while increasing uncertainty. Equal financial units help comparison but cannot turn a service obligation or unsupported engineering claim into an acceptable option. Local efficiency can move cost, work or loss of service to someone else.
+Decide which assets, people and periods need to be considered from the service or choice at issue. A portfolio can contain technically independent assets whose interventions compete for one crew. A service can depend on assets outside the owner's portfolio. For each relevant whole, establish what its parts supply separately, where they depend on one another and which result they must obtain together. At the same asset boundary, a bound on available service can settle eligibility while a choice of interventions may need to preserve the timing or location lost in that bound. Carry the differences that can change the required decision or its grounds into the comparison.
 
 Required service differs from observed demand and usable capacity. An installed unit differs from its description. A condition observation differs from diagnosis and a qualified forecast. An option differs from a selected programme; a forecast benefit differs from an obtained outcome.
 

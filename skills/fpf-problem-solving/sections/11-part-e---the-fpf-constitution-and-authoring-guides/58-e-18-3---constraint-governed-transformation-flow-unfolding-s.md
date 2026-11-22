@@ -232,7 +232,7 @@ The provisional episteme’s ClaimContent may name the visible candidate places,
 
 After qualification, a separate ordinary C.2.1 demonstrative-slice episteme may teach one enabled traversal. Its EntityOfConcern is the same selected CGUS recognized by E.18.3. Its ClaimContent cites established `CGUSLocusBinding` values, the relevant current continuation judgements, relation-reference epistemes or obtaining occurrence refs, any omissions that matter to this carrier (under C.33 for a declared architecture use), alternatives, presentation claims, admissible and forbidden uses, and the return condition. The slice creates none of those values.
 
-Do not infer that demonstrated order is project-work order. If ordered Work is current, use A.15.2 for the plan test and A.3.1/A.3.2 for independently identified Method and MethodDescription claims; the demonstration’s imperative or repeated wording admits none.
+For two actual Work occurrences identified under A.15.1, establish the order of the events in question (B.1.4, C.27.TA). On a reliable common clock, completion of A at 09:10 and start of B at 09:15 establish that A finished before B began. Relative order can also follow from an enforced start condition. If this B actually started through an interlock that could release it only after this A completed, the dependency establishes their order even without timestamps. The elapsed time remains open. A planned interlock, an unused permission or the arrival order of reports alone leaves that finish-to-start claim open. A.15.2 supplies the test for planned order. Use A.3.1 and A.3.2 when the claim concerns the reusable Method or its description. A demonstrated sequence can finish its explanatory use at the enabled path.
 
 Do not infer that a demonstrated path is the whole topology. When the selected structure branches, joins, cycles, keeps alternatives live or is partially ordered, record what the slice omits or compresses before relying on it for comparison, architecture, evidence or planning.
 
@@ -268,7 +268,7 @@ The selected structure is not a workflow, Method, MethodDescription, WorkPlan, p
 
 A graph, record, table, or demonstration may carry claims relevant to A.22 identity or E.18.3 qualification. Its form alone supplies neither those grounds nor MethodDescription or Work admission. A.3.2, A.15.1, A.3.4 and A.15.PROD supply the applicable membership or occurrence tests; every relation claim still needs its predicate definition, applicability conditions and current facts.
 
-When a continuation is intended to perform work, apply A.22.CGUS:4.1.1 to its relevant constituent and encompassing conditions. The arrangement may need capabilities and shared resources that no single flow position reveals. Recover Method and Work parthood independently through B.1.5.EW; nested transformation-flow positions and temporal arcs retain their own meanings.
+When a continuation is intended to perform work, apply A.22.CGUS:4.1.1 to its constituent and encompassing conditions, including shared capability and capacity in the required window. B.1.5 and B.1.5.CM identify which Methods the whole construction requires or admits as alternatives. B.1.5.EW asks which actual constituent actions enact the encompassing Work. Nested flow positions and temporal arcs can describe either case once its subject relations are established.
 
 Local completion supports the whole result only under the required coordination and result-use conditions. A description that omits those conditions answers a narrower question than whether the whole can be performed.
 

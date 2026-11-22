@@ -36,7 +36,7 @@ How can the organiser provide the useful work, agree who bears its burdens and b
 
 ### CB.9:4 - Solution
 
-Build the arrangement from the promised activity and its resource needs. Compare feasible support and terms with those affected, obtain the commitments and try an ordinary delivery. Check whether the existing provision can cover a plausible shortfall. If it cannot, revise the promise or obtain the missing support before contributors face a burden they never accepted.
+Build the arrangement from what each receiver is entitled to obtain and what the participants have to do together to supply it. Compare support and terms with those affected. For a proposed promise, establish whether the allocations and decision rights suffice for the agreed range of use. For a report on delivery, trace what happened in the work. A trial can settle a remaining question about either decision.
 
 
 
@@ -90,9 +90,9 @@ Make sponsor influence legible. Agree who selects activities, who controls contr
 
 Obtain the allocations, access and practical support needed for the next activity. OCE.6 helps establish assignments and enabling relations; the receiving provider must accept work that depends on its resources. Check that each contributor can perform the part they have accepted.
 
-Run one ordinary occurrence through the arrangement. Can the host enter the venue, can the facilitator prepare, and can the promised result reach its user? Inspect the first use and obtain contributors' accounts of work that the plan omitted. Correct the promise or the provision where they differ.
+For a question about actual delivery, follow the relevant occurrence from preparation through the result the user receives. For a prospective service, trace who can claim each contribution, what can coincide or consume the same resources over time, and who can adjust the work. Establish that the allocation works with the information its decision-makers will have. Inspect an ordinary delivery when its performance can resolve an uncertainty.
 
-Also examine the shortfall most likely to defeat continuation: a key person's absence, a delayed payment, a loss of access or demand above the agreed limit. Decide who will reduce, postpone or cancel the affected promise and how participants will learn that decision. A simple backup may be enough. If no backup is feasible, make the limit part of the offer.
+For a risk decision, examine the probable shortfall and its consequence. For a guarantee, include any permitted demand or loss of provision that could defeat the agreed response. Typical changes include a key person's absence, a delayed payment, a loss of access or demand above the agreed limit. Decide who will reduce, postpone or cancel the affected promise and how participants will learn that decision. A simple backup may be enough. If no backup is feasible, make the limit part of the offer.
 
 Keep the response proportionate to the reliance. A casual discussion can be postponed; a promised professional service may need a qualified replacement and explicit settlement with its users. Ask the relevant owner for the needed arrangement before accepting that reliance.
 
@@ -146,7 +146,7 @@ For an arrangement on which others will rely, establish the following at the det
 
 - The promised result and support period are understandable to the receiving parties.
 - Material labour, capability, access and payment requirements have willing, authorised provision.
-- Other commitments and the timing of payments have been considered where they affect feasibility.
+- The allocation covers the permitted claims on shared people, time and funds, including other commitments and the timing of payments where they affect delivery.
 - Contribution terms, benefits and sponsor influence are understandable to the affected people.
 - Volunteers can decline or revise their contribution, and any dependable service has appropriate provision.
 - An ordinary use and a consequential shortfall have a workable response.

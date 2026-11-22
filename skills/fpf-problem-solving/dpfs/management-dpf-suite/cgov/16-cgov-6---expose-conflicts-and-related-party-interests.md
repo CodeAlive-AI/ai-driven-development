@@ -25,7 +25,7 @@ Recover the conflict as a relation in a particular matter. Identify its conseque
 
 #### CGOV.6:4.1 - Connect the matter, participant, duty and interest
 
-Name the proposed act or decision and the participant's actual contribution: preparing information, negotiating, advising, deliberating, voting or implementing. Recover the duty or participation condition relevant to that contribution. A shareholder, a director and an external adviser need not have the same duties even when they support the same outcome.
+Name the proposed act or decision and the contribution the participant would make or already made: preparing information, negotiating, advising, deliberating, voting or implementing. Recover the duty or participation condition relevant to that contribution. A shareholder, a director and an external adviser need not have the same duties even when they support the same outcome.
 
 Identify the interest or other duty involved. It may involve an economic benefit, a family or business relationship, another appointment, dependence on a participant, or an incentive tied to the outcome. Explain how the interest or other duty could influence this contribution.
 
@@ -51,7 +51,7 @@ Where a legal rule itself is uncertain, obtain the relevant qualified interpreta
 
 Give the practitioner handling the matter the relevant duty, interest, affected contribution, applicable rule and resulting conditions. Identify any required declaration and its recipient, exclusions or other safeguards, while distinguishing a required action from one already performed.
 
-A sufficient answer may be short: the disclosed connection triggers a particular participation restriction; the stated exception applies; no relevant conflict is supported on the present basis; or one named fact prevents deciding. Retain enough reasoning for the receiving use.
+State which participation condition is met and on what grounds. A disclosed connection can trigger a restriction before the participant acts. An applicable exception or a complete declaration acceptable under the rule may settle eligibility. If voting requires a filed declaration and it was not filed by the vote, the person cannot vote under that rule. If filing is unknown, establish whether the available evidence suffices for admission and say what can still be decided. An incomplete search may still reveal a connection sufficient to apply a restriction.
 
 Use CGOV.7 when the matter needs an independent review or an arrangement for eligible participants to decide. Reopen only the affected conclusion if the interests, terms, participants or applicable rule change.
 
@@ -61,7 +61,7 @@ Use CGOV.7 when the matter needs an independent review or an arrangement for eli
 
 In a constructed company, director Arun owns the business offering a warehouse to the company. The supplied corporate rule requires disclosure of that interest and excludes an interested director from deliberation and voting on the purchase, apart from answering factual questions at the eligible directors' request. The rule's other applicable conditions are known.
 
-The matter is the company's purchase; Arun's contribution includes influencing and voting on it; the ownership interest concerns the seller's proceeds. That relation triggers the stated handling conditions. There is no need to prove that Arun lied or that the price is unfair before applying them.
+Arun’s interest in the seller’s proceeds matters because his role would otherwise allow him to influence and vote on the proposed purchase. The supplied participation rule applies before he casts a vote. Its application requires neither a finding that he influenced the board nor proof of an unfair price.
 
 The result identifies Arun’s interest, the required disclosure and his participation limits. Assessing the price and deciding whether the purchase can go ahead remain for the relevant specialists and eligible decision makers.
 
@@ -88,7 +88,7 @@ Can the receiver identify the matter, participant, contribution, duty and releva
 
 ### CGOV.6:9 - Consequences
 
-The corporation can handle a concern before it becomes concealed influence or an unsupported accusation. Valuable knowledge can remain available under appropriate participation conditions. A bounded no-conflict answer also allows work to proceed. Some cases retain unresolved facts or legal interpretations that limit only the conclusions depending on them.
+The corporation can handle a concern before it becomes concealed influence or an unsupported accusation. Valuable knowledge can remain available under appropriate participation conditions. A supported finding on conflict settles that condition for the named role. The other conditions for participation and the act still apply. Some cases retain unresolved facts or legal interpretations that limit only the conclusions depending on them.
 
 ### CGOV.6:10 - Architectural Rationale
 

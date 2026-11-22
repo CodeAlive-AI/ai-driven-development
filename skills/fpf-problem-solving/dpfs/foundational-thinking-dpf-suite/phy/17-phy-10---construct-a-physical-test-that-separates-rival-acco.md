@@ -80,7 +80,7 @@ Use a reference or control for a named alternative explanation. A no-drive compa
 
 For each candidate design, obtain the readouts allowed by each physical account, including consequential parameter freedom and uncertainty in preparation, conversion and recording. MMP.7 supplies a probability law when records are random; C.16.IR helps determine what an indication can resolve.
 
-Disjoint bounded response ranges give a particularly simple separation under their premises. If the ranges overlap, some outcomes can still discriminate the accounts while others remain compatible with both. Equal expected values likewise need not mean equal distributions or equal time dependence.
+Separate two accounts if their sets of possible records are disjoint. Disjoint outer bounds suffice. Overlapping bounds can still enclose disjoint sets of attainable records. For several readings, retain the relations that a single preparation and the same physical parameters impose across the readings. Two accounts can allow the same range at each instant but predict different changes between instants. Check which complete records can actually arise under each account. A record possible under only one distinguishes them. A record possible under both leaves them compatible. Equal expected values need not mean equal distributions or equal time dependence.
 
 When discrimination depends on statistical evidence, use the appropriate model-comparison method with its dependence, sampling and error assumptions. Repeated readings do not automatically supply independent trials. A mathematical design criterion is useful only after the physical design and the interpretation of its records are supplied.
 

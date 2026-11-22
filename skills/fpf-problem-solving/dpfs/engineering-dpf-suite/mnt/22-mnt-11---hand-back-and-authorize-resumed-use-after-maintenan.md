@@ -5,9 +5,9 @@
 
 ### MNT.11:1 - Problem frame
 
-Use this pattern when maintenance control is being returned to operation and the party taking control needs a supported basis to resume use. The work is complete and functioning has been checked, but restrictions, configuration changes or required release authority are still unresolved.
+Use this method to plan the return to operation, establish whether control has passed, or conduct the hand-back. At the end of maintenance, restrictions, a changed configuration or the release authority can affect which use is permitted.
 
-Reconcile the evidence and actual state, obtain certification where the concrete use requires it, transfer control and establish the operative permission for resumed use. The result can be unrestricted use, supported restricted use or the missing condition preventing that use. An adequate maintenance recommendation can be issued before hand-back.
+For a proposed return, determine which configuration, evidence, authority and event would permit the intended use. To conduct the hand-back, reconcile the evidence with the actual state, obtain any required certification and carry out the transfer. To report a past hand-back, establish which transfer and permission took effect. The result can be unrestricted use, supported restricted use or the missing condition preventing that use. An adequate maintenance recommendation can be issued before hand-back.
 
 ### MNT.11:2 - Problem
 
@@ -25,11 +25,13 @@ Identify the receiving use and its decision holder. Recover what that holder nee
 
 Reconcile the intervention and verification accounts with the actual returned state. Confirm the relevant temporary arrangements have the disposition required by the applicable procedure. A temporary test configuration is not assumed to be the final operating configuration. Where actual state remains unknown, identify the observation or competent return that can resolve it.
 
-Obtain certification or independent returns when the equipment, contract, rule or consequence requires them. Identify the claim each return supports and the authority of its issuer for that scope. A certificate about a component or specified task does not automatically establish the whole System's readiness for every use.
+Obtain certification or independent returns when the equipment, contract, rule or consequence requires them. Identify the claim each return supports and the authority of its issuer for that scope. If the governing agreement requires the certificate by a stated deadline, confirmed non-delivery can settle the decision to withhold release. Report separately what is known about functioning. For any restricted release, establish the permitted duty, the technical grounds for it and the operator's ability and authority to maintain it. A certificate about a component or specified task does not automatically establish the whole System's readiness for every use.
 
 Resolve remaining limitations through the applicable decision. Some defects or unfinished work permit a defined restricted use; others prevent the intended operation. The restriction must be technically supported, permitted and practically maintainable by the receiving operation. If no such basis exists, return the unmet condition rather than relabelling the state as temporary permission.
 
 Transfer control so that maintenance and operation know who controls the next state change. Communicate the configuration and conditions that change the receiver's action, using the existing hand-back arrangement. One person may hold both responsibilities, but the evidence and decisions remain distinguishable.
+
+Determine which event makes each release effective under the governing terms. An authorized standing decision may permit a specified duty once its recorded conditions hold. Another handover may require receipt of a certificate or a fresh decision by a named authority. For a service shared by several receivers, determine whether a single authorized representative can act for all or whether distinct decisions are required. Establish each event needed for the claim by the relevant deadline. To report that service actually resumed, obtain evidence of operation in the released state.
 
 Record or communicate the resulting permission in the form and level of detail the intended use and applicable requirements call for.
 
@@ -51,7 +53,7 @@ Aviation illustrates why the distinction matters. EASA's September 2025 Part-145
 
 ### MNT.11:7 - Conformance Checklist
 
-Can the party taking control identify the actual returned configuration and supported functioning? Are material unfinished work and restrictions resolved for the intended use? Are required certificates or independent returns applicable and issued within their authority? Has control been transferred, and is the resumed-use permission supported?
+Can the party taking control identify the actual returned configuration and supported functioning? Are material unfinished work and restrictions resolved for the intended use? Are required certificates or independent returns applicable and issued within their authority? For a claim that hand-back occurred, what established the transfer and the effective permission under the governing terms? For an assessment of a proposed return, what is already supported and which events would still have to occur? A release for one use can settle that use while a separately promised service remains due.
 
 A qualified restricted-use or missing-condition answer can close the hand-back question. It does not automatically complete the intended unrestricted operation.
 

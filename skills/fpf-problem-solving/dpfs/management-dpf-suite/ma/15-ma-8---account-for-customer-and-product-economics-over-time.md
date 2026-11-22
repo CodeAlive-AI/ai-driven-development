@@ -36,7 +36,7 @@ A detailed lifetime model can look more authoritative than a modest period accou
 
 State whether the account concerns a customer, subscription, household, product, cohort or another justified unit. Define membership, the observation date and the horizon. Preserve differences in acquisition channel, tenure or use when they can change the answer.
 
-Distinguish a prospective new customer from an existing one. Recover historical acquisition spending for the account, and identify which future acquisition or service payments the current decision can change.
+Distinguish a prospective new customer from an existing one. Recover historical acquisition spending when explaining lifetime returns or a remaining obligation. For a continuation choice, identify the future receipts, payments or opportunities that choice can still change.
 
 #### MA.8:4.2 - Construct the dated product or service account
 
@@ -52,11 +52,11 @@ State whether a reported margin includes allocated costs, resource consumption v
 
 #### MA.8:4.3 - Put cohort activity on calendar time
 
-For an observable subscription renewal, count the customers eligible for that renewal and those who renew. Divide renewals by that eligible population, using a completed observation window; customers not yet due to renew cannot establish that period's renewal outcome. Preserve age, channel or other group distinctions where pooling would change the result.
+For an observable subscription renewal, count the customers eligible for that renewal and those who renew. For the final observed rate, establish the eligible population and its outcomes over the agreed window. A threshold may be decided earlier. If 80 distinct members of a fixed cohort of 100 have irrevocably renewed, at least 75% have renewed even while the other twenty decisions are open. Preserve age, channel or other group distinctions where pooling would change the result.
 
-To project a cohort under supplied or supported successive renewal rates, multiply each period's remaining population by the rate for its next renewal. For example, a 100-customer cohort at 80% and then 70% gives 80 and then 56, not two separate reductions from the original hundred. An existing cohort begins with its current active population and tenure. Applying a new-customer lifetime formula to it would repeat time that has already passed.
+To project a cohort under supplied or supported successive renewal rates, multiply each period's remaining population by the rate for its next renewal. For example, a 100-customer cohort at 80% and then 70% gives 80 and then 56 under the stated rates. When the rates are estimated renewal probabilities for the corresponding survivors, these are expected counts. When they specify realized fractions in one scenario, the resulting counts hold in that scenario. An existing cohort begins with its current active population and tenure. Applying a new-customer lifetime formula to it would repeat time that has already passed.
 
-Map each cohort's age to calendar dates before combining accounts. A cohort's month 1 may be another cohort's month 4. Put their service demand into the same calendar window, add the demands for each shared resource and only then apply that resource's supply threshold through MA.1–MA.2. Place acquisition, service payments and receipts at their actual dates, which need not coincide. This obtains a shared resource and cash account without charging the same supply payment once per cohort.
+Map each cohort's age to calendar dates before combining accounts. A cohort's month 1 may be another cohort's month 4. Put their service demand into the same calendar window, add the demands for each shared resource and only then apply that resource's supply threshold through MA.1–MA.2. For a guarantee or the expected cost of an indivisible capacity block, account for the possible joint demands. The same mean of one renewal among two customers can mean exactly one renews, or both renew together in half the periods and neither in the others. Only the latter can require a second place. Place acquisition, service payments and receipts at their actual dates, which need not coincide. This obtains a shared resource and cash account without charging the same supply payment once per cohort.
 
 Use an appropriate supplied forecast through MA.5 when behavior needs estimation beyond this account construction. The operation above translates qualified rates into quantities; it does not establish those rates or turn non-purchase into an observed termination.
 
@@ -76,7 +76,7 @@ Test the plausible changes that could alter the decision: retention, service int
 
 For a continuation or expansion choice, establish the future baseline without the proposed action, including obligations already created. Construct the alternative with its changed quantities, supply and obligations at the same dates. Subtract the baseline from the alternative to obtain the future difference. Historical development, acquisition or production can explain cumulative recovery without becoming an avoidable payment. An obligation common to both futures cancels from their difference but remains in each whole cash account.
 
-Supply the qualified future differences to OPS.14 or the responsible financial practice. Use the whole dated cash account for liquidity, including unchanged obligations and other receipts. Discounting, taxes, risk and financing require the applicable financial method.
+Supply the qualified future differences to OPS.14 or the responsible financial practice. For liquidity, put unchanged obligations and other available receipts back into the dated account of the party that must pay. If funding comes from another participant, establish the conditions for that participant to provide it in time. Discounting, taxes, risk and financing require the applicable financial method.
 
 If the whole product or customer account fails a required economic condition and a suitable alternative is not yet known, use MA.10 to construct one with the responsible design practices. This can change the offer, population, service model or provision rather than merely improve a cost number. Rebuild the affected time and obligation account here. If an adequate alternative is already supplied, this account construction and the receiving comparison can suffice.
 
@@ -130,7 +130,7 @@ A short account can understate later value or cost. Extending the horizon withou
 
 ### MA.8:7 - Conformance Checklist
 
-Check the unit, cohort, decision time, horizon and accounting basis. Align each cohort’s age to calendar periods. Identify the resource and monetary flows from acquisition, each product phase and later obligations, and when those flows occur. Check the grounds or limits of assumptions about continuation and scale, and distinguish historical spending from the future flows the choice can change.
+Check the unit, cohort, decision time, horizon and accounting basis. Align each cohort’s age to calendar periods. For a lifetime account, include acquisition and later obligations on their own dates. For a choice made today, recover the future flows and constraints that differ between the alternatives. A sufficient observed count or bound can settle a threshold. Check the grounds or limits of assumptions about continuation and scale, and distinguish historical spending from the future flows the choice can change.
 
 A conditional account supports the stated scenario. Actual retention, causal marketing effects and financial valuation require their corresponding evidence and methods.
 

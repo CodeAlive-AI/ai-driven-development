@@ -28,7 +28,7 @@ Explain how capacity is used, what the organization pays to keep it available an
 
 A simple utilization ratio is easy to communicate. Its denominator can hide unavailability, capability differences and reserve. A very detailed capacity account can become expensive while still failing to establish a feasible schedule.
 
-A reserve consumes an opportunity to use capacity elsewhere. Its reason and size require an operating judgement; calling it protective cannot by itself justify keeping it indefinitely.
+A reserve can displace other valuable work. Count the opportunity forgone when that work could have used the capacity and the reserve prevents it. Some arrangements permit work that can release the resource in time. Consider that use when judging how much reserve to protect and for how long.
 
 ### MA.2:4 - Solution
 

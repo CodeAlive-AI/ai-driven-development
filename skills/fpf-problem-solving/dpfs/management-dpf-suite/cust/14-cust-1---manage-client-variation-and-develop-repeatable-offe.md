@@ -13,7 +13,7 @@ If the current offering already fits and can be provided under its ordinary cond
 
 ### CUST.1:2 - Problem
 
-Urgent local work can put the next delivery first. Shared development can turn the same work into a stream of product requests. To decide how to proceed, establish who may promise what, which work is funded, whether another performer can repeat it and how existing customers will continue.
+Urgent local work can put the next delivery first. Shared development can turn the same work into a stream of product requests. To decide how to proceed, establish who may promise what, which work is funded, who must be able to repeat it under the promised terms and how existing customers will continue.
 
 ### CUST.1:3 - Forces
 
@@ -52,7 +52,7 @@ Before an irreversible promise, identify who can contribute and decide the follo
 | Customer result and acceptance | The useful result, relevant participants and an intelligible acceptance basis. | A provider's convenient demonstration must not replace the customer's required result. |
 | Local realization | A feasible way to obtain that result in the customer's actual setting. | A local workaround must not become a promise of general availability or permanent support. |
 | Common offering and family | A reasoned decision to admit, limit, defer or reject a common contribution. | One sale must not determine the supported family without its consequences. |
-| Repeatable delivery and support | A method, preparation and assistance that another qualified performer can obtain. | A manual or handover must not conceal continuing dependence on its author. |
+| Repeatable delivery and support | The agreed performers, preparation and help can supply the result on the promised occasions. | Establish substitution or transfer when the offer must continue with a different performer. |
 | Resources and economics | The work, capacity, funding and continuing burden of each alternative. | Commercial enthusiasm must not waive an unavailable resource or conceal unfunded work. |
 | Evidence and permitted use | The grounds, permissions and assurance needed for the consequential claim or action. | Delivery success must not certify its own broad repeatability, safety or reuse rights. |
 
@@ -74,13 +74,13 @@ Use [CUST.5](18-cust-5---run-field-learning-and-return-a-productization-cand.md)
 
 When sharing could help, build the family through [CUST.3](16-cust-3---develop-a-repeatable-offering-family.md): common result and conditions, invariants, allowed variations, forbidden combinations and the local residue. The same artifact can belong in one family and be unusable in another because support, permission or customer work differs.
 
-Make a customer choice through [CUST.4](17-cust-4---configure-a-customer-solution-and-place-differentia.md). Join that choice to the actual delivery method through [CUST.6](19-cust-6---establish-repeatable-deployment-and-service-deliver.md). The explanation, tools, preparation and support must enable another prepared performer to obtain the intended result. Assistance can remain part of that method. Establish which parts of the method the receiving team can perform and who can supply the remaining assistance at the promised place and time. A successful delivery with its original author can guide that inquiry. An offer to another customer depends on the provision available to that customer.
+Make the customer choice through [CUST.4](17-cust-4---configure-a-customer-solution-and-place-differentia.md) and trace what [CUST.6](19-cust-6---establish-repeatable-deployment-and-service-deliver.md) must provide for delivery. A qualified specialist whose time is secured can give a recurring service. If the promise also covers their absence, another team or a partner, establish what the intended performers can do with the materials, authority and help available there. A successful delivery by the original author can reveal the work that needs providing. Qualification of the next arrangement depends on its own conditions.
 
 A technical platform decision remains with its engineering method. Obtain the architecture, interface or supported-use result and use it to define the family and delivery conditions. If it supports only a narrower class, narrow the offering rather than treating technical approval as permission for every customer promise.
 
 #### CUST.1:4.6 - Join economics, responsibility and present customers
 
-Compare the complete alternatives on the same result, period and customer set. [CUST.7](20-cust-7---evaluate-growth-and-customization-with-full-resourc.md) includes common preparation, local execution, qualification, specialist help, support, migration and retirement. Distinguish an investment from an ordinary delivery charge and from an existing obligation. Confirm that funding and capacity exist when needed.
+For a fixed set of orders, compare the resources needed to deliver the same result over the same period. Where the new offer itself changes demand, keep starting conditions comparable and follow the case volume and mix each alternative would generate. [CUST.7](20-cust-7---evaluate-growth-and-customization-with-full-resourc.md) includes common preparation, local execution, qualification, specialist help, support, migration and retirement. Distinguish an investment from an ordinary delivery charge and from an existing obligation. Confirm that funding and capacity exist when needed.
 
 For a changed engineering offering or outcome arrangement, obtain the complete concept through [SYSE.8 — Develop an Integrated Offering and Provider Concept for Using an Engineered Result](../../engineering-dpf-suite/syse/29-syse-8---develop-an-integrated-offering-and-provider-concept.md). Bring back the participating systems and parties, contributions, responsibility, operating conditions, observation and acceptance, and the risks retained by each party. Use that result to revise the family, resource comparison and customer agreement. Obtain the relevant professional method and evidence when the promised result extends beyond engineering.
 
@@ -119,7 +119,7 @@ The examples emphasize observable delivery. Less tangible service results requir
 ### CUST.1:7 - Conformance Checklist
 
 - Can the participants distinguish the customer's result from the proposed common result?
-- Are consequential differences recovered from real work, including assistance and continuing support?
+- Have the requirements for the customer’s work, including assistance and continuing support, been established for the proposed or actual use?
 - Do those making promises have the required contributions and authority?
 - Does the selected combination have compatible conditions, resources and evidence?
 - Are local-only, unchanged, stopped and inconclusive outcomes allowed?

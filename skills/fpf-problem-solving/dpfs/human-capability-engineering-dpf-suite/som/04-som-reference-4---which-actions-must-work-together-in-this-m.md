@@ -1,0 +1,22 @@
+## SOM.Reference:4 - Which actions must work together in this movement?
+
+Start with what the performer or recipient needs to do, including finishing a movement or holding a position. Follow the action far enough to capture any change of contact, support, timing or effort that could change this result. Consider what the assignment requires of the participants together. Two partners can be asked to finish a turn together while each follows the music. Their finish times in that turn can settle the joint timing question. If one must respond to the other's change of direction, also establish what signal reached them while they could still respond. A surface supporting the performer and a partner responding to them both affect the movement. Each has a different place in the explanation. The partner has their own action and can change it in response.
+
+Decide what the account has to distinguish. For producing a continuous mark, a check of the whole stroke may settle the job even when the writer's precise grip is unknown. For teaching a writer to regulate grip through a change of support, two unbroken lines may conceal different actions. Return to the writer and the interval of changing support to find out which adjustment they could make there. Use a prior attempt if it answers the question. The extent of the movement examined and the differences preserved in its model can change separately.
+
+In the salsa figure below, the dancer must turn, keep time and make the continuation available to the partner. These requirements tell the teacher which bodily actions and interactions to examine. Suppose the dancer can take the pulse from recorded music or must give it to the partner. The turn can look alike in both cases. In the first arrangement the dancer can use a supplied result. In the second, giving the partner a usable pulse belongs to the dancer's method. For a report on yesterday's figure, establish what actually supplied the pulse on that occasion. The same turn can support different explanations depending on which of these questions the teacher asks.
+
+| Work occurring during the turn | What must be available together | What a local correction must preserve |
+| --- | --- | --- |
+| Performing the figure with a partner | The figure's technique, interaction and continuation | The partner can continue the shared figure. |
+| Performing its rhythmic steps | Relations among steps, beat and the phrase | A bodily adjustment does not displace the required steps or timing. |
+| Turning while changing support | Balance, direction and transition between contacts | The movement continues through the support change. |
+| Regulating the participating bodily action | Coordination that meets the movement requirement, with deliberate control where the task calls for it | The dancer can still execute the steps, turn and partner interaction while making the adjustment. |
+
+To use this method for another movement, change a condition the practice allows while keeping the same question. If a partner could give the signal later and the performer would then need to act differently, keep the timing of both actions. If several ways of organizing the body all give the required result and the task permits them, the choice between them can stay open. These are different from choosing how many beats or movements the record covers. A detailed account of this whole figure can still concern just one turn.
+
+Adequate strength, a steady stance and recall of the figure can coexist with failure in motion. The failed turn locates the problem. To decide whether to work on bodily regulation, change the shared cue or alter another condition, use evidence that could separate those explanations. A reduced task can prepare the turn. Where the required skill is responding to a partner, preserve a real opportunity to respond during the assessment. The partner may be indispensable to showing what this dancer can do.
+
+The performer reports experience and attempts regulation. The teacher can supply technique, observation and learning support. The partner contributes to the shared movement. An agent can compare the available observations or develop questions when it has the necessary evidence. A conclusion about what the dancer felt depends on the dancer’s account.
+
+A performer may learn while performing the figure. What happened in that attempt and what capability changed are separate claims. To explain the whole turn, include the other Methods, resources and capabilities on which it depends.

@@ -62,7 +62,7 @@ Match the comparison to the promised protection:
 
 - For a stated return scenario, place that return and the new work with their readiness, access and deadlines.
 - For protection over a bounded family, show that the selected response can handle every member of that family.
-- For a probability requirement, use the joint model and the operating policy through OPS.10.1; a mean return load alone does not determine a service probability.
+- For a probability threshold, use any justified bound that decides it under the operating policy. If every permitted return can be served, that policy already covers the entire range. When the answer depends on the frequency or co-occurrence of returns, use the relevant evidence and a qualified joint model through OPS.10.1.
 
 A policy that reacts to feedback must use information available at the time of its choice. If release is allowed before inspection, the policy needs an executable response when inspection later requires a return. It cannot choose an early start only in retrospect for the outcomes in which no correction was needed.
 

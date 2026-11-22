@@ -38,8 +38,8 @@ Follow the changed proposition through semantic dependencies to the results and 
 
 #### SIE.11:4.1 - Pattern-Use Unfolding
 
-1. **Compare the relied-on meaning.** Identify what the receiving question depended on in the earlier source or premise and what the later content says. Include changed applicability, subject grain, interval, assumptions, or limits where relevant. An inaccessible later definition leaves that comparison unresolved.
-2. **Finish a compatible repair when sufficient.** If content, applicability, and access remain compatible for the use, make the needed reference repair and retain matching results. A version or URL change alone does not require every downstream Method to run again.
+1. **Compare the relied-on meaning.** Identify what the receiving question depended on in the earlier source or premise and what the later content says. Include changed applicability, subject grain, interval, assumptions, or limits where relevant. A notice from the definition owner can establish the continued meaning and applicability of a specified clause when accepted for this use. If the available evidence still permits different answers, identify the unresolved premise.
+2. **Finish a compatible repair when sufficient.** If the meaning and applicability remain adequate, retain the supported use. For a request to repair a reference or supply the new text, also establish that the intended reader can open the requested material under the relevant permissions. A version or URL change alone does not require every downstream Method to run again.
 3. **Find affected uses when their scope is unsettled.** Apply A.10.1 to discover which uses rely on the changed premise within the question's scope, using source-side and receiver-side evidence or an index that adequately covers both. Distinguish a material dependency from a mention. Retain coverage gaps that limit the intended conclusion.
 4. **Select the integration result that the change can alter.** Use the domain returns below. Follow a further consumer only when the changed result can alter its action or claim. The physical proximity of files is not a dependency rule.
 5. **Repair or revalidate that result.** Apply its defining Method to the changed premise. Reuse earlier evidence whose conditions still match. Return a supported continuation, repair, permitted narrower use, or scoped gap. Source truth, master identity, product release, and application decisions go to the owners of those decisions.
@@ -87,7 +87,7 @@ A publisher moves a vocabulary definition to a new documentation address. The in
 
 The integrator updates the reference used by that mapping. Its existing qualification still answers the unchanged question. That completes the reference-maintenance request.
 
-If the later definition cannot be inspected, the same evidence cannot support this conclusion. The result then names the inaccessible comparison and the reliance it leaves unresolved.
+Suppose the engineer cannot open the new definition, but an authoritative notice identifies the old and new editions and confirms that the definition and its scope are unchanged. The mapping may keep its qualification if that evidence meets its terms. To complete a working-link repair, also establish that the intended reader can reach the new text. Return a gap in meaning or in reader access to the owner of the affected result.
 
 #### SIE.11:5.2 - Changed Promise Horizon
 

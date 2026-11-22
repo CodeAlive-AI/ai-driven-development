@@ -27,6 +27,8 @@ Lay out the intervention's dependency and time demands. Separate preparation tha
 
 Use an elapsed-time model that respects the dependencies. Sum sequential activities. When the arrangement supports overlap, calculate elapsed time from the critical path. Identify whether task estimates already include contingency before adding another allowance. Labour-hours, access-hours and elapsed service-loss time are different quantities.
 
+A critical path computed from precedence alone can leave two activities assigned to one person at the same time. For a positive schedule, put the required people, equipment and control of access on the actual clock as well. A mandatory chain longer than the window can exclude this plan before the other activities have been placed. A policy for future outages needs a feasible continuation for the permitted changes at the time they can be recognized. Several schedules chosen with hindsight can leave the planner without a timely choice.
+
 Compare the resulting demand with the whole available service envelope. If it does not fit, change a real variable: another window, another supported intervention, qualified fallback, additional capable provider, permitted rate adjustment or a justified deferral. A smaller written estimate does not change the work. A rate change is useful only when its service and deterioration consequences are supported.
 
 Agree what happens when a condition changes during the window. The relevant response can be a safe hold, restoration to a supported condition, a separately permitted extension or a revised operating decision. Identify the latest decision point before loss of a viable return becomes consequential. Do not treat an allowance as permission to omit a required check when time runs short.
@@ -48,7 +50,7 @@ The following is the whole-outage calculation for the constructed PS17 applicati
 
 Ninety minutes of preparatory work occurs before the outage and is excluded from its demand. The plan leaves 15 minutes beyond the explicit contingency within the 240-minute operating bound. That arithmetic establishes fit only for the constructed estimates and supported conditions.
 
-If an additional 20-minute demand arises beyond all included allowances, the demand becomes 245 minutes and no longer fits. The team revisits the operating or intervention arrangement. It does not consume testing or hand-back time to preserve the appearance of a four-hour plan.
+If an additional sequential activity extends elapsed outage time by 20 minutes beyond all included allowances, the demand becomes 245 minutes and no longer fits. The team revisits the operating or intervention arrangement. It does not consume testing or hand-back time to preserve the appearance of a four-hour plan.
 
 If the spare applicability return is absent before the planned start, the team does not begin this replacement branch. If the isolation cannot be established, the affected protected work does not start. Those limits preserve the earlier completed recommendation and return a different coordination question.
 
@@ -58,7 +60,7 @@ Repair estimates often reflect the technician's direct work and omit operator pr
 
 ### MNT.7:7 - Conformance Checklist
 
-Does the arrangement consume a valid operating-capacity and service result? Are preparation, protected work, testing, restoration and material contingency accounted for without double counting? Are overlaps compatible with actual resources and protection? Is there a supported response when the plan no longer fits?
+Does the arrangement consume a valid operating-capacity and service result? Are preparation, protected work, testing, restoration and material contingency accounted for without double counting? Are overlaps compatible with actual resources and protection? Does the result establish fit for the proposed timing, a guarantee over the promised conditions or an exclusion covering every allowed arrangement? Is a required response to a change both available and authorized before its deadline?
 
 A coordination result is complete when those responsible can act on its bounded arrangement or know the unmet condition.
 

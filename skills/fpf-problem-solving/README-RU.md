@@ -77,7 +77,7 @@ scripts/            split_spec.py (регенерация), find_pattern.py (п�
 | 06 | A.IV.A — Signature Stack & Boundary | 29 |
 | 07 | A.V — Constitutional Principles | 50 |
 | 08 | Part B — Trans-disciplinary Reasoning | 44 |
-| 09 | Part C — Kernel Extensions | 131 |
+| 09 | Part C — Kernel Extensions | 133 |
 | 10 | Part D — Ethics & Conflict | 5 |
 | 11 | Part E — Constitution & Authoring | 70 |
 | 12 | Part F — Unification Suite | 24 |
@@ -121,7 +121,7 @@ Splitter заменяет `sections/`, `dpfs/`, `library/` и `PATTERN-INDEX.md`
 
 Упаковка скилла и скрипты: MIT. Адаптировано из *FPF Library* Анатолия Левенчука — ядра *First
 Principles Framework (FPF)*, доменных фреймворков и документов библиотеки —
-[ailev/FPF](https://github.com/ailev/FPF), коммит источника `9fb0bff7ac2dfe82f068b03befe6b7303bcd7f5b`.
+[ailev/FPF](https://github.com/ailev/FPF), коммит источника `115781b4e0da17d50cff7edd1423f1cac7a502b8`.
 Текст библиотеки распространяется под [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); см.
 [область действия лицензии источника](https://github.com/ailev/FPF/blob/main/LICENSING.md). Изменения:
 публикации разделены на файлы секций с генерируемыми навигационными индексами, их ссылки переписаны на

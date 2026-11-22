@@ -87,7 +87,7 @@ Where an imperfect proxy is proposed, estimate how its payoff changes with the e
 #### FIN.14:4.4 - Compare whole outcomes, including the path to settlement
 
 
-Construct an unprotected or existing-arrangement account first. Add each proposed protection arrangement to that same account, applying the same underlying scenario. Retain premium, bid–ask spread, fees, taxes when relevant, collateral, financing, settlement and termination effects. A favorable derivative payment is one component of the protected outcome. Evaluating it alone would reward a hedge when the business loses and condemn it when the business gains.
+Start with the existing arrangement. Compare the alternatives under the same external conditions. If protection changes the invoice currency, price, quantity or timing, derive the activity's cash under those terms before adding a separate financial instrument. For a forward that leaves the trade unchanged, the original operating flows can be reused. Retain premium, bid–ask spread, fees, taxes when relevant, collateral, financing, settlement and termination effects. A favorable derivative payment is one component of the protected outcome. Evaluating it alone would reward a hedge when the business loses and condemn it when the business gains.
 
 Compare amounts on compatible dates. A premium paid now and a receipt in six months need both their actual cash dates and, for a value comparison, an appropriate common-date basis. FIN.5 supplies that pricing question. A quoted terminal gain is not a net gain if its premium or funding cost is omitted. A collateral transfer can restrict usable cash without being a permanent economic loss; its return or application must also be modeled under the actual terms.
 

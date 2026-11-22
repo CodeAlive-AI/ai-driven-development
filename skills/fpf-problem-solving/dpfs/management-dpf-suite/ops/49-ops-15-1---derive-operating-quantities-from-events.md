@@ -82,19 +82,19 @@ overlap = max(0, min(d,v) - max(a,u)).
 
 For a subject known to remain present through v, use v as the overlap endpoint without asserting completion at v. An unknown arrival before u similarly contributes from u while leaving the full residence unresolved.
 
-Add these overlaps to obtain the population-time area. Divide by v-u to obtain the mean population during that window. This is the area under the population count: each present subject contributes one unit for each unit of time it remains present.
+Add these overlaps to obtain the population-time area. The same area is available directly by integrating a complete time series of the population count over the window. Divide by v-u to obtain the mean population. This is the area under the population count: each present subject contributes one unit for each unit of time it remains present.
 
 For a fixed counting unit without splitting or merging, an empty-to-empty interval gives a useful relation. Its population-time area equals the sum of residence times of all episodes that leave. With at least one departure, mean population equals departure rate multiplied by mean residence of those same episodes. The departure rate is the successful completion rate only when every departure meets the chosen completion condition. If no episode occurs, the area and mean population are zero; a mean residence over zero departures is undefined.
 
 For example, three cases enter at zero. One is cancelled at hour one; the others complete successfully at hours two and three. Area is 1+2+3=6 case-hours over three hours, so mean population is two. All three departures contribute to that relation. The two successful completions remain a separate result count.
 
-On an arbitrary cut window, the departed-episode mean and departure rate alone generally omit the partial intervals. Calculate each present episode's overlap with the window, including episodes still unfinished at its end.
+On an arbitrary cut window, the departed-episode mean and departure rate alone generally omit the partial intervals. Use overlaps that include unfinished episodes, or a complete population-time area for the same window and counting unit.
 
 This finite observation identity does not estimate an unseen tail, establish a long-run regime or explain what caused waiting. OPS.10 uses the appropriate capacity or queueing model when those further questions matter.
 
 #### OPS.15.1:4.5 - Aggregate only compatible observations
 
-Keep the population, event pair, clock and weighting rule consistent within the reported aggregate. For a case-weighted mean, combine the totals and case counts before dividing when group sizes differ. An unweighted mean of departmental means gives each department equal weight, not each case equal weight.
+Keep the population, event pair, clock and weighting rule consistent. For a mean over distinct cases, sum group totals and counts when the groups partition those cases. If a case belongs to several groups, account for its repeated contributions to both the sum and count, or use an adequate overall aggregate. An equal-weighted mean of departmental means answers a question about departments.
 
 Choose the weighting from the question. A case-weighted mean gives each counted case equal weight. Resource-demand weighting describes a different burden. Retain classes when the proposed change affects them differently or an aggregate conceals a service commitment.
 

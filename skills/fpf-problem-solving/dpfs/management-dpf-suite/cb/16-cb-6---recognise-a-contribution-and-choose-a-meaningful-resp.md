@@ -87,7 +87,7 @@ Use a recurring arrangement when contributions are repeatedly missed or a shared
 
 Explain how a contribution becomes known, who examines it and what the recognition means. Use examples of different qualifying contributions so that preparation, correction and quiet help can be noticed. Choose an observation window that fits the work: immediate message counts cannot reveal a result that appears only after later use.
 
-If nominations or peer responses are used, ask for a concrete account of the contribution and its value. Popularity can help locate a candidate contribution, but it does not supply its correctness or receiving effect. Where a decision-maker has a relevant interest, use another suitable judgement or make that interest visible to the people relying on the award.
+If nominations or peer responses are used, ask for a concrete account of the contribution and its value. Popularity can help locate a candidate contribution, but it does not supply its correctness or receiving effect. Where a decision-maker has a relevant interest, apply the award’s rule. An independent decision needs a qualified independent judge. When a disclosed interest is permitted, tell the people relying on the award.
 
 Make the burden proportionate. A small voluntary group may use a brief account at an existing meeting; a scarce professional opportunity needs clearer criteria and a way to correct an error.
 
@@ -123,7 +123,7 @@ In a constructed repairer association, one participant corrects a misleading app
 
 The contributor prefers a private message and agrees to a brief credit on the corrected page. The response names the distinction they clarified and the use that the recipient reported.
 
-A later public summary credits both the person who found the problem and the maintainer who checked and incorporated the correction. If a use report contradicts the correction, the subject review reopens; the acknowledgement of the contributed work does not settle the technical question.
+For a later public summary the organiser establishes what each contributor permits for that audience. With their agreement the summary credits the person who found the problem and the maintainer who checked and incorporated the correction. If a use report contradicts the correction, the subject review reopens; the acknowledgement of the contributed work does not settle the technical question.
 
 #### CB.6:5.2 - A leaderboard rewards the wrong work
 

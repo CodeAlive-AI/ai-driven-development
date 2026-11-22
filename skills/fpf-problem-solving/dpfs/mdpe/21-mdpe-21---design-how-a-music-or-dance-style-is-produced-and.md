@@ -75,8 +75,7 @@ or MDPE.1 to clarify it. A commission for one work can be completed by its direc
 
 #### MDPE.21:2.2 - Recover the current reproduction architecture
 
-Trace an observed performance to the conditions that made it possible and to the conditions for reuse. For a design,
-use a representative proposed performance and state the premises. Examine the relations relevant to the question.
+For a historical question, trace the performance to the conditions that made it possible. To assess what a current or proposed arrangement permits, use the rules and provision that apply to the occasions in question. A rule excluding improvisation can settle whether an improvised entry is admissible before anyone submits one. If performances share people or equipment, check the conditions under which they must work together. Trace the conditions for reuse when the question concerns recurrence.
 
 | Architecture concern | Practical question |
 | --- | --- |
@@ -231,8 +230,7 @@ equipment and proposed participation. The produced works can be studied where th
 recurrence concerns the relations that let other participants perform or adapt the practice.
 
 A proposal could emphasize choir capability, model and dataset interaction, teaching for a receiving group, or exhibition circulation
-and memory. To assess recurrence, examine whether another suitably configured group can learn, adapt and perform the intended musical
-relations. Use an adequate existing observation or a warranted representative test. Recordings, publicity and a successful installation
+and memory. For another performance by the original choir, examine the people, musical relations and support that occasion requires. When another group is intended to take up the practice, establish whether it can learn or otherwise obtain and perform those relations with the support available to it. An adequate record or an argument covering the required conditions can suffice. Use a representative test where the decision still needs one. Recordings, publicity and a successful installation
 bear on the work produced and its presentation. For later recognition or retention, examine the relevant participants over time.
 
 #### MDPE.21:4.4 - One commissioned work
@@ -246,7 +244,7 @@ result includes reproduction across variants, performers, conditions or generati
 | Check | Failure it prevents | Repair |
 | --- | --- | --- |
 | Intended recurrence | A new label or list of traits leaves the intended use unclear. | Identify what later performers or recipients should be able to perform, recognize, transmit or recover. |
-| Current reproduction | A proposed diagram is treated as a history of the practice. | Use evidence from a representative occurrence for its work, capability, systems and enabling relations. State a design comparison under its premises. |
+| Current reproduction | A proposed diagram is treated as a history of the practice. | Use the rule or provision in force for the constraint it establishes. Use evidence of the occurrence for what performers did and of the relevant occasions for actual recurrence. State a design comparison under its premises. |
 | Concurrent concerns | Generation, training, performance, recognition and memory are put into an unsupported sequence. | Identify what occurs together, what forms part of a larger action, and which temporal dependencies the chosen method requires. |
 | Alternatives | A candidate is chosen without considering an available arrangement that would change the comparison. | Include relevant alternatives and retention where feasible. Develop another candidate when its possible contribution could change the answer. |
 | Authority and action | A proposal attributes a local decision to an entire culture, market or platform. | For a proposed change, identify who could decide, the work, system or method affected, and the signal, access, contact, participation, observation or selection relation on which it depends. |

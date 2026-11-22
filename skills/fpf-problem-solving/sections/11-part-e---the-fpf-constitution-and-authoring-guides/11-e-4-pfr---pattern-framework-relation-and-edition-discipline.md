@@ -175,7 +175,7 @@ When earlier prose says that one pattern contains the defining content for or go
 
 #### E.4.PFR:3.4 - Edition and package discipline
 
-Domain and local frameworks depend toward more stable editions. A local practice framework may depend on a domain principle framework and on Core content in an FPF edition. A domain principle framework may depend on Core content in an FPF edition.
+A local practice framework may depend directly on a domain framework, on Core claims in an FPF edition, or on both. A domain framework may depend on Core claims. Identify each supplier for the work that actually uses it.
 
 Identify that FPF edition and its required Core claims separately, as E.4 specifies. E.4.FPF governs the FPF edition.
 
@@ -183,11 +183,13 @@ Core does not depend on domain or local frameworks. Incorporate an accepted tran
 
 Framework-edition dependency obtains for one dependent edition, one relied-on edition, exact content in the relied-on edition, and one named use only when the dependent edition's current content or result for that use requires the relied-on content. Removing it or changing it in a way relevant to the use would invalidate the dependent content/result or require that use to be reopened.
 
-State that case fact and why the content is required. Edition labels, joint publication, joint-use membership, and an allowed direction do not establish dependency.
+Name the decision, calculation or other use that requires the supplying claim. In a chain of editions, trace the particular content through each use. If an intermediate edition uses the changed rule only for a different operation, the chain alone gives no reason to revise the final user's operation. If the intermediate result needed by that user relies on the rule, check whether the result still serves that use. Honor any separate commitment to check a new edition when adopting it.
+
+Several grounds may support the same decision. Establish which grounds must hold together and which can each support the decision on their own. If either of two accepted routes suffices, losing one leaves the result available through the other. Losing both reopens it. Trace any premise they share. A proposed substitute becomes a ground for the decision once it is qualified for this use and in effect. A separate promise of conformance to a named edition still requires checking that edition.
 
 > `Domain@D` uses selected Core relation semantics in `FPF@C` as required constraints on framework review. Without those semantics, or after a relevant change to them, the affected review guidance cannot remain current without recheck. `Domain@D` therefore depends on `FPF@C` for that content and use. The edition labels are illustrative. An actual assertion identifies the claims used, as in §4.2.
 
-E.5.3 constrains the allowed dependency direction and Core acyclicity after the relation has been identified. G.11 governs the edition pin, currentness, and refresh condition. Neither supplies the dependency predicate or makes the case fact obtain.
+E.5.3 tests the permitted direction and acyclicity of the identified imports. G.11 governs the edition pin, currentness and refresh condition. A permitted direction, joint publication or a shared use of two editions is insufficient to establish a dependency.
 
 Compatibility answers whether the two editions in the pair can support an overlapping use despite a stated difference or interface. State it separately and only when current:
 
@@ -291,6 +293,10 @@ If a later Core relation-function maintenance replay must enumerate every CGUS p
 Start with the readable dependency assertion. The edition labels below are illustrative. `FPF@C1` contains the cited Core claims:
 
 > `CodexProcessFramework@L1` depends on `FPF@C1` for local process authoring: its revision guidance applies E.8:4.1.2, item 6, which requires repair of stale direct consumers in the same authoring increment; its evaluation guidance applies E.21:4.3's rule for an adjacent-value rationale in each coordinate result. Removing or materially changing either claim reopens the corresponding local guidance. Changing the selected FPF edition also requires checking these dependencies.
+
+A local review manual uses the evaluation guidance to judge scores. If the direct-consumer repair rule changes, revisit the local revision guidance. The manual's score judgement can still use the adjacent-value rule if its grounds hold. If that rule changes, trace the change through the local evaluation guidance to the manual. Adopting a different pinned Core edition still calls for the edition checks specified above.
+
+Suppose the manual accepts either a signed assessment under the named edition or an independently validated repeat assessment on the same scale. Either can support the score decision while it remains valid. Withdrawal of the signed assessment matters immediately if the repeat is only planned. If both assessments use the same faulty scale, agreement between them cannot rescue the score. A request specifically for the signed assessment under that edition still needs the signed assessment.
 
 Choose the representation from the receiver's job. A cross-relation comparison may use one generic PFR row. An edition-impact or refresh receiver may use one dependency-specific record. This receiver needs the relied-on content and refresh fields, so it uses only the dependency record:
 

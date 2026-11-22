@@ -10,7 +10,7 @@
 
 Use this method when the order of a narrative affects which relations a reader can recover from it. A graph, mechanism, body of evidence, plot, decision history or mathematical argument may support several orders. The question may be how to arrange new material or what an existing order makes available.
 
-Compare a short passage in its existing or proposed order with the relations it draws on. Where a feature of the passage makes chronology, cause or a prerequisite ambiguous, clarify the relation or change the order if the task calls for a revision.
+Locate the point where the reader has to interpret something or act. Read far enough on either side to see what is available then and what arrives later. A short passage may settle a local choice of order. If the conclusion depends on a reveal in a later episode, follow the account through that reveal. Clarify the relation or change the order when the task calls for revision.
 
 A fluent sequence can invite an unsupported inference. The first event mentioned may look earliest, most important or causally decisive. A student may mistake the order of exposition for the order of proof, or a project team may mistake it for the order in which work was authorized.
 
@@ -27,7 +27,7 @@ To present a tree, graph, mechanism, set of alternatives or architecture view in
 | Ease of following the account and fidelity to the source | A sequence can introduce a difficult relation gradually. It can also hide a branch or return that matters to the reader. |
 | Teaching and formal dependency | A useful lesson can begin with an example whose full proof appears later. Make its status clear where the difference matters. |
 | Suspense and prerequisites | An author can postpone the disclosure of a cause or a character’s means. Establish the prerequisites the events themselves require. |
-| Compactness vs source return | The sequence needs to move, but hidden relations need return points. |
+| Compactness and access to detail | A short sequence can serve the immediate task. A consequential distinction it leaves out must be available by the time the reader relies on it. |
 
 ### NSTD.2:4 - Solution
 
@@ -56,12 +56,12 @@ If the choice is unclear, compare the passage using the questions below.
 | --- | --- | --- |
 | Source relations | Which dependencies, cycles, alternatives or times does the intended use require? | Use a sufficient source directly. If the relevant selection is still unclear, use `NSTD.1` or try a provisional order to locate the missing relation. |
 | First encounter | What should this passage show first, and what can a reader with the assumed preparation infer at that point? | Compare two short orders if the difference matters. Include expressive aims such as suspense when they are part of the use. |
-| Hidden relations | Does the sequence omit or obscure a relation the task needs? | Identify the omission. For a revision, restore the relation or provide a return to a source that supplies it. |
+| Hidden relations | Does the reader need a connection before it is disclosed? | Put it where the reader needs it or give a usable route to it in time. Keep a delayed disclosure if the earlier task can already be completed on its grounds. |
 | Misreading | Which feature of this sequence could support a mistaken inference? | Where a correction is warranted, choose a sentence, marker or change of order that identifies the needed relation. |
 
 Compare the inferences available at the chosen point with those available at the end. A later disclosure can give grounds to revise an earlier interpretation. A whole story can also support several readings. Use NSTD.9 if those interpretations need developing or comparison. For a claim about what a particular reader understood, or when they understood it, use NSTD.6 with evidence from the relevant reading and point in time. An anticipated response is sufficient for planning its examination.
 
-A lesson can introduce an example, recount the discovery that made a distinction interesting and then supply its proof. A live account can follow observed events in time, while a later recap examines causes. A story can show effects before revealing their cause. Make the transition recognizable when the reader’s task depends on which relation the order expresses.
+A lesson can introduce an example, recount the discovery that made a distinction interesting and then supply its proof. A live account can follow observed events in time, while a later recap examines causes. A story can show effects before revealing their cause. Make the transition recognizable when the reader’s task depends on which relation the order expresses. For a decision made before a later update, reconstruct when the fact was observed, when the decision holder could have received it and when the choice was made. A dated observation can establish what happened. A receipt or another warranted account of access can establish what was knowable to that actor. What reached the reader in the opening scene may have reached the actor only after the choice.
 
 For a constraint-governed unfolding structure (CGUS), identify the path the account presents and preserve its applicable constraints. Show a branch, return, exit or stop when the reader needs it to explain what happened or determine what could happen. A demonstration of one path need not prescribe that sequence for future work.
 
@@ -218,9 +218,9 @@ A chronological, dramatic or slide order that feels natural to its author can hi
 | Check | Passing condition |
 | --- | --- |
 | `CC-NSTD2-1` | The chosen sequence serves the reader's task; an explanation of its rule is available where the choice matters. |
-| `CC-NSTD2-2` | The relations needed for that use remain recoverable; consequential omissions are shown or have a source return. |
+| `CC-NSTD2-2` | The relations needed for the reader’s task are recoverable by the time they must be used. A later disclosure can complete a retrospective interpretation. |
 | `CC-NSTD2-3` | Narrative order is not treated as physical time, proof order, work order, or decision authority without source support. |
-| `CC-NSTD2-4` | Source-return condition is present when lost relations affect action or reliance. |
+| `CC-NSTD2-4` | If reliance calls for a return to the source, the reader can recognize the occasion and reach the pertinent material in time. |
 | `CC-NSTD2-5` | Use `C.34` for architecture-specific preservation claims and `A.6.3.CSC` for a claimed coarsening. Use `C.2.8` through `NSTD.6` for reader-relative structural amount, and `C.33` for architecture-description adequacy. Ordinary source comparison needs no such additional claim. |
 
 ### NSTD.2:8 - Common Anti-Patterns and How to Avoid Them

@@ -188,7 +188,7 @@ The namespace expansion supports the alias consolidation; the temporal-occurrenc
 
 #### F.3:12.6 - IEC 61131-3
 
-**Task.** Claim: a cyclic or event-driven runtime unit that invokes programs. Counterexample: a control algorithm or program description is not the task occurrence.
+**Task.** In the cited usage a task is a cyclic or event-driven runtime unit that invokes programs. Identify the configured task when the question concerns its schedule, an activation when the question concerns one trigger, and the particular program execution when asking what work occurred. The same task can invoke a program many times.
 
 ### F.3:13 - Reasoning about a local-sense cluster
 

@@ -91,7 +91,7 @@ All objects below are **conceptual**. Any concrete serialisation belongs to Anne
 * **`ExternalIndexCard@Context`** — registration of an external source and its snapshot.
 
   **Shape (conceptual):**
-  `⟨ ExternalIndexId, ProviderName?, ExternalIndexType, CoverageScope, Licence?, ExternalEdition, FreshnessWindow?, entityOfConcern := ⟨GroundingHolon, ReferencePlane⟩, Notes? ⟩`
+  `⟨ ExternalIndexId, ProviderName?, ExternalIndexType, CoverageScope, Licence?, ExternalEdition, FreshnessWindow?, entityOfConcern, GroundingHolon?, ReferencePlane, Notes? ⟩`
 
   **Intent.** Register the provider snapshot as `ExternalEdition` on a stable, citable source card. Downstream artefacts cite the card edition through `ExternalIndexRef.edition`; they do not copy the provider snapshot id into other cards.
 
@@ -152,7 +152,7 @@ Start with the input required by the receiving method and records from the exter
 
 **Worked mapping.** Suppose a review needs the number of distinct research articles in a named collection published during 2025, and source-grounded ClaimSheets about their methods. The available index supplies records with `work_id`, `year`, `record_type`, a citation and an abstract. In this illustrative provider contract, `year` means first publication year, `work_id` identifies a work across duplicate records, and `record_type = research_article` is the relevant inclusion class.
 
-The recipe filters the stated collection by year and class, groups qualifying records by `work_id`, and counts those groups. Three qualifying records with ids `w1, w1, w2` yield two works. The result retains that population and counting basis; use as a DHC measurement additionally establishes the C.16 result and C.21 replay basis.
+The recipe filters the stated collection by year and class, groups qualifying records by `work_id` and counts those groups. Three qualifying records with ids `w1, w1, w2` establish two works in that slice. If both belong to a larger collection, at least two works in it qualify. Its exact total needs complete coverage or independent evidence accounting for the remainder. For example, independent evidence that exactly one further work qualifies outside the slice establishes three in all. Finding one additional work while the rest are unknown establishes a minimum of three. Use as a DHC measurement additionally establishes the C.16 result and C.21 replay basis.
 
 For the ClaimSheets, the citation leads to the article text. The reviewer extracts the method claim with its tested population and conditions under G.2; an abstract that omits those conditions leaves an extraction gap to settle from the article. The count and metadata alone supply no performance claim.
 

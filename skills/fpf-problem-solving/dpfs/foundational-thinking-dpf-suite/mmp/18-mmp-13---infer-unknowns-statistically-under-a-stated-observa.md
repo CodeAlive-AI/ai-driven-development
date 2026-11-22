@@ -42,7 +42,7 @@ Specify the target and the intended uncertainty claim. Combine the record law wi
 
 #### MMP.13:4.1 - Fix the target before choosing a fitting routine
 
-Write q=g(theta), where theta denotes the unknowns in the observation model. It can index a distribution or unknown function, not just a finite vector. State the population, conditions and time range that make q meaningful. Distinguish unknowns needed only to explain the records from the target being returned.
+Write q=g(theta), where theta denotes the unknowns in the observation model. It can index a distribution or unknown function, not just a finite vector. State the population, conditions and time range that make q meaningful. Distinguish unknowns needed only to explain the records from the target being returned. When the target aggregates contributions, choose their weights from the population and quantity requested. A mean giving equal weight to each site and a mean giving equal weight to each person can differ when site sizes vary. When people occur at several sites, establish how often each is to contribute. A site average can answer a site question directly.
 
 For prediction, instead name the new outcome Y_new and its observing conditions. A conditional mean of Y_new is a function of theta; the realized Y_new also varies under the model. A proposed intervention requires a supplied causal identification argument before a fitted association can be interpreted as its effect.
 
@@ -239,7 +239,7 @@ Bayesian and frequentist results are compared by the conclusions they support. A
 
 ### MMP.13:7 - Conformance Checklist
 
-- The inferential target and its subject conditions are stated separately from nuisance unknowns and the subsequent decision.
+- The unit, weighting where relevant, conditions and scope of the inferential target fit its receiving use. Nuisance unknowns and the subsequent decision remain identifiable separately.
 - The observation law retains consequential recording, dependence and stopping assumptions.
 - The estimator's repeated-use claim or the posterior's conditioning assumptions are recoverable; normalization or coverage has an applicable basis.
 - Joint uncertainty is propagated to the target. Parameter uncertainty, future-observation variation and numerical error are distinguished.

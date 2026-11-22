@@ -23,13 +23,15 @@ Representative testing improves evidence but can consume the outage and create i
 
 State the required functioning claim, actual configuration, operating envelope and relevant horizon. Recover the operating and engineering acceptance basis. Select the performance, protection or interaction properties whose failure would change the return-to-use decision.
 
-Relate the intervention to those claims. Identify the functioning it was intended to restore and credible faults it could have introduced. Use current adequate evidence for unaffected claims where its subject, conditions and scope still fit. A component or configuration change that invalidates that evidence reopens the affected check.
+Relate the intervention to those claims. Identify the functioning it was intended to restore and credible faults it could have introduced. Identify the property each earlier inspection or test established. Check the identity of the item and the range of duty the evidence covers. Reuse the evidence when it establishes the required property for the item now being returned, directly or through a qualified relation from the tested item and conditions. Reopen a check when a changed component, load or acceptance criterion defeats its grounds. If a new witnessed run was ordered, arrange it even when the technical question already has an answer.
 
 Choose checks that can discriminate the relevant success and failure states. Use the applicable equipment procedure, measurement basis and competent providers. Where real operating conditions cannot be represented, state what the test does and does not establish. A measurement needs suitable range, uncertainty and operating context for its acceptance comparison.
 
+Match the evidence to the promised relations as well as the individual thresholds. A flow and a pressure observed on different runs can each reach its minimum without the two doing so together at the required duty. When a claim concerns service at several outlets, work back from what each must receive to the connections and operating states that determine the distribution. A reading of the whole can settle a total-flow requirement directly. A known bound on each branch under the allowed operating conditions can also settle a requirement for each receiver. Select the observations or calculations still needed after using those grounds.
+
 Plan the check's controlled state transitions with [MNT.8](19-mnt-8---isolate-make-safe-and-authorize-the-maintenance-inte.md) and its time with MNT.7. Verification that requires energization or other exposure does not inherit unrestricted permission from the earlier protected repair. The applicable procedure governs how the test state is established and ended.
 
-Compare observed outcomes with the stated basis. Retain the actual subject, load, duration and material limitations. A passing result supports the named claim only at that scope. A failed result returns to the affected diagnosis, intervention or engineering question; unrelated passing tests do not cancel it.
+Compare observed outcomes with the stated basis. Retain the actual subject, load, duration and material limitations. Give the resulting claim for that duty. To extend it, establish how the observed property carries to the proposed conditions and which acceptance basis applies there. A failed result returns to the affected diagnosis, intervention or engineering question; unrelated passing tests do not cancel it.
 
 Return qualified functioning evidence. A restricted-use claim may be supportable when unrestricted use is not, provided the relevant acceptance and authority conditions allow that distinction. Obtain certification or an independent check when the receiving use requires it, including for routine tasks subject to that requirement.
 
@@ -43,7 +45,9 @@ The case's agreed immediate-duty basis requires at least 20 litres per second at
 
 Under those supplied conditions, the constructed observation is 20.8 litres per second at 154 kilopascals throughout that run, with the applicable equipment-specific condition checks also satisfied: 20.8 exceeds 20 and 154 exceeds 150 under the stated rule. The 45-minute test allowance in [MNT.7](18-mnt-7---coordinate-maintenance-intervention-and-continuing-o.md) includes this run and its controlled transitions.
 
-Those observations support the stated immediate duty in the tested envelope. They do not establish performance at an untested winter peak, an as-new lifetime or elimination of the long-horizon recurrence mechanism. The operator receives that scope explicitly.
+Those observations establish the immediate-duty result. A winter-peak claim would need a relation covering that load or further evidence there. An as-new lifetime and elimination of the recurrence mechanism each need different engineering grounds. The operator receives that scope explicitly.
+
+Suppose a different order requires each of two outlets to receive at least 9 litres per second throughout the run. For this decision, suppose separate evidence establishes a lower bound of 20.8 litres per second on actual total delivery throughout the run. All delivered flow goes to the two outlets, and a total of exactly 20.8 is possible. Without further restrictions, a split of 10.4 and 10.4 would meet the requirement, while 12.8 and 8.0 would fail it. If the installed arrangement also limits each outlet to 11.5 throughout the run, the other receives at least 20.8 − 11.5 = 9.3. Then both meet the requirement. Without that upper bound, use other applicable delivery evidence or identify the open question. The original pump-duty assessment used its own acceptance rule.
 
 If the loaded test instead reaches only 18 litres per second, the performed bearing replacement can still be correctly recorded while the required functioning claim fails. The team returns to diagnosis or the relevant engineering question. The 18-litre-per-second result remains below the required 20 even if the test is marked complete.
 
@@ -53,13 +57,13 @@ The effort already spent on repair creates pressure to interpret a marginal test
 
 ### MNT.10:7 - Conformance Checklist
 
-Does the evidence concern the actual resulting configuration and required use? Can the selected checks expose the intervention's relevant failure or introduced fault? Are measurement and test conditions suitable for the claim? Are unchanged evidence and unresolved portions used at their true scope? Are required specialist or independent returns present where applicable?
+Does the evidence concern the actual resulting configuration and required use? Can the selected checks expose the intervention's relevant failure or introduced fault? Are measurement and test conditions suitable for the claim? How do the observations support the required combination of duties? Establish joint delivery, a handover, or coverage of the operating cases according to the service requested. Can the answer be established by the existing evidence or a sufficient bound, and has a separately required test been performed? Are required specialist or independent returns present where applicable?
 
 A supported current-use answer closes this question. It does not claim long-term reliability or authorize resumed use by itself.
 
 ### MNT.10:8 - Common Anti-Patterns and How to Avoid Them
 
-“Part replaced” is used as evidence of service. Test the functioning the recipient needs. “It ran unloaded” becomes permission for full-duty operation. Qualify the operating envelope or obtain the evidence that changes that use.
+“Part replaced” is used as evidence of service. Establish the functioning the recipient needs with applicable evidence. Perform a new test where the order requires one or the present grounds leave a consequential question open. “It ran unloaded” becomes permission for full-duty operation. Qualify the operating envelope or obtain the evidence that changes that use.
 
 Every historical test is repeated after a small change. Reopen the affected claims, while preserving any concrete requirement for the current verification.
 

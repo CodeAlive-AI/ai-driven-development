@@ -62,7 +62,7 @@ For each scenario and date, begin with the previous closing balance, add receipt
 #### FIN.2:4.3 - Derive availability and the gross funding need together
 
 
-A credit limit is only one constraint on drawing. The available amount may also depend on eligible receivables or inventory, collateral valuations, prior drawings, other uses of the facility and conditions in FIN.12. For a simple asset-backed line, a stipulated rule might permit total drawings up to the smaller of the commitment and a percentage of eligible receivables. Incremental room is that amount less existing drawings and other reserved utilization. Check the formula against the agreement that governs the draw.
+A credit limit is only one constraint on drawing. The available amount may also depend on eligible receivables or inventory, collateral valuations, prior drawings, other uses of the facility and conditions in FIN.12. For a simple asset-backed line, a stipulated rule might permit total drawings up to the smaller of the commitment and a percentage of eligible receivables. Subtract existing drawings and reserved uses from the permitted total to calculate signed headroom. A negative result means there is no room for a further draw. The agreement determines whether the excess of counted use over the effective limit requires repayment, more collateral or another response, and when. Check the formula against the agreement that governs the draw.
 
 A decline in receivable quality can simultaneously delay collections and reduce the line that was expected to bridge them. Therefore project availability in the same adverse state as the cash shortfall. Holding yesterday's line headroom fixed while stressing receipts breaks the proposed protection. A breach may also affect renewal or draw permission before it changes a contractual maturity.
 
@@ -73,7 +73,7 @@ Size a financing action from its net usable proceeds. If a fixed fee is withheld
 #### FIN.2:4.4 - Set protection from a plausible failure and a timely response
 
 
-A reserve should answer a concrete exposure: uncertain collections, urgent repairs, margin calls or the time needed to obtain replacement funds. For each relevant adverse state, ask how far the balance can fall before a feasible response takes effect. The required initial protection is the largest shortfall relative to the chosen minimum over those dates, after allowing only responses available in that state. This is a scenario requirement, not a statistical confidence level unless the scenario model supports that interpretation.
+Fix the minimum balance, the dates on which cash must be available and the exposures the reserve must cover. For a proposed response strategy, keep the same early allocation in futures the treasurer cannot yet distinguish. Allow a different response once the relevant information and authority arrive, with time for the funds to reach the account. Find the largest remaining shortfall relative to the minimum across the covered dates and states. For a protection guarantee, establish that one feasible strategy with the reserve covers them all. A probability or confidence claim also requires grounds for the probabilities.
 
 Avoid treating all uncertainties as independent when they arise from the same cause. A customer's failure can remove a receipt, reduce collateral eligibility and make a financier less willing to extend credit. Equally, adding every imaginable worst outcome can immobilize money without improving the present decision. Select material states from the operating and financing exposures, explain the protection sought, and show the remaining exposure when a full guarantee is unattainable. A sufficiently supported probability model can estimate shortfall likelihood and magnitude; an average balance still does not prove payment capacity.
 
@@ -86,7 +86,7 @@ Compare the cost of holding or arranging protection with the consequences it pre
 
 If the account fails, construct a remedy that changes a dated receipt, payment or available financing action. Accelerating a customer payment has a price and requires acceptance. Extending a supplier term changes an obligation only when the arrangement permits it. Reducing inventory may undermine delivery and hence later receipts. FIN.3 compares these operating terms; FIN.10 constructs or compares finance; FIN.12 identifies restrictions and remedies. When another entity's cash could help but no adequate transfer or support exists, FIN.23 constructs that financial relation and tests both entities' needs. Carry the resulting receipts, payments and availability conditions back to the same account before relying on the repair.
 
-Include the decision's execution lead time. An asset sale closing after payroll is not a payroll remedy. A loan with enough face amount but an unsatisfied condition is not yet one either. When no attainable plan covers the obligation, state the uncovered date and amount and the action-changing missing condition; FIN.22 becomes relevant if ordinary adjustment is insufficient. Apply the terms that govern a pending request. Count the requested consent only when it has been granted.
+Allow for the time needed to execute each remedy. Check whether an asset sale can settle before payroll, a lender’s conditions can be met by the draw cutoff and any required consent has been granted. If authorized sources cannot cover an obligation at its due date, report the shortfall at the precision the decision requires. An upper bound on obtainable money below the payment due establishes insufficiency. FIN.22 becomes relevant when the commission includes finding a recovery route beyond ordinary adjustments.
 
 Roll the forecast forward using actual receipts and payments. Explain material deviations as timing, amount, scope or failed action, then revise the remaining account and response. Do not erase the original reason for a borrowing need by relabeling an overdue receipt as collected. For a genuine temporary surplus, preserve access before the next required use: compare maturity, settlement, credit risk and redemption conditions of any proposed placement. The gross bank balance is not automatically available for investment or payout.
 
@@ -101,7 +101,7 @@ A constructed order brings 1,200 on day 28 and requires payments of 440 on day 0
 | After paying 100, day 7 | −40 |
 | After receiving 1,200, day 28 | 1,160 |
 
-A committed facility can provide up to 80 before the day-7 payment. Its fee of 3 is withheld on drawing, and interest of 2 is paid with principal on day 28. A gross draw of 43 supplies the missing 40; day-7 cash becomes zero. Repayment of 45 leaves day-28 cash at 1,155. With a required reserve of 10, draw 53 instead; a draw of 43 no longer suffices. Assume the same stated fee and interest for these illustrative amounts.
+A committed facility can provide up to 80 before the day-7 payment. Its fee of 3 is withheld on drawing, and interest of 2 is paid with principal on day 28. A gross draw of 43 supplies the missing 40, leaving day-7 cash at zero. With the invoice proceeds available before repayment, paying 45 on day 28 leaves cash of 1,155. If repayment comes before collection that same day, the borrower needs 45 available by the earlier cutoff even though the closing balance is unchanged. With a required reserve of 10, draw 53 for day 7. Assume the same stated fee and interest for these illustrative amounts.
 
 If collection moves to day 40 while repayment stays on day 28, the first financing path leaves a gap of 45 on day 28. To cover that gap, the corporation needs an agreed extension or replacement funding available by day 28. Neither the unused limit nor the order's positive contribution establishes that extension.
 
@@ -151,7 +151,7 @@ The forecast follows the selected corporation's ability to pay. A group total ca
 
 ### FIN.2:7 - Conformance Checklist
 
-Can another treasurer recover the usable opening amount, all material dated flows, reserve, draw conditions and gross-to-net proceeds? Does every proposed cure remain funded through its repayment? Are cash in another entity and unfulfilled conditions excluded from the asserted available amount?
+For the stated payer, date, currency and reserve, does the evidence settle the requested funding question? A bound can settle whether one payment is covered. To rely on a dated funding plan, trace the material flows, access conditions and gross-to-net proceeds through later repayments. Check that the payer can use money held elsewhere at the required time.
 
 ### FIN.2:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -163,7 +163,7 @@ The result identifies the amount and date that a response must cover and the con
 
 ### FIN.2:10 - Architectural Rationale
 
-A dated cash account makes the decisive constraint visible before financing is ranked. Ratios can summarize liquidity but cannot demonstrate that a particular payment is fundable at its cutoff.
+A dated cash account shows when a constraint binds. An aggregate ratio for a reporting period may hide a shortfall on the payment date. A certified lower bound on this payer's available funds at the cutoff, after other obligations and the reserve, can establish coverage. An upper bound below the amount due can establish a shortfall.
 
 ### FIN.2:11 - SoTA-Echoing
 

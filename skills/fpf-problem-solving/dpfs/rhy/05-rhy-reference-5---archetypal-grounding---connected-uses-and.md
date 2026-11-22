@@ -8,7 +8,7 @@ Suppose a pair can perform a familiar passage. With an added foot ornament, the 
 
 With RHY.2 the pair distinguishes foot contact, continuing movement and the cue the partner uses. They use RHY.3 to find an articulation that preserves that movement and RHY.4 to check the timing of the cue the partner receives. They choose a smaller ornament with RHY.8 and arrange the cue with RHY.9. RHY.10 and RHY.11 help them coordinate the shared reference and the actions that must continue together.
 
-Suppose the partner uses the transition in the next attempt. That supports the variant for this pair at this pace. To claim it works at a faster pace or with another partner, use evidence for that condition. Use RHY.13 when that question is part of the task.
+Suppose the partner uses the transition in the next attempt. That supports the variant for this pair at this pace. To claim it works at a faster pace or with another partner, use evidence for that condition. Use RHY.13 when that question is part of the task. If the booking names this pair and this passage, their existing performance may suffice. For an assignment with a substitute partner, identify the cue and preparation on which the transition depended and whether the substitute can use them.
 
 Now suppose a related rotating figure fails. The dancer has the strength to support the body and remembers the figure but cannot maintain balance through the turn. Balancing is part of turning while the turn is part of performing the figure with the partner. These actions occur together. A reduced turn permits practice under narrower conditions. The teacher can supply or obtain suitable balance instruction and use RHY.12 to help the dancer restore it in the turn and the partnered figure. The earlier ornamented passage remains usable.
 
@@ -19,6 +19,8 @@ A group receives a syllable sheet and a recording. The sheet indicates an attack
 To learn the phrase in this case, the group needs the recording and someone who can demonstrate its convention. Use C.36.RP to make both contributions obtainable. With MDPE.17 arrange the group’s opportunity to perform. Use RHY.9 and RHY.10 to allocate the voice and shared reference, and RHY.12 to practise sustain and release.
 
 Suppose the group then reproduces and deliberately varies the phrase without the demonstrator. That establishes receiving performance with the other conditions in place. Use RHY.13 for a question about later retention when evidence across the interval is required. For the source question in MDPE.18, the recording establishes this particular realization. Establish a claimed origin or lineage from historical evidence.
+
+That joint performance can qualify the group for the named rehearsal. If one member is later to lead the variations, identify who chose them and what the other members contributed. A record of the same performance may establish that choice when it was still open and its author can be identified.
 
 If the practice is to continue, use MDPE.19 to check whether later users can still obtain the recording, instruction and a suitable occasion to practise. A capable demonstrator who agrees and is available can replace the earlier provider. Reassess the affected use if this provision changes. Evidence of one group’s success leaves population-wide continuation open.
 

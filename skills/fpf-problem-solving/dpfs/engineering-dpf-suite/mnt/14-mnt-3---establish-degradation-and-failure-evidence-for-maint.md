@@ -25,7 +25,7 @@ State the functioning question and the failure claim that would change the decis
 
 Establish what the available evidence covers. For a physical component, this can include operating conditions, measurements, photographs, inspection returns, installation and removal facts, applicable configuration and the sequence of earlier work. Preserve when and how observations were obtained. An occurrence reconstructed from an operator's report has a different evidential limit from a directly inspected fracture surface.
 
-Build the smallest useful causal account. Connect the required function to the observed departure, candidate mechanism, local effect, System effect and consequence. A short table can keep alternatives visible:
+Build the causal account the decision needs. For an event classification the inspection and event definition can suffice. When the question concerns loss of service, follow the candidate mechanism from the affected item through its actual connection and operating state to the consequence. A standby may have kept the service available throughout the local failure. Establish a past interruption from evidence of what actually occurred. A short table can keep alternatives visible:
 
 | Candidate explanation | Observation it explains | Evidence that could change the maintenance choice |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ If you need to construct a causal account for the maintenance question or work o
 
 Distinguish what is supported, what remains plausible and what is contradicted. Do not turn a possibility into a cause by placing it in a fault-tree box. Where several explanations support the same immediate recommendation, return that recommendation's evidential basis and leave the stronger causal claim unresolved. Where the alternatives require different actions, identify the smallest attainable observation that could discriminate them.
 
-For population claims, recover the denominator and observation process. Operating hours, starts, cycles, calendar exposure and units under observation answer different questions. A unit still operating at the end of observation has a known survival interval, not a known eventual lifetime. A preventive removal ends or changes that component's exposure; an overhaul may not restore it to an as-new state. Treat those distinctions explicitly before fitting or comparing a failure model.
+For a population claim, identify what counts, the observation process and the coverage needed for that claim. One confirmed event establishes occurrence. A complete count needs coverage of the eligible events, and a rate also needs the exposure appropriate to its denominator. Operating hours, starts, cycles, calendar exposure and units under observation answer different questions. A unit still operating at the end of observation has a known survival interval, not a known eventual lifetime. A preventive removal ends or changes that component's exposure; an overhaul may not restore it to an as-new state. Treat those distinctions explicitly before fitting or comparing a failure model.
 
 When selecting an investigation, compare its obtainable contribution with the whole burden. Include the effect of delay, disturbance, specimen preservation and specialist interpretation. A low-value inquiry can stop while an adequate maintenance answer remains available. If a claim has high consequence, use the applicable evidence and assurance rules for that claim; more records alone do not establish it.
 
@@ -53,7 +53,7 @@ The planner can therefore give the recommendation now. If the selected intervent
 
 The 48-pump example exposes a different error. Group A has four relevant failure events in 20,000 operating hours; group B has six in 56,000. The comparable crude event rates are 0.20 and approximately 0.107 per 1,000 hours. The first group has fewer events but a higher exposure-adjusted rate. Neither comparison proves a causal policy difference: operating conditions, component histories, event coding and selection may differ.
 
-If two of the six records are preventive removals, even that crude rate needs correction before use. Return the corrected event classification and the failure account it supports. The corrected rate alone does not determine a lifetime distribution.
+If two of the six records are preventive removals and exposure stays at 56,000 hours, the corrected rate is 4/56,000, about 0.071 events per 1,000 hours. Even if the classification of those two records is unresolved, group B has at most six failures on that exposure. Its crude rate is lower than group A’s under either classification. Return that comparison now if requested. An exact rate for B still needs the classification or another sufficient result. The rates alone leave the lifetime distribution open.
 
 ### MNT.3:6 - Bias-Annotation
 

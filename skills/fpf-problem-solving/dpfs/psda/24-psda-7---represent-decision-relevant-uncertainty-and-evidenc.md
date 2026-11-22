@@ -71,7 +71,7 @@ Use a qualified result within its limits. If a material premise remains missing,
 
 Trace shared data, common causes, assumptions and dependencies where they affect the comparison. Treat repeated use of one dataset as a shared source. To combine independent or dependent judgements, state the aggregation Method, its assumptions and their fit.
 
-Keep incompatible assumptions separate until a direct result supports their combination. For example, a scenario with a failed access route and a scenario with a functioning route can test different claims; combining their most favorable outcomes produces no realizable case.
+Keep incompatible assumptions separate until a direct result supports their combination. For example, a scenario with a failed access route and a scenario with a functioning route can test different claims; combining their most favorable outcomes produces no realizable case. Ask what the recipient needs to infer from the remaining possibilities. Uncertainty about which participant will need help can leave the total needed known. To promise help by a deadline, preserve who can select the response and what they will know at that time. If either of two permitted calls can occur alone, providing for one call may suffice. If both can occur together, check the joint demand.
 
 For disagreeing models, locate the overlapping claim and examine scope, input, representation, mechanism and evidence. Explain a mismatch where its source is established, or retain the distinct supported assumptions or models. A discriminating measurement can be worth obtaining when it would improve the intended result.
 

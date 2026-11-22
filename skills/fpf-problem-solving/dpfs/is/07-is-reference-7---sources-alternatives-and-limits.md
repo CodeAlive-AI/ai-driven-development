@@ -6,6 +6,6 @@ The [2020 conceptual account](https://link.springer.com/article/10.1186/s12913-0
 
 An implementer can use A.3.1.MI to introduce a practice without a separate helping relationship. Use it to distinguish observations of implementation, adaptation of the target, changes to the support strategy and causal claims. HCD, OCE, CB and the Core Method-development family supply their own Methods. The constructed cases illustrate reasoning under their stated conditions.
 
-Obtain the relevant technical Method, learning contribution, organizational arrangement or development direction from the practice that can provide it. Preserve its conditions of use and identify any gap for the recipient. Reduce a service promise when it depends on expertise that cannot be supplied.
+Obtain the relevant technical Method, learning contribution, organizational arrangement or development direction from the practice that can provide it. Preserve its conditions of use and identify any gap for the recipient. If the available expertise cannot support the promise, identify the affected work. Those who control the undertaking can agree different terms or arrange another qualified source.
 
 The short entries identify the receiving work and a contribution that could help. Use the relevant Method or the supplying practice in IS.Reference:1 when an operation, condition or evidence claim remains unresolved. The examples show selected combinations.

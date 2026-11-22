@@ -8,7 +8,7 @@
 
 Use this pattern when a shared cost must be assigned to products, customers or units, or when an assigned amount is being interpreted as something its recipient caused or can avoid.
 
-The pattern governs a purpose-qualified shared-cost assignment. It returns assigned amounts reconciled to the source total, with the consumption evidence and any allocation convention needed to interpret them.
+For a shared-cost assignment, return the requested charges under the applicable source pool and rule. For a claim that a payment will disappear if one activity stops, establish what the provider’s terms and resource decisions would actually change. A full allocation is due when the recipient needs charges for the whole pool.
 
 If the current assignment is adequate for its use, retain it. An incremental choice can often use actual changed flows without allocating every shared cost.
 
@@ -34,13 +34,13 @@ Recipients can influence both the rule and recorded use. An apparently technical
 
 #### MA.3:4.1 - Establish the receiving purpose and source total
 
-State what the assignment must support: a management account, agreed charge, pricing analysis, reporting requirement or another particular use. Recover the source pool, period, included costs and relevant resource meaning.
+Start with the decision and the amount in question. If the manager asks how much of a supplier payment would disappear, follow the payment terms through the proposed change. A fixed payment throughout the horizon can settle that question. To assign a charge to a product, customer or unit, identify the rule, source pool, period and resource meaning relevant to that assignment.
 
-Separate pools whose capability or monetary behavior would change the interpretation. Reconcile the source total before distributing it; an unexplained residual must not be hidden in a recipient's rate.
+Separate pools where their cost behavior or accounting treatment matters. To distribute an entire pool, reconcile its total and account for any residual. For an individual charge, apply the governing rule to the facts it actually uses. A contract can fix a charge per member, per unit used or as a share of the pool. Each basis calls for different information.
 
 #### MA.3:4.2 - Trace what the evidence supports
 
-Recover the resource consumption attributable to each recipient at warranted detail. Use MA.1 for missing dependencies and MA.2 for a disputed supply or capacity meaning.
+Trace the consumption attributable to each recipient when the inquiry or charging rule uses consumption. A fixed charge for connection can be established from the agreement and membership alone. Use MA.1 for missing resource dependencies and MA.2 for a disputed supply or capacity meaning.
 
 Retain joint or sustaining costs at the level their explanation supports when the receiving purpose allows it. A sales-value percentage can be an allocation convention; it does not establish resource consumption merely because it correlates with a recipient's size.
 
@@ -54,9 +54,9 @@ Where plausible rules could change a consequential interpretation, show that sen
 
 #### MA.3:4.4 - Return the assignment with its warranted interpretation
 
-Supply the assigned amounts, their source total and the tracing or convention needed to interpret them. State whether the assignment describes resource consumption, an agreed charge or another specific account.
+Return the amount or bound the recipient asked for, how it was established and the period it covers. For an assignment, show which part follows from traced use and which follows from a convention. For a full distribution, include its reconciliation to the source total.
 
-If someone proposes an avoidance or closure conclusion, obtain the actual payment and opportunity changes through MA.1–MA.2 and OPS.14. MA.9 examines the assignment's behavioral consequences when they are the unresolved question.
+If someone proposes an avoidance or closure conclusion, identify which payments or opportunities that claim concerns. An unchanged contract can settle the question about one charge. Use MA.1–MA.2 and OPS.14 when the full decision depends on further changes. MA.9 examines the assignment's behavioral consequences when they are the unresolved question.
 
 ### MA.3:5 - Archetypal Grounding
 
@@ -76,9 +76,9 @@ The example uses an agreed internal convention.
 
 ### MA.3:7 - Conformance Checklist
 
-Examine whether the assignment has a stated use; its source pool and period are adequate; supported tracing is distinguishable from convention; assigned amounts reconcile with explicit residuals; and the recipient can tell what the amounts support.
+For a charge, can the recipient establish the period, the rule and the facts that determine its amount? For a full distribution, do the assigned amounts and explicit residuals reconcile to the pool?
 
-An avoidance claim additionally needs evidence of the actual change. Reconciliation alone cannot supply it.
+For a question about an avoidable payment, does its amount or a sufficient bound follow from the change in the relevant terms and work? Making a decision about closing a whole activity can require additional consequences.
 
 ### MA.3:8 - Common Anti-Patterns and How to Avoid Them
 

@@ -68,13 +68,13 @@ Identify the failure that can defeat the combined result: a missing specialist a
 
 Keep completed contributions available within the conditions they still meet. Independent work can proceed under its own permission, as when a price inquiry is ready while booking authority is pending.
 
-For overlapping cases, inspect relevant resource windows, priorities, repeated work and existing commitments. OPS.8 supplies operational joins and protection; OPS.12–OPS.13 supply material burden and promise questions. A shared specialist already committed elsewhere is not additional simultaneous capacity.
+For a proposed service, establish the combinations recipients may request and who controls each timely response. A decision fixed before the recipient is known must allow the work to finish under every possibility still open to the decision maker. Use a common arrangement when it works for all of them. For overlapping cases, account for resource windows, priorities, repeated work and existing commitments. OPS.8 supplies operational joins and protection; OPS.12–OPS.13 supply material burden and promise questions. A shared specialist already committed elsewhere is not additional simultaneous capacity.
 
 If the effect of an earlier attempt is unknown, use ADM.9–ADM.10 to look for evidence of the effect. If it remains unknown and another action could duplicate it, hold that action and report the unresolved condition, even if individual providers have closed their tasks.
 
 #### ADM.11:4.5 - Establish what the connection supports
 
-Use an applicable earlier check or walk a case through the contributions to establish whether the receiving provider can identify the next action. Examine a failing connection when its handling matters. For a claim about provision, use evidence that the recipient obtained the promised condition, including the recipient’s account when needed.
+Use an applicable earlier check or walk a case through the contributions to establish whether the receiving provider can identify the next action. Examine a failing connection when its handling matters. For a deadline, establish when access became usable. A supported latest time can settle that question. For a promise of continuous access, establish availability across the promised interval. One successful use leaves other times open. A claim that timely service can be promised in future cases uses the terms and feasible responses established above. Timely configuration and continuing availability can establish readiness even if first use came later. If use itself was promised, establish the required use at the relevant time. The recipient’s account may supply either result under the appropriate conditions.
 
 A description walkthrough tests the arrangement's intelligibility. A bounded operational trial can establish actual transfer, performance and use under its observed conditions. A reliability claim needs evidence covering the providers and conditions to which it applies.
 
@@ -90,20 +90,20 @@ The appointment office supplies a decision effective on 1 October. The identity 
 
 The first three contributions are adequate within their stated conditions. The missing input is the correspondence between M and the account that will actually read D. The coordinator sends the bounded mapping question to the assigned access provider, which can recover the account binding through its authorized directory procedure.
 
-After establishing that binding, the archive provider configures the permitted account. Mira opens D, and the available evidence supports the promised condition. The original appointment, identity result and grant remain applicable to Mira and D.
+After establishing that binding, the archive provider configures the permitted account. At 09:55 on 2 October Mira opens D with that account, establishing access by 10:00. An opening observed only at 10:20 would establish access by 10:20. It could also support the earlier deadline if records established that the usable configuration and other necessary conditions already held at 10:00. The original appointment, identity result and grant remain applicable to Mira and D.
 
 | Join | What the receiver actually uses |
 | --- | --- |
 | Appointment to grant decision | The relevant person, effective assignment and scope required by the supplied access rule. |
 | Identity result to grant decision | The accepted person result for that beneficiary under the rule's conditions. |
 | Grant to archive provision | The permitted action and resource, effective time, beneficiary and supported account correspondence. |
-| Archive provision to service completion | Evidence that the intended recipient can use D within the grant. |
+| Archive provision to service completion | Evidence that Mira could use D under the grant by 10:00 on 2 October. |
 
 If the provider cannot recover the mapping, the service retains that precise gap and the accountable recovery action. The coordinator's assignment does not authorize inventing a mapping or broadening the grant.
 
 #### ADM.11:5.2 - Shared provision does not establish shared capacity
 
-Two services rely on the same specialist during a two-hour window. Each local plan assumes that the specialist is available for its full two-hour job. Together the jobs require four specialist-hours within a two-hour window.
+The provider has promised two separate two-hour performances by one specialist in the same two-hour window. They require four specialist-hours. If the agreement instead permits both recipients to use one common result and a single performance meets both needs, two hours can suffice. For a promise to serve either one, establish who may choose, whether both requests can become due and when the person making the first binding allocation will know which recipient needs service. If that person must commit a room before the requester is known, the booking must work for either eligible requester or allow a timely adjustment.
 
 The responsible parties use the actual service priorities and commitments to resolve the resource question. They may change timing or obtain qualified additional provision where authorized. The administrative join account supplies the affected cases, needed specialist results and obligations. A claim that a new shared-service arrangement will solve the problem remains conditional until its actual capability and timing are established.
 

@@ -98,7 +98,7 @@ The service owner recovers P and the adequate existing expense-correspondence pr
 
 For the reusable repair, the assigned provider implements the supplied correspondence and effect check where the payment decision uses it. The design retains the actual expense identity and evidence needed by the qualified procedure. Two distinct expenses can have the same amount.
 
-The exercise includes the same expense with a different photograph, two distinct expenses with equal amounts, and an unavailable prior-payment source. The first must retain the earlier reimbursement result; the second must preserve the distinct expenses; the third must return the missing effect evidence rather than pass the check. Use these expected outcomes to judge what the trial actually demonstrates.
+The exercise includes the same expense with a different photograph, two distinct expenses with equal amounts, and an unavailable prior-payment source. The first must retain the earlier reimbursement result; the second must preserve the distinct expenses; for the third, use an independent adequate reconciliation if one exists. If the earlier payment remains unknown and the decision depends on it, return the outstanding question. Use these expected outcomes to judge what the trial actually demonstrates.
 
 #### ADM.14:5.2 - A paper requirement and an existing policy answer
 

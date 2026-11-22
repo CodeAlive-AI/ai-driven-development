@@ -6,9 +6,9 @@
 
 ### SYSE.41:1 - Problem frame
 
-Use this pattern to establish what artifact and configuration run on a named target or to deploy the required configuration. Start with the artifact-specific basis from SYSE.32 and the intended target and configuration from SYSE.13. For deployment, establish the required resources, dependencies, applicable data-change result from SYSE.34 and permission for the operation.
+Use this pattern to establish what artifact or configuration runs on a target or to deploy a required configuration. For a question about current state, identify the property and the target or population the answer must cover. For deployment, start with the artifact qualification from SYSE.32, the target and configuration from SYSE.13, the required resources and dependencies, any applicable data-change result from SYSE.34 and permission for the operation.
 
-The first result is an observed deployed configuration with its deployment test, interval and limits, or a precise failed/unknown partial state. A promoted artifact, committed desired state or completed controller job can leave the requested version or configuration absent from the target.
+For a question about a running version or effective setting, a qualified readback on the relevant target can complete the answer. For a deployment, establish the intended runtime state, the applicable test result and any partial or uncertain effects. If several targets supply one service, the release decision may also depend on which versions operate together or where work is routed.
 
 If the required current runtime already exists with applicable observation and test evidence, use the existing runtime and its evidence. If artifact qualification or data compatibility is missing, return that condition before the dependent operation. This pattern does not supply general application acceptance, wider exposure permission or the whole-System usability decision.
 
@@ -31,7 +31,7 @@ Blindly repeating the whole job can duplicate resources or repeat a migration. R
 
 #### SYSE.41:4.1 - Recover the intended and actual configuration
 
-Identify the verified artifact and the applicable evidence. For an installation, establish that its bytes are obtainable. Identify the target, runtime configuration and required dependency/resource conditions. Keep configuration separate from the artifact where the software supports it; do not rebuild the tested package for the destination.
+Identify the target and the running property the decision needs. A qualified report of its effective setting may settle a question about that setting. For an installation, identify the verified artifact, establish that its bytes are obtainable, and recover the intended configuration and dependency conditions. Where configuration is supplied separately, carry the same tested package to the destination.
 
 Inspect the actual target state before acting: what is running, what is installed, which configuration is effective, and whether an earlier attempt has already changed anything. A desired-state file or an old deployment record does not replace current observation when drift or partial effects are material.
 
@@ -49,7 +49,7 @@ Account for each step's partial and replay behavior. Preparation may create reso
 
 Where the observed target still needs work, perform the required, authorised steps in order. These may include preparing resources and dependency access, installing or updating the selected artifact, and applying its matching configuration. Use the existing authorized secret mechanism and verify configuration without displaying the secret values.
 
-Observe the result per target. Establish which artifact is running and which configuration is effective. A copied file or a requested controller value does not establish either result. Check the dependency state relevant to the named use. Distinguish running, failed, not yet attempted and unknown targets.
+Establish the running artifact and effective configuration on the targets the question covers. A service-wide attestation can answer for several targets if its coverage, meaning and currentness establish the required condition throughout. Preserve differences among instances when routing, coexistence or a partial change can alter the user’s result. Check the dependencies needed for that use.
 
 For a reconciliation mechanism, observe convergence and the process result. A declaration accepted into version control or a desired replica count is not evidence that the intended artifact/configuration is serving the required use.
 
@@ -71,7 +71,7 @@ Use SYSE.34 before returning binaries across a changed data boundary. If effects
 
 #### SYSE.41:4.6 - Return the deployed result to its consumers
 
-Provide the observed artifact/configuration, targets, dependency/test result, interval and remaining limits through the existing runtime and working account. Distinguish an engineered deployment procedure from a completed execution of it.
+Return the runtime property, targets and time the observation covers. For deployment, include the dependency and test results required for reliance, any unresolved effects and the scope of the supported use. A procedure can be delivered for a future deployment. A claim of completed deployment needs grounds for the actual result.
 
 SYSE.11 can use these integration observations to assess bounded usability of the resulting System. Use SYSE.35 when further exposure needs evaluation, and SYSE.14 when an authorized release decision is needed. A passed deployment test does not supply permission to widen use.
 
@@ -113,7 +113,7 @@ Now consider a partial history. The first instance reports h2/c2. The second ins
 
 The operator keeps ordinary routing on the old pool and excludes the unqualified candidate. With the partial state known, the operator applies the authorized c2 correction to the second instance, verifies that the running process loads c2, and repeats the bounded deployment test. If the correction fails, the operator can retain a clearly bounded qualified subset or remove/return the candidate only under the selected capacity and recovery conditions.
 
-If readback is unavailable, no successful correction is inferred. The unresolved target remains unknown and cannot be included in a qualified deployment result. Retrying every command would not repair the missing state knowledge.
+When direct readback is unavailable, determine whether an independent authenticated report covers the running configuration at the time required. A record of an earlier state needs grounds for continuity. Keep unresolved targets out of a deployment result requiring confirmed state. A separately commissioned readback or functional test remains due.
 
 Returning candidate processes to h1/c1 is available in this example only because the old data contract remains valid and the runtime restoration test succeeds. A migration that loses information required by the old data contract or the agreed recovery result would remove that basis. A new data migration is never repeated merely because the outer deployment job did not report success.
 
@@ -126,8 +126,8 @@ Deployment tools encourage attention to their own job state. That can hide mixed
 ### SYSE.41:7 - Conformance Checklist
 
 - Before changing a target, the applicable artifact qualification, target and configuration, dependencies, data conditions and permissions are established. A missing prerequisite is stated for the operation it prevents.
-- The starting state is established or its uncertainty stated. Any usable previous configuration and its return conditions are identified.
-- The bounded procedure names relevant ordering and partial/replay behavior.
+- For a deployment, establish the starting state or its uncertainty and identify any usable fallback and its conditions.
+- A procedure for deployment identifies the ordering, partial effects and replay conditions that matter to that operation.
 - For each target credited with successful deployment, observations establish the running artifact and effective configuration.
 - For a claimed successful deployment, an applicable test covers the named use under permitted conditions. A missing test limits that claim.
 - After partial failure, the selected continuation is authorized and qualified for the states still possible. A stateful return stays within its qualified boundary.
@@ -144,7 +144,7 @@ Deployment tools encourage attention to their own job state. That can hide mixed
 
 ### SYSE.41:9 - Consequences
 
-The pattern makes partial deployment visible and supports safer continuation or return. A successful deployment claim needs applicable runtime observations and test results. A return to prior service needs qualified fallback conditions; missing evidence limits the corresponding conclusion. Some deployment mechanisms need improvement before they can distinguish copied, loaded, failed and unknown states.
+The pattern makes partial deployment visible and supports safer continuation or return. A successful deployment claim needs evidence of the commissioned runtime result and the tests the acceptance agreement requires. A return to prior service needs qualified fallback conditions; missing evidence limits the corresponding conclusion. Some deployment mechanisms need improvement before they can distinguish copied, loaded, failed and unknown states.
 
 ### SYSE.41:10 - Rationale
 

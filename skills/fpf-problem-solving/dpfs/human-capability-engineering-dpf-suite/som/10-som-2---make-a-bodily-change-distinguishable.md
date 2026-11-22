@@ -21,9 +21,9 @@ Choose a contrast large enough for the performer to notice and suitable for the 
 
 #### SOM.2:4.1 - Construct an accessible contrast
 
-For a new comparison, select two comfortable ways the performer can already carry out one task-relevant change. Vary the support, intended direction or amount as needed to make that contrast accessible. Keep other conditions alike where possible and note any differences that could also explain the observation.
+For a new comparison, choose comfortable conditions that give the performer an opportunity to experience the relevant difference. The performer can make a familiar change themselves, or suitable support or an instructor can supply a change that the performer is being asked to recognize. Vary the support, intended direction or amount as needed to make that contrast accessible. Keep other conditions alike where possible and note any differences that could also explain the observation.
 
-For a new trial, compare the first variant, the second and then the first again. An existing sequence showing those comparisons can supply the same evidence. Examine what changes during the action and after release. The return tests whether the performer can recognize the contrast again under these conditions.
+A return to the first variant can help the performer notice a contrast again. Use an existing observation when it answers the question. For an assignment to recognize the change as it occurs, distinguish what the performer felt from what the announced order or the teacher's cue already told them. Vary the order or ask for the performer's judgement before identifying the change when that distinction affects the answer. Keep any support that belongs in the task.
 
 In familiar writing, compare the usual pen hold with a slightly lighter hold while the forearm rests in its usual supported position. Return to the usual hold. Do not deliberately increase load to obtain a stronger sensation.
 
@@ -47,9 +47,9 @@ Use SOM.3 if the performer recognizes a needed change but cannot yet regulate it
 
 In the writing comparison, one performer may report a change around the fingers and another a broader change in the hand and forearm. Check whether each can recognize their difference again. When the question concerns choosing or regulating an action, establish what that distinction helps the person do. The appropriate resolution depends on the person and the task.
 
-Suppose the writer distinguishes the usual and lighter hold while stationary and loses that distinction during the stroke. This supports recognition in the preparation and leaves its use in motion unresolved. Another writer might feel the difference while moving and produce the same continuous line with either hold. In that case the mark alone gives no reason to prefer one hold.
+Suppose the writer distinguishes the usual and lighter hold while stationary and loses that distinction during the stroke. The writer recognized the change in preparation and missed it during this stroke. How reliably the writer could recognize it in other moving strokes remains open. Another writer might feel the difference while moving and produce the same continuous line with either hold. In that case the mark alone gives no reason to prefer one hold.
 
-A dance teacher may choose a familiar supported preparation in which a dancer can distinguish two directions before using them in a turn. Use dance instruction for the directions and safe preparation. Compare the variants and return to the first to check the distinction under that support.
+A dance teacher may choose a familiar supported preparation in which a dancer can distinguish two directions before using them in a turn. Use dance instruction for the directions and safe preparation. Comparing the two variants and returning to the first can help the dancer notice the difference. To establish that the dancer can recognize the direction under that support, use a response in which the identifying choice is theirs. A teacher who has just announced the direction can still judge how the dancer acts on the cue.
 
 ### SOM.2:6 - Bias-Annotation
 
@@ -71,7 +71,7 @@ The performer and teacher can use the recognized contrast to refer to the same c
 
 ### SOM.2:10 - Architectural Rationale
 
-A recoverable contrast gives the bodily instruction a referent the performer can recognize. Returning to the first variant checks whether they can recognize the difference again. Comparison in the receiving action tests whether it matters there. Evidence of deliberate change is needed to establish regulation.
+A recoverable contrast gives the bodily instruction a referent the performer can recognize. Returning to the first variant lets the performer compare the experiences again. An announced return can help learning while leaving recognition of an unannounced change open. Comparison in the receiving action tests whether it matters there. Evidence of deliberate change is needed to establish regulation.
 
 ### SOM.2:11 - SoTA-Echoing
 

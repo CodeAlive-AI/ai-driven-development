@@ -27,7 +27,7 @@ Work through a real next episode. What action is required, what discretion and h
 
 #### GOALS.6:4.2 - Locate the difficulty that changes the remedy
 
-Recover a recent attempt and enough of its conditions to distinguish the live alternatives. If the person knows the action but lacks time, access or equipment, obtain or change that provision. If the goal is unclear, use GOALS.1. If the action itself is unknown, obtain the subject method. If the person cannot yet perform a required operation, use HCD to define and develop that contribution. If capable action occurred but failed to help, examine the means hypothesis through GOALS.4.
+Use the grounds relevant to the next assignment. A person's earlier comparable work under the help that will be available can justify a first appointment here. A known lack of access can already settle what must be supplied. When rival explanations of a difficulty lead to different remedies, recover an attempt and its conditions. If the goal is unclear, use GOALS.1. Obtain a missing subject method from its practice. If the person needs to develop a particular operation, use HCD. If capable action failed to help, examine the means hypothesis through GOALS.4.
 
 For a learning goal, state the later task, conditions, allowed assistance and evidence of the human contribution. Compare learning with obtaining a competent result from a colleague, provider or agent, preserving any independent value placed on personal mastery. HCD.2 supplies the full programme comparison. Count practice, feedback and correction alongside current work; adding a course cannot create spare capacity.
 
@@ -43,7 +43,7 @@ Compare the relevant goals together, including current obligations, recovery and
 
 When pursuit becomes less worthwhile or feasible, consider a change of means, a narrower next contribution, a pause or relinquishing the goal. Distinguish the specific target from the wider purpose it serves. Ending one route can preserve another; persisting can remain justified when the purpose and available way still warrant it. Include the remaining opportunity costs and the person's values. Use GOALS.4 to make any affected commitments and continuation explicit.
 
-Return a concrete next action and the help or decision it needs. Arrange feedback from the receiving work at an occasion when it can change the next attempt. Retain successful support when independence is unnecessary; test independent performance only when that is the claim. Recognition identifies the kind of difficulty. Assurance grounds the proposed remedy and the actual capability or outcome claimed.
+Return the next action and any help or decision it needs. When developing an ability, arrange feedback from the work in time to inform another attempt. For a decision about present capability, use sufficient evidence of the person's own work with the support permitted in the assignment. A claim that ability changed needs a comparable earlier basis. To credit a particular learning arrangement for the change, compare with what the person's ordinary work would have produced.
 
 ### GOALS.6:5 - Archetypal Grounding
 
@@ -61,7 +61,7 @@ People differ in purpose, constraints, available help and the cost of disclosure
 
 - Does the action fit the person's actual participation and the role's reliance?
 - Has the remedy addressed the difficulty that can change performance?
-- Are learning, assisted delivery and independent performance distinguished?
+- For a first or later appointment, what establishes the person's contribution under the available assistance? If learning or its cause is claimed, do the grounds also cover the change claimed?
 - Do competing goals and the required help fit the available conditions?
 - Can the person recognize when to keep, adapt, pause or end this pursuit?
 

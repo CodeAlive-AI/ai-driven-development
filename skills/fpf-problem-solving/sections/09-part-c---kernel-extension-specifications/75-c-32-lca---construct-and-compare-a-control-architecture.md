@@ -60,7 +60,7 @@ State what is meant to change, for whom, by when, and within which protected con
 
 Identify the acting participants, the subject affected, the available interventions, and the observations that can inform their selection. Recover what an existing arrangement does from an actual consequential episode or an adequate model. For a proposed arrangement, explain the intended dependence without describing it as already operating.
 
-A feedback claim needs an observation, an influence returned to the subject, and a rule and case facts coupling that influence to the observation. **B.2.5** supplies this recovery. Use the result here to find which dependence must be constructed or changed. A dashboard that nobody uses to change action supplies information but not that control dependence.
+For a proposed feedback arrangement, specify which later intervention can depend on an observation returned from the controlled system, and how the intervention can affect that system. For an operating arrangement, establish when that dependence was in use. **B.2.5** develops the supervisor–subholon claim when an acting system supervises identified holons. It recovers the observation, the influence returned to each holon and the facts coupling that return to its observation. A dashboard can supply a useful reading before anyone has decided how to act on it.
 
 Keep the selected structure and its representation distinct. **C.30.LCA** helps recover the observation, command, reference, feedback and timing relations represented in a view. Use those relations as inputs, then examine their consequences below. An organizational chart may omit an external supplier who controls a needed release; including that relationship does not make the supplier part of the enterprise.
 
@@ -116,7 +116,7 @@ Then follow a consequential demand forward from the available observations and i
 
 **C.32.MWA.PP:4.3–4.7** supplies the general construction across Method, Work, performer, means and allocation structures, including their joint demands. Use that account where the proposed division leaves performance or support unresolved.
 
-Here the additional connection is control-specific: explain how the joined contributions turn an observation into a permitted influence on the subject, and how the resulting observation can change the next decision. Change the division or its possible realization when that connection fails; preserve already adequate contributions.
+For control, connect the source of the reference or input to the decision, the permitted influence and the means by which it reaches the subject. For a proposed feedback path, also trace how an observation returned from the subject can affect the next decision. Change the division or its realization where it leaves a needed connection open.
 
 For each candidate, explain how a local result becomes usable by the next participant and how a consequential limitation returns. The result is a candidate arrangement with an operating mechanism, not a collection of independently desirable boxes.
 
@@ -206,7 +206,7 @@ For each relied-on component or participant result, state its inputs, operating 
 
 Begin with a jointly possible situation. Two controllers can each require the other to have already restored the shared condition. Two teams can each promise to start when the other releases the only specialist. Such mutual expectations supply neither an initial action nor a continuation. Construct an initial allocation, a compatible joint condition or another arrangement.
 
-Next follow a consequential action or change through the whole. Establish what remains true, what must be updated and what is available next. A successful isolated execution does not establish repeated continuation.
+Next follow a consequential action or change through the whole. Establish what remains true, what must be updated and what is available next. For a promise about recurring work, start the next job from a state in which the preceding job can leave the shared means. A rule or bound can establish continued feasibility if the work can start under its stated conditions and every permitted transition leaves the next job with what it needs. A record of one execution can settle what happened on that occasion.
 
 For a modeled controller interconnection, derive or obtain the joint dynamics rather than combining separate stability labels. Include reference changes, state estimation, hold rules, actuator limits and computational delay. A technical result can establish an admissible region, an error bound, recursive feasibility, stability or goal attainment; retain the property established. These results are not interchangeable.
 
@@ -328,6 +328,8 @@ A forecast of a likely change can allow reversible preparation before approval. 
 The installer checks the panel in place and reports completion or a problem to the coordinator. The table bounds physical installation. If the venue also needs confirmation by 16:00, include time for this check and report or establish that the approved release already covers them. A missing report leaves the installation status open. One person may perform several contributions when the demands still fit. Their number does not determine a management hierarchy.
 
 The timing implication is mathematical under its premises. The premises about people, authority, resources and duration need organizational support and observation; they are not supplied by the equation. In actual use, distinguish a committed service bound, an empirical estimate and a planning assumption.
+
+The same hour-long bound can cover another panel presented on its own if the path from the content change to physical installation includes all its work and waiting, with the same upper bounds, authority and available capacity. An added wait for material to set can break the bound even if the four operations take the same time. A promise to confirm completion needs a bound through confirmation. To promise two installations with overlapping windows, account for the shared editor and printer across both. One approval can serve both panels only when it covers both and arrives in time for each. Place the shared work and the remaining work on the joint schedule.
 
 #### C.32.LCA:5.3 - The smaller sufficient result
 

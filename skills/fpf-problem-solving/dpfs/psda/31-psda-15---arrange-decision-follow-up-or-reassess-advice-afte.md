@@ -73,7 +73,7 @@ Choose timing from the consequence of late knowledge. If collecting and interpre
 
 #### PSDA.15:4.3 - Generate and compare follow-up arrangements
 
-Use an adequate existing arrangement. When design remains open, compare the viable ways of obtaining and using the evidence the question needs. Possibilities include a recipient-owned scheduled review using existing evidence, a targeted specialist test before a commitment, event-driven notification with qualified interpretation, or a coupled arrangement combining targeted tests with a limited route for unexpected changes. A justified one-off return with no continuing service may be enough for a short, low-consequence use.
+Use an adequate existing arrangement. When asked to design one workable arrangement, establish how it gets the needed evidence to the people who can use it in time. A choice between arrangements also needs grounds for the relevant differences. Possibilities include a recipient-owned scheduled review using existing evidence, a targeted specialist test before a commitment, event-driven notification with qualified interpretation, or a coupled arrangement combining targeted tests with a limited route for unexpected changes. A justified one-off return with no continuing service may be enough for a short, low-consequence use.
 
 Compare coverage of the material questions, detection and interpretation delay, uncertainty, participation, observer independence where required, effort, confidentiality, cost, and the feasible receiving response. Do not maximize the number or frequency of indicators. For a time-critical action, check whether a competent authorized receiver can act before the deadline. A timely observation can also answer a technical question in its own right.
 
@@ -196,7 +196,7 @@ Outcome bias can rewrite the earlier advice as obviously correct or wrong after 
 | --- | --- |
 | Distinct results | Recommendation, later authorized decision, intended work, implementation and observation are distinguished wherever the finding relies on them. A missing fact is reported as a limit on the claim it affects. |
 | Material observation | Each selected observation can change a named premise, claim, alternative, condition or boundary; any threshold has a qualified meaning. |
-| Design choice | When a follow-up arrangement needs to be designed, the feasible arrangements were assessed for coverage, delay, burden and receiving use. Any comparison respects the relevant PSDA.17 constraints. |
+| Design choice | The proposed arrangement covers the required uses within available time and resources. A comparison, where requested or needed for the choice, addresses the material differences in coverage, delay and burden. Any PSDA.17 constraints apply to the work that has to run together. |
 | Viability | Any observation, interpretation and return relied on here have the necessary performers, access, resources, timing, protection and failure route. |
 | Current evidence | The evidence fits the subject, configuration, interval and use. A claim based on an event’s absence accounts for observation coverage and sensitivity. |
 | Local consequence | Unchanged, narrowed, blocked, reopened-contributor and later-recommendation conclusions name their exact affected scopes and gaps. |

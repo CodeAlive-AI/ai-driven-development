@@ -8,7 +8,7 @@
 
 Use this pattern when a service owner has an administrative result to supply repeatedly and the policy that governs it, and handlers need a usable instruction for receiving, checking, deciding, providing and closing individual requests. A new reimbursement service, for example, needs more than a form and a list of approvers.
 
-Return a service instruction that identifies what the handler, decision holder and provider do for an ordinary request and for a failed condition. Include specialist contributions where the case requires them. Start with one representative request and the condition promised to its recipient. Follow it far enough to identify the decision, provision and evidence of completion.
+Return a service instruction that identifies what the handler, decision holder and provider do for an ordinary request and for a failed condition. Include specialist contributions where the case requires them. A representative request can expose a missing handoff. To design for the class, recover from the service terms which differences between permitted requests change the decision, the party who may act, the work due or its deadline.
 
 Use an adequate existing instruction directly. This pattern is unnecessary for each later request and does not itself approve a request, appoint a provider or authorize an exception. Obtain missing policy from the authority responsible for it. A form field can collect an input once the applicable rule is known.
 
@@ -80,11 +80,11 @@ For potentially duplicate actions, include recovery of the earlier attempt befor
 
 #### ADM.5:4.6 - Exercise and publish the usable instruction
 
-Use a walkthrough or applicable earlier evidence to establish whether the instruction can be followed for a representative request. Check the handoffs among the prospective handler, decision holder, provider and recipient. Include the consequential branches the instruction must handle, such as an omission, a settled refusal, a missing authority or an uncertain provider effect.
+Judge the instruction against the service it is meant to cover. Derive from the governing terms which differences can change the required response, who may decide or when a result is due. For each request the service undertakes to handle under those terms, the handler needs a permitted, timely way to act or to obtain a decision from someone authorized to make it. One rule can cover many requests when its premises hold across them. If two requests look alike to the handler at the time of choice yet require incompatible responses, give the handler a way to distinguish them in time or revise what the instruction promises. Where requests can be made together, check whether the permitted responses can also be provided together.
 
 When a walkthrough is needed, use a representative case to check whether the instruction identifies each participant’s next action. A human handler can explain what they would do, and an automated handoff can be examined against its stated inputs and outputs. Repair missing handoffs and unnecessary requests. To establish that a person or service can perform the work and that the provider can deliver the promised condition, use applicable evidence of performance or a trial that covers the claimed result.
 
-Return the instruction with its supported class, applicable policy, effective conditions and known gaps. Use the organization's existing place for such instructions. On the first real request, use the applicable instruction. Reopen its design when a condition changes or actual handling reveals a defect.
+Return the instruction with the class of requests covered, its governing policy and the conditions it relies on. An individual decision can remain open by design if the instruction takes it to the person who may decide in time. If a promised class has no supported response, identify who must resolve that gap and the cases that can already be handled. A commission for a draft may allow such a choice to be returned to the service owner. To put an instruction into use for the whole class, cover each response the terms require. Publish it where handlers look for service instructions. Reopen its design when conditions or evidence of actual handling change the answer.
 
 ### ADM.5:5 - Archetypal Grounding
 
@@ -101,7 +101,7 @@ The service owner and participants develop this instruction:
 | What ordinary correction applies? | If the receipt is missing, ask the claimant for the correction P allows. Apply P's response to an established excluded category, including the available challenge route. |
 | Who decides? | The finance approver applies P and makes the required decision for the exact claim and amount. The handler's completed preparation supplies input to that person. |
 | Who performs? | Treasury receives the approved claim and the account information through the authorized channel, then issues the permitted payment. |
-| When is provision complete? | Adequate provider evidence establishes the approved credit to the intended account. An instruction acknowledgement alone leaves the effect to be established. |
+| When is provision complete? | Under P, the approved amount must reach the claimant's designated account. The credit date determines when provision occurred. A suitable bank statement or other reliable evidence can establish it later. An acknowledgement of the payment instruction leaves credit open. |
 | What is returned? | The claimant receives the decision and actual provision result or precise remaining condition. Finance and treasury retain the corresponding evidence needed for their duties. |
 | What requires resolution? | Conflicting assignment evidence, unclear approving authority or an unknown earlier payment effect goes to its competent resolver through ADM.6. Recover the earlier effect before a possible duplicate payment. |
 
@@ -121,7 +121,7 @@ The example assumes an explicit policy and identifiable decision makers. An info
 
 **Recognition.** The result is a reusable instruction for a bounded class. It connects entry and evidence to actual deciding and performing participants, a usable completion condition, the returned account and meaningful failure branches.
 
-**Assurance for reliance.** Trace a supported request and a relevant failing variation. Can the participants recover their own next action without inventing authority, supplying a needless fact or mistaking an intermediate acknowledgement for completion? Check any consequential dependency against its actual policy, source or provider capability. Describe a walkthrough and an operational trial according to what each establishes.
+**Assurance for reliance.** Can the participants recover their next action for the variations the service promises to handle? Use a rule that covers the class, adequate evidence of the relevant branches, or both. An author walking through one request can find a missing handoff. When a handler works from the instruction with the support normally available, their choices show what that handler recovered in that situation. To rely on independent handling across the class, account for the variations in decisions, authority and available support. A promise to deliver the service also depends on the applicable policy, authority and timely provider capacity.
 
 ### ADM.5:8 - Common Anti-Patterns and How to Avoid Them
 

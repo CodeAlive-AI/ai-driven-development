@@ -45,7 +45,7 @@ State whether the recipient needs one rule, a set of alternatives, an uncertaint
 
 #### CMP.7:4.2 - Recover the examples and feedback actually available
 
-Identify the supplied inputs, labels, rewards, demonstrations or other observations and how they were obtained. For missing labels, delayed feedback, selection effects or dependence between examples, state what the learning procedure can observe. MMP.7 supplies the probability model of recorded data when such a model is needed.
+Identify the supplied inputs, labels, rewards, demonstrations or other observations and how they were obtained. For missing labels, delayed feedback, selection effects or dependence between examples, state what the learning procedure can observe. Distinguish information available when the prediction is due from feedback for later predictions. MMP.7 supplies the probability model of recorded data when such a model is needed.
 
 Choose the feedback regime before deriving the update. In supervised learning, the supplied target response can evaluate a candidate prediction directly. In bandit feedback, only the consequence of a chosen action is observed; an update requiring all unchosen consequences is unavailable. A self-produced label remains the output of another rule and can propagate its errors.
 
@@ -127,9 +127,9 @@ On nonnegative integer inputs, consider the two rules `f(x)=x` and `g(x)=x mod 2
 
 A learner can evaluate both rules and return the minimizing set `{f,g}`. The returned set retains the ambiguity. It can also return one rule under a declared preference, but the zero training loss alone gives no reason to prefer f over g at input 2. Their predictions there are 2 and 0.
 
-Suppose the receiving task needs a prediction at 2 and an additional observed response is available for a cost that could be justified. If that response is 2, the same selection procedure prefers f; if it is 0, it prefers g. If the observation is not worth obtaining, use a selected rule under the remaining assumption or retain both possible responses for the downstream decision. Better minimization of the original two-example loss cannot distinguish them.
+Suppose a prediction at 2 is due before its response is revealed. The two original examples leave both 2 and 0 possible. Give a point prediction under a stated selection rule, or return both if the recipient can use that answer. With a fixed noiseless target in {f, g}, an earlier observation at 3 can settle the prediction. A response of 3 selects f and predicts 2 at input 2. A response of 1 selects g and predicts 0 there. Once the response at 2 arrives, it can answer a request for the observed value and update the rule for later inputs. To evaluate the prediction, compare the answer recorded before the deadline with the response subsequently observed at input 2.
 
-**Changed response:** suppose the response at 2 is 1. Neither rule fits all three observations. Revisit the two-rule family or the assumption of deterministic noiseless responses. Repeatedly fitting the original family more accurately cannot create the absent continuation.
+**Changed response:** consider only the original two observations and a response of 1 at input 2. Each rule has mean squared loss 1/3 on these three observations. If an exact fit is required, revisit the two-rule family or the noiseless-target assumption.
 
 #### CMP.7:5.2 - Construct an online learner and derive its mistake bound
 
