@@ -104,7 +104,7 @@ Read a reference only when its trigger applies.
 |---|---|
 | [case-design.md](references/case-design.md) | Turning a requirement into cases: boundaries, states, sequences, combinations; pruning a matrix |
 | [levels-and-doubles.md](references/levels-and-doubles.md) | Choosing a level, mock or real; databases, concurrency, migrations, external services |
-| [test-quality.md](references/test-quality.md) | Writing or reviewing test code; a weak or self-confirming test; a test at odds with the task; a changed runner, fixture, skip or snapshot |
+| [test-quality.md](references/test-quality.md) | Writing or reviewing test code; a weak or self-confirming test; a test at odds with the task; a changed runner, fixture, skip or snapshot; a rewrite or migration that must keep behaviour |
 | [ui-automation.md](references/ui-automation.md) | Writing a permanent component, browser or e2e test |
 | [exploratory-qa.md](references/exploratory-qa.md) | Planning or doing a pass through the running product by browser, computer or phone use |
 | [flaky-and-brittle.md](references/flaky-and-brittle.md) | A test is intermittent or breaks on refactoring; a slow suite |

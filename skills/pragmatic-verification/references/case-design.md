@@ -77,6 +77,13 @@ Pick what applies to the contract or the architecture. It is a menu, not a check
 Do not permute equivalent examples. Do not invent states that the types forbid and no real input
 can reach. At an input boundary, do test the invalid data a real client can send.
 
+**The repository's own risk list.** When the project keeps one, read it before deriving cases.
+A useful item has three parts: a trigger that can be read from a diff ("the stored message format
+changed"), a check ("records written by the previous version still load"), and the incident or
+change behind it. Check only the items whose trigger matches the change, usually a few. An item
+whose trigger cannot be recognized from a diff, or that has no incident behind it, does not belong
+in the list.
+
 ## Sequences and failure points
 
 Configuration tables do not express order. For retry, cancellation, lost responses, recovery,

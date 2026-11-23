@@ -274,6 +274,9 @@ Rank by what a defect would cost, using damage, plausibility and recovery cost:
   shared fixture or helper, a base class, a runner default, a test template, a missing lint
   rule, an instruction for contributors or agents. Recommend the change at the cause, then a
   bounded sweep. A signal that search finds reliably belongs in a linter, not in a review.
+- **Recurring lessons.** When the same kind of defect keeps escaping, and it can be recognized from
+  a diff but not by search, recommend a repository risk list in the format of `case-design.md`:
+  trigger, check, the incident behind it.
 - **Three to seven recommendations.** No "rewrite the suite", and no deletion of a heavy test
   for its duration alone.
 - **Noise is dropped** and creates no backlog entry: naming and layout preferences, "too few

@@ -46,6 +46,19 @@ whose reliability was assessed. A second model paraphrasing the implementation i
 When an expected value was obtained only by reading the current code, say so. That test
 characterizes existing behaviour. It does not show the behaviour is correct.
 
+**The old version as the oracle.** When behaviour must not change (a migration, a rewrite, a
+library swap, an optimization, a refactoring across many files), the previous version is the
+cheapest honest oracle. Run both on the same inputs: generated ones, a sample of production
+traffic or a real corpus, not only the few examples a person would write. Normalize what does not
+matter, such as key order, whitespace, timestamps and generated ids. Keep a list of approved
+differences, each with its reason. Every other difference is a defect or an unannounced change of
+contract.
+
+- Without normalization the comparison fails on noise and gets switched off.
+- Without the approved list an intended change gets "fixed" back.
+- Both versions must see the same environment: data, clock, configuration, dependency versions.
+- Equal outputs prove sameness, not correctness: a defect the old version had is kept.
+
 ## Writing the test
 
 - **One coherent scenario per test.** That is not "exactly one assert": creating an entity may
@@ -121,6 +134,12 @@ check that silently verifies nothing has this shape:
   produced by this run or carried over from a cache.
 - **New or changed runner, gate or selector:** show once that a known wrong result is reported as
   a failure.
+- **A change is not judged only by checks it changed.** When the same change edits the code and a
+  test, fixture, snapshot, runner, lint or gate configuration that judges it, also run the new code
+  against the base version of those checks. A red result there is the signal, not a failure of
+  the method: it shows which behaviour changed, and the report must say why. If the base check
+  passes, the edit to the check may be unnecessary. Report edits to checks separately from edits
+  to code: what was weakened, what was strengthened, and why.
 - **Workarounds are reported.** A workaround that disables anything is named in the report and in
   a comment at the disabling line, saying what it disables.
 

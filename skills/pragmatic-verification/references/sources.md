@@ -42,6 +42,7 @@ skill are a synthesis: not every instruction belongs to a single author.
 - James Bach, [Heuristic Test Strategy Model](https://www.satisfice.com/download/heuristic-test-strategy-model). Looking at a product through context, elements, quality criteria and techniques.
 - Gojko Adzic, Specification by Example, Manning, 2011. From general wording to concrete examples of behaviour.
 - Mark Utting and Bruno Legeard, Practical Model-Based Testing, Morgan Kaufmann, 2007. Building models and deriving test sets from them.
+- William McKeeman, "Differential Testing for Software", Digital Technical Journal 10(1), 1998. Two implementations on the same inputs; a difference points at a defect.
 - NIST, [SP 800-142 Practical Combinatorial Testing](https://csrc.nist.gov/pubs/sp/800/142/final). Factors, interactions, constraints; limits of pairwise.
 - NIST, [Ordered t-way Combinations for Testing State-based Systems](https://www.nist.gov/publications/ordered-t-way-combinations-testing-state-based-systems). Why the order of inputs needs its own design.
 
@@ -77,6 +78,7 @@ November 2026. They motivate a rule. They do not set a universal number.
 - Zhao, Zhou and Cohen, [Do Coverage and Mutation Scores of LLM-Generated Test Suites Correlate With Their Effectiveness?](https://arxiv.org/pdf/2607.22880). The usefulness of both metrics depends on the task.
 - Charoosaei, Richter and Papadakis, [On the Risks of using LLM-Generated Tests for Regression Testing](https://arxiv.org/html/2610.11835v1), preprint. Generated tests can pin a defect as required behaviour.
 - Milanese and co-authors, [Testing with Coding Agents](https://arxiv.org/abs/2610.35297), preprint. Agent-supported changes add tests more often and maintain them less often.
+- Anthropic, "How the Claude Code team thinks about verification", 2026. The old system as the oracle, diff-triggered reliability checklists, checks a change cannot modify.
 - Birgitta Böckeler, [TDD inside the agent loop](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html). Test-first does not exclude self-confirming assertions.
 - Matteo Vaccari, [Tests as data](https://martinfowler.com/articles/tests-as-data.html). A readable acceptance contract separated from the implementation and the runner.
 - Naresh Jain, [Are Harnesses Worth the Cost?](https://martinfowler.com/articles/are-harnesses-worth-the-cost.html). The value of extra verification loops depends on the model and the task.
