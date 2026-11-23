@@ -1,37 +1,57 @@
 # Pragmatic Verification
 
-An Agent Skill that teaches a coding agent to verify its work with tests and checks that earn
-their keep. It targets the usual failures of LLM-written tests: redundant cases, tests that
-confirm the code with itself, mocks that test only mocks, brittle UI tests, flaky waits, and
-"done" claimed without evidence.
+**Gives a coding agent the right way of thinking about tests.**
 
-Language-agnostic. Stack tooling lives in separate references.
+In agent-driven development tests are a necessity and a trap at the same time. The agent needs
+them to know its work is done. But badly chosen tests do more than miss what matters: they
+become technical debt, slow every later change, make the project harder for the next agent to
+work on and, in the end, make results worse. Typical LLM output is a pile of redundant cases,
+tests that confirm the code with itself, mocks that only test mocks, brittle UI tests and
+flaky waits.
 
-## What it does
+This skill is about deliberate testing and verification: the right checks, at the right level,
+in the right amount. Language-agnostic; stack tooling lives in separate references.
 
-- **Sizes the effort.** A cosmetic change gets one look; access, money, deletion and migrations
-  get negative cases, real storage and an independent review.
-- **Follows one route:** contract → oracle → existing checks → cases from failure mechanisms →
-  level and doubles → a test shown to fail → a pass through the running product → closeout on
-  evidence.
-- **Puts each check at the smallest boundary** that still contains the defect: unit,
-  integration, contract, component, browser, e2e or device.
-- **Plans QA passes** through browser, computer or phone use, and keeps a one-off pass from
-  becoming a permanent test without a reason.
-- **Audits an existing suite:** parallel workers on a cheaper model scan; the auditor verifies
-  their claims and ranks concrete fixes.
-- **Reports honestly:** each claim is verified, partially verified, not verified or blocked,
-  with what ran and on which revision.
+## What it gives the agent
+
+1. **A decision map for choosing tests.** For each risk, the agent picks the cheapest check
+   that still contains the mechanism of the possible defect: unit, integration, contract,
+   component, browser, e2e or device. It decides what to mock and what must be real, which
+   cases deserve a test at all, and which QA scenarios to walk through browser, computer or
+   phone use.
+2. **A catalogue of testing techniques** the agent can bring into a project when they fit:
+   boundary and state models, property-based and metamorphic tests, contract tests, real-engine
+   database tests, controlled clocks and failure injection, exploratory passes. The goal is a
+   balance of test kinds that suits the project, not more tests.
+3. **An audit of a project's whole verification system:** tests, gates, CI, flaky and slow
+   suites. Parallel workers on a cheaper model scan, the auditor verifies their claims and ranks
+   concrete improvements. On an existing project this is a good place to start.
+
+## When to use it
+
+- Planning or building a new feature.
+- Fixing a bug: a regression test that is shown to fail on the old defect.
+- Repairing failing, flaky or slow tests, or pruning a bloated suite.
+- Reviewing tests someone (or some agent) wrote.
+- Deciding whether the evidence is enough to call a task done.
+
+## Deliberate, not ritual, TDD
+
+Test-first done on autopilot does more harm than good: a test written first can still encode an
+invented expectation, and an agent then writes code to satisfy its own guess. The skill keeps
+TDD where it works, for a clear rule or a reproducible bug, and asks for what actually makes a
+test worth having: an expected result from a source independent of the code, a test shown to
+fail for the right reason, and a run of the real product when users touch the change.
 
 ## Contents
 
 ```text
 pragmatic-verification/
-├── SKILL.md                     the route, the level table, prohibitions, what to read when
+├── SKILL.md                     the route, the decision map, prohibitions, what to read when
 └── references/
     ├── case-design.md           requirement → cases: boundaries, states, time, combinations
     ├── levels-and-doubles.md    level choice, mocks vs real, databases, concurrency, migrations
-    ├── test-quality.md          oracles, self-confirming and weak tests, showing a test can fail
+    ├── test-quality.md          oracles, self-confirming and weak tests, TDD in its place
     ├── ui-automation.md         permanent component, browser and e2e tests
     ├── exploratory-qa.md        passes through the running product
     ├── flaky-and-brittle.md     intermittent tests, quarantine, slow suites
