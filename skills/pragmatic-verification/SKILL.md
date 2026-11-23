@@ -1,9 +1,12 @@
 ---
 name: pragmatic-verification
-description: "Language-agnostic playbook for thoughtful tests and checks: which cases deserve unit, integration, contract or e2e tests, when to mock, how to avoid redundant, self-confirming, brittle or flaky tests, and which QA scenarios to run through browser, computer or phone use. Use when writing, reviewing or pruning tests, auditing an existing project's test suite, planning verification of a change, or deciding whether the evidence is enough to call a task done. Not for tool syntax tutorials, load testing, security audits or evals of LLM output quality."
+description: "Deliberate testing and verification for agent-driven development: which checks deserve unit, integration, contract, e2e or a QA pass through browser, computer or phone use, when to mock, and how to avoid redundant, self-confirming, brittle or flaky tests. Use when planning or building a feature, fixing a bug, writing, reviewing or pruning tests, repairing failing, flaky or slow tests, auditing a project's tests and gates, or deciding whether a task is done. Not for tool syntax, load testing, security audits or LLM output evals."
 ---
 
 # Pragmatic Verification
+
+Wrong tests are not neutral: they miss what matters, become debt and make every later change
+harder for the next agent. This skill is for deliberate checks, not more of them.
 
 **Core rule:** for each risk that matters, choose the cheapest check that still contains the
 mechanism of the possible defect and lets the correct result be observed. A new check must add a
