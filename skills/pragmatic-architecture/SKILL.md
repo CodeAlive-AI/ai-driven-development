@@ -1,6 +1,6 @@
 ---
 name: pragmatic-architecture
-description: "Design method for simple solutions that are not fragile, from the choice of model, state ownership and boundaries down to the order of implementation steps, built on Kent Beck's 'make the change easy, then make the easy change'. Use when a change has more than one reasonable design, when deciding where state, an invariant or a side effect should live, when shaping a module boundary, contract or data model, when preparing code so that a hard change becomes easy, when a design must survive retries, concurrency, partial failure or migration, or when comparing alternatives and trade-offs. Not for code-level style and refactoring mechanics (code-that-fits-in-your-head), choosing tests (pragmatic-verification), visual or UX design, or a clear local fix."
+description: "Design method for simple solutions that are not fragile, from the choice of model, state ownership and boundaries down to the order of implementation steps, built on Kent Beck's 'make the change easy, then make the easy change'. Use when a change has more than one reasonable design, when deciding where state, an invariant or a side effect should live, when shaping a module boundary, contract or data model, when preparing code so that a hard change becomes easy, when a design must survive retries, concurrency, partial failure, migration or a hostile caller, or when comparing alternatives and trade-offs. Not for code-level style and refactoring mechanics (code-that-fits-in-your-head), choosing tests (pragmatic-verification), visual or UX design, or a clear local fix."
 ---
 
 # Pragmatic Architecture
@@ -151,5 +151,6 @@ Read a reference only when its trigger applies.
 | [models-and-boundaries.md](references/models-and-boundaries.md) | Choosing a model, data shape, boundary or interface; special cases keep growing; two principles in conflict |
 | [failure-and-recovery.md](references/failure-and-recovery.md) | A sizing signal is touched; writing a property card or a counterexample; retries, timeouts, overload, recovery |
 | [change-path.md](references/change-path.md) | The change is hard in the current structure; code without tests; a schema, contract or data migration; whether to tidy first |
+| [threat-model.md](references/threat-model.md) | The change adds or widens what an untrusted party can reach, or changes who may do what |
 | [moves.md](references/moves.md) | The obvious design is stuck or heavy |
 | [sources.md](references/sources.md) | The authority behind a rule is needed |

@@ -51,6 +51,7 @@ counts from the failure studies describe their samples, not software in general.
 | Martin Kleppmann, Chris Riccomini, *Designing Data-Intensive Applications*, 2nd ed. (2026) | What another participant can observe between the steps of an operation and after its repeat; isolation, durability, ordering |
 | Michael Nygard, *Release It!*, 2nd ed. (2018) | How a local problem spreads through healthy components; limits on waiting and resources; protections chosen by failure mechanism |
 | Heather Adkins et al., *Building Secure and Reliable Systems* (2020), chapters 6-9 | Understandable structure as the basis for reasoning about invariants; design for change and recovery |
+| Loren Kohnfelder, Praerit Garg, "The Threats to Our Products" (Microsoft, 1999); Adam Shostack, *Threat Modeling: Designing for Security* (2014) | STRIDE as six questions about what a caller can force on purpose; the threat model made at design time and sized to the change |
 | Nancy Leveson, *Engineering a Safer World* (2012) | Start from unacceptable losses; harm that arises from the interaction of working parts |
 | Leslie Lamport, *Specifying Systems* (2002) | States and transitions as the language of a promise; safety apart from progress |
 | J. Saltzer, D. Reed, D. Clark, "End-to-End Arguments in System Design" (1984) | Some guarantees can only be completed where their meaning is known |

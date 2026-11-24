@@ -44,6 +44,7 @@ pragmatic-architecture/
     ├── models-and-boundaries.md state ownership, models, module boundaries, contracts
     ├── failure-and-recovery.md  retries, concurrency, partial failure, recovery
     ├── change-path.md           making the change easy, step order, migration
+    ├── threat-model.md          what a hostile caller can force, as property cards
     ├── moves.md                 22 less obvious design moves
     └── sources.md               the authority behind the rules
 ```
