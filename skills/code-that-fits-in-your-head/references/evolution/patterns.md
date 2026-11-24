@@ -1,73 +1,6 @@
 # Evolution Patterns
 
-Reusable patterns for changing live code without breaking callers or stalling integration.
-
-## Pattern: Feature Flag (Calendar Flag Variant)
-
-### Intent
-
-Decouple **deploying** code from **releasing** behaviour. Ship an incomplete feature to production behind a configuration switch that is off by default, and flip it on once the feature is ready.
-
-### When to Use
-
-- The work needs staged exposure, crosses risky integration boundaries, or must remain mergeable before release.
-- You practice Continuous Integration or Continuous Deployment and can't justify a long-lived branch.
-- You need to exercise the new behaviour with integration tests before it's user-visible.
-
-### Structure
-
-```csharp
-// 1. Wrapper class (needed for DI containers that reject raw primitives).
-public sealed class CalendarFlag
-{
-    public CalendarFlag(bool enabled) { Enabled = enabled; }
-    public bool Enabled { get; }
-}
-
-// 2. Config reads the flag; defaults to false if absent.
-var calendarEnabled = new CalendarFlag(
-    Configuration.GetValue<bool>("EnableCalendar"));
-services.AddSingleton(calendarEnabled);
-
-// 3. Code paths gate the new behaviour on the flag.
-public IActionResult Get()
-{
-    var links = new List<LinkDto>();
-    links.Add(CreateReservationsLink());
-    if (enableCalendar)
-    {
-        links.Add(CreateYearLink());
-        links.Add(CreateMonthLink());
-        links.Add(CreateDayLink());
-    }
-    return Ok(new HomeDto { Links = links.ToArray() });
-}
-
-// 4. Tests override the config to turn the feature on.
-services.RemoveAll<CalendarFlag>();
-services.AddSingleton(new CalendarFlag(true));
-```
-
-### Walkthrough
-
-1. Introduce the flag class or config key with a default of "feature off" in production.
-2. Wrap new code paths in `if (flag) { ... }`; the rest of the app stays oblivious.
-3. Override the flag to `true` in integration tests and in your local/dev config.
-4. When the feature is live in production, delete the flag class. The compiler will catch every `if` to simplify; keep only the new branch.
-
-### Benefits
-
-- Keeps CI healthy on multi-week work.
-- Decouples deploy from release — code can ship before the feature is announced.
-- Integration tests stay meaningful throughout.
-
-### Considerations
-
-- A flag left in place past its useful life becomes a smell. Delete promptly.
-- Don't use flags for rollback — that's a deployment concern.
-- Do not add a flag when the change has low blast radius, can be verified before merge, and does not need deploy/release separation.
-
----
+Reusable patterns for replacing a method or a class while its callers keep working.
 
 ## Pattern: Method-Level Strangler
 
@@ -110,7 +43,7 @@ var reservations = await Repository
 
 ### Walkthrough
 
-1. Add the new method to the interface and implement it in every concrete class. Options: full implementation everywhere in one commit; `NotImplementedException` stubs then TDD; or concrete classes first, interface last.
+1. Add the new method to the interface and implement it in every concrete class. Options: full implementation everywhere in one commit; `NotImplementedException` stubs filled in one implementer at a time; or concrete classes first, interface last.
 2. With the new method unused, commit and merge.
 3. Edit call sites one at a time; commit per call site.
 4. When the old method has no callers, delete it from the interface and every implementer (the compiler won't catch this — you must remember).
@@ -183,58 +116,12 @@ public IEnumerable<TimeSlot>                       Schedule   ( /* new */ );
 
 ---
 
-## Pattern: Expand-Contract (Database and Schema Migration)
-
-### Intent
-
-Change a live database schema (or any durable store contract) without a single-step destructive migration. Expand the schema, migrate readers and writers, then contract away the old shape — each stage separately deployable and reversible.
-
-### When to Use
-
-- Adding, renaming, splitting, or removing a column, table, field, or index on a production schema.
-- Any schema change where a mixed fleet of old and new application versions may run concurrently.
-- Backfills that must complete before the old representation can be removed.
-
-### Structure
-
-Three stages, each its own deployable unit:
-
-1. **Expand** — add the new representation (nullable column, new table, new field) without removing the old. Dual-write or backfill so both shapes hold the data.
-2. **Migrate readers** — point all readers (and eventually writers) at the new representation; verify with a migration rehearsal against a production-like copy.
-3. **Contract** — remove the old column, path, or dual-write once nothing depends on it.
-
-Never combine expand and contract into one destructive step on a live schema.
-
-### Walkthrough
-
-1. Ship the expand migration: new nullable column / table / field. Application still reads the old path; optionally dual-writes.
-2. Backfill historical rows; monitor dual-write consistency.
-3. Deploy readers that prefer the new field (with fallback if needed), then writers that only write the new field.
-4. Confirm no remaining readers of the old path (search, metrics, dual-write lag at zero).
-5. Ship the contract migration: drop the old column/path. Keep each step reversible until the contract is proven.
-
-### Benefits
-
-- Old and new application versions can coexist during rollout.
-- Each stage is a recovery point; a bad reader deploy rolls back without schema loss.
-- Backfill pressure is visible and measurable before the old shape disappears.
-
-### Considerations
-
-- Dual-write windows are temporary debt — record an owner and exit condition.
-- Rehearse against a production-like copy before the expand or contract that cannot be trivially undone.
-- Coordinate with Expand-Contract at the API layer when external clients also see the shape change.
-
----
-
 ## Pattern Selection Guide
 
 | Situation | Recommended Pattern |
 |-----------|--------------------|
-| Adding behaviour that needs staged exposure or deploy/release separation | Feature Flag |
-| Splitting deploy from release | Feature Flag |
 | Changing a single method signature | Method-Level Strangler |
 | Replacing one class with another | Class-Level Strangler |
-| Replacing a subsystem or legacy module | Strangler at architectural scale |
-| Changing a live database schema | Expand-Contract |
 | Removing a public API | Deprecate first, then Strangler-style removal at next major version |
+| Replacing a subsystem or legacy module | Design the migration path first (`pragmatic-architecture`), then move each caller with the two patterns above |
+| Changing a live schema, contract or stored format; staged exposure of a feature | Not this skill: `pragmatic-architecture` (change path) |

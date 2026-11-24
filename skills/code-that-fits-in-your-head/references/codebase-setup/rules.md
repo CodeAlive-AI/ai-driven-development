@@ -99,4 +99,4 @@ When these rules may be relaxed:
 
 ## Editorial Amendment (2026) — Not from the Book
 
-Commit toolchain versions and lockfiles; prefer reproducible environments. Dependency provenance and gate integrity are canonical in `../agent-native/hallucination-debugging.md` and `../agent-native/verification-loops.md`.
+Commit toolchain versions and lockfiles; prefer reproducible environments. Dependency provenance is canonical in `../agent-native/hallucination-debugging.md`. The integrity of tests and gates is `pragmatic-verification`'s subject.

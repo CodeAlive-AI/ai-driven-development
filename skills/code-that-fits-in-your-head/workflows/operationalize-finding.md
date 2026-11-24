@@ -34,7 +34,7 @@ In order of preference — earlier layers give faster feedback:
 | Linter rule | Complexity thresholds, forbidden patterns, naming |
 | Architecture test | Dependency direction, cycles, layer rules |
 | Unit/property test | Behavioral invariants |
-| CI-only check | Slow or cross-cutting checks (duplication, dead code, mutation) |
+| CI-only check | Slow or cross-cutting checks (duplication, dead code) |
 
 ### Step 3: Implement the Gate Narrowly
 

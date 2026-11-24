@@ -14,7 +14,7 @@ The API advertises capabilities through its types. What you cannot express is as
 
 ### Poka-Yoke (Mistake-Proofing)
 
-Design so misuse is difficult or impossible. Active poka-yoke inspects as artifacts are created (e.g. TDD); passive poka-yoke builds the constraint into the shape of the thing (compile-time prevention). Prefer specialised APIs over Swiss Army knives (God Classes). A compiler error is faster feedback than a runtime exception.
+Design so misuse is difficult or impossible. Active poka-yoke inspects as artifacts are created (e.g. a check that runs while the code is written); passive poka-yoke builds the constraint into the shape of the thing (compile-time prevention). Prefer specialised APIs over Swiss Army knives (God Classes). A compiler error is faster feedback than a runtime exception.
 
 ### Command Query Separation (CQS)
 

@@ -6,7 +6,6 @@
 
 | File | Canonical concern |
 |---|---|
-| `verification-loops.md` | Verification integrity, checkpoints, independent oracles, and prohibition on weakening gates |
 | `hallucination-debugging.md` | Invented APIs, version drift, package hallucination, and dependency provenance |
 | `types-as-guardrails.md` | Types, schemas, tests, and executable contracts as complementary constraints |
 | `reviewability.md` | Evidence-based review, risk classification, and accountable human ownership |
@@ -23,5 +22,5 @@ Large tasks are explicitly allowed. Agent work spanning tens of thousands of lin
 
 - Start with the relevant book-derived theme for general design guidance.
 - Load one agent-native file when agent authorship creates an additional failure mode.
-- For agent-runtime threats, use the explicitly marked editorial section in `security/rules.md`; security owns that specialized policy.
+- Verification integrity (checkpoints, independent oracles, never weakening a gate) is not here: it is `pragmatic-verification`'s subject.
 - Do not load the whole folder by default.

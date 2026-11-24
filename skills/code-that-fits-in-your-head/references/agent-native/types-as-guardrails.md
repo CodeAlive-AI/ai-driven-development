@@ -23,7 +23,7 @@ Agents benefit from constraints that reject invalid output mechanically. No lang
 5. **Keep examples executable when they define behavior.** Use tests, doctests, schemas, or runnable samples instead of comments that silently drift.
 6. **Fail closed at trust and security boundaries.** Accept compatibility only when it is deliberate and tested.
 7. **Do not suppress a guardrail merely to unblock generation.** Narrow exceptions require a reason and an owner.
-8. **Pair self-authored tests with independent evidence for material changes.** See `verification-loops.md`.
+8. **Pair self-authored tests with independent evidence for material changes.** How to do that is `pragmatic-verification`'s subject.
 
 ## Choosing a Stack
 

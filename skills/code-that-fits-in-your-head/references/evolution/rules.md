@@ -1,35 +1,23 @@
 # Evolution Rules
 
-Actionable rules for changing live software without breaking callers or stalling integration.
+Actionable rules for changing code that other code depends on, without breaking callers or stalling integration. Changing a live schema, contract or stored format, and planning a rollout or rollback, are design questions: see `pragmatic-architecture`.
 
 ## Core Rules
 
-### 1. Use Feature Flags to Split Deploy from Release
+### 1. Give Every Temporary Path an Owner and a Removal Step
 
-When incomplete user-visible behavior must be deployed or integrated safely, hide it behind a feature flag. Use the flag because of release and blast-radius needs, not because the work exceeded a wall-clock threshold.
+A feature flag, a bridge method, a temporary rename, an adapter or a second implementation kept "for now" is scaffolding. Each one adds a branch the next reader must hold in mind, so it leaves with the change that needed it.
 
-- Wire the flag through configuration (appsettings, environment variables, config service).
-- Default to off — missing config must mean "feature disabled".
-- Drive the new behaviour with integration tests that flip the flag on.
+- Introduce it together with its exit: who removes it, and after which event.
+- Default a switch to the old behaviour: missing configuration must mean "new path off".
+- Remove it by deleting the switch or the old symbol first, then let the compiler or a search find every branch that referenced it. Deleting code is a feature.
+- Do not keep it "just in case". Going back to an old version is a deployment and data question, not a code branch.
 
-**Example**:
-```csharp
-// In production config, EnableCalendar is absent, so this resolves to false
-var calendarEnabled = new CalendarFlag(
-    Configuration.GetValue<bool>("EnableCalendar"));
-services.AddSingleton(calendarEnabled);
-```
+Whether a change needs a flag, a staged rollout or coexisting versions at all, and what switching it off really restores, is a design decision. That is `pragmatic-architecture` (its change-path reference), not this skill.
 
-### 2. Remove Feature Flags After the Release Lands
+### 2. Replace Methods and Classes with the Strangler Pattern
 
-A flag that outlives its purpose becomes a code smell. Delete the flag class/variable, then lean on the compiler to clean up every branch that referenced it. Deleting code is a feature.
-
-- Schedule the cleanup as part of the release work, not "later".
-- Don't keep flags around "just in case" — rollback is a separate concern (deployment-level, not code-level).
-
-### 3. Replace Subsystems with the Strangler Pattern
-
-When replacing a widely used method, class, module, or subsystem, prefer the Strangler pattern when side-by-side migration reduces blast radius or makes verification and rollback safer. Do not choose it solely from estimated implementation time.
+When replacing a widely used method, class or module, prefer the Strangler pattern when side-by-side migration reduces blast radius or makes verification and rollback safer. Do not choose it solely from estimated implementation time. A subsystem with its own stored data or outside clients needs a designed migration path first (`pragmatic-architecture`); Strangler is then how each caller moves.
 
 1. Add the new method/class beside the old.
 2. Migrate callers one at a time, committing after each.
@@ -39,7 +27,7 @@ When replacing a widely used method, class, module, or subsystem, prefer the Str
 - Preserve recoverable, verified migration checkpoints appropriate to the system.
 - If two implementations can't legally coexist (e.g. C# return-type overloading), rename the old one temporarily (`ScheduleOcc` vs `Schedule`).
 
-### 4. Use Semantic Versioning for Anything Others Depend On
+### 3. Use Semantic Versioning for Anything Others Depend On
 
 `major.minor.patch`:
 
@@ -49,7 +37,7 @@ When replacing a widely used method, class, module, or subsystem, prefer the Str
 
 Even if you don't publish the version number, think in SemVer terms when reviewing diffs — it clarifies what clients will feel.
 
-### 5. Give Users Advance Warning of Deprecations
+### 4. Give Users Advance Warning of Deprecations
 
 If you must break a public API, deprecate first. For libraries with external consumers, 6+ months of advance warning is reasonable.
 
@@ -64,7 +52,7 @@ If you must break a public API, deprecate first. For libraries with external con
 public Task<ActionResult> LegacyGet(int year, int month)
 ```
 
-### 6. Update Dependencies on a Schedule
+### 5. Update Dependencies on a Schedule
 
 Don't wait for a CVE or a forced upgrade. Pick a rhythm — weekly, every sprint, every other month — and run updates then, regardless of whether anything "needs" updating.
 
@@ -73,14 +61,6 @@ Don't wait for a CVE or a forced upgrade. Pick a rhythm — weekly, every sprint
 - Same discipline applies to language/runtime versions, TLS certificates, domain renewals, and backup-restore drills.
 
 For agent-authored dependency changes, verify package identity, provenance, locked version, compatibility, and removal of obsolete transitive workarounds. See `../agent-native/hallucination-debugging.md`.
-
-### 7. Be Aware of Conway's Law When Designing
-
-If your system crosses a team boundary, expect an interface to form there, whether you plan one or not. If you want a particular architecture, organise teams to match it.
-
-- A system that crosses three teams will have three modules whether the design document says so or not.
-- Ad-hoc, entirely oral communication tends to produce spaghetti.
-- Written, asynchronous collaboration (pull requests, reviews) tends to produce cleaner boundaries.
 
 ## Guidelines
 
@@ -99,10 +79,8 @@ If your system crosses a team boundary, expect an interface to form there, wheth
 
 | Rule | Summary |
 |------|---------|
-| Feature-flag incomplete release | Decouple deploy from release when risk requires it |
-| Delete flags promptly | Never let flags rot in the codebase |
+| Temporary paths leave | A flag, bridge or second implementation has an owner and a removal step |
 | Strangler for replacements | Add new, migrate, delete old |
 | SemVer breaks = major | Breaking changes require a major bump |
 | Deprecate before delete | Give callers advance warning |
 | Update dependencies regularly | Schedule it; don't wait for pain |
-| Mind Conway's Law | Team structure will show up in the code |

@@ -68,20 +68,6 @@ git log --follow --name-only --pretty=format:__ -- <file> \
 
 Hotspot = high complexity × high change frequency → prime refactoring target. Watch trends, not absolute numbers.
 
-## Test-Oracle Strength (automated Devil's Advocate)
-
-Mutation testing automates "would my tests notice deliberately wrong code":
-
-| Ecosystem | Tool |
-|---|---|
-| JS/TS | Stryker (`npx stryker run`) |
-| .NET | Stryker.NET (`dotnet stryker`) |
-| Python | `mutmut run` or `cosmic-ray` |
-| JVM | PIT |
-| Rust | `cargo-mutants` |
-
-Run on the touched module, not the whole repo — full-repo mutation runs are slow. Surviving mutants = missing test cases.
-
 ## Architecture Tests (make stable constraints executable)
 
 When a boundary rule is stable and mechanically expressible, encode it once:

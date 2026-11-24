@@ -4,13 +4,13 @@ This is the routing layer for the skill. Find the user's task or symptom below, 
 
 **Rule of thumb**: one primary file + at most 1-2 secondary files per task. If you find yourself wanting to load four or more, re-read the task — you may be combining two tasks.
 
-**Note on editorial content**: `agent-native/` contains four canonical amendments for code agents. Specialized agent-era additions in book-derived themes are explicitly marked and are not attributable to Seemann. See `references/agent-native/knowledge.md`.
+**Note on editorial content**: `agent-native/` contains three canonical amendments for code agents. Specialized agent-era additions in book-derived themes are explicitly marked and are not attributable to Seemann. See `references/agent-native/knowledge.md`.
 
 ---
 
 ## Table of Contents
 
-- [By Task](#by-task)
+- [By Task](#by-task) (ends with [Not This Skill](#not-this-skill))
 - [By Symptom / Smell](#by-symptom--smell)
 - [By Named Practice](#by-named-practice)
 - [Agent-Native Amendments](#agent-native-amendments-not-from-the-book)
@@ -24,25 +24,21 @@ This is the routing layer for the skill. Find the user's task or symptom below, 
 | What you're reviewing | Load these files |
 |-----------------------|-------------------|
 | A pull request (general) | `workflows/review-code.md`, `references/teamwork-git/checklist.md` |
-| A large agent-authored migration/change | `references/agent-native/reviewability.md`, `references/agent-native/verification-loops.md` |
+| A large agent-authored migration/change | `references/agent-native/reviewability.md` |
 | Function/method complexity | `references/decomposition/rules.md`, `references/decomposition/smells.md`, `references/tooling/commands.md` |
 | API surface (public interface) | `references/api-design/rules.md`, `references/api-design/examples.md` |
 | Naming quality | `references/api-design/rules.md` (X-Out Names section) |
 | Type/class encapsulation | `references/encapsulation/rules.md`, `references/encapsulation/examples.md` |
-| Tests | `references/outside-in-tdd/rules.md`, `references/teamwork-git/checklist.md` |
 | Commit messages | `references/teamwork-git/rules.md` (accuracy, rationale, repository policy) |
-| Security posture of an endpoint | `workflows/threat-model.md`, `references/security/checklist.md` |
 | Logging / cross-cutting | `references/separation-of-concerns/rules.md`, `references/separation-of-concerns/patterns.md` |
 
 ### Writing New Code
 
 | What you're writing | Load these files |
 |---------------------|-------------------|
-| A brand-new feature | `workflows/add-feature-outside-in.md`, `references/outside-in-tdd/knowledge.md` |
+| A brand-new feature | `workflows/add-feature.md` |
 | A new domain type with invariants | `references/encapsulation/rules.md`, `references/encapsulation/examples.md` |
 | A new public API | `references/api-design/knowledge.md`, `references/api-design/rules.md` |
-| A unit test (first for this SUT) | `references/outside-in-tdd/rules.md`, `references/outside-in-tdd/examples.md` |
-| Additional test cases | `references/outside-in-tdd/rules.md` (Devil's Advocate section) |
 | Cross-cutting concern (logging, caching, auth) | `references/separation-of-concerns/patterns.md` |
 | A commit message | `references/teamwork-git/rules.md` |
 
@@ -54,7 +50,6 @@ This is the routing layer for the skill. Find the user's task or symptom below, 
 | A class that has feature envy | `references/decomposition/smells.md`, `references/decomposition/examples.md` |
 | Splitting monolithic logic | `references/decomposition/patterns.md`, `references/separation-of-concerns/patterns.md` |
 | Replacing a legacy subsystem | `references/evolution/patterns.md` (Strangler), `references/evolution/examples.md` |
-| Tests without touching prod code | `references/outside-in-tdd/rules.md` (separate-refactor section) |
 | Hardening validation | `references/encapsulation/rules.md` (parse-don't-validate) |
 
 ### Debugging & Troubleshooting
@@ -62,16 +57,8 @@ This is the routing layer for the skill. Find the user's task or symptom below, 
 | What you're investigating | Load these files |
 |---------------------------|-------------------|
 | A reproducible defect | `workflows/debug-defect.md`, `references/troubleshooting/patterns.md` |
-| A flaky/non-deterministic test | `references/troubleshooting/rules.md`, `references/troubleshooting/patterns.md` |
+| Behaviour that fails only sometimes | `references/troubleshooting/rules.md`, `references/troubleshooting/patterns.md` (Isolate-Then-Fix) |
 | A regression (when did it break?) | `references/troubleshooting/patterns.md` (bisection section) |
-| Slow test suite | `references/troubleshooting/rules.md` (slow tests section) |
-
-### Security Review
-
-| What you're threat-modelling | Load these files |
-|------------------------------|-------------------|
-| A new endpoint/service | `workflows/threat-model.md`, `references/security/checklist.md` |
-| A STRIDE-specific concern | `references/security/rules.md` |
 
 ### Setting Up / Onboarding
 
@@ -81,11 +68,11 @@ This is the routing layer for the skill. Find the user's task or symptom below, 
 | Retrofitting discipline into a legacy base | `references/codebase-setup/rules.md` (gradual improvement section) |
 | Onboarding to an unfamiliar code base | `references/code-navigation/knowledge.md`, `references/code-navigation/rules.md` |
 
-### Evolution & Release
+### Evolution
 
 | Situation | Load these files |
 |-----------|-------------------|
-| Deploying a risky change | `references/evolution/rules.md` (feature flag section), `references/evolution/patterns.md` |
+| Carrying a change through with temporary code (flag, bridge, second implementation) | `references/evolution/rules.md` (rule 1) |
 | Versioning a library / breaking change | `references/evolution/rules.md` (semver section) |
 | Updating dependencies | `references/evolution/rules.md` (regular updates section) |
 
@@ -95,6 +82,19 @@ This is the routing layer for the skill. Find the user's task or symptom below, 
 |-----------|-------------------|
 | Measure complexity, cycles, duplication, dead code, hotspots | `references/tooling/commands.md` |
 | Turn a recurring finding into a lint/CI gate; persist thresholds in project memory | `workflows/operationalize-finding.md` |
+
+### Not This Skill
+
+When the task is one of these, say so and use the named skill instead of stretching a file from here.
+
+| The task | Use instead |
+|----------|-------------|
+| Choosing, writing, strengthening or pruning tests; TDD; a flaky or slow test; deciding a task is done | `pragmatic-verification` |
+| Choosing between designs; where state or an invariant lives across processes; retries, concurrency, partial failure | `pragmatic-architecture` |
+| Changing a live schema, contract or stored format; rollout, staged exposure, rollback | `pragmatic-architecture` (change path) |
+| Threat-modelling a new endpoint or trust boundary | `pragmatic-architecture` (threat model) |
+| A security audit of existing code | A dedicated security skill or reviewer |
+| Which problem to solve, build or buy, a cause outside the code, delivery and operations | `fpf-problem-solving` |
 
 ---
 
@@ -116,9 +116,7 @@ This is the routing layer for the skill. Find the user's task or symptom below, 
 | Logging duplicated across layers | `references/separation-of-concerns/rules.md` |
 | Inheritance for cross-cutting | `references/separation-of-concerns/patterns.md` (Decorator) |
 | Big-bang replacement plan | `references/evolution/patterns.md` (Strangler) |
-| Live schema change | `references/evolution/patterns.md` (Expand-Contract) |
-| Weak tests pass wrong code | `references/outside-in-tdd/rules.md` (Devil's Advocate + mutation testing) |
-| Tests are flaky | `references/troubleshooting/rules.md`, `references/troubleshooting/patterns.md` |
+| Code is hard to check without a network, a clock or a long setup | `references/decomposition/rules.md` (pure core, explicit effects), `references/code-navigation/rules.md` (rule 4) |
 | Can't reproduce a bug | `references/troubleshooting/patterns.md` (reproduce-as-test) |
 | Dependency cycles between namespaces | `references/code-navigation/rules.md`, `references/tooling/commands.md` |
 | Input validation after construction | `references/encapsulation/rules.md` |
@@ -133,24 +131,17 @@ For any retained practice referenced by name (for example Strangler or CQS), fir
 
 | Practice | Deep dive |
 |----------|-----------|
-| Arrange-Act-Assert (AAA) | `references/outside-in-tdd/rules.md` |
 | Bisection | `references/troubleshooting/patterns.md` |
 | Command Query Separation (CQS) | `references/api-design/rules.md` |
 | Cyclomatic Complexity | `references/decomposition/rules.md` |
 | Decorator (cross-cutting) | `references/separation-of-concerns/patterns.md` |
-| Devil's Advocate | `references/outside-in-tdd/rules.md`, `references/outside-in-tdd/patterns.md` |
-| Expand-Contract | `references/evolution/patterns.md` |
-| Feature Flag | `references/evolution/rules.md`, `references/evolution/patterns.md` |
 | Functional Core, Imperative Shell | `references/decomposition/patterns.md` |
 | Complementary Communication | `references/api-design/rules.md` |
 | Parse, Don't Validate | `references/encapsulation/rules.md` |
 | Explicit Boundary Parsing | `references/encapsulation/rules.md` |
-| Red Green Refactor | `references/outside-in-tdd/rules.md` |
 | Reproduce Defects as Tests | `references/troubleshooting/patterns.md` |
 | Semantic Versioning | `references/evolution/rules.md` |
 | Strangler | `references/evolution/patterns.md` |
-| STRIDE / Threat Model | `references/security/knowledge.md`, `references/security/checklist.md` |
-| Transformation Priority Premise | `references/encapsulation/rules.md` |
 | X Out Names | `references/api-design/rules.md` |
 
 Full retained list in `references/practices-glossary/knowledge.md`.
@@ -163,7 +154,6 @@ Load one of these when the user's concern is specifically how an agent should do
 
 | Concern | File |
 |---------|------|
-| Verification checkpoints, independent oracles, and protection against weakened gates | `references/agent-native/verification-loops.md` |
 | Invented API, version drift, package hallucination, or dependency provenance | `references/agent-native/hallucination-debugging.md` |
 | Choosing practical types, schemas, tests, and executable constraints | `references/agent-native/types-as-guardrails.md` |
 | Reviewing agent-authored work, including very large systematic changes | `references/agent-native/reviewability.md` |
@@ -173,9 +163,8 @@ When to prefer an `agent-native/` file over a book theme:
 
 | User's question | Book theme | Agent-native | Choose |
 |-----------------|-----------|---------------|--------|
-| "Why is this test flaky?" | `references/troubleshooting/` | — | Book |
+| "Why does this fail only sometimes?" | `references/troubleshooting/` | — | Book |
 | "This test has been failing since I changed library version" | `references/troubleshooting/` | `references/agent-native/hallucination-debugging.md` | Agent-native (version drift) |
-| "How should this long-running change be verified?" | `references/outside-in-tdd/rules.md` | `references/agent-native/verification-loops.md` | Agent-native (checkpoint and oracle integrity) |
 | "Should I enable strict mode?" | `references/codebase-setup/rules.md` | `references/agent-native/types-as-guardrails.md` | Both — strongest practical policy with a brownfield ratchet |
 | "How do I write a good commit message?" | `references/teamwork-git/rules.md` | — | Book |
 | "How do I keep this PR reviewable?" | `references/teamwork-git/checklist.md` | `references/agent-native/reviewability.md` | Both — book for mechanics, ours for agent-specific framing |

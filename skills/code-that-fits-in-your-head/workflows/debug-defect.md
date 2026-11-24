@@ -21,7 +21,7 @@ Methodical, scientific-method debugging — from bug report to regression-proofe
 ## When to Use
 
 - A bug report or failing test arrives
-- A test is flaky and needs investigating
+- A failure happens only sometimes and the cause may be in the product
 - You need to find when a regression was introduced
 
 ## Prerequisites
@@ -30,7 +30,9 @@ Methodical, scientific-method debugging — from bug report to regression-proofe
 - Access to git history
 - A reproducible or semi-reproducible failure (if not, Step 2 is where you fight)
 
-**Primary references**: `references/troubleshooting/`, `references/outside-in-tdd/rules.md`
+**Primary references**: `references/troubleshooting/`
+
+A test that is itself unreliable, or a suite that is too slow, is repaired with `pragmatic-verification`. A production incident with users affected is not this workflow.
 
 ---
 
@@ -105,7 +107,7 @@ If repeated experiments produce no new evidence, stop editing and revise the hyp
 - [ ] At each step, run your reproduction test → `git bisect good` or `git bisect bad`
 - [ ] Git announces the first bad commit
 
-**If the suite is too slow for bisection**: first make it fast (cf. `references/troubleshooting/rules.md` on slow tests).
+**If the suite is too slow for bisection**: bisect with the single reproduction check, not the suite (`references/troubleshooting/rules.md`, rule 6).
 
 **Reference**: `references/troubleshooting/patterns.md` (Git Bisection)
 
@@ -118,10 +120,9 @@ If repeated experiments produce no new evidence, stop editing and revise the hyp
 - [ ] Apply the simplest change that restores the violated invariant without adding symptom-specific debt
 - [ ] Run the full test suite — all green
 - [ ] Review: does the fix handle related cases, or only the exact repro?
-- [ ] Add a few more test cases (Devil's Advocate) to cover the generalisation
-- [ ] For material impact, confirm behavior against an independent oracle where practical
+- [ ] Would a slightly different wrong fix also pass? Then the reproduction is too narrow: widen it
 
-**Reference**: `references/outside-in-tdd/rules.md` (Devil's Advocate)
+What makes the reproduction worth keeping as a permanent regression test, and what else must be checked before the fix is accepted, is `pragmatic-verification`'s subject.
 
 ---
 
@@ -174,7 +175,7 @@ If repeated experiments produce no new evidence, stop editing and revise the hyp
 | Random changes + re-run test | Wastes time, adds noise | Write a hypothesis; test it |
 | Patching the symptom (add `if` around crash) | Bug re-appears as a different symptom | Find the root cause |
 | Fixing without a test | Regression next sprint | Every defect fix includes a regression test |
-| Bisecting with a slow suite | Wall-clock pain | Fix the slow tests first |
+| Bisecting with a slow suite | Wall-clock pain | Bisect with the one reproduction check |
 
 ---
 

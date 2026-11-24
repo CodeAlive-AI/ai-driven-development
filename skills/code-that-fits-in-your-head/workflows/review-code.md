@@ -7,7 +7,7 @@ End-to-end process for reviewing a pull request or a diff, grounded in the book'
 - [When to Use](#when-to-use)
 - [Prerequisites](#prerequisites)
 - [Step 1: Understand the Change Set](#step-1-understand-the-change-set)
-- [Step 2: Read the Tests First](#step-2-read-the-tests-first)
+- [Step 2: Read the Tests for Intent](#step-2-read-the-tests-for-intent)
 - [Step 3: Check Decomposition](#step-3-check-decomposition)
 - [Step 4: Check Encapsulation](#step-4-check-encapsulation)
 - [Step 5: Check API Design](#step-5-check-api-design-if-the-pr-changes-public-surface)
@@ -51,20 +51,18 @@ End-to-end process for reviewing a pull request or a diff, grounded in the book'
 
 ---
 
-### Step 2: Read the Tests First
+### Step 2: Read the Tests for Intent
 
-**Goal**: Tests encode intent — read them before the production code.
+**Goal**: Learn from the tests what the change is meant to do. Whether they are the right tests is not judged here.
 
-- [ ] For each new/changed behaviour, is there a test?
-- [ ] Do the tests follow AAA structure (Arrange / Act / Assert)?
-- [ ] Would you believe the tests cover the stated behaviour?
-- [ ] Did the change weaken, skip, or rewrite an existing oracle merely to get green?
-- [ ] For material behavior, is any acceptance evidence independent of the implementation?
-- [ ] Any flaky patterns (time, random, network without isolation)?
+- [ ] Read the tests of each new or changed behaviour before the production code: what do they say the code must do?
+- [ ] A behaviour change with no check at all: block and ask why.
+- [ ] Is some code hard to test because of a hidden dependency or a mixed effect? That is a design finding for Steps 3–4, not a testing problem.
+- [ ] Did the change edit its own judges (tests, suppressions, analysers, CI)? Flag it.
 
-**If no tests for a behaviour change**: block and ask why (reference `references/outside-in-tdd/rules.md`).
+Whether the tests are sufficient, sit at the right level and take their expected results from a source independent of the implementation is reviewed with `pragmatic-verification`.
 
-**Reference**: `references/outside-in-tdd/rules.md`, `references/code-navigation/rules.md`
+**Reference**: `references/code-navigation/rules.md`
 
 ---
 
@@ -118,10 +116,14 @@ Measure, don't estimate: complexity/cycle/duplication commands in `../references
 
 - [ ] New logging/telemetry attached at an explicit seam appropriate to its scope?
 - [ ] Any secrets, PII, or sensitive data risk of being logged?
-- [ ] New endpoint → did we STRIDE it? (Optional deeper dive: `workflows/threat-model.md`)
+- [ ] Queries and commands built from input are parameterised, never concatenated?
+- [ ] Authorisation is checked on the server for each action, not inferred from what the client sends?
 - [ ] New dependency → identity, provenance, locked version, and necessity verified?
+- [ ] New entry point reachable by untrusted input, or a change in who may do what → was it threat-modelled when it was designed? If not, send it back to design (`pragmatic-architecture`).
 
-**Reference**: `references/separation-of-concerns/rules.md`, `references/security/checklist.md`
+These four lines are a reviewer's tripwire, not a security review. A security audit needs a dedicated security skill or reviewer.
+
+**Reference**: `references/separation-of-concerns/rules.md`
 
 ---
 
@@ -155,7 +157,7 @@ Measure, don't estimate: complexity/cycle/duplication commands in `../references
 
 ```
 [ ] Step 1: Understood the change's intent
-[ ] Step 2: Read the tests first
+[ ] Step 2: Tests read for intent; their quality handed to pragmatic-verification
 [ ] Step 3: Complexity/debt delta understood (local + system structure)
 [ ] Step 4: Encapsulation OK (invariants, validation)
 [ ] Step 5: API design OK (CQS, naming)

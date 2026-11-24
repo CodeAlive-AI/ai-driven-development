@@ -1,13 +1,26 @@
 ---
 name: code-that-fits-in-your-head
-description: Software-engineering heuristics based on Mark Seemann's Code That Fits in Your Head (2021), updated for agent-driven development. Use when writing or reviewing code, refactoring accidental complexity or a Big Ball of Mud, controlling technical or architectural debt in generated code, designing APIs and invariants, adding a feature through a walking skeleton and acceptance tests, debugging a defect with reproducible tests or bisection, threat-modelling endpoints and trust boundaries with STRIDE, planning a legacy or Strangler migration with rollback, or setting up a maintainable codebase. Covers decomposition and cyclomatic complexity, cohesion, encapsulation, outside-in TDD, separation of concerns, Git/review discipline, safe evolution, and troubleshooting. Not for language syntax, framework tutorials, production incident response, or performance profiling.
+description: "Heuristics for the shape of code inside one code base, after Mark Seemann's Code That Fits in Your Head (2021), updated for coding agents: units small enough to hold in mind, invariants in types, APIs hard to misuse, explicit effects. Use when writing or reviewing code, refactoring accidental complexity or a Big Ball of Mud, controlling technical debt in generated code, designing a type, an invariant or an in-code API, decomposing a long function or a tangled module, replacing a method or class side by side (Strangler), reading or measuring an unfamiliar code base, debugging a defect by hypothesis and bisection, setting up a maintainable code base, or turning a recurring finding into a lint or CI gate. Not for choosing, writing or repairing tests, TDD included (pragmatic-verification), choosing a design, state ownership, migration or rollout, or threat modelling (pragmatic-architecture), security audits, production incident response, performance profiling, or language and framework tutorials."
 ---
 
 # Code That Fits in Your Head
 
-Engineering heuristics for sustainable software, based on Mark Seemann's 2021 book and clearly labelled agent-era amendments.
+Heuristics for the shape of code inside one code base, based on Mark Seemann's 2021 book and clearly labelled agent-era amendments: can the next reader, human or agent, hold a unit in mind and change it safely?
 
 Code examples are C#-first; every rule and the tooling tables are language-neutral.
+
+## Scope
+
+A question belongs to this skill when it is answered by reading the code.
+
+| The question is answered by | Use |
+|-----------------------------|-----|
+| Reading the code: size, cohesion, coupling, names, types, explicit effects | This skill |
+| Running something: which checks to write and at which level, whether a test can fail, a flaky or slow test, when a task is done | `pragmatic-verification` |
+| Replaying a sequence of events: a retry, a crash, two writers, two versions; where state lives; how a schema or contract changes; rollout and rollback; what an untrusted caller can reach | `pragmatic-architecture` |
+| Thinking before or around the code: which problem to solve, build or buy, a cause outside the code, delivery and operations | `fpf-problem-solving` |
+
+The skill prescribes no order of writing tests and code. Test-driven development is a large part of the book; here it is left to `pragmatic-verification`, which treats it as one working technique among others. Two ideas from it stay, because they are about code and not about tests: build a feature as a thin slice from the boundary inward, and treat code that is hard to check as a design smell.
 
 ## Philosophy (Why This Skill Exists)
 
@@ -29,14 +42,14 @@ Core mental model from Chapter 1:
 1. **Successful software endures.** Prefer changes that preserve clear boundaries and keep future change affordable.
 2. **Complexity is the enemy, not task size.** Agents can complete changes spanning tens of thousands of lines when architecture, plan, and acceptance criteria are sound. Reject needless coupling, duplication, hidden effects, and unverifiable bulk—not large scope by itself.
 3. **Heuristics, not laws.** Understand the purpose of a rule before applying or relaxing it. Project policy overrides generic formatting and workflow conventions.
-4. **Verification is part of design.** Types, tests, schemas, architecture checks, observability, and explicit acceptance criteria constrain both human- and agent-written code.
+4. **Executable constraints are part of design.** Types, schemas, architecture checks and lint rules keep a structure true after its author has left, for human- and agent-written code alike.
 5. **Code is a liability.** Generated volume is not progress. Prefer the smallest coherent design that solves the problem without accumulating debt.
 
 See `references/foundations/` for more on sustainability, readability, and brain-limited design.
 
 ## How to Use This Skill
 
-1. Identify the user's task (writing, reviewing, debugging, security review, setting up, etc.)
+1. Identify the user's task (writing, reviewing, refactoring, debugging, setting up). If it falls outside the Scope table, say which skill covers it and use that one
 2. Read `guidelines.md` — it maps tasks and symptoms to specific reference files
 3. Load only the reference files relevant to the current task (progressive disclosure)
 4. Apply the rules; when in doubt, consult `references/practices-glossary/` for cross-references
@@ -48,17 +61,15 @@ See `references/foundations/` for more on sustainability, readability, and brain
 |-------|-------------|
 | `references/foundations/` | Sustainability, readability, complexity control, and code as liability |
 | `references/codebase-setup/` | Starting or inheriting a code base — git, build automation, warnings-as-errors |
-| `references/outside-in-tdd/` | Writing new features test-first; walking skeleton, AAA, triangulation, devil's advocate, editing tests |
 | `references/encapsulation/` | Designing types with invariants; DTO vs Domain Model, always-valid, Postel's law, parse-don't-validate |
 | `references/decomposition/` | Controlling method and system complexity; cyclomatic complexity, cohesion, coupling, feature envy, fractal architecture |
 | `references/api-design/` | Designing a public API; affordance, poka-yoke, CQS, hierarchy of communication, naming over comments |
 | `references/separation-of-concerns/` | Adding cross-cutting concerns; Decorator pattern, logging, what to log, performance vs legibility |
 | `references/teamwork-git/` | Writing commits, reviewing changes, continuous integration, collective ownership |
-| `references/evolution/` | Changing running systems; feature flags, Strangler pattern, versioning, regular dependency updates, Conway's law |
+| `references/evolution/` | Changing code that other code depends on; Strangler at method and class level, temporary paths and their removal, versioning, deprecation, regular dependency updates |
 | `references/troubleshooting/` | Debugging a defect; scientific method, rubber ducking, reproduce-as-test, bisection, non-deterministic defects |
-| `references/security/` | Threat modelling; STRIDE (spoofing, tampering, repudiation, info disclosure, DoS, elevation) |
-| `references/code-navigation/` | Onboarding to a code base; big picture, file organisation, cycles, property-based testing, behavioural code analysis |
-| `references/tooling/` | Executable measurement commands: complexity, cycles, duplication, dead code, hotspots, mutation testing |
+| `references/code-navigation/` | Onboarding to a code base; big picture, file organisation, cycles, tests as documentation, behavioural code analysis |
+| `references/tooling/` | Executable measurement commands: complexity, cycles, duplication, dead code, hotspots, architecture tests |
 | `references/practices-glossary/` | Looking up a named book practice and its current status |
 
 ### ⚠️ Editorial amendments (NOT from the book)
@@ -67,7 +78,7 @@ The folder below is NOT content from Seemann's book. It contains our own additio
 
 | Topic | Use when... |
 |-------|-------------|
-| `references/agent-native/` | Agent-specific verification integrity, hallucination and dependency grounding, executable guardrails, and accountable review |
+| `references/agent-native/` | Hallucinated APIs and dependency grounding, types and schemas as guardrails, and accountable review of agent-authored changes |
 
 ## Workflows
 
@@ -76,9 +87,8 @@ Composite step-by-step processes live in `workflows/`:
 | Task | Workflow |
 |------|----------|
 | Review a pull request / piece of code | `workflows/review-code.md` |
-| Add a new feature from scratch | `workflows/add-feature-outside-in.md` |
+| Add a new feature as a thin slice from the boundary inward | `workflows/add-feature.md` |
 | Investigate and fix a defect | `workflows/debug-defect.md` |
-| Threat-model a new endpoint | `workflows/threat-model.md` |
 | Turn a recurring finding into an executable gate and persist it in project memory | `workflows/operationalize-finding.md` |
 
 See `guidelines.md` for the full routing layer (task → file, symptom → file).

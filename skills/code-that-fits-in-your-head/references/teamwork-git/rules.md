@@ -28,7 +28,7 @@ Commit coherent known-good states that help diagnose, review, revert, or resume 
 Continuous integration means keeping work compatible with the shared mainline. Choose a cadence appropriate to concurrency, risk, and verification cost.
 
 - Long-running work may stay isolated when required, but continuously rebase/merge and verify against current mainline.
-- Use feature flags, branch-by-abstraction, or staged migration when incomplete behavior must integrate safely.
+- Integrate incomplete work side by side, with the new path unused or switched off, instead of on a long-lived branch (`../evolution/rules.md`).
 - Do not treat a fixed number of hours as the definition of CI.
 
 ### 4. Keep Each Review Architecturally Coherent
@@ -64,7 +64,7 @@ See `../agent-native/reviewability.md` for the canonical risk-lane policy.
 
 ### 8. Protect the Integrity of Tests and Gates
 
-Review changes to tests, suppressions, dependencies, permissions, and CI as carefully as production logic. A green result is not trustworthy if the change weakened the oracle.
+Review changes to tests, suppressions, dependencies, permissions, and CI as carefully as production logic. A green result is not trustworthy if the change weakened the oracle. How to judge such an edit, and whether the tests are the right ones, is `pragmatic-verification`'s subject, not this skill's.
 
 ## Guidelines
 

@@ -33,8 +33,8 @@ Even when self-merge is possible, require someone else to sign off. One PR has o
 ## How It Relates To
 
 - **Checklists**: Git is the first item on a new-code-base checklist.
-- **Testing**: Verified checkpoints align with red-green-refactor and recovery.
-- **Feature flags**: Escape hatch that lets unfinished work integrate without breaking mainline.
+- **Verification**: A commit is a verified checkpoint. Which checks make it trustworthy is `pragmatic-verification`'s subject.
+- **Scaffolding**: A new path that is unused or switched off lets unfinished work integrate without breaking mainline (`../evolution/rules.md`).
 
 ## Common Misconceptions
 

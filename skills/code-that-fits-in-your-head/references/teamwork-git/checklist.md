@@ -20,13 +20,12 @@ Use for human or agent-authored changes. Judge architecture, evidence, and futur
 - [ ] Temporary flags, adapters, parallel implementations, and TODOs have owners and exit conditions.
 - [ ] The change makes future modifications no harder than necessary.
 
-## Verification Integrity
+## Verification Evidence
 
-- [ ] Canonical build and required checks pass.
-- [ ] New behavior has appropriate tests or executable acceptance checks.
+- [ ] Canonical build and required checks pass, and the report names what ran and what remains unverified.
 - [ ] Existing assertions, types, analysers, permissions, and CI were not weakened merely to get green.
-- [ ] Material behavior has evidence independent of the implementation where practical.
-- [ ] The report names what ran, what it proves, and what remains unverified.
+
+Whether the tests are the right ones, at the right level and with an independent expected result, is reviewed with `pragmatic-verification`.
 
 ## Invariants, Effects, and Security
 

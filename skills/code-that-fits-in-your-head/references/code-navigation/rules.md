@@ -98,27 +98,7 @@ Single-package deployment is the simplest shape. The anti-pattern is *internal* 
 - Don't recommend a split until you see concrete coupling problems
 - Splitting into packages is a tool for enforcing acyclic dependencies, not a goal
 
-### 7. Use property-based testing for invariants
-
-When you can describe a property more easily than enumerate cases, reach for a property-based testing library (FsCheck, QuickCheck, Hypothesis, fast-check). The framework generates many inputs per run, biased toward boundary values.
-
-- Good for: "must be positive", "must round-trip", "must be idempotent", "must be sorted"
-- Complement, don't replace, example-based tests — use both
-- Start with built-in wrappers (`NonNegativeInt`, `PositiveInt`) before writing custom generators
-
-**Example**:
-```csharp
-[Property]
-public void QuantityMustBePositive(
-    Guid id, DateTime at, Email email, Name name, NonNegativeInt i)
-{
-    var invalidQuantity = -i?.Item ?? 0;
-    Assert.Throws<ArgumentOutOfRangeException>(
-        () => new Reservation(id, at, email, name, invalidQuantity));
-}
-```
-
-### 8. Use behavioural code analysis on legacy bases
+### 7. Use behavioural code analysis on legacy bases
 
 For any code base with real history, mine Git to find hotspots (high complexity × high change frequency) and change coupling (files that commit together).
 
@@ -166,6 +146,5 @@ When these rules may be relaxed:
 | Listen to tests | Painful tests reveal bad design |
 | Check for cycles | Red flag; packages make them a compile error |
 | Monolith is fine | Only the *internal* structure matters |
-| Property-based for invariants | Framework-generated inputs over hand-picked ones |
 | Behavioural analysis | Git history reveals hotspots and coupling (`../tooling/commands.md`) |
 | Context budget | Entry → one module → its tests → stop; scratch notes beat re-reads |

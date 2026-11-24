@@ -26,10 +26,6 @@ Record the problem, evidence, attempted explanations, and open questions clearly
 
 Before fixing, encode the hypothesis as an automated test expected to fail. A failing test validates the hypothesis; a passing one refutes it. Once fixed, the test is a permanent regression guard. Understanding and reproducing is usually the hard part; making the test pass is typically the easy part.
 
-### Slow Tests
-
-Tests (commonly integration tests touching a database or external service) that are too slow for the inner loop. Keep a fast inner loop for the touched behaviour (default target: seconds, project-configurable); keep comprehensive gates separate and run them at the appropriate checkpoint. There is no universal stopwatch — separate focused checks from high-value slow ones rather than discarding either.
-
 ### Non-deterministic Defects
 
 Defects that depend on uncontrolled inputs (scheduling, clock, random, external state). Preferred fallback: a non-deterministic test that loops the scenario under a fixed timeout. Accept false negatives; reject false positives (noise that destroys suite trust). These tests belong in the slow, second-stage tier.
@@ -42,9 +38,6 @@ Binary search over code or history to localise a cause. Applied to git history: 
 
 - **Myth**: The first step in troubleshooting is firing up the debugger.
   **Reality**: The scientific method, automated tests, and bisection solve more problems, work where debuggers cannot, and leave regression coverage behind.
-
-- **Myth**: Flaky tests are better than no tests only if they are deterministic.
-  **Reality**: A non-deterministic test that occasionally misses a race is still better than no coverage. What you must avoid are *false positives* that destroy trust.
 
 - **Myth**: Bisection only works if you have tests.
   **Reality**: `git bisect` works in interactive mode where you manually mark each checkout good or bad.

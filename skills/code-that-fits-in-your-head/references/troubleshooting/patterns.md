@@ -197,4 +197,4 @@ scope.Complete();
 | "It worked yesterday" | Git Bisection |
 | "It fails sometimes" | Isolate-Then-Fix |
 | Large commit range, deterministic repro | Git Bisection, then Reproduce-as-Test on the first bad commit |
-| Flaky test in CI | Isolate-Then-Fix (the test is the symptom of hidden non-determinism) |
+| Test fails intermittently in CI | Isolate-Then-Fix when the product is non-deterministic; when the test itself is at fault, `pragmatic-verification` |

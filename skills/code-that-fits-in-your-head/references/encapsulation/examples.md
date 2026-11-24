@@ -140,28 +140,6 @@ public async Task<ActionResult> Post(ReservationDto dto)
 - Cyclomatic complexity is low (4); the method fits in your brain.
 - A `null` from `Validate` becomes a 400 Bad Request; a valid `Reservation` flows to the repository.
 
-### Parametrised Test Triangulating the `quantity` Invariant
-
-```csharp
-[Theory]
-[InlineData( 0)]
-[InlineData(-1)]
-public void QuantityMustBePositive(int invalidQantity)
-{
-    Assert.Throws<ArgumentOutOfRangeException>(
-        () => new Reservation(
-            new DateTime(2024, 8, 19, 11, 30, 0),
-            "mail@example.com",
-            "Marie Ilsøe",
-            invalidQantity));
-}
-```
-
-**Why it works**:
-- Two `[InlineData]` cases document that zero and negative are both invalid — consensus on "is zero a natural number?" varies, so the test pins the decision.
-- Asserts only that *an* `ArgumentOutOfRangeException` is thrown; no brittle coupling to the exception message.
-- Drives the constructor's guard clause via Red → Green → Refactor.
-
 ## Refactoring Walkthrough
 
 ### Before — Controller Carrying All Validation Inline

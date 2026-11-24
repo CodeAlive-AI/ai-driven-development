@@ -99,39 +99,10 @@ A DTO is the wire format: nullable fields, string dates, untrusted values. A Dom
 - `Reservation` has `DateTime At`, non-null `Email`, non-null `Name`, positive `Quantity`.
 - The only bridge between them is a parse/validate method.
 
-### 8. Drive Invariants with Parametrised Tests
-
-When you need to triangulate a type — "is zero valid? is -1 valid?" — use a parametrised test with several `[InlineData]` cases rather than one test per input. This both documents the invariant and drives the implementation.
-
-**Example**:
-```csharp
-[Theory]
-[InlineData( 0)]
-[InlineData(-1)]
-public void QuantityMustBePositive(int invalidQantity)
-{
-    Assert.Throws<ArgumentOutOfRangeException>(
-        () => new Reservation(
-            new DateTime(2024, 8, 19, 11, 30, 0),
-            "mail@example.com",
-            "Marie Ilsøe",
-            invalidQantity));
-}
-```
-
-### 9. Move in Verified Transformations (TPP)
-
-Use the Transformation Priority Premise when incremental transformations make the design safer to reason about. A larger systematic transformation is acceptable when architecture and executable constraints make it clear and verifiable.
-
-- Verify each meaningful checkpoint with the relevant focused checks, then run the required complete gates before acceptance.
-- If evidence contradicts the transformation, back out or revise the plan instead of patching around it.
-
 ## Guidelines
 
 - Prefer a dedicated type (e.g. `NaturalNumber`) over a raw `int` when an invariant applies across many methods.
 - If your language lacks nullable reference types, use a `Maybe<T>` / `Option<T>` container instead of `null`.
-- Don't assert on exception messages — the message is not part of behaviour; coupling tests to it causes needless churn.
-- Follow Red → Green → Refactor: after every green, ask "can I simplify this?".
 
 ## Exceptions
 
@@ -152,5 +123,3 @@ When these rules may be relaxed:
 | ArgumentNullException | Name the null argument |
 | 400 on invalid input | Don't leak exceptions as 500 |
 | DTO ≠ Domain | Separate wire format from domain model |
-| Parametrised tests | Triangulate invariants with `[InlineData]` |
-| TPP | Move in small transformations |

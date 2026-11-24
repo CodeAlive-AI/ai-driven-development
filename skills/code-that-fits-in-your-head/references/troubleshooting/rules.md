@@ -45,14 +45,15 @@ Ask whether deletion, consolidation, or restoring an invariant removes the defec
 - Look for duplicated rules, stale compatibility paths, and abstractions that obscure the real behavior.
 - Do not delete necessary behavior merely to make a test pass.
 
-### 6. Keep Feedback Fast Enough to Use Reliably
+### 6. Keep the Debugging Loop Fast
 
-There is no universal ten-second limit. Separate focused and comprehensive checks so developers and agents can run the relevant feedback often without discarding slower high-value tests.
+A hypothesis is only as testable as its check is cheap to run.
 
-- Maintain a focused inner loop for the touched behavior.
-- Run complete required gates before acceptance.
-- Optimize slow verification when its delay causes systematic skipping, not merely because it exceeds a stopwatch target.
-- Keep the command suitable for bisection or classification as cheap and deterministic as practical.
+- Maintain one focused check for the behavior under investigation.
+- Keep the command used for bisection or classification as cheap and deterministic as practical.
+- Run the complete required gates before the fix is accepted.
+
+Repairing a slow or unreliable test suite is a different job: see `pragmatic-verification`.
 
 ### 7. Isolate Non-Determinism Before Fixing It
 
@@ -62,7 +63,7 @@ Control threading, clock, randomness, locale, external state, and environment be
 - Record seeds and relevant environment.
 - Use disposable fixtures for external state.
 - Stress concurrency with bounded, observable experiments.
-- Treat flaky false positives as corrosive; repair or quarantine them with an owner.
+- A test that fails intermittently is first a question about the product: establish whether the code or the test is non-deterministic. If it is the test, repair it with `pragmatic-verification`.
 
 ### 8. Use History When the Behavior Changed
 
@@ -95,7 +96,7 @@ After several attempts that do not change the evidence, stop editing and revise 
 | Executable reproduction | Preserve a failing signal and regression guard |
 | Externalize reasoning | Make evidence and unknowns durable before escalation |
 | Remove complexity first | Avoid special-case debt when deletion restores the invariant |
-| Usable feedback | Separate focused and complete gates; no universal stopwatch |
+| Fast debugging loop | One focused, cheap, deterministic check for the behavior under investigation |
 | Isolate nondeterminism | Control clocks, randomness, concurrency, and state |
 | Use history | Bisect changed behavior with a reliable classifier |
 | No evidence-free loops | Revise the model instead of repeating edits |

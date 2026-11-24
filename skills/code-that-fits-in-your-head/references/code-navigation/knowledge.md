@@ -40,10 +40,6 @@ Dependency loops (A uses B uses C uses A) collapse zoom levels so nothing fits i
 
 Read the test suite to learn intended usage. A good test has low complexity and a high abstraction level that communicates intent. Test helpers (`PostReservation`, `GetRestaurant`) are reusable entry points — sometimes generic enough to promote to a production client SDK. "Listen to your tests": if a test is hard to write or set up, the System Under Test is badly designed, not the test.
 
-### Property-Based Testing
-
-A framework generates arbitrary inputs (skewed toward boundaries) and you assert a property that must hold for all of them. Complements example-based tests; does not replace them. Useful when you can state an invariant ("quantity must be positive") more easily than enumerate cases.
-
 ### Behavioural Code Analysis
 
 Mine Git history for patterns invisible in static code: which files change most often, which change together. Hotspot = high complexity × high change frequency → prime refactoring target. Change coupling catches copy-paste coupling that dependency analysis misses. Detection commands (churn, hotspots, coupling) live in `../tooling/commands.md`. Watch trends, not absolute numbers.
@@ -55,9 +51,6 @@ Mine Git history for patterns invisible in static code: which files change most 
 
 - **Myth**: A monolith is an anti-pattern.
   **Reality**: It's the simplest shape. The anti-pattern is internal spaghetti, which you can have in microservices too.
-
-- **Myth**: Property-based testing replaces example-based tests.
-  **Reality**: They complement each other. Examples pin concrete behaviour; properties probe invariants.
 
 - **Myth**: Behavioural code analysis is for managers' dashboards.
   **Reality**: It's actionable engineering data — hotspots point at the files most worth refactoring.
