@@ -30,12 +30,14 @@ topology. Count real directories and enabled plugin sources, not labels alone.
 
 Inventory only bounded skill locations; do not recursively search the whole home folder.
 
-- Codex user skills: `$HOME/.agents/skills`.
-- Codex repository skills: `.agents/skills` from the working directory up to repo root.
+- Codex & universal user skills: `$HOME/.agents/skills`.
+- Repository shared skills: `.agents/skills` from the working directory up to repo root (plus Antigravity legacy `.agent/skills`, `_agents/skills`, `_agent/skills`).
+- Antigravity (App / IDE / CLI) global skills: `$HOME/.gemini/config/skills` (primary, wins on collision) plus `$HOME/.agents/skills` (cross-tool fallback in `agy`); pre-2.0 `$HOME/.gemini/antigravity/skills` is typically a symlink to `$HOME/.gemini/config/skills`.
+- Antigravity discovery manifests: `$HOME/.gemini/config/{skills,plugins}.json` and workspace `.agents/{skills,plugins}.json` (workspace entries confined to repo root).
 - Agent-specific user/project roots from `scripts/agents.py`.
-- Local plugin source `skills/` when a repo contains `.claude-plugin/plugin.json`.
-- Enabled plugin caches from the relevant plugin manager.
-- System/admin skills are read-only distribution layers; report but do not delete them.
+- Local plugin source `skills/` when a repo contains `.claude-plugin/plugin.json`, `plugin.json`, `.antigravity-plugin/plugin.json`, or `.gemini-plugin/plugin.json`.
+- Enabled plugin caches and installs from Claude Code, Codex, and Antigravity (`$HOME/.gemini/config/plugins/*/skills` and workspace `.agents/plugins/*/skills`, honoring `config.json` enabled overrides and `agy plugin list --json`).
+- System/admin and Antigravity built-in skills (`~/.gemini/antigravity/builtin/skills`, `/builtin/plugins/`) are read-only distribution layers; report if needed, never delete them.
 
 Codex follows symlinked skill directories. It does not merge different skills that share
 one `name`; both may appear in selectors. Plugin-provided skills are namespaced, which
@@ -110,14 +112,13 @@ the current inventory first and immediately audit the delta afterward.
 
 ## Plugins
 
-- Never manually edit or delete a plugin cache to resolve a duplicate; an update can restore
-  it and cache edits can corrupt plugin state.
+- Never manually edit `~/.gemini/config/config.json` or manually edit/delete a plugin cache to resolve a duplicate; cache edits can corrupt plugin state, and hand-editing `config.json` risks clobbering `userSettings` and permission grants. Use `agy plugin enable|disable|uninstall`, `/plugin`, or `[<name>](customization://<dir>)` (keyed on install directory `<dir>`, never `plugin.json.name`).
 - Audit enabled plugin installs, not every historical cache directory. Multiple versions
   wholly inside a manager-owned cache are informational, not standalone-install conflicts.
-- Compare the installed cache version with upstream and the marketplace source.
+- Compare the installed plugin/cache version with upstream and the marketplace source.
 - Update the plugin when safe. If its source tree is dirty, preserve local changes and stop.
 - If the standalone copy is canonical, disable the stale plugin rather than uninstalling it
-  when the plugin contains useful hooks/subagents or local changes.
+  when the plugin contains useful hooks/subagents or local changes (and note Antigravity `/builtin/plugins/` can only be disabled, never uninstalled).
 - If the plugin is canonical, remove the standalone install through its package manager.
 - Confirm before uninstalling a plugin because that removes more than its bundled skill.
 

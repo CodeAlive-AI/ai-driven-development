@@ -2,7 +2,7 @@
 # /// script
 # requires-python = ">=3.11"
 # ///
-"""Review a Claude Code skill against best practices."""
+"""Review an Agent Skill against cross-agent best practices."""
 
 import sys
 
@@ -17,6 +17,7 @@ import json
 import re
 from pathlib import Path
 
+from agents import resolve_skill
 from claude_scopes import find_skill
 from skill_md import SLOW_UPDATE_END, SLOW_UPDATE_START, parse_skill_md, read_skill_text
 
@@ -101,7 +102,7 @@ def check_description(description: str) -> list[dict]:
             "severity": "warning",
             "rule": "missing-triggers",
             "message": "Description doesn't include trigger conditions",
-            "suggestion": "Add 'Use when...' to help Claude know when to invoke this skill"
+            "suggestion": "Add 'Use when...' to help the agent know when to invoke this skill"
         })
 
     # Check for first/second person (should be third person)
@@ -235,12 +236,24 @@ def check_body(body: str, skill_path: Path) -> list[dict]:
         })
 
     # Check for deeply nested references (more than one level)
-    ref_files = re.findall(r"\[.*?\]\(([^)]+\.md)\)", body)
-    for ref_file in ref_files:
+    prose = _strip_fenced_code(body)
+    seen_refs: list[str] = []
+    for raw_ref in re.findall(r"(?<!!)\[[^\]]*\]\(([^)\s]+)\)", prose):
+        if raw_ref.startswith(("http://", "https://", "mailto:", "file://", "customization://", "#")):
+            continue
+        clean_ref = raw_ref.split("#", 1)[0]
+        if clean_ref.endswith(".md") and clean_ref not in seen_refs:
+            seen_refs.append(clean_ref)
+
+    for ref_file in seen_refs:
         ref_path = skill_path / ref_file
-        if ref_path.exists():
-            ref_content = ref_path.read_text(encoding="utf-8")
-            nested_refs = re.findall(r"\[.*?\]\(([^)]+\.md)\)", ref_content)
+        if ref_path.is_file():
+            ref_prose = _strip_fenced_code(ref_path.read_text(encoding="utf-8", errors="replace"))
+            nested_refs = [
+                r for r in re.findall(r"(?<!!)\[[^\]]*\]\(([^)\s]+)\)", ref_prose)
+                if not r.startswith(("http://", "https://", "mailto:", "file://", "customization://", "#"))
+                and r.split("#", 1)[0].endswith(".md")
+            ]
             if nested_refs:
                 issues.append({
                     "severity": "info",
@@ -258,7 +271,7 @@ def check_body(body: str, skill_path: Path) -> list[dict]:
                 "severity": "info",
                 "rule": "missing-toc",
                 "message": "Long file (>100 lines) without table of contents",
-                "suggestion": "Add a table of contents to help Claude navigate the content"
+                "suggestion": "Add a table of contents to help agents navigate the content"
             })
 
     return issues
@@ -520,6 +533,66 @@ def check_slow_update_section(body: str) -> list[dict]:
     return issues
 
 
+def check_progressive_disclosure(body: str, skill_path: Path) -> list[dict]:
+    """Check progressive-disclosure hygiene: valid links, no orphaned refs, no eager loads."""
+    issues = []
+    prose = _strip_fenced_code(body)
+
+    # 1. Broken local links in SKILL.md
+    seen_targets: set[str] = set()
+    for raw_target in re.findall(r"(?<!!)\[[^\]]*\]\(([^)\n]+)\)", prose):
+        target = raw_target.strip()
+        if (
+            not target
+            or target.startswith(("http://", "https://", "mailto:", "file://", "customization://", "#"))
+            or any(ch in target for ch in "<>{}")
+        ):
+            continue
+        clean_target = target.split("#", 1)[0].strip()
+        if not clean_target or clean_target in seen_targets:
+            continue
+        seen_targets.add(clean_target)
+        if not (skill_path / clean_target).exists():
+            issues.append({
+                "severity": "error",
+                "rule": "broken-reference-link",
+                "message": f"Local link target '{clean_target}' does not exist",
+                "suggestion": "Fix the path or create the missing file so agents never hit dead links",
+            })
+
+    # 2. Orphaned files under references/ never mentioned in SKILL.md
+    refs_dir = skill_path / "references"
+    if refs_dir.is_dir():
+        for md_file in sorted(refs_dir.rglob("*.md")):
+            if md_file.name == "README.md" and md_file.parent != refs_dir:
+                continue
+            rel = md_file.relative_to(skill_path).as_posix()
+            if rel not in body and md_file.name not in body:
+                issues.append({
+                    "severity": "warning",
+                    "rule": "unreferenced-reference",
+                    "message": f"Reference file '{rel}' is not linked or mentioned in SKILL.md",
+                    "suggestion": "Add a conditional routing entry in SKILL.md or remove the orphaned file",
+                })
+
+    # 3. Eager-loading directives that defeat progressive disclosure
+    prose_lower = prose.lower()
+    eager_patterns = (
+        r"\bread (?:all|every)(?: of the)?(?: files in)? references?\b",
+        r"\bload (?:all|every)(?: of the)? reference(?:s| files)\b",
+        r"\bread every reference\b",
+    )
+    if any(re.search(p, prose_lower) for p in eager_patterns):
+        issues.append({
+            "severity": "warning",
+            "rule": "eager-reference-load",
+            "message": "SKILL.md instructs agents to load all references eagerly",
+            "suggestion": "Replace with conditional load cues ('Read references/X.md only when...')",
+        })
+
+    return issues
+
+
 def check_structure(skill_path: Path) -> list[dict]:
     """Check skill directory structure."""
     issues = []
@@ -563,23 +636,36 @@ def check_structure(skill_path: Path) -> list[dict]:
                     "severity": "info",
                     "rule": "reference-toc",
                     "message": f"Reference file '{rel_path}' exceeds 100 lines without TOC",
-                    "suggestion": "Add table of contents to help Claude navigate"
+                    "suggestion": "Add table of contents to help agents navigate"
                 })
 
     return issues
 
 
-def review_skill(name: str, scope: str | None = None, output_format: str = "text") -> dict:
+def review_skill(
+    name: str | None = None,
+    scope: str | None = None,
+    output_format: str = "text",
+    *,
+    agent: str | None = None,
+    path: Path | str | None = None,
+) -> dict:
     """Review a skill against best practices.
 
     Returns:
         Dict with skill info and issues found
     """
-    skill_path, found_scope = find_skill(name, scope)
+    skill_path, found_scope, error = resolve_skill(
+        name,
+        agent=agent,
+        scope=scope,
+        path=Path(path) if path is not None else None,
+        claude_finder=find_skill,
+    )
 
     if not skill_path:
         return {
-            "error": f"Skill '{name}' not found",
+            "error": error or f"Skill '{name}' not found",
             "found": False
         }
 
@@ -587,15 +673,28 @@ def review_skill(name: str, scope: str | None = None, output_format: str = "text
     content = read_skill_text(skill_md)
     metadata, body = parse_skill_md(content)
 
-    skill_name = metadata.get("name", skill_path.name)
+    raw_name = metadata.get("name", "").strip()
+    skill_name = raw_name or skill_path.name
     description = metadata.get("description", "")
 
     all_issues = []
+    if not raw_name:
+        all_issues.append({
+            "severity": "error",
+            "rule": "name-required",
+            "message": "Frontmatter is missing required 'name' field",
+            "suggestion": (
+                f"Add 'name: {skill_path.name}' to YAML frontmatter; "
+                "Antigravity App and agentskills.io require 'name' matching the folder name"
+            ),
+        })
     all_issues.extend(check_name(skill_name))
-    all_issues.extend(check_name_matches_dir(skill_name, skill_path))
+    if raw_name:
+        all_issues.extend(check_name_matches_dir(skill_name, skill_path))
     all_issues.extend(check_description(description))
     all_issues.extend(check_frontmatter_xml(metadata))
     all_issues.extend(check_body(body, skill_path))
+    all_issues.extend(check_progressive_disclosure(body, skill_path))
     all_issues.extend(check_structure(skill_path))
     all_issues.extend(check_tokens(body, skill_path))
     all_issues.extend(check_procedurality(body))
@@ -718,12 +817,20 @@ def format_output(result: dict, output_format: str) -> str:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Review a Claude Code skill against best practices"
+        description="Review an Agent Skill against cross-agent best practices"
     )
-    parser.add_argument("name", help="Name of the skill to review")
+    parser.add_argument("name", nargs="?", help="Name of the skill to review")
+    parser.add_argument(
+        "--agent", "-a",
+        help="Agent ID whose scopes to search (e.g., antigravity, cursor, codex)"
+    )
+    parser.add_argument(
+        "--path", "-p",
+        help="Explicit path to a skill directory or SKILL.md"
+    )
     parser.add_argument(
         "--scope", "-s",
-        choices=["user", "project"],
+        choices=["user", "global", "project"],
         help="Scope to search (default: search both)"
     )
     parser.add_argument(
@@ -734,7 +841,10 @@ def main():
     )
     args = parser.parse_args()
 
-    result = review_skill(args.name, args.scope, args.format)
+    if not args.name and not args.path:
+        parser.error("Either skill name or --path is required")
+
+    result = review_skill(args.name, args.scope, args.format, agent=args.agent, path=args.path)
     print(format_output(result, args.format))
 
     if not result.get("found"):

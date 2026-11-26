@@ -29,6 +29,7 @@ from typing import TypedDict
 
 UPSTREAM = "vercel-labs/skills@b716f9d src/agents.ts"
 DOCS = "vendor docs, checked 2026-11-14: "
+DOCS_NOV26 = "vendor docs, checked 2026-11-26: "
 SHARED_GLOBAL = "~/.agents/skills"
 SHARED_PROJECT = ".agents/skills"
 
@@ -38,9 +39,11 @@ class AgentConfig(TypedDict, total=False):
     name: str
     display_name: str
     project_dir: str      # Relative path for project-level skills
+    extra_project_dirs: list[str]  # Additional workspace-relative dirs read (audit/discovery only)
     global_dir: str       # Path for user-level skills (supports ~ and ~/.config)
     global_dir_windows: str  # Windows override for global_dir (%VARS% expanded)
     extra_global_dirs: list[str]  # Further user-level dirs the agent reads (audit/delete only)
+    reads_shared_global: bool  # True when agent also reads ~/.agents/skills at lower priority
     home_env: tuple[str, str]  # (ENV_VAR, default home): ENV_VAR replaces that prefix
     detect_paths: list[str]  # User-level paths that indicate the agent is installed
     detect_project_markers: list[str]  # Paths relative to cwd that indicate the agent
@@ -54,7 +57,9 @@ def _agent(
     global_dir: str,
     detect_paths: list[str],
     *,
+    extra_project_dirs: list[str] | None = None,
     extra_global_dirs: list[str] | None = None,
+    reads_shared_global: bool = False,
     home_env: tuple[str, str] | None = None,
     global_dir_windows: str | None = None,
     detect_project_markers: list[str] | None = None,
@@ -68,8 +73,12 @@ def _agent(
         "detect_paths": detect_paths,
         "source": source,
     }
+    if extra_project_dirs:
+        config["extra_project_dirs"] = extra_project_dirs
     if extra_global_dirs:
         config["extra_global_dirs"] = extra_global_dirs
+    if reads_shared_global:
+        config["reads_shared_global"] = True
     if home_env:
         config["home_env"] = home_env
     if global_dir_windows:
@@ -85,16 +94,23 @@ _REGISTRY: list[AgentConfig] = [
     _agent("amp", "Amp", SHARED_PROJECT, SHARED_GLOBAL, ["~/.config/amp"],
            extra_global_dirs=["~/.config/agents/skills", "~/.config/amp/skills"],
            source=DOCS + "https://ampcode.com/docs/customize/skills"),
-    # Antigravity reads .agents/skills in a workspace but global skills only from
-    # ~/.gemini/config/skills (upstream fe7ff9a, #2566). ~/.gemini/antigravity/skills
-    # is the pre-2.0 location; on current installs it is a symlink to the new one.
-    _agent("antigravity", "Antigravity", SHARED_PROJECT, "~/.gemini/config/skills",
-           ["~/.gemini/antigravity"], extra_global_dirs=["~/.gemini/antigravity/skills"],
-           source=DOCS + "https://antigravity.google/docs/skills; " + UPSTREAM + " (fe7ff9a)"),
+    # Antigravity (App 2.0 / IDE / CLI) reads .agents/skills (plus legacy .agent,
+    # _agents, _agent) in a workspace, ~/.gemini/config/skills globally, and
+    # ~/.agents/skills at lower priority (added in agy 1.5.16). ~/.gemini/antigravity/skills
+    # is the pre-2.0 location; on current installs it is a symlink to ~/.gemini/config/skills.
+    _agent("antigravity", "Antigravity (App / IDE)", SHARED_PROJECT, "~/.gemini/config/skills",
+           ["~/.gemini/antigravity", "~/.gemini/config/skills", "~/.gemini/config/config.json",
+            "/Applications/Antigravity.app"],
+           extra_project_dirs=[".agent/skills", "_agents/skills", "_agent/skills"],
+           extra_global_dirs=["~/.gemini/antigravity/skills"],
+           reads_shared_global=True,
+           source=DOCS_NOV26 + "https://antigravity.google/docs/skills; " + UPSTREAM + " (fe7ff9a)"),
     _agent("antigravity-cli", "Antigravity CLI", SHARED_PROJECT, "~/.gemini/config/skills",
            ["~/.gemini/antigravity-cli"],
+           extra_project_dirs=[".agent/skills", "_agents/skills", "_agent/skills"],
            extra_global_dirs=["~/.gemini/antigravity-cli/skills", "~/.gemini/skills"],
-           source=DOCS + "https://antigravity.google/docs/skills; " + UPSTREAM + " (fe7ff9a)"),
+           reads_shared_global=True,
+           source=DOCS_NOV26 + "https://antigravity.google/docs/skills; agy 1.5.16 changelog; " + UPSTREAM + " (fe7ff9a)"),
     _agent("augment", "Augment", ".augment/skills", "~/.augment/skills", ["~/.augment"]),
     _agent("autohand-code", "Autohand Code CLI", ".autohand/skills", "~/.autohand/skills",
            ["~/.autohand"], home_env=("AUTOHAND_HOME", "~/.autohand")),
@@ -133,6 +149,7 @@ _REGISTRY: list[AgentConfig] = [
     # a documented location. The shared project dir avoids a second copy.
     _agent("devin", "Devin CLI / Desktop", SHARED_PROJECT, "~/.config/devin/skills",
            ["~/.config/devin"], global_dir_windows="%APPDATA%\\devin\\skills",
+           reads_shared_global=True,
            source=DOCS + "https://docs.devin.ai/cli/extensibility/skills/overview"),
     _agent("dexto", "Dexto", SHARED_PROJECT, SHARED_GLOBAL, ["~/.dexto"]),
     # Droid reads .agents/skills and ~/.agents/skills as compatibility locations;
@@ -159,6 +176,7 @@ _REGISTRY: list[AgentConfig] = [
     # comes from upstream only; the xAI page does not mention it.
     _agent("grok", "Grok Build", ".grok/skills", "~/.grok/skills", ["~/.grok"],
            home_env=("GROK_HOME", "~/.grok"),
+           reads_shared_global=True,
            source=DOCS + "https://docs.x.ai/build/features/skills-plugins-marketplaces; " + UPSTREAM),
     # Hermes reads ~/.agents/skills only when listed in skills.external_dirs, and
     # project skills only in a repository trusted with `hermes skills trust`.
@@ -313,6 +331,38 @@ def get_all_global_skills_dirs(agent: str) -> list[Path]:
     return dirs
 
 
+def get_readable_global_skills_dirs(agent: str) -> list[Path]:
+    """All user-level directories ``agent`` reads, including ``~/.agents/skills`` when enabled.
+
+    Kept separate from ``get_all_global_skills_dirs`` so ``delete_skill.py`` does not
+    remove entries from the shared ``~/.agents/skills`` root when targeting one agent.
+    """
+    config = get_agent_config(agent)
+    if not config:
+        return []
+    dirs = list(get_all_global_skills_dirs(agent))
+    if config.get("reads_shared_global"):
+        shared = expand_path(SHARED_GLOBAL)
+        if shared not in dirs:
+            dirs.append(shared)
+    return dirs
+
+
+def get_all_project_skills_dirs(agent: str, cwd: Path | None = None) -> list[Path]:
+    """Primary project skills directory plus any legacy/extra project dirs ``agent`` reads."""
+    config = get_agent_config(agent)
+    primary = get_project_skills_dir(agent, cwd)
+    if not config or primary is None:
+        return []
+    base = cwd or Path.cwd()
+    dirs = [primary]
+    for extra in config.get("extra_project_dirs", []):
+        path = base / extra
+        if path not in dirs:
+            dirs.append(path)
+    return dirs
+
+
 def detect_installed_agents(cwd: Path | None = None) -> list[str]:
     """IDs of agents whose home directory or project marker exists on this system."""
     base = cwd or Path.cwd()
@@ -369,6 +419,66 @@ def find_skill_in_agent(
     return None, None
 
 
+def resolve_skill(
+    name: str | None = None,
+    *,
+    agent: str | None = None,
+    scope: str | None = None,
+    path: Path | None = None,
+    cwd: Path | None = None,
+    claude_finder=None,
+) -> tuple[Path | None, str | None, str | None]:
+    """Resolve a skill by explicit path, by agent+scope, or in Claude Code scopes.
+
+    Returns ``(skill_dir, scope_label, error_message)``.
+    """
+    if path is not None:
+        target = Path(os.path.abspath(Path(path).expanduser()))
+        if target.is_file() and target.name == "SKILL.md":
+            target = target.parent
+        if not target.is_dir():
+            return None, None, f"Skill path does not exist or is not a directory: {target}"
+        if not (target / "SKILL.md").is_file():
+            return None, None, f"No SKILL.md found in {target}"
+        return target, "path", None
+
+    if not name:
+        return None, None, "Either skill name or --path is required"
+
+    if agent is not None:
+        if not validate_agent(agent):
+            valid = ", ".join(sorted(AGENTS))
+            return None, None, f"Unknown agent '{agent}'. Valid agents: {valid}"
+        norm_scope = "global" if scope == "user" else scope
+        if norm_scope not in (None, "global", "project"):
+            return None, None, f"Invalid scope '{scope}' for agent '{agent}'"
+        candidates: list[tuple[str, Path]] = []
+        if norm_scope in (None, "global"):
+            for global_dir in get_readable_global_skills_dirs(agent):
+                candidates.append(("global", global_dir))
+        if norm_scope in (None, "project"):
+            for project_dir in get_all_project_skills_dirs(agent, cwd):
+                candidates.append(("project", project_dir))
+        for scope_name, skills_dir in candidates:
+            skill_path = skills_dir / name
+            if skill_path.exists() and (skill_path / "SKILL.md").is_file():
+                return skill_path, scope_name, None
+        scope_msg = f" in {norm_scope} scope" if norm_scope else ""
+        return None, None, f"Skill '{name}' not found for agent '{agent}'{scope_msg}"
+
+    if claude_finder is None:
+        from claude_scopes import find_skill as claude_finder
+
+    claude_scope = "user" if scope == "global" else scope
+    if claude_scope not in (None, "user", "project"):
+        return None, None, f"Invalid scope '{scope}'"
+    skill_path, found_scope = claude_finder(name, claude_scope)
+    if not skill_path:
+        scope_msg = f" in {claude_scope} scope" if claude_scope else " in user or project scope"
+        return None, None, f"Skill '{name}' not found{scope_msg}"
+    return skill_path, found_scope, None
+
+
 def agents_sharing_dir(skills_dir: Path, cwd: Path | None = None) -> list[str]:
     """Agent IDs whose global or project skills directory is ``skills_dir``.
 
@@ -378,7 +488,7 @@ def agents_sharing_dir(skills_dir: Path, cwd: Path | None = None) -> list[str]:
     wanted = os.path.abspath(skills_dir)
     sharing = []
     for agent in AGENTS:
-        dirs = [*get_all_global_skills_dirs(agent), get_project_skills_dir(agent, cwd)]
-        if any(d is not None and os.path.abspath(d) == wanted for d in dirs):
+        dirs = [*get_readable_global_skills_dirs(agent), *get_all_project_skills_dirs(agent, cwd)]
+        if any(os.path.abspath(d) == wanted for d in dirs):
             sharing.append(agent)
     return sharing

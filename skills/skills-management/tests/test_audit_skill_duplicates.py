@@ -9,8 +9,11 @@ SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
 from audit_skill_duplicates import (  # noqa: E402
+    active_antigravity_plugin_skill_roots,
     active_claude_plugin_skill_roots,
+    antigravity_manifest_skill_roots,
     audit_candidate,
+    default_roots,
     duplicate_groups,
     scan_roots,
 )
@@ -111,6 +114,119 @@ class DuplicateAuditTests(unittest.TestCase):
         result = audit_candidate(candidate, roots=[(installed_root, "canonical-user")])
         self.assertTrue(result["blocked"])
         self.assertEqual(result["matches"][0]["relation"], "identical")
+
+    def test_antigravity_plugin_roots_respect_config_bom_skills_field_and_escape(self):
+        home = self.base / "home"
+        plugins = home / ".gemini" / "config" / "plugins"
+
+        p_enabled = plugins / "p-enabled"
+        self.make_skill(p_enabled / "skills", "s1", "s1")
+        (p_enabled / "plugin.json").write_text('{"name": "p-enabled"}', encoding="utf-8")
+
+        p_disabled_manifest = plugins / "p-disabled"
+        self.make_skill(p_disabled_manifest / "skills", "s2", "s2")
+        (p_disabled_manifest / "plugin.json").write_text(
+            '{"name": "p-disabled", "disabled": true}', encoding="utf-8"
+        )
+
+        p_overridden = plugins / "p-overridden"
+        self.make_skill(p_overridden / "skills", "s3", "s3")
+        (p_overridden / "plugin.json").write_text('{"name": "p-overridden"}', encoding="utf-8")
+
+        p_string_skills = plugins / "p-str"
+        self.make_skill(p_string_skills / "custom-skills", "s4", "s4")
+        (p_string_skills / "plugin.json").write_text(
+            '{"name": "p-str", "skills": "./custom-skills"}', encoding="utf-8"
+        )
+
+        p_list_escape = plugins / "p-esc"
+        outside = self.base / "outside-skills"
+        self.make_skill(outside, "evil", "evil")
+        self.make_skill(p_list_escape / "extra", "s5", "s5")
+        (p_list_escape / "plugin.json").write_text(
+            '{"name": "p-esc", "skills": ["./extra", "../../../outside-skills"]}',
+            encoding="utf-8",
+        )
+
+        # UTF-8 BOM + JSONC in config.json overrides plugin enabled state
+        (home / ".gemini" / "config" / "config.json").write_text(
+            '\ufeff{\n  // override\n  "plugins": {\n    "p-overridden": {"enabled": false,},\n    "p-disabled": {"enabled": true},\n  }\n}\n',
+            encoding="utf-8",
+        )
+
+        roots = active_antigravity_plugin_skill_roots(home=home, query_cli=False)
+        resolved = {r.resolve() for r in roots}
+        self.assertIn((p_enabled / "skills").resolve(), resolved)
+        self.assertIn((p_disabled_manifest / "skills").resolve(), resolved)
+        self.assertNotIn((p_overridden / "skills").resolve(), resolved)
+        self.assertIn((p_string_skills / "custom-skills").resolve(), resolved)
+        self.assertIn((p_list_escape / "extra").resolve(), resolved)
+        self.assertNotIn(outside.resolve(), resolved)
+
+    @patch("audit_skill_duplicates.subprocess.run")
+    def test_antigravity_cli_plugin_list_merged_and_fallback_safe(self, run):
+        home = self.base / "home"
+        cli_plugin = self.base / "cli-plugin"
+        self.make_skill(cli_plugin / "skills", "cli-skill", "cli-skill")
+        run.return_value.stdout = (
+            f'[{{"name": "cli-p", "enabled": true, "path": "{cli_plugin}"}}, '
+            f'{{"name": "off-p", "enabled": false, "path": "{self.base / "off"}"}}]'
+        )
+        roots = active_antigravity_plugin_skill_roots(home=home, query_cli=True)
+        self.assertEqual([r.resolve() for r in roots], [(cli_plugin / "skills").resolve()])
+
+        run.side_effect = FileNotFoundError("no agy")
+        self.assertEqual(active_antigravity_plugin_skill_roots(home=home, query_cli=True), [])
+
+    def test_antigravity_manifests_jsonc_cycles_and_workspace_confinement(self):
+        home = self.base / "home"
+        g_cfg = home / ".gemini" / "config"
+        g_cfg.mkdir(parents=True)
+        g_extra = self.base / "global-extra"
+        self.make_skill(g_extra, "g1", "g1")
+        (g_cfg / "shared.json").write_text(
+            f'{{"inherits": [{{"path": "skills.json"}}], "entries": [{{"path": "{g_extra}"}}]}}',
+            encoding="utf-8",
+        )
+        (g_cfg / "skills.json").write_text(
+            '{\n  // global manifest\n  "inherits": [{"path": "shared.json"}],\n  "entries": [],\n}\n',
+            encoding="utf-8",
+        )
+
+        repo = self.base / "repo"
+        (repo / ".git").mkdir(parents=True)
+        (repo / ".agents").mkdir()
+        in_repo = repo / "team-skills"
+        self.make_skill(in_repo, "r1", "r1")
+        outside = self.base / "outside"
+        self.make_skill(outside, "out", "out")
+        (repo / ".agents" / "out-link").symlink_to(outside, target_is_directory=True)
+        (repo / ".agents" / "skills.json").write_text(
+            f'{{"entries": [{{"path": "team-skills"}}, {{"path": "../outside"}}, {{"path": "{outside}"}}, {{"path": ".agents/out-link"}}]}}',
+            encoding="utf-8",
+        )
+
+        found = antigravity_manifest_skill_roots(home, [repo])
+        resolved_kinds = {(p.resolve(), kind) for p, kind in found}
+        self.assertIn((g_extra.resolve(), "manifest-global"), resolved_kinds)
+        self.assertIn((in_repo.resolve(), "manifest-workspace"), resolved_kinds)
+        self.assertNotIn((outside.resolve(), "manifest-workspace"), resolved_kinds)
+
+    def test_default_roots_finds_agy_plugin_repo_and_legacy_workspace_dirs(self):
+        repo = self.base / "agy-plugin-repo"
+        (repo / ".git").mkdir(parents=True)
+        (repo / "plugin.json").write_text('{"name": "demo-plugin"}', encoding="utf-8")
+        self.make_skill(repo / "skills", "plug-s", "plug-s")
+        self.make_skill(repo / ".agent" / "skills", "legacy-ws", "legacy-ws")
+        self.make_skill(repo / ".agents" / "plugins" / "local-p" / "skills", "ws-plug", "ws-plug")
+
+        with patch("audit_skill_duplicates.active_claude_plugin_skill_roots", return_value=[]), \
+             patch("audit_skill_duplicates.active_antigravity_plugin_skill_roots", return_value=[]):
+            roots = default_roots(repo)
+        kinds = {(r.resolve(), k) for r, k in roots}
+        self.assertIn(((repo / "skills").resolve(), "plugin-source"), kinds)
+        self.assertIn(((repo / ".agent" / "skills").resolve(), "repo"), kinds)
+        self.assertIn(((repo / ".agents" / "plugins" / "local-p" / "skills").resolve(), "plugin-workspace"), kinds)
 
 
 if __name__ == "__main__":

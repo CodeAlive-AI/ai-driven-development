@@ -1,0 +1,19 @@
+{
+  "$schema": "https://antigravity.dev/schemas/plugin.json",
+  "name": "{{PLUGIN_NAME}}",
+  "displayName": "{{DISPLAY_NAME}}",
+  "version": "1.0.0",
+  "description": "{{PLUGIN_DESCRIPTION}}",
+  "logo": "assets/logo.png",
+  "author": {
+    "name": "{{AUTHOR_NAME}}"
+  },
+  "homepage": "https://github.com/{{GITHUB_USER}}/{{PLUGIN_NAME}}",
+  "repository": "https://github.com/{{GITHUB_USER}}/{{PLUGIN_NAME}}",
+  "category": "Developer Tools",
+  "suggestedPrompts": [
+    "{{SUGGESTED_PROMPT}}"
+  ],
+  "skills": "skills/",
+  "disabled": false
+}

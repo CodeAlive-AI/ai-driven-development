@@ -2,7 +2,7 @@
 # /// script
 # requires-python = ">=3.11"
 # ///
-"""Show detailed information about a Claude Code skill."""
+"""Show detailed information about an Agent Skill."""
 
 import sys
 
@@ -14,9 +14,10 @@ if sys.version_info < (3, 11):
 
 import argparse
 import json
+import os
 from pathlib import Path
 
-from claude_scopes import find_skill
+from agents import resolve_skill
 from skill_md import extract_body, parse_frontmatter, read_skill_text
 
 
@@ -57,11 +58,16 @@ def get_skill_info(skill_path: Path, scope: str) -> dict:
     has_references = (skill_path / "references").exists()
     has_assets = (skill_path / "assets").exists()
 
+    is_symlink = skill_path.is_symlink()
+    symlink_target = os.readlink(skill_path) if is_symlink else None
+
     return {
         "name": metadata.get("name", skill_path.name),
         "directory": skill_path.name,
         "scope": scope,
         "path": str(skill_path),
+        "is_symlink": is_symlink,
+        "symlink_target": symlink_target,
         "description": metadata.get("description", ""),
         "metadata": metadata,
         "body_lines": body_lines,
@@ -86,7 +92,15 @@ def format_size(size: int) -> str:
         return f"{size / (1024 * 1024):.1f} MB"
 
 
-def show_skill(name: str, scope: str | None = None, output_format: str = "text", show_files: bool = False) -> bool:
+def show_skill(
+    name: str | None = None,
+    scope: str | None = None,
+    output_format: str = "text",
+    show_files: bool = False,
+    *,
+    agent: str | None = None,
+    path: Path | str | None = None,
+) -> bool:
     """Show information about a skill.
 
     Args:
@@ -94,21 +108,27 @@ def show_skill(name: str, scope: str | None = None, output_format: str = "text",
         scope: Optional scope filter
         output_format: "text" or "json"
         show_files: Include file listing
+        agent: Optional agent ID
+        path: Explicit skill directory or SKILL.md path
 
     Returns:
         True if skill found, False otherwise
     """
-    skill_path, found_scope = find_skill(name, scope)
+    skill_path, found_scope, error = resolve_skill(
+        name,
+        agent=agent,
+        scope=scope,
+        path=Path(path) if path is not None else None,
+    )
 
     if not skill_path:
-        if scope:
-            print(f"Error: Skill '{name}' not found in {scope} scope.")
-        else:
-            print(f"Error: Skill '{name}' not found in user or project scope.")
+        print(f"Error: {error or f'Skill {name!r} not found.'}")
         return False
 
     try:
-        info = get_skill_info(skill_path, found_scope)
+        info = get_skill_info(skill_path, found_scope or "unknown")
+        if agent:
+            info["agent"] = agent
     except Exception as e:
         print(f"Error reading skill: {e}")
         return False
@@ -121,8 +141,12 @@ def show_skill(name: str, scope: str | None = None, output_format: str = "text",
     print(f"{'=' * 60}")
     print(f"Skill: {info['name']}")
     print(f"{'=' * 60}")
+    if agent:
+        print(f"Agent:       {agent}")
     print(f"Scope:       {info['scope']}")
     print(f"Path:        {info['path']}")
+    if info["is_symlink"]:
+        print(f"Symlink:     -> {info['symlink_target']}")
     print("")
     print("Description:")
     print(f"  {info['description']}")
@@ -160,11 +184,19 @@ def show_skill(name: str, scope: str | None = None, output_format: str = "text",
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Show information about a Claude Code skill")
-    parser.add_argument("name", help="Name of the skill to show")
+    parser = argparse.ArgumentParser(description="Show information about an Agent Skill")
+    parser.add_argument("name", nargs="?", help="Name of the skill to show")
+    parser.add_argument(
+        "--agent", "-a",
+        help="Agent ID whose scopes to search (e.g., antigravity, cursor, codex)"
+    )
+    parser.add_argument(
+        "--path", "-p",
+        help="Explicit path to a skill directory or SKILL.md"
+    )
     parser.add_argument(
         "--scope", "-s",
-        choices=["user", "project"],
+        choices=["user", "global", "project"],
         help="Scope to search (default: search both)"
     )
     parser.add_argument(
@@ -180,7 +212,17 @@ def main():
     )
     args = parser.parse_args()
 
-    success = show_skill(args.name, args.scope, args.format, args.files)
+    if not args.name and not args.path:
+        parser.error("Either skill name or --path is required")
+
+    success = show_skill(
+        args.name,
+        args.scope,
+        args.format,
+        args.files,
+        agent=args.agent,
+        path=args.path,
+    )
     return 0 if success else 1
 
 

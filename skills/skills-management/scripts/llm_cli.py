@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import re
+import shlex
 import subprocess
 
 from run_io import log
@@ -65,7 +66,7 @@ def run_cli(cmd: list[str], stdin: str, timeout: int = DEFAULT_TIMEOUT) -> str:
 
 def call_llm_text(cmd_str: str, prompt: str, timeout: int = DEFAULT_TIMEOUT) -> str:
     """Call an LLM CLI with a free-text prompt. Returns the model's stdout."""
-    return run_cli(cmd_str.split(), stdin=prompt, timeout=timeout)
+    return run_cli(shlex.split(cmd_str), stdin=prompt, timeout=timeout)
 
 
 def call_llm_json(cmd_str: str, prompt: str, timeout: int = DEFAULT_TIMEOUT) -> dict | None:

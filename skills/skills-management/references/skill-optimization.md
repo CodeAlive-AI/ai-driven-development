@@ -5,6 +5,18 @@ fixed and the skill document is the only thing you change. SkillOpt is the
 discipline of doing that change as bounded, validated optimisation rather than
 blind self-rewrite.
 
+## Contents
+
+- [When to optimise a skill](#when-to-optimise-a-skill)
+- [Core principles](#core-principles)
+- [Targets to aim for](#targets-to-aim-for)
+- [The loop in one page](#the-loop-in-one-page)
+- [Hyperparameter defaults (from the paper)](#hyperparameter-defaults-from-the-paper)
+- [Common failure modes](#common-failure-modes)
+- [Transferability evidence](#transferability-evidence)
+- [Tooling](#tooling)
+- [References](#references)
+
 ## When to optimise a skill
 
 Use this loop when:
@@ -170,12 +182,14 @@ Commands run from the skill directory with `uv run` (see SKILL.md, "Running the 
 
 ### Run the loop
 
+`optimize_skill.py` resolves skills across Claude Code scopes by default, or any agent/path via `--agent <id>` / `--path <dir>`. Any stdin-capable LLM CLI works for `--optimizer-cmd` and `--target-cmd` (`claude -p`, `agy -p --disable-slash-commands`, etc.):
+
 ```bash
 uv run scripts/optimize_skill.py <skill> --tasks tasks.jsonl --epochs 4 --edit-budget 4 \
     --output-dir runs/r1 --dry-run              # plan first: splits, schedule, prompt previews
-uv run scripts/optimize_skill.py <skill> --tasks tasks.jsonl --output-dir runs/r1 \
-    --optimizer-cmd "claude -p --model opus" \
-    --target-cmd "claude -p --model sonnet"
+uv run scripts/optimize_skill.py <skill> --agent antigravity --tasks tasks.jsonl --output-dir runs/r1 \
+    --optimizer-cmd "agy -p --disable-slash-commands" \
+    --target-cmd "agy -p --disable-slash-commands"
 uv run scripts/diff_skill_versions.py <skill> --files \
     runs/r1/initial_skill.md runs/r1/best_skill.md --format stats
 ```
@@ -258,8 +272,10 @@ in a git-tracked skill, git history is the record, so do not commit them.
 ### Trigger and transfer tests
 
 ```bash
-uv run scripts/trigger_test.py <skill> --generate > cases.yaml   # candidate cases from the description
-uv run scripts/trigger_test.py <skill> --cases cases.yaml --threshold 0.8
+uv run scripts/trigger_test.py <skill> --agent antigravity --generate > cases.yaml
+uv run scripts/trigger_test.py <skill> --agent antigravity --cases cases.yaml --judge agy-cli --threshold 0.8
+uv run scripts/trigger_test.py --path /path/to/skill --cases cases.yaml --judge custom-cli \
+    --judge-cmd "agy -p --disable-slash-commands"
 uv run scripts/transfer_test.py <skill> --all --scope global     # lands and parses in other agents
 ```
 

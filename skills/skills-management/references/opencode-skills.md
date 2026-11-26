@@ -132,24 +132,24 @@ You can register skill instructions globally by adding the skill's body to `inst
 
 A single skill directory can serve multiple agents because OpenCode reads `.claude/skills/`, `.agents/skills/`, and `.opencode/skills/` automatically. Recommended primary location for cross-tool skills:
 
-- **`.agents/skills/`** for project-shared (works for OpenCode, Codex, Gemini CLI, Replit, Amp)
+- **`.agents/skills/`** for project-shared (works across OpenCode, Antigravity App/IDE/CLI, Codex, Cursor, Gemini CLI, Replit, Amp)
 - **`~/.config/opencode/skills/`** for OpenCode-only personal skills
 - **`.claude/skills/`** if Claude Code is the primary tool
 
-Add `compatibility: opencode,claude-code` to the frontmatter to signal multi-agent support.
+Add `compatibility: opencode,claude-code,codex` to the frontmatter to signal multi-agent support.
 
 ## Comparison with Claude Code
 
 | Feature | Claude Code | OpenCode |
-|---------|-------------|----------|
+|---|---|---|
 | Project skill path | `.claude/skills/` | `.opencode/skills/`, `.claude/skills/`, `.agents/skills/` (all read) |
 | Global skill path | `~/.claude/skills/` | `~/.config/opencode/skills/`, `~/.claude/skills/`, `~/.agents/skills/` (all read) |
-| Frontmatter required | `name`, `description` | `name`, `description` (same) |
-| Frontmatter optional | `license` | `license`, `compatibility`, `metadata` |
-| Discovery | Auto-discovery + restart | Auto-discovery on startup |
-| Invocation | Auto-trigger via description | Auto-trigger via `skill` tool catalog; explicit `skill({ name })` calls |
-| Permission control | n/a (skills always callable) | `permission.skill` glob rules |
-| Walk-up behavior | n/a (single project root) | Walks from CWD up to git worktree root |
+| Frontmatter required | `description` (`name` defaults to folder) | `name`, `description` |
+| Frontmatter optional | `when_to_use`, `allowed-tools`, `argument-hint`, `arguments`, `disable-model-invocation`, `user-invocable`, `model`, `effort`, `context`, `agent`, `hooks`, `paths`, `shell`, `license`, `compatibility`, `metadata` | `license`, `compatibility`, `metadata` |
+| Discovery | Auto-discovery + live reload on existing `skills/` dirs | Auto-discovery on startup |
+| Invocation | Auto-trigger via description; `/<name>` | Auto-trigger via `skill` tool catalog; explicit `skill({ name })` calls |
+| Permission control | `Skill(name)` / `Skill(name *)` allow/deny rules | `permission.skill` glob rules |
+| Walk-up behavior | Monorepo subdirs + `--add-dir` `.claude/skills/` | Walks from CWD up to git worktree root |
 
 ### Migrating skills
 

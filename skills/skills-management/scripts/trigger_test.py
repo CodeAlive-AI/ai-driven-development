@@ -24,10 +24,11 @@ if sys.version_info < (3, 11):
 import argparse
 import json
 import re
+import shlex
 import subprocess
 from pathlib import Path
 
-from claude_scopes import find_skill
+from agents import resolve_skill
 from skill_md import parse_frontmatter, read_skill_text
 
 
@@ -153,43 +154,45 @@ def heuristic_judge(description: str, prompt: str) -> tuple[bool, str]:
     return False, "no quoted phrase or keyword overlap"
 
 
-def claude_cli_judge(description: str, prompt: str) -> tuple[bool, str]:
-    """Use `claude -p` as the judge.
-
-    Falls back to a clear error reason if the CLI is unavailable or returns
-    something other than the expected JSON.
-    """
-    instruction = (
+def _judge_instruction(description: str, prompt: str) -> str:
+    return (
         "You are testing whether a skill description triggers on a user prompt.\n"
         "\n"
         f"Skill description: {description}\n"
         "\n"
         f"User prompt: {prompt}\n"
         "\n"
-        "Would Claude Code auto-invoke this skill on the prompt? Respond ONLY "
+        "Would the AI coding agent auto-invoke this skill on the prompt? Respond ONLY "
         'with a JSON object:\n'
         '{"trigger": true|false, "reason": "<one line>"}'
     )
 
+
+def _run_json_cli_judge(
+    cmd: list[str],
+    label: str,
+    stdin_text: str | None = None,
+) -> tuple[bool, str]:
+    """Run an external CLI judge and parse ``{"trigger": bool, "reason": str}``."""
     try:
         result = subprocess.run(
-            ["claude", "-p", instruction],
+            cmd,
+            input=stdin_text,
             capture_output=True,
             text=True,
             encoding="utf-8",
             timeout=120,
         )
     except FileNotFoundError:
-        return False, "claude CLI not found on PATH"
+        return False, f"{label} not found on PATH"
     except subprocess.TimeoutExpired:
-        return False, "claude CLI timed out"
+        return False, f"{label} timed out"
 
     if result.returncode != 0:
         stderr = result.stderr.strip().splitlines()[-1] if result.stderr else ""
-        return False, f"claude CLI exit={result.returncode}: {stderr}"
+        return False, f"{label} exit={result.returncode}: {stderr}"
 
     raw = result.stdout.strip()
-    # Pick out the first {...} block in case the CLI wraps the answer.
     json_match = re.search(r"\{.*?\}", raw, re.DOTALL)
     if not json_match:
         return False, f"no JSON in response: {raw[:80]}"
@@ -202,6 +205,24 @@ def claude_cli_judge(description: str, prompt: str) -> tuple[bool, str]:
     trig = bool(parsed.get("trigger", False))
     reason = str(parsed.get("reason", "")).strip() or "(no reason)"
     return trig, reason
+
+
+def claude_cli_judge(description: str, prompt: str) -> tuple[bool, str]:
+    """Use ``claude -p`` as the judge."""
+    instruction = _judge_instruction(description, prompt)
+    return _run_json_cli_judge(["claude", "-p", instruction], "claude CLI")
+
+
+def agy_cli_judge(description: str, prompt: str) -> tuple[bool, str]:
+    """Use ``agy -p --disable-slash-commands`` as the judge."""
+    instruction = _judge_instruction(description, prompt)
+    return _run_json_cli_judge(["agy", "-p", "--disable-slash-commands", instruction], "agy CLI")
+
+
+def custom_cli_judge(description: str, prompt: str, judge_cmd: str) -> tuple[bool, str]:
+    """Use an arbitrary stdin-accepting CLI command as the judge."""
+    instruction = _judge_instruction(description, prompt)
+    return _run_json_cli_judge(shlex.split(judge_cmd), judge_cmd, stdin_text=instruction)
 
 
 # ---------- cases file loading ----------
@@ -283,9 +304,21 @@ def run_cases(
     description: str,
     cases: list[dict],
     judge: str,
+    judge_cmd: str | None = None,
 ) -> dict:
     """Run cases and return aggregate metrics + per-case results."""
-    judge_fn = heuristic_judge if judge == "heuristic" else claude_cli_judge
+    if judge == "heuristic":
+        judge_fn = heuristic_judge
+    elif judge == "claude-cli":
+        judge_fn = claude_cli_judge
+    elif judge == "agy-cli":
+        judge_fn = agy_cli_judge
+    elif judge == "custom-cli":
+        if not judge_cmd:
+            raise ValueError("--judge-cmd is required with --judge custom-cli")
+        judge_fn = lambda desc, prompt: custom_cli_judge(desc, prompt, judge_cmd)
+    else:
+        raise ValueError(f"Unknown judge: {judge}")
 
     tp = fp = tn = fn = 0
     results = []
@@ -386,7 +419,7 @@ def format_text(skill_name: str, description: str, report: dict) -> str:
             f"  [{status}] exp={r['expected']:<10} got={r['actual'] or 'invalid':<10} "
             f"prompt={prompt!r}"
         )
-        if not r["correct"] or report["judge"] == "claude-cli":
+        if not r["correct"] or report["judge"] != "heuristic":
             lines.append(f"         reason: {r['reason']}")
     return "\n".join(lines)
 
@@ -478,20 +511,32 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description="Run trigger tests against a skill's description"
     )
-    parser.add_argument("name", help="Name of the skill to test")
+    parser.add_argument("name", nargs="?", help="Name of the skill to test")
+    parser.add_argument(
+        "--agent", "-a",
+        help="Agent ID whose scopes to search (e.g., antigravity, cursor, codex)",
+    )
+    parser.add_argument(
+        "--path", "-p",
+        help="Explicit path to a skill directory or SKILL.md",
+    )
     parser.add_argument(
         "--cases",
         help="Path to a YAML or JSON file with test cases",
     )
     parser.add_argument(
         "--judge",
-        choices=["heuristic", "claude-cli"],
+        choices=["heuristic", "claude-cli", "agy-cli", "custom-cli"],
         default="heuristic",
         help="Judge to use (default: heuristic)",
     )
     parser.add_argument(
+        "--judge-cmd",
+        help="Command for --judge custom-cli (prompt sent on stdin, e.g. 'agy -p --disable-slash-commands')",
+    )
+    parser.add_argument(
         "--scope", "-s",
-        choices=["user", "project"],
+        choices=["user", "global", "project"],
         help="Skill scope (default: search both)",
     )
     parser.add_argument(
@@ -519,18 +564,29 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    skill_path, _ = find_skill(args.name, args.scope)
+    if not args.name and not args.path:
+        parser.error("Either skill name or --path is required")
+    if args.judge == "custom-cli" and not args.judge_cmd:
+        parser.error("--judge-cmd is required when --judge custom-cli")
+
+    skill_path, _, error = resolve_skill(
+        args.name,
+        agent=args.agent,
+        scope=args.scope,
+        path=Path(args.path) if args.path else None,
+    )
     if not skill_path:
-        print(f"Error: Skill '{args.name}' not found", file=sys.stderr)
+        print(f"Error: {error or f'Skill {args.name!r} not found'}", file=sys.stderr)
         return 1
 
     skill_md = skill_path / "SKILL.md"
     metadata = parse_frontmatter(read_skill_text(skill_md))
+    skill_label = metadata.get("name", "").strip() or skill_path.name
     description = metadata.get("description", "")
 
     if not description:
         print(
-            f"Error: Skill '{args.name}' has no description in frontmatter",
+            f"Error: Skill '{skill_label}' has no description in frontmatter",
             file=sys.stderr,
         )
         return 1
@@ -562,17 +618,17 @@ def main() -> int:
         print("Error: No cases loaded", file=sys.stderr)
         return 1
 
-    report = run_cases(description, cases, args.judge)
+    report = run_cases(description, cases, args.judge, judge_cmd=args.judge_cmd)
 
     if args.format == "json":
         out = {
-            "skill": args.name,
+            "skill": skill_label,
             "description": description,
             **report,
         }
         print(json.dumps(out, indent=2))
     else:
-        print(format_text(args.name, description, report))
+        print(format_text(skill_label, description, report))
 
     return 0 if report["metrics"]["f1"] >= args.threshold else 1
 

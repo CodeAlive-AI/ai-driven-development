@@ -33,6 +33,12 @@ from skill_md import read_skill_md, skill_name
 
 IGNORED_PARTS = {".git", ".DS_Store", "__pycache__", ".pytest_cache"}
 BACKUP_RE = re.compile(r"(?:^|[._-])(backup|bak|old|copy)(?:$|[._-])", re.IGNORECASE)
+AGY_DOT_DIRS = (".agents", ".agent", "_agents", "_agent")
+AGY_PLUGIN_MANIFESTS = (
+    "plugin.json",
+    ".antigravity-plugin/plugin.json",
+    ".gemini-plugin/plugin.json",
+)
 
 
 @dataclass
@@ -117,6 +123,328 @@ def active_claude_plugin_skill_roots() -> list[Path]:
     return roots
 
 
+def _strip_jsonc(text: str) -> str:
+    """Strip ``//`` / ``/* ... */`` comments and trailing commas outside JSON strings."""
+    out: list[str] = []
+    i = 0
+    n = len(text)
+    in_string = False
+    escaped = False
+
+    while i < n:
+        ch = text[i]
+        if in_string:
+            out.append(ch)
+            if escaped:
+                escaped = False
+            elif ch == "\\":
+                escaped = True
+            elif ch == '"':
+                in_string = False
+            i += 1
+            continue
+
+        if ch == '"':
+            in_string = True
+            out.append(ch)
+            i += 1
+        elif ch == "/" and i + 1 < n and text[i + 1] == "/":
+            i += 2
+            while i < n and text[i] not in ("\n", "\r"):
+                i += 1
+        elif ch == "/" and i + 1 < n and text[i + 1] == "*":
+            i += 2
+            while i + 1 < n and not (text[i] == "*" and text[i + 1] == "/"):
+                i += 1
+            i += 2
+        else:
+            out.append(ch)
+            i += 1
+
+    # Remove trailing commas before closing } or ] outside strings.
+    cleaned: list[str] = []
+    no_comments = "".join(out)
+    in_string = False
+    escaped = False
+    m = len(no_comments)
+    for idx, ch in enumerate(no_comments):
+        if in_string:
+            cleaned.append(ch)
+            if escaped:
+                escaped = False
+            elif ch == "\\":
+                escaped = True
+            elif ch == '"':
+                in_string = False
+            continue
+        if ch == '"':
+            in_string = True
+            cleaned.append(ch)
+            continue
+        if ch == ",":
+            j = idx + 1
+            while j < m and no_comments[j] in " \t\r\n":
+                j += 1
+            if j < m and no_comments[j] in "}]":
+                continue
+        cleaned.append(ch)
+    return "".join(cleaned)
+
+
+def _load_jsonc(path: Path) -> dict | list | None:
+    """Parse a JSON or JSONC file (with optional UTF-8 BOM), returning None on error."""
+    try:
+        raw = path.read_text(encoding="utf-8-sig")
+        return json.loads(_strip_jsonc(raw))
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+def _find_agy_plugin_manifest(plugin_dir: Path) -> dict | None:
+    """Return the parsed Antigravity plugin manifest dict if present."""
+    for rel in AGY_PLUGIN_MANIFESTS:
+        candidate = plugin_dir / rel
+        if candidate.is_file():
+            data = _load_jsonc(candidate)
+            if isinstance(data, dict):
+                return data
+    return None
+
+
+def _agy_plugin_skill_dirs(plugin_dir: Path, manifest: dict | None) -> list[Path]:
+    """Return skill directories declared or conventionally placed inside a plugin."""
+    dirs: list[Path] = []
+    plugin_real = plugin_dir.resolve()
+    default_skills = plugin_dir / "skills"
+    if default_skills.is_dir() and default_skills.resolve().is_relative_to(plugin_real):
+        dirs.append(default_skills)
+
+    if isinstance(manifest, dict) and "skills" in manifest:
+        raw_skills = manifest["skills"]
+        entries: list[str] = []
+        if isinstance(raw_skills, str):
+            entries = [raw_skills]
+        elif isinstance(raw_skills, list):
+            entries = [item for item in raw_skills if isinstance(item, str)]
+        for entry in entries:
+            rel = Path(entry)
+            if rel.is_absolute():
+                continue
+            candidate = (plugin_dir / rel).resolve()
+            if not candidate.is_relative_to(plugin_real):
+                continue
+            if candidate.is_dir() and candidate not in [d.resolve() for d in dirs]:
+                dirs.append(plugin_dir / rel)
+    return dirs
+
+
+def active_antigravity_plugin_skill_roots(
+    home: Path | None = None, *, query_cli: bool = True
+) -> list[Path]:
+    """Return skill roots for enabled Antigravity plugins (config dir + ``agy`` CLI)."""
+    home = home or Path.home()
+    config_data = _load_jsonc(home / ".gemini" / "config" / "config.json")
+    plugins_state = (
+        config_data.get("plugins", {})
+        if isinstance(config_data, dict) and isinstance(config_data.get("plugins"), dict)
+        else {}
+    )
+
+    roots: list[Path] = []
+    seen_resolved: set[Path] = set()
+
+    def _append_dirs(paths: list[Path]) -> None:
+        for path in paths:
+            resolved = path.resolve()
+            if resolved not in seen_resolved:
+                seen_resolved.add(resolved)
+                roots.append(path)
+
+    plugins_dir = home / ".gemini" / "config" / "plugins"
+    if plugins_dir.is_dir():
+        for plugin_dir in sorted(plugins_dir.iterdir()):
+            if not plugin_dir.is_dir():
+                continue
+            manifest = _find_agy_plugin_manifest(plugin_dir)
+            state = plugins_state.get(plugin_dir.name)
+            if isinstance(state, dict) and "enabled" in state:
+                enabled = bool(state["enabled"])
+            else:
+                enabled = not bool((manifest or {}).get("disabled", False))
+            if enabled:
+                _append_dirs(_agy_plugin_skill_dirs(plugin_dir, manifest))
+
+    if query_cli:
+        try:
+            result = subprocess.run(
+                ["agy", "plugin", "list", "--json"],
+                capture_output=True,
+                check=True,
+                text=True,
+                encoding="utf-8",
+                timeout=10,
+            )
+            cli_plugins = json.loads(result.stdout)
+        except (FileNotFoundError, subprocess.SubprocessError, json.JSONDecodeError):
+            cli_plugins = []
+        if isinstance(cli_plugins, list):
+            for entry in cli_plugins:
+                if not isinstance(entry, dict) or entry.get("enabled") is not True:
+                    continue
+                raw_path = entry.get("path")
+                if not raw_path:
+                    continue
+                plugin_dir = Path(str(raw_path))
+                if plugin_dir.is_dir():
+                    _append_dirs(
+                        _agy_plugin_skill_dirs(plugin_dir, _find_agy_plugin_manifest(plugin_dir))
+                    )
+
+    return roots
+
+
+def _resolve_manifest_entry(
+    raw_path: str, base_dir: Path, repo_root: Path | None
+) -> Path | None:
+    """Resolve an entry or inherit path from a skills.json/plugins.json manifest."""
+    if not raw_path or not isinstance(raw_path, str):
+        return None
+    if repo_root is not None:
+        if raw_path.startswith("~") or Path(raw_path).is_absolute():
+            return None
+        repo_real = repo_root.resolve()
+        candidate = (base_dir / raw_path).resolve()
+        if not candidate.exists():
+            fallback = (repo_root / raw_path).resolve()
+            if fallback.exists():
+                candidate = fallback
+        if not candidate.is_relative_to(repo_real):
+            return None
+        return candidate
+
+    expanded = Path(raw_path).expanduser()
+    if expanded.is_absolute():
+        return expanded.resolve()
+    return (base_dir / expanded).resolve()
+
+
+def _expand_manifest(
+    manifest_path: Path,
+    *,
+    kind: str,
+    repo_root: Path | None,
+    visited: set[Path],
+    is_plugins: bool,
+) -> list[tuple[Path, str]]:
+    """Recursively expand an Antigravity ``skills.json`` or ``plugins.json`` manifest."""
+    resolved_manifest = manifest_path.resolve()
+    if resolved_manifest in visited or not resolved_manifest.is_file():
+        return []
+    if repo_root is not None and not resolved_manifest.is_relative_to(repo_root.resolve()):
+        return []
+    visited.add(resolved_manifest)
+
+    data = _load_jsonc(resolved_manifest)
+    if not isinstance(data, dict):
+        return []
+
+    base_dir = manifest_path.parent.parent if repo_root is not None else manifest_path.parent
+    results: list[tuple[Path, str]] = []
+
+    inherits = data.get("inherits")
+    if isinstance(inherits, list):
+        for item in inherits:
+            if not isinstance(item, dict):
+                continue
+            inherited = _resolve_manifest_entry(item.get("path", ""), base_dir, repo_root)
+            if inherited is not None:
+                results.extend(
+                    _expand_manifest(
+                        inherited,
+                        kind=kind,
+                        repo_root=repo_root,
+                        visited=visited,
+                        is_plugins=is_plugins,
+                    )
+                )
+
+    entries = data.get("entries")
+    if isinstance(entries, list):
+        for item in entries:
+            if not isinstance(item, dict):
+                continue
+            target = _resolve_manifest_entry(item.get("path", ""), base_dir, repo_root)
+            if target is None or not target.is_dir():
+                continue
+            if not is_plugins:
+                results.append((target, kind))
+                continue
+            for child in sorted(target.iterdir()):
+                if not child.is_dir():
+                    continue
+                if repo_root is not None and not child.resolve().is_relative_to(repo_root.resolve()):
+                    continue
+                manifest = _find_agy_plugin_manifest(child)
+                if manifest is not None or (child / "skills").is_dir():
+                    for skill_dir in _agy_plugin_skill_dirs(child, manifest):
+                        if repo_root is None or skill_dir.resolve().is_relative_to(repo_root.resolve()):
+                            results.append((skill_dir, "plugin-manifest"))
+
+    return results
+
+
+def antigravity_manifest_skill_roots(
+    home: Path, repos: list[Path]
+) -> list[tuple[Path, str]]:
+    """Return skill roots declared in global and workspace ``skills.json`` / ``plugins.json``."""
+    results: list[tuple[Path, str]] = []
+    visited: set[Path] = set()
+
+    global_root = home / ".gemini" / "config"
+    results.extend(
+        _expand_manifest(
+            global_root / "skills.json",
+            kind="manifest-global",
+            repo_root=None,
+            visited=visited,
+            is_plugins=False,
+        )
+    )
+    results.extend(
+        _expand_manifest(
+            global_root / "plugins.json",
+            kind="plugin-manifest",
+            repo_root=None,
+            visited=visited,
+            is_plugins=True,
+        )
+    )
+
+    for repo in repos:
+        for dot_dir in AGY_DOT_DIRS:
+            dot_path = repo / dot_dir
+            results.extend(
+                _expand_manifest(
+                    dot_path / "skills.json",
+                    kind="manifest-workspace",
+                    repo_root=repo,
+                    visited=visited,
+                    is_plugins=False,
+                )
+            )
+            results.extend(
+                _expand_manifest(
+                    dot_path / "plugins.json",
+                    kind="plugin-manifest",
+                    repo_root=repo,
+                    visited=visited,
+                    is_plugins=True,
+                )
+            )
+
+    return results
+
+
 def default_roots(cwd: Path, anchors: list[Path] | None = None) -> list[tuple[Path, str]]:
     """Return bounded global, repository, local-plugin, and plugin-cache roots."""
     roots: dict[str, tuple[Path, str]] = {}
@@ -129,26 +457,46 @@ def default_roots(cwd: Path, anchors: list[Path] | None = None) -> list[tuple[Pa
 
     search_anchors = [cwd, *(anchors or [])]
     seen_repos: set[Path] = set()
-    project_dirs = {config["project_dir"] for config in AGENTS.values()}
+    project_dirs = {
+        d
+        for config in AGENTS.values()
+        for d in (config["project_dir"], *config.get("extra_project_dirs", []))
+    }
     for anchor in search_anchors:
         repo = find_repo_root(anchor)
         if repo is None or repo in seen_repos:
             continue
         seen_repos.add(repo)
+        is_plugin_repo = (repo / ".claude-plugin" / "plugin.json").is_file() or any(
+            (repo / manifest).is_file() for manifest in AGY_PLUGIN_MANIFESTS
+        )
+        if is_plugin_repo:
+            add_root(roots, repo / "skills", "plugin-source")
         for project_dir in project_dirs:
             add_root(roots, repo / project_dir, "repo")
-        if (repo / ".claude-plugin" / "plugin.json").is_file():
-            add_root(roots, repo / "skills", "plugin-source")
+        for dot_dir in AGY_DOT_DIRS:
+            ws_plugins = repo / dot_dir / "plugins"
+            if ws_plugins.is_dir():
+                for plugin_dir in sorted(ws_plugins.iterdir()):
+                    if plugin_dir.is_dir():
+                        manifest = _find_agy_plugin_manifest(plugin_dir)
+                        for skill_dir in _agy_plugin_skill_dirs(plugin_dir, manifest):
+                            add_root(roots, skill_dir, "plugin-workspace")
+
+    for manifest_root, manifest_kind in antigravity_manifest_skill_roots(home, list(seen_repos)):
+        add_root(roots, manifest_root, manifest_kind)
 
     # Codex owns and namespaces its cache. Multiple cached versions are inventory
-    # information, not user-install conflicts. Claude exposes enabled state through
-    # its plugin CLI, so omit disabled/historical Claude cache versions by default.
+    # information, not user-install conflicts. Claude and Antigravity expose enabled
+    # state, so omit disabled/historical cache versions by default.
     codex_cache = home / ".codex" / "plugins" / "cache"
     if codex_cache.is_dir():
         for skill_root in codex_cache.rglob("skills"):
             add_root(roots, skill_root, "plugin-cache")
     for skill_root in active_claude_plugin_skill_roots():
         add_root(roots, skill_root, "plugin-cache-active")
+    for skill_root in active_antigravity_plugin_skill_roots(home):
+        add_root(roots, skill_root, "plugin-antigravity")
 
     return list(roots.values())
 

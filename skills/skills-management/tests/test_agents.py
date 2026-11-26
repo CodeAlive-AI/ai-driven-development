@@ -32,6 +32,34 @@ class RegistryShapeTests(unittest.TestCase):
             agents.get_global_skills_dir("antigravity"), Path.home() / ".gemini" / "config" / "skills"
         )
 
+    def test_antigravity_topology_and_shared_global_safety(self):
+        for agent_id in ("antigravity", "antigravity-cli"):
+            with self.subTest(agent_id):
+                cfg = agents.AGENTS[agent_id]
+                self.assertEqual(cfg["extra_project_dirs"], [".agent/skills", "_agents/skills", "_agent/skills"])
+                self.assertTrue(cfg.get("reads_shared_global"))
+                shared = Path.home() / ".agents" / "skills"
+                self.assertNotIn(shared, agents.get_all_global_skills_dirs(agent_id))
+                self.assertIn(shared, agents.get_readable_global_skills_dirs(agent_id))
+                sharing = agents.agents_sharing_dir(shared)
+                self.assertIn(agent_id, sharing)
+
+    def test_antigravity_detected_from_config_json_or_skills(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            fake_home = Path(tmp)
+            config_dir = fake_home / ".gemini" / "config"
+            config_dir.mkdir(parents=True)
+            (config_dir / "config.json").write_text("{}", encoding="utf-8")
+            with patch("pathlib.Path.home", return_value=fake_home), \
+                 patch.object(agents, "expand_path", side_effect=lambda p, c=None: Path(p.replace("~", str(fake_home)))):
+                self.assertIn("antigravity", agents.detect_installed_agents(cwd=fake_home))
+
+            (config_dir / "config.json").unlink()
+            (config_dir / "skills").mkdir()
+            with patch("pathlib.Path.home", return_value=fake_home), \
+                 patch.object(agents, "expand_path", side_effect=lambda p, c=None: Path(p.replace("~", str(fake_home)))):
+                self.assertIn("antigravity", agents.detect_installed_agents(cwd=fake_home))
+
 
 class PathExpansionTests(unittest.TestCase):
     def test_home_env_relocates_global_and_detect_paths(self):

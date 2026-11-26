@@ -20,7 +20,8 @@ from agents import (
     AGENTS,
     detect_installed_agents,
     get_agent_config,
-    get_skills_dir,
+    get_all_project_skills_dirs,
+    get_readable_global_skills_dirs,
     validate_agent,
 )
 from skill_md import skill_summary
@@ -46,19 +47,23 @@ def list_skills_for_agent(
     if not config:
         return skills
 
-    scopes_to_check = []
+    scopes_to_check: list[tuple[str, Path]] = []
     if scope is None or scope == "global":
-        global_dir = get_skills_dir(agent, "global")
-        if global_dir:
+        for global_dir in get_readable_global_skills_dirs(agent):
             scopes_to_check.append(("global", global_dir))
     if scope is None or scope == "project":
-        project_dir = get_skills_dir(agent, "project", cwd)
-        if project_dir:
+        for project_dir in get_all_project_skills_dirs(agent, cwd):
             scopes_to_check.append(("project", project_dir))
 
+    seen_dirs: dict[str, set[Path]] = {}
     for scope_name, skills_dir in scopes_to_check:
         if not skills_dir.exists():
             continue
+        resolved_dir = skills_dir.resolve()
+        scope_seen = seen_dirs.setdefault(scope_name, set())
+        if resolved_dir in scope_seen:
+            continue
+        scope_seen.add(resolved_dir)
 
         for item in sorted(skills_dir.iterdir()):
             if item.is_dir() and (item / "SKILL.md").exists():
@@ -123,7 +128,7 @@ def format_output(skills: list[dict], output_format: str, single_agent: bool = F
     # Default text format
     lines = []
     current_agent = None
-    current_scope = None
+    current_group: tuple[str, str] | None = None
 
     for s in skills:
         # Group by agent first (if showing multiple agents)
@@ -132,13 +137,13 @@ def format_output(skills: list[dict], output_format: str, single_agent: bool = F
                 lines.append("")
             lines.append(f"=== {s['agent_display_name'].upper()} ({s['agent']}) ===")
             current_agent = s["agent"]
-            current_scope = None
+            current_group = None
 
-        # Then group by scope
-        if s["scope"] != current_scope:
-            skills_dir = get_skills_dir(s["agent"], s["scope"])
-            lines.append(f"\n  [{s['scope'].upper()}] {skills_dir}")
-            current_scope = s["scope"]
+        # Then group by (scope, skills_dir)
+        group = (s["scope"], str(Path(s["path"]).parent))
+        if group != current_group:
+            lines.append(f"\n  [{s['scope'].upper()}] {group[1]}")
+            current_group = group
 
         lines.append(f"\n    {s['name']}")
         if s["description"]:

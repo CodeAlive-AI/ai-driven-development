@@ -50,11 +50,11 @@ Fetch 3-6 candidates at a time. If more than 6 results, focus on the top candida
 
 ## Overlap Check
 
-Before recommending a skill, check what the user already has:
+Before recommending a skill, check what the user already has across Claude Code and all detected agents (Antigravity, Codex, Cursor, OpenCode, etc.):
 
 ```bash
-uv run scripts/list_skills.py -s user
-uv run scripts/list_skills.py -s project
+uv run scripts/list_skills.py
+uv run scripts/list_agent_skills.py --all
 ```
 
 If an installed skill already covers the same domain, note the overlap and assess whether the new skill adds enough value to justify installation.

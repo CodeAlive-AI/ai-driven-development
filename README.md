@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Agent_Skills-Collection-blueviolet?style=for-the-badge" alt="Agent Skills Collection">
-  <img src="https://img.shields.io/badge/Skills-25-blue?style=for-the-badge" alt="25 Skills">
+  <img src="https://img.shields.io/badge/Skills-22-blue?style=for-the-badge" alt="22 Skills">
   <img src="https://img.shields.io/badge/Hooks-1-yellow?style=for-the-badge" alt="1 Hook">
   <img src="https://img.shields.io/badge/Agents-12+-orange?style=for-the-badge" alt="12+ Agents">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  An umbrella collection of 25 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
+  An umbrella collection of 22 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
 </p>
 
 ---
@@ -30,7 +30,7 @@
 **Via Skills CLI** (recommended — works in 12+ agents):
 
 ```bash
-# Install all 25 skills
+# Install all 22 skills
 npx skills add CodeAlive-AI/ai-driven-development
 
 # Or pick a single skill
@@ -51,17 +51,14 @@ The Bash safety hook (`bash-guard`) ships separately — see [hooks/balanced-saf
 
 ## What's Included
 
-### Agent reflection & meta (7)
+### Agent reflection & meta (4)
 
 Meta-skills that let AI coding agents configure themselves. No more editing config files — just tell your agent what you need.
 
 | Skill | What It Does |
 |-------|--------------|
-| [mcp-management](skills/mcp-management/) | Install and manage MCP servers across 10+ coding agents (Claude Code, Cursor, VS Code, Gemini CLI, Codex, Goose, Copilot CLI, OpenCode, Zed, Devin) — single command, handles JSON/YAML/TOML config differences |
-| [hooks-management](skills/hooks-management/) | Manage hooks and automation for Claude Code, Codex CLI, OpenCode, and Devin CLI/Desktop |
-| [settings-management](skills/settings-management/) | Configure settings for Claude Code (JSON), Codex CLI (TOML), OpenCode (JSON/JSONC), and Devin CLI/Desktop (JSON) |
-| [skills-management](skills/skills-management/) | Organise, discover, share, and **train** skills for coding agents — SkillOpt-style optimisation loop with bounded edits, held-out validation gate, rejected-edit buffer, epoch-wise slow/meta update, plus trigger / transfer / diff / edit-log tooling |
-| [plugins-management](skills/plugins-management/) | Package and publish plugins for Claude Code, OpenCode, and Devin CLI/Desktop (validate, scaffold, submit to Anthropic's directory) |
+| [coding-agents-management](skills/coding-agents-management/) | Unified configuration for MCP servers, lifecycle hooks, TOML/JSON/JSONC settings & rules, and plugins across Antigravity (`agy` / App 2.0 / IDE), Claude Code, Codex CLI/App, OpenCode, Devin, and peers |
+| [skills-management](skills/skills-management/) | Organise, audit (Agent Experience & progressive disclosure), discover, share, deduplicate, and **train** skills across Claude Code, Antigravity (`agy` / App / IDE), Codex, OpenCode, Mastra, and LangGraph / Deep Agents |
 | [agentic-readiness](skills/agentic-readiness/) | Audit and improve repositories for Codex/Codex App, Claude Code, and OpenCode, including `AGENTS.md`/`CLAUDE.md` discovery and routing |
 | [installing-cli-tools](skills/installing-cli-tools/) | Install, upgrade, authenticate, verify, and roll back developer CLIs while keeping tokens and API keys out of chat, logs, shell history, startup files, and repositories |
 
@@ -146,23 +143,20 @@ ai-driven-development/
 │   ├── bug-fix-protocol/
 │   ├── clipboard/
 │   ├── code-that-fits-in-your-head/
+│   ├── coding-agents-management/
 │   ├── fetch-url-as-markdown/
 │   ├── fpf-problem-solving/
-│   ├── hooks-management/
 │   ├── installing-cli-tools/
 │   ├── investigating-repository-history/
 │   ├── maintaining-macos-health/
 │   ├── maintaining-windows-health/
-│   ├── mcp-management/
 │   ├── plan-mode/
-│   ├── plugins-management/
 │   ├── pragmatic-architecture/
 │   ├── pragmatic-verification/
 │   ├── prompt-engineering/
 │   ├── refactoring-csharp/
 │   ├── repo-activity-summary/
 │   ├── semantic-scholar-deep/
-│   ├── settings-management/
 │   ├── skills-management/
 │   ├── ubiquitous-language/
 │   ├── ux-best-practices/

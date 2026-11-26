@@ -54,8 +54,13 @@ def format_output(agents: list[dict], output_format: str, show_all: bool) -> str
             lines.append(f"  {a['display_name']} ({a['name']}){installed}")
             lines.append(f"    Project: {a['project_dir']}")
             lines.append(f"    Global:  {a['global_dir']}")
-            if a["extra_global_dirs"]:
-                lines.append(f"    Also reads: {', '.join(a['extra_global_dirs'])}")
+            if a["extra_global_dirs"] or a["reads_shared_global"]:
+                also_global = list(a["extra_global_dirs"])
+                if a["reads_shared_global"] and "~/.agents/skills" not in also_global:
+                    also_global.append("~/.agents/skills")
+                lines.append(f"    Also reads: {', '.join(also_global)}")
+            if a["extra_project_dirs"]:
+                lines.append(f"    Also project: {', '.join(a['extra_project_dirs'])}")
             lines.append(f"    Source:  {a['source']}")
             lines.append("")
     else:
@@ -75,8 +80,10 @@ def agent_info(agent_id: str, installed: bool) -> dict:
         "name": config["name"],
         "display_name": config["display_name"],
         "project_dir": config["project_dir"],
+        "extra_project_dirs": config.get("extra_project_dirs", []),
         "global_dir": config["global_dir"],
         "extra_global_dirs": config.get("extra_global_dirs", []),
+        "reads_shared_global": bool(config.get("reads_shared_global", False)),
         "source": config["source"],
         "installed": installed,
     }

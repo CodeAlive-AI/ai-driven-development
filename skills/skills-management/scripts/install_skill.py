@@ -30,7 +30,7 @@ from fs_ops import link_into_place, path_present, same_location, stage_and_swap
 from skill_md import read_skill_md, skill_name
 
 
-# Files to exclude when copying skills (per add-skill pattern)
+# Files to exclude when copying skills (per vercel-labs/skills pattern)
 EXCLUDE_FILES = {"README.md", "metadata.json"}
 
 

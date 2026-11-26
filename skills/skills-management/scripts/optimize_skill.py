@@ -44,7 +44,7 @@ import shutil
 import statistics
 from pathlib import Path
 
-from claude_scopes import find_skill
+from agents import resolve_skill
 from llm_cli import call_llm_json, run_cli, run_rollout, safe_json_loads
 from run_io import approx_tokens, load_jsonl, log, read_json, write_json
 from skill_md import SLOW_UPDATE_END, SLOW_UPDATE_START, split_protected
@@ -710,9 +710,14 @@ def reflect_and_propose(
 
 
 def run_optimization(args: argparse.Namespace) -> int:
-    skill_path, scope = find_skill(args.skill)
+    skill_path, scope, error = resolve_skill(
+        args.skill,
+        agent=getattr(args, "agent", None),
+        scope=getattr(args, "scope", None),
+        path=Path(args.path) if getattr(args, "path", None) else None,
+    )
     if not skill_path:
-        log(f"Error: skill '{args.skill}' not found in user or project scope")
+        log(f"Error: {error or f'skill {args.skill!r} not found'}")
         return 1
     log(f"Found skill: {skill_path} ({scope})")
 
@@ -1190,9 +1195,13 @@ def write_optimization_report(
 
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
-        description="SkillOpt-style optimisation loop for a Claude Code skill"
+        description="SkillOpt-style optimisation loop for an Agent Skill"
     )
-    p.add_argument("skill", help="Skill name (must exist in user or project scope)")
+    p.add_argument("skill", nargs="?", help="Skill name (must exist in resolved agent/scope)")
+    p.add_argument("--agent", "-a", help="Agent ID whose scopes to search (e.g., antigravity, codex)")
+    p.add_argument("--scope", "-s", choices=["user", "global", "project"],
+                   help="Scope to search (default: both)")
+    p.add_argument("--path", "-p", help="Explicit path to a skill directory or SKILL.md")
     p.add_argument("--tasks", required=True, help="Path to tasks.jsonl")
     p.add_argument("--train-frac", type=float, default=0.4)
     p.add_argument("--sel-frac", type=float, default=0.2)
@@ -1202,8 +1211,12 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--reflection-minibatch", type=int, default=4)
     p.add_argument("--edit-budget", type=int, default=4)
     p.add_argument("--lr-schedule", choices=["constant", "linear", "cosine"], default="cosine")
-    p.add_argument("--optimizer-cmd", default="claude -p --model opus")
-    p.add_argument("--target-cmd", default="claude -p --model haiku")
+    p.add_argument("--optimizer-cmd", default="claude -p --model opus",
+                   help="Stdin-capable LLM CLI for reflection/merge (e.g. 'claude -p --model opus' "
+                        "or 'agy -p --disable-slash-commands')")
+    p.add_argument("--target-cmd", default="claude -p --model haiku",
+                   help="Stdin-capable LLM CLI for rollouts (e.g. 'claude -p --model haiku' "
+                        "or 'agy -p --disable-slash-commands')")
     p.add_argument("--verifier", default="llm-judge",
                    help="'exact-match', 'llm-judge', 'assertions', or a path "
                         "to a script. The 'assertions' verifier requires each "
