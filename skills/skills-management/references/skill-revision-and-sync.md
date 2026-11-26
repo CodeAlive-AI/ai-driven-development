@@ -16,7 +16,8 @@ Use `scripts/revise_skills.py` (100% read-only diagnostics) and `scripts/sync_sk
 
 - Run **`revise_skills.py`** for full-system hygiene:
   - Broken symlinks & symlink loops (with git rename/consolidation detection so merged skills like `hooks-management -> coding-agents-management` are never blindly repointed).
-  - **Ghost directories** without `SKILL.md` (e.g., leftover `__pycache__` folders after renames), while respecting **Hermes** 2-level category folders (`apple/apple-notes/SKILL.md`) and `.bundled_manifest`.
+  - **Ghost directories** without `SKILL.md` (e.g., leftover `__pycache__` folders after renames), while respecting **Hermes** 2-level category folders (`apple/apple-notes/SKILL.md`), `.bundled_manifest`, and Claude Code's download-only cloud-synced container (`~/.claude/skills/synced/`).
+  - **Dead / uninstalled CLI & stub-directory detection**: `inspect_agent_installations()` cross-checks `PATH`/user binary locations, macOS `.app` bundles, `PORCH_BIN_*` overrides, and VS Code/Cursor/Antigravity/Windsurf/JetBrains extensions to classify detected roots as `active`, `skills-only-stub` (folder holds only `skills/`, typical `npx skills` leftover), `orphaned-agent` (residual config/cache without binary/app/extension), `shared-parent-only` (e.g., `~/.gemini` holding only Antigravity state with no `gemini` CLI), or `unverified`.
   - **Orphaned lockfile entries** in `~/.agents/.skill-lock.json` and workspace `skills-lock.json` (cleaning symlinks without cleaning `.skill-lock.json` causes `npx skills update` to re-download deleted skills).
   - **Local ↔ Global shadowing & monorepo ancestor walks** (`--scope local|global|all`, `--cwd PATH`, `--scan-skills-dirs`).
   - **4-axis duplicate detection**: exact `name`, folder basename (`dir_name`), normalized slug, and identical directory SHA-256 across different names.
@@ -75,11 +76,15 @@ uv run scripts/sync_skills.py --repoint-broken --source-root ~/my-projects
 # 3. Preview replica convergence & cross-agent link parity
 uv run scripts/sync_skills.py --converge-replicas --sync-agents claude-code,antigravity,qwen-code
 
-# 4. Execute and receive quarantine tx-id + reload instructions
+# 4. Opt-in quarantine of stale/uninstalled agent skill dirs (or explicit --prune-agent <id>)
+# Never removes ~/.agents/skills, paths read by active agents, or config/cache files of orphaned agents
+uv run scripts/sync_skills.py --prune-stale-agents --prune-broken
+
+# 5. Execute and receive quarantine tx-id + reload instructions
 uv run scripts/sync_skills.py --prune-broken --collapse-hops --apply
 
-# 5. Roll back any --apply cleanly (restores symlinks, raw targets, moved dirs, lockfiles)
+# 6. Roll back any --apply cleanly (restores symlinks, raw targets, moved dirs, lockfiles)
 uv run scripts/sync_skills.py --undo <tx-id>
 ```
 
-Divergent copies are **never** overwritten or deleted automatically — inspect the diff summary from `revise_skills.py` and choose one canonical directory first.
+Divergent copies are **never** overwritten or deleted automatically — inspect the diff summary from `revise_skills.py` and choose one canonical directory first. Stale agent cleanup is opt-in (`--prune-stale-agents` or `--prune-agent <id>`); whole stub roots are moved to quarantine only when they hold nothing besides `skills/`, whereas `orphaned-agent` roots only have their dedicated `skills/` subfolder quarantined (preserving config/cache files unless the user deletes them), and paths read by any active agent (e.g., `~/.gemini/skills` read by active Antigravity) are protected and skipped.

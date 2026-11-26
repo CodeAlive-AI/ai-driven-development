@@ -17,7 +17,12 @@ import json
 
 # Import from local agents module
 
-from agents import AGENTS, detect_installed_agents
+from agents import AGENTS, detect_installed_agents, inspect_agent_installations
+
+
+def _stale_label(agent: dict) -> str:
+    st = agent.get("status")
+    return f" [STALE: {st}]" if st in ("skills-only-stub", "orphaned-agent") else ""
 
 
 def format_output(agents: list[dict], output_format: str, show_all: bool) -> str:
@@ -40,10 +45,11 @@ def format_output(agents: list[dict], output_format: str, show_all: bool) -> str
         return "No AI coding agents detected."
 
     if output_format == "table":
-        lines = ["NAME | DISPLAY NAME | INSTALLED | GLOBAL DIR", "-" * 80]
+        lines = ["NAME | DISPLAY NAME | INSTALLED | STATUS | GLOBAL DIR", "-" * 88]
         for a in agents:
             installed = "Yes" if a.get("installed", True) else "No"
-            lines.append(f"{a['name']} | {a['display_name']} | {installed} | {a['global_dir']}")
+            status = a.get("status", "unknown")
+            lines.append(f"{a['name']} | {a['display_name']} | {installed} | {status} | {a['global_dir']}")
         return "\n".join(lines)
 
     # Default text format
@@ -51,7 +57,8 @@ def format_output(agents: list[dict], output_format: str, show_all: bool) -> str
         lines = ["=== ALL SUPPORTED AGENTS ===", ""]
         for a in agents:
             installed = " [INSTALLED]" if a.get("installed") else ""
-            lines.append(f"  {a['display_name']} ({a['name']}){installed}")
+            stale = _stale_label(a)
+            lines.append(f"  {a['display_name']} ({a['name']}){installed}{stale}")
             lines.append(f"    Project: {a['project_dir']}")
             lines.append(f"    Global:  {a['global_dir']}")
             if a["extra_global_dirs"] or a["reads_shared_global"]:
@@ -66,14 +73,14 @@ def format_output(agents: list[dict], output_format: str, show_all: bool) -> str
     else:
         lines = ["=== DETECTED AI CODING AGENTS ===", ""]
         for a in agents:
-            lines.append(f"  {a['display_name']} ({a['name']})")
+            lines.append(f"  {a['display_name']} ({a['name']}){_stale_label(a)}")
             lines.append(f"    Global skills: {a['global_dir']}")
             lines.append("")
 
     return "\n".join(lines)
 
 
-def agent_info(agent_id: str, installed: bool) -> dict:
+def agent_info(agent_id: str, installed: bool, status: str | None = None) -> dict:
     """Registry entry of one agent, as printed by this script."""
     config = AGENTS[agent_id]
     return {
@@ -86,6 +93,7 @@ def agent_info(agent_id: str, installed: bool) -> dict:
         "reads_shared_global": bool(config.get("reads_shared_global", False)),
         "source": config["source"],
         "installed": installed,
+        "status": status or ("unverified" if installed else "not-installed"),
     }
 
 
@@ -107,8 +115,16 @@ def main():
     args = parser.parse_args()
 
     detected = detect_installed_agents()
+    health = inspect_agent_installations(detected) if detected else {}
     agent_ids = list(AGENTS) if args.all else detected
-    agents = [agent_info(agent_id, agent_id in detected) for agent_id in agent_ids]
+    agents = [
+        agent_info(
+            agent_id,
+            agent_id in detected,
+            health[agent_id]["status"] if agent_id in health else ("unverified" if agent_id in detected else "not-installed"),
+        )
+        for agent_id in agent_ids
+    ]
     if not args.all:
         for info in agents:
             del info["installed"]

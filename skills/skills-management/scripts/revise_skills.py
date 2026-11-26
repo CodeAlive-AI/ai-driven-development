@@ -29,6 +29,7 @@ from agents import (
     AGENTS,
     canonical_agent_id,
     detect_installed_agents,
+    inspect_agent_installations,
 )
 from skill_topology import (
     POOL_COLUMNS,
@@ -39,6 +40,7 @@ from skill_topology import (
     cell_status_for_pool,
     classify_groups,
     compute_agent_context_budgets,
+    compute_stale_agent_diagnostics,
     discover_roots,
     find_repo_root,
     resolve_porch_agents_list,
@@ -83,6 +85,9 @@ def run_revision(
     query_cli: bool = False,
     no_cache: bool = False,
     cache_path: Path | None = None,
+    which_fn=None,
+    app_dirs: list[Path] | None = None,
+    extension_dirs: list[Path] | None = None,
 ) -> dict:
     """Execute a complete read-only revision and return structured diagnostics."""
     home = home or Path.home()
@@ -138,6 +143,20 @@ def run_revision(
 
     logical_names = sorted({e.name for e in active_entries if not e.is_builtin})
     budgets = compute_agent_context_budgets(active_entries, eval_agents, home=home)
+
+    if effective_scope in ("global", "all"):
+        agent_health = inspect_agent_installations(
+            eval_agents,
+            cwd=cwd,
+            home=home,
+            which_fn=which_fn,
+            app_dirs=app_dirs,
+            extension_dirs=extension_dirs,
+        )
+        stale_agents = compute_stale_agent_diagnostics(agent_health, active_entries, home=home)
+    else:
+        agent_health = {}
+        stale_agents = []
 
     usage_data: dict | None = None
     if usage_mode != "off":
@@ -257,6 +276,7 @@ def run_revision(
     )
     warning_count = (
         len(lock_issues)
+        + len(stale_agents)
         + len(integrity_warnings)
         + len([g for g in analysis["by_name"] if g["status"] in ("chained-hop", "replica", "local-shadows-global-identical")])
         + len(analysis["by_dir_mismatch"])
@@ -269,6 +289,7 @@ def run_revision(
         "cwd": str(cwd),
         "repo_root": str(repo_root) if repo_root else None,
         "evaluated_agents": eval_agents,
+        "agent_health": agent_health,
         "summary": {
             "logical_skills": len(logical_names),
             "discovered_entries": len(active_entries),
@@ -276,6 +297,7 @@ def run_revision(
             "ghost_dirs": len(ghost_entries),
             "orphaned_lock_entries": len([l for l in lock_issues if l.kind == "orphaned-lock-entry"]),
             "manifest_issues": len(manifest_issues),
+            "stale_agents": len(stale_agents),
             "divergent_or_shadowed": len(actionable_groups),
             "errors": error_count,
             "warnings": warning_count,
@@ -286,6 +308,7 @@ def run_revision(
             "ghost_dirs": [asdict(e) for e in ghost_entries],
             "lockfile_issues": [asdict(l) for l in lock_issues],
             "manifest_issues": [asdict(m) for m in manifest_issues],
+            "stale_agents": stale_agents,
             "integrity_errors": [asdict(e) for e in integrity_errors],
             "integrity_warnings": [asdict(e) for e in integrity_warnings],
             "duplicates": analysis,
@@ -319,10 +342,12 @@ def format_report(report: dict, *, output_format: str = "text", show_all: bool =
     lines.append(f"Scope: {report['scope']} | CWD: {report['cwd']}")
     if report["repo_root"]:
         lines.append(f"Repo:  {report['repo_root']}")
+    stale_count = s.get("stale_agents", 0)
+    stale_part = f" | {stale_count} stale agent dirs" if stale_count else ""
     lines.append(
         f"Summary: {s['logical_skills']} logical skills across {s['discovered_entries']} entries | "
         f"{s['broken_symlinks']} broken links | {s['ghost_dirs']} ghost dirs | "
-        f"{s['orphaned_lock_entries']} orphaned lock entries | {s['divergent_or_shadowed']} divergent/shadowed"
+        f"{s['orphaned_lock_entries']} orphaned lock entries | {s['divergent_or_shadowed']} divergent/shadowed{stale_part}"
     )
     if report.get("usage"):
         cov = report["usage"].get("coverage", {})
@@ -334,12 +359,14 @@ def format_report(report: dict, *, output_format: str = "text", show_all: bool =
         lines.append("Usage: off (pass --usage fast or --usage deep --since 30d)")
 
     # Bucket 1: Broken & Orphaned
-    b1_count = (
+    stale_list = t.get("stale_agents", [])
+    b1_core = (
         len(t["broken_symlinks"])
         + len(t["ghost_dirs"])
         + len(t["lockfile_issues"])
         + len(t["manifest_issues"])
     )
+    b1_count = b1_core + len(stale_list)
     lines.append("")
     lines.append(f"## 1. Broken & Orphaned ({b1_count})")
     if b1_count == 0:
@@ -372,7 +399,26 @@ def format_report(report: dict, *, output_format: str = "text", show_all: bool =
             lines.append(f"  Manifest issues ({len(t['manifest_issues'])}):")
             for m in t["manifest_issues"]:
                 lines.append(f"    - MANF {m['manifest']}: {m['entry_path']} ({m['kind']})")
-        lines.append("  Next (dry-run): uv run scripts/sync_skills.py --prune-broken")
+        if stale_list:
+            lines.append(f"  Stale / uninstalled agent directories ({len(stale_list)}):")
+            for sa in stale_list:
+                tag = "STUB" if sa["status"] == "skills-only-stub" else "ORPH"
+                paths_txt = ", ".join(sa["prunable_paths"] or sa["dedicated_skill_dirs"] or sa["matched_paths"])
+                prot_txt = ""
+                if sa["protected_paths"]:
+                    prot_items = [
+                        f"{pp['path']} (read by active {', '.join(pp['active_readers'])})"
+                        for pp in sa["protected_paths"]
+                    ]
+                    prot_txt = f" | protected: {'; '.join(prot_items)}"
+                lines.append(
+                    f"    - {tag} {sa['agent_id']}: {paths_txt} "
+                    f"(entries={sa['entries_count']}, broken={sa['broken_count']}) — {sa['reason']}{prot_txt}"
+                )
+        if b1_core:
+            lines.append("  Next (dry-run): uv run scripts/sync_skills.py --prune-broken")
+        if stale_list:
+            lines.append("  Next (opt-in dry-run): uv run scripts/sync_skills.py --prune-stale-agents")
 
     # Bucket 2: Divergent, Shadowed & Integrity
     dups = t["duplicates"]
@@ -432,9 +478,16 @@ def format_report(report: dict, *, output_format: str = "text", show_all: bool =
     # Startup context budget table
     lines.append("")
     lines.append("  Startup Context Budget (name + description):")
+    health_map = report.get("agent_health", {})
     for aid, b in report["context_budgets"].items():
         warn = f" [!] {'; '.join(b['warnings'])}" if b["warnings"] else ""
-        lines.append(f"    - {aid:16s}: {b['skill_count']:3d} skills | {b['total_chars']:6d} chars (~{b['est_tokens']:5d} tok){warn}")
+        astatus = health_map.get(aid, {}).get("status")
+        stale_tag = ""
+        if astatus == "skills-only-stub":
+            stale_tag = " [stale: stub]"
+        elif astatus == "orphaned-agent":
+            stale_tag = " [stale: no binary/app]"
+        lines.append(f"    - {aid:16s}: {b['skill_count']:3d} skills | {b['total_chars']:6d} chars (~{b['est_tokens']:5d} tok){stale_tag}{warn}")
 
     if report.get("usage") is not None:
         cold = report["cold_skills"]

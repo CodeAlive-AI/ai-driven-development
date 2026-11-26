@@ -25,6 +25,7 @@ from agents import (
     canonical_agent_id,
     detect_installed_agents,
     expand_path,
+    expand_path_for_home,
     get_agent_config,
     get_all_global_skills_dirs,
     get_all_project_skills_dirs,
@@ -1213,6 +1214,17 @@ def scan_entry(
     )
 
 
+def _is_claude_synced_dir(child: Path, root: DiscoveryRoot) -> bool:
+    """True for Claude Code's download-only cloud-synced skills container (~/.claude/skills/synced)."""
+    return (
+        "claude-code" in root.agent_ids
+        and child.name == "synced"
+        and not child.is_symlink()
+        and child.is_dir()
+        and not (child / "SKILL.md").is_file()
+    )
+
+
 def scan_topology(
     roots: list[DiscoveryRoot],
     *,
@@ -1247,6 +1259,8 @@ def scan_topology(
             continue
         for child in children:
             if child.name in SKIP_CHILD_NAMES or child.name.startswith("."):
+                continue
+            if _is_claude_synced_dir(child, root):
                 continue
             if not (child.is_symlink() or child.is_dir()):
                 continue
@@ -1658,3 +1672,92 @@ def cell_status_for_pool(
 def resolve_porch_agents_list() -> list[str]:
     """Return canonical IDs matching porch's skill-consuming harnesses."""
     return list(PORCH_HARNESS_AGENTS)
+
+
+def _norm_abs(path: str | Path) -> str:
+    """Normalize a path lexically without dereferencing symlinks."""
+    return os.path.abspath(str(path))
+
+
+def compute_stale_agent_diagnostics(
+    agent_health: dict[str, dict],
+    entries: list[SkillEntry],
+    *,
+    home: Path | None = None,
+) -> list[dict]:
+    """Identify uninstalled/stub agent directories and safe prunable vs protected paths."""
+    home = home or Path.home()
+    protected_readers: dict[str, list[str]] = defaultdict(list)
+
+    for shared_rel in (".agents/skills", ".config/agents/skills"):
+        protected_readers[_norm_abs(home / shared_rel)]  # reserve as shared-never-prune
+
+    active_detect_roots: set[str] = set()
+    for aid, info in agent_health.items():
+        if info.get("status") not in ("active", "unverified"):
+            continue
+        for mp in info.get("matched_paths", []):
+            active_detect_roots.add(_norm_abs(mp))
+        for raw_sd in _agent_readable_dirs(aid, home):
+            protected_readers[_norm_abs(raw_sd)].append(aid)
+
+    stale_rows: list[dict] = []
+    for aid in sorted(agent_health):
+        info = agent_health[aid]
+        status = info.get("status")
+        if status not in ("skills-only-stub", "orphaned-agent"):
+            continue
+
+        ded_dirs = [_norm_abs(p) for p in info.get("dedicated_skill_dirs", [])]
+        ded_set = set(ded_dirs)
+
+        entries_count = 0
+        broken_count = 0
+        ghost_count = 0
+        for e in entries:
+            if _norm_abs(e.root) in ded_set:
+                entries_count += 1
+                if e.is_broken:
+                    broken_count += 1
+                elif e.is_ghost:
+                    ghost_count += 1
+
+        protected_paths: list[dict] = []
+        prunable_paths: list[str] = []
+
+        stub_roots = [_norm_abs(p) for p in info.get("stub_roots", [])]
+        stub_skills_safe = bool(stub_roots) and status == "skills-only-stub"
+        if stub_skills_safe:
+            for sr in stub_roots:
+                sr_skills = _norm_abs(Path(sr) / "skills")
+                if sr in active_detect_roots or sr_skills in protected_readers:
+                    stub_skills_safe = False
+                    break
+
+        if stub_skills_safe:
+            prunable_paths = list(stub_roots)
+        else:
+            for ddir in ded_dirs:
+                if ddir in protected_readers:
+                    protected_paths.append({
+                        "path": ddir,
+                        "active_readers": sorted(set(protected_readers[ddir])),
+                    })
+                else:
+                    prunable_paths.append(ddir)
+
+        stale_rows.append({
+            "agent_id": aid,
+            "display_name": info.get("display_name", aid),
+            "status": status,
+            "reason": info.get("reason", ""),
+            "matched_paths": info.get("matched_paths", []),
+            "dedicated_skill_dirs": ded_dirs,
+            "prunable_paths": prunable_paths,
+            "protected_paths": protected_paths,
+            "entries_count": entries_count,
+            "broken_count": broken_count,
+            "ghost_count": ghost_count,
+        })
+
+    return stale_rows

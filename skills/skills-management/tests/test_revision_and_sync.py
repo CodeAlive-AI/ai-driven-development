@@ -381,5 +381,199 @@ class UsageTelemetryTests(unittest.TestCase):
         self.assertEqual(res2["coverage"]["cache_hits"], 2)
 
 
+class ClaudeSyncedAndStaleAgentTests(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.base = Path(self._tmp.name)
+        self.home = self.base / "home"
+        self.home.mkdir()
+        self.apps = self.base / "Apps"
+        self.apps.mkdir()
+        self.exts = self.base / "Exts"
+        self.exts.mkdir()
+
+    def test_claude_synced_dir_is_not_flagged_as_ghost_or_pruned(self):
+        claude = self.home / ".claude" / "skills"
+        synced = claude / "synced"
+        (synced / ".bucket-org_user").mkdir(parents=True)
+        _make_skill(synced / "org_user", "pdf", "pdf")
+        (synced / "org_user" / "manifest.json").write_text("{}", encoding="utf-8")
+
+        report = revise_skills.run_revision(
+            scope="global",
+            cwd=self.base,
+            home=self.home,
+            usage_mode="off",
+            which_fn=lambda b: "/usr/local/bin/claude" if b == "claude" else None,
+            app_dirs=[self.apps],
+            extension_dirs=[self.exts],
+        )
+        self.assertEqual(report["summary"]["ghost_dirs"], 0)
+
+        plan = sync_skills.build_plan(home=self.home, cwd=self.base, prune_broken=True)
+        self.assertEqual(plan["op_count"], 0)
+        self.assertTrue((synced / "org_user" / "manifest.json").is_file())
+
+        # An actual skill named `synced` (with SKILL.md directly inside) IS scanned normally.
+        _make_skill(claude, "synced", "synced")
+        report2 = revise_skills.run_revision(
+            scope="global",
+            cwd=self.base,
+            home=self.home,
+            usage_mode="off",
+            which_fn=lambda b: "/usr/local/bin/claude" if b == "claude" else None,
+            app_dirs=[self.apps],
+            extension_dirs=[self.exts],
+        )
+        names = {r["name"] for r in report2["matrix"]["rows"]}
+        self.assertIn("synced", names)
+
+    def test_stale_agent_detection_classifies_active_stub_orphan_and_antigravity_only_gemini(self):
+        # Active claude-code (bin: claude)
+        _make_skill(self.home / ".claude" / "skills", "s1", "s1")
+        # Cursor with NO binary, only bare "agent" in PATH (must NOT mark cursor active!)
+        (self.home / ".cursor").mkdir(parents=True)
+        # Windsurf alive via Devin.app + ~/.codeium/windsurf
+        (self.home / ".codeium" / "windsurf" / "skills").mkdir(parents=True)
+        (self.apps / "Devin.app").mkdir()
+        # Antigravity active via Antigravity.app + ~/.gemini/antigravity & config
+        (self.apps / "Antigravity.app").mkdir()
+        (self.home / ".gemini" / "antigravity").mkdir(parents=True)
+        (self.home / ".gemini" / "config").mkdir(parents=True)
+        # Mux skills-only stub
+        (self.home / ".mux" / "skills").mkdir(parents=True)
+        # Augment orphaned-agent (extra residual file + skills/)
+        (self.home / ".augment" / "skills").mkdir(parents=True)
+        (self.home / ".augment" / "auggie-path").write_text("/opt/homebrew/bin/auggie", encoding="utf-8")
+
+        def fake_which_no_cursor(bin_name: str) -> str | None:
+            if bin_name == "claude":
+                return "/usr/local/bin/claude"
+            if bin_name == "agent":  # Grok collision binary; cursor must ignore it!
+                return "/usr/local/bin/agent"
+            return None
+
+        health = agents.inspect_agent_installations(
+            ["claude-code", "cursor", "windsurf", "antigravity", "gemini-cli", "mux", "augment", "omp"],
+            cwd=self.base,
+            home=self.home,
+            which_fn=fake_which_no_cursor,
+            app_dirs=[self.apps],
+            extension_dirs=[self.exts],
+        )
+        self.assertEqual(health["claude-code"]["status"], "active")
+        self.assertEqual(health["cursor"]["status"], "orphaned-agent")
+        self.assertEqual(health["windsurf"]["status"], "active")
+        self.assertEqual(health["antigravity"]["status"], "active")
+        self.assertEqual(health["gemini-cli"]["status"], "shared-parent-only")
+        self.assertEqual(health["mux"]["status"], "skills-only-stub")
+        self.assertEqual(health["augment"]["status"], "orphaned-agent")
+        self.assertEqual(health["omp"]["status"], "not-installed")
+
+        # Now add cursor-agent -> cursor becomes active
+        health_cur = agents.inspect_agent_installations(
+            ["cursor"],
+            cwd=self.base,
+            home=self.home,
+            which_fn=lambda b: "/usr/local/bin/cursor-agent" if b == "cursor-agent" else None,
+            app_dirs=[self.apps],
+            extension_dirs=[self.exts],
+        )
+        self.assertEqual(health_cur["cursor"]["status"], "active")
+
+        # Add ~/.gemini/skills -> gemini-cli becomes orphaned-agent, but ~/.gemini/skills is protected by antigravity!
+        (self.home / ".gemini" / "skills").mkdir(parents=True)
+        (self.home / ".zencoder" / "skills").mkdir(parents=True)
+        report = revise_skills.run_revision(
+            scope="global",
+            cwd=self.base,
+            home=self.home,
+            usage_mode="off",
+            which_fn=fake_which_no_cursor,
+            app_dirs=[self.apps],
+            extension_dirs=[self.exts],
+        )
+        stale_by_id = {s["agent_id"]: s for s in report["triage"]["stale_agents"]}
+        self.assertIn("gemini-cli", stale_by_id)
+        self.assertEqual(stale_by_id["gemini-cli"]["prunable_paths"], [])
+        self.assertTrue(
+            any(pp["path"].endswith("/.gemini/skills") and "antigravity" in pp["active_readers"]
+                for pp in stale_by_id["gemini-cli"]["protected_paths"])
+        )
+        self.assertIn("zencoder", stale_by_id)
+        self.assertIn("zenflow", stale_by_id)
+
+    def test_prune_stale_agents_quarantine_dedup_no_overlap_and_undo_roundtrip(self):
+        shared = self.home / ".agents" / "skills"
+        _make_skill(shared, "live-shared", "live-shared")
+
+        # Active antigravity + ~/.gemini/skills shared with gemini-cli
+        (self.apps / "Antigravity.app").mkdir()
+        (self.home / ".gemini" / "antigravity").mkdir(parents=True)
+        (self.home / ".gemini" / "config" / "skills").mkdir(parents=True)
+        _make_skill(self.home / ".gemini" / "skills", "gem-skill", "gem-skill")
+
+        # Mux stub with broken symlink inside
+        (self.home / ".mux" / "skills").mkdir(parents=True)
+        (self.home / ".mux" / "skills" / "dead-mux").symlink_to("/nonexistent/dead-mux", target_is_directory=True)
+
+        # Augment orphan with non-skill file + broken symlink inside skills/
+        (self.home / ".augment" / "skills").mkdir(parents=True)
+        (self.home / ".augment" / "auggie-path").write_text("/opt/homebrew/bin/auggie", encoding="utf-8")
+        (self.home / ".augment" / "skills" / "dead-aug").symlink_to("/nonexistent/dead-aug", target_is_directory=True)
+
+        # Zencoder + Zenflow sharing ~/.zencoder/skills
+        (self.home / ".zencoder" / "cache").mkdir(parents=True)
+        (self.home / ".zencoder" / "skills").mkdir(parents=True)
+        (self.home / ".zencoder" / "skills" / "dead-zen").symlink_to("/nonexistent/dead-zen", target_is_directory=True)
+
+        # Standalone broken link in shared ~/.agents/skills (should still be pruned cleanly)
+        (shared / "dead-shared").symlink_to("/nonexistent/dead-shared", target_is_directory=True)
+
+        plan = sync_skills.build_plan(
+            home=self.home,
+            cwd=self.base,
+            prune_stale_agents=True,
+            prune_broken=True,
+            which_fn=lambda b: None,
+            app_dirs=[self.apps],
+            extension_dirs=[self.exts],
+        )
+
+        op_paths = [op.get("path") for op in plan["ops"]]
+        self.assertIn(str((self.home / ".mux").absolute()), op_paths)
+        self.assertIn(str((self.home / ".augment" / "skills").absolute()), op_paths)
+        self.assertEqual(op_paths.count(str((self.home / ".zencoder" / "skills").absolute())), 1)
+        # Broken links inside quarantined roots MUST NOT have separate remove_symlink ops
+        self.assertNotIn(str((self.home / ".mux" / "skills" / "dead-mux").absolute()), op_paths)
+        self.assertNotIn(str((self.home / ".augment" / "skills" / "dead-aug").absolute()), op_paths)
+        self.assertNotIn(str((self.home / ".zencoder" / "skills" / "dead-zen").absolute()), op_paths)
+        # Broken link in active shared dir IS still pruned
+        self.assertIn(str((shared / "dead-shared").absolute()), op_paths)
+        # ~/.gemini/skills & ~/.agents/skills NEVER pruned
+        self.assertNotIn(str((self.home / ".gemini" / "skills").absolute()), op_paths)
+        self.assertNotIn(str(shared.absolute()), op_paths)
+        self.assertTrue(any("antigravity" in sk["reason"] for sk in plan["skipped"]))
+
+        trash = self.base / "trash"
+        res = sync_skills.apply_plan(plan, home=self.home, trash_root=trash)
+        self.assertEqual(res["state"], "done")
+        self.assertFalse((self.home / ".mux").exists())
+        self.assertFalse((self.home / ".augment" / "skills").exists())
+        self.assertTrue((self.home / ".augment" / "auggie-path").is_file())
+        self.assertFalse((self.home / ".zencoder" / "skills").exists())
+        self.assertTrue((self.home / ".zencoder" / "cache").is_dir())
+        self.assertTrue((self.home / ".gemini" / "skills" / "gem-skill" / "SKILL.md").is_file())
+        self.assertFalse((shared / "dead-shared").is_symlink())
+
+        undo_res = sync_skills.undo_transaction(res["tx_id"], home=self.home, trash_root=trash)
+        self.assertEqual(undo_res["state"], "done")
+        self.assertTrue((self.home / ".mux" / "skills" / "dead-mux").is_symlink())
+        self.assertTrue((self.home / ".augment" / "skills" / "dead-aug").is_symlink())
+        self.assertTrue((self.home / ".zencoder" / "skills" / "dead-zen").is_symlink())
+        self.assertTrue((shared / "dead-shared").is_symlink())
+
+
 if __name__ == "__main__":
     unittest.main()

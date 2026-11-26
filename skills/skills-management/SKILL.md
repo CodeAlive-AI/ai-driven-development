@@ -17,7 +17,7 @@ Run every script with `uv run scripts/<script>.py …` from this skill's directo
 | List Claude Code / agent skills | `uv run scripts/list_skills.py` · `list_agent_skills.py --agent antigravity` (`--all`, `-f json`) |
 | Show / review skill | `uv run scripts/show_skill.py` · `review_skill.py <name>` (`--agent antigravity`, `--path <dir>`, `-f json`) |
 | Revise topology, matrix, budget & usage | `uv run scripts/revise_skills.py` (`--scope global\|local\|all`, `--porch-harnesses`, `--usage fast\|deep`, `--source-root <dir>`, `--all`) |
-| Sync & repair links (dry-run default) | `uv run scripts/sync_skills.py --prune-broken --collapse-hops` (`--repoint-broken`, `--converge-replicas`, `--sync-agents ...`, `--apply`, `--undo <tx>`) |
+| Sync & repair links (dry-run default) | `uv run scripts/sync_skills.py --prune-broken --collapse-hops` (`--repoint-broken`, `--converge-replicas`, `--prune-stale-agents`, `--sync-agents ...`, `--apply`, `--undo <tx>`) |
 | Delete / move between scopes | `uv run scripts/delete_skill.py <name>` (`-a antigravity`, `--all-agents`, `--force`) · `move_skill.py <name> user\|project` |
 | Audit duplicates / preflight | `uv run scripts/audit_skill_duplicates.py` · `--candidate /path/to/skill --fail-on-conflict` |
 | Detect agents / install / copy / move | `uv run scripts/detect_agents.py --all` · `install_skill.py /path -a antigravity --link` · `copy_skill.py` · `move_skill_agent.py` |
@@ -34,7 +34,7 @@ Run every script with `uv run scripts/<script>.py …` from this skill's directo
 
 Discovery is consumer-specific. **Antigravity App / IDE** reads `~/.gemini/config/skills` globally, walks workspace `.agents/skills` (plus legacy `.agent/`, `_agents/`, `_agent/`) to the repo root, reads `skills.json`/`plugins.json`, and loads enabled plugins; **Antigravity CLI (`agy`)** additionally falls back to `~/.agents/skills`. **Codex**, **OpenCode**, **Cursor**, **Gemini CLI**, **Kimi Code**, and **Oh My Pi (`omp`)** read `~/.agents/skills` and walk `.agents/skills`. **Hermes** uses category folders (`~/.hermes/skills/<category>/<skill>/`) and only reads `~/.agents/skills` when declared in `skills.external_dirs`. All `porch` harness aliases (`agy`, `gemini`, `hermes`, `kimi-code`, `grok-build`, `claude-desktop`, `omp`, etc.) are accepted. Print all paths with `detect_agents.py --all`.
 
-Keep one active implementation per frontmatter `name` for each consumer topology. Aliases to one real directory are fine; divergent global, workspace, manifest, or plugin copies require a canonical-source decision via [skill-deduplication.md](references/skill-deduplication.md). Use `revise_skills.py` to audit broken symlinks, ghost dirs, `.skill-lock.json` orphans, startup context budgets, and `porch` session usage, and `sync_skills.py` (with quarantine `--undo`) to reconcile links cleanly.
+Keep one active implementation per frontmatter `name` for each consumer topology. Aliases to one real directory are fine; divergent global, workspace, manifest, or plugin copies require a canonical-source decision via [skill-deduplication.md](references/skill-deduplication.md). Use `revise_skills.py` to audit broken links, ghost dirs, uninstalled/stale agent dirs, `.skill-lock.json` orphans, startup context budgets, and `porch` usage, and `sync_skills.py` (with `--undo`) to reconcile cleanly.
 
 ## Changing skills safely and reviewing quality
 

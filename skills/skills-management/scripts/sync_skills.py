@@ -31,13 +31,18 @@ from agents import (
     NON_INSTALLABLE_HARNESSES,
     SHARED_GLOBAL,
     canonical_agent_id,
+    detect_installed_agents,
     expand_path,
+    expand_path_for_home,
     hermes_reads_shared_global,
+    inspect_agent_installations,
 )
 from fs_ops import link_into_place, path_present
 from skill_topology import (
     SkillEntry,
+    _agent_readable_dirs,
     classify_groups,
+    compute_stale_agent_diagnostics,
     discover_roots,
     find_repo_root,
     load_jsonc,
@@ -102,6 +107,14 @@ def _choose_canonical_source(entries: list[SkillEntry], canonical_root: Path | N
     return max(candidates, key=score)
 
 
+def _under_quarantined_root(path_str: str, quarantined_roots: list[str]) -> bool:
+    """Lexical ancestor check that works safely even on broken symlinks."""
+    if not quarantined_roots:
+        return False
+    norm = os.path.abspath(path_str)
+    return any(norm == root or norm.startswith(root + os.sep) for root in quarantined_roots)
+
+
 def build_plan(
     *,
     home: Path | None = None,
@@ -110,10 +123,15 @@ def build_plan(
     repoint_broken: bool = False,
     collapse_hops: bool = False,
     converge_replicas: bool = False,
+    prune_stale_agents: bool = False,
+    prune_agents: list[str] | None = None,
     sync_agents: list[str] | None = None,
     skills_filter: set[str] | None = None,
     source_roots: list[Path] | None = None,
     canonical_root: Path | None = None,
+    which_fn=None,
+    app_dirs: list[Path] | None = None,
+    extension_dirs: list[Path] | None = None,
 ) -> dict:
     """Compute a declarative reconciliation plan (`diff(current, desired)`)."""
     home = home or Path.home()
@@ -126,6 +144,17 @@ def build_plan(
             canon = canonical_agent_id(raw_a)
             if canon not in AGENTS:
                 raise ValueError(f"Unknown agent '{raw_a}'. Valid: {', '.join(sorted(AGENTS))}")
+
+    canon_prune_agents: list[str] = []
+    if prune_agents:
+        for raw_a in prune_agents:
+            if raw_a.strip().lower() in NON_INSTALLABLE_HARNESSES:
+                raise ValueError(NON_INSTALLABLE_HARNESSES[raw_a.strip().lower()])
+            canon = canonical_agent_id(raw_a)
+            if canon not in AGENTS:
+                raise ValueError(f"Unknown agent '{raw_a}'. Valid: {', '.join(sorted(AGENTS))}")
+            if canon not in canon_prune_agents:
+                canon_prune_agents.append(canon)
 
     roots = discover_roots(
         scope="all",
@@ -142,15 +171,113 @@ def build_plan(
     ops: list[dict] = []
     skipped: list[dict] = []
     planned_paths: set[str] = set()
+    skipped_paths: set[str] = set()
+    quarantined_roots: list[str] = []
 
     def _want_skill(name: str) -> bool:
         return not skills_filter or name in skills_filter
+
+    # 0. Opt-in quarantine of stale / uninstalled agent skill directories (or stubs)
+    if prune_stale_agents or canon_prune_agents:
+        if home == Path.home():
+            detected_ids = detect_installed_agents(cwd=cwd)
+        else:
+            detected_ids = [
+                aid for aid, cfg in AGENTS.items()
+                if any(
+                    expand_path_for_home(p, home, cfg).exists()
+                    for p in cfg["detect_paths"]
+                    if not p.startswith("/")
+                )
+                or any((cwd / m).exists() for m in cfg.get("detect_project_markers", []))
+            ]
+        inspect_ids = list(dict.fromkeys([*detected_ids, *canon_prune_agents]))
+        agent_health = inspect_agent_installations(
+            inspect_ids,
+            cwd=cwd,
+            home=home,
+            which_fn=which_fn,
+            app_dirs=app_dirs,
+            extension_dirs=extension_dirs,
+        )
+        stale_diags = compute_stale_agent_diagnostics(agent_health, entries, home=home)
+        stale_by_id = {d["agent_id"]: d for d in stale_diags}
+
+        def _stage_quarantine_dir(raw_path: str, *, agent_id: str, reason: str) -> None:
+            norm = os.path.abspath(raw_path)
+            if norm in planned_paths or not Path(norm).exists() or Path(norm).is_symlink():
+                return
+            ops.append({
+                "op": "quarantine_dir",
+                "skill": f"agent:{agent_id}",
+                "agent": agent_id,
+                "path": norm,
+                "reason": reason,
+            })
+            planned_paths.add(norm)
+            quarantined_roots.append(norm)
+
+        def _record_protected(prot_path: str, reason: str) -> None:
+            norm = os.path.abspath(prot_path)
+            if norm in skipped_paths:
+                return
+            skipped.append({"path": norm, "reason": reason})
+            skipped_paths.add(norm)
+
+        if prune_stale_agents:
+            for diag in stale_diags:
+                aid = diag["agent_id"]
+                kind_label = "skills-only stub" if diag["status"] == "skills-only-stub" else "stale uninstalled agent"
+                for p in diag["prunable_paths"]:
+                    _stage_quarantine_dir(p, agent_id=aid, reason=f"{kind_label} ({aid}): {diag['reason']}")
+                for pp in diag["protected_paths"]:
+                    readers = ", ".join(pp["active_readers"]) if pp["active_readers"] else "shared pool"
+                    _record_protected(pp["path"], f"Protected path still read by active {readers}")
+
+        if canon_prune_agents:
+            shared_never_prune = {
+                os.path.abspath(home / ".agents" / "skills"),
+                os.path.abspath(home / ".config" / "agents" / "skills"),
+            }
+            for aid in canon_prune_agents:
+                if aid in stale_by_id:
+                    diag = stale_by_id[aid]
+                    kind_label = "skills-only stub" if diag["status"] == "skills-only-stub" else "stale uninstalled agent"
+                    for p in diag["prunable_paths"]:
+                        _stage_quarantine_dir(p, agent_id=aid, reason=f"explicit --prune-agent ({kind_label} {aid})")
+                    for pp in diag["protected_paths"]:
+                        readers = ", ".join(pp["active_readers"]) if pp["active_readers"] else "shared pool"
+                        _record_protected(pp["path"], f"Protected path still read by active {readers}")
+                    continue
+
+                info = agent_health.get(aid, {})
+                # Protection map from all OTHER active/unverified agents + shared pools
+                other_readers: dict[str, list[str]] = {sp: [] for sp in shared_never_prune}
+                for other_id, other_info in agent_health.items():
+                    if other_id == aid or other_info.get("status") not in ("active", "unverified"):
+                        continue
+                    for sd in _agent_readable_dirs(other_id, home):
+                        other_readers.setdefault(os.path.abspath(sd), []).append(other_id)
+
+                candidates = (
+                    info.get("stub_roots", [])
+                    if info.get("status") == "skills-only-stub" and info.get("stub_roots")
+                    else info.get("dedicated_skill_dirs", [])
+                )
+                for raw_p in candidates:
+                    norm = os.path.abspath(raw_p)
+                    check_key = os.path.abspath(Path(norm) / "skills") if info.get("status") == "skills-only-stub" else norm
+                    if norm in shared_never_prune or check_key in other_readers or norm in other_readers:
+                        readers = ", ".join(sorted(set(other_readers.get(check_key) or other_readers.get(norm) or []))) or "shared pool"
+                        _record_protected(norm, f"Refused --prune-agent {aid}: path still read by active {readers}")
+                    else:
+                        _stage_quarantine_dir(norm, agent_id=aid, reason=f"explicit --prune-agent ({aid})")
 
     # 1. Repoint broken symlinks safely when requested (before pruning)
     repointed_paths: set[str] = set()
     if repoint_broken:
         for e in entries:
-            if not e.is_broken or not _want_skill(e.dir_name):
+            if not e.is_broken or not _want_skill(e.dir_name) or _under_quarantined_root(e.path, quarantined_roots):
                 continue
             if e.rename_hint:
                 skipped.append({"path": e.path, "reason": f"Rename/consolidation detected ({e.rename_hint}); refusing blind repoint"})
@@ -175,7 +302,7 @@ def build_plan(
     if prune_broken:
         shared_prefix = str((home / ".agents" / "skills").absolute())
         for e in entries:
-            if e.path in repointed_paths:
+            if e.path in repointed_paths or _under_quarantined_root(e.path, quarantined_roots):
                 continue
             if e.is_broken and _want_skill(e.name):
                 ops.append({
@@ -212,7 +339,7 @@ def build_plan(
     # 3. Collapse 2-hop / relative symlinks into direct 1-hop absolute symlinks
     if collapse_hops:
         for e in entries:
-            if e.is_broken or e.is_ghost or e.path in planned_paths or not e.is_symlink:
+            if e.is_broken or e.is_ghost or e.path in planned_paths or not e.is_symlink or _under_quarantined_root(e.path, quarantined_roots):
                 continue
             if not _want_skill(e.name) or not e.real_path:
                 continue
@@ -240,7 +367,14 @@ def build_plan(
             if grp["status"] != "replica":
                 continue
             # Rebuild SkillEntry list from entries
-            grp_entries = [e for e in entries if e.name == grp["name"] and not e.is_broken and not e.is_ghost and not e.is_plugin]
+            grp_entries = [
+                e for e in entries
+                if e.name == grp["name"]
+                and not e.is_broken
+                and not e.is_ghost
+                and not e.is_plugin
+                and not _under_quarantined_root(e.path, quarantined_roots)
+            ]
             canon = _choose_canonical_source(grp_entries, canonical_root)
             if not canon or not canon.real_path:
                 continue
@@ -308,7 +442,7 @@ def build_plan(
                     continue
                 target_slot = _agent_global_dir(aid, home) / sname
                 slot_str = str(target_slot.absolute())
-                if slot_str in planned_paths or slot_str == real_target:
+                if slot_str in planned_paths or slot_str == real_target or _under_quarantined_root(slot_str, quarantined_roots):
                     continue
                 if target_slot.exists():
                     try:
@@ -572,6 +706,8 @@ def main() -> int:
     parser.add_argument("--repoint-broken", action="store_true", help="Repoint broken symlinks to unique exact-name matches in --source-root")
     parser.add_argument("--collapse-hops", action="store_true", help="Convert 2-hop/relative symlinks into direct 1-hop absolute symlinks")
     parser.add_argument("--converge-replicas", action="store_true", help="Replace byte-identical independent copies with 1-hop symlinks")
+    parser.add_argument("--prune-stale-agents", action="store_true", help="Quarantine skill dirs (or skills-only stub roots) of uninstalled CLIs/apps")
+    parser.add_argument("--prune-agent", action="append", dest="prune_agents", help="Quarantine dedicated skill dir for specific agent(s) (never shared ~/.agents/skills)")
     parser.add_argument("--sync-agents", action="append", help="Agents/aliases to bring to canonical parity (comma-separated or repeatable)")
     parser.add_argument("--skills", action="append", help="Limit sync/remediation to specific skill names (comma-separated or repeatable)")
     parser.add_argument("--source-root", action="append", type=Path, default=[], help="Canonical project/warehouse directory")
@@ -596,13 +732,18 @@ def main() -> int:
         print(format_sync_output(res, args.format))
         return 0 if res["state"] == "done" else 1
 
-    if not any([args.prune_broken, args.repoint_broken, args.collapse_hops, args.converge_replicas, args.sync_agents]):
-        parser.error("Specify at least one action (--prune-broken, --repoint-broken, --collapse-hops, --converge-replicas, --sync-agents) or --undo / --list-transactions")
+    if not any([args.prune_broken, args.repoint_broken, args.collapse_hops, args.converge_replicas, args.prune_stale_agents, args.prune_agents, args.sync_agents]):
+        parser.error("Specify at least one action (--prune-broken, --repoint-broken, --collapse-hops, --converge-replicas, --prune-stale-agents, --prune-agent, --sync-agents) or --undo / --list-transactions")
 
     sync_list: list[str] = []
     if args.sync_agents:
         for item in args.sync_agents:
             sync_list.extend(p.strip() for p in item.split(",") if p.strip())
+
+    prune_agent_list: list[str] = []
+    if args.prune_agents:
+        for item in args.prune_agents:
+            prune_agent_list.extend(p.strip() for p in item.split(",") if p.strip())
 
     skills_set: set[str] | None = None
     if args.skills:
@@ -615,6 +756,8 @@ def main() -> int:
             repoint_broken=args.repoint_broken,
             collapse_hops=args.collapse_hops,
             converge_replicas=args.converge_replicas,
+            prune_stale_agents=args.prune_stale_agents,
+            prune_agents=prune_agent_list or None,
             sync_agents=sync_list or None,
             skills_filter=skills_set,
             source_roots=args.source_root,
