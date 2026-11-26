@@ -63,7 +63,7 @@ class CrossAgentResolutionTests(unittest.TestCase):
                 (s_primary, "global", None),
             )
             self.assertEqual(
-                agents.resolve_skill("u-skill", agent="antigravity", scope="global", cwd=ws),
+                agents.resolve_skill("u-skill", agent="agy", scope="global", cwd=ws),
                 (s_shared, "global", None),
             )
             self.assertEqual(
@@ -125,7 +125,7 @@ class CrossAgentResolutionTests(unittest.TestCase):
         legacy.symlink_to(primary, target_is_directory=True)
 
         with patch.object(agents, "expand_path", side_effect=lambda p, c=None: Path(p.replace("~", str(fake_home)))):
-            items = list_agent_skills.list_skills_for_agent("antigravity", scope="global")
+            items = list_agent_skills.list_skills_for_agent("antigravity-cli", scope="global")
         names = [item["name"] for item in items]
         self.assertEqual(names, ["one", "two"])
 

@@ -44,6 +44,7 @@ class AgentConfig(TypedDict, total=False):
     global_dir_windows: str  # Windows override for global_dir (%VARS% expanded)
     extra_global_dirs: list[str]  # Further user-level dirs the agent reads (audit/delete only)
     reads_shared_global: bool  # True when agent also reads ~/.agents/skills at lower priority
+    supports_nested_categories: bool  # True when root may hold <category>/<skill>/SKILL.md (Hermes)
     home_env: tuple[str, str]  # (ENV_VAR, default home): ENV_VAR replaces that prefix
     detect_paths: list[str]  # User-level paths that indicate the agent is installed
     detect_project_markers: list[str]  # Paths relative to cwd that indicate the agent
@@ -60,6 +61,7 @@ def _agent(
     extra_project_dirs: list[str] | None = None,
     extra_global_dirs: list[str] | None = None,
     reads_shared_global: bool = False,
+    supports_nested_categories: bool = False,
     home_env: tuple[str, str] | None = None,
     global_dir_windows: str | None = None,
     detect_project_markers: list[str] | None = None,
@@ -79,6 +81,8 @@ def _agent(
         config["extra_global_dirs"] = extra_global_dirs
     if reads_shared_global:
         config["reads_shared_global"] = True
+    if supports_nested_categories:
+        config["supports_nested_categories"] = True
     if home_env:
         config["home_env"] = home_env
     if global_dir_windows:
@@ -88,23 +92,60 @@ def _agent(
     return config
 
 
+AGENT_ALIASES: dict[str, str] = {
+    "agy": "antigravity-cli",
+    "gemini": "gemini-cli",
+    "hermes": "hermes-agent",
+    "kimi-code": "kimi-code-cli",
+    "grok-build": "grok",
+    "codex-cli": "codex",
+    "cursor-cli": "cursor",
+    "devin-cli": "devin",
+    "claude-desktop": "claude-code",
+}
+
+NON_INSTALLABLE_HARNESSES: dict[str, str] = {
+    "porch": (
+        "porch is an orchestrator over underlying harnesses "
+        "(claude-code, codex, opencode, agy, grok, devin, gemini-cli, cursor); "
+        "install skills into those target harnesses instead."
+    ),
+}
+
+PORCH_HARNESS_AGENTS: tuple[str, ...] = (
+    "claude-code",
+    "codex",
+    "opencode",
+    "antigravity",
+    "antigravity-cli",
+    "grok",
+    "devin",
+    "gemini-cli",
+    "cursor",
+    "qwen-code",
+    "kimi-code-cli",
+    "hermes-agent",
+    "omp",
+)
+
+
 _REGISTRY: list[AgentConfig] = [
     _agent("adal", "AdaL", ".adal/skills", "~/.adal/skills", ["~/.adal"]),
     _agent("aider-desk", "AiderDesk", ".aider-desk/skills", "~/.aider-desk/skills", ["~/.aider-desk"]),
     _agent("amp", "Amp", SHARED_PROJECT, SHARED_GLOBAL, ["~/.config/amp"],
            extra_global_dirs=["~/.config/agents/skills", "~/.config/amp/skills"],
            source=DOCS + "https://ampcode.com/docs/customize/skills"),
-    # Antigravity (App 2.0 / IDE / CLI) reads .agents/skills (plus legacy .agent,
-    # _agents, _agent) in a workspace, ~/.gemini/config/skills globally, and
-    # ~/.agents/skills at lower priority (added in agy 1.5.16). ~/.gemini/antigravity/skills
-    # is the pre-2.0 location; on current installs it is a symlink to ~/.gemini/config/skills.
+    # Antigravity App 2.0 / IDE reads .agents/skills (plus legacy .agent, _agents,
+    # _agent) in a workspace and ~/.gemini/config/skills globally (NOT ~/.agents/skills).
+    # Antigravity CLI (agy) additionally reads ~/.agents/skills at lower priority (1.5.16+).
+    # ~/.gemini/antigravity/skills is pre-2.0 (typically a symlink to ~/.gemini/config/skills).
     _agent("antigravity", "Antigravity (App / IDE)", SHARED_PROJECT, "~/.gemini/config/skills",
            ["~/.gemini/antigravity", "~/.gemini/config/skills", "~/.gemini/config/config.json",
             "/Applications/Antigravity.app"],
            extra_project_dirs=[".agent/skills", "_agents/skills", "_agent/skills"],
-           extra_global_dirs=["~/.gemini/antigravity/skills"],
-           reads_shared_global=True,
-           source=DOCS_NOV26 + "https://antigravity.google/docs/skills; " + UPSTREAM + " (fe7ff9a)"),
+           extra_global_dirs=["~/.gemini/antigravity/skills", "~/.gemini/skills"],
+           reads_shared_global=False,
+           source=DOCS_NOV26 + "https://antigravity.google/docs/skills; agy-customizations SKILL.md"),
     _agent("antigravity-cli", "Antigravity CLI", SHARED_PROJECT, "~/.gemini/config/skills",
            ["~/.gemini/antigravity-cli"],
            extra_project_dirs=[".agent/skills", "_agents/skills", "_agent/skills"],
@@ -141,7 +182,8 @@ _REGISTRY: list[AgentConfig] = [
     _agent("crush", "Crush", ".crush/skills", "~/.config/crush/skills", ["~/.config/crush"]),
     _agent("cursor", "Cursor", SHARED_PROJECT, SHARED_GLOBAL, ["~/.cursor"],
            extra_global_dirs=["~/.cursor/skills"],
-           source=DOCS + "https://cursor.com/docs/context/skills"),
+           home_env=("CURSOR_CONFIG_DIR", "~/.cursor"),
+           source=DOCS_NOV26 + "https://cursor.com/docs/context/skills; porch cursor_config.py"),
     _agent("deepagents", "Deep Agents", SHARED_PROJECT, SHARED_GLOBAL, ["~/.deepagents"],
            extra_global_dirs=["~/.deepagents/agent/skills"]),
     # Devin CLI reads .agents/skills and .devin/skills in a project, and
@@ -183,7 +225,8 @@ _REGISTRY: list[AgentConfig] = [
     # HERMES_HOME (profile home) comes from upstream.
     _agent("hermes-agent", "Hermes Agent", ".hermes/skills", "~/.hermes/skills", ["~/.hermes"],
            home_env=("HERMES_HOME", "~/.hermes"),
-           source=DOCS + "https://hermes-agent.nousresearch.com/docs/user-guide/features/skills; " + UPSTREAM),
+           supports_nested_categories=True,
+           source=DOCS_NOV26 + "https://hermes-agent.nousresearch.com/docs/user-guide/features/skills; " + UPSTREAM),
     _agent("iflow-cli", "iFlow CLI", ".iflow/skills", "~/.iflow/skills", ["~/.iflow"]),
     _agent("inference-sh", "inference.sh", ".inferencesh/skills", "~/.inferencesh/skills",
            ["~/.inferencesh"]),
@@ -200,7 +243,8 @@ _REGISTRY: list[AgentConfig] = [
     _agent("kimi-code-cli", "Kimi Code CLI", SHARED_PROJECT, SHARED_GLOBAL,
            ["~/.kimi-code", "~/.kimi"],
            extra_global_dirs=["~/.config/agents/skills", "~/.kimi/skills"],
-           source=DOCS + "https://moonshotai.github.io/kimi-cli/en/customization/skills.html; "
+           home_env=("KIMI_CODE_HOME", "~/.kimi-code"),
+           source=DOCS_NOV26 + "https://moonshotai.github.io/kimi-cli/en/customization/skills.html; "
            + UPSTREAM + " (eaad526)"),
     _agent("kiro-cli", "Kiro CLI", ".kiro/skills", "~/.kiro/skills", ["~/.kiro"]),
     _agent("kode", "Kode", ".kode/skills", "~/.kode/skills", ["~/.kode"]),
@@ -214,6 +258,11 @@ _REGISTRY: list[AgentConfig] = [
     _agent("moxby", "Moxby", ".moxby/skills", "~/.moxby/skills", ["~/.moxby"]),
     _agent("mux", "Mux", ".mux/skills", "~/.mux/skills", ["~/.mux"]),
     _agent("neovate", "Neovate", ".neovate/skills", "~/.neovate/skills", ["~/.neovate"]),
+    _agent("omp", "Oh My Pi", ".omp/skills", "~/.omp/agent/skills", ["~/.omp", "~/.omp/agent"],
+           extra_project_dirs=[SHARED_PROJECT],
+           extra_global_dirs=["~/.omp/skills", "~/.omp/agent/managed-skills"],
+           reads_shared_global=True,
+           source=DOCS_NOV26 + "https://github.com/can1357/oh-my-pi"),
     _agent("ona", "Ona", ".ona/skills", "~/.ona/skills", ["~/.ona"]),
     # The project dir is the repository's own skills/ folder; ~/.clawdbot and
     # ~/.moltbot are pre-rename homes (upstream reads the first that exists).
@@ -274,27 +323,84 @@ _REGISTRY: list[AgentConfig] = [
 AGENTS: dict[str, AgentConfig] = {config["name"]: config for config in _REGISTRY}
 
 
+def canonical_agent_id(agent: str) -> str:
+    """Normalize a user-supplied agent or harness name to its canonical registry ID."""
+    norm = agent.strip().lower()
+    return AGENT_ALIASES.get(norm, norm)
+
+
 def expand_path(path: str, config: AgentConfig | None = None) -> Path:
     """Expand ``~``, ``$XDG_CONFIG_HOME`` for ``~/.config`` and the agent's ``home_env``."""
+    xdg = os.environ.get("XDG_CONFIG_HOME", "").strip()
     if config and (home_env := config.get("home_env")):
         env_var, default_home = home_env
         override = os.environ.get(env_var, "").strip()
+        if not override and env_var == "CURSOR_CONFIG_DIR" and xdg:
+            xdg_cursor = Path(xdg).expanduser() / "cursor"
+            if xdg_cursor.exists():
+                override = str(xdg_cursor)
         if override and (path == default_home or path.startswith(default_home + "/")):
             path = override + path[len(default_home):]
-    xdg = os.environ.get("XDG_CONFIG_HOME", "").strip()
     if xdg and (path == "~/.config" or path.startswith("~/.config/")):
         path = xdg + path[len("~/.config"):]
     return Path(path).expanduser()
 
 
+def hermes_reads_shared_global(home: Path | None = None) -> bool:
+    """True if Hermes config declares ``~/.agents/skills`` in ``skills.external_dirs``."""
+    hermes_cfg = AGENTS.get("hermes-agent")
+    if home is not None:
+        cfg_file = home / ".hermes" / "config.yaml"
+    else:
+        cfg_file = expand_path("~/.hermes/config.yaml", hermes_cfg)
+    if not cfg_file.is_file():
+        return False
+    try:
+        lines = cfg_file.read_text(encoding="utf-8", errors="replace").splitlines()
+    except OSError:
+        return False
+
+    in_skills = False
+    in_external = False
+    skills_indent = -1
+    ext_indent = -1
+    for raw in lines:
+        stripped = raw.split("#", 1)[0].rstrip()
+        if not stripped.strip():
+            continue
+        indent = len(stripped) - len(stripped.lstrip(" "))
+        text = stripped.strip()
+        if not in_skills:
+            if text.startswith("skills:"):
+                in_skills = True
+                skills_indent = indent
+            continue
+        if indent <= skills_indent:
+            break
+        if not in_external:
+            if text.startswith("external_dirs:"):
+                rest = text[len("external_dirs:"):].strip()
+                if rest.startswith("[") and ".agents/skills" in rest:
+                    return True
+                in_external = True
+                ext_indent = indent
+            continue
+        if indent <= ext_indent and not text.startswith("- "):
+            in_external = False
+            continue
+        if ".agents/skills" in text:
+            return True
+    return False
+
+
 def get_agent_config(agent: str) -> AgentConfig | None:
-    """Get configuration for an agent by ID (e.g. ``"claude-code"``)."""
-    return AGENTS.get(agent)
+    """Get configuration for an agent by ID or alias (e.g. ``"claude-code"``, ``"agy"``)."""
+    return AGENTS.get(canonical_agent_id(agent))
 
 
 def validate_agent(agent: str) -> bool:
-    """Check if an agent ID is valid."""
-    return agent in AGENTS
+    """Check if an agent ID or alias resolves to a supported agent."""
+    return canonical_agent_id(agent) in AGENTS
 
 
 def get_project_skills_dir(agent: str, cwd: Path | None = None) -> Path | None:
@@ -341,7 +447,10 @@ def get_readable_global_skills_dirs(agent: str) -> list[Path]:
     if not config:
         return []
     dirs = list(get_all_global_skills_dirs(agent))
-    if config.get("reads_shared_global"):
+    reads_shared = bool(config.get("reads_shared_global"))
+    if config["name"] == "hermes-agent" and hermes_reads_shared_global():
+        reads_shared = True
+    if reads_shared:
         shared = expand_path(SHARED_GLOBAL)
         if shared not in dirs:
             dirs.append(shared)

@@ -19,6 +19,8 @@ from pathlib import Path
 
 from agents import (
     AGENTS,
+    NON_INSTALLABLE_HARNESSES,
+    canonical_agent_id,
     detect_installed_agents,
     get_agent_config,
     get_all_global_skills_dirs,
@@ -273,15 +275,24 @@ def main():
     if (args.agents or args.all_agents) and args.scope:
         parser.error("Cannot use --scope with --agent or --all-agents")
 
+    resolved_agents: list[str] | None = None
     if args.agents:
+        resolved_agents = []
         for agent in args.agents:
-            if not validate_agent(agent):
+            raw_agent = agent.strip().lower()
+            if raw_agent in NON_INSTALLABLE_HARNESSES:
+                print(f"Error: {NON_INSTALLABLE_HARNESSES[raw_agent]}")
+                return 1
+            canon = canonical_agent_id(agent)
+            if not validate_agent(canon):
                 print(f"Error: Unknown agent '{agent}'")
                 print(f"Valid agents: {', '.join(sorted(AGENTS.keys()))}")
                 return 1
+            if canon not in resolved_agents:
+                resolved_agents.append(canon)
 
-    if args.agents or args.all_agents:
-        success = delete_skill_agents(args.name, args.agents, args.all_agents, args.force)
+    if resolved_agents or args.all_agents:
+        success = delete_skill_agents(args.name, resolved_agents, args.all_agents, args.force)
     else:
         success = delete_skill_default(args.name, args.scope, args.force)
 

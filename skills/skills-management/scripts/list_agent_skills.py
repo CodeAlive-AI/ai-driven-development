@@ -18,6 +18,7 @@ from pathlib import Path
 
 from agents import (
     AGENTS,
+    canonical_agent_id,
     detect_installed_agents,
     get_agent_config,
     get_all_project_skills_dirs,
@@ -43,6 +44,7 @@ def list_skills_for_agent(
         List of skill info dicts
     """
     skills = []
+    agent = canonical_agent_id(agent)
     config = get_agent_config(agent)
     if not config:
         return skills
@@ -78,6 +80,20 @@ def list_skills_for_agent(
                         "path": str(item),
                         "description": metadata["description"],
                     })
+            elif item.is_dir() and config.get("supports_nested_categories"):
+                for sub in sorted(item.iterdir()):
+                    if sub.is_dir() and (sub / "SKILL.md").exists():
+                        metadata = skill_summary(sub)
+                        if metadata:
+                            skills.append({
+                                "name": metadata["name"],
+                                "directory": f"{item.name}/{sub.name}",
+                                "scope": scope_name,
+                                "agent": agent,
+                                "agent_display_name": config["display_name"],
+                                "path": str(sub),
+                                "description": metadata["description"],
+                            })
 
     return skills
 
@@ -198,7 +214,8 @@ def main():
         skills = list_skills_all_agents(args.scope)
         single_agent = False
     else:
-        skills = list_skills_for_agent(args.agent, args.scope)
+        target_agent = canonical_agent_id(args.agent)
+        skills = list_skills_for_agent(target_agent, args.scope)
         single_agent = True
 
     print(format_output(skills, args.format, single_agent))

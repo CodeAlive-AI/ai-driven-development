@@ -33,16 +33,41 @@ class RegistryShapeTests(unittest.TestCase):
         )
 
     def test_antigravity_topology_and_shared_global_safety(self):
-        for agent_id in ("antigravity", "antigravity-cli"):
-            with self.subTest(agent_id):
-                cfg = agents.AGENTS[agent_id]
-                self.assertEqual(cfg["extra_project_dirs"], [".agent/skills", "_agents/skills", "_agent/skills"])
-                self.assertTrue(cfg.get("reads_shared_global"))
-                shared = Path.home() / ".agents" / "skills"
-                self.assertNotIn(shared, agents.get_all_global_skills_dirs(agent_id))
-                self.assertIn(shared, agents.get_readable_global_skills_dirs(agent_id))
-                sharing = agents.agents_sharing_dir(shared)
-                self.assertIn(agent_id, sharing)
+        shared = Path.home() / ".agents" / "skills"
+        app_cfg = agents.AGENTS["antigravity"]
+        self.assertEqual(app_cfg["extra_project_dirs"], [".agent/skills", "_agents/skills", "_agent/skills"])
+        self.assertFalse(app_cfg.get("reads_shared_global", False))
+        self.assertNotIn(shared, agents.get_readable_global_skills_dirs("antigravity"))
+        self.assertNotIn("antigravity", agents.agents_sharing_dir(shared))
+
+        cli_cfg = agents.AGENTS["antigravity-cli"]
+        self.assertEqual(cli_cfg["extra_project_dirs"], [".agent/skills", "_agents/skills", "_agent/skills"])
+        self.assertTrue(cli_cfg.get("reads_shared_global"))
+        self.assertNotIn(shared, agents.get_all_global_skills_dirs("antigravity-cli"))
+        self.assertIn(shared, agents.get_readable_global_skills_dirs("antigravity-cli"))
+        self.assertIn("antigravity-cli", agents.agents_sharing_dir(shared))
+
+    def test_porch_aliases_omp_and_env_overrides(self):
+        self.assertEqual(agents.canonical_agent_id("agy"), "antigravity-cli")
+        self.assertEqual(agents.canonical_agent_id("gemini"), "gemini-cli")
+        self.assertEqual(agents.canonical_agent_id("hermes"), "hermes-agent")
+        self.assertEqual(agents.canonical_agent_id("kimi-code"), "kimi-code-cli")
+        self.assertEqual(agents.canonical_agent_id("grok-build"), "grok")
+        self.assertEqual(agents.canonical_agent_id("claude-desktop"), "claude-code")
+        self.assertTrue(agents.validate_agent("agy"))
+        self.assertIn("omp", agents.AGENTS)
+        self.assertTrue(agents.AGENTS["omp"].get("reads_shared_global"))
+        self.assertTrue(agents.AGENTS["hermes-agent"].get("supports_nested_categories"))
+        with tempfile.TemporaryDirectory() as tmp:
+            fake_home = Path(tmp)
+            with patch.dict(os.environ, {"KIMI_CODE_HOME": str(fake_home / "kimi"), "CURSOR_CONFIG_DIR": str(fake_home / "cur")}):
+                self.assertIn(fake_home / "kimi", [agents.expand_path(p, agents.AGENTS["kimi-code-cli"]) for p in agents.AGENTS["kimi-code-cli"]["detect_paths"]])
+                self.assertIn(fake_home / "cur" / "skills", agents.get_all_global_skills_dirs("cursor"))
+            hermes_dir = fake_home / ".hermes"
+            hermes_dir.mkdir(parents=True)
+            self.assertFalse(agents.hermes_reads_shared_global(home=fake_home))
+            (hermes_dir / "config.yaml").write_text("skills:\n  external_dirs:\n    - ~/.agents/skills\n", encoding="utf-8")
+            self.assertTrue(agents.hermes_reads_shared_global(home=fake_home))
 
     def test_antigravity_detected_from_config_json_or_skills(self):
         with tempfile.TemporaryDirectory() as tmp:

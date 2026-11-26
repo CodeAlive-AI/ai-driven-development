@@ -17,6 +17,7 @@ from pathlib import Path
 
 from agents import (
     AGENTS,
+    canonical_agent_id,
     find_skill_in_agent,
     get_agent_config,
     get_skills_dir,
@@ -124,6 +125,9 @@ def main():
         help="Overwrite if skill exists in target"
     )
     args = parser.parse_args()
+
+    args.from_agent = canonical_agent_id(args.from_agent)
+    args.to_agent = canonical_agent_id(args.to_agent)
 
     # Validate agents
     if not validate_agent(args.from_agent):

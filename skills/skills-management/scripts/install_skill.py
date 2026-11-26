@@ -20,6 +20,8 @@ from pathlib import Path
 
 from agents import (
     AGENTS,
+    NON_INSTALLABLE_HARNESSES,
+    canonical_agent_id,
     detect_installed_agents,
     get_agent_config,
     get_skills_dir,
@@ -184,6 +186,11 @@ def install_skill(
     Returns:
         Tuple of (success, message)
     """
+    raw_agent = agent.strip().lower()
+    if raw_agent in NON_INSTALLABLE_HARNESSES:
+        return False, NON_INSTALLABLE_HARNESSES[raw_agent]
+    agent = canonical_agent_id(agent)
+
     # Validate source
     if not source.exists():
         return False, f"Source path does not exist: {source}"
@@ -302,11 +309,17 @@ def main():
     else:
         target_agents = []
         for agent in args.agents:
-            if not validate_agent(agent):
+            raw_agent = agent.strip().lower()
+            if raw_agent in NON_INSTALLABLE_HARNESSES:
+                print(f"Error: {NON_INSTALLABLE_HARNESSES[raw_agent]}")
+                return 1
+            canon = canonical_agent_id(agent)
+            if not validate_agent(canon):
                 print(f"Error: Unknown agent '{agent}'")
                 print(f"Valid agents: {', '.join(sorted(AGENTS.keys()))}")
                 return 1
-            target_agents.append(agent)
+            if canon not in target_agents:
+                target_agents.append(canon)
 
     # Resolve source path
     source = Path(args.path).resolve()

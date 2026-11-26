@@ -57,8 +57,8 @@ Meta-skills that let AI coding agents configure themselves. No more editing conf
 
 | Skill | What It Does |
 |-------|--------------|
-| [coding-agents-management](skills/coding-agents-management/) | Unified configuration for MCP servers, lifecycle hooks, TOML/JSON/JSONC settings & rules, and plugins across Antigravity (`agy` / App 2.0 / IDE), Claude Code, Codex CLI/App, OpenCode, Devin, and peers |
-| [skills-management](skills/skills-management/) | Organise, audit (Agent Experience & progressive disclosure), discover, share, deduplicate, and **train** skills across Claude Code, Antigravity (`agy` / App / IDE), Codex, OpenCode, Mastra, and LangGraph / Deep Agents |
+| [coding-agents-management](skills/coding-agents-management/) | Unified configuration for MCP servers, lifecycle hooks, TOML/JSON/JSONC/YAML settings & rules, and plugins across Antigravity (`agy` / App 2.0 / IDE), Claude Code/Desktop, Codex CLI/App, OpenCode, Devin, Cursor, Grok, Gemini CLI, Qwen, Kimi, Hermes, and Oh My Pi (`omp`) |
+| [skills-management](skills/skills-management/) | Organise, revise (broken links, ghost dirs, lockfiles, context budgets, Discovery-Pool matrix, `porch` usage telemetry, quarantine `--undo` sync), audit AX/progressive disclosure, discover, share, deduplicate, and **train** skills across all 13 `porch` harnesses, Mastra, and LangGraph / Deep Agents |
 | [agentic-readiness](skills/agentic-readiness/) | Audit and improve repositories for Codex/Codex App, Claude Code, and OpenCode, including `AGENTS.md`/`CLAUDE.md` discovery and routing |
 | [installing-cli-tools](skills/installing-cli-tools/) | Install, upgrade, authenticate, verify, and roll back developer CLIs while keeping tokens and API keys out of chat, logs, shell history, startup files, and repositories |
 

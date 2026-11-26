@@ -1,6 +1,6 @@
 ---
 name: skills-management
-description: Search, find, discover, install, remove, update, review, deduplicate, list, move, optimise, and iterate on skills for AI coding and framework agents including Antigravity (App, IDE, CLI), Claude Code, Codex, Cursor, OpenCode, Mastra, and LangGraph / Deep Agents. Use when user asks "find a skill for X", "install skill", "remove skill", "update skills", "list skills", "deduplicate skills", "why are two skills shown", "choose the canonical skill", "check for skill conflicts", "review skill quality", "audit progressive disclosure", "agent experience (AX)", "move skill", "check for updates", "optimise skill", "audit skill edits", "trigger test skill", or "transfer skill across agents". Includes duplicate-free installation preflight and SkillOpt-style training loops. Do not use for creating skills from scratch (use /skill-creator instead).
+description: Search, find, install, remove, update, revise, sync, review, deduplicate, list, move, and optimise skills across Antigravity (App, IDE, CLI agy), Claude Code, Codex, Cursor, OpenCode, Grok, Devin, Gemini CLI, Qwen, Kimi, Hermes, Oh My Pi (omp), Mastra, and LangGraph. Use when user asks "find a skill for X", "install skill", "remove skill", "update skills", "list skills", "revise skills", "sync skills", "clean broken symlinks", "deduplicate skills", "why are two skills shown", "choose canonical skill", "check for skill conflicts", "review skill quality", "audit progressive disclosure", "agent experience (AX)", "move skill", "check for updates", "optimise skill", "trigger test skill", or "transfer skill across agents". Includes duplicate-free install preflight, topology reconciliation with undo, porch usage telemetry, and SkillOpt loops. Not for creating new skills from scratch (use /skill-creator instead).
 ---
 
 # Skills Manager
@@ -16,6 +16,8 @@ Run every script with `uv run scripts/<script>.py …` from this skill's directo
 | **Inspect & review (`--agent` or `--path` for any agent; Claude Code by default)** | |
 | List Claude Code / agent skills | `uv run scripts/list_skills.py` · `list_agent_skills.py --agent antigravity` (`--all`, `-f json`) |
 | Show / review skill | `uv run scripts/show_skill.py` · `review_skill.py <name>` (`--agent antigravity`, `--path <dir>`, `-f json`) |
+| Revise topology, matrix, budget & usage | `uv run scripts/revise_skills.py` (`--scope global\|local\|all`, `--porch-harnesses`, `--usage fast\|deep`, `--source-root <dir>`, `--all`) |
+| Sync & repair links (dry-run default) | `uv run scripts/sync_skills.py --prune-broken --collapse-hops` (`--repoint-broken`, `--converge-replicas`, `--sync-agents ...`, `--apply`, `--undo <tx>`) |
 | Delete / move between scopes | `uv run scripts/delete_skill.py <name>` (`-a antigravity`, `--all-agents`, `--force`) · `move_skill.py <name> user\|project` |
 | Audit duplicates / preflight | `uv run scripts/audit_skill_duplicates.py` · `--candidate /path/to/skill --fail-on-conflict` |
 | Detect agents / install / copy / move | `uv run scripts/detect_agents.py --all` · `install_skill.py /path -a antigravity --link` · `copy_skill.py` · `move_skill_agent.py` |
@@ -30,9 +32,9 @@ Run every script with `uv run scripts/<script>.py …` from this skill's directo
 
 ## Scopes and duplicate invariant
 
-Discovery is consumer-specific. **Antigravity (App, IDE, CLI)** reads `~/.gemini/config/skills` globally (highest global priority), walks workspace `.agents/skills` (plus legacy `.agent/`, `_agents/`, `_agent/`) to the repo root, reads `skills.json`/`plugins.json`, loads enabled plugins under `~/.gemini/config/plugins/` and `.agents/plugins/`, and in `agy` also reads `~/.agents/skills`. Codex and OpenCode read `~/.agents/skills` and walk `.agents/skills` to the repo root. Print all agent paths with `detect_agents.py --all`.
+Discovery is consumer-specific. **Antigravity App / IDE** reads `~/.gemini/config/skills` globally, walks workspace `.agents/skills` (plus legacy `.agent/`, `_agents/`, `_agent/`) to the repo root, reads `skills.json`/`plugins.json`, and loads enabled plugins; **Antigravity CLI (`agy`)** additionally falls back to `~/.agents/skills`. **Codex**, **OpenCode**, **Cursor**, **Gemini CLI**, **Kimi Code**, and **Oh My Pi (`omp`)** read `~/.agents/skills` and walk `.agents/skills`. **Hermes** uses category folders (`~/.hermes/skills/<category>/<skill>/`) and only reads `~/.agents/skills` when declared in `skills.external_dirs`. All `porch` harness aliases (`agy`, `gemini`, `hermes`, `kimi-code`, `grok-build`, `claude-desktop`, `omp`, etc.) are accepted. Print all paths with `detect_agents.py --all`.
 
-Keep one active implementation per frontmatter `name` for each consumer topology. Aliases to one real directory are fine; divergent global, workspace, manifest, or plugin copies require a canonical-source decision via [skill-deduplication.md](references/skill-deduplication.md).
+Keep one active implementation per frontmatter `name` for each consumer topology. Aliases to one real directory are fine; divergent global, workspace, manifest, or plugin copies require a canonical-source decision via [skill-deduplication.md](references/skill-deduplication.md). Use `revise_skills.py` to audit broken symlinks, ghost dirs, `.skill-lock.json` orphans, startup context budgets, and `porch` session usage, and `sync_skills.py` (with quarantine `--undo`) to reconcile links cleanly.
 
 ## Changing skills safely and reviewing quality
 
@@ -59,6 +61,7 @@ Read **only** the reference matching the current task:
 | Structuring a skill, picking a workflow pattern, publishing, or troubleshooting | [skill-design-and-troubleshooting.md](references/skill-design-and-troubleshooting.md) |
 | Checking YAML frontmatter fields across agents, substitutions, or security rules | [ref-b-yaml-frontmatter.md](references/ref-b-yaml-frontmatter.md) |
 | Targeting OpenCode discovery paths, permissions, or frontmatter compatibility | [opencode-skills.md](references/opencode-skills.md) |
+| Auditing or reconciling broken links, ghost dirs, lockfiles, matrix, or usage | [skill-revision-and-sync.md](references/skill-revision-and-sync.md) |
 | Resolving duplicate names, plugin-vs-standalone conflicts, or install preflight | [skill-deduplication.md](references/skill-deduplication.md) |
 | Evaluating candidate ecosystem skills from `skills.sh` before installation | [remote-skill-assessment.md](references/remote-skill-assessment.md) |
 | Running a SkillOpt loop, blind A/B comparison, HTML viewer, or edit-log diffs | [skill-optimization.md](references/skill-optimization.md) |
