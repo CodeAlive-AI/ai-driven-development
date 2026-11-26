@@ -87,6 +87,45 @@ AGENT_CONTEXT_CAPS: dict[str, dict[str, int | str]] = {
     "antigravity-cli": {"catalog_tokens": 20000, "note": "Antigravity CLI combined customization budget (~20,000 tokens)"},
 }
 
+# Verified harnesses that exclude `disable-model-invocation: true` skills from startup context
+FRONTMATTER_MANUAL_AGENTS: frozenset[str] = frozenset({
+    "claude-code",
+    "antigravity",
+    "antigravity-cli",
+    "cursor",
+    "github-copilot",
+    "droid",
+    "pi",
+})
+
+
+def classify_invocation_mode(disable_model_invocation: bool, codex_allow_implicit: bool) -> str:
+    """Classify cross-agent invocation mode from SKILL.md frontmatter and agents/openai.yaml."""
+    if disable_model_invocation and not codex_allow_implicit:
+        return "manual"
+    if disable_model_invocation:
+        return "manual-frontmatter-only"
+    if not codex_allow_implicit:
+        return "manual-codex-only"
+    return "auto"
+
+
+def effective_skill_mode_for_agent(
+    entry: SkillEntry,
+    agent_id: str,
+    *,
+    codex_disabled: set[str] | None = None,
+) -> str:
+    """Return effective startup/invocation mode ('manual' | 'auto' | 'disabled') for one skill in ``agent_id``."""
+    aid = canonical_agent_id(agent_id)
+    if aid == "codex":
+        if codex_disabled and entry.name in codex_disabled:
+            return "disabled"
+        return "manual" if not entry.codex_allow_implicit else "auto"
+    if aid in FRONTMATTER_MANUAL_AGENTS:
+        return "manual" if entry.disable_model_invocation else "auto"
+    return "auto"
+
 # Compact pool order for Discovery-Pool matrix
 POOL_COLUMNS: list[tuple[str, str, list[str]]] = [
     ("shared", "Shared(~/.agents)", ["codex", "opencode", "cursor", "gemini-cli", "kimi-code-cli", "pi", "antigravity-cli"]),
@@ -138,6 +177,9 @@ class SkillEntry:
     is_backup: bool = False
     content_hash: str | None = None
     body_lines: int = 0
+    disable_model_invocation: bool = False
+    codex_allow_implicit: bool = True
+    invocation_mode: str = "auto"  # auto | manual | manual-frontmatter-only | manual-codex-only
     issues: list[dict] = field(default_factory=list)
     provenance: str = "local-unmanaged"
     git_repo: str | None = None
@@ -1355,6 +1397,10 @@ def scan_entry(
     elif sname in locks:
         provenance = f"skills-lock:{locks[sname].get('source', '?')}"
 
+    disable_model_invocation = metadata.get("disable-model-invocation", "").strip().lower() == "true"
+    codex_allow_implicit, _ = _codex_openai_yaml_meta(resolved)
+    invocation_mode = classify_invocation_mode(disable_model_invocation, codex_allow_implicit)
+
     return SkillEntry(
         name=sname,
         dir_name=entry_path.name,
@@ -1377,6 +1423,9 @@ def scan_entry(
         is_builtin=root.root_kind == "builtin",
         is_backup=bool(BACKUP_RE.search(entry_path.name)),
         body_lines=len(body.splitlines()) if body else 0,
+        disable_model_invocation=disable_model_invocation,
+        codex_allow_implicit=codex_allow_implicit,
+        invocation_mode=invocation_mode,
         issues=issues,
         provenance=provenance,
         git_repo=git_label,
@@ -1721,6 +1770,96 @@ def classify_groups(entries: list[SkillEntry]) -> dict:
     }
 
 
+def _visible_entries_for_agent(
+    entries: list[SkillEntry],
+    aid: str,
+    home: Path,
+) -> dict[str, SkillEntry]:
+    """Deduplicate live entries visible to ``aid`` by skill name (highest priority first)."""
+    visible: dict[str, SkillEntry] = {}
+    readable_dirs = {str(p.expanduser().absolute()) for p in _agent_readable_dirs(aid, home)}
+    for e in entries:
+        if e.is_broken or e.is_ghost or e.root_kind == "source-warehouse":
+            continue
+        if aid in e.agent_ids or e.root in readable_dirs:
+            visible.setdefault(e.name, e)
+    return visible
+
+
+def compute_skill_invocation_matrix(
+    entries: list[SkillEntry],
+    agent_ids: list[str],
+    *,
+    home: Path | None = None,
+) -> dict[str, dict]:
+    """Compute per-skill, per-agent effective invocation modes across evaluated agents."""
+    home = home or Path.home()
+    canon_agents: list[str] = []
+    for raw in agent_ids:
+        canon = canonical_agent_id(raw)
+        if canon in AGENTS and canon not in canon_agents:
+            canon_agents.append(canon)
+    codex_cfg = load_codex_config(home) if "codex" in canon_agents else {}
+
+    per_skill_agents: dict[str, dict[str, str]] = defaultdict(dict)
+    for aid in canon_agents:
+        visible = _visible_entries_for_agent(entries, aid, home)
+        codex_disabled = (
+            _codex_disabled_skill_names(codex_cfg, visible, home)
+            if aid == "codex"
+            else set()
+        )
+        for sname, entry in visible.items():
+            per_skill_agents[sname][aid] = effective_skill_mode_for_agent(
+                entry, aid, codex_disabled=codex_disabled
+            )
+
+    copy_modes_by_name: dict[str, set[str]] = defaultdict(set)
+    for e in entries:
+        if e.is_broken or e.is_ghost or e.root_kind == "source-warehouse":
+            continue
+        copy_modes_by_name[e.name].add(e.invocation_mode)
+
+    matrix: dict[str, dict] = {}
+    for sname in sorted(set(per_skill_agents) | set(copy_modes_by_name)):
+        pa = per_skill_agents.get(sname, {})
+        manual_in = sorted(aid for aid, m in pa.items() if m == "manual")
+        auto_in = sorted(aid for aid, m in pa.items() if m == "auto")
+        disabled_in = sorted(aid for aid, m in pa.items() if m == "disabled")
+        copy_modes = sorted(copy_modes_by_name.get(sname, set()))
+        has_manual_signal = bool(manual_in) or any(m != "auto" for m in copy_modes)
+        fixable_auto_in = (
+            sorted(
+                aid for aid in auto_in
+                if aid == "codex" or aid in FRONTMATTER_MANUAL_AGENTS
+            )
+            if has_manual_signal
+            else []
+        )
+        unsupported_auto_in = sorted(
+            aid for aid in auto_in
+            if aid not in FRONTMATTER_MANUAL_AGENTS and aid != "codex"
+        )
+        has_copy_mode_mismatch = len(copy_modes) > 1
+        is_partial = (
+            has_copy_mode_mismatch
+            or any(m in ("manual-frontmatter-only", "manual-codex-only") for m in copy_modes)
+            or (bool(manual_in) and bool(fixable_auto_in))
+        )
+        matrix[sname] = {
+            "per_agent": pa,
+            "manual_in": manual_in,
+            "auto_in": auto_in,
+            "disabled_in": disabled_in,
+            "fixable_auto_in": fixable_auto_in,
+            "unsupported_auto_in": unsupported_auto_in,
+            "copy_modes": copy_modes,
+            "has_copy_mode_mismatch": has_copy_mode_mismatch,
+            "is_partial": is_partial,
+        }
+    return matrix
+
+
 def compute_agent_context_budgets(
     entries: list[SkillEntry],
     agent_ids: list[str],
@@ -1736,13 +1875,7 @@ def compute_agent_context_budgets(
         if not cfg:
             continue
         # Deduplicate effective skills visible to this agent by name (highest priority first)
-        visible: dict[str, SkillEntry] = {}
-        readable_dirs = {str(p.expanduser().absolute()) for p in _agent_readable_dirs(aid, home)}
-        for e in entries:
-            if e.is_broken or e.is_ghost or e.root_kind == "source-warehouse":
-                continue
-            if aid in e.agent_ids or e.root in readable_dirs:
-                visible.setdefault(e.name, e)
+        visible = _visible_entries_for_agent(entries, aid, home)
 
         disabled_count = 0
         explicit_only_count = 0
@@ -1768,6 +1901,16 @@ def compute_agent_context_budgets(
                 eff_meta_by_name[sname] = len(e.name) + d_len
                 kept[sname] = e
             items = list(kept.values())
+        elif aid in FRONTMATTER_MANUAL_AGENTS:
+            kept_fm: list[SkillEntry] = []
+            for e in visible.values():
+                if e.disable_model_invocation:
+                    explicit_only_count += 1
+                    continue
+                eff_desc_by_name[e.name] = len(e.description)
+                eff_meta_by_name[e.name] = e.meta_chars
+                kept_fm.append(e)
+            items = kept_fm
         else:
             items = list(visible.values())
             for e in items:
@@ -1811,6 +1954,8 @@ def compute_agent_context_budgets(
         }
         if aid == "codex":
             row_data["disabled_count"] = disabled_count
+            row_data["explicit_only_count"] = explicit_only_count
+        elif aid in FRONTMATTER_MANUAL_AGENTS:
             row_data["explicit_only_count"] = explicit_only_count
         budgets[aid] = row_data
     return budgets

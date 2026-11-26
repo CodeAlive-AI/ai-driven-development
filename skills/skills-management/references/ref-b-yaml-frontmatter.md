@@ -23,7 +23,8 @@ YAML frontmatter schema for `SKILL.md` across the [Agent Skills standard](https:
 | `compatibility` | Optional (`1–500` chars) | Ignored safely | Optional | Optional | Optional |
 | `metadata` | Optional (key-value string map) | Ignored safely | Optional | Optional | Optional (`string -> string`) |
 | `allowed-tools` | Optional (experimental) | Ignored safely | Space-separated or YAML list | Ignored safely | Ignored safely |
-| CC-only extensions (`when_to_use`, `argument-hint`, `arguments`, `disable-model-invocation`, `user-invocable`, `model`, `effort`, `context`, `agent`, `hooks`, `paths`, `shell`) | Ignored | `disable-model-invocation` / `user-invocable` / `argument-hint` partially adopted in some runtimes; do not rely on CC-specific fields for cross-agent skills | Full support | Ignored | Ignored |
+| `disable-model-invocation` | Supported (`true` = explicit only) | Supported (`true` excludes from startup catalog; callable via `/name`) | Supported (`true` excludes from catalog, blocks subagent preload; `/name` works) | Ignored in `SKILL.md`; use `agents/openai.yaml` (`policy.allow_implicit_invocation: false`, `$name` works) | Ignored in `SKILL.md`; use `permission.skill.<name>: "ask"\|"deny"` in `opencode.json` |
+| CC-only extensions (`when_to_use`, `argument-hint`, `arguments`, `user-invocable`, `model`, `effort`, `context`, `agent`, `hooks`, `paths`, `shell`) | Ignored | `user-invocable` / `argument-hint` partially adopted in some runtimes; do not rely on CC-specific fields for cross-agent skills | Full support | Ignored | Ignored |
 
 For maximum portability across Antigravity, Claude Code, Codex, Cursor, and OpenCode, keep required fields strictly to `name` (matching directory) and `description` (what + when + negative triggers).
 

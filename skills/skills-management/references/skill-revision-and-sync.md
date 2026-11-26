@@ -21,8 +21,8 @@ Use `scripts/revise_skills.py` (100% read-only diagnostics) and `scripts/sync_sk
   - **Orphaned lockfile entries** in `~/.agents/.skill-lock.json` and workspace `skills-lock.json` (cleaning symlinks without cleaning `.skill-lock.json` causes `npx skills update` to re-download deleted skills).
   - **Local ↔ Global shadowing & monorepo ancestor walks** (`--scope local|global|all`, `--cwd PATH`, `--scan-skills-dirs`).
   - **4-axis duplicate detection**: exact `name`, folder basename (`dir_name`), normalized slug, and identical directory SHA-256 across different names.
-  - **Startup Context Budget** per agent (`name + description` chars/tokens against truncation & catalog caps) and **Trojan Source** invisible/BiDi Unicode checks. For Codex, plugin discovery reads `[plugins."<name>@<marketplace>"] enabled = true` from `~/.codex/config.toml` (selecting `"local"` or the highest semver dir) rather than treating unconfigured cache folders as live skills, and budget estimation honors `[[skills.config]]` (`enabled = false`), `[skills].max_context_tokens` (capped at `10,000` tokens), and `agents/openai.yaml` (`allow_implicit_invocation: false`, `short_description`). For deep third-party security analysis, run the dedicated `skill-inspector` skill.
-- Run **`audit_skill_duplicates.py --candidate PATH --fail-on-conflict`** as the fast preflight before installing a single skill.
+  - **Startup Context Budget & By-Demand (`manual`) Mode** per agent (`name + description` chars/tokens against truncation & catalog caps), **per-agent invocation parity** (`manual_in`, `auto_in`, `fixable_auto_in`, `unsupported_auto_in`, `disabled_in`), and **Trojan Source** invisible/BiDi Unicode checks. Skills with `disable-model-invocation: true` in `SKILL.md` cost `0` startup tokens in Antigravity (App/IDE/CLI), Claude Code, Cursor, Copilot, Droid, and Pi (remaining callable via `/name`), while Codex requires `<skill>/agents/openai.yaml` with `policy.allow_implicit_invocation: false` (callable via `$name`). Partial configurations (`manual-frontmatter-only`, `manual-codex-only`, `mixed`) surface automatically as triage warnings. For Codex, plugin discovery reads `[plugins."<name>@<marketplace>"] enabled = true` from `~/.codex/config.toml` (selecting `"local"` or the highest semver dir) rather than treating unconfigured cache folders as live skills, and budget estimation honors `[[skills.config]]` (`enabled = false`), `[skills].max_context_tokens` (capped at `10,000` tokens), and `agents/openai.yaml` (`allow_implicit_invocation: false`, `short_description`). For deep third-party security analysis, run the dedicated `skill-inspector` skill.
+- Run **`audit_skill_duplicates.py --candidate PATH --fail-on-conflict`** as the fast preflight before installing a single skill (also surfaces `invocation_mode` and copy `invocation_mode_mismatch`).
 
 ---
 
@@ -40,7 +40,7 @@ Large agent stores easily grow to tens of gigabytes across 14+ harnesses. Both m
 
 ## Discovery-Pool availability matrix
 
-By default, `revise_skills.py` shows **Anomaly-First Triage** (`--all` shows every healthy skill) and collapses agents that read `~/.agents/skills` into `Shared(~/.agents)` alongside dedicated/overriding roots (`AGY`, `Claude`, `Qwen`, `Hermes`, `Grok`, `Devin`, `OMP`, plus `Local`; pass `--expand-agents` for all columns):
+By default, `revise_skills.py` shows **Anomaly-First Triage** (`--all` shows every healthy skill) with a **`Mode`** column (`auto`, `manl` = full manual, `M:fm` = frontmatter-only, `M:cx` = Codex-only, `M:mx` = mixed copies, `disb` = Codex `enabled = false`) and collapses agents that read `~/.agents/skills` into `Shared(~/.agents)` alongside dedicated/overriding roots (`AGY`, `Claude`, `Qwen`, `Hermes`, `Grok`, `Devin`, `OMP`, plus `Local`; pass `--expand-agents` for all columns):
 
 - `link`: direct 1-hop symlink to canonical directory
 - `hop2`: chained (`>=2` hops) or relative symlink
@@ -76,15 +76,18 @@ uv run scripts/sync_skills.py --repoint-broken --source-root ~/my-projects
 # 3. Preview replica convergence & cross-agent link parity (optionally scoped by --from-agents)
 uv run scripts/sync_skills.py --converge-replicas --from-agents codex,claude-code,antigravity --sync-agents claude-code,antigravity
 
-# 4. Opt-in quarantine of stale/uninstalled agent skill dirs (or explicit --prune-agent <id>)
+# 4. Switch specific rare skills to by-demand/manual mode across SKILL.md + agents/openai.yaml (or revert with --set-mode auto)
+uv run scripts/sync_skills.py --set-mode manual --skills rare-skill-a,rare-skill-b
+
+# 5. Opt-in quarantine of stale/uninstalled agent skill dirs (or explicit --prune-agent <id>)
 # Never removes ~/.agents/skills, paths read by active agents, or config/cache files of orphaned agents
 uv run scripts/sync_skills.py --prune-stale-agents --prune-broken
 
-# 5. Execute and receive quarantine tx-id + reload instructions
+# 6. Execute and receive quarantine tx-id + reload instructions
 uv run scripts/sync_skills.py --prune-broken --collapse-hops --apply
 
-# 6. Roll back any --apply cleanly (restores symlinks, raw targets, moved dirs, lockfiles)
+# 7. Roll back any --apply cleanly (restores symlinks, raw targets, moved dirs, edited/deleted files, lockfiles)
 uv run scripts/sync_skills.py --undo <tx-id>
 ```
 
-Divergent copies are **never** overwritten or deleted automatically — inspect the diff summary from `revise_skills.py` and choose one canonical directory first. Cross-agent `--sync-agents` automatically excludes agent-bundled (Hermes `.bundled_manifest`), builtin, and plugin skills, uses folder `dir_name` for symlink slots (avoiding duplicate links when frontmatter `name` differs from directory basename), and honors `--from-agents` to restrict canonical source discovery to specific primary agent pools. Stale agent cleanup is opt-in (`--prune-stale-agents` or `--prune-agent <id>`); whole stub roots are moved to quarantine only when they hold nothing besides `skills/`, whereas `orphaned-agent` roots only have their dedicated `skills/` subfolder quarantined (preserving config/cache files unless the user deletes them), and paths read by any active agent (e.g., `~/.gemini/skills` read by active Antigravity) are protected and skipped.
+Divergent copies are **never** overwritten or deleted automatically — inspect the diff summary from `revise_skills.py` and choose one canonical directory first. `--set-mode manual|auto` always requires explicit `--skills`, preserves YAML formatting/comments and `agents/openai.yaml` `interface.short_description`, deletes pure-policy `openai.yaml` on revert to `auto`, skips plugin/bundled/builtin and divergent copies, and is fully reversible via `--undo`. Cross-agent `--sync-agents` automatically excludes agent-bundled (Hermes `.bundled_manifest`), builtin, and plugin skills, uses folder `dir_name` for symlink slots (avoiding duplicate links when frontmatter `name` differs from directory basename), and honors `--from-agents` to restrict canonical source discovery to specific primary agent pools. Stale agent cleanup is opt-in (`--prune-stale-agents` or `--prune-agent <id>`); whole stub roots are moved to quarantine only when they hold nothing besides `skills/`, whereas `orphaned-agent` roots only have their dedicated `skills/` subfolder quarantined (preserving config/cache files unless the user deletes them), and paths read by any active agent (e.g., `~/.gemini/skills` read by active Antigravity) are protected and skipped.

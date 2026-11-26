@@ -33,9 +33,11 @@ from skill_topology import (
     AGY_PLUGIN_MANIFESTS,
     BACKUP_RE,
     IGNORED_PARTS,
+    _codex_openai_yaml_meta,
     active_codex_plugin_skill_roots,
     agy_plugin_skill_dirs as _agy_plugin_skill_dirs,
     antigravity_manifest_skill_roots,
+    classify_invocation_mode,
     find_agy_plugin_manifest as _find_agy_plugin_manifest,
     find_repo_root,
     hash_skill_directory,
@@ -55,6 +57,7 @@ class SkillRecord:
     is_symlink: bool
     is_plugin: bool
     is_backup: bool
+    invocation_mode: str = "auto"
     content_hash: str | None = None
 
 
@@ -221,16 +224,25 @@ def record_for_directory(skill_dir: Path, root: Path, root_kind: str) -> SkillRe
     metadata, _ = parsed
     name = skill_name(metadata, skill_dir)
     path_text = str(skill_dir.absolute())
+    resolved = skill_dir.resolve()
+    disable_model_invocation = (
+        metadata.get("disable-model-invocation", "").strip().lower() == "true"
+    )
+    codex_allow_implicit, _ = _codex_openai_yaml_meta(resolved)
+    invocation_mode = classify_invocation_mode(
+        disable_model_invocation, codex_allow_implicit
+    )
     return SkillRecord(
         name=name,
         path=path_text,
-        real_path=str(skill_dir.resolve()),
+        real_path=str(resolved),
         root=str(root.absolute()),
         root_kind=root_kind,
         version=metadata.get("version"),
         is_symlink=skill_dir.is_symlink(),
         is_plugin=root_kind.startswith("plugin"),
         is_backup=bool(BACKUP_RE.search(skill_dir.name)),
+        invocation_mode=invocation_mode,
     )
 
 
@@ -287,10 +299,12 @@ def duplicate_groups(records: list[SkillRecord]) -> list[dict]:
         if len(group_records) < 2:
             continue
         status = classify_group(group_records)
+        modes = {record.invocation_mode for record in group_records}
         groups.append({
             "name": name,
             "status": status,
             "requires_decision": status in {"stale-backup", "namespaced-divergent", "divergent"},
+            "invocation_mode_mismatch": len(modes) > 1,
             "records": [asdict(record) for record in group_records],
         })
     return groups
@@ -331,21 +345,37 @@ def format_text(groups: list[dict], candidate_result: dict | None = None) -> str
     lines: list[str] = []
     if candidate_result is not None:
         candidate = candidate_result["candidate"]
-        lines.append(f"Candidate: {candidate['name']} ({candidate['path']})")
+        cand_mode = (
+            f" [{candidate['invocation_mode']}]"
+            if candidate.get("invocation_mode", "auto") != "auto"
+            else ""
+        )
+        lines.append(f"Candidate: {candidate['name']}{cand_mode} ({candidate['path']})")
         if not candidate_result["matches"]:
             lines.append("No existing skill with this name was found.")
         for match in candidate_result["matches"]:
             record = match["record"]
-            lines.append(f"- {match['relation']}: {record['path']} [{record['root_kind']}]")
+            rec_mode = (
+                f" [{record['invocation_mode']}]"
+                if record.get("invocation_mode", "auto") != "auto"
+                else ""
+            )
+            lines.append(f"- {match['relation']}: {record['path']} [{record['root_kind']}]{rec_mode}")
         return "\n".join(lines)
 
     if not groups:
         return "No duplicate skill names found."
     for group in groups:
-        lines.append(f"{group['name']}: {group['status']}")
+        mismatch = " [mode mismatch]" if group.get("invocation_mode_mismatch") else ""
+        lines.append(f"{group['name']}: {group['status']}{mismatch}")
         for record in group["records"]:
             link = f" -> {record['real_path']}" if record["is_symlink"] else ""
-            lines.append(f"  - {record['path']} [{record['root_kind']}]{link}")
+            rec_mode = (
+                f" [{record['invocation_mode']}]"
+                if record.get("invocation_mode", "auto") != "auto"
+                else ""
+            )
+            lines.append(f"  - {record['path']} [{record['root_kind']}]{rec_mode}{link}")
     return "\n".join(lines)
 
 

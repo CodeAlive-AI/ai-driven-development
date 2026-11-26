@@ -40,6 +40,7 @@ from skill_topology import (
     cell_status_for_pool,
     classify_groups,
     compute_agent_context_budgets,
+    compute_skill_invocation_matrix,
     compute_stale_agent_diagnostics,
     discover_roots,
     find_repo_root,
@@ -143,6 +144,7 @@ def run_revision(
 
     logical_names = sorted({e.name for e in active_entries if not e.is_builtin})
     budgets = compute_agent_context_budgets(active_entries, eval_agents, home=home)
+    invocation_matrix = compute_skill_invocation_matrix(active_entries, eval_agents, home=home)
 
     if effective_scope in ("global", "all"):
         agent_health = inspect_agent_installations(
@@ -240,24 +242,76 @@ def run_revision(
                     shared_dir_entries=shared_entries,
                 )
 
+        u_stat = usage_skills.get(sname)
+        live_modes = sorted({
+            e.invocation_mode for e in elist if not e.is_broken and not e.is_ghost
+        })
+        inv_mode = (
+            "mixed"
+            if len(live_modes) > 1
+            else (live_modes[0] if live_modes else "auto")
+        )
+        inv_info = invocation_matrix.get(sname, {})
+        is_partial_mode = (
+            inv_mode in ("manual-frontmatter-only", "manual-codex-only", "mixed")
+            or bool(inv_info.get("is_partial"))
+        )
         has_anomaly = (
             any(e.is_broken or e.is_ghost for e in elist)
             or any(i["severity"] in ("error", "warning") for e in elist for i in e.issues)
+            or is_partial_mode
             or (g_status in {
                 "divergent", "namespaced-divergent", "stale-backup",
                 "local-shadows-global-divergent", "local-shadows-global-identical",
                 "replica", "chained-hop",
             })
         )
-        u_stat = usage_skills.get(sname)
         matrix_rows.append({
             "name": sname,
             "group_status": g_status or "unique",
+            "invocation_mode": inv_mode,
+            "manual_in": inv_info.get("manual_in", []),
+            "auto_in": inv_info.get("auto_in", []),
+            "fixable_auto_in": inv_info.get("fixable_auto_in", []),
+            "disabled_in": inv_info.get("disabled_in", []),
+            "is_partial_mode": is_partial_mode,
             "has_anomaly": has_anomaly,
             "has_local": any(e.scope == "local" for e in elist),
             "cells": cells,
             "usage": u_stat,
         })
+
+    row_by_name = {r["name"]: r for r in matrix_rows}
+    manual_skills: list[dict] = []
+    seen_manual_names: set[str] = set()
+    for e in sorted(active_entries, key=lambda item: (item.name, item.path)):
+        if e.is_broken or e.is_ghost or e.is_builtin or e.is_bundled or e.is_plugin:
+            continue
+        if e.name in seen_manual_names:
+            continue
+        row_info = row_by_name.get(e.name, {})
+        inv_info = invocation_matrix.get(e.name, {})
+        inv_mode = row_info.get("invocation_mode", e.invocation_mode)
+        disabled_in = inv_info.get("disabled_in", [])
+        if inv_mode == "auto" and not disabled_in:
+            continue
+        seen_manual_names.add(e.name)
+        is_partial = bool(row_info.get("is_partial_mode") or inv_info.get("is_partial"))
+        manual_skills.append({
+            "name": e.name,
+            "invocation_mode": inv_mode,
+            "is_partial": is_partial,
+            "manual_in": inv_info.get("manual_in", []),
+            "auto_in": inv_info.get("auto_in", []),
+            "fixable_auto_in": inv_info.get("fixable_auto_in", []),
+            "unsupported_auto_in": inv_info.get("unsupported_auto_in", []),
+            "disabled_in": disabled_in,
+            "per_agent": inv_info.get("per_agent", {}),
+            "real_path": e.real_path,
+            "provenance": e.provenance,
+        })
+    manual_skills.sort(key=lambda item: (not item["is_partial"], item["name"]))
+    partial_manual_count = sum(1 for m in manual_skills if m["is_partial"])
 
     cold_skills = []
     if usage_data is not None:
@@ -278,6 +332,7 @@ def run_revision(
         len(lock_issues)
         + len(stale_agents)
         + len(integrity_warnings)
+        + partial_manual_count
         + len([g for g in analysis["by_name"] if g["status"] in ("chained-hop", "replica", "local-shadows-global-identical")])
         + len(analysis["by_dir_mismatch"])
         + len(analysis["by_hash_renamed_clone"])
@@ -298,6 +353,8 @@ def run_revision(
             "orphaned_lock_entries": len([l for l in lock_issues if l.kind == "orphaned-lock-entry"]),
             "manifest_issues": len(manifest_issues),
             "stale_agents": len(stale_agents),
+            "manual_skills": len(manual_skills),
+            "partial_manual_skills": partial_manual_count,
             "divergent_or_shadowed": len(actionable_groups),
             "errors": error_count,
             "warnings": warning_count,
@@ -309,6 +366,7 @@ def run_revision(
             "lockfile_issues": [asdict(l) for l in lock_issues],
             "manifest_issues": [asdict(m) for m in manifest_issues],
             "stale_agents": stale_agents,
+            "manual_skills": manual_skills,
             "integrity_errors": [asdict(e) for e in integrity_errors],
             "integrity_warnings": [asdict(e) for e in integrity_warnings],
             "duplicates": analysis,
@@ -344,10 +402,20 @@ def format_report(report: dict, *, output_format: str = "text", show_all: bool =
         lines.append(f"Repo:  {report['repo_root']}")
     stale_count = s.get("stale_agents", 0)
     stale_part = f" | {stale_count} stale agent dirs" if stale_count else ""
+    manual_count = s.get("manual_skills", 0)
+    partial_manual_count = s.get("partial_manual_skills", 0)
+    manual_part = ""
+    if manual_count:
+        manual_part = (
+            f" | {manual_count} manual ({partial_manual_count} partial)"
+            if partial_manual_count
+            else f" | {manual_count} manual"
+        )
     lines.append(
         f"Summary: {s['logical_skills']} logical skills across {s['discovered_entries']} entries | "
         f"{s['broken_symlinks']} broken links | {s['ghost_dirs']} ghost dirs | "
-        f"{s['orphaned_lock_entries']} orphaned lock entries | {s['divergent_or_shadowed']} divergent/shadowed{stale_part}"
+        f"{s['orphaned_lock_entries']} orphaned lock entries | {s['divergent_or_shadowed']} divergent/shadowed"
+        f"{stale_part}{manual_part}"
     )
     if report.get("usage"):
         cov = report["usage"].get("coverage", {})
@@ -487,7 +555,46 @@ def format_report(report: dict, *, output_format: str = "text", show_all: bool =
             stale_tag = " [stale: stub]"
         elif astatus == "orphaned-agent":
             stale_tag = " [stale: no binary/app]"
-        lines.append(f"    - {aid:16s}: {b['skill_count']:3d} skills | {b['total_chars']:6d} chars (~{b['est_tokens']:5d} tok){stale_tag}{warn}")
+        manual_n = b.get("explicit_only_count", 0)
+        manual_note = f" (+{manual_n:2d} manual)" if manual_n else ""
+        lines.append(f"    - {aid:16s}: {b['skill_count']:3d} skills{manual_note} | {b['total_chars']:6d} chars (~{b['est_tokens']:5d} tok){stale_tag}{warn}")
+
+    if manual_list := t.get("manual_skills"):
+        partial_list = [m for m in manual_list if m.get("is_partial")]
+        partial_hdr = f"; {len(partial_list)} partial/asymmetric" if partial_list else ""
+        lines.append(
+            f"  By-demand / manual-only skills ({len(manual_list)}, 0 startup tokens where supported{partial_hdr}):"
+        )
+        for m in manual_list:
+            mode_val = m["invocation_mode"]
+            if mode_val == "auto" and m.get("disabled_in"):
+                tag = "[codex-disabled]"
+            elif m.get("is_partial"):
+                tag = f"[{mode_val}] [!]"
+            else:
+                tag = f"[{mode_val}]"
+            parts: list[str] = []
+            if m.get("manual_in"):
+                parts.append(f"manual in {', '.join(m['manual_in'])}")
+            if m.get("disabled_in"):
+                parts.append(f"disabled in {', '.join(m['disabled_in'])}")
+            if m.get("fixable_auto_in"):
+                parts.append(f"auto (supports manual!) in {', '.join(m['fixable_auto_in'])}")
+            if mode_val == "auto" and not m.get("manual_in"):
+                if plain_auto := m.get("auto_in"):
+                    parts.append(f"auto in {', '.join(plain_auto)}")
+            elif m.get("unsupported_auto_in"):
+                parts.append(f"auto (no native flag) in {', '.join(m['unsupported_auto_in'])}")
+            detail = " | ".join(parts) if parts else "no active agent readers"
+            lines.append(f"    - {m['name']} {tag}: {detail}")
+        fixable_partial = [
+            m["name"] for m in partial_list if m["invocation_mode"] != "mixed"
+        ]
+        if fixable_partial:
+            lines.append(
+                "    Next (align cross-agent manual flags, dry-run): "
+                f"uv run scripts/sync_skills.py --set-mode manual --skills {','.join(fixable_partial)}"
+            )
 
     if report.get("usage") is not None:
         cold = report["cold_skills"]
@@ -497,6 +604,13 @@ def format_report(report: dict, *, output_format: str = "text", show_all: bool =
         )
 
     # Discovery-Pool Matrix
+    MODE_CELL_MAP = {
+        "auto": "auto",
+        "manual": "manl",
+        "manual-frontmatter-only": "M:fm",
+        "manual-codex-only": "M:cx",
+        "mixed": "M:mx",
+    }
     cols = report["matrix"]["columns"]
     rows = report["matrix"]["rows"] if show_all else [r for r in report["matrix"]["rows"] if r["has_anomaly"] or r["has_local"]]
     lines.append("")
@@ -505,19 +619,24 @@ def format_report(report: dict, *, output_format: str = "text", show_all: bool =
         + ("" if show_all else "; anomalies/local only — pass --all for full table")
         + ")"
     )
-    lines.append("  Legend: link=1-hop | hop2=chained/rel | copy=dir | shrd=via ~/.agents | plug=plugin | bndl=Hermes | locl=project | BRKN/GHST/DRFT/SHDW=issue | —=absent")
+    lines.append(
+        "  Legend: Mode: auto|manl|M:fm(no Codex)|M:cx(Codex only)|M:mx(mixed)|disb(Codex off) | "
+        "link=1-hop | hop2=chained/rel | copy=dir | shrd=via ~/.agents | plug=plugin | bndl=Hermes | locl=project | BRKN/GHST/DRFT/SHDW=issue | —=absent"
+    )
     if rows:
         has_usage = report.get("usage") is not None
         header_cols = [c["label"] for c in cols]
         name_w = max(24, min(36, max(len(r["name"]) for r in rows) + 2))
         col_widths = [max(4, min(14, len(lbl))) for lbl in header_cols]
-        hdr = f"  {'Skill':<{name_w}} " + " ".join(f"{lbl:<{w}}" for lbl, w in zip(header_cols, col_widths))
+        hdr = f"  {'Skill':<{name_w}} {'Mode':<4} " + " ".join(f"{lbl:<{w}}" for lbl, w in zip(header_cols, col_widths))
         if has_usage:
             hdr += "  Used"
         lines.append(hdr)
         lines.append("  " + "-" * (len(hdr) - 2))
         for r in rows:
             nm = r["name"][:name_w]
+            raw_mode = r.get("invocation_mode", "auto")
+            mode_tok = "disb" if (raw_mode == "auto" and r.get("disabled_in")) else MODE_CELL_MAP.get(raw_mode, raw_mode[:4])
             vals = " ".join(f"{r['cells'].get(c['id'], '—'):<{w}}" for c, w in zip(cols, col_widths))
             u_txt = ""
             if has_usage:
@@ -526,7 +645,7 @@ def format_report(report: dict, *, output_format: str = "text", show_all: bool =
                 exp = u.get("explicit_sessions", 0)
                 agt = u.get("agent_sessions", 0)
                 u_txt = f"  {tot} ({exp}e/{agt}a)" if tot else "  0"
-            lines.append(f"  {nm:<{name_w}} {vals}{u_txt}")
+            lines.append(f"  {nm:<{name_w}} {mode_tok:<4} {vals}{u_txt}")
     else:
         lines.append("  No anomalies found in evaluated scope. Pass --all to view every skill.")
 

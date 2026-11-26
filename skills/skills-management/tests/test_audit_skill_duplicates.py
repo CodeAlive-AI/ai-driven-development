@@ -15,6 +15,7 @@ from audit_skill_duplicates import (  # noqa: E402
     audit_candidate,
     default_roots,
     duplicate_groups,
+    format_text,
     scan_roots,
 )
 
@@ -227,6 +228,39 @@ class DuplicateAuditTests(unittest.TestCase):
         self.assertIn(((repo / "skills").resolve(), "plugin-source"), kinds)
         self.assertIn(((repo / ".agent" / "skills").resolve(), "repo"), kinds)
         self.assertIn(((repo / ".agents" / "plugins" / "local-p" / "skills").resolve(), "plugin-workspace"), kinds)
+
+    def test_duplicate_audit_tracks_invocation_mode_and_mode_mismatch(self):
+        first = self.base / "first"
+        second = self.base / "second"
+        s1 = self.make_skill(first, "demo", "demo")
+        (s1 / "SKILL.md").write_text(
+            "---\nname: demo\ndescription: test\ndisable-model-invocation: true\n---\n\nbody\n",
+            encoding="utf-8",
+        )
+        (s1 / "agents").mkdir()
+        (s1 / "agents" / "openai.yaml").write_text(
+            "policy:\n  allow_implicit_invocation: false\n",
+            encoding="utf-8",
+        )
+
+        s2 = self.make_skill(second, "demo", "demo")
+        (s2 / "SKILL.md").write_text(
+            "---\nname: demo\ndescription: test\ndisable-model-invocation: true\n---\n\nbody\n",
+            encoding="utf-8",
+        )
+
+        groups = duplicate_groups(scan_roots([(first, "canonical-user"), (second, "agent-user")]))
+        self.assertEqual(len(groups), 1)
+        grp = groups[0]
+        self.assertEqual(grp["status"], "divergent")
+        self.assertTrue(grp["invocation_mode_mismatch"])
+        modes = {r["invocation_mode"] for r in grp["records"]}
+        self.assertEqual(modes, {"manual", "manual-frontmatter-only"})
+
+        rendered = format_text(groups)
+        self.assertIn("[mode mismatch]", rendered)
+        self.assertIn("[manual]", rendered)
+        self.assertIn("[manual-frontmatter-only]", rendered)
 
 
 if __name__ == "__main__":

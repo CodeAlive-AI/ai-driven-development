@@ -690,5 +690,246 @@ enabled = false
         self.assertEqual(cb["warnings"], [])
 
 
+class ManualInvocationModeTests(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.base = Path(self._tmp.name)
+        self.home = self.base / "home"
+        self.home.mkdir()
+
+    def test_manual_mode_detection_per_agent_matrix_and_budget_exclusion(self):
+        shared = self.home / ".agents" / "skills"
+        agy = self.home / ".gemini" / "config" / "skills"
+        claude = self.home / ".claude" / "skills"
+        codex_dir = self.home / ".codex"
+        shared.mkdir(parents=True)
+        agy.mkdir(parents=True)
+        claude.mkdir(parents=True)
+        codex_dir.mkdir(parents=True)
+
+        # 1. Full manual (disable-model-invocation: true + agents/openai.yaml false)
+        full_man = _make_skill(shared, "full-manual", "full-manual", desc="Full manual " + ("a" * 80))
+        (full_man / "SKILL.md").write_text(
+            "---\nname: full-manual\ndescription: Full manual " + ("a" * 80) + "\ndisable-model-invocation: true\n---\n\nBody\n",
+            encoding="utf-8",
+        )
+        (full_man / "agents").mkdir()
+        (full_man / "agents" / "openai.yaml").write_text(
+            "policy:\n  allow_implicit_invocation: false\n", encoding="utf-8"
+        )
+        (agy / "full-manual").symlink_to(full_man, target_is_directory=True)
+        (claude / "full-manual").symlink_to(full_man, target_is_directory=True)
+
+        # 2. Frontmatter-only manual (manual in AGY/Claude/Cursor, still auto in Codex!)
+        fm_only = _make_skill(shared, "fm-only", "fm-only", desc="FM only")
+        (fm_only / "SKILL.md").write_text(
+            "---\nname: fm-only\ndescription: FM only\ndisable-model-invocation: true\n---\n\nBody\n",
+            encoding="utf-8",
+        )
+        (agy / "fm-only").symlink_to(fm_only, target_is_directory=True)
+        (claude / "fm-only").symlink_to(fm_only, target_is_directory=True)
+
+        # 3. Codex-only manual (manual in Codex, still auto in AGY/Claude/Cursor!)
+        cx_only = _make_skill(shared, "codex-only", "codex-only", desc="Codex only")
+        (cx_only / "agents").mkdir()
+        (cx_only / "agents" / "openai.yaml").write_text(
+            "policy:\n  allow_implicit_invocation: false\n", encoding="utf-8"
+        )
+        (agy / "codex-only").symlink_to(cx_only, target_is_directory=True)
+        (claude / "codex-only").symlink_to(cx_only, target_is_directory=True)
+
+        # 4. Codex config.toml disabled skill
+        _make_skill(shared, "cfg-off", "cfg-off", desc="Disabled in codex")
+        (agy / "cfg-off").symlink_to(shared / "cfg-off", target_is_directory=True)
+        (claude / "cfg-off").symlink_to(shared / "cfg-off", target_is_directory=True)
+        (codex_dir / "config.toml").write_text(
+            '[[skills.config]]\nname = "cfg-off"\nenabled = false\n', encoding="utf-8"
+        )
+
+        # 5. Normal auto skill
+        _make_skill(shared, "normal-skill", "normal-skill", desc="Normal skill")
+        (agy / "normal-skill").symlink_to(shared / "normal-skill", target_is_directory=True)
+        (claude / "normal-skill").symlink_to(shared / "normal-skill", target_is_directory=True)
+
+        eval_agents = ["antigravity", "claude-code", "codex", "cursor", "opencode", "grok", "devin"]
+        report = revise_skills.run_revision(
+            scope="global",
+            cwd=self.base,
+            home=self.home,
+            agents_filter=eval_agents,
+            usage_mode="off",
+        )
+
+        budgets = report["context_budgets"]
+        self.assertEqual(budgets["codex"]["skill_count"], 2)  # fm-only, normal-skill
+        self.assertEqual(budgets["codex"]["disabled_count"], 1)  # cfg-off
+        self.assertEqual(budgets["codex"]["explicit_only_count"], 2)  # full-manual, codex-only
+        for aid in ("antigravity", "claude-code", "cursor"):
+            self.assertEqual(budgets[aid]["skill_count"], 3, aid)  # codex-only, cfg-off, normal-skill
+            self.assertEqual(budgets[aid]["explicit_only_count"], 2, aid)  # full-manual, fm-only
+        self.assertEqual(budgets["opencode"]["skill_count"], 5)
+        self.assertEqual(budgets["grok"]["skill_count"], 5)
+
+        by_manual = {m["name"]: m for m in report["triage"]["manual_skills"]}
+        self.assertEqual(set(by_manual), {"full-manual", "fm-only", "codex-only", "cfg-off"})
+        self.assertFalse(by_manual["full-manual"]["is_partial"])
+        self.assertEqual(by_manual["full-manual"]["manual_in"], ["antigravity", "claude-code", "codex", "cursor"])
+        self.assertEqual(by_manual["full-manual"]["fixable_auto_in"], [])
+        self.assertEqual(by_manual["full-manual"]["unsupported_auto_in"], ["devin", "grok", "opencode"])
+
+        self.assertTrue(by_manual["fm-only"]["is_partial"])
+        self.assertEqual(by_manual["fm-only"]["manual_in"], ["antigravity", "claude-code", "cursor"])
+        self.assertEqual(by_manual["fm-only"]["fixable_auto_in"], ["codex"])
+
+        self.assertTrue(by_manual["codex-only"]["is_partial"])
+        self.assertEqual(by_manual["codex-only"]["manual_in"], ["codex"])
+        self.assertEqual(by_manual["codex-only"]["fixable_auto_in"], ["antigravity", "claude-code", "cursor"])
+
+        self.assertFalse(by_manual["cfg-off"]["is_partial"])
+        self.assertEqual(by_manual["cfg-off"]["disabled_in"], ["codex"])
+        self.assertEqual(by_manual["cfg-off"]["fixable_auto_in"], [])
+
+        self.assertEqual(report["summary"]["manual_skills"], 4)
+        self.assertEqual(report["summary"]["partial_manual_skills"], 2)
+        self.assertGreaterEqual(report["summary"]["warnings"], 2)
+
+        rows = {r["name"]: r for r in report["matrix"]["rows"]}
+        self.assertFalse(rows["full-manual"]["has_anomaly"])
+        self.assertTrue(rows["fm-only"]["has_anomaly"])
+        self.assertTrue(rows["codex-only"]["has_anomaly"])
+        self.assertFalse(rows["normal-skill"]["has_anomaly"])
+
+        triage_txt = revise_skills.format_report(report, show_all=False)
+        self.assertIn("(+ 2 manual)", triage_txt)
+        self.assertIn("By-demand / manual-only skills (4, 0 startup tokens where supported; 2 partial/asymmetric):", triage_txt)
+        self.assertIn("auto (supports manual!) in antigravity, claude-code, cursor", triage_txt)
+        self.assertIn("disabled in codex", triage_txt)
+        self.assertIn("--set-mode manual --skills codex-only,fm-only", triage_txt)
+        self.assertIn("M:fm", triage_txt)
+        self.assertIn("M:cx", triage_txt)
+        self.assertNotIn("full-manual                  manl", triage_txt)
+
+        all_txt = revise_skills.format_report(report, show_all=True)
+        self.assertIn("manl", all_txt)
+        self.assertIn("disb", all_txt)
+
+    def test_sync_set_mode_manual_auto_guards_and_undo_roundtrip(self):
+        with self.assertRaises(ValueError):
+            sync_skills.build_plan(home=self.home, cwd=self.base, set_mode="manual")
+
+        shared = self.home / ".agents" / "skills"
+        agy = self.home / ".gemini" / "config" / "skills"
+        claude = self.home / ".claude" / "skills"
+        codex_dir = self.home / ".codex"
+        shared.mkdir(parents=True)
+        agy.mkdir(parents=True)
+        claude.mkdir(parents=True)
+        codex_dir.mkdir(parents=True)
+
+        # 1. Multiline YAML frontmatter + comment + alias symlink in agy (must dedup real_path!)
+        orig_multiline_md = (
+            "---\n"
+            "# keep this comment\n"
+            "name: multiline-skill\n"
+            "description: >-\n"
+            "  Run a heavy deployment workflow.\n"
+            "  Never auto-load needlessly.\n"
+            "---\n\n"
+            "# Multiline\n\nBody text.\n"
+        )
+        multi_dir = shared / "multiline-skill"
+        multi_dir.mkdir()
+        (multi_dir / "SKILL.md").write_text(orig_multiline_md, encoding="utf-8")
+        (agy / "multiline-skill").symlink_to(multi_dir, target_is_directory=True)
+
+        # 2. Existing agents/openai.yaml with interface.short_description + comment
+        yaml_rich = _make_skill(shared, "yaml-rich-skill", "yaml-rich-skill", desc="Has rich yaml")
+        orig_yaml_rich = (
+            "# Preserve comment\n"
+            "interface:\n"
+            "  display_name: \"YAML Rich\"\n"
+            "  short_description: \"Concise blurb\"\n"
+        )
+        (yaml_rich / "agents").mkdir()
+        (yaml_rich / "agents" / "openai.yaml").write_text(orig_yaml_rich, encoding="utf-8")
+
+        # 3. Divergent skill (must be skipped safely)
+        _make_skill(shared, "divergent-skill", "divergent-skill", extra_body="copy A\n")
+        _make_skill(claude, "divergent-skill", "divergent-skill", extra_body="copy B\n")
+
+        # 4. Codex plugin skill (must be skipped safely as read-only)
+        plug_skill = codex_dir / "plugins" / "cache" / "openai-curated" / "demo" / "1.0.0" / "skills" / "plug-skill"
+        plug_skill.parent.mkdir(parents=True, exist_ok=True)
+        _make_skill(plug_skill.parent, "plug-skill", "plug-skill")
+        (codex_dir / "config.toml").write_text('[plugins."demo@openai-curated"]\nenabled = true\n', encoding="utf-8")
+
+        plan_man = sync_skills.build_plan(
+            home=self.home,
+            cwd=self.base,
+            set_mode="manual",
+            skills_filter={"multiline-skill", "yaml-rich-skill", "divergent-skill", "plug-skill", "missing-skill"},
+        )
+        self.assertEqual(plan_man["op_count"], 4)  # 2x SKILL.md + 2x agents/openai.yaml (no duplicate from agy link!)
+        self.assertEqual(len(plan_man["skipped"]), 3)
+
+        trash = self.base / "trash"
+        res_man = sync_skills.apply_plan(plan_man, home=self.home, trash_root=trash)
+        self.assertEqual(res_man["state"], "done")
+        self.assertTrue(any("Antigravity" in n for n in res_man["reload_notices"]))
+
+        new_multi_md = (multi_dir / "SKILL.md").read_text(encoding="utf-8")
+        self.assertIn("# keep this comment", new_multi_md)
+        self.assertIn("description: >-\n  Run a heavy deployment workflow.\n  Never auto-load needlessly.\n", new_multi_md)
+        self.assertIn("disable-model-invocation: true\n", new_multi_md)
+        self.assertEqual(
+            (multi_dir / "agents" / "openai.yaml").read_text(encoding="utf-8"),
+            "policy:\n  allow_implicit_invocation: false\n",
+        )
+
+        new_yaml_rich = (yaml_rich / "agents" / "openai.yaml").read_text(encoding="utf-8")
+        self.assertIn("# Preserve comment", new_yaml_rich)
+        self.assertIn('short_description: "Concise blurb"', new_yaml_rich)
+        self.assertIn("allow_implicit_invocation: false", new_yaml_rich)
+
+        # Idempotent second run produces zero ops
+        idem = sync_skills.build_plan(
+            home=self.home,
+            cwd=self.base,
+            set_mode="manual",
+            skills_filter={"multiline-skill", "yaml-rich-skill"},
+        )
+        self.assertEqual(idem["op_count"], 0)
+
+        # Switch back to auto
+        plan_auto = sync_skills.build_plan(
+            home=self.home,
+            cwd=self.base,
+            set_mode="auto",
+            skills_filter={"multiline-skill", "yaml-rich-skill"},
+        )
+        self.assertEqual(plan_auto["op_count"], 4)
+        res_auto = sync_skills.apply_plan(plan_auto, home=self.home, trash_root=trash)
+        self.assertEqual(res_auto["state"], "done")
+        self.assertEqual((multi_dir / "SKILL.md").read_text(encoding="utf-8"), orig_multiline_md)
+        # Pure-policy agents/openai.yaml AND empty agents/ dir deleted
+        self.assertFalse((multi_dir / "agents").exists())
+        # Non-policy yaml-rich-skill preserves interface.short_description while removing policy!
+        self.assertEqual((yaml_rich / "agents" / "openai.yaml").read_text(encoding="utf-8"), orig_yaml_rich)
+
+        # Undo auto -> restores manual mode including pure-policy agents/openai.yaml
+        undo_auto = sync_skills.undo_transaction(res_auto["tx_id"], home=self.home, trash_root=trash)
+        self.assertEqual(undo_auto["state"], "done")
+        self.assertTrue((multi_dir / "agents" / "openai.yaml").is_file())
+        self.assertIn("disable-model-invocation: true", (multi_dir / "SKILL.md").read_text(encoding="utf-8"))
+
+        # Undo manual -> restores byte-for-byte originals and removes newly created agents/ dir
+        undo_man = sync_skills.undo_transaction(res_man["tx_id"], home=self.home, trash_root=trash)
+        self.assertEqual(undo_man["state"], "done")
+        self.assertEqual((multi_dir / "SKILL.md").read_text(encoding="utf-8"), orig_multiline_md)
+        self.assertEqual((yaml_rich / "agents" / "openai.yaml").read_text(encoding="utf-8"), orig_yaml_rich)
+        self.assertFalse((multi_dir / "agents").exists())
+
+
 if __name__ == "__main__":
     unittest.main()
