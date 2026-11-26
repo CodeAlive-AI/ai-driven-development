@@ -13,6 +13,6 @@ A boundary statement can be used to:
 - publish a view or decision;
 - move responsibility across a boundary.
 
-If the participants, conditions or grounds of these claims remain unclear, recover those values before relying on the statement. Apply the governing rules and legitimate decision authority to any remaining dispute.
+If the participants, conditions or grounds of these claims remain unclear, recover those values before relying on the statement. Resolve factual disagreements using evidence about the disputed claim. Where the governing terms entrust a decision to a particular party, use its effective decision or obtain one when the commission calls for it.
 
 Use FPF’s boundary guidance, especially the `A.6` family, to distinguish the claim kinds and their grounds. Unpack a contract line, interface statement, API schema, compliance note or safety-case sentence into definition, admissibility, commitment, evidence, work effect, publication and decision components as needed. A compact statement is sufficient when the intended reader can recover its participants, conditions and practical effects.

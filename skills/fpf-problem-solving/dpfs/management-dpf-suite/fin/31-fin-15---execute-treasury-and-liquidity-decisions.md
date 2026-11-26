@@ -102,7 +102,7 @@ Netting also needs its actual scope. Two trades that offset economically may sti
 
 After submission, observe the stages needed to establish the promised result. Match accepted terms with confirmations, expected cash movements with bank or settlement evidence, and those movements with the affected obligation. Verify amount, currency, party, date and charges at the relevant scope. A payer debit may support “cash left this account”; it supports “the creditor received the required amount” only with sufficient evidence under the applicable payment rule.
 
-Reconcile discrepancies while their consequence can still be limited. A different effective date may explain a timing difference. A fee or partial allocation may explain an amount difference. An unexplained transaction requires investigation even when recorded in a statement. Retain the supported cash movement and the unresolved cause, then correct the responsible account or instruction when the cause is established.
+Reconcile discrepancies while their consequence can still be limited. A different effective date may explain a timing difference. A fee or partial allocation may explain an amount difference. An unexplained transaction requires investigation even when recorded in a statement. Retain the supported cash movement and any unresolved cause. When the discrepancy is established, correct the account or instruction if that is your responsibility. Otherwise give the commissioned recipient the finding and its consequence, and follow any applicable notice or recovery procedure.
 
 
 

@@ -12,7 +12,7 @@
 
 **Intent.** Turn usage in an exact source and edition into a small, auditable set of source-local expressions and meaning claims. Keep the source's idiom and the explanation the intended reader needs, while leaving cross-source conclusions to their own comparison.
 
-**Use this when.** F.1 has selected a source because it can change the receiving answer, and the reader needs the source wording that carries its contribution. Re-enter when the selected edition, passage, language, or interpretation basis changes enough to change meaning.
+**Use this when.** A source is known and the reader needs its own expressions to understand or use its contribution. Use F.1 if choosing which sources to retain is still part of the work. Re-enter when the selected edition, passage, language, or interpretation basis changes enough to change meaning.
 
 **Do not use this when.** The words are already recovered precisely enough for the receiving question, or the current task is to relate two local meanings; use F.9 for that relation. F.2 creates no global term, kind, assignment, behaviour, obligation, or storage scheme.
 
@@ -57,7 +57,7 @@ The ordinary result is a source-local lexical note. When later work needs a dura
 
 #### F.2:6.1 - Move A — Recover the basis
 
-Ask: **“Which exact source use am I reading, and under which interpretation rules?”**
+Ask which expressions in this source could change the answer the reader needs. For a glossary, recover how the source uses the words in its declared scope. For a question about the practice described, look for the wording of the relevant action or relation, including an expression that connects several passages.
 
 Name the source and edition, locate the passages that support the meaning, and recover the effective reference scheme with F.0.1. Quote representative wording when it helps the reader recover that meaning. If the basis cannot be identified, leave the interpretation unresolved.
 
@@ -82,7 +82,7 @@ A local reading establishes what the expression denotes in its source. Take a pr
 5. **Category hygiene.** A lexical note **MUST NOT** stand in for behaviour, obligation, measurement, kind, assignment, Work, or evidence.
 6. **No cross-source claim.** F.2 **MUST NOT** assert equivalence, subsumption, similarity, permission, or transfer between local meanings.
 7. **Edition and language honesty.** When edition or language changes meaning, recover a distinct source-local claim and interpretation basis.
-8. **Parsimony.** Keep the head expressions that affect F.3, F.4, F.8, or a relation to be tested under F.9; omit an unused tail.
+8. **Parsimony.** Keep expressions that the receiving use depends on, including a qualifying phrase that changes the meaning of a familiar head word.
 
 ### F.2:8 - Micro-examples
 
@@ -134,9 +134,9 @@ Use the completed PROV-O note as one source-backed input. The BPMN, SOSA/SSN and
 
 * **State-space control source, cited passage and scheme** — `actuation`; Plain **signal applied to the plant**; claim: “A signal applied to influence plant state or output.”
 * **IEC 61131-3, cited runtime passage and scheme** — `task`; Plain **unit that calls programs on a cycle or in response to an event**; claim as above.
-* **ITIL 4 (2020), incident-management use** — `incident`; Plain **unplanned service interruption or loss of service quality**; claim: “An unplanned interruption or reduction in service quality.” A qualifying interruption may be unreported. If a contract starts its response clock at notification, establish that event separately.
+* **ITIL Foundation: ITIL 4 Edition (AXELOS, 2019), §5.2.5, Incident management** — `incident`. The source defines it as “An unplanned interruption to a service or reduction in the quality of a service.” A qualifying interruption may be unreported. If a contract starts its response clock at notification, establish that event separately.
 
-Use the source's service-disruption criteria to decide whether a reported plant fault also qualifies as an ITIL incident.
+For the reported fault, establish whether the service suffered the interruption or reduction in quality described by the source. A record of an outage alone can fit both a planned stop and an unplanned interruption. If that difference decides the classification, use the schedule or another record that establishes it. For a contractual question about the response clock, apply its agreed start condition.
 
 #### F.2:11.3 - Kind, method, and knowledge sources
 

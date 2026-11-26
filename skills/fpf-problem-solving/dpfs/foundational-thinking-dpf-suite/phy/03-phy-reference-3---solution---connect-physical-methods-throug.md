@@ -22,7 +22,7 @@
 
 [PHY.10](17-phy-10---construct-a-physical-test-that-separates-rival-acco.md) constructs a physical contrast between accounts that agree under earlier conditions. It follows the changed preparation through the response and readout, retaining parameter freedom and alternative apparatus explanations. A failed comparison returns to the particular premise that can change it.
 
-[PHY.3](18-phy-3---derive-a-physical-limit-from-permitted-transformatio.md) derives a bound or impossibility from the complete transformation and an admissible comparison. That result may finish the question or show which physical premise a different construction would have to change.
+[PHY.3](18-phy-3---derive-a-physical-limit-from-permitted-transformatio.md) derives a bound or impossibility by applying the physical restrictions to the complete transformation. Some restrictions give a bound directly; others become consequential in an admissible comparison. That result may finish the question or show which physical premise a different construction would have to change.
 
 The starting point and stopping point depend on the question. A known response can enter at measurement; an unknown interaction can enter at law construction; a useful impossibility can end work before a device or computation is built.
 

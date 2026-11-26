@@ -55,7 +55,7 @@ For example:
 
 - **Problem:** an acceptance engineer cannot recover which submitted claims lack a sufficient evidence basis before the handoff review.
 - **Proposed contribution:** an inspectable claim-to-evidence account that identifies supported claims, missing premises, and qualification limits in the permitted source set.
-- **Acceptance expectation:** the receiver can trace each entry to its source and identify unresolved claims under the review criteria.
+- **Acceptance expectation:** the reviewer can account for the submitted claims covered by the order, trace support where it exists, and identify missing or inadequate support under the review criteria.
 
 Faster approval is a different benefit claim; automatic approval is a different contribution and authority question. Preserve those differences if they become live rather than silently extending the proposal.
 
@@ -108,7 +108,7 @@ Reopen the affected problem or contribution under `C.40.RQ` when the receiving u
 
 This constructed example stipulates an engineering-services unit's ninety-day inquiry. Its acceptance engineer reports repeated difficulty finding unsupported claims in incoming evidence packages; the example's review records corroborate that bounded concern. Confidentiality, traceability, independent acceptance, and tolerable review burden are protected.
 
-The technology lead was “use a long-record model.” The problem/contribution account instead proposes a claim-to-evidence account for one class of package. The acceptance expectation is that the reviewer can recover each included claim's cited support and identify unresolved premises under the criteria. A manual index and bounded retrieval assistance could both serve that proposal.
+The technology lead was “use a long-record model.” The problem/contribution account instead proposes a claim-to-evidence account for one class of package. The acceptance expectation is that the reviewer can recover the claims the order covers, their available support and any unresolved premises. A limited review can report its findings when it identifies the covered subset. A manual index and bounded retrieval assistance could both serve that proposal.
 
 No result yet establishes faster approval or representative model accuracy. The first useful return preserves the worthwhile qualification problem while marking the processing route as conditional on purpose-specific access and evaluation. If the data owner permits only public, non-representative samples, a narrow demonstration remains possible; the original representative-use claim remains unsupported.
 

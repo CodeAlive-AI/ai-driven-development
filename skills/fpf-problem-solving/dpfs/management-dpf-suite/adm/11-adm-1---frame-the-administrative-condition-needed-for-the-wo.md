@@ -61,7 +61,7 @@ That statement is sufficient to locate the next service or eligibility question.
 
 When the requested condition, recipient, provider and needed time are identified, and the applicable service instruction's prerequisites for the next handling action are established, the handler uses that instruction to obtain or verify provision. Reuse adequate supplied facts and decisions. If a required fact or decision is unresolved, identify the missing contribution. Use available evidence to settle a factual question or direct it to the appropriate source. Obtain decisions from the holder of the relevant authority.
 
-For a missing administrative condition, state what the participant still cannot use and why the local “done” evidence is insufficient. For a failed business result after the administrative condition was supplied, return the next business decision to whoever has responsibility for the business work. An administrative provider can still examine its own contribution if new evidence connects it to that failure.
+For a missing administrative condition, state what the participant still cannot use and why the local “done” evidence is insufficient. For a failed business result after the administrative condition was supplied, identify which decision about that work, if any, is now needed and who has authority to make it. An administrative provider can still examine its own contribution if new evidence connects it to that failure.
 
 Framing finishes when its recipient can use the statement of the needed condition or the identified gap. Completion of the enabled work is a separate question.
 
@@ -78,10 +78,10 @@ In this constructed case, an employee travels to negotiate a supply agreement. T
 | Subject | Stipulated result | Next action |
 | --- | --- | --- |
 | Journey and stay | The employee travelled and used the accommodation. | Retain the relevant provision evidence for its intended administrative use. |
-| Negotiating work | The parties reached no agreement. | The person responsible for the negotiating work decides whether to revise the offer, continue negotiations or stop. |
+| Negotiating work | The parties reached no agreement. | Use the negotiating mandate to determine who may revise the offer, continue talks or end them. The traveller may be authorized to pursue only some of those choices. |
 | Administrative handling | The stated travel conditions and required expense settlement were satisfied. | The handler may report that administrative result complete under the supplied rule. |
 
-Report the completed travel service and the failed negotiation separately. The negotiating decision returns to the party responsible for the agreement. If the accommodation had been unusable and the employee had arranged a replacement personally, the administrative account would instead retain that failure and the displaced effort even if the negotiations later succeeded.
+Report the completed travel service and the failed negotiation separately. The service can close even while the parties entitled to revise the offer or continue talks have yet to decide. If the accommodation had been unusable and the employee had arranged a replacement personally, the administrative account would instead retain that failure and the displaced effort even if the negotiations later succeeded.
 
 #### ADM.1:5.2 - An ordinary request that needs no reframing
 

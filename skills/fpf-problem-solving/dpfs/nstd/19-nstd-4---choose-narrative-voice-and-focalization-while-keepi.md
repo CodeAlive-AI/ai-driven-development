@@ -61,7 +61,7 @@ Choose properties that can guide the passage, such as address, rhythm, imagery, 
 
 Distinguish what appears in this passage, what recurs across relevant examples and what the editor is choosing now. A single accepted passage can be sufficient as the model for this use. A claim about a broader tendency needs evidence across the occasions it claims to cover. Keep working notes when someone will use them again.
 
-A writer might use the direction “Begin with a concrete discrepancy, let the reader inspect it, then state the limited conclusion.” It specifies how to develop the next thought.
+To see how a voice can carry across subjects, consider an author who invites the reader to inspect a discrepancy before drawing a conclusion. In an account of one incident the author can start with what happened and trace its cause. In a chapter about a recurring practice, the same voice can invite the reader to examine which feature of the practice would produce that difficulty again. An incident can introduce that inquiry. Carry the reader back to the relation in the practice and the grounds for expecting the problem to recur. That return preserves what the chapter undertook to explain.
 
 #### NSTD.4:4.3 - Compose a natural fragment without losing its thought
 

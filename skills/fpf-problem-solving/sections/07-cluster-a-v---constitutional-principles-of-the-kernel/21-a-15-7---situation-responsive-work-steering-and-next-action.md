@@ -15,7 +15,7 @@
 **First useful result.** Give a supported next-action answer in ordinary language, with the content needed for its use:
 
 1. **Decision now:** state the selected continuation and its grounds, or the limitation that requires a stop or return to another question.
-2. **Performer:** identify the intended System performer when an action is selected. Name the chooser separately when it differs.
+2. **Performer.** Identify any performer conditions on the selected action. Name a particular intended performer when the decision appoints or requires one. A later choice between eligible performers can be part of the arrangement. Name the chooser separately when it matters.
 3. **Stop and feedback:** retain the stop, fallback, reconsideration or observation condition that the selected continuation or receiving use needs.
 
 For a reversible local choice, ordinary project language is enough. When a use needs to cite, compare, audit, or rely on an identified claim, use an existing sufficient episteme or identify one under C.2.1. Preserve access when later reliance requires it. The answer states the supported result and its grounds.
@@ -105,12 +105,12 @@ Reading this pattern, consulting a MethodDescription, following a plan, or recei
    An unfamiliar or consequential case may require diagnosis, adaptation, or a quick mental or physical forecast.
 
    When several live alternatives require comparison, pass the chooser, current `OptionSet` and comparison basis to `C.11`. Include an inquiry question only when it is live under C.11's conditions; an already supported choice needs no invented probe or omission account.
-6. **Keep choosing, authority, and acting separate.** Identify the deciding System and, for a selected action, the intended performer. If the choice depends on permission, responsibility, commitment, capability, or authority, establish that relation instead of inferring it from a system-role label or recommendation score.
+6. **Keep choosing, authority, and acting separate.** Identify who makes the decision. For the selected action, establish any constraints on who may or can perform it. A decision can appoint a performer, authorize joint performance or leave allocation to a later choice. If timely availability is part of the promise, give grounds that such an allocation can work in time. If the choice depends on permission, responsibility, commitment, capability, or authority, establish that relation instead of inferring it from a system-role label or recommendation score.
 
    If its factual basis is unknown, seek the needed information from an appropriate source, use a supported alternative, or stop.
 
    If the required relation is known not to obtain, choose an admissible alternative, repair the relevant conditions under their governing rule, or stop. An obligation for another System to supply information or make the repair needs its own ground.
-7. **Return the supported answer and its continuation conditions.** When an action is selected, state it and its grounds, the intended performer, and any stop, fallback, observation or return condition needed for that use. If no action can yet be supported, state the blocker and the supported return or stop.
+7. **Return the supported answer and its continuation conditions.** When an action is selected, state the action, its grounds, any performer already chosen and any allocation still to be made under the decision. Include the stop, fallback, observation or return conditions the receiving use needs. If no action can yet be supported, state the blocker and the supported return or stop.
 
    If the choice revises a `U.WorkPlan`'s intended-work content, update that plan separately under `A.15.2`.
 
@@ -123,7 +123,7 @@ Reading this pattern, consulting a MethodDescription, following a plan, or recei
 | Situation | What to use now | Result and stop |
 | --- | --- | --- |
 | The domain Method already requires one action | Follow the Method or its selected description. | The required action and its existing stop; no steering or decision wrapper. |
-| One familiar live cue points to one response and a quick consequence check passes | Use the recognition branch in this pattern. | One decision, intended performer, live cue, and any stop or feedback condition needed for the continuation. |
+| One familiar live cue points to one response and a quick consequence check passes | Use the recognition branch in this pattern. | The decision, its live cue, any performer condition and any stop or feedback condition needed for the continuation. |
 | Several admissible actions remain and comparison can change the choice | Use `C.11`; add `A.19` kernels only when their comparison or selection result matters. | A `ChoiceResult` under the applicable constraints. Return a fixed action here for performer and feedback; keep any retained tie-set explicit, and follow a `reject current set`, `probe again`, or `reroute` result to its stated next question. |
 | Adequate action candidates need to be developed | Use a subject-specific generation Method; use `C.18` only for an open-ended archive/front question. | New candidates or a failure to generate; no premature choice. |
 | The action is fixed but calls to tools or services must be planned | Use `C.24`. | A call plan and checkpoint return; the call plan is not the underlying choice. |
@@ -185,7 +185,7 @@ An AI system using a model proposes the next inspection action, but a sensor con
 - **CC-A15.7-3 — Action-guiding information.** Does every stated fact matter to the action, and is the observation, report, recommendation, or other information current enough when that matters?
 - **CC-A15.7-4 — Method relation.** Are domain and steering Methods distinct, with co-enactment or composition asserted only from its own basis?
 - **CC-A15.7-5 — Available actions.** Are mandatory action, recognition, comparison, generation, and tool-planning branches kept separate?
-- **CC-A15.7-6 — Chooser and performer.** Are the deciding System and, when an action is selected, its intended performer clear, with any authority or capability claim grounded separately?
+- **CC-A15.7-6 — Chooser and performer.** Does the account identify the deciding System and distinguish a named performer, a jointly allocated action or an authorized later choice according to what was decided? Do any claimed authority and capability have their own grounds?
 - **CC-A15.7-7 — First result.** Does the answer state the supported continuation or blocker and its grounds, with any stop or feedback condition needed for its use?
 - **CC-A15.7-8 — History and corrected claims.** Are later observations, plan changes, performed actions and Method changes kept at their actual times, with any refuted earlier claim corrected and its dependents rechecked?
 - **CC-A15.7-9 — Plain use.** Can a cold practitioner understand what to do before meeting the formal distinctions?
@@ -214,7 +214,7 @@ An AI system using a model proposes the next inspection action, but a sensor con
 
 ### A.15.7:10 - Rationale
 
-This pattern supplies a reusable Method for a common working question: what should happen next during current Work, which System is to perform it, and which current facts and domain-Method limits support that choice? Name the deciding System separately when it differs from the intended performer. Keeping the steering Method distinct from the domain Method permits separate enactment or composition claims when the use needs them and their grounds hold.
+This pattern supplies a reusable Method for a common working question: which continuation is warranted during current Work, under which conditions can it proceed, and what remains to allocate? Identify the deciding System and any performer it appoints. Keeping the steering Method distinct from the domain Method permits separate enactment or composition claims when the use needs them and their grounds hold.
 
 The pattern begins before late-stage option comparison and ends before tool-call planning or performed-action recording. That placement keeps the first result small and makes explicit comparison, generation, planning, evidence, and assurance conditional rather than universal burdens.
 

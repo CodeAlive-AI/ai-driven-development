@@ -114,16 +114,16 @@ Consider a constructed ten-day service horizon. The current arrangement replaces
 
 The expected cost of the current arrangement is `100p + 20(1-p) = 20 + 80p`; the prepared early response costs 30. A condition estimate `p = 0.20` therefore favours the new arrangement: 36 versus 30. Even a supported range `0.15 <= p <= 0.25` leaves the current arrangement at 32–40. Use MNT.5 to establish the spare’s readiness and MNT.7 to obtain the access window. Together those conditions make the day-1 response available. The selected move is to arrange that support and replace on day 1, without requiring another experiment merely because the benefit is still an estimate. An adequate expert condition estimate can supply this input.
 
-To examine improvement of the estimating rule, take two equally common condition groups with probabilities 0.10 and 0.20 in the comparison model. Both forecasting variants use information available before the choice; their development and use costs are equal here. Each selects the lower expected-cost action using its own probability estimate and the same available responses.
+To examine improvement of the estimating rule, take two equally common condition groups with probabilities 0.10 and 0.20 in the comparison model. Both forecasting variants use information available before the choice; their development and use costs are equal here. Apply the same decision rule to each forecast. Given that variant’s probability estimate, choose the available response with the lower expected cost.
 
-| Forecasting variant | Estimates for the two groups | Mean absolute probability error | Selected responses | Mean cost under the comparison model |
+| Forecasting variant | Estimates for the two groups | Mean absolute probability error | Responses under the common rule | Mean cost under the comparison model |
 | --- | --- | --- | --- | --- |
 | A | 0.11; 0.12 | 0.045 | Day 5; day 5 | `(28 + 36) / 2 = 32` |
 | B | 0.02; 0.18 | 0.050 | Day 5; day 1 | `(28 + 30) / 2 = 29` |
 
-B has the larger prediction error but selects the more useful response in the second group. Comparing the consequences therefore favours B for this use; it does not establish B as the better probability model for other uses. The probabilities supplying this examination are stipulated model inputs, not information assumed available during a real intervention.
+B has the larger prediction error. With B’s estimates, the common rule selects the more useful response in the second group. Comparing the consequences therefore favours B for this use; it does not establish B as the better probability model for other uses. The probabilities supplying this examination are stipulated model inputs, not information assumed available during a real intervention.
 
-If the added cost of the early arrangement rises from 10 to 25, its total becomes 45. At `p = 0.20`, the day-5 arrangement's 36 now wins. Reopen the response and forecast comparison with that changed support cost, or construct another obtainable arrangement. Under the changed costs, both forecasting variants choose day 5 for both groups and have mean model cost 32, so their earlier cost ranking disappears. These costs are calculated for the stated service conditions.
+If the added cost of the early arrangement rises from 10 to 25, its total becomes 45. At `p = 0.20`, the day-5 arrangement's 36 now wins. Reopen the response and forecast comparison with that changed support cost, or construct another obtainable arrangement. Under the changed costs, the common rule selects day 5 in both groups with either forecast. Both arrangements now have a mean model cost of 32. These costs are calculated for the stated service conditions.
 
 ### MNT.2:6 - Bias-Annotation
 

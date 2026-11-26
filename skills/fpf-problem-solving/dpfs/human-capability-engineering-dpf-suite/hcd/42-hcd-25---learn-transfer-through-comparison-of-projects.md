@@ -72,7 +72,7 @@ When the learning task calls for personal application, have the learner identify
 
 Establish which premises and operations were supplied and which the learner obtained or devised. A missing prerequisite or a new subject Method may call for teaching or a qualified supplied result. Determine whether this was the obstacle before attributing failure to transfer of the original capability. Where feedback is needed, address the decisive correspondence. Use HCD.9 for a needed correction or reasoned retention.
 
-For an independent transfer claim, use a case unfamiliar in the conditions that govern the action. In a new assessment, retain the learner’s first response before identifying the Method or decisive feature. For completed work, use suitable existing evidence of what the learner did, which resources were permitted and which help reached them. HCD.12 gives the full comparison and reporting conditions. An application with help can answer a learning question under those conditions.
+For an independent transfer claim, use a case unfamiliar in the conditions that govern the action. If choosing the Method or recognizing the decisive feature belongs to the later job, retain the learner’s response before supplying that choice. Where later work prescribes the Method, give it. Leave its correspondence to the new circumstances, the adaptation or the judgement promised by the assignment to the learner. For completed work, use suitable existing evidence of what the learner did, which resources were permitted and which help reached them. HCD.12 gives the full comparison and reporting conditions. An application with help can answer a learning question under those conditions.
 
 #### HCD.25:4.5 - Retain what another learner can use
 

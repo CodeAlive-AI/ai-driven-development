@@ -39,7 +39,7 @@ Establish how far the necessary actions already work together. When a familiar c
 
 When the performer can manage only part of the transition, extend that portion through more of the support change. Compare how the movement feels and what it achieves as the interval grows. Use SOM.2 if a needed difference remains indistinguishable there, SOM.3 if the required regulation is missing, and SOM.4 if available actions still need to be combined.
 
-When a join has to remain continuous, rehearse overlapping portions if useful and establish what happens through that join in motion. If the task requires an adjustment the performer cannot yet find or make, identify the relation that needs instruction and seek suitable help. If the task was to establish the limit of this attempt, report that finding.
+When a join has to remain continuous, rehearse overlapping portions if useful and establish what happens through that join in motion. If the required adjustment remains unavailable, establish which relation is lost. The performer can explore a familiar alternative, retain permitted support or obtain instruction. Seek qualified guidance before going beyond the technique or physical conditions the performer knows. If the task was to establish the limit of this attempt, report that finding.
 
 #### SOM.5:4.4 - Connect adjustment and cue
 
@@ -47,7 +47,7 @@ For an adjustment that needs a cue, work back from the action still available to
 
 Use a suitable observation of the adjustment with its cue, or try them together when a new attempt is needed. Identify a teacher’s prompt or temporary marker as part of the support. To claim performance without it, use observations under that condition. If the cue or response is missing, identify which contribution the task still needs.
 
-A partner's changing cue can belong to the task. Keep it available when assessing the performer's ability to respond to it. Look for the cue the performer actually had and an action that distinguishes using it from following a memorized sequence. If the commission only calls for completing that sequence together, evidence of its completion can settle the decision.
+A partner's changing cue can belong to the task. Keep it available when assessing the performer's ability to respond to it. For an observed performance, establish whether the performer used the cue. A reliable record of its use can settle that question even when memory would have suggested the same action. For a test of one-way response, a timely unfamiliar cue may suffice. For mutual adjustment, preserve both directions of influence. If the commission only calls for completing that sequence together, evidence of its completion can settle the decision.
 
 #### SOM.5:4.5 - Return to the required action
 
@@ -59,9 +59,9 @@ If the transition fails, retain what the preparation established, including the 
 
 An experienced writer draws a continuous line in two familiar forearm positions, but the line breaks during the support transition. Sequentially checking grip, wrist and forearm also stops the stroke. The pen and paper have been checked.
 
-Across attempts, the writer relates the point where the line breaks to the change of forearm support. The writer selects a shorter stroke that retains the transition. Starting from the portion where contact and guidance work together, the writer compares small familiar adjustments near the point of failure. The writer learns how a workable portion develops, then joins overlapping portions in motion.
+The writer relates the break to the change of forearm support and chooses a shorter stroke that still crosses it. In one trial the writer waits until the support reaches its edge to begin a familiar adjustment. The pause is already visible. In another trial at the same speed, an earlier visible point on the path cues the same adjustment. An observer sees the pen keep moving across the edge while maintaining the line. That earlier cue gives the writer a workable way through this short transition.
 
-The writer can use a visible point on the drawing path to time an adjustment already learned. Once the transition works on the short stroke, the writer tries it over the longer stroke at the required speed. If the appropriate response is still unknown, the supported result identifies the relation between contact and support for which instruction is needed.
+The writer then joins this portion to the longer stroke and tries the adjustment at the required speed and support. If the earlier visible point disappears on a different drawing, find another cue the performer can use in time, or establish that the transition already works there. A later cue may still help someone asked to recover after a stop. If the adjustment is still unavailable, the point where contact or guidance is lost can guide another familiar variation or a request for instruction.
 
 For a salsa turn, use dance technique to identify the transfer of support, steps and partner interaction. A reduced task must preserve the support change during which the failure occurred. Static positions can show what the dancer does at the endpoints. To assess the turn at the required tempo, use observations in motion at that tempo.
 

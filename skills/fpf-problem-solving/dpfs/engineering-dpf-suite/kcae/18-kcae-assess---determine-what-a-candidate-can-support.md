@@ -29,6 +29,10 @@ For open-ended material, allow an explanatory distinction or a useful question t
 
 Extract the decisive source proposition with its exact location and necessary context. State the proposed correspondence to the case and why it matters. For every decisive premise, distinguish source support, contrary evidence, missing information and unresolved conflict. Interpret each status as a finding about the evidence for this use.
 
+What did the source contribute? If the question concerns the history of a method or decision, trace what the practitioner took from the source into the work. A draft can show which distinction supplied a premise, which instruction shaped an operation or which finding led the author to abandon a proposed method. Agreement between the finished method and a manual is also possible when the two were developed independently. To judge whether the decision would have changed without the source, consider the information and options available at the time. A rule may settle what the practitioner was obliged to do. To infer how they would have acted, use evidence about how the decision was made, allowing for an overlooked option or a missed action when either remains possible. If every course consistent with that evidence gives the same answer, the comparison is settled. Where their consequences differ, seek evidence that distinguishes the courses or give a conditional conclusion.
+
+If the question is what warrants the conclusion, follow each decisive premise to its grounds. When two reports repeat one observation, withdrawing that observation affects both. A second report can still supply a condition the first omitted or record an independent check. Ask what conclusion, and what degree of support, remain on the other evidence. Either of two arguments may suffice even when both were used. Where the conclusion needs several premises together, establish the relation between their subjects, times or conditions that licenses the inference. Two approvals for one edition must cover the edition to be released. An argument about a change may instead need evidence about different editions.
+
 In CedarBench, the inspected manual says that automated resend requires a deduplicating receiver and confirmed absence of a receipt. The case says that duplicates are being removed manually. It does not state receiver protocol or receipt status. The assessment therefore supports the source rule while leaving its applicability unresolved. “There are duplicates” neither proves nor disproves either prerequisite.
 
 After a configuration read supplies protocol v1, the table contradicts the deduplication prerequisite. Automatic resend is unsuitable on that basis; receipt reconciliation can remain useful. A current correction to the table can reopen this judgement. If two authorized sources disagree and precedence is unresolved, return the conflict and its practical effect rather than quietly choosing the higher-scoring source.
@@ -37,7 +41,9 @@ Before treating passages as contradictory, align their product or entity, operat
 
 A negative reading must have its scope. “This paragraph supplies no evidence of receiver capability” does not imply “the receiver lacks capability.” Where the corpus is known exhaustive for a specific closed predicate, absence may have a defined meaning; obtain that contract explicitly. Most natural-language corpora are not closed in that way.
 
-For a corpus-wide answer, assess two levels separately: whether the source passages support each intermediate claim, and whether their coverage, unit definitions and aggregation support the final scope. KCAE.SEARCH:4.6 supplies that construction. A correct quotation from one response cannot establish what most respondents say. Inspect the originals behind decisive generalizations and contrary cases, and check whether merged claims preserved time and conditions. Confirm that duplication, excluded material or unassessed units did not silently change the denominator or turn a selected overview into a population claim. Give the narrower finding and show what it contributes to the question asked. A single verified exception can settle a universal claim. A verified instance establishes existence and can leave prevalence open.
+For a method assembled from several texts, identify what each supplies for the required work. One source may explain an operation, another a condition that must hold during it. If the result depends on a connection that you supplied, explain why that connection works under the source conditions. Use KCAE.COMPOSE:4.1–KCAE.COMPOSE:4.5 when the arrangement still needs constructing.
+
+For a claim about a collection, decide what coverage, unit definition and aggregation the claim needs. KCAE.SEARCH:4.6 explains those grounds. Inspect original passages for decisive generalizations and contrary cases. Preserve the relevant time and conditions when merging claims. For a count, account for duplication, excluded material and unassessed units. A verified instance can establish existence, and a single verified exception can settle a universal claim. A prevalence claim needs grounds about the population.
 
 #### KCAE.ASSESS:4.3 - Select the performer and output contract
 
@@ -73,7 +79,7 @@ An option list can force every case into familiar contributions. Include an unre
 
 ### KCAE.ASSESS:7 - Conformance Checklist
 
-What decision will consume the result? Where did its criterion come from? Are source claims and case facts separate? Are missing and contradictory conditions distinguished? Can the grounds be inspected? Does score qualification match this model, question, language and action? Is an adequate existing result allowed to end the process?
+What decision will consume the result? Where did its criterion come from? Are source claims and case facts separate? Are missing and contradictory conditions distinguished? Can the grounds be inspected? When attributing an operation or inference to a source, what establishes the use you claim? When relying on corroboration, what did the further source establish independently? Does score qualification match this model, question, language and action? Is an adequate existing result allowed to end the process?
 
 ### KCAE.ASSESS:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -90,6 +96,8 @@ The criterion, evidence and decision are separate so that a component can be rep
 ### KCAE.ASSESS:11 - SoTA-Echoing
 
 Current typed-decision practice offers cheap bounded outputs, but the Jev documentation and recent audits distinguish input-output capability from comparative accuracy and logical coherence. KCAE.Profiles:2 gives their bounded contribution. This pattern adopts typed screening where qualified, adds explicit source/condition recovery, and retains a generative or expert reader as an alternative. The audit evidence changes score interpretation, not the public domain's acceptance criteria. Reopen the qualification when its inputs, model, question form or action costs change.
+
+W3C PROV-DM distinguishes using an entity in an activity from deriving a particular result from it. In systematic reviews, Cochrane links reports that describe the same study and retains information unique to each. These practices inform two choices in corpus assessment. Trace the use that produced the result when investigating its origin. Trace the evidence for each premise when judging what the result warrants. [W3C PROV Data Model, derivation](https://www.w3.org/TR/prov-dm/#concept-derivation) · [Cochrane Handbook, §§4.6.1–4.6.2](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04)
 
 ### KCAE.ASSESS:12 - Relations
 

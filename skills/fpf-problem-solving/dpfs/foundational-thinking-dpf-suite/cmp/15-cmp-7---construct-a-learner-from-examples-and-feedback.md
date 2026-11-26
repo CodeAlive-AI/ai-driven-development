@@ -6,11 +6,11 @@
 
 ### CMP.7:1 - Problem frame
 
-**Use this when** examples or feedback are available and the required rule for further cases is missing, or an existing learning procedure must be changed for a different target, kind of feedback or resource limit. You need to construct the procedure that obtains the rule, rather than leave “learn the model” as an unexplained operation.
+**Use this when** the receiver needs a procedure that can turn specified kinds of examples or feedback into a rule for further cases. Design it from the intended use, the permitted evidence and how the learner will obtain that evidence. To fit a rule now, use the actual available examples or feedback. An existing procedure may need revision for a different target, kind of feedback or resource limit.
 
 The situation occurs when learning a classifier, estimating a response, constructing a surrogate, discovering a program or updating a policy. The output may be a symbolic rule, a function represented by weights, a distribution or a retained set of candidate rules. Its required form follows from the intended use.
 
-The gain is a learning procedure with explicit inputs, selection or update operations and a learned result that can be applied at its warranted scope. The reader needs functions, finite examples and a loss or another stated comparison. Probabilistic guarantees require the corresponding additional probability model.
+A receiver commissioning a learning procedure needs its inputs, selection or update operations, and grounds for what they produce under the stated conditions. When a trained rule is due, deliver a rule that fits the agreed inputs, restrictions and use. Use a suitable existing fit where the terms allow it. Carry out the specified training when a new run is commissioned or the required fit is still missing. The necessary mathematics depends on the selected rule family and how candidate rules will be compared. Probabilistic guarantees require the corresponding additional probability model.
 
 Use an existing rule directly when it already serves the purpose. Use an established learner when its inputs, target, restrictions and costs fit. This pattern is needed when those choices or their connection to further use must be constructed or revised. Explaining a learned rule and teaching a person to apply it are distinct tasks, supplied by the explanation and development methods when required.
 
@@ -33,7 +33,7 @@ Many rules can agree on the available examples and disagree elsewhere. Faster op
 
 ### CMP.7:4 - Solution
 
-**State the further use → identify available feedback → restrict the rule family → construct selection or update → establish its result → apply and revise.**
+**State the further use → identify available feedback → restrict the rule family → construct selection or update → establish what the procedure delivers → fit, apply or revise the rule as the receiving work requires.**
 
 #### CMP.7:4.1 - State what a further application must obtain
 
@@ -45,7 +45,7 @@ State whether the recipient needs one rule, a set of alternatives, an uncertaint
 
 #### CMP.7:4.2 - Recover the examples and feedback actually available
 
-Identify the supplied inputs, labels, rewards, demonstrations or other observations and how they were obtained. For missing labels, delayed feedback, selection effects or dependence between examples, state what the learning procedure can observe. Distinguish information available when the prediction is due from feedback for later predictions. MMP.7 supplies the probability model of recorded data when such a model is needed.
+Identify the supplied inputs, labels, rewards, demonstrations or other observations and how they were obtained. For missing labels, delayed feedback, selection effects or dependence between examples, state what the learning procedure can observe. Distinguish information available when the prediction is due from feedback for later predictions. If a probability model of the records is needed, use one that fits their actual selection and recording, or use MMP.7 to build it.
 
 Choose the feedback regime before deriving the update. In supervised learning, the supplied target response can evaluate a candidate prediction directly. In bandit feedback, only the consequence of a chosen action is observed; an update requiring all unchosen consequences is unavailable. A self-produced label remains the output of another rule and can propagate its errors.
 
@@ -89,11 +89,11 @@ When available examples leave candidates disagreeing at a consequential input, r
 
 #### CMP.7:4.6 - Apply the result and revise the part that fails
 
-Use the learned output on the intended further case. A discrepancy can come from the rule family, data law, target definition, optimization, representation or application. Follow the dependency that failed rather than reflexively requesting more training examples or more optimization steps.
+For a commission to make a decision on a further case, interpret the learned output in that case. A commission to design a learning procedure or establish a generalization guarantee can be answered before the future use, given sufficient grounds for its assumptions. A discrepancy can come from the rule family, data law, target definition, optimization, representation or application. Follow the dependency that failed rather than reflexively requesting more training examples or more optimization steps.
 
 If the target changes over time, choose a forgetting, reweighting, windowing or adaptation procedure together with the relation to the new target. C.11.DUA helps decide whether a discrepancy warrants more examples or a changed procedure; the common portfolio methods can retain several useful rules. This pattern constructs the learning operation used in that arrangement.
 
-Return the learned rule, its application method, the conditions material to its use and the narrow reason for reopening it.
+Return the learning procedure and its assumptions when the receiver will use it to fit a rule. If a trained rule was commissioned, deliver that rule with its application method, the conditions material to its use and the reason to revisit it.
 
 #### CMP.7:4.7 - Train a primer for a fixed responder
 
@@ -177,7 +177,7 @@ The method can also expose a limit that further optimization cannot remove. New 
 
 The learning algorithm and learned rule must remain distinct because their costs, inputs and failure modes differ. Inductive restriction belongs with the algorithm's construction: without it, agreement on examples leaves the future rule unspecified. Base the performance argument on the feedback and use in question.
 
-MMP supplies data and subject-model accounts. CMP.4 and CMP.6 supply effective search or update; CMP.7 assembles those contributions into a learner. Further model assessment, explanation, development and portfolio choice use their existing methods.
+MMP provides methods for modeling the subject and how the data were obtained. Obtain the observations from their source. Use CMP.4 or CMP.6 when a search or update procedure needs constructing, and combine the actual inputs and procedures into a learner under CMP.7. Further model assessment, explanation, development and portfolio choice use their existing methods.
 
 ### CMP.7:11 - SoTA-Echoing
 

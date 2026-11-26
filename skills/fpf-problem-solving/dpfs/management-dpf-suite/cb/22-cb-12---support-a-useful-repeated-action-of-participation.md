@@ -148,7 +148,7 @@ The repairer instead needs an easy-to-find request route, a permitted way to pre
 
 The repairer does not visit on days when no such question occurs. When a suitable case does arise, they use the route. For a later case needing an urgent response, the repairer uses the accountable service. The arrangement has improved access to help without adopting a daily habit as its objective.
 
-If no one can answer the relevant class of question, the organiser changes the promised scope.
+If no one can answer that class of question, the organiser tells the repairer what help is available and checks what the service still owes for an accepted request.
 
 #### CB.12:5.3 - A changed schedule interrupts completion
 
@@ -202,7 +202,7 @@ A feasible first episode is enough to try the arrangement. A claim about automat
 | Choose daily participation before identifying the recurring need | Identify when the need arises and consider a simple accessible route. |
 | Treat every missed action as weak motivation | Distinguish absent opportunity, unnoticed occasion, unavailable conditions and an unwanted result. |
 | Make starting easy but leave completion unsupported | Obtain the necessary material, time, method and receiving response. |
-| Increase reminders when nobody can supply the promised help | Repair provision or change the promise. |
+| Increase reminders when nobody can supply the promised help | Obtain support or settle the outstanding request under its terms. |
 | Report visits or a streak as a formed habit | Preserve the occurrence claim and obtain an appropriate basis for automaticity if it matters. |
 | Withdraw a useful support merely to prove independence | Test only the condition the receiving use needs, with agreement and an adequate fallback. |
 | Keep a person returning because they have already invested effort | Preserve useful access and make a new choice from current value and burden. |

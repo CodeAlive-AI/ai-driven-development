@@ -4,7 +4,7 @@
 | --- | --- |
 | Source edition / effective rule | Fixed content versus the rule governing a specified time and activity. |
 | Retrieval unit / reading unit | Material convenient to rank versus context sufficient to understand or use a contribution. |
-| Retained original / usable return | Preserved bytes versus an obtainable route for the actual reader, outside a failed exclusive selector where needed. |
+| Retained original / usable return | Retaining bytes preserves the source. A usable return can recover the needed distinction outside a failed selector and convey it to the participant entitled to use it. A first-hand check requires access for the designated reader. |
 | Derived view / source assertion | A selected or generated representation versus what the original author claims. |
 | Candidate / qualified contribution | Material worth inspecting versus an inspected contribution under stated conditions. |
 | Rank / calibration / threshold / coherence | Ordering, probability reliability, an action rule and logical relations among answers; success at one does not establish the others. |

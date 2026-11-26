@@ -46,7 +46,7 @@ Ask what contribution would be absent if the supporting participant or resource 
 
 For example, the practice may need an external solver, without needing this particular solver. Alternatively, its records may be readable only by the present service. These relations call for different continuations: obtaining a substitute, making the representation portable, changing the practice, or accepting the dependence for the intended work.
 
-Use a model or a safe bounded comparison when withdrawal would disrupt real work. An unperformed counterfactual remains a hypothesis. Loss under withdrawal establishes dependence; it does not yet establish harm during supported use.
+When withdrawal would disrupt the work, ask what follows from the terms, capacities and alternatives already established. A binding access condition can settle what would become unavailable on withdrawal. For a result that already reached its recipient, ask whether the proposed change could still affect its use. Where the model leaves consequential alternatives open, use a justified comparison, narrow the conclusion or state the remaining uncertainty. A conclusion about dependence under withdrawal and a claim of harm during supported use have different premises.
 
 #### DTM.1:4.3 - Compare results for the affected participants
 
@@ -83,7 +83,7 @@ If the comparison removes the alleged harm, stop the harmful-variant branch. If 
 
 #### DTM.1:5.1 - A service improves work but concentrates dependence
 
-Consider a hypothetical team whose old process yields 10 acceptable analyses per week. With a service it yields 14 at an additional cost affordable for the work. Under an outage the supported process yields only 4; a tested substitute would yield 9.
+Consider a hypothetical team whose old process yields 10 acceptable analyses per week. With a service it yields 14 at an additional cost affordable for the work. During an outage of that service, the old process could still deliver 10 under the stated conditions. The new process delivers 4 without a substitute. A tested substitute can deliver 9.
 
 The method produces three separate comparisons. Current supported output improved by 4. Current outage exposure is larger than before. Replaceability would reduce that exposure, but would not preserve all normal output. None of these differences alone proves exploitation. The next action depends on the required continuity, supplier conditions and cost of the substitute.
 

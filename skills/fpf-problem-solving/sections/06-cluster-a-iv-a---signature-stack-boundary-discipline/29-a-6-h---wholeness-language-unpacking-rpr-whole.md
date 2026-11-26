@@ -104,7 +104,7 @@ The word `integrity` never chooses mereology by itself.
 | “The assembled pump remains an integral whole.” | pump, direct identity rule, boundary, independently identified parts, direct assembly or parthood relations, any current selected structure, and the whole-recognition or reidentification question | `A.14`, `C.13`, `A.22`, `A.1`, or `B.2` as selected by the claim | The adjective *integral* or presence of a BoM or assembly record does not establish the whole or relations; relevant recorded facts may support the claim under its rule. |
 | “Data integrity” or another defined term of art | bearer, defined Characteristic or constraint, threat/assumption or qualification basis, and receiving use | the characteristic, constraint, security, measurement, or evaluation pattern | Do not reinterpret the term as structural wholeness unless the sentence separately makes that claim. |
 
-If the source leaves these readings open, preserve the alternatives and block the named use until evidence discriminates them.
+If several readings remain possible, compare what each supports for the current decision. Give the warranted answer when it holds across them. Seek a distinguishing fact when the answer, its required explanation or the action depends on the reading.
 
 #### A.6.H:4.4 - Select the direct relation, not a generic part edge
 
@@ -127,6 +127,7 @@ Ask what the claim of completeness allows the next reader to do.
 | --- | --- | --- |
 | Complete whole or assembly | candidate whole, identity, boundary, required parts, direct relations, construction rule when current, and completion predicate | `A.1`, `A.14`, `C.13`, `A.22`, or the construction/completion pattern |
 | Specification coverage | claim-bearing episteme, described EntityOfConcern, effective ReferenceScheme, required content or criterion set, coverage predicate, scope, and gaps | `C.2.1` and the coverage/evaluation pattern; `A.3.2` only when the episteme is classified or used as a MethodDescription under its membership rule |
+| Promised coverage | the work or outcome offered to the recipient, applicable conditions, exclusions and acceptance criteria. For an obligation, establish which party undertook it and on what terms. | `A.2.3` for promise content and `A.2.8` for an actual commitment |
 | Capability coverage | holder, capabilities, required actions or conditions, scope, and direct coverage criterion | `A.2.2` and the capability/coverage pattern |
 | Work coverage or completion | Work occurrence(s) admitted under §4.2, temporal extent, performed parts or episodes when needed, completion or production predicate, acceptance boundary, and evidence | `A.15.1`, `A.15.PROD`, or the applicable completion/acceptance pattern |
 | Evidence coverage | claim set, evidence-bearing objects, evidence-use relations, scope, limitations, and receiving use | the applicable coverage rule; `A.2.4` for evidence-use classification, `A.10` when a replayable source-to-use account is needed; `B.3` for an assurance claim |
@@ -178,11 +179,11 @@ Source sentence: “After seal replacement, the assembled pump remains an integr
 
 Source sentence: “The whole chromatography pipeline is turnkey, and the chemist owns the whole thing.”
 
-The repair separates the following claims and unresolved questions; `turnkey` and `owns` still need the receiving decision and discriminating facts:
+Ask which result the recipient is to obtain and what decision depends on “owns”. The supplier could be offering installed equipment, completed work or a reusable procedure. The terms and facts that distinguish these readings determine which of the following questions matters.
 
-- the reusable procedure is one Method or composite Method under A.3.1/B.1.5, with joins and exposed interactions;
-- identify its procedure document as a separate episteme under C.2.1. It is a `U.MethodDescription` under A.3.2 only if its EntityOfConcern is an admitted Method and it makes a substantive claim about that Method as a way of doing;
-- “turnkey” becomes the specification, capability, Work, or evidence coverage claim needed by the receiving use;
+- for an offered procedure, establish its reusable action under A.3.1. If its composition matters, use B.1.5 to establish which contributions have to work together and what their combination supplies to the recipient.
+- if a document is offered, identify the episteme under C.2.1. It is a `U.MethodDescription` under A.3.2 when its EntityOfConcern is an admitted Method and it makes a substantive claim about that Method as a way of doing.
+- for “turnkey”, establish the promised scope when the question is what the recipient may expect. Determine the specification, capability, Work or evidence coverage when the question concerns one of those instead;
 - treat *owns* as a local wording cue. First state the decision that depends on it and the proposed sentence. Candidate readings include, for example, property or title, possession or custody, operational control, decision authority, stewardship or responsibility, assignment, commitment, and permission; they have different participants and predicates. Apply the direct rule when one exists, or return A.6.RCD `missing-governor[...]` naming the participants, proposed predicate, affected use, and absent definition; and
 - identify any asserted dated laboratory run as Work using §4.2.
 
@@ -239,7 +240,7 @@ Apply B.3 only when a named assurance claim and assurance use are current. Evide
 | --- | --- |
 | `CC-A6H-1` | The entry names the working decision, candidate objects, receiving use, and load-bearing sentence. |
 | `CC-A6H-2` | The subject level is explicit when referent, episteme, publication, carrier, Method, plan, Work, or evidence would select different relations. |
-| `CC-A6H-3` | A whole claim identifies the candidate individual, direct identity pattern, boundary or delimitation when relevant, and independently recovered parts or constituents. |
+| `CC-A6H-3` | A whole claim identifies the candidate under the rule for its identity. Establish the boundary, constituents and their relations to the extent that the conclusion depends on them. |
 | `CC-A6H-4` | Every direct relation claim identifies its participants and satisfies the rule for its polarity or stated modality. An affirmative occurrence claim requires adequately grounded obtaining facts; a negative claim requires its own non-obtaining criterion or adequate closure basis. Missing facts establish neither result. Representation content may supply facts; co-listing or form alone does not establish the relation. |
 | `CC-A6H-5` | `PortionOf` names an extensive measure μ, compatible unit, and additivity/non-overlap basis. |
 | `CC-A6H-6` | `PhaseOf` is used only for a proper temporal restriction admitted by A.14 and the unchanged individual's direct identity rule. A use window alone establishes no temporal part; changed epistemes use C.2.1 and Work uses A.15.1. |
@@ -261,7 +262,7 @@ Apply B.3 only when a named assurance claim and assurance use are current. Evide
 | Version-as-phase | Different epistemes are called phases of one document lineage. | Apply the C.2.1 identity triple, then test `EpistemeEditionRelation` independently. |
 | Work-phase shortcut | Shift, monitoring window, episode, retry, or resumption uses generic `PhaseOf`. | Apply A.15.1's temporal-part, episode, operational-part, retry, resumption, or occurrence rule. |
 | Integrity-as-wholeness | A measurement, security property, report, or assurance claim is forced through parts and boundary. | Use the four-way integrity classification in 4.3. |
-| Completeness-by-rhetoric | “Turnkey” or “end-to-end” supplies no covered set, scope, criterion, or subject pattern. | State the specification, capability, Work, evidence, construction, or completion claim. |
+| Completeness-by-rhetoric | “Turnkey” or “end-to-end” supplies no covered set, scope, criterion, or subject pattern. | Recover the promised scope and undertaking where those matter. For a claim of specification, capability, Work, evidence coverage, construction or completion, apply its own test. |
 | Description/referent drift | The same noun alternates among a system, model episteme, document, carrier, plan, and Work. | Name each current subject and its direct relation. |
 | Generic change narration | A new change verb replaces the changed object and predicate. | State the boundary, relation, episteme, publication, Method, Work, or coverage change. |
 
@@ -272,7 +273,7 @@ Apply B.3 only when a named assurance claim and assurance use are current. Evide
 | Decidable disagreements | The practitioner must name the subject and receiving use before arguing about the word. |
 | Local repair | One sentence may become several direct claims; stop after the claims the receiving use needs. |
 | Separate rule sources | Mereology, episteme identity, Work, measurement, evidence, publication, and assurance retain their distinct rules. |
-| Honest uncertainty | An unresolved case blocks only the named use; the candidate readings and discriminating questions remain explicit. |
+| Honest uncertainty | Retain open readings and the conclusions each supports. A decision can proceed on a common sufficient ground. Return to the distinguishing question where the result or required explanation depends on it. |
 | Reusable evidence-use claims | Recognition facts and evidence-use claims can be checked independently; B.3 assurance applies only for a named assurance claim and use. |
 | Less ontology by wording | Familiar trigger words no longer mint kinds, relations, structures, or lifecycle objects. |
 

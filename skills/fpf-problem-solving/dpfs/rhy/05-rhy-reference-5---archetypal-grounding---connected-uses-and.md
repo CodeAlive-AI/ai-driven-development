@@ -16,13 +16,13 @@ Now suppose a related rotating figure fails. The dancer has the strength to supp
 
 A group receives a syllable sheet and a recording. The sheet indicates an attack at the start of a two-second cycle and the next attack at the start of the following cycle. The recording establishes that this realization sustains the sound in the first second and rests during the second. Using RHY.2, RHY.5 and RHY.6, retain that duration and rest in a demonstration or explicit representation available to the group. A gesture marking each beat supplies the reference. The recording, demonstration or duration-bearing representation can supply the release time.
 
-To learn the phrase in this case, the group needs the recording and someone who can demonstrate its convention. Use C.36.RP to make both contributions obtainable. With MDPE.17 arrange the group’s opportunity to perform. Use RHY.9 and RHY.10 to allocate the voice and shared reference, and RHY.12 to practise sustain and release.
+Suppose this group can hear the release on the recording but needs someone to show it how to coordinate the release with the gesture. Arrange that demonstration using C.36.RP. A group that can already read and perform the duration-bearing score can practise directly from it. With MDPE.17 arrange the opportunity to perform. Use RHY.9 and RHY.10 to allocate voice and shared reference, and RHY.12 to practise sustain and release.
 
 Suppose the group then reproduces and deliberately varies the phrase without the demonstrator. That establishes receiving performance with the other conditions in place. Use RHY.13 for a question about later retention when evidence across the interval is required. For the source question in MDPE.18, the recording establishes this particular realization. Establish a claimed origin or lineage from historical evidence.
 
 That joint performance can qualify the group for the named rehearsal. If one member is later to lead the variations, identify who chose them and what the other members contributed. A record of the same performance may establish that choice when it was still open and its author can be identified.
 
-If the practice is to continue, use MDPE.19 to check whether later users can still obtain the recording, instruction and a suitable occasion to practise. A capable demonstrator who agrees and is available can replace the earlier provider. Reassess the affected use if this provision changes. Evidence of one group’s success leaves population-wide continuation open.
+If the practice is to continue, use MDPE.19 to check what the later users will need and can obtain. An intelligible score or a recording they can interpret may preserve the phrase. For a promised performance, establish that the players can use what reaches them on the occasion. Arrange instruction or rehearsal if they need it to prepare or if it was separately promised. A capable demonstrator who agrees and is available can replace the earlier provider. Reassess the affected use if this provision changes. Evidence of one group’s success leaves population-wide continuation open.
 
 ### RHY.Reference:5.3 - More appearances do not yet explain a practice's future
 

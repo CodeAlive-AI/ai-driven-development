@@ -9,7 +9,7 @@
 
 **Use this when** a practice needs to assess how its problem-structuring and decision-support Methods fit recurring work, or decide which offerings to retain, change or withdraw. A familiar workshop no longer covers a recurring participation difficulty. A new analytical technique seems promising, but its input assumptions differ from those of the existing repertoire. Follow-up exposes a repeatedly broken join between a material correction and the recommendation that should use it.
 
-Start with the recurring difficulty and the result the practice needs. Which way fits which situation? What change could help, what would justify a trial, and where might the current offering need a limit? A better source or evidence of a recurring failure may support one local change.
+Start with the recurring work, the result its users need and the question about the practice's offering. Which way fits which situation? A recorded difficulty or a prospective engagement can reveal a condition worth examining. Establish what supports retaining the present way, changing it, trying another or qualifying what the practice can offer.
 
 This method concerns the reusable ways a practice structures problems and supports decisions. Describe each Method and any candidate under consideration, the work it can serve and the grounds and limits for that use. A catalogue of schools, tools or courses does not by itself give a practitioner those grounds.
 
@@ -97,13 +97,13 @@ The [2019 Smith and Shaw review](https://doi.org/10.1016/j.ejor.2018.05.003) pro
 
 A recent decision-analysis synthesis such as [Borgonovo et al. (2026)](https://doi.org/10.1016/j.ejor.2025.05.023) can identify developments in value-focused thinking, graphical modelling, uncertainty, sensitivity and information acquisition. For a particular Method, consult the source needed for its meaning and scope.
 
-Use a qualified existing interpretation, domain result or representative evaluation when it answers the question. For a missing contribution, use `A.15.9` to assess whether obtaining it is worthwhile and respect the supplier’s authority where applicable. Use `A.10` when the source-to-use account is implicit or a reproducible account needed for this use is missing. If a decisive source remains unavailable, qualify the offering or identify the dependent gap.
+Reuse an adequate existing interpretation, domain result or representative evaluation. When a contribution is owed, recover the undertaking and its conditions under A.15.9. For a discretionary inquiry, weigh what the result could establish against the cost of obtaining and using it. Respect the supplier's authority. Use A.10 where the basis for reliance needs reconstruction. If the decisive contribution remains unavailable, identify what that limits in the offering.
 
 #### PSDA.16:4.5 - Trial the claimed improvement in representative engagements
 
 For a selected trial, turn the proposed improvement into a question that can fail. Specify the Method or status-preserved candidate, the situation represented, participant and power conditions, required capability and support, a serious comparator when the claim is comparative, the expected result, the burden accepted, and the observation that would retain, narrow or reject the proposal.
 
-Select evidence proportionate to the claim. A walkthrough can expose an impossible join. A constructed exercise can test whether practitioners preserve an objection through a calculation. An authorized field trial can test feasibility and use in a real engagement. Broader transfer or causal-effectiveness claims need stronger and appropriately designed evidence.
+Select evidence for the claim at hand. A walkthrough can expose an impossible connection. A constructed exercise can test whether practitioners preserve an objection through a calculation. For another engagement, identify the operation and conditions on which the result depends. Establish whether the receiving engagement supplies them or an adequate counterpart. A rule covering those conditions can establish fit or rule a proposal out. Obtain further grounds where a consequential condition remains open. Actual use and improved decisions require evidence of those outcomes and, for a causal claim, of what produced the improvement.
 
 For a claim about how the Method works, examine the relevant actions alongside the output. For example, establish who could contribute or challenge; which material statement entered the model; where meaning changed; what was withheld; how uncertainty and protected conditions reached the recommendation; and whether the receiver could use it. The distinction between technically valid models and what people do with them is central to [Franco et al.'s behavioural OR review (2021)](https://doi.org/10.1016/j.ejor.2020.11.031). It supports attention to intervention configuration and interaction, not one universal trial design.
 
@@ -123,7 +123,7 @@ For each entry that matters to the task, make the relevant conditions and ground
 
 | Repertoire position | Content needed for use |
 | --- | --- |
-| Recurring situation and receiving result | Who uses the offering, what difficulty it addresses, which result it provides, and the conditions that matter. |
+| Recurring situation and receiving result | Who uses the offering, the work or difficulty it serves, the result it provides and the conditions that affect its use. |
 | Method or candidate | Exact reusable action and status; entry, joins, allowed variation and stop; where the full description can be obtained. |
 | Reason for the assessment | Grounds for retaining, limiting or changing the offering. For a comparison, the relevant alternative, gain, effort and other losses. |
 | Evidence and source basis | Sources or trials that support the claim, their conditions and limits, any contrary evidence and any question still open. |
@@ -175,7 +175,7 @@ The third proposal changes a reusable join and closing condition by allowing a r
 
 In the constructed case, the practice tests the two rules in an exercise. The investment decision remains with its holder. Both the incumbent and proposed rule are examined on the same two realistic situations: all required inputs available at the meeting, and a material access correction arriving afterward. Participants' access, analyst time and the receiving deadline are made explicit. The test is whether the correction changes the exact affected comparison while preserving dissent and independent usable claims.
 
-In the illustration, the incumbent gives an adequate bounded return in the first situation but leaves the second correction outside its closed result. The proposed rule preserves the correction and exposes its unresolved consequence in the second situation, at the cost of a further qualified return and analyst/facilitator time. This exercise supports the proposed join's feasibility under those conditions. A claim about better public decisions or transfer to other engagements would require further evidence.
+In the illustration, the incumbent gives an adequate bounded return when the inputs are available at the meeting. Its closing rule excludes a material correction received later even if the investment decision still lies ahead. That exclusion follows wherever the same rule closes the only permitted intake before a required correction arrives. The proposed rule can preserve the correction and its unresolved consequence where someone can receive and qualify it and return its effect in time to inform the decision. The additional work needs analyst and facilitator capacity. If the decision was already made, the recipient faces a different question about reconsidering it. The exercise establishes feasibility in its stated conditions. Actual adoption elsewhere and any effect on public decisions remain separate empirical questions.
 
 The practice reaches the following conclusions for this service.
 
@@ -280,7 +280,7 @@ The practice question is **how to develop a usable professional repertoire under
 - `PSDA.13`, `PSDA.5`, `PSDA.6`, `PSDA.7`, `PSDA.8`, `PSDA.9`, `PSDA.14`, `PSDA.15` and `PSDA.17` expose participation, alternative, comparison, recommendation, follow-up and arrangement requirements that a Method offering may need to preserve.
 - `A.3.1` governs Method identification; `A.3.1.DR` recovers documentary contributions when their source meaning or status is unclear; `A.3.1.MR` recovers candidate ways from performance evidence. `A.3.2` governs a MethodDescription rather than admitting every multi-Method package.
 - `A.3.1.MV` can supply qualified generic variant, derivation and non-variant maintenance guidance. Resemblance or shared repertoire vocabulary does not by itself establish a formal Method-specialization relation.
-- Use `A.15.9` to reuse or, where worthwhile, obtain a qualified source or specialist contribution. Use `A.10` when the source-to-use account remains implicit or a reproducible account needed for this use is missing. Use `A.10.1` for the applicable affected-use question and `G.11` for currentness or refresh. The repertoire judgement uses the subject evidence.
+- Use A.15.9 to recover the undertaking for an owed source or specialist contribution. For a discretionary inquiry, compare its value and burden and reuse adequate existing results. Use A.10 when the basis for use needs reconstruction, A.10.1 for the affected-use question, and G.11 for currentness or refresh. The repertoire judgement uses the subject evidence.
 - `G.5` declares a selector-facing result when that claim is live over identified members and grounds; it supplies neither a universal Method-family classification nor professional fit.
 - For cultural relations, use `C.36`. A repertoire entry or local observation can supply evidence for `PSDA.18` when the question concerns generation, transmission, receiving enactment, recognition, selection, retention or loss. State what remains unobserved.
 - An unavailable, stale, out-of-scope or incompatible input calls for a qualified direct source or the exact gap.

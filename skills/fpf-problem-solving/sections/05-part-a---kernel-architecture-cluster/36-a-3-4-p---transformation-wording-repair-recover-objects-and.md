@@ -123,7 +123,7 @@ When change-situation wording includes `function`, `functional`, `functioning`, 
 
 - Is one actual bounded `U.Transformation` established by changed referent, temporal or formal boundary, boundary conditions, actual subject facts, and continuity or reidentification?
 - Is a selected `TransformationFlowStructure` at issue without being treated as the acting system or the change occurrence?
-- Is performed Work being attributed to a System? Recover each performer's A.13 core and independently admit the Work under A.15.1. Add F.6 only when assignment-bound attribution is being made, then state separately the realization, causal, production, or other Work-to-change relation required by the claim. An assignment occurrence, Work record, common timestamp, or generic transformation-participant fact does not prove performance.
+- Is performed Work being attributed to a System? Recover each performer's A.13 core and independently admit the Work under A.15.1. Add F.6 only when assignment-bound attribution is being made, then state separately the realization, causal, production, or other Work-to-change relation required by the claim. A Work record can establish the occurrence and performer to the extent its contents and provenance support them. A record naming only the intended performer, a shared timestamp or evidence of generic participation in the change leaves that attribution open.
 - Is a non-work functional or physical actor-side claim being made? Recover the system and the participant, operation-application, functioning, causal, or other actor-side relation supplied by its governor. If no actor-side governor is recoverable, leave the actor claim unresolved.
 - Is a distinct influence source claimed? Recover its kind and influence relation. An organization can be an admitted System, a selected structure remains a structure, and a Method or Method family is not made a holon by its label. Use the architecture, Work, communication, constraint or candidate-synthesis relation the claim needs. System membership and action require their own bases when those claims are made.
 - Does the passage concern participant, port, operation-application, relation-signature, or functioning relations at the boundary? Keep them under their governors; a transformation input or output requires its own relation.
@@ -168,14 +168,14 @@ TransformationWordingRepair:
   WorkingConcern: the design reader needs to locate the four stages in the supplied schematic and follow their connections.
   RecoveredEntityOfConcern: `RefrigeratorHeatTransferFlowStructure-1`, the selected `TransformationFlowStructure` over the compressor, condenser, expansion, and evaporator transformation loci.
   ActualTransformationDisposition: no actual occurrence claim is made; the current object is the selected `RefrigeratorHeatTransferFlowStructure-1`.
-  NeighboringClaimAndExactRelation: the arrows in the supplied schematic connect the four named loci in refrigerant-flow order. The operator’s question also requires evidence about the interval of operation.
+  NeighboringClaimAndExactRelation: the arrows in the supplied schematic connect the four named loci in refrigerant-flow order. The operator’s question also requires evidence of heat leaving the compartment during the specified interval.
   GoverningPattern: `E.18` governs `RefrigeratorHeatTransferFlowStructure-1`; use `A.3.4` when a claim about an actual component occurrence needs its basis established.
   RetainedUse: "circuit" may remain ordinary domain wording for `RefrigeratorHeatTransferFlowStructure-1`; the source's heat-transfer claim remains unresolved.
   StopOrReturnCondition: use the selected structure for the recovered structural question; if the receiving use needs the heat-transfer claim, recover its participants and relation under the relevant subject rules. A later actual-occurrence claim still needs the A.3.4 occurrence basis.
   RemainingReaderUse: use `E.18` for `RefrigeratorHeatTransferFlowStructure-1`; open the applicable subject pattern when an additional claim is needed.
 ```
 
-For the designer, the repaired caption reads “Follow the refrigerant from the compressor to the condenser, through the expansion device to the evaporator, and back to the compressor.” If the supplied drawing shows only the four positions, identify them and obtain the connections before claiming a path. To determine whether heat left the compartment during the operator’s interval, use evidence of operation during that interval.
+For the designer, the repaired caption reads “Follow the refrigerant from the compressor to the condenser, through the expansion device to the evaporator, and back to the compressor.” If the supplied drawing shows only the four positions, identify them and obtain the connections before claiming a path. To determine whether heat left the compartment during the operator’s interval, use observations of heat transfer or an applicable account relating the observed conditions to heat transfer. A compressor can run with the evaporator out of thermal contact with the compartment. Its motor log alone leaves the operator’s question open.
 
 ### A.3.4.P:6 - Bias-Annotation
 

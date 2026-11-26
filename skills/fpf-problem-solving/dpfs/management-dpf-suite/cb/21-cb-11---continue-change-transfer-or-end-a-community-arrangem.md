@@ -69,7 +69,7 @@ Construct alternatives that answer the change at hand. The following forms have 
 | Alternative | What must become true for it to work |
 | --- | --- |
 | Continue the present arrangement | Its useful purpose and the threatened provision remain or are restored. |
-| Reduce or change activities | A smaller or different promise has willing contributors, adequate support and understandable effects on current users. |
+| Reduce or change activities | The revised offer has willing contributors and adequate support. Any change to what a current user is owed takes effect under the applicable terms. |
 | Pause for a stated period or condition | People know which services stop, who handles current obligations and what decision will restart or end the pause. |
 | Transfer to another host | A willing capable receiver obtains the necessary access, authority, resources and means of work. |
 | Separate into different arrangements | Each group can operate its chosen contribution, and any remaining shared resource or mandate has workable terms. |
@@ -77,7 +77,7 @@ Construct alternatives that answer the change at hand. The following forms have 
 
 Compare benefit, burden, timing and transition loss with the people affected. Include retaining the arrangement when its difficulty can be repaired. Include ending when no worthwhile and feasible continuation is available. Growth, retention of every participant and a larger institution are not universal completion conditions.
 
-Separate a promising alternative from a provided one. A person interested in taking over may still lack time, capability or resource permission. Use CB.7 to develop willing organising work and CB.9 to obtain support. If the needed contribution cannot be provided before the old one ends, reduce or suspend the dependent promise.
+Separate a promising alternative from a provided one. A person interested in taking over may still lack time, capability or resource permission. Use CB.7 to develop willing organising work and CB.9 to obtain support. If the needed support ends, revise what you can offer and tell people relying on it. For an existing commitment, establish what the parties can still deliver and use the terms of the agreement to settle any change.
 
 [ECO.9 (ECO.9:4)](../../eco/19-eco-9---decide-whether-and-how-to-change-economic-rules-thro.md#eco94---solution) develops a change to economic rules through the practices people can actually perform, including entry, exit, transition burdens and wider dependencies. Use it when those rules are the obstacle. [OCE.14 (OCE.14:4)](../oce/36-oce-14---decide-whether-and-how-to-revise-the-organization-f.md#oce144---solution) supplies a needed organisational revision.
 
@@ -85,11 +85,11 @@ When the effect is uncertain and reversal is practical, try a bounded continuati
 
 #### CB.11:4.4 - Obtain the decision and prepare its practical consequences
 
-For each required decision, identify who has authority to make it. Obtain the resource owner's access decision, the successor's agreement and the community decision where one is required. Keep objections and accepted losses visible through CB.13. A departing volunteer may state the end of their own contribution while others decide how to replace it.
+For each required decision, identify who has authority to make it. Establish which access rights, assignments and community decisions already take effect under the arrangement. Obtain any further decision from its authorised holder under the applicable decision rule. Keep objections and accepted losses visible through CB.13. A departing volunteer may state the end of their own contribution while others decide how to replace it.
 
 Translate the chosen alternative into what affected people need to do. Name the ending and starting dates, the remaining activities, how to reach the new receiver, which promises cease and where unfinished matters will go. Explain a change before users continue relying on the old offer.
 
-Agree the handover work and its limit with both the departing and receiving contributors. Include the time needed to explain an unusual case, obtain access and practise a consequential operation. CB.7 and C.36.RP help obtain capability where it is missing; a title or a folder transfer cannot supply it.
+Work back from what the successor must receive or do. Authority, keys and material can pass under a standing arrangement even if the former custodian is unavailable. When the transition needs someone’s explanation, permission or work, establish how and when they can provide it. CB.7 and C.36.RP can help a successor develop a missing capability.
 
 Recover rights and permissions for the material that will move. Public instructions, contributed examples, private discussions and contact details can have different permitted uses. Obtain the relevant permission or leave the restricted material with an appropriate existing receiver. A useful summary can sometimes carry a lesson without carrying the personal account.
 
@@ -192,7 +192,7 @@ A first use can establish a particular performance. For a transfer of responsibi
 | --- | --- |
 | Keep the founder's preferred format because it once worked | Recover current uses and compare feasible arrangements with affected people. |
 | Claim that relationships will survive loss of the platform | Obtain willing contact and activity arrangements and observe their use. |
-| Name a successor without providing time, access or capability | Establish and try the contributions their receiving work needs. |
+| Name a successor without providing time, access or capability | Establish what the successor needs at the agreed transfer. Try the work when a demonstration is due or an unresolved capability matters to the decision. |
 | Copy every discussion and contact into a new space | Recover permitted uses and transfer only what the receiving arrangement may use. |
 | Treat separation as failure while keeping an unresolved common resource | Allow different purposes and provide terms for the dependency that remains shared. |
 | Preserve every old document as current guidance | Retain useful explanations with their conditions and distinguish an archive from maintained support. |

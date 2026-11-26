@@ -9,7 +9,7 @@ Use this pattern when a community has a question or piece of work that participa
 
 The subject is the arrangement for obtaining a useful contribution from participants and returning its result. Contributions can include advice, practical support, a description of experience, a candidate recommendation, an improved requirement, teaching material or a permissible piece of maintenance work. Their domain methods and receiving responsibilities remain distinct.
 
-**First useful result:** an agreed contribution reaches its recipient in a usable form, with an understandable acceptance, application, revision or limitation returned to the contributor. An unresolved requirement or unavailable supplier can be the warranted result.
+**First useful result.** For a promised delivery, the recipient obtains the contribution in usable form. For a promise of availability, the intended users can obtain it on the agreed terms. When a response is part of the exchange, the contributor learns what the recipient accepted, used, wants revised or could not assess. If the contribution cannot be obtained, identify what remains unavailable.
 
 The organiser needs access to the receiving question, relevant participants and whoever can judge or accept the contribution. CB.1 helps decide whether this is a worthwhile community contribution; CB.2 obtains an initial exchange; CB.3 and CB.4 support participation and the activity's form.
 
@@ -27,13 +27,13 @@ How can an organiser connect the need, suitable voluntary or agreed work, its re
 | --- | --- |
 | Broad willingness and specific competence | Many people may want to help; a particular contribution needs relevant knowledge, access and effort. |
 | Contribution and receiving authority | Participants can offer valuable material while the product, employer or equipment owner retains the relevant decision. |
-| Quick help and reusable material | A response fitted to one case can be useful immediately; reuse needs its conditions and a maintained source. |
+| Immediate advice and later use | A reply can settle the present case. For reuse, establish its continued applicability, permitted use and any maintenance the later users will need. |
 | Voluntary contribution and dependable commitments | Peer help can remain optional; a service promise requires a provision arrangement able to meet it. |
-| Learning from feedback and unpaid repair burden | A returned reason can improve the contribution; repeated revisions consume real time and need renewed agreement. |
+| Learning from feedback and unpaid repair burden | A returned reason can improve a contribution. Check which revisions and follow-up are covered by the agreed effort. |
 
 ### CB.5:4 - Solution
 
-Start with the result the recipient needs. Agree on feasible work with a suitable contributor and arrange the support it requires. Get the contribution to its recipient and tell the contributor what the recipient decided and why, or what is missing for a decision. Use the applicable professional judgement and authority, and state the limits of the available evidence.
+Start with the result the recipient needs. Agree on feasible work with a suitable contributor and arrange the support it requires. Get the contribution to its recipient or make it available as promised. Where the exchange calls for a response, return the recipient’s decision and grounds, or explain what is still open. Use the applicable professional judgement and authority.
 
 
 
@@ -41,7 +41,7 @@ Start with the result the recipient needs. Agree on feasible work with a suitabl
 
 Ask who will use the contribution, for what next action, and under which conditions. Replace “we need more content” with the question a reader cannot yet answer or the action they cannot perform. Replace “we need ideas” with the use difficulty and the kind of proposal the receiving team can consider.
 
-Choose the result before recruiting contributors. For a case, establish the subject and relevant configuration, what has been tried, the uncertainty, permitted material and useful response window. For a shared resource, establish its intended users, applicable content and who can maintain it. For a recommendation, establish what the recipient needs to decide and what the recommender actually knows.
+Choose the result before recruiting contributors. For a case, establish the subject and relevant configuration, what has been tried, the uncertainty, permitted material and useful response window. For a shared resource, establish who will use it and which content serves their purpose. If that use depends on updates, establish who can make them in time. For a recommendation, establish what the recipient needs to decide and what the recommender actually knows.
 
 Agree how the recipient will recognise a useful contribution. A case owner may need a justified next step; a design team may need a testable use account; a service owner may need evidence that a permissible intervention restored the required function. The criteria come from the receiving work and its domain, not from the number of responses or the contributor's popularity.
 
@@ -51,19 +51,19 @@ Distinguish accepted, usable and applied. A recipient can accept a technically s
 
 Find contributors whose competence, experience or access matches the needed contribution. Ask for a bounded piece of work, explain its recipient and criteria, and disclose the relevant interests of the organiser or sponsor. Confirm willingness, available effort, preparation and a useful return window.
 
-Make the scope negotiable. A person can provide an observation without writing the whole guide, review one claim without maintaining the product, or answer a question without accepting a permanent service obligation. If the receiving promise requires more than anyone can commit, narrow it, obtain funded provision or use an accountable supplier.
+Make the scope negotiable. A person can provide an observation without writing the whole guide, review one claim without maintaining the product, or answer a question without accepting a permanent service obligation. If the promise exceeds the effort available, look for funded provision or another accountable supplier. To reduce a commitment already made, use the agreed right to change it or obtain the agreement of those whose claim would change.
 
 Obtain the material, tools, access and permissions needed for the chosen work. OCE.6 supplies the fuller method when the work requires organisational assignments or enabling relations. Its central distinction matters here: selecting a capable contributor, agreeing a contribution and establishing permission are different achievements.
 
 Provide the preparation the contributor needs. A peer can help formulate a case or inspect an example. A qualified HCD contribution can develop a missing human capability. If the underlying professional method is unavailable, return that development or inquiry question to Method Engineering or Research Method Practice.
 
-Identify the recipient before the contribution is made. Agree when and how they will inspect it and give a useful response. An open suggestion box without a receiving decision can invite effort the organisation is not prepared to use.
+Identify the receiving work. For a contribution promised to a particular person or team, establish who will receive it and any response that is due. A public reference can serve a defined class of users through a place they can reach. Making an entry available there can complete a publication request before any individual uses it. If people are invited to submit work for a decision, arrange who can inspect it and on what terms contributors can expect a reply.
 
 #### CB.5:4.3 - Choose the work and its acceptance conditions
 
 The following branches illustrate different contributions. Select the branch that matches the receiving result and combine branches only with an explicit connection.
 
-**Answer a question or provide peer support.** Prepare the question, connect it with a competent willing respondent and compare the response with the case's conditions. Ask for the basis and applicability of the answer when these change its use. The case owner returns what became possible, what was tried or which condition still prevents action. Use the relevant service route when a response or escalation must be dependable.
+**Answer a question or provide peer support.** Prepare the question, connect it with a competent willing respondent and compare the response with the case's conditions. Ask for the basis and applicability of the answer when these change its use. If the exchange calls for a report on later use, the case owner can return what they tried, what it enabled or which condition still prevents action. Use the relevant service route when a response or escalation must be dependable.
 
 **Enable self-service.** Give the user an applicable instruction, necessary access and a recognisable result or stopping point. Try the route under the user's conditions and provide a route for exceptions. A public reference may serve many people who never join the discussion. OPS.6 supplies the action and return discipline when this is an operational case; the applicable domain method supplies the action itself. A confusing or obsolete instruction returns to its owner for correction.
 
@@ -71,9 +71,9 @@ The following branches illustrate different contributions. Select the branch tha
 
 **Recommend an offer to a potential user.** Connect a real receiving need with an accurately described offer. State the experience or evidence behind the recommendation, its limits and the recommender's relationship to the provider. Let the recipient inspect the terms and decide whether to continue. CB.1 supplies the honest-offer discipline; the provider remains responsible for product claims. A community relationship supplies no obligation to promote a sponsor, and a purchase alone does not demonstrate that the recommendation served the person.
 
-**Co-design a result or product.** Choose what contribution is wanted: a use account, requirement, concept, design alternative or tested part. Give contributors the relevant problem, constraints, available material and acceptance question. SYSE.2 helps connect the use situation to a candidate concept and compare changes on either side of the system boundary. The receiving product specialist must examine the contribution and return an adoption, revision, rejection or unresolved question with a reason. A popular proposal still needs the applicable engineering judgement.
+**Co-design a result or product.** Choose what contribution is wanted: a use account, requirement, concept, design alternative or tested part. Give contributors the relevant problem, constraints, available material and acceptance question. SYSE.2 helps connect the use situation to a candidate concept and compare changes on either side of the system boundary. A set of alternatives can fulfil a commission before the product specialist chooses one. The role authorised to decide on adoption assesses the alternatives when that choice is due. If a response is owed, return what the agreement calls for to its intended recipients. They may be due the name of the selected option, the grounds for the choice or a technical assessment while the choice is still open. A popular proposal still needs the applicable engineering judgement.
 
-**Produce or improve material.** Establish the reader's intended action, the subject method and correctness basis, and who can review and maintain the result. Ask participants for useful cases, explanations, corrections or a bounded authored contribution. Inspect the result through a representative use before presenting it as a reusable answer. For a teaching publication, obtain the relevant HCD learning design and use Learning Product LPF for the publication under the access condition in [CB.Reference:8](08-cb-reference-8---actual-supplier-returns.md); different contributors can supply the subject expertise, authorship, learning design and provision. If a necessary contribution cannot be obtained, preserve the gap instead of treating submitted material as a complete learning product.
+**Produce or improve material.** Establish the reader’s intended action and how to judge the material’s correctness for that use. Obtain the subject expertise it requires. Arrange upkeep if users will depend on current content. Ask participants for useful cases, explanations, corrections or a bounded authored contribution. Inspect the result through a representative use before presenting it as a reusable answer. For a teaching publication, establish the learning design needed for the reader’s intended action. Use Learning Product LPF when the commission calls for that production practice, under the access condition in [CB.Reference:8](08-cb-reference-8---actual-supplier-returns.md). Different people can supply the subject expertise, authorship, learning design and provision. If a necessary contribution cannot be obtained, preserve the gap instead of treating submitted material as a complete learning product.
 
 **Maintain an object or a shared resource.** Name what must remain usable and who can authorise the actual work. For technical maintenance, MNT.1 establishes the unit, configuration, required functioning and the question being decided. Obtain the applicable professional method and permissions before an intervention; return functioning evidence and the separate decision to resume use where required. For a knowledge resource, obtain a capable maintainer, correction criteria and a route for obsolete or disputed content.
 
@@ -99,11 +99,11 @@ These forms can be combined. A story can clarify a case, a demonstration can tes
 
 #### CB.5:4.5 - Prepare an external contribution without losing the question
 
-Invite an external expert or neighbouring practitioner when the group lacks a needed perspective or competence. Give the guest the question, relevant material, participant preparation and expected result. Check that the guest can address it and agrees to an interaction that lets participants clarify and examine the contribution.
+When the group needs outside expertise, start with what participants still need for their task. An accessible, qualified written answer may settle their question. When a further contribution is needed, give the expert the question, relevant material and intended use. Establish what they can supply and how the group can use it.
 
-A prepared presentation can be useful, but leave enough time for the community's questions and their application. The guest may need to observe the work first, respond to selected cases, or join a small group after a general explanation. Choose the arrangement with the guest rather than presuming that a familiar lecture supplies it.
+When participants need discussion or a promised opportunity to ask questions, arrange the exchange with the guest and allow time for it. The guest may need to observe the work first, respond to selected cases or join a small group after a general explanation. Give participants the material and opportunity to make any judgement entrusted to them.
 
-Connect preparation, shared work and continuation. Participants can submit questions in advance; the guest can identify missing context; afterwards, the recipient can return what was used or still needs clarification. Obtain agreement on retained material and attribution. A recording serves later use only when it contains the relevant question and can be accessed under the agreed conditions.
+Connect preparation, shared work and continuation. Participants can submit questions in advance; the guest can identify missing context; afterwards, the recipient can return what was used or still needs clarification. Check which later uses of retained material and which forms of attribution the agreement covers. A recording can support a new question about an observable action. To recover the answer to an earlier question, identify that question from the recording or a connected source.
 
 If the desired result is a continuing course, service or research project, obtain its provider and resource arrangement. The community can contribute domain expertise and cases, but a single guest visit does not supply the whole undertaking.
 
@@ -111,9 +111,9 @@ If the desired result is a continuing course, service or research project, obtai
 
 Give the recipient the contribution together with what determines its use: the question, applicable conditions, evidence or domain basis where needed, and unresolved limits. Use the existing discussion or work record when it can carry these facts.
 
-Ask the recipient to return a meaningful disposition. Examples include: used as supplied; accepted for a stated later use; useful after a specified change; declined because a condition or requirement differs; or not yet assessable because a needed basis is missing. Explain the reason that can improve the contribution or prevent inappropriate reuse.
+When the receiving decision is part of the exchange, establish what happened on the agreed terms. A decision or use already recorded can supply the return. If the outcome is open, ask the recipient what they could use, accept, decline or still need changed. Relay the reason when it will help the contributor improve the work or understand the decision.
 
-Agree further work rather than silently extending the original commitment. A small correction within the accepted task can proceed with the contributor's available effort. A materially different request, repeated revisions or a new maintenance obligation needs a revised arrangement.
+Read the agreement for the work that comes next. It can already provide for another review, several revisions or recurring maintenance. Establish that the promised effort and support are available when due. If the new work exceeds the agreed result, period or effort, obtain a further commitment from whoever would undertake it.
 
 Close a failed contribution honestly. When no suitable helper is available, return the unanswered question and a possible source or service route. When the user cannot act, distinguish missing access from an unusable answer. When the product team will not inspect suggestions, stop inviting that kind of work until a receiving arrangement exists.
 
@@ -121,13 +121,13 @@ For an operational case, OPS.6 separates selection, performance and the resultin
 
 #### CB.5:4.7 - Make useful material reusable and support continuation
 
-Retain a contribution when another receiving use warrants it and the relevant permissions allow it. Preserve the situation, method or explanation, applicability conditions and limits. Give later users a way to find it and report a changed condition or error.
+For later use, identify what may be shared, with which recipients, for which actions and for how long. An existing permission or a decision by the authorised holder may cover the new group or edition. If a contributor permitted a demonstration at one meeting, establish the basis for circulating a recording or adapting it for another group. Preserve the situation, method or explanation, conditions of use and limits. Give later users a way to find the material and report a changed condition or error.
 
-Choose a capable owner for correction and maintenance. For professional method content, use the relevant Method Engineering contribution; for a resource containing existing qualified advice, use its established subject review and publication route. If no one can maintain a changing answer, limit its stated use and avoid making an indefinite currency promise.
+Where users will rely on current advice, arrange capable correction and maintenance. For professional method content, use the relevant Method Engineering contribution. For existing qualified advice, use its established review and publication route. A dated record may already serve a historical use. If no one can maintain a changing answer, state the period and conditions it can serve.
 
 Observe how the arrangement works for both recipients and contributors. Are useful questions reaching suitable contributors? Are answers used or returned with reasons? Does preparation and follow-up exceed the available effort? Repeated reliance on one generous contributor is a provision question even when the contribution is voluntary.
 
-Change the specific failed connection: improve the request, recruit another qualified helper, make a reusable answer accessible, change a response promise or stop an unsupported activity. Return to CB.1 when a service, resource or another contribution better serves the purpose. Keep enough information for the next participant to continue without requiring everyone to repeat the whole exchange.
+Repair the connection that failed. This might mean clarifying the request, recruiting a qualified helper or making a reusable answer accessible. Pause or stop the affected activity if it has become infeasible or its permission has ended. Establish what the recipient is still owed and which remedy the terms allow. Return to CB.1 when a service, resource or another contribution better serves the purpose. Keep enough information for the next participant to continue without requiring everyone to repeat the whole exchange.
 
 ### CB.5:5 - Archetypal Grounding
 
@@ -183,8 +183,8 @@ A usable contribution arrangement establishes:
 - a suitable contributor and a feasible accepted scope;
 - required material, preparation, access and permission;
 - a construction that fits the kind of work;
-- a recipient able to inspect and return a disposition;
-- the result obtained, any remaining gap and any agreed continuation. For joint work, identify the contributions and the rule or working relationship by which they formed that result.
+- an accessible means of receipt and, where a disposition is due, a recipient able to give it;
+- the result obtained, any remaining gap and any agreed continuation. A delivery record can establish receipt of a joint result. To explain how participants produced it, credit particular work or arrange to repeat it, identify the contributions and relationships that conclusion needs.
 
 A plausible match is enough to begin a bounded invitation. Reliance on correctness, performed intervention, restored functioning or acquired capability requires the relevant domain evidence.
 
@@ -234,7 +234,7 @@ The clinic and external-contribution variants are analytical adaptations of the 
 - **Uses [OPS.6 (OPS.6:4)](../ops/34-ops-6---continue-cases-and-handle-exceptions.md#ops64---solution):** a permissible next action, its performance evidence and the returned case result.
 - **Uses [SYSE.2 (SYSE.2:4.3)](../../engineering-dpf-suite/syse/23-syse-2---develop-linked-use-and-system-concepts.md#syse243---develop-the-use-claim-and-candidate-system-concept-together):** connected use and system-concept proposals for co-design contributions.
 - **Uses [MNT.1 (MNT.1:4)](../../engineering-dpf-suite/mnt/12-mnt-1---identify-the-maintained-system-use-and-permission-bo.md#mnt14---solution):** the bounded technical-maintenance question, operating conditions and relevant control.
-- **Uses [HCD](../../human-capability-engineering-dpf-suite/hcd/_index.md) and Learning Product LPF:** learning and publication contributions when those are needed.
+- **Uses [HCD](../../human-capability-engineering-dpf-suite/hcd/_index.md) and Learning Product LPF:** HCD guides learning design where needed. Learning Product LPF gives the production method for commissions that require this local practice.
 - **Returns to [Method development in Core (FPF C.39)](../../../sections/09-part-c---kernel-extension-specifications/97-c-39---find-and-develop-a-way-to-obtain-a-result.md) or [Research Method Practice (RMP)](../../rmp/_index.md):** an unavailable professional method or an unresolved inquiry needed by the contribution.
 
 ### CB.5:End

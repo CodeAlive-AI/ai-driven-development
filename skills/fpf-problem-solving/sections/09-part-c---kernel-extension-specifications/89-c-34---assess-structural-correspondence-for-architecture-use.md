@@ -72,8 +72,8 @@ C.34 makes the preservation claim explicit before the result is used.
 | Equivalence vs use | Exact equivalence is rare and often unnecessary; the declared use decides how much preservation is enough. |
 | Formal rigor vs practitioner action | Formal mapping modes help only when preserved and lost structure are named in architecture terms. |
 | Shape vs semantics | Two graphs, views, or diagrams can have the same shape while their relation types differ. |
-| Compression vs loss | Projection, abstraction, coarsening, and simulation relations make work possible by dropping structure. In a chain from selected source structures to architecture, architecture description or view, and narrative or framework carrier, preservation must be checked relation by relation rather than claimed as one global sameness. |
-| Cross-context reach | A mapping across teams, source traditions, tool models, or holon levels needs the Bridge predicate and conformance test when substitution or transfer is claimed. |
+| Compression and loss | Identify which relation the receiving work has to recover through a projection, model or narrative. Test the links used in its derivation. A supported end-to-end correspondence can resolve an end-to-end question. Establish the individual links when the answer relies on them or the commission asks about them. |
+| Cross-context reach | A change of team, tool or composition scale can preserve the relevant meanings or change them. Establish the structural correspondence needed in the claimed direction. A transfer between different local senses also needs its semantic Bridge. |
 
 ### C.34:4 - Solution
 
@@ -81,7 +81,7 @@ State the decision that will use the correspondence. Identify the entities being
 
 For a grouping, ask how membership is determined. If both models define membership by the same rule and the correspondence preserves everything that rule uses, derive the target grouping. If membership is assigned independently, inspect the assignments or an applicable allocation rule and the facts it uses. For an assignment whose preservation is in doubt, keep the matched entities and links fixed. Could two different assignments fit them? When this changes who may act, the correspondence alone leaves that decision open. Correspondence between two disciplinary models can matter even when both are at L2. A claim of model refinement has its own test in `B.5.MR:4.3`.
 
-When reviewing a comparison someone produced, distinguish the correspondence supplied in the assignment from the choices the person or AI agent made. Applying a supplied match can establish that the comparison gave the right result. To credit someone with constructing a disciplinary model of correspondence, recover how they selected the entities, interpreted the links and justified the matching rule for further comparisons. An earlier decision record can show those choices. A new task can leave them open. Use `C.39.QR:4.3` when the attribution changes what you entrust to the agent.
+To review a correspondence, establish what the commission supplied and which choices it left open. A registry may fix the entities and the meaning of its fields while leaving the matching rule to a service or team. Inspect how the contributors justified that rule and where it can be used again. An earlier work record can show who chose it and what help was available. Running a supplied match can establish the comparison requested. To credit independent construction, establish the consequential choices the performer made under the stated conditions. Use `C.39.QR:4.3` when that attribution changes what work you can entrust to them.
 
 Work in this order:
 
@@ -124,15 +124,15 @@ Use `A.6.M` for substitutability, `A.6.F` for a function or bearer question, `C.
 
 Neural substitution case. A candidate replaces an attention block with an SSM block. C.34 asks which selected structures are preserved: sequence dataflow, routing interface, memory access, latency envelope, training resource boundary, or inference resource boundary. Shape sameness or benchmark improvement does not by itself preserve the architecture relation needed by the next claim.
 
-Selected source structure and narrative structure case. An architecture narrative orders a candidate set as "pressure, alternative, trade-off, decision, residual." C.34 records:
+Selected source structure and narrative structure case. An architecture narrative uses the order “pressure, alternative, trade-off, decision, residual.” To recover the grounds for a decision, match the option, condition and reason in the narrative to the source. Suppose the source records that B was selected because it met the custody condition and also gives the evaluations of the alternatives. The brief narrative preserves B and its reason and omits those evaluations. The resulting account includes the following.
 
 | Aspect | Value |
 | --- | --- |
 | Mapping mode | `correspondence` |
-| Preserved structure | `candidate alternative and selected trade-off relation` |
-| Lost structure | `full Pareto-front detail and rejected-candidate evals` |
+| Preserved structure | The selected alternative and its connection to the custody condition in the source. |
+| Lost structure | The evaluations of the alternatives that were present in the source. Recover them from that source if comparison among alternatives is commissioned. |
 | Directionality | `selected source structure to narrative only` |
-| Admissible use | `team orientation and decision memory` |
+| Admissible use | Recall the selected option and its stated reason. The headings on their own establish only presentation order. |
 
 The narrative order is not exact equivalence and does not license implementation, evidence, or assurance use without the rule that defines or tests that downstream claim.
 
@@ -144,7 +144,7 @@ The narrative order is not exact equivalence and does not license implementation
 | Formal vocabulary mistaken for adequacy | Keep graph isomorphism, morphism, functor, entropy, or simulation wording as lens or mapping support until the architecture use, preserved structure, and loss are declared. |
 | Symmetric-equivalence overclaim | Require directionality and scope. A projection, abstraction, simulation relation, or coarsening often licenses one direction only. |
 | Semantic-loss hiding | Make lost control authority, allocation, bearer semantics, placement, timing, confidence, or source-tradition meaning explicit before the mapping is reused. |
-| Bridge-bypass bias | Handle cross-context substitution, source-tradition transfer, and later conformance strengthening under `F.9` or `F.15` instead of letting C.34 authorize the transfer alone. |
+| Bridge-bypass bias | When the transferred result depends on a correspondence between different local senses, establish it under `F.9`. Apply `F.15` where the receiving use requires a conformance test. |
 
 ### C.34:7 - Conformance checklist
 
@@ -207,6 +207,6 @@ The source families explain the safeguards. Structural-equivalence research show
 - **Builds on:** `A.22`, `C.30`, `C.30.ASV`, `C.30.AD`, `C.29`, and `F.9`.
 - **Uses:** `C.16`, `C.25`, and `C.32.ACE` when a preservation, similarity, distance, entropy, loss, or compression claim is recorded as a reading or eval result.
 - **Coordinates with:** `C.32`, `C.32.PAD`, `C.32.ADR`, `C.30.TFS-REL`, `C.30.STRAT`, `A.6.M`, `A.6.3.NAR`, `C.31`, `C.31.ASAP`, `E.18`, and `F.15`.
-- **Boundary:** C.34 tests declared preservation adequacy for an architecture use. It does not make a formalism ontology, select a candidate, decide a project, establish evidence or assurance, or authorize substitution across contexts; that substitution requires the Bridge predicate and conformance rule.
+- **Boundary.** C.34 tests declared structural preservation for the architecture use. Where substitution or transfer relies on a Bridge between local senses, use F.9. Apply F.15 when the receiving use requires its conformance test. Candidate selection, project decisions, formalism interpretation, evidence and assurance retain their own grounds.
 
 ### C.34:End

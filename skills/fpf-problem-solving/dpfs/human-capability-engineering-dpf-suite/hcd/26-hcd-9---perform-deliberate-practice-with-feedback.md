@@ -67,7 +67,7 @@ Establish the conditions of the episode.
 
 1. the learner, later-work target, selected development method, representative task and question or decision the episode should inform;
 2. the practice focus, observable action, required result, domain criteria, protected errors, and useful uncertainty;
-3. the task condition that makes the action necessary and, if the episode tests discrimination or adaptation, one condition that could change the warranted move;
+3. the task condition that makes the action necessary and, if the episode tests discrimination or adaptation, a condition whose variation could change the warranted action or the grounds the learner must use even when the action stays the same;
 4. the sources, tools, AI, peer, teacher or specialist help permitted, the time available, and the prompts or demonstrations arranged. Use HCD.7 or HCD.8 if a needed contribution still has to be arranged, obtained or built; and
 5. the feedback provider, safe intervention point, opportunity to use feedback, retry boundary, and stopping condition.
 
@@ -204,7 +204,7 @@ The practitioner has a qualified worked comparison and does not yet know whether
 
 If the learner repeats “we need pressure,” ask how each possible pressure result affects the two explanations under the supplied model. A value near 448 kPa supports increased resistance under the stated conditions. A value near 400 kPa redirects attention toward regulation efficiency. These conditional predictions leave the actual pressure and any unique cause open. If the learner still cannot use the distinction, HCD.6.1 can help design that practice. Use a suitable existing explanation or obtain the help still needed through HCD.7 before expecting an unaided retry when the practice question calls for one.
 
-The learner preserves the calculation, qualifies the causal claim and explains how the possible results of a comparable pressure observation would affect the next decision. They request that observation within the remaining one and a half specialist-hours supplied by HCD.6:5.1. The learning arrangement separately needs time for explanation, individual feedback and any retry. The corrected learner contribution is the conditional explanation and choice of observation.
+The learner preserves the calculation, qualifies the causal claim and explains how the possible results of a comparable pressure observation would affect the next decision. They request that observation within the remaining one and a half specialist-hours supplied by HCD.6:5.1. The learning arrangement separately needs time for explanation, individual feedback and any retry. The learner interprets the supplied predictions, connects the comparison to a decision and requests the already identified observation under the available allowance. To credit constructing the rival explanations or designing a distinguishing observation, look for an occasion when those choices remained with the learner.
 
 A later case changes the uncertainty or removes access to comparable pressure data. The learner weighs any attainable observation against its preparation, specialist time, comparison and displaced work. If none contributes enough, the learner can return the supported energy-per-volume change and the two qualified explanations to the responsible practitioner. The cause remains unresolved and a resistance-specific remedy lacks grounds. This can be a successful retry under the stated criteria.
 
@@ -236,7 +236,7 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Examine one focuse
 | --- | --- | --- |
 | hours-dose bias | Logged time is treated as the mechanism or proof of improvement. | Identify the task, what the learner did, the help and feedback received, and any correction or retry. |
 | corrected-product bias | The final answer overwrites the first attempt and received help. | Preserve the first response, what the provider contributed, what the learner did with it and any subsequent retry. |
-| answer-substitution bias | Teacher, peer, or AI output becomes the learner's performance. | Require a learner action after the contribution and retain attribution. |
+| answer-substitution bias | Teacher, peer, or AI output becomes the learner's performance. | Attribute the supplied answer to its provider. Judge the learner’s performance from what the learner did. To establish use of feedback or a requested correction, examine what the learner did with it. |
 | score-only bias | A mark identifies a threshold while the learner still needs to know what to do. | Identify the criterion, what the learner did well, any error and the next action or grounds for retaining the current one. |
 | feedback-immediacy bias | One timing rule is applied regardless of risk and purpose. | Choose timing from safety, consequence, first-attempt value, and error rehearsal. |
 | exact-repeat bias | Memorizing the corrected answer is mistaken for rule use. | Change a decision-bearing condition when discrimination or adaptation matters. |
@@ -266,7 +266,7 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Examine one focuse
 | “Feedback was provided” | Its content, recipient, timing and opportunity for use remain unknown. | Identify what reached the learner, how it bore on the criterion and what the learner did with it. |
 | “Here is the correct answer” | Provider output can replace the learner action. | Have the learner use the information in the relevant action; record the help and obtain a learner-authored correction when one is needed. |
 | “The corrected file proves mastery” | The first attempt and support have disappeared. | Recover the attempt, the help received, the learner’s response and any retry from the available evidence. |
-| “Repeat the same question” | Answer memory can mimic the intended discrimination. | Change the condition that should change the warranted move. |
+| “Repeat the same question” | Answer memory can mimic the intended discrimination. | Vary a condition that matters to the target. Ask for the decision or explanation it affects. Where the same action remains warranted, the learner may still have to establish a different ground. |
 | “Retake the whole module” | Already supported requirements and the exact gap are lost. | Keep compatible success and select any retry for the specific unresolved requirement. |
 | “Improvement after feedback proves causality or durable capability” | Temporal order does not establish either conclusion. | Report changed performance under the recorded conditions. Seek stronger evidence only when the receiving use needs the stronger claim. |
 | “Everyone passed overall” | A critical or individual unresolved gap is hidden by aggregation. | Keep holder-level requirements, safe stops, and continuations visible. |

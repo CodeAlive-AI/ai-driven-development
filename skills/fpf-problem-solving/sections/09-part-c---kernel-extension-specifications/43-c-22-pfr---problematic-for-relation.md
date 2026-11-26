@@ -16,7 +16,7 @@
 
 **What this buys.** Actual Problems can exist before discovery, can be referenced while still ongoing, and can be distinguished across repeated adverse episodes. One applicability relation supplies the predicate, problem-for entity, claim scope, and declared criterion-applicability window used by PFR; its actual occurrence extent is separately derived from uninterrupted obtaining. Measurements, evaluations, evidence, claims, cards, and method search remain available without becoming Problem identity.
 
-**Early battery stop.** A low terminal-voltage reading can be a useful signal and can justify a `ProblemCard`, but it is not itself the actual-condition participant. Until a direct voltage-state pattern supplies the relation kind, participant meanings, obtaining rule, temporal extent, recurrence, and occurrence identity, the battery case remains non-conforming: the reading, alarm, report, assertion, and card establish none of that world-side relation.
+**Battery example.** A technician needs to know whether a vehicle may be released for its intended start. Recover the release rule, its battery and load conditions, and what the available reading establishes under those conditions. A bound wholly below the permitted voltage can settle that decision. A different question arises if a service history must identify the particular low-voltage episode. That use needs an actual voltage-state relation with defined participants, conditions of occurrence and temporal identity. The reading, alarm and report can support the claim about the battery. The formal PFR occurrence remains unresolved while those grounds are missing.
 
 Once such a governor exists, the applicability relation can connect its selected voltage predicate to the vehicle, intended-start `U.ClaimScope`, and declared criterion-applicability window; discovering a method still changes solvability rather than PFR actuality.
 
@@ -202,9 +202,9 @@ Use `[adverseEpisodeStart, open]` only in a current claim whose evidence support
 
 A current assertion or description distinguishes three cases in ordinary words:
 
-- **supported current:** the evidence supports continuous adverse obtaining from the episode's actual inception through the stated reference time; publish `[adverseEpisodeStart, open]`;
-- **supported closed:** the evidence supports actual cessation at an exact boundary; publish `[adverseEpisodeStart, adverseEpisodeEnd]` for the same occurrence reference;
-- **continuity unresolved:** the available evidence does not decide whether an unobserved cessation or restart occurred; retain the recoverable earlier occurrence reference and the supported segments, but assert neither one continuous occurrence nor two occurrences across the gap.
+- **Current adversity.** Report adversity at the reference time when the observations and criterion establish it. Publish `[adverseEpisodeStart, open]` when the start and continuity of this occurrence through the reference time are also supported.
+- **Established cessation.** Report cessation and whatever bounds the evidence establishes for its time. If the condition was adverse at 09:00 and non-adverse at 11:00 while the criterion continued to apply, the 09:00 episode had ended by 11:00. Publish `[adverseEpisodeStart, adverseEpisodeEnd]` when both endpoints are established for that occurrence.
+- **Unresolved continuity.** When a gap could contain cessation and restart, retain the known occurrence reference and supported segments. State which claims about the gap remain open.
 
 Later evidence may revise the assertion, including its claimed start, end, or continuity, without creating or changing the world-side episode. If it supports an earlier actual cessation, complete the extent of the earlier occurrence at that boundary. If it also supports later renewed adverse truth, identify the later occurrence from its own actual inception. Until that distinction is supported, do not attach the later adverse segment to either the old or a new occurrence by default.
 
@@ -299,7 +299,7 @@ If *patient* also names a work-facing classification, recover the classified Sys
 3. Dated repair work occurs without a demonstrated condition change; or
 4. Dated repair work is connected through its direct change/result governors to actual cessation or non-adversity of the condition.
 
-Only the fourth outcome can end PFR while applicability continues. A work record, result claim, acceptance verdict, or method label is insufficient.
+While the criterion continues to apply, this PFR ends when the actual condition ceases or becomes non-adverse. It may end before anyone observes the change. To credit the repair with that outcome, establish the change and how the performed work brought it about. A record can support the particular claim its content and provenance warrant.
 
 ### C.22.PFR:6 - Bias-Annotation
 

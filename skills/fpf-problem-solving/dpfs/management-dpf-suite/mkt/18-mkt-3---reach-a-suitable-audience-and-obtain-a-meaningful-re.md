@@ -77,6 +77,8 @@ Before the attempt, decide which observations can answer the live question. Use 
 | Reply, request or refusal | A particular response occurred, with its stated grounds when available. | The unstated reason for everyone else's silence. |
 | Later action | The named appointment, acquisition or use occurred. | That the message caused it or the promised benefit followed. |
 
+When the question concerns a change in how a person values the offer, compare their judgement on the feature or choice in question before and afterwards. Someone can buy as soon as a budget becomes available while holding the same opinion throughout. To attribute a change in judgement to the message, use the causal comparison in MKT.10.
+
 Observe meaning by asking a fitting recipient to explain what would be supplied and what they would need to do, or by using another suitable direct task. Do not teach the missing explanation during the probe and then credit the original message with the repaired understanding. A friendly colleague familiar with the product can help with drafting but may not expose the intended audience's inference.
 
 Retain the unit, denominator, period and selection conditions of any count. Distinguish ten replies from ten suitable recipients, and distinct recipients from repeated exposures. If two routes reach different populations at different times, their response rates do not isolate the effect of the route. Use [MKT.12](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) for a missing evidence question and MKT.10 when a causal contribution or cost comparison is needed. A bounded communication attempt does not automatically require either inquiry.

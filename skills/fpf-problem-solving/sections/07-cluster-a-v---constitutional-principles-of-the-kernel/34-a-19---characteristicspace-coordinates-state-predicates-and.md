@@ -11,11 +11,11 @@
 
 ### A.19:0 - First use: declare a space and one predicate
 
-Declare which Characteristics form the space. Add a reusable predicate when the receiving use needs to test a condition on a state in that space.
+Begin with the conclusion or action for which someone needs the space. Identify its subject and the conditions under which that conclusion could change. When the question concerns a whole, a part, or their interaction, decide which of those subjects each proposed Characteristic describes. A total can answer a question about the whole while leaving the distribution among its parts undetermined. If the question relates several kinds of holon, choose the relevant span of parts and wholes for each kind. Decide what the model at each scale must distinguish. To explain a relation between scales or a joint result, identify what connects the models and which conditions must hold across them. A model of each part can suffice for a local decision while omitting a condition on their joint operation.
 
-**First move.** Name the `CharacteristicSpace` and list its slots. Each slot names one Characteristic, its subject or input roles, and one Scale with its admissible values. Add order, topology, distance, or a mapping only when a use needs it.
+**First move.** For each proposed slot, ask what distinction it retains. Could two configurations that the subject and its operating conditions permit have the same retained coordinates yet require different conclusions or different grounds? If so, identify the missing distinction or relation and revise the space or the claimed use. An applicable rule can also establish directly that the retained coordinates suffice. Specify each chosen Characteristic, its subject or input roles, its Scale and admissible values. Shared constraints can make combinations of individually admissible values unreachable. Add order, topology, distance, a map or a reusable predicate when the use calls for it.
 
-**Smallest complete case.** A pump team declares `PumpOperatingSpace` with two slots:
+**Applying a declared space.** For example, a pump team has already chosen two slots for `PumpOperatingSpace`.
 
 | Slot | Characteristic and subject | Scale |
 | --- | --- | --- |
@@ -26,7 +26,7 @@ For Pump #37, the available tuple of Coordinates is `(72 °C, 315 kPa)`. The reu
 
 > `ready(x) := 60 °C <= x.coolantTemperature <= 80 °C and x.dischargePressure >= 300 kPa`.
 
-For this tuple, `ready(x)` is true. That is the result: a reader can recover the two meanings, inspect the input, and repeat the test. The declaration does not by itself claim that the readings are current, authorize work, or pass a gate.
+For this tuple the predicate is true. This establishes the answer to the stated test in the declared space. Suppose the operating decision also requires a minimum flow and two allowed configurations at those temperatures and pressures give flows on opposite sides of that minimum. The same tuple would then support different operating decisions. The team can retain a flow coordinate or supply a relation that settles the flow condition for this use. The original temperature and pressure test stays usable for the question it answers.
 
 **Add only what the next use needs.**
 
@@ -314,7 +314,7 @@ It also corrects consumer-pattern bias. A.19 is the pattern for the reusable spa
 
 ### A.19:6 - Conformance checks
 
-Start with the base declaration. If the job is only to declare a local space, or that space plus one predicate, stop after these checks.
+Start with the use for which the space was chosen. When a space is commissioned to support a decision or explanation, establish which distinctions that use requires and why the retained coordinates and relations preserve the answer over the required domain. A sufficient bound can justify the answer for every reachable configuration even if the exact set of possibilities is unknown. A claimed exception requires a configuration that can occur under the stated conditions. If the commission supplies the space and asks only for an evaluation, apply its declared predicate and conditions.
 
 **Base declaration**
 
@@ -362,7 +362,7 @@ _The following are common modeling mistakes (“anti-patterns”) related to mea
 
 -   **“Retro-fix past assertions.”**
     ✗ Going back to edit or reinterpret old StateAssertions after changing a threshold or NormalizationMethod (e.g. “We updated the criteria, let’s ‘fix’ last quarter’s records to match”).
-    ✓ **Preserve the historical assertion and its basis.** New criteria require a new evaluation for the use that needs them, with the relevant NormalizationMethod, UNM declaration or checklist identified. Correct an erroneous assertion or retract an unsupported conclusion explicitly while retaining what was asserted, when, and under which criteria. Renewed use checks applicability and currentness; it does not silently rewrite the earlier criteria.
+    ✓ **Preserve the historical assertion and its basis.** For a current use under new criteria, establish the required evaluation and any applicable NormalizationMethod, UNM declaration or checklist. Correct or retract an assertion you are authorized to maintain. Preserve what was asserted, when and under which criteria. If another party controls it, revise your own reliance as warranted and bring the changed basis to that party when the affected use calls for correction.
 
 **C.27 temporal-claim relation.**
 

@@ -43,7 +43,7 @@ Distinguish two common requirements:
 
 A job that fits the first requirement may fail the second. Also retain the amount and duration of protected service needed after the return; a prompt start alone may not satisfy the commitment.
 
-Separate capacity needed for this protection from capacity left over after it. An idle interval does not establish either amount. If several services rely on the same reserve, retain their relevant joint demand through OPS.10.1. OPS.12 supplies the human capability, fatigue, rest and relief conditions that the allocation must preserve.
+Separate capacity needed for this protection from capacity left over after it. An idle interval does not establish either amount. If several services rely on the same reserve, retain their relevant joint demand through OPS.10.1. Use OPS.12 to identify the human demands, recovery and relief conditions the allocation must preserve. Establish actual capability and availability from evidence for this work and period.
 
 #### OPS.8.2:4.2 - Choose a unit that can yield the required resources
 
@@ -56,7 +56,7 @@ For that unit, establish how progress and resources can be released:
 | Finish before a known protected start | The unit, cleanup and restoration fit the available calendars before that start. |
 | Pause and resume later | A permissible stopping point can be reached; the needed resources are released; sufficient state remains for resumption. |
 | Abandon and later restart | Abandonment is permissible, resources can be recovered in time, and lost work and any remaining effects are included in the choice. |
-| Transfer the auxiliary work | A capable recipient is available, the handover fits, and the transfer does not consume another resource needed by the protected service. |
+| Transfer the auxiliary work | A capable recipient with the required access and authority can take over and perform the work when due. The handover and the ensuing work leave the resources the protected service needs available when required. |
 
 For human work, a short note of the current state, next step and unresolved difficulty can reduce later reconstruction when that information would otherwise be lost. Use the existing work materials when adequate. Include the time to leave that note and the effort of repeated transitions.
 
@@ -96,7 +96,7 @@ Choose the simplest adequate arrangement. The choice may favor a short useful un
 
 Before starting, establish that the protected service is covered under the selected conditions, the auxiliary unit can use the interval, and the recall or finish signal will reach the performer or controller in time. The existing queue and work instructions can carry the arrangement.
 
-On recall, execute the selected interruption and restoration, then start the protected action when its inputs are ready. If the supporting resource or restoration condition has changed, use the corresponding alternative or revise the affected commitment; repeating the old timing estimate cannot restore availability.
+On recall, execute the selected interruption and restoration, then start the protected action when its inputs are ready. If the supporting resource or restoration condition has changed, apply an available authorized alternative or refer a proposed change of commitment to the party entitled to decide it. Base the new timing on conditions that can actually be provided.
 
 When protected work permits auxiliary resumption, recover its actual state and any changes that occurred during the interruption. Continue from a still-valid checkpoint, revise the plan, restart or discard the unit according to the chosen arrangement. Preserve already incurred work and effects in that decision.
 

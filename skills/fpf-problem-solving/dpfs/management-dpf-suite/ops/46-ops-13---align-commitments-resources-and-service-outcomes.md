@@ -75,7 +75,7 @@ Preserve customer classes or conditions whose losses matter separately. A favora
 
 Consider the supported responses: keep the proposed promise, change its scope or time, change the resource arrangement, refuse the request or obtain a missing result. Compare consequential financial differences with OPS.14 when payment, displaced use or funding changes feasibility or preference.
 
-If asked what the parties could agree, state the supported options and the grounds for recommending one. If authorized to commit, state the selected result in the parties' ordinary service terms. Include the conditions on which they rely, the relevant uncertainty and the observation that would require another decision. Make any requested recipient action explicit, such as timely provision of an input or acceptance by a specified date.
+If asked what the parties could agree, state the supported options and the grounds for recommending one. When making a commitment falls within your present assignment or standing duty and the authority is in force, state the selected result in the parties’ ordinary service terms. Include the conditions on which they rely, the relevant uncertainty and the observation that would require another decision. Make any requested recipient action explicit, such as timely provision of an input or acceptance by a specified date.
 
 Apply the terms already in force to any change in an existing promise. If a proposed revision requires a new decision, obtain it from the authorized parties or report where it stands. Until an applicable revision takes effect, report the existing obligation and its current risk. An internal replan alone cannot discharge it.
 

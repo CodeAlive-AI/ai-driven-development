@@ -77,7 +77,7 @@ A dependent-type description can package the output with a proof of its property
 
 #### MATH.4:4.5 - Use the witness and return after a changed requirement
 
-Evaluate the construction for the needed input. Return the object and the property on which its next use relies. Reuse the general argument while its constructors, clauses and premises remain unchanged.
+Return the justified construction when the commission is for a method covering the admitted inputs. When a particular object is requested, evaluate the construction for that input and supply the property on which its next use relies. Reuse the general argument while its constructors, clauses and premises hold.
 
 If the receiver needs another quantity, check whether the current result retains it. If a parameter or formation rule changes, return to the affected base or constructor clause. If constructions are newly identified, check whether the output still defines a function on those identified inputs. A failed clause can supply a counterexample or a more specific construction question.
 

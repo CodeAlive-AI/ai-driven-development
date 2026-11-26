@@ -339,7 +339,7 @@ Preserve the cited baseline and its intended values. Operation applications and 
 
 ##### A.19.CHR:4.8.1 - Worked case — two offers from baseline to selected set
 
-**Situation and planned baseline.** The question is whether either offer can be discarded without accepting a worse price or defect-free proportion. Stipulate an A.15.2 WorkPlan `OfferReviewPlan@1`, local content locator `characterization`, selecting suite `OfferCHRSuite@1`.
+**Situation and planned baseline.** A buyer asks whether either offer can be discarded without accepting a worse price or defect-free proportion. A separate commission specifies how to perform and report the comparison under the suite. For the latter, stipulate an A.15.2 WorkPlan `OfferReviewPlan@1`, local content locator `characterization`, selecting suite `OfferCHRSuite@1`.
 
 This case's suite has the six distinct member declarations in §4.2.2, each at its §4.1 content in the same publication edition as this example. Its stable `mech_suite_id` is `OfferCHRSuite`; its obligations are the §4.3 clause set. The full canonical protocol is available, with Fold_Γ optional. The selected path uses `apply → Indicatorize → Score → Compare → Select`, under the operations' own eligibility evaluations.
 
@@ -373,7 +373,7 @@ Both normalizer instances and their method descriptions are declared by the case
 
 The suite's audit requirement is to recover these operation refs, effective arguments, guards and returned bindings, together with the baseline citation. Shared order and uncertainty obligations are satisfied without constructing a total score. There is no semantic, kind or plane correspondence, E.18 flow crossing, A.21 gate, implementation export or publication claim in this case; their conditional anchors are therefore inactive.
 
-**Changed condition.** Move the evaluation point to `2030-01-03T00:00Z` while retaining the selected method validity windows. UNM_Eligibility returns abstain. The planned method refs remain readable, but there is no new admitted NCV and no basis for continuing this selected normalization-based path to a new selected set. Reusing yesterday's values by changing their date would fail their binding and use conditions. A new valid method baseline and new applications are needed.
+**Changed condition.** Move the evaluation point to `2030-01-03T00:00Z` with the pinned normalization methods now outside their validity window. UNM_Eligibility returns abstain. A result from that specified protocol at the new point requires a valid method baseline and new applications. For the buyer’s dominance question, establish the relevant price and quality orderings at the new point. The original values can supply them if still applicable, as can current bounds that establish the same orderings. When A costs less and B has the higher defect-free proportion, neither dominates. If the available grounds permit different answers for the new point, the earlier comparison still answers for the earlier point. A new suite execution stays due when separately ordered.
 
 The useful result is the justified retained set under one resolved contract chain. Acceptance or authorization to buy, an independently admitted dated Work account, and publication of the result are separate claims; none follows from {A,B} or from the plan. A PlainView may say “both offers remain; neither dominates at the stated evaluation point” and cite the baseline. It may not say “purchase approved” or erase the expiry stop.
 

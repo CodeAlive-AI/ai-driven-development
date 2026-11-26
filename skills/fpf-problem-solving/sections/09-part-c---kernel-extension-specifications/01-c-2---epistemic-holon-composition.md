@@ -4,7 +4,7 @@
 
 **Use this when** you need to combine epistemes for a claim and intended use, or determine what an epistemic change or proposed substitution preserves.
 
-**First useful result.** Identify the claim and intended use, and recover the contributing epistemes or the source and proposed result of the change. Establish the scope, support dependencies and preservation conditions needed for the conclusion. Return the justified synthesis or change assessment, including any unresolved condition. An adequate synthesis need not have a common numerical R. Apply the F–G–R assessment or CL substitution conditions when the receiving operation uses them. If the question is only which episteme is meant, C.2.1 can suffice; identification or publication alone does not require a KD-CAL assessment.
+**First useful result.** Start with the conclusion the recipient needs for the intended use. For a synthesis, work back to the premises and connections that could warrant that conclusion (B.1.3:4.4). A separate claim about each part can need different grounds from a claim about what those parts can do together. When choosing the parts or models is itself at issue, use C.39.SA:4 to decide which distinctions to retain. For a proposed change, recover its source and proposed result. Establish the scope, support dependencies and preservation conditions needed for the conclusion. Return the justified synthesis or change assessment, including any unresolved condition. An adequate synthesis need not have a common numerical R. Apply the F–G–R assessment or CL substitution conditions when the receiving operation uses them. If the question is only which episteme is meant, C.2.1 can suffice; identification or publication alone does not require a KD-CAL assessment.
 
 **Scope & exports.** A substrate-neutral calculus for composing **epistemic holons** (`U.Episteme`) and reasoning about their change and equivalence.
 
@@ -89,7 +89,7 @@ For example, two necessary independent conditions with probabilities 0.9 each ha
 #### C.2:4.4 - What **must not** be conflated (normative guards)
 
 * **Representation structure ≠ carrier.** Files, PDFs, or repositories are **carriers** outside the episteme; they never count as parts of `U.Episteme` (**see C.2.1:4.1–4.2, :4.6, and :11 item 11**).
-* **Work and guidance.** **Systems** perform Work. Epistemes can guide or constrain that Work through their claim content; keep the guiding content distinct from its performer.
+* **Work and guidance.** Systems perform Work. An existing synthesis can answer the recipient’s question when its premises, connecting inference and grounds apply. To credit a participant with developing the synthesis, establish what they contributed. Supplying a premise, choosing the connection, checking the argument and communicating it can be different contributions. Credit the work the commission calls for.
 * **CL is a qualitative ladder of preservation classes.** Do not average its values.
 
 ### C.2:5 - Archetypal Grounding

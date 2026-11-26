@@ -40,7 +40,7 @@ Read each number according to how it is used. A document called “forecast” c
 
 #### MA.6:4.2 - Give the meanings their own revision and decision rules
 
-Construct the forecast from adequate evidence and assumptions through MA.5. Use [OPS.21](../ops/55-ops-21---choose-operating-aims-targets-and-comparisons.md) when the responsible management practice needs to construct the operating aim, target or comparison; reuse a sufficient supplied basis. Obtain resource decisions from those authorized to make them, with [OPS.13](../ops/46-ops-13---align-commitments-resources-and-service-outcomes.md) for supported service commitments and [OPS.19](../ops/53-ops-19---reconcile-simultaneous-operating-work-across-cases.md) when contributions compete for shared provision. State how each result is revised and who can make the relevant decision.
+Construct the forecast from adequate evidence and assumptions through MA.5. Use [OPS.21](../ops/55-ops-21---choose-operating-aims-targets-and-comparisons.md) when the responsible management practice needs to construct the operating aim, target or comparison; reuse a sufficient supplied basis. Use the resource decision already in force. If the commission requires a new decision, take it to those authorized to make it, with [OPS.13](../ops/46-ops-13---align-commitments-resources-and-service-outcomes.md) for supported service commitments and [OPS.19](../ops/53-ops-19---reconcile-simultaneous-operating-work-across-cases.md) when contributions compete for shared provision. State how each result is revised and who can make the relevant decision.
 
 Separate a request from a granted resource amount and from actual usable provision. A forecast revision does not itself authorize spending.
 
@@ -50,13 +50,15 @@ The distinction can be made in one small table.
 
 Put comparable quantities on an adequate common basis. Use MA.1–MA.2 when a workload target must be translated into resource capability and payments.
 
-Ask what each gap means. Expected demand below a target can call for a different action or revised ambition. Required capacity above authorized provision can call for a resource decision, changed scope or an explicit adverse scenario. Preserve uncertainty and the conditions under which an apparent gap exists.
+Ask which difference the recipient needs. A comparison of expected demand with usable provision can end with their difference in the requested units.
 
-Do not close the gap by editing the expectation to equal the authorized number. Change the relevant action or decision, then forecast its warranted consequence. When the required result has no supported activity arrangement, MA.10 develops alternatives across the offer, work and provision. An economic allowance can direct that search; it does not create attainable cost reductions or usable capacity.
+To forecast unserved requests, establish which requests fall due in each relevant situation and how many will be fulfilled in their windows under the specified or reasonably expected operating response. Subtract that number from the requests due. Physical capacity places an upper bound on service and a lower bound on the number left. If the response remains open, return conditional counts or justified bounds. For an expected count, weight the shortfalls by the supported probabilities of the joint demand, supply and response conditions.
+
+Keep the expectation on its evidential basis. If a change of action or provision is being considered, forecast what follows under that change and leave the current forecast available. When the required result has no supported activity arrangement, MA.10 develops alternatives across the offer, work and provision. An economic allowance can direct that search; it does not create attainable cost reductions or usable capacity.
 
 #### MA.6:4.4 - Return the connected accounts and required decision
 
-Show the expectation, ambition, request and authorization at enough detail to locate the next decision. Preserve the forecast's original assumptions when a later choice changes them.
+Return the comparison or forecast the recipient commissioned. If the difference calls for a choice within that commission, show the available actions and who can choose. If an existing arrangement supplies the response, use its actual terms. Preserve the original assumptions when a subsequent choice changes the outlook.
 
 When the use of these accounts remains in question, observe whether participants can report an unwelcome expectation and whether decisions about resources take that expectation into account. MA.9 constructs a missing information-use arrangement and examines persistent behavioral effects; the responsible organizational practice supplies a wider change in management arrangements.
 
@@ -69,11 +71,15 @@ For one period and a supplied service mix, the team expects demand of **100 unit
 | 100 expected | The present demand outlook. | What action or new evidence could change it? |
 | 120 targeted | The intended ambition. | Is the action plan adequate, or should the ambition be reconsidered? |
 | Resources for 130 requested | Provision sought for the stated scenario. | Is that protection worth its cost under the applicable decision criteria? |
-| Resources for 110 authorized | The current authorized arrangement. | What can be promised and what additional decision is needed? |
+| Resources for 110 authorized | The current authorized arrangement. | What can this provision support on its terms? |
 
-The granted 110 does not make demand 110. It also does not establish that the ambition of 120 is feasible. The team returns the resource gap to the competent decision maker while keeping the 100 forecast available.
+The granted 110 does not make demand 110. It also does not establish that the ambition of 120 is feasible. A request to explain the figures can end here. A request to change provision goes to the participant authorized to decide, with the 100-unit forecast still available.
 
-If a changed market action warrants a new demand expectation of 115, update the forecast and explain its new assumptions. The gap against authorized capability is now five units under the supplied comparison basis. The target remains 120 and authorized capability remains 110 until those authorized to revise each one do so under the applicable rules.
+Suppose changed market activity raises mean demand to 115. It exceeds the authorized capability of 110 by five units, on the same period and service basis. The target remains 120.
+
+For a forecast of unserved requests, suppose each request requires one unit and the service will fulfil every request up to 110 by the deadline, with no other provision. If demand is certainly 115, five go unserved. If 100 and 130 requests are equally likely, the corresponding counts are zero and twenty, giving an expected ten unserved. Both outlooks have mean demand of 115. The difference between that mean and 110 answers the level comparison in either case.
+
+The response can matter even with fixed demand and enough capacity. Suppose all 100 requests could be served on time. Under the operating rule the team will serve 100 by the deadline in one condition and 90 in another. If the conditions are equally likely, the unserved counts of zero and ten give an expectation of five. If all 100 are served in both conditions, the expectation is zero.
 
 ### MA.6:6 - Bias-Annotation
 
@@ -83,15 +89,15 @@ A controller may interpret separation as loss of control. Distinguishing an expe
 
 ### MA.6:7 - Conformance Checklist
 
-Check each number’s use, period and assumptions. Can the reader distinguish forecasts, ambitions, requests and authorizations and compare them on a suitable basis? State the revision rules and decision authority where needed, and identify the decision the gap calls for.
+Check each number’s use, period, unit and assumptions. Does the comparison answer the stated question? For expected unserved work, check the demand due, the service expected under the operating response, and how the resulting shortfalls were weighted. If only maximum attainable service is known, state the bound it supports. For a resource change, establish the applicable revision rule and decision authority.
 
 Different labels alone do not establish the separation in practice. Actual use and incentives can combine the meanings.
 
 ### MA.6:8 - Common Anti-Patterns and How to Avoid Them
 
-**Making the forecast equal the approved ceiling.** Preserve the expectation and decide what to do about the resource difference.
+**Making the forecast equal the approved ceiling.** Keep the expectation visible. Bring a proposed change in provision to the appropriate decision holder when such a change is sought.
 
-**Replacing one confused number with disconnected accounts.** Retain the comparison and the decision each gap needs.
+**Replacing one confused number with disconnected accounts.** Retain the comparison the recipient needs and identify what it supports.
 
 **Treating separation as a spending grant.** Obtain the authorization and usable provision the action requires.
 
@@ -103,7 +109,7 @@ The change can expose previously hidden conflicts and depends on consistent use 
 
 ### MA.6:10 - Architectural Rationale
 
-The meanings are separated because expectation, aspiration and authorization have different truth and decision conditions. Their relationships show which management or resource decision is needed.
+The meanings are separated because expectation, aspiration and authorization have different truth and decision conditions. A comparison can settle a question about the outlook or expose a management or resource choice.
 
 A conventional budget remains usable when it preserves those distinctions for the required work. A broader Beyond Budgeting arrangement can be appropriate when its organizational and management changes address the actual problem.
 

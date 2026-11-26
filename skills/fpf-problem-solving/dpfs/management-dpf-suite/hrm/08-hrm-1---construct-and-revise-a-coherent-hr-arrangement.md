@@ -26,7 +26,7 @@ Individually plausible decisions can jointly promise impossible work, exclude ne
 
 #### HRM.1:4.1 - Recover the work and the actual relation
 
-Identify the contribution, its recipient and conditions: what work is needed, when, with what tools, assistance and uncertainty, and who may revise that need. Recover the affected participation relations, present terms, commitments and material alternatives. Ask affected people what work they do and what the proposed change would demand. A job title and nominal hours can conceal coordination, interruption, emotional demands or helping work.
+Identify the contribution, its recipient and conditions: what work is needed, when, with what tools, assistance and uncertainty, and who may revise that need. Recover the affected participation relations, present terms, commitments and material alternatives. Use available evidence of the work and its demands. Ask the people who do or depend on it about conditions still unclear, and provide the opportunity for participation or consultation due under the applicable terms. For a new role, identify the intended work and which estimates rely on experience in comparable roles. A job title and nominal hours can conceal coordination, interruption, emotional demands or helping work.
 
 Determine which work is newly needed, remains necessary, has disappeared or can be obtained differently. Strategy can propose a new opportunity after success; Operations supplies current demand and promises; OCE supplies organization and obtaining alternatives. Do not freeze an old task list and classify every difference as a human deficit. Keep effective commitments until their valid change: an eliminated task does not automatically eliminate a wage obligation.
 
@@ -80,7 +80,7 @@ Take the problem to whoever can resolve it. Invalid selection evidence needs ass
 
 Compare the remaining options using the relevant contribution, participant outcomes, costs, uncertainty and reversibility. State any material conflicts among proposed work, terms and participant interests. An employee can reasonably prefer an outside trajectory; the employer can decline a discretionary proposal it cannot supply. A supported bounded arrangement, refusal, formal determination or exit may follow.
 
-Use HRM.5 for particular continuation or transition arrangements and HRM.4 for required consultation, negotiation or contested decisions. Make clear which proposal requires agreement, which requires an authorized determination, and which follows a binding obligation. Obtain the real act and its effective date through the applicable process and ADM. Ensure that OCE and OPS supply the work, access, coverage and conditions on which that act relies. Communicate the resulting terms and how a problem can be raised.
+Use HRM.5 for particular continuation or transition arrangements and HRM.4 for required consultation, negotiation or contested decisions. Make clear which proposal requires agreement, which requires an authorized determination, and which follows a binding obligation. For a design commission, return the supported proposal, the decisions it requires and the conditions of provision. When implementation is due, obtain or apply the effective act under the applicable process and ADM. Arrange the work, access and coverage with OCE and OPS, then communicate the effective terms and how to raise a problem.
 
 #### HRM.1:4.6 - Observe the whole and reopen the defeated premise
 
@@ -126,7 +126,7 @@ This case uses an individual contribution because one person's timing changes th
 
 ### HRM.1:6 - Bias-Annotation
 
-Management records can omit unpaid and invisible work, and silence can reflect an unusable voice route. Obtain participant evidence and observe actual conditions. Do not infer that every difference in interest is opposition to change. The framework's employment-centered examples require adaptation for other participation relations.
+Management records can omit unpaid and invisible work, and silence can reflect an unusable voice route. Use participants’ accounts and observations that cover the relevant conditions. Seek further evidence where a demand may have been missed. A record that settles a factual question can still leave a participant entitled to be heard on the proposed change. Do not infer that every difference in interest is opposition to change. The framework's employment-centered examples require adaptation for other participation relations.
 
 ### HRM.1:7 - Conformance Checklist
 

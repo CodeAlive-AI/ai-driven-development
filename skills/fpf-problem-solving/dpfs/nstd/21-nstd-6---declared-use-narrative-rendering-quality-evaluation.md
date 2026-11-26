@@ -38,7 +38,7 @@ A fluent narrative can misstate a relation. An accurate one can leave learners u
 
 Use an existing evaluation result if it answers the question for this narrative version, reader and use. If a suitable evaluation specification is available, apply it to the version. Develop or adapt a specification for any remaining question about which characteristics to judge and what evidence counts.
 
-For explanatory technical prose, apply `F.19` to the connected text. Recover its governing message, compare it with the selected source and test the contribution of each optional contrast, caveat or extra proposition for this reader and genre. Use `F.19:4.4` for a proposed warning and `F.19:4.5` for the reading evidence the conclusion needs. This wording judgement contributes to `LanguageStatePrecisionAndCoarseningFit`.
+For explanatory technical prose, apply `F.19` to the connected text. Compare the account and any separately issued prompt with the work the intended reader needs to do. Check whether their subject, the relations between the relevant parts and the reasoning available to the reader still support that work. Then assess how each optional contrast, qualification or additional proposition contributes to the reader's understanding in this genre. Use `F.19:4.4` for a proposed warning and `F.19:4.5` for the reading evidence the conclusion needs. This judgement contributes to `LanguageStatePrecisionAndCoarseningFit`.
 
 Decide what counts as a supported answer. Compare a factual account with evidence and a literary reading with the text and serious alternatives. For a deliberately open story, the reader may need to explain why several interpretations fit. For a fictional construction or a hypothetical real scenario, inspect the premises and their consequences. If the question concerns audience experience, examine evidence of that response. Use NSTD.9 for an interpretation still needed and NSTD.10 to construct missing events. Comparing two expressions can establish fidelity. Whether the source was adequate, the new account was worth producing or the audience responded as intended requires grounds for that claim.
 
@@ -76,7 +76,7 @@ Identify the object before assigning a value.
 | Object-kind case | Handling |
 | --- | --- |
 | Narrative account, whether candidate or accepted | Evaluate every characteristic whose failure would defeat the intended use. |
-| Narrative rendering below a required floor | Report the supported value, the loss for this use and the smallest repair that could address it, if one is available. |
+| Narrative rendering below a required floor | Report the supported value and what the reader loses. Choose a repair that reaches the work entrusted to the editor. A local correction can restore one passage. For a recurring failure, inspect the source, authoring direction or review criterion that could keep producing it. |
 | The question concerns another object | Evaluate that object under its own criteria, such as reliability across a generator’s operating range or authenticity of a source archive. |
 | The object proves to be another kind after the evaluation has begun | State the mismatch and stop assigning values to this object under the narrative criteria. |
 
@@ -169,7 +169,7 @@ Carry out the parts of the evaluation that answer the question.
 2. Select evidence for the claim. Inspect the subject and rendering for present quality, compare the named source and result for promised fidelity, or establish the claimed work from evidence of its performance. A single admissible route can show that an outcome is possible. One admissible route that misses a deadline refutes a claim that every admissible route meets it. A reader who must choose a route as conditions change needs the rule for that choice and a way to recognize when it applies. Assess that content even when the illustrated route is correct.
 3. Identify the work this reader or listener needs the account for and the conditions under which the judgement holds. State limits that affect reliance on the result.
 4. Evaluate every characteristic whose failure would defeat the declared use or make it unsafe. Select additional characteristics only when their result matters to the question.
-5. When a value falls below its floor, identify the loss. Give the smallest repair that would address it, or specify what is still needed to find one.
+5. When a value falls below its floor, identify the loss for the intended reader. For a repair of this account, change the passage or underlying source that prevents the reader from completing the intended work. If the commission concerns recurring failure across accounts, establish what in their production or acceptance permits it. Check what an author following the proposed change would produce. Use the affected passages to judge that change and state what further evidence a claim about its frequency would require.
 6. Before claiming an improvement, re-evaluate the affected characteristics if the version or selected source basis changes.
 
 Missingness and lowering rules:

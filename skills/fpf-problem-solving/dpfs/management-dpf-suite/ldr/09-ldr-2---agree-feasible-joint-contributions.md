@@ -62,7 +62,7 @@ Apply C.11.DUA to the work of negotiation itself. Include preparation, represent
 
 #### LDR.2:4.4 - Resolve a choice-changing unknown, then rebuild the proposal
 
-Identify the question whose answer could change a proposal's feasibility or acceptance. Ask the qualified subject practitioner for the smallest sufficient inquiry, with its result, conditions, cost and possible consequences for the choice. Compare it with using current knowledge, a narrower commitment, another source, deferral or no agreement.
+Identify the question whose answer could change a proposal's feasibility or acceptance. The available evidence may settle it. If another contribution could change the choice, compare what the parties could obtain and the full cost of obtaining and using it. A specialist may already have a complete answer. A new inquiry, a narrower commitment, another source, deferral or no agreement can be appropriate under different conditions.
 
 Obtain permission and resources for the inquiry itself. A test authorization permits the stated test, not introduction into production. For a different configuration, identify the relation on which the finding depends and establish that it holds there. An explicitly commissioned test of that configuration still belongs in the work.
 
@@ -96,7 +96,7 @@ Give the receiving practitioners the accepted conditions and unresolved matters.
 
 For an order to reach agreement, return the feasible terms accepted by those whose assent they require, with any condition still to be met. If the order includes an effective start or delivery, obtain the acts that put it into effect and carry the contributions through to their receivers. LDR.4 helps arrange the first handover.
 
-Agree a practical response to foreseeable changes: who reports the loss, who can supply a substitute, which participants reconsider dependent terms and how an existing promise is handled. When support disappears, identify the contributions depending on it. Compare feasible substitutes, changed dates or scope with the affected parties; obtain renewed acceptance where reliance changes.
+Agree a practical response to foreseeable changes: who reports the loss, who can supply a substitute, which participants reconsider dependent terms and how an existing promise is handled. When support disappears, identify the contributions depending on it. Check which substitutes, dates or scope the existing agreement already permits. For a change outside those terms, obtain the decision or renewed agreement needed from those entitled to make it.
 
 Preserve unaffected results and commitments. A withdrawn support offer does not erase a valid test result. A failed proposed arrangement does not automatically cancel an existing obligation. If no feasible accepted alternative remains, return that impasse to the responsible decision makers before the unsupported work is relied on.
 

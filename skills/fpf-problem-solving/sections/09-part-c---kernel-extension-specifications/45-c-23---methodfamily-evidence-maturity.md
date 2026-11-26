@@ -46,7 +46,7 @@ A qualifying description episteme uses `…Description`; `…Spec` names that sa
 
 #### C.23:4.2 - Rule schema (normative)
 
-For each `MethodFamily` **f**, author an **executable** rule set:
+Apply the existing rule set for the registered family when it covers the task, intended use and current conditions. When you must write or revise a rule, start from the work the family is being admitted to do. Identify the circumstances that would make that use acceptable, restricted or unavailable. Derive the task facts, evidence and governing acceptance clauses needed to distinguish those results. A permitted bound may settle a threshold while the exact value is unknown. If the applicable rule requires the exact value or a particular item of evidence, retain that requirement. Express the resulting conditions as an executable rule set for `MethodFamily` **f**.
 
 ```
 LOG.Deduce_f(TaskSignature S2) → {Admit | Degrade(mode) | Abstain}
@@ -54,7 +54,7 @@ LOG.Deduce_f(TaskSignature S2) → {Admit | Degrade(mode) | Abstain}
 
 with the following **branch obligations**:
 
-**What the family claim covers.** State which tasks the claim covers and what it promises about the registered members. Evidence that one member works on one task can support that use. A claim that every task has a suitable member allows the member to vary with the task. Promising one fixed member throughout requires evidence for that member throughout. Permitting arbitrary substitution requires the promised performance from each permitted member on each task where it may be used.
+**What the family claim covers.** State which tasks the claim covers and what it promises about the registered members. Evidence that one member works on one task can support that use. A claim that every task has a suitable member allows the member to vary with the task. Promising one fixed member throughout requires evidence for that member throughout. Permitting arbitrary substitution requires the promised performance from each permitted member on each task where it may be used. When the work requires several methods together, identify what each supplies to the joint result and the conditions under which their contributions fit. B.1.5.CM supplies the construction of a composite Method. A registered member that already provides this whole can be evaluated directly for that use. Membership or separate admission of its constituents leaves their compatibility to be established.
 
 Identify the member, task conditions and performance criterion behind each result. Cover the combinations the claim needs through applicable trials, a warranted account of why the result carries over, or both. For a fixed set of tasks, report the observed proportion or the bound the outcomes establish. Eight confirmed successes among ten eligible tasks establish at least 80% for that set even while two outcomes are unknown. To estimate the rate for a future population, identify the population and explain why the available results carry over. For a sample estimate, give the selection method and its uncertainty. Even if every task in a sample succeeded, a guarantee for every future task needs grounds covering those future tasks. If successful members differ by task, an agent can be assigned to choose among them when the information and a supported way to choose will be available in time. It can still be known that a suitable member exists before it can be identified.
 
@@ -160,7 +160,7 @@ Do not embed acceptance thresholds here; an admission floor remains a G.4 Accept
 
 * **L0 — Anecdotal.** Claims exist; lanes sparse; examples ad‑hoc.
 * **L1 — Worked‑Examples.** Multiple **worked examples** with lane tags and **Scope slices** declared; *no replication yet*.
-* **L2 — Replicated.** Independent replications identify their distinct bearers or operating conditions and declare the claim scope and selected slices, source and method editions, and qualification windows used; lane separation is observed and decay windows are explicit.
+* **L2 — Replicated.** Identify the independent repetitions and the claim each tests. Two independent evaluators can repeat the procedure on the same material under the same conditions. A claim about transfer to other bearers or conditions needs evidence covering that variation. State the claim scope, slices, source and method editions, qualification and decay windows, and the applicable lane separation.
 * **L3 — Benchmark‑Severe.** Repeated wins or parity on **community baselines** or **severe tests**. Declare any F.9 Bridge on which this comparison relies, with its loss notes.
 
 *Optional rung (for QD/OEE‑heavy families; ordinal, closed enum):*
@@ -232,7 +232,7 @@ The following are constructed branch examples. For each later branch, stipulate 
 - `Constraint‑Programming`: **MaturityCard**=`L2`; the ordinal `service_level≥B` Acceptance predicate is met. Baseline parity is an additional CAL condition, not a missing R0 minimum in this example. Its declared failure behavior permits `Degrade(scope-narrow)` while parity is unresolved, after R0 and eligibility pass for the narrowed use. If that parity basis were required by R0, the result would be `Abstain`.
 - `Heuristic meta‑search`: **MaturityCard**=`L1`. The applicable AcceptanceClause and family failure policy decide between a permitted `Degrade(sandbox)` branch and `Abstain`; L1 alone supplies neither outcome.
 
-*Using these results.* Hand the dispatcher the admission decision and permitted conditions for each family. A family admitted for a sandbox trial can enter that trial. Before selecting it for ordinary work, establish its eligibility for that use. A shortlist can retain alternatives eligible for the same intended use. To claim that a member is non-dominated, compare performance on cost and service under the stated order and common conditions (C.18:4.4). The admission results above provide no such comparison.
+*Using these results.* Hand the dispatcher the admission decision and permitted conditions for each family. `Degrade(sandbox)` establishes eligibility under the stated trial conditions. Establish the authorization and resources the trial needs before committing to run it. To report that the trial occurred, use evidence of its actual performance. Before selecting it for ordinary work, establish its eligibility for that use. A shortlist can retain alternatives eligible for the same intended use. To claim that a member is non-dominated, compare performance on cost and service under the stated order and common conditions (C.18:4.4). The admission results above provide no such comparison.
 
 > Dunning, Huchette and Lubin (2017) describe **JuMP** as a modeling language that separates model expression from optimization-solver choice. This supplies a concrete software example of preserving a problem description while considering different solvers. ([SIAM Review][18])
 

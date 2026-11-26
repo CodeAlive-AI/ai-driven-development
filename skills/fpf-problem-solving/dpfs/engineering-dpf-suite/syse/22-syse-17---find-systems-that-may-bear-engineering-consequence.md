@@ -111,7 +111,7 @@ Use separate grounds for preferences, representation or operating scenarios when
    and the engineering decision that can use the result. Establish what qualifies a System for inclusion, which scope choices belong to the engineer, and the configuration for comparison if the decision depends on a difference. Use the same horizon and comparable external conditions while allowing the proposed change to alter its own demands.
 2. **Generate consequence-producing situations.** Consider Work and events that may expose the alternative's
    consequences—for example, realization, intended use, maintenance, plausible misuse, failure, recovery,
-   retirement, or later modification. Retain situations whose consequences bear on the receiving decision. To choose the bounds, vary the surrounding use with the component configuration held fixed, then vary the distribution among users or times while keeping the reported total fixed. Retain the difference that changes the engineering choice, or establish a bound that covers it. A System outside the project can bear a consequence.
+   retirement, or later modification. Retain situations whose consequences bear on the receiving decision. Follow the relation by which the proposed change could alter something a recipient relies on. Hold fixed what the current description says and vary an admitted use, connection or interpretation. For a whole described by a total, different distributions among users or times can matter. For a changed interface, identify which receiving Systems depend on the feature or meaning that changed. Keep the distinction needed for the engineering choice, or establish a sufficient conclusion across the alternatives. A System outside the project can bear a consequence.
 
 3. **Trace outward without promoting hypotheses to facts.** Follow supported obtaining relation occurrences
    separately from modal consequence-path claims. For each modal path, name candidate participants and proposed
@@ -252,7 +252,7 @@ preferences, representatives, or agreement.
 
 Use affordable evidence. A bounded expert estimate, simulation, or modal path claim can justify a reversible probe;
 an observed-effect claim needs observation. Include any actual System or intended System referent whose qualified
-consequence can change the decision; specialist authority remains with the applicable practice.
+consequence can change the decision. For a decision requiring specialist authority, establish who holds it under the applicable assignment.
 
 ### SYSE.17:7 - Conformance Checklist
 
@@ -284,7 +284,7 @@ These recurring failures hide a bearer, relation, claim status, or decision cont
 | A diagram arrow becomes an actual relation | Keep the represented relation conditional until its occurrences and conditions are supported. |
 | Scale labels become a System hierarchy | Recover actual Systems and the relations used to organize them; a scale label is only a search cue. |
 | Every mentioned party is called affected | Require a decision-relevant possible or observed change under stated conditions. |
-| Consequence list becomes an ethical verdict | Send actual value conflicts and authority questions to their governing practices. |
+| Consequence list becomes an ethical verdict | Refer a consequential value conflict to those whose judgement or decision the undertaking requires. Establish their authority under the applicable arrangements. |
 | Simulation becomes causal proof | Use `C.28` and retain the narrower supported claim. |
 | Inquiry produces no usable result until definitive research exists | Use a bounded expert estimate or uncertainty claim when it improves a reversible choice. |
 | An unidentified observed person becomes an intended future bearer | Preserve the observed occurrence and the identity gap; qualify the possible future consequence separately. |
@@ -304,7 +304,7 @@ Retain a bearer or possible path if its consequence supports or could change the
 move: start from a proposed System, configuration, or use change, examine physical and operational consequences,
 and connect qualified claims to the engineering decision that can still change the choice.
 
-Questions that need specialist authority remain with the applicable practice.
+For a decision reserved to a specialist role, identify who holds that authority for this system and choice.
 
 ### SYSE.17:11 - SoTA and Source Use
 

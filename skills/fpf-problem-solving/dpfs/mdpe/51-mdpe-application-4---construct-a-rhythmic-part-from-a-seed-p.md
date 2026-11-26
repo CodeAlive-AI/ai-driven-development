@@ -4,7 +4,7 @@ Use [MDPE.30](25-mdpe-30---construct-a-rhythmic-part-from-a-seed-phase-and-ac.md
 
 ### MDPE.Application:4.1 - Generate the small seed and choose its phase
 
-[MDPE.30:5.1](25-mdpe-30---construct-a-rhythmic-part-from-a-seed-phase-and-ac.md#mdpe3051---generate-the-small-seed-and-choose-its-phase) derives onsets 0, 3 and 6 in eight pulses. Rotating them forward by two gives 0, 2 and 5. Both onset sets include the required pulse 0. The rotated part also leaves pulse 6 free for another instrument’s cue. [Section 4.1](25-mdpe-30---construct-a-rhythmic-part-from-a-seed-phase-and-ac.md#mdpe3041---recover-the-seed-and-place-it-in-the-receiving-music) gives the placement operation and the inputs it requires.
+[MDPE.30:5.1](25-mdpe-30---construct-a-rhythmic-part-from-a-seed-phase-and-ac.md#mdpe3051---generate-the-small-seed-and-choose-its-phase) derives onsets 0, 3 and 6 in eight pulses. Rotating them forward by two gives 0, 2 and 5. Both onset sets include the required pulse 0. The rotated score leaves pulse 6 free of a new percussion attack. To leave a quiet interval, the preceding sounds must have died away by the cue. To establish whether the cue reached the partner or listeners in the hall, use evidence from the relevant position and mix. A listener can hear the cue over a ringing stroke. [Section 4.1](25-mdpe-30---construct-a-rhythmic-part-from-a-seed-phase-and-ac.md#mdpe3041---recover-the-seed-and-place-it-in-the-receiving-music) gives the placement operation and the inputs it requires.
 
 ### MDPE.Application:4.2 - Turn the onsets into actual hand and sound parts
 

@@ -12,7 +12,7 @@ The practical gain is an expression that can be estimated from the available rec
 
 This is a method of mathematical modeling within causal reasoning. It constructs the connection from available laws to an intervention target. C.28.MR supplies the meaning and consequences of replacing a mechanism in a given causal model; here the model's relevant mechanisms may remain unknown. Subject methods must justify what the intervention changes, which influences may be shared, and which relations remain applicable. The method applies to physical, biological and computational systems and to the methods used to carry out work.
 
-Preparation requires conditional probability, expectation and the ability to follow a mathematical argument about assumed causal relations. For graphical derivations, the practitioner or an available specialist must be able to check which paths remain open under conditioning and intervention. Whether you derive the result or obtain it from a specialist, retain the target, assumptions, required observable quantities and derivation or obstruction. A software result that omits these grounds is insufficient.
+Preparation requires conditional probability, expectation and the ability to follow a mathematical argument about assumed causal relations. For a graphical derivation, establish which paths remain open under conditioning and intervention. An applicable derivation in a record, an inspectable tool result or a qualified collaborator may supply this step. Whether you derive it yourself or use a supplied result, retain the target, assumptions, required observable quantities and derivation or obstruction. A software result that omits these grounds is insufficient.
 
 Reuse an applicable identification result when it answers the unchanged question. Use MMP.13 for estimation under an already identified expression, and C.28.MR for a consequence inside a fully supplied causal model. Design another experiment only when the existing result is insufficient and further evidence is worth obtaining. For a question about the same observed case under another action, or a joint or nested comparison of its responses, MMP.19 constructs the common-case relation and determines what the available information fixes.
 
@@ -168,7 +168,7 @@ These constructed population probabilities make the calculations inspectable. Ea
 
 #### MMP.15:5.1 - Separate a production action from the batches receiving it
 
-A production team asks whether enabling a stabilization mode $A=1$, rather than $A=0$, increases the probability of a conforming item $Y=1$. Incoming batch condition $L$ is recorded before mode selection. Half the target batches have $L=0$, half $L=1$. Mode 1 is used on 80% of $L=0$ batches and 20% of $L=1$ batches.
+A production team asks whether enabling a stabilization mode $A=1$, rather than $A=0$, increases the probability of a conforming item $Y=1$. Incoming batch condition $L$ is recorded before mode selection. The batches are equal in size, both modes leave their sizes unchanged, and all items are in the target. Half the batches, and hence half the items, have $L=0$ and half have $L=1$. Mode 1 is used on 80% of $L=0$ batches and 20% of $L=1$ batches.
 
 | Batch condition | $P(Y=1\mid A=0,L)$ | $P(Y=1\mid A=1,L)$ |
 | --- | --- | --- |
@@ -180,6 +180,8 @@ The subject account asserts consistency and mean exchangeability given $L$; both
 The selected groups instead give $E[Y\mid A=1]=0.8(0.20)+0.2(0.80)=0.32$ and $E[Y\mid A=0]=0.2(0.10)+0.8(0.70)=0.58$: an association of $-0.26$. Its sign differs because the two modes receive different batch mixtures.
 
 This positive average effect is conditional on the causal account; the table does not prove exchangeability. An already supported account and sufficient estimate need no new experiment.
+
+If batch sizes differ, the fractions of batches alone do not give the two item-level means. In this table the within-condition increases are both 0.10. For the same target population of items under both modes, every mixture of the two conditions therefore gives the same increase. The question about improvement can be settled even when the two separate probabilities remain unknown. If the mode also changes which items are produced, specify the population whose improvement is at issue.
 
 #### MMP.15:5.2 - Use a mediator, then withdraw a pathway exclusion
 

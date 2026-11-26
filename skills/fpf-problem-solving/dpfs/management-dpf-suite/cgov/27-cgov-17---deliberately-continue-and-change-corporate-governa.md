@@ -7,7 +7,7 @@
 
 Use this pattern when corporate participants need to preserve, transmit or change a shared way of governing. A board may retain its papers and procedure while newcomers cannot challenge a proposal's assumptions. A committee may know how to raise an exception but stop doing so when challenge is discouraged. A professional association may distribute guidance without knowing which practices recipients can use.
 
-Start with the corporate contribution that must remain obtainable and the participants who need it. Recover how participants perform it, locate a consequential gap, and choose how to sustain or renew the practice.
+Start with the corporate contribution that must remain obtainable and the participants who need it. Establish what the present arrangement supplies. When continuation or repair is due, identify which contributions must remain obtainable and what, if anything, needs to change.
 
 The first result can be a qualified account of the practice, a supported decision to continue it, or a proposed change. When implementation is assigned, establish which change must take effect. Restoring access can be complete when the recipient can use it in time. Restoring actual participation requires evidence of the participant’s contribution. Claims that a practice persists or improves governance need observations of those further consequences.
 
@@ -29,7 +29,7 @@ Several participants can supply the capabilities a practice needs. Allocate thei
 
 ### CGOV.17:4 - Solution
 
-Follow a needed corporate contribution through its performance, means of acquisition and conditions of continued use. Change the part that prevents participants from obtaining it.
+Follow the contribution far enough to answer the question about its use or availability. If a change is warranted, identify the obstruction and what would supply the missing contribution. Arrange it when implementation is entrusted to you or required by an applicable duty.
 
 #### CGOV.17:4.1 - Bound the practice and the question
 
@@ -71,7 +71,7 @@ C.11.DUA governs additional inquiry. Include the effort of access, confidentiali
 
 #### CGOV.17:4.5 - Carry the contribution into receiving work
 
-For an assignment to provide support, establish that the participants can obtain the appropriate help when they need it. For an assignment to put the practice into use, trace its use in the receiving matter. Give participants the information and participation conditions needed for that work.
+For an undertaking to make support available, establish that participants can obtain capable help when needed. For a requested contribution to a particular matter, establish that the agreed analysis, answer or other work reached the recipient as promised. For an assignment to put the practice into use, trace its use in the receiving matter. Give participants the information and participation conditions needed for that work.
 
 Observe the contribution relevant to the original difficulty. Can newcomers recover the assumption and use it in deliberation? Does an exception reach a participant able to respond? Does an eligible participant take part in the collective act? For a claim about the whole course of a matter, link the contributions to that matter. If an authenticated outcome already settles the commission, stop at that outcome.
 
@@ -123,9 +123,9 @@ Continuity can protect valuable practice or exclusionary habits. Compare whose c
 
 - The practice, participants, receiving work and relevant period are identified.
 - Does the account establish the team result, the connection between its component operations, or a participant’s own choice, according to the commission?
-- The repair answers a consequential gap in operation or its conditions.
+- When a repair is required, does it address the gap in the operation or its conditions?
 - Responsibility, decision power, information access and confidentiality remain respected under their applicable basis.
-- The selected learning, support or change reaches the result the assignment requires.
+- For an undertaking to provide learning, support or change, establish which result it requires and whether that result was obtained.
 - Any claim of persistence or improved consequences stays within its observations.
 
 ### CGOV.17:8 - Common Anti-Patterns and How to Avoid Them

@@ -5,7 +5,7 @@
 
 ### SYSE.43:1 - Problem frame
 
-**Use this when** a person or technical agent resumes without a needed premise, or repeated work keeps reconstructing usable experience. A notebook can lose the place of a carry; a software archive can retain the answer while retrieval supplies the wrong episode. The next useful action is to recover what the continuation needs and locate where that relation disappeared.
+**Use this when** work must resume and the participant taking it up lacks a needed premise, or repeated work keeps reconstructing usable experience. A notebook can lose the place of a carry; a software archive can retain the answer while retrieval supplies the wrong episode. The next useful action is to recover what the continuation needs and locate where that relation disappeared.
 
 The subject is the external recording and retrieval arrangement: what is retained, how it is organized and found, when it changes and how the receiving task uses it. A worksheet or notebook is external to biological memory; a software store is external to model parameters. The performer and that external support can together form the system doing the work. The first result is a memory-supported continuation with recoverable grounds, or a localized write, retrieval or use failure.
 

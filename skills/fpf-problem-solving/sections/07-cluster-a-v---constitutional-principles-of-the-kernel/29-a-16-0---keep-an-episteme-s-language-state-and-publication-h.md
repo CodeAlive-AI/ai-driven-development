@@ -12,14 +12,14 @@
 **Used by.**
 `A.16.1`, `A.16.2`, `B.4.1`, `B.5.2.0`, `A.6.P`, `C.16.Q`, `A.6.A`, `F.9.1`, `E.17.1`.
 
-**Use this when.** Use this pattern when one local language-state move is no longer enough because a reviewable history must keep episteme editions, publication forms, branches, retirements, or losses visible, or because an actual responsibility handoff depends on that history.
+**Use this when.** Use this pattern when one local language-state move is no longer enough because a reviewable history must keep episteme editions, publication forms, branches, retirements, or losses visible, or because deciding who held responsibility depends on that history.
 
 **What goes wrong if missed.** Readers treat cue packs, routed cue sets, endpoint-bound publications, and next-use dockings as successive states of one unchanged episteme; forks, losses, authority changes, and work-requiring crossings become implicit, and an actual responsibility change may be mistaken for semantic docking.
 
 **What this buys.** One optional trajectory account that records lineage, position claims, move kinds, publication forms, losses, and the next use and authority boundary without requiring a history account for every local `A.16` move.
 
 ### A.16.0:1 - Problem frame
-In engineering, inquiry, operator, and management practice, teams sometimes need more than a local move note. When branch structure, supersession, retirement, bridge-sensitive loss, a multi-step change in the applicable rule, or an actual responsibility handoff whose legitimacy depends on upstream history matters, readers need one place that identifies the episteme editions, publication forms, and links involved.
+A later use can depend on a branch, supersession, retirement, loss at a bridge, or a change of rule across several moves. The same history may determine who still held responsibility when the edition changed hands. Identify the editions, publication forms and links needed to answer the question.
 
 Cue packs, routed cue sets, abductive prompts, typed route-bounded projection forms, partial normal forms, and endpoint-bound records may appear in that history as publication forms or published records. They are not the disturbances, telemetry traces, model outputs, bodily tensions, or carrier documents that ground it.
 
@@ -52,7 +52,7 @@ It answers the question: `when the history matters, which episteme edition is cu
 
 #### A.16.0:4.0a - Identify the account and its expression
 
-1. **Apply the history threshold.** Keep the local A.16 publication content when it answers the receiving question. Use the fuller account only when branch, loss, lineage or an actual responsibility history changes a later use.
+1. **Apply the history threshold.** Keep the local A.16 publication content when it answers the receiving question. Use the fuller account only when branch, loss, lineage or the history of responsibility changes what the recipient can establish.
 2. **Identify the account's subject.** For a source-centred history, name the source episteme as EntityOfConcern and state the relevant edition and relation claims in the account's ClaimGraph. For a relation-centred account, identify the independently obtaining relation it concerns. A negative or unresolved lineage claim remains about an independently identified source or other subject; it creates no relation occurrence.
 3. **Recover the relevant history claims.** Distinguish the source editions, position claims, actual lineage, moves, losses and next use needed here. Use their direct rules below. Distinguish an unknown link from a no-successor result supported by an applicable negative criterion or complete closure basis. Neither result establishes continuity.
 4. **Choose an adequate expression.** The `LanguageStateMoveTrajectory` form can express that account. Under E.24.PUB, publication form is a relation-defined participant meaning over an independently identified entity; using the form admits no subtype or second account individual. Recover its expression relation, carrier and any availability occurrence only when the receiving claim needs those distinctions.
@@ -88,13 +88,13 @@ The position read by this pattern is the slot-explicit claim defined in `C.2.2a`
 Early seam publications may leave some slots unknown or wide. That uncertainty is admissible only if it is explicit. A trajectory account therefore records the position claim for the current episteme edition and, when needed, for predecessor or sibling editions that justify the move reading.
 
 #### A.16.0:4.3 - Use threshold and core trajectory record
-Local `A.16` publication content is sufficient when no load-bearing branch, loss, or supersession structure needs publication and no actual responsibility handoff depends on upstream history. An existing version history can also supply the answer when the needed source-use, continuity and loss facts are already recoverable there; the form does not require copying them into another document.
+Local `A.16` publication content is sufficient when no load-bearing branch, loss, or supersession structure needs publication and the question about who held responsibility can be settled from local evidence or does not arise. An existing version history can also supply the answer when the needed source-use, continuity and loss facts are already recoverable there; the form does not require copying them into another document.
 
 Use the `LanguageStateMoveTrajectory` account form when at least one of the following changes the receiving use:
 
 - derivation, supersession, fork, merge, or retirement structure;
 - multi-step loss notes or reopen conditions that would be hidden by a compressed move note;
-- an actual responsibility handoff whose legitimacy or interpretation depends on upstream history;
+- a question about who held responsibility that depends on the sequence of earlier moves or editions;
 - bridge or viewpoint entry that depends on upstream route, loss, or lineage structure.
 
 An account using this form identifies its own subject, claim content and effective ReferenceScheme. It makes the following history content explicit to the extent needed by the selected use:
@@ -145,7 +145,7 @@ Typical next-use patterns include:
 
 Name the next pattern and what its content defines, constrains, or tests. The account already identifies the selected episteme edition; add a project record, publication form, or publication occurrence only when that distinction changes the next use. This is next-use docking, not a transfer of responsibility, and a pattern reference alone does not prove endpoint admission.
 
-**Separate responsibility-handoff branch.** Open this branch only when responsibility, commitment, permission, or authority changes. Name the relation before and after the change under its applicable pattern, then the participants in that relation's own roles. Include giving and receiving admitted systems when its predicate requires them and, when their system-role classification matters, the system-role kinds and assignments through which they participate. State its governed object or action, scope, effective interval, and any assigning, instituting, revoking, or superseding act that the relation requires. The trajectory account cites that relation and its history; episteme lineage, publication form, publication occurrence, endpoint admission, and next-use docking neither create nor prove it.
+**Separate responsibility-handoff branch.** Use this branch when the receiving decision depends on whether responsibility, commitment, permission or authority changed. Apply the rule governing that relation to the case. Where grounds suffice, state what changed or who still holds the responsibility. If the evidence leaves both readings possible, identify the missing fact. For an established transfer, identify the participants, governed object or action, scope, effective interval and any acts the rule requires. Include giving and receiving Systems or their specific assignments when the predicate uses them. The trajectory may cite the relation and its history. A delivery acknowledgement can establish receipt while the original participant retains responsibility.
 
 After docking to a next use, monitoring, maintenance, revisit, or later re-entry may continue through new lineage entries or later trajectories. Keep lineage continuity separate from the current endpoint use and from any separately established responsibility or authority relation.
 
@@ -219,7 +219,7 @@ The pattern biases authors toward lineage-aware history accounts rather than sta
 - **Pattern and form collapse.** Treat a pattern reference as if it were a publication form. Repair by naming the form and the cited pattern's concrete definition, constraint, or test separately.
 - **Form and face collapse.** Treat seam publications as if they minted a second MVPK face family. Repair by naming form and face separately.
 - **Multi-route and fork collapse.** Treat several live routes for one selected episteme edition as if they were already several successor epistemes.
-- **Hidden work crossing or invented responsibility handoff.** Do not describe operationalization as purely linguistic when it required new world-facing work, and do not treat that crossing or next-use docking as a responsibility transfer. Publish the work boundary; open the separate `A.16.0:4.6` branch only for an actual responsibility, commitment, permission, or authority change.
+- **Hidden work crossing or invented responsibility handoff.** State which world-facing work the operational use required. Use A.16.0:4.6 when the receiving decision depends on whether a handoff occurred. Record a change of responsibility, commitment, permission or authority when its governing conditions are established.
 
 ### A.16.0:9 - Consequences
 Readers can recover which epistemes supplied later claims, what changed or was lost, and how that history constrains the next use. The trade-off is more explicit publication of position claims, lineage links, move kinds, loss notes, next-use docking, and any actual responsibility handoff when history is worth publishing.

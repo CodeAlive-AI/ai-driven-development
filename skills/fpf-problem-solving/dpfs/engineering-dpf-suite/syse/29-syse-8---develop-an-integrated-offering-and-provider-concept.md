@@ -17,9 +17,7 @@ authority claims require their own support.
 Apply the pattern when a choice among forms of provision—for example, transfer, access, continuing provision,
 or responsibility for a result—changes the engineered System, interfaces, provider Systems, capabilities,
 risks, or realization network. A mere change from *product* to *service* wording is outside its boundary. Use `A.2.3` for promise content alone; use `SYSE.1`,
-`SYSE.16`, and `SYSE.2` when the engineering subject, its use or its relation to the product SoI is unclear. Neighboring specialist practices retain
-their own Methods, results, and authority—for example, practices governing demand, positioning, price, finance,
-legal duty, organization change, continuing operations, or shared enabling Systems.
+`SYSE.16`, and `SYSE.2` when the engineering subject, its use or its relation to the product SoI is unclear. For questions of demand, positioning, price, finance, legal duty, organization change, continuing operations or shared enabling Systems, obtain the contribution from the relevant practice. Follow the undertaking’s allocation of decision rights.
 
 #### SYSE.8:0.1 - Terms and Distinctions
 
@@ -116,8 +114,7 @@ in :11 to generate candidates before qualifying them for the engineering decisio
    can change the decision. State the kind of each relation—for example, parthood, interaction, transfer, access,
    obligation, or contribution—and ground it independently of any intended referent.
 6. **Separate expected Work from responsibility and authority.** For planned Work, name the intended performer
-   Agent or the conditions for selecting one, together with the sought result. For Work that has occurred, identify the actual performer Agent and the Work
-   independently; add assignment-bound attribution only when the receiving use needs it. Separately identify the
+   Agent or the conditions for selecting one, together with the sought result. An observation at the receiver can establish that a result arrived while leaving its provider unknown. If the decision depends on performance of particular Work, identify the actual performing Agent and establish the Work itself. Use assignment-bound attribution when the identity of the commissioned provider matters. Separately identify the
    System that holds or owns each asset; the Agent expected to bear or manage variability and failure exposure,
    observe or restore a condition, and receive each decision or evidence result; and any current responsibility,
    commitment, permission, legal duty, or authority relation.

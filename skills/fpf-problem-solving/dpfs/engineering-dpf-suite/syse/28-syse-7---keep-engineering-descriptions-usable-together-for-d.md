@@ -196,8 +196,7 @@ Engineers stop asking whether documentation or “the model” is complete. They
 description ensemble can support a named decision without hiding a subject mismatch, configuration mismatch,
 interpretation gap, contradiction, or unsupported world-side claim.
 
-The Agent performing modeling Work enacts the Method; modeling tools are resources. Ground decision authority
-and warranted reliance on modeling results through their own relations. Traceability becomes a collection of
+Identify which Agent performed each modeling operation, what result it produced and what resources it used. A modeling service may itself propose a correspondence. Establish who checked its grounds, who could accept it and what the intended use permits the recipient to rely on. Traceability becomes a collection of
 testable relations rather than a link count.
 A digital thread is a maintained arrangement for named engineering uses. Use
 the local label *digital twin* only when its selected subject, descriptions, automation, observations, and use
@@ -396,7 +395,7 @@ qualified basis for the physical use.
 For optional AI assistance, **adapt** the task-specific allocation proposed by
 [Pradas Gomez et al. (2025), §§4–5](https://www.cambridge.org/core/journals/proceedings-of-the-design-society/article/team-of-three-the-role-of-generative-ai-in-the-development-of-design-automation-systems-for-complex-products/2DB8CA17B63C63EA1C0C57F349769C7E).
 In :5, the AI System proposes correspondences; the assigned engineers check their sources and implications
-before accepting reliance. Tools remain resources under :4.3. The source offers a conceptual model for choosing
+before accepting reliance. Section 4.3 distinguishes the work each performer did from the resources used in it. The source offers a conceptual model for choosing
 contributions. Its survey and literature review do not establish how well the proposed HP-2 arrangement works.
 Decision authority must be established separately from that source and from assigning the work.
 

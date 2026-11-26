@@ -50,15 +50,15 @@ Distinguish a search for one improving change from a claim of local or global op
 
 #### MATH.10:4.2 - Construct changes that remain admissible
 
-Build a family `x(h)` with `x(0)=x`. State the allowed values of the parameter h and substitute the family into the constraints. The parameter may be a scalar, a vector or a discrete choice.
+Choose a change relevant to the comparison you want to make and ask which other parts must move with it for the result to remain admissible. Write their constraints after the change. Solve them for the dependent parts, use a transformation known to preserve the constraints, or construct a set of jointly allowed moves. This produces a family `x(h)` with `x(0)=x`. In a discrete problem h might select an exchange of two assignments. Substitute the family back into the original conditions to find its allowed parameters.
 
-For a fixed total `x1+x2=b`, the change `(x1+h, x2-h)` preserves the total. If both components must stay nonnegative, its range is `-x1 <= h <= x2`. A further capacity limit can shorten that range.
+For a fixed total `x1+x2=b`, choose `x1+h` as the freely changed component. The total then determines the other one as `b-(x1+h)=x2-h`. Nonnegativity gives `-x1 <= h <= x2`. A further capacity limit can shorten that range.
 
 For a history with fixed endpoint values, try `q_h(t)=q(t)+h*eta(t)`, where eta vanishes at both endpoints and has the regularity required by the functional. Check any additional path constraint as well.
 
 A direction tangent to a constraint may preserve it only to first order. At `(1,0)` on the unit circle, `(1,h)` has squared length `1+h^2` and leaves the circle whenever h is nonzero. The curve `(cos(h),sin(h))` stays on it. Use an admissible curve for a finite comparison, or keep a tangent calculation at the first-order scope its mathematical argument supports.
 
-When a useful family cannot yet be constructed, obtain or construct a parameterized family through the candidate whose members satisfy the constraint. State which parameter values are allowed.
+If the constraints block the proposed change, try another free component or a joint exchange. An obstruction that rules out every change relevant to the comparison is itself a conclusion. A single family licenses comparisons along that family; a conclusion about every admissible variation requires grounds that cover them.
 
 #### MATH.10:4.3 - Calculate the effect of the variation
 

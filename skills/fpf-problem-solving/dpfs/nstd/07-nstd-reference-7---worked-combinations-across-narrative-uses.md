@@ -22,16 +22,16 @@ One possible construction follows.
 
 1. With NSTD.1, select content for the learner’s task. A first-use lesson may need the recognizable difficulty, the first operation and its result. Introduce another method when the result needs further work.
 2. With NSTD.2, place the necessary distinctions before an exercise relies on them, or provide the reference the learner is expected to use. Keep a usable return to source conditions omitted from the lesson.
-3. Use NSTD.3 to identify the connections learners should reconstruct. For a session on applying a method, ask them to connect the relevant source, the operation and the result it can support.
+3. Use NSTD.3 to identify the connections learners need. When the session teaches application, have them use a pattern on a working question and produce the answer, recommendation or other result that question requires.
 4. Use NSTD.5 to choose an example or expression that draws attention to that connection. Preserve any source return needed for the task.
-5. Use NSTD.8 to design a short sequence around a recurring case, a reconstruction or application task, and the support required at that point. While drafting a slide, check whether its task uses a term or distinction before the lesson has made it available. An existing trial can supply separate evidence about what a learner encountered. Try the sequence where the learning question warrants it. Keep the route accessible when others need it for teaching or revision.
-6. With NSTD.6, assess what the sequence lets the intended reader recover. Use a learner’s response and the help they used for a claim about actual recovery. If an essential relation is absent, inspect the source selection, expression and route to the source. Compare amounts only for defined units, selected relations and conditions.
+5. Use NSTD.8 to design a short sequence around a recurring case, the application task and any reconstruction it requires, and the support required at that point. While drafting a slide, check whether its task uses a term or distinction before the lesson has made it available. An existing trial can supply separate evidence about what a learner encountered. Try the sequence where the learning question warrants it. Keep the route accessible when others need it for teaching or revision.
+6. With NSTD.6, assess whether the result answers the learner’s working question, and which parts of the work the learner did with the permitted help. To assess reconstruction as a separate objective, examine the connections the learner recovered. If an essential relation is missing, inspect the source selection, expression and return to the source.
 
 The introductory route leaves out advanced formal variants and neighbouring patterns that the exercise does not require. Give a usable source reference where a later task needs that detail.
 
 E.17 and E.17.AUD help design the teaching publication and its audience units. NSTD.6 addresses narrative quality. Use the subject sources for what the lesson teaches. Use A.10 when the link between evidence and its use is unclear or must remain recoverable, and G.2 or G.11 when a state-of-the-art synthesis needs developing or updating.
 
-If learners enjoy a session but cannot reconstruct how to apply a pattern, that observation can answer what they did under the stated conditions. For an explanation or repair, examine the chosen content, sequence, task and help. Change the part shown to need it.
+A learner may enjoy the session and accurately explain how a pattern works. For a conclusion about applying it, look at what the learner produced on the assigned work. If that result falls short, examine the chosen content, sequence, task and help, then repair the part responsible.
 
 
 

@@ -62,7 +62,7 @@ For the detailed rule behind each guard-rail, see **E.5.1 – E.5.4**.
 | **CC‑GR.4** | The aggregate of guard‑rail rules **MUST** remain internally consistent and acyclic. No guard‑rail may override another without explicit precedence edges. | Preserves deterministic governance. |
 | **CC‑GR.5** | Every Core pattern **MUST** make its primary EntityOfConcern or primary relation recoverable at first mention. Declare **CHR:ReferencePlane** (`world | concept | episteme`) when the defining rule or receiving use requires that distinction. | Preserves the intended referent and any plane-dependent interpretation. |
 
-*All CC‑GR duties are **conceptual**. Any automated checks are **informative only** and live in Tooling/Pedagogy.*
+*The guard-rails and their interpretation are defined in Core. A reliable check can establish the particular property it tests in a submitted instance. A word scan can flag a passage for examination. The meaning of the passage and the authority to accept a change follow from the applicable rule and practice. Executable checks belong in Tooling or Pedagogy.*
 
 ### E.5:7 - Consequences
 

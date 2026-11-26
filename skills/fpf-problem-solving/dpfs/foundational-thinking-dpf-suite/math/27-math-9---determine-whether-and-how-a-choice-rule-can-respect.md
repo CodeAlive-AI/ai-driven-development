@@ -191,7 +191,7 @@ A symmetry claim also depends on what is supplied. Position names used only for 
 - Each selected representative answer is fixed by the representative's whole stabilizer and transports to an allowed answer at every input of its orbit. Preservation of the full permitted-answer relation can establish transport for all candidates at once.
 - When the result promises correspondence of the entire solution sets, that stronger correspondence has been established.
 - Different transformations reaching the same input return the same answer.
-- The claimed range has the required representative and answer construction.
+- For a rule on the claimed range, the construction covers all its inputs, by a direct formula or by the required orbit choices. For an impossibility conclusion, an admitted orbit with no permissible stabilizer-fixed choice can exclude the entire rule.
 - Any changed input, output type or choice requirement is reflected in the returned rule.
 
 ### MATH.9:8 - Common Anti-Patterns and How to Avoid Them

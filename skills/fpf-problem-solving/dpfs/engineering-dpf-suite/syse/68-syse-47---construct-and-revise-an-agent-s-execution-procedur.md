@@ -5,7 +5,7 @@
 
 ### SYSE.47:1 - Problem frame
 
-**Use this when** a person or technical agent needs a practicable procedure connecting available operations, or an existing procedure repeatedly fails to use their results. A person can lose a carry between steps; an agent can retrieve the right rule again instead of acting on it. Start with the required result. For a repair, inspect how the existing procedure passed or lost the contribution needed for the next step.
+**Use this when** the assigned work needs a practicable procedure connecting available operations, or an existing procedure repeatedly fails to use their results. A person can lose a carry between steps; an agent can retrieve the right rule again instead of acting on it. Start with the required result. For a repair, inspect how the existing procedure passed or lost the contribution needed for the next step.
 
 The subject is the operative sequence and its conditions for progress, recovery and stop. It may be a written procedure enacted by a person, a supervised sequence or a software controller that prepares requests and consumes returns. A new procedure must be usable under its stated conditions and give the performer a way to recover or report an unfinished step. The result can also be evidence for retaining the current procedure or a specific condition that prevents use or construction.
 

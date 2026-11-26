@@ -59,9 +59,9 @@ For known learners, use available evidence of preparation and identify remaining
 
 Retain a qualified individual or existing supported option as a baseline when it can serve the target. Identify what interaction could add, such as evidence unavailable individually, a recipient for an explanation, an alternative interpretation to challenge, shared access or coordinated action. Where group work offers no consequential gain, return the sufficient simpler option. If interaction is part of the target, compare arrangements that can supply it or identify the missing contribution.
 
-#### HCD.20:4.2 - Derive different scales from the actual activity
+#### HCD.20:4.2 - Derive group size and shared capacity from the activity
 
-Separate admission, immediate task groups, continuing relationships and provider assignment. Work from the action that needs capacity.
+Distinguish cohort membership, task groups, continuing working relationships and provider assignments. These arrangements may overlap. A group can draw its members from one cohort, and several groups can depend on the same mentor. Work from the actions people must perform and the resources they share.
 
 For sequential contributions, use an explicit time construction. If each of k participants needs r contributions of t minutes, and joint coordination needs c(k) minutes, the proposed activity requires at least k × r × t + c(k) within its window T. Include preparation or transitions elsewhere when they lie outside that window; include them here when they consume it. The necessary condition is k × r × t + c(k) ≤ T for this sequence. Check the availability of the people, inputs and equipment when each operation is due. A help visit also requires the learner and provider to be free together and the relevant inputs to be ready.
 
@@ -112,7 +112,7 @@ When scaling the cohort, recompute the number of task groups and the relevant re
 
 #### HCD.20:4.6 - Preserve interpretable observations and revise the right object
 
-For a design, specify what would show whether the planned actions occurred and what each learner performed with the permitted help. For a report on past use, check the available observations. A common report, observation note or explanation can be useful evidence for a bounded question. It does not automatically establish the same contribution for silent members.
+A design can establish that the material, time for an individual attempt and agreed help will be available. Where the agreement calls for observations, determine what would establish the result it specifies. A count of learners meeting a criterion can be supported by an aggregate when its basis shows which learners and attempts it covers. To report a named learner's performance, establish what that person did and what help bears on the claim. For a claim about provision to that learner, establish the promised access or help at the required time. For a report on past use, check what the available observations establish about the commissioned result.
 
 Use HCD.11–HCD.13 for the relevant personal performance, changed-condition or delayed-use question. For team capability, use appropriate evidence of integrated team work. For missing evidence, use a qualified source or identify what remains unknown. If a decision is needed, act within your authority or put the question to the decision holder. For a material or provider finding, use the appropriate material or operating evidence. Distinguish dissatisfaction, absence, inaccessible help and unsuccessful learning before attributing the result to motivation.
 
@@ -197,7 +197,7 @@ The Noerholk et al. study provides a concrete example of active observer possibi
 | Likely drift | Repair |
 | --- | --- |
 | Favourite-size bias | Derive the size of each action from its contribution and constraint; compare a plausible alternative where one could improve the answer. |
-| Visible-output bias | For a design, identify whose contribution the proposed observation could show and with what help. For a claim about performed work, establish who acted and under what assistance, or state what the observation leaves open. |
+| Visible-output bias | Where the arrangement includes observation, establish which individual or group contribution the observation can show and under what assistance. Use evidence of a named person's work for a personal performance claim. |
 | Diversity-as-score bias | Identify the task-relevant difference and where its contribution could be used. For a claim about use, identify what happened. |
 | Hidden-labour bias | Count reading, explaining, correction and coordination carried by participants. |
 | Stable-group inertia | Compare the benefit and burden of continuing the relationship with those of changing it, including transition costs and any contribution an existing membership excludes. |
@@ -209,7 +209,7 @@ For a comparison or a feasibility decision, establish the conditions that can ch
 
 - the intended personal contribution and any distinct shared or team result;
 - meaningful entrant preparation and interaction conditions;
-- separate cohort, task-group, relationship and provider scales;
+- distinguish cohort membership, task groups, continuing relationships and provider assignments, and derive group size and shared capacity from the actions required;
 - the contribution interaction could supply and a feasible individual or existing baseline where it can serve the target;
 - the actions, help, material permissions and contact needed for each option, and the evidence for any claim that they occurred;
 - complete and peak burdens without hiding recurring individual checks;
@@ -222,7 +222,7 @@ These design values permit a bounded comparison. Reliance on actual contact, ope
 | Anti-pattern | Failure | Repair |
 | --- | --- | --- |
 | Cohort equals group | An enrolment number dictates every interaction. | Separate scales and derive each action's capacity. |
-| Division of labour equals learning | One member supplies the operation the others were meant to learn. | Allocate the personal contribution and a suitable later attempt. |
+| Division of labour equals learning | One member supplies the operation the others were meant to learn. | Give each learner the promised opportunity to perform the operation with the agreed help. Preserve the learner's own choice or justification when the target requires it. Use an adequate existing observation of later work. Arrange a further attempt when required to provide a missed opportunity, make a correction, establish later performance or carry out a newly commissioned attempt. |
 | Mandatory private attempt | A novice must invent an unavailable method before useful modelling. | Choose visibility and help for the learning purpose. |
 | Observer equals spectator | A useful observer action may be overlooked or assumed from attendance. | Identify the observer’s intended contribution and use evidence of it for claims about performed work. Provide a personal turn where the target requires manipulating the instrument. |
 | Weekly-hours illusion | Adequate totals hide simultaneous demand. | Compare the live window with qualified available capacity. |

@@ -229,8 +229,7 @@ that depended on a failed transfer or shared premise.
 Different inputs change different parts of the decision. For example, a theory can generate an alternative, a
 heuristic can guide search, a simulation result can reject an infeasible region, a failed trial can expose an
 interface assumption, and an operating observation can reopen a model-use claim. Each input keeps its governed
-kind and epistemic status. Additional evidence is obtained only after an authorized Agent chooses the probe or
-experiment design under the applicable Method.
+kind and epistemic status. A routine observation or a result from another investigation can supply additional evidence. Establish what produced it, which configuration it concerns and what claim it can support. When the question calls for a new probe, choose a suitable design and obtain the authorization its execution requires. An assignment to perform a new trial also requires that trial to take place.
 
 ### SYSE.10:5 - Worked Case: Evidence for a Heat-Pump Controller Increment
 

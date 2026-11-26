@@ -14,11 +14,11 @@
 
 ### F.12:1 - Intent & applicability
 
-**Intent.** Relate an exact promise-content claim to the delivery Work and outcome being judged, the observations and measured values used as evidence, the relevant window and population, and application of the declared acceptance rule to those inputs. Return a result on its declared scale.
+**Intent.** Return the result supported by the agreed acceptance rule. Start with the outcome promised to the recipient. Use that promise to select the delivery Work or population, window and evidence that could establish the outcome. For a measured characteristic, recover the observations, measurement basis and values the judgement uses.
 
 Recover a separate dated evaluation Work when the claim or receiving use consumes that performance history. Map the result to F.10 status when needed, and identify a durable verdict episteme when another use needs that assertion. Keep these objects and relations distinct so a reader can see what would change the result.
 
-**Use this when.** An SLO, SLA clause, safety margin, response-time target, quality gate, or other promise must be judged from actual occurrences.
+**Use this when.** A recipient needs to know whether an agreed result was delivered. The promise can concern an act by a named party, a usable product, a service over time, or a characteristic such as response time.
 
 **Do not use this when.** The question is only what the promise says, how the Method is described, or how a measurement is made. Use the direct A.2.3, A.3, A.15, or C.16 pattern. F.12 does not turn a lexical cell or comparison row into a verdict subject.
 
@@ -38,7 +38,7 @@ Recover a separate dated evaluation Work when the claim or receiving use consume
 | **Promise and occurrence** | Promise content is stated in advance; fulfilment concerns actual Work and delivered outcome. |
 | **Local meaning and integration** | Sources use different words, while the judgement must join their claims without a generic Bridge. |
 | **Parsimony and realism** | One compact pattern must cover thresholds, percentiles, shares, counts, and bands. |
-| **Evidence and feasibility** | Evidence must concern the promised characteristic; available measurements may cover only an indicator. |
+| **Evidence and feasibility** | Evidence must bear on what was promised. A measured indicator can leave the promised outcome undetermined. |
 
 ### F.12:4 - Core idea (didactic)
 
@@ -47,7 +47,7 @@ For an ordinary evaluation, the delivery facts, adequate observations, acceptanc
 1. the exact **`U.PromiseContent` claim** being evaluated;
 2. the actual **Work occurrence or defined Work population** whose delivery is in question;
 3. the promised outcome or characteristic and its scope;
-4. the relevant **observations and measured values**, including scale and unit;
+4. the **evidence** bearing on that outcome, including scale and unit for the measured values used;
 5. the explicit **window** and population boundary;
 6. the evaluation Method and, when its performance history is claimed or consumed, the independently admitted dated evaluation Work that enacts it;
 7. the selected evaluation inputs, applied rule and result; recover the exact A.6.1 application and result binding when that identity is claimed or required by the governing rule;
@@ -60,7 +60,7 @@ When the receiving decision concerns acceptance of a commissioned result, ask wh
 
 A plain summary may say **met**, **not met**, or **cannot judge** while distinguishing the result on its declared scale, the standing of the evidence and the status of the requirement.
 
-A SchemeSenseCell addresses a local meaning; the evaluation still concerns the exact promise, Work, observations, values, result and status-use relation. A comparison table may display the argument; display alone does not establish those claims.
+A SchemeSenseCell addresses a local meaning. The evaluation concerns what was promised and delivered, the supporting evidence, the conclusion the rule permits and any status that depends on it. A comparison table can display that argument.
 
 ### F.12:5 - Minimal vocabulary
 
@@ -80,10 +80,10 @@ A SchemeSenseCell addresses a local meaning; the evaluation still concerns the e
 ### F.12:6 - The binding, as eight practical rules
 
 **R1 — Match the promise to delivery.**
-Use A.2.3 to keep the exact promise content, `PromiseContentUse`, delivered outcome, and fulfilment relations distinct for the Work occurrence or population being judged. An abstract service label or lexical cell is not enough, and the later evaluation does not make those delivery-side relations obtain.
+Recover what the recipient was owed and identify the outcome that would discharge it. Was one service due for each recipient, or did the results have to work together? A signed receipt can settle a promise to deliver an existing report. A separately promised new review requires grounds that it took place. If the order leaves the method of judgement to the evaluator, select evidence that distinguishes the outcomes permitted by the terms. Keep the exact promise content, `PromiseContentUse`, delivery and fulfilment distinct under A.2.3. An abstract service label or lexical cell is not enough, and the later evaluation does not make those delivery-side relations obtain.
 
-**R2 — Test for direct measurement first.**
-Ask whether the observation and measurement model directly concern the promised characteristic of the relevant Work outcome inside the window. If they do, use C.16 for measurement and A.10 for evidence use; add no proxy relation. Commands, approvals, and MethodDescriptions are not outcome evidence by themselves.
+**R2 — Establish what the evidence concerns.**
+Ask whether the evidence directly concerns the promised outcome in its window. A receipt naming the recipient and the promised edition may establish delivery. For a measured characteristic, check whether the observation and measurement model directly concern that characteristic. If they do, use C.16 for measurement and A.10 for evidence use. Commands, approvals and MethodDescriptions can establish a separately promised command, approval or document when the evidence supports it. A claim about a subsequent outcome needs grounds for that outcome.
 
 **R3 — Recover an indicator relation when one is needed.**
 If a distinct observed indicator stands in for the promised characteristic or outcome, name both participants and cite the pattern that defines or tests that exact relation. Use C.16.P to recover the construction and distortion risk. If no current rule supplies the relation, stop with A.6.RCD `missing-governor`; do not treat the word *proxy*, A.10 evidence use, or B.3 reliance as its substitute.
@@ -91,14 +91,14 @@ If a distinct observed indicator stands in for the promised characteristic or ou
 Use E.13 only when the indicator is optimized or used as a target, incentive, gate, release argument, reputation signal, repair target, or decision driver.
 
 **R4 — Perform the evaluation.**
-Select the delivery facts, affected-state references and measured values required by the acceptance rule. Apply its comparison or aggregation with the specified population, exclusions, uncertainty treatment and result scale, then state the supported result. For example, an incident rule can bind observed start and restoration times and compare their difference with the allowed duration. If the required observations or rule are unavailable, return the precise missing basis rather than a fulfilment verdict.
+Select the delivery facts, affected-state references and measured values required by the acceptance rule. Apply its comparison or aggregation with the specified population, exclusions, uncertainty treatment and result scale, then state the supported result. For example, an incident rule can bind observed start and restoration times and compare their difference with the allowed duration. If an input is missing, establish that at least one history fits the evidence. If all such histories give the same result under the rule, use it. Incompatible premises may need correction, or independent sufficient grounds may settle the verdict directly. An established bound may settle a threshold. One failure can defeat a promise made to every member. When different results remain possible, state what is unresolved. A separately required observation or procedure keeps its own fulfilment condition.
 
-When the claim or receiving use consumes a dated evaluation occurrence, recover each evaluator's A.13 core and let A.15.1 independently admit that Work before asserting that it enacts the evaluation Method, as A.2.3:4.3 requires. Add F.6 only for precise assignment-bound attribution.
+When the claim or receiving use consumes a dated evaluation occurrence, establish the A.13 evaluator at the scale claimed and the Work that enacted the evaluation Method under A.15.1 and A.2.3:4.3. The committee's joint evaluation can answer for the committee. If the terms call for two separate expert judgements, establish both on those terms. Add F.6 only for precise assignment-bound attribution.
 
 Recover an exact A.6.1 application and its argument/result binding when claimed or required by the rule. Cite a particular MethodDescription edition when its content changes the evaluation or replay.
 
 **R5 — Use the declared result scale.**
-Name the characteristic, scale, unit, aggregation, comparison, and admissible result values through the acceptance specification's `verdictScaleDescriptionRef`. Typical calculation shapes include:
+Read the admissible results from the acceptance specification’s `verdictScaleDescriptionRef`. For a measured promise, recover the characteristic, scale, unit, aggregation and comparison used by its rule. Typical calculation shapes include:
 
 * a value at or above, or at or below, a threshold;
 * a stated percentile at or below a target;
@@ -145,7 +145,7 @@ Promise: restoration occurs within 60 minutes for each in-scope incident. Delive
 
 1. **Exact promise.** The evaluation identifies the `U.PromiseContent` claim, not merely an SLO label or cell.
 2. **Delivery-side relations.** The judged delivery Work or population and the applicable A.2.3 promise-use, delivered-outcome, and fulfilment relations remain distinct from evaluation.
-3. **Outcome evidence.** Observations and values concern the promised characteristic of that Work; outputs and approvals alone are insufficient.
+3. **Outcome evidence.** Establish the outcome the agreement makes relevant. An authenticated approval can discharge a promise to give that approval. To conclude that an approved change produced a particular effect, establish the effect or a warranted relation to it. For a measured promise, connect the values to the characteristic, work and conditions specified.
 4. **Direct-before-proxy.** When observation and measurement directly concern the promised characteristic, use C.16 and A.10 and add no proxy. For a distinct indicator, identify its participants and the rule that defines or tests their relation. Return `missing-governor` if the rule is missing. If it is known, check its conditions for this case.
 5. **Window and population.** Both are explicit and match the promise.
 6. **Evaluation basis.** The selected inputs, applied acceptance rule and result remain recoverable. A claimed or rule-required dated evaluation Work and exact A.6.1 application satisfy their separate admission and binding conditions.
@@ -200,7 +200,7 @@ The promise content states restoration within 60 minutes per in-scope incident. 
 
 Promise content: p95 end-user latency ≤ 200 ms per region per month. Delivery Work population: delivery occurrences per region in that month. Evidence: response-time observations tagged by region and path. If probes measure the promised characteristic directly, use C.16 and A.10 without a proxy. If they indicate a distinct user-experience characteristic, name the exact probe-to-user relation, its defining or testing pattern, and last-mile loss.
 
-Evaluation Work applies the regional rule to its observations. A numerical p95 needs a nonempty population with the required measurement basis. If the population was empty, use the contract’s specified empty-region treatment. Missing observations alone do not establish an empty region. A global all-regions statement is a separate logical aggregation of those results or statuses, not a property of a table row.
+Evaluation Work applies the regional rule to its observations. A numerical p95 needs a nonempty population with the required measurement basis. If the population was empty, use the contract’s specified empty-region treatment. Missing observations alone do not establish an empty region. A single region that breaches its threshold suffices to reject a promise made to every region. To accept it, the evidence must cover them all. A separate promise about the pooled population uses that population’s latency distribution and can give a different answer.
 
 #### F.12:11.2 - Stroke care door-to-needle
 
@@ -222,9 +222,9 @@ Promise content: restoration within 60 minutes for each in-scope incident. Deliv
 
 1. **Match scope.** Confirm that the promise content covers the exact delivery Work or population and keep A.2.3 promise use, delivery, and fulfilment distinct.
 2. **Name the window.** Make time, batch, phase, and exclusions explicit.
-3. **Test direct measurement first.** Confirm whether each observation and its measurement model directly concern the promised characteristic; if so, use C.16 and A.10 and add no proxy.
+3. **Test the direct grounds.** Establish whether the available record, observation or argument already settles what was promised. For a measured characteristic, check whether the observation and measurement model concern it directly. Use C.16 for the measurement and A.10 for its use as evidence.
 4. **Recover an indicator only when needed.** When another characteristic stands in, name both participants, the defining or testing pattern, coverage, and loss. Use C.16.P to recover the indicator. Return A.6.RCD `missing-governor` when its defining or testing rule is missing. A known rule can also show that the indicator fails for this use.
-5. **Check values.** Name characteristic, scale, unit, aggregation, and uncertainty.
+5. **Interpret the values the rule uses.** When the judgement depends on measured values, identify the characteristic, scale, applicable unit, aggregation and uncertainty. A qualitative rule may instead depend on who acted, on which object, under which conditions.
 6. **Perform the evaluation.** Apply the declared rule to its selected inputs and recover the result on its scale. Identify the performing System, dated Work and exact A.6.1 application when that performance account is claimed or required; keep the actual admission and binding grounds. Cite a MethodDescription edition when it changes the result or replay.
 7. **Use evidence directly.** Recover the direct evidence-use claims, the descriptive A.10 path and its bounded-reliance disposition. Enter B.3 only for an actual named assurance claim, and E.13 only when a proxy is optimized or drives a decision, gate, incentive, release argument, reputation signal, or repair.
 8. **Keep the result on its declared scale.** Boolean, trichotomous, graded, `N/A`, and `Inconclusive`-including scales are examples, not defaults.
@@ -245,7 +245,7 @@ Promise content: restoration within 60 minutes for each in-scope incident. Deliv
 
 Use A.10 for descriptive provenance and bounded reliance, B.3 only for an actual named assurance claim, E.13 only for optimized or decision-driving proxies, and the appropriate direct pattern for kind, control, or transformation claims.
 
-**Constrains:** Reporting and assurance preserve the promise content, delivery Work, observations, measured values, relevant window, evaluation rule and result scale. Any claimed evaluation Work, exact application, verdict episteme, EvidenceStatus, RequirementStatus, evidence use, material reliance, indicator relation and F.9 relation retains its own meaning and grounds. A relation-specific CL or loss is reported with that relation rather than folded into the result or status.
+**Constrains:** Reporting and assurance preserve the promise content, judged delivery, applicable conditions, supporting evidence, acceptance rule and result scale. Preserve observations and measured values when the judgement uses them. Any claimed evaluation Work, exact application, verdict episteme, EvidenceStatus, RequirementStatus, evidence use, material reliance, indicator relation and F.9 relation retains its own meaning and grounds. A relation-specific CL or loss is reported with that relation rather than folded into the result or status.
 
 ### F.12:14 - Migration notes
 
@@ -260,9 +260,9 @@ Use A.10 for descriptive provenance and bounded reliance, B.3 only for an actual
 
 #### F.12:15.1 - Static conformance
 
-* **SCR-F12-S01 (actual subjects).** Every evaluation names exact promise content, delivery Work or population, observations and measured values, window, and rule; cells are optional addresses only.
-* **SCR-F12-S02 (scope match).** Promise, Work, evidence, population, and window align.
-* **SCR-F12-S03 (evidence).** Observations concern the promised outcome of the judged Work.
+* **SCR-F12-S01 (actual subjects).** Identify what was owed, to whom and under which conditions. The evidence establishes the result for the delivery, occurrence or population selected by that promise. Recover observations, measured values or a particular evaluation procedure when the commissioned judgement or the terms require them.
+* **SCR-F12-S02 (scope match).** Evidence covers the decision claimed. For a result about linked undertakings, establish the connection that the agreement makes material, including any separately outstanding obligation.
+* **SCR-F12-S03 (evidence).** The cited grounds support the promised outcome in the conditions judged. When a measurement supplies those grounds, its observations concern that characteristic or reach it through an established indicator relation.
 * **SCR-F12-S04 (evaluation explicit).** The selected inputs, applied rule, supported result, characteristic, scale, unit, aggregation, threshold and exclusions are recoverable as required by the acceptance claim. Any claimed or rule-required performing System, evaluation Work, enacted Method and exact A.6.1 application satisfy their direct admission and binding conditions.
 * **SCR-F12-S05 (indicator boundary).** Direct measurement adds no proxy. For a distinct indicator, identify both participants and apply the defining or testing rule. Return A.6.RCD `missing-governor` if no such rule is available. Limit the acceptance conclusion to the evidence the rule supports.
 * **SCR-F12-S06 (direct relations).** Promise use, delivery, fulfilment, measurement, indicator, evidence use, assurance or material reliance, evaluation, status, and any verdict assertion use their defining or testing patterns.
@@ -281,6 +281,6 @@ Use A.10 for descriptive provenance and bounded reliance, B.3 only for an actual
 
 #### F.12:15.3 - Didactic distillation
 
-> “Name the exact promise, the delivery Work it covers, the promised characteristic, the observations and measured values, and the relevant window and population. First ask whether the measurement is direct; if another indicator stands in, establish its relation or leave that basis unresolved. Apply the acceptance rule to its inputs and return the supported result on its declared scale. Recover an evaluation-Work or exact application identity when the claim or rule needs it. Use the acceptance result to assign RequirementStatus when its rule applies. Assess EvidenceStatus from the evidence for the stated use. Identify a durable verdict assertion when another use needs one. Plainly: met, not met, or cannot judge.”
+> “Start with what the recipient was promised and what verdict they need. Use the evidence and rule for that outcome at the required scope. When the result depends on measurements, first ask whether they directly concern the promised characteristic; if another indicator stands in, establish its relation or leave that basis unresolved. Apply the acceptance rule to its inputs and return the supported result on its declared scale. Recover an evaluation-Work or exact application identity when the claim or rule needs it. Use the acceptance result to assign RequirementStatus when its rule applies. Assess EvidenceStatus from the evidence for the stated use. Identify a durable verdict assertion when another use needs one. Plainly: met, not met, or cannot judge.”
 
 ### F.12:End

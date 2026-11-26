@@ -34,7 +34,7 @@ Assigning names to marks can leave their combined use unexplained. Assigning a m
 
 ### NOT.3:4 - Solution
 
-**Choose the consequence → interpret the expression's parts and composition → supply the reading operations → perform a case → test a consequential change → retain the usable reading and its conditions.**
+**Choose what the reader must obtain → interpret the parts and their composition → construct the reading operations → derive the required answer or establish the procedure for the promised expressions → retain its conditions of use.**
 
 #### NOT.3:4.1 - Choose what the reading must produce
 
@@ -64,15 +64,15 @@ If a mathematical interpretation leaves the required obtaining procedure unavail
 
 #### NOT.3:4.4 - Perform the reading and locate where it depends on additional knowledge
 
-Take an expression whose relevant parts and input values are supplied. Carry the reading through to its stated result. At a step that cannot be performed, distinguish a missing input, an undefined interpretation and an unavailable operation. These lead to different repairs.
+For a requested reading, start with the expression and the inputs actually available. Derive what they settle for this question. For a reading procedure, establish how its rules produce the required interpretation throughout the permitted family. At a step that cannot be performed, distinguish a missing input, an undefined interpretation and an unavailable operation. These lead to different repairs.
 
 Compare the result with the intended consequence under the subject account. Repair an interpretation rule when it yields a different answer. Repair the reader preparation or access when the rule is usable in principle but cannot be carried out under the current conditions. If the subject account itself leaves the consequence unresolved, return that question to the corresponding mathematical, physical, computational or other practice.
 
-When more than one reading route is offered, perform the routes on a case that could expose a difference. Establish the agreement needed by the use, or explain why the routes answer different questions. A route that only returns a final value may lose the dependency structure another operation needs.
+When more than one reading route is offered, decide what agreement the recipient needs. A relation between the operations can establish agreement across the admitted cases. Where that relation is in doubt, use a case that could distinguish the routes. A route that returns only the final value may lose a dependency another operation needs.
 
 #### NOT.3:4.5 - Change one condition that matters to the interpretation
 
-Change a value, grouping, reference, context or intended question that could alter the result. Use the same rules to recover the new answer, or locate the rule that must change. The challenge should test the chosen interpretation rather than introduce an unrelated subject problem.
+When the order, context or intended question can vary within the promised use, determine which changes affect the answer and how the rules handle them. A changed expression can expose a missing rule. For a request about one fixed expression, return its reading once the available premises determine it.
 
 For a formal family, a general argument can establish that the reading operations implement the interpretation across that family. MATH.18 supplies interpretation-preservation questions; CMP.12 supplies executable translation and evaluation. For human or embodied use, C.2.8 can characterize what the prepared reader recovers and distinguish an expert walkthrough from observed use. Choose further checking when it can change the interpretation or permitted reliance.
 
@@ -132,7 +132,7 @@ When the interpretation needs checking, ask the following questions at the scope
 - Is the consequence to be obtained distinguishable from the subject claims on which it depends?
 - Do the used parts, their composition and relevant context have an interpretation?
 - Can the intended reader identify and perform the indispensable reading operations, or locate the missing input or capability?
-- Does the worked reading obtain the stated result without an unexplained inference supplied only by the author?
+- For a reading procedure, do its rules and available premises justify the promised result? For an account of what a reader actually recovered, which indispensable inferences did that reader make with the available help?
 - Does a consequential change lead to the corresponding new result or to a located interpretation question?
 - If several routes are offered, is their agreement or difference established for the observations the user needs?
 

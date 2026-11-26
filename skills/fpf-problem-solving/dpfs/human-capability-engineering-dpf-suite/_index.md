@@ -29,8 +29,8 @@ Read the full conditions and cases, including the competence needed to provide t
 
 | Framework | What you can work on | Patterns | Text, M characters |
 | --- | --- | ---: | ---: |
-| [Human Capability Development (HCD)](hcd/_index.md) · [Markdown](hcd/_index.md) | Connect later work to capability demand, personal programmes, learning products, individual and shared practice, feedback, assessment, transfer and retention. | 29 | 1.212 |
-| [Somatic Movement Modeling (SOM)](som/_index.md) · [Markdown](som/_index.md) | Connect bodily experience, regulated effort and coordinated movement; adapt within a familiar movement practice as support or load changes. | 5 | 0.079 |
+| [Human Capability Development (HCD)](hcd/_index.md) · [Markdown](hcd/_index.md) | Connect later work to capability demand, personal programmes, learning products, individual and shared practice, feedback, assessment, transfer and retention. | 29 | 1.225 |
+| [Somatic Movement Modeling (SOM)](som/_index.md) · [Markdown](som/_index.md) | Connect bodily experience, regulated effort and coordinated movement; adapt within a familiar movement practice as support or load changes. | 5 | 0.081 |
 
 **Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals. These are scope indicators.
 
@@ -46,7 +46,9 @@ Successful work with external help may meet the immediate need without the perso
 
 Use [Core's connected development method (C.40.OD)](../../sections/09-part-c---kernel-extension-specifications/120-c-40-od---construct-and-continue-open-ended-development.md) for that wider undertaking and this Suite for its human mechanisms. The Reference distinguishes [the different results (HCE.Reference:1)](suite-reference/02-hce-reference-1---what-is-being-changed-and-for-which-result.md).
 
-This is the human specialization of [Engineering](../engineering-dpf-suite/_index.md). Use [Management](../management-dpf-suite/_index.md) when the required change concerns an organization's capability, commitments, authority or resources. Arranging shared learning remains within HCD when the intended result is each person's learning: [compare individual and group arrangements (HCD.20)](hcd/37-hcd-20---compose-and-compare-arrangements-for-individual-and.md) and [form learning work groups (HCD.21)](hcd/38-hcd-21---form-and-change-learning-work-groups.md).
+This is the human specialization of [Engineering](../engineering-dpf-suite/_index.md). Use [Management](../management-dpf-suite/_index.md) when the required change concerns an organization's capability, commitments, authority or resources. A person can use a suitable individual activity directly. When choosing how people will practise their roles, [compare individual and group arrangements (HCD.20)](hcd/37-hcd-20---compose-and-compare-arrangements-for-individual-and.md) if the choice is open. When a shared activity calls for a group, [arrange its membership and contact (HCD.21)](hcd/38-hcd-21---form-and-change-learning-work-groups.md).
+
+When their later work depends on how people respond to one another, [design practice for the required coordination (HCD.22:4.2.1)](hcd/39-hcd-22---design-shared-learning-tasks-with-necessary-individ.md#hcd22421---learn-joint-work-while-preserving-different-roles). In designing the practice, establish what each role must receive and when it can still act on it. To assess an actual interaction, trace which contribution reached the recipient and how the recipient used it.
 
 Developing an AI or robot requires its own mechanisms; a common capability question does not justify transferring human learning or somatic methods unchanged. For an agent's execution procedure and its testing, the [Engineering entries](../engineering-dpf-suite/_index.md#choose-an-entry) lead to SYSE.47 and SYSE.46. Other technical changes require the methods for the system.
 

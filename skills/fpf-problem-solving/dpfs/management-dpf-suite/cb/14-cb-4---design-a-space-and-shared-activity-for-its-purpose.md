@@ -104,7 +104,7 @@ Establish the sharing and participation conditions that the material requires. E
 
 Open by making the purpose, current conditions and next action clear. Give an example when participants cannot cheaply infer how to contribute. Allow a person to pass or take another relevant form of participation where the activity permits it. Do not require personal disclosure or an emotional performance as proof of involvement.
 
-LDR.1 supplies a developed construction for a brief before work, a short reassessment when the situation changes and a debrief afterwards. Use its relevant contribution: confirm what people will do, make an obstacle or change intelligible, and return the needed adjustment to the person who can make it.
+LDR.1 supplies a developed construction for a brief before work, a short reassessment when the situation changes and a debrief afterwards. Use its relevant contribution: confirm what people will do, make an obstacle or change intelligible, and return the needed adjustment to whoever can authorize or make it.
 
 During the activity, address the difficulty participants encounter. Ask for the observation behind a conclusion, give a quieter contributor a usable entry, recover a lost question, clarify which configuration an answer concerns or separate clarification from advice. If the selected form is preventing the work, change it openly and preserve the intended result. Breaking a large discussion into smaller groups also requires a way to bring their relevant results back.
 

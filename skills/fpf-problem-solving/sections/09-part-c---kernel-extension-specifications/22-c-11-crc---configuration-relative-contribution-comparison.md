@@ -99,7 +99,7 @@ An ordinary comparison sentence or existing calculation can carry this result wh
 | Finite difference or counterfactual configuration comparison | What changes between realizable `S0` and `S1` over the declared horizon? | Default here for indivisible, non-smooth, thresholded, path-dependent, or strongly interacting changes. Do not infer additivity. |
 | Derivative or gradient | What is the local rate of change with respect to a coordinate under smoothness and small-change assumptions? | It approximates the finite contribution only when the validity region and remainder are adequate for `Δ`. |
 | Sensitivity | How does a result vary with a parameter, assumption, input, model, or scenario? | It supplies robustness or assurance information; it need not describe a realizable configuration change. |
-| Shadow price or dual variable | What is the local value of relaxing a formulated active constraint under the primal/dual model? | It depends on formulation, active set, regularity, units, and local region; it is not the contribution of an arbitrary asset or intervention. |
+| Shadow price or dual variable | How does the best attainable value respond to a specified change of a constraint? | Establish the direction, units and sensitivity conditions for the formulated problem. At a kink an optimal multiplier may supply a bound. For the value of a finite change, derive the response over that interval, solve the changed problem or use bounds sufficient for the decision. |
 | Functional variation / calculus of variations | How does a functional change when the varied object is a function, path, trajectory, field, control, or shape in a declared admissible variation space? | Name the functional, admissible variations, constraints, boundary conditions, the claim being made about variation, stationarity or an extremum, and the sufficiency or validation grounds that claim requires. An Euler–Lagrange equation is not a generic contribution claim or proof that a physical System optimizes. |
 | Variational inference | Which member of an approximation family best approximates a target probability distribution under a declared divergence or bound? | The result is an approximate distribution and uncertainty account, not an extremal physical trajectory, capability acquisition, or general marginal value. |
 | Evolutionary variation | How are retained variants generated and selected in an evolutionary or cultural process? | The shared word *variation* does not identify the mathematical object or Method above; route to `C.18`, `C.36`, or the field practice. |
@@ -128,7 +128,9 @@ For the same later assignment, compare continuing with the present programme and
 
 #### C.11.CRC:5.3 - Operations constraint intervention
 
-A positive shadow price for one bottleneck supports a local statement about relaxing the formulated active constraint. A finite machine addition also changes labor, maintenance, setup, downstream capacity, energy, resilience, and perhaps the active constraint. The `S0`/`S1` comparison can therefore disagree with shadow-price multiplication without making the shadow price useless.
+Suppose each unit of output requires both stages of a production line and each stage can process ten units in the period. With continuously divisible output and no other binding constraints, the model maximizes throughput `q` subject to `q ≤ a` and `q ≤ b`, where `a` and `b` are the two capacities. The optimum is `min(a,b)`. Each station by itself bounds the possible throughput. At `a = b = 10` both bounds equal the feasible optimum, and an optimizer can assign dual weights `(1,0)` or `(0,1)`. Raising only the first capacity leaves the optimum at ten, even for an arbitrarily small increase. The unchanged second capacity supplies the decisive bound. Raising both capacities to eleven gives eleven. The value of the coordinated change can therefore exceed the sum of the gains from making each change alone.
+
+A shadow price established for the proposed direction is useful within its range of validity. For a machine purchase, compare the attainable configurations over the decision period, including staffing, maintenance, setup, downstream capacity, energy and resilience where they affect the answer.
 
 #### C.11.CRC:5.4 - Capital allocation
 
@@ -164,7 +166,7 @@ Compare the portfolio over the decision horizon with and without the proposed pr
 | Candidate value is constant across configurations | Name `S0`, interactions, horizon, and affected Systems. |
 | Average benefit chooses the next element | Preserve result and resource coordinates and return the comparison to the governing choice Method. |
 | Derivative times step equals finite contribution | State smoothness region and remainder or perform the finite comparison. |
-| Shadow price equals asset value | Keep the local active-constraint result and model the finite intervention separately. |
+| A solver multiplier is taken as the value of an asset | Establish which change in the optimum the multiplier measures or bounds, then compare feasible configurations for the proposed intervention. |
 | Functional stationarity proves physical optimality | Establish the physical/domain claim and its required sufficiency and validation grounds. Use `C.29` when the mathematical correspondence or its transfer limits remain unresolved. |
 | Variational inference is calculus of variations or “learning” | Recover the target distribution, approximation family, objective, returned approximation, and diagnostics. |
 | More information is already more capability or value | Treat information as a decision input and test the target result separately. |
@@ -185,6 +187,7 @@ The pattern is narrow because its result is neither a new value ontology nor a d
 
 | Source line | Adopted move | Limit retained here |
 | --- | --- | --- |
+| Boyd and Vandenberghe, [*Convex Optimization*, §5.6](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf) | Use the optimal dual variables to bound the perturbed optimum under the stated duality conditions. Differentiability gives local sensitivities. | Check the direction of perturbation at a kink and the interval for a finite change. |
 | Ortega and Braun, [information-processing costs in decision making](https://arxiv.org/abs/1204.6481), 2013 | Keep the resource costs of information acquisition and computation explicit in the decision. | Statistical-physics form is a model under assumptions, not proof of literal physical free-energy minimization. |
 | Blei, Kucukelbir, and McAuliffe, [*Variational Inference: A Review for Statisticians*](https://www.cs.columbia.edu/~blei/papers/BleiKucukelbirMcAuliffe2017.pdf), 2017 | Keep target distribution, approximation family, optimization, speed/scale, and uncertainty trade-offs visible. | Historical field anchor; it does not define calculus-of-variations design or general contribution. |
 | MIT OpenCourseWare, [*Matrix Calculus for Machine Learning and Beyond*](https://ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/pages/lecture-notes-and-readings/), 2023 calculus-of-variations material | Treat a function, trajectory, or field as the varied object under admissible variation and boundary structure. | Course material supplies a mathematical distinction, not FPF ontology or physical evidence. |

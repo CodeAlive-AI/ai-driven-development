@@ -92,7 +92,7 @@ To establish that the readings leave two answers possible, find two cases that s
 
 Separate a proved empty compatible set from a search that has not found a case. An empty set shows that the combined readings, model and conditions are inconsistent. Locate a consequential conflict; the cause may be a recording error, a changed subject, an unsuitable error bound or an inadequate measurement relation. A failed search instead limits the computational result.
 
-A point result under ideal data can broaden when input uncertainty is restored. Recompute the relevant range when a reading, calibration coefficient or domain changes. Numerical sensitivity and branch ambiguity can require different remedies.
+A point result under ideal data can broaden when input uncertainty is restored. After a reading, calibration coefficient or domain changes, compare the revised compatible cases with the grounds for the earlier answer. If the revised cases form a nonempty subset of the earlier admissible cases, the earlier bound still holds throughout that subset and may settle the same threshold question. If additional cases are admitted, establish the required conclusion for those cases too. Recalculate when the change affects the needed conclusion or the commission requires the revised range itself. Numerical sensitivity and branch ambiguity can require different remedies.
 
 #### C.16.IR:4.5 - Choose the useful return
 

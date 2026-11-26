@@ -2,7 +2,7 @@
 
 **Connect the wanted result to evidence, reliance and shared means; use what happens to revise the affected connection.** This reminder names five questions whose answers constrain one another.
 
-First, recover what has already been decided and what the person using the goal leaves you to choose. To propose an aim, follow the recipient's next action to the condition it needs. Consider a change, preservation of an adequate condition, an inquiry into an unknown or acquisition of a capability according to what would help that action. GOALS.1 explains how to choose its scope and who may settle or change it. A hypothesis about the means remains revisable even when the purpose is stable.
+First, recover the governing decisions, the needs of those who use the result and the choices your mandate leaves open. To propose an aim, follow the recipient's next action to the condition it needs. Consider a change, preservation of an adequate condition, an inquiry into an unknown or acquisition of a capability according to what would help that action. GOALS.1 explains how to choose its scope and who may settle or change it. A hypothesis about the means remains revisable even when the purpose is stable.
 
 Second, construct evidence of achievement in GOALS.2. Asking how a result would be recognized often changes the proposed goal. “Resolve the refund problem” becomes an identified population of customers receiving their due refunds, together with the agreed treatment of genuine exceptions and continuing care of unfinished cases. An information page can help that work without being its completion criterion. A new observation is needed only if present evidence cannot support the decision it serves.
 

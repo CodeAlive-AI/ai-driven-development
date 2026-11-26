@@ -7,7 +7,7 @@
 
 Use this pattern when an earlier choice, commitment or recommendation is known, and a later observation, outcome or changed condition may alter the basis for one use of that result. A team may have completed an intervention while its expected benefit failed to appear. A model may remain a correct account of its original observations while no longer supporting the next prediction. The question is: **what does this later result change about the earlier choice, and what can remain in use?**
 
-**First useful move.** Name the earlier result and the use now in question, then recover the premise that supported that use. Compare the later result with that premise under comparable conditions. A finding that nothing material changed can finish the work. A material difference supplies a bounded input to a separately made current decision.
+**First useful move.** Name the earlier result and the use now in question, then recover the premise that supported that use. Compare the later result with that premise under comparable conditions. A finding that nothing material changed can finish the work. For a material difference, apply the governing terms to find what follows. Where they leave a choice open, return the finding to whoever is authorized to decide it.
 
 The reader needs access to the earlier basis, the later result and the subject knowledge needed to interpret them. Ask the responsible contributor for an unavailable premise or interpretation; a decision log alone does not supply it. Ordinary prose in the existing discussion can carry the answer. Use a retained account only when another person or later action needs it.
 
@@ -56,7 +56,7 @@ The comparison has three useful outcomes:
 | Finding for the named use | What follows |
 | --- | --- |
 | No material difference | Keep the earlier result for its stated use and conditions. A short reason can complete the answer; no new choice or reconsideration meeting is required. |
-| Material difference | Identify the lost, changed or newly relevant premise and prepare the affected current choice. The observation does not itself select the response. |
+| Material difference | Identify the changed premise. Apply any previously adopted condition that settles the consequence for this use. When a choice remains, identify who can make it and which options remain available. |
 | Comparison unresolved | Name the missing premise, interpretation or alignment and the useful conclusion still available. Consider a smaller answer, an attainable inquiry or a stop through C.11.DUA. |
 
 These are findings about the named use. A large numerical difference can leave a choice intact while a small one crosses its constraint. An unknown cause need not prevent acting on a supported consequence. End an optional investigation for this choice when its attainable answers cannot improve what the recipient can decide or rely on. A separately binding investigation remains due under its governing terms.
@@ -80,7 +80,7 @@ Choose the continuation by what is now missing:
 - Use A.15.7 for a next-action question in ongoing Work. Use the applicable problem-framing or construction Method when the question or means must change before options can be compared.
 - State which decision or authority is missing when only an analyst's recommendation is available. A recommendation can be the useful completed contribution while the authority holder's decision remains outstanding.
 
-The person, controller or authorized body that holds the decision uses the receiving Method. Return its decision to those who depend on it. An analyst who has only made a recommendation can deliver that recommendation now and identify the decision still outstanding. If an overview is needed, cite the decision once made, using the terms of the receiving practice.
+A standing decision may already specify what happens when the changed condition occurs. If its terms apply, report the resulting status and the supporting facts. Where another choice is needed, the person, controller or authorized body that holds it uses the receiving Method. An analyst may deliver a recommendation before that holder decides. Establish the holder’s act when reporting the decision and retain any separate obligation to inform those who depend on it.
 
 #### C.11.DBR:4.5 - Carry the result to its next use and stop
 
@@ -140,7 +140,7 @@ The shared preparation stops before these domain consequences and decisions. It 
 - The later result is qualified and compared at a commensurate scope and horizon, or the decisive mismatch is explicit.
 - Materiality follows the use's constraint, comparison or applicability condition; a no-material finding can finish without a new choice.
 - Affected uses follow established reliance; preserved results retain their grounds, and uninspected branches remain outside the conclusion.
-- A material change identifies a decision to reconsider. An overview may cite the holder's recorded decision or report the available recommendation and identify the choice still open.
+- For a material change, distinguish a consequence already fixed by a standing rule or decision from an outstanding choice. An overview can report the established consequence, a decision on adequate evidence, or the recommendation and what remains open.
 - Recommendations, causal claims, authority, planning and performed work keep their own grounds and limits.
 - The method stops at the useful result or precise gap and adds no duplicate pass to an adequate direct subject Method.
 
@@ -152,7 +152,7 @@ The shared preparation stops before these domain consequences and decisions. It 
 | Reopen everything connected to the decision | Follow direct reliance and retain independently supported uses. |
 | Treat every prediction error as grounds for reversal | Check comparability and the decision's material condition first. |
 | Demand a causal study before any useful answer | Distinguish the causal claim from the current choice; use C.11.DUA on attainable inquiry. |
-| Complete a formal feedback record before deciding | Supply a small reconsideration statement; cite the independently returned choice afterward. |
+| Complete a formal feedback record before deciding | Supply the reconsideration the recipient needs. Use an existing binding condition or an independently established decision when it settles what happens next. |
 
 ### C.11.DBR:9 - Consequences
 

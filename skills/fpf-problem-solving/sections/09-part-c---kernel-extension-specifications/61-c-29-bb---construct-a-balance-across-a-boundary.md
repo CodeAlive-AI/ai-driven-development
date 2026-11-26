@@ -38,11 +38,11 @@ Choose the quantity and boundary, account for changes in each included part, and
 
 #### C.29.BB:4.1 - Choose an additive quantity and a common interval
 
-Name the quantity Q, its unit or counting rule, the included parts S, and the start and end conditions. Define who or what belongs to each part. Use disjoint parts, or otherwise account for their overlap before summing.
+Start from where and when the recipient needs the result. Identify what would count there and which things belong to that total. Choose the quantity Q, its unit or counting rule and the interval. When the boundary is yours to choose, try treating a consequential exchange as an internal transfer by including both sides. Can you then recover the requested total from the larger amount and what was added? At a smaller boundary, net transfers and internal production or removal can establish the change in stock. To obtain an ending stock from that change, also establish the starting stock or a sufficient bound. An observation of the ending stock can settle the question directly. Choose the boundary whose terms and return to the requested quantity can be established. Let S consist of disjoint included parts, or account for overlap before summing.
 
 For disjoint parts with amounts q_i, additivity means that Q(S) = sum q_i. The rule needs a basis in the model or counting definition. For a population, assigning each included job to one stage can provide it. For physical storage, use the physical quantity and law.
 
-An average temperature is not an additive heat store. If the question concerns stored thermal energy, construct that quantity from the material and state relations; if it concerns the maximum temperature, preserve the local temperatures needed to obtain the maximum. Choosing a convenient sum changes the question unless the required result can be recovered from it.
+For stored thermal energy, construct an additive quantity from the material and state relations. A question about the maximum temperature needs a measured maximum, the local temperatures or another relation from which that maximum follows. If the question asks only whether a temperature limit holds everywhere, a suitable upper bound can suffice. Use a sum when its relation to the requested result supports the inference.
 
 Keep all amounts on the same interval. A transfer that leaves one store before the endpoint but reaches another afterward requires an in-transit store or separate boundary crossings. For snapshots at different times, first recover their relation to the requested interval.
 
@@ -64,6 +64,8 @@ Write each included part's change using the terms. Sum those equations. Matching
         = total inward transfer - total outward transfer
           + internal production - internal removal.
 
+Where both local balances use the same internal transfer, its two terms cancel even while its value is unknown. Two independently kept records can disagree about that value. For a reconciliation, establish what should agree across the boundary. The order can concern totals for the same quantity and interval, a particular batch, or individual handovers. Use evidence that resolves the requested difference.
+
 The transfer terms are amounts over the interval. A rate must be integrated over that interval, or multiplied by its duration when the rate is constant. The signs follow the boundary.
 
 For a differentiable rate model, the corresponding instantaneous relation is
@@ -78,7 +80,7 @@ A closed boundary eliminates crossing terms only when the model excludes those e
 
 When enlarging S, include the added stores and their changes. Transfers between the old and added parts become internal only if both sides now refer to the same amount over the interval. The new exterior crossings remain.
 
-When shrinking S, formerly internal transfers can become inputs or outputs. Recompute the requested total from the retained stores. A balance for a larger region supplies its total; obtaining a smaller region's value needs the removed region's amount or a sufficient bound.
+When shrinking S, formerly internal transfers can become inputs or outputs. A direct balance around the smaller region uses those crossings. To recover its amount by subtraction, use the larger total and the amount in the removed region at the same time under compatible counting conventions. A direct reading or a justified bound can also settle what the recipient asks.
 
 Check the two descriptions against each other: the larger total equals the sum of its disjoint parts, and their changes agree after shared transfers cancel. This comparison can expose an omitted connecting store without resolving every internal rate.
 
@@ -86,11 +88,11 @@ Changing the parts over time can also change membership. Include that effect thr
 
 #### C.29.BB:4.5 - Use uncertainty or discrepancy to choose the next move
 
-Substitute the available amounts and compute the requested consequence. If some terms are bounded, propagate the bounds through the signed sum. Preserve dependencies when independently combining endpoints would admit impossible combinations.
+Substitute the available amounts and compute the requested consequence. If some terms are bounded, propagate the bounds through the signed sum. Combining separate extremes can give an outer bound even when those extremes cannot occur together. Use it when it settles the requested threshold. For an attainable value or a guarantee that the outer bound leaves open, use the jointly allowed transfers and stores. A permitted case can refute the guarantee.
 
 For observations, subtract the change predicted by the recorded transfers and internal terms from the observed change in storage. Propagate their uncertainties and shared constraints into a range for this discrepancy. If the range excludes zero, the records and balance cannot agree under those assumptions. If it contains zero, establish whether jointly admissible values actually give zero before claiming agreement is possible. Equal unrecorded inflow and outflow can cancel even when the discrepancy is exactly zero. To locate a fault, examine a term or an independent observation that could distinguish its possible causes.
 
-Resolve a remaining term only when it can change the answer enough to justify the work. A bound that settles the decision is a usable result. An unresolved cause can remain open when the decision tolerates the resulting uncertainty.
+Resolve a remaining term when the commission requires it or when it could change the answer enough to justify the work. A bound that settles the decision is a usable result. An unresolved cause can remain open when the decision tolerates the resulting uncertainty.
 
 #### C.29.BB:4.6 - Preserve the balance in a computation and return its result
 
@@ -98,7 +100,7 @@ When implementing a partitioned calculation, represent a shared transfer consist
 
 Derive the aggregate change from the proposed updates. If a numerical approximation changes the balance, determine whether the discrepancy fits the receiving use or repair the update. Balance preservation addresses one property of the computation; accuracy of the local solution requires its own approximation argument.
 
-Return the total, bound or identified missing contribution with the quantity, boundary and assumptions needed to use it. A subsequent question about a local maximum, delay or possible action may require the retained component account. Keep that account available.
+Return the total, bound or identified missing contribution with the quantity, boundary and assumptions needed to use it. For a further question about a local maximum, delay or available action, retain or recover the component information or other grounds that the new question requires. A direct law or bound can already settle it.
 
 ### C.29.BB:5 - Archetypal Grounding
 
@@ -135,6 +137,8 @@ During an interval, 12 new jobs arrive at A, 9 move from A to B, and 7 are compl
     A at end = 6 + 12 - 9 = 9
     B at end = 4 + 9 - 7 = 6
     unfinished total at end = 10 + 12 - 7 = 15.
+
+The two stages can report 15 unfinished jobs from the starting total, arrivals and completions before comparing their handover records. If A logged nine departures and B logged eight receipts, the total still answers the question about unfinished jobs under the stated counting rule. Nine jobs actually crossed in this case, so B's count is short by one. If a counter diagnostic establishes that B missed one receipt and counted the others correctly, its corrected total agrees with the nine transfers. To determine which jobs were received, compare identifiers and handover times or use equivalent evidence for those jobs. The two recorded totals alone leave the cause of the difference open.
 
 A limit of 12 unfinished jobs is therefore exceeded at the endpoint. Determining whether the limit was exceeded earlier requires the event history or a bound on its prefixes.
 

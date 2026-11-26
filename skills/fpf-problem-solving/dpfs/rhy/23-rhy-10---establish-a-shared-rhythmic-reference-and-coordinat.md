@@ -71,7 +71,7 @@ If the passage needs a recovery plan, identify a recognizable re-entry that the 
 
 Examine the portion of the passage and the disturbance that matter to the question. Use a suitable existing observation or conduct a trial when needed. A stable entry establishes that entry. A tempo change or a relation inside a phrase requires evidence from the corresponding part of the performance.
 
-Compare the observed relationship with the intended one, including the sound, movement and partner task that must continue. When a correction restores the intended relationship and preserves those contributions, retain it. If performers understand the relation but cannot enact it together, identify the coordination to examine with RHY.11 or develop with RHY.12.
+Compare the observed relationship with the intended one, including the sound, movement and partner task that must continue. When a correction restores the intended relationship and preserves those contributions, retain it. If the ensemble cannot enact the relation, examine the coordination with RHY.11. Use RHY.12 when practice by the players can supply the missing contribution.
 
 Finish when the evidence supports the requested explanation, performance assessment or practice choice, or when you can state its limit. A local trial may suffice. Use RHY.14 for a stronger comparison and RHY.13 when the question concerns transfer or retention.
 
@@ -158,6 +158,6 @@ Nelson’s *Solkattu Manual* (2008), printed pp. 15–17, describes performing a
 
 ### RHY.10:12 - Relations
 
-Use RHY.4 to establish which events or received features a timing claim concerns and C.27 for general questions of timing. RHY.9 addresses cue access and RHY.11 the simultaneous parts related by the reference. Use RHY.12 to develop a missing capability, RHY.13 for support dependence or transfer, and RHY.14 when the question requires a performance or response comparison.
+Use RHY.4 to establish which events or received features a timing claim concerns and C.27 for general questions of timing. RHY.9 addresses cue access and RHY.11 the simultaneous parts related by the reference. Use RHY.12 for practice by a human performer, RHY.13 for support dependence or transfer, and RHY.14 when the question requires a performance or response comparison.
 
 ### RHY.10:End

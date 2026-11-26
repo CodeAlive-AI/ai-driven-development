@@ -132,7 +132,7 @@ When choosing a continuation or change, compare the alternatives that remain ser
 - stop or revert the intervention;
 - preserve a relevant `unknown`, selecting a discriminating observation only when it is useful and obtainable.
 
-For the intended continuation or change where authorization is required, name the decision-making Agent and its assignment, permission, or authority predicate, participants, scope, positive basis, and protected conditions. A factual account creates no intervention to authorize. A selected change also states reversible exposure and its intended operating consequence. Expertise, sponsorship, attendance, tool ownership, assignment, permission, and authority are not interchangeable.
+For a continuation or change that requires authorization, establish who may decide and which act or standing terms confer that power in the required scope. Identify who is assigned to carry it out, what further permission or participation it needs and which conditions must be protected. A factual account creates no intervention to authorize. A selected change also states reversible exposure and its intended operating consequence. Expertise, sponsorship, attendance, tool ownership, assignment, permission, and authority are not interchangeable.
 
 Keep service stops, safety, recovery, privacy, consent, security, release authority, employment conditions, and professional judgments with their current owners. A missing authority or protection returns an exact `stop` or narrower branch; it does not justify a broader rollout.
 
@@ -225,7 +225,7 @@ If the provider or model changes to an unqualified edition, the current branch s
 | label and school bias | A familiar community name, such as SRE or Kanban, substitutes for the practice being continued. | Recover the actual Method or candidate and the population claim needed here. |
 | carrier bias | A maintained carrier is taken as evidence that the practice continues. | Recover receiving Work and the population predicate separately from access. |
 | mandate bias | A required field or policy is read as selection and enactment by every practitioner. | Test actual eligible decisions and retain unsupported, copied, or bypassed cases. |
-| organization-as-agent bias | “The organization adopted” hides selecting, receiving, and authorizing participants. | Bound the population and name the capable participant for each predicate and action. |
+| Unsupported attribution to an organization | An organizational decision is taken as proof that every participant used the practice. | Establish the act by which the organization selected the practice. For a claim about use, identify the units or people concerned and the evidence of what they did. |
 | success-story bias | A favorable service result proves transmission, retention, and causality. | Observe the cultural predicate and operating consequence separately; use `C.28` only for causal reliance. |
 | intervention bias | Performing training or changing a carrier is reported as successful cultural change. | Separate proposal, Work, changed subject, later predicate, and later consequence. |
 | maturity bias | Several missing relations are averaged into an adoption stage. | Return supported predicates and explicit gaps, including `unknown`. |
@@ -241,7 +241,7 @@ If the provider or model changes to an unqualified edition, the current branch s
 - [ ] Each observation is used for the subject and claim it supports in section 4.3.
 - [ ] A selected structure or architecture is opened when the claim or decision depends on how its constituents are organized.
 - [ ] The account retains the credible explanations and uncertainty that affect the claim or decision. A new inquiry has an attainable contribution worth its whole burden, including design effort, and feasible participants, capability, access, resources, window and authorization.
-- [ ] The intended action's needed Agent, assignment, permission or authority predicate, participants, scope, positive basis and protected conditions are named. A selected intervention also bounds reversible exposure; a current account creates no new change to authorize.
+- [ ] The proposed change identifies the authority for its decision, the assignment and permissions for its performance, and the conditions it protects. A selected intervention also bounds reversible exposure; a current account creates no new change to authorize.
 - [ ] Where the account concerns an intervention, it distinguishes what was proposed, what Work occurred, what changed and what later evidence shows about the practice and its operating consequences.
 - [ ] Operating consequences retain their own subjects; cultural and causal conclusions have the separate evidence they require.
 - [ ] The return states the supported cultural conclusion, its limits and any material gap or condition for reconsideration. For a decision it also states `continue`, `revise`, `branch`, `replace`, `stop`, a retained set or `unknown`, with its grounds and material alternatives. A next observation appears only for a selected worthwhile inquiry; stronger later claims keep their own actual evidence.
@@ -255,7 +255,7 @@ If the provider or model changes to an unqualified edition, the current branch s
 | “The repository has stable editions, so the culture retained the Method.” | Apply the retention predicate to the named practitioners, interval and support conditions; repository persistence and retained practice have different evidence. |
 | “The service improved, so the intervention changed culture.” | Keep service evidence, cultural observation, and any causal claim separate. |
 | “The school is popular, so its Method fits this operation.” | Use the school as a dated source or alternative and compare the exact operating move and conditions. |
-| “The operations lead owns the process and may change every shift.” | Recover the actual assignment, permission, or authority predicate and its scope. |
+| “The operations lead owns the process and may change every shift.” | Establish which shifts the actual grant covers and who is assigned and permitted to carry out the change there. |
 | “One failed unfamiliar case means the practice should be replaced.” | Compare carrier, recognition, support, authority, and Method-fit explanations before choosing revise, branch, replace, or stop. |
 | “No long study exists, so no local cultural claim can be made.” | Make the smallest bounded claim supported by current observations and state the limits on prevalence, causality and retention that remain on those grounds. |
 

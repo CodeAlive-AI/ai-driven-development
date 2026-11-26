@@ -189,7 +189,7 @@ FPF `A.15.7` supplies situation-responsive steering and `C.11` the conditional c
 - `C.11` governs comparison only where several admissible live actions require choice. `A.10` governs evidence reliance; `A.15.8` governs the performance configuration or recovery dependency when that is current.
 - For an `OPS.7` decision, use the evidenced progression or unmet condition when it bears on a priority, commitment or the grounds for retaining either. Establish who can revise priority and who can revise the commitment when those decisions arise.
 - `OPS.8`–`OPS.13` retain wider queue, capacity, interacting-structure, and commitment-account questions.
-- Clinical, medical-safety, consent, privacy, legal, software assurance, security, release, provider, capability, and other specialist practices retain their decisions and evidence.
+- Clinical, medical-safety, privacy, legal, software assurance, security, release, provider and capability questions retain their specialist grounds. Establish who is entitled to make any decision the work requires, including the person or representative entitled to give consent under the applicable terms.
 - Practitioners may enter OPS.6 directly with matching valid permission for an admitted case, repeat it as facts change, stop at a blocker, or return to another current pattern.
 
 ### OPS.6:End

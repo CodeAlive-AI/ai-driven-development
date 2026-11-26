@@ -30,7 +30,7 @@ Producing an event and giving another performer time to prepare can take differe
 
 Choose the portion that contains the cue and the result the receiver needs. An ending can be enough for a release. Include preparation, later events or a longer sequence when the requested result depends on them. Identify what must continue, what is articulated, who produces each contribution and who needs its timing information. Use RHY.2 and RHY.3 for any of these relations that remain unclear.
 
-For each cue that matters, identify what its receiver needs to know. It could mark an entry, a cycle position, a change of pace, a release or an agreed place to resume. Use a shared convention when it fits. A record, explanation or demonstration can establish an existing meaning. Specify the intended meaning of a proposed new cue. When performers are to use it, communicate that meaning to them. The same head movement can mark an accent, a tempo change or preparation for an entrance. Work out what the player can still do before the cue is more precise. If every phrase still possible permits the same entry, that entry can suffice. If they require different choices, the distinguishing information must arrive before the player has to commit to the movement. RHY.6:4.3 develops the choice for several possible readings.
+For each cue that matters, identify what its receiver needs to know. It could mark an entry, a cycle position, a change of pace, a release or an agreed place to resume. Use a shared convention when it fits. A record, explanation or demonstration can establish an existing meaning. Specify the intended meaning of a proposed new cue. Give the performers the intended meaning in time to use it. If the commission is to reach agreement, establish which cue and response the participants have accepted, using RHY.10:4.3 where needed. An existing convention or a decision by an authorized leader can settle a different commission. One coincident entry can show what happened on that occasion while leaving agreement open. The same head movement can mark an accent, a tempo change or preparation for an entrance. Work out what the player can still do before the cue is more precise. If every phrase still possible permits the same entry, that entry can suffice. If they require different choices, the distinguishing information must arrive before the player has to commit to the movement. RHY.6:4.3 develops the choice for several possible readings.
 
 A solo performer may use an internal reference. A partner needs an accessible consequence of that reference to use it. An existing movement may already provide the cue. Add a signal when the receiving task needs one.
 
@@ -40,7 +40,7 @@ Identify who or what produces each required sound, movement and cue. When creati
 
 If the allocation causes a problem, identify the conflicting actions. For a requested repair, consider exposing an existing preparatory movement, improving the sightline, using another channel, reassigning a contribution or simplifying the articulation in conflict. Choose an arrangement that preserves the required rhythmic and stylistic relations. An extra or stronger signal helps only when the receiver can use it without losing another needed action.
 
-Use bodily or instrumental actions the performer can carry out with the support available. If a proposed allocation depends on a technique the performer lacks, identify the missing capability. Use RHY.12 when developing it is part of the task.
+Choose actions each performer or device can supply with the support available. When an allocation depends on a player learning a technique, RHY.12 helps design the practice. If it depends on a controller receiving a cue or an actuator recovering between attacks, check the timing and revise the cue, device or allocation where needed. The same entry may be playable with a partner who supplies the cue and remain untested without that help.
 
 #### RHY.9:4.3 - Make the information usable before the dependent action
 
@@ -137,6 +137,6 @@ Cha’s [Takadimi reconsideration](https://doi.org/10.1177/0305735614528063) ide
 
 ### RHY.9:12 - Relations
 
-Use MDPE.3 to configure the wider performing whole, RHY.3 to construct the carrier and articulation together, and RHY.4 to distinguish a physical or recorded mark from the timing the performer can use. RHY.5–RHY.6 address representations and their correspondence. Use RHY.10 for shared reference and correction, RHY.11 for simultaneous layers and RHY.12 when a missing capability needs development. RHY.14 can supply a stronger performance or response comparison when the question warrants it.
+Use MDPE.3 to configure the wider performing whole, RHY.3 to construct the carrier and articulation together, and RHY.4 to distinguish a physical or recorded mark from the timing the performer can use. RHY.5–RHY.6 address representations and their correspondence. Use RHY.10 for shared reference and correction, RHY.11 for simultaneous layers and RHY.12 for human practice when the allocated part calls for it. RHY.14 can supply a stronger performance or response comparison when the question warrants it.
 
 ### RHY.9:End

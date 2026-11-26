@@ -48,6 +48,8 @@ Retain joint or sustaining costs at the level their explanation supports when th
 
 When the receiving purpose requires distribution beyond supported tracing, select or obtain the rule appropriate to that purpose. State the basis and why it is usable here. An applicable agreement or reporting rule may determine it.
 
+When the task is to design the rule, start from the decisions the recipients of the account will make. Establish which resource use can be traced to particular work and which costs remain shared. Construct alternative ways of assigning the shared amount. Hold the total fixed and follow what each party could gain, lose or cease to report under each rule. Recover what the joint service needs from all of them. Use MA.9:4.0 for the operating consequences. Give the proposal to the recipient of the design work and identify whose agreement would make the changed terms effective. Seek that agreement when it is due. For a charge already governed by an applicable rule, the rule and facts can settle the amount.
+
 Apply the rule consistently to the defined source total and recipients. Retain rounding, excluded items or residuals where they affect reconciliation. Distinguish a change in the total from a change in its assignment.
 
 Where plausible rules could change a consequential interpretation, show that sensitivity or return the disputed rule.
@@ -77,6 +79,8 @@ The example uses an agreed internal convention.
 ### MA.3:7 - Conformance Checklist
 
 For a charge, can the recipient establish the period, the rule and the facts that determine its amount? For a full distribution, do the assigned amounts and explicit residuals reconcile to the pool?
+
+For a proposed allocation rule, can the parties see how its effects on their decisions support the shared service, which transfers it makes and who can agree it? Several rules can reconcile to the same total and leave different incentives to report or request work.
 
 For a question about an avoidable payment, does its amount or a sufficient bound follow from the change in the relevant terms and work? Making a decision about closing a whole activity can require additional consequences.
 

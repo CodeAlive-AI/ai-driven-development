@@ -6,7 +6,7 @@
 
 **Use this when.** A team needs a small note, comparison sheet, or guided aid to compare available source epistemes or source publications. The unit should make one bounded contrast or a small set of contrast rows available for inspection, keep their shared review frame visible, and leave downstream claims and effects to the work that establishes them.
 
-**First-minute working moment.** A team has two or more source-pinned notes, sheets, views, or review aids on the table. They need one comparison unit for their review: two design options for one release, two methods for one task family, two vendor bulletins for one control scope, two research syntheses for one uncertainty question, or two programme strategies for one initiative. The note compares the sources. Action selection, approval, ontology repair and wider control of the work remain separate. A comparison alone cannot decide among the options.
+**First-minute working moment.** A team has two or more source-pinned notes, sheets, views, or review aids on the table. They need one comparison unit for their review: two design options for one release, two methods for one task family, two vendor bulletins for one control scope, two research syntheses for one uncertainty question, or two programme strategies for one initiative. The note compares the sources. Action selection, approval, ontology repair and wider control of the work remain separate. A comparison can settle which option meets an agreed criterion. Use the governing decision rule for a commissioned choice, and establish who is entitled to make or approve it when that matters.
 
 **First output.** One bounded comparison whose minimum content for ordinary use can be recovered in the unit or its immediate review context. A source-linked paragraph or small comparison table may suffice. The card below helps recover that content. The card can stay in the review context unless a receiving contract requires its separate publication. Include a blocked-use or boundary field only when it changes this comparison’s interpretation or use:
 
@@ -82,7 +82,7 @@ Make one bounded comparison from the claims the reviewed sources support. Start 
 
 **Recover the question and its criterion.** Identify what the receiving review needs to distinguish and why: for example, the restoration time a release plan can guarantee, the populations covered by two studies, or the conditions under which two Methods can be used. Read the request, applicable requirement and surrounding review context for the object, situation and consequence that make a difference relevant.
 
-Turn that difference into an answerable question about each source. If the purpose is only to compare the accounts, the criterion can concern their coverage or emphasis; state that subject. If a necessary priority or requirement is missing, ask the receiving reviewer which consequence or condition the comparison must resolve. Meanwhile retain any useful source contrast whose basis is already clear.
+Turn that difference into an answerable question about each source. If the purpose is only to compare the accounts, the criterion can concern their coverage or emphasis; state that subject. If a necessary priority or requirement is missing, look for it in the applicable requirements. If the choice was delegated, select and justify the consequence that matters. If it remains reserved, obtain the priority from whoever can settle it or report the conditional answers. Meanwhile retain any useful source contrast whose basis is already clear.
 
 **Recover each source's answer.** Locate the passages bearing on that question, including definitions, qualifications and supporting results. For each alternative, recover what is asserted, about what, under which conditions and with what support. Keep the source return beside the extracted claim when it would otherwise be lost. Read enough surrounding argument to distinguish a stated result, an assumption, a proposed result and an unanswered question.
 
@@ -91,6 +91,8 @@ When a source is silent, report the missing coverage. Infer absence only when an
 **Establish the common basis.** Put the relevant claims together and ask whether the proposed predicate applies to both under compatible interpretations. A shorter reported time is comparable only after its event, unit, scope and status are understood: one observed duration, a mean and an upper bound answer different questions. A common topic does not make them interchangeable.
 
 Recover a missing interpretation from the source's definitions or cited basis. Use the subject's comparison Method for the claim being compared: C.16 for measurement conditions, for example, or F.9 when a required semantic correspondence connects distinct local senses. If the correspondence or required fact remains unavailable, split the contrast into what each source establishes and state the exact missing basis for the stronger comparison. Different conditions can themselves be the useful contrast.
+
+If the sources concern different constituents or give models at different levels of abstraction, recover what each establishes for the same review question. To judge whether their results hold together, identify the shared conditions or the relation under which one result constrains the other (C.37.MM:4.1.1). One source can supply sufficient grounds for the whole contrast when it compares both alternatives under that criterion. A claim about one alternative can also settle a request for one eligible option.
 
 **Derive and bound the result.** State what follows from the aligned claims and show the reason that connects them. For textual emphasis, identify the content or allocation of discussion that warrants the contrast; this alone says nothing about the described alternatives' actual performance.
 
@@ -104,7 +106,7 @@ The resulting note can say: “A establishes an upper bound of ten minutes at L;
 
 The comparison identifies the next inquiry: inspect A's bound derivation for an applicable tighter result, or obtain B's qualified bound at L from its validation or analysis. Select further testing only if the available support cannot answer the receiving question and that answer is still needed.
 
-Now suppose B supplies a qualified seven-minute upper bound at L with the same restoration endpoint and applicable conditions. The comparison can establish that B supplies a bound meeting the eight-minute requirement while A's stated bound does not establish that fit. It still cannot infer that every B execution is faster than every A execution.
+Now suppose B supplies a qualified seven-minute upper bound at L with the same restoration endpoint and applicable conditions. The comparison can establish that B supplies a bound meeting the eight-minute requirement while A's stated bound does not establish that fit. If the brief asks for one plan with an established bound, this result supports putting B forward. Choosing B under a standing rule to use the first plan with a demonstrated bound meeting that requirement needs that rule, which may already be in the brief. Ranking actual execution times would require different evidence.
 
 If B instead says nothing about restoration time, the result is a source-coverage gap. The same construction applies to non-numerical sources: align the claims and their conditions, then state only the contrast that those claims support.
 
@@ -303,7 +305,7 @@ If the required source relation is missing, the repair request or source-gap not
 
 **Comparative-review-unit identity over revision.** A revised comparison table, regenerated comparison note, or updated guided review aid is not the same bounded comparison merely because the layout, title, or compared-source family stayed familiar.
 
-If new source input, revised source references, changed comparison criterion, changed shared review frame, or a change in the blocked downstream claim or effect changes the comparison identity or downstream use, publish the preserved comparative frame and the changed claims, or treat the result as a new comparative review unit before using it for a stronger crossed claim.
+If new source input, revised source references, changed comparison criterion, changed shared review frame, or a change in the blocked downstream claim or effect changes the comparison identity or downstream use, identify the preserved frame and the affected claims, or identify the new comparative review unit before using it for a stronger crossed claim.
 
 #### E.17.ID.CR:4.3.g - Representation ontology and modeling lens (informative)
 
@@ -332,7 +334,7 @@ A working reader can usually say, in one short paragraph:
 - which crossed claim is still outside this pattern and which neighboring pattern would govern that claim if it became primary;
 - and which boundary condition shows that the primary claim is no longer a bounded `ComparativeReviewUnit` claim.
 
-If the reader cannot give that account clearly, the review unit is no longer bounded enough to stay here; narrow it, clarify it, or make the governing neighboring pattern primary for the crossed claim.
+If the reader cannot tell what the comparison establishes, return to the receiving question. Clarify the source claim or the inference that bears on it. If the review unit supports only a narrower comparison, say what that comparison supplies and pursue the missing ground for the original question. A change to the commissioned question takes effect under the applicable agreement or the authority delegated for that choice.
 
 #### E.17.ID.CR:4.4 - Branch-discipline summary
 
@@ -528,14 +530,14 @@ Why it stays here:
 **Source slice.** An internal release-review comparison sheet already compares one control checklist and one vendor bulletin for the same declared release candidate and the same control scope.
 Mid-review, an external incident bulletin arrives and changes the rollback assumptions governing use of that same candidate.
 
-**Initial comparative review unit.** `Before the new bulletin, the vendor bulletin foregrounds protocol conformance more than rollback evidence, while the internal checklist foregrounds rollback evidence more than protocol conformance; this comparison frames the review, but it is not yet a release gate or equivalence claim.`
+**Initial comparative review unit.** The pinned vendor bulletin foregrounds protocol conformance over rollback evidence. The pinned internal checklist gives rollback evidence greater prominence. The contrast helps a reviewer see what each account covers. A release decision requires its own applicable grounds.
 
-**Working-boundary follow-through.** The initial comparison fits `E.17.ID.CR:5.4.6`, but the new observation changes its declared criterion. Stop and reopen the unit.
+**Working-boundary follow-through.** The new incident bulletin does not change what the two pinned texts foreground. Their contrast still answers the commissioned comparison. It can no longer establish whether an assumption about current rollback capability holds.
 
-**Why this stops and reopens.**
-- the new outside observation changes the declared comparison criterion;
-- the previous bounded comparison can remain traceable, but it cannot be used unchanged under the new review conditions;
-- the bounded next use is either to restate a fresh comparative review unit over the new declared criterion or to apply a neighboring governing pattern if downstream gate or authority question has now become primary.
+**What the new bulletin changes.**
+- Retain the comparison of the two texts for its declared purpose.
+- Reconsider any pending downstream judgement that relies on the changed rollback assumption. The bulletin may supply the answer to the existing question or leave further grounds to obtain.
+- Make a new comparison when the commission now concerns other sources, another criterion or an answer the first comparison cannot supply. If a release decision is entrusted to another party, report the comparison and the affected grounds to the intended recipient.
 
 ##### E.17.ID.CR:5.4.6.d - Lighter comparison note with source-return discipline
 

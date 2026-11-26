@@ -4,7 +4,7 @@
 > **Status:** Stable
 > **Normativity:** Normative method guidance within SIE; examples are constructed and non-normative.
 >
-> **Primary working result:** a `QualifiedCorrespondenceSet@Use` whose rows identify exact source-local endpoints, relation or incompatibility, orientation, bounded use, permitted loss, justification and evidence, source versions, counterexamples, confidence where meaningful, and accepted, rejected, unresolved, or incompatible disposition.
+> **Primary working result:** a `QualifiedCorrespondenceSet@Use` whose rows identify exact source-local endpoints, relation or incompatibility, orientation, bounded use, permitted loss, justification and evidence, source versions, any known exceptions or counterevidence bearing on the relation, confidence where meaningful, and accepted, rejected, unresolved, or incompatible disposition.
 
 ### SIE.4:1 - Problem Frame
 
@@ -33,7 +33,7 @@ When candidate generation and qualification collapse, downstream mapping code in
 
 ### SIE.4:4 - Solution
 
-Separate candidate discovery, direct relation judgment, and bounded-use qualification. For each row, identify exact source-local endpoints, state the relation or incompatibility and orientation, justify it with evidence and counterexamples, then decide whether that relation may support the named use under a stated loss boundary. Keep the direct relation and its use qualification independently inspectable.
+Separate candidate discovery, direct relation judgment, and bounded-use qualification. For each row, identify exact source-local endpoints, state the relation or incompatibility and orientation, establish it from the evidence applicable to those endpoints and use a counterexample when it distinguishes disputed relations, then decide whether that relation may support the named use under a stated loss boundary. Keep the direct relation and its use qualification independently inspectable.
 
 #### SIE.4:4.1 - Pattern-Use Unfolding
 
@@ -41,7 +41,7 @@ Separate candidate discovery, direct relation judgment, and bounded-use qualific
 2. **Bind exact endpoints.** Reference the `SIE.2` source rows, schemes, definitions, editions, profiles, effectivity, units, codes, and local extensions. Do not map labels without their senses.
 3. **Generate candidates without promotion.** Lexical, structural, instance, expert, historical, or matcher evidence may nominate a row. Record the candidate source and score where useful, but do not treat nomination as acceptance.
 4. **State the direct relation or difference.** Use the narrowest warranted relation vocabulary. State direction and whether the inverse, symmetry, or transitivity is supported. A pair may be excluded from a join while the relation remains unknown. To assert that an assignment is absent, use evidence that excludes it for this configuration, such as a complete governing plan.
-5. **Check what warrants the relation.** Apply the definitions, governing assignment or other evidence to the endpoints and the range claimed. When a relation over a class is proposed, vary a relevant version, unit, grain or scope. One verified counterexample can defeat a general substitution. A complete governing plan can settle the relation for one pair directly.
+5. **Check what warrants the relation.** Apply the definitions, governing assignment or other evidence to the endpoints and the range claimed. When a relation over a class is proposed, vary a relevant version, unit, grain or scope. One verified counterexample can defeat a general substitution. A complete governing plan can settle the relation for one pair directly. A service can also derive a correspondence by applying a valid inference to supported premises. In SKOS, two successive exactMatch relations entail a further exactMatch. Two successive broadMatch relations leave the direct broadMatch open. The rule and premises determine what the service can warrant. [SKOS Reference, mapping properties](https://www.w3.org/TR/skos-reference/#mapping)
 6. **Qualify the receiving use.** State which substitution, comparison, join, navigation, or transformation the row permits, what semantic loss it introduces, and which uses remain forbidden.
 7. **Preserve evidence and authority.** Record justification, evidence source, reviewer or domain authority where required, uncertainty or confidence, and the owner of any unresolved domain judgment.
 8. **Assign a row disposition.** Use accepted-for-use, accepted-with-loss, rejected, unresolved, or incompatible. A row can state a true broader/narrower relation yet be rejected for this use.
@@ -62,7 +62,7 @@ Separate candidate discovery, direct relation judgment, and bounded-use qualific
 
 #### SIE.4:4.3 - What Changes in Practice
 
-The team stops treating a mapping spreadsheet as a bag of equalities. A matcher result becomes a candidate; a domain judgment becomes a relation warrant; and a receiving-use decision states what the relation may safely support. Unresolved and incompatible rows remain visible to the interface and tests.
+The team stops treating a mapping spreadsheet as a bag of equalities. A proposed row can be tested against the applicable evidence or inference rule. A warranted relation can then be qualified for the operation the receiver needs. A person or service may perform both steps under the applicable terms. Unresolved and incompatible rows remain visible to the interface and tests.
 
 ### SIE.4:5 - Archetypal Grounding - Product Feature and Inspection Characteristic
 
@@ -115,7 +115,7 @@ The set records endpoint editions and counterexamples such as a non-dimensional 
 
 The correspondence set gives mapping and interface work explicit semantic premises and preserves negative results. It makes version and loss dependencies visible and allows a narrow use to proceed while other rows remain unresolved.
 
-The cost is row-level judgment and counterexample work. Automated matchers remain useful for candidate discovery but cannot close the relation or its receiving-use qualification alone.
+The work depends on what remains to be established for the row. A similarity score can nominate a correspondence. An automated check with sufficient grounds can establish the relation and apply a use rule within its mandate. If the use requires approval of a new loss, obtain the decision from whoever holds that authority. Running an approved mapping can deliver its result. Attributing the choice of mapping to its operator requires evidence that the operator made that choice.
 
 ### SIE.4:10 - Rationale
 

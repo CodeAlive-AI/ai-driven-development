@@ -43,7 +43,7 @@ The practitioner must construct a connected whole without turning it into a comp
 
 ### C.40.OD:4 - Solution
 
-**Characterize the situation. Formulate a worthwhile, attainable problem. State what would count as solving it and how to check a proposed solution against that criterion. Find or develop alternatives, compare them and secure the means for the chosen work. Carry it out and check its effect in use. Use the changed position to judge which problem is now worthwhile and attainable, or whether to stop.** A difficulty may first show up as a workaround, dependence on a helper or a cost borne elsewhere. A success can reveal a possibility that was previously out of reach.
+**Recover what the undertaking owes and what is already established. For a design, trace how each needed contribution will be obtained, joined and used on the receiving occasion. For a commission to realize the design, secure the means, carry out the work and establish what the recipient obtained. Return a warranted new possibility, a useful continuation or a reason to stop according to the commission.** A difficulty may first show up as a workaround, dependence on a helper or a cost borne elsewhere. A success can reveal a possibility that was previously out of reach.
 
 Name what is being developed and who undertakes the work. For a system, show what it can now do under stated conditions (A.1). For an episteme, identify the subject matter, what can now be claimed or inferred about it and on what grounds (C.2.1). For a Method, show how a change to the reusable way of doing the work makes a result attainable across qualifying performances (A.3.1). For a discipline, show how its organized body of knowledge and its repertoire of practice sustain the change through later work (C.20). One undertaking can change several of these. An author can extend what a proof establishes without changing the research team’s capability. The team can also learn an existing proof technique while the proof stays the same.
 
@@ -151,6 +151,7 @@ flowchart LR
   T -->|"permitted action and agreed contributions"| U
   W -->|"material and receiving occasion"| U
   U -->|"receiving result"| W
+  M -->|"supported inference opens a further question"| N
   U -->|"changed possibilities and exposed limits"| N
   N -->|"new difficulty, possibility or unknown relation"| Q
   U -->|"explained use and limits"| R
@@ -165,7 +166,7 @@ Enter where a sufficient result is already available. An existing adequate Metho
 
 Construct alternatives far enough to compare their attainable effects, costs and receiving uses. C.40.DC constructs possible directions, C.40.JF tests their joint reachability, and C.40.CU develops a reproducible way. Take the characteristics that matter to the affected roles and specify the constraints for acceptance and the improvements sought. For alternatives compared under common conditions, one dominates another when it does at least as well on every selected criterion and better on at least one. The remaining trade-offs call for a choice. A change of criteria can reveal a different problem and calls for a fresh comparison.
 
-Keep promising alternatives in the archive. The portfolio contains the undertakings actually selected within the available capacity, time, authority and resources. A trial can earn its place by opening a direction that current performance alone would miss. Strategizing supplies a justified choice and commitments when the direction or means are unsettled (STR.18). Work on the chosen way and evidence from its use establish what changed.
+Retain an alternative in an accessible archive when its later use warrants the cost. The portfolio contains the undertakings actually selected within the available capacity, time, authority and resources. A trial can earn its place by opening a direction that current performance alone would miss. Strategizing supplies a justified choice and commitments when the direction or means are unsettled (STR.18). Work on the chosen way and evidence from its use establish what changed.
 
 Several routes can be live together:
 
@@ -198,7 +199,7 @@ Keep the decisions needed to operate the arrangement available at their point of
 
 A local framework is justified when recurrent local practice needs a coherent language of Methods and their relations. Use E.4.DPF to construct it from the local problems and supplier results; identify variation, authority and the conditions that reopen an adaptation. Do not copy whole DPFs into every project. A contract or resource allocation is not replaced by an LPF, and a single project may need only a few adequately explained local instructions.
 
-Carry a proposed Method into an actual work occasion with sufficient explanation, capability and means. Observe both conformity where it matters and the receiving result. When local adaptation works, distinguish what can be reused from what depends on local facts. When it fails, return to the responsible Method or architecture decision rather than treating failure as disobedience by default.
+For a design or handover, make the Method and its conditions for the next use available to the intended performer. When actual performance, adoption or learning is at issue, use adequate evidence of that work. Arrange the observation or first use when still needed or specifically commissioned. When local adaptation works, distinguish what can be reused from what depends on local facts. When it fails, return to the responsible Method or architecture decision rather than treating failure as disobedience by default.
 
 The typical network thus remains an aid to constructing and revising concrete practice. Its useful invariant is the recoverable connection among developing subjects, consequential problems, viable transformations, means and further development. Its layout and allocation can change.
 

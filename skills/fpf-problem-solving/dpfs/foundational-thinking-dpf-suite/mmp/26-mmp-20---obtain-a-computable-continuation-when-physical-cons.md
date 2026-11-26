@@ -12,7 +12,7 @@ The mathematical object is a physical model whose active differential and algebr
 
 The result is a conditional continuation: a processed system for each used mode, a restart relation tied to the preceding state, and the conditions under which integration may resume. A missing impact law or a contradictory switch can instead be the useful result. A model with a justified reset and suitable numerical realization can be used directly.
 
-The reader needs the component laws, elementary differential equations, differentiation of constraints and linear algebra. The worked cases below need only small systems. Larger models need symbolic structural analysis and suitable numerical solvers. An engineer may obtain those operations from a specialist or tool, while retaining responsibility for the physical assumptions and requested outputs.
+The reader needs the component laws, elementary differential equations, differentiation of constraints and linear algebra. The worked cases below need only small systems. Larger models need symbolic structural analysis and suitable numerical solvers. Obtain the structural analysis and numerical continuation from a capable contributor or tool where needed. Establish which physical assumptions and requested outputs are given, which the commission leaves you to choose and whose evidence or decision is needed for a remaining question. A restart calculated under a supplied impact law gives a consequence of that law. Choosing the law for the actual contact takes further grounds.
 
 ### MMP.20:2 - Problem
 
@@ -83,7 +83,7 @@ For automatic processing of a larger array, the cited paper supplies the constru
 
 #### MMP.20:4.4 - Choose and use a sufficient realization
 
-For the small cases, hand reduction plus event location and the derived restart is sufficient. For a larger composition, obtain a tool that supports the selected mode equations, structural changes, event localization and the chosen restart semantics. Exercise the consequential transition on the actual configuration; a successful single-mode solve does not answer that question.
+Choose support for the question about the composition. Incompatible constraints that must hold on the same connection can rule out a consistent initial state regardless of the number of other components. To predict a particular transition, use hand reduction or a tool that supports the selected mode equations, event location and restart semantics. To determine how a configured implementation actually handles that transition, exercise it or use an existing record that establishes its behaviour there.
 
 [Modelica's reinit operator](https://specification.modelica.org/master/equations.html#reinit), as described in its development specification, applies a supplied state reset at an event. [ModelingToolkit's event API](https://docs.sciml.ai/ModelingToolkit/dev/API/model_building/#Event-handling) provides event effects and DAE reinitialization options. These are ways to execute and reconcile a specified update; the cited API descriptions do not establish that they derive the impulse law above from every multimode DAE. When computing a reset in a callback, preserve the pre-event values before updating any component, then solve the new algebraic conditions.
 

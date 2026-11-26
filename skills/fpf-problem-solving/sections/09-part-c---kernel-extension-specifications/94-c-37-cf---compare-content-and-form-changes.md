@@ -61,7 +61,7 @@ If a cell cannot be constructed without changing another load-bearing feature, s
 
 #### C.37.CF:4.3 - Observe the receiving use
 
-Ask the reader to obtain the first useful result, not to rate which document looks better. Recover:
+Ask the reader to do the work on which the comparison turns, through the explanation, decision or handover that the recipient needs. A first useful result suffices when the commission ends there. Recover the following facts.
 
 - the action or decision called for, and the reader's answer;
 - the result, stop or missing condition the reader identifies;
@@ -75,9 +75,9 @@ Keep a design estimate separate from an actual recovery observation or a mapped 
 
 Before interpreting a correct answer, reconstruct what each reader received. The text, prompt, examples, available tools or another participant may already have chosen the unit of comparison, the rule for matching two entries, or the action to take. Credit the reader with the choice they made. Following a supplied rule can be exactly the intended use.
 
-A stronger claim may be that the reader can turn a general method into a rule for work in a discipline. Give the reader the general method and material from that discipline. Leave the consequential modeling choices open. Ask them to construct and justify a rule that another practitioner could apply. Use it on a change for which plausible rules would give different answers. An illustration of the principle or a fresh set of numbers for an already specified calculation provides different evidence. B.5.MR:4.3 explains how to test a claim that someone used a transdisciplinary principle (L3) to construct a repeatable rule for a discipline (L2).
+A stronger claim may be that the reader can turn a general method into a rule for work in a discipline. Give the reader the general method and material from that discipline. Leave the consequential modeling choices open. Ask them to construct and justify a rule that another practitioner could apply. Where plausible rules remain and their difference matters, use a change that distinguishes them. A justified construction can already cover the variations in the commission. A request for an actual trial also requires its execution. An illustration of the principle or a fresh set of numbers for an already specified calculation provides different evidence. B.5.MR:4.3 explains how to test a claim that someone used a transdisciplinary principle (L3) to construct a repeatable rule for a discipline (L2).
 
-Missing basis is not zero. A successful changed-condition return supports its own condition rather than increasing the original amount.
+A missing basis leaves the affected conclusion open. A result under changed conditions can support that use within the conditions examined.
 
 These are candidate observations, not one universal score. Select those that can change this comparison. A source-opening count does not measure comprehension; shorter reading does not prove lower total effort; recognizing a prescribed action does not establish its correct enactment.
 

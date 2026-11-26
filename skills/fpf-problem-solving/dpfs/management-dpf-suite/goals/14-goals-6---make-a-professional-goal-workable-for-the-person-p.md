@@ -5,7 +5,7 @@
 
 ### GOALS.6:1 - Problem frame
 
-**Use this when** a person wants or is expected to pursue a professional goal, yet adopting it, beginning, continuing or changing course remains difficult. The object is that person's goal pursuit under actual work and participation conditions. The result is an intelligible and feasible next action, support arrangement or revised aim.
+**Use this when** a person wants or is expected to pursue a professional goal, yet adopting it, beginning, continuing or changing course remains difficult. The object is that person's goal pursuit under actual work and participation conditions. The practical question may be whether to take on a voluntary contribution at all. For work the person will pursue, the result can be a feasible next action, support arrangement or revised aim.
 
 The method concerns professional and work-related learning aims. Clinical treatment and a general diagnosis of personality require other qualified practice. An established routine that works needs no additional personal-goal programme.
 
@@ -21,9 +21,9 @@ Personal purposes and role obligations can differ legitimately. Demanding aims c
 
 #### GOALS.6:4.1 - Relate the person's aim to the actual undertaking
 
-Ask what the person wants to obtain or protect through the work and what the assignment requires. Use their account; avoid inferring private purposes from a score. Distinguish voluntary adoption, an effective work obligation and a negotiated development opportunity. LDR.1:4.4.1 supplies the role conversation when that connection is unclear.
+Establish what the assignment requires and where the person has a choice. If the decision depends on their aims, willingness or experience, use their account or ask what is still open. A known loss of access to work already assigned can be addressed directly. Distinguish voluntary adoption, an effective work obligation and a negotiated development opportunity. LDR.1:4.4.1 supplies the role conversation when that connection is unclear.
 
-Work through a real next episode. What action is required, what discretion and help are available, what others rely on, and what other work competes? If the person legitimately declines a voluntary contribution, choose another contribution or revise the undertaking. If an obligation governs the work, use its actual decision and challenge route. Labelling an assignment “your aspiration” does not settle its participation conditions.
+Work through a real next episode. What action is required, what discretion and help are available, what others rely on, and what other work competes? A person can decline a voluntary contribution. Establish what depended on it. If the current arrangement already provides what was promised, the joint undertaking can continue as agreed. If a necessary contribution is still missing, obtain it elsewhere or revise the undertaking with those who can agree to the change. If an obligation governs the work, use its actual decision and challenge route. Labelling an assignment “your aspiration” does not settle its participation conditions.
 
 #### GOALS.6:4.2 - Locate the difficulty that changes the remedy
 
@@ -43,7 +43,7 @@ Compare the relevant goals together, including current obligations, recovery and
 
 When pursuit becomes less worthwhile or feasible, consider a change of means, a narrower next contribution, a pause or relinquishing the goal. Distinguish the specific target from the wider purpose it serves. Ending one route can preserve another; persisting can remain justified when the purpose and available way still warrant it. Include the remaining opportunity costs and the person's values. Use GOALS.4 to make any affected commitments and continuation explicit.
 
-Return the next action and any help or decision it needs. When developing an ability, arrange feedback from the work in time to inform another attempt. For a decision about present capability, use sufficient evidence of the person's own work with the support permitted in the assignment. A claim that ability changed needs a comparable earlier basis. To credit a particular learning arrangement for the change, compare with what the person's ordinary work would have produced.
+Return the decision the person and the people relying on the work need. A decision about taking on optional work can settle the question. When further action is needed, state who can take it and what help or agreement it requires. When developing an ability, arrange feedback from the work in time to inform another attempt. For a decision about present capability, use sufficient evidence of the person's own work with the support permitted in the assignment. A claim that ability changed needs a comparable earlier basis. To credit a particular learning arrangement for the change, compare with what the person's ordinary work would have produced.
 
 ### GOALS.6:5 - Archetypal Grounding
 
@@ -75,7 +75,7 @@ People differ in purpose, constraints, available help and the cost of disclosure
 
 ### GOALS.6:9 - Consequences
 
-The person obtains a feasible way to proceed or a justified change in the undertaking. The arrangement can clarify what to do next and may involve assistance, learning or a different performer.
+The person can decide whether to take on voluntary work. For an undertaking that continues or changes, the participants know what they can now do and which contributions they can rely on. These can include assistance, learning or a different performer.
 
 ### GOALS.6:10 - Architectural Rationale
 

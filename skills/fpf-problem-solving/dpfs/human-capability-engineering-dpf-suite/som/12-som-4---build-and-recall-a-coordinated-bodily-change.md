@@ -9,7 +9,7 @@ Use this Method when the performer can make the necessary bodily changes separat
 
 An ensemble is the combination of bodily changes the task requires. Its contributing regions may be separate, including regions that are not anatomically adjacent. Judge the combined change by its result in the receiving movement under the conditions examined.
 
-To learn recall, work from a coordinated movement the performer has experienced. A cue can make the entire action available. If only part is manageable, start there. If the combination remains out of reach, obtain the instruction needed to construct it.
+To learn recall, work from a coordinated movement the performer has experienced. A cue can make the entire action available. If only part is manageable, start there. If the combination remains out of reach, identify the part the performer still needs to learn. They can explore familiar adjustments within known limits or obtain suitable instruction for the missing coordination.
 
 ### SOM.4:2 - Problem
 
@@ -55,7 +55,7 @@ When familiar recall yields an unsuitable result, locate the discrepancy. The mi
 
 ### SOM.4:5 - Archetypal Grounding
 
-A writer can hold a pen securely and guide a stroke but pauses to check grip, wrist and forearm in turn. The writer starts with a familiar short mark in which hold and guidance work together, attends to how the combination develops and tries to recall it for another mark. Across attempts the writer and any observer can examine different details. The written line provides evidence about whether the repeated stroke remained continuous.
+A writer can hold a pen securely and guide a stroke but pauses to check grip, wrist and forearm in turn. The writer starts with a familiar short mark in which hold and guidance work together, attends to how the combination develops and tries to recall it for another mark. Across attempts the writer and an observer can examine different details. The finished mark shows whether the ink line is unbroken. The writer could have paused with the pen on the paper and resumed from the same point. To judge whether this stroke kept moving, use an observation of its progress through the interval where the pause could occur.
 
 If the stroke requires a transition in forearm support, successful short marks under fixed support leave that transition untested. Use SOM.5 to construct it when learning the transition is the task. Shortening the movement helps only if the reduced task retains the relation that matters.
 

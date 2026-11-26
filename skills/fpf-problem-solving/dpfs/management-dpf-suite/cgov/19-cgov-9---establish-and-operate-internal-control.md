@@ -63,9 +63,9 @@ Reuse adequate observations and current results. Select another test only when i
 
 #### CGOV.9:4.5 - Correct and return the governing result
 
-Send a material deficiency to the participant able to correct it and to the governing recipient who needs it. Distinguish an implementation error, inadequate design, missing capability and an objective that is no longer attainable under the assumed conditions.
+Report a material deficiency and its consequences to the commissioned recipient and to anyone entitled to notice under the applicable duties. Distinguish an implementation error, inadequate design, missing capability and an objective that is no longer attainable under the assumed conditions.
 
-Apply a correction within existing authority when available. Use CGOV.11 for a corporate decision required for the correction, and CGOV.14 if the governance arrangement itself must change. Routine reassignment under adequate existing powers need not become a constitutional change.
+Carry out a correction when it is entrusted to you or required by duty, within your authority and means. For an assessment, explain what could be corrected and who can authorize or carry out the change. Use CGOV.11 for a corporate decision required for the correction, and CGOV.14 if the governance arrangement itself must change. Routine reassignment under adequate existing powers need not become a constitutional change.
 
 Return which controls are operating, the conditions under which they are relied on and the deficiencies that remain. Keep proposed corrections separate from completed changes. Choose follow-up by the failure and receiving decision.
 

@@ -32,7 +32,7 @@ A summary can combine possibilities that never occur together. A sequence of ind
 
 ### CMP.13:4 - Solution
 
-**Choose the property; describe the represented possibilities; derive the abstract operations; compute a sufficient closure; interpret the answer; refine the distinction that blocks its use.**
+**Choose the property and direction of inference. Build operations that preserve the required coverage or realizability. Derive the answer at that scope and restore any distinction its use still needs.**
 
 #### CMP.13:4.1 - Choose the observation and the direction of inference
 
@@ -40,7 +40,7 @@ Specify the original states, initial possibilities and transitions. Include the 
 
 Choose what an abstract value represents. Write `gamma(a)` for the original possibilities represented by abstract value `a`. It can be a set of integer values, environments, graph states or complete traces. The concrete domain in this construction is the process being analyzed; it need not consist of physical objects.
 
-For an overapproximation, every original possibility must remain among the represented ones. If the calculated possibilities exclude a bad outcome, that outcome is excluded from the original process. An included bad outcome may require reconstruction before it supports a counterexample. For an underapproximation, represented possibilities must be realizable: a retained witness can establish existence, while a missing witness leaves other executions unresolved. Choose the direction for the question and maintain it through the operations. The remaining steps develop the overapproximation branch.
+For an overapproximation, every original possibility must remain among the represented ones. If the calculated possibilities exclude a bad outcome, that outcome is excluded from the original process. An included bad outcome may require reconstruction before it supports a counterexample. For an underapproximation, represented possibilities must be realizable: a retained witness can establish existence, while a missing witness leaves other executions unresolved. Choose the direction for the question and maintain it through the operations. For an existence claim, build from a permitted starting state and retain the choices that make the whole proposed path possible. Adjacent abstract steps may each have a realization yet require incompatible values in the shared intermediate state. Establish a single permitted realization of the complete witness. Its existence can settle that question even when other runs were omitted. Sections :4.2–4.4 develop coverage for the outer approximation and the return of its results.
 
 #### CMP.13:4.2 - Derive computable operations on the summaries
 
@@ -86,7 +86,7 @@ Loops and infinite-path properties require their own path and recurrence conditi
 
 Locate where the reported execution or answer became impossible. Restore the distinction responsible: separate a merged state, retain a relation, distinguish a calling context, or make an abstract operation more precise. A false path through one merged class can suggest splitting its reachable dead ends from the states that supply its outgoing edge.
 
-Recompute affected dependencies and reuse results whose inputs and interpretation remain valid. Confirm that the revised construction removes the spurious result and still covers all original behavior. Removing one false path may leave others.
+Recompute affected dependencies and reuse results whose inputs and interpretation remain valid. An outer approximation must still cover the required original behaviors. To establish that it refines the previous approximation, also check that each behavior it now permits, read in the earlier terms, was permitted before. If the change rules out the reported path but admits a new one elsewhere, the new approximation can still settle the property in question. A separate exclusion proved with the earlier sound approximation can still be used within its scope. For an inner approximation, check that the witnesses used for the claim have compatible realizations in the original process.
 
 Choose further refinement by what it can change in the receiving work. A coarse result can settle the question. A real counterexample changes the original construction or its allowed use; improving the analyzer cannot make that execution disappear. When refinement remains too costly or inconclusive, return the unresolved property and the condition under which another calculation or direct execution would help. C.11.DUA governs the worth of that additional work.
 
@@ -138,10 +138,10 @@ An alarming abstract result can draw attention away from whether its states form
 
 - The initial possibilities, transitions and requested observation identify the computation being analyzed.
 - Each abstract value has an interpretation, and the inference direction supports the claimed conclusion.
-- Abstract operations and joins cover their original counterparts; the obtaining algorithm has a justified completion or bounded-result condition.
+- For an outer approximation, the abstract operations and joins cover the original steps they represent. For an inner approximation, the behaviors used as witnesses have compatible realizations in the original process. The obtaining algorithm justifies the result returned at its stopping point.
 - A whole-reachability conclusion uses initial containment and transition closure.
 - A claimed concrete counterexample has a consecutive realization; a failed reconstruction identifies the lost distinction or remaining uncertainty.
-- Refinement preserves the original possibilities and changes a result relevant to the receiving work.
+- A revised outer approximation still covers every required original possibility. A revised inner approximation preserves the realizability of the witnesses it claims. Choose the distinctions the receiving question needs.
 
 ### CMP.13:8 - Common Anti-Patterns and How to Avoid Them
 

@@ -187,6 +187,6 @@ The [World Bank's 2022 workout toolkit][WB-WORKOUT], especially its financial-mo
 
 ### FIN.22:12 - Relations
 
-FIN.2 establishes cash urgency, FIN.7 supports route-specific values, FIN.10–FIN.12 supply financing and covenant facts, and FIN.16 returns conditional advice. Use [FDM][FDM] to identify the parties, positions and conditional events in the financial model. If rights are disputed, compare routes conditionally and establish the applicable treatment with the competent authority before relying on one as enforceable. The responsible parties use the applicable restructuring and legal methods to negotiate or conduct a proceeding.
+FIN.2 establishes cash urgency, FIN.7 supports route-specific values, FIN.10–FIN.12 supply financing and covenant facts, and FIN.16 returns conditional advice. Use [FDM][FDM] to identify the parties, positions and conditional events in the financial model. If rights are disputed, compare routes conditionally. Before relying on enforceability, establish the applicable treatment on adequate legal grounds. Obtain a decision from the competent authority where the operative process requires it. The responsible parties use the applicable restructuring and legal methods to negotiate or conduct a proceeding.
 
 ### FIN.22:End

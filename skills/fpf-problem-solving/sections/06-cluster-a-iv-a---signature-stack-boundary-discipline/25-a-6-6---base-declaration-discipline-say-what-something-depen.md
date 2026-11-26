@@ -231,7 +231,7 @@ When umbrella wording leaves the relation unclear, recover the direct meaning th
 | “This description is about X” | **Ordinary aboutness** under A.7/C.2.1 | description episteme and its EntityOfConcern X; aboutness alone does not establish a source-to-receiving construction | the source or describing relation required by the use |
 | “Construct a view of the same entity” | **Viewing arrow** under A.6.3 | separately identified source and receiving epistemes, the same EntityOfConcern, and the construction rule | viewing pins |
 | “Retarget a description to another entity” | **Retargeting arrow** under A.6.4 | separately identified source and receiving epistemes with different EntitiesOfConcern, and the retargeting arrow `r` | `r`; a separate assertion `q` for a named receiving use, and a current-case judgement when that case is evaluated |
-| “Allowed only under policy P” | **Constraint / policy** (`constrainedBy`, `permittedUnder`) | dependent: work-step / publication item; base: policy/rule | policy pin, waiver/work ref |
+| “Allowed only under policy P” | **Constraint or affirmative permission** (`constrainedBy`, `permittedUnder`) | Identify the proposed use and the condition the rule imposes. For permission, establish which beneficiary may do what, in which scope and when. | the applicable rule and facts that satisfy it, including a current grant or the required party’s assent when the rule calls for it (`A.2.8.PER`) |
 | “Property belongs to object” | **Attribution / aboutness** (`attributedTo`, `aboutEntity`, `characterises`) | dependent: property/abstraction; base: object | observation/derivation witnesses |
 | “This expression means … in this source” | **Source-local meaning lane** (F.0.1; F.17 only when a durable address or basis relation is needed) | local expression and local-sense claim | source passage and, when current, an obtaining basis relation |
 
@@ -259,7 +259,8 @@ If the sentence is not basedness, use the matching ontology:
 | a claim is acceptable for material reliance | A.10 for the bounded-reliance basis; B.3 only for a separately identified assurance claim, with the evidence-use relations kept separate |
 | a causal, intervention, counterfactual, or simulation-only use is admissible | C.28 |
 | a mathematical lens exposes preserved or lost structure | C.29 for that lens; C.26 only for its quantum-like/contextual-model case; F.9 only for a separately obtaining correspondence between local sense cells; the direct mathematical pattern for the mathematical object or rule |
-| one thing helps or enables work | the work, resource, capability, or action relation, or ordinary Plain help |
+| a condition enables work | identify the condition and the action it makes possible |
+| a participant offers or provides help | say whose intended result the offer or contribution serves, what the participant proposes or provides, and what remains with the recipient if they have a choice or work to do. Ordinary wording can convey the whole relation. |
 | a file, section, packet, or companion helps a reader | E.17, E.11, or ordinary orientation |
 | a source, model, diagram, or view describes something | A.7, C.2.1, E.17, and the direct describing or source-use relation |
 

@@ -19,6 +19,7 @@
 - [Why some DPFs stand outside the Suites](06-library-reference-5---why-some-dpfs-stand-outside-the-suites.md)
 - [Several relations, not one hierarchy](07-library-reference-6---several-relations-not-one-hierarchy.md)
   - [Connect structures through the result they must obtain](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference61---connect-structures-through-the-result-they-must-obtain)
+    - [What did it contribute?](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference611---what-did-it-contribute)
   - [Interpret levels, layers and scales through their relations](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference62---interpret-levels-layers-and-scales-through-their-relations)
     - [Reason about the types used to model a domain](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference621---reason-about-the-types-used-to-model-a-domain)
     - [Unified term sheet for scales, layers and model abstraction](07-library-reference-6---several-relations-not-one-hierarchy.md#libraryreference622---unified-term-sheet-for-scales-layers-and-model-abstraction)

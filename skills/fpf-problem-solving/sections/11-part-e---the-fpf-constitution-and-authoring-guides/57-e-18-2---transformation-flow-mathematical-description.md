@@ -25,7 +25,7 @@ A single diagram can present several of the five values below. Identify which va
 | one selected network of independently identified TFS or nested-network members and cross-member relations | E.18.NET defines membership, boundary, and cross-member relation requirements; apply those rules to select the network and identify its obtaining cross-member relation occurrences | not a graph, record, view, or publication, and not several valuations or one internal subflow |
 | mathematical description of exactly one selected TFS or network | `E.18.2` | records represented subject, expression kind, mapping mode, preserved/lost structure, declared use, and the boundary to stronger project claims |
 | declared mathematical-lens use and its adequacy | C.29 defines the bounded adequacy test and returned lens-use result; apply it when adequacy, payoff, preserved/lost structure, or a stop condition is claim-bearing | Use the C.29 result here. E.18.2 does not define another adequacy test. |
-| rendered graph, table, equation, diagram, or other publication face | `E.17` publishes the face; the applicable view or architecture-description pattern supplies its membership or adequacy result when that claim is current | may publish the mathematical description but neither becomes it nor reidentifies the selected TFS or network |
+| graph, table, equation or diagram as rendered | to check what can be read, inspect the expression on its carrier. Use `E.17` to construct or assess a publication face. For availability under `E.24.PUB`, establish that the intended audience can obtain the expression and recover the required content. Use the applicable view or architecture-description pattern when its membership or adequacy is at issue | the expression can convey the mathematical description. The selected TFS or network has its own identity |
 
 When the described selected structure is one A.22-selected CGUS qualified under `E.18.3` through an independently identified E.18 substrate, E.18.2 defines only the mathematical description.
 
@@ -84,6 +84,8 @@ If a separate representation, transfer or adequacy question remains beyond the s
 
 #### E.18.2:4.1 - First-use account
 
+Start with what the recipient wants to infer about the selected structure or network. If you are to choose the expression, ask which changes in its participants or their connections could alter that inference. Could two arrangements have the same graph or summary and require different answers? Retain the distinguishing relation, supply an independent premise, or limit the inference to what both arrangements support. If the expression is given, establish which of those conclusions it already supports.
+
 State the subject, mathematical object, correspondence, what the expression preserves and loses, and its declared use in ordinary prose or equations when sufficient. Use this compact record when the receiving use needs a separately inspectable description:
 
 ```text
@@ -127,10 +129,10 @@ For a guaranteed limit, an upper bound on all outcomes of a nonempty admissible 
 
 | Expression family | Use when it describes | Required boundary |
 |---|---|---|
-| graph, hypergraph, network expression, DSM, DMM, MDM, or matrix | dependency, selected internal relation, cross-member relation, adjacency, interface placement, clustering, or change propagation inside one selected TFS or across one selected TFS network | Select the subject separately using E.18's one-TFS identity and selection constraints or E.18.NET's membership, boundary, and cross-member relation rules. E.18.2 defines the description. This description is not a work occurrence, gate passage, or evidence. |
+| graph, hypergraph, network expression, DSM, DMM, MDM, or matrix | dependency, selected internal relation, cross-member relation, adjacency, interface placement, clustering, or change propagation inside one selected TFS or across one selected TFS network | Select the subject separately using E.18's one-TFS identity and selection constraints or E.18.NET's membership, boundary, and cross-member relation rules. E.18.2 defines the description. The mapping can support conclusions about the represented relations. A claim that a particular Work or gate decision occurred needs grounds for that occurrence. |
 | mathematical path or path slice | reachability, carried relation, currentness slice, refresh locality, or crossing-local replay | not a project procedure or performed sequence |
 | tuple, record, slot relation, or typed relation expression | slot positions, relation arity, locus typing, and value placement | not a new U-kind and not a replacement for A.6.5 slot discipline |
-| morphism, composition, category, operad, optic, or wiring expression | composition, interface, substitution, transfer law, or decomposition of selected transformations | not proof that the represented work can be performed or that interfaces are semantically compatible |
+| morphism, composition, category, operad, optic, or wiring expression | composition, interface, substitution, transfer law, or decomposition of selected transformations | use the mapping and grounded premises about interfaces, capacity, access and timing to establish the compatibility or feasibility they support. Actual execution has its own occurrence |
 | quotient, fold, coarsening, refinement, or factorization | coarser or finer partitions, aggregation, retained or lost structure, and alternative decomposition | Compare the answer before and after this operation using §4.1. To claim strict model refinement under B.5.MR:4.2, hold the inquiry and interpretation fixed, show a feasible completion, establish preservation by all new completions and identify a previously admissible answer now excluded. |
 | algebra, semiring, equation system, or constraint system | operation law, conservation, admissible composition, or constraint propagation over the selected structure | Apply A.6.0 for a separately needed formal-substrate declaration, A.6.1 for a reusable law-governed operation declaration and its application or realization claims, and the relevant subject and evidence patterns for any empirical-law claim. The mathematical expression alone establishes none of those claims. |
 | learned representation, embedding, simulation object, or differentiable surrogate | approximate structure, optimization, similarity, or predictive proxy over transformation-flow structure | not architecture adequacy, OOD guarantee, causal proof, or release readiness by itself |
@@ -153,7 +155,7 @@ The same visible source may require several records, but each E.18.2 description
 
 A refrigerator principle scheme may include an E.17 publication face, a functional-architecture view, one selected E.18 TFS, a thermodynamic mechanism claim, and an E.18.2 graph or equation description. A network diagram may similarly publish an E.18.2 description of one already selected E.18.NET network.
 
-If the expression is evaluated as a lens, apply the C.29 adequacy test; if it is rendered or published, identify the E.17 publication face and any current view or architecture-description membership. Neither record reidentifies the TFS or network.
+To assess the expression as a lens, apply C.29. To check what a rendering shows, inspect the expression as it appears on its carrier. If the commission calls for a publication face, use E.17 to relate that face to the source and the intended reader's use. Establish membership in a view or architecture description when the claim depends on it. These representations retain the selected TFS or network as their subject.
 
 
 #### E.18.2:4.4 - Related claims
@@ -184,13 +186,13 @@ E.18.2 defines the mathematical description of the selected TFS or network. For 
 | functional structure or unsettled function-like wording | Use `C.30.ASV` for the functional structural view; use `A.6.F` to recover the object or claim from unsettled function-like wording, then apply its subject pattern. |
 | module interface | `A.6.M` supplies the module-interface relation |
 | reusable-structure characteristics | `C.31` carries the reusable-structure claim |
-| publication face or explanation-faithfulness use | `E.17` supplies the publication face; `E.17.EFP` returns the explanation-faithfulness result |
+| publication face or explanation-faithfulness use | use `E.17` to construct or assess a face and `E.24.PUB` to establish availability to the intended audience. For an official issue, establish the issuing act under the applicable terms. If its effect matters, establish when and under which rule that issue takes effect. For actual receipt, establish what reached the recipient. Use `E.17.EFP` for explanation faithfulness. |
 
 ### E.18.2:4.5 - Archetypal Grounding (Worked Slices)
 
 **Refrigerator principle scheme.** A vapor-compression diagram can be a publication face. The cooling cycle can be a selected `TransformationFlowStructure`. The thermodynamic laws are mechanism or formal-substrate claims. The graph or equation set that describes the cycle is an E.18.2 mathematical description. It may preserve transformation order, heat-transfer constraints, and cycle closure while losing maintenance work, sensor uncertainty, and installation context. It does not prove the refrigerator works or authorize a repair.
 
-**Two descriptions of one build-the-builder network.** A nested wiring description can preserve finite member paths and exposed positions while hiding an n-ary relation's qualification. A hypergraph description of the same E.18.NET value can preserve relation arity and endpoints while flattening recursive member boundaries. Both E.18.2 records cite the same network ref and state different preserved and lost structure; neither graph creates or reidentifies the network. A rendered diagram is a further E.17 publication value.
+**Two descriptions of one build-the-builder network.** A nested wiring description can preserve finite member paths and exposed positions while hiding an n-ary relation's qualification. A hypergraph description of the same E.18.NET value can preserve relation arity and endpoints while flattening recursive member boundaries. Both E.18.2 records cite the same network ref and state different preserved and lost structure; neither graph creates or reidentifies the network. If a diagram presents the result to readers as a publication face, E.17 governs that further value.
 
 **Two branches on one supply.** At one instant each branch may draw 1 A or 3 A. Their currents add at the common boundary and the model has no other load there. An interlock allows exactly the pairs (1,3) and (3,1). Compose under that rule first: either pair gives 4 A. Now keep just the two individual sets of currents and combine them independently. The full list of pairs is (1,1), (1,3), (3,1), (3,3), giving totals of 2, 4 and 6 A. Both calculations establish compliance with a 6 A limit. The 6 A pair in the second calculation has no realization with this interlock. To decide a 4 A limit for this installation or report its exact total, retain the interlock or obtain an independent sufficient bound or measurement for the same use. A bound of 4 A alone settles the limit, while an exact total requires bounds or evidence that determine the value.
 
@@ -202,7 +204,7 @@ With an interlock allowing at most one high branch, the possible totals are 2 an
 
 If the current claim is the mathematical graph, tensor-shape relation, or wiring expression that describes one such already selected subject, use E.18.2.
 
-For benchmark superiority, apply the relevant comparison test. For training Work, apply A.15.1's occurrence and identity rules. For an evidence claim, recover its subject-support grounds and use A.10 when the source-to-use account is implicit or must remain replayable. For release, test the release action as Work and any separate subject-release predicate. For causality, apply the causal predicate and test for that claim. The diagram supplies none of those project results.
+For benchmark superiority, apply the relevant comparison test. For training Work, apply A.15.1's occurrence and identity rules. For an evidence claim, recover its subject-support grounds and use A.10 when the source-to-use account is implicit or must remain replayable. For release, test the release action as Work and any separate subject-release predicate. For causality, apply the causal predicate and test for that claim. Use any grounds the diagram or an accompanying record actually carries for those conclusions. A wiring arrow cannot supply a missing observation of training or release.
 
 **Circuit and algorithm.** A logic-circuit schematic can describe a transformation-flow structure realizing a Boolean relation. The netlist, wiring graph, algebraic normal form, and truth table are different mathematical or formal descriptions. They do not by themselves decide whether the selected method exists, whether the CMOS mechanism is valid under voltage and timing conditions, or whether a dated powered run occurred. Take a drawing that partitions a fixed set of gates into disjoint, nonempty blocks covering the set. Splitting one block into two such blocks while retaining the others strictly refines the partition. Each new block lies inside an earlier one, and the same gates are covered. An extra label can leave all the blocks unchanged. If the truth table and the expanded circuit allow exactly the same Boolean output for every admitted input, the input–output answers stay the same. Timing at the output would require a timing model and its own correspondence.
 
@@ -214,7 +216,7 @@ For benchmark superiority, apply the relevant comparison test. For training Work
 | Path-as-procedure bias | A mathematical path or path slice can express reachability or locality; method and work-plan claims stay with method and work-plan patterns. |
 | Diagram-as-architecture bias | Architecture adequacy stays with `C.30`, `C.30.ASV`, and related architecture patterns; E.18.2 records only the mathematical-description relation. |
 | Math-as-authority bias | No mathematical expression authorizes work, passes a gate, settles evidence, grants release, or proves assurance by itself. |
-| Publication-as-description bias | Publication faces and rendered diagrams stay with `E.17` unless the current EntityOfConcern is the mathematical description. |
+| Publication-as-description bias | Distinguish the mathematical description, a visible expression on its carrier and any publication face constructed for readers. Use `E.17` for the publication face. |
 
 ### E.18.2:5 - Conformance checklist
 
@@ -225,7 +227,7 @@ For benchmark superiority, apply the relevant comparison test. For training Work
 - `CC-E18.2-5` C.29 is used when mathematical-lens adequacy, payoff, obstruction, preserved/lost structure, or stop condition is being evaluated beyond the local description relation.
 - `CC-E18.2-6` Graph, path, slice, morphism, algebra, category, tuple, quotient, fold, refinement, factorization, wiring, and network-expression language can describe the selected subject mathematically. To assert which ontic structure or network is selected, identify it independently using E.18 or E.18.NET.
 - `CC-E18.2-7` No mathematical expression proves work occurrence, authorizes action, passes a gate, settles evidence, or establishes architecture adequacy by itself.
-- `CC-E18.2-8` A rendered graph, table, equation, diagram, or other publication face remains separate from the mathematical description and is handled through `E.17`; changing it alone reidentifies neither the description nor its selected TFS or network subject.
+- `CC-E18.2-8` A claim about what a rendering shows identifies the expression on its carrier. Use `E.17` for a publication face and `E.24.PUB` for availability to the intended audience. Changing the layout alone leaves the mathematical description and its selected TFS or network identifiable on their own grounds.
 - `CC-E18.2-9` When selected TFS, selected network, work, method, mechanism, signature, evidence, gate, decision, architecture, function, module-interface, or reusable-structure claims are current, apply the contribution named for that claim in §4.4 and keep the result it returns. E.18.2 records only the mathematical-description relation for one already selected ontic subject.
 - `CC-E18.2-10` Distinguish the claims carried by a source expression or publication face by their current EntityOfConcern and relation position. Keep separate records when the receiving use needs their independent identity or reconstruction.
 

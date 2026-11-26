@@ -33,7 +33,7 @@ Connect the rhythmic material and the receiving music with the actions specified
 
 Represent the cycle by its unit-pulse count and onset positions, including the gap from the last onset to the first onset in the next cycle. Identify the musical purpose, such as preserving a familiar figure, exploring spacing or changing an arrangement. A spacing property can settle a geometric question. Its musical value depends on the receiving use.
 
-Fix the origin against a feature of the receiving music, such as an accompaniment entry or a shared phrase boundary. Identify the required sounds or silences there and at other relevant landmarks. To shift the part by s pulses in an n-pulse cycle, replace each onset position p with (p + s) modulo n and leave the accompaniment fixed. Compare the shifted onsets with the receiving landmarks. A shift can change that relation; renumbering both parts leaves it unchanged.
+Fix the origin against a feature of the receiving music, such as an accompaniment entry or a shared phrase boundary. Identify the required sounds or silences there and at other relevant landmarks. To shift the part by s pulses in an n-pulse cycle, replace each onset position p with (p + s) modulo n and leave the accompaniment fixed. Comparing the shifted onsets with the fixed landmarks settles where new attacks fall. Renumbering both parts leaves their relation unchanged. For a quiet interval in this part, establish when its earlier sounds die away, including any carried across the cycle boundary. For a cue, ask who needs to hear it, from where, and against which other sounds. Use sound or listening evidence appropriate to those conditions. A partner can hear a cue through a stage monitor while the audience mix masks it.
 
 An existing placement can be kept when it satisfies the receiving landmarks and the intended musical use. If a particular phase fails, compare another phase where it could help. When none can supply the wanted relation, reconsider the seed, the receiving requirement or the arrangement.
 
@@ -69,7 +69,7 @@ Toussaint supplies the rhythmic and action constructions. The receiving constrai
 
 An ensemble wants three audible attacks in a repeating eight-pulse span. Its pulse 0 is fixed by the accompaniment. Another instrument has a cue at pulse 6, where this new part should remain audibly silent. The percussionist has a low-sounding instrument for the right hand and a contrasting high-sounding instrument for the left. The first musical question is whether a two-cycle timbral exchange works with the accompaniment.
 
-Use `x` for an audible onset and `.` for a silent pulse. For this specific seed, begin with three onset columns and five silent pulses. Give each onset one silent pulse, leaving two; append the remaining two to the first two columns. Read each column downwards and concatenate:
+Use `x` for an onset and `.` for a pulse with no new attack. For this seed, start with three onset columns and five dots. Give each column one dot, leaving two, then append those two to the first two columns. Read each column downwards and concatenate:
 
 ```text
 initial groups:       [x]   [x]   [x]     remaining: . . . . .
@@ -81,7 +81,7 @@ positions:            0 1 2 3 4 5 6 7
 
 The onsets are 0, 3 and 6. Their cyclic gaps are 3, 3 and 2, including the return from 6 to the next cycle’s 0. The three gaps differ by at most one pulse. For other onset and pulse counts, use the repeated-distribution algorithm in chapter 21 or an already established seed. The two sharing steps here derive this particular pattern.
 
-The seed strikes at 6, where the other instrument needs a clear cue. Advance every onset by two pulses modulo 8. Positions 0, 3 and 6 become 2, 5 and 0. In cycle order they are 0, 2 and 5, with gaps 2, 3 and 3. The attack count and cyclic spacing are preserved, while both placements have an attack at the fixed origin and only the shifted placement leaves pulse 6 silent. The unchanged accompaniment makes the two placements musically distinct.
+The seed strikes at 6, where the other instrument needs a clear cue. Advance every onset by two pulses modulo 8. Positions 0, 3 and 6 become 2, 5 and 0. In cycle order they are 0, 2 and 5, with gaps 2, 3 and 3. Both placements have three attacks with the same cyclic spacing and an attack at the fixed origin. Only the shifted placement has no new attack at 6. A ringing stroke at 5 could still sound through the cue. Damping that stroke can change what sounds at 6 while leaving all three onsets in place.
 
 #### MDPE.30:5.2 - Turn the onsets into actual hand and sound parts
 
@@ -94,7 +94,7 @@ First alternate hands on **audible attacks only**. Start with the right hand and
 
 R and L are audible strokes on different instruments in this example. The unlabelled onsets repeat after eight pulses. The hand and timbre assignments repeat after sixteen, with right-hand attacks at 0, 5 and 10 and left-hand attacks at 2, 8 and 13. If both hands produced indistinguishable sounds, the onsets could still repeat after eight while the hand assignments took sixteen.
 
-The ensemble compares the alternating sounds with playing all three attacks on one sound. For these musicians that option requires less coordination and preserves onset timing, while the alternating sounds give an exchange across two cycles. In the stipulated rehearsal the percussionist plays the alternating-attack version at 72 pulses per minute with the audible reference, and the partner reports hearing the cue at 6 clearly. The ensemble selects it for the next rehearsal under those conditions.
+The ensemble compares the alternating sounds with playing all three attacks on one sound. For these musicians that option requires less coordination and preserves onset timing, while the alternating sounds give an exchange across two cycles. In the stipulated rehearsal the percussionist plays the alternating-attack version at 72 pulses per minute. Heard on its own at the partner's position, the damped percussion falls quiet through the cue in both cycles. With the accompaniment restored, the partner reports hearing the cue at 6 clearly. The ensemble selects this version for the next rehearsal under those conditions.
 
 #### MDPE.30:5.3 - Change the receiving condition without confusing the two action rules
 
@@ -108,9 +108,9 @@ motion:  R l R l r L r l
 sound:   x . x . . x . .
 ```
 
-Eight pulse-wise motions return the hands to their original allocation. The first two audible attacks are right-hand strokes and the last is left-hand, the smooth-toggle seed of chapter 32. The onsets and silence at 6 remain. This version calls for eight alternating motions per cycle, three of them sounded. Silent positions still require their specified motions. Whether that organization helps a performer depends on their technique and the conditions.
+Eight pulse-wise motions return the hands to their original allocation. The first two audible attacks are right-hand strokes and the last is left-hand, the smooth-toggle seed of chapter 32. The onsets remain at 0, 2 and 5. At 6 the right hand moves without striking. Whether the high stroke at 5 still sounds there depends on its duration and decay. This version calls for eight alternating motions per cycle, three of them sounded. Silent positions still require their specified motions. Whether that organization helps a performer depends on their technique and the conditions.
 
-In this constructed rehearsal the percussionist initially sounds an unintended stroke at 4. The ensemble slows the passage to separate audible from silent motions, then restores the original tempo and accompaniment. The performer now supplies the required sounds and entry. The ensemble chooses this version for that arrangement and retains the two-cycle version for its earlier use. If the needed silent motion remains out of reach in the preparation time, consider another playable allocation or a change in instrument, entry condition or rehearsal provision.
+In this constructed rehearsal the percussionist initially sounds an unintended stroke at 4. The ensemble slows the passage to separate audible from silent motions, then restores the original tempo and accompaniment. The performer now supplies the low right-hand entry each cycle. At the restored tempo the damped high stroke dies away before the cue, and the partner reports hearing the cue in the revised accompaniment. The ensemble chooses this version for that arrangement and retains the two-cycle version for its earlier use. If the needed silent motion remains out of reach in the preparation time, consider another playable allocation or a change in instrument, entry condition or rehearsal provision.
 
 #### MDPE.30:5.4 - Extend the phrase while preserving a chosen action relation
 
@@ -137,7 +137,7 @@ The equal-pulse grid makes spacing and alternation calculable. Timing nuances an
 ### MDPE.30:7 - Conformance Checklist
 
 - The seed's onset positions, cycle length and last-to-first gap are recoverable.
-- The phase is related to a fixed receiving origin and the entries or silences that matter.
+- The scored attacks are placed against a fixed receiving origin. A claim about a quiet interval or an audible cue has grounds for the required sound, listening position and accompaniment.
 - The action rule states whether attacks or all pulses advance it and continues across the boundary.
 - The comparison shows which required sounds the action and instrument mapping supplies over the stated span and where it falls short, if anywhere. A claim that the sounds were produced identifies the evidence from that performance.
 - For a changed span, show whether the construction preserves the required relation and fits the receiving accompaniment.

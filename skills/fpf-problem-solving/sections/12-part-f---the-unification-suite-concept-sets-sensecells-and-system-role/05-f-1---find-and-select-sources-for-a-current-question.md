@@ -15,7 +15,7 @@
 
 **Use this when.** A current question needs source material, but you do not yet know where to find it, which words its sources use, or whether the available access reaches the needed passage. Use :4.4 to obtain inspectable candidate material with its consequential search and access limits. A catalogue reference, familiar phrase or ranked fragment may be a useful lead while still omitting the condition that changes the answer.
 
-When candidate sources are already inspectable and more than one may change the answer, use :4.2 to justify the smallest sufficient source cut. Ask how each exact source and edition can change the answer or its limits, and retain the distinct contributions that matter. Finding and source selection can be used separately: a sufficient known source can answer directly, and a justified cut can start without a new search.
+When candidate sources are already inspectable and more than one may change the answer, use :4.2 to justify the smallest sufficient source cut. Ask how each exact source and edition can change the answer or its limits, and retain the distinct contributions that matter. Finding and source selection can be used separately: a sufficient known source can answer directly, and an applicable, justified cut can be used without a new search. A separately commissioned new search or independent selection still requires that work.
 
 The source-selection branch returns one `SourceCutNote : U.Episteme`. Before treating the note as that episteme, identify the receiving question as one exact project entity. That question is the note's `EntityOfConcern`; the intended use remains in the ClaimGraph rather than becoming a second subject.
 
@@ -47,7 +47,7 @@ The following problems can arise when people search without a guiding question o
 | Relevance vs finiteness | The cut must expose answer-changing rivals and limits while remaining small enough to inspect together. |
 | Local fidelity vs cross-source use | Each source keeps its own claims and meanings while later work may compare them. |
 | Recency vs continuity | New editions matter, but only changed relied premises should reopen the result. |
-| Efficient search vs human judgment | Search aids may prioritize candidates but cannot decide their role in the answer. |
+| Efficient search and justified selection | A ranking can point to material worth opening. A person, service or team with access to the passages and the ability to interpret them can also select a source and justify its contribution. |
 | Compact memory vs source analysis | A short result should keep the decision recoverable without becoming a second literature review. |
 | Wider discovery vs question fidelity | Query variants may omit a word to reach more material, while the original conditions still govern what can answer the question. |
 | Available access vs coverage | A cheap route may reach enough material; a consequential blind spot may justify another route or an explicit access gap. |
@@ -73,16 +73,16 @@ Source selection, source identity, source-local meaning, source truth, source ad
 #### F.1:4.2 - Source-selection method
 
 **Step 1 — State the receiving question and use.**
-Say what answer is needed, what later use it serves, and which source difference could change that answer.
+Say who needs the answer and what it will let them conclude or do. Where the question concerns an organized whole, consider what could change its answer while the separate accounts of its parts remain true. Seek grounds for the relation or common condition when the answer depends on it. A direct source about the whole can already cover that need.
 
 **Step 2 — Name candidate sources by exact edition.**
 Use identified sources whose relevant claims can be inspected. A discipline or domain-family label may help discovery but is not a source.
 
 **Step 3 — Inspect the answer-changing role of each candidate.**
-Ask what claim or limit from that edition can change the answer. Use F.0.1's ordinary branch only when that role depends on a disputed expression. Pause selection just long enough to name the exact source, edition, and passage, and say in plain language what the expression means there. Then return to source selection. Look deliberately for intended-use contributions, rival explanations, action-changing counterexamples, transfer limits, and material non-fit. One source may serve several roles.
+Ask what claim or limit from that edition can change the answer. A qualified contributor may already have inspected the passage and justified its selection. If the commission entrusts the selection to a particular participant, distinguish the candidate list, excerpts or recommended choices supplied from the judgement that participant actually made. Use F.0.1's ordinary branch only when that role depends on a disputed expression. Pause selection just long enough to name the exact source, edition, and passage, and say in plain language what the expression means there. Then return to source selection. Look deliberately for intended-use contributions, rival explanations, action-changing counterexamples, transfer limits, and material non-fit. One source may serve several roles.
 
 **Step 4 — Take the smallest sufficient cut.**
-Retain sources that cover distinct answer-changing roles. Exclude a candidate when no inspected claim from it changes the stated question or use. Do not optimize for a fixed count, diversity score, canonical status, or exhaustive appearance.
+Retain the sources that together cover the needed grounds. Two passages may be useful only together, for instance when one identifies an item and another states a condition that applies to that item. Check what links their claims. Exclude a candidate when its inspected content adds nothing the receiving use needs. Do not optimize for a fixed count, diversity score, canonical status, or exhaustive appearance.
 
 **Step 5 — Record exclusions, gaps, limits, and reopen conditions.**
 Name deliberate exclusions and why they do not change this answer. State a load-bearing source gap rather than treating an unavailable source as irrelevant. Say which question, use, edition, rival, counterexample, or transfer-boundary change would reopen the cut.
@@ -147,7 +147,7 @@ Choose a route that could reach the needed material at acceptable effort. Use a 
 | Words likely to occur in accessible text | Search the bodies for the object, action, result or distinguishing condition. A single phrase may miss another language, earlier name or differently worded explanation. |
 | Unfamiliar terminology but a recognizable concern | Browse a relevant contents area or example, then use the source's wording for further lookup. A published classification can place the contribution in another area. |
 | A relevant inspected source | Follow a reference or neighbouring passage that could supply the missing contribution, rival or limit. Its references can favour its own lineage. |
-| A search, assistant or summarized view | Use returned candidates to choose what to inspect. Its declared fields or representation can omit body conditions; a score cannot establish their absence. |
+| A ranking, assistant or summarized view | Use a ranking to select passages for inspection. When a contributor also inspected the underlying claims, use its reasoned source choice within its stated coverage. A missing condition in a limited excerpt may still affect the answer. |
 
 These are alternative starting points. Choose an additional route only when a consequential gap remains and that route could recover material the first route could not reach. For example, a body search can bypass a title-only index; an older term can bypass a current-name catalogue; a referenced original can expose a condition missing from an excerpt. Repeating the same limited representation with another tool does not repair that limit.
 
@@ -295,14 +295,14 @@ The resulting `SourceCutNote` is identified by that ClaimGraph, the stated recei
 - **Exclude:** “No inspected claim from this source changes the stated use; record the exclusion and what would reopen it.”
 - **Return a gap:** “This unavailable or uninspectable source may be load-bearing; the cut remains limited here.”
 - **Keep meanings local:** “Selection puts both sources in view; it does not say their terms are identical or related.”
-- **Use search assistance:** “The ranking tells us what to inspect next; we decide whether to retain the source from the claim we inspect.”
+- **Use search assistance.** “The ranking led us to the drawing. The archive service retained it because it checked the relevant clause and its exception against our question.”
 - **Reopen:** “This question, use, relied claim, rival, counterexample, or transfer boundary changed, so select again.”
 
 
 
 #### F.1:5.5 - Didactic distillation of source selection
 
-> State and independently identify the question; keep the later use in the claims. Keep a source because an inspected claim can change the answer, expose a rival or counterexample, or mark a transfer limit. Return one finite `SourceCutNote` whose ClaimGraph carries those roles, exclusions, limits, and reopen conditions, whose EntityOfConcern is the exact question, and whose named effective scheme resolves the question and exact editions. Search scores may guide inspection; they do not admit or exclude a source. Stop when additional candidates do not change the answer.
+> State and independently identify the question; keep the later use in the claims. Keep a source because an inspected claim can change the answer, expose a rival or counterexample, or mark a transfer limit. Return one finite `SourceCutNote` whose ClaimGraph carries those roles, exclusions, limits, and reopen conditions, whose EntityOfConcern is the exact question, and whose named effective scheme resolves the question and exact editions. Search scores may guide inspection; they do not admit or exclude a source. Finish selection when the sources together cover the grounds the question needs, or return the specific gap that limits the answer.
 
 #### F.1:5.6 - Manual archive: a rule under an unfamiliar name
 
@@ -349,7 +349,7 @@ The catalogue points to a note about equipment labels. Reading it reveals that a
 
 The equipment register explains how current identifiers distinguish the pumps. Further guides found through different terms give more identification examples, but leave the preparation-state question unanswered. A reference in the register gives a route to H-2. The next search opens its completion condition in section 5, with the definition of the reported state and interval. The new contribution is that condition, not merely a new document.
 
-The reader now returns R-4:2 for the equipment-identification basis and H-2:5 for the condition on reporting completed preparation. These supply the current requirement question. Stop searching and use them to examine the proposed handover. Choosing a course still requires judging the learning need. Identifying the handover requirements did not settle that question. If the available operations do not explain how to produce the required handover, use C.39 to develop the missing connection, with those passages as inputs.
+The reader now returns R-4:2 for the equipment-identification basis and H-2:5 for the condition on reporting completed preparation. These supply the current requirement question. Use those passages to examine the proposed handover. If the receiver has no way to distinguish the two pumps on shift, repeating the same label in a course will leave that problem open. A guide that maps an observable difference or a fixed location to the correct pump can itself supply the missing information. Distinct identifiers at the pumps or working access to a register that resolves the difference can also help. If the identifiers are available and the task is for staff to learn to use them, R-4 and H-2 show what the training material must let them distinguish. Complete any search for suitable material that the reader separately commissioned. If the available operations do not explain how to produce the required handover, use C.39 to develop the missing connection, with those passages as inputs.
 
 If the procedure is inaccessible, return the inspected identification passage and the missing preparation-condition source. More identification guides do not close that gap. If both passages were already known and sufficient, open them directly. No additional route or SourceCutNote is needed for that use.
 
@@ -378,7 +378,7 @@ Checks that refer to a cut or `SourceCutNote` apply when the work calls for sour
 - **SCR-F1-S07 (Temporal honesty).** Designed and performed source claims remain distinct when the difference affects the answer.
 - **SCR-F1-S08 (Family neutrality).** No meaning, relation, or membership decision relies on a domain-family label.
 - **SCR-F1-S09 (Named search policy).** Any material search aid has a recoverable policy, corpus, method or model edition, and interpretation.
-- **SCR-F1-S10 (No algorithmic gate).** A search reading changes the cut only after inspection of source claims.
+- **SCR-F1-S10 (Grounds for selection).** A source choice rests on inspected claims and their contribution. If the use credits a particular party with independent selection, the material supplied and that party's actual choices are distinguishable.
 - **SCR-F1-S11 (Reopen conditions).** The result says which question, use, edition, rival, counterexample, or transfer-boundary change reopens it.
 - **SCR-F1-S12 (Domain-method boundary).** A required systematic or appraisal-bearing review remains with its domain method.
 - **SCR-F1-S13 (SoTA source roles).** A cut used for a SoTA claim assigns every retained source one of the comparison roles defined in `E.8:11`, records it in plain wording, and says which retained contributions can change the answer. F.1 does not restate or supersede the E.8 definition.
@@ -424,7 +424,7 @@ An unfamiliar name or incomplete search view need no longer end finding silently
 
 The source cut becomes small enough to inspect, while a decisive rival, counterexample, or transfer limit cannot be discarded merely to satisfy a count. Later work can recover why each source was present, which edition was used, what the cut deliberately omitted, and what change reopens it.
 
-The cost is explicit judgment. The author must say what each source can change and disclose a load-bearing gap instead of treating absence as evidence against a claim. Unknown rivals can still be missed, so citation chasing, expert leads, search aids, or a domain review method may remain necessary. Their outputs are candidates until source claims are inspected.
+Selection needs an explicit judgement about what each source can change and which gaps could matter. The judgement may come from a capable search service, an author or a team with access to the relevant passages. Unknown rivals can still be missed, so citation chasing, expert leads, search aids, or a domain review method may remain necessary. A lead supplies a candidate. A reasoned cut from such a contributor can already meet the request when it identifies the inspected claims and why they matter.
 
 The cut is not evidence that its sources are true, sufficient, representative, mutually compatible, or safe to rely on. Those conclusions belong to the receiving synthesis, domain evidence method, F.9 relation, A.10 reliance account, or B.3 assurance claim.
 

@@ -179,17 +179,17 @@ Two notes may supply the same required expression properties and still differ sh
 
 In :13.1, the facet definitions and record form remain available after the reference-gauge reading arrives. The closure assessment changes from `CD1` to `CD2`; retain the assessed alert edition and the new grounds in the updated assessment. This is reuse of the facet selection with changed claim content, not reuse of the earlier closure reading.
 
-Now consider two stipulated receiving rules for that same assessment. A diagnostic-comparison meeting requires an explicit question and contrasting alternatives; it can use the available `AE4` reading. An action-selection rule additionally requires a selected diagnostic route. `CD2` still leaves two alternatives live, so that rule's condition is not met.
+Consider two uses of that assessment. A diagnostic meeting needs an explicit question and contrasting explanations. The `AE4` reading meets that condition. A dispatcher asks which check the operator chose next. At `CD2`, low supply and an open bypass are both still possible. If the protocol prescribes a check of upstream pressure, it establishes what the operator was required to do. A record of the operator’s choice can answer the dispatcher. Without evidence for that choice, it remains open.
 
-The same readings support these different conclusions because the receiving conditions differ. If both assessments publish their threshold conditions, their full contents differ; the common readings may be cited once. Neither rule changes what `AE4` or `CD2` means, and each applies only to the stated receiving use.
+The same facet readings can therefore support the diagnostic meeting while leaving the dispatcher’s question open. Cite the common readings once if both accounts use them. The receiving purpose determines which additional grounds matter.
 
 ### C.2.LS:14 - Authoring and Review Guidance
 
 #### C.2.LS:14.1 - For authors
 When publishing a language-state facet profile:
 
-1. start from the local authoring problem rather than from a memorized progression;
-2. name the facet refs;
+1. identify the decision or operation for which the recipient will use the profile;
+2. choose the facet readings and any conditions that could change that result, and cite the assessments that supply them;
 3. add threshold refs only when a threshold changes routing, repair, or another operative decision;
 4. when a label such as "mature", "raw", or "ready" carries an operational claim, make the relevant facet readings and conditions visible.
 
@@ -247,7 +247,7 @@ Local overlays such as "explicit-but-open", "derived from trace T", or "requires
 Do not infer the whole language-state profile from one facet. High `AE` does not entail high `CD`; an operator acknowledgement condition does not fix `AE` or `CD`; symbolic representation does not establish the expression properties needed by the receiving use; low `CD` does not imply low operational consequence.
 
 #### C.2.LS:17.2 - Threshold interaction rule
-For a threshold expressed over one facet, identify any other facet readings or relation conditions that also constrain the receiving use. A local rule may require sufficient `AE` for an explicit open explanatory question for `B.5.2.0` and cap `CD` so rival explanations remain live. Another may require `AE3+` and an open-interpretation `CD` condition for an exploratory `A.6.P` use of a relation that needs clarification. Apply these thresholds to the named semantic branch under the receiving pattern's entry conditions. Any binding consequence retains its own governing rule and authority.
+For a threshold expressed over one facet, identify any other facet readings or relation conditions that also constrain the receiving use. A local rule may require sufficient `AE` for an explicit open explanatory question for `B.5.2.0` and cap `CD` so rival explanations remain live. Another may require `AE3+` and an open-interpretation `CD` condition for an exploratory `A.6.P` use of a relation that needs clarification. Apply these thresholds to the named semantic branch under the receiving pattern's entry conditions. If the readings are uncertain, use C.2.2a:4.2 to check what their joint constraints establish. A bound can settle the condition. If the answer still differs between possible combinations, identify the difference the receiving use needs. Any binding consequence retains its own governing rule and authority.
 
 #### C.2.LS:17.3 - Transition reading rule
 Read changes in the profile's readings and source or use conditions separately. A note may become more explicit without becoming more closed. Replacing direct access to an observation with access to its written report can leave closure unchanged while changing which check the recipient can perform. A representation may become more symbolic without adding the expression properties needed by its receiving use. Use the applicable move rule to determine which current readings and source, use or route conditions must hold. State any changes to them that the transition makes.

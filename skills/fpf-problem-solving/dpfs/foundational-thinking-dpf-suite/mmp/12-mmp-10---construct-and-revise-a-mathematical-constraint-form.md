@@ -8,7 +8,7 @@
 
 Use this pattern when you know the conditions a possible object or situation must satisfy and need to express its possibilities mathematically. You may be looking for an arrangement, a quantity, a shape or a rule of action. Representations such as a number for an amount, an ordered list, a set of members and an unknown function support different operations and possible answers.
 
-Start by describing one candidate object and what would make it admissible. Choose a way to represent it, then distinguish two kinds of condition: those needed for the representation to denote such an object, and those expressing the requirements on that object. This produces a mathematical problem that can be reasoned about or handed to an appropriate computational method.
+Start with what the recipient needs to choose, establish or explain. Work out what would count as one candidate for that use. It might be an object, an arrangement of several objects, or a rule for choosing after information arrives. A sample candidate can help identify the variables. Requirements can also determine their form before any feasible instance is known. Distinguish conditions that make a representation denote such a candidate from the requirements that candidate must meet.
 
 The result consists of variables with their domains, joint conditions, the requested operation on their solutions and a way to interpret the answer. It can be enough to find one feasible case; another question may require all possible values, a preferred case or a count. The chosen representation must support the requested result.
 
@@ -38,7 +38,7 @@ The difficulty is to construct the mathematical expression of the intended possi
 
 #### MMP.10:4.1 - Recover what varies and what the question asks
 
-Describe a candidate before choosing scalar variables. Is it an amount, a collection, a sequence, an assignment, a function or another mathematical object? Which distinctions can change the answer? A set retains membership; a multiset also retains multiplicity; a sequence retains positions. Choose among them from the question. If the question concerns several recipients or periods, decide from their use whether an object is one local allocation, a jointly available arrangement, or a rule for choosing later. An assignment to each recipient can be attainable on its own while several assignments share a limiting condition.
+Determine what varies together before choosing scalar variables. If membership matters, a set can suffice. Multiplicity can require a multiset, and order can require a sequence. For several recipients or periods, identify whether the question concerns each local allocation, one jointly feasible arrangement or a rule for later decisions. Establish which demands can coincide and which restrictions or observations the participants share. The resulting joint object can have properties that no separate allocation records.
 
 Separate supplied quantities from unknowns. Among unknowns, distinguish what is to be inferred, what can be chosen and what can vary independently of that choice. If a choice uses an observation, specify when the observation becomes available; MMP.8 constructs the resulting information-dependent requirement. An unknown value does not become a freely selectable design variable merely by appearing in the same equation.
 
@@ -56,13 +56,13 @@ For a function or shape over an infinite domain, choosing finitely many coeffici
 
 #### MMP.10:4.3 - Derive structural conditions and translate requirements
 
-Ask what must hold for a variable assignment to describe one candidate of the intended kind. With Boolean entries `r_ij` describing the graph of a total function, require `sum_j r_ij = 1` for every input i. For a partial function, replace this with `sum_j r_ij <= 1`; an all-zero row then means undefined at that input. For an injective function, additional conditions on columns express the extra requirement.
+State what a well-formed assignment represents. It may specify one complete candidate or retain properties shared by several. With Boolean entries `r_ij` describing the graph of a total function, require `sum_j r_ij = 1` for every input i. For a partial function, replace this with `sum_j r_ij <= 1`; an all-zero row then means undefined at that input. For an injective function, additional conditions on columns express the extra requirement.
 
 These conditions have different reasons. One value per input comes from choosing a total function. Add the column conditions when the problem requires injectivity. Keep their reasons recoverable so that a later change from total to partial or from injective to unrestricted has a local repair.
 
 Express the original requirements using the represented objects. Conjoin conditions that must hold for the same assignment. Use disjunction for allowed alternatives and implication when choosing an option imposes a condition. An implication alone supplies no timing; use time quantities or an explicit sequence when order matters. Preserve a coupled condition such as `x+y=1` rather than replacing it by separate bounds on x and y.
 
-When a bijection between representations is established, MATH.7 supplies transport of operations, relations and compound expressions. For a representation with several records per object, C.29.1 supplies the more general correspondence. Use the decoding of a record to express the requirement on its object. If a condition is rewritten to fit the receiving notation, derive that expression from the original relation and the structural conditions. This is where a missing index, an undefined value or a lost alternative can change the formulation.
+When a bijection between representations is established, MATH.7 supplies transport of operations, relations and compound expressions. Several records may represent one object. Conversely, one record can express a property shared by several admissible objects. C.29.1 supplies the correspondence. Where the record and known conditions determine an object, use that decoding to express the requirement. Otherwise derive what holds over the compatible objects. To give the exact value of a property of the underlying object, establish that at least one object is possible and all give that value. To guarantee a choice on the strength of the record, look for an available action that meets the obligation for every compatible object. A probability of success or an expected gain needs the corresponding probability model and decision criterion (MMP.8:4.3–4.4). Where the requested result still depends on a hidden distinction, establish what further variable or timely observation could distinguish the relevant possibilities. If a condition is rewritten to fit the receiving notation, derive that expression from the original relation and the structural conditions. This is where a missing index, an undefined value or a lost alternative can change the formulation.
 
 Additional constraints can expose consequences and help the obtaining method. Derive them from the retained requirements, and preserve that dependence. When efficiency matters, compare the work each formulation requires. A formulation with fewer variables or more constraints can still take longer to solve.
 
@@ -140,7 +140,7 @@ Compactness can hide duplicate records or omitted possibilities. Judge the repre
 
 - Can the reader identify a candidate object before interpreting the variables, including what is supplied, unknown or selectable?
 - Do domains, units, shared quantities and definedness express the intended possibilities?
-- Which conditions make the representation denote an object, and which express requirements on it?
+- Which conditions make an assignment well formed, which objects can it represent, and which further restrictions come from the original requirement?
 - Do conditions that must hold together refer to the same assignment? Are alternatives and conditional restrictions preserved?
 - Does the correspondence support the direction of inference used here, including recovery of a subject witness, coverage for a bound or impossibility claim, or both directions for an exact feasible set?
 - Does the requested value, preference, count or probability survive the representation, including auxiliary values and duplicate records?

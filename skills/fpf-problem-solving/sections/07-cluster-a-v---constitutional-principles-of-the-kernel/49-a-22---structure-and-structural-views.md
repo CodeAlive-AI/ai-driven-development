@@ -6,18 +6,18 @@
 
 ### A.22:1 - Problem frame
 
-Use this pattern when a practitioner needs to select `U.Structure` as the `EntityOfConcern`: an organization among constituents and obtaining relations, selected to expose a relation class, applied constraint, invariant, variation class, preserved arrangement, or lost arrangement that changes the next engineering or reasoning action.
+Use this pattern to choose which organization of constituents and relations someone needs to understand a situation, make a decision or design an arrangement. When that organization is claimed as a `U.Structure`, it can be the `EntityOfConcern` in its own right. Its constituents and selected relation occurrences must have independent grounds.
 
-Recover the organization selected for the named use:
+Start from the use that calls for a structural account. Which change of arrangement could change the recipient’s action or the reason for it?
 
-1. identify every constituent independently through the content that defines its kind and identity;
-2. recover the relation occurrences among those constituents that obtain under their predicates;
-3. state the constraints applied to those constituents and relations, plus the named selection-use frame that says what question or action this organization serves;
-4. name the resulting selected organization and the admissible action or stop that follows.
+1. Identify the subject and the relations on which the recipient’s decision depends. Two independent organizations can authorize a handover through a relation between them. When composition matters, trace a part to the whole whose use it affects, or trace a whole result to the parts whose arrangement can change it. Another System may use a part's output without containing that part. Where several kinds matter, distinguish, for example, the operations of a Method from the performers or performances it calls for.
+2. Choose the relations and constraints that account for that difference. Does the answer depend on a property of each participant, on what one supplies to another or on a condition they must meet together? Identify the participants in each selected relation. Establish each claimed occurrence under its own predicate, including any membership in a whole used in the argument.
+3. At the scales the question uses, decide what the description must distinguish. Try an allowed change of arrangement that leaves the proposed description the same. If it changes the required action or its justification, retain the distinction or find a sufficient premise for the original question.
+4. State the selection-use frame, the constraints applied, the selected organization and the conclusion it warrants. A design can describe how proposed relations would meet the requirement. Establish that they obtain before using them as the actual structure of an installation.
 
 When the account asserts dated selection Work, establish its independent grounds under §4.1. Those facts explain the performed selection and remain outside `U.Structure` identity. If the judgment must persist, identify a separate C.2.1 result episteme whose claim content designates the selected structure.
 
-The four values above can be stated in ordinary prose or recovered from an existing description. The following optional aid also keeps use limits and any separately needed claims visible:
+The four identity discriminators in §4.1 can be stated in ordinary prose or recovered from an existing description. The following optional aid also keeps use limits and any separately needed claims visible:
 
 ```text
 StructureQuestionCard@Project:
@@ -31,7 +31,9 @@ StructureQuestionCard@Project:
   admissible action:
   stop or non-admissible overread: stop or return condition
   grounded non-admissible overread, optional:
-  selecting system, method, and dated work, only when dated Work is asserted:
+  selecting participant and grounds, when the claim concerns who chose the arrangement:
+  selection Method, when the way of choosing matters:
+  dated selection Work and its grounds, when that occurrence is asserted:
   selection-result episteme, when a durable result is needed:
   claim scope or effective reference scheme of that claim, if current:
   reliance relation, if a neighboring reliance claim is being made:
@@ -45,7 +47,7 @@ Stop when the selected organization and next use are clear. Develop a neighborin
 
 What goes wrong if A.22 is missed: the practitioner reasons from the visible diagram, source publication, source-use record, lens output, generated representation, project record, or architecture description instead of asking which organization is selected and what loss or reliance boundary matters for action.
 
-What A.22 buys in practice: a practitioner can name selected structure, state preserved and lost structure, name source-basis or lens reliance only when it is being claimed, add a `StructureUseReturnCondition` when loss matters, and apply the FPF definition or test for any non-structure claim being made.
+A practitioner can choose the relations an action depends on, explain which arrangements can be treated alike for that action and identify the resulting structure. Use a `StructureUseReturnCondition` when a later decision needs a distinction left out of its description.
 
 Not this pattern when the question under repair is grounded architecture adequacy, architecture structural-view adequacy, or mathematical-lens use. Use `C.30`, `C.30.ASV`, or `C.29` respectively. For any other claim, use the pattern that defines or tests that claim and keep A.22 only to the selected-structure portion.
 
@@ -96,7 +98,9 @@ A diagram, graph, table, model, description, view, or publication may designate,
 
 #### A.22:4.1 - Base `U.Structure` Identity and Selection
 
-For a selected structure `S`, recover four identity discriminators:
+First determine which organization would answer the question in §1. For example, a venue must offer one room for a rehearsal of 70 people who need to work together. Its two rooms have 120 usable places in total. A division of 80 and 40 places and a division of 60 and 60 give the same total but different answers even when both rooms are free. Trace which places belong to which room. The usable capacity of an identified available room can settle the offer without a seat-by-seat drawing. For an order for the total number of usable places across both rooms, the certified total alone can suffice. The change in what the model must distinguish comes from the use of the answer.
+
+For the organization selected for that use, recover four identity discriminators:
 
 ```text
 StructureIdentity(S) = <
@@ -158,7 +162,7 @@ Use description, publication, source-use, evidence, work, gate, decision, releas
 
 #### A.22:4.1b - Constraint-governed unfolding structure
 
-Use `A.22.CGUS` to clarify available continuations and their conditions. Use its formal branch when the named use depends on the identity or CGUS membership of the selected organization. Then identify one A.22 structure with several locally declared loci whose bindings identify the independently selected constituents for the unfolding question; its selected obtaining relation occurrences and applied constraint claims must define at least two potential continuations across allowed cases. The loci are not free-standing A.6.5 slots. A separate case- and time-indexed result may enable zero, one, or several candidates. This specialization remains `U.Structure`; a Method, plan, Work or present-case continuation result is a separate object.
+Use `A.22.CGUS` when the question is whether a particular continuation is available, whether any can work, or what the complete set is. Use the conditions and extent required by that question. Use its formal branch when the named use depends on the identity or CGUS membership of the selected organization. Then identify one A.22 structure with several locally declared loci whose bindings identify the independently selected constituents for the unfolding question; its selected obtaining relation occurrences and applied constraint claims must define at least two potential continuations across allowed cases. The loci are not free-standing A.6.5 slots. A separate case- and time-indexed result may enable zero, one, or several candidates. This specialization remains `U.Structure`; a Method, plan, Work or present-case continuation result is a separate object.
 
 A route card, table, graph, README entry, narrative, slide, or happy-path example may describe or demonstrate the unfolding structure, but it is not the structure itself.
 
@@ -405,23 +409,11 @@ The selected organization directs planning to Bus_7 and both material-path valve
 
 A C.29 graph may represent the same organization, while the predicates of the selected relation occurrences remain its obtaining basis. A visually identical graph with an unestablished connection remains a representation candidate.
 
-**Architecture kernel slice.** A team says, "the architecture is the graph." Recover the selected structure and the graph's reliance relation:
+**Which connection does the graph show?** A team wants to identify the next stage on the refrigerant path. Use the refrigerator scheme of E.18.2:4.5. Suppose the selected design edition specifies that the compressor discharge feeds the condenser directly. Its graph maps the two design positions to labelled vertices and direct flow to a directed edge. The edge runs from the compressor to the condenser. Here the graph describes the selected transformation-flow structure. It answers which stage follows compression on that path in this design.
 
-```text
-declaredStructureSubstrateRef: TransformationFlowStructureRef under E.18, with mathematical graph description under E.18.2 when that expression is the current claim
-candidate structure: selected transformation-flow structure
-structure-claim reliance relation: selected relation record named by value(
-  sourceDescriptionOrPatternApplicationRef = SourceViewRef, structure or crossing record selected under E.18, or E.18.2 mathematical graph description,
-  relationContribution = E.18 selected-structure or crossing definition | A.6.6 base-dependence test | independently established support relation recovered through A.10 provenance and bounded-use account | C.29 mathematical-lens result, chosen for the claim being made,
-  relationKind = source-description | base-dependence | evidence | lens, selected for this reliance,
-  validationBoundary = graph-path currentness boundary, slice currentness boundary, or crossing currentness boundary
-)
-next FPF pattern application: C.30.TFS-REL when this selected structure is used in an architecture-to-transformation-flow relation
-stop or return condition: stop at the selected reliance relation's result; for a Work, evidence, gate, or decision claim, apply its test in A.22:4.7
-non-admissible use: the graph as the whole architecture
-```
+In a record of reliance, `relationKind` can therefore be *source-description*. The `relationContribution` is the represented direction and adjacency of these two positions. The identified circuit description supplies the correspondence. A reversal of the arrow with the same legend would misdescribe this connection. A change of circuit or legend requires checking the correspondence again. The graph can retain this answer while the installed device stands idle. To report actual circulation, obtain evidence bearing on the device in that interval.
 
-The practitioner can now use the graph through the selected source-description, base-dependence, evidence, or lens relation and route the architecture claim to C.30.TFS-REL.
+Other uses of the same drawing can require a different relation. E.18 defines the selected flow structure or crossing, A.6.6 tests base dependence, A.10 traces the grounds of an independently supported evidence claim, and C.29 tests the adequacy of a mathematical representation for the proposed inference. Choose the one the receiving question relies on. Use C.30.TFS-REL for a claim relating an architecture to this flow structure. A work, gate or decision claim draws on its own grounds under A.22:4.7.
 
 **Extracted code structure slice.** A code-agent relation graph or probe JSON reports imports, calls, registry wiring and data-flow links. Recover the source codebase or publication, extraction method, preserved and lost structure, validation boundary and structure-use return condition. That establishes the declared extraction result only. For an A.6.3 epistemic-viewing claim, identify source episteme `X` and receiving episteme `Y`, their same EntityOfConcern, and the projected or re-expressed ClaimGraph and ReferenceScheme. Qualify `Y` as a `U.View` only when the applicable E.17.0 viewpoint conformance independently obtains. A claim about the codebase architecture, internal agent belief, assurance or release readiness still needs its evidence and governing predicate.
 
@@ -438,7 +430,7 @@ ExtractedStructuralView@Context:
 
 | Tell-Show-Show row | Grounding |
 | --- | --- |
-| Tell | A practitioner sees an arrangement that matters but does not yet know whether it is a diagram, a model, a graph, an architecture claim, a source description, base-dependence relation, evidence relation, lens relation, or decision. A.22 asks first: which constituents and obtaining relations are selected, under which applied constraints and named use frame, and what loss changes the next action? |
+| Tell | Start with what a different arrangement would change for the recipient. Choose the relevant constituents, relations and distinctions in the description, then establish what obtains. A diagram can supply grounds for that work when its interpretation and scope support the claim. |
 | Show: `U.System` | In a plant, vehicle, software system, or neural-network model, the selected structure may be transformation-flow, control, module-interface structure, placement, information, scale, or declared logical structure. The structure record does not become the system and does not prove that the system is safe, maintainable, or ready. |
 | Show: `U.Episteme` | A paper, model, generated relation graph, dashboard, architecture note, or mathematical-lens output may describe or present a description of selected structure. A selected-structure claim may rely on that description through a source-description relation or an A.6.6 base-dependence relation. The episteme, view, and publication remain separate from the structure and from each relied-on relation; name that relation and any validation boundary required by its definition or intended use; add a structure-use return condition when §4.5 requires it. |
 
@@ -470,8 +462,8 @@ Use the checklist to inspect the selected structure claim and only the neighbori
 | **CC-A22-7 Non-structure claim kind.** | Evidence, assurance, gate, release, causal, dynamics, measurement, work, decision, publication, bridge, and mathematical-lens claims use the patterns that define or test those claims. | The check passes when that contribution and the claim kind are named, while the A.22 record remains limited to selected-structure use. |
 | **CC-A22-8 Architecture pattern application.** | Architecture claims use `C.30` and `ArchitectureRelation`; A.22 does not treat architecture as a root kind or define C.30-specific records. | Apply C.30 or a C.30 subpattern and keep A.22 only as the selected-structure EntityOfConcern and structure-claim reliance relation. |
 | **CC-A22-9 Plain and Tech recovery.** | Plain structure phrases may remain, but if they carry ontological, evidence, causal, assurance, bridge, gate, work, decision, or admissibility claim, the relevant Tech fields and FPF pattern applications are recoverable. | Add the missing Tech fields or demote the Plain phrase to ordinary recognition wording. |
-| **CC-A22-10 Useful action.** | The repair preserves the supported recognition, understanding, decision or action the practitioner needs. | Restore the information or action required by that use. If the wording cannot support it, use `E.10:17` to name any remaining use as a cue or quotation, identify a blocked transfer, or say that the rewrite is unfinished. |
-| **CC-A22-11 CGUS qualification and case use.** | A formal CGUS qualification identifies one A.22 structure by the four discriminators; its local locus bindings, selected relations, and applied constraints define at least two potential continuations. The present-case result, any description, and every stronger neighboring claim are judged separately. | Use `A.22.CGUS`'s ordinary branch to clarify available alternatives and their conditions. Use formal qualification when the named use depends on structure identity or CGUS membership. If the structure qualifies but case facts are missing, return `unknown` for the affected alternatives. If only a display is present, keep it as an explanation; send description adequacy and stronger claims to their patterns. |
+| **CC-A22-10 Useful action.** | The selected organization and the distinctions retained in its description support the recipient's decision or explanation. A conclusion about an encompassing whole gives the relation or constraint that carries it there. | Restore the information or action required by that use. If the wording cannot support it, use `E.10:17` to name any remaining use as a cue or quotation, identify a blocked transfer, or say that the rewrite is unfinished. |
+| **CC-A22-11 CGUS qualification and case use.** | A formal CGUS qualification identifies one A.22 structure by the four discriminators; its local locus bindings, selected relations, and applied constraints define at least two potential continuations. The present-case result, any description, and every stronger neighboring claim are judged separately. | Use `A.22.CGUS`'s ordinary branch to clarify available alternatives and their conditions. Use formal qualification when the named use depends on structure identity or CGUS membership. If case facts are missing, return `unknown` only where the gap prevents deciding the alternative. A known failure of a necessary condition can already exclude it. If only a display is present, keep it as an explanation; send description adequacy and stronger claims to their patterns. |
 
 ### A.22:8 - Common Anti-Patterns and How to Avoid Them
 

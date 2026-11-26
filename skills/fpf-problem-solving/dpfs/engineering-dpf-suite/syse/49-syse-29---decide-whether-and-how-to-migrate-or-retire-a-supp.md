@@ -39,7 +39,7 @@ Recover who can decide the change and who must provide the receiving result. If 
 
 Find uses that must move together. Two apparently independent clients may share one writable data store, fixture, credential service or operating window. Group a next increment by those dependencies when separate movement would create an unsupported combination. Retain independent uses as separate options.
 
-Establish what users must still do after the last ordinary request. Use the available evidence and ask affected users about consequential gaps. Recovery, interpretation of retained results and reproduction of an earlier configuration can create a future need even when no new production work is planned. When information about a consumer remains unavailable, state what observations were possible and which consequential reliance is still uncertain.
+Establish what users must still do after the last ordinary request. Use the evidence that can reveal each consequential dependency, including interface contracts, records of use or the account of a user who knows an infrequent task. Recovery, interpretation of retained results and reproduction of an earlier configuration can create a future need even when no new production work is planned. When information about a consumer remains unavailable, state what observations were possible and which consequential reliance is still uncertain.
 
 #### SYSE.29:4.2 - Compare the transition choices
 
@@ -61,9 +61,9 @@ When a use is selected for migration, choose a representative affected use that 
 
 Specify what will stop expansion: an unusable result, an unqualified variant, unknown partial effects, a lost support commitment or a violated constraint. Retain the previous path only where its continuing risk and obligations allow it. If no safe return exists, make the forward-repair or outage condition explicit before the change.
 
-Explain the change where users rely on the provision. Give them the information they need to act, including any replacement entry, differences that affect their use, their required action and where to get support. A date alone cannot establish that a replacement works for their use or that they may move.
+Explain the change where users rely on the provision. Give them the information they need to act, including any replacement entry, differences that affect their use, their required action and where to get any support they will need or have been promised. A date alone cannot establish that a replacement works for their use or that they may move.
 
-Supply the means of moving as part of the increment. A migration tool needs a qualified input class, an intelligible result, partial-effect recovery and an actual support provider just as the ordinary path does. Where a user must change how they work, demonstrate the new action and let them exercise it on representative material. A notice or training attendance is not evidence that the receiving task can be completed.
+Supply the means of moving as part of the increment. Establish which inputs the migration tool can convert, how the operator can recognize a usable result and how to recover from material partial effects. If the transition depends on assistance or support has been promised, establish who can supply it when needed. Supply the change its actual consumer needs. A program may need an updated adapter and a way to verify the resulting operation. If a person needs to learn an action, arrange the practice or other help it requires. Demonstrate a specified action where that will help. When the person is to choose or develop the way of working, give them the conditions for their own attempt and feedback on what they do. Establish readiness from evidence of the required capability, including prior work where applicable.
 
 Arrange the increment with the users and providers who must perform it. Confirm the available window, preparation, access and resource demand together. If the same specialist must support ordinary use and the trial, reserve a feasible interval or change the increment. This is coordination of existing responsibilities; redesign assignments only when the existing ones cannot supply the work.
 

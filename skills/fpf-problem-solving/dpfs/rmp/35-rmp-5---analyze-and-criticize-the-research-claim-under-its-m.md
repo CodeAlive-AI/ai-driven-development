@@ -165,7 +165,7 @@ The interpretation concerns these accounts. Estimating a workforce percentage wo
 
 #### RMP.5:5.5 - Repeated measurements and an uncertain contrast
 
-Eight independent specimens are each measured three times under a supplied measurement method. The 24 readings can describe within-specimen variation. Use the eight specimens as the independent experimental units and account for the repeated readings in the analysis.
+In this experiment the researcher independently assigns each of eight specimens to a condition, then measures each specimen three times by the supplied method. The 24 readings can describe within-specimen variation. Use the eight specimens as the independent experimental units and account for the repeated readings in the analysis.
 
 Suppose the estimated contrast is 2 scale units, with an uncertainty interval from −1 to 5 scale units. Report that estimate and interval with the comparison and methodological assumptions. If the supplied equivalence rule requires the entire interval to lie within (−6, 6) scale units, it meets the rule. It fails the same rule with a margin of (−2, 2). Without an applicable margin or practical threshold, these results alone leave equivalence and practical sufficiency open.
 

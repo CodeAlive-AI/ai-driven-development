@@ -58,7 +58,7 @@ Translate the remedy into work. Assign correction of pay to ADM, reassessment to
 
 #### HRM.4:4.5 - Examine recurrence without suppressing voice
 
-Match the check to the requested result. For an opportunity to raise a concern by a deadline, establish the effective procedure, an available channel, a competent recipient and the remaining time. For a decision or remedy already due, establish which acts occurred and what the employee received. Obtain relevant participant response and examine recurrence or adverse treatment under the applicable protections. Where a concern reveals a shared defective premise, return it to HRM.1 or the owning Method. Do not treat fewer complaints as proof of improvement: access may have deteriorated. Likewise, one substantiated error does not justify discarding every adequate decision from the same practice.
+Match the check to the requested result. For an opportunity to raise a concern by a deadline, establish the effective procedure, an available channel, a competent recipient and the remaining time. For a decision or remedy already due, establish which acts occurred and what the employee received. Obtain the participant’s response when it is due or needed to judge the matter. Examine recurrence or adverse treatment when the question or an applicable protection calls for it. Where a concern reveals a shared defective premise, return it to HRM.1 or the owning Method. Do not treat fewer complaints as proof of improvement: access may have deteriorated. Likewise, one substantiated error does not justify discarding every adequate decision from the same practice.
 
 ### HRM.4:5 - Archetypal Grounding
 

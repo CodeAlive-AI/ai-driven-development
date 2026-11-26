@@ -10,4 +10,4 @@ Use the links to consult the supplying publications and the PatternIDs to find t
 
 SOM also needs the receiving practice's technique, criteria and physical limits. Use the relevant dance, music or tool-use practice for those contributions. The writing and dance examples illustrate somatic questions under their stated conditions.
 
-If a companion changes an operation on which the work relies, reconsider the combinations that use it. Establish whether a teacher or lesson can supply suitable instruction for the movement in question.
+If a companion changes an operation on which the work relies, reconsider the combinations that use it. When the movement or its safe limits call for instruction the performer still needs, establish where they can obtain it.

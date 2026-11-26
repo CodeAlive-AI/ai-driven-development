@@ -81,11 +81,11 @@ Use [SIE.6][SIE] to combine claims once their financial meanings are established
 
 Suppose X must pay 100 on day 7. It has 20 in unrestricted cash available on that date after all other receipts and obligations, before this payment. Y holds 150 in its own account. X and Y share a founder.
 
-The founder group includes both entities and their respective balances. On the supplied facts X is **80 short** of what it must pay. To count Y’s money towards that payment, establish how and when it becomes usable by X.
+The founder group includes both entities and their respective balances. X’s identified cash covers 20 of the 100 due. The cash gap is 80. A timely credit facility which X can draw could cover it. To establish inability to pay, the shortfall must persist even after combining the sources X can use together by the deadline. To count Y’s money towards that payment, establish how and when it becomes usable by X.
 
 Suppose an effective arrangement requires Y to transfer 80 to X before day 7. That establishes a support obligation. Timely performance would close the gap. To count the full 80 of support in addition to X’s own 20, establish receipt or another effective means for X to use that support by the due date.
 
-Suppose instead the guarantee can be called only after X fails to pay. Under those terms the creditor may have a further recovery route, while X still lacks cash for day 7. Use FDM.3 for the trigger, timing and beneficiary of the guarantee.
+Suppose instead the guarantee can be called only after X fails to pay. Under those terms the creditor may have a further recovery route, but payment under this guarantee would come too late to fund X’s day 7 obligation. X’s other sources may still permit timely payment. Use FDM.3 for the trigger, timing and beneficiary of the guarantee.
 
 If Y has no support commitment but the founder is expected to arrange a voluntary transfer, keep that event in the scenario that assumes it. For a portfolio-risk question, common dependence on that founder or on the same market can justify examining the members together even when no transfer is possible.
 

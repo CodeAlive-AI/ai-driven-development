@@ -10,7 +10,7 @@ Use this pattern when a control diagram, control-language source, or selected co
 
 A participating System, local system-role kind, System-classification judgment, assignment, Method, or Work is a separate fact. Add it only when it independently obtains and changes the use of the control-structure result.
 
-A first result can state what the drawing specifies: “Supervisor S is to send allowed-mode commands to controller C and receive its status.” To describe the running loop, identify which status was received, how it informed a decision, which command was sent or received, and what is known about the response. A failed actuator can receive a command without acting. A short architecture claim can retain the proposal. Use the note below for an identified control relation and its participants. If the source gives only a label such as `layer`, `level`, `tier` or `stack`, C.30.STRAT helps recover the intended relation.
+A first result can state what the drawing specifies: “Supervisor S is to send allowed-mode commands to controller C and receive its status.” To describe the installed arrangement, establish the inputs the enabled rule uses in the mode of interest and where its commands can reach. For a particular update, trace the input used and the command that followed. Establish the physical response when the question concerns what that command achieved. A failed actuator can receive a command without acting. A short architecture claim can retain the proposal. Use the note below for an identified control relation and its participants. If the source gives only a label such as `layer`, `level`, `tier` or `stack`, C.30.STRAT helps recover the intended relation.
 
 What goes wrong if C.30.LCA is missed: a control diagram is treated as the control structure, `U.View`, or proof; stratification labels bypass `C.30.STRAT` and carry undeclared scope; and `B.2.5`, E.18 transformation-flow prose, or Layered Control Architecture prose is overread as control adequacy.
 
@@ -97,7 +97,7 @@ ControlStructureViewNote:
 
 Use `rateBandRef?`, `controlLayerRelationRef?`, and `externalityBoundaryRef?` only when that object or relation changes the control-structure use. Read the feedback-closure state for the selected return path, operating configuration and interval. One control relation and its feedback-closure state can answer a bounded question; name a further pattern only if its contribution is needed. Generic stratification labels stay with `C.30.STRAT` until a control-specific relation is recovered.
 
-When a recovered control-layer relation is used to justify decomposition, substitution, or design reliance, recover the inter-layer assumption-guarantee relation or mark the control-layer relation as orientation only. `interLayerControlRelationRefs?` is used only when the relation is already control-specific and is used for decomposition, substitution, design reliance, safety, or stability claims.
+For a decomposition or replacement, identify the behavior the enclosing arrangement requires across the layers and establish how the proposed combination preserves it. A qualified assumption–guarantee contract, a common constraint on the reachable joint states, or evidence that covers the combined behavior can supply the ground. Use `interLayerControlRelationRefs?` for an identified control relation on which the design or assurance claim relies.
 
 ```text
 InterLayerControlRelationNote:

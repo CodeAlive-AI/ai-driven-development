@@ -36,7 +36,7 @@ A closure assessment states the fixity and its grounds. Claims about a binding r
 
 #### C.2.5:4.5 - Recover the choice before assigning a level
 
-Name the question or choice whose candidate space matters. Recover the live alternatives, any selected route or frame, and the reason that limits further choice. State the scope of that fixation and what would justify reopening it. The different sources of narrowing in :16.2 determine what must be reconsidered when conditions change.
+Name the question or choice whose candidate space matters. Recover the live alternatives, any selected route or frame, and the reason that limits further choice. State the scope of that fixation and what would justify reopening it. The different sources of narrowing in :16.2 determine what must be reconsidered when conditions change. If every remaining explanation calls for the same action, that action may be settled while its explanation remains open. Results for a supplied list establish what follows within it. To extend the conclusion, establish that the list covers the admissible ways or give an argument that also governs ways omitted from it.
 
 Use that ordinary account directly when it supplies the receiving decision's condition. Assign a `CD` reading when the work needs comparison on this Scale, a chart position or a test against a declared threshold. Match the narrowing and reopening conditions to :4.2; retain an unresolved reading when the available grounds do not establish them. A level does not replace the surviving alternatives or the reason for their treatment.
 
@@ -113,7 +113,7 @@ The comparison in :13.1 distinguishes making a diagnostic question explicit from
 ### C.2.5:13 - Worked Examples and Retreat Cases
 
 #### C.2.5:13.1 - Explicit but still open
-The constructed `Pump-alert-21` in C.2.LS:13.1 makes its diagnostic question and the contrasting implications of three alternatives explicit. It has `AE4` for that question and `CD1` because all three alternatives remain live. When an accepted reference-gauge reading excludes one alternative, the candidate field narrows to `CD2`; neither remaining route is selected. The question remains fully articulated at `AE4`.
+The constructed `Pump-alert-21` in C.2.LS:13.1 makes its diagnostic question and the contrasting implications of three alternatives explicit. It has `AE4` for that question and `CD1` because all three alternatives remain live. When an accepted reference-gauge reading excludes one alternative, the candidate field narrows to `CD2`. That reading leaves low supply and an open bypass as possible explanations. The question remains fully articulated at `AE4`.
 
 A practitioner choosing the next diagnostic question can use the stated alternatives and observations directly. A chart or comparison that needs both Scales can use the separate readings. The full case supplies the observations and discrimination rule; the two levels alone would not justify excluding a candidate.
 
@@ -128,7 +128,7 @@ A route may move from `CD4` back to `CD2` when counter-evidence appears. Make th
 #### C.2.5:14.1 - Author prompt
 To assign `CD`, ask:
 
-- how many rivals remain live?
+- which choice is being assessed, which alternatives does the account leave open for it, and what sets the bounds of that field?
 - is one route merely preferred, or fixed?
 - if the closure is binding, what applicable guard, `governingPatternRef`, or `authoritySourceRef` makes it so?
 - what would count as an admissible reopen trigger?

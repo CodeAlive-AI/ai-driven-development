@@ -4,17 +4,17 @@
 > **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
-**At a glance.** Judge whether an intended performance in a WorkPlan and PlanItem satisfies a local work-entry criterion at the stated time. Apply that criterion to the current inputs it requires. Identify a separate checking Work only when its dated occurrence is claimed. Keep the result and its grounds recoverable for the receiving use; readiness creates neither the intended Work nor its prerequisite facts.
+**At a glance.** Work back from the promised result to what must be secured before work begins. This gives a team a criterion for admitting jobs in the intended range. To judge one proposed start, apply the criterion to that WorkPlan and PlanItem at the relevant time. Keep the grounds for the verdict available to the recipient. Identify a separate checking Work when its occurrence is claimed.
 
-**Use this when.** Use this pattern when a team is about to commit, release, launch, or admit intended work and needs to test its work-entry conditions against the available facts and preparations.
+**Use this when.** A team needs a rule for admitting work or a verdict on a particular proposed start. It can design a rule for recurring work before any individual job has been planned.
 
 **Primary EntityOfConcern.** The C.2.1 readiness-result episteme has the `U.WorkPlan` being judged as its exact EntityOfConcern. Its ClaimGraph designates the relevant `PlanItem`, intended performance, criterion, evaluated facts, verdict, and applicability window. Preserve the plan's exact intended-work kind or work-family classification when that distinction is current; it remains ClaimGraph content and does not instantiate a dated `U.Work`. The plan names the target `U.Method`; cite a separately constituted `U.MethodDescription` episteme only when the readiness criterion or planned use relies on that exact description. The intended-performance designator, intended-work kind, plan item, method, and description are not a dated target `U.Work` occurrence.
 
-**First output.** A readable result identifying the WorkPlan, PlanItem and intended performance; criterion and evaluation time; readiness value; consumed input propositions and their qualification intervals; reliance window; and stop or recheck condition. Add a checking-Work reference only when that occurrence matters. Inputs keep their own predicates and identities.
+**What to return.** For a criterion, give the conditions on which entry depends and why they cover the promised work across the intended range (§4.2). For a readiness verdict, identify the WorkPlan, PlanItem, intended performance, criterion, evaluation time, readiness value, inputs and their validity intervals, reliance window and stop or recheck condition. Identify a checking Work when that occurrence matters.
 
-**Ordinary route.** Identify the plan content, criterion and evaluation time. Check the criterion against its current inputs and return `ready`, `readyWithKnownGaps`, `notReady` or `unknown`, with the reliance window and stop or recheck condition. Reuse applicable input results. Stop when this answers the receiving question; add a separate checking Work, result-episteme reference, gate, permission or assurance claim only when the use needs it.
+**Ordinary route.** Work back from what the recipient is promised. If you are designing the entry rule, establish which combinations of demand it must cover, what must be secured at entry and what may be obtained later in time. The resulting rule can answer this commission. When judging a particular start, apply the agreed criterion to that plan item and its current inputs. Return `ready`, `readyWithKnownGaps`, `notReady` or `unknown` with its reliance window. Add a separate checking Work, gate, permission or assurance claim when the receiving use needs it.
 
-When degraded support, handoff, or continuation-state evidence can change work entry, use the present-WorkPlan branch of `A.15.8` to test the proposed performer, support, and state configuration, then return here with its bounded result. Ordinary full-kit checking does not require `A.15.8`.
+When support loss, handoff or recovery can affect entry, use `A.15.8` to establish what the service requires under those conditions. In designing a criterion, carry the resulting conditions into the admission rule. For a verdict on a proposed start, use the present-WorkPlan branch to assess the intended configuration.
 
 **What this buys.** A team can decide the next bounded move—start no work yet, prepare a missing input, recheck, or submit declared checks to a gate—under the criterion and the entry conditions required.
 
@@ -54,7 +54,7 @@ State readiness as a domain-local result about the identified plan content. When
 
 #### A.15.5:4.1 - One work-entry readiness claim
 
-Start with one ordinary sentence:
+For a verdict on a particular plan item, start with this sentence:
 
 > At evaluation time T, criterion C applied to intended performance I in PlanItem J of WorkPlan P yields readiness value R for use through window V; stop or recheck when Q occurs.
 
@@ -75,7 +75,11 @@ The result episteme states the readiness judgement. If a current claim says that
 
 #### A.15.5:4.2 - Readiness criterion and full-kit inputs
 
-Use one readiness criterion when the entry question depends on what must be known, prepared, reserved, gathered, communicated, assigned, or pinned before work starts. The criterion states:
+Start from the decision about entry. If the question is whether the item passes a specified criterion, apply it and state the scope of that verdict. To design a criterion for the promised work, work back from the results due, their recipients and deadlines. Follow the contributions each result needs, when each input must be available and who can secure it. Include a handoff when the next contribution depends on what it receives. Check shared capacities and reservations across the combinations of demand the agreement permits, including successive claims on a stock before it can be replenished. A resource needed later can be secured by a dependable arrangement for obtaining it in time. Separate a choice the team can make at entry from one another party may make later. If a promise covers either choice, establish that the team can honour it with the information and authority it will then have.
+
+For example, a workshop is to issue one replacement cartridge to each of two crews on the same day. It has one cartridge and can obtain another only the following morning. Each issue considered alone fits the stock. The first issue exhausts it before the second crew can be served. Under an agreement for just one issue to whichever crew claims it first, that same stock covers the quantity due. These terms determine which stock condition belongs in the criterion.
+
+For a reusable criterion, specify the work it covers, the conditions that would permit or prevent entry and the time at which each condition must be met. Show how the rule treats the combinations of demands and later choices within the agreement. When applying it to a proposed start, state:
 
 - the exact WorkPlan and its present EntityOfConcern, PlanItem, intended-performance designator, any exact intended-work target and intended outcome or value claim current in the plan, any current intended-work kind or work-family classification, target `U.Method`, evaluation time, and applicability window it judges;
 - each required positive or negative predicate, the allowed named gaps if any, and the rule for `ready`, `readyWithKnownGaps`, `notReady`, and `unknown`;
@@ -88,7 +92,7 @@ Full-kit thinking helps recognize possible inputs. Check only the input claims t
 2. current information, source-currentness, publication, measurement, evidence, or assurance claims under their subject patterns;
 3. resource-availability or reservation claims, intended performer Systems and local system-role-kind conditions, any already obtaining occurrence of an exact directly declared `U.SystemRoleAssignment` species when C requires an assignment, capability threshold or fit result, and commitment claims when C uses them; plus any current work-in-progress or load and flow-policy claims under the pattern that defines their counted work, boundary, threshold, and qualification window;
 4. preparation or checking results required by C, and separately admitted preparation/checking Work only when its occurrence is consumed by the criterion;
-5. prospective A.2.8.PER grant, non-prohibition, or conflict facts and their qualification windows when permission is current; and
+5. the applicable prospective permission basis, including a standing rule and the facts satisfying it, or the particular A.2.8.PER grant or finding the criterion uses, within its effective scope and time; and
 6. an exact A.21 `GateDecisionResult` only when a current A.21 profile application governs the declared check applications and their mappings to that decision. The gate decision remains a separate result.
 
 A post-launch variance or recheck result may enter only after the target Work is actual and only through the measurement, comparison, evaluation, resource, temporal, acceptance, or other pattern that defines that result. Name the target Work, comparison or evaluation rule, local result, qualification window, and subject pattern. It may trigger or inform an explicitly marked recheck; it neither proves that readiness held before entry nor rewrites the earlier readiness result.
@@ -106,7 +110,7 @@ Keep commitment facts separate from the readiness value. The criterion may consu
 
 The older labels `readyForProbe`, `readyForCommitment`, `committed`, `blocked`, and `requiresGateDecision` therefore resolve to a local readiness value plus an explicit next move, commitment claim, stop, or gate question; they are not additional `ReadinessResultValue` members.
 
-Use `A.2.8.PER` when a pre-entry readiness criterion consumes permission material. Name each value and its own qualification: a current `GrantedPermissionRelation@Context` occurrence with its beneficiary, permitted-action specification, `U.ClaimScope`, and `validityWindow`; a distinct `NonProhibitionFinding@Context` with its frame and `evaluationWindow`; and any `PermissionNormConflictFinding@Context` with its `overlapWindow` and disposition. For a settled conflict, retain the applicable precedence rule and its qualification, or the current resolution result and `effectiveWindow`, according to A.2.8.PER:4.6. Non-prohibition is not a grant, and a grant does not itself settle a conflict. An unresolved conflict limits the readiness use under C; the affected action remains blocked under the permission rule. Cite `PermissionExerciseRelation@Context` or `NonViolationFinding@Context` only for already dated Work: either as evidence about a different Work occurrence or in an explicitly marked post-launch recheck after the target Work is actual, retaining its own `exerciseInterval` or `evaluationWindow`. Those retrospective findings support their named past claims; prospective grant, capability, readiness and entry claims need their own current grounds.
+When the readiness criterion depends on permission, establish how it arises under `A.2.8.PER`. A standing rule and the qualifying facts can directly permit entry. For a criterion that calls for one or more of the following values, identify each required value within its qualification: a current `GrantedPermissionRelation@Context` occurrence with its beneficiary, permitted-action specification, `U.ClaimScope`, and `validityWindow`; a distinct `NonProhibitionFinding@Context` with its frame and `evaluationWindow`; and any `PermissionNormConflictFinding@Context` with its `overlapWindow` and disposition. For a settled conflict, retain the applicable precedence rule and its qualification, or the current resolution result and `effectiveWindow`, according to A.2.8.PER:4.6. Non-prohibition is not a grant, and a grant does not itself settle a conflict. An unresolved conflict limits the readiness use under C; the affected action remains blocked under the permission rule. Cite `PermissionExerciseRelation@Context` or `NonViolationFinding@Context` only for already dated Work: either as evidence about a different Work occurrence or in an explicitly marked post-launch recheck after the target Work is actual, retaining its own `exerciseInterval` or `evaluationWindow`. Those retrospective findings support their named past claims; prospective grant, capability, readiness and entry claims need their own current grounds.
 
 Use A.21 when a current profile application governs the declared check applications and their mappings to a distinct `GateDecisionResult`. Keep that result, scope, currentness and qualification window recoverable. Use `DecisionLogRef` when a log supplies the access, audit or replay path or the applicable policy requires it.
 
@@ -174,10 +178,10 @@ If a dashboard shows green but the required readiness result or its reliance win
 
 | ID | A conforming readiness use... | Check |
 | --- | --- | --- |
-| `CC-A15.5-1` | names the WorkPlan, PlanItem, intended performance, criterion, and evaluation time. | The readiness result cannot float free of the plan content and bounded entry question it judges. |
+| `CC-A15.5-1` | gives a criterion for the commissioned range or a verdict for the specified start. | The criterion covers the required contributions and their joint conditions for that range. A verdict identifies the WorkPlan, PlanItem, intended performance, criterion and evaluation time and answers for that criterion. |
 | `CC-A15.5-2` | separates readiness from performed work. | No target `U.Work` occurrence is asserted unless dated work evidence is current. |
 | `CC-A15.5-3` | separates full-kit inputs, checking results and preparation/checking Work. | A readiness claim need not identify a separate checking Work. Every dated Work it does assert needs A.13 and independent A.15.1 admission; F.6 applies only to a consumed precise assignment-bound claim. |
-| `CC-A15.5-4` | cites planned baselines without rewriting them. | A.15.3 planned-filling rows remain declaration-local content inside the WorkPlan. |
+| `CC-A15.5-4` | preserves the identity and content of any planned baselines it uses. | A.15.3 planned-filling rows remain declaration-local content inside the WorkPlan. |
 | `CC-A15.5-5` | keeps gate decisions in A.21. | When the use requires a gate result, establish it through the applicable A.21 profile application over its complete effective check set and mapping rules; readiness may supply one declared check input. |
 | `CC-A15.5-6` | keeps resource readiness and resource aggregation distinct. | Planned reservations and actual consumption are not merged. |
 | `CC-A15.5-7` | states stop, degraded-use, or recheck condition. | The reader can identify the next supported action; committing or launching still requires its separately satisfied conditions. |

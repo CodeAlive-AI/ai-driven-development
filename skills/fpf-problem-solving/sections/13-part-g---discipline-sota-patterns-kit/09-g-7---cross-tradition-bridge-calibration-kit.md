@@ -159,7 +159,9 @@ payloadPins: { BCT.id, RegressionSetId, FreshnessWindowRef, affected RowEntryId[
 
 #### G.7:4.3 - Minimal calibration procedure
 
-For each correspondence selected for calibration, grouped by Tradition pair and comparable construct:
+When a practitioner must choose what to calibrate for a particular comparison, start at the receiving end. Identify the distinction its conclusion depends on. Find how each tradition expresses that distinction, at the level of the objects actually compared. A rule about every member of a collection and a summary of the collection may concern the same members yet support different conclusions. Consider two cases the proposed source description treats alike. If the target question requires different answers, look for a finer source distinction, combine it with another established premise, or limit the transfer to what both cases support. Show which source conclusions warrant which target conclusions. Reverse use needs grounds in that direction. A correspondence commissioned for calibration in its own right can start at its given endpoints.
+
+For each selected correspondence, grouped by Tradition pair and comparable construct:
 
 1. **Recover the correspondence being calibrated.** For an F.9 row, resolve the exact F.17 sense cells and profile, then produce or reuse its BridgeCard. A kind-channel row cites the C.3.3 kind endpoints and assertion; a plane row cites its own relation and rule. A coarser source label must be resolved to those actual endpoints before calibration.
 2. **Record row scope and losses.** Assign a `RowScopeId` and give each loss a citable reference, such as a `LossNoteRef`.
@@ -207,7 +209,7 @@ A conformant G.7 publication:
 
 **Paired receiving case — Vehicle to TransportUnit.** Use C.3.3 §9.1's exact source and target kind declarations, pinned scheme editions, `registryAPI v1.4` and selected time window. In row `VehicleTransportOrder`, record the obtaining KindBridge, preserved PassengerCar/Vehicle subkind order and collapsed EV distinction, with the reported `CL^k=2` and battery-health loss. This is the kind channel; an F.9 sense Bridge is added only if the receiving claim separately relies on one.
 
-For a G.5 shortlist of independently admitted Methods for a transport review, suppose the applicability criterion uses only the preserved transport/passenger order and explicitly ignores propulsion. The row can support that narrow applicability comparison after receiving admissibility, fresh target classification of the subject vehicles and the matching evidence-reliance result pass. The Methods' other eligibility criteria remain applicable.
+For a G.5 shortlist of independently admitted Methods for a transport review, suppose the applicability criterion uses only the preserved transport/passenger order and explicitly ignores propulsion. The row can support that narrow applicability comparison once the receiving use is admissible, the stated eligibility of the vehicles is established under the target classification rule, and the evidence supports reliance for this use. An existing classification can supply this ground when it covers those vehicles and this use. The Methods' other eligibility criteria remain applicable.
 
 For a battery-health review whose Method-selection rule needs EV/battery information, the same correspondence fails that use because the required distinction is lost. A favourable CL value or a waiver cannot supply the battery premise. The correspondence and calibration can stay unchanged while these two use conclusions differ.
 

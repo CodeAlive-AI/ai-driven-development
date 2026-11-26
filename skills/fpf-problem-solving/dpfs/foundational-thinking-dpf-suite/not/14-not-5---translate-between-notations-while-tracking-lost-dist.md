@@ -58,7 +58,7 @@ For a mathematical interpretation, MATH.18 develops preservation and reflection 
 
 #### NOT.5:4.3 - Perform the receiving operation and recover its answer
 
-Translate a small source expression, perform the intended operation in the target and interpret the result as an answer to the original question. Show how the target result answers the source question. If the target gives a list of numbered nodes, say which source nodes those numbers refer to. If it supplies only a bound or a set of possible answers, retain that limitation on return.
+Start with what the translation must deliver. For one expression, perform the target operation and interpret its result. For a reusable translation, establish how to recover the required source answer across the admitted expressions, including where expressions are combined. A worked expression can help find or explain that correspondence. Show how the target result answers the source question. If the target gives a list of numbered nodes, say which source nodes those numbers refer to. If it supplies only a bound or a set of possible answers, retain that limitation on return.
 
 Compare this result with what follows from the source under its declared interpretation. A mismatch locates a failed translation rule, a missing premise or a target operation that answers a different question. Repair the affected correspondence before relying on that answer.
 
@@ -78,7 +78,7 @@ For several translation stages, follow the information needed by the final opera
 
 #### NOT.5:4.5 - Repair the loss needed by the work
 
-Choose the least burdensome repair that restores the operation. Retain the original expression when an occasional return is enough. Add the missing distinction to the target when the recipient must work independently. Otherwise, carry supplementary information with a defined recovery rule.
+Choose the least burdensome repair that restores the operation. Retain the original expression when an occasional return is enough. Add the missing distinction to the target when that expression must support the operation on its own. When the performer can consult a permitted key or other supplement in time, give them the supplement and a usable recovery rule. A person working independently may use such a key.
 
 Call that supplementary information a *complement* when the target and the supplement together permit the required source recovery. State what it contains and how the return uses it. In :5.2 the position of a cue complements its count; in :5.3 a retained phase duration selects one backward update.
 
@@ -145,7 +145,7 @@ Conversely, fear of information loss can make every conversion retain a complete
 
 When the translation needs checking, use the questions relevant to its declared use.
 
-- Can the recipient construct the target from the source parts, connections and required context?
+- Can the target be constructed from the source parts, connections and required context? If the recipient is to construct it, can they do so with the agreed support?
 - Can a target result be returned as an answer to the source question at the stated strength?
 - For an exact value or verdict, could two source cases give the same target and require different answers? For a request to supply any one acceptable solution, does the offered solution work in every source case that the recipient cannot distinguish here?
 - Does a necessary supplement have a usable recovery rule and remain associated with the right source?

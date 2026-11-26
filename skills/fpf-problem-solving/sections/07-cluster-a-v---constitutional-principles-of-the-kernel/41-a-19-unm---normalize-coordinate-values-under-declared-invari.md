@@ -25,7 +25,7 @@
 **Key outputs.**
 - `NCV` (NormalizedCharacteristicValue) values for coordinates.
 - When requested for a function `n:D→N`, the equality-of-output relation `x ≡_UNM y` iff `n(x)=n(y)` on its domain D. Its classes form a set quotient; preserving further operations or answers needs the additional tests below.
-- An inverse only on the stated image of an invertible transformation; an operational quotient only for compatible operations and recoverable queries; a `NormalizationFixSpec` only when a representative of an established class is needed.
+- An inverse only on the stated image of an invertible transformation; operations on classes where those operations are compatible, and answers to queries that are constant on each class; a `NormalizationFixSpec` only when a representative of an established class is needed.
 
 **Declaration and configured-method identifiers.**
 - `UNM_id?` identifies the selected UNM declaration episteme and its edition under A.6.1; it is distinct from the configured method and from an operation application.
@@ -111,7 +111,7 @@ Select the configured method and apply the declaration below:
 
 **`≡_UNM` (equality of normalization outputs).** For one fixed function `n:D→N`, define `x ≡_UNM y` iff `n(x)=n(y)`. Equality in N gives reflexivity, symmetry and transitivity on D. Thus the fibers form the set quotient `D/≡_UNM`. Inputs outside D have neither an n-value nor membership in this partition. This relation is distinct from the directed transformation graph.
 
-**Operational quotient.** To inherit a total operation on classes, equivalent argument tuples must produce equivalent outputs. For a partial operation, its availability must also agree across equivalent tuples. Use the relevant equivalence on each input and output sort. A receiving query q is recoverable only when `x ≡_UNM y` implies `q(x)=q(y)`. Only after these tests may the equivalence be called a congruence for the named operations. A set quotient alone supplies no such result.
+**Operational quotient.** To inherit a total operation on classes, equivalent argument tuples must produce equivalent outputs. For a partial operation, its availability must also agree across equivalent tuples. Use the relevant equivalence on each input and output sort. These conditions establish congruence for the named operations. For a receiving query q, an exact answer on classes is well-defined when `x ≡_UNM y` implies `q(x)=q(y)` for every admitted pair. A query can fail this test even when an operation is well-defined on the classes. If the query itself is among the operations to be inherited, include it in the compatibility test.
 
 **Reversible chart change.** A declared inverse recovers the input on the transformation's stated image. A strictly monotone encoding on a totally ordered domain is injective and invertible on that image, even if the declared target contains other values. A merely monotone LUT may merge inputs. Repeated normalization or idempotence requires its own composable domain and law; it does not follow from the fibers.
 
@@ -313,7 +313,7 @@ Form classes only when their set-level result is useful. For an operation on cla
 #### A.19.UNM:4.5 - P2W and transformation-flow integration note (normative-by-reference)
 
 When UNM is used inside transformation-flow structures/graphs (e.g., `E.18`):
-- UNM occurs **before** selection/decision steps.
+- Perform or reuse normalization before the comparison or decision that depends on its result. An earlier selection on an independent criterion can determine which values need normalization. Follow an expressly commissioned protocol in its required order.
 - If required measurements are **missing or stale**, apply the declared `abstain` or `degrade` rule and state the gap. The receiving practitioner first checks whether an adequate current basis is already available and whether obtaining new evidence is worth doing. Any chosen acquisition is separately planned and performed under its applicable method; UNM itself neither obtains measurements nor mandates new Work.
 - A receiving step cites the normalized values, method and CN-Spec editions, bearer, comparison basis, evidence, intended use and scope/window. Establish any relation and its receiving-use conditions under UNM-L5; an assurance penalty follows the applicable B.3 domain model.
 - Downstream consumers cite editioned method, basis and evidence anchors as refs and do not re-author them.

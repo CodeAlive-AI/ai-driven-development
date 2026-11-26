@@ -62,7 +62,7 @@ A useful worked example is a compact case with nine visible parts:
 
 > Each item is a thought the reader needs, not a mandatory form field.
 
-1. **Title, working situation, and gain.** Name the situation in ordinary language and say what practical error or decision the example resolves.
+1. **Title, working situation, and gain.** Ask what the recipient is to learn to explain, choose or do. Choose material that makes the grounds for that inference or action visible. If the reader must distinguish two possibilities, select an instance that shows what difference matters and why. A derivation within one case can also show why an answer stays the same throughout the stated conditions. When a particular case is the subject, its supported answer can complete the work.
 
 2. **Worked claim.** State the decision the reader can make in this case. If the page teaches a method for other cases, give the operation and the grounds for its stated range. You can do this within the story. When you have only a particular solution, use C.39.RO to distinguish the case values from the conditions the solution depends on, construct the operation for other admissible inputs, and establish where it works.
 
@@ -84,7 +84,7 @@ A useful worked example is a compact case with nine visible parts:
 
 8. **Optional comparison surface.** If two or more local meanings or source claims are hard to compare in prose, add one compact F.7 table. State the receiving-use conclusion separately. Omit the table when it adds ceremony but no clarity.
 
-9. **Micro-narrative and checks.** Walk from the working situation through the relations to the result. For a transferable method, show which of its decisions the example illustrates. If independent choice is being assessed, establish what the reader chose and what the task, a diagram or a helper already supplied (E.8:4.2.1.3). A prior independent performance may suffice. End with the subject checks that let the reader replay the claim. Add a non-use boundary when F.19 justifies it, and F.15 when a finite naming slice needs its checks.
+9. **Micro-narrative and checks.** Walk from the working situation through the relations to the result. For a transferable method, show which of its decisions the example illustrates. When the page teaches a choice of scope or model, show how the commission leads the explainer to choose the relevant wholes, parts and distinctions in the model (C.39.SA). If the reader is to make such a choice, give them the problem with that choice still available. Distinguish what they justified from what the task, diagram or helper supplied (E.8:4.2.1.3). A prior independent performance under applicable conditions may already establish what the reader can do. An expressly assigned fresh attempt still needs its own performance. End with the subject checks that let the reader replay the claim. Add a non-use boundary when F.19 justifies it, and F.15 when a finite naming slice needs its checks.
 
 **When a case needs several pages.** Keep the decision the reader came to make. A request about one case can finish with its supported answer. If one method is meant to work across a range, identify the conditions and the operation that remain valid as case values change. A derivation for arbitrary admissible inputs may fit on one page. If several pages establish results about different parts, kinds of holons or model abstraction levels, show where those results enter the same decision and why they hold together. Check shared inputs, handovers or other dependencies that can change it. A claim about each member, a claim about a relation between members and a claim about the whole can require different grounds (C.39.QR and C.37.MM). If the working example has displaced the argument for the range, use C.39.GA to recover and repair that argument.
 
@@ -133,6 +133,8 @@ If a separately recovered F.10 rule maps `Met` to `RequirementStatus=Satisfied` 
 
 With missing observations, bound the unavailable time over the full window. Forty confirmed unavailable minutes and two unclassified minutes, with every other minute confirmed available, give at most 42 unavailable minutes. The threshold is met. Forty-four confirmed unavailable minutes already establish `NotMet`. If a qualifying and a failing history both fit the evidence, leave this threshold decision open. Apply any separately stipulated complete-trace or missing-data rule to the obligation it governs.
 
+For the author choosing an example, the June total suffices when readers need to apply the monthly rule. Suppose the lesson instead asks them to decide which records support a promise for **each day**. Choose a fresh pair of histories that have the same monthly total and yield different daily verdicts. In one, thirty minutes of downtime fall on one day. In the other, one minute falls on each of the thirty days. Both histories meet the monthly 99.9% threshold. Only the second meets 99.9% on every day. This difference explains why the author retained the day in the model. To let readers choose what to retain, give them the actual promise and records before showing the grouping. A sufficient bound on the worst day can also settle that promise.
+
 #### F.16:8.1 - Applying the canvas to a multi-source availability case
 
 The following is an application sketch. Supply the named source passages, exact relations, observations and result before claiming it is a completed worked example.
@@ -176,7 +178,7 @@ Create a verdict episteme only if another use needs it. State whether the promis
 
 ### F.16:10 - Didactic distillation
 
-> “Start with one practical question and one claim. Name the actual values involved and the pattern that defines each relation. Cite the exact source and evidence. Use a local-meaning cell only when you need a stable address; use a comparison table only when it makes the argument easier to read; use F.9 only when a real relation between local meanings is part of the case. State the result, its limits, and a few checks. The page displays the reasoning—it does not create it.”
+> “Choose the case for the distinction the recipient needs to understand or use. Start with its practical question and show the claim it helps establish. Name the actual values involved and the pattern that defines each relation. Cite the exact source and evidence. Use a local-meaning cell only when you need a stable address; use a comparison table only when it makes the argument easier to read; use F.9 only when a real relation between local meanings is part of the case. State the result, its limits, and a few checks. The page displays the reasoning—it does not create it.”
 
 ### F.16:11 - Anti-patterns & remedies
 
@@ -222,7 +224,7 @@ Cite the MethodDescription edition only if it changes the result or replay, and 
 ### F.16:13 - Safe reasoning moves
 
 1. **Recognize.** State the working situation, failure, and practical gain.
-2. **Bound.** Write one claim and one receiving use.
+2. **Bound.** State the receiving question and the claim the example will establish. If the question leaves scope or model choice to the reader, explain how to make that choice and where the case illustrates it.
 3. **Name actual subjects.** Replace vague words with the Systems, epistemes, Methods, Work, claims, observations, values, kinds, or assignments involved in the claim.
 4. **Route relations.** Name the defining or testing pattern for each relation. For an alleged proxy, first test direct measurement; if a distinct indicator relation is needed and no rule supplies it, return A.6.RCD `missing-governor`.
 5. **Recover local wording.** Cite the source, edition, and scheme; add an F.17 cell only when the receiving use needs a stable local-meaning address.
@@ -237,7 +239,7 @@ Cite the MethodDescription edition only if it changes the result or replay, and 
 
 #### F.16:14.1 - Static conformance
 
-* **SCR-F16-S01 (recognition).** Situation, failure, gain, and worked claim are clear to a cold reader.
+* **SCR-F16-S01 (recognition).** Can the reader see the question the example addresses and how its reasoning warrants the conclusion at the reach claimed? Where a contrast matters, the case brings out the relevant difference. An assignment meant to assess independent choice leaves that choice to the reader.
 * **SCR-F16-S02 (actual subjects).** No cell, row, label, or record substitutes for an actual value.
 * **SCR-F16-S03 (direct relations).** Every substantive relation names its exact participants and cites the pattern that defines or tests it; use A.6.RCD `missing-governor` for a proposed indicator when no rule defines or tests its relation.
 * **SCR-F16-S04 (conditional F.9).** F.9 appears when the worked claim needs a test of semantic correspondence between local meanings with different interpretation bases. Any asserted Bridge must meet its predicate.
@@ -262,7 +264,7 @@ Cite the MethodDescription edition only if it changes the result or replay, and 
 3. **Replace cell subjects.** Name actual kinds, Systems, Work, claims, observations, values, and evidence; leave cells as optional wording addresses.
 4. **Split generic Bridges.** Restore MethodDescription membership, description use, enactment, performed-Work, measurement, evidence, reliance, fulfilment, kind, assignment, publication, or transformation claims as applicable. Add an indicator relation only when a defining or testing pattern supplies it; otherwise retain the blocker.
 5. **Repair trigger words.** Recover what *role*, *function*, *process*, *service*, or *context* denotes in each sentence before rewriting it.
-6. **Keep the gain.** After every ontological repair, reread the page as a cold practitioner and simplify any wording that became harder without gaining precision.
+6. **Keep the gain.** Reread the repaired passage for the intended practitioner. Simplify wording that became harder without adding precision. When the conclusion depends on what an unbriefed reader recognizes, use an applicable reading by someone who did not receive the intended answer, or obtain one under those conditions.
 
 ### F.16:16 - Teaching variants
 
@@ -287,6 +289,6 @@ Cite the MethodDescription edition only if it changes the result or replay, and 
 
 ### F.16:18 - Closing distillation
 
-> A useful worked example is one replayable argument: situation and gain → claim → actual subjects → direct relations → exact sources and evidence → result and limits → a few focused checks. Cells and tables are optional reading aids. They never replace the values, relations, evidence, or judgement that make the example true.
+> A useful worked example lets the reader follow an argument chosen for their question. Show what makes the case informative, how its premises warrant the result and what the reader must choose again when using the method elsewhere. Cells and tables are optional reading aids. They never replace the values, relations, evidence, or judgement that make the example true.
 
 ### F.16:End

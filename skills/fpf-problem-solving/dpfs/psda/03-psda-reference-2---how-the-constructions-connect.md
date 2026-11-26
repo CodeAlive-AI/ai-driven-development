@@ -36,4 +36,4 @@ Identify what the recipient lacks. These contributions can be used together, but
 
 A simulation produces a result under a model and its inputs. Establish the model's applicability before relying on that result for the present subject. Research can finish with a defensible model or explanation. Routine measurement, restoration of a service and acceptance against an established criterion can finish in their own practices without becoming research.
 
-Use a sufficient existing contribution and stop this selection. If two kinds of work are needed, state what one must return to the other.
+Use an existing contribution if it already settles the selection. Where several kinds of work are needed, identify who receives each result and which decision it supports. One finding can supply another inquiry, independent findings can go directly to the decision holder, or several contributions may work only in combination. Establish the relation the commission actually requires. [PSDA.4:4.4](21-psda-4---select-problem-structuring-methods-and-combine-them.md#psda444---combine-contributions-through-explicit-joins)

@@ -6,7 +6,7 @@
 
 ### C.28.CM:1 - Problem frame
 
-Use this pattern when an explanation names a possible cause but leaves you unable to work out what follows, compare another mechanism, or say what observation could change the explanation. The difficulty can arise in a work process, a physical device or an AI-assisted task. A plausible story is available; the causal relations needed for the question have to be constructed.
+Use this pattern when you need to explain an outcome and the mechanism is open, or when you have a proposed cause and need to work out its consequences. Begin with the outcome and the work or process that could have produced it. Trace the conditions, actions and connections that could account for the observed difference. Use subject knowledge and observations to develop a candidate mechanism or challenge one already proposed.
 
 Begin with one outcome, the contrast that matters, and the relevant observations and subject knowledge. Express two materially different accounts when both remain plausible. Work out a consequence on which they differ, or identify the premise that prevents that comparison. An annotated sketch and a conditional explanation can be the first useful result.
 
@@ -42,7 +42,7 @@ State what needs explaining or changing. Name the outcome and the cases it conce
 
 Distinguish an observed comparison from an intervention query. Observing X=x supplies information about the mechanisms already operating. Imposing X=x replaces a mechanism. For a question about a past case under another action, use factual observations to constrain the underlying conditions of that case. In the alternative, recompute the quantities that depend on the changed action. An outcome observed in the factual case is evidence about that case and may take a different value under the alternative. C.28.MR develops the calculation and C.28 determines what supports its use.
 
-Keep the question small enough for a useful contrast. If two retained accounts permit the same sufficient next action under its own grounds, C.11.DUA can settle whether distinguishing them is worth the effort.
+Choose a contrast that can answer the recipient's question. Two accounts can justify the same immediate protection while explaining the onset or persistence of the trouble differently. The common action can settle today's protection. For a request to explain the trouble, derive what the accounts establish in common and which disputed mechanism still matters. Use C.11.DUA when deciding whether obtaining further evidence warrants its cost.
 
 #### C.28.CM:4.2 - Turn the story into variables with subject meaning
 
@@ -50,7 +50,7 @@ Choose quantities or distinctions that can vary across the relevant cases or tim
 
 Separate the subject quantity from its registration when that difference matters. For example, distinguish an identifier present in the submitted report, a log entry reporting its absence, and inclusion of that report in an incident sample. Recover how the observation is produced through C.16 when needed. A copied ticket is another report of the same event, not another occurrence of it.
 
-Retain enough distinctions for the proposed contrast. Combining two stages is unsafe when the action can change one while leaving the other unchanged. Conversely, a single “ready for dispatch” variable may suffice until readiness failures require different responses.
+When the question concerns a whole, work back from its outcome to the activities, handoffs or physical interactions through which it is produced. Select the constituents whose differences could change the explanation or the consequence being asked about. For example, a publisher adds one reviewer qualified for initial review and final approval. Assigning that reviewer to the first review or to final approval counts as the same staffing increase. If final approval is the only queue limiting completion, the two assignments can yield different publication dates. Keep the assignment and the handoff in the model when the difference matters. If all allowed assignments meet the requested deadline under supported bounds, the coarser description can settle that threshold. A request to explain why a particular issue waited can still require the stage and the history of its handoff.
 
 #### C.28.CM:4.3 - Propose mechanisms and serious alternatives
 
@@ -99,7 +99,7 @@ Two graphs may entail the same observed independences. Two mechanisms may produc
 
 #### C.28.CM:4.6 - Challenge the consequence with available evidence
 
-Compare the consequence with a relevant observation, contrasting case, or argument about the modeled process. An intervention that could distinguish two explanations gives the team a test it can run. To use that test as empirical evidence, obtain its result or use a suitable result already available. First check that the observation concerns the modeled variable, cases and time. A contradiction can arise from the mechanism, measurement, implementation of a proposed action, or a changed operating condition.
+Compare the consequence with a relevant observation, contrasting case, or argument about the modeled process. Different predictions can suggest a test. To offer it as feasible here, establish who can authorize and perform the intervention, who can observe the response, and whether the necessary access, equipment and time are available. A suitable earlier observation can settle the comparison. A newly commissioned test requires its own result. First check that the observation concerns the modeled variable, cases and time. A contradiction can arise from the mechanism, measurement, implementation of a proposed action, or a changed operating condition.
 
 Distinguish a contradicted implication, an untested implication and compatibility with the inspected material. A graph with no relevant testable implication cannot acquire support merely from an absence of contradiction. Conversely, failure to reject an implied independence does not establish the graph. Deterministic constraints, measurement error, missing cases and sampling uncertainty can all change the interpretation.
 
@@ -148,7 +148,7 @@ Construct separate variables for delivered voltage V, display D and current I. U
 
 Setting the displayed number to 12 replaces the display mechanism in either model. It leaves V and I unchanged. Changing C to 6 instead gives V=6, I=1 in the first model and V=8, I=4/3 in the second, if the stated offsets and load relation remain valid. The observation D=14 alone does not choose between the accounts.
 
-A separately qualified voltage or current observation can discriminate these idealized models. The need is a measurement of the physical quantity with a suitable independent basis, not another copy of the same display.
+A qualified voltage or current observation independent of the display can distinguish the models. If the team has access only to the display, it can still explain what a meter at the load would resolve. Before promising a new reading, establish that someone authorized to measure at the load has a suitable meter and can make the measurement in the relevant operating window.
 
 Change the situation: the displayed value is fed into an automatic controller for the next command. The earlier absence of a display-to-device path no longer applies over that horizon. Add D(t) → C(t+1) → V(t+1) and obtain the controller law before predicting the later current. The current instant and later controlled behavior are different questions. C.28.MR then performs the chosen replacement in the model constructed.
 
@@ -181,7 +181,7 @@ Narrative closure favors the first fluent explanation. Diagram authority favors 
 - The graph or equation class supports the rule used; DAG path inspection covers all relevant paths and conditioning, including selection.
 - A consequence follows from named premises, or the missing premise is returned.
 - Compatibility, contradiction and absent discrimination retain different meanings.
-- The returned use distinguishes recognition, model consequence, evidential support and action choice.
+- The returned use distinguishes recognition, model consequence, evidential support and action choice. A test offered as feasible has an available way to perform it and obtain the discriminating observation under the stated conditions.
 
 ### C.28.CM:8 - Common Anti-Patterns and How to Avoid Them
 

@@ -57,7 +57,7 @@ Without a bounded search frame, “no affected use found” can silently mean �
 | --- | --- |
 | Unknown receiving uses vs bounded effort | Receiving uses cannot all be named before discovery, but a global corpus search is rarely justified. |
 | Source-outward trace vs receiver-side reality | Backlinks and lineage find declared uses; receiver inspection finds equivalent or undeclared premises. Neither direction alone is generally adequate. |
-| Automation vs judgment | Search, lineage, traces, and AI can find candidates; the practitioner tests actual reliance in the receiving content under the direct rule. |
+| Automation vs judgment | Search, lineage and traces can expose a candidate dependency. Test actual reliance in the receiving content under its rule. The same capable system can find and test a dependency, or the work can be divided. A separately commissioned judgement needs its own performer and grounds. |
 | Local closure vs hidden gaps | Independent resolved branches should finish, while inaccessible or unindexed surfaces must not become implicit evidence of no impact. |
 | Reuse vs changed grounds | Reuse an unaffected result directly; when a consumed premise changes, recheck the needed condition and retain the result if it remains justified. |
 | Common move vs subject authority | Source-to-use discovery is reusable; materiality remains specific to the subject, including any separate evidence, assurance, or release question. |
@@ -74,7 +74,7 @@ Use the outline in 4.1 to locate the current move; sections 4.2–4.7 give its c
 3. **Bound the receiving uses.** State which uses count for the question. If the question concerns named uses, identify them. If you rely on a list to cover a wider frame, establish what makes it complete for that frame. Use the search-frame fields in 4.3 when some uses must still be found.
 4. **State discovery coverage where you search.** Name the source identifiers, aliases and claim addresses used, the included surfaces, the source-outward and receiver-oriented routes, and any material gap in coverage.
 5. **Inspect candidate receiving uses.** Start with the identified uses. Where others must be found, use search, citations, lineage, traces, indexes or relevant practitioners’ knowledge. Inspect the receiving content and identify the premise, evidence use, operation argument, specification, decision basis or other direct relation through which it used the claim.
-6. **Classify and bound reach.** Distinguish actual dependence, irrelevant mentions and unresolved uses within the searched frame. Group equivalent irrelevant mentions when one inspected reason covers them. Retain the direct-use basis and gaps that can change the receiving conclusion, without a separate exclusion record for each mention. Follow direct uses while the changed premise could alter a conclusion, the conditions under which it holds, a required check or an action. Supply the discovery-and-reach content needed by each subject judgment.
+6. **Classify and bound reach.** Distinguish actual dependence, irrelevant mentions and unresolved uses within the searched frame. Group equivalent irrelevant mentions when one inspected reason covers them. Retain the direct-use basis and gaps that can change the receiving conclusion, without a separate exclusion record for each mention. Follow direct uses while the changes, taken together under the applicable conditions, could alter a conclusion, the conditions under which it holds, a required check or an action. Supply the discovery-and-reach content needed by each subject judgment.
 7. **Apply the direct subject pattern's guidance.** Use the discovery-and-reach statement to apply that guidance to the changed claim, direct use, current conditions, affected reach, coverage limits, and material subject facts. Applying that guidance may show that the proposed dependence must be narrowed or rejected or that stronger evidence is required.
 
    Use adequate existing evidence and return the supported subject result or its scoped blocker directly to its existing consumers. Further inquiry is selected for the receiving question; a discovery gap alone does not commission Work.
@@ -130,7 +130,7 @@ Search output supplies candidates. The receiving content supplies the reliance t
 
 | Discovery disposition | Use it when | What follows |
 | --- | --- | --- |
-| `depends` | The receiving action, interpretation, condition, result, check, specification, or public reference uses the changed claim through a direct relation and could change if that claim changes. | Include the use in affected reach and prepare a discovery-and-reach statement for application of its direct subject-pattern guidance. |
+| `depends` | The receiving action, interpretation, condition, result, check, specification, or public reference relies on the claim directly, and changing it, alone or together with other changes in the edition, could alter what the use can support or requires. | Include the use in affected reach and prepare a discovery-and-reach statement for application of its direct subject-pattern guidance. |
 | `mentions only` | The content cites, lists, stores, describes, or sits near the source, but its current action or result does not use the changed claim. | Exclude it from affected reach. Group equivalent irrelevant mentions and retain a short reason in the existing result when its receiver needs it; no separate certificate is required. |
 | `unresolved` | The premise, equivalent claim, applicability, direct relation, receiving content, or necessary access cannot yet be recovered or contested dependence remains. | Name the gap that prevents deciding dependence; add a responsible contact when the next action needs one. Continue independent resolved branches, but do not classify this candidate as unaffected. |
 
@@ -138,7 +138,7 @@ These discovery dispositions answer whether a found candidate belongs in the aff
 
 A citation, a present or missing trace, storage, indexing, carrier co-location, succession, ownership, declared dependency, graph reachability, or a shared keyword does not establish `depends`. A missing trace may be a discovery or coverage gap; it is not impact and it does not prove no impact. Conversely, an undeclared use can `depend` when the receiving content uses an equivalent premise.
 
-Follow a `depends` branch through direct use relations. At each receiver, substitute the changed claim for the premise it used. Could that change the result the receiver can support, the conditions under which it holds, a required check or an action? Include that use and apply its subject guidance. A decision can stand while the grounds or limits reported for it need revision. Stop before the next use when the change can no longer affect what that use supports or requires. The affected reach comprises these branches within the stated search frame.
+Follow the direct uses to the result the recipient relies on. Establish which premises changed in the applicable edition and how the receiving rule uses them together. Replace the affected premises in that rule and derive what it now supports. Two grounds can independently suffice for the same decision. If the edition withdraws both, keeping either old ground in a one-at-a-time comparison would conceal the change. If one valid ground remains, the decision may stand while its justification needs revision. Follow the consequences through later uses as far as they can change a required result, its conditions, its grounds or the action it permits.
 
 For a branch that needs subject judgment, supply the following discovery-and-reach content at the detail required by its receiver. It may already be present in the direct result; no second statement is needed:
 
@@ -154,7 +154,7 @@ The statement is usable claim content for that subject judgment, not a new manda
 
 #### A.10.1:4.5 - Apply Direct Subject Guidance and Keep the Result Independent
 
-Discovery and reach classification prepare the branch for subject judgment. Apply the direct subject pattern's rule or test to each `depends` branch. Recover or recheck facts about current conditions, evidence, authority, cost, and Work only where those facts can change the independently governed result.
+Discovery and reach classification prepare the branch for subject judgment. Apply the direct subject rule to the affected premises together wherever the branches meet in one decision. Apply it separately to uses whose grounds are independent. Recover or recheck facts about current conditions, evidence, authority, cost, and Work only where those facts can change the independently governed result.
 
 | Live question | Governing contribution to apply |
 | --- | --- |

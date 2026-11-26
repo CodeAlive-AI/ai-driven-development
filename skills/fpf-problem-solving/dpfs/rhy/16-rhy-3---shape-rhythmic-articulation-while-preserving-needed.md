@@ -62,9 +62,9 @@ Report which combinations the evidence supports under the stated conditions, the
 
 For performance or practice, say what must continue, what may vary and what would indicate failure. For example, “Keep the underlying sound through the accent and leave the next sweep available.”
 
-Qualify a successful trial to the conditions in which the passage was performed. When one technique is missing, practise it and restore it in the whole activity. If both actions are already available separately and interfere only in combination, practise their overlap directly. For a proposed arrangement, establish whether its means meet the joint demand. For a claim about an actual passage, use evidence of how its required contributions worked together.
+Qualify a successful trial to the conditions in which the passage was performed. When a player needs a technique, practise it and restore it in the whole activity. If two actions work separately and interfere in combination, locate the source of interference before choosing a remedy. Practice can develop the player's coordination. An actuator limit or a conflict over a shared resource can require a change of control, equipment or allocation. For a proposed arrangement, establish whether its means meet the joint demand. For a claim about an actual passage, use evidence of how its required contributions worked together.
 
-When the performance additionally requires a regular pulse with a changing choice of accents, use RHY.11:4.4.1 to construct that coordination. Retaining contact alone leaves the pulse period and accent placement unsettled. RHY.12:4.2.1 derives practice from the required joint action; it is useful when the performer cannot yet realize that action with the available technique.
+When the performance additionally requires a regular pulse with a changing choice of accents, use RHY.11:4.4.1 to construct that coordination. Retaining contact alone leaves the pulse period and accent placement unsettled. RHY.12:4.2.1 derives a player's practice from the joint action the passage requires.
 
 ### RHY.3:5 - Archetypal Grounding
 
@@ -138,7 +138,7 @@ An attack list costs less attention and can suffice when attacks determine the r
 
 ### RHY.3:12 - Relations
 
-RHY.2 identifies the carrier and its relevant relations. RHY.4 distinguishes the timing points used to judge the articulation. RHY.8 develops variants; RHY.9 and RHY.11 address allocation and simultaneous layers; RHY.12 develops a missing capability.
+RHY.2 identifies the carrier and its relevant relations. RHY.4 distinguishes the timing points used to judge the articulation. RHY.8 develops variants; RHY.9 and RHY.11 address allocation and simultaneous layers. Use RHY.12 when a player needs to develop the coordination.
 
 Use MDPE.3 to configure the performing whole and B.1.5.EW to examine how a present constituent action enacts the encompassing work. The performer also needs the brush, movement or actuator technique that can produce the required combination.
 

@@ -43,7 +43,7 @@ Choose an operation from the rhythmic material and the intended change.
 | Enter at a different place in a cycle | Add a displacement to each selected occurrence and reduce positions modulo the cycle length. Move associated duration and sound labels with the occurrence when that is the intended transformation. | Entry cue, phase relative to other layers, and material crossing the cycle boundary. |
 | Expand or compress a phrase | Scale its durations or add or remove a specified part of each repeated statement. Recalculate the phrase’s total span. | Tempo, internal articulation, available action intervals and fit with adjoining material. |
 | Make a repeated ending reach a chosen point | Choose the statement and gap durations, calculate the span and work back from the endpoint. When the start moves, adjust the setup by the amount the new start requires. | The final articulation convention, the maintained reference and the available preceding material. |
-| Distribute a given number of attacks over a cycle | Choose an arrangement, possibly an evenly distributed seed. Retain the phase and articulations the use requires. | Minimum intervals, entry, accent and intended style. |
+| Distribute a given number of attacks over a cycle | Mark the required and forbidden onsets. If the interval pattern must be preserved, compare permitted rotations with these landmarks. If spacing is open, place the remaining attacks between the marked ones and check both neighbouring gaps, including across the cycle boundary. Try another permitted placement if an earlier choice leaves too little room. | Minimum intervals, entry, accent and intended style. |
 | Change the articulation of a continuous contribution | Reposition or reshape its marked changes while retaining the required trajectory, support or sounding contribution. | Continuity, available movement or control rates, usable timing and the state needed for continuation. |
 | Build a larger passage from familiar parts | Concatenate, overlap or alternate parts under explicit timing and allocation relations. | Boundary transitions, simultaneous demands and the whole passage's intended development. |
 
@@ -55,7 +55,7 @@ For three equal statements, let `s` be the duration of each statement and `g` th
 
 Apply the construction and examine the retained relations. Include the last-to-next-first transition when the cyclic result depends on closure. For a phrase joined to adjoining material, check its entry and exit. If an enlarged ending starts earlier, establish whether preceding material can be shortened or moved within the intended passage.
 
-If a transformation depends on information the representation omits, use an available source or obtain the missing contribution. An onset-only syllable string may leave sustain or silence unresolved. If that distinction cannot be recovered, report the affected limit. The onsets can still be transformed for a positional question. Use RHY.5–RHY.6 for the representation or correspondence.
+An onset-only syllable string can leave sustain or silence open. When the transformation must preserve a prescribed duration, recover it from a suitable source or report the limit on that use. When the player is to devise a duration, identify the conditions it must meet and let the player choose. A choice entrusted to a partner during performance must remain available to that partner, with enough information for the other player to respond in time. For a positional question the onsets alone may suffice. RHY.5–RHY.6 develops the selection and translation of representations.
 
 When transformations are combined, calculate their joint effect in the specified order. Displacing a phrase before changing its duration may give different boundaries from making those changes in the opposite order. Explain the chosen order through the resulting positions, durations and retained contributions.
 
@@ -65,7 +65,7 @@ Check the proposed allocation against the relevant limits at the intended tempo.
 
 Identify any conflict with a known constraint. An assessment can end with that finding. If the task is to choose a usable variant, rule out the conflicting one for that use. If a replacement is requested, construct or adapt one. One established fit can answer a request for a usable variant. When the commission calls for a comparison, or the choice depends on how remaining candidates differ, use RHY.7 and the applicable preferences and constraints in C.11. Seek a further observation when it could improve the result enough to justify the work.
 
-For a needed trial, use a manageable passage, familiar techniques and conditions that expose the question. Use RHY.3 for articulation with its carrier, RHY.9 for the arrangement and RHY.10–RHY.11 for the shared reference or simultaneous layers. If a technique or capability is unavailable, identify the limit. Where development is wanted, use appropriate instruction and practice. Increasing force or speed cannot supply the missing coordination.
+For a needed trial, use a manageable passage, familiar techniques and conditions that expose the question. Use RHY.3 for articulation with its carrier, RHY.9 for the arrangement and RHY.10–RHY.11 for the shared reference or simultaneous layers. Locate the constraint in the proposed performance. A musician can practise a coordination that is within reach. If a mechanism cannot recover between attacks at the required tempo, use that limit to revise the variant, allocate the attacks differently or change the mechanism, as the brief permits.
 
 #### RHY.8:4.5 - Return a variant that someone can enact and assess
 
@@ -86,6 +86,8 @@ Displacing the whole pattern by one unit gives 1, 4 and 7. The cyclic gaps remai
 Positions 0, 2 and 5 give cyclic gaps of 2, 3 and 3, including the gap from 5 to the next 0. This option meets the entrance, count and minimum-spacing requirements. Positions 0, 1 and 6 retain the entrance and count but violate the spacing requirement between 0 and 1.
 
 Offer 0, 2, 5 as a variant, with its sound labels, reference and performing assignment. The calculation establishes the three positional requirements. A claim about actual performance requires evidence of its realization.
+
+Suppose the music also fixes an attack at 4. From 0 to 4 and from 4 to the next 0 there are two spans of four units each. Place the third attack halfway through either span, at 2 or 6, to leave two units on both sides of it. Both versions meet the stipulated constraints. If the composer also requires the original cyclic gaps 3, 3, 2 in that order, none of its rotations fits both landmarks: no two attacks in that pattern are four units apart. The performer can take that conflict back to the composer.
 
 #### RHY.8:5.2 - Enlarge an ending without moving its endpoint
 
@@ -119,7 +121,7 @@ When borrowing a construction, identify the source and the new application. A cl
 - The construction specifies what happens to timing, duration, articulation and performing allocation where each matters.
 - The calculation includes cyclic closure or phrase entry and exit where the result depends on them.
 - For a changed ending, the account states the endpoint convention and establishes how the setup fits it or where a conflict remains.
-- The account uses an adequate source for sustain, silence or reference information required by the transformation, or identifies the resulting limit.
+- For sustain, silence or reference information the transformation requires, the account recovers what is prescribed, states what its author selected and keeps a performer's live choice available where the commission calls for it. Identify the limits of a transformation that lacks a required basis.
 - Supplied constraints and jointly required capabilities are respected or returned as unresolved.
 - If a reproducible variant is requested, the recipient can reproduce it under the stated conventions. For an assessment, the recipient can recover its supported use or the constraint that defeats it. They can distinguish a calculation from an observed performance.
 
@@ -130,7 +132,7 @@ When borrowing a construction, identify the source and the new application. A cl
 | Rotate a pattern and lose a required entrance. | Preserve the receiving reference or choose a phase-compatible variant. |
 | Enlarge every repeated statement but keep the former setup. | Recompute the total and move the start or alter the adjoining material. |
 | Treat a mōrā gap as necessarily silent. | Recover its actual phrase content and duration from the selected construction. |
-| Change attacks from a bare syllable string while assuming missing duration. | Recover duration when it changes the transformation; preserve the uncertainty otherwise. |
+| Assume a duration absent from an onset-only string. | Recover a prescribed duration when it changes the answer. For a new phrase, establish who chooses, within which bounds and at what moment. Preserve any choice entrusted to the performer. |
 | Infer reliable performance from a calculated variant. | Report the constraints the calculation establishes. To establish joint performance, use suitable evidence of the passage under the required conditions. |
 
 ### RHY.8:9 - Consequences
@@ -157,7 +159,7 @@ The three cases stipulate their inputs. This method combines preserving the requ
 
 ### RHY.8:12 - Relations
 
-Use RHY.2 to identify relevant changes and relations, RHY.5–RHY.6 for representation and translation, and RHY.7 to compare alternatives. Use RHY.3 to check whether the articulation can coexist with the continuing carrier, RHY.9–RHY.11 for configuration and coordination, RHY.12 when capability needs development, RHY.13 for transfer or retention, and RHY.14 for a needed observation of performance or response.
+Use RHY.2 to identify relevant changes and relations, RHY.5–RHY.6 for representation and translation, and RHY.7 to compare alternatives. Use RHY.3 to check whether the articulation can coexist with the continuing carrier, RHY.9–RHY.11 for configuration and coordination, RHY.12 for practice by a human performer, RHY.13 for transfer or retention, and RHY.14 for a needed observation of performance or response.
 
 Construct performance variants through RHY.8. For a claim of novelty or diversity among them, C.17 helps identify the comparison and its grounds. Use C.18 when the work needs a record of what was generated, a reason to retain a variant for exploration or a front under stated criteria. Use C.11 when choosing among alternatives and C.11.DUA to assess further inquiry. Mathematical methods supply possible transformations. C.29 qualifies their application to the performance. If the variant is a specification, use E.10.D2 for its checkable claims.
 

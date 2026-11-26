@@ -147,15 +147,15 @@ Differentiating the mean gives:
 
 `m_dot=-mean(X_i^2)=-m^2-Var(X_i)`.
 
-Replacing this by m_dot=-m^2 sets the variance contribution to zero. Populations with the same mean can have different variance, so first ask whether a bound already answers the question.
+Replacing this by m_dot=-m^2 sets the variance contribution to zero. Populations with the same mean can have different variance, so the initial mean alone need not determine the later one. Derive what it does determine before proposing a different output.
 
 Each member has `X_i(t)=X_i(0)/(1+t*X_i(0))` for t>=0. Since X_i(0)<=M, averaging gives the lower bound `m0/(1+M*t)`. The response `a/(1+t*a)` is concave for nonnegative a and t>=0; the mean of the responses is at most the response of the mean. Thus:
 
 `m0/(1+M*t) <= m(t) <= m0/(1+m0*t)`.
 
-With M=2, m0=1 and t=1, the mean lies between 1/3 and 1/2. A requirement m(1)<=0.55 is established without a variance model or a complete initial distribution.
+With M=2, m0=1 and t=1, the mean lies between 1/3 and 1/2. Both endpoints are possible. A population equally divided between initial values 0 and 2 has m(1)=1/3, while one starting entirely at 1 has m(1)=1/2. Thus the initial information does not determine the requested exact mean. If the recipient instead needs to know whether m(1)<=0.55, the upper bound settles that decision.
 
-Change the requirement to m(1)<=0.4. A population whose members all start at 1 has m(1)=1/2. An equally divided population starting at 0 and 2 has m(1)=1/3. Both fit the supplied initial information, so it cannot settle the changed requirement. Information about the initial population or a different acceptable requirement would change the next move. Treating the zero-variance closure as the whole population would conceal this distinction.
+For a threshold of 0.4, the two populations already exhibited fall on opposite sides. More information about the initial population can then matter to the decision. Choosing the zero-variance closure would silently discard one of the admissible outcomes.
 
 #### MMP.9:5.3 - Decide whether a fast transient can be omitted
 

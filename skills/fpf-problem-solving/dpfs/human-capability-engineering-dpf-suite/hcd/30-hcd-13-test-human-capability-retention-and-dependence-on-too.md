@@ -115,7 +115,7 @@ At both T0 and follow-up, the fifteen-minute core uses the supplied tables and c
 
 The reduced-support exercise precedes the source-dependent task on different material. Neither exercise includes corrective teaching before both are complete. This order supports a conclusion about the core under its conditions and equipped performance after that core. A claim about an entirely unwarmed first attempt requires an observation in that condition.
 
-In this constructed case the compared contributions remained demonstrable over the eight weeks of intermittent practice under the stated support conditions. The separately tested core supports the contributions observed there. A claim about retention without practice, untested work or an intervention's causal effect needs different evidence.
+Where the handoff is supplied, these observations support entrusting the selected recommendation work with normal support under the stated conditions. For the offline handoff, L17 showed how to identify the constraints and reject a proposal that exceeded the limit. That response leaves open whether L17 can construct and check a feasible proposal in those fifteen minutes. Use earlier offline work that shows this contribution or arrange a targeted opportunity for it before relying on the complete handoff. The eight-week comparison concerns retention under intermittent practice.
 
 #### HCD.13:5.2 - A failed source link changes the arrangement result
 

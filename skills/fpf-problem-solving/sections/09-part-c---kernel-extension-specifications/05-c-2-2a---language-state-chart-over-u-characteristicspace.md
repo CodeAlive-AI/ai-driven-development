@@ -86,6 +86,8 @@ A language-state position is a partial, slot-explicit coordinate claim in the de
 
 `ValueSet(Scale)` in A.19 is the full Scale domain. Publish each selected slot's reading as one value or as a supported set of remaining possible values within that domain. This set describes incomplete information about the slot's value. Use an interval only where the Scale admits it; state a decision-relevant `unknown` separately when the available information does not determine the needed reading. For closure, `{CD1, CD2}` can report two remaining possible values while the assessment is incomplete. Separate source and use claims follow C.2.6:4.3: two unresolved possible sources differ from an established contribution by both.
 
+When a decision depends on several slots together, retain the dependencies that can change it. A constraint or bound can already decide the question while some joint readings remain unknown. Suppose the grounds leave only `(AE4, CD1)` and `(AE2, CD3)` possible. A rule requiring both `AE4` and `CD3` fails in every remaining case, although each required reading is individually possible. If all the remaining combinations give the same decision, the exact position can remain open.
+
 `position` here abbreviates these slot-explicit `A.19` coordinate claims.
 
 #### C.2.2a:4.3 - Facet basis
@@ -230,7 +232,7 @@ An account of a chart position identifies the episteme publication, the decision
 Minimum self-check:
 
 1. Does the account name the positioned episteme publication rather than a ground, form, face, or carrier?
-2. Does it state every facet that can change the named next action and mark a relevant unknown as unknown?
+2. Does it state every facet that can change the named next action and mark a relevant unknown as unknown? Does it preserve the combinations on which the action depends?
 3. Are the grounds and any relied-on local threshold recoverable?
 4. Does the account supply the position facts needed by the receiving question and, if a local threshold is used, say whether the readings meet it, fail it or leave the result undecided, while the receiving pattern governs the action?
 5. If the use depends on distinct local meanings, was F.9 tested on the two exact local senses rather than inferred from similar wording?

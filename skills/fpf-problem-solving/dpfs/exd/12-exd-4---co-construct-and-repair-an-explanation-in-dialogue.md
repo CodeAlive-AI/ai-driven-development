@@ -5,7 +5,7 @@
 
 ### EXD.4:1 - Problem frame
 
-Use this pattern to prepare, conduct or examine an explanatory exchange when a participant’s contribution bears on the question, the account, the help needed or a further inference. A teacher, technical specialist, adviser or assisting agent may take part. Either participant can offer a relevant relation or a correction.
+Use this pattern to prepare, conduct or examine an explanatory exchange when a participant’s contribution bears on the question, the account, the help needed or a further inference. A teacher, technical specialist, adviser or assisting agent may take part. Any participant can offer a relevant relation or a correction.
 
 In a live exchange, offer a contribution that addresses the current question at a level the recipient can use and allow a response to change the explanation or complete it. In an existing exchange, identify what the response established under the conditions then available. The result may be a recovered relation, a revised question, a disagreement or an identified gap in the subject account.
 
@@ -42,7 +42,7 @@ Attend to what the contribution changes. “I could not hear the number,” “I
 
 Address the point the recipient raised. If a number was inaudible, restore access to it. If a step in the derivation is unclear, inspect the relation and how it was expressed. Examine a challenged premise against its subject grounds. If the intended use has changed, reconsider the question. Distinguish agreement or willingness to act from a response that shows understanding.
 
-When a recipient says their concern was misrepresented, use their correction if it is clear. If a consequential ambiguity remains, restate what you understood and invite correction. Identify what you agree on and what remains disputed or uncertain. Express genuine uncertainty without weakening a warranted claim merely to sound receptive. If the exchange is itself the obstacle, a different time or channel, a pause or closure can serve the explanatory purpose.
+When a recipient says their concern was misrepresented, use their correction if it is clear. Recover the kind of work their question calls for and the reach of the explanation. Carry that work through in the reply. Merely naming where an earlier reply changed its subject answers a request to locate the change. Explaining why it recurs or helping change the practice requires a further contribution. If a consequential ambiguity remains, restate what you understood and invite correction. Identify what you agree on and what remains disputed or uncertain. Express genuine uncertainty without weakening a warranted claim merely to sound receptive. If the exchange is itself the obstacle, a different time or channel, a pause or closure can serve the explanatory purpose.
 
 If plausible readings would lead to different repairs, seek a distinguishing clue in the exchange or ask a focused question. “Which quantity should receive equal influence here?” can reveal a change of weighting target. “What sum does this group mean represent?” can reveal a missing mean-to-sum relation. If the available answer leaves the diagnosis open, state what remains uncertain.
 
@@ -55,19 +55,19 @@ Choose a further contribution when the exchange reveals a need for one.
 | A needed term, label or signal was inaccessible | Supply the same contribution through an accessible channel when it is still needed. Check the affected inference if that bears on the conclusion. |
 | A relation is missing or the recipient cannot follow it | Identify whether a subject ground is absent, a correspondence is unclear, or the expression is inaccessible. Report what the evidence establishes. Where a further explanation is needed, supply the missing contribution when available, or identify the open premise and retain its conditions. |
 | The recipient uses a wrong relation under the same question | Show the specific mismatch, give targeted support and invite the affected inference again when the use warrants it. |
-| A condition or the intended question changed | State the revised question and answer it using its own subject basis. Retain the earlier answer at its original scope. |
+| A condition changed or the recipient seeks a different answer | With a changed condition, return to the question already being answered and establish what follows now. The same answer may still hold for a different reason. If the recipient raises a new question, establish whether it falls within the current undertaking or can be taken up separately. Answer it on its own grounds where appropriate and preserve what remains due. Follow a revised commission when its authorized holder has adopted the change. |
 | A subject claim is disputed or unsupported | Use available subject evidence, or identify what the supplying practice would still need to establish. Limit or withdraw a claim whose grounds prove insufficient. |
 | The recipient understands the grounds and disagrees with the choice | Identify the disputed preference, trade-off or decision. If a decision is required, the participant authorized to decide can make it or another participant can seek their decision. |
 
 When help affects interpretation, identify what was available, what was supplied or used, and what the recipient contributed at each response. If the recipient repeats a step the explainer supplied, that shows what happened with the step available. To claim later independent use, examine performance under the corresponding conditions.
 
-Either participant can supply a missing relation or correct a claim. Check the correction against the subject evidence and use it where warranted.
+Any participant can supply a missing relation or correct a claim. Check the contribution against the subject evidence. In a shared explanation, one participant may recover a record, another draw an inference and a third decide which account to issue. The completed account can settle the subject question. To establish who developed the reasoning or how the group produced it, follow those contributions through the exchange or other evidence of the work.
 
 #### EXD.4:4.4 - Close with the result the exchange supports
 
 State what the exchange supports about the question and the conditions of that conclusion. Give access to the relevant source passage where needed. Identify any unresolved choice or missing connection. Use another inference or action when the evidence is insufficient, its outcome could distinguish the live possibilities and obtaining it is feasible and worthwhile.
 
-Close the exchange when the receiving question is answered, including when the recipient understands the grounds and disagrees. For a learning task, select practice or a later independent case when the specific learning question and available evidence warrant it.
+Conclude the exchange when the participants have addressed the commissioned work, including when the recipient understands the grounds and disagrees. Earlier correspondence may settle the subject question. If today's handover calls for discussing it with the incoming team, use what is known in that discussion. To report the team’s response, establish how it actually responded. For a learning task, select practice or a later independent case when the specific learning question and available evidence warrant it.
 
 If the exchange ends with a gap, report the established part and the missing input. For example, “Both calculations are available. The report still needs a choice of which unit receives equal weight.”
 

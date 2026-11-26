@@ -2,13 +2,13 @@
 > **Type:** Pattern
 > **Status:** Stable
 
-**"Translate across contexts; never collapse them."**
+**What relation between these two local meanings would answer the question? What can the recipient infer from it?**
 
 **Type:** Architectural pattern.
 **Normativity:** Normative.
 **Builds on:** F.17 for exact scheme-based `SchemeSenseCell` identity and `SenseCellAddressRef`; F.18 for designation selection; C.2.1 for assertion and description-episteme identity; F.0.1 for recovering each source-local meaning before proposing a relation between the two; F.7 and F.8 for downstream naming and reuse decisions.
 
-**Coordinates with:** A.6.REL for demand-driven occurrence individuation; C.2.1 for assertion, occurrence-description, and Card identity; E.24.PUB for publication occurrence, form, and carrier; A.10 for descriptive evidence-provenance paths citing independently established direct relations and for local reliance dispositions; B.3 for actual named assurance claims and their bounded `AssuranceResult` values; E.10.ROLE for claim-bearing source wording with *role*; A.2, C.3, F.4, F.5, and A.2.1 for local system-role kinds and assignments; A.13 and A.15.1 for exact actual performers and independently admitted Work; F.6 only for a Bridge use that explicitly relies on precise assignment-bound attribution; A.6.5 for relation-slot discipline; C.29 for mathematical-lens use; A.6.3.CSC for controlled coarsening; C.26.1 and C.26.2 for quantum-like export boundaries.
+**Coordinates with:** A.6.REL for demand-driven occurrence individuation; C.2.1 for assertion, occurrence-description, and Card identity; E.24.PUB for publication occurrence, form, and carrier; A.10 for descriptive evidence-provenance paths citing independently established direct relations and for local reliance dispositions; B.3 for actual named assurance claims and their bounded `AssuranceResult` values; E.10.ROLE for claim-bearing source wording with *role*; A.2, C.3, F.4, F.5, and A.2.1 for local system-role kinds and assignments; A.13 and A.15.1 for the performers credited at the claimed scale and the independently admitted Work; F.6 only for a Bridge use that explicitly relies on precise assignment-bound attribution; A.6.5 for relation-slot discipline; C.29 for mathematical-lens use; A.6.3.CSC for controlled coarsening; C.26.1 and C.26.2 for quantum-like export boundaries.
 
 **Plain entry cues (informative).** Context-to-context translator; sense bridge.
 
@@ -16,11 +16,11 @@
 
 **Intent.** Govern one actual semantic `Bridge` relation between two exact F.17 `SchemeSenseCell` values from different semantic contexts. Keep that occurrence separate from every assertion, Bridge description episteme, Bridge Card, registry record, publication occurrence, publication form, presentation carrier, bounded-use claim, evidence or assurance relation, and object created when a proposed use is performed.
 
-**Applicability.** Use this pattern when an author needs to compare local senses across contexts, reuse a familiar label, connect design-time and run-time senses, compare two standards' terms, or justify a cross-context row. A shared word or available mapping is only a reason to ask whether a Bridge obtains.
+**Applicability.** Start with the claim the recipient needs. Comparing two standards can call for a relation between their terms, an account of how their rules apply together, or a decision about one job. Use F.9 for a correspondence or difference between local senses. F.0.2:4.1 helps construct the cross-source account if that is what the recipient needs.
 
 **Primary EntityOfConcern in plain terms.** One actual correspondence or difference between two exact local senses. This pattern concerns the direct `Bridge` occurrence, not a card, context, transport chain, work process, local system-role kind, assignment occurrence, evidence item, or global meaning layer.
 
-**Admissible move in plain terms.** First resolve the two local senses. Then state and test the correspondence or difference between them. If the Bridge obtains, state the proposed use separately: what the reader will do, direction, correspondence rule, and tolerated loss. A current C.2.1 claim answers whether the Bridge suits that bounded use.
+**First move.** What difference between the source and receiving interpretations could change the requested answer or its grounds? Use that to choose the senses and the correspondence to test. Establish the relation under its own predicate. If the question concerns a proposed use of that relation, judge the use separately, with its direction, correspondence rule and tolerated loss.
 
 For that bounded-use claim, check ordinary reliance under A.10; use B.3 only when an actual named assurance claim is current. If the use happened, recover its Work, assertion, publication, relation, operation application, or other object under its subject pattern. Add a Bridge Card only when a reusable package is worth maintaining.
 
@@ -66,7 +66,7 @@ A shared label across contexts can look like identity or permission before any s
 
 ### F.9:4 - Solution
 
-Start with the two exact local senses, not with a context object, mapping table, or card. Resolve each endpoint as an F.17 `SchemeSenseCell` coordinate:
+Identify the conclusion for which the meanings matter. For a question about their semantic relation, choose the two senses whose correspondence would settle it. For a question about the practice they describe, follow each contribution to the result the recipient needs. One may supply information to the other, or independently produced findings may both have to apply to the same case. Which distinction would change what the recipient can conclude? A semantic relation can supply a premise. Establish the connection in the practice when the conclusion depends on it. If the inquiry needs a Bridge, resolve its two local senses as exact F.17 `SchemeSenseCell` coordinates:
 
 ```text
 <ReferenceScheme by value, LocalExpression, LocalSenseClaim>
@@ -124,7 +124,7 @@ A later applicability or as-of basis changes the profile and therefore opens ano
 
 #### F.9:4.2 - Judge a bounded use separately
 
-Once Bridge `b` obtains, state the proposed use in ordinary language before introducing FPF terms. Name:
+When the question is whether an established Bridge `b` suits a particular use, work back from the recipient’s intended inference or action. Which differences in the source can the receiving rule merge while still giving a warranted answer? Try source cases that the receiving expression treats alike. If they call for different answers or different grounds that the recipient needs, preserve the distinction, restrict the proposed use to cases where it is immaterial, or reject that use. State the proposed use in ordinary language. Give the following particulars in the bounded-use claim.
 
 - `u`: what the reader proposes to compare, substitute, translate, publish, or otherwise do;
 - `d`: the exact source-to-receiving direction for that use;
@@ -243,7 +243,7 @@ The exact `<ClaimGraph, EntityOfConcern, effective ReferenceScheme>` triple iden
 
 Open F.9 when a receiving use needs an actual semantic relation between exact local senses. A lossy or approximate export is not thereby a Bridge, and an actual Bridge is not thereby a quantum-like state transition.
 
-Use this order:
+For a question that includes both a Bridge and its use, the use determines which correspondence to investigate. Establish the independent grounds in this order.
 
 1. resolve the exact F.17 cells, state the relation-semantic profile, and test whether the Bridge obtains;
 2. state the proposed use separately as `<u,d,r,t>` and give the C.2.1 claim its polarity;
@@ -320,9 +320,9 @@ A work-facing classification requires an admitted System, one exact local system
 
 An assignment claim separately identifies an occurrence of a directly declared species under `U.SystemRoleAssignment` through A.2.1.
 
-If performed Work is also claimed, recover every exact actual performer through A.13 and use A.15.1 to identify the dated Work, exact Method, time, and containing System independently.
+If the use of a Bridge also depends on a claim about performed Work, identify the System or Systems whose performance the claim needs under A.13. Independently recover the dated Work, enacted Method, time and containing System under A.15.1. For an audit by a municipal service, the service's Work may suffice to interpret its protocol even when the author of a particular entry is unknown. A claim about that entry's author needs grounds for the member's own contribution.
 
-Use F.6 only when the Bridge account or receiving use explicitly represents precise assignment-bound attribution through the same obtaining assignment already established by A.13, and the direct case fact links that exact Work-assignment pair. Missing or failed F.6 alone leaves independently admitted Work intact. If the same finding invalidates a premise consumed by A.13/A.15.1 admission, recheck that premise and its dependent conclusions under F.6:4.2. The Bridge, bounded-use claim, and reliance result establish none of these facts.
+Use F.6 only when the Bridge account or receiving use explicitly represents precise assignment-bound attribution of a particular contribution to its performer's obtaining A.13 assignment. Establish the case fact that links that Work–assignment pair. Missing or failed F.6 alone leaves independently admitted Work intact. If the same finding invalidates a premise consumed by A.13/A.15.1 admission, recheck that premise and its dependent conclusions under F.6:4.2. The Bridge, bounded-use claim, and reliance result establish none of these facts.
 
 #### F.9:12.3 - Subtype notions in one structural row
 
@@ -437,7 +437,7 @@ and Bridge(B,C;P2) obtains
 => no Bridge(A,C;P3) follows.
 ```
 
-A composite proposed use must cite each obtaining Bridge, state one exact composite rule and accumulated tolerance in its own claim, and recover current reliance for that claim. If a direct A-to-C correspondence is needed, test it independently.
+For a proposed use through both correspondences, follow the result of the first into the rule for the second. Judge the end result against the receiving tolerance over the admissible cases. Local losses may reinforce or offset one another. Where that distinction matters, preserve their dependence or use a justified bound for the combined loss. Cite each Bridge used and establish current reliance on this composite claim. If a direct A-to-C correspondence is needed, test it independently.
 
 #### F.9:14.8 - Candidate-card guard
 
@@ -456,7 +456,7 @@ The card concerns the admitted direct Bridge relation kind and places proposed e
 
 * **A.10.** Use it for the descriptive evidence-provenance path, the independently established direct relations it cites, and local `RelianceDisposition` for ordinary bounded evidence use.
 * **B.3.** Use B.3 only after an actual named assurance claim is current; it states the bounded `AssuranceResult` or non-positive disposition and does not create the claim, authorization, or use.
-* **E.10.ROLE, A.2, C.3, F.4, F.5, A.13, A.15.1, A.2.1, and F.6.** When source wording leaves *role* ambiguous, use E.10.ROLE first. Use A.2 and C.3 for the local system-role kind and any separate System-classification judgment. Use F.4 only when a description of that kind is current, and F.5 only when its durable naming is current. Recover each exact actual performer through A.13 and admit dated Work independently through A.15.1. A.2.1 governs the assignment species and obtaining occurrence already required by the A.13 core. Add F.6 only when the receiving Bridge use explicitly relies on precise assignment-bound attribution through that same assignment. A Bridge establishes none of these facts.
+* **E.10.ROLE, A.2, C.3, F.4, F.5, A.13, A.15.1, A.2.1, and F.6.** When source wording leaves *role* ambiguous, use E.10.ROLE first. Use A.2 and C.3 for the local system-role kind and any separate System-classification judgment. Use F.4 only when a description of that kind is current, and F.5 only when its durable naming is current. Use A.13 for the Systems credited at the scale of the Work and A.15.1 to admit the dated occurrence independently. A.2.1 governs the assignment species and obtaining occurrence already required by the A.13 core. Add F.6 only when the receiving Bridge use explicitly relies on precise assignment-bound attribution through that same assignment. A Bridge establishes none of these facts.
 * **F.8.** A mint-or-reuse decision may consume an obtaining Bridge plus a separately warranted bounded-use claim; it does not strengthen either.
 * **A.2.6.** Scope translation may use an obtaining Bridge only together with an affirmative claim naming the exact direction, scope-correspondence rule, and loss tolerance. Use A.2.6 for the translated scope and membership.
 * **A.6.1.** Use it to identify any actual operation application. The `u` designation in a Bridge claim names a proposed use and is not an application binding.
@@ -511,15 +511,15 @@ The card concerns the admitted direct Bridge relation kind and places proposed e
 
 ### F.9:18 - Didactic distillation
 
-Use this five-part script:
+Choose the inquiry from the recipient’s question, then use the steps that it requires.
 
-1. Find the two exact local senses.
+1. What conclusion depends on a correspondence between meanings? Select the two exact senses that bear on it.
 2. State the proposed correspondence or difference and test it. Report whether the Bridge obtains, is ruled out or remains unresolved.
-3. State the proposed use separately: action, direction, rule, tolerated loss, and polarity.
+3. If the recipient proposes using the Bridge, state the action, direction, rule and tolerated loss that still allow their conclusion. Give the judgement its supported polarity.
 4. Check whether current evidence or assurance supports relying on that claim; recover authorization separately if needed.
 5. If the use happened, identify the actual object and apply the relevant pattern to the claim about it. Make a card only when reuse is worth the maintenance.
 
-The short memory aid is: **relation first, use second, reliance third, receiving occurrence last; packaging is optional.**
+A question about two meanings can finish with their relation. For a proposed use, follow what the correspondence preserves to the recipient’s conclusion. An account of what actually happened requires evidence about that occurrence.
 
 ### F.9:19 - Archetypal Grounding
 
@@ -632,6 +632,6 @@ A reader can test bridge integrity with eight questions:
 7. If someone says the use happened, is the actual Work, assertion, publication, relation, operation application, or other object recovered under its own pattern?
 8. Does any card remain optional packaging rather than the source of relation truth, permission, or occurrence?
 
-Repair *same*, *equivalent*, *align*, and *map* prose in that order: recover the exact senses; test the Bridge; state the bounded-use claim; check reliance; recover authorization or the actual receiving object only when those questions are live. Do not start from a card or a score.
+For wording such as *same*, *equivalent*, *align* or *map*, begin with what the speaker says matches and for what purpose. When the claim concerns meanings, recover the senses and test the proposed Bridge. When it concerns compatible designs, a performed action or another subject relation, establish that relation under its own conditions. Check a bounded use, its reliance and any required authorization when the recipient depends on them.
 
 ### F.9:End

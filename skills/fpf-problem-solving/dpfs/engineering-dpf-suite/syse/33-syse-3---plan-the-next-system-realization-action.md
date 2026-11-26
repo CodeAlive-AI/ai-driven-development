@@ -63,7 +63,7 @@ intended change, transformer capability, WorkPlan, performed Work and evidence d
 | Useful recursion and endless decomposition | A missing transformer capability can open another realization branch, while a bounded next-action question may need only the first unsupported branch. |
 | Readable provisional description and typed relations | A provisional realization-network description makes dependencies visible, while an actual `E.18.NET` selection requires independently identified members, obtaining relations, and endpoint bindings. |
 | Shared platforms and local conditions | A platform can enable several branches, while its name does not establish availability, fit, capability, or one universal pipeline. |
-| Project focus and specialist depth | Systems Engineering must keep the whole realization question connected, while specialist practices retain their Methods and decisions. |
+| Project focus and specialist depth | The engineer keeps the whole realization question in view. Where it depends on a specialist contribution, establish which method answers it and who is entrusted with the decision. |
 | Plan stability and revision from feasibility evidence | A WorkPlan coordinates the next action, while new evidence can revise the branch, architecture candidate, system concept, or project focus. |
 
 ### SYSE.3:4 - Solution
@@ -181,8 +181,7 @@ production, identity-inception, or completion claims. Compare the resulting fact
 
 #### SYSE.3:4.6 - Obtain specialist results without absorbing their Methods
 
-Keep the realization branch connected while leaving specialist decisions with the practice that can make
-them. Examples include:
+Connect each specialist result to the realization branch that needs it. Use the appropriate practice for the detailed method and establish who can make any required decision under this undertaking.
 
 
 | Current gap | Result needed here | Practice that keeps the detailed Method |
@@ -359,7 +358,7 @@ branch changes the next action.
 | Creator hierarchy | Fixed developer, builder, producer, and operator levels replace case-specific transformer roles and recursive dependencies. | Recurse from the first unsupported branch without fixed levels; admit each System and assignment separately. |
 | Universal platform pipeline | One toolchain or internal platform is prescribed for every engineered System. | Treat the named platform System and its capability, interface, availability, and change contribution as one possible branch. |
 | Diagram-made network | Arrows labelled *builds*, *uses*, or *depends on* are treated as an actual `E.18.NET` structure. | Keep a provisional realization-network description until the member structures, obtaining cross-flow relations, endpoint bindings, constraints, and use frame are established. |
-| Specialist absorption | Systems Engineering silently chooses organization structure, resource priority, configuration policy, safety argument, or platform Method. | Obtain the specialist result needed by the branch and keep its Method and decision with the specialist practice. |
+| Specialist absorption | Systems Engineering silently chooses organization structure, resource priority, configuration policy, safety argument, or platform Method. | Obtain the specialist result the branch needs. Establish who is authorized to decide for this project and the grounds that decision requires. |
 | Restart every earlier decision | Any failed fixture, interface, or supplier result reopens project focus and all earlier decisions. | Reopen only the branch or architecture claims that the result changes; reopen a wider decision only when that answer also fails. |
 
 ### SYSE.3:9 - Consequences
@@ -463,7 +462,6 @@ do not preserve a separate SYSE.3 account merely because it was started.
   grounds.
 - Feasibility, integration, configuration, cost, delay, and evidence results can change the affected branch,
   architecture, concept, use or project-focus claims. Platform Engineering, Organization Change,
-  Operations, portfolio selection, configuration, safety, security, governance, law, finance, and other
-  specialist practices retain their Methods and decisions.
+  Operations, portfolio selection, configuration, safety, security, governance, law, finance and other specialist practices supply the relevant Methods. Use effective decisions or obtain missing decisions from the parties holding the corresponding authority.
 
 ### SYSE.3:End

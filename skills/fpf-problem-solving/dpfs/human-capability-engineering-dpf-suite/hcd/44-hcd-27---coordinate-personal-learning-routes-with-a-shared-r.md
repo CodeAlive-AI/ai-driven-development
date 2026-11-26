@@ -89,7 +89,7 @@ One failed connection can identify the need, such as annotations that cannot sup
 
 This constructed additional block has twelve adults comparing the use of evidence in permitted project fragments. It is separate from HCD.28's diagnostic product. Each learner prepares a short question, ground and conditional conclusion asynchronously; three groups of four will compare selected cases on Wednesday evening.
 
-The initial design promises feedback on twelve fragments between 13:00 and 14:00 Tuesday. At eight assessor-minutes per fragment the work needs 96 minutes, while one assessor has 60. The provider confirms a two-hour window, reserving 96 minutes for checking and feedback and 24 for unexpected clarification. If that window is unavailable, the designer must obtain adequate qualified capacity or change the sequence or promise before offering it.
+The draft offer puts feedback on twelve fragments between 13:00 and 14:00 Tuesday. Each needs eight separate assessor-minutes, so one assessor can complete at most seven checks in that hour. Before making the offer, the designer moves the feedback deadline to 15:00, confirms a two-hour window and verifies that the learners and facilitator can still use the feedback in the work below. The window provides 96 minutes for checking and feedback and 24 for unexpected clarification. If feedback by 14:00 is already owed, meeting that deadline requires sufficient qualified capacity by 14:00 or an authorized change to the promise.
 
 | Occasion | Material or action that becomes available | Next use |
 | --- | --- | --- |

@@ -13,7 +13,7 @@ For a question about one episode, ask what result was needed, what was available
 
 Investigate the implementation difficulty and any response the task requires. Use a qualified current finding directly when it settles the question. An interview, observation or small comparison can resolve a remaining uncertainty. The result may explain the episode, supply useful help, specify an obtainable contribution or identify a limit.
 
-Use an adequate known response directly. When an unexpected result after an intervention needs explanation before adaptation, A.3.1.MI:4.5 supplies that developed comparison. When the question is already a human capability diagnosis or an organizational participation difficulty, use HCD.3 or OCE.10, or apply a sufficient diagnosis already available from that practice.
+When the commission is to restore the work, use an adequate known response directly. If the recipient also asks why the difficulty arose, establish the cause or say which explanations remain possible after the repair. When an unexpected result after an intervention needs explanation before adaptation, A.3.1.MI:4.5 supplies that developed comparison. When the question is already a human capability diagnosis or an organizational participation difficulty, use HCD.3 or OCE.10, or apply a sufficient diagnosis already available from that practice.
 
 ### IS.2:2 - Problem
 
@@ -36,7 +36,7 @@ Distinguish the explanations that matter to the requested finding, the grounds f
 
 ### IS.2:4 - Solution
 
-Establish which difficulty the recipient is trying to understand or resolve. Reconstruct the relevant performance, arrangement or range of work. Compare plausible explanations by what would differ in the evidence, in the grounds for an answer or in a warranted response. Report what they support and where uncertainty limits the conclusion. If the task requires further help, obtain the smallest contribution that makes the needed use possible.
+Establish which difficulty the recipient is trying to understand or resolve. Reconstruct the relevant performance, arrangement or range of work. Compare plausible explanations by what would differ in the evidence, in the grounds for an answer or in a warranted response. Report what they support and where uncertainty limits the conclusion. When further help is needed, obtain the contribution called for by the undertaking. Where the allocation is open, compare what each workable arrangement supplies and the work it leaves to the recipient and the provider.
 
 #### IS.2:4.1 - Trace the difficulty through the work that needs the result
 
@@ -151,7 +151,7 @@ A successful contrast can also mislead when it changes several conditions. Keep 
 
 - The difficulty is located in the performance, arrangement or range of receiving work the question concerns.
 - Live explanations differ in the action or warranted conclusion they imply.
-- An adequate current response can end diagnosis without another observation.
+- Does the finding settle the question the recipient asked? One response may work under several explanations. It can complete a commission to restore service while the cause still requires investigation.
 - A selected inquiry can answer a consequential question about the finding, its grounds or a decision, and warrants its burden.
 - The finding answers the receiving question within its evidence. When a further contribution or action is needed, its scope and availability are clear.
 - The explanation distinguishes capability, organizational conditions, target fitness and support wherever they call for different conclusions.

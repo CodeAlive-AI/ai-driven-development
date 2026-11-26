@@ -6,11 +6,11 @@
 
 ### MA.5:0 - Use this when
 
-Use this pattern when a coming workload, resource need or monetary consequence must be anticipated and a target or historical average cannot answer the question. Begin with the action the forecast could change and the lead time needed to act.
+Use this pattern when a coming workload, resource need or monetary consequence must be anticipated and a target or historical average cannot answer the question. Start with the quantity, dates and use the recipient has specified. Where the horizon is yours to choose, allow time for the action the forecast is intended to inform.
 
 The pattern governs a conditional operating forecast. It returns the relevant demand, resource and monetary outlook, the assumptions that can change it and the conditions for updating it.
 
-Use an adequate current forecast directly. Additional detail is useful only when it can change the receiving action or its assurance.
+Use an adequate current forecast directly. Seek greater detail when the requested outlook or a decision that relies on it needs that detail.
 
 ### MA.5:1 - Problem frame
 
@@ -22,7 +22,7 @@ A forecast expresses what is expected under stated conditions. A target expresse
 
 A forecast built by extending last period's totals can conceal a changed mix, resource threshold or collection delay. A forecast negotiated as a target can conceal expected difficulty.
 
-An elaborate model can still be unhelpful if its horizon is too short to act or its assumptions cannot be revised. Forecast the quantities and conditions that could change the receiving action, with enough detail to show the uncertainty that matters.
+An elaborate model can still be unhelpful if its horizon is too short to act or its assumptions cannot be revised. Forecast the requested quantities under the relevant conditions, including uncertainty that could change their interpretation.
 
 ### MA.5:3 - Forces
 
@@ -34,19 +34,19 @@ Actions taken in response to a forecast can change the outcome. Later evaluation
 
 #### MA.5:4.1 - Choose the receiving use and horizon
 
-State who will use the forecast, what decision or preparation it could change and when that action must occur. Choose a horizon long enough for the relevant response.
+Keep the forecast quantity, information cutoff, horizon and delivery date set by the recipient. For example, an update of the month-end outlook using orders known by Friday keeps that cutoff and month end. Where a choice is delegated, select dates that give the intended recipient time to prepare or act. Supplying the forecast on its agreed basis can complete the commission.
 
-Recover the adequate existing account and forecast. Determine whether the missing answer concerns demand, resource conversion, money, timing or uncertainty. Request further detail only if it could change the decision or preparation the forecast informs.
+Recover the adequate existing account and forecast. Determine whether the missing answer concerns demand, resource conversion, money, timing or uncertainty. Request the detail needed to support that answer or its intended use.
 
 #### MA.5:4.2 - Construct compatible demand inputs
 
-Fix the output being forecast, the population, period and information cutoff. A forecast of orders accepted next month differs from one of units delivered next month: carry the order backlog and promised delivery dates into the latter. Distinguish units, customers and transactions before combining them. MA.8 supplies the time and population account when several customer cohorts or product phases contribute.
+Fix the output being forecast, the population, period and information cutoff. Orders requested for next month can exceed the quantity delivered and accepted in that month. For delivered units, include the due backlog, work that can be completed in time and the applicable acceptance conditions. Distinguish units, customers and transactions before combining them. MA.8 supplies the time and population account when several customer cohorts or product phases contribute.
 
-Separate what is already included from what remains to be estimated. For a delivery forecast, begin with due work expected to survive cancellation or rescheduling, then estimate further work that can enter and be delivered in that period. Keep those components disjoint. If a supplied forecast already covers all deliveries, adding current orders to it would count part of the population twice.
+Separate work already included from work still to be estimated. For requested deliveries, begin with booked work due in the period that is expected to remain due. Add further requests for that period from the remaining population. If the supplied forecast already covers all requests, adding the booked quantity counts it twice. To forecast completed deliveries, follow both contributions through the feasible service arrangement for the same period.
 
 Construct the missing component from evidence suited to it. Comparable history can supply a simple benchmark, such as the average further orders received after the same cutoff when demand conditions are stable. Compare like populations and horizons; a seasonal series needs a relevant seasonal comparison, and a changed offer or sales channel can defeat an old average. Judgment can incorporate information absent from that history, but name the changed condition and how it affects the quantity. A specialist forecast can be used directly when its population, cutoff, horizon and assumptions fit.
 
-Begin with the simplest supported forecast that can change the decision usefully. Compare added complexity against that benchmark on observations not used to fit or choose the model when predictive accuracy is the claimed gain. Obtain a forecasting method or specialist contribution where estimation requires it. A few teaching observations, an attractive fit or three labeled scenarios do not establish predictive calibration.
+Begin with the simplest supported forecast that answers the receiving question. Compare added complexity against that benchmark on observations not used to fit or choose the model when predictive accuracy is the claimed gain. Obtain a forecasting method or specialist contribution where estimation requires it. A few teaching observations, an attractive fit or three labeled scenarios do not establish predictive calibration.
 
 Keep observed facts, commitments, estimates and proposed actions distinguishable. State whether a precise statistical claim reports a mean, quantile or another defined quantity. A central planning scenario is not automatically an expected value. Where the evidence supports only a conditional scenario, preserve that qualification instead of presenting the scenario as an evidenced expectation.
 
@@ -68,9 +68,9 @@ Represent uncertainty in forecast revenue and receipts at the detail needed for 
 
 #### MA.5:4.5 - Return the forecast and usable response conditions
 
-Supply the quantities, timing and assumptions in a form the recipient can use. Identify the condition that would require a decision, such as workload beyond usable capacity or a payment before available funding.
+Supply the quantities, timing and assumptions in a form the recipient can use. If a decision is at issue, identify the relevant condition, such as workload beyond usable capacity or a payment before available funding.
 
-The forecast does not authorize that response. Use the responsible operating or financial decision method. When payment feasibility is the question, connect the selected flows to the payer’s resources at the relevant dates, including other obligations and only transfers that can reach it in time.
+The forecast does not authorize that response. When a response is commissioned, use the responsible operating or financial decision method. When payment feasibility is the question, connect the selected flows to the payer’s resources at the relevant dates, including other obligations and only transfers that can reach it in time.
 
 #### MA.5:4.6 - Update from changed conditions and learn from outcomes
 
@@ -78,7 +78,7 @@ Revise the affected assumptions when new evidence or an actual decision changes 
 
 When comparing with actual outcomes, distinguish changed external conditions, estimation error, bias and actions taken in response. Action taken in response to a forecast can prevent the adverse outcome it describes and explain a numerical difference. This does not by itself prove the forecasting model was accurate. Choose a comparison that can test the forecast claim under its stated conditions.
 
-Choose refresh timing from the pace of relevant change and the receiving action. A rolling window can help; refreshing unchanged detail on a calendar alone can consume effort without improving the result.
+Meet the agreed reporting dates. When the timing of later updates is open, use the pace of change and the lead time for the receiving action. A rolling window can help; refreshing unchanged detail on a calendar alone can consume effort without improving the result.
 
 A target gap can initiate design work through MA.10. Preserve the outlook under the existing arrangement while constructing the proposed alternative's outlook from its changed offer, work and provision. The target is not a demand observation. If a design change affects both price and service behavior, revise both dependencies rather than changing only a cost assumption. MA.9 supplies a missing arrangement for participants to use and challenge the resulting expectations before commitments are made.
 
@@ -86,29 +86,31 @@ A target gap can initiate design work through MA.10. Preserve the outlook under 
 
 #### MA.5:5.1 - Obtain the missing demand input
 
-At the information cutoff, a service has sixty booked units due next month. Under the supplied teaching premises they will remain due and be delivered. Three comparable earlier months received another 35, 40 and 45 units after the same cutoff, all delivered in the respective forecast month. These counts exclude each month's already booked work.
+At the information cutoff, sixty booked units are due next month and are expected to remain due. In three comparable earlier months, customers requested another 35, 40 and 45 units for delivery in the respective month after the same cutoff. These requests came in addition to each month’s booked work. The historical units were delivered. Here the first question concerns the volume customers will request for next month.
 
-Assume unchanged demand conditions and no relevant trend or seasonality for this example. The average residual of (35 + 40 + 45) / 3 = **40** is a simple benchmark, so sixty booked plus forty further units gives **100**. Adding the sixty to a forecast of total deliveries would have been a different, overlapping calculation. These three observations illustrate the construction; they do not establish a calibrated distribution.
+Assume unchanged demand conditions and no relevant trend or seasonality for this example. The average residual of (35 + 40 + 45) / 3 = **40** is a simple benchmark, so sixty booked plus forty further units gives **100 units requested for delivery**. A forecast already covering all such requests includes the sixty. These three observations illustrate the construction; they do not establish a calibrated distribution.
 
-The account also considers two separate conditions. A channel interruption would remove twenty of the forty residual units, while a proposed campaign could bring twenty additional units beyond the benchmark. Neither changes the sixty booked units under the supplied premises. The interruption branch gives **80**; the campaign branch gives **120**. The campaign effect is additional to the normal residual population. These are alternative planning scenarios, not probabilities or effects to add simultaneously. In practice, obtain the channel and campaign evidence that makes their effects plausible. If the stable-demand premise fails and no replacement estimate is supported, retain conditional scenarios or obtain a better forecast.
+The account also considers two separate conditions. A channel interruption would remove twenty of the forty residual units, while a proposed campaign could bring twenty additional units beyond the benchmark. Neither changes the sixty booked units under the supplied premises. The interruption branch gives **80 units requested** and the campaign branch **120**. The campaign effect is additional to the normal residual population. These are alternative planning scenarios, not probabilities or effects to add simultaneously. In practice, obtain the channel and campaign evidence that makes their effects plausible. If the stable-demand premise fails and no replacement estimate is supported, retain conditional scenarios or obtain a better forecast.
 
-A reader who has adequate 80/100/120 scenarios can enter the following conversion directly.
+A reader with adequate scenarios of requested deliveries can use them directly to calculate the resources needed to fulfil them. The next comparison shows how much can be delivered and accepted under each supply arrangement.
 
 #### MA.5:5.2 - Convert and revise the supplied scenarios
 
-A service forecasts next period's workload using three planning scenarios: 80, 100 or 120 accepted units. These are supplied scenarios without probability weights. The adequate resource model requires ten setup hours plus 0.25 qualified staff-hours per unit. A supplied arrangement provides 38 usable hours for 120 currency units; a feasible extra five-hour block costs 80.
+For demands of 80, 100 and 120 units, the service calculates how much time it would take to fulfil every request. The scenarios carry no probability weights. One setup takes ten hours and each unit requires 0.25 qualified staff-hours. The base arrangement provides 38 usable hours for 120 currency units. A further five-hour block can be obtained for 80. In the following comparison the resources booked for the period are paid on day 1. Assume the hours fit the service windows, materials can be obtained in time and customers accept each conforming unit delivered by the cutoff.
 
 | Workload scenario | Required staff-hours | Relevant supply condition |
 | --- | ---: | --- |
 | 80 units | 10 + 80 × 0.25 = **30** | Fits the supplied 38 hours. |
 | 100 units | 10 + 100 × 0.25 = **35** | Fits the supplied 38 hours. |
-| 120 units | 10 + 120 × 0.25 = **40** | Needs an adequate additional arrangement; the supplied five-hour block is one option. |
+| 120 units | 10 + 120 × 0.25 = **40** | The base hours can cover at most 112 units. Obtaining the five-hour block allows all 120 to be served on the stated terms. |
 
-Materials require 3 per unit, and the service price is 10 per accepted unit. In the 100-unit scenario, materials are 300 and sales are 1,000. The supplied collection assumption places the 1,000 receipt on day 30, while the 300 material and 120 resource payments occur on day 1. A funding use needs the whole cash account. If the 1,000 is instead collected next month, current-period revenue can remain 1,000 under the same recognition rule while the closing receivable rises by 1,000 and this period has no corresponding receipt. MA.4 carries that receivable into the next period; it is not a second sale then.
+Materials cost 3 for each unit produced. The service recognizes sales of 10 per unit on customer acceptance. Suppose it buys on day 1 just the materials for the quantity it will deliver and the customers pay on day 30. With requests for 100 units and all 100 accepted, sales and receipts are 1,000. Material and resource payments on day 1 are 300 and 120. If collection moves to next month, the same 1,000 of sales becomes a closing receivable. MA.4 carries it forward to collection. A funding decision uses the payer’s whole dated cash position.
 
-The original workload fits the 38 hours through **112 units**, since (38 − 10) / 0.25 = 112. If twenty of the 100 units instead require 0.50 hour while eighty still require 0.25, demand becomes 10 + 20 × 0.50 + 80 × 0.25 = **40 hours**. Unchanged total volume therefore crosses the same supply threshold. This establishes the capacity threshold. To forecast the block payment, also establish who decides and when. If a block must be reserved in advance to guarantee service, it costs 80 even when demand is low. When the still-available block is bought after the signal, expected payment is 80 times the probability of purchase. If the rule requires buying one block whenever the qualifying demand crosses the threshold and in no other case, use the probability of that threshold event. These unweighted scenarios leave that probability open.
+At 120 requests, the base arrangement can deliver **112 units**, since (38 − 10) / 0.25 = 112. If the service uses all those hours and the 112 units are accepted, the stated purchasing and settlement terms give 336 for materials, 120 for base provision and 1,120 in sales and receipts. With the additional block obtained and all 120 units accepted, materials cost 360, resource payments total 200 and accepted sales bring 1,200 on day 30. Buying materials for all 120 while delivering 112 would still cost 360 for materials.
 
-If new evidence changes the central scenario to 96 units, its resource demand becomes **34 hours**, materials **288** and sales **960**. The existing supply payment remains 120. Updating every amount by four percent would wrongly reduce that unchanged payment.
+If twenty of the 100 units instead require 0.50 hour while eighty still require 0.25, demand becomes 10 + 20 × 0.50 + 80 × 0.25 = **40 hours**. Unchanged total volume therefore crosses the same supply threshold. This establishes the capacity threshold. To forecast the block payment, also establish who decides and when. If a block must be reserved in advance to guarantee service, it costs 80 even when demand is low. When the still-available block is bought after the signal, expected payment is 80 times the probability of purchase. If the rule requires buying one block whenever the qualifying demand crosses the threshold and in no other case, use the probability of that threshold event. These unweighted scenarios leave that probability open.
+
+If demand in the central scenario changes to 96 units and all 96 are made and accepted under the same terms, resource demand becomes **34 hours**, materials **288** and sales **960**. The existing supply payment remains 120. Updating every amount by four percent would wrongly reduce that unchanged payment.
 
 If the team instead obtains extra capacity in response to the high scenario, the revised forecast includes that decision under the terms on which the capacity was obtained. Later outcomes are compared with the conditions of each forecast.
 
@@ -120,7 +122,7 @@ A modeler can also mistake abundant historical data for stable future behavior. 
 
 ### MA.5:7 - Conformance Checklist
 
-Which quantity, horizon and receiving decision does the forecast serve? Check that the demand inputs refer to the right population without duplication, that the relevant resource or cash consequences follow under the assumed decisions, and that any uncertainty which could change the conclusion is visible. Identify what new evidence would warrant an update.
+Does the forecast answer for the requested quantity, cutoff and horizon? If it informs a decision, will it reach the recipient in time? Check that the demand inputs refer to the right population without duplication, that the relevant resource or cash consequences follow under the assumed decisions, and that any uncertainty which could change the conclusion is visible. Identify what new evidence would warrant an update.
 
 A constructed scenario demonstrates a conditional consequence. Forecast calibration, actual performance and the success of a response require their corresponding evidence.
 
@@ -130,7 +132,7 @@ A constructed scenario demonstrates a conditional consequence. Forecast calibrat
 
 **Scaling every cost with volume.** Preserve the supply thresholds and unchanged payments.
 
-**Treating an adverse forecast as a failed promise.** Recover its conditions and the decision it was intended to inform.
+**Treating an adverse forecast as a failed promise.** Recover the outlook that was requested, its assumptions and any action taken in response.
 
 **Improving the forecast by rewriting its history.** Retain the earlier premises needed for a valid comparison.
 
@@ -142,7 +144,7 @@ More uncertainty may remain visible than in a negotiated single number. The work
 
 ### MA.5:10 - Architectural Rationale
 
-The forecast is organized around the action it could change because accuracy at an irrelevant horizon has little practical value. Resource and monetary dependencies preserve consequences that total extrapolation can hide.
+The receiving question sets the forecast’s horizon. When the recipient must act on it, lead time also matters. Resource and monetary dependencies preserve consequences that total extrapolation can hide.
 
 A stable simple forecast can be adequate for a stable use. Scenarios are useful when different plausible conditions require different responses. A more detailed predictive model is justified by the additional decision-relevant distinction and evidence it can supply.
 

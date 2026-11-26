@@ -107,7 +107,7 @@ When applying apparatus under `C.19.2`, compare eligible applications under the 
 
 Give the supported answer and available continuation in language the recipient can use. Retain uncertainty, attribution, a reason or a return condition when it changes that use. Where a substantive decision record is needed, put this content in the same result.
 
-For an external-text review, return a concrete repair: identify the demanded work, the consequence or burden that makes it defective, and the smallest replacement that reaches a warranted result. Keep a useful evidence demand when the comparison supports it. A finding for another author can be durable without becoming a per-sentence ledger.
+In a review, explain what the instruction would have its reader do and how that affects the reader’s purpose. A finding can suffice when the author is to devise the repair. If replacement wording is due, supply enough of the passage for the reader to carry out the intended work. A short local change may do this. A fuller replacement may save the author or reader from having to reconstruct the missing reasoning. Keep an evidence demand whose contribution warrants its burden.
 
 Follow the selected method through its completion requirements. Keep the recommendation or decision and its useful basis. An inactive inquiry creates no empty field, no waiver and no requirement to explain why checking was omitted. If a later recipient would otherwise overgeneralize the result, infer fresh evidence or miss a material limitation, retain the minimum explanation in that result. A short useful explanation alone need not instantiate a complete probe account.
 
@@ -206,7 +206,7 @@ The following conditions concern the advice being composed or examined. They req
 | CC-C11DUA.2 | The answer preserves what present evidence supports and its use boundary. Infeasible acquisition does not strengthen the claim. |
 | CC-C11DUA.3 | Appraise an optional inquiry by its attainable gain, cost, delay, displaced work and downside. For a binding inquiry, preserve what must be done and compare the permissible means when the choice matters. Qualitative comparison can suffice. |
 | CC-C11DUA.4 | When a requirement's merits are disputed, the appraisal addresses its governed quantity or activity, purpose, contribution and burden while keeping present force separate. |
-| CC-C11DUA.5 | The result reaches the first useful completion for this recipient. Its decision and useful basis remain; inactive inquiry adds no placeholder, waiver or omission account. |
+| CC-C11DUA.5 | The result supports the judgement or action commissioned by this recipient, or identifies what still prevents it. Keep the useful basis with the decision. Inactive inquiry adds no placeholder, waiver or omission account. |
 | CC-C11DUA.6 | Any reason or limitation needed by the decision or a later recipient remains in the same result. Changed use can make previously unnecessary inquiry worthwhile. |
 | CC-C11DUA.7 | The stated continuation is feasible under the current conditions, or the answer identifies the impasse. Future authorization or evidence is not treated as obtained. |
 | CC-C11DUA.8 | Domain inference, choice, ethical and assurance claims retain their direct methods. Explanatory and future-option gains are judged at their receiving horizon. |

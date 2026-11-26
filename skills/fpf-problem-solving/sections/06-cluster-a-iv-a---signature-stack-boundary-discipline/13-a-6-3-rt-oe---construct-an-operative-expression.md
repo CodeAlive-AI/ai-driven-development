@@ -178,11 +178,11 @@ The content to express is four successive `ta ki ṭa` groups with four, three, 
 | Third | 2 | 6 pulses |
 | Fourth | 1 | 3 pulses |
 
-The phrase occupies 30 pulses. The twelve-pulse cycle supplies the recurring reference. To finish at a cycle boundary, rhythmic composition selects a six-pulse preparation: 6 + 30 = 36, or three cycles. The preparation can be voiced as `ta ki ṭa` with two pulses per syllable.
+The phrase occupies 30 pulses. The hand cycle has twelve. Nelson’s exercise supplies a six-pulse preparation, so the phrase ends at pulse 36, the third cycle boundary. If your task is to choose a preparation, specifying the third boundary selects six pulses. Specifying any cycle boundary allows other preparations, including eighteen pulses before a phrase ending at pulse 48. The six-pulse preparation can be voiced as `ta ki ṭa` with two pulses per syllable.
 
 Prepare the vocal sequence against the continuing hand cycle. The phrase starts six pulses after the cycle origin and ends at the third boundary. Preserve the pulse and duration assignments through the changes of syllable rate. Merely placing four identical syllable groups on a page would leave those assignments unavailable.
 
-The resulting expression coordinates two learned channels: phrase syllables and hand-cycle reference. Arithmetic and rhythmic composition determine the entry and ending. A performer can use that expression to produce the phrase; the utterance and gestures can both represent the content and realize rhythm.
+The resulting expression coordinates two learned channels, phrase syllables and hand-cycle reference. With the preparation given, the durations determine the entry and ending. A performer can use that expression for both channels, or a partner can supply the hand cycle. A combined recording can establish alignment in either arrangement. To conclude that a particular performer coordinated both channels, use evidence that distinguishes the performers' contributions.
 
 For a performer who needs to locate the cycle boundaries inside this phrase, add these cues to the same pulse reference:
 
@@ -288,7 +288,7 @@ Choose those additional cues when locating that relation is the current difficul
 
 **Vocal and gestural construction.** David P. Nelson, *Solkattu Manual: An Introduction to the Rhythmic Language of South Indian Music* (2008), printed pp. 17 and 19, supplies the notation comparison above and exercise 7's duration assignments, continuing hand cycle and six-pulse preparation. **Adapt** their coordination in :5.3; the added boundary cues are derived from those durations. The rhythmic Method and learned conventions supply the subject operation. The source's teaching advice and the constructed alignment give bounded support for this use; performance remains subject to its execution.
 
-**Exploratory expressions.** The two-column duration comparison in :5.4 preserves the reported numbers but leaves their meanings unresolved. The event table adds source-supported endpoints and permits the waiting/occupation distinction. Its fixed row convention then fails for Q43, whose two attempts require a different unit. Retain useful constraints while revising the one that excludes the relevant history.
+**Exploratory expressions.** The two-column duration comparison in :5.4 preserves the reported numbers but leaves their meanings unresolved. The event table adds source-supported endpoints and permits a comparison of the time before first bench occupation with the time occupying the bench. Its fixed row convention then fails for Q43, whose two attempts require a different unit. Retain useful constraints while revising the one that excludes the relevant history.
 
 David Kirsh's [analysis of external representations in problem solving](https://link.springer.com/article/10.1007/s00146-010-0272-8) supports making operations possible through external arrangements; Shipman and Marshall's [analysis of premature formality](https://people.engr.tamu.edu/shipman/formality-paper/harmful.html) supports allowing structure to develop with the work. These are conceptual and historical grounds for the construction, not comparative efficacy evidence for the tables.
 

@@ -10,7 +10,7 @@
 
 **Use this when** an integration needs to express a meaning or answer a question and the adequacy of its available models is unsettled. For example, a source describes an inspection requirement, while the receiving query needs to distinguish that requirement from an observation of a particular configured feature.
 
-Start with one question the model must help answer and examples of answers that would count as different. Ask the domain participants to explain those distinctions before choosing an encoding. The first useful result can be confirmation that an existing model is sufficient, with its applicable edition and use conditions.
+Start with the question the model must help answer. Use its required distinctions and any examples needed to identify them. A contract or governing definition may settle the meaning. When local practice leaves open a difference that changes the answer, find the evidence or the people who can resolve it. The first useful result can be confirmation that an existing model is sufficient, with its applicable edition and use conditions.
 
 The object is the semantic model for that use: its concepts, relation meanings, constraints, and relevant commitments. The practical gain is a model whose distinctions can guide correspondence and mapping work. A stronger claim, such as adequacy for additional questions or valid inference in a formal language, needs evidence for those additional conditions.
 
@@ -38,11 +38,11 @@ Select or develop only the semantic content needed for the named use. Qualify it
 
 #### SIE.3:4.1 - Pattern-Use Unfolding
 
-1. **State the questions and answer distinctions.** Ask the domain participants what they need to decide, about which subject and at what grain or interval. Consider the information the final model and its available context give them at the time of use. Which possible states would they still be unable to distinguish? For an exact answer, those states must agree on the answer. For a permitted choice, there must be an action the recipient can take that meets the obligation throughout that group. Keep the grounds for any explanation they owe. Two fields can each replace the other while removing both loses the distinction. Restore a needed relation or constraint, then choose an encoding for the resulting model.
+1. **State the questions and answer distinctions.** Establish what the recipient needs to decide, about which subject and at what grain or interval. Use the agreed question where it settles these distinctions. Obtain the participant’s own judgement when the commission requires it. Consider the information the final model and its available context give them at the time of use. Which possible states would they still be unable to distinguish? For an exact answer, those states must agree on the answer. For a permitted choice, there must be an action the recipient can take that meets the obligation throughout that group. Keep the grounds for any explanation they owe. Two fields can each replace the other while removing both loses the distinction. Restore a needed relation or constraint, then choose an encoding for the resulting model.
 2. **Recover the available meanings.** Use the relevant SIE.2 results or directly supplied source meanings. Inspect candidate models' definitions, relations, constraints, examples, edition, access, and maintenance conditions where those can affect the use. Source labels alone cannot settle suitability.
 3. **Try sufficient reuse.** Apply the model's definitions, relations and constraints to the questions. Use a discriminating case where its adequacy remains open. When its content and applicable conditions suffice, return that model and the qualification. This completes the Method. Leave an uncovered question explicit if a permitted narrower use can continue.
 4. **Locate the gap.** Identify the missing distinction, relation, constraint, or incompatible commitment. Extend a module when the addition can preserve the existing commitments that consumers still use. Construct a different model when reuse or such an extension cannot supply the required content. Keep the reason tied to the gap.
-5. **Develop the meaning before encoding it.** Define the needed concepts and relations, their domains of application, and the grain or temporal interpretation required by the question. Show examples and counterexamples to domain participants. Preserve a source disagreement that affects use; SIE.4 can establish a qualified correspondence between different meanings.
+5. **Develop the meaning before encoding it.** Define the needed concepts and relations, their domains of application, and the grain or temporal interpretation required by the question. Where candidate meanings still give different answers, use a case that distinguishes them. If the difference turns on a tacit convention, examine a distinguishing case from the practice. An adequate existing account can settle its meaning for that use. Seek the practitioners’ interpretation where the meaning remains open or where their own judgement is commissioned. Obtain the stipulated agreement when adopting a definition requires one. Preserve a source disagreement that affects use; SIE.4 can establish a qualified correspondence between different meanings.
 6. **Choose sufficient formalization.** A maintained vocabulary and relation description can be enough for some uses. Select a formal language or profile when exchange, constraints, or inference require its semantics. Check the properties claimed under that choice as well as the domain cases. Repair or qualify a model that passes an encoding check but answers the domain question incorrectly.
 7. **Return a maintained, use-qualified model.** Identify the edition or stable content, covered questions, material limits, and the access and maintenance arrangement its consumers need. Return its meanings to correspondence or mapping work and its cases and qualifications to validation. A missing authoritative definition can leave one question unresolved while independently supported questions finish.
 
@@ -127,7 +127,7 @@ The domain participants confirm those distinctions and identify any unresolved s
 
 A qualified model makes correspondence and mapping decisions more explicit and reusable. Small integrations can finish with a small model. Extensions expose their commitments to later consumers.
 
-The work costs domain conversation, example construction, and any formal checks the chosen use requires. Some questions remain unresolved until a source owner supplies a needed meaning. Larger scope creates additional content and maintenance obligations.
+Count the work this use actually requires. An agreed definition can settle the question at the cost of locating and applying it. Competing meanings may call for a discriminating case, a conversation with those who know the local practice, or a formal check. A choice reserved to the source authority remains open until that authority decides. Larger scope creates additional content and maintenance obligations.
 
 ### SIE.3:10 - Architectural Rationale
 
@@ -164,6 +164,6 @@ Reopen the comparison if one required answer depends on a selected query or infe
 - SIE.4 uses model meanings to establish qualified correspondences; SIE.7 uses them in executable mappings.
 - SIE.10 validates the integration's claimed receiving result using the relevant model qualification.
 - SIE.11 follows a changed model premise to affected uses. Use SIE.12 when independently governed participants depend on shared semantic modules and need arrangements for maintaining them.
-- FPF terminology, kind, relation, and evidence guidance constrains the corresponding model claims; domain participants supply the problem-specific meanings.
+- FPF guides claims about terms, kinds, relations and evidence. Establish the relevant domain meanings from the governing definitions, records of practice and participant judgements needed for this use.
 
 ### SIE.3:End

@@ -12,12 +12,12 @@
 
 **First useful move — take the smallest branch.**
 
-1. Name one model edition and one place or thing about which it is used.
+1. Identify the model edition and the subject of the decision. For a proposed application, state the intended use and conditions. For a claim of actual use, identify where the model entered the activity in question.
 2. Ask what the present decision needs.
    - If applicability alone answers it, recover `ModelApplicabilityRelation` and stop.
-   - If actual use is current, recover the performer through A.13 and let A.15.1 independently admit the performed Work; because `ModelUseRelation` expressly represents assignment-bound use, then establish F.6 through the same obtaining A.13 assignment and recover `ModelUseRelation`, then stop.
+   - If the question is whether the model was actually used, look for its contribution to that activity. A calculation trace can establish which model the program applied even if the commissioning assignment is unknown. For a claim of assignment-bound use, recover the performer under A.13, admit the Work under A.15.1 and establish F.6 for the assignment. These grounds and actual use concerning the named holon support `ModelUseRelation`.
    - If maintained expression content is current, recover the fixed model content, fixed expression content, declared coherence predicate, and comparison scheme, then decide `ModelExpressionCoherenceRelation` and stop.
-3. Recover the remaining direct relations only when their joint organization changes the decision. Select `BoundedModelUseStructure` only then.
+3. Recover the remaining direct relations only when their joint organization matters to the decision. To select `BoundedModelUseStructure`, establish all its constituents, obtaining relations, applied constraints and selection-use frame. To decide whether that selection is available, check whether the grounds exclude any required relation or their coexistence in the same selection-use frame. Either finding rules out the structure. If joint satisfaction remains open, a decision requiring positive grounds can still be deferred.
 4. Keep every boundary crossing separate. A proposed source, target, direction, required fit, permitted loss, and claim scope is useful planning content, but it is not an occurrence and cannot identify either endpoint structure.
 
 **Entry case.** A press-control team must decide whether a controller-code change may be handled as a local code edit or must enter the independently governed release review together with model applicability and operating use.
@@ -43,7 +43,7 @@ The named selection-use frame is developed in section 5.1. If the decision asks 
 
 **Short glosses.** A **model episteme** is one claim-bearing model edition. A **model-use holon** is one already admitted holon, such as a system, a performed Work occurrence or an episteme, about which the model applies or is used; it is not a context container. **Work** (`U.Work`) is one exact dated doing, not its method, plan, or result. A **claim scope** (`U.ClaimScope`) is the set-valued boundary of context slices for one claim. A **relation occurrence** is a world-side relation actually obtaining under its predicate. A **reference scheme** is the interpretation basis for claim content. A **structure** here is a selected organization of already governed constituents, obtaining relations, applied constraints, and one exact selection-use frame; it is not another whole.
 
-**Adoption test.** After applying A.1.1, name the exact organization that changes the present decision and the condition for stopping or returning to its direct relations. If either is missing, stop at the direct relation or the pattern that defines or tests it.
+**Adoption test.** What does the receiving rule allow on the established facts? For a positive selection, identify the exact organization and what difference it makes. When a necessary condition fails or remains unresolved, state which selection that affects and which decisions the established direct relations can still support.
 
 **Names for retrieval.** The Plain label is **bounded context** and the Tech label is `BoundedModelUseStructure`. Use F.18 for designation settlement and lineage, and F.17 for the public terminology row and its refresh evidence; A.1.1 keeps only the names needed to apply this pattern. Authors **MUST NOT** publish `U.BoundedContext` as a U-kind.
 
@@ -323,7 +323,7 @@ A diagram, prose account, or interactive representation may show the structure o
 
 #### A.1.1:4.7 - Preserve the lightweight path
 
-When one direct claim answers the task, name its participant, semantic-locality value, system-role-assignment occurrence, or direct relation occurrence under the subject pattern and stop.
+When one direct claim answers the task, state the participant, semantic-locality value, assignment or relation it concerns and the grounds for the answer. For example, a comparison under the required scheme can show that the fixed code omits a distinction required by the fixed model. That result rules out a structure requiring coherence of this pair even if the operating-use history is incomplete. If the comparison itself cannot be interpreted, report coherence as unresolved. Apply the receiving release rule to that result.
 
 Select and expose `BoundedModelUseStructure` only when the joint organization of independently governed model applicability, actual model use, fixed-content model-expression coherence, exact applied constraint claims, and the named frame changes the next engineering move. Keep each claim scope solely in its applicability occurrence unless a distinct applied constraint proposition refers to it.
 
@@ -358,7 +358,7 @@ Section 0 gives the entry case. The following detail develops the relation ident
 - Its exact applied constraint claims are `PressSafetyScopeUseConstraintClaim`, whose proposition says that every target slice used in the release judgment satisfies `member(targetSlice, SafetyControlClaimScope)`; `PressCommandFeedbackConstraintClaim`, whose proposition says that the change preserves the model's command-versus-feedback distinction; and `PlantJointReviewConstraintClaim`, whose proposition says that, under independently governed `PlantReleaseRule-3`, all three selected occurrences are required inputs to the release review when each is material. `SafetyControlClaimScope`, any membership outcome, boundary rendering, and the claim carriers enter no discriminator by themselves.
 - Its fourth discriminator is `PressControlReleaseFrame` from section 0: ask whether the change is code-only or jointly model/use/coherence-relevant; provide that joint subject matter to the release review; return to the three direct relations if `PlantReleaseRule-3` is absent or does not require their joint review.
 
-Missing any discriminator leaves the direct relations in place but blocks this structure selection.
+If the code comparison in step 4 instead establishes that a required distinction is absent, this release review cannot use the proposed three-relation selection. If the comparison has yet to be made and other grounds leave coherence open, the positive selection is likewise unavailable, but coherence remains unresolved. The already established applicability and operating-use facts remain available in both cases. The release rule determines the next action.
 
 The relation sentences above assert direct world-side occurrences; the scope sentence states an A.2.6 membership claim. If the question is only whether the model applies to the press, stop at `ModelApplicabilityRelation`. Select `BoundedModelUseStructure` only when the selected applicability, operating-use, and expression-coherence occurrences plus the exact applied constraint claims and frame change the decision or Work plan.
 
@@ -417,7 +417,7 @@ It also has a model-coherence bias. Actual systems, work, methods, transformatio
 ### A.1.1:7 - Conformance Checklist
 
 1. A positive `BoundedModelUseStructure` exposes all four A.22 discriminators: exact constituents, exact selected obtaining applicability/use/coherence occurrences, exact applied constraints, and one named question/action/stop-or-return selection-use frame.
-2. For each claimed relation occurrence, establish that the corresponding obtaining conditions in `WF-A1.1-APP`, `WF-A1.1-USE`, or `WF-A1.1-COH` hold; any imported-sense receiving use additionally satisfies `WF-A1.1-APP-USE` or `WF-A1.1-COH-USE`. Missing conditions return the named stop rather than a positive assertion.
+2. For each claimed relation occurrence, establish that the corresponding obtaining conditions in `WF-A1.1-APP`, `WF-A1.1-USE`, or `WF-A1.1-COH` hold. Any imported-sense receiving use additionally satisfies `WF-A1.1-APP-USE` or `WF-A1.1-COH-USE`. For a negative judgment state which required predicate fails or why the required predicates cannot hold together in the selected frame. Return the named stop when needed grounds or a reliance condition are missing, preserving any separately established occurrence.
 3. Every `ModelExpressionCoherencePredicate` **value** satisfies the local five-part membership and value-identity rule. Every `ModelExpressionCoherenceRelation` **occurrence** is participant-determined by `<model episteme, expression episteme, predicate value, comparison scheme>` and has no interval discriminator.
 4. `BoundedModelUseStructure` is governed as `U.Structure`; its identity uses the four A.22 discriminators and their continuity rule.
 5. Reidentification compares all four discriminators and then applies A.1.1:4.3. A changed applied constraint or changed question/action/stop-or-return frame reopens identity even when constituents and relation occurrences are unchanged; an altered explanation reopens a discriminator only if it changes an applied constraint or frame value; a changed page, graph, rendering, or publication does not.

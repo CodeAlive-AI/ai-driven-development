@@ -4,17 +4,6 @@ A platform team asks:
 
 > Should we buy, fine-tune, or build an agent stack for our product?
 
-The discussion can mix architecture, vendor comparison, safety, evidence, budget responsibility, user value and implementation planning before the team has established what it is comparing.
+Use [C.38:4.1](../09-part-c---kernel-extension-specifications/96-c-38---construct-comparable-ways-to-obtain-one-result.md#c3841---follow-the-seven-step-same-result-sequence) to compare ways of supplying the same service. Determine what result each configuration would have to deliver and under which conditions. Suppose the team must handle every document covered by the service agreement, including records that may be processed only on site. The hosted offer under consideration sends every record to the vendor. The team can rule out that offer for this service. The restriction still permits a purchased on-site edition if one is available. It also leaves open whether adapting an existing model or building a system locally would meet the remaining requirements.
 
-A first pass with FPF can make the following distinctions explicit:
-
-- project objects: distinguish the product, the agent stack, and the team or toolchain involved in changing them;
-- architecture flow: which candidate and selected structures address the problem pressure, and how expected and actual structures compare;
-- comparison frame: which alternatives are in the candidate set;
-- evaluation characteristics: cost, latency, controllability, safety, maintainability, time to first use, and other project-specific characteristics;
-- evidence gaps: which missing evidence can change whether commitment is justified;
-- current decision state: whether the team is choosing now, keeping a selected set, making a project architecture decision, or doing more discovery;
-- work and feedback: which method and readiness conditions are needed, what Work was performed, and what evidence supports realization of the selected structures;
-- reader reliance: what engineering, management, and assurance readers may responsibly rely on.
-
-These questions can also guide a factory modernization, laboratory protocol, construction design change, supply-chain decision, safety case or research program. They help keep reasoning reviewable and reusable while preserving its meaning in different presentations.
+For the next decision, the team can check which deployments the vendor offers and compare the feasible configurations on the work they must perform. If the order covers only documents approved for external processing, the same data restriction gives no reason to exclude that hosted offer. In your own case, derive the conditions from what users need and what the agreement permits, then follow each condition to the alternatives it changes.

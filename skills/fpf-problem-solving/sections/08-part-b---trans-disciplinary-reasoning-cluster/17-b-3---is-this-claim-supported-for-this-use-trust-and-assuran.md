@@ -9,7 +9,7 @@
 
 **Use this when.** Use B.3 when a named assurance claim is current: for example, a claim that a model claim is credible for one decision, or that a safety claim is adequately supported for one release use.
 
-**First useful move.** State the target claim and the assurance use. Then ask which results and argument make that use supportable. If there is no assurance claim, stop and use the pattern that defines or tests the evidence, status, gate, permission, safety, release, work, or domain-result claim.
+**First useful move.** Identify the conclusion its recipient must assess, how it will be used and the work entrusted to the assessor. A sufficient existing argument can settle a question about one claim. To design an assessment, work back from the recipient’s decision to the distinctions the assessment must make (§4.1). To establish how someone actually used a result, identify the decision and the evidence about its use (§4.6). The domain rule governs the resulting action.
 
 **What goes wrong if missed.** A visible label or a score starts raising trust without a target, argument, basis, limitation, and use. At the other extreme, a modest assurance question is forced through a universal score and a large record whose fields do not affect the decision.
 
@@ -17,7 +17,7 @@
 
 **Not this pattern when.** Stay with `A.2.4` for the classification of an episteme as evidence, `A.10` and `G.6` for source recovery and bounded reliance, `G.11` for currentness, `F.10` for a status value and its use, `A.21` for a gate decision, and the domain pattern for safety, permission, access, responsibility, release, compliance, or controlled action. Consequence alone does not create an assurance claim. A domain rule may require one, but the claim must be stated before B.3 is applied.
 
-**First output.** Produce either one bounded `AssuranceResult` claim or a plain statement that the available argument does not support the attempted assurance use. Do not create a B.3 result merely to record that another pattern is relevant.
+**First output.** For each assurance question, state the bounded `AssuranceResult` or the limits of the available support. If the commission concerns several claims together, carry these judgements through to the conclusion the recipient needs. For a commission to design the assessment, supply the way to reach that conclusion under the permitted conditions.
 
 ### B.3:1 - Problem frame
 
@@ -62,6 +62,12 @@ State these three things before choosing measures or a record:
 2. the named assurance use;
 3. the conclusion that must be supported, narrowed, or refused for that use.
 
+When a recipient relies on the assessor’s independence, establish who may frame the assessment, who supplies its material and who may decide on the result. Recover the target from the governing commission and subject evidence. A producer can suggest an excellent test. It answers for the whole claim when the assessor can establish that connection independently. An interested party may control the question, the alternatives considered, access to evidence or who sees the finding. Identify the duty and the interest that could pull in different directions on this matter. Give the assessor access to the original terms and the evidence needed to challenge the selection, and a way to report a consequential omission to the entitled recipient. Where the requisite independence cannot be obtained, give the finding its supported scope and identify the unsettled reliance. The interest establishes a reason to examine that influence. A finding of interference needs evidence of what occurred.
+
+When you must choose the argument, start from a difference that could matter to the recipient. Hold a test result fixed and vary the assembly in which the tested part is used. Hold the reported performance of the assembly fixed and vary which part supplied it. If the assurance judgement changes, trace the relevant part, its connection or its enclosing system until the evidence reaches the subject of the claim. Choose the extent of each other inquiry by the same test. The operations required by an assessment Method can differ from the work performed on one occasion. A report may identify the work that supplied a premise. Establish the relation on which the inference depends.
+
+At each relevant scale, ask whether situations your model describes alike could require different assurance conclusions or explanations. Recover a missing distinction when it matters, or show that the available grounds suffice throughout the admitted range. For an assessment of future cases, use those differences to choose what to examine, how the assessor can obtain it in time and what follows from each relevant finding. An assessment designed under stated assumptions can be delivered before it is performed.
+
 Keep the following objects separate:
 
 1. world-side facts and domain results;
@@ -97,7 +103,7 @@ Develop it while reasoning: start with the claim and use, state the proposed sup
 
 Use C.2.1 to identify the epistemes whose claims make up the case. A claim about a system retains that system as its subject. For an assurance-result episteme, the EntityOfConcern is the target claim content or episteme whose support is being judged; `targetClaimRef` locates that subject.
 
-A case can bring several such epistemes together, preserving their identities and argument relations. The text or diagram expresses their claims; E.24.PUB governs the expression and its carrier.
+A case can bring several such epistemes together, preserving their identities and argument relations. The text or diagram expresses their claims; E.24.PUB governs the expression and its carrier. When the receiving decision depends on several judgements, establish how they fit together. Two results can each apply to a different configuration with no configuration in which both required conditions have been established. For a decision about one configuration, establish the required compatibility there. For a claim about every allowed configuration, cover that range and its shared conditions. A single argument can do so. Where the uses concern different configurations, explain how their separate results enter the decision. Evidence that a necessary condition for the decision fails can settle a refusal. When only one supporting argument fails, assess any other sufficient argument on its own grounds.
 
 An unfinished argument remains useful working material: identify the missing support and return the appropriate unresolved disposition. A positive assurance result requires an argument sufficient for the named use under the applicable domain rules.
 
@@ -145,7 +151,7 @@ B.3 supplies no default fold. When the assurance argument combines quantitative 
 
 Use `min` when the subject model explains what it means for the target quantity. For a bottleneck model it may give the value itself. For a probability of joint success, the smaller marginal probability gives an upper bound. State the direction of the bound before using it to decide a threshold.
 
-If no applicable aggregation rule is available, report the inputs separately and return a bounded, non-positive, or unresolved disposition. Do not manufacture one score to make the result look complete.
+When unlike quantities have no common aggregation rule, keep their meanings and use the criterion for the decision. Separate limits on accuracy and response time can support one conclusion when both limits hold in the required operating conditions. A direct observation, bound or qualitative argument can settle a question without assigning an overall score. State which part of the conclusion remains open when the available grounds run out.
 
 Several independent evidence lines may strengthen an argument only through the rule that states how their dependence and coverage are handled. Claim-scope intersection or union follows A.2.6 and the evidence model; it is not an assurance arithmetic shortcut.
 
@@ -169,6 +175,8 @@ A visible artifact, such as an attestation or dashboard tile, contributes to ass
 
 If the question concerns only a status, gate decision, permission, warning, or source location, use its pattern and produce no B.3 result.
 
+For a question about past reliance, identify the result available to the decision maker at the time and the grounds used for that decision. A decision record can establish reliance directly. If asked whether that result changed the choice, establish what would have happened without it. A binding rule can establish what would have been permitted or required without that result. To infer what the decision maker would actually have chosen, establish that the rule controlled the choice under those conditions or use other causal grounds under C.28. A result can have been considered even if the same choice was already warranted.
+
 If an assurance claim is current, cite the item only for the property it establishes. A valid signature or provenance chain can establish origin and integrity without establishing safety, truth, compliance, or readiness.
 
 #### B.3:4.7 - Leave domain obligations with their patterns
@@ -181,7 +189,7 @@ When a domain rule says a consequential use requires an assurance claim, state t
 
 State the window only when time changes the assurance conclusion. Monitoring, drift, incidents, evidence refresh, version change, policy change, gate change, or a newly discovered defeater can narrow, reopen, or withdraw a result while the target fact and target-claim identity remain unchanged.
 
-Design evidence and run evidence may support different claims. Produce separate results when target use, conditions, scope, or evidence window differs; compare them instead of merging them into one score.
+An argument about a design can establish what follows if its assumptions hold. Evidence from an implementation can establish that specified assumptions held for a given run. Combine the two when the design, implementation and conditions match in the respects the receiving claim uses. A successful run can demonstrate an attainable result or bear on a wider claim to the extent its selection and the domain argument warrant. Preserve the conclusions supported for each scope.
 
 #### B.3:4.9 - Use causal-use and method-structure results
 
@@ -231,7 +239,7 @@ The domain model says that both independently tested conditions must succeed: se
 
 On the independence assumption, treating `min(0.9, 0.9) = 0.9` as the joint probability would overstate it. Even with unknown dependence, joint success cannot be more likely than either necessary event. On these marginal estimates its probability is at most `0.9`. For a more demanding decision, establish the dependence or obtain other sufficient bounds.
 
-Return to the protection function. In this model success requires both events, so the probability of success is at most `0.81` on the stated estimates. Thus under these assumptions the design falls short of any required minimum strictly above `0.81`. To use `0.81` as the success probability itself, establish that the two events together suffice. If there is another way the function can fail after both have succeeded, include it in the model or retain the upper bound. A decision about the actual design also needs the estimates and dependence assumption to be adequate for the intended demand class.
+Return to the protection function. Success requires both events, so its probability is at most `0.81` under the stated model and estimates. This rules out a required minimum above `0.81`. For a minimum of `0.80`, the assessor needs to bound the remaining failures. If the probability that both events occur and the function still fails is at most `0.01`, the model gives a lower bound of `0.80` for success. With no such bound, the upper bound alone leaves that acceptance open. To claim equality with `0.81`, establish zero probability of failure with both conditions present. For a decision about the actual design, establish how well the estimates and the dependence assumption apply to its demand class, including uncertainty that could change the decision.
 
 #### B.3:6.2 - Routed-away case: dashboard status
 
@@ -251,9 +259,11 @@ The engineer states the supporting inference: “The validation compared M's pre
 
 These are premises of this worked case. If the validation does not establish that coverage or tolerance, narrow the use or return an unresolved disposition. Keep the argument beside the compact result or accessible through `basisRefs`. A later correction to the validation reopens the conclusions that depended on the corrected result.
 
+If the engineer is asked to design the assessment for later comparisons, start with the choice those comparisons must support. Suppose the task is to rank two proposed settings by response. A common offset can leave their ranking unchanged. Error in the predicted difference can reverse it. Choose conditions and evidence that bound the error in that difference over the uses promised. For a strict ranking, a predicted advantage greater than the bound on the absolute error in the difference establishes its sign. To decide whether one setting clears an absolute limit, the offset can matter again. The existing validation can supply either bound if its result covers that quantity and range.
+
 #### B.3:6.4 - Order-sensitive Method case
 
-An assurance argument relies on a manufacturing sequence whose result changes when two steps are reversed. Recover the B.1.5 composition, order and join conditions and any A.15.1 Work the argument consumes. Those results may answer the assurance question.
+An assurance argument relies on a manufacturing sequence whose result can change when two steps are reversed. To establish what a specified order would achieve, recover the order, any applicable joins and the rule that gives their consequence. For a claim about an actual batch, an applicable final inspection may answer directly. To establish how the batch was produced, use A.15.1 to identify the relevant work, its order and its contribution. To establish which steps are constituents of one reusable Method, use B.1.5.
 
 Use A.22 only if a separately selected organization contributes another needed premise; then identify its constituents, obtaining relations, applied constraints and use frame. The assurance result cites only the results and structure it relies on.
 
@@ -271,7 +281,7 @@ Use A.22 only if a separately selected organization contributes another needed p
 
 | ID | Requirement |
 | --- | --- |
-| `CC-B3-1` | One target claim and one named assurance use are stated before measures or records are selected. |
+| `CC-B3-1` | Each assurance result identifies its target claim and use. Where independent assurance is required, the assessor can substantiate the choice of claim and grounds for the receiving decision (§4.1). For a joint decision, explain how the required conclusions apply together. An assessment design explains how the assessor selects the relevant distinctions and obtains sufficient grounds under its stated conditions. |
 | `CC-B3-2` | The compact result contains target, use, basis, disposition, limits, and reopen condition; optional fields appear only when they change the conclusion or its replay. |
 | `CC-B3-3` | Every characteristic has one bearer, property, scale and unit where applicable, interpretation, and basis. |
 | `CC-B3-4` | Formality is not treated as monotone truth, empirical adequacy, or warrant. |
@@ -295,7 +305,7 @@ Use A.22 only if a separately selected organization contributes another needed p
 | Safety-case inflation | A warning, access value, or consequential display triggers a generic B.3 package. | Use the domain pattern; apply B.3 only to an assurance claim. |
 | Evidence creates truth | New evidence is said to make the target fact obtain. | Revise the warrant or disposition unless the world-side facts changed. |
 | Assessment-record collapse | A checklist, trace, witness, or note is treated as the assessment Work or result. | Identify each object separately and add only what the use consumes. |
-| Design/run chimera | Blueprint evidence and runtime observations are merged into one score. | Produce separate results and compare them. |
+| Design and run conflated | An assumption established for the design is silently treated as true of the installed system. | Identify the configuration and operating evidence needed to apply the design result. Use their joint implication for the installed system when those premises hold. |
 
 ### B.3:9 - Consequences
 

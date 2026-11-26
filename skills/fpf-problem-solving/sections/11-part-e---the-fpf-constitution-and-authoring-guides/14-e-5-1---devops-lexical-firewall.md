@@ -36,7 +36,7 @@ Apply the **Lexical Firewall** to the subject the text governs:
 4. **Use aliases where they preserve the rule.**
    An incidental technical term can be defined in a Tooling Glossary and cited by conceptual alias. Preserve necessary spelling under item 2 when the concrete subject's condition would otherwise become untestable.
 
-*Non‑normative automation.* Machine checks **MAY** exist in Tooling. They are advisory and **MUST NOT** be imported into the Core.
+*Checking an instance.* A Tooling check that reads the exact characters of a submitted heading can establish whether its separator satisfies H-2. Finding a technical word can locate a possible dependency. To decide whether the definition actually depends on that tool, examine its meaning under the Core rule. Acceptance follows the authority and conditions of the governing practice. The executable check **MUST** remain outside Core.
 
 ### E.5.1:5 - Archetypal Grounding (System / Episteme)
 

@@ -39,7 +39,7 @@ Return which practice each group may continue or is proposed to adopt, the decis
 
 In a constructed example, three CityWater planners receive a common-horizon appraisal template and attend a documented explanation. Those records establish distribution and teaching. The practice leader asks what is known about continued use. The investigator reports those facts and states that later use by planners and recognition by the committee have not yet been established.
 
-Suppose two later appraisal records are then available. One uses the stated horizon and compares eligible combinations; the other ranks interventions by condition alone. The investigator can report that the two records show different appraisal practices. That is evidence about those occasions, not retention across the whole population or a causal effect of the teaching.
+Suppose two later appraisal records are then available. One uses the stated horizon and compares eligible combinations; the other ranks interventions by condition alone. The records show how each appraisal presents the options. To credit a planner or the committee with using either approach, establish what the records or other evidence show about their actions on those occasions. A record can include the decision itself. Continued use across the population and an effect of the teaching each need further grounds.
 
 If a decision about continuation needs more evidence, the investigator considers later comparable appraisals and committee decisions whose interpretation is attainable and useful. If change is selected, the practice leader can propose a worked example or a changed appraisal instruction within their authority. The committee's actual choice of the FFMK programme remains separate from any decision to retain the combination-comparison rule for future work.
 
@@ -51,7 +51,7 @@ Visible participants and formal documents can dominate the account while informa
 
 ### EAM.16:7 - Conformance Checklist
 
-Are the practice content, population and interval clear? Does the evidence support the particular transmission, use, recognition or retention claim? For a branch, can each group identify its rule and the conditions under which it applies, with a reason for maintaining the difference? Can they recognise when a bound permits local choice and when interactions require comparison of a wider programme? Is a proposed intervention directed at that process under actual authority, and is additional inquiry worthwhile for the requested answer?
+Are the practice content, population and interval clear? Does the evidence support the particular transmission, use, recognition or retention claim? If the finding concerns distinct local practices, what distinguishes them and why does the difference matter? To claim that practitioners can choose a practice themselves, establish what choice they make and where it applies. For example, someone who develops asset programmes may need to decide whether an individual appraisal suffices or interactions require a wider comparison. A commission confined to delivery of a practice can finish on evidence of that delivery. Is a proposed intervention directed at that process under actual authority, and is additional inquiry worthwhile for the requested answer?
 
 ### EAM.16:8 - Common Anti-Patterns and How to Avoid Them
 

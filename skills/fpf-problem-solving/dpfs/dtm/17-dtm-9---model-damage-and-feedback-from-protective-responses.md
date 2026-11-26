@@ -44,7 +44,7 @@ If recognition is uncertain, retain its consequential errors. An action that per
 
 Represent formation, decay, persistence and capacity limits at the resolution needed by the question. A response may depend on current activity, past experience or prediction. Use a state or history sufficient to represent that dependence.
 
-An algebraic response a=F(x,u) assumes that its adjustment is sufficiently fast for the receiving result, where x describes relevant activity and u the proposed change. A simple dynamic alternative is:
+An algebraic rule a=F(x,u) can describe an entitlement that takes effect as soon as its conditions hold. Here x describes relevant activity and u the proposed change. If the same expression approximates how people actually respond, establish whether delay or earlier experience would change the answer. One possible model of a delayed adjustment is
 
 ~~~text
 τa' = F(x,u) − a, with τ > 0.
@@ -68,7 +68,7 @@ Name each material consequence and its recipient. Direct effort, delayed useful 
 
 If a local consequence accumulates and can be repaired, represent both its source and restoration. DTM.8 distinguishes changing the source from repairing its result. State which other participants' consequences remain outside that local measure.
 
-At the method vertical, verify that sensing, decision, action and restoration can operate together while supporting the containing work. A proposed response that consumes the only capacity needed for that work may be infeasible even if its isolated mechanism succeeds.
+For a response that must operate during the work, determine which contributions it needs and when the result of each will be available. Where observation, decision, action or restoration have to operate together, check their compatibility with the work they support. A proposed response that consumes the only capacity needed for that work may be infeasible even if its isolated mechanism succeeds.
 
 #### DTM.9:4.5 - Compare regimes, transients and changed variants
 

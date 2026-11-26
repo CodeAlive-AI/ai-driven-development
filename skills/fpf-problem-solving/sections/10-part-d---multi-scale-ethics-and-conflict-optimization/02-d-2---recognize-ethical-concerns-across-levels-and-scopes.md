@@ -105,9 +105,7 @@ A product team wants to reduce service cost by making a medical device harder to
 
 This is a possible consequence of the restriction, with its likelihood and extent still to be established. The next question is which service restriction, if any, addresses the hazard without imposing avoidable access harm. That question and the connected sides complete the present `D.2` recognition; `D.3` can describe their tension from this account.
 
-Now suppose a release decision depends on whether a proposed servicing method can leave calibration outside the declared tolerance. A qualified test team can perform the discriminating check before the release window closes, and the release authority needs its result under the applicable rule. Preserve that investigation and the rule's force.
-
-Use `C.11.DUA` to compare the restriction's protective contribution with access harm, feasible alternatives, delay, and displaced work. `D.4` carries the resulting decision, including the authority needed to change a requirement or accept a residual. If the required basis cannot be obtained, the proposed release remains unsupported; a narrower continuation must meet its conditions.
+If a decision on the restriction follows, compare its expected protective contribution with the access harm to people who depend on local repair. For instance, a proposal that preserves a qualified local service can be compared on both consequences. Use `C.11.DUA` when that comparison calls for an intervention decision. `D.4` addresses who can change the restriction or accept a residual harm. If the commission was to identify the affected sides, the team can already report them and the uncertainty about delayed access.
 
 ### D.2:5.1 - Bias-Annotation
 
@@ -131,8 +129,8 @@ Use `C.11.DUA` to compare the restriction's protective contribution with access 
 
 | Anti-pattern | What goes wrong | Repair |
 | --- | --- | --- |
-| One-level ethics | The case is treated as good because one declared level improves. | Name every affected level or scope that changes the ethical claim. |
-| Ladder import | A fixed level list is imported before the case is understood. | Recover the situation-defined scopes first. |
+| One-level ethics | The case is treated as good because one declared level improves. | Trace the change in work or use to whoever may bear the consequence in question. A supported observation of the whole can establish its outcome. To infer the outcome from separate effects, establish how they combine. |
+| Ladder import | A fixed level list is imported before the case is understood. | Follow the membership, exposure, use or part–whole relation through which this consequence could arise. |
 | Entry as solution | D.2 is used to decide the conflict. | Name the concern and select D.3, D.4, D.5, C.30.ILC, or another subject pattern for its next use. |
 | Hidden episteme harm | A standard, model, policy, or architecture description is treated only as a document, not as an affected episteme with use consequences. | Separate the episteme, its publication relation, use relation, and affected systems or people. |
 
@@ -145,6 +143,8 @@ Making cross-scope concerns explicit lets the practitioner choose the next quest
 A change can look technically local while shifting costs, risks or responsibilities across affected entities. Recovering those relations lets the practitioner formulate the ethical question before choosing mediation, an audit or an architectural response.
 
 ### D.2:10 - SoTA-Echoing
+
+Fung’s account of public participation distinguishes who takes part, how participants receive or exchange information or reach a decision, and how their participation influences or authorizes public action. These distinctions help trace a proposal from the people consulted to those affected by its use. Establish the applicable mandate and protections in the practice at hand. [Varieties of Participation in Complex Governance](https://doi.org/10.1111/j.1540-6210.2006.00667.x)
 
 For recognizing a transferred consequence, **adopt** A.1.CSD's tracing of a proposed change through actual relations and supported possible effects, when the affected account is incomplete. Compared with judging only the proposal's local target or assigning priority by level, :2 and the service-restriction case retain the access loss alongside the claimed quality benefit. D.1 supplies the value premise; D.3 and D.4 describe and decide the resulting conflict.
 

@@ -12,8 +12,10 @@ Use this pattern when several context-local system-role kinds are already admitt
 
 - an assignment to one system-role kind may satisfy a condition written for another kind;
 - two system-role kinds are incompatible under a stated holder rule, actual-Work or proposed-action identity condition, and temporal test;
-- several independently obtaining assignments are required together under one allocation rule; or
+- assignments to several distinct kinds are required together under one allocation rule; or
 - one system-role kind narrows another, and the practitioner must decide whether that narrowing is monotonic `U.SubkindOf` or a different residual relation.
+
+When a rule requires two independent reviewers of the same kind, the question concerns their number, distinct holders and the required independence. Use the assignments and actual reviews that the question calls for. The kind can stay the same for both.
 
 Typical working moments include these:
 
@@ -207,7 +209,7 @@ RelationSignature:
 
 The predicate is identified by the order-insensitive set, joint-admission and holder-allocation rule, applicability, and only meaning-changing semantic-basis editions. The predicate states which assignments may have the same holder, which require distinct holders, and how the receiving window is tested.
 
-Current assignments and the receiving window remain inputs to the later check. The bundle specifies a joint condition over distinct system-role kinds. Use the applicable direct pattern when assignment, team, or Work identity is needed. A list of labels without a joint-admission and allocation rule is not a bundle relation.
+Current assignments and the receiving window remain inputs to the later check. The bundle specifies a joint condition over distinct system-role kinds. Repeating the same kind in a set cannot express a requirement for two independent holders. Establish their number, assignments and independence under the receiving rule. Use the applicable direct pattern when assignment, team, or Work identity is needed. A list of labels without a joint-admission and allocation rule is not a bundle relation.
 
 #### A.2.7:4.6 - Occurrence Identity and Continuity
 
@@ -215,7 +217,7 @@ For substitution and residual qualification, one occurrence begins when fixed or
 
 When a declaration, scheme, `KindSignature`, Bridge or other cited semantic-basis edition changes, compare the rule, orientation or set semantics, applicability, system-role-kind identities and meaning-bearing semantic basis. If these identity-bearing values remain unchanged, predicate identity is preserved. If a value changes, identify the changed predicate and establish whether it obtains for its participants; a new relation occurrence begins only when it does. If the comparison is unresolved, leave predicate continuity unresolved. Equal displayed labels establish no continuity.
 
-An affirmative assertion or occurrence description may state the known `systemRoleKindRelationExtent` only after current facts or accepted constituting history satisfy the predicate and the identity rule recovers the occurrence. Closing an open extent refines the same occurrence when obtaining was uninterrupted. A demonstrated predicate-false gap ends it; later truth begins another. Missing evidence leaves reliance unresolved and does not demonstrate a truth gap.
+An affirmative assertion or occurrence description may state the known `systemRoleKindRelationExtent` only after current facts or accepted constituting history satisfy the predicate and the identity rule recovers the occurrence. Evidence that fixes a previously unknown endpoint can refine the description of an uninterrupted occurrence. If the evidence contradicts an interval that the description already asserted, correct that assertion. A demonstrated predicate-false gap ends it; later truth begins another. Missing evidence leaves reliance unresolved and does not demonstrate a truth gap.
 
 `systemRoleKindRelationExtent` is content of an affirmative assertion or occurrence description, not a temporal SlotSpec. A target `declaredSystemRoleKindRelationEvaluationWindow` belongs to the receiving assertion or check and is not part of the direct relation signature or occurrence identity.
 
@@ -259,7 +261,7 @@ When ordinary wording says *subrole*, *role part*, or *combined role*, start fro
 | Does one kind restrict another without monotonicity? | residual system-role-kind qualification relation |
 | Must assignments to two kinds not overlap under a condition? | symmetric incompatibility relation |
 | Must assignments to several kinds be present together under an allocation rule? | order-insensitive bundle relation |
-| Which system is assigned, and for which interval? | direct species under `U.SystemRoleAssignment`; use A.2.1 to recover it |
+| Which holders are needed, how many, and for which interval? | use A.2.1 for the assignments and the receiving rule for distinctness, coverage or independence |
 | Does an assignment satisfy a Work-admitting state condition? | `SystemRoleAssignmentStateRelation`; use A.2.5 to recover it |
 | Can the holder perform within an operating envelope? | the qualified ability claim and separate capability-fit predicate under A.2.2 |
 | Are ways of doing or Work occurrences composed? | Method composition under A.3 and B.1.5, or Work structure under A.15 |

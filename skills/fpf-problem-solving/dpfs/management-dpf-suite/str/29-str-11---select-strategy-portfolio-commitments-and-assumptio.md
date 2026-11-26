@@ -136,7 +136,7 @@ A single executive view can also hide separate holders of access, service, parti
 - The result identifies a recommendation or a decision and its holder where relevant. A reported choice has evidence that the authorized party made it.
 - The evidence and comparison basis concern the same options, configuration and horizon.
 - A retained alternative set, intended joint use and authorized commitments remain distinct.
-- A conclusion about which commitments exist is supported by the effective decisions of their holders. A promise that several commitments can be met together has a compatible joint arrangement. Where actual commitments conflict, identify the conflict and the holder who can address it.
+- To establish which commitments exist, check the authorized act or the standing terms and triggering event that made each commitment effective, including any required assent. A promise that several commitments can be met together has a compatible joint arrangement. Where actual commitments conflict, identify the conflict and the holder who can address it.
 - The selected scope states its resources, exclusions, displaced work and unmet conditions.
 - Material assumptions retain their support and use limits.
 - Reconsideration conditions identify the affected premise, conclusion or decision and the responsible holder where a new judgement is required.

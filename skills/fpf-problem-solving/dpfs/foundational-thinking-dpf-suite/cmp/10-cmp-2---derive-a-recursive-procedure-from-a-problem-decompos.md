@@ -97,7 +97,7 @@ If equal subproblems recur, CMP.3 can identify and share them. If the decomposit
 
 #### CMP.2:4.6 - Use the result and revisit the assumption that changed
 
-Run a small case through the complete procedure, including the use of its returned answer. Change one condition that stresses the construction: empty input, a boundary case, a different output request or a resource limit. Follow the affected base, join and progress arguments.
+Follow the procedure to the result the recipient can use. When a concrete run helps establish the base, join or progress argument, choose an input on which the disputed condition matters. A proof covering the promised domain can settle the general claim. If the actual implementation or its use is in question, establish that it realizes the proved construction under the relevant conditions.
 
 The result may be a working procedure, an unaffordable but informative construction, or a located missing operation. Use that difference to choose the next algorithmic move. Formal proof or additional testing is chosen for the uncertainty that matters to the receiving use.
 

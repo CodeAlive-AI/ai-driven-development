@@ -29,7 +29,7 @@ Place the complete demands in actual windows. A necessary resource bound is tota
 
 If the arrangement fails, return that finding to the decision maker. If the commission includes choosing another arrangement, compare a different window, supported option, qualified provider, service-preserving fallback or justified deferral, including the burden moved to other work.
 
-State what happens if an important condition changes during the window. Identify the time, personnel, access or fallback needed to return this asset to a supported operating state, and keep those resources available. Agree with those authorized to control maintenance and operation on the latest time to decide on a supported hold or return. Obtain the required allocation or operating decision before relying on reassigned resources, an extended window or changed service.
+State what happens if an important condition changes during the window. Identify the time, personnel, access or fallback needed to return this asset to a supported operating state, and keep those resources available. Use the applicable deadline and decision arrangement for a supported hold or return. If either needs to be set or changed, obtain that decision from the authorized holders. Obtain the required allocation or operating decision before relying on reassigned resources, an extended window or changed service.
 
 Return the timing arrangement to those responsible for controlling the work and operation. Stop when the requested planning question is answered. Actual protected work and resumption require their own applicable permissions and evidence.
 

@@ -216,7 +216,7 @@ Use the analogy with `E.18.1` P2W narrowly. A P2W use carries an accepted proble
 9. Name the intended architecting or realizing Systems first, then make the needed Method descriptions, constraints, readiness expectations, work expectations, and structure-use return conditions available to them under their own access or use relations. If the claim is that a System holds an assignment, identify that separately obtaining assignment; assignment does not establish classification. Assess the System's capability and fit through A.2.2 independently. Keep availability or access, local kind, separate classification, assignment, readiness, permission, authority, responsibility, and plan or commitment independent.
 
    When performance is claimed, recover each performer through A.13 and let A.15.1 independently admit the `U.Work`. Add `performedWorkAttributionRefs` only when the flow or receiving use expressly represents precise assignment-bound attribution. Add a Work-to-change relation only when that direct predicate obtains. Return the missing governor for an unsupported direct claim.
-10. Realize selected structures in the transformed holon through domain work without treating the selected or expected structure, decision, method, `MethodDescription`, `WorkPlan`, model, description, evaluation result, publication, or transfer as the actual structure or as an actual transformation. Use `A.15.1` for each dated work occurrence and `A.3.4` for each independently identified actual bounded change.
+10. Carry the selected arrangement into domain work when the commission includes realization. For retention or withdrawal, identify the use that must continue or cease, the time and conditions, and which connections must remain, change or end. An existing arrangement can already supply the means. Establish the promised effect in use when it falls due. Use `A.15.1` for dated work and `A.3.4` for an independently identified actual bounded change.
 
     If work is said to cause or realize a change, name the Work-to-change relation and use the cited pattern to check the applicable rule. If no reusable relation is available, cite a local claim selected under `A.6.RCD` disposition 2.
 
@@ -323,15 +323,15 @@ Stop conditions:
 
 - stop at `C.22.2` when the signal still needs problem-side recovery;
 - stop at `C.30` or `C.30.ASV` when the current need is only architecture claim or structural-view adequacy;
-- stop at `C.32` when the next useful artifact is a candidate palette rather than a whole P2S carry-through record;
-- stop at `C.32.PAD` when the project architecture decision is current;
+- return the candidate palette under `C.32` when that is the commissioned result. A later design, decision or realization has its own remaining work;
+- return the adopted project architecture decision under `C.32.PAD` for a decision commission. When the project owes a change in use, carry that decision into the work and evidence the change requires;
 - stop at `A.3.1` for Method identity or `A.3.2` for `MethodDescription` membership, or at the A.15 family when the current question is method-work alignment, work planning, readiness, or performed work;
 - use `C.16`, `C.25`, `C.32.ACE`, `E.23` or `G.11` for a current measurement, quality-bundle, eval, improvement or currentness-refresh question; use `C.29` when mathematical representation choice, transfer or reliance remains unresolved;
 - reconsider P2S only when a later subject assertion establishes architecture pressure that changes candidate structures, expected structures, actual structures, selected structures, or the stronger-structure inspection condition.
 
 ### C.32.P2S:5 - Archetypal Grounding
 
-The architect carries pressure into structure: first by finding which selected structures are missing or inadequate, then by constructing alternatives, deciding what will be pursued, enabling domain work, and watching which subject-side structures obtain under operation. An actual transformation is introduced only when its own `A.3.4` basis is grounded.
+Carry the outside need through to what the commission requires. An explanation may establish how existing relations produce the relevant property. A design shows how the proposed relations would do so. For installation, establish the work agreed with the recipient, including qualification when it belongs to acceptance. For a capability, establish what the participants can now do under the agreed conditions. When the commission calls for use to start, continue or cease, establish the required start, continuation or cessation in practice. An actual transformation has its own `A.3.4` basis.
 
 **A throughput shortfall after a layout change.** A plant architect finds that a production cell delivered fewer accepted units per shift than the layout design predicted. The count establishes the shortfall for the observed shifts. It leaves open whether a buffer was installed on a different route, the input mix changed or the cell spent longer waiting for release. Identify which of those differences would change the proposed action.
 
@@ -430,7 +430,7 @@ The pattern does not guarantee adequacy. It makes the architecturing flow inspec
 
 The connected architecturing work includes recovering problem pressure and structural uncertainty, generating candidate selected-structure changes, preserving alternatives, making decision-ready content, and returning actual-structure feedback to the next synthesis question. During realization, identify and test every actual bounded change under `A.3.4`.
 
-The next action depends on what is known about the structure and what the receiving use still needs. Candidate construction makes proposed structures more specific; a decision selects what to pursue, and domain work can make structures obtain. Descriptions and records retain only part of that content. Explain which distinctions the receiving description, decision, Method or Work needs and whether its available information preserves them. If an omitted distinction can change that use, recover it through stronger inspection, description or view repair, decision repair, or a C.29 mathematical lens as appropriate. An adequate account can be retained without another inspection.
+The next action depends on what is known about the structure and what the receiving use still needs. Candidate construction can propose a different arrangement or constrain choices a design left open. For a claim of strict model refinement, compare the admissible alternatives for the same inquiry under B.5.MR. A decision selects what to pursue, and domain work can make the selected structure obtain. Descriptions and records retain only part of that content. Explain which distinctions the receiving description, decision, Method or Work needs and whether its available information preserves them. If an omitted distinction can change that use, recover it through stronger inspection, description or view repair, decision repair, or a C.29 mathematical lens as appropriate. An adequate account can be retained without another inspection.
 
 ### C.32.P2S:11 - SoTA-Echoing
 

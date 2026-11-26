@@ -23,29 +23,31 @@ Candid reporting supports useful action while real consequence rules influence w
 
 Identify what this interaction must produce: clarify a result, understand an obstacle, supply help, learn from an episode, recognize a contribution, or inform a personnel decision. Tell participants the material purpose, audience and use of observations. Reuse established arrangements when they are sufficient. A later new use of private learning data needs its own grounds and permissions.
 
-Recover the actual goal mode, evidence, starting conditions, allocation, changes and material contributions. OPS.22 supplies an operating performance interpretation where needed. Distinguish the observed result from an explanation of it and from a judgement about a person. An unfavorable forecast should expose a response decision; if the actual consequence rule penalizes truthful reporting, obtain the relevant change or acknowledge the constraint rather than offering a false assurance of safety.
+Use the evidence that can settle the receiving question. Recover the goal mode, starting conditions, allocation, changes and particular contributions where they affect the finding or its permitted use. OPS.22 supplies an operating performance interpretation where needed. Distinguish the observed result from its explanation and from a judgement about a person. Where an unfavorable forecast calls for action, identify who can still respond. If the applicable consequence rule penalizes truthful reporting, seek a change through its owner or acknowledge the constraint.
 
 #### GOALS.8:4.2 - Conduct a useful conversation and feedback exchange
 
-Use LDR.1's smallest sufficient working conversation. Begin with the concrete episode and the participant's account. Ask what happened, what they were trying to do, which conditions helped or hindered, and what next contribution would change the work. Supply a clear observation and its consequence rather than an unexplained personality label. The participant can correct factual mistakes or offer another supported explanation.
+Use a conversation when it is part of the undertaking or can settle something that matters. Start with the episode. Give the participant room to explain what they were trying to do, which conditions mattered and what contribution would help. A sufficient record may already support a decision to recognize their work. Supply a clear observation and its consequence rather than an unexplained personality label. The participant can correct factual mistakes or offer another supported explanation.
 
-Agree the next useful action, help and response occasion. The needed contribution may be a clearer assignment, resource decision, subject answer, changed method or learning opportunity. Assign it to someone able to provide it. A manager's advice cannot on its own change another team's commitment or supply a teacher's missing competence. If the conversation settles the work, end there.
+Identify who can take any further action. If that work needs help, establish what contribution is needed, who can provide it and when it will be useful. Agree a further response if the undertaking calls for one. A clearer assignment, a resource decision, a subject answer, a changed method or a learning opportunity can require different providers. A manager's advice cannot on its own change another team's commitment or supply a teacher's missing competence. If the conversation settles the work, end there.
 
 For development, distinguish supported practice from performance used for consequential appraisal. Use HCD when the person needs a new capability and agree the use of its observations. Feedback should let the learner change an operation and try again under suitable conditions. A conversation about learning is not evidence that learning occurred.
 
 #### GOALS.8:4.3 - Recognize an evidenced contribution
 
-Name the contribution, the result or continuation it helped and the available basis for that account. Acknowledging someone who surfaced an unworkable promise, helped a neighbor or repaired a bad assumption can make useful work visible alongside headline outputs. Keep the claim proportional: contribution to a team result is different from sole causation, and ownership of an OKR is different from performing all its work.
+Start with what you can acknowledge about this person's work. A record of a timely warning can be grounds to thank the person who gave it even when its effect is unknown. When the recipient used it, find out what decision was still open and what they did in light of the warning. It might have confirmed an action already chosen, supplied a missing reason to proceed, or changed the action or its timing. Credit the change that the evidence supports. To say the warning prevented a loss, establish how the response averted it and why that loss would otherwise have occurred, taking the other protections then available into account.
 
-Choose recognition appropriate to the participant and setting, including preferences about publicity. Explain enough for colleagues to understand the practice worth retaining. Formulaic praise or a ranking detached from the contribution provides little guidance and can misattribute credit.
+A shared result can identify individual acts. Ask what the result establishes under the arrangements that actually operated. If a release could proceed only with approval from each of two named people, the completed release establishes both approvals. If either could approve and the record says only “approved”, the identity of the approver remains open. Evidence of who devised the solution or performed the checks answers further questions. Recognize the team's achievement at its own scope and the particular work that the evidence supports for each participant. The owner of the goal may have coordinated work performed by several people.
+
+Choose recognition appropriate to the participant and setting, including their preferences about publicity. When colleagues need to learn from the contribution and sharing it is appropriate, explain what they can reuse and under what conditions. Direct acknowledgement can serve the participant who requested it. A ranking detached from the contribution can misattribute credit.
 
 #### GOALS.8:4.4 - Return consequential people decisions to their complete grounds
 
 Goal evidence can inform a personnel decision when its interpretation fits that decision. HRM.2 supplies the actual work analysis, assessment inference, comparison and limits. HRM.3 supplies remuneration and progression through their applicable bases and terms; HRM.1 checks the coherent people/work arrangement. Include opportunity, assistance, scope, attribution and relevant changes when comparing contributions.
 
-Use goal evidence under the actual remuneration or progression rule. Identify the contribution the rule rewards and the evidence and authority it requires. A valid fixed rule can determine an entitlement once its conditions are met. A discretionary award requires the decision entrusted to its holder. HRM.3 supplies the relevant professional process and any further grounds a particular decision requires.
+Apply the remuneration or progression rule in force. Which result qualifies, who is eligible and what further decision, if any, does the rule require? The terms may reward a shared achievement or specify an act the individual must perform. A valid fixed rule can settle entitlement and amount as soon as its conditions are established. A discretionary award requires the decision entrusted to its holder. HRM.3 supplies the relevant remuneration process.
 
-Return the conversation result or qualified input to whoever will use it. Recognition flags an unjustified change of use. For assurance, establish what the evidence supports about the individual, how it may be used and who has authority to act on it for the proposed consequence.
+When someone proposes to use goal evidence for a different personnel decision, establish whether that use is permitted, what the evidence supports for this decision and who has authority to act. Give the recipient the supported finding and any uncertainty that matters to the choice.
 
 ### GOALS.8:5 - Archetypal Grounding
 
@@ -53,16 +55,16 @@ Two employees have scores of 1.0 and 0.6. The first had a committed goal with es
 
 In a CFR conversation, the second employee's evidence supports discussion of the search quality, the useful finding and the help provided. The team can recognize those contributions and decide what to pursue next. A promotion panel separately asks whether the employee can perform the proposed wider role. HRM.2 receives appropriate evidence, including relevant goal work, but needs the role-specific inference and comparison.
 
-Suppose a valid reward arrangement grants a specified payment when a defined contribution has been evidenced. Its conditions are met. The employee's entitlement and amount can now be established under that rule. A rule reserving the award to an authorized panel would instead require its decision. To report that the employee has been paid, use evidence of the transfer or receipt that the applicable terms require. Those responsible use HRM.3 to carry out the remaining work.
+Suppose these employees also belong to a team whose client has accepted its delivery. Under terms that grant the same fixed award to each eligible team member on acceptance, the accepted delivery and evidence of each person's eligibility settle both amounts. Under terms that reward the person who discovered the failed option, the evidence of who made that finding matters. If an award is reserved to a panel, its decision is still needed. To report that either employee has been paid, use evidence of the transfer or receipt required by the terms.
 
 ### GOALS.8:6 - Bias-Annotation
 
-Visible output can conceal helping, care, coordination and unequal opportunity. Interpret the evidence in the actual work configuration. Participants' preferences about recognition and disclosure differ. AI-generated work changes attribution and the relevant human contribution; it does not erase that contribution or establish it automatically.
+Visible output can conceal helping, care, coordination and unequal opportunity. Interpret the evidence in the actual work configuration. Participants' preferences about recognition and disclosure differ. For an AI-assisted result, establish which choices or checks the evidence attributes to the person when those are the grounds for recognition.
 
 ### GOALS.8:7 - Conformance Checklist
 
 - Is the purpose and material use of the conversation or evidence clear to participants?
-- Does feedback concern an observable, changeable contribution with usable help?
+- Does the feedback give the recipient the finding they need? If a change is sought, can they act on it with the means and help available?
 - Is recognition supported and appropriately attributed?
 - For a personnel conclusion, do the rule, evidence and authority establish what was asked, such as an entitlement, a discretionary decision or a payment already made?
 - Have changed data uses and applicable terms been handled through their actual grounds?

@@ -175,7 +175,7 @@ Reopen the wording when a changed source meaning, intended use, subject predicat
 
 **Worked repair.** A review says, “The new module layer improved maintainability.” The available results report 80 seconds for revision R1 and 50 seconds for R2 on regression fixture F; the word *layer* merely labels the changed source grouping.
 
-The sufficient rewrite is: “On fixture F, the reported regression-test runtime was 80 seconds for R1 and 50 seconds for R2.” It preserves the observed comparison without claiming a structural layer, general maintainability gain or causal effect from two measurements.
+For the reported timing, one can write, “On fixture F, the reported regression-test runtime was 80 seconds for R1 and 50 seconds for R2.” For a claim about the contribution of the faster test, establish how it enters the maintenance work and whether it changes the required effort or elapsed time. For a claim about total maintenance time, a comparison of complete maintenance work under comparable conditions may already settle the question.
 
 If the receiving task only needs that runtime comparison and its measurement basis is adequate, stop. If it needs a maintainability conclusion, establish how the measured runtime bears on that characteristic under `C.25` and the domain method; if it needs a causal conclusion, recover the additional intervention and comparison basis under `C.28`. If the grouping itself must be changed, recover its constituents and relations before using `A.22` or `C.30`. The stronger question selects the missing work; it does not invalidate the narrower measured result.
 
@@ -203,7 +203,7 @@ These distinctions block diagram-as-architecture, graph-as-proof, view-as-struct
 | `CC-C30P-4` | Source-use, currentness, and publication-to-carrier relation recovery uses `C.2.P` before architecture or structure claim use only while the relevant distinction remains hidden; an already recovered claim goes directly to its subject pattern. |
 | `CC-C30P-5` | Function-like, relation-like, mathematical-lens, characteristic and scale, quality, evidence, assurance, gate, work, decision, causal-use, release, and method claims are assigned to their subject patterns. |
 | `CC-C30P-6` | The repair does not mint `U.Architecture`, `ArchitectureStructure`, a generic architecture head, or mandatory architecture-repair record. |
-| `CC-C30P-8` | The repaired wording preserves one useful admissible reader use; type-correct but inert architecture wording is not recovered by value. |
+| `CC-C30P-8` | The repaired wording answers the commissioned question or shows what the narrower supported result contributes and which grounds the original use still requires. |
 
 ### C.30.P:9 - Common anti-patterns
 

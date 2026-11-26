@@ -38,19 +38,21 @@ Construct a model by selecting distinctions, proposing their relations and makin
 
 State what alternatives the answer should distinguish: whether an intervention can reach a target, which arrangement could explain an observation, how many constructions meet a rule, or what condition prevents a result.
 
-Inspect a small instance or the available arrangement. Describe the supplied facts separately from the account you propose. Ask what changes between the cases that matter. The first question can be provisional; preserve a new question when the attempted construction reveals a more useful distinction.
+Start from the rule, observations or arrangement that bear on the question. Inspect a small instance when it can expose a consequential difference. Describe the supplied facts and the account you propose. If the construction reveals a better question, ask what its answer would contribute to the investigation already in hand.
 
 If the participant cannot express what differs or matters, B.5.EA helps articulate that contribution before model construction. Return here when the resulting distinction permits a question or contrast; do not require this preliminary work when the contrast is usable.
 
 When the account is clear but leaves you unsure which question matters, the scheme comparison in :4.2.1 can expose a useful distinction. A discovered question may have an adequate answer; use it without requiring a larger model.
 
-An existing answer may resolve the contrast. Use it under its conditions. C.11.DUA helps when obtaining more information or refining a model competes with acting on a sufficient answer.
+Determine what the recipient needs from you. An existing answer may settle a decision. A request for a model they can use under changed conditions also needs the participants, relations and limits that let them derive the new consequence. Where the question is fixed, retain any newly discovered question for the work it can inform and return to the one commissioned. C.11.DUA helps when obtaining more information or refining a model competes with acting on a sufficient answer.
 
 #### B.5.FM:4.2 - Choose the participants and distinctions
 
 Follow what can be transformed, exchanged, combined, constrained or observed. Propose the objects and relations needed to describe those changes. For a physical situation, an interaction may cross the first proposed boundary: air surrounding a vessel or a path through its casing can matter to the answer.
 
-Try a consequential variation. If two situations receive the same description but permit different answers, recover the distinction that separates them. An object can need several quantities; several objects can sometimes be represented together. Choose the coarsening from the inference it must preserve.
+When the choice of scale is yours, start with what the recipient has to judge. Hold a part fixed and vary how the whole uses it, or hold a reported total fixed and vary the arrangement that produces it. Follow the constituents whose variation could change the answer or its explanation. Determine what counts as a constituent for each kind involved. A proposed Method has operations, a particular job has performances, and the evidence for what happened may come from a record of that job. Connect them where the question requires it. C.39.SA:4 develops this choice.
+
+Try treating some of the remaining situations alike. If they require different answers, different grounds the recipient must explain, or actions that cannot be chosen on the available information, recover the lost distinction. If the order asks for one workable choice, a choice shown to work in every situation left open can suffice even when other choices differ. An object can need several quantities, and several objects can sometimes be represented together.
 
 For a question about permitted continuations, A.3.3 helps construct a sufficient state description. For an observation, C.16 helps connect the quantity of interest to what the observation reports.
 
@@ -72,7 +74,7 @@ When a relation appears absent, distinguish the following outcomes:
 
 An empty position in a diagram establishes none of these outcomes by itself. If adapting a scheme changes a relation's meaning, state that change and reconsider the conclusions that depend on it.
 
-Try two plausible answers when that cheaply reveals what is at stake. If both permit the same sufficient continuation, stop the additional inquiry. Otherwise formulate the question in the participant's working language and say what answer would help: a condition, construction, distinction or bound. The benefit can concern a later inquiry or a new method. C.11.DUA governs whether obtaining the answer is worth its burden.
+Compare plausible answers when that cheaply reveals what is at stake. A difference that changes the continuation gives a reason to inquire. Use the decision criterion the work requires. For a guarantee, a rule or a bound may establish that one action works in every admissible situation. When the recipient can observe a condition before acting, assess the resulting choices together. For a decision based on risk or expected outcome, apply the agreed measure. If the choice is still open, formulate what would help in the participant's working language: a condition, construction, distinction or bound. The benefit can concern a later inquiry or a new method. C.11.DUA governs whether obtaining the answer is worth its burden.
 
 Use the resulting answer or continue constructing the model it needs. A subject specialist or AI can supply a relation, correspondence or calculation; the required knowledge and access depend on that contribution.
 
@@ -92,7 +94,7 @@ Use an expression that lets you carry out the next inference: an annotated sketc
 
 #### B.5.FM:4.4 - Obtain the smallest useful consequence
 
-Work one case through the proposed relations. A direction of change, a limiting value, an obstruction or a small construction may answer the question before a detailed numerical model is needed.
+Derive a consequence at the reach the question needs. Working one case can settle a question about that case, exhibit a feasible construction or refute a universal claim. For a consequence claimed across a range, identify a rule or bound that covers the admissible variations. In :5.3 the rule for extending any valid prefix supplies the counts at subsequent lengths. Computing the count at length four illustrates one use of that rule.
 
 Show which premise makes the consequence follow. If calculation or simulation is needed, C.29.2 supplies computational formulation and C.29.3 supplies realization. If the reasoning is available but difficult to follow, B.5.RA helps recover the decisive inference.
 
@@ -178,7 +180,7 @@ Twelve people have accepted a 60-minute workshop. There are twelve seats and one
 
 Use the relation between attempted action, observation and feedback to ask whether the intended practice can occur in the session. The sequential arrangement requires `12 * (4 + 2) = 72` minutes before any introduction. The next question is which arrangement can supply the intended practice and feedback within the available time. Reducing attendance, increasing duration or changing the learning arrangement have different consequences. Merely pairing learners supplies the required feedback only if they can provide that contribution.
 
-Now suppose twelve independent stations provide the required task-specific feedback and can be used concurrently. The serial calculation no longer describes the work. Use the concurrent duration and the remaining session activities to decide whether the arrangement fits; this reasoning does not require another instructor. If the intended event is instead a demonstration with no individual practice, the individual-feedback relation does not impose that practice on it. Clarify the event's purpose before treating this scheme as applicable.
+Now suppose twelve independent stations provide the required task-specific feedback and can be used concurrently. The serial calculation no longer describes the work. If the order allows station feedback and each station supplies the four-minute attempt and two-minute feedback in parallel with the others, assign one learner to each station for the same six minutes. Compare the remaining activities with the 54 minutes available. If the order specifies observation by the instructor, feedback from the stations alone leaves that part of the order open. If the intended event is instead a demonstration with no individual practice, the individual-feedback relation does not impose that practice on it. Clarify the event's purpose before treating this scheme as applicable.
 
 The same question-forming move can use a measurement scheme: a shared column label, such as temperature, leaves the relevant quantity, observing conditions and aggregation to be recovered before combining records. If the existing documentation establishes their suitability, use that answer. The scheme supplies a question, not a compulsory new measurement.
 

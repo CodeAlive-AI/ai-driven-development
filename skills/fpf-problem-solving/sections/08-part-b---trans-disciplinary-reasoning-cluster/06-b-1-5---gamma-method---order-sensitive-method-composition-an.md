@@ -6,7 +6,7 @@
 
 ### B.1.5:1 - Problem Frame
 
-Use this pattern when the question is whether identified Methods constitute one reusable Method. Their contributions may depend on order, guards, joins, shared constraints or simply satisfying distinct requirements of the whole. If the recipient must devise the arrangement, begin with B.1.5.CM and use the qualification below on the resulting proposal.
+Use this pattern when you need to decide whether identified Methods constitute one reusable Method, or to find which larger Methods, if any, include a known operation. Their contributions may depend on order, guards, joins, shared constraints or satisfying distinct requirements of the whole. If the recipient must devise the arrangement, begin with B.1.5.CM and use the qualification below on the resulting proposal.
 
 Typical moments:
 
@@ -17,13 +17,13 @@ Typical moments:
 - assurance needs to know which joins, adapters, cutsets, or exposed interfaces make the composite method reliable enough to enact.
 - a source presents Methods as a first–then list even though representative Work may also require several of them to contribute at the same time.
 
-**Primary EntityOfConcern.** The EntityOfConcern is one candidate or composite `U.Method`, already identified under A.3.1. The proposition that part Methods and whole-forming facts qualify it as composite is separately governed claim content. A separately identified C.2.1 episteme may carry that proposition in its ClaimGraph; the episteme then has the candidate Method as its EntityOfConcern under its effective ReferenceScheme.
+**Primary EntityOfConcern.** When qualifying a proposed composition, take one candidate `U.Method` identified under A.3.1. Whether its part Methods and whole-forming facts qualify it as composite is a further claim. A C.2.1 episteme can carry that claim in its ClaimGraph with the candidate Method as its EntityOfConcern under the effective ReferenceScheme. An inquiry that starts with a known operation takes its search range from the question. Within that range it can identify several encompassing Methods or establish that none includes the operation.
 
-**First useful move.** Identify the reusable result or condition the recipient needs and whether the task is to qualify a proposed arrangement or to construct one. For each apparent step or branch, distinguish the object it denotes: `U.Method`, `U.MethodDescription`, `U.WorkPlan`, dated `U.Work`, an A.22-selected `U.Structure`, method-family registry or selector outcome, mathematical lens, mechanism, formal substrate, or quoted wording that does not yet carry a method claim.
+**First useful move.** Establish whether the recipient wants to test a proposed composition, construct a way to obtain a whole result, or find which larger Methods include an operation already known. For construction use B.1.5.CM. For the upward inquiry start at §4.1 with the known operation and the uses whose rules matter. A step, plan item, dated action, diagram position or registry entry can lead to relevant evidence. Determine what it denotes before using it as a Method or a part of one.
 
 **What goes wrong if missed.** A flowchart becomes the method, a plan item becomes a submethod, an event log becomes proof that a method was enacted, an order edge becomes a part, or a registry of alternatives is treated as one composed method. Then work starts from a description or label whose method identity, joins, interfaces, and failure conditions were never recovered.
 
-**What this buys.** The project can test whether an already identified candidate `U.Method` is composite and state the part, order, join, interface, and identity facts needed for that claim. If qualification fails, another useful result may remain, such as a description, plan, selected structure, or selector result, under its pattern. Use `A.15.4` when the failed qualification reveals reliance on appearance.
+**What this buys.** A practitioner can qualify a proposed composite Method or establish which of the larger Methods under consideration actually include an operation. A description, plan, identified structure or selector result can remain useful when the composition claim lacks grounds. Use `A.15.4` when the claim depends on appearances.
 
 **Not this pattern when.**
 
@@ -77,7 +77,7 @@ When the objects and composition grounds are left unclear:
 
 ### B.1.5:4 - Solution
 
-A.3.1 first identifies the candidate `U.Method` and every part method. B.1.5 does not create their `U.Method` membership. It asks: do these already identified methods, contributions, constraints, and boundary decisions warrant the claim that the candidate Method is composite?
+For qualification of a proposed composite, A.3.1 identifies the candidate `U.Method` and the Methods proposed as parts. Examine their contributions, relations and boundary to decide whether they constitute the claimed whole. When the inquiry starts with one known operation, §4.1 helps discover possible encompassing Methods and establish each inclusion that matters. It can also show that the operation is used only through a result already available.
 
 If the parts and arrangement are still yours to choose, use B.1.5.CM:4.1 to work from the whole result to the contributions and their conditions. Return here to test the resulting composition claim:
 
@@ -140,6 +140,10 @@ One `methodPartOf` occurrence is determined by the ordered pair `<part Method, w
 If the construction rule changes so that a part is newly admitted or no longer admitted, the composite Method must be reidentified or the claim remains unresolved; reidentifying either participant gives another pair. This is why the participant pair is sufficient for the family defined in B.1.5 even when enactments vary.
 
 The same part Method may also stand in `methodPartOf` relations to several whole Methods. Test every pair against the construction rule of its whole. Each whole keeps its reusable action, applicability, boundary, constraints, interfaces, accepted variations, and reidentification rule. One supported pair says nothing about another and creates no unique containing Method, discipline-wide whole, kind inheritance, transitivity, fusion, or common-whole closure.
+
+**From a known operation to its possible wholes.** Find which larger tasks use or require the operation and what it contributes to them. An instruction can require it before the first run. A service can call it under a standing rule. Examine the rule, ask a practitioner or trace how a result was obtained. An observed performance can suggest a candidate whole. Its stable rule can establish an inclusion even before the first performance. For each candidate, ask what contribution its reusable action requires and whether this operation is required or admitted for that contribution. A recipient who can take a result already in hand may use the result with no requirement to perform the operation that produced it. For a question about one named pair, its construction rule can settle inclusion. For a list of all applicable encompassing Methods, bound the population by the commission and establish coverage of its eligible members. A complete registry for that domain or a rule applying throughout it can suffice. If coverage is partial, report the established inclusions and what remains unexamined. A search that has found none so far leaves open whether any exist beyond it.
+
+Work back from the uses relevant to the decision. For each established inclusion, what does the larger Method require the part to preserve? An external user can also require a result with particular properties, and a proposed whole can impose design constraints before anyone uses it. Preserve the basis of each requirement when deciding how the operation should work and which choices remain open. A common operation may meet all those requirements. Incompatible requirements may call for different variants or a change to an encompassing Method. B.1.5.CM helps construct a workable combination, and B.1.5.RS compares a proposed replacement across its affected uses. If nobody knows how to obtain the required contribution, C.39 helps develop a way. If the way is understood, find out whether the next performer needs its description, access to a suitable implement or coordination with another participant. C.32.MWA.PP develops the performance arrangement when that is the task. Return a resulting constraint to each use it affects.
 
 A source label, list membership, diagram containment, shared name, registry entry, description membership, plan position, or work decomposition does not make `methodPartOf` obtain. When the test fails, keep the apparent step under its subject pattern and do not add a negative part merely to complete a diagram.
 
@@ -315,6 +319,8 @@ If several pump-family uses need the same parameterized rule, A.6.RCD can identi
 The composite qualification additionally requires the candidate's generic participants, applicability, preconditions, accepted inputs, final effect, preserved conditions, exposed start and abort interactions, encapsulated calibration interaction, failure routes, and reidentification rule. A list of the five names or an arrow diagram establishes none of these facts.
 
 `PumpUnitBuildWork-2026-07-29` may enact the whole through one `enactsMethod` occurrence without four corresponding work parts. If a separately admitted `MotorInstallationWorkPart-2026-07-29` exists, it enacts `InstallMotor` only through its `enactsMethod` occurrence. Resource use, test telemetry, the produced pump unit, acceptance, and evidence remain under their subject patterns.
+
+Start instead from the bench operator's functional test. Which procedures need the operator to run it? The build instructions require the test before release. Suppose the repair manual admits the same test to demonstrate restored service. Its acceptance decision uses the time to reach the required flow as well as the flow subsequently sustained. A warranty desk that accepts a copy of the certificate can use that result without running the test. The first two procedures give reasons to examine the test's design. If its record contains elapsed time and steady flow, each can derive the result it needs. Keeping only the factory's steady-flow pass mark would leave the repair decision open. If the bench cannot measure the elapsed time, the repair decision still needs a timing observation. The repair team must obtain a suitable measurement or choose another admitted test.
 
 #### B.1.5:5.2 - Emergency Intake
 

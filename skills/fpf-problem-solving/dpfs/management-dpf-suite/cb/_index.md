@@ -73,7 +73,7 @@ CB is this framework's reference code; its numeric local locators give CB.1–CB
 
 Use this framework when people need useful participation, relationships or joint contributions: help one another, take part in a valued activity, keep shared work feasible, or make their experience useful elsewhere. A community organiser, participant, practitioner, sponsor or assisting agent can enter at the difficulty already present. When the proposed community is meant to support a wider cultural purpose, CB.1 also helps decide whether that purpose needs a community contribution at all.
 
-Choose an entry or a method in the [Table of Contents](_index.md#table-of-contents) by the result you need. Read the Problem frame to check when the method fits and the Solution to work out how to apply it. Establish who must receive, perform or help develop the practice in question. A worked case can show how participants reached their result. Return to the roles, contributions and conditions that matter for yours. When asking an assistant for help, give it that question and ask how the method supports the answer, using the ordinary language of your work.
+Choose an entry or a method in the [Table of Contents](_index.md#table-of-contents) by the result you need. Read the Problem frame to check when the method fits and the Solution to work out how to apply it. Establish who must receive, perform or help develop the practice in question. A worked case can show how participants reached their result. Return to the roles, contributions and conditions that matter for yours. If you need assistance, commission the work it can supply. A membership service might recover the terms the chapters adopted or arrange a handover under those terms. To establish whether a volunteer wants another season, use that volunteer’s own decision.
 
 ### OFFER — Choose what would help
 
@@ -97,7 +97,7 @@ Choose an entry or a method in the [Table of Contents](_index.md#table-of-conten
 - **Question:** What can continue, on whose terms, and who can perform the work?
 - **First useful result or blocker:** Identify the activity that can continue, the willing organiser, their mandate and the means available. Establish when responsibility passes under the terms of the transfer and who retains each outstanding obligation. To report that the activity has continued, trace a performance under the new arrangement.
 - **Start with:** [CB.11](21-cb-11---continue-change-transfer-or-end-a-community-arrangem.md); use [CB.13](23-cb-13---establish-a-workable-mandate-for-shared-decisions.md) for missing mandate, [CB.7](17-cb-7---prepare-and-sustain-distributed-organising.md) for organising capability and [CB.9](19-cb-9---provide-for-community-work-and-agree-its-terms.md) for provision and terms.
-- **Stop or return:** Reduce, pause or end an unsupported promise. Keep an adequate existing arrangement. An unresolved incident still needs its responsible receiver under CB.8.
+- **Stop or return:** When support ends, tell participants what can continue and settle commitments already taken on under their terms. Keep an adequate existing arrangement. An unresolved incident still needs its responsible receiver under CB.8.
 
 ## How to use the language
 

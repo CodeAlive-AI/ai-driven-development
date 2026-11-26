@@ -12,7 +12,7 @@ MKT.9 compares available variants against that result. The only worker prepared 
 
 ### MKT.Application:1.2 - Obtain a construction and compare whole alternatives
 
-The provider asks SYSE.8 for a service arrangement that preserves the needed learning activity and equipment conditions. Its request names the required room conditions, equipment readiness, timing, access and ongoing obligation. C.32.MWA.PP compares the proposed arrangements, including their demands alongside the ongoing equipment check and other commitments. The returned alternatives must identify the contributions that make each combination workable.
+The provider uses SYSE.8 to commission a service design that preserves the needed learning activity and equipment conditions. Its request names the required room conditions, equipment readiness, timing, access and ongoing obligation. The designer uses C.32.MWA.PP to compare the proposed arrangements, including their demands alongside the ongoing equipment check and other commitments. The returned alternatives must identify the contributions that make each combination workable.
 
 | Alternative | What must be supplied | Consequence for the offer |
 | --- | --- | --- |

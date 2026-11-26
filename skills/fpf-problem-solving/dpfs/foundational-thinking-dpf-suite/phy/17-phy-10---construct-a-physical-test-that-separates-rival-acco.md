@@ -14,7 +14,7 @@ The first result is a proposed physical comparison, with the response each accou
 
 You need the physical meaning and applicable laws of the accounts being compared. Mathematical, computational and experimental collaborators can supply particular derivations and implementations. B.5.TC helps align the accounts when their questions or predicted quantities still differ. PHY.9 constructs a missing measuring interaction.
 
-Use an existing discriminating observation or sufficient comparison directly. Leave the difference unresolved when it does not change the intended use, or when acting with the remaining uncertainty is preferable to another test.
+For a choice between the accounts, use an existing discriminating observation or sufficient comparison directly. If a particular team is commissioned to repeat the test on this shift, that performance must take place for the team to report its own test. Leave the difference unresolved when it does not change the intended use, or when acting with the remaining uncertainty is preferable to another test.
 
 ### PHY.10:2 - Problem
 
@@ -66,7 +66,7 @@ If intervention on the subject is unavailable, look for an accessible physical c
 
 #### PHY.10:4.3 - Construct the experiment that can realize the contrast
 
-Translate the mathematical change into physical preparation and operation. Identify the means of imposing the input, the initial or boundary conditions it requires, and the observable response. Include timing when a transient, memory or change of state is decisive.
+Translate the mathematical change into physical preparation and operation. For a controlled change, establish how the input will be imposed. For a naturally occurring contrast, establish how to recognize the relevant conditions and obtain a comparable observation. In either case identify the required preparation or background and the observable response. Include timing when a transient, memory or change of state is decisive.
 
 Determine which shared conditions must survive. Maintaining geometry, material state or a reference can be more consequential than increasing the number of readings. When the intervention itself changes one of these conditions, either include that change in both predictions or construct another contrast.
 
@@ -92,7 +92,7 @@ Before performing the comparison, make its outcome interpretation clear enough t
 
 Work the proposed preparation through to the predicted indication before committing the apparatus. This can expose an uninformative design or missing physical contribution without a new experiment.
 
-When observations are obtained, interpret them under the stated recording and physical conditions. A response compatible with one supplied account and incompatible with another narrows this comparison. It does not exclude physical accounts that were never represented in the alternative set.
+Interpret the observations under their stated recording and physical conditions. To credit the design of the comparison, the conduct of a test or the interpretation of its outcome, use evidence of the corresponding work. These contributions can come from different performers. A response compatible with one supplied account and incompatible with another narrows this comparison. It does not exclude physical accounts that were never represented in the alternative set.
 
 If the result disagrees with both, inspect the consequential premise rather than forcing a winner. Separate a computational error, an incorrect readout relation, an unachieved preparation and a defeated physical account. Follow the dependence of the failed prediction to identify a useful return. A supplied bound on an apparatus effect can sometimes exclude that explanation; when it cannot, retain the competing interpretations.
 
@@ -108,7 +108,7 @@ Develop a subsequent test from what remains unresolved. One outcome can identify
 
 When a revision changes the physical account, propagate it to the mathematical formulation, computation and interpretation that depend on it. Use B.5.RR and B.5.MPC.R for the corresponding reasoning and cross-contribution revision.
 
-Stop when the obtained distinction suffices, or when no worthwhile available test changes the present use. Preserve a promising unresolved physical question when it opens a useful later construction or investigation.
+For a decision about the physical accounts, stop investigating when the obtained distinction suffices or another test has no worthwhile bearing on the decision. A separately commissioned test has its own completion conditions. Preserve a promising unresolved physical question when it opens a useful later construction or investigation.
 
 ### PHY.10:5 - Archetypal Grounding
 
@@ -172,8 +172,8 @@ A finite candidate set can exclude a useful account before the test begins. A re
 
 - The accounts answer the same physical question under corresponding conditions.
 - Their remaining parameter freedom and consequential auxiliary premises are retained.
-- The proposed physical change makes a difference in an observable response.
-- Preparation, drive and readout can realize that change, or their unresolved limit is stated.
+- For a proposed distinguishing test, the chosen contrast gives different observable consequences under the accounts and conditions it is meant to separate.
+- A planned test identifies how the variation can be produced or observed and how the readout can distinguish the responses to the extent claimed. A finding that distinction is impossible covers the permitted conditions and readouts in that finding. If available evidence leaves the test’s feasibility open, identify the unresolved physical condition.
 - Discrimination is judged with the relevant physical and recording uncertainty.
 - Possible results retain their different implications, including agreement with several accounts or disagreement with all supplied accounts.
 - The first result and subsequent physical, mathematical or computational return are usable.

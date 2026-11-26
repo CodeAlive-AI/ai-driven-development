@@ -68,7 +68,7 @@ C.32.MWA helps keep the structures separate: the vertical of methods enacted in 
 
 Choose among individual states, a few relevant classes, a distribution over state or age since adoption, and a justified common state. Use the least detail that preserves the comparison.
 
-When event contribution is q(x), the relevant population quantity is the appropriately weighted average of q(x), not automatically q of the average x. Weights come from the modeled events: an individual making many demonstrations can contribute more exposure than an individual making none. Population shares alone need not be the weights.
+Choose the population result from the question. For a mean event contribution q(x), average the contributions over the relevant events with their appropriate weights. A total requires their sum. For a practice that two groups must carry out together, establish whether their conditions hold together. Separate averages can describe the groups while leaving their ability to act together open. Weights come from the modeled events: an individual making many demonstrations can contribute more exposure than an individual making none. Population shares alone need not be the weights.
 
 A time-since-adoption description is useful when newcomers and experienced users produce materially different events. An average state is more defensible when the effect is approximately linear over the relevant range or when variation is small enough for the decision. Test that approximation, rather than choosing a fixed number of classes.
 

@@ -154,7 +154,7 @@ In their [meter comparison](https://doi.org/10.1038/s44271-025-00360-0) (2025), 
 
 ### RHY.7:12 - Relations
 
-RHY.2 selects the relevant rhythmic content; RHY.5–RHY.6 supply representations and needed correspondences. RHY.8 uses the comparison to construct variants; RHY.9 supplies the performing arrangement. RHY.12–RHY.13 address development and transfer; RHY.14 supplies performance and response observations.
+RHY.2 selects the relevant rhythmic content; RHY.5–RHY.6 supply representations and needed correspondences. RHY.8 uses the comparison to construct variants; RHY.9 supplies the performing arrangement. RHY.12 addresses human practice and RHY.13 examines transfer under the support available. RHY.14 supplies performance and response observations.
 
 Use A.19.CPM to compare, C.16 to interpret a measurement and C.11 when choosing among alternatives. C.29 helps qualify a mathematical model’s use in the activity. Use C.11.DUA to decide whether another comparison or observation is worth its cost.
 

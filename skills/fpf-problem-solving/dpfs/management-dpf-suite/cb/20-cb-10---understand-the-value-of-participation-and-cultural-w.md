@@ -36,7 +36,7 @@ How can an organiser investigate the contribution and its limits well enough to 
 
 ### CB.10:4 - Solution
 
-Begin with the decision and a specific experience or contribution. If later use matters to the decision, trace what the recipient did with the contribution as far as the evidence allows. Compare the account with observations that could support, limit or contradict it, and state what the missing cases leave unknown. Return the supported result to participants and those who can act. If they change a condition, observe what follows.
+Begin with the decision and what could settle it. A record or bound can answer a question about coverage. To find out what someone experienced or did with a contribution, investigate the relevant occasion. If later use matters to the decision, trace what the recipient did with the contribution as far as the evidence allows. Compare the account with observations that could support, limit or contradict it, and state what the missing cases leave unknown. Deliver the supported result to those entitled to receive it and give contributors the return agreed with them. If the commission concerns the effect of a later change, establish what followed and what the observations can support.
 
 
 
@@ -44,7 +44,7 @@ Begin with the decision and a specific experience or contribution. If later use 
 
 Recover the question with whoever will use the result. Continuing a monthly exchange, correcting an invitation, funding a guide and claiming reduced service cost require different evidence. Name the period and the change being considered, including leaving an adequate arrangement alone.
 
-Ask those affected what would count as useful and what would count as an unacceptable burden. Keep differences visible. A participant may value a dependable answer, an organiser a manageable workload, and a sponsor a competent workforce. A gain for one party can coexist with a loss for another.
+Establish whose benefit or burden the question concerns. An agreed service criterion and a complete register may settle how many members received a timely answer. Seek participants’ own accounts when their experience, judgement or preferences matter and the evidence leaves them open. Keep differences visible. A participant may value a dependable answer, an organiser a manageable workload, and a sponsor a competent workforce. A gain for one party can coexist with a loss for another.
 
 Distinguish the claims before selecting observations. Useful questions can concern experience and inclusion, relationships, access to a resource, ability to perform a practice, actual use, results in that use, or the provision and governance of the arrangement. Choose the question that matters to the receiving decision.
 
@@ -58,15 +58,15 @@ Find where the promised result would become visible. A participant can report wh
 
 An indicator needs a recoverable unit and population. For returning participation, distinguish people from visits and say who could have returned during the period. For response, distinguish an initial acknowledgement from a useful answer. If the observation method changes, retain that difference before interpreting a trend.
 
-Use activity patterns to find informative accounts. Include a relevant contrast: someone who returned, someone who left after one attempt, a quiet user, or a contributor whose work stopped. Select the contrast because it can change the explanation. A few purposeful conversations can expose a repair without representing the whole population.
+When personal accounts could resolve the question, use activity patterns to find them. A relevant contrast might involve someone who returned, someone who left after one attempt, a quiet user, or a contributor whose work stopped. Select the contrast because it can change the explanation. A few purposeful conversations can expose a repair without representing the whole population.
 
 Provide an appropriate way to answer. People may need a private conversation, an accessible format or someone other than their organiser to receive criticism. Explain how the account will be used, obtain permission for attributed reuse and retain only detail needed for the inquiry. A refusal or missing response remains missing evidence.
 
-Keep collection proportionate. Start with a small number of useful observations and cases; expand when plausible alternatives still change the decision. If the question needs specialist sampling or causal identification, obtain that contribution instead of treating more informal interviews as an equivalent.
+Keep collection proportionate. Use the evidence already sufficient for the decision. Collect more where the plausible alternatives still differ in a consequential respect. If the question needs specialist sampling or causal identification, obtain that contribution instead of treating more informal interviews as an equivalent.
 
 #### CB.10:4.3 - Recover the path from experience to use
 
-Ask for one particular occasion, preferably in the recipient’s own account. Find out what happened, what the recipient obtained, what they did with it and what difference that made. An account can start with a later result and work backwards. Check the order of events and identify where the evidence ends.
+To investigate a participant’s experience or use of a contribution, ask about a particular occasion, preferably in that recipient’s own account. Find out what happened, what the recipient obtained, what they did with it and what difference that made. An account can start with a later result and work backwards. Check the order of events and identify where the evidence ends.
 
 For social learning, the Guidebook's four basic value cycles help ask different questions:
 
@@ -121,7 +121,7 @@ If the inquiry exposes a different purpose, return to CB.1 with the affected par
 
 #### CB.10:4.7 - Return the result and keep the learning loop useful
 
-Return what was learned to those who supplied the experience and those who can act. Explain the supported benefit or failure, the limit on the conclusion and the decision the result supports. Use the detail needed by each receiver while preserving consequential uncertainty and permission for reuse.
+Deliver the commissioned finding to its recipients. Where participants supplied accounts, return what was agreed with them, using information they are entitled to receive. Explain the supported benefit or failure, the limit on the conclusion and the decision the result supports. Use the detail needed by each receiver while preserving consequential uncertainty and permission for reuse.
 
 Let participants use the account to improve their own practice. A failed application can become a correction to shared guidance; a successful adaptation can become a candidate for another context. CB.14 and Core's Method-development family qualify any wider method claim. A sponsor's summary can draw on that same grounded account without replacing it with an unsupported impact total.
 
@@ -177,7 +177,7 @@ For the intended decision, check that:
 - Useful contrary observations, burdens and unsuccessful uses are included where they can change the judgement.
 - Reports, observed occurrences, contribution explanations and causal claims retain their different evidence requirements.
 - A recommendation reaches the person who can use it. When the change is to be tried or introduced, its permissions, people and resources are available.
-- Participants receive a usable return, and continued collection has a reason.
+- The recipient obtains the commissioned finding. Where people contributed accounts, give them the agreed return. Further collection has a reason.
 
 A coherent local account can support a bounded improvement. A broader claim needs evidence with the corresponding reach.
 

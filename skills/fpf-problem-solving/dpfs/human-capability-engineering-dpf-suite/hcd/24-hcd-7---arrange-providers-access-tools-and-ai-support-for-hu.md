@@ -65,7 +65,7 @@ Start with the contribution each selected activity needs and who will use it. Id
 Establish the conditions that determine whether the support will be available.
 
 1. the person or defined learner class, participation basis, intended recipient, and the question or decision for which the arrangement is needed;
-2. the later work, practice or programme to be supported, including the selected method, tasks, required products, errors the work must prevent and what the resulting evidence will be used to establish;
+2. the later work, practice or programme to be supported, including the required products, which choices of task or Method the holder will make, what is already prescribed, consequential errors and what the evidence will be used to establish;
 3. the calendar, attempt and feedback timing, learner workload, provider windows, peak periods, and decision deadlines;
 4. material conditions on project access, sources, data, environments, tools, AI, privacy, confidentiality, accessibility, safety and authority; and
 5. the providers and decision holders on whose competence, results or authorizations the arrangement depends.
@@ -74,7 +74,7 @@ For a class design, state the audience assumptions and capacity range. Before an
 
 #### HCD.7:4.2 - Allocate Contributions, Not Labels
 
-Make the allocation detailed enough to connect each needed contribution to its recipient and time of use.
+Start with the work for which the person or group needs support. Establish what they can already accomplish with the help allowed there. Where a contributor can remove a barrier to that work, allocate the access, time or specialist service it requires. Where a capability still needs to develop, arrange practice in the holder’s part of the work. A group can divide that work among its members when its undertaking permits. Match the evidence to whichever holder and support conditions the claim concerns.
 
 Separate choosing the development aim from obtaining or developing the subject Method, designing learning activities, explaining or demonstrating, giving feedback, supporting participation and providing the necessary conditions. Identify whose development is concerned and who holds the relevant choices. A difficulty in the subject Method needs subject work; additional encouragement or practice cannot settle it. HCE.Reference:4 connects these professional contributions, and Library.Reference:9.2 explains their place in the common arrangement of help.
 
@@ -159,7 +159,7 @@ The FoundationsProgramme class design has twelve participants, thirty-two ordina
 
 The total is `32 × 6.5 + 2 × 16 = 240` teacher hours. The costing allocation is 20 hours per participant. Individual-contact time depends on the scheduled work. For the arrangement to be enabled, both sixteen-hour peaks must be reserved and ordinary feedback must be deliverable before the next two-week block.
 
-With twenty-four participants, the original checking and conversation windows no longer fit. A larger group meeting leaves individual review capacity unchanged. The larger class needs more individual checking capacity, a division among competent providers, a revised promise or a later launch. Compare the feasible remedies if a choice is needed. The 240-hour total alone leaves the larger class unsupported.
+For twenty-four participants, work out which promised contributions each person must actually receive. If each of the twenty-four results needs fifteen separate assessor-minutes before the next block, checking requires six hours in the three-hour window. Extra group time cannot supply the missing individual feedback. When a single review can serve several people, establish which results it covers and whether each participant can use it in time. The programme total alone leaves the larger class’s peak demand open. Choose among additional capacity, a different arrangement or a revised offer as the evidence warrants.
 
 #### HCD.7:5.2 - Supply Both Sides of Peer Learning and the Required Assessment
 
@@ -209,7 +209,7 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. The comparison con
 | --- | --- | --- |
 | provider-label bias | “Teacher,” “mentor,” “community,” or “platform” is assumed to supply all functions. | Allocate contribution-specific competence, authority, timing, capacity, and constraints. |
 | aggregate-hours bias | A total or per-person quotient is treated as service availability. | Test feedback deadlines, concurrency, individual work, and peak periods. |
-| automation-free-capacity bias | AI assistance is counted without prompting, checking, correction, escalation, or fallback. | Put the human-check contribution and its workload in the allocation. |
+| automation-free-capacity bias | AI assistance is counted without preparing inputs, checking results or providing for failures. | Allocate the preparation, verification, correction and fallback the service needs. Count the person’s time when the required check or decision calls for their contribution. |
 | peer-substitution bias | Peer participation replaces independent or competent assessment. | State the peer's learning and support contributions and retain the required assessor result. |
 | access-by-account bias | A login, licence, or repository membership is treated as usable access. | Verify data, permissions, interface, timing, accessibility, and task compatibility. |
 | class-average bias | A class arrangement is assumed suitable for every participant. | Recheck personal task, participation, access, support, and accommodation conditions. |
@@ -225,7 +225,7 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. The comparison con
 - [ ] The capacity estimate includes the time needed for preparation, delivery, review, correction, coordination, resolving disagreements and fallback, together with competing demands.
 - [ ] Compare peak demand, concurrency, feedback deadlines and handoffs with provider availability in the relevant windows. Identify any demand the windows cannot cover.
 - [ ] Distinguish the functions needed from learners, providers, sources and tools, including who must make any independent judgement.
-- [ ] AI and tool contributions state permitted work, prohibited data or use, human checks, checking capacity, attribution, and fallback.
+- [ ] For AI or tool contributions, identify the permitted work, data restrictions, needed verification and its capacity, attribution and fallback. Establish who can perform any check reserved to a person.
 - [ ] Identify the help intended, permitted, available and received as needed for each claim about the arrangement or performance. For a performance claim, distinguish what the learner did jointly with another provider, what they did using permitted support and what they did independently.
 - [ ] A fallback satisfies the same relevant competence, access, capacity, timing, and authority conditions or is reported as unavailable.
 - [ ] A class-level arrangement retains personal-fit and participation questions for the named learner.
@@ -236,7 +236,7 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. The comparison con
 | Anti-pattern | Why it fails | Repair |
 | --- | --- | --- |
 | “We have 20 teacher hours per learner” | A costing allocation is mistaken for individual contact and peak capacity. | Reconstruct the actual shared, individual, preparation, checking, and final-week rows. |
-| “One meeting supports twice the class” | Individual checking and conversations grow even when group time does not. | Add competent capacity, divide the group, redesign the contribution, or delay. |
+| “One meeting supports twice the class” | Some contributions can be shared. Others are due to particular learners by a particular time. | Identify the promised work for the larger class. Compare the joint demand with available qualified capacity before relying on the new arrangement. |
 | “Any peer can supply the required assessment” | Peer status does not establish domain competence, calibration, independence or authority. | Qualify the provider for the assessment contribution. A peer may supply it when those conditions hold; otherwise retain the required assessor contribution and use peer work for learning and support. |
 | “The platform gives feedback” | The provider, information content, latency, and correction opportunity are hidden. | Name the exact feedback contribution and its evidence, timing, and recipient. |
 | “AI saves the teacher's time” | Prompting, checking, correction, data limits, and escalations are omitted. | Compare the complete human-plus-tool workload and preserve consequential judgement. |

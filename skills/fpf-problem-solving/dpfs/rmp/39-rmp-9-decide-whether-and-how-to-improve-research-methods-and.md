@@ -93,7 +93,7 @@ Use the standards of criticism appropriate to a qualitative, historical or mixed
 
 State what practitioners retain or change and the conditions that support that conclusion. Distinguish a revision of what the Method requires from a correction to its description or software and from a local deviation. For a changed Method, assess whether it forms a variant and which earlier evidence still applies.
 
-When introducing a selected change, supply the missing instructions, capability, tools or other support. Introduce it under the supported conditions and keep the provenance and means of recovery needed by users. Distinguish notification, actual use and observed effects.
+When introducing a selected change, establish who will carry out the revised work with what assistance. Provide the instructions, tools, access or preparation that the work needs, and introduce the change under the conditions its evidence supports. If the question is whether a holder has gained a capability, compare what that holder could do before and can do now under the conditions that matter. For joint work, establish how the participants’ contributions can be combined when required. Existing evidence can settle the question. [FPF A.2.2:3](../../sections/05-part-a---kernel-architecture-cluster/10-a-2-2---system-capability-conditions-measures-and-fit.md#a223---positive-solution) gives the method for judging an ability at the intended scope. Keep the provenance and means of recovery needed by users. Distinguish notification, actual use and observed effects.
 
 A team with the necessary capability can make a small correction directly. A wider change may call for preparation or follow-up. Select a later observation when its attainable result could reveal an important failure, clarify an effect or affect a decision.
 
@@ -144,6 +144,8 @@ Clarify with the commissioner whether agreement was proposed as a way to improve
 #### RMP.9:5.4 - Correct source extraction without certifying a new tool
 
 An OCR tool repeatedly omits marginal dates from a historical collection. Compare the extraction with the available source images, correct the affected transcription and chronology, and retain the supporting source for the interpretation. The team can retain its historical Method while correcting the extraction.
+
+Suppose a contractor restored the missing dates. The archive can return the corrected chronology. For the next collection, the archive may rely on that service if the agreement covers the work and the service can supply it in time. If its own shift must recover the dates after the contract ends, examine what that shift can do with the images, tools and expertise it will retain. Earlier work under those conditions can establish the ability. Checking a date already marked by the contractor establishes a narrower contribution than finding the relevant marks across the new pages.
 
 For a replacement tool and a different handwriting collection, ask whether evidence of extraction fidelity already covers the intended use. If fidelity remains uncertain, compare the tools when access, expertise and effort justify the test. Speed measures throughput. When adequate evidence of the marginal dates is unavailable, qualify the affected part of the argument.
 

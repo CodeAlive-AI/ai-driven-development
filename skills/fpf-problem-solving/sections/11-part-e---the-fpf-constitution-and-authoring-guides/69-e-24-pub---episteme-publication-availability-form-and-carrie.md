@@ -10,7 +10,7 @@ Use this pattern when an ontic or another entity is encountered through a card, 
 
 **Primary working reader.** A practitioner or FPF author distinguishing a claim-bearing episteme, a `U.View`, its expression, a reusable publication form, a carrier or an exact publication occurrence. Open representation methods when the expression also supports reasoning through a correspondence to its subject.
 
-**First useful move.** Put the intended receiving use in the bounded-use declaration. Then say which episteme is available, to which declared audience, for which bounded use, through which expression and carrier.
+**First useful move.** Ask what the reader needs to obtain and what they will do with it. For a publication being designed, respect the specified edition, audience and conditions, and use the reader’s work to choose the claims, expression and carrier where those choices remain open. For an existing publication, recover its declared use and the routes actually available. Match those conditions to the reader’s task when its suitability is at issue.
 
 Name a reusable form when its constraints matter. Cite a separate plan, decision question or `U.WorkPlan` only when it independently exists and changes the publication claim. Distinguish availability from a claim of actual access or use. When a team needs access, decide who needs to do what, by when. Apply §4.2.1 when different routes or conditions could change that answer.
 
@@ -69,7 +69,9 @@ Start with this readable publication statement:
 
 > Publication occurrence `<P>` makes episteme `<E>` available to the audience identified by `<A>` for the use bounded by `<U>`, through expression `<X>` recoverable from carrier `<C>`.
 
-The sentence names the five participant meanings without asking the user to fill a record. If it supplies the distinction needed by the receiving use, stop. When the selected expression follows reusable form F and that conformance matters, name F separately. For disputed availability, identity or change, recover the predicates below.
+Use that statement to identify a publication occurrence. When designing a publication, follow each needed claim to the point where its recipient will use it. If several claims are needed together, establish how the recipient can recover their connection and the conditions under which they apply. Their sources can remain separate. Test whether a permitted change of carrier, audience or situation could leave the declared publication available while the reader loses a distinction that affects the work. Retain the existing arrangement when it already supports the intended use.
+
+When the selected expression follows reusable form F and that conformance matters, name F separately. For disputed availability, identity or change, recover the predicates below.
 
 #### E.24.PUB:4.1 - Identify the publication occurrence
 
@@ -138,7 +140,7 @@ Missing or stale evidence leaves current obtaining unresolved; it does not prove
 
 Rendering, printing, uploading, indexing, or granting access are activities separate from the publication occurrence.
 
-When a precise performed-Work claim is independently current, recover each actual performer through A.13 and let A.15.1 independently admit the dated Work; add F.6 only when that claim or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. F.6 identifies neither assignment nor performer, and missing or failed F.6 alone leaves independently admitted Work intact.
+When a precise performed-Work claim is independently current, establish under A.13 the System or Systems to which the work is attributed at the stated scale and let A.15.1 independently admit the dated Work; add F.6 only when that claim or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. F.6 identifies neither assignment nor performer, and missing or failed F.6 alone leaves independently admitted Work intact.
 
 Follow A.6.1 for an operation binding, C.11 for a `ChoiceResult`, or the exact access, reliance, or use relation without reproducing its test here. The activity and any result remain separate from the publication-relation participants.
 
@@ -223,7 +225,7 @@ Use the smallest statement that supports the current work:
 
 If a crew needs an operating limit from a cited instruction, an accessible route to the relevant passage or sufficient source-attributed content on its offline card can each support the decision. A locator can finish a locating task. Check that the needed condition can be recovered in time when the task is to decide how to operate.
 
-Do not materialize all five levels as a standing publication card. Stop as soon as the receiving use can distinguish the operative object and relation.
+Stop when the grounds settle the publication question you were asked. Identifying the object and relation can finish a classification. For the design of a publication, give the arrangement and the grounds on which it will serve the intended work. For a question about actual availability, establish the relevant route or coverage under §4.2.1.
 
 #### E.24.PUB:4.4 - Classify the encountered form by current use
 
@@ -249,7 +251,7 @@ The answers can be jointly positive because they concern different objects or re
 - a representation stands in an identified correspondence to its subject; C.29 governs the mathematical-lens branch;
 - a carrier bears an expression through its actual state or realization;
 - a publication occurrence makes one selected episteme edition available;
-- a system may perform publication activity and may later access or rely on the published episteme, but those are separate claims under their direct patterns; publication availability establishes none of them;
+- availability can fulfil a commission to provide access. Where the terms make authorized publication an operative notification or the act of putting a decision into effect, establish those terms and the qualifying publication. An individual’s actual access, agreement, later use and subsequent Work need grounds appropriate to those claims;
 
 A designator designates and a governed reference resolves to a referent. Neither operation publishes, bears, represents, or makes the subject-side predicate obtain.
 
@@ -257,7 +259,9 @@ A designator designates and a governed reference resolves to a referent. Neither
 
 In a pattern about an ontic, structure, architecture, characteristic space, method, or another subject, explain the subject's identity, relations, practical problem, and solution before publication details. Add E.24.PUB only when the receiving use depends on distinguishing the description, selected edition, form, carrier, audience, or bounded use.
 
-An engineer checking the clearance of Pump #37 is asking about the pump. If the question becomes what its inspection card specifies, the card episteme becomes the subject. A verified reading of the card answers the second question. Using its value for the installed pump requires grounds that the measurement applies to that pump at the relevant time. A change of holonic scale requires a whole–part relation, such as the pump and its impeller. To compare levels of model abstraction, use B.5.MR on models of the same subject under the same inquiry and interpretation. If a summary drops a constraint, check which answers that change permits and whether the user relied on their exclusion. Publication of the card remains a separate relation.
+To use a publication as grounds for a conclusion about its subject, identify which claim the expression conveys and what makes that claim apply to the subject of the question. For a conclusion spanning scales, trace each required inference to the whole or constituents it concerns. The same published model can be used at several composition scales only where its assumptions and distinctions support the inference at those scales.
+
+For example, an engineer checking the clearance of Pump #37 is asking about the pump. If the question becomes what its inspection card specifies, the card episteme becomes the subject. A verified reading of the card answers the second question. Using its value for the installed pump requires grounds that the measurement applies to that pump at the relevant time. A change of holonic scale requires a whole–part relation, such as the pump and its impeller. To compare levels of model abstraction, use B.5.MR on models of the same subject under the same inquiry and interpretation. If a summary drops a constraint, check which answers that change permits and whether the user relied on their exclusion. Publication of the card remains a separate relation.
 
 ### E.24.PUB:5 - Archetypal Grounding
 
@@ -297,9 +301,9 @@ An E.24 pattern host contains an expression X of an ontic-description episteme a
 
 One instruction edition is available to a training group for studying a method. That `EpistemePublicationRelation` occurrence establishes availability to the declared audience for that bounded use; it establishes neither that anyone read the instruction nor that adjustment, inspection, acceptance, or release work occurred. The same availability alone does not support an acceptance commission's choice about releasing one named lot.
 
-If a commission later makes a release choice and that stronger claim is current, recover each actual choice-work performer through A.13 and let A.15.1 independently admit any dated choice Work.
+If a commission decides on a release, establish the body’s authority and action under its applicable rule. A record of the joint decision can suffice even if individual votes are unknown. To claim personal assent, unanimity, independent judgements or a particular member’s choice, establish the corresponding contributions. For dated choice Work use A.13 and A.15.1 at the scale claimed.
 
-For that choice Work, add F.6 only when the choice account or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and missing or failed F.6 alone leaves independently admitted choice Work intact.
+For that choice Work, add F.6 only when the choice account or receiving use expressly consumes precise assignment-bound attribution through the obtaining A.13 assignment for the particular performer and Work; F.6 identifies neither assignment nor performer, and missing or failed F.6 alone leaves independently admitted choice Work intact.
 
 Identify the resulting `ChoiceResult` separately under C.11. Keep both Work and result separate from the publication occurrence; the publication statement need not carry their identity, staffing, or omission rules.
 
@@ -314,22 +318,22 @@ When the later claim says that the published instruction was actually used, stat
 - **Semio:** designation, expression, representation, bearing, and publication availability use different predicates.
 - **Arch:** keep each subject claim with its applicable pattern; E.24.PUB defines only the neighboring publication architecture.
 - **Prag:** progressive explicitness stops at the first statement sufficient for the receiving use.
-- **Did:** ordinary first use stops at one readable sentence; the cases show which object or relation changes when a publication is revised.
+- **Did:** a readable sentence can identify a publication. For a design or availability question, show how the reader can use the chosen expression and carrier under the conditions at issue.
 
 ### E.24.PUB:7 - Conformance Checklist
 
 | Check | Observable conformance condition |
 | --- | --- |
-| `CC-E24PUB-1` | The bounded-use declaration names the intended receiving use. A separate plan, decision question, or `U.WorkPlan` is cited only when it independently exists and changes the publication claim. The publication statement names the selected edition, audience, bounded use, expression and carrier; it establishes no actual access, reliance, use, Work, or result. Any independently current stronger claim is routed to its direct pattern without reproducing that pattern's test here. |
+| `CC-E24PUB-1` | The bounded-use declaration names the intended receiving use. A separate plan, decision question, or `U.WorkPlan` is cited only when it independently exists and changes the publication claim. The publication statement names the selected edition, audience, bounded use, expression and carrier; establishing availability can complete a commission for that result. For any claimed constitutive effect, establish the authorized act and applicable rule. Ground actual access, reliance or subsequent Work separately. Any independently current stronger claim is routed to its direct pattern without reproducing that pattern's test here. |
 | `CC-E24PUB-2` | The selected episteme edition, audience declaration, bounded-use declaration, particular expression and carrier are independently identified; an optional reusable form has its own rules and conformance predicate. |
 | `CC-E24PUB-3` | `EpistemePublicationRelation` has the five exact participant meanings, the availability predicate, and the maximal-continuous-occurrence identity rule stated in section 4.1. |
 | `CC-E24PUB-4` | Exact expression and bearing predicates are recoverable when the receiving use depends on them. A selected form has its conformance predicate. Form-mediated availability uses the same X as witness for expression, bearing and conformance; for a broader claim, the permitted routes cover the promised readers, times and work under §4.2.1. |
 | `CC-E24PUB-5` | Plain `published episteme` states publication participation. A receiving classification use has its C.3.2 basis; public-kind admission follows E.24.UK. The availability-only use retains the rejection `E24UK-NAR-EPUB-01`. |
 | `CC-E24PUB-6` | A `U.View` remains a same-individual dependent specialization of `U.Episteme` under an obtaining E.17.0 conformance relation; graphical appearance and A.6.3 construction alone supply no membership. |
 | `CC-E24PUB-7` | Representation correspondence is stated for the applicable operation; C.29 is used for its mathematical branch. Expression elements, reusable-form rules and subject-side objects retain their own identities. |
-| `CC-E24PUB-8` | Publication activity, actual access, reliance, evidence, decision, performed Work, operation binding, and result remain under their direct patterns. E.24.PUB checks only that publication availability is not used as proof of those stronger claims. |
+| `CC-E24PUB-8` | Publication activity, actual access, reliance, evidence, decision, performed Work, operation binding, and result remain under their direct patterns. An authorized publication can perform the notification or put a decision into effect when the governing terms so provide. For stronger claims about personal assent, actual access, reliance or execution, establish the additional grounds they require. |
 | `CC-E24PUB-9` | A changed episteme, expression, form, carrier, audience, or bounded use leads to the smallest affected object or relation rather than a whole-stack rewrite. |
-| `CC-E24PUB-10` | Ordinary use stops at the readable sentence when the receiving use needs no fuller relation detail. |
+| `CC-E24PUB-10` | The account answers the publication question at the scope asked. One supported statement can suffice. A design for a wider use gives the grounds for the reader's access to and recovery of the needed content under those conditions. |
 
 ### E.24.PUB:8 - Common Misuses and Repairs
 

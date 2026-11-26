@@ -134,7 +134,7 @@ Invite reports that can change the advice: an unlike case, missing input, succes
 
 Revisit the affected entry when evidence, tools, practice conditions or available support change. Preserve an older variant if another use still needs it. Retire or qualify misleading guidance and inform the people known to rely on the affected claim.
 
-If no one can maintain a resource that requires continued support, reduce its promise, obtain a successor or withdraw that use through CB.11. A small resource with a clear limit may remain useful; an unsupported promise of ongoing advice will not.
+If no one can maintain a resource that requires continued support, look for another maintainer or use CB.11 to settle how that use ends and which obligations survive. A small resource with a clear limit may remain useful; an unsupported promise of ongoing advice will not.
 
 ### CB.14:5 - Archetypal Grounding
 

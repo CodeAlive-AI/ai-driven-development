@@ -14,7 +14,7 @@ Use this pattern when a policy, approval, permit, system-role rule, boundary cla
 - whether checked actual work supports a `NonViolationFinding@Context`; and
 - whether an incompatible current grant and norm require `PermissionNormConflictFinding@Context`.
 
-First select the result needed now. Recover the inputs required by its declaration in §§4.2–4.6 and establish that result under its own rule. Do not infer a different result from the selected one.
+First establish what makes the action permissible for this beneficiary, scope and time. A standing rule may permit the action directly when its conditions hold. Apply that rule to the case. For a grant already issued to a class of beneficiaries, identify that grant and establish that the present beneficiary qualifies. A positive answer by either route can settle the practical question without issuing a fresh permit. An instrument can also grant one right to several named parties together. Apply its terms to their joint action (§4.2). Use §§4.3–4.6 for a grant, exercise or finding that satisfies the corresponding declaration.
 
 **Not this pattern when.** Use `A.2.8` for one actual bearer's obligation, recommendation-as-duty, or prohibition; `A.2.9` for the communicative work that institutes or revokes a grant; `A.6.B` for L/A/D/E classification; `A.15.5` for work-entry readiness; `A.21` for gate decisions; and `A.15.1` for the identity and result of performed work.
 
@@ -24,7 +24,7 @@ When the account asserts a particular dated Work occurrence, identify its perfor
 
 Permission-looking language often compresses unlike values. “No rule forbids it” may be an incomplete search result. “The permit allows it” may refer to a document, an issuing act, or an enduring relation. “We used the permit” may mean only that a badge was visible, while no matching work occurred. A green gate can also look as if it defeated a current prohibition.
 
-The concern is the smallest permission result needed for one beneficiary, action specification, normative-frame edition, ClaimScope, intended use, and window. The act, permit episteme, publication carrier, evidence relation, admissibility predicate, readiness relation, gate decision, actual Work, and work result remain distinct and are handled under their respective subject patterns.
+Select the permission question for the beneficiary, action specification, normative-frame edition, ClaimScope, intended use and window. An affirmative rule and the facts that bring a beneficiary within it can establish a right directly. A search finding no prohibition supplies a different ground. The act, permit episteme, publication carrier, evidence relation, admissibility predicate, readiness relation, gate decision, actual Work, and work result remain distinct and are handled under their respective subject patterns.
 
 ### A.2.8.PER:2 - Problem
 
@@ -50,12 +50,12 @@ A conforming account must make weak and strong permission different, keep grant 
 Use the object warranted by the current claim:
 
 - `NonProhibitionFinding@Context` is a frame-relative episteme returned before action when a sufficiently complete current normative frame contains no applicable prohibition.
-- `GrantedPermissionRelation@Context` is an enduring strong permission instituted under an exact policy.
+- `GrantedPermissionRelation@Context` is an enduring strong permission instituted by the act or combination of acts an exact policy requires. An entitlement conferred directly by a standing rule can be established from that rule and the case facts without a claim about a separate grant.
 - `PermissionExerciseRelation@Context` connects actual dated work to one obtaining grant occurrence when action and beneficiary eligibility match.
 - `NonViolationFinding@Context` is a frame-relative episteme about actual work that instantiates no applicable prohibition in the checked frame.
 - `PermissionNormConflictFinding@Context` is an episteme exposing an incompatible current grant and prohibition or commitment over matching content, scope, and window.
 
-Absence of any one object does not imply another. In particular, no grant is inferred from a weak finding, no exercise is inferred from a grant, and work outside a grant is not called a violation of that grant.
+For an entitlement conferred directly by a standing rule, establish the applicable rule and the case facts. If the question concerns exercise, check who acted and whether the actual action met its conditions. When another applicable norm gives an incompatible answer, apply the governing precedence rule or an authorized resolution. Where neither settles the conflict, the answer for that use remains open. The grant-specific declarations below concern a permission instituted by an act. A finding of non-prohibition does not institute a grant. A grant alone leaves its exercise open. To establish a violation, identify the norm the action breached.
 
 #### A.2.8.PER:4.2 - Use the closed beneficiary reference family
 
@@ -73,7 +73,7 @@ The entity designated by the grant is its beneficiary. Apply the exercise-eligib
 - `beneficiarySystemRoleKindRef` names one exact local system-role kind; the policy states which current assignments to that kind make an actual performer eligible.
 - `PartyRef` covers work only when its exact performer or on-behalf-of relation satisfies the policy. Shared naming or organizational membership is insufficient.
 
-This is a closed ref union over admitted `U.Entity` values, not a new U-kind. A materially different beneficiary meaning requires a separate decision under the applicable subject pattern.
+This closed reference union describes one beneficiary. An instrument can instead grant one right to several named parties jointly. Apply its conditions to the named parties and to the action required of them together. Use a common `PartyRef` when the instrument designates that party. Naming several parties in one instrument does not by itself entitle each to act alone. The applicable subject pattern governs a beneficiary meaning outside this union.
 
 #### A.2.8.PER:4.3 - Record weak permission and non-violation as findings
 
@@ -94,7 +94,8 @@ NonProhibitionFinding@Context <: U.Episteme
 NonViolationFinding@Context <: U.Episteme
   workRef: WorkRef
   performerSystemRoleAssignmentRefs?: set<U.RelationRef constrained to U.SystemRoleAssignment> # when the checked norm uses precise assignment attribution
-  onBehalfOfRelationOccurrenceRef?: U.RelationRef constrained to the direct on-behalf-of relation kind
+  onBehalfOfRelationOccurrenceRef?: U.RelationRef constrained to the direct on-behalf-of relation kind # one mandate covering the relevant contribution
+  representedContributions?: contributing performers, each linked to its part, the party represented and its applicable on-behalf-of relation(s)
   normativeFrameRef: U.EpistemeRef
   frameCurrentnessResultRef: U.EpistemeRef
   frameCompletenessForUseResultRef: U.EpistemeRef
@@ -110,7 +111,7 @@ NonViolationFinding@Context <: U.Episteme
 
 Every `ClaimAddress` in this pattern means the reusable `C.2.1 ClaimAddress`: an exact episteme-edition reference plus an intrinsic claim identity declared by that edition's ClaimGraph. A heading, row number, file location, or printed token is insufficient.
 
-For `NonViolationFinding@Context`, recover the performer Systems from the independently admitted Work. Cite each covering assignment occurrence and its declared species when the checked norm uses that assignment attribution. If the norm instead turns on Work done for a `PartyRef`, cite the obtaining on-behalf-of relation defined in its pattern. These are case facts consumed by the evaluation. Omit unused assignment or on-behalf-of references. A finding need not identify a separate dated evaluation Work unless the account asserts that occurrence; its frame, completeness, currentness and checked-prohibition requirements apply.
+For a `NonViolationFinding@Context`, use the facts on which the checked prohibition turns. If it concerns representation, link each relevant contribution to the performer, the party represented and the independently established mandate covering that part. One on-behalf-of relation suffices when it covers the claim. A performer can act for different parties under different mandates. Cite a covering assignment and its declared species where the norm requires assignment-bound attribution. If only the conduct or resulting state matters, the evidence can establish that fact without identifying a representative. The Work under examination and the currentness and sufficient completeness of the frame still need grounds. Identify a separate evaluation Work when its occurrence is also asserted.
 
 #### A.2.8.PER:4.4 - Declare the strong granted-permission relation
 
@@ -130,21 +131,24 @@ RelationSignature:
 semanticDirection: PermissionBeneficiarySlot -> PermittedActionSpecificationSlot
 
 RelationOccurrenceGroundAndQualifiers:
-  institutingSpeechActRef: SpeechActRef
-  grantorSystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment
+  // Use the direct fields for one act under one granting assignment, or the grouped form.
+  ( institutingSpeechActRef: SpeechActRef,
+    grantorSystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment
+  | institutingActs: non-empty set of SpeechActRef, each with its granting contributions under A.2.9:4.1–4.5 )
   grantValidityPolicyRef: U.EpistemeRef
   scope: U.ClaimScope
   validityWindow: QualificationWindowPolicy
-  revocationOrSupersessionRef?: SpeechActRef
+  revocationOrSupersessionRef?: SpeechActRef       // one act sufficient under the policy
+  revocationOrSupersessionActs?: set<SpeechActRef>  // acts required together, when applicable
 ```
 
-The beneficiary and permitted-action specification are participants. The grantor system-role assignment, instituting act, policy, ClaimScope, validity window, and revocation are constructive grounds or qualifiers.
+The beneficiary and permitted-action specification are participants. The instituting acts, granting capacities and authority, policy, ClaimScope, validity window and any effective revocation supply grounds or qualifiers.
 
-The relation begins only when an admitted holder `U.System` performs a `U.SpeechAct` under the exact `grantorSystemRoleAssignmentRef`, the act satisfies the current policy's grant-validity predicate, and it institutes permission for the named participants. The assignment's `HolderSystemSlot` resolves to that system: the system performs the act, while the assignment supplies only the holder and assigned-kind fact used by the policy. Any authority claim required by the policy obtains independently.
+Apply the current grant-validity rule to the actual communication. If one delegate can grant permission, establish the act and the mandate covering the delegated decision. If several participants issue one declaration, recover their joint performance under A.2.9. If distinct approvals are required together, identify each act and establish that their contents, order where material, scopes and times meet the same rule. Keep each required granting assignment and its holder with that holder’s act, including several assignments of one holder when relied on. Establish the authority each contribution needs. A record that merely transmits the decisions can supply evidence about them. Its sender is a grantor only if the rule gives that sender an effective granting contribution.
 
 The relation obtains while beneficiary applicability, policy continuation, scope, and window hold and no valid revocation or supersession ends it.
 
-One occurrence is identified by the instituting speech-act occurrence, exact beneficiary ref and ref kind, action-specification edition, policy edition, ClaimScope, and effective interval. Beneficiary change, renewal, materially changed action specification, non-carried policy edition, or revocation ends or splits the occurrence. A policy edition preserves it only through an explicit satisfied carry-forward rule.
+Identify an occurrence from its policy-required instituting act or combination, exact beneficiary reference and reference kind, action-specification edition, policy edition, ClaimScope and effective interval. Use one act reference for a joint act even if several performers took part. The permission starts when all conditions for its effectiveness hold. Beneficiary change, renewal, materially changed action specification, a non-carried policy edition or effective revocation ends or splits the occurrence. A policy edition preserves it through an explicit satisfied carry-forward rule. Apply the policy's own conditions for revocation, including any required combination of acts.
 
 #### A.2.8.PER:4.5 - Declare actual exercise
 
@@ -165,19 +169,21 @@ RelationSignature:
 semanticDirection: ExercisingWorkSlot -> GrantedPermissionOccurrenceSlot
 
 RelationOccurrenceQualifiers:
+  // For a single exercising contribution, use its applicable direct reference.
   beneficiarySystemRoleAssignmentRef?: U.RelationRef constrained to U.SystemRoleAssignment
   onBehalfOfRelationOccurrenceRef?: U.RelationRef constrained to the direct on-behalf-of relation kind
+  exercisingContributions?: qualifying performers, each with its part in the permitted action and the eligibility grounds the policy requires
   exerciseScope: U.ClaimScope
   exerciseInterval: QualificationWindowPolicy
 ```
 
-Decide exercise from two questions about the existing objects: **did this dated Work instantiate the grant's permitted-action specification, and did its actual performer satisfy the grant's beneficiary branch?**
+Decide exercise from two questions. Did this dated Work instantiate the permitted action? Did the contribution or combination that counts as exercising the permission meet its beneficiary conditions?
 
-For a `beneficiarySystemRoleAssignmentRef` branch, the named assignment must cover the Work and have that performer as holder. For a `beneficiarySystemRoleKindRef` branch, `beneficiarySystemRoleAssignmentRef` names the exact covering assignment whose declaration-local kind slot contains that kind and which satisfies the policy's eligibility rule for that kind. For a `beneficiaryPartyRef` branch, the performer must be that party or `onBehalfOfRelationOccurrenceRef` must cite the already obtaining relation whose predicate is defined by its subject pattern and whose use is licensed by the policy. If either question fails, this exercise relation does not obtain.
+For a `beneficiarySystemRoleAssignmentRef` grant, establish that the named assignment covers the relevant contribution and that its holder performed it. For a `beneficiarySystemRoleKindRef` grant, establish the eligible assignment to that kind for each contribution that the rule requires. For a `beneficiaryPartyRef` grant, establish action by the party or the policy-recognized on-behalf-of relation for its representative. Use the direct references for a single contribution. For joint exercise, group each exercising contribution with its performer, action and qualifying capacity. A contributor providing technical support can enable the exercise without needing the entitlement to exercise the right personally.
 
-The match and eligibility are direct obtaining predicates over the Work, grant, action specification, performer, and cited assignment or on-behalf-of relation. If a receiving assurance or audit use needs a separately recorded evaluation or evidence item, identify that item through the applicable evaluation or evidence-use relation; do not mint a placeholder episteme merely to fill this relation.
+Test the action and beneficiary predicates over this Work, grant, action specification and the relevant performers and capacities. If either predicate fails, the exercise relation does not obtain. Cite a separate evaluation or evidence item when an assurance use requires it.
 
-The exercise relation obtains only when those two predicates hold, the grant obtains throughout the exercise interval, and the work remains in scope. The work is a satisfier of permitted action content. Judge any obligation-satisfaction or discharge claim under the separate evaluation or compliance rule (A.2.8:4.6). The work consumes the grant only when the named policy explicitly makes it single-use or quota-bound.
+If an action requires several distinct grants, check coverage under each and the rule requiring them together. Each exercise relation still refers to one grant. The exercise relation obtains only when those two predicates hold, the grant obtains throughout the exercise interval, and the work remains in scope. The work is a satisfier of permitted action content. Judge any obligation-satisfaction or discharge claim under the separate evaluation or compliance rule (A.2.8:4.6). The work consumes the grant only when the named policy explicitly makes it single-use or quota-bound.
 
 Non-exercise leaves a grant unused; it continues while the §4.4 conditions hold. Neither non-exercise nor exercise establishes `NonViolationFinding@Context` without the separate checked-frame evaluation. Work outside the action specification, beneficiary eligibility, scope or window does not exercise the grant; any further consequence follows from the applicable prohibition, commitment, admissibility or Work-related predicate.
 
@@ -192,10 +198,12 @@ PermissionConflictResolutionResultRef ::= U.EpistemeRef
 PermissionConflictResolutionResult@Context <: U.Episteme
   conflictFindingRef: U.EpistemeRef
   governingPrecedencePolicyRef: U.EpistemeRef
-  resolutionWorkRef: WorkRef
-  deciderSystemRef: U.EntityRef
-  deciderSystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment
-  decisionAuthorityRelationOccurrenceRef: U.RelationRef constrained to the direct decision-authority relation kind
+  // Direct fields for one decision by one authorized holder, or the grouped form.
+  ( resolutionWorkRef: WorkRef,
+    deciderSystemRef: U.EntityRef,
+    deciderSystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment,
+    decisionAuthorityRelationOccurrenceRef: U.RelationRef constrained to the direct decision-authority relation kind
+  | resolutionContributions: decision Work occurrences, each with its deciding performers, relied-on assignments and authority relations as required by the policy )
   selectedGrantOccurrenceRef?: U.RelationRef constrained to GrantedPermissionRelation@Context
   selectedNormClaimAddress?: ClaimAddress
   effectiveScope: U.ClaimScope
@@ -210,7 +218,7 @@ PermissionNormConflictFinding@Context <: U.Episteme
   governingPrecedencePolicyRef?: U.EpistemeRef
   applicablePrecedenceRuleAddress?: ClaimAddress
   decisionAuthorityRelationOccurrenceRef?: U.RelationRef constrained to the direct decision-authority relation kind
-  resolutionWorkRef?: WorkRef
+  resolutionWorkRef?: WorkRef   // optional single decision detail; the resolution result carries any joint basis
   resolutionResultRef?: PermissionConflictResolutionResultRef
   blockedWorkOrRelianceRef: U.EntityRef
   disposition: unresolved | settledByApplicableRule | settledByDecisionResult
@@ -224,9 +232,9 @@ An unresolved finding may omit `governingPrecedencePolicyRef` when no governing 
 Resolve the conflict through exactly one of two branches:
 
 1. **The current policy already decides.** `applicablePrecedenceRuleAddress` cites the policy claim whose stated conditions match this beneficiary, action, scope, and window. Set `settledByApplicableRule` only when that rule itself selects which claim governs the blocked use.
-2. **A decision is required.** Name the admitted `U.System` that decides, the covering assignment under which it performs the dated `resolutionWorkRef`, and the independently obtaining authority relation whose predicate is defined by its subject pattern and which authorizes this decision. The direct result relation for that decision must connect the Work to a current `PermissionConflictResolutionResult@Context` selecting either the grant occurrence or the conflicting norm claim for the stated scope/window.
+2. **A decision is required.** Recover the decision or combination that the policy empowers to settle this conflict. Establish the deciding participants, their actual decision Work, and the capacities and mandates needed for each contribution. One authorised body may make one decision. Where distinct approvals are jointly required, establish each and their combination on the disputed use. The grounded result of the required Work must select the grant or the conflicting norm for the stated scope and window.
 
-`PermissionConflictResolutionResult@Context` is the decision result for this conflict. Exactly one of `selectedGrantOccurrenceRef` or `selectedNormClaimAddress` is filled. Its `deciderSystemRoleAssignmentRef` must cover `resolutionWorkRef` and have `deciderSystemRef` as holder; `decisionAuthorityRelationOccurrenceRef` must independently authorize that decision.
+`PermissionConflictResolutionResult@Context` records that decision result. Exactly one of `selectedGrantOccurrenceRef` or `selectedNormClaimAddress` is filled. In the direct form, the named assignment must cover the decision Work and have the deciding system as holder. Establish the authority to make that decision independently. In the grouped form, associate each contribution with its actual Work and authority. Check that all the policy’s decision conditions obtain before using the combined result.
 
 If no policy rule decides and no such current result exists, the disposition remains `unresolved`, even when a responsible office or system-role kind is named. Permit text, readiness, or a passing gate does not defeat the prohibition.
 
@@ -234,13 +242,13 @@ If no policy rule decides and no such current result exists, the disposition rem
 
 | Neighboring object | Handshake |
 |---|---|
-| Grant or revoke act | An admitted holder `U.System` performs the grant-instituting `A.2.9 U.SpeechAct` under the exact grantor system-role assignment, and `institutes.permissions` cites the obtaining grant occurrence. A revoking `U.SpeechAct` is cited through `revocationOrSupersessionRef` and ends the grant only under the policy's revocation conditions. Establish each act's performer and any required assignment attribution or authority under `A.2.9` and the applicable policy; the act and grant retain separate identities. |
+| Grant or revoke act | Use A.2.9 for each actual communicative Work and any assignment-bound attribution. A grant can require one declaration by several participants or several distinct approvals. Cite the separately obtaining grant in the applicable `institutes.permissions` entry when the rule-required combination is complete. Establish revocation from its own policy conditions. |
 | Permit episteme and carrier | Use `C.2.1` for claims about the permission, `E.17` for a source-backed publication face, `G.11` for source currentness and publication refresh, and `A.10` for evidence used in reliance. Use `E.24.PUB` when the publication occurrence, form, or carrier identity matters. |
 | Duty or prohibition | `A.2.8 U.Commitment`; permission remains outside its modality family. |
 | Boundary claim or entry predicate | `A.6.B` classifies the claim; an `A-*` predicate may consume a separately established current permission result. |
 | Work plan and readiness | `A.15.2` is the pattern for the `U.WorkPlan`; `A.15.5` may cite a separately established permission/conflict result as one readiness input. |
 | Gate decision | Use `A.21` for a gate outcome, citing the separate current grant or conflict result whenever its profile requires one. |
-| Work and result | identify the dated Work under `A.15.1`. Exercise requires the direct relation above. Claims of capability, readiness, safety, success, or result quality need their own predicates. |
+| Work and result | Identify the dated Work under `A.15.1`. For an entitlement under a standing rule, establish who qualifies and whether the action met the rule. For a right conferred by an instrument, apply its scope, interval and conditions to what the named beneficiary or joint beneficiaries did. Use the §4.5 exercise relation for a grant represented under §4.4. Capability, readiness, safety, success and result quality require their own grounds. |
 
 ### A.2.8.PER:5 - Archetypal Grounding
 
@@ -253,6 +261,8 @@ If service access is claimed, cite its domain access predicate and participants;
 `PlantCalibrationTechnicianAssignment` is another declared species. Occurrence `Tech-17@Shift-B` has admitted technician System `Tech-17` as holder and `MaintenanceTechnicianSystemRole` as assigned-kind value. `Tech-17` performs dated `CalibrationWork-17B` under that assignment. The Work instantiates `CalibrationProcedure-v3` within the grant's zone, window, and scope, so the action-match predicate holds. The assignment covers the Work and satisfies the policy's eligibility rule for that kind, so the beneficiary predicate holds.
 
 `CalibrationExercise-17B : PermissionExerciseRelation@Context` therefore connects `CalibrationWork-17B` to `MaintenanceCalibrationGrant-2026-07-19`, cites `beneficiarySystemRoleAssignmentRef=Tech-17@Shift-B`, and states the Work interval and scope. The assignments supply holder and assigned-kind facts for the grant and Work attribution; any required authority relation obtains independently. The grant remains current for the rest of the window because the policy is not single-use. Claims about obligation, readiness, capability, gate passage, a safe result, or successful calibration need their own grounds.
+
+Suppose instead that an archive and a foundation each control a right needed to exhibit the same recording. Their rule requires both approvals for this exhibition. An archive officer forwarding the foundation’s signed approval can establish receipt of that approval. To open the exhibition on this basis, establish the archive’s approval too, for the same edition, use and period. If both parties had empowered one delegate to authorize this exhibition, that delegate’s covered decision could suffice. A technician mounting the projector does not exercise either party’s granting power.
 
 **Weak finding.** A policy reviewer checks a named, current, sufficiently complete plant-access frame and finds no prohibition applicable to the exact system-role kind, action specification, zone, and window. The result is `NonProhibitionFinding@Context(result=nonProhibited)`, not an instituted grant. If the emergency-policy register cannot be checked, the result is `unresolved`.
 
@@ -275,13 +285,13 @@ The chief bias is document-and-display authority: a readable permit, badge, poli
 
 | ID | Check |
 |---|---|
-| `CC-A2.8.PER-1` | The current result is exactly `NonProhibitionFinding@Context`, `GrantedPermissionRelation@Context`, `PermissionExerciseRelation@Context`, `NonViolationFinding@Context`, or `PermissionNormConflictFinding@Context`. |
-| `CC-A2.8.PER-2` | Beneficiary selects exactly one of `beneficiarySystemRoleKindRef : U.KindRef`, `beneficiarySystemRoleAssignmentRef : U.RelationRef constrained to U.SystemRoleAssignment`, or `beneficiaryPartyRef : PartyRef`, with its branch-specific eligibility test. The branch record is not a new beneficiary U-kind. |
-| `CC-A2.8.PER-3` | A strong grant names the admitted `U.System` that performs the instituting act, the exact grantor system-role assignment whose `HolderSystemSlot` resolves to that system, participants, policy edition, ClaimScope and validity window, currentness, and occurrence identity. Any required authority relation obtains independently. |
+| `CC-A2.8.PER-1` | Support a rule-based entitlement by the applicable affirmative rule and case facts. For a right granted to several parties jointly, use the instrument and the conditions on their joint action in §4.2. When reporting a `GrantedPermissionRelation@Context`, its §4.5 exercise relation, or a finding declared in §§4.3–4.6, establish the conditions of the corresponding declaration. |
+| `CC-A2.8.PER-2` | For a single beneficiary within the §4.2 reference union, select exactly one of `beneficiarySystemRoleKindRef : U.KindRef`, `beneficiarySystemRoleAssignmentRef : U.RelationRef constrained to U.SystemRoleAssignment`, or `beneficiaryPartyRef : PartyRef`, with its branch-specific eligibility test. For an entitlement held jointly, apply the instrument to the participants and their required action together (§4.2). The branch record introduces no beneficiary U-kind. |
+| `CC-A2.8.PER-3` | A strong grant identifies its participants, effective scope and interval, current policy and the act or combination that instituted this occurrence. Each grant-making contribution meets the authority and assignment conditions that the rule requires. Several contributors to one act and several required acts remain distinguishable. |
 | `CC-A2.8.PER-4` | Weak findings require a current frame explicitly complete enough for the intended use; incompleteness returns `unresolved`. |
-| `CC-A2.8.PER-5` | Exercise names dated work, the admitted `U.System` that performed it, the one current grant occurrence through a `U.RelationRef` constrained to `GrantedPermissionRelation@Context`, scope, and interval; it answers action match and beneficiary eligibility from those objects and the exact covering assignment or on-behalf-of relation. |
+| `CC-A2.8.PER-5` | For exercise of a right conferred by an instrument, identify the dated Work and establish the match to the beneficiary or joint beneficiaries, authorized action, scope and time. The exercise relation in §4.5 identifies the exact §4.4 grant occurrence. Establish the eligibility of the contributions required by the instrument. A support provider may contribute without holding the right. |
 | `CC-A2.8.PER-6` | Neither exercise nor non-exercise establishes `NonViolationFinding@Context`; non-exercise does not violate the grant, exercise alone does not establish obligation satisfaction, and exercise does not consume a grant without an explicit policy. |
-| `CC-A2.8.PER-7` | A same-scope conflict is settled only by an applicable policy rule that selects the outcome or by a current resolution result produced by dated Work of an admitted system under a covering system-role assignment and independently obtaining decision-authority relation. Naming a policy, office, system-role kind, assignment, or “owner” alone leaves only the affected Work or reliance use `unresolved`. |
+| `CC-A2.8.PER-7` | A same-scope conflict is settled when a current applicable rule selects the outcome, or when decision Work supplies the result the precedence policy requires. In the decision branch, each required deciding contribution and its authority are established for this issue, scope and time. A named office with authority leaves its actual decision open. |
 | `CC-A2.8.PER-8` | Permit episteme, carrier, evidence, admissibility, readiness, gate, capability, Work, and result remain distinct and are handled under their respective subject patterns. |
 
 ### A.2.8.PER:8 - Common Anti-Patterns and How to Avoid Them
@@ -290,12 +300,12 @@ The chief bias is document-and-display authority: a readable permit, badge, poli
 |---|---|
 | `MAY` stored as a `U.Commitment` modality | Recover whether the claim is a strong grant, weak finding, entry predicate, or ordinary prose; use the applicable subject pattern. |
 | No prohibition found, therefore permission | Return `nonProhibited` only for a current frame sufficiently complete for the use; otherwise return `unresolved`. Neither result establishes a grant. |
-| Permit document as permission | Recover the instituting act, current grant occurrence, policy, scope/window, and evidence relation. |
+| Permit document as permission | Establish what the operative rule makes sufficient. A permit can evidence an existing grant. Check its applicability, current scope and window, and the instituting act or combination when the question depends on that history. |
 | Gate pass as authorization | Keep `GateDecisionResult` in `A.21`; cite a separate grant/conflict result when the gate consumes one. |
 | Permission as readiness or capability | Keep readiness in `A.15.5` and capability in `A.2.2`; permission supplies neither. |
 | Work “violates permission” | Test exercise coverage and any separately governed prohibition; uncovered work is not a permission violation by default. |
 | Unnecessary evaluation records for action match or beneficiary eligibility | Test the Work against the action specification and the performer against the beneficiary branch; cite the already obtaining assignment or on-behalf-of relation and add separate evaluation evidence only when a receiving use needs it. |
-| Precedence “owner” as resolution | Apply a policy rule that itself selects the outcome, or name the authorized system's dated decision Work and current conflict-resolution result; a system-role kind, office, assignment, or policy title alone decides nothing. |
+| Precedence “owner” as resolution | Apply the rule when it selects the outcome. When a decision is needed, establish the authorised decision or combination of decisions and the result for this conflict. |
 | Hidden generic beneficiary kind | Keep the closed reference union and branch-specific eligibility checks. |
 
 ### A.2.8.PER:9 - Consequences

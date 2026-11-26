@@ -8,7 +8,7 @@
 
 Use this pattern when one practical result matters and a relevant method, model, formalism, assurance technique, ontology, or other direct-kind apparatus is available, but the work needed to configure and apply it may cost more than the result warrants. Start here whether one apparatus is already selected or a real choice among available alternatives has become current.
 
-The first useful move is to name the practical use, result kind, claimed guarantee, constraints, and reuse horizon, then ask whether the next adaptation and application work can reach a useful result within the available budget. This keeps a small, adequate path small while letting repeated or high-consequence use justify richer configuration.
+The first useful move is to name the practical use, result kind, claimed guarantee, constraints, and reuse horizon, then ask whether available results already meet those conditions. If the recipient needs more work, determine whether the next adaptation or application can supply it within the budget. This keeps a small, adequate path small while letting repeated or high-consequence use justify richer configuration.
 
 **Not this pattern when.** If an adequate way to obtain the result is still unexplained, use `C.39`. If usable material needs feasible variation and examination, use `C.40`. Use `C.18` when the question concerns the generation account or archive/front stewardship. If the live question is a local choice over an existing option set, use `C.11`. If the blocker is an ontology conflation, use `A.7.1`; if it is a material conflict among FPF premises, use `A.7.2`.
 
@@ -52,7 +52,7 @@ A person or an AI system can read these instructions and also perform the work. 
 
 #### C.19.2:4.2 - Select the application branch
 
-**One current apparatus.** For an already selected method, recover its required operations, the inputs and settings it accepts, and the result and guarantee it supports. Check the conditions of this application and supply its inputs. The existing configuration may already suffice. If extra setup is needed, establish what it will enable and whether its cost fits the budget and the expected use. The single-apparatus path needs no `OptionSet` or `ChoiceResult`.
+**One current apparatus.** For an already selected method, recover its required operations, the inputs and settings it accepts, and the result and guarantee it supports. Check whether an existing result already covers the inputs, use and required guarantee. If another application is needed or specifically commissioned, supply its inputs and perform it. The existing configuration may already suffice. If extra setup is needed, establish what it will enable and whether its cost fits the budget and the expected use. The single-apparatus path needs no `OptionSet` or `ChoiceResult`.
 
 **Candidate generation or reframing.** If no adequate current object is available, use `C.39` to develop a missing explanation of how to obtain the result, or `C.40` to vary usable material and examine the difference. Use `C.18` when generation-account or archive/front claims are needed. The declared use and eligibility basis can guide that work.
 
@@ -66,7 +66,7 @@ A person or an AI system can read these instructions and also perform the work. 
 
 When the claimed guarantee or requirement is disputed, use `C.11.DUA` to appraise its purpose, contribution, burden and current force. Keep apparatus eligibility under the current declaration separate from that appraisal. Resume application under a revised declaration only when the change is available through the authority or agreement that governs it.
 
-When choice is current, preserve the exact `C.11` contract:
+Apply `C.11` to the current comparison. If the evidence or the holder’s priorities leave a requested choice open, return the supported comparison, the outstanding question and who can settle it. A completed `ChoiceResult` has one of four forms:
 
 - `choose now` names one selected option or a retained tie-set;
 - `reject current set` returns to a named candidate-generation pattern or closes with no current application;
@@ -82,8 +82,8 @@ These four dispositions form the complete current `C.11` result set. “Configur
 3. When alternatives are current, identify them by their direct kinds and apply the shared eligibility predicate.
 4. For each current path, identify what must be learned, supplied, integrated or checked to meet the required guarantee. Estimate the work still needed. An existing configuration that meets the requirements can be used immediately.
 5. Compare only the dimensions that can change the current path for the declared use and horizon. These may include time and budget, prior exposure, post-threshold efficiency, transfer, retention, interoperability, downside and reversibility; use their subject-pattern values when needed. Do not compress them into an undeclared scalar.
-6. When choice is current, use its `C.11 ChoiceResult` (§4.3). A request for another probe or a different decision identifies that next action. A rejected set leaves no selected application. A retained tie-set leaves open which member will be used.
-7. When one apparatus is selected for use, carry out its application. Use A.15.2 when a plan is needed and C.24 when tool-call planning is the question. A precise dated-Work claim uses the performer and admission conditions in §4.1.
+6. Use the current comparison at the strength it supports (§4.3). If the choice remains open, give the holder the supported alternatives and the premise or priority needed to decide. A completed `C.11 ChoiceResult` may identify a worthwhile probe or another decision. A rejected set leaves no selected application. When a set is accepted, distinguish ties from incomparability and establish who may choose a member for use.
+7. Return a sufficient existing result when it meets the commission. When a new application is required, perform it with the selected apparatus. Use A.15.2 when a plan is needed and C.24 when tool-call planning is the question. A precise dated-Work claim uses the performer and admission conditions in §4.1.
 8. Inspect the result against the criterion for this use. For another application, check that the accepted method, inputs and assumptions cover its conditions. To establish that the recipient can apply the method with a stated degree of help, examine that recipient’s own performance under those conditions. Keep an application or configuration note when reuse, dispute, automation or consequence makes it useful.
 
 #### C.19.2:4.5 - Stop and reopen
@@ -126,7 +126,7 @@ The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar 
 | `CC-C19.2-2` | A current single-apparatus case proceeds without a fabricated `OptionSet` or `ChoiceResult`. |
 | `CC-C19.2-3` | Candidate generation, local choice, planning, tool-call planning, dated work, and direct result retain their subject patterns. |
 | `CC-C19.2-4` | Every candidate retains its direct kind and satisfies one explicit eligibility predicate for the same use and guarantee. |
-| `CC-C19.2-5` | Any `C.11` result is exactly `choose now`, `reject current set`, `probe again`, or `reroute`. |
+| `CC-C19.2-5` | A completed `C.11 ChoiceResult` has one of the four stated dispositions. An unfinished comparison identifies the outstanding premise or decision. |
 | `CC-C19.2-6` | The intended-reader position, guidance, any independently identified `U.Method` and qualifying `U.MethodDescription`, performing `U.System`, dated `U.Work` and problem-facing result remain distinct. Every precise performer has an A.13 core, and the Work is independently admitted under A.15.1. F.6 is required only when the receiving use also needs precise assignment-bound attribution. A short projection exposes assignment identity, species, participants, or attribution detail only when that use relies on them, attribution is ambiguous, or source wording must be repaired. |
 | `CC-C19.2-7` | The first useful result and stop are practical, and every reopen condition changes a named next action. |
 | `CC-C19.2-8` | Candidates retain their direct kinds and comparisons use declared, admissible operations. |

@@ -419,8 +419,7 @@ changes its configuration, authority, outcome or transfer premise. Preserve usef
   claims.
 - `A.2.1`, `A.2.8.PER`, `A.15.1`, `A.3.1`, `A.3.4`, and `A.15.PROD` govern assignment, permission, Work, Method,
   actual change, and production claims. Another Agent's decision authority still needs its own direct claim.
-- A specialist practice retains its own decisions and authority—for example, Organization Change, Corporate
-  Governance, Operations, Configuration, Maintenance, safety, security, law, finance, or contracting.
+- For specialist contributions in Organization Change, Corporate Governance, Operations, Configuration, Maintenance, safety, security, law, finance or contracting, identify the Method and the party entrusted with the decision.
 - `SYSE.11` can use a compatible observed-coordination claim for the same constituent Systems, configuration,
   shared use, and interval. Ground any later fulfilment or authority claim separately.
 

@@ -71,9 +71,7 @@ Choose among three EventStorming purposes. **Big Picture** locates important dis
 State the practical question and initial scope, the current or proposed situation, and the decision or learning
 that would make the session useful. Invite the people who know the consequential perspectives, including
 those handling exceptions or receiving the result. A representative cannot fill an unknown fact by agreement.
-Record the missing perspective and obtain it before relying on the affected claim. Arrange a shared surface
-that everyone can read and change. Physical notes and an accessible digital board are alternatives. Check
-that remote participants can add and correct the account themselves.
+Record the missing perspective and obtain it before relying on the affected claim. Arrange an account that everyone can follow and correct. A participant can edit the board directly or dictate an entry, hear or inspect what was recorded and correct it. Give remote participants the same opportunity to contribute and challenge the account. Provide direct editing when their task requires it.
 
 Use a simple visible legend. Introduce events first; add another notation only when the discussion needs its
 distinction. Labels as well as colour carry meaning. Agree how disagreements will be marked and revisited.
@@ -91,7 +89,7 @@ can persist. Preserve separate interpretations until examples show whether they 
 
 Arrange events in a plausible temporal account. Use separate lanes for cases or simultaneous threads when needed. Before grouping events as one completion, ask whether two histories bearing that label call for different action or explain the outcome differently. Open the group only as far as the distinction requires, and connect the constituent occurrence back to the completion it could affect. Events in different services may supply one another without belonging to the same work. Mark a **hot spot** at the affected behaviour for a disputed rule, risk or missing link.
 
-Walk through the account aloud with a narrator and participants who can correct it. Ask where a thread
+Walk through the account together in a form the participants can follow and correct. They may narrate it aloud, work on a diagram or use a shared written account. Ask where a thread
 starts, what interrupts it, what counts as a useful or failed ending, and what happens beyond the initial
 scope. Follow a troublesome result backwards to its required conditions, then forwards again. Add the
 surrounding event or participant when the initial boundary hid a cause or consequence. Agreement after this

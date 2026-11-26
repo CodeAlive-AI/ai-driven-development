@@ -81,7 +81,7 @@ Compare at the scale of the offer. For a first exchange, trace one use. For a re
 
 #### CB.1:4.4 - Build the contribution for the selected branch
 
-For **mutual participation**, identify the participants whose contributions can help one another and the activity through which that help becomes possible. Describe the minimum relevant experience or access, the material they can bring and how the recipient will use a contribution. Membership criteria should follow the work and conditions of participation. A brand preference or friendship with the founder is insufficient when the promise concerns a wider professional group.
+For **mutual participation**, identify the activity the participants want to carry out together and how their actions bring about the result. Consider what each needs to bring or be able to do. Where one helps another, explain what the recipient can do with that help. An independent vote can count toward a common decision even if no voter assists another. Membership criteria should follow the work and conditions of participation. A brand preference or friendship with the founder is insufficient when the promise concerns a wider professional group.
 
 For **people who need to learn a sufficiently known practice for independent use**, identify the population and later activity to be changed. C.36 distinguishes transmission, performance, selection and renewal; C.36.RP supplies the broader construction when access, a capable provider, tools or method development may answer the need. The learning branch below connects contributions for its particular result:
 
@@ -105,7 +105,7 @@ Where people depend on an employer or organiser, examine what declining would ac
 
 #### CB.1:4.6 - Choose the next action and a return condition
 
-Continue when the contribution is sufficiently worthwhile and feasible for the bounded action being proposed. For mutual help, pass CB.2 the receiving situation, first useful result, willing participants or recruitment question, material and access limits, and available organising effort. When people need to learn the practice for independent use, pass the target work and provision conditions to the selected HCD use.
+Continue when the contribution is sufficiently worthwhile and feasible for the bounded action being proposed. For mutual help or a joint activity, use CB.2 with the participants’ purpose, agreed result, people needed, material and access limits, and available organising effort. When people need to learn the practice for independent use, pass the target work and provision conditions to the selected HCD use.
 
 Stop or change the proposal when an existing alternative answers the situation better, a necessary contribution cannot be obtained, or the apparent common purpose hides a material unresolved conflict. An unanswered question can be the next useful result: who can provide the required access, whether the intended recipient values the proposed result, or whether any capable person wishes to help.
 
@@ -193,7 +193,7 @@ Source returns: [David Spinks, The Business of Belonging (2021)](https://www.wil
 
 ### CB.1:12 - Relations
 
-- **Supplies CB.2:** a bounded proposal for mutual help, with the first result, participant conditions and organising capacity. A failure to obtain the central contribution returns from CB.2 to the affected choice here.
+- **Supplies CB.2:** a bounded proposal for mutual help or joint activity, with the first result, participant conditions and organising capacity. A failure to obtain the central contribution returns from CB.2 to the affected choice here.
 - **Uses [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md):** the cultural relations and result being sought. [FPF C.36.RP](../../../sections/09-part-c---kernel-extension-specifications/132-c-36-rp---sustain-and-renew-shared-ways-of-working.md) supplies the wider Method for making a shared way obtainable, usable and renewable; CB.1:4.4 retains the narrower known-practice learning alternative.
 - **Uses [STR.5 (STR.5:4)](../str/23-str-5---generate-strategic-directions.md#str54---solution):** contrasting useful contributions and their provision conditions when that choice needs further development.
 - **Uses [OCE.2 (OCE.2:4)](../oce/24-oce-2---recover-current-organization-work-and-arrangement.md#oce24---solution):** evidence about actual organisational work and relations when the proposal relies on them.

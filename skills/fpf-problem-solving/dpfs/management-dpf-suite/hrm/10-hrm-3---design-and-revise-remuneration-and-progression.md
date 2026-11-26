@@ -5,7 +5,7 @@
 
 ### HRM.3:1 - Problem frame
 
-**Use this when** remuneration, benefits or progression need a justified design or revision: job demands have changed, external rates differ, pay relationships are unexplained, or reward undermines the contribution being requested. Begin by identifying the actual terms and which ground is unsettled. The first useful result is an explained, affordable and institutionally supportable reward arrangement with a usable transition.
+**Use this when** an entitlement or pay difference needs explaining, or remuneration, benefits or progression need design or revision. Start with the question. For an earlier period, use the terms then in force and the facts on which the entitlement depends. To propose new terms, establish which job demands, participation needs or obligations the present arrangement fails to meet, or which new opportunity it should support. Develop an affordable, supportable proposal and show how the transition could take effect.
 
 The object is the reward arrangement and its grounds. If a current entitlement is clear and only payment is wrong, use ADM directly. An operating appraisal alone does not determine a wage obligation.
 
@@ -26,9 +26,9 @@ Different questions hide under “fair pay.” Job value concerns the demands of
 
 #### HRM.3:4.1 - Recover the reward question and existing commitments
 
-Identify the affected jobs, people and time periods; the current terms; applicable agreements, minimums, equality and consultation requirements; the authority to alter them; and the available budget and payment capacity. Obtain qualified interpretation where an act depends on uncertain institutional grounds. Separate an owed amount from a prospective design choice.
+Identify the jobs, people, period and terms that matter to the question. For an entitlement, apply the governing agreements and requirements to the facts of that period. An owed amount can be established even when payment capacity is uncertain. For a proposed change, establish the continuing obligations, budget, payment capacity, applicable equality and consultation requirements, and who may give the change effect. Obtain qualified interpretation where the answer depends on disputed or uncertain grounds.
 
-State what work or participation the arrangement should support and who is expected to provide it. Identify who can receive or use the proposed rewards. An employer may seek scarce capability, predictable service, progression, shared learning or some combination. Employees can value money, time, security, flexibility and opportunities differently. Obtain their relevant responses instead of assuming a universal preference ranking. Non-financial conditions can matter to an offer, but do not erase an existing monetary or protective obligation.
+When designing an arrangement, state what work or participation the arrangement should support and who is expected to provide it. Identify who can receive or use the proposed rewards. An employer may seek scarce capability, predictable service, progression, shared learning or some combination. Employees can value money, time, security, flexibility and opportunities differently. Obtain their relevant responses instead of assuming a universal preference ranking. Non-financial conditions can matter to an offer, but do not erase an existing monetary or protective obligation.
 
 #### HRM.3:4.2 - Establish the different bases of comparison
 
@@ -38,13 +38,15 @@ For **market position**, select comparators that concern the role, labor market,
 
 For **individual progression**, specify the rule and evidence: for example, an agreed service condition, demonstrated capability in specified work, a changed responsibility or a defined contribution. These are different possible grounds, not interchangeable proxies. Distinguish eligibility to progress, assessment of the relevant condition, the authorized decision and its effective date. Use HRM.2 where the progression rests on a personnel assessment.
 
-For **variable reward**, establish what outcome or contribution qualifies, the period, attribution, thresholds or other rule, uncertainty and limits of participant control. An OPS.22 finding becomes a reward input only when its interpretation fits that rule. Output from an agent or a team does not automatically identify the individual contribution. Do not reward apparent speed by creating an incentive to conceal defects, move work to colleagues or exceed protected hours.
+For **variable reward**, identify the qualifying result, the period, who is eligible and how the amount is determined. A team outcome and the applicable membership rule can settle a person's entitlement. An agreed share of a pool specifies what that person receives. To reward a personal act or an effect attributable to it, use evidence for the condition the terms name. Where a threshold governs payment, a supported lower or upper bound on the person's work can settle whether they qualify while leaving their exact count open. An OPS.22 finding can supply the operating evidence within its scope.
+
+When designing the terms, examine what participants can influence, the uncertainty they bear and the choices the proposed rule encourages. An apparent gain in speed can come from concealing defects, moving work to colleagues or exceeding protected hours.
 
 ##### HRM.3:4.2.1 - Obtain a comparative evaluation of changed work
 
 Use this operation when the job-value basis remains unsettled. A sufficient current evaluation can be used directly when it covers the actual work, relevant comparison jobs and intended decision, explains its judgement, and leaves no unresolved condition that could change that decision. A changed title alone need not reopen it. A material change in duties, an omitted demand or an unsupported comparison does.
 
-**Establish the work being compared.** Identify the jobs and the period or proposed arrangement. For each job, describe what its holder is expected to accomplish and under what conditions. Use existing descriptions together with information from people who perform and depend on the work. Ask for concrete tasks, decisions, interactions and recurring difficulties; include help and coordination that the formal description omits. Resolve conflicting accounts through the people or observations that can distinguish them. Let affected workers check whether the resulting profile represents their work. State which demands belong to an intended future arrangement; evaluation of that profile applies under those proposed conditions.
+**Establish the work being compared.** Identify the jobs and the period or proposed arrangement. For each job, describe what its holder is expected to accomplish and under what conditions. Use available descriptions and evidence of tasks, decisions, interactions and recurring difficulties, including help and coordination the description may omit. Obtain the views of people who perform or depend on the work when their knowledge or participation is needed. For a proposed role with no current holder, distinguish its planned duties from evidence about comparable work. Resolve conflicting accounts through the people or observations that can distinguish them. Let affected workers check whether the resulting profile represents their work. State which demands belong to an intended future arrangement; evaluation of that profile applies under those proposed conditions.
 
 Choose the comparison scope from the decision. A revised job may be assessed against an adequate existing scheme and relevant comparison jobs. Designing a common structure, or discovering a biased factor definition, can require a wider set. Selecting only jobs with similar titles can exclude the very comparison needed to expose undervaluation. Keep actual pay and individual performance separate from the description of demands; both have later uses in the reward decision.
 
@@ -82,9 +84,9 @@ Where a difference raises an equality or other institutional question, obtain th
 
 #### HRM.3:4.5 - Give the arrangement effect and follow its consequences
 
-Obtain the required decision or agreement and specify the transition: who is affected, what changes, when, which prior commitments continue, and what information or action the person and providers need. Make the entitlement, effective date and payment instruction usable through ADM. Reconcile actual provision with the terms. A correct policy file and a payroll implementation can diverge.
+For a proposal, specify who would be affected, when the change would apply, which commitments continue and whose decision or agreement would give it effect. If payment or implementation is due, establish the effective act or existing obligation. Make the entitlement, effective date and payment instruction usable through ADM and reconcile actual provision with the terms. A correct policy file and a payroll implementation can diverge.
 
-Observe whether the arrangement obtains the intended participation and contribution under its conditions. Distinguish recruitment response, retention, helping behavior, burden, pay distribution and fulfillment of obligations. Reopen the relevant basis when jobs, markets, rules or consequences change. Do not infer that a person lacks motivation because an offer is unattractive, or change a progression rule retrospectively because its authorized result is inconvenient.
+To assess an arrangement in use, observe whether it obtains the intended participation and contribution under its conditions. Distinguish recruitment response, retention, helping behavior, burden, pay distribution and fulfillment of obligations. Reopen the relevant basis when jobs, markets, rules or consequences change. Do not infer that a person lacks motivation because an offer is unattractive, or change a progression rule retrospectively because its authorized result is inconvenient.
 
 ### HRM.3:5 - Archetypal Grounding
 
@@ -112,6 +114,8 @@ Job descriptions and market categories can omit work disproportionately performe
 
 ### HRM.3:7 - Conformance Checklist
 
+Choose the questions that bear on the result being delivered. For an explanation of entitlement, can the recipient trace the answer to the governing terms and the relevant facts for that period? For proposed or implemented terms, examine the decisions and effects that the work covers.
+
 - Can each material pay difference be traced to an applicable obligation or an explained job, market, progression or variable-reward ground?
 - Do actual job profiles and comparison populations support those grounds, with an applicable evaluation scheme and unresolved judgements made visible?
 - Are helping work, protection and other commitments compatible with the incentives and time allocation?
@@ -131,13 +135,15 @@ The arrangement becomes explainable and revisable by its grounds. It can expose 
 
 ### HRM.3:10 - Architectural Rationale
 
-Reward connects work, contribution, alternatives and institutional terms. It is distinct from measuring performance and fulfilling payment, while depending on both. This separation permits a pay correction without reassessment and a job revaluation without rewriting a person's past performance.
+Reward terms connect the work an organization seeks with what participants can receive. A performance finding enters the decision where the terms call for it. An effective rule can establish what is owed while payment is still outstanding. This permits a pay correction without reassessment and a job revaluation that preserves the account of a person's earlier work.
 
 ### HRM.3:11 - SoTA-Echoing
 
 ILO's 2026 treatment of gender-neutral job evaluation supplies the equal-value comparison of job demands and correction of omissions. The EC/EIGE 2026 toolkit develops a professional route from work information through factor-level judgements and comparison to classification and follow-up. The detailed factor definitions and level descriptors are available in that toolkit. Its European institutional discussion is context-specific; weights and grouping rules require justification for the actual comparison.
 
 CIPD's reward account supplies the broader combination of base pay, progression, variable reward, benefits and internal/external positioning. This Method connects those distinct contributions to the work arrangement, contested evidence and effective terms. The numerical example is an authored conditional calculation, not a result reported by those sources. Qualified local compensation provision can be sufficient when its terms, grounds and implementation conditions answer the receiving question.
+
+The U.S. Office of Personnel Management describes group awards tied to organizational performance and individual awards for a particular act. These are two concrete choices for what qualifies. The terms in force determine eligibility and amounts in the workplace using them. [OPM, Awards and Recognition](https://www.opm.gov/policy-data-oversight/performance-management/performance-management-and-accountability-playbook/awards-and-recognition/)
 
 ### HRM.3:12 - Relations
 

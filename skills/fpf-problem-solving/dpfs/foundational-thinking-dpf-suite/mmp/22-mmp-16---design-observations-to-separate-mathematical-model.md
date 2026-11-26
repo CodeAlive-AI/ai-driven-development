@@ -12,7 +12,7 @@ The desired result may be a better decision, a supported prediction, a distincti
 
 This pattern constructs the mathematical design of an observation. It returns what to observe, what records the alternatives would produce, and how those records would change the answer. It can instead return a useful limitation: the available observation choices leave the needed distinction unresolved. The subject practice supplies feasible access and performs the observation; PHY.9 and PHY.10 do that work for a physical readout and test.
 
-Start with the receiving question, the alternative models and the observation law from MMP.7. Set-valued reasoning needs functions and sets. Probabilistic design also needs conditional probability and the inferential meaning chosen in MMP.13. An analyst can supply that mathematics while another participant supplies the observing conditions and interprets the result.
+Start with the receiving question, the alternative models and how each alternative constrains the record the observer can obtain. Disjoint sets of permitted readings can distinguish alternatives without assigning probabilities to them. Use the observation law from MMP.7 when the design depends on the probabilities of possible records. Probabilistic design also needs conditional probability and the inferential meaning chosen in MMP.13. An analyst can supply that mathematics while another participant supplies the observing conditions and interprets the result.
 
 Use the present answer directly when the remaining alternatives make no consequential difference. A new observation is only one possible response to uncertainty. C.11.DUA supplies the comparison with using what is already known, changing the claim or taking another feasible step. Use the existing design when it suffices for a prescribed measurement.
 
@@ -60,7 +60,7 @@ When several readings have a common unknown, use the same value for it in those 
 
 A probabilistic comparison integrates unknowns only under a supplied probability law. Otherwise retain them as conditional possibilities or compare performance across their admitted range. Choosing a convenient nuisance value separately for each model can make a design look more discriminating than it is.
 
-For an adaptive design, later observation choices are functions of records already available. Derive their joint law with that dependence. A sequence of fixed-design calculations does not by itself describe an outcome-dependent stopping or sampling rule.
+For an adaptive design, later observation choices depend on the records already available. Follow each admitted history through the next choice it permits. This builds the possible records of the whole design for a guarantee or discrimination question. For a claim about probabilities, derive the features of their joint distribution needed for that conclusion, including the effect of the stopping or sampling rule.
 
 #### MMP.16:4.3 - Find what a design can distinguish
 

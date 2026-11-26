@@ -33,7 +33,7 @@ Connect a particular customer's useful result and consequential conditions to ac
 
 Identify the immediate decision, the useful result, its recipient and the work it will serve. Distinguish selecting an offer, selecting help for an acquired service and constructing a new service. The relevant information differs: a purchaser's spending limit may matter to the first decision, while access and present ability may determine the second.
 
-Ask what difference would change the suitable action. Start with the required use, available time, access, necessary ability, support, material constraints and preferences that affect the result. For each proposed attribute, explain which alternative it can select or exclude. Omit an attribute whose value cannot change the decision. A broad market group can provide a useful starting hypothesis through [MKT.1](16-mkt-1---qualify-a-market-problem-and-differences-between-cus.md); it does not settle this customer’s conditions.
+Ask what difference would change the suitable action or the explanation the customer needs. Start with the required use, available time, access, necessary ability, support, material constraints and preferences that affect the result. For each attribute, identify the decision or ground that depends on it. Two customers may qualify for the same service through different permissions. If the order calls for explaining who authorized access or when it must be renewed, retain that difference. A broad market group can provide a useful starting hypothesis through [MKT.1](16-mkt-1---qualify-a-market-problem-and-differences-between-cus.md); it does not settle this customer’s conditions.
 
 When the required result is unclear, use [MKT.6](21-mkt-6---jointly-shape-a-useful-result-and-help-achieve-it.md) to obtain an agreed contribution before choosing its variant. When sufficient conditions are already known, proceed without asking the customer to repeat them.
 
@@ -57,9 +57,9 @@ Return a supported selection with its grounds and conditions, or identify the un
 
 #### MKT.9:4.4 - Obtain a missing service configuration when selection is insufficient
 
-Give [SYSE.8](../../engineering-dpf-suite/syse/29-syse-8---develop-an-integrated-offering-and-provider-concept.md) the receiving activity, needed result, differences between customers, constraints and candidate provider contributions. Ask for a feasible offering and provider arrangement. Where several methods or allocations must be combined, use [FPF C.32.MWA.PP](../../../sections/09-part-c---kernel-extension-specifications/83-c-32-mwa-pp---construct-and-compare-method-performance-and-p.md) to compare their actual relationships, simultaneous work and burdens.
+To develop an offering with [SYSE.8](../../engineering-dpf-suite/syse/29-syse-8---develop-an-integrated-offering-and-provider-concept.md), start from the receiving activity, needed result, differences between customers, constraints and candidate provider contributions. Use a suitable design already available, construct a feasible arrangement yourself or commission one. Where several methods or allocations must be combined, use [FPF C.32.MWA.PP](../../../sections/09-part-c---kernel-extension-specifications/83-c-32-mwa-pp---construct-and-compare-method-performance-and-p.md) to compare their actual relationships, simultaneous work and burdens.
 
-For a reusable service, these suppliers must develop the following connected construction:
+For a reusable service, work out how its provider will deliver it. Use what is already available and establish what still has to be arranged.
 
 1. Identify contributions that can be reused by their supplied results, required inputs and conditions. Do not divide the service solely by existing department names.
 2. Construct a combination that can give the receiving result. Compare alternatives where the selection depends on their differences. Keep an adequate existing arrangement in view. Explain the order, connections between outputs, shared resources and recovery that make the combination work.
@@ -114,7 +114,7 @@ Visible attributes are easy to collect and can be mistaken for useful selection 
 
 ### MKT.9:7 - Conformance Checklist
 
-- The decision and action-changing customer differences are explicit.
+- Does the account preserve customer differences that change the decision or the explanation the customer needs for it?
 - Information retains its subject, source, currentness, use conditions and material uncertainty.
 - Does the selection meet the customer’s conditions? Where preference or a complete menu was requested, does the comparison support that further result?
 - Combined work preserves compatibility, performers able to do the work, access, support and timing.

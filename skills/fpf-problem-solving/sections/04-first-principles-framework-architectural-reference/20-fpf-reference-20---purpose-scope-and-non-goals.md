@@ -1,6 +1,6 @@
 ## FPF.Reference:20 - Purpose, Scope, And Non-Goals
 
-FPF aims to help people and AI agents develop reasoning whose object of concern, grounds and conditions remain recoverable when it is used, shared or revised.
+FPF helps people, organizations and AI systems develop reasoning whose subject, grounds and conditions remain recoverable when it is used, shared or revised. An organization can reach a judgement through contributions from several participants and retain it for later use.
 
 The Core Specification defines conceptual patterns, distinctions, publication forms, and checks. It is tool-agnostic; projects choose the tooling and organizational arrangements needed for their work.
 

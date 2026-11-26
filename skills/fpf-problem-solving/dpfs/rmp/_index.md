@@ -5,7 +5,7 @@
 > Use these research methods to frame a question, choose and conduct an inquiry, assess what its results support and communicate the answer. You can also use them to assess or improve a research method.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Original edition:** 24 October 2026. Revised 22 November 2026. For the version used, see [RMP.Sources:3](51-rmp-sources-3---citation.md).
+- **Original edition:** 24 October 2026. Revised 24 November 2026. For the version used, see [RMP.Sources:3](51-rmp-sources-3---citation.md).
 - **Status:** Eternal alpha. This working framework is open to correction as methods, sources and uses change. RMP.1–RMP.11 include ways to use an existing answer, stop an inquiry and improve a research method.
 - **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for original framework content. Third-party material retains its own terms.
 - **Publication:** [FPF Library repository](https://github.com/ailev/FPF)
@@ -106,11 +106,11 @@ The PatternIDs RMP.1–RMP.11 give the methods stable addresses. The six Parts p
 
 Start with the question that matters to the inquiry and the evidence you have. A design specifies what the observations must distinguish. The way you collect or recover material determines which comparisons you can make. Analysis, criticism and synthesis can support an answer, identify a limit or expose a premise of an earlier step that needs revision.
 
-If your task is to frame an inquiry yourself, begin here before reading a worked case. Take an unexplained observation or a decision someone faces in your own work. What would a different finding change for that person or for the explanation? Choose what to investigate, how far the evidence must reach and what it must distinguish. Work out how you could obtain or recover that evidence. Keep an earlier attempt if it shows those choices. Could the material you plan to collect be the same in two situations that require different answers? If you already have a proposed answer, consider what evidence could defeat it. Use the methods below to repair a missing connection or explain why the original design suffices. A supplied question, unit or comparison remains available when the work is to apply or criticize it.
+If your task is to frame an inquiry yourself, begin here before reading a worked case. Start from an observation to explain or a decision in your own work. What could a different finding change in the explanation, in the decision or in how a recipient uses the result? Choose what to investigate, how far the evidence must reach and what it must distinguish. Work out how you could obtain or recover that evidence. Keep an earlier attempt if it shows those choices. Could the material you plan to collect be the same in two situations that require different answers? If you already have a proposed answer, consider what evidence could defeat it. Use the methods below to repair a missing connection or explain why the original design suffices. A supplied question, unit or comparison remains available when the work is to apply or criticize it.
 
 If the available results leave part of the research question open, use FPF B.5, **Choose the Next Reasoning Contribution**, to identify what another contribution would add. [RMP.Reference:6](07-rmp-reference-6---pattern-relations-do-not-prescribe-a-resea.md) explains how to connect the research methods and when a change warrants revisiting earlier work.
 
-Choose the contribution whose result would answer your question or supply something it needs. Use inputs you already have when they support that use. The [Table of Contents](_index.md#table-of-contents) covers other questions. The [Architectural Reference](01-research-method-practice-principles-framework-architectural.md) explains why the methods belong here and what their combined use requires. When you seek help, ask for an explanation or a comment on your case in the language of your work.
+Choose the contribution whose result would answer your question or supply something it needs. Use inputs you already have when they support that use. The [Table of Contents](_index.md#table-of-contents) covers other questions. The [Architectural Reference](01-research-method-practice-principles-framework-architectural.md) explains why the methods belong here and what their combined use requires. When you seek help, describe the missing contribution in the language of your work. An explanation or a critic’s comment on your case may let you interpret a result yourself. If you need the result of a new measurement, check who can obtain it under the required conditions and use a standing arrangement if it covers the work. An existing measurement may already answer a request for the value.
 
 Use [RMP.1 — Decide Whether a Question Needs Research and When to Stop](31-rmp-1-decide-whether-a-question-needs-research-and-when-to-s.md) to check whether an applicable source already answers the question. If it does, give the answer, its source and its relevant limits. If a knowledge question remains, explain what the inquiry seeks to establish, how another researcher can examine the connection from question to result, and the scope of the contribution. A suitable existing protocol can support an inquiry into a disputed claim. An established rule can also settle an ordinary case in its own practice.
 
@@ -175,7 +175,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [Research Method Practice Principles Framework Architectural Reference](01-research-method-practice-principles-framework-architectural.md) (8 lines)
 - [RMP.Reference:1 - The practical question behind research and engineering](02-rmp-reference-1---the-practical-question-behind-research-and.md) (10 lines)
 - [RMP.Reference:2 - Forces that shape the first result](03-rmp-reference-2---forces-that-shape-the-first-result.md) (13 lines)
-- [RMP.Reference:3 - Research membership is not institutional status](04-rmp-reference-3---research-membership-is-not-institutional-s.md) (6 lines)
+- [RMP.Reference:3 - Research membership is not institutional status](04-rmp-reference-3---research-membership-is-not-institutional-s.md) (8 lines)
 - [RMP.Reference:4 - Question, frame, design, Work, result, and decision remain distinct](05-rmp-reference-4---question-frame-design-work-result-and-deci.md) (8 lines)
 - [RMP.Reference:5 - Criticism comes before method prestige](06-rmp-reference-5---criticism-comes-before-method-prestige.md) (7 lines)
 - [RMP.Reference:6 - Pattern relations do not prescribe a research lifecycle](07-rmp-reference-6---pattern-relations-do-not-prescribe-a-resea.md) (8 lines)
@@ -211,7 +211,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 ### Part II - Operationalization and Research Trace
 
 - [RMP.3 - Operationalize the Research Design without Replacing the Question](33-rmp-3---operationalize-the-research-design-without-replacing.md) (244 lines)
-- [RMP.4 - Preserve a Criticism-Ready Research Trace](34-rmp-4---preserve-a-criticism-ready-research-trace.md) (276 lines)
+- [RMP.4 - Preserve a Criticism-Ready Research Trace](34-rmp-4---preserve-a-criticism-ready-research-trace.md) (278 lines)
 
 ### Part III - Analyze Claims and Choose Credibility Work
 
@@ -225,11 +225,11 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 ### Part V - Improve and Refresh Research Methods and Practice
 
-- [RMP.9 — Decide Whether and How to Improve Research Methods and Practice](39-rmp-9-decide-whether-and-how-to-improve-research-methods-and.md) (226 lines)
+- [RMP.9 — Decide Whether and How to Improve Research Methods and Practice](39-rmp-9-decide-whether-and-how-to-improve-research-methods-and.md) (228 lines)
 
 ### Part VI - Reconstruct Practice and Explain Method History
 
-- [RMP.10 - Reconstruct a Candidate Method Account from Practice Evidence](40-rmp-10---reconstruct-a-candidate-method-account-from-practic.md) (198 lines)
+- [RMP.10 - Reconstruct a Candidate Method Account from Practice Evidence](40-rmp-10---reconstruct-a-candidate-method-account-from-practic.md) (200 lines)
 - [RMP.11 - Explain Method History with Discriminating Evidence](41-rmp-11---explain-method-history-with-discriminating-evidence.md) (244 lines)
 
 ### Cross-Pattern Application

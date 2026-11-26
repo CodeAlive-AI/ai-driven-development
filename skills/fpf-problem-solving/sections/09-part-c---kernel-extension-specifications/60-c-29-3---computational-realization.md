@@ -6,9 +6,9 @@
 
 ### C.29.3:1 - Problem frame
 
-**Use this when** a computation is available, but the proposed executing arrangement has not yet been connected to its inputs, operations and interpretable results. A motor interface may accept a different number from the one calculated. A circuit may produce a voltage whose scale differs from the input scale. A material admission procedure may preserve a count only while several people share the same stock of cards.
+**Use this when** a computation is available, but the proposed executing arrangement has not yet been connected to its inputs, operations and interpretable results. A motor interface may accept a different number from the one calculated. A circuit may produce a voltage whose scale differs from the input scale. At a second entrance, issuing copies of the original passes can defeat a room's admission limit.
 
-Start with one input the work needs. Explain how it is prepared in the proposed system, which actions perform the computation and how the result is read. Compare the interpreted result with what the abstract computation requires. A failed input preparation, such as a command outside the interface's range, can already determine a useful repair.
+Start with the result the arrangement must deliver. For an input or history covered by the order, explain how the system is prepared, which actions perform the computation and how its result is read. Compare that result with what the recipient needs. An operating law can establish the comparison over its whole range. A particular input can expose a failure, such as a command outside the interface's range.
 
 The first result is a realization design under stated conditions, an interpreted result from an execution, or a failed connection with a proposed correction. The method helps construct and use that connection. The engineering of a circuit, controller, physical apparatus or administrative arrangement supplies the mechanisms that perform the computation.
 
@@ -81,7 +81,7 @@ For each operation whose realization is unresolved, identify what the system doe
 
 When one logical operation spans several physical actions, examine the intervening states. Reserving a card, crossing a room boundary and returning the card are separate events. A visitor can be outside while the card is unavailable. Either show that the intervening behavior preserves the needed result, or change the model or the arrangement.
 
-For shared operation, determine how the same resource or state is accessed. Exclusive possession means that each card can be held by only one participant at a time. Independent copies of an available-card count require a different coordination mechanism. The engineering or administrative method supplies that mechanism.
+For shared operation, determine how the same resource or state is accessed. Exclusive possession means that each card can be held by only one participant at a time. One shared stock or disjoint allocations of a limited stock can secure exclusive use. Establish why two overlapping admissions cannot obtain the same card. The engineering or administrative method supplies that mechanism.
 
 For repeated or timed operation, include completion, reset and ordering where they affect the result. Two relative increments add only when both are executed under the intended rule. Repeating an absolute target ordinarily asks for the same target again. An ongoing physical process can require a temporal model rather than a sequence of instantaneous assignments.
 
@@ -101,7 +101,7 @@ Use C.16 when reading the result requires a measurement model. Instrument loadin
 
 #### C.29.3:4.5 - Compare the routes over the claimed scope
 
-Work a small input through both routes with its meanings intact. Then establish why the required relation holds over the input range or histories for which the result will be used.
+Follow the inputs or histories covered by the claim through preparation, execution and interpretation. Establish the required relation from the operating rules, relevant evidence or both. A worked input can resolve an uncertain correspondence. A claim about one particular execution needs grounds about that execution, such as its recorded output under the agreed interpretation.
 
 For a finite case, a complete case analysis can suffice. For an invariant, show it in the initial state and show how every permitted operation preserves it. For an approximate result, propagate the losses to the quantity used by the receiver. For a sampler or statistical estimator, compare the distributions or estimation properties. Use the mathematical, numerical or empirical method appropriate to that claim.
 
@@ -109,7 +109,7 @@ For example, a required binary sampler gives output 1 with probability 0.5. Supp
 
 When the requested result contains several random components, compare their joint behavior. Suppose the target is a pair of independent fair bits. Preparing one fair bit B and returning (B,B) gives the right distribution at each output separately. But the target assigns probability 1/2 to unequal outputs; this system assigns probability 0. Using two independent draws gives each of the four pairs probability 1/4 and restores the requested result. The realization must provide that joint sampling behavior. When its observations are dependent, use the joint law or change how the second component is obtained.
 
-Choose changed cases from consequential features of the arrangement, such as an endpoint of the command range, a different initial state, overlapping actions or indication error. A permitted input with a confirmed output outside tolerance refutes a claim that every execution meets it. Establish the input, output reading and operating conditions needed for that comparison. A pair of different draws can be entirely consistent with a probabilistic guarantee. Use the sampled outcomes and their probability law for the distributional question.
+When a case can distinguish competing accounts of the realization, choose it from features that matter to the requested result, such as an endpoint of the command range, a different initial state, overlapping actions or indication error. A permitted input with a confirmed output outside tolerance refutes a claim that every execution meets it. Establish the input, output reading and operating conditions needed for that comparison. A pair of different draws can be entirely consistent with a probabilistic guarantee. Use the sampled outcomes and their probability law for the distributional question.
 
 Separate three possible outcomes:
 
@@ -129,7 +129,7 @@ When adapting the formulation and the apparatus together could improve the resul
 
 #### C.29.3:4.7 - Return the result at the strength obtained
 
-Give the usable realization, input conditions, interpreted consequence and the change that would require reconsideration. Preserve the derivation or operating explanation at the depth needed by its receiver; a short calculation may be enough.
+Give the usable realization and the conditions that make its result interpretable. For an execution order, prepare the specified input, perform the operations and return the interpreted result. When designing continuing service, establish how preparation, operation and readout remain available across the admitted histories and how service can resume within the promised time. When entrusted with operating it, use the available observations to act or secure the required response from its responsible operator in time. Establish whether the promised behavior continued or was restored. A claim about service already provided needs evidence from the period concerned. A question confined to the design can be settled from its operating conditions.
 
 A conditional design can finish before a device is built. An observed execution can establish a result under its conditions. An identified incompatibility can stop an unsuitable implementation and open another. Further information or assurance is obtained when the receiving use requires its contribution.
 
@@ -227,7 +227,7 @@ Every operation moves one existing card between states. Entry requires its exclu
 
 After two cards have been issued, one visitor may be inside and the other waiting outside. Then F = 1, R = 1, I = 1 and E = 0. The count of unavailable cards is 2, while occupancy is 1. Reading occupancy as 3 − F would be wrong. That count is an upper bound and equals occupancy when R = E = 0.
 
-At the shared issuing point, a free card can be exclusively reserved for the next admission under this procedure. If all three cards are issued and none is free, another reservation must wait. The room itself could be empty with all three cardholders still outside, or full with all three inside. The free-stock count settles whether another card can be issued now. With all three cards free, the room is known to be empty. When several occupancies fit the available count and the exact number matters, count the visitors inside or reconcile entries and exits to the same instant.
+An entrance with access to a free card can reserve it for one visitor. If all three cards are issued and none is free, another reservation must wait. The room itself could be empty with all three cardholders still outside, or full with all three inside. The total free-stock count tells whether any card remains to be issued. To issue one at a given entrance, that entrance needs access to it. With all three cards free, the room is known to be empty. When several occupancies fit the available count and the exact number matters, count the visitors inside or reconcile entries and exits to the same instant.
 
 A second entrance can share the same stock or receive a partition of it, such as two cards at one entrance and one at the other. Both preserve the total of three. Giving the second entrance three copied cards instead permits six simultaneous admissions, despite each attendant following their local procedure.
 
@@ -255,7 +255,7 @@ Apply the checks to the realization and use. Their answers can remain in the wor
 | CC-C29.3.2 - Input preparation | A way to prepare each claimed input, with its range, initial state and consequential loss. |
 | CC-C29.3.3 - Executing actions | System actions and state changes that perform the operations, including relevant intermediate states and shared access. |
 | CC-C29.3.4 - Interpretation | The obtainable state or indication and the relation that turns it into the result used. |
-| CC-C29.3.5 - Scope of comparison | A constructed case and the argument or evidence supporting the claimed input or behavior scope. |
+| CC-C29.3.5 - Scope of comparison | The comparison of preparation, operation and readout has grounds for the claimed inputs or histories. A case can expose an uncertain connection. A claim about completed operation has evidence for the particular work. |
 | CC-C29.3.6 - Changed conditions | Which preparation, execution or interpretation must be reconsidered when range, timing, ordering or uncertainty changes. |
 | CC-C29.3.7 - Usable outcome | A sufficient realization or interpreted consequence, or a named incompatibility with the next repair. The strength of the claim matches its grounds. |
 

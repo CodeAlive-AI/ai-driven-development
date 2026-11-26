@@ -8,7 +8,7 @@ FPF's architectural guidance concerns how such contributions work together. In t
 
 In FPF terms:
 
-- system-role kinds distinguish recurring work-facing contributions, while system-role assignments identify which systems are assigned to them;
+- a local system-role kind classifies systems by a criterion based on the required contribution. A separate assignment establishes which system has been entrusted with that role for the work;
 - Methods and MethodDescriptions distinguish a reusable way of doing from a claim-bearing account of it;
 - Work patterns distinguish performed Work from plans;
 - evidence and assurance guidance helps make a claim’s grounds and reliance limits inspectable;

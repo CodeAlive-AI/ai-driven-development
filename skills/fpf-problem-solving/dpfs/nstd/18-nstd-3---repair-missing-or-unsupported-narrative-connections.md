@@ -71,7 +71,7 @@ Examine how a connector works in its sentence before choosing a repair.
 | "shows that" | What does the observation, argument or example establish? | Match the conclusion to its grounds. Use `A.10` when the connection to the evidence needs recovery or must be reproducible. |
 A proof may be presented as a sequence of questions and inferences, and an architecture choice as a comparison of trade-offs. If you invent a scene of discovery to illustrate a proof, distinguish the imagined events from the premises and inferences that establish the result.
 
-Make the required reconstruction concrete. For example, ask a reader to do one of the following.
+Derive the reconstruction from the reader’s job. The task may supply a kind of connection and still leave the reader to identify which events it connects or what supports it. Leave open whichever of these choices the reader is to make. Name the connection itself when the job is to explain one already identified. Each question below leaves some work to the reader. Choose its wording according to which connection the reader is to identify or explain.
 
 - Name the proposed mechanism and the relation still unresolved.
 - In a live account, identify an observation, an inference and a prediction.

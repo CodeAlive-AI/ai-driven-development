@@ -2,7 +2,7 @@
 
 ### MMP.Reference:3.1 - Form the first account and recover its interpretation
 
-If there is no mathematical question yet, use B.5.FM: identify the participants, propose the relations relevant to the difficulty, work a small consequence and return it to the question. B.5.TU helps when an available theory supplies those relations. Mathematical Thinking provides constructions of objects, operations, representations and arguments when the needed mathematics itself must be developed.
+If there is no mathematical question yet, use B.5.FM: work out which subject distinctions the answer depends on, choose a relation that preserves them and derive a consequence for the receiving use. An argument for a whole class or a sufficient bound can answer the question directly. A small instance can expose a missing distinction. B.5.TU helps when an available theory supplies those relations. Mathematical Thinking provides constructions of objects, operations, representations and arguments when the needed mathematics itself must be developed.
 
 Before choosing variables, describe an answer that would let the recipient act or explain the outcome. Which objects, operations and relations could change that answer? A succession of operations may require matching an output of one to an input of the next. A rate or an average needs a unit. For example, one request can generate several operations and records. Mean elapsed time per request and mean duration per operation answer different questions. If one operation serves two requests, the work done once and the results received by the two recipients have different units. Establish the connections needed for the intended calculation or return the result under the stated assumptions.
 

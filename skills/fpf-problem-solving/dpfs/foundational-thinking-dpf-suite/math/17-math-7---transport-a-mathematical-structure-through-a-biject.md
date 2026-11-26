@@ -157,6 +157,8 @@ Bijections give full recovery on the declared sets. Many useful summaries and ap
 
 ### MATH.7:7 - Conformance Checklist
 
+For a claimed transport, check the conditions below. To demonstrate an obstruction to a proposed identification, establish which required inverse or preservation condition fails.
+
 - The receiving question determines the operations, constants and relations to carry.
 - Both inverse equations hold on the sets used by the result.
 - Each receiving operation uses the appropriate input and output maps, including transported domains for partial operations.

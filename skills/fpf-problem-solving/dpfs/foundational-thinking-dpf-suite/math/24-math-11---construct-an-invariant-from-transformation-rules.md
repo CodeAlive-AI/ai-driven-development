@@ -10,7 +10,7 @@ Use this pattern when a mathematical construction can take many steps and you ne
 
 Here an **invariant** is a function whose value is unchanged by each allowed transformation. The method constructs that function from the transformations. It starts with a small family of expressions, derives conditions on their coefficients and uses the resulting expression in a proof. Conserved weighted totals, polynomial relations and residues provide different ways to carry out that construction.
 
-**First useful move:** write one allowed change, substitute it into a candidate expression and calculate what changes. Derive coefficient conditions that make the change vanish, then include the remaining allowed rules. Once preservation holds for them all, compare the invariant at the starting and proposed states.
+**First useful move:** write one allowed change, substitute it into a candidate expression and calculate what changes. Derive coefficient conditions that make the change vanish, then include the remaining allowed rules. Once preservation holds for all permitted changes, the expression and proof can answer a request for an invariant. If the question concerns a proposed state, use the invariant at the relevant starting and proposed states.
 
 The reader needs substitution, elementary algebra and the arithmetic used by the example. The polynomial branch uses collection of like terms and linear equations; the residue branch explains arithmetic modulo two. An available invariant can be used directly after checking that it fits the allowed transformations. When a short explicit sequence already answers the question, constructing an invariant may add no useful result.
 
@@ -41,7 +41,7 @@ The result is a constructed invariant with its preservation argument and a conse
 
 Let X be the mathematical state set, and write x → y when one allowed step takes x to y. Retain every condition that enables a step and every component of the state that its calculation uses. A rule may be given as y=T(x) with a condition on x, or as a relation allowing several possible successors.
 
-Name the initial state a and the target question. You may need to exclude a state b, derive the value of an accumulated quantity after a stated number of steps, or restrict the candidates worth searching.
+Identify the allowed state set and the target question. A law of preservation can be requested for any starting state. Name a particular initial state when it enters the conclusion. You may need to exclude a state b, derive the value of an accumulated quantity after a stated number of steps, or restrict the candidates worth searching.
 
 For an invariant I, the required preservation statement is:
 
@@ -178,10 +178,10 @@ An easily generated invariant may have little value for the target question. Com
 
 For the construction and use at hand:
 
-1. The state set, initial condition and every allowed transformation are recoverable.
+1. The state set, every allowed transformation and any initial condition used in the conclusion are recoverable.
 2. The candidate expression family and its value arithmetic are stated.
 3. The preservation equations cover all allowed rules, with any stronger polynomial-identity requirement visible.
-4. The constructed expression satisfies those equations and gives the stated initial value.
+4. The constructed expression satisfies those equations. For an initial-value claim, it gives the stated value on the specified starting state.
 5. The finite-sequence argument supplies the reach of the conclusion.
 6. An impossibility claim separates invariant values; a reachability claim also has its sequence or sufficient theorem.
 7. A failed invariant search retains the family and scope searched.

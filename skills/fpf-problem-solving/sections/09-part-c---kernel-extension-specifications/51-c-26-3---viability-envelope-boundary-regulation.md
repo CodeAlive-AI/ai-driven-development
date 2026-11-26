@@ -6,7 +6,7 @@
 
 ### C.26.3:1 - Problem frame
 
-Use this pattern when architecture work is maintaining, recovering, or changing viable operating ranges across boundaries. The working problem is to keep a bundle of characteristics inside a viable region while disturbances, probes, candidate interventions, boundary conditions, and operating regimes change.
+Use this pattern when protecting a function across boundaries depends on several conditions holding together under disturbance. Start with the work the recipient needs kept possible. Its requirements determine what state to assess, what a proposed method must preserve, and which observations and actions the operating arrangement must provide.
 
 **What goes wrong if missed.** The team treats one dashboard value, stability slogan, or local metric as viability, while another envelope variable, intervention cost, boundary condition, or failure mode is already breaking the protected promise or function.
 
@@ -152,7 +152,7 @@ The first useful move is to replace a one-scalar stability account with an inspe
 
 Envelope-regulation sequence:
 
-1. Point the local viability-bearer position to one object.
+1. Starting from the work or result to be protected, follow a possible failure to the participants and connections that can affect it. Identify which object the viability claim concerns.
    - For a System, cite its A.1 identity.
    - For selected organization, cite one A.22 `U.Structure` through independently identified constituents, selected obtaining relation occurrences, constraints as applied, and one named selection-use frame; a role-kind/assignment list is insufficient.
    - For a population or market slice, state its declared domain and effective reference scheme, membership or scope, and identity basis.
@@ -170,7 +170,7 @@ Envelope-regulation sequence:
 
 Ordinary output: explain the viability bearer, variables and bounds, disturbance, observations and failure condition. When regulation is proposed, add the identified proposal, trade-off and adaptation cost. A record is useful when its layout helps recover those distinctions; ordinary prose can preserve them.
 
-Finish with the supported diagnosis or the proposal it warrants. Use the proposal's direct pattern for its development and any later execution or change; keep the supported envelope claim separate from those results. If its necessary grounds are missing, retain only the narrower supported claim or return the missing basis.
+For a diagnosis, return the supported state and any limit on that conclusion. To design a way to regulate the service, work back from a threatened condition to a change within the responsible performer's reach. Establish which observations can arrive before action is needed. For a guarantee, determine whether an available response protects the result across the situations still indistinguishable at that time. If they require different responses, find a timely distinguishing observation or another way to protect the result. For a risk or frequency target, assess the response under the conditions and tolerance that target specifies. A qualified existing operating method may already supply the answer. For an operating assignment, use the resulting method in the work, observe the protected result and respond to departures while the obligation lasts. The proposal, its actual performance and the service obtained each have their own grounds.
 
 #### C.26.3:4.6 - Viability envelope record
 
@@ -231,7 +231,7 @@ Use the minimal reading that carries the case:
 | Homeostatic envelope | The target is to keep a bundle inside a stable range under disturbance. | State variables, range, disturbance, sensor, candidate intervention with its recovered direct object, and failure mode. |
 | Allostatic envelope | Function is preserved through one or more separately governed changes. | State the proposal's Method or description, setting proposal, WorkPlan, access or permission claim, or Bridge proposal or description; separately state any dated Work, actual transformation or other change, obtaining relation occurrence, resulting state, and moved cost. |
 | Probe-coupled viability | The measurement, dashboard, review, or readiness check changes the envelope it reports, but its output is used as a passive read for the decision. | Coordinate with `C.26.1`. |
-| Enacted viability state | Coordinated work, behavior, or traces support a collective-state reading relevant to the envelope that no single report or export faithfully carries. | Coordinate with `C.26.2`. |
+| Enacted viability state | The envelope assessment depends on how parts of a collective actually worked together. | Use `C.26.2` to establish what the observed activities and their connections warrant. |
 
 Use allostasis only when stability through change is the useful architecture reading.
 
@@ -265,7 +265,7 @@ Use the translated source contribution to explain an envelope constraint or choo
 
 In this constructed case, a platform team must preserve checkout service during a traffic spike. The receiving service requirement specifies both timely responses and sufficiently current payment-failure status. The team traces a proposed increase in cache duration: serving more requests from cache may reduce delay, while retaining old status longer can mislead customers and increase support contacts.
 
-`CheckoutSystem-1` is independently recognized under A.1 as the deployed System. `CheckoutPromiseContent-1` separately states the checkout outcome and reliability on which customers may rely. For this example, the receiving requirement sets the latency limit at 250 ms for the highest five-minute p95 in the incident hour and the stale-status limit at 1% of statuses in that hour. The support limit is derived from the provision reserved for this incident: four available specialists can each handle up to five comparable contacts within the hour under the stipulated workload, giving reserved capacity for 20. These are constructed requirement and capacity premises, not limits inferred from the observed averages.
+`CheckoutSystem-1` is independently recognized under A.1 as the deployed System. `CheckoutPromiseContent-1` states the checkout outcome and reliability on which customers may rely. The receiving requirement sets the latency limit at 250 ms for the highest five-minute p95 in the incident hour and the stale-status limit at 1% of statuses in that hour. Four specialists can each handle up to five comparable contacts during the hour, so total handling cannot exceed 20. For the example, suppose they can each handle five concurrently with the reserved equipment, access and time. This makes 20 jointly attainable and establishes the support bound used below. A shared resource could lower the attainable capacity while leaving the upper bound valid.
 
 Compare two matched one-hour windows under the stipulated spike condition, before and after the cache-setting change:
 
@@ -279,7 +279,7 @@ In this constructed case the highest five-minute p95 falls from 350 to 180 ms. I
 
 The decision combines properties of CheckoutSystem-1 with demand on the incident-support team. The support figure counts contacts requiring handling; a count of completed handling would concern actual support Work. Operator attention, if added, would concern the people handling those contacts. Fulfillment of CheckoutPromiseContent-1 still needs its own evaluation.
 
-Suppose the acceptable stale-status bound is missing. Demand of 45 contacts already exceeds capacity for 20, so the joint requirement failed in this hour. Keep the observed stale-status rate of 3%. Recover the freshness requirement if deciding whether that rate also fails or which remedy to pursue.
+Suppose the acceptable stale-status bound is missing. Demand of 45 already exceeds even the upper bound of 20 contacts the specialists could handle. That is enough to rule out serving all demand that hour, even if their exact attainable capacity is unknown. Keep the observed stale-status rate of 3% and recover its governing requirement when deciding whether that rate also fails or which remedy to pursue.
 
 A dashboard query is an observation operation unless a behavior-changing effect is separately established.
 
@@ -288,6 +288,8 @@ For this hour the team can report that service fell outside the required bounds.
 Recover the proposal's object, adaptation cost, applicable authority and realization latency before choosing it; a planned enactment belongs in a WorkPlan. Missing intervention evidence leaves the diagnosis useful.
 
 If support capacity is independently revised to 50 comparable contacts per hour under the same conditions, the same demand of 45 contacts satisfies that revised constraint, but the 3% stale-status result still exceeds the retained 1% requirement.
+
+Suppose the team is also asked to operate checkout through the next spike. An alert calculated at the end of the incident hour comes too late to prevent stale replies in that hour. Work back from those replies to the reads that can return an old payment status. The team can consider bypassing the cache for those reads while keeping it for other requests. To use this rule, establish that these reads can be recognized before the response and that the source reached by the bypass is current often enough to meet the 1% stale-status limit for the service. Check that latency and support demand also meet their bounds over the load conditions the service promises to cover. Once those conditions are established, the authorized operator can enable the rule in time, check the three bounds in use and respond when conditions change. A claim about the service actually delivered during the spike relies on observations or bounds covering that period.
 
 
 
@@ -316,7 +318,7 @@ Use `C.25` alone when one quality bundle or metric can be handled without envelo
 | CC-C26.3.11 | QL wording appears only when probe, order, export, coarsening, or incompatible frame interaction remains load-bearing and satisfies C.26's contextual-model obstruction condition. |
 | CC-C26.3.12 | Rate/inertia/damping/effort and second-order dynamics variables appear only when load-bearing. |
 | CC-C26.3.13 | Homeostasis, allostasis, active inference, and Markov-boundary wording are restored into FPF subject patterns before they carry the claim; Markov-blanket wording does not by itself create boundary, interface, component, agency, or viability authority. |
-| CC-C26.3.14 | The result retains the supported diagnosis or proposal and identifies any missing bound or effect that prevents the required viability conclusion. |
+| CC-C26.3.14 | The diagnosis or proposal identifies any unresolved bound or effect that matters to the protected result. An operating method identifies the timely information and actions it needs. A claim that regulation took place or maintained the required service has grounds for that work or outcome. |
 
 ### C.26.3:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -390,7 +392,7 @@ Apply these source contributions:
 **General relations.**
 
 - Builds on: `C.26`, `C.25`, `U.Dynamics`, `A.6`, `A.15`, `C.16`, `A.10`, `B.3`, `A.3`, `A.19`, `C.18`, `C.19`.
-- Coordinates with: `C.26.1` when a state-changing probe's output is used as a passive read for the decision; `C.26.2` when coordinated work, behavior, or traces support a collective-state reading that no single report or export faithfully carries.
+- Coordinates with: `C.26.1` when a state-changing probe's output is used as a passive read for the decision; `C.26.2` when the observations of parts and their connections must support a claim about the collective.
 - Does not replace: ordinary quality-bundle patterns, generic control theory, full FEP doctrine, or biological homeostasis claims outside FPF bridge and loss discipline.
 - Name: `Viability-Envelope Boundary Regulation` names architecture work over a viability envelope and boundary/action conditions.
 

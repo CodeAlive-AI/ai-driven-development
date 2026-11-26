@@ -208,7 +208,7 @@ Examples of the decision difference to recover, whether the ordinary account is 
 | False reading | Repair | Decision diff |
 | --- | --- | --- |
 | Dashboard passively shows release readiness. | The dashboard reports the recorded checks. Examine whether publication also changed how people performed or recorded the work. | Use checks that bear on the release decision. If reporting practices changed, establish which readings remain comparable. |
-| Workshop discovered the boundary. | The record identifies the boundary participants agreed to use. Its earlier use and the workshop’s effect on practice are separate claims. | Use the agreement for decisions it covers. Consult earlier work to determine whether people already used that boundary. |
+| Workshop discovered the boundary. | Establish whether the workshop record contains a proposal or a decision by participants authorized to settle the boundary for this use. | An agreement can govern the cases within its scope. To establish earlier use, or the workshop’s effect on practice, examine the relevant work. |
 | Service is healthy because latency is green. | The latency reading meets its bound. The service commitment also covers the currency of information shown to customers. | Check that condition before confirming the joint commitment. A verified breach already settles a decision requiring both. |
 | Summary preserves architecture state. | The summary omits distinctions from the source. | Use it where the retained distinctions support the receiving decision; consult or reconstruct omitted detail when that decision depends on it. |
 
@@ -388,7 +388,7 @@ Evidence-use class scales by use:
 
 #### C.26:4.5 - State-representation coarsening card
 
-Use this card when a fuller state representation is too detailed, unstable, unavailable, or expensive for the current bounded decision and a reduced-detail state representation is useful only under a declared QL cue.
+Use this section when a fuller state representation is too costly or detailed for the work and you need to establish what a coarser representation can still explain or support. Begin with the ordinary account of the reduction. Use the QL lens if the remaining obstruction meets the conditions in section 4.
 
 For a shorter rendering of the same claims, use `A.6.3.CSC`. For another way to represent the same selected entity, use `A.6.3.RT`. When comparing a more abstract model with a more concrete one, use `B.5.MR:4.2–4.3` to establish what the concrete model preserves and which alternatives it excludes. `A.19` and `U.Dynamics` govern state and change. Use C.26 when the decision also encounters the contextual-model obstruction tested in section 4.
 
@@ -407,14 +407,16 @@ Question-to-pattern map:
 
 To decide from a coarser reading, identify what detailed states or histories could produce it under the model. If none can, check the reading and the model before using them together. If every compatible history permits the proposed action, the missing detail cannot rule out that action. A shared reading may still leave open which action is best. If one compatible history permits an action and another rules it out, recover what distinguishes them before relying on the reading for that choice. For a decision based on probability or expected value, use the applicable probability model and its evidence.
 
+When the commission is to explain a result, follow the proposed explanation through the histories that the coarser representation treats alike. Different mechanisms can warrant the same immediate action. A common ground for the result may explain it across all those histories. If the recipient needs to know which mechanism operated on this occasion, recover the distinguishing relation or report the alternatives the evidence still supports.
+
 For a bounded coarsening use, start with these questions. An adequate ordinary explanation can answer them without a separate card.
 
 | Mini-entry | Question |
 | --- | --- |
 | Source | Which fuller state representation, trace set, model, measurement scheme, or dynamics account loses distinctions in the shortcut? |
-| Shortcut | Which smaller representation is being used instead, and for which bounded decision or action class? |
+| Shortcut | What smaller representation will the recipient use, and which explanation, comparison or action must it support? |
 | Loss | Which precision, distinction, uncertainty, comparability, traceability, or relation structure is lost? |
-| Admissible use | Which bounded decision, probe, comparison, time-window reading, or action class remains admissible for this reduced-detail state representation? |
+| Admissible use | Which requested conclusion, explanation or action does the reduced representation still support, and on what grounds? |
 | Return condition, when needed | Which change in premises or receiving use would require recovering omitted detail or re-evaluating the shortcut? |
 
 When the receiving use needs a more detailed account of the shortcut, add the relevant distinctions below to that same explanation.
@@ -424,10 +426,10 @@ When the receiving use needs a more detailed account of the shortcut, add the re
 | Source representation | Which fuller model, state space, trace set, measurement scheme, probability model, dynamics model, or representation loses distinctions in the shortcut? |
 | Coarsened representation | Which typed, symbolic, finite, operator-like, Hilbert-like, rough-set, low-bit, or source-loss-affected representation is used instead? |
 | Shortcut mechanism | Which projection, typed-state reduction, finite-dimensional representation, operator-like update, rough-set approximation, state aggregation, compression, or linearization is doing the representational work? |
-| Shortcut purpose | Which bounded decision, probe, comparison, time-window reading, or action class needs the reduced-detail state representation? |
+| Shortcut purpose | What work requires this representation, and what must the recipient be able to establish or do with it? |
 | What is lost | Which precision, distinction, uncertainty, compatibility, traceability, causal detail, or cross-context relation is lost? |
-| Loss budget | How much loss is accepted for this decision, probe, comparison, route, or time window? |
-| Admissible use | For which decisions, probes, comparisons, candidate-route selections, or time windows does the shortcut preserve the required distinctions? |
+| Loss budget | Which distinctions, accuracy and grounds must survive for the commissioned use? |
+| Admissible use | For which conclusions, explanations or operations does the shortcut preserve the distinctions and grounds they require? |
 | Non-admissible use | For which claims, audits, bridges, comparisons, future actions, or high-stakes decisions does the shortcut lack the required distinctions, source support, or recoverability? |
 | Ordinary explanations still active | Which ordinary abstraction, causal abstraction, approximate causal abstraction, state aggregation, representation learning, POMDP simplification, heuristic compression, CSC, RT, or low-bit implementation account remains sufficient if the QL cue is absent? |
 | Evidence or formal source | Which model, trace, experiment, source, or formal argument supports the shortcut? |
@@ -584,7 +586,7 @@ LLM-mediated work cycles can involve false passive reads, overused summaries, un
 | LLM summary of an architecture record | `A.6.3.CSC`, `A.6.3.RT`, and `A.10` as applicable; overuse of a summary alone does not activate QL coarsening. |
 | Prompted model evaluation changes model or prompt behavior | `C.16` / `B.3` first; `C.26.1` only if the eval output is treated as a passive model-state read. |
 | Agent work cycle "discovers" requirements | `A.15` / `A.10` / `A.6` first; `C.26.1` only if the interaction created the requirement framing. |
-| Synthetic personas "represent market state" | `A.10` / `B.3` first; `C.26.2` only if a low-recoverability state-reading claim is bounded with non-admissible use visible. |
+| Synthetic personas "represent market state" | A simulation establishes what the model produced. A claim about actual customers needs evidence or a warranted model relation covering that population. An order to hear from particular respondents calls for their own responses. Use `A.10` or `B.3` for the evidential use and `C.26.2` where a bounded, low-recoverability state reading is at issue. |
 
 ### C.26:9 - Consequences
 

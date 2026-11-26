@@ -27,14 +27,14 @@ Use available data at their actual age and scope. When information is delayed or
 
 #### GOALS.4:4.2 - Interpret what happened before selecting the repair
 
-Compare the actual result with the achievement basis and the relied-on explanation. A brief review can establish what changed, what is now expected, what explains the difference and which decision follows. Investigate rival explanations only when they lead to different useful responses. The following distinctions direct the investigation.
+Compare what happened with the achievement criterion and the explanation on which the goal relied. Establish whether the result settles the question the recipient asked. Examine competing explanations when a difference matters to the commissioned finding or could change a decision. A report of achievement may already be complete while the cause remains open.
 
 | What changed or failed | Receiving response |
 | --- | --- |
 | Evidence is missing, stale or refers to another population. | Repair or qualify the observation before making the dependent judgement. |
 | Suitable action was not performed because a needed condition was unavailable. | Obtain the condition, change allocation or revise the commitment through its holder. |
-| Performed action does not obtain the expected result. | Examine the method and causal assumption; select another way or a warranted inquiry. |
-| The goal is difficult but still valued, and useful means remain available. | Keep the aim and revise the next action, help or provision. |
+| The action was performed and the expected result did not follow. | Establish what that outcome shows about the goal and the method under the agreed conditions. Report it. If another decision remains, consider continuing, changing the method, investigating the cause or stopping on the grounds available. |
+| The goal remains difficult and worthwhile, and useful means are available. | Keep a justified next action or revise the action, help or provision where the evidence warrants a change. |
 | The recipient's need or governing priority changed. | Reconsider the goal with the authorized owner and affected participants. |
 | The result meets the achievement criteria for the specified population and period. | Close the finite goal or accept this period of service. Continue outstanding or recurring duties under their terms until their agreed ending or an authorized change. |
 
@@ -70,9 +70,9 @@ Visible targets can focus attention away from people who bear the cost or from o
 
 ### GOALS.4:7 - Conformance Checklist
 
-- Can the observation still affect a useful action in time?
-- Does the diagnosis distinguish the premise whose failure changes the response?
-- Were the continuations compared from present conditions, including other goals and remaining obligations?
+- Does the observation establish the commissioned result? Where action is still needed, can the person responsible receive and use the observation in time?
+- When an explanation is needed, does the evidence distinguish the grounds that matter to it or to the ensuing action?
+- Where a choice of continuation remains, what distinguishes the feasible courses under current conditions, other goals and outstanding commitments?
 - Is a pause, completion, cancellation or revised promise reported with its actual meaning?
 - Does the advice identify who is affected, what the existing terms already determine and who may make any decision still needed? If the change is reported as effective, did it take effect under those terms, including any required notice?
 

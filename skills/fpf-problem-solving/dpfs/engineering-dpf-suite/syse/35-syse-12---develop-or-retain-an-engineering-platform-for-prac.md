@@ -345,8 +345,6 @@ source defeats the particular dependency or evidence distinction being carried a
 - `SYSE.11` may use a readiness assessment only for capability, conditions, and participation or provision
   claims supported before its Work. A later use assessment supplies grounds for subsequent decisions;
   judge the earlier reliance against the grounds available when it occurred.
-- Neighboring DPFs retain their own Methods and decisions. These include Organization Change, Operations,
-  Administration, application-profile engineering, security, safety, law, finance, procurement, and governance
-  whenever the current question belongs there.
+- Neighboring DPFs supply Methods for Organization Change, Operations, Administration, application-profile engineering, security, safety, law, finance, procurement and governance. When one of these contributions requires a decision, follow the applicable delegation or governing requirement to whoever can make it.
 
 ### SYSE.12:End

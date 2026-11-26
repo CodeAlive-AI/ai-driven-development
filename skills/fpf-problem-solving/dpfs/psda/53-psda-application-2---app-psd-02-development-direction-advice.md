@@ -57,13 +57,13 @@ The adviser can already return the following comparison limit.
 
 The committee can use this account of the remaining directions and the comparison still missing. To rank them, the adviser needs a qualified comparison of the named options. Use an available result if it meets the order, or obtain the comparison the adviser still needs. OCE.8 can guide the work. A supplier can choose a suitable method where the commission leaves this open. If the committee ordered a new comparison under a specified protocol, establish that it was carried out and recover its conclusion.
 
-In a separate hypothetical continuation, qualified arrangement and security results cover the three directions. They exclude the specified provider because it cannot preserve the security boundary. Internal development is feasible. A bounded trial of the mixed arrangement could show whether permitted assistance reduces the recovery queue without excessive checking or a weaker fallback.
+In a separate hypothetical continuation, qualified arrangement and security results cover the three directions. They exclude the specified provider because it cannot preserve the security boundary. Internal development is feasible. A bounded trial of the mixed arrangement could show whether comparable critical incidents are restored by the agreed deadline without excessive checking or a weaker fallback. The committee chose recovery time as its first question about the mixed arrangement. A shorter queue of routine incidents could leave critical recovery unchanged. To compare total service availability over the ninety days, it would also need the frequency and duration of interruptions.
 
 The case also supplies the trial question, the observations that could distinguish the alternatives, resources, exposure and stop conditions. Compared with committing now, a feasible trial can obtain the needed information at acceptable cost while internal development remains available. The team has addressed a disclosed provider interest under the service agreement.
 
 The adviser draws on [PSDA.6](23-psda-6---represent-values-and-trade-offs.md) through [PSDA.9](26-psda-9---test-robustness-and-sensitivity-of-decision-alterna.md) for the comparisons needed here. With [PSDA.14](30-psda-14---prepare-and-return-a-decision-support-recommendati.md), the adviser explains the advantage, the feasible rival, the uncertainty and the protected conditions.
 
-> Consider the bounded mixed-arrangement probe first and retain internal development. The supplied arrangement, probe and security results support this information-gaining recommendation for the named reliability use. Throughput effect remains uncertain. Preserve continuity, security and the budget; reconsider when representative recovery evidence or a relied-on premise changes.
+> Consider the bounded mixed-arrangement probe first and retain internal development. The supplied arrangement, probe and security results support this information-gaining recommendation for the named reliability use. The effects on critical-service reliability and on throughput remain open. Preserve continuity, security and the budget; reconsider when representative recovery evidence or a relied-on premise changes.
 
 The separate security result excludes this provider. The internal/mixed comparison covers the two remaining directions for this use. Another provider or a materially different trial needs its own basis. The committee can receive the advice before considering or authorizing a probe. Evidence that the probe ran and produced an effect would concern later work.
 
@@ -86,7 +86,7 @@ A notice identifies configuration B. An observation from B is available, while t
 
 If the candidate generator, its archive or its open-ended search changes, establish what changed in its operators, descriptors, retained candidates or governing policy and which use depends on it.
 
-If an expected observation is missed, report which use now lacks evidence. Close the follow-up when the decision has ended and there is no continuing service or protection duty.
+If an expected observation is missed, establish whether other evidence supports the affected use and report any remaining gap. Account separately for an observation owed under the agreement. Close follow-up when the decision has ended and applicable observation, service and protection undertakings have been fulfilled or otherwise settled on their terms.
 
 
 

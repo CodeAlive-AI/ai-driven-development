@@ -36,7 +36,7 @@ The carrier's behavior also matters. Playing a recording faster changes its audi
 
 ### NOT.8:4 - Solution
 
-**Select the temporal or embodied distinction → establish references → segment and encode → construct the reading or enactment route → vary a consequential condition → retain a usable expression.**
+**Select the temporal or embodied distinction → establish its references → segment and encode the expression → construct the reading or enactment procedure → establish what the recipient can recover or do under its conditions.**
 
 #### NOT.8:4.1 - Select what is expressed and what the reader should do
 
@@ -82,7 +82,7 @@ A demonstration can be part of the supplied interpretation. Identify what it tea
 
 #### NOT.8:4.5 - Challenge the relation with a meaningful change
 
-Carry out or inspect a small use and a contrast that can change its result. Shift a cue while retaining its identity, change a body's orientation, remove a timing reference or ask for simultaneity rather than order. Choose a contrast grounded in the intended operation.
+For a specified signal, derive what the reader can recover from its marks, timing rule and available reference. For a family of signals, establish which distinctions its reading procedure preserves throughout the admitted conditions. When a contrast could resolve a disputed reading, possible tests include shifting a cue while retaining its identity, changing a body's orientation or removing a timing reference. Choose one whose outcome matters to the intended operation.
 
 Distinguish reading from successful physical performance. A correctly decoded sequence can still be infeasible for a particular body or controller. Locate that missing realization contribution rather than changing the meaning until the observed performance appears correct.
 

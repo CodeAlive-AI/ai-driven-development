@@ -3,7 +3,7 @@
 > **Type:** Method pattern
 > **Status:** Stable
 
-> **Working result:** a **Method-focus result** that selects one Method, an established family or local grouping, a set of Method relations, or a non-Method return for one project decision. The result preserves every Method or candidate-account status and names one observation that would reopen the focus.
+> **Working result:** a **Method-focus result** that selects a Method, a proposed Method to investigate or construct, an established family or local grouping, a set of Method relations, or a non-Method return for one project decision. The result preserves every Method or candidate-account status and names one observation that would reopen the focus.
 
 ### C.39.MF:0 - Use This When
 
@@ -11,7 +11,7 @@ Use this pattern when a project says that its “methodology”, “process”, 
 
 Begin with the result that is missing, late, unsafe, or too costly and the Work in which it matters. Identify the Methods already used there and any accounts that still need examination. What could change the decision about that result: improving one Method, changing how Methods work together, or securing the tool, capability or service the work requires?
 
-The first useful move is to compare the plausible focus options: one Method, an established family or project-local grouping, named Method relations, or a non-Method return. This gives later repertoire, qualification, or architecture Work a supported subject and the relations it needs to address, without inventing a Method or a composite.
+The first useful move is to compare the plausible focus options: one Method, an established family or project-local grouping, named Method relations, or a non-Method return. A project can choose a proposed whole as the subject of design or investigation while leaving its Method status open. To rely on it as an established way in current work, recover the grounds for that status and use. This gives later repertoire, qualification, or architecture Work a supported subject and the relations it needs to address, without inventing a Method or a composite.
 
 Do not use C.39.MF merely because one tool failed, one practitioner lacks capability, one document is incomplete, or one project, process, or case view is inconvenient. Return that question to its subject unless changing a Method would change the receiving result.
 
@@ -66,8 +66,8 @@ Retain the dependencies needed for that contribution, including relations among 
 3. **Recover the subjects of the accounts already in use.** For each project, process, case, lifecycle, stage, or workflow description, state what its claims concern, their actual or intended status, the question exposed, and the material omissions. Use `A.15.6` when the label hides the subject. Keep unlike subjects separate; a claimed view additionally needs its viewpoint and `E.17.0` conformance result.
 4. **Recover Method-status candidates.** List Methods already identified under `A.3.1`, candidate Method accounts, established family facts, local groupings, related Methods, and support or capability alternatives. Preserve their statuses.
 5. **Form different focus options.** Include each plausible one-Method, plurality, relation, and non-Method branch. A renamed package or differently drawn view is not another focus option.
-6. **Test family and relation claims.** Apply the rule that defines the claimed family and the applicable relation pattern for each relation. Use `G.5` when the question needs its Method-family registry or selector-facing result. When no identified whole and obtaining relations exist, retain a relation focus or local grouping rather than a composite.
-7. **Choose and record.** Use `C.11` or a domain decision Method to select one focus for the receiving decision. State rejected options, evidence limits, next useful result, and the observation that reopens the focus.
+6. **Test family and relation claims.** Apply the rule that defines the claimed family and the applicable relation pattern for each relation. Use `G.5` when the question needs its Method-family registry or selector-facing result. For use in current work, claim a composite Method only on grounds for the whole and its constituent relations. For design or investigation, a proposed whole can be the focus. State what would constitute it and what still has to be developed or established.
+7. **Choose and record.** Use `C.11` or a domain decision Method to select the subject for the receiving work. State whether the project is choosing an established way to use or choosing what to investigate or construct. State rejected options, evidence limits, next useful result, and the observation that reopens the focus.
 
 #### C.39.MF:4.2 - Record the Result
 
@@ -82,7 +82,7 @@ Retain the dependencies needed for that contribution, including relations among 
 
 #### C.39.MF:4.3 - What Changes in Practice
 
-The project stops asking which named methodology should replace another. It first decides whether the subject is one Method, a governed family or local grouping, relations among several Methods, or a non-Method condition. Downstream Work can address the selected subject and the relations on which its result depends. A useful plurality can remain plural without being packaged as a fictitious composite.
+The project stops asking which named methodology should replace another. It first decides whether the subject is one established Method, a possible whole to design or investigate, a governed family or local grouping, relations among several Methods, or a non-Method condition. Downstream Work can address the selected subject and the relations on which its result depends. A useful plurality can remain plural without being packaged as a fictitious composite.
 
 ### C.39.MF:5 - Archetypal Grounding — EC-417 Release Focus
 
@@ -102,7 +102,7 @@ The PLM, CI, test rig, AI provider, safety capability, and supplier responsibili
 
 | Focus option | Result |
 | --- | --- |
-| one Method: `C-EC-Release-v2` | rejected because the whole is not identified as a Method |
+| one Method: `C-EC-Release-v2` | the project has no grounds to rely on this whole as an established Method for the current release |
 | established release-Method family | rejected because no governed family membership is supplied |
 | project-local `LG-EC417-ReleaseMethods` grouping | retained only as a comparison locator; no family claim |
 | candidate account: `C-AI-Trace-Review` | not selected as the focus because its bounded trace suggestions supply neither the evidence-reconciliation result nor a release-authorization result; candidate-account status is preserved |
@@ -111,7 +111,7 @@ The PLM, CI, test rig, AI provider, safety capability, and supplier responsibili
 
 The schedule puts the planned signature after integration. If integration requires that signature first, the plan conflicts with the required order. If the applicable method permits provisional integration and reconciliation before release, the dates alone leave feasibility open. Recover which evidence rule governs this case. These connections support a Method-relation focus without making the three subjects one Work.
 
-The first result is therefore a Method-relation focus. It creates no fifth Method and no composite.
+The release team can now investigate the Method relation that affects integration. If a later commission asks whether these contributions could form one whole Method, that proposed whole can itself become the design subject. Its constitution and adequacy then have to be established.
 
 Reopen to a test-capability focus if two of the next three comparable delays occur while required evidence is complete and the rig is unavailable.
 
@@ -122,11 +122,11 @@ Reopen to a test-capability focus if two of the next three comparable delays occ
 | package bias | The boundary of a standard, methodology, or tool suite becomes one Method boundary. | Recover the receiving result, Work, Methods, accounts, and support subjects before choosing focus. |
 | management-view bias | A familiar management label fixes every description to one Work or creates a new kind. | Recover the subject from each claim before applying its viewpoint; retain one Work only where the claims concern that Work. |
 | family-language bias | A local shortlist is presented as an established professional family. | Name its criterion and bounded use and retain unresolved family status. |
-| composite bias | Co-use of several Methods becomes a whole Method. | Select a relation focus until whole identity and obtaining relations are separately supported. |
+| composite bias | Co-use of several Methods becomes a whole Method. | For a claim about an existing whole, establish its identity and constituent relations. A project investigating whether the Methods could form a useful whole can select that proposed whole for development. |
 
 ### C.39.MF:7 - Conformance Checklist
 
-- [ ] The Method-focus result names the receiving result, representative Work, and decision.
+- [ ] The selected subject and its status answer the receiving question. The focus can be an established Method to use, a possible Method to investigate or construct, a relation among Methods, or a condition such as access or provision that can settle the work directly.
 - [ ] Every Method and candidate account keeps its prior status.
 - [ ] An established family cites an independent classification or membership basis.
 - [ ] A project-local grouping states its criterion, use, and non-family status.
@@ -142,7 +142,7 @@ Reopen to a test-capability focus if two of the next three comparable delays occ
 | “The process failed, so change the Method.” | Identify the result, Work, view, Method, and non-Method conditions before selecting the subject. |
 | “These methods are our family.” | Use a local grouping unless governed membership is independently established. |
 | “The tracker shows the real process.” | Recover what the recorded claims concern and their coverage and loss; a tracker label establishes neither a Method nor a view. |
-| “Several contributors imply one composite.” | Return a Method-relation focus and send a proposed whole to B.1.5.CM only when that later question is live. |
+| “Several contributors imply one composite.” | Establish the relations for a claim about an existing composite. Use B.1.5.CM to investigate or design a proposed whole when that is the question. |
 | “Choose the smallest item.” | Compare the contribution and full burden of the plausible focus options; retain the dependencies needed for the receiving result. |
 
 ### C.39.MF:9 - Consequences

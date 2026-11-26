@@ -17,7 +17,7 @@
 * aliases remain **local to Contexts**;
 * a changed meaning is recovered under its defining rule and requires a stated decision to revise, replace, split, merge or retire it. A rename cannot supply that decision.
 
-**Applicability.** Use this when changing a source-local expression, an external label or address of a SchemeSenseCell, a Concept-Set row label, or the name of a governed value or description. First say which of these is changing; their identity rules differ.
+**Applicability.** Use this when changing a source-local expression, an external label or address of a SchemeSenseCell, a Concept-Set row label, or the name of a governed value or description. Start with the passage readers will have to interpret and the question they will use it for. Recover which expression, meaning or independently identified value changes. Their identity rules differ.
 
 ### F.13:2 - Problem frame
 
@@ -40,7 +40,7 @@ Readers lose the connection between earlier and later claims when names or sense
 ### F.13:4 - Core idea (didactic)
 
 **Keep the named value, its meaning and its expression distinct.**
-Recover the old and proposed expression, effective ReferenceScheme, local-sense claim, intended use and any independently governed value being named. When only wording changes, record the rename or alias and retain a path for interpreting the old text.
+Recover the old and proposed expression, effective ReferenceScheme, local-sense claim, intended use and any independently governed value being named. Unchanged meaning can support a proposed rename or alias. To report which designation now governs, establish the decision or standing rule that makes it effective for this vocabulary and date. An author with that authority may change their own terminology. A historical inquiry can end with the reading supported by the old edition.
 
 An F.17 SchemeSenseCell is the exact coordinate `<ReferenceScheme by value, LocalExpression, LocalSenseClaim>`. Changing `LocalExpression` creates another cell even when the `<ReferenceScheme, LocalSenseClaim>` projection stays the same. Retain both coordinates in the naming lineage as distinct cells.
 
@@ -115,9 +115,9 @@ A needed relation between different semantic projections is a separate F.9 quest
 #### F.13:9.1 - Pure rename inside a local service vocabulary
 
 *Constructed case:* Under the fixed `ServiceVocabulary-1` reference scheme, the local-sense claim is “a service indicator threshold together with its assessment window”. The old expression is **“SLO”**, the proposed expression is **“service-level objective”**, and both serve the same use of reading a service objective. No change to the objective or assessment rule is proposed.
-**Relation:** `renames("SLO" → "service-level objective")`.
+**Proposed relation.** The editor recommends `renames("SLO" → "service-level objective")` for this vocabulary.
 **Why.** The scheme, sense and use are unchanged. Spelling out the name lets readers see what the abbreviation stands for. A claim about improved recognition by this audience needs evidence of their reading.
-**Effect:** Retain the two exact cells `<ServiceVocabulary-1, "SLO", claim>` and `<ServiceVocabulary-1, "service-level objective", claim>` in the naming lineage. Old text retains its earlier expression and meaning; new writing uses the expansion. No Bridge is needed for these identical semantic projections.
+**Effect.** If the vocabulary's authorized maintainer adopts the expansion from 1 July, use it as the preferred designation from that date. Keep both exact cells `<ServiceVocabulary-1, "SLO", claim>` and `<ServiceVocabulary-1, "service-level objective", claim>` for historical reading. A recommendation alone leaves the current preference open. No Bridge is needed for the identical semantic projections.
 
 #### F.13:9.2 - Alias for a common legacy synonym (Sys‑CAL)
 
@@ -130,7 +130,7 @@ A needed relation between different semantic projections is a separate F.9 quest
 *Context:* **BPMN 2.0**.
 Legacy label **“process”** was used to mean both **“collaboration”** and **“executable process”** in a team’s prose.
 **Relation:** `splits("process" ⇒ {"collaboration","executable‑process"})`.
-**Effect:** The single Concept‑Set row becomes two; old label is deprecated with a disambiguation note.
+**Effect:** For an older note, ask what the writer attributed to the *process*. An instruction to start its executable instance can identify the team’s executable-process sense. A bare list of process names may leave both readings possible. Preserve that uncertainty in the reading note. Split a comparison row only if a row exists and its comparison now needs that distinction.
 
 #### F.13:9.4 - Merge duplicate comparison rows
 
@@ -178,7 +178,7 @@ Temptation: “Let’s rename *process* to *activity*.”
 * **Temptation:** Rename **“task execution”** to **“actuation”** “to sound control‑ish”.
 * **Diagnosis:** Different Contexts; different SenseCells (program run vs control output).
 * **Move:** **No rename.** Keep the labels. Establish any actual Work-to-signal production or output relation under the pattern for that relation, following F.11. Add F.9 only when a separate semantic correspondence between the particular local senses is needed. Then keep the bounded-use claim and reliance separate.
-* **Pay‑off:** Plant narratives stop calling programs “actuators”; runtime vs control semantics stay crisp.
+* **Pay-off.** The reader can distinguish a running program from its control output. To claim that plant writers have changed their usage, compare what their earlier and later texts actually say.
 
 #### F.13:11.3 - Kind-CAL × method/work stack — false merge avoided
 
@@ -193,7 +193,7 @@ Temptation: “Let’s rename *process* to *activity*.”
 * **Context:** *BPMN 2.0 (design)*.
 * **Legacy:** Team jargon **“heartbeat”** used for a **timer event**. Newcomers confuse it with **sensor heartbeats** (KD‑CAL).
 * **Move:** `renames("heartbeat" → "timer event")` for the team’s unchanged BPMN timer-event meaning. Keep a local historical read-path; the sensor-liveness use remains a different local meaning.
-* **Pay‑off:** Two different ecosystems stop colliding on the same catchy word.
+* **Pay-off.** In the revised vocabulary the reader can tell a timer event from a sensor-liveness report. Whether teams have adopted the designation is a question about their actual usage.
 
 #### F.13:11.5 - Concept‑Set row refactor after duplicate comparison is established
 
@@ -223,7 +223,7 @@ Under the same conditions, a legacy expression may remain a read-path to `pref(t
 
 #### F.13:12.3 - Split detection
 
-If one label covered several independently recovered local senses or rows, record the split and prefer the precise later labels. Keep the earlier use resolvable through a disambiguation note.
+If one label covered several independently recovered local senses or rows, record the split and prefer the precise later labels. Use the old passage and its circumstances to distinguish them where possible. When those grounds leave two meanings open, report both. The reader may still act if the same action is warranted under either reading.
 
 #### F.13:12.4 - Merge admission
 
@@ -284,7 +284,7 @@ All Part C patterns when editions shift; all examples and tutorials when teachin
 
 #### F.13:15.1 - Static conformance (SCR)
 
-* **SCR-F13-S01 (local continuity).** Every `renames/aliases` preserves the exact semantic projection, intended use and any independently governed value. An external row or description label resolves its target under the applicable rule.
+* **SCR-F13-S01 (local continuity).** Every `renames/aliases` preserves the exact semantic projection, intended use and any independently governed value. For a claim about the current preference, the effective naming decision or rule covers that use. An external row or description label resolves its target under the applicable rule.
 * **SCR-F13-S02 (Truthfulness).** Each rename retains its exact old and new expressions. A changed LocalExpression has a distinct F.17 cell even when meaning is unchanged. Any claim of governed-value or episteme continuity satisfies that subject's rule.
 * **SCR‑F13‑S03 (Alias purpose).** Every retained legacy alias serves an actual reading or retrieval need and resolves to its historical meaning; it is distinguished from the preferred current designation.
 * **SCR‑F13‑S04 (Non‑retroactivity).** No requirement or suggestion to rewrite past texts is present; continuity is expressed as **read‑paths**.
@@ -296,12 +296,12 @@ All Part C patterns when editions shift; all examples and tutorials when teachin
 * **RSCR-F13-E01 (Edition drift audit).** Compare affected earlier/later definitions and naming uses. Stable meaning can support a rename with distinct expression-bearing cells; changed meaning requires the subject-governed revision, replacement, split, merge or retirement before fresh naming settlement.
 * **RSCR‑F13‑E02 (Alias change).** After changing aliases, verify that needed historical read-paths remain usable and the preferred current designation remains clear.
 * **RSCR-F13-E03 (Bridge leak check).** A claimed correspondence between different semantic projections is tested under F.9 only when a current use needs it. Retain exact meanings and an unresolved result when obtaining is unestablished; do not create a Bridge by rewriting a note.
-* **RSCR‑F13‑E04 (Didactic continuity).** Sampling of examples shows that readers can **resolve** legacy labels to current ones without confusion (via the continuity notes).
+* **RSCR‑F13‑E04 (Didactic continuity).** On the earlier passages examined, can readers recover the supported historical meaning or outstanding alternatives and any justified link to later usage? Judge a wider reading claim on passages and reader conditions that support its reach.
 
 ### F.13:16 - Didactic distillation (60‑second script)
 
 > **Preserve what the old words meant.** For unchanged meaning and use, record a local rename or alias. A changed expression has a distinct F.17 cell; keep its naming lineage.
 >
-> If meaning or the named value changes, recover that change under its subject rule before settling the later name. Split or merge only when those relations hold. Keep the historical aliases readers need, preserve the earlier text, and give readers the exact historical meaning and any justified path to the present name.
+> If meaning or the named value changes, recover that change under its subject rule before settling the later name. Split or merge only when those relations hold. Keep the historical aliases readers need and preserve the earlier text. Give the meaning its use supports, or the remaining readings and any conclusion they share. Trace each connection to a current name as far as the evidence allows.
 
 ### F.13:End

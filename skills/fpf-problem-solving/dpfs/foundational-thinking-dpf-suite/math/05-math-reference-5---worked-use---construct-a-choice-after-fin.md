@@ -1,6 +1,6 @@
 ## MATH.Reference:5 - Worked use - Construct a choice after finding an obstruction
 
-Four positions form a cycle, with costs (1,3,1,3). The required result is one cheapest position. Changing the numbering origin must rotate the selected position along with the input.
+Four positions form a cycle, with costs (1,3,1,3). A one-off commission to name any cheapest position can be met by selecting either minimizer. Here the receiver asks for one deterministic rule using only the supplied cycle and costs: for every numbering origin it must return one cheapest position, and rotating the input must rotate the selection. Is such a rule possible?
 
 MATH.13 first establishes the transformation relation: rotation preserves the cost-minimization question. MATH.8 identifies the relevant transformed cases. A half-turn leaves this input unchanged but swaps its two cheapest positions.
 

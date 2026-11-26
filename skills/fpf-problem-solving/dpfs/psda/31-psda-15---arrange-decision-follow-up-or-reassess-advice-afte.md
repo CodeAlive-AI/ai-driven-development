@@ -73,7 +73,7 @@ Choose timing from the consequence of late knowledge. If collecting and interpre
 
 #### PSDA.15:4.3 - Generate and compare follow-up arrangements
 
-Use an adequate existing arrangement. When asked to design one workable arrangement, establish how it gets the needed evidence to the people who can use it in time. A choice between arrangements also needs grounds for the relevant differences. Possibilities include a recipient-owned scheduled review using existing evidence, a targeted specialist test before a commitment, event-driven notification with qualified interpretation, or a coupled arrangement combining targeted tests with a limited route for unexpected changes. A justified one-off return with no continuing service may be enough for a short, low-consequence use.
+Use an adequate existing arrangement. When asked to design one workable arrangement, establish how the evidence reaches the participant or service that needs it. If a response is required, establish that the responsible party has the means, authority and time to act. A choice between arrangements also needs grounds for the relevant differences. Possibilities include a recipient-owned scheduled review using existing evidence, a targeted specialist test before a commitment, event-driven notification with qualified interpretation, or a coupled arrangement combining targeted tests with a limited route for unexpected changes. A justified one-off return with no continuing service may be enough for a short, low-consequence use.
 
 Compare coverage of the material questions, detection and interpretation delay, uncertainty, participation, observer independence where required, effort, confidentiality, cost, and the feasible receiving response. Do not maximize the number or frequency of indicators. For a time-critical action, check whether a competent authorized receiver can act before the deadline. A timely observation can also answer a technical question in its own right.
 
@@ -97,11 +97,11 @@ State whether the requested result is a proposal with conditions, an arrangement
 
 #### PSDA.15:4.5 - Interpret actual observations before revising advice
 
-When evidence arrives, first establish its subject, configuration, interval, provenance, Method, uncertainty and allowed use. Use `A.10` when the source-to-use account remains implicit or a needed reproducible account is missing. An adequate existing interpretation may support the answer; a missing one may limit or block it. Select a further specialist result through `A.15.9` and `C.11.DUA` only when its attainable contribution warrants the whole burden within the receiving window.
+When evidence arrives, establish the subject, configuration, interval, provenance, Method, uncertainty and permitted use that matter to its interpretation. Use A.10 if the source-to-use grounds need reconstruction. An adequate existing interpretation can support the answer. If more is needed, identify what remains open. Obtain a separately commissioned specialist result under its agreed terms. For a discretionary inquiry, weigh its attainable contribution against the full burden within the receiving window under A.15.9 and C.11.DUA.
 
 Compare the qualified evidence with the exact condition it was meant to test. Distinguish a change in the world, a changed source claim, an expired reliance window, a changed value judgement, a revised model and a merely changed representation. A diary review date is not by itself an expired reliance window. When meaning, applicability and access remain compatible, a repaired reference may finish the source update without renewed advice, multi-use search or another result record. An expired qualification or missing required observation limits the use that depends on it.
 
-When the source changes from configuration A to B, check which grounds transfer to B. Preserve the earlier result for its earlier subject and conditions. State which conclusion about B the available evidence leaves unsupported. Seek further evidence when its attainable contribution to the question warrants the cost. Similarly, failure to observe a threshold crossing proves nothing unless the observation coverage and sensitivity support that inference.
+When the source changes from configuration A to B, check which grounds transfer to B. Preserve the earlier result for its earlier subject and conditions. State which conclusion about B the available evidence leaves unsupported. For additional evidence, apply the agreed undertaking or the discretionary inquiry decision above. Similarly, failure to observe a threshold crossing proves nothing unless the observation coverage and sensitivity support that inference.
 
 Keep the observations and their interpretation distinct from the next decision. To report a changed action decision, use evidence of what the authorized holder decided. If the adviser concludes that a different action should be considered, that is renewed advice, not implementation control.
 
@@ -111,10 +111,10 @@ Trace the changed premise into the particular claim or disposition that relies o
 
 | Current return | When it is warranted | What happens next |
 | --- | --- | --- |
-| Unchanged within stated conditions | Qualified evidence does not alter the relied-on premise, or the changed claim is outside the inspected use. | Retain that bounded advice and its current conditions. State the next observation when a follow-up use needs it. This is not authority to continue an intervention. |
+| Same recommendation for the stated use | The changed matter leaves the original grounds intact, or another sufficient basis now supports the same recommendation. | If a premise has failed, withdraw the obsolete supporting claim and check what the other basis must supply, including timing and authority where relevant. Report the advice on its current grounds. State the next observation when the follow-up use needs it. |
 | Narrowed | A useful portion still has an adequate basis, but the previous scope, configuration, window or strength is no longer supported. | Return the surviving claim and the withdrawn scope explicitly. Do not relabel the narrowed result as the original whole. |
 | Blocked for the affected use | A necessary premise, authority condition, observation or interpretation is unavailable or no longer adequate. | State what cannot responsibly be advised or relied on now, the missing basis and who can supply the missing result or direct the question where that is known. Preserve separate usable content. |
-| Reopen a named contributor | A needed stronger answer warrants an obtainable source, candidate, value, uncertainty, model, consequence, robustness or scope result, considering the complete acquisition burden. | Obtain the bounded result from the appropriate source or request it from a capable contributor when a request is needed. The present qualified limit can close the earlier answer; a pending request is not the refreshed result. |
+| Reopen a named contributor | A further result is owed under the undertaking, or its contribution to an open decision warrants the full cost of obtaining it. | Obtain the agreed or selected result from the appropriate source. A qualified limit can close the immediate question while a separately commissioned contribution remains due. Report a specific obstacle when the undertaking cannot be fulfilled. |
 | Compose a later recommendation | Changed qualified premises require a different disposition or a newly composed answer to the receiving question. | Use `PSDA.14` with the current premises and remaining gaps. Preserve the earlier recommendation occurrence and the separate later choice. |
 
 These are scoped conclusions. One event can leave an internal-development claim unchanged, narrow a mixed-arrangement claim to configuration A, block advice about B, and reopen its evaluation supplier. Only the affected combined recommendation needs recomposition.
@@ -129,7 +129,7 @@ Return the observation, qualification, affected use and material limits needed b
 
 Finish when the follow-up question has a supported answer or identified limit and the recipient can use it within that scope. Continue any existing monitoring or professional service under its own mandate and end condition.
 
-When follow-up evidence can change the decision-support Method repertoire, supply the bounded case, conditions, failure or useful variation to `PSDA.16`. Its owner still compares the repertoire and obtains its own result. One successful delivery, revised diagram or favourable outcome proves neither general Method effectiveness nor cultural continuation.
+If follow-up also serves a commissioned or otherwise required review of decision-support Methods, give the repertoire owner the relevant case, conditions and findings for `PSDA.16`, within the applicable disclosure terms. Its owner still compares the repertoire and obtains its own result. One successful delivery, revised diagram or favourable outcome proves neither general Method effectiveness nor cultural continuation.
 
 ### PSDA.15:5 - Archetypal Grounding
 
@@ -174,7 +174,7 @@ The same locality works with a human development premise. If an employee's avail
 
 A recipient has one short, reversible comparison whose evidence remains valid until a named review date. An existing arrangement can obtain the observation that matters within its allowed window. Retain it.
 
-If the named observation is missed, the current answer is the scoped evidence gap and its effect on reliance, not “unchanged.” If the receiving decision has ended and no continuing evidence, service or protection obligation remains, close this follow-up use with its final qualified return.
+If the scheduled observation is missed, identify the decision that depended on it. A qualified independent record spanning the same interval may support the original advice through the review date. When that particular observation was promised, also report the omission to the recipient. If its window has passed, establish what later work can still serve the purpose and who can agree to a change. If an unknown change during the interval could alter the advice, report what remains open and how that affects reliance. When the receiving decision has ended and no continuing evidence, service or protection obligation remains, close this follow-up use with its final qualified return.
 
 A population without a population-local recipient or choice owner does not acquire either through a follow-up table. Preserve the abstention from that recommendation use. A research team's separately authorized intervention has its own decision, experimental Work and observation conditions.
 
@@ -195,7 +195,7 @@ Outcome bias can rewrite the earlier advice as obviously correct or wrong after 
 | Check | Sufficient answer |
 | --- | --- |
 | Distinct results | Recommendation, later authorized decision, intended work, implementation and observation are distinguished wherever the finding relies on them. A missing fact is reported as a limit on the claim it affects. |
-| Material observation | Each selected observation can change a named premise, claim, alternative, condition or boundary; any threshold has a qualified meaning. |
+| Observation and its purpose | Each selected observation has a basis in a named decision or in an explicit undertaking to obtain it. Identify the premise, alternative or condition it could resolve, or the promised work for which the observation itself is due. Give any threshold its qualified meaning. |
 | Design choice | The proposed arrangement covers the required uses within available time and resources. A comparison, where requested or needed for the choice, addresses the material differences in coverage, delay and burden. Any PSDA.17 constraints apply to the work that has to run together. |
 | Viability | Any observation, interpretation and return relied on here have the necessary performers, access, resources, timing, protection and failure route. |
 | Current evidence | The evidence fits the subject, configuration, interval and use. A claim based on an event’s absence accounts for observation coverage and sensitivity. |

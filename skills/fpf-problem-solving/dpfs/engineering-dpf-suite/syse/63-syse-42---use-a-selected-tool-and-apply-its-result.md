@@ -5,7 +5,7 @@
 
 ### SYSE.42:1 - Problem frame
 
-**Use this when** a person or technical agent has selected an external aid and the task depends on using its result for the intended input. A calculator can execute a mistyped expression correctly; software can act on the wrong target; a useful return can be ignored.
+**Use this when** an external aid has been selected and the assigned work depends on using its result for the intended input. A calculator can execute a mistyped expression correctly; software can act on the wrong target; a useful return can be ignored.
 
 Start with the result or performance the receiving work requires, the intended input or target, and who is to use the aid. A qualified earlier return can supply a requested value. If the order calls for a fresh observation, an execution on this target or the performer’s use of the aid, establish that contribution under the stated conditions. Apply the resulting evidence to the task or identify what prevents its use.
 

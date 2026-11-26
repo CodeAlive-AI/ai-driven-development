@@ -57,7 +57,7 @@ When several providers contribute, identify their different coverage and any jus
 
 Recover the opinion’s subject, criteria, period and strength. Distinguish an adverse finding, a qualified conclusion, inability to conclude and a matter outside the engagement. When the board asks a different question, identify what the opinion contributes to it. If an issued opinion satisfies a renewal condition, the signed opinion can establish issuance. If the condition requires receipt by a named participant by a given date, establish that receipt. A copy bearing a sufficient receipt record may establish both events. A judgement about a different activity requires a premise that connects the opinion to that activity.
 
-Carry assumptions and limitations into the board paper or other receiving communication. Ask the provider to explain a material ambiguity. Neither a short summary nor a confidence label should enlarge the report's scope.
+Carry assumptions and limitations into the board paper or other receiving communication. Settle a material ambiguity from the engagement terms, report or competent explanation where those grounds suffice. Seek the provider’s clarification or amended opinion when the question or an applicable duty calls for that provider’s own act. Carry any unresolved limit into the receiving decision. Neither a short summary nor a confidence label should enlarge the report's scope.
 
 For example, an opinion on statements for a completed year may support the stated reporting use. A later process change needs its own applicability question. The historical conclusion does not become false merely because it cannot answer that later question.
 

@@ -191,7 +191,7 @@ for MDPE.12 when the question concerns observation or evaluation. Touring, organ
 #### MDPE.5:4.3 - A social-dance integration trial
 
 In this constructed example, a weekly West Coast Swing organizer must decide whether to open the next party at the planned floor density after moving to a smaller
-room. In this case the usable floor is eight by ten metres. The intended Music-or-Dance Work is one representative three-minute pair dance inside the party. The
+room. In this case the usable floor is eight by ten metres. The decision concerns timing and usable space for pairs across the floor. A three-minute dance lets the organizer observe the interaction within a pair. Conditions at the other occupied positions also matter to opening the party. The
 partners must be able to hear the timing, maintain partner-readable response and their slots, adapt movement to
 nearby pairs, decline any figure, and leave safely.
 
@@ -208,9 +208,9 @@ several dancers shorten movement enough to break the intended elastic response. 
 planned configuration and realizes a specific alternative. A two-metre-wide passage along the ten-metre side
 leaves a six-by-ten-metre dance area. Six pairs use two rows of three slots oriented along its long dimension;
 the other four pairs wait off the floor. The speakers are re-aimed toward the far side while the planned track
-and event volume remain. In the second three-minute trial, the representative pair completes the track with
+and event volume remain. In the second three-minute trial, a pair at the far side and the pairs in the other occupied positions report hearing the pulse throughout. The organizer sees the pair being followed complete the track with
 readable timing and elastic partner response, and observers report no slot crossings between pairs or into the passage.
-The successful three-minute result applies to the combined sound arrangement, placement and six-pair density. To isolate the
+Hearing the pulse was checked at each occupied position, interactions with the slots across the floor, and the movement response within the observed pair. The organizer also confirmed that all partners may decline a figure and that occupied slots leave each pair a usable exit. Under those conditions the organizer can open a six-pair trial, check the other pairs’ response during the event and adjust the arrangement if needed. To isolate the
 effect of changing speaker direction or pair density, a comparison that distinguishes their contributions would be needed.
 
 The pair performed the dance under the second arrangement. The first trial coordinated ten pairs, the
@@ -219,7 +219,7 @@ floor sketch and video can document different features of the event.
 The result covers the conditions observed. Claims about artistic value, recognition
 across the scene, long-term safety or cultural continuation call for evidence about those outcomes.
 
-For the next party the organizer retains the tested six-pair limit, passage, slot orientation,
+For that trial at the next party the organizer retains the tested six-pair limit, passage, slot orientation,
 speaker direction and volume. Fewer people dance at once, so waiting pairs need access
 between tracks. Reconsider the choice if the room, music, sound, attendance arrangement or
 incident reports change the grounds for expecting the timing and safe slot use to hold.

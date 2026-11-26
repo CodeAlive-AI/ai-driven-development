@@ -33,17 +33,17 @@ How can an organiser recognise a real contribution, choose a response that matte
 
 ### CB.6:4 - Solution
 
-Identify what the person contributed and what is known about its use. Choose a response suited to its purpose and the person’s circumstances. Deliver what you offer and find out how it was received. Correct a mistake, an unwanted burden or a failure to provide the promised benefit.
+Identify the contribution the recognition concerns and what is known about its use. A community may thank a service for keeping a joint undertaking. If the award concerns a particular member’s work, establish that member’s contribution. Choose a response suited to its purpose and recipient. Deliver what you offer and find out how it was received. Correct a mistake, an unwanted burden or a failure to provide the promised benefit.
 
 
 
 #### CB.6:4.1 - Find the useful contribution behind the visible activity
 
-Start from an episode or result. Ask the person receiving the contribution what became easier, clearer or possible, and which part helped. A specific answer, a corrected explanation, preparation, translation, coordination or patient clarification can matter more than the most visible performance.
+Start from the work to be recognised. When its benefit to a recipient matters, use the available evidence or ask what became easier, clearer or possible and which part helped. A specific answer, a corrected explanation, preparation, translation, coordination or patient clarification can matter more than the most visible performance.
 
 Use the evidence proportionate to the claim. A case owner's account can support “your clarification helped me identify the missing information”. A claim that the advice prevented a technical failure needs the relevant technical basis. When the later outcome is unknown, thank the person for the contribution you can identify and leave the later question open.
 
-Recover joint work fairly. Ask who prepared the material, made access possible or performed a less visible part. Name the contributions in a way those people accept. Do not assign all credit to the person who presented the result merely because their work is easiest to see.
+Fit the credit to what it is for. A record of the event or an eyewitness can identify who gave a talk. To credit development of the underlying work, recover the contributions to its preparation and their connection to the result. A team acknowledgement can be appropriate when the rules and evidence concern the group. Identify individual contributions when the claim or award turns on them.
 
 Distinguish useful effort from a successful result. A careful attempt can expose why a proposed approach will not work. Explain that value without relabelling the attempt as successful implementation. Conversely, extensive effort alone does not make incorrect advice fit for reuse.
 
@@ -55,7 +55,7 @@ Decide whether the present need is to make the contribution's effect visible, co
 
 Begin with the least elaborate response that fits. A private message explaining a concrete use may be more valuable than a generic public accolade. Returning a recipient's permitted account of what changed can give the contributor information that the organiser could not supply alone.
 
-Find out how the person wants to be recognised when the choice matters. They may welcome a named example, prefer collective credit, want an introduction, or decline publicity. Existing preferences and the relationship may be sufficient for a routine thank-you; a new public profile, attribution of sensitive work or substantial opportunity warrants an explicit agreement.
+For a public acknowledgement or offered opportunity, establish the terms that apply to the people, material and audience involved. An existing preference, agreement or authorised representative can settle the decision within its scope. Ask the person when the choice is theirs and still open. They may welcome a named example, prefer collective credit or decline publicity. If an award itself grants access under its terms, establish what the recipient can obtain and when.
 
 People can contribute because they enjoy the activity, because they value its outcome, because they accept a responsibility or because provision is paid. A fitting response does not require the organiser to declare one motive authentic and the others defective. Ask whether the response respects the person's choice and helps them understand their contribution.
 
@@ -123,7 +123,7 @@ In a constructed repairer association, one participant corrects a misleading app
 
 The contributor prefers a private message and agrees to a brief credit on the corrected page. The response names the distinction they clarified and the use that the recipient reported.
 
-For a later public summary the organiser establishes what each contributor permits for that audience. With their agreement the summary credits the person who found the problem and the maintainer who checked and incorporated the correction. If a use report contradicts the correction, the subject review reopens; the acknowledgement of the contributed work does not settle the technical question.
+For a later public summary the organiser checks which uses the existing permissions cover and obtains any further decision from the appropriate holder. Here both contributors have agreed to be named for their respective work. The case owner permitted its use only within the association. The summary can credit the person who found the problem and the maintainer who incorporated the correction. To publish the original case outside the association, the organiser needs the case owner’s further permission under those terms. If a use report contradicts the correction, the subject review reopens. The acknowledgement still records who supplied the work.
 
 #### CB.6:5.2 - A leaderboard rewards the wrong work
 
@@ -169,7 +169,7 @@ An ordinary thank-you can rely on a known episode. A public competence claim, sc
 | Wrong turn | Practical repair |
 | --- | --- |
 | Praise activity without finding its useful contribution | Obtain the relevant receiving account and name what it supports. |
-| Credit only the person who presented joint work | Recover preparation and other contributions and agree the attribution. |
+| Attribute joint authorship or development to the presenter on the strength of the presentation alone | Establish who presented for a presentation credit. For credit for the underlying result, recover the joint or individual work the award recognises and apply its terms. |
 | Make every acknowledgement public | Choose the audience with the person's circumstances and preferences in view. |
 | Promise an introduction or learning place without its provider | Obtain a bounded commitment and feasible access first. |
 | Treat popularity or message volume as contribution quality | Inspect the contribution and its use; revise the misleading incentive. |

@@ -8,11 +8,11 @@
 
 **Use this when** an account makes needed outcomes appear incompatible and you need to find what could change without losing the purpose of the work. Two requirements may concern different operating conditions, yet the model gives them one setting. A familiar means of obtaining one result may obstruct another result, although that means has never been shown necessary.
 
-**First useful move.** Put the two demands beside the statement that makes them conflict. Ask what requires that statement. For example, “the setting must be at least 6 during work and at most 2 during quiet operation” conflicts with a fixed-setting design. It leaves open a question about changing the setting between those conditions.
+**First useful move.** Identify which demands must hold together for the wanted result, and what makes you think they conflict. A shared condition may rule out the whole combination while every pair is compatible. For example, requiring one fixed setting to be at least 6 during work and at most 2 during quiet operation excludes every fixed value. Whether the device may change settings between conditions is a question about its design and use.
 
 The result is a reformulated question or candidate construction whose retained requirements, changed premise and remaining obstacle are understood. Sometimes the useful result is an impossibility under the retained conditions, followed by a decision about which requirement can change.
 
-The reader needs enough knowledge to interpret the requirements and the inference connecting them, or access to someone who can supply that interpretation. Start with ordinary statements and a small case. Use an adequate existing solution. If the only unresolved question is choosing an accepted trade-off, compare the options; recovering premises is useful when it could reveal another option or change the grounds for that choice.
+The reader needs enough knowledge to interpret the requirements and the inference connecting them, or access to someone who can supply that interpretation. State the requirements in ordinary language and identify when they must hold together. Use a small case if it helps expose a conflict. Use an adequate existing solution. If the only unresolved question is choosing an accepted trade-off, compare the options; recovering premises is useful when it could reveal another option or change the grounds for that choice.
 
 ### B.5.QD.CF:2 - Problem
 
@@ -70,13 +70,13 @@ A tentative assumption change lets you explore that question. Keep the conclusio
 
 #### B.5.QD.CF:4.4 - Construct a small answer and return it to the whole need
 
-Perform the relevant reasoning or operation on a case that includes the changed condition. Show how the candidate obtains the needed result, or locate the contribution unavailable. A formal witness answers a question about its model. A physical or organizational proposal also needs the means to produce the corresponding result in its intended setting.
+Use a construction or argument that can answer the question. For a proposed way of working, establish what obtains the needed result under its intended conditions. A case that includes the changed condition can expose an obstruction. When one set of grounds applies throughout the proposed range, show how it covers that range. A mathematical witness supplies a possible configuration. Establish the means of realizing it when the work calls for a physical or organizational result.
 
-Reapply every retained requirement that the proposed change can affect, including those outside the small set used to locate the conflict. A separate operating setting may require a transition that is too slow. An archived input may reproduce a calculation while violating a retained deletion requirement. Either consequence changes what the candidate can answer.
+Return the change to the complete need. Recover the grounds for each retained requirement and for their joint satisfaction on the same admissible arrangement. Reuse grounds that still apply to that arrangement. Repairing a conflicting subset can leave a different conflict untouched. A switch between two individually feasible settings may take too long, and an archive that reproduces a calculation may violate a retained deletion requirement.
 
 Keep three facts distinguishable: the revised statements are compatible; an operation is proposed that would supply their values; that operation has produced or otherwise established the result required for this use. Use the strongest available fact the question needs. An inquiry about what to design next may be answered by a conditional construction; deploying it can require further work.
 
-If the conditions remain incompatible, state that result under the premises that support it. The next question can ask which requirement may change, whether another model is warranted, or whether the work should stop. A proof of impossibility can settle a construction request without finding a replacement.
+If the conditions remain incompatible, show which of them imply that conclusion and what it settles. A proof that no permitted arrangement works completes an inquiry about feasibility. When a working arrangement has been commissioned, the proof explains why it cannot be supplied under those conditions. A decision to change an obligation, or to accept that finding as the deliverable, belongs to whoever holds that choice.
 
 #### B.5.QD.CF:4.5 - Continue at the missing contribution, or use the answer
 
@@ -148,9 +148,9 @@ The easiest premise to remove may be the one with the strongest physical or prac
 - The inference distinguishes requirements, observations, modeling assumptions and proposed means where their different roles change the answer.
 - A claimed necessity has its direction and basis; a proposed replacement supplies the result previously attributed to that means.
 - A changed participant or condition corresponds to the intended situation, rather than merely changing a name.
-- The candidate returns to the retained requirements, including affected conditions outside the diagnosed conflict.
+- A proposed repair has grounds for the joint result required of the same arrangement, including relevant conditions outside the diagnosed conflict.
 - A compatible account, conditional construction, obtained result and authorized requirement change retain their different meanings.
-- The next question serves the unresolved need or states how that need was changed; a sufficient answer or impossibility can stop the work.
+- A sufficient answer or impossibility can complete the question it settles. Any separate result owed, or decision to revise it, remains identifiable.
 
 ### B.5.QD.CF:8 - Common Anti-Patterns and How to Avoid Them
 

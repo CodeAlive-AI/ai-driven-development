@@ -1,6 +1,6 @@
 ## FPF.Reference:21 - How To Continue After The readme
 
-Use the Readme to decide whether FPF can help a working project. Read this architectural reference for the ideas that connect the first practical entries. Use the Table of Contents when you need to find a pattern family suited to the working question. Within that family, choose a pattern whose Problem frame and Solution address your question. Start with the action or judgement the pattern guides.
+Use the Readme to decide whether FPF can help the current project. This reference explains how the first entries fit together. Use the Table of Contents to find a pattern whose Problem frame and Solution address the question. Apply its guidance, then put what you obtain to work in the original commission. One result may give the recipient everything they asked for. If a further contribution matters, obtain it or explain what prevents the decision. E.11.PUA:4.1 follows this return from the pattern to the receiving work.
 
 You can also read the specification in order when studying it is the goal.
 

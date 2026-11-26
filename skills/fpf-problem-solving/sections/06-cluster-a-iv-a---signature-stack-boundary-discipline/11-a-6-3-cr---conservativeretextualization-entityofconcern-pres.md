@@ -10,7 +10,7 @@ Use this pattern when available source claims about the same EntityOfConcern nee
 
 **Primary governed case.** One textual re-expression of already available source claims whose resolved EntityOfConcern remains the same. The source and receiving epistemes concern that entity; the textual rendering expresses the receiving claims.
 
-**First useful move.** Identify the source claims and resulting text, compare their meaning, and state any omission or loss that affects the intended use. If preservation is doubtful, name the missing basis or defect; repair it within CR when possible, or use the pattern for the changed claim.
+**First useful move.** For a new text, establish what its reader needs to learn or do with the source claims. Select the claims and qualifications needed under that reading, and write the restatement. For a text already provided for review, compare its meaning with the source directly. In either case, identify a loss that changes the intended use and restore the needed distinction where the source supports it.
 
 **What goes wrong if missed.** A summary, translation, or manager-readable rewrite is treated as harmless editing after it has started hiding explanation work, bridge work, changed authority relation, or a narrower admissible use.
 
@@ -91,10 +91,10 @@ Use this pattern when the EntityOfConcern stays fixed and textual restatement re
 
 #### A.6.3.CR:4.2.b - What the user checks first
 
-Start with the preservation question:
+When writing a new text, work back from the purpose to the distinctions the reader needs. Preserve a source qualification wherever dropping it could change the answer, and keep unresolved alternatives when their consequences differ. Choose wording the reader can relate to the subject under the source’s interpretation. Once there is a candidate, use the following questions to check it. A commission to assess an existing rewrite can begin here.
 1. Is the published result still about the same EntityOfConcern?
 2. Does the reader need a clearer restatement, an explanation, or an expression in which a different operation becomes practical? When the last need calls for a change of representation language or reasoning medium, use A.6.3.RT.
-3. Can the reader see what was omitted, softened, or foregrounded?
+3. Can the reader recover the qualifications and material omissions that affect this use, including a shift in emphasis that changes the apparent claim?
 4. If several sources or correspondence claims contribute, can each receiving claim be traced to those sources and the rule that licenses it?
 5. Is the source merely pointed at, was it actually used, are the rewritten claims recoverable from it, and is the result admissible for the intended use?
 6. If any answer is doubtful, is the problem a missing source or condition, a repairable preservation defect, or a changed claim needing another pattern?
@@ -204,7 +204,7 @@ This witness is local to `ConservativeRetextualization`. It does not replace the
 
 **Published report slice.** `Evening-batch latency for Service S exceeded the threshold. Source pins: Trace T-44, Dashboard D-17. Low-confidence hypotheses are omitted here and remain in the pinned source note.`
 
-This is an admissible direct `ConservativeRetextualization` because the EntityOfConcern stays fixed, the report remains textual, and the omission is stated. In ordinary internal use, this often needs only source pins plus visible omission notes rather than a full explicit review record.
+For a reader reporting whether Service S exceeded the evening threshold, the rewrite preserves the occurrence, subject, time window and access to its grounds. If the reader must choose an investigation, the two competing hypotheses and their low confidence may change that choice. Include them or make them recoverable in time for the reader’s decision. Acknowledging the omission alone would leave that reader without the needed comparison.
 
 #### A.6.3.CR:5.1.a - Ordinary inherited-pin summary
 **Pinned source cluster.** `In this example, N-14 is the source note in §5.1; N-14, trace T-44, and dashboard card D-17 are already published together under one incident review bundle.`
@@ -254,13 +254,15 @@ If the generated summary is source-pointer-only, merely plausible, claim-widened
 
 #### A.6.3.CR:5.2 - Same-EntityOfConcern rewrite via declared correspondence
 
-**Source design slice.** `Cooling loop CL-2 preserves safe temperature margins during standard operating demand.`
+**Source design slice.** `For configuration K at standard operating demand, CL-2 keeps the temperature at its return sensor in design band D-7.`
 
-**Source safety slice.** `Cooling loop CL-2 maintains the temperature condition required for hazard-control claim HC-7 during standard operating demand.`
+**Source safety slice.** `For configuration K at standard operating demand, HC-7 requires the temperature at monitoring point H to stay in safety band S-3.`
 
-**Published joint-review slice.** `For standard operating demand, Cooling loop CL-2 is described in both the design and safety views as maintaining the required temperature condition. This summary relies on CorrespondenceModel CM-12 and does not add claims beyond that declared overlap.`
+**Correspondence used.** CM-12 identifies H as the return sensor for configuration K and gives D-7 and S-3 the same limits, units and averaging interval for standard demand.
 
-The synthesis remains in this pattern only while its source relation is explicit and every receiving claim is supported by the design slice, safety slice or admitted correspondence claims. `CM-12` names the episteme stating that correspondence; its label alone supplies no witness. Add the review detail needed to establish the claimed overlap.
+**Published joint-review slice.** `For configuration K at standard demand, the design claims to maintain the temperature required by HC-7 at the return sensor. CM-12 identifies the monitoring point and the temperature band used by the two accounts.`
+
+The correspondence supports the stated overlap between a design claim and a safety requirement. An observation of actual operation would need its own basis. If CM-12 identifies only the sensor, report separately the band required by HC-7 and the band the design claims to maintain. Their relation remains to be established if the reader needs a conclusion about compliance.
 
 #### A.6.3.CR:5.2.b - Cross-language re-expression without hidden bridge work
 **Source slice.** `The backup controller stays in passive watch mode until the primary loop fails two consecutive heartbeat checks.`

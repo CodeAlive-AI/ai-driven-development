@@ -71,7 +71,7 @@ Search the Keywords & Search Queries column for the engineering difficulty, subj
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 7 | [SYSE.5 - Develop an Engineered System's Functional Organization and Bearer Alternatives](26-syse-5---develop-an-engineered-system-s-functional-organizat.md) |  Stable  | *Keywords:* function, functional organization, bearer, allocation, interface, operating mode, placement, redundancy. *Queries:* "Which different organizations could produce the required outside effect?" "How could Systems share or alternate the functional contributions?" Develop functional and constructive alternatives together with their proposed allocations, interfaces, integration dependencies, and evidence, giving the architecture decision materially different structures to compare. | SYSE.2, SYSE.16; FPF A.6.F, A.22 |
+| 7 | [SYSE.5 - Develop an Engineered System's Functional Organization and Bearer Alternatives](26-syse-5---develop-an-engineered-system-s-functional-organizat.md) |  Stable  | *Keywords:* function, functional organization, bearer, allocation, interface, operating mode, placement, redundancy. *Queries:* "What did the installed arrangement deliver?" "Can it meet the required service in this mode?" "Which other allocation would work?" Follow the functional interactions to the outside result. Develop the bearer and interface alternatives needed for an open choice, including their integration dependencies and evidence. | SYSE.2, SYSE.16; FPF A.6.F, A.22 |
 | 8 | [SYSE.6 - Decide and Reopen the Engineering Architecture](27-syse-6---decide-and-reopen-the-engineering-architecture.md) | Stable | *Keywords:* architecture decision, functional allocation, module boundary, interface, control, redundancy, product family, trade-off, software architecture styles, layers, pipeline, plugins, microservices. *Queries:* "Which engineering architecture should the project choose for this use?" "Which evidence or changed condition would reopen that choice?" Understand software-style mechanisms where relevant; select the decision-relevant structures, compare materially different alternatives and accepted losses, and state the constraints that later realization and specialist decisions must respect. | SYSE.2, SYSE.5; FPF C.30, C.32 |
 | 9 | [SYSE.7 - Keep Engineering Descriptions Usable Together for Decisions](28-syse-7---keep-engineering-descriptions-usable-together-for-d.md) |  Stable  | *Keywords:* engineering descriptions, model, requirement, CAD, simulation, digital twin, configuration, correspondence, contradiction. *Queries:* "Which claims across our models and records support this decision?" "Do they concern compatible subjects, configurations, intervals, and interpretations?" Maintain a usable ensemble of descriptions with explicit links to sources and returned evidence, justified correspondences, and identified contradictions that can change the engineering answer. | SYSE.6; FPF C.29, A.10 |
 | 10 | [SYSE.8 - Develop an Integrated Offering and Provider Concept for Using an Engineered Result](29-syse-8---develop-an-integrated-offering-and-provider-concept.md) |  Stable  | *Keywords:* integrated offering, provider concept, service, access, consumables, maintenance, support, financing, conditional payment, risk allocation. *Queries:* "What provider arrangement could fulfil this offering in its intended use?" "How do provider, access, and support choices change the technical concept and allocation of risk?" "How can we provide the result when payment depends on its technical acceptance?" Develop the offering and provider concept alongside the System concept, connecting the needed Systems, Work, promises, supported contributions and conditional finance. | SYSE.2; FPF A.2.3 |
@@ -101,7 +101,7 @@ Search the Keywords & Search Queries column for the engineering difficulty, subj
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 22 | [SYSE.4 - Decide Whether and How to Challenge an Engineering Claim](41-syse-4---decide-whether-and-how-to-challenge-an-engineering.md) |  Stable  | *Keywords:* engineering assurance, claim, challenge, test, measurement, inspection, evidence use, validity boundary. *Queries:* "Which challenge could change reliance on this engineering claim?" "What configuration, conditions, uncertainty, and time limit the returned evidence?" Establish what the available evidence supports. Use a sufficient result, narrow or stop unsupported reliance, or select a challenge when its attainable contribution warrants the work. If reliance changes, reassess the affected focus, concept, architecture, realization or specialist answer. | SYSE.10, SYSE.11, SYSE.14; FPF A.10, B.3 |
+| 22 | [SYSE.4 - Decide Whether and How to Challenge an Engineering Claim](41-syse-4---decide-whether-and-how-to-challenge-an-engineering.md) |  Stable  | *Keywords:* engineering assurance, claim, challenge, test, measurement, inspection, evidence use, validity boundary. *Queries:* "What must hold, separately or together, for this engineering decision?" "Which challenge could change reliance on this engineering claim?" "What configuration, conditions, uncertainty, and time limit the returned evidence?" Start from the decision or an engineering claim already given. Identify the claims the decision depends on and how evidence for them supports the conclusion. Use a sufficient result, narrow or stop unsupported reliance, or select a challenge when its attainable contribution warrants the work. If reliance changes, reassess the affected focus, concept, architecture, realization or specialist answer. | SYSE.10, SYSE.11, SYSE.14; FPF A.10, B.3 |
 | 23 | [SYSE.15 - Choose and Refresh the Engineering Methods Needed by a Project](42-syse-15---choose-and-refresh-the-engineering-methods-needed.md) |  Stable  | *Keywords:* engineering Method, repertoire, situation, application profile, variant, trial, qualification, refresh. *Queries:* "Which engineering Methods are needed to obtain this project's results?" "What evidence would justify keeping, changing, or rejecting a Method variant?" Select and refresh the repertoire for the System and engineering situation, retaining specialist Methods and the distinction between engineering and the System's operating Methods. | FPF A.3.2, C.36, E.23 |
 | 24 | [SYSE.20 - Reconcile Overlapping Engineering Work and Required Order](43-syse-20---reconcile-overlapping-engineering-work-and-require.md) | Stable | *Keywords:* overlapping engineering Work, concurrency, required order, result dependency, Method structure, configuration, coordination. *Queries:* "Which modeling, implementation, trial, and review Work can overlap?" "Which result or released configuration must exist before another use?" Reconcile the relevant Method, Work, System, representation, and support structures, to establish required order or permitted overlap, or assess whether an arrangement meets the specified use. When a choice is requested, compare the options and return the authorized outcome or the remaining gap. | SYSE.15; FPF A.15.1, A.22.CGUS, E.18.NET |
 | 25 | [SYSE.21 - Decide Whether and How to Change Systems Engineering Culture](44-syse-21---decide-whether-and-how-to-change-systems-engineeri.md) | Stable | *Keywords:* Systems Engineering culture, Method variant, practitioner population, transmission, retention, branching, intervention. *Queries:* "Should this engineering practice continue, change, branch, or stop across the relevant population?" "What evidence distinguishes visibility, local enactment, and wider continuation?" Recover which method practitioners enacted, any supported variant and the cultural relations for a bounded population and period; return the qualified current account or continuation choice, selecting further inquiry or intervention only when warranted. | SYSE.20; FPF C.36, G.11 |
@@ -232,7 +232,7 @@ The example explores the mixed arrangement; choosing it for production still req
 
 ### SYSE-LLM-PATH — Choose and use a way to complete the task
 
-- **Situation:** A person or technical agent has several ways to obtain a required result, or repeatedly wastes effort, misses needed support or fails to use its return.
+- **Situation:** A performer has several ways to obtain a required result, or repeatedly wastes effort, misses needed support or fails to use its return. The result may be due from an individual, a service or a group working together.
 - **Question:** Which complete available way should be used now, and what should change when the difficulty recurs?
 - **First useful result or blocker:** A supported choice followed by the performed operation and used result, or a worthwhile probe or missing condition that prevents choice or completion.
 - **Start with:** The receiving result and its conditions. Use C.38/C.11 for an unsettled choice; obtain discriminating evidence through SYSE.46 when it is missing for a recurring difficulty.
@@ -244,7 +244,7 @@ For six lots of 347 items, suppose comparable evidence supports mental decomposi
 
 That current task can end with its used result. Repeated wrong choices open a different question. For example, an agent repeatedly retrieves a maintenance procedure. If it sees the applicable premise yet asks again without a need, [SYSE.50](71-syse-50---construct-and-calibrate-an-agent-s-assistance-poli.md) constructs the assistance rule. If the next input lost a needed observation or unresolved effect, [SYSE.52](73-syse-52---prepare-working-material-and-tools-for-an-agent-s.md) restores the working material. If the input and return are usable but the controller routes back to retrieval, [SYSE.47](68-syse-47---construct-and-revise-an-agent-s-execution-procedur.md) repairs that transition. [SYSE.42](63-syse-42---use-a-selected-tool-and-apply-its-result.md) still binds the call, reconciles an uncertain effect and uses the observed state; a generated prediction supplies no observation.
 
-[SYSE.46](67-syse-46---test-an-agent-and-its-support-in-representative-wo.md) obtains the discriminating evidence and tests the changed arrangement. Compare matched work without optional documentation, with the source operation supplied, and with the agent choosing whether to obtain it. Keep required execution and checks common. The trace distinguishes an omitted necessary call from a malformed call, lost input or ignored return. Making fewer calls helps only with correct result use, necessary access and appropriate stopping. [SYSE.49](70-syse-49---construct-informative-tasks-and-feedback-environme.md) constructs missing informative experience. These tests can qualify a fixed-model repair; training and division of work remain separately selected alternatives.
+[SYSE.46](67-syse-46---test-an-agent-and-its-support-in-representative-wo.md) obtains the discriminating evidence and tests the changed arrangement. Use the existing trace when it establishes the failed transition. If the question is how optional support affects the work and whether the agent can choose it, compare matched work without that support, with the source operation supplied, and with the agent choosing whether to obtain it. Keep required execution and checks common in that comparison. The trace distinguishes an omitted necessary call from a malformed call, lost input or ignored return. Making fewer calls helps only with correct result use, necessary access and appropriate stopping. [SYSE.49](70-syse-49---construct-informative-tasks-and-feedback-environme.md) constructs missing informative experience. These tests can qualify a fixed-model repair; training and division of work remain separately selected alternatives.
 
 Choose the body that supplies the missing operation:
 | Needed contribution | Full Method and first result |
@@ -286,7 +286,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [Systems Engineering Principles Framework Architectural Reference](01-systems-engineering-principles-framework-architectural-refer.md) (19 lines)
 - [SYSE.Reference:1 - Choose a useful result and combine its needed contributions](02-syse-reference-1---choose-a-useful-result-and-combine-its-ne.md) (44 lines)
 - [SYSE.Reference:2 - One System can appear in several engineering structures](03-syse-reference-2---one-system-can-appear-in-several-engineer.md) (14 lines)
-- [SYSE.Reference:3 - Use and System concepts stay linked](04-syse-reference-3---use-and-system-concepts-stay-linked.md) (25 lines)
+- [SYSE.Reference:3 - Use and System concepts stay linked](04-syse-reference-3---use-and-system-concepts-stay-linked.md) (23 lines)
 - [SYSE.Reference:4 - Realization is recursive and continuous](05-syse-reference-4---realization-is-recursive-and-continuous.md) (19 lines)
 - [SYSE.Reference:5 - Common platform work and software-specific Methods](06-syse-reference-5---common-platform-work-and-software-specifi.md) (100 lines)
 - [SYSE.Reference:6 - Configuration and evidence travel with continuing change](07-syse-reference-6---configuration-and-evidence-travel-with-co.md) (20 lines)
@@ -309,36 +309,36 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [SYSE.16 - Recover the Systems and Conditions Needed for a Use Decision](21-syse-16---recover-the-systems-and-conditions-needed-for-a-us.md) (276 lines)
 - [SYSE.17 - Find Systems That May Bear Engineering Consequences](22-syse-17---find-systems-that-may-bear-engineering-consequence.md) (371 lines)
 - [SYSE.2 - Develop Linked Use and System Concepts](23-syse-2---develop-linked-use-and-system-concepts.md) (432 lines)
-- [SYSE.54 - Make Domain Behaviour Explicit Together with EventStorming](24-syse-54---make-domain-behaviour-explicit-together-with-event.md) (344 lines)
+- [SYSE.54 - Make Domain Behaviour Explicit Together with EventStorming](24-syse-54---make-domain-behaviour-explicit-together-with-event.md) (342 lines)
 - [SYSE.22 - Coevolve Engineering Problems and System-Family Options](25-syse-22---coevolve-engineering-problems-and-system-family-op.md) (536 lines)
 
 ### Part II - Architecture, Descriptions, Offerings, and Professional Contributions
 
-- [SYSE.5 - Develop an Engineered System's Functional Organization and Bearer Alternatives](26-syse-5---develop-an-engineered-system-s-functional-organizat.md) (493 lines)
+- [SYSE.5 - Develop an Engineered System's Functional Organization and Bearer Alternatives](26-syse-5---develop-an-engineered-system-s-functional-organizat.md) (489 lines)
 - [SYSE.6 - Decide and Reopen the Engineering Architecture](27-syse-6---decide-and-reopen-the-engineering-architecture.md) (619 lines)
-- [SYSE.7 - Keep Engineering Descriptions Usable Together for Decisions](28-syse-7---keep-engineering-descriptions-usable-together-for-d.md) (443 lines)
-- [SYSE.8 - Develop an Integrated Offering and Provider Concept for Using an Engineered Result](29-syse-8---develop-an-integrated-offering-and-provider-concept.md) (420 lines)
-- [SYSE.9 - Use or Request Specialist Engineering Results](30-syse-9---use-or-request-specialist-engineering-results.md) (412 lines)
-- [SYSE.10 - Assess Research, Model, and Trial Results for an Engineering Decision](31-syse-10---assess-research-model-and-trial-results-for-an-eng.md) (490 lines)
+- [SYSE.7 - Keep Engineering Descriptions Usable Together for Decisions](28-syse-7---keep-engineering-descriptions-usable-together-for-d.md) (442 lines)
+- [SYSE.8 - Develop an Integrated Offering and Provider Concept for Using an Engineered Result](29-syse-8---develop-an-integrated-offering-and-provider-concept.md) (417 lines)
+- [SYSE.9 - Use or Request Specialist Engineering Results](30-syse-9---use-or-request-specialist-engineering-results.md) (411 lines)
+- [SYSE.10 - Assess Research, Model, and Trial Results for an Engineering Decision](31-syse-10---assess-research-model-and-trial-results-for-an-eng.md) (489 lines)
 
 ### Part III - Obtaining Engineering Results, Recursive Realization, Platforms, Independent Constituents, and Evolvability
 
-- [SYSE.24 - Choose How the Project Will Obtain a Needed Engineering Result](32-syse-24---choose-how-the-project-will-obtain-a-needed-engine.md) (853 lines)
-- [SYSE.3 - Plan the Next System-Realization Action (Recursive Realization Network)](33-syse-3---plan-the-next-system-realization-action.md) (470 lines)
-- [SYSE.11 - Integrate a System for One Bounded Use](34-syse-11---integrate-a-system-for-one-bounded-use.md) (481 lines)
-- [SYSE.12 - Develop or Retain an Engineering Platform for Practitioner Work](35-syse-12---develop-or-retain-an-engineering-platform-for-prac.md) (353 lines)
-- [SYSE.18 - Decide Whether and How to Integrate Systems Governed by Different Agents](36-syse-18---decide-whether-and-how-to-integrate-systems-govern.md) (428 lines)
-- [SYSE.23 - Choose What to Change So Later System Changes Become Easier](37-syse-23---choose-what-to-change-so-later-system-changes-beco.md) (715 lines)
+- [SYSE.24 - Choose How the Project Will Obtain a Needed Engineering Result](32-syse-24---choose-how-the-project-will-obtain-a-needed-engine.md) (850 lines)
+- [SYSE.3 - Plan the Next System-Realization Action (Recursive Realization Network)](33-syse-3---plan-the-next-system-realization-action.md) (468 lines)
+- [SYSE.11 - Integrate a System for One Bounded Use](34-syse-11---integrate-a-system-for-one-bounded-use.md) (480 lines)
+- [SYSE.12 - Develop or Retain an Engineering Platform for Practitioner Work](35-syse-12---develop-or-retain-an-engineering-platform-for-prac.md) (351 lines)
+- [SYSE.18 - Decide Whether and How to Integrate Systems Governed by Different Agents](36-syse-18---decide-whether-and-how-to-integrate-systems-govern.md) (427 lines)
+- [SYSE.23 - Choose What to Change So Later System Changes Become Easier](37-syse-23---choose-what-to-change-so-later-system-changes-beco.md) (713 lines)
 
 ### Part IV - Configuration, Continuing Change, and Source Continuity
 
 - [SYSE.13 - Establish Configuration Identity, Variants, and Effectivity](38-syse-13---establish-configuration-identity-variants-and-effe.md) (356 lines)
-- [SYSE.14 - Make a Release Decision for Named Engineering Work or Use](39-syse-14---make-a-release-decision-for-named-engineering-work.md) (344 lines)
+- [SYSE.14 - Make a Release Decision for Named Engineering Work or Use](39-syse-14---make-a-release-decision-for-named-engineering-work.md) (342 lines)
 - [SYSE.19 - Revalidate Engineering Decisions When a Relied-on Source Changes](40-syse-19---revalidate-engineering-decisions-when-a-relied-on.md) (558 lines)
 
 ### Part V - Assurance, Method and Work Architecture, Repertoire, and Cultural Continuation
 
-- [SYSE.4 - Decide Whether and How to Challenge an Engineering Claim](41-syse-4---decide-whether-and-how-to-challenge-an-engineering.md) (572 lines)
+- [SYSE.4 - Decide Whether and How to Challenge an Engineering Claim](41-syse-4---decide-whether-and-how-to-challenge-an-engineering.md) (564 lines)
 - [SYSE.15 - Choose and Refresh the Engineering Methods Needed by a Project](42-syse-15---choose-and-refresh-the-engineering-methods-needed.md) (378 lines)
 - [SYSE.20 - Reconcile Overlapping Engineering Work and Required Order](43-syse-20---reconcile-overlapping-engineering-work-and-require.md) (586 lines)
 - [SYSE.21 - Decide Whether and How to Change Systems Engineering Culture](44-syse-21---decide-whether-and-how-to-change-systems-engineeri.md) (385 lines)
@@ -347,7 +347,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 - [SYSE.25 - Decide Whether and How to Improve a Platform from Practitioner-Task Evidence](45-syse-25---decide-whether-and-how-to-improve-a-platform-from.md) (168 lines)
 - [SYSE.26 - Design a Supported Platform-Use Path](46-syse-26---design-a-supported-platform-use-path.md) (178 lines)
-- [SYSE.27 - Evolve Platform Interfaces and Contribution Paths](47-syse-27---evolve-platform-interfaces-and-contribution-paths.md) (163 lines)
+- [SYSE.27 - Evolve Platform Interfaces and Contribution Paths](47-syse-27---evolve-platform-interfaces-and-contribution-paths.md) (165 lines)
 - [SYSE.28 - Place Qualified Controls in a Supported Platform-Use Path](48-syse-28---place-qualified-controls-in-a-supported-platform-u.md) (152 lines)
 - [SYSE.29 - Decide Whether and How to Migrate or Retire a Supported Platform Path](49-syse-29---decide-whether-and-how-to-migrate-or-retire-a-supp.md) (160 lines)
 - [SYSE.53 - Resolve a Usable Composition of Independently Released Components](50-syse-53---resolve-a-usable-composition-of-independently-rele.md) (224 lines)

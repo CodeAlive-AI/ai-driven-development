@@ -164,6 +164,6 @@ Reopen this comparison when an affected use was missed, when a dependency or cov
 - SIE.2 supplies the source meaning, edition, authority, and access premises used in the comparison.
 - SIE.3–SIE.9 supply the domain results located in §4.2; SIE.10 supplies validation for the affected receiving claim.
 - SIE.12 supplies the module dependencies and material-change arrangements when participants depend on shared semantic modules.
-- Domain source owners, MDM, SYSE, operational providers, and receiving applications retain their respective decisions.
+- Use the relevant source, master-data, engineering and operating methods to revalidate affected results. Return an outstanding decision to the party authorized to make it for the use in question.
 
 ### SIE.11:End

@@ -49,7 +49,7 @@ Choose what to simplify and provide the operations that obtain the simplified an
 
 Let a parameter control the discarded information. It can be a rounding interval, polynomial degree, mesh size, retained rank, iteration count or arithmetic precision. Describe how changing it alters both the algorithm and the information retained. One parameter need not control every source of error.
 
-If the construction changes the feasible set, provide a recovery procedure and its feasibility argument. If it changes only the objective used to select an answer, establish how that selection compares under the original objective. CMP.2 and CMP.3 can construct and schedule the resulting subproblems.
+If the construction changes the feasible set, determine which inference the change permits. An outer bound may settle a question about the optimum. When an original feasible solution is commissioned, supply a recovery procedure and its feasibility argument. If it changes only the objective used to select an answer, establish how that selection compares under the original objective. CMP.2 and CMP.3 can construct and schedule the resulting subproblems.
 
 Try the simplest family that can meet the receiving requirement. A parameterized approximation scheme is unnecessary when one cheap direct calculation or an available bound settles the question.
 
@@ -59,7 +59,7 @@ Relate the computed intermediate object to the original target. MATH.20 supplies
 
 For example, if an intermediate approximation has distance at most e from its target and the next operation G obeys `d(G(u),G(v))≤L*d(u,v)` on the relevant inputs, this contribution to final error is at most L\*e. Add another error term only when it measures a comparable discrepancy and an argument, such as a triangle inequality, permits that addition. A probability of failure and a numerical error are different quantities.
 
-For an optimization construction, compare the original objective of the recovered candidate with the original optimum. Follow every inequality in its proper direction. Rounding values can bound objective loss while leaving constraints unchanged; rounding constraint coefficients needs a separate admissibility argument.
+For a claim about how well a feasible candidate performs, compare its original objective with the original optimum. For a value or threshold question, propagate the bounds on that value in the direction the question needs. Follow every inequality in its proper direction. Rounding values can bound objective loss while leaving constraints unchanged; rounding constraint coefficients needs a separate admissibility argument.
 
 When several approximations are composed, carry their bounds through the downstream operations used. Allocate finer resolution where it changes the final bound most usefully. An unbounded sensitivity or a lost discontinuous distinction can require another formulation rather than further use of the same family.
 

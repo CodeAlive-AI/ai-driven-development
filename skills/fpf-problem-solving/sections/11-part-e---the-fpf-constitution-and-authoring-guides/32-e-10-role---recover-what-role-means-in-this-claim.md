@@ -62,7 +62,7 @@ Use the sentence's intended claim, not the trigger word, to select the result.
 4. Apply the selected pattern only as far as the receiving claim needs. Add a Tech designation, occurrence identity, predicate, assertion, reference, evidence, or assurance only when omitting it would change truth, action, reuse, or reliance.
 5. For one recovered claim, stop when you have selected its particular object or relation and the applicable pattern. Otherwise identify the claim that lacks a governing rule (`missing-governor`), state what information is missing, or return the quote-only or ordinary-non-use result.
 
-If recovery shows that the same bounded phrase carries several distinct claims at once, rewrite them as separate ordinary sentences and apply steps 3–5 to each sentence. Ambiguity by itself is not evidence of several claims.
+The same phrase can carry several claims. Give each its direct rule and keep the connection the reader needs. “Alice reviewed the manuscript under her assignment” depends on the work and the assignment being hers for this manuscript. Ambiguity alone leaves it open which claim is meant.
 
 Use A.6.C **Contract Unpacking for Boundaries** only when its contract-like boundary-language trigger holds; otherwise apply the direct rule for each recovered claim. Do not create a multi-claim record or an umbrella role object.
 
@@ -71,7 +71,7 @@ Use A.6.C **Contract Unpacking for Boundaries** only when its contract-like boun
 | One exact local work-facing system-role kind, or a technical claim that one admitted system counts under it | For kind recovery, use C.3 and A.2 to identify one exact local system-role kind through its candidate domain, membership distinction and continuity rule; a durable local designation normally ends in `...SystemRole`, for example `ReviewerSystemRole`. For a current classification judgment, use A.2 and C.3.2 and keep the admitted candidate system, exact kind, current `KindSignature` edition, context slice, and `true | false | unknown` result recoverable. Kind admission is not the classification judgment. |
 | One obtaining assignment of an admitted system to that kind | Recover one occurrence of an exact direct species under `U.SystemRoleAssignment` through A.2.1. Assignment creates neither system admission, another classification, capability, participation, responsibility, nor Work. |
 | “The system as reviewer” or similar readable designation | Keep the readable actor designation when it carries the needed ordinary claim. Recover exact system identity, a separately obtaining classification, or an assignment only when the receiving claim uses that distinction. Create no `SystemInRole` individual. |
-| Participant meaning or actual participant of a direct relation | Use the pattern for that direct relation. Use `A.6.RSIR` only while the participation or its rule remains unclear. State the participant meaning and actual participant. |
+| Participant meaning or actual participant of a direct relation | Use the pattern for that direct relation. Use `A.6.RSIR` only while the participation or its rule remains unclear. State what participation means. Identify the actual participant when the claim concerns one. A proposed position may still be open. |
 | One place in a declaration, for example a source-named field, argument, result, endpoint, slot, or port | Use A.6.5, A.6.1, or the applicable interface rule for the recovered declaration. Use `A.6.RSIR` only for a remaining ambiguity. Recover the `SlotKind`, `SlotSpec`, argument or result declaration, or interface term that the claim needs. |
 | One position in a representation, for example a tuple component, formula argument, graph endpoint, diagram place, schema field, or call position | Use the pattern for the selected representation; use C.29 for a mathematical-lens correspondence when that use is current. The position is neither participant meaning nor system-role kind. |
 | Another object or relation, for example participation, functioning, capability, Method, Work, obligation, permission, access, authority, responsibility, position, result, or status | Use the direct pattern and relation for that claim. If exact participants are known but no current direct relation closes the use, return the exact `missing-governor` result through A.6.RCD. |
@@ -104,7 +104,7 @@ No separate repair record is required unless another named use must inspect or r
 
 “Alice is reviewer” may stay as readable recognition prose when no technical classification claim is consumed. If only the local kind matters, identify `ReviewerSystemRole` through C.3 and A.2. If a technical classification judgment matters, use A.2 and C.3.2 and keep Alice, `ReviewerSystemRole`, the current `KindSignature` edition, the context slice, and the `true | false | unknown` result recoverable.
 
-If assignment identity matters, first name the declared assignment species `JournalReviewAssignmentRelation` and establish that its direct predicate obtains for the actual participants, including Alice as holder, under the stated applicability. Only then identify `ReviewAssignment-82` as the occurrence and state its extent. A roster, appointment label, description, or evidence item may support the assignment claim but does not make the assignment obtain.
+If assignment identity matters, first name the declared assignment species `JournalReviewAssignmentRelation` and establish that its direct predicate obtains for the actual participants, including Alice as holder, under the stated applicability. Only then identify `ReviewAssignment-82` as the occurrence and state its extent. Determine what the appointment rule makes effective. An authorized editor’s entry in the roster may appoint Alice. A later copy may document the appointment. To establish that Alice reviewed the manuscript, use evidence of her review.
 
 If performed Work matters, first recover Alice's A.13 core for this action and independently admit `ReviewWork-82` under A.15.1. Because this branch also says that Alice performed the Work under `ReviewAssignment-82`, F.6 afterward relates the already admitted Work to that same assignment.
 
@@ -145,7 +145,7 @@ The pattern favors Onto/Epist precision, which can tempt an author to expand eve
 7. Are functioning, capability, Work, deontics, access, authority, responsibility, evidence use, and results kept under their direct relations?
 8. Does ordinary prose stay ordinary when no technical distinction changes the receiving claim?
 9. Does the repair add a qualifier only for a live alternative and avoid a fixed formal expansion?
-10. For each recovered claim, does the repair stop after one exact object or relation and its applicable rule are selected?
+10. Does the reader have the particular object or relation and its rule for each claim, and the grounds for connecting them when the assignment calls for that conclusion?
 
 ### E.10.ROLE:8 - Common Anti-Patterns and How to Avoid Them — Role-Word Repairs
 

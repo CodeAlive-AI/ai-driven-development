@@ -6,9 +6,9 @@
 
 ### B.2.4:0 - Use This When
 
-Use this pattern when capability, functioning, or transformation-flow facts, established under their subject patterns, raise a B.2 whole-reidentification question.
+Use this pattern when a claim about capability, functioning or transformation flow raises a consequential question about the identity of the whole. The question may concern an existing bearer or the organization a proposed bearer would need.
 
-The first useful question is whether those facts can be explained by the existing whole. If that explanation is sufficient for the receiving use, retain the whole; use the pattern for any remaining capability, functioning, transformation, Method, Work, module, characteristic, or architecture question. Use B.2 for a remaining consequential whole-reidentification question, including one whose deciding grounds are unresolved.
+First establish what the recipient must decide about the ability, its exercise or the identity of its holder. A supported account of one performance may settle a question about that occasion. For a promise or a design, identify the conditions under which the holder must be able to deliver. When that decision depends on keeping or changing a whole, compare what the existing arrangement can support under its identity rule. Use B.2 for the remaining identity question, including one whose deciding grounds are unresolved.
 
 Evidence and measurement support, challenge, or leave unresolved the claims about those facts. Use the supported facts in B.2's comparison of the existing and candidate wholes.
 
@@ -59,10 +59,10 @@ Use the capability and functioning facts to decide whether B.2 whole reidentific
 
 #### B.2.4:4.1 - Start From Facts, Claims, And Support
 
-1. Name the existing whole and its identity or reidentification rule.
-2. Identify each capability envelope, obtaining functioning relation, or selected in-life transformation-flow structure under its subject pattern. Keep method, method description, work plan, work occurrence, module allocation, characteristic, and architecture facts separate when they are current.
+1. Start from the required result and scope. Whose ability or work matters, under which conditions, and what would a different answer change? For a whole-identity question, identify the relevant holder and the conditions for its continuity.
+2. Trace the needed functioning back to the systems that provide it, the operations that compose the Method, and any Work whose performances the claim concerns. Choose the extent of each from its contribution to the required result. Vary which participant supplies an operation while the output stays fixed, then ask what the same participant could supply under a different arrangement. Keep distinctions that change the recipient's decision or its grounds. Establish each capability, functioning relation or in-life transformation-flow structure under its subject pattern. A design specifies what would have to hold.
 3. State the claim made about those facts. For any relied-on evidence or measurement result, identify whether and how it supports or challenges that claim, retaining any unresolved conclusion. Keep the measurement and its result distinct from the evidence-use relation.
-4. Perform B.2's ordinary existing-whole comparison. Better measurement, component improvement, Method or Work repair, allocation repair, or architecture-view repair can leave the same whole in place.
+4. Perform B.2's ordinary existing-whole comparison. Better measurement, component improvement, Method or Work repair, allocation repair, or architecture-view repair can leave the same whole in place. If the practitioner is asked to develop an arrangement, work from a missing contribution to a feasible change in the Method, allocation, external support or assembly. Test whether the contributions can be obtained together under the required conditions. A justified limit may decide feasibility. An order for one workable arrangement can finish with the first supported one.
 5. Use B.2 for a remaining whole-reidentification question, including an unresolved deciding ground. When the comparison establishes that the existing whole is insufficient, B.2 identifies a candidate new whole, applies the A.1 and kind-specific criteria, and tests whether it meets the receiving use before claiming whole reidentification.
 
 If a receiving use needs a durable account, use B.2's optional C.2.1 epistemes to state the facts, comparison, and supported conclusion.
@@ -98,7 +98,7 @@ Subject-pattern explanations that often stop B.2.4 include:
 - architecture-view or transformation-flow-structure repair;
 - better evidence, measurement, or source currentness for an unchanged world-side claim.
 
-If one of these explanations is sufficient for the receiving use, retain the existing whole and finish B.2.4. Use the subject pattern for any remaining question.
+If one of these explanations is sufficient for the receiving use, retain the existing whole and finish B.2.4. Use the subject pattern for any remaining question. The same performance records may leave it open whether the holder could repeat that result when support is unavailable. Conversely, a binding provision for support and a suitable operating arrangement can establish a conditional ability before the next performance. Use the applicable identity criterion if the conclusion also names a continuing holder.
 
 #### B.2.4:4.4 - When B.2.4 Requires B.2
 
@@ -127,6 +127,8 @@ A team may have methods for coding, testing, and releasing. That does not by its
 
 B.2.4 becomes current when capability, coordination, commitment, and work facts raise a consequential question about whether the existing team or platform carries the receiving claim. Evidence may support that claim; an automated delivery label or score does not decide the ontology.
 
+Suppose each of two teams can obtain a whole shift on a shared test bench when the other team is idle. One release yesterday establishes a performance. To decide whether both can be promised a release on the same shift, recover the test each release requires and the bench time they can use together. If each requires the whole shift for its own test, one available bench excludes that joint arrangement. If one test is valid for both releases and the teams may use the same result, that part of the promise can be met in one shift. Determine separately whether the other conditions for both releases hold. The decision can turn on the Method and the rights to use the result while both teams retain their identities.
+
 #### B.2.4:5.3 - Theory Explains New Phenomena
 
 A new theory may explain phenomena that the source portfolio did not explain. Use B.2.4 to bring the explanatory-use facts into B.2's ordinary existing-whole comparison, while evidence separately supports or challenges the claim about that use.
@@ -147,10 +149,10 @@ This does not assign an A.2.2 capability to the episteme. B.2.3 tests the candid
 
 | Check | Requirement |
 | --- | --- |
-| `CC-B2.4-1` | B.2.4 is used only when capability, functioning, or selected in-life transformation-flow facts leave a B.2 whole-reidentification question after subject-pattern explanations are tested. |
+| `CC-B2.4-1` | The comparison answers the receiving question about the holder and its continuity over the conditions that matter. Established performance, capability conditional on support and a proposed arrangement each supply the conclusion their grounds warrant. Close a sufficient subject-pattern answer at its own scope. |
 | `CC-B2.4-2` | Ordinary capability, function, functioning, transformation, method, work, module, characteristic, evidence, and architecture claims return to subject patterns. |
 | `CC-B2.4-3` | A capability or function label does not substitute for the subject-pattern facts or B.2 whole comparison. |
-| `CC-B2.4-4` | Method, method description, work plan, and work occurrence remain separate. |
+| `CC-B2.4-4` | Distinguish the Method and its operations, its description, the plan and the Work performed. Where their organization or a choice among arrangements matters, show how the selected contributions can meet the intended use together. |
 | `CC-B2.4-5` | Mathematical or publication descriptions of transformation-flow structure do not replace the in-life structure. |
 | `CC-B2.4-6` | If B.2 remains current, it handles the remaining whole comparison, tests a candidate new whole under the A.1 and kind criteria when required, and supplies any optional record needed by the receiving use. |
 

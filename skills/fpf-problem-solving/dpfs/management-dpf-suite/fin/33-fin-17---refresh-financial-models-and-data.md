@@ -106,7 +106,7 @@ If a check fails, distinguish an implementation error, an inadequate method and 
 #### FIN.17:4.7 - Replace stale reliance as well as the model
 
 
-Give the receiver the changed result, its effective basis and the consequence for the earlier instruction or recommendation. Identify the previous result that is no longer adequate where coexistence could cause action on obsolete grounds. An updated workbook stored elsewhere does not repair a payment request or investment memo still using the old amount. Update the account that uses the result or tell its owner what needs to change.
+Give the receiver the changed result, its effective basis and the consequence for the earlier instruction or recommendation. Identify the previous result that is no longer adequate where coexistence could cause action on obsolete grounds. An updated workbook stored elsewhere does not repair a payment request or investment memo still using the old amount. For an assessment, return the discrepancy and identify which dependent use it affects. Update the account, inform its holder or carry out a recovery when that work is entrusted to you or a standing duty requires it.
 
 When a transaction is already committed, the refresh must start from that commitment. The updated result can support a proposed amendment, a plan to fund the remaining duty or a different future action. Replacing a forecast leaves the contract in force on its existing terms. Separate the instruction that can still be withdrawn from the financial effect that has already occurred. FIN.15 supplies execution and recovery; FIN.14 handles a changed protection arrangement.
 
@@ -161,7 +161,7 @@ A convenient new datum can be adopted before its meaning or reliability is under
 
 ### FIN.17:7 - Conformance Checklist
 
-Is the changed fact distinguished from the financial event or agreement it describes? Are all action-changing dependent results updated, and unaffected results retained? Does the return name the actual updated object or a specific no-update reason? Is any ongoing observation justified by continuing use?
+Is the changed fact distinguished from the financial event or agreement it describes? Does the return identify the affected uses and distinguish the reported consequence from any correction actually made? For each revision or notice entrusted to this performer, what establishes its completion or what obligation remains open? Are unaffected results still usable? Is any ongoing observation justified by continuing use?
 
 ### FIN.17:8 - Common Anti-Patterns and How to Avoid Them
 

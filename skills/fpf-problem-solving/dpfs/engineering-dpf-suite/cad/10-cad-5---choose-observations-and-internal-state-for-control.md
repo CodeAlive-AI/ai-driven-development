@@ -17,7 +17,7 @@ Retain a simpler qualified arrangement when it works. A current complete observa
 
 ### CAD.5:2 - Problem
 
-An accurate observation of the past is not an accurate observation of the present. Between sampling and acting, the plant has evolved under known commands and unknown disturbances. Combining the latest values from several channels can therefore create a state that never existed. A point estimate can also hide alternatives that demand different actions.
+An accurate observation of the past is not an accurate observation of the present. Between sampling and acting, the plant has evolved under the inputs actually applied and the disturbances it experienced. A record of issued commands establishes the applied inputs only under an actuation model that warrants that inference. Combining the latest values from several channels can therefore create a state that never existed. A point estimate can also hide alternatives that demand different actions.
 
 The value of reducing estimation error depends on its effect on control. Error in a harmless direction may cost more to remove than error in a direction that exhausts an actuator margin. Conversely, a low average error can coexist with an unacceptable possible trajectory.
 
@@ -36,7 +36,7 @@ The design problem is to obtain enough timely information for the required actio
 
 ### CAD.5:4 - Solution
 
-Construct the possible current states from the information available at the action time. Determine whether **one action**, chosen with that information, works for all those states and admits the required continuation. Use failures of that construction to change the observation, its timing, the internal representation or the control demand. Compare complete alternatives under the same demand.
+Construct the possible current states from the information available at the action time. Determine whether **one action**, chosen with that information, works for all those states and admits the required continuation. Use failures of that construction to change the observation, its timing, the internal representation or the control demand. For an assessment of a given architecture, return what its available information permits. If the decision calls for a choice, compare complete alternatives under the same demand.
 
 #### CAD.5:4.1 - Fix the action time and the control-relevant distinctions
 
@@ -72,7 +72,7 @@ $$
 
 A quantized symbol instead denotes its whole quantizer cell, including the noise bound. A saturated extreme cell may be unbounded; do not replace it with a small symmetric error interval. For adaptive thresholds, retain or communicate the thresholds used for that sample.
 
-Construct a finite set of feasible channel-and-schedule alternatives. Include the resource coupling that can change their timing: two sensors sharing a bus, for example, need not retain their isolated delivery bounds. State which loss and delay combinations are allowed. A fixed periodic schedule or an explicitly bounded family of allowed modes supplies timing conditions for the error calculation. The number of cases and the cost of set propagation still have to fit the design and execution effort. Arbitrary online sensing policies require a separate policy construction.
+For a specified channel and schedule, construct their timing and information conditions directly. For a choice among a finite set, construct the feasible alternatives. A bound valid across a family can settle the comparison for that family. Include the resource coupling that can change their timing: two sensors sharing a bus, for example, need not retain their isolated delivery bounds. State which loss and delay combinations are allowed. A fixed periodic schedule or an explicitly bounded family of allowed modes supplies timing conditions for the error calculation. The number of cases and the cost of set propagation still have to fit the design and execution effort. Arbitrary online sensing policies require a separate policy construction.
 
 A rapid narrow channel, a slow complete channel and their combination are useful candidates when the problem suggests them. Future-disturbance preview is different from a delayed observation of the current plant; give it its own prediction model rather than treating its timestamp as negative measurement delay.
 
@@ -240,7 +240,7 @@ The added result is the construction of observation availability, internal infor
 
 #### CAD.5:4.8 - Compare whole alternatives and return to the failed dependence
 
-For each serious channel-and-schedule alternative, obtain the information update, its cost and delay, the error bound and the control conclusion. Keep the demanded behavior, initialization and resource accounting the same. Compare the alternatives that meet the demand; distinguish a proof of impossibility from failure of a sufficient bound.
+When comparing channel-and-schedule alternatives, establish for each relevant alternative the information update, its cost and delay, the error bound and the control conclusion. Keep the demanded behavior, initialization and resource accounting on a comparable basis. A bound that excludes a family can settle its part of the comparison. If a sufficient design test fails, determine what remains open about feasibility.
 
 For an order asking for one workable arrangement, give a feasible design, its cost and its margin under the stated conditions. To claim it is the best of a finite family, compare the same objective and rule out improvement by any alternative, through a direct comparison or a bound covering several alternatives. Otherwise return the best qualified member found and the unresolved alternatives. A stochastic design can instead minimize an explicitly selected expected cost, but its covariance or a finite successful simulation is not a deterministic bound for this method's hard constraints.
 
@@ -250,7 +250,7 @@ Return according to what failed:
 | --- | --- |
 | The whole set of histories compatible at this decision has no common admissible action | Check whether an earlier permitted action can avoid that information state. If the conflict is unavoidable, change the observations, their timing or the actuation, or seek an authorized change in the required behavior. |
 | A feasible set is too large only after coarse approximation | Retain a useful correlation or use a tighter representation; include its execution cost. |
-| Estimation uncertainty fits, but the given feedback violates an input limit | Change or requalify the feedback and its continuation, or change the physical limit or demand. Do not label this a sensor impossibility. |
+| Estimation uncertainty fits, but the given feedback violates an input limit | Evaluate another feedback and its continuation, a feasible physical redesign, or a revision of the demand by the party authorized to change it. Do not label this a sensor impossibility. |
 | A longer observation gap or shared-resource delay breaks the bound | Restore a qualified timing arrangement or recalculate the information and control sets for the changed timing. |
 | A stable unobserved component fits the task without intervention | Remove an unnecessary channel and its associated internal history. |
 | A mode switch changes the permitted error or invariant set | Prove that the actual state and information representation enter the new qualified set, or retain a common valid bound. |
@@ -261,7 +261,7 @@ For a feasible arrangement, return the channel meanings and timing, initializati
 
 Connect sample timestamps and identities, executed inputs and the estimator's update to the components that supply and use them in the implementation. Qualify computation and transport deadlines under the proposed shared load. Select an already qualified behavior for missing data, inconsistent data and late completion; “hold the last command” is not automatically safe.
 
-The engineer chooses which information the controller is to obtain and retain. The engineer can explain why a channel matters to an action, what must be remembered while waiting for another channel, and which changed condition invalidates the resulting control.
+For a specified arrangement, explain what the available observations and retained state permit and which changes would invalidate that conclusion. When commissioned to design the arrangement, identify the sensing and memory choices the designer made and how each supports the required action.
 
 ### CAD.5:5 - Archetypal Grounding
 
@@ -352,7 +352,7 @@ $$
 
 The same controller's next-state bound is $0.8r_2(4)+0.02=0.0688704$, which exceeds $0.06$. More decisively, four unobserved disturbances plus the next one yield the half-width $0.067232$ from :5.2 even if S's old measurement is exact. F still reveals nothing about the second coordinate. Thus a different filter or gain using the same available information cannot restore this hard bound.
 
-The engineer must change a consequential condition. Restore the qualified two-tick transport arrangement, obtain a timely observation of the second coordinate, or revise the task or physical dynamics. If the sensor budget becomes 3, H alone supports the same feedback with next-state bounds $0.046$ and $0.024$; its input bounds are $0.102$ and $0.052$. H needs no delayed-observation reconstruction. It is now a simpler sufficient choice.
+The required behaviour cannot be guaranteed with these channels and timing. For a redesign, consider restoring the qualified two-tick transport arrangement or obtaining a timely observation of the second coordinate. A change to the required behaviour or to the plant calls for the corresponding authority. If the sensor budget becomes 3, H alone supports the same feedback with next-state bounds $0.046$ and $0.024$; its input bounds are $0.102$ and $0.052$. H needs no delayed-observation reconstruction. It is now a simpler sufficient choice.
 
 A different task can also justify less information. If the allowed second-coordinate deviation becomes $0.12$, retain F and set $u_2=0$. The unobserved stable second coordinate has the invariant bound
 

@@ -20,7 +20,7 @@ A reader may arrive with a project question rather than a PatternID: for example
 
 **Practical gain.** The entry connects a project question to a direct pattern and its first useful result. The direct pattern retains the governing explanation; each navigation unit carries its own entry function.
 
-**Not this pattern when.** After one direct pattern is selected, use `E.11.PUA` to follow its `Solution` to the smallest useful result or a stop that states the missing basis. Use `E.11.PUR` to judge applicability, recommendation, coordination, or ordering among candidate pattern uses, and to stop on an earlier result that still answers the concern. Use the direct pattern for the actual result, plan, work, evidence, decision, authorization, or publication claim.
+**Not this pattern when.** After choosing a direct pattern, use `E.11.PUA` to obtain the contribution its `Solution` can make and carry that result back into the original work. Use `E.11.PUR` to judge applicability, recommendation, coordination, or ordering among candidate pattern uses, and to stop on an earlier result that still answers the concern. Use the direct pattern for the actual result, plan, work, evidence, decision, authorization, or publication claim.
 
 ### E.11:2 - Problem
 
@@ -44,7 +44,7 @@ Attempts to help can create a second problem. Public guidance becomes a numbered
 
 ### E.11:4 - Solution - Give Each Entry Publication Unit One Job
 
-Write the short public entry first: recognizable working situation, practical question, first useful result or blocker, direct pattern or small plausible set, and ordinary stop or wrong-turn return.
+Start from the work the practitioner brings to the entry. Write the short route from that question to the first useful result or blocker, the direct pattern or small plausible set, and the stop or return. If the entry helps with one part, say what the practitioner can now do about the original question.
 
 If that prose is truthful and sufficient, stop expanding the entry. Add an expansion, exact result basis, or durable comparison only when ambiguity or a named receiving reliance needs it. The entry returns to the full architectural reference and pattern bodies when their explanation is needed.
 
@@ -189,7 +189,7 @@ Use `demonstrativeSliceRef` only when the example independently passes A.22.CGUS
 
 ##### E.11:4.1.1 - Cold-reader recognition and grounded public value
 
-Test every public entry against a first-time engineer, engineer-manager, or assisting agent who has not studied FPF. The heading and first sentence name a recognizable working situation; the next useful sentence names an imaginable first result or blocker and one direct-pattern distinction that changes the next action. PatternIDs, FPF kind names, internal quality language, and exact assurance fields remain later.
+Read the public entry as someone in its intended practice who has the stated prerequisites and has never used this route. For an entry to an engineering decision this might be a practising engineer or an assisting agent. The heading and opening sentence should let the recipient recognize their own question. The next sentence should identify an attainable result or blocker and the distinction that changes the next action. Introduce PatternIDs, FPF kind names and assurance fields where the reader needs them.
 
 A public value claim is grounded when the reader can recover the project need, first useful result or blocker, why one direct pattern can help, and the ordinary boundary. Add the exact potential-result kind, identity or obtaining basis, result-relative object, or conditional receiver only when omitting it would change the truth, the starting choice, the stop, or a named later reliance. The entry may stay readable prose; the reader never has to fill a card before opening the direct pattern.
 
@@ -201,7 +201,7 @@ Some readers arrive before a practical-use key is recognizable: a familiar relat
 
 Keep four moments distinct. **Recognize** why the ordinary situation matches this entry. **Select** the direct pattern whose `Solution` tells the practitioner how to obtain the expected first object. **Use** only the branch needed now. **Return** the smallest usable result or a named blocker. A direct result exists, or a relation obtains, only when the applicable pattern's conditions are satisfied; the entry cue creates neither.
 
-Apply the same compact entry shape each time: recognizable situation; practical distinction; expected first object; direct pattern; smallest usable result or honest blocker; ordinary stop; and one neighboring exit. Stop before signatures, card schemas, full Methods, pattern catalogues, or copied `Solution` prose.
+Keep the entry short enough to consult in the work. Give the situation, the distinction the practitioner needs, what the direct pattern can yield and where to go on a wrong turn. A first result can complete a lookup. If it supplies a premise for a wider explanation or design, show how to use that premise and where the remaining work belongs.
 
 - **An obtaining relation must be referred to, and perhaps distinguished from a repeated episode.** First name the exact participants and the readable direct relation, then open the pattern whose content defines or tests that relation. A current assertion can stop there when later work only needs to know whether the relation obtains.
 
@@ -230,7 +230,7 @@ Apply the same compact entry shape each time: recognizable situation; practical 
 
   Use `C.22.2` when the useful object is a reviewable problem-side card or formulation rather than the world-side relation. One `ProblemCard` may describe no actual PFR; selecting or discovering a method changes only the current solvability or continuation claim, not PFR participants, obtaining, identity, or the adverse condition.
 
-- **The present work succeeds, but another useful continuation may be possible.** The framework Readme's `WORK-OPPORTUNITY` entry connects bounded exploration, needed method contributions and the worth of advice. Begin with the available material or action; a changed constraint is not required. Select `C.40`, `C.39` or `C.11.DUA` by the first missing result, then stop at that result or its exact blocker. Continuing the present work without a new recommendation is a normal outcome.
+- **The present work succeeds, but another useful continuation may be possible.** The framework Readme's `WORK-OPPORTUNITY` entry connects bounded exploration, needed method contributions and the worth of advice. Begin with the available material or action; a changed constraint is not required. Select `C.40`, `C.39` or `C.11.DUA` by the contribution the decision needs. A supported possibility can settle a request for an idea. For a decision about the proposed change, apply that finding to its value, burden and outstanding conditions. Continuing the present work without a new recommendation is a normal outcome.
 
 #### E.11:4.2 - Public helper epistemes
 These helper epistemes are optional authoring or named-reliance support. Do not open them when the short public entry and direct pattern already make the result and boundary truthful. A pattern reference locates the FPF pattern episteme whose content is needed; classify it as a `U.MethodDescription` only when the A.3.2 criterion passes and the current use depends on that classification.

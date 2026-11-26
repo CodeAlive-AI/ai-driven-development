@@ -4,7 +4,7 @@
 > **Status:** Stable.
 > **Normativity:** Normative [A] (Core).
 
-**Use this when.** Several distinct mechanism declarations must be used together under shared conditions. Select their contracts and cite the required specifications. State a permitted operation order when joint use needs a protocol.
+**Use this when.** You need several distinct mechanism declarations to serve one or more uses under shared conditions. Work back from what the users must obtain to the contracts that supply it. Cite their governing specifications and state an order where one operation depends on another being performed first.
 
 **First useful result.** The distinct member declarations, their joint conditions and required specification references are recoverable. Each declared protocol step also resolves to one member declaration edition and one operation in that declaration. Two implementations of the same declaration do not become two members.
 
@@ -80,7 +80,7 @@ The suite user needs one description that can:
 
 ### A.6.7:4 - Solution
 
-Declare the members and their shared conditions in a `MechSuiteDescription`:
+Start with what the users must obtain and the conditions of use. To choose the members, follow each required result back to operations that could supply it. What inputs do their contracts admit? Can an input already available serve, or must another member supply it? Compare the candidate combinations against the required results and any constraints on using the operations together. Select the distinct declarations that govern the operations of a suitable combination. Several combinations may qualify. When assessing an existing suite, start with its declared members and test the intended use against their contracts.
 
 #### A.6.7:4.1 - `MechSuiteDescription` (data model)
 
@@ -88,7 +88,7 @@ Declare the members and their shared conditions in a `MechSuiteDescription`:
 
 1. **Suite identifier:** a stable identifier for downstream citation.
 2. **Membership:** a finite set of distinct mechanism declarations.
-3. **Suite obligations:** shared invariants that every member (and any permitted composition of members) must respect.
+3. **Suite obligations:** state which conditions hold for each applicable member, which link one member’s operation to another’s, and which constrain a whole permitted combination. Two individually admissible operations may still be incompatible in the same use.
 4. **Suite spec pins:** required citations/pins to governing spec refs and other “anchor” references.
 5. **Suite protocols, when needed:** allowed pipelines of use (permitted ordering and optional steps), expressed at the descriptive level.
 6. **Suite audit obligations, when needed by downstream use:** required audit/pin visibility (UTS/Path pins, crossing pins, guard pins), expressed as required anchors (not run-time values).
@@ -232,7 +232,7 @@ SuiteSpecPins := ⟨
 
 #### A.6.7:4.4 - SuiteProtocols
 
-A suite MAY describe allowed protocols (pipelines) as descriptive constraints on how suite members are intended to be composed. A `SuiteProtocol` describes the member-operation sequence. Its description:
+A suite MAY describe allowed protocols. If an operation uses another’s result, identify the result it requires and the conditions under which it can use it. Express the resulting order in the `SuiteProtocol`. Independently usable operations can also have a joint constraint, such as both referring to the same edition. Express it for the permitted combination. A shared edition alone leaves their order open. The protocol description:
 
 * MUST name the member mechanisms it uses,
 * MAY mark steps as optional,
@@ -272,7 +272,7 @@ A suite MAY require that downstream use provide audit anchors. These are **requi
 
 #### A.6.7:4.6 - Examples
 
-**Example 1 — compare two offers and retain the nondominated set.** The question is whether either offer can be discarded without accepting a worse cost or quality. This is a stipulated mathematical use; the following specifications and applications are case facts, not empirical measurements or dated Work claims.
+**Example 1 — compare two offers and retain the nondominated set.** The buyer wants to know which offers can be discarded without accepting a worse cost or quality. In this case the buyer also requires a selection result based on the comparison returned under the agreed policy. Comparing the two offers supplies their relation. The selector uses that relation to return the required candidate set. This determines which two declarations belong in the suite. An order confined to comparing the offers can end with the comparison. The following specifications and applications are stipulated for this mathematical example.
 
 **Selected contracts and specifications.** The baseline `OfferChoiceB1` selects `Dcmp = A.19.CPM §4.1` and `Dsel = A.19.SelectorMechanism §4.1`, including their operation-local declarations, application/binding predicates, identity and extent rules, in the same publication edition as this case. These references mean that edition's content, not a later revision. Resolve another publication's references again before reuse. Their effective scheme is the CHR reference scheme declared there.
 
@@ -349,7 +349,7 @@ Common biases this pattern guards against:
 
 A `MechSuiteDescription` is conformant iff all applicable items hold:
 
-**CC‑A.6.7‑1 (Correct level).** The suite’s `mechanisms` enumerate **distinct** `U.Mechanism` members. The suite is not encoded as `MechFamilyDescription`.
+**CC‑A.6.7‑1 (Correct level).** The suite’s `mechanisms` enumerate **distinct** `U.Mechanism` members. The suite is not encoded as `MechFamilyDescription`. The selected operations supply the contributions required for the stated joint use.
 
 **CC‑A.6.7‑2 (Description token, not `U.*`).** The suite token is a Description token and MUST NOT be introduced under `U.*`. Its name ends with `…Description`.
 
@@ -377,7 +377,7 @@ A `MechSuiteDescription` is conformant iff all applicable items hold:
 
 **CC‑A.6.7‑13 (No Pack conflation).** The suite MUST NOT be introduced, named, or used as a publication/shipping `Pack`.
 
-**CC‑A.6.7‑14 (Protocol closure & explicitness).** Each step resolves to one member declaration edition and one operation designator in that declaration (WF‑MS‑2). The operation's argument, result, law and admission meanings are recoverable. No unresolved edition choice, implicit operation or implicit crossing can supply that resolution.
+**CC‑A.6.7‑14 (Protocol closure & explicitness).** Each step resolves to one member declaration edition and one operation designator in that declaration (WF‑MS‑2). The operation's argument, result, law and admission meanings are recoverable. No unresolved edition choice, implicit operation or implicit crossing can supply that resolution. Where a step uses a preceding result, the protocol identifies which result meets its input conditions. Its invariants cover the conditions on the permitted combination.
 
 **CC‑A.6.7‑15 (P2W split preserved when applicable).** If the suite requires a planned-baseline pin, that baseline MUST be content of an A.15.2 `U.WorkPlan`. Preserve its intended values and references. Actual launch values require independently established facts under E.18:5.6; any `FinalizeLaunchValues` witness remains a separate episteme.
 

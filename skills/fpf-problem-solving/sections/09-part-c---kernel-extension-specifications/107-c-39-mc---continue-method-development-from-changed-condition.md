@@ -60,7 +60,7 @@ Name the receiving problem and the result it needs. Distinguish an unavailable r
 | A description, support arrangement, or earlier result is contradicted. | A.3.1.CC for the correction question; A.15.8.MS for a support configuration; A.3.1.MV when reusable variation changes. | The corrected, narrowed, or unresolved result and its affected consumers. |
 | The content question is settled and the question is publication or release. | The applicable E.11.PFP, E.4.PFIP, publication, and release Methods. | Their result or blocker; content review does not supply publication authority. |
 
-Retrieve the selected pattern through E.11.PUA/PUR and read its Solution and boundary. If a current result already answers this question, reuse it under the defining pattern and stop. A title match or search result is not a substitute for that check.
+Retrieve the selected pattern through E.11.PUA/PUR and read its Solution and boundary. Use a sufficient current result in the receiving work. Stop when it settles the commissioned continuation. When it settles the supplier’s question alone, carry it forward and develop the contribution still owed. A title match or search result is not a substitute for that check.
 
 #### C.39.MC:4.2 - Make the Present Continuation Usable
 

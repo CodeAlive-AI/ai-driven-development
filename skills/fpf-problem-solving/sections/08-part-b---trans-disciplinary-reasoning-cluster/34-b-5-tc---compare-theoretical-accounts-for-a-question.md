@@ -10,7 +10,7 @@
 
 The work here is to compare uses of those accounts. A theory supplies objects, relations and ways of reasoning; an application adds a question, an interpretation and the premises needed to obtain an answer. Compare those applications while keeping the underlying accounts understandable on their own terms.
 
-**First useful move.** Ask one question of each account. Supply the same relevant situation, recover how each answer is obtained, and locate the first difference that matters to the use. A route description that says where travel is possible and one that gives minimum travel cost can both be useful. The question determines which information and operations you need.
+**First useful move.** Begin with the question the recipient needs answered. Where the accounts offer answers to the same part, compare their reasoning under corresponding conditions. Where they supply different premises, establish how those premises contribute to the required answer. A route description that says where travel is possible and one that gives minimum travel cost can both be useful. The question determines which information and operations you need.
 
 The result explains what each account contributes, the conditions of agreement or difference, and which use or inquiry should follow. You may select one sufficient account, combine complementary contributions, or retain an unresolved difference together with what remains usable.
 
@@ -34,7 +34,7 @@ A comparison must recover enough of each application to distinguish these situat
 
 ### B.5.TC:4 - Solution
 
-**Fix the question → construct each account's application → align the case and the meaning of its answer → locate the consequential difference → use what the comparison establishes, or pursue the difference that matters.**
+**Fix the question → establish what each applicable account can contribute → align competing answers or connect complementary grounds → derive what follows for the original question.** An unavailable contribution may leave the answer open or make another account the sufficient choice.
 
 The sequence is revisable. Reuse an established application or correspondence. Return to the question when the accounts reveal that it combines different needs. Stop when the available result suffices for the intended use.
 
@@ -44,7 +44,7 @@ Say what you want to explain, predict, construct or decide, and what would count
 
 Keep the account and its proposed use separately visible. Comparing a theory's possible reach with a rival's implemented calculation is a comparison of unequal contributions. Either construct the relevant application of both or state which contribution is unavailable. An unavailable application can be a reason to use another account while retaining the first for development.
 
-If the accounts answer different questions, identify their shared question, if any. For the remaining questions, compare their usefulness as complementary contributions. A newly expressible question can be a valuable result: explain what inquiry it opens and why that inquiry matters. B.5:4.4 connects this result to problem development.
+If the accounts answer different questions, identify any shared question and ask what its answer supplies for the work in hand. They may agree about what was observed while supporting different decisions about a proposed change. Compare the remaining contributions for those uses. In open research a new question can be worth pursuing for what it makes possible. If an earlier question is still assigned, state what the comparison establishes for it and which part remains open. B.5:4.4 connects this result to problem development.
 
 #### B.5.TC:4.2 - Recover an application of each account
 
@@ -56,13 +56,13 @@ An account may need information the work lacks. Separate a supplied premise, a p
 
 A collaborator or tool can supply a calculation or proof. Recover the interpretation and conditions needed to compare its contribution. Learn or request the missing operation when you cannot follow the decisive step; a broad study of both theories is unnecessary when a smaller contribution settles the use.
 
-#### B.5.TC:4.3 - Work the same case and align the answers
+#### B.5.TC:4.3 - Relate the contributions to the same question
 
-Choose a small case that exercises the disputed operation or distinction. Give each account the corresponding inputs, derive its answer, and express the answers in the terms of the question. Explain the correspondence when the inputs or outputs have different forms.
+For competing answers to the same question, use the actual situation or a case that retains the disputed operation or distinction. Give each applicable account its corresponding inputs and interpret its result in the terms of the question. If a required input is unavailable, say what it prevents you from deriving and what the other account can already establish. For complementary contributions, check that their premises hold together and derive the answer their combination supports.
 
 For a mathematical application, compare the retained distinctions and operations. C.29.1 supplies the preservation argument when a result is to be transferred. For a physical application, keep the phenomenon, operating conditions and meaning of the predicted quantity aligned. For a computation, separate the mathematical formulation from approximation, numerical tolerance and execution.
 
-Begin with an understood case so a transcription or implementation error can be found. Then use a changed case that exercises the claimed difference: a shared resource, a constraint, an intervention or another relevant variation. Derive a general relation when the intended conclusion ranges beyond the cases. A finite example establishes its result; a counterexample can refute a general assertion whose premises it satisfies.
+Use a familiar case when it helps locate a transcription or implementation error. To investigate a difference, choose a case on which it matters and explain why. For a conclusion spanning cases, identify the dependence that carries it through the claimed range. One derivation for an arbitrary member can establish agreement there. One admissible counterexample can settle a claim of agreement everywhere. Where the question concerns only the given case, its sufficiently grounded result can finish the comparison.
 
 Agreement of reported numbers is informative only after their meanings and conditions are aligned. Conversely, different intermediate objects can lead to the same answer through an explained correspondence. Record only the derivation or explanation the receiving use needs.
 
@@ -109,15 +109,15 @@ If the comparison turns on whether one model refines another, check for the same
 
 #### B.5.TC:5.1 - Routes, reachability and minimum cost
 
-A mathematical account keeps routes as distinct objects. Routes p and q go from X to Y and cost 1 and 4. A route r goes from Y to Z and costs 2. Routes with matching endpoints can be concatenated; the cost of a concatenation is the sum of its costs. The two routes from X through Y to Z therefore cost 3 and 6.
+A planner asks what can be learned about a complete journey from X through Y to Z from accounts of its two stages. One recipient needs to know whether travel is possible. Another needs the least possible cost. Recover what each account retains that could answer those questions. In the first account, individual routes are distinct objects. Routes p and q go from X to Y and cost 1 and 4. Route r goes from Y to Z and costs 2. Routes with matching endpoints can be concatenated and their costs add, giving complete routes costing 3 and 6.
 
-A second account keeps only whether travel between endpoints is possible. Both X-to-Y routes become the answer “yes”. Joining that answer to Y-to-Z reachability gives “yes” for X-to-Z. This account answers whether travel is possible. It cannot give the cost of the route taken: p followed by r and q followed by r have the same reachability summary and different costs.
+A second account keeps only whether travel between endpoints is possible. Both X-to-Y routes become the answer “yes”. Joining that answer to Y-to-Z reachability gives “yes” for X-to-Z. This account answers whether travel is possible. Reachability alone cannot determine the minimum cost. Keep the routes and their endpoints, but change the cost of p from 1 to 5. With q still costing 4 and r costing 2, the least complete cost changes from 3 to 6 while every reachability answer stays the same. For a question about the route actually taken, even the original network permits two different costs.
 
-A third account keeps minimum costs. For finite nonempty sets of allowed first and second segments, assume every first segment can be followed by every second segment and costs add. Then the least combined cost is the sum of the two least costs. Every combined cost is at least that sum, and combining the two minimizing segments attains it. Here the answer is 1 + 2 = 3. The calculation can therefore answer the minimum-cost question without retaining every route. Choosing a route also requires the minimizing segments to be recoverable.
+A third account keeps minimum costs. For finite nonempty sets of allowed first and second segments, assume every first segment can be followed by every second segment and costs add. Then the least combined cost is the sum of the two least costs. Every combined cost is at least that sum, and combining the two minimizing segments attains it. For the original costs, the minimum is 1 + 2 = 3. The calculation can therefore answer the minimum-cost question without retaining every route. Giving directions for a minimum-cost route also requires the minimizing segments to be recoverable.
 
 Now change the allowed combinations. Let the second segments be r with cost 2 and s with cost 10. Only p followed by s, and q followed by r, are allowed. The minimum is min(1 + 10, 4 + 2) = 6. Independently minimizing the two stages gives 3, which no allowed route attains. The failure is the omitted compatibility relation. Retain the incoming-route distinction or calculate over the allowed pairs.
 
-The comparison yields three useful accounts with different retained information. Its changed case also identifies a condition for the minimum-cost composition rule. No physical interpretation is needed for this mathematical result. Using cost as travel time or expenditure adds the corresponding interpretation and additivity conditions.
+The planner can now choose what to recover from a partial description. With additive costs, the sum of the separate minima is a lower bound on every permitted complete route. To report it as the minimum, show that some permitted complete route attains both minima. This can hold even when other pairings are forbidden. To answer only whether a journey is available within a budget of 7, the allowed route costing 6 already suffices. For directions, identify the actual segments that make up an affordable route. Treating costs as times or expenditures adds the conditions under which those quantities add.
 
 #### B.5.TC:5.2 - The same oscillator, different formulation and computation
 
@@ -146,8 +146,8 @@ The cases use small formal constructions so their decisive steps can be inspecte
 ### B.5.TC:7 - Conformance Checklist
 
 - The comparison names a question and explains what its answer changes.
-- Each application has recoverable meanings, inputs, premises, decisive operations and an interpreted answer.
-- The shared case corresponds across accounts; a missing correspondence remains visible.
+- The meanings, inputs, premises, decisive operations and interpreted result of each application used in the conclusion can be recovered. An unavailable contribution and its effect on the commissioned comparison remain visible.
+- For a direct comparison the case corresponds across the accounts. For combined contributions the connections and their compatibility justify the joint result.
 - Agreement or disagreement is traced to the relevant question, premise, operation, inference, implementation or physical account.
 - The conclusion has the scope established by its derivation, cases and applicable evidence.
 - A sufficient cheaper account, complementary use or useful conditional result remains selectable.

@@ -6,11 +6,11 @@
 
 ### FIN.7:0 - Use this when
 
-A decision needs the value of an asset, operating enterprise or ownership interest at a stated date. Identify what is being valued and choose methods that answer that purpose. A qualified supplied valuation can be used without recreating it.
+A decision needs the value of an asset, operating enterprise or ownership interest at a stated date. Identify the interest and the purpose of the valuation. A qualified supplied valuation may already answer the question. If a new valuation is commissioned, establish who is to develop it and which inputs may be reused. Where an independent judgement by a specified valuer is required, obtain that valuer’s judgement. If you hold that appointment, perform the work reserved to you under the terms of the engagement.
 
 ### FIN.7:1 - Problem frame
 
-An income valuation requires familiarity with present value and required returns; market and asset approaches require comparable or asset-value evidence and the relevant adjustments. Obtain any additional expertise your chosen approach requires, or use an adequate supplied valuation.
+An income valuation requires familiarity with present value and required returns; market and asset approaches require comparable or asset-value evidence and the relevant adjustments. Choose an approach suited to the purpose and any applicable requirements. Obtain additional expertise where needed. An existing valuation can supply the result or the inputs that the engagement permits you to use.
 
 
 The object is a value estimate for an identified interest under a stated premise and purpose. Operating enterprise value, equity value, transaction price and book amount can concern related objects while answering different questions.

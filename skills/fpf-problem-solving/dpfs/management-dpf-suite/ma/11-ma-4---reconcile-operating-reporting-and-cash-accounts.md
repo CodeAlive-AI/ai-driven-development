@@ -72,7 +72,7 @@ Show enough intermediate amounts to expose an omitted term and reconcile to the 
 
 #### MA.4:4.4 - Return the reconciled views and any discrepancy
 
-Preserve each account for its warranted use and return the explanation connecting them. If a source is wrong, return the correction to whoever maintains it. A statutory account must be corrected through the applicable reporting process.
+Preserve each account for its warranted use and return the explanation connecting them. When a source entry is wrong, identify the discrepancy for the commissioned recipient. Notify its maintainer or correct the source as the assignment or an applicable reporting duty requires. Use the prescribed process for a statutory correction.
 
 Supply the required monetary basis to the receiving operating or financial method. If funding is at issue, identify the payer and determine what that payer can use at each required date after other obligations. A group total answers a consolidated reporting question. For a payment by one member, establish the availability, authority and timing of any transfer it relies on.
 

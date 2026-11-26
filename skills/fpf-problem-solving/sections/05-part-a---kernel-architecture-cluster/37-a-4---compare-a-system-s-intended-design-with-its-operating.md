@@ -67,7 +67,7 @@ Selecting D2 changes the comparison basis; it does not physically change Pump37.
 
 | Working situation | Correct exit |
 |---|---|
-| A pump circulates coolant while its CAD account is edited. | Use the continuing pump and the selected CAD account claim in the comparison. Operating Work and editing Work concern different subjects; the edit establishes no physical pump change. |
+| A pump circulates coolant while its CAD account is edited. | Compare the observed circulation of the continuing pump with the selected design claim. The CAD edit changes the account. If the question attributes the circulation to dated Work, establish that occurrence and its performer. |
 | An author cites an unchanged theorem. | Use the direct episteme-use rule for the citation; the cited theorem remains unchanged. |
 | An unused pump weathers. | A.3.4 can qualify the actual material change without invented Work. If later design conformance matters, compare the resulting condition with the selected criterion. |
 | A sensor measurement produces a new observation record. | Use the observation as warranted input to the comparison. Measurement and result do not by themselves establish target change. |

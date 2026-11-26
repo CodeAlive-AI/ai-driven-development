@@ -1,24 +1,26 @@
-## E.11.PUA - Pattern Use in a Working Situation and First Useful Result
+## E.11.PUA - Apply a Selected Pattern and Use Its Result in the Original Work
 
 > **Type:** Pattern-language use pattern (E)
 > **Status:** Stable
-> **Normativity:** Normative within FPF pattern use from a current practical question to the first useful result or honest stop.
+> **Normativity:** Governs applying one selected pattern to obtain the contribution the practitioner needs and using that contribution in the work for which it was sought.
 
 ### E.11.PUA:1 - Problem frame
 
 #### E.11.PUA:1.1 - Use this when
 
-Use this pattern when an agent has a current entity or relation of concern, a practical question, and one plausible FPF pattern, and needs to follow that pattern's `Solution` to reach the smallest useful result that truthfully answers the question, or to stop because the required basis is absent.
+Use this pattern when you have a practical question about a particular subject and have selected an FPF pattern to help answer it. Work through the applicable parts of its `Solution` until you have what that pattern can supply for your question. The original request determines whether this completes your work and what you can now explain, decide or do with the result.
 
 A reader may ask, “This pattern looks relevant. What do I do with it, what useful result should I expect, and when should I stop or return?” Answer that conversationally before considering any durable pattern-use record.
 
-**First useful result.** One result entity, obtaining relation, honest interim result, or exact blocker that answers the current question well enough to stop or continue. The ordinary result is named in domain language; exact predicate, identity, work, and reliance fields open only when they change the claim.
 
-**Primary EntityOfConcern.** One use of one selected FPF pattern for a current practical question, ending at one useful first result or honest stop. A later use is named only when a current continuation or reliance needs it.
+The **first useful result** is the earliest finding or product you can use. Determine what the original work requires of this pattern. That contribution may still need reasoning or operations within the same `Solution`. Once you have the contribution, use it for the commissioned result. If a condition rules out one way of obtaining it, consider the other ways allowed by the question. A finding about what is impossible can itself answer the whole question. Give the result in the language of the work, with the grounds the recipient needs.
+
+**Primary EntityOfConcern.** One use of a selected FPF pattern. Its practitioner returns the contribution to the work that called for it. That work determines what must still be explained or done.
 
 **What this buys.** The user gets a direct path from a pattern to a useful subject result without confusing pattern inspection, method description, planning, performed work, and result evidence. An addressable trace remains available when another agent or tool will use the distinctions, or an audit or delayed decision will depend on them.
 
 **Not this pattern when.** While several public entries remain plausible, keep comparing them under `E.11`; begin PUA only after one direct pattern is selected. Use `E.11.PUR` when applicability, recommendation, or coordination among several candidate uses is the current question. Use `E.18.1` when a wider method, plan, work, interpretation, and return flow must preserve accepted problem-side distinctions. Use the A.15 family when intended or performed `U.Work` is itself current.
+
 
 ### E.11.PUA:2 - Problem
 
@@ -48,9 +50,9 @@ Use one selected pattern through a short result-oriented procedure. Keep the sub
 
 #### E.11.PUA:4.0 - Cheap first screen before formal work identity
 
-Start with five ordinary values: the working subject, the practical question, the selected pattern's `Solution`, the first useful result or blocker, and the stop or return. For a bounded reversible use, those values are sufficient when the result and boundary are truthful.
+Start with five ordinary values: the working subject, the question the recipient commissioned, the selected pattern's `Solution`, the first useful result or blocker, and the stop or return. For a bounded reversible use, those values are sufficient when the result serves that use and the boundary tells the practitioner what has been accomplished.
 
-When following a pattern exposes a costly, infeasible or apparently unhelpful demand, use `C.11.DUA` to examine what that work can change and repair the continuation. Follow the selected method through its first useful completion, including any prescribed fields or records. Keep the result and its useful basis; retain a reason or limitation when the current decision or a later recipient needs it. An inactive inquiry adds no omission account. This route is conditional on the demand being in question.
+When following a pattern exposes a costly, infeasible or apparently unhelpful demand, use `C.11.DUA` to examine what that work can change and repair the continuation. Carry the selected method through the operations needed for its contribution, including any prescribed fields or records. Use §4.1 to decide what this completes for the recipient. Keep the result and its useful basis; retain a reason or limitation when the current decision or a later recipient needs it. An inactive inquiry adds no omission account. This route is conditional on the demand being in question.
 
 An FPF pattern supplies action- or judgement-guiding content; a person or another capable system uses it. The ordinary instructions “use this pattern” and “apply this pattern” are harmless shorthand.
 
@@ -70,14 +72,14 @@ Open these distinctions only when candidate retention, selection, result declara
 
 #### E.11.PUA:4.1 - The ordinary seven-step use
 
-Before making any pattern-use record, answer: “What exactly do I have now, what is the smallest useful result, and what would make me stop or return?”
+Before making any pattern-use record, ask what the recipient needs to decide, explain or do. What can this use of the pattern establish for that work? Stop when the commissioned result is available. If this result is one premise, carry it back to the outstanding question.
 
 1. **Recognize the working situation.** Name the subject or relation in ordinary domain language and ask the current practical question. State an exact kind now only when a nearby kind difference can change the pattern or result.
-2. **Inspect one direct pattern.** Read its Problem frame, Problem, Forces, Solution, Consequences, ordinary boundary, and nearest stronger neighbor. Do not select from its title or one trigger word alone.
+2. **Establish why this pattern fits.** Use an adequate understanding of the selected edition, its Solution and the conditions under which it applies. If the title is all you know, read the problem and Solution. Inspect the forces, consequences, limits or a neighbouring pattern where they could change the choice. Carry out a separately commissioned reading or comparison.
 3. **Say what useful result would answer the question.** Name the entity, obtaining relation, honest interim entity, or blocker plainly enough to distinguish it from a plan, description, recommendation, work occurrence, or nearby value. Name the Method, plan, dated Work, Transformation, evaluation, decision, or later-use object relative to which it is a result only when the phrase depends on that object. Add an exact kind, predicate, pattern locator, `ClaimGraph`, or category-correct basis only when ambiguity or replay makes it necessary.
 4. **Use the pattern's `Solution`.** The agent follows the guidance under its stated conditions. Name a system-role classification or assignment only when that claim matters; it necessarily matters for a precise Agent or actual-Work performer claim because A.13 requires both in the performer core.
 
-   If actual Work is current, first recover every precise performer's A.13 core; A.15.1 then independently admits the dated Work from the exact performance history, enacted Method, extent, and containing-System relation. Add F.6 afterward only when this use needs precise assignment-bound attribution through the same obtaining A.13 assignment; otherwise the Work-only account stops after A.15.1.
+   If actual Work is current, apply A.15.1 to the dated performance, its enacted Method, extent and containing System. Establish the A.13 basis of the System or Systems to which you attribute work at that extent. To attribute a particular contribution under an assignment, apply F.6 to that performer’s Work and its obtaining assignment.
 
    Identify a Method, authority, responsibility, or another independent value only when its own claim is current. A responsibility claim names its predicate and participants, or the A.6.RCD missing governor; routine pattern use needs no such expansion.
 
@@ -88,8 +90,8 @@ Before making any pattern-use record, answer: “What exactly do I have now, wha
 
    A reported concern is not closed by a correct answer to a substitute question. B.5.EA helps recover what the formulation lost. Use the available episode and text before asking the participant to supply a diagnosis. An adequate direct result still finishes this use without an extra audit.
 
-6. **State the immediate continuation only as needed.** Name a later use, stronger neighboring pattern, or unresolved clarification in conversation. Materialize an expectation, basis, result, flow, provenance, or boundary episteme only when a named later use needs it to remain addressable.
-7. **Stop or return.** Stop when the smallest useful result, honest interim entity, or exact blocker answers the current question at the precision that use needs. Return when the concern, basis, expected entity, direct pattern, relation, or later-use condition changes. A stop needs no receiver.
+6. **Use the contribution in the originating work.** If the commission is to perform the work, carry out or arrange the remaining contributions within the assignment. If it is to explain the Method, give the connected explanation the practitioner needs to recognize the relevant conditions, choose a way forward and reach the promised result. When a case supplies a choice or premise, explain how the practitioner can obtain it in their own situation. A request for the pattern text itself calls for its full body in the requested form. Keep a durable expectation, basis, result, flow, provenance or boundary episteme only when later reliance needs it.
+7. **Decide what is complete.** Finish when the result meets the originating request. An opening move, one application or a diagnosis can meet a request made for that purpose. For a broader commission, use the result to continue the work that depends on it. If a dependency is genuinely blocked, say what was established, what still depends on it and which fact, access or decision would allow the work to proceed. Continue independent work that can still be done. A completed use with no receiving use needs no receiver.
 
 An exact blocker can answer the current question. When reporting a subject or interim result, distinguish three cases. A new entity or relation occurrence becomes current under its own rule and basis; use the applicable A.15.PROD branch only when a production-work, Work-attributed first-constitution or completion claim is current.
 
@@ -105,7 +107,7 @@ At a citation, use the quoted or explained material directly when it is sufficie
 
 At an application reference, distinguish a required dependency, a conditional next move and one possible way. Follow a branch when it is required or chosen and its conditions hold; needing the result does not make every suggested Method compulsory. Reuse an adequate result after checking that it answers the present question under the current conditions.
 
-If the contribution is missing, obtain the relevant explanation, apply what is needed and bring its result back to the work that needs it. Reading a title or naming the pattern supplies no such result. An already understood Method need not be read again merely because it is referenced.
+If material is missing, identify what would settle the receiving question. A publication may already contain the required grounds or give a Method for obtaining them. Use a known Method directly where you can do the work. Where the order calls for a particular delivery, performance or authorized judgement, establish that it took place on the required terms. [A.15.9:4.1](../07-cluster-a-v---constitutional-principles-of-the-kernel/24-a-15-9---use-or-request-a-bounded-result-from-another-practi.md#a15941---follow-the-nine-step-bounded-result-sequence) guides that choice.
 
 A reference to comparison, for example, is satisfied by an adequate comparison of the actual alternatives and conditions, not by a list of patterns to read or by choosing a familiar alternative. A direction to reuse an existing sufficient arrangement concerns that arrangement's adequacy for the receiving work; it is not permission to stop because several relevant pages have been read.
 
@@ -265,7 +267,7 @@ In a boundary record, `return`, `wrongTurnRecovery`, `strongerNeighbor`, and `re
 
 #### E.11.PUA:4.4 - Candidate basis under named reliance
 
-Construct a durable candidate only after inspecting the direct pattern's Problem frame, Problem, Forces, Solution, Consequences and ordinary boundary. When a named reliance needs its basis addressable, state one ordinary C.2.1 claim whose EntityOfConcern is that exact CandidatePatternUse episteme. Say which direct Solution content and case facts support using the pattern for this practical question and expected result, with their applicability and unresolved or contradicted premises. Ordinary conversational use need not materialize this account.
+Base a durable candidate on the relevant edition’s problem, Solution, conditions, consequences and ordinary boundary. Reuse an applicable examination of that content. Inspect what still needs to be established or examined afresh under the commission. When a named reliance needs its basis addressable, state one ordinary C.2.1 claim whose EntityOfConcern is that exact CandidatePatternUse episteme. Say which direct Solution content and case facts support using the pattern for this practical question and expected result, with their applicability and unresolved or contradicted premises. Ordinary conversational use need not materialize this account.
 
 An optional representation of the basis claim is:
 
@@ -604,7 +606,7 @@ The trace measure improved while subject progress worsened. Keep completeness as
 
 ### E.11.PUA:6 - Bias-Annotation
 
-- **Recognition-only bias.** A matching title or trigger word is treated as use. Repair by inspecting the full direct pattern and naming the result or blocker its `Solution` can support.
+- **Recognition-only bias.** A matching title or trigger word is treated as use. Use the Solution and its conditions to work out which result or blocker it supports. Read further where the existing basis leaves that judgement open.
 - **Record-as-result bias.** A candidate form, trace, note, dashboard, or assessment record replaces the subject result. Restore the exact entity or relation occurrence and, when needed, the direct pattern and category-correct basis that make it this use's result.
 - **Plan-as-work bias.** Intended work or a generated plan is reported as performed work. For every precise performer, recover A.13 first and let A.15.1 independently ground the dated occurrence; add F.6 only for a current exact assignment-bound attribution.
 - **Flow-collapse bias.** A selection result, selected-pattern result, and downstream-work result are merged because each is called “result”. Restore the distinct results and the basis for each; name an E.18 crossing only when that crossing is current.
@@ -615,12 +617,12 @@ The trace measure improved while subject progress worsened. Keep completeness as
 | ID | Check | Passing condition |
 | --- | --- | --- |
 | `PUA-1` | Current concern | The working subject or relation and practical question are recognizable in domain language before the PatternID; an exact kind appears only when a nearby difference changes the use. |
-| `PUA-2` | Direct inspection | Problem frame, Problem, Forces, Solution, Consequences, ordinary boundary, and stronger neighbor were inspected. |
+| `PUA-2` | Basis for choosing and using the pattern | The rationale draws on the applicable edition’s Solution, conditions and consequential boundaries. A material difference from another candidate was examined where it could change selection or use. Any separately commissioned reading or comparison took place. |
 | `PUA-3` | Useful result before apparatus | Ordinary use distinguishes the result, honest interim entity, or blocker from nearby values and reaches a stop or return. Relative-object, exact predicate, pattern locator, basis, and flow position appear only when ambiguity or named reliance needs them. |
 | `PUA-4` | Reliance profile | Ordinary use remains conversational; every materialized support record names the later reliance that needs it. |
 | `PUA-5` | Honest closure | The use distinguishes a newly current result, a pre-existing entity with new grounding, and an interim entity while the expected result remains absent. A materialized closure cites the exact result assertion, direct pattern content, relative object when relevant, and category-correct basis. A.15.PROD appears only for a current production-work, Work-attributed inception or production-completion claim, with that branch's own basis. |
 | `PUA-6` | Work integrity | Every precise performer first has the A.13 core; `U.Work` then names an independently A.15.1-grounded occurrence and is never inferred from planning, setup, authorization, assignment, F.6 attribution, or another Work. Add F.6 only for a current exact assignment-bound attribution through the same obtaining A.13 assignment. A claim that the Work's actual changes first constituted another entity cites A.15.PROD and the work-to-change basis. |
-| `PUA-7` | Later use | The immediate continuation is understandable when current. A materialized realized-use finding cites the exact later object and basis; an intended-use finding asserts no obtaining relation. A genuine stop has no receiver or disposition finding. |
+| `PUA-7` | Receiving use | When the first result is a contribution, the practitioner uses it in the work still owed under the originating commission. They complete or arrange the remaining authorized work, or identify what specifically blocks it. A requirement to explain the Method is met when the recipient has the grounds needed to carry it through. A materialized finding about realized later use cites the exact later object and basis. An intended use remains an intention. A completed use with no receiver needs no disposition finding. |
 | `PUA-8` | Return | A changed concern, basis, result, pattern, or use opens a named return instead of silent reinterpretation. |
 
 ### E.11.PUA:8 - Common Anti-Patterns and How to Avoid Them
@@ -645,11 +647,11 @@ FPF patterns supply action- or judgement-guiding content for recurring working s
 
 Establish formal `U.MethodDescription` membership under A.3.2 only when the episteme's EntityOfConcern is an admitted Method, at least one claim concerns that Method as a way of doing, and that distinction changes the claim.
 
-The missing middle is neither discovery nor recommendation: use one selected conditional `Solution` to identify the first result with its own identity and basis that answers the current question, or stop when its basis is missing.
+Selecting a pattern settles where to look. Its `Solution` gives the practitioner the grounds and operations for the particular contribution the work needs. More than one operation in that same `Solution` may be needed before its result can serve the original question.
 
 Separating ordinary semantic checking from conditional record materialization protects both usability and rigor. A conversation can be sufficient for a bounded reversible question. Later use by another agent, an audit, an automated use, or an expensive decision can demand addressable support. The same ontology serves both profiles; only the reliance changes the recording granularity.
 
-The first-result boundary prevents proxy completion. A plan, note, simulation, or assessment may be valuable and may be the result at the current pattern-use position. It cannot stand for a later physical, clinical, organizational, or learned change. Stop where the current basis supports value, then continue under the pattern that defines, constrains, or tests the next result or relation.
+A plan, simulation or assessment can complete an order for that result. When subsequent work or an actual change was also commissioned, use the result in the work still owed and establish what occurred. Another pattern contributes when it supplies a needed way of working or a ground the selected one leaves open.
 
 ### E.11.PUA:11 - SoTA-Echoing
 

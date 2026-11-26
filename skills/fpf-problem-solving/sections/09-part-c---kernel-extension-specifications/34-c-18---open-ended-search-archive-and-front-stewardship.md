@@ -11,9 +11,9 @@
 
 Use this pattern when generating or retaining variants raises a practical question: which candidates belong on the current front, which should remain available for exploration, and what changed in the basis for those decisions? A retained stepping stone can matter even when another candidate currently dominates it.
 
-**First useful move.** Identify the eligible population, the comparison or retention rule and what the recipient wants back. All nondominated candidate identities, the objective values they realize and one candidate per value can give different answers. If missing information affects only some memberships, report the settled part and the decisions still open. For an exploration archive, give the candidates retained and their retention reasons.
+**First useful move.** Start with what the recipient wants back. For archive membership, establish what the contents at the requested time support. An authenticated entry can settle the presence of one candidate. A complete list needs grounds for its coverage. To explain why a candidate was kept, establish what governed that decision. For a front, identify the eligible population and comparison rule. All nondominated candidate identities, their distinct objective values and one candidate per value can give different answers. If only some memberships are settled, report them and identify what remains open.
 
-When a retention reason is not yet supportable, use B.5:4.1.2 on the candidate, source or failed attempt to develop what later inquiry or action it could enable and under which conditions. Compare that attainable contribution and the retention commitment through C.11.DUA:4.2–4.2.1; use an already adequate basis directly. C.19:4.0 develops this connection when the question concerns treatment of a live pool. Return the supported archive-membership decision, or the particular retention claim still open and the attainable contribution needed to settle it.
+When deciding what to keep and the prospective reason for retention is still unclear, use B.5:4.1.2 on the candidate, source or failed attempt to develop what later inquiry or action it could enable and under which conditions. Compare that attainable contribution and the retention commitment through C.11.DUA:4.2–4.2.1; use an already adequate basis directly. C.19:4.0 develops this connection when the question concerns treatment of a live pool. Return the supported archive-membership decision, or the particular retention claim still open and the attainable contribution needed to settle it.
 
 An ordinary set description and explanation can finish the work. Use a reusable record when another use needs its references, editions or history. Generation alone can return a variant set without creating an archive or front; use C.40 when constructing or changing the material itself is the missing work.
 
@@ -77,6 +77,8 @@ ExplorationArchiveRecord@Context:
 ```
 
 Use this record when an archive account must remain available for reuse—for example, retained exploration value, coverage, novelty, diversity, stepping-stone value, future reachability, curriculum expansion, lineage, or archive policy. Do not use the archive record as a selected-set result declaration or work permission.
+
+A dated record of the contents can answer a membership question. To explain a past selection, establish how the selection was made with the policy and inputs then in force. Evidence that a particular rule was followed, together with enough information to determine its result, can settle the question without a separate decision note. To attribute a choice to a tie-breaker, establish that the choice reached that tie. Where several grounds fit the same recorded choice, report what can be established about the grounds used. A reason developed today can support continued retention.
 
 #### C.18:4.2 - Front Record
 
@@ -245,7 +247,7 @@ For cultural variants, C.18 records the generated or retained variant set and it
 - `CC-C18-1` Before generation, archive update, or front publication, name and pin the descriptor, characteristic, distance, and family-coordinate bases used by that operation.
 - `CC-C18-2` Archive and front returns are separate from a selected-set result unless one is explicitly declared from them through `G.5`.
 - `CC-C18-3` Telemetry remains telemetry unless a declared policy promotes it into the comparator, dominance set, or selected-set criteria and the governing record names the affected intended archive/front uses or values, or the checked loci when none worsened, together with the authority that admits the promotion and any trade-off.
-- `CC-C18-4` For archive use, record the applicable retention policy, retained exploration value, lineage, and edition pins. When a stepping-stone use is claimed, record that use and its basis.
+- `CC-C18-4` For a reusable record of retained exploration, record the applicable retention policy, retained exploration value, lineage, and edition pins. A report confined to membership can use a sufficient account of the contents at the requested time. Support a claim about the grounds actually used in a selection with evidence of that decision. For proposed retention, justify the prospective use when the decision depends on it. When a stepping-stone use is claimed, record that use and its basis.
 - `CC-C18-5` Use C.30 family patterns before making an architecture move with a candidate.
 - `CC-C18-6` Use C.36 for cultural-evolution claims about variants, and term-bridge patterns when durable label or bridge work is needed.
 - `CC-C18-7` Refresh uses `G.11` with the smallest affected archive, front, descriptor, edition, or lineage locus.

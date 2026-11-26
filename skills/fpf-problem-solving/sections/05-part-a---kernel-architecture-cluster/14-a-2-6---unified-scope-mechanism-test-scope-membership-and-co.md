@@ -45,7 +45,7 @@ With USM, a practitioner can:
 
 * declare exact slice selectors and an exact scope predicate;
 * evaluate membership as true, false, or currently unknown;
-* combine exact scopes by intersection or independently supported union;
+* combine conditions on a common slice, trace conditions through successive stages, or establish the cases over which a claim holds;
 * translate only when exact local senses require an obtaining F.9 Bridge, a separate affirmative C.2.1 claim about this translation, and the current A.10 or B.3 reliance branch.
 
 A.2.6 defines the scope values, membership predicate, mathematical scope algebra, reusable A.6.1 operation declarations, and use boundaries. Use A.15.1 for evaluation work, A.10 for evidence, A.21 for gate decisions, and A.22 for structure selection. The practitioner decides whether and which claim to widen for the receiving use.
@@ -75,7 +75,7 @@ In **F–G–R**:
 * **G** must be “**where it holds**,” not “how abstract it sounds.”
 * **R** describes how strongly the claim is warranted by its evidence under the declared scope and use conditions (C.2.2). Observed semantic mismatch or loss may be evidence about a proposed translation, while the permitted-loss tolerance belongs to the separate C.2.1 claim about that use.
 
-When **G** is a **set‑valued scope**, serial dependencies **intersect** scopes; parallel, independently supported lines can publish a **SpanUnion** over their supported areas.
+For set-valued **G**, conditions that must hold on the same slice intersect. Where one operation feeds another, express the later requirement on the outcomes the first operation can supply. For a promised result, establish that the chain delivers it throughout the stated scope, by any promised deadline. To cover several cases, establish the same conclusion throughout each case. A claim of independent support has the additional conditions in §7.3.
 
 ### A.2.6:3 - Problem
 
@@ -105,7 +105,7 @@ USM keeps the following things distinct:
 * **`U.ClaimScope`**, **`U.WorkScope`**, and **`U.PublicationScope`** - C.3 specializations for claim, capability, and publication uses;
 * **membership semantics, mathematical scope algebra, and reusable operations** - three separate layers: the bivalent predicate, its C.29 set representations, and the exact A.6.1 declarations used only when a receiving use needs an actual application and binding.
 
-The primitive claim-scope question is `member(x, S)` for exact slice `x` and exact scope `S`. Intersection handles serial dependence. `spanUnion` is allowed only for independently supported areas. `widen` and `narrow` change the extension; `refit` preserves it while changing only a scope expression or parameterization. `translate` is used only when exact local-sense content must cross an obtaining F.9 Bridge and a separate affirmative C.2.1 claim names this translation's direction, rule, and tolerance.
+The primitive claim-scope question is `member(x, S)` for exact slice `x` and exact scope `S`. Intersect conditions expressed on the same slice. For successive stages, establish what can reach each stage and whether execution through the last stage delivers what was claimed (§7.2). A case argument may cover several areas under a common premise. Use `spanUnion` for a claim about independently supported areas (§7.3). `widen` and `narrow` change the extension; `refit` preserves it while changing only a scope expression or parameterization. `translate` is used only when exact local-sense content must cross an obtaining F.9 Bridge and a separate affirmative C.2.1 claim names this translation's direction, rule, and tolerance.
 
 A receiving guard relies on that claim through a passing A.10 disposition or, when an actual named assurance claim is current, a B.3 `AssuranceResult` for the same use with `disposition=supported-for-use`; a different label or reference scheme alone selects none of these.
 
@@ -208,7 +208,7 @@ For every governed-reference argument, record presence, citation, or a compatibl
 
 `ApplicationExtentRule`: the application begins after every required argument is bound for that invocation and ends when the derived-scope value is returned or the invocation stops without a result. A result-binding extent cannot begin before that scope value is returned.
 
-**`ScopeDerivationMechanism` LawSet.** Serial composition uses intersection. Parallel publication uses the one established `SpanUnion` and preserves only slices supplied by independently supported lines. Translation returns only the target-slice image selected by the bound claim's rule and tolerance over the bound obtaining F.9 Bridge. No derivation operation widens support by itself.
+**`ScopeDerivationMechanism` LawSet.** Intersection combines requirements on a common slice, including downstream conditions already expressed for the original input. `SpanUnion` combines the areas of independently supported lines under §7.3. A case argument with a shared premise can establish ordinary coverage separately. Translation returns only the target-slice image selected by the bound claim's rule and tolerance over the bound obtaining F.9 Bridge. No derivation operation widens support by itself.
 
 **`ScopeDerivationMechanism` AdmissibilityConditions.** Intersection and `SpanUnion` require at least two exact scopes. `deriveSpanUnionScope` additionally requires the bound independence basis to meet section 7.3. `deriveTranslatedScope` requires both an exact obtaining Bridge and the exact affirmative C.2.1 claim whose named rule and tolerance select the claimed target image. A missing or non-obtaining Bridge or a missing or non-affirmative claim blocks that positive derivation application; the latter does not negate an otherwise obtaining Bridge.
 
@@ -293,7 +293,7 @@ The same scope may participate in differently selected relation occurrences or b
 
 **Expression.** State a Claim scope as an exact predicate or condition block over slice selectors: assumptions, parameter ranges, cohorts, platform or standard editions, exact local senses when current, and time conditions only when they change membership.
 
-**Algebra.** Serial dependencies use intersection. Independently supported areas may use `spanUnion` with the independence basis stated. `widen` and `narrow` change the declared set; `refit` preserves it. `translate` uses the section 7.5 Bridge-plus-use-claim branch and keeps reliance separate.
+**Algebra.** Intersect essential conditions on common slices, tracing the intermediate outcomes of successive stages under §7.2. Establish coverage by cases under §7.3 and use `spanUnion` when its additional independence condition holds. `widen` and `narrow` change the declared set; `refit` preserves it. `translate` uses the section 7.5 Bridge-plus-use-claim branch and keeps reliance separate.
 
 #### A.2.6:6.4 - `U.WorkScope` — scope of doing Work (capability)
 
@@ -326,7 +326,7 @@ These guard conditions accompany the scope membership test. B.3 applies when an 
   `PublicationScope(view_E) ⊆ ClaimScope(c)`.
 * If the publication presents **a qualified holder-ability claim `C`** for work admission:
   `PublicationScope(view_C) ⊆ WorkScope(C)`, where `WorkScope(C)` is the work-condition basis designated by that claim. Any relied-on episteme ClaimScope remains a separate constraint; stating the ability in an episteme does not turn its WorkScope into ClaimScope.
-* When publication use requires **all contributing claims or capabilities to apply together**, its scope is a subset of their intersection. For **independent support lines for the same claim or capability**, establish the supported SpanUnion under §7.3 and bound publication use by that resulting scope. When exact local senses require translation, use section 7.5 for each affected source scope: obtaining F.9 Bridge, separate affirmative C.2.1 use claim, and current A.10 or B.3 reliance before the returned scopes are combined under the applicable rule.
+* When publication use requires **all contributing claims or capabilities to apply together on the same slice**, its scope is a subset of their intersection. For a chain, express each later requirement on the outcomes reachable from the original input (§7.2). A case argument can support the union of the cases under their common premises (§7.3). For **independent support lines for the same claim or capability**, establish the supported SpanUnion under §7.3 and bound publication use by that resulting scope. When exact local senses require translation, use section 7.5 for each affected source scope: obtaining F.9 Bridge, separate affirmative C.2.1 use claim, and current A.10 or B.3 reliance before the returned scopes are combined under the applicable rule.
 
 **Expression.** Declare `U.PublicationScope` as an exact predicate over only the `U.ContextSlice` selectors that restrict publication use: for example versioned standards, environment, audience, interface availability, exact local senses, or `gammaTime` when time changes membership. It may be narrower than the underlying scope but must not be wider.
 
@@ -352,19 +352,21 @@ Membership evaluation work, its inputs and A.6.1 bindings, an optional C.2.1 res
 
 #### A.2.6:7.2 - Serial Composition (Intersection)
 
-**Rule S‑INT (serial).** For an essential dependency chain `C1 → C2 → … → Ck` that supports a claim/capability, the effective scope along that chain is:
+**Rule S‑INT (serial).** Identify the original slice and what the chain must deliver. When each essential condition `Ci` is already expressed on that same slice, all must hold there. The scope defined by these conditions is
 
 ```
 Scope_serial = ⋂_{i=1..k} Scope(Ci)
 ```
 
-If `Scope_serial = ∅`, the chain is **inapplicable** and MUST NOT contribute to published scope.
+When a stage takes the preceding stage’s output as its input, trace the reachable intermediate outcomes for the original slice. To establish conditional compatibility, show that the downstream stage can use the outputs covered by the claim. To establish feasibility, show that an allowed execution can reach the promised result. To guarantee delivery, justify a way of operating the whole chain that the responsible participants can follow with their authority and the information available at each choice. Under that way of operating, every history allowed by the stated conditions must reach the required result, by the deadline if there is one. Include admissible waits, failures and retries. A chain can produce compatible data whenever it finishes and still fail to finish on time. If the order and choices are prescribed, test that order directly. An empty input scope supplies no slice for using the chain.
 
-**Monotonicity.** Adding a new essential dependency can only narrow (or leave unchanged) the serial scope.
+**Monotonicity.** Adding a necessary condition to the same chain and expressing it on the same original slices can only narrow the scope or leave it unchanged. Inserting a stage that transforms an intermediate result changes the chain. Recompute which original slices can now reach the promised result and under what conditions. A converter may admit an input that the original chain could not handle.
 
 #### A.2.6:7.3 - Parallel Support (SpanUnion)
 
-**Rule P‑UNION (parallel).** If there exist **independent** support lines `L₁,…,Lₙ` for the **same** claim/capability, each with serial scope `S_i`, the publisher MAY declare:
+To establish where the same claim holds, find the slices on which each argument warrants it. The claim holds throughout the union of those supported areas because each included slice is covered by at least one argument. If two cases depend on one calibration, that premise must be justified everywhere the proof uses it. Retain that dependency when the calibration is challenged. Different areas of application do not by themselves give independent evidence for an overlapping case.
+
+**Rule P‑UNION (parallel).** To claim independently supported areas for the **same** claim or capability, establish the required independence of lines `L₁,…,Lₙ` in addition to their respective scopes `S_i`. The publisher may then declare
 
 ```
 Scope_published = SpanUnion({S_i})  =  ⋃_{i=1..n} S_i
@@ -382,8 +384,8 @@ Scope_published = SpanUnion({S_i})  =  ⋃_{i=1..n} S_i
 **1) G is not an ordinal scale; it is set-valued.**
 Under **USM**, `U.ClaimScope` is a **set‑valued** **USM scope object** over `U.ContextSlice`. The only well‑typed primitives are **membership** and **set operations** (`⊆`, `∩`, `⋃`). Imposing ordinal “levels” such as **G0…Gk** violates the type discipline and produces non‑invariant behavior (the **same set** could be “rated” with different numbers under different heuristics). (See also LEX‑CHR‑STRICT.)
 
-**2) G composes via `∩` / `SpanUnion`, not via `min` / `avg`.**
-USM already fixes composition: along a **dependent path** use **intersection**; across **independent support lines** publish **SpanUnion**. None of these operations relies on (or preserves) any linear order. An ordinal “G ladder” invites people to take **minimums/averages**, which is **incorrect** for sets and breaks the established algebra.
+**2) G is a set of slices.**
+USM already fixes composition: intersect requirements on common slices, including conditions traced back through intermediate outcomes. Coverage by cases requires grounds throughout the covered areas. Across independently supported lines the publisher may use **SpanUnion**. None of these operations relies on (or preserves) any linear order. An ordinal “G ladder” invites people to take **minimums/averages**, which is **incorrect** for sets and breaks the established algebra.
 
 **3) Identify what an abstraction level compares.**
 C.3.5's optional `KindAT` facet describes how a particular kind is intended to be used. Its anchors run from instance-oriented use, such as cataloguing a particular cohort, to treating structures up to isomorphism. To compare the levels of abstraction or refinement of two models, use B.5.MR. To establish where an assertion holds, identify the context slices in its `U.ClaimScope (G)`. These judgements can change independently.
@@ -427,8 +429,8 @@ Observed mismatch, calibration error, and counterexamples are evidence about the
 #### A.2.6:7.7 - Invariants
 
 * **I-LOCAL.** Interpret membership under the effective reference scheme and exact local senses current to the declaration. Translate only through an obtaining F.9 Bridge plus the separate affirmative C.2.1 claim for that translation; keep A.10 or B.3 reliance outside membership truth.
-* **I‑SERIAL.** Serial scope is an **intersection**; it cannot grow by adding dependencies.
-* **I‑PARALLEL.** Parallel scope MAY grow by union, but only where **independently supported**.
+* **I‑SERIAL.** Intersect essential conditions expressed on the original slice. Adding a necessary condition to a fixed chain can only preserve or narrow its scope.
+* **I‑PARALLEL.** A claim supported throughout each of several cases holds throughout their union under the premises used. The additional `SpanUnion` claim requires the independence established in §7.3.
 * **I‑WLNK.** **F** describes the required expression properties of the essential constituents and their connecting inferences under C.2:4.3 and C.2.3:15.1. The composition must preserve those properties; a minimum applies only under a justified rule on a shared local ordered scale. **R** follows the justified support-composition model or non-aggregate synthesis under C.2.2:4.3 and B.3:4.4; dependency paths alone supply no default minimum. **G** follows the set rules in A.2.6:7.2 and A.2.6:7.3.
 * **I‑IDS.** Idempotence: Intersecting or unioning a set with itself does not change it.
 * **I‑EMPTY.** Empty scope is a first‑class value; guards MUST treat it as “not applicable”.
@@ -604,9 +606,8 @@ Controller certificate age does not change Work-scope membership in this case. W
 
 * **Claim A (API Standard):** `v2.3` request schema with constraint “idempotent under retry”.
 * **Claim B (Dataset cohort):** “metrics valid for cohort K with schema `ds‑14`”.
-* **Composition:** service S depends on both A and B → **serial intersection** of Claim scopes: `{api=v2.3} ∩ {cohort=K, schema=ds‑14}`.
-* **Target slice:** `{api=v2.3, cohort=K, schema=ds‑14}` → membership **true**.
-* **Target drift (e.g., `ds‑15`).** The changed target slice lies outside the intersection ⇒ path inapplicable for that slice.
+* **Same-slice question.** Suppose the decision is whether the API and metric claims both apply to one installation. Specify its API version, cohort and dataset edition. The slice `{api=v2.3, cohort=K, schema=ds‑14}` meets the two stated conditions. Changing only the schema to `ds‑15` takes it outside the dataset scope.
+* **Successive stages.** Suppose the service must compute a valid metric for each accepted request by noon. Idempotence permits a repeatable `ds‑15` output. A converter that preserves cohort membership and the required measurements and produces `ds‑14` can make that output usable. For the noon promise, establish also that the service can get the compatible dataset to the metric stage and finish the calculation by noon in every allowed history. A bound on the full time, including permitted retries, queueing and conversion, can suffice if the needed resources and choices are available. If retries may continue past noon, compatibility remains warranted. One reachable completed calculation can establish feasibility on its slice. Return the conclusion that answers the commission.
 
 #### A.2.6:11.5 - Parallel support (SpanUnion) in a safety case
 
@@ -616,7 +617,7 @@ Controller certificate age does not change Work-scope membership in this case. W
 * **Published scope:** `SpanUnion({S1,S2})` = `{(dry, ≤50), (wet, ≤40)}`, with reference to `P-braking`.
 * **Guard:** allowed; union does **not** include `(wet, 45)` because not supported.
 
-With only the method labels, leave P-UNION unresolved. If `CalibrationRecord-Q` is essential to both lines, P-UNION fails for this pair; retain the individual lines and use their component scopes to assess any dependent combination.
+If both lines rely on `CalibrationRecord-Q`, establish that its calibration is valid for each claimed range and that the respective test and simulation warrant the braking property there. Those grounds can establish the property on dry asphalt up to 50 km/h and wet asphalt up to 40 km/h by cases. They leave wet asphalt at 45 km/h outside the supported area. A defect in the shared calibration may undermine both conclusions. The disjointness required for P-UNION fails even when this ordinary coverage argument succeeds.
 
 #### A.2.6:11.6 - ML model deployment with different local feature senses
 
@@ -648,7 +649,7 @@ USM counters three recurring biases. First, a vague domain phrase can imply univ
 | **CC-USM-5 No membership occurrence by default.** | A.2.6 admits no membership-relation kind. A receiving use requiring occurrence identity needs an independently admitted direct relation with exact participant meanings, obtaining condition, recurrence rule and occurrence identity under A.6.REL. |
 | **CC-USM-6 Structure separation.** | A bare scope, slice, membership outcome, or displayed boundary never enters A.22 identity. An exact `U.ClaimScope` remains a participant of its independently governed `ModelApplicabilityRelation`; selecting that exact occurrence contributes through the relation-occurrence discriminator. Separately, an exact applied constraint claim may refer to that scope and contribute through the applied-constraint discriminator. Neither path makes the scope a constituent, a membership occurrence, or a second delimiter. |
 | **CC-USM-7 Applicability interval.** | One exact `U.ClaimScope` participates in `ModelApplicabilityRelation`; a declared interval stays in assertion or occurrence-description content, while the actual occurrence extent is derived from maximal continuous obtaining. |
-| **CC-USM-8 Set algebra.** | Intersection, independently supported `spanUnion`, widen, narrow, and refit operate on exact scope values; refit preserves membership. |
+| **CC-USM-8 Set algebra.** | Combine conditions on the same slice. For successive stages establish compatibility of the required intermediate outcomes. For a promised output, apply §7.2 to establish completion and any deadline across the histories allowed by the promise, under the decisions and information available to the performers. Coverage by cases retains shared premises. A claim of independently supported areas through `spanUnion` meets §7.3. Widening, narrowing and refitting keep their §7.6 meanings. |
 | **CC-USM-9 Translation boundary.** | `translate` uses an exact obtaining F.9 Bridge plus a separate affirmative C.2.1 claim naming the use, direction, rule, and tolerance. A receiving guard requires A.10 `pass` for ordinary reliance or, when an actual named assurance claim is current, a B.3 `AssuranceResult` for the same use with `disposition=supported-for-use`; scheme or label difference, a profile, or a card supplies none of these. |
 | **CC-USM-10 Representation boundary.** | A set expression, query, table, graph, or diagram is a C.29 representation of an independently identified scope or evaluation result. |
 | **CC-USM-11 Time only when material.** | Name `gammaTime` and its membership boundary when time changes membership; never use implicit “latest.” A time-independent predicate need not inspect `gammaTime`; retain every selector already declared in the slice, and do not add one merely to complete a new declaration. |
@@ -669,7 +670,7 @@ USM counters three recurring biases. First, a vague domain phrase can imply univ
 | Interval-as-participant | A declared applicability interval is copied into the direct relation signature. | Keep it in assertion or description content and derive actual extent from continuous obtaining. |
 | Silent translation | A different scheme, label, or location automatically invokes a Bridge or lets the Bridge define the receiving use. | Translate only after naming exact local senses, an obtaining F.9 Bridge, a separate affirmative C.2.1 claim for the direction, rule, and tolerance, and the current A.10 or B.3 reliance branch. |
 | Implicit “latest” | A time-dependent predicate cannot be reproduced. | Name the temporal selector and its membership boundary when time matters; keep every selector already declared in the slice. |
-| Unsupported union | `spanUnion` claims areas not supported by independent lines. | State the independence basis or use intersection/narrower supported scope. |
+| Unsupported scope combination | Two local tests are treated as an end-to-end guarantee, or two cases using one premise as independent evidence. | Trace the reachable outputs to the next stage’s conditions. For a delivery guarantee, show that the available way of operating the chain reaches the result on every admissible history within any promised time. For case coverage, justify every included slice and identify shared premises. Use `SpanUnion` for independent lines only under §7.3. |
 
 ### A.2.6:15 - Consequences
 
@@ -756,7 +757,7 @@ The following descriptions identify different uses; select the one needed by the
 * Is **membership** reproducibly evaluable from the exact declared predicate and required inputs?
 * Are **freshness** and **coverage** separate predicates?
 * When exact local-sense translation was required, are the obtaining F.9 Bridge, separate C.2.1 use claim, direction, rule, tolerance, polarity, and current A.10 or B.3 reliance branch named?
-* For parallel support: is **independence** justified?
+* Which cases cover the requested area, which premises do they share, and does the use call for an independent line of support?
 
 #### A.2.6:17.4 - Risk controls (informative)
 
@@ -770,7 +771,7 @@ The following descriptions identify different uses; select the one needed by the
 **No.** “Domain” is descriptive and often fuzzy. Claim scope is addressable: it supplies an exact predicate over the `U.ContextSlice` selectors that determine membership, including `gammaTime` only when the predicate changes membership across time. Guards reference the exact slice, not a generic domain.
 
 **Q2. How do we express partial coverage across different cohorts or platforms?**
-Declare each supported serial scope (`S₁, S₂, …`) and publish **SpanUnion({Sᵢ})** with independence justification. Do **not** include unsupported slices.
+Express each cohort or platform as a scope and establish the same conclusion under its actual conditions. Their union describes the covered cases, including overlap, even when a common premise supports several. Retain that premise and exclude slices that no case covers. When the commission also calls for independently supported areas, use **SpanUnion({Sᵢ})** only with the §7.3 independence basis.
 
 **Q3. Can raising F (formalizing) widen G?**
 Formalization alone does not widen scope. Widening requires a changed extension and direct support for every added slice under §7.6; changing only the expression can preserve the same scope.
@@ -791,7 +792,7 @@ First resolve whether the designations refer to the same values under the effect
 Use `KindAT` (C.3.5) for the intended treatment of one local kind, and `Detail (D)` for the chosen detail or resolution. Use B.5.MR when comparing the assertions of two models at different levels of abstraction. Use the set of applicable context slices for Claim scope or Work scope.
 
 **Q9. Can a capability’s Work scope be broader than a predecessor claim’s Claim scope on a dependency path?**
-Claim scope bounds where a claim holds; Work scope bounds the work conditions of a qualified ability claim. If the receiving use depends on both, its effective scope is their intersection. Neither replaces the other because it is broader.
+Claim scope bounds where a claim holds. Work scope bounds the work conditions of a qualified ability claim. Express both requirements on the original slice before taking their intersection. If one stage supplies a later stage’s input, use §7.2 to carry the later requirement back to the relevant reachable outputs and examine completion when delivery is promised. The extension of one local scope alone leaves the other requirement open.
 
 **Q10. When does an empty scope make sense?**
 No slice satisfies the declared predicate, so the receiving guard stops. This may occur during early drafting or after a refutation.
@@ -850,7 +851,7 @@ USM expresses the set-valued conditions under which a claim, qualified ability c
 
 A stated domain condition and its calibration calculation can answer a standalone mathematical applicability question. For the adhesive, apply the calibration rule and compare the resulting interval with the supported range. When that result is used by an FPF rule requiring scope membership, identify the condition as the required scope value, identify the target slice and perform the guard. Capability gating uses `U.WorkScope` and the other conditions of §10.3; claim use follows its Claim-scope guard. Neither case requires an additional result record unless the receiving use needs one.
 
-USM's additional result is an independently identified scope that further uses can compare, intersect across dependencies, combine across independently supported alternatives, or translate under declared rules. The API-and-dataset use in §11.4, for example, needs one common slice to satisfy both component scopes; a changed dataset edition changes that joint result. The domain argument supplies each applicability condition, the calibration or performance claim, and the justification for relying on it.
+A reusable scope lets later users compare covered slices, intersect conditions for one slice, describe coverage by cases, or translate a result under declared rules. In §11.4 the common-slice question needs one installation with the specified API version, cohort and dataset edition. In the successive-stage case, an adapter can establish compatibility at the handover. The promise to deliver the metric by noon also needs grounds that the whole chain will finish by then under the available operating policy. Each applicability or performance claim and its warrant keeps its own grounds.
 
 #### A.2.6:20.1 - SoTA-Echoing - Source distinctions and scope terminology
 
@@ -906,8 +907,9 @@ These comparisons suggest two useful questions: which conditions matter to the r
 | Capability applicability        | **`U.WorkScope`**                               | **Work scope**                       | —                    | “capability envelope”, “operational applicability”, “operation scope” |
 | Time selector                   | **`Γ_time`**                                    | **Time selector**                    | —                    | implicit “latest”                                                     |
 | Exact local-sense translation | **Obtaining F.9 Bridge + separate affirmative C.2.1 use claim + current A.10 or B.3 reliance** | **Bridge, translation rule and tolerance, checked reliance** | — | automatic Bridge use or treating a loss score as permission |
-| Parallel coverage               | **SpanUnion**                                   | **Union of supported areas**         | —                    | unqualified “union” without independence                              |
-| Serial dependency               | **Intersection**                                | **Intersection of scopes**           | —                    | ordinal “more/less general” language                                  |
+| Coverage by cases | Set union of supported scopes | Cases covered under the stated premises | inferring independent evidence from different cases |
+| Independent parallel support | **SpanUnion** | Union of independently supported areas | omitting an essential shared premise |
+| Joint requirements on a common slice | **Intersection** | Slices meeting all required conditions | intersecting the input of one stage with the output of another before relating them |
 | Scope edits                     | **ΔG+ (widen), ΔG− (narrow), Refit, Translate** | **Widen, narrow, refit, translate**  | —                    | implicit widening                                     |
 | Optional didactics | **`Detail (D)`, `KindAT` for the intended treatment of a kind** | **Detail and kind abstraction tier** | **D / AT** | establish scope separately from either annotation |
 
@@ -922,7 +924,7 @@ These comparisons suggest two useful questions: which conditions matter to the r
 
 * Use **“Claim scope (G) covers TargetSlice”** and **“Work scope covers JobSlice”** in guards.
 * When time changes membership, name exact **`gammaTime`** and its membership boundary; never say “latest.” A time-independent predicate need not inspect `gammaTime`, but keep every selector already declared in the slice.
-* To compose, say: **“intersection along dependency paths; SpanUnion across independent support lines.”**
+* When combining scopes, say which conditions apply to the same input, which reachable outputs must meet the next conditions, and which cases cover the claimed area. Reserve **SpanUnion** for independently supported lines.
 * When exact local-sense translation is current, say: **“through an obtaining F.9 Bridge and a separate affirmative C.2.1 claim for this direction, rule, and tolerance; rely on it only through the current A.10 or B.3 branch, then evaluate membership on the returned scope.”**
 * When widening or narrowing, write **“ΔG+ / ΔG−”**. If support for the affected slices changed, say what support was gained or lost. Use **“Refit”** for unit/parameter normalization only when the exact scope extension is preserved.
 

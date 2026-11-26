@@ -33,7 +33,7 @@ Ordinary use starts by naming:
 - the alternatives and described holon;
 - the `U.ClaimScope` and relevant A.2.6 `U.ContextSlice` membership;
 - the scale variable and scale window;
-- the claimed preference under scale;
+- the claimed preference under scale and whose price, effort or other outcome the commission asks you to compare;
 - the observations or derivation supporting the proposed scale behavior, or what remains open in their absence;
 - the structural feature or exception behavior on which that preference depends, when it calls for either.
 
@@ -129,7 +129,7 @@ ScaleClaimTriage:
   stopCondition:
 ```
 
-The account is complete enough when it answers the scale-preference question or identifies the next warranted inquiry or architecture move.
+A supported preference can finish a comparison. If the evidence still permits different rankings, identify the condition that changes the ordering. An inquiry to resolve it can itself be the deliverable when that inquiry was commissioned.
 
 Include `nonAdmissibleUse?` only for an independently grounded alternative that is plausible here and whose rejection changes understanding or action; `groundedScaleShortcut?` is an alias for that optional value.
 
@@ -141,9 +141,9 @@ Retaining or publishing the bounded answer preserves its limits. A stronger comp
 
 #### C.31.ASAP:4.3 - Architecture scale-preference rule
 
-When architecture alternatives satisfy the same safety, law-domain and assurance boundaries, prefer the alternative whose relevant reusable structure remains stable or improves over the declared scale window, unless a stated bounded exception justifies another choice. Select the functional, flow, control, interface, work-template or evidence structure and any learning-transfer characteristic on which this architecture question depends.
+When the commission values stable reusable structure, compare how well the alternatives preserve it over the declared scale window, subject to safety, law-domain and assurance requirements. If the question concerns another characteristic, carry the alternatives through the permitted operating conditions and compare them on that characteristic. Select the functional, flow, control, interface, work-template or evidence structure and any learning-transfer characteristic relevant to that comparison.
 
-Define the advantage that would change the recommendation. Compare both alternatives for the same deliveries under the conditions that affect that advantage. Separate a one-time investment from work repeated at each installation or each new interface type. When deciding whether to commission a shared design, count the preparation it requires. When deciding whether to keep using one already built, compare future costs and commitments that the choice can still change. The original expense remains part of the investment history. More deployments at an established site may require none of the qualification work that a first deployment in a new jurisdiction requires. Check where the two alternatives tie or change order. When different admissible mixes of sites give different recommendations, state which mix supports each and what is known about the proposed rollout.
+Define the advantage that would change the recommendation and for whom. A supplier’s engineering effort, the purchaser’s price and the installer’s work can change independently. For a combined cost, include the work the arrangement transfers to others within the stated scope and count shared work once. Compare both alternatives for the same deliveries under the conditions that affect that advantage. Separate a one-time investment from work repeated at each installation or each new interface type. When deciding whether to commission a shared design, count the preparation it requires. When deciding whether to keep using one already built, compare future costs and commitments that the choice can still change. The original expense remains part of the investment history. More deployments at an established site may require none of the qualification work that a first deployment in a new jurisdiction requires. Check where the two alternatives tie or change order. When different admissible mixes of sites give different recommendations, state which mix supports each and what is known about the proposed rollout.
 
 Observations can support a comparison for the conditions examined. A binding rate, an engineering bound or a supported construction can also establish an answer for the entire stated range under its assumptions. Record the observations or the applicable derivation and its assumptions. A quotation or bound that orders the alternatives throughout a window can be cited in `comparisonBasisRef` even when neither slope is known. An advantage in price throughout a window establishes which quote is cheaper. To claim its price grows more slowly, compare the changes in price. When an untested premise could reverse the preference, state what depends on it. A reason for skipping a probe supplies no evidence about its outcome. An applicable derivation can already settle the question. Conflicting characteristics need the preference or decision rule for the work in question.
 
@@ -239,7 +239,7 @@ ASAPWaiverReason:
   context-specific bounded exception
 ```
 
-A deontic constraint, safety boundary, law-domain boundary, mission constraint, assurance infeasibility, or scale-probe overturn can justify a bounded exception without creating `ArchitectureHeuristicDebt`.
+A deontic constraint, safety boundary, law-domain boundary, mission constraint, assurance infeasibility or scale-probe result can justify departing from the scale preference. If the baseline is a recommendation, a different choice may already be within the decision maker’s authority. For a binding condition, establish whether the operative rule permits a departure in this case and scope. Where it reserves a decision, identify who may grant it and whether the required decision took effect. An analyst can establish the case for requesting that decision. A binding constraint that admits no waiver continues to apply.
 
 `ArchitectureHeuristicDebt` remains report-only unless tied to a decision, risk, work, evidence, assurance, or selected-set record through its governing pattern.
 
@@ -295,7 +295,7 @@ The six platform deliveries show which interfaces and exceptions occurred there.
 
 Suppose both suppliers offer the same required service for five to forty sites during the quotation period. The shared platform costs 18 units to prepare the common interface and 2 per ordinary site. The bespoke offer costs 5 per site. At five ordinary sites the quoted totals are 28 and 25. At six they tie. From seven through forty ordinary sites the platform costs less. This follows from the two binding offers for that range. The six installations alone would not establish those prices.
 
-At eight sites the ordinary prices are 34 and 40. Under the same offers one site needing a different connector adds a one-time charge of 12 to the platform total and is included in the bespoke price. The comparison then favors the bespoke offer at 40 against 46. If the eighth site's connector is unknown and the other seven are ordinary, its interface specification settles which offer is less expensive. An assertion about actual expenditure still needs the charges incurred. An architecture choice can also depend on service or assurance conditions beyond price. At twelve sites with at most one such surcharge, the platform quote is either 42 or 54 against 60. Its price advantage then holds with either connector.
+At eight sites the ordinary prices are 34 and 40. Under the same offers one site needing a different connector adds a one-time charge of 12 to the platform total and is included in the bespoke price. The comparison then favors the bespoke offer at 40 against 46. If the eighth site's connector is unknown and the other seven are ordinary, its interface specification settles which offer is less expensive. An assertion about actual expenditure still needs the charges incurred. An architecture choice can also depend on service or assurance conditions beyond price. At twelve sites with at most one such surcharge, the platform quote is either 42 or 54 against 60. Its price advantage then holds with either connector. These binding totals settle the purchaser’s quoted price. If the cheaper offer leaves local rewiring to site technicians, ask whose budget bears that work. Include it when comparing the purchaser’s full rollout cost or total delivery effort. A higher supplier cost that is covered by the fixed price need not change which invoice is lower.
 
 #### C.31.ASAP:5.2 - Near-miss lowering slice
 
@@ -328,7 +328,7 @@ Report the 82 percent as the team's statement until its basis is established. Pr
 | `CC-C31.ASAP-2` | Identify what the observations or applicable derivation establish for the stated alternatives and scale window. State an unsupported extension as a hypothesis. | A price schedule can settle a quoted cost over the whole window. A reason for skipping a test supplies no measured slope. |
 | `CC-C31.ASAP-3` | Identify the structure expected to remain stable or change, and the relevant exceptions, when the preference depends on that behavior. | Applicable price bounds can order two offers while leaving their internal engineering effort unknown. |
 | `CC-C31.ASAP-4` | Source-return condition is present when a compressed, coarse, extracted, indexed or accounting representation drops distinctions on which the receiving action depends. | Prevents unsafe coarse descriptions. |
-| `CC-C31.ASAP-5` | Waiver reason is one of deontic constraint, safety or law-domain boundary, scale-probe overturn, assurance infeasibility, or context-specific bounded exception. | Prevents false debt labels. |
+| `CC-C31.ASAP-5` | Classify the reason for departure under §4.6. When an effective waiver is claimed, identify the rule that covers this case or the decision made under the authority it delegates. A justified request can complete an advisory commission. | Prevents false debt labels. |
 | `CC-C31.ASAP-6` | `ArchitectureHeuristicDebt` remains report-only unless a decision, risk, work, evidence, assurance, or selected-set record is being used under its governing pattern. | Prevents shadow project authority. |
 | `CC-C31.ASAP-7` | Platform, product-line, modularity, reuse, open-interface, RG, and coarse-graining labels do not establish scale preference by themselves. | Blocks source-label overread. |
 | `CC-C31.ASAP-8` | Mathematical inferences retain their model, correspondence and use conditions. Use C.29 for unresolved representation choice, transfer or reliance; C.31.ASAP governs the distinct scale preference. | Keeps the mathematical and preference grounds explicit without requiring a separate lens output for an adequate domain treatment. |
@@ -360,7 +360,7 @@ Report the 82 percent as the team's statement until its basis is established. Pr
 
 `C.31` and `C.31.RSA` can expose scale-sensitive characteristics and reusable-structure residue, but they should not themselves decide which architecture alternative is preferable under scale. C.31.ASAP governs this architecture scale-preference claim family; it is narrower than general BLP and broader than one measurement card.
 
-The pattern adapts BLP-style scale-amenability to architecture: prefer the alternative that preserves or improves reusable structure over a declared scale window when safety, law-domain, and assurance boundaries are comparable. Treat modularity, reuse, platform practice, and mathematical coarse-graining as candidate cues. Base the preference on the named scale variable and window, relevant structural behavior, exception-growth risk and the reach of available evidence. A comparison can follow from applicable rates or constraints throughout a range. A preference that still depends on an untested extrapolation remains provisional.
+The pattern adapts BLP-style scale-amenability to architecture: when continued reuse is the criterion, prefer an alternative with a demonstrated advantage over the declared scale window under comparable safety, law-domain and assurance conditions. Treat modularity, reuse, platform practice, and mathematical coarse-graining as candidate cues. Base the preference on the named scale variable and window, relevant structural behavior, exception-growth risk and the reach of available evidence. A comparison can follow from applicable rates or constraints throughout a range. A preference that still depends on an untested extrapolation remains provisional.
 
 ### C.31.ASAP:11 - SoTA-Echoing
 

@@ -62,13 +62,13 @@ Use the comparison whose meaning fits the aim and available evidence.
 | Improvement from a relevant earlier condition | Absolute peer levels would conceal important structural differences. | The original basis and changes in it. A low starting point can make improvement easier; percentages alone do not equalize opportunities. |
 | Observation without a numerical improvement target | A condition is already adequate, the work is exploratory, or a quota would distort the useful contribution. | The condition or contribution to examine and the event that calls for a response. |
 
-Test the comparison against differences that matter to the intended judgement. Evidence from an affected participant or a plausible unlike case can expose them. If easier conditions could explain the apparent lead in a league table, narrow the comparison or use it to frame a learning question. Use a more complex adjustment only when its basis and likely improvement in the judgement justify the effort.
+Test the comparison against differences that matter to the intended judgement. Evidence from an affected participant or a plausible unlike case can expose them. If easier conditions could explain the apparent lead in a league table, its figures alone leave the ranking of the teams open. That finding can answer a request to judge the ranking. Look for a better comparison or a useful practice to study when the recipient needs that further result. Use a more complex adjustment only when its basis and likely improvement in the judgement justify the effort.
 
 #### OPS.21:4.4 - Construct an ambition and expose what attaining it would require
 
 Compare available aims and develop others when needed. Start from the useful change: the recipient need that remains unmet, a demonstrated improvement opportunity or a relevant comparison. Contrast them with continuing current performance. For each serious candidate, explain why the difference is worth pursuing and which action might produce it. Include displacement, quality and continuing-service conditions.
 
-Use that comparison to select the degree of ambition. Establish the conditions of contributions on which it depends, including any agreement still needed from those who will supply them. A target can exceed the current expectation when there is a worthwhile, intelligible gap to work on. There is no generally correct percentage of stretch. A high number without a plausible way to achieve it is a demand for further construction, not an executable operating instruction. Where the way is unknown, a bounded learning contribution can be the current aim.
+Use that comparison to select the degree of ambition. Establish the conditions of contributions on which it depends, including any agreement still needed from those who will supply them. A target can exceed the current expectation when there is a worthwhile, intelligible gap to work on. There is no generally correct percentage of stretch. If the assignment covers twelve identified needs and counts one accepted repair per need, its upper bound is twelve. That settles whether fourteen are attainable. When the means are unknown, explain what would have to be established. Develop an alternative or make finding a way the current aim when that serves the recipient.
 
 When the aim needs a conditional forecast, use an adequate one or develop it through [MA.5](../ma/12-ma-5---construct-and-update-an-operating-forecast.md). Where resource, capacity or payment implications are unresolved, use the relevant contributions from [MA.1](../ma/08-ma-1---build-the-resource-consumption-and-cost-model.md), [MA.2](../ma/09-ma-2---explain-the-cost-and-use-of-capacity.md) and [OPS.10](40-ops-10---qualify-operating-capacity-under-variability.md). A target of twelve repairs, an expectation of eight and resources for ten can be jointly intelligible: the differences locate work and decisions. They do not authorize promising twelve.
 
@@ -86,7 +86,7 @@ Use the ordinary working record or discussion that can carry these distinctions.
 
 Ask which premise changed and what used it. New demand evidence can confirm or change the forecast. A resource decision changes available provision when it is actually implemented. A changed recipient need or an invalid comparison can justify revising the aim. A service commitment changes through the parties' applicable agreement under OPS.13. None of these changes automatically performs the others.
 
-A difficult but still useful ambition can remain while the team changes its action or requests support. An aim whose purpose disappeared should be replaced even if it remains easy to hit. Keep the earlier aim and its basis available for [OPS.22](56-ops-22---interpret-operating-performance-and-decide-the-resp.md); a justified revision helps interpret performance but does not turn a previous miss into a hit. Revisit only the affected contribution and preserve adequate neighboring work.
+A difficult but still useful ambition can remain while the team changes its action or requests support. Retire an aim whose purpose has ended. If an extra screening is cancelled, check whether patrons are still owed an accessible showing. If that showing was the sole reason for the aim and the remaining commitments are covered, retiring it completes the revision. Keep the earlier aim and its basis available for [OPS.22](56-ops-22---interpret-operating-performance-and-decide-the-resp.md); a justified revision helps interpret performance but does not turn a previous miss into a hit. Revisit only the affected contribution and preserve adequate neighboring work.
 
 ### OPS.21:5 - Archetypal Grounding
 
@@ -118,7 +118,7 @@ Ambition is a judgement about worthwhile effort under uncertainty. It is not evi
 - The selected ambition has a reason and exposes the work, support or inquiry it needs.
 - Forecast, target, resource decision and service commitment keep their own meanings and revision conditions.
 - A conflict over shared resources or assessment consequences reaches the participant able to act.
-- A changed condition can revise the affected aim without rewriting its earlier basis.
+- The decision to keep, revise or retire an affected aim preserves the basis for judging earlier performance.
 
 ### OPS.21:8 - Common Anti-Patterns and How to Avoid Them
 

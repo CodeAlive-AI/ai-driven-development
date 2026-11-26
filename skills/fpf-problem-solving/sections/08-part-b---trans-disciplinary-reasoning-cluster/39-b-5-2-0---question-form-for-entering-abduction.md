@@ -6,7 +6,7 @@
 
 **Plain-name.** Question form for entering abduction.
 
-**Use this when.** A stabilized cue, opportunity, probe-related observation or anomaly raises an explanatory question for B.5.2. Publish the question, its scope and motivating grounds while rival explanations remain open.
+**Use this when.** A stabilized cue, opportunity, probe-related observation or anomaly raises an explanatory question for B.5.2. Make the question, its scope and its motivating grounds available to the intended investigator through a permitted channel while rival explanations remain open.
 
 **What goes wrong if missed.** A cue is forced into anomaly form, an opportunity is treated as a hypothesis, or a prompt-like sentence smuggles in the preferred answer before rival hypotheses can be compared.
 
@@ -32,7 +32,7 @@ If anomaly is the only admissible input, pre-anomaly opportunity cues and route-
 | **Prompt vs hypothesis** | Keep the initiating prompt distinct from the downstream abductive outcome. |
 
 ### B.5.2.0:4 - Solution
-`U.AbductivePrompt` classifies the question accounts used for entry into `B.5.2`. Use `A.16`, `A.16.1` and `B.4.1` when the initiating cue needs preservation, clarification or selection of its next reasoning contribution. Use `A.16.0` only when the cue-to-prompt history needs an explicit trajectory account. Publish the account in an expression adequate for the receiving use; reuse an adequate existing expression. Select a reusable form or additional publication faces when that use needs them. Account membership and current entry depend on the content and grounds below.
+`U.AbductivePrompt` classifies the question accounts used for entry into `B.5.2`. Use `A.16`, `A.16.1` and `B.4.1` when the initiating cue needs preservation, clarification or selection of its next reasoning contribution. Use `A.16.0` only when the cue-to-prompt history needs an explicit trajectory account. Use an existing expression if it makes the question and its grounds recoverable for the receiving inquiry. For a new publication, establish the intended recipients, the evidence they may use and the permitted form of access. Select a reusable form or additional publication faces when that use needs them. Account membership and current entry depend on the content and grounds below.
 
 #### B.5.2.0:4.1 - Starter canonical species and conditional extension species
 - starter canonical species:
@@ -66,6 +66,8 @@ Identify the question from what the inquiry asks someone to explain:
 
 Resolve the terms against their intended referents and interpretation. These three elements identify the question together. A change of wording, notation or publication preserves it when those elements retain their meaning. Two questions differ when a change in any element changes what an explanation must answer. A list of rival hypotheses helps compare answers; it need not exhaust the possible answers and does not identify the question by itself.
 
+When an observed case motivates the inquiry, recover the explanatory demand from the commission. The reporter of a delay, the service that sets the question and the team that will use the answer may differ. One trace could prompt questions about a delay in one job, the service’s reported delay or a pattern across workloads. When you may choose the scope, vary a condition the trace held fixed. Would an explanation adequate for this trace answer the commissioned question? Use the consequential distinction to bound the prompt. C.39.SA:4 develops this choice when the relevant composition scales or model distinctions are unclear.
+
 Distinguish making an existing condition explicit from changing that condition. Use the earlier expression and its recoverable context to establish which happened. If a table drops an essential condition, first restore the damaged expression. When the earlier question cannot be recovered, leave its continuity unresolved; do not carry an earlier answer across the gap as an answer to the new formulation.
 
 Motivating evidence and `promptSpecies` qualify the entry. Changing them changes the question only when it changes the explanatory demand, subject or relevant scope. A new observation can change the grounds for comparing explanations of the same event. Correcting the reported event can instead remove the reason to seek that explanation or raise a different question. A budget change affects question identity when the question concerns performance under that budget; a change in the resources available to investigate the same event need not do so.
@@ -90,7 +92,7 @@ When returning to an earlier abductive inquiry, determine what changed and what 
 |---|---|
 | Same question and account; different support or candidate ranking | Reconsider the affected rivals under B.5.2 when further explanatory comparison is needed. |
 | Same question; changed claims in its account | Identify the revised account under C.2.1; reassess current entry if the account will be used in B.5.2. |
-| Changed explanatory demand, subject or relevant scope | State the new question and its relation to the earlier one; establish its entry grounds if it will be used in B.5.2. |
+| Changed explanatory demand, subject or relevant scope | State the new question and its relation to the earlier one. If it would replace an assigned question, establish whether the change is authorized or remains a proposal. Check entry grounds for any question taken into B.5.2. |
 | Several distinct questions were bundled | Distinguish their accounts. Use B.5.2's split return when separate explanatory comparisons are needed; continue the needed questions under their entry conditions. |
 | An expression lost a condition needed to recover the question | Restore the expression before reusing the account or its answers. |
 | The initiating ground fails or an adequate answer is already available | Abort or retire the current attempt as appropriate; preserve the earlier account and the reason for stopping. |
@@ -162,6 +164,8 @@ New contention logs can support one rival more strongly while the latency questi
 
 If corrected measurements establish that latency stayed at 8 ms, the current attempt to explain an actual rise loses its initiating ground. Asking why the monitor reported 40 ms is a different question about the report; its answer need not explain a real slowdown.
 
+For an operator who asked whether the service slowed in that interval, the corrected measurement supplies the answer. For an inquiry into recurring false alarms, determine which other reports the same account could explain and on what grounds. A team commissioned to discover improvements to monitoring may select the discrepancy itself as its next question. If the commissioning service reserved that choice, the team can send it the proposal. The operator can receive the corrected status while confidential traces remain available only to authorized investigators.
+
 The reporting question and a question about an actual slowdown in another service can be expressed in accounts that use the same `AnomalyStatement` layout. Its shared columns do not identify one common question. Record each subject, contrast and scope so that the two accounts and their rivals remain distinguishable; they may occupy two rows of one note. One hypothesis that answers both questions would not make the questions identical.
 
 ### B.5.2.0:14 - Prompt package discipline
@@ -189,7 +193,7 @@ A prompt account states what is being asked and why, while leaving the answer op
 
 #### B.5.2.0:14.3 - Prompt provenance remains load-bearing
 
-The motivating provenance is part of prompt admission. Preserve the route, cue or witness basis used; a prompt with no routing history does not need an invented route.
+The motivating provenance is part of prompt admission. Preserve the cue, witness or route actually used. If access is restricted, a permitted summary or reference can supply the grounds the investigator needs. If neither makes those grounds available to that investigator, qualify that use.
 
 #### B.5.2.0:14.4 - Check prompt against silent promotion
 An assurance reader should watch for the common mistake where authors silently upgrade a prompt into a hypothesis merely because the prose sounds explanatory. If the text already leans on one preferred answer as settled, either rewrite it back into an open question or explicitly apply the governing pattern that carries the asserted answer.
@@ -212,7 +216,7 @@ A common failure mode is drift from cue -> prompt -> hypothesis without anyone n
 
 ### B.5.2.0:17 - Scope, rival-set, and comparative-validity discipline
 
-A prompt should declare the scope in which its question is being asked: the domain fragment, operational horizon, or inquiry-bounded scope cut that makes the question answerable. If the relevant scope is unresolved, apparent rivals may answer different questions; establish the scope needed for their comparison.
+Declare which cases and conditions the explanation has to cover. Choose a tractable subquestion when its answer could settle the inquiry, distinguish live explanations, or establish a premise the inquiry needs. Identify that contribution before sending the subquestion for comparison. If it leaves part of the commission open, return its result with that remaining question. A promising change of subject can be proposed to the person who set a fixed inquiry.
 
 A prompt need not list hypotheses yet. Its explanatory demand and scope must make clear what a candidate explanation would have to explain; any already identified answer types can help clarify that demand.
 
@@ -226,5 +230,5 @@ An assurance reader can test prompt readiness with three questions:
 
 1. **Is there an open explanatory question?** An asserted answer is no longer a prompt; narrowing the scope must leave the answer open. An action-choice question needs its Method.
 2. **Does the prompt species fit its initiating grounds?** If those grounds are an opportunity or a probe-related contrast, forcing anomaly species misclassifies the question.
-3. **Is the question explicit enough to generate and compare candidate explanations under its declared scope?** Establish the question and the grounds required for entry before using B.5.2. Identified rival hypotheses are not an entry requirement; their generation and comparison belong to B.5.2.
+3. **Is the question explicit enough to generate and compare explanations for the needed use?** Check the stated scope against what the recipient asked to understand. For a subquestion, establish what its answer can contribute there. The receiving investigator can generate the rivals in B.5.2.
 ### B.5.2.0:End

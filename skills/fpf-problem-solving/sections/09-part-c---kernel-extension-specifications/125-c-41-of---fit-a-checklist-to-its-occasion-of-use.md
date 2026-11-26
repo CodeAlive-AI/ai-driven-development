@@ -9,7 +9,7 @@
 
 This Method arranges the interaction through which the aid contributes to work. Start by following one real or representative occasion: who encounters the question, at what moment, with which observation and means to respond? The first result is a usable arrangement or an account of the missing capability, resource or decision.
 
-If the person can answer the question with existing support, retain that arrangement. A new training programme or software workflow is not the default response to an unused list.
+If the user can answer the question with the support available on this occasion, retain that arrangement. A new training programme or software workflow is not the default response to an unused list.
 
 ### C.41.OF:2 - Problem
 
@@ -45,7 +45,7 @@ Name the initiating cue and the response to a missing participant or inaccessibl
 
 Put the question, help and response mechanism in the working environment. Agree who asks, who answers and how a negative or unresolved answer reaches someone able to decide. Where everyone already has access, a short spoken exchange can be enough.
 
-Recover the capability needed to answer. Counting supplied items may be easy; interpreting a specialist defect can call for another person. The applicable capability-diagnosis Method helps identify the capability demanded by the work. Nearby explanation can help a capable user apply a distinction; it does not create all missing competence.
+Recover the capability needed to answer. A user may be able to count the supplied items but need a specialist or a qualified service to interpret a defect. The applicable capability-diagnosis Method helps identify the capability demanded by the work. Nearby explanation can help a capable user apply a distinction; it does not create all missing competence.
 
 For human participants, inspect whether time pressure, hierarchy, mistrust or incentives discourage a truthful response. Explain the practical purpose, involve people who bear the burden, and change the arrangement that prevents use. Where introduction changes established organizational practice, the applicable organizational Methods supply assignment, enabling-relation and participation-condition work beyond this fitting Method.
 
@@ -59,7 +59,7 @@ Start from the fitting question and reuse observations that already answer it un
 
 When a new observation of representative work is needed, use [A.3.1.WT](../05-part-a---kernel-architecture-cluster/24-a-3-1-wt---design-and-interpret-a-method-work-trial.md). Observe whether the user encounters the aid, interprets the question, obtains the grounds and chooses a useful continuation. In shared use, observe who contributes, whether another participant understands and responds, and whether a raised concern changes the work where it matters. Examine the intended interaction and the aid's contribution separately: opening the form, reading its items and obtaining a useful conversation are different observations. Include a negative or unresolved case when the response to it can change the intended reliance.
 
-Choose observations from the unresolved question. An existing reliable record may settle whether the aid appeared at the intended occasion. That appearance alone does not settle whether a participant understood or acted on a concern; use evidence of that interaction when it matters. Use a bounded observation of representative work before choosing continuing oversight. Include the observer's effort and any change their presence makes to the work.
+Choose observations from the unresolved question. An existing reliable record may settle whether the aid appeared at the intended occasion. That appearance alone does not settle whether a participant understood or acted on a concern; use evidence of that interaction when it matters. If the value of continuing oversight remains open, seek an existing or attainable observation that could change the decision. Where supervision is required, establish its availability at the occasion the work needs it. Include the observer's effort and any change their presence makes to the work.
 
 During an assisted use, establish who interpreted the question, obtained the observation and chose the response. The result may be sufficient for this handoff with the available help. If someone supplied the interpretation, credit the user with the work they actually did. When deciding what the user can do on other occasions, identify the support that will be available then and the decisions the user will have to make. Examine the effect on the work result and the effort moved to other participants or tools.
 
@@ -101,8 +101,8 @@ Inspect the arrangement at an actual or representative occasion:
 
 | Failure | Repair |
 | --- | --- |
-| Training is repeated while the description or tool remains inaccessible. | Supply the missing access and then test the arrangement in use. |
-| A person fills the list before a shared conversation. | Put the question at the conversation and distinguish prior observations from the shared result. |
+| Training is repeated while the description or tool remains inaccessible. | Supply the missing access. If the question also concerns use, draw on a matching observation. Arrange a trial when the grounds are insufficient or a new trial is commissioned. |
+| A prior entry is presented as the outcome of a discussion or judgement still owed. | Keep valid preparatory observations. Leave the open question to the participants entrusted with it and distinguish their answer from what was known beforehand. |
 | A new dashboard creates a neglected second workplace. | Use the existing work environment or supply a worthwhile, maintained connection. |
 | AI uncertainty is addressed only with stronger prompting. | Inspect criteria, tools, observations and retained context; repair the missing contribution. |
 

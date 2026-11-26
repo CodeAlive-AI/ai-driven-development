@@ -39,7 +39,7 @@ Reopen the hand-back result when its configuration, functioning, restrictions or
 
 ### MNT.11:5 - Archetypal Grounding
 
-In the extended PS17 case, [MNT.9](20-mnt-9---perform-and-record-the-maintenance-intervention.md) records the bearing intervention and installed configuration C42. [MNT.10](21-mnt-10---verify-restored-functioning-after-maintenance.md) supports the stated immediate duty, not an untested winter peak or long-term recurrence claim.
+In the extended PS17 case, the maintenance team’s [intervention record](20-mnt-9---perform-and-record-the-maintenance-intervention.md) identifies the bearing work and installed configuration C42. The [functioning evidence](21-mnt-10---verify-restored-functioning-after-maintenance.md) supports the immediate duty. A winter peak and long-term recurrence remain outside the observed conditions.
 
 The authorized receiving operator reconciles the returned state with those results. The applicable restoration procedure is completed, relevant temporary test arrangements have their required disposition, and control is transferred. The operating decision then permits the supported resumed use within the case's conditions. These events are constructed teaching observations, not a real authorization.
 

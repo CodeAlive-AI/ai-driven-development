@@ -8,7 +8,7 @@
 
 Use this pattern when paid capacity, used capacity and apparently idle capacity have been treated as the same thing. A proposed efficiency saving, staff reduction or extra workload often exposes the difference.
 
-The pattern governs an account of resource supply, usable capability, its use and its monetary consequences. It returns an explanation of what is available, what is used or reserved, and what action could change supply or payments.
+Use the account to explain a payment, determine how much work the resource can support or assess a proposed change. The terms of a paid shift may already settle its price. A promise about the same shift can depend on who may call on it and how soon it can be made available.
 
 Use an adequate capacity account directly. Use the relevant [OPS][OPS] method when deciding about the constraint, reserve or feasible schedule.
 
@@ -22,7 +22,7 @@ These quantities do not have one monetary meaning. Released time can increase av
 
 An account that prices every unused hour as waste invites a reduction that may damage service. An account that treats every paid hour as available can promise work the resource cannot perform.
 
-Explain how capacity is used, what the organization pays to keep it available and what would change that payment. An operating choice also depends on the service conditions.
+For a question about payment, establish what the supply terms charge. For a question about use or a further commitment, establish the relevant operating conditions. A proposed saving may require both accounts.
 
 ### MA.2:3 - Forces
 
@@ -36,13 +36,13 @@ A reserve can displace other valuable work. Count the opportunity forgone when t
 
 Name the resource arrangement, capability, time window and receiving question. Recover the supplied quantity, the unit and the conditions under which it can serve the relevant work. Distinguish staff attendance, machine occupation and elapsed time.
 
-Use the current operating account for availability, commitments and reserve. If those results are disputed, obtain the missing OPS result before attaching a monetary conclusion to them.
+Use the operating account for availability, commitments and reserve when the conclusion depends on them. For example, a completed shift payable at a fixed 1,000 costs 1,000 even if use of its two reserve hours was never recorded.
 
 #### MA.2:4.2 - Explain the supplied, used and unused portions
 
-Reconcile the supplied quantity with its relevant uses and restrictions. Identify unavailable or differently committed provision, actual or expected consumption, protected reserve and remaining usable capacity available for ordinary work. Keep the categories mutually interpretable for this account; reserve can be part of available capacity while being unavailable for ordinary commitment.
+Reconcile the supplied time by counting each interval once. Establish what happened in it when use matters. A reservation also says who can call on the resource and with what notice. During two hours reserved for urgent calls, staff may do work they are permitted and able to interrupt. For a proposed promise, check whether they can release the resource in time for a call and still meet the terms offered for the other work. A promise of two uninterrupted hours needs a different basis from permission to work until a call arrives.
 
-Investigate the reason for an apparently idle portion. It may reflect demand variation, a necessary skill mix, downtime, a minimum supplier block or inadequate demand. If the cause is in dispute, say what remains unresolved.
+When the cause of apparent idleness matters to the account, investigate it. It may reflect demand variation, a necessary skill mix, downtime, a minimum supplier block or inadequate demand. If the cause is in dispute, say what remains unresolved.
 
 #### MA.2:4.3 - Connect a capacity change to a supply action
 
@@ -54,13 +54,13 @@ Retain the threshold. Removing five hours of work may leave the same supplied sh
 
 #### MA.2:4.4 - Return the capacity and monetary account
 
-Return the quantities, reasons and relevant supply options with their limits. If a unit cost is useful, state its denominator and purpose. Dividing the same payment by supplied, used or productive hours gives different rates.
+Return the payment, use or available provision the recipient asked about, with the conditions supporting it. If a unit cost is useful, state its denominator and purpose. Dividing the same payment by supplied, used or productive hours gives different rates.
 
 Supply the supported quantities and payment conditions to OPS for the capacity or incremental decision. Keep uncertainty about the operating reserve separate from uncertainty about a supplier's terms.
 
 ### MA.2:5 - Archetypal Grounding
 
-A service purchases 100 scheduled qualified staff-hours for 2,400 in a period. An adequate supplied operating account identifies 20 hours unavailable for the service, 50 used on service work, 10 held as justified reserve and 20 otherwise unused usable hours. The account reconciles **20 + 50 + 10 + 20 = 100**.
+A service purchases 100 scheduled qualified staff-hours for 2,400 in a period. An adequate supplied operating account identifies 20 hours unavailable for the service, 50 used on service work, 10 held idle as justified reserve and 20 otherwise unused usable hours. The account reconciles **20 + 50 + 10 + 20 = 100**.
 
 Dividing 2,400 by all 100 supplied hours gives 24 per supplied hour. Dividing it by the 50 service hours gives 48 per used service hour. Neither division establishes the payment avoided by releasing another hour.
 
@@ -76,7 +76,7 @@ The period account does not establish a long-run staffing result. A later horizo
 
 ### MA.2:7 - Conformance Checklist
 
-Examine whether the account identifies the resource, capability, unit and window; reconciles supply with relevant uses and restrictions; retains the operating basis of reserve; distinguishes released capability from changed payment; and names the action and conditions needed for a supply change.
+What settles the recipient’s question about the specified resource and period? Check a payment against its terms and a total of supplied time against distinct intervals. Where the same interval is reserved and partly occupied, examine both facts for a capacity claim. For an additional commitment, check who may release the resource, how quickly and which promises still hold after an interruption.
 
 These checks assess the explanation. The existence of paid capacity does not establish a feasible schedule or the adequacy of a reserve.
 
@@ -102,7 +102,7 @@ The accounting method explains quantities and money. Those responsible for opera
 
 ### MA.2:11 - SoTA-Echoing
 
-The selected line combines resource-based managerial costing with the distinction between productive, protective and excess capacity discussed in Tendon and Doiron's *Tame your Work Flow* (2020), chapter 7. It adapts the distinction to the actual operating account: the reason for reserve must be established, and elapsed flow time alone does not identify a constrained resource.
+The selected line combines resource-based managerial costing with the distinction between productive, protective and excess capacity discussed in Tendon and Doiron's *Tame your Work Flow* (2020), chapter 7. In the operating account, a claim about the protection a reserve affords needs grounds for that protection. A fixed shift charge can be known from the terms of supply. Elapsed flow time alone does not identify a constrained resource.
 
 In the historical fixture example in Caspari and Caspari's *Management Dynamics* (2004), a fixture transfers work between stations: it saves five minutes per unit at one station but adds two at the station that limits production. Total processing time falls from 55 to 52 minutes, while wages remain unchanged. When demand uses the limiting station's capacity, increasing its work from 25 to 27 minutes per unit reduces possible output. These contributions inform §§4.2–4.3 and the released-hours example.
 

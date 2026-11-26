@@ -39,8 +39,7 @@ comparison gap rather than claim that the sole described arrangement is best.
 
 Use `SYSE.5` when the unresolved question is only how functions could be borne. Use `SYSE.3` to establish how the retained arrangement can be realized. A missing condition can concern one branch or the way several branches must work together. Resolve it during comparison if it could change the choice. Use
 `SYSE.8` when the project is designing an offering and the provider arrangement that will sustain another
-System's use. Specialist decisions—for example, commercial, financial, legal, governance, organization, operations, asset,
-and capability-development decisions—remain with their specialist practices.
+System's use. Commercial, financial, legal, governance, organization, operations, asset and capability-development questions can require specialist methods. Use the project’s actual allocation of authority to establish who can make each decision.
 
 #### SYSE.24:0.1 - Precision Restoration
 
@@ -106,7 +105,7 @@ These tensions recur when projects compare ways to obtain the same result.
 | Comparable result and heterogeneous means | Every option must obtain the same result under the same acceptance conditions, while the Agents, Work, Methods, Systems, and relations can differ radically. |
 | Low entry price and full burden | A visible price is easy to compare, while integration, assurance, data, support, change, and exit burdens often decide the outcome. |
 | Provider freedom and engineering assurance | The Agent performing provider Work needs freedom to choose its Methods, while the receiving engineering team needs evidence that the accepted result and interfaces satisfy the stated use. |
-| Technical choice and specialist authority | The engineering team must connect the arrangement, while specialist practices retain their decisions, Methods, and authorities—for example, for commerce, law, finance, governance, organization, operations, safety, security, and assets. |
+| Technical choice and specialist authority | The engineering team connects the arrangement. Commercial, legal, financial, governance, organization, operations, safety, security and asset questions can call for specialist evidence or a decision reserved to an authorized party. |
 | Option generation and option choice | A comparative choice needs materially different complete arrangements. Reuse a sufficient comparison or construct the missing alternatives before the deciding Agent applies `C.11` to the fixed `OptionSet`; candidate construction and choice need distinct results. |
 | Local result and affected Systems | An arrangement may help achieve the project result while transferring work, risk, lock-in, delay, or harm to affected Systems such as users, maintainers, partners, and providers. |
 
@@ -356,8 +355,7 @@ obtaining arrangement or make the final choice.
 
 Use `A.15.9` and `SYSE.9` when the arrangement needs a professional contribution. If an existing result suffices, use it. When requesting a missing contribution, give its supplier the receiving
 result and decision, relevant subject and configuration, use and time window, question to answer, supplied evidence,
-and what an objection or unresolved answer would change. The specialist retains the Method and authority for
-that contribution. The receiving engineer supplies enough context to make the answer usable and tests its fit
+and what an objection or unresolved answer would change. Identify which method the commission prescribes and which choices it entrusts to the specialist. Establish who may accept the result. The receiving engineer supplies enough context to make the answer usable and tests its fit
 when it returns.
 
 | Question inside the arrangement | Contribution consumed here and boundary retained |
@@ -846,7 +844,6 @@ field effectiveness.
   `A.15.1`, `A.2.1`, `F.6`, and the authority patterns distinguish actual Agent, assignment, Work, attribution,
   and permission facts from the arrangement's possible-future description.
 - Strategy, Finance, Governance, Administration, Enterprise Asset Management, commercial and legal practices,
-  and application practices retain their own Methods, evidence, and decisions. Section 4.5 states the
-  result needed at their receiving boundary; Systems Engineering connects its consequence to the whole.
+  and application practices supply their Methods and evidence. Section 4.5 identifies the result needed, who may decide it under the applicable terms, and how its consequences change the whole arrangement.
 
 ### SYSE.24:End

@@ -36,9 +36,9 @@ The difficulty is to locate which connection fails and change the contribution t
 
 Keep the receiving physical question in view while tracing the failed connection:
 
-**State the changed result or disagreement → recover the contributing relations → locate the incompatible use → construct a sufficient repair → carry it through the affected contributions → use the revised physical consequence.**
+**State the result or disagreement → recover the contributing relations → locate the incompatible use or limit of inference → answer the physical question on those grounds.** If the commission calls for a repair, construct it and carry its consequences back through the affected contributions.
 
-These are dependencies of the repair. A known physical change, a failed calculation or an observation can each be the starting point.
+A known physical change, a failed calculation or an observation can each be the starting point.
 
 #### B.5.MPC.R:4.1 - Compare results for the same physical question
 
@@ -80,7 +80,7 @@ A mathematical account may support several physical interpretations. Compare the
 
 #### B.5.MPC.R:4.4 - Construct the repair that the receiving use needs
 
-Choose the contribution that can remove the located incompatibility. The choice follows its cause and the wanted result.
+Choose the contribution by the result the recipient needs. To explain a particular failure, seek what distinguishes its possible causes on that occasion. To restore a required behavior, a change shown to work across the remaining causes can suffice while their identity stays open. When a repair is to serve future operations, derive its required range from their permitted inputs, timings and uses. A successful rerun of the original case covers that range only with grounds for the other permitted conditions.
 
 - If the requested unknown changed, retain the interpreted relations, release the former fixed value where appropriate and derive the new computational direction.
 - If a representation merged cases that the question must distinguish, retain the missing information, obtain a different observation or use a result that the merged representation supports.
@@ -100,7 +100,7 @@ Compare the repaired contributions on the input or physical case. For a mathemat
 
 Keep the comparison at the claim's scope. A conditional calculation can establish what a proposed arrangement would do under its assumptions. Actual performance requires the observations and inference appropriate to that use.
 
-If the comparison fails, follow the remaining disagreement. Do not repeat a test that leaves the live alternatives indistinguishable. Change the question or obtain the missing contribution when the means cannot settle it.
+If the comparison fails, follow the remaining disagreement. Seek information that can distinguish the alternatives that change the answer. If the means available cannot settle the commissioned question, return the supported result and the remaining gap. A proposed change of question then carries that information to whoever can choose the continuation.
 
 #### B.5.MPC.R:4.6 - Return the physical consequence and the next useful action
 
@@ -128,7 +128,7 @@ Suppose the requester chooses T=8 s. The required command is u=0.625, giving v=0
 
 During a diagnostic run, a debugger freezes the program and its timer for three seconds. In this example the output retains u=0.625 and the motor continues to run. The stop is therefore issued after eleven seconds of physical operation, giving d=0.125\*11=1.375 m under the model.
 
-The disagreement concerns execution timing. The equation and chosen command remain appropriate to eight seconds of motion. If the question concerns an uninterrupted run, observe that run under its intended timing. If such pauses can occur in the required operation, provide a stopping mechanism whose elapsed-time behavior survives the pause, or revise the control arrangement accordingly. Test its physical completion at the condition the use needs.
+The disagreement concerns execution timing. The equation and chosen command remain appropriate to eight seconds of motion. For a prediction about uninterrupted operation, use the eight seconds of motion under the stipulated model. For a claim about an actual uninterrupted run, establish its timing and displacement from evidence about that run. If such pauses can occur in the required operation, provide a stopping mechanism whose elapsed-time behavior survives the pause, or revise the control arrangement accordingly. Test its physical completion at the condition the use needs.
 
 For example, suppose an independent timer can remove the motor command and continues to run while the controller is paused. Start it with the command and set it to remove the command after eight physical seconds. Under the example's immediate-start/stop model, motion then lasts eight seconds and covers 0.125\*8=1 m, including a run with the three-second program pause.
 
@@ -152,7 +152,7 @@ To determine which frequency is present, change a contribution that distinguishe
 
 For a physical measurement, obtain the needed sampling and input-conditioning behavior from the instrument account. Frequencies outside the admitted band, timing error and an unsuitable analog input path can reopen the interpretation. A filter that removes the signal of interest changes the measurement question rather than recovering its frequency.
 
-The repair is a changed acquisition and interpretation, with a recomputation on the new data. The receiving user can distinguish a physical-frequency estimate from an unresolved alias. If the old record is all that is available, return the remaining alternatives instead of selecting one without further grounds.
+The new record identifies the frequency during its own acquisition. To use it for the earlier signal, establish that the source kept the same frequency or recover independent information about the earlier interval. For the ideal unit cosine above, the original sample at n=1 requires cos(2πf/100) = cos(2π·10/100). Thus f = 100k ± 10 Hz for an integer k. In the admitted range only 10, 90 and 110 Hz remain. All exceed 5 Hz, so the old record already settles that threshold for its own interval. They straddle 50 Hz, leaving that threshold and the exact original frequency open.
 
 #### B.5.MPC.R:5.3 - The voltmeter changes the circuit being inferred
 
@@ -200,8 +200,8 @@ A visible software failure can attract attention even when the computation is co
 - The contribution supplied at the disagreement has an interpretable meaning and receiving operation.
 - The repair distinguishes a located incompatibility from an unresolved diagnosis.
 - Shared premises remain visible across calculations, simulations and observations.
-- The repair changes the responsible relation, procedure, realization or requested result.
-- Its dependent consequences are reworked and returned at the supported scope.
+- A diagnosis establishes where the connection fails or what the available evidence can distinguish. A commissioned repair changes the responsible connection, procedure or realization, or obtains agreement to a revised result.
+- The recipient can tell what follows for the original question. Where a repair changes dependent conclusions, they are reworked and returned at the supported scope.
 - The receiver can perform the next action or identify the contribution needed.
 
 ### B.5.MPC.R:8 - Common Anti-Patterns and How to Avoid Them

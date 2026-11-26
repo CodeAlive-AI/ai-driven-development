@@ -33,8 +33,8 @@ With adequate financial grounds, the six steps in §4.1 can suffice. Sections 4.
 2. Compare variants that differ in how they produce the financial result, including continued use or a smaller repair. Recover the relevant current professional or research contribution and its conditions; a task syllabus establishes repertoire, not method effectiveness.
 3. Choose a comparison appropriate to the claim. For forecasting, use information available at the forecast date and periods withheld from method selection when estimating predictive performance. Include the errors that change cash or action, not only an aggregate fit measure. For valuation or exposure, compare assumptions, limiting cases and decision reversals on the relevant objects.
 4. Include implementation, data, explanation, review, runtime and participant burdens. If a trial could improve the choice or the evidence for relying on it, compare what it could add to available evidence with its whole cost and delay using [FPF C.11.DUA][DUA] as needed.
-5. Select the method, qualify its narrower use, propose a bounded trial or continue the supported method. Preserve unresolved claims.
-6. If a change is selected, make it usable in the finance procedure and explain when to reopen it. FIN.17 updates the affected models; FIN.20 addresses transmission and continued use when those become the problem.
+5. Return the comparison or recommendation within its supported conditions. If choosing the method is part of your remit, select it for those uses, propose a bounded trial or continue the existing method. Preserve unresolved claims.
+6. When implementation is entrusted to you, make the adopted change usable in the finance procedure and explain when to reopen it. FIN.17 updates the affected models; FIN.20 addresses transmission and continued use when those become the problem.
 
 
 
@@ -123,7 +123,7 @@ A useful trial can end in adopting a narrower use, retaining the incumbent, repa
 #### FIN.18:4.8 - Make the selected method an obtainable way of working
 
 
-State the chosen operation, the uses it supports and the conditions that would make it unsuitable. Give the inputs, preparation, judgement and tool support the performer needs. If the method changes, update the working procedure and use FIN.17 for the financial results affected. A new model in an unused folder is not an implemented finance method.
+In the assessment, state which operation the evidence supports, its suitable uses and the conditions that would make it unsuitable. Give the inputs, preparation, judgement and tool support the performer needs. If the adopted change is yours to implement, update the working procedure and use FIN.17 for the financial results affected. A new model in an unused folder is not an implemented finance method.
 
 Carry the choice into its receiving advice. Explain why an output may differ from the earlier method and which differences are expected consequences of the new construction. Retain comparable earlier results where they help establish whether the change works. Avoid switching methods halfway through a decision comparison without recomputing the alternatives on an adequate common basis.
 

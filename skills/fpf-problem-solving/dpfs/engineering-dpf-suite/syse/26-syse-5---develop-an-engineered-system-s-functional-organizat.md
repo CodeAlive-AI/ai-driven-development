@@ -10,11 +10,11 @@ partition, or supplier offering—as the only candidate. Use it also when a func
 can show which actual Systems or intended System referents could bear the contributions named by its claims under
 decision-relevant conditions—for example, operating, interface, placement, integration, or assurance conditions.
 
-The first result is an **account of how the required contributions could be borne and work together**. For a comparison, develop the materially different organizations or allocations the decision leaves open. When use or a binding requirement fixes one of them, establish whether the resulting arrangement can supply the effect and identify what remains open. Record relevant interfaces, conflicts, evidence limits and any dependency that blocks the decision. Realization and observed performance have their own grounds.
+The first result answers the question about the arrangement. It may establish what was assigned, how a whole can provide a service, what occurred in use, or why a specified arrangement cannot meet a requirement. For an open design choice, develop the materially different organizations or allocations that could change the decision. Identify relevant interfaces, conflicts, evidence limits and any dependency that blocks it.
 
-**First move.** Name the outside effect, the decision and any functioning or bearer already fixed. Ask which different allocations could change the answer. Vary the open choice and trace its consequences for the cooperating parts. When a single admissible allocation meets the commission, explain why it works under the required conditions. Use `A.6.F` directly if only the function claim is in question.
+**First move.** Which condition of the receiving system matters, and what must the engineer establish about it? An approved allocation can answer what a part was assigned to do. For an episode, trace the operation or failure as far as the evidence and the question require. For a question about capability, establish how the parts can achieve or maintain the condition together in the specified modes. For an open design choice, vary the allocation and trace what changes in the cooperation. Use `A.6.F` directly if only the function claim is in question.
 
-Use this pattern when the receiving decision depends on how functions are allocated or whether a required allocation can work. For one function-like
+Use this pattern when someone needs to explain an existing allocation of functions, establish whether a required allocation can work, or choose one. For one function-like
 claim, use `A.6.F`; for one module or interface claim, use `A.6.M`; for transdisciplinary candidate synthesis
 across several structures, use `C.32`; and for choosing an architecture from developed alternatives, use
 `SYSE.6`. When a subject-specific Method—for example, one for physics, software semantics, clinical action,
@@ -107,7 +107,9 @@ Develop the functional account and the bearer-and-interface account together. Wo
 
 #### SYSE.5:4.1 - Perform the Move
 
-1. **Bind the engineering decision.** Name the actual System or intended System referent whose functioning and bearer alternatives are under consideration, the decision, use situation, required outside effect or observed failure, configuration, operating envelope, horizon and protected characteristics. For a creator, state the products or classes of use that ground its required contribution; its own functions and construction remain the subject here. Use `SYSE.2` candidates and unresolved use–System mismatches when
+Start with what the recipient needs to know about the specified system. For a question about the arrangement in force, recover it at the requested date. For a particular outcome, establish what the available evidence shows about the functioning or failure on that occasion. For qualification, determine whether the arrangement can deliver the service under the required conditions. For a design, develop alternatives for the choices still open. Apply the following operations wherever they affect that answer.
+
+1. **Recover the engineering question.** Name the actual System or intended System referent whose functioning and bearer alternatives are under consideration, the requested explanation, qualification or design decision, the use situation, required outside effect or observed failure, configuration, operating envelope, horizon and protected characteristics. For a creator, state the products or classes of use that ground its required contribution; its own functions and construction remain the subject here. Use `SYSE.2` candidates and unresolved use–System mismatches when
    they are current and compatible; otherwise use a qualified direct source or record the missing result.
 2. **Clarify the function-like claims that matter to the decision.** For each material contribution, use `A.6.F` to state the
    predicate, possible bearer, receiving whole or effect, conditions, and claim status. Begin from outside use,
@@ -117,12 +119,11 @@ Develop the functional account and the bearer-and-interface account together. Wo
 4. **Develop the bearer arrangements the decision needs.** For a fixed allocation, assess how its bearers can work together under the required conditions. Develop and compare alternatives for choices that remain open. Start with actual or intended Systems that might
    carry the contributions. For each arrangement, state how each candidate System would be obtained and operated—
    for example, by using an available System, procuring or realizing one, relying on provider Work, or combining
-   software and physical Systems. Record shared resources and changes to supporting Systems as dependencies
-   unless they themselves carry a contribution. Vary decision-relevant structures—for example, physical principle,
+   software and physical Systems. Include the shared resources and supporting Systems on which each route relies. One System can both perform a function and limit the routes that depend on it. Check a common capacity limit, outage or changeover delay where it could defeat the promised service. Vary decision-relevant structures—for example, physical principle,
    distribution, placement, redundancy, containment, control boundary, or interface grammar. State separately
    whether an actual System exists, whether it is procurable, what realization or provider Work is needed, and
    any candidate claim that lacks support.
-5. **Write many-to-many proposed allocations.** Associate functional contribution claims and candidate bearers. If a proposed allocation fixes a choice in a parent model, compare the designs it permits under the same operating conditions. Check that at least one feasible design remains. For every design the allocation permits, test all the parent commitments relevant to the inquiry, including the required contribution under its operating conditions. If a newly permitted design violates one such commitment, narrow the comparison to the service it does preserve or revise the allocation. To claim strict refinement, identify a feasible design the parent allowed and this allocation excludes. State what the inquiry distinguishes. An allocation can exclude a design while leaving every previously admissible service behavior possible. Where two competing allocations each allow a design the other excludes, keep them as alternatives under the parent (B.5.MR).
+5. **Relate functions to their bearers.** Recover the allocation that the question asks about. An approved design can settle what it specified. For an actual installation or episode, identify bearers to the precision the claim needs. For a proposal, identify which bearers would contribute each function. The relation may be one-to-one, shared among several bearers or reused across functions. If a proposed allocation fixes a choice in a parent model, compare the designs it permits under the same operating conditions. Check that at least one feasible design remains. For every design the allocation permits, test all the parent commitments relevant to the inquiry, including the required contribution under its operating conditions. If a newly permitted design violates one such commitment, narrow the comparison to the service it does preserve or revise the allocation. For a claim of strict refinement, identify the answers admitted by each model to the same question under the same interpretation. At least one answer must remain admissible under the proposed allocation. Every answer it admits must also be admitted by the parent, and the allocation must exclude at least one answer the parent admitted. An excluded design proves exclusion when the design itself answers the question. An allocation can exclude a design while leaving every previously admissible service behavior possible. Where two competing allocations each allow a design the other excludes, keep them as alternatives under the parent (B.5.MR).
    Permit several bearers for one contribution, several contributions for one bearer, and different
    allocations by mode, use, configuration, place, or effectivity. Treat weak cues—for example, co-location,
    matching names, diagram overlap, product kind, ownership, or system-role assignment—only as possible evidence
@@ -142,7 +143,7 @@ Develop the functional account and the bearer-and-interface account together. Wo
    or specialist result. Record each dependency with its own kind and relation to the proposal. Distinguish a missing catalogue
    item from a missing physical principle and from a missing project capability. When a recursive realization
    dependency is current, use `SYSE.3` to develop it; do not hide it in a module name.
-9. **Establish the engineering consequences.** For a fixed arrangement, establish whether it can provide the required effect. When comparing proposals, state their predicted gains, losses, and unknowns for the
+9. **Establish the engineering consequences.** For a fixed arrangement, establish its capability when that is the question. To explain a particular outcome, trace the contribution or failure under the conditions then in force. When comparing proposals, state their predicted gains, losses, and unknowns for the
    current decision. Compare proposals for the engineering concerns that matter, such as performance, energy,
    safety, security, fault containment, latency, placement, service access, manufacture, assembly, integration,
    supply, cost, configuration, changeability, evidence burden, and affected-System consequences. Express each
@@ -156,8 +157,7 @@ Develop the functional account and the bearer-and-interface account together. Wo
     or trial whose result is relied on, identify the performed work, its performer and Method, configuration
     and conditions, observations, and claim limits. A model, simulation result, or trial observation remains
     an input to later claim assessment; its form alone does not establish feasibility of the whole proposal.
-11. **State the decision use and local stop.** Record which alternatives remain usable, were revised, combined,
-    or rejected; record the reasons, protected losses and dependencies that block the receiving commitment. When an architecture
+11. **State the decision use and local stop.** Give the finding about the specified arrangement, its functioning or its capability. When alternatives are at issue, record which remain usable, were revised, combined or rejected, the reasons, protected losses and dependencies that block the receiving commitment. When an architecture
     decision is current, use this account as an input to the Work governed by `SYSE.6`. When no admitted bearer
     can satisfy a sound contribution, choose explicitly among another bearer, a changed functional organization,
     new realization or supporting-System capability, bounded exploratory Work, or stopping the current proposal. Pause
@@ -169,10 +169,9 @@ result does not require all work producing that result to finish before work on 
 
 ##### SYSE.5:4.1.1 - Construct the Joint Functioning
 
-For a decision-relevant use, build one connected explanation of how the proposed interactions produce the
-outside effect. Begin with an existing arrangement when it supplies a useful starting point; its parts are
-candidates, not limits on what can be constructed. The following questions connect functional reasoning with
-bearer choices.
+Begin with the condition of the receiving system that the arrangement must change or maintain. For an actual episode, connect the evidence of the outside result to the interaction in question. If several operating paths fit the record, establish what follows on all of them. An observed service can be reported even when the active bearer is uncertain. For attribution to a particular part, establish what it supplied or maintained under the conditions then in force. A direct trace may identify it, or the observed configuration and outcome may exclude every alternative. For a proposed design, trace how each candidate arrangement would work. For qualification, a failure under the prescribed operating rule can refute its guarantee. If the project may choose a recovery strategy, consider the alternatives that would still be available in time. One common constraint can rule them all out. A failed choice alone leaves the other permitted choices open.
+
+When judging a change, compare what can reach the recipient in each configuration over the relevant modes and time. A standby can preserve the ability to deliver during an outage even when it supplies none of the normal flow. Establish that it can take over in time with the resources still available in that outage. Two routes may share the conversion, storage or authorization on which both rely. If loss of that common support is within scope, follow what remains available, including any independent supply or stored output over the required interval.
 
 **Work back from the effect to what must happen.** Identify the receiving System, the condition to change or
 preserve, and what must reach or act on it. Recover the relevant inputs and initial states: for example,
@@ -227,12 +226,14 @@ adequacy from the organization alone.
 
 #### SYSE.5:4.2 - Record the Result
 
-| Result position | Required content |
+Use the positions relevant to the finding being returned. A sufficient account of an allocation or an outcome can be brief. A claim about qualification or replacement also covers the conditions on which that conclusion depends.
+
+| Result position | Content for that use |
 | --- | --- |
-| bounded use | Project System or intended referent, decision question, outside effect or observed failure, use situations, configuration, operating envelope, horizon, and protected characteristics. |
-| functional alternatives | Several candidate functional organizations, or a justified smaller set; each explains how its contributions and interactions jointly produce the outside effect from the relevant inputs and states, under stated conditions and modes, with unresolved causal or functioning claims explicit. |
-| bearer-and-interface alternatives | Candidate actual Systems or intended referents, obtaining or proposed constructive and placement structures, interface specifications and physical realizations or gaps, separate existence, procurement, provider-Work, and realization claims, and materially distinguishing principles. |
-| proposed allocations | Explicit many-to-many function-to-bearer associations qualified by use, conditions, configuration, place, mode, and effectivity; actual functioning is grounded separately. |
+| bounded use | Project System or intended referent, question about existing functioning, qualification or design, outside effect or observed failure, use situations, configuration, operating envelope, horizon, and protected characteristics. |
+| functional organization | For an explanation or qualification, give the interaction or constraint that establishes the conclusion about the whole under the relevant conditions. An observed outcome can be established while its path remains open. For a question confined to the assigned organization, identify the applicable allocation. For design, describe the organizations needed for the choice and why they cover it. |
+| bearers and interfaces | The actual Systems or proposed bearers, obtaining or proposed constructive and placement structures, interface specifications and physical realizations or gaps, separate existence, procurement, provider-Work, and realization claims, and materially distinguishing principles. |
+| allocation of functions | Identify the function–bearer associations needed for the use, configuration, place, mode and time in question. For a proposal, state its feasibility conditions. For an account of an execution, state what the evidence establishes about the operating relations at the precision required. |
 | feasibility and conflict | Capability needs, loads, margins, resources, placement, realization and integration dependencies, wrong-use cases, conflicting characteristics, supported and unsupported claims, and the first unsupported dependency if one blocks the intended commitment. |
 | evidence boundary | Models, sources, analyses or trials relied on; for performed analysis or trial work, its performer, Method, configuration, conditions, observations, uncertainty, and the claims those observations do and do not support. Retain source editions where the claims depend on them. |
 | decision use and local stop | The receiving work and the finding it needs. For a decision among arrangements, give the alternatives retained, revised, combined or rejected, with their grounds, significant losses and any unsupported commitment. |
@@ -243,11 +244,7 @@ those subjects.
 
 #### SYSE.5:4.3 - What Changes in Practice
 
-Engineers stop asking which named component implements each box and start asking which materially
-different arrangements can produce the required outside effect under the conditions relevant to that use. They no longer
-treat functional names as purchase items or procurement specifications. Interface standards become inspectable
-specifications and evidence questions. Failed feasibility reopens the affected functional or bearer claims instead of
-silently collapsing the candidate set or restarting the whole project.
+Engineers can read what an allocation requires, explain an episode at the precision the evidence supports and qualify a fixed arrangement. A negative finding can identify the condition the arrangement would violate. When the allocation is open to change, compare arrangements by the outside effects they could deliver in use. An interface specification and evidence of compatibility help decide which change is feasible and which dependency needs more work.
 
 ### SYSE.5:5 - Worked Case: Heat-Pump Plant Control and Protection
 
@@ -344,9 +341,7 @@ fails or a damaging swap remains possible, the allocation and interface proposal
 
 ### SYSE.5:6 - Biases to Watch
 
-Three recurring biases matter here. **Incumbent-form bias** lets a function tree, current parts, or a supplier
-catalogue determine the candidate architecture; start from the required effect and compare materially different
-arrangements. **Conformance-label bias** lets an interface name, standard, or certificate replace project evidence;
+Three recurring biases matter here. **Incumbent-form bias** lets a function tree, current parts, or a supplier catalogue determine the candidate architecture. Start from the outside effect. Compare materially different arrangements when the design choice is open. A fixed or historical arrangement can be examined on its own terms. **Conformance-label bias** lets an interface name, standard, or certificate replace project evidence;
 state the interface claim and test it under the relevant conditions. **Fluent-generator bias** makes a plausible function graph look feasible
 even when the proposed bearers cannot deliver its effects. Recover the claims, candidate Systems and any unsupported dependencies.
 
@@ -357,13 +352,13 @@ even when the proposed bearers cannot deliver its effects. Recover the claims, c
 | --- | --- |
 | `CC-SYSE5-1` | names the actual System or intended System referent selected for engineering, decision, use, configuration, operating envelope, horizon and required effect or failure; for a creator, preserves the product-use grounds of its required contribution. |
 | `CC-SYSE5-2` | restores function-like claims through their predicates, possible bearers, conditions, and receiving effects rather than relying on functional labels. |
-| `CC-SYSE5-3` | explains how the cooperating functions, bearers and interfaces can produce the required effect. For a comparison, it develops materially different arrangements or justifies the smaller set sufficient for the decision. |
+| `CC-SYSE5-3` | establishes the requested conclusion about the arrangement. For capability under a fixed arrangement, it explains how the parts deliver the effect in the specified modes or establishes a violation of the required condition. If the question is whether some permitted recovery strategy can meet the requirement, a negative conclusion accounts for all the choices and information available by the decision time. For an occurrence, it supports the outcome and the attribution actually claimed. For a question confined to an allocation, the identification of what was assigned can suffice. A comparison covers the arrangements that could change the decision. |
 | `CC-SYSE5-4` | keeps functional organization, constructive organization, placement, Work, Method, descriptions, and evidence distinct. |
-| `CC-SYSE5-5` | states many-to-many proposed allocations with use, mode, configuration, place, and effectivity where they change the decision. |
+| `CC-SYSE5-5` | identifies the function–bearer relations on which the conclusion depends. An assignment has grounds in the arrangement that designated the bearer. An actual installation or episode has grounds for the physical or operating relations claimed. For a proposed allocation, state the intended relation. Include use, mode, configuration, place and time where they change the answer. |
 | `CC-SYSE5-6` | separates interface specifications, physical realizations, connections, interactions, and compatibility evidence. |
-| `CC-SYSE5-7` | challenges consequential load, failure, integration, and wrong-use cases using available evidence, states its supported and unexamined boundaries, and selects further Work only when its attainable contribution warrants the whole burden. |
-| `CC-SYSE5-8` | states separately whether an actual System exists, whether it is procurable, what realization or provider Work is needed, and any candidate claim that remains unsupported. |
-| `CC-SYSE5-9` | names each decision-relevant dependency by its own kind and relation to the proposal. |
+| `CC-SYSE5-7` | when the conclusion depends on load, failure, integration or a possible misuse, examines those conditions using available evidence, states its supported and unexamined boundaries, and selects further Work only when its attainable contribution warrants the whole burden. |
+| `CC-SYSE5-8` | grounds claims about the system that actually operated. For claims about procurement or realization, identifies the relevant conditions, provider work and any unsupported commitment. |
+| `CC-SYSE5-9` | identifies each relevant dependency and how it bears on the existing arrangement, its qualification or the proposed design. |
 | `CC-SYSE5-10` | makes the finding and any material conflicts usable by the receiving work, including an architecture decision when one is due. Selection and realization have their own work and evidence. |
 
 ### SYSE.5:8 - Common Failures and Repairs
@@ -371,7 +366,7 @@ even when the proposed bearers cannot deliver its effects. Recover the claims, c
 
 | Failure | Symptom | Repair |
 | --- | --- | --- |
-| Incumbent-parts decomposition | The current bill of materials becomes the functional organization. | Restate the outside effect and develop rival functional organizations before preserving the incumbent allocation. |
+| Incumbent-parts decomposition | The current bill of materials becomes the functional organization. | Identify the outside effect and the interactions or constraints that explain the result. For a fixed allocation, determine whether the arrangement meets the requirement. Develop alternative allocations when the decision leaves them open. |
 | Functional element as purchase item | A box named *sensor*, *protection*, or *storage* is treated as a procurement specification or purchase item. | Recover the function-like claim, candidate actual or intended bearer, interfaces, placement, capability need, and assembly relation. |
 | One-to-one allocation | Every contribution is forced into one component and every component into one contribution. | Permit many-to-many and mode-dependent proposals; inspect joint and shared functioning. |
 | Diagram overlap as relation | Matching labels or co-located symbols establish identity, allocation, or functioning. | State the direct claim and supporting evidence; keep representation correspondence separate. |
@@ -449,6 +444,7 @@ sources below support particular premises and limits, with their dispositions st
 | [She, Belanger, and Bartels 2024, Abstract and §5](https://doi.org/10.1007/s00163-024-00434-w): bounded decomposition and metric alternative | **Adapt** exploratory decomposition as a way to generate candidates; **reject** a decomposition metric as sufficient grounds for selecting a bearer organization in steps 3 and 9. | The preliminary metrics, simple examples and subjective benchmark leave semantic coverage and its cost material. Decomposition quality alone does not decide the engineering consequences. |
 | [Monetti, Lundström, and Maffei 2025](https://doi.org/10.1080/21693277.2025.2566066) and [Grønvald et al. 2026, §§4–5](https://link.springer.com/article/10.1007/s11740-025-01412-4): assembly consequences and evidence of data limits | **Adapt** early assembly consideration and **adopt** explicit economic/data limits in steps 8–9. | The bounded assembly and company evidence does not establish general modularity benefit, cost reduction, substitutability, or Method dominance. |
 | [Haddad and Seibel 2025, §§3.3–4.2 and §5](https://doi.org/10.1017/pds.2025.10205) | Supports AI-assisted generation and iterative refinement of candidate function structures. | In the automated graph evaluation of 50 products, GPT-4o + MCTS-FD produced 42% of outputs without errors detected by the study's semantic/structural checks and 72% without disconnected components. The graduate-student comparison was a separate qualitative study. Non-functional requirements, domain interdependencies, physical effects, and principal solutions remained outside the demonstrated result. These graph metrics support the bounded generation use; project correctness, bearer feasibility, and architecture selection require project evidence. |
+| [Jones (2025), *Common Cause Failures Dominate and Defeat Redundancy*](https://ntrs.nasa.gov/citations/20240013164) | **Adopt** the check for shared support in redundant arrangements. Trace which paths a common loss would disable and what service would remain through the required interval. | Sharing a resource identifies a possible common dependency. The project determines whether its loss is in scope and which other paths or reserves are available. |
 | Current FPF `A.6.F`, `A.6.M`, `A.22`, `C.30`–`C.32`, representation, comparison, evidence, and assurance patterns: governing distinctions and general synthesis | **Adopt** the distinctions and **adapt** the candidate palette to the engineering use in §4.1 and §12. | These contributions constrain claims, structures, interfaces and candidate use. The engineering construction and its subject-specific adequacy still need the explanation and domain grounds required here. |
 
 For the AI-generation branch, **adapt** generated graphs as proposals to examine; **reject** using graph

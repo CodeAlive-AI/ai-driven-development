@@ -6,15 +6,15 @@
 
 ### A.7.2:0 - Use this when
 
-Use this pattern when two or more dated applications of current FPF methods or patterns yield ontology-claim or decision epistemes whose claims or practical consequences cannot jointly support the same receiving claim or consequence in the same scope. Trace each result to the pattern or method clauses, premises, and source-use occurrences that the application used; a difference between texts alone is not a conflict. One material contradiction is enough; recurrent conflict is not required.
+Use this pattern when FPF clauses appear to give incompatible answers to the same ontology question or practical decision. A designer can compare a proposed rule with another rule before either has been used. A practitioner investigating disagreement between actual applications can trace the result of each to the clauses, premises and sources used. One material contradiction can warrant reconciliation.
 
-The first useful move is to name the smallest receiving ontology claim and, for each dated application, the result claim or decision, the practical consequence it would support, and the clause, premise, or source use on which it relied. If the apparent conflict disappears after recovering the applicable scopes, return a context split. Different scope labels alone do not resolve incompatible claims in their shared domain.
+First name the disputed claim and the use it must support. To test the rules, find conditions admitted by both and work out what each would conclude there. For a report of disagreement in practice, recover the actual conclusions in their respective circumstances. A difference of scope resolves the apparent conflict only where it removes the incompatible consequences.
 
 **Not this pattern when.** A vocabulary difference, unlike source function, or different subject with no shared practical consequence is not a premise conflict. Use `A.7.1` for one engineering ontology defect, `F.19` for wording repair with `C.2.P`/`E.10` for a remaining semantic question, direct evidence-use or formal patterns for missing warrant, and source-currentness patterns for stale editions.
 
 The primary reader is an FPF maintainer, architecture steward, or pattern author responsible for a material cross-pattern contradiction. The procedural content describes the reconciliation Method in §4. A `U.MethodDescription` assertion requires that admitted Method as the episteme's EntityOfConcern and A.3.2 membership.
 
-For any dated reconciliation `U.Work`, use A.13 to identify the performer System and let A.15.1 independently admit the occurrence. If the case or receiving result must also identify the assignment under which the reconciliation Work was performed, check that relation separately through F.6 against the assignment used by A.13. A short result may omit an assignment identifier it does not use; no unused assignment or attribution is presumed.
+For a claimed dated reconciliation `U.Work`, use A.13 for each actual performer and admit the occurrence under A.15.1. Apply F.6 to the relevant Work and assignment when attributing that Work under the assignment. A short result may omit an assignment identifier it does not use.
 
 The pattern episteme, described Method, reader, performing System, any separately established assignment species and occurrence, optional attribution check, Work, source uses, and returned FPF decision remain distinct.
 
@@ -26,9 +26,9 @@ The concern is one bounded reconciliation of FPF receiving claims and their prac
 
 ### A.7.2:2 - Problem
 
-A premise catalogue does not repair dated applications whose result claims conflict. Prestige ranking of sources can hide the receiving claim, while broad foundation rewriting can damage unrelated pattern decisions. Conversely, treating different source functions as automatically incomparable can leave a same-claim contradiction unresolved.
+A premise catalogue cannot reveal which conclusion changes for a recipient. A difference between rules may have no effect on the decision, or an admissible case can expose the conflict before it occurs in practice. A disagreement on record may instead arise from the facts or editions used. Ranking sources by prestige settles none of these questions.
 
-Reconciliation recovers what each application used, what source content bore on the receiving claim, and which evidence and currentness assertions the comparison needs. Reopen an FPF decision only when that comparison establishes a conflict requiring repair.
+Reconciliation follows each disputed conclusion to its grounds. When the dispute concerns actual use, recover what each application used, what source content bore on the receiving claim and which evidence or currentness assertions the comparison needs. Reopen an FPF decision when that comparison establishes a defect that affects it.
 
 ### A.7.2:3 - Forces
 
@@ -44,20 +44,20 @@ Reconciliation recovers what each application used, what source content bore on 
 
 #### A.7.2:4.1 - Recover the conflict
 
-1. Name the smallest disputed receiving ontology claim and its current edition.
-2. For each dated application, name its resulting ontology-claim or decision episteme, the practical consequence the receiving use would take from it, and the method clause, premise, or source-use occurrence on which the work relied.
-3. Recover the FPF claim epistemes, dated application Work, direct kinds and relations, and source-use occurrences needed for this comparison. Include A.7.CP reasoning-basis occurrences only for claims used; recover scope and currentness where they affect the result.
-4. Test whether the result claims support incompatible answers to the same receiving claim or practical consequence in the same scope. If not, return `noConflictStop` or `contextSplit`.
+1. Name the disputed receiving claim or decision. Recover the wording, edition, scope and intended force of each clause. Are they alternatives under consideration, or must they govern the same decision together?
+2. To compare rules, choose a situation in their common scope that the shared background conditions allow. Follow each clause under the same facts and interpretation to what it requires, permits, rules out or leaves open. One admissible case that would require incompatible answers establishes a conflict for joint use over the proposed range. Agreement in one case settles only that case unless the reason for agreement covers the range.
+3. When the question concerns actual applications, recover the result claim or decision, the facts, the clause or premise applied and the practical consequence for each. Recover dated Work and source-use occurrences to the extent the historical claim needs them. Use A.7.CP reasoning-basis occurrences for claims actually used.
+4. Compare the consequences for the same receiving use. One clause can leave a choice open that the other settles. Check whether both can be honored, including any right each would grant. Where differing scopes remove the conflict, explain the split. A decision that both clauses support in one case can be returned for that case even if their consequences differ elsewhere. A conclusion about compatibility across their shared domain needs grounds covering that domain. If the commission asks whether a procedure can honor both rules in operation, consider what the performer can know when each commitment falls due. Among the histories still possible on the information then available, is there a permitted move with a workable continuation in every one? A later observation may allow those continuations to differ. If no move works before an irreversible deadline, identify the incompatible demands on that decision and what earlier information, available action or changed timing could resolve them. The two rules can still be in force.
 5. Compare source content through direct evidence, formal-semantics, domain, scope, and currentness patterns. Do not rank source labels.
 6. Translate candidate distinctions into FPF objects and constructive consequences. Test them against subject evidence and only the `A7CP-*` claims used by the reconciliation work.
-7. When the comparison establishes a defective method clause or subject-pattern decision, reopen the smallest affected decision set and repair it, preserving unaffected decisions. Run enough of the affected application again to obtain a checked result. When the available grounds warrant neither correction, retain the appropriate `doNotCompose` or `unresolvedEscalation` result under §4.2.
+7. When the comparison establishes a defective clause or subject-pattern decision, repair the smallest affected decision set. Follow the changed rule through the disputed case and check its consequences over the range for which compatible use is claimed. Re-evaluate the affected recorded conclusions under the repaired clauses when the receiving decision relies on them. Where the grounds warrant neither correction, use the appropriate `doNotCompose` or `unresolvedEscalation` result under §4.2.
 8. Return one declared result with affected use, stop, and reopen condition.
 
 #### A.7.2:4.2 - Use one closed reconciliation result set
 
 The result episteme uses exactly one local disposition:
 
-- `reconciledCompatibility` — repaired clauses and checked application results now support compatible use for the named claim and scope;
+- `reconciledCompatibility` — the repaired clauses support compatible use for the named claim and scope, with checked application results when those results are at issue;
 - `contextSplit` — the apparent incompatibility disappears under the recovered contexts or scopes; each claim retains its separate subject-matter warrant;
 - `doNotCompose` — both may remain current, but their outputs must not be combined for the named use;
 - `unresolvedEscalation` — evidence or decision authority is insufficient, with the blocked use and receiving subject pattern named;
@@ -66,6 +66,8 @@ The result episteme uses exactly one local disposition:
 These are reconciliation-result dispositions, not new U-kinds. Compatible co-use is demonstrated only when warranted. A conflict does not have to end in one winner.
 
 #### A.7.2:4.3 - Record claim-relative source use
+
+Use this relation when the question is which source a particular decision or reconciliation actually used. A comparison of proposed clauses can instead give the conditions and implications that follow from their text. A claim that someone used either clause in earlier work has its own historical grounds.
 
 `OntologyClaimSourceUseRelation@Context` relates one source episteme, one receiving ontology claim, and the dated ontology-decision or reconciliation work occurrence that consumes that source for that claim. It is local to this use and does not create a universal source-authority relation.
 
@@ -127,7 +129,7 @@ OccurrenceIdentity:
 ```
 The source participant is the source episteme and edition consumed. The receiving participant is the ontology-claim episteme and edition being formulated, constrained, tested, interpreted, compared, or traced.
 
-For the Work participant, use A.13 to identify the performer and A.15.1 to admit the dated ontology-decision `U.Work` independently. If the case must also identify the assignment under which that Work was performed, F.6 checks the assignment used by A.13 and compares its holder with the already identified performer. The assignment relates the independently identified System to its assigned-kind value; that System performs the Work.
+For actual ontology-decision `U.Work`, use A.13 for each performer and admit the Work independently under A.15.1. A single jointly performed decision and the use of earlier results from others have different performance histories. For an assignment-bound claim use F.6, matching the holder of the relevant assignment to the participant who actually performed that contribution.
 
 The minimal occurrence needs only those three participants, `useFunction`, `sourceUseScope`, and the maximal continuous interval during which the named Work consumes content from that source episteme for that receiving claim. Citation, access, bibliography membership, prestige, publication status, or co-location alone is insufficient.
 
@@ -155,7 +157,9 @@ Reconsider affected uses when a source or receiving-claim edition changes, neede
 
 ### A.7.2:5 - Archetypal Grounding
 
-**Compatible repair.** The receiving claim asks whether a `MaintenanceCoordinatorAssignment` obtains for holder `MaintenanceSystem-4` and assigned kind `MaintenanceCoordinatorKind` in scope `S`. Its independently admitted local rule requires a policy-valid assignment act and treats the signed organization chart as evidence only. The chart is present, but current facts establish that the required act did not occur.
+**Compare proposed assignment rules.** One proposal makes a separate appointment act necessary for an assignment. Another makes a signed organization chart sufficient. Suppose their common procedure allows an authorized person to sign the chart before any appointment act. At that moment the first rule would withhold the assignment and the second would recognize it for the same person and post. That admissible sequence rules out using both as the criterion throughout the proposed scope. No dated appointment is needed to see the conflict. If the shared procedure instead makes authorized signing the appointment act, the same signature satisfies both conditions in this case. The result about either design leaves the history of any actual appointment open.
+
+**Reconcile two recorded conclusions.** The receiving claim asks whether a `MaintenanceCoordinatorAssignment` obtains for holder `MaintenanceSystem-4` and assigned kind `MaintenanceCoordinatorKind` in scope `S`. Its independently admitted local rule requires a policy-valid assignment act and treats the signed organization chart as evidence only. The chart is present, but current facts establish that the required act did not occur.
 
 One dated application of the local rule concludes that the relation does not obtain; another application of a chart-sufficiency clause concludes that it obtains for the same participants and scope.
 
@@ -180,10 +184,10 @@ The dominant biases are prestige hierarchy, forced convergence, and formal-shape
 
 | ID | Check |
 |---|---|
-| `CC-A7.2-1` | The conflict names receiving claims, practical consequences, contexts, scopes, and current editions. |
+| `CC-A7.2-1` | For comparison of rules, show the consequences of the applicable clauses under common admissible conditions. When the claim concerns a procedure that can meet them throughout a range, include the information and choices available when the procedure must act. It can fail even when a different choice in hindsight would work in each history. For reported disagreement, establish the actual conclusions under the relevant editions, facts and scopes. |
 | `CC-A7.2-2` | Vocabulary difference or unlike source function alone does not trigger reconciliation. |
 | `CC-A7.2-3` | Keep the reader, pattern episteme, described Method and result distinct. Any MethodDescription claim satisfies A.3.2. For an asserted dated reconciliation Work, retain the independent A.13/A.15.1 basis in §0, including the separately admitted assignment species and obtaining occurrence used by A.13; add F.6 only for the precise attribution consumed. A short result may omit unused identifiers without presuming their facts. |
-| `CC-A7.2-4` | Every load-bearing common claim is cited from `A.7.CP` through a reasoning-basis occurrence. |
+| `CC-A7.2-4` | Cite the common claim from `A.7.CP` on which the comparison depends. Establish a reasoning-basis occurrence when the conclusion concerns the use of that claim by particular Work. |
 | `CC-A7.2-5` | Every source-use occurrence has the three participants, source and receiving-claim editions, function, claim scope and maximal continuous actual-use interval. Corrected knowledge of that interval does not itself change occurrence identity. Include only qualifiers used or asserted in this reconciliation, with blocked-overread references satisfying §4.3's F.19 conditions. |
 | `CC-A7.2-6` | Evidence, publication, formal semantics, and currentness remain with subject patterns. |
 | `CC-A7.2-7` | The repair reopens the smallest decision set and preserves unrelated FPF decisions. |
@@ -225,7 +229,7 @@ A source contributes through its content and the receiving claim. A newer public
 ### A.7.2:12 - Relations
 
 - **Coordinates with:** `A.7.1`. `A.7.2` is neither its parent nor child; it handles material cross-pattern premise conflict and can return repaired subject-pattern decisions to it.
-- **Consumes:** claim contents from `A.7.CP` through `ClaimUsedAsReasoningBasisRelation@Context` occurrences; it does not copy or own the compact. Pattern epistemes and `U.MethodDescription` epistemes supply clauses or declared premises; their described Methods remain distinct, while dated application Work and its separately governed result claims supply the reconciliation inputs.
+- **Consumes:** claim contents from `A.7.CP` for comparisons. For claims of actual use, establish `ClaimUsedAsReasoningBasisRelation@Context` for the reasoning Work concerned. Pattern epistemes and `U.MethodDescription` epistemes supply clauses or declared premises; their described Methods remain distinct, while dated application Work and its result claims supply the inputs when reconciling actual applications.
 - **Defines:** `OntologyClaimSourceUseRelation@Context` and `OntologySourceUseConflictFinding@Context` for bounded ontology-decision and reconciliation source use only.
 - **Coordinates with:** `A.10` for evidence use, `G.11` for currentness, `C.29` and direct formal patterns for formal semantics, `C.2.1` for source epistemes, `E.24.PUB` for publication-occurrence, form, and carrier questions, `E.17` for multi-view publication, and subject patterns for the receiving ontology claim.
 - **Preserves:** current published FPF decisions as an internal basis, with grounded, claim-specific reconsideration. Use `E.9.DA` review or DRR discharge when that separately governed question is current.

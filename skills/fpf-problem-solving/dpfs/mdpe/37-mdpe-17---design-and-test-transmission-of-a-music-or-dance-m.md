@@ -72,7 +72,7 @@ For a claim that the receiver took up a method from a source, identify the metho
 | blocked practice under one condition ↔ transfer | A performer who succeeds with familiar cues may struggle with a new partner, tempo, material, venue or task. |
 | capability ↔ source contribution | A receiver may have the skill before using a source. Use of a source can also be established when the receiver cannot yet perform the task. |
 | local result ↔ cultural continuation | One receiving Agent can perform Work that enacts a Method while the population never recognizes, copies, or retains it. |
-| human learning ↔ other Agents | Human motor-learning evidence can guide hypotheses; robots and AI Agents require their own direct learning and control Methods. |
+| human learning ↔ other Agents | Evidence about human motor learning can suggest a question for another performer. A configured device can play a part supplied to it. To explain an improvement through machine learning, establish which learning process produced the change. |
 
 ### MDPE.17:3 - Solution
 
@@ -143,7 +143,7 @@ Use the evidence for the part of transmission that the question concerns. The fo
 1. **source available** — the intended receiver can access the source content in a usable form; identify mere receipt of the carrier separately when that is all the evidence shows;
 2. **source used** — provider or receiving Work actually relies on named content;
 3. **receiving enactment** — the receiver performs representative work by a way of working established as a Method under the stated conditions;
-4. **transfer** — enactment occurs under the changed condition required by the use;
+4. **transfer** — the performer carries an identifiable aspect of earlier work into the changed condition the task requires, with the relevant help and limits accounted for;
 5. **retention** — the receiver can perform the previously demonstrated method after a stated delay, under the reported practice and support conditions;
 6. **source contribution** — a suitable comparison supports the causal claim about named content or provider Work; and
 7. **population continuation** — the practice persists in the relevant population, a question addressed by `MDPE.19` and `C.36`.
@@ -158,7 +158,7 @@ When a receiving performance is at issue, describe the relations it preserved, c
 
 If a further choice is required, keep an arrangement already adequate for the use. Compare the likely contribution of a change with its cost and delay. A different carrier, demonstration, exercise, cue, partner, feedback method, tool setting or source comparison may address the particular limitation. Narrow or stop the proposed use when its requirements cannot be met.
 
-Report the design or the supported finding and its limits. Include the following details as applicable.
+Report the design or the supported finding and its limits. If the question is what the performer did, an adequate performance record can finish it. When the question is what a source changed, identify the particular effect and what bears on that attribution. Evidence about several sources used together may establish their joint effect while leaving the individual effects open. Include the following details as applicable.
 
 ```text
 receiving Agent, use, and representative Work:
@@ -168,7 +168,8 @@ receiving Method and performing whole:
 support and context variation:
 observed work or proposed trial, relevant change or delay, and limits:
 receiving Method or candidate variant — preserved, changed, added, absent or unknown relations:
-source contribution — supported | not supported | undecided | not needed:
+effect in question, when attribution is requested — named source, instruction or combination, what it may have changed for which receiver, and under what conditions:
+finding about that effect — what the grounds establish, rule out or leave open:
 next step, if requested — retain arrangement, proposed or chosen change, narrower use, or stop:
 grounds for reconsidering a decision, when relevant:
 ```
@@ -210,7 +211,7 @@ pair again performs Work that enacts the Method without reteaching under the cha
 
 The record supports timing, weight transfer and partner dialogue in the observed dances up to the pause in the `Q`–`S` dance. The receiving variant permits a different visible phrase. Seven days later `P` and `Q` retained the coordination they demonstrated together with changed music. Only `Q` with `S` encountered the interrupted connection, and their recovery failed on that attempt. Recovery by `P`, and by `P` and `Q` together, remains open. Since recovery is required for admission to the proposed practice, the teacher withholds that admission. The earlier results can support a narrower, separately authorized practice limited to the coordination already demonstrated.
 
-The trials also leave use with novice partners, a wider tempo range and unsupervised parties open. The class used the named sources and instruction. A claim about their contribution to learning would require grounds that distinguish it from the dancers’ previous ability and other practice.
+The trials also leave use with novice partners, a wider tempo range and unsupervised parties open. The class used the named sources and instruction. The observations establish the pair's later coordination. They are compatible with earlier skill and with learning during the class or in other practice. They leave open whether the demonstration or the exercises, separately or together, changed this coordination. The teacher can make the stated admission decision on the demonstrated performance.
 
 The teacher chooses an exercise in stopping, sensing the partner again and rebuilding the invitation before restarting. A trial with two changed partners can show whether `Q` recovers under those conditions. For admission of the original pair, use evidence bearing on their recovery together. A later improvement can support a new admission decision even when the exercise’s contribution is still uncertain. Retain the observations from the earlier dances for the conditions they covered.
 
@@ -229,7 +230,7 @@ Use the performer’s set for a claim about live coding and the organizers’ wo
 
 A team copies code, weights, movement data or a control policy to another robot or AI system. A verified copy can establish which values reached the destination. Installation or activation requires evidence from the configured system when either matters. Identify the configured performer and its work to establish what it can do with those inputs.
 
-When the configured system acts as the receiver, examine evidence of its representative work. If an open question warrants a feasible test, adapt one suited to the direct learning method, such as removing a demonstrator, using a held-out task or changing the demonstration. Bhoopchand and colleagues used such comparisons in GoalCycle3D to distinguish following, recall within an episode, generalization and use of information specific to a demonstrator. A music or dance application needs a task and measure suited to its own work.
+When the configured system acts as the receiver, examine evidence of its representative work. If a test is warranted, select it for the claim. For a programmed sequence, the relevant question may be whether the device plays the specified part when cued. When investigating learning from a demonstrator, useful contrasts may include changing or removing the demonstration or using a held-out task. Bhoopchand and colleagues used such comparisons in GoalCycle3D to distinguish following, recall within an episode, generalization and use of information specific to a demonstrator. A music or dance application needs a task and measure suited to its own work.
 
 When a technical system contributes under another agent’s control, examine how it is connected and how they interact. Establish whether it is part of the performing whole or supplies it from outside. A constituent can also perform work of its own.
 
@@ -277,7 +278,7 @@ Match the conclusion to its grounds. Attendance or a delivery receipt can show p
 | Failure | Repair |
 | --- | --- |
 | “The lesson was delivered, so the Method was transmitted.” | Establish from available evidence what the teacher provided and what the receiver did. If transmission from that lesson is the claim, examine what supports its contribution to the receiving performance. |
-| “The learner copied the example, so transfer succeeded.” | Examine work under the changed partner, material, cue, tempo, instrument, task or context required by the use. If further evidence is warranted, use a feasible test or identify the limit on the transfer claim. |
+| “The learner copied the example, so transfer succeeded.” | For a transfer claim, establish what the performer could already do and follow the relevant part of that work under the changed partner, material, cue, tempo, instrument, task or context required by the use. If further evidence is warranted, use a feasible test or identify the limit on the transfer claim. |
 | “The receiver needed support, so transmission failed.” | Establish which support the intended use permits and which support the receiver used. Keep the help permitted in the intended use. If a comparison with less help is needed to assess independence or the contribution of the help, qualify that comparison separately. |
 | “The receiving version differs, so it is wrong.” | Compare the performances under the applicable rule. If the original way permits both, describe the difference in performance and any relevant change in setting or material. Identify a variant when the repeatable way differs, with what is known about its origin and use. |
 | “The result appeared after teaching, so teaching caused it.” | Report what is known about source use and receiving performance. A source-specific comparison can establish more when cause is the question. |

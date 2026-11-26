@@ -33,7 +33,7 @@ Infrastructure descriptions solve only part of the problem. A declared database 
 
 Name the task, the software/configuration it exercises, its relevant dependencies, and the observations that will establish readiness for that use. Distinguish a local editing environment, a build worker, an integration test environment and a deployment target when their requirements differ.
 
-Recover the current working conditions from a representative attempt. Identify the runtime and toolchain, resolved packages or images, network/service dependencies, resource needs, test data and access references. Separate relevant constraints from incidental machine history. Return any unresolved condition that could change what the test establishes.
+Recover the conditions needed for the claim from the applicable configuration, operating requirements and available records. Examine an actual attempt when behavior in use is at issue or a material dependency is still unknown. Identify the runtime and toolchain, resolved packages or images, network/service dependencies, resource needs, test data and access references. Separate relevant constraints from incidental machine history. Return any unresolved condition that could change what the test establishes.
 
 Choose an equivalence criterion appropriate to the use. A behavior test may require the same database semantics and fixture content without requiring the same machine identifier. A timing claim may require additional resource and load conditions. An environment suitable for the first task is not automatically suitable for the second.
 
@@ -47,7 +47,7 @@ Decide which information may be discarded, which must be retained, and what a re
 
 #### SYSE.33:4.3 - Choose a creation and change mechanism
 
-Compare a controlled push procedure with a pull-and-reconcile arrangement for the actual resources and operating conditions. A push procedure can be adequate for a bounded short-lived test environment. Continuous reconciliation may help where drift and continuing desired state are material. Neither choice removes the need to observe the resulting environment.
+When selecting a provisioning mechanism, compare the available arrangements under the actual resource and operating conditions. A push procedure can be adequate for a bounded short-lived test environment. Continuous reconciliation may help where drift and continuing desired state are material. Neither choice removes the need to observe the resulting environment.
 
 The [OpenGitOps v1.0.0 principles](https://opengitops.dev/) call for versioned declarative desired state, automatic retrieval and continuing attempts to reconcile observed state. Use it where those conditions fit. Do not infer successful convergence from a committed declaration or an agent's presence.
 
@@ -128,7 +128,7 @@ A familiar workstation can become an accidental standard, while a production-lik
 | Misuse | Repair |
 | --- | --- |
 | Clone the one working machine indefinitely. | Recover required conditions and exercise a clean construction. |
-| Declare the environment in Git and report it ready. | Observe actual state and run the named task. |
+| Declare the environment in Git and report it ready. | Establish the required state and its use from applicable evidence. Run the named task when its performance was ordered or its result is needed to settle readiness. |
 | Treat infrastructure recreation as data restoration. | Obtain and exercise the separate information-recovery procedure. |
 | Retry all creation after timeout. | Recover partial effects and repeat only qualified operations. |
 

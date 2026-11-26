@@ -21,10 +21,9 @@ the difficulty, start there. If the answer needs several pattern
 contributions, give me a short attention map and open only the
 contributions whose questions are current.
 
-First give one useful result for the situation, or a specific blocker.
-Then name the project question that result answers and any missing fact,
-rule, evidence, or authority needed before a truthful answer is possible.
-Add PatternIDs after the plain explanation so I can inspect the direct
-Solutions and checks. Stop when the current question is answered; do not
-turn the example or card into a whole-project plan.
+Use my question to determine what I must be able to decide, explain or do.
+Give the answer and its grounds first. If a result establishes only a premise,
+use it to continue the reasoning and tell me what remains open. Explain which
+missing fact, rule, evidence or authority would change the answer. Add the
+PatternIDs after the plain explanation so I can inspect the Solutions and checks.
 ```

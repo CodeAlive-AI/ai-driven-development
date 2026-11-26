@@ -13,7 +13,7 @@ Use this pattern when a team must say something practical about the health, matu
 
 **What this buys.** The practitioner can state and interpret a bounded health claim, compare compatible readings and identify what additional measurement or correspondence a proposed use needs.
 
-**First useful move.** Name the discipline and practical question, choose one relevant Characteristic, state its scope and comparison basis, and say in ordinary language what the current material supports and what it does not. Stop there when the receiving use needs no measured comparison, aggregate, reusable series, or publication.
+**First useful move.** Start with the question about the field and what the recipient will do with the answer. Which difference in practice would change that answer or its explanation? Choose a Characteristic that can reveal it, the population or corpus it concerns and the relevant period. If the recipient needs several conditions to hold together, establish which must hold for the same units or at the same time. Report the supported answer. A single reading or a bound can finish the work when it decides the question.
 
 **Not this pattern when.** Use C.20 to decide whether the candidate is a discipline, C.16 to construct a measurement, A.19 for comparison or aggregation work, F.9 only when the use relates distinct local senses, E.24.PUB for audience availability, G.12 for a reusable dashboard view, and G.4 for a selected formal acceptance interface. C.21 supplies none of those results merely by naming a health Characteristic.
 
@@ -171,10 +171,10 @@ That directed relation is one counted member of the declared AlignmentDensity ce
 
 ### C.21:7 - Making a health claim
 
-1. State the ordinary health question and smallest useful conclusion.
-2. Identify the discipline under C.20 and one exact Characteristic and Scale.
-3. State ClaimScope, comparison or observation basis, and time or population basis.
-4. Stop if an ordinary typed claim is enough.
+1. State the question about the field and what result the recipient needs.
+2. Identify the discipline under C.20. Select the Characteristics and Scales that distinguish the answers that matter for this use.
+3. State the ClaimScope, observation or comparison basis and period for each reading. If several conditions must hold for the same cases, identify the relation among the observations or a bound sufficient for that conclusion. Counts over separate groups can be accurate while leaving their overlap open.
+4. Give the resulting health claim with its grounds. Stop when it answers the question.
 5. If measuring, recover the C.16 chain and DHC replay basis. If comparing or aggregating, retain the compatible inputs and legal operation, adding the measurement, crossing or formal-interface conditions used.
 6. If repeated windows matter, construct a series episteme from exact result refs.
 7. Use G.12 when the needed dashboard represents measured DHC coordinate results.
@@ -188,7 +188,7 @@ C.21 counters dashboard, standard-status, popularity, and pseudo-precision bias.
 
 | Check | Passing condition |
 | --- | --- |
-| `CC-C.21-1` | The discipline, intended use, one exact Characteristic, Scale, ClaimScope, comparison or observation basis, and time stance are recoverable. |
+| `CC-C.21-1` | The discipline, intended use, ClaimScope, observation or comparison basis, and time stance are recoverable. Each Characteristic needed for the conclusion has a defined Scale. A joint conclusion has grounds that connect the readings for the units and period it concerns. |
 | `CC-C.21-2` | `ClaimScope` is authoritative. A `TargetSliceRef` appears only when consumed and its exact relation to the scope is stated. |
 | `CC-C.21-3` | A minimal readable claim may stop without a definition set, EvidenceGraph, registry, dashboard, or publication apparatus. |
 | `CC-C.21-4` | Every persisted, compared, aggregated, or published coordinate carries the active DHC replay basis; no generic “metric edition” substitutes for an exact object. |
@@ -249,7 +249,8 @@ Minimal DHC claim
   Discipline: <exact discipline>
   Intended use: <question or action>
   ClaimScope: <where the claim holds>
-  Characteristic and Scale: <exact definitions>
+  Characteristic(s) and Scale(s): <definitions needed for this question>
+  For a joint claim: <what connects the observations for the relevant units and period, or a sufficient bound>
   Comparison or observation basis: <population/corpus/cohort/window>
   Ordinary result: <what is supported; what is not>
 

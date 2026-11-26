@@ -10,7 +10,7 @@ Use this pattern when developing a problem changes the way worth trying, and try
 
 The subject is the coupled development of problems and obtaining ways. Keep the sought result, conditions and available operations recoverable while changing them. The first useful result is an examined attempt that supports a receiving use or identifies the next worthwhile question and the operation it needs.
 
-**First useful move.** Take one result, failed step or changed condition. Say which part of the problem it affects. Then try a small case of the resulting question with an available operation. If a conflict prevents a two-session assignment, its structure can support a question about the least number of sessions; the original two-session requirement remains visible.
+**First useful move.** Take one result, failed step or changed condition. Say which part of the problem it affects. Work out what the retained conditions already imply. Try a revealing case when its outcome could change the answer or the attempt itself is commissioned. If a conflict prevents a two-session assignment, its structure can support a question about the least number of sessions; the original two-session requirement remains visible.
 
 This Method is for practitioners who can perform, obtain or construct the relevant subject operations. It connects those operations across problem changes. Use an adequate existing answer directly. C.40's ordinary variation is sufficient when only the material needs changing under an unchanged question.
 
@@ -32,7 +32,7 @@ Problems and ways therefore need returns in both directions. The problem determi
 
 ### C.40.CD:4 - Solution
 
-Recover the problem and an available way, construct a consequential change, perform a revealing target use, and let its result determine the next question or use. Keep the original receiving need connected to any replacement or subsidiary question.
+Recover the problem and an available way, construct a consequential change, establish what the new conditions imply, and use that result to choose the next question or use. Try a target case when its response can resolve the remaining question or the trial is itself owed. Keep the original receiving need connected to any replacement or subsidiary question.
 
 #### C.40.CD:4.1 - Recover what is being sought and what can already be done
 
@@ -56,11 +56,11 @@ If the opening is an incompatibility, B.5.QD.CF examines the premise that makes 
 
 Check the formulation before investing in solving it. Its objects and operations must have meanings, its conditions must be interpretable together, and the proposed answer must be assessable. A question asking whether a configuration is possible can legitimately return an impossibility result. When a task generator promises a solvable challenge, support that promise with a feasible case. Otherwise keep feasibility open.
 
-Select a revealing attainable case. Its result may expose a counterexample, a useful intermediate construction or a missing operation. Leave difficulty relative to the available means and method where it has not been established more generally.
+Where a further attempt can settle an open distinction, select a revealing attainable case. Its result may expose a counterexample, a useful intermediate construction or a missing operation. Leave difficulty relative to the available means and method where it has not been established more generally.
 
 #### C.40.CD:4.3 - Construct the way for the changed problem
 
-Try a sufficient existing operation first. Where the receiving problem breaks the old construction, locate the failed contribution: input meaning, intermediate result, operation, output condition or applicability premise.
+Use an existing result or derive what the receiving conditions already establish. Apply an operation when its result is still needed. Where the receiving problem breaks the old construction, locate the failed contribution: input meaning, intermediate result, operation, output condition or applicability premise.
 
 Retain the usable contributions. Transform the input, replace a constituent or compose available operations so that each result supplies what the next step needs. C.39.RO develops that reusable operation and its support. A new physical or professional operation still needs the Method that constructs or performs it.
 

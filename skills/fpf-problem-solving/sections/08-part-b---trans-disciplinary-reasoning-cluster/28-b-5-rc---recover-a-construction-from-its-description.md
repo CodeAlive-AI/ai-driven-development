@@ -10,7 +10,7 @@ Use this pattern when a description points to a result you need, but you cannot 
 
 Here, a **construction** is a way of obtaining an object by applying operations to given objects. In a mathematical construction, those operations form mathematical objects. In an assembly method, they may produce a design or a physical assembly; identify which result the description promises. The relevant practice supplies the operations and their application conditions.
 
-**First useful move:** name the result needed for the next use, then find the operation that could produce it and what that operation requires. Follow those requirements back to available starting material. Work a small instance forward to recover the missing connection.
+**First useful move.** Name the result needed for the next use. Find an operation that could produce it and follow its prerequisites back to available starting material. Work forward on the actual inputs or on a smaller case that preserves the missing connection.
 
 This method needs access to the description and enough subject knowledge to interpret its objects and rules. Use an adequate known construction. If the task is to invent a method where no usable account is available, use C.39 for that development; a missing operation discovered here can become its input.
 
@@ -40,9 +40,9 @@ Recover the construction in two connected directions: from the required result t
 
 Say what the next user needs to obtain and what they will do with it. Recover the conditions that distinguish a usable result: for example, a triangle on a supplied side, a display design that uses the supplied fittings, or data in the format required by a calculation.
 
-Identify the starting objects and information available. Distinguish an object supplied by the task from one the construction must produce. If a property alone answers the question, keep that smaller task. When an instance is needed, locate the operation that could obtain one.
+Identify what the task supplies and what it leaves you to construct. For an exact reproduction, recover which objects, operations or resulting features must be the same. When an equivalent result is allowed, work back from the property its recipient needs. For a display stand, two panels that fit the same upright may put different loads on its base. Follow that difference as far as it affects the requested design. If proving existence settles the question, the proof can finish the work. If a particular object is due, locate the operation that can produce it.
 
-Choose a small case that retains the troublesome dependency. A case that omits the unfamiliar operation cannot resolve how that operation works.
+Use the actual input when it exposes the missing operation. A smaller case is useful when it retains the troublesome dependency and makes the operation easier to recover.
 
 #### B.5.RC:4.2 - Recover the operations
 
@@ -70,7 +70,7 @@ If tracing returns to a result that it requires, examine the source. It may desc
 
 A missing operation gives a focused question: “How is this intermediate object obtained under these conditions?” Return to the relevant source passage or specialist with that question. When you propose an operation yourself, treat it as a contribution to the construction and establish the conditions for using it.
 
-#### B.5.RC:4.4 - Work the small case forward
+#### B.5.RC:4.4 - Carry the construction forward from its inputs
 
 Begin with the available inputs. Apply an operation when its prerequisites and conditions hold, retaining the output needed by later operations. At an unfamiliar transition, write, draw or perform enough of it to see what changes.
 
@@ -87,6 +87,7 @@ Recover why the constructed object has the property the next use requires. An au
 The stopping point can be:
 
 - the required object and a sufficient account of the property being used;
+- an answer about existence or impossibility, with the grounds that establish it, when that was the question;
 - a conditional construction whose unresolved condition matters to the next decision;
 - an identified missing input or operation, with enough context to obtain it.
 
@@ -106,21 +107,17 @@ For a small case, place A at (0,0) and B at (2,0). The circles have equations x�
 
 The property follows from how C was obtained: AC and BC are radii of circles of radius AB, so AC=BC=AB. The coordinate calculation also supplies the intersection in the Euclidean-plane account used for this case. A description formulated under a different set of construction rules must obtain that intersection under those rules.
 
-The recovered dependency is reusable for another positive side length. The value of the coordinates changes, while the two equal-radius circles and the common-point construction retain their roles. If A and B coincide, the initial requirement of a nondegenerate triangle fails; that case needs distinct endpoints before this construction can begin.
+To see why the same two-circle construction works for any two distinct endpoints in the Euclidean plane, use their midpoint as origin and AB as the horizontal axis. For a side of length d, the circle equations give a horizontal coordinate of zero and a vertical coordinate of either √3 d/2 or −√3 d/2. Both points are at distance d from each endpoint. Either point answers an order for one triangle. An order for every possible third vertex needs both, and the circle equations give only those two. Coincident endpoints cannot be the side of a nondegenerate triangle.
 
 The Euclidean account supplies the circle and segment operations and their justification.
 
 #### B.5.RC:5.2 - Recovering a display-stand assembly design
 
-A specification asks for a portable display. It supplies a base, an upright and a panel, together with these rules: the upright can be joined to the base when their fittings match; the panel can be attached to the mounted upright when their fittings match.
+A team receives a drawing of a display stand and a base, upright and panel. The organizer wants a stand made to the drawing and asks whether its complete packed kit meets a 10 kg carrying limit. The drawing shows how to join the upright to the base and attach the panel to the mounted upright. Each operation requires matching fittings.
 
-Working backward from an assembled display yields a mounted upright and a compatible panel. Recovering the mounted upright yields the base, upright and their fitting condition. Working forward gives the assembly order: join base and upright, then attach the panel.
+Work back from the mounted panel. It requires a compatible panel and an upright already connected to the base. Work forward on the supplied parts. The base and upright fit, but the supplied panel has a different fitting. That prevents assembly with this set. If the drawing specifies a particular panel, obtain the matching specified part. If the organizer permits alternatives, a compatible panel or an adapter may also be considered. An adapter adds a part and a joint. Check each changed connection and any load requirement it affects under the proposed arrangement.
 
-Inspection of the supplied parts reveals that the panel fitting differs from the upright fitting. The method has localized the obstruction. Available continuations include obtaining a compatible panel, developing an adapter with usable connection rules, or choosing another assembly design. “Assemble the display” alone does not select among them.
-
-Suppose a compatible panel is supplied. The recovered design connects the three components in the required order. Portability is assessed against the carrying requirement, and stability against the loading and support conditions. Those engineering questions can change the design, but they are distinct from the recovered answer about how its parts connect.
-
-The first result is the assembly design or the fitting mismatch that prevents it. Physically assembling and testing the stand are subsequent work selected by the intended use.
+Suppose the specified panel arrives and its fittings match. The team can now give the assembly sequence. For the carrying decision, identify everything that must travel together. Suppose the verified upper bounds for the base, upright, replacement panel, fittings and case sum to 9.5 kg and cover the complete kit. This establishes the mass requirement before packing, even if the exact packed mass is unknown. A request confined to how the parts connect can end with the sequence. Delivery of an assembled stand still requires someone to assemble and deliver it.
 
 ### B.5.RC:6 - Bias-Annotation
 
@@ -132,7 +129,7 @@ Examples can also narrow the apparent method. The circles in :5.1 and fittings i
 
 For the construction being recovered:
 
-1. The needed result and its next use are clear enough to select a useful small case.
+1. The requested object, property or reproduction determines what may vary and whether to work directly on the original or through a smaller case.
 2. Starting objects are distinguished from the intermediate objects to be produced.
 3. Each operation needed by the case has recoverable inputs, application conditions and output.
 4. Joint prerequisites, shared objects and alternative constructions retain their different effects.

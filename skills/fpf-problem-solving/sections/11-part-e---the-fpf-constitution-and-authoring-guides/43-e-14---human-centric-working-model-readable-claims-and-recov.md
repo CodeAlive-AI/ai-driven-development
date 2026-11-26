@@ -10,7 +10,7 @@ Use this pattern when FPF text needs to stay readable as one human working model
 
 **What this buys.** A working reader sees one small model first, while assurance readers can still recover mapping, logical, constructive, and empirical grounding without forcing that machinery back into the Working-Model vocabulary.
 
-**Ordinary route.** Write the shortest practitioner sentence that says what the claim is about, what it claims, and what use it supports. If no assurance-bearing reliance question is current, let the reader stop there.
+**Ordinary route.** Name the claim, its subject and what the recipient came to learn, decide or do. A short statement can close a request to identify the claim. An explanation may also need the relation that makes it follow. Someone designing a way to choose needs grounds they can use when the choices change. Supply what the commissioned work requires and add the assurance route when warranted.
 
 When an assurance-bearing reliance question is current, place only the needed Mapping, Logical, Constructive, or Empirical support underneath that sentence and cite the pattern that defines or tests each supporting claim.
 
@@ -78,7 +78,7 @@ Publish one human-facing Working-Model with its assurance available underneath.
 #### E.14:4.1 - Human-Centric principles
 
 ##### E.14:4.1.1 - Recognition text and assurance text
-Keep the same EntityOfConcern in the recognition and assurance text. The working reader should not meet one object in the recognition text and a different ontological kind in the assurance text.
+Keep the target assertion, its EntityOfConcern and its scope recoverable in both recognition and assurance. A supporting premise may concern a part, another kind of subject or another model. Show which relation lets the reader use that premise for the original assertion and under which conditions it holds.
 
 If the pattern distinguishes an EntityOfConcern, the interpretive or operational move applied to that object, and the wider review or work process around it, the text should distinguish them explicitly instead of changing nouns as though the object, move and work were interchangeable.
 
@@ -94,7 +94,7 @@ The **assurance text** is the heavier text that carries declaration, object disc
 
 The assurance text may justify, tighten, or audit the working text, but it must not silently replace or strengthen the recognition-text claim.
 
-Keep the target assertion, its subject and its scope visible through both blocks. Supporting premises may concern other subjects. For Pump-37, calibration of the instrument and the measurement Work can support the vibration reading at 09:00. That reading completes an order for the measurement. A service decision also needs the applicable criterion and operating conditions. A conclusion about a fleet needs grounds covering the relevant pumps.
+Keep the target assertion, its subject and its scope visible through both blocks. Supporting premises may concern other subjects. For Pump-37, calibration of the instrument and the measurement Work can support the vibration reading at 09:00. That reading answers a request for the vibration value at 09:00. To report that a fresh measurement was taken, or that this station performed it, establish the corresponding performance. A service decision also needs the applicable criterion and operating conditions. A conclusion about a fleet needs grounds covering the relevant pumps.
 Where episteme-publication-heavy or transform-heavy patterns need a compact ontological account, the assurance text should expose three things explicitly:
 - the ontic target or EntityOfConcern;
 - the modeling substrate or mathematical lens when one is load-bearing;
@@ -110,7 +110,7 @@ Add F.6 when precise assignment-bound attribution is consumed, keeping the assig
 
 An ordinary result may omit identifiers it does not consume while keeping all facts needed for its use recoverable.
 > **E.14-P.1 – Working-Model first, assurance when current.**
-> Operate one **Working-Model** for all human-facing discussion and state the direct claim first. If neither the publication nor a named current requirement calls for assurance, the author may stop there.
+> State the direct claim in one **Working-Model** for human-facing discussion. The reader can stop when that claim and its ordinary explanation answer the commissioned question. Supply additional grounds when the reader needs them to understand, choose or act. Add the formal assurance called for by the publication or current requirement.
 >
 > When assurance is current, declare only the posture and forms of support required by the applicable pattern: **Mapping** to align a term with the chosen model value it names; **Logical** to state label meaning, scope, constraints, and limits; **Constructive** to make independently grounded construction facts inspectable; or **Empirical Validation** to support a bounded reliance on a domain result.
 >
@@ -149,8 +149,8 @@ An ordinary result may omit identifiers it does not consume while keeping all fa
 >
 > Use A.10 when the source-to-use relationship must be made explicit or replayable, retaining already sufficient direct support; use F.6 for consumed assignment-bound attribution and B.3 for a current assurance claim. Each remains governed by its own conditions.
 
-> **E.14‑P.8 – Working-model-first is not explanation-thin.**
-> Human-facing parsimony does **not** license under-explained pattern prose. When a pattern claims a Working‑Model benefit, it **SHALL** still provide enough problem framing, rationale, and worked slices that readers can tell what the model clarifies, what remains on the assurance shoulders, and when a heavier review path is required.
+> **E.14‑P.8 – Explain what the working model lets the reader decide.**
+> When a pattern claims a Working‑Model benefit, it **SHALL** state the problem and give the grounds the reader needs to recognize it, use the model’s distinctions and know when the decision also needs assurance. A direct account, a comparison or a worked case can supply those grounds under E.7. Preserve the part of the explanation on which the reader’s judgement depends.
 
 ### E.14:5 - Layer Standard & Downward Flow (Working‑Model → Assurance)
 
@@ -239,7 +239,7 @@ Under B.3/B.3.3, Empirical Validation contributes what its result establishes fo
 
 #### E.14:5.6 - Purpose-selected support for a single Working-Model statement
 
-Start with the direct Working-Model arrow **A –Component-of→ B**. If no assurance-bearing reliance question is current, the author may stop there. If a profile or named current requirement is active, add only the support it calls for:
+Start with the direct Working-Model arrow **A –Component-of→ B**. It can settle which whole a specified part belongs to. To explain how an arrangement works, connect that membership to the relationships on which the result depends. When a profile or current requirement calls for assurance, add its prescribed support:
 
 1. **Mapping**, when source-word alignment matters, shows that *A* and *B* are the chosen labels for their model values and records background labels without making them Working-Model names.
 2. **Logical**, when the relation reading needs assurance, states what **Component-of** means here and the boundaries of that use.
@@ -286,7 +286,7 @@ The selected support stays below the readable claim. It makes the needed basis i
 
 The measurement domain declares `PumpVibrationMeasurementAssignment` as the assignment species for this work. `RA-ConditionMonitoring-7-E4` is its occurrence, is held by `ConditionMonitoringSystem-7`, and covers the measurement interval.
 
-That System performed the admitted Work `Pump37VibrationMeasurement-2026-07-31T0900` under the assignment, and the Work enacted `PumpVibrationMeasurementMethod-E2`. Check the Work and enacted Method with A.15.1, and the Work-assignment attribution with F.6.
+During this run, the station checked its calibration, acquired the sensor indication and applied the specified coefficients. Its time-stamped acquisition and processing records connect those actions to `ConditionMonitoringSystem-7`, the pump and the interval. They support attributing `Pump37VibrationMeasurement-2026-07-31T0900` and its enactment of `PumpVibrationMeasurementMethod-E2` to the station under A.13 and A.15.1. For the claim that it performed this Work under the stated assignment, check F.6. A display that relayed the same value could answer the reader’s question about the reading while leaving the performer of the measurement unknown.
 
 The applicable A.6.1 bindings identify `Pump-37`, the sensor indication, calibration coefficients, and returned measurement value. Classification of the System under `PumpVibrationMeasurementSystemRole` is a separate claim.
 
@@ -332,8 +332,8 @@ The **Working-Model layer remains the canonical publication face** for authors a
 | **CC-E14-10 (Structural grounding handshake).** | When a publication elects `B.3.5` for a structural parthood or collection-belonging assertion, the author **SHALL** keep the readable claim first, declare `validationMode=axiomatic`, and link through `tv:groundedBy` to exactly one current C.2.1 construction-trace episteme in the applicable C.13 form: `sum` or `slice` for structural parthood, or `set` for collection belonging. Another named current assurance requirement governs its own obligations. Outside those conditions, a direct structural claim has no E.14 mode, link, or trace obligation. In every case, the direct relation pattern and the candidate's identity or reidentification rule decide occurrence and continuity; a trace and mode create neither. | Makes selected construction assurance inspectable while keeping ordinary use, ontology, identity, and currentness separate. |
 | **CC‑E14‑11 (Postulate and empirical-result bindings).** | Authors **SHALL** retain the elected profile's actual support obligations. A permitted B.3.5 `postulate` states scope, links an admissible evidence object and gives empirical challenge cues. Reliance on an evaluation or measurement result **SHALL** preserve its necessary subject, result, scope, interpretation and source grounds. Where consumed, dated Work has its A.13 performer basis and independent A.15.1 admission, enacted Method and applicable bindings; F.6 supplies assignment-bound attribution. MethodDescription, classification, result-episteme identity and temporal qualification are retained when required by the claim or profile. Use A.10 when the source-to-use account needs explicit recovery or replay and B.3 for a current assurance claim. | Keeps empirical support and selected obligations recoverable without creating unused identities or a universal provenance route. |
 | **CC-E14-12 (F-declaration).**             | Normative Working-Model epistemes **SHALL** make the expression conditions needed for their intended use recoverable under C.2.3. Use stable terms and explicit conditions where ambiguity would change that use; a separate profile or local score is needed only when a receiving comparison or check consumes it. Readability remains a separate Working-Model duty. Any composite-F cap applies to the assessed expression and its essential content or inference under C.2.3, not automatically to external evidence. An assurance use consumes F only when its own argument needs it. | Makes required expression properties recoverable without a universal formality rank. |
-| **CC‑E14‑13 (Light records, not thin prose).** | Authors **SHALL NOT** use the Working‑Model-first stance as a reason to strip problem framing, rationale, or worked slices out of the pattern text. Ordinary use may stay light, but readers **MUST** still be able to understand the pattern without nearby project notes. | Keeps human-facing economy from collapsing into under-explained prose. |
-| **CC‑E14‑14 (Recognition text before assurance text).** | When a pattern claims a Working‑Model or other human-facing benefit, authors **SHALL** keep recognition-first working text distinct from the heavier assurance text. The assurance text **MAY** refine and justify the working text, but it **SHALL NOT** silently change the recognition-text claim. If the pattern claims broad or transdisciplinary reach, the working text **SHOULD** show heterogeneous situations early, preferably through an `F.16`-style example matrix or an equally explicit alternative. | Keeps Working‑Model-first drafting from collapsing into either thin prose or late-only universality. |
+| **CC‑E14‑13 (Self-contained working explanation).** | Readers **MUST** be able to understand the problem, use the working model and find the grounds it supplies without access to nearby project notes. Keep a detail, argument or worked passage when its removal would cost the reader that ability. | Keeps the working explanation usable on its own. |
+| **CC‑E14‑14 (Recognition text before assurance text).** | When a pattern claims a Working‑Model or other human-facing benefit, authors **SHALL** give the reader the working account and identify what further assurance can justify. The assurance account **SHALL** preserve the meaning of the working claim. For a claimed use across disciplines, the working account **SHOULD** show early how the common relation applies in the relevant disciplines and where the correspondence holds. An `F.16` comparison or a direct account of those interpretations can serve this purpose. | Makes the claimed reach and the grounds needed for reliance intelligible to the reader. |
 
 
 
@@ -342,7 +342,7 @@ The **Working-Model layer remains the canonical publication face** for authors a
 1. **Exact skid assembly -> “Component Of”**
    For PumpSkid 7, recover the pump, frame, reservoir, valve set, and other constituents; the direct fastening, coupling, enclosure, terminal, flange, and seal occurrences that obtain; the applicable skid assembly rule; and the skid reidentification rule.
 
-   The team may publish each truthful **Component Of** claim and stop there. If the publication elects `B.3.5`, keep that readable claim first, link it to one current C.2.1 `sum` trace that reports the basis, and declare `validationMode=axiomatic`.
+   A commission to state these **Component Of** relations can end with the established memberships. A commission to explain the identity of the assembled skid also needs the relation and reidentification conditions below. If the publication elects `B.3.5`, keep the readable claim first, link it to one current C.2.1 `sum` trace that reports the basis, and declare `validationMode=axiomatic`.
 
    The same parts unconnected or assembled differently do not thereby form PumpSkid 7. A permitted pump replacement may preserve PumpSkid 7. The direct relations and reidentification rule decide; the trace and posture do not.
 
@@ -395,7 +395,7 @@ The **Working-Model layer remains the canonical publication face** for authors a
 | Assurance leakage upward | Mapping, proof, or empirical records rename the public working vocabulary. | Preserve downward grounding: Working-Model terms are not back-defined by assurance publications. |
 | Slash-label compromise | Several source labels are displayed because no model value was chosen. | Use Mapping to record source labels and show one chosen Working-Model label. |
 | Structure-time collapse | Sequence, phase labels, or temporal coverage are treated as sufficient grounds for parthood. | Recover the Work-part or proper-phase relation under A.15.1 or A.14 respectively, and keep order and temporal claims separate. |
-| Forever-light prose | Human-facing prose becomes so small that the reader cannot recover the problem, payoff, or assurance boundary. | Keep recognition text concise but still include problem framing, rationale, and worked slices. |
+| Forever-light prose | The reader cannot tell which problem the working model resolves or what further evidence its use requires. | Restore what the reader needs to draw the conclusion and recognize its grounds. The statement of a reading in E.14:6.3 can carry this distinction directly. Use a worked case when it makes a necessary relation accessible. |
 
 ### E.14:10 - Consequences
 
@@ -437,7 +437,7 @@ Reconsider it when a reader cannot recover a consumed condition or a competing p
 **Builds on:**
 
 * **E.8 Authoring Conventions & Style Guide** — section order, style principles, and mandatory safety subsections used here.
-* **E.7 Archetypal Grounding** — the Tell‑Show‑Show rule applied in this pattern’s own Grounding section.
+* **E.7 Archetypal Grounding** — grounds a claim in the relation that warrants its use. In E.14:6.1 an installed configuration supports a claim about this skid. In E.14:6.2 the asserted knowledge relation determines which mapping, argument or observation the reader needs.
 * **C.2.3 Formality of an Episteme (F)** — governs assessment of expression properties and any local ordered summary. The assessment establishes neither readability nor assurance; a notation change preserves it when the relied-on properties and interpretation remain unchanged.
 
 **Coordinates with.**

@@ -5,7 +5,7 @@
 
 ### SYSE.51:1 - Problem frame
 
-**Use this when** you need to decide whether and how a person or technical agent should vary effort during an attempt. Repeated uninformative work, an exhausted completion budget or an underexamined question can reveal the need. The subject is a reusable rule for allocating further reasoning or tool work during an attempt. A person may check a carry, use a calculator or obtain a missing fact; a technical agent may also request another sample, deepen search or change model.
+**Use this when** you need to decide whether and how to vary the effort devoted to a task while it is in progress. Repeated uninformative work, an exhausted completion budget or an underexamined question can reveal the need. The subject is a reusable rule for allocating further reasoning or tool work during an attempt. A person may check a carry, use a calculator or obtain a missing fact; a technical agent may also request another sample, deepen search or change model.
 
 Return a usable allocation rule or the grounds for retaining a sufficient fixed allocation. For an adaptive rule, identify the observable decisions, resources needed for completion and what the performer can still return at a stop. Use whole-task evidence to judge the allocation. The rule guides the next move while enough resources remain to act. For software capacity and aggregate retry limits, use SYSE.40.
 

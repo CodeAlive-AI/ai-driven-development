@@ -83,7 +83,7 @@ Ask whether unresolved detail can still affect the requested claim or decision. 
 
 Choose refresh timing from the decision window, rate of relevant change, observation delay and cost of stale information. A live incident can require rapid updates. A stable resource decision may need an update only when demand, configuration, access or another relied-on condition changes.
 
-Remove recurring collection that has no current reporting, decision, assurance or recovery use, applying A.11.OP. Before stopping it, identify any real consumer that would lose a necessary result. Reuse a current observation only for the conditions and claims it still supports.
+When the assignment includes reviewing recurring collection, use A.11.OP to check whether a decision, reporting, assurance, recovery or another required use still depends on it. Return the finding to the commissioned recipient. End collection or notify another party when your assignment or a standing duty calls for that action and you have the authority it requires. Reuse a current observation only for the conditions and claims it still supports.
 
 Return the account with the supported claim and any uncertainty material to its use. Obtain another observation only when a receiving use still needs it. If a decision on admission, commitments, finance or control follows, use the account with the corresponding operating method.
 

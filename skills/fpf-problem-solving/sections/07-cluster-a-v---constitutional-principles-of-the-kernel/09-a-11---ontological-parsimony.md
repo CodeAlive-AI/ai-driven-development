@@ -51,7 +51,7 @@ A useful project word, slot-position label, publication form, diagram element, m
 
 ### A.11:2 - Solution
 
-Use four gates to establish the parsimony finding for the proposed ontology addition. Apply every gate to the same candidate, receiving claim or use, and facts. Find the best existing expression first; then state the material loss, overlap discriminator, newly admissible claim or action, and nearest excluded case for that same use. A positive finding continues the complete admission test under E.24/E.24.UK or the candidate's subject-kind governor; it is not that admission result or project-side permission.
+Begin with the best existing governed expression for the use at issue. If it preserves every distinction and supports every action that use requires, explain how the recipient can use it. That can settle whether the proposed addition is needed for this purpose. A positive parsimony finding requires all four tests below for the same candidate, use and facts. Identify the material loss, what discriminates the candidate from overlapping values, the claim or action it would make admissible and its nearest excluded case. Apply all four tests as well when a complete assessment is commissioned. For admission of a proposed addition, take the finding to E.24/E.24.UK or the subject-kind governor.
 
 | Gate | Test question | Pass condition |
 | --- | --- | --- |

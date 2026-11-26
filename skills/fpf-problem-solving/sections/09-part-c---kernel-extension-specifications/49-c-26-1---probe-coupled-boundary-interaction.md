@@ -95,7 +95,7 @@ The pattern emits one of these results:
 | Keep boundary, mark probe-coupled | The boundary remains, but the output is interpreted with its supported probe effect. |
 | Redesign probe/order/frame | Change the workshop, dashboard, API read, survey, metric or question order when that would supply the needed reading with less distortion. |
 | Redesign bridge/export | Preserve the state, timing and use conditions lost by the attempted export; state confidence or a return-to-source condition when the receiving use needs it. |
-| Split/merge/orchestrate differently | Boundary structure changes because the interaction changes the phenomenon. |
+| Reconsider the boundary arrangement | When a corrected reading changes the requirement or what is known about how the arrangements meet it, compare the affected arrangements under those conditions. Establish any change actually made from the work that put it into effect. |
 | Apply `F.9` | Only bridge and loss remain live. |
 | Apply `C.16` | The probe is a standard measurement with declared scale, method, evidence, and result. |
 | Apply `A.15` | The question concerns work enactment rather than probe-coupled reading. |
@@ -187,7 +187,7 @@ Use the direct relation pattern when the relation and participants are known, `A
 | API consistency check | A request warms the cache and changes later latency. Recover whether each timing was measured before or after warming; a later warm-cache result cannot by itself establish cold-cache performance. | If the interface and measured interval already settle that question, use the adequate API and measurement account directly. |
 | Survey order | Asking "who owns incidents?" before "which context owns payment failure?" changes the resulting context map and escalation plan. | If different answers merely reveal unresolved meanings, use `F.9` / `A.6.P` first. |
 | Event-storming workshop | The workshop produces a map and also changes team alignment, local vocabulary, and backlog priority. | If it only documents known differences, use ordinary DDD and bridge fields. |
-| Service split | Splitting Checkout and Payment changes recovery paths and support load, so the split is part of the phenomenon being evaluated. | If the split only reduces deployment coupling with no probe/export effect, use ordinary boundary and quality patterns. |
+| Service split | To learn how Checkout normally handles failures, the team separates Checkout and Payment during a trial. Its routing log then records recovery under the split. To apply that reading to the original service, establish which recovery paths the trial preserved or use evidence from the original arrangement. | A prediction of how a proposed split would affect support load can be assessed under the boundary and quality patterns. |
 | Incident metric | Publishing "cache failover is the primary risk" shifts attention, staffing, and reproduction work. | If the metric is only a report of already-carried evidence, use `A.10` for any source-recovery or bounded-reliance question, and `B.3` only for a named assurance claim. |
 
 The positive examples establish probe-coupled interaction readings. Use those results without QL wording when the ordinary subject patterns carry the case. Retain QL only when the additional C.26 activation test establishes one named contextual-model obstruction that survives those patterns and changes the admissible inference or action.
@@ -283,7 +283,7 @@ Apply these source contributions:
 ### C.26.1:12 - Relations
 
 - Builds on: `C.26`, `A.6`, `A.6.B`, `A.6.P`, `F.9`, `A.15`, `C.16`, `A.10`, `B.3`, `C.25`, `A.1.1`.
-- Coordinates with: `C.26.2` when coordinated work evidences a non-exportable distributed state; `C.26.3` when the boundary interaction changes a viability envelope.
+- Coordinates with: `C.26.2` when the interpreted output contributes evidence about how parts of a collective acted together; `C.26.3` when the boundary interaction changes a viability envelope.
 - The worked context-cut case in `C.26.1:4.3` connects a workshop's effect to the corrected interpretation of its output.
 
 ### C.26.1:End

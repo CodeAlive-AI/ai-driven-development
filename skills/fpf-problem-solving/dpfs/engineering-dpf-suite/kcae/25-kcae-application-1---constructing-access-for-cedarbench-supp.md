@@ -66,7 +66,7 @@ The support analyst receives the selected branch, its source conditions, the exa
 
 Give the customer the available offer and the purchase advice warranted by the post-acceptance rule. Give the operator the supported resend and scheduling results. If the buyer instead asks whether *any* time savings would justify the fee, estimate the workload the change can actually remove and compare its value with the fee. A warranted upper bound below the fee can settle that choice. The installation’s performance after a purchase would require evidence from actual operation.
 
-Deliver the selected manual section, table context and footnote through one pinned edition sequence. Detect truncated tool output and continue the required reading. Asking the main agent to forget candidate listings does not free its context window. If the selected runtime offers an isolated source reader, its bounded result and grounds can be used; otherwise the main reading budget must carry the needed material.
+If the operator needs the source grounds, deliver the selected manual section, table context and footnote from one pinned edition. Continue a truncated reading until the required material is available. For an order the qualified configuration service can answer, the receiving agent needs the permitted finding and enough grounds to use it. An authorized local custodian, an isolated source reader or an existing qualified record can supply such a finding within its scope. For a check entrusted to the receiving agent, give it the evidence and reading capacity that check requires. Asking it to forget earlier candidate lists does not free its context window.
 
 ### KCAE.Application:1.6 - A changed source and a failed view
 

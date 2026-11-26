@@ -54,11 +54,11 @@ The repair preserves ordinary readability without manufacturing a universal work
 
 Treat the boundary wording as a claim about one thing relative to another object. Recover the direct verb or reason-specific stop first. Keep claim subject, time, polarity and assertability independently recoverable when they can change the answer.
 
-The method handles one relation-bearing claim at a time. The trigger word stays in view only until the thing, related object, and safe direct verb or stop are recoverable. The result replaces the compressed phrase with the shortest ordinary sentence. If a neighboring claim is still needed, apply the pattern whose Solution answers that question.
+The method handles one relation-bearing claim at a time. The trigger word stays in view only until the participants of the claim and a direct verb or warranted limit can be recovered. The result replaces the compressed phrase with the shortest ordinary sentence. If a neighboring claim is still needed, apply the pattern whose Solution answers that question.
 
 #### A.6.P.WMR:4.0 - Thin recovery core and conditional interfaces
 
-The stable ordinary core is one `A.6.P`-isolated relation-bearing claim, one thing, one related object, one direct verb or reason-specific stop, exactly one of four truthful exit families, and one readable sentence. The fourth family explains why the attempted claim cannot be asserted: `factually unsupported`, `missing-information`, `missing-governor`, a governing rule's inapplicable result, or `missing-substrate`, as distinguished in section 4.3. `Missing-governor` names the affected use and absent definition, applicability, or occurrence rule; it names a future pattern or declaration need only when one is identifiable.
+The stable ordinary core is one `A.6.P`-isolated relation-bearing claim, the entity at issue, the participants required for that claim in their respective capacities, one direct verb or reason-specific stop, exactly one of four truthful exit families, and one readable sentence. The fourth family explains why the attempted claim cannot be asserted: `factually unsupported`, `missing-information`, `missing-governor`, a governing rule's inapplicable result, or `missing-substrate`, as distinguished in section 4.3. `Missing-governor` names the affected use and absent definition, applicability, or occurrence rule; it names a future pattern or declaration need only when one is identifiable.
 
 Claim subject, modality and temporal extent, polarity, and recovery or support state remain four independent assurance controls. Their values must be recoverable whenever they can change the answer, but a practitioner does not have to recite the four labels when an ordinary sentence already makes the only material reading clear. WMR supplies this recovery and stop. It does not absorb the algorithms, checklists, or ontics of rules applied to a separate question.
 
@@ -76,7 +76,7 @@ Claim subject, modality and temporal extent, polarity, and recovery or support s
 | Ask | Write |
 | --- | --- |
 | 1. What thing is this? | Name one referent under its admitted kind. `Input`, `Output`, `Result`, `Outcome`, `Deliverable`, and `Handoff` do not become kinds. |
-| 2. Relative to what object is it being named? | Name one method description, plan, dated Work, operation application, transformation, evaluation, delivery, transfer, receiving work, or another directly governed object. Split several current related objects into separate claims. |
+| 2. Relative to which participants is it being named? | Identify the Method, plan, dated Work, application, transformation, delivery or receiving use, and the participants required for the relation in question. A transfer may connect a sender, a particular item and its recipient in one event. Evidence that the sender dispatched the item somewhere and the recipient obtained a copy elsewhere leaves this transfer open. Split distinct claims while keeping the participants of each claim together. |
 | 3. What direct verb can be said now—or why not? | Write the shortest direct relation sentence, declaration-local binding, local claim, or reason-specific non-assertability result. A synonym, shared time, plan row, diagram edge, or nearby record is not the deciding relation. |
 | 4. Could a claim dimension change the answer? | Only then state the material claim subject, modality and extent, polarity, or recovery or support distinction. Keep them independent. |
 | 5. Does a named later use need the formal governor or assurance replay? | Name the PatternID locator for the defining or testing content, `RelationKind` and relation-declaration episteme, declaration-local predicate, or local-claim rule that makes the answer checkable. Add occurrence identity, evidence, publication, or assurance only when that later use needs it. |
@@ -139,6 +139,8 @@ A method-description field, planned filling, compatible type, stored reference, 
 #### A.6.P.WMR:4.4 - Ordinary sentence shapes
 
 These informative shapes help draft an answer once its meaning is known. Include only distinctions needed by the receiving use. Direct-relation wording is an ordinary reading of an admitted `RelationKind` under its defining rule; an assertion id does not replace that rule. Current and historical claims need facts for their participants and extent, but the compact sentence need not repeat the supporting account.
+
+In the following forms, expand `<related object>` into the participants and positions required by the predicate. One claim can relate several objects.
 
 ```text
 Reusable declaration:
@@ -400,7 +402,7 @@ Established availability lets the named audience obtain that content through tha
 | --- | --- |
 | `CC-A6PWMR-1` | A conforming practitioner **MUST** keep one relation-bearing claim as the `EntityOfConcern` and **MUST** treat trigger words only as recognition aids. |
 | `CC-A6PWMR-2` | A conforming practitioner **MUST** name the entity and admitted kind independently of its boundary-word role. |
-| `CC-A6PWMR-3` | A conforming practitioner **MUST** name the related object and **MUST** split several current related objects into separate claims. |
+| `CC-A6PWMR-3` | A conforming account **MUST** preserve the participants required by its predicate and how they are related in this case. Distinguish separately governed claims and establish any connection used to combine them. |
 | `CC-A6PWMR-4` | Before every positive direct relation, a conforming practitioner **MUST** establish two independent premises: (1) the `RelationKind` resolves through a direct rule or applicable relation-declaration episteme to participant meanings, obtaining condition, applicability, and defining source; and (2) a separate case fact says that the participants at the extent satisfy that condition. The practitioner **MUST** keep the obtaining fact distinct from its assertion and evidence; an object's identity or a record's presence alone is insufficient, while its content may support the claim under the applicable rule. A failed positive test within the rule's applicability returns `factually unsupported`; an unavailable deciding fact returns `missing-information`; a case established outside applicability returns that rule's inapplicable result. Only an absent governor returns `missing-governor` with participants, proposed predicate, affected use, and absent definition. A future pattern or declaration need is named only when identifiable. |
 | `CC-A6PWMR-4a` | Before every governed negative direct-relation claim, a conforming practitioner **MUST** recover the current governor, its applicable negative or non-obtaining criterion or closure basis, and separate case facts satisfying that basis at the extent. The practitioner **MUST NOT** infer negative polarity from failure or unavailability of the positive fact and **MUST NOT** individuate an obtaining relation occurrence. |
 | `CC-A6PWMR-5` | A conforming practitioner **MUST** keep claim subject, modality and extent, polarity, and recovery or support state independently recoverable whenever any can change the answer and **MUST** check `WMR-WF1`. The practitioner **MUST NOT** require the four labels when a simple sentence already carries the only material reading. |
@@ -434,7 +436,7 @@ Established availability lets the named audience obtain that content through tha
 
 ### A.6.P.WMR:10 - Rationale
 
-Boundary words describe a relation position only relative to an exact object. Treating them as entity kinds or universal relations erases the exact predicate, current facts, and subject assertion that determine obtaining. The three-question ordinary method restores the thing, related object, and direct verb or stop first; two conditional assurance questions expose claim dimensions and the formal predicate definition only when those distinctions can change or check the answer.
+Boundary words describe a relation position only relative to an exact object. Treating them as entity kinds or universal relations erases the exact predicate, current facts, and subject assertion that determine obtaining. The three-question ordinary method restores the thing, the other participants required by the claim, and the direct verb or warranted stop first; two conditional assurance questions expose claim dimensions and the formal predicate definition only when those distinctions can change or check the answer.
 
 The worked-case relation tokens have meaning under their supplied project declarations. They neither add those kinds to FPF nor establish any occurrence by being named. Durable naming under F.18 follows recovery of the object and its identity basis.
 

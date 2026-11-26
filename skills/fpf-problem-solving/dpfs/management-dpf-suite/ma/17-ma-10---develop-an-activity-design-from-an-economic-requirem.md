@@ -8,7 +8,7 @@
 
 Use this method when an intended product, service or other activity must satisfy an economic requirement, but no adequately supported arrangement yet does so. Examples include an offer that cannot earn the required return at an acceptable price, a service that exceeds available funding, or an improvement whose local savings leave the whole activity uneconomic.
 
-Develop the alternatives with those who design the offer, work and provision. The result is an economically explained design or set of alternatives, with the conditions needed for its use. If you establish that the available arrangements cannot deliver the required result under its conditions, return the incompatibility to whoever can reconsider the requirement, scope or provision. Launching a design or changing others’ work requires the applicable authority.
+Develop the alternatives from what the offer, work and provision actually require. Involve their designers where the alternatives depend on a contribution still to be made. The result is an economically explained design or set of alternatives, with the conditions needed for its use. If you establish that the available arrangements cannot deliver the required result under its conditions, report the incompatibility to the recipient of the assessment and identify who can reconsider the requirement, scope or provision. Seek a further decision when the commission or an existing obligation calls for it. Launching a design or changing others’ work requires the applicable authority.
 
 If adequate alternatives already exist and only their operating consequences need comparison, use OPS.14. Use MA.8 when the unresolved contribution is their product or customer account over time. A short supported calculation can finish this method; a cross-functional redesign is needed only where the actual dependencies require it.
 
@@ -78,7 +78,9 @@ An unresolved premise can leave a conditional alternative, a justified next expe
 
 #### MA.10:4.6 - Use the result and revise the economic knowledge
 
-Return the supported alternatives and remaining conditions to those who choose or authorize the work. Make clear which commitments the chosen arrangement needs and which conclusions would change if they are not obtained. MA.9 arranges the use of the account when participants otherwise lack a workable way to act on it.
+Give the supported comparison to the recipient of the accounting assignment. If the assignment includes a choice or new commitment within your authority, make it under the applicable terms. Where another party holds the decision, identify who can decide and what would give that choice effect. Submit the alternatives to that party when the assignment or an applicable duty calls for it. Carry out any implementation entrusted to you. Make clear which commitments the chosen arrangement needs and which conclusions would change if they are not obtained. MA.9 arranges the use of the account when participants otherwise lack a workable way to act on it.
+
+If the commission is to assess feasibility, identify which arrangements the parties are allowed to change. A bound common to all of them can settle the question, as can a comparison that covers the whole permitted set. If only one design has been ruled out, return the finding about that design and identify the alternatives that could still change the decision. A commission to compare specified designs can finish when their comparison is complete.
 
 After a trial or implementation, compare the observed activity and consequences with the relationships used in the design. MA.7 can locate a cost or margin difference; further evidence establishes its cause. Revise a resource dependency, demand assumption, contractual interpretation or information use where warranted. Retain knowledge whose conditions still hold. If the intended result or economic requirement changes, reconsider the affected design rather than merely issuing a new cost target.
 
@@ -113,10 +115,12 @@ A stated target can anchor attention on cost reduction and obscure a better resu
 ### MA.10:7 - Conformance Checklist
 
 - The intended result, economic criterion, scope and authority to change them are distinguishable.
-- The proposed improvement changes an explained relationship, work arrangement or term; it is not only a lower estimate.
+- When an improvement is proposed, it changes an explained relationship, work arrangement or term. Its consequences can be traced through the estimate.
 - The combined account retains shared-resource constraints, dates, surviving obligations and material effects on other participants.
 - Technical, operating, market and financial conditions have adequate results or remain explicit conditions of use.
 - Changed evidence can be traced to the design, requirement and dependent account it would reopen.
+
+- For a finding of infeasibility, does the reason cover the arrangements the commission allows? For an unresolved assessment, which possibility keeps the question open?
 
 ### MA.10:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -124,7 +128,7 @@ A stated target can anchor attention on cost reduction and obscure a better resu
 - **Optimize one phase and retain the old whole.** Reconstruct later work, provision and obligations affected by the change.
 - **Preserve revenue after changing the offer by assumption.** Revisit the customer-use and demand grounds that support it.
 - **Call a transferred burden an eliminated one.** Show who now provides the work, bears the obligation and agrees to the terms.
-- **Treat a passed monetary condition as permission to act.** Return the candidate to the responsible decisions with its remaining conditions.
+- **Treat a passed monetary condition as permission to act.** Identify the decisions and commitments the proposal still needs before it can be put into use.
 
 ### MA.10:9 - Consequences
 

@@ -106,7 +106,7 @@ The recurring tensions are:
 
 Describe the actual or proposed arrangement through the structures that bear on the engineering question. Establish which operations can overlap, which depend on a result or condition, and why.
 If the question concerns suitability, test the arrangement against its specified use, including resource conflicts and material burdens. Return the supported conclusion and its limits.
-If a choice is requested, use or construct materially different alternatives. The authorized Agent decides whether to retain or change the arrangement and states the grounds and scope.
+A request for one feasible arrangement can close with a construction that satisfies the stated conditions. To choose among offers or establish which arrangement is preferable, compare the relevant alternatives on the required basis. The authorized Agent decides whether to retain or change the arrangement and states the grounds and scope.
 
 #### SYSE.20:4.1 - Pattern-Use Unfolding
 
@@ -127,9 +127,9 @@ order; the order of this explanation does not establish or prescribe its timing.
 5. **Conflict and moved burden.** Identify any conflict or burden on which the requested answer depends. For an assessment or choice, establish whether the relevant results and
    constraints are compatible and what that means for the engineering result. State which Agent, System, decision or time interval receives any material burden moved
    by a local gain. If two recipients need a result, trace its delivery and deadline for each. One performance may serve both. Distinct operations using the same person or facility need compatible windows. A joint demonstration also needs all required participants together.
-6. **Alternatives for a choice.** When a choice is requested, use a finite set. Identify the relation distinguishing each proposed change. Develop a missing alternative
+6. **Alternatives for a choice.** Identify what can vary in the work and what would make one arrangement suitable or preferable. Compare named alternatives when that is the commission. An admissible family may instead be described by a rule or a range. Develop a missing alternative
    by changing a named relation. Include the present arrangement when retaining it is feasible.
-7. **Authorized choice.** For that decision, the authorized Agent uses `C.11` or a domain decision Method to compare the fixed option set on one
+7. **Authorized choice.** For that decision, the authorized Agent uses `C.11` or a domain decision Method. Establish feasibility for one suitable choice, compare the offered options for a preference among them, or justify an optimum over the required family. Use the
    stated basis and choice rule. Record the actual outcome: a selected alternative or retained tie-set with its
    grounds; rejection of the current set with its reason; a chosen next probe and the comparison defect it would
    resolve; or rerouting to a named receiving question. Retain accepted losses, preserved constraints, missing
@@ -311,7 +311,7 @@ Reuse adequate accounts and models. Explain an omission when the recipient could
 | companion structures | Structures on which the answer relies, with each structure’s subject, use, consequential correspondences and losses. Section 1 gives examples. |
 | order and suitability | State the supported overlap or required order and the grounds for each material relation. If assessing suitability, state what the arrangement can deliver for the specified use and what a remaining conflict or unknown prevents. |
 | moved burdens | Each material burden, the scope that loses it, and the scope that receives it. |
-| alternatives and choice, when a decision is requested | Fixed options, changed relations, comparison basis, choice rule and authorized outcome: selected option, retained arrangement or tie-set with grounds, rejected set with reason, chosen probe with the gap it could resolve, or a named receiving question. Retain applicable losses and protected constraints. |
+| alternatives and choice, when a decision is requested | Offered options or a defined family of arrangements, changed relations, comparison basis, choice rule and authorized outcome: selected option, retained arrangement or tie-set with grounds, rejected set with reason, chosen probe with the gap it could resolve, or a named receiving question. Retain applicable losses and protected constraints. |
 | continuation | Identify the supplied result and its receiving use. State any missing contribution, further question, permitted Work or change that would require reconsideration. Include implementation and later representative Work when the choice calls for them. |
 
 When an authorized choice has been made, its bounded record states the outcome and reason. A dependency or suitability account can independently supply
@@ -320,7 +320,7 @@ a design constraint to `SYSE.12` or a project-local Method variant to `SYSE.21`.
 #### SYSE.20:4.3 - What Changes in Practice
 
 Engineers can establish which Work may overlap, what must wait, which Methods are enacted and
-whether the arrangement serves its intended use. If asked to choose, they compare feasible alternatives and any burdens transferred to other work,
+whether the arrangement serves its intended use. For a requested arrangement they show how its parts can work together. For a comparison they examine the alternatives and burdens transferred to other work,
 with implementation and assessment conditions made explicit. The account preserves the reasons for those dependencies so they
 remain visible when a diagram or process label changes.
 
@@ -481,7 +481,7 @@ Watch for these recurring interpretation biases:
 - [ ] Provider or enabling Work, capability-development Work, and cultural change keep their own relations.
 - [ ] Each selected structure supports the requested answer. Its consequential correspondences and losses are clear.
 - [ ] Every local gain names any material moved burden and its receiving scope.
-- [ ] If a choice is requested, the fixed options differ by a named relation and are compared on a stated basis and rule.
+- [ ] For a choice, the allowed variations, receiving criterion, sufficient grounds and authority support the selected result. When alternatives are being compared, the comparison uses the stated basis and rule.
 - [ ] An observed overlap identifies the intersecting Work intervals. For a proposed or assessed overlap, the account states which work can start, the conditions
       for that start and any reconciliation needed before the result is used. It identifies any consequential limit of preliminary information.
 - [ ] When the answer depends on the feasibility of the whole arrangement, it accounts for shared resources, support, interpretation
@@ -502,7 +502,7 @@ Watch for these recurring interpretation biases:
 | A connected model is treated as the integrated engineering reality | Name the model epistemes, their subjects, correspondences, losses, and receiving uses. |
 | A platform service is assumed usable whenever dependent Work runs | State the provider Work, service condition, compatibility evidence, access, and moved maintenance burden. |
 | One local activity becomes faster while the engineering result still waits | Use an adequate measurement of the receiving result or obtain one. Identify the limiting contribution and any burden moved elsewhere. |
-| A selected option lacks a comparison rule or authority | Recover the fixed option set, basis, rule, deciding Agent and authority before calling it a decision. Name a next probe only when further inquiry is the selected continuation. |
+| A selected option lacks a comparison rule or authority | Recover the eligible arrangements, grounds for the required choice, deciding Agent and authority before calling it a decision. Name a next probe only when further inquiry is the selected continuation. |
 | A preliminary result is accepted because it is labelled provisional | Recover its allowed use, change sensitivity and reconciliation; wait or obtain the missing qualification when these cannot be supplied. |
 | Separately feasible tasks require the same resource simultaneously | Construct a joint resource order or obtain qualified capacity, then recompute the first usable whole result. |
 | A feedback arrow is removed from a drawing and the dependency is forgotten | State the starting assumption, perform the informative iteration and reconcile the coupled results. |

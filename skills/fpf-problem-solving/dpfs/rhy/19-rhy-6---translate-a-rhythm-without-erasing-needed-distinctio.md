@@ -58,6 +58,8 @@ A richer target vocabulary cannot establish information already discarded from t
 
 Use the target to carry out the intended comparison, reading or construction, then interpret the result for the source question. For example, give a phase calculation as a position under the source cycle and direction. An established target result can be used directly when it has the required correspondence.
 
+If the players will choose from the new score, check what it lets them play together. A duet may allow either of two release counts and require both players to release on the same count. Writing both legal versions correctly leaves a question for the arranger. Do the two parts also permit one player to choose the first count and the other to choose the second? To preserve the duet's range, give them a joint choice they can make in time. For a commission to supply one playable arrangement, fixing the same count in both parts can suffice. For a question only about the latest permitted release, both parts already give the bound. The missing link matters when the answer depends on their coordination.
+
 Correct target syllables can express the intended positions. To credit the performer with the corresponding instrumental or movement technique, use evidence of that performance.
 
 For a target edit, determine whether it changes the rhythmic requirement or expresses the same requirement differently. Identify the compatible source interpretation, update affected event correspondences and check that the resulting translation gives the requested target. Preserve restrictions needed for the proposal’s identity or admissible performance. Report any conflict or missing assignment.
@@ -85,7 +87,7 @@ Shift A’s attacks forward by one quarter of a beat, keeping their sound classe
 
 A user can also edit ta–di to ka–mi while keeping the two occurrences and their D/T order. Under the selected convention reconstruct D at 1/4 and T at 3/4. Translating this revised source gives ka–mi. With no edit, the original D and T remain at 0 and 1/2.
 
-If the user inserts a third attack, the two-label companion leaves its sound class open. Return the three positions for a positional question. For a sound-class phrase, establish the new assignment or identify it as missing. If a companion requires the old positions to stay fixed, it conflicts with a ka–mi edit. Establish which requirement applies before changing the phrase.
+If the user inserts a third attack, the two-label companion leaves its sound class open. The three positions can answer a positional question. To reproduce a prescribed sound, recover its assignment from the source. If the assignment belongs to the musician, the musician can choose a sound that fits the phrase or leave the choice to the named performer for the agreed moment. Keep it open in the representation when that possibility is part of the music. A requirement to keep the old positions fixed conflicts with a ka–mi edit. Establish which requirement applies before changing the phrase.
 
 The construction establishes positions and labels in this family. Deciding whether the changed phrase belongs to a particular musical prototype requires its practice-specific identity conditions.
 

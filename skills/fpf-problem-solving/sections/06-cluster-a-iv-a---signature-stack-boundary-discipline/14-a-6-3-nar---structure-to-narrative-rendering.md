@@ -8,7 +8,7 @@
 
 Use this pattern when selected source structure must become a readable sequential account for a declared reader or listener use. In plain language: **turn this structure into a narrative that this reader can follow without hiding what the narrative leaves behind**. Typical cases include a scientific mechanism turned into a paper section, an architecture trade-off turned into a team explanation, a conceptual graph turned into a lesson sequence, or an event graph turned into a story draft.
 
-Start from the reader's practical need. Select the source structures that matter for that need, choose a useful order and connective account, draft the narrative, then compare it with the sources for preservation, foregrounding, loss and unsupported additions.
+Start with the reader’s practical need and the material already available. For a new account, select the source structures, choose an order and develop the connections the reader needs. When reviewing or repairing an existing narrative, compare its actual sequence and claims with the sources for that use. Retain adequate choices and supply missing connections. An attribution to the person who chose the structure, wrote the prose or commissioned it requires grounds for that contribution.
 
 Plain starting vocabulary:
 
@@ -26,7 +26,7 @@ Plain starting vocabulary:
 | `narrating or rendering worker` | The person, team or system preparing the narrative. A dated Work claim follows A.13 and independent A.15.1 admission; F.6 applies only when precise assignment-bound attribution matters. Any authority claim has its own grounds. |
 | `structural-information question` | How much of the selected source structure can this reader correctly extract from the narrative under the stated preparation, access and budget? Use `C.2.8` for the characteristic, `C.33` for architecture-use adequacy and the applicable domain evaluation for a local scale. |
 
-**First useful move.** Write a useful narrative and give the reader enough source and ordering information to see what it preserves, foregrounds or omits. A compact note can carry that information. Add a source-return condition when omitted structure or a changed question requires it; any excluded downstream use follows F.19:4's full guard test.
+**First useful move.** What should a reader be able to follow or do with this account? For an existing narrative, compare its sequence and claims with the sources for that purpose. For a writing commission, supply the account and enough source and ordering information for the reader to see what it preserves, foregrounds or omits. Include a source-return condition when omitted structure or a changed question requires it. Apply F.19:4 to a proposed exclusion of downstream use.
 
 **What goes wrong if missed.** A memorable sequence substitutes for the source structure. Readers retain the story but cannot reconstruct the relations that licensed it, or they treat a connective sentence added for fluency as a source claim.
 
@@ -66,13 +66,13 @@ Without `A.6.3.NAR`:
 
 ### A.6.3.NAR:4 - Solution
 
-Produce the ordinary useful result first:
+For authorship, develop the account the reader needs. For assessment or repair, start with the supplied narrative and compare it with the source for its intended use. Retain choices that work and revisit the ones that leave the warranted conclusion or its grounds unavailable.
 
 1. Name the reader or listener and the practical use: what must become understandable, reconstructible, predictable, or discussable.
 2. Point to the source material and select only the structures needed for that use. Say why those structures matter.
 3. State temporal posture or mediation only when it changes the ordering or the trust boundary.
 4. Choose an ordering and connective account: event, causal, discovery, didactic, tension, traversal, or another explicit rule.
-5. Draft the smallest narrative that lets the reader follow that path. For technical prose, use F.19 for plain-language repair.
+5. Develop the narrative until the reader can follow the path from the problem through the selected structure to the promised conclusion. A short account can do this when the needed connections are already apparent. For technical prose, use F.19 for plain-language repair.
 6. Compare the draft back to the source material. Record what it preserves and foregrounds, what it omits or weakens, and which connective or interpretive statements are not source claims.
 7. State the supported narrative use. When omitted structure or a changed question requires return, identify the source to restore or the stronger claim-specific question and its governing pattern. Any excluded use follows F.19:4's full guard test.
 
@@ -123,6 +123,7 @@ StructureToNarrativeRenderingCase:
   narratingOrRenderingSystemRef?: U.EntityRef resolving to an admitted U.System
   narratingOrRenderingSystemRoleKindRef?: U.KindRef resolving to one local system-role kind
   narratingOrRenderingSystemRoleAssignmentRef?: U.RelationRef constrained to U.SystemRoleAssignment
+  // For several commissioned contributions, group the relevant Work, performers and any relied-on assignments for each.
   readerOrListenerSystemRefs[]?: U.EntityRef values resolving to admitted systems
   readerOrListenerSystemRoleKindRefs[]?: U.KindRef values resolving to local system-role kinds
   readerOrListenerSystemRoleAssignmentRefs[]?: U.RelationRef values constrained to U.SystemRoleAssignment
@@ -144,7 +145,7 @@ StructureToNarrativeRenderingCase:
 
 `selectedSourceStructureRefs` identifies the selected structures. A PatternID mentioned in `sourceStructureSelectionRationale` or surrounding prose only locates the content used to recognize or test them; it is not another structure reference. Include `sourceStructureDefinitionClaimEpistemeRefs` or `sourceStructureConstraintClaimEpistemeRefs` only when the identity of one or more definition or constraint claims changes reconstruction, comparison, dispute, or reliance. Both lists may be present and each resolves only to claim-bearing C.2.1 epistemes of the named kind.
 
-Resolve `X` and `Y` to their C.2.1 identities and use this record only for the construction account. When production history matters, recover each performer's A.13 core and independently admit dated narrative-construction Work under A.15.1; add F.6 afterward only when precise assignment-bound attribution is current.
+Resolve `X` and `Y` to their C.2.1 identities and use this record only for the construction account. When production history matters, use the Work and performer entries for each contribution in question. An editor may choose the facts and order and another participant may compose the account. Identify joint Work when the performance history supports it. For each claimed Work, recover its performers’ A.13 grounds and admit the occurrence under A.15.1. Add F.6 for each assignment-bound attribution used.
 
 Include `readerInterestOrUseHypothesis` only when an assumption about the reader affects selection or ordering; retain it as a hypothesis. Include each optional System, system-role-kind, or assignment reference only when its referent and direct claim obtain independently.
 
@@ -268,9 +269,9 @@ When the receiver needs exact claim identity, `ArchitectureTradeoff-X` and `Arch
 
 ##### A.6.3.NAR:5.2.1 - Architecture narrative repair after source change
 
-Later, a rejected candidate gains a new measurement basis and a placement constraint changes. The old story remains coherent but no longer preserves the live candidate set. Lower it to historical orientation, update the selected structures and ordering, state the changed loss and residual, and restore return to the current architecture description or decision material. In an exact case, reidentify only source epistemes whose C.2.1 identity changed, and restate the affected construction `n` under A.6.3.
+Later, C2 has a new measurement and the placement rule changes. For an account of decision D, keep the rule and measurements on which D was made. For a choice today, read the new rule first. If it still excludes R for system S, a faster result at R gives no ground for selecting C2. If it permits R, C2 now meets that placement condition. Compare its new measurement with C1’s under a common workload and check the other selection criteria before reporting a preference. Both candidates can remain in the comparison throughout. To report a new selection, identify the decision actually made. For implementation, identify the decision or other current mandate that authorizes that work.
 
-C.33 carries captured and lost architecture-relevant structures: preserve the old rejected-candidate relation as history, capture the new candidate-set relation, and mark the obsolete measurement basis lost for current decision use. C.34 carries only a correspondence that remains. Implementation or decision use stays non-admissible until the architecture claim, decision result, or synthesis result and any required use relation are current.
+Use C.33 to identify which relation the new narrative captures and what its representation leaves out. An earlier measurement can remain relevant to the history of D even when it no longer supports a comparison under the current workload. Use C.34 where a correspondence matters across the two accounts. Update the affected claims and links to their sources. In an exact case, reidentify only source epistemes whose C.2.1 identity changed and restate the affected construction `n` under A.6.3.
 
 #### A.6.3.NAR:5.2.2 - Live unfolding event narrative
 
@@ -280,7 +281,9 @@ Later analysis, statistics, rule disputes, injuries or official-result use retur
 
 #### A.6.3.NAR:5.3 - FPF seminar-route boundary
 
-A team orders selected FPF claims for learners: EntityOfConcern discipline, problem frames, pattern use, relation records, source return, framework authoring, and improvement loops. The first result is a teachable route whose note records prerequisite order, deferred detail, reconstruction tasks, and return to exact FPF passages.
+A seminar team selects a decision record, a method account and the records of performed work. It orders the material by what the learners will need next. In the decision from §5.2, ask first which system the decision concerns and which candidate D selected. A learner can now use the mandatory placement rule and the two sites to explain that choice. Give the class a different question about the same project: “Which candidate did the team actually put into service?” The earlier answer identifies what to look for and in which system. D leaves the outcome open. To answer, the learner needs evidence showing which candidate, if any, actually entered service. An installation record alone can leave entry into service open. Report what the available evidence establishes. The connection matters even if the installation later turns out to be C1. The selection recorded in D and evidence of entry into service answer different questions.
+
+This route connects the entity of concern, the question, the relevant relation and the return to its source. The seminar note names what learners must already know, where they will make these distinctions and where the source can be checked. Framework authoring or an improvement loop can follow when the seminar calls for that work. The design supplies a route a learner can try. An observation of the learner's own response would support a further conclusion about its use.
 
 A separate E.24.PUB occurrence may make a selected narrative episteme available through a teaching form and carrier; publication neither constitutes the narrative episteme nor establishes the NAR construction.
 
@@ -292,7 +295,7 @@ For an exact same-entity continuity account, identify the source episteme descri
 
 #### A.6.3.NAR:5.5 - Homotopy-theory explanation boundary
 
-A teacher turns graph-heavy mathematical material into a didactic sequence of definitions, dependencies, examples, counterexamples, theorem prerequisites, and proof-status boundaries. The ordinary note records which structures a learner can reconstruct, which proof details or generalizations are deferred, and when to return to formal statements.
+A teacher turns graph-heavy mathematical material into a didactic sequence of definitions, dependencies, examples, counterexamples, theorem prerequisites, and proof-status boundaries. The note identifies the structures the sequence is intended to make recoverable, the prerequisites it assumes, the proof details or generalizations deferred and the route back to formal statements. For a claim about what a learner can reconstruct, consider that learner’s preparation and available help. Use the learner’s actual work for a claim of performance and a suitable comparison for a claim of changed capability.
 
 When a mathematical use needs exact preservation, identify `HomotopySource-X` and `HomotopyNarrative-Y` about the same mathematical EntityOfConcern and state the construction, ordering and loss. Mathematical-lens, proof, source-use, publication and teaching-evaluation claims retain their applicable tests.
 

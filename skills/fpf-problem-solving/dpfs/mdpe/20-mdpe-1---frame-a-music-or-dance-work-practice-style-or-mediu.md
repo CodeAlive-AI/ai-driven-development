@@ -43,7 +43,7 @@ Four project subjects recur:
 | Medium or support system | An instrument, software, venue, platform, school, archive, event series, provider or another source of support. | Assess what it would enable in the proposed use. For a claim about actual provision, use or performance, examine the evidence for that claim and its assurance conditions. |
 
 Several subjects can belong to the same project. Give each the result and success
-conditions it needs, and link their briefs where one undertaking supplies another.
+conditions it needs. Link their briefs where one supplies another or where a shared condition affects what can be delivered.
 
 ### MDPE.1:2 - Solution
 
@@ -52,7 +52,9 @@ Frame or assess the brief around the subject, result and use the project brief m
 #### MDPE.1:2.1 - Select the subject and scale
 
 Start with the question from MDPE.8 or a clear project question from another source. Identify the
-primary subject of this brief. When it depends on other subjects, explain how their results contribute.
+primary subject of this brief. Identify any other undertaking whose result or use of shared resources can change the answer for this brief.
+
+At the scale the brief concerns, ask whether the outcome depends on how parts are organized or used together. Follow those relations as far as they can change what the recipient must explain, design or do. A brief confined to one event can stop at that event. Two briefs about the same performance might concern a player’s entrance or how the ensemble keeps its shared entrance while the player varies a phrase. Hold the player’s part fixed and vary the other parts. If the answer changes, include the relation that accounts for the change. At the chosen scale decide what the model must distinguish. The sounding order can suffice to describe the entrance. To design how the players find it, the model may also have to show which cue each can perceive in time. Follow a contribution from another practice as far as the commission needs it.
 
 A festival project may change the system that produces one event while investigating whether its curation
 and teaching support development of a style. Results from that event concern the specified
@@ -126,8 +128,7 @@ When recognition matters to the brief, specify who is expected to distinguish or
 and what could show whether they do so or the brief needs to change. A label, press notice, official listing or favourable response can document
 that particular occurrence. A claim about recognition by other participants needs evidence from the intended use.
 
-The brief is sufficient when the person using it can identify what is promised, what would satisfy it and any specific
-limit. An authorized decision-maker can then make or decline the commitment. Reconsider the affected part if representative
+The brief is usable when its intended recipients can identify what is proposed or promised, what would satisfy it and which limits apply. When a new commitment is needed, establish who can make or decline it. Reconsider the affected part if representative
 work, participant response, feasibility, authority, safety, recognition, cost or another relied-on condition changes.
 
 ### MDPE.1:3 - First Useful Result
@@ -135,10 +136,10 @@ work, participant response, feasibility, authority, safety, recognition, cost or
 For example, a project brief can give the following information where the project needs it.
 
 > - **Project question or commitment:** [what the brief must settle].
-> - **Primary subject and scale:** [artifact or occurrence / performance practice / style-development line /
->   medium or support System].
+> - **Subject:** [what the project concerns, such as a performance, a repeatable practice, a style or a medium].
+> - **Scale and model:** [which whole or part the result concerns, which relations to other parts matter and which differences the account must preserve for this use].
 > - **Intended Work and use:** [who does what, using which domain Method, and for whom].
-> - **Linked subjects:** [only those whose result is used, with the relation stated].
+> - **Linked subjects:** [what each undertaking must deliver and what connects them, including a shared condition that affects otherwise separate undertakings].
 > - **Existing and proposed:** [what is already available and what the project could bring about].
 > - **Preserve / vary:** [domain distinctions and allowed variation].
 > - **Conflict or unresolved choice:** [any material trade-off or incompatible commitments, who or what is affected and what information or authority could resolve the choice].
@@ -159,8 +160,8 @@ In this constructed example, a local school is deciding whether to commit six we
 social event to a changed partnered practice. Its brief is:
 
 > - **Project decision:** fund and run one bounded class-and-social trial, or keep the present course unchanged.
-> - **Primary subject and scale:** one repeatable partnered-performance practice at this
->   local school. The proposed trial concerns that practice with the named participants.
+> - **Subject:** the repeatable partnered-performance practice at this school.
+> - **Scale and model:** the trial concerns how two partners coordinate within a shared dance. The account must distinguish each partner’s contribution and how they respond when the other changes the movement.
 > - **Intended Work and use:** teachers use embodied and partnered exercises; dancers then improvise with
 >   unfamiliar partners to varied music at the local social event.
 > - **Linked subjects:** the teaching method and the event arrangement
@@ -225,8 +226,8 @@ MDPE.1 if an unresolved question about the work, a repeatable practice or a new 
 
 | Check | Failure it prevents | Repair |
 | --- | --- | --- |
-| Primary subject | A project funds a different subject or scale from the one it needs. | Identify which artifact or occurrence, practice, style-development line, medium or support system the brief must address. |
-| Linked subjects retain their identities | One subject’s result is used to approve a different subject. | State each result and the relation by which another part of the project uses it. |
+| Subject, scale and model | A project names the right subject but funds work on a different whole or leaves out a consequential relation. | Can the recipient identify what can change, which parts or related practices the conclusion depends on, and what the model has to distinguish to settle the commission? A question about one passage can end with that passage. |
+| Linked subjects retain their identities | A result for one subject is taken to settle another undertaking, or a shared condition is overlooked. | State each intended result and establish how a contribution or a shared condition affects the work. |
 | Proposal and realization | The brief is cited as evidence that its proposal has been implemented. | State what it specifies and use the appropriate evidence for any claimed delivery or use. |
 | Preservation and variation are explicit | The project either freezes a practice or erases its distinction. | State what must survive and what may change for the receiving use. |
 | Material conflict | Incompatible commitments appear as one agreed objective. | Identify the incompatibility or trade-off and its effects. If resolution is required, use the available evidence and authority or identify what is missing. |

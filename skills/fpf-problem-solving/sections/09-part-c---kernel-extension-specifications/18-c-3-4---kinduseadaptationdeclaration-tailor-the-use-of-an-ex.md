@@ -76,14 +76,14 @@ For a candidate-bearing use, first evaluate adaptation admissibility. A candidat
 
 `J_kindUse(candidate, kind, kindSignatureEdition, adaptationDeclarationEdition, slice) ∈ {true, false, unknown}`
 
-The judgment conjoins the base C.3.2 judgment with every added candidate-condition predicate. A known `false` gives `false`; all known `true` gives `true`; unresolved required facts give `unknown`. A vocabulary-only declaration adds no predicate and preserves the base judgment. A guard may decline use on `not-applicable` or `unknown` without rewriting either.
+The judgment concerns the conjunction of the base C.3.2 criterion and every added candidate condition. A known false condition settles the conjunction as `false`. Relations between the conditions can also decide it: if both inspectors must have signed and exactly one signed, the conjunction is `false` even while the signer's identity is unknown. Return `true` when the facts establish all required conditions and `unknown` when they leave satisfaction unsettled. A vocabulary-only declaration adds no predicate and preserves the base judgment. A guard may decline use on `not-applicable` or `unknown` without rewriting either.
 
 An optional pinned-edition representation may list admissible candidates judged `true`. It is not `U.EntitySet`, A.14 membership, another kind, or a direct classification relation. Scope conditions stay under A.2.6 rather than becoming kind identity.
 
 When a use moves to another practice, source, or team, compare the base-kind membership distinctions first:
 
-- if the same kind continues, use the declaration and signature edition selected for the receiving use and, when the receiving use is candidate-bearing, make a fresh receiving judgment; no `KindBridge` exists merely because locality changed;
-- if independently identified kinds are distinct and the use claims a directional correspondence, establish the C.3.3 `KindBridge`; use the receiving signature and adaptation declaration and, when the receiving use is candidate-bearing, make a fresh receiving judgment; and
+- if the same kind continues, select the declaration and signature edition for the receiving use. For a candidate, establish its classification under that declaration using the grounds that apply. The locality change alone creates no `KindBridge`.
+- if the kinds are distinct and the use relies on a directional correspondence, establish the C.3.3 `KindBridge`. For a candidate, apply the receiving signature and adaptation declaration. An earlier conclusion suffices where it entails the receiving result for that case.
 - if two adaptation declarations differ in constraints or bindings, a separate `KindUseAdaptationCorrespondenceDeclaration` may name source declaration as EntityOfConcern and state target, direction, deterministic rule, definedness, loss, and effective scheme. It creates no bridge or target truth.
 
 A recurring local test can distinguish members of a narrower kind. Identify that kind by its criterion, then use C.3.1 to establish its relation to the base kind. A declaration or catalogue row can record the result.
@@ -98,7 +98,7 @@ A recurring local test can distinguish members of a narrower kind. Identify that
 
 **KUA-03 (Admissibility before judgment).** Fixed candidate, kind, base-signature edition, adaptation-declaration edition, and slice first yield `admissible` or `not-applicable`. Only an admissible request yields `true`, `false`, or `unknown`; implicit `latest` and guard-result coercion are forbidden.
 
-**KUA-04 (Adaptation type).** A vocabulary declaration preserves the base judgment. Constraint and composite declarations use governed candidate conditions: any known `false` gives `false`, all known `true` gives `true`, and unresolved required facts give `unknown`.
+**KUA-04 (Adaptation type).** A vocabulary declaration preserves the base judgment. For a constraint or composite declaration, evaluate the combined criterion for the admissible candidate. Return `true` when the grounds establish the conjunction, `false` when they exclude it and `unknown` when they leave it unsettled. Use known individual conditions and any established joint constraints.
 
 #### C.3.4:6.2 - Separation of Channels
 
@@ -114,7 +114,7 @@ A recurring local test can distinguish members of a narrower kind. Identify that
 
 #### C.3.4:6.4 - Cross-local Use
 
-**KUA-09 (Identity check before bridge).** On a locality change, first compare exact base-kind definitions. Same-kind reuse needs no `KindBridge` but uses the receiving declaration and, when the receiving use is candidate-bearing, a fresh judgment. Distinct-kind use establishes a `KindBridge` only when its directional correspondence predicate obtains. Differing adaptation constraints or bindings may additionally require an exact correspondence declaration. Source judgments are never copied as receiving truth; justified bridge consequences affect R only.
+**KUA-09 (Identity check before bridge).** Compare exact base-kind definitions on a locality change. For the same kind, use the receiving declaration. For distinct kinds, establish any `KindBridge` the use depends on and any correspondence between the relevant constraints or bindings. For a candidate, decide what the earlier grounds establish under the receiving conditions. Check additional constraints when they can change the answer. Apply a requirement for new independent work according to its terms. Justified bridge consequences affect R only.
 
 **KUA-10 (Definedness and fail-closed use).** Outside adaptation applicability, return `not-applicable` and form no judgment. For an admissible request, return `unknown` when an unavailable dependency leaves the conjunction unsettled under KUA-04; a known false conjunct still gives `false`. Outside correspondence definedness, the guard declines that cross-local use without rewriting an independently evaluated receiving result.
 
@@ -139,11 +139,11 @@ Use an adaptation declaration for procedural tailoring. If the receiving uses ne
 
 #### C.3.4:8.3 - With KindBridge
 
-A locality change first prompts kind-identity comparison. When the same base kind continues, select the receiving signature and adaptation declaration without a `KindBridge`; evaluate the receiving candidate afresh when that use is candidate-bearing. When two independently identified kinds are distinct and an exact directional correspondence is relied on, establish the C.3.3 `KindBridge`, its assertion, the receiving declaration, and any needed adaptation-correspondence declaration. Only justified bridge penalties affect R; F, G, admissibility, and classification truth remain unchanged.
+A locality change first prompts kind-identity comparison. When the same base kind continues, select the receiving signature and adaptation declaration without a `KindBridge`; establish any candidate judgment under the receiving declaration using KUA-09. When two independently identified kinds are distinct and an exact directional correspondence is relied on, establish the C.3.3 `KindBridge`, its assertion, the receiving declaration, and any needed adaptation-correspondence declaration. Only justified bridge penalties affect R; F, G, admissibility, and classification truth remain unchanged.
 
 #### C.3.4:8.4 - With Guards
 
-`Guard_KindUseAdaptation` designates exact adaptation and base-signature editions, checks admissibility, evaluates an admissible candidate, checks Scope separately, and keeps `not-applicable`, `unknown`, and refusal distinct. For distinct-kind cross-local use, it composes with the C.3.3 guard only after the bridge and receiving declarations are recoverable. For same-kind reuse, it performs the fresh receiving evaluation without a bridge.
+`Guard_KindUseAdaptation` designates exact adaptation and base-signature editions, checks admissibility, evaluates an admissible candidate, checks Scope separately, and keeps `not-applicable`, `unknown`, and refusal distinct. For distinct-kind cross-local use, it composes with the C.3.3 guard only after the bridge and receiving declarations are recoverable. For same-kind reuse, establish the receiving candidate's status under KUA-09. A prior evaluation can settle it when its grounds still apply. Perform a new receiving evaluation when the commission or the receiving conditions require one.
 
 ### C.3.4:9 - Anti-patterns and Repairs
 
@@ -152,7 +152,7 @@ A locality change first prompts kind-identity comparison. When the same base kin
 | Adaptation declaration treated as a new type | Duplicates the kind and hides the declaration episteme. | Keep the base kind; when a receiving use needs a distinct kind, identify it and establish any claimed `U.SubkindOf` relation independently. |
 | Claim- or Work-scope condition hidden in an adaptation judgment | Conflates the candidate with where a claim or Work applies. | Move the scope condition to A.2.6; keep candidate constraints and declaration applicability explicit. |
 | Unversioned or applicability-free declaration used by a guard | Makes evaluation non-replayable. | Give the declaration a designator, pin its edition and dependencies, state applicability, and distinguish `not-applicable` from `unknown`. |
-| Locality change treated as automatic bridge | Splits the same kind or transfers source truth. | Compare kind definitions first. Same-kind reuse needs no bridge and requires a fresh receiving result when the receiving use is candidate-bearing; distinct-kind use needs an obtaining C.3.3 correspondence. |
+| Locality change treated as automatic bridge | The same kind is split or a source classification used beyond its grounds. | Compare kind definitions. Use the receiving declaration for the same kind. Establish the C.3.3 correspondence when the use relies on one between distinct kinds. |
 | Many declarations with the same local meaning | Produces redundant declarations and inconsistent behavior. | Consolidate redundant declarations. If their receiving uses need one stable membership distinction as a kind, identify it separately and establish any claimed `U.SubkindOf` relation. |
 | Declaration name treated as a kind synonym | Hides constraints and invites misuse. | Designate the exact declaration edition and base kind separately in prose and guards. |
 
@@ -168,7 +168,7 @@ Surface, rig, and time conditions used only to bound the claim remain Scope. If 
 
 `FrontendAuthHeaderUse-2026` binds `authHeader` to local spelling `X-Auth` and adds no candidate condition. Its judgment therefore equals the admissible base judgment.
 
-Moving the same request kind to another team requires a fresh receiving evaluation when the receiving use applies the declaration to a request, but no `KindBridge` merely because the team or spelling changed. If two independently identified request kinds differ, establish any bridge separately.
+When another team uses the same request kind, establish the classification its declaration requires. The earlier result may still apply to the request. If the receiving rule requires another check, identify who must perform it and on which request. For independently identified distinct kinds, establish any required bridge separately.
 
 #### C.3.4:10.3 - `AdultPatient@Clinic` Composite Use
 
@@ -176,7 +176,7 @@ Moving the same request kind to another team requires a fresh receiving evaluati
 
 At an applicable slice, a person in the declared candidate domain is admissible; with a `true` base judgment, unavailable birth-date information needed to decide the age condition yields `unknown`.
 
-In Jurisdiction Y, first compare the exact patient-kind membership distinctions. If the same kind continues, use the Y declaration and evaluate afresh without a bridge. If the threshold or interpretation makes a distinct target kind and a directional correspondence is relied on, establish the `KindBridge`. A separate adaptation-correspondence declaration may then state how the two exact use declarations differ. Neither object transfers source truth.
+In Jurisdiction Y, first compare the exact patient-kind membership distinctions. If the same kind continues, use the Y declaration and establish whether the available classification covers the candidate under Y’s conditions. A separate examination required by Y remains due. If the threshold or interpretation makes a distinct target kind and a directional correspondence is relied on, establish the `KindBridge`. A separate adaptation-correspondence declaration may then state how the two exact use declarations differ. Neither object transfers source truth.
 
 ### C.3.4:11 - Authoring and Review Guidance
 
@@ -212,7 +212,7 @@ Reviewer questions:
 | **KUA-06** | A guard designates exact editions and checks applicability; for a candidate-bearing use, it evaluates the exact candidate. It makes a separate use decision. |
 | **KUA-07** | Stable refinement is independently identified and checked; declaration reuse does not promote it. |
 | **KUA-08** | Guard-addressable adaptation and correspondence declarations resolve to their exact editions and all interpretation, dependency, definedness, direction, and loss values required by section 6.3; a catalog remains representation and does not merge kind identities. |
-| **KUA-09** | Locality change triggers identity comparison. Same-kind reuse has no bridge and requires a fresh receiving judgment when the receiving use is candidate-bearing; distinct-kind use requires an obtaining C.3.3 correspondence before bridge reliance. |
+| **KUA-09** | Compare kind identities. For a candidate, identify its receiving classification and the grounds that settle it, or keep it open. Distinct-kind correspondence requires an obtaining C.3.3 relation before the proposed bridge use. |
 | **KUA-10** | Non-applicability forms no judgment. For an admissible request, unavailable dependencies yield `unknown` only when KUA-04 leaves the conjunction unsettled. Correspondence failure blocks that use without rewriting the independent receiving result. |
 
 ### C.3.4:End

@@ -31,9 +31,9 @@ Automation can preserve the underlying cause and add its own maintenance, except
 
 #### SYSE.39:4.1 - Recover the recurring activity and its result
 
-Name the trigger, user, intended result and recurring operations. Use observations of representative ordinary and exceptional attempts. Separate effort that is necessary to produce the result from effort caused by missing information, a broken interface, repeated repair or unnecessary coordination.
+Name the trigger, user, intended result and recurring operations. Identify the decision about the recurring work. Applicable records or observations of ordinary and exceptional attempts can establish how the work is performed. A decision about a proposed replacement can also turn on a requirement it would lose. Separate effort that is necessary to produce the result from effort caused by missing information, a broken interface, repeated repair or unnecessary coordination.
 
-Count occurrence over a meaningful interval. Recover user and provider active effort, waiting, interruptions, rework and errors with enough consistency for the intended comparison. Do not add elapsed waiting to active labor as though they were the same quantity.
+For a claim about total burden, define whose work and which interval the comparison covers. Use occurrence counts and effort per occurrence when their combination supplies the total. Direct totals or bounds can establish the decision without recovering every occurrence. Include waiting, interruptions, rework and errors where they affect the comparison. Do not add elapsed waiting to active labor as though they were the same quantity.
 
 Include those who perform the work, including users to whom provider effort has shifted. Determine whether the activity requires unfamiliar diagnosis or necessary professional judgment, and whether a missing capability contributes to the difficulty. Return these distinctions before deciding whether the activity should be automated.
 
@@ -47,7 +47,7 @@ If the activity no longer serves an accepted need, consider ending it with whoev
 
 #### SYSE.39:4.3 - Compare whole-task alternatives
 
-Compare retaining the current method, simplifying the task, removing the cause, improving the supported interaction, and automating the qualified operation. Use SYSE.25 when this intervention competes with other platform improvements; use SYSE.24 only when the question concerns whole ways of obtaining the result.
+For an assessment of one proposed replacement, establish whether it supports the promised interaction. When the user needs a choice of intervention, compare retaining the current method, simplifying the task, removing the cause, improving the supported interaction, and automating the qualified operation. Use SYSE.25 when this intervention competes with other platform improvements; use SYSE.24 only when the question concerns whole ways of obtaining the result.
 
 Keep the user result and conditions comparable. Include construction, maintenance, exceptions, support, failure handling and work transferred to users or other providers over a stated horizon. If the evidence does not discriminate the options, retain the unresolved comparison. Choose a bounded probe when its attainable result can improve the choice enough to justify its full cost and delay; use C.11.DUA when that judgement is unresolved. Otherwise give the present bounded answer and continue only work whose conditions are already supplied.
 
@@ -134,9 +134,9 @@ Operator-visible work is easier to count than user search, interruptions or aban
 ### SYSE.39:7 - Conformance Checklist
 
 - The recurring activity and supported user result are recognizable.
-- Occurrence, user/provider effort and exceptional work are compared on a stated basis.
+- The evidence establishes the quantity or condition that decides the receiving question. A burden comparison covers the relevant users, providers, period and exceptional work.
 - Necessary judgment, learning and physical work are not mislabeled merely because they are inconvenient.
-- Cause removal, simplification, retention and automation receive a fair comparison.
+- For a choice of intervention, the relevant alternatives receive a fair comparison. For an assessment of one proposed interface, its behavior and the remaining work support the judgement.
 - Any selected intervention preserves permission, correctness and usable exception handling.
 - Construction, continuing maintenance and transferred burden remain in the comparison.
 - Claimed gain distinguishes calculation, pilot observation and continued use in operation.

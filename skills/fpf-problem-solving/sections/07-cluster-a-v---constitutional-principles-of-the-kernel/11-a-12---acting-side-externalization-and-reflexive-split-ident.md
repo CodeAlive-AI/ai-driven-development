@@ -17,7 +17,7 @@ Typical moments:
 - "the system verifies that its own change succeeded";
 - "the lathe makes the workpiece, therefore the workpiece is part of the lathe during manufacturing".
 
-**First useful move.** Name the proposed acting participant and the subject claimed to change, then state the relation between them that matters to your question. For the robot below, the calibration controller acts on the sensor suite. Keep ordinary wording when those participants and their relation are already clear. Use §4.1 when their identities or a System, change, Work or evidence claim need the precise account.
+**First useful move.** Identify the subject that may have changed and what you need to establish about it. Observations of the same subject before and after can establish a change while its cause remains open. If someone attributes the change to a participant, identify the proposed actor and the relation that would support the attribution. In the robot case below that question leads from the sensor suite to the calibration controller. Keep ordinary wording when the answer is clear. Use §4.1 for a precise account of a System, change, Work or evidence claim.
 
 **What goes wrong if missed.** A controller and controlled part can collapse into one object, an automated publication update can hide its performer, and the performer’s output can be mistaken for sufficient evidence of success. Changing another holon can also be mistaken for containing it.
 
@@ -33,7 +33,7 @@ Typical moments:
 
 ### A.12:1 - Problem Frame
 
-Separate the acting and changed participants before deciding whether the claimed change, Work or evidence obtains. Their participation, System recognition and part-whole relations are separate questions. A self-action sentence may describe internal regulation; §4.2 gives the conditions for that reading.
+An explanation that attributes a change to an actor needs grounds for both the change and the actor’s contribution. The same System may occupy both positions. Their participation, System recognition and part-whole relations are separate questions. A self-action sentence may describe internal regulation; §4.2 gives the conditions for that reading.
 
 ### A.12:2 - Problem
 
@@ -56,7 +56,7 @@ Separate the acting and changed participants before deciding whether the claimed
 
 ### A.12:4 - Solution
 
-Separate the acting participant from the subject claimed to change. Add the precise claims needed to explain the case.
+Distinguish the acting position from the subject of the change. Establish the relation their occupants have in this case. An observed change can be reported while its cause or performer remains open.
 
 #### A.12:4.1 - Acting-Side Externalization
 
@@ -80,7 +80,7 @@ ActingSideExternalization@Context:
   evidenceRelationRefs?
 ```
 
-Identify `actingEntityRef` and `changedSubjectRef` as distinct participants in the claim. `changedSubjectRef` is a question-local position, not a U-kind or union ValueKind: its value retains its independently admitted kind and identity rule. A presentation carrier does not become a `U.Holon` by filling it. Fill `transformationRef` only when A.3.4 establishes a bounded change of that same continuing referent.
+Identify the occupant of each position when the claim depends on it. At the scale of a choir, the same continuing System may organise its rehearsals and improve its coordination. To attribute the improvement to the rehearsals, establish that contribution. To say which singer acquired a capability, establish that singer’s change under the relevant conditions. An observation of the choir’s improvement alone can stand without using this acting-side outline. `changedSubjectRef` is a question-local position, not a U-kind or union ValueKind: its value retains its independently admitted kind and identity rule. A presentation carrier does not become a `U.Holon` by filling it. Fill `transformationRef` only when A.3.4 establishes a bounded change of that same continuing referent.
 
 Use the complete A.1 criterion or an applicable established A.1 result before classifying the acting entity as a `U.System`. When this account needs recognition and it is not established, retain the entity and its `recognized | rejected | unknown` disposition or blocker. Leave `actingSystemRef` unfilled until recognition is established; once recognized, it names the same entity under `U.System`. Tight coupling or membership in a larger holon does not merge the acting and changed positions.
 
@@ -140,7 +140,7 @@ The minimal rule is:
 actingPartOrSubsystemRef != changedPartOrSubsystemRef
 ```
 
-for the current change-bearing claim.
+for a Reflexive Split into two internal parts. A claim about what one continuing whole does to change its own condition can remain at that whole’s scale when the internal distinction does no work for the answer.
 
 For controlled self-change, this split supplies the internal acting and changed participants. Connect their action to the rule or intended result that selects the intervention, its effect on later operation and the consequences used to revise it. **C.43:4.1.2** develops that account.
 
@@ -269,7 +269,7 @@ This explanatory claim does not supply an occurrence identity for `holonBoundary
 
 | Check | Requirement |
 | --- | --- |
-| `CC-A12-1` | A self-action or passive change account names the proposed acting participant and changed subject separately. When the precise frame is used, it identifies one exact continuing `changedSubjectRef` by that referent’s identity rule and requires `actingEntityRef`. Fill the optional `actingSystemRef` only after complete A.1 recognition; it identifies the same entity under `U.System`. When this account needs an A.1 recognition result and recognition is not established, keep the exact disposition or blocker. A filled `transformationRef` identifies an A.3.4 bounded change of that same `changedSubjectRef`. `ReflexiveSplit@Context` has no system-recognition position; state any needed A.1 recognition result or blocker separately, using a companion acting-side outline if useful. |
+| `CC-A12-1` | An account of a change identifies the changed subject. Where an actor’s contribution is claimed, distinguish its position and the grounds for that contribution. One entity can occupy both positions at the selected scale. When the precise frame is used, it identifies one exact continuing `changedSubjectRef` by that referent’s identity rule and requires `actingEntityRef`. Fill the optional `actingSystemRef` only after complete A.1 recognition; it identifies the same entity under `U.System`. When this account needs an A.1 recognition result and recognition is not established, keep the exact disposition or blocker. A filled `transformationRef` identifies an A.3.4 bounded change of that same `changedSubjectRef`. `ReflexiveSplit@Context` has no system-recognition position; state any needed A.1 recognition result or blocker separately, using a companion acting-side outline if useful. |
 | `CC-A12-2` | A Reflexive Split case identifies distinct exact entity parts or subsystems inside one containing holon, and each position has its independently obtaining direct part relation. Temporal phases keep their phase identity rules; assignments use A.2.1; parthood uses A.14 or the exact part-relation rule; descriptions use C.2.1; selected structures use A.22. None fills an A.12 part position merely by being nearby. |
 | `CC-A12-3` | An acting-side account uses the existing entities and relations it requires. A proposal for a new durable kind, including a transformer, boundary or interaction kind, needs the separate A.11 and E.24.UK admission process. |
 | `CC-A12-4` | Bounded transformation claims require `A.3.4`; Method identity uses `A.3.1`, MethodDescription admission uses `A.3.2`, and a WorkPlan uses `A.15.2`. For a Work claim, establish each performer's A.13 core before independent A.15.1 occurrence admission. The profile is conditional as stated in §4.1. |

@@ -12,9 +12,9 @@
 
 Use A.21 when a named gate must decide whether one bounded action or transition may proceed under an applicable profile rule. Identify every check that the rule requires, including the subject and criterion of each check.
 
-**First useful move.** Name the action being decided, the profile rule that applies, and every required check result. Map each check result under that rule, then let the worst mapped value win.
+**First useful move.** Name the action being decided and identify each check the applicable profile requires. Apply its rule to each available result or to the absence of a required result. Use the worst mapped value. A `block` that already follows from one requirement settles the gate value even while another check is outstanding. For a decision to start the work, establish what the operating rule authorizes on passage of this gate and which other entry conditions apply.
 
-**Quick worked case.** `WorkshopEntryGate-4` decides whether `CalibrationCycle-17` may start before 16:00. `WorkshopEntryProfile-E5` requires two checks: `CalibrationCertificate-44` for `TorqueWrench-12` is current under `CalibrationRule-E3`, and `WorkshopEnclosure-2` is closed under `EnclosureRule-E2`. Both checks are evaluated and satisfied, so each maps to `pass`; the gate returns `pass` and the cycle may start before 16:00. Recheck if the instrument, certificate edition, enclosure state, profile edition, or time window changes.
+**Quick worked case.** `WorkshopEntryGate-4` decides whether `CalibrationCycle-17` may start before 16:00. `WorkshopEntryProfile-E5` requires two checks: `CalibrationCertificate-44` for `TorqueWrench-12` is current under `CalibrationRule-E3`, and `WorkshopEnclosure-2` is closed under `EnclosureRule-E2`. Both checks are evaluated and satisfied, so each maps to `pass`. The gate returns `pass` for this cycle before 16:00. If the operating rule already authorizes the operator to start the cycle on this pass and all its other conditions hold, the operator may start. An outstanding permit would leave the gate result usable while the start waits. Recheck if the instrument, certificate edition, enclosure state, profile edition, or time window changes.
 
 If the state of `WorkshopEnclosure-2` is unknown, that check remains `unknown`. `WorkshopEntryProfile-E5` maps the uncertainty to `block`, not to `abstain`, so the cycle stays on hold until the enclosure is checked. A different policy may accept a bounded uncertainty only through an explicit rule that names the subject, tolerance, consequence, and validity window.
 
@@ -63,7 +63,7 @@ How can one gate decision remain reproducible without:
 
 #### A.21:4.1 - The decision result
 
-`GateDecisionResult` is a C.2.1 result episteme. Its EntityOfConcern is the bounded action or transition being decided. Its ClaimGraph says that one identified profile application maps one complete effective set of check-application results to one decision and action consequence.
+`GateDecisionResult` is a C.2.1 result episteme. Its EntityOfConcern is the bounded action or transition being decided. Its ClaimGraph identifies the applicable profile and complete effective set of requirements, accounts for available and missing results, and gives the grounds for the decision value and its action consequence.
 
 Minimum content:
 
@@ -74,9 +74,9 @@ GateDecisionResult:
   decisionSubjectRef
   boundedActionRef
   profileApplicationRef
-  requiredCheckApplicationIds[]
+  requiredCheckApplicationIds[]  // identifies each application required by the profile, including separately required evaluations
   optionalCheckApplicationIds[]
-  checkApplicationResultRefs[]
+  checkApplicationResultRefs[]   // the available results; retain each missing required result in the rationale
   scope
   qualificationWindow
   decisionValue: abstain | pass | degrade | block
@@ -89,7 +89,7 @@ GateDecisionResult:
 
 One result is identified by the tuple containing the gate, decision subject, bounded action, profile application, canonical required and optional check-application identity sets, the consumed check-application result refs, scope, and qualification window. A changed rule edition, checked subject, criterion, case, result, scope, or window requires another result. The decision value and rationale are the content derived for that fixed tuple; a contradictory value for the same tuple is an error, not another result to merge.
 
-The rationale links every check-application result to its mapping rule and then to the aggregate and action consequence. A `GateDecisionExplanation` may restate the rationale and decision value in ordinary language. It is optional and creates no additional decision; the identified result remains the basis for its explanation.
+The rationale identifies how each relevant result or absence bears on the decision under the profile. Retain each outstanding check and show why any unresolved mapping cannot change a value already decided. A `GateDecisionExplanation` may restate this rationale and its action consequence in ordinary language. The explanation is optional and refers to the same decision.
 
 #### A.21:4.2 - One check application
 
@@ -116,9 +116,9 @@ GateCheckApplicationResult:
   witnessOrReasonRefs[]
 ```
 
-The pattern that defines or tests the source claim determines `sourceOutcome`; A.21 only applies the cited mapping rule. A not-applicable application states why the criterion does not apply. A not-run application states that evaluation work did not produce a result. Unknown, error, violation, and success keep the meanings supplied by their source patterns.
+The pattern governing the source claim defines `sourceOutcome`. A.21 applies the profile’s mapping rule. State the reason for `notApplicable`. Use `notRun` when it is established that the named evaluation did not run. If its past performance is unestablished, retain the requirement and the missing source evidence. A gate-facing assessment made now can establish that a required report is unavailable without assigning an outcome or a performer to an earlier evaluation. An evaluated source can return `unknown` or `error` under its own rule.
 
-The application identity includes the checked subject, criterion and edition, applicable rule application, case facts, scope, and window. Two `SystemRoleFit` applications for different Systems and two `RegulatedConformance(X)` applications for different regulators or rule editions are different applications. Deduplicate only identical application results under these identity conditions. If two copies claim different source outcomes for the same identity, stop and resolve the contradiction; do not join them by `checkKind`.
+Identify a check application by its subject, criterion and edition, relevant rule application, case facts, scope and window. Include the occasion or result identity for an actual evaluation. Where the profile requires separate performances, identify each required contribution and establish who performed it, under what authority and with what independence the profile requires. Two copies of the same result supply one performance. Two independent assessors can legitimately disagree on the same subject and criterion. Apply the profile’s rule for their findings. If copies of one and the same result contradict one another, resolve the discrepancy before relying on it. Checks of different Systems or under different regulators or rule editions also retain their separate identity.
 
 When a publication or selected structure needs a short `GateCheckRef`, that value refers to one identified `GateCheckApplicationResult`. It is not the old `{aspect, kind, edition, scope}` record and cannot omit the checked subject, criterion or rule application, case, scope, or window needed to resolve that result.
 
@@ -138,7 +138,7 @@ A.21 has no implicit default profile. A branch name, `PathSlice`, sentinel, publ
 
 #### A.21:4.4 - Complete check set and independent results
 
-Before aggregation, recover the complete effective required set from the profile application. Every required application is present even when it is `notRun`, `unknown`, `error`, or failed.
+Before aggregation, recover every required check from the profile application. Identify each by the requirement and the case, including each separately required occasion. Link an established result for that check when one is available. For a missing required result, retain its place in the required set and apply the profile’s missing-result rule. A required position can be known even when the past evaluation, its performer or its result cannot be established.
 
 - `notApplicable` is allowed only when the application gives its scope or applicability reason.
 - `notRun` never becomes `abstain` or `pass`.
@@ -150,13 +150,13 @@ If a profile deliberately accepts known uncertainty, its mapping rule names the 
 
 #### A.21:4.5 - Aggregate and action meaning
 
-In ordinary language: **the worst mapped result wins**. Only after every required application is present and its mapping is known, the technical aggregation is the order-independent join:
+**The worst mapped value wins.** Account for every required check. Map each result or its absence under the applicable profile. If every completion consistent with the known facts and that profile gives the same worst value, that value is established. An established `block` therefore settles the value even with an outstanding check. Where possible completions give different values, leave the aggregate open. Record the unresolved checks and honor any separate duty to complete or report them. The order-independent join uses the order below.
 
 `abstain <= pass <= degrade <= block`.
 
 The join is associative, commutative, and idempotent. `abstain` is neutral and `block` absorbs other values, but those algebraic properties do not change the source results.
 
-The join determines the decision value; the profile rule also determines its action consequence. Retain every applicable action restriction unless an authorized rule changes it. For example, two checks may each map to `degrade`, one requiring reduced speed and the other supervision: the permitted action must satisfy both. Conflicting restrictions permit no action unless an applicable rule resolves the conflict; the shared `degrade` value alone supplies no permission.
+The join determines the decision value; the profile rule also determines its action consequence. Identify the action this rule governs. A pass at one gate can settle the question asked of that gate. To infer that someone may start the complete operation, establish the authority for that actor, action and time and satisfaction of the other applicable entry conditions. One standing rule can supply the authority and make this gate sufficient. Retain every applicable action restriction unless an authorized rule changes it. For example, two checks may each map to `degrade`, one requiring reduced speed and the other supervision: the permitted action must satisfy both. Conflicting restrictions permit no action unless an applicable rule resolves the conflict; the shared `degrade` value alone supplies no permission.
 
 | Decision | Meaning for the bounded action |
 | --- | --- |
@@ -172,7 +172,7 @@ An optional application affects the aggregate only when the cited profile rule s
 Compose check sets only through the profile applications that cover the decision subject and scope. A more specific application may add, replace, or remove a check only when its policy rule and applicability fact say so. Preserve parameterized identities such as regulator X and its rule edition.
 
 `lane`, `locus`, `subflow`, and `profile` may be used as scope values only when the selected structure or policy defines the corresponding boundary for this application. A scope label alone neither selects a profile nor merges check applications.
-Recompute the result when the decision subject, bounded action, profile application, required set, check application identity or result, scope, or window changes. A refresh, edition bump, expired evidence window, changed crossing, or changed path slice matters only when it changes one of those inputs under its own pattern.
+When the decision subject, bounded action, profile application, required set, check application identity or result, scope, or window changes, establish what the effective profile implies for the current action. A decisive condition can determine that disposition across all still possible outcomes of the other checks. Retain their actual states, including deferred checks. Perform a new gate application when the profile or commission requires one. A refresh, edition bump, expired evidence window, changed crossing, or changed path slice matters here when it changes an input under its own pattern.
 
 #### A.21:4.7 - Optional LaunchGate use
 
@@ -212,7 +212,7 @@ Require an equivalence witness only when reuse, cacheability, or a stability int
 
 #### A.21:5.1 - Ordinary local pass
 
-The workshop case at the entry uses two required checks. Each application names its subject and criterion: `CalibrationCertificate-44` for `TorqueWrench-12` is current under `CalibrationRule-E3`, and `WorkshopEnclosure-2` is closed under `EnclosureRule-E2`. `WorkshopEntryProfile-E5` maps both satisfied results to `pass`. Worst-result aggregation gives `pass`; the short rationale names both results, and the bounded action is “start `CalibrationCycle-17` before 16:00”. No publication or replay record is required.
+The workshop case at the entry uses two required checks. Each application names its subject and criterion: `CalibrationCertificate-44` for `TorqueWrench-12` is current under `CalibrationRule-E3`, and `WorkshopEnclosure-2` is closed under `EnclosureRule-E2`. `WorkshopEntryProfile-E5` maps both satisfied results to `pass`. Worst-result aggregation gives `pass` for the gate on starting `CalibrationCycle-17` before 16:00. Suppose the operating rule makes that pass the final condition for the assigned operator, whose authorization is current. The operator may start within the window. Where another release is required, those same two results settle the equipment gate and the operator still needs the release. No publication or replay record is required.
 
 #### A.21:5.2 - Unknown and failed checks
 
@@ -235,10 +235,10 @@ If inspection was not performed after the block was already known, record that c
 
 1. **Decision.** Name the gate, the action or transition being decided, its scope, and its time window.
 2. **Applicable rule.** Point to the profile rule and edition that apply to this gate and subject. Recover its required checks, mappings, consequences, scope and window, and any authority the rule itself requires.
-3. **Checks.** For each check, name its subject, criterion and edition, case, requirement, evaluation state, any available source result, and mapping rule.
-4. **Nothing missing.** Keep every required check visible, including `notRun`, `unknown`, error, and failure.
-5. **Worst result wins.** Aggregate only after the rule has mapped every required result. A missing or unrun required result cannot support `pass`.
-6. **Next action.** State what `pass`, `degrade`, `block`, or `abstain` means for this action, retain every applicable restriction under §4.5, and state when to decide again.
+3. **Checks.** For each check, identify the subject, criterion and edition, case, requirement, mapping rule and any available source result. State the evaluation status on its grounds. Use performer, authority and independence grounds where the profile requires them.
+4. **Required set.** Keep each required check visible, including a missing result, a known `notRun`, `unknown`, error or failure.
+5. **Worst result wins.** Use §4.5 to decide whether the established mappings already settle the value. A required check with a missing result or a known `notRun` cannot support `pass`. Keep any outstanding work and any separate conditions on action visible.
+6. **Next action.** State what `pass`, `degrade`, `block`, or `abstain` means for this action, retain every applicable restriction under §4.5, and state when to decide again. If the conclusion authorizes a wider operation, give the rule and conditions that carry the gate result to it.
 7. **Boundary.** Do not turn the decision into work-entry readiness or performed Work, and add no crossing, Bridge, publication, or assurance claim that is absent.
 
 #### A.21:7.1 - Triggered additions
@@ -274,7 +274,7 @@ The cost is explicit identity. A practitioner must name the decision subject, pr
 
 Constraint truth, evidence about that truth, policy application, and bounded action are different claims. The source patterns define the claims and tests; their evaluations establish the check results. A.21 applies one current profile and records the consequence. Keeping those claims separate makes the decision independent of evaluation order and keeps failures useful for repair.
 
-The join lattice gives a compact, deterministic aggregation after the complete effective check set has been identified and mapped under the profile. It does not supply applicability, evidence, permission, authority, or a missing result.
+The join lattice defines the aggregate for the complete effective check set. A partial evaluation can determine that value when the remaining possibilities all yield the same join. Applicability, the source results, and authority for the ensuing action have their own grounds.
 
 ### A.21:11 - SoTA echo
 

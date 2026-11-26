@@ -19,10 +19,10 @@ A Suite brings together constituent disciplines and explains how their knowledge
 
 | Suite | Working subject | DPFs | Patterns | Text, M characters |
 | --- | --- | ---: | ---: | ---: |
-| [Engineering](engineering-dpf-suite/_index.md) | Designing, realizing, changing and maintaining systems; knowledge access, semantic integration and control architecture design. | 5 | 99 | 2.958 |
-| [Management](management-dpf-suite/_index.md) | Direction, goals, commitments, operations, resources, markets, communities, workforce participation and organizational change. | 14 | 201 | 5.734 |
-| [Foundational Thinking](foundational-thinking-dpf-suite/_index.md) | Mathematical and physical accounts, models, algorithms and usable notation. | 5 | 71 | 2.048 |
-| [Human Capability Engineering](human-capability-engineering-dpf-suite/_index.md) | Human learning and somatic change, connected to capability in later work. | 2 | 34 | 1.291 |
+| [Engineering](engineering-dpf-suite/_index.md) | Designing, realizing, changing and maintaining systems; knowledge access, semantic integration and control architecture design. | 5 | 99 | 2.999 |
+| [Management](management-dpf-suite/_index.md) | Direction, goals, commitments, operations, resources, markets, communities, workforce participation and organizational change. | 14 | 201 | 5.799 |
+| [Foundational Thinking](foundational-thinking-dpf-suite/_index.md) | Mathematical and physical accounts, models, algorithms and usable notation. | 5 | 71 | 2.070 |
+| [Human Capability Engineering](human-capability-engineering-dpf-suite/_index.md) | Human learning and somatic change, connected to capability in later work. | 2 | 34 | 1.307 |
 
 For a goal or OKR question, open [GOALS](management-dpf-suite/goals/_index.md) directly within Management. Its complete language includes organizational OKR/CFR, human professional goals and AI work.
 
@@ -32,22 +32,22 @@ These ten standalone frameworks have their own files here. A shared folder group
 
 | Framework | What you can work on | Patterns | Text, M characters |
 | --- | --- | ---: | ---: |
-| [Decision Design (PSDA)](psda/_index.md) · [Markdown](psda/_index.md) | Frame a decision problem, construct alternatives and compare their consequences under uncertainty. Combine the evidence for a recommendation the decision holder can use. | 19 | 0.841 |
-| [Research Method Practice (RMP)](rmp/_index.md) · [Markdown](rmp/_index.md) | Frame and design research, obtain and criticize evidence, synthesize sources and return a warranted knowledge claim. Choose units and comparisons to suit the question. | 11 | 0.565 |
-| [Explanation Design (EXD)](exd/_index.md) · [Markdown](exd/_index.md) | Build a grounded explanation for the recipient’s question. Choose a form, example or dialogue when it helps, and determine which reasoning the reader can recover and use. | 6 | 0.162 |
-| [Narrativization and Narrative Studies (NSTD)](nstd/_index.md) · [Markdown](nstd/_index.md) | Develop and interpret factual, hypothetical or fictional narratives. For a commissioned explanation, connect the subject grounds to what readers can infer or decide as the narrative unfolds. | 10 | 0.411 |
-| [Implementation Facilitation (IS)](is/_index.md) · [Markdown](is/_index.md) | Help participants introduce, adapt or continue a practice under local conditions. Arrange support they can use and help them develop their capacity to lead future changes when that is their aim. | 7 | 0.212 |
-| [Economic Reasoning and Coordination (ECO)](eco/_index.md) · [Markdown](eco/_index.md) | Compare exchange, incentives and commitments. Establish whose resource use can change, which claims can be met together and when a unit saving changes total demand. | 10 | 0.154 |
-| [Financial Domain Modeling (FDM)](fdm/_index.md) · [Markdown](fdm/_index.md) | Model financial positions, rights and obligations. Derive conditional contract flows, assess funds available by a due date, and establish what occurred or what incomplete records still determine. | 5 | 0.121 |
-| [Defense and Transmission Modeling (DTM)](dtm/_index.md) · [Markdown](dtm/_index.md) | Explain how practices persist and spread, how they help or impair work, and how protective action changes those outcomes. | 9 | 0.158 |
-| [Embodied Rhythmics (RHY)](rhy/_index.md) · [Markdown](rhy/_index.md) | Recognize, represent, alter and perform rhythmic relations; coordinate sound, movement, reference and simultaneous layers. | 14 | 0.301 |
-| [Music and Dance Practice Engineering (MDPE)](mdpe/_index.md) · [Markdown](mdpe/_index.md) | Create, configure, perform, learn and transmit music and dance practices, including changes in tools, environments and styles. | 28 | 1.120 |
+| [Decision Design (PSDA)](psda/_index.md) · [Markdown](psda/_index.md) | Frame a decision problem, construct alternatives and compare their consequences under uncertainty. Combine the evidence for a recommendation the decision holder can use. | 19 | 0.847 |
+| [Research Method Practice (RMP)](rmp/_index.md) · [Markdown](rmp/_index.md) | Frame and design research, obtain and criticize evidence, synthesize sources and return a warranted knowledge claim. Choose units and comparisons to suit the question. | 11 | 0.572 |
+| [Explanation Design (EXD)](exd/_index.md) · [Markdown](exd/_index.md) | Build a grounded explanation for the recipient’s question. Choose a form, example or dialogue when it helps, and determine which reasoning the reader can recover and use. | 6 | 0.170 |
+| [Narrativization and Narrative Studies (NSTD)](nstd/_index.md) · [Markdown](nstd/_index.md) | Develop and interpret factual, hypothetical or fictional narratives. For a commissioned explanation, connect the subject grounds to what readers can infer or decide as the narrative unfolds. | 10 | 0.416 |
+| [Implementation Facilitation (IS)](is/_index.md) · [Markdown](is/_index.md) | Help participants introduce, adapt or continue a practice under local conditions. Arrange support they can use and help them develop their capacity to lead future changes when that is their aim. | 7 | 0.213 |
+| [Economic Reasoning and Coordination (ECO)](eco/_index.md) · [Markdown](eco/_index.md) | Compare exchange, incentives and commitments. Establish whose resource use can change, which claims can be met together and when a unit saving changes total demand. | 10 | 0.156 |
+| [Financial Domain Modeling (FDM)](fdm/_index.md) · [Markdown](fdm/_index.md) | Model financial positions, rights and obligations. Derive conditional contract flows, assess funds available by a due date, and establish what occurred or what incomplete records still determine. | 5 | 0.122 |
+| [Defense and Transmission Modeling (DTM)](dtm/_index.md) · [Markdown](dtm/_index.md) | Explain how practices persist and spread, how they help or impair work, and how protective action changes those outcomes. | 9 | 0.163 |
+| [Embodied Rhythmics (RHY)](rhy/_index.md) · [Markdown](rhy/_index.md) | Recognize, represent, alter and perform rhythmic relations. Relate the actions of one or several performers to each other and to any reference the passage requires. | 14 | 0.306 |
+| [Music and Dance Practice Engineering (MDPE)](mdpe/_index.md) · [Markdown](mdpe/_index.md) | Create, configure, perform, learn and transmit music and dance practices, including changes in tools, environments and styles. | 28 | 1.131 |
 
 **Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals. Suite totals sum their constituent frameworks and exclude the separate Suite Reference.
 
 ## Combine only the contributions your work needs
 
-For example, a decision may require a research finding, a mathematical model and an explanation to its participants. Decision Design, Research Method Practice, Foundational Thinking and Explanation Design then supply different results. Read the relevant conditions and connect those results; you do not need to study every framework or use every pattern in sequence.
+Suppose a group choosing between two proposals needs a research finding, a local model and an explanation of how the model bears on the choice. A published finding may already apply. A modeling text may give a method that still needs local observations. An existing explanation may give the group the grounds it needs before the choice. If someone has undertaken to explain those grounds at the meeting, establish that they gave the explanation there. Use the relevant publications for what is still needed to make the choice or fulfil the undertaking.
 
 When the purpose is to expand an agent's capabilities and continue to further attainable problems, use [Core's connected development method (C.40.OD)](../sections/09-part-c---kernel-extension-specifications/120-c-40-od---construct-and-continue-open-ended-development.md) with the relevant domain methods. The particular changes needed by a person, AI, team or organization differ.
 

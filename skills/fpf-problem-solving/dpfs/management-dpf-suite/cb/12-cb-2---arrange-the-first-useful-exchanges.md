@@ -7,11 +7,11 @@
 
 Use this pattern when a group could benefit from mutual help or shared activity, but people have not yet found a workable way to participate together. A new professional group has interested names but unanswered questions. A local gathering attracts visitors who leave without making a useful connection. An existing group starts a new activity for which its old habits do not suffice.
 
-The organiser's task is to arrange a bounded exchange in which one participant offers a relevant contribution, another can use or respond to it, and the participants can understand what happened. The result may be an answer, a comparison, an introduction, an agreed action or a valued conversation. Choose it from the participants' purpose.
+The organiser’s task is to arrange an exchange or joint activity the participants want and can carry out. Establish what they will do together or what one needs from another, and how they will recognize completion. The result may be an answer, a comparison, an introduction, an agreed action or a valued conversation. Choose it from the participants' purpose.
 
 This is the mutual-participation branch of Community Management. It begins with a credible purpose and participation conditions, such as those supplied by CB.1. It creates a first workable relationship around an activity; it does not require a formal organisation or equal contributions from every participant.
 
-**First useful result:** the one-off introduction, answer or other exchange the participants agreed to, with the limitation of the answer where it matters. When they want an arrangement that can continue, establish the help it took and the conditions for its next use.
+**First useful result:** the agreed introduction, answer or joint activity, with any limitation that matters to its use. When the participants want to continue, establish what the occasion required and what must be available for the next one.
 
 **Ordinary non-use.** When people can obtain the needed result independently from a resource or learning provision, use that route. When a timely accountable answer is required, obtain the appropriate service. Use CB.1 if the proposed mutual activity has no credible benefit or cannot obtain its essential contribution.
 
@@ -41,7 +41,7 @@ Choose a useful exchange and secure the contributions it requires. Agree with th
 
 Take the purpose from the current proposal rather than inventing an entertaining activity to fill a calendar. Name a small useful result and its recipient. A repair case might end with a justified diagnostic next step. A writers' group might end with an author understanding one reader's difficulty. A neighbourhood meeting might end with two people agreeing a feasible shared action.
 
-Bound the work so that the recipient can supply relevant material and a contributor can respond within the proposed time. A request to “share your expertise” gives neither party enough direction. A request to inspect one permitted observation and explain which of two next steps it supports can.
+For a joint activity, bound what those taking part can accomplish together in the time available. For a help request, allow the recipient to supply the relevant material and a contributor to respond in time. A request to “share your expertise” gives neither party enough direction. A request to inspect one permitted observation and explain which of two next steps it supports can.
 
 State what would count as a usable result and what must remain outside the exchange. Use the target practice's criteria for a technical answer. A community organiser can arrange access to a qualified judgement without being qualified to make it. For a social activity, a wanted opportunity to speak and be heard may be the result; do not impose a technical deliverable on that purpose.
 
@@ -61,7 +61,7 @@ Keep the exchange voluntary in its actual terms. A person may ask without yet be
 
 #### CB.2:4.3 - Prepare the request, material and participation conditions
 
-Help the recipient formulate a request that a suitable contributor can act on. For a case discussion, include the situation, what has already been tried, the uncertainty or choice, the permitted material and the requested kind of response. Distinguish an observation from its interpretation. Remove detail that burdens the exchange without changing the question, while preserving conditions that change the answer.
+For a joint activity, agree what participants will do together and what each needs to prepare. When one person is seeking help, help them formulate a request a suitable contributor can act on. For a case discussion, include the situation, what has already been tried, the uncertainty or choice, the permitted material and the requested kind of response. Distinguish an observation from its interpretation. Remove detail that burdens the exchange without changing the question, while preserving conditions that change the answer.
 
 Confirm that the contributors have the necessary material and understand the requested result. If they need preparation, include it in their time commitment. Offer a smaller or different contribution when the whole request is too demanding. An explicit refusal or unavailable contribution is useful information about the arrangement.
 
@@ -77,7 +77,7 @@ Agree how people ask for clarification, decline a question, signal uncertainty a
 
 #### CB.2:4.4 - Facilitate the exchange where support is actually needed
 
-At the start, restate the purpose, result and limits. Let the recipient establish the question before contributors begin solving a different one. Make the relevant material available to everyone whose contribution needs it.
+At the start, restate the purpose, result and limits. Use the question the recipient already brings. They may ask a colleague to develop a diagnostic question from their account, or they may be learning to frame it themselves. In the latter case give them the opportunity and support to make that choice. For a shared activity, confirm what the participants have come to do and give them the opportunity to do it. Make the relevant material available to everyone whose contribution needs it.
 
 Use prompting to repair a specific obstacle. Invite a qualified person to address an unanswered question, ask a contributor to explain the observation behind a conclusion, or help the recipient distinguish two incompatible suggestions. Give enough time for a response and make declining permissible. Repeated unsolicited reminders are not a substitute for an agreed contribution.
 
@@ -89,23 +89,23 @@ Make the organiser's contribution visible in the account of the activity: findin
 
 #### CB.2:4.5 - Close the return to the recipient and contributors
 
-Ask the recipient what the exchange enables them to do next. When the order concerns application, use evidence from the work itself, including use during the exchange. Seek a later response when it can answer an outstanding question. If application has not occurred, record that limit rather than treating silence as failure or treating a promising answer as a completed result.
+For a joint event, establish whether the agreed activity took place. That may complete the order. For help with a subsequent action, ask the recipient what the exchange enables them to do next. When the order concerns application, use evidence from the work itself, including use during the exchange. Seek a later response when it can answer an outstanding question. If application has not occurred, record that limit rather than treating silence as failure or treating a promising answer as a completed result.
 
 Return a response to the contributor when agreed or useful to their next contribution. It may be a short account of how the advice changed the next step, a clarification of what remained difficult, or an explanation that the proposed action could not be tried because a condition was absent. This closes an information gap and can improve the next contribution. It is not a debt requiring the recipient to praise the helper or perform an equal favour.
 
-For a social or shared-interest activity, ask about the experience and whether participants want a next contact. Keep that judgement with them. The organiser cannot infer a valued relationship solely from attendance.
+For a social or shared-interest activity, ask about the participants’ experience when that is at issue, and whether they want a next contact when continuation is being considered. Keep that judgement with them. The organiser cannot infer a valued relationship solely from attendance.
 
 Retain a reusable explanation or case only when its use is appropriate and the necessary permission exists. Preserve the conditions that made it valid. A participant's consent to a small conversation does not automatically supply consent to publishing an attributed account. If no reusable record is needed, a completed private exchange can remain private.
 
 #### CB.2:4.6 - Support the next exchange without hiding its cost
 
-Use what happened to decide what should continue. Did the recipient obtain a useful result? Was the contributor's effort acceptable? Which part needed organising help? What would make a similar exchange easier or more reliable?
+When continuation is at issue, use what happened to decide what to repeat or change. Did the participants attain the shared result or receive the help they requested? What effort did it take, whose support mattered and what would make a future occasion workable?
 
 The next step may be another deliberately arranged exchange, a modest adjustment to the request, a reusable reference, a change of timing, or a different route under CB.1. Invite continuation on the strength of a concrete useful experience. A member can introduce another suitable person when that person also receives enough information to choose.
 
 Watch for initiative that is compatible with the purpose: a participant brings a new relevant question, offers help under stated limits or arranges contact without the organiser supplying every step. Treat such observations as local evidence of the arrangement's current operation. They do not establish a universal growth stage or the long-term independence of the group.
 
-Reduce or redistribute a particular organising contribution only when the needed work can still be done. If questions are now understandable but contributor matching still needs help, retain matching and stop rewriting every question. If recurring support has no willing, capable provider, reduce the activity, obtain resources or change the promise. Formal responsibilities and broader decision rights require their own agreement.
+Reduce or redistribute a particular organising contribution only when the needed work can still be done. If questions are now understandable but contributor matching still needs help, retain matching and stop rewriting every question. If recurring support has no willing, capable provider, limit new offers to what people can provide. For an accepted exchange, establish what remains due under its terms and who can resolve any open choice. Formal responsibilities and broader decision rights require their own agreement.
 
 Do not use group size as the sole continuation test. A small group can deliver the desired contribution. A larger one can become less usable if the relevant questions no longer receive attention.
 
@@ -117,7 +117,7 @@ Do not use group size as the sole continuation test. A small group can deliver t
 | A relevant question, but no willing capable contributor | Revise the request or terms, obtain another supplier, or return the offer to CB.1. |
 | A helpful discussion, but no evidence of application yet | Preserve the useful discussion result and the unanswered application question. |
 | Conflicting advice with no available deciding basis | Give the recipient any step and grounds common to the remaining accounts. If a required choice depends on the difference, return the open question to a qualified contributor. |
-| Results depend on organising work that exceeds available support | Reduce scope, redistribute accepted contributions, fund the required work or stop the unsupported promise. |
+| Results depend on organising work that exceeds available support | Obtain provision, agree a feasible division of work or use the terms of the exchange to settle what participants are still owed. |
 | A resource or individual service would answer the recurring need more directly | Use that route and retain only the mutual activity that still adds value. |
 
 For stronger claims, obtain the evidence that claim requires. A useful answer is not proof of learning; a few useful exchanges are not a causal estimate of programme benefit; a successful small activity does not establish available capacity at a larger scale.
@@ -174,7 +174,7 @@ A defensible first exchange has:
 - sufficiently prepared and permissible material;
 - understandable participation and response conditions;
 - a result or limitation returned to the people involved;
-- a continuation decision that accounts for organising support and the limits of the observations.
+- a decision about continuation, when required, grounded in the available support and what the occasion established.
 
 A proposed exchange may satisfy the planning conditions while its practical outcome remains unknown. Preserve that distinction when deciding whether to repeat or enlarge it.
 
@@ -182,8 +182,8 @@ A proposed exchange may satisfy the planning conditions while its practical outc
 
 | Common wrong turn | Practical repair |
 | --- | --- |
-| Invite a large audience and wait for useful conversation | Arrange one relevant request and the contributions needed to answer it; expand only where the activity can still be supported. |
-| Ask volunteers to “engage more” | Name a worthwhile action, the person it helps and the effort it requires; make refusal informative and permissible. |
+| Invite a large audience and wait for useful conversation | Agree a worthwhile joint activity or help request with the participants. Arrange what it takes and expand only where the activity can still be supported. |
+| Ask volunteers to “engage more” | Name a worthwhile joint result or the help requested, who wants it and the effort it requires. Leave participants free to decline. |
 | Select helpers by visible status alone | Establish their suitability, availability and permission for the specific question. |
 | Treat every answer as equally valid to maintain harmony | Compare the assumptions and domain basis; retain uncertainty or seek a qualified contribution where needed. |
 | The organiser answers, prompts and follows up everything, then declares the community independent | Identify the organising contributions, retain necessary support and test a specific redistribution. |

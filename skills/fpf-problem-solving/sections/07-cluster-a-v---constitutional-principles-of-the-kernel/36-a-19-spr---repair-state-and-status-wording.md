@@ -196,7 +196,7 @@ When the decision relies on a claim from E7, assess that claim’s currentness u
 
 #### A.19.SPR:5.4 - Other repairs
 
-- **Evidence.** Replace “evidence status incomplete” with “Reliance on claim C remains unestablished because the needed calibration basis is missing; obtain the missing calibration basis and check again.” Add evidence and currentness references only when the receiving decision needs them.
+- **Evidence.** Reliance on claim C remains unestablished because the required calibration basis is missing. If the recipient needs to decide now whether that basis is established, this can settle the question. When further work depends on relying on C, establish who can supply the basis and assess it when available. Add evidence and currentness references when the receiving decision uses them.
 - **Publication.** Replace “publication posture allows decision input” with “This publication exposes candidate input X for the decision; the decision rule still evaluates X.”
 - **Mathematical lens.** Keep `LensUseBoundaryValue` in C.29 when its possible values and intended lens use are defined. State what the value permits for the intended lens use under C.29.
 - **Temporal claim.** For a C.27 classification, name the temporal claim and its Dyn0, Dyn1 or Dyn2 reading. State the supported use; add the intervention account only when the claim is intervention-sensitive.

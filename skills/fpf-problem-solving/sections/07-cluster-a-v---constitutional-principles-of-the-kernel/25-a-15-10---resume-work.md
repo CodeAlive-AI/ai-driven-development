@@ -77,7 +77,7 @@ If you cannot recover a decisive relation, use its source rather than filling th
 
 Repeat the whole task only when the needed contribution cannot be recovered adequately through a smaller safe operation under the applicable rules.
 
-A remembered intention, a selected next step and a performed operation remain different. When the completion of an important step is uncertain, inspect its result or repeat the smallest safe operation that settles the uncertainty. Do not repeat an irreversible action merely because its record is missing.
+A remembered intention, a selected next step and a performed operation support different conclusions. If the next action depends only on the result, use adequate existing material or obtain what is missing through a permissible operation. If it depends on whether someone performed an earlier step, when or under whose authority, use evidence about that occurrence. Repeating the operation can supply a current result. Before any repetition, consider the effects, including whether it would repeat an irreversible action.
 
 #### A.15.10:4.4 - Restore the conditions needed now
 
@@ -103,7 +103,7 @@ When someone else continues, supply what they need to act, not a transcript of e
 
 The recipient reconstructs and uses those contributions. Where misunderstanding would change the work, a brief explanation of the intended next operation or a small continuation can expose the mismatch. Do not demand a ceremonial read-back when shared material and ordinary performance already make it clear.
 
-A handoff does not itself supply the recipient's capability, access or authority. Obtain a missing contribution through its owner; A.15.9 can help frame a bounded request.
+A handoff needs a recipient who can use the material and is authorized to continue. For a service answer, another qualified performer can finish the reasoning. When the commission requires a particular participant to make a judgement or develop a capability, preserve that participant’s contribution through the interruption. Another performer can supply the support permitted by the commission. Obtain missing contributions from the appropriate participant, using A.15.9 for a bounded request when useful.
 
 If responsibility must change, make that change through the applicable arrangement rather than inferring it from receipt of a message.
 
@@ -148,7 +148,7 @@ External support is sometimes helpful and sometimes costly. Confidence that one 
 - Established results, tentative conclusions and unperformed steps are distinguishable where the next action relies on them.
 - A retained cue can be found and interpreted when needed.
 - Changed conditions reopen only affected reliance; an old record is not treated as a current observation.
-- Missing capability, access or authority remains a missing contribution.
+- The allocation on resumption preserves any contribution required of a particular participant. Any missing capability, access or authority is identified.
 - Preparation and reporting are omitted when ordinary continuation already suffices.
 - The result is useful continuation, a warranted change of direction or a blocker.
 

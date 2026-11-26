@@ -11,15 +11,14 @@ concept, architecture, realization or a specialist practice. Also use it when a 
 acceptance record, certificate or operating observation is being used beyond the conditions it
 addresses.
 
-Identify what claim the decision uses and what the present basis supports. Reuse sufficient
+Start with the decision to be made. Establish what the engineer must judge and which of those conclusions the present evidence supports. Reuse sufficient
 evidence and its account; narrow or stop reliance where that basis does not support the proposed use. A remaining
 gap calls for a choice about further inquiry, not automatically another test. When choosing or describing a
 challenge, five short entries make its contribution recoverable:
 
 1. **Claim:** the named claim episteme and the subject, conditions, configuration, and time for which it is used.
 2. **Decision question:** the current question or contemplated decision whose answer would change if reliance changes.
-3. **Challenge:** one measurement, analysis, simulation, test, integration check, inspection, or operating
-   observation capable of changing that reliance.
+3. **Challenge:** the measurement, analysis, simulation, test, inspection or observation that could change reliance. If several contributions are needed, explain which premise each supplies and how the results will be used together.
 4. **Validity boundary:** the configuration, conditions, scale, uncertainty, and currentness limits that matter
    to this use.
 5. **Affected earlier answers:** identify the project-focus, concept, architecture, realization or specialist answers
@@ -91,15 +90,17 @@ earlier answers. This can be done before realization, during change or integrati
 
 ### SYSE.4:4 - Solution
 
-#### SYSE.4:4.1 - Select one load-bearing claim and decision question
 
-Start with one named claim episteme already used by a current engineering question. It may come, for
-example, from a project-system choice account, a linked use-and-system concept, a `C.30` or `C.32` architecture
-result, a `SYSE.3` realization branch, or a specialist result. Recover:
+#### SYSE.4:4.1 - Derive the claims from the engineering decision
+
+Start with the decision the engineer has been asked to support. Which choices remain open, and under what conditions would one be justified and another ruled out? If the question concerns one claim already established by project focus, the use concept, architecture, realization or a specialist, use it directly. If the choice of claims is still open, derive them from the difference between those outcomes. Ask whether the same evidence about a part could accompany a different interaction, result in use or effect outside the System. Keep each difference that can change the decision or its grounds. A question about several conditions may need one joint argument.
+
+For each claim the decision relies on, identify:
+
 
 - the claim's subject and predicate;
 - its scope, conditions, configuration or version, and temporal stance;
-- the result or source account from which the claim came;
+- the source of a supplied claim, or how the engineer derived a new claim from the decision;
 - any uncertainty or failure mode that could affect reliance; and
 - the decision or intended Work that would change if reliance narrows, stops, or becomes stronger.
 
@@ -167,17 +168,13 @@ When a future challenge is selected, describe it using the five entries from the
 existing plan. The plan is usable when a practitioner can
 recover:
 
-1. one named claim and its current use conditions;
-2. one decision question;
-3. one challenge and, when its future Work needs a separately identified coordination plan, a reference to that `A.15.2`
-   WorkPlan;
-4. the configuration, validity, uncertainty, and currentness boundary; and
-5. the earlier answers that may need reassessment if the result changes what the project can rely on.
+1. the claim to be assessed, including its use conditions and any claims on which it depends;
+2. the decision the evidence must inform;
+3. the challenge or coordinated challenges the decision needs, what each result would establish, and a reference to an `A.15.2` WorkPlan when future Work needs a separately identified coordination plan;
+4. the configuration, time, uncertainty and conditions under which the results can be used together; and
+5. the earlier engineering answers to reconsider if reliance changes.
 
-The engineering-assurance plan is a C.2.1 claim-bearing episteme. Its one EntityOfConcern is the named
-load-bearing claim episteme. Its ClaimGraph states the planned challenge, decision question, validity boundary,
-and possible affected earlier answer as claims and references concerning that target claim. The other named
-entities remain participants in those claims rather than a composite subject. Use `C.2.1` to identify the claim
+The engineering-assurance plan is a C.2.1 claim-bearing episteme. Its EntityOfConcern is the claim being assessed. A joint claim can serve as the target when the decision depends on several conditions holding together. The ClaimGraph connects each planned challenge to the premise it can support and to the decision that uses the resulting argument. Where separate plans already exist, explain how their conclusions can inform the same decision. One plan and one challenge suffice when their grounds settle the question. Use `C.2.1` to identify the claim
 content, target claim, and effective reference scheme. Changed identity-bearing content
 can identify another episteme. A later engineering-assurance account is not automatically an edition of the plan
 merely because a file or identifier is reused; claim identity and any edition relation remain with `C.2.1`.
@@ -188,8 +185,7 @@ receiving decision needs it.
 
 #### SYSE.4:4.4 - Recover performed Work, direct results, and evidence use
 
-When the challenge is performed, recover the actual performer through `A.13` and independently admit the dated
-Work through `A.15.1`. Use `F.6` when precise assignment-bound attribution is needed. Then use the direct pattern for the result:
+A claim that particular challenge Work was performed requires its actual performer under `A.13` and independent grounds for the dated Work under `A.15.1`. Use `F.6` when the decision depends on attribution to a particular assignment. When the question concerns a result already available, establish the provenance and qualifications its intended use requires. A sufficient result may leave the identity of an upstream performer open. Apply the direct pattern that governs the result.
 
 - `C.16` for a measurement result, its uncertainty, and comparability;
 - `C.32.ACE` for an architecture-characteristic eval programme and its separately typed result;
@@ -237,7 +233,7 @@ After evidence is available, reuse a sufficient engineering-assurance account. O
 account so that the practitioner can recover:
 
 1. the named target claim and decision question;
-2. the relevant direct results and any performed challenge Work from which they came;
+2. the relevant direct results and, when the decision depends on how a result was obtained, the grounds about the challenge Work that produced it;
 3. the provenance and currentness grounds needed for this use, with an `A.10` path when the source-to-use account is implicit or must remain replayable;
 4. the result's configuration, condition, scale, uncertainty, and applicability limits;
 5. the reason it supports, contradicts, or leaves unresolved the target claim, including the consequential
@@ -275,7 +271,7 @@ complete the current question. Missing information establishes neither the targe
 Some decisions depend on several evidence lines—for example, model predictions, physical tests, integration
 results, operating observations, and specialist arguments. Start from what must hold together for the intended
 claim. Map each necessary premise or operating case to the result that supports it and explain why those premises
-are sufficient. A component test can support a claim about an interaction when the test conditions and the relation to the other parts establish that claim. To extend a conclusion beyond the cases tested, explain why the remaining cases cannot change the answer.
+are sufficient. A component test can support a claim about an interaction when the test conditions and the relation to the other parts establish that claim. For a claim about every eligible case, establish why untested cases preserve the conclusion. For an estimate of a rate or a decision about a risk limit, establish what the sampling or other evidence and its uncertainty warrant for the specified population.
 
 Distinguish results that establish different necessary premises from alternative arguments for the same claim. Identify the error against which independent confirmation is needed. Two reviewers can make independent judgements from the same record. If its measurement is biased, agreement between those judgements leaves the bias in both conclusions. Examine differing conditions, assumptions and direct results when resolving a conflict.
 
@@ -416,8 +412,7 @@ under their own criteria.
 
 ### SYSE.4:6 - Biases to Watch
 
-These biases recur when teams choose or interpret engineering checks. **Available-test bias** selects the familiar check before naming the claim and
-decision; start with the load-bearing claim. **Pass-label inflation** lets one bounded result stand for assurance,
+These biases recur when teams choose or interpret engineering checks. **Available-test bias** selects a claim that a familiar check can answer. Recover the decision the engineer must support and trace what that check could establish for it. If required conditions or their interaction still lack grounds, choose a way to examine them. **Pass-label inflation** lets one bounded result stand for assurance,
 acceptance, permission, release, or outside benefit; state the evidence use and return the result to the
 answers it can change.
 
@@ -425,10 +420,10 @@ answers it can change.
 
 | ID | Requirement |
 | --- | --- |
-| `CC-SYSE4-1` | A conforming use SHALL name one load-bearing claim episteme, its subject, conditions, configuration or version, temporal stance, and decision question. |
+| `CC-SYSE4-1` | A conforming use SHALL identify the decision and the engineering claims it depends on, with their subjects, conditions, configurations and relevant times. When the decision depends on how claims hold together, explain that connection under §4.6. A question confined to one claim can be answered on its own grounds. |
 | `CC-SYSE4-2` | The first result SHALL state what the present basis supports for the decision and its limits. A selected challenge SHALL name the question it can change, its validity boundary, and the earlier answers affected. Further inquiry SHALL be chosen by its attainable contribution, burden and applicable requirements; an inactive inquiry SHALL create no empty plan or waiver record. |
 | `CC-SYSE4-3` | When intended challenge Work needs a separately identified coordination plan, it SHALL use an `A.15.2` WorkPlan with its required content. The engineering-assurance plan SHALL remain distinct from that WorkPlan and from performed Work. |
-| `CC-SYSE4-4` | For a performed challenge, the practitioner SHALL identify the performer through `A.13` and establish the dated Work through `A.15.1`. Use `F.6` when the decision needs precise assignment-bound attribution. Each measurement, evaluation, model-use, causal, test or specialist result SHALL meet its own pattern. |
+| `CC-SYSE4-4` | A claim of performed challenge Work SHALL identify the performer through `A.13` and establish the dated Work through `A.15.1`. A conclusion drawn from an existing result SHALL establish the provenance and qualifications its intended use requires. Use `F.6` when the decision needs precise assignment-bound attribution. Each measurement, evaluation, model-use, causal, test or specialist result SHALL meet its own pattern. |
 | `CC-SYSE4-5` | An evidence use SHALL name the target claim, result, conditions, bounded use, and the provenance and currentness grounds needed for that use. `A.10` SHALL be used when the source-to-use account is implicit or must remain replayable; its descriptive path SHALL represent only independently established relations, and a carrier, result record, or graph edge SHALL NOT establish the use by presence. |
 | `CC-SYSE4-6` | `B.3` SHALL be applied when an actual named assurance claim is current, including one required by a direct domain rule. Consequence or material reliance alone SHALL NOT create that claim. The DPF account SHALL NOT substitute for the B.3 result or for direct domain obligations. |
 | `CC-SYSE4-7` | Model, simulation, test, and digital-twin results SHALL retain their applicability, error, uncertainty, extrapolation, configuration, and evidence limits. |
@@ -550,10 +545,7 @@ challenge or comparative use evidence makes the compact account insufficient or 
   use qualified direct evidence and configuration sources, or identify the missing basis that limits
   this judgement. The cited evidence supports the assurance account within its grounds; permission and release
   authority have their own basis.
-- Use `A.15.2` when the intended challenge needs a separately identified WorkPlan. For actual challenge Work,
-  recover the performer through `A.13` and independently admit Work through `A.15.1`; use `F.6` when precise
-  assignment-bound attribution is needed. Establish the consumed assignment, capability, resource, result and
-  transformation claims through their direct grounds.
+- Use `A.15.2` when the intended challenge needs a separately identified WorkPlan. To attest that the challenge took place as Work, recover its performer through `A.13` and independently establish the dated Work through `A.15.1`. Use `F.6` for a required assignment-bound attribution. For an existing result follow §4.4 to the provenance, qualifications and applicability the decision needs.
 - Use `C.16` for measurement, `C.32.ACE` for architecture-characteristic evaluation, `A.1.1` for model
   applicability and use, and `C.28` for causal use. Each result retains its subject, Method, configuration,
   uncertainty, applicability, and validity limits before it can be used as evidence.

@@ -5,7 +5,7 @@
 
 ### SYSE.46:1 - Problem frame
 
-**Use this when** you need to know what a person or technical agent can achieve with particular support, or whether a change affects that performance. A correct answer can conceal unnecessary help, missed needed access, a repeated effect or an omitted check. Begin with the result and the reliance that the evidence must support.
+**Use this when** you need to know what the performer entrusted with a task can achieve with particular support, or whether a change affects that performance. A correct answer can conceal unnecessary help, missed needed access, a repeated effect or an omitted check. Begin with the result and the reliance that the evidence must support.
 
 The subject is the configuration in its intended work, including its available support. The first result is bounded performance evidence, a supported use limit or the qualification question that remains open and what would settle it.
 
@@ -13,7 +13,7 @@ Use an adequate current test result when its configuration, task and conditions 
 
 ### SYSE.46:2 - Problem
 
-The same person or technical agent can perform differently with another working layout, aid, procedure, source or task population. Model behavior can also change with its prompt, index, tool edition or executor. The final answer alone can leave open whether the required evidence was obtained, whether an operation actually happened and which component changed the outcome. A test optimized alongside the system can also cease to discriminate useful improvement.
+The same individual, service or team can perform differently with another working layout, aid, procedure, source or task population. Model behavior can also change with its prompt, index, tool edition or executor. The final answer alone can leave open whether the required evidence was obtained, whether an operation actually happened and which component changed the outcome. A test optimized alongside the system can also cease to discriminate useful improvement.
 
 ### SYSE.46:3 - Forces
 
@@ -23,7 +23,7 @@ Realistic trials expose actual dependencies but may be costly or difficult to re
 
 #### SYSE.46:4.1 - Select the claim and comparison
 
-State the intended task family, required result, protected effects, available supports and proposed reliance. Recover the actual performing arrangement. For a technical agent this includes model/settings, instructions, next-input assembly, memory, tools/editions, executor and environment. For a person it includes applicable prior performance, instructions, available aids, working material and conditions such as task order or fatigue. Identify what changed, what can be held fixed and what must instead be recorded.
+State the intended task family, required result, protected effects, available supports and proposed reliance. Recover the actual performing arrangement. For a technical agent this includes model/settings, instructions, next-input assembly, memory, tools/editions, executor and environment. For a person it includes applicable prior performance, instructions, aids, working material and conditions such as task order or fatigue. For a team or service, identify who receives the result, what its contributors must do together, and which information, access and decisions their work depends on. In SYSE.44 the project unit combines a calculation with a laboratory finding. To qualify that unit across a shift change, establish whether the incoming shift can retrieve the applicable finding and use it in time for the authorized decision. Individual tests of calculation and retrieval could both pass while the handover fails. Identify what changed, what can be held fixed and what must instead be recorded.
 
 For a comparative claim, choose a baseline representing a real alternative, including a direct deterministic operation or human-supported arrangement when appropriate. Compare the same receiving result and consequential conditions. For an absolute property claim, test that property against its applicable criterion. Separate result quality, latency, cost, necessary access, restraint and side effects. Combine them only when the decision maker has grounds for the trade-off.
 

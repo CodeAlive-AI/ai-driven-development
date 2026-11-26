@@ -22,7 +22,7 @@ The ordinary output is an evaluation characteristic-space specification: a group
 - Use `F.18` when the problem is durable naming.
 - Use `E.21`, `E.9.DA`, or `E.2.DA` when the evaluated EntityOfConcern is respectively one FPF pattern version, one `DRR`, or one FPF-level Pillar-adequacy evaluated EntityOfConcern.
 
-**First useful move.** State the sentence: "good as what kind of object, for which use, against which contrast cases?" Then name the evaluated object kind, the use scope, and at least three contrast cases: one admissible evaluated object, one below-floor evaluated object, and one outside-declared-object-kind boundary case that should return to evaluation selection before the evaluation is opened or receive an object-kind-fit defect/value when that evaluation has already been invoked.
+**First useful move.** State what is being evaluated, for which use, and what decisions a difference in the result could change. Establish which different outcomes are possible in that domain and which inputs fall outside it. Use attainable cases to test the distinctions. Where a rule excludes an outcome, give the grounds for that exclusion. A case that has yet to be found leaves its attainability open.
 
 **Existing-evaluation boundary.** If the answer is "use this existing evaluation" and the evaluated object kind, use scope, floor, protected trade-offs, and stop meanings are already recoverable, do not construct a new `CharacteristicSpace`.
 
@@ -77,8 +77,8 @@ Construct an evaluation specification that declares an A.19 `CharacteristicSpace
 | `EvaluationCharacteristicSpaceSpec` | Local specification for constructing one evaluation `CharacteristicSpace`. | Declaring an evaluation alone establishes neither a value for the evaluated object nor permission to act. |
 | `EvaluatedObjectKindRef` | Kind of object being evaluated. | — |
 | `DeclaredUseScope` | Use for which the evaluated object is being judged or improved. | Not all possible uses. |
-| `DiscriminatingCaseSet` | Positive, below-floor, and outside-declared-object-kind boundary cases used to test whether the characteristic space distinguishes the evaluated object kind and use. | Not a substitute for the coordinate set. |
-| `ObjectKindFitRule` | Rule for admissible evaluated object, below-floor evaluated object, and outside-declared-object-kind boundary case. | Not permission to omit declared coordinates after an evaluation has been invoked. |
+| `DiscriminatingCaseSet` | Cases whose evaluations should differ for the declared use, with the scope and grounds for any outcome that cannot occur there. | Tests the choice of coordinates and the kind boundary. |
+| `ObjectKindFitRule` | Determines whether the object belongs to the evaluated kind. For an admitted object the floor and its supporting facts determine the property verdict. | Kind fit can be established while a property value remains unknown. |
 | `CharacteristicSlotSet` | The grouped slots, each binding one characteristic to one scale. | Not an arbitrary checklist and not hidden aggregation. |
 | `ScaleBindingSet` | The chosen scale and value meaning for each characteristic slot. | — |
 | `PolarityAndPreferredMovement` | Direction of preferred movement for each coordinate, or a statement that the coordinate has no simple preferred direction. | Not permission to optimize one coordinate while damaging protected trade-offs. |
@@ -100,11 +100,11 @@ These names are local to this pattern.
 
 Use these moves when constructing or repairing an evaluation. They are not a mandatory work sequence; each move is a required content question whose answer must be recoverable before the evaluation is used for improvement.
 
-1. **Name the evaluated object kind and use.** Say what object kind is being evaluated and for which declared use. If the evaluated object kind is not recoverable, stop before choosing coordinates.
-2. **Build the discriminating cases.** Include at least one evaluated object that should pass, one object admitted to the evaluation that should fail the floor, and one different object kind that should return to evaluation selection before opening or receive an object-kind-fit defect/value if this evaluation has already been invoked.
+1. **Name the evaluated object kind and use.** Say what object kind is being evaluated and for which declared use. When designing criteria for someone else’s decision, recover that decision and the terms governing it from the initiating sources (E.22:4.0). An established use or a prescribed test supplies its own starting extent. If the evaluated object kind is not recoverable, stop before choosing coordinates.
+2. **Build the discriminating cases.** Show how the evaluation distinguishes a passing object, a below-floor object and an input outside the admitted kind when those cases are possible. If membership or the operating conditions entail one outcome for the whole admitted domain, show why. Identify an empty domain separately. An excluded input calls for evaluation selection or, when already submitted, the declared kind-fit result.
 3. **Choose candidate characteristics.** Draw candidates from the object kind's failure modes, first-principles structure, user or operator harms, domain tradition, current `SoTA`, existing evaluations, and FPF neighbouring patterns named by value.
 4. **Bind each slot.** For each candidate, state the characteristic, chosen scale, value set, admissible domain, missingness semantics, and whether the value is a measurement claim or a content evaluation. Keep the property value, object-kind fit, and missing observation distinct. An observed absence of required support can justify a low value; an unperformed check cannot establish that absence. A local diagnostic code such as `0` may represent missing basis only when declared as a code, without the arithmetic or comparison rights of a measured zero. Preserve supported values while leaving dependent conclusions open.
-5. **Remove false coordinates.** Drop coordinates that do not change admissible action, do not discriminate the evaluated object, duplicate another coordinate without a different repair action, or belong to another evaluation.
+5. **Retain what the evaluation must establish.** For each proposed coordinate ask what distinction, conclusion, explanation or separately required report would be lost if it were removed. Drop a duplicate when the remaining account supports every such use. When a property follows from the kind or operating conditions, a general argument may establish its value throughout the admitted range. Preserve that value and its grounds wherever the recipient needs them.
 6. **Split compound coordinates.** If a coordinate mixes two repair actions, two object kinds, or two incompatible scales, split it or assign one part to the neighboring pattern that governs that claim.
 7. **State preferred movement and trade-offs.** For each declared coordinate, state the preferred direction or explain why no simple direction exists. Name the protected trade-offs that must be checked when the coordinate improves.
 8. **Define result form, evidence basis, and calibration.** State the required result content, evidence basis, Scale-appropriate rationale rule, calibration cases for common disagreements, and any coordinate-specific payload needed for high or floor-reaching values.
@@ -124,13 +124,13 @@ The evaluation characteristic-space specification must make these items recovera
 | `Non-use boundary` | Boundaries that distinguish this evaluation from other questions or claims relevant to its declared use. |
 | `Local names and kind settlement` | Any local names used, their meanings, and the boundaries needed to interpret or apply them. |
 | `Evaluation expression` | How the required evaluation content is made recoverable in the chosen form. |
-| `Object-kind fit rule` | Admissible evaluated object, below-floor evaluated object, and outside-declared-object-kind boundary handling before and after invocation. |
+| `Object-kind fit rule` | Grounds for admitting an object or treating its dependent coordinates as inapplicable. For an admitted object, specify how the evaluator distinguishes a supported pass, a supported failure and insufficient grounds. |
 | `Evaluation evidence basis` | Loci named by value that must be checked or named when a value depends on object version, corpus projection, source currentness, mature comparator, worked case, retrieval, or other external evidence. |
 | `Result-row shape` | Coordinate, value and short rationale, plus the evidence locus or payload required for that value. These are content requirements, independent of table or prose layout. |
 | `Coordinate set` | Coordinate heads, evaluated-object properties and use conditions, scale/value meanings, evidence loci, and protected trade-offs. |
 | `Calibration and payload rules` | Scale-appropriate calibration cases and required coordinate-specific payloads; use adjacent 3/4/5 cases only where the Scale has those values. |
 | `Status and stop condition` | Admissible-use statuses, local stop meanings, and reopen conditions. |
-| `Worked slices` | At least one passing evaluated object, one below-floor evaluated object, and one outside-declared-object-kind boundary case. |
+| `Worked slices` | Attainable cases that exercise the decisive distinctions, including the treatment of an outside-kind input when possible. Identify the grounds for any outcome excluded throughout the declared domain. |
 | `Common anti-patterns` | The false interpretations or values the evaluation must block. |
 | `Neighbouring-pattern claim assignment` | Neighbouring FPF patterns named by value and the claims being made that each pattern defines or constrains. |
 
@@ -142,9 +142,9 @@ A cleaner phrase that changes those items, treats a coordinate position as an ob
 
 #### A.19.ECS:4.4 - Discriminating-case test
 
-An evaluation is not ready if it cannot distinguish these three outcomes:
+Check which of the following outcomes can occur for this use and whether the evaluation can distinguish those that require different action. If the domain definition rules one out, verify the implication and apply the floor to the remaining possibilities. If the domain is empty, there is no instance on which the evaluation shows success or failure. If attainability is unresolved, state what is known about the evaluation.
 
-1. **Admissible evaluated object.** The object is of the evaluated object kind and can meet or exceed the floor under the declared use.
+1. **Passing evaluated object.** The object belongs to the evaluated kind and the applicable evidence establishes that it meets all required floors for this use. An admitted object can still have an unresolved verdict if the required grounds are missing.
 2. **Below-floor evaluated object.** The object is of the evaluated object kind or a declared comparable family, but fails one or more floors.
 3. **Outside-declared-object-kind boundary case.** Before the evaluation is opened, the object should return to evaluation selection or construction rather than be treated as the evaluated object kind. If the evaluation has already been invoked for that object, the result identifies the object-kind-fit defect or repair status and marks the affected coordinates inapplicable under the declared rule. It does not assign weak property values to an object outside their domain.
 
@@ -159,10 +159,10 @@ Improve an evaluation when its use misses a consequential defect, rejects an adm
 
 Use the following comparison to decide whether to adopt a change:
 
-1. **Name the lost practical result.** State which decision or next action the current evaluation gets wrong or cannot support, for which object and use. Preserve the current evaluation as the comparison basis and propose the smallest change that addresses that loss.
-2. **Establish contrasting cases independently of the proposed evaluation.** Use subject requirements, observed work results, or other applicable grounds to identify a consequential defect and a difficult but admissible case. Include a case in which an apparently helpful repair would damage a protected quality. The proposed evaluation's own verdict cannot establish these cases' correctness.
+1. **Identify what would improve for the recipient.** State which decision, action or cost of obtaining the result could change. An evaluation can yield the right decision at unnecessary cost. Keep the present evaluation as the basis of comparison and propose a change that addresses the identified problem.
+2. **Establish the relevant differences independently.** Derive from the use which outcomes, costs and protected qualities matter and which variations can occur. Exercise attainable disagreements when they can change the adoption decision. A subject rule can establish the comparison across its domain. For example, removing a duplicate calculation preserves verdicts if the retained calculation entails the same result for every admitted input. If the second calculation was independently obtained to expose an error, account for the checking function it served.
 3. **Apply both evaluations to the same material.** Keep object versions, task conditions and available evidence comparable. Inspect missed defects, false objections, the proposed action, damage from that action and the work needed to obtain and use the answer. Investigate disagreement through the conflicting grounds and conditions; neither majority agreement, stricter verdicts nor a larger finding count establishes practical improvement.
-4. **Test adoption beyond the cases used for tuning.** When the change was fitted to known cases, use a new case with an independent basis for the adoption decision. Keep its relevant answer out of tuning and disclose prior exposure or assistance. Replaying a known case remains useful development evidence; if no independent case is available, limit the conclusion to a trial in the examined scope.
+4. **Justify adoption for the intended use.** A change fitted to known cases needs independent grounds covering the claim made for it. These may include new observations under the intended conditions or a subject argument establishing the result across the required domain. State what the evidence covers and any prior exposure or help in an empirical trial. An individual new case can settle its own decision. A wider adoption claim needs grounds for that reach.
 5. **Choose at attainable cost.** Use `C.11.DUA` to compare the useful decision change with preparation, data collection, independent judgement, interpretation, repair, repeated evaluation, maintenance, transition and displaced useful work. Keep uncertain and non-commensurable costs visible. Adopt for the supported use, retain on a bounded trial, revise, reject, or keep the existing adequate evaluation.
 6. **Preserve scoped results.** Name the changed evaluation and whether earlier results remain comparable, need an explicit bridge, or cannot support the new use. Re-evaluate only conclusions that depend on the changed rule or conditions. A new evaluation does not erase an earlier result within its supported scope.
 
@@ -172,7 +172,7 @@ An independent subject basis and a bounded adoption comparison can settle the ch
 
 **Worked comparison.** A team proposes replacing a review criterion that counts source links with one that checks whether a required claim is supported. A known defective text has many links but omits the dependent claim; a difficult admissible text uses one sufficient source and a different valid explanation. The new criterion detects the omission and preserves the admissible explanation. A proposed repair that copies every source paragraph would make ordinary use harder, so the comparison also checks the repaired text.
 
-These are development results on known cases. Adoption still needs an independently grounded new case and an affordable way to obtain the supporting judgement. If the new criterion merely produces more objections or requires whole-corpus reading for every local use, revise it or retain the adequate earlier procedure in its supported scope.
+These are development results on known cases. For adoption, obtain grounds that cover the intended use beyond what was fitted to those cases. An applicable rule, general argument or independent existing evidence can suffice. If the claim concerns how a participant performs, use evidence of that participant’s work under the relevant conditions, including help or prior exposure that could have supplied the choice. Consider the cost of obtaining the needed grounds. If the new criterion merely produces objections or requires a whole-corpus reading for every local use, revise it or retain the earlier procedure within its supported scope.
 
 ### A.19.ECS:5 - Archetypal Grounding
 
@@ -197,7 +197,7 @@ It also corrects evaluation-reuse bias. A reusable evaluation is useful only whe
 | Check | Requirement | Why |
 |---|---|---|
 | `CC-A19ECS-1` | An evaluation characteristic-space specification SHALL name evaluated object kind, use scope, reader scope, and qualification window. | Prevents context-free quality claims. |
-| `CC-A19ECS-2` | It SHALL include admissible, below-floor, and outside-declared-object-kind boundary contrast cases. | Tests evaluated-object-kind discrimination. |
+| `CC-A19ECS-2` | The specification SHALL distinguish attainable outcomes that change the decision and state how outside-kind inputs are handled. For an outcome excluded from the declared domain, give its exclusion grounds. | Tests the actual distinctions and the boundary of the evaluated kind. |
 | `CC-A19ECS-3` | Each coordinate SHALL bind one characteristic to one scale, including for an ordinal content evaluation. State separately whether the value is a measurement claim or a content evaluation. | Preserves A.17/A.18/C.16/A.19 discipline. |
 | `CC-A19ECS-4` | Each coordinate SHALL state value meanings, polarity or no-simple-direction value rule, evidence rule, and missingness rule. | Makes values replayable. |
 | `CC-A19ECS-5` | The specification SHALL state floor, exceptional, status, stop, and reopen meanings for the declared use. | Lets improvement stop locally without claiming final perfection. |

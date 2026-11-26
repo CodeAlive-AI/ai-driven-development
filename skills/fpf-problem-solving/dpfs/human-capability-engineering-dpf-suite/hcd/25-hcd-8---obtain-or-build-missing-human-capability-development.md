@@ -84,7 +84,7 @@ Use an established route if it meets the task. If the available routes leave the
 | operating evidence | Representative sample or observed service under the intended conditions | Evidence of representative operation after preparation or change, including an applicable test already performed |
 | continuation | Renewal, backup, transfer, or replacement condition | Maintenance, refresh, supervision, fallback, and smallest reopen condition |
 
-Compare the routes for the required contribution, including timing, burden, risk, continuity and evidential conditions. Assess which alternatives remain after eliminating those dominated on the relevant criteria. Return the remaining feasible route or routes and any unresolved trade-offs. Establish any programme choice or authorization separately.
+Compare the routes for the required contribution, including the timing, burden, risk, continuity and evidence that matter to its recipient. For a request for one feasible route, return one with its grounds. A comparison of specified routes can give their respective advantages and limits. If asked for all feasible routes, include one that costs more when it still meets the conditions. Use dominance on the stated criteria when the result sought is the set of non-dominated routes. Establish any programme choice or authorization separately.
 
 #### HCD.8:4.3 - Specify the Provider or Environment Target Task
 

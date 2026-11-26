@@ -5,9 +5,9 @@
 
 ### A.3.1.FT:0 - Use This When
 
-Use this pattern when Work has supplied evidence in one or more situations and a practitioner must decide whether an admitted Method fits a named situation, where its applicability stops, or whether a supported claim transfers from a source situation family. Begin with the required result and the conditions of the situation in which the Method will be used. For a transfer question, also name the source situation and the claim whose support is being carried into the receiving situation.
+Use this pattern to decide whether a Method can achieve the required result in a named situation, where an applicability condition stops holding, or whether a specified claim transfers from a source situation. Start with the receiving use and the choice or conclusion it requires. Inspect the grounds for the Method’s relevant operation, the conditions on which they depend, and which of those conditions obtain in the receiving situation. A warranted rule can settle applicability before the first local performance. To establish what someone achieved there, use evidence of that performance.
 
-The first useful result is a bounded assessment of fit, an applicability limit, or transfer, with the evidence used and any missing premise. Identify the Method or candidate status, the situation and required result, relevant actual Work, adaptations and evidence reach. Where the question requires comparison, also distinguish source and receiving situations, matched and changed conditions, and material differences in capability, support, domain results and burdens.
+The first useful result is a bounded assessment of fit, an applicability limit, or transfer, with the evidence used and any missing premise. Identify the Method or candidate status, the situation and required result, the grounds for the conclusion, and any actual Work or adaptations on which it relies. Where the question requires comparison, also distinguish source and receiving situations, matched and changed conditions, and material differences in capability, support, domain results and burdens.
 
 Here *fit* and *transfer* are Plain practice names for two different decisions. Fit concerns a Method and a bounded situation or situation family. Transfer concerns whether a supported claim survives a stated move from source to receiving conditions.
 
@@ -30,7 +30,7 @@ Do not use this pattern to infer practical worth, causal contribution, general e
 
 Methods are often moved by name: a team says that a Method worked in one project, industry, or organization and applies it to another. The label hides the conditions that mattered—project purpose, development phase, technical problem, performer capability, support Systems, direct relations, adaptations, and the domain result being judged.
 
-The reverse inference can also fail. Any adaptation or local failure is treated as evidence that the Method cannot transfer, even when the changed condition, support defect, or altered Method semantics has not been identified. A useful transfer result must show what stayed the same, what changed, what Work occurred, and what claim survives.
+The reverse inference can also fail. Any adaptation or local failure is treated as evidence that the Method cannot transfer, even when the changed condition, support defect, or altered Method semantics has not been identified. A useful transfer result must show what stayed the same, what changed, which premises the original conclusion required, and what those premises establish under the changed conditions. Actual Work matters when the claim concerns performance or depends on observations from it.
 
 ### A.3.1.FT:2 - Problem
 
@@ -45,27 +45,27 @@ These shortcuts produce confident but unreplayable applicability claims. Practit
 | Local usefulness | A narrow fit result can guide current Work, while a broader transfer claim needs further support. |
 | Unlike situations | Difference can reveal a boundary, while too many simultaneous changes defeat interpretation. |
 | Method identity | Adaptation may be necessary, while semantic change can create a different variant. |
-| Natural Work | Workplace evidence has practical relevance, while conditions and contribution are less controlled. |
+| Natural Work | Workplace evidence shows how the arrangement operated in context. Some enabling conditions and concurrent changes may have gone unrecorded. |
 | Capability and support | They can determine outcomes, while their presence is easily attributed to the Method. |
 | Positive and negative evidence | Success and failure both matter, while selective reporting favours one direction. |
 | Decision speed | Teams need a bounded answer, while missing Work or comparability must remain a reason to stop. |
 
 ### A.3.1.FT:4 - Solution
 
-Method identity under A.3.1 does not establish fit for a use. Assess the required result against relevant Work and the conditions under which it occurred. A local fit result can be sufficient for the named decision. To claim transfer or a broader applicability boundary, recover the additional situation evidence and comparison on which that claim depends.
+Method identity under A.3.1 does not settle fit. Work back from the receiving result to the operations and conditions on which the Method’s contribution depends. Identify grounds for those conditions in the receiving situation. A shared premise, an invariant, a sufficient bound, applicable records or an observed performance may settle the question. A failed necessary condition can exclude the proposed use. For a claim drawn from observed Work, establish which features made that observation relevant and whether they carry over.
 
-Preserve Method semantics and status throughout. Compare source and receiving conditions when carrying a claim between them; use a situation capable of testing the asserted limit when qualifying an applicability boundary. Return the supported result at that scope, or the specific missing basis.
+Keep Method semantics and status fixed for the comparison. Separate a demonstrated failure from insufficient grounds for transfer. Seek a discriminating observation only where an open difference could change the conclusion. Report what the established grounds warrant for the receiving work.
 
 #### A.3.1.FT:4.1 - Pattern-Use Unfolding
 
 1. **Name the decision, subject, and status.** State whether the question concerns fit in one receiving situation, an applicability boundary, or transfer of one supported claim. Identify the `A.3.1`-admitted Method, or preserve the candidate account and name only separately admitted Methods whose enactment is claimed.
 2. **Bound the situations needed for the decision.** For local fit, name the situation or situation family and required result. For transfer, name both source and receiving families; for an applicability boundary, name the situations that can establish that limit. Record the conditions that matter to the claim, such as project purpose, development phase, technical or domain problem, performer population, holder capabilities, participating Systems, direct relations, constraints, support, qualification window and domain result.
-3. **Recover the relevant Work and evidence.** Use A.3.1.WT evidence only for actual Work whose performers, enacted admitted Method, temporal extent, containing System, conditions, deviations, burdens, adaptations, results, and evidence path are recoverable. Recover capability inputs and other direct relations on which the assessment relies. A report can support the account but does not admit Work by citation.
-4. **Select discriminating evidence when the claim needs it.** To test a transfer or applicability boundary, select or seek a receiving or held-out situation with a condition capable of defeating the claim: technical coupling, project phase, domain, performer or capability envelope, support relation, organizational condition, information availability, authority boundary, or another named condition. State why it matters. If minimality matters, name the alternatives, ordering criterion, and basis for treating one change as smaller or weaker; otherwise record concurrent changes and unknowns without ranking them.
+3. **Recover the grounds for the claim.** Trace the argument or source observation to the premise it supplies. Establish its applicability to the receiving conditions, including required capability, compatibility, support and timing. When relying on observed Work, recover the performers, enacted admitted Method, temporal extent, containing System, conditions, relevant adaptations, burdens and outcomes. A report may supply evidence for that account. Admission of a Work occurrence follows A.15.1.
+4. **Select discriminating evidence when the claim needs it.** When existing grounds leave a consequential boundary or transfer question open, select or seek a receiving or held-out situation with a condition capable of defeating the claim: technical coupling, project phase, domain, performer or capability envelope, support relation, organizational condition, information availability, authority boundary, or another named condition. State why it matters. If minimality matters, name the alternatives, ordering criterion, and basis for treating one change as smaller or weaker; otherwise record concurrent changes and unknowns without ranking them.
 5. **Qualify comparability when making a comparison.** Separate matched, changed, and unknown conditions. Do not call conditions controlled unless the basis supports it. Record concurrent changes and missing facts; use `missing-comparability-basis` when the comparison cannot distinguish the claimed boundary.
 6. **Establish any required receiving performance independently.** Admit receiving Work and every claimed enacted Method under their direct governors. Distinguish plans and reports from performed activity. For simulation, demonstration, training or support tasks, identify what was actually performed and what was only represented or planned; a demonstration may itself perform the Method in the required receiving situation. If the Work needed for the selected conclusion did not occur, return `missing-performed-work`.
 7. **Track adaptations and Method semantics.** Record changes to operations, dependencies, participant or responsibility conditions, stops, representations, support, and local Work. Ask whether reusable Method semantics stayed within the admitted Method. If they changed, return `variant-question[...]` to A.3.1.MV and evaluate the unchanged and changed branches separately.
-8. **Assess domain results and evidence reach.** Assess the required result and the burdens, deviations, failures and limitations that affect the fit decision. Compare results across situations when the selected claim requires it. Distinguish direct observation, report, association, contribution, and causality. Do not use immediate self-report as long-term transfer without the missing time evidence.
+8. **Assess the result for the intended use.** To support fit, give grounds for expecting or observing the required result under the conditions the claim covers. Include burdens, deviations or failures that affect that use. One unmet necessary condition can settle a claim of fit. Where the available situations cannot support the requested comparison, identify the missing correspondence and how it limits the conclusion. If an expert selected a test and the local team ran it successfully, establish what will supply selection in the receiving arrangement. Entrusting selection to the team alone requires grounds for that capability. A conclusion about continued use depends on what holds over the relevant time. Qualify any causal explanation used in the decision under C.28.
 9. **Classify the bounded result.** Return `fit-within[...]`, `failure-within[...]`, `applicable-if[...]`, `transfer-supported-between[...]`, `transfer-not-supported`, `missing-performed-work`, `missing-comparability-basis`, or the named missing premise. Plain labels may be used, but the situation, claim, evidence, and window must remain inspectable.
 10. **Route a defeated claim by result kind.** Return a failure directly only to the C.39.RQ situational requirement, C.32.MWA.PP architecture decision, B.1.5.CM construction result or admitted Method claim, or A.3.1.MV applicability or variant entry that the evidence contradicts. When the evidence may contradict an A.3.2.DE description, direct C.37 representation-use result or C.37.MP Method representation profile row, or A.15.8.MS support claim, return the bounded observation to A.3.1.CC; A.3.1.CC identifies and rechecks the maintained correction owner, including the direct governor of any lower representation result. Do not reopen every carrier.
 11. **State non-transfer and reopen conditions.** State the supported applicability boundary and any uncovered use that matters to the receiving decision. Reopen when one condition crosses the declared boundary, Method semantics change, evidence currentness expires, or a new unlike situation defeats the claim.
@@ -76,30 +76,32 @@ Preserve Method semantics and status throughout. Compare source and receiving co
 | --- | --- |
 | validation use | Fit, applicability, or transfer question; receiver; decision; claim; qualification window; stop. |
 | subject status | Admitted Method, or candidate account plus separately admitted enacted Methods. |
-| situation and Work evidence | Conditions of the situation being assessed, actual Work, performers, relied-on capability inputs, Systems and direct relations, adaptations, domain results, burdens and evidence reach. |
-| source and receiving situations | For transfer, identify both families and their Work evidence independently. For a broader applicability boundary, identify the situations needed to test it. Preserve missing facts. |
+| situation and grounds | Receiving conditions, required outcome and the premises that bear on it. For claims depending on actual Work, include the relevant performance, capabilities, support, adaptations, result and evidence reach. |
+| source and receiving situations | For transfer, identify both sets of conditions and the grounds for carrying the particular conclusion between them. For a broader applicability boundary, establish where those grounds hold and where they fail or remain open. |
 | discrimination | When a boundary or transfer claim needs a discriminating situation, state the selected condition and why it matters. In a comparison, separate matched, changed and unknown conditions. |
 | semantic continuity | Preserved Method semantics, local Work or support changes, and any reusable semantic change returned as a variant question. |
-| assessment | Result against the local fit criteria; differences across situations when needed; burdens and deviations needed for interpretation, evidence strength, and material limits on contribution or causal claims. |
+| assessment | Result against the local fit criteria, relevant differences between situations, burdens and deviations, what the evidence supports about the receiving arrangement, and grounds for any attributed effect. |
 | return | Bounded fit, failure, applicability, transfer, or missing-evidence result; direct C.39.RQ, C.32.MWA.PP, B.1.5.CM, or A.3.1.MV return, or a bounded A.3.1.CC observation for a possible A.3.2.DE description, direct C.37 representation-use result, C.37.MP Method representation profile-row, or A.15.8.MS support contradiction; non-transfer and reopen conditions; unaffected results preserved. |
 
 Keep the distinctions needed for the selected decision in the assessment and its referenced evidence. A table is optional; no separate record is needed for each position.
 
 #### A.3.1.FT:4.3 - What Changes in Practice
 
-Practitioners can use a sufficient local fit result without arranging an unrelated comparison. When they transfer a claim or qualify an applicability boundary, they can show the relevant source and receiving conditions, actual Work, semantic continuity, discriminating evidence, and the claim that survived or failed.
+The practitioner can answer for the named use and show what the argument establishes if circumstances change. For transfer, identify the premise responsible for the original result and test it against the receiving conditions. Use occurrence evidence where the conclusion depends on what a participant actually did.
 
 A narrow result such as “Fits this decision for this holder and support window; transfer untested” can support a decision to use the Method now while protecting later teams from a universal claim.
 
 #### A.3.1.FT:4.4 - Constructed Fit Case
 
-Continue the constructed A.3.1.WT evidence for admitted `M-Unit-Review-1`. The immediate decision is whether the Method fits pre-release review of temperature-sensor reports for `Reviewer-17` through day D30 when mixed Celsius/Kelvin inputs may occur. It is not yet a decision about another reviewer, product family, tool, or organization.
+Continue the constructed A.3.1.WT case for admitted `M-Unit-Review-1`. A release manager asks whether `Reviewer-17` can use it on the eligible temperature-sensor reports through D30, including reports with mixed Celsius/kelvin inputs. First establish which part of that decision the trial already answers.
 
 `W-Rep-1` and `W-Disc-1` are actual Work in `Calibration-Team-A`. The same reviewer, capability input `CAP-R17-1` with qualification record `QR-R17-1`, MethodDescription edition 4, manually retrieved conversion table, release boundary, and containing System are recorded. The discriminating change is the Celsius/Kelvin mismatch in `S-Disc-1`; it can defeat the claim that the Method exposes a unit mismatch before the release decision. In `W-Disc-1`, the reviewer normalizes values, detects the mismatch, stops release, and returns the report. A.3.1.CC has separately corrected direct use result `C37-UR-Flow-4` and its governed representation result `REP-UR-Flow-4`, which had omitted normalization for that named use.
 
-Return `fit-within[Reviewer-17, temperature-sensor reports, edition 4, manual conversion table, through D30]` for the named release-review decision. Also return `transfer-not-tested` for other holders, product families, support routes, qualification windows, or organizations. The two occurrences do not establish causal superiority or practical worth.
+Return `fit-within[Reviewer-17, S-Rep-1 and S-Disc-1 as observed, edition 4, manual conversion table]` for the two reviews under the recorded conditions. The qualification record reports detection of all four seeded unit cases with edition 4. The qualification remains current through D30 under its own criterion. To extend the result to every eligible report through D30, establish what those reports may contain, how the reviewer can recognise and handle each relevant case by the release decision, and whether the necessary support will be available then. For example, a missing unit label may require information that arrives too late. If the method permits timely referral and the commission allows a report to be held, a justified hold can be the right outcome. A promise to clear every report by a deadline needs grounds for clearance as well. Where the trial and other grounds leave one of these conditions open, report that limit on the through-D30 claim. Transfer to another reviewer, product family or support route also depends on the conditions of that use. A claim of causal superiority or practical worth would require its own comparison.
 
 For the narrower decision about the same-unit report already reviewed in `W-Rep-1`, its observed acceptance can support fit for that named situation, reviewer and support window. `W-Disc-1` is not a prerequisite for this narrower result. Evidence about mixed-unit handling is needed when that condition enters the receiving question.
+
+For a different commission, suppose two reporting systems express the same readings in Celsius and kelvin, use a verified exact unit conversion, and apply equivalent tolerances at the same resolution. The conversion preserves the comparison with the applicable limit. Those facts carry the comparison rule to the new system before anyone runs a report there. A question about whether the next reviewer will recognize the units in time still depends on their preparation, available indications and support. A claim that the review actually occurred requires its own evidence.
 
 If the reviewer had changed the reusable operation from unit normalization to an approximation rule absent from `M-Unit-Review-1`, preserve the observed Work but return `variant-question[approximation-rule]` to A.3.1.MV. Do not call the changed branch successful transfer of the unchanged Method.
 
@@ -109,7 +111,7 @@ The SSFD workplace evidence supplies varied actual-project reports and a decisio
 
 Use Project 11 as a source situation only after the SSFD Method or candidate status, relevant Work evidence, performer and capability facts, support conditions, and relied-on claim are recovered. Use Project 32 as a discriminating unlike situation because the closed-loop relation can challenge a representation or applicability claim. Do not infer that Project 11 preceded Project 32, that the same performers and capabilities were present, or that a difficulty establishes whole-Method failure.
 
-A result may be narrow: Project 11 supplies bounded evidence for one functional-analysis situation; Project 32 raises a question about a broader representation claim. A.3.1.CC can determine whether correction is needed when the relevant claim and evidence are recoverable; a transfer conclusion requires the receiving Work and comparison basis. The 41-report set broadens the evidence pool but does not establish transfer across every project stratum or causal contribution by SSFD alone.
+A result may be narrow: Project 11 supplies bounded evidence for one functional-analysis situation; Project 32 raises a question about a broader representation claim. A.3.1.CC can determine whether correction is needed when the relevant claim and evidence are recoverable; to transfer an observed result, establish the material correspondence and any local Work evidence needed by that claim. The 41-report set broadens the evidence pool but does not establish transfer across every project stratum or causal contribution by SSFD alone.
 
 #### A.3.1.FT:5.1 - Unlike-Domain and Current-Alternative Probes
 
@@ -121,15 +123,15 @@ The sustainable-design workshops supply bounded applications of The Natural Step
 
 The [full EC-417 application](../04-first-principles-framework-architectural-reference/16-fpf-reference-16---big-fpf-storylines.md#fpfreference169---choose-the-method-development-result-needed-for-release-ec-417) supplies the receiving problem, alternatives, calculations and the distinct limits used below.
 
-`C-EC-Release-v2` remains a candidate account. The three support-use Work occurrences from A.15.8.MS do not perform a release and cannot support release fit or transfer. To assess local release fit, recover actual release Work, its performers, separately admitted enacted Methods, capability inputs, Systems and direct relations, support conditions, domain result, burdens, deviations and authority facts needed for that decision. A transfer or applicability-boundary claim additionally requires the receiving or held-out release evidence capable of testing that claim.
+`C-EC-Release-v2` remains a candidate account. Ask what the three A.15.8.MS support-use Work occurrences establish for the proposed release. Records showing that its reviewers obtained the required material under the same access conditions can establish the access premise. For prospective applicability, carry that premise into the release decision with the other grounds for the proposed way of working, performers, inputs, authority, timing and joint operating conditions. These grounds can support a decision to use the proposal before the first release. For `fit-within[...]` attributed to an admitted Method, establish its identity under A.3.1 as well. To report what happened in a local release, establish the actual release Work, relevant performers and enacted Methods, support used, result and any burdens or deviations on which that report depends. Seek a held-out situation when an open premise calls for that evidence.
 
-While the required release Work is absent, return `missing-performed-work`. Return `missing-held-out-situation` only when the selected boundary or transfer claim needs that missing situation. Preserve the candidate branch and the unsupported `CUR-EC417-CadenceEffect-1`; no cadence or transfer claim becomes supported by planning three releases.
+Return `missing-performed-work` when the requested conclusion depends on a performance that has yet to be established, such as this local release or what it achieved. Return `missing-held-out-situation` when the selected boundary or transfer claim depends on that missing situation. Preserve the support results and the candidate branch. The three planned releases leave `CUR-EC417-CadenceEffect-1` open.
 
 ### A.3.1.FT:6 - Bias-Annotation
 
 | Bias | Likely drift | Repair |
 | --- | --- | --- |
-| label-transfer bias | The same Method name is treated as evidence of the same Method and conditions. | Recover Method status, semantics, actual Work, and situation positions. |
+| label-transfer bias | The same Method name is treated as evidence of the same Method and conditions. | Identify the Method, the principle or observed result whose transfer is claimed, and the conditions needed for its use in the receiving situation. |
 | success-generalization bias | One favourable occurrence becomes a situation-family claim. | Return the narrow fit result and name the missing transfer evidence. |
 | uncontrolled-sameness bias | Unrecorded capability, support, and organizational conditions are called matched. | Separate matched, changed, and unknown positions with their bases. |
 | adaptation laundering | Changed reusable semantics are called local tailoring. | Return an A.3.1.MV variant question and preserve both branches. |
@@ -141,12 +143,12 @@ While the required release Work is absent, return `missing-performed-work`. Retu
 
 - [ ] The decision is explicitly fit, applicability, or transfer for one claim.
 - [ ] The Method is admitted or the proposed whole remains a candidate account.
-- [ ] The situation being assessed names decision-relevant conditions; transfer identifies source and receiving families, and an applicability boundary identifies the situations needed to test it.
+- [ ] The assessment states the conditions and premises the decision actually needs. Transfer identifies both situations and why the relevant conclusion carries across them, fails or remains open. A claim about actual receiving performance identifies the Work and its grounds.
 - [ ] Actual Work needed for the conclusion, performers, enacted admitted Methods, relied-on capability inputs, Systems, direct relations, results and evidence paths are recoverable or returned as gaps.
 - [ ] Any required discriminating situation is selected because its condition can expose a limit in the claim.
 - [ ] When situations are compared, matched, changed and unknown conditions are separate.
 - [ ] Adaptations are recorded, and reusable semantic change opens a variant question.
-- [ ] Direct observation, self-report, association, contribution, and causality are not merged.
+- [ ] The conclusion follows from evidence about the conditions material to that use. A successful transfer needs grounds for carrying the relevant result into the receiving situation. An unmet necessary condition can settle failure within the stated conditions. When the needed comparison cannot be made, the conclusion identifies what is missing. Any causal explanation used in the decision has its own grounds.
 - [ ] The result is bounded by holder, situation, support, time, and evidence.
 - [ ] Fit is not overread as practical worth, general effectiveness, capability, or cultural adoption.
 
@@ -162,13 +164,13 @@ While the required release Work is absent, return `missing-performed-work`. Retu
 
 ### A.3.1.FT:9 - Consequences
 
-Fit and transfer claims become inspectable and narrow enough to guide decisions. Practitioners can see which conditions matter, what actual Work supports the result, whether the same Method persisted, and where another situation must reopen the claim.
+A bounded fit or transfer judgment tells the recipient which conditions matter, what grounds establish them, whether the same Method persists, and which changes call for a new judgment.
 
 The cost is that many plausible transfers end as missing evidence or a smaller applicability envelope. A semantic adaptation may also leave a separate variant to maintain.
 
 ### A.3.1.FT:10 - Rationale
 
-Transfer is not a property carried by a Method name. It is a claim about preserved reliance across a stated change in conditions, supported by actual Work and bounded evidence. A discriminating unlike situation is valuable because it can defeat the claim; it need not resemble a statistically representative sample.
+A transfer claim carries a specified conclusion into changed conditions. Its strength depends on the argument connecting those conditions to that conclusion. An observation can disclose a material limit. A principle with established premises can also settle the case. Evidence of actual receiving Work becomes necessary when that performance is itself at issue or supplies a premise still missing.
 
 Separating semantic continuity from local Work and support changes protects Method identity. It also lets a failure improve the applicability account without forcing rejection of the Method in situations for which evidence remains valid.
 

@@ -16,13 +16,13 @@
 
 **First useful move.** Write the readable relation sentence, identify the relation kind and relation-participant meanings, and name where its predicate, applicability and occurrence-identity rule are defined. For every relation-participant meaning whose reusable typed declaration is current, add one SlotSpec to the `RelationSignature`, using the compact declaration notation `SlotSpec = <SlotKind, ValueKind, refMode>`. `refMode` states how an assertion or relation-occurrence description episteme carrying a relation-participant designation denotes the entity named under that meaning. When refMode is a RefKind, the reference retains that RefKind and its referent retains the declared ValueKind; the SlotSpec remains declaration content. If the direct relation or its relation obtaining predicate is still unclear, stop and use `A.6.P` or `A.6.RSIR`; declaration notation cannot recover a missing ontology.
 
-**First-minute result.** For `Robot_7 is assigned to InspectorSystemRole for this inspection shift`, start from an independently defined species under `U.SystemRoleAssignment`, here illustrated as `InspectionShiftAssignment`, and use its predicate and case facts to determine whether a shift occurrence obtains. When reusable participant typing is needed, give `HolderSystemSlot` the value kind `U.System` and entity-reference mode; give `AssignedSystemRoleKindSlot` the value domain `InspectorSystemRoleKindDomain` and `ByValue` designation mode. Add another participant only when it changes the predicate or occurrence identity. An assertion designates the occurrence's participants and states its `assignmentInterval` separately. Stop there unless later work must substitute a participant, distinguish this assignment episode from another, or test an A.2.5 state condition.
+**First-minute result.** Suppose a shift planner needs a declaration for inspecting assignments the planner will receive. The independent `InspectionShiftAssignment` species under `U.SystemRoleAssignment` gives two participant meanings. For the system that holds the assignment, declare `HolderSystemSlot` with `ValueKind = U.System` and entity-reference mode. For the assigned system-role kind, declare `AssignedSystemRoleKindSlot` with value domain `InspectorSystemRoleKindDomain` and `ByValue` designation mode. These meanings determine the declaration before a robot is assigned. To assess the later claim `Robot_7 is assigned to InspectorSystemRole for this inspection shift`, use the species predicate and the facts for that shift. Its `assignmentInterval` is stated separately. Section 5.1 shows the assertion and what happens when the proposed holder changes.
 
 **What goes wrong if missed.** In the readable sentence `Robot_7 is assigned to InspectorSystemRole`, the holder system, the system-role kind, each declaration-local SlotKind, and each participant designation carried by an assertion episteme can collapse into one word such as *role* or *holder*. A later claim then cannot tell what may be substituted, what retains identity, or whether it refers to a system, a system-role kind, an assignment occurrence, an assignment-state relation, or an assertion about either occurrence.
 
 **What this buys.** Engineers retain a readable relation sentence while its load-bearing uses gain participant typing, unambiguous reference use, and a route to the definitions or constraints for predicate truth and occurrence identity.
 
-**Not this pattern when.** Use `A.6.P` or `A.6.RSIR` first while the relation kind or its participants remain unresolved. Use `A.6.REL` for relation-occurrence identity, `A.6.0` for the containing `U.Signature`, `C.2.1` for an assertion or description, and `C.3` for a local kind needed by membership, substitution, typed quantification, or subkind use; use `C.3.2` for its declaration, membership judgment, or optional extension. In every other case, find the direct relation's accepted definition before applying this slot discipline.
+**Not this pattern when.** Use `A.6.P` or `A.6.RSIR` first while the relation kind or its participant meanings remain unresolved. Use `A.6.REL` for relation-occurrence identity, `A.6.0` for the containing `U.Signature`, `C.2.1` for an assertion or description, and `C.3` for a local kind needed by membership, substitution, typed quantification, or subkind use; use `C.3.2` for its declaration, membership judgment, or optional extension. In every other case, find the direct relation's accepted definition before applying this slot discipline.
 
 
 The following objects meet at this boundary and remain distinct:
@@ -57,7 +57,7 @@ These errors change which substitutions are valid, which object a later claim ma
 
 ### A.6.5:4 - Solution
 
-Apply relation-declaration slot discipline only after the direct relation and its relation-participant meanings have been recovered. Give every relation-participant meaning needed by the current typed use one complete `SlotSpec` in the `RelationSignature`. Let the direct-relation definition supply the obtaining predicate and occurrence-identity rule. Follow the `A.6.REL` minimum-current-object rule: a later use adds only its current object and the direct relation to an already recoverable object rather than restating the complete relation-object architecture.
+Apply relation-declaration slot discipline only after the direct relation and its relation-participant meanings have been recovered. Give every relation-participant meaning needed by the current typed use one complete `SlotSpec` in the `RelationSignature`. Use the direct-relation definition to determine which kinds can participate and what would make the predicate hold. This gives the grounds for typing a proposed use before any instance occurs. A conclusion about which entity actually participated needs the facts of that case under the same definition and its occurrence-identity rule where needed. Follow the `A.6.REL` minimum-current-object rule: a later use adds only its current object and the direct relation to an already recoverable object rather than restating the complete relation-object architecture.
 
 #### A.6.5:4.0 - Ontological status of the discipline
 
@@ -160,7 +160,7 @@ A C.2.1 assertion of `derivedUsingRuleContent` or `evaluatedAgainstRuleContent` 
 Start with the lightest object that supports the named engineering use. The branch diagram maps three independent receiving-use thresholds that share one recovered direct relation; none is a prerequisite for either of the others:
 
 ```text
-readable assertion of the recovered direct relation
+readable statement of the relation, its participant meanings and its obtaining condition
   +-- reusable RelationSignature with SlotSpecs, when the receiving use needs reusable participant typing
   +-- explicit occurrence individuation, when a named claim or direct relation relies on occurrence identity
       +-- relation-occurrence description episteme, when a receiving episteme describes the occurrence
@@ -280,7 +280,7 @@ A declaration episteme describes reusable relation semantics; a separate represe
 
 ### A.6.5:7 - Conformance Checklist
 
-1. The direct relation kind and the definition of its predicate, applicability, participant meanings, and occurrence-identity rule are named before SlotSpecs are declared.
+1. The direct relation kind and the definition of its predicate, applicability, participant meanings, and occurrence-identity rule are named before SlotSpecs are declared. These meanings and conditions can be recovered for a proposed use before anyone enacts it.
 2. Every participant meaning needed by reusable typed use has one complete `<SlotKind, ValueKind, refMode>` SlotSpec in the `RelationSignature`.
 3. Each SlotKind is local to the one `RelationSignature` that contains its SlotSpec.
 4. World-side relation prose names participant meanings and actual participants. Declaration prose uses `SlotSpec` for the complete declaration and `...Slot` for its declaration-local SlotKind. Receiving-episteme prose distinguishes a designation from its referent, using `...Ref` for the reference kind or value. For a field receiving relation semantics, apply the §4.2 declaration or representation-correspondence rule. Position and place remain ordinary representation words unless a declaration establishes a SlotSpec.

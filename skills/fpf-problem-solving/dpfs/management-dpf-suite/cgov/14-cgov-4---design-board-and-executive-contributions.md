@@ -7,7 +7,7 @@
 
 Use this pattern when a corporation's board and executive management cannot explain what they need from one another, when directors take over delegated work, or when the board receives a completed proposal too late to influence it.
 
-Begin with the matters the arrangement must handle, the people entitled to bring them, and the power or duty of each participant. A commission for one investment decision may finish with an allocation of its contributions. A standing arrangement must support the range of matters and combinations of requests those participants may bring. Determine which preparation, scrutiny, decision, action and review each requires and how their results reach the responsible parties. Reuse a sufficient existing arrangement.
+Begin with the matters the arrangement must handle. Identify the holder of the right to bring each matter and the power or duty of each participant. When another party submits on the holder’s behalf, establish its mandate to the extent the validity of the submission depends on it. A commission for one investment decision may finish with an allocation of its contributions. A standing arrangement must support the range of matters and combinations of requests those participants may bring. Determine which preparation, scrutiny, decision, action and review each requires and how their results reach the responsible parties. Reuse a sufficient existing arrangement.
 
 ### CGOV.4:2 - Problem
 
@@ -75,7 +75,7 @@ A familiar national or listed-company model can be mistaken for the corporation'
 
 ### CGOV.4:7 - Conformance Checklist
 
-Does the design allocate the contributions needed for the commissioned matter or range of matters, under the governing powers? Can the responsible people obtain their information and support in time, including when independently permitted calls occur together? What establishes the design, its introduction and its subsequent use respectively? Existing authority and sufficient support can sustain ordinary delegated action.
+Does the design allocate the contributions needed for the commissioned matter or range of matters, under the governing powers? Can the responsible participants obtain and use their information and support in time, including when independently permitted calls occur together? What establishes the design, its introduction and its subsequent use respectively? Existing authority and sufficient support can sustain ordinary delegated action.
 
 ### CGOV.4:8 - Common Anti-Patterns and How to Avoid Them
 

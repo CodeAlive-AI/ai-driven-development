@@ -17,7 +17,7 @@ Use RHY.12 to develop a human rhythmic capability through representative practic
 | Available result | Next use when needed | Return when the result is insufficient |
 | --- | --- | --- |
 | A localized difficulty and selected relation | Choose a correction, representation or variant through RHY.3–.8 | Return to the actual passage if the description hides a consequential change. |
-| A represented or transformed rhythm | Arrange its actions and cues through RHY.9 | Obtain the missing duration, reference, technique or feasible action. |
+| A represented or transformed rhythm | Arrange its actions and cues through RHY.9 | Recover a prescribed duration, reference or technique where needed. If the music leaves a choice open, establish who chooses and whether the partners can act on it in time. |
 | Available actions and an identified relation between them | Coordinate reference and layers through RHY.10/.11. A record of the joint passage may already establish the contribution required of a particular performer. | Reconsider the arrangement or develop the contribution the evidence shows to be missing. A solo test of mutual adjustment removes its responsive partner. |
 | A successful exercise | Use RHY.12 to restore the intended performance when needed. Use RHY.13 to assess performance under a changed condition. | Preserve the narrower success. If the full performance fails, examine which differences could explain it. |
 | A performance or reported response | Use RHY.14 to establish what was observed and what it supports for rehearsal, design, teaching or a report. | Correct an observation condition if it matters and the correction is attainable, or state what remains unknown. |

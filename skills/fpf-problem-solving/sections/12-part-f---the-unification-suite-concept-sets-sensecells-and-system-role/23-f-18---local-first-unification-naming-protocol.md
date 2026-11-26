@@ -13,7 +13,7 @@ Use `F.18` when a name must become stable, public, Core-facing, reusable under m
 
 **First useful move.**
 
-1. Recover the exact value and the pattern containing its defining or testing rule.
+1. Start with what the intended reader must distinguish when using the name. Recover the value meant there and the pattern that defines or tests it.
 2. Decide whether ordinary local wording is enough or later use needs a durable name.
 3. For a durable name, reuse a current naming settlement that already covers this value and use. Otherwise compare the plausible names and record the Tech label, any Plain designation needed for a stated didactic use, the selection reason and the condition for reconsidering the choice in a `NameCard`.
 
@@ -72,7 +72,7 @@ Recover the governed value, then record a naming settlement whose kind, effectiv
 
 Use a local-first naming protocol:
 
-1. Recover the governed value, its kind, and its subject pattern.
+1. Start from what the recipient will do with the designation. In the sentence or instruction where it will be used, what must it pick out? Which nearby value would require a different action or interpretation? Trace the intended value to its kind and subject pattern. For a name of a relation or an organized whole, establish which relation or organization the designation must preserve.
 2. Decide whether the expression should remain local or the current use needs a durable reusable name; apply `F.14` before adding a card, cell, or row.
 3. For a durable name, constitute one `NameCard` episteme under `C.2.1`; keep the value, its kind, the card, selected designations, exact local sense, and any basis or Bridge relation distinct.
 4. Choose the Tech label and any Plain designation needed for a stated didactic use from the smallest candidate set that covers the live head-term families and plausible neighbouring objects.
@@ -452,13 +452,13 @@ Consider the following R7 naming candidates under the by-value `FPFCoreReference
 
 Suppose the E.10 TokenClass, reserved-name and allowed-scope prerequisites have not yet been established for these candidates. They remain naming candidates. There is no current NameCard or public row to cite until the lexical prerequisites and naming decisions for that row are settled. These naming uses require no semantic correspondence and make no Bridge claim.
 
-| Candidate expression | Exact local sense and governed value | Covered head families and rejected overread | Three-arena invariance | Reopen/close condition |
+| Candidate expression | Exact local sense and governed value | Covered head families and rejected overread | Illustrative uses of the proposed sense | Reopen/close condition |
 | --- | --- | --- | --- | --- |
 | `SelectedRuleContentSubgraphDesignation` | use-relative designation resolving the exact nonempty base subgraph selected in one identified derivation or criterion-selection claim; governed node `SelectedRuleContentSubgraphDesignation@RuleContentBasisFindingDefinition-R7` | selected subgraph/designation, selected basis/reference, and rule-bearing classifier families were compared; reject intrinsic `RuleBearing...`, generic `Base`, and reference-only heads because the value is selection-relative and by-value | manufacturing assembly-rule selection; healthcare protocol-premise selection; cloud deployment-policy criterion selection | close only when exact `LEX.TokenClass`, `LEX.Reserved-Names`, and `LEX.AllowedScopes` values and assertions pass under `FPFCoreReferenceScheme`; reopen on R7 semantic or scheme change |
 | `derivedUsingRuleContent` | predicate true only when an identified derivation claim used exact base content as a formal premise under a declared inference rule/application to produce exact dependent content; governed node `derivedUsingRuleContent@RuleContentBasisFindingDefinition-R7` | derived-using, derived-from, supported-by, and based-on families were compared; reject `derivedFrom` because source/provenance and semantic derivation are broader, and reject `supportedBy`/`basedOn` because they hide actual formal-premise use | manufacturing configuration derivation; healthcare dosage derivation with evidence kept separate; cloud configuration derivation | same lexical prerequisites as above, plus exact R7 predicate identity |
 | `evaluatedAgainstRuleContent` | predicate true only when an identified criterion-selection claim selected exact base content for one bounded evaluation claim concerning exact dependent content; governed node `evaluatedAgainstRuleContent@RuleContentBasisFindingDefinition-R7` | evaluated-against, assessed-under, governed-by, and checked-with families were compared; reject `governedBy` and generic `checkedWith` because they hide criterion selection and can imply authority, Work, or tool use | manufactured configuration evaluation; healthcare protocol-conformance evaluation; cloud release evaluation against deployment policy while operational Work stays separate | same lexical prerequisites as above, plus exact R7 predicate identity |
 
-A collision-free text search does not establish the missing governed lexical values. In this situation, quote the spellings as candidates when discussing the R7 declaration; cite a current NameCard or public term row only after the lexical prerequisites and naming settlement are established.
+The examples show how to read each candidate expression under its stated rule. To justify an expression for a wider vocabulary, establish which defining relation its uses share and where that reading fails. For a proposed universal Kernel **kind**, use the independent projections required by A.8. For the name of an already qualified predicate or designation, justify that lexical choice for its intended uses. A current NameCard or public row also requires the lexical prerequisites and naming settlement.
 
 #### F.18:4.2e - Architectural Reference NameCard
 
@@ -495,7 +495,7 @@ The full title, filename, declared publication-unit key and stable `SectionRef` 
 
 #### F.18:4.3 - Candidate Selection
 
-Build the smallest candidate set that covers the live head-term families and plausible neighbouring-object readings that could change the decision. A cited external standard may fix the label under §4.1. One supported candidate is enough when examination leaves no live alternative that could change the choice. Stop when the relevant comparison is sufficient. If a deadline forces closure while a plausible alternative remains untested, record that exception in `CandidateCoverage` and make it part of `RefreshCondition`.
+Find a sentence in which this reader will have to use the name. Start with the candidates the commission or applicable standard supplies. Where developing candidates is part of the job, form a candidate from the distinction that matters in that sentence. Change a participant, a condition or the organization of the parts within the allowed use. Does the word still pick out the intended value where it should, and does it distinguish a neighbouring value where the reader needs to tell them apart? Try another head term or qualifier where that answer changes. When the set is yours to develop, keep enough alternatives to cover the distinctions that change the choice. A cited external standard may fix the label under §4.1. If the commission credits someone with choosing, establish who selected the designation and what the standard, another participant or a tool had already fixed or supplied. Choosing from a supplied pair can be an independent decision. A participant may instead develop a pair of candidates and entrust the choice to a committee. One supported candidate is enough when examination leaves no live alternative that could change the choice. Stop when the relevant comparison is sufficient. If a deadline forces closure while a plausible alternative remains untested, record that exception in `CandidateCoverage` and make it part of `RefreshCondition`.
 
 Judge candidates on:
 
@@ -714,9 +714,9 @@ Recovered values:
 - `ShipbuildingMethod` or a method family under A.3.1; if a separately identified `ShipbuildingMethodDescription : U.MethodDescription` episteme is current, name it separately under A.3.2 only when its exact `EntityOfConcern` is that Method;
 - `HullAssemblyWork` under the Work patterns.
 
-Here `HullAssemblyWork` is a work-family label or a label in a plan or assignment episteme. A designator such as `HullAssemblyWork-42@2026-07-15T09:10–11:35` names performed Work only when each exact actual performer has its A.13 core and A.15.1 independently admits the occurrence from the Method actually used, temporal extent, containing System, affected hull referent, material bindings, resource-use facts, and any current continuity policy.
+Here `HullAssemblyWork` is a work-family label or a label in a plan or assignment episteme. A designator such as `HullAssemblyWork-42@2026-07-15T09:10–11:35` names performed Work when the System credited with assembly at the stated scale has its A.13 core and A.15.1 independently admits the occurrence from the Method actually used, temporal extent, containing System, affected hull referent, material bindings, resource-use facts, and any current continuity policy. The established assembly Work of a crew may be named even when authorship of one weld remains open.
 
-If the naming record also expressly represents which assignment covered that Work, it cites that same obtaining A.13 assignment and adds the F.6 attribution relation; missing or failed attribution alone leaves independently admitted Work and its name intact, subject to the premise recheck in section 5.3.
+If the naming record also expressly represents which assignment covered that Work, identify the relevant performer's contribution and its obtaining A.13 assignment, and add that F.6 link. Missing or failed attribution alone leaves independently admitted Work and its name intact, subject to the premise recheck in section 5.3.
 
 A changed hull state, measurement result, evaluation verdict, delivery occurrence, or acceptance verdict remains a separately defined and separately named value.
 
@@ -819,7 +819,7 @@ Name a current Method, MethodDescription, or performed Work through A.3.1, A.3.2
 
 #### F.18:7.2a - Method Relation Structure and Method Algebra Name
 
-A lab says: "Use the robot-engineering method algebra: choose scouting, then calibration, then training; fall back to teleoperation if training fails."
+A lab says: "Use the robot-engineering method algebra: choose scouting, then calibration, then training; fall back to teleoperation if training fails." An operator asking what to do on a training failure can already use the stated fallback. A terminology editor asks what must keep the same name if the lab revises those instructions. Keep the list of methods fixed and change the fallback to apply on a calibration failure. The individual methods can keep their names while the arrangement changes. This identifies the relation structure as a candidate for its own name if a reader needs to cite that arrangement. To devise a fallback, first establish the result the lab still requires, how the operator will recognize the condition in time and which alternative can deliver that result.
 
 Recovered values:
 
@@ -913,8 +913,8 @@ Use these checks before a durable name is reused in a pattern. If an F.17 row is
 | Bridge and bounded use | Apply the F.9 predicate only to exact local senses whose `<ReferenceScheme, LocalSenseClaim>` projections differ. Same projection plus another expression is designation; same scheme plus another claim can open the F.9 question; scheme difference opens only the question; no current correspondence use creates no Bridge or use claim. A separate C.2.1 claim says whether an obtaining Bridge suits the named naming use, and A.10 or B.3 supplies the reliance rule. None authorizes or proves that reuse occurred. |
 | Local-plain non-use | A one-off claim about whether an exact Bridge suits a named use stays in ordinary wording. No `NameCard`, public claim kind, or durable CamelCase name is created unless an independent later reuse need reopens F.18. |
 | Lineage and reopen | Rename, alias, split, merge, and retirement history is recorded under `F.13`, and the card names the change or repeated reader error that reopens this settlement. |
-| Reader use | A practitioner can tell what to say, the relevant use limits, and where to go if the name is not enough. |
-| Work-name boundary | An action nominal remains a morphology cue: a hidden claim-bearing function-like use goes through A.6.F, while an already recovered value is named under its direct pattern. A WBS or Work Package label remains plan- or assignment-episteme content. A performed-Work name is accepted only for one occurrence whose exact actual performers have A.13 cores and which A.15.1 independently grounds. Add assignment and F.6 refs only when the naming record or receiving use expressly represents precise assignment-bound attribution; missing or failed attribution alone leaves independently admitted Work and its name intact, subject to the premise recheck in section 5.3. Neighbouring production claims, measurement results, evaluation results, decisions, delivery occurrences, and acceptance verdicts stay under their direct patterns. |
+| Reader use | In the text where the designation will be used, a practitioner can identify its referent, apply the relevant limits and reach the subject method when a decision about the referent is required. If a task calls for an independently chosen name, the evidence shows who selected it and what was fixed or supplied. Attribute development of the alternatives or of their distinguishing criteria separately when that contribution is in question. |
+| Work-name boundary | An action nominal remains a morphology cue: a hidden claim-bearing function-like use goes through A.6.F, while an already recovered value is named under its direct pattern. A WBS or Work Package label remains plan- or assignment-episteme content. A performed-Work name is accepted only for one independently grounded A.15.1 occurrence with the A.13 performer basis needed at the claimed scale. Add assignment and F.6 refs only when the naming record or receiving use expressly represents precise assignment-bound attribution; missing or failed attribution alone leaves independently admitted Work and its name intact, subject to the premise recheck in section 5.3. Neighbouring production claims, measurement results, evaluation results, decisions, delivery occurrences, and acceptance verdicts stay under their direct patterns. |
 
 Regression checks:
 

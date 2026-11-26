@@ -37,7 +37,7 @@ The D continued-use policy is a supported five-year service policy with the spec
 
 ### EAM.Application:1.2 - The request about D and its answer
 
-The infrastructure committee asks the EAM practitioner whether D should continue under the supported maintenance policy or be replaced now, assuming both choices have funding and a suitable window. MNT can adequately recommend the 0.50 intervention for maintained functioning. EAM asks the additional value question at the same service and horizon.
+The infrastructure committee asks the EAM practitioner whether D should continue under the supported maintenance policy or be replaced now, assuming both choices have funding and a suitable window. A maintenance planner can use the functioning evidence to recommend the initial 0.50 intervention. The committee has asked the asset practitioner to compare the value of that policy with replacement over the same service horizon.
 
 Continued use costs `0.50 + 1.00 × a = 5.079707`. Replacement costs `3.00 + 0.35 × a − 1.20 × d = 3.567767`. Replacement saves 1.511940 in present cost within the admitted comparison. The practitioner can therefore recommend replacement under the supplied service, engineering, funding and timing conditions. Ordering the work and accepting the asset back into service are separate actions.
 

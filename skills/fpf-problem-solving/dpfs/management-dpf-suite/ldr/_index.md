@@ -43,7 +43,7 @@ Framework text adapted from Anatoly Levenchuk's Organization Change Engineering 
 
 ## Practical entries
 
-Start with your question, a decision you face or a difficulty you want to explore. Who is to choose a direction, agree to a contribution or make something possible for someone else? Use the entry or the Table of Contents to find that work. Read the method for your question. When consulting a worked case, identify which choices its author has made and which choices are still yours. You can ask an assistant to explain, in the ordinary language of your work, what the method helps you understand or do and where its grounds run out.
+Start with your question, a decision you face or a difficulty you want to explore. Who is to choose a direction, agree to a contribution or make something possible for someone else? Use the entry or the Table of Contents to find that work. Read the method for your question. When consulting a worked case, identify what the case already fixes and which choices your situation leaves open. If you need help, ask for the contribution your joint work needs. An assistant with access to the rota might identify where agreed cover runs out. Arranging cover also requires someone able and authorized to secure it. Ask for an explanation in the language of the work when the grounds for that choice are unclear.
 
 ### OWN-ACTION — A chosen purpose is not becoming action
 
@@ -65,7 +65,7 @@ People agree that something matters, but interpret the situation differently or 
 
 - **Situation:** A customer accepts a date, a provider offers help and a manager promises time, but the full arrangement cannot yet be performed.
 - **Question:** What complete proposal can the affected parties accept and supply?
-- **First useful result or blocker:** The same feasible proposal accepted by the parties whose contributions it needs, or an explicit unresolved condition or refusal.
+- **First useful result or blocker:** A feasible joint arrangement covered by existing commitments and any further assent its terms require, or the particular missing contribution, decision or refusal.
 - **Start with:** [LDR.2](09-ldr-2---agree-feasible-joint-contributions.md).
 - **Stop or return:** Use an agreement that already covers the needed contributions. Reconsider the affected whole when a relied-on contribution changes.
 
@@ -81,7 +81,7 @@ People agree that something matters, but interpret the situation differently or 
 
 People understand parts of a proposal, yet advice, objections, commitments and actual work do not connect into a supported beginning. Use [LDR.4](10-ldr-4---prepare-a-proposal-for-decision-and-first-use.md) to connect the proposal to its real consequences and obtain the contribution needed next. Missing authority, means or agreement remains explicit.
 
-Name the receiving work and keep sufficient help. Obtain trusted judgement, examine the consequences, and answer objections or retain an unresolved concern. Agree feasible contributions and obtain effective authority. Make the same start mutually visible, complete the first useful handover, and continue with the help still needed. Reopen the affected question when conditions change. These moves need not become a sequence of meetings.
+Name the receiving work and keep sufficient help. Obtain trusted judgement, examine the consequences, and answer objections or retain an unresolved concern. For an order to prepare a proposal, deliver the recommendation, its grounds and the decisions still reserved to their holders. For an order to launch, agree feasible contributions, obtain effective authority and put the start into effect on terms the participants can rely on. If the commission includes a first delivery, follow the handover through the agreed receiving action. Arrange continuing help where further use requires it. Reopen the affected question when conditions change. These moves need not become a sequence of meetings.
 
 Trusted advice can improve a proposal without authorizing it. An answer can be sound without being acceptable to a contributor. Acceptance can be real while its required budget remains unavailable. A shared start can be understood while the first handover still fails.
 

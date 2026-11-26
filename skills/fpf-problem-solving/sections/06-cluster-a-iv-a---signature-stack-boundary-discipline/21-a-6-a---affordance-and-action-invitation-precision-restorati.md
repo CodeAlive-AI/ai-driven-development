@@ -219,7 +219,7 @@ Use the following questions where their answer changes the recovered meaning or 
    Site tuple members: named EntityOfConcern, scene, interface element or front-end element, Description episteme, episode, control state, or non-claim-bearing site kind - with publication or carrier participation stated separately when live.
 
 2. **Invited enactor tuple.**
-   Which System, including a qualified collective system, would act; an assignment may help identify its holder when that attribution matters.
+   Identify the prospective performer or performers to the extent needed for the option. For joint action, state which contributions must be compatible. A qualified collective System may itself act. A future option can state who would qualify while the choice of performer is still open.
 
 3. **Candidate action tuple.**
    What action or inquiry the phrase concerns. If the result selects a Method for enactment, identify its `U.Method`; keep any MethodDescription, WorkPlan and actual Work separate under their direct rules.
@@ -271,7 +271,7 @@ Use when one candidate action tuple is explicit.
 A conforming `ActionOption` publishes:
 
 * one candidate action tuple,
-* the would-be acting System and any assignment that the receiving claim needs,
+* the prospective performer or the conditions on who can act, including any jointly required contributions and assignments on which the option depends,
 * local guard sketch,
 * expected near-field effect,
 * a `U.Method` ref when the option selects that Method for enactment, plus a separate optional `U.MethodDescription` ref or `U.WorkPlan` ref only when that independently existing object is current,
@@ -479,7 +479,7 @@ A text or pattern conforms to A.6.A iff:
    Identify the would-be enactor when the claim or question depends on it.
 
 4. **CC-A.6.A-4 — Enactor discipline.**
-   When the claim names an actual would-be enactor, identify the System that would act. A cited assignment may designate its holder; it is not itself the enactor.
+   For an option attributed to actual participants, identify each System whose contribution is needed and any assignment that matters to the claim. Establish the joint conditions where several participants must act together. For a future selection, retain the applicable selection conditions.
 
 5. **CC-A.6.A-5 — Recoverable action and independently identified Method when selected.**
    State the action or inquiry being discussed. If the result selects a Method for enactment, identify its `U.Method` and keep any MethodDescription separate. A proposed action need not invent a Method, WorkPlan or actual Work.

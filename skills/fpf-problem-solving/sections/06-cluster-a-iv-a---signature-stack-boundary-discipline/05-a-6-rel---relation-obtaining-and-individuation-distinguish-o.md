@@ -175,11 +175,11 @@ This rule keeps elaboration additive. Each new receiving use introduces only the
 
 Here **receiving use** is ordinary wording. First state the readable relation and ask what later work must distinguish. If occurrence identity is needed, name the receiving object: an assertion or description episteme under `C.2.1`, a direct relation that uses the occurrence as a world-side participant, or an assertion episteme stating that one already identified operation application binds the occurrence as the actual value of a named A.6.1 argument. Any acting system, enacted method, and performed work remain separately governed.
 
-1. Name the direct relation kind and participants in a readable sentence. Use only the direct relation-participant meanings, obtaining predicate, and applicability needed to state that sentence accurately; do not yet require a `RelationSignature`, SlotSpecs, occurrence designator, representation correspondence, or the complete occurrence-identity rule.
+1. Name the direct relation kind and participants in a readable sentence. For a report that it holds, check the relevant facts or constituting history against its predicate and applicability, or use an existing judgement with grounds for this case. When the facts leave it open, report that uncertainty. A relation sentence can also state a rule or a proposal without asserting an actual occurrence.
 2. Immediately ask: **Does the receiving use need to reidentify this occurrence or distinguish it from another, including another episode with the same participants?**
 3. Apply the contrast. A current report that needs only the relation sentence answers no. A history distinguishing repeated episodes answers yes. A later comparison that must establish that two reports concern the same occurrence, or a dependent relation that takes this occurrence as a participant, also answers yes.
 4. If no, keep the readable direct sentence and stop this pattern. Do not create a relation-occurrence description episteme for completeness.
-5. If yes, recover the participant meanings, applicability, and obtaining predicate from the subject pattern. Inspect the relevant world facts or constituting history in the current case and judge whether they satisfy that test. Only when the current-case facts satisfy the predicate is there an obtaining occurrence to individuate. Otherwise keep the result as a `C.2.1` claim under the direct predicate; use `A.6.P` only while the predicate or participants remain unclear. A claim-bearing episteme records the claim family and polarity; evidence and reliance stay with their direct governors.
+5. If yes, recover the participant meanings, applicability, and obtaining predicate from the subject pattern. Use the current-case grounds from step 1 for the facts they already establish. Only when the current-case facts satisfy the predicate is there an obtaining occurrence to individuate. Otherwise keep the result as a `C.2.1` claim under the direct predicate; use `A.6.P` only while the predicate or participants remain unclear. A claim-bearing episteme records the claim family and polarity; evidence and reliance stay with their direct governors.
 6. Recover and apply the subject pattern's same-versus-new-occurrence rule. Explicitly individuate one occurrence; assign an identifier only when stable reference is needed.
 7. Only now name the receiving object and subject pattern, then use the corresponding branch:
 
@@ -244,10 +244,10 @@ The direct relation pattern states the shared participant meanings, obtaining pr
 The alternatives below show semantic dependencies within demand-driven progressive elaboration. They share one readable direct relation. The receiving occurrence branch follows a positive distinguishability decision and the direct identity rule, while the `RelationSignature` branch remains independent and opens only for typed reuse.
 
 ```text
-readable direct relation sentence with named participants
-  +-- later work only reports the current relation -> stop
+readable direct relation with named participants and grounds for its stated status
+  +-- current report supported for these participants and conditions -> use it
   +-- receiving use needs reidentification or distinction from another occurrence
-      +-- check direct obtaining and apply the direct same-versus-new-occurrence rule
+      +-- for an obtaining relation, apply the direct same-versus-new-occurrence rule
       +-- then add only the receiving branch that consumes the distinguished occurrence
           +-- description or assertion designation
           +-- identifier or stable reference

@@ -59,7 +59,7 @@ Use the authorized data-handling arrangement. Collect only what the question req
 
 When a new or revised objective is needed, use observed task difficulty, user needs, failure consequences and feasible provision to propose a target and interval. Current performance can inform a starting proposal but does not determine what users should accept. Avoid importing another service's percentage or assuming that a more demanding number is always a better choice.
 
-Agree a new or revised target with those who depend on or provide the service, including whoever can make the relevant trade-offs. Define the error budget in the same event/time basis and the actions that follow material consumption or exhaustion. Those actions need authority and capacity; a dashboard configuration does not create either.
+Use evidence about the work that depends on the service to set a proposed target. Establish who may approve its trade-offs and commit the work required by the response policy. Obtain the agreement of those parties, including a customer or representative when the service terms require their consent. Define the error budget in the same event/time basis and the actions that follow material consumption or exhaustion. Those actions need authority and capacity; a dashboard configuration does not create either.
 
 A policy can prioritize repair, restrict a class of changes or require a decision before further risk. Choose its scope for the task and consequences. The budget is not permission to cause any kind of harm up to a numerical allowance, and it does not cancel independent constraints.
 
@@ -149,7 +149,7 @@ Providers may count only the work their backend accepted, and application teams 
 | --- | --- |
 | Use backend jobs as all user attempts. | Observe or bound failures at the user entry and explain remaining coverage. |
 | Treat HTTP 200 as application correctness. | Observe the task result against its acceptance condition or state the missing semantic check. |
-| Set a percentage with no agreed consequence. | Agree the objective and response policy with the service's users and providers, including those authorized to make the relevant trade-offs. |
+| Set a percentage with no agreed consequence. | Base the objective on the users’ tasks. Obtain agreement from those entitled to approve the trade-offs and commit the response. |
 | Merge platform and application budgets. | Bind each measurement and policy to its own service and users. |
 
 ### SYSE.36:9 - Consequences
@@ -158,7 +158,7 @@ Task-grounded measurement can expose failures that infrastructure monitoring mis
 
 ### SYSE.36:10 - Rationale
 
-A reliability objective is useful only when its measurement represents the service result people depend on and its policy changes an available decision. Defining meaning before instrumentation protects that connection. Separating subjects prevents success in an enabling service from being mistaken for success in the work it enables.
+A reliability objective guides action when its measurement represents the result that users or downstream services need and its policy tells the responsible parties when to act. Defining meaning before instrumentation protects that connection. Separating subjects prevents success in an enabling service from being mistaken for success in the work it enables.
 
 ### SYSE.36:11 - SoTA-Echoing
 
@@ -166,7 +166,7 @@ For user-relevant reliability, **adopt and adapt** the 2018 [SRE Implementing SL
 
 **Adopt** [OpenTelemetry signal categories](https://opentelemetry.io/docs/concepts/signals/) as observation means where useful, without treating a telemetry model as application acceptance meaning. Compare a few outcome indicators with a larger indicator set by consequential coverage and maintenance cost. A simpler initial implementation can be useful with its limits visible; an unobservable semantic requirement cannot be replaced silently by a convenient proxy.
 
-Reopen the definition or policy when supported tasks, populations, instrumentation coverage, consequences or feasible provision change. A more demanding percentage is not automatically the better user/provider agreement.
+Reopen the definition or policy when supported tasks, populations, instrumentation coverage, consequences or feasible provision change. Judge a more demanding objective by its benefit for the supported tasks and the cost of the response it would require.
 
 ### SYSE.36:12 - Relations
 

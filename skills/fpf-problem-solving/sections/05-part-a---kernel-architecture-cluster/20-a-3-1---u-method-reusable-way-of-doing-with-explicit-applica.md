@@ -12,7 +12,7 @@ When observed performances or evidence about performances may show a reusable wa
 
 For reusable-way claims proposed or described in documentary guidance, use `A.3.1.DR` when their source meaning or status needs recovery. Choose by the source's role in the question: a document can contain both guidance and performance evidence.
 
-When one candidate reusable way is ready for the `U.Method` identity test, apply this pattern directly.
+When you must devise a reusable way, begin with what its future user must achieve or preserve and where they will start. Construct the way in §4.1, then identify it under this pattern. If a candidate is already supplied, go directly to the identification or comparison the project needs.
 
 Typical moments:
 
@@ -25,7 +25,7 @@ Typical moments:
 
 `U.Method` is a non-agentive holon kind: methods can have submethods, compose into whole methods, and participate as submethods of larger methods. A step label or step description is not a method part unless the recovered object is itself a `U.Method`.
 
-**First useful move.** Name the reusable way of doing, its generic participant meanings, applicability, preconditions, intended effect or preserved condition, and the concern it addresses. If local terminology changes that answer, cite the effective reference scheme and local senses.
+**First useful move.** Ask what the performer needs to accomplish, under which conditions, and which choices the performer must make. If the way is missing, work back from that result to the operations and conditions that can produce it. If it is given, state what it does, for which participants, where it applies, and what preserves or changes its identity. Cite the effective reference scheme and local senses when their meanings affect that answer.
 
 **What goes wrong if missed.** Readers may mistake a diagram for work authorization, a query plan for performed work, a program for proof of operational success, or a graph path for a route actually followed.
 
@@ -99,7 +99,9 @@ Leave quoted or explanatory *strategy* wording alone when it carries no FPF clai
 
 #### A.3.1:4.1 - Thin first-use method identification
 
-Start with the least apparatus that lets another reader recognize the same method:
+If a reusable way is needed but has yet to be designed, start with the result its recipient must be able to use. Identify what the performer will have at the start and which decisions the commission leaves to them. Ask what action, inference or arrangement could produce the result from those conditions. Where it requires an intermediate result, work back to what can supply it. Decide whether obtaining that result belongs to the Method or whether its user can rely on it as an available input. For several operations, relate their outcomes to the next inputs and check what must hold jointly, including common resources and choices that may vary independently. Try the proposed way forward on its permitted circumstances. Retain distinctions that can change the warranted action, result or explanation. This gives a candidate to identify, or a specific missing contribution. A single sufficient operation can be the whole way. C.39.RQ develops situated requirements and B.1.5.CM explains construction when several Methods must contribute together.
+
+For a supplied candidate or the one just constructed, use the least apparatus that lets another reader recognize the same method.
 
 1. **Ordinary use.** State the reusable way of doing, the kinds of participants it is for, when it applies, what it is meant to achieve or preserve, and any applicable use limits or stop conditions. If that sentence is enough for the decision at hand, stop.
 2. **Later comparison or reliance.** Use the needed entries in the Plain aid below when the ordinary statement is insufficient to distinguish same-named methods, compare descriptions or variants, cite one edition in a plan, or audit why this method was selected.
@@ -130,11 +132,11 @@ For every relied-on relation, name its participants, the relation that must obta
 
 #### A.3.1:4.1a - Closure and bounded non-use
 
-Close positively when a reader can write the reusable action, generic participant meanings, applicability, preconditions, intended result or preserved condition, and any use limit or stop condition that changes the identification or decision. Resolve an effective reference scheme and local senses only when a meaning difference changes that answer. Cite a method description, selected structure, model-use relation, or Work relation only when the next decision depends on it.
+Close positively when a reader can write the reusable action, generic participant meanings, applicability, preconditions, intended result or preserved condition, and any use limit or stop condition that changes the identification or decision. Resolve an effective reference scheme and local senses only when a meaning difference changes that answer. Cite a method description, selected structure, model-use relation, or Work relation only when the next decision depends on it. For a design commission, also show how a performer starting from the stated inputs can obtain the promised result and where their choices enter. For an identity comparison, decide whether the two descriptions designate the same way or identify the missing fact that prevents a decision.
 
 If the project also claims an actual change, use A.3.4 separately for the actual changed referent, temporal boundary, subject facts, and transformation identity.
 
-Close by non-use when the source is only a description, plan, dated Work occurrence, mechanism declaration, selector result, system-role-kind relation, another direct relation, evidence relation, publication use, or quoted wording. If the material does not distinguish those positions, retain the source phrase as an unresolved cue and stop rather than inferring `U.Method`.
+Close by non-use when the question concerns only what a document says, which Work occurred, what a publication presents or another claim governed by its own pattern. If the question asks which reusable way of acting is meant, read the content of the available description, plan or record. A description that specifies the distinguishing actions, participants, conditions and intended result may identify the Method by itself. If more than one way still fits and the difference matters, name what would distinguish them. A dated enactment or authority to use the Method requires its own grounds.
 
 #### A.3.1:4.2 - Method and mechanism settlement
 
@@ -333,13 +335,15 @@ Preconditions: material and coating range known; calibration current; gas and sa
 IntendedResultOrPreservedCondition: target depth reached; substrate and maximum-temperature bounds preserved
 ```
 
-This result lets the engineer compare the two SOP claim sets against one method identity and lets a later work plan cite that method and the selected description edition. The SOP, PLC program, calibration recipe, and supplier note remain `U.MethodDescription` candidates when A.3.2 identifies what each episteme describes (`EntityOfConcern`) and the substantive claims it carries. For later work authorization or claims that Work `W-143` occurred or `Wafer-22` changed or passed metrology, use the relevant A.15.2, A.15.1, A.3.4, measurement, evidence, assurance, or gate pattern.
+To finish the comparison, inspect what each instruction tells the operator to do. Suppose the first SOP tabulates the limits of `RecipeWindow-Al2O3-3` and directs the operator to end exposure at the declared target depth. The second incorporates that same window by reference and expresses the same operation and stop in prose. Both designate `Etch_Al2O3` and preserve its material, calibration, gas, temperature and substrate conditions. The two editions describe the same Method for this plan. If the second merely says “etch for the set time”, establish whether the time setting implements the same target-depth rule throughout the admitted window or prescribes a different stop. Until that relation is known, the plan cannot treat the two descriptions as interchangeable on that basis.
+
+For another pair of instructions, compare their operative choices and constraints at the variation that matters for the plan. A.3.2 determines whether each episteme qualifies as a MethodDescription. Authorization, actual Work, wafer change and metrology retain their own grounds under the corresponding patterns.
 
 #### A.3.1:5.2 - Optimization model
 
 **Situation and reusable way.** `JS_Schedule_v4` applies when the jobs, eligible machines, durations, precedence constraints, feasibility rules, and optimization objective are all stated for the scheduling problem. A planner or solver system enacting it constructs candidate assignments under the declared search and stopping rules, rejects infeasible candidates, and compares the remainder by the declared objective. It records the selected schedule, `no feasible schedule` when infeasibility is established, or `no feasible schedule found within the stated search bounds`. Missing precedence data, an unstated objective, or incompatible machine eligibility is a stop rather than permission to guess a method variant.
 
-This identification lets a planner compare two solver packages as descriptions of the same scheduling method. The MILP formulation and solver configuration are `U.MethodDescription` or formal-substrate candidates according to the claim. The selected production schedule is a `U.WorkPlan`; the dated solver run is Work; and its decision record is a separate result episteme.
+This identification lets a planner compare two solver packages as descriptions of the same scheduling method. The MILP formulation and solver configuration are `U.MethodDescription` or formal-substrate candidates according to the claim. A feasible schedule can answer a question about what the machines could produce. It qualifies as a `U.WorkPlan` under A.15.2 when it specifies enough of the intended Work to coordinate it, such as the jobs a work centre is to run in each time window. Adoption of the plan may still be open. The dated solver run is Work, and its decision record is a separate result episteme. To establish production, use evidence of what was actually produced for the relevant jobs and period.
 
 #### A.3.1:5.3 - Proof or derivation
 
@@ -375,7 +379,7 @@ Use one concrete test in every case: can the reader state the reusable action, i
 
 ### A.3.1:7 - Conformance Checklist
 
-**CC-A3.1-1 (Method identity).** `U.Method` is one reusable way of doing under a stated concern, participant meanings, applicability, preconditions, intended result or preserved condition, and bounds. If the sentence also makes a claim about an actual participant, A.3.4 transformation, description, plan, dated Work occurrence, evidence relation, system-role assignment, capability, mechanism declaration, formal declaration, publication face, or pattern relation, write that claim under its direct pattern and state only the relation to the Method that obtains.
+**CC-A3.1-1 (Method identity).** `U.Method` is one reusable way of doing under a stated concern, participant meanings, applicability, preconditions, intended result or preserved condition, and bounds. If the sentence also makes a claim about an actual participant, A.3.4 transformation, description, plan, dated Work occurrence, evidence relation, system-role assignment, capability, mechanism declaration, formal declaration, publication face, or pattern relation, write that claim under its direct pattern and state only the relation to the Method that obtains. When the work was to construct this way, the account also explains how its operations can produce the intended result under those conditions. When two descriptions are at issue, it gives the supported identity judgment or its unresolved premise.
 
 **CC-A3.1-2 (Semantic locality).** State the applicability, participant meanings, conditions, intended result, and bounds that distinguish the method. Add an effective reference scheme and local senses only when different meanings would change the identification. Add a claim scope, context slice, selected structure, or model-use relation only when its identity and conditions are established under its applicable pattern, any asserted relation obtains, and changing that object would change the identification or the stated later decision.
 
@@ -421,7 +425,7 @@ Use one concrete test in every case: can the reader state the reusable action, i
 
 #### A.3.1:9.1 - Lowering and local repair conditions
 
-Withdraw a `U.Method` identification when the text cannot answer the ordinary method question: what reusable action is meant, for which participant kinds and conditions, with what intended result or preserved condition, and where it stops. Also withdraw it when the supposed method is only a document, repository, diagram, model, run log, team, supplier label, or authorization; when one value is called both method and mechanism without a governing dual-typing rule; or when graph or table layout is the sole basis for the asserted Method identity.
+Withdraw a `U.Method` identification when the text cannot answer the ordinary method question: what reusable action is meant, for which participant kinds and conditions, with what intended result or preserved condition, and where it stops. Also withdraw it when the asserted identity equates the reusable way with a document, repository, diagram, run record, team or authorization merely because it mentions that way; when one value is called both method and mechanism without a governing dual-typing rule; or when graph or table layout is the sole basis for the asserted Method identity.
 
 Keep a source word such as *practice* unresolved when the sentence does not reveal whether it means a reusable way, a description, planned or performed Work, an assignment, a discipline or tradition, evidence, or a quoted label. Do not force one of those meanings merely to complete the form.
 

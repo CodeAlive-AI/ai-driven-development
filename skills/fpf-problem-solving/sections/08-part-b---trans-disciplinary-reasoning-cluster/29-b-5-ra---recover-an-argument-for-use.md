@@ -58,6 +58,8 @@ Work backward from the conclusion through the claims or constructions it uses. A
 
 Keep jointly needed premises together. Preserve a sufficient alternative as a separate way to reach the conclusion. Track a shared premise wherever a later step uses it; repeated uses of one assumption do not provide independent support for that assumption.
 
+Read a claim about a whole back onto its subject. Which parts have to work together for the conclusion to follow? Could each fact cited about a part remain true while a different arrangement changes the answer? Recover the ground for the connection that matters. In :5.2 three intact copies can share an unavailable key. The inventory can answer a question about the number of copies while leaving recovery of the drawing open.
+
 Distinguish a premise supplied for the argument, a result established earlier and a temporary assumption used inside a subargument. Recover the point at which a temporary assumption is discharged and what then follows. If this logical form is unfamiliar, obtain the relevant explanation before treating the subargument's assumption as an established fact.
 
 Use established results at the level needed for the task. If the question concerns what a lemma permits, its statement and conditions may suffice. If the question concerns how to alter the lemma's proof, recover its internal reasoning.
@@ -68,7 +70,7 @@ For a transition you cannot follow, recover the relevant definition, rule, earli
 
 A useful self-explanation supplies this relation. “I understand this line” reports confidence; a paraphrase repeats the claim. Neither supplies the omitted inference when that is the difficulty.
 
-Work a small instance when it helps reveal the operation or dependence. Then return to the stated scope: the instance may illustrate a general step, while the general conclusion depends on the argument for all cases in its domain.
+Work a small instance when it helps reveal an operation or dependence. Identify what carries the inference through the stated domain. In :5.1 the step for an arbitrary integer holds throughout the range, including when shown in a drawing. Substituting 3 checks one value. One admissible failure would suffice to refute an assertion made for every value.
 
 If the source's resources do not close the gap, ask for the missing step with its premises and desired result. A proposed repair is new reasoning until it is justified. Keep the consequence conditional when a premise remains unresolved and conditional use is sufficient.
 
@@ -196,14 +198,14 @@ The result is a usable recovery choice or a focused request for a missing contri
 
 A seminar organizer receives the message: ‘The slides should display correctly. Dana says the projector is compatible, and yesterday's rehearsal worked.’ The organizer needs to decide whether another display test is needed before using projector P with laptop L and adapter D. The relevant technical claim C is: **the current PDF can be displayed at 1080p by this setup**.
 
-**Construct the offered argument.** Ask what ‘compatible’ and ‘worked’ mean here. Suppose Dana maintains these projectors, has relevant technical expertise, and confirms her claim: ‘The current PDF can be displayed at 1080p using P, L and D at the current settings.’ Separately, the organizer inspected all pages of the current PDF during the rehearsal and found them displayed correctly at 1080p. Recover the condition S: the equipment, PDF and settings relevant to this result have not changed.
+**Construct the offered argument.** Ask what ‘compatible’ and ‘worked’ mean here. Suppose Dana maintains these projectors and reports that the setup used for yesterday’s rehearsal, with P, L and D at those settings, can display the current PDF at 1080p. Separately, the organizer inspected all pages of that PDF during the rehearsal and found them displayed correctly at 1080p. To use either ground for the planned showing, establish condition S: the relevant equipment, PDF and settings from the rehearsal will apply there.
 
 The expertise and the assertion work together in the first reason. Neither ‘Dana is an expert’ alone nor an unattributed compatibility sentence supplies that reason. The rehearsal is a different ground: it is an observed instance under the required setup. Its use for another showing depends on S and on the ordinary technical judgement that the successful test remains applicable. It is not a deductive guarantee of future operation.
 
 The following outline is an argument map. Braces group premises used together; arrows mean support for C, not physical causation or event order.
 
 ```text
-R1: {Dana has relevant expertise; Dana asserts C for P/L/D; S}
+R1: {Dana has relevant expertise; Dana says the rehearsal configuration can display this PDF at 1080p; S}
     --expert-opinion inference--> C
 R2: {the organizer observed the current PDF displayed correctly on P/L/D; S}
     --applicable rehearsal result--> C
@@ -217,9 +219,9 @@ R1 and R2 are separate grounds, but they share S. R2 is not merely another repor
 
 Suppose a test with D2 then shows that the current PDF is not displayed under the intended settings, after the operator checks the connections and follows the equipment's setup instructions. This is a new opposing observation for that tested setup. The organizer can report that the attempted display failed and return to technical diagnosis; the observation alone does not identify which component caused the failure.
 
-**Separate the technical result from the practical proposal.** ‘Therefore use P’ introduces another inference. It needs the seminar's display requirement, an available way to keep the tested setup, and comparison with relevant alternatives and costs. If using P prevents another booked session from running, that consequence can defeat the proposal while C remains supported. PSDA.5/.6/.8 supply the option, value and consequence work. The receiving decision uses the qualified technical result instead of expanding it into a recommendation.
+**Decide whether another test is needed.** If the organizer may rely on a successful rehearsal of the current PDF and unchanged setup, the observed rehearsal meets that condition. If the seminar requires a fresh test after an adapter change, replacing D made such a test due. The failed trial with D2 supplies its outcome. To display the slides, the organizer can now restore the earlier configuration if still available and permitted, or arrange a working alternative.
 
-The return is a conclusion with its surviving reason and its next change condition: use the rehearsal for the unchanged setup; reopen compatibility after replacing the adapter; treat the later failed display as a result to diagnose. Another person can challenge a connection and see what needs to be redone.
+Choosing between venues is a further decision. Even a working projector could be needed for another booked session. If the organizer must also choose the venue, compare the available arrangements, their consequences and costs through PSDA.5/.6/.8. The decision about needing another test can stand on its own.
 
 #### B.5.RA:5.4 - From an ambiguous message to a conditional venue argument
 
@@ -304,7 +306,7 @@ For the argument and use being recovered:
 3. The needed transitions identify their premises, inference or operation and result.
 4. Joint premises, sufficient alternatives, shared assumptions and temporary assumptions retain their different roles.
 5. The reader can perform the intended use or identify the missing transition or premise that prevents it.
-6. A small instance supports the explanation at its stated scope; a general conclusion has its corresponding reasoning.
+6. A general conclusion has grounds covering its stated domain. Any instance used supports the claim made on its basis.
 7. Further checking is selected for an unresolved question, and adequately supported parts remain reusable.
 
 For an argument using :4.4a, also inspect whether the claims preserve the source's scope, conditions and attribution; a consequential competing reading has been resolved or retained; and the selected scheme fits the offered reasoning. Intermediate conclusions and joint reasons must expose the dependency.
@@ -324,7 +326,7 @@ These are questions about the recovered reasoning. Their answers may be evident 
 | Checking local steps while failing to explain why a lemma or construction appears | Recover the difficulty that contribution resolves and connect it to the conclusion. |
 | Treating several uses of one premise as several independent grounds | Keep the common prerequisite visible and examine its role in the needed branches. |
 | Promoting a temporary assumption to an established premise | Recover the subargument and the conclusion obtained when that assumption is discharged. |
-| Using one example to claim that the general statement has been proved | Recover the argument that covers the stated domain; retain the example as an illustration of it. |
+| Extending a successful calculation on particular inputs to every allowed input | Recover the step that holds for an arbitrary input or establish that the cases considered exhaust the domain. An admissible failure can settle a claim of universal success. |
 | Demanding a complete reproof when the task only needs an established result under its stated conditions | Use that result at the needed level; open its internals when the new question requires them. |
 
 ### B.5.RA:9 - Consequences

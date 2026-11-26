@@ -28,7 +28,7 @@ The terms below keep the contribution separate from the organizational labels us
 
 | Name in this pattern | What it denotes |
 | --- | --- |
-| professional contribution | Specialist Work, its returned result and receiving use, together with a contribution request when one is needed. The professional-contribution account is an episteme describing these objects and relations. |
+| professional contribution | In a request, this can name specialist Work still to be done or a result to obtain. In a report it can name the Work performed or the result delivered. A professional-contribution account describes the relevant Work, result and links to the receiving task. Identify its intended use and establish actual use when the claim depends on it. |
 | specialist | The Agent who performed the specialist Work, or who is considered or selected for it on evidence of relevant current capability. When role classification or assignment matters, name the local system-role kind and assignment separately. |
 | discipline | An admitted `U.Discipline`: a durable field-level practice-and-knowledge whole recognized through `C.20`. A field or department name is only a retrieval cue. |
 | profession | A Plain collective designation for a socially maintained practice, its practitioners, and institutions that recognize or regulate their work. Recover the particular culture, practitioner classification, credential, or authority relation used by the decision. |
@@ -83,8 +83,7 @@ input, or an applicable Method, together with the decision that cannot yet proce
 
 ### SYSE.9:3 - Forces
 
-- Specialists need freedom to use their own Methods, while the receiving decision must compare results without
-  erasing their limits.
+- When the commission leaves the Method open, specialists can choose it within their mandate. When it specifies a Method, establish whether the supplied result meets that condition. Compare contributions within the limits of the Methods actually used.
 - A contribution kind can remain useful when its performer changes, but capability, access, authority, workload,
   and conflicts depend on the current Agent.
 - Assignment can make Work admissible without showing that Work occurred or produced an adequate result.

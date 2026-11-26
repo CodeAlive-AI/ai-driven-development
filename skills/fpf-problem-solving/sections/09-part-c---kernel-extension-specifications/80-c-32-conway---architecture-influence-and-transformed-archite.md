@@ -11,7 +11,7 @@
 
 Use this pattern when one architecture-side source — recovered as an exact described holon, selected `U.Structure`, and either an obtaining C.30 `ArchitectureRelation` or modal `ArchitectureClaim` — or another independently typed Work arrangement, communication structure, constraint, or candidate-synthesis result influences the candidate architecture of a changed referent, and the practitioner must decide what to change on either side without mistaking influence for action.
 
-Plain cue: **compare an architecture that influences the change with the architecture being changed**.
+Begin with **what constrains the proposed change and which arrangement could meet that constraint**. To establish correspondence between two architectures, identify both structures and the relation that makes one relevant to the other.
 
 Primary working reader: an architect or architecture-responsible practitioner who must compare one independently typed influence source with the current or modal architecture content of the changed referent and prepare candidate changes without turning an `ArchitectureRelation`, selected structure, claim, or architecture-bearing holon into an actor.
 
@@ -28,7 +28,7 @@ A clean-looking target architecture can be unbuildable or unproducible, untestab
 
 Start with the domain action: a manufacturing system builds a product, a compiler compiles a program, a service team changes a service, a clinical team treats a patient, or an instructional system teaches a learner. Identify the changed referent first. Only then name an acting system, exact system-role assignment, and dated Work when those facts are current. Separately name the architecture or other source that influences the candidate and the exact relation by which it does so.
 
-**First-minute use slice.** A product-family team wants independently replaceable field modules. It identifies the changed referent as `ProductFamilyFieldModuleBoundary@2026Q3`. The influence side is the obtaining C.30 `ArchitectureRelation(ManufacturingCertificationSystem@Plant-A, BatchLineSharedEvidenceStructure@Current)`; the transformed side is the obtaining C.30 `ArchitectureRelation(ProductFamily@Current, FieldModuleBoundaryStructure@Current)`. The exact holons and selected `U.Structure` participants remain visible, and any desired replacement structure stays only in a separate `ArchitectureClaim`. No direct architecture-influence kind or predicate has yet been recovered, so the team keeps the pairing as a provisional independent-change pressure with `missing-governor`. It prepares source-side, transformed-side, joint, and bounded-mismatch candidates without naming an acting system, system-role assignment, Work occurrence, or actual transformation. Those facts are added separately only if a later claim needs them.
+**First-minute use slice.** A product-family team wants independently replaceable field modules. It identifies the changed referent as `ProductFamilyFieldModuleBoundary@2026Q3`. The influence side is the obtaining C.30 `ArchitectureRelation(ManufacturingCertificationSystem@Plant-A, BatchLineSharedEvidenceStructure@Current)`; the transformed side is the obtaining C.30 `ArchitectureRelation(ProductFamily@Current, FieldModuleBoundaryStructure@Current)`. The exact holons and selected `U.Structure` participants remain visible, and any desired replacement structure stays only in a separate `ArchitectureClaim`. No direct architecture-influence kind or predicate has yet been recovered, so the team keeps the pairing as a provisional independent-change pressure with `missing-governor`. To decide what could make modules independently replaceable, the team follows one permitted replacement through the certification and acceptance conditions. If separate qualification suffices, changing the shared test setup may free the boundary. If joint qualification is compulsory, a replacement must preserve it or obtain an authorized change. Evidence of a later implementation is needed to report which arrangement was used.
 
 The primary working object is a local candidate-synthesis frame. It can pair actual architecture sides through exact obtaining C.30 `ArchitectureRelation` refs or carry candidate, required, desired, or expected structure only through separately identified `ArchitectureClaim` refs. When one exact architecture-influence or correspondence relation already obtains between two actual architecture sides, C.32.CONWAY is also the pattern for one reusable `ArchitectureInfluenceTransformedArchitectureCorrespondenceRow@Context` episteme about that exact occurrence. The frame, row, architecture relations, claims, selected structures, changing system, Work, actual transformation, changed referent, candidate palette, and any network that later cites the row remain different objects.
 
@@ -46,7 +46,7 @@ Ordinary working move:
 
 Adoption test: a reader can tell which case passes, which does not, what the practitioner changes next, and whether the result is only local synthesis material or a reusable exact pair row.
 
-Not this pattern when the current work is only bounded-change identification, system-role assignment or Work attribution, module-interface repair, mathematical structural similarity, local choice, or an architecture decision. Use the subject pattern and return here only when one pair of an influence-source architecture and a transformed architecture changes candidate synthesis.
+Not this pattern when the current work is only bounded-change identification, system-role assignment or Work attribution, module-interface repair, mathematical structural similarity, local choice, or an architecture decision. Use the governing subject pattern for that work. Return here when a condition on producing, using or changing the target can change its candidate architecture. Trace the condition under :4.1.1. To claim correspondence between two existing architectures, establish the architectural relations on both sides.
 
 Common exits by claim kind:
 
@@ -75,9 +75,8 @@ ArchitectureInfluenceTransformedArchitectureCorrespondenceFrame@Project:
       influenceSourceArchitectureClaimRef?: omitted — the obtaining relation and current structure are enough for this use
       structureKindRef: BatchAndEvidenceResponsibilityStructure
       selectedStructureRef: BatchLineSharedEvidenceStructure@Current
-      contributionToCandidatePressure: may prevent independent field-module replacement
+      contributionToCandidatePressure: shared qualification may require retesting other modules after one is replaced
       architectureCharacteristicPressure: provisional independent-change pressure
-      relationFunctionClaimRef: C.30 plus A.22
       sourceReturnCondition: missing-governor — recover the direct architecture-influence kind and predicate
   transformedHolonRef: ProductFamily@Current
   transformedArchitectureRelationRef: C.30 ArchitectureRelation(ProductFamily@Current, FieldModuleBoundaryStructure@Current)
@@ -87,7 +86,6 @@ ArchitectureInfluenceTransformedArchitectureCorrespondenceFrame@Project:
       selectedStructureRef: FieldModuleBoundaryStructure@Current
       requiredStructureContribution: permit independent field-module replacement
       architectureCharacteristicPressure: provisional independent-change pressure
-      relationFunctionClaimRef: C.30 plus A.22
   correspondenceClaims[]:
     - correspondenceId: BatchEvidence-to-FieldModulePressure
       influenceSourceArchitectureRelationRef: C.30 ArchitectureRelation(ManufacturingCertificationSystem@Plant-A, BatchLineSharedEvidenceStructure@Current)
@@ -138,9 +136,9 @@ ArchitectureInfluenceTransformedArchitectureCorrespondenceFrame@Project:
     influenceSourceArchitectureClaimRef?: exact C.30 ArchitectureClaimRef for actual, candidate, required, desired, or expected content not carried by an obtaining relation
     structureKindRef:
     selectedStructureRef:
-    contributionToCandidatePressure:
+    contributionToCandidatePressure: how this source condition could affect the candidate and under what conditions
     architectureCharacteristicPressure:
-    relationFunctionClaimRef:
+    relationFunctionClaimRef?: exact defining or constraining ClaimGraph if this use depends on its identity
     sourceReturnCondition?:
   transformedHolonRef:
   transformedArchitectureRelationRef?: exact obtaining C.30 ArchitectureRelation ref
@@ -148,9 +146,9 @@ ArchitectureInfluenceTransformedArchitectureCorrespondenceFrame@Project:
   transformedSelectedStructureMap[]:
     structureKindRef:
     selectedStructureRef?:
-    requiredStructureContribution:
+    requiredStructureContribution: what the proposed arrangement must make possible
     architectureCharacteristicPressure:
-    relationFunctionClaimRef:
+    relationFunctionClaimRef?: exact defining or constraining ClaimGraph if this use depends on its identity
     sourceReturnCondition?:
   evolutionWindowRef?: include when the intended claim or use depends on time
   evidenceRefs?:
@@ -243,7 +241,7 @@ The first result can be a candidate, a supported reason to retain the arrangemen
 ArchitectureInfluenceTransformedArchitectureCorrespondenceRow@Context <: U.Episteme:
   entityOfConcernRef: exactArchitectureInfluenceOrCorrespondenceRelationOccurrenceRef
   entityOfConcernKindRef: exactArchitectureInfluenceOrCorrespondenceRelationKindRef
-  relationFunctionClaimRef: subject pattern of that exact relation kind and occurrence
+  relationFunctionClaimRef: the defining or constraining ClaimGraph for this exact influence or correspondence predicate
   influenceSourceArchitectureRelationRef: one exact obtaining C.30 ArchitectureRelation
   influenceSourceHolonRef: the exact architectureBearingHolonRef participant of influenceSourceArchitectureRelationRef
   influenceSourceSelectedStructureRef: the exact selectedArchitectureStructureRef participant of influenceSourceArchitectureRelationRef
@@ -318,7 +316,7 @@ If the shared test exists for the convenience of the present fixture, independen
 
 | Grounded working case | Acting and performance facts | Influence-source and architecture-pair facts | Candidate work | Stop or return |
 |---|---|---|---|---|
-| Product family and manufacturing system | The product referent and bounded A.3.4 transformation are identified independently when actual change is claimed. The admitted manufacturing and certification Systems jointly perform dated architecturing Work, each through its basis: A.13 first, independent A.15.1 Work admission second, and F.6 afterward only for precise assignment-bound attribution; the direct Work-to-change relation remains separate. | One obtaining C.30 `ArchitectureRelation` connects the manufacturing-and-certification holon to its shared batch-line evidence structure; another connects the product-family holon to its current field-module structure. A Plant-A domain declaration defines the influence predicate between those exact occurrences, and current case facts satisfy it. Neither architecture-bearing holon nor architecture relation is inferred to be a performer. | Prepare manufacturing-cell change, product-module split, joint change, and bounded batch exception. | Stop at candidate preparation. Handle product choice or architecture decision under `C.11` or `C.32.PAD`; factory Work authorization through its direct authority or permission relation or an `A.21` gate; and certification evidence or assurance through `A.10` or `B.3`. |
+| Product family and manufacturing system | The product referent and bounded A.3.4 transformation are identified independently when actual change is claimed. The admitted manufacturing and certification Systems jointly perform dated architecturing Work, each through its basis: A.13 first, independent A.15.1 Work admission second, and F.6 afterward only for precise assignment-bound attribution; the direct Work-to-change relation remains separate. | One obtaining C.30 `ArchitectureRelation` connects the manufacturing-and-certification holon to its shared batch-line evidence structure; another connects the product-family holon to its current field-module structure. A Plant-A domain declaration defines the influence predicate between those exact occurrences, and current case facts satisfy it. Neither architecture-bearing holon nor architecture relation is inferred to be a performer. | Prepare manufacturing-cell change, a product boundary that keeps the required joint test within one independently replaceable unit when its field cost is acceptable, joint change, and bounded batch exception. | Stop at candidate preparation. Handle product choice or architecture decision under `C.11` or `C.32.PAD`; factory Work authorization through its direct authority or permission relation or an `A.21` gate; and certification evidence or assurance through `A.10` or `B.3`. |
 | Organization designing and operating a service platform | Each acting team or organization is used through its admitted `U.System` identity; any actual design or operations Work points to its basis: A.13 first, independent A.15.1 Work admission second, and F.6 afterward only for precise assignment-bound attribution. | Communication, deployment, test, and approval structures influence one service-platform architecture pair through their direct relations. | Prepare a service-boundary, platform-mediation, or bounded-coordination-cost change. If responsibility retargeting is proposed, name the exact responsibility predicate and old and proposed participants; otherwise mark that branch `missing-governor` instead of calling it a team or test role change. | Stop before an organization-redesign decision or authority claim and apply the exact predicate and test for that claim. Use `G.5` for selected-set result declaration and `C.32.PAD` for an architecture decision. When publication is current, use E.24.PUB for the occurrence, form, carrier, audience, bounded use and availability, and E.17 when a source-backed face and source return are needed. |
 | Review method influencing authored work products | The method description does not act. When review is performed, recover every precise performer's A.13 core and independently admit the review Work under A.15.1; add F.6 only when precise assignment-bound attribution is current, and state any Work-to-change relation separately. | The review-method or evidence structure influences the authored-section architecture through its exact method-use, evidence-scope, or project influence relation. | Add a prospective exception-assignment requirement and evidence scope, change the Method step, change the work-product structure, or reject the automation candidate. | Stop before method-governance or publication claims. For method use, apply the direct predicate and the pattern that defines and tests it. For publication, use E.24.PUB for the occurrence and audience availability, and E.17 when a source-backed face and source return are needed. Use `G.5` only when selected-set result declaration is current. |
 | Instructional system changing learner capability | Each instructor or instructional organization is used through its admitted `U.System` identity; any actual teaching Work points to its basis: A.13 first, independent A.15.1 Work admission second, and F.6 afterward only for precise assignment-bound attribution. | Curriculum, feedback, and evidence structures influence the architecture claim about the changed learner-capability referent. | Prepare curriculum, a prospective feedback-assignment requirement, evidence scope, or bounded-cohort candidates. | Stop before educational policy, evidence-sufficiency, or ethical-mediation claims; state them under the exact policy predicate, `A.10`, or `D.4` respectively. |

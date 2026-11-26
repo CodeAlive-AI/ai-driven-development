@@ -6,7 +6,7 @@
 
 ### MDPE.29:1 - Problem frame
 
-**Use this when** a physical relation or scientific image suggests movement and you need a phrase, variations or a whole composition. A score, demonstration or other recoverable arrangement can specify how the phrases and transitions work and what a viewer can see.
+**Use this when** a physical relation or scientific image suggests movement and you need a phrase, variations or a whole composition. A score, demonstration or other recoverable arrangement can specify how the phrases and transitions work and what a partner, performer or viewer needs to perceive for this work.
 
 This technique, developed in Western concert, contemporary and postmodern choreography, generates movement material, varies its energy, time and space, then composes it. Use an existing phrase or another compositional method when it already serves the work.
 
@@ -33,7 +33,7 @@ Recover the relation the source contributes. Use an adequate existing phrase or 
 
 Decide how the source bears on the work. A mechanical relation can rule out a realization under specified conditions. A scientific image can instead suggest a choreographic operation, such as contracting a path in one direction.
 
-Choose a short movement phrase whose start, changes, intervening movement and ending can be recovered. Identify a relation worth retaining, such as an arrival, a partner response, a continuing path or a visible contrast. To create a variant, change a feature that matters to the work. Compare complete variants, including their endings and any transition the next action needs.
+Choose a short movement phrase whose start, changes, intervening movement and ending can be recovered. Identify a relation worth retaining, such as an arrival, a partner response, a continuing path or a visible contrast. To create a variant, change a feature that matters to the work. When alternatives are due, compare complete variants, including their endings and any transition the next action needs.
 
 Use MDPE.9 to compare variants when that comparison is needed. For a recommendation or selection, identify which to retain, revise, develop separately or reject and why. Use MDPE.11 when the distinction between prepared material and live interpretation matters. A beginning can establish the chosen relation, a development can transform it and an ending may resolve or suspend it. Bring in movement technique or learning for a specific missing contribution.
 
@@ -43,9 +43,9 @@ Recover the seed well enough to vary it. A path, timing distribution, support, p
 
 For a mechanical inquiry, derive the effect of the changed quantity under the model. In unpowered free flight under constant gravity, with equal takeoff and landing heights and negligible air resistance, a longer flight requires a greater vertical launch speed and rise. For an artistic use, define the operation you take from the image, such as compressing one spatial dimension while retaining arrival times. Assess that choice for the composition.
 
-Compare whole phrases. A different duration can change momentum, emphasis and readiness for the next action. A change of spatial scale can alter visibility or effort. Retain the relation needed for comparison, or identify the new artistic aim that warrants changing it.
+For a comparison of phrases, consider each phrase through its ending. For a single phrase, follow the movement through the result requested of it. A different duration can change momentum, emphasis and readiness for the next action. A change of spatial scale can alter visibility or effort. Retain the relation needed for comparison, or identify the new artistic aim that warrants changing it.
 
-Recurrence can make a phrase recognizable, contrast can redirect attention and a changed return can make a transformation perceptible. Identify the viewer’s position, choosing it when the staging allows, and determine what is visible from it. Use audience evidence if the question concerns how particular viewers experienced the piece. Join the end of each phrase to the required beginning of the next, accounting for timing, position, support and attention. If the available means rule out a join, compare changes to the join, the phrases, their order or the means.
+Recurrence can make a phrase recognizable, contrast can redirect attention and a changed return can make a transformation perceptible. Determine which participant must be able to perceive which change. A partner may need to feel a transfer through contact. For a visual result, establish the viewer’s position, choosing it when staging permits, and what can be seen from it. Use audience evidence if the question concerns how particular viewers experienced the piece. Join the end of each phrase to the required beginning of the next, accounting for timing, position, support and attention. If the available means rule out a join, compare changes to the join, the phrases, their order or the means.
 
 A usable result can be the selected phrases, their transformations and the complete composition. A score or animation can settle the specified relations. For a question about feasibility, use the relevant mechanical conditions, capability evidence or an appropriate realization. For an observed artistic effect, identify the performance and what supports that effect. An available performer or another realization may already serve the work. Develop a capability when the chosen realization needs it and that development is part of the task.
 

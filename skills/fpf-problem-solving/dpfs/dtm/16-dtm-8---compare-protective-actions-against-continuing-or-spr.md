@@ -65,7 +65,7 @@ When a numerical model is warranted, vary the corresponding parameters or operat
 
 #### DTM.8:4.4 - Check implementation across the method vertical
 
-Recover the component operations, resources and capabilities needed while the protective action is performed, and the larger work it is meant to sustain. C.32.MWA supplies this simultaneous method-vertical question.
+Start from the work to be protected and follow how the proposed action would preserve the result. Identify which operations are part of this order, what can be obtained from earlier work, and which other obligations need the same people or means. Use C.32.MWA where several contributions must operate together.
 
 For example, “exclude an unreliable procedure” requires an available way to distinguish it under relevant conditions, authority to change admission, and an alternative means to continue needed work. A hypothetical perfect distinction is a model assumption, not an implemented capability.
 
@@ -77,7 +77,7 @@ Pass the distinct outcomes, costs, uncertainties and feasibility conditions to t
 
 Check combinations for shared resource use and inconsistent assumptions. A result-checking operation can both stop faulty work and consume capacity needed for valid work. A repair activity can fail to catch up if new impairment continues faster than it restores function.
 
-The first sufficient result may be a justified exclusion: “reducing new encounters alone cannot meet this deadline because the affected work is already installed.” A complete population model is unnecessary when that conclusion follows from the established causal account.
+For example, an organizer must ensure that no valid booking can require the discontinued workshop to hold a session after a given date. Ending new invitations suffices if all existing bookings end by then and no outstanding invitation or other booking route permits a later session. An outstanding invitation that entitles its holder to a session after the cutoff defeats this guarantee, even if no one takes it up. If the invitation’s terms are unknown, establish whether they still confer that right. Establish which commitments and routes remain effective before deciding what else to change.
 
 ### DTM.8:5 - Archetypal Grounding
 

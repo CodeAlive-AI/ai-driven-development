@@ -76,7 +76,7 @@ A quality engineer asks which QIF inspection plan and result concern feature `F`
 | preserved distinctions | product feature versus inspection characteristic; definition versus performed result; revision versus configuration; applicability/effectivity; source identifier and issuer; plan versus result |
 | tolerated loss | display may coarsen source-local labels after exact identifiers and relations remain available; no unmatched feature or incompatible characteristic may become a positive relation. For this constructed evidence-return review, the receiver permits the qualified row set with unresolved local-extension and unknown-unit branches shown separately |
 | currentness and latency | for this constructed review at time T, the receiver requires the released AP242 configuration applicable to the review, QIF observations from T minus 24 hours through T, and a response to this review query within two seconds. |
-| authority | Systems Engineering owns release, configuration, and effectivity; the quality authority owns acceptance; source owners define their models; SIE may qualify mappings but authorizes neither decision |
+| authority | in this project the configuration authority identifies the applicable released configuration and effectivity, the quality authority decides inspection acceptance, and the integration team qualifies the mapping against the source definitions |
 | tests | known match; unmatched feature; changed revision; incompatible characteristic; stale QIF result; missing provenance; source timeout |
 | stop/reopen | withhold each dependent result when the remaining configuration, effectivity, edition, identity, permission or acceptance uncertainty changes its use. Reopen when a relied-on AP242/QIF edition, review use or protected condition changes. |
 
@@ -144,7 +144,7 @@ Reopen this pattern when representative uses cannot express action-changing loss
 - `SIE.2` consumes the source cut, answer claims, distinctions, and currentness questions to produce `SourceSemanticInventory@Use`.
 - `SIE.4`–`SIE.10` consume the compatible contract positions relevant to their results; none may silently widen the receiver or accepted loss.
 - `C.37` governs generic use-bounded representation selection. `A.10` and `A.10.1` govern evidence/provenance and generic affected-use questions.
-- Applications, Systems Engineering, Operations, quality, safety, legal, and other direct owners supply their acceptance and authority results.
+- Identify the parties entrusted with the application, engineering and operating decisions, including any acceptance reserved to quality, safety or legal authorities. Use their effective decisions within their stated scope.
 - A changed contract reopens the package branches that rely on the changed premise. `SIE.11` supplies affected-use discovery and integration revalidation where the affected results still need to be established.
 
 ### SIE.1:End

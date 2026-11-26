@@ -12,7 +12,7 @@ The first result is a proposed measuring interaction with a usable response: wha
 
 C.16.MR constructs the relation between a sought property and an indication. This method develops its physical realization when that realization is missing or inadequate. You can design the interaction before taking measurements or revise it after obtaining them. Changing a preparation or comparison can suffice with the existing instrument.
 
-You need to interpret the relevant physical theory and the conditions under which its effect occurs. Mathematical or experimental collaborators can supply calculations and implementation while you retain the wanted distinction. The examples supply their additional mechanical, fluid and quantum premises.
+You need to interpret the relevant physical theory and the conditions under which its effect occurs. For a measurement design, establish which physical distinction matters and what observation could reveal it under attainable conditions. Determine who can choose the distinction, design the interaction or make the observation when that contribution is entrusted or the feasibility of the design depends on its provider. A laboratory may be entrusted to decide which temperature matters for a reading and how the sensor response can establish it. If the commission calls for the learner’s own choice of the quantity, leave that choice to the learner with the agreed help. The examples supply their additional mechanical, fluid and quantum premises.
 
 Use an existing arrangement and calibration when they resolve the question. If the physical arrangement is suitable and only inference from its records remains, use C.16.IR or MMP.7.
 
@@ -85,7 +85,7 @@ Ask whether different target values can actually produce the same record under t
 
 Use the uncertainty or error model appropriate to the inference. Strongly nonlinear conversion can change both an estimate and its uncertainty; do not assume that converting an average is equivalent to averaging the converted quantity. Apply the necessary mathematical propagation or inference method, rather than treating a sensitivity coefficient as a complete answer.
 
-When the order asks for several results from one preparation, determine which observations can be made on that preparation and in what order. Trace any disturbance or shared uncertainty into the later readings. A relation or an earlier record can already establish one of the results. If separate preparations are allowed, establish why each answers its assigned use and, where the answer depends on a relation between them, what connects them. Compare feasible combinations under the available resources through C.16 and C.11.
+When the order asks for several results from one preparation, determine which observations can be made on that preparation and in what order. Trace any disturbance or shared uncertainty into the later readings. A relation or an earlier record can already determine a value within its conditions. If the order also calls for making the measurement on this preparation, obtain the reading from that preparation and keep the conditions under which it was made. If separate preparations are allowed, establish why each answers its assigned use and, where the answer depends on a relation between them, what connects them. Compare feasible combinations under the available resources through C.16 and C.11.
 
 #### PHY.9:4.6 - Obtain a first result and revise the physical arrangement
 
@@ -153,11 +153,11 @@ where gamma is a known coupling coefficient and sigma_z has eigenvalues +1 and -
 
 Prepare |0>. Evolution multiplies it by a global phase; measurements of this state cannot reveal that phase. Increasing t alone does not create a readable field dependence.
 
-Instead prepare `|+>=(|0>+|1>)/sqrt(2)`. Evolution produces a relative phase `phi=gamma B t`. Reading sigma_z still gives equal probabilities and is uninformative about phi. A controlled rotation before detection permits a sigma_x or sigma_y measurement. Their means are cos(phi) and sin(phi), so the two preparations for readout can recover phase modulo 2 pi. Each mean requires the corresponding repeated preparation and measurement.
+Instead prepare `|+>=(|0>+|1>)/sqrt(2)`. Evolution produces a relative phase `phi=gamma B t`. Reading sigma_z still gives equal probabilities and is uninformative about phi. A controlled rotation before detection permits a sigma_x or sigma_y measurement. The model predicts means cos(phi) and sin(phi). Together their exact values determine phase modulo 2 pi. Repeated preparations give a finite series of outcomes for each readout from which those means can be estimated.
 
-For gamma=1 rad/(s·field-unit), t=1 s and B=pi/3 field-units, the ideal means are 1/2 and sqrt(3)/2. They select phi=pi/3 modulo 2 pi. A supplied range `-pi < gamma B t <= pi` makes that field value unique.
+For gamma=1 rad/(s·field-unit), t=1 s and B=pi/3 field-units, the ideal means are 1/2 and sqrt(3)/2. They select phi=pi/3 modulo 2 pi. On the supplied range `-pi < gamma B t <= pi` those ideal responses identify a unique field. A finite run can give the same outcome sequence at nearby field values in that range. For a conclusion about the measured field, infer the supported precision or uncertainty from the outcomes and their sampling law.
 
-If the field may instead lie between -4 pi and 4 pi field-units, the same records admit several values. Shorten the initial interrogation, for example to t=0.1 s with the same gamma: the whole supplied range then lies inside the unambiguous phase interval. A later longer interrogation can refine a value once the remaining range supports its interpretation.
+If the field may instead lie between -4 pi and 4 pi field-units, several fields give exactly the same pair of ideal means, however often the readout is repeated at this time. Shorten the initial interrogation, for example to t=0.1 s with the same gamma: the whole supplied range then lies inside the unambiguous phase interval. A later longer interrogation can refine a value once the remaining range supports its interpretation.
 
 Coherence loss, imperfect rotations or an uncertain gamma change the response law. They can be included or constrained where the required estimate needs them.
 

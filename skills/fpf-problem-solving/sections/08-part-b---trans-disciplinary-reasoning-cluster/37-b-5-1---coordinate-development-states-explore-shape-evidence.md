@@ -16,6 +16,8 @@ How can a project coordinate concept development and operational readiness witho
 
 Use the four development states to name the current focus for the episteme or system under development. For an intended transition, identify the design, evidence and operational conditions that need to hold. The Canonical Reasoning Cycle (B.5) can supply the reasoning contributions; the state names do not prescribe an assurance ladder.
 
+Start with the project decision. For a report on which components actually serve users, use evidence of their operation during the period. A current development-state record can suffice when its meaning establishes that use. To decide whether the service they form can begin operating, identify the configuration to be used and the conditions it must sustain. If you choose which constituents to examine, follow the ones whose state or interaction could change that decision. A qualification covering the intended arrangement can already settle the performance condition for that transition.
+
 **The Four Development States:**
 
 | State | Core Activity | Manager's View: What It Means | Possible reasoning contributions | What the state leaves to the receiving claim and use |
@@ -34,6 +36,8 @@ B.3.3 governs any assurance conclusion about the claim and receiving use. Retain
 **Worked case.** A service team completes B.5.2's latency-spike inquiry with a qualified backup-interaction conjecture and live rivals. The possible causal probe is unavailable, so the explanatory result remains limited. An existing operational qualification supports a permitted diversion to a spare instance for this traffic and interval. The team can use that basis for the diversion without declaring the explanation validated or advancing a new design through Evidence.
 
 If the team instead proposes a new deployment whose required load test is missing, that deployment remains blocked; the useful conjecture does not supply the missing qualification.
+
+Suppose two live services each qualify to divert to the same spare. Can both divert together? If their traffic rates add and the spare is qualified for both traffic types together at every permitted mix up to the sum of their peak rates, its capacity covers the diversion. If the sum of the peaks exceeds the spare’s capacity, determine whether any permitted simultaneous mix exceeds its capacity for that mix. One such mix defeats a guarantee covering every permitted mix. Diversion during a particular interval may still work. For a report confined to use today, evidence of that use can settle the question.
 
 ### B.5.1:4 - **Conformance Checklist**
 

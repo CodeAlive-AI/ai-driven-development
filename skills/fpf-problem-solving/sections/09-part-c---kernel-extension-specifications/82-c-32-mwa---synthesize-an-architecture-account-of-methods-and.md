@@ -20,7 +20,7 @@ The primary working reader is an architect, methodologist, practice designer, or
 
 **What goes wrong if missed.** A source layout is mistaken for the arrangement it describes. A list becomes levels, a procedure becomes a hierarchy, overlapping activities become a sequence, a model becomes the thing modeled, or a future design acquires fictitious performed Work. A local repair may also look successful only because its unresolved burden moved to another structure or scope.
 
-**What this buys in practice.** The reader gets a short, usable account of the selected Methods and their use, structures and relations, their correspondences, the main conflict or moved burden, and the alternative that changes the current decision. The account can remain ordinary prose; use a table or symbolic form when it helps express or check the relations.
+**What this buys in practice.** The reader can explain how the selected Methods and their use produce a result that the recipient needs. An account of a working practice can finish by showing which connections sustain it. When a design choice concerns a conflict or a transferred burden, trace that condition through the alternatives and show how it changes the conclusion. Use the form in which the recipient can recover those relations.
 
 **Not this pattern when.**
 
@@ -60,7 +60,11 @@ A fourth failure appears only in some uses: a live product-boundary question is 
 
 ### C.32.MWA:4 - Solution
 
-For an architecture decision, examine how methods, performers and means of provision fit together. The eight actions in §4.1 help organize that inquiry. The mantra below can also be used on its own to locate one missing contribution in familiar arrangements.
+To explain or design a practice architecture, begin with the work the whole practice must sustain. Identify which contributions must be available together, what can be supplied independently and how a change to one affects the others. For each relevant kind, follow its own constituent–whole relation to the extent the question requires. A model of one performance can explain a relation across several scales of that work. A reusable account of the Method has to identify the relation that carries across its admissible performances. Choose the ranges under C.39.SA when they are still open. Use C.37.MM:4.1.1 when the conclusion depends on several models together.
+
+**A mantra for the architecture of a practice.** *What work must this arrangement sustain? Which contributions belong to one reusable method, and which can be supplied independently? What connects them in a particular performance? What must be available together? Who can perform, learn or obtain each contribution? What changes for the whole if one method, provider or means changes? Which distinctions must its description preserve for this use? What was proposed, what actually happened, and what reached the recipient?*
+
+For the narrower question of bringing one known or missing way of working into use, follow the contribution through provision and performance.
 
 **A mantra for following a method from a need to its use.** *What work is needed, and what is missing? Is there a way to do it? If several ways are available, how do we choose? Where can we find or develop a missing way? How will the way reach whoever needs it? What must the performer learn, what can the performer discover through inquiry or practice, and what help will be available? Which method fits this case, and what must be set or changed? Are the means and authority in place? Who did what? What did the work produce, what reached the recipient, how was it used, and what effect was observed?*
 
@@ -77,7 +81,7 @@ A discipline can describe one reusable method. If the decision calls for compari
 5. **Separate the described objects from their descriptions.** Keep identified Methods, Work, Systems and their relations distinct from the descriptions, models, views and coarse-grained accounts about them. A description can itself be used in Work; name that use separately from what it describes. State the correspondence and the distinctions each description preserves or loses.
 6. **Resolve a whole-identity question when needed.** Use `B.2` when the current claim raises a consequential question about retaining the identified Method, Work, System or Discipline whole or identifying a new one. Keep the existing whole when a supported explanation is sufficient, and retain uncertainty when the needed basis is missing. Reidentify a selected structure under `A.22`'s four identity discriminators when the claim requires a different selected structure.
 7. **Compare conflict and moved burden.** Follow the change to the people, agents or equipment that receive the work. Establish what their extra effort or waiting changes for the required result. A shorter drafting step can yield a later accepted release when the reviewer becomes available late (C.32:5.1). Attribute the elapsed time of a completed release from its actual start and acceptance. If the claim concerns who designed the change, recover the choices already supplied and the ones that the performer made.
-8. **Keep deliberate and distributed change distinct.** Separate a project's architecture choice or intervention from cultural generation, transmission, recognition, selection, rejection, retention, and loss. A project can influence those processes without controlling or proving them.
+8. **Return to the work the arrangement must sustain.** Explain what the proposed connections would supply or which connections held in actual use. Follow a changed contribution through the obligations that depend on it. When the question extends to cultural change, distinguish the project’s deliberate intervention from the subsequent transmission, use and retention of the practice.
 
 #### C.32.MWA:4.2 - Short working result
 
@@ -129,7 +133,7 @@ Reopen when representative Work contradicts the synthesis, a proposed organizati
 
 **Show again — possible-future use of a Method.** A five-day Method-adaptation sprint is obtaining Work. The candidate Method is described, but the proposed organization of its use has not yet been performed. The team anchors the architecture in the intended project use, the incumbent Method used during the sprint, the candidate MethodDescription, and a planned representative trial. It compares candidate organizations of Method parts, tool and description support, provider capability, trial Work, and later repertoire maintenance. It states which support and representative Work would put the proposed organization into use and what the trial must observe. It does not invent past Work enacting the candidate Method. If the question is only how the project will use the candidate, the four product arrangements are omitted; if the question becomes where an independently maintained Method family belongs, that conditional comparison is opened.
 
-Across the three cases, the same Method preserves the obtaining/prospective entry distinction, several non-isomorphic structures, exact relation claims, separation of described objects from descriptions, whole reidentification, different alternatives, moved burdens, and the boundary between deliberate project change and distributed cultural change. The domain details remain different.
+The dance example explains how several contributions can be active during one performance. The integration run distinguishes a constituent performance from an external service that happened at the same time. The adaptation sprint supports a proposal for future use. Each account identifies the relations needed for its particular whole. A claim that a practice has already changed calls for the corresponding evidence of actual use.
 
 ### C.32.MWA:6 - Bias-Annotation
 
@@ -154,7 +158,7 @@ Across the three cases, the same Method preserves the obtaining/prospective entr
 | **CC-MWA-5 — Relation recovery** | Every relation used in the answer is stated by value and supported through its defining or constraining pattern when material. Order is not overlap; overlap is not parthood; co-use is not Method composition. |
 | **CC-MWA-6 — Subject-description separation** | The identified Methods, Work, Systems and relations remain distinct from descriptions, models, views and coarse-graining. A description’s use in Work is separate from the objects it describes; important correspondences and losses are stated. |
 | **CC-MWA-7 — Whole reidentification** | A consequential question about retaining or reidentifying a Method, Work, System or Discipline whole uses B.2; a new whole is asserted only on its required grounds. A changed selected-structure identity uses A.22. |
-| **CC-MWA-8 — Conflict and moved burden** | The main conflict is named and every claimed local improvement states any material residual or burden moved elsewhere. |
+| **CC-MWA-8 — Conflict and moved burden** | When the work depends on a conflict, identify the conditions that cannot jointly hold. For a claimed improvement, account for material burdens the change moves to other participants or occasions. |
 | **CC-MWA-9 — Conditional product branch** | A guidance-product boundary comparison develops the arrangements that could serve the receiving practice and explains any consequential exclusion. Other product boundaries have their own alternatives. |
 | **CC-MWA-10 — Deliberate/distributed distinction** | Project choice and intervention remain distinct from cultural generation, transmission, recognition, selection, retention, and loss. |
 | **CC-MWA-11 — Usable result** | A cold reader can recover the short synthesis, any alternative required by the decision, the next use, and the stop or reopen condition without reading symbolic assurance first. |

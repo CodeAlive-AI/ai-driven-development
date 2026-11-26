@@ -23,7 +23,7 @@ Put the proposed criterion, candidate individuals, intended extent and non-membe
 
 **Primary working reader.** The first reader is an FPF pattern author or reviewer deciding whether a public FPF name should remain `U.*`. The downstream reader is the practitioner who uses public pattern titles, headings, ToC rows, and names as orientation cues and needs those cues to point to the real governed object.
 
-**First useful move.** Name the local kind, proposal episteme, or source-construct entity that the decision is about. If you cannot identify it, keep the inquiry open and stop there.
+**First useful move.** Establish which distinction the practitioner needs and what turns on classifying the proposed individuals. Identify the local kind, proposal episteme or source construct to which the admission question applies. An inquiry with no identifiable subject remains open.
 
 Then recover the proposed governed individuals, identity or membership rule, intended extent and non-member boundary, and the action-facing claim that needs the kind. Test whether existing U-kinds, direct relations, declaration SlotKinds, C.3 local kinds, or selected structures already preserve that distinction. Judge the public spelling only after the admission disposition is stable.
 
@@ -74,7 +74,7 @@ Without this pattern:
 
 Durable U-kind admission is a claim-bearing decision about one identified entity. The decision is neither a relation between a public name and a settlement nor a bundle of future members, rules, boundaries and uses. Select the decision's EntityOfConcern by the entry rule above; keep the proposed kind criterion, extent, spelling, and use-enabling claims in its ClaimGraph.
 
-Record the decision in a DRR or another claim-bearing episteme under `E.9`; the decision creates no project-side `U.Relation` occurrence.
+Record the decision in a DRR or another claim-bearing episteme under `E.9`. For formal admission, establish what made it effective under `E.24:4`. A separate project-side relation occurrence is identified under its own rule.
 
 Use the one `E24FamilySettlementDecision` in `E.24:4.0a`. The table locates its U-kind fields. They belong to that decision and follow all its requirements.
 
@@ -144,7 +144,7 @@ When the contrast is kind versus instance, say **kind**, **individual**, **insta
 
 Durable U-kind membership and C.3 classification remain distinct; C.3 relies on an admitted meta-kind. `E24UK-AR-UKIND-R5-01` admits `U.Kind`; its individuals are reusable intensional classification distinctions recovered through candidate domain, operative membership condition, intended member/non-member boundary, and continuity rule. A `KindSignature`, source or practice label, scheme, extension, assertion, or publication is not that kind individual.
 
-For an independently identified candidate `x`, membership in an admitted durable subject kind `K` follows the direct predicate `M_K` under the accepted settlement. A C.3 `U.Kind` individual may declare or reuse that predicate for typed reasoning without admitting another public `U.*` kind. A row, spelling, record, or unresolved evaluation changes neither the direct predicate nor the world-side extent.
+For an independently identified candidate `x`, membership in an admitted durable subject kind `K` follows the direct predicate `M_K` under the accepted settlement. A C.3 `U.Kind` individual may declare or reuse that predicate for typed reasoning without admitting another public `U.*` kind. Use that predicate to determine membership. A row can report that a candidate already met the criterion. If membership begins with an authorized registration, establish that act under the rule to decide whether the candidate is now a member.
 
 `E24UK-AR-USUBKINDOF-R5-01` separately admits `U.SubkindOf` as a same-individual dependent kind under `U.Relation`. Its individuals are the same relation occurrences already admitted under `U.Relation` whose exact ordered kind participants satisfy C.3.1's criterion-entailment branch or exhaustive deliberately closed-domain branch within declared applicability.
 
@@ -296,16 +296,16 @@ The decision and its two outputs are three distinct C.2.1 epistemes. Each output
 
 #### E.24.UK:4.3 - Practitioner-first Admission Tree
 
-1. **Recover the candidates and criterion.** Identify the decision subject and the named action-facing use. When the use needs classification, identify the candidate individuals, stable membership or identity rule, intended extent and nearest non-member. For a relation kind, use the rule that defines its participant meanings, obtaining, applicability, and occurrence identity, and cite the PatternID that locates that rule; an `A.6.RCD` application may record a derived or primitive candidate only with a proposed direct subject settlement. If the decision subject cannot be identified, keep the inquiry open. If classification is needed but its criterion is missing, the inquiry also stays open. A positively identified use that needs no classification can instead support `reject` under step 6.
+1. **Recover the candidates and criterion.** Begin with the decision the classification is to support. Identify the decision subject, the individuals to classify and the inference that depends on membership. An accepted criterion and suitable evidence can settle the classification before a future classifier is named. Establish who originated the criterion, who applied it or who admitted it when that contribution is at issue. If several classifications are used together, establish the relationship required by that inference. When the use needs classification, identify the candidate individuals, stable membership or identity rule, intended extent and nearest non-member. For a relation kind, use the rule that defines its participant meanings, obtaining, applicability, and occurrence identity, and cite the PatternID that locates that rule; an `A.6.RCD` application may record a derived or primitive candidate only with a proposed direct subject settlement. If the decision subject cannot be identified, keep the inquiry open. If classification is needed but its criterion is missing, the inquiry also stays open. A positively identified use that needs no classification can instead support `reject` under step 6.
 2. **Try an admitted durable kind.** If one accepted result already preserves those individuals, the criterion, extent, boundary, and use, record `reuse` through that result and stop.
-3. **Try bounded classification.** If one project or context needs only typed membership or quantification, record `local-kind` through one C.3.2 declaration and stop.
+3. **Try bounded classification.** If bounded classification supplies the required judgement or quantification, identify or make the C.3.2 declaration that supplies its criterion and record `local-kind` for that use. When another practice needs to rely on it, establish whether that criterion applies there, or which correspondence permits the intended inference. Several practices can share a local criterion. Different criteria can also serve them when the relationship between the resulting judgements is sufficient.
 4. **Test the need for a new durable kind.** Proceed to positive admission only when repeated cross-pattern use needs one stable membership law that existing durable kinds and direct relations cannot preserve. Run the eight tests and name each downstream question, its defining or testing rule, and the PatternID that locates that rule.
 5. **Choose the positive form.** Use `root` for independently identified individuals, `same-individual-dependent` when one root individual gains an additional stable membership predicate and inclusion law, or `identity-dependent` when a distinct individual has an already governed dependence relation to one root individual plus all discriminators.
 
    Fill the shared E.24-family decision and separately test the need for additional durable coordination. Direct-rule sufficiency permits positive kind admission with an explicit no-additional-ontic conclusion; use atomic co-decision only when both new outputs are needed.
 
    Apply A.11 and A.8 when kernel status is claimed. A fresh kernel proposal supplies A.8 with the independent candidate inputs of the shared decision; its projection finding contributes to that decision before step 6. An already admitted kind uses its applicable accepted result when its kernel placement is reconsidered.
-6. **Close or leave unresolved, then name.** Record the positive admission when the selected form passes every condition. A missing branch law or fact leaves admission unresolved. Use `reject` only when no classification result is needed for the receiving use, and recover the non-kind object under the rule that defines or tests it. Only after one disposition and governed object are stable may F.8, F.5, F.18, or F.17 expose a public name.
+6. **Close or leave unresolved, then name.** When the selected form passes every condition, record the supported disposition. For a claim of effective admission, use the decision and authority required under `E.24:4`. A missing branch law or fact leaves admission unresolved. Use `reject` only when no classification result is needed for the receiving use, and recover the non-kind object under the rule that defines or tests it. Only after one disposition and governed object are stable may F.8, F.5, F.18, or F.17 expose a public name.
 
 The PatternID locates the applicable rule content. C.3 states the membership and continuity rules for kinds. A.6.REL states the common relation-occurrence discipline. Each direct relation pattern states participant meanings, obtaining, applicability, and occurrence identity. A.6.0/A.6.5 define reusable declarations. E.24 defines ontic-settlement predicates. F.8/F.5/F.18/F.17 constrain names after ontology is settled.
 
@@ -320,7 +320,9 @@ First recover the source construct by value:
 - source relations such as is-a, part-of, realizes, participates-in, depends-on, or equivalent local relations;
 - intended source use: classification, query, modeling, exchange, validation, reasoning, implementation, or documentation.
 
-Then select the FPF object:
+Recover what the receiving practitioner must decide from those source distinctions. For a question about membership, test which individuals satisfy the criterion in each practice. For a question about composition, establish which constituents form a whole of the specified kind. For a question about models at different levels of abstraction, fix the inquiry and identify what each model allows or rules out. A source hierarchy may combine several relations. Map each one used in the inference and give the grounds for any conclusion that crosses them. One local classification needs only its applicable criterion and facts.
+
+Select the FPF object for each contribution the receiving work needs:
 
 | Source construct use | FPF recovery |
 | --- | --- |
@@ -408,9 +410,9 @@ In each closed replay, the `E24UK-*` reference identifies the admission-result e
 
 **Rejected near-miss — a separate `U.Capability` individual.**
 
-1. **Subject and use.** The source construct proposes `Pump37MaintenanceCapability_2026` as an individual distinct from holder `Pump37`. Recover what planning, promise, work-fit and development uses need: what the pump can do under stated conditions and bounds, with the warrant required for the receiving use.
+1. **Subject and use.** The source construct proposes a separate individual named `Pump37MaintenanceCapability_2026`. Start from the capability the user needs. To plan throughput, establish what `Pump37` can pump under the operating conditions. To plan servicing, identify the workshop, contractor or other System expected to carry out the required maintenance, and what it can do with the available support. For a claim of self-maintenance, establish which operation the pump itself can perform.
 2. **Coverage.** The holder retains `U.System` identity. An identified ability assertion uses C.2.1 `U.Episteme` identity. The proposition, its assertion, support and demand-fit result need no second capability individual; no additional local classification is needed for those uses.
-3. **Discriminating cases.** New evidence can change support without performance change. A stricter throughput demand can change fit. Calibration can change actual ability with unchanged paperwork. Loss and recovery change the qualified predicate at the stated times; replacing the holder changes the assertion's subject. None requires reidentifying a second individual.
+3. **Discriminating cases.** New evidence can change support without performance change. A stricter throughput demand can change fit for the pumping question. A different maintenance operation or loss of access to the necessary equipment can change the workshop’s ability to carry out the service. Calibration can change actual performance with the paperwork unchanged. Loss and recovery change the qualified predicate at the stated times; replacing the holder changes the assertion's subject. None requires reidentifying a second individual.
 4. **Tests and result.** No additional classificatory distinction survives recovery, so `E24UK-NAR-U-CAPABILITY-01` records `reject`. This rejects the new kind commitment, not the reality of the holder's ability. A holder-indexed tuple cannot substitute for an independently needed subject and identity rule.
 5. **Reopening condition.** Reopen only when a concrete receiving use depends on continuity of a separate object and the available evidence supplies its required identity facts, including any obtaining dependence relation and its identity effect. A new record, evidence window, ability label or local-kind declaration alone does not supply that need.
 

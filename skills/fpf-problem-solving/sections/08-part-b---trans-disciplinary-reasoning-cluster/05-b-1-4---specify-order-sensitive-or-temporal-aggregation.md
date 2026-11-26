@@ -4,7 +4,7 @@
 > **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
-**Use this when.** Use this pattern when the claim aggregates already recovered relations over a set of ordered positions, phases, or a time window, and the question is not just ordinary part-whole construction. Typical cues are ordered steps, order-sensitive argument chains, asset histories, proper temporal restrictions of one enduring carrier, rolling windows, use-bounded roll-ups, time-sliced evidence, or a bounded chronology over C.2.1 episteme identities and already obtaining edition relations.
+**Use this when.** Use this pattern to specify how order or time is to affect an aggregate, or to determine such an aggregate from the relevant relations. Typical cues are ordered steps, order-sensitive argument chains, asset histories, proper temporal restrictions of one enduring carrier, rolling windows, use-bounded roll-ups, time-sliced evidence, or a bounded chronology over C.2.1 episteme identities and already obtaining edition relations.
 
 **Not this pattern when.** If the question is ordinary part-whole or collection admission, use `B.1`, `A.14`, and `C.13`. If it is episteme identity or historical edition continuity, use `C.2.1` before any aggregation. If the question is the method as such, method description, work plan, dated work occurrence, or Work temporal part or episode, use `A.3.1`, `A.3.2`, `A.15.2`, or `A.15.1`. If the question is work-resource accounting, use `B.1.6`. If the question is changed identity, use the pattern that defines the subject's identity or change; for a clear whole-reidentification question, use `B.2` directly to test whether the existing whole suffices or a new whole must be reidentified. Use `B.2.P` first only when emergence-family wording hides the claim kind. If the question is temporal adequacy of a claim, use `C.27`.
 
@@ -14,7 +14,7 @@
 
 ### B.1.4:1 - Problem Frame
 
-Many useful aggregates are not simple unordered wholes. A manufacturing sequence changes meaning when steps are swapped. An argument chain depends on which premise is used before which lemma. A turbine or another enduring individual with a stated identity rule may be considered across proper temporal restrictions. An unchanged paper or dataset episteme may also be restricted to a proper interval only while its complete C.2.1 identity triple remains fixed; changed claim content, EntityOfConcern, or effective ReferenceScheme identifies another episteme, with edition continuity tested separately. In these cases the aggregation concerns order or temporal coverage over already recovered relations.
+Many useful aggregates are not simple unordered wholes. A manufacturing sequence changes meaning when steps are swapped. An argument chain depends on which premise is used before which lemma. A turbine or another enduring individual with a stated identity rule may be considered across proper temporal restrictions. An unchanged paper or dataset episteme may also be restricted to a proper interval only while its complete C.2.1 identity triple remains fixed; changed claim content, EntityOfConcern, or effective ReferenceScheme identifies another episteme, with edition continuity tested separately. To define the operation, establish which relations enter and how order or temporal coverage affects the answer. To apply it to a history, establish the relevant relations in that history.
 
 `B.1.4` asks what result the receiving use needs, which inputs and independently established relations it uses, and which operation combines them. Order, temporal reference, window, coverage and overlap qualify that operation when they affect its result. A stronger claim keeps its subject grounds.
 
@@ -38,12 +38,12 @@ The resulting aggregate is unusable for the proposed claim: the user cannot tell
 
 Start with the receiving question and the result it needs. An already adequate aggregation rule and ordinary explanation can be used directly.
 
-1. **Recover the inputs and relations.** Identify the included positions, values, intervals or phases and the objects they concern. Keep their identity and relations grounded in the subject facts and applicable rules. For a temporal input, recover its bearer, temporal reference and interval; relate different references only through a justified conversion.
+1. **Identify what enters the aggregate.** When designing a rule, specify which positions, values, intervals or phases will qualify, how to identify their bearers and what establishes inclusion. For a temporal rule, specify the reference and how the window will be set. When applying the rule, recover the inputs for this use and ground their identity and relations in the relevant facts. Use a justified conversion when relating different time references.
 2. **Choose the combining rule and result.** State the operation and what it returns: for example, an ordered relation structure, a combined value, the union of covered intervals or their elapsed span. When the rule is yours to design, change a possible history while holding the proposed summary fixed. Moving a gap can preserve total coverage while moving the last completion beyond a deadline. Use the events, intervals or joint conditions that distinguish the answers the recipient needs. Supply the order, join, independence, coverage and overlap conditions that this operation uses. If the rule needed by the question is missing, retain that gap rather than naming an unsupported aggregate.
 3. **Obtain the requested result.** A specification can be sufficient when the task asks how the aggregation is to be performed. When a computed result is needed, apply the selected operation and interpret its result under those conditions. Distinguish an order structure from the result of applying the operations it represents. Section :5 shows why the same inputs can support different warranted results.
 4. **Bound the use and stop.** State the supported use and any condition whose failure or uncertainty changes it. Narrow the result or leave the affected conclusion unresolved when its required basis is missing. Use another pattern when a distinct claim needs that pattern's contribution. Stop with the sufficient ordinary answer.
 
-When the receiving use needs an inspectable account, reuse an adequate account or materialize a `ContextTemporalAggregation@Context` record. It describes the independently established inputs, rule and result; it does not establish their subject facts:
+When the receiving use needs an inspectable account, reuse an adequate account or materialize a `ContextTemporalAggregation@Context` record. It can state the input conditions and result specification for a proposed rule, or the independently established inputs and result of an application; it does not establish their subject facts:
 
 ```text
 ContextTemporalAggregation@Context:
@@ -87,8 +87,8 @@ The aggregation concern is the receiving question; the EntityOfConcern is the in
 
 | Mode | Object | Required relation discipline | Typical use |
 | --- | --- | --- | --- |
-| Contextual order aggregation | Positions and relation facts whose order, partial order or join structure matters to the stated use. | Included inputs, combining rule and required result, `OrderSpec`, ordered relation refs, join or independence conditions when used, and ClaimScope when needed. | Ordered method relation, order-bound argument chain, staged construction description, controlled sequence. |
-| Temporal aggregation | Interval or time-indexed facts about named bearers or occurrences. | Input identities and temporal relations, temporal reference or justified conversion, `TimeWindow`, combining rule, coverage and overlap policy. The proper-phase profile additionally requires one continuing carrier and the phase relation. | Work-interval union or elapsed span, asset phases, observation windows, or chronology over episteme identities. For proper phases of one episteme, its complete C.2.1 identity triple stays fixed; distinct editions require their identities and any claimed edition relation. |
+| Contextual order aggregation | Positions and relation facts whose order, partial order or join structure matters to the stated use. | Specify how inputs and their relations qualify, the combining rule, required result, `OrderSpec`, applicable join or independence conditions and ClaimScope. For an actual aggregate, identify the inputs and relations used. | Ordered method relation, order-bound argument chain, staged construction description, controlled sequence. |
+| Temporal aggregation | Interval or time-indexed facts about named bearers or occurrences. | Specify which bearers and intervals qualify, how to place them on a common time reference and select the `TimeWindow`, and how to combine them with coverage and overlap accounted for. A claim about an occurrence identifies the actual inputs and their temporal relations. The proper-phase profile additionally requires one continuing carrier and the phase relation. | Work-interval union or elapsed span, asset phases, observation windows, or chronology over episteme identities. For proper phases of one episteme, its complete C.2.1 identity triple stays fixed; distinct editions require their identities and any claimed edition relation. |
 
 When a use combines order and temporal claims, distinguish what each contributes and state the correspondence on which the joint result relies; one sufficient account may contain both. A Method may have an ordered relation structure. Work that enacts it may have A.15.1 temporal parts, episodes, operational parts or separate occurrences, while C.27.TA supplies any independently declared overlap or other interval relation. Aggregate those inputs under the chosen rule. Use `PhaseOf` only for the proper-phase profile of one enduring carrier, not as a substitute for Work or temporal relations.
 
@@ -127,18 +127,18 @@ Keep an ordinary statement about who prepared the aggregation ordinary. If the u
 
 ### B.1.4:4 - Admissible Checks
 
-For contextual order aggregation:
+For a contextual order rule, specify how a user will select the positions and their relations. For a claim about a particular aggregate, apply that rule to the corresponding values:
 
-- the ordered relation refs are named by value;
+- the ordering relations are specified and, for a particular aggregate, the relations used are identified by value;
 - the `OrderSpec` is declared as total order, partial order, or another named relation;
 - independence, branch, or join conditions are named when parallel factors are used;
 - the claim identifies its included inputs, combining rule, result or result specification, ClaimScope when needed, and admissible use; any holon-boundary crossing it uses has its relation basis;
 - method, method-description, work, transformation, and resource claims use the patterns that define or test them.
 
-For temporal aggregation:
+For a temporal rule, establish how its user can determine the bearers, intervals and relevant window. To assess an actual aggregate, apply the rule to the available evidence:
 
-- each input interval and its bearer or occurrence are identified; a proper-phase claim additionally preserves the one carrier's identity under its rule;
-- the temporal reference, any required conversion and the selected time window are established;
+- the rule states which intervals and bearers or occurrences qualify, or a particular application identifies them; a proper-phase claim additionally preserves one carrier's identity under its rule;
+- a reference and any conversion make the times comparable, and the rule for selecting the window or its actual bounds are available as the claim requires;
 - the selected combining rule and coverage/overlap policy hold; handle allowed overlaps and gaps as that rule requires, or narrow the use;
 - a changed identity is represented as a distinct input when appropriate, rather than hidden as another phase of the same carrier;
 - work-resource claims use `B.1.6`; positive temporal-aspect claims use `C.27.TA`, while a separate temporal-claim adequacy question uses `C.27`. Currentness uses `G.11`, and `A.10` recovers provenance and bounded reliance when needed.
@@ -155,11 +155,11 @@ Weakest-link and monotonicity claims name the characteristic and model being bou
 
 | Obligation | What must be named | Why it matters |
 | --- | --- | --- |
-| Independence and joins | For branches used in the aggregate, name their relation refs, any join refs and the condition under which they may be combined. | Prevents an ordered aggregate from treating dependent branches as independent evidence or work. |
+| Independence and joins | Specify how to establish the relations and joins that allow branches to be combined. For an actual aggregate, identify those used. | Prevents an ordered aggregate from treating dependent branches as independent evidence or work. |
 | Order specification | Total order, partial order, precedence relation, or another named relation over the selected positions. | Keeps order-sensitive claims from being read as unordered collection claims. |
 | Decisive dependency relation | For a weakest-link claim, name the relation that makes one position, delay or missing step decisive for the aggregate use. | Keeps that claim dependent on its model and relation. |
-| Bearer identity and phase continuity | Identify each temporal input's bearer. For the proper-phase profile, state which carrier remains the same and under which identity rule. | Keeps separate occurrences distinguishable and prevents a phase account from hiding identity change. |
-| Temporal coverage | Temporal reference, time window, intervals or phase refs, combining rule and coverage/overlap policy. | Distinguishes covered time from elapsed span and exposes how gaps and overlaps affect the result. |
+| Bearer identity and phase continuity | State how the rule identifies a temporal input's bearer. For an actual aggregate identify the bearers included. For the proper-phase profile, state which carrier remains the same and under which identity rule. | Keeps separate occurrences distinguishable and prevents a phase account from hiding identity change. |
+| Temporal coverage | State how to choose a common reference and window, identify intervals or phases, and combine them for coverage and overlap. Use the values for the period concerned when reporting its coverage. | Distinguishes covered time from elapsed span and exposes how gaps and overlaps affect the result. |
 | Chronological discipline | State whether the claim uses chronological, logical, publication or performed-work order, and the correspondence needed when more than one is used. | Keeps a document sequence, argument sequence and work occurrence sequence from substituting for one another. |
 | Monotone characteristic | For a monotonicity claim, name the characteristic, comparison and model under which adding inputs preserves or improves the result. | Blocks generic monotonicity claims over an unspecified aggregate. |
 
@@ -192,8 +192,8 @@ Union counts a shared instant once when intervals overlap. Its set-based policy 
 
 | ID | Requirement | Purpose |
 | --- | --- | --- |
-| CC-B1.4-1 | The aggregation claim identifies its subject, included inputs and relations, combining rule, required result, aggregation mode, ClaimScope when needed, temporal reference/window when relevant, and admissible use. | Makes the aggregation usable without requiring a separate record when an ordinary answer suffices. |
-| CC-B1.4-2 | Contextual aggregation identifies its ordered relations and OrderSpec. Temporal aggregation identifies its intervals, bearers, temporal reference and TimeWindow; the proper-phase profile also establishes one-carrier identity and the phase relations. | Keeps order, temporal aggregation and proper-phase claims distinguishable. |
+| CC-B1.4-1 | The specification identifies its subject, inclusion and combining rules, required result, aggregation mode and admissible use, with ClaimScope and temporal reference or window where relevant. A result computed under it identifies the inputs and relations used. | Makes the aggregation usable without requiring a separate record when an ordinary answer suffices. |
+| CC-B1.4-2 | An order rule specifies the relation and OrderSpec. A temporal rule specifies which intervals and bearers qualify and how to apply the temporal reference and TimeWindow. An application grounds the particular relations or intervals it uses. An actual proper-phase claim also establishes one-carrier identity and the phase relations. | Keeps order, temporal aggregation and proper-phase claims distinguishable. |
 | CC-B1.4-3 | Independence, join, coverage, and overlap-policy conditions are present when the claim uses them. | Keeps local composition reviewable. |
 | CC-B1.4-4 | Method, method-description, work-plan, work-occurrence, work-resource, transformation, and whole-reidentification claims use the patterns that define or test them. | Prevents B.1.4 from absorbing neighboring objects. |
 | CC-B1.4-5 | Mathematical notation is treated as a selected lens or expression, not as the in-life object or relation. | Keeps `Gamma_ctx`, `Gamma_time`, graph, and algebra language bounded. |

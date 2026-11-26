@@ -8,7 +8,7 @@
 
 Use this pattern when you need to determine what a physical process or device could accomplish before choosing its detailed mechanism, or when a familiar physical prohibition appears to rule out a proposed change. A candidate may have an acceptable energy balance yet require an unavailable preparation, consume a resource that was omitted, or perform differently on inputs that one device is supposed to handle.
 
-The first useful result is a necessary condition on the requested performance, a conditional exclusion of a class of proposals, or a changed premise that opens a different construction. You obtain it by describing the complete physical transformation and constructing a comparison that the applicable physical laws constrain. “Permitted” here means allowed under those physical premises.
+The first useful result is a necessary condition on the requested performance, a conditional exclusion of a class of proposals, or a changed premise that opens a different construction. You obtain it by describing the complete physical transformation and deriving the consequence of its physical laws. A balance can constrain the entire transformation directly. A comparison with another admissible operation can reveal a restriction that is hidden when the proposed transformation is considered alone. “Permitted” here means allowed under those physical premises.
 
 You need a working description of the requested effect, the resources and surrounding systems it may use, and the physical principles relevant to that effect. A qualitative argument can suffice. A quantitative result also needs the quantities and mathematical operations in its chosen comparison. The two worked cases require different preparation: energy exchanges and elementary ratios in the first, state vectors and inner products in the second. Obtain an unfamiliar physical premise or calculation from a suitable source or collaborator and retain the conditions on which its answer depends.
 
@@ -32,7 +32,7 @@ Detailed calculation of one design can reveal its failure while leaving other de
 
 ### PHY.3:4 - Solution
 
-Construct the complete proposed transformation, identify the physical restrictions shared by its candidate mechanisms, and use an admissible comparison to derive their consequence. Keep the requested performance and its physical conditions attached to the result. Revisit the premise that matters when the resources, input family or required performance changes.
+Construct the complete proposed transformation, identify the physical restrictions shared by its candidate mechanisms, and derive their consequence for the complete transformation. Use an admissible comparison when the inference depends on what two transformations have in common or what their combination would do. Keep the requested performance and its physical conditions attached to the result. Revisit the premise that matters when the resources, input family or required performance changes.
 
 #### PHY.3:4.1 - Specify the physical change and what must remain usable
 
@@ -56,7 +56,7 @@ Use B.5.TU to recover the physical theory's premise and its consequence for the 
 
 #### PHY.3:4.3 - Construct a comparison that exposes the restriction
 
-Choose the operation that fits the available physical structure. The following two constructions address different situations and can be used independently.
+Choose the operation that fits the available physical structure. A law on the whole may give the limit directly. For example, for two connected reservoirs with no inflow or losses, the initial total mass minus the required final mass reserve bounds the mass that can be delivered outside the pair. Transfers between reservoirs cancel in the mass balance. Derive that bound at the boundary where the quantities are defined. The two comparisons below address restrictions that depend on further relations.
 
 **Compose with a reference and cancel selected changes.** Use this when an admitted reference process exchanges the relevant quantities or restores a needed condition. Choose the part of the proposal you want to eliminate from the combined account, then determine the reference's direction, amount and preparation that match it. Establish that the reference can perform that operation under the same connecting conditions. For example, two processes may exchange equal energy but require incompatible temperatures, pressures, phases or forms of delivery. Numerical equality alone cannot establish the physical connection.
 
@@ -70,7 +70,7 @@ These constructions can reveal a remaining physical premise rather than a bound.
 
 #### PHY.3:4.4 - Derive the consequence with every remaining physical change included
 
-Carry the quantities, signs, state conditions and input relations through the chosen comparison. Interpret each term by the physical contribution it represents. Check that the canceled effects have compatible units and conditions, and that the uncanceled effects describe the complete remaining process.
+Carry the quantities, signs, state conditions and input relations through the derivation. In a direct balance, identify the boundary at which exchanges enter or leave and the time over which the balance holds. When combining operations, cancel matched effects only under compatible units and conditions, then identify the remaining physical process.
 
 Obtain the requested inequality, an excluded transformation, or the unresolved condition on which either result depends. When using a mathematical invariant, MATH.11 supplies the derivation from the admitted transformation rules. When a computational tool performs the algebra, retain the symbolic relation or a sufficient explanation that lets another participant inspect what the computation establishes. C.29.2 and C.29.3 govern a computation whose formulation or realization needs further work.
 
@@ -158,7 +158,7 @@ The worked proofs assume established classical thermodynamics and standard quant
 - [ ] The requested physical effect includes its input family, performance criterion and relevant preparation.
 - [ ] Consumed resources, surrounding systems and any required restoration or continued capability are included where they affect the restriction.
 - [ ] The selected physical account has a stated regime and a reason to cover every process or device to which the conclusion applies.
-- [ ] The comparison uses compatible admitted reference operations, or the same operation on inputs linked by the physical law.
+- [ ] The law gives the bound on the stated whole. Where the derivation needs a comparison, its reference operation or linked inputs meet the law’s conditions.
 - [ ] The derivation retains uncanceled changes and allowed auxiliary outputs.
 - [ ] The result states what the derivation excludes or what condition a proposed mechanism must satisfy. Any claim that a mechanism can deliver an allowed performance has its own grounds.
 - [ ] The explanation shows which changed premise would require another derivation and what the current result enables next.

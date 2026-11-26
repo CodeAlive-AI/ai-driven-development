@@ -6,17 +6,17 @@
 
 ### A.22.CGUS:0 - Use This When
 
-Use this pattern when a diagram or explanation shows several possible next actions, but readers may mistake one displayed path for the required work sequence. Start with one ordinary question:
+Use this pattern to work out which continuations the conditions of a case allow, including when a diagram shows only one path or no candidates have yet been named. Start with the recipient's question:
 
-> Which alternatives are available now, and what condition blocks each one?
+> Must I establish that this particular continuation is available, that some continuation exists, or which continuations make up the full set? If I must choose a way to proceed, what will let me identify and use it in time?
 
-Name the decision or question, the visible alternatives, the condition for each alternative, and the facts available now. If a missing fact or rule could change the answer, mark that alternative `unknown`. An established blocking condition may already settle it as unavailable. Stop when this answers the practical question. A useful explanation need not first become a formal record or an admitted structure.
+Use the required result, the choices open to the actors and the governing constraints to find potential continuations. A named way needs its own conditions. An existence claim can also follow from a rule covering the possible cases. A claim to give all the available ways, or to exclude them all, needs grounds covering the allowed range. Mark a candidate `unknown` when a missing fact or rule prevents deciding it. One established blocking condition can already exclude it. Stop when the answer supplies the requested use.
 
 Open the formal branch when a named use needs the identity and qualification of the unfolding organization as a CGUS. A `ConstraintGovernedUnfoldingStructure` (CGUS) is one A.22 `U.Structure` whose locally named loci, constituents, obtaining relations, and constraints define at least two potential continuations across the cases allowed by those constraints. A separate result says which alternatives are enabled, disabled, unknown, or error for one case and time window.
 
 Do not use CGUS merely because a card, graph, table, narrative, prompt path, or README line looks route-shaped. A single recommendation or displayed sequence is not enough. The structure may branch, join, cycle through subject relations, remain partially ordered, or leave several alternatives live at once. A result with zero or one enabled alternative can still concern that same branching structure.
 
-**What changes in practice.** Practitioners correct the visible alternatives and their conditions before completing formal fields. They keep potential structure separate from the result for the present case, and they mark an alternative `unknown` when an unresolved fact or rule prevents deciding it. Display order alone neither prescribes nor performs Work.
+**What changes in practice.** Practitioners can develop alternatives from the work required or assess alternatives already proposed. Their answer supplies the continuation, existence finding or complete range the recipient needs. They keep potential structure separate from the result for the present case, and they mark an alternative `unknown` when an unresolved fact or rule prevents deciding it. Display order alone neither prescribes nor performs Work.
 
 ### A.22.CGUS:1 - Problem Frame
 
@@ -44,15 +44,15 @@ The opposite repair is also harmful: authors replace the simple decision questio
 
 #### A.22.CGUS:4.1 - Ordinary branch
 
-Write the smallest useful answer in domain language:
+Decide what would let this recipient act or answer. For example, a venue confirms that a room has been booked for the company’s rehearsal tomorrow and omits the room name. This establishes an existing booking. If the musicians must choose a building before boarding and cannot change it later, the organizer needs the building by departure. If the order asks for the booked room by name, the organizer also needs its identity by the agreed time. Confirmation for the East Room supplies that answer while leaving open whether the company also booked the West Room. For a complete list of its rooms, the organizer needs a booking record or rule that covers all of them. Confirmation naming East as the company’s sole room establishes the booking, identifies a booked room and completes the list. Giving directions to the right building also requires knowing where East is.
 
-1. name the decision or question;
-2. list the alternatives;
-3. state the condition for each alternative;
-4. state the facts known for this case;
-5. mark each alternative `available`, `blocked`, or `unknown` under its condition, and name any gap that prevents deciding it. If the evaluation itself failed, state that error rather than treating it as a domain fact.
+1. State the question, the relevant case and time, and the range of results and circumstances it covers. For a decision someone must make, establish who can decide and by when. A question about whether a continuation exists can already have an answer even if no chooser has been designated.
+2. For a specified move, take it as the candidate. When finding a way forward is your task, work back from the result each move must make possible. Which change of arrangement, source, timing or actor would provide a genuinely different way under the constraints? Build or reuse candidate continuations on that basis. Where the route leaves a choice, establish who can choose and which information will be available in time. A continuation can also be fixed by its conditions or a schedule.
+3. State what must hold for each continuation on which the answer relies. Retain the distinctions that change availability or the grounds the recipient must explain, including dependencies between constituent actions under §4.1.1.
+4. Apply those conditions to the facts for this case and window. When the choice may wait for more information, establish what the chooser will know in time and which response will then be possible.
+5. Return the conclusion requested. For an identified candidate, give `available`, `blocked` or `unknown` with its grounds. One enabled candidate suffices to establish existence. A rule may also establish existence without identifying the same available action in every case. For a complete set, justify that the candidates or the generating rule cover every admissible continuation and determine which satisfy the conditions. Report a partial set or the outstanding distinction where the grounds fall short. An evaluation error retains its own status.
 
-For example, a design review has two alternatives: accept the design or repair it. Acceptance needs both checks to pass. Repair needs at least one failed check and a repair proposal that concerns this design.
+For example, suppose the rules of a design review permit exactly two review outcomes, acceptance and repair. The team wants the current status of both. Acceptance needs both checks to pass. Repair needs at least one failed check and a repair proposal that concerns this design.
 
 | Alternative | Present facts | Result shown on the card |
 | --- | --- | --- |
@@ -65,7 +65,7 @@ When retaining or handing over this card separately, include the two rules above
 
 ##### A.22.CGUS:4.1.1 - Conditions through constituent and encompassing work
 
-When a continuation is a way of performing work, recover the constituent–whole relations in the relevant Method and Work structures that can change availability. Ask what constituent actions must be performable and what encompassing work is being done through them. B.1.5.EW supplies that recovery; knowing a Method's description does not supply the capability or resources to perform it.
+When a continuation is a way of performing work, recover the constituent–whole relations in the relevant Method and Work structures that can change availability. For a design, work back from what the encompassing undertaking must supply to the constituent actions and their conditions. For an occurrence, recover what encompassing work was actually performed through those actions. B.1.5.EW supplies that recovery; knowing a Method's description does not supply the capability or resources to perform it.
 
 Distinguish conditions needed at entry, conditions that must remain satisfied during combined performance, and the result required by the encompassing use. In particular:
 
@@ -73,7 +73,7 @@ Distinguish conditions needed at entry, conditions that must remain satisfied du
 - adequate local resources may be insufficient when constituents share them;
 - a constituent result may satisfy its own postcondition while leaving the whole's result unresolved.
 
-For each relevant condition, state what it concerns and how it affects this continuation. Reuse an understood connection or adequate existing basis. A missing condition blocks or leaves unknown the dependent alternative; it need not block an independent way to learn, obtain support or change the arrangement. Capability belongs to its performer and conditions under A.2.2; prospective resources and support remain prospective until available.
+For each relevant condition, state what it concerns and how it affects this continuation. Reuse an understood connection or adequate existing basis. Failure of a necessary condition blocks the dependent continuation. A missing fact leaves it unknown when the outstanding fact could change the result. An independent way to learn, obtain support or change the arrangement can remain available. Capability belongs to its performer and conditions under A.2.2; prospective resources and support remain prospective until available.
 
 In the formal branch, express these dependencies with the existing constituents, selected relations, applied constraints and continuation judgements. A temporal edge alone cannot express that one action constitutes part of another ongoing work. Nor does a nested flow position establish Method or Work parthood. A diagram may show the relations together when their meanings remain recoverable.
 
@@ -131,7 +131,7 @@ RelationParticipantLocator := <relationDefinitionRef, relationOccurrenceRef, par
 
 Add a `RelationSignature` and its declaration-local `SlotSpec` together only when an existing reusable declaration is needed for replay. Neither declaration value substitutes for the obtaining occurrence. The CGUS has no ambient context field.
 
-Judge each continuation separately. An immediate local use may keep the following values in the explanation; persistence or replay may place them in an ordinary C.2.1 result episteme.
+For a finding about one candidate, evaluate its condition. For a current-set result, establish the range of candidate continuations and which of them satisfy their conditions in this case. An immediate local use may keep the following values in the explanation; persistence or replay may place them in an ordinary C.2.1 result episteme.
 ```text
 ContinuationJudgementResult:
   selectedCGUSRef
@@ -280,6 +280,8 @@ If the proposal-to-design relation cannot be established, this formal structure 
 
 A later passing thermal check is a different result episteme and supplies a new case input. With service still satisfied, acceptance becomes enabled and repair becomes disabled. The selected design, proposal, continuation candidates, proposal-to-design relation, constraints, use frame, loci and potential topology are unchanged, so the same CGUS remains available for that new case.
 
+Now hold the original facts fixed and change the review rule. In the second edition acceptance still requires both checks to pass. Under its remit the repair branch can take a targeted proposal only when the service check is violated. In DR-27 the thermal check failed and the service check passed. The first edition therefore makes repair available. The second makes neither acceptance nor repair available for this case. The applied repair constraint has changed. The second structure binds its four loci to the same design, proposal, acceptance continuation and repair continuation respectively. It keeps the proposal-to-design relation and the selection use. Its potential repair continuation now takes the service-violation constraint. The unavailable repair in this case remains a potential branch for a case with a service violation and a targeted proposal. A new printed edition that merely rephrased the original rule while preserving the selected constituents, relations, applied constraints, use frame, bindings and potential branches could still describe the same structure.
+
 #### A.22.CGUS:5.1 - A missing intermediate capability changes the continuation
 
 In this constructed learning case, a dancer has the strength and static axis control needed by a figure and can recall its sequence. The known limitation is maintaining balance during its required rotation. The figure's continuation depends on that coordinated performance, not just on adequate strength and memory.
@@ -291,7 +293,7 @@ In this constructed learning case, a dancer has the strength and static axis con
 
 During the rotation, balance coordination would constitute part of turning; that turn would constitute part of the figure. These are connections through performance, not three successive tasks. The practice alternative can exercise the first connection without already performing the intended figure.
 
-When the coordination can be sustained, return to the encompassing figure and vary the relevant conditions before drawing a broader capability conclusion. The case condition and its continuation judgement can change without changing the potential alternatives. The subject's training Method supplies the exercise and assessment; CGUS makes their effect on the available continuation explicit.
+When the coordination can be sustained, return to what the dancer is asked to perform. If the required turn and the other constituents can be performed together under the conditions of that figure, the capability claim can extend to it. If a partner steadies the turn, establish which balance the dancer maintained and what the partner supplied. That performance can demonstrate the supported figure. For an unaided figure, use grounds for that dancer sustaining the required balance without the partner’s support. Use adequate prior performances, a domain rule or a suitable trial when a wider capability is at issue. The case condition and its continuation judgement can change without changing the potential alternatives. The subject's training Method supplies the exercise and assessment; CGUS makes their effect on the available continuation explicit.
 
 ### A.22.CGUS:6 - Bias-Annotation
 
@@ -310,7 +312,7 @@ When the coordination can be sustained, return to the encompassing figure and va
 | **CC-CGUS-1 Identity and profile.** | The four A.22 discriminators identify one `U.Structure`; local locus bindings, relations, and constraints define at least two potential continuations across allowed cases. | Recover the missing value or keep the artifact as an explanation. |
 | **CC-CGUS-2 Local loci and relation participants.** | Every `CGUSLocusBinding` uses a locus declared inside this CGUS and binds one constituent for a stated meaning. A needed relation participant retains its definition, occurrence, order, and binding; `RelationSignature` and `SlotSpec` appear together only for declaration-level replay. | Restore the locus or complete relation-participant basis. Never use a free-standing `SlotSpec` as a structure position. |
 | **CC-CGUS-3 Explanation and description separation.** | An ordinary or persisted provisional explanation concerns the subject of its claims; this may be an already identified A.22 structure whose CGUS membership remains unresolved. Post-qualification descriptions and slices concern the CGUS. None is the structure or a membership condition. | Restore the right `EntityOfConcern` or keep the explanation ordinary. |
-| **CC-CGUS-4 Current continuation result.** | Each judgement retains its basis rows with the values required by each applicable condition-evaluation or obtaining-relation branch in `4.2`, the relevant case inputs and facts or evidence, dependent occurrences, window, continuation result, and reason. The enabled set may contain zero, one, or several alternatives. | Apply the candidate’s condition logic; mark it unknown only when the missing value prevents deciding the result, and retain evaluation errors separately. |
+| **CC-CGUS-4 Current continuation result.** | Each judgement retains its basis rows with the values required by each applicable condition-evaluation or obtaining-relation branch in `4.2`, the relevant case inputs and facts or evidence, dependent occurrences, window, continuation result, and reason. A result for a named candidate or for existence can suffice on its own. Reporting the complete enabled set, including an empty set, requires covering the candidate domain as well as establishing availability. | Apply the candidate’s condition logic; mark it unknown only when the missing value prevents deciding the result, and retain evaluation errors separately. |
 | **CC-CGUS-5 Separate decisions.** | Identity and membership, case result, description adequacy, and each neighboring claim are judged separately. | Reopen only the affected decision. |
 | **CC-CGUS-6 Work-order boundary.** | The selected structure and display expose branches and conditions. | Put any prescribed or performed Work order under the Method, work-plan, or Work pattern that establishes it. |
 | **CC-CGUS-7 Graph-shaped coverage.** | Branches, joins, cycles, partial order, and live alternatives are preserved or explicitly omitted for the declared use. | Keep a chain provisional or state what its demonstrative slice omits. |

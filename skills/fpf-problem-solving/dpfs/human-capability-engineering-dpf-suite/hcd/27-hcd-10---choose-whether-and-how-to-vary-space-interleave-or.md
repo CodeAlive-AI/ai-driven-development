@@ -87,13 +87,13 @@ When the current arrangement already serves the practice question, retain it. Ot
 | Must the learner distinguish which response or method fits a case? | interleaving | Which alternatives are mixed, which similarities cause confusion, and what response will reveal the needed discrimination? |
 | Is stable performance ready for a changed level of challenge or help? | progression | Which feature changes, what prior evidence supports the change, and what condition pauses or reverses it? |
 
-Several changes can belong in one episode when their contributions and the meaning of a failure remain distinguishable. Otherwise change one relevant feature at a time or use comparable branches.
+Keep changes together when later work requires their interaction. Performance under the combined conditions can settle whether to entrust that whole job. If one attempt fails, it can establish the failure there while leaving its cause open. Isolate a feature or compare branches when the learner needs practice on that feature or the next decision depends on attributing the effect.
 
 #### HCD.10:4.3 - Design Variation around the Needed Discrimination
 
-To practise adaptation, change a condition that can change the warranted action. A release can require FW8 instead of FW7. Twenty-four test hours can support work that 22 hours cannot. Eighty records representing only 60 requests, readings near 448 versus 400 kPa, missing source information or a different authority can each alter the appropriate response in its own task.
+To practise adaptation, change a condition that can change the warranted action or its grounds. A release can require FW8 instead of FW7. Twenty-four test hours can support work that 22 hours cannot. Eighty records representing only 60 requests, readings near 448 versus 400 kPa, missing source information or a different authority can each alter the appropriate response in its own task.
 
-To practise preserving an action, keep the deciding relation fixed and change a cue on which the learner may wrongly rely. HCD.6.1:4.4 describes how to construct this contrast. The challenge is to retain the warranted action under a misleading change.
+To practise preserving an action, keep the deciding relation fixed and change a cue on which the learner may wrongly rely. HCD.6.1:4.4 describes how to construct this contrast. The challenge is to retain the warranted action under a misleading change. A different exercise can change a real constraint while leaving the same action feasible for another reason. If the later work calls for justification, leave that reasoning to the learner.
 
 Before the attempt establish the intended discrimination and the domain grounds for judging it. The relevant response could be a justified refusal, continuation, calculation, request, method change or retention of the earlier action. Ask for the action that reveals the distinction. Ask the learner to explain it if explanation is itself part of the target or resolves a question that matters to interpretation or the next step.
 
@@ -148,7 +148,7 @@ Pause, reverse the change or redesign the practice if an error becomes unsafe, t
 
 If HCD.4’s local qualitative model guides an episode, identify the relation in the model and the observations supporting this learner’s current position. Choose whether the opportunity should test a proposed transition or consolidate an established contribution. Greater complexity, less guidance and a different strategy are distinct changes.
 
-Use the HCD.6 pathway as a revisable plan. A harder task can need renewed help while the learner’s earlier independent performance remains established for its original conditions. N24 succeeded in an unfamiliar context and failed in a familiar one (HCD.6:5.6). An outcome crossing the proposed ordering warrants examining the model and the cues. Use HCD.11 for the needed performance judgement, HCD.4 for a material revision of the proficiency model and HCD.14 if the development arrangement needs to change.
+Use the HCD.6 pathway as a revisable plan. A harder task can need renewed help while the learner’s earlier independent performance remains established for its original conditions. N24 produced a correct estimate in an unfamiliar service with a compatible heading and an incorrect one in a familiar service with a misleading heading (HCD.6:5.6). The successful calculation leaves open how N24 selected the unit. An outcome crossing the proposed ordering warrants examining the model and the cues. Use HCD.11 for the needed performance judgement, HCD.4 for a material revision of the proficiency model and HCD.14 if the development arrangement needs to change.
 
 #### HCD.10:4.7 - Differentiate Apparent Failure before Assigning More Practice
 
@@ -244,7 +244,7 @@ Visible effort, novelty and calendar completion can draw attention away from the
 - [ ] Retrieval, source access, tools, AI, human help, task variation, and challenge are selected separately from spacing.
 - [ ] Interleaving serves a distinction the learner needs to make, such as choosing between two methods or applying one method differently when the conditions change.
 - [ ] If the basic operation remains difficult, assess whether stable supported practice can make it possible. Identify any required support that is unavailable.
-- [ ] Check whether the effects of selected changes can be interpreted. Separate features or use comparable branches when needed, and identify conditions for pausing or restoring an earlier arrangement.
+- [ ] Test the combination that future work requires. Distinguish the evidence for performance in that combination from the evidence for a particular cause or component. Separate features when the latter question matters. Identify conditions for pausing or restoring an earlier arrangement.
 - [ ] Preserve resources required in later work, unless the task expressly asks what the person can do under a different support condition.
 - [ ] Apparent failure is differentiated from access, applicability, expression, adaptation, enactment, support, and task-design failures when material.
 - [ ] Keep a proposed opportunity distinct from observed performance. Use evidence suited to any claim about cause, an optimal interval, transfer or retention.
@@ -253,7 +253,7 @@ Visible effort, novelty and calendar completion can draw attention away from the
 
 | Problem in the proposed practice | Corrective decision |
 | --- | --- |
-| Several difficulties are added together, so a failure cannot identify the assumption that failed. | Select each change for a named purpose and keep its failure interpretation recoverable; separate changes or use comparable branches where necessary. |
+| Several difficulties are added together, but the result is used to diagnose one of them. | Judge the combined performance on its own terms. For a decision about an individual cause or a component to practise, look for evidence that distinguishes it. |
 | Dates alone are treated as a spacing effect, transfer, or retention. | Identify the repeated episodes, interval, intervening activity, task, and support. Use HCD.12 for a transfer claim or HCD.13 for a retention claim. |
 | A later return automatically becomes closed-book recall. | Select retrieval, source access, tools, AI, and human help separately from timing. |
 | Random mixing replaces a needed comparison. | Group cases that reveal a common basis within one category, or compare and mix instances to reveal a difference between similar alternatives. Establish which response would show the learner using the relation. |
@@ -282,7 +282,7 @@ Carpenter, Pan and Butler’s 2022 review ([`COG-01`](https://doi.org/10.1038/s4
 
 [Mettler, Massey, Burke, and Kellman (2020)](https://kellmanlab.psych.ucla.edu/wp-content/uploads/sites/357/2025/09/mettler_massey_burke_kellman_2020.pdf) used accuracy and response time to adjust item presentation in country-fact experiments. The studies distinguish efficiency per presentation from raw accuracy and examine retiring mastered items. This supports using response evidence to adapt spacing. Applying the tested algorithm or its numerical intervals to a work calendar would require grounds for that transfer. Section 4.4 instead gives a qualitative procedure for a known horizon and budget. The provisional bookings in §5.1 depend on the initial gap, the next available window and the support the task needs.
 
-One easily standardized approach combines a common timetable, closed-book retrieval, interleaving, reduced help and greater challenge. If a learner fails, that combination can obscure whether timing, access, task selection, help, load or capability contributed. Select each feature for the practice it serves and combine them only when the result remains interpretable.
+One easily standardized approach combines a common timetable, closed-book retrieval, interleaving, reduced help and greater challenge. If a learner fails, that combination can obscure whether timing, access, task selection, help, load or capability contributed. Select the conditions the target work requires, including conditions that interact. A combined attempt can test that work. A decision about which feature to change may need a further comparison.
 
 Czyż, Wójcik and Solarská’s 2024 motor-learning meta-analysis ([`COG-04`](https://doi.org/10.3389/fpsyg.2024.1377122)) reports heterogeneous transfer results comparing random and blocked practice. Its estimate for applied settings was not statistically significant. Adult laboratory results alone leave the professional schedule open. Paas and van Merriënboer’s 2020 review ([`COG-05`](https://doi.org/10.1177/0963721420922183)) relates worked examples and guidance to prior knowledge and task complexity. Sections 4.5–4.7 use these conditions to choose stable practice, adjust help or progress the task. A lower load by itself does not establish better learning.
 

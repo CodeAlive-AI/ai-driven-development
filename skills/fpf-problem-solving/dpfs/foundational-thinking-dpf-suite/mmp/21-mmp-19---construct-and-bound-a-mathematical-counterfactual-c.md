@@ -103,7 +103,7 @@ If every compatible answer supports the same sufficient action or explanation, u
 
 A revised recording rule changes the factual conditioning. A revised intervention changes the response functions. A changed criterion can make joint dependence irrelevant. Recalculate the affected contribution while retaining the rest.
 
-An investigator can build a counterfactual comparison by conditioning on the observed case and evaluating the changed mechanisms. The investigator or a subject specialist supplies the case and its causal interpretation. The investigator can perform the calculation or obtain it from a collaborator with the required mathematical skills. Obtain any missing contribution the investigation needs.
+An investigator can build a counterfactual comparison by conditioning on the observed case and evaluating the changed mechanisms. Use the case record and the applicable causal account to establish what is observed and what may change under intervention. A recorded route and a given equation may already determine the conditional result. Calculate it or use a qualified calculation. Obtain further subject evidence when the interpretation needed for the case remains open.
 
 ### MMP.19:5 - Archetypal Grounding
 

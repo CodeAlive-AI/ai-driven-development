@@ -58,7 +58,7 @@ Express consequential requirements in usable units and time windows. Qualified f
 
 Use [MA.1 (MA.1:4)](../ma/08-ma-1---build-the-resource-consumption-and-cost-model.md#ma14---solution) to obtain a missing resource-consumption and cost account. It connects outputs, preparation, attempts and rework to resources and to the applicable payments. Use [MA.2 (MA.2:4)](../ma/09-ma-2---explain-the-cost-and-use-of-capacity.md#ma24---solution) when supplied, used, reserved and unavailable capacity have been confused. Keep donated time visible as a constrained contribution. Express its monetary value only when the receiving comparison needs and can justify that valuation.
 
-Recover what is already committed elsewhere. [OCE.11 (OCE.11:4)](../oce/33-oce-11---coordinate-organization-change-work-with-continuing.md#oce114---solution) helps arrange overlap with continuing work; [OPS.5 (OPS.5:4)](../ops/33-ops-5---admit-work-and-limit-starts.md#ops54---solution) supplies admission against the provider's actual commitments. Obtain those results from those who can change the work or its provision. A community schedule by itself cannot release a contributor from their other duties.
+Recover what is already committed elsewhere. [OCE.11 (OCE.11:4)](../oce/33-oce-11---coordinate-organization-change-work-with-continuing.md#oce114---solution) helps arrange overlap with continuing work; [OPS.5 (OPS.5:4)](../ops/33-ops-5---admit-work-and-limit-starts.md#ops54---solution) guides the check of whether the proposed work fits the provider’s actual commitments. Apply the effective admission rule and obtain a decision from its holder when that rule requires one. An applicable schedule or a competent assessment can establish how much capacity remains. If an assignment must change, obtain the change under the governing terms from whoever can make it effective. A community schedule by itself cannot release a contributor from their other duties.
 
 Use enough detail to decide. A small group may need only the next session's tasks and contributors. A programme with staff, several locations or uncertain demand may need alternative schedules and a fuller account. Deepen a quantity when its plausible range changes the promise or the support decision.
 
@@ -88,11 +88,11 @@ Make sponsor influence legible. Agree who selects activities, who controls contr
 
 #### CB.9:4.5 - Make the arrangement operable and try a shortfall
 
-Obtain the allocations, access and practical support needed for the next activity. OCE.6 helps establish assignments and enabling relations; the receiving provider must accept work that depends on its resources. Check that each contributor can perform the part they have accepted.
+Obtain the allocations, access and practical support needed for the next activity. OCE.6 helps establish assignments and enabling relations; use a resource already allocated when the activity falls within the applicable terms and the resource is actually available. For a further commitment, obtain the decision that binds the provider. Check that the contributors can deliver together when the activity needs them.
 
 For a question about actual delivery, follow the relevant occurrence from preparation through the result the user receives. For a prospective service, trace who can claim each contribution, what can coincide or consume the same resources over time, and who can adjust the work. Establish that the allocation works with the information its decision-makers will have. Inspect an ordinary delivery when its performance can resolve an uncertainty.
 
-For a risk decision, examine the probable shortfall and its consequence. For a guarantee, include any permitted demand or loss of provision that could defeat the agreed response. Typical changes include a key person's absence, a delayed payment, a loss of access or demand above the agreed limit. Decide who will reduce, postpone or cancel the affected promise and how participants will learn that decision. A simple backup may be enough. If no backup is feasible, make the limit part of the offer.
+For a risk decision, examine the probable shortfall and its consequence. For a guarantee, include any permitted demand or loss of provision that could defeat the agreed response. Typical changes include a key person's absence, a delayed payment, a loss of access or demand above the agreed limit. Establish what participants can still claim after a shortfall. Identify any decision the agreement leaves open, who can make it and what notice is due. A simple backup may be enough. If no backup is feasible, make the limit part of the offer.
 
 Keep the response proportionate to the reliance. A casual discussion can be postponed; a promised professional service may need a qualified replacement and explicit settlement with its users. Ask the relevant owner for the needed arrangement before accepting that reliance.
 
@@ -102,7 +102,7 @@ At a useful interval, compare the accepted promise, delivered result, resource u
 
 Distinguish a shortfall in supply from a change in the contribution itself. More applicants may require admission or a smaller promise. A sponsor's new sales objective may require a new agreement. An activity with little practical value needs CB.10 and possibly CB.1; simply funding more of it may preserve the wrong offer.
 
-Revise the affected commitment with its holder and receiver. Obtain the replacement allocation, payment or reduced expectation and communicate it to those who rely on the old one. Record only what people need to act and later settle the arrangement.
+Read the terms to establish what remains due after the shortfall. An agreed event may already have changed the obligation. If the promised service is still owed, establish whether recovery or a permitted replacement can supply it. Where the agreement leaves a choice, identify who can make it and when. When further agreement is needed, obtain it from the parties whose obligations or claims will change. Tell those relying on the service what they can now expect, including any delivery still owed. Record only what people need to act and later settle the arrangement.
 
 Before an important support period ends, establish whether renewal is real, conditional or absent. Use CB.11 for continuation, transfer, separation or ending that changes the arrangement as a whole. Preserve useful resources and settle current commitments even when the future programme is reduced.
 
@@ -150,7 +150,7 @@ For an arrangement on which others will rely, establish the following at the det
 - Contribution terms, benefits and sponsor influence are understandable to the affected people.
 - Volunteers can decline or revise their contribution, and any dependable service has appropriate provision.
 - An ordinary use and a consequential shortfall have a workable response.
-- Actual burden and the end of the support period can change the promise before it becomes unsupported.
+- Does the arrangement give those who must act the information they need in time? If an agreed event determines the outcome, can those settling the case establish that event and give any notice due?
 
 The arrangement can support reliance when the contributions, permissions and terms hold. Its description makes those conditions inspectable. Delivery and later value require their own observations.
 
@@ -161,7 +161,7 @@ The arrangement can support reliance when the contributions, permissions and ter
 | Count a grant as complete provision | Recover the qualified work, access and timing that the money still needs to obtain. |
 | Treat donated time as unlimited | Agree a contribution and its limit with the person who will perform it. |
 | Promise every department a different benefit from one organiser | Reconcile the receiving results and provide the work each requires. |
-| Use gratitude to carry a continuing service deficit | Provide the missing work, reduce the service or end the unsupported promise. |
+| Use gratitude to carry a continuing service deficit | Obtain cover or establish what the agreement provides for when the service falls short. |
 | Count an allocated cost reduction as spendable cash | Obtain the actual capacity and payment consequences through the applicable MA and OPS methods. |
 | Accept a sponsor's new condition under members' old agreement | Return the changed offer and obtain the affected decisions. |
 | Keep a schedule by silently shifting the burden to the remaining volunteer | Apply the agreed reduction, replacement or postponement and revise the arrangement. |

@@ -18,7 +18,7 @@ Assess the proposed composition and how its members could make contact, or repor
 | useful difference | A difference in available experience, evidence or reasoning that can contribute to the selected learning action. |
 | common preparation | What participants need to understand and use each other’s contributions. People with different professional expertise can share this preparation. |
 | working group | The people who need to interact to do the bounded learning task. They may also belong to a larger cohort or a continuing circle of support. |
-| established contact | A mutually usable channel and agreed occasion, distinguished from an invitation and from a completed exchange. |
+| contact | A channel and the opportunity to use it can make contact possible. An acknowledgement or an exchange can establish that participants reached one another. Use their contributions to establish what work they did together. |
 | membership change | Adding, removing or replacing participants. A change to roles, visibility or the task can leave membership intact. |
 
 ### HCD.21:1 - Problem Frame
@@ -63,7 +63,7 @@ Keep continuing support relationships separate from exercise membership. A learn
 
 #### HCD.21:4.3 - Turn assignment into contact and work
 
-To establish a new working contact, make the purpose, permitted material, channel, window and first expected contribution available to the participants. Establish a usable channel and sufficient agreement on the occasion before the task depends on them. Use existing arrangements where they already meet these conditions. A preferred weekday still leaves the common time open.
+To establish a new working contact, make the purpose, permitted material, channel, window and first expected contribution available to the participants. Establish that the participants can reach one another in time for the task. For a written exchange, the sender can leave material for the recipient to use later. Check the relevant access and response windows. Agree a common time when participants need to work together live. Established arrangements may already suffice.
 
 Distinguish the invitation, agreement on an occasion, the task-related exchange and the intended learning action. A reply confirming the occasion can establish agreement. Attendance establishes presence. A task-related exchange can occur without a participant performing the intended learning action. Use the least intrusive evidence sufficient for the question. If a relevant confirmation is missing, seek it or report the remaining limit.
 
@@ -139,7 +139,7 @@ Professional diversity can coexist with identical reasoning. Familiarity alone e
 
 **Maximize diversity.** Select a difference that changes the work, with preparation to interpret it.
 
-**The roster is the group.** For a claim of working contact, establish a usable channel and occasion. To report an exchange, use evidence that the participants exchanged a contribution on the task.
+**The roster is the group.** For planned contact, establish how the participants can reach one another within the task's windows. For a claim about an earlier exchange, use evidence that the participants actually exchanged a contribution on the task.
 
 **Rotate every time.** Compare the new contribution with lost context and relationship costs.
 

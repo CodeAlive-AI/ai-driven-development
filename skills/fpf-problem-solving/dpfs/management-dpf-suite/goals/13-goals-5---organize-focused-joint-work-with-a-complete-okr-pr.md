@@ -21,7 +21,7 @@ Focus competes with breadth of current responsibilities. Transparency aids coord
 
 #### GOALS.5:4.1 - Decide what the practice must improve
 
-Name the recurring difficulty in the present arrangement: unclear priorities, late cross-team dependencies, misleading completion, weak follow-through, or another concrete failure. Examine a recent episode and identify what a better practice would change. Compare competent present goal work with the proposed OKR arrangement over the same scope. Existing useful meetings, data and decisions belong in the comparison.
+Identify the recurring decision the participants need to make together and the result it must provide or preserve. When a joint practice is new, follow a forthcoming occasion. Which teams owe results, and which decision, evidence or resource must they share in time? In an existing practice, a recent episode can reveal a difficulty such as late discovery of dependencies or misleading completion reports. Compare the proposed OKR arrangement with the workable alternatives over the same scope, including meetings, data and decisions the participants can already use.
 
 Choose an initial scope that can perform a complete useful cycle of the required contributions. A team can be enough when its dependencies can be obtained; an isolated team is too narrow when the unresolved problem is a shared organizational priority. Determine who can choose direction, accept commitments, allocate means and change the practice. Capable performers can take on these contributions in existing positions. Use GOALS.9 to develop missing capability or establish the needed organizational arrangement.
 
@@ -29,7 +29,7 @@ Choose an initial scope that can perform a complete useful cycle of the required
 
 Start with the useful changes the organization seeks and the current conditions it must preserve. Invite proposals from people close to the work as well as those responsible for direction. Their knowledge can expose a missing opportunity, an infeasible demand or a needed alternative. Clarify the strategic ground through STR when it is unresolved; writing OKRs is not a substitute for that choice.
 
-Select objectives from the decisions that the improved work would make possible. Follow an actual use through any handovers to find what still prevents it. Compare the gains from changing that condition with what other recipients must retain, then use GOALS.1 to choose the beneficiaries, horizon and scope. A goal can concern an improvement, an inquiry, a capability or maintenance of an adequate condition. Keep continuing service and other obligations in the capacity account even when the published agenda highlights only change.
+Select objectives from the results the participants need to achieve or sustain. Follow an intended or observed use through its relevant handovers. What must be available at each handover, and can the existing or proposed arrangements supply it? When a change is needed, compare its gain with what other recipients must retain. Use GOALS.1 to choose beneficiaries, horizon and scope. A goal can concern an improvement, an inquiry, a capability or maintenance of an adequate condition. Keep continuing service and other obligations in the capacity account even when the published agenda highlights only change.
 
 Limit the active agenda through actual capacity, dependencies and the cost of attention. Decline or defer lower-value proposals with intelligible reasons. A small fixed count is an optional local convenience, not the basis of focus. A team with one unsupported objective is no more focused in practice than a team with five incompatible ones.
 
@@ -59,9 +59,9 @@ Use CFR—conversations, feedback and recognition—to make help, learning and c
 
 At the useful end or review horizon, interpret the results under the agreed criteria. Keep the mode, starting conditions, changes, assistance and remaining work visible. A numerical score may summarize a defined comparison. Use written interpretation when the score hides an important condition; do not average away a required failure. Self-assessment can recover context and explanations, while the claim still needs its evidence.
 
-Decide separately what was achieved, what was learned, how to continue and what people decisions are justified. Retire an obsolete goal, preserve a worthwhile unresolved one with a new arrangement, or select a new direction where warranted. Carryover is a decision, not the default consequence of a low score. Notify the affected recipients when a goal or commitment ends.
+State what the group achieved on the agreed basis. If the commission also asks what someone learned, how to continue or whether to make a personnel decision, establish each conclusion on its own grounds. A worthwhile unresolved goal can continue under a sufficient existing arrangement. Agree a change when the terms or the evidence call for it. Retire an obsolete goal or choose a new direction where warranted. A low score alone does not authorize carryover. Notify affected recipients when a goal or commitment ends.
 
-Examine the practice itself. Did it expose and resolve the chosen difficulty? What did it cost, including data production, preparation, participants' time and support? Which earlier reports or meetings actually ceased? Use GOALS.9 to repair missing capability or organizational conditions. A complete replacement is justified only when the alternative preserves the functions still needed. The useful result is a continuing practice suited to the work, not completion of a calendar cycle.
+Examine the practice itself. What recurring result did the participants need, and what shows whether they obtained it? If they meant to improve an existing arrangement, what changed in the difficulty that led to the redesign? Account for data production, preparation, participants’ time and support, including earlier reports or meetings that actually ceased. Use GOALS.9 when capability or organizational conditions need repair. A complete replacement is justified only when the alternative preserves the functions still needed.
 
 Recognition identifies where goal display has separated from joint action. Assurance requires the actual definitions, provider agreements, evidence and decisions behind the claimed results, with stronger inquiry only for stronger effect or reliability claims.
 
@@ -84,7 +84,7 @@ The practice can overrepresent participants who write persuasive objectives or c
 
 ### GOALS.5:7 - Conformance Checklist
 
-- Does the selected scope address a real recurring coordination or pursuit problem?
+- Does the scope include the participants and dependencies needed to make the recurring decision and deliver its result?
 - Do the objectives express worthwhile results and the KRs establish them under stated conditions?
 - Are committed and aspirational meanings understood by dependent parties?
 - Does the full workload, including service and acquisition of the practice, fit the available means?
@@ -112,7 +112,7 @@ OKR is treated as a whole organizational practice because its useful parts depen
 
 ### GOALS.5:11 - SoTA-Echoing
 
-Doerr's complete practitioner account supplies focus, alignment, tracking, stretch, CFR and acquisition, including the resource guide and difficult adoption cases. Contemporary software-team and organizational studies add formulation, data, discoverability and integration difficulties, with limits of setting and design. These studies identify questions to examine when introducing OKRs elsewhere. A claim that OKRs improve performance there needs evidence that applies to that setting. Compare the proposed practice with competent existing goal work; another local arrangement becomes preferable when it supplies the same useful results at lower total burden or better supported conditions.
+Doerr's complete practitioner account supplies focus, alignment, tracking, stretch, CFR and acquisition, including the resource guide and difficult adoption cases. Contemporary software-team and organizational studies add formulation, data, discoverability and integration difficulties, with limits of setting and design. These studies identify questions to examine when introducing OKRs elsewhere. A claim that OKRs improve performance there needs evidence that applies to that setting. Compare the proposed practice with competent goal work already in place or another feasible way to provide the recurring result. Consider another arrangement when it supplies the same benefits at lower total burden or under conditions the participants can better sustain.
 
 ### GOALS.5:12 - Relations
 

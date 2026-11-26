@@ -69,7 +69,7 @@ Distinguish how each part of the account is supported.
 | Basis for the account | How to report it |
 | --- | --- |
 | A contemporaneous record supports the event or choice. | Identify its scope and the particular claim it supports. Check the basis of recorded statements on which the examination depends. |
-| A person reports the event later. | Identify it as a later report and retain what supports or limits that account. |
+| A later account reports an event. | Identify who or what supplied the account, when and on what grounds. A participant may recall the event. A custodian or recording service may report it from a surviving entry. State what the account and any available underlying record establish. |
 | Surviving sources support a reconstruction. | Mark the reconstructed part, its sources, reasoning and uncertainty. |
 | The relevant conduct, reason or timing is unknown. | Say what is unknown and which examination depends on it. |
 
@@ -83,7 +83,7 @@ Follow a consequential reported result back to the observations, sources, encoun
 
 For observations, retain the identity of the specimen, case, participant, site or sample at the permitted level of detail and the conditions needed to interpret it. Distinguish instrument indications, qualified measurements and derived values. Use FPF C.16 when an examination depends on units, uncertainty or qualification that the recorded values alone leave unclear.
 
-For documentary sources, specify whether the investigator used a catalogue description or inspected the document. Preserve the edition, locator, dating, provenance, reasons for selection and any relevant transcription or translation. Identify contrary evidence and unexamined collections where they affect the answer.
+For documentary sources, identify what material supported the finding and, when the inquiry concerns conduct, who examined it. A catalogue description may answer the question directly. A custodian with access to the original may establish its date for a researcher who receives only the custodian’s report. To attribute direct inspection to the researcher, establish which source they examined. Preserve the edition, locator, dating, provenance, reasons for selection and any relevant transcription or translation. Identify contrary evidence and unexamined collections where they affect the answer.
 
 For transformations, show which operation produced the relevant output from which input. Record filtering, recoding, deduplication, aggregation, translation, corrections or computational steps that affect the examination, with versions and parameters where they matter. Use FPF A.10 when a claim needs its evidence and provenance made explicit.
 
@@ -107,7 +107,7 @@ Identify the people, teams, tools or services whose contributions affected the i
 
 - The model or service, its known version or configuration, and the time it was used.
 - The relevant input context and the output used, to the extent permitted by the applicable protection and access conditions.
-- What was checked against which source, who or what performed the check, what was accepted, rejected or revised, and how that affected the work. Where the applicable research guidance assigns responsibility to a human researcher, identify that researcher’s verification and decisions.
+- What was checked against which source, who or what performed the check, what was accepted, rejected or revised, and how that affected the work. Where applicable guidance assigns responsibility to a human researcher, distinguish what that researcher was required to verify or decide from what the available evidence establishes they did. Include delegated checks and how their results were used when that matters to the requirement.
 
 Preserve the wording of a prompt when it can change how a reader understands the research choice. Routine spelling assistance usually contributes nothing to that question. If a service withholds its internal state, describe what can be examined from the inputs and outputs that survive.
 
@@ -185,6 +185,8 @@ A researcher uses an AI service to suggest a preprocessing change for a model co
 
 The service also suggests a nonexistent article. The researcher checks the reference, rejects it and preserves the source actually used. This evidence can establish how the suggestion was handled. The scientific claim depends on what the source used supports.
 
+Suppose an automated service instead checked the reference and the only other surviving record is an authenticated approval of the code change. The records establish the service’s check and the approval. If the commission required the named researcher to inspect the reference personally, that inspection remains unestablished. A commission that permits reliance on the service’s check can be assessed on its own terms.
+
 When the original service version becomes unavailable, the retained suggestion, the researcher’s decision and the implemented change can still be inspected. A new run can test the retained implementation. Reproducing the original service response would need its own conditions and evidence.
 
 #### RMP.4:5.4 - Historical and interpretive records support different criticisms
@@ -226,7 +228,7 @@ When relying on the trace, follow a consequential use back to its source or use 
 | A repository link is treated as criticism-ready access. | The material may not survive, be accessible or contain the needed detail. | Establish the actual material and access for the named examination. |
 | A public summary is used for a claim that depends on redacted detail. | Its reader lacks the detail needed to examine that claim. | Identify what each view supports. Use an authorized source or a qualified inspection result if available, or report the limit. |
 | The number of files is offered as support for a scientific claim. | The decisive record might be absent from a large collection. | Identify the connection the claim needs and examine the evidence that bears on it. |
-| An AI suggestion or citation is used as evidence without establishing what supports it. | A saved output can show what was suggested. The source and the inference need their own grounds. | Identify the source, checks, decisions and responsible contributors. Where the applicable guidance assigns responsibility to a human researcher, record how the researcher exercised it. |
+| An AI suggestion or citation is used as evidence without establishing what supports it. | A saved output can show what was suggested. The source and the inference need their own grounds. | Identify the source, actual checks, decisions and responsible contributors. Where personal verification is required, record the evidence for it, a documented omission or the question left open. |
 | A run with substituted inputs is reported as a replay of the original computation. | It tests a different set of inputs. | Identify the inputs, decisions and service state that can be recovered for the original run, then state what the new run tested. |
 
 ### RMP.4:9 - Consequences

@@ -14,11 +14,13 @@ Quoted, external, or ordinary source prose may remain as written. Use A.6.P only
 
 **Primary working reader, viewpoint, and concern.** The working reader is an engineer viewing the sentence as input to a later claim or operation. The concern is that another person can find the same world-side or episteme-side objects, find the same pattern that defines the relation or constrains the operation, and know which additional declaration, assertion, occurrence, designation, or representation detail that later use needs.
 
-**Primary EntityOfConcern.** One relation-bearing claim in an episteme whose current expression leaves the direct relation kind or one or more actual participants unresolved, or leaves unclear whether a later claim or operation needs reusable declaration, explicit occurrence identity, designation, or representation.
+**Primary EntityOfConcern.** One relation-bearing claim in an episteme whose wording leaves the direct relation, the meanings of its participants or their identification unclear. The receiving use determines whether it needs a reusable declaration, an identified occurrence, a designation or a representation.
 
-**First useful move.** Replace the broad phrase with one readable sentence that names the participants and the direct relation believed to obtain. Name the rule defining its participants and obtaining condition; recover occurrence identity when the receiving use needs it. If either the participants or the relation remain ambiguous, keep a small working candidate note and resolve that ambiguity before adding a reusable declaration, assigning a designator, or choosing a representation.
+**First useful move.** Ask what the next reader needs to know. To explain a rule, state who or what would participate, in what capacity, and under what conditions the relation would obtain. For a claim about an occurrence, identify which case is at issue and apply the rule to the available facts. Recover an individual participant’s identity when it affects the answer or the recipient asks for it. If a disputed reading changes the answer, recover the meaning needed before choosing a declaration, designator or representation.
 
 **First-minute result.** The draft `Bearing_B is linked to Pump_P` becomes `Bearing_B is part of Pump_P during Interval_T` after inspection establishes the intended parthood claim under the applicable A.14 rule. The ordinary repair stops there. If a later maintenance claim must distinguish installation episodes, §5.1 returns the missing installed-part predicate and occurrence-identity rule; a `RelationSignature`, occurrence reference or graph representation cannot supply them.
+
+Suppose a handover proposal says “the desk clears the delivery.” The author means that the receiving department can accept a delivery through an officer who holds its delegated authority. Under the proposed rule, that officer’s signature for the delivery would constitute acceptance. A clerk could file the receipt without holding that authority. This distinction explains the proposal even before an officer is appointed. A claim that a particular delivery was accepted requires the rule in force and grounds that its conditions were met for that delivery.
 
 **What goes wrong if missed.** A lexical replacement can make the sentence sound technical while preserving the same ambiguity. At the opposite extreme, an engineer can turn every relation phrase into a record-shaped episteme and then confuse that episteme, a declaration, or an identifier with the relation that obtains. Both failures obscure what is true, which object changes, and which pattern defines or constrains the needed claim or operation.
 
@@ -33,8 +35,8 @@ FPF treats relation realism and epistemic access separately. A relation can obta
 An under-specified relation claim blocks a later claim or operation because several ontological questions remain hidden inside one phrase:
 
 1. What kinds of objects are being related?
-2. Which direct relation predicate is asserted to obtain?
-3. Which relation-participant meanings are current, and are all actual participants named?
+2. Which direct relation does the rule describe or the assertion affirm or deny?
+3. What does each participant contribute to that relation? For a claim about a particular case, which entities does it concern?
 4. Does the current text state world-side participation, make an episteme claim about the direct relation, or define a local kind of entities participating under one meaning?
 5. Does reusable typed use require a compatible `RelationSignature` and declaration-local `SlotSpec`s?
 6. Does a later claim or operation need one obtaining occurrence to have explicit identity?
@@ -56,7 +58,7 @@ Without answers, readers cannot tell whether two statements disagree, whether on
 
 ### A.6.P:4 - Solution
 
-Begin with the objects named by the claim. Recover actual participants and one direct relation first. Then add only the declaration, assertion detail, occurrence identity, designation, reference, or representation demanded by the later claim or operation.
+Begin with the question about the relation. Recover its participant meanings and what would make the predicate hold. For a particular case, establish the case facts on which the answer depends. An authenticated act can settle acceptance while the individual who acted remains unknown, when every possible signer had the required authority. Then add only the declaration, assertion detail, occurrence identity, designation, reference or representation demanded by the receiving use.
 
 **Local RPR mantra.** *Name the referents. State the direct relation or comparison with its participants and use the pattern that defines it. Add a declaration, occurrence identity, designation or representation only when the receiving claim needs that contribution. For a change claim, identify what changed and apply its continuity rule. Then shorten without hiding the relation or its participants.*
 
@@ -68,11 +70,11 @@ Sections 4.1–4.12 develop the same repair: resolve participants and hidden ari
 
 Start from the claim as written and ground each load-bearing head:
 
-1. Identify the referent intended by each participant expression.
+1. Identify what each participant expression means in this claim. In a proposed rule, identify who or what would qualify, including any authority the relation requires. In a case report, recover whom or what the report concerns.
 2. Recover the participant kind required by the direct predicate. State that classification when it changes interpretation or the receiving use, using its applicable admission rule.
 3. Separate a world-side object from an episteme about it and from a publication or representation of that episteme.
 4. Recover metonymy. The phrase `at the table` may state physical location or participation in a negotiation meeting. Evidence from the current case selects the direct relation; neither reading by itself establishes a local system-role kind or system-role assignment.
-5. Leave the claim unresolved when the current evidence does not select one referent. A more technical synonym is not a repair.
+5. If the available grounds permit different readings, identify the conclusion that depends on choosing between them. A rule can already be clear while the participants in a future case remain to be determined.
 
 The result of this step is an ordinary sentence containing identifiable objects. It is not a newly minted object kind. When several candidates remain live, use the small working note in A.6.P:4.9.
 
@@ -86,7 +88,7 @@ A.6.P begins when the available observations or claims let the engineer name at 
 
 #### A.6.P:4.2 - State the direct relation, participant meanings, and obtaining condition
 
-Write the smallest readable direct-relation sentence that answers the current question:
+Write the smallest readable sentence that answers the question. For a rule, state the participant meanings and the condition connecting them. Keep any authority, scope or timing that determines whose act would count. For an assertion about one case, apply the rule to the established facts. Name an entity whenever its identity is part of the assertion or changes the conclusion. The following form illustrates a positive occurrence claim:
 
 ```text
 <actual participant 1> <direct relation predicate> <actual participant 2> ...
@@ -95,7 +97,7 @@ Write the smallest readable direct-relation sentence that answers the current qu
 Then name the pattern that defines or constrains the direct relation and recover from it:
 
 - the admitted direct relation kind, using an accepted domain relation name; recover its governed `RelationKind` token when the receiving use needs that designation;
-- the relation-participant meanings and actual participants, each retaining its independently governed kind;
+- the relation-participant meanings and the kind of entity admitted under each, together with the entities concerned when the claim is about a case;
 - the condition under which the relation obtains and its semantic predicate is satisfied by those participants considered under the participant meanings;
 - applicability, direction, symmetry, inverse law, polarity, and temporal qualification when they change the predicate;
 - the occurrence-identity rule when settling the relation kind or when the receiving use needs to distinguish, reidentify, refer to, or use an obtaining occurrence;
@@ -111,7 +113,7 @@ Do not select ontology from grammar. A verb-shaped phrase supplies neither const
 
 #### A.6.P:4.3 - Recover actual participants, hidden arity, qualifiers, and typed declaration only when needed
 
-Ask which actual participation belongs to the direct relation's obtaining condition. Add a participant or qualifier only when it changes one of these:
+Ask which participation belongs to the direct relation’s obtaining condition. For a rule, vary who or what could take part while keeping the other conditions fixed. If that changes whether the relation would obtain, recover the distinguishing condition. For a particular occurrence, apply the condition to the entities concerned. Add a participant or qualifier only when it changes one of these:
 
 - predicate satisfaction or relation obtaining;
 - applicability or admissible use;
@@ -168,7 +170,7 @@ Here **receiving use** is Plain shorthand for the later claim or operation that 
 Use progressive elaboration from one recovered direct relation:
 
 ```text
-readable direct-relation sentence with actual participants
+readable statement of the relation and its participant meanings (with the entities concerned for a case claim)
   +-- compatible RelationSignature and SlotSpecs, when reusable typed declaration is current
   +-- explicit occurrence individuation, when a named receiver needs occurrence identity
       +-- occurrence-description episteme or stable designation, only when that receiver needs it
@@ -270,7 +272,7 @@ Ordinary authoring, checking or publication can be described directly. If the ac
 
 After the relation has been recovered, Plain wording may be shorter than the Tech explanation. The shorter wording remains usable when a reader can still recover the participants, direct relation, the pattern that defines its participant and obtaining rules, every qualification that changes the declared use, and the point at which reusable declaration, occurrence identity, assertion detail, or representation becomes necessary.
 
-Stop using A.6.P when the direct relation and participants are selected. The selected direct pattern defines or constrains that relation. Apply the relevant pattern separately to any remaining assertion, occurrence-identity, evidence, work, Bridge, description, publication, designation, or representation question.
+Stop using A.6.P when the direct relation and the participant meanings needed for the question are clear. For an occurrence claim, establish enough about the participants to support that predicate for the case. A request for their names requires their identities. The selected direct pattern defines or constrains that relation. Apply the relevant pattern separately to any remaining assertion, occurrence-identity, evidence, work, Bridge, description, publication, designation, or representation question.
 
 When generic relation recovery identifies one current claim at a method, intended-work, actual-work, production, evaluation, delivery, acceptance, transfer, or receiving-use boundary, apply `A.6.P.WMR`. Its application records exactly one of four result families:
 
@@ -426,10 +428,10 @@ The pattern also favors neutral domain language. Examples span physical assembly
 
 ### A.6.P:7 - Conformance Checklist
 
-1. **Recognition.** The use begins with one relation-bearing claim and states which later claim or operation is blocked by its ambiguity.
+1. **Recognition.** The use begins with one relation-bearing claim and states which later claim or operation is blocked by its ambiguity. The repair retains whether the reader needs to understand a rule or decide what occurred.
 2. **Grounded heads.** Every load-bearing head refers to an identified object or remains explicitly unresolved; a qualifier does not substitute for the head kind.
-3. **Direct relation.** Every positive or governed-negative direct subject-relation result states the actual participants and direct predicate under its applicable rule. Use an accepted domain relation name; require an explicit `RelationKind` token only when the receiving use needs that designation. Recover occurrence-identity and construction content under §4.2 when the current question needs them. The A.6.P.WMR non-relation result families remain defined or tested by the rules for the recovered Method, Work, result, production, delivery, acceptance, transfer, or receiving-use claim.
-4. **Participant meanings.** The direct pattern states the participant meanings, actual participation, obtaining predicate, applicability, and occurrence-identity rule; every participant retains its independently governed kind.
+3. **Direct relation.** Every positive or governed-negative direct subject-relation result about a particular case identifies the case and supports the asserted predicate under its applicable rule. An established participant identity is required when the claim names that participant or the answer depends on which entity participated. An explanation of a rule states the participant meanings and the conditions under which that predicate would hold. Use an accepted domain relation name; require an explicit `RelationKind` token only when the receiving use needs that designation. Recover occurrence-identity and construction content under §4.2 when the current question needs them. The A.6.P.WMR non-relation result families remain defined or tested by the rules for the recovered Method, Work, result, production, delivery, acceptance, transfer, or receiving-use claim.
+4. **Participant meanings.** The direct pattern states the participant meanings, obtaining predicate, applicability, and occurrence-identity rule; each entity that participates retains its independently governed kind.
 5. **No negative occurrence.** Negative assertion, refutation, or unresolved reliance remains claim- or evaluation-side and creates no negative world-side occurrence.
 6. **Demand-driven declaration.** A compatible `RelationSignature` and declaration-local `SlotSpec`s appear only when reusable typed use is current; an ordinary assertion may name participants directly.
 7. **Designation separation.** A participant designation or occurrence reference remains content of a receiving episteme and neither replaces the referent nor makes the relation obtain.
@@ -444,7 +446,7 @@ The pattern also favors neutral domain language. Examples span physical assembly
 16. **Candidate guide and stop.** Unresolved alternatives are grounded candidates with a discriminating check. Name and stop the use that requires selecting one reading; preserve warranted inquiry, an explicit uncertainty report and decisions sufficient under all live alternatives.
 17. **Representation boundary.** The selected scheme makes the needed element-to-content correspondence recoverable. C.29 applies to a separate mathematical representation or transfer question; form alone establishes neither the direct relation nor its identity.
 18. **Optional episteme relation or operation.** Use this path only when a later task must relate source and receiving epistemes or describe an operation that produces the receiving episteme. Identify both endpoints independently under `C.2.1`. Use `A.6.3` for a compatible same-EntityOfConcern construction, `A.6.2` for a local effect-free arrow that satisfies its entry and laws, and `A.6.4` for a different-EntityOfConcern arrow `r`. For a claimed receiving use of `r`, add a separate C.2.1 bounded-use assertion `q` about `r` with a ClaimGraph stating the invariant, visible loss, named receiving use, conditions, and affirmative or negative polarity. When a current-case judgement is needed, compare the facts with `q` and report `satisfies`, `fails`, or `cannot decide`; `cannot decide` names the missing fact and reopen condition. If the selected pattern's entry or result condition is missing, preserve the endpoints, changed EntityOfConcern if any, and needed sentence as an explicit stop naming the missing arrow, use-claim, or application condition. Keep any continuity relation separate, and use `A.15.1` for actual authoring, materialisation, checking, or publication Work. The arrow, use assertion, operation application, and Work remain distinct and none supplies occurrence identity for the repaired world-side relation.
-19. **Plain relaxation.** Short final wording retains a recoverable direct relation, actual participants, and visible escalation points.
+19. **Plain relaxation.** Short final wording preserves the direct relation, who or what can participate, and any particular entities and further precision that the receiving use requires.
 20. **Neighboring subject result.** The repaired claim closes under one predicate or constraint selected in A.6.P:4.11, including exactly one of the four A.6.P.WMR families when that specialization is current; the neighboring pattern identifier is only its locator.
 
 ### A.6.P:8 - Common Anti-Patterns and How to Avoid Them

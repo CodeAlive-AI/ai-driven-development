@@ -43,7 +43,7 @@ Symmetry and variation can simplify the same problem while answering different q
 
 [MATH.22](30-math-22---change-axioms-and-trace-their-consequences.md) changes the permitted objects or reasoning by changing assumptions. Follow the affected proof steps and constructions, retaining a conclusion when its justification survives or can be repaired. MATH.18 supplies interpretations between accounts; MATH.6 can separate a claimed consequence from what the new assumptions allow.
 
-[MATH.23](31-math-23---develop-a-conjecture-by-changing-a-construction.md) turns a variation, obstruction or unexplained regularity into a next mathematical claim and a proving or refuting operation. If equal weighting of group means fails for unequal groups, restricting all groups to equal size abandons the original need. Retaining sums and counts repairs the construction and opens a general question about combinable summaries. Proof construction, countermodels and changed axioms then provide different continuations.
+[MATH.23](31-math-23---develop-a-conjecture-by-changing-a-construction.md) turns a variation, obstruction or unexplained regularity into a next mathematical claim and a proving or refuting operation. When each occurrence in a concatenated list counts once, its groups may have different sizes. Their sums and counts recover the pooled mean. If the aim is to count distinct subjects across overlapping groups, identify their shared members or establish a sufficient correction for the overlaps. Which summaries suffice depends on how the inputs combine. Proof construction, countermodels and changed axioms then provide different continuations.
 
 ### MATH.Reference:3.4 - Return a construction to further work
 

@@ -43,7 +43,7 @@ Before Method admission, a candidate account can guide a distinguishing observat
 
 ### OPS.16:4 - Solution
 
-Preserve the distinction between an admitted Method and a candidate account from the initial question through the conclusion. Either branch can finish on sufficient current evidence. Under `A.3.1.MR` a candidate account may be revised, retained, compared or set aside. If the remaining question warrants a trial, state the change hypothesis and alternatives, establish the operating conditions and plan the Work. For existing observations and new ones, distinguish intended from performed Work, identify what was observed and establish its evidential reach. Make a decision within the authority and grounds available, or state what limits it.
+Preserve the distinction between an admitted Method and a candidate account from the initial question through the conclusion. For either branch, current evidence can settle the requested assessment. If performing a new trial is itself part of the order, account for that work as well. Under `A.3.1.MR` a candidate account may be revised, retained, compared or set aside. If the remaining question warrants a trial, state the change hypothesis and alternatives, establish the operating conditions and plan the Work. For existing observations and new ones, distinguish intended from performed Work, identify what was observed and establish its evidential reach. Make a decision within the authority and grounds available, or state what limits it.
 
 #### OPS.16:4.1 - Fix the operating question and status branch
 
@@ -56,7 +56,7 @@ Name the operating System, Work family or service, current difficulty, receiving
 
 A candidate label such as “v2”, a checklist, a repeated local habit, or a repository entry does not move the second row into the first. When admission is needed, apply `A.3.1` to the reusable way and `A.3.2` to any separate description episteme. Use established results where available. A way without an established admission remains in the candidate branch.
 
-Start with the existing improvement account. A competent PDSA record may already distinguish prediction, proposed test, actual observations, adaptation and later implementation. Reuse it. For the branch selected above, reuse any established identity and status; supply the missing Method or candidate-account distinctions needed by the receiving decision. Qualify a stronger evidence claim only when the decision uses it. Include the cost of maintaining these distinctions, obtaining support and displacing service in the comparison. If existing observations may settle the decision, recover the occurrences, their conditions and any prior plan available, then use :4.5–4.9 to judge their reach. Evidence of performance can suffice even when the prior intention is unknown. Use :4.3–4.4 to arrange new trial Work only for a remaining question whose obtainable answer warrants that work.
+Start with the existing improvement account. A competent PDSA record may already distinguish prediction, proposed test, actual observations, adaptation and later implementation. Reuse it. For the branch selected above, reuse any established identity and status; supply the missing Method or candidate-account distinctions needed by the receiving decision. Qualify a stronger evidence claim only when the decision uses it. Include the cost of maintaining these distinctions, obtaining support and displacing service in the comparison. If existing observations may settle the decision, recover the occurrences, their conditions and any prior plan available, then use :4.5–4.9 to judge their reach. Evidence of performance can suffice even when the prior intention is unknown. Use :4.3–4.4 to arrange a new trial when the parties commissioned its performance, or when its attainable contribution to a remaining decision warrants the work.
 
 #### OPS.16:4.2 - State a bounded change hypothesis and alternatives
 
@@ -84,7 +84,7 @@ A conditional WorkPlan can name a missing arrangement and the decision needed to
 
 #### OPS.16:4.4 - Plan new trial Work when needed
 
-For a selected new trial, plan Work whose attainable contribution to the question justifies its burden. If a smaller trial would provide a sufficient answer, use it. Name intended tasks, proposed performers, admitted constituent Methods expected to be enacted, supports, protected conditions, observations, burdens, stop rules, hand-back and later receiving uses. Keep this WorkPlan prospective and identify the interval during which its premises must remain current. Existing Work is examined from its actual evidence and any plan available for it; do not write a retrospective intention as though it preceded the Work.
+For a commissioned trial, plan the agreed work under its operating conditions. If a smaller trial would suffice for the decision, check whether it also fulfils the order or whether those responsible agree to revise it. When the extent of inquiry is yours to choose, plan the smallest trial that can supply the needed grounds. Name the intended tasks, proposed performers, Method or Method family expected for each task, supports, protected conditions, observations, burdens, stop rules, hand-back and later uses. A separate observation or test can use its own Method. Identify a constituent of the proposed way when its composition matters and is established. Keep this WorkPlan prospective and identify the interval during which its premises must remain current. Existing Work is examined from its actual evidence and any plan available for it; do not write a retrospective intention as though it preceded the Work.
 
 A compact plan can use these positions:
 
@@ -92,7 +92,7 @@ A compact plan can use these positions:
 | --- | --- |
 | status-preserved subject | Exact admitted Method and relied-on description, or exact candidate account and its missing admission basis |
 | operating question | Current use, proposed change, comparison, decision maker, and observation needed to decide or support the choice |
-| intended Work | Tasks, proposed performers, expected admitted constituent Methods, containing System, and temporal window |
+| intended Work | Tasks, proposed performers, expected Method or Method family for each task, containing System and temporal window |
 | conditions and stops | Authority, permission, support, service, recovery, human protection, fallback, and hand-back |
 | observations | Direct subjects, measures or descriptions, collection point, burden, and later receiving use |
 | return | Supported decision branches, limits on stronger uses, and any still-needed observation or revision condition |
@@ -101,9 +101,9 @@ A compact plan can use these positions:
 
 #### OPS.16:4.5 - Establish actual Work and direct results separately
 
-For existing observations or after a new trial interval, identify only Work that actually occurred. For each Work occurrence, recover the actual performer, temporal extent, containing System and enacted admitted Methods under `A.15.1`; identify a departure only against an established plan or applicable rule. Identify each direct result through its relevant domain owner. Keep later service Work, recovery Work, observation Work and decision Work as separate wholes where their identities require it.
+For existing observations or after a new trial interval, identify only Work that actually occurred. A question about the service result can be settled while the identity of an individual operator remains open. When the claim concerns a Work occurrence, use `A.15.1` to establish its actual performer, temporal extent, containing System and enacted admitted Methods at the scope claimed. Attribute a particular contribution to a person or unit when the evidence identifies that performer. Establish a departure against the applicable plan or rule. Identify each direct result through its relevant domain owner. Keep later service Work, recovery Work, observation Work and decision Work as separate wholes where their identities require it.
 
-Never record the candidate reusable way or its candidate account as enacted. In the pre-admission branch, actual Work may enact independently admitted constituent Methods and may supply observations relevant to the candidate account. It does not enact the candidate whole.
+For each claimed occurrence, identify the admitted Method it enacted. Observations gathered under a test or inspection Method can inform the candidate account. To identify a Method as a constituent of another, establish the relation by which it contributes to that Method’s construction. The candidate account records the reusable way under investigation and its current grounds.
 
 A completed task also does not prove a Method change. A changed board, prompt, tool, description, support arrangement, or local departure changes Method identity only when reusable Method semantics change under `A.3.1`. Keep the changed object and direct relation instead when they do not.
 
@@ -150,7 +150,7 @@ Use the branch selected in section 4.1.
 | admitted Method | continue the established use, `adopt`, `revise`, `branch`, `stop`, or `further observation` | Bind the decision to the exact admitted Method and relied-on version or description, named operating use, conditions, evidence window, and authority. |
 | pre-admission candidate | continue to the separate `A.3.1` identity test; revise or retain competing candidate accounts; stop; or seek further observation | Keep the candidate reusable way inside its candidate-account episteme. Return no Method adoption, Method branch, or `U.MethodDescription` claim. |
 
-For either branch, return the exact operating use, supporting evidence, any material limits on stronger uses, protected conditions, decision maker and relevant repertoire, lineage or reopen consequence. Include a next observation only for a selected further inquiry; a completed candidate-account revision or stop needs none. When the decision consumes a returned value from a governed operation application, `A.6.1` binds that exact value and `C.2.1` identifies its separate result episteme. Do not turn it into a generic Work result or produced entity. Keep the decision and any Method-lineage update separate from trial Work.
+For either branch, return the exact operating use, supporting evidence, any material limits on stronger uses, protected conditions, decision maker and relevant repertoire, lineage or reopen consequence. Identify any further observation chosen for the decision. A completed assessment can close the inquiry. Account separately for any performance or delivery still owed under the order. When the decision consumes a returned value from a governed operation application, `A.6.1` binds that exact value and `C.2.1` identifies its separate result episteme. Do not turn it into a generic Work result or produced entity. Keep the decision and any Method-lineage update separate from trial Work.
 
 An `adopt` or `branch` return makes an admitted Method available only for the named operating use and conditions. It does not establish organization-wide adoption, cultural selection or retention, causal superiority, a new capability, or authorization elsewhere. Send a result to `OPS.20` only as an admitted local Method variant with its exact relied-on description and bounded evidence, or as a status-preserved candidate-account or observed-practice variation.
 
@@ -223,12 +223,12 @@ The return preserves the admitted Method and its exact description while narrowi
 - [ ] The starting branch names either an exact admitted `U.Method` and relied-on version or `U.MethodDescription`, or an exact `A.3.1.MR` candidate account with source support, any live rivals and gaps, and explicit non-admission. A distinguishing question is required only when it changes the receiving use.
 - [ ] For a selected trial, the bounded hypothesis, current alternative, material change or branch, stop condition and expected observation are clear, including what the observation can establish for the decision. The plan identifies the status of each Method or candidate.
 - [ ] A selected new trial uses applicable resource and service results; OCE.11 is selected for coexistence around an organization change. Conditions needed for the trial hold when its dependent Work starts; a conditional plan preserves any remaining gap.
-- [ ] New trial Work has a prospective `WorkPlan` naming intended tasks, proposed performers, expected admitted constituent Methods, supports, observations, burdens, protections, stops, hand-back and later use. Existing evidence retains any available prior plan without inventing intention or occurrence.
-- [ ] Every actual Work occurrence has supported actual performers, enacted admitted Methods, extent, containing System and direct results; any claimed departure has an established comparison basis. No candidate whole or candidate account is enacted.
+- [ ] New trial Work has a prospective `WorkPlan` naming intended tasks, proposed performers, intended Methods or Method families, supports, observations, burdens, protections, stops, hand-back and later use. Existing evidence retains any available prior plan without inventing intention or occurrence.
+- [ ] The evidence for each claimed Work occurrence supports its performers, enacted admitted Methods, extent, containing System and direct results at the scope claimed. A report of a bounded result can leave finer attribution open. A claimed departure has an established comparison basis. A candidate describes possible work.
 - [ ] Operating, service or reliability, human-condition, queue or constraint, financial, side-effect, burden, missing-evidence, and Method or description observations retain their direct subjects and uses.
 - [ ] Coherence, fit or transfer, worth, evidence reliance, measurement validity, temporal window, and causal reach are qualified only where the receiving decision needs them and through their current owners.
 - [ ] Alternatives use the same operating basis, preserve protected conditions, carry uncertainty, and remain within named authority.
-- [ ] The return uses the permitted branch vocabulary, exact use, evidence window and limits, and relevant repertoire, lineage and reopen consequences. A next observation belongs only to a selected further inquiry, not to every completed account revision or stop.
+- [ ] The return uses the permitted branch vocabulary, exact use, evidence window and limits, and relevant repertoire, lineage and reopen consequences. Further inquiry depends on the decision it serves. A separately commissioned trial is accounted for under its agreed conditions.
 - [ ] A board, prompt, tool, description, support, or local departure changes Method identity only when reusable Method semantics changed under `A.3.1`.
 - [ ] Any proposed wider use has its own cultural, causal, capability or authority basis; the local decision is not that basis.
 
@@ -236,7 +236,7 @@ The return preserves the admitted Method and its exact description while narrowi
 
 | Misuse | Working repair |
 | --- | --- |
-| “We trialled candidate v2, so the team enacted it.” | Keep the reusable way in its candidate account; record only actual Work and independently admitted constituent Methods as enacted. |
+| “We trialled candidate v2, so the team enacted it.” | Keep the reusable way in its candidate account. Report the Work that occurred and the admitted Methods it actually enacted. Establish any claimed Method composition separately. |
 | “The rollout finished, therefore the new Method is adopted.” | Separate introduction Work, later operating Work, local decision, and any population-level cultural claim. |
 | “The package passed, so the Method works.” | Retain the package result, service conditions, comparison, evidence window, and unsupported causal or transfer claim. |
 | “The dashboard improved after the change.” | Recover the observation population, covarying conditions, validity window, and decision that the value can support. |

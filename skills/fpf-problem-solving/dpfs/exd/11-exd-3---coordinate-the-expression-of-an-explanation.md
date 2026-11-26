@@ -36,6 +36,8 @@ Use one representation when it suffices. Add another when its contribution justi
 
 Distinguish changes to content, expression and help. Adding the relation between group count, mean and sum supplies explanatory content. Displaying that same relation in a table changes its expression. A prompt supplied during the calculation changes the help available. Attribute a result to the change the comparison can isolate.
 
+For an explanation shared between practices, derive the needed representations from what each recipient must understand and what the recipients must understand together. Two sheets can accurately show each service's part while leaving both readers unable to see why a choice in one service changes the other's result. Make the connection recoverable by each recipient who needs it, where and when they need it. One shared passage may suffice. Different accessible forms can also serve when their claims and references let the readers relate the same contributions under the same conditions. For a question confined to one service, establish the connection that reader needs.
+
 #### EXD.3:4.2 - Make the correspondence available where it is used
 
 Use consistent names, units and referents. Put a label beside the quantity or feature it names, or give an unambiguous cross-reference when the medium prevents proximity. Make a line, arrow or spatial arrangement's meaning explicit when it could denote different relations.
@@ -86,7 +88,7 @@ Check the recipient’s access and the operations the task requires. A visual or
 
 Use the method when the ability to recover a relation from its expression or the coordination of representations matters to the question.
 
-For an assessment, identify what each representation contributes, how the labels and correspondences support the needed inference, and whether decisive conditions are present. State any change in content, expression or help. Credit an observed gain only to the difference the comparison supports. For a claim about what a recipient actually recovered, give the supporting observation and the conditions of that response. When an exercise, diagram or excerpt is actually issued separately, read it with the references that travel with it and check the first transition its recipient must make.
+For an assessment, identify what each representation contributes, how the labels and correspondences support the needed inference, and whether decisive conditions are present. State any change in content, expression or help. Credit an observed gain only to the difference the comparison supports. For a claim about what a recipient actually recovered, give the supporting observation and the conditions of that response. When an exercise, diagram or excerpt is actually issued separately, read it with the references that travel with it. Follow the inferences the recipient needs from the first step through the promised result. A caption may identify both quantities clearly while leaving the rule for combining them in a chapter the recipient never receives. For a task confined to identifying the quantities, the caption can suffice.
 
 ### EXD.3:8 - Common Anti-Patterns and How to Avoid Them
 

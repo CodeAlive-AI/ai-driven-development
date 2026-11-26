@@ -6,9 +6,9 @@
 
 ### B.2.5:0 - Use This When
 
-Use this pattern to describe two-sided feedback between one supervising acting system and one or more supervised holons. If the supervision is conditioned by a local system-role kind or assignment, recover that classification and assignment separately.
+Use this pattern to describe two-sided feedback between one supervising acting system and one or more supervised holons, or to specify that coupling in a proposed control arrangement. If the supervision is conditioned by a local system-role kind or assignment, recover that classification and assignment separately.
 
-The first useful move is to recover the facts supporting the feedback claim:
+First identify the decision for which feedback matters. Is the question about a specified exchange, supervision of each member, control of an organized whole or a policy to be designed? Use the observations and actions that could change that decision to select the relevant participants, scope and interval. For a claim about an exchange that took place:
 
 1. Name the supervised holons and the admitted system supervising them.
 2. State the feedback use, policy, and time window. Add a local supervisor system-role kind and assignment when that classification matters.
@@ -59,7 +59,7 @@ When these are confused, a functional layer is treated as a physical part, a pub
 
 ### B.2.5:4 - Solution
 
-State the feedback claim in one C.2.1 episteme about the named controller and supervised holons. A sufficient reading is: “For every drone in this set during the stated interval, controller C receives the stated observations and returns commands coupled to those observations under rule R.” Use A.6.RCD's compound-claim branch; the description does not require a new relation kind or one independently reidentifiable feedback occurrence.
+For a claim about actual supervision, identify who or what was observed and who or what received the coupled influence. A controller may use a joint condition to act on a whole. A local observation may instead govern an action on one part. For a claim that holds separately for several holons, state it for the required members and interval. One account applying throughout that scope can support all the pairs. State the result in a C.2.1 episteme using A.6.RCD's compound-claim branch. A further use may call for a separately reidentifiable occurrence under :4.1.
 
 For a nonempty set H and each h in H, recover three propositions under their domain definitions:
 
@@ -96,13 +96,13 @@ Evidence supports the assertion under A.10; its adequacy and the obtaining of th
 
 #### B.2.5:4.1 - Establish and qualify the conjunction
 
-Co-present telemetry and commands are insufficient. For each pair, apply the coupling rule to the observation and return. An unrelated broadcast fails that condition; one-way reporting fails the two-sided predicate.
+Trace the observation into the choice made under the applicable rule and the resulting influence to its recipient. An observation can enter the choice even when another reading in the same range would yield the same action. A matching schedule and a copy of the observation show no such use by themselves. A record that identifies the actual input, executed rule and delivered result can settle the question directly. For one-way reporting, retain the established observation.
 
 A confirmed failure of a condition required by the claim, such as a return to a named supervised holon, rules out that claim for the stated interval. When the remaining decision depends on an unspecified coupling rule, identify the missing rule. If the rule is applicable and a required fact is undecided, identify the information that would settle it. Check the rule’s requirement for a nonempty supervised set before an affirmative assertion.
 
 Keep the base occurrences and their extent and continuity rules. A communication break can make an interval-qualified feedback assertion fail without ending a supervisor assignment. Reconnection requires current observation, return and coupling facts.
 
-Apply a changed policy to the affected interval; adding a holon extends the asserted set only after its pair is supported.
+Apply a changed policy to the affected interval; adding a holon extends the asserted set only after its pair is supported. A common rule and evidence covering every required member may supply those grounds together. To establish feedback on a particular part, show how the observation represents a relevant state of that part and how the coupled return reached it. For a question about receipt alone, confirmed delivery to every member can establish that one member received the message even when its state was never observed.
 
 Reopen the dedicated relation-kind alternative only when a receiving use needs to identify a feedback occurrence independently across changes. That alternative must supply its obtaining, extent and continuity rules, including interruptions, under A.6.RCD and A.6.REL. A useful compound description can stop here.
 
@@ -121,6 +121,8 @@ For acting-side externalization, use `A.12`. For transformation, use `A.3.4`. Fo
 #### B.2.5:4.4 - Control-Structure View Boundary
 
 When feedback is drawn as planner, controller, observer, plant and supervisor structure, B.2.5 states the compound claim and `C.30.LCA` governs the control-structure view. The view can cite both the assertion and the independently obtaining base relations. Its arrows alone establish neither their obtaining nor the coupling.
+
+To design the feedback, start with the decisions the responsible system must be able to take. Which changes of state would require different action, and by when can that system observe the difference and act? Several arrangements of the parts can give the same whole-level indication. For each indication available before the decision, choose a permitted response that serves every admissible arrangement still consistent with it. If no such response exists, seek a timely observation that separates cases sufficiently for that choice, or revise the proposed policy. The aggregate can suffice when the same response serves the entire group. Specify the participants, observation, return and coupling for the required uses. This conditional result can complete a design commission. An assertion about an actual interval still uses :4.1.
 
 #### B.2.5:4.5 - Neighboring Claim Boundary
 
@@ -158,17 +160,17 @@ A C.30.LCA description consumes the report and command relation references plus 
 
 #### B.2.5:5.2 - Scientific Theory Revision
 
-A theory is revised when labs publish findings and a research community reviews anomalies and accepted revisions.
+Research groups publish findings. A community can examine an anomaly and retain its theory. To report a revision, identify what changed in the theory and, when attribution matters, who made or adopted that change.
 
 B.2.5 can state feedback around review and revision when the reviewed object is independently admitted as a Holon and the report, returned revision influence and coupling rule are established. Otherwise retain the independently supported review or source-use claims.
 
-Name the admitted System performing the review or revision; its local system-role kind and assignment, when relevant, are separate claims. The theory remains the reviewed or revised episteme.
+A comparison of the two editions can establish the change in the theory. For a claim about who reviewed or revised it, establish the contribution of the performing System or Systems. Identify their local system-role kinds and assignments when the claim depends on them. The theory remains the reviewed or revised episteme.
 
 For publication channels, journals, datasets, reports, and review records, keep each object's identity distinct from its publication or source-use relation; recover content, form, representation, or carrier only when the case depends on that distinction.
 
 #### B.2.5:5.3 - Product Platform Policy
 
-A product platform constrains component teams through interface rules and release gates. B.2.5 states the component reports, returned constraints and rule coupling those constraints to the reports for the admitted platform or governance system; a system-role kind or assignment is added only when separately current.
+A product platform constrains component teams through interface rules and release gates. B.2.5 states the component reports, returned constraints and rule coupling those constraints to the reports for the admitted platform or governance system; a system-role kind or assignment is added only when separately current. For example, a release coordinator may change the shared release window in response to the total backlog. The total can support that common decision even when the same total arises from backlogs at different teams. To choose which team can release its own change, the coordinator may instead need its outstanding checks. A total that leaves that choice open can still settle the window question. What the coordinator actually used in yesterday's decision requires grounds for that occasion.
 
 Work alignment uses `A.15`; a separate work-authority claim needs its pattern; use the lookup in `A.15.4:3.5` when the required permission or authority claim is unclear.
 
@@ -187,8 +189,8 @@ Gate passage uses `A.21`; `A.6.M` restores interface wording before the commitme
 
 | Check | Requirement |
 | --- | --- |
-| `CC-B2.5-1` | A conforming use names supervised holons and the supervising acting system; it adds the local supervisor system-role kind and assignment only when each independently obtains. |
-| `CC-B2.5-2` | A conforming use names the observation, report, or source side and the influence, constraint, or objective side. It also names the coupling rule, its case facts, common applicability, temporal qualification and evidence that changes the compound claim or its later use. |
+| `CC-B2.5-1` | Identify the supervised holon or holons and the supervising acting system at the scope the receiving use requires. A design states the conditions on which the proposed policy would provide feedback. Add a local supervisor system-role kind and assignment when applicable. |
+| `CC-B2.5-2` | For an actual feedback claim, identify the observation and returned influence, the rule used and the grounds for their coupling over the stated participants and interval. For a proposed policy, explain how the available observation permits the required choice and how the return could reach its recipient in time. |
 | `CC-B2.5-3` | The assertion is the conjunction of observation, return and coupling for every member of a nonempty supervised set. It introduces no fused U.Relation occurrence. Use the applicable mathematics for a loop; C.29 addresses a remaining representation, correspondence, transfer or reliance question. |
 | `CC-B2.5-4` | Observation and influence references retain their kinds; a report episteme, signal occurrence, and source-use relation are not interchangeable. |
 | `CC-B2.5-5` | Parthood, control-structure view, base publication and source-use relations, and the compound feedback assertion are kept separate. Each base occurrence keeps its identity and extent rules. |

@@ -4,8 +4,8 @@
 
 ### SYSE.11:0 - Use This When
 
-Use this pattern when locally completed parts or changes have accumulated and a decision depends on whether
-one actual engineered System can support a stated use. Integration is the broader engineering concern;
+Use this pattern to design the progression by which contributions will form a usable whole, to carry out that integration, or to assess the use an
+actual engineered System can support. The commission determines the result to deliver. Integration is the broader engineering concern;
 this pattern develops the bounded move from available contributions to a configuration that supports
 one receiving use. It includes choosing the integration progression, correcting discovered incompatibilities
 and assessing the resulting whole.
@@ -13,8 +13,8 @@ and assessing the resulting whole.
 Begin with the use and what already exists. For a change, identify the existing System and its current configuration. For a first assembly, identify the existing constituents, the intended whole and the relations that must first obtain for that whole to exist. Use any applicable integration strategy or assessment already available. A strategy can supply the grouping, assembly and check order directly. A
 current qualified result covering the same configuration and use can finish an assessment directly. If the order requires a new assembly, connection or witnessed run, establish which occurrence must be performed and what the authorized recipient can accept. A ready configuration can settle its own fitness in advance. For integration work still needed, choose a sufficient joint change, expose consequential interactions and assess the resulting System with evidence applicable to it.
 
-The first useful result is a **bounded usability assessment**: an episteme stating what the actual System can
-support, on what grounds, for which configuration, conditions and interval, and with what limits and fallback.
+A **proposed integration strategy** can finish a design commission when the receiving engineer can use its grouping, order and criteria to decide when to proceed, correct or stop.
+For an assessment of use, the first useful result is a **bounded usability assessment** of the actual System in its configuration, with grounds, operating conditions, interval and any limits or needed fallback.
 The changed System, the Work and transformations that produced its configuration, and this assessment remain
 distinct. Permission and release are separately governed decisions.
 
@@ -54,7 +54,7 @@ of the System to assess the bounded use. Make further observations when the asse
 
 ### SYSE.11:2 - Problem
 
-Before relying on a claimed increment for a decision, the responsible engineers need answers to these questions.
+For a strategy, establish which interactions the planned progression must expose, when it must expose them and what result would justify the next step. To assess an actual increment for a decision, the responsible engineers need answers to the following questions.
 
 1. Which existing System and configuration will change, or from which actual constituents will the first configuration of the intended whole be formed?
 2. Which receiving use, operating conditions, affected Systems, and interval bound the result?
@@ -88,12 +88,12 @@ configuration that anyone can use.
 ### SYSE.11:4 - Solution
 
 Work back from the receiving use to the relations that must hold together. Use a suitable integration strategy or choose a feasible progression that can expose consequential incompatibilities before they become more costly to correct.
-Use adequate evidence for relations already established. Establish any remaining relations and correct any discrepancies.
-Assess the resulting configuration for the intended use, using a sufficient existing assessment when available.
+For a commission to design the progression, show why the proposed grouping, order and transition criteria serve the receiving use. That strategy can be delivered before assembly.
+When the commission includes integration, establish the remaining relations and correct discrepancies. For an assessment of the resulting configuration, use the evidence already adequate for its intended use and obtain what is missing.
 
 #### SYSE.11:4.1 - Perform the Move
 
-For an assessment, use sufficient evidence of the configuration and its intended use. It can settle the question before any new integration. Apply the steps concerning assembly, change or a witnessed test when the commission includes that work or the decision still needs it.
+For a strategy, use the design operation in :4.1.1 and supply the conditions and decisions the integration team will need. For an assessment, use sufficient evidence of the configuration and its intended use. It can settle the question before any new integration. Apply the steps concerning assembly, change or a witnessed test when the commission includes that work or the decision still needs it.
 
 
 1. **Name the System and use.** For a continuing System, identify its starting configuration. For a first assembly, identify the actual constituents, intended System and the conditions under which they first constitute it. On completion, establish that the required relations obtained in that assembly. Bound the receiving use, affected Systems, operating conditions, interval, behaviour and deciding Agent. A demonstrated episode supports a claim about later use only with grounds for that extension.
@@ -214,14 +214,14 @@ the separate assurance activities in SYSE.4 unless an assurance claim is being m
 #### SYSE.11:4.2 - Record the Result
 
 Use the existing configuration, integration and assessment records where they already carry the needed
-content. The following are questions to keep answerable, not a mandatory second form.
+content. Use the rows that support the commissioned result. A strategy prepared before integration can identify proposed configurations, transition criteria and evidence to obtain. A conclusion about an achieved change depends on the configuration and work that actually occurred.
 
 | Content | What the receiving engineer needs |
 | --- | --- |
-| System and use | Existing System and its starting configuration, or constituents and first-assembly criteria; the actual resulting System and configuration, receiving use, affected Systems, conditions, interval and deciding Agent. |
-| Boundary and progression | Why the included changes belong together, the selected intermediate configurations and checks, conditions for proceeding, actual fallback and stop. |
+| System and use | Starting configuration or constituents and first-assembly criteria, intended receiving use, affected Systems and conditions. For an assessment of achieved usability, identify the resulting System and configuration, relevant interval and deciding Agent. |
+| Boundary and progression | Why the changes belong together, which intermediate configurations are required, when to proceed or stop, and which fallback is available or was used. |
 | Supplied inputs | Results relied on, their applicability and evidence windows, and any unresolved blocker or qualified substitute. |
-| Work and actual change | Dated Work, Agents, Methods, subjects, results, transformations and obtaining relations; discrepancies, corrections and their resulting configurations. |
+| Work and actual change, when at issue | Dated Work, Agents, Methods, subjects, results, transformations and obtaining relations, including discrepancies, corrections and their resulting configurations. |
 | Usability | What each observation or qualified result supports, the consequential inference to the use claim, limits, any unsupported claims and conditions for reconsideration. |
 | Separate decisions | Any assurance, permission, release or specialist decisions that remain to be made for the receiving use. |
 | Later work, when selected | The separate comparison and choice, attainable contribution, burden, alternatives and reopen condition. No later-work record is required when the assessment completes the current question. |
@@ -361,13 +361,13 @@ receiving Agent selects the use and any authority relation remains separately su
 
 ### SYSE.11:7 - Conformance Checklist
 
-- [ ] The existing System and its starting configuration, or the actual constituents and criteria for first forming the whole, are identified. The usability assessment concerns the actual resulting System for the named use, conditions, interval and deciding Agent.
+- [ ] The proposed strategy identifies its starting conditions, constituents, receiving use and criteria for forming or changing the whole. A claim about achieved usability identifies the actual resulting System and configuration for the named use, conditions, interval and deciding Agent.
 - [ ] Where integration is required, the needed behavior and interactions justify the proposed joint change and progression. An existing strategy can supply those grounds.
 - [ ] Inputs apply to the receiving subjects, uses and evidence windows directly or on a justified correspondence, and were available before the Work or decisions that relied on them.
 - [ ] A commissioned assembly, change or witnessed operation is accounted for under its acceptance terms. Where integration or correction was needed, evidence of the actual change establishes what the next step can rely on. An existing result can complete a separate assessment within its scope.
 - [ ] Work, transformation, actual configuration and the claims in its description remain distinguishable.
-- [ ] The assessment explains what supports the whole-use claim and any extension beyond observed conditions, using a sufficient direct result or SYSE.10.
-- [ ] Fallback is feasible for its own supported use; unresolved discrepancies and unsupported claims have a concrete stop or return.
+- [ ] For a proposed progression, can the receiving engineer establish when to advance, correct a mismatch or stop, and why that decision serves the intended use? For an assessment of actual usability, is the whole-use claim supported, including any extension beyond observed conditions, by a sufficient direct result or SYSE.10?
+- [ ] If the recipient relies on a fallback, its feasibility is established for its own use. Unresolved discrepancies or unsupported claims that affect the decision have a concrete stop or return.
 - [ ] Separately governed assurance, permission, release and specialist decisions retain their own grounds.
 - [ ] If later modernization or inquiry is selected, its separate comparison and choice justify the attainable contribution and burden. Otherwise the current result can finish.
 - [ ] Reopen conditions identify the configuration, use, evidence or relation whose change matters.
@@ -474,7 +474,6 @@ same useful result also changes the selection. A newer source or a faster tool a
   The referenced instructions in SYSE.4:4.4 and SYSE.4:4.6 can be used without importing the separate assurance activities.
 - A bounded usability assessment can inform SYSE.4 within its supported use and evidence window. Use SYSE.14 for release and
   evidence continuity under the authority assigned to those decisions.
-- Operations, Maintenance, Platform Engineering, safety, security, law, governance, finance, and other specialist
-  practices retain their Methods and decisions.
+- Operations, Maintenance, Platform Engineering, safety, security, law, governance, finance and other practices supply the specialist Methods. Establish who holds any decision on which the engineering result depends.
 
 ### SYSE.11:End

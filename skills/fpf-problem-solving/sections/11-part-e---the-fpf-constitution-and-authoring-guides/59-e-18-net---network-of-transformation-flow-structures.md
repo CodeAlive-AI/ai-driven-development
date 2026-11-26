@@ -10,7 +10,7 @@
 
 Use this pattern when one engineering question depends on two or more independently identified transformation-flow structures, or on nested networks of them, and at least one obtaining relation connects positions across their boundaries. Typical situations include a toolchain that builds another tool, a production system related to the product it helps produce, or an operating flow whose observation returns to a separate development flow.
 
-Start with the three cases in step 1. Continue with steps 2–5 when the engineering question requires a network.
+Start from what the recipient needs to establish across the flows. Work back from the use of a result to the flow that supplies it and any other flow on which that use depends. At a nested boundary, ask whether the exposed result suffices or whether two internal arrangements with that same result could change the answer. Follow the difference only as far as the question requires. Use a shared constraint when it affects what several members can provide together. Then select among the three cases in step 1 and continue with steps 2–5 when the question requires a network.
 
 1. decide whether the case is several valuations of one flow structure, an internal portion of one flow structure, or a network of independent flow structures;
 2. identify each candidate member independently;
@@ -18,7 +18,7 @@ Start with the three cases in step 1. Continue with steps 2–5 when the enginee
 4. select only the members, relations, boundary exposures, and constraints needed for the current question; and
 5. return one network reference, or stop at the proposed description and name either the relation-claim result returned by its governing pattern or the separate missing network discriminator.
 
-A successful selection returns a network reference and its basis.
+A successful selection returns a network reference and its basis. For a request to identify that network, this can be the final answer. For a receiving decision, use the selected connections to establish what can be concluded across the members and obtain any further premise the decision needs.
 
 ```text
 selectedNetworkRef: one exact TransformationFlowStructureNetwork
@@ -197,7 +197,7 @@ A row, graph edge, or episteme neither admits a relation kind nor creates an occ
 
 #### E.18.NET:4.6 - Record the network without replacing it
 
-If the selected answer must remain available after the immediate work, describe it with a separate C.2.1 episteme. Its effective scheme has the C.2.1:4.1.2 range `EpistemeInterpretationScheme`; recover the rules that interpret the record's network, member, relation and endpoint-binding designations and its claims:
+If the selected answer must remain available, use an accessible C.2.1 description that preserves the needed network, content and return conditions. Produce a separate record when the existing description is insufficient for that use or a new one is commissioned. Its effective scheme has the C.2.1:4.1.2 range `EpistemeInterpretationScheme`; recover the rules that interpret the record's network, member, relation and endpoint-binding designations and its claims:
 
 ```text
 TransformationFlowStructureNetworkRecord@Context <: U.Episteme:
@@ -301,7 +301,7 @@ networkUseFrame:
 returnCondition: either member, the supply occurrence, an endpoint or exposure, acyclicity, or the coffee-service question changes
 ```
 
-The dispatch and acceptance records suffice to trace what the café received. Suppose its current records show 4 kg of lot 24 still on hand and uncommitted, cleared for brewing at 10:00. The café can choose it for a 3 kg batch then. If 3 kg has since been reserved for another order, only 1 kg remains available for this batch. A recall can close the choice even with all 4 kg present. With only the acceptance receipt, report the completed delivery and recover the needed current condition. Create a `TransformationFlowStructureNetworkRecord@Context` only when the network description must survive the current work.
+The dispatch and acceptance records suffice to trace what the café received. Suppose its current records show 4 kg of lot 24 still on hand and uncommitted, cleared for brewing at 10:00. If the café is authorized to select among cleared lots, it can choose this one for the 3 kg batch. If the customer reserved that decision, the café can report an eligible option. If 3 kg has since been reserved for another order, only 1 kg remains available for this batch. A recall can close the choice even with all 4 kg present. With only the acceptance receipt, report the completed delivery and recover the needed current condition. An accessible existing network record can serve a later inquiry. Create a `TransformationFlowStructureNetworkRecord@Context` when that description is needed and missing, or when a new record is due.
 
 If the supply claim has no admitted relation kind or applicable predicate, carry the governing pattern's `missing-governor` result. If required facts are unavailable, carry `missing-information`; if a sufficient case basis fails the positive test, carry `factually unsupported`. Neither missing information nor a failed positive test asserts a negative. Only an applicable negative rule and satisfying case basis can supply a negative result.
 
@@ -309,9 +309,9 @@ When the supply occurrence obtains but an endpoint binding is missing, keep the 
 
 #### E.18.NET:5.2 - Project system-of-interest and recursive build-the-builder
 
-For one project question, practitioners ask which independently identified flow structures must be considered together to connect production and later operation of the project system-of-interest, and which builder branches must also be visible. The actual project remains composite `U.Work`; the selected network is a non-agentive `U.Structure`.
+The project asks how production and later operation of an application depend on the compiler and on the systems used to build it. Identify the Systems whose production or use the answer concerns and which independently identified flow structures show those connections. The actual project is composite `U.Work`. Its selected network is a non-agentive `U.Structure`.
 
-Project designation and `U.System` identity remain separate from any local system-role kind, classification, assignment, selection Work, or result episteme. None follows from a project or network label.
+Under A.1.STM, call a product the system-of-interest when its role in a particular extended enterprise is established from the participating organizations and their commitments. If this role is proposed or unknown, the production and use question about the identified application still has an answer. For a proposed decision, establish who is authorized and able to make it. For a performance claim, establish which System or participants did what at the scale in question. System identity, classification, role assignment, actual selection Work and the resulting episteme have their own grounds.
 
 For the compiler-and-application use, identify five TFS values by the questions they answer:
 
@@ -412,7 +412,7 @@ These five bias risks apply across uses of this pattern: **Gov**, **Arch**, **On
 | **CC-E18-NET-09 Record and row-locator separation** | Member rows and relation rows describe already identified objects and occurrences; the record does not create them, and every `NetworkCrossFlowRelationRowRef` resolves exactly one nested row by record, occurrence, and ordered endpoint-binding identity. | Separate the C.2.1 episteme from the selected `U.Structure`; repair or remove any locator that resolves zero or several rows. |
 | **CC-E18-NET-10 Non-agentivity** | The selected network is non-agentive. Its identity needs no actor or selection-Work claim; any actual selection Work has a separately identified System performer and occurrence. | Describe the network through direct members, selected obtaining occurrences, endpoint bindings, applied constraints, and its use frame. If actual selection Work is current, cite every precise performer's A.13 core and the independent A.15.1 Work admission; cite F.6 only when assignment-bound attribution is also current. Keep result episteme, choice, decision, and accountability relations separate. |
 | **CC-E18-NET-11 Representation boundary** | Mathematical descriptions, graphs, views, publications, and demonstrations are identified separately and state preserved/lost structure when relied on. | Apply E.18.2, C.29, E.17, A.22.CGUS, or E.18.3 as appropriate. |
-| **CC-E18-NET-12 Useful result or stop** | The practitioner receives one network ref and return condition, or a proposed description with the reason selection cannot close: the governing pattern's relation-claim result, or a separate absent member, applied constraint, use frame, endpoint, or position binding. | Restore the result or blocker under the rule that governs it; keep the relation-claim result separate from the network-selection blocker. |
+| **CC-E18-NET-12 Useful result or stop** | Selection yields one network ref and return condition, or a proposed description with the reason selection cannot close: the governing pattern's relation-claim result, or a separate absent member, applied constraint, use frame, endpoint, or position binding. For a decision that uses the network, identify what the selected connections establish for it. | Restore the result or blocker under the rule that governs it; keep the relation-claim result separate from the network-selection blocker. |
 
 ### E.18.NET:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -462,7 +462,7 @@ A new need for cyclic member identity, a separately re-identifiable membership o
 
 Builds on: `A.22` for selected-structure identity and non-agentivity; `E.18` for one TFS, its selected internal relations and resolved connection positions, `FlowPositionRef`, valuations, paths, slices, and local state; `A.6.REL`, `A.6.RCD`, and `A.6.P.WMR` for exact relation recovery and `missing-governor`; `C.2.1` for the optional descriptive record; and `F.18` for the stable local name.
 
-Coordinates with: `A.15.6` for actual project Work, project system-of-interest designation, and subject- or claim-centred case closure; `A.1.STM` for a Plain provisional long-mantra display and backward/forward attention use; `E.18.2` and `C.29` for mathematical descriptions; `A.22.CGUS` and `E.18.3` for admitted demonstrative slices; `C.30.TFS-REL` for architecture use; `C.32.CONWAY` for one qualified architecture-influence pair; `A.3.4`, `A.12`, and the A.15 family for actual transformation, causal or acting positions, Work, production, and work-to-change claims; `E.17` for publication; `E.11` for public entry and recognition; and `E.11.PUA` for using one already selected pattern to reach its first useful result.
+Coordinates with: `A.15.6` for actual project Work, project system-of-interest designation, and subject- or claim-centred case closure; `A.1.STM` for a Plain provisional long-mantra display and backward/forward attention use; `E.18.2` and `C.29` for mathematical descriptions; `A.22.CGUS` and `E.18.3` for admitted demonstrative slices; `C.30.TFS-REL` for architecture use; `C.32.CONWAY` for one qualified architecture-influence pair; `A.3.4`, `A.12`, and the A.15 family for actual transformation, causal or acting positions, Work, production, and work-to-change claims; `E.17` for publication; `E.11` for public entry and recognition; and `E.11.PUA` for obtaining the needed contribution from a selected pattern and using it in the original work.
 
 Does not replace: the direct pattern that defines or constrains any selected production, use, participation, evaluation, feedback, dependency, correspondence, supply, evidence, assurance, gate, decision, causal, or work relation. E.18.NET selects already obtaining occurrences for one network use; it does not define their kinds or make them obtain.
 

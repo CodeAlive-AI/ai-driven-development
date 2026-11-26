@@ -16,7 +16,7 @@ Return the supported account, any warranted alternatives or the precise question
 
 ### NSTD.9:2 - Problem
 
-To tell what happened, an interpreter groups occurrences, connects statements, selects a perspective and may supply assumptions. The resulting account can bring out a relation or obscure it. Compare the grouping with the original material. An outline extracted from the completed story already contains its author’s choices.
+To tell what happened, an interpreter groups occurrences, connects statements, selects a perspective and may supply assumptions. The resulting account can bring out a relation or obscure it. Compare the outline with the original material. Its maker may reproduce a division into episodes expressed in the story or introduce a connection the story leaves open. Trace what supports that reading. If the question concerns who first made the connection, look for evidence of the work that produced it.
 
 ### NSTD.9:3 - Forces
 

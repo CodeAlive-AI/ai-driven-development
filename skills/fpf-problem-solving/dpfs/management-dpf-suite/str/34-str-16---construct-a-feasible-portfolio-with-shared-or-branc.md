@@ -137,7 +137,7 @@ To resolve a conflict, change the configuration enough to show how the revised c
 
 Reassess the uses that depend on a changed shared contribution. If research supplies no required input to a delayed product, the research may continue. If both need the same scarce scientist, reallocation may nevertheless change both schedules. Trace the receiving dependency and competition for capacity separately.
 
-When refusing the proposed portfolio as infeasible, show why every permissible way of supplying the undertaking can fail its promised criterion. The same attainable shortfall may defeat them all, or different choices may fail under different allowed conditions. A conflict in one tested allocation leaves the others open. If a commitment already binds, identify a remedy or refer a proposed revision to its holder. Count overtime, volunteer work, financing and future research results on grounds appropriate to each.
+When refusing the proposed portfolio as infeasible, establish why every permissible way of supplying it falls short of the agreed criterion. For a guarantee, one allowed shortfall for each way can defeat the guarantee. For a risk or proportion target, compare the risk or attainable proportion for that way with the promised threshold. A single argument or bound can cover several ways. A conflict in one tested allocation leaves the others open. If a commitment already binds, identify a remedy or refer a proposed revision to its holder. Count overtime, volunteer work, financing and future research results on grounds appropriate to each.
 
 #### STR.16:4.5 - Compare the portfolios without erasing their purposes
 
@@ -313,7 +313,7 @@ Commercial visibility can make near-term sales appear to be the only result wort
 
 Keep each undertaking’s grounds of worth visible, compare the feasible arrangements, identify displaced work and establish who may accept the resulting trade-off. A fixed funding percentage would need a governing decision or a basis in the aims of this portfolio.
 
-The cases concern organizations making finite commitments. Participants without a common allocator can use the comparison to negotiate a proposal. For each commitment, recover the authorized act that established it and whose assent that act required. Community membership alone leaves a voluntary contribution open.
+The cases concern organizations making finite commitments. Participants without a common allocator can use the comparison to negotiate a proposal. For each commitment, recover the authorized act or the standing terms and event that made it effective. Establish whose assent the terms require and whether it has already been given. Seek a further decision when the terms call for one. Community membership alone leaves a voluntary contribution open.
 
 ### STR.16:7 - Conformance Checklist
 

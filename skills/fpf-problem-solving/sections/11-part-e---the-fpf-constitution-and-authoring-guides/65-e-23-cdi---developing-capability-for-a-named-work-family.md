@@ -12,7 +12,7 @@ Use this pattern when one named System must become more capable of performing a 
 
 **First useful move.** Distinguish the current capability account from the target.
 
-`Current:` name the holder, the named Work family, operating envelope, measures and evidence for the baseline, the contribution that limits performance, and how long that account remains current.
+`Current:` name the holder, the named Work family, operating envelope, measures and evidence for the baseline, what is known about the limit on performance, and how long that account remains current.
 
 `Target:` name the desired measures or success predicate, representative Work that will test them, intervention and any provider, and trade-offs that must remain protected. In both accounts, use only values that can change the development decision. If the holder or Work family cannot be named, stop before choosing training, tooling, or another intervention.
 
@@ -23,7 +23,7 @@ Use this pattern when one named System must become more capable of performing a 
 **Not this pattern when.**
 
 - Use `A.2.2` when the question concerns only the holder's identity, qualified ability, measures, support or current reliance on that ability. If the present result can be obtained from an already capable provider and no change to the named holder is needed, arrange that provision using its qualified ability and the applicable work or commitment method.
-- Use `E.23.CAE` first when previous performance or failed transfer leaves it unclear whether the live issue is envelope, configuration, applicability selection, access or activation, context-dependent expression, adaptation, enactment, or actual capability change. Its disposition is a premise, not selection of development Work.
+- Use `E.23.CAE` when the commission asks for a diagnosis or when distinguishing the surviving explanations would change what to do next. Earlier performance or failed transfer can raise questions about the claimed range, configuration, applicability, access, expression, adaptation, enactment or actual capability change. The finding can trigger an existing conditional instruction or inform a choice that remains open.
 - Run the direct evaluation when that is enough; use E.22 only when its question needs framing.
 - Use base `E.23` for repeated improvement of an arbitrary object version.
 - Use `C.32.MWA` first only when the target-practice architecture must itself be recovered or compared.
@@ -52,6 +52,8 @@ The opposite mistake is to demand one universal decomposition or balanced scorec
 
 Keep the holder System, its capability, the target Work family, development intervention, provider Systems, development Work, transfer Work, and evidence separate. A familiar group name does not by itself identify the capability holder.
 
+Decide whose capability to develop from the work that will be entrusted. Follow the result to the contributors and resources needed to obtain it. When several contributions are required, could their timing or handover change the outcome even if each one succeeded? Include the relevant coordination in the account of the holder. For a claim about an individual using ordinary support, identify the contribution that individual must make and the help available at the time.
+
 | Candidate holder wording | Boundary for this use |
 | --- | --- |
 | a person or equipped person | Use the person or equipped whole only when that System is the bearer of the bounded capability claim. |
@@ -65,10 +67,12 @@ Keep the holder System, its capability, the target Work family, development inte
 1. Start from an evidence-backed account of the domain Methods needed for the named Work and how their contributions relate.
 2. Name the operating envelope and the qualification window or currentness condition that can change whether the Work succeeds.
 3. State the current capability baseline and desired result before choosing an intervention: the decision-bearing current measures and evidence, the desired measures or success predicate, and the trade-offs that must remain protected. The desired result is a target for later evaluation, not an established current ability or an actual change.
-4. Find the contribution that is missing, limiting, or poorly coordinated. When the issue is which organization of a particular Method the holder can use, apply A.2.2:2.1 at the grain that exposes the missing relation; use :4.2.1 below to choose how it will become usable.
-5. Choose an intervention directed at that limitation, and name any provider System on which the intervention relies. The intervention may use, for example, practice, coaching, adaptation, tooling, changed support, or a changed Method; the receiving domain supplies the choice.
+4. Establish what prevents the required result far enough to choose the next contribution. If several explanations call for the same useful response, explain why it fits them and keep their causes open. If the explanations lead to different choices, obtain the distinction that matters. When the issue is which organization of a particular Method the holder can use, apply A.2.2:2.1 at the grain that exposes the missing relation; use :4.2.1 below to choose how it will become usable.
+5. Choose an intervention grounded in that assessment and identify any provider on whom it depends. The intervention may use, for example, practice, coaching, adaptation, tooling, changed support, or a changed Method; the receiving domain supplies the choice.
 6. Carry the protected conditions into the chosen intervention. Keep the selected intervention or plan separate from any development Work that is later performed.
-7. Declare a transfer check that tests the stated target in representative Work under the relevant operating conditions. When that check is performed, keep the transfer Work, its evidence and result, and the resulting capability statement or currentness assessment separate. Exercise completion, attendance or provider delivery alone does not establish transfer. Reuse evidence from an exercise or another check when it tests the declared target in representative Work under the receiving conditions and satisfies its evidence requirements.
+7. Declare a transfer check that tests the stated target in representative Work under the relevant operating conditions. When that check is performed, keep the transfer Work, its evidence and result, and the resulting capability statement or currentness assessment separate. Exercise completion, attendance or provider delivery alone does not establish transfer. Reuse evidence from an exercise or another check when it tests the declared target in representative Work under the receiving conditions and satisfies its evidence requirements. If a fresh performance by the holder is itself commissioned, obtain that performance under the specified support conditions.
+
+   Build the transfer task from the choices the holder will have to make. When the next job supplies a procedure, representative work can ask the holder to carry it out. When the holder must devise a procedure, start with the problem and the resources available on that job. Identify the choices the holder made in constructing it. Where the outcome depends on several parts working together, establish what joins them under the receiving conditions. A worked solution or a heading that supplies the decisive relation narrows what the performance establishes. An earlier work product can already show the required choice under the relevant conditions.
 8. Reopen the Method account, holder boundary, baseline, target, intervention, protected conditions, or currentness claim when the transfer evidence shows that the earlier account was wrong, incomplete, or no longer current.
 
 ##### E.23.CDI:4.2.1 - Choose how Method structure will become usable
@@ -99,7 +103,7 @@ When learning one contribution damages another required contribution, compare th
 
 #### E.23.CDI:4.3 - Return the first useful result
 
-The first useful result names the admitted holder System and target Work family. Describe the current capability baseline, operating envelope, measures and evidence that matter to the decision, qualification window or currentness condition, and the contribution that limits performance.
+The first useful result names the admitted holder System and target Work family. Describe the current capability baseline, operating envelope, measures and evidence that matter to the decision, qualification window or currentness condition, and the limitation established or the alternatives that still matter.
 
 State the desired measures or success predicate, selected intervention and any provider dependency, protected conditions, representative transfer check and reopen condition. If member distributions or cultural propagation are also at issue, return their separate assessment or C.36 result. A population can be the capability holder only when that whole is independently admitted as the System.
 
@@ -107,7 +111,7 @@ The holder, its qualified `A.2.2` ability claim and the basis for relying on the
 
 Keep the selected intervention or plan, performed development Work, performed transfer Work, transfer evidence and result, pre- and post-intervention capability statements, a comparison claiming capability change, and any actual Transformation claim separate. A plan remains prospective.
 
-For performed Work, identify every actual performer through A.13 and let A.15.1 independently admit the occurrence; add F.6 only when the record or receiving use expressly consumes precise assignment-bound attribution.
+For performed Work, establish the A.13 basis of the System or Systems credited at the scale of the claimed performance and let A.15.1 independently admit the occurrence; add F.6 only when the record or receiving use expressly consumes precise assignment-bound attribution.
 
 A capability-change comparison needs commensurable measures, envelopes, windows, and current support; it does not by itself say that the development Work caused a world-side change.
 
@@ -115,7 +119,7 @@ A causal Transformation claim additionally needs an independently identified `A.
 
 ### E.23.CDI:5 - Archetypal Grounding
 
-**Working rule.** Begin with a current, bounded capability account and a desired result; choose an intervention only after the limiting contribution is known; then test that same target in representative Work. Completion of an intervention or exercise alone is activity evidence; a transfer claim needs the representative performance and support specified above.
+**Working rule.** Start from what the holder can do now and the desired result. An ensemble that loses coordination at a change of tempo may benefit from the same short joint rehearsal whether the cue comes late or the players respond on different beats. The rehearsal can supply a worthwhile next step under both explanations. To judge a gain in ensemble capability, examine the target performance under the intended support. Completion of an intervention or exercise alone is activity evidence; a transfer claim needs the representative performance and support specified above.
 
 The compact range table below is a recognition aid: it shows where the Method can be filled differently.
 
@@ -137,7 +141,7 @@ The next five comparable staffed incidents each meet the three-minute handover c
 
 The target is at least 97 percent detection, at most 5 percent false alerts, and at most 45 seconds per part while traceability and safety interlocks remain unchanged. The intervention changes optical calibration and the inspection Method with support from the sensor provider.
 
-The follow-up covers 300 identified parts over three shifts. Independent reference labels give 160 parts with one reportable crack each and 140 crack-free parts. The cell detects 157 cracks (98.125%) and wrongly flags six distinct parts among the 140 crack-free parts (about 4.29%). A 43-second mean is compatible with half the inspections taking 41 seconds and half 45, or with half taking 40 and half 46. Only the first timing record meets the 45-second limit on every part. With the first record, complete part coverage and qualified traceability and interlock operation, the engineer can accept this finite series under the stated criteria.
+The follow-up covers 300 identified parts over three shifts. Independent reference labels give 160 parts with one reportable crack each and 140 crack-free parts. The cell detects 157 cracks (98.125%) and wrongly flags six distinct parts among the 140 crack-free parts (about 4.29%). A 43-second mean is compatible with half the inspections taking 41 seconds and half 45, or with half taking 40 and half 46. Only the first timing record meets the 45-second limit on every part. With the first record, complete part coverage and qualified traceability and interlock operation, the records establish conformity of this finite series to the stated criteria. An engineer empowered to accept it can act on that finding. To report acceptance, establish how the governing terms give effect to the finding or to an authorized act.
 
 Did the cell improve? Suppose that in the original 200 parts there were 78 easy and 22 difficult cracks. Detecting all easy cracks and half the difficult ones gives 89 of 100. In the later series, 154 easy and six difficult cracks give 157 of 160 at exactly the same sensitivity within each grade. Compare the cell for a common part mix and operating envelope before claiming a change in capability. To attribute a change to optical calibration, the Method or provider Work, distinguish their effects from other changes that could explain the result.
 
@@ -170,10 +174,10 @@ Suppose a trial learner's training signal improves while it still produces the a
 | Check | Passing condition |
 | --- | --- |
 | `CC-E23CDI-1` | One admitted holder System and one named Work family are explicit. |
-| `CC-E23CDI-2` | Before intervention selection, the current capability baseline names its operating envelope, decision-bearing measures and evidence, qualification window or currentness condition, and limiting contribution. |
+| `CC-E23CDI-2` | The grounds for selecting the intervention include the operating envelope, the decision-bearing measures and evidence, their currentness, and what is known about the limitation. If rival explanations remain, the chosen response has adequate grounds across them or the intervention is a warranted way to distinguish them. |
 | `CC-E23CDI-3` | Before intervention selection, the desired measures or success predicate and protected conditions are explicit; the desired result is not presented as an established current ability or actual change. |
 | `CC-E23CDI-4` | The intervention addresses the limitation; any provider System and provider contribution remain distinct from the holder's capability, and a selected plan remains distinct from performed development Work. |
-| `CC-E23CDI-5` | Transfer tests the declared target in representative Work under the relevant envelope and window; attendance, exercise completion, description, publication, or provider delivery is not substituted. |
+| `CC-E23CDI-5` | Transfer tests the declared target in representative Work under the relevant envelope and window, with the contributions and choices that will belong to the holder there; attendance, exercise completion, description, publication, or provider delivery is not substituted. |
 | `CC-E23CDI-6` | The plan, performed development Work, performed transfer Work, evidence and result, pre- and post-intervention capability statements, capability-change comparison, and any actual Transformation claim remain separate. The comparison uses commensurable measures, envelopes, windows, and current support. A causal Transformation claim cites an independently identified Transformation and an obtaining direct Work-to-change predicate or supported local claim; otherwise retain the actual unresolved basis. Reserve `missing-governor` for an unavailable predicate or governing condition; missing case facts leave the relation unestablished, and a supported negative or inapplicable result remains distinct. |
 | `CC-E23CDI-7` | A population is not treated as capable by aggregation. A capability claim about the population as a whole requires its independent admission as the holder System. Member distributions and cultural propagation have separate results. |
 | `CC-E23CDI-8` | The result states what evidence, expired qualification window, changed operating condition, or failed transfer result reopens the baseline, target, Method account, holder boundary, intervention, protected conditions, or currentness claim. |
@@ -225,12 +229,12 @@ The comparison below asks which current practice changes the capability-developm
 | `A.1`, `A.2.2` | Admit the holder System and govern qualified ability claims, their work conditions and attained bounds, support, qualification and fit. A.2.2:2.1 supplies the Method-relative profile when a missing operation or join changes development. |
 | `C.2.8` | Supplies recovery of selected structure from an expressed account. That result can help locate a missing explanation while capability, acquisition and transfer keep their own evidence. |
 | `A.3.1`, `A.3.2` | Govern the domain Methods and their descriptions used by the development account. |
-| `A.13`, `A.15.1`, `A.2.1`, `F.6` | Govern identification of each actual performer and independent admission of performed development and transfer Work. The obtaining A.13 assignment remains part of actual-performer admission; expose separate assignment and F.6 references when precise assignment-bound attribution is consumed. Completion of either Work occurrence does not establish a post-intervention capability or actual capability change. |
+| `A.13`, `A.15.1`, `A.2.1`, `F.6` | Govern the attribution of contributions at the scale claimed and independent admission of performed development and transfer Work. The obtaining A.13 assignment remains part of actual-performer admission; expose separate assignment and F.6 references when precise assignment-bound attribution is consumed. Completion of either Work occurrence does not establish a post-intervention capability or actual capability change. |
 | `A.3.4`, `A.6.RCD` | Govern an independently identified actual Transformation and the obtaining direct Work-to-change predicate or supported local claim needed when development Work is said to have caused that change. Keep Work and Transformation separate until that relation is supported. Return the missing predicate or governing condition, missing case evidence, or supported negative/inapplicable result according to which requirement failed. |
 | `A.19`, `C.2.1`, `A.10`, `B.3` | Govern comparison of declared measures, capability statements, and the evidence, ordinary reliance, or assurance relations that support their use. These epistemes and relations are not the holder's actual ability, an actual Transformation, or a causal Work-to-change claim. |
 | `E.22` | Frames the capability or transfer evaluation when that question needs an explicit evaluation use. |
 | `E.23` | Supplies the general improvement boundary and routes here when capability development for named Work is the live question. |
-| `E.23.CAE` | Supplies an observation-qualified differential and candidate routes when apparent loss or failed transfer remains ambiguous. Capability development enters this pattern only after a separate applicable steering or choice result selects it. |
+| `E.23.CAE` | Supplies an observation-qualified differential and candidate routes when apparent loss or failed transfer remains ambiguous. Use the finding here when an applicable instruction already selects capability development for that condition or a participant with authority now chooses it. The finding establishes the observed condition. |
 | `C.32.MWA` | Supplies a practice-architecture result only when the target-practice Method architecture must first be recovered or compared. |
 | `C.36` | Governs distributed cultural generation, transmission, recognition, selection, retention, and loss; use `A.2.2` for a capability claim about an independently admitted population holder System. |
 | `E.13` | Tests proxy-to-value alignment when attendance, scores, credentials, or another visible measure begins to replace the intended capability and transfer result. |

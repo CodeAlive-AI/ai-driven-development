@@ -60,7 +60,7 @@ Choose people able to understand the context and make the relevant judgement. Pr
 
 Provide a way to disclose and handle a consequential conflict of interest. The challenged moderator, their close collaborator or an opposing party in the dispute may have useful evidence while being unsuitable to decide the case. Identify a replacement or an agreed external route under CB.13.
 
-Keep the process small enough to operate. A small group may need two named contacts and an agreed alternate. A large or high-consequence setting may require trained staff and a more formal arrangement. If no adequate route exists for the claimed level of protection or review, change that promise and obtain the missing provision before relying on it.
+Keep the process small enough to operate. A small group may need two named contacts and an agreed alternate. A large or high-consequence setting may require trained staff and a more formal arrangement. If no adequate route exists for the claimed level of protection or review, tell participants which cases the available route can handle. Obtain the missing provision or an authorised change to the arrangement on which participants rely.
 
 #### CB.8:4.3 - Establish what happened and what needs action now
 
@@ -197,7 +197,7 @@ Recognising a possible participation difficulty can be quick. The evidence, hear
 
 Rules become instructions people can use, and an incident can end with a specific correction or supported restriction. A mistaken decision can be repaired without abandoning a useful expectation. Useful disagreement can continue while harmful conduct receives an effective response.
 
-Handling and review require time, judgement and protection of sensitive information. A community that cannot supply them must narrow its promise or obtain the missing service. More elaborate procedure is worthwhile only where it improves the relevant decision and participation.
+Handling and review require time, judgement and protection of sensitive information. If provision falls short, tell people which protection or review remains available and who is responsible for pending cases. Use the agreed review terms to settle any proposed change to an outstanding case. More elaborate procedure is worthwhile only where it improves the relevant decision and participation.
 
 ### CB.8:10 - Rationale
 

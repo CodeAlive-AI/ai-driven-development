@@ -204,8 +204,8 @@ The set examples make existence easy to see. Other choices of objects and allowe
 - Each map has a domain, codomain and meaning; its direction matches the required operation.
 - The permitted maps and their preservation conditions are stated.
 - Fixed objects are separated from the allowed varying instances of use.
-- The universal property identifies the supplied data, the comparison map for every allowed instance, its equations and why uniqueness is wanted.
-- A construction or applicable existence result supplies the object; a claimed construction has its existence and uniqueness arguments.
+- When specifying a universal property, identify the supplied data, the comparison map for each allowed instance, its equations and the role of uniqueness.
+- When an object is claimed, supply it by construction or an applicable existence result and establish the mapping property claimed for it. For a question about whether it exists, a proof of obstruction in the specified setting can complete the answer. A commission to distinguish two requirements can be met by the operation that separates them.
 - A changed requirement is reflected in the construction or its admissible maps.
 - Any computational or subject use obtains the additional operations and premises it needs.
 

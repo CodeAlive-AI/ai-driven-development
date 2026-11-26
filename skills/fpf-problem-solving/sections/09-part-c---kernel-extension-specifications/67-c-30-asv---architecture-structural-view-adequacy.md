@@ -8,7 +8,7 @@
 
 Use this pattern when you have a structural description of one selected architecture-relevant `U.Structure` and need to decide whether that same description is also a `U.View` under one viewpoint.
 
-In ordinary prose, name the described holon or `ArchitectureRelation` when known, the selected structure, the smallest useful structure-kind set, any qualifier that changes interpretation, and the next architecture move. If one or two sentences make those values clear, stop.
+Name the described holon or `ArchitectureRelation` when known and the structures whose relations matter to the audience. A question about information lost in a diagram can end with the consequential omission. A grounded dependency map can answer an architecture question even if its author is unknown. To assess a designer’s own work, recover which relations were supplied by the brief or the extraction tool and which the designer selected, discovered or justified. To establish that the description conforms to a particular viewpoint, apply its coverage and omission rules under §4.1 and report the outcome.
 
 For example: “The failover diagram describes runtime-interaction and control structures, but it hides the failover relation. Recover that relation before relying on the diagram to decide whether failover works.” This is a usable triage result. An adequate sentence can be retained, compared, or handed on. Use `ArchitectureStructureKindTriage@Project` when its fields help that work.
 
@@ -200,7 +200,7 @@ ArchitectureStructureKindRef ::= one of {
 
 The first group is the seed classifier set for ordinary architecture structural-view use. `SecurityTrustBoundaryStructure`, `WorkMethodStructure`, `AllocationResponsibilityStructure`, `EvidenceAssuranceStructure`, and `ScaleEvolutionStructure` are classifier values over selected `U.Structure` references, not new root kinds. ASV may use them to name the selected architecture-relevant structure, but their full semantics stay in the named security, work and method, allocation-responsibility, evidence and assurance, scale, characterization, or mathematical-lens patterns.
 
-Do not enumerate structure kinds by default. Choose the smallest useful structure-kind set that changes the next architecture move. If no structure kind changes action, keep the phrase as ordinary recognition wording or a source note. This prevents using `ArchitectureStructureKindRef` as an audit checklist.
+Select the structure kinds by the distinction the recipient needs to explain or act on. For a claim about their interaction, establish which connections make them interact under compatible conditions. One view can describe a selected interaction structure that connects several systems or practices. When the contributing views describe different selected structures, relate their findings through C.30.AD:4.3. Ordinary names suffice where identifying a specific `ArchitectureStructureKindRef` would add nothing to the result.
 
 `OtherDeclaredStructureKind` is admissible only when the local text names:
 
@@ -360,7 +360,7 @@ C.30.ASV covers the description episteme's identity, selected architecture-relev
 
 #### C.30.ASV:4.5 - Initial architecture structure kinds and view records
 
-The initial set is a seed for first architecture moves. Use the table to choose one structure kind under consideration and the applicable pattern for any non-ASV claim.
+Use the table to find a structure kind that bears on the question. When the explanation needs several structures, establish their contribution and correspondence. Follow a further pattern where its subject claim is needed.
 
 | Seed structure kind | Structural view | Structure-specific content to recover as needed | First boundary |
 | --- | --- | --- | --- |
@@ -635,7 +635,7 @@ Changed use alone leaves fixed `<E,P>` conformance unchanged; unrelated structur
 
 #### C.30.ASV:4.8 - Worked slices
 
-**Runtime degradation.** A team says, "The architecture is fine, but incidents happen when failover starts." The first architecture move is to recover runtime interaction, control relation, failover relation, placement, and evidence-assurance structures before treating a dashboard or deployment diagram as proof:
+**Runtime degradation.** A team wants to explain why service sometimes becomes unavailable during failover. It follows the promised service across the handover and asks which participants can still serve the same request with the required state. The view below is useful where runtime interactions, control, placement and the available observations can distinguish rival accounts. An account of an actual outage also needs grounds that identify the conditions on that occasion.
 
 ```text
 Runtime degradation slice:
@@ -656,7 +656,7 @@ Runtime degradation slice:
 
 Use `C.24` when a fixed action or option needs budgeted tool-call planning or replanning. Use `A.15.1` for Work and identify any call-graph structure under its applicable pattern. Keep those claims and uses separate from the architecture structural-view claim.
 
-**CPS or plant architecture.** A plant drawing, P&ID-like publication form, LCA sketch, or safety-case view is not the plant architecture by itself. First recovery can require:
+**CPS or plant architecture.** Suppose an engineer must explain how separation of plant sections can be maintained during a control change. Select the paths that could connect the sections and the conditions under which the control can operate them. The views below illustrate what may be needed when a drawing omits one of those relations.
 
 ```text
 CPS and plant architecture first recovery:
@@ -677,10 +677,10 @@ correspondenceOrLossLine:
   record which separation, data, control-rate, placement, or evidence-reuse
   relation is preserved by the slice and which structure is hidden or lossy
 stop condition:
-  no P&ID, LCA diagram, or safety case is treated as the architecture
+  the account explains continuity or loss of the required separation under the permitted changes, or identifies the unresolved path that changes the answer
 ```
 
-**Chiplet or device architecture.** A packaging diagram or interconnect sketch may involve several structure kinds:
+**Chiplet or device architecture.** A team wants to know whether a replacement can meet the agreed interface and timing conditions in its assembled package. A packaging diagram or interconnect sketch may describe several relevant structures.
 
 ```text
 Chiplet and device architecture first recovery:
@@ -699,11 +699,11 @@ correspondenceOrLossLine:
   record the preserved relation among interconnect, physical package,
   interface, and placement, plus any benchmark or packaging-view loss
 stop condition:
-  no packaging diagram or benchmark is treated as performance, safety,
-  evidence, or gate proof by appearance
+  show whether a permitted replacement preserves the required interface and timing in the assembled package,
+  or identify a missing path or condition that could change that conclusion
 ```
 
-**Organization or operating-model architecture.** An org chart or Work-Method diagram may carry several architecture-relevant claims. Recover the ones needed by the decision, distinguishing Systems, system-role classifications and assignments, enactor and responsibility relations, any claimed Work, information and evidence. The following slice illustrates their combination; it is not a requirement to establish every claim for a question about one relation:
+**Organization or operating-model architecture.** Suppose colleagues need to explain how an approved handover keeps a service available when participants change. Follow the work that the recipient needs across the handover. Identify which responsibility, enactor, information and evidence relations account for that continuity. A question about one assignment can use just its relevant relations.
 
 ```text
 Organization and operating-model architecture first recovery:
@@ -726,8 +726,8 @@ correspondenceOrLossLine:
   information, and evidence structures,
   plus any org-chart or work-method-diagram loss
 stop condition:
-  no org chart or work-method diagram is treated as the architecture, decision,
-  evidence sufficiency, or assurance verdict
+  explain how the next participant can continue the required work under the permitted changes and why the relevant connections endure,
+  or state which missing connection leaves that explanation open
 ```
 
 **Evidence reuse across product variants.** A certification or test package reused across module variants may be architecture-relevant as an evidence-and-assurance structure view, but it is not an assurance verdict:
@@ -774,7 +774,7 @@ Organization service architecture first recovery:
 ```text
 AI-agent architecture first recovery:
   RuntimeInteractionStructure:
-    model-tool-memory-planner-evaluator-human topology
+    interactions among the model, tools, memory, planner, evaluator and any other participants in the configuration under study
   InformationDataStructure:
     memory scopes, data custody, provenance, retention,
     context-window relation and source-return relation
@@ -785,7 +785,7 @@ AI-agent architecture first recovery:
   ModuleInterfaceStructure:
     tool specs, API specs, and interface specs and substitutability limits
   EvidenceAssuranceStructure:
-    eval harness, human approval, evidence decay, incident feedback
+    evaluation results, any approval required for this use, evidence decay, incident feedback
 admissibleArchitectureMove:
   split runtime interaction, information, security boundary, module-interface, and evidence-assurance claims before relying on the diagram
 correspondenceOrLossLine:
@@ -801,9 +801,11 @@ stop condition:
   ASV contains only the structural-view record; evidence sufficiency, assurance, gate, autonomy, and tool-call authority claims use their applicable patterns
 ```
 
+A catalogue team might entrust a service with publishing entries once specified checks pass. A different agreement can reserve the publication decision to the collections editor, or require decisions by two collections acting jointly. Recover the governing terms and the acts they require before crediting a participant with admission. A permitted publication can still be awaiting execution.
+
 Structural AI-agent security is architecture structure when these structure kinds change the next architecture move. When the claim is instead about latent representation, decoding, or effect adequacy, keep the phrase as a reduced-use source cue and use the applicable representation, decoding, or effect-adequacy pattern.
 
-**Generated code-agent relation graph.** A probe output can supply a diagnostic description or representation. To claim an architecture structural view, establish its description identity, selected-structure subject and E.17.0 conformance. Recover relation meanings and the source basis for the claims being made; distinguish observed, inferred or unknown relations and unexplored regions where that distinction changes the use. Add a source-return condition when hidden distinctions matter. Claims about an agent's internal belief or the safety of a code change need their own grounds.
+**Generated code-agent relation graph.** A probe output can supply a diagnostic description or representation. To claim an architecture structural view, establish its description identity, selected-structure subject and E.17.0 conformance. Recover relation meanings and the source basis for the claims being made. Distinguish observed, inferred or unknown relations and unexplored regions where that distinction changes the use. If the extractor found calls and the designer identified a missing dependency on shared data, the completed map can support a change review. The designer’s contribution is the dependency they identified and supported. Verifying supplied edges is a different contribution. Add a source-return condition when hidden distinctions matter. Claims about an agent's internal belief or the safety of a code change need their own grounds.
 
 **Neural-network block replacement.** For a neural-network modification, such as substituting an attention block or changing MoE path selection, recover which selected structure or relation changes and use `C.30` for its architecture relevance. Identify flow, module-interface, preserved or lost structure, characteristic and source-use claims when they matter to that change. Establish any separate decision or evidence conclusion under its own rule; a modification need not assert every one of these claims.
 

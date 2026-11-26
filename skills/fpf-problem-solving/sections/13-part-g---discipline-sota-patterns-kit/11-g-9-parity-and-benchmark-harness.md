@@ -4,11 +4,11 @@
 
 ### G.9:0 — Use this when
 
-- rival method families, method sets, or adaptation paths must be compared under one declared baseline set and freshness window
+- the recipient needs a repeatable comparison of specified alternatives or of results about one subject, whether the rivals are method families, adaptation paths or other arrangements admitted by the comparison specification
 - you need parity to publish one reproducible report rather than one opaque benchmark score
 - downstream selection must recover comparator, normalization, bridge, and evidence pins without relying on one hidden scoring sheet
 
-**First move.** State whether the comparison concerns exact targets or results about one subject, then fix the baseline, comparison rule and windows in one plan edition. Use A.19.CPM directly for a bounded comparison that needs no reproducible parity report; use this harness when the report and its replay basis are required.
+**First move.** Ask what the recipient will decide or explain from this comparison. Identify what competes, what each alternative includes, and which differences the recipient needs the comparison to reveal. Use an applicable comparison rule when one is given. When designing one, derive the rule and common conditions under :4.2. A.19.CPM suffices for a bounded comparison. Use G.9 when the recipient needs a report whose comparison can be reproduced.
 
 #### G.9:0.1 — What goes wrong if missed
 
@@ -135,7 +135,7 @@ ParityPlan := ⟨
   UNM_id?, NormalizationMethodId[]?, NormalizationMethodInstanceId[]?, // when “normalize, then compare” is required (ids only; semantics come from CN‑Spec / UNM)
   EpsilonDominance?,                       // optional ε-front thinning (ε≥0; id/param; pinned when used)
   PortfolioMode?, DominanceRegime?,         // cite each when the operation uses it, explicitly or through its governing default
-  BaselineSet,                            // exact method-family or generator-family targets (ids; notation-independent)
+  BaselineSet,                            // exact alternatives serving as the baseline, under their existing kinds and applicable editions
   BaselineBindingRef,                      // evidence-backed baseline-set reference that says what counts as baseline
   FreshnessWindows,
   CNSpecRef.edition, CGSpecRef.edition, ComparatorSpecRef.edition, // edition-pinned refs
@@ -158,7 +158,7 @@ Exactly one subject branch is present. Use `entityOfConcernRef` when the report 
 
 For example, a comparison of `<ThresholdTrendReview-local, R3>` and `<SpectralResidualReview-local, R2>` puts those two row refs in `targetRefs[]`; the plan may explicitly use the same two refs as its `BaselineSet`. A comparison of their results for `Pump-P17` instead puts `Pump-P17` in `entityOfConcernRef`, leaves `targetRefs[]` absent, and uses `BaselineBindingRef` to say how the two method rows supply results about that pump.
 
-`BaselineSet` names the alternatives treated as the comparison baseline; it supplies `targetRefs[]` only when the plan explicitly says that the same exact refs serve both purposes. Otherwise the subject and baseline remain separate, and `BaselineBindingRef` records how that baseline applies to the named subject.
+`BaselineSet` names the alternatives whose results provide the baseline. Keep their existing kinds. A reference identifies the applicable edition or condition when a change would affect the comparison. If the same exact alternatives are also the objects being compared, the same refs may occur in `targetRefs[]`. Otherwise `BaselineBindingRef` explains how the baseline bears on the named subject. Two service arrangements may use the same method with different allocations of work. For a comparison of those arrangements, an exact reference to the current arrangement can provide the baseline. A G.5 method-family baseline retains its exact family-row reference.
 
 These values determine what is compared and when the parity claim is usable; do not add `ParityContextId`. If the plan relates expressions with distinct source-local meanings, first recover the exact F.17 cells and establish the required F.9 relation. A shared label, source note, or generic context identifier does not establish comparability.
 
@@ -204,14 +204,16 @@ The report carries the `ParityPlanRef` and echoes the `BaselineBindingRef` used 
 
 #### G.9:4.2 — Parity planning (one `U.WorkPlan`)
 
-Planning records the conditions needed to repeat and interpret the parity run:
+Start with the conclusion the report must support. Comparing how two methods perform on the same work holds that work fixed. Comparing the arrangements for providing a service can require following the different work, assistance and outcomes each arrangement produces under the same external conditions. Decide how far to follow the parts and their interaction by asking where a difference could change the recipient’s judgement. The time spent on one operation may settle a question about that operation. It may leave waiting between operations, or the work of another participant, decisive for the service as a whole.
 
-1. **Fix the baseline set.** Choose the exact `BaselineSet` (MethodFamilies, and optionally GeneratorFamilies) used as the comparison baseline. When SoS-log or source-maturity values change baseline eligibility or interpretation, cite `SoS‑LOGBundleId?` and the source-maturity ids by reference; acceptance-gate thresholds remain in `G.4` Acceptance.
+If the comparison basis is yours to design, try keeping the proposed benchmark answers the same while varying an allowed method, use or dependence between parts. Could the recipient then need a different conclusion or a different explanation for it? Bring the missing distinction into the task, comparator or grounds for transfer. A known relation may already establish the answer throughout the intended range. If the task and comparator were supplied, check their applicability and use them. Record the conditions that make the resulting comparison repeatable:
+
+1. **Fix the baseline set.** Choose the exact alternatives whose results will serve as the baseline, and justify their relevance to the comparison. Keep the actual kind of each alternative. When a G.5 family supplies a baseline, identify its exact method-family or generator-family row edition. If SoS-log or source-maturity values change its eligibility or interpretation, cite `SoS‑LOGBundleId?` and the source-maturity ids. G.4 Acceptance governs any applicable acceptance thresholds.
 2. **Bind subject, scope, and evaluation window.** Choose exactly one subject branch: one `entityOfConcernRef`, or exact `targetRefs[]` under their existing kinds and editions. For G.5 families, use `MethodFamilyRowRef` or `GeneratorFamilyRowRef`, not a bare lineage id. Record the `ReferencePlane`, `ClaimScope` and `EvaluationWindow`. An empirical claim identifies its `groundingHolonRef`. For a comparison of two proven operation-count bounds on a formal domain, identify the bounds, their proofs and the domain. A computer that stores a proof supplies no empirical premise merely by storing it.
 3. **Define baseline-set reference.** Declare what counts as the baseline and how it applies to the selected subject in `BaselineBindingRef` (for example, through an EvidenceGraph path slice or an upstream shipped package or publication-record id). If `BaselineSet` also supplies the exact compared targets, say so and use the same refs by value; otherwise keep baseline and subject refs distinct.
-4. **Equalise window (and budget, if pinned).** Declare a single `FreshnessWindows` and apply it across all baselines; if `Budgeting` is used/pinned, it MUST be shared/pinned across baselines as well.
+4. **Set common comparison conditions.** Apply one declared `FreshnessWindows` policy to all baselines. If the commission compares alternatives under a common resource allowance, pin that allowance in `Budgeting`. Preserve any difference in staffing, expenditure or assistance that defines the alternatives being compared. Under the same external demand, these differences and their consequences can be precisely what the recipient needs to understand.
 
-    When specialization is part of the parity claim, the same plan should also hold constant the declared task family or target scope cut, the work-measure threshold target, adaptation budget, prior exposure declaration, and freshness window. Identify what each candidate performed and what assistance it had. To compare the candidates' own acquisition, account for differences in support that could explain the result. If the arrangements themselves are being compared, retain each arrangement as the bearer of its performance. When transfer, retention, later efficiency, downside or corridor entry matters, keep the observations and the baseline supporting that claim under C.22.1:8.
+    For a comparison of acquisition under equal training opportunities, hold the task family, threshold, adaptation budget, prior exposure and freshness conditions fixed as the claim requires. Identify what each candidate performed and what assistance it had. For a comparison of complete arrangements, record the training, staffing and support included in each and assess what each can deliver in the intended conditions. When transfer, retention, later efficiency, downside or corridor entry matters, keep the observations and baseline supporting that claim under C.22.1:8.
 
 5. **Pin governance, CSLC comparability and admissibility references, and comparator references.** `CNSpecRef`, `CGSpecRef`, and `ComparatorSpecRef` are referenced with explicit edition pins.
 6. **Pin measurement/comparator definitions (conditional).** Where parity depends on mode‑specific definition records (e.g., DHC/QD/OEE), pin the relevant definition ids/editions/policies. The minimum required pins are declared by the applicable `Extensions` blocks (e.g., `G.9:Ext.DHCParityPins`, `G.9:Ext.QDArchiveParity`, `G.9:Ext.OEEParity`) and the referenced records they cite.
@@ -233,6 +235,8 @@ For one run under the pinned plan, follow these steps:
 
 3. **Record the comparability mapping when used.** If `UNM_id?`, `NormalizationMethodId[]?`, or `NormalizationMethodInstanceId[]?` was declared, echo it in `ParityReport` or its explicit pins delta. Record the ids and any scoped notes required by the cited specification in the audit pins and SCR; cite the applicable `PathId` values.
 4. **Publish trace.** Emit `ParityReport` with the `ParityPlanRef`, its `BaselineBindingRef`, conditional selector input refs, EvidenceGraph citations, and all active edition and policy-id pins, so the run can be checked and run again.
+
+   Give the recipient the conclusion the report supports about the named methods, work or arrangements. When practice extends beyond the benchmark tasks, explain the relation that carries the conclusion to that practice, or delimit the result to the conditions compared. The distinction matters empirically: a systematic review of language-model benchmarks found widespread gaps in how their tasks and scores were related to the capabilities they claimed to measure. [Bean et al., 2025](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1967e0fc3aa6cbbace562f5cb8e3954e-Abstract-Datasets_and_Benchmarks_Track.html)
 5. **Emit telemetry for refresh when produced.** Publish the telemetry pins or events used for refresh. Treat the values as report-only unless a CAL policy promotes them and its ID is recorded.
 
 #### G.9:4.3a — Worked parity slice
@@ -262,12 +266,12 @@ ParityPinSet = [PumpCN-E2, PumpCG-E4, PumpTriageComparator-E3, PumpVibrationMeas
 EvidenceGraphId = PumpTriageEvidence-E5
 PathId[] = [PumpReadings-P7, ComparatorRun-P3]
 PathSliceId = PumpParitySlice-S2
-expected selector result = unordered Shortlist
+requested selector output = unordered Shortlist if selection is supported
 ```
 
 The plan explicitly says that `BaselineSet` and `targetRefs[]` contain the same two row refs. `EvaluationWindow` bounds the observations and results included in the comparison. `FreshnessWindows` asks a different question at run or reuse time: whether each required input and evidence path is still recent enough to rely on.
 
-A report from this run carries `parityPlanRef=<PumpTriageParity, E1>`, `BaselineBindingRef=PumpTriageBaselineBinding-E1`, the same evidence path, and the unordered `Shortlist`; it does not invent a scalar winner.
+For this example the team requests an unordered shortlist. The comparison report carries `parityPlanRef=<PumpTriageParity, E1>`, `BaselineBindingRef=PumpTriageBaselineBinding-E1` and the evidence path. Applying G.5 determines whether a shortlist is warranted and which rows qualify. Naming the requested form in the plan settles neither question. If the commission ends with comparing these rows, deliver the established comparison relation.
 
 **Conditional specialization case.** Loop-engineering parity may add further pins after the ordinary comparison boundary above is complete. An evaluation program, benchmark script, or dashboard is part of the evaluation or comparison procedure; it is not the Characteristic being improved.
 
@@ -451,8 +455,10 @@ The extensions specify only the pins, references, policy IDs, triggers and links
 **CC‑G9‑CoreRef (normative).**
 G.9 conforms only if it satisfies the **effective** set of `CC‑GCORE‑*` declared in **G.9:4.0 GCoreLinkageManifest** (including trigger typing, Default Governing Definition Index links, and P2W split).
 
-1. **CC‑G9.1 — Exact comparison boundary, equal windows (and budgets), and pinned spec editions (local).**
-   A `ParityPlanRef = <ParityPlanId, planEdition>` **SHALL** resolve one immutable plan edition. That ParityPlan **SHALL** choose exactly one subject branch: one `EntityOfConcernRef`, or `targetRefs[]` under their existing kinds and editions. It **SHALL** name `GroundingHolonRef` when empirical grounding is used. It **SHALL** also name `ReferencePlane`, `ClaimScope`, `EvaluationWindow`, baseline set and binding, and evidence refs, and **SHALL** declare a single `FreshnessWindows` shared across baselines. `BaselineSet` supplies the target refs only when the plan explicitly identifies the same refs in both places; otherwise `BaselineBindingRef` relates the separate baseline to the named subject. If `Budgeting` is used and pinned, it **SHALL** be shared across baselines as well. `ParityPinSet` **SHALL** include the editions required by the referenced specification, comparator, and any measurement or normalization method in use (at minimum `CNSpecRef.edition`, `CGSpecRef.edition`, `ComparatorSpecRef.edition`).
+1. **CC‑G9.1 — Exact comparison boundary, common freshness rules, applicable budget and pinned spec editions (local).**
+   A `ParityPlanRef = <ParityPlanId, planEdition>` **SHALL** resolve one immutable plan edition. That ParityPlan **SHALL** choose exactly one subject branch: one `EntityOfConcernRef`, or `targetRefs[]` under their existing kinds and editions. It **SHALL** name `GroundingHolonRef` when empirical grounding is used. It **SHALL** also name `ReferencePlane`, `ClaimScope`, `EvaluationWindow`, baseline set and binding, and evidence refs, and **SHALL** declare a single `FreshnessWindows` shared across baselines. `BaselineSet` supplies the target refs only when the plan explicitly identifies the same refs in both places; otherwise `BaselineBindingRef` relates the separate baseline to the named subject. When the commission specifies a common resource allowance, the plan **SHALL** pin it in `Budgeting` and apply it across the baselines. The plan **SHALL** preserve resources or support constitutive of each alternative when the arrangements themselves are compared. `ParityPinSet` **SHALL** include the editions required by the referenced specification, comparator, and any measurement or normalization method in use (at minimum `CNSpecRef.edition`, `CGSpecRef.edition`, `ComparatorSpecRef.edition`).
+
+   When designing a plan, establish how the chosen tasks, baseline and comparison rule bear on the conclusion the recipient needs. Where a prescribed plan answers a narrower question, identify which conclusion can already be delivered and the grounds still needed for the intended use.
    If the parity run depends on planned slot fillings, its exact `ParityPlan` WorkPlan **SHALL** carry the relevant declaration-local A.15.3 rows in `PlannedFillingRows[]` (nil-elision when not applicable). Each row resolves only inside that WorkPlan and has no independent reference, kind, or edition.
 
 2. **CC‑G9.2 — Mode‑specific definition pins are declared via Extensions (local; conditional).**
@@ -557,7 +563,7 @@ When fields differ, the report names the applicable `declaredCausalityLadderBrid
 - The `C.29` mathematical-lens account is a cited input to parity. `G.9` governs the benchmark report and conclusion, and `G.5` governs any selector-facing output declaration. Parity-measure admissibility comes from the cited `CG‑Spec`/`MM‑CHR`.
 - C.29 application: for an under-lensed or overread parity input, cite the applicable `C.29` output for the stated use: `NoMathLensUseNeeded`, `MathLensUse.LensCandidateNote`, `MathLensUse.OneLine`, `MathLensUse.MiniCard`, `MathLensUse.FullCard`, or `NeighborGoverningPatternNote`. Use the least costly adequate output that changes the next admissible parity use; full-card work is only required when the live parity or benchmark claim needs it.
 
-**Builds on:** `G.Core`, `G.5`, `G.6`, `G.4`, `F.15`, `E.17`, `E.18`, `A.21`, `F.17`, `E.5.2`, `E.10`.
+**Builds on:** `G.Core`, `G.6`, `F.15`, `E.17`, `E.18`, `A.21`, `F.17`, `E.5.2`, `E.10`. Use `G.5` when the commission includes selection and `G.4` when the comparison consumes an acceptance rule.
 **Publishes to:** **UTS** (plan/report ids), **G.11** (refresh wiring), **G.10** (shipping publication form; parity records are cited records).
 **Uses:** **G.0**, **A.19**, `A.2.6` for exact `U.ClaimScope`, **F.9**, and `C.28` when parity compares causal methods or causal-use claims.
 **Uses (optional, via Extensions):** **G.7**, **C.18 and C.19** (QD/OEE wiring), **C.23** (SoS‑LOG narration and failure‑policy pins).
@@ -565,7 +571,7 @@ When fields differ, the report names the applicable `declaredCausalityLadderBrid
 ### G.9:11 — Working reading checks
 
 - If two baselines are being compared under different freshness windows, comparator editions, or silent normalization rules, this pattern has not yet been satisfied.
-- If parity cannot tell the reader what was held constant, what remained telemetry, and what crossings or penalties were active, the report is not yet usable.
+- Can a recipient tell what the report establishes about the compared subjects, which conditions were held constant, and on what grounds a conclusion would apply to the use in question?
 - If a scalar winner is being claimed where only a selected set or partial order is CSLC-admissible, parity is overclaiming and should publish the CSLC-admissible outcome shape instead.
 
 ### G.9:End

@@ -12,7 +12,7 @@ The broader work is developing Methods for useful action. C.39:4 supplies the ge
 
 The gain is that later practitioners can perform, combine and adapt the Methods from the public framework without reconstructing essential connections from private development material. A connected account need not assert one composite Method. The number of patterns or levels does not establish that identity.
 
-**First useful move.** Take one recognizable situation and attempt its next consequential move using the public descriptions offered for it. Locate the first connection the reader must supply: a meaning conversion, a choice, a joint condition, enabling support, a return after failure or a change across Method scales. Develop that connection through C.39:4.2–4.6 before deciding whether another pattern or a better public explanation is needed.
+**First useful move.** Start with the practice the recipient needs to understand, carry out or design. What result must its explanation let that person obtain, and which choices does the work leave to them? Identify the practice at issue. The Method for designing a practice can have different constituent Methods from the one its practitioners perform. Where composition matters, establish what is part of what for each relevant kind of whole. Does the explanation need a rule that holds at each scale, an inference from one scale to another, or the result that the constituents can produce together? At each scale choose what the model must distinguish for this reader’s work. Use an available account or attempt to establish a needed relation. If it settles one step, follow that contribution back to the whole entrusted work. Develop the missing connection through C.39:4.2–4.6 and place it where the practitioner needs it.
 
 An adequate public Method can be used directly. Use C.39 alone when the result is an ordinary practical way or description with no framework-publication need. A private one-off solution need not become a maintained pattern. Repair discovery when the complete explanation already exists and only its entry is missing. E.4.CM requires neither a new primitive operation nor a new framework for each useful composition. C.32.MWA supplies a related architecture account when the practical decision concerns Methods together with performance, support and development.
 
@@ -41,7 +41,7 @@ Apply C.39's general construction and explanation to the framework reader's recu
 
 #### E.4.CM:4.1 - Recover the working question before assigning parts
 
-Start with the practitioner, working situation, sought result and conditions that make the result useful. Recover a worked attempt, a failure or a sufficiently explicit proposed case. Keep the original need when exploring a smaller attainable result. If the difficulty is not yet named, follow an ordinary result to its receiving use with B.5.PI: a document can have been delivered while its recipient still cannot continue the work.
+Start with the practitioner, working situation, sought result and conditions that make the result useful. Recover how the practice is supposed to produce that result. A general argument, an actual attempt, a failure or the proposed conditions can supply the grounds. Select the material for what it can establish. Keep the original need when exploring a smaller attainable result. If the difficulty is not yet named, follow an ordinary result to its receiving use with B.5.PI: a document can have been delivered while its recipient still cannot continue the work.
 
 Who requested the result, what did the performer agree to supply, and who will use or accept it? Distinguish a proposed change of product or date from the revised undertaking the parties actually agreed. Where the conclusion depends on a handover, establish the act the agreement calls for and what shows that it occurred. Depositing an identified report can finish an order to deliver it. If the order requires acceptance, identify who can accept it and which act has that meaning under the agreement. An approved result from a supplier can finish an order to obtain it. When the reader must devise the way of working, identify the decisions they must make with the information and help available to them. When their assignment is to find out what result is needed, begin with the actions of its prospective users. If two interpretations would change the promised action, find out who can settle the difference. If both support the same action and its required justification, give that answer while the other difference remains open.
 
@@ -152,7 +152,7 @@ A practical-use card or long mantra can remind a reader how to use one composite
 
 Discover useful combinations from recurring situations as well as from named patterns. Follow a result that readers repeatedly struggle to use, or a connection they repeatedly invent. Compare the methods, rules and worked constructions supplied by independently developed patterns and earlier treatments. Reuse a complete available construction; where none exists, develop the missing joins through §§4.1–4.6. A combination need not have been assembled in one source before the author can construct it. Conversely, co-occurrence in a source or a long list of relevant patterns does not establish a useful combination.
 
-Do not require every public Method to have a separate card. Start from a recognition problem that changes use. The short form may omit detail available in the explanation it points to; it must retain the conditions that determine the first move and when to stop.
+Choose a short form when it helps a reader recognize or perform the Method. A reminder can point to a full explanation available at the moment of use. A separately issued assignment must itself preserve the work entrusted to its reader, the choices it leaves open and the information available when those choices are made.
 
 When a supplier or receiving condition changes, return to the affected connection and encompassing uses. Separate permitted Method variation from a different Method with A.3.1 when that question matters. B.1.5.RS governs replacing a constituent; E.19 governs a corresponding pattern-edition change. Retain the explanation's useful conditions even when a shorter public form is desired.
 
@@ -281,7 +281,7 @@ For a production result, ask:
 - Does the language keep Method identity separate from body allocation?
 - Can the reader identify where to return when a premise changes?
 
-When the promised use spans several patterns, challenge at least the material relation on which that use depends. Broaden a check when the dependency boundary is unknown, not merely because the language is large.
+When the promised use spans several patterns, follow the contributions the reader needs into the same receiving work. Establish their compatibility wherever that work depends on it. One argument may establish several connections. Where only one contribution has been checked, return its result and identify the connections still open. Broaden the inquiry when the dependency boundary is unknown.
 
 ##### E.4.CM:4.8.8 - Common Anti-Patterns and How to Avoid Them
 
@@ -425,7 +425,7 @@ An expert author can forget how much synthesis they supplied between references.
 - The receiving case exposes the choices entrusted to the practitioner, the grounds that extend across the claimed conditions and any further use that needs evidence.
 - Construction, fit for the receiving result and practical worth have proportionate grounds. Constituent, repertoire and whole-Method claims keep their own limits; necessary training, tools and support remain visible.
 - The need and its basis, nature of the proposal, consequential development decisions, relied-on content and each asserted consequence are connected to their grounds. Evidence concerns the described arrangement and intended use; a missing ground is supplied, the construction is revised or the dependent claim is narrowed.
-- A short entry preserves its first move and returns to the full explanation.
+- A short entry preserves the work entrusted to its reader. It gives or leads to the grounds needed when the reader must act, develop the explanation or design the Method.
 
 ### E.4.CM:8 - Common Anti-Patterns and How to Avoid Them
 

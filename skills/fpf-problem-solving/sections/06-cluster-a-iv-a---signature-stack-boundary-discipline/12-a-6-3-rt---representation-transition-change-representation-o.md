@@ -8,7 +8,7 @@
 
 Use this pattern when changing the representation language or the reasoning medium helps someone inspect, compare or calculate using the same material. A table shown in time order and the same table aligned by component can use one language while supporting different comparisons. Exporting the chosen table to another file can leave both the language and the reasoning medium unchanged.
 
-Start with the content that must survive and the action the new representation should support. The source can be givens, constraints and a partial construction while the answer is still unknown. Construct the target representation in the chosen medium. Compare it with the source and state what was preserved, foregrounded, rearranged, lost or newly suggested. Exact episteme identities are not prerequisites for this ordinary first result.
+Start with the content that must survive and the action the new representation should support. The source can be givens, constraints and a partial construction while the answer is still unknown. If a target representation already exists, check it against that use. Retain sufficient content and choices, and construct or revise what the commission calls for. Compare the target with the source and state what was preserved, foregrounded, rearranged, lost or newly suggested. Exact episteme identities are not prerequisites for this ordinary first result.
 
 Plain starting vocabulary:
 
@@ -24,7 +24,7 @@ Plain starting vocabulary:
 | `use and return` | What the target supports, what it does not support, and when and where to return to source material. |
 | `representation worker` | The person, team or system doing the conversion. A dated Work claim follows A.13 and independent A.15.1 admission; use F.6 only when precise assignment-bound attribution matters. Doing the conversion grants no authority over the represented claims. |
 
-**First useful move.** Name the content that must survive and the intended user action, choose the representation, make it, and compare it with the source. State the material preservation, loss and use conditions in a compact note. Add a rejected use or return condition only when it changes what the reader should do.
+**First useful move.** Identify the operation the user needs and the content it depends on. For a supplied target representation, compare it with its source for that operation. Choose or construct a representation when that decision or construction is part of the commission. State the material preservation, loss and conditions of use. Add a rejected use or return condition when it changes what the reader should do.
 
 **What goes wrong if missed.** A cleaner table, diagram, notation, or decoded rendering is treated as harmless formatting after it has hidden uncertainty, changed the concern, imported a new relation, weakened recoverability, or invited a stronger action than the source supports.
 
@@ -62,18 +62,18 @@ Common failures:
 
 #### A.6.3.RT:4.1 - Ordinary representation move
 
-Produce the useful target first:
+Work from the target the user needs. When a representation has already been supplied, compare it with the source and test the operation it is meant to support. Use the construction steps for the choices or repairs that the commission requires.
 
 1. Name the user action the new representation should help: compare, inspect, traverse, calculate, communicate or replay. Identify the user's familiarity with the notation when that changes what they can do with it.
 2. Point to the source material. Recover the givens, constraints and partial construction, including the claims, commitments, uncertainty and source references that must survive. Keep unknowns identifiable as unknowns.
-3. Choose a target representation and a medium in which the user can perform the intended operation. When the target is an expression in a representation language, identify the formation and interpretation conventions it needs. A familiar notation may suffice. For a physical arrangement or a learned representation, establish how the user can obtain a reading or make a comparison and what warrants using it for this inquiry.
-4. Make the smallest target that supports the action. Arrange its parts so they can be used together: for example, keep a shared element recognizable in two groupings, or align a sequence of signs with a temporal reference. Explain any meaning-bearing mark, position or timing whose interpretation is not already clear from the selected conventions. A.6.3.RT.OE develops this construction when the expression's parts must be prepared for the intended operation.
+3. Use the supplied target and medium when adequate, or choose a representation and a medium in which the user can perform the intended operation. When the target is an expression in a representation language, identify the formation and interpretation conventions it needs. A familiar notation may suffice. For a physical arrangement or a learned representation, establish how the user can obtain a reading or make a comparison and what warrants using it for this inquiry.
+4. Construct or repair the target where the present one leaves the action unsupported. Arrange its parts so they can be used together: for example, keep a shared element recognizable in two groupings, or align a sequence of signs with a temporal reference. Explain any meaning-bearing mark, position or timing whose interpretation is not already clear from the selected conventions. A.6.3.RT.OE develops this construction when the expression's parts must be prepared for the intended operation.
 5. Compare target and source. Mark what is preserved and foregrounded; what is rearranged, omitted or harder to recover; and which visible links or interpretations were added by the representation.
 6. Try the intended operation when a short trial can decide whether the representation is useful. Apply the relevant mathematical, physical or other subject Method. Use the result to judge or repair the representation.
 7. State the representation and reasoning-medium delta only as far as it changes use or blocks a likely overread.
 8. State the supported use. Add a non-admissible use or return condition when a source limitation, representation feature, observed misunderstanding or applicable risk gives a plausible reader a consequential reason to need it. Name the return destination when return is required.
 
-The first result is the target representation and its representation note. When work with the representation establishes a new claim, its construction, observation or argument supplies the grounds for that claim. Attribute preserved claims to the original givens and newly established claims to the work that supports them, even when both concern the same entity.
+A construction yields the target and its representation note. An assessment of a supplied target can end in the supported judgement about its use. When work with the representation establishes a new claim, its construction, observation or argument supplies the grounds for that claim. Attribute preserved claims to the original givens and newly established claims to the work that supports them, even when both concern the same entity.
 
 Choose another representation language when the current language cannot express a distinction that matters to the work. Developing new signs or formation rules is notational design. A.6.0 supports a reusable vocabulary and its laws, and A.6.1 the declaration of operations. Use the chosen conventions to construct the expression.
 
@@ -218,7 +218,7 @@ Check each target-side connective against the source or same-EntityOfConcern cor
 
 State which distinctions, inspection possibilities, uncertainty cues, or local qualifiers are lost, foregrounded, rearranged, or harder to recover. The target may remain useful under a reliability claim bounded by the source or with an explicitly narrowed admissible use. If the target is admissible only for a declared narrower use with source return, A.6.3.CSC is primary.
 
-If the target omits a condition, establish how the recipient is to interpret the omission. An extract that says nothing about joint operation may leave the reader to consult the source. A replacement model that expressly permits the settings of two controllers to be chosen independently can admit a combination the source ruled out, even when each controller still has exactly the same settings. Compare the permitted combinations for the same inquiry under B.5.MR. For a strict abstraction, establish a feasible source answer, show that every source answer remains permitted and identify an additional answer permitted by the replacement. When the target provides no answer to that inquiry, report the limit of the extract's use.
+If the target omits a condition, establish how the recipient is to interpret the omission. An extract that says nothing about joint operation may leave the reader to consult the source. A replacement model that expressly permits the settings of two controllers to be chosen independently can admit a combination the source ruled out, even when each controller still has exactly the same settings. Compare the permitted combinations for the same inquiry under B.5.MR. For a claim of strict abstraction, establish that the source admits at least one completion. Show how every admissible source completion, read in the replacement's terms for this inquiry, satisfies the replacement's assertions. Then identify an answer the replacement permits that no source completion can produce. Comparing the two lists of individual settings alone can miss a change in which settings may be used together. When the target provides no answer to that inquiry, report the limit of the extract's use.
 
 ##### A.6.3.RT:4.5.c - Decode-mediated entry
 
@@ -277,7 +277,7 @@ For the RT use, the source consists of the construction instructions and interme
 
 #### A.6.3.RT:5.1.b - Syllables against a hand-cycle reference
 
-A.6.3.RT.OE:5.3 prepares given syllable-duration assignments against a learned three-beat hand cycle with four pulses per beat. Arithmetic and rhythmic composition determine the six-pulse preparation and the phrase's ending at the third cycle boundary.
+In Nelson’s exercise A.6.3.RT.OE:5.3 pairs given syllable durations with a three-beat hand cycle of four pulses per beat. The exercise supplies a six-pulse preparation. The durations then put the phrase’s end at pulse 36, the third cycle boundary. If a performer is to choose the preparation, specifying only an ending at some cycle boundary leaves several possible entries.
 
 RT's representation note retains duration assignments, pulse constancy and cycle position, identifies coordination with the hand reference as the gain, and returns to those conditions when the ending no longer aligns. The utterance and gestures can both represent rhythmic content and realize rhythm. Fluency or learning requires observation when either is the question.
 

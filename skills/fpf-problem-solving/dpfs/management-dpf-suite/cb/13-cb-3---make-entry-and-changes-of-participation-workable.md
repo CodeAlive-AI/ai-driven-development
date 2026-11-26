@@ -95,7 +95,7 @@ Use OCE.6 when a real organisational appointment, resource allocation, permissio
 
 On return after absence, recover what has changed that affects the next action: the current material, contact, convention, access or responsibility. Supply a short update and a suitable next use. Do not require repeating unaffected orientation or explaining a private reason for absence. If the old contribution is no longer wanted or feasible, agree a smaller one or its end.
 
-When stepping back would leave a relied-on activity unsupported, arrange the handover or change the activity's promise. Permission to leave remains meaningful; continuity requires another feasible contribution, not an indefinite obligation on the departing person.
+When stepping back would leave a relied-on activity unsupported, the organiser checks who can take over and which commitments remain under the terms of participation. Permission to leave remains meaningful; continuity requires another feasible contribution, not an indefinite obligation on the departing person.
 
 #### CB.3:4.6 - Close on usable participation and revise locally
 
@@ -155,7 +155,7 @@ A workable entry or change of participation makes it possible to answer:
 | A reassuring message covers real exclusion or missing support | Change the response, access or protection condition behind the exclusion or missing support. |
 | Subject expertise is treated as organising competence | Prepare and observe the new responsibility with appropriate support. |
 | Returning members must repeat everything | Supply the changes that affect their next use. |
-| A volunteer can leave only after finding their own replacement | Put continuity work with the organiser and revise the unsupported promise. |
+| A volunteer can leave only after finding their own replacement | The organiser arranges cover for work still due or applies the agreed terms for its ending. |
 
 ### CB.3:9 - Consequences
 

@@ -123,7 +123,7 @@ The cost is explicit rule and example work before or alongside coding. Some tool
 
 ### SIE.7:10 - Rationale
 
-A semantic correspondence states a relation; an executable mapping states how source occurrences produce target claims under conditions. Making that extra structure explicit prevents implementation convenience from becoming a semantic decision and lets Data Engineering own execution without inheriting unstated SIE authority.
+A semantic correspondence states a relation; an executable mapping states how source occurrences produce target claims under conditions. Making that extra structure explicit gives the implementer a specification of the selected meaning and grounds for returning a gap. The undertaking determines who may choose or change that meaning.
 
 ### SIE.7:11 - SoTA-Echoing
 
@@ -146,6 +146,6 @@ Reopen when an input or target scheme changes, a correspondence/identity/composi
 - `SIE.4` supplies accepted correspondence premises; `SIE.5` and `SIE.6` supply identity and composition results when a rule relies on them.
 - `SIE.8` consumes rule behavior and implementation conditions to compare realization alternatives.
 - `SIE.9` exposes the rule outputs and error branches to the receiver.
-- `SIE.10` tests both specification semantics and implementation conformance. Data Engineering owns pipeline construction, operation, observability, reliability, and recovery.
+- `SIE.10` tests both specification semantics and implementation conformance. Data Engineering supplies methods for pipeline construction, operation, observability, reliability and recovery. Use the actual service arrangement to identify the responsible providers.
 
 ### SIE.7:End

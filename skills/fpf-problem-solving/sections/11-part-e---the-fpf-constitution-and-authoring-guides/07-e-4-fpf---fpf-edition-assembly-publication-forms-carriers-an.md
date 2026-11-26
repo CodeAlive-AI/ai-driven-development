@@ -8,9 +8,9 @@
 
 Use this pattern when an FPF steward, framework author, reviewer, or AI agent must assemble, expose, or evaluate one FPF edition and distinguish it from its publication units, forms, presentation carriers, access routes, and domain or local dependents.
 
-Primary `EntityOfConcern`: the scoped FPF edition (`FirstPrinciplesFrameworkEdition`) being assembled, exposed, or evaluated. The first useful output is a record for rebuilding that edition.
+The primary `EntityOfConcern` is the scoped `FirstPrinciplesFrameworkEdition`. For assembly, prepare the record needed to rebuild the edition. For exposure, establish which edition the reader can actually obtain and use. For an evaluation, identify the edition under judgement and the grounds the commissioned conclusion requires.
 
-It names the first-principles scope, selected Core patterns, recurring cross-domain problems and reusable solution moves, selected publication units, particular expressions and reusable forms, independently identified publication- or access-facing carriers with actual expression-bearing relations, access routes, edition relations, and the applicable whole-FPF quality result from `E.2.DA`.
+The rebuildability record names the first-principles scope, selected Core patterns, recurring cross-domain problems and reusable solution moves, selected publication units, particular expressions and reusable forms, independently identified publication- or access-facing carriers with actual expression-bearing relations, access routes, edition relations, and the applicable whole-FPF quality result from `E.2.DA`.
 
 Add a reference identifying the competing reading only when it passes the F.19:4 test: independent local ground, plausibility for the intended reader, a change in truth, understanding, or use, and the smallest clear correction.
 
@@ -113,7 +113,7 @@ Reopen this choice if the named family becomes such a Method, ceases to concern 
 
 Use this declaration as the sole list of selectable keys and their ordinary-entry or card forms when authoring, assembling, or validating the Readme. The Readme must return a reader whose question fits no example to the Table of Contents, another finding aid, or the direct patterns. Any additional coverage correction follows E.11.PFP:4.3.
 
-Four related questions can be recovered without a separate selectable entry for each: `CAPABILITY-DEVELOPMENT` is carried by `PRACTICE-ARCHITECTURE` and `IMPROVEMENT`; `COSTLY-ACTION` is carried by `OPTION-COMPARISON`; `DESCRIPTION-USE` is carried by `WORKING-DOCUMENTS`; and `DPF-AUTHORING` is carried by `SOTA-PORTFOLIO`.
+Four related questions can be recovered without a separate selectable entry for each. `PRACTICE-ARCHITECTURE` and `IMPROVEMENT` serve `CAPABILITY-DEVELOPMENT`. `OPTION-COMPARISON` serves `COSTLY-ACTION`, and `WORKING-DOCUMENTS` serves `DESCRIPTION-USE`. For `DPF-AUTHORING`, use E.4.DPF to develop the explanations the domain practitioner needs. The `SOTA-PORTFOLIO` entry contributes a comparison when that work depends on choosing among source traditions.
 
 `UNFAMILIAR-THEORY` connects recovering a construction and argument with transfer to the project's representation. `PHYSICAL-RESULT` connects physical modeling, mathematics, computation and realization, including returns when one contribution changes. Their mantras retain those dependencies while the direct patterns supply the operations.
 
@@ -141,7 +141,7 @@ These token ceilings are calibrated publication limits for this English FPF, not
 
 Reopen the smallest affected declaration row and consumer when a cold-reader replay loses a choice-changing distinction, a useful card cannot fit without copying direct-pattern apparatus, or either ceiling can be lowered without losing use value. The optional `@FPFReadme` support records may carry FPF links but do not define shared conformance.
 
-Create the FPF edition rebuildability record with this shape when FPF is being assembled, republished, exposed, or evaluated:
+For a commission to assemble or republish an FPF edition, create the rebuildability record below. When exposing or evaluating an edition that already exists, use its record for the identity, lineage or expression actually needed for the commissioned result.
 
 ```text
 FPFEditionRebuildabilityRecord:
@@ -171,7 +171,7 @@ Use E.24.PUB to distinguish each expression from the reusable form whose rules i
 
 A form-mediated expression or bearing claim retains its existential expression witness, and combined availability requires the same witness.
 
-Use these steps for the FPF edition:
+For assembly or republication, use the steps below to produce the edition and its rebuildability record. For access to an existing edition or an evaluation, take the identity, availability and other facts the commissioned use requires from the edition and its records. Carry out a rebuild when the commission or a missing result requires it.
 
 1. Identify the FPF edition or candidate by its stable designation and the record for that edition.
 2. State the first-principles scope: FPF supplies transdisciplinary distinctions that can be reused across domains. Domain doctrines remain with their DPFs; the declared scope sets the useful coverage boundary.

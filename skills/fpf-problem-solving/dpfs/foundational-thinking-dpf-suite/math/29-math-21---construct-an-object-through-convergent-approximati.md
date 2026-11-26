@@ -49,7 +49,7 @@ These are different constructions of the convergence requirement. Use their defi
 
 #### MATH.21:4.2 - Construct and compare the finite stages
 
-Give the approximating rule and establish the relations on which improvement depends. For nested intervals, prove containment and decreasing width. For compatible prefixes, prove that later stages retain the earlier entries. For a series or iterative construction, obtain a bound on the unresolved remainder.
+Give the approximating rule and establish the relations needed for the requested conclusion. For compatible prefixes, prove that later stages retain the earlier entries. A bounded nondecreasing real sequence has a limit by completeness. Its first N equal terms may still precede a jump, however late N is chosen. For a numerical approximation with a promised error, bound the unresolved remainder or enclose the limit within the required width. For a procedure that must stop, also show how it can recognize that accuracy in the available information.
 
 The same argument must cover the stages used by the conclusion. A finite sample can suggest a bound or expose a failure; a claimed statement about all later stages needs the corresponding argument.
 

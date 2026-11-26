@@ -75,7 +75,7 @@ Use the Readme when you have a working difficulty but do not yet know the direct
 | 22 | [HCD.21 - Form and Change Learning Work Groups](38-hcd-21---form-and-change-learning-work-groups.md) | Stable | Who could do this learning task together, or what does the evidence establish about contact and exchange? | HCD.20 task-derived composition; relevant preparation, access and availability |
 | 23 | [HCD.22 - Design Shared Learning Tasks with Necessary Individual Contributions](39-hcd-22---design-shared-learning-tasks-with-necessary-individ.md) | Stable | What must each participant do in this shared task, and do its dependencies, access, transfers and feedback support those actions? | HCD.6 whole-task criteria; HCD.20 arrangement constraints or qualified equivalents |
 | 24 | [HCD.23 - Learn through Explanation and Comparison of Solutions](40-hcd-23---learn-through-explanation-and-comparison-of-solutio.md) | Stable | How can learners compare their grounds, or what does their own use of those grounds show? | Qualified task and subject criteria; HCD.22 interaction conditions where needed; help available or used |
-| 25 | [HCD.24 - Learn Evaluation and Revision through Peer Review](41-hcd-24---learn-evaluation-and-revision-through-peer-review.md) | Stable | What judgement or response should the learner practise, or what does the review show about the work, the reviewer’s grounds or the author’s use of feedback? | Permitted work and a usable criterion; comparable material or qualified help when needed |
+| 25 | [HCD.24 - Learn Evaluation and Revision through Peer Review](41-hcd-24---learn-evaluation-and-revision-through-peer-review.md) | Stable | What judgement or response should the learner practise, or what does the review show about the work, the reviewer’s grounds or the author’s use of feedback? | Permitted work, its intended use and the conditions of acceptance. Supply the criterion for application or leave its design with the learner when commissioned. |
 | 26 | [HCD.25 - Learn Transfer through Comparison of Projects](42-hcd-25---learn-transfer-through-comparison-of-projects.md) | Stable | Which relation carries across projects, what would break it, or what does the learner’s own use of it show? | Qualified permitted cases; HCD.6.1 when a contrast is needed; HCD.12 for a transfer or new-learning claim |
 | 27 | [HCD.26 - Regulate Shared Learning](43-hcd-26---regulate-shared-learning.md) | Stable | What does the work show about this shared attempt, or is there a reason to keep or change its course? | The shared task and relevant evidence of its course; available help when the work needs it |
 | 28 | [HCD.27 - Coordinate Personal Learning Routes with a Shared Rhythm](44-hcd-27---coordinate-personal-learning-routes-with-a-shared-r.md) | Stable | Can the shared and personal work be connected in time, or what reached the intended participants under the conditions of a past attempt? | Personal or audience conditions; the contributions and support the task depends on |
@@ -101,19 +101,21 @@ You can ask an assisting agent to explain or apply these methods in the language
 
 **Start with:** [HCD.28 - Construct and Revise a Whole Learning Product for a Future Audience](45-hcd-28---construct-and-revise-a-whole-learning-product-for-a.md). Its solution explains how to join the contributions; the links below locate the suppliers.
 
-**Stop or return:** Stop with the construction needed for the design or offer decision. Use an applicable subject method. If a required criterion has yet to be established, return that question to the practice responsible for it. For a material defect, use HCD.19. Use HCD.7 to arrange available help or HCD.8 to obtain or build a missing contribution. When an individual learner becomes known, return the design or useful variants and their requirements to HCD.2 for personal comparison.
+**Stop or return:** Stop with the construction needed for the design or offer decision. Use an applicable subject method. If a required criterion has yet to be established, return that question to the practice responsible for it. For a material defect, use HCD.19. Use HCD.7 to arrange available help or HCD.8 to obtain or build a missing contribution. For a named learner, use a suitable activity directly when its entry conditions and support fit the work. If the person needs a programme designed or compared, take the relevant options and requirements to HCD.2.
 
 Future diagnosticians may calculate an indicator correctly while choosing the wrong model. HCD.28 first checks whether the subject selection criterion is available, implicit in expert action or unresolved. With an adequate subject basis, HCD.5 and HCD.6 construct the learning mechanism and task; HCD.7 establishes available assistance, with HCD.8 used for a contribution that must be obtained or built. HCD.20 compares individual and group options, and HCD.22 constructs the selected shared task. An individual arrangement remains an option when it provides the needed practice. The [constructed whole-product application](50-hcd-application-5---app-hcd-04---constructed-whole-learning.md) shows how the complete load can change the design.
 
-### HCD-GROUP - Make joint activity develop the intended personal contribution
+### HCD-GROUP - Develop personal contributions and coordination in shared work
 
-**Situation:** A shared answer is good, but it is unclear what each participant did, or the proposed interaction cannot fit the available people, time and help.
+**Situation:** A group produces a usable result. A teacher or manager needs to decide what each person can contribute next time, how people learn to use one another’s contributions, or whether the proposed arrangement can provide suitable practice.
 
-**Question:** Which contributions make learning together useful, and how can the task elicit them under a feasible arrangement?
+**Question:** What will these people need to do together? Which decisions and dependencies must each person learn to handle, with what help available at the time?
 
-**First useful result or blocker:** An assessment of a proposed or existing arrangement, a comparison of alternatives or a limiting condition. For a shared task, return the design or a finding about how it supports the intended personal work, material transfers, feedback and recovery.
+**First useful result or blocker:** An assessment of the arrangement, a comparison of alternatives, a shared task ready to use, or a condition that prevents the requested work. For a personal assignment, identify the decisions the learner made with the available support. To design practice for coordination, specify how one role’s contribution can reach another while its holder can still act on it. To assess a past interaction, trace what the participants actually used. A common result may also be possible when the roles act independently.
 
 **Start with:** [HCD.20 - Compose and Compare Arrangements for Individual and Group Learning](37-hcd-20---compose-and-compare-arrangements-for-individual-and.md) when the configuration is unsettled; enter [HCD.22 - Design Shared Learning Tasks with Necessary Individual Contributions](39-hcd-22---design-shared-learning-tasks-with-necessary-individ.md) directly when the target and arrangement constraints already exist.
+
+Use [HCD.22:4.2.1](39-hcd-22---design-shared-learning-tasks-with-necessary-individ.md#hcd22421---learn-joint-work-while-preserving-different-roles) when learning to respond to another participant is part of the later work.
 
 **Stop or return:** Finish when the comparison, feasibility finding or task design answers the request. Use HCD.7 or HCD.8 for a support condition that still needs work and HCD.28 for an affected connection in the learning product. Ground claims about personal performance, the common result, team capability and the material’s contribution in the relevant observations.
 
@@ -220,7 +222,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 ### Part I — Human Capability Demand, Programme, Practice, Evidence, Continuation, Repertoire, Culture, Learning Products, and Shared Tasks
 
-- [HCD.1 — Derive Human Capability Demand from Representative Later Work](17-hcd-1-derive-human-capability-demand-from-representative-lat.md) (224 lines)
+- [HCD.1 — Derive Human Capability Demand from Representative Later Work](17-hcd-1-derive-human-capability-demand-from-representative-lat.md) (226 lines)
 - [HCD.3 — Diagnose Whether a Capability, Misconception, or Behaviour Limits Work](18-hcd-3-diagnose-whether-a-capability-misconception-or-behavio.md) (243 lines)
 - [HCD.4 — Architect a Balanced Human Capability Profile Across Simultaneous Work](19-hcd-4-architect-a-balanced-human-capability-profile-across-s.md) (360 lines)
 - [HCD.2 - Compose and Compare Human Capability-Development Programmes for Later Work](20-hcd-2---compose-and-compare-human-capability-development-pro.md) (305 lines)

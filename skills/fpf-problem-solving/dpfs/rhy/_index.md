@@ -77,7 +77,7 @@ Find this framework in the [FPF Library DPF catalogue](../_index.md).
 
 Bring a question from your own rhythmic work. The following cases offer starting points. Use the Table of Contents for a different action, difficulty or result.
 
-Describe the passage, the person who will use the result and the decision they face. A bandleader choosing tonight's take may need only the timing of the ending. A player asked to cue the same ending must also know who can see the cue in time to act. For a lesson, identify which choice the learner must make and what the score, teacher or partner may supply. You can work directly or ask an agent to analyse the passage, give its assessment in the language of your practice or help design a correction. A short demonstration can communicate a rhythmic relation that a label leaves unclear.
+What part of the passage does the next performance, explanation or decision depend on? Identify who or what will use the result and in what form. A bandleader choosing tonight's take may need only the timing of the ending. To reproduce a held note, a sequencer also needs its release time in a form it can read. A player asked to cue the ending needs to know who can see the cue in time to act. For a lesson, identify which choice the learner must make and what the score, teacher or partner may supply. You can work directly or ask an agent to analyse the passage, give its assessment in the language of your practice or help design a correction. A short demonstration can communicate a rhythmic relation that a label leaves unclear.
 
 ### RHY-DIRECT-01 — Recover a duration lost in a change of notation
 
@@ -107,16 +107,16 @@ These cases connect several Methods. Start where the work needs a contribution, 
 - **First useful result or blocker:** A finding about performance with the relevant support or without it, a representative exercise and attempt addressing the missing relation, or a prerequisite for other instruction.
 - **Working reminder:** Identify what the learner is to read, execute or choose. Supply the phrase and support the task requires. If the learner must choose an accent, a cue or a way to observe the difficulty, let them make that choice before showing your solution. Practise the relation in the whole action and identify who supplied each contribution in the observed performance.
 - **Start with:** RHY.2/.5/.6 for the task information, RHY.12 for practice and RHY.13 for the particular transfer, retention or support question.
-- **Stop or return:** A suitable earlier performance can already support the intended assignment, including one with the same responsive partner. Use technique instruction for a missing balance or instrumental skill. For a claim about transfer, recover what the learner did under the earlier conditions and what carried into the changed task. To establish a gain, compare what that person could do earlier and later with the relevant support. A claim that particular lessons produced the gain needs grounds for their contribution.
+- **Stop or return:** A suitable earlier performance can already support the intended assignment, including one with the same responsive partner. If the passage requires a technique the performer lacks, establish how they can acquire it with the support available. Obtain qualified instruction when its technical or physical demands call for it. For a claim about transfer, recover what the learner did under the earlier conditions and what carried into the changed task. To establish a gain, compare what that person could do earlier and later with the relevant support. A claim that particular lessons produced the gain needs grounds for their contribution.
 
 #### RHY-CARD-03 — Make a rhythmic practice available to its next users
 
 - **Situation:** A recording or syllable sheet survives, but another group cannot obtain the intended way of performing or varying the phrase.
 - **Question:** What must remain available for this passage, and what can the receiving group already use?
 - **First useful result or blocker:** A usable receiving arrangement, an identified missing contribution or a bounded dependence on help.
-- **Working reminder:** Preserve the needed relation. Make the way of performing it and any needed help available to the receiving group. Establish what the group performs and which support it uses. Plan continuation when the case requires it.
+- **Working reminder:** Preserve the needed relation. Make the way of performing it and any needed help available to the receiving group. For provision, check that the group can obtain the timing information, cues and help the passage requires. When the question concerns a performance, establish what the group played and what support it used. Plan continuation when the case requires it.
 - **Start with:** RHY.2/.5/.6 and FPF C.36.RP; for music and dance use MDPE.17–.19, with RHY.9–.13 for the relevant performing and learning contribution.
-- **Stop or return:** Report the local use and its support conditions. A claim about later retention or cultural continuation requires evidence at that scope. If asked to restore access, address the obstacle to obtaining or using the carrier, instruction, technique or receiving arrangement.
+- **Stop or return:** For a request to make the practice available, report what the next users can obtain and under what conditions. A claim about performance, retention or cultural continuation needs evidence of that result. If asked to restore access, address the obstacle to obtaining or using the carrier, instruction, technique or receiving arrangement.
 
 #### RHY-CARD-04 — Respond to a changing rhythmic practice
 
@@ -160,9 +160,9 @@ Generated by the skill's splitter: one file per section, in reading order.
 ### Part II - Represent, compare and vary
 
 - [RHY.5 - Choose a Rhythmic Representation for the Intended Work](18-rhy-5---choose-a-rhythmic-representation-for-the-intended-wo.md) (174 lines)
-- [RHY.6 - Translate a Rhythm without Erasing Needed Distinctions](19-rhy-6---translate-a-rhythm-without-erasing-needed-distinctio.md) (178 lines)
+- [RHY.6 - Translate a Rhythm without Erasing Needed Distinctions](19-rhy-6---translate-a-rhythm-without-erasing-needed-distinctio.md) (180 lines)
 - [RHY.7 - Characterize and Compare Rhythmic Structures for a Stated Question](20-rhy-7---characterize-and-compare-rhythmic-structures-for-a-s.md) (162 lines)
-- [RHY.8 - Specify and Transform Performable Rhythmic Variants](21-rhy-8---specify-and-transform-performable-rhythmic-variants.md) (165 lines)
+- [RHY.8 - Specify and Transform Performable Rhythmic Variants](21-rhy-8---specify-and-transform-performable-rhythmic-variants.md) (167 lines)
 
 ### Part III - Arrange and coordinate performance
 

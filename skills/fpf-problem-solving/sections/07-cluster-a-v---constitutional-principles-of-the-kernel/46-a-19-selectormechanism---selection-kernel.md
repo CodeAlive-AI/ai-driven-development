@@ -9,7 +9,7 @@
 
 * **What it is:** a universal **set-returning** selection kernel: it takes candidates, admissible comparison outcomes, and explicit criteria, and returns a **selected set**, not a forced single winner.
 * **Why it exists:** to prevent three recurring failure modes: **hidden thresholds**, **silent scalarization**, and **winner‑take‑all defaults** under partial orders and uncertain evidence.
-* **Use this when:** admitted candidates must be selected under explicit criteria after comparison. Identify the candidate universe and choice rule, recover the required comparisons and their conditions, then return the justified subset. Stop with comparison when the receiving question needs no selection; a selection result alone supplies no authorization to act.
+* **Use this when:** the commission calls for selection from a declared comparison basis. Identify the candidate universe and choice rule, recover the required comparisons and return the justified subset. For a question about which candidates meet the criteria, an applicable prior selection or an argument covering the candidate set can suffice. Establish a new selection operation when the commission calls for that performance. Report a comparison directly when it answers the question. Authority to act requires its own grounds.
 * **What this buys:** the practitioner gets one selected-set value whose criteria, finite basis of upstream binary CPM applications, required comparison coverage, token provenance, scope, any governing A.19 predicate, plane, window, and policy bindings are explicit. `degrade` and `abstain` remain eligibility values, not selected-set members or alternative result kinds.
 * **First output:** read the by-value candidate set bound to `SelectionSlot`. Read the candidate universe, finite upstream CPM application basis, required pair coverage, derived comparison-token union, selection conditions, claim scope and context slices, reference plane, evaluation window, eligibility value, and evidence use from the `Select` application and neighboring relations; they are not fields inside the selected set.
 * **How it evolves:** method semantics and SoTA algorithm families connect via `G.2` packs and wiring modules; the kernel signature stays stable and teachable.
@@ -285,19 +285,19 @@ When comparisons are partial or set-valued, selection must not pretend there is 
 
 #### A.19.SelectorMechanism:5.3 - Analysis-method families
 
-**Scenario.** A methods group selects a declared set of analysis-method families for a task. Candidates are refs to those families. The group wants diversity in the selected set, but does not want diversity metrics to silently become dominance criteria.
+**Scenario.** A methods group has four eligible analysis-method families. It wants the complete nondominated set for the agreed comparison, with diversity reported for that set. An order for a portfolio that actually covers different approaches would require a condition on the selected set.
 
 * `CandidateSetSlot` = `{Family1, Family2, Family3, Family4}`
-* The selection conditions declare which binary method-family comparisons are required. A finite basis identifies every relied-on CPM application, its pair, eligibility value, and own output binding; the Selector's `ComparisonResultSlot` argument is their justified-token union.
+* The upstream CPM applications cover all six distinct pairs with `pass`, under the stated task, comparator and common use conditions. Their bound outputs establish that Family1 dominates Family3 and Family2 dominates Family4. Each of the other four pairs is incomparable. The Selector takes the union of the justified tokens from those applications.
 * `TaskSignatureSlot` is present and is the single policy-default slot or ref:
 
   * `PortfolioMode` and dominance regime,
   * budgeting and telemetry hooks (when used).
-* `CriteriaSlot` declares that diversity signals are telemetry unless explicitly promoted by policy.
+* `CriteriaSlot` retains all nondominated families. The policy uses diversity as report-only telemetry.
 
 **Outcome.**
 
-* `SelectionSlot` returns a selected set of those families; any archive‑style behavior is a specialization and policy choice, not a hidden kernel default.
+* `SelectionSlot` returns `{Family1, Family2}`. Each omitted family has a dominator, and none of the complete comparison results gives a dominator for either retained family. This set settles the selection. To deliver the requested diversity report, establish the relevant characteristics of both families under the declared diversity measure and report the result. If both use the same approach, retain the set and report that finding. If their approaches are unknown, the report is still open. If instead the group orders two complementary approaches, establish which families can supply each and which combinations are admissible, then select under the portfolio rule. The pairwise dominance results alone do not establish that coverage.
 * The `Select` application retains its `TaskSignatureRef.edition`, effective criteria and `SelectionSlot` bindings for later explanation. Add provenance and dated Work only under their independent grounds in §4.1.
 
 ---

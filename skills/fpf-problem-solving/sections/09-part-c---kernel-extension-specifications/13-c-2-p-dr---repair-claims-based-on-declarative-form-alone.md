@@ -98,15 +98,15 @@ DeclarativeRepresentationRepair:
 
 The ordinary result is the repaired statement and any unresolved condition that changes its use. In the optional note, give the disputed inference and say what the available grounds establish. If a classification remains open, identify the missing criterion or fact. If an applicable rule prohibits an action, identify the rule and the condition that triggers it. Reuse a suitable subject-pattern record without copying it into another repair note.
 
-Use four plain questions before the claim-and-pattern table: What visible thing am I looking at? What direct object or relation is current? What, if anything, does it represent? Which stronger claim still needs grounds?
+Use four plain questions before the claim-and-pattern table: What visible thing am I looking at? What direct object or relation is current? What, if anything, does it represent? What further conclusion is being drawn, and do the interpreted content and governing rule establish it?
 
-| Visible expression or artifact | Direct object or relation at issue | Representation or correspondence use | Inference the expression alone cannot establish |
+| Visible expression or artifact | Direct object or relation at issue | Representation or correspondence use | What the interpreted content establishes and what else the inference requires |
 | --- | --- | --- | --- |
 | highlighted graph path | exact E.18 graph path or `PathSlice`, with any flow valuation kept separate | the graphic rendering corresponds to that path when the relation is current; otherwise `none` when the `PathSlice` itself is under inspection | no prescribed route, valve work, or release by the highlight |
 | dashboard tile | exact status or state value with its bearer and value frame, plus any current source or publication relation | the tile represents that value only through an exact current relation; otherwise `none` when the publication face itself is the direct object | no gate passage or release permission from green appearance |
 | evidence-path expression | descriptive A.10 evidence-provenance path for the named claim or bounded use, citing independently established direct relations | a diagram may represent that descriptive path through an exact current correspondence; otherwise `none` when the path itself is under inspection | no approval, permission, assurance, or release from path shape |
 | solver file | the particular constraint under its variable bindings and units, e.g. `queueLength ≤ 4` | the binding identifies the queue whose length the variable represents, when that correspondence is part of the claim | The constraint alone cannot establish that the solver ran or that an observed queue stayed within the limit. |
-| publication table | the filled row read with its headings, units and key | a row reporting a failure count refers to the equipment and interval identified in the table | The count alone cannot classify the equipment as unreliable. Apply the stated reliability criterion and obtain the observations it needs. |
+| publication table | the filled row read with its headings, units and key | a row reporting a failure count refers to the equipment and interval identified in the table | Apply the reliability criterion for this equipment and interval. If the rule classifies equipment as unreliable after the third recorded failure, three confirmed records of distinct failures suffice. A rate criterion may also require time in service. |
 
 For a question about format, inspect the formation rules used for the constraint or row. For a question about access, identify the file or other carrier bearing that particular expression.
 

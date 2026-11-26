@@ -153,7 +153,7 @@ EntityOfConcern need not itself be a description and may be Work.
 
 **Applicability and admissibility.** Signature `Applicability` scopes intended use and bounded context; a mechanism's runtime entry predicates belong in `U.Mechanism.AdmissibilityConditions` as `A-*`. If prose says “clients must satisfy the applicability”, first recover whether it means the declared scope or an entry condition. State the generic `D-*` prescription, or the independently instituted individual duty, separately and reference the condition it requires. Classify that condition as `A-*` only when it is an entry predicate.
 
-**Adjudication.** Inspect the declared entry rule and its inputs to establish the A claim. Evaluate that predicate at the named action's entry or stated application point to obtain a particular satisfaction or gate-decision result; report that result separately in E.
+**Adjudication.** Inspect the declared entry rule and its inputs to establish the A claim. Evaluating that predicate establishes whether the condition holds for the named action or application. To report an entry decision in E, establish the result of the applicable decision rule for that action and window. The predicate evaluation can suffice when the rule makes it the decision.
 
 **Canonical form.** Predicate style, e.g.:
 

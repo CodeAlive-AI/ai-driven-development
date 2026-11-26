@@ -57,7 +57,7 @@ Search by the working question or required result. Use the MKT identifier to cit
 
 ## Practical entries
 
-Bring your working question. If none of these examples fits, search the Table of Contents or enter a pattern directly. Each body explains its situation, construction, limits, worked cases and source returns. You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.”
+Bring your working question. If none of these examples fits, search the Table of Contents or enter a pattern directly. Each body explains its situation, construction, limits, worked cases and source returns. If you need assistance, ask for the work your decision requires. A service may compare supported offers or complete a purchase under terms the buyer has delegated. A customer whose choice is still open may instead need an explanation in the language of their work.
 
 ### MKT-ENTRY-QUESTION - Find out enough to make the next decision
 
@@ -86,16 +86,16 @@ Bring your working question. If none of these examples fits, search the Table of
 ### MKT-ENTRY-DISTRIBUTION - Make the offering obtainable through workable exchanges
 
 - **Situation:** People can discover a suitable offering but cannot obtain it where, when or on the conditions they need; an intermediary is proposed or its contribution has changed.
-- **Question:** Which arrangement connects the final customer's use to availability, selling, transfer or access, support and recovery?
-- **First useful result or blocker:** A supported route with distinct exchanges and effective contributions, or a supply or exchange condition that prevents reliance on the proposed route.
+- **Question:** How can customers obtain and use the offering and get help where and when they need it? Does the brief call for a route design, a comparison or a service ready to offer?
+- **First useful result or blocker:** A design showing how a customer could acquire and use the offering and obtain help under stated conditions. For an offer ready to make, establish which contributions are in force. Identify any condition that prevents the requested conclusion.
 - **Start with:** [MKT.11:4.2.1](26-mkt-11---align-promises-partners-and-execution.md#mkt11421---construct-a-distribution-arrangement-when-the-route-is-unsettled), using SYSE.8 and ECO.3/5; return its conditions to MKT.2/3/4 and use MKT.13 for ordinary repetition.
-- **Stop or return:** A settled sufficient route can be reused. A changed intermediary, availability or support condition returns to the affected promise and existing obligations.
+- **Stop or return:** One workable design can answer a design brief. Compare the relevant routes when a choice is required. Reuse a settled route while its conditions hold and address existing obligations when a contribution changes.
 
 ### MKT-ENTRY-PROGRAMME - Share preparation while keeping promises feasible
 
 - **Situation:** Several organisations could use related services, but shared preparation competes with local exceptions and existing work.
-- **Question:** Which whole programme can the team support for the intended result and period?
-- **First useful result or blocker:** A supported combination of common work and separate continuations, or the capacity, permission or capability that defeats it.
+- **Question:** For these related services, which programme can the team support for the intended result and period?
+- **First useful result or blocker:** A programme that delivers the promised results, or the condition that prevents it. Derive which work can be shared, which must be supplied separately and what the customer needs from their combination.
 - **Start with:** [MKT.14](29-mkt-14---develop-and-change-a-programme-for-selected-custome.md), using MKT.1/12, MKT.2/6, MKT.11 and MKT.13 where their results are missing; follow [the B2B application](33-mkt-application-3---app-mkt-organisations---turn-a-programme.md).
 - **Stop or return:** Remove or change the affected opportunity when a condition fails. Recompare the whole programme when the changed opportunity alters common preparation or scarce support.
 
@@ -111,7 +111,7 @@ Bring your working question. If none of these examples fits, search the Table of
 
 Use a body when its practical problem is present. MKT.12 can end an inquiry without a new campaign; MKT.4 can support a single choice without a customer programme. Read the Architectural Reference when deciding how several contributions fit. The applications develop five connected uses and return to the separate suppliers of engineering, organisation, operations, learning and community work.
 
-The patterns describe ways of working. A proposed arrangement may still need performers, tools, access, time or a receiving decision before the work can take place. An AI assistant can help recover evidence, compare alternatives and draft wording. For any permission, commitment or human contribution the work depends on, establish what its holder has already granted, agreed or supplied. Obtain what is still needed from the responsible party.
+The patterns describe ways of working. A proposed arrangement may still need performers, tools, access, time or a receiving decision before the work can take place. A capable service may investigate demand with authorized sources, recommend a supported variant or transact within its delegated terms. Where responsibility for a choice matters, distinguish who set the terms, who selected the offer and who completed the transaction. For any permission, commitment or human contribution the work depends on, establish what its holder has already granted, agreed or supplied. Obtain what is still needed from the responsible party.
 
 ---
 
@@ -142,7 +142,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 - [MKT.1 - Qualify a Market Problem and Differences between Customers](16-mkt-1---qualify-a-market-problem-and-differences-between-cus.md) (150 lines)
 - [MKT.2 - Construct and Test an Offer and Its Positioning](17-mkt-2---construct-and-test-an-offer-and-its-positioning.md) (162 lines)
-- [MKT.3 - Reach a Suitable Audience and Obtain a Meaningful Response](18-mkt-3---reach-a-suitable-audience-and-obtain-a-meaningful-re.md) (157 lines)
+- [MKT.3 - Reach a Suitable Audience and Obtain a Meaningful Response](18-mkt-3---reach-a-suitable-audience-and-obtain-a-meaningful-re.md) (159 lines)
 - [MKT.4 - Make Choice and Acquisition Meaningful and Feasible](19-mkt-4---make-choice-and-acquisition-meaningful-and-feasible.md) (226 lines)
 - [MKT.5 - Develop and Align a Customer Experience Concept](20-mkt-5---develop-and-align-a-customer-experience-concept.md) (154 lines)
 - [MKT.6 - Jointly Shape a Useful Result and Help Achieve It](21-mkt-6---jointly-shape-a-useful-result-and-help-achieve-it.md) (158 lines)
@@ -150,7 +150,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [MKT.8 - Construct a Journey Map for a Specific Decision](23-mkt-8---construct-a-journey-map-for-a-specific-decision.md) (159 lines)
 - [MKT.9 - Select an Offer or Help for a Particular Customer](24-mkt-9---select-an-offer-or-help-for-a-particular-customer.md) (159 lines)
 - [MKT.10 - Evaluate the Contribution and Cost of a Marketing Intervention](25-mkt-10---evaluate-the-contribution-and-cost-of-a-marketing-i.md) (157 lines)
-- [MKT.11 - Align Promises, Partners and Execution](26-mkt-11---align-promises-partners-and-execution.md) (195 lines)
+- [MKT.11 - Align Promises, Partners and Execution](26-mkt-11---align-promises-partners-and-execution.md) (199 lines)
 - [MKT.12 - Investigate a Customer or Market Question for a Decision](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) (187 lines)
 - [MKT.13 - Test Commercial Model Repeatability and Deployment Limits](28-mkt-13---test-commercial-model-repeatability-and-deployment.md) (177 lines)
 - [MKT.14 - Develop and Change a Programme for Selected Customer Organisations](29-mkt-14---develop-and-change-a-programme-for-selected-custome.md) (182 lines)

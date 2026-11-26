@@ -103,7 +103,7 @@ When the branches cannot be distinguished, name the claim and missing basis and 
 
 #### A.11.OP:4.4 - Return authority and claims to their direct owners
 
-Apply this screen only inside the space left by every applicable direct authority. The direct owner establishes the obligation or floor and resolves disputes about its basis or applicability.
+Apply this screen within the authority defined by the applicable rule or undertaking. Establish where the obligation and its evidence threshold come from. One body can set a requirement, another can apply it and a third can hear a dispute. Use a current rule or earlier decision when it settles the case. If a dispute remains, establish who may interpret, review, waive or amend the requirement under those terms.
 
 When the requirement itself is being appraised, use `C.11.DUA` to compare the protected bearer and interest, the threshold and horizon, the causal contribution claimed, and who bears the burden. Identify who can amend the requirement and whether that amendment is feasible in time. Keep its merits and present force distinct: neither a protective label nor a burdensome rule settles the merits, and an unfavorable appraisal supplies no unilateral waiver. The legal, ethical and domain claims remain with their direct owners.
 
@@ -203,7 +203,7 @@ Scope: **Universal** for the cross-domain admission question governed by this pa
 | `CC-A11.OP-4` Material plausibility | Each claimed difference has the basis appropriate to its subject, evidence, risk, causal, decision, or assurance claim; bare logical possibility and information volume are insufficient. |
 | `CC-A11.OP-5` Deterministic realization | A required deterministic step is retained when it realizes the already selected result without fabricated outcome branches. |
 | `CC-A11.OP-6` Delayed decision value | For an inquiry proposed for a later decision or reliance, at least one materially plausible result reaches that named use inside the horizon. This contribution is not sufficient to require acquisition; a live inquiry decision also establishes obtainability and worthwhile contribution under its direct owner. |
-| `CC-A11.OP-7` Assurance boundary | A retained assurance or recovery action names the relied-on condition and its direct owner; that owner establishes the floor and evidential basis. |
+| `CC-A11.OP-7` Assurance boundary | A retained assurance or recovery action names the relied-on condition, the rule setting the floor and the applicable evidence requirements. Where a further decision is needed, identify who is empowered to make it. |
 | `CC-A11.OP-8` Disposition boundary | Passing a branch establishes contribution only. The final disposition uses the applicable choice, realization, assurance or authority basis; appraisal of a requirement's merits remains separate from its current force. |
 | `CC-A11.OP-9` Light result | Ordinary use ends in a direct disposition with the basis needed for its use; a durable result uses an existing record kind required by a named later use. |
 | `CC-A11.OP-10` Direct-owner return | Each downstream claim remains with the direct pattern named in Relations and is obtained from that pattern by value. |

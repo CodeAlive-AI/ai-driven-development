@@ -138,7 +138,7 @@ If the test is authorized and conducted, interpret the observed response under i
 | New observation | Update to the hypothesis |
 | --- | --- |
 | Both fresh uncued first attempts adapt the promise correctly and preserve configuration checking and calculation | Retain the local change provisionally for these tested variants; do not claim a general transfer effect. |
-| Correct answers appear only after a teacher or AI cue names the changed resource | Identify what the learner did after receiving the cue. The independent result remains open unless other evidence establishes it. Use a cue comparison if the remaining question warrants it. |
+| Correct answers appear only after a teacher or AI cue names the changed resource | If the first valid attempt shows a mistaken choice, report that result and the subsequent correction under help. If the cue arrived before any attributable choice, independent selection remains open. Use suitable earlier work or a new comparison when the difference matters. |
 | The time value is ambiguous or a required source is unavailable | Identify the affected part of the assessment or its access. The attempt leaves the dependent learning contribution unassessed. If further assessment is required, use a suitable existing observation or restore the missing condition before relying on a new attempt. |
 | Adaptation improves but configuration checking or required checks deteriorate | Revise or abandon the change: the intended gain does not compensate for the protected loss. |
 | Further qualified observations show several tasks depend on the same missing prerequisite | Identify the affected tasks and prerequisite. If the target or arrangement needs revision, enlarge it accordingly and obtain any necessary diagnostic, method or authority contribution. |
@@ -147,9 +147,9 @@ If delay or support dependence matters, a later HCD.13 observation can update th
 
 #### HCD.14:5.3 - Revise a Proficiency Relation before Advancing a Pathway
 
-In the constructed N24 case (HCD.4:5.5 and HCD.6:5.6), independent selection succeeds in a new service context and fails in a familiar one; across four tasks the response also differs with the salient label. Retaining a single familiar-before-unfamiliar position would conceal the difference that changes the next teaching move.
+In the constructed N24 case (HCD.4:5.5 and HCD.6:5.6), a correct estimate in an unfamiliar service and an error in a familiar service occur under different headings. All four responses agree with following the salient label. The evidence warrants revising a familiarity-only account of correct performance. Whether N24 can choose the unit independently from the receiving question remains open.
 
-In the constructed N24 case, the local revision separates cue-compatible selection from selection under a misleading cue, drops the assumption that new-context success entails reliable familiar-context selection and preserves arithmetic. The new hypothesis proposes cue contrast and a learner-generated unit check. Its proposed twenty-minute opportunity fits the remaining learner and teacher allocation; a fresh misleading-heading task could challenge it. Preserve the observed misses and successes. The changed proficiency model supports a proposed pathway change. Its effect on N24 would require evidence from using that change.
+For planning, the teacher now distinguishes observed performance under helpful and misleading headings, keeping the arithmetic that N24 demonstrated. The earlier hypothesis ordered independent choices in familiar and unfamiliar contexts. The four responses leave that ordering untested. The teacher proposes twenty minutes of practice contrasting the cues and letting N24 devise a way to check the choice. That practice fits the remaining allocation. A fresh response can help decide what to entrust next. To establish an effect of the change, examine evidence of what N24 learned from it.
 
 ### HCD.14:6 - Bias-Annotation
 

@@ -260,7 +260,7 @@ OpenArchitectureClaim:
     the published rules do not establish that a particular replacement adapter has passed those tests
 ```
 
-The first slice makes the missing compatibility basis usable without requiring measurement. The second uses the supplied extension and replacement rules to identify the next action: test a proposed adapter under the two named tests before claiming its conformance. Publication of the rules supports planning; a test result would support a different claim.
+The first slice makes the missing compatibility basis usable for planning. The second identifies the two tests that bear on substitution. Use results that apply to this adapter in the proposed configuration, or perform the tests when the assessment requires evidence that is still missing. A commission for a fresh run requires that run. The published rules establish what must be checked.
 
 Supplier-diversity, procurement suitability, use-context compatibility, business constraint, policy authorization, and provider-selection claims are not module-interface fields. If those claims are being made, A.6.M names only the module-interface slice; non-module selection, procurement, work, role, evidence, assurance, gate, release, and mechanism claims are governed by the patterns named in `A.6.M:12`.
 

@@ -8,7 +8,7 @@
 
 Use this pattern to make room for a useful question in work that people or agents treat as ordinary. Reports arrive, calculations run, repairs succeed, and nobody asks whether the way of obtaining or using those results needs examination. Use it also when someone says that an explanation misses something but cannot yet say what. A known error, an anomaly label and a request for help are not prerequisites.
 
-Start at a small occasion connected with the work: preparing a handover, demonstrating a result, explaining a consequential choice, or resuming work after a change. Recover what the result is supposed to enable and examine one available episode of obtaining and using it, including the adjustments that made it succeed. A performer can do this while preparing their work; a colleague or team can arrange the occasion. It takes access and attention, even if only briefly.
+Start where a question about the work could arise. What is its result supposed to enable? In ongoing work, examine a handover, demonstration or resumption and the adjustments the people involved actually made. When the work is being designed, follow a relevant case allowed by the design. What would a participant need to know or do there? The proposed arrangement may already expose a missing connection before anyone uses it. A performer, colleague or team can make time for that inquiry.
 
 A suitable long mantra can give that occasion a connected set of questions before a difficulty is felt. Section 4.2.1 explains how to choose it and use it to find a question, while keeping the substantive Method and its conditions. The useful result is a question with an attainable next move, an early cue retained for further consideration, or a reasoned continuation without change. Here, **inquiry** includes a short question to a colleague or consultation of an existing explanation; it need not become a research project. The method helps bring an unexamined part of work into consideration.
 
@@ -39,11 +39,13 @@ The difficulty is to let ordinary work generate a question without requiring a p
 
 #### B.5.PI:4.1 - Give the work an occasion to become a question
 
-Select a bounded occasion that does not depend on someone first reporting trouble. At an ordinary handover, for example, ask the producer to show one result and how its recipient will use it. Recover what the producer had to do, including work that the official account omits. In preparing your work, follow one result through its intended use instead of merely checking that you have produced it.
+Select a bounded occasion for inquiry before anyone has to report trouble. At a handover, ask the producer to show what the recipient needed and how they obtained it, including useful work omitted from the official account. In preparing a handover, trace the intended result into its next use. A drawing or description can let you locate a question that would change the proposed work.
 
 Choose an occasion with some prospect of a useful comparison: a consequential decision, a result passed to another person, a recurrent activity whose effort is poorly understood, or an available contrasting case. A small agreed sample can expose something that reviewing only failures would miss. Do not require every occurrence to undergo this examination. Keep the immediate work and its constraints in view.
 
-A performer may adopt this as a habit; a teacher, team or tool maintainer may make it available through A.15.11. For example, an existing handover conversation can include “Show what the recipient can do with this, and what you had to add to make that possible.” This question does not anticipate a specific error. A publication alone does not establish the habit or supply the conversation. If access to the result, its use or an attentive participant is unavailable, identify that missing contribution rather than claim that inquiry has begun.
+Choose the occasion in light of what you have been asked to find. One handover can yield a worthwhile question when you are free to explore. For a question about why a difficulty recurs in the practice, follow the work that produced the result and what happened when others received it. The same visible outcome might arise from a fixed constraint, a choice by the producer or a recipient's adjustment. Look for something that distinguishes these explanations, such as the information available before a choice or how the result was used. A rule covering all the relevant work can explain a recurring dependency. Its use on a particular occasion and the frequency of an outcome call for grounds about that work.
+
+A performer may adopt this as a habit; a teacher, team or tool maintainer may make it available through A.15.11. For example, an existing handover conversation can include “Show what the recipient can do with this, and what you had to add to make that possible.” This question does not anticipate a specific error. A publication alone does not establish the habit or supply the conversation. If a result, its use or an attentive participant is unavailable, identify which comparison or conclusion needs that access. Use what the occasion already establishes, or preserve the cue when that is all it supports.
 
 #### B.5.PI:4.2 - Compare before deciding what is wrong
 
@@ -89,7 +91,7 @@ Stop here if only the cue is recoverable and further articulation is unproductiv
 
 State what the work should enable, what comparison or experience raised the question, under which conditions, and why the answer could matter. Ordinary words are enough: “How can this figure help price the next batch when it has no numerical value on some days?” is a usable question without the phrase “division by zero”. Search a library or ask a colleague using the situation and needed result. A PatternID is one way to obtain an answer after its relevance becomes intelligible, not a prerequisite to inquiry.
 
-Let the first answer change the question. A calculation can be correct for the wrong quantity. An explanation can answer an easier question than the one the recipient needs. Return to the original use before accepting either as closure. B.5.QD develops a consequential question when the initial one needs reconstruction; B.5.QD.CF examines assumptions behind an apparent conflict. Use those contributions only while the question needs them.
+Let the first answer inform your choice of the next question. A calculation can be correct for the wrong quantity. An explanation can answer an easier question than the one the recipient needs. In an open inquiry you can choose a different question for what it promises to reveal. In a fixed assignment, ask what an answer to the proposed question could establish for the original use. Return that contribution to the recipient, or explain why a change of assignment is worth considering. B.5.QD develops a consequential question when the initial one needs reconstruction. B.5.QD.CF examines assumptions behind an apparent conflict.
 
 An adequate known explanation, instruction or correction may finish this use. If the question needs a new construction, explanation or test, B.5 connects the reasoning contributions. Keep later investigation and problem formulation under their conditions; a provisional question need not be promoted immediately to a fully specified Problem or research programme.
 
@@ -105,7 +107,7 @@ If no worthwhile improvement is available, retain the adaptation with its releva
 
 After use, examine whether this occasion brought something consequential into consideration and whether the result justified its burden. Change an unhelpful question, move a disruptive occasion, obtain a missing response, or remove a ritual that produces only ticks. Passing an execution checklist can support selected claims; it does not close concerns outside those claims. A known-condition checklist is designed through A.15.11, while the present method keeps a way to question what that list leaves unexamined.
 
-Make it possible to respond. A worker with no access to receiving outcomes cannot inspect them. A request that nobody can answer does not supply assistance. When raising a concern is punished, changing the conditions of joint work may be necessary; asking for greater personal vigilance does not repair those conditions. Use the smallest attainable support that answers the need, without assuming a permanent observer.
+Make it possible to respond. A worker with no access to receiving outcomes cannot inspect them. A request that nobody can answer does not supply assistance. When raising a concern is punished, changing the conditions of joint work may be necessary; asking for greater personal vigilance does not repair those conditions. Choose support the participants can use when the question arises. Weigh what the observer would supply against the effort of observing, asking and following up. A continuing arrangement can be worthwhile when the need recurs.
 
 Producing a result, keeping it usable and learning from the attempt can be enacted together in an action. B.1.5 and B.1.5.EW help recover the relevant Method composition and how those actions enact encompassing work, including the constituent capabilities and receiving use.
 
@@ -124,6 +126,8 @@ The listener first says, “Make the deadline reminder clearer.” Applying that
 The next question is small: “Can we make the correspondence available without losing distinctions the recipient needs?” In this case an authoritative list exists. The two participants compare twelve entries with it; ten have a unique correspondence, while two abbreviations denote different equipment in different buildings. A single global replacement would conceal that difference. They retain the building context, give the recipient the resolved names and leave the two unresolved entries for the person who can supply their locations. The receiving schedule is checked by identifying the intended equipment, not by counting replaced labels.
 
 For repeated handovers, an available mapping keyed by name and building may remove some reconstruction. Whether to prepare and maintain it depends on use and effort. A one-off schedule with no further receiving difficulty can keep the manual translation. In either case the inquiry returns to the schedule: the recipient can use the supplied identities, or knows which entries need a location. It need not create a new organization-wide programme.
+
+For a request confined to whether today's schedule arrived on time, the recorded delivery time can suffice. For a request to discover a dependency in preparing the schedule, the producer can choose to investigate the reliance on memory. If the review concerns how often recipients have had to correct a name, follow what the recipients actually received and did. All twelve retypings happened before delivery. The authoritative list can establish which codes require a building wherever those conventions apply, even while the frequency of actual corrections remains unknown.
 
 If the recipient instead demonstrates that both naming conventions are understood and the retyping merely changes typography, the proposed identity problem disappears. Ask whether the extra effort is worth removing; do not preserve the first diagnosis because it motivated the comparison. If neither receiving use nor the authoritative list is accessible, retain the dependency on memory as an early cue and obtain access when worthwhile. No claim of safe replacement follows from that cue alone.
 
@@ -164,13 +168,13 @@ An expert can mistake the absence of their preferred method for a defect. A fami
 For guidance or an application claiming this method, examine the consequential conditions:
 
 - The entry can occur without a recognized error, a diagnostic term or a request for an audit; its occasion, access and attentional demand are recoverable.
-- The comparison retains the receiving use and what it took to obtain the result, including successful adaptations when they matter.
+- The inquiry follows the result into its intended use. An account of actual work identifies the actions and adaptations on which its conclusion depends. An inquiry using a possible case states what the case reveals about the proposed work or claim.
 - When a mantra guides the comparison, its Method fits the question; its connections and justification order are applied to a recoverable case. A found gap becomes a qualified question or cue, while adequate answers and irrelevant conditions permit a stop.
 - A proposed interpretation is tested on the original case; the participant is not required to invent a diagnosis before their concern can be examined.
 - An early cue can remain open without being mislabeled a confirmed anomaly, Problem or selected investigation.
 - The continuation can obtain a usable contribution, identify missing means, or stop without change under stated conditions.
 - Conformance, result achievement, adequacy for the receiving work and completeness of the description remain different claims.
-- The result returns to the encompassing work, and any claim about later independent use has its own basis.
+- The result returns to the encompassing work. Its grounds show what the occasion establishes there, including any claim about recurrence. A claim about later independent use has its own basis.
 
 ### B.5.PI:8 - Common Anti-Patterns and How to Avoid Them
 

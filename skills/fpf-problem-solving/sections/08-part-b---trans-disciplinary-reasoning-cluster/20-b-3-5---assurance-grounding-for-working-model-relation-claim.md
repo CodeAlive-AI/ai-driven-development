@@ -2,9 +2,9 @@
 > **Status:** Stable
 > **Type:** Pattern
 
-**At a glance.** Use B.3.5 when a human-facing structural relation or a collection's own belongs-to relation has been selected for an additional assurance account without exposing constructive machinery as the public vocabulary.
+**At a glance.** B.3.5 helps an author connect a readable relation claim to the grounds a recipient must be able to inspect. Its elected profile covers structural parthood, collection belonging and other permitted claims such as the use of a lemma in a proof.
 
-**Use this when.** Use this assurance profile only when a publication choice or named requirement elects it for a relation claim. State the readable relation first. After election, structural parthood and collection belonging follow separate trace and `validationMode` obligations. The trace reports the relation facts and their grounds for inspection.
+**Use this when.** Start from what the reader needs to decide or explain about the relation. If the relation has been supplied, establish its participants, meaning and grounds for that use. If you must design the account, choose the relations that can distinguish the required answers. A publication choice or named requirement can elect CT2R-LOG for specified claims. Those claims then carry the grounding and `validationMode` required by their branch.
 
 **What goes wrong if missed.** The readable relation and its assurance account collapse: authors either lose usable relation sentences, treat collection belonging as parthood, prohibit separately grounded parthood by label, or make a trace look like the cause of the claim.
 
@@ -50,6 +50,10 @@ Working-Model relations such as **ComponentOf** and an ordinary belongs-to sente
 
 The Working-Model and Assurance layers name E.14's presentation order: the claim first, its needed support accessible underneath. When two models are being compared for abstraction or refinement, use B.5.MR's comparison of their admitted answers.
 
+To choose the relations, ask which changes could leave your statement true while altering the reader’s decision. Holding an item’s registration fixed, it can move from a warehouse into an assembly. Holding the assembly fixed, responsibility for maintaining it can pass to another operator. Follow the part relations of the system, the constituent operations of a Method or the parts of performed Work as far as their arrangement affects the requested answer. Establish links between these accounts by the facts they assert, such as who performed the installation and which installed equipment the record describes. A direct fact about one relation can already settle a request confined to that relation.
+
+Choose the distinctions to publish from the same question. Can the reader reach the required decision, with its grounds, in all the arrangements the model describes alike? Keep a missing distinction in the statement or in a grounding account accessible when it is needed. If the commissioned conclusion uses several assertions together, establish their compatibility for the items, times and uses it covers.
+
 CT2R-LOG distinguishes an optional link between relation designations from the grounding link and validation flag required for each covered assertion:
 
 1. **Alias link (lexical).**
@@ -77,7 +81,9 @@ The applicable branch above selects the allowed modes and grounding targets. The
 
 #### B.3.5:4.1 - Inspect correspondence to a target kind or logical representation
 
-When a constructive trace, working-model relation, and target kind or logical representation must be inspected together across contexts, explain their correspondence and what structure is preserved or lost. The block below is an optional way to record that account. Use `A.22.CGUS` for a remaining question about potential continuations and their conditions.
+When a constructive trace, Working-Model relation and target kind or logical representation must be used together, state the question and the direction of the inference. Consider the permitted source arrangements that a target description can represent. If it describes two different arrangements alike, see whether that difference could change the required answer. A dated entry certifying the installation of a pump of an approved class can establish that class for the installation. If it omits the unit identifier, several individual pumps may still fit the entry. For a claim about that unit, find its binding to the installation or give the narrower conclusion. A difference lost in the mapping can be immaterial to another question. An argument covering the relevant arrangements settles whether the inference holds.
+
+The optional block records the correspondence and its limits. Use `A.22.CGUS` for a remaining question about potential continuations and their conditions.
 
 ```text
 StructuralCT2RTypingGroundingUnfoldingStructureBlock:
@@ -149,7 +155,7 @@ Suppose a later inventory glossary widens that phrase to include uninstalled spa
 * **Constructive grounding (Γₘ).**
   In the background, the published assertion links to `:trace_Γₘ_sum_456`, a C.2.1 episteme that names the pump and skid, the direct fastening, coupling, enclosure, terminal, flange, and seal occurrences that obtain, the applicable skid assembly rule, and the skid reidentification rule. An auditor replays that account to inspect the assertion's basis.
 
-  The same listed parts under a different assembly can form another whole, while a permitted pump replacement can preserve Skid12; the relations and reidentification rule, not the trace or input list, decide.
+  The same listed parts under a different assembly can form another whole, while a permitted pump replacement can preserve Skid12; the relations and reidentification rule, not the trace or input list, decide. If both installed equipment and its next service are in question, identify the service obligation separately. Two configurations with the same installed pump can require different service under their operating conditions or agreements. Select the additional relation on which the service decision depends. The pump-to-skid assertion alone can finish a request confined to installation.
 
 * **Assurance stance & R-lane.**
 Because the assertion is linked to the construction account required by its elected branch, authors set `tv:validationMode=axiomatic`. The account makes the relation's basis inspectable. B.3.3 considers the grounding and its currentness for the receiving claim and use.
@@ -159,13 +165,13 @@ When the same team asserts `:MassFlowRepresentation RepresentationOf :FlowModel`
 
 Result: **one** visible relation for engineers, a grounding reference and a validation-mode declaration for reviewers.
 
-**Collection case — Fleet North.** First publish the ordinary sentence: “Vehicle 12 belongs to Fleet North under its registration rule.” Under that rule, the occurrence begins when Fleet North accepts the vehicle's registration, ends on withdrawal or transfer, and a later accepted registration begins another occurrence. If no publication choice or requirement elects this profile, the sentence is sufficient and the author stops.
+**Collection case — Fleet North.** Consider a reader asking whether Vehicle 12 belongs to Fleet North. Under this fleet’s rule, the occurrence begins when the fleet accepts the vehicle’s registration, ends on withdrawal or transfer, and a later accepted registration begins another occurrence. State the membership supported for the date in question. This can finish the membership inquiry when no profile or further evidence has been requested.
 
 Here the fleet publication elects the profile. It links the assertion to one current C.13 `Γ_m.set` trace that names Fleet North and its identity rule, Vehicle 12, the obtaining registration occurrence, the registration rule, and its ending and recurrence conditions; it declares `validationMode=axiomatic`.
 
-If a vehicle enters or leaves the fleet, or the rule changes, the earlier trace remains an account of its earlier state but is not current support for the later assertion. The register and trace report this registration history. Any separately claimed ComponentOf relation needs its own grounds.
+An authoritative roster can establish membership on a given date when its meaning and coverage are known. To reconstruct membership from events, consider later accepted registrations as well as withdrawals and transfers. A question about the continuity of the original registration depends on its own ending conditions. A change involving another vehicle may affect a complete roster while leaving the grounds for Vehicle 12 sufficient. A replacement rule can preserve Vehicle 12’s eligibility or change it. If the use needs the full current roster, establish coverage of entries and exits under that rule. The elected trace must be current for the assertion it grounds. Preserve the earlier trace for the earlier state and establish any separately claimed component relation under its own rule.
 
-**Epistemic constituent case.** A proof of “the product of consecutive integers is even” uses the lemma “one of the two integers is even.” Inspection of that proof establishes `Lemma A ConstituentOf Proof P`. With no elected B.3.5 profile, the relation can be stated. A recipient may require access to the proof under its own evidence requirement.
+**Epistemic constituent case.** In this proof, one of two consecutive integers is even, so their product contains a factor of two and is even. The premise about the even integer occurs in the inference to the conclusion. Inspection of this derivation establishes that the premise is a constituent of the argument. A reference to a separate proof of that premise establishes that the writer cited the proof. To identify the separate proof as a subargument, establish where its reasoning enters this derivation. With no elected B.3.5 profile, state the relation that holds. The recipient may still require access to the proof.
 
 If that recipient elects B.3.5 and the basis is the followable argument, link the assertion through `tv:groundedBy` to that argument and choose `inferential`. If a qualifying C.13 account instead explains the proof's independently established constituent relations and assembly, it can supply an `axiomatic` basis.
 
@@ -173,9 +179,9 @@ A later proof that omits the lemma requires a content-part judgement; the earlie
 
 ### B.3.5:7 - Author Standard (at a glance)
 
-When you add or import a relation edge:
+Begin with what the recipient must learn from the relation account.
 
-1. **Pick a Working-Model relation sentence** such as “Impeller ComponentOf Pump” or “Vehicle 12 belongs to Fleet North under its registration rule”; avoid raw `ut:PartOf` unless you are drafting general mereological axioms. If no publication choice or requirement elects CT2R-LOG, publish that claim and stop.
+1. **State or choose the relation.** Work from the question to the relevant participants, their relation and its conditions. Say, for example, “Impeller ComponentOf Pump” for an assembly claim, or “Vehicle 12 belongs to Fleet North under its registration rule” for an enrolment claim. Establish the asserted relation under its defining rule. For a broader conclusion, explain how the required assertions combine. When the supported readable claim completes the commission and the profile has not been elected, publish it directly.
 
 2. **When CT2R-LOG is elected, attach `tv:groundedBy`**:
 
@@ -276,8 +282,8 @@ Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑
 
 #### B.3.5:9.4 - Author’s working moves
 
-**M‑1.** State the relation in **Working‑Model** form (e.g., “Impeller `ComponentOf` Pump”).
-**M‑2.** If a publication choice or named requirement elects this profile, pick `validationMode`; otherwise keep the relation claim and stop:
+**M‑1.** Identify the decision and state the relation it needs in Working-Model form. If the choice is yours, vary how the participant belongs to a collection, fits an assembly or contributes to an action as relevant. Select the relation whose difference changes the answer. Where the decision depends on several relations, follow them back to that decision.
+**M‑2.** Establish which covered assertions require this profile under the publication choice or requirement. For each of those assertions, select the grounding branch and its `validationMode`. Use an adequate readable claim directly where no profile is elected.
 
 * For a permitted exploratory claim, choose **postulate**, link its empirical support, and state scope plus challenge cues.
 * For a permitted conclusion from known statements, choose **inferential** and link the followable argument.
@@ -286,8 +292,8 @@ Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑
 * For another permitted epistemic or constitutive claim whose chosen basis is a qualifying C.13 account, choose **axiomatic** and link that account.
 
 **M‑3.** When an alternative designation helps readers, link that designation through `tv:AliasOf` to the accepted Tech designation of the same relation. State its local use and cite the definition; apply :5 when the meaning or participant order differs.
-**M‑4.** If assembly uses two parallel lines, state the Method/Work and temporal facts. Add any independently obtaining part relation under its own rule; parallelism alone does not establish it.
-**M‑5.** Stop when the selected readable relation and any relevant use limits are clear and, if this profile is elected, its validation mode and required current support are recoverable.
+**M‑4.** When the arrangement of work affects the claim, distinguish the operations prescribed by the Method from the performances that made up the actual job. If assembly used two parallel lines, establish how their work contributed to the assembly and which relations obtain between the assembled parts when the decision needs them.
+**M‑5.** Return what the readable claim and any elected grounding establish for the recipient. A joint conclusion has grounds for the connections it needs. Keep an unsupported part open and state the narrower result the available grounds support.
 
 ### B.3.5:10 - Bias-Annotation
 
@@ -311,17 +317,17 @@ Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑
 | **CC‑CT2R‑4 (No parthood from order/time alone).** | Authors **SHALL NOT** infer parthood from sequence, parallelism or temporal slicing alone. Any Work-part or proper-phase claim satisfies A.15.1 or A.14 independently; Method order and temporal relations use their patterns. | Preserve distinct relation meanings while allowing independently established temporal parts. |
 | **CC‑CT2R‑5 (Collection vs part).** | Authors keep collection belonging under the collection's own rule distinct from every `PartOf` branch. A claim needs no profile fields; after B.3.5 election it uses `validationMode=axiomatic` and one current `C.13 set` trace. If constructive parthood also obtains, state and support that claim separately. | Prevent category errors without taxing ordinary belongs-to prose or prohibiting a stronger independently grounded claim. |
 | **CC‑CT2R‑5a (Set trace reports).** | The elected set trace names the collection, the entity said to belong, the already established occurrence, the collection's own belongs-to rule, and the identity conditions. The set trace supplies no structural-composition reliability. | Keeps optional assurance from becoming ontology. |
-| **CC‑CT2R‑6 (Mapping fit).** | Where a claim relies on a mapping or alignment, the author **SHALL** state its applicability, preserved/lost distinctions and consequence for this claim. Any quantitative reliability adjustment needs a justified receiving model, compatible Scale and calculation; a CL label alone supplies none. | Keep integration limits inspectable without invented reliability arithmetic. |
+| **CC‑CT2R‑6 (Mapping fit).** | Where a claim relies on a mapping or alignment, state its applicability and what follows in the direction used. Establish that distinctions lost in the mapping leave the receiving conclusion warranted, or recover the missing information. Any numerical adjustment requires a justified receiving model, compatible scale and calculation. | Make the reach of the inference inspectable. |
 | **CC‑CT2R‑7 (Notational independence).**        | Core meaning **MUST NOT** hinge on any specific diagram or syntax; illustrative renderings, if present, are labelled *informative*.                                                                                                           | Ensure longevity and cross‑discipline portability.                        |
 | **CC‑CT2R‑8 (Layer direction).**                | Present the readable Working-Model claim before its needed Mapping, Logical, Constructive or Empirical support. Authors **SHALL NOT** let assurance notation or record structure dictate the public vocabulary. If support defeats or narrows the claim, revise the claim under its defining pattern and expose the change.                                                  | Preserve unidirectional dependence of layers.                             |
-| **CC‑CT2R‑9 (Claim and scope).** | Authors **SHALL** state the assurance claim and its applicable scope. Design and run claims retain their distinct subjects, evidence and conditions. | Prevent unsupported transfer between design and performed Work while retaining relevant evidence contributions. |
+| **CC‑CT2R‑9 (Claim and scope).** | State the relation claim and the use it serves. For an elected assurance profile, authors **SHALL** state the assurance claim and its scope. When tasked with choosing the relations, explain which distinctions the recipient needs and how the selected claims support the requested conclusion together. Identify the distinct subjects, evidence and conditions of any design and run claims used. | Connect the grounding of each assertion to the recipient’s use. |
 
 ### B.3.5:12 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | What goes wrong | Repair |
 | --- | --- | --- |
 | Trace as relation or truth-maker | A `Gamma_m` trace is treated as the public relation or the source of whole identity, or its presence or notation is treated as proof that the relation obtains. | Keep the Working-Model relation canonical; recover the relation facts and reidentification rule independently; attach the trace only as their inspectable C.2.1 account. |
-| Unchecked relation label or mode | A familiar relation label or `axiomatic` flag is published as though either settled relation obtaining or identity. | State and test the relation first. When B.3.5 is elected, add the branch-specific mode and support account. Stop when a fact required by the relation's defining pattern is missing. |
+| Unchecked relation label or mode | A familiar label or an `axiomatic` flag is published as sufficient grounds for a relation or identity. | Establish the relation under its defining rule. When the profile is elected, add the required support and mode. Identify any missing fact and give the conclusion that the available grounds warrant for the receiving use. |
 | Order/time leakage | Sequence, phase labels or parallel timing are treated as sufficient evidence of parthood. | Recover each relation separately: A.15.1 for Work parts, A.14 for a proper phase of an unchanged non-Work carrier, and B.1.4 for aggregation of recovered order or temporal relations. |
 | Assurance by notation | A diagram, graph display, or data format is treated as if it made the relation true. | Use the display to present the relation claim and establish its grounds under the relation rule. When this profile is elected, state its grounding relation and validation mode. |
 

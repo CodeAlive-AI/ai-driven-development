@@ -90,7 +90,7 @@ When the result needs a reference, identify its C.2.1 episteme through all three
 | `EntityOfConcern` | the `DecisionSubject` whose current choice result is being recorded, at the declared `DecisionSubjectGranularity` |
 | effective reference scheme | one named project-decision scheme and edition whose designation, interpretation, comparison, and evaluation rules give the C.11 terms, alternatives, focus content, and result their meaning |
 
-This aboutness choice lets one chooser revise the selected problem. Authority, commitment, budget ownership, Agent status, and performed Work remain neighboring claims under their own governors; none changes the `EntityOfConcern` merely by appearing in the decision record. One chooser's C.11 result also does not establish a shared understanding or agreement among project participants. When that common basis is at issue, use A.1.STM:4.1 to compare their project-system and use accounts and resolve the consequential differences.
+This aboutness choice lets one chooser revise the selected problem. Authority, commitment, budget ownership, Agent status, and performed Work remain neighboring claims under their own governors; none changes the `EntityOfConcern` merely by appearing in the decision record. The applicable decision procedure and mandate determine whether that chooser’s decision binds others. When outcomes depend on what participants understood, agreed or did, use A.1.STM:4.1 and evidence of the relevant participants’ contributions. Compare their accounts when differences in what they take the project system or its use to be could affect their work.
 
 The minimally useful result carries the full C.11 choice discipline through five connected content groups:
 
@@ -147,7 +147,7 @@ A.15.1:4.1 also governs the Method actually followed, temporal extent and comple
 
 Admit each included Work occurrence independently. After the composite is admitted as `W : U.Work`, assert its grounded typed enactment, containment and Work-part relations. An admitted part or a temporal inclusion alone does not admit the whole or establish Work parthood. If a common or Work-specific premise is unknown, leave the dependent admission unresolved; if a necessary condition fails, reject that proposed basis while retaining independently supported facts.
 
-When precise assignment-bound attribution is current, use F.6 afterward to relate the admitted Work to each performer's same obtaining A.13 assignment, preserving direct case support, holder equality, species, participants and coverage. A short attribution account may omit an unused identifier only when every required link remains recoverable. F.6 is not an admission premise.
+When precise assignment-bound attribution is current, apply F.6 after admission to each claimed assignment-bound contribution, relating the Work to the same obtaining A.13 assignment for that performer, preserving direct case support, holder equality, species, participants and coverage. A short attribution account may omit an unused identifier only when every required link remains recoverable. F.6 is not an admission premise.
 Apply these five project-specific qualification tests to the independently admitted Work:
 
 1. The composite work has a temporary or transient boundary with a start and a completion or termination condition.

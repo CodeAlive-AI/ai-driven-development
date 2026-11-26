@@ -6,19 +6,19 @@
 
 ### B.2:0 - Use This When
 
-Use this pattern when changed facts raise the question whether the existing whole still carries the claim or a new whole must be identified. The question may concern its delimitation, part relation, constitutive assembly, objective, supervision, capability envelope, agency threshold, or temporal consolidation.
+Use this pattern when a decision depends on whether an existing whole can carry a claim through an actual or proposed change, or requires identifying a different whole. The question may concern its delimitation, constituents, assembly, objective, supervision, capability envelope, agency threshold or continuity across time.
 
 The question can also arise when a whole is first constituted or first recognized. If no prior holon has been established, use A.1 and the applicable construction and kind-specific patterns to recognize the candidate. B.2's comparison begins only when there is an established prior whole to compare with it.
 
 Typical moments:
 
 - a set of coordinated parts becomes a regulated system with its objective and externally visible commitments;
-- a commissioning history crosses into operation and the assurance claim must restart for the operational whole;
+- an installation enters operation and its users must determine which commissioning evidence supports a claim about it in service;
 - a theory, model family, or knowledge body becomes an episteme whole recognized under the already admitted `U.Episteme` kind rather than remaining a loose catalogue;
 - separately governed structure, functioning, method, and work facts support a capability envelope that the existing whole cannot explain; evidence separately supports the claim about those facts;
 - an architecture residual cannot be explained inside the existing whole.
 
-**First useful move.** Compare the observed gain or shift with explanations that preserve the existing whole. If better parts, corrected relations, improved measurement, Method or Work repair, richer phase coverage, or architecture-view repair is sufficient, stay with the existing whole and use that subject pattern. Proceed to a new-whole claim only when that comparison leaves whole reidentification necessary. When the identity grounds themselves are missing or disputed, start with :4.0.
+**First useful move.** What decision depends on the identity of which whole? Establish whether the question concerns an actual change, what would follow under a proposed arrangement, or a design still to be made. Use an established continuity condition directly when it decides the question. For an actual gain or shift, compare explanations that preserve the existing whole. A constituent repair, different measurement, change of Method or Work, wider phase coverage or a corrected architecture view may suffice. For a design, start from the required use and the choices it leaves open in :4. A disputed identity criterion belongs in :4.0.
 
 **What goes wrong if missed.** Emergence becomes rhetoric, ordinary improvement is overclaimed as a new whole, or a new whole remains hidden under old part, evidence, assurance, architecture, or responsibility claims.
 
@@ -62,19 +62,23 @@ When whole identity and its grounds are unclear:
 
 ### B.2:4 - Solution
 
-Use B.2 as a world-side whole-reidentification pattern. Start with the wholes and the facts governed by their patterns; add records only when a receiving use needs them.
+B.2 concerns the constitution and continuity of wholes. Distinguish what already obtains from what the recipient wants to design. Add records only when a receiving use needs them.
 
-Name what the receiving work needs from a whole: for example, a system bearing an operational capability or an episteme supporting a conclusion.
+Start from what someone must decide and what the answer has to establish. For a maintenance decision this might be whether a repair belongs in the history of this installation. For a repeatable service it might be which participants must act together and which rights can remain with independent providers. Establish the unit and interval for each claim. Keep the installation and its assemblies, the Method and its constituent operations, the actual job and its performances, and the episteme that warrants an identity claim distinct wherever their differences could change the answer. Changes in any one can matter to the others through use, enactment, authority or evidence. If the claimed whole is a discipline, trace which practices and knowledge its practitioners organize and which they simply draw on. Follow the relation that carries the consequence for the decision.
+
+When the boundaries have been left to you, keep one constituent fixed and vary the organization or use of the whole. Then keep the reported whole result fixed and vary which constituents produced it or how they were connected. Would the recipient act differently or need a different explanation? At each relevant scale preserve the distinction that makes the difference. An aggregate may establish a whole's output and leave open which assembly or Work produced it. Stop at the established rule, observation or bound that decides the question. Use [C.39.SA:4](../09-part-c---kernel-extension-specifications/101-c-39-sa---choose-composition-scales-and-model-abstraction-fo.md#c39sa4---solution) when choosing those ranges is itself part of the work.
 
 Establish which prior whole, if any, is being compared. For a first constitution, obtain the construction facts under the applicable subject pattern and then apply A.1. For a first recognition of an existing whole, apply A.1 to the facts already obtaining; the recognition date does not establish when the whole came into existence.
 
-When the prior identity grounds are unavailable or disputed, use :4.0 to recover or compare their basis. Keep the identity question unresolved until that work supplies the deciding grounds. None of these situations supplies a prior holon for `existingWholeRef` by itself.
+When the prior identity grounds are unavailable or disputed, use :4.0 to recover or compare their basis if this could change the result. A decision common to the supported identity alternatives can go ahead. An assertion naming the continuing individual still needs grounds that distinguish it. First constitution, recognition and a prospective design supply no prior holon for `existingWholeRef` by themselves.
 
-With an established prior whole:
+**If an arrangement is to be designed,** begin with the result its users must be able to obtain or maintain. Check first what the present arrangement can already supply. If its continued use meets the commission, that can settle the design decision. For an unmet condition or an expressly commissioned alternative, trace the required result to the contribution, connection or authority needed at the time of use. Consider whether an allowed change inside the existing whole, an external service or a differently constituted whole could supply it. Choose the constituents and relations the proposed result depends on and test them together under the applicable construction and identity conditions. A sufficient shared constraint can exclude a family of proposals. An unsuccessful trial excludes only the arrangements its result covers. Return the feasible proposal, conditional comparison or established limit requested. Evidence that a proposal was realized belongs to a claim about actual constitution or performance.
+
+**For a claim of actual whole reidentification**, compare an established prior whole with the proposed successor:
 
 1. Name the receiving claim or use, the existing whole, its admitted kind, and its identity or reidentification rule.
-2. Recover each changed delimitation, constituent, constructive part relation, assembly, supervision, objective, capability, characteristic, or temporal fact under its pattern. A cue word, profile field, measurement, or graph edge does not make the fact obtain.
-3. Test whether those facts can be explained as a change of the same whole using :4.2. If repair, maintenance, changed characteristics, phase coverage, method or work correction, measurement, or architecture-view correction is enough under the existing reidentification rule, keep that whole and stop B.2. If the comparison is unresolved, identify the deciding fact or rule still needed instead of declaring a new whole necessary.
+2. Establish the changed facts needed by this comparison under their subject patterns. A change of the bearer, its Method, an occurrence of Work or the episteme reporting it can have different consequences for continuity. Establish any connection used to carry a conclusion between them. A cue word, profile field, measurement or graph edge alone leaves that connection open.
+3. Test whether those facts can be explained as a change of the same whole using :4.2. A same-whole explanation can show that continuity was possible. To establish actual continuity, identify the relevant history or show that all histories compatible with the evidence preserve identity under the applicable rule. If the comparison is unresolved, identify the deciding fact or rule still needed instead of declaring a new whole necessary.
 4. When the comparison establishes that the existing whole is insufficient, designate the proposed new whole as a `U.Entity` and execute the A.1 criterion. Recover its constituents, obtaining constructive relations, assembly, reidentification rule, and composition-grounded whole characteristic.
 
    Also show that the candidate's boundary, interfaces, relevant characteristics, and identity-preservation conditions satisfy the applicability and compatibility conditions of at least one governed larger-assembly construction method or rule under which it can remain a constituent. Then name its already admitted holon kind and satisfy the kind-specific criterion.
@@ -100,6 +104,8 @@ Use this branch when the comparison needs an identity criterion that is unavaila
 Locate the first reason for disagreement, as B.5.TC:4.4 explains. It may be a different subject, an incompatible domain premise or a missing fact about one continuing whole. A counterexample can defeat a proposed criterion; the surviving proposal needs the positive domain grounds that license its continuity claims. When a theory's application is unclear, B.5.TU supplies that recovery. Obtain a specialist result or further inquiry only for the consequential ground still missing, using C.11.DUA to judge its attainable contribution and burden.
 
 **Return the criterion to the identity comparison.** State the selected subject, the rule and its grounds, the changes it permits, and the event or condition that would end continuity. Keep a qualified or partial rule at the strength supported. Feed those results into :4.2 and use A.1.RI when observations still need to be associated under the rule.
+
+A commission to set a future continuity rule gives the practitioner a further choice. Compare which substitutions, divisions or transfers each rule would allow for the intended use, and who or what could give the rule effect. A rule adopted for future maintenance governs from the occasion covered by its terms. To decide what happened at an earlier repair, use the conditions that governed that repair.
 
 Complementary accounts keep their different subjects; unresolved competing criteria for the same subject retain their conditional answers and the fact or domain commitment needed to decide between them. If their difference cannot affect the receiving work, continue that work at its supported scope. A broader identity conclusion remains open.
 
@@ -128,13 +134,13 @@ The profile's complete interpreted claim content and effective reference scheme,
 
 #### B.2:4.2 - Existing-whole comparison and optional result
 
-First perform an ordinary comparison: compare the observed change with explanations that preserve the existing whole. Consider better parts, corrected relations, improved measurement, method or Work repair, richer phase coverage, capability change, and architecture-view repair only when their patterns make those explanations current. If one explanation is sufficient for the receiving use, keep the existing whole and stop B.2. Use the subject pattern for any remaining question.
+First perform an ordinary comparison: compare the observed change with explanations that preserve the existing whole. Consider better parts, corrected relations, improved measurement, method or Work repair, richer phase coverage, capability change, and architecture-view repair only when their patterns make those explanations current. For a feasibility question, a supported way of meeting the use while preserving the existing whole can suffice. For a question about what actually happened, establish the identity conclusion for the history that occurred. If both continuity and replacement are compatible with the evidence, state what can be decided under both and leave their historical identity open. Use the subject pattern for any remaining question.
 
 For each material explanation, test three things together: whether it covers the change needed by the receiving use, whether the old identity rule permits it, and whether it is compatible with the established facts. When continuity across observations is uncertain, use A.1.RI to construct the possible connections and test them against the subject constraints. A changed part may preserve one whole's identity and defeat another's; the applicable identity rule decides.
 
 | Comparison result | Grounds and next move |
 | --- | --- |
-| `sufficient` | At least one supported explanation meets the receiving use while preserving the existing whole's identity. Keep that whole; continue under the subject pattern only for a remaining question. |
+| `sufficient` | For a possible continuation, an admissible identity-preserving arrangement meets the use. For actual continuity, the known history or every history still compatible with the evidence preserves identity. Retain the whole for the conclusion established. |
 | `insufficient` | An established condition necessary for the receiving use cannot be met while preserving the prior identity; or the governing facts and rules justify a closed set of applicable alternatives and every alternative fails. Proceed to the candidate's A.1 and kind-specific tests. |
 | `unknown` | A deciding fact or rule is unavailable, or material alternatives remain that would change whether a new whole is needed. Obtain that missing basis or retain the unresolved comparison. |
 
@@ -205,7 +211,7 @@ Use `A.12` for acting-side externalization, `A.3.4` for bounded transformation, 
 
 #### B.2:4.7 - Mathematical-Lens Separation
 
-A mathematical or analytical result, such as an MSPD measure or graph analysis, can contribute to an MHT claim through a justified correspondence with the objects and relations concerned.
+A mathematical or analytical result, such as an MSPD measure or graph analysis, can contribute to an MHT claim through a justified correspondence with the objects and relations concerned. Compare models on the question the recipient is asking. Suppose a summary retains total output but omits which installation produced it. It can still establish a production threshold. To identify the installation, see whether its construction and history can be recovered or whether every history compatible with the summary gives the same identity answer under the governing rule. A history admitted only by the summary is insufficient to identify an actual producer. Carry the conclusion back in the direction supported by the correspondence. Use B.5.MR when the relation between the models themselves is at issue.
 
 Use `C.29` when a separate representation-choice, transfer or reliance question remains unresolved. Use B.2 for the consequential whole-reidentification question, beginning with the ordinary existing-whole comparison.
 
@@ -286,7 +292,7 @@ A.1 recognition additionally requires the cell's boundary, interfaces, relevant 
 
 Replacing Pump #37's seal is an ordinary constituent change when the pump's reidentification rule admits that maintenance phase. The same pump remains the EntityOfConcern; use the maintenance, part-relation, work, transformation, and characteristic patterns and stop B.2.
 
-Closing a controller-sensor-actuator loop can yield a new regulated-system whole only when the candidate assembly, supervision and coordination relations, boundary, objective, whole-level capability, admitted `U.System` kind, and reidentification rule satisfy A.1 and the system criterion.
+In the closed-loop case in :5.1, the claim concerns a regulated system with a stated objective. To identify an actual new system, establish why the prior configuration no longer carries that claim and how the organized sensor, controller, actuator and plant together satisfy A.1 and the `U.System` criterion. Ground the objective, the supervision and the capability required by this case under their own predicates.
 
 Its boundary, interfaces, relevant characteristics, and identity-preservation conditions must also satisfy at least one applicable governed larger-assembly construction method or rule under which the regulated system can remain a constituent. If that condition fails, the candidate fails A.1; if the needed evidence or dependency is unavailable, evaluation returns `unknown`.
 
@@ -312,7 +318,7 @@ The supported criterion therefore follows continuity of the installed assembly a
 
 Now inspect the change. The base, guards and fixtures remain; the replacement robot fits the specified connections; the required connection checks pass; supervision transfers through the retained interface. Under the recovered criterion, the replacement is an admitted constituent change of the same cell. In :4.2, that supported maintenance explanation is sufficient, so keep the cell and update the changed component and responsibility claims under their subject patterns. The scheduling account can separately change its resource membership.
 
-Change the conditions. If the commissioned installation is dismantled and an independently assembled cell supplies the same output elsewhere, output recovery leaves the earlier installation's continuity unestablished. Recover the new assembly and its identity grounds under A.1 before claiming a new whole.
+Change the conditions. If the governing criterion requires continuity of the installed assembly, and that assembly was dismantled, it no longer continues under that criterion. Another installation achieving the same output can meet a production target. For a claim about which installation supplied it, establish the new assembly and its link to the production history. For a proposal to preserve output after dismantling, the engineer can instead design the new arrangement and show what it would supply under its stated conditions. Realization and production remain separate claims.
 
 If only output logs are available and the construction and maintenance grounds cannot be recovered, state the missing connection: whether the change preserves the installed organization under an applicable lifecycle rule. Retain the conditional identity alternatives. The logs can still support their bounded production claims.
 
@@ -332,7 +338,7 @@ If only output logs are available and the construction and maintenance grounds c
 | --- | --- |
 | `CC-B2-1` | A B.2 use names the receiving claim or use, the existing whole already recognized under an admitted holon kind, its identity rule, current part relations, and kind-specific pattern before declaring whole reidentification. Without an established prior whole, first constitution or recognition returns to A.1 and the applicable subject pattern. |
 | `CC-B2-2` | `MHTTriggerProfile` is a `U.Episteme` with the existing whole as EntityOfConcern and typed content references. |
-| `CC-B2-3` | The ordinary existing-whole comparison precedes MHT and distinguishes a supported same-whole explanation, established insufficiency, and an unresolved comparison as in :4.2. An optional `ExistingWholeExplanationResult` episteme is created only when a receiving use must inspect or cite its explanations, evidence, and sufficiency verdict. |
+| `CC-B2-3` | A prospective comparison states the conditions under which the proposed arrangement would preserve or change whole identity. An actual MHT claim requires the prior and resulting whole and their grounds. The ordinary existing-whole comparison precedes that claim and distinguishes a supported same-whole explanation, established insufficiency, and an unresolved comparison as in :4.2. An optional `ExistingWholeExplanationResult` episteme is created only when a receiving use must inspect or cite its explanations, evidence, and sufficiency verdict. |
 | `CC-B2-4` | `HolonReidentificationRecord` is a `U.Episteme` with one `resultHolonRef` for the established new whole, one reference to its admitted public kind, the whole-reidentification claim, direct evidence and subject-pattern references, and only an optional C.2.1 classification-assertion reference when a person or system performing later work needs to inspect or cite that judgment. |
 | `CC-B2-5` | Agency-threshold claims use the characteristic-space and threshold patterns; B.2 uses them when they raise a consequential whole-reidentification question. The admitted System and characteristic are recovered independently of any optional local system-role classification or assignment, including when the System participates passively. |
 | `CC-B2-6` | Acting-system participation and transformation use A.12 and A.3.4. |

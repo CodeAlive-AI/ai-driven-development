@@ -40,13 +40,13 @@ Build the language around the questions it must answer and which results each an
 
 #### E.8.ML:4.1 - Select the smallest useful language
 
-1. **Name the receiving uses.** Start with one use. State its reader, recognizable difficulty, first useful result and stop. Add another use only when it needs a different action or boundary, and state the same four things for it.
+1. **Recover the receiving uses.** Start with a commissioned use. Who needs to understand, decide, perform or devise what, what would warrant that result, and when is it sufficient? Include another promised use when it needs different grounds or a different contribution, or leaves a choice to someone else. Two uses can lead to the same action.
 2. **Recover the allocated content.** Use F.0.2.MA's source allocations or an already sufficient equivalent result. Preserve current suppliers, unresolved candidates and direct-source remainder. Do not infer a new Method from a source heading.
 3. **Identify what each body describes or governs.** Use A.3.2.DE to describe how an admitted Method is performed or to improve an account of a proposed way while retaining its unresolved identification conditions.
 
    Keep neighboring selection, evidence, permission, architecture, representation and source-return questions under their own subjects. A body can cite those results without absorbing them.
 4. **Compare the direct alternative.** Try a direct description or existing pattern entry for the same use. Retain a new body or language relation only when it adds a warranted action, result, boundary or saved source reconstruction at acceptable burden.
-5. **Assign the contributions to bodies.** Give each body its own recognizable problem, useful move, worked case and stop. Explain the shared conditions and the reasons for the selected combination in the profile's account of the whole. For each inherited answer, point readers to where the contributing body gives that answer.
+5. **Assign the contributions to bodies.** Give each body its own recognizable problem, useful move, grounding under E.7 and stop. Explain the shared conditions and the reasons for the selected combination in the profile's account of the whole. For each inherited answer, point readers to where the contributing body gives that answer.
 6. **Name the material relations.** State in ordinary language which result another use consumes, what condition enables that use, what is an alternative, what conflicts and where a failed or missing result returns. Apply the defining FPF relation when a stronger relation claim is needed.
 7. **Provide direct reader entries.** A reader should reach the relevant full body from a problem question without reading the complete production account. The explanation of the whole remains available to readers choosing, combining or adapting the language.
 8. **Challenge the proposed arrangement.** Use F.0.2.RC to attempt reconstruction and a changed-source return. Use C.37.CF only when a material claim about content or representation advantage remains. Keep a direct-description or smaller-language answer when it is sufficient.
@@ -69,7 +69,7 @@ In the absence of that result, the proposed Method composition remains unestabli
 
 #### E.8.ML:4.3 - Make each relation say something useful
 
-Use the relation that changes the receiving action. The table gives examples of common questions.
+Use the relation on which the commissioned action, explanation or construction depends. The table gives examples of common questions.
 
 | Relationship question | Useful statement |
 | --- | --- |
@@ -91,7 +91,7 @@ The user or capable system assesses the new situation. During ongoing Work, A.15
 
 When the promised use includes performing or learning a Method, show its relevant constituent–whole connections as well as result dependencies. At a selected moment, which constituent action enacts which encompassing work? What changes in that action when a condition of the whole changes? B.1.5.EW supplies this recovery.
 
-Show the capability, support and combined resource conditions that the language's own bodies leave to another contribution. Use a representative case where a missing intermediate performance changes the continuation; do not require an exhaustive stack when its understood parts cannot change the use.
+Show the capability, support and combined resource conditions that the language relies on another contribution to supply. When a missing intermediate performance can affect continuation, show how the larger work depends on it. A direct argument or a worked case can establish that dependence. Trace it as far as the receiving use requires.
 
 B.1.5.RS supplies the distinct comparison when a constituent is replaced across encompassing uses.
 
@@ -105,7 +105,7 @@ If a language is claimed to expose more structure to its reader, use C.37.CF wit
 
 Identify the actual preparation, help and source returns. More patterns or links do not establish more extractable structure, and a larger amount does not establish that the language is worth its reading burden. Keep the direct description or smaller language when it suffices.
 
-Distinguish relations across scales. A specialization narrows conditions while retaining the relevant general claims. A bounded-use projection selects claims for a reader. Reuse can connect several profiles. A Method-composition result establishes which Methods are parts of the whole. A publication group provides navigation.
+Identify the relation being traced. Method composition relates constituent Methods to the encompassing Methods they help constitute. If the inquiry also compares the abstraction of models, establish which distinctions each model preserves for that same inquiry under B.5.MR. A specialization narrows conditions while retaining the relevant general claims. A bounded-use projection selects claims for a reader. Reuse can connect several profiles. A Method-composition result establishes which Methods are parts of the whole. A publication group provides navigation.
 
 There is no fixed maximum number of scales, and overlap does not establish a mathematical lattice; use C.29 only for that qualified representation.
 

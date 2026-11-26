@@ -57,7 +57,7 @@ Original framework text: © 2026 Anatoly Levenchuk, [CC BY 4.0](https://creative
 
 These are selected examples. Bring the work, question and observed difficulty you actually have. If none fits, use the Table of Contents and the direct patterns.
 
-You can ask an assisting agent: “Explain this and give me comments in the language of my work, without framework jargon.” Use the equations only when their assumptions fit; a short causal account can already settle the next action.
+Start with what you need to do with the answer. You might need to explain why an existing practice continues, recommend a change that protects a useful contribution, or establish what people actually did. Identify which choices remain yours and what result another participant is to supply. Ask an assisting agent to help with that work in the language you use. A short causal argument can settle a question. Use a quantitative model when its assumptions and distinctions support the required conclusion.
 
 ### DEPENDENCE — A useful service is being called a parasite
 
@@ -75,16 +75,16 @@ These examples retain longer inquiries across several methods. The repeated word
 
 - **Situation:** A proposed practice appears useful, but existing checks or exchange conditions restrict its use.
 - **Question:** Which restriction protects needed work, and which change could preserve that work while allowing the useful contribution?
-- **First useful result or blocker:** A conditional explanation linking consequences, uptake, compatibility and protective response; a missing distinction remains a specific investigation.
+- **First useful result or blocker:** An account of the restriction and the work it protects. For a commission to design a change, a way to retain that work while enabling the proposed contribution, or the unresolved condition that prevents such a design.
 - **Mantra:** Name whose work changes; recover uptake and its conditions; separate protection from its costs; test the resulting continuation and return to evidence.
-- **Start with:** DTM.1 → DTM.2/.3; use DTM.6 for interaction, DTM.8/.9 for protection, then DTM.4 for persistence.
+- **Start with:** DTM.1 for the work and consequences. Use DTM.2 or DTM.3 when use or a capability to use the practice matters, DTM.6 for interaction, DTM.8 or DTM.9 for protection and DTM.4 for persistence. Follow the dependency that still affects the commission.
 - **Stop or return:** An absent capability is not resistance. Return to the subject learning or engineering method; stop the harmful-variant branch when harm is not established.
 
 #### DIVERSION — A spreading procedure undermines the work
 
 - **Situation:** A frequently reused procedure receives continuing support while its recipients report worse results.
 - **Question:** Does support favor a misleading signal, do selection conditions favor the variant, or is another mechanism responsible?
-- **First useful result or blocker:** A discriminating causal account and a feasible response comparison, not a label applied to its users.
+- **First useful result or blocker:** A causal account that distinguishes the explanations relevant to this report, or the distinction that available evidence cannot settle. If a response is also commissioned, compare changes that address the supported cause.
 - **Mantra:** Establish the consequence; trace support and continuation; distinguish diversion from selection; compare response targets; check what persists or changes afterward.
 - **Start with:** DTM.1 → DTM.7 or DTM.5; use DTM.6/.3 for consequential interactions and spread, DTM.8/.9 for response, and DTM.4 for return.
 - **Stop or return:** Retain competing explanations if the observation does not distinguish them. A protection proposal needs the actual means and authority to perform it.
@@ -94,9 +94,9 @@ These examples retain longer inquiries across several methods. The repeated word
 - **Situation:** Removing a harmful arrangement also removes a contribution on which useful work depended.
 - **Question:** How can the needed function be recovered and sustained through another tool, method or division of work?
 - **First useful result or blocker:** A feasible replacement contribution, its acquisition need and the conditions for its continued use.
-- **Mantra:** Keep the needed function; obtain a replacement contribution; recover its learning and transmission; test continuation without recreating the harmful dependence.
+- **Mantra:** Identify the contribution the work still requires. Design a way to supply it under the new arrangement. For a claim of recovery, establish that the work obtained it under the conditions in question.
 - **Start with:** DTM.8 with FPF C.36.RP; DTM.2/.3 connect acquisition and transmission, and DTM.4/.6 test continuation under the changed arrangement.
-- **Stop or return:** A description of the replacement does not establish capability. Obtain the subject method and test it in the whole work before claiming recovery.
+- **Stop or return:** A feasible design can complete an order for a replacement arrangement. To establish actual recovery, trace the contribution through the work that depended on it. Records of ordinary work can settle that question. Arrange a further trial when the existing evidence leaves a consequential uncertainty or the trial itself was commissioned.
 
 ---
 
@@ -125,7 +125,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 ### Part II — Competition, coexistence and diversion
 
-- [DTM.5 - Separate Selection Within and Among Collectives](13-dtm-5---separate-selection-within-and-among-collectives.md) (180 lines)
+- [DTM.5 - Separate Selection Within and Among Collectives](13-dtm-5---separate-selection-within-and-among-collectives.md) (182 lines)
 - [DTM.6 - Model Competition and Facilitation between Variants](14-dtm-6---model-competition-and-facilitation-between-variants.md) (169 lines)
 - [DTM.7 - Locate Diversion of a Shared Control or Cooperation Mechanism](15-dtm-7---locate-diversion-of-a-shared-control-or-cooperation.md) (179 lines)
 

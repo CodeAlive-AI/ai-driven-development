@@ -10,7 +10,7 @@ Use this pattern when a theory offers a promising way to answer a question, but 
 
 The work here is to construct one application of the theory. Begin with the question and the available account; obtain and interpret the contribution that question needs. The result can be a construction, prediction, explanation, bound or identified missing operation. A mathematical question about what can be constructed is a possible receiving use, as is an engineering decision.
 
-**First useful move.** Choose one question the theory might settle. Find a source case or rule that could supply its answer. Say what plays each required part in your case, work the decisive operation, and explain what its result changes. If you cannot make that connection, locate the first missing premise, interpretation or operation.
+**First useful move.** Begin with the question you are to answer. If choosing an application is part of the work, select a question the theory might settle. Find a source case or rule that could supply the needed contribution. Say what plays each required part in your case, work the decisive operation, and explain what its result changes. If you cannot make that connection, locate the first missing premise, interpretation or operation.
 
 For example, a theory of composition lets you combine two operations. Does it let both consume one input, or does the combination require two separately supplied inputs? Recovering that distinction can change the proposed implementation before any code is written.
 
@@ -38,9 +38,9 @@ Connect the question, the theory's constructive or inferential resources, and th
 
 #### B.5.TU:4.1 - Choose an application worth constructing
 
-State what an answer would help someone understand, obtain, predict, rule out or change. Select one case small enough to work with the available means while retaining the difficulty. For example, “Can these two operations use the same input?” gives composition rules a purpose; “understand category theory” leaves that first use unselected.
+State what an answer would help someone understand, obtain, predict, rule out or change. If the application is assigned, begin with that question. For a smaller case, identify the operation or inference its result will supply when you return to the assignment. The question “Can these two operations use the same input?” can expose a missing composition rule. Permission to use a formal input twice still leaves open whether a particular implementation can supply both operations.
 
-Locate a source application serving that question, or the nearest account whose objects and rules could be adapted. State which part is supplied and which you are proposing. A theory can also be explored to discover a useful question: try one of its characteristic operations and inspect what its result makes distinguishable or obtainable.
+Locate a source application serving that question or an account you could adapt. Identify which choices the source has made and which the present application leaves to you. When exploring a theory freely, try one of its characteristic operations and inspect what its result makes distinguishable or obtainable. That can give you a question worth pursuing in its own right.
 
 Determine the contribution you need to learn or obtain. Applying a supported formula can need its inputs and use conditions; changing the formula can need its construction and argument. Explain the needed difference in work before selecting further study.
 
@@ -56,7 +56,7 @@ Make an unfamiliar expression operative at the point of difficulty. Determine th
 
 Connect each consequential object and condition to the selected case. Some are supplied by observation or design; some are assumptions of the model; others belong to the theory's mathematical construction. Keep their roles clear where they affect the conclusion.
 
-Choose the values, boundary conditions, allowed operations and sought output. For a theoretical question, this may be entirely a construction within the theory. For a physical use, explain which system, quantity or interaction the mathematical object represents. C.29 supplies the mathematical correspondence and the comparison of what it preserves, omits or introduces.
+Take the givens and the required output from the question. Where you must choose a representation, work back from what the recipient must be able to do. For example, a planner choosing an attainable combination of jobs needs to know which jobs fit together and which must be performed whole. For a question about excluding a target value, a bound over a larger set of plans can suffice if it covers every permitted plan, as in :5.3. For a theoretical question the construction can stay within the theory. For a physical use, identify which system, quantity or interaction the theoretical object represents. C.29 supplies the mathematical correspondence and the comparison of what it preserves, omits or introduces.
 
 Compose the required operations. Check the connection between successive contributions: an operation's output must supply the next operation's required input. An integration procedure, for example, needs a function of its integration variable; a formula with unfilled path or parameter arguments does not supply that function.
 
@@ -119,15 +119,15 @@ For a nonzero `eta`, write this positive change as `K`. Along the paths `q_0+c*e
 
 The application has an interpreted answer: under the adopted model, passing those endpoint positions in that time entails constant velocity. A computational implementation must evaluate the path derivative in the velocity argument before integrating. It can reproduce the numerical action comparison; the displayed argument supplies the wider conclusion.
 
-Suppose the two-metre trip must instead begin and end at rest. The constant-velocity answer fails that condition. The return is that the undriven free-particle account cannot supply this trip: the design needs acceleration and deceleration, and an account of the forces producing them. The next contribution is that driven-motion model. Increasing the resolution of the free-particle calculation would retain the missing physical contribution.
+Suppose the engineer asks whether the same undriven model permits the two-metre trip to begin and end at rest. Its constant velocity would have to be zero throughout, so it cannot produce that displacement. This answers the feasibility question. If the engineer must also design a carriage that makes the trip, identify how it could accelerate and decelerate, model the forces available, and check the design against the required endpoints and time. A finer calculation in the undriven model would preserve the original obstruction.
 
 #### B.5.TU:5.3 - Keep a useful bound when the optimizer cannot be enacted
 
-A planner learning optimization must select whole jobs for four available hours. At most one A-job is available, taking three hours for stipulated value 5; at most two B-jobs are available, each taking two hours for value 3. Durations and values add in this constructed problem.
+A planner learning optimization must choose the highest-value combination of whole jobs that fits four available hours. At most one A-job is available, taking three hours for stipulated value 5. At most two B-jobs are available, each taking two hours for value 3. Durations and values add in this constructed problem.
 
 A linear relaxation permits real counts `0 <= x <= 1`, `0 <= y <= 2` with `3*x+2*y <= 4`. It returns `x=1, y=0.5`, value `6.5`. Recover the argument: the time condition gives `y <= (4-3*x)/2`, so `5*x+3*y <= 6+0.5*x <= 6.5`; the returned pair attains that limit.
 
-For the whole-job choice, enumerate the alternatives. With A selected, no B fits and value is 5. Without A, two B-jobs fit and value is 6. Select two B-jobs. The fractional optimizer has supplied a bound: no whole-job arrangement can attain value 7 because every such arrangement is also admitted by the relaxation.
+For the whole-job choice, two B-jobs fit and give value 6. Every whole-job value is an integer and the relaxation admits every whole-job arrangement. Its upper bound of 6.5 therefore establishes that none can exceed 6. The feasible choice and the bound together prove optimality. Direct enumeration gives the same conclusion here. With A selected, no B fits and the value is 5. Without A, at most two B-jobs fit. If the planner asks only whether 7 is attainable, the bound alone rules it out.
 
 The use of the theory changes with the question. Selecting work needs an attainable arrangement; excluding a target can use a bound. The practitioner needs to recover that relation before deciding whether a further optimization step is useful. B.5:5.4 also works the changed five-hour case.
 
@@ -154,7 +154,7 @@ Familiar terminology can make a supplied interpretation look independently recov
 | --- | --- |
 | Reuse a composition while overlooking how many inputs it consumes. | Recover the permitted operations and supply their inputs; in :5.1, copying is the decisive additional operation. |
 | Evaluate a familiar-looking expression before filling its arguments. | Construct the path, derivative and substitution required by the operation, as in :5.2. |
-| Improve a computation whose formulation omits the receiving condition. | Recover that condition and change the model or question; finer calculation of undriven motion leaves departure at rest unresolved. |
+| Improve a computation whose formulation omits the receiving condition. | Recover that condition. The undriven model rules out the requested trip from rest to rest. A design for making the trip must account for how the motion changes. |
 | Discard an infeasible optimizer together with its valid bound. | Interpret each result separately; :5.3 retains the exclusion of value 7. |
 | Require the same depth of study for using and altering a result. | Locate the contribution the work needs, then recover or obtain the reasoning that enables it. |
 

@@ -130,9 +130,7 @@ may justify a checked addition without a new standing workflow.
 8. **State and return the release decision.** Name the selected disposition, subject, effectivity, conditions, evidence, authority and
    any required permissions. State the permitted next Work, any unresolved risks or withheld scope, and what would reopen the decision.
    Apply the acceptance rule to its own subject. An attainable breach refutes an all-conditions guarantee. A required document absent at the deadline can warrant return while physical performance remains open. Check supported units or conditions against their other technical and permission requirements before disposing of a narrower offer.
-9. **Connect later realization.** When implementation or integration has occurred, identify the performing Agent, dated
-   Work, Method, actual transformation, resulting configuration and observations. Update affected descriptions and notify the recipients.
-   Ground the realization claim in evidence of what took place; an update to a status field alone does not establish it.
+9. **Connect later realization.** Establish the configuration and properties on which the next use depends. A recipient who can open the released archive and verify its contents may have enough evidence for that use while the identity of its installer remains unknown. An account of implementation or integration as performed Work also needs the performing Agent, dated Work, Method and actual transformation. Update the descriptions and notify the recipients affected by what was established.
 
 A release for realization can occur before implementation; release to service can depend on later implementation
 and observation; emergency containment Work can precede a full technical choice under its own authority. The case
@@ -148,7 +146,7 @@ must state which dependencies and timing apply.
 | Agents, authority, and permissions | Deciding and receiving Agents and the relation that grants authority for this decision. For any required permission, identify its grantor, holder, subject, scope and interval. State the relevant assignments, including the performer of any assigned later Work, and any conflicts of interest or abstention conditions. |
 | evidence and choice | Evidence for each claim, with provenance and limits; comparison basis; selected disposition; accepted losses; any material uncertainty; the judgement or limitation from a live inquiry alternative when needed by this decision or its recipient. |
 | decision and continuation | Released, narrowed, trial-only, withheld, rejected or probe-again result; next Work allowed by the governing rules and permissions; any withheld scope or blockers; and the conditions for withdrawal or reconsideration. |
-| later realization, when relevant | Performing Agent, dated Work, Method, actual transformation, resulting configuration, observations, description updates, recipients, and known correspondence gaps. |
+| later realization, when relevant | Observed configuration and properties, affected descriptions, recipients and known gaps. For a claim about performed implementation or integration, include the performing Agent, dated Work, Method and actual transformation. |
 
 The result may be carried, for example, by an issue record, release note, model view, linked engineering
 records, or generated report. The decision keeps its identity and grounds across those carriers; authority,

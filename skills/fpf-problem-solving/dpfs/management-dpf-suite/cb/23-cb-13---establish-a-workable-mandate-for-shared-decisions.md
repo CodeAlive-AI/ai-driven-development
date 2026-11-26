@@ -9,7 +9,7 @@ Use this pattern when participants in a common activity need shared decisions bu
 
 The governed object is the arrangement that makes specified shared decisions possible: their subjects, participants, source of authority, decision method, limits and means of reconsideration. This is one branch of community governance. Performing an already assigned organising task belongs to CB.7; applying an established participation rule to an incident belongs to CB.8.
 
-**First useful result:** those entitled to establish the arrangement have put a usable mandate into effect for the named questions, with its limits and challenge route understood. If they cannot do so, the result is the exact unresolved authority or agreement question and the work that may still proceed under existing conditions.
+**First useful result:** for a question about an existing mandate, a grounded answer about who can decide the matter, within which limits and for how long. For a design commission, a proposal the authorized participants can assess, with its consequences and the decisions they retain. To institute a mandate, those entitled to do so put the arrangement into effect with its limits and challenge route understood. When authority or agreement is missing, identify what remains open and what work can proceed.
 
 Start with a concrete decision the participants need to make. Identify whose contributions or rights it could change.
 
@@ -36,7 +36,7 @@ The problem is to construct enough shared authority and procedure for the actual
 
 ### CB.13:4 - Solution
 
-Construct the arrangement around a few real questions, compare forms that could settle them, test their ordinary and disputed use, then obtain the acts and conditions that make the selected mandate effective. Keep the constitution of authority separate from each later decision made under it.
+For a question about a current mandate, apply its governing basis to the subject, holder and date. An agreement may confer the power directly or require an appointment or another act. In the latter case, establish whether that act took effect for this holder. The applicable provision and evidence of its effect can settle the question before anyone exercises the power. To design a new arrangement, construct it around a few real questions, compare forms that could settle them, test their ordinary and disputed use, and return the proposed arrangement to those who will decide. If commissioned to introduce it, obtain the acts and conditions that make the selected mandate effective. Keep the constitution of authority separate from each later decision made under it.
 
 #### CB.13:4.1 - Separate the shared questions and affected parties
 
@@ -117,13 +117,13 @@ Select this option only where those participation terms and limits on discussion
 
 #### CB.13:4.6 - Adopt the arrangement and make it effective
 
-Test the proposed arrangement before adoption with an ordinary case and a consequential dispute. Check whether the named participants can carry it out with available time, information, access and support. Repair a missing contribution or revise the option.
+For a design or adoption decision, establish how the proposed arrangement handles ordinary questions and consequential disputes. Rehearse or try a case where the workings remain open or a trial has been commissioned. Check whether the named participants can carry it out with available time, information, access and support. Repair a missing contribution or revise the option.
 
-Present the resulting proposal and its consequences to those who can adopt it under the existing basis. Show the scope of the proposed authority, what remains with participants or local groups, the commitment required and how it can change or end. Obtain the required agreement or decision through the applicable procedure.
+Present the resulting proposal and its consequences to those who can adopt it under the existing basis. Show the scope of the proposed authority, what remains with participants or local groups, the commitment required and how it can change or end. Delivery of the proposal and its grounds can complete a design commission. If adoption is due, follow the applicable procedure to obtain the required agreement or decision.
 
 If this is the first limited voluntary agreement, make acceptance and its boundary explicit. Provide a way to decline. Record whose activity and contributions it governs and what happens to a person who leaves. Leave external obligations with their holders. A discussion of a proposal is not its adoption.
 
-Make the mandates and conditions effective: complete the required appointment or acceptance, provide access, obtain the promised resource contribution and tell participants where decisions and challenges go. Use OCE.6 for assignments and enabling relations when needed. A person can be selected while an essential condition remains unavailable; retain that distinction and reduce the dependent promise.
+For a commission to introduce the arrangement, complete the required appointment or acceptance, provide access, obtain the promised resource contribution and tell participants where decisions and challenges go. Use OCE.6 for assignments and enabling relations when needed. A person can be selected while an essential condition remains unavailable; tell users which service is available and refer any proposed change in their entitlement to whoever has the mandate to decide it.
 
 Keep the usable rule and current appointments discoverable. A short agreement can suffice for a small joint activity. A larger association may need its established constitutional and decision records. Use the existing form that preserves the needed scope, term, result and amendment route.
 
@@ -211,9 +211,9 @@ For the shared decision arrangement, ask:
 - Does the authority to adopt it come from an actual agreement or applicable institution?
 - Is consultation distinguishable from the procedure that produces a decision?
 - Where the arrangement uses representatives, can they obtain views, act within a bounded term and return reasons, and can their constituents replace them?
-- Can an ordinary question and a dispute pass through proposal, decision, execution and challenge with available people and resources?
-- If a named external procedure is selected, have these participants accepted its obligations, including its treatment of abstention, absence and amendment?
-- Has adoption occurred, and have the appointment, access and support conditions become effective?
+- When the arrangement itself is being designed or assessed, are there workable ways to decide ordinary and disputed questions, carry decisions into effect and hear a challenge?
+- If the design proposes an external procedure, can the participants assess its obligations, including its treatment of abstention, absence and amendment? If it is presented as binding, what gave it effect here?
+- For a claim about a present mandate, what established it and what does it cover now? For a commission to introduce a new arrangement, have its required adoption, appointment, access and support taken effect?
 - Is there a workable amendment, expiry and challenge route, including a challenge involving the decision-makers?
 
 A small voluntary agreement can answer these questions briefly. A stronger institutional or legal claim needs its own applicable evidence and qualified result.
@@ -228,7 +228,7 @@ A small voluntary agreement can answer these questions briefly. A stronger insti
 | Give local groups autonomy while retaining every usable decision centrally. | Allocate specific subjects and provide the means to act on them. |
 | Adopt a vote rule without eligibility, notice or a way to handle no result. | Complete the procedure around a concrete ordinary case and a dispute. |
 | Extend a small team's decision protocol to everyone attending a community activity. | Obtain the actual adoption and mandate, or choose a procedure whose participation terms the affected people can accept. |
-| Let the deciding body be the sole judge of every challenge to its own mandate. | Establish an alternate or return to the people who can constitute the mandate. |
+| Let the deciding body be the sole judge of every challenge to its own mandate. | Establish an alternate or take the challenge to the holders entitled to constitute or review the mandate. |
 | Treat an attractive revision as effective after a term has expired. | Preserve the proposal and obtain a current authorised disposition. |
 | Require a governing council for all carriers of a practice. | Identify any decision the users need to make jointly; retain independent use where no such decision is needed. |
 

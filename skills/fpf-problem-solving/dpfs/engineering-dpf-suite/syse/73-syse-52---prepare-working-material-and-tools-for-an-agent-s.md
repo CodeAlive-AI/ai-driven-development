@@ -5,7 +5,7 @@
 
 ### SYSE.52:1 - Problem frame
 
-**Use this when** a person or technical agent needs suitable working material or tools for the next step: a worksheet hides its carry row, a source return is missing from a model request, or a reduced tool list removes recovery. The subject is the actual working arrangement for that step: readable instructions and task facts, qualified source returns, unresolved attempts and available tools.
+**Use this when** the next step needs material or tools in a form its performer can use. A worksheet can hide its carry row, a source return can be missing from a model request, or a reduced tool list can omit the means of recovery. The subject is the actual working arrangement for that step: readable instructions and task facts, qualified source returns, unresolved attempts and available tools.
 
 The first result is material and tools the named performer can use for the next contribution, with its grounds recoverable. Check what the performer can recover and do. Where an omission could matter, establish that the needed material can be recovered or state the resulting limit.
 

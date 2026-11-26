@@ -23,7 +23,7 @@ Do not use OCE.16 merely because initiatives run at the same time, share a dashb
 | participant account | A bounded report from a participant or affected System about an action, demand, consequence, or condition. Use it to locate a possible dependency, then assess any claimed contradiction on evidence about both changes. Establish authority separately if a decision is at issue. |
 | qualified cross-change question | A question that identifies the changes, condition and period, the work, decision or conclusion that may depend on it, the relevant participants and evidence, and what is established or still needed. Identify a suitable method and supplier when a contribution is missing. |
 | direct Method | A Method whose result answers the qualified question within its stated applicability. For example, C.32.MWA.PP compares ways of using Methods together; an appointment requires the applicable assignment Method and actual authority. |
-| per-change return | A readable application of already-governed direct results to every affected change. It adds no second choice or authorization. |
+| per-change return | What an independently established result means for each affected change. Return that account to its commissioned recipient. Actual coordination can also require timely delivery to the parties who must act on it. |
 | direct exit | A stop in OCE.16 because no consequential consumer exists, the dependency is unsupported, or the direct answer and its per-change consequences are already available. |
 
 Different project, process, case, architecture, Method, organization, and operating descriptions remain different. OCE.16 asks which work in one change uses or would use a condition altered by another.
@@ -54,7 +54,7 @@ Where existing coordination leaves this connection unexamined, practitioners can
 
 ### OCE.16:4 - Solution
 
-Establish what the recipient must decide about the changes. For one proposed interface, identify the work that will use the changed condition and establish the dependency. For a joint transition, identify the changes that must work together, their allowed configurations and the conditions their owners must jointly meet. Pairwise compatibility can leave no configuration common to them all. Use a shared invariant, a feasible choice under the governing terms or coverage of the allowed choices, as the decision requires. Use an already qualified result where it answers the question. If a contribution is missing, use the Method appropriate to that result and return its conclusion or limit to each affected change.
+Establish what the recipient must decide about the changes. For one proposed interface, identify the work that will use the changed condition and establish the dependency. For a joint transition, identify the changes that must work together, their allowed configurations and the conditions their owners must jointly meet. Pairwise compatibility can leave no configuration common to them all. Use a shared invariant, a feasible choice under the governing terms or coverage of the allowed choices, as the decision requires. Use an already qualified result where it answers the question. If a contribution is missing, use the Method appropriate to that result. Establish what its conclusion or limit means for each affected change. Who needs to receive it depends on the commission and existing duties.
 
 A named alteration and a plausible consumer action can justify an inquiry. For reliance on its answer, establish the changes, the altered condition, receiving action or conclusion, interval and relevant evidence. Use participant accounts where they can establish otherwise missing work or consequences. Identify a governing Method, an owner or an outstanding condition when the answer depends on one.
 
@@ -64,7 +64,7 @@ A named alteration and a plausible consumer action can justify an inquiry. For r
 2. **Follow the dependencies needed for the commissioned decision.** For each material condition, identify where another change uses it, for which work and during which interval. For a joint outcome, establish how the necessary settings, capacities or transitions can hold together. Use an existing result that already covers the whole. If the evidence excludes one dependency, return that finding and carry forward any others the decision still depends on.
 3. **Qualify the claim with participants and available results.** Use any relevant participant account and distinguish observed fact, current relation, expected consequence, proposal, interpretation, and decision. Use what is already known to examine the named condition, consumer action, timing, effectivity and alternatives. Seek a further observation or outside result only when its attainable contribution can change the next action, change which conclusion is supported or make the proposed use admissible, and that gain warrants its full burden; use `C.11.DUA` and `A.15.9` for that question. Return a supported or absent dependency, a compatible difference, an unresolved claim, or a missing fact or owner result with its effect on the proposed continuation.
 4. **Use the Method for the required result.** Choose the applicable Method and result owner using the question in the table in section 4.2. Give it the smallest sufficient question and evidence. Use the resulting comparison or technical judgement. A choice, acceptance or authorization requires the corresponding decision or rule.
-5. **Return governed results to every affected change.** For each change, state the direct result it can use, the condition it must preserve, revise, obtain, or stop assuming, the owner and validity window, and any change in conditions or observations that would reopen the question. Leave unaffected Work on its current basis. If the direct result is missing, return that exact absence and its consequence rather than filling it by coordination language.
+5. **Establish the consequence for each affected change and return the commissioned result.** For each change, state the direct result or limit, what condition would need to be preserved, revised or obtained, who can act and when the finding applies. Return the account to the agreed recipient. When the changes must be coordinated or a standing duty requires notification, provide each entitled party with the information it needs within the relevant decision window and disclosure conditions. Leave unaffected Work on its current basis. If the direct result is missing, return that exact absence and its consequence rather than filling it by coordination language.
 
 Before adding qualification work in move 3, compare it with the **competent current continuation for the same receiving action and window**. Existing coordination may already have found the dependency, consulted the relevant participants, obtained the owner result and made its conditions usable by both changes. Apply that answer and finish. For an unresolved issue, name the particular condition or consequence and what its possible answers would establish for the work, claim or decision.
 
@@ -75,7 +75,7 @@ Price the complete continuations using C.11.DUA and A.15.9. Retain their common 
 | Qualified question | Direct route and OCE.16 boundary |
 | --- | --- |
 | Can admitted Methods or candidate Method accounts be co-used under materially different Work order, allocation, subject/support, provider-access, authority, evidence, burden, description, or cultural relations? | Use C.32.MWA.PP. It can return a relation-only arrangement while every Method remains unchanged and no composite Method is proposed. OCE.16 supplies the missed cross-change input and later per-change return only. |
-| Which prospective organization synthesis preserves the relevant subjects and several structures with tolerable conflict and moved burden? | Use C.32.MWA for the prospective organization synthesis; return its result to the affected changes. |
+| Which prospective organization synthesis preserves the relevant subjects and several structures with tolerable conflict and moved burden? | Use C.32.MWA for the prospective organization synthesis and identify what its result means for the changes that depend on it. |
 | What contribution, crossing, position, assignment, permission, authority, access, provision, or enabling relation should be specified or established? | Use OCE.4, OCE.5, OCE.6, or the direct provider, governance, administration, or specialist result. OCE.16 preserves each truth status and authority. |
 | How should product or service architecture and organization architecture be coordinated? | Use OCE.7. OCE.16 only reveals a relied-on condition altered by another change. |
 | Which whole human, AI, robotic, provider, platform, or hybrid arrangement should obtain a bounded result? | Use OCE.8 to complete and compare arrangements, preserving the distinction between a probe recommendation and an authorized choice. |
@@ -83,7 +83,7 @@ Price the complete continuations using C.11.DUA and A.15.9. Retain their common 
 | What does current operating Work require, admit, continue, interrupt, prioritize, or return? | Use the applicable current OPS.1-OPS.7 and A.15 results; obtain any missing operating or capacity decision from its direct owner. |
 | What authority, safety, legal, financial, security, labor, clinical, service, or capability predicate is required? | Use the applicable rule or competent domain result. Obtain a missing decision or contribution when needed, or identify the specific condition that cannot be established. |
 
-A direct route can need several suppliers. Identify each missing contribution, its source where known and the grounds its use requires. Return the supplied results or remaining limits to the affected changes.
+A direct route can need several suppliers. Identify each missing contribution, its source where known and the grounds its use requires. Relate each supplied result or remaining limit to the affected work and return the account to the relevant recipient under step 5.
 
 #### OCE.16:4.3 - Record the Result
 
@@ -94,14 +94,14 @@ A direct route can need several suppliers. Identify each missing contribution, i
 | claim qualification | Relevant participant accounts and observed facts; current relation/effectivity evidence; expected consequences; proposals; interpretations; decisions; uncertainty and missing facts. |
 | direct route | Applicable Method, bounded question, required inputs, result owner and authority, and any unavailable result. |
 | direct result | The governed comparison, relation, authority, operating, specialist, stop, or missing-result return. Do not relabel it as an OCE.16 decision. |
-| per-change return | For every affected change: usable result, preserved or revised condition, any resulting action or stop, validity window and conditions for reconsideration. |
+| per-change return | For every affected change, the usable result, preserved or revised condition, any resulting action or stop, validity window and grounds for reconsideration. Identify recipients and delivery conditions where coordination or another duty requires a handoff. |
 | continuation and exit | Any further work selected for this question, and the unaffected work that can continue on its present basis. |
 
 A short note in an existing change account can carry the result. Retain only what the affected changes need to act on the dependency.
 
 #### OCE.16:4.4 - What Changes in Practice
 
-A practitioner can test a proposed alteration against the action or conclusion that relies on it. Evidence can resolve the dependency, identify it as absent or leave a particular question open. Give the affected changes that result and identify the professional or authorized contribution needed where it remains open.
+A practitioner can test a proposed alteration against the action or conclusion that relies on it. Evidence can resolve the dependency, identify it as absent or leave a particular question open. Return that finding, its consequences for the affected changes and any further contribution needed to the recipient entitled to use it. Where coordinated action was commissioned, connect the result to the decisions its authorized recipients must make.
 
 ### OCE.16:5 - Archetypal Grounding -- PumpWorks Support Retirement
 
@@ -148,7 +148,7 @@ Return the governed credential condition to the election change and the governed
 
 | Recurring bias | Likely drift | Repair |
 | --- | --- | --- |
-| local-completion bias | One change's milestone is treated as closure of another change's premise. | Test the altered condition against one consequential consumer action and return the direct result to both. |
+| local-completion bias | One change's milestone is treated as closure of another change's premise. | Test the altered condition against the receiving work that relies on it. Establish what each change can rely on and make the handoffs required under step 5. |
 | simultaneity bias | Overlapping dates are treated as a dependency. | Name the exact altered condition, consumer action, consequence, and interaction window. |
 | inconsistency literalism | A participant's inconsistency claim becomes an objective contradiction. | Preserve the account, then test current relations, evidence, interpretation, and authority separately. |
 | resistance attribution | A challenged conjunction is dismissed as opposition to change. | Ask what organizational prescription, action, burden, authority, or support condition the participant identifies. |
@@ -166,7 +166,7 @@ Return the governed credential condition to the election change and the governed
 - [ ] The selected Method answers the required question under the stated conditions; its result owner is identified before substantive alternatives are compared.
 - [ ] C.32.MWA.PP owns Method/candidate-account co-use, including unchanged-Method relation-only arrangements.
 - [ ] Any architecture, compatibility, approval, acceptance, priority or capacity result identifies the rule, evidence or responsible decision that establishes it.
-- [ ] Every affected change receives the governed result or exact missing result; unaffected Work keeps its current basis.
+- [ ] The account establishes what the result or outstanding uncertainty means for each affected change. The result is usable by its commissioned recipient. Any delivery required for coordination or under a standing duty is established on its own grounds. Unaffected Work keeps its current basis.
 - [ ] The answer covers the commissioned dependency or joint transition. One interface can settle the joint decision if its result entails the answer. An incompatibility at one required interface can rule out a proposed transition while other interfaces remain open. A request to identify all dependencies requires coverage of that set.
 - [ ] Any added qualification is compared with the adequate current continuation at full common and incremental burden; its accepted gain is still attainable before the receiving window closes.
 
@@ -180,7 +180,7 @@ Return the governed credential condition to the election change and the governed
 | “OCE.16 selects the combined arrangement.” | Route Method/candidate-account synthesis to C.32.MWA.PP and organization relations to their direct OCE or domain owners. |
 | “The programme owner can waive the missing access.” | Use an effective permission or obtain the missing determination from its authorized source. Identify any provider or security condition still needed. |
 | “The person has capacity across the quarter.” | Inspect the consequential action windows, assignment, access, authority, burden, and support. |
-| “Migration is complete, so old support can end.” | Return the direct relation result to every change that still consumes the condition. |
+| “Migration is complete, so old support can end.” | Establish which remaining work still relies on the condition and who must receive the direct result for the authorized transition. |
 | “The dashboard is green, therefore the changes are compatible.” | Treat the display as a carrier; recover the evidence, decision, and actual relations it describes. |
 | “Create a new coordination body for every interaction.” | Use the existing owners and Methods; establish a new organization relation only through its direct design and authority results. |
 

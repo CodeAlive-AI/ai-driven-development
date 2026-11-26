@@ -78,6 +78,8 @@ If a new observation defeats the account, B.5.RR revises the affected reasoning.
 
 Return the distinction, the conditions that make it meaningful and the next use it supports. A short statement may suffice. Preserve the original episode or phrase when later interpretation would otherwise lose the point.
 
+Ask which question the formulation settles. A participant who wanted help saying what they meant can finish with a phrase they can use and correct. If their experience raised a question about how a whole practice works, use the distinction to locate the operation or rule that matters for that question. Establish what the episode or the participant's further account actually shows about it. When the conversation is open to discovering new questions, the participants can choose one that has just become expressible.
+
 Stop when the contribution is usable, when further articulation cannot improve the decision, or when the participant cannot recover enough to continue. An unresolved but better located question is a result.
 
 For joint work, the participant supplies experiential correction, the listener supports expression, and a subject specialist may supply the account needed for a subsequent inference. One person may perform several contributions. An AI can help formulate, compare and reason from available material; the participant's private experience is not made accessible to the AI merely by assigning it that role.
@@ -97,6 +99,8 @@ The listener asks, “What does the form help you notice about the meeting?” T
 The initial contradiction separates into two conditions: permission to speak and the possibility of changing the set being considered. The designer can request consideration of a third option. The listener has not established that the chair intended to exclude it.
 
 If the chair explains that the third option was already considered and was excluded by a constraint, the next question concerns that constraint and whether it applies. Repeating the claim that speaking was ineffective would lose the new condition.
+
+The designer's request to explain what “no room” meant can end with that distinction. Suppose the review owner asks whether the standing procedure allows a third option. Follow how a proposal becomes an option for decision. If the applicable procedure gives the chair discretion to add an eligible proposal, that provision can settle the permission question. Whether this proposal qualified and why the chair continued with two options concern the particular review.
 
 #### B.5.EA:5.2 - A teacher's “they do not understand”
 
@@ -127,9 +131,8 @@ The listener's expertise can make a premature explanation attractive. Preserve t
 ### B.5.EA:7 - Conformance Checklist
 
 - A participant can return to the experience or identify the limit of that return.
-- The expression develops through recoverable corrections rather than an imposed diagnosis.
-- The resulting distinction changes a question, interpretation or possible action.
-- The recipient can obtain the meaning needed for the use.
+- The participant can use or correct the expression. Corrections that change the intended use remain recoverable.
+- For a completed articulation, the intended recipient can recover the distinction and how it bears on a question, interpretation or possible action. If the result is still a cue or a better located question, identify what is understood and what remains open.
 - Experiential fit, shared understanding and warrant for a world-directed claim retain their different grounds.
 - Continuation uses the result or identifies the remaining difficulty without requiring an entire research programme.
 

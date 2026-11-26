@@ -60,7 +60,7 @@ Use one action spine:
 3. separate the direct subject result, optional first-use classification, bounded reliance, receiving conditions and result when needed, and auxiliary facts;
 4. state what the candidate exposes or preserves and what it withholds, loses, transforms, or leaves uncertain;
 5. mark the row `select`, `decline`, or `unresolved` for the named use and give its return trigger;
-6. co-record only rows that support the same receiver and action or decision.
+6. for representations used in one action, connect the claims the receiver will rely on and establish that they concern compatible subjects and conditions.
 
 **Local mantra.** *Who must decide or act? Which fact settles what they can do? Where does that fact come from? What remains open? Which change would make us decide again?*
 
@@ -74,7 +74,7 @@ Write one sentence:
 <receiving System> must <take this action or make this decision>.
 ```
 
-Start with the rule for the decision. State which alternatives it admits, rules out or leaves for comparison. Connect each fact you use to the part of the rule it satisfies. A source can reliably establish a fact that explains why someone proposed an option. The decision may still turn entirely on another fact. Apply the rule with the first fact unknown or changed, holding the other grounds fixed. If the answer could change, identify the check that would settle it. If the answer holds across the remaining possibilities, you can give it now.
+Recover the judgement or construction the receiver owes. For a decision under a given rule, start with that rule. Where the commission is to develop the rule, identify the possible cases it must distinguish and why they matter to the receiver. State which alternatives it admits, rules out or leaves for comparison. Connect each fact you use to the part of the rule it satisfies. A source can reliably establish a fact that explains why someone proposed an option. The decision may still turn entirely on another fact. Apply the rule with the first fact unknown or changed, keeping other grounds fixed where possible and varying linked facts together where the conditions require it. If the answer could change, identify the check that would settle it. If the answer holds across the remaining possibilities, you can give it now.
 
 A second source may independently support the same premise. Losing one source then leaves the other available. If the governing rule requires two independent observations or a particular authorization, that condition is itself a premise. Where it matters for action or review, say which sources supported the decision, which the rule required and which answer a different question.
 
@@ -90,7 +90,7 @@ Open only the layers required by the attempted use.
 | --- | --- | --- |
 | Direct subject result | The candidate's independently governed kind or result, its subject, and any representation, conformance, correspondence, transition, structure, collection, mathematical, plan, Work, or domain relation on which the selected claim depends. | Intended evidence use, reliance, receiving decision, permission, gate passage, or authorization. |
 | Optional A.2.4 first-use classification | When the candidate episteme is being used as evidence or as a status carrier, the episteme, target claim or status, polarity or value, intended use, and any scope or window that changes that use. | Provenance, sufficiency, `RelianceDisposition`, assurance, permission, or receiving action. |
-| Bounded reliance and a needed A.10 account | The relied-on claim, source, actual use relation and support needed for that use. When the source-to-use account remains implicit or must be replayable, use A.10's path and `RelianceDisposition`. Retain currentness, a live challenge, a locally plausible unsupported use, and a reopen or stop condition when they affect this reliance. | Claim truth, selector outcome, gate result, approval, permission, assurance, or Work authorization. |
+| Bounded reliance and a needed A.10 account | For a proposed use, the claim, source and grounds that make it suitable. To say a receiver actually relied on it, establish the use relation. When the source-to-use account remains implicit or must be replayable, use A.10's path and `RelianceDisposition`. Retain currentness, a live challenge, a locally plausible unsupported use, and a reopen or stop condition when they affect this reliance. | Claim truth, selector outcome, gate result, approval, permission, assurance, or Work authorization. |
 | Receiving conditions and result | The entry conditions imposed by the rule governing this contribution, including any required gate, permission or authorization. Obtain the choice, acceptance, task or domain result when that result is itself required by the receiving work. Qualified inputs may be used to construct it. | Candidate identity or evidence merely by mentioning the row. |
 | Auxiliary facts | Lens, publication, form, carrier, repair, provenance, source, or rendering facts needed to interpret or recover the row. | Any missing positive subject result, reliance, or receiving result. |
 
@@ -202,7 +202,7 @@ Under C.11 the result `CR7` is `choose now`: retain the current edition for WP4.
 | Source considered | What the source supports | Use in this decision |
 | --- | --- | --- |
 | The commissioning rule, the setup estimate for MC7 and the estimate for retaining the current edition | The applicable ceiling and the estimated time required by each option under the trial conditions. | `select` for the budget comparison. Reopen it if the rule, estimate, alternatives or trial conditions change. |
-| Trial item in `WorkPlan-WP4` | A.15.2 identifies a planned one-hour slot. A.10 path `P-WP4` supports that limited claim (`pass`). | `select` for estimating the full trial time. The four-hour setup estimate is already sufficient to exclude MC7. A claim that the trial took place would require a record of the Work. |
+| Trial item in `WorkPlan-WP4` | A.15.2 identifies a planned one-hour slot. A.10 path `P-WP4` supports that limited claim (`pass`). | `select` for estimating the full trial time. The four-hour setup estimate is already sufficient to exclude MC7. To report that the trial took place, use adequate grounds for the occurrence, such as direct observation or a reliable Work record. |
 | Workflow diagram in `MethodDescription-MD5`, edition 5 | A.3.2 identifies the MethodDescription and its proposed order of work. Path `P-MD5` supports reading that order (`pass`). | `decline` as a premise for choosing on budget. The engineer can use the diagram to prepare an eligible trial. Revisit the estimate if a change of order changes the work it covers. |
 | `WorkRecord-W19` about the earlier `Work-W19` | A.13 and A.15.1 establish the earlier assignments and Work. The record identified under C.2.1 reports rework in those conditions. Path `P-W19` supports that observation within its comparability limit (`degrade`). | `decline` for the budget comparison. The record explains why the change was proposed. It supplies neither the new setup estimate nor evidence that MC7 prevents the old breakdown. |
 
@@ -220,7 +220,7 @@ If the direct release gate or permission pattern instead returns a negative resu
 
 The engineer can finish the current comparison by giving the planning rule, the estimates and the resulting choice. The source of the four-hour estimate matters even though the workflow diagram and the earlier work record have identifiable editions. Neither supplies that estimate.
 
-A later reviewer may need to reconstruct the choice. Give them the estimates used, what each covered, the budget in force and the alternatives compared. If they also need to reconstruct why MC7 was proposed, give them the earlier rework record and its comparability limit. Keep this basis once in the existing decision account when it can serve those uses.
+A later reviewer can use the estimates, their coverage, the budget rule then in force and the alternatives to reconstruct which proposals were eligible. To establish the decision that took effect, apply the operative rule if it settled the outcome, or recover the decision that its authorized holder made. To say the holder chose on the basis of these estimates, establish that they used them. They might have received an independent estimate with the same result. If the question concerns why MC7 was proposed, recover the earlier rework evidence used for that proposal and its comparability limit. One decision record can already contain the grounds needed for several of these questions.
 
 ### C.37:6 - Bias-Annotation  *(informative)*
 
@@ -229,7 +229,7 @@ A later reviewer may need to reconstruct the choice. Give them the estimates use
 | Ontological | Repeated use of diagrams, tables, and records motivates a universal representation kind or relation. | Keep each candidate under its kind and relation; C.37 governs only the one-use selection move. |
 | Epistemic | Selected means true, sufficient, or assured. | State the claim and its support and limits, reuse or obtain an A.10 disposition when that account is needed, and ground any B.3 assurance claim separately at issue. |
 | Decision | The account is mistaken for the receiving choice, permission, authorization, or gate result. | Name the receiving rule and obtain its result for the claim or action that requires it; use qualified inputs to construct that result. |
-| Structural | Co-used rows appear to form one integrated whole. | Treat co-use as a shared action key only; open collection, structure, construction, or coherence claims separately. |
+| Structural | Several sources for one action appear to form an integrated account. | Establish the correspondence and inference needed for this action. Qualify any further claim about the organization of the representations on its own grounds. |
 | Didactic | A large form replaces the recognizable action. | Start with one receiver, one action, and one row; add a field only when it changes selection or return. |
 
 ### C.37:7 - Conformance Checklist
@@ -245,7 +245,7 @@ A later reviewer may need to reconstruct the choice. Give them the estimates use
 | `CC-C37.7` Exposure and loss | Each selected or declined claim states what is exposed or preserved and what is withheld, lost, transformed, or uncertain. |
 | `CC-C37.8` Row disposition | Each row is `select`, `decline`, or `unresolved`; `degrade` narrows the selected claim rather than creating another row vocabulary. |
 | `CC-C37.9` Return visible | Every row names the source or governing pattern and the condition that reopens selection. |
-| `CC-C37.10` Co-use bounded | Joint use means only reliance by the same receiver for the same action; no collection, structure, view family, graph, or integrated world account is inferred. |
+| `CC-C37.10` Co-use bounded | For the same receiver and action, show which premises the claims supply or corroborate, how their subjects or configurations correspond, and how the joint inference works. A claim about an integrated view family needs its own grounds. |
 | `CC-C37.11` Use-needed retention | An immediate sufficient selection can finish without another record. When a later use needs the complete basis, it is recoverable once in an owning same-use result or one ordinary C.2.1 episteme, never both. |
 | `CC-C37.12` Assurance progressive | B.3 is used only when the question concerns a named assurance claim; reversible inspection carries no mandatory assurance burden. |
 | `CC-C37.13` No universal ontology | No `U.Representation`, universal `RepresentationOf`, fixed representation taxonomy, master mediation route, or public account kind is introduced. |

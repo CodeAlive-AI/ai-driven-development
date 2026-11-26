@@ -14,7 +14,7 @@ Before selecting framework guidance, read and apply [Using FPF Library](../../li
 
 Check that a link has opened the intended pattern or section. If it has not, treat that return as unresolved. For an older link without a label, find the former heading in a saved edition or the file’s history and copy the complete PatternID or SectionRef. Follow [Resolve a portable reference](../../library/USING-FPF.md#resolve-a-portable-reference) with the complete PatternID or SectionRef and any requested edition.
 
-After the Table of Contents, the Readme’s `Practical entries` bring together ordinary examples of using one pattern and selected Practical-Use Cards for reasoning with several. For other FPF, DPF or LPF questions, look up the applicable patterns in the Table of Contents and use those patterns.
+After the Table of Contents, the Readme’s `Practical entries` illustrate uses of individual patterns and combinations. This Table of Contents covers Core. When the work calls for a disciplinary or local method, use [Using FPF Library](../../library/USING-FPF.md) to find the relevant available DPF or LPF and read its method.
 
 The FPF Architectural Reference explains the cross-cutting ideas and the usual sequence for applying a pattern. Its **Big FPF Storylines** connects a worked question to the framework’s Architectural Rationale, shared sources, profile choices and the conditions for using the whole combination.
 

@@ -32,7 +32,7 @@ How can a practitioner make the design executable, preserve its criticism and al
 | Advance commitment | Prior choices can protect criticism, while some inquiry depends on learning what to ask or inspect during engagement. |
 | Feasibility | Access, timing, measurement and resources may each appear sufficient but fail in combination. |
 | Records and protection | Later criticism needs consequential choices preserved, while indiscriminate recording can expose protected information or add unusable volume. |
-| Supplied competence | A researcher can apply their own qualified procedure or use a suitable laboratory, statistical or archival contribution supplied by another practitioner or service. |
+| Obtaining a needed result | A team can apply a procedure it is equipped and permitted to use, or obtain a qualified result from a laboratory, statistical service or archive. For a protocol that requires the team to perform the work itself, establish whether it can do so with the support it will have. A conclusion about actual performance needs evidence of the team’s part in the work. |
 | Continuity | Most of a design may survive a local obstacle, while work depending on a defeated premise must stop or change. |
 
 ### RMP.3:4 - Solution

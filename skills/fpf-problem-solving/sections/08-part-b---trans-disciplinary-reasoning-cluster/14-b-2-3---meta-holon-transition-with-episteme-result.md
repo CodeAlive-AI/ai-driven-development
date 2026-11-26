@@ -6,11 +6,11 @@
 
 ### B.2.3:0 - Use This When
 
-Use this pattern when B.2 has identified one candidate new whole and that individual must be recognized under the already admitted `U.Episteme` kind: a theory, model family, standard, doctrine, specification body, research programme, field-level knowledge body, or other claim-bearing non-agentive holon.
+Use this pattern when whole reidentification concerns a theory, model family, standard, doctrine, specification body or other claim-bearing non-agentive holon. B.2.3 supplies the test for a proposed `U.Episteme`. If the commission includes constructing the account to be tested, work from the conclusion its recipient needs.
 
-Use `B.2` first to decide whether whole reidentification is current and to identify the one candidate new whole. Use `B.2.3` when that candidate is to be tested under `U.Episteme`. For a first constitution or recognition without an established prior whole, use A.1 and C.2.1 as explained in B.2:4.
+Use `B.2` for the comparison with the prior whole and `B.2.3` for the proposed episteme. Where the commission concerns first constitution or recognition with no established prior whole, use A.1 and C.2.1 as explained in B.2:4.
 
-**First useful move.** For B.2's candidate, identify its interpreted claim content, the independently identified EntityOfConcern, and the effective rules for designating that entity and interpreting those claims (C.2.1:4.1.1). Test whether their `EpistemeConstitutionRelation` obtains.
+**First useful move.** For B.2's candidate, identify its interpreted claim content, the independently identified EntityOfConcern, and the effective rules for designating that entity and interpreting those claims (C.2.1:4.1.1). Test whether their `EpistemeConstitutionRelation` obtains. When the recipient needs a claim or a new account and leaves its construction open, start with what the account must establish. Use :4.1 to select its premises and their interpretation.
 
 Keep grounding, viewpoint, view, publication, source use, representation, evidence, and assurance in their neighboring relations.
 
@@ -23,7 +23,7 @@ Keep grounding, viewpoint, view, publication, source use, representation, eviden
 - If the result whole is a physically embodied holon eligible to act, use `B.2.2`.
 - When no whole-reidentification question remains, use the episteme, publication or source-use pattern for the remaining question; :4.2 and `CC-B2.3-4` distinguish these uses.
 - If the question is effect-free episteme morphing, viewing, retargeting, or controlled semantic coarsening, use `A.6.2`, `A.6.3`, `A.6.4`, or `A.6.3.CSC`.
-- If the question is synthesis work, use `A.15.1` for performed work and `A.12` or `A.3.4` for acting-side and transformation claims.
+- Use `A.15.1` to establish performed synthesis Work and `A.12` or `A.3.4` for acting-side and transformation claims. For an order to construct a claim-bearing account, identify the result needed in :4.1. Use B.2 when its relation to a prior whole matters.
 - If the wording is ambiguous emergence-family language, use `B.2.P` before selecting B.2.3.
 
 ### B.2.3:1 - Problem Frame
@@ -61,7 +61,9 @@ Use B.2.3 as the `U.Episteme` specialization of B.2. Reuse its existing whole, c
 
 #### B.2.3:4.1 - Reuse The B.2 Candidate And Complete Episteme Recognition
 
-Start with B.2's candidate designated as a `U.Entity`, proposed for the already admitted `U.Episteme` kind. Execute the A.1 criterion over that candidate, including the larger-assembly applicability and compatibility condition. Apply C.2.1 to that individual:
+Start with B.2's candidate designated as a `U.Entity`, proposed for the already admitted `U.Episteme` kind. If the candidate is given, assess it directly. When the practitioner is to construct the account, start with the conclusion the recipient needs about its subject. Trace that conclusion back to the claims that could warrant it, including any relation needed to use them together. Ask whether the relevant terms designate the same objects, populations and occasions across those claims. Two local models may give the same totals while assigning them to different individuals. A total can settle a threshold for the whole. A conclusion about which individual qualified requires the distinguishing information or another ground that settles it. If an existing account already yields the required answer, give that inference. An order to construct a new unified account calls for its own result. To build it, choose its constituent claims, the inference joining them and a scheme that preserves their intended interpretation. A source consulted in this work may supply a premise without becoming a constituent of the resulting episteme.
+
+For recognition, execute the A.1 criterion over that candidate, including the larger-assembly applicability and compatibility condition. Apply C.2.1 to that individual:
 
 1. identify its interpreted claim content, including the semantic relations among its claims, under C.2.1:4.1.1;
 2. identify the independently governed `U.Entity` that those claims concern;
@@ -154,7 +156,7 @@ Under the assumption Ack(r), Q gives both storage conditions and L gives Recover
 
 E1 therefore satisfies the displayed A.1 grounds and C.2.1 constitution and meets the receiving need. If later work needs a reidentification record, `resultHolonRef` names E1 and `resultHolonKindRef` names `U.Episteme`. The record and any classification assertion concern E1; Q concerns S.
 
-The logical construction establishes the conditional derivation, not the truth of P, T, or L for a real deployment. A use that must rely on those service claims needs their grounds and any assurance required under B.3.
+The logical construction establishes the conditional derivation, not the truth of P, T, or L for a real deployment. A use that must rely on those service claims needs their grounds and any assurance required under B.3. When the question is whether the stated derivation is available, the displayed construction settles it. In another doctrine whose interpreted premises already entail Q, a request to derive Q can be met from those premises. For assurance about one actual request, an applicable record establishing the acknowledged payload at both stores may already suffice. Neither conclusion establishes that a particular operator consulted the doctrine. That historical question turns on evidence of its use.
 
 **Change the interpretation condition.** Suppose the supplied candidate uses G1 with the complete R0, whose declared vocabulary has no interpretation of `ReplicaStored`. The proposed `<G1, S, R0>` fails constitution: its scheme cannot interpret the whole graph. Supply a scheme that does interpret it and identify the resulting episteme.
 
@@ -192,7 +194,7 @@ The PDF file carries an expression of the standard. A selected publication form 
 
 | Check | Requirement |
 | --- | --- |
-| `CC-B2.3-1` | B.2 has left a whole-reidentification question before B.2.3 is used. |
+| `CC-B2.3-1` | B.2 supplies the question about continuity. For a commission to build an account, the proposed claims, inferential organization and effective interpretation are justified by what the recipient must establish. A request about an existing account can be settled by its present grounds. |
 | `CC-B2.3-2` | A positive episteme-result claim requires B.2's candidate new whole to pass the A.1 criterion and C.2.1 constitution under the already admitted `U.Episteme` kind. Failed or unresolved recognition follows :4.1. |
 | `CC-B2.3-3` | Retain B.2's candidate and established-result references. C.2.1's ClaimGraph, EntityOfConcern and effective ReferenceScheme remain the identity discriminators; neighboring relations and any optional durable account stay separate. |
 | `CC-B2.3-4` | Use C.2.1 for constitution and the patterns in :4.2 for neighboring claims. Use E.24.PUB for publication availability, form or carrier distinctions and E.17 for a needed reader face of an accepted account. Use C.2.P for unresolved source-expression or source-to-use wording, and C.2.P.DR for claims inferred from declarative form alone. |

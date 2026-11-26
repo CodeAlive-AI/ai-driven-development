@@ -26,7 +26,7 @@
 
 The local result is the repaired head, its kind and reading, the primary entity or relation when one is active, the action or question under repair, and the boundary with outside work.
 
-**Success condition.** LHR succeeds when a careful reader can identify the local lexical-head kind, the primary entity or relation when one is active, carried action or question under repair, and outside-work boundary for this sentence or small unit. If that is enough and the publication unit no longer shifts, stop. Apply `E.17.AUD.OOTD` only when the whole publication unit still cannot keep one primary subject, one carried move, and one outside boundary stable after the local repair.
+**Success condition.** LHR succeeds when a careful reader can identify the local lexical-head kind, the primary entity or relation when one is active, carried action or question under repair, and outside-work boundary for this sentence or small unit. If that is enough and the publication unit no longer shifts, stop. Apply `E.17.AUD.OOTD` only when readers still cannot follow which subjects and moves the unit needs to connect for their question, or where its claim ends.
 
 **When another approach applies.** Use another approach when:
 - the same publication unit still has unstable primary-subject or carried-move reading after local repair and now needs one stable answer to what it is about, what move it carries, and what remains outside;
@@ -146,7 +146,7 @@ Use this order when one local lexical head is carrying too much:
 1. name the overloaded word;
 2. restore the lexical-head kind;
 3. recover the supported reading. If several remain, state what still holds and check a distinguishing fact only when the difference matters to the reader’s work;
-4. restore the active primary entity or relation when one is active;
+4. restore the active entity or relation, including the relevant whole or part when the same word can name either. For instance, both an entire review Method and one constituent can be called `the method`. Read the sentence in light of the question the reader needs it to answer.
 5. restore the carried action or question under repair, if any;
 6. restore any family, governing pattern, primary entity, active relation, and nearest outside-work boundary the sentence is relying on;
 7. choose the disposition the repaired unit supports: stay with local repair, apply bounded comparison, or apply publication-unit discipline.
@@ -169,7 +169,7 @@ When you need a starting sentence, choose an example that fits the working situa
 | Operations review | `This review unit is about the incident episode and its timing contrast, not yet about action approval.` |
 | Semio-heavy paragraph | `This paragraph is about the comparative review unit, not the wider architecture strategy.` |
 
-Use these starters only as local examples. If outside observations or downstream constraints change what the sentence can claim, reopen the question using the governing FPF pattern or the project-side FPF kind and reference named by value. The starter does not set the first step of a fixed flow.
+Use these starters only as local examples. If outside observations or downstream constraints change what the sentence can claim, reassess the affected claim under the applicable FPF pattern or project-side basis. A new answer can still address the same question. The starter does not set the first step of a fixed flow.
 
 ### E.17.AUD.LHR:5 - Worked slices
 
@@ -193,7 +193,7 @@ Local repair first:
 - carried move = make one boundary visible;
 - outside work = responsibility assignment.
 
-The repaired unit can now either stay with the boundary review or explicitly become a responsibility-assignment publication. Without the repair, this note overclaims by leaving the change of job unmarked.
+If the request was to report the service boundary, the note can end with that boundary. If the same commission also calls for assigning responsibility, identify who can make the assignment and how the boundary bears on that choice. The authorized assignment has its own grounds. For a proposal to change the agreed scope, follow the applicable agreement. It may entrust the change to a service or require several parties to agree.
 
 #### E.17.AUD.LHR:5.2 - A published text is mistaken for the policy it describes
 
@@ -232,7 +232,7 @@ Local repair:
 - move = bounded comparison;
 - outside work = wider architecture strategy.
 
-The paragraph now states its bounded comparison without claiming to explain the package.
+The repaired paragraph can answer a request for that comparison. If the reader asked how the whole package works, retain the comparison as a contribution and supply the connection between the compared parts and the organization of the package (C.39.GA:4).
 
 #### E.17.AUD.LHR:5.4 - Local repair selects bounded comparison
 
@@ -287,9 +287,9 @@ Local repair can still clarify the current sentence:
 - carried move = capture the rollback state visible on the current evidence slice;
 - outside work = any new approval, adjudication, or widened authority step.
 
-Outside observation has changed what this local unit can claim. Appending the new pressure to the old repair would conceal that change. Stop, reopen with a newly declared question, or use the governing pattern if approval, rollout, release, gate, policy, assurance, adjudication, or publication-unit stabilization has become primary.
+The new bulletin can change the answer to the same question about the current rollback state. Keep the restored meaning of `note` and update the finding if the evidence warrants it. When the question concerns the earlier snapshot, the earlier finding may still answer it.
 
-**Recovery reading.** The outside observation has changed what the unit can claim. Stop and reopen or apply the neighboring governing pattern. Another local qualifier will not settle the new question.
+**Recovery reading.** Establish which state and date the reader needs. Open a new approval or a wider review question when the commission or an applicable rule calls for that work. The change in evidence by itself grants no authority to approve.
 
 ### E.17.AUD.LHR:6 - Boundary dispositions
 
@@ -298,7 +298,7 @@ Use a different governing pattern when:
 - the same unit is already stable enough and the remaining question is one bounded comparative review move over already pinned source epistemes or publications;
 - the problem is primarily about view, face, or carrier architecture;
 - the unit is being used to communicate approval or a gate or adjudication decision, or to direct execution work;
-- outside observation or environmental change has changed what the same local unit can claim, so the case now needs stop-and-reopen or application of the neighboring governing pattern rather than one more local qualifier.
+- an outside observation changes the answer or the grounds for further use. Update the affected finding for a current-state inquiry. Open a different question when the required decision or the unit has changed.
 
 **Governing-pattern boundary recovery map.**
 
@@ -306,8 +306,8 @@ Use a different governing pattern when:
 | --- | --- | --- |
 | The repaired local lexical head is no longer the main problem and the publication unit still has unstable primary-subject or carried-move reading. | `E.17.AUD.LHR:3.2 Row 5`: one local repair no longer stabilizes one object, one move, and one outside-work boundary. | `E.17.AUD.LHR:5.5` |
 | The same unit is already stable enough and the remaining question is one bounded comparative review move over already pinned source epistemes or publications. | `E.17.AUD.LHR:3.2 Row 5`: the local lexical head now has a clear reading and the remaining question is the bounded comparison, not one more local repair. | `E.17.AUD.LHR:5.4` |
-| Outside observation or environmental change has changed what the same local unit can claim. | The local-repair threshold plus the stop-and-reopen safeguard: do not keep appending new pressure to the same unit. | `E.17.AUD.LHR:5.6` |
-| A claim about approval, a gate, adjudication or execution still needs to be established. | `E.17.AUD.LHR:3.2 Row 4`. To communicate an existing decision, cite the authoritative outcome. If the authorized choice or action is still owed, identify it for the responsible party. | `E.17.AUD.LHR:5.5` and `E.17.AUD.LHR:5.6` |
+| New evidence affects the state reported in the unit. | Retain the restored meaning of the word, update a current-state finding on its grounds, and preserve a dated finding for its original question. Reopen a wider decision when its terms require that work. | `E.17.AUD.LHR:5.6` |
+| A claim about approval, a gate, adjudication or execution still needs to be established. | `E.17.AUD.LHR:3.2 Row 4`. To communicate an existing decision, cite the authoritative outcome. Report any outstanding choice or action and who can supply it. Send it on where the commission or a standing duty requires the referral. | `E.17.AUD.LHR:5.5` and `E.17.AUD.LHR:5.6` |
 
 The comparison-side neighbor is `E.17.ID.CR ComparativeReviewUnit`: use that governing pattern when the local lexical head now has a clear reading, the unit already stays about the same primary subject, and the remaining question is one bounded comparison over already available source epistemes or publications.
 

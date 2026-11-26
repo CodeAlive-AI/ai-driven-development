@@ -2,7 +2,7 @@
 
 Use this practice when you know your own work and want to learn how to explain, compare and change its method. You will work from short records, propose a way for another team to work, and revise it when a condition changes. You need to be able to read the records and do simple arithmetic; a calculator is welcome. The exercises use constructed workshop and editorial records. This section supplies the facts you need.
 
-For each attempt, read the situation and task, save your answer, then read the discussion and correct the answer in your own words. The discussion supplies reasons for self-checking. Individual feedback requires a qualified helper and agreed time; the section [Arrange useful feedback](18-engineering-reference-16---learn-to-recover-and-change-a-way.md#engineeringreference166---arrange-useful-feedback) explains what that contribution involves. You can make and compare your first attempt on your own.
+For each attempt, read the situation and task and save your answer with the help you actually used. Compare it with the discussion. Explain why it stands, or correct what changes your conclusion. The discussion supplies reasons for self-checking. Individual feedback requires a qualified helper and agreed time; the section [Arrange useful feedback](18-engineering-reference-16---learn-to-recover-and-change-a-way.md#engineeringreference166---arrange-useful-feedback) explains what that contribution involves. You can make and compare your first attempt on your own.
 
 If a transition remains difficult, work through its explanation and correction before adding another difficulty. You may stop with a useful partial answer and a specific question, and continue in another sitting. If you have already seen a solution, use it as a worked example; for evidence of your own choice, use work in which you selected the method before receiving the answer. A suitable earlier attempt can suffice. Keep any help visible when interpreting the result of an attempt.
 
@@ -100,7 +100,7 @@ State the result the next person needs. Separate recorded facts from possible ex
 
 Use a connected account, a calculation or a small table to make your reasoning inspectable. Explain an important choice to a colleague: why this action supplies the next result, what would make it fail, and how the proposed revision responds. Finish with a useful proposal or a specific limitation. Where the subject grounds are disputed, obtain the relevant professional judgement; these exercises cannot supply missing knowledge of your field.
 
-After discussing or rereading your answer, make the correction yourself. Preserve the first attempt so that you can distinguish what you did unaided from what the discussion supplied. Choose the next task around the operation that still needs practice, rather than repeating a whole exercise by default.
+After discussing or rereading your answer, compare its grounds with the task. Keep a supported answer, or explain and correct the difference yourself. The saved attempt lets you say which choices you made with the help available then and what you took from the discussion. Choose further practice for a remaining difficulty. An adequate first answer can complete the present task.
 
 
 ### Engineering.Reference:16.6 - Arrange useful feedback

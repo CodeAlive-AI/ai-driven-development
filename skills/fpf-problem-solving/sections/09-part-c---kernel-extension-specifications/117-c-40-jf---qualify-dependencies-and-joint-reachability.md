@@ -43,7 +43,7 @@ Qualify the necessary conditions together for one named transition or combinatio
 
 Name the subject, receiving use, actual or currently relied-on starting configuration, proposed finite change, candidate configuration, horizon, and protected conditions. Recover an adequate direction/support description when one exists. For a path, name the step and the starting configuration it inherits.
 
-State the claim being qualified: one direction alone, several directions together, a sequence, or one branch under a stated contingency. Those are different claims. “A or B is available” does not establish “A and B can both be realized,” and two separately possible endpoints do not establish a possible transition between them.
+State the claim being qualified: one direction alone, several directions together, a sequence, or one branch under a stated contingency. For one possible outcome, establish the existence of a compatible route. To promise a response to any allowed choice, establish who decides, what they can know by each irreversible step and how their rule works across the allowed combinations. To exclude the entire opportunity, show that the obstacle or combination of obstacles covers all permitted routes. “A or B is available” does not establish “A and B can both be realized,” and two separately possible endpoints do not establish a possible transition between them.
 
 Select dependencies by consequence. Ask what absence or failure would block the proposed transition, breach a protection, or materially change its contribution. Include dependencies on capability, access, evidence, acceptance, support, time, resources, authority, and continuing Work only where they affect this claim. An unstated material dependency is a gap, not a satisfied condition.
 
@@ -83,7 +83,7 @@ Write the result at the smallest affected scope.
 
 | What the qualification establishes | Useful return |
 | --- | --- |
-| Necessary transitions and their joint limits are supported for this subject, configuration, use, and horizon | State bounded reachability, the supporting conditions, residual uncertainty, and the event that would reopen it. |
+| A compatible route or an applicable existence argument supports the transitions and their joint limits for this subject, configuration, use, and horizon | State bounded reachability, the supporting conditions, residual uncertainty, and the event that would reopen it. |
 | A material premise is missing but the candidate is specified well enough to qualify | Retain a conditional opportunity; name the claim withheld, supplying practice, and result that could support or defeat it. |
 | A qualified constraint defeats the proposed transition or combination | Reject that route for the stated use, or construct a revised candidate; retain independently supported alternatives. |
 | The starting condition, finite change, or jointly necessary conditions are too unclear to test | Return an unresolved candidate and the missing description or evidence, without asserting reachability or impossibility. |

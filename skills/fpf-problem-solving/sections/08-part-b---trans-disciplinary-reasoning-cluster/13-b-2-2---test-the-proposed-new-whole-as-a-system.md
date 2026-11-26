@@ -6,13 +6,13 @@
 
 ### B.2.2:0 - Use This When
 
-Use this pattern when B.2 has identified one candidate new whole and that individual must be recognized under the already admitted `U.System` kind: a swarm, production cell, cloud platform, regulated control system, organizational unit, or another physically embodied whole that can act in work or transformation while remaining itself.
+Use this pattern when the decision about continuing or replacing an operating whole requires testing a candidate under the already admitted `U.System` kind. A candidate can be supplied, or its boundary can be part of the engineer's design commission. Examples include a production cell, platform or organizational unit with the organization to act in Work or transformation while remaining itself.
 
-**First useful move.** Test the candidate against A.1's six common components. Then test whether it is physically embodied and has an organization that makes it eligible to act in work or transformation while preserving its identity—the `U.System` criterion.
+**First useful move.** For a specified candidate, apply A.1's six common components and then the `U.System` criterion. Establish its physical embodiment and the organization through which it can act in Work or transformation while preserving its identity. When the commission instead leaves the system boundary to the engineer, use B.2:4 and :4.1 below to form the candidate from the required use. A design can establish what would qualify on its stated conditions.
 
 After those two tests, recover only the additional facts used by the case, such as delimitation, an objective or commitment, coordination, capability, system-role kind or assignment, method, work, transformation, functioning, architecture, evidence, assurance, or time. State each fact or claim through the pattern that defines its object or relation. Do not make an objective or commitment a condition for `U.System` recognition; require it only for the separate objective or commitment claim being made.
 
-Use `B.2` to recover the whole-reidentification question and identify the candidate new whole. Use `B.2.2` when that candidate is to be tested under the already admitted `U.System` kind, then return its recognition result to B.2's comparison.
+Use `B.2` for the comparison with the prior whole, including a proposed change. Use `B.2.2` for the system question and return its answer to that comparison. For the first construction or recognition of a system with no established prior holon, use `B.1.2` and `A.1`.
 
 **What goes wrong if missed.** An operating whole is managed through old component claims, or a mere collection is declared a new system without establishing its A.1 basis and acting eligibility.
 
@@ -64,6 +64,8 @@ After B.2 leaves a whole-reidentification question open, continue with the candi
 
 Start with B.2's candidate designated as a `U.Entity`, proposed for the already admitted `U.System` kind.
 
+When the task is to propose the system, trace the result required at its interface to what must be organized together to deliver it. Which component changes can the surrounding system accommodate? Which relations must the proposed assembly itself preserve? Compare an internal component with access to the same service from an independent provider. They may yield the same output today and different answers about who can control a later change. Include the provider as a constituent only on the grounds for that parthood. Relate any required Method and its operations, or Work and its performances, to the system through what it can enact or actually performed. Return a proposed boundary, the relations on which delivery depends and the limits of that conclusion. Apply the following tests to each candidate whose recognition matters.
+
 After the recognition tests below establish the result, use B.2's one `resultHolonRef` for that individual and its one `resultHolonKindRef` resolving to `U.System`. The references may appear in B.2's optional `HolonReidentificationRecord` when a receiving use needs a durable account. Preliminary, failed, and unresolved evaluations follow B.2:4.4.
 
 Before calling the candidate a system result:
@@ -108,7 +110,7 @@ When a receiving use has materialized B.2's optional `MHTTriggerProfile`, read i
 | Temporal consolidation | A commissioning, phase, release, or operating-time consolidation changes the system identity claim. | `C.27`, `A.15.1`, temporal patterns |
 | Context reframe | A changed question or selected model-use structure changes which whole is under concern; it does not itself change that whole's identity. | `A.1.1`, `A.22`, `B.2`, and the whole's identity pattern |
 
-No cue is enough. Each row points to facts and claims to inspect; B.2's existing-whole/new-whole comparison, A.1 recognition, and the system-kind criterion decide the result.
+Use the cues to locate the facts that decide the question. One such fact can refute recognition if it contradicts a necessary condition. A single adequate engineering account can also supply all the grounds for a positive recognition. In either case, return the consequence for the commission. Whether the prior whole is sufficient is decided by B.2's comparison.
 
 #### B.2.2:4.4 - Delimitation and External Acting Systems
 
@@ -159,6 +161,8 @@ Use B.2.2 when B.2 identifies the operating platform as the candidate new whole 
 
 A proposed production cell has a machine, robot, fixture, workpiece carrier, and inspection station as candidate constituents. Apply :4.1 to recognize the whole. For the operating-cell case, separately establish its delimitation, objective, coordination relations, transformation structure, Work occurrences, and capability envelope, with evidence for those claims.
 
+Suppose the order asks for inspected workpieces by closing time. An available outside station with an assured handoff and enough time for inspection and delivery can supply a viable route. This can finish a request to choose a route. An order for inspected workpieces is fulfilled when the agreed inspection and delivery have taken place by closing time. If the order also requires a cell that retains inspection while the outside station is unavailable, work back from that use to the provision for inspection under those conditions. An installed station is one possibility. Determine its interfaces and the assembly relations that would make it part of this cell. A plan for the installation gives a conditional design result. A claim that this cell did the inspection requires grounds for what happened on the order.
+
 A fixture being manufactured as a workpiece is not part of the machine merely because the machine changes it. The production cell claim needs a result system; the manufacturing relation remains transformation and work.
 
 ### B.2.2:5.4 - Bias-Annotation
@@ -175,8 +179,8 @@ A fixture being manufactured as a workpiece is not part of the machine merely be
 
 | Check | Requirement |
 | --- | --- |
-| `CC-B2.2-1` | B.2 has already left a whole-reidentification question before B.2.2 is used. |
-| `CC-B2.2-2` | A positive system-result claim requires B.2's candidate new whole to pass the A.1 criterion and the `U.System` criterion. Failed or unresolved recognition follows :4.1. |
+| `CC-B2.2-1` | B.2 supplies the whole-reidentification question. Where proposing a boundary was entrusted to the practitioner, justify it from the required work and the relations the assembly must maintain. A specified candidate may be assessed directly. |
+| `CC-B2.2-2` | For a proposal, state the conditions under which it would meet the requested use and qualify as a System. Recognition of an actual system result requires the candidate to pass A.1 and the `U.System` criterion on the facts that obtain. Failed or unresolved recognition follows :4.1. |
 | `CC-B2.2-3` | Use B.2's references for the candidate and established result. Any durable account remains an optional C.2.1 episteme under B.2. |
 | `CC-B2.2-4` | Identify the result-system delimitation and any crossing relations needed by the claim under their predicates. |
 | `CC-B2.2-5` | An obtaining supervision or coordination relation is not treated as automatic system recognition, and evidence for it is not treated as safety warrant. |

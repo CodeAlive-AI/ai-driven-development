@@ -73,7 +73,7 @@ For a preservation claim, compare the original and transformed constructions ove
 R(new(x)) = R(old(x)) for every admitted x.
 ~~~
 
-The equality concerns that result. Expand R or the compared behavior when intermediate responses, errors or resource interactions also matter. For a bounded approximation, derive the bound and the inputs on which it holds. For a new capability, establish what the new construction can produce and which old requirements it still satisfies.
+The equality concerns that result. Expand R or the compared behavior when intermediate responses, errors or resource interactions also matter. For one-way refinement, establish that the changed construction has a feasible execution and that each execution it admits satisfies the earlier requirements under the intended interpretation. For a strict change in the answer, identify one previously possible result that no such execution yields. For a bounded approximation, derive the bound and the inputs on which it holds. For a new family that is claimed to include the old one, establish how the old executions remain available and what the new members can produce.
 
 Derive the gain separately. A reduction in the number of operations can imply less work under a supplied cost model. It may leave elapsed time unchanged, or increase storage and communication. Use the existing characterization and comparison methods when those trade-offs affect the choice.
 
@@ -91,7 +91,7 @@ Write the proposed rule in the language of the work, with the mathematical accou
 
 #### MMP.22:4.5 - Compare the candidate and return what is supported
 
-Compare the candidate with the incumbent and any serious alternatives under the same working requirements. MMP.21 supplies a mathematical comparison where useful; C.32.MWA.PP and the existing worth and portfolio methods handle the broader decision.
+For a commissioned transformation, establish that the candidate supplies the required work and justify any claimed gain against its stated basis. For a recommendation among alternatives, compare the incumbent and the serious alternatives with the candidate under the same working requirements. MMP.21 supplies a mathematical comparison where useful; C.32.MWA.PP and the existing worth and portfolio methods handle the broader decision.
 
 Separate the derived consequence from its working assumptions. A formula can establish the expected number of operations under a supplied distribution. It cannot by itself establish the distribution, actual preparation time or a performer's capability. Retain only the unresolved conditions that matter to the receiving decision.
 
@@ -123,7 +123,7 @@ The required results agree for every admitted x when the same conversion and inp
 
 Suppose conversion takes 12 minutes, the two analyses take 3 and 5 minutes, and preparing access to the shared result takes 1 minute. Summed effort changes from 12+3+12+5=32 minutes to 12+1+3+5=21 minutes under those assumptions. The total effort alone does not determine the completion time when the operations can overlap.
 
-Now change the situation. The second analysis receives corrected measurements. Reusing y from the old input no longer computes h(f(x_new)). The candidate's reuse rule must identify an unchanged input and conversion, or recompute the affected preparation. The factorization remains correct; its former working precondition has failed.
+Now suppose the second analysis receives corrected measurements. Identify what the correction can change in h(f(x)). If both versions yield the same prepared value, it can be shared. Even when the prepared values differ, h may provably use only an unchanged field. Reuse the result whose equivalence is established for this commission, or repeat the affected work. A request for a fresh execution requires that execution.
 
 In another use, the two original preparations were independent measurements rather than repeated deterministic conversion. Sharing one measured value removes that independence. If the measurement errors are independent and each has variance s^2, averaging the two measurements has error variance s^2/2. Copying one measurement twice and averaging it retains variance s^2. The apparent duplication cannot be eliminated under a requirement for the former error variance. MMP.18 recovers the shared dependence; the mathematical function account must be changed before the work is redesigned.
 

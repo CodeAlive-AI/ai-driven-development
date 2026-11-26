@@ -98,8 +98,8 @@ An eligible replacement for `R_L` must also resolve the catalogue’s designator
 - the `U.ViewpointRef` members and target-kind compatibility claim for each declaration; and
 - only maintenance claims currently needed, using the branch that matches the present claim:
   - for a current maintenance-System claim, cite the admitted maintenance `U.System`; cite a local system-role kind and its independently evaluated classification only when that classification is current;
-  - for actual maintenance Work, recover the actual performer through A.13 and let A.15.1 independently admit the dated `U.Work`. Add F.6 only when the catalogue claim or receiving use expressly relies on precise assignment-bound attribution through the same obtaining A.13 assignment. F.6 identifies neither assignment nor performer. Missing or failed F.6 alone leaves independently admitted Work intact. A short catalogue claim may omit identifiers its bounded use does not need;
-  - for current maintenance responsibility, cite its direct admitted predicate and actual participants or return the missing governor; assignment establishes no responsibility; and
+  - for a claim about actual maintenance Work, use A.15.1 for the dated Work. Apply A.13 to the service that performed it or to the Systems whose respective contributions you attribute. For separate jobs, identify what each accomplished. Add F.6 when attributing a particular contribution to its performer under that performer's obtaining assignment. A comparison of catalogue editions can establish that an entry was corrected even when the editor is unknown;
+  - for current maintenance responsibility, identify the duty, its holder and the applicable grounds. An obtaining assignment and a rule that attaches the duty to its holder can settle the question. Where grounds are missing, state which duty or holder is still unresolved;
   - for prospective maintenance guidance, retain only the change-control note, intended maintenance condition or `U.WorkPlan`, and scope tag; this content asserts no performed Work, current assignment, or responsibility.
 
 The catalogue entry cites these values. Their definitions or constraints come from elsewhere, and the entry creates none of them.
@@ -144,9 +144,9 @@ When you name a family designator for a describing use, resolve catalogue editio
 - every candidate episteme E used under a member is independently identified under C.2.1 and is a `U.View` only when `EpistemeViewpointConformanceRelation(E,P)` obtains; and
 - every one-viewpoint selection for one describing use carries a single `viewpointRef`; importing the family neither selects P for that use nor establishes conformance.
 
-A local subset names catalogue edition L, the source family designator, and the member references actually used, and identifies omitted members as unused or intentionally excluded.
+A local subset identifies its source catalogue edition L, family designator, members used and omissions. When the project also asks you to choose a subset for a practical question, use §14.1.
 
-A multi-library use preserves each `<editionDesignator(L), familyDesignator>` source and member provenance rather than flattening everything into one unnamed family. If one use selects several viewpoints, it constructs their C.13 collection with membership. It does not overload one reference or infer a new family from adjacency.
+A multi-library use preserves each `<editionDesignator(L), familyDesignator>` source and member provenance rather than flattening everything into one unnamed family. For a joint reading, resolve the viewpoints separately and establish the connection the question needs. Apply C.13 when claiming membership in a particular collection or identifying its edition. Adjacent entries alone establish no family.
 
 Construction, identity viewing, transformation, declaration membership, selection, naming, rendering, or publication grants neither `U.Viewpoint` nor `U.View` membership.
 
@@ -172,7 +172,7 @@ When form-mediated expression and bearing are claimed, retain E.24.PUB's corresp
 
 Changing a participant or restoring availability after a gap yields another publication occurrence under E.24.PUB; it does not reidentify unchanged L or any member viewpoint.
 
-Rendering, printing, or uploading is separate system-performed `U.Work`. For a diagram or catalogue rendering, recover the correspondence between its elements and independently identified declarations or viewpoint epistemes. Use A.6.3.RT/A.6.3.RT.OE when constructing an expression or changing its representation language or reasoning medium for a particular use. Add C.29 when choosing or using a mathematical representation raises an inference or transfer question. Publication, representation, form, carrier, or rendering grants no viewpoint or view membership and makes no represented world-side relation obtain.
+An existing catalogue or rendering can already serve the reader. If the question concerns its rendering, printing or upload, establish the corresponding `U.Work` from its actual performance. For a diagram or catalogue rendering, recover the correspondence between its elements and independently identified declarations or viewpoint epistemes. Use A.6.3.RT/A.6.3.RT.OE when constructing an expression or changing its representation language or reasoning medium for a particular use. Add C.29 when choosing or using a mathematical representation raises an inference or transfer question. Publication, representation, form, carrier, or rendering grants no viewpoint or view membership and makes no represented world-side relation obtain.
 
 ### E.17.1:5 - Archetypal Grounding
 
@@ -297,7 +297,7 @@ A `MultiViewDescribing` use may import only a subset of a bundle's viewpoint ref
 - which viewpoint members are in local use,
 - and whether the omitted members are unused or are intentionally excluded because the local scope does not require them.
 
-The local family must not speak as if it had imported the whole bundle while silently dropping inconvenient viewpoints.
+To choose a subset, recover the question the descriptions must answer. Which claims would let the recipient act or explain the result? Select the viewpoints whose rules call for those claims. A single member may cover a whole service. If the decision depends on how two parts of the service work together, establish that the descriptions can be related under the conditions of that decision. If the catalogue leaves a needed claim uncovered, identify where to obtain it. A commission confined to importing a specified subset ends when its members and provenance are recoverable.
 
 #### E.17.1:14.2 - Local overlays vs new bundles
 
@@ -306,7 +306,7 @@ A local project often wants a small adaptation: one extra concern note, one narr
 A practical rule is:
 
 - if the local project selects a subset or adds only didactic/publication material, keep catalogue edition L and its declaration unchanged and declare the local subset or annex; do not treat the overlay as declaration content;
-- if the local project changes viewpoint membership or meaning, publish a new local catalogue edition carrying the revised or new family declaration.
+- if the project proposes or adopts a change to viewpoint membership or meaning, identify the proposed or adopted local catalogue edition and its revised family declaration. Issue it when the commission or standing duty calls for publication, through a party authorized for that audience and use.
 
 #### E.17.1:14.3 - Multi-bundle coordination: provenance first, comparison separately
 
@@ -431,7 +431,7 @@ Local teaching aliases may be added for readability, but the alias must identify
 ### E.17.1:19 - Bundle Projection and Comparative Use
 
 #### E.17.1:19.1 - Projection to local subsets
-A description family may project only a subset of a reusable bundle. This is admissible if the description of the local subset identifies the omitted members. Projection keeps bundle provenance intact while acknowledging that local publication rarely uses every member.
+A description family may project only a subset of a reusable bundle. Identifying omitted members makes the extent of the import clear. Use §14.1 to judge whether the subset will serve a particular question. Projection keeps bundle provenance intact while acknowledging that local publication rarely uses every member.
 
 #### E.17.1:19.2 - Comparative bundle use
 
@@ -448,7 +448,7 @@ A reviewer can test a viewpoint bundle library with five questions:
 
 1. **Do the member viewpoints still have explicit standalone meaning?**
 2. **Does the declaration retrieved by the family designator describe one coherent recurring family rather than one convenience list?**
-3. **If a subset is imported, can the reviewer see which members were omitted?**
+3. **Can the reviewer see which members were omitted and, if the subset is recommended for a task, how the retained descriptions can support that task?**
 4. **If several bundles interact, is provenance preserved, and does each comparison use its subject method with F.9 added only for a semantic relation between distinct local senses?**
 5. **Has a publication face started impersonating the library?**
 

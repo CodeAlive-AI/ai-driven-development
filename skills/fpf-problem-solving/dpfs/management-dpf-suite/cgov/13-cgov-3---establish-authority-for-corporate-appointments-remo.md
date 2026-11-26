@@ -41,7 +41,7 @@ Separate the authority to decide from the authority to communicate, sign or impl
 
 Apply the governing conditions to the act and its participants. If the recipient needs a route to authorization, identify who can perform each required act and which consents remain outstanding. For a question confined to one power, a decisive condition can establish its presence or absence. Distinguish a known act still to be performed from uncertainty over the applicable rule.
 
-Return the authority answer to the practitioner who will perform or arrange the corporate act. For a proposed appointment or delegation, the answer identifies who can make it and what governs its effect. It does not make the appointment or delegation; the authorized participants must perform that act under the applicable procedure.
+Return the supported answer to the person or body for whom the authority question was commissioned. A question about an earlier act can end with the authority effective at the time. For a proposed appointment or delegation, the answer identifies who can make it and what governs its effect. It does not make the appointment or delegation; the authorized participants must perform that act under the applicable procedure.
 
 For a routine matter, a short answer can suffice: “The existing purchasing delegation covers this purchase of 80; the limit is 100 and its stated conditions are met.” A disputed major transaction may need the provisions and reasoning retained so another practitioner can examine them. A new matrix or legal opinion is useful only when the receiving question needs it.
 

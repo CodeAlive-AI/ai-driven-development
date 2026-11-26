@@ -22,7 +22,7 @@ Without binding first principles, contributors cannot distinguish commitments th
 | **Pragmatic Grounding**        | Abstract invariants ↔ measurable, falsifiable outcomes |
 
 ### E.2:4 - Solution
-FPF rests on **eleven binding pillars**. For an FPF proposal or artifact to conform, it must satisfy the pillar constraints applicable to its use. Identify those constraints and explain any material conflict. A DRR proposing a normative change records the impact on the pillars. Together the pillars guide evolvability, cross-scale coherence and didactic clarity; their realization must be established for the use.
+FPF rests on **eleven binding pillars**. Follow the proposed change through the work it would affect. An organization may use a rule to decide, and a service may use it to route a request. When people are to understand or apply that rule, examine what it enables them to do with the support available to them. P‑2 governs human comprehension in that use. Which decisions, explanations or obligations would change, and under which conditions? Use those consequences to identify the applicable pillar constraints below. Where several uses are claimed, establish which grounds extend to them together and where their conditions differ. E.3 resolves conflicting provisions. A DRR for a normative change records its impact on the pillars. E.2.DA serves the broader commission to evaluate how FPF realizes them.
 
 | ID       | Pillar                         | Essence                                                                                                                   |
 | -------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
@@ -99,6 +99,8 @@ These constructed cases distinguish the rule; they are not empirical findings ab
 * **Non-dominance:** at the same declared task, one admissible option has quality 95 and cost 10; another has quality 85 and cost 2. With quality maximized and cost minimized, neither dominates. BLP returns no scale-based preference. A declared generality policy may choose only within the options left lawful by higher rules and must identify that policy basis.
 
 ### E.2:8 - Relations
+
+The relations in this section govern the Bitter-Lesson Preference.
 * **Instantiates pillars:** P‑10, P‑11, P‑7, P‑1.
 * **Depends on:** **G.5/G.9** (admission/comparator/selector and parity harness), **G.11** (refresh telemetry), **A.15.1** (dated Work), **A.15.2** (planned work and budgets), **B.1.6** (resource aggregation), **C.16** (resource and cost measurement), and **A.10** (provenance), **C.18** (NQD-CAL), **C.19** (E/E-LOG), and **F.7/F.9** (Bridges, CL/Φ/Ψ).
 * **Constrained by:** **E.5** Guard‑Rails (DevOps Lexical Firewall; Notational Independence; Unidirectional Dependency; Cross‑Disciplinary Bias Audit) and **E.3** precedence.

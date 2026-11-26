@@ -71,7 +71,7 @@ For the AP242/QIF query in `SIE.1`, the team inventories only source premises th
 
 | Source row | Qualification for the constructed use |
 | --- | --- |
-| AP242:2025 edition 4 | Product-definition, configuration/change, and effectivity source for the case. Record the official publication identity and current stage 90.92, “to be revised”. The source owner defines its model; Systems Engineering decides which released configuration applies locally. |
+| AP242:2025 edition 4 | Product-definition, configuration/change, and effectivity source for the case. Record the official publication identity and current stage 90.92, “to be revised”. The published edition supplies the model definitions. The project’s configuration decision or its governing rule establishes which released configuration applies to this query. |
 | local AP242 exchange/profile | Record the exact application protocol/profile, implementation conventions, export version, local extensions, identifiers, and configuration/effectivity fields supplied. The standard title alone does not establish those facts. |
 | QIF source | Record the applicable ISO 23952:2020 carrier/profile, plan, characteristic, and result meanings, identifiers, measurement context, status, and local quality authority. A QIF result identifier does not establish AP242 feature identity. |
 | local source records | Record export or API occurrence, timestamps, derivation, access, issuer, local configuration or inspection status, and gaps. A reachable file is not automatically current or authorized for review. |
@@ -119,7 +119,7 @@ The cost is source-local reading and coordination with publishers, stewards, dom
 
 ### SIE.2:10 - Rationale
 
-When constructing an integration, use the meanings recovered from the source to guide mappings that must preserve them. Source-local recovery also prevents a shared vocabulary from becoming a hidden replacement for source authority. Qualification by use keeps the inventory finite and prevents documentation breadth from substituting for a workable package.
+When constructing an integration, recover what a recipient must be able to decide from the combined sources. Determine whether their assertions concern the same object and conditions, overlapping populations, different states, or different relations the decision needs together. For each mapping used, establish what the source permits the recipient to infer. A correct inventory may supply one missing premise. When commissioned to design the integration, also select how the mapping, an additional observation or bounded separate uses will make the result dependable under allowed changes. Keep local sources and their authority identifiable.
 
 ### SIE.2:11 - SoTA-Echoing
 
@@ -127,7 +127,7 @@ The best-known line combines terminology work, metadata-registry discipline, pro
 
 | Source line | Adopt, adapt, or reject | Role and limit |
 | --- | --- | --- |
-| Current FPF `F.0.1` and `F.0.2` | adopt | Recover source-local meaning and episteme identity; do not establish a cross-source correspondence or domain truth. |
+| FPF `F.0.1` and `F.0.2` | adopt | Recover each claim in its source with F.0.1. When the integration depends on what several claims mean together, use F.0.2 to construct or assess the needed relation and its consequences for the receiving use. A qualified inventory can complete a request for source meanings and limits. A mapping design calls for grounds that it will support the intended use. To claim implementation or actual performance, establish the relevant facts under the conditions of that claim. |
 | [ISO 704:2022](https://www.iso.org/standard/79077.html) | adapt | Distinguish objects, concepts, definitions and designations with ISO 704. Use the receiving contract to decide which distinctions the integration must preserve. |
 | [ISO/IEC 11179-3:2023](https://www.iso.org/standard/78915.html) and its [item-mapping amendment](https://www.iso.org/standard/89914.html?browse=tc) | adapt | Contribute registry-item identity, versions, definitions, and mapping metadata; no automatic cross-source identity or fitness follows. |
 | [PROV-O](https://www.w3.org/TR/prov-o/) | adapt | Distinguishes entities, activities, agents, derivation, revision, invalidation, attribution, and primary source; provenance establishes neither truth nor permission. |

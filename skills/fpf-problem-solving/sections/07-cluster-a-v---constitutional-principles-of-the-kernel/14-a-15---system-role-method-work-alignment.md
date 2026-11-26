@@ -4,13 +4,13 @@
 > **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
-**At a glance.** Use this pattern when a team must say which System performed which Work, under which assignment, which Method the Work enacted, and which plan applied without confusing any of those values with a description, capability, record, or result. A precise actual-performer branch first reuses A.13's core, then A.15.1 independently admits the dated Work, and only afterward F.6 uses the same obtaining assignment when precise assignment-bound attribution is current; an agency characteristic profile remains conditional on its receiving use.
+**At a glance.** Use this pattern to coordinate future work or to establish who did what. For a future undertaking, start with what someone needs to receive and choose the contributions, Methods, intended performers and conditions that make it possible. For an occurrence, identify the performer and the Method enacted. A precise actual-performer claim reuses the A.13 core and A.15.1 independently admits the dated Work. F.6 uses that same obtaining assignment when precise assignment-bound attribution is required. An agency characteristic profile remains conditional on its receiving use.
 
 **Use this when.** Use A.15 when a receiving decision needs to connect classification or assignment, Method, capability, planning and performed Work while keeping the claims distinct. Recover only the values and relations that decision consumes.
 
 **Start here when.** The team is mixing system classification or assignment with recipe, schedule, capability, or performed Work, often under an ambiguous source word such as *role*, *process*, *workflow*, or *activity*.
 
-**First output.** For planning, identify the intended WorkPlan, performer, local system-role kind and Method only as the next decision requires them. For precise actual performance, recover the A.13 core and independently admit dated Work under A.15.1 from its history, Method, extent and containing-System relation. Add F.6 `performedUnderAssignment` only for precise assignment-bound attribution, using that same obtaining assignment. State that the System performed the Work under the assignment and that the Work enacted the Method only when both relations obtain. Keep descriptions, plans, capability claims, records and results distinct.
+**First output.** For planning, state how the proposed contributions fit together to deliver the promised result. Identify a present WorkPlan, intended performers or local system-role kinds and Methods at the detail needed to coordinate them. For precise actual performance, recover the A.13 core and independently admit dated Work under A.15.1 from its history, Method, extent and containing-System relation. Add F.6 `performedUnderAssignment` only for precise assignment-bound attribution, using that same obtaining assignment. State that the System performed the Work under the assignment and that the Work enacted the Method only when both relations obtain. Keep descriptions, plans, capability claims, records and results distinct.
 
 
 
@@ -18,7 +18,7 @@
 
 **Recovered-reference sufficiency condition.** Proceed when every value and relation consumed by the claim is recoverable with the meaning, identity and conditions that use needs. Otherwise narrow the claim or recover the missing basis. A bounded reversible probe is one option when its attainable contribution justifies its burden under C.11.DUA. Record a repair or decision request, prospective plan entry or source gap only when the continuation needs it.
 
-**Ordinary use.** “Robot-7 performed InspectionWork-17 under InspectionAssignment-17, and the Work enacted TurbineInspectionMethod” can be enough when the A.13 core, same obtaining assignment, F.6 link, and `enactsMethod` relation remain recoverable and the receiving use needs no additional identifiers. A Grade or autonomy profile is not implied.
+**Ordinary use.** “The museum needs a readable copy by noon. The archive can supply its approved copy by ten, and the museum can open that edition.” That can settle how to supply the copy. If the order calls for a fresh transcription, identify who can make it and when the archive can release its source. For an actual inspection, “Robot-7 performed InspectionWork-17 under InspectionAssignment-17, and the Work enacted TurbineInspectionMethod” can be enough when the A.13 core, same obtaining assignment, F.6 link, and `enactsMethod` relation remain recoverable and the receiving use needs no additional identifiers. A Grade or autonomy profile is not implied.
 
 **Reliance-bearing use.** Use the fuller frame when assignment identity, assignment state, Method edition, capability fit, plan baseline, approval, evidence, release, or disputed responsibility changes the decision. Responsibility and authority remain separate direct relations; neither follows from a system-role kind or assignment.
 
@@ -34,7 +34,7 @@
 
 **What goes wrong if missed.** A team collapses classification, assignment, recipe, plan, capability, and performed Work into one fuzzy “process” or “role” label, then mistakes documentation for execution, capability for performance, a schedule for an occurrence, or an assignment for responsibility.
 
-**What this buys.** A compact trace answers who performed the Work, under which assignment, which Method it enacted, and which separate plan and evidence applied, while leaving each additional claim to its direct pattern.
+**What this buys.** A coordinator can propose who should do what and explain why those contributions can supply the result together. A later inquiry can establish which Work occurred, which Method it enacted and which assignment, plan and evidence applied.
 
 **Not this pattern when.** Use `A.15.1` for one dated Work occurrence, `A.15.2` for planning or schedule baselines, `A.15.5` for work-entry readiness, `A.16` or `A.16.1` for a cue that has not become an alignment question, `A.6` or `A.6.B` for boundary or policy wording, `E.10.ROLE` when *role* is still unresolved, and `A.15.4` when a visible item is being relied on by appearance.
 
@@ -92,7 +92,9 @@ Without this alignment, several category errors recur:
 
 ### A.15:4 - Solution
 
-Recover the values first, then state only the relations needed by the receiving use. A.15 aligns system-role kind, assignment, Method, MethodDescription, capability, WorkPlan, Work, and separate records; it does not create a universal process object or a universal assignment signature.
+Begin with the receiving question. To coordinate future work, work back from the result due, its user and the time and conditions of use. Which contributions must someone perform? Which can be satisfied by an available result? Choose the Method and the capable performer or performer condition for each necessary contribution. Establish that each handoff supplies what the next performer needs in time and that the contributions can coexist under any shared constraint. Make the planning choices entrusted to you and state what a later decision maker can still choose. A plan may be proposed before an appointment is made. An existing appointment, authority to commit and the feasibility of the arrangement each have their own grounds.
+
+For a question about past work, recover the actual performer, occurrence, Method and any attribution needed from the performance history. In either use, keep system-role kind, assignment, Method, MethodDescription, capability, WorkPlan, Work and records distinct.
 
 When wording about changing, producing, selecting, deriving, controlling or maintaining leaves its object unresolved, use `E.10.ARCH`. A workflow graph, process calculus, matrix, category, embedding or neural representation may describe or serve as a lens over a Method relation structure; its representation form alone establishes no Method, assignment, WorkPlan or Work occurrence.
 
@@ -188,7 +190,7 @@ Another structure, such as CGUS, P2W, P2S, an improvement-loop slice or a transf
 
 Use `A.15.5` when the current question is whether intended Work is ready to enter its boundary. A.15 keeps system-role kind, assignment, Method, plan, and Work distinct; A.15.5 carries `WorkEntryReadiness@Context`, `FullKitCondition`, commitment disposition, resource-readiness references, WIP or flow-policy references, planned baselines, and launch-gate references when those values are current.
 
-Readiness is not performed Work, evidence sufficiency, or gate passage. A briefing, dashboard, source bundle, or P2W record may cue A.15.5. Ground the result in the WorkPlan being judged, the PlanItem content the criterion consumes, that criterion and the facts used to evaluate it. State the readiness result, its qualification window, and the applicable stop or degraded-use condition. Identify missing or unknown required inputs; include performed preparation Work or a planned baseline only when the criterion or receiving use consumes it. Address the PlanItem content through that WorkPlan; it is not another readiness target.
+Readiness is not performed Work, evidence sufficiency, or gate passage. A briefing, dashboard, source bundle, or P2W record may cue A.15.5. Ground the result in the WorkPlan being judged, the PlanItem content, the applicable criterion and the facts used to evaluate it. When the criterion is yours to design, derive it from what must be in place for the promised work, including shared conditions. State the readiness result, its qualification window, and the applicable stop or degraded-use condition. Identify missing or unknown required inputs; include performed preparation Work or a planned baseline only when the criterion or receiving use consumes it. Address the PlanItem content through that WorkPlan; it is not another readiness target.
 
 ### A.15:5 - Archetypal Grounding
 
@@ -232,9 +234,9 @@ This publication can guide Method inspection and planning. Keep the selected Met
 
 #### A.15:5.1.c - Scenario guides method selection, not performed work
 
-**Source set.** A method-selection scenario says that material X is below threshold T, resource window W is available, and the fabrication cell is under setup condition S. The scenario is admitted source material; a publication form or carrier may expose that source material for choosing between method families but does not become the selected method or plan.
+**Source set.** A fabrication cell has an accepted qualification for a cold-forming method family, MF-2. It permits this material below a stated thickness on the installed tooling and requires a continuous 30-minute setup and forming window. The proposed batch has material below that thickness, the qualified tooling in place and a 40-minute window. The planner can use the qualification and these batch conditions to test the family's applicability.
 
-**Published slice.** `Under scenario S, method family MF-2 is admissible for planning; choose the selected method and prepare the work plan before execution.`
+**Published slice.** For this batch the material and tooling meet the qualification and both operations fit the available window, so MF-2 is admissible for planning. If the available window were 20 minutes, this qualification would give no basis for scheduling MF-2 there. Another qualified family might still fit. When the commission calls for a plan, select an applicable Method and arrange the Work. A claim about what actually ran requires evidence of that occurrence.
 
 The scenario can guide Method-family selection and planning. Identify a selected Method or resulting WorkPlan in the account where that result is needed. Ground any later dated Work independently under A.15.1; a record may designate it but is not that occurrence. For evidence, gate or engineering-justification reliance, establish the required claim, relation or decision under its direct rule, such as A.20 for internal-constraint results, A.21 for gate decisions or B.3 for assurance. Use A.10 when that reliance needs a replayable source-to-use account. If a required basis is unavailable, narrow the use and keep the needed gap or continuation in the receiving account.
 
@@ -261,7 +263,7 @@ Bias lenses: **Gov**, **Arch**, **Onto and Epist**, **Prag**, **Did**. Scope: **
 | **CC-A15-4** | For precise assignment-bound attribution, trace the A.13-qualified `H` through the same obtaining assignment `RA`, then `W -performedUnderAssignment-> RA`, `RA.HolderSystemSlot -> H`, and `W -enactsMethod-> M`. Cite characteristic profile, MethodDescription, plan, capability, source, and evidence separately only when relied on. | Preserves one inspectable A.13→A.15.1→F.6 chain without turning interpretation metadata into participants. |
 | **CC-A15-5** | Keep system-role kinds, capabilities, fit predicates, Methods, and evidence or assurance records out of `partOf` hierarchies unless another direct pattern admits a structural relation. | Blocks classification, evidence, and assurance as parts. |
 | **CC-A15-6** | Attribute resource use to dated Work through obtaining relations, not to a MethodDescription, WorkPlan, capability, assignment, or fit predicate. | Keeps costs with performance. |
-| **CC-A15-7** | Use `U.WorkPlan` for intended Work and identify actual Work independently. | Stops schedule-as-performance drift. |
+| **CC-A15-7** | For prospective coordination, show how the necessary intended contributions, their handoffs and shared conditions support the promised result in the WorkPlan. Identify any claimed actual Work independently. | A proposed allocation can settle a planning decision before the performances or their attribution are known. |
 | **CC-A15-8** | Resolve ambiguous *process*, *workflow*, *activity*, *schedule* or *role* wording through F.19 and the applicable E.10 rule. Retain ordinary wording whose meaning is already clear. | A cue prompts inspection rather than automatic formalization. |
 | **CC-A15-9** | State `enactsMethod` and `performedUnderAssignment` separately. Only the admitted holder System with its A.13 core performs Work; a profile is conditional. A capability or algorithm-possession phrase proves neither performance nor MethodDescription membership. Spontaneous physical evolution without this alignment is not Work. Use A.3.4 to identify an actual bounded change, and A.3.3 when a `U.Dynamics` episteme describing its state space and transition law is needed. | Prevents kind, assignment, capability, Method, description, plan, dynamics, and records from becoming actors. |
 | **CC-A15-10** | Treat a speech act that institutes an assignment, authorization, or gate-relevant effect as its own Work occurrence only when A.15.1 admission and the effect relation obtain. | Keeps the communicative Work distinct from later operational Work. |

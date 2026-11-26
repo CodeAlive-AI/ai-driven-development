@@ -83,12 +83,12 @@ For a teaching contrast, the relation column may say **none asserted** and the c
 
 ### F.7:7 - Conceptual construction
 
-* **Start from a question.** State the comparison or receiving use before selecting entries.
+* **Start with what the reader must establish.** Choose entries and columns for the distinctions that change the answer. If the question concerns what several contributions achieve together, identify the relation that would let the reader infer that result. Use F.0.2:4.1 to develop a missing cross-source argument. The finished row can show the argument itself or give the reader a direct route to it.
 * **Bring exact local meanings.** Use F.0.1, F.2, F.3, and F.17 only as needed.
 * **Show established relations.** Cite the direct pattern and evidence for each relation that matters.
 * **State the receiving-use conclusion separately.** Say what the current comparison permits, with its basis and limits.
 * **Keep the row focused.** Add an entry only when it changes the answer.
-* **Use contrast.** When no adequate relation is established, show the difference rather than forcing a unification.
+* **State the outcome the evidence warrants.** Show a contrast when a supported difference answers the question. Where the evidence leaves the proposed relation open, say which further conclusion depends on it and what could settle it.
 
 ### F.7:8 - Invariants
 
@@ -186,7 +186,7 @@ Show NIST RBAC **role** as a permission grouping. Beside it, show the local clai
 2. **Recover each entry.** Cite its exact source, scheme, expression, and local claim.
 3. **List only obtaining relations.** For each, state direction when relevant, the pattern that defines, constrains, or tests it, the supporting evidence, the loss, and any temporal difference that changes the comparison.
 4. **Judge the use separately.** Explain what the named use may conclude and why.
-5. **Expose absence.** When no relation is established, say so and use a contrast row.
+5. **Keep open questions visible.** A row can display a supported difference or identify a relation still to be tested. If the reader needs a joint conclusion, establish how the entries support it.
 6. **Resist closure.** Do not invent missing pairwise or transitive relations.
 7. **Adding a source.** Include it only when its claim or relation changes the answer, then re-evaluate the conclusion for this use.
 8. **Keep evidence visible.** A table cell never replaces the evidence-use or reliance relation.
@@ -236,6 +236,6 @@ Show NIST RBAC **role** as a permission grouping. Beside it, show the local clai
 
 ### F.7:16 - Didactic distillation
 
-> “A Concept-Set table displays a comparison. Put exact source-local claims in it and show established relations with direction and loss. State separately what the named comparison or use may conclude and why. Row position, shared labels or a row-wide CL do not establish those relations or warrant their use. Where no relation is established, show a contrast. The layout helps readers inspect the supplied reasoning.”
+> “A Concept-Set table displays a comparison. Put exact source-local claims in it and show established relations with direction and loss. State separately what the named comparison or use may conclude and why. Row position, shared labels or a row-wide CL do not establish those relations or warrant their use. Use a row to display an established difference or a remaining question. For a conclusion that depends on several entries together, show the connection that warrants it.”
 
 ### F.7:End

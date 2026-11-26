@@ -33,7 +33,7 @@ The designer must construct both directions of use: how original candidates are 
 
 ### CMP.5:4 - Solution
 
-**State the original problem → construct the easier comparison → obtain its informative result → recover an admissible answer → bound the loss → choose the next use.**
+**State the original question → build the easier comparison and establish its relation to the original problem → derive the required bound, recover and verify a feasible candidate, or supply both when the answer requires them.**
 
 #### CMP.5:4.1 - State what the original candidate must satisfy
 
@@ -81,7 +81,7 @@ Recovery can fail or produce no better candidate. Retain an already admissible b
 
 #### CMP.5:4.5 - Return to the original problem and choose the next move
 
-Return the recovered candidate under its original conditions and the bound that applies to the original objective. For minimization, an additive gap `C-L` bounds how much the candidate can still improve. A ratio uses additional conditions, such as a positive denominator; a zero or negative lower bound does not support a generic ratio claim.
+Return the conclusion the bound supports about the original objective. A bound on a relaxed problem can decide a threshold for every original candidate. If the commission requires an admissible candidate, return one and establish its feasibility. If it also requires a performance guarantee, supply the corresponding bound. For minimization, an additive gap `C-L` bounds how much the candidate can still improve. A ratio uses additional conditions, such as a positive denominator; a zero or negative lower bound does not support a generic ratio claim.
 
 Use the result to adopt the candidate, stop at an adequate gap, guide a branch of CMP.4, tighten the relaxation, revise recovery or choose a different algorithm. The stronger relaxation is worthwhile only if its expected contribution warrants the extra work.
 

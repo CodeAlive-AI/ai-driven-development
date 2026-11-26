@@ -37,7 +37,7 @@ Records can disagree about time, party, meaning or whether an action succeeded. 
 
 Identify the claimed change, party, arrangement and relevant time. A current position can be established directly at the relevant time. To explain a change, establish its basis and the earlier position to the extent the explanation depends on it. To confirm one particular transaction or how it was carried out, establish the occurrence or actions the request identifies. Use FDM.1 for a missing position and FDM.2 for a party boundary that still matters.
 
-Distinguish a change in permission, duty, usable resources, recorded information or business outcome. For a message marked “approved,” establish what decision the message reports and who issued that approval before relying on it for another claimed result.
+Distinguish a change in permission, duty, usable resources, recorded information or business outcome. A dispatch record can establish that a particular sender sent the message “approved” to a named recipient by noon. If the claim concerns a decision or financial effect, establish which decision the message evidences and the authority or effect that claim requires. An authenticated record of the board’s decision may settle whether approval was granted. If the operative rule or the question concerns a particular signer, establish that party’s contribution.
 
 #### FDM.4:4.2 - Recover the rule that gives the event its effect
 

@@ -10,7 +10,7 @@
 
 **First useful move.** Recover the step at which the earlier reasoning failed, or the operation that has become available. Ask what it lets you distinguish, construct, explain or change. For example, a triangle refutes the claim that every connected graph can be divided into two groups with every edge crossing between groups. It also suggests asking for a construction that returns either the division or an obstruction.
 
-The result is a question with an understood answer form, a useful first attempt and a reason to pursue or retain it. The answer may support further theory, a different investigation or an action in the world. Developing a concept or a reusable operation can be that contribution even before its eventual applications are known.
+The result is a question with an understood answer form, an attainable way into it and a reason to pursue or retain it. If the assignment is to formulate the question, this can complete it. If an earlier answer is still owed, explain what the new question contributes to it. Some investigations are free to develop a concept or a reusable operation before any eventual application is known.
 
 Use an adequate question. If the question is clear and the missing contribution is a way to answer it, C.39 supplies that search. This pattern is useful when the result sought or the question's conditions need to be developed.
 
@@ -32,7 +32,7 @@ A useful next question grows from a consequential change: an exposed dependency,
 
 ### B.5.QD:4 - Solution
 
-**Recover what changed → locate the dependency or new operation → construct a consequential question → work a revealing case → choose the next inquiry and keep what remains useful.**
+**Recover what changed → find the consequential dependency or new operation → formulate the question it opens → use a case, construction or argument to establish a useful point of entry → choose how to continue.**
 
 Enter with the result that changed the inquiry. Reuse a known formulation or derivation when it supplies the needed step. Return to an earlier step if an attempted answer reveals that the question is ambiguous, underdetermined or more expensive than its use warrants.
 
@@ -62,7 +62,7 @@ Use variations that have a reason in the work. The following are common ways to 
 | An argument needs an unavailable intermediate result. | Ask for a lemma, witness or construction that supplies that step; state how it would be used. |
 | A familiar operation becomes available in another setting. | Ask whether its required relations hold there and what receiving task it can serve. |
 
-A variation can change the original task. State that change: restricting a claim to trees may give a valid result while leaving the original request about all graphs unanswered. If the broader request matters, keep it as an unresolved question.
+Ask what the variation preserves for the earlier question. A counterexample on a tree can refute a claim about all graphs. A theorem for trees can settle a request about all graphs if a valid reduction carries its conclusion back to every graph at issue. Without such a connection, keep the broader claim open. When research direction is yours to choose, you can pursue the tree question for its own mathematical interest. When the broader answer was requested, identify what remains due or obtain agreement to a different result.
 
 These variations can be combined or repeated. Their purpose is to expose a useful answer.
 
@@ -78,9 +78,9 @@ Separate a proposed answer from the question. “Does this procedure always term
 
 If a question combines several missing contributions, make the dependency visible. For a physical calculation, you may first need a model that determines a quantity, then a computation of that model, then an interpretation for action. B.5.MPC coordinates those contributions. Name the first unresolved connection so a person, AI agent or group can work on it using the available subject knowledge and tools.
 
-#### B.5.QD:4.4 - Work a case that reveals the difficulty
+#### B.5.QD:4.4 - Find an entry that reveals what the question requires
 
-Choose a small case that exercises the changed condition or new operation. Attempt the requested construction or inference and explain where it succeeds or stops.
+Choose an entry that exposes what must be done. A small case is useful when changing one condition reveals an obstruction or a lost distinction. If the relevant dependence already follows from an argument or a construction over arbitrary admissible inputs, use that reasoning directly. To distinguish two possible explanations of an occurrence, seek grounds about that occurrence. A new hypothetical case can show how the explanations differ.
 
 Use the result to improve the question. A successful case can expose a reusable relation. A failed case can identify a missing premise, an incompatible demand or an operation to be developed. If two admissible cases give different answers from the same supplied information, ask for the missing distinction or a result valid for both.
 
@@ -96,7 +96,7 @@ A worthwhile first question may be narrower than the eventual aim: establish a l
 
 E.10.INT helps distinguish useful interest from novelty, surprise or a local scoring heuristic. A question can be worth pursuing because it opens further constructions, changes what can be explained or makes another question approachable. Its eventual practical destination may remain unknown. When problems and ways of solving them must develop together, use C.40; retain a promising alternative when its prospective use justifies doing so.
 
-Continue with the chosen question, its first attempt and the dependency that attempt is meant to resolve. A short explanation in the work can carry this result. Stop when the need is answered, or when another inquiry is the better use of the available effort.
+Continue with the chosen question, the contribution that makes it attainable and the dependency it is meant to resolve. Stop when the requested result is in hand. In an open inquiry, a better use of the available effort can justify changing direction. For a fixed assignment, a reason to stop investigating identifies a limit on the answer unless the work already meets the assignment or its holder has changed it.
 
 #### B.5.QD:4.6 - Separate question recognition from answer assurance
 
@@ -120,7 +120,7 @@ The next question is: **For a given finite simple undirected graph, can we const
 
 B.5:5.1 supplies the broader construction. Traverse each component by breadth-first search and assign groups by even or odd depth. If every edge joins opposite parities, the assignment works. An edge joining equal parities combines with the two parent paths up to their last shared vertex to give a simple odd cycle. The construction therefore answers the new question for the stated graph class.
 
-The earlier connectedness requirement can be dropped: work through each component, including isolated vertices. For an allocation, establish that the graph represents the relevant pairwise incompatibilities. Three-way constraints would change that application question.
+The new procedure also works on disconnected graphs by treating each component, including isolated vertices. For a real allocation, determine which combinations the graph rules out. A restriction on three items together can leave each pair permissible. The allocation question can then require a richer model. A two-colouring that satisfies all the actual restrictions still supplies a feasible allocation. A two-colouring that violates the triple restriction leaves open whether a different allocation works.
 
 #### B.5.QD:5.2 - From a position to a sufficient state or useful bound
 
@@ -158,8 +158,8 @@ Mathematical search often favors statements that can be proved. Question develop
 - The earlier work and its consequential result are recoverable.
 - A failure is located at the claim, premise, inference or implementation it affects; a success exposes its reusable operation or relation.
 - The new question states an answer form and the conditions needed to understand it.
-- A changed formulation preserves the unanswered part of the earlier task when that part remains useful.
-- A worked attempt reveals a consequence, a missing distinction or the operation to obtain next.
+- For a question already assigned, the contribution of the new formulation to its answer is warranted. A separate research direction can be chosen by whoever holds that choice.
+- A case, existing derivation or other attainable contribution shows what the proposed inquiry could establish, including whether any result is still owed for the earlier question.
 - The question's possible contribution and its attainable first step justify pursuing or retaining it.
 - The proposed answer is used with the scope and support appropriate to its claim.
 - Further work can stop when an available answer suffices; explanations and records are only as extensive as their receiving use requires.

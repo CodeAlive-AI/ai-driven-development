@@ -51,14 +51,14 @@ The underlying bounded-use claim remains primary. It names the obtaining Bridge,
 
 #### F.9.1:4.1 - Recover the claim before writing the gloss
 
-Before adding a stance note, check four things:
+Start with the reader’s difficulty. What could they infer from the wording that would change their use of the claim? If the existing explanation already serves them, finish there. When a separate interpretive note would help, confirm the following.
 
 1. the two exact F.17 local senses are known;
 2. an F.9 Bridge between them obtains;
 3. one separate bounded-use claim identifies the proposed use, direction, rule, tolerated loss, and polarity; and
 4. the stance note has a named reader benefit that the claim does not already express plainly enough.
 
-If items 1 or 2 are missing, return to F.9. If item 3 is missing, write and test the bounded-use claim. If item 4 is missing, stop: no stance note is needed.
+If an endpoint or the Bridge is missing, use F.9 when the original question needs that correspondence. If the question needs a judgement about its use, establish the bounded-use claim before writing a gloss for it.
 
 #### F.9.1:4.2 - Write one bounded reading
 
@@ -128,7 +128,7 @@ If readers must return to the source account before making a staffing or release
 
 #### F.9.1:5.4 - Partial analogy without substitution
 
-Two schools use different senses that share one explanatory pattern. For example, a TAE felt-sense phrase and a later formal term may share one stated explanatory feature while differing elsewhere. Their F.9 Bridge obtains, and an affirmative bounded-use claim says that the Bridge is suitable for one teaching comparison while rejecting method transfer. A `partialAnalogy` stance helps the reader notice the shared pattern. It does not make the methods equivalent.
+A teacher wants a reader to recognize a recurrence. In this constructed comparison, a speaker’s felt-sense phrase in a TAE session, “back where we started”, describes returning to the same unresolved question. A formal account describes a path that returns to its starting state. Suppose the two local readings and their correspondence have been established for this teaching use. The teacher can explain the analogy in one sentence. “The speaker comes back to the unresolved question just as the path returns to its starting state.” That feature supports the comparison. To infer that every permitted continuation repeats, the learner would also have to rule out a continuation that escapes the recurrence. The learner can use the analogy without borrowing either school’s method.
 
 #### F.9.1:5.5 - The `nonEquivalent` warning
 
@@ -136,7 +136,7 @@ An affirmative bounded-use claim says that the Bridge is suitable for placing tw
 
 #### F.9.1:5.6 - Anti-case: the gloss comes first
 
-“The dashboard metric is basically a projection of operational resilience” supplies neither exact local senses, an obtaining Bridge, nor a bounded-use claim. Do not attach a stance label. Recover the senses and F.9 relation, then state the exact proposed use and its tolerated loss. If the dashboard is a controlled reduction, also apply A.6.3.CSC.
+“The dashboard metric is basically a projection of operational resilience.” First ask what the reader needs from the sentence. To choose staffing for the next shift, establish which demand the staff must cover and what capacity will be available. A gloss about the metric could leave both open. To explain what the displayed value preserves from a source account, establish the correspondence and what it permits the reader to infer. Apply A.6.3.CSC if a controlled reduction is needed. Add the stance only where a remaining ambiguity affects the reader.
 
 ### F.9.1:6 - Conformance checklist
 
@@ -198,12 +198,12 @@ Do not turn harmless comparison into a Bridge, bounded-use claim, reliance judgm
 
 #### F.9.1:12.1 - Migration rule
 
-For each legacy stance passage, ask in order:
+For each legacy stance passage, start with the work its reader needs to do.
 
-1. Which exact local senses are being related?
-2. Does an F.9 Bridge obtain?
-3. Which exact bounded-use claim is being explained?
-4. Does a short stance note add reader value?
+1. What would a short note let this reader interpret that the claim itself leaves unclear?
+2. Which two exact local senses does that reading depend on?
+3. Does the F.9 Bridge between those senses obtain?
+4. Which bounded-use claim would the note explain, and what does that claim affirm or rule out?
 
 Keep a stance note when you can identify both senses, establish their Bridge, cite the bounded-use claim and explain what the note adds for its reader. Preserve useful legacy wording as the plain reading, stance, loss emphasis, example or grounded non-use boundary. If the note adds nothing for that reader, omit it. Retain any independently useful legacy explanation with the claim or example it explains. A Card reference may remain as optional publication access, never as the stance's identity or prerequisite.
 

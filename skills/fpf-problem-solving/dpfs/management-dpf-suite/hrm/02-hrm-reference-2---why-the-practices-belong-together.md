@@ -21,8 +21,8 @@ This is a plural professional discipline. No single theory of motivation, econom
 | Method | Its own result | What it supplies to another Method |
 | --- | --- | --- |
 | HRM.1, coherent arrangement | A compatible combination of workforce practices, work, terms and provision, or an identified unresolved dependency | Relevant work and participation conditions for HRM.2–HRM.5; receives their findings when a combination must change |
-| HRM.2, assessment and selection | A justified personnel comparison and recommendation for a particular use | The supported capability and suitability inference; not an appointment, entitlement or clinical conclusion |
-| HRM.3, remuneration and progression | Explained reward terms and their transition | Obligations and incentives affecting selection, participation and helping work; receives changed job demands and qualified contribution findings |
+| HRM.2, assessment and selection | A warranted finding about a person's contribution or a group's ability to cover the proposed work, with a comparison or recommendation when commissioned | Grounds for assessment, including the support the selected people would rely on. Appointment requires the applicable decision. |
+| HRM.3, remuneration and progression | An explanation of what a person or group is entitled to under the terms applicable to the work and period, or proposed terms and a practicable transition | The amount or condition to apply in provision, or the obligations and incentives to account for when arranging work. Changed duties or contribution findings can reopen the relevant basis. |
 | HRM.4, voice and contested decisions | Obtainable influence, a qualified determination or a remedy | Participant knowledge, negotiated terms or a decision that can require any affected practice to change |
 | HRM.5, participation and transitions | A particular continuation, absence, return, movement or exit with actual work, support and effective terms | Individual conditions and consequences; returns recurring incompatibilities to HRM.1 |
 

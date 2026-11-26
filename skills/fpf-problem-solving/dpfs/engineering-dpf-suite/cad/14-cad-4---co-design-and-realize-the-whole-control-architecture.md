@@ -34,7 +34,7 @@ Use C.39 to connect the required result to its supplying operations and C.32/SYS
 
 For an assessment, follow each required behavior to the decisions and physical effects on which it depends. Determine which conditions must hold together, including how loads or delays can coincide and what the controller knows before acting. Choose the detail of each model by whether the distinctions it removes could change that conclusion. A plant-wide bound can answer a question about one output. A component certificate can answer a question about the whole loop when the interface and the other parts preserve its premises and entail the required behavior.
 
-For this comparison, distinguish the choices that define the architecture from the parameters tuned within it. The number of layers, model order, kind of command, sampling periods, planning horizon and processor arrangement can change the problem being solved. Gains, weights and numeric tolerances tune a selected construction. Changing either group can reopen the other.
+When a conclusion about control depends on what changed, distinguish a change to the controller from a change to its model. Giving a control layer its own observations, timing or authority can change how the system operates. Adding a state to an analyst’s model can distinguish two responses of the same controller to the same disturbance. Ask whether the proposed change alters a permitted action or operating arrangement, the alternatives distinguished for the engineering question, or both. A new sampling period, processor allocation, gain or tolerance matters to the comparison through its effect on a required result.
 
 CAD.1–CAD.3 construct the decomposition, connected dynamics and admissible commands. Existing qualified results can replace repeated design work. When the law changes, check which laws, command histories, disturbances and initial states its error certificate already covers. For $e^+=ae-d$, a proof of $|e|\le0.1$ for $|a|\le0.5$, $|d|\le0.05$ and $|e_0|\le0.1$ covers a gain change from $a=0.5$ to $0.25$: the next error is at most $0.5(0.1)+0.05=0.1$. Re-establish any premise outside the certificate and carry the supported bound into the rest of the comparison.
 
@@ -61,9 +61,9 @@ $$
 
 where each C includes the elapsed time from release of a task to the required delivery. Passing these tests certifies timing for that arrangement. A 6 ms upper estimate for a 5 ms deadline leaves timing open if the estimate is loose. An admissible late job defeats the deadline guarantee. On a shared processor, derive response bounds with blocking, interference and communication included. If delivery may extend past the next release, compare each result with its own deadline and the sustained workload with available capacity. For example, two independent 4 ms pipeline stages can deliver one result every 5 ms with a latency of 8 ms. This arrangement needs a consumer that permits that latency and supports the intervening commands.
 
-If planning finishes one period after its observation, model that delay and the command that controls the intervening period. Preparing a future segment can make the delay harmless for a predetermined reference but not automatically for a newly observed obstacle. Increasing the processor speed changes the feasible architecture set.
+If planning finishes one period after its observation, model that delay and the command that controls the intervening period. Preparing a future segment can make the delay harmless for a predetermined reference but not automatically for a newly observed obstacle. A faster processor can make another arrangement feasible when computation limited timely delivery and the new arrangement satisfies the other control and execution conditions.
 
-Use the implementation to test unit conversions, numerical tolerances, update order, saturation and reset behavior. A numerical optimizer's constraint tolerance belongs in the margin analysis if it can consume physical clearance. Verify that the lower law executed is the law used in CAD.2.
+For a design, account for unit conversions, numerical tolerances, update order, saturation and reset behavior that can affect the required duty. For a realized controller, establish how it handles those effects and which lower law it executes. Use applicable evidence already available. Test an unresolved effect or perform a new test when the assignment requires it. Include the optimizer’s constraint tolerance in the margin analysis if it can consume physical clearance.
 
 If an online solver returns only a partial iterate, separate the time spent solving from the test that permits applying its output. A qualified acceptance rule may allow a feasible inexact result and otherwise keep an admissible prior command or plan. Include the cost of that test and the conditions for progress; a timeout says nothing about admissibility, and feasibility alone does not establish progress. The command-governor alternative in :11 is one developed construction, not a fallback rule for every optimizer.
 
@@ -124,7 +124,7 @@ A convenient cost model can favor the hardware at hand. A small parameter search
 - A convergence or optimality claim has its own applicable grounds.
 - A design conclusion states its execution, communication and timing premises. A conclusion about an installation establishes the premises that matter there.
 - Search limits and unresolved candidates are visible.
-- When conditions change or a fallback is used, the designer identifies any premises that have changed and rechecks the conclusions that depend on those premises.
+- When conditions change or a fallback is used, establish which qualified conditions hold. Refer any conclusion whose premises have changed to whoever is responsible for reassessing it.
 
 ### CAD.4:8 - Common Anti-Patterns and How to Avoid Them
 

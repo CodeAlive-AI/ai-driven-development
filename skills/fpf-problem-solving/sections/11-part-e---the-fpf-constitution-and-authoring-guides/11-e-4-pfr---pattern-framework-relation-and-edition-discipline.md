@@ -72,7 +72,7 @@ Use `FrameworkEditionDependencyRecord` when an edition-impact or refresh receive
 
 Choose one by default. Either form faithfully represents an already identified assertion and creates no relation.
 
-If one named receiver needs both views, both cite the same `subjectAssertionRef`, the dependency record cites the generic row through `genericRelationRecordRef`, and every overlapping value is derived from that assertion.
+Choose each view for the task that consumes it. One practitioner may need both views, or different practitioners may need one each. Both cite the same `subjectAssertionRef` and derive their overlapping values from it. Use `genericRelationRecordRef` when the consumer needs to follow the dependency record to the generic row.
 
 Rebuild both views when the assertion changes. Never maintain duplicate facts independently.
 
@@ -139,7 +139,7 @@ If one edition has several direct dependencies, write one record per relied-on e
 
 The record contains no compatibility boundary. `compatibilityClaimRefs`, when present, points only to a separately stated pairwise compatibility claim because a named maintenance receiver needs that connection. The reference does not create or complete the compatibility claim.
 
-`genericRelationRecordRef` is present only when the same receiver also consumes the generic row. Both views derive overlapping values from `subjectAssertionRef` and refresh together.
+Populate `genericRelationRecordRef` when a receiving task requires a link from the dependency record to the generic row. When both views exist, derive their overlapping values from `subjectAssertionRef` and refresh them together.
 
 Deprecation and supersession likewise remain separate assertions. A package manifest may index them when its named maintenance use needs those refs.
 
@@ -264,7 +264,7 @@ Apply conflict precedence, then exactly one disposition in each cell:
 
 An unknown axis on a defeated candidate does not make establishment unresolved. Unknown optional minimality does not open the family disposition.
 
-With no required pair, all required pairs are compatible by vacuous truth. The closed-empty branches differ in the supported need claim, not in how many candidates were found.
+The compatibility conclusion concerns the required pairs. A further claim that three or more conditions can hold in one realization needs grounds for the joint realization. With no required pair, all required pairs are compatible by vacuous truth. The closed-empty branches differ in the supported need claim, not in how many candidates were found.
 
 The basis answer is non-permissive. A downstream A.10 bounded-reliance claim or B.3 assurance result cites the exact analysis edition or cell-answer subgraph and supplies the evidence, attempted use and disposition required by its own rule. Include currentness and any live rival when they change that use or conclusion.
 
@@ -314,7 +314,7 @@ FrameworkEditionDependencyRecord@CodexProcessFramework:
   refreshConditionRefs: [FPF_edition_change_or_material_change_to_either_relied_on_claim_as_stated_above]
 ```
 
-If one named cross-relation receiver also needs the generic view, add one `PatternFrameworkRelationRecord`, give both forms the same `subjectAssertionRef`, and set the dependency record's `genericRelationRecordRef` to that row.
+When a cross-relation task needs the generic view as well, add one `PatternFrameworkRelationRecord` and give both forms the same `subjectAssertionRef`. The two tasks may have different recipients. Set `genericRelationRecordRef` if the dependency task must follow the link to the generic row.
 
 In the generic row, `relationFunctionClaimRef` points to the E.4.PFR:3.4 dependency predicate, `dependencyOrEditionEffect` states the E.5.3-constrained direction, and `refreshOrSupersessionCondition` cites the G.11 refresh condition.
 
@@ -395,7 +395,7 @@ The fourth drift is to mistake definition, citation, evidence, or later sufficie
 | --- | --- |
 | CC-PFR.1 Assertion first | Every load-bearing claim has an exact subject, relation function, defining or constraining ClaimGraph, polarity, and current basis. A PFR row is optional. |
 | CC-PFR.2 Named row receiver | Every row names a framework-maintenance, impact, comparison, repair, or refresh use that changes action. Otherwise delete the row and retain the assertion. The optional blocked-reading fields follow §3.2. |
-| CC-PFR.2a Smallest receiver form | A cross-relation consumer uses the generic PFR row. A dependency-impact or refresh consumer uses the dependency-specific record. Both forms appear only when one named receiver needs both, cite the same subject assertion, link explicitly, derive overlapping values from that assertion, and share one refresh rule. |
+| CC-PFR.2a Smallest receiver form | A cross-relation consumer uses the generic PFR row. A dependency-impact or refresh consumer uses the dependency-specific record. Provide each view its task requires. When both are used, even by different recipients, derive shared values from the same assertion and refresh them together. Link them where the receiving task uses that link. |
 | CC-PFR.3 No owner field | No generic subject-pattern relation, owner field, pattern agency, authority, receiver, or destination is asserted. |
 | CC-PFR.4 Function before label | Relation function is selected by what the claim does, not by word similarity, adjacency, table position, or graph direction. |
 | CC-PFR.5 Dependency separated | Framework-edition dependency remains separate from compatibility, specialization, publication, recommendation, preservation, derivation, and evaluation. |

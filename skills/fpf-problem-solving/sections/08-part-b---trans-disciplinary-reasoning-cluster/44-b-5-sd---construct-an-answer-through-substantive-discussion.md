@@ -32,13 +32,13 @@ An inquiry can improve the answer, but waiting for every uncertainty to disappea
 
 #### B.5.SD:4.1 - Name the receiving question and the kind of answer needed
 
-Identify who will use the result and what that person or agent needs to settle or do. Ask for a representative use: a release decision, a revised explanation, an architecture choice, a research design, or a next action in a difficult task.
+Identify who will use the result and what they need to settle or do. Ask for the decision or inquiry as they face it. A participant may bring one disputed case to a discussion about a rule for future cases. Find out which choices the group is being asked to make and which the eventual user must be able to make. The case can reveal a missing distinction. To offer a rule to that user, establish where the distinction changes the answer.
 
 Distinguish the result required. An explanation relates what is known and why; a proposal states what could be done and on which grounds; an inquiry proposal identifies an unresolved question and a way to answer it; an agreement records accepted contributions. A discussion can produce more than one, but one does not substitute for another. Use LDR.2 when the unresolved result is acceptance of contributions rather than subject understanding.
 
 Set a completion condition. For a configuration review, the receiver may need to know which claim is supported for the configuration, which remains unsupported and which observation would settle the gap. “Everyone understands the issue” is not enough if the receiver still cannot distinguish those claims.
 
-Recover an adequate existing answer before assembling new work. If the relevant model already supplies the needed explanation under current conditions, explain its application and stop. If the receiving use differs, identify the difference that changes the inference instead of rejecting the whole earlier result.
+Recover an adequate existing answer before assembling new work. Use the explanation the model already supplies under current conditions. That can complete an order for an answer. If the commission also promises someone an opportunity to question the result, a new discussion or an authorized decision, put the existing reasoning to use in that work. If the receiving use differs, identify the difference that changes the inference instead of rejecting the whole earlier result.
 
 #### B.5.SD:4.2 - Select the construction and its capable performers
 
@@ -61,7 +61,7 @@ Begin with the objects, claims and conditions the answer concerns. Recover ambig
 
 Then connect the claims. Use B.5.RA:4.4a to recover an argument implicit in prose or dialogue, or to examine an already clear argument and the support an objection challenges. For each important conclusion, ask what supplies its ground and what relation permits the next inference. For a proposed action, ask how its contributions produce the receiving result. Trace dependencies in both directions: from the result to what it needs, and from a supplied finding to what it warrants.
 
-In a multi-component system, distinguish the claim that each component works from the claim that they work together. Recover interfaces, interactions, loads and shared conditions that can defeat composition. In an organizational proposal, distinguish one participant's spare time from joint availability at the moment of handover. In a learning design, distinguish exposure to instruction from the operation the learner will later perform.
+In a multi-component system, distinguish the claim that each component works from the claim that they work together. Recover interfaces, interactions, loads and shared conditions that can defeat composition. For a proposed joint service, establish when the needed contributions can coincide. When the group is asked to commit to that service, also establish whose undertaking or scheduling authority can secure those contributions. In a learning design, distinguish exposure to instruction from the operation the learner will later perform.
 
 Use the form best suited to the subject: a calculation, diagram, connected prose, prototype, table with explained relations or another working product. Choose a form that exposes the reasoning. A canvas or checklist can also help notice an omitted concern.
 
@@ -69,11 +69,11 @@ At intervals, have the receiver or another capable participant trace a consequen
 
 #### B.5.SD:4.4 - Work with objections as contributions to the answer
 
-Invite a participant to state the claim, relation or consequence they challenge and why it matters to the receiving use. Restate the objection in terms they recognize before trying to answer it. Preserve an unfamiliar but potentially consequential objection long enough for a qualified contributor to examine it.
+Give participants the agreed opportunity to question the result. They may find the explanation adequate as it stands. When someone raises an objection, ask which claim, relation or consequence it challenges and why it matters to the receiving use. Restate the objection in terms they recognize before trying to answer it. Preserve an unfamiliar but potentially consequential objection long enough for a qualified contributor to examine it.
 
 Distinguish several responses. A misunderstanding can need explanation. A factual conflict can need source comparison or observation. An unsupported inference can need a model, test or narrower conclusion. A disadvantage can require another proposal. A value conflict can need D.4 or a governing decision. An incompatible contribution belongs with LDR.2. These are different continuations, not labels for dismissing the objector.
 
-Connect the answer back to the objection. Show which premise, relation, result or limitation changes. If the answer resolves only part, retain the rest. A participant's changed view may help the group act, but persuasion is not the test of technical truth. Conversely, an accurate explanation can leave a legitimate refusal unchanged.
+Connect the answer back to the objection. Show why the existing grounds resolve it or which premise, relation, result or limitation needs revision. If the answer resolves only part, retain the rest. A participant's changed view may help the group act, but persuasion is not the test of technical truth. Conversely, an accurate explanation can leave a legitimate refusal unchanged.
 
 Where confidentiality prevents full inspection, obtain a permitted qualified judgement and state its usable scope, or narrow the reliance. Do not invent a transparent basis. If a required independent judgement would be compromised by the discussion arrangement, obtain it through its proper method.
 
@@ -89,11 +89,9 @@ A useful result can be an open question with a feasible next construction. State
 
 #### B.5.SD:4.6 - Return the answer and test a consequential change
 
-Give the receiver the connected result in a usable form, with the decisive grounds, unresolved matters and conditions that change its use. Let the receiver perform the intended interpretation or next action, rather than merely approve the meeting summary.
+Give the receiver the connected result in a usable form, with the decisive grounds, unresolved matters and conditions that change its use. Delivery of the supported answer can complete the undertaking. If the receiver is to interpret it, choose or authorize the next action, preserve their opportunity and means to do so.
 
-Examine a plausible consequential variation. If a test window disappears, which claims and proposed decisions lose their basis? If the population, interface or load changes, which earlier findings still apply? If another receiver reveals a needed input, does the proposed simplification still work? Follow only the affected connections; a small change need not restart the whole discussion.
-
-This variation is a way of checking whether the explanation relates its parts. Preserve a consequential unlisted concern when it appears.
+When a proposed explanation will be used under varying conditions, try a change that could affect its warrant. If a test window disappears, which claims and proposed decisions lose their basis? If the population, interface or load changes, which earlier findings still apply? Follow that connection. An existing argument that covers the variation can answer directly. For a decision confined to this occasion, return the sufficient grounds for it.
 
 Finish when the receiving question has a warranted answer and feasible continuation, including a justified stop. If participants repeat views while the connection remains missing, change the construction, obtain the absent competence or return the blocker.
 
@@ -115,19 +113,21 @@ The integrator asks the relevant specialist which parameter changed and whether 
 
 The participants construct three continuations. They could test the joint configuration, narrow the acceptance claim to the already supported use, or redesign the interface so the earlier evidence becomes applicable under justified conditions. A qualified engineer supplies the required model and test judgement. The lab can provide a window for the first option, and the decision maker accepts the inquiry cost.
 
-The returned proposal states the interaction, configuration, load, required observation and decision that will use the answer. Until the test is performed, the dependent acceptance claim remains unsupported. This is a useful constructed result: it explains the gap and how the proposed inquiry could settle it.
+The reviewer can now answer the question about the evidence in hand. It supports the reported component results under their test conditions and leaves C7's joint behaviour under load open. The accepted inquiry specifies which interaction to observe in C7, under what load, and how the outcome would bear on acceptance. Commissioning the test settles the plan for obtaining that evidence.
 
 Now remove the lab window. The account exposes the dependent test and decision. The group revisits the narrower claim, another provider or a later release; it does not preserve an unavailable test by leaving it in the minutes. The component results remain useful for the claims they support.
 
-If a qualified specialist had already established that the C6 evidence applied unchanged to C7, the explanation would have sufficed. The workshop would add no missing inference.
+Suppose instead that a C6 result had established the required joint behaviour. A qualified comparison showing that C7 preserves the configuration and conditions on which that result depends can settle the review from existing evidence. A comparison covering only the tested module settles the transfer of that module's result.
 
 #### B.5.SD:5.2 - A community disagrees over an explanatory article
 
-Suppose independent practitioners discuss an article intended to help newcomers choose an appropriate modelling method. Some favour a concise rule; others object that the rule fails when the system boundary changes. There is no common employer and no proposed reorganization.
+Independent practitioners are writing an article to help volunteer coordinators choose a model for staffing decisions. One proposes adding the hours each volunteer offers. Another objects that a total can hide who is available together. The group needs a way for readers to decide when each matters.
 
-The facilitator asks for the receiving choice, not a vote on favourite wording. A practitioner supplies an example with one boundary and another supplies the changed-boundary case. The integrator traces which assumptions make the rule useful and which change the recommendation. They revise the article to show the decision condition and return to the relevant modelling method.
+The facilitator asks what the reader has to settle. To report the total hours offered by distinct volunteers, the coordinator adds their hours for the same period. To find a time for a two-hour repair clinic, the clinic needs a receptionist and a technician able to do their respective jobs at the same time with the necessary resources. Each offers three hours. If both are free from 9 to 12, the clinic could run from 9 to 11. If only the receptionist is free from 9 to 12 and the technician from 12 to 15, their six hours offer no common two-hour slot.
 
-The group can agree that the revised explanation answers the question while one contributor declines further editorial work. LDR.2 handles that contribution if it matters. The explanation's warrant and a volunteer's consent remain separate.
+The article now asks which result the coordinator owes. For a proposed time, the common slot can suffice. To promise the volunteers’ work, establish that their undertakings cover the slot or that an operative arrangement lets the coordinator assign them. If they have only indicated free time and retain that choice, offer the slot for their decision. A service authorized to promise coverage can make its own commitment with qualified cover assured, even if it selects the individual volunteers later. The hours, the possible schedule and the commitment each answer a different staffing question.
+
+A contributor may accept that explanation and decline further editorial work. LDR.2 handles the commitment if it matters.
 
 If the group lacks the modelling competence needed to assess the two cases, it returns the question to a qualified practitioner. A well-facilitated consensus would not fill the gap.
 
@@ -144,7 +144,7 @@ A conforming use makes clear:
 - who needs which answer and what adequate completion permits;
 - which subject operations and capable performers produce it;
 - how the decisive claims, evidence, conditions and conclusions connect;
-- how a consequential objection changes the answer or remains unresolved;
+- whether the promised opportunity to question the result was available, whether a separately commissioned discussion took place, and, for a consequential objection that arose, why the answer held, changed or remained open;
 - why further inquiry is worthwhile and feasible when selected;
 - what the receiver can use now and what reopens after a changed premise.
 

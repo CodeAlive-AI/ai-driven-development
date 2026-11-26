@@ -8,7 +8,7 @@
 
 Use this pattern when independent changes by platform users, contributors or providers can break a supported interaction, or when every useful variation waits for one central team to implement it. Start with one proposed change and the actual consumers whose result it can alter. Recover the interface they use, the behavior they rely on and the contribution they need to make.
 
-The first result is a bounded interface/contribution evolution decision, including consumer effects and a usable way to test a contribution. An interface may be an API, configuration format, template, physical connection or agreed operational exchange.
+The first result is a bounded interface/contribution evolution decision, with grounds for its effects on the consumers. When supporting other contributors is part of the decision, give them a usable way to test a proposed change. An interface may be an API, configuration format, template, physical connection or agreed operational exchange.
 
 Do not create an extension mechanism for one private implementation with no independent consumer. Use SYSE.29 when an already selected change requires migration, and SYSE.18 when another governing Agent's decision is indispensable. This pattern changes the supported technical interaction; organizational contribution design and actual assignments remain separate questions.
 
@@ -28,6 +28,8 @@ The recurring task is to choose how the proposed contribution can enter the prov
 | Technical acceptance | Tests can establish a bounded behavior; they cannot grant permission to change another party's provision. |
 
 ### SYSE.27:4 - Solution
+
+Start with the decision about the receiving use. A compatibility assessment can finish when an applicable interface contract and evidence about the two behaviors settle that decision. Design and compare changes when a change is requested or a remedy is needed. Prepare the contribution arrangements in :4.3 when other contributors are to develop or maintain the change.
 
 #### SYSE.27:4.1 - Recover the consumed behavior
 
@@ -59,13 +61,13 @@ Compare the shared core with a maintained adapter, a separate supported profile 
 
 #### SYSE.27:4.3 - Make contribution possible at the supported boundary
 
-State what a contributor may change and what remains controlled by the provider. Supply a reproducible way to exercise the interaction, examples of supported old and new use, relevant acceptance checks, and enough failure information for a contributor to repair a rejected proposal.
+For an assessment alone, return the evidence that settles the stated use. When contributors are to make changes at this boundary, state what they may change and what the provider controls. Supply a reproducible way to exercise the interaction, examples of supported old and new use, relevant acceptance checks, and enough failure information for a contributor to repair a rejected proposal.
 
 Make dependencies explicit: a contribution may require a toolchain, resource, permission or domain Method not yet supplied. Preserve the distinction between a technically valid proposal, an accepted contribution and a deployed provision. A contribution test should not expose release credentials or unrestricted provider access.
 
 Choose a maintained extension point only where independently changing use justifies it. A small parameter or documented composition may be enough; an open-ended plugin system can cost more to secure, qualify and support than the variants it enables.
 
-Explain to contributors which user result the boundary protects, why the fixed conditions matter and which alternatives remain acceptable. Provide a small example they can adapt and a way to see whether their proposed result can be consumed. When a proposal fails, return the failed condition and the observed case so that the contributor can revise the technical idea.
+When preparing a boundary for independent contributions, explain to contributors which user result the boundary protects, why the fixed conditions matter and which alternatives remain acceptable. Provide a small example they can adapt and a way to see whether their proposed result can be consumed. When a proposal fails, return the failed condition and the observed case so that the contributor can revise the technical idea.
 
 Agree the continuing work before offering a new supported extension. The contributor may supply domain implementation and examples while the platform provider supplies integration, distribution and first-line diagnosis. Establish who handles an incompatible update, an absent maintainer or an urgent failure. An experimental contribution can remain available under an explicit experimental scope until those conditions are supplied. Acceptance into a repository and a promise of continued support are different decisions.
 
@@ -73,7 +75,7 @@ For copied templates, explain how future change reaches existing instances: a ma
 
 #### SYSE.27:4.4 - Exercise effects on consumers
 
-Run or construct the selected compatibility cases against the old and proposed behavior. Include normal use and the defaults, limits, failures or unsupported requests that can change acceptance under the applicable contract.
+Use adequate existing evidence for the compatibility decision. Where it leaves consequential behavior open, construct or run cases against the old and proposed behavior. Include normal use and the defaults, limits, failures or unsupported requests that can change acceptance under the applicable contract.
 
 Use the intended result consumer to interpret the outputs. A request that is syntactically accepted but receives a different unit, deadline or configuration is not compatible merely because the interface returns success.
 
@@ -122,8 +124,8 @@ Active consumers and easy demonstrations are easier to see than dormant recovery
 ### SYSE.27:7 - Conformance Checklist
 
 - Actual consumers and their relied-on behavior are identified at the grain that can change the decision.
-- Internal change, extension, adapter, break and refusal are compared by effects rather than labels.
-- Contributors can exercise the supported interaction and understand a rejection.
+- When choosing a change, the relevant alternatives are compared by their effects on the receiving use. For an assessment of a given change, the evidence supports the compatibility decision for the versions and behaviors in question.
+- Where the decision supports independent contributions, contributors can exercise the promised interaction and understand the grounds for a rejection.
 - Evidence covers the behaviors and consumer versions included in the compatibility promise, including adverse conditions that can change a receiving result.
 - Technical acceptance, actual assignment, permission and deployed configuration remain distinct.
 - Each migration need, outside-provider decision or missing specialist Method is returned to the practice or holder that can address it.
@@ -157,6 +159,6 @@ The accepted trade-off is additional contract and support work for independent c
 
 ### SYSE.27:12 - Relations
 
-SYSE.26 supplies the supported user interaction and SYSE.13 identifies versions and configurations. SYSE.29 handles migration or retirement. SYSE.18 supplies integration decisions across independent authority; SYSE.24 compares complete obtaining arrangements. OCE.4 supplies contribution-architecture design and OCE.6 supplies actual holder assignments when those organizational results are missing.
+SYSE.26 supplies the supported user interaction and SYSE.13 identifies versions and configurations. SYSE.29 handles migration or retirement. SYSE.18 supplies integration decisions across independent authority; SYSE.24 compares complete obtaining arrangements. Use OCE.4 to design how the participants’ work will fit together. Where the plan depends on a particular holder, establish who is assigned from the effective arrangement. If an appointment is still needed, use OCE.6 to work out and obtain it with those empowered to make it.
 
 ### SYSE.27:End

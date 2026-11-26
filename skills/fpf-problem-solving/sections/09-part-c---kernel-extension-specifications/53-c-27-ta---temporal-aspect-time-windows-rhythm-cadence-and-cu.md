@@ -216,11 +216,11 @@ TemporalAspectStatementClaimContent:
 
 #### C.27.TA:5.4 - Work Rhythm
 
-A review practice depends on a two-day response rhythm across several review positions and participants. Keep a responsibility claim separate when the temporal account relies on it.
+A review service promises a final answer within two elapsed days of submission. Two reviewers work in sequence. To state the service's timing claim, follow the same submission from receipt through the handoff to the final answer. Even if each reviewer answers within two days of receiving it, the final answer can arrive four days after submission. Suppose the first stage starts at submission, each stage takes at most one elapsed day, and the transfers to the second reviewer and to the final recipient are immediate. The two one-day bounds then cover the entire promised interval. Waiting before the first stage or after the second has to fit that same interval. For a completed review, the agreed submission and delivery times can give the duration directly.
 
+A turnaround commitment allows irregular arrivals and deliveries. If the question concerns the rhythm of the work, identify the events meant to recur and the relation their timing must preserve. For example, a second review scheduled before the next publication depends on the phase of the first handoff within each publication cycle. Check that relation over the cycles covered by the claim.
 
-
-C.27.TA states the bearer, rhythm or cadence, timing reference and applicable extent. When cross-bearer coordination matters, identify the direct coupling relation and establish its conditions before asserting an obtaining occurrence.
+If the agreement instead gives each reviewer two days from receipt, assess the two obligations on their respective intervals. If the task is to establish synchronization, recover the relation the work requires between the events. An account of how the participants bring about that timing also needs grounds for the coordinating mechanism.
 
 ### C.27.TA:6 - Bias-Annotation
 

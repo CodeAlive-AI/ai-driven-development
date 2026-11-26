@@ -47,9 +47,9 @@ Management Accounting develops and uses economic knowledge of an organization's 
 
 Begin with the work that needs to become understandable or possible. You may need an explanation of cost, an outlook, an economically supportable product or service arrangement, or information that helps participants coordinate their decisions. These questions lead to different combinations of methods. Management Accounting connects the intended results, work, resource provision, monetary consequences and use of information; the responsible operating, engineering, financial and organizational practices contribute their own constructions and decisions.
 
-These are selected connected examples. Enter where the explanation is missing; reuse an adequate model or account. The [Table of Contents](_index.md#table-of-contents) gives direct access to the methods, and the [Architectural Reference](_index.md#management-accounting-principles-framework-architectural-reference) explains the repertoire. You can ask an assisting agent to explain a pattern or comment on your case in the language of your work, without framework jargon. In MA.4:5, 4 identifies the pattern and 5 its section.
+These are selected connected examples. Enter where the explanation is missing; reuse an adequate model or account. The [Table of Contents](_index.md#table-of-contents) gives direct access to the methods, and the [Architectural Reference](_index.md#management-accounting-principles-framework-architectural-reference) explains the repertoire. A service with the needed access and capability can reconcile accounts or apply an agreed charging rule. If the question concerns a proposed price or rule, distinguish the contribution of whoever devised it from the decision required to adopt it. Ask for an explanation of the calculation when its grounds are in doubt. In MA.4:5, 4 identifies the pattern and 5 its section.
 
-The calculations below are constructed cases under supplied operating, contractual and accounting premises. When applying them, obtain the applicable facts, reporting rules and decisions from the responsible practitioners.
+The calculations below are constructed cases under supplied operating, contractual and accounting premises. When applying them, use the applicable facts, reporting rules and decisions. Where evidence or a decision is missing, obtain it from a source competent to supply it.
 
 ### MA-E1 — An order is priced below reported average cost
 
@@ -80,15 +80,15 @@ The calculations below are constructed cases under supplied operating, contractu
 
 ### MA-E3 — The forecast has become a resource negotiation
 
-- **Situation:** One number is expected to serve as demand outlook, ambition, resource request and authorization, concealing the decision needed when they differ.
-- **Question:** Which expectation should remain visible, and which action or resource decision could change the outlook?
-- **First useful result or blocker:** Distinguishable expectations, ambitions, requests and authorizations, connected to the resource or management decision that matters.
+- **Situation:** One number is expected to serve as demand outlook, ambition, resource request and authorization, obscuring the meaning of any difference.
+- **Question:** What do the numbers establish about demand, ambition and provision, and what decision, if any, follows?
+- **First useful result or blocker:** A supported comparison of expectation, ambition, request and authorization. If a decision is needed, identify who can make it and what the comparison supplies.
 - **Start with:** [MA.6 - Separate Forecasts, Targets and Resource Requests](13-ma-6---separate-forecasts-targets-and-resource-requests.md) for mixed meanings; [MA.5 - Construct and Update an Operating Forecast](12-ma-5---construct-and-update-an-operating-forecast.md) when the meanings are settled and the outlook needs construction or revision.
 - **Stop or return:** Keep an adequate expectation visible. A resource request, its authorization and usable provision remain different results.
 
 1. **Recover the use of each number.** MA.6's case has demand expected at 100 units, an ambition of 120, a request for provision covering a possible surge to 130, and authorization covering 110 under the supplied mix and scheduling assumptions. The authorization neither changes expected demand to 110 nor makes the ambition feasible.
-2. **Connect the gap to the result that can resolve it.** MA.5 constructs or obtains the warranted demand outlook and its uncertainty. Its MA.5:5.1 example joins sixty booked units with forty further units estimated on a nonoverlapping basis; a sufficient supplied forecast can be used directly. Where conversion is missing, MA.1 and MA.2 relate demand to resource quantities and payments, using the adequate operating capacity account. The responsible manager can then decide about provision, scope or ambition. When the ambition or its comparison lacks a meaningful basis, [OPS.21](../ops/55-ops-21---choose-operating-aims-targets-and-comparisons.md) constructs that missing result; an adequate supplied target can remain. Keep a proposed addition in the scenario where it occurs; do not make it available by editing the forecast.
-3. **Update the outlook when the expectation changes.** If a market action warrants a new expectation of 115, MA.5 updates that outlook and its assumptions. The gap against authorized capability is five units on the same basis; the target remains 120 and authorization 110 until their responsible participants change them. A fixed resource payment stays fixed under its terms even when demand changes.
+2. **Connect the gap to the result that can resolve it.** MA.5 constructs or obtains the warranted demand outlook and its uncertainty. Its MA.5:5.1 example adds forty further units requested for delivery to sixty booked for the period. A sufficient supplied demand forecast can be used directly. Where conversion is missing, MA.1 and MA.2 relate demand to resource quantities and payments, using the adequate operating capacity account. The responsible manager can then decide about provision, scope or ambition. When the ambition or its comparison lacks a meaningful basis, [OPS.21](../ops/55-ops-21---choose-operating-aims-targets-and-comparisons.md) constructs that missing result; an adequate supplied target can remain. Keep a proposed addition in the scenario where it occurs; do not make it available by editing the forecast.
+3. **Update the outlook when the expectation changes.** A market action raises expected demand to 115. On the same basis, authorized capability of 110 is five below the new mean. That answers a comparison of levels. To forecast unserved work, use MA.6:4.3 to find the requests left by the service expected in each situation. Combine those counts when the probabilities of the situations are supported. The target remains 120 and authorization 110 until revised by those responsible. The terms of a fixed payment still apply.
 4. **Use the later result without rewriting the earlier prediction.** Retain the earlier forecast's premises when learning from outcomes. MA.7 constructs comparable intermediate accounts to explain the difference. If product mix changed, MA.7:5.2 shows how to replace an aggregate usage term with mix and within-product usage; action taken in response may account for part of the observed change. If the reward or negotiation arrangement still suppresses unwelcome expectations, MA.9 examines that specific use and returns any wider organizational change to its responsible practice. The clarified accounts may already resolve the question. If the attained result still needs a performance judgement, [OPS.22](../ops/56-ops-22---interpret-operating-performance-and-decide-the-resp.md) helps the reader judge what the result establishes given target difficulty, changed conditions, actions and joint effects. If a response is called for, propose it to the decision holder or decide under the applicable authority. The [repair cooperative case (Engineering.Reference:7)](../../engineering-dpf-suite/suite-reference/09-engineering-reference-7---how-should-we-set-a-target-and-jud.md) develops that continuation through an actual change in the local review rule.
 
 ### MA-E4 — Two customer cohorts share one paid service team
@@ -174,14 +174,14 @@ Generated by the skill's splitter: one file per section, in reading order.
 
 - [MA.1 - Build the Resource-Consumption and Cost Model](08-ma-1---build-the-resource-consumption-and-cost-model.md) (205 lines)
 - [MA.2 - Explain the Cost and Use of Capacity](09-ma-2---explain-the-cost-and-use-of-capacity.md) (116 lines)
-- [MA.3 - Assign Shared Costs for the Stated Use](10-ma-3---assign-shared-costs-for-the-stated-use.md) (114 lines)
+- [MA.3 - Assign Shared Costs for the Stated Use](10-ma-3---assign-shared-costs-for-the-stated-use.md) (118 lines)
 - [MA.4 - Reconcile Operating, Reporting and Cash Accounts](11-ma-4---reconcile-operating-reporting-and-cash-accounts.md) (174 lines)
-- [MA.5 - Construct and Update an Operating Forecast](12-ma-5---construct-and-update-an-operating-forecast.md) (164 lines)
-- [MA.6 - Separate Forecasts, Targets and Resource Requests](13-ma-6---separate-forecasts-targets-and-resource-requests.md) (121 lines)
+- [MA.5 - Construct and Update an Operating Forecast](12-ma-5---construct-and-update-an-operating-forecast.md) (166 lines)
+- [MA.6 - Separate Forecasts, Targets and Resource Requests](13-ma-6---separate-forecasts-targets-and-resource-requests.md) (127 lines)
 - [MA.7 - Explain a Cost or Margin Difference](14-ma-7---explain-a-cost-or-margin-difference.md) (159 lines)
 - [MA.8 - Account for Customer and Product Economics Over Time](15-ma-8---account-for-customer-and-product-economics-over-time.md) (176 lines)
-- [MA.9 - Design and Examine the Use of Management Accounting Information](16-ma-9---design-and-examine-the-use-of-management-accounting-i.md) (154 lines)
-- [MA.10 - Develop an Activity Design from an Economic Requirement](17-ma-10---develop-an-activity-design-from-an-economic-requirem.md) (146 lines)
+- [MA.9 - Design and Examine the Use of Management Accounting Information](16-ma-9---design-and-examine-the-use-of-management-accounting-i.md) (156 lines)
+- [MA.10 - Develop an Activity Design from an Economic Requirement](17-ma-10---develop-an-activity-design-from-an-economic-requirem.md) (150 lines)
 
 ### Management Accounting Principles Framework Sources and Edition Notes
 

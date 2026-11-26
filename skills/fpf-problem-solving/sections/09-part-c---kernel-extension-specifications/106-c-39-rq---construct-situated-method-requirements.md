@@ -9,7 +9,7 @@
 
 Use this pattern when a Method, an established-family or project-local grouping choice, or a proposed Method/Work/support structure may fail in the project's situation. Enter when the practical question concerns the receiving result, performer capabilities, technical or organizational conditions, variability, evidence, authority, or acceptable burden and those conditions are not yet explicit enough for individual qualification or architecture comparison.
 
-Begin with the recurring situation, the intended or actual Work and the result its recipient needs. Identify the decision that the criteria will serve. Selecting one Method and arranging several Methods to run together can impose different conditions on the same work. State what must be achieved before selecting a candidate. Attach each criterion to what it constrains, such as the Method, a performer's capability, an assignment, permission to act, the authority to decide, the support available or the result delivered.
+Begin with the intended or actual Work and the result its recipient needs. The criteria may concern one occasion, several specified uses, or a family of recurring situations. Establish which of these the decision must cover. Identify the decision that the criteria will serve. Selecting one Method and arranging several Methods to run together can impose different conditions on the same work. State what must be achieved before selecting a candidate. Attach each criterion to what it constrains, such as the Method, a performer's capability, an assignment, permission to act, the authority to decide, the support available or the result delivered.
 
 The first useful result is a bounded set of criteria with subjects, allowed variation, evidence needs, satisfaction observations, and stops. A criterion can be ready for later use even when no candidate currently meets it. Enter also when the present question concerns the justification of a criterion. That use can finish with a supported requirement recommendation and the criterion's current force or amendment limit, without selecting a Method.
 
@@ -19,7 +19,7 @@ Do not use this pattern as a generic product-requirements template. Criteria do 
 
 | Name used here | Meaning |
 | --- | --- |
-| situation family | The recurring class of receiving Work and conditions for which criteria are intended, with important variation and exclusions explicit. |
+| situation family | The class of receiving Work and conditions to which criteria for repeated use apply, including consequential variations and exclusions. Criteria for a single occasion can identify that occasion and its conditions directly. |
 | receiving Work and result | The dated Work occurrence or intended occurrence and the professional result it must produce or preserve. They are not the Method. |
 | required Method contribution | A reusable action, result, or preserved condition needed from one Method or from named Method relations, stated before assigning it to a candidate. |
 | criterion subject | The object or relation constrained by a criterion: Method/account content, MethodDescription, performer capability, covering Work assignment, permission relation, decision-authority relation, performed Work, decision result, support/access, responsibility, cultural relation, or another domain subject. |
@@ -49,7 +49,7 @@ The project then appears to have objective fit criteria, but nobody can say what
 | Force | Tension |
 | --- | --- |
 | Comparability | Shared questions help compare alternatives, while different subjects need different criteria and evidence. |
-| Situation specificity | Local constraints change the decision, while a one-project list may overfit and block reuse. |
+| Situation specificity | The conditions of one project can settle its decision. A requirement intended for reuse must also cover the variations that matter in its declared range. |
 | Candidate neutrality | Criteria should expose viable alternatives, while familiar candidates can be smuggled into the wording. |
 | Flexibility | Professional Work must adapt, while non-negotiable safety, evidence, authority, and burden bounds must hold. |
 | Clarity | Source-side content prompts reveal omissions, while they can be mistaken for universal Method parts. |
@@ -65,7 +65,7 @@ Recognition is cheap: recurring Work, a changed constraint, or one plausible cap
 
 #### C.39.RQ:4.1 - Pattern-Use Unfolding
 
-1. **Bound the situation family.** Name representative Work, receiving result, affected subjects, decision window, recurrence expected, important variants, and ordinary exclusions. Use `A.15.6` when a project, process or case claim leaves its subject unclear; attach a criterion to the plan, Method, Work, result, or other subject it constrains. Several accounts concern one Work only when their claims support that reading.
+1. **Bound the use of the criteria.** For one occasion, identify the intended or actual Work, the result due, who is affected and when the choice must be made. For several uses, establish their range and which differences could change a requirement. A commission to plan a method for repeated use needs grounds for that wider applicability. Use `A.15.6` when a project, process or case claim leaves its subject unclear. Attach a criterion to the plan, Method, Work, result or other subject it constrains. Several accounts concern one Work only when their claims support that reading.
 2. **Recover required contributions before assigning candidates.** Start from the professional result, available plans or instructions, and a relevant performed or anticipated case. Follow the receiving operation backward: what input, intermediate result or preserved condition must be available for it to succeed?
 
    Then follow an available way forward to find where it supplies that contribution, needs support, or fails. C.39:4.2–4.3 develops this source recovery and backward/forward construction when the connection is missing. State the resulting requirement without prescribing a familiar candidate's procedure unless that feature is independently non-negotiable.
@@ -77,13 +77,13 @@ Recognition is cheap: recurring Work, a changed constraint, or one plausible cap
    If the allowed deadline, protection or allocation is unknown, retain that criterion question and identify the agreement, authority or professional basis needed to settle it. Reuse an adequate existing criterion; seek additional information only when its attainable contribution warrants the burden.
 3. **Use source prompts without importing kinds.** Ask what goal, procedure, rationale, framing, mindset, intended use, representation, tool, scope, and adaptation conditions a source makes visible. Place the answer with its subject. A stated mindset may be description content; an obtaining capability or cultural relation needs separate evidence.
 4. **Recover conditions around enactment.** State performer capabilities, technical and organizational conditions, inputs, support/provider access, responsibility, covering Work assignments, permission and decision-authority relations, evidence timing, reversibility, and other Work or result constraints. Keep these conditions distinct from one another and from the performed Work and its decision result.
-5. **Separate variation from invariants.** Name lawful branches, substitutions, timing ranges, and local adaptations. Mark non-negotiable result, safety, confidentiality, authority, or evidence conditions.
+5. **Separate fixed conditions from choices the work leaves open.** Retain the non-negotiable conditions needed for this result and the permitted branches, substitutions, timing ranges or adaptations that affect its use. One occasion can itself admit several ways to proceed. A fully specified case may require only its fixed conditions.
 
    If a criterion's justification is the question, use §4.4 to appraise it while retaining its current force. An already justified criterion needs no new appraisal.
 6. **Identify who bears each burden and when.** Attach time, attention, capacity, delay, meeting, or cost limits to a participant, Work scope, and window. Keep individual burden distinguishable from combined peak demand and burden transferred to another participant or period.
 7. **Name evidence and observations.** For every decision-changing criterion, state what record or observation a later evaluation needs, its edition or window when material, and what would count as satisfied, failed, or unknown. Do not turn the requested evidence into a fit verdict.
 8. **State acceptance, stop, and reopen rules.** Say when the criteria set is adequate for its next use, which missing fact stops that route, and which situation or source change requires rebuilding it. A stop may route to capability, support, authority, product, or Work redesign rather than Method selection.
-9. **Return without selecting.** For each criterion, state what it constrains and which decision depends on it. An adequate existing account can carry the criteria. Use A.3.1.QM to qualify one identified Method, retain or exclude a candidate account, or examine a connection that can be assessed on its own. Use C.32.MWA.PP when combined work, provision or shared constraints can change the decision.
+9. **Return without selecting.** Could an arrangement satisfy every listed criterion and still fail the receiving use? Could the criteria exclude an arrangement that meets the terms? Add the missing relation or relax the unwarranted restriction. An inquiry about one disputed criterion can finish with its effect on the decision. An adequate existing account can carry the criteria. Use A.3.1.QM to qualify one identified Method, retain or exclude a candidate account, or examine a connection that can be assessed on its own. Use C.32.MWA.PP when combined work, provision or shared constraints can change the decision.
 
 #### C.39.RQ:4.2 - Record the Result
 
@@ -91,7 +91,7 @@ Use the rows that carry the present result. For a disputed criterion, retain the
 
 | Result position | Content for the present use |
 | --- | --- |
-| use and situation family | Receiving Work and result, decision to be made, scope, window, representative variations, and exclusions. |
+| receiving use | The Work and result, decision, scope and window. For a family of uses, include the variations and exclusions that determine where the criteria apply. |
 | required contributions | Candidate-neutral Method contributions and the result or preserved condition each must support. |
 | criterion rows | Criterion ID, subject/relation, requirement or bound, allowed variation, non-negotiable status, and decision that uses the criterion. |
 | capability, assignment, permission, and authority | Required performer capabilities; separate responsibility and access conditions; covering Work assignments; permission and decision-authority relations; and evidence for each. |
@@ -150,7 +150,7 @@ Responsibility, access, capability, assignment, permission, authority, performed
 | `SC-EVID-01` | provisional and signed hardware-evidence inputs, their relation, and the safety-closure guard | provisional evidence may be used before closure only with edition and uncertainty; signed evidence supersedes it for safety-closure reliance, while the provisional edition, uncertainty, earlier Work use, and relation to the later signed evidence remain traceable | version/uncertainty fields, earlier-use record, signed supplier evidence, and inspectable provisional-to-signed relation; missing signed evidence at closure stops release |
 | `SC-REV-01` | integration Work and the implementation state | rollback remains possible within one hour until `D-1`; the project may choose a signed-first or provisional-first branch before entry | replayable rollback demonstration for the current toolchain; inability to restore within one hour is `failed` for an early-integration route |
 | `SC-CAP-01` | hardware-verification and safety-evidence capabilities of the named performers | hardware verification and safety evidence judgment require current capability for the named controller, rig, and safety scope; capability grants neither assignment, permission, nor release authority | current capability evidence for each named performer; the separate assignment, permission, and decision-authority conditions must also hold, and missing capability stops the contribution that needs it |
-| `SC-TECH-01` | PLM/CI support, pinout schema, test-rig access, and their relations to Work | the evidence version used by integration remains recoverable; required verification has a named rig/access route; equivalent tools are allowed when they preserve the same result and evidence conditions | configuration, schema-edition, and access records; an unknown input edition or unavailable verification route is `unknown` and blocks reliance |
+| `SC-TECH-01` | PLM/CI support, pinout schema, test-rig access, and their relations to Work | the evidence version used by integration remains recoverable; required verification has a named rig/access route; equivalent tools are allowed when they preserve the same result and evidence conditions | configuration, schema-edition, and access records; an unidentified material edition leaves its dependent conclusion open. A route known to be unavailable rules out that route. Check whether another permitted route supplies the required verification |
 | `SC-BURDEN-01` | safety-engineer allocation on the peak safety day | safety demand stays at or below `0.40` of an eight-hour day (`3.20 h`); burden shifted to another performer remains visible rather than disappearing | allocation and time estimate for the selected day; demand above `0.40` is `failed` for the proposed structure, not proof that any one Method is unfit |
 | `SC-BOARD-01` | each joint-board Work occurrence | each board lasts at most 45 minutes; one or two boards are allowable when the evidence and burden criteria remain satisfied | planned duration, with an actual-duration record for a performed board; a proposed or performed board above 45 minutes fails the coordination-burden criterion |
 | `SC-STOP-01` | `W-ReleaseDecision-17`, its covering assignment, `AUTH-ReleaseDecision-17`, and the receiving result | no release occurs without signed evidence, required verification, a covering assignment, and the release-decision authority relation; delay to a later authorized slot is allowable | release record citing evidence, assignment, authority relation, and decision result; any missing non-negotiable yields withhold or next-slot, not silent waiver |
@@ -161,7 +161,7 @@ A later individual qualification may apply contribution, capability, access, and
 
 A later architecture comparison must inspect combined peak demand, timing, covering assignments, permission and decision-authority relations, provider access, and burden transfer. Passing one row or staying below `0.40` does not establish fit of the whole proposed structure.
 
-The criteria set is adequate for its next use when every non-negotiable row has an observable test, the remaining variations are explicit, and unknowns are routed to their subject.
+In this case the criteria are sufficient for use when they distinguish the arrangements that meet the receiving terms, including the relations among the required contributions. A test for every listed row can still miss the requirement that the evidence and the integration decision concern the same configuration.
 
 Apply each stop to the route that depends on it: missing signed evidence stops release; confidential geometry exposure stops AI-supported use; assignment, permission, authority, capability or verification gaps stop the contributions that require them. Rollback beyond one hour excludes early integration; excess peak demand or board duration excludes the proposed arrangement.
 
@@ -196,7 +196,7 @@ If timely amendment is unavailable, the rule remains in force and the release ar
 
 Apply these questions to the criteria being established or appraised and to the present use of the result. Existing relevant context can supply the answer.
 
-- [ ] The criteria name a situation family, receiving Work and result, decision to be made, scope, window, variations, and exclusions.
+- [ ] The criteria identify the receiving Work, result, decision and occasion or range of uses for which they must hold. Where the commission covers several cases, the stated range and relevant variation support applying the criteria to those cases.
 - [ ] Required Method contributions are stated before candidate assignment.
 - [ ] Every criterion names its subject or relation rather than hiding it under “method fit”.
 - [ ] Method/account content, MethodDescription, performer capability, responsibility, support/access, covering Work assignment, permission relation, decision-authority relation, performed Work, decision result, culture, and receiving-result claims remain distinct.
@@ -205,7 +205,7 @@ Apply these questions to the criteria being established or appraised and to the 
 - [ ] When a criterion's justification is disputed, the recommendation compares its protective contribution and burden and distinguishes that judgement from current force and the feasible amendment route.
 - [ ] Every burden limit names its participant, Work scope, applicable time window, bound and basis, and how satisfaction can be determined. A measured burden retains its measurement method and conditions; a stipulated or derived bound retains its governing or derivation basis.
 - [ ] Every decision-changing row names evidence and `satisfied | failed | unknown` observations.
-- [ ] The result states acceptance-for-next-use, stop, and reopen conditions without selecting or admitting a Method.
+- [ ] The criteria support the intended evaluation, including allowed alternatives and joint conditions. Selecting a Method requires the subsequent judgement.
 - [ ] Individual and combined structure questions are routed to different later results.
 
 ### C.39.RQ:8 - Common Anti-Patterns and How to Avoid Them

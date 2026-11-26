@@ -39,7 +39,7 @@ A division into “physics first, mathematics second, implementation last” als
 
 ### B.5.MPC:4 - Solution
 
-Construct the answer by connecting the contributions it needs. For each connection, identify the supplied result, the receiving operation and the condition that makes the result usable there. Follow those meanings through a small instance. If the connection is missing, construct it, obtain it from a suitable contributor, or return the missing result that prevents the next move.
+Construct the answer by connecting the contributions it needs. For each connection, identify the supplied result, the receiving operation and the condition that makes the result usable there. Follow those meanings through the argument or construction that answers the physical question. Trace an instance when it can expose an uncertain correspondence. If the connection is missing, construct it, obtain it from a suitable contributor, or return the missing result that prevents the next move.
 
 The long mantra keeps the whole question available while attention moves between contributions:
 
@@ -61,9 +61,9 @@ Identify the participants, interactions and configurations that could determine 
 
 State the applicable physical or operating rules. Explain why a rule supplies the needed relation and where it is an assumption. Wheel rotation yields a distance relation only under the chosen rolling and geometry conditions. Exclusive possession of a card supports an admission limit only when the entrance procedure connects possession to entry and return. A.3.3 helps construct configurations, retained state and allowed continuations; the subject practice supplies the laws and mechanisms those continuations use.
 
-Choose a sufficient account for the question. A direction or impossibility result may need less physical detail than a trajectory, speed or load calculation. Make an omitted interaction explicit when it could defeat the inference: slip changes wheel travel, a moving gear carrier changes relative rotation, and uncontrolled entry breaks the visitor-to-card association.
+Choose a sufficient account for the question. If the physical boundary or the procedure is yours to choose, ask which change in the arrangement could change the requested result while the description of one part stays the same. For an occupancy guarantee across entrances, follow the room boundary, the transfers each entrance permits and any relation between their card stocks. For yesterday's occupancy, establish which transfers actually occurred or what the available evidence bounds. A direction or impossibility result may need less physical detail than a trajectory, speed or load calculation. Make an omitted interaction explicit when it could defeat the inference: slip changes wheel travel, a moving gear carrier changes relative rotation, and uncontrolled entry breaks the visitor-to-card association.
 
-When observations supply an input or test a consequence, construct the relation between the sought quantity and the indication. Use C.16:5.3 and C.16:5.4 for the measurement method and model. Motor counts can indicate motor rotation under an encoder account; using them to establish travel additionally consumes the transmission and ground-contact account. If the available indication cannot distinguish the cases needed by the question, obtain a different observation, use an adequate bound, or change the question.
+When observations supply an input or test a consequence, construct the relation between the sought quantity and the indication. Use C.16:5.3 and C.16:5.4 for the measurement method and model. Motor counts can indicate motor rotation under an encoder account; using them to establish travel additionally consumes the transmission and ground-contact account. If the available indication leaves different required answers possible, seek a discriminating observation or a sufficient bound. If a weaker question is useful, explain what answering it contributes and what remains open for the original use.
 
 Return a proposed physical account and its consequences under stated conditions. An unknown interaction or calibration is a useful missing contribution when it determines which mathematical question can be constructed.
 
@@ -93,7 +93,7 @@ Choose the result the use needs: a value, distribution, statistic, bound or prop
 
 When a procedure is needed, construct its inputs, retained state, elementary operations and output interpretation. Explain how it obtains the mathematical result and why it terminates, or which property it preserves during continued interaction. C.29.2 supplies this formulation work; the relevant algorithmic or mathematical Method supplies the construction and its argument. B.5:4.2 and B.5:4.3 help recover a construction or a decisive proof step that the available explanation leaves inaccessible.
 
-Trace one instance with its meanings intact. In a two-colouring procedure, a waiting list records vertices to be processed, while parent links can reconstruct a failed closed path. In a motion calculation, the integer is a count of a kind of increment. In an admission procedure, taking a free card changes a finite state and determines whether an entry may proceed.
+When an instance helps establish the correspondence, follow what each step of it means. In a two-colouring procedure, a waiting list records vertices to be processed, while parent links can reconstruct a failed closed path. In a motion calculation, the integer is a count of a kind of increment. In an admission procedure, taking a free card changes a finite state and determines whether an entry may proceed.
 
 For a numerical approximation, carry the error that can affect the physical use. Separate rounding of a computed command from uncertainty in radius, calibration or physical response. For a resource claim, include the cost of obtaining the input, representing it and interpreting the output when those costs matter. Counting one graph-edge inspection as one operation is useful under an adjacency-list cost model; it does not estimate the effort of discovering the contacts.
 
@@ -126,9 +126,9 @@ Use an existing adequate implementation when this comparison is settled for the 
 
 Recover dependencies by asking, for each needed result, “What results and conditions make this operation possible, and what other operation could supply the same receiving need?” Keep the answer with the derivation, diagram or explanation. A short case may need only a sentence; a shared design may need a dependency diagram.
 
-An **AND dependency** means that contributions are needed together for the stated inference. The robot's distance per motor increment uses the effective wheel radius, transmission ratio and increments per motor revolution together. Replacing any one can change the command.
+An **AND dependency** means that contributions are needed together for the stated inference. The robot's distance per motor increment uses the effective wheel radius, transmission ratio and increments per motor revolution together. Replacing any one can change the command. Establish that the required premises can hold in the same configuration. A controller might accept the required count in absolute mode and offer relative commands only over a smaller range. Separate evidence for the count and for the relative mode leaves their combination open.
 
-An **OR alternative** is a different sufficient way to obtain the result needed by the receiving use. A proved upper bound and an exact computation can be alternatives for deciding whether a limit can be exceeded. Each route retains its own assumptions. Two different approximations do not become sufficient alternatives merely because both return a number.
+An **OR alternative** is a different sufficient way to obtain the result needed by the receiving use. A proved upper bound at or below the limit can establish that the limit cannot be exceeded. If the bound extends above the limit, a tighter bound or an attainable violation can settle what that bound leaves open. Computing the maximum when it exists is another route. Each route retains its own assumptions. Two different approximations do not become sufficient alternatives merely because both return a number.
 
 For a conditional physical consequence, one useful small rendering is:
 
@@ -226,7 +226,7 @@ A designer asks whether every gear in a connected arrangement can rotate while a
 
 Construct a finite undirected graph. A vertex represents one gear and an edge represents one of the stipulated external meshes. Assign colour 0 to one rotation direction and colour 1 to the other. An edge requires different colours at its endpoints. This expression makes the physical question a mathematical one: can the vertices be assigned two colours while satisfying every edge?
 
-The graph records contact, not geometric closeness on the page. A drawing with crossing lines does not add a mesh between the gears at that crossing. If a contact is absent from the list, the result answers only the incomplete list.
+The graph records contact, not geometric closeness on the page. A drawing with crossing lines does not add a mesh between the gears at that crossing. If some contacts are unknown, an odd cycle of established external meshes already rules out nonzero rotation of the gears in that cycle under the stated conditions. Additional meshes cannot remove that obstruction. A colouring of the known edges establishes compatible directions for those edges. To extend it to the entire arrangement, establish that all remaining meshes permit compatible directions, for example from a rule about how the two groups may mesh.
 
 Obtain either a colouring or a witness of failure by the following procedure.
 
@@ -338,7 +338,7 @@ Use these checks on the claimed joint result and its explanation. They establish
 | CC-MPC.1 — Receiving question | The explanation identifies the physical difference to be resolved and what the supported answer enables. |
 | CC-MPC.2 — Physical premises | Participants, interactions and operating conditions are sufficient to recover the mathematical question; consequential assumptions remain distinguishable from observations. |
 | CC-MPC.3 — Interpretable construction | Important quantities, structures and operations have meanings that survive the construction, and a lost distinction either leaves the use intact or changes the returned result. |
-| CC-MPC.4 — Obtained consequence | The proof, construction, bound or computation is supplied for the stated case, with the decisive argument and its conditions. A missing operation is named as missing. |
+| CC-MPC.4 — Obtained consequence | The proof, construction, bound or computation reaches the requested instance or range under its stated conditions. A result about part of the arrangement identifies what it establishes for the whole question and any operation still needed. |
 | CC-MPC.5 — Executing arrangement | Any realization claim connects preparation, system operations and result reading. Range, units, initial state and ordering are recovered wherever they change the inference. |
 | CC-MPC.6 — Joint and alternative dependencies | Jointly needed contributions remain together; alternative routes each satisfy the receiving need under their own conditions. A shared premise remains shared across alternatives. |
 | CC-MPC.7 — Notation in use | The expression supports the needed operation under explained or familiar rules; new subject conclusions are justified by that operation rather than presented as mere re-expression of givens. |

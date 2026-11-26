@@ -75,7 +75,7 @@ Return to the opportunity contribution that the change affects. A changed receiv
 
 Do not transplant the earlier qualification to the new subject or configuration. A model name, similar job title, same provider, or narrower dataset is insufficient. Use the practice's qualified transfer basis where it applies; otherwise preserve the receiving reading as unknown under C.40.OC.
 
-Narrowing a candidate also reopens the quantities and comparisons that depended on the broader use. An average over two data classes does not automatically describe either class alone. If an earlier path step has become actual, use that configuration and inherited obligations as the next starting point. If it remains prospective, keep its resulting state conditional.
+Narrowing a candidate also reopens the quantities and comparisons that depended on the broader use. A guarantee for every member carries to a subset under the same conditions. A combined average alone can leave each class’s average open. If an earlier path step has become actual, use that configuration and inherited obligations as the next starting point. If it remains prospective, keep its resulting state conditional.
 
 Use C.11.CRC for the changed finite comparison: complete result, resource, affected-System/distributional, and protected coordinates, each with its scale and polarity on a common basis. Use C.40.JF for the changed joint conditions. A request for either result is not the completed result.
 
@@ -95,7 +95,7 @@ These are scoped returns, not a universal state machine. One change can leave a 
 
 An ordinary return can be short:
 
-> The indexed manual route remains supported for its inspected use, but the earlier retrieval direction no longer has permission for data class B. Retire that broad route and retain the class-A direction only as a new conditional candidate; obtain its own evaluation and incremental-burden result before relying on it.
+> The indexed manual route remains supported for its inspected use, but the earlier retrieval direction no longer has permission for data class B. Retire that broad route and retain the class-A direction only as a new conditional candidate; use an applicable prior result, a justified bound or a new evaluation to establish what the permitted narrower use can deliver at its incremental burden.
 
 #### C.40.RQ:4.5 - Return affected advice and action questions to their owners
 

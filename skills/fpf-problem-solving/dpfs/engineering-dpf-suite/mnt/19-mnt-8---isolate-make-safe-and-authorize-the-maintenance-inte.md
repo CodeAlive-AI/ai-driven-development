@@ -7,7 +7,7 @@
 
 Use this pattern when a selected maintenance intervention will expose people, equipment or the environment to a hazard that requires controlled access, isolation or other protection. A work order is ready, but the actual protection and permission for the proposed act have not been established.
 
-When assessing the proposed protection, identify what the work would expose, which protections must hold together and how the responsible people could establish them. Before beginning an intervention, competent authorized people must establish, verify and maintain the required protection under the applicable equipment procedure. Give the permission that the governing authority has actually granted, or identify what is still required. This framework gives maintenance reasoning, not a substitute isolation procedure. A diagnosis or recommendation can be complete before anyone seeks permission to intervene.
+Identify what the work will expose and how the required protections will hold together. Before the intervention, establish, verify and maintain protection under the applicable equipment procedure. Assign the required checks and decisions to competent, authorized personnel wherever the procedure requires their personal participation. Account for what automatic safeguards are qualified and permitted to provide. Report the governing authority’s decision for this work and identify any outstanding conditions. Issue or change a permission only when entrusted with that decision. This framework gives maintenance reasoning, not a substitute isolation procedure. A diagnosis or recommendation can be complete before anyone seeks permission to intervene.
 
 ### MNT.8:2 - Problem
 
@@ -21,19 +21,19 @@ Protection must address the actual hazard and intervention without becoming an u
 
 ### MNT.8:4 - Solution
 
-Recover the proposed work scope, actual configuration, relevant hazards and applicable procedure. Qualified people determine the equipment- and jurisdiction-specific controls. If the procedure's applicability or the authority to act is unresolved, return that limit before the affected work begins.
+Recover the proposed work scope, actual configuration, relevant hazards and applicable procedure. Use the applicable equipment and jurisdictional requirements to identify the controls. Obtain any determination these requirements reserve to a qualified person or authority. If the procedure's applicability or the authority to act is unresolved, return that limit before the affected work begins.
 
 Trace the exposure paths needed for the intervention. Depending on the equipment, these can include electrical, mechanical, hydraulic, pneumatic, thermal, chemical or other sources, including stored or reaccumulating energy. Use the applicable procedure and hazard analysis to identify the sources for this job. A control-system stop command is not assumed to be an energy-isolating measure.
 
-Establish the selected isolation and protective conditions through the applicable procedure. Verify the condition that protects the people who will perform the work, using the required competent personnel and suitable means. A signed statement is evidence only to the extent that it supports the actual condition and applicable authority.
+Establish the selected isolation and protective conditions through the applicable procedure. Verify the conditions protecting people, equipment and the environment as applicable to this work, using the competent personnel and verification methods the procedure requires. A signed statement is evidence only to the extent that it supports the actual condition and applicable authority.
 
-Coordinate people whose work can alter that condition. Where contractors, groups, shift changes or simultaneous jobs are involved, maintain the required protection and control through those transitions. A person leaving the work area does not by itself resolve the transfer of protection or permission.
+Coordinate the work and control actions that can alter that condition, including actions by other crews and automatic systems. Where contractors, groups, shift changes or simultaneous jobs are involved, maintain the required protection and control through those transitions. A person leaving the work area does not by itself resolve the transfer of protection or permission.
 
 Define the bounded permission for the actual intervention: permitted scope, configuration, protection conditions and the material change that requires a hold or revised decision. During work, respond to a loss of protection or an unexpected condition using the applicable safe hold, restoration or reassessment procedure. Testing that needs an energized or otherwise changed state has its own controlled transition; initial isolation does not authorize any later test state.
 
 If a requirement's merits are disputed, use a separate appraisal. Identify the protected bearer, relevant harm and causal basis, baseline and incremental protection, whole burden and displaced harms. Compare harmful relaxation with harmful retention or tightening, and name who may amend the requirement. Until an authorized change applies, preserve current force. This separation permits substantive criticism without turning a framework discussion into permission to bypass a control.
 
-Return permission only for the supported work and conditions, or state the missing protection, applicability or authority. Keep evidence proportionate to the actual reliance and applicable requirements.
+When communicating an existing permission, identify the authorized work, applicable conditions and granting authority. When entrusted with the decision, grant permission only for the work and conditions that the evidence supports, or state what is missing. Keep evidence proportionate to the actual reliance and applicable requirements.
 
 A request to assess a proposed protection arrangement can be completed before the intervention. Follow any shared exposure or change of state that would matter to the permitted work and identify the conditions the proposal would require. To report that permission was granted for a particular act, use the governing decision and its scope. To start the work, establish the required protection in the actual configuration under the applicable procedure.
 
@@ -53,7 +53,7 @@ A familiar machine can make practitioners underestimate changed stored energy, c
 
 ### MNT.8:7 - Conformance Checklist
 
-Is the procedure applicable to the actual intervention and configuration? Have competent authorized people established and verified the required protection? Do shared work and planned state transitions preserve it? Is the permission bounded to the supported scope, with a usable response to material change?
+Is the procedure applicable to the actual intervention and configuration? What establishes that the required protections are in place and that the designated personnel performed their required verification? Do shared work and planned state transitions preserve it? Is the permission bounded to the supported scope, with a usable response to material change?
 
 For a review of a proposed arrangement, identify which conditions its design covers and what must still be established at execution. The preceding questions about actual protection apply to starting or reporting the selected intervention. They neither require a permission package for advice nor authorize omission of operative protection because a recommendation is already complete.
 

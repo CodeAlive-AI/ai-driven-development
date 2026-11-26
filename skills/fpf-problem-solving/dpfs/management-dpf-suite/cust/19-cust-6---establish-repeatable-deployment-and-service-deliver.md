@@ -75,7 +75,7 @@ When material comes from a customer case, receive the permitted common contribut
 
 Establish who can supply the next service, which decisions the performer makes and what assistance will be available. A qualified duty roster can supply the service before a particular individual is named. Where adaptation depends on the performer’s judgement, establish that the person or agent on duty can recognize the condition and make the required choice in time with that support. Earlier comparable work may already show this performer's choices, the result and the help used. Use it when the conditions fit. If the uncertainty concerns tacit work another person or agent must now take over, give that receiving performer an appropriate case, the intended materials and the ordinary support. Observe the contribution at issue, including any intervention by the original author.
 
-Record how the result was obtained, which method the performer used and what help they received. They may use the intended method, use a different permitted method, obtain additional help or leave the work unfinished. Success with a different method can settle an order for the service while leaving competence in the intended method open. An order to perform that particular method still requires its use. Determine whether the observed help was necessary before making it a permanent requirement.
+Record how the result was obtained, which method the performer used and what help they received. They may use the intended method, use a different permitted method, obtain additional help or leave the work unfinished. Success with a different method can settle an order for the service while leaving competence in the intended method open. An order to perform that particular method still requires its use. Honor promised support. When the arrangement is open, compare the benefit of continuing help with the work, access and time required of both recipient and provider. Establish that they can carry it out on the applicable terms. To conclude that the service depends on that help, establish what the performers can deliver without it.
 
 To promise adaptation, identify a variation that could change the receiving action and what enables the performer to handle it. Use a sufficient prior comparison, a justified property of the method or a trial of the operation whose transfer remains open. A separately ordered fresh trial belongs to the delivery. If several teams will depend on the same specialist, check that assistance can reach each under their service terms.
 
@@ -105,7 +105,7 @@ In a public literacy programme, repeatable delivery may require prepared facilit
 
 What can be written is easier to package than tacit skill, trust, preparation or continuing support. Examine actual receiving work before deciding the carrier.
 
-The original expert can also overstate uniqueness. Try explaining and practising the operation before concluding that only the author can do it. Preserve specialist help when it is a suitable way to provide the needed contribution.
+If an operation appears to depend on the original expert, establish why. A skill can be taught, access can be granted and a decision may be reserved to its holder. Use an explanation or practice trial for an unresolved skill question. When the contract calls for approval by a named specialist, using a substitute requires whatever change those terms provide for. Preserve specialist help when it is a suitable way to provide the needed contribution.
 
 ### CUST.6:7 - Conformance Checklist
 

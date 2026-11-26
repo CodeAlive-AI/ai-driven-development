@@ -36,7 +36,7 @@ Trace the constituent–whole connection in the direction needed for this questi
 
 #### B.1.5.EW:4.1 - Choose an action and the work being explained
 
-Identify the action or encompassing work the recipient asks about and the interval relevant to its use. For an actual occurrence, ground the account in the performance. For a proposal, say what would occur under its conditions. When the assignment is to teach someone to perform the analysis, leave that person the choice of a relevant action or whole from the working situation, unless the commission supplies it.
+Identify the action or encompassing work the recipient asks about and the interval relevant to its use. For an actual occurrence, ground the account in the performance. For a proposal, say what would occur under its conditions. When learners are to make an independent choice, leave the choice of action or whole in the assessed situation to them. A worked case from another situation can precede their attempt if it leaves that choice open. To assess unaided recognition, give them the situation before a cue that supplies the choice. For a lesson on analysing given work, the instructor may supply the starting point and assess the reasoning the learner performs.
 
 Use ordinary verbs first: adjusting a step, comparing a measurement, adding a value, questioning an assumption. If the description supplies only a noun such as “coordination”, recover what the participant does.
 
@@ -97,7 +97,7 @@ During one beat, a dancer transfers weight while adjusting the direction and siz
 
 A solo drill established that the dancer can make a large turn. In the partnered phrase, that amplitude pulls the partner off the shared line. The correction is to reduce the step and preserve the connection, not to repeat the large turn more accurately. A slower musical phrase changes when weight transfer must finish and how long the connection must remain available.
 
-A different dancer has adequate strength and static axis control and knows the figure, but cannot maintain balance during its rotation. The missing performance lies between available muscular actions and the known figure. More strength practice or sequence recall need not repair this stipulated gap. Develop the rotational coordination in suitable practice, then return to the figure and vary the conditions that affect the combination. Keep already attained abilities; test the needed intermediate performance rather than assuming that mastery below and knowledge above fill it.
+A different dancer has adequate strength and static axis control and knows the figure, but cannot maintain balance during its rotation. The missing performance lies between available muscular actions and the known figure. More strength practice or sequence recall need not repair this stipulated gap. If the dancer needs to maintain balance during the turn themselves, develop that coordination in practice and return to the figure under the relevant variations. If a supported turn meets the performance brief, establish how the partners maintain it together. The supported turn can meet the joint aim while leaving each dancer’s unaided balance open.
 
 The selected Work structure here connects the performed movement, coordinated figure and phrase through their constituent–whole relations. Playing the recording is external support under this boundary.
 
@@ -136,7 +136,7 @@ An observer can recognize their specialist operation while missing the connectio
 | A stage list conceals current constitution. | Explain both what is done through the action now and which result must become available later. |
 | Every description creates another Work and another time charge. | Use the performed history and the receiving accounting question to identify occurrences and parts. |
 | All constituents must run at once. | Identify the active constituent and preserve the other constituents' timing conditions. |
-| Successful isolated practice is treated as mastery of the combination. | Practise the relevant whole and vary a condition that changes coordination. |
+| Successful isolated practice is treated as mastery of the combination. | Use evidence of the combined performance under the intended support. Arrange practice or a new trial when needed or commissioned. Vary the coordination conditions when the intended claim spans them. |
 
 ### B.1.5.EW:9 - Consequences
 

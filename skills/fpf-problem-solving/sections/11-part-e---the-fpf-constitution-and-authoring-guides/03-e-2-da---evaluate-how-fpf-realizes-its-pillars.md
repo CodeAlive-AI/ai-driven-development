@@ -10,7 +10,7 @@ Use it after a broad cleanup, new pattern family, projection repair, source-use 
 
 Use the local method in place of `E.2.DA` for one authored pattern version (`E.21`), one `DRR` (`E.9.DA`), one local wording repair (`F.19`), or one pattern-use entry problem (`E.11`). Open `E.10` or a precision-restoration neighbor for an unresolved FPF-specific wording question.
 
-First useful move: name the FPF object under improvement by value, declared use, reader family, and qualification window; then evaluate all eleven Pillar coordinates. If a Pillar seems unaffected, give it a value and a short rationale saying what is preserved.
+First useful move: name the FPF object under improvement by value, declared use, reader family, and qualification window; when independence matters, recover the use from the initiating commission under E.22:4.0. Evaluate all eleven Pillar coordinates for that use. If a Pillar seems unaffected, give it a value and a short rationale saying what is preserved.
 
 What goes wrong if missed: FPF can become locally polished but globally worse. Readers may find fewer useful entry points, precision repairs may erase the working move, source rows can turn decorative, or several patterns can grow local variants of the same doctrine.
 
@@ -43,7 +43,7 @@ The failures are:
 
 ### E.2.DA:4 - Solution
 
-`E.2.DA` is the Pillar-adequacy specialization of `A.19.ECS`. An evaluator applies its questions to one FPF object under improvement against all eleven `E.2` Pillars for a declared use.
+`E.2.DA` is the Pillar-adequacy specialization of `A.19.ECS`. An evaluator applies its questions to one FPF object under improvement against all eleven `E.2` Pillars for a declared use. For an independent judgement, establish whose decision the assessment serves and whether the declared use preserves the initiating terms (E.22:4.0). A narrower use may be separately commissioned.
 
 An `E.2.DA` result gives every Pillar coordinate a value, short rationale, evidence locus, and shared evidence basis for the FPF object being evaluated. Local pattern quality, `DRR` adequacy, and wording repair use their object-under-improvement questions. A bounded diagnostic may borrow selected Pillar questions, but makes neither an E.2.DA-result nor an FPF-adequacy status claim.
 
@@ -92,7 +92,7 @@ FPFPillarAdequacyEvaluation:
 | 2 | `partiallyExpressedForDeclaredUse` | The Pillar is present but incomplete, fragile, or too local. |
 | 3 | `sufficientlyExpressedForDeclaredUse` | The Pillar is realized enough for the declared use, with known limits visible. |
 | 4 | `wellExpressedForDeclaredUse` | The Pillar is clear across relevant loci and protected from common loss. |
-| 5 | `exceptionallyExpressedForDeclaredUse` | The Pillar is exceptionally realized with reinforcing loci, heterogeneous cases, and no hidden FPF-level loss. |
+| 5 | `exceptionallyExpressedForDeclaredUse` | The grounds establish the exceptional realization claimed for this use, including the connections on which the use depends. State what distinguishes this result from 4 and which change in conditions would overturn it. |
 
 The values are ordinal content evaluations. They are not an aggregate scalar score, maturity ladder, release gate, or proof that development ends.
 
@@ -101,20 +101,20 @@ The values are ordinal content evaluations. They are not an aggregate scalar sco
 | Pillar coordinate | Evaluation question | Good state |
 |---|---|---|
 | `P1CognitiveEleganceAdequacy` | Does the object expose decisive structure without ornamental formalism? | The reader sees the smallest structure that changes the action. |
-| `P2DidacticPrimacyAdequacy` | Does human comprehension stay ahead of formal, tooling, or review purity? | Working situation, recognition reason, first move, and payoff stay visible. |
+| `P2DidacticPrimacyAdequacy` | Does human comprehension stay ahead of formal, tooling, or review purity? | The working situation, reason for acting, first move and payoff are intelligible to the intended human reader. A claim about what readers can do draws on their work with the support available in that use. |
 | `P3ScalableFormalityAdequacy` | Can formality strengthen as the use requires while preserving meaning and grounds, with an explicit rewrite or branch when meaning changes? | Staged strengthening is usable; a semantic change remains identifiable and its affected uses are reconsidered. |
 | `P4OpenEndedKernelAdequacy` | Do kernel concepts stay meta-level while domain knowledge stays in patterns? | New content extends FPF without smuggling domain doctrine into the kernel. |
 | `P5FPFLayeringAdequacy` | Do modular pattern layering and neighbour authority stay intact? | Patterns can be added, replaced, or removed without shadow authority. |
 | `P6LexicalStratificationAdequacy` | Are Plain, Tech, Formal, and mathematical registers recoverable for the declared use? | Decision-governing wording maps to fields named by value, kinds, lenses, or neighbours. |
 | `P7PragmaticUtilityAdequacy` | Do proofs, measures, models, and reviews supply a useful result for the declared work? | The object supports an explanation, prediction, judgement, decision, diagnosis, design, repair, stop, or assignment on relevant grounds. |
-| `P8CrossScaleConsistencyAdequacy` | Do composition, aggregation, boundary, emergence, and method-side relation structures stay consistent across scales? | Cross-scale claims name preserved structure, lost structure, lens or algebraic representation, and boundary. |
+| `P8CrossScaleConsistencyAdequacy` | Which kinds of whole and constituent matter to this use, and what warrants a conclusion within or between their composition scales? | Follow the relevant relations for each kind. For a conclusion about combined contributions, establish their joint conditions. Use a lens or algebraic representation when the inference depends on it. |
 | `P9StateExplicitnessAdequacy` | Are the states, transitions, currentness, editions and qualification windows that affect the declared use explicit? | Readers can identify the usable version and state, the conditions that change them, and relevant transition cost and risk. |
 | `P10OpenEndedEvolutionAdequacy` | Can justified improvement, revision, replacement or branching continue at acceptable cost and risk, while retention, stopping and retirement remain available? | The selected continuation or stop has a practical reason and a reopen condition; a completed Work occurrence is distinguished from a later Method, object version or Work. |
-| `P11SoTAAlignmentAdequacy` | Does the object use current knowledge to justify and, where needed, revise its claims and choices? | Current sources change moves, boundaries, examples, checks, or stop rules. |
+| `P11SoTAAlignmentAdequacy` | Does the object use current knowledge to justify and, where needed, revise its claims and choices? | The source supports, qualifies or changes a consequential claim, choice or boundary. It may justify retaining a practice already in use. |
 
 #### E.2.DA:4.5 - Evidence and coordinate separation
 
-One evidence locus may support several coordinates, but the rationale must say what property it supports in each coordinate. The following distinctions carry most repairs:
+Follow the practitioner’s work from its ordinary entry to the decision or explanation that uses the result. Establish what each contribution supplies and whether the receiving work can use it directly or with a warranted transfer to its own conditions. One argument can cover the declared range. If a permitted difference could change the conclusion, examine it or bound its effect. A single source can support several coordinates when the grounds for each value are clear. The following distinctions carry most repairs:
 
 | Distinction | Use |
 |---|---|
@@ -145,7 +145,7 @@ Common calibration points:
 
 | Pillar family | `3` | `4` | `5` |
 |---|---|---|---|
-| Entry, usability, and projection Pillars | The object can be used with visible limits, but projection or first-use evidence is partial. | Relevant defining, constraining, or testing content and projections are coherent enough for declared use. | The use is replayable across pattern content, the public-entry form selected under E.11, and cold-reader or retrieval evidence, with an explicit stop or return and any independently grounded non-use boundary. |
+| Entry, usability, and projection Pillars | The object can be used with visible limits, but projection or first-use evidence is partial. | Relevant defining, constraining, or testing content and projections are coherent enough for declared use. | The use is replayable across pattern content and the public entry selected under E.11, with its stop or return and any grounded non-use boundary. A retrieval test can establish that a service returns the relevant passage. For a claim of human comprehension, use evidence of people interpreting or applying it under the declared conditions. An adequate earlier observation can supply that evidence. |
 | Layering and semantic authority Pillars | Neighbours are plausible, but some shadow-spec risk remains. | The pattern content that defines, constrains, or tests each claim is named by value and distinguishable from source-linked projections. | Pattern bodies, relations, projection rows, and anti-fragmentation cases keep each concrete contribution recoverable without shadow semantics. |
 | Source and evolution Pillars | Source or reopen language exists, but currentness, contribution, or smallest-reopen basis is compact. | Source contribution, currentness window, and reopen condition are explicit for declared use. | Source-front movement and future reopen are replayable without freezing development after a local stop. |
 
@@ -181,15 +181,15 @@ When `E.22`, `E.23`, absorption, or exceptional-improvement framing asks for imp
 
 ### E.2.DA:5 - Worked slices
 
-**Broad precision cleanup.** A wording pass makes many patterns more admissible but several `Problem frame`s now explain less about why the distinction matters, or a cleaned phrase changes the governed kind while the trigger word disappears. `P2`, `P6`, and `P7` receive lower values until the affected patterns restore recognition reason, useful action, and pre-repair and post-repair kind evidence in admissible wording.
+**Broad precision cleanup.** A wording pass makes many patterns more admissible but several `Problem frame`s now explain less about why the distinction matters, or a cleaned phrase changes the governed kind while the trigger word disappears. Reassess `P2`, `P6`, and `P7` against the work each measures. A reader may still make a warranted decision even when the words no longer identify which kind of thing the decision concerns. Lower each value for the loss its evidence establishes.
 
-**Ontic architecture repair.** A campaign adds `E.24.CD`, `E.24.PUB`, or a new ontic host. Pillar values rise only if the change reduces duplicate ontology, type explosion, or shadow authority and improves FPF entry, authoring, review, or project use. Extra ontic terminology, score proof, or publication-boundary prose without better action lowers `P1`, `P2`, `P5`, `P6`, and `P7`.
+**Ontic architecture repair.** A campaign adds `E.24.CD`, `E.24.PUB`, or a new ontic host. Follow what the change enables in each evaluated use. A new distinction can let readers settle a previously unresolved question even when no competing definition existed. Removing duplicate definitions can ease maintenance while leaving an already well-supported practitioner decision intact. Assess each Pillar on the effect that its coordinate measures. For extra terminology or publication apparatus, follow the resulting change to the affected uses before assigning values to `P1`, `P2`, `P5`, `P6`, and `P7`.
 
-**Cleanup that removes useful content.** A corpus pass removes repeated guards, instructions, references or architecture-placement prose, but leaves several patterns with less positive ontology, method, norm or worked action than before. `P2`, `P5`, `P6`, `P7`, and `P10` receive lower values until the affected patterns restore their subject content and state each cited pattern's concrete contribution.
+**Cleanup that removes useful content.** A corpus pass removes repeated guards, instructions, references or architecture-placement prose, but leaves several patterns with less positive ontology, method, norm or worked action than before. Trace the missing contribution to the recognition, use or later revision that depended on it. Reassess the affected coordinates on those grounds.
 
-**Projection repair.** README scenarios, ToC rows, `E.11` entry-distribution loci and worked comparisons improve search but can become separately maintained sources of pattern rules. `P5` and `P9` fall when projections become shadow sources. The repair places each authored definition, constraint, or test in the pattern body that supplies it and preserves the public aid's E.11 function. A locator remains a locator; an ordinary entry or Practical-Use Card retains its source-linked first-use guidance, including the first useful result or blocker and stop or wrong-turn return.
+**Projection repair.** README scenarios, ToC rows, `E.11` entry-distribution loci and worked comparisons improve search but can become separately maintained sources of pattern rules. A second source of authority can lower `P5`. Reassess `P9` where it also makes the governing state, edition, change or effective window harder to establish. The repair places each authored definition, constraint, or test in the pattern body that supplies it and preserves the public aid's E.11 function. A locator remains a locator; an ordinary entry or Practical-Use Card retains its source-linked first-use guidance, including the first useful result or blocker and stop or wrong-turn return.
 
-**Source absorption.** A new source family adds current methods, but pattern bodies only cite it. `P11` stays low until source rows change selected actions, examples, checks, or stop conditions. `P7` changes when the source improves the receiving explanation, judgement, or action.
+**Source absorption.** A new source can support a practice already in use, qualify its limits or change the Method. Establish which claim or choice its findings bear on. A citation on its own leaves that contribution open. Reassess `P7` when the source changes what a practitioner can understand, judge or do.
 
 ### E.2.DA:6 - Bias annotation
 
@@ -212,7 +212,7 @@ The bias is bounded by the object-under-improvement declaration. `E.2.DA` does n
 | `CC-E2DA-9` | State the `FPFPillarAdequacyEvidenceBasis`. For every value, check the host, publication, projection, entry, source, relation or evaluation evidence it needs. Keep an unsubstantiated value and its evidence gap in draft material; do not assign an E.2.DA status until all eleven values are justified. |
 | `CC-E2DA-10` | Use the value-appropriate adjacent comparison in E.2.DA:4.5a for every assigned value, including its endpoint rule for `0` or `5`. |
 | `CC-E2DA-11` | For broad wording, naming, or precision cleanup, state `FPFKindRestorationEvidence` for changed FPF-governed meanings. Preserve the pre- and post-repair object kind, relation or claim kind, admissible use, and scope; also preserve the current ontic slot, relation position, and use relation when they are part of the changed claim. When the changed position depends on cited pattern content, name its concrete contribution. An unaccepted semantic change lowers the affected Pillar coordinates and keeps the repair blocking. |
-| `CC-E2DA-11a` | When the evaluated FPF object includes ontic architecture, evaluate FPF-level effect, not ontic apparatus volume: reduced duplicate ontology or type explosion, clearer `EntityOfConcern` and SlotRelation boundaries, correct description-publication separation, thinner projections, and improved entry, authoring, review, or project use. Missing effect lowers the affected `P1`, `P2`, `P4`, `P5`, `P6`, `P7`, or `P8` coordinates. |
+| `CC-E2DA-11a` | For a change to ontic architecture, establish its effect on the use governed by each affected coordinate. An explicit subject or SlotRelation can make a judgement possible. Recovering one authoritative definition can reduce maintenance. Clear expression, carrier or version relations can improve access. For each claim, compare the supported result with the applicable value meanings and record the grounds. |
 | `CC-E2DA-12` | Keep Pillar values as ordinal evaluation results, not repair targets. Below-floor values require FPF-level findings or repair. Above-floor improvement requires substantive non-dominated proposal rows when requested; it cannot close by adding projection proof, entry apparatus, source volume, review praise, monolith parity evidence, or all-`5` result framing that does not improve Pillar realization for the declared FPF use. A no-proposal or stay-at-current-value disposition must name loci and why no worthwhile Pillar-content improvement remains. |
 
 ### E.2.DA:8 - Common anti-patterns and repairs
@@ -221,10 +221,10 @@ The bias is bounded by the object-under-improvement declaration. `E.2.DA` does n
 |---|---|
 | **Pillar essay.** A review names Pillars without values or evidence. | Produce the complete `E.2.DA` result form. |
 | **Local-quality averaging.** Several `E.21` values are averaged into FPF adequacy. | Re-evaluate Pillar effects over the FPF object. |
-| **Sterile or kind-changing precision cleanup.** Language is admissible but no longer usable, or the trigger word is gone while the governed object kind, relation or claim kind, admissible use, or scope changed; this includes the current ontic slot, relation position, or use relation when part of the changed FPF-governed claim. | Lower `P2`, `P6`, and `P7` and restore recognition reason, useful action, and pre-repair and post-repair kind evidence; if the current ontic slot, relation position, use relation, or claim kind changed without an accepted decision, treat the cleanup as a blocking semantic defect. |
+| **Sterile or kind-changing precision cleanup.** Language is admissible but no longer usable, or the trigger word is gone while the governed object kind, relation or claim kind, admissible use, or scope changed; this includes the current ontic slot, relation position, or use relation when part of the changed FPF-governed claim. | Reassess `P2`, `P6`, and `P7` against their own uses. Restore the affected explanation, action or identification of the kind. Lower each value for an established loss. If the current ontic slot, relation position, use relation, or claim kind changed without an accepted decision, treat the cleanup as a blocking semantic defect. |
 | **Ontic apparatus without FPF gain.** A change adds ontic names, pattern-set maps, publication-boundary prose, or evaluation proof while duplicate ontology, entry confusion, or project-use difficulty remains. | Lower the affected Pillar coordinates; repair the governed object, slot-relation boundary, publication split, and user action, or decline the ontic candidate. |
 | **Projection authority.** A ToC, packet, or companion independently defines or revises a durable pattern rule. | Place the authored definition, constraint, test, method instruction, or publication rule in its pattern body; preserve the source-linked public aid's function under E.11. |
-| **Citation shelf.** Source rows do not change FPF moves. | Lower `P11` and state the missing source contribution. |
+| **Citation shelf.** The claim for a source contribution has no demonstrated connection to the relevant FPF use. | Establish what the current source supports, qualifies or changes. Lower `P11` where its claimed contribution is unsupported. |
 | **Pillar table without evidence loci.** Values are listed but not tied to corpus loci named by value. | Recover the needed evidence for `Pillar coordinate \| Value \| ShortRationale \| EvidenceLocus`. Keep unsupported values as draft material until checked; lower a value only for a defect established under its coordinate meaning. |
 | **Goodharted Pillar adequacy.** FPF-level values rise because more projection, source, review, or parity evidence was added, while entry recognition, layering, semantic authority, pragmatic utility, source use, or open-ended evolution becomes worse. | Reject apparatus-only improvement; apply `E.13` when Pillar values become targets replacing Pillar realization; repair the FPF-level content effect, delete or relocate proof material, and record checked no-proposal only when no non-dominated Pillar-content improvement remains. |
 

@@ -11,9 +11,7 @@ can be a grounded architecture question while the proposed use remains condition
 The form of provision can also change which concept is obtainable. [SYSE.8:4.4](29-syse-8---develop-an-integrated-offering-and-provider-concept.md#syse844---connect-the-offering-to-conditional-finance) connects a promised result and its technical acceptance to the financial events needed for realization. A changed acceptance milestone or temporary operating method returns to the provider, capability and engineering choices, while finance retains its own calculation and commitment questions.
 
 Functional organization and constructive organization answer different questions. A function claim concerns a
-contribution under conditions. A bearer claim concerns an actual System or intended System referent that could
-make that contribution. `SYSE.5` guides the Agent in developing alternatives for both and making allocation and
-interface choices explicit. Then use `SYSE.6` to compare the candidates
+contribution under conditions. A bearer claim identifies what could supply it. Use `SYSE.5` to examine the allocation and interfaces. When a design choice remains open, develop the relevant alternatives and use `SYSE.6` to compare candidates
 for the current engineering use, record the selected result, and state the evidence and conditions that would
 reopen the choice.
 

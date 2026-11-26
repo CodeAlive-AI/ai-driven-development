@@ -90,7 +90,7 @@ For proposed occurrence `C`, the direct predicate `C : U.Commitment` obtains onl
 5. modality, scope, validity window, and every rule-required condition are satisfied; and
 6. no valid revocation, defeat, expiry, or supersession has ended the relation.
 
-For the current A.2.9 path, the instituting basis is an actual `U.SpeechAct` Work occurrence recognized by the current policy, with the actual performer and exact covering system-role assignment independently established. Another basis is usable only when a subject pattern admits it and gives its occurrence rule.
+For the A.2.9 path, establish the act or combination of acts that the current rule recognizes. One representative can act for several parties within a mandate. A joint declaration can have several performers. Separate approvals may together institute one bearer’s duty. For each act, establish the contributions, representation and any assignment-bound attribution on which institution depends. Another actual basis, including a condition under an applicable rule, is usable when the pattern for that subject gives its obtaining conditions.
 
 If the corpus lacks the constitutive rule or the required instituting-relation predicate, return `missing-governor[individual commitment institution]`. If available facts establish that a required obtaining condition is false, the proposed commitment does not obtain. If a required evidence dependency is unavailable, reliance on the assertion is `unknown`; do not invent the relation or infer its negation.
 
@@ -163,14 +163,15 @@ CommitmentConflictInputClaim:
   selectionUseRef: exact conflict or choice question
   commitmentRows: non-empty set of
     commitmentRef: U.RelationRef constrained to one exact U.Commitment occurrence
-    institutingBasisRef: exact actual basis required by its constitutive rule
-    issuingSystemRef | issuingPartyRef: exactly one actual issuer recoverable from that basis
-    authorityRelationRef?: U.RelationRef constrained by the direct authority predicate used by selectionUseRef
+    institutingBasisRef: actual basis, including any combination required by the constitutive rule
+    (issuingSystemRef | issuingPartyRef)?: the issuer when selection depends on one issuer
+    authorityRelationRef?: the direct authority relation when one suffices for this selection
+    issuingContributions?: acts, actual issuers and associated authority grounds when selection depends on several
   selectingRuleRef?: exact priority or choice rule required by selectionUseRef
   unresolvedInputRefs?: exact missing-information or missing-governor results
 ```
 
-These conflict inputs stay outside commitment identity by default. Each authority relation must already obtain under its own predicate, and each selecting rule must be current and applicable to this selection use under the pattern that defines it. If this selection use requires an authority relation or selecting rule and that input is unavailable or no current pattern defines it, put its exact unresolved result in `unresolvedInputRefs`, such as `missing-governor[commitment conflict authority relation]` or `missing-governor[commitment conflict selecting rule]`. An optional field means that the input is not required for this use; it never licenses dropping a required input.
+A rule can settle priority from the duties' content and due times. Use the issuer information only when selection depends on origin or authority. For a joint declaration keep the contributors to that act together. For several required approvals identify each act and who was entitled to make it. These conflict inputs stay outside commitment identity by default. Each authority relation must already obtain under its own predicate, and each selecting rule must be current and applicable to this selection use under the pattern that defines it. If this selection use requires an authority relation or selecting rule and that input is unavailable or no current pattern defines it, put its exact unresolved result in `unresolvedInputRefs`, such as `missing-governor[commitment conflict authority relation]` or `missing-governor[commitment conflict selecting rule]`. An optional field means that the input is not required for this use; it never licenses dropping a required input.
 
 For an interlevel ethical conflict, use D.3 to map the conflict and D.4 for mediation or decision use. When an explicit choice among already available options is current, C.11 supplies the `ChoiceRule` and `ChoiceResult`. Otherwise apply the direct pattern for the claimed conflict result; if none exists, return `missing-governor[commitment conflict resolution]`.
 
@@ -184,10 +185,10 @@ Evidence used only to measure or verify the duty belongs to the support for the 
 | Which System holds a local system-role assignment? | one A.2.1 assignment occurrence and its declared species | a duty or responsibility |
 | Did a communicative act occur? | one A.2.9 `U.SpeechAct` Work occurrence | its institutional effect without the constitutive rule |
 | Is the bearer responsible? | one admitted domain responsibility predicate and occurrence; otherwise the missing governor | responsibility from duty, assignment, position, or “owner” wording |
-| Is an action permitted or authorized? | the exact A.2.8.PER grant, exercise, non-prohibition, non-violation, or conflict result | permission from commitment or assignment |
+| Is an action permitted or authorized? | the applicable affirmative rule and qualifying facts, or the particular grant, exercise, prohibition or conflict question under A.2.8.PER | permission from commitment or assignment |
 | Did access occur? | an exact domain access relation; otherwise `missing-governor` | access from permission, duty, or assignment |
 | Did the bearer perform Work? | recover the actual performer through A.13 and let A.15.1 independently admit one dated `U.Work`; add F.6 only when this duty account or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment | Work or attribution from the duty alone |
-| Was the duty satisfied or violated? | a separately governed evaluation or compliance result using actual Work and evidence | compliance from publication or record completeness |
+| Was the duty satisfied or violated? | a separately governed evaluation of the duty under its terms. Establish the required state at the due time, any required or prohibited conduct over its applicable interval, and a particular performer's contribution if the duty requires it | compliance from publication or record completeness |
 | What resulted? | the separately identified result and its direct result relation, or A.15.PROD for production and inception | a generic result relation from duty or Work |
 
 The common corpus has no universal responsibility predicate. `VP.AllocationResponsibility` can help a reader recognize the concern; the applicable domain responsibility predicate determines whether the relation obtains.
@@ -196,7 +197,7 @@ The common corpus has no universal responsibility predicate. `VP.AllocationRespo
 
 An A.6.B D-quadrant claim about an obtaining individual obligation, recommendation-as-duty, or prohibition cites the exact `U.Commitment` occurrence. A D-claim about generic policy content remains a claim about that content until the individual predicate above is satisfied.
 
-Strong or weak permission, exercise, non-violation, and permission-conflict claims cite their exact A.2.8.PER result and do not acquire a `U.Commitment` payload. Gates remain A-claims, laws and definitions remain L-claims, and Work and evidence effects remain E-claims.
+For permission, use the affirmative rule and the facts that qualify the case, or the instituted grant when one is claimed. A.2.8.PER gives the grounds for exercise, non-prohibition, non-violation and conflict findings. These claims remain distinct from a `U.Commitment`. Gates remain A-claims, laws and definitions remain L-claims, and Work and evidence effects remain E-claims.
 
 ### A.2.8:5 - Archetypal Grounding
 

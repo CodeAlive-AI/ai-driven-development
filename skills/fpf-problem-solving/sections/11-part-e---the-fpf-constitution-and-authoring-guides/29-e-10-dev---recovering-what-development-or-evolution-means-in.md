@@ -48,12 +48,12 @@ Without a shared way to recover the claim, these mistakes arise.
 
 Recover the current claim from the subject and use rather than from the umbrella word.
 
-1. **Bound the wording span.** Open only the expression whose interpretation changes a claim, inference, or action.
+1. **Read the expression in its intended use.** Follow the wording to the decision or explanation that depends on it. A named change in one member can be relevant to a question about the organization. Establish what connects it to the result being claimed.
 2. **Name the exact changed or represented subject.**
 3. **State continuity or membership.** Name only the identity, reidentification, membership, generation, lineage, edition, or retention rule needed by this use.
 4. **Expose direction or value only when claimed.** Name the objective, characteristic, scale, polarity, viewpoint, and evidence needed by the receiving use. The word *development* does not establish improvement.
 5. **State posture.** Mark the claim's posture—for example, actual, observed, reconstructed, predicted, simulated, proposed, recommended, or planned.
-6. **Choose one direct branch.** Split the sentence when it carries several independently actionable claims.
+6. **Use the direct rule for each claim.** Distinguish independently actionable claims. If the recipient also needs a connection between them, recover what establishes it. A programme can develop a team’s ability through changed coordination even when its members’ individual qualifications stay the same.
 7. **Stop after recovery.** Choose one of six recovery outcomes—a repaired claim, ordinary non-use, quote-only use, missing information, the direct owner, or an exact architecture gap. State the next use or stop for the selected outcome.
 
 #### E.10.DEV:4.1 - Optional DevelopmentEvolutionWordingRecoveryLine
@@ -100,7 +100,7 @@ The phrase *development trajectory* does not by itself require two full repairs.
 - Continue to `E.10.MOVE` only when the trajectory itself still carries a separate claim about position space, order, segment identity, actual, predicted, or planned posture, or representation.
 - Start with `E.10.MOVE` when the bearer and development claim are already clear and only the path or trajectory posture is unresolved. Invoke `E.10.DEV` afterward only if a distinct development or evolution ambiguity remains.
 
-Both routes must converge on the same direct subject claim or exact gap. Neither child creates a `DevelopmentTrajectory` kind, and no recovery note is required for a clear local sentence.
+Return each result to the original question. One clarification may settle both expressions. If the proposed route and the development it is intended to produce concern different subjects or times, keep both and state the relation the conclusion needs. Neither child creates a `DevelopmentTrajectory` kind, and no recovery note is required for a clear local sentence.
 
 ### E.10.DEV:5 - Worked Slices
 
@@ -111,13 +111,13 @@ Constructed wording for repair: `Our development programme improves the product,
 Return a **missing-information result** to the programme author. First ask whether the sentence describes proposed work or work already performed and, separately, whether each effect is intended or observed. Then ask:
 
 - **Product:** Which product and characteristic should or did change? What comparison makes that change an improvement, under which conditions?
-- **Mira:** Which engineering Work family and conditions does the capability claim concern? For an observed increase, obtain the comparable qualification results through :5.2 before retaining that claim.
+- **Mira:** Which engineering Work family and conditions does the capability claim concern? For an observed increase, establish Mira’s own contribution in comparable performances through :5.2 before retaining that claim.
 - **Research:** Which claim or problem formulation is meant? What revision is proposed or observed, and under what criterion does it count as an advance?
 
 #### E.10.DEV:5.2 - Change in human capability
 Source wording: `Mira developed as an engineer.`
 
-For the capability reading, recover the named Work family, supported envelope, attained bounds and evidence under `A.2.2`, with the qualification and time conditions needed by the use. To preserve *developed*, also recover the change over time from comparable qualification conditions and evidence under the applicable change owner. If that comparison is unavailable, return the missing comparison; state any supported current capability separately.
+For the capability reading, recover the named Work family, supported envelope, attained bounds and evidence under `A.2.2`, with the qualification and time conditions needed by the use. To preserve *developed*, compare what Mira did in the earlier and later performances under the relevant support conditions, including which choices came from colleagues or tools. Two team results can establish a change for the team while leaving Mira’s own change open. Use the applicable change pattern for the claim being made. If that comparison is unavailable, return the missing comparison; state any supported current capability separately.
 
 If the later question concerns an apparent loss, failed transfer, or condition-dependent expression, use current `E.23.CAE` only to return the qualified differential observation and disposition. That result supplies neither a trajectory choice nor development Work. If a dated intervention occurred, identify its Work and Method separately. Use `E.23.CDI` when the receiving task calls for capability development.
 
@@ -215,7 +215,7 @@ The reusable transdisciplinary problem is recovering the claim carried by the wo
 | `A.3.4.P` | Recover the object or claim hidden by change wording. |
 | `E.10.LRN` | Recover meaning still hidden by learning-related wording. |
 | `C.36.P` | Recover cultural-evolution wording that remains unclear. |
-| E.23.CAE, when the capability branch needs a differential | Use its qualified capability-access/expression differential result: controlled observations, dispositions, surviving rivals and limits. Development Work requires a separate applicable steering or choice result. |
+| E.23.CAE, when the capability branch needs a differential | Use its qualified capability-access/expression differential result: controlled observations, dispositions, surviving rivals and limits. An existing instruction may already call for development under the observed condition. If the choice remains open, use the finding in the authorized decision about what to do next. |
 
 Reopen only the affected route when its supplying pattern changes the entry, result or boundary used here.
 

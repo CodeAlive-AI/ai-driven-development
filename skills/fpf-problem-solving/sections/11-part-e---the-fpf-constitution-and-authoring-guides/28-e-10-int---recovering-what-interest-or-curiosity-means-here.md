@@ -44,11 +44,14 @@ These are recurring uses of the wording. Select the ones needed for the sentence
 | What the wording is doing | What to recover | Example of the resulting claim |
 |---|---|---|
 | Expressing a participant's stake | The participant, affected outcome and consequence | “The maintenance team wants the inspection window because it can then replace the worn coupling.” |
+| Describing a conflict of interest | The same participant’s entrusted duty, another interest or duty, the decision each bears on, and how their pull could affect that participant’s work | “The engineer receives a bonus if this technology is selected and has undertaken to assess all proposals impartially. Who can check that the operating conditions in the criteria cover the purchaser’s requirements?” |
 | Expressing attraction or engagement | The person or group, activity and response | “These listeners want to keep moving to this rhythm.” |
 | Selecting information-seeking action | The agent's uncertainty, available observation and use of the resulting information | “The controller samples input 1 to distinguish the two candidate relations before choosing its command.” |
 | Describing learning progress | The learner or model, what changes and the comparison | “After training, the compressor describes the same material in fewer bits.” |
 | Explaining active-inference policy selection | The generative model, candidate actions, information expected from them and preferences over outcomes | “The agent first observes the cue to learn which action is likely to produce its preferred outcome.” |
 | Recognizing a promising continuation | The present clue, available variation or combination, and what is worth trying or retaining | “This construction permits a new family of transformations; keep it available for exploration.” |
+
+People can prefer different outcomes and put their reasons to one another. A conflict of interest arises when someone entrusted with a contribution has another interest or obligation that could influence how they discharge it. Find where the participant can affect the outcome. They may choose what gets investigated, which options reach others, or what counts as satisfactory. Professional disagreement, competing design objectives and evidence that someone actually interfered each need their own description. Use B.3:4.1 when reliance on an independent assessment depends on that distinction.
 
 An information-seeking policy can be attributed to a human, an AI agent or a collective whose members obtain and use the information. For a claim about a person's experience, preserve that experiencer. A policy description alone leaves the question of subjective experience open.
 
@@ -102,7 +105,7 @@ These cases permit different choices: improving a known performance measure and 
 
 A workshop needs music for listeners who are familiar with 4/4 and are beginning to work with 7/8. “Choose moderately complex rhythms; they are the most interesting” hides both the response sought and the listeners' preparation.
 
-Recover the request as “choose material that helps these listeners maintain the beat and want to move while encountering 7/8.” The facilitator can start from simpler 7/8 material and adjust from the listeners' response. If the purpose is instead to exercise a skilled drummer's coordination, that practice question needs its own choice of material.
+Ask the facilitator what the material should help these listeners do and whose response matters. Suppose the workshop aims to help them maintain the beat and enjoy moving in 7/8. The facilitator can begin with simpler 7/8 material. Observe whether these listeners keep the beat. For their enjoyment, use their own responses or other grounds that support a claim about that experience. A particular listener’s fresh response is needed if the commission calls for it. A workshop for a skilled drummer’s coordination needs a different basis for choosing the material.
 
 Spiech and colleagues found that Western listeners' groove ratings peaked at moderate complexity in 4/4, while simpler rhythms received the highest ratings in the less common meters tested. Here *groove* means the pleasurable urge to move. The study supports adapting the comparison to listener and meter. The workshop's teaching method supplies the exercise.
 

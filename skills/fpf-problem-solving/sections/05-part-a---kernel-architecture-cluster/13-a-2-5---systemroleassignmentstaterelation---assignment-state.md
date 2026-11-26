@@ -8,9 +8,9 @@
 
 **Plain designations.** Say “this assignment to a system role satisfies this state condition” for the relation and “state condition for an assignment to a system role” for the predicate.
 
-Use this pattern when one assignment to a system role already obtains, but a method step, Work occurrence, incompatibility check, or operational gate depends on that assignment satisfying a particular condition during a particular window.
+Use this pattern to work out which condition an assignment to a system role must satisfy for a given operation, or to determine whether a particular assignment satisfies that condition when required. The terms may permit reserving work before its holder is named.
 
-Start with the practical question. **Which assignment must satisfy which state condition, and when does the receiving work require it?** The first useful result identifies an obtaining `SystemRoleAssignmentStateRelation` occurrence or establishes its absence. An unresolved determination can be returned with the evidence still needed. Add an assertion and evidence-use relation when a later decision must rely on that result.
+**When must the condition hold, and what decision is due now?** For a prospective arrangement, derive the holder, state and timing requirements from the receiving work. State what can be arranged now and when the outstanding conditions must be secured or checked (§4.5). For a claim about an actual assignment, identify it and establish whether the specified `SystemRoleAssignmentStateRelation` obtains in the relevant window. An unresolved determination can identify the evidence still needed. Add an assertion and evidence-use relation when a later decision must rely on that result.
 
 Typical working moments include these:
 
@@ -156,7 +156,7 @@ A.2.5 defines the assignment-state relation and guides recognition of its occurr
 
 Start from the decision or operation that uses the state. Separate the authority needed to reserve or assign work now from the condition a performer must satisfy when the operation takes place. A warranted conditional reservation can leave that later condition open.
 
-1. Identify the holder and the exact `U.SystemRoleAssignment` required for each operation. Establish when that assignment must obtain. The same holder may be required at two distinct actions even when the intervening period is free.
+1. Establish what assignment each operation requires and when it must obtain. For a future shift, the applicable rule can allow reservation now and selection of a qualified holder later. Establish who may arrange that coverage and the terms on which it can be assured or confirmed. Identify the exact holder and `U.SystemRoleAssignment` when the decision needs them. A rule can require a named holder in advance or the same holder at two distinct actions even when the intervening period is free.
 2. Select the exact `SystemRoleAssignmentStatePredicate` and use its temporal reading. Does the rule require truth at one instant, at several actions, throughout an interval or for a stated portion of it? For a proportion, use the receiving rule's measure and interval.
 3. For an account of actual performance, establish coverage from the extents of the relevant state occurrences. For a proposed assignment, establish what can be assured for the required times or make admission conditional on the outstanding state check. Each occurrence retains its own assignment, predicate and uninterrupted extent. For continuous service, cover the required interval. If service relies on a handover, establish who takes over, what must reach them and whether service is maintained across the transition. A permitted substitution can remain unused.
 4. Use the evidence and currency required for the decision and establish the other admission conditions under their direct patterns. An adequate ground for a decision about future work can support admission on stated terms. A later claim that the predicate actually held at the required times needs grounds for those times.
@@ -267,9 +267,11 @@ Likewise, a dataset or report that “plays a role” remains an episteme used t
 
 **Episteme boundary.** A representation or evidence episteme can describe or support a state claim.
 
-The main bias risk is label-first reasoning. A familiar state word invites the reader to skip predicate recovery. Repair it by recovering the assignment, predicate by value, actual state extent, and only the assertion and evidence-use relation needed by the receiving use.
+A familiar state label can obscure which condition the receiving work needs. For a planned operation, recover the predicate and when it must hold. To judge an actual assignment, recover its holder, predicate and actual state extent. Add the assertion and evidence-use relation needed for the receiving decision.
 
 ### A.2.5:8 - Conformance Checklist
+
+For a prospective arrangement, check which operation needs the assignment, which state must hold by when and what remains to be secured or verified. If a reservation or commitment is proposed now, establish whether its terms permit it. For a claim about an actual assignment, a state episode or a recorded assertion, apply the corresponding checks below to that claim.
 
 | Check | Question |
 |---|---|

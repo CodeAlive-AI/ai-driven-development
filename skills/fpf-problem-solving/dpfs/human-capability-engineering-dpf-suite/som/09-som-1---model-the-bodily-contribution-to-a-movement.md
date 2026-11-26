@@ -25,7 +25,7 @@ Use the bodily detail the question requires. A change meant to guide the perform
 
 #### SOM.1:4.1 - Choose the action interval
 
-Identify the required result and the interval in which the question arises. Identify the conditions whose variation could change the answer or its grounds, such as support, contact or timing. Identify what was happening at the same time that mattered to the movement, including what must continue during any proposed correction.
+Begin with the required result. For a question about one adjustment, choose the interval in which it could affect that result. If the result depends on how actions fit together across a phrase or a longer performance, follow those actions far enough to establish their relation. Matching finishes can conceal a different cue or a late handover earlier in the phrase. Identify the conditions whose variation could change the answer or its grounds, such as support, contact or timing. Identify what was happening at the same time that mattered to the movement, including what must continue during any proposed correction.
 
 For a dancer, the interval may include transferring support during a turn while steps and partner interaction continue. For a writer, it may be the part of a stroke where forearm support changes. Use the technique and criteria of that practice. If the learner is to choose what to model, give them the movement and the purpose of the account before naming a bodily region or prescribing a test. Have the learner work back from the correction or explanation the recipient needs. If two ways of making the same visible stroke would call for different corrections, let the learner choose what could distinguish them and explain why the available evidence suffices or what it leaves open. A teacher who supplies the region and the contrast can still leave the learner to interpret what occurred.
 
@@ -87,7 +87,7 @@ A teacher’s preferred body map may suggest useful questions. It may also influ
 
 ### SOM.1:7 - Conformance Checklist
 
-Identify the interval and the required movement result. Use the observations of experience, deliberate action or movement result needed for the question. When the conclusion depends on their relation, connect them under the relevant support and movement conditions. State what the evidence supports and where an account is unavailable. If proposing a change, identify a result that could count against it and use the observations to select any further work the task requires.
+Identify the required movement result and the part of the performance on which it depends. For a claim that spans several intervals, show what connects them. Use the observations of experience, deliberate action or movement result needed for the question. When the conclusion depends on their relation, connect them under the relevant support and movement conditions. State what the evidence supports and where an account is unavailable. If proposing a change, identify a result that could count against it and use the observations to select any further work the task requires.
 
 ### SOM.1:8 - Common Anti-Patterns and How to Avoid Them
 

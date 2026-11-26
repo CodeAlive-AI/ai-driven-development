@@ -29,7 +29,7 @@ Resolve conflicting assumptions before combining conclusions. If engineering sup
 
 Distinguish advice from the conditions it uses. A finance practitioner can estimate cost and assess affordability against a funding allocation; the allocation sets the spending limit. A service mandate states the required delivery; engineering evidence supports what an arrangement can deliver. Identify who has the authority to change the allocation or mandate. A revised allocation or mandate alone does not establish that the proposed arrangement can deliver the service under the conditions of use.
 
-Present the supported option, reasons, conditions and displaced alternatives to whoever has authority to decide. A concise recommendation can be sufficient. When uncertainty can change the decision, identify the missing result and the inquiry worth undertaking to obtain it.
+Give the commissioned recipient the supported option, reasons, conditions and displaced alternatives. Submit them to the decision holder when submission is part of the assignment or required by an applicable duty. A concise recommendation can be sufficient. When uncertainty can change the decision, identify the missing result and the inquiry worth undertaking to obtain it.
 
 The authorized decision maker selects an asset option within the actual spending, service and other applicable conditions. State what was selected and the conditions of its use. Maintenance and operating authorities separately settle the permissions for protected work and resumption when that work is to occur.
 

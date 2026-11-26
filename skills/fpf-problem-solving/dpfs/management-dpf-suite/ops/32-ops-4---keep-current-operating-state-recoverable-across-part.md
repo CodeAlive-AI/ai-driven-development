@@ -58,12 +58,12 @@ The opposite failure stores every record and overwhelms users. Important gaps, c
 
 ### OPS.4:4 - Solution
 
-Maintain the smallest decision-specific account that lets named participants recover exact subjects, current qualified claims, commitments, evidence, uncertainty, permissions, disagreements, next decisions, and refresh conditions. Present several views when needed, but keep claim and subject correspondence explicit.
+Maintain the account each participant needs for the decision at hand. Identify what each claim is about, its scope and the grounds for acting on it. Recover individual commitments, permissions, uncertainties, disagreements and refresh conditions wherever these affect the work. Several views can serve different participants when the correspondences required between them are clear.
 
 #### OPS.4:4.1 - Pattern-Use Unfolding
 
 1. **Name participants and decisions.** State who must resume, coordinate, hold, release, escalate, or perform next Work; name the horizon and useful stop for each action.
-2. **Import exact subjects and relations.** Use the OPS.3 operating-subject account. Do not let a dashboard row, case file, queue position, or control diagram replace the subject or obtaining relation.
+2. **Identify the operating subjects the decision concerns.** Use OPS.3 to establish what a row, file, queue position or diagram represents. A reliable count of people waiting in the agreed queue at opening time can settle whether to open another desk. To call the next person, the clerk also needs the relevant order and identity. Equip each participant for the work assigned to them.
 3. **Select claims that matter to the receiving work.** For each subject or commitment, state the claim, its effective scheme, conditions, time or horizon, and what decision or conclusion depends on it.
 4. **Attach evidence and provenance.** Preserve the source and support needed for the claim and receiving use, including the observation or result, carrier, transformation, version, reach and uncertainty where they affect reliance. Reuse that basis from the current account. Keep prediction, plan, observation and decision claims distinct.
 5. **Show material disagreements and gaps.** Where claims conflict, preserve their grounds and the decision they affect. Identify any missing observation or specialist result, stale evidence or uncertainty about authority that limits the decision.
@@ -133,7 +133,7 @@ The next coordinator cannot open the raw field source. The handoff therefore inc
 ### OPS.4:7 - Conformance Checklist
 
 - [ ] The account begins from named participants, decisions/actions, horizons, and useful stops.
-- [ ] Exact OPS.3 subjects, commitments, and direct relations remain recoverable in every relied-on view.
+- [ ] Each relied-on view identifies the subject and meaning of its claims. For a claim about a whole, its population, time and construction support the conclusion. Individual subjects, commitments and relations are recoverable by the people whose decisions depend on them.
 - [ ] Each current claim states content, scheme, time/horizon, conditions, evidence/provenance, uncertainty, and receiving action.
 - [ ] Observation, prediction, plan, record, decision, and world-state claims remain distinct.
 - [ ] Disagreements, missing observations, stale evidence, and specialist returns remain visible with their decision reach.

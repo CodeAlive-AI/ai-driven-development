@@ -48,7 +48,7 @@ Typical failures include:
 2. **Evaluation loops become reward functions.** A checking reader asks for improvement; the author adds fields, guards, source rows, proof sketches, and relation catalogues until the visible evaluation looks better.
 3. **Unmeasured value is damaged.** Usability, safety margin, maintainability, learning, domain fit, affordability, or operator action quality gets worse while the proxy improves.
 4. **The proxy's use is unspecified.** The same metric is treated as orientation cue, target, incentive, gate, and release proof without saying which use applies.
-5. **No value slice exists.** The text claims practical payoff, but gives no minimally viable case that shows the value being realized.
+5. **The payoff has no grounds in the work.** The account neither connects the proposal to the intended value under its stated conditions nor supports a claim that the value was realized.
 
 ### E.13:3 - Forces
 
@@ -111,15 +111,15 @@ Whenever a proxy improves under optimization pressure, ask what became worse or 
 
 Check at least usability, affordability, safety or harm boundary, maintainability, domain fit, source preservation, decision quality, learning, and neighboring-pattern fit when they are live in the case.
 
-Report the affected decisions, protected qualities and interactions covered by the comparison. A gain for one shift can be established even while the effect on another is unknown. If both shifts depend on the same specialist in the same hour, examine what the specialist can deliver to both before claiming a gain for the service as a whole.
+Report whose decisions, protected qualities and interactions the comparison covers. An effect on each part, a dependence between parts and an effect of their organization are different claims. For example, if two shifts need one specialist at the same time, their joint outcome depends on how that time is allocated. A claim about the improvement of one shift can be settled with the other shift's outcome still open.
 
 #### E.13:4.4 - Require a Minimally Viable Value Slice
 
-Require a minimally viable value slice: one compact case, worked slice, observation, trial, user/operator moment, or decision replay where the intended value is visible enough for the declared use.
+A minimally viable value slice gives the recipient enough grounds to judge the practical value claimed. For an expected consequence, relate the proposed change to the recipient's work and establish the conditions under which the consequence follows. A general argument, a worked comparison or an available observation may supply the needed grounds. For a claim about actual improvement, examine use and the comparison needed to attribute the change.
 
-State whether the slice is an illustration, desk replay, or observed use, and what conclusion it supports.
+Identify the grounds the value slice supplies, whose outcome it concerns and which variations its reasoning covers. A consequence of a binding obligation and an observed change in someone’s work support different claims.
 
-The slice may be small. It must show the intended value for the declared use. A proxy reading alone is insufficient.
+A short account is sufficient when the recipient can recover the connection over the range in question. If a measure concerns a proxy, explain why it bears on the intended value.
 
 A worked illustration can explain how a proposed repair would serve that value; it does not by itself establish an observed gain. Keep any claim about actual improvement within the comparison and evidence that support it.
 
@@ -133,9 +133,9 @@ When the proxy has displaced the value, choose one or more of these repairs:
 
 - where the governing rule permits it, change the proxy use from target/gate/incentive to orientation or bounded measure. If a binding requirement must change, propose the amendment under its authority and keep the current requirement in force until that amendment takes effect;
 - add a protected quality or counter-metric that names the value at risk;
-- change the work or design so the value slice improves, not only the proxy;
+- change the work or design where the proxy can improve while the intended value deteriorates, and assess what the change does to that value.
 - split the claim: one measure report, one value claim, one assurance or gate claim if needed;
-- stop the value claim until a value slice or better proxy relation exists.
+- suspend an unsupported claim, or state the consequence and conditions the available grounds already establish.
 
 ### E.13:5 - Archetypal Grounding
 
@@ -160,7 +160,7 @@ In evaluator-satisfaction bias, a team adds apparatus to satisfy an evaluation s
 | `CC-E13-1` | The repair names the intended value or objective before the proxy. |
 | `CC-E13-2` | The proxy or visible measure is typed by current use: orientation, measure, target, incentive, gate, release argument, decision driver, reputation signal, or repair target. |
 | `CC-E13-3` | If a proxy improved, the repair asks what got worse and names checked loci or protected qualities. |
-| `CC-E13-4` | A minimally viable value slice shows the intended value for the declared use, or the value claim is lowered. |
+| `CC-E13-4` | The ground for the claimed value reaches the recipient, use and conditions named in the claim. Where it reaches only part, identify that part and what would support the wider claim. |
 | `CC-E13-5` | The repair does not treat evaluation values, source counts, review praise, all-`5` posture, assurance level, or release status as value by itself. |
 | `CC-E13-6` | Stronger claims are governed by their direct patterns: measurement by `C.16`; quality evaluation by `E.21`, `E.9.DA`, or `E.2.DA`; assurance by `B.3`; gate passage by `A.21`; choice among options by `C.11`; decision authority by the applicable domain rule; and value and proxy alignment here. |
 | `CC-E13-7` | The repair changes value movement, proxy use, protected qualities, claim split, or stop condition; it does not close by adding proof apparatus alone. |
@@ -174,13 +174,13 @@ In evaluator-satisfaction bias, a team adds apparatus to satisfy an evaluation s
 | Source-count proof | More citations or source rows are treated as better decision quality. | Ask what changed in the substance of the decision. |
 | Dashboard myopia | A visible dashboard metric improves while unmeasured harm rises. | Add protected qualities and split measure from value. |
 | Proxy as gate authority | A proxy is treated as authority for release or gate passage without satisfying the rule that governs that decision. | Apply the governing release rule for release, `A.21` for gate passage, and `B.3` for an assurance claim; keep proxy use bounded. |
-| Value slice missing | Practical payoff is asserted but never shown in a case. | Add a minimally viable value slice or lower the payoff claim. |
+| Unsupported payoff | A passage promises a gain without showing why it follows for the recipient or what happened in use. | Supply the missing connection or observation. Limit the conclusion to what those grounds support. |
 
 ### E.13:12 - Consequences
 
 - FPF can use scores and metrics without making them the object of optimization.
 - Improvement loops gain a simple value-proxy stop condition.
-- Practical payoff claims need at least a small value slice.
+- An expected consequence can follow from the structure of the work. A claim about achieved improvement needs evidence of the work and an appropriate comparison.
 - Some attractive proxy improvements are rejected, split, or lowered.
 - The cost is a small proxy-to-value check whenever a visible measure becomes a target, incentive, gate, release argument, or repair target.
 

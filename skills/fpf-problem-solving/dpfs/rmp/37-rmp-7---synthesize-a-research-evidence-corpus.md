@@ -128,7 +128,7 @@ A resident group asks what impedes participation in water monitoring. One interv
 
 For a mixed synthesis addressing this question, preserve the survey counts and denominator, the interview contexts and the authors’ interpretations. The synthesist proposes that control over the question and the information returned may both matter. The account supplies no population prevalence for that explanation. Continued participation in one case despite withheld feedback qualifies the proposed connection.
 
-To estimate the intervention’s effect on water quality, use studies that measure that effect. If the question also concerns how participation relates to water quality, synthesize each kind of evidence appropriately and examine the connection.
+Return the supported finding about participation to the residents. A new commission might ask whether a particular change in monitoring improves water quality. First establish what would change, which water outcome matters, over what time and relative to what alternative. The participation studies can inform the account where the change relies on people taking part. For a conclusion about its effect on water quality, obtain evidence that connects the change to that outcome and addresses other explanations. Report what the available evidence can establish.
 
 #### RMP.7:5.4 - Shared memoir and contrary chronology
 

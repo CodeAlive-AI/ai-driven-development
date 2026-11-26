@@ -80,6 +80,8 @@ Without a named publication-unit discipline:
 >
 > It becomes necessary when local repair is no longer enough and the publication unit still shifts among subject, concern, description, carrier, process, or downstream use while sounding unchanged.
 
+First recover what the reader needed to understand, choose or do before this text was written. Ask where the property or relation in that question could arise. The reader may need an account of how a practice repeatedly produces a result, while the draft explains one participant’s choice. Trace what that choice establishes about the practice. Keep the incident as the subject when the request concerns that incident. When the wider question remains, recover the organization or rule that connects the pertinent cases and show the reader how to use it (C.39.QR:4.1, C.39.SA:4).
+
 Examples of statements that clarify a unit’s scope include:
 - `this memo is about the architecture boundary, not yet about the rollout plan`;
 - `this review note is about the incident episode and the observed contrast, not yet a production-action recommendation`;
@@ -98,7 +100,7 @@ If the problem is still confined to one vague local lexical head, start with `E.
 - **Carried move** = what the unit asserts, compares, explains, recommends, or otherwise communicates about its subject; it may also say that it only stabilizes the reading without adding a new claim.
 - **Downstream use** = what a reader is invited or permitted to do with the unit, such as understand, compare, approve, rely, assign, or act.
 - **Outside-work boundary** = what wider review, execution work, non-admissible downstream decision, or reliance claim stays outside the current unit.
-- **Explicit transition** = the unit names which of subject, concern, carried move, or downstream use has changed so readers can see the transition.
+- **Explicit transition** = the unit shows which subject, concern, move or use changes and why the new passage bears on the reader’s question. A move to one part, a model at another level of abstraction or a worked case may contribute a premise. Return from it to the conclusion its grounds support.
 
 #### E.17.AUD.OOTD:4.1.b - What can change
 
@@ -227,14 +229,14 @@ The memo moved from the interface to a proposal to assign and schedule rollout. 
 
 For an introduction, “This note introduces the service boundary between catalog and checkout. Rollout is outside its scope” can finish the job. For an assessment, keep the two sides together and give the finding. Suppose checkout must handle every agreed catalog response. The catalog can return “item unavailable” and checkout accepts only a priced item. The current interface therefore fails that requirement. One such response settles this failure. To establish compatibility for that requirement, show that checkout handles every agreed response under the stated conditions.
 
-Either finding can guide an interface decision. Where a broader assessment also depends on an unknown deployment condition, identify what remains open. A rollout assignment requires the responsible authority’s action.
+Either finding can guide an interface decision. Where a broader assessment also depends on an unknown deployment condition, identify what remains open. A standing rule can assign qualifying rollout work to the duty shift. If a separate allocation is reserved to a particular party, establish that act before reporting who has been assigned.
 
 #### E.17.AUD.OOTD:5.2 - Operations note shifting into approval
 
 An incident note begins as a comparative review of timing variance and operator context.
 It ends as if it already recommends a production action.
 
-The incident may stay the primary subject while the move changes from comparison to recommendation. Mark the change if the reader needs both. To communicate an existing approval, cite its authoritative outcome and scope. When approval is needed and still pending, give the decision-maker the proposal and its grounds.
+The incident may stay the primary subject while the move changes from comparison to recommendation. Mark the change if the reader needs both. To communicate an existing approval, cite its authoritative outcome and scope. For a status inquiry, identify the pending approval and who holds the authority. Take the proposal and its grounds to that authority when the commission or a duty requires it.
 
 Use `C.11` if the new text chooses among already available actions. If an actual approving communication and an instituted permission matter, keep the `A.2.9` communicative Work and the `A.2.8.PER` grant relation separate. Use `A.21` only when a current `OperationalGate(profile)` publishes a gate decision.
 
@@ -246,6 +248,8 @@ Here the primary subject broadens from the selected section to the whole overlay
 - what the note is about now;
 - what concern and move it carries over that subject;
 - and what wider architecture strategy remains outside the current unit.
+
+If the commissioned question is the packaging strategy itself, inspect what the section establishes for it. For example, a distribution option that requires every section to stand alone can be ruled out by one section whose essential definition is available only in another. That finding can settle a request to assess this option. To design a workable distribution, establish which definitions readers need together and how each reader will obtain them when needed. The list of required terms from this one section can contribute to that design.
 
 #### E.17.AUD.OOTD:5.4 - Unit stabilizes and bounded comparison becomes primary
 
@@ -262,10 +266,10 @@ If the remaining question is now one bounded comparison between the already pinn
 A release-readiness note is already explicit that it is about one candidate publication or view and the risk state visible from the current evidence.
 Mid-review, an external vendor bulletin and a new field observation change the reported failure boundary for that same candidate.
 
-The candidate may remain the primary subject. What changed first is the evidence-facing concern and the claim the note can support; a later approval or execution question may also change the downstream use. Do not report an `EntityOfConcern` change unless one identified claim-bearing episteme has a different entity participant under `C.2.1`.
-Repair the note in one of three ways:
+The candidate and the question about its current risk can both remain the same while new evidence changes the answer. For a request about an earlier date, preserve the finding within its stated evidence window. Reconsider a pending decision if its grounds have changed. An `EntityOfConcern` change arises only when a claim-bearing episteme has a different entity participant under `C.2.1`.
+For the unit and the further work it supports, choose the applicable continuation:
 - stop the current unit at the originally declared evidence boundary and open a new downstream record for the changed question;
-- explicitly reopen the same unit with the revised concern, claim or carried move, permitted use, and outside-work boundary;
+- revise the affected claim in the same unit, retaining the original question and bounds wherever they still apply;
 - or use the downstream decision or work pattern whose instructions now fit once approval, execution, or another downstream decision publication becomes the primary question.
 
 The bulletin and field observation remain sources until a support, evidence, or currentness claim makes `A.10` relevant. Use `C.11` for a later choice, `A.2.9` and `A.2.8.PER` for an approving act and its permission effect, `A.15` for a work claim, and `A.21` only for an actual gate decision.
@@ -299,7 +303,7 @@ To counter that bias, name the primary subject, concern, carried move, downstrea
 4. **CC-OOTD-4 - Concern, carried move, downstream use, and outside work are distinct.**
    The unit states which question it foregrounds, what it asserts or communicates, how readers may use it, and which wider work, approval, execution, decision, or reliance remains outside.
 5. **CC-OOTD-5 - Any transition is typed and explicit.**
-   If subject, concern, claim or carried move, downstream use, or the entity participant changes, the unit names which change occurred so readers can distinguish that change from the others.
+   For a change of subject, concern, carried move, downstream use or entity participant, the reader can tell why the passage shifts and what conclusion returns to the original question. A wider conclusion needs grounds across its stated range.
 6. **CC-OOTD-6 - Choose between local and publication-unit repair.**
    Use `E.17.AUD.LHR` when one local head or qualifier is the defect. Apply this pattern when that repair cannot settle the unit's subject, move, use, or outside boundary.
 7. **CC-OOTD-7 - Neighboring-pattern boundary is explicit.**

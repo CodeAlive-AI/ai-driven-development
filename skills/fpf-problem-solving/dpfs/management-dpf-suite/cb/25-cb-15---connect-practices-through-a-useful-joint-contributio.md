@@ -40,7 +40,7 @@ Start with the result the receiving practice needs and identify the contribution
 
 #### CB.15:4.1 - Locate the difficulty where the practices meet
 
-Start with an actual request, referral, shared material, decision or outcome. Ask each side what it was trying to achieve, what it needed from the other, what it supplied and what happened. Recover a case where the connection worked as well as the difficulty when that contrast could change the explanation.
+Start with the work the parties need to connect. For a proposed collaboration, find what each practice must receive, which choices and permissions already apply, and how one contribution could become usable by the other. To explain an outcome already observed, recover what each side actually supplied and used. Compare a successful and a difficult case when that contrast could change the explanation.
 
 Let practitioners describe their own work and constraints. An organiser's account can identify a lead, but someone who performs or receives the contribution may expose a different problem. Use CB.1 and OCE.2 when the relevant participants, affected interests or working relations are still unknown.
 
@@ -78,7 +78,7 @@ Keep the commitment and authority bounded. Participants may offer their own time
 
 #### CB.15:4.4 - Clarify meanings through the shared work
 
-Have each side explain the relevant action through a concrete case. Ask what starts it, what material it needs, what decision is made, what result leaves and who uses that result. Where the accounts conflict, locate the difference before proposing a shared term.
+Establish what each side means by the action or result on which the other will rely. Where their terms leave a consequential difference open, examine a case that distinguishes the possible uses. Ask what starts it, what material it needs, what decision is made, what result leaves and who uses that result. Where the accounts conflict, locate the difference before proposing a shared term.
 
 Compare consequential expressions in use. If one group calls a request “ready” when all fields are filled and another means a qualified practitioner has accepted it, preserve both meanings and say which condition the joint work needs. A short explanation or distinct wording may suffice.
 
@@ -100,7 +100,7 @@ Check what the recipient can do with the result. Can the recipient act on the re
 
 Do not turn one observation into an unearned competence or effectiveness conclusion. A visitor may understand a practice without being able to perform it. HCD can supply preparation when a person needs to learn the practice, while A.3.1.FT can qualify a method's fit or transfer. Keep that further result separate from the successful visit.
 
-When the action fails, return the failure to the relevant part of the arrangement. Repair an unclear request, obtain a missing decision or stop the unworkable promise. Use CB.8 if conduct prevents the exchange; a legitimate difference in professional judgement belongs to the subject question.
+When the action fails, return the failure to the relevant part of the arrangement. Repair an unclear request or obtain a missing decision. Where delivery has failed, establish what each participating practice is still owed. Use CB.8 if conduct prevents the exchange; a legitimate difference in professional judgement belongs to the subject question.
 
 #### CB.15:4.6 - Return the contribution to both practices
 
@@ -110,7 +110,7 @@ For a new shared instruction or practice contribution, use CB.14 to obtain quali
 
 Where representatives took part, return the result to their groups and distinguish observations, proposals and agreed commitments. The account should allow those groups to correct a mistaken interpretation or decide whether to support further work.
 
-Make the next contact usable when continued exchange is wanted: who can answer which question, by what route and within what realistic availability. Reduce the promise if it depends on a single overloaded person.
+Make the next contact usable when continued exchange is wanted: who can answer which question, by what route and within what realistic availability. When one overloaded person is the only contact, arrange cover or agree what availability the two groups can rely on.
 
 #### CB.15:4.7 - Choose a proportionate continuation
 
@@ -180,7 +180,7 @@ An unexplained referral failure or a promising contrast is enough to recognise t
 
 | Failure in practice | Repair |
 | --- | --- |
-| Begin with a broad partnership agreement while the shared work is unclear. | Find one contribution both sides can use and try it under a small commitment. |
+| Begin with a broad partnership agreement while the shared work is unclear. | Identify the result that gives the practices a reason to work together. Show what each could supply, how their work would fit and what each intended recipient could receive. A feasible proposal can complete a design request. If a trial is needed, agree its purpose, permissions and return with those involved. |
 | Use a common word as evidence of common practice. | Compare its meaning and consequence in each side's actual case. |
 | Resolve a resource conflict by rewriting terminology. | Return the allocation or commitment question to its owner. |
 | Fill a visit with presentations that could happen anywhere. | Arrange practitioner-guided access to the work and questions that need situated observation. |

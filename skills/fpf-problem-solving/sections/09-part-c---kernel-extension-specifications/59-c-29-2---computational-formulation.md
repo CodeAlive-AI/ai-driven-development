@@ -59,7 +59,7 @@ Make an approximation requirement operational. `|y_hat - y| <= epsilon` means an
 
 For stochastic computation, distinguish a requested distribution, samples from it and an estimated statistic. Those outputs require different constructions and resources. For an approximate distribution, name the events, statistics or distance over which accuracy is required. A distribution's definition does not by itself supply a sampler; a sample average needs an argument connecting it with the requested population quantity.
 
-Identify an input distinction that would change the answer. If two such inputs have the same proposed representation, retain the missing information, add an obtainable input, restrict the admitted cases, or obtain agreement to answer a weaker question. C.29.1 develops the preservation argument when that comparison is itself the difficulty.
+Derive the input distinctions from the operations the recipient needs. A representation for an exact value must distinguish inputs with different required values. If the order allows any satisfactory witness, a witness common to all inputs with the same representation can suffice. For an ongoing response, determine what its performer will know at each step and what subsequent inputs may require. Establish that the resulting computation can obtain an acceptable answer for the admitted inputs. Restore missing information, use an adequate alternative, or agree a change in scope when the present representation precludes the requested work. C.29.1 develops the preservation argument.
 
 #### C.29.2:4.2 - Choose represented state and operations together
 
@@ -77,22 +77,15 @@ The available operations can also be the starting contribution. A collaborator w
 
 If a known construction answers the question, recover its inputs, operative rules or steps and assumptions from its explanation and use it. B.5 supports that recovery. Check that the available operations can perform those steps and that their result has the required interpretation. A library or solver can supply the construction, but its accepted input class, result guarantee and failure behavior must fit the present use.
 
-When the connection is not yet known, work on the missing operation rather than rewriting the output condition:
-
-1. Calculate a small instance with enough detail to see what is being produced.
-2. Identify what remains to be obtained after one available operation. Try to express that remainder using the same kind of problem or a known subproblem.
-3. Retain the intermediate information needed to join the contributions. If an operation overwrites a value still needed later, save it or change the ordering.
-4. State how the joined result satisfies the original answer condition, then try a case that changes a material assumption.
-
-This is a way to expose and develop a construction. Recurrence construction, search, optimization, numerical discretization and other techniques have their own subject methods. Use C.39 to find or develop a missing way; use C.40 when a workable change-and-test operation is already available and branching search is the live difficulty.
+When the connection is missing, work back from the required output to an operation that could produce it. Which inputs would that operation need, and how could they be obtained from the data or state already available? A direct substitution can complete the construction. To build a procedure from smaller operations, determine what remains after an available step, retain the information needed by the next step and show how the joined results satisfy the original condition. A calculation on a small instance can reveal an intermediate value or dependency to carry into that argument. Recurrence construction, search, optimization, numerical discretization and other techniques have their own subject methods. Use C.39 to find or develop a missing way; use C.40 when a workable change-and-test operation is already available and branching search is the live difficulty.
 
 For a still-missing contribution, return a substantive task: the available inputs and operations, the result or intermediate relation needed, the conditions it must preserve, and what would count as a useful solution. “Find a better algorithm” is usually too weak. After a dense-state rejection, for example: “Given this circuit family and this requested observable, provide a representation and update/readout procedure with a justified error bound and a peak-memory estimate below the stated budget; do not materialize the full amplitude array in a hidden conversion.”
 
 #### C.29.2:4.4 - Explain the result and progress
 
-For a proposed computation, follow a small case from supplied inputs through the available construction to the interpreted output. Show the changing values or solved relations, and expose operation order when it affects the result. This catches missing state, ambiguous instruction order and an output interpreted under the wrong convention.
+Follow the construction from its inputs to the result the recipient will interpret. A derivation from the operation rules can establish the result for their whole input class. Work through a particular input when the order calls for its result or a trace can resolve uncertainty about state, instruction order or output meaning.
 
-Then supply the argument appropriate to the claimed range. For a loop, find a statement relating the current state to the work already completed and the answer still sought. Show that initialization establishes it, each iteration preserves it, and the stopping condition makes the desired conclusion follow. This statement is the loop invariant. Separately explain why the loop reaches that condition, for example through a nonnegative integer that decreases at every iteration. For a recursive construction, explain its initial cases, the smaller calls and how their results give the caller's answer.
+Supply the argument appropriate to the claimed range. For a loop, find a statement relating the current state to the work already completed and the answer still sought. Show that initialization establishes it, each iteration preserves it, and the stopping condition makes the desired conclusion follow. This statement is the loop invariant. Separately explain why the loop reaches that condition, for example through a nonnegative integer that decreases at every iteration. For a recursive construction, explain its initial cases, the smaller calls and how their results give the caller's answer.
 
 The proof form depends on the computation. A direct finite composition may need only substitution through its operations. A randomized procedure needs its probability argument. For an estimated statistic, state the sampling assumptions and connect the claimed error or uncertainty to the sample count. For a continuing interaction, state the preservation or response property required and the assumptions under which progress is claimed; global termination may be the wrong requirement.
 
@@ -114,7 +107,7 @@ Begin with the resource that can decide the choice. For a stored array, derive h
 
 `payload storage = element count × bytes per element`.
 
-For several simultaneously live arrays, add their payloads and the workspace, indices, temporary copies and other storage used by the proposed algorithm. Peak memory concerns what must coexist, not the total amount ever allocated. A payload lower bound may already reject a design; a payload that fits is not yet a complete fit argument.
+Identify which storage must coexist and which arrays share it. Two views of the same 40 GiB allocation can each expose the entire array while using that payload once. Two independent 40 GiB copies require 80 GiB while both are live. Include the original allocation if it is live at the same time. For a design allowed to choose the execution order, one enforceable order can establish a fit. For a guarantee over all permitted orders, bound the peak in each or establish one bound covering them all. Count each live allocation once, including workspace, indices and temporary copies that can affect the peak. A payload lower bound can reject a design. To establish that it fits, give a sufficient upper bound for the required execution.
 
 In a model of discrete operations, count how often each operation is performed and what each performance costs. State the size parameters. An instruction count with one unit per arithmetic operation answers a different question from bit operations on growing integers, memory transfers or elapsed time on a machine. Explain the dominant term before using asymptotic notation. A bound for one representation is not a lower bound for every algorithm solving the mathematical problem.
 
@@ -126,7 +119,7 @@ When resources fail, change one of the causes: represented structure, stored pre
 
 #### C.29.2:4.7 - Return the sufficient result and its next use
 
-Return the formulation and its obtaining construction when available, with enough representation and output meaning to use them, the conditions of the argument, and the resource or accuracy limit that can change the decision. Reuse an existing explanation where it supplies these connections.
+Return what the recipient asked you to obtain. To deliver the procedure, supply its operations, the meaning of their inputs and outputs, and the conditions under which its result and cost meet the requirement. For a result on supplied inputs, carry out the computation or use an existing result whose grounds apply. If a fresh execution is part of the order, that execution remains to be performed. For a continuing response, provide the state, operations and progress conditions needed at successive inputs. A short derivation can supply these connections.
 
 If a contribution is absent, identify it at the failing connection. A missing state distinction returns to formulation; an unavailable algorithm returns to its construction; an unsupported numerical bound returns to the numerical method; an execution mismatch returns to C.29.3, which may in turn supply a reason to revise this formulation. The iteration can change both model and executing arrangement.
 
@@ -306,10 +299,10 @@ Apply these checks to the computational claim being made.
 | Check | What must be recoverable |
 | --- | --- |
 | Answer and scope | The input class, required answer and any accuracy or interaction condition; an output characterization is distinguishable from its obtaining procedure. |
-| Represented distinctions | Input meaning, computational state and output interpretation, including a retained distinction that a later operation needs. |
+| Represented distinctions | The input meaning, computational state and output interpretation support the required operations. Where several inputs share a state or receive the same answer, that choice remains adequate for the commissioned work. |
 | Available operations | What each consequential operation does and where any non-elementary construction comes from. |
 | Obtaining construction | An executable ordering, an applicable solver for declared relations, another specified computational behavior, or a substantive missing-construction task. |
-| Argument | A proposed computation has a worked case and the argument needed for its claimed range, including termination or response properties when claimed. An obstruction has an argument establishing its scope. |
+| Argument | The construction has an argument for its claimed range, including termination or response properties when claimed. A requested execution has its result. A worked input can exhibit a disputed step. An obstruction has an argument establishing its scope. |
 | Accuracy | The error relation or probability guarantee used by the receiver and the arithmetic, approximation, sampling and interpretation conditions that support it. |
 | Resources | The relevant element/operation counts, per-element or per-operation costs, size parameters and material preparation/readout costs. |
 | Result boundary | A qualified answer, restriction or obstruction; no unsupported promotion of one trace, failed representation or simulated execution. |

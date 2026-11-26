@@ -82,6 +82,8 @@ This pattern also governs four pieces of Part‑G‑wide infrastructure that are
 
 Each Part-G pattern makes its applicable core obligations, pins, defaults and refresh triggers recoverable. A direct reference with its use conditions is sufficient; `GCoreLinkageManifest` provides a compact representation when several shared sets are used.
 
+Start from the use the recipient has commissioned. Follow the result they need back to the contributions, relations and rules it depends on. To supply an existing result, establish which result the recipient needs and the conditions for relying on it. If the work calls for comparison, an author asked for the governing default can finish by locating the rule and establishing that its conditions hold. An author entrusted with designing the comparison can use G.0:4.5.1 to choose its subjects and basis. The entries below identify governing definitions for the operations actually used.
+
 * Cite `G.Core` and the governing definitions of the obligations used.
 * When using a `GCoreLinkageManifest`, identify the applicable sets or individual ids:
 
@@ -189,7 +191,7 @@ When more than one channel is used, retain every channel's independently require
   A local token string (e.g., `T4`) SHALL NOT silently change meaning across patterns; namespace is part of the alias (`G.11:T4` ≠ `A.20:T4`).
 
 * **Granularity discipline:**
-  If a local cause is narrower than an existing canonical kind, map it to that kind and keep the nuance as a local scope note. If the difference matters for planning/selection, add a new canonical kind.
+  Map a narrower local cause to the applicable canonical kind and retain the local distinction when it changes planning or selection. If a shared use needs a new canonical kind, propose it to the authority responsible for G.Core, or introduce it under the delegated change procedure. Use the new kind as canonical from the edition in which it takes effect.
 
 * **Multi-cause discipline:**
   When an event spans multiple canonical kinds, record multiple triggers (preferred) or map the alias to a set `{…}` and require emitting the full set.

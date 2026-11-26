@@ -12,9 +12,9 @@
 
 Use A.20 when one transformation or one operation application is current in a transformation-flow structure and the question is whether that subject satisfies one named internal constraint for one stated case. It also applies when an A.6.4 bounded-use assertion q is current there and q's proposition is the named internal constraint. A.6.4 retains the separate current-case judgement.
 
-**First useful move.** Recover the subject, constraint and case from the existing description. Determine applicability; if it remains unresolved, state the missing fact and deciding rule. Once applicability is established, report its value, the evaluation state and any test outcome, with the evaluation window and witness or reason.
+**First useful move.** Recover the subject, constraint and case. Establish which requirement applies, which facts decide its satisfaction and what evidence is available for any claimed evaluation. A question about a past check can remain open even when its result was required. Give the supported outcome or the missing ground and its consequence for the receiving use.
 
-**Quick worked case.** `TemperatureConversion-7` must add 273.15 to a Celsius input and must not return a value below 0 K. For input 25 °C, the test returns 298.15 K, so both required conditions are `satisfied`; the witness records the formula edition, input, output, and test result for this evaluation window. The practitioner may reuse this result for that case and window, or pass it to a current gate or assurance use; changed input, formula edition, assumptions, or window requires reassessing affected grounds and establishing whether this result still covers the receiving case and use. If the output were 297.15 K, the formula condition would be `violated`; if no output could be recovered, it would be `unknown`; if the test had not run, its evaluation state would be `notRun`.
+**Quick worked case.** `TemperatureConversion-7` must add 273.15 to a Celsius input and must not return a value below 0 K. For input 25 °C, the test returns 298.15 K, so both required conditions are `satisfied`; the witness records the formula edition, input, output, and test result for this evaluation window. The practitioner may reuse this result for that case and window, or pass it to a current gate or assurance use; changed input, formula edition, assumptions, or window requires reassessing affected grounds and establishing whether this result still covers the receiving case and use. If the output were 297.15 K, the formula condition would be `violated`; if the exact output were lost but a certified interval excluded 298.15 K, the formula condition would still be `violated`. If the available facts allowed both equality and inequality it would be `unknown`; if the test had not run, its evaluation state would be `notRun`.
 
 Stop after that result unless a gate, assurance argument, publication, or another named task needs it. Path and crossing structure, refresh, gate decisions, evidence, assurance, Work, and semantic bridges keep their own patterns.
 **What goes wrong if missed.** A class label or green status replaces the constraint and test. An unknown or unrun required check disappears inside `pass`. A failed local constraint makes unrelated gate-fit facts look inapplicable. Copying the surrounding flow architecture into this result obscures the local finding.
@@ -70,7 +70,7 @@ The constrained subject is normally:
 
 Another subject is admissible only when its own pattern defines a named internal constraint and states why this result form applies. An E.18 locus label alone supplies neither the subject nor the constraint.
 
-When a fact needed to determine applicability is missing, state the unresolved question, the missing fact, and the rule that will decide it. Assign `applicabilityValue` and construct the result below once applicability is established.
+If applicability depends on a missing fact, state the question and the deciding rule. Once established, retain the applicable requirement for this case. Use the result below for a supported evaluation state. If a past evaluation was required but its occurrence is unestablished, keep the requirement and missing evidence visible without claiming a result from that occasion. A new assessment has its own occasion and can answer a question about the constraint now.
 
 Minimum result content:
 
@@ -92,7 +92,7 @@ ConstraintValidityResult:
   evaluationWorkRef?:
 ```
 
-`outcome` is present only when `evaluationState=evaluated` and `applicabilityValue` is `required` or `optional`. A not-applicable constraint records the reason it is outside this case. A not-run constraint records that evaluation work has not produced a result. Neither is `unknown` and neither counts as success.
+`outcome` belongs to an evaluated applicable constraint. For `notApplicable`, state the reason the constraint is outside the case. Use `notRun` when there is a basis for saying that the named evaluation did not take place. A missing report can leave both earlier performance and nonperformance possible. It then supplies no past evaluation state or outcome. An assessment that actually took place can itself return `unknown` under the constraint’s rule. The missing or inconclusive result does not support satisfaction.
 
 If a dated evaluation Work occurrence is asserted, first establish its A.13 core: the performing System, local agential-role kind and membership criterion, and an obtaining assignment of its declared direct species for the relevant scope and time. A.15.1 independently admits that performance; F.6 applies afterward only for assignment-bound attribution. The optional `evaluationWorkRef` cites that Work separately from the result episteme.
 
@@ -106,7 +106,7 @@ For one evaluated applicable constraint:
 
 - `satisfied` means the test established the named constraint for the stated case and window;
 - `violated` means the test established a counterexample or failed condition;
-- `unknown` means required case facts or witness content could not be determined after applicability was established; unresolved applicability remains the preliminary question in section 4.1;
+- `unknown` means the available grounds leave both satisfaction and violation possible, or lack a basis for deciding between them, after the constraint’s applicability has been established; unresolved applicability remains the preliminary question in section 4.1;
 - `error` means the selected evaluation could not complete correctly.
 
 When a consumer needs one local summary over the complete required set, use:
@@ -117,23 +117,23 @@ The summary rule is:
 
 1. `notApplicable` only when the declared required set is empty because no required A.20 internal constraint applies to this subject and use; any optional results remain separately available;
 2. `violated` when at least one required result is `violated`;
-3. `unresolved` when no required result is violated but at least one required constraint is `notRun`, `unknown`, or `error`; and
+3. `unresolved` when no required result is known to violate the constraint but a required result is missing, `notRun`, `unknown`, or `error`; and
 4. `satisfied` only when the required set is nonempty and every member has an evaluated `satisfied` result.
 
 Optional results do not change the summary unless a separately accepted use decision moves their constraints into the required set. A missing required result can therefore never disappear beside a satisfied result.
 
 #### A.20:4.3 - Constraint families and outcome rules
 
-The following families are recognition aids, not a universal required list. Each application still names the constraint, edition, assumptions, case facts, and test.
+The following families are recognition aids, not a universal required list. Each application identifies the constraint, edition, assumptions and case grounds that decide it. Consider what follows from the available facts together. A bound can settle a threshold even if the exact value is missing. Use `unknown` when the surviving possibilities still permit different answers.
 
 | Constraint family | Trigger | `satisfied` means | Other outcomes |
 | --- | --- | --- | --- |
-| Type, domain, and range | The subject consumes or produces typed values. | Every case input and result used by the claim lies in the declared type, domain, and range. | A counterexample is `violated`; unavailable values are `unknown`; an evaluation that cannot complete correctly is `error`. |
+| Type, domain, and range | The subject consumes or produces typed values. | Every case input and result used by the claim lies in the declared type, domain, and range. | A counterexample is `violated`; values whose membership remains undecidable from the available grounds are `unknown`; an evaluation that cannot complete correctly is `error`. |
 | Admissibility conditions | The operation or transformation declares guards or admissible cases. | Every required guard is true for the case and window. | A false guard is `violated`; undetermined guard truth is `unknown`. |
-| Law or invariant set | The current claim relies on a named law or invariant. | The named invariant holds for the case under its assumptions. | A counterexample is `violated`; missing case facts or witness content are `unknown`. |
-| Quantity and unit coherence | The current operation combines quantities or units. | The case is coherent under the already declared quantity, unit, and reference-scheme rules. | A mismatch is `violated`; an unrecovered declaration is `unknown`. A.20 does not define or translate units or planes. |
-| Sensitivity or stability bound | A robustness, continuity, perturbation, safety-envelope, or stability claim depends on a bound. | The cited bound covers the stated domain, assumptions, distance or norm, and case. | A counterexample is `violated`; absent assumptions or certificate content are `unknown`. No bound is required without this trigger. |
-| Return-shape preservation | A consumer relies on a declared set, archive, order, or other non-scalar result shape. | The transformation preserves that declared shape for the current case. | Hidden scalarization or lost required structure is `violated`; unrecovered shape facts are `unknown`. A.20 does not rank or select the result. |
+| Law or invariant set | The current claim relies on a named law or invariant. | The named invariant holds for the case under its assumptions. | A counterexample is `violated`; the result is `unknown` if the available case facts and witness leave the law undecided. |
+| Quantity and unit coherence | The current operation combines quantities or units. | The case is coherent under the already declared quantity, unit, and reference-scheme rules. | An established mismatch is `violated`. If the available declarations and case facts leave coherence undecided, the result is `unknown`. A.20 does not define or translate units or planes. |
+| Sensitivity or stability bound | A robustness, continuity, perturbation, safety-envelope, or stability claim depends on a bound. | The cited bound covers the stated domain, assumptions, distance or norm, and case. | A counterexample is `violated`. If the available assumptions, certificates and other grounds leave the claimed bound undecided, the result is `unknown`. No bound is required without this trigger. |
+| Return-shape preservation | A consumer relies on a declared set, archive, order, or other non-scalar result shape. | The transformation preserves that declared shape for the current case. | Hidden scalarization or lost required structure is `violated`. If the available information leaves preservation of the required shape undecided, the result is `unknown`. A.20 does not rank or select the result. |
 | A.6.4 retargeting invariant | The proposition in q is the named internal constraint for the current use; q remains the C.2.1 bounded-use assertion about r. | Current case facts establish the proposition as stated, including its invariant, visible loss, named receiving use, conditions, and polarity. | A counterexample is `violated`; a missing deciding fact is `unknown` unless the constraint itself makes absence a failure. This A.20 result may enter the case basis for A.6.4's separate `satisfies`, `fails`, or `cannot decide` judgement; it is not that judgement, and the current facts remain separately named. r and any application remain separate. |
 
 The constraint's own pattern supplies its truth condition. A.20 supplies the application result form and summary only.
@@ -178,7 +178,7 @@ The local summary is `satisfied` because this is the complete required set for t
 
 #### A.20:5.2 - Violation and missing-witness variants
 
-If the same implementation returns 297.15 K for 25 °C, the formula constraint is `violated` and the returned values are the counterexample. If the implementation output cannot be recovered, the outcome is `unknown`, not `violated` and not `satisfied`. If the test was never run, its evaluation state is `notRun` and the summary is `unresolved`.
+If the implementation returns 297.15 K for 25 °C, that output violates the formula constraint. The exact output may be unavailable while an applicable bound still settles the question. An output in the interval [296, 297] K cannot equal 298.15 K, so that bound also establishes a violation. An interval [298, 299] K establishes non-negativity but leaves exact equality open. With that evidence the combined constraint has outcome `unknown`. If the evaluation was never performed, its state is `notRun`. A separately commissioned execution is still due.
 
 #### A.20:5.3 - Lossy retargeting
 
@@ -197,7 +197,7 @@ For an ordinary A.20 use, check only these five points:
 
 1. **Subject and constraint (`CC-A20-1`).** Name the subject and the constraint and edition being applied.
 2. **Case and applicability (`CC-A20-2`).** State the assumptions, case facts, scope, evaluation window, and why the constraint is `required`, `optional`, or `notApplicable`.
-3. **Evaluation and outcome (`CC-A20-2`).** Record `evaluated` or `notRun`. For an evaluated applicable constraint, record `satisfied`, `violated`, `unknown`, or `error` under the constraint's own outcome rule.
+3. **Evaluation and outcome (`CC-A20-2`).** Report `evaluated` or `notRun` for an established evaluation state. Keep a required check whose performance or result is unestablished visible as a missing ground. Give `satisfied`, `violated`, `unknown` or `error` for an evaluated applicable constraint according to its own outcome rule.
 4. **Support (`CC-A20-1`).** Give the witness, counterexample, missing-information reason, or error reason that supports that result.
 5. **Complete summary (`CC-A20-3`).** Use `ConstraintValiditySummary=satisfied` only when the complete declared required set is nonempty and every member was evaluated and satisfied.
 

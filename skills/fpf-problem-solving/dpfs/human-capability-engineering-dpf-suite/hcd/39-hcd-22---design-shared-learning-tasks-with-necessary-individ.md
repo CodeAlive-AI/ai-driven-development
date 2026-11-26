@@ -138,11 +138,11 @@ HCD.23 develops mutual explanation and the personal return; HCD.24 develops peer
 
 #### HCD.22:4.7 - Observe the relevant result and return the next need
 
-Select a personal return that exposes the target under appropriate conditions: a revised explanation, an individual decision on changed data, a physical performance, or a contribution in another integrated task. Use the performed work directly when it supplies the needed observation.
+For a claim about a participant’s contribution, use the joint work when it establishes what they did. If a further observation is needed, choose a task that exposes the missing action under the relevant conditions, such as a revised explanation or a decision on changed data.
 
 A correction with feedback, an uncued choice on a new case and delayed performance support different interpretations. Use HCD.11–HCD.13 for the corresponding human-evidence question. The quality of the common answer, participant activity and material contribution remain separately reportable.
 
-Locate a failure at the connection it affects. An unused annotation may indicate a transfer or task problem. A correct answer from one participant leaves the others’ work open. An unfamiliar term can point to preparation or material repair, and a late answer can reveal a supply problem. Use HCD.20 when changed size, access or burden affects the arrangement comparison, and HCD.28 for the affected dependencies of the whole product.
+Locate a failure at the connection it affects. An unused annotation may indicate a transfer or task problem. One participant can report work done by several. Credit another participant with an action when that answer and the way it was produced establish their contribution. Where another performer could have supplied it, the common result alone leaves that attribution open. An unfamiliar term can point to preparation or material repair, and a late answer can reveal a supply problem. Use HCD.20 when changed size, access or burden affects the arrangement comparison, and HCD.28 for the affected dependencies of the whole product.
 
 ### HCD.22:5 - Archetypal Grounding
 

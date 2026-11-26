@@ -99,7 +99,7 @@ Write enough of the completed argument for another prepared reader to recover th
 
 #### MATH.19:4.6 - Return the result to its use
 
-A completed proof supplies its conclusion under the stated assumptions. Use that result in the next mathematical construction, model argument or algorithmic design. When a changed premise invalidates a lemma, reopen its dependent steps and retain arguments that still apply. When the commission is to construct the argument, distinguish the lemmas or intermediate claims you selected from those given in the problem. A supplied proof can settle whether a theorem holds. Explaining why its particular premises suffice, or finding a proof under changed assumptions, calls for the corresponding inferences.
+A completed proof supplies its conclusion under the stated assumptions. Use that result in the next mathematical construction, model argument or algorithmic design. When a changed premise invalidates a lemma, reopen its dependent steps and retain arguments that still apply. When the work of constructing the proof is at issue, distinguish a lemma supplied in the problem, a step proposed by a collaborator or by proof search, and the inference the contributor selected, developed or checked. Use the evidence of that work to attribute the decisive step. A supplied proof can settle whether a theorem holds. Explaining why its particular premises suffice, or finding a proof under changed assumptions, calls for the corresponding inferences.
 
 An incomplete proof plan can still locate useful work: name the remaining lemma, its available premises, and the step it would close. These details can be passed to whoever continues the proof. If a counterexample defeats the claim, return it and the failed premise or implication.
 
@@ -175,7 +175,7 @@ The proof establishes equality of the two list results. A claim that one impleme
 
 ### MATH.19:6 - Bias-Annotation
 
-A short final proof can hide the search that found its auxiliary claim. When helping another reader construct a proof, expose the expression or missing premise that motivated the lemma, as in :5.2.
+A short final proof can hide the search that found its auxiliary claim. To explain how the proof was found, show which expression or missing premise suggested the lemma, as in :5.2. If the reader is learning to find that connection, let them compare what they have with what the next step needs. Supplying the lemma can still leave its proof or application to the reader.
 
 Successful instances can guide that search. The universal conclusion still needs an argument covering its admitted objects; the noncommuting maps in :5.2 show why one successful calculation could miss the decisive premise.
 

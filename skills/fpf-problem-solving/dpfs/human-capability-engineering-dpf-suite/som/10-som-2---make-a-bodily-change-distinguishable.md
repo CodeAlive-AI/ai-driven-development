@@ -5,7 +5,7 @@
 
 ### SOM.2:1 - Problem frame
 
-Use this Method when a bodily instruction is hard to act on because the performer cannot distinguish the location, direction or developing change it names. Report the difference the performer can notice again under suitable conditions, or the conditions under which they could not distinguish it. Identify what prevented recognition when the evidence supports that explanation. Assess control from evidence of regulation.
+Use this Method when a bodily instruction is hard to act on because the performer cannot distinguish the location, direction or developing change it names. If the assignment is to design the comparison, explain why the proposed variants could reveal the required distinction. If the assignment concerns what the performer can actually distinguish, report the observed result under its conditions. Identify what prevented recognition when the evidence supports that explanation. Assess control from evidence of regulation.
 
 Start with the distinction the movement requires. Use SOM.1 if its relevance is uncertain. If the performer already distinguishes the change, use that finding and address any regulation or combination the movement still needs. For practice, choose familiar comfortable conditions or obtain suitable instruction from a teacher before using unfamiliar loading.
 
@@ -24,6 +24,8 @@ Choose a contrast large enough for the performer to notice and suitable for the 
 For a new comparison, choose comfortable conditions that give the performer an opportunity to experience the relevant difference. The performer can make a familiar change themselves, or suitable support or an instructor can supply a change that the performer is being asked to recognize. Vary the support, intended direction or amount as needed to make that contrast accessible. Keep other conditions alike where possible and note any differences that could also explain the observation.
 
 A return to the first variant can help the performer notice a contrast again. Use an existing observation when it answers the question. For an assignment to recognize the change as it occurs, distinguish what the performer felt from what the announced order or the teacher's cue already told them. Vary the order or ask for the performer's judgement before identifying the change when that distinction affects the answer. Keep any support that belongs in the task.
+
+If the teaching task is to choose a useful comparison, give the performer the movement question and the familiar options available within the practice. Let them decide which conditions to compare and what difference they could notice. If the teacher chooses the contrast, the performer can still learn to distinguish or describe it. Look for evidence of the particular contribution the assignment leaves to them.
 
 In familiar writing, compare the usual pen hold with a slightly lighter hold while the forearm rests in its usual supported position. Return to the usual hold. Do not deliberately increase load to obtain a stronger sensation.
 
@@ -57,7 +59,7 @@ A performer may agree with the teacher’s description without recognizing the c
 
 ### SOM.2:7 - Conformance Checklist
 
-Identify the needed action, the variants compared and the conditions that made a comparison suitable. Report what the performer could distinguish, with what support, or what remained indistinguishable. State the evidence for its use in the receiving action if that is part of the question. Keep claims about regulation within the evidence of deliberate control.
+Identify the needed action and why the proposed variants could reveal the required difference. For an assessment of actual discernment, identify the variants used, the support available and what the performer could distinguish or found indistinguishable. To credit the design of the comparison, identify who chose the variants and why they answer the movement question. State the evidence for its use in the receiving action if that is part of the question. Keep claims about regulation within the evidence of deliberate control.
 
 ### SOM.2:8 - Common Anti-Patterns and How to Avoid Them
 

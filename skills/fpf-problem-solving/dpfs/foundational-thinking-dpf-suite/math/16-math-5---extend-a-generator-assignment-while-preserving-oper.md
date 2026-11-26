@@ -171,6 +171,8 @@ A few successful evaluations can hide an equation schema's range. The reusable e
 
 - For typed paths, do the object assignments, generator endpoints and identities determine the extension, and do imposed equations compare arrows with the same endpoints?
 
+If the question is whether an assignment extends to a map, one required equation whose evaluations disagree rules out the extension. Establish that the equation and assignment belong to the specified structures. For a claimed extension, check the following conditions.
+
 - Are the generators, constants and source operations specified?
 - Does each source operation have a defined target operation with the required inputs?
 - Do the evaluation clauses determine every finite expression?

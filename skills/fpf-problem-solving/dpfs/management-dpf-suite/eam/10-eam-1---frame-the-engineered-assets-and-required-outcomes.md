@@ -23,7 +23,7 @@ A narrow boundary makes comparison manageable, while a missing dependency can re
 
 ### EAM.1:4 - Solution
 
-Name the recipient and the requested result. Distinguish advice about options, a choice among them and authorization to act. For advice, identify what the recipient needs to decide; the practitioner can finish by giving a sufficient supported recommendation.
+Name the recipient and the requested result. Distinguish advice about options, a choice among them and authorization to act. For advice, identify the decision or other work the advice should support. A comparison can equip the recipient to advise someone else. A supported recommendation can complete the assignment.
 
 Identify the engineered asset, interacting asset System or portfolio. State the service it contributes to, the receiving population and the conditions that matter. Use actual unit and configuration identifiers where differences can change the answer. A portfolio is a management grouping; establish functional interaction separately when the comparison relies on it.
 

@@ -2,16 +2,16 @@
 
 > **Status:** Stable
 
-**Use this when.** A claim about a local system-role kind, Method or Service says that a System may decide or actuate without continuous human direction. Start by publishing the claimed autonomy and its limits in an `AutonomyBudgetDecl`, stating whether it is prospective, action-bound or enactment-bound. The rules below govern permission, override, actual Work accounting and publication.
+**Use this when.** A claim about a local system-role kind, Method or Service gives a System discretion to decide or act within a delegated remit. For a proposed remit, determine which kind of System may receive it, which choices it covers, its limits and who can independently override it. Publish the claim and its limits in an `AutonomyBudgetDecl` as prospective, action-bound or enactment-bound. To answer what an existing declaration allows, use its applicable edition. For permission to perform a particular action, identify the actual holders and test their assignments and authority under that declaration. The rules below govern permission, override, actual Work accounting and publication.
 
-Tools that only suggest actions fall outside this pattern when a human confirms each action at the point of execution.
+A tool can propose a time while a person or a separate authorized scheduling service decides whether to allocate it. In a design, allocate the budget to the kind of holder entrusted with the choice. In an application, establish which System holds that discretion. Preserve personal confirmation at every point where the governing terms require it.
 
 **Builds on:** A.2 / A.2.1 / A.2.5 / A.2.7 / A.15 / A.21; B.3; C.16; E.8; E.10; E.18; F.4; F.6; F.8; F.15; F.17.
 **Coordinates with:** A.13 (Agential Role) and A.17/A.18/A.19/C.16/A.10 for current agency characterization, measurement, and evidence; planned C.9 (Agency Characteristic Profile) only as future consolidation; C.24 (Agent-Tools-CAL) where applicable; G.4, G.5, G.8, G.9, and G.10 (method authoring, selection, and shipping).
 
 ### E.16:1 - Problem Frame
 
-A System that performs Work without continuous human direction must stay within declared safety, risk, resource, and remit limits and yield through the stated override path. The same need can be declared prospectively for a Method or Service before a performer or Work item exists. Without a uniform rule, an autonomy claim drifts into tacit norms, cannot be benchmarked or audited, and undermines selection (Part G) and publication (Part F).
+A System exercising delegated autonomy must stay within declared safety, risk, resource, and remit limits and yield through the stated override path. The same need can be declared prospectively for a Method or Service before a performer or Work item exists. Without a uniform rule, an autonomy claim drifts into tacit norms, cannot be benchmarked or audited, and undermines selection (Part G) and publication (Part F).
 
 ### E.16:2 - Problem
 
@@ -70,6 +70,8 @@ AutonomyBudgetDecl {
     separationOfDutiesRelationRef: U.RelationRef      // A.2.7 incompatibility relation
   }
   actionBinding?: {
+    // For each function, use the single holder/assignment pair below or a list of paired
+    // records, each with the required contribution and applicable window under the joint rule.
     workEntryClaimRef: U.EpistemeRef                  // prospective A.21 decision subject
     boundedProposedActionRef: governed action or WorkPlan/action locator
     proposedActionIdentityRuleRef: exact local rule, including rescheduling/continuation
@@ -80,6 +82,7 @@ AutonomyBudgetDecl {
     overrideAuthoritySystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment
   }
   enactmentBinding?: {
+    // Preserve the same paired-record form for the holders who actually performed the work.
     budgetConsumerHolderSystemRef: U.EntityRef constrained to U.System
     budgetConsumerSystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment
     budgetedWorkRef: U.EntityRef constrained to U.Work
@@ -91,7 +94,7 @@ AutonomyBudgetDecl {
 }
 ```
 
-An unscheduled `prospective` budget may omit actionBinding, enactmentBinding, nonexistent assignments and authority occurrences. Permission to start a scheduled action uses `action-bound` with its proposed action, work-entry claim, real holders/assignments and current independent authority.
+An unscheduled `prospective` budget may omit actionBinding, enactmentBinding, nonexistent assignments and authority occurrences. Permission to start a scheduled action uses `action-bound` with its proposed action, work-entry claim, actual allocations and current independent authority. The binding shows a single holder and assignment for each function. Where the policy requires several holders, record each holder, corresponding assignment, contribution and window together with the rule for their joint action. Where authority belongs to one body, identify that body at the scale of the authorized act. Apply the same interpretation to the enactment binding.
 
 Use A.2.7's separately declared prospective incompatibility species for that allocation check. `enactment-bound` adds Work only after A.15.1 admission, retaining the applicable action/permission match. A request, schedule or pass result creates no Work. If authority rotates or a permission-relevant action/window changes, recheck before relying on the permission.
 
@@ -104,8 +107,8 @@ When an autonomy-bearing method uses bounded specialization scouting, the budget
 A Method step requiring autonomy **MUST** name the required local kind and `requiresAutonomyBudget: AutonomyBudgetDecl.id`. Green-Gate decides permission for the A.21 prospective work-entry claim and bounded action. It resolves:
 
 * the action's artifact/subject, operation, target and intended window under its identity/continuation rule;
-* the real prospective performer System and obtaining A.2.1 assignment whose holder/kind match the declaration, with the required A.2.5 state and any separate classification judgment;
-* the actual authorizer/override-authority System and assignment, the applicable prospective incompatibility result, and the independent authority covering this action;
+* the prospective performer or performers at the scale the action requires, their obtaining A.2.1 assignments, matching kinds, required A.2.5 states and any separately needed classification judgement;
+* the authority for entry and the independent authority for each applicable override. A standing rule can permit a qualifying entry. Where a new assent is required, establish it from the authorized holder or combination of holders. Resolve the distinct assignments and every relevant prospective incompatibility under the governing terms;
 * applicable ClaimScope, qualification/accounting windows, remaining budget and every required guard.
 
 For an action drawing on a shared limit, establish what is still available to commit in that accounting window. Include consumption already recorded and outstanding permissions or other commitments that could draw on the same allowance together. Apply the policy's units and overlap rule. Enforceably exclusive alternatives may share a reservation. One performance that genuinely fulfils two obligations incurs its actual charge once.
@@ -125,7 +128,7 @@ Every Work item admitted under this budget **MUST** have an **AutonomyLedgerEntr
 AutonomyLedgerEntry {
   entryKind: budgetedWork | overrideWork
   workRef: U.EntityRef constrained to U.Work
-  performerSystemRef: U.EntityRef constrained to U.System
+  performerSystemRef: U.EntityRef constrained to U.System   // repeat the performer/assignment pair for joint Work
   performedUnderSystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment
   budgetId, version, time
   deltas: { action_tokensΔ?, decision_tokensΔ?, riskΔ?, resourceΔ? }
@@ -136,7 +139,7 @@ AutonomyLedgerEntry {
 }
 ```
 
-Existing budget and performance records may supply this declaration and ledger when they retain the required meanings, identities and references. A second accounting store is unnecessary in that case. The ledger is evidence about actual Work. When prior permission is relied on, cite its exact result and the policy-supported match from this performance to the previously bounded action; a shared request label is insufficient. The Work, its performer System, its A.2.1 assignment, and the `performedUnderAssignment` attribution remain separately recoverable.
+Existing budget and performance records may supply this declaration and ledger when they retain the required meanings, identities and references. A second accounting store is unnecessary in that case. The ledger is evidence about actual Work. When prior permission is relied on, cite its exact result and the policy-supported match from this performance to the previously bounded action; a shared request label is insufficient. For each claimed performance, retain its Work, the attributed System, its A.2.1 assignment and the `performedUnderAssignment` grounds. For one joint action, charge its actual resource use once under the applicable budget rule. Distinct contributions that consume additional resources retain their charges.
 
 When prior permission reserved an amount, match actual consumption to that reservation and account for any unused balance under the policy. A reservation can affect the next permission before any Work has taken place.
 
@@ -150,9 +153,11 @@ Every budget **MUST** reference an `overrideProtocolRef` that defines the availa
 * **NarrowAutonomy(budgetId, Δscope)** - apply stricter limits;
 * **Escalate(budgetId)** - hand over through the declared override-authority path.
 
-The declaration names the A.2.7 incompatibility species and its predicate. Before a proposed pause, resume, narrowing or escalation, identify that bounded override action, its real holder/assignment and independent authority. The target navigation Work may already exist; the proposed override is not yet override Work.
+Narrowing this authorization can change who may do part of a service while the commission for the service still stands. For a request about the budget, the new limit can complete the answer. If a recipient also needs the service, establish which authorized performer or arrangement can supply the rest, or take the unresolved commitment to the holder or joint body empowered to revise it.
 
-Apply the actual-Work species when its condition concerns the existing target Work, or the separately declared prospective species when the policy concerns allocation to the proposed override action. Resolve both actual assignments, holders, relevant subject identity, windows and applicability; reject a known prohibited joint allocation. Different labels or assignment IDs alone do not establish separation.
+The declaration names the A.2.7 incompatibility species and its predicate. Before a proposed pause, resume, narrowing or escalation, identify that bounded override action, its independent authority and every holder and assignment required to exercise it. The target navigation Work may already exist; the proposed override is not yet override Work.
+
+Apply the actual-Work species when its condition concerns the existing target Work, or the separately declared prospective species when the policy concerns allocation to the proposed override action. Resolve the actual assignments, holders, subject identity, windows and applicability for every pair the rule covers. Reject a prohibited allocation. Different labels or assignment IDs alone do not establish separation.
 
 Check authority for the proposed override independently. Once the override is performed and admitted under A.15.1, record its `overrideWork` ledger entry and policy-specified zero, negative or other budget delta. Match that performance to prior permission by the policy's action rule. The proposal and its pass result remain distinct from that performed SpeechAct Work.
 
@@ -161,7 +166,7 @@ When a budget depletes — no tokens remain, an envelope is exceeded, or a cap i
 
 * block ordinary autonomy-gated continuation in the same accounting window;
 * emit a **DepletionNotice** SpeechAct and either **Escalate** or **Park** as the policy says; and
-* resume ordinary continuation only after an admitted System performs **ResumeAutonomy** under its exact override-authority assignment, the A.2.7 predicate check over both actual assignments passes, the independent authority relation is current, and the ordinary guards pass.
+* resume ordinary continuation only after the authorized holder or required combination of holders performs **ResumeAutonomy** under the applicable assignments, every required A.2.7 separation check passes, the independent authority relation is current, and the ordinary guards pass.
 
 If the applicable policy permits an exception, recover the condition for that exception, the bounded action it permits, the current authority and every remaining guard. Apply S2 to that action and retain the policy’s accounting and recheck conditions.
 
@@ -221,10 +226,10 @@ The declaration's `decision_tokens=3/day` and `error-budget burn <= 2%/day` rema
 
 | ID            | Requirement |
 | ------------- | ----------- |
-| **E.16-CC-1** | Each autonomy claim cites a named/versioned budget with claim, consumer kind, situation, policy, scope/window, limits, override rule and exact A.2.7 species. Prospective budgets may omit actions/assignments; action-bound permission resolves the proposed action and real allocation/authority; enactment-bound adds independently admitted Work. |
-| **E.16-CC-2** | Green-Gate resolves the prospective action and its continuation, actual holders, assignments, required state, authority, scope, window, incompatibility and guards. For a shared limit, check the proposed commitment together with outstanding commitments that can draw on it under the policy. Recheck permission-relevant window changes. A new request identifier can still name the same action. |
-| **E.16-CC-3** | Work admitted under autonomy **MUST** have an `AutonomyLedgerEntry` identifying the Work, performer System, assignment, budget edition, actual deltas and guard check-application results. Reconcile any reservation with the charge for that Work so the same consumption is counted once. |
-| **E.16-CC-4** | A proposed override passes its applicable A.2.7 species and independent authority check before performance. An existing target Work is distinct from that proposal. Only a performed, A.15.1-admitted override is recorded as overrideWork with the applicable delta and policy-supported match to prior permission. |
+| **E.16-CC-1** | Each autonomy claim cites a named/versioned budget with claim, consumer kind, situation, policy, scope/window, limits, override rule and exact A.2.7 species. Prospective budgets may omit actions/assignments; action-bound permission establishes who can admit the action and who can exercise each independent override under the governing terms. It resolves every required holder and allocation; enactment-bound adds independently admitted Work. |
+| **E.16-CC-2** | Green-Gate resolves the prospective action and its continuation, actual holders, assignments, required state, entry and override authority, scope, window, all applicable separation checks and guards. For a shared limit, check the proposed commitment together with outstanding commitments that can draw on it under the policy. Recheck permission-relevant window changes. A new request identifier can still name the same action. |
+| **E.16-CC-3** | Work admitted under autonomy **MUST** have an `AutonomyLedgerEntry` identifying the Work, the actual performer and assignment or required contributions to joint Work, budget edition, actual deltas and guard check-application results. Reconcile any reservation with the charge for that Work so the same consumption is counted once. |
+| **E.16-CC-4** | A proposed override must meet its own authority rule, including any required joint exercise, and pass all applicable A.2.7 separation checks before performance. An existing target Work is distinct from that proposal. Only a performed, A.15.1-admitted override is recorded as overrideWork with the applicable delta and policy-supported match to prior permission. |
 | **E.16-CC-5** | Depletion **MUST** block ordinary autonomy-gated continuation until `ResumeAutonomy` passes the actual-assignment separation-of-duties check, independent authority check, and ordinary guards. A policy-permitted exception requires its exact bounded-action condition, current authority and remaining guards under S2; it does not resume other actions. |
 | **E.16-CC-6** | A UTS autonomy row carries the budget edition/state, guard policy, override protocol, scope/window, action/allocation refs when action-bound and actual Work refs when enactment-bound. |
 | **E.16-CC-7** | When bounded specialization scouting is in scope, scout budget, probe budget, and commit checkpoint **MUST** stay explicit, and a successful probe **SHALL NOT** count as automatic committed rollout. |
@@ -257,7 +262,7 @@ At comparable operational effort, the selected line wins only when an action-sen
 | --- | --- | --- | --- |
 | **Autonomy-by-label** | “Autonomous” is claimed but there is no `AutonomyBudgetDecl` or ledger | Autonomy becomes opaque; cannot be audited or compared | Require **E.16‑S1/S3**; reject publication without `AutonomyBudgetDeclRef` + version |
 | **Soft gates** | Budget/guards only warn; enactment proceeds anyway | Violates Safety and SoD; makes budgets non-enforceable | Enforce the applicable A.21 profile and stop any continuation that its result forbids (**E.16-S2**). |
-| **Self-override** | The actual consumer and override assignments are missing, or their holder, actual-Work or proposed-action identity under the selected species, and window facts match the prohibited joint-allocation case in the declared A.2.7 predicate. | A label pair or two different assignment IDs does not establish separation of duties. | Resolve both A.2.1 assignments, apply the declared incompatibility predicate, reject a prohibited pair, and check the independent authority relation (**E.16-S4**). |
+| **Self-override** | The actual consumer and override assignments are missing, or their holder, actual-Work or proposed-action identity under the selected species, and window facts match the prohibited joint-allocation case in the declared A.2.7 predicate. | A label pair or two different assignment IDs does not establish separation of duties. | Resolve the A.2.1 assignments for every relevant pair, apply the declared incompatibility predicate, reject a prohibited pair, and check the independent authority relation (**E.16-S4**). |
 | **Budget bypass via “scale”** | Scaling preference relaxes guards or ignores caps | Undermines declared limits; breaks comparability | In ScaleLensPolicy, **scaling must not weaken guards or SoD** (**E.16‑S7**) |
 | **Untyped quotas** | Tokens/caps are recorded without units, or units are mixed | Ledger becomes non-comparable; audits become meaningless | Type budgets and deltas via **MM‑CHR (C.16)**; keep unitful rates/quotas |
 | **Ledger-as-logging** | Logs exist but are not Work‑anchored (no workRef/budgetId/version or recoverable edition pins) | Evidence is non-portable; cannot support parity/refresh | Require `AutonomyLedgerEntry` attached to `U.Work` with workRef, budgetId, version, and the referenced declaration's edition pins |
@@ -271,7 +276,9 @@ At comparable operational effort, the selected line wins only when an action-sen
 
 ### E.16:9 - Mini conformance checklist (cross-E-F; author's quick use)
 
-1. **Declare the boundary:** name the autonomy claim, consumer local kind, working situation, policy, ClaimScope, window, budget, override-authority kind, and A.2.7 incompatibility relation.
+Use the steps for the result commissioned. A prospective declaration can be completed before the first action. Permission, accounting for Work performed and exercising an override each depend on their own grounds.
+
+1. **Declare or recover the boundary:** name the autonomy claim, consumer local kind, working situation, policy, ClaimScope, window, budget, override-authority kind, and A.2.7 incompatibility relation.
 2. **Identify the proposed action:** keep an unscheduled budget prospective; use action-bound for a scheduled action, its work-entry claim, real assignments/holders and independent authority. Apply the declared action identity and continuation rule.
 3. **Gate permission to start.** Check the bounded action against the prospective allocation, guards and budget still available after overlapping commitments. Recheck permission-relevant changes and state any condition that must still hold before use.
 4. **Record actual Work:** after independent A.15.1 admission, emit the Work-anchored ledger entry, attribution and actual delta; relate it to prior permission through the policy-supported action match.

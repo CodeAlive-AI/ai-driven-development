@@ -92,11 +92,11 @@ Include a contrasting case when it can defeat the explanation: someone who staye
 
 #### MKT.12:4.5 - Match the observation window to the experience question
 
-For a specific transaction, collect information close enough to recover the relevant event and send an actionable failure to the operating recipient. For a continuing relationship, observe use and changes over a period that can reveal the issue; a pleasant purchase does not settle later usefulness. For a new possibility, use a bounded exploration whose observations can change the proposed contribution. These are different choices of cadence and recipient, not obligatory successive phases.
+For a specific transaction, collect information close enough to recover the relevant event and return the supported finding to the commissioned recipient within its permitted use. For a continuing relationship, observe use and changes over a period that can reveal the issue; a pleasant purchase does not settle later usefulness. For a new possibility, use a bounded exploration whose observations can change the proposed contribution. These are different choices of cadence and recipient, not obligatory successive phases.
 
 Select the combination of observation, conversation and measures from what each can expose. A log may show that an action stopped without showing why. A conversation may explain a perceived difficulty without measuring its frequency. A rating records a response under particular wording and conditions. State what each contributes before joining them.
 
-Schedule inquiry around the decision and the participant's burden. Combine requests when their meanings remain clear; stop repetitive questioning when it no longer changes the answer. Give urgent operational failures their own response rather than making them wait for a periodic research report.
+Schedule inquiry around the decision and the participant's burden. Combine requests when their meanings remain clear; stop repetitive questioning when it no longer changes the answer. If the assignment or an existing duty calls for urgent operational notice, alert the authorized recipient in time and disclose what that action requires.
 
 #### MKT.12:4.6 - Obtain and interpret enough evidence
 
@@ -116,7 +116,7 @@ The answer can support proceeding, changing the offer, repairing supply, retaini
 
 #### MKT.12:5.1 - Positive onboarding scores, little subsequent use
 
-Consider a stipulated supplier of a file-transfer service. The team wants to choose between simplifying its purchase form and changing the service. A support record already shows that one customer cannot obtain an access approval. That case goes to the responsible access and service participants; another satisfaction survey cannot supply the approval.
+Consider a stipulated supplier of a file-transfer service. The team wants to choose between simplifying its purchase form and changing the service. A support record already shows that one customer cannot obtain an access approval. Under the service agreement the support team can take that case to the party responsible for approval. The research comparison can use the permitted account of the failure without identifying the customer.
 
 For the remaining question, the investigator follows permitted reporting attempts with an operator and reconstructs two contrasting buying episodes. Operators in both cases want less repeated entry. One purchaser can approve a short trial; the other needs a purchasing window and is reluctant to replace a familiar review process. The first observation concerns execution, the second set concerns acquisition and transition. They do not support one undifferentiated “easy to use” score.
 
@@ -140,7 +140,7 @@ The team can now compare supplying source validation with retaining the existing
 
 Easy-to-reach customers, recent complaints and vivid successful transitions can dominate the account. Look for a missing case that could reverse the decision or narrow the conclusion. A supplier can also prefer the question its existing dashboard can answer. Begin with the decision before deciding which available measure to use.
 
-An AI-generated synthesis can help find passages or propose contrasts. Keep its claims connected to obtainable source material and inspect meaning, disagreement and omitted cases. Fluency supplies no missing observation.
+An investigator, including a service working with authorized material, can select a contrast, compare accounts and draw an inference. Keep the claims connected to the sources and inspect meaning, disagreement and omitted cases. A buyer’s account can support what that buyer experienced. If you need to credit the investigation, establish who selected the contrast, drew the inference or independently checked it.
 
 ### MKT.12:7 - Conformance Checklist
 

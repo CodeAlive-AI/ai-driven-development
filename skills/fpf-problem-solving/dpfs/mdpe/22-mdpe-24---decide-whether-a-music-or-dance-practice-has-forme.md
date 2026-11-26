@@ -26,7 +26,7 @@ For the claim and period in question, the evidence can establish that
 - a required condition fails or remains undetermined. Report what this rules out or what information would distinguish the remaining possibilities.
 
 For teaching difficulty, a skill grade, a change of analytical scale or a step in a Method, use the corresponding learning,
-capability, architecture, part–whole or unfolding method. Ask about a new whole only if its actual organization matters.
+capability, architecture, part–whole or unfolding method. Examine an existing or proposed whole when its organization matters to the question.
 
 ### MDPE.24:1 - The Recurring Difficulty
 
@@ -47,7 +47,9 @@ Ask which whole carried or would carry the capability, responsibility or other p
 
 ### MDPE.24:2 - Solution
 
-Ask which whole the claim concerns and whether a prior whole has been identified for comparison. With an established prior whole, examine two explanations.
+Begin with the recipient's use. Identifying what organized a practice at a particular time and deciding how to organize it for the next season can lead to different choices of whole. For the historical question, identify the period and the relations that made the practice possible then. For a project, work back from what performers, teachers, organizers or audiences must be able to do. Compare the arrangements still open, including continued use of an existing organization where it can meet the need. Identify the people, commitments, repertoire or teaching relations each arrangement depends on and what would make the choice between them matter. A model can group different arrangements for a decision they all support. Preserve the distinction when it changes the choice or the reason for it.
+
+When the question is whether a different whole formed, identify the earlier whole and compare two explanations.
 
 - **Existing whole.** Changes in participants, capabilities, Methods, measurements, media, selection or architecture can account for the observed difference
   while the previously identified whole retains its identity.
@@ -74,7 +76,7 @@ If the same whole suffices for the work, measure, authority and boundary under c
 
 #### MDPE.24:2.2 - Identify the candidate and any prior whole
 
-Identify the candidate. For comparison with a prior whole, establish that whole’s identity through change, its parts and relevant participants.
+Choose a candidate boundary from the claim. Hold the local practice fixed and vary its connections with other performers or organizations. Then hold the result attributed to the whole fixed and vary how it was produced. Trace differences that change the recipient’s decision through the relevant parts and wholes. Keep any relation between them on which the conclusion depends. A participant, a performance, the Method that performances share and the knowledge that teachers maintain can enter that explanation through different relations. For comparison with a prior whole, establish that whole’s identity through change, its parts and relevant participants.
 If a transition matters and those grounds are disputed, compare the proposed identity rules and their consequences. A genre, scene, school or
 platform name can help locate it. Establish what the name denotes and what holds that entity together.
 
@@ -133,7 +135,7 @@ When a prior whole is identified, ask whether a change within it explains the fi
 - measurement or recognition became more discriminating;
 - an architecture view omitted an already existing relation.
 
-When one of these explanations supports the claim, retain the existing whole. If a change is
+A practicable change within the existing whole can answer whether it could continue. For a historical claim, establish which change occurred or show why all histories compatible with the evidence preserve the relevant identity. If both continuation and replacement fit, give any conclusion common to them and keep their difference open. If a change is
 needed and commissioned, address the relevant system, Method, capability, memory or other
 relation. The novelty or importance of a change alone says little about the identity of the whole.
 
@@ -258,6 +260,8 @@ Suppose the surviving records establish the three-unit organization and the cros
 they can establish that Series Operations existed by 12 June. Without evidence of how or when joint allocation began, its formation date and predecessor remain open.
 For a present funding or recurrence decision, establish whether the organization continued past the archived event and what it can deliver now.
 
+In the same setting, a commission to design reliable rescheduling for next season leaves the organization open. If each city has its own confirmed substitute, the producers might reschedule locally. If the same teacher can be promised to both cities, trace who can see and bind the available time before either promise is made. An agreement that assigns exclusive booking rights in advance can remove the double booking without a new joint office. Check which sessions each city may reschedule and which requests can occur together. For reliable rescheduling, the permitted requests must also have a timely, feasible arrangement under the agreed conditions, including any permitted postponement or shared session. If rights must be reassigned during the season, specify who can reassign them and how both producers will learn of the change in time. These choices can be assessed before the next edition. Use the earlier festival as evidence where its conditions carry over, and use records of next season's work for a later claim about what was actually implemented.
+
 
 #### MDPE.24:4.4 - A new genre label
 
@@ -272,10 +276,10 @@ dynamic property defeats none of them.
 
 | Check | Failure it prevents | Repair |
 | --- | --- | --- |
-| Consequence of the distinction | A new-level label goes unexplained. | Identify the historical or project claim that depends on the whole and any work, measure, funding, maintenance or responsibility that the finding affects. |
+| Consequence of the distinction | A named scene or a worked example supplies the project boundary in advance. | Derive the boundary from what the recipient will do. For a design, compare how allowed arrangements could sustain the required practice. For an account of an existing organization, establish which relations held in the period. The grounds for recommending a design may be sufficient before anyone implements it. |
 | Prior identity where the claim concerns a transition | Novelty obscures an existing subject, or a first recognition is dated as a formation. | With a grounded prior whole, test whether its identity rule accommodates the changes. For a first recognition, date the evidence of construction. Establish when the organization formed from evidence about its formation. |
 | Candidate identified under its kind | A label, diagram, archive or aggregate value is treated as establishing a whole. | Apply the six A.1 conditions to this candidate and the separate criterion for its admitted kind. |
-| Part–whole, scale, and coarse-graining stay distinct | A representation operation substitutes for world-side construction. | Identify the whole and the constituents relevant to the decision. For that subject, compare what a detailed and a coarser account each allow at the same question. Establish how the proposed whole was actually organized from evidence about its constituents and their relations. |
+| Part–whole, scale, and coarse-graining stay distinct | A representation operation substitutes for world-side construction. | Identify the whole and the constituents relevant to the decision. For that subject, compare what a detailed and a coarser account each allow at the same question. For a historical claim, establish which relations actually held. For a design, show which relations would have to hold, who could secure them and what they would enable. |
 | Music-and-Dance relations change the test | Generic emergence language hides the field problem. | Use suitable observations of repertoire, performance, teaching, embodied memory, recognition, selection, circulation or local production as the claim requires. |
 | Grounds for a claimed effect on local work | Influence is inferred from publicity or correlation alone. | Identify the relation and compare work under conditions that can distinguish its contribution from other changes. |
 | Continuity through the specified turnover | A single event or artifact is taken to establish a continuing organization. | Use its identity rule and evidence across the relevant turnover. State any remaining uncertainty about persistence and retain the other findings. |

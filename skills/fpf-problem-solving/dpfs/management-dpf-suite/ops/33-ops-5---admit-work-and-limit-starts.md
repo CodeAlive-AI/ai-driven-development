@@ -158,7 +158,7 @@ A model score, available agent, free context window, generated patch, or schedul
 | everything is “in progress” | Hidden starts erase residual demand and overload the operation. | Apply an explicit-start limit and give every item a disposition. |
 | availability implies capacity | A free slot, worker, rig, tool, or model is treated as a complete capability and access result. | Recover the exact performer, resource relation, capability, permission, and configuration. |
 | choose-first option set | An artificial score replaces mandatory conditions or direct rules. | Use the direct branch; compare only genuine admissible alternatives. |
-| admission by artifact | Ticket creation, assignment, plan, model output, or code generation becomes “Work started”. | Establish whether Work occurred from independent performance evidence; decide admission and permission before the prospective start. |
+| admission by artifact | Ticket creation, assignment, plan, model output, or code generation becomes “Work started”. | Identify the Work in question. The accepted registration can be the commissioned act. To say a later operation started, establish that start and apply any independent check the undertaking requires. For a prospective start, establish the applicable admission and permission. |
 | rejection without return | Demand silently disappears or repeatedly re-enters. | Keep the reason, residual identity, owner, and retry condition. |
 | local rule claims the system | One start limit becomes a universal WIP, queue, capacity, or constraint Method. | Bound the result and return wider policy questions. |
 

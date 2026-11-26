@@ -74,7 +74,7 @@ Recognition is cheap: a source or repository entry is worth inspecting when it m
 
    Use a broader `G.2` SoTA pack only when the use needs refreshable multi-source synthesis rather than a small question-relative source set.
 7. **Expose missing positions.** List absent alternatives, unknown editions, unsupported ancestry, missing evidence, unresolved family status, and contributions whose source meaning cannot yet be recovered. Say which next use each gap blocks or merely weakens.
-8. **Return the bounded repertoire.** Make the subjects, source contributions, relations, applicable conditions and any gaps available for the named use. Reuse an adequate existing account; publish a separate record when later receivers need one. Stop when the next decision can inspect the live alternatives and uncertainties without guessing their status.
+8. **Return the bounded repertoire.** Make the subjects, source contributions, relations, applicable conditions and any gaps available for the named use. Reuse an adequate existing account; publish a separate record when later receivers need one. For a choice among the named entries, their relevant differences and status may suffice. For a complete repertoire, recover its membership rule and establish that every eligible way is included at the granularity the recipient ordered. For an exclusion, establish that the item falls outside the membership rule. Grounds for preferring one eligible way to another support a recommendation and leave both in a complete list. A record of the ways found can serve a bounded review while completeness remains open.
 
 #### C.39.RP:4.2 - Record the Result
 
@@ -128,7 +128,7 @@ The two reconciliation records and the AI review record remain candidate account
 
 Proposed-whole account `C-EC-Release-v2` is recorded outside the repertoire membership table as an architecture subject. It cites contributions from the four Methods and three accounts, but that source relation establishes neither a whole Method nor `methodPartOf`.
 
-The repertoire stops with four missing positions: no established Method family covers the local grouping; no source establishes a Method-lineage relation among the four identified Methods; the same-Method or distinct-Method relation between the two reconciliation accounts is unresolved; and the AI account lacks transfer and effectiveness evidence.
+The cited sources leave four questions open. They establish neither an encompassing Method family for all four identified Methods nor a Method-lineage relation among them. The two reconciliation accounts could describe the same Method or different Methods. Transfer and effectiveness of the AI account also remain open.
 
 Those gaps do not prevent A.3.1.QM from qualifying individual subjects or C.32.MWA.PP from comparing named structures. The repertoire alone does not support family, ancestry, superiority or composite claims; a claim needed by the receiving use requires its basis.
 
@@ -152,7 +152,7 @@ Those gaps do not prevent A.3.1.QM from qualifying individual subjects or C.32.M
 - [ ] Every lineage claim names both subjects, the relation, and the supporting source without implying causation, superiority, or composition.
 - [ ] Publication/artifact edition and current project reliance are distinguishable. A new date alone neither defeats nor renews support; changed evidence, applicability and time boundaries govern the receiving use.
 - [ ] Missing alternatives, provenance, relations, editions, evidence, or source meanings remain visible.
-- [ ] The stop states what the repertoire supports and which claims remain unavailable.
+- [ ] The result supports the assigned use of the repertoire. A claim to list every eligible way has grounds for coverage.
 
 ### C.39.RP:8 - Common Anti-Patterns and How to Avoid Them
 

@@ -67,7 +67,7 @@ A generated draft can propose possibilities through NSTD.7. Examine their conseq
 
 #### NSTD.10:4.5 - Keep the sufficient result and reopen affected choices
 
-Finish with a usable scene or possibility, the premises it needs and any consequential open choice. NSTD.6 helps assess the presented narrative for its intended use. Claims about an actual audience require evidence of the relevant response under the conditions of reception.
+For an order to develop a possibility, return the scene or arrangement, the premises it needs and any consequential open choice. If the order asks whether the desired course of events is possible under fixed premises, a demonstrated incompatibility answers it. Explain which premise would have to change before proposing a different story when that proposal is wanted. NSTD.6 helps assess the presented narrative for its intended use. Claims about an actual audience require evidence of the relevant response under the conditions of reception.
 
 When a premise changes, follow the events and interpretations that depended on it. Earlier disclosure of a secret to a character can make their later ignorance untenable. Changing the desired experience from inevitability to uncertainty may allow the world events to stay as they are while the author changes disclosure to the reader. Revise what the change affects.
 
@@ -104,10 +104,10 @@ Planning from a goal suits stories whose important changes can be expressed as a
 ### NSTD.10:7 - Conformance Checklist
 
 - The question being explored and the premises that constrain it are recognizable.
-- The proposed scene or sequence develops the event, relationship or possibility needed for the intended effect.
+- When the author is asked to develop a scene or sequence, it develops the event, relationship or possibility needed for the intended effect.
 - Consequential prerequisites and effects are followed under the chosen world conditions.
 - The author's desired outcome remains distinguishable from participant knowledge, motives and choices.
-- The scene supports the intended interpretation or gives readers grounds to see which issue remains open.
+- For a commissioned scene, its events support the intended interpretation or let readers see which issue remains open. For a question about possibility alone, an admissible course of events can establish possibility. To rule out the ending, show why the fixed premises exclude it through every permitted course.
 - A changed premise reopens the dependent construction while sufficient unrelated content is retained.
 - For a real-world scenario, distinguish what is observed, what is assumed and which feasibility conclusions the grounds support. A promise of service across choices or to several people at once covers the combinations those people are entitled to require.
 

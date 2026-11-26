@@ -33,7 +33,7 @@ Recover the live choices and what each requires. Help the customer understand an
 
 Ask what is being decided now: whether to investigate, compare alternatives, obtain permission, try, contract, pay, start use or continue an existing arrangement. Recover the relevant participants, what each can decide and what information or contribution they need. A sequence recorded in a CRM is a proposed or reported account; check the actual case before acting on it.
 
-Use a concrete recent event to establish where the decision stands. “We are ready” can mean that a user likes the demonstration while purchasing has not seen the terms. Preserve the user's interest and find out what purchasing still needs to review and decide. Do not invent a stage for an unknown condition.
+Establish which decision is still open and what the buyer has already done. For a first purchase, the current terms and an available approval may settle what can happen next. To report that an order was placed, look for evidence of that transaction. “We are ready” can mean that a user likes the demonstration while purchasing has not seen the terms. Preserve the user's interest and find out what purchasing still needs to review and decide. Do not invent a stage for an unknown condition.
 
 Define the attainable alternatives, including continuing the current way, another supplier, a narrower contribution and no action now. Investigate the reason for uncertainty when it can change the next move. [MKT.12](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) supplies a choice-history inquiry when the reported obstacle is not yet understood.
 
@@ -57,7 +57,7 @@ These conditions can coexist. Resolve one without claiming that the others have 
 
 Put the live options on a comparable basis: the useful contribution, prerequisites, total relevant consideration, customer effort, timing, support and important exposure. Explain what changes if an option is declined or deferred. Do not count an unsupported future function as part of today's available alternative.
 
-Establish what the participants understand about the option in their own situation: what they expect to receive, what they must provide, what could fail and which choice they can make. In a conversation, ask them to explain it in their own words. Correct a consequential misunderstanding before relying on the decision. A customer can understand the offer and still prefer an alternative.
+Establish what the participants understand about the option in their own situation: what they expect to receive, what they must provide, what could fail and which choice they can make. An existing decision and its stated grounds may already show how they understood a condition. Invite them to explain it in their own words when a material interpretation is still uncertain or their response is part of the assignment. Correct a consequential misunderstanding before relying on the decision. A customer can understand the offer and still prefer an alternative.
 
 Use [ECO.3](../../eco/13-eco-3---discover-an-exchange-between-different-plans.md) to construct who gives what to whom, when and under which conditions. Use [ECO.5](../../eco/15-eco-5---choose-exchange-terms-for-private-information-and-ef.md) for a consequential choice among terms such as a limited trial, staged consideration or supported warranty when information and later effort differ. Obtain a competent legal or other specialist result when the relied-on condition requires it. Marketing coordination does not create that authority.
 
@@ -73,7 +73,7 @@ Choose the work from what is missing:
 
 | Situation | Useful move and its result |
 | --- | --- |
-| A useful need has been established but is absent from the comparison. | Derive a criterion from that need: what would distinguish an adequate result, under which conditions, and how could the customer judge it? Confirm the criterion with the affected parties or their authorized representatives. |
+| A useful need has been established but is absent from the comparison. | Derive a criterion from that need: what would distinguish an adequate result, under which conditions, and how could the customer judge it? Use an applicable criterion already agreed. Seek the affected parties’ judgement where the need or its meaning remains open. To adopt a new criterion, follow the decision and consultation arrangements for that choice. |
 | An important criterion is understood and an option meets it. | Make its warranted importance and that option's fit inspectable. Carry the same meaning and evidence into the later decision; repetition of a product claim is insufficient. |
 | A potentially consequential difference receives little attention. | Find out whether it was never considered or deliberately set aside. Examine the relevant consequence and evidence. Restore its importance only if that changes a justified comparison; retain the customer's reason for setting it aside when that reason still holds. |
 | An important criterion is not met by the present offering. | Establish whether a different comparison or provision can meet the receiving need. Use the alternatives below; retain another provider, deferral and refusal as possible answers. |

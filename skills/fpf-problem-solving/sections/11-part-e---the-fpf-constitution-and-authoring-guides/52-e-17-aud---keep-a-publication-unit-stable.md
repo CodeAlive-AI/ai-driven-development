@@ -43,14 +43,14 @@ Without a named publication-unit stability discipline:
 
 ### E.17.AUD:4 - Solution
 
-> Name what the unit is mainly about, the publication move it carries, the claim that remains outside, and one repair choice. Apply another pattern only when that choice requires it.
+> Recover the question the unit was meant to answer. Read what it actually asks the reader to understand or do. If the two questions differ, decide what the passage contributes to the original one (C.39.QR:4.1). Name its subject, the move it carries and any boundary that changes the reader’s use. A request confined to identifying what a passage says can end with that reading.
 
 A joint decision may require two subjects and the relation between them. Keep that connection readable. A note assessing agreement between the catalog and checkout must let the reader compare the responses the catalog can return with those checkout can handle. The connected claims can share one short passage or occupy marked sections that the reader can use together. For a scope notice, simply identifying the subjects and the question can suffice.
 
 #### E.17.AUD:4.0 - Plain working terms
 
 - `publication unit under review` = one note, memo, sheet, table, screen, or short section that readers inspect as one unit;
-- `primary subject` = what the unit is mainly about. `publicationUnitPrimaryEntityOfConcern` names the primary `EntityOfConcern` of the claim-bearing episteme or episteme-side view carried by the unit. When no such EntityOfConcern applies, use the non-claim-bearing kind named by value or an ordinary topic or subject without inventing an `EntityOfConcernRef`. An ordinary topic or subject value is not a claim about a C.2.1 entity participant;
+- `primary subject` = what the unit is mainly about. Use `publicationUnitPrimaryEntityOfConcern` only when the unit’s primary subject is also the exact `EntityOfConcern` of the claim-bearing episteme or episteme-side view it carries. A unit can use claims about several entities to explain a relation between them. For other subjects, use the non-claim-bearing kind named by value or an ordinary topic or subject without inventing an `EntityOfConcernRef`. An ordinary topic or subject value is not a claim about a C.2.1 entity participant;
 - `carried publication move` = the claim, interpretation, comparison, or explanation move the unit makes about that primary subject;
 - `outside boundary` = a decision, gate, `U.Work`, work planning, reliance claim, or continuing engineering work that remains outside the unit;
 - `local lexical head` = one word or phrase such as `review`, `interpretation`, `note`, or `text` whose meaning is unstable inside an otherwise stable unit;
@@ -116,7 +116,7 @@ When a wider repair needs these distinctions, use the seven questions to recover
 
 | Row | Ordinary prompt |
 | --- | --- |
-| 1 | Which publication unit is under review? |
+| 1 | Which publication unit is under review, and what question did its reader need it to answer? |
 | 2 | What is the unit mainly about? Which subjects must the reader consider together if their relation matters? |
 | 3 | What does the unit assert or ask the reader to do? If it carries linked moves, how do they contribute to the reader’s question? |
 | 4 | What downstream `U.Work`, work planning, decision, gate, or reliance claim remains outside this unit, and is that boundary mainly a neighboring pattern application, downstream claim or effect, or ongoing engineering-process continuation? |
@@ -131,7 +131,7 @@ When a wider repair needs these distinctions, use the seven questions to recover
 - If the publication unit is stable enough and its move is bounded comparison over available source publications, apply `E.17.ID.CR ComparativeReviewUnit`.
 - If the main problem is explanation classification over an existing face, apply the neighboring explanation pattern.
 - If claim content, representation, coarsening, or the primary EntityOfConcern changes, apply the relevant `A.6.3` or `A.6.4` pattern before checking a later publication form here.
-- If wording alone suggests approval, repair the unit to say what its source warrants. If an authorized decision exists, identify its issuer, scope and outcome. If the reader needs a decision that is still owed, put the choice and grounds before the responsible authority. Check which act the governing rule makes decisive. An authorized publication can constitute the decision itself or bring an earlier decision into effect. Establish the issuer, act and form required for the particular claim.
+- If wording alone suggests approval, repair the unit to say what its source warrants. If an authorized decision exists, identify its issuer, scope and outcome. When a required decision is outstanding, tell the intended recipient what remains open and who can decide it. Refer the choice and grounds through an authorized route when the commission or a standing duty requires referral. Check which act the governing rule makes decisive. An authorized publication can constitute the decision itself or bring an earlier decision into effect. Establish the issuer, act and form required for the particular claim.
 - If the active problem concerns publication form, bridge or hypothesis work, or another downstream action, apply its direct pattern and identify the project object or record the work needs.
 
 #### E.17.AUD:4.7 - Local naming rule
@@ -176,7 +176,7 @@ An onboarding explainer starts from one stable source-pinned note, but then the 
 
 #### E.17.AUD:5.5 - Downstream decision and reliance case
 
-A progress card headed “Ready to roll out” reports that the tests passed. If its job is to communicate progress, a heading that states which tests passed can finish the repair. To report a release decision already made, cite the authorized outcome, including rejection or deferral, and the scope it covers. If release approval is owed and still open, send the test results and the outstanding choice to the responsible authority. Suppose the owner approved release on Monday and the rule makes that approval effective when the signed notice is issued. Monday’s decision establishes adoption. Issuing the notice on Tuesday establishes when that decision took effect. Under a different rule the owner decides by issuing the signed notice. There, the authorized issuance itself constitutes adoption. Check the rule and the act it names for the conclusion the reader needs.
+A progress card headed “Ready to roll out” reports that the tests passed. If its job is to communicate progress, a heading that states which tests passed can finish the repair. To report a release decision already made, cite the authorized outcome, including rejection or deferral, and the scope it covers. If release approval is owed, the progress card can report whose decision is outstanding. When the existing duty includes seeking that decision, submit the test results by the route open to its issuer. Suppose the owner approved release on Monday and the rule makes that approval effective when the signed notice is issued. Monday’s decision establishes adoption. Issuing the notice on Tuesday establishes when that decision took effect. Under a different rule the owner decides by issuing the signed notice. There, the authorized issuance itself constitutes adoption. Check the rule and the act it names for the conclusion the reader needs.
 
 #### E.17.AUD:5.6 - Quick contrasting cases
 
@@ -187,7 +187,7 @@ Use this quick contrast set when the initial interpretation is unclear:
 | `LHR-only` | one overloaded local lexical head is doing most of the semantic work while the publication unit under review otherwise stays stable | apply `Local Head Restoration` |
 | `whole-unit interpretation shift` | the publication unit under review changes its primary subject or carried publication move without marking the change | apply `PublicationUnit Primary-Subject Discipline` |
 | `stable comparison -> CR` | the unit is already stable and the live problem situation is bounded comparison over pinned source publications | apply `E.17.ID.CR ComparativeReviewUnit` |
-| `downstream claim or effect overread` | readers take the progress card as approval, assignment or a go/no-go decision | clarify a communication-only card, cite the applicable decision already made, or put the outstanding choice before its authority. Check the issuer, act and governing rule if this publication itself constitutes adoption or brings an earlier decision into effect |
+| `downstream claim or effect overread` | readers take the progress card as approval, assignment or a go/no-go decision | clarify a communication-only card, cite the applicable decision already made, or identify the outstanding choice and its authority. Refer it when that further work is due. Check the issuer, act and governing rule if this publication itself constitutes adoption or brings an earlier decision into effect |
 | `modeling-lens hidden` | the unit only makes sense because of one unpublished model, formal substrate, or rationale | publish that substrate or rationale briefly or use a heavier publication form or neighboring pattern |
 
 ### E.17.AUD:6 - Common Anti-Patterns and How to Avoid Them
@@ -245,7 +245,7 @@ For a reader using the pattern, this matters in the Problem frame and slices 5.1
 1. **CC-AUD-1 — One publication unit under review is explicit.**
    The case names one note, memo, sheet, table, screen, or short section as the unit under review. Its presentation-form label alone does not identify that unit.
 2. **CC-AUD-2 - Primary subject and carried publication move are explicit enough to identify the applicable pattern.**
-   The case keeps visible the unit’s primary subject and the publication move it makes about that subject.
+   The case identifies what the unit does for the reader’s question. When a passage turns to a constituent, another model or a worked example, the connection back to that question remains recoverable. A local move can supply one premise, settle the whole question or leave a gap.
 3. **CC-AUD-3 — Outside-work boundary is explicit.**
    The case states what downstream `U.Work`, work planning, decision, gate, or reliance claim remains outside the publication unit under review, including neighboring pattern application, downstream claim or effect, or ongoing engineering-process continuation when that distinction matters.
 4. **CC-AUD-4 — The active repair choice is named.**

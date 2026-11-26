@@ -30,7 +30,7 @@ A threshold without its governing event law, surrounding state and admissible in
 
 ### DTM.4:4 - Solution
 
-**Specify the surrounding regime, test growth from rarity, find maintained regimes, then examine reachable change and return.**
+**State which continuation of the practice the recipient needs to assess, over what interval and under which conditions. Use the reasoning that distinguishes the live possibilities for that question.**
 
 #### DTM.4:4.1 - Preserve the law and the surrounding conditions
 
@@ -68,7 +68,7 @@ For an intended return, identify the route and means needed to realize it. Lower
 
 #### DTM.4:4.5 - Express the result as conditional continuations
 
-Give the conditions and their consequences together:
+Give the conditions and consequences that establish the requested result. Depending on the commission these can include
 
 - the surrounding regime in which a rare variant grows or declines;
 - the maintained regimes relevant to the question;
@@ -127,12 +127,12 @@ An attractive tipping-point narrative can encourage modelers to choose reinforce
 
 ### DTM.4:7 - Conformance Checklist
 
-- The practical question distinguishes establishment, persistence and return.
+- Which question about establishment, persistence or return is being asked, under which conditions and over what interval?
 - The resident state, feasible region and event law are identifiable.
 - A rare-variant result is conditional on a specified surrounding regime and a nonzero introduction.
 - Maintained regimes are distinguished from a trajectory's transient values; finite-introduction effects are examined where relevant.
-- The proposed action changes an initial condition, law, resource or variant set explicitly.
-- The result after action removal and any unavailable return contribution remain visible.
+- Where a change is proposed, the account identifies how it changes an initial condition, law, resource or variant set explicitly.
+- Where the commission extends beyond removal of an action, what can continue and what contribution would a return require?
 - A comparison threshold is not presented as proof of uptake, stability or authority.
 
 ### DTM.4:8 - Common Anti-Patterns and How to Avoid Them

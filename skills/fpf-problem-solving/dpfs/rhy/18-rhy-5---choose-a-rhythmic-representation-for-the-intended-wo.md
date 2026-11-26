@@ -135,7 +135,7 @@ A familiar convention can make its own distinctions feel inevitable. Judge it by
 | Infer an accent from every cycle-marking gesture. | Separate reference marking from the performance's accent instruction. |
 | Treat an onset-only syllable string as a complete duration and rest instruction. | Retain the needed beat reference, continuation and silence information in that form or an available companion. |
 | Use an unmarked cyclic shape to prescribe entry phase. | Supply the origin and direction required by the entry. |
-| Present a mnemonic without the performance knowledge it presupposes. | Supply the preparation the intended reader needs or identify what is missing for them. A narrower audience can be proposed to the person who sets the brief. |
+| Present a mnemonic without the performance knowledge it presupposes. | Supply the preparation the intended reader needs or identify what is missing for them. If the material serves a narrower audience, take the proposed change to whoever has authority to revise the brief. |
 
 ### RHY.5:9 - Consequences
 

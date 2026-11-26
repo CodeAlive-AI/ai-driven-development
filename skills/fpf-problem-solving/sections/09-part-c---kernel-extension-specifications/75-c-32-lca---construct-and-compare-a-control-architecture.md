@@ -190,7 +190,7 @@ For example, two otherwise parallel branches each require ten minutes from the s
 
 Retain a timing summary only when the receiving answer follows from what it keeps. Total free time can conceal incompatible windows; an average rate can conceal a late individual response. Derive the response time or useful bound from the retained dependencies, availability and occupation conditions. If two allowed arrangements share the proposed summary but give different answers, retain the distinguishing condition, derive a bound that covers both, or restrict the claim.
 
-Identify the end event the recipient relies on. Completion of an intervention and receipt of its confirmation may have different deadlines. If the receiving decision needs confirmation, include how the observer can establish completion and when the report reaches the person who must act. If only the physical completion has a deadline, later evidence can establish that the intervention met it.
+Identify the end event the recipient relies on. Completion of an intervention and receipt of its confirmation may have different deadlines. If the receiving decision needs confirmation, establish how completion is detected and when the signal or report reaches the controller, team or individual responsible for acting on it. Where a particular person must acknowledge it, establish that acknowledgement. If only the physical completion has a deadline, later evidence can establish that the intervention met it.
 
 Failure to find such a pair does not establish sufficiency. The timing-summary test specializes the information question in :4.3 to the time and capacity needed by the control decision. An average duration does not establish a worst-case deadline.
 
@@ -234,7 +234,7 @@ The output of this operation is a qualified component use or a named missing res
 
 #### C.32.LCA:4.10 - Compare the whole arrangements and the work of changing them
 
-Compare candidates under the same required outcome, disturbances, resources, observation conditions and relevant horizons. A faster local algorithm evaluated on an easier demand is not a faster realization of the original problem. A delegated decision evaluated without its coordination and training cost is not the same organizational proposal.
+Compare candidates for the same required outcome, external demand and disturbances over comparable horizons. Hold baseline resources and information conditions comparable. Where a candidate changes sensing, provision, authority or timing, include the work of obtaining that change and the conditions under which it can operate.
 
 Separate an unavailable candidate from a costly feasible one, and both from a candidate whose consequential premise remains unknown. Compare the coordinates that can change the decision: useful result, delay, constraint exposure, effort, computation, scarce capacity, participant burden, flexibility and recovery. A mathematical optimum remains relative to its model and objective; a project choice also has to respect its obligations.
 
@@ -254,7 +254,7 @@ Explain the result in the ordinary form needed by its users. It must make recove
 - the participants, decisions and available interventions;
 - the information, exchange and timing that connect them;
 - the jointly feasible conditions, continuation and exception response;
-- the alternative, accepted cost and basis of the present choice;
+- the alternative, accepted cost and grounds of the choice when a choice was requested and made;
 - the changed observation or condition that requires a different decision.
 
 These are content requirements, not a mandatory record or a demand to model every relationship in the enterprise.
@@ -300,7 +300,7 @@ The set of targets satisfying both conditions must be nonempty; it is nonempty h
 
 The error bound must describe the current state. A bound for a stale measurement cannot be reused without accounting for intervening motion. If the tracker also loses its state measurement, its response equation and the convexity argument need reconsideration. Replacing it with a learned policy likewise reopens the calculation: the old response equation no longer supplies its proof.
 
-This case shows the common method's contribution: recover the violated join, compare a governor with joint redesign, construct the admissible interface, calculate its consequence for the goal, and reopen the affected condition when observation or policy changes.
+This example derives the governor interface, proves the stated bound and identifies the conditions on which continued operation depends. A choice between the governor and joint redesign also needs the response, cost and changeover conditions of the redesigned arrangement.
 
 #### C.32.LCA:5.2 - Obtain a timely organizational decision
 
@@ -325,7 +325,7 @@ Compare three changes to the arrangement.
 
 A forecast of a likely change can allow reversible preparation before approval. Establish which materials or capacity may be reserved, what another job loses, and how the reservation is released if the forecast changes. Printing an unapproved final panel is a different action with different consequences.
 
-The installer checks the panel in place and reports completion or a problem to the coordinator. The table bounds physical installation. If the venue also needs confirmation by 16:00, include time for this check and report or establish that the approved release already covers them. A missing report leaves the installation status open. One person may perform several contributions when the demands still fit. Their number does not determine a management hierarchy.
+The installer checks the panel in place and reports completion or a problem to the coordinator. The table bounds physical installation. If the venue also needs confirmation by 16:00, include time for this check and report or establish that the approved release already covers them. If the report is missing, examine any other evidence of installation. Receipt of a confirmation is a separate result when the venue has commissioned it. One person may perform several contributions when the demands still fit. Their number does not determine a management hierarchy.
 
 The timing implication is mathematical under its premises. The premises about people, authority, resources and duration need organizational support and observation; they are not supplied by the equation. In actual use, distinguish a committed service bound, an empirical estimate and a planning assumption.
 

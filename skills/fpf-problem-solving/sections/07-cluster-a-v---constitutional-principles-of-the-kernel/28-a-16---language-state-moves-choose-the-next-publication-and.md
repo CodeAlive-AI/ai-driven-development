@@ -8,13 +8,13 @@
 
 **Start here when.** You have a cue or claim-bearing episteme and need to choose its next publication or use, including reopening or retiring it. For an early cue, preserve what is available without claiming that it already meets a downstream pattern's entry conditions.
 
-**First useful move.** Name the cue or current claim-bearing episteme and the intended next use. Then decide which identity case applies:
+**First useful move.** Identify the cue or claim-bearing episteme and the work for which someone may use it. When the next use is still to be chosen, ask which decision, explanation or further inquiry each available publication would support, and whether the recipient needs one use, several uses together or a choice among them. For each proposed move, establish which identity case applies.
 
 1. a precursor cue or witness is being preserved in its first typed publication;
 2. the same episteme edition is being issued in another publication form; or
 3. changed C.2.1 identity content requires a separately identified successor episteme.
 
-Choose one admissible move from §4.1 and make the content in §4.4 recoverable from its publication. Add a short move note when the existing material does not convey that content. Stop when the next use is supported; add history, Work, publication, rendering, or authority detail only when that use depends on it.
+Select the admissible move or combination of moves that serves the intended uses. Use §4.1 for the guard of each move and §4.4 for what the receiving publication must convey. Several recipients can need different forms of the same episteme. Where a later use depends on the outcome of an earlier move, establish that connection. Stop once the publication and its conditions support the commissioned use or identify the choice or condition that still prevents it.
 
 **Typical next patterns.** Use `A.16.1` for early preservation, `B.4.1` for route publication, `B.5.2.0` for cue-derived abductive prompting, precision repair in `A.6.P` or `C.16.Q`, wording recovery in `A.6.A` followed by the recovered subject rule, and `A.16.2` when the right move is reopen, backoff, respecify, or retire.
 
@@ -24,7 +24,7 @@ Choose one admissible move from §4.1 and make the content in §4.4 recoverable 
 
 The language-state `U.CharacteristicSpace` in `C.2.2a` makes positions explicit, but practitioners still need admissible moves for preserving, publishing, narrowing, reopening, or docking selected content to a later use. Those moves must not become a second formality-only climb, a generic one-pass process, or an invisible jump into a stronger pattern claim.
 
-The existing publication or a short local note can make the move recoverable. A fuller history is warranted only when lineage, branching, loss, supersession, or a history-dependent responsibility handoff changes what a later reader may conclude.
+The existing publication or a short local note can make the move recoverable. A fuller history is warranted only when lineage, branching, loss, supersession, or a question about who held responsibility across the moves changes what a later reader needs to establish.
 
 ### A.16:2 - Problem
 
@@ -107,7 +107,7 @@ Some `formalize` and `operationalize` moves only re-express available content. O
 
 Next-use docking and a Work crossing do not by themselves establish a change in authority, responsibility, permission, or commitment. If one of those relations changes, record it as a separate claim: the relation under its governing pattern; participants in that relation's own roles, including giving and receiving admitted systems when its predicate requires them; any `U.SystemRoleAssignment` occurrences through which they participate; its object or action, scope, and effective interval; and the assigning, instituting, revoking, or superseding act when its pattern requires one. A.2, A.2.1, and the applicable deontic or authority pattern establish and test that claim.
 
-Use `A.16.0` for such a handoff only when its legitimacy or interpretation depends on upstream move or lineage history. Otherwise the local account of the needed or performed action and the separately established relation are enough.
+Use `A.16.0` when deciding who retained or acquired responsibility depends on the sequence of earlier moves or editions. When local evidence settles the receiving question, use it directly.
 
 #### A.16:4.6 - Keep coordination claims separate
 
@@ -132,7 +132,7 @@ Local publication content is sufficient when the move or short chain is reconstr
 - derivation, supersession, fork, merge, or retirement structure;
 - a multi-move history whose compression would hide a change in the applicable pattern or rule;
 - loss notes or reopen conditions spanning more than one move; or
-- an actual responsibility handoff, Bridge entry, or viewpoint entry whose legitimacy or interpretation depends on upstream history.
+- a question about who held responsibility, or about the legitimacy or interpretation of a Bridge entry or viewpoint entry, whose answer depends on upstream history.
 
 A.16 defines move admissibility and A.16.0 packages the trajectory account. A graph representation alone does not establish a TransformationFlowStructure. Use E.18 only for an independently selected structure that meets its rules, and E.18.2 for a mathematical description of that structure. Publication faces and bounded audience availability remain under E.17 and E.24.PUB; use C.29 when mathematical-lens adequacy is the current question.
 
@@ -191,7 +191,7 @@ A.16 biases authors toward typed movement and away from “it naturally matured.
 Use this checklist for authoring and review:
 
 1. `A.16` does not redefine `F`, an endpoint test, Work, publication, or a graph-path calculus.
-2. The publication or accompanying note identifies one move from §4.1 and its facet or route guard; rhetorical relabeling is insufficient.
+2. For each move needed by the intended use, the publication or accompanying note identifies its §4.1 move and the facet or route condition that warrants it. If several moves serve one outcome, their relation and the conditions for using them together are recoverable.
 3. The identity case is explicit. A precursor needs no invented source episteme; a form-only case preserves all C.2.1 discriminators; changed content identifies a target episteme and records preserved, changed, and lost content.
 4. The source condition, typed target form, and object or claim that the downstream pattern defines, constrains, or tests are recoverable. The publication occurrence and MVPK face are added only when material and substitute for none of them.
 5. `projection` names a typed route-bounded form and its omissions; `respecify` does not hide an A.6.P, C.16.Q, or A.6.A precision repair.

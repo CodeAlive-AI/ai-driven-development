@@ -49,7 +49,7 @@ Reuse adequate constructor meanings and operation rules. If these remain unclear
 
 #### CMP.15:4.2 - Assign and provide the joining contribution
 
-A data-extension author supplies the new variant and the operations that the extension promises. An operation-extension author supplies that operation for the variants it promises. For a required intersection unknown to both, one contributor who understands both agreements supplies the missing body. This can be either author or the application's integrator. The application must have a way to obtain that body; merely naming a future contributor leaves the combination unsupported.
+A data-extension author supplies the new variant and the operations that the extension promises. An operation-extension author supplies that operation for the variants it promises. For a required intersection unknown to both authors, obtain a body whose behaviour satisfies both agreements. Either author or an integrator can supply it. Several contributors can also produce it together when the meanings of the variant and the operation reach the implementation and its check. Establish how the application obtains the body and why its behaviour follows from those meanings.
 
 The joining contribution contains an implementation and the grounds for using it: the accepted variant, operation meaning, required context, dependent operations and a case that distinguishes it from a plausible wrong implementation. Place it in a module that can depend on both additions without making either old module depend on its future users. The original contributions remain independently usable on their established cases.
 
@@ -136,7 +136,7 @@ Preserve the old meanings as well as the old files. For each established operati
 
 For a pure tree interpreter with exact keys, a useful preservation argument is available. Suppose the old keys still select the same bodies, the old expressions contain only old constructors, and primitives, environments and dependent operations retain their meaning. A leaf obtains the same result. At a compound old node, induction gives the same child results, and the unchanged body combines them in the same way. Every finite old expression therefore retains its result. This argument depends on those premises; unchanged source text alone does not prove them.
 
-Test a new form beneath an old constructor as a different obligation. It was not an old expression, so the preservation argument does not establish its new meaning. This case checks whether open recursion reaches the supplied intersection and whether the resulting composition obeys the new rules.
+If the input grammar admits a new form under an old constructor, establish what that combination means. Old-use preservation only covered expressions admitted before the extension. A trace of the new call or an argument about all reachable calls can show how recursion reaches the intended implementation. A flat family of forms may require only its admitted operation–form pairs.
 
 When effects, failures or concurrent replacement matter, use the observations and correspondence from CMP.12 and the interaction method in CMP.14. Preserving a returned number may leave an extra effect or a changed failure observable. Selected tests can expose such differences; a promise for an entire class of executions needs an argument at that scope.
 
@@ -394,13 +394,13 @@ The method also makes integration work visible. Contributors who each test only 
 ### CMP.15:7 - Conformance Checklist
 
 - The data variants, operation meanings and admitted receiving uses determine the required combinations, including nested forms and dependent operations.
-- Every required new intersection has an obtainable body or an explicit unsupported-use boundary; its supplier understands both sides.
+- For each required new intersection, the application can obtain a body with grounds covering the variant and the operation, or its available uses explicitly exclude that combination.
 - Generic derivation is justified by the operation's meaning, with binding, control or identity distinctions retained where material.
 - The composition defines selection, reports missing support and rejects or resolves conflicts without accidental loading-order semantics.
 - Recursive and dependent calls reach the implementation selected for the composition.
 - Unchanged sources, separate checking and compilation, early coverage and behavior preservation have distinct stated grounds.
 - A semantic counterexample can distinguish a present, uniquely selected but wrong body from a correct one.
-- Old-use preservation covers the promised observations and assumptions; a new form below an old constructor is exercised separately.
+- Old-use preservation covers the promised observations and assumptions. Where the new combinations admit nesting, its meaning and reachable calls are accounted for.
 - The full cost is compared with an adequate closed alternative, and a changed required pair or binding condition has a clear return.
 
 ### CMP.15:8 - Common Anti-Patterns and How to Avoid Them

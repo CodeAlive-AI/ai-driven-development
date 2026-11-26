@@ -75,7 +75,7 @@ Distinguish the contributions of assistance.
 
 When attribution matters, check what the material contains and what the response shows. A reader’s account can distinguish using the material from drawing on prior knowledge, although a familiar inference may go unnoticed. Seek that account when it would supply missing evidence. A causal claim requires grounds for the particular attribution.
 
-For a selected [FPF C.2.8](https://github.com/ailev/FPF/blob/f4bad21274b54b57071afb2210a8bdb9f61a1c95/FPF-Spec.md#c28---uextractablestructuralinformation) structural-recovery question, keep the correctly recovered relations and their attribution at these conditions. Familiar knowledge may enable decoding; correcting false or absent instruction from memory does not give the material credit for that correction. A response can correctly report what the material asserts without establishing that assertion's subject truth. Compare claims and forms separately when a revised material changes content. One response is a bounded recovery observation, not a maximum extractable amount or a learning result.
+For a selected [FPF C.2.8 structural-recovery question](../../../sections/09-part-c---kernel-extension-specifications/12-c-2-8---extractablestructuralinformation-structure-this-read.md#c2845---reading-results-estimates-and-robustness), keep the correctly recovered relations and their attribution at these conditions. Familiar knowledge may enable decoding; correcting false or absent instruction from memory does not give the material credit for that correction. A response can correctly report what the material asserts without establishing that assertion's subject truth. Compare changes to the claims and to their particular expression separately. One response is a bounded recovery observation, not a maximum extractable amount or a learning result.
 
 For a planned feedback episode, preserve the first response and provide the declared feedback. Record what help was given, when it was given relative to the response, and what followed. For a report on completed work, use the available evidence of those events. Distinguish an explanation that supplies the answer from a prompt to inspect an available criterion; both can be useful under their respective conditions.
 
@@ -102,7 +102,7 @@ Trace the material’s part in the outcome. Different explanations can warrant d
 | Observation | What to distinguish | Discriminating next move |
 | --- | --- | --- |
 | The reader cannot justify the next operation | Missing explanation, missing prerequisite, or a question the material never promised to answer | Inspect the promise and the preceding relation. Use existing evidence about help or try the least additional declared aid capable of distinguishing these explanations, when that inquiry is warranted. Preserve what the reader answered before it. |
-| A correct-looking example supports a wrong rule | A non-discriminating example versus a false or absent subject relation | Use a case on which the intended and rival rules produce different results; inspect both rules explicitly. |
+| A correct-looking example supports a wrong rule | What the observed result shows and which grounds would distinguish the rules | Recover the reader’s assigned judgement. Compare what the rules predict, permit or explain under its conditions. A direct argument, a discriminating case or evidence of how the result arose can distinguish their grounds. If both support the requested conclusion, say what the example already establishes. |
 | The key rejects a valid response | Criterion defect versus reader error | Check the domain criterion and preserve the response. If the key rejects a valid alternative, correct the key where a repair is requested. If the criterion is still disputed, state the limit. |
 | Separated concepts can be repeated but not combined | Missing relation, lost attachment, or unavailable prefix support | Inspect the two endpoints and the exact point of use; identify the missing relation or access and repair it where required. |
 | Success begins after the teacher names the decisive condition | Effective supported continuation versus independent recognition | Retain the helped result; use applicable evidence from an uncued response, or a fresh task or reader if warranted, for a claim about independent recognition. |
@@ -112,7 +112,7 @@ Trace the material’s part in the outcome. Different explanations can warrant d
 
 Interpret success or failure against the criterion, the material, prerequisites and available help. These can explain the same response in different ways.
 
-Apply the specification’s anchors to the material condition the evidence establishes. In a full evaluation, return each selected property with its value or the reason it is undetermined. A narrower diagnostic identifies the task and properties it covers. For adjacent values, check the meaning of the anchors and the reach of any repair. Report unresolved disagreement without averaging ordinal ranks.
+Apply the specification's evidence rule for each scale. In a full evaluation, return each selected property with its value or the reason it is undetermined. For a discrete ordered rating, use its anchors to distinguish neighbouring values, including the reach of a repair when that determines the rating. Report unresolved disagreement. A narrower diagnostic identifies the task and properties it covers.
 
 #### HCD.19:4.5 - Diagnose the smallest complete repair
 
@@ -130,7 +130,7 @@ If promised teaching support is unavailable, identify the missing service or con
 
 For a claim about a completed repair, check the changed relation at its task and point of use, using applicable existing evidence where it is sufficient. Reuse observations and values whose premises remain unchanged. Moving an explanation can reopen its former and new attachment and next-use prefix even when its words are identical.
 
-Use a meaningfully changed condition when the question concerns the reach of the repair. Choose a case with a different population, relevant condition, boundary or use so that a plausible overgeneralization would now fail. Preserve the same reader when studying supported continuation; choose a fresh task or reader when prior answer exposure would defeat the needed inference.
+When the reach of the repair matters, use a sufficient argument over the promised conditions or examine a relevant change. Determine whether the same answer remains justified, another answer is needed, or the claim exceeds its basis. The justification can change even if the action stays the same. Preserve the same reader when studying supported continuation. Choose a fresh task or reader when prior answer exposure would defeat the needed inference.
 
 A preparatory failed attempt may be retained when subsequent instruction examines and resolves the attempted alternatives. If that resolution is absent, labelling the difficulty “productive” supplies no evidence. Similarly, immediate ease is not the target when the task deliberately asks the learner to construct a new relation with adequate support.
 
@@ -224,7 +224,7 @@ Use these criteria for the requested evaluation.
 - **HCD19-CC3.** For a new test of independent recognition, the evaluator SHALL preserve the first response before supplying answer-bearing help. For existing work, establish what evidence of that response survives and which conclusion it supports. Where assistance affects the inference, distinguish what was promised, available, received and used.
 - **HCD19-CC4.** Assurance that the complete route works SHALL account for its consequential connections. A decision to withhold a use MAY rest on a demonstrated failure of a necessary condition across its allowed routes and help. A separately requested full evaluation SHALL retain its complete scope.
 - **HCD19-CC5.** The result SHALL distinguish the observed contribution, source-inspected material condition, prior knowledge, support, criterion defects, and missing evidence when they change the inference.
-- **HCD19-CC6.** A complete invocation SHALL return every selected coordinate with its value or lawful missingness, evidence, adjacent-value grounds, and limits. A bounded diagnostic SHALL declare its narrower scope.
+- **HCD19-CC6.** A complete invocation SHALL return every selected coordinate with its value or reason it cannot be determined, the evidence and grounds appropriate to the scale, and the limits of reliance. A bounded diagnostic SHALL declare its narrower scope.
 - **HCD19-CC7.** A repair return SHALL identify the defect, complete affected reach, proposed change, protected contributions, and discriminating next use for E.23.
 - **HCD19-CC8.** A repeated use SHALL preserve assistance and exposure conditions, reuse unaffected evidence, and distinguish supported continuation from stronger human performance, transfer, retention, or causal claims.
 

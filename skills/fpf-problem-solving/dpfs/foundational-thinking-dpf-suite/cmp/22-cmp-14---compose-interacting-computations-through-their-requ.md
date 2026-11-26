@@ -60,7 +60,7 @@ Construct the relation that must survive composition. For example, the shared co
 
 Establish that relation initially and inspect each allowed transition that can affect it. Local predicates must survive permitted environment steps. **Rely/guarantee reasoning** makes this explicit: a component assumes a stated interference relation from its environment and establishes a stated relation for its own steps. Its neighbors' possible steps must fit that assumption. Check the step-level conditions and their initial basis; mutually assuming that the other component eventually succeeds supplies no initial progress.
 
-For a finite construction, explore enabled interleavings until a failure or the relevant closed state set is obtained. CMP.4 supplies search and CMP.13 supplies a qualified abstraction when the state space is too large. A counterexample should retain enough state and ordering to reproduce the offending interaction.
+When finite exploration is the chosen proof or diagnostic method, follow enabled interleavings until the required counterexample or a closed set covering the permitted runs is obtained. An established invariant may already prove the safety property over that entire set. CMP.4 supplies search and CMP.13 supplies a qualified abstraction when the state space is too large. A counterexample should retain enough state and ordering to reproduce the offending interaction.
 
 When operations commute under the observations of interest, exploit that property: some orders can be combined or avoided in exploration. Include intermediate observations in the comparison. Equality of the final store is insufficient if a neighboring read distinguishes the swapped operations.
 
@@ -74,9 +74,9 @@ Construct a repair from the failed premise. Common choices have different costs:
 | Intermediate state is observed inconsistently | Serialize the affected operation, protect its critical region or publish an immutable result. | Waiting, ownership or retained copies replace the former interference. |
 | A repeated message repeats an effect | Identify the logical request and combine effect application with remembering its result. | Identifier lifetime and failure recovery must preserve the relation. |
 | Components wait in a resource cycle | Impose a shared acquisition order or another cycle-breaking protocol. | All participating acquisitions must follow the rule; starvation remains a separate question. |
-| The cost of the proposed coordination threatens the intended use | Determine whether a cheaper implementation can still supply the promised observation. If the observation itself must change, take the proposed change to the person entitled to revise the commission. | Establish what the receiving algorithm can conclude under the agreed result specification. |
+| The cost of the proposed coordination threatens the intended use | Determine whether a cheaper implementation can still supply the promised observation. If the observation itself must change, establish what the existing commission already permits. For a change outside those terms, obtain the decision of whoever holds that right, including a joint decision when required. | Establish what the receiving algorithm can conclude under the agreed result specification. |
 
-Execute the original failing trace against the repair, then inspect the transition family that caused it. This both explains the changed behavior and identifies what a more general argument must cover.
+For a repair, use the original failing trace to explain the changed behavior when that trace is available and informative. Justify the property over the interaction family the receiver needs. A new composition may admit a direct argument from its transition rules before any run has taken place.
 
 #### CMP.14:4.5 - Establish the progress actually promised
 

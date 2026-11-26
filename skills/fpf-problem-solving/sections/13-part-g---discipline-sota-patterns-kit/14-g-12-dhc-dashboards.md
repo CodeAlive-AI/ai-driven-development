@@ -7,7 +7,7 @@
 
 Use G.12 when a team needs several recorded C.21 coordinate results arranged across windows, a dashboard view over them, or refresh wiring for that view.
 
-Start from the C.21 results. State the discipline, intended use, ClaimScope, coordinate-result refs, and windows before choosing a layout. A local view is sufficient when there is no audience publication or refresh use.
+Start with the decision or explanation the view should support. Choose the discipline, population, part or combination at issue and the windows that matter to that use. Then select the C.21 results that can distinguish its possible answers. Use a local view when that supplies the whole requested result.
 
 Do not use G.12 for one ordinary field-health claim, to manufacture measurements from rows, to turn a dashboard into evidence or authority, or to require publication and telemetry for every C.21 use.
 
@@ -113,7 +113,7 @@ DashboardSlice := <
 
 **Stage A — Select what the view is about**
 
-1. **Select the coordinate results.** Use persisted C.21 coordinate-result refs for one already identified discipline.
+1. **Select results from the receiving question.** Establish whether the reader needs a trend in the whole discipline, a change within a particular practice, or a relation between the practices that make a joint outcome possible. A series for the whole and a breakdown for its parts can come from the same records and answer different questions. Hold the displayed values fixed and ask whether a different distribution, interaction or change of membership could change the answer. If so, seek the grounds that distinguish those possibilities. When a result or justified bound already answers the question, use it. Select the corresponding persisted C.21 coordinate-result refs for the identified discipline.
 2. **Fix use, scope, and windows.** Name IntendedUse and ClaimScope. Add a `TargetSliceRef` only when the computation or publication consumes it, and state its relation to the scope.
 3. **Check replay identity.** For every coordinate, resolve the C.21 `DHCReplayBasis`: Characteristic, Scale, Unit when current, `DHCMethodRef.edition`, the Method used, MethodDescription edition when used, model or calibration pins when used, time or population basis, and any active distance or definition-set edition.
 4. **Choose the comparison branch.** Directly comparable C.16 readings need no Bridge. When the comparison uses a relation between distinct local senses, cite the obtaining F.9 relation, observed loss, and a separate affirmative bounded-use claim naming direction, use rule, and loss tolerance, with the current supporting reliance required by F.9. Add reference-plane routing only when the use crosses reference planes; cite its exact basis, and assess any numerical assurance consequence under the applicable B.3 model for the named use.
@@ -224,7 +224,7 @@ An embedding, prediction, change-point, or drift panel needs its selected method
 
 | Check | Passing condition |
 | --- | --- |
-| `CC-G12-1` | Every displayed coordinate resolves one exact C.21/C.16 result episteme and the active C.21 replay basis. |
+| `CC-G12-1` | Every displayed coordinate resolves one exact C.21/C.16 result episteme and the active C.21 replay basis. A reader can establish which claim about the specified discipline, its parts or their interaction the view supports, and which decision the reported values leave open. |
 | `CC-G12-2` | ClaimScope is authoritative; TargetSlice is optional, consumed explicitly, and related to that scope. |
 | `CC-G12-3` | Direct same-semantics comparison uses C.16 conditions without a Bridge; a comparison using a relation between distinct local senses cites the obtaining F.9 relation, observed loss, and a separate affirmative bounded-use claim with its direction, use rule, loss tolerance, and the current supporting reliance required by F.9. |
 | `CC-G12-4` | Characteristic, Scale, Unit, Method, MethodDescription, model, calibration, Work, result, result episteme, series episteme, row, slice, publication, form, and carrier are not collapsed. |
@@ -238,7 +238,7 @@ An embedding, prediction, change-point, or drift panel needs its selected method
 
 ### G.12:7 — Bias-Annotation
 
-G.12 counters screen-first, “latest”-by-default, scalar-winner, and publication-as-truth bias. An uncluttered view can hide incompatible definitions, while a dense technical record can make a simple trend unreadable. Start from exact result claims, show the smallest useful view, and give readers a way to reach replay and refresh details without crowding the view.
+G.12 counters screen-first, “latest”-by-default, scalar-winner, and publication-as-truth bias. An uncluttered view can hide incompatible definitions, while a dense technical record can make a simple trend unreadable. Use the intended judgement to select the relevant exact result claims, show the smallest sufficient view, and give readers a way to reach replay and refresh details without crowding the view.
 
 ### G.12:8 — Consequences
 
@@ -256,7 +256,7 @@ G.12 counters screen-first, “latest”-by-default, scalar-winner, and publicat
 
 ### G.12:10 — Author's Quick Checklist
 
-1. Name the discipline, intended use, ClaimScope, exact coordinate-result refs, and windows.
+1. Recover the judgement the reader needs to make. Choose the discipline, parts or interaction, ClaimScope, windows and exact coordinate results in relation to it.
 2. Resolve the C.21 replay basis for every coordinate.
 3. Add TargetSlice only when consumed and state its relation to ClaimScope.
 4. Use the direct comparison branch unless use across distinct local senses requires F.9.
@@ -265,7 +265,7 @@ G.12 counters screen-first, “latest”-by-default, scalar-winner, and publicat
 
 ### G.12:11 — Worked Micro-examples
 
-**Decision-making dashboard.** A local view shows exact `ReproducibilityRate`, `FormalRecognitionStatus`, `PracticeAdoptionRate`, `AlignmentDensity`, `TraditionShareEntropy`, and `TraditionShareConcentration` result refs. A row showing 60% adoption among respondents gives the number who replied, the number eligible and the period. The portfolio owner asks whether at least half of all eligible units adopted the practice. Show the C.21 result for that population. If every admissible count reaches the threshold, it is met. If every count falls short, it is missed. Two admissible counts on opposite sides leave the answer open. If only an outer bound crosses the threshold, report the limit of that calculation. A tighter calculation with the existing observations may settle the question. The owner decides what to do. Entropy and HHI occupy separate rows with their directions visible. A portfolio panel preserves the G.5 selected set. No audience publication is claimed.
+**Decision-making dashboard.** A local view shows exact `ReproducibilityRate`, `FormalRecognitionStatus`, `PracticeAdoptionRate`, `AlignmentDensity`, `TraditionShareEntropy`, and `TraditionShareConcentration` result refs. A row showing 60% adoption among respondents gives the number who replied, the number eligible and the period. The portfolio owner asks whether at least half of all eligible units adopted the practice. Use an established C.21 result for that population. When deriving the verdict from incomplete counts, first establish that at least one assignment of statuses fits the population and the evidence used. If the records are jointly inconsistent, report that conflict. If feasibility is unresolved, say what the records still establish. For a nonempty set of admissible counts, if every count reaches the threshold, it is met. If every count falls short, it is missed. Two admissible counts on opposite sides leave the answer open. If only an outer bound crosses the threshold, report the limit of that calculation. A tighter calculation with the existing observations may settle the question. The owner decides what to do. Entropy and HHI occupy separate rows with their directions visible. A portfolio panel preserves the G.5 selected set. No audience publication is claimed.
 
 **Evolutionary architecture dashboard.** A `DHCSeries` episteme orders exact reproducibility and DisruptionBalance results over declared windows. An optional open-ended panel shows transfer events as telemetry. A later E.24.PUB occurrence makes the selected series edition available to a named audience in dashboard form; that occurrence neither changes the series content nor turns the rendering Work into the health result.
 

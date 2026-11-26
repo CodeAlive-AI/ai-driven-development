@@ -5,9 +5,9 @@
 
 ### E.1:1 - Problem frame
 
-Use this charter when proposing an FPF rule or artifact and deciding whether it serves the framework's purpose. Name the reader's task, show which core invariant the rule supports, and state a measurable stakeholder benefit or justify its omission. Use §4's short route and §5.2's worked decision. When the claim also proposes a material realization or physical intervention, apply the separate feasibility branch in §5.1.
+Use this charter when proposing an FPF rule or artifact and deciding whether it serves the framework's purpose. Identify the work the proposal would affect, show which core invariant the rule supports, and state a measurable stakeholder benefit or justify its omission. Use §4's short route and §5.2's worked decision. When the claim also proposes a material realization or physical intervention, apply the separate feasibility branch in §5.1.
 
-FPF aims to give engineers, researchers and learners a reusable scaffold for carrying ideas through comparison, decision and implementation. A shared vocabulary is useful only where it helps a named use; the charter does not by itself demonstrate improvement over a domain's existing practice.
+Engineers, researchers and learners can use FPF to compare claims, reach a decision or implement a change. An organization may use the same grounds to answer a question or act as a whole. A shared vocabulary is useful only where it helps a named use; the charter does not by itself demonstrate improvement over a domain's existing practice.
 
 ### E.1:2 - Problem
 When a claim crosses domains without its meaning, basis or conditions, the receiver can repeat work or rely on an inapplicable result. A proposed common rule can repair that problem, but can also add learning and maintenance cost. Decide from the affected use rather than assuming that a shared framework is always superior.
@@ -24,7 +24,7 @@ When a claim crosses domains without its meaning, basis or conditions, the recei
 
 **Mission Statement**
 
-> *Enable motivated people and AI agents to transform a raw idea into a reproducible, auditable change in the physical world through incremental, falsifiable cycles.*
+> *Enable people, technical systems including AI agents, and organizations, working on their own or together, to turn an idea into a well-grounded answer or a decision within their authority. Where the aim is to change the physical world, enable them to produce a reproducible, auditable change through incremental, falsifiable cycles.*
 
 **Vision Statement**
 
@@ -49,7 +49,7 @@ FPF expresses these shared grounds and reusable contributions through:
 
 For a proposed rule or artifact, take one affected use through these steps:
 
-1. State the intended user, decision or action, and the failure the proposal addresses.
+1. Identify whose work the proposal would change, the decision or action at issue, and the failure it addresses. If the intended benefit is a capability, say who could then do what, with which support.
 2. For a normative rule, name at least one core invariant and explain the rule's contribution in that use. A copied invariant label is insufficient; if the contribution is unresolved, retain the proposal and return the missing argument or case before treating it as charter-conformant.
 3. State the artifact's intended measurable benefit, its comparison basis and how it could be checked, or the reason a benefit statement is inapplicable. Distinguish an aim or supported prediction from an observed result. Withdraw an unsupported outcome claim or obtain the evidence needed by that claim; do not substitute conformance for benefit.
 4. Apply only the additional feasibility and lexical conditions that the claim activates. State any remaining gap and the next useful action. A changed benefit basis or invariant argument reopens the affected claim, not unrelated conclusions.
@@ -61,7 +61,7 @@ For a proposed rule or artifact, take one affected use through these steps:
 | **CC‑Vision.1** | A claim proposing practical material realization or a physical intervention **MUST** name the action, relevant resources, conditions and constraints, and a feasibility basis sufficient for the intended decision. | Keeps practical proposals materially grounded at the point where realization is claimed. |
 | **CC‑Vision.2** | Every normative rule **MUST** demonstrably support at least one core invariant (*Evolvability, Cross‑Scale Coherence, Didactic Transparency*).       | Keeps the Canon lean and purpose‑driven.        |
 | **CC‑Vision.3** | Abstract Core definitions **MUST** exclude incidental implementation dependence under E.5.1. Exact syntax **MAY** remain when necessary to state the conformance condition of the named publication form, protocol or grammar, with its edition/use boundary. | Preserves portable concepts and usable rules about concrete forms. |
-| **CC‑Vision.4** | A conformant artefact **MUST** state a measurable benefit for at least one of the three roles (*Engineer, Researcher, Learner*) or justify omission. | Aligns success with stakeholder trajectories.   |
+| **CC‑Vision.4** | A conformant artefact **MUST** state an intended measurable benefit for an affected participant or group, or justify omission. Identify the beneficiary in the work at issue, such as an engineer, a research service or a group of learners. A claim about capability identifies whose capability would change. | Aligns success with stakeholder trajectories.   |
 
 Mathematical constructions retain their validity and composition conditions. Material feasibility becomes an additional question when a claim proposes realizing a construction materially or intervening in a physical system. A missing manufacturing method, resource or constraint basis leaves that proposed action unresolved; a physical expression of a mathematical object establishes no realization of its elements.
 
@@ -83,11 +83,11 @@ R1 supports **Didactic Transparency** by making the reason for reuse or reopenin
 | Same task: decide whether the result may be reused | Label-only rule | R1 |
 | --- | --- | --- |
 | The label and all four relevant conditions match. | Reuse. | Reuse after the comparison. |
-| The label matches, but a relied-on source now concerns a different population. | Reuse, including an inapplicable result. | Reopen the affected applicability question before reuse. |
+| The label matches. The claim concerns night-shift access, but the only supporting observation now covers day-shift staff and the service they used closes before the night shift begins. | Reuse the claim about night-shift access. | Reopen night-shift access before relying on the claim. |
 
 There is one invalid reuse under the label-only rule and none under R1 in these two cases. This supports the stated failure-prevention argument; it is not an observation of reader behavior or proof that review is faster. The added comparison has a cost. If a receiver claims “R1 makes all reviews 20% faster” without observations, remove that outcome claim and retain the bounded aim, or select a task-matched inquiry before making it. If the proposed rule merely requires a new label and says “supports Evolvability,” return the missing continuity or change-handling contribution; the label alone does not satisfy CC-Vision.2.
 
-R1 can guide the stipulated reuse decision. Admission to FPF requires the charter argument; a team adopting R1 uses its own decision authority. New evidence about the source population reopens applicability. A claim about actual reading cost or invalid reuse decisions can be investigated through E.12. A proposal whose contribution to a core invariant is still unclear needs that argument before admission.
+R1 can guide the stipulated reuse decision. Admission to FPF requires the charter argument; a team adopting R1 uses its own decision authority. A change of population reopens applicability when the grounds relied on do not already cover the target. A claim about actual reading cost or invalid reuse decisions can be investigated through E.12. A proposal whose contribution to a core invariant is still unclear needs that argument before admission.
 
 ### E.1:6 - Consequences
 

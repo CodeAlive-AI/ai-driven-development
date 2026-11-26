@@ -76,7 +76,7 @@ The framework belongs to the [Management DPF Suite](../_index.md). To cite it, g
 
 These are selected examples of using the language. Bring the question from your work. If no example fits, search the Table of Contents by the difficulty, action or result and open the corresponding pattern.
 
-You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.” Supply the facts and applicable rules needed for your question; the agent must preserve uncertainty where those inputs do not settle the answer.
+When involving a collaborator, commission the contribution your governance question requires. An assistant able to obtain and interpret the applicable rule and resolution can recover the recorded decision, work out whether the voting threshold was met or explain what remains unresolved. Acting on behalf of the corporation requires the authority for that act.
 
 ### CGOV-DELEGATION - Can this director sign the proposed commitment?
 

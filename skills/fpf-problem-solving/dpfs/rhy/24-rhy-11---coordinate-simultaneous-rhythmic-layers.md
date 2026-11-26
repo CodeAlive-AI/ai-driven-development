@@ -52,7 +52,7 @@ A rhythmic layer is a course of events or movement with a role in the passage. A
 
 Follow the arrangement back to what each participant has to supply. If a backing track may give the pulse, the player can complete the assigned accent by following it. If the same player must maintain the pulse through a silent span and add the accent, the performing method requires both operations of that player. In a recording of the passage the pulse and accent could sound identical under either arrangement. Use the agreed parts to establish the duty; to establish who actually supplied the pulse, use the take, a reliable account or conditions under which only that player could have supplied it.
 
-If a performer can recall the figure and produce its parts but loses their intended relationship when combining them, locate the particular joint demand before prescribing more repetitions. Use RHY.12 when developing that capability is the task.
+If the parts work separately, identify what combining them requires of the player, the device or their coordination. A player who remembers the figure but loses its pulse can practise the joint action with RHY.12. For a controller or actuator, check the signal, timing and recovery it needs. Where the relation fails between contributors, a different cue or allocation may make the whole passage playable.
 
 #### RHY.11:4.4 - Establish the joint relation and restore complexity selectively
 
@@ -78,7 +78,7 @@ When accents can be chosen independently of the pulse, distinguish the recurring
 
 Distinguish executing assigned accent positions from selecting them for the phrase. A player given beat 1.75 may still choose the preparation and stroke. If the player must also decide where to place the accent, give the musical aim and constraints, leave the position open, and see which placement the player chooses and can realize while the support continues. For a recorded choice, recover what the player knew before it and what someone else had already decided.
 
-Both actions share the timing needed by the passage. Their preparation, articulation and correction can still be controlled so that an unintended change in one does not displace the other. A performer may organize a familiar combination as one movement or control its contributions more separately. The description leaves the internal timing mechanism open. Use RHY.12 if the joint coordination needs development.
+Both actions share the timing needed by the passage. Their preparation, articulation and correction can still be controlled so that an unintended change in one does not displace the other. A performer may organize a familiar combination as one movement or control its contributions more separately. The description leaves the internal timing mechanism open. A musician learning to vary the accent while sustaining the pulse can use the practice in RHY.12:4.2.1.
 
 Consider this construction for another instrument or activity when it has a continuing temporal contribution, a separately variable articulation, means to produce both and feedback that distinguishes their errors. Singing a phrase against a beat gesture is one example. An engineered machine may meet similar timing requirements with its own controller and actuators. Reusing a construction requires compatible conditions. Transferring an acquired human skill or qualifying an engineered implementation needs evidence for that claim.
 
@@ -193,6 +193,6 @@ Use an adequate learned combined pattern directly when the passage is fixed. Dev
 
 ### RHY.11:12 - Relations
 
-Use RHY.2 and RHY.5 for description and representation of the layers, and RHY.3 for carrying an articulation within a continuing action. RHY.9 addresses allocation and cue access. RHY.10 addresses reference and adjustment. C.32.MWA distinguishes structures that one performance can instantiate. For human performers, use RHY.12 to develop a needed capability and RHY.13 to examine transfer or dependence on support. RHY.14 addresses observations of performance and response for the intended use.
+Use RHY.2 and RHY.5 for description and representation of the layers, and RHY.3 for carrying an articulation within a continuing action. RHY.9 addresses allocation and cue access. RHY.10 addresses reference and adjustment. C.32.MWA distinguishes structures that one performance can instantiate. Use RHY.12 for practice by a human performer. RHY.13 examines transfer or dependence on support for the performer or performing arrangement in question. RHY.14 addresses observations of performance and response for the intended use.
 
 ### RHY.11:End

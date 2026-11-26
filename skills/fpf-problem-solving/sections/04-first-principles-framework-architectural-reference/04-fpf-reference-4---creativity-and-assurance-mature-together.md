@@ -10,7 +10,7 @@ FPF also treats assurance as more than a final audit. Evidence, assurance, sourc
 
 These contributions do not define a compulsory project sequence. In practice:
 
-- generate enough candidate explanations or designs before converging;
+- use the supplied explanations or designs when they cover the requested comparison. Develop alternatives when the commission calls for them or an uncovered possibility matters to the choice.
 - keep novelty, use value, constraint fit, and comparison characteristics visible;
 - explain promising candidates so their claims and conditions can be evaluated for the intended reliance;
 - when the receiving use needs the result made available, publish selected options, Pareto-like fronts, or portfolios while preserving remaining uncertainty;

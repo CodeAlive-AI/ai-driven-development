@@ -5,9 +5,9 @@
 
 ### SYSE.48:1 - Problem frame
 
-**Use this when** repeated work or a missing operation may justify a reusable tool or procedural aid. Evidence from earlier attempts and the available operations can suggest a candidate. Establish whether a later person or technical agent can already obtain a suitable aid and use it reliably.
+**Use this when** repeated work or a missing operation may justify a reusable tool or procedural aid. Evidence from earlier attempts and the available operations can suggest a candidate. Establish whether the intended performer can already obtain a suitable aid and use it reliably.
 
-The subject is the reusable operation or aid and its usable edition: a supported implementation or procedure, varying inputs, applicability, result, failure behavior and discovery. A worksheet supports human execution; a program performs its implemented operation. The result can be a qualified aid available to the receiving task, a decision to retain direct work, or an account of what still prevents construction or qualification.
+The subject is the reusable operation or aid and its usable edition: a supported implementation or procedure, varying inputs, applicability, result, failure behavior and discovery. A paper worksheet can guide a person through an operation. A machine-readable table can supply the same distinctions to a service. In each case, identify which actions the aid performs and which the recipient must perform. The result can be a qualified aid available to the receiving task, a decision to retain direct work, or an account of what still prevents construction or qualification.
 
 Keep direct work when it already suffices or costs less overall. Do not package an incident's accidental sequence simply because it succeeded once. A code file, a description of a skill and demonstrated ability to perform the task are different results.
 
@@ -33,7 +33,7 @@ Compare construction, discovery, selection, execution, repair and maintenance wi
 
 Parameterize values that legitimately vary: subject identity, measurements, units, source edition or applicable regime. Validate them against the actual operation rather than guessing from the example trace. Preserve state preconditions and uncertainty about prior effects.
 
-Compose supported primitives, design the physical layout or packaged instructions, or generate a software candidate and inspect it. Check dependencies, hidden constants, access needs and failure paths. For a packaged procedure or worksheet, supply the varying positions, required human operations, available means and observable completion in a usable form. A software operator can supply the missing operation while the model that invokes it stays fixed.
+Compose supported primitives, design the physical layout or packaged instructions, or generate a software candidate and inspect it. Check dependencies, hidden constants, access needs and failure paths. For a packaged procedure or worksheet, make the variable inputs, steps and completion conditions available in a form the assigned performer can use. Establish which means that performer will need to carry out the steps. A software operator can supply the missing operation while the model that invokes it stays fixed.
 
 State accepted inputs, effects or supported actions, outputs, error returns and compatibility. Use SYSE.26/SYSE.27 for the software operator's supported interaction and recovery. Reject missing or unsupported inputs with a useful return. For an effectful operation, preserve attempt identity and recovery; do not turn a lost reply into an automatic replay.
 

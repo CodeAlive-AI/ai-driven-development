@@ -2,7 +2,7 @@
 
 The required preparation follows the selected operation. A finite path or set construction may need elementary sets and functions. Deriving a recording law uses probability; varying a curve uses calculus. A reader interpreting the result may need less technical preparation than the contributor constructing its proof, but must still understand the conditions and the consequence used next.
 
-When dividing the work, state the contribution needed: a physical premise, a mathematical construction, an obtaining procedure, an interpretation or a changed working arrangement. Ask the contributor to return its inputs, conditions, useful result and consequential limits. That makes the division inspectable whether one person, several specialists or assisting AI agents provide the contributions.
+When dividing the work, state the contribution needed: a physical premise, a mathematical construction, an obtaining procedure, an interpretation or a changed working arrangement. Make each result and its consequential conditions available to the work that uses it. If the question concerns who first distinguished two requirements, constructed the method, checked it or adopted it, follow those actions through the available evidence. A sound existing argument may settle the mathematical question directly.
 
 For example, a cart investigation can divide observation and physical-account work, construction of a state model, calculation, and a controller change. A discrepancy can return to any of them.
 

@@ -18,6 +18,8 @@
 
 An adequate present answer or action need not enter abduction to generate another research task. Use C.11 for a live choice among feasible actions and C.28 when a causal-support claim is needed. Abduction contributes candidate explanatory content; it is not the complete evidence synthesis or action decision.
 
+Start from what the recipient needs explained and who is to choose the question. When the commission is to check a supplied explanation, first derive what it implies for that case and use any adequate evidence already available. When it is to find an explanation, the supplied candidate is one possibility to examine. An invitation to discover questions can give the investigator the further choice of what to pursue.
+
 ### B.5.2:2 - Problem
 
 Abductive work can fail in several ways:
@@ -59,6 +61,8 @@ Abduction develops candidate explanations, models or conjectures for a declared 
 | **2. Generate candidate hypotheses** | Develop candidates that could explain the prompt and look for serious rivals. | The candidates considered, including any limit from not identifying a serious rival. |
 | **3. Apply plausibility filters** | Compare candidates against explicit plausibility criteria. | A short rationale stating why each considered candidate remains live, is deferred or is rejected, and what comparison those grounds support. |
 | **4. Return the supported result** | Select a conjecture when the comparison warrants it; otherwise return the applicable outcome in §14.2. | A hypothesis-bearing `U.Episteme` with its prompt, selection rationale, any live rivals, supports, fragilities and allowed use when a conjecture is selected; otherwise the justified abort, defer or split outcome. |
+
+To construct a candidate, work back from the unexplained contrast. What relation could produce both the observed outcome under one condition and the comparison outcome under the other? Hold the proposed factor fixed and look for another way to obtain the contrast. It might arise from an interaction among components, from how the observation was made, or from an assumption in the account. In a theoretical inquiry, trace apparently incompatible results to their assumptions and vary one that could change what each result says. Keep a candidate when you can show what would follow from it for the prompt.
 
 The loop is iterable. A selected prime hypothesis may later be replaced, narrowed, or reopened if deduction, probe work, or evidence reveals a better rival.
 
@@ -224,7 +228,7 @@ Not every abductive run should end in a prime hypothesis. Three non-selection ou
 
 1. **Abort.** The prompt dissolves because the initiating anomaly or opportunity was misread, duplicated, or already answered elsewhere.
 2. **Defer.** The available candidates or grounds do not support a qualified conjecture or a warranted preference. Preserve any supported candidates and the unresolved explanatory or comparison question. A separately warranted present action may proceed under C.11.
-3. **Split.** When distinct questions require separate explanatory comparisons, distinguish those questions and their entry grounds. Continue the needed questions under their prompt-entry conditions.
+3. **Split.** When distinct questions require separate explanatory comparisons, distinguish those questions and their entry grounds. If the original question concerns how the contributions act together, identify what evidence or reasoning can connect their answers. Keep that question open until the connection warrants an answer.
 
 
 #### B.5.2:14.3 - Reopening and rival reinstatement
@@ -241,7 +245,7 @@ A conforming reopening note should identify:
 
 #### B.5.2:14.4 - Scope discipline during iteration
 
-Abductive drift often comes from silent scope expansion. A conjecture first framed for one target slice becomes a universal explanation. `B.5.2` therefore expects scope discipline to remain explicit during iteration. If a candidate requires a broader or narrower scope than the prompt originally declared, state that change before using the candidate at the new scope.
+Compare the scope of the candidate with the explanatory question. To use an explanation of one occurrence for a recurring phenomenon, identify what makes the account apply across the occurrences that matter. One decisive case can already refute an explanation claimed for every occurrence. A new question about a different setting can be pursued under a commission to explore. For a fixed assignment, give the supported answer to the question asked and identify any change of assignment that needs agreement.
 
 ### B.5.2:15 - Worked Examples
 
@@ -249,17 +253,13 @@ Abductive drift often comes from silent scope expansion. A conjecture first fram
 
 A service team notices recurring latency spikes during one operating window. The prompt species is `AnomalyStatement`: *why does latency spike in the evening batch window despite unchanged nominal load?*
 
-The candidate set includes:
+Follow one slow request from arrival to completion. A stable count of arrivals can coexist with a growing downstream queue. A separate evening job could reduce the rate at which requests are served. A scheduled backup on the same storage path could also make a request wait. With other traffic held fixed, a cache invalidation regression could generate extra reads per arrival. Each mechanism can lengthen the wait, and several can act in the same window. A trace showing where this request waited may settle its own delay. To explain the recurring spike, establish how the observed requests contribute to the latency statistic and why the proposed relation holds over the relevant windows.
 
-- queue saturation in one downstream dependency,
-- a time-window interaction with backup traffic,
-- and a recent mechanism regression in cache invalidation.
-
-The evening timing and a plausible mechanism keep the backup-interaction conjecture in consideration. A downstream queue that also fills during the evening could fit the same observations. To prefer one explanation now, show how an observation already available, a constraint already known or another justified difference favours it under the comparison criterion. If the available grounds leave them tied, retain both. A prospective test can still be worth doing. Isolating backup traffic and comparing latency against prior windows is a possible discriminator. When that probe is obtainable and its expected contribution justifies its cost and delay, it can be selected as separate work. The conjecture records no observation from that unperformed probe.
+The evening timing and a plausible mechanism keep the backup-interaction conjecture in consideration. The longer queue can fit each proposed mechanism. To prefer one explanation, identify what that mechanism or combination predicts beyond the shared delay and compare those consequences with available observations or constraints. Keep explanations that the available grounds leave tied. A prospective test can still be worth doing. Isolating backup traffic and comparing latency against prior windows is a possible discriminator. When that probe is obtainable and its expected contribution justifies its cost and delay, it can be selected as separate work. The conjecture records no observation from that unperformed probe.
 
 Now keep the same observations and rival set but make the probe window unavailable. The qualified conjecture and its uncertainty remain; if the available comparison cannot select a winner, defer that selection. No new test, waiver or study proposal is needed to finish the present abductive result.
 
-In both variants, suppose an existing operational qualification independently supports a bounded diversion to a spare instance for this traffic and interval, with sufficient capacity and permission, across all three remaining causes. C.11 can support that service response on the available basis. Diverting traffic does not identify the cause; a causal claim about the mechanism needs the appropriate C.28 support. If that operational basis is absent, do not infer a justified diversion from conjecture plausibility.
+In both variants, suppose an existing operational qualification independently supports a bounded diversion to a spare instance for this traffic and interval, with sufficient capacity and permission, across the causal possibilities still open for this decision. C.11 can support that service response on the available basis. Diverting traffic does not identify the cause; a causal claim about the mechanism needs the appropriate C.28 support. If that operational basis is absent, do not infer a justified diversion from conjecture plausibility.
 
 #### B.5.2:15.2 - Opportunity-driven materials inquiry
 
@@ -299,7 +299,7 @@ Hypothesis reviewers should not ask only whether the chosen hypothesis looks pla
 - whether serious alternative explanations were considered and the candidate set and limits of comparison remain recoverable,
 - whether the stated criteria and their grounds support the asserted preference, including any unresolved trade-offs,
 - whether the selected hypothesis has an interpretable implication, deduction or possible discriminating contrast, with the availability and value of any check judged separately,
-- and whether any scope inflation occurred during selection.
+- and how the comparison answers the original explanatory question, including the grounds for using a result obtained on a narrower set of cases.
 
 
 #### B.5.2:16.3 - For integrators and assurance leads

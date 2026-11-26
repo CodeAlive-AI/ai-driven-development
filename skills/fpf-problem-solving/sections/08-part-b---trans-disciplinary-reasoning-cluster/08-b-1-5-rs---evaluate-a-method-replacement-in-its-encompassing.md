@@ -77,7 +77,7 @@ This is a directed conclusion. Replacing A by B in one use does not show that A 
 
 #### B.1.5.RS:4.5 - Adopt or retain alternatives
 
-If you are commissioned to recommend or choose an alternative, compare the compatible options at the supported scope, including adaptation, learning, operation and maintenance costs. Separate variants can be worthwhile when their different strengths justify their cost. The person with authority over adoption decides whether and when to introduce the chosen replacement.
+If you are commissioned to recommend or choose an alternative, compare the compatible options at the supported scope, including adaptation, learning, operation and maintenance costs. Separate variants can be worthwhile when their different strengths justify their cost. Return a commissioned recommendation to its intended recipient. For adoption, establish who may decide and whether an existing authorization already covers the replacement. A service acting under that authorization can introduce the change when its conditions hold.
 
 For an ongoing operation, use its ordinary rules for introducing change and retaining continuity. State the condition that would require reconsideration: changed inputs, another receiving whole, a tighter timing limit, lost support or a newly relevant result property.
 

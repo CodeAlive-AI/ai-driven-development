@@ -82,7 +82,7 @@ A published grammar makes formal conventions easy to inspect. In a workplace, pe
 
 ### E.5.2.L:8 - Common Anti-Patterns and How to Avoid Them
 
-Routing a job because the printed code matches can send it to the wrong equipment. Resolve the designation under the applicable assignment. Treating a more formal wording as a stricter rule can also change a decision without warrant. Apply B.5.MR:4.2 to the rules as models of the same inquiry. Establish that the revision has a feasible answer, preserves the earlier conditions for every answer it permits and excludes a formerly possible answer.
+Routing a job because the printed code matches can send it to the wrong equipment. Resolve the designation under the applicable assignment. Treating a more formal wording as a stricter rule can also change a decision without warrant. Apply B.5.MR:4.2 to the rules as models of the same inquiry. Show that at least one performance satisfies the revised rule, that every performance it permits meets the earlier requirements under the same interpretation, and that a formerly possible answer to the question is now excluded.
 
 ### E.5.2.L:9 - Consequences
 

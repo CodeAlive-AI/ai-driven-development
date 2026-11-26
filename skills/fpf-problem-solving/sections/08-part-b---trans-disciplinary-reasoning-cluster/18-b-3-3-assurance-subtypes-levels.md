@@ -4,7 +4,7 @@
 
 ### B.3.3:1 - Problem Frame
 
-**Use this when.** A team must decide whether the available support is enough for a claim and receiving use, or what a published assurance level permits a recipient to conclude. Start with that claim, use, relevant conditions, and the warrant the conclusion needs.
+**Use this when.** A team needs to assess a claim for a receiving use, interpret a published assurance level or design criteria for recurring decisions. Start with what the recipient needs to decide, the applicable conditions and the choices left to the assessor. A published profile may have settled some of those choices.
 
 A performance test, a proof and a terminology comparison answer different questions. Treating their presence as a maturity recipe can approve a poorly supported performance claim while demanding an irrelevant proof from a well-supported empirical result.
 
@@ -20,7 +20,7 @@ The tension is between comparable reporting and unlike assurance questions. Repe
 
 ### B.3.3:3 - Solution
 
-Use B.3 to identify the target claim and receiving assurance use. Determine which uncertainty or possible failure matters to that use, then examine the support that bears on it. State the supported or narrowed conclusion and the limitations that change reliance. A result need not carry an `AssuranceLevel`.
+Use B.3 to identify the target claim and receiving use. Ask what could make the proposed conclusion fail. Follow that possibility to the correspondence, inference or observation that can resolve it. A single applicable argument can settle the use. For a decision requiring several contributions, check that their subjects, conditions and conclusions fit together. A result can be given without an `AssuranceLevel`.
 
 #### B.3.3:3.1 - Assurance subtypes answer different questions
 
@@ -38,9 +38,11 @@ Terms such as `FV`, `EV` or `CL` can be used only with the bearer, scale and int
 
 A domain may define an assurance profile or ordered levels when a recurring receiving decision benefits from that comparison. Its definition states the claim class and use, conditions, meaning of any levels used, evidence rules, the basis for any thresholds, and reconsideration conditions. State the measure and its scale where a threshold is used.
 
-Where levels are ordered, establish that ordering from their meanings; the numerals in `L0–L2` supply no ordering of trust across unlike uses.
+To design such a profile, take the actions its recipients must distinguish and work back to what would justify each. Hold the apparent level fixed and change the subject, the part tested or the conditions of operation. Would the same level now warrant a different action? Retain the difference in the criteria or limit their applicability. Select the grounds for meeting each criterion, including alternative sufficient arguments where the decision permits them. Ask which cases the proposed rule could accept despite a missing condition and which sufficiently supported cases it would exclude. A general argument can settle either question. Adjust the rule to the intended use or retain an exclusion required by that use.
 
-Publish `AssuranceLevel` only with the applicable profile and a result showing why the target meets its criteria. The legacy names `Unsubstantiated`, `Substantiated` and `Axiomatic` do not supply default criteria. In particular, an axiomatic or constructive justification concerns a consequence or construction, not a universally higher assurance state than empirical support. A conjecture's origin in abduction likewise does not assign it `L0`.
+Where levels are ordered, establish the ordering their meanings promise. If one level is said to support every use allowed by another, establish that implication across the applicable conditions. A narrower operating range with better accuracy need not contain a wider range with looser accuracy. State what each qualifies when the uses differ.
+
+To assign or endorse an assurance level on its merits, apply the profile and show how the evidence meets its criteria. To report the level an authority actually assigned, identify the decision, the designation or profile it used and its scope. An error in applying the criteria can change what the assignment warrants while the historical fact of assignment remains established. The legacy names `Unsubstantiated`, `Substantiated` and `Axiomatic` do not supply default criteria. In particular, an axiomatic or constructive justification concerns a consequence or construction, not a universally higher assurance state than empirical support. A conjecture's origin in abduction likewise does not assign it `L0`.
 
 Examine whether a demanded threshold or evidence requirement protects the relevant quantity well enough to justify its cost, delay and displaced work. Keep that judgement distinct from the conditions binding the action. A recommendation to amend a requirement does not change it or confer amendment authority.
 
@@ -48,7 +50,7 @@ For a one-off receiving use, stop with the sufficient qualified assurance result
 
 #### B.3.3:3.3 - Preserve scope and inspect the grounding
 
-Keep a design-time `MethodDescription` claim separate from a claim about performed `Work` or its `Trace`. Cite evidence with the appropriate conditions and scope. Evidence for a parent claim covers a child claim only through an argument establishing that coverage; a declaration of inheritance is insufficient.
+A claim about a design-time `MethodDescription` and one about performed `Work` or its `Trace` have different subjects. For an inference across composition scales, identify the relation the receiving claim uses. A condition established for every operating mode applies to a specified mode within that range. A rate for the whole constrains its parts to the extent their sizes and overlap permit. If passing and failing exhaust the outcomes on this criterion and at most two of 100 distinct readings failed, at least eight of any ten of those readings passed. Conversely, two groups of ten can each report nine passes yet share the same nine passing readings and have different failures. Their combined set then has nine passes among eleven readings. Establish the coverage and common conditions needed for the conclusion in the chosen direction.
 
 State structural claims as readable Working-Model relations. When a publication choice or current requirement elects B.3.5's CT2R-LOG profile, follow its relation-specific grounding: structural parthood uses the applicable C.13 `sum` or `slice` construction trace; collection belonging uses the collection's `set` trace. These elected branches declare `validationMode=axiomatic`. Other permitted relation claims retain their applicable logical or empirical support. A level label alone does not elect this profile.
 
@@ -62,15 +64,17 @@ Now replace that basis with a newly passed boot test and a glossary mapping. The
 
 If the recipient instead needs a mathematical invariant, inspect the proof under its assumptions. If the application introduces a protective function or a different operating range, reopen the affected assurance question under its threshold and evidence rules. The earlier limited result remains an account of what it supported.
 
+To design a profile for later converter assignments, recover what each recipient uses the measurement to decide. An offset that stays the same in two readings cancels in their difference. The same offset can decide whether an absolute limit has been crossed. Develop criteria for the quantity being accepted and the operating conditions that could change its error. Applying the existing 2% criterion remains sufficient for the original assignment when its grounds still hold.
+
 ### B.3.3:4 - Conformance Checklist
 
 A Target of Assurance (ToA) denotes the claim being assessed for the named use, not an undifferentiated score for its whole system.
 
 - **CC-B3.3.1 (Relevant support):** A positive assurance conclusion MUST identify the relied-on claim and use and explain how the cited basis supports it. A `verifiedBy` or `validatedBy` link is insufficient.
 - **CC-B3.3.2 (Needed correspondence):** Where differing terms or participants can change the argument, the assessor MUST resolve the load-bearing correspondence through the applicable bridge. Other judgements have no general term-mapping prerequisite.
-- **CC-B3.3.3 (Qualified levels and thresholds):** A published level MUST have an applicable profile, interpreted criteria and a supported assignment. Formal, empirical and constructive evidence requirements MUST follow the claim and receiving use. A generic score threshold or positive validation score cannot substitute for the required protective argument.
+- **CC-B3.3.3 (Qualified levels and thresholds):** An endorsed level MUST have an applicable profile and evidence meeting its criteria. Reporting a past assignment requires grounds for what the authority decided, including its scope. A commissioned profile explains how its criteria distinguish the intended decisions and what grounds justify the claims of ordering or coverage it makes. The target claim and receiving use determine which formal, empirical or constructive support is required.
 - **CC-B3.3.4 (Bridge scope):** A required bridge MUST cover the differences on which the conclusion depends. It SHALL NOT demand mapping every mechanism term to FPF as the price of a sufficient ordinary judgement.
-- **CC-B3.3.5 (Scope separation):** Design-time and run-time assurance claims MUST retain their distinct subjects, evidence and conditions. A design result alone SHALL NOT establish that the corresponding Work performed successfully.
+- **CC-B3.3.5 (Scope of support):** Design and performance claims MUST retain their subjects, evidence and conditions. An assurance conclusion transferred from a whole to a constituent, from constituents to a whole or from a design to an execution states what warrants that inference under the receiving conditions.
 - **CC-B3.3.6 (CT2R-LOG grounding):** When B.3.5's profile is elected, the structural and collection branches MUST retain their distinct current construction traces and declared modes. A level assignment SHALL NOT replace the required grounding or impose the profile on unrelated claims.
 - **CC-B3.3.7 (Downward-only dependence):** Assurance publications or records SHALL NOT impose vocabulary or layout back onto the Working-Model surface.
 

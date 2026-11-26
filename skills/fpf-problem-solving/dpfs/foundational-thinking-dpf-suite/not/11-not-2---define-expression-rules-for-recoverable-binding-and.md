@@ -8,9 +8,9 @@
 
 **Use this when** a notation needs rules for combining expressions or referring to their parts, and the proposed marks leave those rules unclear. Readers may disagree about an operation's operands, the declaration an occurrence of a name uses, or which connections join two components.
 
-The working question is “How can another user construct and recover the intended arrangement under these rules?” Start with one expression that admits two consequentially different readings. Give its components explicit places, make their grouping and references recoverable, and use the resulting construction to perform the intended operation.
+The working question is “How can another user construct and recover the intended arrangement under these rules?” Start with the arrangement the user must produce or read. Identify its components, their roles and the connections that affect the intended operation. An expression with two plausible readings can reveal a distinction the rules must preserve.
 
-The result is a small set of formation, binding and connection rules demonstrated by an expression and a contrasting case. These rules can support mathematical formulas, diagrammatic descriptions or structured sequences. For a local expression, the rules and their demonstrated use can suffice. Repeated automated processing may warrant a fuller grammar or a parser.
+The result is a set of formation, binding and connection rules sufficient for the admitted expressions and their intended operations. A fixed form may need only named places and their meanings. For a language with reusable constructors, establish how the rules determine the reading of their permitted combinations. A worked reading can show how to use them. Repeated automated processing may warrant a fuller grammar or a parser.
 
 The reader must know what the relevant components and operations mean, or have access to an account that supplies those meanings. The examples below require elementary arithmetic and the stated conventions. Theory of formal languages and category theory are optional tools for extending or proving properties of a scheme.
 
@@ -34,7 +34,7 @@ A printed formula can conceal two groupings. The same letter can name an externa
 
 ### NOT.2:4 - Solution
 
-**Identify the constructors and their places → make grouping recoverable → define how references are resolved → define permitted connections → construct and read contrasting cases → abbreviate only what the reader can recover.**
+**Identify the constructors and their places → make grouping recoverable → resolve references and define permitted connections → establish how the reader recovers the required arrangement → abbreviate only what that reader can recover.**
 
 #### NOT.2:4.1 - Identify the expression constructors and their operands
 
@@ -48,7 +48,7 @@ State the restrictions that the intended use needs. The restrictions may concern
 
 Choose how a user can determine which parts belong to each construction. Text may use delimiters, indentation or precedence; a diagram may use enclosures, named ports or connections. A notation unfolding in time may use a learned boundary gesture or a segmentation convention. Explain the selected rule where its effect is not already established for the intended reader.
 
-Try a nested construction. Recover the outer operation and its immediate parts, then repeat that reading within each part. This is a useful structural reading for tree-like expressions. When a component is shared or a connection returns to an earlier component, expose its reference or connection so the reader can distinguish a shared component or cycle from nested copies.
+If the grammar admits nesting, recover the outer operation and its immediate parts, then repeat that reading within each part. This is a useful structural reading for tree-like expressions. When a component is shared or a connection returns to an earlier component, expose its reference or connection so the reader can distinguish a shared component or cycle from nested copies.
 
 Choose the structural distinctions needed by the operation. Some schemes identify several bracketings or drawings as the same expression. Establish the relevant equivalence before omitting their differences. If alternatives are intentionally unresolved, show that unresolved choice and postpone only the operation that needs it decided.
 
@@ -58,7 +58,7 @@ Identify the constructions that introduce local names and the parts in which tho
 
 For a notation with lexical scope, a common rule resolves a name at its nearest enclosing declaration with that name; if there is none, the value must come from the declared external context. Adopt that rule only when it fits the intended interpretation. Other schemes can make references available through earlier statements, explicit identifiers or connections. Define their resolution accordingly.
 
-Trace the references in one expression with repeated names and one expression with a free input. Here a free input is one whose value must be supplied from outside the expression. If insertion, copying or renaming changes which declaration an occurrence reaches, expose that change before treating the result as equivalent. NOT.4 develops transformations that preserve the intended use.
+Where the grammar permits names to repeat or an input to remain free, determine how each such reference resolves. A trace through an expression can expose a disputed binding. Here a free input is one whose value must be supplied from outside the expression. If insertion, copying or renaming changes which declaration an occurrence reaches, expose that change before treating the result as equivalent. NOT.4 develops transformations that preserve the intended use.
 
 For a reusable component, distinguish its locally introduced names from the inputs and results made available at its boundary. Compose components by those boundary references. A displayed label can be repeated without identifying its occurrences as the same declaration; the reference rule must settle that question.
 
@@ -76,7 +76,7 @@ Formation rules establish a permitted expression. Whether its described mathemat
 
 Build the intended expression from the declared parts. Recover its grouping, resolve the references and identify the component boundaries. Then perform the required operation with the supplied interpretation.
 
-Use a contrasting case that could reveal a mistaken rule. Depending on the chosen construction, change the grouping, reuse a name inside another scope, exchange two ports or introduce a shared component. Select the challenge because its interpretation can change the result.
+Establish that the formation and reading rules cover the expressions the user must handle. A contrast can expose a mistaken rule where an alternative reading would change the result. Depending on the chosen construction, change the grouping, reuse a name inside another scope, exchange two ports or introduce a shared component. Select the challenge because its interpretation can change the result.
 
 If two readers still recover different arrangements that matter to the work, locate the point of divergence. Add or repair the corresponding delimiter, reference rule or connection convention. If both arrangements express the intended equivalence, make that equivalence part of the scheme instead of forcing one arbitrary drawing.
 
@@ -86,7 +86,7 @@ Keep the rule at the scale required by its next use. A legend and a worked const
 
 For an abbreviation, give the expansion or another way to establish its meaning. If several expansions are allowed, show why the difference does not affect the intended use. NOT.4 handles the corresponding preservation argument. Retain a visible distinction when no such argument is available and the choice matters.
 
-The method finishes with rules that permit the required construction and make its use recoverable, or with a specific unresolved formation or interpretation question. To judge learning, check whether the reader can use the rules. Learning and explanation methods can help when the work calls for teaching or for comparing reading costs.
+The method finishes with rules that permit the required construction and make its use recoverable, or with a specific unresolved formation or interpretation question. To judge present use, establish what the reader can recover or do with the conventions and aids available. A conclusion about learning also needs a basis for comparing what that reader could do before and afterwards under the relevant conditions. Learning and explanation methods can help when the work calls for teaching or for comparing reading costs.
 
 ### NOT.2:5 - Archetypal Grounding
 
@@ -160,7 +160,7 @@ Use the applicable questions when the construction rules need checking.
 - Are the groupings that change the operation distinguishable, or explicitly retained as unresolved alternatives?
 - Does each needed reference reach its declaration, external input or unresolved place according to the stated policy?
 - Do composition rules account for the roles of connected participants and the resulting external boundary?
-- Does a contrasting construction expose a consequential change of grouping, reference or connection?
+- Do the formation and reading rules preserve the required grouping, reference and connection over the admitted expressions? Use a contrasting construction if it can distinguish disputed readings.
 - Can an abbreviation be expanded or otherwise interpreted without losing a distinction needed by the operation?
 
 ### NOT.2:8 - Common Anti-Patterns and How to Avoid Them

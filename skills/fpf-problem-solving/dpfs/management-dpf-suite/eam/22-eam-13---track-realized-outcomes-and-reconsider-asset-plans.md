@@ -7,7 +7,7 @@
 
 Use this pattern when observations can change an asset plan or the explanation for its results. Work has been completed or money spent, but the practitioner needs to know whether the required service and expected value have been obtained.
 
-Begin with the assumption or outcome at issue. Return a supported decision to continue, revise, stop or reframe the plan. An adequate operating observation can answer the question without a new monitoring programme.
+Begin with the assumption or outcome at issue. Report the supported finding. When the commission includes a decision about the plan, establish whether the evidence supports continuing, revising, stopping or reframing it. An adequate operating observation can answer the question without a new monitoring programme.
 
 ### EAM.13:2 - Problem
 
@@ -25,11 +25,11 @@ Obtain the applicable observations. Match the actual configuration, duty, measur
 
 Compare observed and expected quantities on the same basis. Explain changes in exposure, demand, prices or accounting boundaries before treating a difference as an intervention effect. Keep a descriptive variance separate from a causal conclusion that needs more evidence. Preserve the service relation specified in the requirement. If each district is owed a quantity in each period, separate totals by district and by period can conceal a shortfall in a particular district during a particular period. A verified finding covering the required district-period pairs can settle compliance. A total for the service as a whole can be sufficient when that is the commissioned result.
 
-Determine which decision changes. Continuing the current policy can be justified even when an explanation remains uncertain. A service failure or invalid engineering qualification can require a supported immediate response while its cause is investigated. A changed cost assumption can reopen the option comparison without erasing evidence of functioning.
+Where a decision is due, identify what the observation changes. Continuing the current policy can be justified even when an explanation remains uncertain. A service failure or invalid engineering qualification can require a supported immediate response while its cause is investigated. A changed cost assumption can reopen the option comparison without erasing evidence of functioning.
 
 Consider further inquiry by its attainable contribution. Identify what answer could change the plan or warranted claim, when it could arrive and the full burden of obtaining and using it. Existing observations may support the necessary update.
 
-Return the revised or retained plan with the condition that justifies it and the next action-changing observation. Use [EAM.14](23-eam-14---decide-whether-and-how-to-change-the-asset-manageme.md), [EAM.15](24-eam-15---decide-whether-and-how-to-change-engineering-asset.md) or [EAM.16](25-eam-16---deliberately-continue-and-change-engineering-asset.md) only when the recurring arrangement, reusable Method or cultural process is the object needing change. Stop when the present outcome question is answered.
+Report what the observations establish. If a decision about the plan is due, explain what the evidence warrants keeping or changing, or what still prevents that decision. Identify the condition that would change the next action. Adopt a revision when the assignment and authority cover it. Use [EAM.14](23-eam-14---decide-whether-and-how-to-change-the-asset-manageme.md), [EAM.15](24-eam-15---decide-whether-and-how-to-change-engineering-asset.md) or [EAM.16](25-eam-16---deliberately-continue-and-change-engineering-asset.md) only when the recurring arrangement, reusable Method or cultural process is the object needing change. Stop when the present outcome question is answered.
 
 ### EAM.13:5 - Archetypal Grounding
 
@@ -69,6 +69,6 @@ When the question concerns attributable effects, consider an experimental or qua
 
 ### EAM.13:12 - Relations
 
-[EAM.12](21-eam-12---integrate-specialist-results-for-an-asset-recommend.md) supplies the selected decision and conditions. [EAM.3](12-eam-3---establish-the-asset-information-and-configuration-ba.md), [EAM.5](14-eam-5---assess-asset-condition-and-performance.md) and relevant MNT/OPS results supply observations and applicability. [EAM.4](13-eam-4---assess-demand-and-service-need-for-asset-decisions.md)–[EAM.11](20-eam-11---time-asset-interventions-and-manage-dependencies.md) receive changed assumptions; [EAM.14](23-eam-14---decide-whether-and-how-to-change-the-asset-manageme.md)–[EAM.16](25-eam-16---deliberately-continue-and-change-engineering-asset.md) address recurring practice questions when they arise. [FPF C.11.DUA](../../../sections/09-part-c---kernel-extension-specifications/24-c-11-dua---make-advice-and-evidence-demands-worth-their-burd.md) supports the inquiry decision.
+[EAM.12](21-eam-12---integrate-specialist-results-for-an-asset-recommend.md) can be used to integrate advice or to reach a decision within the commissioned authority. When comparing observations with the adopted plan or acting on it, obtain the effective decision and its conditions from the applicable act or record. [EAM.3](12-eam-3---establish-the-asset-information-and-configuration-ba.md), [EAM.5](14-eam-5---assess-asset-condition-and-performance.md) and relevant MNT/OPS results supply observations and applicability. [EAM.4](13-eam-4---assess-demand-and-service-need-for-asset-decisions.md)–[EAM.11](20-eam-11---time-asset-interventions-and-manage-dependencies.md) receive changed assumptions; [EAM.14](23-eam-14---decide-whether-and-how-to-change-the-asset-manageme.md)–[EAM.16](25-eam-16---deliberately-continue-and-change-engineering-asset.md) address recurring practice questions when they arise. [FPF C.11.DUA](../../../sections/09-part-c---kernel-extension-specifications/24-c-11-dua---make-advice-and-evidence-demands-worth-their-burd.md) supports the inquiry decision.
 
 ### EAM.13:End

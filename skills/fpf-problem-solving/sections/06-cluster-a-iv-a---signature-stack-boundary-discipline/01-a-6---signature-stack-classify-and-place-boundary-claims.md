@@ -259,7 +259,7 @@ Recover the intended invalidity/admissibility meaning before fully classifying t
 > * `E-SLA-AVAIL-1` (Quadrant E, Evidence-and-carriers): “The evaluation of the observed calendar month `T` reported `availability ≥ 0.999`, with measurements recorded in carrier `UptimeProbeSeries` from viewpoint `VP.ExternalMonitor`.”
 > * `E-SLA-LAT-1` (Quadrant E, Evidence-and-carriers): “The evaluation under workload `W` reported `latency_p95 < 200ms`, with measurements recorded in carrier `LatencyMetricSeries` from viewpoint `VP.Client`.”
 > * `D-OPS-ALERT-1` (Quadrant D, Ops duty): “Operators **MUST** page on breach of the criteria evaluated by `E-SLA-AVAIL-1` or `E-SLA-LAT-1` within 5 minutes (additional policy).”
-> * `E-ALERT-1` (Quadrant E, Evidence-and-carriers): “In the separate violation case, the operator's page was observed in carrier `AlertEvent{ruleId,firedAt,target}` and can be joined via `incidentId`.”
+> * `E-ALERT-1` (Quadrant E, Evidence-and-carriers): “In the separate violation case, `AlertEvent{ruleId,firedAt,target}` records when the alert rule fired and its intended target. The `incidentId` relates it to this breach. To determine whether an operator paged within five minutes, compare the time of the operator’s page with the time of the event from which this policy measures the interval. Use `firedAt` as the start if the policy names the rule firing. For a claim of receipt, establish that the target received the page.”
 >
 > These added policy and observation premises do not resolve the original guarantee, duty bearer or penalty clause.
 

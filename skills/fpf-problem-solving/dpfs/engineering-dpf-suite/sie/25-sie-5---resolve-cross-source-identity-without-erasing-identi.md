@@ -4,13 +4,13 @@
 > **Status:** Stable
 > **Normativity:** Normative method guidance within SIE; examples are constructed and non-normative.
 >
-> **Primary working result:** a `CrossSourceIdentityDisposition@Use` that states, for each load-bearing endpoint pair or set, the required entity grain and interval, identity-related disposition, the source entries, the rules and contexts or assignments and issuers that resolve them, evidence, authority boundary, unresolved cases, and the exact mappings, claim compositions, interfaces, and tests that may consume it.
+> **Primary working result:** a `CrossSourceIdentityDisposition@Use` that states, for each load-bearing endpoint pair or set, what counts as the same entity for the decision and any interval on which that judgement depends, identity-related disposition, the source entries, the rules and contexts or assignments and issuers that resolve them, evidence, authority boundary, unresolved cases, and the exact mappings, claim compositions, interfaces, and tests that may consume it.
 
 ### SIE.5:1 - Problem Frame
 
 **Use this when** an integration needs to decide whether records or identifiers from different sources concern the same entity, a part, a version, a variant, an alternate description, a family, or different or unresolved entities. The recognizable failure is a join, merged key, or `sameAs` assertion that makes identifiers appear unified while erasing their issuers, grains, intervals, and authority.
 
-For one bounded cross-source identity question, state the entity grain and time or effectivity interval at which sameness matters for the named use. The first result is a disposition that downstream work can inspect and challenge without replacing source identifiers or master-data authority.
+For one bounded cross-source identity question, establish what must remain the same for the named use. If time or effectivity can change the attribution, identify the relevant interval. The first result is a disposition that downstream work can inspect and challenge without replacing source identifiers or master-data authority.
 
 The payoff is that the integration can join only warranted cases, identify which branches remain unresolved, and preserve source trace. Do not use SIE.5 to create identifiers, choose enterprise master identity or survivorship, decide authoritative values, or prove a source claim true. Those decisions remain with identifier owners, MDM, or the direct domain authority.
 
@@ -33,15 +33,15 @@ If an integration collapses those distinctions, the merged record no longer show
 
 ### SIE.5:4 - Solution
 
-Frame identity as a source-qualified, grain- and interval-specific disposition for one receiving use. Preserve every source identifier and the applicable context or assignment, including its issuer when it was issued. Compare the entity criteria, relation evidence, version/effectivity, and authoritative decisions that matter. Return same, different, part, version, variant, alternate-description, family, or unresolved only at the precision supported; do not force every useful relation into identity.
+Decide what the source entries designate at the grain required by the receiving use. Establish the interval when the attribution depends on time. Preserve every source identifier and the applicable context or assignment, including its issuer when it was issued. Compare the entity criteria, relation evidence, version/effectivity, and authoritative decisions that matter. Return same, different, part, version, variant, alternate-description, family, or unresolved only at the precision supported; do not force every useful relation into identity.
 
 #### SIE.5:4.1 - Pattern-Use Unfolding
 
 1. **Name the receiving identity question.** State which mapping, claim composition, query, or decision needs an identity premise and what a wrong merge or split would change.
-2. **Fix entity grain and interval.** Name the relevant individual or occurrence kind, part-whole level, version/configuration, lifecycle state, jurisdiction or organization, and time/effectivity interval.
+2. **Set the identity criterion for the receiving use.** Identify the kind of individual or occurrence and what counts as the same referent for this decision. Include composition, version, state, jurisdiction, issuing organization or effectivity when differences there could change the attribution. Two identifiers can designate the same visit by their assignments even when no part of the visit is in question.
 3. **Resolve each source entry.** Use SIE.2 to establish what each entry can designate. Recover its assignment and issuing authority when it was issued, or the rule and context used to interpret it. Retain the applicable syntax, restrictions, source edition and provenance. If the evidence leaves several candidates or fails to identify one, record that outcome.
 4. **Separate candidate relation kinds.** Consider same individual at the stated grain, different individuals, part/whole, earlier/later version or specialization, variant, alternate description, an individual satisfying a type criterion, or membership in a declared product family. When several readings still fit, check which trace or decision differs between them. Return an answer common to every admissible reading at the requested grain. Preserve any finer relation still in doubt.
-5. **Collect discriminating evidence.** Use issuer records, source assertions, configuration/effectivity, provenance, physical or domain characteristics, event histories, and counterexamples. A shared string or co-occurrence is only candidate evidence.
+5. **Collect discriminating evidence.** Use the evidence that establishes the relevant attribution, such as an issuer record, source assertion, physical characteristic or event history. Examine configuration, effectivity or a possible counterexample when it can change the conclusion. A shared string or co-occurrence is only candidate evidence.
 6. **Recover authority.** Identify who may bind a source identifier, govern the master identity, decide authoritative values or establish the domain relation. SIE records the disposition for its stated use under those authorities.
 7. **Assign the narrowest warranted disposition.** State conditions, confidence or uncertainty where meaningful, rejected alternatives, and unresolved evidence. Preserve source IDs even for accepted same-entity rows.
 8. **Link consumers to the identity disposition.** Reference the disposition from every mapping, claim composition, interface row, and identity test that relies on it. Never copy only the merged key.
@@ -49,13 +49,13 @@ Frame identity as a source-qualified, grain- and interval-specific disposition f
 
 #### SIE.5:4.2 - Record the Result
 
-| Identity position | Required content |
+| Identity question | What to record for the decision |
 | --- | --- |
 | identity question and use | receiver, dependent action, wrong-merge/wrong-split consequence |
-| entity boundary | kind and grain, part-whole level, version/configuration, interval/effectivity, relevant context |
+| entity boundary | kind and criterion for the same individual or occurrence. Include part–whole relations, version, configuration, effective interval and context where they can change the attribution |
 | source identifiers | each source entry, the supported referent, remaining candidates or unresolved designation, the relevant rules and context or the assignment and its issuer, restrictions, edition and provenance |
-| candidate relations | same, different, part, version/specialization, variant, alternate description, family, unresolved alternatives |
-| warrant | evidence, counterevidence, counterexamples, uncertainty/confidence, rejected alternatives |
+| candidate relations | alternatives that matter here, such as the same entity, a part, version, variant or alternate description, and any distinction the sources still leave open |
+| warrant | the grounds for the disposition. Record material counterevidence, exceptions, rejected alternatives and uncertainty where they affect the conclusion or its use |
 | authority | scheme-local, master-data, domain, and receiving-decision scopes |
 | disposition | narrowest warranted relation or unresolved result, conditions, source-ID preservation rule |
 | downstream and reopen | mapping/composition/interface/test references and the change or observation that reopens the disposition |
@@ -91,11 +91,11 @@ Tests cover reused package identifiers, a die split/merge error, contradictory s
 ### SIE.5:7 - Conformance Checklist
 
 - [ ] The receiving action and wrong-merge/wrong-split consequence are named.
-- [ ] Entity kind, grain, part-whole level, version/configuration, and interval/effectivity are explicit.
+- [ ] The referent kind and identity criterion are clear. The conclusion retains the distinctions in composition, version, context or interval on which that criterion depends.
 - [ ] Each entry can be traced to its source and edition. The rule and context or the assignment and its issuer, the restrictions and the available evidence support the stated result, including an unresolved result.
 - [ ] Useful non-identity relations are not compressed into a boolean same/different field.
 - [ ] Shared strings, co-occurrence, and crosswalk membership are treated only as candidate evidence.
-- [ ] Evidence, counterevidence, counterexamples, and uncertainty are inspectable.
+- [ ] The evidence supporting the disposition is inspectable, together with any material counterevidence, unresolved uncertainty or counterexample.
 - [ ] Scheme-local, master-data, domain, and receiving-decision authority scopes remain separate.
 - [ ] Accepted same-entity rows do not delete source identifiers.
 - [ ] Every dependent mapping, composition, interface, and test references the disposition.

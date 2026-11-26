@@ -11,7 +11,7 @@ A standard can reach a group that lacks permission to adopt it. A demonstration 
 
 Build a law connecting observable exposure, uptake and the resulting variant. The first result is a defensible expected flow or transition probability, with the unresolved factors retained. It can be qualitative when the next decision needs only the missing condition.
 
-A count of views is already sufficient if the question is only whether a notice was seen. Do not expand it into a model of competence or use unless the receiving question needs that result.
+A reliable count of recorded views can settle how many such views the notice received. To establish that a person in the intended group saw it, check what the counter registers, whose views it can include and whether the record or another observation establishes exposure for that group. Do not expand it into a model of competence or use unless the receiving question needs that result.
 
 ### DTM.2:2 - Problem
 
@@ -123,7 +123,7 @@ The useful result is a choice between mechanisms to investigate, rather than adj
 
 #### DTM.2:5.3 - A demonstration reaches learners without supplying coordination
 
-A dance workshop distributes a turn demonstration. A view count measures exposure. A learner's attempt, successful execution with a cue, uncued execution and later teaching provide different events.
+A dance workshop distributes a turn demonstration. A view count records what the platform calls a view. It can measure exposure among these learners if its coverage and counting rule support that interpretation. A learner's attempt, successful execution with a cue, uncued execution and later teaching provide different events.
 
 If the learner needs a coordination method not supplied by the demonstration, raising the number of views need not increase the target performance. HCD and the relevant movement methods supply the acquisition work. The transmission model records its effect on the chosen transition, rather than treating a missing capability as unwillingness or resistance.
 

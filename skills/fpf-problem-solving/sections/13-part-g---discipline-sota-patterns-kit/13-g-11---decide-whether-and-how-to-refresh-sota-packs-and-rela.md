@@ -142,7 +142,7 @@ Use the following artifacts for refresh planning and reporting. `RefreshPlanId` 
    An execution or audit report that records:
 
    * `RefreshReportId` (UTS-published id; editioned)
-   * `ExecutedActions[]` with independently admitted A.15.1 Work refs and references to their performers identified under A.13, plus links to the resulting artifacts under their subject patterns (for example, a new parity report or pack id). Add F.6 attribution only when the receiving use needs to attribute the Work to its established A.13 assignment.
+   * `ExecutedActions[]` citing the A.15.1 Work occurrences and the resulting artifacts under their subject patterns, such as a new parity report or pack id. Use A.13 for the System or Systems credited at the scale claimed. Add F.6 when the receiving use attributes a contribution under a particular obtaining assignment.
    * `ObservedDeltas` (telemetry deltas, admissibility changes, evidence-relation or source-relation changes) as refs and pins, not as untyped prose
    * `RSCRRefs[]` (any RSCR or regression harness artefacts invoked)
    * `EmittedNotices[] := DeprecationNoticeId[]` and `EditionBumpLogId[]`
@@ -233,7 +233,7 @@ Use C.11.DUA to compare further inquiry with the warranted answer already availa
 * `EmitDeprecationNotice` or `EmitEditionBumpLog` (publication units governed by this pattern)
 
 **4.3.4 Execution and audit.**
-When selected actions are performed as Work or Work-bound audit, identify the actual performers and independently admitted occurrences and publish the corresponding `RefreshReport@Context`.
+When the commission calls for an account of the refresh, record the actual Work or Work-bound audit in `RefreshReport@Context`, with the results and the attribution required for that use. If publication is due, a party authorized to issue the report makes it available to the intended audience under the applicable publication conditions.
 
 Assess the returned subject results for each receiving use, including any result that combines refreshed and retained branches. Reuse sufficient existing observations where applicable; a plan supplies no new observation or performance.
 
@@ -246,7 +246,7 @@ When a shipped result consumes C.28, inspect the following changes when they can
 | Sentinel | Affected result | Refresh pins |
 | --- | --- | --- |
 | sampling-realizability shift | `CounterfactualSamplingRealizabilityResult` | target distribution, decision Method and any derivation, physical, ethical, operational, and history constraints, required sampling construction or obstruction, unresolved questions, status, supported use, and unsupported use |
-| performed sampling or resulting-data shift | dated sampling Work plus A.10 evidence path and empirical data regime | WorkPlan when used; actual performer identified through A.13; dated Work independently admitted through A.15.1; Method and window; resulting sample or data; provenance and currentness. Add F.6 with the same A.13 assignment only if the refresh decision needs to attribute the Work to that assignment. F.6 identifies neither performer nor assignment. A missing or failed attribution alone leaves independently admitted Work intact. If the finding invalidates a consumed A.13 or A.15.1 premise, recheck that premise and its dependent conclusions. A realizability result cannot substitute for the sampling Work or the resulting data. |
+| performed sampling or resulting-data shift | dated sampling Work for a performance claim, comparable observations for a data-change claim, A.10 evidence path and empirical data regime | To establish what changed in the data, compare the observations under compatible conditions and identify their provenance and currentness. For a claim that sampling took place, establish the dated Work under A.15.1, with its enacted Method and the time relevant to the claim. Establish which units were sampled and what data resulted when the receiving claim uses those facts. An adequate record may establish that sampling took place even if the sample needed for reanalysis has been lost. Cite the WorkPlan if used. Use A.13 for the performer at the scale credited and F.6 for attribution under a particular obtaining assignment. A finding about the data can stand when the sampler remains unknown. Reassess a dependent conclusion when a premise it uses fails. Feasibility of sampling alone establishes neither its execution nor its resulting data. |
 | identification or bound shift | `CausalIdentificationResult` | data-regime refs, assumptions, identifying derivation, bound or failure witness, sensitivity |
 | estimate shift | `CausalEstimateResult` | identification or design basis, data, estimator Method, diagnostics, uncertainty, sensitivity, and any live estimation-consistency result |
 | target-trial practice shift | protocol and mapping results | question/estimand, protocol-to-data mapping, assumptions, estimate/precision, sensitivity and reporting source edition |

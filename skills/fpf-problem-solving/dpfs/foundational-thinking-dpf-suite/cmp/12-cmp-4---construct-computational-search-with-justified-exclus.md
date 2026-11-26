@@ -90,7 +90,7 @@ On finding a witness, return it with the meaning of its admissibility. For optim
 
 On interruption, return the available candidate and unresolved possibility. “No witness found within this run” is useful information but does not establish that no witness exists. If the recipient requested only a satisfactory candidate, finding one can finish the work before the search is exhausted.
 
-Use an initial and changed-condition case to check which conclusion the recipient can use. Changing an output from one optimum to all optima, or changing a domain, directly tests the exclusion's scope.
+Check the conclusion against the requested output. Changing the request from one optimum to all optima can expose an exclusion that was sufficient only for naming one. Use such a contrast when the scope of the argument is open. A verified witness completes a request for one, and a general exclusion applies throughout the domain its premises cover.
 
 ### CMP.4:5 - Archetypal Grounding
 

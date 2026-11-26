@@ -58,7 +58,7 @@ Bound the inquiry so it can direct the selected useful action and identify a suf
 
 #### C.40.OI:4.1 - Identify the subject and claim posture
 
-Name what may develop or be changed at the grain that matters now: a person, organization, community arrangement, AI model-and-scaffold configuration, facility, platform, research programme, episteme, or another subject. If identification is provisional, state the candidate boundary and what would settle it.
+Work back from what the recipient needs to explain or change. Which subject could have that property? Would the same part have a different consequence in another permitted whole? Would the same readings for the parts conceal a different relation between them? Follow the connections on which the answer depends. The subject might be a person, organization, community arrangement, AI model-and-scaffold configuration, facility, platform, research programme, episteme, or another subject. If identification is provisional, state the candidate boundary and what would settle it.
 
 Mark the claim posture. A proposed future contribution is not actual change. A plan is not performed Work. A model prediction is not an observed result. If *development* or *evolution* still hides the subject, continuity rule, or value claim, use [`E.10.DEV`](../03-first-principles-framework-readme/_index.md) and return with the subject owner.
 

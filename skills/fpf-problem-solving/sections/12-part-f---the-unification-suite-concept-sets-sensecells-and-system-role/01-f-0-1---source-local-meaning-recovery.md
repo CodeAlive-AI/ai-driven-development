@@ -36,11 +36,11 @@ Requiring a full source survey, durable cell, provenance record, reliance dispos
 
 #### F.0.1:4.1 - Recover one source-local meaning
 
-1. **Name the question.** State what answer or action can change if the expression is read differently.
+1. **Name the question.** What does the reader need to understand or do, and what would reading this expression differently change? The question may concern the wording itself or something the passage describes.
 2. **Identify the source.** Give the exact source and edition. A discipline or shelf label is not enough.
 3. **Locate the passage.** Point to the claim, definition, example, rule, or other passage used.
-4. **State the meaning plainly.** Say what the expression denotes or claims in that passage. Keep designed descriptions and performed occurrences distinct when the source does.
-5. **Use the answer and stop.** Do not create a durable cell or relation unless a later receiver needs it.
+4. **State the meaning plainly.** Say what the expression denotes or claims in that passage. A supported reading supplied by another participant can answer the question. For a commissioned independent interpretation, establish what the reader inferred from the passage and what was already supplied in glosses, translation or other help. Preserve the source's distinction between a description and an occurrence.
+5. **Return the meaning to the question.** If the reader asked what the expression means here, give the source-backed reading. If the passage supplies a premise about the subject, use it in the inference the reader needs. To decide whether work followed a described process, for instance, compare the applicable requirements with evidence of that work (F.11).
 
 The source, edition, expression, passage, and plain meaning are the ordinary minimum. A brief scoped heading may keep an already established source in view; repeated source tags are unnecessary when the reading remains unambiguous.
 
@@ -113,7 +113,7 @@ Continue only for the next result you need:
 
 #### F.0.1:5.2 - Compact worked results and recognition cues
 
-A **worked result** below names the exact source, edition, passage, and meaning used. A **recognition cue** only marks a likely false friend; it establishes no local meaning until the practitioner supplies those four values. This distinction lets readers use examples from several fields while seeing which readings still need source work.
+A **worked result** below names the exact source, edition, passage, and meaning used. A **recognition cue** only marks a likely false friend; it establishes no local meaning until those four values and their connection are established. An archivist's reading of the cited clause may supply them. Reporting that reading and independently interpreting the clause are different contributions. This distinction lets readers use examples from several fields while seeing which readings still need source work.
 
 ##### F.0.1:5.2.1 - *process* and *activity*
 
@@ -167,11 +167,11 @@ Recover the RBAC *role* meaning from its source before relating it to the ODRL *
 - **Different local meanings:** separate cells; use F.9 only for an actual relation.
 - **Source selection:** F.1; **synthesis:** F.0.2; **naming:** F.18; **subject reasoning:** the defining or testing rule for the recovered claim.
 
-> **Mental checklist:** Name the source and edition → locate the passage → say what the expression means → stop if sufficient → add only the durable address or relation a named receiver needs.
+> What does the reader need from this passage? Identify its source and edition, locate the expression and give its local meaning. If that settles the question, finish there. If the question concerns the subject described, use the recovered meaning to establish the relevant claim. Give the meaning a durable address when a later use needs one.
 
 ### F.0.1:6 - Bias-Annotation
 
-- **Gov:** Source authorship, popularity, or standard status does not decide the receiving claim.
+- **Gov.** For a question about the definition a body adopted, establish the body’s authority, the operative edition and the meaning it sets there. For a question about a reported event, establish the event on its own grounds. Authorship or popularity alone establishes neither.
 - **Arch:** The pattern favors recoverable local meanings and explicit relations over one global vocabulary or universal container.
 - **Onto/Epist:** A word, a local-sense claim, its subject, its source, a basis relation, and a receiving claim remain different.
 - **Prag:** Ordinary use is one sentence and one citation; stronger objects and assurance are conditional.
@@ -183,7 +183,7 @@ Recover the RBAC *role* meaning from its source before relating it to the ODRL *
 #### F.0.1:7.1 - Static checks
 
 - **SCR-F01 (Recoverable source).** Every load-bearing local meaning identifies the exact source, edition, and passage directly or through an unambiguous scoped reference.
-- **SCR-F02 (Plain first result).** The ordinary branch's result is a readable meaning statement, and the practitioner may stop there.
+- **SCR-F02 (Plain first result).** A readable source-backed statement answers a question about local meaning. Where the passage supplies a premise for a further conclusion, its contribution to that conclusion is identifiable.
 - **SCR-F03 (Conditional cell).** A `SchemeSenseCell` appears only for a named reuse, claim, receiver, or relation need and keeps ReferenceScheme, LocalExpression, and LocalSenseClaim distinct.
 - **SCR-F04 (Separate support).** A `LocalSenseBasisRelation` is asserted only when current; source identification, reliance, and assurance are not inferred from it.
 - **SCR-F05 (No string identity).** Shared wording, family, score, or row does not establish a relation between local senses.
@@ -223,7 +223,7 @@ Making the source, edition, passage, and meaning explicit takes judgment. Creati
 
 Recover the meaning from the passage where the source uses the expression. When the passage settles the question, this avoids the cost of a wider comparison. Starting with the source passage prevents a later comparison from rewriting the source before the commonality or difference is known. Keeping durable cell identity in F.17 and cross-local relations in F.9 prevents local recovery from becoming a second ontology or relation catalogue.
 
-This keeps the work proportionate: one identified source can yield an answer immediately; several possible sources call for F.1; several source ontologies call for F.0.2; an actual relation calls for F.9.
+Choose any further work by what remains to establish. F.1 helps select a source basis, F.0.2 develops an account from consequentially different source claims, and F.9 tests a proposed relation between local meanings. Several sources may give the same sufficient answer.
 
 ### F.0.1:11 - SoTA-Echoing
 
