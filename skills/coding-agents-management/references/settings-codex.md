@@ -237,30 +237,55 @@ Subagents inherit the parent's interactive runtime overrides (e.g., `/approvals`
 
 ## Skills Block
 
-Skills are stable in 2026. Codex auto-discovers skills from these locations (highest priority first):
+Skills are stable and always-on in 2026. Codex auto-discovers skills from these locations (highest priority first):
 
 | Scope | Path |
 |-------|------|
 | Project (CWD) | `$CWD/.agents/skills/` |
 | Project (intermediate dirs) | `$CWD/../.agents/skills/` |
 | Project (repo root) | `$REPO_ROOT/.agents/skills/` |
-| User | `$HOME/.codex/skills/` (alias: `$HOME/.agents/skills/`) |
+| User | `$HOME/.agents/skills/` (`$HOME/.codex/skills/` alias) |
 | Admin | `/etc/codex/skills/` |
-| System | Bundled with Codex (e.g., `~/.codex/skills/.system/`) |
+| Plugins / System | Enabled `[plugins."<name>@<marketplace>"]` in `~/.codex/plugins/cache/` + bundled skills |
 
-Per-skill overrides:
+Startup catalog budget and per-skill controls in `~/.codex/config.toml` (or `.codex/config.toml`):
 
 ```toml
+[skills]
+include_instructions = true             # Set false to suppress automatic startup skill catalog
+max_context_tokens = 10000              # Defaults to 2% of model_context_window (~5,440 tok on 272k); capped at 10,000 tok (~40k chars)
+
+[skills.bundled]
+enabled = false                         # Optional: disable bundled system skills
+
+# Disable a skill for Codex only without deleting it from ~/.agents/skills (ordered rules; name or path):
 [[skills.config]]
-path = "/path/to/skill/SKILL.md"
+name = "some-heavy-skill"
+enabled = false
+
+[[skills.config]]
+path = "/Users/me/.agents/skills/other-skill/SKILL.md"
+enabled = false
+
+# Toggle Codex plugins (cache folders not listed with enabled = true are ignored at runtime):
+[plugins."stripe@openai-curated"]
 enabled = false
 ```
 
-Skills are always-on as of CLI v0.124. (Earlier versions required `codex --enable skills`; the flag is still accepted for back-compat.)
+To keep a skill out of Codex's startup catalog (0 startup tokens) while still allowing explicit `$skill-name` calls, create `<skill>/agents/openai.yaml`:
+
+```yaml
+policy:
+  allow_implicit_invocation: false
+interface:
+  short_description: "Concise catalog blurb (<1,024 chars) used when implicit invocation is true"
+```
+
+When over budget, Codex degrades in three tiers: full catalog -> proportional `description` trimming across all skills -> stripping all descriptions and dropping overflow entries from the startup list.
 
 ## Hooks Block
 
-Inline lifecycle hooks. Fully documented in the hooks-management skill — see `references/codex-hooks.md`.
+See `references/hooks-codex.md` for full Codex hook schemas.
 
 ```toml
 [features]

@@ -44,7 +44,7 @@ Treat **available ≠ loaded** as the core invariant of context engineering. Str
 ### Tier 1 — Discovery Metadata (`name` + `description`)
 
 - Loaded into every session's startup catalog (~50–100 tokens per skill).
-- Subject to hard platform budgets: Claude Code truncates `description + when_to_use` at `1,536` characters in skill listings; Codex budgets roughly `2%` of context (~8,000 chars) across skill metadata.
+- Subject to hard platform budgets: Claude Code truncates `description + when_to_use` at `1,536` characters and budgets ~2% of context (`~16,000` chars fallback); Codex budgets **2% of the model context window** in tokens (`~5,440` tokens on 272k; `8,000`-char fallback only when unknown), configurable via `[skills].max_context_tokens` up to `10,000` tokens, caps individual descriptions at `1,024` chars, prefers `short_description` when set, and lets you hide implicit injection via `agents/openai.yaml` (`policy.allow_implicit_invocation: false`) or disable skills for Codex via `[[skills.config]]` (`enabled = false`).
 - **Front-load** what the skill does, **imperative trigger conditions** (`Use when...`, user phrasing, file extensions), and **negative triggers** (`Do not use for...` / `Not for...`).
 - Write in third person with no XML angle brackets (`< >`), and keep descriptions distinct from sibling skills to prevent ambiguous routing.
 

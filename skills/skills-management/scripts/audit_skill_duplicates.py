@@ -33,6 +33,7 @@ from skill_topology import (
     AGY_PLUGIN_MANIFESTS,
     BACKUP_RE,
     IGNORED_PARTS,
+    active_codex_plugin_skill_roots,
     agy_plugin_skill_dirs as _agy_plugin_skill_dirs,
     antigravity_manifest_skill_roots,
     find_agy_plugin_manifest as _find_agy_plugin_manifest,
@@ -200,13 +201,10 @@ def default_roots(cwd: Path, anchors: list[Path] | None = None) -> list[tuple[Pa
     for manifest_root, manifest_kind in antigravity_manifest_skill_roots(home, list(seen_repos)):
         add_root(roots, manifest_root, manifest_kind)
 
-    # Codex owns and namespaces its cache. Multiple cached versions are inventory
-    # information, not user-install conflicts. Claude and Antigravity expose enabled
-    # state, so omit disabled/historical cache versions by default.
-    codex_cache = home / ".codex" / "plugins" / "cache"
-    if codex_cache.is_dir():
-        for skill_root in codex_cache.rglob("skills"):
-            add_root(roots, skill_root, "plugin-cache")
+    # Codex owns and namespaces its cache. Only plugins enabled in config.toml
+    # (and their active version dir) are loaded at runtime.
+    for skill_root in active_codex_plugin_skill_roots(home):
+        add_root(roots, skill_root, "plugin-cache")
     for skill_root in active_claude_plugin_skill_roots():
         add_root(roots, skill_root, "plugin-cache-active")
     for skill_root in active_antigravity_plugin_skill_roots(home):

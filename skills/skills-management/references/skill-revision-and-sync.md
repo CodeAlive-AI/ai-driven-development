@@ -21,7 +21,7 @@ Use `scripts/revise_skills.py` (100% read-only diagnostics) and `scripts/sync_sk
   - **Orphaned lockfile entries** in `~/.agents/.skill-lock.json` and workspace `skills-lock.json` (cleaning symlinks without cleaning `.skill-lock.json` causes `npx skills update` to re-download deleted skills).
   - **Local ↔ Global shadowing & monorepo ancestor walks** (`--scope local|global|all`, `--cwd PATH`, `--scan-skills-dirs`).
   - **4-axis duplicate detection**: exact `name`, folder basename (`dir_name`), normalized slug, and identical directory SHA-256 across different names.
-  - **Startup Context Budget** per agent (`name + description` chars/tokens against truncation & catalog caps) and **Trojan Source** invisible/BiDi Unicode checks. For deep third-party security analysis, run the dedicated `skill-inspector` skill.
+  - **Startup Context Budget** per agent (`name + description` chars/tokens against truncation & catalog caps) and **Trojan Source** invisible/BiDi Unicode checks. For Codex, plugin discovery reads `[plugins."<name>@<marketplace>"] enabled = true` from `~/.codex/config.toml` (selecting `"local"` or the highest semver dir) rather than treating unconfigured cache folders as live skills, and budget estimation honors `[[skills.config]]` (`enabled = false`), `[skills].max_context_tokens` (capped at `10,000` tokens), and `agents/openai.yaml` (`allow_implicit_invocation: false`, `short_description`). For deep third-party security analysis, run the dedicated `skill-inspector` skill.
 - Run **`audit_skill_duplicates.py --candidate PATH --fail-on-conflict`** as the fast preflight before installing a single skill.
 
 ---

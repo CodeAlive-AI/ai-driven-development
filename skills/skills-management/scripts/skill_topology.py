@@ -13,6 +13,7 @@ import json
 import os
 import re
 import subprocess
+import tomllib
 from collections import defaultdict
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
@@ -76,7 +77,12 @@ _EXTERNAL_SCHEMES = ("http://", "https://", "mailto:", "customization://", "skil
 # Known startup catalog / description caps (chars unless marked tokens)
 AGENT_CONTEXT_CAPS: dict[str, dict[str, int | str]] = {
     "claude-code": {"per_skill_chars": 1536, "catalog_chars": 16000, "note": "Claude Code truncates descriptions >1,536 chars and budgets ~2% context (~16k chars)"},
-    "codex": {"catalog_chars": 8000, "note": "Codex startup skill catalog budget (~8,000 chars)"},
+    "codex": {
+        "per_skill_chars": 1024,
+        "catalog_tokens": 5440,
+        "max_configurable_tokens": 10000,
+        "note": "Codex budgets 2% of model context window (~5,440 tok on 272k; 8,000-char fallback only when unknown), configurable via [skills].max_context_tokens up to 10,000",
+    },
     "antigravity": {"catalog_tokens": 20000, "note": "Antigravity combined customization budget (~20,000 tokens)"},
     "antigravity-cli": {"catalog_tokens": 20000, "note": "Antigravity CLI combined customization budget (~20,000 tokens)"},
 }
@@ -379,6 +385,172 @@ def agy_plugin_skill_dirs(plugin_dir: Path, manifest: dict | None) -> list[Path]
             if candidate.is_dir() and candidate not in [d.resolve() for d in dirs]:
                 dirs.append(plugin_dir / rel)
     return dirs
+
+
+_SEMVER_RE = re.compile(r"^(\d+)\.(\d+)\.(\d+)(?:-([0-9A-Za-z.-]+))?(?:\+.*)?$")
+
+
+def codex_home_dir(home: Path | None = None) -> Path:
+    """Return Codex home directory, honoring ``CODEX_HOME`` when using the default home."""
+    base = home or Path.home()
+    if home is None or home == Path.home():
+        if override := os.environ.get("CODEX_HOME", "").strip():
+            return Path(override).expanduser()
+    return base / ".codex"
+
+
+def load_codex_config(home: Path | None = None) -> dict:
+    """Parse ``config.toml`` under Codex home via ``tomllib``, returning ``{}`` if missing/invalid."""
+    cfg_path = codex_home_dir(home) / "config.toml"
+    if not cfg_path.is_file():
+        return {}
+    try:
+        data = tomllib.loads(cfg_path.read_text(encoding="utf-8", errors="replace"))
+        return data if isinstance(data, dict) else {}
+    except (OSError, tomllib.TOMLDecodeError):
+        return {}
+
+
+def _codex_version_sort_key(ver: str) -> tuple[int, tuple[int, int, int, int, str], str]:
+    """Rank cached Codex plugin version names cleanly (semver before arbitrary strings)."""
+    if m := _SEMVER_RE.match(ver):
+        major, minor, patch, pre = m.groups()
+        # Stable release (no pre-release) sorts higher than pre-release of same tuple
+        return (1, (int(major), int(minor), int(patch), 0 if pre else 1, pre or ""), ver)
+    return (0, (0, 0, 0, 0, ver), ver)
+
+
+def active_codex_plugin_skill_roots(home: Path | None = None) -> list[Path]:
+    """Return skill roots for enabled Codex plugins (matching ``codex-rs`` selection rules)."""
+    home = home or Path.home()
+    cache = codex_home_dir(home) / "plugins" / "cache"
+    if not cache.is_dir():
+        return []
+
+    cfg = load_codex_config(home)
+    plugins_tbl = cfg.get("plugins") if isinstance(cfg, dict) else None
+    if not isinstance(plugins_tbl, dict):
+        # Fallback for synthetic fixtures without config.toml [plugins]
+        return [p for p in sorted(cache.rglob("skills")) if p.is_dir()]
+
+    roots: list[Path] = []
+    seen_resolved: set[Path] = set()
+    for plugin_id, pconf in sorted(plugins_tbl.items()):
+        if not isinstance(pconf, dict) or pconf.get("enabled") is not True:
+            continue
+        if "@" not in plugin_id:
+            continue
+        plugin_name, marketplace = plugin_id.rsplit("@", 1)
+        plugin_base = cache / marketplace / plugin_name
+        if not plugin_base.is_dir():
+            continue
+
+        local_dir = plugin_base / "local"
+        if local_dir.is_dir():
+            chosen = local_dir
+        else:
+            candidates = [d for d in plugin_base.iterdir() if d.is_dir() and not d.name.startswith(".")]
+            if not candidates:
+                continue
+            chosen = max(candidates, key=lambda d: _codex_version_sort_key(d.name))
+
+        skills_dir = chosen / "skills"
+        if skills_dir.is_dir():
+            try:
+                resolved = skills_dir.resolve()
+            except OSError:
+                resolved = skills_dir
+            if resolved not in seen_resolved:
+                seen_resolved.add(resolved)
+                roots.append(skills_dir)
+    return roots
+
+
+def _codex_openai_yaml_meta(skill_dir: Path) -> tuple[bool, str | None]:
+    """Read ``policy.allow_implicit_invocation`` and ``interface.short_description`` from ``agents/openai.yaml``."""
+    cfg_file = skill_dir / "agents" / "openai.yaml"
+    if not cfg_file.is_file():
+        return True, None
+    try:
+        lines = cfg_file.read_text(encoding="utf-8", errors="replace").splitlines()
+    except OSError:
+        return True, None
+
+    allow_implicit = True
+    short_desc: str | None = None
+    section: str | None = None
+    for raw in lines:
+        stripped = raw.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        indent = len(raw) - len(raw.lstrip(" "))
+        if indent == 0 and stripped.endswith(":"):
+            section = stripped[:-1].strip().lower()
+            continue
+        if ":" not in stripped:
+            continue
+        key, val = stripped.split(":", 1)
+        key = key.strip().lower()
+        val = val.split("#", 1)[0].strip() if not (val.strip().startswith('"') or val.strip().startswith("'")) else val.strip()
+        if (section == "policy" or section is None) and key == "allow_implicit_invocation":
+            low = val.strip("'\"").lower()
+            if low == "false":
+                allow_implicit = False
+            elif low == "true":
+                allow_implicit = True
+        elif section == "interface" and key == "short_description":
+            if len(val) >= 2 and val[0] == val[-1] and val[0] in ('"', "'"):
+                val = val[1:-1]
+            if val:
+                short_desc = val
+    return allow_implicit, short_desc
+
+
+def _codex_disabled_skill_names(codex_cfg: dict, visible: dict[str, SkillEntry], home: Path) -> set[str]:
+    """Evaluate ordered ``[[skills.config]]`` rules and return skill names disabled for Codex."""
+    skills_tbl = codex_cfg.get("skills") if isinstance(codex_cfg, dict) else None
+    if not isinstance(skills_tbl, dict):
+        return set()
+    rules = skills_tbl.get("config")
+    if not isinstance(rules, list):
+        return set()
+
+    paths_by_name: dict[str, set[str]] = {}
+    for sname, e in visible.items():
+        cand = {os.path.abspath(e.path), os.path.abspath(Path(e.path) / "SKILL.md")}
+        if e.real_path:
+            cand.add(os.path.abspath(e.real_path))
+            cand.add(os.path.abspath(Path(e.real_path) / "SKILL.md"))
+        paths_by_name[sname] = cand
+
+    disabled: set[str] = set()
+    for rule in rules:
+        if not isinstance(rule, dict):
+            continue
+        enabled = bool(rule.get("enabled", True))
+        raw_path = rule.get("path")
+        raw_name = rule.get("name")
+        matched: list[str] = []
+        if raw_path:
+            r_str = str(raw_path).strip()
+            if r_str.startswith("~/"):
+                exp = str(home / r_str[2:])
+            elif r_str == "~":
+                exp = str(home)
+            else:
+                exp = os.path.expanduser(r_str)
+            norm = os.path.abspath(exp)
+            matched = [sname for sname, cands in paths_by_name.items() if norm in cands]
+        elif raw_name:
+            name_str = str(raw_name).strip()
+            if name_str in visible:
+                matched = [name_str]
+        for sname in matched:
+            if enabled:
+                disabled.discard(sname)
+            else:
+                disabled.add(sname)
+    return disabled
 
 
 def active_claude_plugin_skill_roots() -> list[Path]:
@@ -776,10 +948,8 @@ def discover_roots(
                 )
 
         if include_plugins:
-            codex_cache = home / ".codex" / "plugins" / "cache"
-            if codex_cache.is_dir():
-                for skill_root in sorted(codex_cache.rglob("skills")):
-                    _add_discovery_root(roots, skill_root, "plugin-cache", "global", agent_ids=["codex"])
+            for skill_root in active_codex_plugin_skill_roots(home):
+                _add_discovery_root(roots, skill_root, "plugin-cache", "global", agent_ids=["codex"])
             if query_cli:
                 for skill_root in active_claude_plugin_skill_roots():
                     _add_discovery_root(roots, skill_root, "plugin-cache-active", "global", agent_ids=["claude-code"])
@@ -1559,6 +1729,7 @@ def compute_agent_context_budgets(
 ) -> dict[str, dict]:
     """Estimate startup catalog footprint (`name + description`) per agent."""
     home = home or Path.home()
+    codex_cfg = load_codex_config(home) if "codex" in agent_ids else {}
     budgets: dict[str, dict] = {}
     for aid in agent_ids:
         cfg = get_agent_config(aid)
@@ -1572,30 +1743,76 @@ def compute_agent_context_budgets(
                 continue
             if aid in e.agent_ids or e.root in readable_dirs:
                 visible.setdefault(e.name, e)
-        items = list(visible.values())
-        total_chars = sum(e.meta_chars for e in items)
+
+        disabled_count = 0
+        explicit_only_count = 0
+        eff_desc_by_name: dict[str, int] = {}
+        eff_meta_by_name: dict[str, int] = {}
+
+        if aid == "codex":
+            codex_disabled = _codex_disabled_skill_names(codex_cfg, visible, home)
+            disabled_count = len(codex_disabled)
+            kept: dict[str, SkillEntry] = {}
+            for sname, e in visible.items():
+                if sname in codex_disabled:
+                    continue
+                allow_impl = True
+                short_desc: str | None = None
+                if e.real_path:
+                    allow_impl, short_desc = _codex_openai_yaml_meta(Path(e.real_path))
+                if not allow_impl:
+                    explicit_only_count += 1
+                    continue
+                d_len = len(short_desc) if short_desc is not None else len(e.description)
+                eff_desc_by_name[sname] = d_len
+                eff_meta_by_name[sname] = len(e.name) + d_len
+                kept[sname] = e
+            items = list(kept.values())
+        else:
+            items = list(visible.values())
+            for e in items:
+                eff_desc_by_name[e.name] = len(e.description)
+                eff_meta_by_name[e.name] = e.meta_chars
+
+        total_chars = sum(eff_meta_by_name[e.name] for e in items)
         est_tokens = total_chars // 4
         caps = AGENT_CONTEXT_CAPS.get(aid, {})
         warnings: list[str] = []
         if per_cap := caps.get("per_skill_chars"):
-            over = [e.name for e in items if len(e.description) > int(per_cap)]
+            over = [e.name for e in items if eff_desc_by_name[e.name] > int(per_cap)]
             if over:
                 warnings.append(f"{len(over)} skill(s) exceed {per_cap}-char description truncation cap: {', '.join(over[:4])}")
         if cat_chars := caps.get("catalog_chars"):
             if total_chars > int(cat_chars):
                 warnings.append(f"Total metadata {total_chars} chars exceeds ~{cat_chars}-char budget")
         if cat_toks := caps.get("catalog_tokens"):
-            if est_tokens > int(cat_toks):
-                warnings.append(f"Total metadata ~{est_tokens} tokens exceeds ~{cat_toks}-token budget")
-        top_heavy = sorted(items, key=lambda x: x.meta_chars, reverse=True)[:5]
-        budgets[aid] = {
+            tok_limit = int(cat_toks)
+            if aid == "codex":
+                skills_tbl = codex_cfg.get("skills") if isinstance(codex_cfg, dict) else None
+                if isinstance(skills_tbl, dict) and isinstance(skills_tbl.get("max_context_tokens"), int) and skills_tbl["max_context_tokens"] > 0:
+                    max_cfg = int(caps.get("max_configurable_tokens", 10000))
+                    tok_limit = min(int(skills_tbl["max_context_tokens"]), max_cfg)
+            if est_tokens > tok_limit:
+                if aid == "codex":
+                    warnings.append(
+                        f"Total metadata ~{est_tokens} tok ({total_chars} chars) exceeds ~{tok_limit}-tok budget "
+                        "(set [skills] max_context_tokens = 10000, [[skills.config]] enabled = false, or agents/openai.yaml allow_implicit_invocation: false)"
+                    )
+                else:
+                    warnings.append(f"Total metadata ~{est_tokens} tokens exceeds ~{tok_limit}-token budget")
+        top_heavy = sorted(items, key=lambda x: eff_meta_by_name[x.name], reverse=True)[:5]
+        row_data: dict = {
             "display_name": cfg["display_name"],
             "skill_count": len(items),
             "total_chars": total_chars,
             "est_tokens": est_tokens,
             "warnings": warnings,
-            "top_heaviest": [{"name": e.name, "chars": e.meta_chars} for e in top_heavy],
+            "top_heaviest": [{"name": e.name, "chars": eff_meta_by_name[e.name]} for e in top_heavy],
         }
+        if aid == "codex":
+            row_data["disabled_count"] = disabled_count
+            row_data["explicit_only_count"] = explicit_only_count
+        budgets[aid] = row_data
     return budgets
 
 

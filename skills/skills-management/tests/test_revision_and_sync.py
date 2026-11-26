@@ -610,6 +610,85 @@ class ClaudeSyncedAndStaleAgentTests(unittest.TestCase):
         self.assertIn(str((shared / "claude-only").absolute()), op_paths)
         self.assertIn(str((shared / "agy-only").absolute()), op_paths)
 
+    def test_codex_active_plugins_and_budget_respect_config_toml_and_openai_yaml(self):
+        codex_dir = self.home / ".codex"
+        cache = codex_dir / "plugins" / "cache"
+        # Enabled semver plugin: must pick 1.2.0 over 1.0.0
+        _make_skill(cache / "openai-curated" / "alpha" / "1.0.0" / "skills", "p-alpha", "p-alpha", desc="Old alpha")
+        _make_skill(cache / "openai-curated" / "alpha" / "1.2.0" / "skills", "p-alpha", "p-alpha", desc="New alpha")
+        # Enabled local plugin: must pick "local" over semver
+        _make_skill(cache / "openai-bundled" / "beta" / "2.0.0" / "skills", "p-beta", "p-beta", desc="Ver beta")
+        _make_skill(cache / "openai-bundled" / "beta" / "local" / "skills", "p-beta", "p-beta", desc="Local beta")
+        # Disabled and unlisted cache plugins: must NOT be discovered!
+        _make_skill(cache / "openai-curated" / "stripe" / "1.0.0" / "skills", "p-stripe", "p-stripe")
+        _make_skill(cache / "openai-curated-remote" / "unlisted" / "0.1.0" / "skills", "p-unlisted", "p-unlisted")
+
+        shared = self.home / ".agents" / "skills"
+        _make_skill(shared, "active-s", "active-s", desc="Use normally.")
+        _make_skill(shared, "disabled-by-name", "disabled-by-name", desc="Disabled by name.")
+        dis_path = _make_skill(shared, "disabled-by-path", "disabled-by-path", desc="Disabled by path.")
+        re_enabled = _make_skill(shared, "toggled-on", "toggled-on", desc="Re-enabled later.")
+        explicit_only = _make_skill(shared, "explicit-only", "explicit-only", desc="Must stay out of catalog.")
+        (explicit_only / "agents").mkdir(parents=True)
+        (explicit_only / "agents" / "openai.yaml").write_text(
+            'policy:\n  allow_implicit_invocation: false\n', encoding="utf-8"
+        )
+        short_skill = _make_skill(shared, "short-one", "short-one", desc="Very long prose " + ("x" * 300))
+        (short_skill / "agents").mkdir(parents=True)
+        (short_skill / "agents" / "openai.yaml").write_text(
+            'interface:\n  short_description: "Brief blurb"\n', encoding="utf-8"
+        )
+
+        (codex_dir / "config.toml").write_text(
+            f'''[skills]
+max_context_tokens = 10000
+
+[[skills.config]]
+name = "disabled-by-name"
+enabled = false
+
+[[skills.config]]
+path = "{dis_path / "SKILL.md"}"
+enabled = false
+
+[[skills.config]]
+name = "toggled-on"
+enabled = false
+
+[[skills.config]]
+name = "toggled-on"
+enabled = true
+
+[plugins."alpha@openai-curated"]
+enabled = true
+
+[plugins."beta@openai-bundled"]
+enabled = true
+
+[plugins."stripe@openai-curated"]
+enabled = false
+''',
+            encoding="utf-8",
+        )
+
+        roots = skill_topology.discover_roots(scope="global", cwd=self.base, home=self.home, agents_filter=["codex"])
+        entries, _ = skill_topology.scan_topology(roots, home=self.home, cwd=self.base)
+        plugin_descs = {e.name: e.description for e in entries if e.is_plugin}
+        self.assertEqual(set(plugin_descs), {"p-alpha", "p-beta"})
+        self.assertEqual(plugin_descs["p-alpha"], "New alpha")
+        self.assertEqual(plugin_descs["p-beta"], "Local beta")
+
+        budgets = skill_topology.compute_agent_context_budgets(entries, ["codex"], home=self.home)
+        cb = budgets["codex"]
+        # 5 visible after excluding disabled-by-name, disabled-by-path, and explicit-only:
+        # p-alpha, p-beta, active-s, toggled-on, short-one
+        self.assertEqual(cb["skill_count"], 5)
+        self.assertEqual(cb["disabled_count"], 2)
+        self.assertEqual(cb["explicit_only_count"], 1)
+        # short-one should contribute len("short-one") + len("Brief blurb") = 20 chars, NOT >300!
+        self.assertLess(cb["total_chars"], 200)
+        self.assertEqual(cb["warnings"], [])
+
 
 if __name__ == "__main__":
     unittest.main()
