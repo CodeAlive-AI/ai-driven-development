@@ -73,8 +73,8 @@ uv run scripts/sync_skills.py --prune-broken --collapse-hops
 # 2. Preview safe exact-name repointing against local repos
 uv run scripts/sync_skills.py --repoint-broken --source-root ~/my-projects
 
-# 3. Preview replica convergence & cross-agent link parity
-uv run scripts/sync_skills.py --converge-replicas --sync-agents claude-code,antigravity,qwen-code
+# 3. Preview replica convergence & cross-agent link parity (optionally scoped by --from-agents)
+uv run scripts/sync_skills.py --converge-replicas --from-agents codex,claude-code,antigravity --sync-agents claude-code,antigravity
 
 # 4. Opt-in quarantine of stale/uninstalled agent skill dirs (or explicit --prune-agent <id>)
 # Never removes ~/.agents/skills, paths read by active agents, or config/cache files of orphaned agents
@@ -87,4 +87,4 @@ uv run scripts/sync_skills.py --prune-broken --collapse-hops --apply
 uv run scripts/sync_skills.py --undo <tx-id>
 ```
 
-Divergent copies are **never** overwritten or deleted automatically — inspect the diff summary from `revise_skills.py` and choose one canonical directory first. Stale agent cleanup is opt-in (`--prune-stale-agents` or `--prune-agent <id>`); whole stub roots are moved to quarantine only when they hold nothing besides `skills/`, whereas `orphaned-agent` roots only have their dedicated `skills/` subfolder quarantined (preserving config/cache files unless the user deletes them), and paths read by any active agent (e.g., `~/.gemini/skills` read by active Antigravity) are protected and skipped.
+Divergent copies are **never** overwritten or deleted automatically — inspect the diff summary from `revise_skills.py` and choose one canonical directory first. Cross-agent `--sync-agents` automatically excludes agent-bundled (Hermes `.bundled_manifest`), builtin, and plugin skills, uses folder `dir_name` for symlink slots (avoiding duplicate links when frontmatter `name` differs from directory basename), and honors `--from-agents` to restrict canonical source discovery to specific primary agent pools. Stale agent cleanup is opt-in (`--prune-stale-agents` or `--prune-agent <id>`); whole stub roots are moved to quarantine only when they hold nothing besides `skills/`, whereas `orphaned-agent` roots only have their dedicated `skills/` subfolder quarantined (preserving config/cache files unless the user deletes them), and paths read by any active agent (e.g., `~/.gemini/skills` read by active Antigravity) are protected and skipped.

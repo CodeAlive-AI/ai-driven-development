@@ -126,6 +126,7 @@ def build_plan(
     prune_stale_agents: bool = False,
     prune_agents: list[str] | None = None,
     sync_agents: list[str] | None = None,
+    from_agents: list[str] | None = None,
     skills_filter: set[str] | None = None,
     source_roots: list[Path] | None = None,
     canonical_root: Path | None = None,
@@ -144,6 +145,17 @@ def build_plan(
             canon = canonical_agent_id(raw_a)
             if canon not in AGENTS:
                 raise ValueError(f"Unknown agent '{raw_a}'. Valid: {', '.join(sorted(AGENTS))}")
+
+    canon_from_agents: list[str] = []
+    if from_agents:
+        for raw_a in from_agents:
+            if raw_a.strip().lower() in NON_INSTALLABLE_HARNESSES:
+                raise ValueError(NON_INSTALLABLE_HARNESSES[raw_a.strip().lower()])
+            canon = canonical_agent_id(raw_a)
+            if canon not in AGENTS:
+                raise ValueError(f"Unknown agent '{raw_a}'. Valid: {', '.join(sorted(AGENTS))}")
+            if canon not in canon_from_agents:
+                canon_from_agents.append(canon)
 
     canon_prune_agents: list[str] = []
     if prune_agents:
@@ -396,14 +408,30 @@ def build_plan(
     # 5. Sync canonical skills across target agents
     if sync_agents:
         canon_agents = [canonical_agent_id(a) for a in sync_agents]
-        # Index live canonical sources by skill name (include warehouse sources!)
+        hermes_shared = hermes_reads_shared_global(home=home)
+        shared_dir = home / ".agents" / "skills"
+
+        allowed_roots: set[str] | None = None
+        if canon_from_agents:
+            allowed_roots = {os.path.abspath(_agent_global_dir(a, home)) for a in canon_from_agents}
+            if any(
+                bool(AGENTS[a].get("reads_shared_global"))
+                or AGENTS[a]["global_dir"] == SHARED_GLOBAL
+                or (a == "hermes-agent" and hermes_shared)
+                for a in canon_from_agents
+            ):
+                allowed_roots.add(os.path.abspath(shared_dir))
+
+        # Index live canonical sources by skill name (excluding bundled/plugin/builtin/local-unless-warehouse)
         by_name: dict[str, list[SkillEntry]] = {}
         for e in entries:
-            if not e.is_broken and not e.is_ghost and not e.is_plugin and not e.is_builtin:
-                by_name.setdefault(e.name, []).append(e)
-
-        shared_dir = home / ".agents" / "skills"
-        hermes_shared = hermes_reads_shared_global(home=home)
+            if e.is_broken or e.is_ghost or e.is_plugin or e.is_builtin or e.is_bundled:
+                continue
+            if not canon_from_agents and e.scope == "local" and e.root_kind != "source-warehouse":
+                continue
+            if allowed_roots is not None and os.path.abspath(e.root) not in allowed_roots:
+                continue
+            by_name.setdefault(e.name, []).append(e)
 
         for sname, grp_entries in sorted(by_name.items()):
             if not _want_skill(sname):
@@ -415,6 +443,7 @@ def build_plan(
             if not canon or not canon.real_path:
                 continue
             real_target = canon.real_path
+            slot_name = canon.dir_name
 
             # Ensure ~/.agents/skills has it if any target agent relies on shared global
             needs_shared = any(
@@ -423,12 +452,17 @@ def build_plan(
                 or (a == "hermes-agent" and hermes_shared)
                 for a in canon_agents
             )
-            shared_slot = shared_dir / sname
-            if needs_shared and str(shared_slot.absolute()) not in planned_paths:
+            shared_dir_abs = os.path.abspath(shared_dir)
+            shared_slot = shared_dir / slot_name
+            shared_already = any(
+                os.path.abspath(Path(e.path).parent) == shared_dir_abs and e.real_path == real_target
+                for e in grp_entries
+            )
+            if needs_shared and not shared_already and str(shared_slot.absolute()) not in planned_paths:
                 if not path_present(shared_slot):
                     ops.append({
                         "op": "create_symlink",
-                        "skill": sname,
+                        "skill": slot_name,
                         "path": str(shared_slot.absolute()),
                         "target": real_target,
                         "reason": "populate canonical shared ~/.agents/skills pool",
@@ -440,9 +474,13 @@ def build_plan(
                 # Skip dedicated link if agent reads ~/.agents/skills automatically
                 if cfg["global_dir"] == SHARED_GLOBAL or cfg.get("reads_shared_global") or (aid == "hermes-agent" and hermes_shared):
                     continue
-                target_slot = _agent_global_dir(aid, home) / sname
+                target_dir = _agent_global_dir(aid, home)
+                target_dir_abs = os.path.abspath(target_dir)
+                target_slot = target_dir / slot_name
                 slot_str = str(target_slot.absolute())
                 if slot_str in planned_paths or slot_str == real_target or _under_quarantined_root(slot_str, quarantined_roots):
+                    continue
+                if any(os.path.abspath(Path(e.path).parent) == target_dir_abs and e.real_path == real_target and not (e.hop_count >= 2 or e.is_relative_symlink) for e in grp_entries):
                     continue
                 if target_slot.exists():
                     try:
@@ -451,11 +489,11 @@ def build_plan(
                     except OSError:
                         pass
                     if not target_slot.is_symlink():
-                        skipped.append({"skill": sname, "path": slot_str, "reason": f"Real directory exists at {aid}; pass --converge-replicas to link"})
+                        skipped.append({"skill": slot_name, "path": slot_str, "reason": f"Real directory exists at {aid}; pass --converge-replicas to link"})
                         continue
                 ops.append({
                     "op": "repoint_symlink" if target_slot.is_symlink() else "create_symlink",
-                    "skill": sname,
+                    "skill": slot_name,
                     "path": slot_str,
                     "target": real_target,
                     "reason": f"sync 1-hop link for {aid}",
@@ -709,6 +747,7 @@ def main() -> int:
     parser.add_argument("--prune-stale-agents", action="store_true", help="Quarantine skill dirs (or skills-only stub roots) of uninstalled CLIs/apps")
     parser.add_argument("--prune-agent", action="append", dest="prune_agents", help="Quarantine dedicated skill dir for specific agent(s) (never shared ~/.agents/skills)")
     parser.add_argument("--sync-agents", action="append", help="Agents/aliases to bring to canonical parity (comma-separated or repeatable)")
+    parser.add_argument("--from-agents", action="append", help="Restrict --sync-agents canonical source discovery to these agents' primary global dirs (comma-separated or repeatable)")
     parser.add_argument("--skills", action="append", help="Limit sync/remediation to specific skill names (comma-separated or repeatable)")
     parser.add_argument("--source-root", action="append", type=Path, default=[], help="Canonical project/warehouse directory")
     parser.add_argument("--canonical-root", type=Path, help="Preferred canonical source directory when converging replicas")
@@ -740,6 +779,11 @@ def main() -> int:
         for item in args.sync_agents:
             sync_list.extend(p.strip() for p in item.split(",") if p.strip())
 
+    from_list: list[str] = []
+    if args.from_agents:
+        for item in args.from_agents:
+            from_list.extend(p.strip() for p in item.split(",") if p.strip())
+
     prune_agent_list: list[str] = []
     if args.prune_agents:
         for item in args.prune_agents:
@@ -759,6 +803,7 @@ def main() -> int:
             prune_stale_agents=args.prune_stale_agents,
             prune_agents=prune_agent_list or None,
             sync_agents=sync_list or None,
+            from_agents=from_list or None,
             skills_filter=skills_set,
             source_roots=args.source_root,
             canonical_root=args.canonical_root,

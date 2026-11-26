@@ -574,6 +574,42 @@ class ClaudeSyncedAndStaleAgentTests(unittest.TestCase):
         self.assertTrue((self.home / ".zencoder" / "skills" / "dead-zen").is_symlink())
         self.assertTrue((shared / "dead-shared").is_symlink())
 
+    def test_sync_agents_excludes_bundled_honors_from_agents_and_avoids_dir_name_dups(self):
+        shared = self.home / ".agents" / "skills"
+        agy = self.home / ".gemini" / "config" / "skills"
+        claude = self.home / ".claude" / "skills"
+        hermes = self.home / ".hermes" / "skills"
+        goose = self.home / ".config" / "goose" / "skills"
+        shared.mkdir(parents=True)
+        agy.mkdir(parents=True)
+        claude.mkdir(parents=True)
+
+        # Hermes bundled skill (must NEVER leak into antigravity)
+        _make_skill(hermes / "apple", "apple-notes", "apple-notes")
+        (hermes / ".bundled_manifest").write_text("apple/apple-notes: deadbeef\n", encoding="utf-8")
+        # Legacy goose-only skill (must NOT sync when from_agents ignores goose)
+        _make_skill(goose, "legacy-goose", "legacy-goose")
+        # Shared skill whose frontmatter `name` has spaces/caps different from folder `dir_name`
+        _make_skill(shared, "semantic-scholar-lookup", "Semantic Scholar Lookup")
+        # Claude-only and Antigravity-only skills
+        _make_skill(claude, "claude-only", "claude-only")
+        _make_skill(agy, "agy-only", "agy-only")
+
+        plan = sync_skills.build_plan(
+            home=self.home,
+            cwd=self.base,
+            sync_agents=["antigravity", "agy"],
+            from_agents=["codex", "claude-code", "antigravity"],
+        )
+        op_paths = [op["path"] for op in plan["ops"]]
+        self.assertNotIn(str((agy / "apple-notes").absolute()), op_paths)
+        self.assertNotIn(str((agy / "legacy-goose").absolute()), op_paths)
+        self.assertNotIn(str((shared / "Semantic Scholar Lookup").absolute()), op_paths)
+        self.assertIn(str((agy / "semantic-scholar-lookup").absolute()), op_paths)
+        self.assertIn(str((agy / "claude-only").absolute()), op_paths)
+        self.assertIn(str((shared / "claude-only").absolute()), op_paths)
+        self.assertIn(str((shared / "agy-only").absolute()), op_paths)
+
 
 if __name__ == "__main__":
     unittest.main()
